@@ -35,7 +35,7 @@ Each of the three provided collection shapes is described briefly later in this 
 
 ##  <a name="_core_the_template_based_collection_classes"></a> The Template-Based Collection Classes
 
-The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../visual-cpp-samples.md).
+The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../overview/visual-cpp-samples.md).
 
 The following table lists the MFC template-based collection classes.
 
@@ -94,8 +94,7 @@ The Characteristics of MFC Collection Classes table in [Recommendations for Choo
 
 - [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

@@ -1,13 +1,13 @@
 ---
 title: "DLLs and Visual C++ run-time library behavior"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
 helpviewer_keywords: ["DLLs [C++], entry point function", "process detach [C++]", "process attach [C++]", "DLLs [C++], run-time library behavior", "DllMain function", "_CRT_INIT macro", "_DllMainCRTStartup method", "run-time [C++], DLL startup sequence", "DLLs [C++], startup sequence"]
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
 ---
 # DLLs and Visual C++ run-time library behavior
 
-When you build a Dynamic-link Library (DLL) by using Visual C++, by default, the linker includes the Visual C++ run-time library (VCRuntime). The VCRuntime contains code required to initialize and terminate a C/C++ executable. When linked into a DLL, the VCRuntime code provides an internal DLL entry-point function called `_DllMainCRTStartup` that handles Windows OS messages to the DLL to attach to or detach from a process or thread. The `_DllMainCRTStartup` function performs essential tasks such as stack buffer security set up, C run-time library (CRT) initialization and termination, and calls to constructors and destructors for static and global objects. `_DllMainCRTStartup` also calls hook functions for other libraries such as WinRT, MFC, and ATL to perform their own initialization and termination. Without this initialization, the CRT and other libraries, as well as your static variables, would be left in an uninitialized state. The same VCRuntime internal initialization and termination routines are called whether your DLL uses a statically linked CRT or a dynamically linked CRT DLL.
+When you build a Dynamic-link Library (DLL) by using Visual Studio, by default, the linker includes the Visual C++ run-time library (VCRuntime). The VCRuntime contains code required to initialize and terminate a C/C++ executable. When linked into a DLL, the VCRuntime code provides an internal DLL entry-point function called `_DllMainCRTStartup` that handles Windows OS messages to the DLL to attach to or detach from a process or thread. The `_DllMainCRTStartup` function performs essential tasks such as stack buffer security set up, C run-time library (CRT) initialization and termination, and calls to constructors and destructors for static and global objects. `_DllMainCRTStartup` also calls hook functions for other libraries such as WinRT, MFC, and ATL to perform their own initialization and termination. Without this initialization, the CRT and other libraries, as well as your static variables, would be left in an uninitialized state. The same VCRuntime internal initialization and termination routines are called whether your DLL uses a statically linked CRT or a dynamically linked CRT DLL.
 
 ## Default DLL entry point _DllMainCRTStartup
 
@@ -15,16 +15,16 @@ In Windows, all DLLs can contain an optional entry-point function, usually calle
 
 The VCRuntime library provides an entry-point function called `_DllMainCRTStartup` to handle default initialization and termination operations. On process attach, the `_DllMainCRTStartup` function sets up buffer security checks, initializes the CRT and other libraries, initializes run-time type information, initializes and calls constructors for static and non-local data, initializes thread-local storage, increments an internal static counter for each attach, and then calls a user- or library-supplied `DllMain`. On process detach, the function goes through these steps in reverse. It calls `DllMain`, decrements the internal counter, calls destructors, calls CRT termination functions and registered `atexit` functions, and notifies any other libraries of termination. When the attachment counter goes to zero, the function returns `FALSE` to indicate to Windows that the DLL can be unloaded. The `_DllMainCRTStartup` function is also called during thread attach and thread detach. In these cases, the VCRuntime code does no additional initialization or termination on its own, and just calls `DllMain` to pass the message along. If `DllMain` returns `FALSE` from process attach, signalling failure, `_DllMainCRTStartup` calls `DllMain` again and passes `DLL_PROCESS_DETACH` as the *reason* argument, then goes through the rest of the termination process.
 
-When building DLLs in Visual C++, the default entry point  `_DllMainCRTStartup` supplied by VCRuntime is linked in automatically. You do not need to specify an entry-point function for your DLL by using the [/ENTRY (Entry point symbol)](../build/reference/entry-entry-point-symbol.md) linker option.
+When building DLLs in Visual Studio, the default entry point  `_DllMainCRTStartup` supplied by VCRuntime is linked in automatically. You do not need to specify an entry-point function for your DLL by using the [/ENTRY (Entry point symbol)](reference/entry-entry-point-symbol.md) linker option.
 
 > [!NOTE]
-> While it is possible to specify another entry-point function for a DLL by using the /ENTRY: linker option, we do not recommend it, because your entry-point function would have to duplicate everything that `_DllMainCRTStartup` does, in the same order. The VCRuntime provides functions that allow you to duplicate its behavior. For example, you can call [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) immediately on process attach to support the [/GS (Buffer security check)](../build/reference/gs-buffer-security-check.md) buffer checking option. You can call the `_CRT_INIT` function, passing the same parameters as the entry point function, to perform the rest of the DLL initialization or termination functions.
+> While it is possible to specify another entry-point function for a DLL by using the /ENTRY: linker option, we do not recommend it, because your entry-point function would have to duplicate everything that `_DllMainCRTStartup` does, in the same order. The VCRuntime provides functions that allow you to duplicate its behavior. For example, you can call [__security_init_cookie](../c-runtime-library/reference/security-init-cookie.md) immediately on process attach to support the [/GS (Buffer security check)](reference/gs-buffer-security-check.md) buffer checking option. You can call the `_CRT_INIT` function, passing the same parameters as the entry point function, to perform the rest of the DLL initialization or termination functions.
 
 <a name="initializing-a-dll"></a>
 
 ## Initialize a DLL
 
-Your DLL may have initialization code that must execute when your DLL loads. In order for you to perform your own DLL initialization and termination functions, `_DllMainCRTStartup` calls a function called `DllMain` that you can provide. Your `DllMain` must have the signature required for a DLL entry point. The default entry point function `_DllMainCRTStartup` calls `DllMain` using the same parameters passed by Windows. By default, if you do not provide a `DllMain` function, Visual C++ provides one for you and links it in so that `_DllMainCRTStartup` always has something to call. This means that if you do not need to initialize your DLL, there is nothing special you have to do when building your DLL.
+Your DLL may have initialization code that must execute when your DLL loads. In order for you to perform your own DLL initialization and termination functions, `_DllMainCRTStartup` calls a function called `DllMain` that you can provide. Your `DllMain` must have the signature required for a DLL entry point. The default entry point function `_DllMainCRTStartup` calls `DllMain` using the same parameters passed by Windows. By default, if you do not provide a `DllMain` function, Visual Studio provides one for you and links it in so that `_DllMainCRTStartup` always has something to call. This means that if you do not need to initialize your DLL, there is nothing special you have to do when building your DLL.
 
 This is the signature used for `DllMain`:
 
@@ -81,7 +81,7 @@ extern "C" BOOL WINAPI DllMain (
 ```
 
 > [!NOTE]
-> Older Windows SDK documentation says that the actual name of the DLL entry-point function must be specified on the linker command-line with the /ENTRY option. With Visual C++, you do not need to use the /ENTRY option if the name of your entry-point function is `DllMain`. In fact, if you use the /ENTRY option and name your entry-point function something other than `DllMain`, the CRT does not get initialized properly unless your entry-point function makes the same initialization calls that `_DllMainCRTStartup` makes.
+> Older Windows SDK documentation says that the actual name of the DLL entry-point function must be specified on the linker command-line with the /ENTRY option. With Visual Studio, you do not need to use the /ENTRY option if the name of your entry-point function is `DllMain`. In fact, if you use the /ENTRY option and name your entry-point function something other than `DllMain`, the CRT does not get initialized properly unless your entry-point function makes the same initialization calls that `_DllMainCRTStartup` makes.
 
 <a name="initializing-regular-dlls"></a>
 
@@ -161,8 +161,8 @@ Note that the header file Afxdllx.h contains special definitions for structures 
 
 A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)<br/>
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)<br/>
 [DllMain entry point](/windows/desktop/Dlls/dllmain)<br/>
 [Dynamic-link Library Best Practices](/windows/desktop/Dlls/dynamic-link-library-best-practices)

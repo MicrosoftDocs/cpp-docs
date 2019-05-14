@@ -156,4 +156,3 @@ Returns TRUE if the address of the *lhs* is greater than or equal to the address
 ### Remarks
 
 This operator acts on the address of the `CSid` object or `SID` structure, and is implemented to provide compatibility with C++ Standard Library collection classes.
-

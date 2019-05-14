@@ -9,7 +9,7 @@ ms.assetid: a027df3c-b2b8-4c49-8539-c2bc42db74e8
 
 'constraint': constraint list contains assembly private type 'type'
 
-A constraint list has an assembly private type, meaning it will not be available when the type is accessed from outside the assembly. For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+A constraint list has an assembly private type, meaning it will not be available when the type is accessed from outside the assembly. For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

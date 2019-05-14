@@ -1,6 +1,6 @@
 ---
 title: "Member Access Control (C++)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["access control [C++]", "member access [C++]", "member-access control [C++]"]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
 ---
@@ -225,11 +225,11 @@ In the preceding example, calling the virtual function `GetState` using a pointe
 
 In multiple-inheritance lattices involving virtual base classes, a given name can be reached through more than one path. Because different access control can be applied along these different paths, the compiler chooses the path that gives the most access. See the following figure.
 
-![Access along paths of an inheritance graph](../cpp/media/vc38v91.gif "vc38V91")
-Access Along Paths of an Inheritance Graph
+![Access along paths of an inheritance graph](../cpp/media/vc38v91.gif "Access along paths of an inheritance graph") <br/>
+Access along paths of an inheritance graph
 
 In the figure, a name declared in class `VBase` is always reached through class `RightPath`. The right path is more accessible because `RightPath` declares `VBase` as a public base class, whereas `LeftPath` declares `VBase` as private.
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)

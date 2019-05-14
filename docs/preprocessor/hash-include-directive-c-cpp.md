@@ -39,7 +39,7 @@ Include files can be "nested"; that is, an **#include** directive can appear in 
 
 When include files are nested and when compiling occurs on the command line, directory searching begins with the directories of the parent file and then proceeds through the directories of any grandparent files. That is, searching begins relative to the directory that contains the source that's currently being processed. If the file is not found, the search moves to directories that are specified by the [/I (Additional include directories)](../build/reference/i-additional-include-directories.md) compiler option. Finally, the directories that are specified by the INCLUDE environment variable are searched.
 
-From the Visual Studio development environment, the INCLUDE environment variable is ignored. For information about how to set the directories that are searched for include files—this also applies to the LIB environment variable—see [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md).
+From the Visual Studio development environment, the INCLUDE environment variable is ignored. For information about how to set the directories that are searched for include files—this also applies to the LIB environment variable—see [VC++ Directories Property Page](../build/reference/vcpp-directories-property-page.md).
 
 This example shows file inclusion by using angle brackets:
 
@@ -84,7 +84,7 @@ For include files that are specified as `#include "path-spec"`, directory search
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 [/I (Additional include directories)](../build/reference/i-additional-include-directories.md)<br/>

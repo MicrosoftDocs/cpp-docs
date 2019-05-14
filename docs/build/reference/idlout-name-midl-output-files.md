@@ -23,7 +23,7 @@ Specifies the name of the .idl file created by the MIDL compiler. No file extens
 
 The /IDLOUT option specifies the name and extension of the .idl file.
 
-The MIDL compiler is called by the Visual C++ linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
+The MIDL compiler is called by the MSVC linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
 
 /IDLOUT also specifies the file names of the other output files associated with the MIDL compiler:
 
@@ -35,13 +35,13 @@ The MIDL compiler is called by the Visual C++ linker when linking projects that 
 
 - *filename*.h
 
-*filename* is the parameter that you pass to /IDLOUT. If [/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md) is specified, the .tlb file will get its name from /TLBOUT *filename*.
+*filename* is the parameter that you pass to /IDLOUT. If [/TLBOUT](tlbout-name-dot-tlb-file.md) is specified, the .tlb file will get its name from /TLBOUT *filename*.
 
 If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc70.idl, vc70_p.c, vc70_i.c, and vc70.h.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -53,10 +53,10 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)<br/>
-[/IGNOREIDL (Don't Process Attributes into MIDL)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (Specify MIDL Command Line Options)](../../build/reference/midl-specify-midl-command-line-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
+[/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
 [Building an Attributed Program](../../windows/building-an-attributed-program.md)

@@ -46,8 +46,7 @@ There are several caveats:
 
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)
 
-## See Also
+## See also
 
 [Using CStringT](../atl-mfc-shared/using-cstringt.md)<br/>
 [Using CString](../atl-mfc-shared/using-cstring.md)
-

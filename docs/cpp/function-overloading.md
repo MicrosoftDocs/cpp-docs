@@ -1,14 +1,14 @@
 ---
 title: "Function Overloading"
-ms.date: "1/25/2018"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
 ---
 # Function Overloading
 
-C++ allows specification of more than one function of the same name in the same scope. These are called *overloaded* functions. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of arguments.
+C++ allows specification of more than one function of the same name in the same scope. These functions are called *overloaded* functions. Overloaded functions enable you to supply different semantics for a function, depending on the types and number of arguments.
 
-For example, a `print` function that takes a `std::string`  argument might perform very different tasks than one that takes an argument of type **double**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the type of arguments passed in by the caller.  If you call `print(42.0)` then the `void print(double d)` function will be invoked. If you call `print("hello world")` then the `void print(std::string)` overload will be invoked.
+For example, a `print` function that takes a `std::string`  argument might perform very different tasks than one that takes an argument of type **double**. Overloading saves you from having to use names such as `print_string` or `print_double`. At compile time, the compiler chooses which overload to use based on the type of arguments passed in by the caller.  If you call `print(42.0)`, then the `void print(double d)` function will be invoked. If you call `print("hello world")`, then the `void print(std::string)` overload will be invoked.
 
 You can overload both member functions and non-member functions. The following table shows what parts of a function declaration C++ uses to differentiate between groups of functions with the same name in the same scope.
 
@@ -23,7 +23,7 @@ You can overload both member functions and non-member functions. The following t
 |Use of **typedef** names|No|
 |Unspecified array bounds|No|
 |**const** or **volatile**|Yes, when applied to entire function|
-|[ref-qualifier](#ref-qualifier)|Yes|
+|[Ref-qualifiers](#ref-qualifiers)|Yes|
 
 ## Example
 
@@ -104,13 +104,13 @@ int print(double dvalue, int prec)
 
 The preceding code shows overloading of the `print` function in file scope.
 
-The default argument is not considered part of the function type. Therefore, it is not used in selecting overloaded functions. Two functions that differ only in their default arguments are considered multiple definitions rather than overloaded functions.
+The default argument isn't considered part of the function type. Therefore, it's not used in selecting overloaded functions. Two functions that differ only in their default arguments are considered multiple definitions rather than overloaded functions.
 
-Default arguments cannot be supplied for overloaded operators.
+Default arguments can't be supplied for overloaded operators.
 
 ## Argument Matching
 
-Overloaded functions are selected for the best match of function declarations in the current scope to the arguments supplied in the function call. If a suitable function is found, that function is called. "Suitable" in this context means one of the following:
+Overloaded functions are selected for the best match of function declarations in the current scope to the arguments supplied in the function call. If a suitable function is found, that function is called. "Suitable" in this context means either:
 
 - An exact match was found.
 
@@ -126,7 +126,7 @@ Overloaded functions are selected for the best match of function declarations in
 
 The compiler creates a set of candidate functions for each argument. Candidate functions are functions in which the actual argument in that position can be converted to the type of the formal argument.
 
-A set of "best matching functions" is built for each argument, and the selected function is the intersection of all the sets. If the intersection contains more than one function, the overloading is ambiguous and generates an error. The function that is eventually selected is always a better match than every other function in the group for at least one argument. If this is not the case (if there is no clear winner), the function call generates an error.
+A set of "best matching functions" is built for each argument, and the selected function is the intersection of all the sets. If the intersection contains more than one function, the overloading is ambiguous and generates an error. The function that is eventually selected is always a better match than every other function in the group for at least one argument. If there's no clear winner, the function call generates an error.
 
 Consider the following declarations (the functions are marked `Variant 1`, `Variant 2`, and `Variant 3`, for identification in the following discussion):
 
@@ -151,7 +151,7 @@ The preceding statement builds two sets:
 |Variant 1|Variant 1 (**int** can be converted to **long** using a standard conversion)|
 |Variant 3||
 
-Functions in Set 2 are functions for which there are implicit conversions from actual parameter type to formal parameter type, and among such functions there is a function for which the "cost" of converting the actual parameter type to its formal parameter type is the smallest.
+Functions in Set 2 are functions for which there are implicit conversions from actual parameter type to formal parameter type, and among such functions there's a function for which the "cost" of converting the actual parameter type to its formal parameter type is the smallest.
 
 The intersection of these two sets is Variant 1. An example of an ambiguous function call is:
 
@@ -165,14 +165,14 @@ The preceding function call builds the following sets:
 |---------------------------------------------------------------------|----------------------------------------------------------------------|
 |Variant 2 (**int** can be converted to **long** using a standard conversion)|Variant 1 (**int** can be converted to **long** using a standard conversion)|
 
-Note that the intersection between these two sets is empty. Therefore, the compiler generates an error message.
+Because the intersection of these two sets is empty, the compiler generates an error message.
 
 For argument matching, a function with *n* default arguments is treated as *n*+1 separate functions, each with a different number of arguments.
 
-The ellipsis (...) acts as a wildcard; it matches any actual argument. This can lead to many ambiguous sets, if you do not design your overloaded function sets with extreme care.
+The ellipsis (...) acts as a wildcard; it matches any actual argument. It can lead to many ambiguous sets, if you don't design your overloaded function sets with extreme care.
 
 > [!NOTE]
->  Ambiguity of overloaded functions cannot be determined until a function call is encountered. At that point, the sets are built for each argument in the function call, and you can determine whether an unambiguous overload exists. This means that ambiguities can remain in your code until they are evoked by a particular function call.
+>  Ambiguity of overloaded functions can't be determined until a function call is encountered. At that point, the sets are built for each argument in the function call, and you can determine whether an unambiguous overload exists. This means that ambiguities can remain in your code until they are evoked by a particular function call.
 
 ## Argument Type Differences
 
@@ -180,7 +180,7 @@ Overloaded functions differentiate between argument types that take different in
 
 For the same reason, function arguments of a type modified by **const** or **volatile** are not treated differently than the base type for the purposes of overloading.
 
-However, the function overloading mechanism can distinguish between references that are qualified by **const** and **volatile** and references to the base type. This makes code such as the following possible:
+However, the function overloading mechanism can distinguish between references that are qualified by **const** and **volatile** and references to the base type. It makes code such as the following possible:
 
 ```cpp
 // argument_type_differences.cpp
@@ -234,7 +234,7 @@ The resultant sequence of conversions, if any, is called the best matching seque
 
 - Convert from **int** to **unsigned long**.
 
-The first sequence, although it achieves the desired goal, is not the best matching sequence — a shorter sequence exists.
+The first sequence, although it achieves the desired goal, isn't the best matching sequence — a shorter sequence exists.
 
 The following table shows a group of conversions, called trivial conversions, that have a limited effect on determining which sequence is the best matching. The instances in which trivial conversions affect choice of sequence are discussed in the list following the table.
 
@@ -253,7 +253,7 @@ The following table shows a group of conversions, called trivial conversions, th
 
 The sequence in which conversions are attempted is as follows:
 
-1. Exact match. An exact match between the types with which the function is called and the types declared in the function prototype is always the best match. Sequences of trivial conversions are classified as exact matches. However, sequences that do not make any of these conversions are considered better than sequences that convert:
+1. Exact match. An exact match between the types with which the function is called and the types declared in the function prototype is always the best match. Sequences of trivial conversions are classified as exact matches. However, sequences that don't make any of these conversions are considered better than sequences that convert:
 
    - From pointer, to pointer to **const** (`type` <strong>\*</strong> to **const** `type` <strong>\*</strong>).
 
@@ -271,8 +271,8 @@ The sequence in which conversions are attempted is as follows:
 
    - Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure.
 
-![Preferred conversions](../cpp/media/vc391t1.gif "vc391T1")
-Graph Illustrating Preferred Conversions
+![Graph of preferred conversions](../cpp/media/vc391t1.gif "Graph of preferred conversions") <br/>
+Graph showing preferred conversions
 
 Conversion from type `D*` to type `C*` is preferable to conversion from type `D*` to type `B*`. Similarly, conversion from type `D*` to type `B*` is preferable to conversion from type `D*` to type `A*`.
 
@@ -282,14 +282,14 @@ This same rule applies to pointer-to-member conversions. Conversion from type `T
 
 The preceding rule applies only along a given path of derivation. Consider the graph shown in the following figure.
 
-![Multi&#45;inheritance that shows preferred conversions](../cpp/media/vc391t2.gif "vc391T2")
-Multiple-Inheritance Graph Illustrating Preferred Conversions
+![Multiple&#45;inheritance that shows preferred conversions](../cpp/media/vc391t2.gif "Multiple&#45;inheritance that shows preferred conversions") <br/>
+Multiple-inheritance graph that shows preferred conversions
 
-Conversion from type `C*` to type `B*` is preferable to conversion from type `C*` to type `A*`. The reason is that they are on the same path, and `B*` is closer. However, conversion from type `C*` to type `D*` is not preferable to conversion to type `A*`; there is no preference because the conversions follow different paths.
+Conversion from type `C*` to type `B*` is preferable to conversion from type `C*` to type `A*`. The reason is that they are on the same path, and `B*` is closer. However, conversion from type `C*` to type `D*` isn't preferable to conversion to type `A*`; there's no preference because the conversions follow different paths.
 
-1. Match with user-defined conversions. This sequence cannot be classified as an exact match, a match using promotions, or a match using standard conversions. The sequence must contain only user-defined conversions, standard conversions, or trivial conversions to be classified as a match with user-defined conversions. A match with user-defined conversions is considered a better match than a match with an ellipsis but not as good a match as a match with standard conversions.
+1. Match with user-defined conversions. This sequence can't be classified as an exact match, a match using promotions, or a match using standard conversions. The sequence must contain only user-defined conversions, standard conversions, or trivial conversions to be classified as a match with user-defined conversions. A match with user-defined conversions is considered a better match than a match with an ellipsis but not as good a match as a match with standard conversions.
 
-1. Match with an ellipsis. Any sequence that matches an ellipsis in the declaration is classified as a match with an ellipsis. This is considered the weakest match.
+1. Match with an ellipsis. Any sequence that matches an ellipsis in the declaration is classified as a match with an ellipsis. It's considered the weakest match.
 
 User-defined conversions are applied if no built-in promotion or conversion exists. These conversions are selected on the basis of the type of the argument being matched. Consider the following code:
 
@@ -330,7 +330,7 @@ LogToFile( udc );
 
 In the preceding example, the user-defined conversion, **operator long**, is invoked to convert `udc` to type **long**. If no user-defined conversion to type **long** had been defined, the conversion would have proceeded as follows: Type `UDC` would have been converted to type **int** using the user-defined conversion. Then the standard conversion from type **int** to type **long** would have been applied to match the argument in the declaration.
 
-If any user-defined conversions are required to match an argument, the standard conversions are not used when evaluating the best match. This is true even if more than one candidate function requires a user-defined conversion; in such a case, the functions are considered equal. For example:
+If any user-defined conversions are required to match an argument, the standard conversions aren't used when evaluating the best match. Even if more than one candidate function requires a user-defined conversion, the functions are considered equal. For example:
 
 ```cpp
 // argument_matching2.cpp
@@ -362,7 +362,7 @@ Both versions of `Func` require a user-defined conversion to convert type **int*
 
 - Convert from type **int** to type **long**; then convert to type `UDC2` (a two-step conversion).
 
-Even though the second of these requires a standard conversion, as well as the user-defined conversion, the two conversions are still considered equal.
+Even though the second one requires both a standard conversion and the user-defined conversion, the two conversions are still considered equal.
 
 > [!NOTE]
 >  User-defined conversions are considered conversion by construction or conversion by initialization (conversion function). Both methods are considered equal when considering the best match.
@@ -442,9 +442,9 @@ You can overload **operator new** solely on the basis of return type — specifi
 
 **END Microsoft Specific**
 
-- Member functions cannot be overloaded solely on the basis of one being static and the other nonstatic.
+- Member functions can't be overloaded solely on the basis of one being static and the other nonstatic.
 
-- **typedef** declarations do not define new types; they introduce synonyms for existing types. They do not affect the overloading mechanism. Consider the following code:
+- **typedef** declarations do not define new types; they introduce synonyms for existing types. They don't affect the overloading mechanism. Consider the following code:
 
     ```cpp
     typedef char * PSTR;
@@ -457,7 +457,7 @@ You can overload **operator new** solely on the basis of return type — specifi
 
 - Enumerated types are distinct types and can be used to distinguish between overloaded functions.
 
-- The types "array of " and "pointer to" are considered identical for the purposes of distinguishing between overloaded functions. This is true only for singly dimensioned arrays. Therefore, the following overloaded functions conflict and generate an error message:
+- The types "array of " and "pointer to" are considered identical for the purposes of distinguishing between overloaded functions, but only for singly dimensioned arrays. That's why these overloaded functions conflict and generate an error message:
 
     ```cpp
     void Print( char *szToPrint );
@@ -476,11 +476,11 @@ You can overload **operator new** solely on the basis of return type — specifi
 
 Any two function declarations of the same name in the same scope can refer to the same function, or to two discrete functions that are overloaded. If the argument lists of the declarations contain arguments of equivalent types (as described in the previous section), the function declarations refer to the same function. Otherwise, they refer to two different functions that are selected using overloading.
 
-Class scope is strictly observed; therefore, a function declared in a base class is not in the same scope as a function declared in a derived class. If a function in a derived class is declared with the same name as a virtual function in the base class, the derived-class function *overrides* the base-class function. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
+Class scope is strictly observed; therefore, a function declared in a base class isn't in the same scope as a function declared in a derived class. If a function in a derived class is declared with the same name as a virtual function in the base class, the derived-class function *overrides* the base-class function. For more information, see [Virtual Functions](../cpp/virtual-functions.md).
 
-If the base class function is not declared as 'virtual', then the derived class function is said to *hide* it. Both overriding and hiding are distinct from overloading.
+If the base class function isn't declared as 'virtual', then the derived class function is said to *hide* it. Both overriding and hiding are distinct from overloading.
 
-Block scope is strictly observed; therefore, a function declared in file scope is not in the same scope as a function declared locally. If a locally declared function has the same name as a function declared in file scope, the locally declared function hides the file-scoped function instead of causing overloading. For example:
+Block scope is strictly observed; therefore, a function declared in file scope isn't in the same scope as a function declared locally. If a locally declared function has the same name as a function declared in file scope, the locally declared function hides the file-scoped function instead of causing overloading. For example:
 
 ```cpp
 // declaration_matching1.cpp
@@ -512,9 +512,9 @@ The preceding code shows two definitions from the function `func`. The definitio
 
 For overloaded member functions, different versions of the function can be given different access privileges. They are still considered to be in the scope of the enclosing class and thus are overloaded functions. Consider the following code, in which the member function `Deposit` is overloaded; one version is public, the other, private.
 
-The intent of this sample is to provide an `Account` class in which a correct password is required to perform deposits. This is accomplished using overloading.
+The intent of this sample is to provide an `Account` class in which a correct password is required to perform deposits. It's done by using overloading.
 
-Note that the call to `Deposit` in `Account::Deposit` calls the private member function. This call is correct because `Account::Deposit` is a member function and therefore has access to the private members of the class.
+The call to `Deposit` in `Account::Deposit` calls the private member function. This call is correct because `Account::Deposit` is a member function, and has access to the private members of the class.
 
 ```cpp
 // declaration_matching2.cpp

@@ -2,7 +2,6 @@
 title: "Interface Pointers Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.pointers.interface"]
 helpviewer_keywords: ["pointers, to interfaces", "interfaces, pointers classes", "interface pointers classes"]
 ms.assetid: 712617a1-17ae-4b5c-a32c-a48b758df7a6
 ---
@@ -20,7 +19,6 @@ The following classes manage a given interface pointer:
 
 - [CComGITPtr](../atl/reference/ccomgitptr-class.md) Provides methods for dealing with interface pointers and the global interface table (GIT).
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

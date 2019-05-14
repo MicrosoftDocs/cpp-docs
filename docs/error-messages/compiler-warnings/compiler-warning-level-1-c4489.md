@@ -11,7 +11,7 @@ ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
 
 A specifier keyword was incorrectly used on an interface method.
 
-For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## Example
 

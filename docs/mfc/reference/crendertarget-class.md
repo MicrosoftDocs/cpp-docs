@@ -1,6 +1,6 @@
 ---
 title: "CRenderTarget Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CRenderTarget", "AFXRENDERTARGET/CRenderTarget", "AFXRENDERTARGET/CRenderTarget::CRenderTarget", "AFXRENDERTARGET/CRenderTarget::Attach", "AFXRENDERTARGET/CRenderTarget::BeginDraw", "AFXRENDERTARGET/CRenderTarget::Clear", "AFXRENDERTARGET/CRenderTarget::COLORREF_TO_D2DCOLOR", "AFXRENDERTARGET/CRenderTarget::CreateCompatibleRenderTarget", "AFXRENDERTARGET/CRenderTarget::Destroy", "AFXRENDERTARGET/CRenderTarget::Detach", "AFXRENDERTARGET/CRenderTarget::DrawBitmap", "AFXRENDERTARGET/CRenderTarget::DrawEllipse", "AFXRENDERTARGET/CRenderTarget::DrawGeometry", "AFXRENDERTARGET/CRenderTarget::DrawGlyphRun", "AFXRENDERTARGET/CRenderTarget::DrawLine", "AFXRENDERTARGET/CRenderTarget::DrawRectangle", "AFXRENDERTARGET/CRenderTarget::DrawRoundedRectangle", "AFXRENDERTARGET/CRenderTarget::DrawText", "AFXRENDERTARGET/CRenderTarget::DrawTextLayout", "AFXRENDERTARGET/CRenderTarget::EndDraw", "AFXRENDERTARGET/CRenderTarget::FillEllipse", "AFXRENDERTARGET/CRenderTarget::FillGeometry", "AFXRENDERTARGET/CRenderTarget::FillMesh", "AFXRENDERTARGET/CRenderTarget::FillOpacityMask", "AFXRENDERTARGET/CRenderTarget::FillRectangle", "AFXRENDERTARGET/CRenderTarget::FillRoundedRectangle", "AFXRENDERTARGET/CRenderTarget::Flush", "AFXRENDERTARGET/CRenderTarget::GetAntialiasMode", "AFXRENDERTARGET/CRenderTarget::GetDpi", "AFXRENDERTARGET/CRenderTarget::GetMaximumBitmapSize", "AFXRENDERTARGET/CRenderTarget::GetPixelFormat", "AFXRENDERTARGET/CRenderTarget::GetPixelSize", "AFXRENDERTARGET/CRenderTarget::GetRenderTarget", "AFXRENDERTARGET/CRenderTarget::GetSize", "AFXRENDERTARGET/CRenderTarget::GetTags", "AFXRENDERTARGET/CRenderTarget::GetTextAntialiasMode", "AFXRENDERTARGET/CRenderTarget::GetTextRenderingParams", "AFXRENDERTARGET/CRenderTarget::GetTransform", "AFXRENDERTARGET/CRenderTarget::IsSupported", "AFXRENDERTARGET/CRenderTarget::IsValid", "AFXRENDERTARGET/CRenderTarget::PopAxisAlignedClip", "AFXRENDERTARGET/CRenderTarget::PopLayer", "AFXRENDERTARGET/CRenderTarget::PushAxisAlignedClip", "AFXRENDERTARGET/CRenderTarget::PushLayer", "AFXRENDERTARGET/CRenderTarget::RestoreDrawingState", "AFXRENDERTARGET/CRenderTarget::SaveDrawingState", "AFXRENDERTARGET/CRenderTarget::SetAntialiasMode", "AFXRENDERTARGET/CRenderTarget::SetDpi", "AFXRENDERTARGET/CRenderTarget::SetTags", "AFXRENDERTARGET/CRenderTarget::SetTextAntialiasMode", "AFXRENDERTARGET/CRenderTarget::SetTextRenderingParams", "AFXRENDERTARGET/CRenderTarget::SetTransform", "AFXRENDERTARGET/CRenderTarget::VerifyResource", "AFXRENDERTARGET/CRenderTarget::m_lstResources", "AFXRENDERTARGET/CRenderTarget::m_pRenderTarget", "AFXRENDERTARGET/CRenderTarget::m_pTextFormatDefault"]
 helpviewer_keywords: ["CRenderTarget [MFC], CRenderTarget", "CRenderTarget [MFC], Attach", "CRenderTarget [MFC], BeginDraw", "CRenderTarget [MFC], Clear", "CRenderTarget [MFC], COLORREF_TO_D2DCOLOR", "CRenderTarget [MFC], CreateCompatibleRenderTarget", "CRenderTarget [MFC], Destroy", "CRenderTarget [MFC], Detach", "CRenderTarget [MFC], DrawBitmap", "CRenderTarget [MFC], DrawEllipse", "CRenderTarget [MFC], DrawGeometry", "CRenderTarget [MFC], DrawGlyphRun", "CRenderTarget [MFC], DrawLine", "CRenderTarget [MFC], DrawRectangle", "CRenderTarget [MFC], DrawRoundedRectangle", "CRenderTarget [MFC], DrawText", "CRenderTarget [MFC], DrawTextLayout", "CRenderTarget [MFC], EndDraw", "CRenderTarget [MFC], FillEllipse", "CRenderTarget [MFC], FillGeometry", "CRenderTarget [MFC], FillMesh", "CRenderTarget [MFC], FillOpacityMask", "CRenderTarget [MFC], FillRectangle", "CRenderTarget [MFC], FillRoundedRectangle", "CRenderTarget [MFC], Flush", "CRenderTarget [MFC], GetAntialiasMode", "CRenderTarget [MFC], GetDpi", "CRenderTarget [MFC], GetMaximumBitmapSize", "CRenderTarget [MFC], GetPixelFormat", "CRenderTarget [MFC], GetPixelSize", "CRenderTarget [MFC], GetRenderTarget", "CRenderTarget [MFC], GetSize", "CRenderTarget [MFC], GetTags", "CRenderTarget [MFC], GetTextAntialiasMode", "CRenderTarget [MFC], GetTextRenderingParams", "CRenderTarget [MFC], GetTransform", "CRenderTarget [MFC], IsSupported", "CRenderTarget [MFC], IsValid", "CRenderTarget [MFC], PopAxisAlignedClip", "CRenderTarget [MFC], PopLayer", "CRenderTarget [MFC], PushAxisAlignedClip", "CRenderTarget [MFC], PushLayer", "CRenderTarget [MFC], RestoreDrawingState", "CRenderTarget [MFC], SaveDrawingState", "CRenderTarget [MFC], SetAntialiasMode", "CRenderTarget [MFC], SetDpi", "CRenderTarget [MFC], SetTags", "CRenderTarget [MFC], SetTextAntialiasMode", "CRenderTarget [MFC], SetTextRenderingParams", "CRenderTarget [MFC], SetTransform", "CRenderTarget [MFC], VerifyResource", "CRenderTarget [MFC], m_lstResources", "CRenderTarget [MFC], m_pRenderTarget", "CRenderTarget [MFC], m_pTextFormatDefault"]
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
@@ -22,7 +22,7 @@ class CRenderTarget : public CObject;
 |Name|Description|
 |----------|-----------------|
 |[CRenderTarget::CRenderTarget](#crendertarget)|Constructs a CRenderTarget object.|
-|[CRenderTarget::~CRenderTarget](#crendertarget__~crendertarget)|The destructor. Called when a render target object is being destroyed.|
+|[CRenderTarget::~CRenderTarget](#_dtorcrendertarget)|The destructor. Called when a render target object is being destroyed.|
 
 ### Public Methods
 
@@ -386,7 +386,7 @@ Draws the outline of a rectangle that has the specified dimensions and stroke st
 
 ```
 void DrawRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush,
     FLOAT fStrokeWidth = 1.0,
     ID2D1StrokeStyle* strokeStyle = NULL);
@@ -394,7 +394,7 @@ void DrawRectangle(
 
 ### Parameters
 
-*rect*<br/>
+*rectangle*<br/>
 The dimensions of the rectangle to draw, in device-independent pixels
 
 *pBrush*<br/>
@@ -439,7 +439,7 @@ Draws the specified text using the format information provided by an IDWriteText
 ```
 void DrawText(
     const CString& strText,
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pForegroundBrush,
     CD2DTextFormat* textFormat = NULL,
     D2D1_DRAW_TEXT_OPTIONS options = D2D1_DRAW_TEXT_OPTIONS_NONE,
@@ -451,7 +451,7 @@ void DrawText(
 *strText*<br/>
 A pointer to an array of Unicode characters to draw.
 
-*rect*<br/>
+*rectangle*<br/>
 The size and position of the area in which the text is drawn.
 
 *pForegroundBrush*<br/>
@@ -598,13 +598,13 @@ Paints the interior of the specified rectangle.
 
 ```
 void FillRectangle(
-    const CD2DRectF& rect,
+    const CD2DRectF& rectangle,
     CD2DBrush* pBrush);
 ```
 
 ### Parameters
 
-*rect*<br/>
+*rectangle*<br/>
 The dimension of the rectangle to paint, in device-independent pixels.
 
 *pBrush*<br/>
@@ -883,7 +883,7 @@ void PushAxisAlignedClip(
 The size and position of the clipping area, in device-independent pixels.
 
 *mode*<br/>
-The antialiasing mode that is used to draw the edges of clip rects that have subpixel boundaries, and to blend the clip with the scene contents. The blending is performed once when the PopAxisAlignedClip method is called, and does not apply to each primitive within the layer.
+The antialiasing mode that is used to draw the edges of clip rectangles that have subpixel boundaries, and to blend the clip with the scene contents. The blending is performed once when the PopAxisAlignedClip method is called, and does not apply to each primitive within the layer.
 
 ##  <a name="pushlayer"></a>  CRenderTarget::PushLayer
 
@@ -1030,6 +1030,6 @@ Pointer to CD2DResource object.
 
 TRUE is object if valid; otherwise FALSE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

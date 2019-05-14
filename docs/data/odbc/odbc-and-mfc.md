@@ -25,6 +25,6 @@ This topic introduces the main concepts of the Microsoft Foundation Classes (MFC
 
 The MFC database classes based on ODBC are designed to provide access to any database for which an ODBC driver is available. Because the classes use ODBC, your application can access data in many different data formats and different local/remote configurations. You do not have to write special-case code to handle different database management systems (DBMSs). As long as your users have an appropriate ODBC driver for the data they want to access, they can use your program to manipulate data in tables stored there.
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](open-database-connectivity-odbc.md)

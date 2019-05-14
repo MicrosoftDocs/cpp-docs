@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Using the New MFC Shell Controls"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["shell controls (MFC)"]
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
 ---
@@ -10,31 +10,71 @@ In this walkthrough, you'll create an application that resembles File Explorer. 
 
 ## Prerequisites
 
-This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you're using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
+- In Visual Studio 2017 and later, MFC support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu. Find the version of Visual Studio you are using and choose the **Modify** button. Make sure the **Desktop Development with C++** tile is checked. Under **Optional Components**, check the **MFC Support** button.
 
-### To create a new MFC application by using the MFC Application Wizard
+- This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you're using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
+
+## To create a new MFC application by using the MFC Application Wizard
+
+These steps vary depending on which version of Visual Studio you are using. Make sure the version selector in the upper left of this page is set correctly.
+
+::: moniker range="vs-2019"
+
+### To create an MFC project in Visual Studio 2019
+
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. In the search box at the top, type **MFC** and then choose **MFC App** from the results list. 
+
+1. Click **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+   After **MFC Application Wizard** displays, use the following options:
+ 
+   1. Choose **Application Type** on the left. Then select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+
+   1. On the **Compound Document Support** pane, select **None**.
+
+   1. Don't make any changes to the **Document Template Properties** pane.
+
+   1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+
+   1. On the **Advanced Features** pane, select **ActiveX controls**, **Common Control Manifest**, and **Navigation pane** option. Leave everything else as it is. The **Navigation Pane** option will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+
+   1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create an MFC project in Visual Studio 2017 or earlier
 
 1. Use the **MFC Application Wizard** to create a new MFC application. To run the wizard, from the **File** menu select **New**, and then select **Project**. The **New Project** dialog box will be displayed.
 
-1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. After **MFC Application Wizard** displays, use the following options:
+1. In the **New Project** dialog box, expand the **Visual C++** node in the **Project types** pane and select **MFC**. Then, in the **Templates** pane, select **MFC Application**. Type a name for the project, such as `MFCShellControls` and click **OK**. 
 
-    1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
+   After **MFC Application Wizard** displays, use the following options:
 
-    1. On the **Compound Document Support** pane, select **None**.
+   1. On the **Application Type** pane, under **Application type**, clear the **Tabbed documents** option. Next, select **Single document** and select **Document/View architecture support**. Under **Project style**, select **Visual Studio**, and from the **Visual style and colors** drop down list select **Office 2007 (Blue theme)**.
 
-    1. Don't make any changes to the **Document Template Strings** pane.
+   1. On the **Compound Document Support** pane, select **None**.
 
-    1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
+   1. Don't make any changes to the **Document Template Strings** pane.
 
-    1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
+   1. On the **Database Support** pane (Visual Studio 2015 and older), select **None** because the application doesn't use a database.
 
-    1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
+   1. On the **User Interface Features** pane, make sure the **Use a menu bar and toolbar** option is selected. Leave all other options as they are.
 
-    1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
+   1. On the **Advanced Features** pane, under **Advanced features**, select only **ActiveX controls** and **Common Control Manifest**. Under **Advanced frame panes**, select only the **Navigation pane** option. It will cause the wizard to create the pane to the left of the window with a `CMFCShellTreeCtrl` already embedded.
 
-1. Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
+   1. We aren't going to make any changes to the **Generated Classes** pane, so click **Finish** to create your new MFC project.
 
-   The wizard automatically creates an application that has a standard menu bar, a standard toolbar, a standard status bar, and an Outlook bar to the left of the window with a **Folders** view and a **Calendar** view.
+::: moniker-end
+
+Verify that the application was created successfully by building and running it. To build the application, from the **Build** menu select **Build Solution**. If the application builds successfully, run the application by selecting **Start Debugging** from the **Debug** menu.
+
+The wizard automatically creates an application that has a standard menu bar, a standard toolbar, a standard status bar, and an Outlook bar to the left of the window with a **Folders** view and a **Calendar** view.
 
 ### To add the shell list control to the document view
 
@@ -83,7 +123,7 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
 1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-    Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
+   Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
 
    In the `OnCreate` method, we'll now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 
@@ -155,12 +195,12 @@ This walkthrough assumes that you have set up Visual Studio to use **General Dev
 
    Right-click any item in the tree control or in the list control. You get the same context menu as if you were using the real **File Explorer**.
 
-## Next Steps
+## Next steps
 
 - The wizard created an Outlook bar with both a **Folders** pane and a **Calendar** pane. It probably doesn't make sense to have a **Calendar** pane in an **Explorer** window, so remove that pane now.
 
-- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../visual-cpp-samples.md).
+- The `CMFCShellListCtrl` supports viewing files in different modes, such as **Large Icons**, **Small Icons**, **List**, and **Details**. Update your application to implement this functionality. Hint: see [Visual C++ Samples](../overview/visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)

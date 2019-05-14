@@ -37,7 +37,7 @@ BEGIN_COM_MAP(x)
 
 ### Example
 
-From the ATL [BEEPER](../../visual-cpp-samples.md) sample:
+From the ATL [BEEPER](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_ATL_COM#1](../../atl/codesnippet/cpp/com-map-macros_1.h)]
 
@@ -49,7 +49,7 @@ Ends the definition of your COM interface map.
 END_COM_MAP()
 ```
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)

@@ -53,7 +53,7 @@ The rank of the array.
 |----------|-----------------|
 |[operator std::vector&lt;value_type&gt;](#operator_vec)|Uses `copy(*this, vector)` to implicitly convert the array to a std::[vector](../../../standard-library/vector-class.md) object.|
 |[operator()](#operator_call)|Returns the element value that is specified by the parameters.|
-|[operator[]](#operator_at)|Returns the element that is at the specified index.|
+|[operator\[\]](#operator_at)|Returns the element that is at the specified index.|
 |[operator=](#operator_eq)|Copies the contents of the specified `array` object into this one.|
 
 ### Public Constants
@@ -811,6 +811,6 @@ The data type of the elements in both the original `array` object and the return
 
 The [array_view](array-view-class.md) object that is constructed.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

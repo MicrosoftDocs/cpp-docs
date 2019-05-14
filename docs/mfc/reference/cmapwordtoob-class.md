@@ -53,7 +53,7 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 
@@ -75,8 +75,7 @@ For more information on `CMapWordToOb`, see the article [Collections](../../mfc/
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

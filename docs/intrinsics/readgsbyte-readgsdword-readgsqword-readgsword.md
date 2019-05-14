@@ -50,11 +50,11 @@ The memory contents of the byte, word, double word, or quadword (as indicated by
 
 ## Remarks
 
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

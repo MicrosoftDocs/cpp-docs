@@ -26,6 +26,6 @@ Stores the maximum length of the module name. This value must be the same on the
 static const UINT MODULENAME_MAX_LENGTH = 1024;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

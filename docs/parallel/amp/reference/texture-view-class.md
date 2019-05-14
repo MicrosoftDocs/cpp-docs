@@ -65,7 +65,7 @@ The rank of the `texture_view`.
 |Name|Description|
 |----------|-----------------|
 |[operator()](#operator_call)|Overloaded. Gets the element value by index.|
-|[operator[]](#operator_at)|Overloaded. Gets the element value by index.|
+|[operator\[\]](#operator_at)|Overloaded. Gets the element value by index.|
 |[operator=](#operator_eq)|Overloaded. Assignment operator.|
 
 ### Public Data Members
@@ -473,6 +473,6 @@ The value type of the elements of the texture_view.
 typedef typename const value_type value_type;
 ```
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -20,8 +20,7 @@ If your list control supports a report view, you need to add a column for each p
 > [!NOTE]
 >  If the list control is created with the **LVS_NOCOLUMNHEADER** style, any attempt to insert columns will be ignored.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

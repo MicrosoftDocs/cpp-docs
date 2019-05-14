@@ -1,16 +1,20 @@
 ---
 title: "Add Class from Typelib Wizard"
-ms.date: "10/03/2018"
-f1_keywords: ["vc.codewiz.class.typelib"]
-helpviewer_keywords: ["Add Class from TypeLib Wizard [MFC]", "COM interfaces, adding classes"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["COM interfaces, adding classes"]
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 ---
 # Add Class from Typelib Wizard
 
-Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.
 
 - **Add class from**
 
@@ -58,8 +62,9 @@ Use this wizard to add an MFC class from an available type library. The wizard c
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class declaration should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [MFC Class from a Type Library](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
 [Automation Clients: Using Type Libraries](../../mfc/automation-clients-using-type-libraries.md)
-

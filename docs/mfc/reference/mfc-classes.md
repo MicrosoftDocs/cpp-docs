@@ -1091,7 +1091,7 @@ Represents a set of records selected from a data source.
 A view that displays database records in controls.
 
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Similar to a Windows [RECT structure](rect-structure.md).
+Similar to a Windows [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
 
 [CRectTracker Class](../../mfc/reference/crecttracker-class.md)<br/>
 Enables an item to be displayed, moved, and resized in different fashions.
@@ -1157,7 +1157,7 @@ Encapsulates a sinusoidal-range transition that has a given range of oscillation
 Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.
 
 [CSize Class](../../atl-mfc-shared/reference/csize-class.md)<br/>
-Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.
+Similar to the Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure, which implements a relative coordinate or position.
 
 [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)<br/>
 Provides the functionality of the Windows common slider control.
@@ -1298,4 +1298,3 @@ Supports arrays of 16-bit words.
 
 [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>
 Contains links to topics about the classes, global functions, global variables, and macros that make up the MFC Library.
-

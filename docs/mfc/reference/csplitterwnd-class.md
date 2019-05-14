@@ -101,9 +101,9 @@ For further information on splitter windows, see [Technical Note 29](../../mfc/t
 
 For more information on how to create dynamic splitter windows, see:
 
-- MFC sample [Scribble](../../visual-cpp-samples.md)
+- MFC sample [Scribble](../../overview/visual-cpp-samples.md)
 
-- MFC sample [VIEWEX](../../visual-cpp-samples.md).
+- MFC sample [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## Inheritance Hierarchy
 
@@ -960,9 +960,9 @@ A pointer to a device context.
 
 ### Remarks
 
-## See Also
+## See also
 
-[MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC Sample VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)<br/>

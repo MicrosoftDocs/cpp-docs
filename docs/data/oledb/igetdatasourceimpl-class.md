@@ -7,7 +7,7 @@ ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
 ---
 # IGetDataSourceImpl Class
 
-Provides an implementation of the [IGetDataSource](https://docs.microsoft.com/previous-versions/windows/desktop/ms709721(v=vs.85)) object.
+Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) object.
 
 ## Syntax
 
@@ -50,13 +50,13 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 #### Parameters
 
-See [IGetDataSource::GetDataSource](https://docs.microsoft.com/previous-versions/windows/desktop/ms725443(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 Useful if you need to access properties in the data source object.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

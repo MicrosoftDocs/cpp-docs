@@ -30,4 +30,3 @@ class X {
 [__declspec](../cpp/declspec.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [inline, __inline, \__forceinline](inline-functions-cpp.md)
-

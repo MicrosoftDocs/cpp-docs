@@ -133,7 +133,7 @@ virtual BOOL Create(
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the slider control's parent window, usually a `CDialog`. It must not be NULL.
@@ -175,7 +175,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -723,9 +723,9 @@ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object 
 
 This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)

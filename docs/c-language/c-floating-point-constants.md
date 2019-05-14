@@ -36,7 +36,7 @@ You can omit either the digits before the decimal point (the integer portion of 
 
 The following examples illustrate some forms of floating-point constants and expressions:
 
-```
+```C
 15.75
 1.575E1   /* = 15.75   */
 1575e-2   /* = 15.75   */
@@ -48,22 +48,22 @@ Floating-point constants are positive unless they are preceded by a minus sign (
 
 A floating-point constant without an **f**, **F**, **l**, or **L** suffix has type `double`. If the letter **f** or **F** is the suffix, the constant has type `float`. If suffixed by the letter **l** or **L**, it has type `long double`. For example:
 
-```
-100L  /* Has type long double  */
-100F  /* Has type float        */
+```C
+10.0L  /* Has type long double  */
+10.0F  /* Has type float        */
 ```
 
 Note that the Microsoft C compiler internally represents `long double` the same as type `double`. See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about type `double`, `float`, and `long double`.
 
 You can omit the integer portion of the floating-point constant, as shown in the following examples. The number .75 can be expressed in many ways, including the following:
 
-```
+```C
 .0075e2
 0.075e1
 .075e1
 75e-2
 ```
 
-## See Also
+## See also
 
 [C Constants](../c-language/c-constants.md)

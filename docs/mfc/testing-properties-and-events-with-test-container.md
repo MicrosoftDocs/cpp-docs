@@ -10,7 +10,7 @@ The Test Container application, shipped in Visual C++, is an ActiveX control con
 
 ### To access the ActiveX Control Test Container
 
-1. Build the [TSTCON Sample: ActiveX Control Test Container](../visual-cpp-samples.md).
+1. Build the [TSTCON Sample: ActiveX Control Test Container](../overview/visual-cpp-samples.md).
 
 ### To test your ActiveX control
 
@@ -41,8 +41,7 @@ At this point you can test your control's properties or events.
 
 1. Specify the destination of event information.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [How to: Debug an ActiveX Control](/visualstudio/debugger/how-to-debug-an-activex-control)
-

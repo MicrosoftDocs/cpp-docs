@@ -13,7 +13,7 @@ A *storage class* in the context of C++ variable declarations is a type specifie
 
 1. The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.
 
-1. **Visual C++ 2010 and later:** The **auto** keyword is no longer a C++ storage-class specifier, and the **register** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is removed from the C++ language.
+1. **Visual Studio 2010 and later:** The **auto** keyword is no longer a C++ storage-class specifier, and the **register** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **register** keyword is removed from the C++ language.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -156,7 +156,7 @@ Objects and variables declared as **extern** declare an object that is defined i
 
 Declaration of **const** variables with the **extern** storage class forces the variable to have external linkage. An initialization of an **extern const** variable is allowed in the defining translation unit. Initializations in translation units other than the defining translation unit produce undefined results. For more information, see [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
 
-The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage]() to variables declared by using `extern constexpr`. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
+The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage](../c-language/external-linkage.md) to variables declared by using `extern constexpr`. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
 
 The following code shows two **extern** declarations, `DefinedElsewhere` (which refers to a name defined in a different translation unit) and `DefinedHere` (which refers to a name defined in an enclosing scope):
 

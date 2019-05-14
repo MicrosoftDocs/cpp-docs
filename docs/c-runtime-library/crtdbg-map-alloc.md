@@ -11,6 +11,6 @@ When the **_CRTDBG_MAP_ALLOC** flag is defined in the debug version of an applic
 
 For more information about using the debug version versus the base version of a heap function, see [Using the Debug Version Versus the Base Version](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
-## See Also
+## See also
 
 [Control Flags](../c-runtime-library/control-flags.md)

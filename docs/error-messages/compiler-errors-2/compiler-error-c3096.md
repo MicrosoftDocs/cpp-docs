@@ -11,4 +11,4 @@ ms.assetid: 56353c9a-800c-474f-b428-3e5d2a7afc9a
 
 An attribute was applied incorrectly.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).

@@ -229,6 +229,6 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 *transform*<br/>
 The transform to apply to the render target
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

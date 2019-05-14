@@ -63,7 +63,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
 [vtordisp](../../preprocessor/vtordisp.md)<br/>

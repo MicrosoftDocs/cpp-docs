@@ -85,9 +85,9 @@ Specifies whether the returned handle is inherited when a new process is created
 
 This method is used by the constructor to initialize the `CSecurityAttributes` object.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>
 [security descriptor](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

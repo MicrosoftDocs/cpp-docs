@@ -61,7 +61,7 @@ s1 = 'string two', s2 = 'string one'
 
 **Namespace** msclr
 
-## See Also
+## See also
 
 [auto_handle](../dotnet/auto-handle.md)<br/>
 [auto_handle::swap](../dotnet/auto-handle-swap.md)

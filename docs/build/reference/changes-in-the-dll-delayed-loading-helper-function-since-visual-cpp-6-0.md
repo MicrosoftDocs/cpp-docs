@@ -23,7 +23,7 @@ If you have multiple versions of Visual C++ on your computer or if you defined y
 
 If you have multiple versions of Visual C++ on your computer, make sure the linker matches delayimp.lib. If there is a mismatch, you will get a linker error reporting either `___delayLoadHelper2@8` or `___delayLoadHelper@8` as an unresolved external symbol. The former implies a new linker with an old delayimp.lib, and the latter implies an old linker with a new delayimp.lib.
 
-If you get an unresolved linker error, run [dumpbin /linkermember](../../build/reference/linkermember.md):1 on the delayimp.lib that you expect to contain the helper function to see which helper function is defined instead. The helper function could also be defined in an object file; run [dumpbin /symbols](../../build/reference/symbols.md) and look for `delayLoadHelper(2)`.
+If you get an unresolved linker error, run [dumpbin /linkermember](linkermember.md):1 on the delayimp.lib that you expect to contain the helper function to see which helper function is defined instead. The helper function could also be defined in an object file; run [dumpbin /symbols](symbols.md) and look for `delayLoadHelper(2)`.
 
 If you know you have the Visual C++ 6.0 linker, then:
 
@@ -41,8 +41,8 @@ If you defined your own helper function and are using the current version of Vis
 
 ## Load All Imports for a Delay-Loaded DLL
 
-The linker can load all imports from a DLL that you specified to be delay loaded. See [Loading All Imports for a Delay-Loaded DLL](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md) for more information.
+The linker can load all imports from a DLL that you specified to be delay loaded. See [Loading All Imports for a Delay-Loaded DLL](loading-all-imports-for-a-delay-loaded-dll.md) for more information.
 
-## See Also
+## See also
 
 [Understanding the Helper Function](understanding-the-helper-function.md)

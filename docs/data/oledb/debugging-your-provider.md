@@ -24,6 +24,6 @@ There are two ways to debug your provider:
 
 1. Set breakpoints, and then debug as usual.
 
-## See Also
+## See also
 
 [Working with OLE DB Provider Templates](../../data/oledb/working-with-ole-db-provider-templates.md)

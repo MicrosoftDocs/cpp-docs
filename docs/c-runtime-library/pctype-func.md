@@ -33,6 +33,6 @@ The information in the character classification table is for internal use only, 
 |-------------|---------------------|
 |__pctype_func|ctype.h|
 
-## See Also
+## See also
 
 [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)

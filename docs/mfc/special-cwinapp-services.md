@@ -48,6 +48,6 @@ These entries are stored as follows:
 
 - In Windows 95 and later, the value is stored in a cached version of WIN.INI.
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

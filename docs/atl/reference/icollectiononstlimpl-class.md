@@ -148,7 +148,7 @@ This member holds the items represented by the collection.
 CollType m_coll;
 ```
 
-## See Also
+## See also
 
-[ATLCollections Sample](../../visual-cpp-samples.md)<br/>
+[ATLCollections Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

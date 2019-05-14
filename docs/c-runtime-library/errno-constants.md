@@ -10,7 +10,6 @@ ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
 ## Syntax
 
 ```
-
 #include <errno.h>
 ```
 
@@ -129,6 +128,6 @@ The following values are supported for compatibility with Posix. They are requir
 #define EXDEV /* cross device link */
 ```
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

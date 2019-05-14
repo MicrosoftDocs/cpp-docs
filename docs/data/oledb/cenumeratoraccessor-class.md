@@ -47,7 +47,7 @@ VARIANT_BOOL m_bIsParent;
 
 ### Remarks
 
-See [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="ntype"></a> CEnumeratorAccessor::m_nType
 
@@ -61,7 +61,7 @@ USHORT m_nType;
 
 ### Remarks
 
-See [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
 
@@ -75,7 +75,7 @@ WCHAR m_szDescription[129];
 
 ### Remarks
 
-See [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szname"></a> CEnumeratorAccessor::m_szName
 
@@ -89,7 +89,7 @@ WCHAR m_szName[129];
 
 ### Remarks
 
-See [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
 
@@ -103,9 +103,9 @@ WCHAR m_szParseName[129];
 
 ### Remarks
 
-See [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
+See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) in the *OLE DB Programmer's Reference* for more information.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

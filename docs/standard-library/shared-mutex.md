@@ -1,6 +1,6 @@
 ---
 title: "&lt;shared_mutex&gt;"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["<shared_mutex>", "shared_mutex/std::swap", "shared_mutex/std::shared_lock", "shared_mutex/std::shared_lock::shared_lock", "shared_mutex/std::shared_lock::operator=", "shared_mutex/std::shared_lock::operator =", "shared_mutex/std::shared_lock::lock", "shared_mutex/std::shared_lock::try_lock", "shared_mutex/std::shared_lock::try_lock_for", "shared_mutex/std::shared_lock::try_lock_until", "shared_mutex/std::shared_lock::unlock", "shared_mutex/std::shared_lock::swap", "shared_mutex/std::shared_lock::release", "shared_mutex/std::shared_lock::owns_lock", "shared_mutex/std::shared_lock::operator bool", "shared_mutex/std::shared_lock::mutex", "shared_mutex/std::shared_mutex", "shared_mutex/std::shared_mutex::native_handle_type", "shared_mutex/std::shared_mutex::shared_mutex", "shared_mutex/std::shared_mutex::operator=", "shared_mutex/std::shared_mutex::operator =", "shared_mutex/std::shared_mutex::lock", "shared_mutex/std::shared_mutex::try_lock", "shared_mutex/std::shared_mutex::unlock", "shared_mutex/std::shared_mutex::lock_shared", "shared_mutex/std::shared_mutex::try_lock_shared", "shared_mutex/std::shared_mutex::unlock_shared", "shared_mutex/std::shared_mutex::native_handle", "shared_mutex/std::shared_timed_mutex", "shared_mutex/std::shared_timed_mutex::shared_timed_mutex", "shared_mutex/std::shared_timed_mutex::operator=", "shared_mutex/std::shared_timed_mutex::operator =", "shared_mutex/std::shared_timed_mutex::lock", "shared_mutex/std::shared_timed_mutex::try_lock", "shared_mutex/std::shared_timed_mutex::try_lock_for", "shared_mutex/std::shared_timed_mutex::try_lock_until", "shared_mutex/std::shared_timed_mutex::unlock", "shared_mutex/std::shared_timed_mutex::lock_shared", "shared_mutex/std::shared_timed_mutex::try_lock_shared", "shared_mutex/std::shared_timed_mutex::try_lock_shared_for", "shared_mutex/std::shared_timed_mutex::try_lock_shared_until", "shared_mutex/std::shared_timed_mutex::unlock_shared"]
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
 ---
@@ -12,13 +12,13 @@ The header &lt;shared_mutex> defines the classes `shared_mutex` and `shared_time
 
 |Classes|Description|
 |-------------|-----------------|
-|[shared_mutex Class](../standard-library/shared-mutex.md#class_shared_mutex)|A shared mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
-|[shared_timed_mutex Class](../standard-library/shared-mutex.md#class_shared_timed_mutex)|A shared timed mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
-|[shared_lock Class](../standard-library/shared-mutex.md#class_shared_lock)|A template class that wraps a shared mutex to support timed lock operations and non-exclusive sharing by multiple agents.|
+|[shared_mutex Class](#class_shared_mutex)|A shared mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
+|[shared_timed_mutex Class](#class_shared_timed_mutex)|A shared timed mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
+|[shared_lock Class](#class_shared_lock)|A template class that wraps a shared mutex to support timed lock operations and non-exclusive sharing by multiple agents.|
 
 |Functions|Description|
 |---------------|-----------------|
-|[swap](../standard-library/shared-mutex.md#function_swap)|Swaps the content of the shared mutex objects referenced by the function parameters.|
+|[swap](#function_swap)|Swaps the content of the shared mutex objects referenced by the function parameters.|
 
 ## Syntax
 
@@ -119,7 +119,7 @@ public:
    };
 ```
 
-###  <a name="&lt;shared"></a> shared_lock Class
+###  <a name="class_shared_lock"></a> shared_lock Class
 
 Template class `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
 
@@ -184,7 +184,7 @@ Exchanges the content of two `shared_lock` objects. Effectively the same as `x.s
 
 **Namespace:** std
 
-## See Also
+## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
 [&lt;mutex>](../standard-library/mutex.md)

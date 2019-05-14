@@ -1,7 +1,6 @@
 ---
 title: "DCOMCNFG"
 ms.date: "11/04/2016"
-f1_keywords: ["DCOMCNFG"]
 helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
 ---
@@ -35,7 +34,6 @@ You change the settings for a particular object with the Applications page. Simp
 
 - The Endpoints page lists the set of protocols and endpoints available for use by clients of the selected DCOM server.
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)
-

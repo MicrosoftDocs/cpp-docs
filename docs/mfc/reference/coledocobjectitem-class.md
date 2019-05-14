@@ -277,9 +277,9 @@ Flag specifying under what circumstances the OLE item is saved when it returns t
 
 Does not destroy the client item.
 
-## See Also
+## See also
 
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>

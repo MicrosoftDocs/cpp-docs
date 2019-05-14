@@ -230,7 +230,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### Parameters
 
 *lpLogPen*<br/>
-Points to the Windows [LOGPEN](../../mfc/reference/logpen-structure.md) structure that contains information about the pen.
+Points to the Windows [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) structure that contains information about the pen.
 
 ### Return Value
 
@@ -365,7 +365,7 @@ For more information about using graphic objects, see the article [Graphic Objec
 
 [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]
 
-## See Also
+## See also
 
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

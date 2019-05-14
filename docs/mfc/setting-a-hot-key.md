@@ -10,10 +10,9 @@ Your application can use the information provided by a hot key ([CHotKeyCtrl](..
 
 - Set up a global hot key for activating a nonchild window by sending a [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) message to the window to be activated.
 
-- Set up a thread-specific hot key by calling the Windows function [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309).
+- Set up a thread-specific hot key by calling the Windows function [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey).
 
-## See Also
+## See also
 
 [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

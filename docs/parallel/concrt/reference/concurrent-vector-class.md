@@ -86,7 +86,7 @@ The type that represents the stored allocator object that encapsulates details a
 
 |Name|Description|
 |----------|-----------------|
-|[operator[]](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|
+|[operator\[\]](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|
 |[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_vector` object to this one. This method is not concurrency-safe.|
 
 ## Remarks
@@ -650,8 +650,7 @@ void swap(concurrent_vector& _Vector);
 *_Vector*<br/>
 The `concurrent_vector` object to swap contents with.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

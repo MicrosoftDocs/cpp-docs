@@ -119,7 +119,7 @@ Typically, a drop-down toolbar button uses the text from the most recently used 
 
 ### Example
 
-The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an object of the `CMFCDropDownToolbarButton` class. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#31](../../mfc/codesnippet/cpp/cmfcdropdowntoolbarbutton-class_1.cpp)]
 
@@ -494,7 +494,7 @@ void SetDefaultCommand(UINT uiCmd);
 
 Call this method to specify a default command that the framework executes when the user clicks the button. An item with the command ID specified by *uiCmd* must be located in the parent drop-down toolbar.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -502,4 +502,3 @@ Call this method to specify a default command that the framework executes when t
 [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

@@ -24,13 +24,12 @@ Lists the steps for implementing property pages, including methods to override. 
 
 ## Related Sections
 
-[ATLPages Sample](../visual-cpp-samples.md)<br/>
+[ATLPages Sample](../overview/visual-cpp-samples.md)<br/>
 The sample abstract for the ATLPages sample, which implements a property page using `IPropertyPageImpl`.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

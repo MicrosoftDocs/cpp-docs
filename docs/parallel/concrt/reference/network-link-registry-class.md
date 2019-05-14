@@ -131,7 +131,7 @@ A pointer to a block to be removed, if found.
 
 **true** if the link was found and removed, **false** otherwise.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [single_link_registry Class](single-link-registry-class.md)<br/>

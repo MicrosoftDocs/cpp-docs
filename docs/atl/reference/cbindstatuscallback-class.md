@@ -70,7 +70,7 @@ Specifies the bind flags that are returned by [GetBindInfo](#getbindinfo). The d
 
 The `CBindStatusCallback` class implements the `IBindStatusCallback` interface. `IBindStatusCallback` must be implemented by your application so it can receive notifications from an asynchronous data transfer. The asynchronous moniker provided by the system uses `IBindStatusCallback` methods to send and receive information about the asynchronous data transfer to and from your object.
 
-Typically, the `CBindStatusCallback` object is associated with a specific bind operation. For example, in the [ASYNC](../../visual-cpp-samples.md) sample, when you set the URL property, it creates a `CBindStatusCallback` object in the call to `Download`:
+Typically, the `CBindStatusCallback` object is associated with a specific bind operation. For example, in the [ASYNC](../../overview/visual-cpp-samples.md) sample, when you set the URL property, it creates a `CBindStatusCallback` object in the call to `Download`:
 
 [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/cpp/cbindstatuscallback-class_1.h)]
 
@@ -497,12 +497,12 @@ void Function_Name(
     DWORD dwSize);
 ```
 
-In the following example (taken from the [ASYNC](../../visual-cpp-samples.md) sample), the function `OnData` writes the received data into a text box.
+In the following example (taken from the [ASYNC](../../overview/visual-cpp-samples.md) sample), the function `OnData` writes the received data into a text box.
 
 ### Example
 
 [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

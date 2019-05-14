@@ -22,11 +22,11 @@ For main frame windows, you can also specify whether the window has a System Men
 
 If you're changing window attributes in an existing application, follow the instructions in the rest of this article instead.
 
-To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](../mfc/reference/createstruct-structure.md) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:
+To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 
-The [CTRLBARS](../visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
+The [CTRLBARS](../overview/visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
 
 The following discussion covers the SDI case and the [MDI case](#_core_the_mdi_case).
 
@@ -54,9 +54,8 @@ This code creates MDI child windows without a Maximize button.
 
 - [Frame-window styles](../mfc/frame-window-styles-cpp.md)
 
-- [Window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600)
+- [Window styles](/windows/desktop/winmsg/window-styles)
 
-## See Also
+## See also
 
 [Frame-Window Styles](../mfc/frame-window-styles-cpp.md)
-

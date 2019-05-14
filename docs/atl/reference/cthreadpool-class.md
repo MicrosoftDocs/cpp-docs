@@ -324,7 +324,7 @@ The requested maximum time in milliseconds that the thread pool will wait for a 
 
 This method posts a shutdown request to all threads in the pool. If the timeout expires, this method will call [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) on any thread that did not exit. This method is called automatically from the destructor of the class.
 
-## See Also
+## See also
 
 [IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>

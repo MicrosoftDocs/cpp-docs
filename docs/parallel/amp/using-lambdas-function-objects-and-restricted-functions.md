@@ -149,7 +149,7 @@ void AddArraysWithFunction() {
 
 The restricted function must include `restrict(amp)` and conform to the restrictions that are described in [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md).
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>

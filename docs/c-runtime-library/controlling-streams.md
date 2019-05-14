@@ -27,6 +27,6 @@ A `FILE` object stores the state of a stream, including:
 
 Do not alter any value stored in a `FILE` object or in a file buffer that you specify for use with that object. You cannot copy a `FILE` object and portably use the address of the copy as a `stream` argument to a library function.
 
-## See Also
+## See also
 
 [Files and Streams](../c-runtime-library/files-and-streams.md)

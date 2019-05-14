@@ -94,7 +94,7 @@ New processes created by calls to `_spawn` routines do not preserve signal setti
 
 If you are calling `_spawn` from a DLL or a GUI application and want to redirect the output to a pipe, you have two options:
 
-- Use the Win32 API to create a pipe, then call [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+- Use the Win32 API to create a pipe, then call [AllocConsole](/windows/console/allocconsole), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
 
 - Call [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md) which will create a pipe and invoke the app using **cmd.exe /c** (or **command.exe /c**).
 
@@ -181,7 +181,7 @@ child process output
 from SPAWN!
 ```
 
-## See Also
+## See also
 
 [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Compiling a C++/CLI Program on the Command Line"
-ms.date: "09/24/2018"
+ms.date: "04/23/2019"
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 ---
 # Walkthrough: Compiling a C++/CLI Program on the Command Line
@@ -8,9 +8,6 @@ ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
 You can create Visual C++ programs that target the Common Language Runtime (CLR) and use the .NET Framework, and build them on the command line. Visual C++ supports the C++/CLI programming language, which has additional types and operators to target the .NET programming model. For general information about the C++/CLI language, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 In this walkthrough, you use a text editor to create a basic C++/CLI program, and then compile it on the command line. (You can use your own C++/CLI program instead of typing the one that's shown, or you can use a C++/CLI code sample from another help article. This technique is useful for building and testing small modules that have no UI elements.)
-
-> [!NOTE]
-> You can also use the Visual Studio IDE to compile C++/CLI programs. For more information, see [Walkthrough: Compiling a C++ Program that Targets the CLR in Visual Studio](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md).
 
 ## Prerequisites
 
@@ -20,11 +17,11 @@ You understand the fundamentals of the C++ language.
 
 The following steps show how to compile a C++/CLI console application that uses .NET Framework classes.
 
-To enable compilation for C++/CLI, you must use the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option. The Visual C++ compiler generates an .exe file that contains MSIL code—or mixed MSIL and native code—and links to the required .NET Framework libraries.
+To enable compilation for C++/CLI, you must use the [/clr](reference/clr-common-language-runtime-compilation.md) compiler option. The MSVC compiler generates an .exe file that contains MSIL code—or mixed MSIL and native code—and links to the required .NET Framework libraries.
 
 ### To compile a C++/CLI application on the command line
 
-1. Open a **Developer Command Prompt** window. For specific instructions, see [To open a developer command prompt window](../build/building-on-the-command-line.md#developer_command_prompt).
+1. Open a **Developer Command Prompt** window. For specific instructions, see [To open a developer command prompt window](building-on-the-command-line.md#developer_command_prompt).
 
    Administrator credentials may be required to successfully compile the code, depending on the computer's operating system and configuration. To run the command prompt window as an administrator, right-click to open the shortcut menu for the command prompt and then choose **More** > **Run as administrator**.
 
@@ -58,5 +55,5 @@ To enable compilation for C++/CLI, you must use the [/clr](../build/reference/cl
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
-[Compiler Options](../build/reference/compiler-options.md)
+[Projects and build systems](projects-and-build-systems-cpp.md)<br/>
+[MSVC Compiler Options](reference/compiler-options.md)

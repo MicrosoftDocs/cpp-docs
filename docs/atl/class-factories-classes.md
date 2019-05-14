@@ -2,7 +2,6 @@
 title: " ATL Class Factories Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"
-f1_keywords: ["vc.atl.classes.factories"]
 helpviewer_keywords: ["class factories", "class factories, ATL classes"]
 ms.assetid: 1d8c2ae2-2c37-452c-a02d-1ecbdd309f84
 ---
@@ -20,8 +19,7 @@ The following classes implement or support a class factory:
 
 - [CComCoClass](../atl/reference/ccomcoclass-class.md) Defines the class factory for the object.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
-

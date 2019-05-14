@@ -54,7 +54,7 @@ missing_wait() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [task_group Class](task-group-class.md)<br/>

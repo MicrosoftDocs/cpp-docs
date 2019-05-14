@@ -10,7 +10,6 @@ ms.assetid: a5993bf4-7e7a-47f9-83c3-e46332b85579
 ## Syntax
 
 ```
-
 #include <fcntl.h>
 ```
 
@@ -28,7 +27,7 @@ The allowed values are:
 
 For more information, see [Text and Binary Mode File I/O](../c-runtime-library/text-and-binary-mode-file-i-o.md) and [File Translation](../c-runtime-library/file-translation-constants.md).
 
-## See Also
+## See also
 
 [_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
 [_pipe](../c-runtime-library/reference/pipe.md)<br/>

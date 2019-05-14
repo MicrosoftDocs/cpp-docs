@@ -34,11 +34,11 @@ A mapfile is a text file that contains the following information about the progr
 
 - The entry point (as *section*:*offset*)
 
-The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
+The [/MAPINFO](mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -50,7 +50,7 @@ The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) 
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

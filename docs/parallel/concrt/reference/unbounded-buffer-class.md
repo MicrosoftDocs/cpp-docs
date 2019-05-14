@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 f1_keywords: ["unbounded_buffer", "AGENTS/concurrency::unbounded_buffer", "AGENTS/concurrency::unbounded_buffer::unbounded_buffer", "AGENTS/concurrency::unbounded_buffer::dequeue", "AGENTS/concurrency::unbounded_buffer::enqueue", "AGENTS/concurrency::unbounded_buffer::accept_message", "AGENTS/concurrency::unbounded_buffer::consume_message", "AGENTS/concurrency::unbounded_buffer::link_target_notification", "AGENTS/concurrency::unbounded_buffer::process_input_messages", "AGENTS/concurrency::unbounded_buffer::propagate_message", "AGENTS/concurrency::unbounded_buffer::propagate_output_messages", "AGENTS/concurrency::unbounded_buffer::release_message", "AGENTS/concurrency::unbounded_buffer::reserve_message", "AGENTS/concurrency::unbounded_buffer::resume_propagation", "AGENTS/concurrency::unbounded_buffer::send_message", "AGENTS/concurrency::unbounded_buffer::supports_anonymous_source"]
 ms.assetid: 6b1a939a-1819-4385-b1d8-708f83d4ec47
 ---
+# unbounded_buffer Class
 
 An `unbounded_buffer` messaging block is a multi-target, multi-source, ordered `propagator_block` capable of storing an unbounded number of messages.
 
@@ -347,9 +348,8 @@ Destroys the `unbounded_buffer` messaging block.
 ~unbounded_buffer();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [overwrite_buffer Class](overwrite-buffer-class.md)<br/>
 [single_assignment Class](single-assignment-class.md)
-

@@ -9,8 +9,7 @@ ms.assetid: 88308897-8da8-496d-bdef-d34ab77cdd79
 
 This technical note described the most common problems that can occur when attempting to port an application written with MFC 3.x (the MFC included with Visual C++ 2.x) to MFC 4.0.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "C++ AMP Overview"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ---
@@ -10,11 +10,15 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
 
 ## System Requirements
 
-- Windows 7, Windows 8, Windows Server 2008 R2, or Windows Server 2012
+- Windows 7 or later
+
+- Windows Server 2008 R2 or later
 
 - DirectX 11 Feature Level 11.0 or later hardware
 
 - For debugging on the software emulator, Windows 8 or Windows Server 2012 is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).
+
+- Note: AMP is currently not supported on ARM64.
 
 ## Introduction
 
@@ -351,7 +355,7 @@ In typical applications, the elements in a tile are related in some way, and the
 
 The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.
 
-![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")
+![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "Index values in a tiled extent")
 
 The following code example uses the sampling data from the previous diagram. The code replaces each value in the tile by the average of the values in the tile.
 
@@ -432,7 +436,7 @@ void MathExample() {
     parallel_for_each(
         logs.extent,
         [=] (index<1> idx) restrict(amp) {
-            logs[idx] = concurrency::fast_math::log10(logs[idx]);
+            logs[idx] = concurrency::fast_math::log10(numbers[idx]);
         }
     );
 
@@ -488,7 +492,7 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
 
 Modulus and division of unsigned integers have significantly better performance than modulus and division of signed integers. We recommend that you use unsigned integers when possible.
 
-## See Also
+## See also
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>

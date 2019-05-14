@@ -10,8 +10,7 @@ In previous versions of MFC, it was important that you clean up [CString](../atl
 
 Under the C++ exception handling mechanism that MFC now uses, you do not have to worry about cleanup after an exception. For a description of how C++ "unwinds" the stack after an exception is caught, see [the try, catch, and throw statements](../cpp/try-throw-and-catch-statements-cpp.md). Even if you use the MFC **TRY**/**CATCH** macros instead of the C++ keywords **try** and **catch**, MFC uses the C++ exception mechanism underneath, so you still do not need to clean up explicitly.
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

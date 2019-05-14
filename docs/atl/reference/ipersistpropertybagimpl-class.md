@@ -112,7 +112,7 @@ ATL uses the object's property map to store this information. By default, this m
 
 See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the Windows SDK.
 
-## See Also
+## See also
 
 [BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

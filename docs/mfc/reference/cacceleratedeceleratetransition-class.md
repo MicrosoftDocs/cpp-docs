@@ -131,6 +131,6 @@ The value of the animation variable at the end of the transition.
 DOUBLE m_finalValue;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

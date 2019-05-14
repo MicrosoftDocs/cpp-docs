@@ -10,7 +10,6 @@ ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 
@@ -20,7 +19,7 @@ EOF is returned by an I/O routine when the end-of-file (or in some cases, an err
 
 WEOF yields the return value, of type **wint_t**, used to signal the end of a wide stream, or to report an error condition.
 
-## See Also
+## See also
 
 [putc, putwc](../c-runtime-library/reference/putc-putwc.md)<br/>
 [ungetc, ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md)<br/>

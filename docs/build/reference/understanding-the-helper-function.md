@@ -40,16 +40,16 @@ The default helper code can be found in Delayhlp.cpp and Delayimp.h (in vc\inclu
 
 The following topics describe the helper function:
 
-- [Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
+- [Changes in the DLL Delayed Loading Helper Function Since Visual C++ 6.0](changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
 
-- [Calling Conventions, Parameters, and Return Type](../../build/reference/calling-conventions-parameters-and-return-type.md)
+- [Calling Conventions, Parameters, and Return Type](calling-conventions-parameters-and-return-type.md)
 
-- [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md)
+- [Structure and Constant Definitions](structure-and-constant-definitions.md)
 
-- [Calculating Necessary Values](../../build/reference/calculating-necessary-values.md)
+- [Calculating Necessary Values](calculating-necessary-values.md)
 
-- [Unloading a Delay-Loaded DLL](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+- [Unloading a Delay-Loaded DLL](explicitly-unloading-a-delay-loaded-dll.md)
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

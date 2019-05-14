@@ -68,10 +68,9 @@ To avoid the leak, call the `Empty` method on existing `CComBSTR` objects before
 
 Note that the same code would not cause a leak if the function's parameter was **[in, out]**.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [wstring](../standard-library/basic-string-class.md)<br/>
 [String Conversion Macros](../atl/reference/string-conversion-macros.md)
-

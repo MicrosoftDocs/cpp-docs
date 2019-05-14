@@ -1,31 +1,28 @@
 ---
-title: "C/C++ Building Reference"
-ms.date: "11/04/2016"
+title: "C/C++ Building Reference - Visual Studio"
+description: "Reference content for C/C++ project system and build tools in Visual Studio."
+ms.date: "05/06/2019"
 helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ---
 # C/C++ Building Reference
 
-Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual C++ development environment](../../ide/building-cpp-projects-in-visual-studio.md). The other way is to [build from a command prompt using command-line tools](../../build/building-on-the-command-line.md). In either case, you can create your source files using the Visual C++ source editor or a third-party editor of your choice.
-
-If your program uses a makefile rather than a .vcxproj file, you can still build it in the development environment as an [external project](../../ide/building-external-projects.md).
+Visual Studio provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual Studio IDE](../creating-and-managing-visual-cpp-projects.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create and edit your source files using Visual Studio or a third-party editor of your choice.
 
 ## In This Section
 
-[Compiling a C/C++ Program](../../build/reference/compiling-a-c-cpp-program.md)<br/>
-Describes the compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
+[MSBuild reference for C++ projects](msbuild-visual-cpp-overview.md)
 
-[Linking](../../build/reference/linking.md)<br/>
+[MSVC Compiler Reference](compiling-a-c-cpp-program.md)<br/>
+Describes the MSVC compiler, which creates an object file containing machine code, linker directives, sections, external references, and function/data names.
+
+[MSVC linker reference](linking.md)<br/>
 Describes the linker, which combines code from the object files created by the compiler and from statically linked libraries, resolves the name references, and creates an executable file.
 
-[Release Builds](../../build/reference/release-builds.md)<br/>
-Presents information on why and when you would want to change from a debug build to a release build and also discusses some of the problems you may encounter when changing from a debug to a release build.
+[Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)
 
-[Optimizing Your Code](../../build/reference/optimizing-your-code.md)<br/>
-Provides links to topics discussing the mechanisms for optimizing code:
-
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
-Provides the following command-line tools for viewing or manipulating build output:
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+Additional command-line tools for C++.
 
 [C/C++ Build Errors](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)<br/>
 Introduces the build errors section in the table of contents.
@@ -35,35 +32,35 @@ Introduces the build errors section in the table of contents.
 [C/C++ Preprocessor Reference](../../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 Discusses the preprocessor, which prepares source files for the compiler by translating macros, operators, and directives.
 
-[Understanding Custom Build Steps and Build Events](../../ide/understanding-custom-build-steps-and-build-events.md)<br/>
+[Understanding Custom Build Steps and Build Events](../understanding-custom-build-steps-and-build-events.md)<br/>
 Discusses customizing the build process.
 
-[Building a C/C++ Program](../../build/building-c-cpp-programs.md)<br/>
+[Building a C/C++ Program](../projects-and-build-systems-cpp.md)<br/>
 Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 Describes setting compiler options in the development environment or on the command line.
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
 Provides links to topics discussing using compiler options.
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
+[MSVC linker reference](linking.md)<br/>
 Describes setting linker options inside or outside the integrated development environment.
 
-[Linker Options](../../build/reference/linker-options.md)<br/>
+[MSVC Linker Options](linker-options.md)<br/>
 Provides links to topics discussing using linker options.
 
-[BSCMAKE Reference](../../build/reference/bscmake-reference.md)<br/>
+[BSCMAKE Reference](bscmake-reference.md)<br/>
 Describes the Microsoft Browse Information Maintenance Utility (BSCMAKE.EXE), which builds a browse information file (.bsc) from .sbr files created during compilation.
 
-[LIB Reference](../../build/reference/lib-reference.md)<br/>
+[LIB Reference](lib-reference.md)<br/>
 Describes the Microsoft Library Manager (LIB.exe), which creates and manages a library of Common Object File Format (COFF) object files.
 
-[EDITBIN Reference](../../build/reference/editbin-reference.md)<br/>
+[EDITBIN Reference](editbin-reference.md)<br/>
 Describes the Microsoft COFF Binary File Editor (EDITBIN.EXE), which modifies Common Object File Format (COFF) binary files.
 
-[DUMPBIN Reference](../../build/reference/dumpbin-reference.md)<br/>
+[DUMPBIN Reference](dumpbin-reference.md)<br/>
 Describes the Microsoft COFF Binary File Dumper (DUMPBIN.EXE), which displays information about Common Object File Format (COFF) binary files.
 
-[NMAKE Reference](../../build/nmake-reference.md)<br/>
+[NMAKE Reference](nmake-reference.md)<br/>
 Describes the Microsoft Program Maintenance Utility (NMAKE.EXE), which is a tool that builds projects based on commands contained in a description file.

@@ -10,7 +10,6 @@ ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
 ## Syntax
 
 ```
-
 #include <locale.h>
 ```
 
@@ -22,7 +21,7 @@ Locale categories are manifest constants used by the localization routines to sp
 |---------------------|-------------------------------|
 |`LC_ALL`|All locale-specific behavior (all categories)|
 |`LC_COLLATE`|Behavior of `strcoll` and `strxfrm` functions|
-|`LC_CTYPE`|Behavior of character-handling functions (except **isdigit**, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected)|
+|`LC_CTYPE`|Behavior of character-handling functions (except `isdigit`, `isxdigit`, `mbstowcs`, and `mbtowc`, which are unaffected)|
 |`LC_MAX`|Same as `LC_TIME`|
 |`LC_MIN`|Same as `LC_ALL`|
 |`LC_MONETARY`|Monetary formatting information returned by the `localeconv` function|
@@ -31,7 +30,7 @@ Locale categories are manifest constants used by the localization routines to sp
 
 See [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for an example.
 
-## See Also
+## See also
 
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

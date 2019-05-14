@@ -297,7 +297,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_MOVE for MK_ALT Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept this data object.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -351,7 +351,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_MOVE for MK_ALT Creates a copy of the dropped object and delete the original object. This is typically the default drop effect, when the view can accept the data object.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -391,7 +391,7 @@ A value from the DROPEFFECT enumerated type, which indicates the type of drop th
 
 - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target view.
 
-For more information, see the MFC Advanced Concepts sample [OCLIENT](../../visual-cpp-samples.md).
+For more information, see the MFC Advanced Concepts sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 ### Remarks
 
@@ -495,7 +495,7 @@ The default implementation is to do nothing and return a dummy value ( -1 ) to i
 
 Override this function to implement the effect of an right mouse-button drag and drop. Right mouse-button drag and drop typically displays a menu of choices when the right mouse-button is released.
 
-Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](https://msdn.microsoft.com/library/windows/desktop/ms646301) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
+Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](/windows/desktop/api/winuser/nf-winuser-getkeystate) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
 
 - If the right mouse-button is down, your override should display a popup menu which offers the drop effects support by the drop source.
 
@@ -816,9 +816,9 @@ Typically you should not perform any drawing directly from `OnUpdate`. Instead, 
 
 If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.
 
-## See Also
+## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

@@ -640,6 +640,6 @@ hello
 hello
 ```
 
-## See Also
+## See also
 
-[event](../windows/event-cpp-component-extensions.md)
+[event](../extensions/event-cpp-component-extensions.md)

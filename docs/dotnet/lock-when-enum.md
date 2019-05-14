@@ -118,6 +118,6 @@ All threads completed.
 
 **Namespace** msclr
 
-## See Also
+## See also
 
 [lock](../dotnet/lock.md)

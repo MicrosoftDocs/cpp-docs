@@ -9,7 +9,7 @@ ms.assetid: d57f7c69-0a02-4fe3-9e45-bc62644fd77c
 
 syntax error in constraint clause: 'identifier' is not a type
 
-The identifier passed to a constraint, which must be a type, was not a type.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+The identifier passed to a constraint, which must be a type, was not a type.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

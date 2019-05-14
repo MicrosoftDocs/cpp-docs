@@ -13,13 +13,13 @@ ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
 
 ## Remarks
 
-The /NOENTRY option is required for creating a resource-only DLL that contains no executable code. For more information, see [Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md).
+The /NOENTRY option is required for creating a resource-only DLL that contains no executable code. For more information, see [Creating a Resource-Only DLL](../creating-a-resource-only-dll.md).
 
 Use this option to prevent LINK from linking a reference to `_main` into the DLL.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Linker** folder.
 
@@ -31,8 +31,8 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
 
-## See Also
+## See also
 
-[Creating a Resource-Only DLL](../../build/creating-a-resource-only-dll.md)<br/>
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[Creating a Resource-Only DLL](../creating-a-resource-only-dll.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

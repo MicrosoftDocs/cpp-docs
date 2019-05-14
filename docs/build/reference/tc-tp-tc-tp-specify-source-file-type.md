@@ -26,11 +26,11 @@ A C or C++ source file.
 
 By default, **CL** assumes that files with the .c extension are C source files and files with the .cpp or the .cxx extension are C++ source files.
 
-When either the **TC** or **Tc** option is specified, any specification of the [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) option is ignored.
+When either the **TC** or **Tc** option is specified, any specification of the [/Zc:wchar_t (wchar_t Is Native Type)](zc-wchar-t-wchar-t-is-native-type.md) option is ignored.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
@@ -52,5 +52,5 @@ This CL command line specifies that TEST1.c, TEST2.cxx, TEST3.huh, and TEST4.o a
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

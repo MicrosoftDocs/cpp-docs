@@ -1,6 +1,6 @@
 ---
 title: "MFC Internet Programming Basics"
-ms.date: "09/12/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["ISAPI extensions, programming with ISAPI", "Internet applications [MFC]", "ISAPI", "ActiveX controls [MFC], Internet", "programming [MFC], Internet", "Web applications [MFC], MFC classes", "ISAPI filters [MFC], programming with ISAPI", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], writing", "Internet applications [MFC], Active technology", "Active technology [MFC]", "Internet content [MFC]", "WinInet classes [MFC]"]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
 ---
@@ -11,7 +11,7 @@ Microsoft provides many APIs for programming both client and server applications
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information, see [ActiveX Controls](activex-controls.md).
 
-![Client and server applications](../mfc/media/vc38bq1.gif "vc38bq1")
+![Client and server applications](../mfc/media/vc38bq1.gif "Client and server applications")
 
 MFC provides classes that support Internet programming. You can use [COleControl](../mfc/reference/colecontrol-class.md) and [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), and [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.
 
@@ -60,6 +60,3 @@ The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=3
 ##  <a name="_core_more_internet_help"></a> More Internet Help
 
 The OLE section of the Windows SDK contains additional information about OLE programming. This information provides details about using the Win32 WinInet functions directly, rather than through the MFC classes. It also contains overview information about Internet technologies.
-
-## See Also
-

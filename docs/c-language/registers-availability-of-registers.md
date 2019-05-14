@@ -10,6 +10,6 @@ ms.assetid: f6654e53-742c-4a30-8620-1a4d436a6ae4
 
 The compiler does not honor user requests for register variables. Instead, it makes it own choices when optimizing.
 
-## See Also
+## See also
 
 [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

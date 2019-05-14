@@ -1,13 +1,13 @@
 ---
 title: "STL/CLR Library Reference"
-ms.date: 09/18/2018"
+ms.date: 09/18/2018
 ms.topic: "reference"
 helpviewer_keywords: ["STL/CLR Library", "STL/CLR, redistribution", "cliext directory"]
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
 ---
 # STL/CLR Library Reference
 
-The STL/CLR Library provides an interface similar to the C++ Standard Library containers for use with C++ and the .NET Framework common language runtime (CLR). STL/CLR is completely separate from the Microsoft implementation of the C++ Standard Libary. STL/CLR is maintained for legacy support but is not kept up-to-date with the C++ standard. We strongly recommend using the native [C++ Standard Library](../standard-library/cpp-standard-library-reference.md) containers instead of STL/CLR whenever possible.
+The STL/CLR Library provides an interface similar to the C++ Standard Library containers for use with C++ and the .NET Framework common language runtime (CLR). STL/CLR is completely separate from the Microsoft implementation of the C++ Standard Library. STL/CLR is maintained for legacy support but is not kept up-to-date with the C++ standard. We strongly recommend using the native [C++ Standard Library](../standard-library/cpp-standard-library-reference.md) containers instead of STL/CLR whenever possible.
 
 To use STL/CLR:
 
@@ -52,6 +52,6 @@ In addition, this section also describes the following components of STL/CLR:
 |[set (STL/CLR)](../dotnet/set-stl-clr.md)|[stack (STL/CLR)](../dotnet/stack-stl-clr.md)|
 |[utility (STL/CLR)](../dotnet/utility-stl-clr.md)|[vector (STL/CLR)](../dotnet/vector-stl-clr.md)|
 
-## See Also
+## See also
 
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

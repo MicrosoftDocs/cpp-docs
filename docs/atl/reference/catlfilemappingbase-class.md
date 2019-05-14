@@ -175,7 +175,7 @@ The file offset where mapping is to begin. The offset value must be a multiple o
 The protection desired for the file view when the file is mapped. See *flProtect* in [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) in the Windows SDK.
 
 *dwViewDesiredAccess*<br/>
-Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
+Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
 
 ### Return Value
 
@@ -183,7 +183,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) and [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
+After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) and [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
 
 ### Example
 
@@ -221,7 +221,7 @@ The pointer to a `SECURITY_ATTRIBUTES` structure that determines whether the ret
 The protection desired for the file view, when the file is mapped. See *flProtect* in `CreateFileMapping` in the Windows SDK.
 
 *dwViewDesiredAccess*<br/>
-Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
+Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
 
 ### Return Value
 
@@ -255,7 +255,7 @@ The mapping size. If 0, the maximum size of the file-mapping object is equal to 
 The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.
 
 *dwViewDesiredAccess*<br/>
-Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) in the Windows SDK.
+Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
 
 ### Return Value
 
@@ -296,9 +296,9 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-See [UnmapViewOfFile](https://msdn.microsoft.com/library/windows/desktop/aa366882) in the Windows SDK for more details.
+See [UnmapViewOfFile](/windows/desktop/api/memoryapi/nf-memoryapi-unmapviewoffile) in the Windows SDK for more details.
 
-## See Also
+## See also
 
 [CAtlFileMapping Class](../../atl/reference/catlfilemapping-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

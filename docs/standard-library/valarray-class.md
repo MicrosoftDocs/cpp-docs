@@ -1,6 +1,6 @@
 ---
 title: "valarray Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["valarray/std::valarray", "valarray/std::valarray::value_type", "valarray/std::valarray::apply", "valarray/std::valarray::cshift", "valarray/std::valarray::free", "valarray/std::valarray::max", "valarray/std::valarray::min", "valarray/std::valarray::resize", "valarray/std::valarray::shift", "valarray/std::valarray::size", "valarray/std::valarray::sum", "valarray/std::valarray::swap"]
 helpviewer_keywords: ["std::valarray [C++]", "std::valarray [C++], value_type", "std::valarray [C++], apply", "std::valarray [C++], cshift", "std::valarray [C++], free", "std::valarray [C++], max", "std::valarray [C++], min", "std::valarray [C++], resize", "std::valarray [C++], shift", "std::valarray [C++], size", "std::valarray [C++], sum", "std::valarray [C++], swap"]
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
@@ -58,7 +58,7 @@ In particular, no subtle differences may exist between copy construction and def
 |-|-|
 |[operator!](#op_not)|A unary operator that obtains the logical `NOT` values of each element in a `valarray`.|
 |[operator%=](#op_mod_eq)|Obtains the remainder of dividing the elements of an array element-wise either by a specified `valarray` or by a value of the element type.|
-|[operator&=](#op_amp_eq)|Obtains the bitwise `AND` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|
+|[operator&=](#op_and_eq)|Obtains the bitwise `AND` of elements in an array either with the corresponding elements in a specified `valarray` or with a value of the element type.|
 |[operator>>=](#op_gt_gt_eq)|Right-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|
 |[operator<<=](#op_lt_lt_eq)|Left-shifts the bits for each element of a `valarray` operand a specified number of positions or by an element-wise amount specified by a second `valarray`.|
 |[operator*=](#op_star_eq)|Multiplies the elements of a specified `valarray` or a value of the element type, element-wise, to an operand `valarray`.|
@@ -478,7 +478,7 @@ valarray: ( 0 -3 4 -7 1 -3 ).
 */
 ```
 
-## <a name="and_eq"></a>  valarray::operator&amp;=
+## <a name="op_and_eq"></a>  valarray::operator&amp;=
 
 Obtains the bitwise **AND** of elements in an array either with the corresponding elements in a specified valarray or with a value of the element type.
 
@@ -876,7 +876,7 @@ valarray: ( 2 0 4 2 6 4 8 6 ).
 */
 ```
 
-## <a name="valarray__operator-"></a>  valarray::operator-
+## <a name="operator-"></a>  valarray::operator-
 
 A unary operator that applies a minus to each element in a valarray.
 
@@ -928,7 +928,7 @@ valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
 */
 ```
 
-## <a name="valarray__operator-_eq"></a>  valarray::operator-=
+## <a name="operator-_eq"></a>  valarray::operator-=
 
 Subtracts the elements of a specified valarray or a value of the element type, element-wise, from an operand valarray.
 

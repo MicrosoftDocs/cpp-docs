@@ -13,7 +13,7 @@ When overriding a generic member function, you cannot specify constraint clauses
 
 The constraint clauses on the generic function you are overriding will be inherited.
 
-For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

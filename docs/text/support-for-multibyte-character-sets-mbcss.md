@@ -1,7 +1,6 @@
 ---
 title: "Support for Multibyte Character Sets (MBCSs)"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
 ---
@@ -36,7 +35,7 @@ The C run-time library and MFC support single-byte, MBCS, and Unicode programmin
 
 ### MBCS/Unicode portability
 
-Using the Tchar.h header file, you can build single-byte, MBCS, and Unicode applications from the same sources. Tchar.h defines macros prefixed with *_tcs* , which map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build Unicode, define the symbol `_UNICODE`. By default, `_MBCS` is defined for MFC applications. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+Using the tchar.h header file, you can build single-byte, MBCS, and Unicode applications from the same sources. Tchar.h defines macros prefixed with *_tcs* , which map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build Unicode, define the symbol `_UNICODE`. By default, `_UNICODE` is defined for MFC applications. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
 > [!NOTE]
 >  Behavior is undefined if you define both `_UNICODE` and `_MBCS`.
@@ -57,7 +56,7 @@ For international portability, code your program with [Unicode](../text/support-
 
 - [Learn about generic-text mappings for byte-width portability](../text/generic-text-mappings-in-tchar-h.md)
 
-## See Also
+## See also
 
 [Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
 [MBCS Support in Visual C++](../text/mbcs-support-in-visual-cpp.md)

@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ---
@@ -12,7 +12,7 @@ This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use 
 
 ## Prerequisites
 
-The [Scribble 1.0 MFC sample](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
+The [Scribble 1.0 MFC sample](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ##  <a name="top"></a> Sections
 
@@ -254,7 +254,7 @@ A *visual manager* is a global object that controls all drawing for an applicati
 
 You've modified the classic Scribble 1.0 MFC sample to use the **Ribbon Designer**. Now go to [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md).
 
-## See Also
+## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application (Part 2)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

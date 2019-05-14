@@ -363,7 +363,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
+Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
 
@@ -514,10 +514,9 @@ void SetHelpID(UINT nIDR);
 *nIDR*<br/>
 Specifies the context-sensitive help ID.
 
-## See Also
+## See also
 
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGTEMPL](../../visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGTEMPL](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

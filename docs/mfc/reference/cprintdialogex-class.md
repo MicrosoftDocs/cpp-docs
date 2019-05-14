@@ -114,7 +114,7 @@ This member function only constructs the object. Use the `DoModal` member functi
 
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -176,9 +176,9 @@ TRUE if successful, otherwise FALSE.
 
 ### Remarks
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
-`GetDefaults` does not display the Print property sheet. Instead, it sets the `hDevNames` and `hDevMode` members of [m_pdex](#m_pdex) to handles to the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer. Both `hDevNames` and `hDevMode` must be NULL, or `GetDefaults` fails.
+`GetDefaults` does not display the Print property sheet. Instead, it sets the `hDevNames` and `hDevMode` members of [m_pdex](#m_pdex) to handles to the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures that are initialized for the system default printer. Both `hDevNames` and `hDevMode` must be NULL, or `GetDefaults` fails.
 
 If the PD_RETURNDC flag is set, this function will not only return `hDevNames` and `hDevMode` (located in `m_pdex.hDevNames` and `m_pdex.hDevMode`) to the caller, but will also return a printer DC in `m_pdex.hDC`. It is the responsibility of the caller to delete the printer DC and call the Windows [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) function on the handles when you are finished with the `CPrintDialogEx` object.
 
@@ -332,7 +332,7 @@ BOOL PrintSelection() const;
 
 TRUE if only the selected items are to be printed; otherwise FALSE.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

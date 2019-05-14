@@ -54,6 +54,6 @@ You might want to implement printing of whatever is in your view, whether it is 
 
 You might not want to use documents and views at all. In that case, see [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md).
 
-## See Also
+## See also
 
-[MFC Database Classes(../data/mfc-database-classes-odbc-and-dao.md)
+[MFC Database Classes](../data/mfc-database-classes-odbc-and-dao.md)

@@ -1,22 +1,22 @@
 ---
 title: "include_alias"
-ms.date: "11/04/2016"
+ms.date: "12/16/2018"
 f1_keywords: ["vc-pragma.include_alias", "include_alias_CPP"]
 helpviewer_keywords: ["pragmas, include_alias", "include_alias pragma"]
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
 ---
 # include_alias
 
-Specifies that *short_filename* is to be used as an alias for *long_filename*.
+Specifies that when *alias_filename* is found in a `#include` directive, the compiler substitutes *actual_filename* in its place.
 
 ## Syntax
 
-> #pragma include_alias("*long_filename*", "*short_filename*")
-> #pragma include_alias(*long_filename*, *short_filename*)
+> #pragma include_alias("*alias_filename*", "*actual_filename*")
+> #pragma include_alias(\<*alias_filename*>, \<*actual_filename*>)
 
 ## Remarks
 
-Some file systems allow longer header filenames than the 8.3 FAT file system limit. The compiler cannot simply truncate the longer names to 8.3, because the first eight characters of the longer header filenames may not be unique. Whenever the compiler encounters the *long_filename* string, it substitutes *short_filename*, and looks for the header file *short_filename* instead. This pragma must appear before the corresponding `#include` directives. For example:
+The **include_alias** pragma directive allows you to substitute files that have different names or paths for the file names included by source files. For example, some file systems allow longer header filenames than the 8.3 FAT file system limit. The compiler cannot simply truncate the longer names to 8.3, because the first eight characters of the longer header filenames may not be unique. Whenever the compiler encounters the *alias_filename* string, it substitutes *actual_filename*, and looks for the header file *actual_filename* instead. This pragma must appear before the corresponding `#include` directives. For example:
 
 ```cpp
 // First eight characters of these two files not unique.
@@ -73,8 +73,8 @@ Furthermore, the following directive generates an error:
 Note that the filename reported in error messages, or as the value of the predefined `__FILE__` macro, is the name of the file after the substitution has been performed. For example, see the output after the following directives:
 
 ```cpp
-#pragma include_alias( "VeryLongFileName.H", "myfile.h" )
-#include "VeryLongFileName.H"
+#pragma include_alias( "VERYLONGFILENAME.H", "myfile.h" )
+#include "VERYLONGFILENAME.H"
 ```
 
 An error in VERYLONGFILENAME.H produces the following error message:
@@ -91,8 +91,8 @@ Also note that transitivity is not supported. Given the following directives,
 #include "one.h"
 ```
 
-the compiler searches for the file TWO.H rather than THREE.H.
+the compiler searches for the file two.h rather than three.h.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

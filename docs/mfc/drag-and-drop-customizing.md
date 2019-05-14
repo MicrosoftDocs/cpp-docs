@@ -20,7 +20,7 @@ You can override the following functions to customize drag-and-drop operations:
 |`GiveFeedback`|Visual feedback, such as cursor appearance, for different drop results.|
 |`QueryContinueDrag`|The termination of a drag-and-drop operation. This function enables you to check modifier key states during the drag operation.|
 
-## See Also
+## See also
 
 [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md)<br/>
 [COleDropSource Class](../mfc/reference/coledropsource-class.md)<br/>

@@ -91,7 +91,7 @@ The type that represents the stored allocator object that encapsulates details a
 
 |Name|Description|
 |----------|-----------------|
-|[operator[]](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|
+|[operator\[\]](#operator_at)|Overloaded. Finds or inserts an element with the specified key. This method is concurrency-safe.|
 |[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_unordered_map` object to this one. This method is not concurrency-safe.|
 
 ## Remarks
@@ -763,8 +763,7 @@ size_type unsafe_max_bucket_count() const;
 
 The maximum number of buckets in this container.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

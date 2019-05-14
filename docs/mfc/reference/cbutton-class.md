@@ -189,7 +189,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure. The structure contains information about the item to be drawn and the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure. The structure contains information about the item to be drawn and the type of drawing required.
 
 ### Remarks
 
@@ -308,7 +308,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETIDEALSIZE message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETIDEALSIZE message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="getimagelist"></a>  CButton::GetImageList
 
@@ -329,7 +329,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETIMAGELIST message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETIMAGELIST message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="getnote"></a>  CButton::GetNote
 
@@ -456,7 +456,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pSize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the description of a rectangle.|
+|*pSize*|[out] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that receives the description of a rectangle.|
 
 ### Return Value
 
@@ -541,7 +541,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_GETTEXTMARGIN message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_GETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="setbitmap"></a>  CButton::SetBitmap
 
@@ -794,7 +794,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_SETIMAGELIST message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_SETIMAGELIST message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
 ##  <a name="setnote"></a>  CButton::SetNote
 
@@ -930,7 +930,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pSize*|[in] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that describes a bounding rectangle.|
+|*pSize*|[in] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that describes a bounding rectangle.|
 
 ### Return Value
 
@@ -1036,9 +1036,9 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](https://msdn.microsoft.com/library/windows/desktop/bb775943) section of the Windows SDK.
+This member function emulates the functionality of the BCM_SETTEXTMARGIN message, as described in the [Buttons](/windows/desktop/controls/buttons) section of the Windows SDK.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

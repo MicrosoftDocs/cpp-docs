@@ -14,7 +14,7 @@ The MFC framework is a powerful approach that lets you build upon the work of ex
 
 ## In This Section
 
-`MFC Samples`, which are supplied in [Visual C++ Samples](../visual-cpp-samples.md)
+`MFC Samples`, which are supplied in [Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)
 
@@ -46,7 +46,6 @@ For an overview of the MFC reference documentation, see [Microsoft Foundation Cl
 
 For information about ATL, see [Active Template Library Reference](../atl/atl-class-overview.md).
 
-## See Also
+## See also
 
 [Working with Window Objects](../mfc/working-with-window-objects.md)
-

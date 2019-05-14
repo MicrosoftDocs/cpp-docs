@@ -1,6 +1,6 @@
 ---
 title: "CMFCColorPickerCtrl Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SelectCellHexagon", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminanceBarWidth", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetOriginalColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetPalette", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor"]
 helpviewer_keywords: ["CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl", "CMFCColorPickerCtrl [MFC], GetColor", "CMFCColorPickerCtrl [MFC], GetHLS", "CMFCColorPickerCtrl [MFC], GetHue", "CMFCColorPickerCtrl [MFC], GetLuminance", "CMFCColorPickerCtrl [MFC], GetSaturation", "CMFCColorPickerCtrl [MFC], SelectCellHexagon", "CMFCColorPickerCtrl [MFC], SetColor", "CMFCColorPickerCtrl [MFC], SetHLS", "CMFCColorPickerCtrl [MFC], SetHue", "CMFCColorPickerCtrl [MFC], SetLuminance", "CMFCColorPickerCtrl [MFC], SetLuminanceBarWidth", "CMFCColorPickerCtrl [MFC], SetOriginalColor", "CMFCColorPickerCtrl [MFC], SetPalette", "CMFCColorPickerCtrl [MFC], SetSaturation", "CMFCColorPickerCtrl [MFC], SetType", "CMFCColorPickerCtrl [MFC], DrawCursor"]
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
@@ -55,7 +55,7 @@ Standard colors are selected from a hexagonal color palette, and custom colors a
 
 The following illustration depicts several `CMFCColorPickerCtrl` objects.
 
-![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png "colorpicker")
+![CMFCColorPickerCtrl dialog box](../../mfc/reference/media/colorpicker.png "CMFCColorPickerCtrl dialog box")
 
 The `CMFCColorPickerCtrl` supports two pairs of styles. The HEX and HEX_GREYSCALE styles are appropriate for standard color selection. The PICKER and LUMINANCE styles are appropriate for custom color selection.
 
@@ -69,7 +69,7 @@ Perform the following steps to incorporate the `CMFCColorPickerCtrl` control int
 
 ## Example
 
-The following example demonstrates how to configure a `CMFCColorPickerCtrl` object by using various methods in the `CMFCColorPickerCtrl` class. The example demonstrates how to set the type of the picker control, and how to set its color, hue, luminance, and saturation. The example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure a `CMFCColorPickerCtrl` object by using various methods in the `CMFCColorPickerCtrl` class. The example demonstrates how to set the type of the picker control, and how to set its color, hue, luminance, and saturation. The example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_2.cpp)]
@@ -404,7 +404,7 @@ The types are defined by the `CMFCColorPickerCtrl::COLORTYPE` enumeration. The p
 
 To specify a color picker control type, call this method before the Windows control is created.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

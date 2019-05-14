@@ -1,18 +1,18 @@
 ---
 title: "/FD (IDE Minimal Rebuild)"
-ms.date: "11/04/2016"
+ms.date: "04/08/2019"
 f1_keywords: ["/FD"]
 helpviewer_keywords: ["/FD compiler option [C++]", "-FD compiler option [C++]", "FD compiler option [C++]"]
 ms.assetid: 7ef21b8c-a448-4bb4-9585-a2a870028e17
 ---
 # /FD (IDE Minimal Rebuild)
 
-**/FD** is not exposed to users except in the [Command Line](../../ide/command-line-property-pages.md) property page of a C++ project's **Property Pages** dialog box, if and only if [/Gm (Enable Minimal Rebuild)](../../build/reference/gm-enable-minimal-rebuild.md) is not also selected. **/FD** has no effect other than from the development environment. **/FD** is not exposed in the output of **cl /?**.
+**/FD** is only exposed to users in the [Command Line](command-line-property-pages.md) property page of a C++ project's **Property Pages** dialog box. It's available if and only if the deprecated and off-by-default [/Gm (Enable Minimal Rebuild)](gm-enable-minimal-rebuild.md) option isn't selected. **/FD** has no effect other than from the development environment. **/FD** isn't exposed in the output of `cl /?`.
 
-If you do not enable **/Gm** in the development environment, **/FD** will be used. **/FD** ensures that the .idb file has sufficient dependency information. **/FD** is only used by the development environment, and it should not be used from the command line or a build script.
+If you don't enable the deprecated **/Gm** option in the development environment, **/FD** is used. **/FD** ensures the .idb file has sufficient dependency information. **/FD** is only used by the development environment, and it shouldn't be used from the command line or a build script.
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -46,7 +46,6 @@ Critical section to serialize access to the object map entries. Used internally 
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

@@ -110,7 +110,7 @@ One or more flags you can use to customize the settings of the dialog box. The v
 
 - PSD_DISABLEORIENTATION Disables the page orientation dialog control.
 
-- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.
+- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.
 
 - PSD_DISABLEPAPER Disables the paper selection control.
 
@@ -139,7 +139,7 @@ Use the [DoModal](../../mfc/reference/cdialog-class.md#domodal) function to disp
 
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC
 
-Creates a printer device context from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -230,7 +230,7 @@ void GetMargins(
 ### Parameters
 
 *lpRectMargins*<br/>
-Pointer to a [RECT](rect-structure.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
+Pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
 
 *lpRectMinMargins*<br/>
 Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
@@ -309,7 +309,7 @@ Specifies a message, indicating the area of the page currently being drawn. Can 
 - WM_PSD_YAFULLPAGERECT Area for a return address representation. This area extends to the edges of the sample page area.
 
 *lpRect*<br/>
-Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](rect-structure.md) object containing the coordinates of the drawing area.
+Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) object containing the coordinates of the drawing area.
 
 ### Return Value
 
@@ -371,9 +371,8 @@ Nonzero value if handled; otherwise 0.
 
 Override this function to customize the drawing of the image. If you override this function and return TRUE, you must draw the entire image. If you override this function and return FALSE, the entire default image is drawn by the framework.
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

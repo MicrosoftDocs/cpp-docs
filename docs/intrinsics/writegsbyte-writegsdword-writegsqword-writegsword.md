@@ -53,11 +53,11 @@ void __writegsqword(
 
 ## Remarks
 
-These intrinsics are available in kernel mode only, and these routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

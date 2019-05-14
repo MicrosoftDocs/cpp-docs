@@ -190,7 +190,7 @@ HWND Create(
 [in] The handle to the parent or owner window.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
 *szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
@@ -250,7 +250,7 @@ The result of the message processing.
 
 ### Remarks
 
-By default, `DefWindowProc` calls the [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
+By default, `DefWindowProc` calls the [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage
 
@@ -436,7 +436,7 @@ The result of the message processing.
 
 `WindowProc` directs messages to the message map identified by [m_dwMsgMapID](#m_dwmsgmapid). If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing.
 
-## See Also
+## See also
 
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>

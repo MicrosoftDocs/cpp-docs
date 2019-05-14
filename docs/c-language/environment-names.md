@@ -21,7 +21,7 @@ would run a copy of the command shell (CMD.EXE), set the environment variable LI
 
 Likewise, changes made by the `_putenv` function last only until the program ends.
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)<br/>
 [_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md)<br/>

@@ -1,7 +1,6 @@
 ---
 title: "Threading Models and Critical Sections Classes (ATL)"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.atl.threads.models"]
 helpviewer_keywords: ["ATL, critical sections", "ATL, multithreading", "threading [ATL], models", "critical sections"]
 ms.assetid: 759f05ef-6285-4be6-a2cc-78572dd75146
 ---
@@ -33,7 +32,6 @@ The following classes define a threading model and critical section:
 
 - [Win32ThreadTraits](../atl/reference/win32threadtraits-class.md) Provides the creation function for a Windows thread. Use this class if the thread will not use CRT functions.
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)
-

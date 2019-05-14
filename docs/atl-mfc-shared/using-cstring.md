@@ -73,4 +73,3 @@ Provides reference information about the `CSimpleStringT` class.
 Contains links to topics that describe several ways to manage string data.
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

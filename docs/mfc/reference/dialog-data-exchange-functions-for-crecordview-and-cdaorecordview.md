@@ -454,7 +454,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-  ## name="ddx_fieldslider"></a>  DDX_FieldSlider
+  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
 The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ### Syntax
@@ -504,10 +504,6 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 ### Requirements
 
 **Header:** afxdao.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
 
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
@@ -655,6 +651,6 @@ The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/
 
   **Header** afxdao.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)

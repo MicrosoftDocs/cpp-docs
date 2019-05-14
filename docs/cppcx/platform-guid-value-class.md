@@ -1,6 +1,6 @@
 ---
 title: "Platform::Guid value class"
-ms.date: "12/30/2016"
+ms.date: "01/15/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Guid"]
 helpviewer_keywords: ["Platform::Guid Struct"]
@@ -18,18 +18,19 @@ public value struct Guid
 
 ### Members
 
-Guid has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md). Guid also has the following members.
+`Platform::Guid` has the `Equals()`, `GetHashCode()`, and `ToString()` methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the `GetTypeCode()` method derived from the [Platform::Type Class](../cppcx/platform-type-class.md). `Platform::Guid` also has the following members.
 
 |Member|Description|
 |------------|-----------------|
-|[Guid](#ctor)|Initializes a new instance of the Guid struct.|
+|[Guid](#ctor)|Initializes a new instance of a `Platform::Guid`.|
 |[operator==](#operator-equality)|Equals operator.|
-|[operator!=](#operator-not-equal)|Not equals operator.|
-|[operator()](#operator-call)|Converts a Guid to a GUID.|
+|[operator!=](#operator-inequality)|Not equals operator.|
+|[operator&lt;](#operator-less)|Less than operator.|
+|[operator()](#operator-call)|Converts a `Platform::Guid` to a `GUID`.|
 
 ### Remarks
 
-For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)
+To generate a new `Platform::Guid`, use the [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) static method.
 
 ### Requirements
 
@@ -43,7 +44,7 @@ For an example of how to generate a new Platform::Guid using the Windows functio
 
 ## <a name="ctor"></a> Guid::Guid Constructors
 
-Initializes a new instance of a Guid struct.
+Initializes a new instance of a `Platform::Guid`.
 
 ### Syntax
 
@@ -73,86 +74,131 @@ Guid(
 ### Parameters
 
 *a*<br/>
-The first 4 bytes of the GUID.
+The first 4 bytes of the `GUID`.
 
 *b*<br/>
-The next 2 bytes of the GUID.
+The next 2 bytes of the `GUID`.
 
 *c*<br/>
-The next 2 bytes of the GUID.
+The next 2 bytes of the `GUID`.
 
 *d*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *e*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *f*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *g*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *h*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *i*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *j*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *k*<br/>
-The next byte of the GUID.
+The next byte of the `GUID`.
 
 *m*<br/>
-A GUID as defined.
+A `GUID` in the form a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
 *n*<br/>
-The remaining 8 bytes of the GUID.
+The remaining 8 bytes of the `GUID`.
 
 ## <a name="operator-equality"></a> Guid::operator== Operator
 
-Compares two guids.
+Compares two `Platform::Guid` instances for equality.
 
 ### Syntax
 
 ```cpp
-Platform::Guid::operator==
+static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid2);
 ```
+
+### Parameters
+
+*guid1*<br/>
+The first `Platform::Guid` to compare.
+
+*guid2*<br/>
+The second `Platform::Guid` to compare.
 
 ### Return Value
 
-True if the two guids are equal.
+True if the two `Platform::Guid` instances are equal.
+
+### Remarks
+
+Prefer using the `==` operator instead of the
+[Windows::Foundation::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) static method.
 
 ## <a name="operator-inequality"></a> Guid::operator!= Operator
 
-Compares two guids.
+Compares two `Platform::Guid` instances for inequality.
 
 ### Syntax
 
 ```cpp
-Platform::Guid::operator!=
+static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid2);
 ```
+
+### Parameters
+
+*guid1*<br/>
+The first `Platform::Guid` to compare.
+
+*guid2*<br/>
+The second `Platform::Guid` to compare.
 
 ### Return Value
 
-True if the two guids are not equal.
+True if the two `Platform::Guid` instances are not equal.
+
+## <a name="operator-less"></a> Guid::operator&lt; Operator
+
+Compares two `Platform::Guid` instances for ordering.
+
+### Syntax
+
+```cpp
+static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2);
+```
+
+### Parameters
+
+*guid1*<br/>
+The first `Platform::Guid` to compare.
+
+*guid2*<br/>
+The second `Platform::Guid` to compare.
+
+### Return Value
+
+True if *guid1* is ordered before *guid2*. The ordering is lexicographic after treating each `Platform::Guid` as if it's an array of four 32-bit unsigned values. This isn't the ordering used by SQL Server or the .NET Framework, nor is it the same as lexicographical ordering by string representation.
+
+This operator is provided so that `Guid` objects can be more easily consumed by the C++ standard library.
 
 ## <a name="operator-call"></a> Guid::operator() Operator
 
-Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931)GUID to a Platform::Guid.
+Implicitly converts a `Platform::Guid` to a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
 ### Syntax
 
 ```cpp
-Platform::Guid operator();
+const GUID& Platform::Guid::operator();
 ```
 
 ### Return Value
 
-A Guid struct.
+A [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931).
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

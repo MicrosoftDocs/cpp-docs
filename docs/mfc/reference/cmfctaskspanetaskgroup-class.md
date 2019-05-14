@@ -1,6 +1,6 @@
 ---
 title: "CMFCTasksPaneTaskGroup Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsBottom", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsCollapsed", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsSpecial", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_lstTasks", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName"]
 helpviewer_keywords: ["CMFCTasksPaneTaskGroup [MFC], CMFCTasksPaneTaskGroup", "CMFCTasksPaneTaskGroup [MFC], SetACCData", "CMFCTasksPaneTaskGroup [MFC], m_bIsBottom", "CMFCTasksPaneTaskGroup [MFC], m_bIsCollapsed", "CMFCTasksPaneTaskGroup [MFC], m_bIsSpecial", "CMFCTasksPaneTaskGroup [MFC], m_lstTasks", "CMFCTasksPaneTaskGroup [MFC], m_rect", "CMFCTasksPaneTaskGroup [MFC], m_rectGroup", "CMFCTasksPaneTaskGroup [MFC], m_strName"]
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
@@ -46,19 +46,19 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 The following illustration shows an expanded task group:
 
-![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "Task group, expanded")
 
 The following illustration shows a collapsed task group:
 
-![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png "nexttaskgrpcollapse")
+![Collapsed task group](../../mfc/reference/media/nexttaskgrpcollapse.png "Collapsed task group")
 
 The following illustration shows a task group without a caption:
 
-![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")
+![Task group without a caption](../../mfc/reference/media/nexttaskgrpnocapt.png "Task group without a caption")
 
 The following illustration shows two task groups. The first task group is marked as special by setting the `m_bIsSpecial` flag to TRUE, while the second task group is not special. Note how the caption for the first task group is darker than the second task group:
 
-![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")
+![Special task group](../../mfc/reference/media/nexttaskgrpspecial.png "Special task group")
 
 ## Inheritance Hierarchy
 
@@ -212,7 +212,7 @@ virtual BOOL SetACCData(
 
 TRUE if the *data* parameter was successfully populated with the accessibility data of the current task group; otherwise, FALSE.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

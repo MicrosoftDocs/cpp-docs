@@ -116,7 +116,7 @@ virtual BOOL Create(
 Specifies the style of the checklist box. The style must be LBS_HASSTRINGS and either LBS_OWNERDRAWFIXED (all items in the list are the same height) or LBS_OWNERDRAWVARIABLE (items in the list are of varying heights). This style can be combined with other [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) except LBS_USETABSTOPS.
 
 *rect*<br/>
-Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the checklist box's parent window (usually a `CDialog` object). It must not be NULL.
@@ -163,7 +163,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -260,7 +260,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 
@@ -347,9 +347,9 @@ Valid styles are:
 
 For information on these styles, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).
 
-## See Also
+## See also
 
-[MFC Sample TSTCON](../../visual-cpp-samples.md)<br/>
+[MFC Sample TSTCON](../../overview/visual-cpp-samples.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)

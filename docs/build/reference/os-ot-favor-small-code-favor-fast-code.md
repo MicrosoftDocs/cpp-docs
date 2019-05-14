@@ -20,12 +20,12 @@ Minimizes or maximizes the size of EXEs and DLLs.
 
 **/Os** (Favor Small Code) minimizes the size of EXEs and DLLs by instructing the compiler to favor size over speed. The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally these differences offer tradeoffs of size versus speed. The **/Os** and **/Ot** options allow you to specify a preference for one over the other:
 
-**/Ot** (Favor Fast Code) maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This is the default.) The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally, these differences offer tradeoffs of size versus speed. The /Ot option is implied by the Maximize Speed ([/O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md)) option. The **/O2** option combines several options to produce very fast code.
+**/Ot** (Favor Fast Code) maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This is the default.) The compiler can reduce many C and C++ constructs to functionally similar sequences of machine code. Occasionally, these differences offer tradeoffs of size versus speed. The /Ot option is implied by the Maximize Speed ([/O2](o1-o2-minimize-size-maximize-speed.md)) option. The **/O2** option combines several options to produce very fast code.
 
-If you use **/Os** or **/Ot**, then you must also specify [/Og](../../build/reference/og-global-optimizations.md) to optimize the code.
+If you use **/Os** or **/Ot**, then you must also specify [/Og](og-global-optimizations.md) to optimize the code.
 
 > [!NOTE]
->  Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../../build/reference/profile-guided-optimizations.md).
+>  Information that is gathered from profiling test runs will override optimizations that would otherwise be in effect if you specify **/Ob**, **/Os**, or **/Ot**. For more information, [Profile-Guided Optimizations](../profile-guided-optimizations.md).
 
 **x86 Specific**
 
@@ -67,7 +67,7 @@ sub    eax, ecx
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -79,8 +79,8 @@ sub    eax, ecx
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed%2A>.
 
-## See Also
+## See also
 
-[/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/O Options (Optimize Code)](o-options-optimize-code.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

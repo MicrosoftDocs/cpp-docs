@@ -15,9 +15,9 @@ For more information, see:
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [override](../../windows/override-cpp-component-extensions.md)
+- [override](../../extensions/override-cpp-component-extensions.md)
 
-- [new (new slot in vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+- [new (new slot in vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 C4484 is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to suppress C4484.
 

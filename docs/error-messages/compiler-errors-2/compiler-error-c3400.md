@@ -11,7 +11,7 @@ circular constraint dependency involving 'constraint_1' and 'constraint_2'
 
 The compiler detected circular constraints.
 
-For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

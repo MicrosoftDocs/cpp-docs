@@ -2,7 +2,7 @@
 title: "_CIpow"
 ms.date: "11/04/2016"
 apiname: ["_CIpow"]
-apilocation: ["msvcr100.dll", "msvcr110.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr90.dll"]
+apilocation: ["msvcr100.dll", "msvcr110.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr90.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CIpow", "_CIpow"]
 helpviewer_keywords: ["CIpow intrinsic", "_CIpow intrinsic"]
@@ -28,7 +28,7 @@ The resulting value is pushed onto the top of the stack.
 
 **Platform:** x86
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)

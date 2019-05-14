@@ -39,7 +39,7 @@ Low-level I/O routines set the [errno](../c-runtime-library/errno-doserrno-sys-e
 
 **_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

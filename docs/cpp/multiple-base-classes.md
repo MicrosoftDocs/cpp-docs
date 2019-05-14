@@ -1,6 +1,6 @@
 ---
 title: "Multiple Base Classes"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
 ---
@@ -42,13 +42,13 @@ When declaring a virtual base class, the **virtual** keyword appears in the base
 
 Consider the class hierarchy in the following figure, which illustrates a simulated lunch line.
 
-![Graph of simulated lunch line](../cpp/media/vc38xp1.gif "vc38XP1")
-Simulated Lunch-Line Graph
+![Graph of simulated lunch line](../cpp/media/vc38xp1.gif "Graph of simulated lunch line") <br/>
+Simulated lunch-line graph
 
 In the figure, `Queue` is the base class for both `CashierQueue` and `LunchQueue`. However, when both classes are combined to form `LunchCashierQueue`, the following problem arises: the new class contains two subobjects of type `Queue`, one from `CashierQueue` and the other from `LunchQueue`. The following figure shows the conceptual memory layout (the actual memory layout might be optimized).
 
-![Simulated lunch&#45;line object](../cpp/media/vc38xp2.gif "vc38XP2")
-Simulated Lunch-Line Object
+![Simulated lunch&#45;line object](../cpp/media/vc38xp2.gif "Simulated lunch&#45;line object") <br/>
+Simulated lunch-line object
 
 Note that there are two `Queue` subobjects in the `LunchCashierQueue` object. The following code declares `Queue` to be a virtual base class:
 
@@ -63,18 +63,18 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).
 
-![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "vc38XP3")
-Simulated Lunch-Line Object with Virtual Base Classes
+![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "Simulated lunch&#45;line object, virtual base classes") <br/>
+Simulated lunch-line object with virtual base classes
 
 A class can have both a virtual component and a nonvirtual component of a given type. This happens in the conditions illustrated in the following figure.
 
-![Virtual and nonvirtual components of a class](../cpp/media/vc38xp4.gif "vc38XP4")
-Virtual and Nonvirtual Components of the Same Class
+![Virtual and non&#45;virtual components of a class](../cpp/media/vc38xp4.gif "Virtual and non&#45;virtual components of a class") <br/>
+Virtual and non-virtual components of the same class
 
 In the figure, `CashierQueue` and `LunchQueue` use `Queue` as a virtual base class. However, `TakeoutQueue` specifies `Queue` as a base class, not a virtual base class. Therefore, `LunchTakeoutCashierQueue` has two subobjects of type `Queue`: one from the inheritance path that includes `LunchCashierQueue` and one from the path that includes `TakeoutQueue`. This is illustrated in the following figure.
 
-![Virtual & nonvirtual inheritance in object layout](../cpp/media/vc38xp5.gif "vc38XP5")
-Object Layout with Virtual and Nonvirtual Inheritance
+![Virtual & non&#45;virtual inheritance in object layout](../cpp/media/vc38xp5.gif "Virtual & non&#45;virtual inheritance in object layout") <br/>
+Object layout with virtual and non-virtual inheritance
 
 > [!NOTE]
 >  Virtual inheritance provides significant size benefits when compared with nonvirtual inheritance. However, it can introduce extra processing overhead.
@@ -182,8 +182,8 @@ Explicit and implicit conversions from pointers or references to class types can
 
 - The effect of explicitly converting the pointer obtained using the address-of operator to the base-class type `A`. Note that coercing the address of the object to type `A*` does not always provide the compiler with enough information as to which subobject of type `A` to select; in this case, two subobjects exist.
 
-![Ambiguous conversion of pointers to base classes](../cpp/media/vc38xt1.gif "vc38XT1")
-Ambiguous Conversion of Pointers to Base Classes
+![Ambiguous conversion of pointers to base classes](../cpp/media/vc38xt1.gif "Ambiguous conversion of pointers to base classes") <br/>
+Ambiguous conversion of pointers to base classes
 
 The conversion to type `A*` (pointer to `A`) is ambiguous because there is no way to discern which subobject of type `A` is the correct one. Note that you can avoid the ambiguity by explicitly specifying which subobject you mean to use, as follows:
 
@@ -198,8 +198,8 @@ If virtual base classes are used, functions, objects, types, and enumerators can
 
 The following figure shows how objects are composed using virtual and nonvirtual inheritance.
 
-![Virtual derivation and nonvirtual derivation](../cpp/media/vc38xr1.gif "vc38XR1")
-Virtual vs. Nonvirtual Derivation
+![Virtual derivation and non&#45;virtual derivation](../cpp/media/vc38xr1.gif "Virtual derivation and non&#45;virtual derivation") <br/>
+Virtual vs. non-virtual derivation
 
 In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.
 

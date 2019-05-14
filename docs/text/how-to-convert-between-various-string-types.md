@@ -74,7 +74,7 @@ int main()
         cout << printstr << endl;
     }
 
-    // Convert the C style string to a CstringA and display it.
+    // Convert the C style string to a CStringA and display it.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
@@ -143,8 +143,8 @@ int main()
     wcout << orig << _T(" (wchar_t *)") << endl;
 
     // Convert the wchar_t string to a char* string. Record
-    //.the length of the original string and add 1 to it to
-    //.account for the terminating null character.
+    // the length of the original string and add 1 to it to
+    // account for the terminating null character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
@@ -189,7 +189,7 @@ int main()
         cout << printstr << endl;
         // The following line of code is an easier way to
         // display wide character strings:
-        // wcout << (LPCTSTR) ccombstr << endl;
+        wcout << (LPCTSTR) ccombstr << endl;
     }
 
     // Convert a wide wchar_t string to a multibyte CStringA,
@@ -476,98 +476,94 @@ int main()
     // Set up a multibyte CStringA string.
     CStringA origa("Hello, World!");
     cout << origa << " (CStringA)" << endl;
-```
+    
+    // Set up a wide character CStringW string.
+    CStringW origw("Hello, World!");
+    wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
 
-```cpp
-// Set up a wide character CStringW string.
-CStringW origw("Hello, World!");
-wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
+    // Convert to a char* string from CStringA string
+    // and display the result.
+    const size_t newsizea = (origa.GetLength() + 1);
+    char *nstringa = new char[newsizea];
+    strcpy_s(nstringa, newsizea, origa);
+    cout << nstringa << " (char *)" << endl;
 
-// Convert to a char* string from CStringA string
-// and display the result.
-const size_t newsizea = (origa.GetLength() + 1);
-char *nstringa = new char[newsizea];
-strcpy_s(nstringa, newsizea, origa);
-cout << nstringa << " (char *)" << endl;
+    // Convert to a char* string from a wide character
+    // CStringW string. To be safe, we allocate two bytes for each
+    // character in the original string, including the terminating
+    // null.
+    const size_t newsizew = (origw.GetLength() + 1)*2;
+    char *nstringw = new char[newsizew];
+    size_t convertedCharsw = 0;
+    wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
+    cout << nstringw << " (char *)" << endl;
 
-// Convert to a char* string from a wide character
-// CStringW string. To be safe, we allocate two bytes for each
-// character in the original string, including the terminating
-// null.
-const size_t newsizew = (origw.GetLength() + 1)*2;
-char *nstringw = new char[newsizew];
-size_t convertedCharsw = 0;
-wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
-cout << nstringw << " (char *)" << endl;
+    // Convert to a wchar_t* from CStringA
+    size_t convertedCharsa = 0;
+    wchar_t *wcstring = new wchar_t[newsizea];
+    mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
+    wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-// Convert to a wchar_t* from CStringA
-size_t convertedCharsa = 0;
-wchar_t *wcstring = new wchar_t[newsizea];
-mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
-wcout << wcstring << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character wchar_t* string from
+    // a wide character CStringW string.
+    wchar_t *n2stringw = new wchar_t[newsizew];
+    wcscpy_s( n2stringw, newsizew, origw );
+    wcout << n2stringw << _T(" (wchar_t *)") << endl;
 
-// Convert to a wide character wchar_t* string from
-// a wide character CStringW string.
-wchar_t *n2stringw = new wchar_t[newsizew];
-wcscpy_s( n2stringw, newsizew, origw );
-wcout << n2stringw << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character _bstr_t string from
+    // a multibyte CStringA string.
+    _bstr_t bstrt(origa);
+    bstrt += _T(" (_bstr_t)");
+    wcout << bstrt << endl;
 
-// Convert to a wide character _bstr_t string from
-// a multibyte CStringA string.
-_bstr_t bstrt(origa);
-bstrt += _T(" (_bstr_t)");
-wcout << bstrt << endl;
+    // Convert to a wide character _bstr_t string from
+    // a wide character CStringW string.
+    bstr_t bstrtw(origw);
+    bstrtw += " (_bstr_t)";
+    wcout << bstrtw << endl;
 
-// Convert to a wide character_bstr_t string from
-// a wide character CStringW string.
-bstr_t bstrtw(origw);
-bstrtw += " (_bstr_t)";
-wcout << bstrtw << endl;
+    // Convert to a wide character CComBSTR string from
+    // a multibyte character CStringA string.
+    CComBSTR ccombstr(origa);
+    if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        // Convert the wide character string to multibyte
+        // for printing.
+        CW2A printstr(ccombstr);
+        cout << printstr << endl;
+    }
 
-// Convert to a wide character CComBSTR string from
-// a multibyte character CStringA string.
-CComBSTR ccombstr(origa);
-if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    // Convert the wide character string to multibyte
-    // for printing.
-    CW2A printstr(ccombstr);
-    cout << printstr << endl;
-}
+    // Convert to a wide character CComBSTR string from
+    // a wide character CStringW string.
+    CComBSTR ccombstrw(origw);
+    
+    // Append the type of string to it, and display the result.
+    if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        CW2A printstrw(ccombstrw);
+        wcout << printstrw << endl;
+    }
 
-// Convert to a wide character CComBSTR string from
-// a wide character CStringW string.
-CComBSTR ccombstrw(origw);
-// Append the type of string to it, and display the result.
+    // Convert a multibyte character CStringA to a
+    // multibyte version of a basic_string string.
+    string basicstring(origa);
+    basicstring += " (basic_string)";
+    cout << basicstring << endl;
 
-if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    CW2A printstrw(ccombstrw);
-    wcout << printstrw << endl;
-}
+    // Convert a wide character CStringW to a
+    // wide character version of a basic_string
+    // string.
+    wstring basicstringw(origw);
+    basicstringw += _T(" (basic_string)");
+    wcout << basicstringw << endl;
 
-// Convert a multibyte character CStringA to a
-// multibyte version of a basic_string string.
-string basicstring(origa);
-basicstring += " (basic_string)";
-cout << basicstring << endl;
-
-// Convert a wide character CStringW to a
-// wide character version of a basic_string
-// string.
-wstring basicstringw(origw);
-basicstringw += _T(" (basic_string)");
-wcout << basicstringw << endl;
-
-// Convert a multibyte character CStringA to a
-// System::String.
-String ^systemstring = gcnew String(origa);
-systemstring += " (System::String)";
-Console::WriteLine("{0}", systemstring);
-delete systemstring;
-```
-
-```cpp
+    // Convert a multibyte character CStringA to a
+    // System::String.
+    String ^systemstring = gcnew String(origa);
+    systemstring += " (System::String)";
+    Console::WriteLine("{0}", systemstring);
+    delete systemstring;
+    
     // Convert a wide character CStringW to a
     // System::String.
     String ^systemstringw = gcnew String(origw);
@@ -623,7 +619,7 @@ int main()
     string orig("Hello, World!");
     cout << orig << " (basic_string)" << endl;
 
-    // Convert a wide char basic_string string to a multibyte char*
+    // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
     // in the original string, including the terminating null.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;
@@ -727,7 +723,7 @@ int main()
     // while we call native functions.
     pin_ptr<const wchar_t> wch = PtrToStringChars(orig);
 
-    // Make a copy of the system string as a multibyte
+    // Make a copy of the System::String as a multibyte
     // char* string. Allocate two bytes in the multibyte
     // output string for every wide character in the input
     // string, including space for a terminating null.
@@ -738,20 +734,20 @@ int main()
     wcstombs_s(&convertedChars, nstring, newsize, wch, _TRUNCATE);
     cout << nstring << " (char *)" << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character wchar_t* string.
     const size_t newsizew = origsize;
     wchar_t *wcstring = new wchar_t[newsizew];
     wcscpy_s(wcstring, newsizew, wch);
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character _bstr_t string.
     _bstr_t bstrt(wch);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // Convert a wide character system string
+    // Convert a wide character System::String
     // to a wide character CComBSTR string.
     CComBSTR ccombstr(wch);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
@@ -795,7 +791,7 @@ Hello, World! (CStringW)
 Hello, World! (basic_string)
 ```
 
-## See Also
+## See also
 
 [ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)<br/>
 [CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
@@ -807,4 +803,4 @@ Hello, World! (basic_string)
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>
 [strcpy_s, wcscpy_s, _mbscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
 [strcat_s, wcscat_s, _mbscat_s](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)<br/>
-[pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)
+[pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)

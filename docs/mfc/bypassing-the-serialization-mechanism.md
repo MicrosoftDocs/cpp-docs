@@ -16,7 +16,6 @@ You can use the `Open`, `Read`, `Write`, `Close`, and `Seek` member functions of
 
 In this scenario, your `Serialize` override does nothing, unless, for example, you want to have it read and write a file header to keep it up to date when the document closes.
 
-## See Also
+## See also
 
 [Using Documents](../mfc/using-documents.md)
-

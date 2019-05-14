@@ -26,7 +26,6 @@ The frame window also forwards commands to its views and can respond to notifica
 
 - [Controls](../mfc/controls-mfc.md)
 
-## See Also
+## See also
 
 [Frame Windows](../mfc/frame-windows.md)
-

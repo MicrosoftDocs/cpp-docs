@@ -9,7 +9,7 @@ ms.assetid: 98bd9043-ec44-451e-a482-3a8e35fc7464
 
 explicit specializations are not supported in generics
 
-A generic class was declared incorrectly.  See [Generics](../../windows/generics-cpp-component-extensions.md) for more information.
+A generic class was declared incorrectly.  See [Generics](../../extensions/generics-cpp-component-extensions.md) for more information.
 
 ## Example
 

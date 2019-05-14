@@ -116,7 +116,7 @@ virtual BOOL Create(
 Specifies the combination of date time control styles. See [Date and Time Picker Control Styles](/windows/desktop/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about date and time picker styles.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the date and time picker control.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the date and time picker control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the date and time picker control. It must not be NULL.
@@ -311,7 +311,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 In the first version, a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second version, a reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-A pointer to the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure to receive the system time information. Must not be NULL.
+A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
@@ -339,7 +339,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*psize*|[out] Pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that contains the ideal size for the control.|
+|*psize*|[out] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that contains the ideal size for the control.|
 
 ### Return Value
 
@@ -541,7 +541,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object containing the to which the control will be set.
 
 *pTimeNew*<br/>
-In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the time to which the control will be set.
+In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the time to which the control will be set.
 
 ### Return Value
 
@@ -555,9 +555,9 @@ This member function implements the behavior of the Win32 message [DTM_SETSYSTEM
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#8](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_13.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CMonthCalCtrl Class](../../mfc/reference/cmonthcalctrl-class.md)

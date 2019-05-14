@@ -11,9 +11,7 @@ ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
 
 ## Syntax
 
-```
-/favor:{blend | ATOM | AMD64 | INTEL64}
-```
+> **/favor:**{**blend** | **ATOM** | **AMD64** | **INTEL64**}
 
 ## Remarks
 
@@ -32,11 +30,11 @@ ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
 > [!NOTE]
 > Intel64 architecture was previously known as Extended Memory 64 Technology, and the corresponding compiler option was **/favor:EM64T**.
 
-For information about how to program for the x64 architecture, see [x64 Software Conventions](../../build/x64-software-conventions.md).
+For information about how to program for the x64 architecture, see [x64 Software Conventions](../x64-software-conventions.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **C/C++** folder.
 
@@ -48,7 +46,7 @@ For information about how to program for the x64 architecture, see [x64 Software
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

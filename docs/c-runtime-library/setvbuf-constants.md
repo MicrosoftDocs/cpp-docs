@@ -10,7 +10,6 @@ ms.assetid: a6ec4dd5-1f24-498c-871a-e874cd28d33c
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 
@@ -26,7 +25,7 @@ The possible values are given by the following manifest constants:
 |`_IOLBF`|Same as `_IOFBF`.|
 |`_IONBF`|No buffer is used, regardless of arguments in call to `setvbuf`.|
 
-## See Also
+## See also
 
 [setbuf](../c-runtime-library/reference/setbuf.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

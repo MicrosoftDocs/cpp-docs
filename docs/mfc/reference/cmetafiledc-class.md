@@ -168,7 +168,7 @@ Identifies a reference device for the enhanced metafile.
 Points to a null-terminated character string. Specifies the filename for the enhanced metafile to be created. If this parameter is NULL, the enhanced metafile is memory based and its contents lost when the object is destroyed or when the Win32 `DeleteEnhMetaFile` function is called.
 
 *lpBounds*<br/>
-Points to a [RECT](../../mfc/reference/rect-structure1.md) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
+Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
 
 *lpszDescription*<br/>
 Points to a zero-terminated string that specifies the name of the application that created the picture, as well as the picture's title.
@@ -195,8 +195,7 @@ Applications must use the Win32 `GetWinMetaFileBits` function to convert an enha
 
 The filename for the enhanced metafile should use the .EMF extension.
 
-## See Also
+## See also
 
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

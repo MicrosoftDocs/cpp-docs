@@ -75,7 +75,7 @@ virtual void OnDrawSplitter(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [Classes](mfc-classes.md)<br/>

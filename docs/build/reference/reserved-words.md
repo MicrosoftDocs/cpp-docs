@@ -7,7 +7,7 @@ ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
 ---
 # Reserved words
 
-The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](../../build/reference/module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
+The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
 
 ||||
 |-|-|-|
@@ -38,5 +38,5 @@ The following words are reserved by the linker. These names can be used as argum
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [MSVC linker reference](linking.md)
+- [MSVC Linker Options](linker-options.md)

@@ -28,10 +28,9 @@ The following notification messages can be sent by the rebar control object:
 
 - RBN_LAYOUTCHANGED Sent by a rebar control when the user changes the layout of the control's bands.
 
-For more information on these notifications, see [Rebar Control Reference](https://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.
+For more information on these notifications, see [Rebar Control Reference](/windows/desktop/controls/rebar-control-reference) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

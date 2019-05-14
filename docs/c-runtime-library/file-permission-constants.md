@@ -10,7 +10,6 @@ ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
 ## Syntax
 
 ```
-
 #include <sys/stat.h>
 ```
 
@@ -34,7 +33,7 @@ When used as the `pmode` argument for `_umask`, the manifest constant sets the p
 |`_S_IWRITE`|Reading not permitted (file is write-only)|
 |`_S_IREAD` &#124; `_S_IWRITE`|Neither reading nor writing permitted|
 
-## See Also
+## See also
 
 [_open, _wopen](../c-runtime-library/reference/open-wopen.md)<br/>
 [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>

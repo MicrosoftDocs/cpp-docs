@@ -20,8 +20,7 @@ Two other macros that define a class factory are [DECLARE_CLASSFACTORY_AUTO_THRE
 
 ATL also uses the **typedef** mechanism to implement default behavior. For example, the DECLARE_AGGREGATABLE macro uses **typedef** to define a type called `_CreatorClass`, which is then referenced throughout ATL. Note that in a derived class, a **typedef** using the same name as the base class's **typedef** results in ATL using your definition and overriding the default behavior.
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "MFC ActiveX Controls"
-ms.date: "09/12/2018"
+ms.date: "11/19/2018"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
 helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
@@ -22,7 +22,7 @@ You can create windowless ActiveX controls and controls that only create a windo
 
 An ActiveX control is implemented as an in-process server (typically a small object) that can be used in any OLE container. Note that the full functionality of an ActiveX control is available only when used within an OLE container designed to be aware of ActiveX controls. See [Port ActiveX Controls to Other Applications](../mfc/containers-for-activex-controls.md) for a list of containers that support ActiveX controls. This container type, hereafter called a "control container," can operate an ActiveX control by using the control's properties and methods, and receives notifications from the ActiveX control in the form of events. The following figure demonstrates this interaction.
 
-![Interplay of ActiveX control container and control](../mfc/media/vc37221.gif "vc37221")
+![Interplay of ActiveX control container and control](../mfc/media/vc37221.gif "Interplay of ActiveX control container and control") <br/>
 Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
 
 For some recent information on optimizing your ActiveX controls, see [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md).
@@ -53,7 +53,7 @@ The final element is a dispatch map, which is used to expose a set of functions 
 
 When a control is used within a control container, it uses two mechanisms to communicate: it exposes properties and methods, and it fires events. The following figure demonstrates how these two mechanisms are implemented.
 
-![ActiveX control communicates with its container](../mfc/media/vc37222.gif "vc37222")
+![ActiveX control communicates with its container](../mfc/media/vc37222.gif "ActiveX control communicates with its container") <br/>
 Communication Between an ActiveX Control Container and an ActiveX Control
 
 The previous figure also illustrates how other OLE interfaces (besides automation and events) are handled by controls.
@@ -68,7 +68,7 @@ When a [windowless control](../mfc/providing-windowless-activation.md) goes acti
 
 When a control with a window becomes active, it is able to interact fully with the control container, the user, and Windows. The figure below demonstrates the paths of communication between the ActiveX control, the control container, and the operating system.
 
-![Msg processing in active windowed ActiveX control](../mfc/media/vc37223.gif "vc37223")
+![Msg processing in active windowed ActiveX control](../mfc/media/vc37223.gif "Msg processing in active windowed ActiveX control") <br/>
 Windows Message Processing in a Windowed ActiveX Control (When Active)
 
 ##  <a name="_core_serializing_activex_elements"></a> Serialization
@@ -99,8 +99,8 @@ By default, the ActiveX control classes and tools are installed in the following
 
    Contains the libraries required to develop ActiveX controls with MFC
 
-There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../visual-cpp-samples.md)
+There are also samples for MFC ActiveX controls. For more information about these samples, see [Controls Samples: MFC-Based ActiveX Controls](../overview/visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

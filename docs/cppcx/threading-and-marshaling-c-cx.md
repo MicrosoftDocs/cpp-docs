@@ -25,7 +25,7 @@ When you create a Universal Windows Platform app, you might interact with both a
 
 ### Compiler warning C4451 when consuming non-agile classes
 
-For various reasons, some classes can't be agile. If you are accessing instances of non-agile classes from both a user-interface thread and a background thread, then take extra care to ensure correct behavior at run time. The Visual C++ compiler issues warnings when you instantiate a non-agile run-time class in your app at global scope or declare a non-agile type as a class member in a ref class that itself is marked as agile.
+For various reasons, some classes can't be agile. If you are accessing instances of non-agile classes from both a user-interface thread and a background thread, then take extra care to ensure correct behavior at run time. The Microsoft C++ compiler issues warnings when you instantiate a non-agile run-time class in your app at global scope or declare a non-agile type as a class member in a ref class that itself is marked as agile.
 
 Of the non-agile classes, the easiest to deal with are those that have `ThreadingModel`=Both and `MarshallingType`=Standard.  You can make these classes agile just by using the `Agile<T>` helper class.   The following example shows a declaration of a non-agile object of type `Windows::Security::Credentials::UI::CredentialPickerOptions^`, and the compiler warning that's issued as a result.
 
@@ -112,7 +112,7 @@ An unsealed class must have marshaling and threading attribute settings so that 
 
 The threading and marshaling information that's required by a third-party Windows Runtime component is specified in the app manifest registration information for the component. We recommend that you make all of your Windows Runtime components agile. This ensures that client code can call your component from any thread in the app, and improves the performance of those calls because they are direct calls that have no marshaling. If you author your class in this way, then client code doesn't have to use `Platform::Agile<T>` to consume your class.
 
-## See Also
+## See also
 
-[ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)<br/>
-[MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+[ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
+[MarshallingBehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

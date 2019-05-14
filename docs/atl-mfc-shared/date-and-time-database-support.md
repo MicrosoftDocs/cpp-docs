@@ -12,7 +12,6 @@ As of version 4.0, MFC database programming uses the [COleDateTime](../atl-mfc-s
 
 - [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## See Also
+## See also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)
-

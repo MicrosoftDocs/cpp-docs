@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed Alphabetically"
-ms.date: "08/20/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler Options Listed Alphabetically
@@ -27,7 +27,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/E](e-preprocess-to-stdout.md)|Copies preprocessor output to standard output.|
 |[/EH](eh-exception-handling-model.md)|Specifies the model of exception handling.|
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Visual C++ team.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
 |[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
 |[/F](f-set-stack-size.md)|Sets stack size.|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific x64 architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
@@ -38,7 +38,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Fe](fe-name-exe-file.md)|Renames the executable file.|
 |[/FI](fi-name-forced-include-file.md)|Preprocesses the specified include file.|
 |[/Fi](fi-preprocess-output-file-name.md)|Sets the preprocessed output file name.|
-|[/Fm](fm-name-mapfile.md)|Creates a mapfile.|
+|[/Fm](fm-name-mapfile.md)|Creates a map file.|
 |[/Fo](fo-object-file-name.md)|Creates an object file.|
 |[/fp](fp-specify-floating-point-behavior.md)|Specify floating-point behavior.|
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
@@ -53,7 +53,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/GH](gh-enable-pexit-hook-function.md)|Calls hook function `_pexit`.|
 |[/Gh](gh-enable-penter-hook-function.md)|Calls hook function `_penter`.|
 |[/GL](gl-whole-program-optimization.md)|Enables whole program optimization.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables minimal rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GR](gr-enable-run-time-type-information.md)|Enables run-time type information (RTTI).|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|Uses the `__fastcall` calling convention (x86 only).|
 |[/GS](gs-buffer-security-check.md)|Buffers security check.|
@@ -69,7 +69,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/HELP](help-compiler-command-line-help.md)|Lists the compiler options.|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
-|[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
+|[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hot-patchable image.|
 |[/I](i-additional-include-directories.md)|Searches a directory for include files.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|
 |[/JMC](jmc.md)|Supports native C++ Just My Code debugging.|
@@ -90,7 +90,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Od](od-disable-debug.md)|Disables optimization.|
 |[/Og](og-global-optimizations.md)|Deprecated. Uses global optimizations.|
 |[/Oi](oi-generate-intrinsic-functions.md)|Generates intrinsic functions.|
-|[/openmp](openmp-enable-openmp-2-0-support.md)|Enables [#pragma omp](../../preprocessor/omp.md) in source code.|
+|[/openmp](openmp-enable-openmp-2-0-support.md)|Enables the [`#pragma omp`](../../preprocessor/omp.md) directive in source code.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|Favors small code.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|Favors fast code.|
 |[/Ox](ox-full-optimization.md)|Uses maximum optimization (/Ob2gity /Gs).|
@@ -146,7 +146,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).[/Za, /Ze (Disable Language Extensions)](za-ze-disable-language-extensions.md)|
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
-|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual C++ 2015. Generates function prototypes.|
+|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual Studio 2015. Generates function prototypes.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes default library name from .obj file (x86 only).|
@@ -155,8 +155,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
 
-## See Also
+## See also
 
-[C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -66,7 +66,7 @@ The rank of the `array_view` object.
 |Name|Description|
 |----------|-----------------|
 |[operator()](#operator_call)|Returns the value of the element that is specified by the parameter or parameters.|
-|[operator[]](#operator_at)|Returns the element that is specified by the parameters.|
+|[operator\[\]](#operator_at)|Returns the element that is specified by the parameters.|
 |[operator=](#operator_eq)|Copies the contents of the specified `array_view` object into this one.|
 
 ### Public Constants
@@ -767,6 +767,6 @@ The data type of the elements in both the original [array](array-class.md) objec
 
 The `array_view` object that is constructed.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -1,7 +1,6 @@
 ---
 title: "Extension DLLs"
-ms.date: "11/04/2016"
-f1_keywords: ["afxdll"]
+ms.date: "05/06/2019"
 helpviewer_keywords: ["memory [C++], DLLs", "MFC extension DLLs [C++]", "AFXDLL library", "shared resources [C++]", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "resource sharing [C++]", "extension DLLs [C++]", "extension DLLs [C++], about MFC extension DLLs"]
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
 ---
@@ -35,7 +34,7 @@ An MFC extension DLL uses a shared version of MFC in the same way an application
 
 Before version 4.0 of MFC, this type of DLL was called an AFXDLL. AFXDLL refers to the `_AFXDLL` preprocessor symbol that is defined when building the DLL.
 
-The import libraries for the shared version of MFC are named according to the convention described in [Naming conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual C++ supplies prebuilt versions of the MFC DLLs, plus a number of non-MFC DLLs that you can use and distribute with your applications. These are documented in Redist.txt, which is installed to the Program Files\Microsoft Visual Studio folder.
+The import libraries for the shared version of MFC are named according to the convention described in [Naming conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual Studio supplies prebuilt versions of the MFC DLLs, plus a number of non-MFC DLLs that you can use and distribute with your applications. These are documented in Redist.txt, which is installed to the Program Files\Microsoft Visual Studio folder.
 
 If you are exporting using a .def file, place the following code at the beginning and end of your header file:
 
@@ -99,7 +98,7 @@ If your MFC extension DLL needs to maintain extra data for each application, you
 
 ### What do you want to do?
 
-- [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Initialize an MFC extension DLL](run-time-library-behavior.md#initializing-extension-dlls)
 
 ### What do you want to know more about?
 
@@ -107,12 +106,12 @@ If your MFC extension DLL needs to maintain extra data for each application, you
 
 - [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

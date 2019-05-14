@@ -22,7 +22,6 @@ However, this default handler is not called when the **TTN_NEEDTEXT** notificati
 
 The default tool tips provided for your windows by [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) do not have text associated with them. To retrieve text for the tool tip to display, the **TTN_NEEDTEXT** notification is sent to the tool tip control's parent window just before the tool tip window is displayed. If there is no handler for this message to assign some value to the *pszText* member of the **TOOLTIPTEXT** structure, there will be no text displayed for the tool tip.
 
-## See Also
+## See also
 
 [Tool Tips](../mfc/tool-tips.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "/validate-charset (Validate for compatible characters)"
-ms.date: "11/04/2016"
+ms.date: "02/06/2019"
 f1_keywords: ["/validate-charset", "validate-charset"]
 helpviewer_keywords: ["/validate-charset compiler option"]
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
@@ -25,18 +25,18 @@ Visual Studio uses UTF-8 as the internal character encoding during conversion be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
 
-1. In **Advanced Options**, add the **/validate-charset** option, and specify your preferred encoding.
+1. In **Additional Options**, add the **/validate-charset** option, and specify your preferred encoding.
 
 1. Choose **OK** to save your changes.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/execution-charset (Set Execution Character Set)](../../build/reference/execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Set Source Character Set)](../../build/reference/source-charset-set-source-character-set.md)<br/>
-[/utf-8 (Set Source and Executable character sets to UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/execution-charset (Set Execution Character Set)](execution-charset-set-execution-character-set.md)<br/>
+[/source-charset (Set Source Character Set)](source-charset-set-source-character-set.md)<br/>
+[/utf-8 (Set Source and Executable character sets to UTF-8)](utf-8-set-source-and-executable-character-sets-to-utf-8.md)

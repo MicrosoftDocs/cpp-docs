@@ -10,8 +10,7 @@ List controls ([CListCtrl](../mfc/reference/clistctrl-class.md)) are scrollable 
 
 You can call `CListCtrl` member functions to arrange list items in the control, sort items, and find particular items. For more information, see [Arranging, Sorting, and Finding](https://msdn.microsoft.com/library/windows/desktop/bb774736) in the Windows SDK and the [CListCtrl](../mfc/reference/clistctrl-class.md) members [Arrange](../mfc/reference/clistctrl-class.md#arrange), [SortItems](../mfc/reference/clistctrl-class.md#sortitems), and [FindItem](../mfc/reference/clistctrl-class.md#finditem).
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

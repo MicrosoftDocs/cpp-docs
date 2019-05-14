@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "08/20/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -8,7 +8,7 @@ ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 
 This article contains a categorical list of compiler options. For an alphabetical list, see [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md).
 
-### Optimization
+## Optimization
 
 |Option|Purpose|
 |------------|-------------|
@@ -24,7 +24,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Oy](oy-frame-pointer-omission.md)|Omits frame pointer. (x86 only)|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specified architecture, or for a range of architectures.|
 
-### Code generation
+## Code generation
 
 |Option|Purpose|
 |------------|-------------|
@@ -39,7 +39,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Gh](gh-enable-penter-hook-function.md)|Calls hook function `_penter`.|
 |[/GH](gh-enable-pexit-hook-function.md)|Calls hook function `_pexit`.|
 |[/GL](gl-whole-program-optimization.md)|Enables whole program optimization.|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables minimal rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GR](gr-enable-run-time-type-information.md)|Enables run-time type information (RTTI).|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|Uses the `__fastcall` calling convention. (x86 only)|
 |[/GS](gs-buffer-security-check.md)|Checks buffer security.|
@@ -55,7 +55,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
-|[QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
+|[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
 |[/Qpar](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Enables reporting levels for automatic parallelization.|
@@ -65,7 +65,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|Selects how the volatile keyword is interpreted.|
 
-### Output files
+## Output files
 
 |Option|Purpose|
 |------------|-------------|
@@ -80,7 +80,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Fp](fp-name-dot-pch-file.md)|Specifies a precompiled header file name.|
 |[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|Name generated .sbr browser files.|
 
-### Preprocessor
+## Preprocessor
 
 |Option|Purpose|
 |------------|-------------|
@@ -98,7 +98,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/u](u-u-undefine-symbols.md)|Removes all predefined macros.|
 |[/X](x-ignore-standard-include-paths.md)|Ignores the standard include directory.|
 
-### Language
+## Language
 
 |Option|Purpose|
 |------------|-------------|
@@ -111,9 +111,9 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/vms](vmm-vms-vmv-general-purpose-representation.md)|Declares single inheritance.|
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|Declares virtual inheritance.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|Generates C 7.0-compatible debugging information.|
-|[/Za](za-ze-disable-language-extensions.md)|Disables language extensions.|
+|[/Za](za-ze-disable-language-extensions.md)|Disables C89 language extensions.|
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).|
-|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
+|[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables C89 language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
@@ -122,7 +122,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|
 
-### Linking
+## Linking
 
 |Option|Purpose|
 |------------|-------------|
@@ -136,7 +136,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/MT](md-mt-ld-use-run-time-library.md)|Compiles to create a multithreaded executable file, by using LIBCMT.lib.|
 |[/MTd](md-mt-ld-use-run-time-library.md)|Compiles to create a debug multithreaded executable file, by using LIBCMTD.lib.|
 
-### Miscellaneous
+## Miscellaneous
 
 |Option|Purpose|
 |------------|-------------|
@@ -146,7 +146,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|Increases the number of addressable sections in an .obj file.|
 |[/c](c-compile-without-linking.md)|Compiles without linking.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Visual C++ team.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Displays the full path of source code files passed to cl.exe in diagnostic text.|
 |[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the program database (PDB) file to be serialized through MSPDBSRV.EXE.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
@@ -188,27 +188,28 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
 |[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|
 
-### Deprecated and removed compiler options
+## Deprecated and removed compiler options
 
 |Option|Purpose|
 |------------|-------------|
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|Deprecated. Use [/LN (Create MSIL Module)](ln-create-msil-module.md) instead.|
 |[/Fr](fr-fr-create-dot-sbr-file.md)|Deprecated. Creates a browse information file without local variables.|
 |[/Ge](ge-enable-stack-probes.md)|Deprecated. Activates stack probes. On by default.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables minimal rebuild.|
 |[/GX](gx-enable-exception-handling.md)|Deprecated. Enables synchronous exception handling. Use [/EH](eh-exception-handling-model.md) instead.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Deprecated. Enables fast checks. Use [/RTC1](rtc-run-time-error-checks.md) instead.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/Og](og-global-optimizations.md)|Deprecated. Uses global optimizations.|
-|[QIfist](qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|
+|[/QIfist](qifist-suppress-ftol.md)|Deprecated. Once used to specify how to convert from a floating-point type to an integral type.|
 |[/V](v-version-number.md)|Deprecated. Sets the .obj file version string.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|Obsolete. Detects 64-bit portability problems.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](z7-zi-zi-debug-information-format.md) instead.|
 |[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Deprecated. Disables conformance in for loop scope.|
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
-|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual C++ 2015. Generates function prototypes.|
+|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual Studio 2015. Generates function prototypes.|
 
 ## See also
 
 [C/C++ Building Reference](c-cpp-building-reference.md)<br/>
-[Compiler Options](compiler-options.md)<br/>
-[Setting Compiler Options](setting-compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>

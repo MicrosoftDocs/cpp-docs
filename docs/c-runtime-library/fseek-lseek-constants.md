@@ -10,7 +10,6 @@ ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 
@@ -24,7 +23,7 @@ The *origin* argument specifies the initial position and can be one of the follo
 |`SEEK_CUR`|Current position of file pointer|
 |`SEEK_SET`|Beginning of file|
 
-## See Also
+## See also
 
 [fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)<br/>
 [_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)<br/>

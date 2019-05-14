@@ -11,7 +11,7 @@ ms.assetid: 8d8bc5ca-75aa-480e-b6b6-3178fab51b1d
 
 The compiler defines a conversion operator for each managed class to support implicit boxing. This operator cannot be redefined.
 
-For more information, see [Implicit Boxing](../../windows/boxing-cpp-component-extensions.md).
+For more information, see [Implicit Boxing](../../extensions/boxing-cpp-component-extensions.md).
 
 The following sample generates C3638:
 

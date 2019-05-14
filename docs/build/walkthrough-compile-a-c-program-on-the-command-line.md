@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Compile a C program on the command line"
 ms.custom: "conceptual"
-ms.date: "09/24/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
 ---
@@ -9,7 +9,7 @@ ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
 
 Visual C++ includes a C compiler that you can use to create everything from basic console programs to full Windows Desktop applications, mobile apps, and more.
 
-This walkthrough shows how to create a basic, "Hello, World"-style C program by using a text editor, and then compile it on the command line. If you'd rather work in C++ on the command line, see [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+This walkthrough shows how to create a basic, "Hello, World"-style C program by using a text editor, and then compile it on the command line. If you'd rather work in C++ on the command line, see [Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md). If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
 ## Prerequisites
 
@@ -17,40 +17,65 @@ To complete this walkthrough, you must have installed either Visual Studio and t
 
 Visual Studio is a powerful integrated development environment that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on these features and how to download and install Visual Studio, including the free Visual Studio Community edition, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
-The Build Tools for Visual Studio version of Visual Studio installs only the command-line toolset, the compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line toolset, download [Build Tools for Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=875721) and run the installer.
+The Build Tools for Visual Studio version of Visual Studio installs only the command-line toolset, the compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line toolset, download Build Tools for Visual Studio from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page and run the installer.
 
 Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without some preparation. You need a *developer command prompt* window, which is a regular command prompt window that has all the required environment variables set. Fortunately, Visual C++ installs shortcuts for you to launch developer command prompts that have the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is to find the right shortcut to use.
 
 > [!NOTE]
-> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](../build/setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.
+> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. Some of these values are different for each build configuration. You must set these environment values yourself if you don't use one of the shortcuts. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). Because the build environment is complex, we strongly recommend you use a developer command prompt shortcut instead of building your own.
 
-## Open a developer command prompt
+These instructions vary depending on which version of Visual Studio you are using. Before continuing, make sure that the version selector in the upper left of this page is set correctly.
 
-1. If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
+::: moniker range="vs-2019"
 
-   If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+## Open a developer command prompt in Visual Studio 2019
 
-   If you're using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+If you have installed Visual Studio 2019 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2019** folder (not the Visual Studio 2019 app). Choose **Developer Command Prompt for VS 2019** to open the command prompt window.
 
-1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+If you're using a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-   ```Output
-   C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
-   Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
-   Copyright (C) Microsoft Corporation.  All rights reserved.
+::: moniker-end
 
-   usage: cl [ option... ] filename... [ /link linkoption... ]
-   ```
+::: moniker range="vs-2017"
 
-   There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
+## Open a developer command prompt in Visual Studio 2017
 
-   > [!NOTE]
-   > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
+If you have installed Visual Studio 2017 on Windows 10, open the Start menu, and then scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
 
-   If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. If you're using Visual Studio 2017, try reinstalling the **Desktop development with C++** workload in the Visual Studio installer. For details, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md). Or, reinstall the [Build Tools for Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=875721). Don't go on to the next section until this works. For more information about installing and troubleshooting Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
-   > [!NOTE]
-   > Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as Administrator** to successfully build and run the program that you create by following this walkthrough.
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+## Open a developer command prompt in Visual Studio 2015
+
+If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu, and then scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+
+If you're running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+   
+::: moniker-end
+
+
+Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
+
+```Output
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise>cl
+Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+usage: cl [ option... ] filename... [ /link linkoption... ]
+```
+
+There may be differences in the current directory or version numbers, depending on the version of Visual C++ and any updates installed. If the above output is similar to what you see, then you're ready to build C or C++ programs at the command line.
+
+> [!NOTE]
+> If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104 when you run the **cl** command, then either you are not using a developer command prompt, or something is wrong with your installation of Visual C++. You must fix this issue before you can continue.
+
+If you can't find the developer command prompt shortcut, or if you get an error message when you enter `cl`, then your Visual C++ installation may have a problem. If you're using Visual Studio 2017 or later, try reinstalling the **Desktop development with C++** workload in the Visual Studio installer. For details, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). Or, reinstall the Build Tools from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page. Don't go on to the next section until this works. For more information about installing and troubleshooting Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio).
+
+> [!NOTE]
+> Depending on the version of Windows on the computer and the system security configuration, you might have to right-click to open the shortcut menu for the developer command prompt shortcut and then choose **Run as Administrator** to successfully build and run the program that you create by following this walkthrough.
 
 ## Create a C source file and compile it on the command line
 
@@ -132,25 +157,25 @@ You can use the steps in this walkthrough to build your own C code instead of ty
 
 `cl file1.c file2.c file3.c`
 
-The compiler outputs a program called file1.exe. To change the name to program1.exe, add an [/out](../build/reference/out-output-file-name.md) linker option:
+The compiler outputs a program called file1.exe. To change the name to program1.exe, add an [/out](reference/out-output-file-name.md) linker option:
 
 `cl file1.c file2.c file3.c /link /out:program1.exe`
 
-And to catch more programming mistakes automatically, we recommend you compile by using either the [/W3](../build/reference/compiler-option-warning-level.md) or [/W4](../build/reference/compiler-option-warning-level.md) warning level option:
+And to catch more programming mistakes automatically, we recommend you compile by using either the [/W3](reference/compiler-option-warning-level.md) or [/W4](reference/compiler-option-warning-level.md) warning level option:
 
 `cl /W4 file1.c file2.c file3.c /link /out:program1.exe`
 
-The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
+The compiler, cl.exe, has many more options you can apply to build, optimize, debug, and analyze your code. For a quick list, enter `cl /?` at the developer command prompt. You can also compile and link separately and apply linker options in more complex build scenarios. For more information on compiler and linker options and usage, see  [C/C++ Building Reference](reference/c-cpp-building-reference.md).
 
-You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](../build/nmake-reference.md) and [MSBuild](../build/msbuild-visual-cpp.md).
+You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](reference/nmake-reference.md) and [MSBuild](msbuild-visual-cpp.md).
 
-The C and C++ languages are similar, but not the same. The Visual C++ compiler uses a simple rule to determine which language to use when it compiles your code. By default, the Visual C++ compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C non-dependent of file name extension, use the [/Tc](../build/reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
+The C and C++ languages are similar, but not the same. The Microsoft C/C++ compiler (MSVC) uses a simple rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C non-dependent of file name extension, use the [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
 
-The Visual C++ C compiler is compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable C code will compile and run as expected. Visual C++ doesn't support most of the changes in ISO C11. Certain library functions and POSIX function names are deprecated by the Visual C++ compiler. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
+MSVC is compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable C code will compile and run as expected. Visual C++ doesn't support most of the changes in ISO C11. Certain library functions and POSIX function names are deprecated by MSVC. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
 ## See also
 
 [Walkthrough: Creating a Standard C++ Program (C++)](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)<br/>
 [C Language Reference](../c-language/c-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](projects-and-build-systems-cpp.md)<br/>
 [Compatibility](../c-runtime-library/compatibility.md)

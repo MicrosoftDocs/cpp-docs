@@ -1136,6 +1136,6 @@ Must be used in conjunction with [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_eve
 
 **Header:** afxdhtml.h
 
-### See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)

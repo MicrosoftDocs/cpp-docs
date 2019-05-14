@@ -1,6 +1,6 @@
 ---
 title: "/MP (Build with Multiple Processes)"
-ms.date: "02/22/2018"
+ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]
 helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]
 ---
@@ -39,10 +39,10 @@ The following table lists compiler options and language features that are incomp
 |Option or Language Feature|Description|
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) preprocessor directive|Converts the types in a type library into C++ classes, and then writes those classes to a header file.|
-|[/E](../../build/reference/e-preprocess-to-stdout.md), [/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to the standard output (**stdout**).|
-|[/Gm](../../build/reference/gm-enable-minimal-rebuild.md)|Enables an incremental rebuild.|
-|[/showIncludes](../../build/reference/showincludes-list-include-files.md)|Writes a list of include files to the standard error (**stderr**).|
-|[/Yc](../../build/reference/yc-create-precompiled-header-file.md)|Writes a precompiled header file.|
+|[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to the standard output (**stdout**).|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables an incremental rebuild.|
+|[/showIncludes](showincludes-list-include-files.md)|Writes a list of include files to the standard error (**stderr**).|
+|[/Yc](yc-create-precompiled-header-file.md)|Writes a precompiled header file.|
 
 ## Diagnostic Messages
 
@@ -50,7 +50,7 @@ If you specify an option or language feature that is incompatible with the **/MP
 
 |Diagnostic Message|Description|Compiler Behavior|
 |------------------------|-----------------|-----------------------|
-|**C2813**|The **#import** directive is not compatible with the **/MP** option.|The compilation ends unless a [compiler warning level](../../build/reference/compiler-option-warning-level.md) option specifies otherwise.|
+|**C2813**|The **#import** directive is not compatible with the **/MP** option.|The compilation ends unless a [compiler warning level](compiler-option-warning-level.md) option specifies otherwise.|
 |**D9014**|An invalid value is specified for the *processMax* argument.|The compiler ignores the invalid value and assumes a value of 1.|
 |**D9030**|The specified option is incompatible with **/MP**.|The compiler ignores the **/MP** option.|
 
@@ -88,7 +88,7 @@ The source files might not be compiled in the same order in which they appear on
 
 A source file is compiled when a process is available to compile it. If there are more files than processes, the first set of files is compiled by the available processes. The remaining files are processed when a process finishes handling a previous file and is available to work on one of the remaining files.
 
-Do not specify the same source file multiple times on a command line. This might occur, for example, if a tool automatically creates a [makefile](../../build/contents-of-a-makefile.md) that is based on dependency information in a project. If you do not specify the **/MP** option, the compiler processes the list of files sequentially and recompiles each occurrence of the file. However, if you specify the **/MP** option, different compilers might compile the same file at the same time. Consequently, the different compilers will try to write to the same output file at the same time. One compiler will acquire exclusive write access to the output file and succeed, and the other compilers will fail with a file access error.
+Do not specify the same source file multiple times on a command line. This might occur, for example, if a tool automatically creates a [makefile](contents-of-a-makefile.md) that is based on dependency information in a project. If you do not specify the **/MP** option, the compiler processes the list of files sequentially and recompiles each occurrence of the file. However, if you specify the **/MP** option, different compilers might compile the same file at the same time. Consequently, the different compilers will try to write to the same output file at the same time. One compiler will acquire exclusive write access to the output file and succeed, and the other compilers will fail with a file access error.
 
 ### Using Type Libraries (#import)
 
@@ -113,10 +113,6 @@ The guideline for deciding whether to use MSBuild or **/MP** technology is as fo
 - If there are few projects with many files in each project, use the **/MP** option.
 
 - If the number of projects and files per project is balanced, use both MSBuild and **/MP**. Initially set the **/maxcpucount** option to the number of projects to build and the **/MP** option to the number of processors on your computer. Measure performance and then adjust your settings to yield the best results. Repeat that cycle until you are satisfied with the total build time.
-
-#### The /Gm Compiler Option
-
-By default, a project build enables the **/Gm** compiler option (incremental builds) for debug builds, and disables it for release builds. Therefore, the **/MP** compiler option is automatically disabled in debug builds because it conflicts with the default **/Gm** compiler option.
 
 ## See also
 

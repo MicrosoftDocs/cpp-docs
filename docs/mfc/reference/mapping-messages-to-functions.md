@@ -33,7 +33,7 @@ When you use Class View to create a new class derived from one of the framework 
 
 To remove a message handler, double-click the handler in the right column and select \<delete>*HandlerName*. The function's code is commented out.
 
-## See Also
+## See also
 
 [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

@@ -1,11 +1,11 @@
 ---
 title: "erf, erff, erfl, erfc, erfcf, erfcl"
-ms.date: "04/05/2018"
-apiname: ["erff", "erfl", "erf"]
+ms.date: "01/31/2019"
+apiname: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["erfl", "erf", "erff"]
-helpviewer_keywords: ["erfl function", "erff function", "erf function"]
+f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
+helpviewer_keywords: ["erfl function", "erff function", "erf function", "erfcl function", "erfcf function", "erfc function"]
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5
 ---
 # erf, erff, erfl, erfc, erfcf, erfcl
@@ -60,7 +60,7 @@ The **erf** functions return the Gauss error function of *x*. The **erfc** funct
 
 The **erf** functions calculate the Gauss error function of *x*, which is defined as:
 
-![The error function of x](media/crt_erf_formula.PNG "CRT_erf_formula")
+![The error function of x](media/crt_erf_formula.PNG "The error function of x")
 
 The complementary Gauss error function is defined as 1 - erf(x). The **erf** functions return a value in the range -1.0 to 1.0. There is no error return. The **erfc** functions return a value in the range 0 to 2. If *x* is too large for **erfc**, the **errno** variable is set to **ERANGE**.
 

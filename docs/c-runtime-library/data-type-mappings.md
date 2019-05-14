@@ -25,7 +25,7 @@ For related information, see [Using TCHAR.H Data Types with _MBCS Code](../text/
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|
 |`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts following character or string to its Unicode counterpart)|
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>

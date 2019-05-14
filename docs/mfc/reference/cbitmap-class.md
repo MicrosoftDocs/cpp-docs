@@ -119,7 +119,7 @@ Although a bitmap cannot be directly selected for a display device, it can be se
 
 When you finish with the `CBitmap` object created by the `CreateBitmap` function, first select the bitmap out of the device context, then delete the `CBitmap` object.
 
-For more information, see the description of the `bmBits` field in the `BITMAP` structure. The [BITMAP](../../mfc/reference/bitmap-structure.md) structure is described under the [CBitmap::CreateBitmapIndirect](#createbitmapindirect) member function.
+For more information, see the description of the `bmBits` field in the `BITMAP` structure. The [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure is described under the [CBitmap::CreateBitmapIndirect](#createbitmapindirect) member function.
 
 ##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
@@ -132,7 +132,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### Parameters
 
 *lpBitmap*<br/>
-Points to a [BITMAP](../../mfc/reference/bitmap-structure.md) structure that contains information about the bitmap.
+Points to a [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure that contains information about the bitmap.
 
 ### Return Value
 
@@ -250,7 +250,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### Parameters
 
 *pBitMap*<br/>
-Pointer to a [BITMAP Structure](../../mfc/reference/bitmap-structure.md) structure that will receive the image properties. This parameter must not be NULL.
+Pointer to a [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) structure that will receive the image properties. This parameter must not be NULL.
 
 ### Return Value
 
@@ -483,9 +483,8 @@ The previous bitmap dimensions. Height is in the `cy` member variable of the `CS
 
 The GDI does not use these values except to return them when an application calls the [GetBitmapDimension](#getbitmapdimension) member function.
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

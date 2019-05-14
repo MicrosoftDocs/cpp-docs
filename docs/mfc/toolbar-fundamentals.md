@@ -40,7 +40,7 @@ Toolbar creation occurs in `CMainFrame::OnCreate`. MFC calls [OnCreate](../mfc/r
 1. Calls functions to enable docking, floating, and tool tips. For details about these calls, see the article [Docking and Floating Toolbars](../mfc/docking-and-floating-toolbars.md).
 
 > [!NOTE]
->  The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
+>  The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
 
 The docking, floating, and tool tips calls are optional. You can remove those lines from `OnCreate` if you prefer. The result is a toolbar that remains fixed, unable to float or redock and unable to display tool tips.
 
@@ -80,7 +80,6 @@ If you want to display a toolbar as the result of a command, you'll need to:
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

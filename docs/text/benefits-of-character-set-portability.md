@@ -12,7 +12,7 @@ You can benefit from using MFC and C run-time portability features even if you d
 
 - Using Unicode makes your applications for Windows more efficient. Because Windows uses Unicode, non-Unicode strings passed to and from the operating system must be translated, which incurs overhead.
 
-## See Also
+## See also
 
 [Unicode and MBCS](../text/unicode-and-mbcs.md)<br/>
 [Support for Unicode](../text/support-for-unicode.md)

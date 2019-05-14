@@ -41,7 +41,7 @@ This class makes it easy to put a tabbed view into a document/view application. 
 
 For example, you might have a document that can be represented in different ways: as a spreadsheet, a chart, an editable form, and so on. You can create individual views drawing the data as needed, insert them into your `CTabView`-derived object and have them tabbed without any additional coding.
 
-[TabbedView Sample: MFC Tabbed View Application](../../visual-cpp-samples.md) illustrates usage of `CTabView`.
+[TabbedView Sample: MFC Tabbed View Application](../../overview/visual-cpp-samples.md) illustrates usage of `CTabView`.
 
 ## Example
 
@@ -209,7 +209,7 @@ TRUE if the specified view was made active, FALSE if the view's index is invalid
 
 For more information see [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -10,7 +10,6 @@ ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
 ## Syntax
 
 ```
-
 #include <io.h>
 ```
 
@@ -31,7 +30,7 @@ The attributes are represented by the following manifest constants:
 
 Multiple constants can be combined with the OR operator (&#124;).
 
-## See Also
+## See also
 
 [Filename Search Functions](../c-runtime-library/filename-search-functions.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

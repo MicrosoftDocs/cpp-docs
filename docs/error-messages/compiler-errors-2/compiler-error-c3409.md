@@ -11,7 +11,7 @@ ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
 
 ## Remarks
 
-The square brackets were interpreted by the compiler as an [attribute](../../windows/cpp-attributes-reference.md) block, but no attributes were found.
+The square brackets were interpreted by the compiler as an [attribute](../../windows/attributes-alphabetical-reference.md) block, but no attributes were found.
 
 The compiler may generate this error when you use square brackets as part of the definition of a lambda expression. This error occurs when the compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block. For more information about lambda expressions, see [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md).
 
@@ -59,8 +59,8 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
-[attribute](../../windows/cpp-attributes-reference.md)<br/>
+[attribute](../../windows/attributes-alphabetical-reference.md)<br/>
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)

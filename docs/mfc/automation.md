@@ -32,17 +32,17 @@ The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colev
 
 ## Automation Samples
 
-- [AUTOCLIK](../visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.
+- [AUTOCLIK](../overview/visual-cpp-samples.md) Use this sample to learn Automation techniques and as a foundation for learning Remote Automation.
 
-- [ACDUAL](../visual-cpp-samples.md) Adds dual interfaces to an Automation server application.
+- [ACDUAL](../overview/visual-cpp-samples.md) Adds dual interfaces to an Automation server application.
 
-- [CALCDRIV](../visual-cpp-samples.md) Automation client application driving MFCCALC.
+- [CALCDRIV](../overview/visual-cpp-samples.md) Automation client application driving MFCCALC.
 
-- [INPROC](../visual-cpp-samples.md) Demonstrates an In-Process Automation server application.
+- [INPROC](../overview/visual-cpp-samples.md) Demonstrates an In-Process Automation server application.
 
-- [IPDRIVE](../visual-cpp-samples.md) Automation client application driving INPROC.
+- [IPDRIVE](../overview/visual-cpp-samples.md) Automation client application driving INPROC.
 
-- [MFCCALC](../visual-cpp-samples.md) Demonstrates an Automation client application.
+- [MFCCALC](../overview/visual-cpp-samples.md) Demonstrates an Automation client application.
 
 ## What do you want to know more about
 
@@ -64,6 +64,6 @@ The **VARIANT** type is encapsulated in the [COleVariant](../mfc/reference/colev
 
 - [Write automation clients in C++](../mfc/automation-clients.md)
 
-## See Also
+## See also
 
 [MFC COM](../mfc/mfc-com.md)

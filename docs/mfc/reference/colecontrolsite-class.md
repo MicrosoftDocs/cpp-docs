@@ -954,7 +954,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### Parameters
 
 *lpmsg*<br/>
-A pointer to a [MSG structure](../../mfc/reference/msg-structure1.md). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
+A pointer to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
 
 ### Return Value
 
@@ -1107,7 +1107,7 @@ Specifies how the control site is to be shown. It must be one of the following v
 
 Nonzero if the window was previously visible; 0 if the window was previously hidden.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

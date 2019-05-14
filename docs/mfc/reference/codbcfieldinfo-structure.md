@@ -47,9 +47,8 @@ To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/refe
 
 **Header:** afxdb.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
 [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
-

@@ -22,6 +22,6 @@ When you choose the Automation option in the MFC DLL Wizard, the wizard provides
 
 - [Automation Servers](../mfc/automation-servers.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

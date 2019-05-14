@@ -1,6 +1,6 @@
 ---
 title: "CReBarCtrl Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CReBarCtrl", "AFXCMN/CReBarCtrl", "AFXCMN/CReBarCtrl::CReBarCtrl", "AFXCMN/CReBarCtrl::BeginDrag", "AFXCMN/CReBarCtrl::Create", "AFXCMN/CReBarCtrl::CreateEx", "AFXCMN/CReBarCtrl::DeleteBand", "AFXCMN/CReBarCtrl::DragMove", "AFXCMN/CReBarCtrl::EndDrag", "AFXCMN/CReBarCtrl::GetBandBorders", "AFXCMN/CReBarCtrl::GetBandCount", "AFXCMN/CReBarCtrl::GetBandInfo", "AFXCMN/CReBarCtrl::GetBandMargins", "AFXCMN/CReBarCtrl::GetBarHeight", "AFXCMN/CReBarCtrl::GetBarInfo", "AFXCMN/CReBarCtrl::GetBkColor", "AFXCMN/CReBarCtrl::GetColorScheme", "AFXCMN/CReBarCtrl::GetDropTarget", "AFXCMN/CReBarCtrl::GetExtendedStyle", "AFXCMN/CReBarCtrl::GetImageList", "AFXCMN/CReBarCtrl::GetPalette", "AFXCMN/CReBarCtrl::GetRect", "AFXCMN/CReBarCtrl::GetRowCount", "AFXCMN/CReBarCtrl::GetRowHeight", "AFXCMN/CReBarCtrl::GetTextColor", "AFXCMN/CReBarCtrl::GetToolTips", "AFXCMN/CReBarCtrl::HitTest", "AFXCMN/CReBarCtrl::IDToIndex", "AFXCMN/CReBarCtrl::InsertBand", "AFXCMN/CReBarCtrl::MaximizeBand", "AFXCMN/CReBarCtrl::MinimizeBand", "AFXCMN/CReBarCtrl::MoveBand", "AFXCMN/CReBarCtrl::PushChevron", "AFXCMN/CReBarCtrl::RestoreBand", "AFXCMN/CReBarCtrl::SetBandInfo", "AFXCMN/CReBarCtrl::SetBandWidth", "AFXCMN/CReBarCtrl::SetBarInfo", "AFXCMN/CReBarCtrl::SetBkColor", "AFXCMN/CReBarCtrl::SetColorScheme", "AFXCMN/CReBarCtrl::SetExtendedStyle", "AFXCMN/CReBarCtrl::SetImageList", "AFXCMN/CReBarCtrl::SetOwner", "AFXCMN/CReBarCtrl::SetPalette", "AFXCMN/CReBarCtrl::SetTextColor", "AFXCMN/CReBarCtrl::SetToolTips", "AFXCMN/CReBarCtrl::SetWindowTheme", "AFXCMN/CReBarCtrl::ShowBand", "AFXCMN/CReBarCtrl::SizeToRect"]
 helpviewer_keywords: ["CReBarCtrl [MFC], CReBarCtrl", "CReBarCtrl [MFC], BeginDrag", "CReBarCtrl [MFC], Create", "CReBarCtrl [MFC], CreateEx", "CReBarCtrl [MFC], DeleteBand", "CReBarCtrl [MFC], DragMove", "CReBarCtrl [MFC], EndDrag", "CReBarCtrl [MFC], GetBandBorders", "CReBarCtrl [MFC], GetBandCount", "CReBarCtrl [MFC], GetBandInfo", "CReBarCtrl [MFC], GetBandMargins", "CReBarCtrl [MFC], GetBarHeight", "CReBarCtrl [MFC], GetBarInfo", "CReBarCtrl [MFC], GetBkColor", "CReBarCtrl [MFC], GetColorScheme", "CReBarCtrl [MFC], GetDropTarget", "CReBarCtrl [MFC], GetExtendedStyle", "CReBarCtrl [MFC], GetImageList", "CReBarCtrl [MFC], GetPalette", "CReBarCtrl [MFC], GetRect", "CReBarCtrl [MFC], GetRowCount", "CReBarCtrl [MFC], GetRowHeight", "CReBarCtrl [MFC], GetTextColor", "CReBarCtrl [MFC], GetToolTips", "CReBarCtrl [MFC], HitTest", "CReBarCtrl [MFC], IDToIndex", "CReBarCtrl [MFC], InsertBand", "CReBarCtrl [MFC], MaximizeBand", "CReBarCtrl [MFC], MinimizeBand", "CReBarCtrl [MFC], MoveBand", "CReBarCtrl [MFC], PushChevron", "CReBarCtrl [MFC], RestoreBand", "CReBarCtrl [MFC], SetBandInfo", "CReBarCtrl [MFC], SetBandWidth", "CReBarCtrl [MFC], SetBarInfo", "CReBarCtrl [MFC], SetBkColor", "CReBarCtrl [MFC], SetColorScheme", "CReBarCtrl [MFC], SetExtendedStyle", "CReBarCtrl [MFC], SetImageList", "CReBarCtrl [MFC], SetOwner", "CReBarCtrl [MFC], SetPalette", "CReBarCtrl [MFC], SetTextColor", "CReBarCtrl [MFC], SetToolTips", "CReBarCtrl [MFC], SetWindowTheme", "CReBarCtrl [MFC], ShowBand", "CReBarCtrl [MFC], SizeToRect"]
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
@@ -89,7 +89,7 @@ The following illustration shows a rebar control that has three bands:
 
 - Band 2 contains a combo box and four standard buttons.
 
-     ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "vc4scc1")
+   ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "Example of a Rebar menu")
 
 ## Rebar control
 
@@ -155,7 +155,7 @@ virtual BOOL Create(
 Specifies the combination of rebar control styles applied to the control. See [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK for a list of supported styles.
 
 *rect*<br/>
-A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the rebar control.
+A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the rebar control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the rebar control. It must not be NULL.
@@ -203,7 +203,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the combination of rebar control styles applied to the control. For a list of supported styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -289,7 +289,7 @@ void GetBandBorders(
 Zero-based index of the band for which the borders will be retrieved.
 
 *prc*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
 
@@ -484,7 +484,7 @@ BOOL GetRect(
 Zero-based index of a band in the rebar control.
 
 *prc*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the bounds of the rebar band.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the bounds of the rebar band.
 
 ### Return Value
 
@@ -1033,8 +1033,7 @@ Nonzero if successful; otherwise zero.
 
 Note that this member function uses a `CRect` object as a parameter, rather than a `RECT` structure.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

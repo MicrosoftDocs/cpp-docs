@@ -515,11 +515,6 @@ For more information about DDV, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdd_.h
 
-## See Also
-
-[Standard Dialog Data Exchange Routines](../../mfc/reference/standard-dialog-data-exchange-routines.md)<br/>
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## DDV_MinMaxUnsigned
 
 Call `DDV_MinMaxUnsigned` to verify that the value in the control associated with *value* falls between *minVal* and *maxVal*.
@@ -556,9 +551,9 @@ For more information about DDV, see [Dialog Data Exchange and Validation](../dia
 
 **Header:** afxdd_.h
 
-### See Also
+## See also
 
+[Standard Dialog Data Exchange Routines](standard-dialog-data-exchange-routines.md)<br/>
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[DDX_Slider](#ddx_slider)<br/>
-[DDX_FieldSlider](#ddx_fieldslider)
-
+[DDX_Slider](standard-dialog-data-exchange-routines.md#ddx_slider)<br/>
+[DDX_FieldSlider](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md#ddx_fieldslider)

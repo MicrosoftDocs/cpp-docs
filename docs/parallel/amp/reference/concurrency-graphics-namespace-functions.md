@@ -290,6 +290,6 @@ An ending iterator into the source container.
 
 **Namespace:** Concurrency::graphics
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -37,7 +37,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ## Remarks
 
-OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) structure belong to one property set.
+OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure belong to one property set.
 
 ## <a name="addpropertyid"></a> CDBPropIDSet::AddPropertyID
 
@@ -56,7 +56,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> CDBPropIDSet::CDBPropIDSet
 
-The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
+The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
 
 ### Syntax
 
@@ -89,7 +89,7 @@ void SetGUID(const GUID& guid) throw();
 #### Parameters
 
 *guid*<br/>
-[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
+[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
 
 ### Remarks
 
@@ -105,7 +105,7 @@ Assigns the contents of one property ID set to another ID property set.
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

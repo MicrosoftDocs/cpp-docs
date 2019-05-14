@@ -10,7 +10,7 @@ ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
 
 To implement notifications, a provider class must inherit from [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) and [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).
 
-`IRowsetNotifyCP` implements the provider site for the connection point interface [IRowsetNotify](https://docs.microsoft.com/previous-versions/windows/desktop/ms712959(v=vs.85)). `IRowsetNotifyCP` implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset.
+`IRowsetNotifyCP` implements the provider site for the connection point interface [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)). `IRowsetNotifyCP` implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset.
 
 You must also implement and register `IRowsetNotify` on the consumer (also known as the sink) using [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) so that the consumer can handle notifications. For information about implementing the connection point interface on the consumer, see [Receiving Notifications](../../data/oledb/receiving-notifications.md).
 
@@ -89,6 +89,6 @@ You also need to add the following properties to your provider. You only need to
 
 Most of the implementation for the notifications is already embedded in the OLE DB Provider Templates. If you don't add `IRowsetNotifyCP` to your inheritance chain, the compiler removes all that code from your compilation stream, thus making your code size smaller.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

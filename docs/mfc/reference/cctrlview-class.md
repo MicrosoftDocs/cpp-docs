@@ -127,7 +127,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### Parameters
 
 *cs*<br/>
-A [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) structure.
+A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 ### Return Value
 
@@ -143,7 +143,7 @@ Each class derived from `CCtrlView` adds its own functionality to its override o
 
 For more information on changing window styles, see the [Changing the Styles of a Window Created by MFC](../../mfc/changing-the-styles-of-a-window-created-by-mfc.md).
 
-## See Also
+## See also
 
 [CView Class](../../mfc/reference/cview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

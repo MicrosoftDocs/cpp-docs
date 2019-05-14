@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Adapting Existing Code to Use Lightweight Tasks"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["using lightweight tasks [Concurrency Runtime]", "lightweight tasks, using [Concurrency Runtime]"]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
 ---
@@ -84,7 +84,7 @@ The following completed example shows code that uses a lightweight task to call 
 
 ### Comments
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Scheduler Class](../../parallel/concrt/reference/scheduler-class.md)

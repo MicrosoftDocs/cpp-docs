@@ -86,9 +86,9 @@ HWND m_hWnd;
 
   See the example for [CClientDC::CClientDC](#cclientdc).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDC Class](../../mfc/reference/cdc-class.md)

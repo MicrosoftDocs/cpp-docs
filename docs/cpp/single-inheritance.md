@@ -1,6 +1,6 @@
 ---
 title: "Single Inheritance"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 ---
@@ -8,7 +8,7 @@ ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
 
 In "single inheritance," a common form of inheritance, classes have only one base class. Consider the relationship illustrated in the following figure.
 
-![Basic single&#45;inheritance graph](../cpp/media/vc38xj1.gif "vc38XJ1")
+![Basic single&#45;inheritance graph](../cpp/media/vc38xj1.gif "Basic single&#45;inheritance graph") <br/>
 Simple Single-Inheritance Graph
 
 Note the progression from general to specific in the figure. Another common attribute found in the design of most class hierarchies is that the derived class has a "kind of" relationship with the base class. In the figure, a `Book` is a kind of a `PrintedDocument`, and a `PaperbackBook` is a kind of a `book`.
@@ -35,13 +35,13 @@ In the preceding example, the access specifier **public** is used. The meaning o
 
 A class can serve as the base class for many specific classes, as illustrated in the following figure.
 
-![Directed acyclic graph](../cpp/media/vc38xj2.gif "vc38XJ2")
+![Directed acyclic graph](../cpp/media/vc38xj2.gif "Directed acyclic graph") <br/>
 Sample of Directed Acyclic Graph
 
 In the diagram shown above, called a "directed acyclic graph" (or "DAG"), some of the classes are base classes for more than one derived class. However, the reverse is not true: there is only one direct base class for any given derived class. The graph in the figure depicts a "single inheritance" structure.
 
 > [!NOTE]
->  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs.
+> Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs.
 
 In inheritance, the derived class contains the members of the base class plus any new members you add. As a result, a derived class can refer to members of the base class (unless those members are redefined in the derived class). The scope-resolution operator (`::`) can be used to refer to members of direct or indirect base classes when those members have been redefined in the derived class. Consider this example:
 

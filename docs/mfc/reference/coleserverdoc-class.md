@@ -857,9 +857,9 @@ You typically call this function after the user changes the server document. If 
 
 This function calls the `OnUpdate` member function for each of the document's items except the sending item, passing *pHint*, *lHint*, and *nDrawAspect*. Use these parameters to pass information to the items about the modifications made to the document. You can encode information using *lHint* or you can define a `CObject`-derived class to store information about the modifications and pass an object of that class using *pHint*. Override the `OnUpdate` member function in your `COleServerItem`-derived class to optimize the updating of each item depending on whether its presentation has changed.
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>

@@ -68,7 +68,7 @@ A pointer to a `CSimpleRow` object.
 
 ### Return Value
 
-An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) in the *OLE DB Programmer's Reference* for other possible return values.
+An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) in the *OLE DB Programmer's Reference* for other possible return values.
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 
@@ -119,7 +119,7 @@ Index to the rowset representing the cursor.
 KeyType m_iRowset;
 ```
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -10,7 +10,6 @@ ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
 ## Syntax
 
 ```
-
 #include <math.h>
 ```
 
@@ -29,7 +28,7 @@ These errors, described as follows, correspond to the exception types defined in
 |`_TLOSS`|Total loss of significance occurred.|
 |`_UNDERFLOW`|Result is too small to be represented.|
 
-## See Also
+## See also
 
 [_matherr](../c-runtime-library/reference/matherr.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

@@ -1,6 +1,6 @@
 ---
 title: "Using Verifiable Assemblies with SQL Server (C++/CLI)"
-ms.date: "10/17/2019"
+ms.date: "10/17/2018"
 helpviewer_keywords: ["verifiable assemblies [C++], with SQL Server"]
 ms.assetid: 5248a60d-aa88-4ff3-b30a-b791c3ea2de9
 ---
@@ -69,6 +69,6 @@ SQL scripts can be executed interactively in SQL Query Analyzer or at the comman
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt
 ```
 
-## See Also
+## See also
 
 [Classes and Structs](../cpp/classes-and-structs-cpp.md)

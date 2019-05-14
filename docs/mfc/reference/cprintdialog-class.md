@@ -134,7 +134,7 @@ Note that when you call the constructor with *bPrintSetupOnly* set to FALSE, the
 
 ##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -464,9 +464,9 @@ Call this function after calling `DoModal` to determine whether to print only th
 
   See the example for [CPrintDialog::m_pd](#m_pd).
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPrintInfo Structure](../../mfc/reference/cprintinfo-structure.md)

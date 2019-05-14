@@ -11,7 +11,7 @@ The **this** pointer is a pointer accessible only within the nonstatic member fu
 
 ## Syntax
 
-```
+```cpp
 this
 this->member-identifier
 ```
@@ -116,7 +116,7 @@ int main()
     // Display 'my buffer'
     myBuf.Display();
 
-    // assignment opperator
+    // assignment operator
     myBuf = yourBuf;
 
     // Display 'your buffer'

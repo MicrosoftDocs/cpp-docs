@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Implementing Futures"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["implementing futures [Concurrency Runtime]", "futures, implementing [Concurrency Runtime]"]
 ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
 ---
@@ -81,7 +81,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc futures.cpp**
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>

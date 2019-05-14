@@ -6,7 +6,7 @@ ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
 ---
 # How to: Use safe_cast in C++/CLI
 
-This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in C++/CX, see [safe_cast](../windows/safe-cast-cpp-component-extensions.md).
+This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in C++/CX, see [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
 
 ## Upcasting
 
@@ -322,6 +322,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)
+[safe_cast](../extensions/safe-cast-cpp-component-extensions.md)

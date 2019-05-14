@@ -1,6 +1,6 @@
 ---
 title: "Unions"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["union_cpp"]
 helpviewer_keywords: ["class types [C++], unions as", "union keyword [C++]"]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
@@ -55,7 +55,6 @@ int main()
 In the previous example, any code that accesses the union needs to know which member is holding the data. The most common solution to this problem is to enclose the union in a struct along with an additional enum member that indicates the type of the data currently being stored in the union. This is called a *discriminated union* and the following example shows the basic pattern.
 
 ```cpp
-#include "stdafx.h"
 #include <queue>
 
 using namespace std;
@@ -622,7 +621,7 @@ int main()
 
 The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.
 
-![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "vc38UL1")
+![Storage of data in a numeric type union](../cpp/media/vc38ul1.png "Storage of data in a NumericType union") <br/>
 Storage of Data in NumericType Union
 
 ## <a name="anonymous_unions"></a> Anonymous unions

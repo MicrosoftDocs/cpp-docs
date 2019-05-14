@@ -5,7 +5,6 @@ f1_keywords: ["atlcom/ATL::COM_INTERFACE_ENTRY", "atlcom/ATL::COM_INTERFACE_ENTR
 helpviewer_keywords: ["COM interfaces, COM interface entry macros"]
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
 ---
-
 # COM_INTERFACE_ENTRY Macros
 
 These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.
@@ -378,4 +377,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 You can use this macro to prevent an interface from being used in a particular case. For example, you can insert this macro into your COM map right before COM_INTERFACE_ENTRY_AGGREGATE_BLIND to prevent a query for the interface from being forwarded to the aggregate's inner unknown.
 
 The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.
-

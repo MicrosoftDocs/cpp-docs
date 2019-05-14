@@ -443,7 +443,7 @@ virtual BOOL Create(
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described under **Remarks**.
 
 *rect*<br/>
-Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Optionally specifies the toolbar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the toolbar control's parent window. It must not be NULL.
@@ -497,7 +497,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -901,7 +901,7 @@ BOOL GetItemRect(
 Zero-based index of the button for which to retrieve information.
 
 *lpRect*<br/>
-Address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
+Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that receives the coordinates of the bounding rectangle.
 
 ### Return Value
 
@@ -922,7 +922,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### Parameters
 
 *pSize*<br/>
-A pointer to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure that receives the size of the items.
+A pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that receives the size of the items.
 
 ### Return Value
 
@@ -1018,7 +1018,7 @@ BOOL GetRect(
 The button identifier.
 
 *lpRect*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.
 
 ### Return Value
 
@@ -1141,7 +1141,7 @@ int HitTest(LPPOINT ppt) const;
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
+A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the x-coordinate of the hit test in the `x` member and the y-coordinate of the hit test in the `y` member. The coordinates are relative to the toolbar's client area.
 
 ### Return Value
 
@@ -1244,7 +1244,7 @@ BOOL InsertMarkHitTest(
 ### Parameters
 
 *ppt*<br/>
-A pointer to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the hit test coordinates, relative to the client area of the toolbar.
+A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the hit test coordinates, relative to the client area of the toolbar.
 
 *ptbim*<br/>
 A pointer to a [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) structure that receives the insertion mark information.
@@ -2111,7 +2111,7 @@ Requested number of rows.
 Tells whether to use more rows or fewer rows if the toolbar cannot be resized to the requested number of rows.
 
 *lpRect*<br/>
-Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the new bounding rectangle of the toolbar.
+Points to the [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive the new bounding rectangle of the toolbar.
 
 ### Remarks
 
@@ -2200,10 +2200,10 @@ The return value is not used.
 
 This member function emulates the functionality of the [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) message, as described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar Class](../../mfc/reference/ctoolbar-class.md)

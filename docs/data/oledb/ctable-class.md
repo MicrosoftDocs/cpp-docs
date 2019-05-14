@@ -80,10 +80,10 @@ HRESULT Open(const CSession& session,
 [in] The `DBID` of the table to open.
 
 *pPropSet*<br/>
-[in] A pointer to an array of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.
 
 *ulPropSets*<br/>
-[in] The number of [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
 
 ### Return Value
 
@@ -91,9 +91,9 @@ A standard HRESULT.
 
 ### Remarks
 
-For more details, see [IOpenRowset::OpenRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference*.
+For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

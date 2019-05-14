@@ -24,7 +24,7 @@ This article outlines how to make your application a drop target. Implementing a
     |`OnDrop`|Handling of data being dropped into the specified window.|
     |`OnScrollBy`|Special behavior for when scrolling is necessary in the target window.|
 
-See the MAINVIEW.CPP file that is part of the MFC OLE sample [OCLIENT](../visual-cpp-samples.md) for an example of how these functions work together.
+See the MAINVIEW.CPP file that is part of the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) for an example of how these functions work together.
 
 For more information, see:
 
@@ -34,7 +34,7 @@ For more information, see:
 
 - [Manipulating OLE Data Objects and Data Sources](../mfc/data-objects-and-data-sources-manipulation.md)
 
-## See Also
+## See also
 
 [Drag and Drop (OLE)](../mfc/drag-and-drop-ole.md)<br/>
 [COleDropTarget Class](../mfc/reference/coledroptarget-class.md)

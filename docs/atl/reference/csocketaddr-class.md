@@ -189,7 +189,7 @@ addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ### Parameters
 
 *nIndex*<br/>
-A reference to a specific element in the [addrinfo](https://msdn.microsoft.com/library/windows/desktop/ms737530) list.
+A reference to a specific element in the [addrinfo](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa) list.
 
 ### Return Value
 
@@ -205,8 +205,8 @@ addrinfo* const GetAddrInfoList() const;
 
 ### Return Value
 
-Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](https://msdn.microsoft.com/library/windows/desktop/ms737530).
+Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

@@ -140,7 +140,7 @@ void Cancel();
 
 ### Remarks
 
-Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564). For more information, see [Asynchronous Execution](/previous-versions/windows/desktop/ms713563) in the Windows SDK.
+Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asynchronous operation, you must directly call the ODBC API function [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function). For more information, see [Asynchronous Execution](/sql/odbc/reference/develop-app/asynchronous-execution).
 
 ##  <a name="cantransact"></a>  CDatabase::CanTransact
 
@@ -588,7 +588,7 @@ An operation might time out due to network access problems, excessive query proc
 
 The default value for query timeouts is 15 seconds. Not all data sources support the ability to set a query timeout value. If you set a query timeout value of 0, no timeout occurs; the communication with the data source may stop responding. This behavior may be useful during development. If the data source does not support timeout, you get trace output but not an exception.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -129,7 +129,6 @@ A view that contains a Windows list control.
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 A view that contains a Windows tree control.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

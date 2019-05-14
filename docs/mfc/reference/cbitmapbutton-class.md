@@ -206,9 +206,8 @@ void SizeToContent();
 
 [!code-cpp[NVC_MFCControlLadenDialog#59](../../mfc/codesnippet/cpp/cbitmapbutton-class_4.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CButton Class](../../mfc/reference/cbutton-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

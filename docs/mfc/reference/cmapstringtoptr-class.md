@@ -53,7 +53,7 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 
@@ -73,8 +73,7 @@ When a `CMapStringToPtr` object is deleted, or when its elements are removed, th
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

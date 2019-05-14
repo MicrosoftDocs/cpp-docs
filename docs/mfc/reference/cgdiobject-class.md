@@ -215,10 +215,10 @@ The function retrieves a data structure whose type depends on the type of graphi
 
 |Object|Buffer type|
 |------------|-----------------|
-|`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|
-|`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|
+|`CPen`|[LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
+|`CBrush`|[LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
 |`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|
-|`CBitmap`|[BITMAP](../../mfc/reference/bitmap-structure.md)|
+|`CBitmap`|[BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
 |`CPalette`|WORD|
 |`CRgn`|Not supported|
 
@@ -354,7 +354,7 @@ For `CBrush` objects, `UnrealizeObject` directs the system to reset the origin o
 
 The `UnrealizeObject` function should not be used with stock objects. The `UnrealizeObject` function must be called whenever a new brush origin is set (by means of the [CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) function). The `UnrealizeObject` function must not be called for the currently selected brush or currently selected palette of any display context.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CBitmap Class](../../mfc/reference/cbitmap-class.md)<br/>

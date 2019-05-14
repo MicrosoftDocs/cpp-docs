@@ -24,7 +24,6 @@ ATL uses the following classes to support connection points:
 
 - [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) works in conjunction with the event sink map in your class to route events to the appropriate handler function.
 
-## See Also
+## See also
 
 [Connection Point](../atl/atl-connection-points.md)
-

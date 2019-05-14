@@ -205,6 +205,6 @@ The new size of the render target in device pixels
 
 If the method succeeds, it returns TRUE. Otherwise, it returns FALSE.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

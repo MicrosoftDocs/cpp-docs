@@ -1,6 +1,6 @@
 ---
 title: "MFC DLL Frequently Asked Questions"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["troubleshooting [C++], DLLs", "DLLs [C++], frequently asked questions", "FAQs [C++], DLLs"]
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
 ---
@@ -32,11 +32,7 @@ An MFC DLL that creates a new MFC thread during startup will stop responding whe
 
 ## <a name="mfc_multithreaded_2"></a> Can a multithreaded application access an MFC DLL in different threads?
 
-Multithreaded applications can access regular MFC DLLs that dynamically link to MFC and MFC extension DLLs from different threads. And as of Visual C++ version 4.2, an application can access regular MFC DLLs that statically link to MFC from multiple threads created in the application.
-
-Prior to version 4.2, only one external thread could attach to a regular MFC DLL that statically linked to MFC.
-
-Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular MFC DLL that is statically linked to MFC has the same characteristics as the former USRDLL.
+Multithreaded applications can access regular MFC DLLs that dynamically link to MFC and MFC extension DLLs from different threads. An application can access regular MFC DLLs that statically link to MFC from multiple threads created in the application.
 
 ## <a name="mfc_prohibited_classes"></a> Are there any MFC classes or functions that cannot be used in an MFC DLL?
 
@@ -50,14 +46,14 @@ Note that because the `CWinApp::Run` mechanism does not apply to a DLL, the appl
 
 If your DLL is a regular MFC DLL that is statically linked to MFC, changing it to a regular MFC DLL that is dynamically linked to MFC reduces the file size.
 
-If the DLL has a large number of exported functions, use a .def file to export the functions (instead of using **__declspec(dllexport)**) and use the .def file [NONAME attribute](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) on each exported function. The NONAME attribute causes only the ordinal value and not the function name to be stored in the DLL's export table, which reduces the file size.
+If the DLL has a large number of exported functions, use a .def file to export the functions (instead of using **__declspec(dllexport)**) and use the .def file [NONAME attribute](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md) on each exported function. The NONAME attribute causes only the ordinal value and not the function name to be stored in the DLL's export table, which reduces the file size.
 
-DLLs that are implicitly linked to an application are loaded when the application loads. To improve the performance when loading, try dividing the DLL into different DLLs. Put all the functions that the calling application needs immediately after loading into one DLL and have the calling application implicitly link to that DLL. Put the other functions that the calling application does not need right away into another DLL and have the application explicitly link to that DLL. For more information, see [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
+DLLs that are implicitly linked to an application are loaded when the application loads. To improve the performance when loading, try dividing the DLL into different DLLs. Put all the functions that the calling application needs immediately after loading into one DLL and have the calling application implicitly link to that DLL. Put the other functions that the calling application does not need right away into another DLL and have the application explicitly link to that DLL. For more information, see [Link an executable to a DLL](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use).
 
 ## <a name="memory_leak"></a> There&#39;s a memory leak in my regular MFC DLL, but my code looks fine. How can I find the memory leak?
 
 One possible cause of the memory leak is that MFC creates temporary objects that are used inside message handler functions. In MFC applications, these temporary objects are automatically cleaned up in the `CWinApp::OnIdle()` function that is called in between processing messages. However, in MFC dynamic-link libraries (DLLs), the `OnIdle()` function is not automatically called. As a result, temporary objects are not automatically cleaned up. To clean up temporary objects, the DLL must explicitly call `OnIdle(1)` periodically.
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

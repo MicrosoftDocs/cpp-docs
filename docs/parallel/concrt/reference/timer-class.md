@@ -251,6 +251,6 @@ Destroys a `timer` messaging block.
 ~timer();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

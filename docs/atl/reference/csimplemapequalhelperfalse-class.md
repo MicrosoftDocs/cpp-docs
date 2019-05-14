@@ -75,7 +75,7 @@ Returns false.
 
 This method always returns false, and will call `ATLASSERT` with an argument of false if it is ever referenced. The purpose of `CSimpleMapEqualHelperFalse::IsEqualValue` is to force methods using comparisons to fail in a well-defined manner when equality tests have not been adequately defined.
 
-## See Also
+## See also
 
 [CSimpleMapEqualHelper Class](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

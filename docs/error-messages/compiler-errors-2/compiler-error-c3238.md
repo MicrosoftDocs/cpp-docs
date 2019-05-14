@@ -11,7 +11,7 @@ ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
 
 A type was defined in a client application that is also defined, via type forwarding syntax, in a referenced assembly. Both types cannot be defined in the scope of the application.
 
-See [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md) for more information.
+See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for more information.
 
 ## Example
 

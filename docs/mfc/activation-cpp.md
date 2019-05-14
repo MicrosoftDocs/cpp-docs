@@ -21,9 +21,8 @@ MFC does not support nested in-place activation. If you build a container/server
 
 What happens to an embedded item when the user double-clicks it depends on the verbs defined for the item. For information, see [Activation: Verbs](../mfc/activation-verbs.md).
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Containers](../mfc/containers.md)<br/>
 [Servers](../mfc/servers.md)
-

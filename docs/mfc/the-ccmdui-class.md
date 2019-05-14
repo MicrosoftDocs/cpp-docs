@@ -13,7 +13,6 @@ When it routes an update command to its handler, the framework passes the handle
 
 This handler calls the `Enable` member function of an object with access to the menu item. `Enable` makes the item available for use.
 
-## See Also
+## See also
 
 [How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)
-

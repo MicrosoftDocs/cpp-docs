@@ -512,7 +512,7 @@ BOOL ClipCaretRect(LPRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-On input, a pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure that contains the caret area to be adjusted. On output, the adjusted caret area, or NULL if the caret rectangle is completely covered.
+On input, a pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the caret area to be adjusted. On output, the adjusted caret area, or NULL if the caret rectangle is completely covered.
 
 ### Return Value
 
@@ -3871,10 +3871,10 @@ The return value of the message dispatched.
 
 Call this function to dispatch specific messages through the control's message map.
 
-## See Also
+## See also
 
-[MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

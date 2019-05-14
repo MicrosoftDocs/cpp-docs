@@ -118,7 +118,7 @@ virtual BOOL Create(
 ### Parameters
 
 *lpszClassName*<br/>
-Points to a null-terminated character string that names the Windows class (a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
+Points to a null-terminated character string that names the Windows class (a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
 
 *lpszWindowName*<br/>
 Points to a null-terminated character string that represents the window name. Used as text for the title bar.
@@ -261,11 +261,11 @@ The handle of an accelerator resource.
 
 Call this function to set the menu and accelerator resources used by the MDI child window object.
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

@@ -19,7 +19,7 @@ The **typeid** operator allows the type of an object to be determined at run tim
 
 The result of **typeid** is a `const type_info&`. The value is a reference to a `type_info` object that represents either the *type-id* or the type of the *expression*, depending on which form of **typeid** is used. See [type_info Class](../cpp/type-info-class.md) for more information.
 
-The **typeid** operator  does not work with managed types (abstract declarators or instances), see [typeid](../windows/typeid-cpp-component-extensions.md) for information on getting the <xref:System.Type> of a specified type.
+The **typeid** operator does not work with managed types (abstract declarators or instances), see [typeid](../extensions/typeid-cpp-component-extensions.md) for information on getting the <xref:System.Type> of a specified type.
 
 The **typeid** operator does a run-time check when applied to an l-value of a polymorphic class type, where the true type of the object cannot be determined by the static information provided. Such cases are:
 

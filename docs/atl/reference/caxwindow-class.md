@@ -347,11 +347,10 @@ A standard HRESULT value.
 
 The external `IDocHostUIHandlerDispatch` interface is used by controls that query the host's site for the `IDocHostUIHandlerDispatch` interface. The WebBrowser control is one control that does this.
 
-## See Also
+## See also
 
-[ATLCON Sample](../../visual-cpp-samples.md)<br/>
+[ATLCON Sample](../../overview/visual-cpp-samples.md)<br/>
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
-

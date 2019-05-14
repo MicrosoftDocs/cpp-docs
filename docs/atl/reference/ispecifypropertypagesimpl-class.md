@@ -66,7 +66,7 @@ ATL uses the object's property map to retrieve each CLSID.
 
 See [ISpecifyPropertyPages::GetPages](/windows/desktop/api/ocidl/nf-ocidl-ispecifypropertypages-getpages) in the Windows SDK.
 
-## See Also
+## See also
 
 [IPropertyPageImpl Class](../../atl/reference/ipropertypageimpl-class.md)<br/>
 [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>

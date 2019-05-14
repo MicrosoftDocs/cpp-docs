@@ -260,7 +260,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. Defaults to SW_HIDE.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section. Defaults to SW_HIDE.
 
 ### Return Value
 
@@ -317,7 +317,7 @@ int WinMain(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 
@@ -327,9 +327,9 @@ Returns the executable's return value.
 
 This method can be overridden. If overriding [CAtlExeModuleT::PreMessageLoop](#premessageloop), [CAtlExeModuleT::PostMessageLoop](#postmessageloop), or [CAtlExeModuleT::RunMessageLoop](#runmessageloop) doesn't provide enough flexibility, it's possible to override the `WinMain` function using this method.
 
-## See Also
+## See also
 
-[ATLDuck Sample](../../visual-cpp-samples.md)<br/>
+[ATLDuck Sample](../../overview/visual-cpp-samples.md)<br/>
 [CAtlModuleT Class](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlDllModuleT Class](../../atl/reference/catldllmodulet-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -31,8 +31,8 @@ This topic lists the names of base classes and files that your project generates
 
    The name of the source code file that is associated with the selected class. If the text box is active, you can change the name of the implementation file.
 
-## See Also
+## See also
 
 [Advanced Features, MFC Application Wizard](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
-[File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md)
 

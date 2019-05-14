@@ -36,7 +36,7 @@ If you choose not to upgrade, Visual Studio makes no changes to your solution or
 
 ## Instructions for Visual Studio 2008
 
-Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual C++ projects were changed to use **MSBuild**. This means that you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
+Visual Studio 2008 had its own dedicated build system for C++ called **VCBuild**. Starting in Visual Studio 2010, Visual Studio C++ projects were changed to use **MSBuild**. This means that you must go through an update step to build your Visual Studio 2008 projects in the latest version of Visual Studio. Your updated project still generates binaries that are fully compatible with binaries created using the Visual Studio 2008 IDE.
 
 First, in addition to the current version of Visual Studio, you must install Visual Studio 2010 on the same computer as Visual Studio 2008. Only Visual Studio 2010 installs the **MSBuild** scripts that are required to target Visual Studio 2008 projects.
 
@@ -50,13 +50,13 @@ After this change, the Visual Studio 2008 compiler and libraries are used to gen
 
 ## Install an older Visual Studio toolset
 
-You may have an old Visual C++ project that you can't or don't want to upgrade, but not the platform toolset version that matches your project. In this case, to get the toolset, you can install the free Visual Studio Community or Express edition of the version you need. Every version of Visual Studio from Visual Studio 2008 on can install the compiler, tools, and libraries you need to target that version from the current Visual Studio. Search the Microsoft Download Center to find and download a particular version of Visual Studio. Make sure you choose the C++ installation options during setup. After setup completes, run that version of Visual Studio to install any updates. Also check for any Windows Update changes that might be required. This update check process may need to be repeated more than once to get every update.
+You may have an old Visual Studio C++ project that you can't or don't want to upgrade, but not the platform toolset version that matches your project. In this case, to get the toolset, you can install the free Visual Studio Community or Express edition of the version you need. Every version of Visual Studio from Visual Studio 2008 on can install the compiler, tools, and libraries you need to target that version from the current Visual Studio. Search the Microsoft Download Center to find and download a particular version of Visual Studio. Make sure you choose the C++ installation options during setup. After setup completes, run that version of Visual Studio to install any updates. Also check for any Windows Update changes that might be required. This update check process may need to be repeated more than once to get every update.
 
 For the currently available downloads, see [Download older Visual Studio software](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 When these products are installed, the **Platform Toolset** property drop-down in the **Property Pages** dialog box is automatically updated to show the available toolsets. You can now use the latest version of Visual Studio to build projects for those older versions of the toolset without converting or upgrading them.
 
-## See Also
+## See also
 
 [Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[C++ conformance improvements in Visual Studio 2017](../cpp-conformance-improvements-2017.md)
+[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)

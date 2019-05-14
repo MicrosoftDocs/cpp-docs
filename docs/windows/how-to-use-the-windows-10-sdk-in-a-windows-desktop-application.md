@@ -32,7 +32,7 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
    `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
-4. Open the project properties, and in the **Configuration Properties, General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. See [General Property Page (Project)](../ide/general-property-page-project.md).
+4. Open the project properties, and in the **Configuration Properties, General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. See [General Property Page (Project)](../build/reference/general-property-page-project.md).
 
    ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
@@ -52,6 +52,6 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
 2. In the **Target Platform Version** dropdown list, choose **8.1**.
 
-## See Also
+## See also
 
 [Windows Desktop Applications (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

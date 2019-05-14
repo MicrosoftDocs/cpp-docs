@@ -48,7 +48,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object can
 
 ## Example
 
-The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).
+The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]
@@ -182,7 +182,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 ### Return Value
 
-A pointer to the [IShellFolder Interface](https://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.
+A pointer to the [IShellFolder Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder) for the selected object.
 
 ### Remarks
 
@@ -412,7 +412,7 @@ void SetItemTypes(SHCONTF nTypes);
 
 For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

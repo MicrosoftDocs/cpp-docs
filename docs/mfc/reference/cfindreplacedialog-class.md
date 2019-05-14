@@ -55,7 +55,7 @@ Once a `CFindReplaceDialog` object has been constructed, you must call the [Crea
 
 Use the [m_fr](#m_fr) structure to initialize the dialog box before calling `Create`. The `m_fr` structure is of type [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). For more information on this structure, see the Windows SDK.
 
-In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) message-map macro in your frame window that handles this registered message.
+In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) function and use the [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) message-map macro in your frame window that handles this registered message.
 
 You can determine whether the user has decided to terminate the dialog box with the `IsTerminating` member function.
 
@@ -141,7 +141,7 @@ Nonzero if the dialog box object was successfully created; otherwise 0.
 
 ### Remarks
 
-In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:
+In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:
 
 [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]
 
@@ -324,7 +324,7 @@ BOOL SearchDown() const;
 
 Nonzero if the user wants the search to proceed in a downward direction; 0 if the user wants the search to proceed in an upward direction.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

@@ -57,7 +57,7 @@ for example, translates to
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator [ ]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
+|[CObArray::operator \[ \]](../../mfc/reference/cobarray-class.md#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
@@ -82,7 +82,7 @@ For more information on using `CPtrArray`, see the article [Collections](../../m
 
 **Header:** afxcoll.h
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

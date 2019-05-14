@@ -93,7 +93,7 @@ For more information about how to provide custom mouse behavior, see [Keyboard a
 
 ### Example
 
-The following example demonstrates how to retrieve a pointer to a `CMouseManager` object by using the `CWinAppEx::GetMouseManager` method and the `AddView` method in the `CMouseManager` class. This code snippet is part of the [State Collection sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a pointer to a `CMouseManager` object by using the `CWinAppEx::GetMouseManager` method and the `AddView` method in the `CMouseManager` class. This code snippet is part of the [State Collection sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]
 
@@ -243,10 +243,9 @@ In order to associate a custom command with a view, you must first register the 
 
 If *uiCmd* is set to 0, the specified view is no longer associated with a command.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-

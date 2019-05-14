@@ -1,7 +1,7 @@
 ---
 title: "Modifying WINVER and _WIN32_WINNT"
 ms.date: "09/04/2017"
-helpviewer_keywords: ["WINVER in an upgraded Visual C++ project", "_WIN32_WINNT in an upgraded Visual C++ project"]
+helpviewer_keywords: ["WINVER in an upgraded Visual Studio C++ project", "_WIN32_WINNT in an upgraded Visual Studio C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
 ---
 # Modifying WINVER and _WIN32_WINNT
@@ -47,6 +47,6 @@ You can also define this macro by using the `/D` compiler option. For more infor
 
 For more information about the meanings of these macros, see [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers).
 
-## See Also
+## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)

@@ -423,7 +423,7 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 |-----------|-------------|
 |INTERNET_STATUS_RESOLVING_NAME|Looking up the IP address of the name contained in *lpvStatusInformation*.|
 |INTERNET_STATUS_NAME_RESOLVED|Successfully found the IP address of the name contained in *lpvStatusInformation*.|
-|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) pointed to by *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](/windows/desktop/winsock/sockaddr-2)) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_CONNECTED_TO_SERVER|Successfully connected to the socket address (SOCKADDR) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_SENDING_REQUEST|Sending the information request to the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_ REQUEST_SENT|Successfully sent the information request to the server. The *lpvStatusInformation* parameter is NULL.|
@@ -588,7 +588,7 @@ Indicates various caching options. The default is set to 0. The possible values 
 
 If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

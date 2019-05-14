@@ -18,22 +18,22 @@ For MFC applications that load MFC extension DLLs, we recommend that you use `Af
 If Windows cannot load the DLL, the process can attempt to recover from the error. For example, the process could notify the user of the error and ask the user to specify another path to the DLL.
 
 > [!IMPORTANT]
-> Make sure to specify the full path of any DLLs. The current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded. Another way to prevent this is by using the [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) linker option.
+> Make sure to specify the full path of any DLLs. The current directory is searched first when files are loaded. If you do not qualify the path of the file, a file that is not the intended one might be loaded. Another way to prevent this is by using the [/DEPENDENTLOADFLAG](reference/dependentloadflag.md) linker option.
 
 ## What do you want to do?
 
-- [How to link implicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## What do you want to know more about?
 
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-- [FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
+- [FreeLibrary and AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
 
-- [GetProcAddress](../build/getprocaddress.md)
+- [GetProcAddress](getprocaddress.md)
 
 ## See also
 
-- [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+- [Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

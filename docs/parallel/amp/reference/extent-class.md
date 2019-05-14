@@ -1,6 +1,6 @@
 ---
 title: "extent Class (C++ AMP)"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]
 helpviewer_keywords: ["extent structure"]
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
@@ -63,7 +63,7 @@ The rank of the `extent` object.
 
 |Name|Description|
 |----------|-----------------|
-|[rank Constant](#rank)|Gets the rank of the `extent` object.|
+|[rank Constant](#rank_constant)|Gets the rank of the `extent` object.|
 
 ## Inheritance Hierarchy
 
@@ -379,6 +379,6 @@ The next-to-most-significant component of the tiled extent.
 *_Dim2*<br/>
 The least significant component of the tiled extent.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

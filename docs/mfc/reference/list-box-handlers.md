@@ -17,7 +17,6 @@ The following map entries have the corresponding function prototype.
 |ON_LBN_SELCHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 |ON_LBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

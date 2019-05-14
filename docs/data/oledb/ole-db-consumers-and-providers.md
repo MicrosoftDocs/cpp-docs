@@ -14,7 +14,7 @@ For roles, a consumer calls methods on OLE DB interfaces; an OLE DB provider imp
 
 OLE DB avoids the terms client and server because these roles don't always make sense, especially in an n-tier situation. Because a consumer could be a component on a tier that serves another component, to call it a client component would be confusing. Also, a provider sometimes acts more like a database driver than a server.
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

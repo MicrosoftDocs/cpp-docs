@@ -1,7 +1,6 @@
 ---
 title: "General MBCS Programming Advice"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["MBCS [C++], dialog box fonts", "MS Shell Dlg", "MBCS [C++], programming", "dialog boxes [C++], fonts"]
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 ---
@@ -9,7 +8,7 @@ ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 
 Use the following tips:
 
-- For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+- For flexibility, use run-time macros such as `_tcschr` and `_tcscpy` when possible. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
 - Use the C run-time `_getmbcp` function to get information about the current code page.
 
@@ -25,7 +24,7 @@ Use the following tips:
 
 - When designing your application, decide which strings can be localized. If in doubt, assume that any given string will be localized. As such, do not mix strings that can be localized with those that cannot.
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Incrementing and Decrementing Pointers](../text/incrementing-and-decrementing-pointers.md)

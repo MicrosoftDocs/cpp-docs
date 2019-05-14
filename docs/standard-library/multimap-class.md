@@ -1615,7 +1615,7 @@ int main()
     m1.insert(Int_Pair(4, 40));
 
     // Create an empty multimap m2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     multimap <int, int, less<int> > m2;
     m2.insert(Int_Pair(1, 10));
     m2.insert(Int_Pair(2, 20));
@@ -1818,14 +1818,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
@@ -1958,14 +1958,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
@@ -2199,7 +2199,7 @@ int main( )
            << m1_RcIter -> second << "." << endl;
 
    // The element at a specific location in the multimap can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    m1_AcIter = m1.begin( );
    m1_RcIter = m1.upper_bound( m1_AcIter -> first );
    cout << "The first element of m1 with a key greater than\n"
@@ -2309,7 +2309,7 @@ int main( )
    multimap <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    m1.insert ( multimap <int, int> :: value_type ( 1, 10 ) );
 
    // Compare another way to insert objects into a hash_multimap

@@ -10,7 +10,6 @@ ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 
@@ -18,7 +17,7 @@ ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
 
 `BUFSIZ` is the required user-allocated buffer for the [setvbuf](../c-runtime-library/reference/setvbuf.md) routine.
 
-## See Also
+## See also
 
 [Stream I/O](../c-runtime-library/stream-i-o.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

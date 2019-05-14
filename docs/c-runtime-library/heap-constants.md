@@ -10,7 +10,6 @@ ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
 ## Syntax
 
 ```
-
 #include <malloc.h>
 ```
 
@@ -27,7 +26,7 @@ These constants give the return value indicating status of the heap.
 |`_HEAPEND`|End of heap was reached successfully (`_heapwalk` routine only).|
 |`_HEAPOK`|Heap is consistent (`_heapset` and `_heapchk` routines only). No errors so far; **_HEAPINFO** structure contains information about next entry (`_heapwalk` routine only).|
 
-## See Also
+## See also
 
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapset](../c-runtime-library/heapset.md)<br/>

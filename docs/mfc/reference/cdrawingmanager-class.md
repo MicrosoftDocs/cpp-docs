@@ -331,7 +331,7 @@ If you set *bRightShadow* to FALSE, the shadow will be drawn underneath and to t
 
 ### Example
 
-The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]
 
@@ -415,7 +415,7 @@ void FillGradient(
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]
 
@@ -451,7 +451,7 @@ Use *nAngle* to specify the direction of the color gradient. When you specify th
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]
 
@@ -559,7 +559,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 This method and the `CDrawingManager::HLStoRGB_TWO` method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a percentage of the circle. In the `CDrawingManager::HLStoRGB_TWO` method, *H* is a degree value between 0 and 360, which both represent red. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -591,7 +591,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 This method and the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a degree value between 0 and 360, which both represent red. In the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method, *H* is a percentage of the circle. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -621,7 +621,7 @@ The RGB representation of the HSV color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 ##  <a name="huetorgb"></a>  CDrawingManager::HuetoRGB
 
@@ -806,7 +806,7 @@ static void __stdcall RGBtoHSL(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 The returned value for *H* is represented as a fraction between 0 and 1 where both 0 and 1 represent red. The returned values for *S* and *L* are numbers between 0 and 1.
 
@@ -838,7 +838,7 @@ static void __stdcall RGBtoHSV(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 The returned value for *H* is a number between 0 and 360 where both 0 and 360 indicate red. The return values for *S* and *V* are numbers between 0 and 1.
 
@@ -974,7 +974,7 @@ TRUE indicates rotate +90 degrees; FALSE indicates rotate -90 degrees.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

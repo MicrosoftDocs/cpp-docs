@@ -68,6 +68,6 @@ error
 caught an exception
 ```
 
-## See Also
+## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)
+[Exception Handling](../extensions/exception-handling-cpp-component-extensions.md)

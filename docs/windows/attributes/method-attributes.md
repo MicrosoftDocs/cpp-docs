@@ -44,6 +44,6 @@ The following attributes apply to the methods in a class, coclass, or interface.
 |[synchronize](synchronize.md)|Synchronizes access to the target method.|
 |[vararg](vararg.md)|Specifies that the function take a variable number of arguments.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

@@ -7,7 +7,7 @@ ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
 ---
 # IDBCreateSessionImpl Class
 
-Provides an implementation for the [IDBCreateSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms724076(v=vs.85)) interface.
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) interface.
 
 ## Syntax
 
@@ -55,9 +55,9 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 
 #### Parameters
 
-See [IDBCreateSession::CreateSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms714942(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

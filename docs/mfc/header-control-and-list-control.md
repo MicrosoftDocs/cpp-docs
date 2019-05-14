@@ -23,8 +23,7 @@ The embedded header control object can be accessed from either `CListCtrl` or `C
 
 - [Using image lists with header controls](../mfc/using-image-lists-with-header-controls.md)
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

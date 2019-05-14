@@ -13,7 +13,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 ## Example
 
-The following example demonstrates how to pass a managed array to an unmanaged function. The managed function uses [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to suppress garbage collection for the array before calling the unmanaged function. By providing the unmanaged function with a pinned pointer into the GC heap, the overhead of making a copy of the array can be avoided. To demonstrate that the unmanaged function is accessing GC heap memory, it modifies the contents of the array and the changes are reflected when the managed function resumes control.
+The following example demonstrates how to pass a managed array to an unmanaged function. The managed function uses [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to suppress garbage collection for the array before calling the unmanaged function. By providing the unmanaged function with a pinned pointer into the GC heap, the overhead of making a copy of the array can be avoided. To demonstrate that the unmanaged function is accessing GC heap memory, it modifies the contents of the array and the changes are reflected when the managed function resumes control.
 
 ```
 // PassArray1.cpp
@@ -118,6 +118,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

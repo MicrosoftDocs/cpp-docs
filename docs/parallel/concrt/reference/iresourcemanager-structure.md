@@ -1,6 +1,6 @@
 ---
 title: "IResourceManager Structure"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["IResourceManager", "CONCRTRM/concurrency::IResourceManager", "CONCRTRM/concurrency::IResourceManager::IResourceManager::OSVersion", "CONCRTRM/concurrency::IResourceManager::IResourceManager::CreateNodeTopology", "CONCRTRM/concurrency::IResourceManager::IResourceManager::GetAvailableNodeCount", "CONCRTRM/concurrency::IResourceManager::IResourceManager::GetFirstNode", "CONCRTRM/concurrency::IResourceManager::IResourceManager::Reference", "CONCRTRM/concurrency::IResourceManager::IResourceManager::RegisterScheduler", "CONCRTRM/concurrency::IResourceManager::IResourceManager::Release"]
 helpviewer_keywords: ["IResourceManager structure"]
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
@@ -104,7 +104,7 @@ virtual ITopologyNode* GetFirstNode() const = 0;
 
 The first node in enumeration order as defined by the Resource Manager.
 
-##  <a name="iresourcemanager__osversion"></a>  IResourceManager::OSVersion Enumeration
+##  <a name="osversion"></a>  IResourceManager::OSVersion Enumeration
 
 An enumerated type that represents the operating system version.
 
@@ -164,7 +164,7 @@ virtual unsigned int Release() = 0;
 
 The resulting reference count.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ISchedulerProxy Structure](ischedulerproxy-structure.md)<br/>

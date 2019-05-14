@@ -1,6 +1,6 @@
 ---
 title: "CD2DTextFormat Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::Create", "AFXRENDERTARGET/CD2DTextFormat::Destroy", "AFXRENDERTARGET/CD2DTextFormat::Get", "AFXRENDERTARGET/CD2DTextFormat::GetFontFamilyName", "AFXRENDERTARGET/CD2DTextFormat::GetLocaleName", "AFXRENDERTARGET/CD2DTextFormat::IsValid", "AFXRENDERTARGET/CD2DTextFormat::ReCreate", "AFXRENDERTARGET/CD2DTextFormat::m_pTextFormat"]
 helpviewer_keywords: ["CD2DTextFormat [MFC], CD2DTextFormat", "CD2DTextFormat [MFC], Create", "CD2DTextFormat [MFC], Destroy", "CD2DTextFormat [MFC], Get", "CD2DTextFormat [MFC], GetFontFamilyName", "CD2DTextFormat [MFC], GetLocaleName", "CD2DTextFormat [MFC], IsValid", "CD2DTextFormat [MFC], ReCreate", "CD2DTextFormat [MFC], m_pTextFormat"]
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
@@ -22,7 +22,7 @@ class CD2DTextFormat : public CD2DResource;
 |Name|Description|
 |----------|-----------------|
 |[CD2DTextFormat::CD2DTextFormat](#cd2dtextformat)|Constructs a CD2DTextFormat object.|
-|[CD2DTextFormat::~CD2DTextFormat](#cd2dtextformat__~cd2dtextformat)|The destructor. Called when a D2D text format object is being destroyed.|
+|[CD2DTextFormat::~CD2DTextFormat](#_dtorcd2dtextformat)|The destructor. Called when a D2D text format object is being destroyed.|
 
 ### Public Methods
 
@@ -214,6 +214,6 @@ virtual HRESULT ReCreate(CRenderTarget* */);
 
 If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -205,7 +205,7 @@ void RemoveAllAces() throw();
 
 Removes every `ACE` structure (if any) in the `CSacl` object.
 
-## See Also
+## See also
 
 [CAcl Class](../../atl/reference/cacl-class.md)<br/>
 [ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>

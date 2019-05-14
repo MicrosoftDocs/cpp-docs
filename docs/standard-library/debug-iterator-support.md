@@ -151,11 +151,12 @@ struct derived : base {
    ~derived() {}
 };
 
-int main() {
-  auto vect = std::vector<int>(10);
-  auto sink = new auto(std::begin(vect));
-  ::operator delete(sink); // frees the memory without calling ~iterator()
-} // access violation
+ int main() {
+   std::vector<int> vect( 10 );
+   base * pb = new derived( vect.begin() );
+   delete pb;  // doesn't call ~derived()
+   // access violation
+}
 ```
 
 ## See also

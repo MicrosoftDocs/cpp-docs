@@ -125,7 +125,7 @@ The `CMFCToolBarButton` class is the base class for other toolbar button classes
 
 ## Example
 
-The following example demonstrates how to configure a `CMFCToolBarButton` object by using various methods in the `CMFCToolBarButton` class. The example illustrates how to enable the mouse and keyboard input, set the image index of the button, set the bounding rectangle of the button, and make the button visible. This code snippet is part of the [Tab Control sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure a `CMFCToolBarButton` object by using various methods in the `CMFCToolBarButton` class. The example illustrates how to enable the mouse and keyboard input, set the image index of the button, set the bounding rectangle of the button, and make the button visible. This code snippet is part of the [Tab Control sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_TabControl#2](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_2.cpp)]
@@ -305,7 +305,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 
 ### Remarks
 
-This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.
+This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](/windows/desktop/api/winuser/nf-winuser-enablewindow) in the Windows SDK.
 
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton
 
@@ -1589,7 +1589,7 @@ Use the [CMFCToolBarButton::SetVisible](#setvisible) method to set the general v
 
 This method calls the [CMFCToolBarButton::OnShow](#onshow) method after it updates the visibility state of the button.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

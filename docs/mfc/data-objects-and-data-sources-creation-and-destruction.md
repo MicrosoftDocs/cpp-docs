@@ -50,7 +50,7 @@ Data sources are created when an application needs to copy data to the Clipboard
 
 1. If this is a **Cut** operation or `DoDragDrop` returns **DROPEFFECT_MOVE**, the data selected in step 1 is deleted from the document.
 
-This scenario is implemented by the MFC OLE samples [OCLIENT](../visual-cpp-samples.md) and [HIERSVR](../visual-cpp-samples.md). Look at the source for each application's `CView`-derived class for all but the `GetClipboardData` and `OnGetClipboardData` functions. These two functions are in either the `COleClientItem` or `COleServerItem`-derived class implementations. These sample programs provide a good example of how to implement these concepts.
+This scenario is implemented by the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md). Look at the source for each application's `CView`-derived class for all but the `GetClipboardData` and `OnGetClipboardData` functions. These two functions are in either the `COleClientItem` or `COleServerItem`-derived class implementations. These sample programs provide a good example of how to implement these concepts.
 
 One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md) article.
 
@@ -64,7 +64,7 @@ If you have not handed your data source to OLE, then you are responsible for des
 
 For more information, see [Drag and Drop](../mfc/drag-and-drop-ole.md), [Clipboard](../mfc/clipboard.md), and [Manipulating Data Objects and Data Sources](../mfc/data-objects-and-data-sources-manipulation.md).
 
-## See Also
+## See also
 
 [Data Objects and Data Sources (OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>

@@ -74,7 +74,7 @@ where `MyDlg` is the **Short name** entered in the wizard's **Names** page.
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|
 |Using dialog boxes in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|
-|Dialog boxes|[Dialog Boxes](https://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|
+|Dialog boxes|[Dialog Boxes](/windows/desktop/dlgbox/dialog-boxes) and subsequent topics in the Windows SDK|
 
 ## Requirements
 
@@ -101,7 +101,7 @@ HWND Create(
 [in] The handle to the owner window.
 
 **RECT&** *rect*
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the dialog's size and position.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -179,7 +179,7 @@ INT_PTR DoModal(
 ### Parameters
 
 *hWndParent*<br/>
-[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 function.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -245,7 +245,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure.md) structure that is to receive the client coordinates of the update that encloses the update region.
+Points to a `CRect` object or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that is to receive the client coordinates of the update that encloses the update region.
 
 ### Return Value
 
@@ -306,7 +306,7 @@ The window procedure.
 
 After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.
 
-## See Also
+## See also
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

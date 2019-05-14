@@ -11,7 +11,9 @@ A macro that indicates the maximum number of bytes in a multibyte character for 
 
 ## Syntax
 
-`#include <stdlib.h>`
+```
+#include <stdlib.h>
+```
 
 ## Remarks
 
@@ -19,7 +21,7 @@ Context: ANSI multibyte- and wide-character conversion functions
 
 The value of `MB_CUR_MAX` is the maximum number of bytes in a multibyte character for the current locale.
 
-## See Also
+## See also
 
 [_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 1) C4556"
 ms.date: "08/27/2018"
-f1_keywords: ["xml", "C4556"]
+f1_keywords: ["C4556"]
 helpviewer_keywords: ["C4556"]
 ms.assetid: e4c0e296-b747-4db1-9608-30b8b74feac2
 ---

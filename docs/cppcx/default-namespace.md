@@ -44,6 +44,6 @@ All built-in types inherit the following members.
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

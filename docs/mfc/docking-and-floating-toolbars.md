@@ -27,7 +27,7 @@ Other topics covered in this article include:
 
 - [Setting wrap positions for a fixed-style toolbar](#_core_setting_wrap_positions_for_a_fixed_style_toolbar)
 
-See the MFC General sample [DOCKTOOL](../visual-cpp-samples.md) for examples.
+See the MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) for examples.
 
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> Enabling Docking in a Frame Window
 
@@ -81,7 +81,7 @@ For a toolbar with the size fixed style, designate toolbar button indexes at whi
 
 [!code-cpp[NVC_MFCDocViewSDI#10](../mfc/codesnippet/cpp/docking-and-floating-toolbars_1.cpp)]
 
-The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.
+The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) shows how to use member functions of classes [CControlBar](../mfc/reference/ccontrolbar-class.md) and [CToolBar](../mfc/reference/ctoolbar-class.md) to manage dynamic layout of a toolbar. See the file EDITBAR.CPP in DOCKTOOL.
 
 ### What do you want to know more about
 
@@ -91,7 +91,6 @@ The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) shows how to use mem
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

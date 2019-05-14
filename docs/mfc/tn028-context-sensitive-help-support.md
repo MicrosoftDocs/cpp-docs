@@ -140,7 +140,7 @@ HID_MY_COMMAND    0x10096
 
 This format is compatible with the Help compiler's facility, which maps context IDs (the numbers on the right side) with topic names (the symbols on the left side).
 
-The source code for MAKEHM is available in the MFC Programming Utilities sample [MAKEHM](../visual-cpp-samples.md).
+The source code for MAKEHM is available in the MFC Programming Utilities sample [MAKEHM](../overview/visual-cpp-samples.md).
 
 ## Adding Help Support After Running the MFC Application Wizard
 
@@ -168,8 +168,7 @@ In the first case, the default for nIDHelp is 0, which indicates no Help for thi
 
 In the second case, the default value for nIDHelp is -1, which indicates the Help ID is the same as nIDPrompt. Help will work only if the application is Help-enabled, of course). You should provide 0 for nIDHelp if you wish that the message box have no help support. Should you want the message to be Help enabled, but desire a different help ID than nIDPrompt, simply provide a positive value for nIDHelp different from that of nIDPrompt.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

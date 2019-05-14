@@ -81,6 +81,6 @@ In native: intarr: 100, 200
 In managed: intarr: 300, 400
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

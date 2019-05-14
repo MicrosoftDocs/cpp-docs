@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedCompareExchange Intrinsic Functions"
-ms.date: "11/04/2016"
+ms.date: "12/17/2018" 
 f1_keywords: ["_InterlockedCompareExchange_HLERelease", "_InterlockedCompareExchange8_nf", "_InterlockedCompareExchange16_acq_cpp", "_InterlockedCompareExchange_acq_cpp", "_InterlockedCompareExchange16_rel_cpp", "_InterlockedCompareExchange64_rel_cpp", "_InterlockedCompareExchange_cpp", "_InterlockedCompareExchange16_cpp", "_InterlockedCompareExchange64_acq_cpp", "_InterlockedCompareExchange_acq", "_InterlockedCompareExchange64_rel", "_InterlockedCompareExchange64_nf", "_InterlockedCompareExchange_rel_cpp", "_InterlockedCompareExchange16_nf", "_InterlockedCompareExchange8", "_InterlockedCompareExchange64_np", "_InterlockedCompareExchange16_rel", "_InterlockedCompareExchange64_acq", "_InterlockedCompareExchange8_rel", "_InterlockedCompareExchange_HLEAcquire", "_InterlockedCompareExchange64_HLERelease", "_InterlockedCompareExchange64_cpp", "_InterlockedCompareExchange_np", "_InterlockedCompareExchange8_acq", "_InterlockedCompareExchange16_acq", "_InterlockedCompareExchange_rel", "_InterlockedCompareExchange64_HLEAcquire", "_InterlockedCompareExchange64", "_InterlockedCompareExchange16", "_InterlockedCompareExchange"]
 helpviewer_keywords: ["_InterlockedCompareExchange16 intrinsic", "_InterlockedCompareExchange_acq intrinsic", "InterlockedCompareExchange_acq intrinsic", "_InterlockedCompareExchange intrinsic", "InterlockedCompareExchange64 intrinsic", "_InterlockedCompareExchange64_acq intrinsic", "InterlockedCompareExchange16 intrinsic", "_InterlockedCompareExchange_rel intrinsic", "InterlockedCompareExchange intrinsic", "InterlockedCompareExchange64_acq intrinsic", "InterlockedCompareExchange_rel intrinsic", "_InterlockedCompareExchange64 intrinsic", "InterlockedCompareExchange64_rel intrinsic", "_InterlockedCompareExchange64_rel intrinsic"]
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
@@ -154,7 +154,7 @@ The return value is the initial value of the `Destination` pointer.
 
 `_InterlockedCompareExchange` performs an atomic comparison of the `Destination` value with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, no operation is performed.
 
-`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/desktop/api/winbase/nf-winbase-interlockedcompareexchange) function.
+`_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) function.
 
 There are several variations on `_InterlockedCompareExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics is used.
 
@@ -383,10 +383,10 @@ int main(
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
 [_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

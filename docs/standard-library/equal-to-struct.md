@@ -1,7 +1,7 @@
 ---
 title: "equal_to Struct"
 ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::equal_to"]
+f1_keywords: ["functional/std::equal_to"]
 helpviewer_keywords: ["equal_to function", "equal_to struct"]
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
 ---
@@ -106,4 +106,3 @@ The vector v2 = ( -0 1 -4 5 -8 9 )
 The result of the element-wise equal_to comparison
 between v1 & v2 is: ( 1 1 0 1 0 1 )
 ```
-

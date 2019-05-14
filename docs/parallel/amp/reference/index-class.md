@@ -1,6 +1,6 @@
 ---
 title: "index Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]
 helpviewer_keywords: ["index structure"]
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
@@ -27,14 +27,14 @@ The rank, or number of dimensions.
 
 |Name|Description|
 |----------|-----------------|
-|[index Constructor](#ctor)|Initializes a new instance of the `index` class.|
+|[index Constructor](#index_ctor)|Initializes a new instance of the `index` class.|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
 |[operator--](#operator--)|Decrements each element of the `index` object.|
-|[operator(mod)=](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|
+|[operator%=](#operator_mod_eq)|Calculates the modulus (remainder) of each element in the `index` object when that element is divided by a number.|
 |[operator*=](#operator_star_eq)|Multiplies each element of the `index` object by a number.|
 |[operator/=](#operator_div_eq)|Divides each element of the `index` object by a number.|
 |[index::operator\[\]](#operator_at)|Returns the element that's at the specified index.|
@@ -129,7 +129,7 @@ index operator--(
 
 For the prefix operator, the index object (*this). For the suffix operator, a new index object.
 
-## <a name="operator_mod_eq"></a>  operator(mod)=
+## <a name="operator_mod_eq"></a>  operator%=
 
 Calculates the modulus (remainder) of each element in the index object when that element is divided by the specified number.
 
@@ -293,6 +293,6 @@ The index object.
 static const int rank = _Rank;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

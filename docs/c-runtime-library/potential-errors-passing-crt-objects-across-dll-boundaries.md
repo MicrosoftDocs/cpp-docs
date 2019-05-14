@@ -16,7 +16,7 @@ HEAP[]: Invalid Address specified to RtlValidateHeap(#,#)
 
 ## Causes
 
-Each copy of the CRT library has a separate and distinct state, kept in thread local storage by your app or DLL. As such, CRT objects such as file handles, environment variables, and locales are only valid for the copy of the CRT in the app or DLL where these objects are allocated or set. When a DLL and its app clients use different copies of the CRT library, you cannot pass these CRT objects across the DLL boundary and expect them to be picked up correctly on the other side. This is particularly true of CRT versions before the Universal CRT in Visual Studio 2015 and later. There was a version-specific CRT library for every version of Visual Studio built with Visual C++ 2013 or earlier. Internal implementation details of the CRT, for example, its data structures and naming conventions, were different in each version. Dynamically linking code compiled for one version of the CRT to a different version of the CRT DLL has never been supported, though occasionally it would work, more by luck than by design.
+Each copy of the CRT library has a separate and distinct state, kept in thread local storage by your app or DLL. As such, CRT objects such as file handles, environment variables, and locales are only valid for the copy of the CRT in the app or DLL where these objects are allocated or set. When a DLL and its app clients use different copies of the CRT library, you cannot pass these CRT objects across the DLL boundary and expect them to be picked up correctly on the other side. This is particularly true of CRT versions before the Universal CRT in Visual Studio 2015 and later. There was a version-specific CRT library for every version of Visual Studio built with Visual Studio 2013 or earlier. Internal implementation details of the CRT, for example, its data structures and naming conventions, were different in each version. Dynamically linking code compiled for one version of the CRT to a different version of the CRT DLL has never been supported, though occasionally it would work, more by luck than by design.
 
 Also, because each copy of the CRT library has its own heap manager, allocating memory in one CRT library and passing the pointer across a DLL boundary to be freed by a different copy of the CRT library is a potential cause for heap corruption. If you design your DLL so that it passes CRT objects across the boundary or allocates memory and expects it to be freed outside the DLL, you restrict the app clients of the DLL to use the same copy of the CRT library as the DLL. The DLL and its clients normally use the same copy of the CRT library only if both are linked at load time to the same version of the CRT DLL. Because the DLL version of the Universal CRT library used by Visual Studio 2015 and later on Windows 10 is now a centrally deployed Windows component, ucrtbase.dll, it is the same for apps built with Visual Studio 2015 and later versions. However, even when the CRT code is identical, you can't hand off memory allocated in one heap to a component that uses a different heap.
 
@@ -115,6 +115,6 @@ If both the DLL and .exe file are built with /MD so that only one copy of the CR
 New MYLIB variable is: c:\mylib;c:\yourlib
 ```
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

@@ -25,11 +25,11 @@ Unless you plan to explicitly call `_pexit`, you do not need to provide a protot
 void __declspec(naked) __cdecl _pexit( void );
 ```
 
-`_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](../../build/reference/gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.
+`_pexit` is similar to `_penter`; see [/Gh (Enable _penter Hook Function)](gh-enable-penter-hook-function.md) for an example of how to write a `_pexit` function.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -41,7 +41,7 @@ void __declspec(naked) __cdecl _pexit( void );
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

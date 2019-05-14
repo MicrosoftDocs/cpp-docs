@@ -10,7 +10,7 @@ ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
 
 If the same virtual function is declared in two or more [interfaces](../cpp/interface.md) and if a class is derived from these interfaces, you can explicitly override each virtual function.
 
-For information on explicit overrides in managed code using the new managed syntax, see [Explicit Overrides](../windows/explicit-overrides-cpp-component-extensions.md).
+For information on explicit overrides in managed code using C++/CLI, see [Explicit Overrides](../extensions/explicit-overrides-cpp-component-extensions.md).
 
 **END Microsoft Specific**
 

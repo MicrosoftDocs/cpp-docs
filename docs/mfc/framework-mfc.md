@@ -34,6 +34,6 @@ Encapsulation means that the C++ class `CWnd`, for example, contains a member va
 
 [Window Objects](../mfc/window-objects.md)
 
-## See Also
+## See also
 
 [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md)

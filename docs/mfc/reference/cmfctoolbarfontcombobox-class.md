@@ -128,7 +128,7 @@ Usually, `CMFCToolBarFontComboBox` objects store the list of available fonts in 
 
 ### Example
 
-The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCToolBarFontComboBox` object. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#7](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontcombobox-class_1.cpp)]
 
@@ -191,7 +191,7 @@ Nonzero if the font was selected successfully; otherwise 0.
 
 If *bExact* is TRUE, this method selects a font that exactly matches the name that you specified as *lpszName*. If *bExact* is FALSE, this method selects a font that starts with the text specified as *lpszName* and that uses the character set that you specified as *nCharSet*. If *nCharSet* is set to DEFAULT_CHARSET, the character set will be ignored and only *lpszName* will be used to select a font.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -201,4 +201,3 @@ If *bExact* is TRUE, this method selects a font that exactly matches the name th
 [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

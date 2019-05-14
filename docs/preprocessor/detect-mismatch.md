@@ -11,7 +11,7 @@ Places a record in an object. The linker checks these records for potential mism
 ## Syntax
 
 ```
-#pragma detect_mismatch( "name", "value"))
+#pragma detect_mismatch("name", "value")
 ```
 
 ## Remarks
@@ -38,6 +38,6 @@ int main ()
 
 If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error `LNK2038`.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

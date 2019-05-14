@@ -40,13 +40,13 @@ The low 64 bits of the product.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_umul128`|ARM, x64|\<intrin.h>|
+|`_umul128`|x64|\<intrin.h>|
 
 ## Example
 
 ```
 // umul128.c
-// processor: IPF, x64
+// processor: x64
 
 #include <stdio.h>
 #include <intrin.h>
@@ -71,6 +71,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

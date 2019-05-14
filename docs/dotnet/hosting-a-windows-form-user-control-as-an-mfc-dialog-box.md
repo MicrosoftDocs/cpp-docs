@@ -125,7 +125,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 1. Build and run the project.
 
-## See Also
+## See also
 
 <xref:System.Windows.Forms.UserControl?displayProperty=fullName>
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)

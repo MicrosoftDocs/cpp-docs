@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Putting Controls On Toolbars"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["Customize dialog box, adding controls", "toolbars [MFC], adding controls"]
 ms.assetid: 8fc94bdf-0da7-45d9-8bc4-52b7b1edf205
 ---
@@ -90,7 +90,7 @@ To add the combo box button to the toolbar, follow these steps:
 
 In the customization handler `OnViewCustomize`, call [CMFCToolBarsCustomizeDialog::ReplaceButton](../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) to replace the **Find** button (that is, the button with the command ID `ID_EDIT_FIND`) with a `CFindComboButton` object.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../mfc/hierarchy-chart.md)<br/>
 [Classes](../mfc/reference/mfc-classes.md)<br/>

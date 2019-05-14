@@ -1,6 +1,6 @@
 ---
 title: "Extension DLLs: Overview"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["AFXDLL library", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "extension DLLs [C++], about MFC extension DLLs"]
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
 ---
@@ -12,26 +12,24 @@ Extension DLLs can also be used for passing MFC-derived objects between the appl
 
 For an example of a DLL that fulfills the basic requirements of an MFC extension DLL, see the MFC sample [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk). In particular, look at the Testdll1.cpp and Testdll2.cpp files.
 
-Note that the term AFXDLL is no longer used in the Visual C++ documentation. An MFC extension DLL has the same characteristics as the former AFXDLL.
-
 ## What do you want to do?
 
-- [Initialize an MFC extension DLL](../build/run-time-library-behavior.md#initializing-extension-dlls)
+- [Initialize an MFC extension DLL](run-time-library-behavior.md#initializing-extension-dlls)
 
 ## What do you want to know more about?
 
-- [MFC extension DLLs](../build/extension-dlls.md)
+- [MFC extension DLLs](extension-dlls.md)
 
-- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-- [Non-MFC DLLs: Overview](../build/non-mfc-dlls-overview.md)
+- [Non-MFC DLLs: Overview](non-mfc-dlls-overview.md)
 
-- [Regular MFC DLLs statically linked to MFC](../build/regular-dlls-statically-linked-to-mfc.md)
+- [Regular MFC DLLs statically linked to MFC](regular-dlls-statically-linked-to-mfc.md)
 
-- [Regular MFC DLLs dynamically linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs dynamically linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
 - [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)
 
-## See Also
+## See also
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](kinds-of-dlls.md)

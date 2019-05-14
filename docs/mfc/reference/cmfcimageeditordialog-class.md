@@ -1,6 +1,6 @@
 ---
 title: "CMFCImageEditorDialog Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog"]
 helpviewer_keywords: ["CMFCImageEditorDialog [MFC], CMFCImageEditorDialog"]
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
@@ -37,7 +37,7 @@ The `CMFCImageEditorDialog` class provides a dialog box that includes:
 
 The following illustration shows an image editor dialog box.
 
-![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png "imageedit")
+![CMFCImageEditorDialog dialog box](../../mfc/reference/media/imageedit.png "CMFCImageEditorDialog dialog box")
 
 One way to use a `CMFCImageEditorDialog` object is to pass it a `CBitmap` image to be edited. Do not create a large image because the image editing area has a limited size and the logical pixel size is adjusted to fit the area. Call the `DoModal` method to start a modal dialog box.
 
@@ -89,12 +89,12 @@ To modify an image, pass an image pointer to the `CMFCImageEditorDialog` constru
 
 ### Example
 
-The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an object of the `CMFCImageEditorDialog` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#8](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_1.cpp)]
 [!code-cpp[NVC_MFC_NewControls#40](../../mfc/reference/codesnippet/cpp/cmfcimageeditordialog-class_2.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

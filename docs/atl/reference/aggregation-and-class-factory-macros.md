@@ -360,6 +360,6 @@ DECLARE_VIEW_STATUS( statusFlags )
 
 [!code-cpp[NVC_ATL_Windowing#126](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_9.h)]
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

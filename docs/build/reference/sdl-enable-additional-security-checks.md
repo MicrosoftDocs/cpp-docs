@@ -1,6 +1,6 @@
 ---
 title: "/sdl (Enable Additional Security Checks)"
-ms.date: "11/04/2016"
+ms.date: "11/26/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SDLCheck"]
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
 ---
@@ -16,7 +16,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 
 ## Remarks
 
-**/sdl** enables a superset of the baseline security checks provided by [/GS](../../build/reference/gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
+**/sdl** enables a superset of the baseline security checks provided by [/GS](gs-buffer-security-check.md) and overrides **/GS-**. By default, **/sdl** is off. **/sdl-** disables the additional security checks.
 
 ## Compile-time Checks
 
@@ -42,7 +42,17 @@ When **/sdl** is enabled, the compiler generates code to perform these checks at
 
 - Performs limited pointer sanitization. In expressions that do not involve dereferences and in types that have no user-defined destructor, pointer references are set to a non-valid address after a call to `delete`. This helps to prevent the reuse of stale pointer references.
 
-- Performs class member initialization. Automatically initializes all class members to zero on object instantiation (before the constructor runs). This helps prevent the use of uninitialized data associated with class members that the constructor does not explicitly initialize.
+- Performs class member pointer initialization. Automatically initializes class members of pointer type to **nullptr** on object instantiation (before the constructor runs). This helps prevent the use of uninitialized pointers that the constructor does not explicitly initialize. The compiler-generated member pointer initialization is called as long as:
+
+  - The object is not allocated using a custom (user defined) `operator new`
+
+  - The object is not allocated as part of an array (for example `new A[x]`)
+
+  - The class is not managed or imported
+
+  - The class has a user-defined default constructor.
+
+  To be initialized by the compiler-generated class initialization function, a member must be a pointer, and not a property or constant.
 
 ## Remarks
 
@@ -50,13 +60,13 @@ For more information, see [Warnings, /sdl, and improving uninitialized variable 
 
 #### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **C/C++** folder.
 
 1. On the **General** page, select the option from the **SDL checks** drop-down list.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

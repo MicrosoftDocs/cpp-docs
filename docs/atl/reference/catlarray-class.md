@@ -520,11 +520,11 @@ Replaces the value of the element pointed to by the index. If *iElement* is larg
 
 [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]
 
-## See Also
+## See also
 
-[MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
-[DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
-[UpdatePV Sample](../../visual-cpp-samples.md)<br/>
-[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[MMXSwarm Sample](../../overview/visual-cpp-samples.md)<br/>
+[DynamicConsumer Sample](../../overview/visual-cpp-samples.md)<br/>
+[UpdatePV Sample](../../overview/visual-cpp-samples.md)<br/>
+[Marquee Sample](../../overview/visual-cpp-samples.md)<br/>
 [CArray Class](../../mfc/reference/carray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

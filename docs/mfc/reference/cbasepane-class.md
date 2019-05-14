@@ -174,7 +174,7 @@ The following customization tips pertain to the `CBasePane Class` and any classe
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CBasePane` class. The example demonstrates how to retrieve a pane from the `CFrameWndEx` class and how to set the docking mode, the pane alignment, and the pane style. The code is from the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CBasePane` class. The example demonstrates how to retrieve a pane from the `CFrameWndEx` class and how to set the docking mode, the pane alignment, and the pane style. The code is from the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#2](../../mfc/reference/codesnippet/cpp/cbasepane-class_1.cpp)]
 
@@ -1398,7 +1398,7 @@ A handle to a deferred window position structure, or NULL.
 
 ### Remarks
 
-If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.
+If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) or by storing the return value of a previous call to this method.
 
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent
 
@@ -1846,7 +1846,7 @@ Call this method to manipulate the pane state or exclude the pane from the docki
 
 If you want to continue to use this pane, call either [CBasePane::DockPane](#dockpane) or [CBasePane::FloatPane](#floatpane) before calling this method.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

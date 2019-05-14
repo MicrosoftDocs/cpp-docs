@@ -13,9 +13,9 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |Interface|Required?|Implemented by OLE DB templates?|
 |---------------|---------------|--------------------------------------|
 |[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|
-|[ITransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms723053(v=vs.85))|Mandatory|No|
-|[ISupportErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms715816(v=vs.85))|Optional|No|
+|[ITransaction](/previous-versions/windows/desktop/ms723053(v=vs.85))|Mandatory|No|
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816(v=vs.85))|Optional|No|
 
-## See Also
+## See also
 
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

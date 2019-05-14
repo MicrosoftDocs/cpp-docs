@@ -1,6 +1,6 @@
 ---
 title: "ICommandSource Interface"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["ICommandSource", "AFXWINFORMS/ICommandSource", "AFXWINFORMS/ICommandSource::AddCommandHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::AddCommandUIHandler", "AFXWINFORMS/ICommandSource::PostCommand", "AFXWINFORMS/ICommandSource::RemoveCommandHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::RemoveCommandUIHandler", "AFXWINFORMS/ICommandSource::SendCommand"]
 helpviewer_keywords: ["ICommandSource interface [MFC]"]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
@@ -160,7 +160,7 @@ The command ID.
 
 This method removes the command handler mapped to cmdID from the command source object.
 
-## <a name="removecommandrangecommandhandler"></a> ICommandSource::RemoveCommandRangeHandler
+## <a name="removecommandrangehandler"></a> ICommandSource::RemoveCommandRangeHandler
 
 Removes a group of command handlers from a command source object.
 ```
@@ -177,7 +177,7 @@ The beginning index of the command ID range.
 The ending index of the command ID range.
 ### Remarks
 
-This method removes a group of message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
+This method removes a group of message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
 
 ## <a name="removecommandrangeuihandler"></a> ICommandSource::RemoveCommandRangeUIHandler
 
@@ -196,7 +196,7 @@ The beginning index of the command ID range.
 The ending index of the command ID range.
 ### Remarks
 
-This method removes a group of user interface command message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
+This method removes a group of user interface command message handlers, mapped to the command IDs specified by cmdIDMin and cmdIDMax, from the command source object.
 
 ## <a name="removecommanduihandler"></a> ICommandSource::RemoveCommandUIHandler
 
@@ -227,7 +227,7 @@ The command ID of the message to be sent.
 ### Remarks
 
 This method synchronously sends the message mapped to the ID specified by command. It calls CWnd::SendMessage to place the message in the window's message queue and waits until that window procedure has processed the message before returning.
-## See Also
+## See also
 
 [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandTarget Interface](../../mfc/reference/icommandtarget-interface.md)

@@ -13,7 +13,7 @@ This topic lists options for additional features for your application, such as H
 
    Generates a set of help files for context-sensitive help, available by using F1 and a Help menu, or by clicking a **Help** button on a dialog box. Help support requires the help compiler. If you do not have the help compiler, you can install it by rerunning Setup.
 
-   See [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) and [Help Files (HTML Help)](../../ide/help-files-html-help.md) for more information.
+   See [HTML Help: Context-Sensitive Help for Your Programs](../../mfc/html-help-context-sensitive-help-for-your-programs.md) and [Help Files (HTML Help)](../../build/reference/help-files-html-help.md) for more information.
 
 - **Printing and print preview**
 
@@ -49,7 +49,7 @@ This topic lists options for additional features for your application, such as H
 
 - **Support Restart Manager**
 
-   Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](https://msdn.microsoft.com/vstudio/ee886407).
+   Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100)).
 
 - **Advanced frame panes**
 
@@ -65,7 +65,6 @@ This topic lists options for additional features for your application, such as H
 
    Specifies the number of files to be listed on the most recently used list. The default number is 4.
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)
-

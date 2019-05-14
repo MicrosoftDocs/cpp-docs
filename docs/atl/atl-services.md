@@ -1,7 +1,6 @@
 ---
 title: "ATL Services"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule"]
 helpviewer_keywords: ["CServiceModule class", "COM objects, ATL", "services, ATL", "ATL services"]
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
 ---
@@ -35,7 +34,6 @@ The last three topics discuss concepts related to developing a service:
 
 - [Debugging Tips](../atl/debugging-tips.md) for ATL services
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

@@ -429,7 +429,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 ### Parameters
 
 *ppFont*<br/>
-A pointer to the container's ambient [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.
+A pointer to the container's ambient [IFontDisp](/windows/desktop/api/ocidl/nn-ocidl-ifontdisp) dispatch interface.
 
 ### Return Value
 
@@ -1465,7 +1465,7 @@ Returns TRUE if the control successfully receives focus; otherwise, FALSE.
 
 ### Remarks
 
-For a windowed control, the Windows API function [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
+For a windowed control, the Windows API function [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
 
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty
 
@@ -1484,7 +1484,7 @@ Value of the data member [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 `SetDirty(TRUE)` should be called to flag that the control has changed since it was last saved. The value of `m_bRequiresSave` is retrieved with [CComControlBase::GetDirty](#getdirty).
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

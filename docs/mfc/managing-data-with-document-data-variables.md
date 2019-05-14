@@ -16,7 +16,6 @@ Your views access the document object by using the view's pointer to the documen
 
 If frequent data transfer requires direct access, or you wish to use the nonpublic members of the document class, you may want to make your view class a friend (in C++ terms) of the document class.
 
-## See Also
+## See also
 
 [Using Documents](../mfc/using-documents.md)
-

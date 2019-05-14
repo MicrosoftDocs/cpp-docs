@@ -42,6 +42,6 @@ Use these routines to allocate, free, and reallocate memory.
 |[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Enable error-handling mechanism when **new** operator fails (to allocate memory) and enable compilation of C++ Standard Libraries|
 |[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|Set new handler mode for **malloc**|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

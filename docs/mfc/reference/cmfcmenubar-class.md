@@ -83,7 +83,7 @@ To use a `CMFCMenuBar` object, embed it in the main window frame object. When pr
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCMenuBar` class. The example shows how to set the style of the pane, enable the customize button, enable a Help box, enable shadows for pop-up menus, and update the menu bar. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCMenuBar` class. The example shows how to set the style of the pane, enable the customize button, enable a Help box, enable shadows for pop-up menus, and update the menu bar. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#3](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_2.cpp)]
@@ -283,11 +283,11 @@ Nonzero if the method is successful; otherwise 0.
 
 You should use this function instead of [CMFCMenuBar::Create](#create) when you want to specify styles in addition to the toolbar style. Some frequently used additional styles are TBSTYLE_TRANSPARENT and CBRS_TOP.
 
-For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600).
+For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](/windows/desktop/winmsg/window-styles).
 
 ### Example
 
-The following example demonstrates how to use the `CreateEx` method of the `CMFCMenuBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `CreateEx` method of the `CMFCMenuBar` class. This code snippet is part of the [IE Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_IEDemo#1](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_1.h)]
 [!code-cpp[NVC_MFC_IEDemo#2](../../mfc/reference/codesnippet/cpp/cmfcmenubar-class_3.cpp)]
@@ -974,7 +974,7 @@ static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 
 If a menu does not display all the menu commands, it hides the commands that are rarely used. For more information about displaying menu commands, see [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

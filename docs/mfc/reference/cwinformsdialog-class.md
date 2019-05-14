@@ -1,6 +1,6 @@
 ---
 title: "CWinFormsDialog Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::GetControl", "AFXWINFORMS/CWinFormsDialog::GetControlHandle", "AFXWINFORMS/CWinFormsDialog::OnInitDialog"]
 helpviewer_keywords: ["CWinFormsDialog [MFC], CWinFormsDialog", "CWinFormsDialog [MFC], GetControl", "CWinFormsDialog [MFC], GetControlHandle", "CWinFormsDialog [MFC], OnInitDialog"]
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
@@ -43,7 +43,7 @@ The .NET Framework user control to be displayed in the MFC application.
 |Name||
 |----------|-|
 |[CWinFormsDialog::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.|
-|[CWinFormsDialog::operator TManagedControl^](#operator_tmanagedcontrol)|Casts a type as a reference to a Windows Forms user control.|
+|[CWinFormsDialog::operator TManagedControl^](#operator-tmanagedcontrol-hat)|Casts a type as a reference to a Windows Forms user control.|
 
 ## Remarks
 
@@ -124,7 +124,7 @@ This operator provides a convenient syntax that replaces `GetControl` in express
 
 For information on using Windows Forms, see [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl^
+##  <a name="operator-tmanagedcontrol-hat"></a>  CWinFormsDialog::operator TManagedControl^
 
 Casts a type as a reference to a Windows Forms user control.
 
@@ -136,7 +136,7 @@ inline operator TManagedControl^() const throw();
 
 This operator casts a type as a reference to a Windows Forms control. It is used to pass a `CWinFormsDialog<TManagedControl>` dialog box to functions that accept a pointer to a Windows Forms user control object.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)<br/>

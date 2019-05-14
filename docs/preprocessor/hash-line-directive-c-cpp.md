@@ -41,6 +41,6 @@ In this example, the macro `ASSERT` uses the predefined macros `__LINE__` and `_
 __LINE__, __FILE__ );}
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

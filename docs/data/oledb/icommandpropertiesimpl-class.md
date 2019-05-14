@@ -7,7 +7,7 @@ ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
 ---
 # ICommandPropertiesImpl Class
 
-Provides an implementation of the [ICommandProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723044(v=vs.85)) interface.
+Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) interface.
 
 ## Syntax
 
@@ -57,7 +57,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 #### Parameters
 
-See [ICommandProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723119(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
@@ -76,9 +76,9 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### Parameters
 
-See [ICommandProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms711497(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

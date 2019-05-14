@@ -98,7 +98,7 @@ The data type of the control to be created. Must be a [Type](https://msdn.micros
 The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.
 
 *rect*<br/>
-A [RECT Structure](../../mfc/reference/rect-structure1.md) that defines the coordinates of the upper-left and lower-right corners of the control (first overload only).
+A [RECT Structure](/windows/desktop/api/windef/ns-windef-tagrect) that defines the coordinates of the upper-left and lower-right corners of the control (first overload only).
 
 *nPlaceHolderID*<br/>
 The handle of the static place holder control placed in the Resource Editor. The newly created Windows Forms control replaces the static control, assuming its position, z-order, and styles (second overload only).
@@ -200,7 +200,7 @@ inline operator TManagedControl^() const;
 
 This operator passes `CWinFormsControl<TManagedControl>` to functions that accept a pointer to a Windows Forms control.
 
-## See Also
+## See also
 
 [CWinFormsDialog Class](../../mfc/reference/cwinformsdialog-class.md)<br/>
 [CWinFormsView Class](../../mfc/reference/cwinformsview-class.md)

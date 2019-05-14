@@ -1,7 +1,6 @@
 ---
 title: "MBCS Programming Tips"
 ms.date: "11/04/2016"
-f1_keywords: ["_mbcs"]
 helpviewer_keywords: ["programming [C++], MBCS", "character sets [C++], multibyte", "MBCS [C++], programming", "multibyte characters [C++]"]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
 ---
@@ -23,6 +22,6 @@ In new development, you should use Unicode character encoding for all strings th
 
 - [Buffer Overflow](../text/buffer-overflow.md)
 
-## See Also
+## See also
 
 [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)

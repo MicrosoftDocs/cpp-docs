@@ -24,7 +24,7 @@ Similarly, when the multibyte code page changes, the behavior of the multibyte f
 
 The C run-time function `setlocale` sets, changes, or queries some or all of the current program's locale information. The [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) routine is a wide-character version of `setlocale`; the arguments and return values of `_wsetlocale` are wide-character strings.
 
-## See Also
+## See also
 
 [Unicode and MBCS](../text/unicode-and-mbcs.md)<br/>
 [Benefits of Character Set Portability](../text/benefits-of-character-set-portability.md)

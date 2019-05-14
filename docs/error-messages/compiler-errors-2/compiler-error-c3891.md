@@ -9,7 +9,7 @@ ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
 
 'var' : a literal data member cannot be used as a l-value
 
-A [literal](../../windows/literal-cpp-component-extensions.md) variable is const, and its value cannot be changed after it is initialized in the declaration.
+A [literal](../../extensions/literal-cpp-component-extensions.md) variable is const, and its value cannot be changed after it is initialized in the declaration.
 
 The following sample generates C3891:
 

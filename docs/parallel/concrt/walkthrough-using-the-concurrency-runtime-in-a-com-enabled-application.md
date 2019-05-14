@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["Concurrency Runtime, use with COM", "COM, use with the Concurrency Runtime"]
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
 ---
@@ -145,7 +145,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc parallel-scripts.cpp /link ole32.lib**
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -154,4 +154,3 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

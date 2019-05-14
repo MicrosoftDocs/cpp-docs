@@ -110,7 +110,7 @@ The full bitmap of toolbar images managed by `CMFCToolbarImages` consists of one
 
 ## Example
 
-The following example demonstrates how to configure a `CMFCToolBarImages` object by using various methods in the `CMFCToolBarImages` class. The example shows how to set the size of the toolbar image, load an image, and set the transparent color of the image. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure a `CMFCToolBarImages` object by using various methods in the `CMFCToolBarImages` class. The example shows how to set the size of the toolbar image, load an image, and set the transparent color of the image. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#32](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#33](../../mfc/codesnippet/cpp/cmfctoolbarimages-class_2.cpp)]
@@ -1239,7 +1239,7 @@ TRUE if resize succeeds; otherwise FALSE.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

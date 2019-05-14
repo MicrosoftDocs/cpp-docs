@@ -1,6 +1,6 @@
 ---
 title: "Accessors and Rowsets"
-ms.date: "10/22/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["accessors [C++]", "OLE DB consumer templates, rowset support", "OLE DB consumer templates, accessors", "rowsets [C++], accessing", "bulk rowsets", "CAccessorRowset class, accessor types", "single rowsets", "CArrayRowset class, accessors", "CBulkRowset class, accessors", "array rowsets", "CAccessorBase class", "CRowset class, accessors and rowsets", "accessors [C++], rowsets", "rowsets [C++], supported types"]
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
 ---
@@ -14,7 +14,7 @@ All accessors derive from [CAccessorBase](../../data/oledb/caccessorbase-class.m
 
 The following figure shows the accessor types.
 
-![Accessor types](../../data/oledb/media/vcaccessortypes.gif "vcaccessortypes")<br/>
+![Accessor types](../../data/oledb/media/vcaccessortypes.gif "Accessor types")<br/>
 Accessor Classes
 
 - [CAccessor](../../data/oledb/caccessor-class.md) Use this accessor when you know the structure of the database source at design time. `CAccessor` statically binds a database record, which contains the buffer, to the data source.
@@ -43,11 +43,11 @@ The OLE DB Templates support three kinds of rowsets (see the preceding figure): 
 
 The following figure shows the rowset types.
 
-![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")<br/>
+![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "RowsetType graphic")<br/>
 Rowset Classes
 
 [Schema rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) don't access data in the data store but instead access information about the data store, called metadata. Schema rowsets are typically used in situations in which the database structure isn't known at compile time and must be obtained at run time.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

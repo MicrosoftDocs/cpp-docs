@@ -50,7 +50,7 @@ The following example demonstrates use of the `CBulkRowset` class.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Calls [IRowset::AddRefRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) to increment the reference count for all rows currently retrieved from the bulk rowset.
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) to increment the reference count for all rows currently retrieved from the bulk rowset.
 
 ### Syntax
 
@@ -149,7 +149,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### Return Value
 
-See [IRowset::GetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -180,11 +180,11 @@ A standard HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85)) in the *OLE DB Programmer's Reference*.
+Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Calls [IRowset::ReleaseRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) to decrement the reference count for all rows currently retrieved from the bulk rowset.
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) to decrement the reference count for all rows currently retrieved from the bulk rowset.
 
 ### Syntax
 
@@ -215,7 +215,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 
 If you call this function, it must be before the rowset is opened.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -6,7 +6,7 @@ ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
 ---
 # Supporting Schema Rowsets
 
-Schema rowsets allow consumers to get information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.
+Schema rowsets allow consumers to get information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.
 
 `IDBSchemaRowsetImpl` supports the following methods:
 
@@ -21,6 +21,14 @@ Schema rowsets allow consumers to get information about a data store without kno
 - [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) returns a list of schema rowsets accessible by `IDBSchemaRowsetImpl::GetRowset` (inherited from interface).
 
 ## ATL OLE DB Provider Wizard Support
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 The **ATL OLE DB Provider Wizard** creates three schema classes in the session header file:
 
@@ -43,6 +51,8 @@ You can customize these classes to handle schema information appropriate to your
 - In **C**<em>ShortName</em>**SessionTRSchemaRowset**, you must fill out the catalog, table, and description fields (`trData.m_szType`, `trData.m_szTable`, and `trData.m_szDesc`). The wizard-generated example uses only one row (table). Other providers might return more than one table.
 
 - In **C**<em>ShortName</em>**SessionColSchemaRowset**, you pass the name of the table as a `DBID`.
+
+::: moniker-end
 
 ## Setting Restrictions
 
@@ -76,7 +86,7 @@ class CUpdateSessionTRSchemaRowset :
 
 `CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the *cRestrictions* and *rgRestrictions* parameters. See the description of these parameters in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).
 
-For more information about which restrictions correspond to a particular schema rowset, see the table of schema rowset GUIDs in [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) in the **OLE DB Programmer's Reference** in the Windows SDK.
+For more information about which restrictions correspond to a particular schema rowset, see the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) in the **OLE DB Programmer's Reference** in the Windows SDK.
 
 For example, if you supported the TABLE_NAME restriction on DBSCHEMA_TABLES, you would do the following:
 
@@ -251,6 +261,6 @@ For information about how consumers can use `IDBSchemaRowset` methods, see [Obta
 
 For an example of a provider that supports schema rowsets, see the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.
 
-## See Also
+## See also
 
 [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

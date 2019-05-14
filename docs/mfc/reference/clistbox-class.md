@@ -235,7 +235,7 @@ A long pointer to a `COMPAREITEMSTRUCT` structure.
 
 ### Return Value
 
-Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) structure. It may be any of the following values:
+Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure. It may be any of the following values:
 
 |Value|Meaning|
 |-----------|-------------|
@@ -322,7 +322,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) structure that contains information about the deleted item.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item.
 
 ### Remarks
 
@@ -407,7 +407,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -666,7 +666,7 @@ int GetItemRect(
 Specifies the zero-based index of the item.
 
 *lpRect*<br/>
-Specifies a long pointer to a [RECT structure](../../mfc/reference/rect-structure1.md) that receives the list-box client coordinates of the item.
+Specifies a long pointer to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that receives the list-box client coordinates of the item.
 
 ### Return Value
 
@@ -964,7 +964,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 
@@ -1432,9 +1432,9 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

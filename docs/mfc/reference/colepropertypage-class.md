@@ -343,10 +343,10 @@ void SetPageName(LPCTSTR lpszPageName);
 *lpszPageName*<br/>
 Pointer to a string containing the property page's name.
 
-## See Also
+## See also
 
-[MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDialog Class](../../mfc/reference/cdialog-class.md)

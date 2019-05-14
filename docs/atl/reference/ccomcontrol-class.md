@@ -52,7 +52,7 @@ The base class that implements windowing functions. Defaults to [CWindowImpl](..
 
 For more information about creating a control, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md). For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).
 
-For a demonstration of `CComControl` methods and data members, see the [CIRC](../../visual-cpp-samples.md) sample.
+For a demonstration of `CComControl` methods and data members, see the [CIRC](../../overview/visual-cpp-samples.md) sample.
 
 ## Inheritance Hierarchy
 
@@ -210,7 +210,7 @@ Returns an integer value specifying one of the menu-item values listed under [Me
 
 `MessageBox` is useful both during development and as an easy way to display an error or warning message to the user.
 
-## See Also
+## See also
 
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

@@ -20,7 +20,7 @@ A text file specifying linker commands.
 
 ## Remarks
 
-See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-compiler-response-file.md) for more information.
+See [@ (Specify a Compiler Response File)](at-specify-a-compiler-response-file.md) for more information.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -30,7 +30,7 @@ See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-co
 
 - This linker option cannot be changed programmatically.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

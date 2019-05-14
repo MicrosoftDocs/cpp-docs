@@ -1,6 +1,6 @@
 ---
 title: "Porting from UNIX to Win32"
-ms.date: "08/02/2018"
+ms.date: "05/02/2019"
 helpviewer_keywords: ["APIs [C++], porting to Win32", "Windows API [C++], migrating from UNIX", "migration [C++]", "UNIX [C++], porting to Win32", "porting to Win32 [C++], from UNIX", "porting to Win32 [C++]", "Win32 applications [C++], migrating from UNIX"]
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
 ---
@@ -26,29 +26,15 @@ The [UNIX Custom Application Migration Guide](https://technet.microsoft.com/libr
 
 The [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx) supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration.
 
-### Microsoft Windows Services for UNIX (SFU)
-
-Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.
-
-[Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
-
-### InteropSystems.com
-
-[http://www.interopsystems.com/](http://www.interopsystems.com/)
-
-A third party site for a company providing software supporting porting UNIX to Win32.
-
 ### C++ Boost Web Site
 
-[http://boost.sourceforge.net/regression-logs/](http://boost.sourceforge.net/regression-logs/)
-
-[http://boost.sourceforge.net/boost-build2/](http://boost.sourceforge.net/boost-build2/)
+[https://www.boost.org/](https://www.boost.org/)
 
 ## Porting UNIX applications directly to Win32
 
 Another option is porting UNIX applications directly to Win32. Using ANSI C/C++ libraries, and commercial C compiler libraries, many of the traditional system calls relied on by UNIX applications are available in Win32 applications.
 
-The output model of **stdio**-based applications does not need to be changed, since the Win32 console APIs mimic the **stdio** model, and versions of *curses* exist that use the Win32 console APIs. For more information, see [SetConsoleCursorPosition](https://msdn.microsoft.com/library/windows/desktop/ms686025).
+The output model of **stdio**-based applications does not need to be changed, since the Win32 console APIs mimic the **stdio** model, and versions of *curses* exist that use the Win32 console APIs. For more information, see [SetConsoleCursorPosition](/windows/console/setconsolecursorposition).
 
 Berkeley socket-based applications need very few changes to work as Win32 applications. The Windows Sockets interface was designed for portability with BSD sockets, with minimal changes that are noted in the introductory sections of the WinSock specification.
 
@@ -56,7 +42,7 @@ Windows supports DCE-compliant RPC, so RPC-based applications are easily usable.
 
 One of the largest areas of difference is in the process model. UNIX has `fork`; Win32 does not. Depending on the use of `fork` and the code base, Win32 has two APIs that can be used: `CreateProcess` and `CreateThread`. A UNIX application that forks multiple copies of itself can be reworked in Win32 to have either multiple processes or a single process with multiple threads. If multiple processes are used, there are multiple methods of IPC that can be used to communicate between the processes (and perhaps to update the code and data of the new process to be like the parent, if the functionality that `fork` provides is needed). For more on IPC, see [Interprocess Communications](/windows/desktop/ipc/interprocess-communications).
 
-Windows and UNIX graphical models are very different. UNIX uses the X Window System GUI, while Windows uses GDI. Though similar in concept, there is no simple mapping of the X API to the GDI API. However, OpenGL support is available for migrating UNIX OpenGL-based applications. And there are X clients and X servers for Windows. See [Device Contexts](https://msdn.microsoft.com/library/windows/desktop/dd183553) for information on GDI.
+Windows and UNIX graphical models are very different. UNIX uses the X Window System GUI, while Windows uses GDI. Though similar in concept, there is no simple mapping of the X API to the GDI API. However, OpenGL support is available for migrating UNIX OpenGL-based applications. And there are X clients and X servers for Windows. See [Device Contexts](/windows/desktop/gdi/device-contexts) for information on GDI.
 
 Basic UNIX applications, including many CGI applications, should port easily to Visual C++ running on Windows. Functions like `open`, `fopen`, `read`, `write` and others are available in the Visual C++ run-time library. Also, there is a one-to-one mapping between C UNIX APIs and Win32 APIs: `open` to `CreateFile`, `read` to `ReadFile`, `write` to `WriteFile`, `ioctl` to `DeviceIOControl`, `close` to `CloseFile`, and so on.
 
@@ -64,8 +50,8 @@ Basic UNIX applications, including many CGI applications, should port easily to 
 
 Another option UNIX programmers look at is the Windows POSIX subsystem. However, it only supports POSIX 1003.1, which was the only POSIX version standardized when Windows NT was created. Since then, there has been little demand for extending this subsystem, because most applications have been converted to Win32. The 1003.1 system is of limited interest for fully featured applications, because it does not include many capabilities (such as those in 1003.2, network support, and so on). Full featured applications run under the Windows POSIX subsystem do not have access to Windows features available to Win32 applications, such as memory-mapped files, networking, and graphics. Applications such as VI, LS, and GREP are the main targets for the Windows POSIX subsystem.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-change-history-2003-2015.md)<br/>
 [UNIX](../c-runtime-library/unix.md)<br/>
-[Inference Rules](../build/inference-rules.md)
+[Inference Rules](../build/reference/inference-rules.md)

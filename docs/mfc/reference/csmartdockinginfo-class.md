@@ -1,6 +1,6 @@
 ---
 title: "CSmartDockingInfo Class"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 f1_keywords: ["CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID"]
 helpviewer_keywords: ["CSmartDockingInfo [MFC], CopyTo", "CSmartDockingInfo [MFC], m_bUseThemeColorInShading", "CSmartDockingInfo [MFC], m_clrBaseBackground", "CSmartDockingInfo [MFC], m_clrToneDest", "CSmartDockingInfo [MFC], m_clrToneSrc", "CSmartDockingInfo [MFC], m_clrTransparent", "CSmartDockingInfo [MFC], m_nCentralGroupOffset", "CSmartDockingInfo [MFC], m_sizeTotal", "CSmartDockingInfo [MFC], m_uiMarkerBmpResID", "CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID"]
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
@@ -47,7 +47,7 @@ class CSmartDockingInfo : public CObject
 
 The framework handles smart docking markers internally. The following illustration shows the standard smart docking markers:
 
-![Standard markers for smart docking](../../mfc/reference/media/nextsdmarkers.png "nextsdmarkers")
+![Standard markers for smart docking](../../mfc/reference/media/nextsdmarkers.png "Standard markers for smart docking")
 
 In this figure, the image on the left shows a central group smart docking marker that does not have docking to a tab enabled. The image in the middle shows a right edge smart docking marker. The image on the right shows a central group smart docking marker that does have docking to a tab enabled. The central group smart docking marker has a main bitmap and five smart docking marker bitmaps.
 
@@ -65,7 +65,7 @@ You can customize the following parameters of smart docking markers:
 
 The following illustration shows an example of smart docking markers that have been customized:
 
-![Custom markers for smart docking](../../mfc/reference/media/nextsdmarkerscustom.png "nextsdmarkerscustom")
+![Custom markers for smart docking](../../mfc/reference/media/nextsdmarkerscustom.png "Custom markers for smart docking")
 
 ## Inheritance Hierarchy
 
@@ -216,7 +216,7 @@ params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;
 params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
 ```
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -32,7 +32,7 @@ Include this interface in ATL applications that are statically linked to ATL and
 
 This interface is exposed by ATL's ActiveX control hosting objects. Derived from [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` adds a method that allows you to supplement the ambient property interface provided by ATL with one of your own.
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the type library that contains the code.
+<xref:System.Windows.Forms.AxHost> will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the type library that contains the code.
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the type library in the DLL.
 
@@ -69,6 +69,6 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 When `SetAmbientDispatch` is called with a pointer to a new interface, this new interface will be used to invoke any properties or methods asked for by the hosted control, if those properties are not already provided by [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md).
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)

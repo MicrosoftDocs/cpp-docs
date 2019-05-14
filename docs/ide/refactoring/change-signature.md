@@ -3,8 +3,8 @@ title: "Change Signature"
 ms.date: "11/16/2016"
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 ---
-
 # Change Signature
+
 **What:** Lets you modify a function's parameters.
 
 **When:** You want to re-order, add, remove, or modify a function's parameters that is currently being used in a variety of locations.
@@ -32,7 +32,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
    | Button | Description
    | ------ | ---
    | **Up/Down**    | Move the selected parameter up and down the list
-   | **Add**        | Add a new paramater to the list
+   | **Add**        | Add a new parameter to the list
    | **Remove**     | Remove the selected parameter from the list
    | **Modify**     | Modify the selected parameter by changing its type, name, and whether it is optional, and what its injected value would be
    | **Revert**     | Restore the selected parameter its original state

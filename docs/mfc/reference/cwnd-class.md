@@ -1,6 +1,6 @@
 ---
 title: "CWnd Class"
-ms.date: "08/27/2018"
+ms.date: "11/19/2018"
 f1_keywords: ["CWnd", "AFXWIN/CWnd", "AFXWIN/CWnd::CWnd", "AFXWIN/CWnd::accDoDefaultAction", "AFXWIN/CWnd::accHitTest", "AFXWIN/CWnd::accLocation", "AFXWIN/CWnd::accNavigate", "AFXWIN/CWnd::accSelect", "AFXWIN/CWnd::AnimateWindow", "AFXWIN/CWnd::ArrangeIconicWindows", "AFXWIN/CWnd::Attach", "AFXWIN/CWnd::BeginModalState", "AFXWIN/CWnd::BeginPaint", "AFXWIN/CWnd::BindDefaultProperty", "AFXWIN/CWnd::BindProperty", "AFXWIN/CWnd::BringWindowToTop", "AFXWIN/CWnd::CalcWindowRect", "AFXWIN/CWnd::CancelToolTips", "AFXWIN/CWnd::CenterWindow", "AFXWIN/CWnd::ChangeClipboardChain", "AFXWIN/CWnd::CheckDlgButton", "AFXWIN/CWnd::CheckRadioButton", "AFXWIN/CWnd::ChildWindowFromPoint", "AFXWIN/CWnd::ClientToScreen", "AFXWIN/CWnd::CloseWindow", "AFXWIN/CWnd::ContinueModal", "AFXWIN/CWnd::Create", "AFXWIN/CWnd::CreateAccessibleProxy", "AFXWIN/CWnd::CreateCaret", "AFXWIN/CWnd::CreateControl", "AFXWIN/CWnd::CreateEx", "AFXWIN/CWnd::CreateGrayCaret", "AFXWIN/CWnd::CreateSolidCaret", "AFXWIN/CWnd::DeleteTempMap", "AFXWIN/CWnd::DestroyWindow", "AFXWIN/CWnd::Detach", "AFXWIN/CWnd::DlgDirList", "AFXWIN/CWnd::DlgDirListComboBox", "AFXWIN/CWnd::DlgDirSelect", "AFXWIN/CWnd::DlgDirSelectComboBox", "AFXWIN/CWnd::DragAcceptFiles", "AFXWIN/CWnd::DragDetect", "AFXWIN/CWnd::DrawAnimatedRects", "AFXWIN/CWnd::DrawCaption", "AFXWIN/CWnd::DrawMenuBar", "AFXWIN/CWnd::EnableActiveAccessibility", "AFXWIN/CWnd::EnableDynamicLayout", "AFXWIN/CWnd::EnableD2DSupport", "AFXWIN/CWnd::EnableScrollBar", "AFXWIN/CWnd::EnableScrollBarCtrl", "AFXWIN/CWnd::EnableToolTips", "AFXWIN/CWnd::EnableTrackingToolTips", "AFXWIN/CWnd::EnableWindow", "AFXWIN/CWnd::EndModalLoop", "AFXWIN/CWnd::EndModalState", "AFXWIN/CWnd::EndPaint", "AFXWIN/CWnd::ExecuteDlgInit", "AFXWIN/CWnd::FilterToolTipMessage", "AFXWIN/CWnd::FindWindow", "AFXWIN/CWnd::FindWindowEx", "AFXWIN/CWnd::FlashWindow", "AFXWIN/CWnd::FlashWindowEx", "AFXWIN/CWnd::FromHandle", "AFXWIN/CWnd::FromHandlePermanent", "AFXWIN/CWnd::get_accChild", "AFXWIN/CWnd::get_accChildCount", "AFXWIN/CWnd::get_accDefaultAction", "AFXWIN/CWnd::get_accDescription", "AFXWIN/CWnd::get_accFocus", "AFXWIN/CWnd::get_accHelp", "AFXWIN/CWnd::get_accHelpTopic", "AFXWIN/CWnd::get_accKeyboardShortcut", "AFXWIN/CWnd::get_accName", "AFXWIN/CWnd::get_accParent", "AFXWIN/CWnd::get_accRole", "AFXWIN/CWnd::get_accSelection", "AFXWIN/CWnd::get_accState", "AFXWIN/CWnd::get_accValue", "AFXWIN/CWnd::GetActiveWindow", "AFXWIN/CWnd::GetAncestor", "AFXWIN/CWnd::GetCapture", "AFXWIN/CWnd::GetCaretPos", "AFXWIN/CWnd::GetCheckedRadioButton", "AFXWIN/CWnd::GetClientRect", "AFXWIN/CWnd::GetClipboardOwner", "AFXWIN/CWnd::GetClipboardViewer", "AFXWIN/CWnd::GetControlUnknown", "AFXWIN/CWnd::GetDC", "AFXWIN/CWnd::GetDCEx", "AFXWIN/CWnd::GetDCRenderTarget", "AFXWIN/CWnd::GetDescendantWindow", "AFXWIN/CWnd::GetDesktopWindow", "AFXWIN/CWnd::GetDlgCtrlID", "AFXWIN/CWnd::GetDlgItem", "AFXWIN/CWnd::GetDlgItemInt", "AFXWIN/CWnd::GetDlgItemText", "AFXWIN/CWnd::GetDSCCursor", "AFXWIN/CWnd::GetDynamicLayout", "AFXWIN/CWnd::GetExStyle", "AFXWIN/CWnd::GetFocus", "AFXWIN/CWnd::GetFont", "AFXWIN/CWnd::GetForegroundWindow", "AFXWIN/CWnd::GetIcon", "AFXWIN/CWnd::GetLastActivePopup", "AFXWIN/CWnd::GetLayeredWindowAttributes", "AFXWIN/CWnd::GetMenu", "AFXWIN/CWnd::GetNextDlgGroupItem", "AFXWIN/CWnd::GetNextDlgTabItem", "AFXWIN/CWnd::GetNextWindow", "AFXWIN/CWnd::GetOleControlSite", "AFXWIN/CWnd::GetOpenClipboardWindow", "AFXWIN/CWnd::GetOwner", "AFXWIN/CWnd::GetParent", "AFXWIN/CWnd::GetParentFrame", "AFXWIN/CWnd::GetParentOwner", "AFXWIN/CWnd::GetProperty", "AFXWIN/CWnd::GetRenderTarget", "AFXWIN/CWnd::GetSafeHwnd", "AFXWIN/CWnd::GetSafeOwner", "AFXWIN/CWnd::GetScrollBarCtrl", "AFXWIN/CWnd::GetScrollBarInfo", "AFXWIN/CWnd::GetScrollInfo", "AFXWIN/CWnd::GetScrollLimit", "AFXWIN/CWnd::GetScrollPos", "AFXWIN/CWnd::GetScrollRange", "AFXWIN/CWnd::GetStyle", "AFXWIN/CWnd::GetSystemMenu", "AFXWIN/CWnd::GetTitleBarInfo", "AFXWIN/CWnd::GetTopLevelFrame", "AFXWIN/CWnd::GetTopLevelOwner", "AFXWIN/CWnd::GetTopLevelParent", "AFXWIN/CWnd::GetTopWindow", "AFXWIN/CWnd::GetUpdateRect", "AFXWIN/CWnd::GetUpdateRgn", "AFXWIN/CWnd::GetWindow", "AFXWIN/CWnd::GetWindowContextHelpId", "AFXWIN/CWnd::GetWindowDC", "AFXWIN/CWnd::GetWindowedChildCount", "AFXWIN/CWnd::GetWindowInfo", "AFXWIN/CWnd::GetWindowlessChildCount", "AFXWIN/CWnd::GetWindowPlacement", "AFXWIN/CWnd::GetWindowRect", "AFXWIN/CWnd::GetWindowRgn", "AFXWIN/CWnd::GetWindowText", "AFXWIN/CWnd::GetWindowTextLength", "AFXWIN/CWnd::HideCaret", "AFXWIN/CWnd::HiliteMenuItem", "AFXWIN/CWnd::HtmlHelp", "AFXWIN/CWnd::Invalidate", "AFXWIN/CWnd::InvalidateRect", "AFXWIN/CWnd::InvalidateRgn", "AFXWIN/CWnd::InvokeHelper", "AFXWIN/CWnd::IsChild", "AFXWIN/CWnd::IsD2DSupportEnabled", "AFXWIN/CWnd::IsDialogMessage", "AFXWIN/CWnd::IsDlgButtonChecked", "AFXWIN/CWnd::IsDynamicLayoutEnabled", "AFXWIN/CWnd::IsIconic", "AFXWIN/CWnd::IsTouchWindow", "AFXWIN/CWnd::IsWindowEnabled", "AFXWIN/CWnd::IsWindowVisible", "AFXWIN/CWnd::IsZoomed", "AFXWIN/CWnd::KillTimer", "AFXWIN/CWnd::LockWindowUpdate", "AFXWIN/CWnd::MapWindowPoints", "AFXWIN/CWnd::MessageBox", "AFXWIN/CWnd::ModifyStyle", "AFXWIN/CWnd::ModifyStyleEx", "AFXWIN/CWnd::MoveWindow", "AFXWIN/CWnd::NotifyWinEvent", "AFXWIN/CWnd::OnAmbientProperty", "AFXWIN/CWnd::OnDrawIconicThumbnailOrLivePreview", "AFXWIN/CWnd::OnHelp", "AFXWIN/CWnd::OnHelpFinder", "AFXWIN/CWnd::OnHelpIndex", "AFXWIN/CWnd::OnHelpUsing", "AFXWIN/CWnd::OnToolHitTest", "AFXWIN/CWnd::OpenClipboard", "AFXWIN/CWnd::PaintWindowlessControls", "AFXWIN/CWnd::PostMessage", "AFXWIN/CWnd::PreCreateWindow", "AFXWIN/CWnd::PreSubclassWindow", "AFXWIN/CWnd::PreTranslateMessage", "AFXWIN/CWnd::Print", "AFXWIN/CWnd::PrintClient", "AFXWIN/CWnd::PrintWindow", "AFXWIN/CWnd::RedrawWindow", "AFXWIN/CWnd::RegisterTouchWindow", "AFXWIN/CWnd::ReleaseDC", "AFXWIN/CWnd::RepositionBars", "AFXWIN/CWnd::RunModalLoop", "AFXWIN/CWnd::ScreenToClient", "AFXWIN/CWnd::ScrollWindow", "AFXWIN/CWnd::ScrollWindowEx", "AFXWIN/CWnd::SendChildNotifyLastMsg", "AFXWIN/CWnd::SendDlgItemMessage", "AFXWIN/CWnd::SendMessage", "AFXWIN/CWnd::SendMessageToDescendants", "AFXWIN/CWnd::SendNotifyMessage", "AFXWIN/CWnd::SetActiveWindow", "AFXWIN/CWnd::SetCapture", "AFXWIN/CWnd::SetCaretPos", "AFXWIN/CWnd::SetClipboardViewer", "AFXWIN/CWnd::SetDlgCtrlID", "AFXWIN/CWnd::SetDlgItemInt", "AFXWIN/CWnd::SetDlgItemText", "AFXWIN/CWnd::SetFocus", "AFXWIN/CWnd::SetFont", "AFXWIN/CWnd::SetForegroundWindow", "AFXWIN/CWnd::SetIcon", "AFXWIN/CWnd::SetLayeredWindowAttributes", "AFXWIN/CWnd::SetMenu", "AFXWIN/CWnd::SetOwner", "AFXWIN/CWnd::SetParent", "AFXWIN/CWnd::SetProperty", "AFXWIN/CWnd::SetRedraw", "AFXWIN/CWnd::SetScrollInfo", "AFXWIN/CWnd::SetScrollPos", "AFXWIN/CWnd::SetScrollRange", "AFXWIN/CWnd::SetTimer", "AFXWIN/CWnd::SetWindowContextHelpId", "AFXWIN/CWnd::SetWindowPlacement", "AFXWIN/CWnd::SetWindowPos", "AFXWIN/CWnd::SetWindowRgn", "AFXWIN/CWnd::SetWindowText", "AFXWIN/CWnd::ShowCaret", "AFXWIN/CWnd::ShowOwnedPopups", "AFXWIN/CWnd::ShowScrollBar", "AFXWIN/CWnd::ShowWindow", "AFXWIN/CWnd::SubclassDlgItem", "AFXWIN/CWnd::SubclassWindow", "AFXWIN/CWnd::UnlockWindowUpdate", "AFXWIN/CWnd::UnsubclassWindow", "AFXWIN/CWnd::UpdateData", "AFXWIN/CWnd::UpdateDialogControls", "AFXWIN/CWnd::UpdateLayeredWindow", "AFXWIN/CWnd::UpdateWindow", "AFXWIN/CWnd::ValidateRect", "AFXWIN/CWnd::ValidateRgn", "AFXWIN/CWnd::WindowFromPoint", "AFXWIN/CWnd::WinHelp", "AFXWIN/CWnd::Default", "AFXWIN/CWnd::DefWindowProc", "AFXWIN/CWnd::DoDataExchange", "AFXWIN/CWnd::GetCurrentMessage", "AFXWIN/CWnd::InitDynamicLayout", "AFXWIN/CWnd::LoadDynamicLayoutResource", "AFXWIN/CWnd::OnActivate", "AFXWIN/CWnd::OnActivateApp", "AFXWIN/CWnd::OnAppCommand", "AFXWIN/CWnd::OnAskCbFormatName", "AFXWIN/CWnd::OnCancelMode", "AFXWIN/CWnd::OnCaptureChanged", "AFXWIN/CWnd::OnChangeCbChain", "AFXWIN/CWnd::OnChangeUIState", "AFXWIN/CWnd::OnChar", "AFXWIN/CWnd::OnCharToItem", "AFXWIN/CWnd::OnChildActivate", "AFXWIN/CWnd::OnChildNotify", "AFXWIN/CWnd::OnClipboardUpdate", "AFXWIN/CWnd::OnClose", "AFXWIN/CWnd::OnColorizationColorChanged", "AFXWIN/CWnd::OnCommand", "AFXWIN/CWnd::OnCompacting", "AFXWIN/CWnd::OnCompareItem", "AFXWIN/CWnd::OnCompositionChanged", "AFXWIN/CWnd::OnContextMenu", "AFXWIN/CWnd::OnCopyData", "AFXWIN/CWnd::OnCreate", "AFXWIN/CWnd::OnCtlColor", "AFXWIN/CWnd::OnDeadChar", "AFXWIN/CWnd::OnDeleteItem", "AFXWIN/CWnd::OnDestroy", "AFXWIN/CWnd::OnDestroyClipboard", "AFXWIN/CWnd::OnDeviceChange", "AFXWIN/CWnd::OnDevModeChange", "AFXWIN/CWnd::OnDrawClipboard", "AFXWIN/CWnd::OnDrawItem", "AFXWIN/CWnd::OnDropFiles", "AFXWIN/CWnd::OnEnable", "AFXWIN/CWnd::OnEndSession", "AFXWIN/CWnd::OnEnterIdle", "AFXWIN/CWnd::OnEnterMenuLoop", "AFXWIN/CWnd::OnEnterSizeMove", "AFXWIN/CWnd::OnEraseBkgnd", "AFXWIN/CWnd::OnExitMenuLoop", "AFXWIN/CWnd::OnExitSizeMove", "AFXWIN/CWnd::OnFontChange", "AFXWIN/CWnd::OnGetDlgCode", "AFXWIN/CWnd::OnGetMinMaxInfo", "AFXWIN/CWnd::OnHelpInfo", "AFXWIN/CWnd::OnHotKey", "AFXWIN/CWnd::OnHScroll", "AFXWIN/CWnd::OnHScrollClipboard", "AFXWIN/CWnd::OnIconEraseBkgnd", "AFXWIN/CWnd::OnInitMenu", "AFXWIN/CWnd::OnInitMenuPopup", "AFXWIN/CWnd::OnInputDeviceChange", "AFXWIN/CWnd::OnInputLangChange", "AFXWIN/CWnd::OnInputLangChangeRequest", "AFXWIN/CWnd::OnKeyDown", "AFXWIN/CWnd::OnKeyUp", "AFXWIN/CWnd::OnKillFocus", "AFXWIN/CWnd::OnLButtonDblClk", "AFXWIN/CWnd::OnLButtonDown", "AFXWIN/CWnd::OnLButtonUp", "AFXWIN/CWnd::OnMButtonDblClk", "AFXWIN/CWnd::OnMButtonDown", "AFXWIN/CWnd::OnMButtonUp", "AFXWIN/CWnd::OnMDIActivate", "AFXWIN/CWnd::OnMeasureItem", "AFXWIN/CWnd::OnMenuChar", "AFXWIN/CWnd::OnMenuDrag", "AFXWIN/CWnd::OnMenuGetObject", "AFXWIN/CWnd::OnMenuRButtonUp", "AFXWIN/CWnd::OnMenuSelect", "AFXWIN/CWnd::OnMouseActivate", "AFXWIN/CWnd::OnMouseHover", "AFXWIN/CWnd::OnMouseHWheel", "AFXWIN/CWnd::OnMouseLeave", "AFXWIN/CWnd::OnMouseMove", "AFXWIN/CWnd::OnMouseWheel", "AFXWIN/CWnd::OnMove", "AFXWIN/CWnd::OnMoving", "AFXWIN/CWnd::OnNcActivate", "AFXWIN/CWnd::OnNcCalcSize", "AFXWIN/CWnd::OnNcCreate", "AFXWIN/CWnd::OnNcDestroy", "AFXWIN/CWnd::OnNcHitTest", "AFXWIN/CWnd::OnNcLButtonDblClk", "AFXWIN/CWnd::OnNcLButtonDown", "AFXWIN/CWnd::OnNcLButtonUp", "AFXWIN/CWnd::OnNcMButtonDblClk", "AFXWIN/CWnd::OnNcMButtonDown", "AFXWIN/CWnd::OnNcMButtonUp", "AFXWIN/CWnd::OnNcMouseHover", "AFXWIN/CWnd::OnNcMouseLeave", "AFXWIN/CWnd::OnNcMouseMove", "AFXWIN/CWnd::OnNcPaint", "AFXWIN/CWnd::OnNcRButtonDblClk", "AFXWIN/CWnd::OnNcRButtonDown", "AFXWIN/CWnd::OnNcRButtonUp", "AFXWIN/CWnd::OnNcRenderingChanged", "AFXWIN/CWnd::OnNcXButtonDblClk", "AFXWIN/CWnd::OnNcXButtonDown", "AFXWIN/CWnd::OnNcXButtonUp", "AFXWIN/CWnd::OnNextMenu", "AFXWIN/CWnd::OnNotify", "AFXWIN/CWnd::OnNotifyFormat", "AFXWIN/CWnd::OnPaint", "AFXWIN/CWnd::OnPaintClipboard", "AFXWIN/CWnd::OnPaletteChanged", "AFXWIN/CWnd::OnPaletteIsChanging", "AFXWIN/CWnd::OnParentNotify", "AFXWIN/CWnd::OnPowerBroadcast", "AFXWIN/CWnd::OnQueryDragIcon", "AFXWIN/CWnd::OnQueryEndSession", "AFXWIN/CWnd::OnQueryNewPalette", "AFXWIN/CWnd::OnQueryOpen", "AFXWIN/CWnd::OnQueryUIState", "AFXWIN/CWnd::OnRawInput", "AFXWIN/CWnd::OnRButtonDblClk", "AFXWIN/CWnd::OnRButtonDown", "AFXWIN/CWnd::OnRButtonUp", "AFXWIN/CWnd::OnRenderAllFormats", "AFXWIN/CWnd::OnRenderFormat", "AFXWIN/CWnd::OnSessionChange", "AFXWIN/CWnd::OnSetCursor", "AFXWIN/CWnd::OnSetFocus", "AFXWIN/CWnd::OnSettingChange", "AFXWIN/CWnd::OnShowWindow", "AFXWIN/CWnd::OnSize", "AFXWIN/CWnd::OnSizeClipboard", "AFXWIN/CWnd::OnSizing", "AFXWIN/CWnd::OnSpoolerStatus", "AFXWIN/CWnd::OnStyleChanged", "AFXWIN/CWnd::OnStyleChanging", "AFXWIN/CWnd::OnSysChar", "AFXWIN/CWnd::OnSysColorChange", "AFXWIN/CWnd::OnSysCommand", "AFXWIN/CWnd::OnSysDeadChar", "AFXWIN/CWnd::OnSysKeyDown", "AFXWIN/CWnd::OnSysKeyUp", "AFXWIN/CWnd::OnTCard", "AFXWIN/CWnd::OnTimeChange", "AFXWIN/CWnd::OnTimer", "AFXWIN/CWnd::OnTouchInput", "AFXWIN/CWnd::OnTouchInputs", "AFXWIN/CWnd::OnUniChar", "AFXWIN/CWnd::OnUnInitMenuPopup", "AFXWIN/CWnd::OnUpdateUIState", "AFXWIN/CWnd::OnUserChanged", "AFXWIN/CWnd::OnVKeyToItem", "AFXWIN/CWnd::OnVScroll", "AFXWIN/CWnd::OnVScrollClipboard", "AFXWIN/CWnd::OnWindowPosChanged", "AFXWIN/CWnd::OnWindowPosChanging", "AFXWIN/CWnd::OnWinIniChange", "AFXWIN/CWnd::OnWndMsg", "AFXWIN/CWnd::OnXButtonDblClk", "AFXWIN/CWnd::OnXButtonDown", "AFXWIN/CWnd::OnXButtonUp", "AFXWIN/CWnd::PostNcDestroy", "AFXWIN/CWnd::ReflectChildNotify", "AFXWIN/CWnd::ReflectLastMsg", "AFXWIN/CWnd::ResizeDynamicLayout", "AFXWIN/CWnd::WindowProc", "AFXWIN/CWnd::m_hWnd"]
 helpviewer_keywords: ["CWnd [MFC], CWnd", "CWnd [MFC], accDoDefaultAction", "CWnd [MFC], accHitTest", "CWnd [MFC], accLocation", "CWnd [MFC], accNavigate", "CWnd [MFC], accSelect", "CWnd [MFC], AnimateWindow", "CWnd [MFC], ArrangeIconicWindows", "CWnd [MFC], Attach", "CWnd [MFC], BeginModalState", "CWnd [MFC], BeginPaint", "CWnd [MFC], BindDefaultProperty", "CWnd [MFC], BindProperty", "CWnd [MFC], BringWindowToTop", "CWnd [MFC], CalcWindowRect", "CWnd [MFC], CancelToolTips", "CWnd [MFC], CenterWindow", "CWnd [MFC], ChangeClipboardChain", "CWnd [MFC], CheckDlgButton", "CWnd [MFC], CheckRadioButton", "CWnd [MFC], ChildWindowFromPoint", "CWnd [MFC], ClientToScreen", "CWnd [MFC], CloseWindow", "CWnd [MFC], ContinueModal", "CWnd [MFC], Create", "CWnd [MFC], CreateAccessibleProxy", "CWnd [MFC], CreateCaret", "CWnd [MFC], CreateControl", "CWnd [MFC], CreateEx", "CWnd [MFC], CreateGrayCaret", "CWnd [MFC], CreateSolidCaret", "CWnd [MFC], DeleteTempMap", "CWnd [MFC], DestroyWindow", "CWnd [MFC], Detach", "CWnd [MFC], DlgDirList", "CWnd [MFC], DlgDirListComboBox", "CWnd [MFC], DlgDirSelect", "CWnd [MFC], DlgDirSelectComboBox", "CWnd [MFC], DragAcceptFiles", "CWnd [MFC], DragDetect", "CWnd [MFC], DrawAnimatedRects", "CWnd [MFC], DrawCaption", "CWnd [MFC], DrawMenuBar", "CWnd [MFC], EnableActiveAccessibility", "CWnd [MFC], EnableDynamicLayout", "CWnd [MFC], EnableD2DSupport", "CWnd [MFC], EnableScrollBar", "CWnd [MFC], EnableScrollBarCtrl", "CWnd [MFC], EnableToolTips", "CWnd [MFC], EnableTrackingToolTips", "CWnd [MFC], EnableWindow", "CWnd [MFC], EndModalLoop", "CWnd [MFC], EndModalState", "CWnd [MFC], EndPaint", "CWnd [MFC], ExecuteDlgInit", "CWnd [MFC], FilterToolTipMessage", "CWnd [MFC], FindWindow", "CWnd [MFC], FindWindowEx", "CWnd [MFC], FlashWindow", "CWnd [MFC], FlashWindowEx", "CWnd [MFC], FromHandle", "CWnd [MFC], FromHandlePermanent", "CWnd [MFC], get_accChild", "CWnd [MFC], get_accChildCount", "CWnd [MFC], get_accDefaultAction", "CWnd [MFC], get_accDescription", "CWnd [MFC], get_accFocus", "CWnd [MFC], get_accHelp", "CWnd [MFC], get_accHelpTopic", "CWnd [MFC], get_accKeyboardShortcut", "CWnd [MFC], get_accName", "CWnd [MFC], get_accParent", "CWnd [MFC], get_accRole", "CWnd [MFC], get_accSelection", "CWnd [MFC], get_accState", "CWnd [MFC], get_accValue", "CWnd [MFC], GetActiveWindow", "CWnd [MFC], GetAncestor", "CWnd [MFC], GetCapture", "CWnd [MFC], GetCaretPos", "CWnd [MFC], GetCheckedRadioButton", "CWnd [MFC], GetClientRect", "CWnd [MFC], GetClipboardOwner", "CWnd [MFC], GetClipboardViewer", "CWnd [MFC], GetControlUnknown", "CWnd [MFC], GetDC", "CWnd [MFC], GetDCEx", "CWnd [MFC], GetDCRenderTarget", "CWnd [MFC], GetDescendantWindow", "CWnd [MFC], GetDesktopWindow", "CWnd [MFC], GetDlgCtrlID", "CWnd [MFC], GetDlgItem", "CWnd [MFC], GetDlgItemInt", "CWnd [MFC], GetDlgItemText", "CWnd [MFC], GetDSCCursor", "CWnd [MFC], GetDynamicLayout", "CWnd [MFC], GetExStyle", "CWnd [MFC], GetFocus", "CWnd [MFC], GetFont", "CWnd [MFC], GetForegroundWindow", "CWnd [MFC], GetIcon", "CWnd [MFC], GetLastActivePopup", "CWnd [MFC], GetLayeredWindowAttributes", "CWnd [MFC], GetMenu", "CWnd [MFC], GetNextDlgGroupItem", "CWnd [MFC], GetNextDlgTabItem", "CWnd [MFC], GetNextWindow", "CWnd [MFC], GetOleControlSite", "CWnd [MFC], GetOpenClipboardWindow", "CWnd [MFC], GetOwner", "CWnd [MFC], GetParent", "CWnd [MFC], GetParentFrame", "CWnd [MFC], GetParentOwner", "CWnd [MFC], GetProperty", "CWnd [MFC], GetRenderTarget", "CWnd [MFC], GetSafeHwnd", "CWnd [MFC], GetSafeOwner", "CWnd [MFC], GetScrollBarCtrl", "CWnd [MFC], GetScrollBarInfo", "CWnd [MFC], GetScrollInfo", "CWnd [MFC], GetScrollLimit", "CWnd [MFC], GetScrollPos", "CWnd [MFC], GetScrollRange", "CWnd [MFC], GetStyle", "CWnd [MFC], GetSystemMenu", "CWnd [MFC], GetTitleBarInfo", "CWnd [MFC], GetTopLevelFrame", "CWnd [MFC], GetTopLevelOwner", "CWnd [MFC], GetTopLevelParent", "CWnd [MFC], GetTopWindow", "CWnd [MFC], GetUpdateRect", "CWnd [MFC], GetUpdateRgn", "CWnd [MFC], GetWindow", "CWnd [MFC], GetWindowContextHelpId", "CWnd [MFC], GetWindowDC", "CWnd [MFC], GetWindowedChildCount", "CWnd [MFC], GetWindowInfo", "CWnd [MFC], GetWindowlessChildCount", "CWnd [MFC], GetWindowPlacement", "CWnd [MFC], GetWindowRect", "CWnd [MFC], GetWindowRgn", "CWnd [MFC], GetWindowText", "CWnd [MFC], GetWindowTextLength", "CWnd [MFC], HideCaret", "CWnd [MFC], HiliteMenuItem", "CWnd [MFC], HtmlHelp", "CWnd [MFC], Invalidate", "CWnd [MFC], InvalidateRect", "CWnd [MFC], InvalidateRgn", "CWnd [MFC], InvokeHelper", "CWnd [MFC], IsChild", "CWnd [MFC], IsD2DSupportEnabled", "CWnd [MFC], IsDialogMessage", "CWnd [MFC], IsDlgButtonChecked", "CWnd [MFC], IsDynamicLayoutEnabled", "CWnd [MFC], IsIconic", "CWnd [MFC], IsTouchWindow", "CWnd [MFC], IsWindowEnabled", "CWnd [MFC], IsWindowVisible", "CWnd [MFC], IsZoomed", "CWnd [MFC], KillTimer", "CWnd [MFC], LockWindowUpdate", "CWnd [MFC], MapWindowPoints", "CWnd [MFC], MessageBox", "CWnd [MFC], ModifyStyle", "CWnd [MFC], ModifyStyleEx", "CWnd [MFC], MoveWindow", "CWnd [MFC], NotifyWinEvent", "CWnd [MFC], OnAmbientProperty", "CWnd [MFC], OnDrawIconicThumbnailOrLivePreview", "CWnd [MFC], OnHelp", "CWnd [MFC], OnHelpFinder", "CWnd [MFC], OnHelpIndex", "CWnd [MFC], OnHelpUsing", "CWnd [MFC], OnToolHitTest", "CWnd [MFC], OpenClipboard", "CWnd [MFC], PaintWindowlessControls", "CWnd [MFC], PostMessage", "CWnd [MFC], PreCreateWindow", "CWnd [MFC], PreSubclassWindow", "CWnd [MFC], PreTranslateMessage", "CWnd [MFC], Print", "CWnd [MFC], PrintClient", "CWnd [MFC], PrintWindow", "CWnd [MFC], RedrawWindow", "CWnd [MFC], RegisterTouchWindow", "CWnd [MFC], ReleaseDC", "CWnd [MFC], RepositionBars", "CWnd [MFC], RunModalLoop", "CWnd [MFC], ScreenToClient", "CWnd [MFC], ScrollWindow", "CWnd [MFC], ScrollWindowEx", "CWnd [MFC], SendChildNotifyLastMsg", "CWnd [MFC], SendDlgItemMessage", "CWnd [MFC], SendMessage", "CWnd [MFC], SendMessageToDescendants", "CWnd [MFC], SendNotifyMessage", "CWnd [MFC], SetActiveWindow", "CWnd [MFC], SetCapture", "CWnd [MFC], SetCaretPos", "CWnd [MFC], SetClipboardViewer", "CWnd [MFC], SetDlgCtrlID", "CWnd [MFC], SetDlgItemInt", "CWnd [MFC], SetDlgItemText", "CWnd [MFC], SetFocus", "CWnd [MFC], SetFont", "CWnd [MFC], SetForegroundWindow", "CWnd [MFC], SetIcon", "CWnd [MFC], SetLayeredWindowAttributes", "CWnd [MFC], SetMenu", "CWnd [MFC], SetOwner", "CWnd [MFC], SetParent", "CWnd [MFC], SetProperty", "CWnd [MFC], SetRedraw", "CWnd [MFC], SetScrollInfo", "CWnd [MFC], SetScrollPos", "CWnd [MFC], SetScrollRange", "CWnd [MFC], SetTimer", "CWnd [MFC], SetWindowContextHelpId", "CWnd [MFC], SetWindowPlacement", "CWnd [MFC], SetWindowPos", "CWnd [MFC], SetWindowRgn", "CWnd [MFC], SetWindowText", "CWnd [MFC], ShowCaret", "CWnd [MFC], ShowOwnedPopups", "CWnd [MFC], ShowScrollBar", "CWnd [MFC], ShowWindow", "CWnd [MFC], SubclassDlgItem", "CWnd [MFC], SubclassWindow", "CWnd [MFC], UnlockWindowUpdate", "CWnd [MFC], UnsubclassWindow", "CWnd [MFC], UpdateData", "CWnd [MFC], UpdateDialogControls", "CWnd [MFC], UpdateLayeredWindow", "CWnd [MFC], UpdateWindow", "CWnd [MFC], ValidateRect", "CWnd [MFC], ValidateRgn", "CWnd [MFC], WindowFromPoint", "CWnd [MFC], WinHelp", "CWnd [MFC], Default", "CWnd [MFC], DefWindowProc", "CWnd [MFC], DoDataExchange", "CWnd [MFC], GetCurrentMessage", "CWnd [MFC], InitDynamicLayout", "CWnd [MFC], LoadDynamicLayoutResource", "CWnd [MFC], OnActivate", "CWnd [MFC], OnActivateApp", "CWnd [MFC], OnAppCommand", "CWnd [MFC], OnAskCbFormatName", "CWnd [MFC], OnCancelMode", "CWnd [MFC], OnCaptureChanged", "CWnd [MFC], OnChangeCbChain", "CWnd [MFC], OnChangeUIState", "CWnd [MFC], OnChar", "CWnd [MFC], OnCharToItem", "CWnd [MFC], OnChildActivate", "CWnd [MFC], OnChildNotify", "CWnd [MFC], OnClipboardUpdate", "CWnd [MFC], OnClose", "CWnd [MFC], OnColorizationColorChanged", "CWnd [MFC], OnCommand", "CWnd [MFC], OnCompacting", "CWnd [MFC], OnCompareItem", "CWnd [MFC], OnCompositionChanged", "CWnd [MFC], OnContextMenu", "CWnd [MFC], OnCopyData", "CWnd [MFC], OnCreate", "CWnd [MFC], OnCtlColor", "CWnd [MFC], OnDeadChar", "CWnd [MFC], OnDeleteItem", "CWnd [MFC], OnDestroy", "CWnd [MFC], OnDestroyClipboard", "CWnd [MFC], OnDeviceChange", "CWnd [MFC], OnDevModeChange", "CWnd [MFC], OnDrawClipboard", "CWnd [MFC], OnDrawItem", "CWnd [MFC], OnDropFiles", "CWnd [MFC], OnEnable", "CWnd [MFC], OnEndSession", "CWnd [MFC], OnEnterIdle", "CWnd [MFC], OnEnterMenuLoop", "CWnd [MFC], OnEnterSizeMove", "CWnd [MFC], OnEraseBkgnd", "CWnd [MFC], OnExitMenuLoop", "CWnd [MFC], OnExitSizeMove", "CWnd [MFC], OnFontChange", "CWnd [MFC], OnGetDlgCode", "CWnd [MFC], OnGetMinMaxInfo", "CWnd [MFC], OnHelpInfo", "CWnd [MFC], OnHotKey", "CWnd [MFC], OnHScroll", "CWnd [MFC], OnHScrollClipboard", "CWnd [MFC], OnIconEraseBkgnd", "CWnd [MFC], OnInitMenu", "CWnd [MFC], OnInitMenuPopup", "CWnd [MFC], OnInputDeviceChange", "CWnd [MFC], OnInputLangChange", "CWnd [MFC], OnInputLangChangeRequest", "CWnd [MFC], OnKeyDown", "CWnd [MFC], OnKeyUp", "CWnd [MFC], OnKillFocus", "CWnd [MFC], OnLButtonDblClk", "CWnd [MFC], OnLButtonDown", "CWnd [MFC], OnLButtonUp", "CWnd [MFC], OnMButtonDblClk", "CWnd [MFC], OnMButtonDown", "CWnd [MFC], OnMButtonUp", "CWnd [MFC], OnMDIActivate", "CWnd [MFC], OnMeasureItem", "CWnd [MFC], OnMenuChar", "CWnd [MFC], OnMenuDrag", "CWnd [MFC], OnMenuGetObject", "CWnd [MFC], OnMenuRButtonUp", "CWnd [MFC], OnMenuSelect", "CWnd [MFC], OnMouseActivate", "CWnd [MFC], OnMouseHover", "CWnd [MFC], OnMouseHWheel", "CWnd [MFC], OnMouseLeave", "CWnd [MFC], OnMouseMove", "CWnd [MFC], OnMouseWheel", "CWnd [MFC], OnMove", "CWnd [MFC], OnMoving", "CWnd [MFC], OnNcActivate", "CWnd [MFC], OnNcCalcSize", "CWnd [MFC], OnNcCreate", "CWnd [MFC], OnNcDestroy", "CWnd [MFC], OnNcHitTest", "CWnd [MFC], OnNcLButtonDblClk", "CWnd [MFC], OnNcLButtonDown", "CWnd [MFC], OnNcLButtonUp", "CWnd [MFC], OnNcMButtonDblClk", "CWnd [MFC], OnNcMButtonDown", "CWnd [MFC], OnNcMButtonUp", "CWnd [MFC], OnNcMouseHover", "CWnd [MFC], OnNcMouseLeave", "CWnd [MFC], OnNcMouseMove", "CWnd [MFC], OnNcPaint", "CWnd [MFC], OnNcRButtonDblClk", "CWnd [MFC], OnNcRButtonDown", "CWnd [MFC], OnNcRButtonUp", "CWnd [MFC], OnNcRenderingChanged", "CWnd [MFC], OnNcXButtonDblClk", "CWnd [MFC], OnNcXButtonDown", "CWnd [MFC], OnNcXButtonUp", "CWnd [MFC], OnNextMenu", "CWnd [MFC], OnNotify", "CWnd [MFC], OnNotifyFormat", "CWnd [MFC], OnPaint", "CWnd [MFC], OnPaintClipboard", "CWnd [MFC], OnPaletteChanged", "CWnd [MFC], OnPaletteIsChanging", "CWnd [MFC], OnParentNotify", "CWnd [MFC], OnPowerBroadcast", "CWnd [MFC], OnQueryDragIcon", "CWnd [MFC], OnQueryEndSession", "CWnd [MFC], OnQueryNewPalette", "CWnd [MFC], OnQueryOpen", "CWnd [MFC], OnQueryUIState", "CWnd [MFC], OnRawInput", "CWnd [MFC], OnRButtonDblClk", "CWnd [MFC], OnRButtonDown", "CWnd [MFC], OnRButtonUp", "CWnd [MFC], OnRenderAllFormats", "CWnd [MFC], OnRenderFormat", "CWnd [MFC], OnSessionChange", "CWnd [MFC], OnSetCursor", "CWnd [MFC], OnSetFocus", "CWnd [MFC], OnSettingChange", "CWnd [MFC], OnShowWindow", "CWnd [MFC], OnSize", "CWnd [MFC], OnSizeClipboard", "CWnd [MFC], OnSizing", "CWnd [MFC], OnSpoolerStatus", "CWnd [MFC], OnStyleChanged", "CWnd [MFC], OnStyleChanging", "CWnd [MFC], OnSysChar", "CWnd [MFC], OnSysColorChange", "CWnd [MFC], OnSysCommand", "CWnd [MFC], OnSysDeadChar", "CWnd [MFC], OnSysKeyDown", "CWnd [MFC], OnSysKeyUp", "CWnd [MFC], OnTCard", "CWnd [MFC], OnTimeChange", "CWnd [MFC], OnTimer", "CWnd [MFC], OnTouchInput", "CWnd [MFC], OnTouchInputs", "CWnd [MFC], OnUniChar", "CWnd [MFC], OnUnInitMenuPopup", "CWnd [MFC], OnUpdateUIState", "CWnd [MFC], OnUserChanged", "CWnd [MFC], OnVKeyToItem", "CWnd [MFC], OnVScroll", "CWnd [MFC], OnVScrollClipboard", "CWnd [MFC], OnWindowPosChanged", "CWnd [MFC], OnWindowPosChanging", "CWnd [MFC], OnWinIniChange", "CWnd [MFC], OnWndMsg", "CWnd [MFC], OnXButtonDblClk", "CWnd [MFC], OnXButtonDown", "CWnd [MFC], OnXButtonUp", "CWnd [MFC], PostNcDestroy", "CWnd [MFC], ReflectChildNotify", "CWnd [MFC], ReflectLastMsg", "CWnd [MFC], ResizeDynamicLayout", "CWnd [MFC], WindowProc", "CWnd [MFC], m_hWnd"]
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
@@ -346,9 +346,9 @@ class CWnd : public CCmdTarget
 |[CWnd::OnMenuRButtonUp](#onmenurbuttonup)|Called when the user releases the right mouse button while the cursor is on a menu item.|
 |[CWnd::OnMenuSelect](#onmenuselect)|Called when the user selects a menu item.|
 |[CWnd::OnMouseActivate](#onmouseactivate)|Called when the cursor is in an inactive window and the user presses a mouse button.|
-|[CWnd::OnMouseHover](#onmousehover)|Called when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnMouseHover](#onmousehover)|Called when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).|
 |[CWnd::OnMouseHWheel](#onmousehwheel)|Called when the current window is composed by the Desktop Window Manager (DWM), and that window is maximized.|
-|[CWnd::OnMouseLeave](#onmouseleave)|Called when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnMouseLeave](#onmouseleave)|Called when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).|
 |[CWnd::OnMouseMove](#onmousemove)|Called when the mouse cursor moves.|
 |[CWnd::OnMouseWheel](#onmousewheel)|Called when a user rotates the mouse wheel. Uses Windows NT 4.0 message handling.|
 |[CWnd::OnMove](#onmove)|Called after the position of the `CWnd` has been changed.|
@@ -364,8 +364,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnNcMButtonDblClk](#onncmbuttondblclk)|Called when the user double-clicks the middle mouse button while the cursor is within a non-client area of `CWnd`.|
 |[CWnd::OnNcMButtonDown](#onncmbuttondown)|Called when the user presses the middle mouse button while the cursor is within a non-client area of `CWnd`.|
 |[CWnd::OnNcMButtonUp](#onncmbuttonup)|Called when the user releases the middle mouse button while the cursor is within a non-client area of `CWnd`.|
-|[CWnd::OnNcMouseHover](#onncmousehover)|Called when the cursor hovers over the non-client area of the window for the period of time specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
-|[CWnd::OnNcMouseLeave](#onncmouseleave)|The framework calls this member function when the cursor leaves the non-client area of the window specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnNcMouseHover](#onncmousehover)|Called when the cursor hovers over the non-client area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).|
+|[CWnd::OnNcMouseLeave](#onncmouseleave)|The framework calls this member function when the cursor leaves the non-client area of the window specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).|
 |[CWnd::OnNcMouseMove](#onncmousemove)|Called when the cursor is moved within a non-client area of `CWnd`.|
 |[CWnd::OnNcPaint](#onncpaint)|Called when the non-client area needs painting.|
 |[CWnd::OnNcRButtonDblClk](#onncrbuttondblclk)|Called when the user double-clicks the right mouse button while the cursor is within a non-client area of `CWnd`.|
@@ -656,7 +656,7 @@ BOOL AnimateWindow(
 Specifies how long it takes to play the animation, in milliseconds. Typically, an animation takes 200 milliseconds to play.
 
 *dwFlags*<br/>
-Specifies the type of animation. For a full list of possible values, see [AnimateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632669).
+Specifies the type of animation. For a full list of possible values, see [AnimateWindow](/windows/desktop/api/winuser/nf-winuser-animatewindow).
 
 ### Return Value
 
@@ -664,7 +664,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the function [AnimateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632669), as described in the Windows SDK.
+This member function emulates the functionality of the function [AnimateWindow](/windows/desktop/api/winuser/nf-winuser-animatewindow), as described in the Windows SDK.
 
 ##  <a name="arrangeiconicwindows"></a>  CWnd::ArrangeIconicWindows
 
@@ -734,7 +734,7 @@ CDC* BeginPaint(LPPAINTSTRUCT lpPaint);
 ### Parameters
 
 *lpPaint*<br/>
-Points to the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that is to receive painting information.
+Points to the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure that is to receive painting information.
 
 ### Return Value
 
@@ -832,7 +832,7 @@ void BringWindowToTop();
 
 In addition, `BringWindowToTop` activates pop-up, top-level, and MDI child windows. The `BringWindowToTop` member function should be used to uncover any window that is partially or completely obscured by any overlapping windows.
 
-This function just calls the Win32 [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673) function. Call the [SetWindowPos](#setwindowpos) function to change a window's position in the Z-order. The `BringWindowToTop` function does not change the window style to make it a top-level window. For more information, see [What's the difference between HWND_TOP and HWND_TOPMOST](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+This function just calls the Win32 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) function. Call the [SetWindowPos](#setwindowpos) function to change a window's position in the Z-order. The `BringWindowToTop` function does not change the window style to make it a top-level window. For more information, see [What's the difference between HWND_TOP and HWND_TOPMOST](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
 
 ### Example
 
@@ -860,7 +860,7 @@ virtual void CalcWindowRect(
 
 The size of the calculated window rectangle does not include space for a menu bar.
 
-For more usage restrictions, see [AdjustWindowRectEx](https://msdn.microsoft.com/library/windows/desktop/ms632667).
+For more usage restrictions, see [AdjustWindowRectEx](/windows/desktop/api/winuser/nf-winuser-adjustwindowrectex).
 
 ### Example
 
@@ -1034,10 +1034,10 @@ void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) 
 ### Parameters
 
 *lpPoint*<br/>
-Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the client coordinates to be converted.
+Points to a [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) or `CPoint` object that contains the client coordinates to be converted.
 
 *lpRect*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or `CRect` object that contains the client coordinates to be converted.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or `CRect` object that contains the client coordinates to be converted.
 
 ### Remarks
 
@@ -1059,7 +1059,7 @@ void CloseWindow();
 
 ### Remarks
 
-This member function emulates the functionality of the function [CloseWindow](https://msdn.microsoft.com/library/windows/desktop/ms632678), as described in the Windows SDK.
+This member function emulates the functionality of the function [CloseWindow](/windows/desktop/api/winuser/nf-winuser-closewindow), as described in the Windows SDK.
 
 ##  <a name="continuemodal"></a>  CWnd::ContinueModal
 
@@ -1241,13 +1241,13 @@ A pointer to the text to be displayed in the control. Sets the value of the cont
 Windows styles. The available styles are listed under Remarks.
 
 *rect*<br/>
-Specifies the control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).
+Specifies the control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
 
 *ppt*<br/>
-Points to a [POINT structure](../../mfc/reference/point-structure1.md) or `CPoint` object that contains the upper left corner of the control.
+Points to a [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) or `CPoint` object that contains the upper left corner of the control.
 
 *pSize*<br/>
-Points to a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that contains the control's size
+Points to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure or `CSize` object that contains the control's size
 
 *pParentWnd*<br/>
 Specifies the control's parent window. It must not be NULL.
@@ -1846,7 +1846,7 @@ If the user did not move the mouse outside of the drag rectangle while holding d
 
 ### Remarks
 
-This member function emulates the functionality of the function [DragDetect](https://msdn.microsoft.com/library/windows/desktop/ms646256), as described in the Windows SDK.
+This member function emulates the functionality of the function [DragDetect](/windows/desktop/api/winuser/nf-winuser-dragdetect), as described in the Windows SDK.
 
 ##  <a name="drawanimatedrects"></a>  CWnd::DrawAnimatedRects
 
@@ -1865,10 +1865,10 @@ BOOL DrawAnimatedRects(
 Specifies the type of animation. If you specify IDANI_CAPTION, the window caption will animate from the position specified by *lprcFrom* to the position specified by *lprcTo*. The effect is similar to minimizing or maximizing a window.
 
 *lprcFrom*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the icon or minimized window.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the icon or minimized window.
 
 *lprcTo*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the location and size of the restored window
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the location and size of the restored window
 
 ### Return Value
 
@@ -2157,7 +2157,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
 ### Parameters
 
 *lpPaint*<br/>
-Points to a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure that contains the painting information retrieved by the [BeginPaint](#beginpaint) member function.
+Points to a [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure that contains the painting information retrieved by the [BeginPaint](#beginpaint) member function.
 
 ### Remarks
 
@@ -2266,7 +2266,7 @@ Handle to the parent window whose child windows are to be searched.
 Handle to a child window. The search begins with the next child window in the Z order. The child window must be a direct child window of *hwndParent*, not just a descendant window.
 
 *lpszClass*<br/>
-Pointer to a null-terminated string that specifies the class name or a class atom created by a previous call to the [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586) or [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587).
+Pointer to a null-terminated string that specifies the class name or a class atom created by a previous call to the [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa) or [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa).
 
 *lpszWindow*<br/>
 Pointer to a null-terminated string that specifies the window name (the window's title). If this parameter is NULL, all window names match.
@@ -2277,7 +2277,7 @@ If the function succeeds, the return value is a pointer to the window object hav
 
 ### Remarks
 
-This member function emulates the functionality of the function [FindWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms633500), as described in the Windows SDK.
+This member function emulates the functionality of the function [FindWindowEx](/windows/desktop/api/winuser/nf-winuser-findwindowexa), as described in the Windows SDK.
 
 ##  <a name="flashwindow"></a>  CWnd::FlashWindow
 
@@ -2813,7 +2813,7 @@ CWnd* GetAncestor(UINT gaFlags) const;
 ### Parameters
 
 *gaFlags*<br/>
-Specifies the ancestor to be retrieved. For a complete list of possible values, see [GetAncestor](https://msdn.microsoft.com/library/windows/desktop/ms633502).
+Specifies the ancestor to be retrieved. For a complete list of possible values, see [GetAncestor](/windows/desktop/api/winuser/nf-winuser-getancestor).
 
 ### Return Value
 
@@ -2821,7 +2821,7 @@ If the function succeeds, the return value is a pointer to the ancestor window o
 
 ### Remarks
 
-This member function emulates the functionality of the function [GetAncestor](https://msdn.microsoft.com/library/windows/desktop/ms633502), as described in the Windows SDK.
+This member function emulates the functionality of the function [GetAncestor](/windows/desktop/api/winuser/nf-winuser-getancestor), as described in the Windows SDK.
 
 ##  <a name="getcapture"></a>  CWnd::GetCapture
 
@@ -2890,7 +2890,7 @@ void GetClientRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) or a `CRect` object to receive the client coordinates. The `left` and `top` members will be 0. The `right` and `bottom` members will contain the width and height of the window.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or a `CRect` object to receive the client coordinates. The `left` and `top` members will be 0. The `right` and `bottom` members will contain the width and height of the window.
 
 ### Remarks
 
@@ -2964,7 +2964,7 @@ static const MSG* PASCAL GetCurrentMessage();
 
 ### Return Value
 
-Returns a pointer to the [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message the window is currently processing. Should only be called when in an **On**<em>Message</em> handler.
+Returns a pointer to the [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message the window is currently processing. Should only be called when in an **On**<em>Message</em> handler.
 
 ### Example
 
@@ -3036,9 +3036,9 @@ This function, which is an extension to the [GetDC](/windows/desktop/api/winuser
 
 Unless the device context belongs to a window class, the [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) function must be called to release the context after drawing. Since only five common device contexts are available at any given time, failure to release a device context can prevent other applications from gaining access to a device context.
 
-To obtain a cached device context, an application must specify [DCX_CACHE](/windows/desktop/api/winuser/nf-winuser-getdcex). If DCX_CACHE is not specified and the window is neither CS_OWNDC nor [CS_CLASSDC](https://msdn.microsoft.com/library/windows/desktop/ms633576), this function returns NULL.
+To obtain a cached device context, an application must specify [DCX_CACHE](/windows/desktop/api/winuser/nf-winuser-getdcex). If DCX_CACHE is not specified and the window is neither CS_OWNDC nor [CS_CLASSDC](/windows/desktop/api/winuser/ns-winuser-tagwndclassa), this function returns NULL.
 
-A device context with special characteristics is returned by the [GetDCEx](/windows/desktop/api/winuser/nf-winuser-getdcex) function if the CS_CLASSDC, [CS_OWNDC](https://msdn.microsoft.com/library/windows/desktop/ms633576), or [CS_PARENTDC](https://msdn.microsoft.com/library/windows/desktop/ms633576) style was specified in the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure when the class was registered.
+A device context with special characteristics is returned by the [GetDCEx](/windows/desktop/api/winuser/nf-winuser-getdcex) function if the CS_CLASSDC, [CS_OWNDC](/windows/desktop/api/winuser/ns-winuser-tagwndclassa), or [CS_PARENTDC](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) style was specified in the [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure when the class was registered.
 
 For more information about these characteristics, see the description of the `WNDCLASS` structure in the Windows SDK.
 
@@ -3384,7 +3384,7 @@ Pointer to a COLORREF value that receives the transparency color key to be used 
 Pointer to a BYTE that receives the Alpha value used to describe the opacity of the layered window. When the variable referred to by *pbAlpha* is 0, the window is completely transparent. When the variable referred to by *pbAlpha* is 255, the window is opaque. This can be NULL if the argument is not needed.
 
 *pdwFlags*<br/>
-Pointer to a DWORD that receives a layering flag. This can be NULL if the argument is not needed. For a complete list of possible values, see [GetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633508).
+Pointer to a DWORD that receives a layering flag. This can be NULL if the argument is not needed. For a complete list of possible values, see [GetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-getlayeredwindowattributes).
 
 ### Return Value
 
@@ -3392,7 +3392,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the function [GetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633508), as described in the Windows SDK.
+This member function emulates the functionality of the function [GetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-getlayeredwindowattributes), as described in the Windows SDK.
 
 ##  <a name="getmenu"></a>  CWnd::GetMenu
 
@@ -3590,7 +3590,7 @@ A pointer to a `CWnd` object.
 
 If the window has no owner, then a pointer to the parent window object is returned by default. Note that the relationship between the owner and the owned differs from the parent-child aspect in several important aspects. For example, a window with a parent is confined to its parent window's client area. Owned windows can be drawn at any location on the desktop.
 
-The ownership concept of this function is different from the ownership concept of [GetWindow](https://msdn.microsoft.com/library/windows/desktop/ms633515).
+The ownership concept of this function is different from the ownership concept of [GetWindow](/windows/desktop/api/winuser/nf-winuser-getwindow).
 
 ##  <a name="getparent"></a>  CWnd::GetParent
 
@@ -3602,7 +3602,7 @@ CWnd* GetParent() const;
 
 ### Return Value
 
-See the Return Values section in [GetParent](https://msdn.microsoft.com/library/windows/desktop/ms633510) in the Windows SDK.
+See the Return Values section in [GetParent](/windows/desktop/api/winuser/nf-winuser-getparent) in the Windows SDK.
 
 ### Remarks
 
@@ -3955,11 +3955,11 @@ BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
 ### Parameters
 
 *pti*<br/>
-Pointer to a [TITLEBARINFO](https://msdn.microsoft.com/library/windows/desktop/ms632608) structure that receives the information.
+Pointer to a [TITLEBARINFO](/windows/desktop/api/winuser/ns-winuser-tagtitlebarinfo) structure that receives the information.
 
 ### Remarks
 
-This member function emulates the functionality of the function [GetTitleBarInfo](https://msdn.microsoft.com/library/windows/desktop/ms633513), as described in the Windows SDK.
+This member function emulates the functionality of the function [GetTitleBarInfo](/windows/desktop/api/winuser/nf-winuser-gettitlebarinfo), as described in the Windows SDK.
 
 ##  <a name="gettoplevelframe"></a>  CWnd::GetTopLevelFrame
 
@@ -4044,7 +4044,7 @@ BOOL GetUpdateRect(
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or [RECT structure](../../mfc/reference/rect-structure1.md) that is to receive the client coordinates of the update that encloses the update region.
+Points to a `CRect` object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that is to receive the client coordinates of the update that encloses the update region.
 
 Set this parameter to NULL to determine whether an update region exists within the `CWnd`. If *lpRect* is NULL, the `GetUpdateRect` member function returns nonzero if an update region exists and 0 if one does not. This provides a way to determine whether a WM_PAINT message resulted from an invalid area. Do not set this parameter to NULL in Windows version 3.0 and earlier.
 
@@ -4193,11 +4193,11 @@ BOOL GetWindowInfo(PWINDOWINFO pwi) const;
 ### Parameters
 
 *pwi*<br/>
-A pointer to a [WINDOWINFO](https://msdn.microsoft.com/library/windows/desktop/ms632610) structure.
+A pointer to a [WINDOWINFO](/windows/desktop/api/winuser/ns-winuser-tagwindowinfo) structure.
 
 ### Remarks
 
-This member function emulates the functionality of the function [GetWindowInfo](https://msdn.microsoft.com/library/windows/desktop/ms633516), as described in the Windows SDK.
+This member function emulates the functionality of the function [GetWindowInfo](/windows/desktop/api/winuser/nf-winuser-getwindowinfo), as described in the Windows SDK.
 
 ##  <a name="getwindowlesschildcount"></a>  CWnd::GetWindowlessChildCount
 
@@ -4230,7 +4230,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The `flags` member of the [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) structure retrieved by this function is always 0. If `CWnd` is maximized, the `showCmd` member of `WINDOWPLACEMENT` is SW_SHOWMAXIMIZED. If the window is minimized, it is SW_SHOWMINIMIZED. It is SW_SHOWNORMAL otherwise.
+The `flags` member of the [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) structure retrieved by this function is always 0. If `CWnd` is maximized, the `showCmd` member of `WINDOWPLACEMENT` is SW_SHOWMAXIMIZED. If the window is minimized, it is SW_SHOWMINIMIZED. It is SW_SHOWNORMAL otherwise.
 
 ##  <a name="getwindowrect"></a>  CWnd::GetWindowRect
 
@@ -4243,7 +4243,7 @@ void GetWindowRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that will receive the screen coordinates of the upper-left and lower-right corners.
+Points to a `CRect` object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will receive the screen coordinates of the upper-left and lower-right corners.
 
 ### Remarks
 
@@ -4466,7 +4466,7 @@ void InvalidateRect(
 ### Parameters
 
 *lpRect*<br/>
-Points to a `CRect` object or a [RECT structure](../../mfc/reference/rect-structure1.md) that contains the rectangle (in client coordinates) to be added to the update region. If *lpRect* is NULL, the entire client area is added to the region.
+Points to a `CRect` object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains the rectangle (in client coordinates) to be added to the update region. If *lpRect* is NULL, the entire client area is added to the region.
 
 *bErase*<br/>
 Specifies whether the background within the update region is to be erased.
@@ -4596,7 +4596,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 ### Parameters
 
 *lpMsg*<br/>
-Points to an [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to be checked.
+Points to an [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to be checked.
 
 ### Return Value
 
@@ -4829,7 +4829,7 @@ Identifies the window to which points are converted. If this parameter is NULL, 
 Specifies the rectangle whose points are to be converted. The first version of this function is available only for Windows 3.1 and later.
 
 *lpPoint*<br/>
-A pointer to an array of [POINT structure](../../mfc/reference/point-structure1.md) that contain the set of points to be converted.
+A pointer to an array of [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) that contain the set of points to be converted.
 
 *nCount*<br/>
 Specifies the number of `POINT` structures in the array pointed to by *lpPoint*.
@@ -4868,10 +4868,10 @@ The following shows the various system icons that can be used in a message box:
 
 |||
 |-|-|
-|![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif "vc364f1")|MB_ICONHAND, MB_ICONSTOP, and MB_ICONERROR|
-|![Help &#40;&#41; icon](../../mfc/reference/media/vc364f2.gif "vc364f2")|MB_ICONQUESTION|
-|![Important &#40;&#33;&#41; icon](../../mfc/reference/media/vc364f3.gif "vc364f3")|MB_ICONEXCLAMATION and MB_ICONWARNING|
-|![Information &#40;i&#41; icon](../../mfc/reference/media/vc364f4.gif "vc364f4")|MB_ICONASTERISK and MB_ICONINFORMATION|
+|![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif "Stop &#40;x&#41; icon")|MB_ICONHAND, MB_ICONSTOP, and MB_ICONERROR|
+|![Help &#40;?&#41; icon](../../mfc/reference/media/vc364f2.gif "Help &#40;?&#41; icon")|MB_ICONQUESTION|
+|![Important &#40;&#33;&#41; icon](../../mfc/reference/media/vc364f3.gif "Important &#40;&#33;&#41; icon")|MB_ICONEXCLAMATION and MB_ICONWARNING|
+|![Information &#40;i&#41; icon](../../mfc/reference/media/vc364f4.gif "Information &#40;i&#41; icon")|MB_ICONASTERISK and MB_ICONINFORMATION|
 
 ### Example
 
@@ -4905,7 +4905,7 @@ Nonzero if style was successfully modified; otherwise, 0.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](https://msdn.microsoft.com/library/windows/desktop/ms632600) and [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for information about the available window styles.
+Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](/windows/desktop/winmsg/window-styles) and [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyle` calls the Windows API function [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) and redraws the window by combining *nFlags* with the following four preset flags:
 
@@ -5007,7 +5007,7 @@ Specifies the new height of the `CWnd`.
 Specifies whether `CWnd` is to be repainted. If TRUE, `CWnd` receives a [WM_PAINT](/windows/desktop/gdi/wm-paint) message in its [OnPaint](#onpaint) message handler as usual. If this parameter is FALSE, no repainting of any kind occurs. This applies to the client area, to the nonclient area (including the title and scroll bars), and to any part of the parent window uncovered as a result of `CWnd`'s move. When this parameter is FALSE, the application must explicitly invalidate or redraw any parts of `CWnd` and parent window that must be redrawn.
 
 *lpRect*<br/>
-The [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the new size and position.
+The [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the new size and position.
 
 ### Remarks
 
@@ -5202,7 +5202,7 @@ afx_msg void OnCancelMode();
 
 If the `CWnd` object has the focus, its `OnCancelMode` member function is called when a dialog box or message box is displayed. This gives the `CWnd` the opportunity to cancel modes such as mouse capture.
 
-The default implementation responds by calling the [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) Windows function. Override this member function in your derived class to handle other modes.
+The default implementation responds by calling the [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) Windows function. Override this member function in your derived class to handle other modes.
 
 ##  <a name="oncapturechanged"></a>  CWnd::OnCaptureChanged
 
@@ -5219,7 +5219,7 @@ A pointer to the window to gain mouse capture
 
 ### Remarks
 
-A window receives this message even if it calls [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
+A window receives this message even if it calls [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
 
 See the Windows SDK for information on the `ReleaseCapture` Windows function.
 
@@ -5246,7 +5246,7 @@ Specifies the window handle that follows the window being removed from the Clipb
 
 ### Remarks
 
-Each `CWnd` object that receives an `OnChangeCbChain` call should use the [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function to send the [WM_CHANGECBCHAIN](/windows/desktop/dataxchg/wm-changecbchain) message to the next window in the Clipboard-viewer chain (the handle returned by `SetClipboardViewer`). If *hWndRemove* is the next window in the chain, the window specified by *hWndAfter* becomes the next window, and Clipboard messages are passed on to it.
+Each `CWnd` object that receives an `OnChangeCbChain` call should use the [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows function to send the [WM_CHANGECBCHAIN](/windows/desktop/dataxchg/wm-changecbchain) message to the next window in the Clipboard-viewer chain (the handle returned by `SetClipboardViewer`). If *hWndRemove* is the next window in the chain, the window specified by *hWndAfter* becomes the next window, and Clipboard messages are passed on to it.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -5518,7 +5518,7 @@ afx_msg int OnCompareItem(
 The identifier of the control that sent the WM_COMPAREITEM message.
 
 *lpCompareItemStruct*<br/>
-Contains a long pointer to a [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) data structure that contains the identifiers and application-supplied data for two items in the combo or list box.
+Contains a long pointer to a [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) data structure that contains the identifiers and application-supplied data for two items in the combo or list box.
 
 ### Return Value
 
@@ -5626,7 +5626,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-Points to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure that contains information about the `CWnd` object being created.
+Points to a [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure that contains information about the `CWnd` object being created.
 
 ### Return Value
 
@@ -5761,7 +5761,7 @@ afx_msg void OnDeleteItem(
 The identifier of the control that sent the WM_DELETEITEM message.
 
 *lpDeleteItemStruct*<br/>
-Specifies a long pointer to a [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) data structure that contains information about the deleted list box item.
+Specifies a long pointer to a [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) data structure that contains information about the deleted list box item.
 
 ### Remarks
 
@@ -5873,7 +5873,7 @@ afx_msg void OnDrawClipboard();
 
 Only applications that have joined the Clipboard-viewer chain by calling the [SetClipboardViewer](#setclipboardviewer) member function need to respond to this call.
 
-Each window that receives an `OnDrawClipboard` call should call the [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function to pass a [WM_DRAWCLIPBOARD](/windows/desktop/dataxchg/wm-drawclipboard) message on to the next window in the Clipboard-viewer chain. The handle of the next window is returned by the [SetClipboardViewer](#setclipboardviewer) member function; it may be modified in response to an [OnChangeCbChain](#onchangecbchain) member function call.
+Each window that receives an `OnDrawClipboard` call should call the [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows function to pass a [WM_DRAWCLIPBOARD](/windows/desktop/dataxchg/wm-drawclipboard) message on to the next window in the Clipboard-viewer chain. The handle of the next window is returned by the [SetClipboardViewer](#setclipboardviewer) member function; it may be modified in response to an [OnChangeCbChain](#onchangecbchain) member function call.
 
 ##  <a name="ondrawiconicthumbnailorlivepreview"></a>  CWnd::OnDrawIconicThumbnailOrLivePreview
 
@@ -5929,7 +5929,7 @@ Specifies a long pointer to a `DRAWITEMSTRUCT` data structure that contains info
 
 ### Remarks
 
-The `itemAction` member of the [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure defines the drawing operation that is to be performed. The data in this member allows the owner of the control to determine what drawing action is required.
+The `itemAction` member of the [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure defines the drawing operation that is to be performed. The data in this member allows the owner of the control to determine what drawing action is required.
 
 Before returning from processing this message, an application should ensure that the device context identified by the *hDC* member of the `DRAWITEMSTRUCT` structure is restored to the default state.
 
@@ -5997,7 +5997,7 @@ The `OnEndSession` call informs the `CWnd` object whether the session is actuall
 
 If *bEnding* is TRUE, Windows can terminate any time after all applications have returned from processing this call. Consequently, have an application perform all tasks required for termination within `OnEndSession`.
 
-You do not need to call the [DestroyWindow](#destroywindow) member function or [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) Windows function when the session is ending.
+You do not need to call the [DestroyWindow](#destroywindow) member function or [PostQuitMessage](/windows/desktop/api/winuser/nf-winuser-postquitmessage) Windows function when the session is ending.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -6145,7 +6145,7 @@ afx_msg void OnFontChange();
 
 An application that adds or removes fonts from the system (for example, through the [AddFontResource](/windows/desktop/api/wingdi/nf-wingdi-addfontresourcea) or [RemoveFontResource](/windows/desktop/api/wingdi/nf-wingdi-removefontresourcea) Windows function) should send the [WM_FONTCHANGE](/windows/desktop/gdi/wm-fontchange) message to all top-level windows.
 
-To send this message, use the [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function with the *hWnd* parameter set to HWND_BROADCAST.
+To send this message, use the [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows function with the *hWnd* parameter set to HWND_BROADCAST.
 
 ##  <a name="ongetdlgcode"></a>  CWnd::OnGetDlgCode
 
@@ -6198,7 +6198,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-Points to a `MINMAXINFO` structure that contains information about a window's maximized size and position and its minimum and maximum tracking size. For more about this structure, see the [MINMAXINFO](../../mfc/reference/minmaxinfo-structure.md) structure.
+Points to a `MINMAXINFO` structure that contains information about a window's maximized size and position and its minimum and maximum tracking size. For more about this structure, see the [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
 
 ### Remarks
 
@@ -6299,7 +6299,7 @@ afx_msg void OnHotKey(
 
 ### Remarks
 
-This method receives the [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) function to register a system-wide hot key.
+This method receives the [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) function to register a system-wide hot key.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -6682,7 +6682,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 ### Remarks
 
-Only windows that have the CS_DBLCLKS [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) style will receive `OnLButtonDblClk` calls. This is the default for Microsoft Foundation Class windows. Windows calls `OnLButtonDblClk` when the user presses, releases, and then presses the left mouse button again within the system's double-click time limit. Double-clicking the left mouse button actually generates four events: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) messages, the WM_LBUTTONDBLCLK call, and another WM_LBUTTONUP message when the button is released.
+Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) style will receive `OnLButtonDblClk` calls. This is the default for Microsoft Foundation Class windows. Windows calls `OnLButtonDblClk` when the user presses, releases, and then presses the left mouse button again within the system's double-click time limit. Double-clicking the left mouse button actually generates four events: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) messages, the WM_LBUTTONDBLCLK call, and another WM_LBUTTONUP message when the button is released.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -6781,7 +6781,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 ### Remarks
 
-Only windows that have the CS_DBLCLKS [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) style will receive `OnMButtonDblClk` calls. This is the default for all Microsoft Foundation Class windows. Windows generates an `OnMButtonDblClk` call when the user presses, releases, and then presses the middle mouse button again within the system's double-click time limit. Double-clicking the middle mouse button actually generates four events: [WM_MBUTTONDOWN](#onmbuttondown) and [WM_MBUTTONUP](#onmbuttonup) messages, the WM_MBUTTONDBLCLK call, and another WM_MBUTTONUP message.
+Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) style will receive `OnMButtonDblClk` calls. This is the default for all Microsoft Foundation Class windows. Windows generates an `OnMButtonDblClk` call when the user presses, releases, and then presses the middle mouse button again within the system's double-click time limit. Double-clicking the middle mouse button actually generates four events: [WM_MBUTTONDOWN](#onmbuttondown) and [WM_MBUTTONUP](#onmbuttonup) messages, the WM_MBUTTONDBLCLK call, and another WM_MBUTTONUP message.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -6894,7 +6894,7 @@ afx_msg void OnMeasureItem(
 The ID of the control.
 
 *lpMeasureItemStruct*<br/>
-Points to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) data structure that contains the dimensions of the owner-draw control.
+Points to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) data structure that contains the dimensions of the owner-draw control.
 
 ### Remarks
 
@@ -7131,7 +7131,7 @@ For a description of the individual hit-test area codes, see the [OnNcHitTest](#
 
 ##  <a name="onmousehover"></a>  CWnd::OnMouseHover
 
-The framework calls this member function when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).
+The framework calls this member function when the cursor hovers over the client area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).
 
 ```
 afx_msg void OnMouseHover(
@@ -7193,7 +7193,7 @@ This method receives the [WM_MOUSEHWHEEL](/windows/desktop/inputdev/wm-mousehwhe
 
 ##  <a name="onmouseleave"></a>  CWnd::OnMouseLeave
 
-The framework calls this member function when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).
+The framework calls this member function when the cursor leaves the client area of the window specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).
 
 ```
 afx_msg void OnMouseLeave();
@@ -7329,7 +7329,7 @@ afx_msg void OnMoving(
 The edge of window to be moved.
 
 *lpRect*<br/>
-Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
+Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will contain the item's coordinates.
 
 ### Remarks
 
@@ -7376,7 +7376,7 @@ afx_msg void OnNcCalcSize(
 Specifies whether the application should specify which part of the client area contains valid information. Windows will copy the valid information to the specified area within the new client area. If this parameter is TRUE, the application should specify which part of the client area is valid.
 
 *lpncsp*<br/>
-Points to a [NCCALCSIZE_PARAMS](../../mfc/reference/nccalcsize-params-structure.md) data structure that contains information an application can use to calculate the new size and position of the `CWnd` rectangle (including client area, borders, caption, scroll bars, and so on).
+Points to a [NCCALCSIZE_PARAMS](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params) data structure that contains information an application can use to calculate the new size and position of the `CWnd` rectangle (including client area, borders, caption, scroll bars, and so on).
 
 ### Remarks
 
@@ -7402,7 +7402,7 @@ afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-Points to the [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) data structure for `CWnd`.
+Points to the [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) data structure for `CWnd`.
 
 ### Return Value
 
@@ -7442,7 +7442,7 @@ Contains the x- and y-coordinates of the cursor. These coordinates are always sc
 
 ### Return Value
 
-One of the mouse hit-test enumerated values listed below.
+One of the mouse hit-test enumerated values. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 ### Remarks
 
@@ -7462,7 +7462,7 @@ afx_msg void OnNcLButtonDblClk(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7487,7 +7487,7 @@ afx_msg void OnNcLButtonDown(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7512,7 +7512,7 @@ afx_msg void OnNcLButtonUp(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7595,7 +7595,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 
 ##  <a name="onncmousehover"></a>  CWnd::OnNcMouseHover
 
-The framework calls this member function when the cursor hovers over the nonclient area of the window for the period of time specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).
+The framework calls this member function when the cursor hovers over the nonclient area of the window for the period of time specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).
 
 ```
 afx_msg void OnNcMouseHover(
@@ -7619,7 +7619,7 @@ This method receives the [WM_NCMOUSEHOVER](/windows/desktop/inputdev/wm-ncmouseh
 
 ##  <a name="onncmouseleave"></a>  CWnd::OnNcMouseLeave
 
-The framework calls this member function when the cursor leaves the nonclient area of the window specified in a prior call to [TrackMouseEvent](https://msdn.microsoft.com/library/windows/desktop/ms646265).
+The framework calls this member function when the cursor leaves the nonclient area of the window specified in a prior call to [TrackMouseEvent](/windows/desktop/api/winuser/nf-winuser-trackmouseevent).
 
 ```
 afx_msg void OnNcMouseLeave();
@@ -7911,7 +7911,7 @@ afx_msg UINT OnNotifyFormat(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pWnd*|[in] A pointer to a `CWnd` object that represents the window sending the [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) message.<br /><br /> This parameter is the pointer to a control if the *nCommand* parameter is NF_QUERY, or the pointer to the parent window of a control if *nCommand* is NF_REQUERY.|
+|*pWnd*|[in] A pointer to a `CWnd` object that represents the window sending the [WM_NOTIFY](/windows/desktop/controls/wm-notify) message.<br /><br /> This parameter is the pointer to a control if the *nCommand* parameter is NF_QUERY, or the pointer to the parent window of a control if *nCommand* is NF_REQUERY.|
 |*nCommand*|[in] A command value that specializes the WM_NOTIFY message. The possible values are:<br /><br /> - NF_QUERY -<br />     The message is a query to determine whether ANSI or Unicode structures should be used in WM_NOTIFY messages. This message is sent from a control to its parent window during the creation of a control, and in response to the NF_REQUERY form of this message.<br />- NF_REQUERY -<br />     The message is a request for a control to send the NF_QUERY form of this message to its parent window. This request is sent from the parent window, and asks the control to requery the parent about the type of structure to use in WM_NOTIFY messages. If the *nCommand* parameter is NF_REQUERY, the return value is the result of the requery operation.|
 
 ### Return Value
@@ -7939,7 +7939,7 @@ afx_msg void OnPaint();
 
 ### Remarks
 
-The [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145137) message is sent when the [UpdateWindow](#updatewindow) or [RedrawWindow](#redrawwindow) member function is called.
+The [WM_PAINT](/windows/desktop/gdi/the-wm-paint-message) message is sent when the [UpdateWindow](#updatewindow) or [RedrawWindow](#redrawwindow) member function is called.
 
 A window may receive internal paint messages as a result of calling the `RedrawWindow` member function with the RDW_INTERNALPAINT flag set. In this case, the window may not have an update region. An application should call the [GetUpdateRect](#getupdaterect) member function to determine whether the window has an update region. If `GetUpdateRect` returns 0, the application should not call the [BeginPaint](#beginpaint) and [EndPaint](#endpaint) member functions.
 
@@ -7951,7 +7951,7 @@ For information on rendering an image in document/view applications, see [CView:
 
 For more information about using `WM_Paint`, see the following topics in the Windows SDK:
 
-- [The WM_PAINT Message](https://msdn.microsoft.com/library/windows/desktop/dd145137)
+- [The WM_PAINT Message](/windows/desktop/gdi/the-wm-paint-message)
 
 - [Using the WM_PAINT Message](/windows/desktop/gdi/using-the-wm-paint-message)
 
@@ -7971,7 +7971,7 @@ afx_msg void OnPaintClipboard(
 Specifies a pointer to the Clipboard-application window. The pointer may be temporary and should not be stored for later use.
 
 *hPaintStruct*<br/>
-Identifies a [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) data structure that defines what part of the client area to paint.
+Identifies a [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) data structure that defines what part of the client area to paint.
 
 ### Remarks
 
@@ -8189,7 +8189,7 @@ afx_msg void OnRawInput(
 |Parameter|Description|
 |---------------|-----------------|
 |*nInputCode*|[in] Input code that indicates whether the input occurred while the application was in the foreground or not. In either case, the application must call [CWnd::DefWindowProc](#defwindowproc) so the system can perform cleanup.<br /><br /> This parameter can be one of the following values:<br /><br /> - RIM_INPUT - Input occurred while the application was in the foreground.<br />- RIM_INPUTSINK - Input occurred while the application was not in the foreground.|
-|*hRawInput*|[in] Handle to a [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) structure that contains the raw input from the device.|
+|*hRawInput*|[in] Handle to a [RAWINPUT](/windows/desktop/api/winuser/ns-winuser-tagrawinput) structure that contains the raw input from the device.|
 
 ### Remarks
 
@@ -8228,7 +8228,7 @@ Specifies the x and y coordinates of the cursor. These coordinates are always re
 
 ### Remarks
 
-Only windows that have the CS_DBLCLKS [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) style can receive `OnRButtonDblClk` calls. This is the default for windows within the Microsoft Foundation Class Library. Windows calls `OnRButtonDblClk` when the user presses, releases, and then again presses the right mouse button within the system's double-click time limit. Double-clicking the right mouse button actually generates four events: [WM_RBUTTONDOWN](#onrbuttondown) and [WM_RBUTTONUP](#onrbuttonup) messages, the `OnRButtonDblClk` call, and another WM_RBUTTONUP message when the button is released.
+Only windows that have the CS_DBLCLKS [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) style can receive `OnRButtonDblClk` calls. This is the default for windows within the Microsoft Foundation Class Library. Windows calls `OnRButtonDblClk` when the user presses, releases, and then again presses the right mouse button within the system's double-click time limit. Double-clicking the right mouse button actually generates four events: [WM_RBUTTONDOWN](#onrbuttondown) and [WM_RBUTTONUP](#onrbuttonup) messages, the `OnRButtonDblClk` call, and another WM_RBUTTONUP message when the button is released.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -8458,7 +8458,7 @@ afx_msg void OnSettingChange(
 ### Parameters
 
 *uFlags*<br/>
-When the system sends the message as a result of a `SystemParametersInfo` call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see [SystemParametersInfo](https://msdn.microsoft.com/library/windows/desktop/ms724947) in the Windows SDK. When an application sends the message, this parameter must be 0.
+When the system sends the message as a result of a `SystemParametersInfo` call, this parameter is a flag that indicates the system parameter that was changed. For a list of values, see [SystemParametersInfo](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) in the Windows SDK. When an application sends the message, this parameter must be 0.
 
 *lpszSection*<br/>
 Points to a string that specifies the name of the section that has changed. (The string does not include the square brackets that enclose the section name.)
@@ -8590,7 +8590,7 @@ afx_msg void OnSizing(
 The edge of window to be moved.
 
 *lpRect*<br/>
-Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](../../mfc/reference/rect-structure1.md) that will contain the item's coordinates.
+Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that will contain the item's coordinates.
 
 ### Remarks
 
@@ -8648,7 +8648,7 @@ Specifies whether the window's extended or nonextended styles have changed. This
 - GWL_STYLE The window's nonextended styles have changed.
 
 *lpStyleStruct*<br/>
-Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
+Points to a [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
 
 ### Remarks
 
@@ -8675,7 +8675,7 @@ Specifies whether the window's extended or nonextended styles have changed. This
 - GWL_STYLE The window's nonextended styles have changed.
 
 *lpStyleStruct*<br/>
-Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) structure that contains the new styles for the window. An application can examine the styles and change them.
+Points to a [STYLESTRUCT](/windows/desktop/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles and change them.
 
 ### Remarks
 
@@ -9002,7 +9002,7 @@ afx_msg void OnTimeChange();
 
 ### Remarks
 
-Have any application that changes the system time send this message to all top-level windows. To send the WM_TIMECHANGE message to all top-level windows, an application can use the [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function with its *hwnd* parameter set to HWND_BROADCAST.
+Have any application that changes the system time send this message to all top-level windows. To send the WM_TIMECHANGE message to all top-level windows, an application can use the [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows function with its *hwnd* parameter set to HWND_BROADCAST.
 
 ##  <a name="ontimer"></a>  CWnd::OnTimer
 
@@ -9382,7 +9382,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-Points to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) data structure that contains information about the window's new size and position.
+Points to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) data structure that contains information about the window's new size and position.
 
 ### Remarks
 
@@ -9406,7 +9406,7 @@ Points to a `WINDOWPOS` data structure that contains information about the windo
 
 ### Remarks
 
-An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure.
+An application can prevent changes to the window by setting or clearing the appropriate bits in the **flags** member of the [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure.
 
 For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) message to the window. This is done to validate the new size and position of the window and to enforce the CS_BYTEALIGNCLIENT and CS_BYTEALIGN client styles. An application can override this functionality by not calling its base class.
 
@@ -9428,9 +9428,9 @@ Points to a string that specifies the name of the section that has changed. (The
 
 ### Remarks
 
-The [SystemParametersInfo](https://msdn.microsoft.com/library/windows/desktop/ms724947) Windows function calls `OnWinIniChange` after an application uses the function to change a setting in the WIN.INI file.
+The [SystemParametersInfo](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) Windows function calls `OnWinIniChange` after an application uses the function to change a setting in the WIN.INI file.
 
-To send the WM_WININICHANGE message to all top-level windows, an application can use the [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function with its *hwnd* parameter set to HWND_BROADCAST.
+To send the WM_WININICHANGE message to all top-level windows, an application can use the [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows function with its *hwnd* parameter set to HWND_BROADCAST.
 
 If an application changes many different sections in WIN.INI at the same time, the application should send one WM_WININICHANGE message with *lpszSection* set to NULL. Otherwise, an application should send WM_WININICHANGE each time it makes a change to WIN.INI.
 
@@ -9698,9 +9698,9 @@ Nonzero if the message is posted; otherwise 0.
 
 ### Remarks
 
-Messages in a message queue are retrieved by calls to the [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936) or [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) Windows function.
+Messages in a message queue are retrieved by calls to the [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage) or [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagea) Windows function.
 
-The Windows [PostMessage](https://msdn.microsoft.com/library/windows/desktop/ms644944) function can be used to access another application.
+The Windows [PostMessage](/windows/desktop/api/winuser/nf-winuser-postmessagea) function can be used to access another application.
 
 ### Example
 
@@ -9729,7 +9729,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### Parameters
 
 *cs*<br/>
-A [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
+A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 ### Return Value
 
@@ -9777,7 +9777,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+Points to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -9899,7 +9899,7 @@ BOOL RedrawWindow(
 ### Parameters
 
 *lpRectUpdate*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the coordinates of the update rectangle. This parameter is ignored if *prgnUpdate* contains a valid region handle.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) containing the coordinates of the update rectangle. This parameter is ignored if *prgnUpdate* contains a valid region handle.
 
 *prgnUpdate*<br/>
 Identifies the update region. If both *prgnUpdate* and *lpRectUpdate* are NULL, the entire client area is added to the update region.
@@ -10069,10 +10069,10 @@ Can have one of the following values:
 - `CWnd::reposExtra` Adds the values of *lpRectParam* to the client area of *nIDLast* and also performs the layout.
 
 *lpRectParam*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md); the usage of which depends on the value of *nFlag*.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect); the usage of which depends on the value of *nFlag*.
 
 *lpRectClient*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) containing the available client area. If NULL, the window's client area will be used.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) containing the available client area. If NULL, the window's client area will be used.
 
 *bStretch*<br/>
 Indicates whether the bar should be stretched to the size of the frame.
@@ -10119,10 +10119,10 @@ void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) 
 ### Parameters
 
 *lpPoint*<br/>
-Points to a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT structure](../../mfc/reference/point-structure1.md) that contains the screen coordinates to be converted.
+Points to a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT structure](/windows/desktop/api/windef/ns-windef-tagpoint) that contains the screen coordinates to be converted.
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains the screen coordinates to be converted.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains the screen coordinates to be converted.
 
 ### Remarks
 
@@ -10153,7 +10153,7 @@ Specifies the amount, in device units, of horizontal scrolling. This parameter m
 Specifies the amount, in device units, of vertical scrolling. This parameter must be a negative value to scroll up.
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If *lpRect* is NULL, the entire client area is scrolled. The caret is repositioned if the cursor rectangle intersects the scroll rectangle.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the portion of the client area to be scrolled. If *lpRect* is NULL, the entire client area is scrolled. The caret is repositioned if the cursor rectangle intersects the scroll rectangle.
 
 *lpClipRect*<br/>
 Points to a `CRect` object or `RECT` structure that specifies the clipping rectangle to scroll. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRect* rectangle. If *lpClipRect* is NULL, no clipping is performed on the scroll rectangle.
@@ -10192,7 +10192,7 @@ Specifies the amount, in device units, of horizontal scrolling. This parameter m
 Specifies the amount, in device units, of vertical scrolling. This parameter must have a negative value to scroll up.
 
 *lpRectScroll*<br/>
-Points to a [RECT structure](../../mfc/reference/rect-structure1.md) that specifies the portion of the client area to be scrolled. If this parameter is NULL, the entire client area is scrolled.
+Points to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that specifies the portion of the client area to be scrolled. If this parameter is NULL, the entire client area is scrolled.
 
 *lpRectClip*<br/>
 Points to a `RECT` structure that specifies the clipping rectangle to scroll. This structure takes precedence over the rectangle pointed to by *lpRectScroll*. Only bits inside this rectangle are scrolled. Bits outside this rectangle are not affected even if they are in the *lpRectScroll* rectangle. If this parameter is NULL, no clipping is performed on the scroll rectangle.
@@ -10224,7 +10224,7 @@ If [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) and [
 
 If the window has the [WS_CLIPCHILDREN](/windows/desktop/api/winuser/nf-winuser-createwindowa) style, the returned areas specified by *prgnUpdate* and *lpRectUpdate* represent the total area of the scrolled window that must be updated, including any areas in child windows that need updating.
 
-If the [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) flag is specified, Windows will not properly update the screen if part of a child window is scrolled. The part of the scrolled child window that lies outside the source rectangle will not be erased and will not be redrawn properly in its new destination. Use the [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows function to move child windows that do not lie completely within the *lpRectScroll* rectangle. The cursor is repositioned if the SW_SCROLLCHILDREN flag is set and the caret rectangle intersects the scroll rectangle.
+If the [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) flag is specified, Windows will not properly update the screen if part of a child window is scrolled. The part of the scrolled child window that lies outside the source rectangle will not be erased and will not be redrawn properly in its new destination. Use the [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) Windows function to move child windows that do not lie completely within the *lpRectScroll* rectangle. The cursor is repositioned if the SW_SCROLLCHILDREN flag is set and the caret rectangle intersects the scroll rectangle.
 
 All input and output coordinates (for *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, and *prgnUpdate*) are assumed to be in client coordinates, regardless of whether the window has the CS_OWNDC or CS_CLASSDC class style. Use the [LPtoDP](/windows/desktop/api/wingdi/nf-wingdi-lptodp) and [DPtoLP](/windows/desktop/api/wingdi/nf-wingdi-dptolp) Windows functions to convert to and from logical coordinates, if necessary.
 
@@ -10427,7 +10427,7 @@ A pointer to the window object that previously received all mouse input. It is N
 
 ### Remarks
 
-When `CWnd` no longer requires all mouse input, the application should call the [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) function so that other windows can receive mouse input.
+When `CWnd` no longer requires all mouse input, the application should call the [ReleaseCapture](/windows/desktop/api/winuser/nf-winuser-releasecapture) function so that other windows can receive mouse input.
 
 While mouse input is captured, no WM_NCHITTEST or WM_SETCURSOR messages are sent to the active window.
 
@@ -10719,7 +10719,7 @@ This owner can then receive command messages from the current window object. By 
 
 It is often useful to establish connections between window objects that are unrelated to the window hierarchy. For example, [CToolBar](../../mfc/reference/ctoolbar-class.md) sends notifications to its owner instead of to its parent. This allows the toolbar to become the child of one window (such as an OLE container application window) while sending notifications to another window (such as the in-place frame window). Furthermore, when a server window is deactivated or activated during in-place editing, any window owned by the frame window is hidden or shown. This ownership is explicitly set with a call to `SetOwner`.
 
-The ownership concept of this function is different from the ownership concept of [GetWindow](https://msdn.microsoft.com/library/windows/desktop/ms633515).
+The ownership concept of this function is different from the ownership concept of [GetWindow](/windows/desktop/api/winuser/nf-winuser-getwindow).
 
 ##  <a name="setparent"></a>  CWnd::SetParent
 
@@ -10991,7 +10991,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT* lpwndpl);
 ### Parameters
 
 *lpwndpl*<br/>
-Points to a [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) structure that specifies the new show state and positions.
+Points to a [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) structure that specifies the new show state and positions.
 
 ### Return Value
 
@@ -11447,7 +11447,7 @@ Pointer to a COLORREF value that specifies the transparency color key to be used
 Pointer to a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure that specifies the transparency value to be used when composing the layered window.
 
 *dwFlags*<br/>
-Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [UpdateLayeredWindow](https://msdn.microsoft.com/library/windows/desktop/ms633556).
+Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [UpdateLayeredWindow](/windows/desktop/api/winuser/nf-winuser-updatelayeredwindow).
 
 ### Return Value
 
@@ -11455,7 +11455,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the function [UpdateLayeredWindow](https://msdn.microsoft.com/library/windows/desktop/ms633556), as described in the Windows SDK.
+This member function emulates the functionality of the function [UpdateLayeredWindow](/windows/desktop/api/winuser/nf-winuser-updatelayeredwindow), as described in the Windows SDK.
 
 ##  <a name="updatewindow"></a>  CWnd::UpdateWindow
 
@@ -11484,7 +11484,7 @@ void ValidateRect(LPCRECT lpRect);
 ### Parameters
 
 *lpRect*<br/>
-Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) that contains client coordinates of the rectangle to be removed from the update region. If *lpRect* is NULL, the entire window is validated.
+Points to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that contains client coordinates of the rectangle to be removed from the update region. If *lpRect* is NULL, the entire window is validated.
 
 ### Remarks
 
@@ -11522,7 +11522,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 ### Parameters
 
 *point*<br/>
-Specifies a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT](../../mfc/reference/point-structure1.md) data structure that defines the point to be checked.
+Specifies a [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) object or [POINT](/windows/desktop/api/windef/ns-windef-tagpoint) data structure that defines the point to be checked.
 
 ### Return Value
 
@@ -11618,7 +11618,7 @@ virtual void ResizeDynamicLayout();
 
 ### Remarks
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

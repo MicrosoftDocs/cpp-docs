@@ -49,7 +49,6 @@ The **CArchive <\<** and **>>** operators always return a reference to the `CArc
 
 [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]
 
-## See Also
+## See also
 
 [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)
-

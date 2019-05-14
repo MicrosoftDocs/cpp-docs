@@ -34,8 +34,8 @@ Response files and DEF files can be either UTF-16 with a BOM, or ANSI.
 
 ## .asm and .cod dumps
 
-.asm and .cod dumps are in ANSI by default for compatibility with MASM. Use [/FAu](../../build/reference/fa-fa-listing-file.md) to output UTF-8. Note that if you specify **/FAs**, the intermingled source will just be directly printed and may look garbled, for example if source code is UTF-8 and you didn't specify **/FAsu**.
+.asm and .cod dumps are in ANSI by default for compatibility with MASM. Use [/FAu](fa-fa-listing-file.md) to output UTF-8. Note that if you specify **/FAs**, the intermingled source will just be directly printed and may look garbled, for example if source code is UTF-8 and you didn't specify **/FAsu**.
 
 ## See also
 
-[Build C/C++ code on the command line](../../build/building-on-the-command-line.md)
+[Use the MSVC toolset from the command line](../building-on-the-command-line.md)

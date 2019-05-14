@@ -296,11 +296,10 @@ If the logical palette is selected into a device context when the application ca
 
 For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
-

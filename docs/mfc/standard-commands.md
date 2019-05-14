@@ -36,7 +36,6 @@ The framework provides varying levels of support for these commands. Some comman
 
 For more information about the commands supported and the level of implementation provided, see [Technical Note 22](../mfc/tn022-standard-commands-implementation.md). The standard commands are defined in the file AFXRES.H.
 
-## See Also
+## See also
 
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
-

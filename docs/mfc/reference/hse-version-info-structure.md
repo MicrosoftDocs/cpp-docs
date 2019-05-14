@@ -30,7 +30,6 @@ The text description of the ISA. The default implementation provides placeholder
 
 **Header:** httpext.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

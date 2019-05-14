@@ -35,6 +35,6 @@ An IVector or IVectorView interface that provides access to an underlying Vector
 
 **Namespace:** Windows::Foundation::Collections
 
-## See Also
+## See also
 
 [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

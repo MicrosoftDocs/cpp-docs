@@ -16,7 +16,7 @@ Every container application should derive at least one class from `COleClientIte
 
 `CDocItem` is the base class for `COleClientItem` and `COleServerItem`. Objects of classes derived from these two act as intermediaries between the OLE item and the client and server applications, respectively. Each time a new OLE item is added to the document, the MFC framework adds a new object of your client application's `COleClientItem`-derived class to the document's collection of `CDocItem` objects.
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: Compound Files](../mfc/containers-compound-files.md)<br/>

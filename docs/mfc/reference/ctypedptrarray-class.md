@@ -43,7 +43,7 @@ Type of the elements stored in the base-class array.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|
+|[CTypedPtrArray::operator \[ \]](#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
@@ -302,9 +302,9 @@ The object pointer to be added to this array. A **NULL** value is allowed.
 
 For more detailed remarks, see [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPtrArray Class](../../mfc/reference/cptrarray-class.md)<br/>
 [CObArray Class](../../mfc/reference/cobarray-class.md)

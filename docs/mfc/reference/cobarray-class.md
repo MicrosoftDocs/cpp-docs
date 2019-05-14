@@ -49,7 +49,7 @@ class CObArray : public CObject
 
 |Name|Description|
 |----------|-----------------|
-|[CObArray::operator [ ]](#operator_at)|Sets or gets the element at the specified index.|
+|[CObArray::operator \[ \]](#operator_at)|Sets or gets the element at the specified index.|
 
 ## Remarks
 
@@ -798,7 +798,7 @@ The following table shows other member functions that are similar to `CObArray::
 
   See the example for [CObArray::GetData](#getdata).
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -37,7 +37,7 @@ A "rich edit control" is a window in which the user can enter and edit text. The
 
 This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.
 
-For an example of using rich edit container items in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using rich edit container items in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -96,9 +96,9 @@ Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) st
 
 For more information, see [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>

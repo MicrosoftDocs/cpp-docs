@@ -15,6 +15,6 @@ The output files produced by LIB depend on the mode in which it is being used, a
 |Extracting a member with /EXTRACT|Object (.obj) file|
 |Building an export file and import library with /DEF|Import library (.lib) and export (.exp) file|
 
-## See Also
+## See also
 
-[Overview of LIB](../../build/reference/overview-of-lib.md)
+[Overview of LIB](overview-of-lib.md)

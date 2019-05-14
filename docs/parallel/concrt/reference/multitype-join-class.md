@@ -280,7 +280,7 @@ Unlinks all targets from this `multitype_join` messaging block.
 virtual void unlink_targets();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [choice Class](choice-class.md)<br/>

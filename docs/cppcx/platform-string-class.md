@@ -65,11 +65,11 @@ The String class has the following operators.
 
 |Member|Description|
 |------------|-----------------|
-|[String::operator== Operator](#operator-equality)|Indicates whether two specifed String objects have the same value.|
+|[String::operator== Operator](#operator-equality)|Indicates whether two specified String objects have the same value.|
 |[operator+ Operator](#operator-plus)|Concatenates two String objects into a new String object.|
 |[String::operator> Operator](#operator-greater-than)|Indicates whether the value of one String object is greater than the value of a second String object.|
 |[String::operator>= Operator](#operator-greater-than-or-equals)|Indicates whether the value of one String object is greater than or equal to the value of a second String object.|
-|[String::operator!= Operator](#operator-inequality)|Indicates whether two specifed String objects have different values.|
+|[String::operator!= Operator](#operator-inequality)|Indicates whether two specified String objects have different values.|
 |[String::operator< Operator](#operator-less-than)|Indicates whether the value of one String object is less than the value of a second String object.|
 
 ### Requirements
@@ -391,7 +391,7 @@ The second `String` object.
 
 ## <a name="operator-inequality"></a> String::operator!=
 
-Indicates whether two specifed `String` objects have different values.
+Indicates whether two specified `String` objects have different values.
 
 ### Syntax
 
@@ -476,6 +476,6 @@ String^ String::ToString();
 
 A `String` object whose value is the same as the current string.
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

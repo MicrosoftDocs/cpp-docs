@@ -1,6 +1,6 @@
 ---
 title: "unsupported_feature Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["unsupported_feature", "AMPRT/unsupported_feature", "AMPRT/Concurrency::unsupported_feature"]
 helpviewer_keywords: ["unsupported_feature class"]
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
@@ -21,7 +21,7 @@ class unsupported_feature : public runtime_exception;
 
 |Name|Description|
 |----------|-----------------|
-|[unsupported_feature Constructor](#ctor)|Constructs a new instance of the `unsupported_feature` exception.|
+|[unsupported_feature Constructor](#unsupported_feature)|Constructs a new instance of the `unsupported_feature` exception.|
 
 ## Inheritance Hierarchy
 
@@ -31,9 +31,9 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupported_feature__ctor"></a> unsupported_feature
+## <a name="unsupported_feature"></a> unsupported_feature
 
-  Constructs a new instance of the unsupported_feature exception.
+  Constructs a new instance of the `unsupported_feature` exception.
 
 ### Syntax
 
@@ -59,6 +59,6 @@ The `unsupported_feature` object.
 
 **Namespace:** Concurrency
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

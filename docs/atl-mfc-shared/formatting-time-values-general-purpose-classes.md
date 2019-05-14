@@ -21,4 +21,3 @@ Use the `Format` member function from either the [CTime](../atl-mfc-shared/refer
 - [Working with SYSTEMTIME](../atl-mfc-shared/date-and-time-systemtime-support.md)
 
 - [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Updating the MFC Scribble Application (Part 2)"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["walkthroughs [MFC]"]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 ---
@@ -10,7 +10,7 @@ ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 
 ## Prerequisites
 
-[Visual C++ Samples](../visual-cpp-samples.md)
+[Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 ##  <a name="top"></a> Sections
 
@@ -328,7 +328,7 @@ Next, initialize the color and width of the pens. Finally, save and load a color
 
 You've updated the MFC Scribble application. Use this walkthrough as a guide when you modify your existing applications.
 
-## See Also
+## See also
 
 [Walkthroughs](../mfc/walkthroughs-mfc.md)<br/>
 [Walkthrough: Updating the MFC Scribble Application (Part 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

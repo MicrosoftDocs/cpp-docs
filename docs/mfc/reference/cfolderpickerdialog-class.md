@@ -1,6 +1,6 @@
 ---
 title: "CFolderPickerDialog Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog::CFolderPickerDialog"]
 helpviewer_keywords: ["CFolderPickerDialog [MFC], CFolderPickerDialog"]
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156
@@ -21,7 +21,7 @@ class CFolderPickerDialog : public CFileDialog;
 
 |Name|Description|
 |----------|-----------------|
-|[CFolderPickerDialog::~CFolderPickerDialog](#cfolderpickerdialog__~cfolderpickerdialog)|Destructor.|
+|[CFolderPickerDialog::~CFolderPickerDialog](#_dtorcfolderpickerdialog)|Destructor.|
 |[CFolderPickerDialog::CFolderPickerDialog](#cfolderpickerdialog)|Constructor.|
 
 ## Remarks
@@ -84,6 +84,6 @@ virtual ~CFolderPickerDialog();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

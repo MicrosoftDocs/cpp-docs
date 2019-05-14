@@ -245,7 +245,7 @@ void GetItemRect(
 Index of the indicator whose rectangle coordinates are to be retrieved.
 
 *lpRect*<br/>
-Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
+Points to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
 
 ### Remarks
 
@@ -466,10 +466,10 @@ After you call `SetPaneText`, you must add a UI update handler to display the ne
 
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl Class](../../mfc/reference/cstatusbarctrl-class.md)<br/>

@@ -93,11 +93,11 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
 
 - `type` = **unspecified**
 
@@ -151,7 +151,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

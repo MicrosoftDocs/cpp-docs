@@ -8,13 +8,12 @@ ms.assetid: 8ae39e2d-12a8-4b17-909d-5bf155749123
 
 See the following sample programs that illustrate common controls:
 
-- [CMNCTRL1](../visual-cpp-samples.md)
+- [CMNCTRL1](../overview/visual-cpp-samples.md)
 
-- [CMNCTRL2](../visual-cpp-samples.md)
+- [CMNCTRL2](../overview/visual-cpp-samples.md)
 
-- [CTRLTEST](../visual-cpp-samples.md)
+- [CTRLTEST](../overview/visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

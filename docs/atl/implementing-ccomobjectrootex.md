@@ -1,7 +1,6 @@
 ---
 title: "Implementing CComObjectRootEx"
 ms.date: "11/04/2016"
-f1_keywords: ["CComObjectRootEx"]
 helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]
 ms.assetid: 79630c44-f2df-4e9e-b730-400a0ebfbd2b
 ---
@@ -15,8 +14,7 @@ You can enter interfaces into the COM map table with the [COM_INTERFACE_ENTRY](r
 
 [!code-cpp[NVC_ATL_COM#1](../atl/codesnippet/cpp/implementing-ccomobjectrootex_1.h)]
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [COM Map Macros](../atl/reference/com-map-macros.md)
-

@@ -1,6 +1,6 @@
 ---
 title: "How to: Customize the Quick Access Toolbar"
-ms.date: "11/04/2016"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["quick access toolbar [MFC], customization"]
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
 ---
@@ -8,7 +8,7 @@ ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
 
 The Quick Access Toolbar (QAT) is a customizable toolbar that contains a set of commands that are either displayed next to the Application button or under the category tabs. The following illustration shows a typical Quick Access Toolbar.
 
-![MFC Ribbon Quick Access Toolbar](../mfc/media/quick_access_toolbar.png "quick_access_toolbar")
+![MFC Ribbon Quick Access Toolbar](../mfc/media/quick_access_toolbar.png "MFC Ribbon Quick Access Toolbar")
 
 To customize the Quick Access Toolbar, open it in the **Properties** window, modify its commands, and then preview the ribbon control.
 
@@ -45,7 +45,6 @@ Quick Access Toolbar commands do not appear on the design surface. To view them,
 
 - On the **Ribbon Editor Toolbar**, click **Test Ribbon**.
 
-## See Also
+## See also
 
 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
-

@@ -170,7 +170,7 @@ Visual C++ and the Resource Compiler support multiple .RC files in the same proj
 
 - If you want to maintain a resource with a text editor in a human-readable form, you should keep it in a .RC file separate from the one Visual C++ edits.
 
-- If you need to keep a user-defined resource in a binary or text form that is interpretable by another specialized data editor, then you should keep it in a separate .RC file so Visual C++ does not change the format to hexadecimal data. The .WAV (sound) file resources in the MFC Advanced Concepts sample [SPEAKN](../visual-cpp-samples.md) are a good example.
+- If you need to keep a user-defined resource in a binary or text form that is interpretable by another specialized data editor, then you should keep it in a separate .RC file so Visual C++ does not change the format to hexadecimal data. The .WAV (sound) file resources in the MFC Advanced Concepts sample [SPEAKN](../overview/visual-cpp-samples.md) are a good example.
 
 You can #include a SECOND.RC in the Compile-Time Directives in the Set Includes dialog box:
 
@@ -197,7 +197,7 @@ RESOURCE.H     AFXRES.H
     AFXPRINT.RC
 ```
 
-Using Compile-Time Directives, you can organize your Visual C++-editable and non-editable resources into multiple .RC files, where the "master" MYAPP.RC does nothing but #include the other .RC files. If you are using a Visual C++ project .MAK file, then you should include the "master" .RC file in the project so that all the #include'd resources are compiled with your application.
+Using Compile-Time Directives, you can organize your Visual C++-editable and non-editable resources into multiple .RC files, where the "master" MYAPP.RC does nothing but #include the other .RC files. If you are using a Visual Studio C++ project .MAK file, then you should include the "master" .RC file in the project so that all the #include'd resources are compiled with your application.
 
 **Enforcement of Noneditable Visual C++ Files**
 
@@ -372,8 +372,7 @@ BEGIN
 END
 ```
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -39,7 +39,7 @@ A pointer to the event method from which you unhook the event handler method:
 - Managed events: *SourceClass* is the event source class and *EventMethod* is the event.
 
 *interface*<br/>
-The interface name being unhooked from *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is **true**.
+The interface name being unhooked from *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/attributes/event-receiver.md) attribute is **true**.
 
 *source*<br/>
 A pointer to an instance of the event source. Depending on the code `type` specified in `event_receiver`, *source* can be one of the following:
@@ -82,7 +82,7 @@ With the exception of COM events, **__hook** and **__unhook** can be called outs
 
 An alternative to using **__unhook** is to use the -= operator.
 
-For information on coding managed events in the new syntax, see [event](../windows/event-cpp-component-extensions.md).
+For information on coding managed events in the new syntax, see [event](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
 >  A templated class or struct cannot contain events.
@@ -94,8 +94,8 @@ See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) and [
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[event_source](../windows/event-source.md)<br/>
-[event_receiver](../windows/event-receiver.md)<br/>
+[event_source](../windows/attributes/event-source.md)<br/>
+[event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__event](../cpp/event.md)<br/>
 [__hook](../cpp/hook.md)<br/>
 [__raise](../cpp/raise.md)

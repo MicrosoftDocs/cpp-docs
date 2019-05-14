@@ -1,6 +1,6 @@
 ---
 title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
-ms.date: "11/04/2016"
+ms.date: "03/25/2019"
 apiname: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -22,16 +22,26 @@ char *strtok(
    char *strToken,
    const char *strDelimit
 );
+char *strtok_l(
+   char *strToken,
+   const char *strDelimit,
+   _locale_t locale
+);
 wchar_t *wcstok(
    wchar_t *strToken,
    const wchar_t *strDelimit
 );
-unsigned char *_mbstok(
-   unsigned char*strToken,
-   const unsigned char *strDelimit
+wchar_t *wcstok_l(
+   wchar_t *strToken,
+   const wchar_t *strDelimit,
+   _locale_t locale
 );
 unsigned char *_mbstok(
-   unsigned char*strToken,
+   unsigned char *strToken,
+   const unsigned char *strDelimit
+);
+unsigned char *_mbstok_l(
+   unsigned char *strToken,
    const unsigned char *strDelimit,
    _locale_t locale
 );
@@ -50,7 +60,7 @@ Locale to use.
 
 ## Return Value
 
-Returns a pointer to the next token found in *strToken*. They return **NULL** when no more tokens are found. Each call modifies *strToken* by substituting a null character for the first delimiter that occurs after the returned token.
+Returns a pointer to the next token found in *strToken*. The functions return **NULL** when no more tokens are found. Each call modifies *strToken* by substituting a null character for the first delimiter that occurs after the returned token.
 
 ## Remarks
 
@@ -61,7 +71,9 @@ The **strtok** function finds the next token in *strToken*. The set of character
 
 On the first call to **strtok**, the function skips leading delimiters and returns a pointer to the first token in *strToken*, terminating the token with a null character. More tokens can be broken out of the remainder of *strToken* by a series of calls to **strtok**. Each call to **strtok** modifies *strToken* by inserting a null character after the **token** returned by that call. To read the next token from *strToken*, call **strtok** with a **NULL** value for the *strToken* argument. The **NULL** *strToken* argument causes **strtok** to search for the next token in the modified *strToken*. The *strDelimit* argument can take any value from one call to the next so that the set of delimiters may vary.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [setlocale](setlocale-wsetlocale.md).
+
+The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
 > Each function uses a thread-local static variable for parsing the string into tokens. Therefore, multiple threads can simultaneously call these functions without undesirable effects. However, within a single thread, interleaving calls to one of these functions is highly likely to produce data corruption and inaccurate results. When parsing different strings, finish parsing one string before starting to parse the next. Also, be aware of the potential for danger when calling one of these functions from within a loop where another function is called. If the other function ends up using one of these functions, an interleaved sequence of calls will result, triggering data corruption.

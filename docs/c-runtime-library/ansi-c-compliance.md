@@ -13,6 +13,6 @@ The names of Microsoft-specific functions and global variables begin with a sing
 
 The names of Microsoft-specific macros and manifest constants begin with two underscores, or with a single leading underscore immediately followed by an uppercase letter. The scope of these identifiers is absolute. For example, you cannot use the Microsoft-specific identifier **_UPPER** for this reason.
 
-## See Also
+## See also
 
 [Compatibility](../c-runtime-library/compatibility.md)

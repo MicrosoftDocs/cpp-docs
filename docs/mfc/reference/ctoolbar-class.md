@@ -360,7 +360,7 @@ virtual void GetItemRect(
 Index of the item (button or separator) whose rectangle coordinates are to be retrieved.
 
 *lpRect*<br/>
-Address of the [RECT](../../mfc/reference/rect-structure1.md) structure that will contain the item's coordinates.
+Address of the [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that will contain the item's coordinates.
 
 ### Remarks
 
@@ -669,11 +669,11 @@ Call this member function only for toolbars that do not follow *Windows Interfac
 
 [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC Sample DOCKTOOL](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBarCtrl Class](../../mfc/reference/ctoolbarctrl-class.md)<br/>

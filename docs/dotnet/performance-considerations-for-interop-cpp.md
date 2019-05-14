@@ -10,7 +10,7 @@ This topic provides guidelines for reducing the effect of managed/unmanaged inte
 
 Visual C++ supports the same interoperability mechanisms as other .NET languages such as Visual Basic and C# (P/Invoke), but it also provides interop support that is specific to Visual C++ (C++ interop). For performance-critical applications, it is important to understand the performance implications of each interop technique.
 
-Regardless of the interop technique used, special transition sequences, called thunks, are required each time a managed function calls an unmanaged function and vice versa. These thunks are inserted automatically by the Visual C++ compiler, but it is important to keep in mind that cumulatively, these transitions can be expensive in terms of performance.
+Regardless of the interop technique used, special transition sequences, called thunks, are required each time a managed function calls an unmanaged function and vice versa. These thunks are inserted automatically by the Microsoft C++ compiler, but it is important to keep in mind that cumulatively, these transitions can be expensive in terms of performance.
 
 ## Reducing Transitions
 
@@ -42,6 +42,6 @@ C++ Interop therefore requires that data marshaling must be provided explicitly,
 
 For more information about C++ Interop, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
-## See Also
+## See also
 
 [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md)

@@ -17,7 +17,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. Visual C++ 2017 implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
+> As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. C++ in Visual Studio 2017 (MSVC v141) implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
 This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and Posix.
 

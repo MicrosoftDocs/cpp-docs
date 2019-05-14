@@ -37,4 +37,3 @@ Provides links to conceptual topics on how to program using the Active Template 
 
 [Windows Support Classes](../atl/windows-support-classes.md)<br/>
 Lists additional ATL classes that support windows and message maps in ATL.
-

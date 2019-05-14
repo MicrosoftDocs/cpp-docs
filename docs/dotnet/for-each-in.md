@@ -24,7 +24,7 @@ Iterates through an array or collection. This non-standard keyword is available 
 The type of `identifier`.
 
 *identifier*<br/>
-The iteration variable that represents the collection element.  When `identifier` is a [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md), you can modify the element.
+The iteration variable that represents the collection element.  When `identifier` is a [Tracking Reference Operator](../extensions/tracking-reference-operator-cpp-component-extensions.md), you can modify the element.
 
 *expression*<br/>
 An array expression or collection. The collection element must be such that the compiler can convert it to the `identifier` type.
@@ -38,7 +38,7 @@ The `for each` statement is used to iterate through a collection. You can modify
 
 The *statements* are executed for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the statement that follows the `for each` block.
 
-`for each` and `in` are [context-sensitive keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).
+`for each` and `in` are [context-sensitive keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).
 
 For more information:
 
@@ -146,6 +146,6 @@ abcd
 Testing
 ```
 
-## See Also
+## See also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)

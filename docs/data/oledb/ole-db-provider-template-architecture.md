@@ -1,6 +1,6 @@
 ---
 title: "OLE DB Provider Template Architecture"
-ms.date: "10/24/2018"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["OLE DB [C++], object model", "architecture [C++], OLE DB Provider", "OLE DB provider templates, object model"]
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
 ---
@@ -10,7 +10,7 @@ ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
 
 The OLE DB provider architecture includes a data source object and one or more sessions. The data source object is the initial object that every provider must instantiate. When a consumer application needs data, it co-creates the data source object to start the provider. The data source object creates a session object (using the `IDBCreateSession` interface) through which the consumer connects to the data source object. ODBC programmers can think of the data source object as being equivalent to the `HENV` and the session object as equivalent to the `HDBC`.
 
-![Provider architecture](../../data/oledb/media/vc4twb1.gif "vc4twb1")
+![Provider architecture](../../data/oledb/media/vc4twb1.gif "Provider architecture")
 
 Together with the source files created by the **OLE DB Provider Wizard**, the OLE DB templates implement a data source object. A session is an object that corresponds to the OLE DB `TSession`.
 
@@ -30,7 +30,7 @@ The OLE DB provider templates give you prepackaged implementations for all the r
 
 The OLE DB provider templates do not implement the row and storage objects.
 
-The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85)).
+The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784(v=vs.85)).
 
 |Component|Interface|Comment|
 |---------------|---------------|-------------|
@@ -46,7 +46,7 @@ For more information, see the following topics:
 
 - [The User Record](../../data/oledb/user-record.md)
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Interfaces](https://docs.microsoft.com/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>
+[OLE DB Interfaces](/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

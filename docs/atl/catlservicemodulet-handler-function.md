@@ -1,7 +1,6 @@
 ---
 title: "CAtlServiceModuleT::Handler Function"
 ms.date: "11/04/2016"
-f1_keywords: ["CServiceModule::Handler", "CServiceModule.Handler", "Handler"]
 helpviewer_keywords: ["Handler method"]
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
 ---
@@ -11,8 +10,7 @@ ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
 
 To handle more instructions, you need to change the `m_status` data member initialized in the `CAtlServiceModuleT` constructor. This data member tells the SCM which buttons to enable when the service is selected in the Services Control Panel application.
 
-## See Also
+## See also
 
 [Services](../atl/atl-services.md)<br/>
 [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
-

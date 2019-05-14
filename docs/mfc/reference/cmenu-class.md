@@ -465,7 +465,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -475,7 +475,7 @@ See [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) for a descr
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
@@ -1008,7 +1008,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
@@ -1396,10 +1396,10 @@ If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value
 
 A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC Sample DYNAMENU](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)

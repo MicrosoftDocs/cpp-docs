@@ -15,7 +15,7 @@ This error may be caused by a missing closing brace, right parenthesis, or semic
 
 C2144 can also occur when attempting to create a macro from a CLR keyword that contains a white space character.
 
-You may also see C2144 if you are trying to do type forwarding. See [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md) for more information.
+You may also see C2144 if you are trying to do type forwarding. See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for more information.
 
 ## Examples
 

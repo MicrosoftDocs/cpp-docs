@@ -318,7 +318,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 
 ### Remarks
 
-You can add verbs to your project's .rgs file. For example, see CIRCCTL.RGS in the [CIRC](../../visual-cpp-samples.md) sample.
+You can add verbs to your project's .rgs file. For example, see CIRCCTL.RGS in the [CIRC](../../overview/visual-cpp-samples.md) sample.
 
 See [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs) in the Windows SDK.
 
@@ -770,7 +770,7 @@ Returns S_OK.
 
 See [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-update) in the Windows SDK.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>

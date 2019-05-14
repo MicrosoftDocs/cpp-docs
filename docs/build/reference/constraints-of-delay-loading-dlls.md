@@ -12,7 +12,7 @@ There are constraints regarding the delay loading of imports.
 
 - Delay loading Kernel32.dll is not supported. This DLL is necessary for the delay-load helper routines to perform the delay loading.
 
-- [Binding](../../build/reference/binding-imports.md) of entry points that are forwarded is not supported.
+- [Binding](binding-imports.md) of entry points that are forwarded is not supported.
 
 - Delay loading of a DLL may not result in the same behavior of the process if there are per-process initializations that occur in the entry point of the delay-loaded DLL. Other cases include static TLS (thread local storage), declared using [__declspec(thread)](../../cpp/thread.md), which is not handled when the DLL is loaded via `LoadLibrary`. Dynamic TLS, using `TlsAlloc`, `TlsFree`, `TlsGetValue`, and `TlsSetValue`, is still available for use in either static or delay-loaded DLLs.
 
@@ -22,9 +22,9 @@ There are constraints regarding the delay loading of imports.
 
 - Custom calling conventions (such as using condition codes on x86 architectures) are not supported. Also, the floating-point registers are not saved on any platform. If your custom helper routine or hook routines use floating-point types, they need to completely save and restore the floating-point state on machines with register calling conventions with floating-point parameters. Be careful about delay loading the CRT DLL if you call CRT functions that take floating-point parameters on a numeric data processor (NDP) stack in the help function.
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)<br/>
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary function](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
 [GetModuleHandle function](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
 [GetProcAddress function](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>

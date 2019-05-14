@@ -38,7 +38,7 @@ Your class, derived from `IDBPropertiesImpl`.
 
 ## Remarks
 
-[IDBProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms719607(v=vs.85)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms713706(v=vs.85)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
 ## <a name="getproperties"></a> IDBPropertiesImpl::GetProperties
 
@@ -55,7 +55,7 @@ STDMETHOD(GetProperties)(ULONG cPropertySets,
 
 #### Parameters
 
-See [IDBProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IDBProperties::GetProperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetProperties`:
 
@@ -86,7 +86,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
 
 #### Parameters
 
-See [IDBProperties::GetPropertyInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718175(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IDBProperties::GetPropertyInfo](/previous-versions/windows/desktop/ms718175(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetPropertyInfo`:
 
@@ -112,13 +112,13 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### Parameters
 
-See [IDBProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723049(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IDBProperties::SetProperties](/previous-versions/windows/desktop/ms723049(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 If the provider is initialized, this method sets the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups for the data source object. If the provider is not initialized, it sets DBPROPSET_DBINIT group properties only.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

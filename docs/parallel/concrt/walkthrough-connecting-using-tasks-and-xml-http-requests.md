@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Connecting Using Tasks and XML HTTP Requests"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 ---
@@ -22,6 +22,8 @@ For an example that uses `IXMLHTTPRequest2` but does not use tasks, see [Quickst
 
 ## Prerequisites
 
+UWP support is optional in Visual Studio 2017 and later. To install it, open the Visual Studio Installer from the Windows Start menu and choose the version of Visual Studio you are using. Click the **Modify** button and make sure the **UWP Development** tile is checked. Under **Optional Components** make sure that **C++ UWP Tools** is checked. Use v141 for Visual Studio 2017 or v142 for Visual Studio 2019.
+
 ## Defining the HttpRequest, HttpRequestBuffersCallback, and HttpRequestStringCallback Classes
 
 When you use the `IXMLHTTPRequest2` interface to create web requests over HTTP, you implement the `IXMLHTTPRequest2Callback` interface to receive the server response and react to other events. This example defines the `HttpRequest` class to create web requests, and the `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes to process responses. The `HttpRequestBuffersCallback` and `HttpRequestStringCallback` classes support the `HttpRequest` class; you work only with the `HttpRequest` class from application code.
@@ -34,7 +36,9 @@ To support cancellation, the `HttpRequest`, `HttpRequestBuffersCallback`, and `H
 
 #### To Define the HttpRequest Class
 
-1. Use the Visual C++ **Blank App (XAML)** template to create a blank XAML app project. This example names the project `UsingIXMLHTTPRequest2`.
+1. From the main menu, choose **File** > **New** > **Project**. 
+
+1. Use the C++ **Blank App (Universal Windows)** template to create a blank XAML app project. This example names the project `UsingIXMLHTTPRequest2`.
 
 1. Add to the project a header file that is named HttpRequest.h and a source file that is named HttpRequest.cpp.
 
@@ -91,13 +95,13 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 Here is the running app:
 
-![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")
+![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "The running Windows Runtime app")
 
 ## Next Steps
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## See Also
+## See also
 
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>

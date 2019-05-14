@@ -17,7 +17,7 @@ The following table shows the types of objects with which you work, and the type
 |Menu or accelerator identifier|- COMMAND message (executes the program function).<br />- UPDATE_COMMAND_UI message (dynamically updates the menu item).|
 |Control identifier|Control notification messages for the selected control type.|
 
-## See Also
+## See also
 
 [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

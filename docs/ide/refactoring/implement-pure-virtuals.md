@@ -3,8 +3,8 @@ title: "Implement Pure Virtuals"
 ms.date: "11/16/2016"
 ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 ---
-
 # Implement Pure Virtuals
+
 **What:** Lets you immediately generate the code required to implement all pure virtual methods in a class.
 
 **When:** You want to inherit from a class with pure virtual functions.

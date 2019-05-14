@@ -159,7 +159,7 @@ int main() {
 
 ## Example
 
-C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../windows/arrays-cpp-component-extensions.md).  The next sample generates C2440:
+C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md).  The next sample generates C2440:
 
 ```cpp
 // C2440e.cpp
@@ -186,7 +186,7 @@ C2440 can also occur because of changes in the attributes feature.  The followin
 
 ## Example
 
-The Visual C++ compiler no longer allows the [const_cast Operator](../../cpp/const-cast-operator.md) to down cast when source code that uses **/clr** programming is compiled.
+The Microsoft C++ compiler no longer allows the [const_cast Operator](../../cpp/const-cast-operator.md) to down cast when source code that uses **/clr** programming is compiled.
 
 To resolve this C2440, use the correct cast operator. For more information, see [Casting Operators](../../cpp/casting-operators.md).
 

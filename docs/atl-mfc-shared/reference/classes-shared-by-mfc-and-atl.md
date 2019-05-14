@@ -16,10 +16,10 @@ The following table lists the classes shared between MFC and ATL.
 |[CImage](../../atl-mfc-shared/reference/cimage-class.md)|Provides enhanced bitmap support, including the ability to load and save images in JPEG, GIF, BMP, and Portable Network Graphics (PNG) formats.|atlimage.h|
 |[COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)|Encapsulates the DATE data type used in OLE automation.|atlcomtime.h|
 |[COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md)|Represents a relative time, a time span.|atlcomtime.h|
-|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|A class similar to the Windows [POINT](../../mfc/reference/point-structure.md) structure that also includes member functions to manipulate `CPoint` and `POINT` structures.|atltypes.h|
-|[CRect](../../atl-mfc-shared/reference/crect-class.md)|A class similar to a Windows [RECT](../../mfc/reference/rect-structure.md) structure that also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.|atltypes.h|
+|[CPoint](../../atl-mfc-shared/reference/cpoint-class.md)|A class similar to the Windows [POINT](/windows/desktop/api/windef/ns-windef-tagpoint) structure that also includes member functions to manipulate `CPoint` and `POINT` structures.|atltypes.h|
+|[CRect](../../atl-mfc-shared/reference/crect-class.md)|A class similar to a Windows [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that also includes member functions to manipulate `CRect` objects and Windows `RECT` structures.|atltypes.h|
 |[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)|Represents a `CSimpleStringT` object.|atlsimpstr.h|
-|[CSize](../../atl-mfc-shared/reference/csize-class.md)|A class similar to the Windows SIZE structure, which implements a relative coordinate or position.|atltypes.h|
+|[CSize](../../atl-mfc-shared/reference/csize-class.md)|A class similar to the Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure, which implements a relative coordinate or position.|atltypes.h|
 |[CStrBufT](../../atl-mfc-shared/reference/cstrbuft-class.md)|Provides automatic resource cleanup for `GetBuffer` and `ReleaseBuffer` calls on a existing `CStringT` object.|atlsimpstr.h|
 |[CStringData](../../atl-mfc-shared/reference/cstringdata-class.md)|Represents the data of a string object.|atlsimpstr.h|
 |[CStringT](../../atl-mfc-shared/reference/cstringt-class.md)|Represents a `CStringT` object.|cstringt.h (MFC dependent) atlstr.h (MFC independent)|
@@ -27,7 +27,6 @@ The following table lists the classes shared between MFC and ATL.
 |[CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)|An amount of time, which is internally stored as the number of seconds in the time span.|atltime.h|
 |[IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)|Represents the interface to a `CStringT` memory manager.|atlsimpstr.h|
 
-## See Also
+## See also
 
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
-

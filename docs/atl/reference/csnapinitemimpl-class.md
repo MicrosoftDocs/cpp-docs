@@ -77,7 +77,7 @@ TRUE if the object is a snap-in extension; otherwise FALSE.
 
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems
 
-This method implements the Win32 function [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841).
+This method implements the Win32 function [IExtendContextMenu::AddMenuItems](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems).
 
 ```
 AddMenuItems(
@@ -115,7 +115,7 @@ AddMenuItems(
 
 ##  <a name="command"></a>  CSnapInItemImpl::Command
 
-This method implements the Win32 function [IExtendContextMenu::Command](https://msdn.microsoft.com/library/aa814842).
+This method implements the Win32 function [IExtendContextMenu::Command](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-command).
 
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -139,7 +139,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages
 
-This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846).
+This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](/windows/desktop/api/mmc/nn-mmc-iextendpropertysheet2).
 
 ```
 CreatePropertyPages(
@@ -265,7 +265,7 @@ SCOPEDATAITEM m_scopeDataItem;
 
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem
 
-The [RESULTDATAITEM](https://msdn.microsoft.com/library/aa815165) structure of the snap-in data object.
+The [RESULTDATAITEM](/windows/desktop/api/mmc/ns-mmc-resultdataitem) structure of the snap-in data object.
 
 ```
 RESULTDATAITEM m_resultDataItem;
@@ -501,6 +501,6 @@ Specifies a toolbar button state. If this state is to be set, return TRUE. This 
 
 - BUTTONPRESSED The button is being pressed.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

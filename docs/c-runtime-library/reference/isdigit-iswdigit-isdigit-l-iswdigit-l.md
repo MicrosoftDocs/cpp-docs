@@ -2,7 +2,7 @@
 title: "isdigit, iswdigit, _isdigit_l, _iswdigit_l"
 ms.date: "11/04/2016"
 apiname: ["_isdigit_l", "iswdigit", "_iswdigit_l", "isdigit"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_iswdigit_l", "_isdigit_l", "iswdigit", "isdigit", "_istdigit", "_istdigit_l"]
 helpviewer_keywords: ["iswdigit function", "iswdigit_l function", "_iswdigit_l function", "_istdigit_l function", "_istdigit function", "istdigit function", "isdigit function", "isdigit_l function", "_ismbcdigit_l function", "_isdigit_l function"]

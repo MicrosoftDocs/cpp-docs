@@ -1,13 +1,13 @@
 ---
 title: "pointer_to_binary_function Class"
-ms.date: "11/04/2016"
-f1_keywords: ["xfunctional/std::pointer_to_binary"]
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::pointer_to_binary"]
 helpviewer_keywords: ["pointer_to_binary_function function", "pointer_to_binary_function class"]
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
 ---
 # pointer_to_binary_function Class
 
-Converts a binary function pointer into an adaptable binary function.
+Converts a binary function pointer into an adaptable binary function. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 

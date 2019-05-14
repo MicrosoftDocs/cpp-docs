@@ -267,7 +267,7 @@ Always returns TRUE.
 
 By default this method sets the accessibility data for the check box and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

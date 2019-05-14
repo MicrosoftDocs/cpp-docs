@@ -11,7 +11,7 @@ ms.assetid: 2a718b4c-6cdb-4418-92c0-fc3a259431c4
 
 Value classes are sealed. If a constraint is a value class, another constraint can never derive from it.
 
-For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

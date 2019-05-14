@@ -111,7 +111,7 @@ class CFrameWndEx : public CFrameWnd
 
 ## Example
 
-The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]
@@ -179,7 +179,7 @@ A handle to a structure that contains the positions of multiple windows. .
 
 ### Remarks
 
-The hdwp structure is initialized by the [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) method.
+The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) method.
 
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu
 
@@ -882,7 +882,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-[in] A pointer to the [CREATESTRUCT Structure](../../mfc/reference/createstruct-structure.md) for the new frame.
+[in] A pointer to the [CREATESTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) for the new frame.
 
 ### Return Value
 
@@ -1017,7 +1017,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-[in] Pointer to a [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) structure.
+[in] Pointer to a [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
 
 ### Remarks
 
@@ -1524,7 +1524,7 @@ afx_msg void OnSizing(
 [in] The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).
 
 *pRect*<br/>
-[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](../../mfc/reference/rect-structure1.md) structure that contains the frame's coordinates.
+[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the frame's coordinates.
 
 ### Remarks
 
@@ -1694,7 +1694,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-[in] Pointer to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure that contains the new size and position.
+[in] Pointer to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure that contains the new size and position.
 
 ### Remarks
 
@@ -1754,7 +1754,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+[in] A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -1933,7 +1933,7 @@ The help command. For a list of possible values see [WinHelp](/windows/desktop/a
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -21,6 +21,6 @@ Within source code, two backslashes are necessary:
 fil = fopen( "path1\\path2\\myfile", "rt" );
 ```
 
-## See Also
+## See also
 
 [Preprocessing Directives](../c-language/preprocessing-directives.md)

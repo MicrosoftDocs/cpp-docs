@@ -66,7 +66,7 @@ Data type used for *VALUE* arguments; usually a reference to *VALUE*.
 
 |Name|Description|
 |----------|-----------------|
-|[CMap::operator [ ]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
+|[CMap::operator \[ \]](#operator_at)|Inserts an element into the map — operator substitution for `SetAt`.|
 
 ## Remarks
 
@@ -496,8 +496,8 @@ First, the key is looked up. If the key is found, then the corresponding value i
 
 [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

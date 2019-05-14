@@ -42,7 +42,7 @@ Class of the object stored in the map.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrMap::operator [ ]](#operator_at)|Inserts an element into the map.|
+|[CTypedPtrMap::operator \[ \]](#operator_at)|Inserts an element into the map.|
 
 ## Remarks
 
@@ -198,9 +198,9 @@ Specifies the object pointer that is the value of the new element.
 
 For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)<br/>
 [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>

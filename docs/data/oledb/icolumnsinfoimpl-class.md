@@ -7,7 +7,7 @@ ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
 ---
 # IColumnsInfoImpl Class
 
-Provides an implementation of the [IColumnsInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms724541(v=vs.85)) interface.
+Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) interface.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 
 #### Parameters
 
-See [IColumnsInfo::GetColumnInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
 
@@ -70,9 +70,9 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 
 #### Parameters
 
-See [IColumnsInfo::MapColumnIDs](https://docs.microsoft.com/previous-versions/windows/desktop/ms714200(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

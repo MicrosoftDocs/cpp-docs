@@ -88,7 +88,7 @@ For more information about how the Concurrency Runtime compares to OpenMP and ho
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Overview](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

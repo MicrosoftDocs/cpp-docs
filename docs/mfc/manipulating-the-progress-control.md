@@ -36,8 +36,7 @@ There are three ways to change the current position of a progress control ([CPro
 
 Typically, the progress control is used solely for output. To get the current position without specifying a new value, use [GetPos](../mfc/reference/cprogressctrl-class.md#getpos).
 
-## See Also
+## See also
 
 [Using CProgressCtrl](../mfc/using-cprogressctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

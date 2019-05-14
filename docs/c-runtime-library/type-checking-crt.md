@@ -21,6 +21,6 @@ The compiler performs limited type checking on functions that can take a variabl
 
 The compiler performs the same limited type checking on the wide-character counterparts of these functions.
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

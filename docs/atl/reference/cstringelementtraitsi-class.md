@@ -135,7 +135,7 @@ The data type to use for retrieving elements from the collection class object.
 typedef T& OUTARGTYPE;
 ```
 
-## See Also
+## See also
 
 [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

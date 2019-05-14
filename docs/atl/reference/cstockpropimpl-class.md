@@ -1,6 +1,6 @@
 ---
 title: "CStockPropImpl Class"
-ms.date: "11/06/2018"
+ms.date: "05/06/2019"
 f1_keywords: ["CStockPropImpl", "ATLCTL/ATL::CStockPropImpl", "ATLCTL/ATL::get_Appearance", "ATLCTL/ATL::get_AutoSize", "ATLCTL/ATL::get_BackColor", "ATLCTL/ATL::get_BackStyle", "ATLCTL/ATL::get_BorderColor", "ATLCTL/ATL::get_BorderStyle", "ATLCTL/ATL::get_BorderVisible", "ATLCTL/ATL::get_BorderWidth", "ATLCTL/ATL::get_Caption", "ATLCTL/ATL::get_DrawMode", "ATLCTL/ATL::get_DrawStyle", "ATLCTL/ATL::get_DrawWidth", "ATLCTL/ATL::get_Enabled", "ATLCTL/ATL::get_FillColor", "ATLCTL/ATL::get_FillStyle", "ATLCTL/ATL::get_Font", "ATLCTL/ATL::get_ForeColor", "ATLCTL/ATL::get_HWND", "ATLCTL/ATL::get_MouseIcon", "ATLCTL/ATL::get_MousePointer", "ATLCTL/ATL::get_Picture", "ATLCTL/ATL::get_ReadyState", "ATLCTL/ATL::get_TabStop", "ATLCTL/ATL::get_Text", "ATLCTL/ATL::getvalid", "ATLCTL/ATL::get_Window", "ATLCTL/ATL::put_Appearance", "ATLCTL/ATL::put_AutoSize", "ATLCTL/ATL::put_BackColor", "ATLCTL/ATL::put_BackStyle", "ATLCTL/ATL::put_BorderColor", "ATLCTL/ATL::put_BorderStyle", "ATLCTL/ATL::put_BorderVisible", "ATLCTL/ATL::put_BorderWidth", "ATLCTL/ATL::put_Caption", "ATLCTL/ATL::put_DrawMode", "ATLCTL/ATL::put_DrawStyle", "ATLCTL/ATL::put_DrawWidth", "ATLCTL/ATL::put_Enabled", "ATLCTL/ATL::put_FillColor", "ATLCTL/ATL::put_FillStyle", "ATLCTL/ATL::put_Font", "ATLCTL/ATL::put_ForeColor", "ATLCTL/ATL::put_HWND", "ATLCTL/ATL::put_MouseIcon", "ATLCTL/ATL::put_MousePointer", "ATLCTL/ATL::put_Picture", "ATLCTL/ATL::put_ReadyState", "ATLCTL/ATL::put_TabStop", "ATLCTL/ATL::put_Text", "ATLCTL/ATL::putvalid", "ATLCTL/ATL::put_Window", "ATLCTL/ATL::putref_Font", "ATLCTL/ATL::putref_MouseIcon", "ATLCTL/ATL::putref_Picture"]
 helpviewer_keywords: ["CStockPropImpl class", "controls [ATL], stock properties", "stock properties, ATL controls"]
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
@@ -116,7 +116,7 @@ The class used to manage the type information for *T*. The default value is `CCo
 
 `CStockPropImpl` provides **put** and **get** methods for each stock property. These methods provide the code necessary to set or get the data member associated with each property and to notify and synchronize with the container when any property changes.
 
-Visual C++ provides support for stock properties through its wizards. For more information about adding stock properties to a control, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md).
+Visual Studio provides support for stock properties through its wizards. For more information about adding stock properties to a control, see the [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md).
 
 For backward compatibility, `CStockPropImpl` also exposes `get_Window` and `put_Window` methods that simply call `get_HWND` and `put_HWND`, respectively. The default implementation of `put_HWND` returns E_FAIL since HWND should be a read-only property.
 
@@ -493,7 +493,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 ### Parameters
 
 *ppPicture*<br/>
-Variable that receives a pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+Variable that receives a pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 
@@ -939,7 +939,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 ### Parameters
 
 *pPicture*<br/>
-A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+A pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 
@@ -1087,7 +1087,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 ### Parameters
 
 *pPicture*<br/>
-A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.
+A pointer to the picture's properties. See [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) for more details.
 
 ### Return Value
 
@@ -1097,7 +1097,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The same as [CStockPropImpl::put_Picture](#put_picture), but with a reference count.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)

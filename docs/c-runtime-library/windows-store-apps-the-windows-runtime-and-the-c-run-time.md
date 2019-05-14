@@ -1,6 +1,6 @@
 ---
 title: "UWP Apps, the Windows Runtime, and the C Run-Time"
-ms.date: "11/04/2016"
+ms.date: "02/02/2019"
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
 ---
 # UWP Apps, the Windows Runtime, and the C Run-Time
@@ -19,10 +19,6 @@ The Windows Runtime does not support the following CRT features:
 
    However, both Unicode and ANSI text are supported.
 
-- Console apps and command-line arguments.
-
-   However, traditional desktop apps still support the console and command-line arguments.
-
 - Environment variables.
 
 - The concept of a current working directory.
@@ -37,8 +33,9 @@ The Windows Runtime does not support the following CRT features:
 
 For a complete list of CRT functions that are not available in a UWP app and suggestions for alternative functions, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## See Also
+## See also
 
 [Compatibility](../c-runtime-library/compatibility.md)<br/>
 [Windows Runtime Unsupported CRT Functions](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Create a Universal Windows Platform console app](/windows/uwp/launch-resume/console-uwp)

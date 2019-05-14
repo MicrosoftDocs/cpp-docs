@@ -92,7 +92,7 @@ A "rich edit control" is a window in which the user can enter and edit text. The
 
 This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.
 
-For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit view in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -948,7 +948,7 @@ long PrintInsideRect(
 Pointer to a device context for the output area.
 
 *rectLayout*<br/>
-[RECT](../../mfc/reference/rect-structure1.md) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect) or [CRect](../../atl-mfc-shared/reference/crect-class.md) which defines the output area.
 
 *nIndexStart*<br/>
 Zero-based index of the first character to be formatted.
@@ -1180,9 +1180,9 @@ Override this function to modify the way the rich edit view responds to changes 
 
 [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditDoc Class](../../mfc/reference/cricheditdoc-class.md)<br/>

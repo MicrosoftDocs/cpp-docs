@@ -18,9 +18,8 @@ For more information about MAPI, see the articles under Guide in Win32 Messaging
 
 [MAPI Support in MFC](../mfc/mapi-support-in-mfc.md)
 
-## See Also
+## See also
 
 [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)<br/>
 [CDocument::OnUpdateFileSendMail](../mfc/reference/cdocument-class.md#onupdatefilesendmail)<br/>
 [COleDocument::OnFileSendMail](../mfc/reference/coledocument-class.md#onfilesendmail)
-

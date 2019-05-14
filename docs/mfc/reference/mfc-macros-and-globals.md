@@ -110,7 +110,6 @@ The first part of this section briefly discusses each of the previous categories
 > [!NOTE]
 >  Many global functions start with the prefix "Afx", but some, for example, the dialog data exchange (DDX) functions and many of the database functions, do not follow this convention. All global variables start with "afx" as a prefix. Macros do not start with any particular prefix, but they are written in uppercase letters.
 
-## See Also
+## See also
 
 [Class Overview](../../mfc/class-library-overview.md)
-

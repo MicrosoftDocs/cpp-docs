@@ -49,7 +49,7 @@ You should not create a `CKeyboardManager` object manually. It will be created a
 
 ## Example
 
-The following example demonstrates how to retrieve a pointer to a `CKeyboardManager` object from a `CWinAppEx` class, and how to show all the shortcut keys associated with menu commands. This code snippet is part of the [Custom Pages sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a pointer to a `CKeyboardManager` object from a `CWinAppEx` class, and how to show all the shortcut keys associated with menu commands. This code snippet is part of the [Custom Pages sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 
@@ -174,7 +174,7 @@ Nonzero if the character is printable, zero if it is not.
 
 ### Remarks
 
-This method fails if a call to [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) fails.
+This method fails if a call to [GetKeyboardState](/windows/desktop/api/winuser/nf-winuser-getkeyboardstate) fails.
 
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators
 
@@ -343,11 +343,10 @@ Nonzero if the method is successful; otherwise 0.
 
 Use this function to replace the existing shortcut table with new shortcut keys for several frame window objects. The function receives a document template as a parameter to obtain access to all frame window objects connected to the given document template.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-

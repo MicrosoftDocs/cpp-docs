@@ -89,7 +89,7 @@ We should execute this handler if compiled to native
 
 ##  <a name="vccondisassociatedrethrows"></a> Disassociated Rethrows
 
-**/clr** does not support rethrowing an exception outside of a catch handler (known as a disassociated rethrow). Exceptions of this type are treated as a standard C++ rethrow. If a disassociated rethrow is encountered when there is an active managed exception, the exception is wrapped as a C++ exception and then rethrown. Exceptions of this type can only be caught as an exception of type [System::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx).
+**/clr** does not support rethrowing an exception outside of a catch handler (known as a disassociated rethrow). Exceptions of this type are treated as a standard C++ rethrow. If a disassociated rethrow is encountered when there is an active managed exception, the exception is wrapped as a C++ exception and then rethrown. Exceptions of this type can only be caught as an exception of type <xref:System.Runtime.InteropServices.SEHException>.
 
 The following example demonstrates a managed exception rethrown as a C++ exception:
 
@@ -267,8 +267,8 @@ In my_trans_func.
 Caught an SEH exception with exception code: e0000101
 ```
 
-## See Also
+## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)<br/>
-[safe_cast](../windows/safe-cast-cpp-component-extensions.md)<br/>
+[Exception Handling](../extensions/exception-handling-cpp-component-extensions.md)<br/>
+[safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>
 [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)

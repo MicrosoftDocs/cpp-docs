@@ -15,6 +15,6 @@ If the problem is caused by more than 4092 .sbr files, you must reduce the numbe
 
 If the problem is caused by a .bsc file larger than 64MB, reducing the number of .sbr files as input will decrease the size of the resulting .bsc file. In addition, the amount of browse information may be reduced through the use of the /Em (Exclude Macro Expanded Symbols), /El (Exclude Local Variables), and /Es (Exclude System Files).
 
-## See Also
+## See also
 
 [BSCMAKE Options](../../build/reference/bscmake-options.md)

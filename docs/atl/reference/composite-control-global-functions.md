@@ -57,7 +57,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -104,7 +104,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -470,7 +470,7 @@ Always returns TRUE.
 
 ### Remarks
 
-This function simply calls [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the Windows SDK.
+This function simply calls [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) as described in the Windows SDK.
 
 Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.
 
@@ -521,7 +521,7 @@ The example below shows how you might define an event sink class, `CEasySink`, t
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Composite Control Macros](../../atl/reference/composite-control-macros.md)

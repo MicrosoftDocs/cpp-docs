@@ -247,7 +247,7 @@ Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) obj
 
 ## <a name="window-styles"></a> Window styles
 
-Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).
+Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/desktop/winmsg/window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -308,7 +308,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_TRANSPARENT|Specifies that a window created with this style is to be transparent. That is, any windows that are beneath the window are not obscured by the window. A window created with this style receives WM_PAINT messages only after all sibling windows beneath it have been updated.|
 |WS_EX_WINDOWEDGE|Specifies that a window has a border with a raised edge.|
 
-## See Also
+## See also
 
 [MFC Class Overview](../../mfc/class-library-overview.md)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>
@@ -326,5 +326,5 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)<br/>
 [Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)<br/>
 [Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)<br/>
+[Window Styles (Windows)](/windows/desktop/winmsg/window-styles)<br/>
 [Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles)

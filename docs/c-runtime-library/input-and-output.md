@@ -18,6 +18,6 @@ The I/O functions read and write data to and from files and devices. File I/O op
    > [!NOTE]
    > Because stream functions are buffered and low-level functions are not, these two types of functions are generally incompatible. For processing a particular file, use either stream or low-level functions exclusively.
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

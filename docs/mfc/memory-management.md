@@ -10,7 +10,7 @@ This group of articles describes how to take advantage of the general-purpose se
 
 One main difference between the two allocation techniques is that with frame allocation you typically work with the actual memory block itself, while with heap allocation you are always given a pointer to the memory block. Another major difference between the two schemes is that frame objects are automatically deleted, while heap objects must be explicitly deleted by the programmer.
 
-For non-MFC information about memory management in programs for Windows, see [Memory Management](https://msdn.microsoft.com/library/windows/desktop/aa366779) in the Windows SDK.
+For non-MFC information about memory management in programs for Windows, see [Memory Management](/windows/desktop/memory/memory-management) in the Windows SDK.
 
 ## What do you want to know more about
 
@@ -28,8 +28,7 @@ For non-MFC information about memory management in programs for Windows, see [Me
 
 - [Resizable memory blocks](../mfc/memory-management-resizable-memory-blocks.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

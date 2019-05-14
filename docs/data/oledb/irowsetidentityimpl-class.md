@@ -7,7 +7,7 @@ ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
 ---
 # IRowsetIdentityImpl Class
 
-Implements the OLE DB [IRowsetIdentity](https://docs.microsoft.com/previous-versions/windows/desktop/ms715913(v=vs.85)) interface, which enables testing for row identity.
+Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913(v=vs.85)) interface, which enables testing for row identity.
 
 ## Syntax
 
@@ -50,13 +50,13 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 #### Parameters
 
-See [IRowsetIdentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) in the *OLE DB Programmer's Reference*.
+See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

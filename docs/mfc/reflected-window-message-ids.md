@@ -31,13 +31,12 @@ The following table shows the messages that are intercepted and the correspondin
 |[WM_HSCROLL](/windows/desktop/Controls/wm-hscroll)|OCM_HSCROLL|
 |[WM_VSCROLL](/windows/desktop/Controls/wm-vscroll)|OCM_VSCROLL|
 |[WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|
-|[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)|OCM_NOTIFY|
+|[WM_NOTIFY](/windows/desktop/controls/wm-notify)|OCM_NOTIFY|
 
 > [!NOTE]
 >  If the control runs on a Win32 system, there are several types of WM_CTLCOLOR\* messages it may receive. For more information, see WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls: Subclassing a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
 [TN062: Message Reflection for Windows Controls](../mfc/tn062-message-reflection-for-windows-controls.md)
-

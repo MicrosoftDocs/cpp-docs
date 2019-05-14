@@ -98,7 +98,7 @@ To handle notification messages in a dialog box application, add a message map e
 
 ## Example
 
-The following example demonstrates how to configure the properties of the button by using various methods in the `CMFCButton` class. The example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure the properties of the button by using various methods in the `CMFCButton` class. The example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -460,7 +460,7 @@ The `CMFCButton` constructor initializes this member to BUTTONSTYLE_3D.
 
 ### Example
 
-The following example demonstrates how to set the values of the `m_nFlatStyle` member variable in the `CMFCButton` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to set the values of the `m_nFlatStyle` member variable in the `CMFCButton` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#29](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_5.cpp)]
@@ -485,7 +485,7 @@ virtual void OnDraw(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
 
 ### Remarks
 
@@ -511,7 +511,7 @@ virtual void OnDrawBorder(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](../../mfc/reference/drawitemstruct-structure.md) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
 
 ### Remarks
 
@@ -785,7 +785,7 @@ void SetImage(
 
 ### Example
 
-The following example demonstrates how to use various versions of the `SetImage` method in the `CMFCButton` class. The example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various versions of the `SetImage` method in the `CMFCButton` class. The example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#31](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_2.cpp)]
@@ -809,7 +809,7 @@ Use this method to associate a cursor image, such as the hand cursor, with the b
 
 ### Example
 
-The following example demonstrates how to use the `SetMouseCursor` method in the `CMFCButton` class. The example is part of the code in the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `SetMouseCursor` method in the `CMFCButton` class. The example is part of the code in the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#28](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#30](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_6.cpp)]
@@ -916,7 +916,7 @@ A `CSize` object that contains the new size of the button.
 
 By default, this method calculates a new size that includes a horizontal margin of 10 pixels and a vertical margin of 5 pixels.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

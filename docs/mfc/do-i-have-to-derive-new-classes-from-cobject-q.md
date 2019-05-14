@@ -9,8 +9,8 @@ ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
 
 No, you don't.
 
-Derive a class from [CObject](../mfc/reference/cobject-class.md) when you need the facilities it provides, such as serialization or dynamic creatability. Many data classes need to be serialized to files, so it's often a good idea to derive them from `CObject`. For an example of a class derived from `CObject`, see the [Scribble sample](../visual-cpp-samples.md).
+Derive a class from [CObject](../mfc/reference/cobject-class.md) when you need the facilities it provides, such as serialization or dynamic creatability. Many data classes need to be serialized to files, so it's often a good idea to derive them from `CObject`. For an example of a class derived from `CObject`, see the [Scribble sample](../overview/visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [CObject Class: Frequently Asked Questions](../mfc/cobject-class-frequently-asked-questions.md)

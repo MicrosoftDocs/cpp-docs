@@ -12,11 +12,10 @@ The maximum permissible string length of an environmental variable.
 ## Syntax
 
 ```
-
 #include <stdio.h>
 ```
 
-## See Also
+## See also
 
 [Environmental Constants](../c-runtime-library/environmental-constants.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

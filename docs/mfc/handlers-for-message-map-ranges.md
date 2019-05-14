@@ -70,7 +70,7 @@ For more information about parameter requirements for updating handler functions
 
 ##  <a name="_core_example_for_a_range_of_command_ids"></a> Example for a Range of Command IDs
 
-When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
+When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../overview/visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
 
 [!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
 
@@ -120,6 +120,6 @@ The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no param
 
 The code shown in the example is typical: converting the value passed to an `int` within the message range and asserting that this is the case. Then you might take some different action depending on which button was clicked.
 
-## See Also
+## See also
 
 [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

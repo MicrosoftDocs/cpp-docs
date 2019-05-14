@@ -11,8 +11,8 @@ The 'Additional Dependencies' property for custom build rule 'rule' assigned to 
 
 The **Additional Dependencies** property evaluated to an empty string, or to a string that contained invalid characters (any character that could not be in a file or directory name). Custom build rules need the output of the build action.
 
-For more information, see [Specifying Custom Build Tools](../../ide/specifying-custom-build-tools.md).
+For more information, see [Specifying Custom Build Tools](../../build/specifying-custom-build-tools.md).
 
-## See Also
+## See also
 
 [Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
