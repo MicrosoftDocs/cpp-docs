@@ -50,4 +50,4 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 
 ## See also
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)

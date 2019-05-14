@@ -1,7 +1,6 @@
 ---
 title: "Implement a connection point"
-ms.date: "11/12/2018"
-f1_keywords: ["vc.codewiz.impl.cp.overview"]
+ms.date: "05/14/2019"
 helpviewer_keywords: ["connection points [C++], implementing", "implement connection point wizard [C++]"]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
 ---
@@ -52,7 +51,7 @@ A connectable object (that is, a source) can show a connection point for each of
 
 ## Implement connection point wizard
 
-This wizard implements a connection point for a COM object. A connectable object (that is, a source) can show a connection point for its own interfaces or for any outgoing interface. Visual C++ and Windows both provide type libraries that have outgoing interfaces. Each outgoing interface can be implemented by a client on an object (that is, a sink).
+This wizard implements a connection point for a COM object. A connectable object (that is, a source) can show a connection point for its own interfaces or for any outgoing interface. MSVC and Windows both provide type libraries that have outgoing interfaces. Each outgoing interface can be implemented by a client on an object (that is, a sink).
 
 For more information, see [ATL connection points](../atl/atl-connection-points.md).
 

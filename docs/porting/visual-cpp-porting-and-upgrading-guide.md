@@ -82,4 +82,4 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 
 ## See also
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)

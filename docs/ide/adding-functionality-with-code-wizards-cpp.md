@@ -1,6 +1,6 @@
 ---
 title: "Adding Functionality with Code Wizards (C++)"
-ms.date: "10/03/2018"
+ms.date: "05/14/2019"
 f1_keywords: ["vc.codewiz.classes"]
 helpviewer_keywords: ["code wizards [C++]", "wizards [C++], code", "Visual Studio C++ projects, adding functionality", "projects [C++], adding functionality", "class wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
@@ -15,9 +15,9 @@ Once you have created a project, you will want to change or add to that project'
 > [!NOTE]
 >  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visualstudio/ide/reference/properties-window).
 
-## Accessing Visual C++ Code Wizards
+## Accessing C++ Code Wizards
 
-There are three locations where you can access Visual C++ code wizards:
+There are three locations where you can access C++ code wizards:
 
 - On the **Project** menu, the **Add New Item** command allows you to bring up the `Add New Item` dialog box, which helps you to add new files to your project. The **Add Class** command displays the [Add Class](../ide/add-class-dialog-box.md) dialog box, which in turn open wizards for each of the class types you can add to your project. The **Add Resource** command displays the [Add Resource](../windows/add-resource-dialog-box.md) dialog box, from which you can create or select a resource to add to your project.
 
@@ -62,4 +62,4 @@ There are three locations where you can access Visual C++ code wizards:
 [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
 [Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)<br>
 [C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br>
-[File Types Created for Visual C++ projects](../build/reference/file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual Studio C++ projects](../build/reference/file-types-created-for-visual-cpp-projects.md)

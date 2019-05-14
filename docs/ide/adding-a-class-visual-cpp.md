@@ -1,7 +1,7 @@
 ---
 title: "Add a class"
 ms.date: "11/08/2018"
-f1_keywords: ["vc.codewiz.classes.adding", "vc.addclass"]
+f1_keywords: ["vc.addclass"]
 helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding", "Add Class dialog box"]
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ---

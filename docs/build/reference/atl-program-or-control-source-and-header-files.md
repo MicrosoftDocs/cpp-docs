@@ -20,6 +20,6 @@ All of these files are located in the *Projname* directory, and in either the He
 
 ## See also
 
-[File Types Created for Visual C++ projects](file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual Studio C++ projects](file-types-created-for-visual-cpp-projects.md)<br>
 [MFC Program or Control Source and Header Files](mfc-program-or-control-source-and-header-files.md)<br>
 [CLR Projects](files-created-for-clr-projects.md)
