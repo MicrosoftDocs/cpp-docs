@@ -192,7 +192,7 @@ long j = static_cast<long>(i);
 
 ### Syntax checks for generic lambdas
 
-The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or with **/experimental:newLambdaProcessor**. 
+The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or under any other language mode with **/experimental:newLambdaProcessor**. 
 
 In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces error *C2760 syntax error: unexpected token '\<id-expr>', expected 'id-expression'*:
 
@@ -213,6 +213,14 @@ void f() {
     };
 }
 ```
+
+### Argument-dependent lookup for function calls
+
+[P0846R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) (C++20) Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments. Requires **/std:c++latest**.
+
+### Designated initialization
+
+[P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (C++20) Designated initialization allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **/std:c++latest**.
 
 ### Mac line endings in the editor
 
@@ -247,6 +255,13 @@ int main()
     assert(strcmp(s, "\r") == 0);
 }
 ```
+
+### New and updated Standard Library functions (C++20)
+
+- `starts_with()` and `ends_with()` for `basic_string` and `basic_string_view`.
+- `contains()` for associative containers.
+- `remove()`, `remove_if()`, and `unique()` for` list` and `forward_list` now return `size_type`.
+- `shift_left()` and `shift_right()` added to \<algorithm>.
 
 ## Bug fixes and behavior changes in Visual Studio 2019 RTW
 
