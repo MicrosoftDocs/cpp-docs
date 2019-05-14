@@ -1,6 +1,6 @@
 ---
 title: "Updating Rowsets"
-ms.date: "10/19/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
 ---
@@ -17,6 +17,9 @@ Consumers can complete the following kinds of updates on rowset data: setting co
 - [Delete](../../data/oledb/crowset-delete.md) deletes rows from a rowset; it equates to the SQL DELETE command.
 
 ## Supporting Update Operations
+
+> [!NOTE]
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 When you create a consumer with the **ATL OLE DB Consumer Wizard**, you can support the update operations by selecting one or more of the three check boxes **Change**, **Insert**, and **Delete**. If you select these options, the wizard modifies the code appropriately to support the type of changes you choose. However, if you don't use the wizard, you need to set the following rowset properties to `VARIANT_TRUE` to support updates:
 
