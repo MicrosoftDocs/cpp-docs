@@ -9,11 +9,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 ## Cloud programming options
 
-- [Windows Azure Mobile Services](http://www.windowsazure.com/develop/mobile/)
-
-  Provides native APIs that you can use in Universal Windows Platform (UWP) apps or Windows desktop apps to connect to Windows Azure Mobile Services. Although most of the examples on the website are in C#, you can also use C++. For more information, see [Quickstart: Adding a mobile service using C++](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
-
-- [Microsoft Azure Storage Client Library for C++](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
+- [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/)
 
   The Azure Storage Client Library for C++ provides a comprehensive API for working with Azure storage, including but not limited to the following abilities:
 
@@ -23,7 +19,9 @@ In C++, you have several options for connecting to the web and the cloud.
   - Enqueue and dequeue messages in an Azure queue.
   - Lazily list containers, blobs, tables, and queues, and lazily query entities
 
-- [OneDrive API](https://dev.onedrive.com/README.htm)
+- The ANSI C99 [Azure IoT Hub SDKs](/azure/iot-hub/iot-hub-devguide-sdks) for Internet of Things enable IoT applications to run on the device or on the backend.
+
+- [OneDrive and SharePoint in Microsoft Graph](https://dev.onedrive.com/README.htm)
 
   The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
 
@@ -53,4 +51,5 @@ In C++, you have several options for connecting to the web and the cloud.
 ## See also
 
 [Visual C++](../overview/visual-cpp-in-visual-studio.md) <br/>
+[Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/)
 [Networks and web services](/windows/uwp/networking/)

@@ -420,7 +420,7 @@ ms.author: "mblome"
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/overview/cloud-and-web-development-cpp.md">
+                                <a href="/cpp/cloud/cloud-and-web-programming-in-visual-cpp.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
