@@ -7,15 +7,15 @@ ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 ---
 # ARM Intrinsics
 
-The Visual C++ compiler makes the following intrinsics available on the ARM architecture. For more information about ARM, see the [ARM Architecture Reference Manuals](http://go.microsoft.com/fwlink/p/?LinkId=522049) and [ARM Assembler Tools Guide](http://go.microsoft.com/fwlink/p/?LinkId=246102) on the ARM Infocenter website.
+The Microsoft C++ compiler (MSVC) makes the following intrinsics available on the ARM architecture. For more information about ARM, see the [ARM Architecture Reference Manuals](http://go.microsoft.com/fwlink/p/?LinkId=522049) and [ARM Assembler Tools Guide](http://go.microsoft.com/fwlink/p/?LinkId=246102) on the ARM Infocenter website.
 
 ##  <a name="top"></a> NEON
 
 The NEON vector instruction set extensions for ARM provide Single Instruction Multiple Data (SIMD) capabilities that resemble those in the MMX and SSE vector instruction sets that are common to x86 and x64 architecture processors.
 
-NEON intrinsics are supported, as provided in the header file `arm_neon.h`. The Visual C++ compiler support for NEON intrinsics resembles that of the ARM compiler, which is documented in Appendix G of the [ARM Compiler toolchain, Version 4.1 Compiler Reference](http://go.microsoft.com/fwlink/p/?LinkId=251083) on the ARM Infocenter website.
+NEON intrinsics are supported, as provided in the header file `arm_neon.h`. The MSVC support for NEON intrinsics resembles that of the ARM compiler, which is documented in Appendix G of the [ARM Compiler toolchain, Version 4.1 Compiler Reference](http://go.microsoft.com/fwlink/p/?LinkId=251083) on the ARM Infocenter website.
 
-The primary difference between the Visual C++ compiler and the ARM compiler is that the Visual C++ compiler adds `_ex` variants of the `vldX` and `vstX` vector load and store instructions. The `_ex` variants take an additional parameter that specifies the alignment of the pointer argument but are otherwise identical to their non-`_ex` counterparts.
+The primary difference between MSVC and the ARM compiler is that the MSVC adds `_ex` variants of the `vldX` and `vstX` vector load and store instructions. The `_ex` variants take an additional parameter that specifies the alignment of the pointer argument but are otherwise identical to their non-`_ex` counterparts.
 
 ##  <a name="A"></a> ARM-specific Intrinsics Listing
 
@@ -642,7 +642,7 @@ The plain interlocked bittest intrinsics are common to all platforms. ARM adds `
 
 [[NEON](#top)]
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>

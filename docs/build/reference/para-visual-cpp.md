@@ -28,6 +28,6 @@ Compile with [/doc](doc-process-documentation-comments-c-cpp.md) to process docu
 
 See [\<summary>](summary-visual-cpp.md) for an example of using \<para>.
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

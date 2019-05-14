@@ -1180,7 +1180,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ### Parameters
 
 *pInfo*<br/>
-Address of a [DOCHOSTUIINFO](/previous-versions/aa770044\(v=vs.85\)) structure that receives the host's UI capabilities.
+Address of a [DOCHOSTUIINFO](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) structure that receives the host's UI capabilities.
 
 ### Return Value
 
@@ -2037,7 +2037,7 @@ Applies to Internet Explorer and WebBrowser.
 
 ## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

@@ -7,7 +7,7 @@ ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
 ---
 # Add a member variable
 
-You may add a member variable to a class using Class View. Member variables can be either for [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md), or they can be generic. The data member variable wizard is designed to take the relevant information and use it to insert elements in your source files at the appropriate locations. You may add a member variable from the [Dialog editor](../windows/dialog-editor.md) in [Resource View](../windows/resource-view-window.md), or from [Class View](/visualstudio/ide/viewing-the-structure-of-code).
+You may add a member variable to a class using Class View. Member variables can be either for [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md), or they can be generic. The data member variable wizard is designed to take the relevant information and use it to insert elements in your source files at the appropriate locations. You may add a member variable from the [Dialog editor](../windows/dialog-editor.md) in [Resource View](../windows/how-to-create-a-resource-script-file.md#create-resources), or from [Class View](/visualstudio/ide/viewing-the-structure-of-code).
 
 > [!NOTE]
 > When you're designing and implementing a dialog box, you might find it more efficient to use the Dialog editor to add the dialog box controls, and then to implement the controls' member variables.

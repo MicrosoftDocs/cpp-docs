@@ -18,7 +18,7 @@ Allows you to use IDL constructs that are not supported in the current version o
 ### Parameters
 
 *text*<br/>
-The attribute name that you intend the Visual C++ compiler to pass through to the generated .idl file without returning a compiler error.
+The attribute name that you intend the Microsoft C++ compiler to pass through to the generated .idl file without returning a compiler error.
 
 ## Remarks
 
@@ -76,7 +76,7 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)

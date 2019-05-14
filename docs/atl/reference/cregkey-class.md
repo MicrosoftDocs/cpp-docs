@@ -1014,5 +1014,5 @@ The third method calls [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-reg
 
 ## See also
 
-[DCOM Sample](../../visual-cpp-samples.md)<br/>
+[DCOM Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

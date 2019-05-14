@@ -43,7 +43,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the restriction support. After you create an instance of the schema rowset, call [CRestrictions::Open](../../data/oledb/crestrictions-open.md). This method returns a result set based on the restrictions that you specify.
 
-To specify restrictions, refer to [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.
+To specify restrictions, refer to [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052(v=vs.85)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.
 
 So, for example, if you want to restrict by table name, TABLE_NAME is the third restriction column, and then call `Open`, specifying the wanted table name as the third restriction parameter, as shown in the following example.
 
@@ -79,6 +79,6 @@ For more complex examples of how to use schema rowset classes, see the [CatDB](h
 
 For information about provider support for schema rowsets, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

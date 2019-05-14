@@ -97,6 +97,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

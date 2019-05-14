@@ -12,7 +12,7 @@ User Account Control (UAC) is a feature of Windows Vista in which user accounts 
 
 ## Building Projects after Enabling UAC
 
-If you build a Visual C++ project on Windows Vista with UAC disabled, and you later enable UAC, you must clean and rebuild the project for it to work correctly.
+If you build a Visual Studio C++ project on Windows Vista with UAC disabled, and you later enable UAC, you must clean and rebuild the project for it to work correctly.
 
 ## Applications that Require Administrative Privileges
 

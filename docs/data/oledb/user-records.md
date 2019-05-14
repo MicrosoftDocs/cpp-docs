@@ -1,11 +1,14 @@
 ---
 title: "User Records"
-ms.date: "10/22/2018"
+ms.date: "05/09/2019"
 f1_keywords: ["COLUMN_ENTRY_MAP"]
 helpviewer_keywords: ["rowsets [C++], accessors", "COLUMN_ENTRY macro", "COLUMN_ENTRY_MAP macro", "user records, OLE DB consumer templates", "OLE DB consumer templates, user records", "CAccessor class, example", "BEGIN_ACCESSOR_MAP macro", "accessors [C++], rowsets", "accessors [C++], static", "BEGIN_ACCESSOR macro, example"]
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
 ---
 # User Records
+
+> [!NOTE]
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 To use a static accessor (that is, an accessor derived from `CAccessor`), your consumer must have a user record. The user record is a C++ class that contains data elements to handle input or output. The **ATL OLE DB Consumer Wizard** generates a user record for your consumer. You can add methods to the user record for optional tasks like handling commands.
 
@@ -68,6 +71,6 @@ END_ACCESSOR_MAP()
 };
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

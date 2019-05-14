@@ -172,8 +172,8 @@ A standard HRESULT.
 
 For more information, see [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
-[CatDB](../../visual-cpp-samples.md)<br/>
+[CatDB](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

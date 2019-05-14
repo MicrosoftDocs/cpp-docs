@@ -9,7 +9,7 @@ ms.assetid: 353a0539-d1ea-4c1b-8849-c9b321ec9842
 
 'var' : const has no effect on literal data member; ignored
 
-A [literal](../../windows/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.
+A [literal](../../extensions/literal-cpp-component-extensions.md) data member was also specified as const.  Since a literal data member implies const, you do not need to add const to the declaration.
 
 The following sample generates C4393:
 

@@ -19,7 +19,7 @@ The Windows XP platform toolset that's included in Visual Studio is a version of
 
 1. In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.
 
-1. In the **Property Pages** dialog box for the project, under **Configuration Properties** > **General**, set the **Platform Toolset** property to the desired Windows XP toolset. For example, choose **Visual Studio 2017 - Windows XP (v141_xp)** to create code for Windows XP and Windows Server 2003 by using the Microsoft Visual C++ 2017 compiler.
+1. In the **Property Pages** dialog box for the project, under **Configuration Properties** > **General**, set the **Platform Toolset** property to the desired Windows XP toolset. For example, choose **Visual Studio 2017 - Windows XP (v141_xp)** to create code for Windows XP and Windows Server 2003 by using the Microsoft C++ compiler in Visual Studio 2017.
 
 ### C++ runtime support
 

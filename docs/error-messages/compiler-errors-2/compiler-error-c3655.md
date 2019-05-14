@@ -9,7 +9,7 @@ ms.assetid: 724919ab-2915-4b61-8794-44648e162d62
 
 'function' : function already explicitly overridden
 
-A function can only be explicitly overridden once. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+A function can only be explicitly overridden once. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 The following sample generates C3655:
 

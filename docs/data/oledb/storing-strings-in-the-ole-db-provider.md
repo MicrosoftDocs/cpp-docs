@@ -1,10 +1,14 @@
 ---
 title: "Storing Strings in the OLE DB Provider"
-ms.date: "10/26/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["user records, editing"]
 ms.assetid: 36cb9635-067c-4cad-8f85-962f28026f6a
 ---
 # Storing Strings in the OLE DB Provider
+
+> [!NOTE] 
+> The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
 
 In *Custom*RS.h, the **ATL OLE DB Provider Wizard** creates a default user record called `CWindowsFile`. To handle the two strings, modify `CWindowsFile` as shown in the following code:
 
@@ -45,6 +49,6 @@ The data members `szCommand` and `szText` represent the two strings, with `szCom
 
 When this is done, you can add the functionality of [Reading Strings into the OLE DB Provider](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
 
-## See Also
+## See also
 
 [Implementing the Simple Read-Only Provider](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>

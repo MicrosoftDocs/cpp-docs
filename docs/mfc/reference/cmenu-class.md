@@ -475,7 +475,7 @@ See [CWnd::OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) for a descr
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
@@ -1008,7 +1008,7 @@ See [CWnd::OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) for a
 
 ### Example
 
-The following code is from the MFC [CTRLTEST](../../visual-cpp-samples.md) sample:
+The following code is from the MFC [CTRLTEST](../../overview/visual-cpp-samples.md) sample:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
@@ -1398,8 +1398,8 @@ A floating pop-up menu can appear anywhere on the screen. For more information o
 
 ## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
-[MFC Sample DYNAMENU](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)

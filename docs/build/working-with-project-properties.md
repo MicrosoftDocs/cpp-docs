@@ -1,7 +1,7 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
 description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
-ms.date: "12/10/2018"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ---
@@ -13,7 +13,7 @@ In the IDE, all information that is needed to build a project is exposed as *pro
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an ATL project has properties related to MIDL files, but these are absent in a basic console application. The default properties are shown in the General pane in the Property Pages:
 
-![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ Project Defaults")
+![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ project Defaults")
 
 ## Applying properties to build configurations and target platforms
 
@@ -51,11 +51,11 @@ The **Property Pages** dialog box shows only the property pages that are relevan
 
 MSBuild supports the use of compile-time constants called "macros" for certain string values include directories and paths. These are exposed in the property pages, where you can refer to and modify them by using the [Property Editor](#property_editor). 
 
-The following illustration shows the property pages for a Visual C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
+The following illustration shows the property pages for a Visual Studio C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md). 
 
 ![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
-You can use the Property Editor to view the values of all available macros. Macros are discussed in the [Property page macros](#bkmkPropertiesVersusMacros) section later in this article.)
+You can use the Property Editor to view the values of all available macros.
 
 ### Predefined macros
 
@@ -69,7 +69,7 @@ Has the syntax `%(name)`. For a file, an item macro applies only to that file—
 
 You can create *user-defined macros* to use as variables in project builds. For example, you could create a user-defined macro that provides a value to a custom build step or a custom build tool. A user-defined macro is a name/value pair. In a project file, use the **$(**<em>name</em>**)** notation to access the value.
 
-A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or resuse Visual Studio C++ project settings](#bkmkPropertySheets).
+A user-defined macro is stored in a property sheet. If your project does not already contain a property sheet, you can create one by following the steps under [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md).
 
 #### To create a user-defined macro
 
@@ -118,7 +118,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 
 ## In this section
 
-[Share or resuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
+[Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
 How to create a .props file with custom build settings that can be shared or resused.
 
 [Project property inheritance](project-property-inheritance.md)<br/>

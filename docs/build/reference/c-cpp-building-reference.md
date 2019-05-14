@@ -1,13 +1,13 @@
 ---
 title: "C/C++ Building Reference - Visual Studio"
 description: "Reference content for C/C++ project system and build tools in Visual Studio."
-ms.date: "12/10/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["compiling source code [C++], additional information", "cl.exe compiler [C++], building programs", "linker [C++], building reference", "builds [C++], additional information"]
 ms.assetid: 100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d
 ---
 # C/C++ Building Reference
 
-Visual C++ provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual Studio IDE](../creating-and-managing-visual-cpp-projects.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create and edit your source files using Visual Studio or a third-party editor of your choice.
+Visual Studio provides two ways of building a C/C++ program. The easiest (and most common) way is to [build within the Visual Studio IDE](../creating-and-managing-visual-cpp-projects.md). The other way is to [build from a command prompt using command-line tools](../building-on-the-command-line.md). In either case, you can create and edit your source files using Visual Studio or a third-party editor of your choice.
 
 ## In This Section
 

@@ -200,7 +200,7 @@ For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmaps
 
 ## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)<br/>
 [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>

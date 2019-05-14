@@ -1,9 +1,8 @@
 ---
 title: "C/C++ projects and build systems in Visual Studio"
 ms.description: "Use Visual Studio to compile and build C++ projects for Windows, ARM or Linux based on any project system."
-ms.date: "12/08/2018"
-f1_keywords: ["vcbuilding", "buildingaprogramVC"]
-helpviewer_keywords: ["builds [C++]", "Visual C++ projects, building", "projects [C++], building", "builds [C++], options", "Visual C++, build options"]
+ms.date: "05/06/2019"
+helpviewer_keywords: ["builds [C++]", "C++ projects, building", "projects [C++], building", "builds [C++], options", "C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ---
 # C/C++ projects and build systems in Visual Studio
@@ -22,7 +21,7 @@ Basic C++ compilation involves three main steps:
 
 ## The MSVC toolset
 
-The Microsoft C++ compiler, linker, standard libraries, and related utilities comprise the MSCV compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the toolset as a standalone package for free from the [Build Tools for Visual Studio 2017 download location](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+The Microsoft C++ compiler, linker, standard libraries, and related utilities comprise the MSVC compiler toolset (also called a toolchain or "build tools"). These are included in Visual Studio. You can also download and use the toolset as a standalone package for free from the [Build Tools for Visual Studio 2017 download location](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
 
 You can build simple programs by invoking the MSVC compiler (cl.exe) directly from the command line. The following command accepts a single source code file, and invokes cl.exe to build an executable called *hello.exe*: 
 
@@ -70,6 +69,9 @@ Discusses how to use the C/C++ compiler and build tools directly from the comman
 
 [Building DLLs in Visual Studio](dlls-in-visual-cpp.md)
 How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
+
+[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)
+How to create a .lib binary file.
 
 [Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.

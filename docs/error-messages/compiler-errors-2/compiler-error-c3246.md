@@ -9,7 +9,7 @@ ms.assetid: ad85224a-e540-479b-a5eb-a3bc3964c30b
 
 'class' : cannot inherit from 'type' as it has been declared as 'sealed'
 
-A class that is marked as [sealed](../../windows/sealed-cpp-component-extensions.md) cannot be the base class for any other classes.
+A class that is marked as [sealed](../../extensions/sealed-cpp-component-extensions.md) cannot be the base class for any other classes.
 
 The following sample generates C3246:
 

@@ -1,6 +1,6 @@
 ---
 title: "Parallel Containers and Objects"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
 ---
@@ -18,13 +18,13 @@ This topic describes the following parallel containers and objects in detail.
 
 Concurrent containers:
 
-- [concurrent_vector Class](#ctor)
+- [concurrent_vector Class](#vector)
 
-   - [Differences Between concurrent_vector and vector](#ctor)
+   - [Differences Between concurrent_vector and vector](#vector-differences)
 
-   - [Concurrency-Safe Operations](#ctor)
+   - [Concurrency-Safe Operations](#vector-safety)
 
-   - [Exception Safety](#ctor)
+   - [Exception Safety](#vector-exceptions)
 
 - [concurrent_queue Class](#queue)
 

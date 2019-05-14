@@ -856,7 +856,7 @@ In addition, see the examples for [CFile::CFile](#cfile) and [CFile::Open](#open
 
 ## See also
 
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC Sample DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CStdioFile Class](../../mfc/reference/cstdiofile-class.md)<br/>

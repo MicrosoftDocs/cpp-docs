@@ -173,6 +173,6 @@ BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)
 END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)
 ```
 
-## See Also
+## See also
 
 [Provider Wizard-Generated Files](../../data/oledb/provider-wizard-generated-files.md)<br/>

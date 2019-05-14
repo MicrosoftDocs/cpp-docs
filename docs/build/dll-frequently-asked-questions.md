@@ -1,6 +1,6 @@
 ---
 title: "MFC DLL Frequently Asked Questions"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["troubleshooting [C++], DLLs", "DLLs [C++], frequently asked questions", "FAQs [C++], DLLs"]
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
 ---
@@ -32,11 +32,7 @@ An MFC DLL that creates a new MFC thread during startup will stop responding whe
 
 ## <a name="mfc_multithreaded_2"></a> Can a multithreaded application access an MFC DLL in different threads?
 
-Multithreaded applications can access regular MFC DLLs that dynamically link to MFC and MFC extension DLLs from different threads. And as of Visual C++ version 4.2, an application can access regular MFC DLLs that statically link to MFC from multiple threads created in the application.
-
-Prior to version 4.2, only one external thread could attach to a regular MFC DLL that statically linked to MFC.
-
-Note that the term USRDLL is no longer used in the Visual C++ documentation. A regular MFC DLL that is statically linked to MFC has the same characteristics as the former USRDLL.
+Multithreaded applications can access regular MFC DLLs that dynamically link to MFC and MFC extension DLLs from different threads. An application can access regular MFC DLLs that statically link to MFC from multiple threads created in the application.
 
 ## <a name="mfc_prohibited_classes"></a> Are there any MFC classes or functions that cannot be used in an MFC DLL?
 
@@ -60,4 +56,4 @@ One possible cause of the memory leak is that MFC creates temporary objects that
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

@@ -78,7 +78,7 @@ Use the **Open &lt;Device&gt; Image** dialog box to open device images in C++ pr
 
 #### To create a new icon or cursor
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select **Icon** or **Cursor** and choose **New**. For icons, this action creates an icon resource with a 32 × 32, 16-color icon. For cursors, a 32 × 32, Monochrome (2-color) image is created.
 
@@ -139,7 +139,7 @@ Using the **Image Editor**, icons and cursors can be sized large (64 × 64) with
 
 #### To create a 256-color icon or cursor
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select **Icon** or **Cursor** and choose **New**.
 
@@ -206,7 +206,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
 ### To add a new image resource to an unmanaged C++ project
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file, then choose **Insert Resource**. If you already have an existing image resource in your *.rc* file, such as a cursor, you can simply right-click the **Cursor** folder and select **Insert Cursor**.
 
 1. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select the type of image resource you'd like to create (**Bitmap**, for example) then choose **New**.
 
@@ -228,7 +228,7 @@ You can open GIF or JPEG images in the **Image Editor** and save them as bitmaps
 
 None
 
-## See Also
+## See also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
 [How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>

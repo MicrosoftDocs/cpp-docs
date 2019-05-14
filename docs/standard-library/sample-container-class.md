@@ -7,7 +7,7 @@ ms.assetid: 5b1451f2-c708-45da-bbf0-9e42fd687a1a
 # Sample Container Class
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Describes an object that controls a varying-length sequence of elements, typically of type `Ty`. The sequence is stored in different ways, depending on the actual container.
 

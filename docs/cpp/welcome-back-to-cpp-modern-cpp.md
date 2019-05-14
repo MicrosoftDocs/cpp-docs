@@ -126,4 +126,4 @@ For more information, see the Stack Overflow article [Which C++ idioms are depre
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual C++ language conformance](../visual-cpp-language-conformance.md)
+[Visual C++ language conformance](../overview/visual-cpp-language-conformance.md)

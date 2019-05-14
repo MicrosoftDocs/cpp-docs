@@ -9,7 +9,7 @@ ms.assetid: 6f4b7ac5-0d12-474b-b611-76ff26ee41ac
 
 '#pragma omp parallel' is currently not supported in a generic class or function
 
-For more information, see [Generics](../../windows/generics-cpp-component-extensions.md) and [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md).
+For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md) and [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md).
 
 ## Example
 

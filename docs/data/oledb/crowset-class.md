@@ -35,7 +35,7 @@ An accessor class. The default is `CAccessorBase`.
 |[Close](#close)|Releases rows and the current `IRowset` interface.|
 |[Compare](#compare)|Compares two bookmarks using [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)).|
 |[CRowset](#crowset)|Creates a new `CRowset` object and (optionally) associates it with an `IRowset` interface supplied as a parameter.|
-|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)).|
+|[Delete](#delete)|Deletes rows from the rowset using [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)).|
 |[FindNextRow](#findnextrow)|Finds the next matching row after the specified bookmark.|
 |[GetApproximatePosition](#getapproximateposition)|Returns the approximate position of a row corresponding to a bookmark.|
 |[GetData](#getdata)|Retrieves data from the rowset's copy of the row.|
@@ -146,7 +146,7 @@ CRowset(IRowset* pRowset);
 
 ## <a name="delete"></a> CRowset::Delete
 
-Calls [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) to delete the current row from the rowset.
+Calls [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)) to delete the current row from the rowset.
 
 ### Syntax
 
@@ -294,7 +294,7 @@ A standard HRESULT.
 
 ### Remarks
 
-For an example of how to use this function, see the [MultiRead sample](../../visual-cpp-samples.md).
+For an example of how to use this function, see the [MultiRead sample](../../overview/visual-cpp-samples.md).
 
 ## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
@@ -695,10 +695,10 @@ This method requires the optional interface `IRowsetUpdate`, which might not be 
 
 A standard HRESULT.
 
-## See Also
+## See also
 
-[DBViewer Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Sample](../../visual-cpp-samples.md)<br/>
-[MultiRead Attributes Sample](../../visual-cpp-samples.md)<br/>
+[DBViewer Sample](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead Sample](../../overview/visual-cpp-samples.md)<br/>
+[MultiRead Attributes Sample](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

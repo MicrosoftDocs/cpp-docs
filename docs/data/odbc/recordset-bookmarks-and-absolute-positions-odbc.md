@@ -59,6 +59,6 @@ To move the current record pointer using absolute position, call [CRecordset::Se
 
 For more information about recordset navigation, see [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)

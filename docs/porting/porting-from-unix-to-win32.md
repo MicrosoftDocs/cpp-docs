@@ -1,6 +1,6 @@
 ---
 title: "Porting from UNIX to Win32"
-ms.date: "08/02/2018"
+ms.date: "05/02/2019"
 helpviewer_keywords: ["APIs [C++], porting to Win32", "Windows API [C++], migrating from UNIX", "migration [C++]", "UNIX [C++], porting to Win32", "porting to Win32 [C++], from UNIX", "porting to Win32 [C++]", "Win32 applications [C++], migrating from UNIX"]
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
 ---
@@ -26,23 +26,9 @@ The [UNIX Custom Application Migration Guide](https://technet.microsoft.com/libr
 
 The [Unix Migration Project Guide](https://technet.microsoft.com/library/bb656287.aspx) supplements the UNIX Custom Application Migration Guide by providing high-level help on migrating substantial projects from UNIX to Win32. The Guide provides advice on issues to consider at each stage of project migration.
 
-### Microsoft Windows Services for UNIX (SFU)
-
-Microsoft Windows Services for UNIX (SFU) provides a full range of cross-platform services for integrating Windows into existing UNIX-based environments. Services for UNIX provides file sharing, remote access and administration, password synchronization, common directory management, a common set of utilities, and a shell.
-
-[Windows Services for UNIX](http://www.microsoft.com/downloads/details.aspx?FamilyID=896c9688-601b-44f1-81a4-02878ff11778&displaylang=en)
-
-### InteropSystems.com
-
-[http://www.interopsystems.com/](http://www.interopsystems.com/)
-
-A third party site for a company providing software supporting porting UNIX to Win32.
-
 ### C++ Boost Web Site
 
-[http://boost.sourceforge.net/regression-logs/](http://boost.sourceforge.net/regression-logs/)
-
-[http://boost.sourceforge.net/boost-build2/](http://boost.sourceforge.net/boost-build2/)
+[https://www.boost.org/](https://www.boost.org/)
 
 ## Porting UNIX applications directly to Win32
 

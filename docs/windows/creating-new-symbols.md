@@ -44,7 +44,7 @@ The dialog box contains the following properties:
 
 ## To view resource symbols
 
-In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and select **Resource Symbols** to view a resource symbol table in the **Resource Symbols** dialog box.
+In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and select **Resource Symbols** to view a resource symbol table in the **Resource Symbols** dialog box.
 
 > [!NOTE]
 > To see predefined symbols, check the **Show read-only symbols** check box.
@@ -65,7 +65,7 @@ When you're browsing symbols in the **Resource Symbols**, you may want more info
 
 Win32
 
-## See Also
+## See also
 
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 [How to: Manage Symbols](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

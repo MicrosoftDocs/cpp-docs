@@ -9,7 +9,7 @@ ms.assetid: be9c7ae4-e96f-47ab-922a-39a3537d5ca6
 
 'member' : override specifier 'override' not allowed on static member functions or constructors
 
-An override was specified incorrectly. For more information, see [Explicit Overrides](../../windows/explicit-overrides-cpp-component-extensions.md).
+An override was specified incorrectly. For more information, see [Explicit Overrides](../../extensions/explicit-overrides-cpp-component-extensions.md).
 
 ## Example
 

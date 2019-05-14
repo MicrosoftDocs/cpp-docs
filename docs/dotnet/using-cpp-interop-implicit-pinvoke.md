@@ -120,7 +120,7 @@ Done
 
 - [How to: Wrap Native Class for Use by C#](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)
 
-For information on using delegates in an interop scenario, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).
+For information on using delegates in an interop scenario, see [delegate  (C++ Component Extensions)](../extensions/delegate-cpp-component-extensions.md).
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Map Class"
-ms.date: "01/18/2018"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
@@ -32,7 +32,7 @@ The type of the value in the key-value pair.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
 *__is_valid_winrt_type()*
-A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
+A compiler-generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
 
@@ -40,7 +40,7 @@ Allowed types are:
 
 - integers
 
-- interface class ^
+- interface class^
 
 - public ref class^
 
@@ -78,7 +78,7 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 |||
 |-|-|
 |Name|Description|
-|[Map::MapChanged](#mapchanged-event.md) `event`|Occurs when the Map changes.|
+|[Map::MapChanged](#mapchanged) event|Occurs when the Map changes.|
 
 ## Inheritance Hierarchy
 
@@ -223,7 +223,7 @@ The typename of the current Map.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.
 
 *m*<br/>
-A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
+A reference or [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
 
 *first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current Map.

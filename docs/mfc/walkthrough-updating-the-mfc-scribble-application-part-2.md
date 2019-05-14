@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Updating the MFC Scribble Application (Part 2)"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["walkthroughs [MFC]"]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 ---
@@ -10,7 +10,7 @@ ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
 
 ## Prerequisites
 
-[Visual C++ Samples](../visual-cpp-samples.md)
+[Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 ##  <a name="top"></a> Sections
 

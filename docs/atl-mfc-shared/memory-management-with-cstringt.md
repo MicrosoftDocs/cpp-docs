@@ -19,4 +19,4 @@ Class [CStringT](../atl-mfc-shared/reference/cstringt-class.md) is a template cl
 
 ## See also
 
-[CustomString sample](../visual-cpp-samples.md)
+[CustomString sample](../overview/visual-cpp-samples.md)

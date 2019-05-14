@@ -41,7 +41,7 @@ Topics on operators in other sections:
 
 - [Overloaded operators](../cpp/operator-overloading.md)
 
-- [typeid](../windows/typeid-cpp-component-extensions.md)
+- [typeid](../extensions/typeid-cpp-component-extensions.md) (C++/CLI)
 
     > [!NOTE]
     >  Operators for built-in types cannot be overloaded; their behavior is predefined.

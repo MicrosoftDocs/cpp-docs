@@ -43,6 +43,6 @@ This is useful for checking whether a definition exists, because a definition ca
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

@@ -25,7 +25,7 @@ All accessible base-class methods are considered during the overload resolution 
 
 **__super** cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.
 
-With the introduction of [attributes](../windows/cpp-attributes-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.
+With the introduction of [attributes](../windows/attributes/attributes-alphabetical-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.
 
 ## Example
 

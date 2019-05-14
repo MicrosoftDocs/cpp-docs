@@ -48,7 +48,7 @@ Here are a few general guidelines:
 
 In general, if you use the framework defaults, you can ignore `CCreateContext`. If you attempt more advanced modifications, the Microsoft Foundation Class Library source code or the sample programs, such as VIEWEX, will guide you. If you do forget a required parameter, a framework assertion will tell you what you forgot.
 
-For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../visual-cpp-samples.md).
+For more information on `CCreateContext`, see the MFC sample [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## Requirements
 

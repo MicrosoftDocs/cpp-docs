@@ -11,7 +11,7 @@ ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
 
 A type does not have a default, indexed property.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
 ## Example
 

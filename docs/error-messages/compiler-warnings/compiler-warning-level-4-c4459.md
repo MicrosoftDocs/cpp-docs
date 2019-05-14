@@ -11,7 +11,7 @@ ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
 
 The declaration of *identifier* in the local scope hides the declaration of the identically-named *identifier* in global scope. This warning lets you know that references to *identifier* in this scope resolve to the locally declared version, not the global version, which may or may not be your intent. Generally, we recommend you minimize the use of global variables as a good engineering practice. To minimize pollution of the global namespace, we recommend use of a named namespace for global variables.
 
-This warning was new in Visual Studio 2015, in Visual C++ compiler version 18.00. To suppress warnings from that version of the compiler or later while migrating your code, use the [/Wv:18](../../build/reference/compiler-option-warning-level.md) compiler option.
+This warning was new in Visual Studio 2015, in Microsoft C++ compiler version 18.00. To suppress warnings from that version of the compiler or later while migrating your code, use the [/Wv:18](../../build/reference/compiler-option-warning-level.md) compiler option.
 
 ## Example
 

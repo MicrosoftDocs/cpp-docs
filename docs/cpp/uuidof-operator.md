@@ -27,7 +27,7 @@ Use this keyword to extract the GUID attached to:
 
 - An object by the [uuid](../cpp/uuid-cpp.md) extended attribute.
 
-- A library block created with the [module](../windows/module-cpp.md) attribute.
+- A library block created with the [module](../windows/attributes/module-cpp.md) attribute.
 
 > [!NOTE]
 > In a debug build, **__uuidof** always initializes an object dynamically (at runtime). In a release build, **__uuidof** can statically (at compile time) initialize an object.

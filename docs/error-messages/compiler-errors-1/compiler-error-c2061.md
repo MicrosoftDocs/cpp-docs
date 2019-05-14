@@ -26,7 +26,7 @@ template < A a >   // C2061
 class c{};
 ```
 
-C2061 can occur if you pass an instance name to [typeid](../../windows/typeid-cpp-component-extensions.md):
+C2061 can occur if you pass an instance name to [typeid](../../extensions/typeid-cpp-component-extensions.md):
 
 ```
 // C2061b.cpp

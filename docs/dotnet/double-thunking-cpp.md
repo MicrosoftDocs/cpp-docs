@@ -16,7 +16,7 @@ One resolution is to tell the compiler not to generate a native entry point for 
 
 Similarly, if you export ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) a managed function, a native entry point is generated and any function that imports and calls that function will call through the native entry point. To avoid double thunking in this situation, do not use native export/import semantics; simply reference the metadata via `#using` (see [#using Directive](../preprocessor/hash-using-directive-cpp.md)).
 
-The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`. For more information on double thunk elimination, see [https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx](https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).
+The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`.
 
 ## Example
 

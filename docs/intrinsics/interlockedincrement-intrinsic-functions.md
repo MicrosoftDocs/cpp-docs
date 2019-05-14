@@ -9,7 +9,7 @@ ms.assetid: 37700615-f372-438b-bcef-d76e11839482
 
 **Microsoft Specific**
 
-Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) function.
 
 ## Syntax
 
@@ -88,7 +88,7 @@ For a sample of how to use `_InterlockedIncrement`, see [_InterlockedDecrement](
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>

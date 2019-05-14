@@ -9,7 +9,7 @@ This article contains guidance for developers to assist with identifying and mit
 
 The guidance provided by this article is related to the classes of vulnerabilities represented by:
 
-1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage.
+1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Microsoft C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage.
 
 2. CVE-2018-3639, also known as [Speculative Store Bypass (SSB)](https://aka.ms/sescsrdssb). This hardware vulnerability class is related to side channels that can arise due to speculative execution of a load ahead of a dependent store as a result of a memory access misprediction.
 
@@ -162,7 +162,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-It should be noted that both of these examples involve speculative modification of stack-allocated indirect branch pointers. It is possible that speculative modification could also occur for global variables, heap-allocated memory, and even read-only memory on some CPUs. For stack-allocated memory, the Visual C++ compiler already takes steps to make it more difficult to speculatively modify stack-allocated indirect branch targets, such as by reordering local variables such that buffers are placed adjacent to a security cookie as part of the [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) compiler security feature.
+It should be noted that both of these examples involve speculative modification of stack-allocated indirect branch pointers. It is possible that speculative modification could also occur for global variables, heap-allocated memory, and even read-only memory on some CPUs. For stack-allocated memory, the Microsoft C++ compiler already takes steps to make it more difficult to speculatively modify stack-allocated indirect branch targets, such as by reordering local variables such that buffers are placed adjacent to a security cookie as part of the [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) compiler security feature.
 
 ## Speculative type confusion
 
@@ -319,7 +319,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### Speculation barrier via compiler-time instrumentation
 
-The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
+The Microsoft C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which automatically inserts a speculation barrier for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. It is important to note that this flag does not cover all of the potentially vulnerable coding patterns and as such developers should not rely on it as a comprehensive mitigation for this class of vulnerabilities.
 
 ### Masking array indices
 

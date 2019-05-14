@@ -1,6 +1,6 @@
 ---
 title: "switch Statement (C++)"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["default_cpp", "switch_cpp", "case_cpp"]
 helpviewer_keywords: ["switch keyword [C++]", "case keyword [C++], in switch statements", "default keyword [C++]"]
 ms.assetid: 6c3f3ed3-5593-463c-8f4b-b33742b455c6
@@ -66,7 +66,7 @@ int main() {
 
 In the above example, `capa` is incremented if `c` is an uppercase `A`. The **break** statement after `capa++` terminates execution of the **switch** statement body and control passes to the **while** loop. Without the **break** statement, execution would "fall through" to the next labeled statement, so that `lettera` and `nota` would also be incremented. A similar purpose is served by the **break** statement for `case 'a'`. If `c` is a lowercase `a`, `lettera` is incremented and the **break** statement terminates the **switch** statement body. If `c` is not an `a` or `A`, the **default** statement is executed.
 
-**Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute is specified in the C++17 standard. It can be used in a **switch** statement as a hint to the compiler (or to anyone reading the code) that fall-through behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect on compiler behavior. Note that the attribute is applied to an empty statement within the labeled statement; in other words the semicolon is necessary.
+**Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute is specified in the C++17 standard. It can be used in a **switch** statement as a hint to the compiler (or to anyone reading the code) that fall-through behavior is intended. The Microsoft C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect on compiler behavior. Note that the attribute is applied to an empty statement within the labeled statement; in other words the semicolon is necessary.
 
 ```cpp
 int main()

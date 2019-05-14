@@ -11,7 +11,7 @@ a generic property is not allowed
 
 Generic parameter lists can only appear on managed classes, structs, or functions.
 
-For more information, see [Generics](../../windows/generics-cpp-component-extensions.md) and [property](../../windows/property-cpp-component-extensions.md).
+For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md) and [property](../../extensions/property-cpp-component-extensions.md).
 
 ## Example
 

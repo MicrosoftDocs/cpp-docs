@@ -1,7 +1,7 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "03/05/2019"
-helpviewer_keywords: ["CMake in Visual C++"]
+ms.date: "03/21/2019"
+helpviewer_keywords: ["CMake in Visual Studio"]
 ---
 
 # CppProperties.json schema reference
@@ -109,7 +109,9 @@ A configuration may have any of the following properties:
 |`compilerSwitches`|One or more additional switches that can influence IntelliSense behavior|
 |`forcedInclude`|Header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
 |`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
-|`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- msvc-x86 (default)<br/>- msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- windows-msvc-x86 (default)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+
+Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only. Please use the `windows-msvc*` variants.
 
 ## Custom configurations
 
@@ -180,7 +182,7 @@ You can define custom environment variables in `CppProperties.json` either globa
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "inheritEnvironments": [
@@ -193,7 +195,7 @@ You can define custom environment variables in `CppProperties.json` either globa
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }
@@ -221,7 +223,7 @@ You can also define an **environments** property inside a configuration, so that
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x86"
+      "intelliSenseMode": "windows-msvc-x86"
     },
     {
       "environments": [
@@ -240,7 +242,7 @@ You can also define an **environments** property inside a configuration, so that
         "${env.INCLUDE}"
       ],
       "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
-      "intelliSenseMode": "msvc-x64"
+      "intelliSenseMode": "windows-msvc-x64"
     }
   ]
 }

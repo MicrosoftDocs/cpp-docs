@@ -27,5 +27,5 @@ Describes the message mapping macros and `CWnd` message-map entries.
 [Class Library Overview](../../mfc/class-library-overview.md)<br/>
 Lists the classes in the MFC Library according to category.
 
-[MFC Samples](../../visual-cpp-samples.md)<br/>
+[MFC Samples](../../overview/visual-cpp-samples.md)<br/>
 Provides links to samples that demonstrate using the MFC Library.

@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::VectorViewIterator Class"
-ms.date: "12/30/2016"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorViewIterator::VectorViewIterator"]
 helpviewer_keywords: ["VectorViewIterator Class"]
@@ -53,7 +53,7 @@ The typename of the VectorViewIterator template class.
 |[VectorViewIterator::operator\[\]](#operator-at)|Retrieves a reference to the element that is a specified displacement from the current VectorViewIterator.|
 |[VectorViewIterator::operator+ Operator](#operator-plus)|Returns a VectorViewIterator that references the element at the specified displacement from the specified VectorViewIterator.|
 |[VectorViewIterator::operator++ Operator](#operator-increment)|Increments the current VectorViewIterator.|
-|[VectorViewIterator::operator+= Operator](#operator-plus-assign)|Increments the current VectorViewIterator by the specified displacement.|
+|[VectorViewIterator::operator+= Operator](#operator-plus-equals)|Increments the current VectorViewIterator by the specified displacement.|
 |[VectorViewIterator::operator< Operator](#operator-less-than)|Indicates whether the current VectorViewIterator is less than a specified VectorViewIterator.|
 |[VectorViewIterator::operator\<= Operator](#operator-less-than-or-equals)|Indicates whether the current VectorViewIterator is less than or equal to a specified VectorViewIterator.|
 |[VectorViewIterator::operator-= Operator](#operator-minus-assign)|Decrements the current VectorViewIterator by the specified displacement.|

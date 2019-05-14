@@ -44,7 +44,7 @@ while (categories.MoveNext() == S_OK)
 
 For more information about macros that handle BLOB data, see **Column Map Macros** in [Macros and Global Functions for OLE DB Consumer Templates](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)<br/>
 [Macros and Global Functions for OLE DB Consumer Templates](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>

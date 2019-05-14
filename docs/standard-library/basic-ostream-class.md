@@ -1,6 +1,6 @@
 ---
 title: "basic_ostream Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["ostream/std::basic_ostream", "ostream/std::basic_ostream::flush", "ostream/std::basic_ostream::put", "ostream/std::basic_ostream::seekp", "ostream/std::basic_ostream::sentry", "ostream/std::basic_ostream::swap", "ostream/std::basic_ostream::tellp", "ostream/std::basic_ostream::write"]
 helpviewer_keywords: ["std::basic_ostream [C++]", "std::basic_ostream [C++], flush", "std::basic_ostream [C++], put", "std::basic_ostream [C++], seekp", "std::basic_ostream [C++], sentry", "std::basic_ostream [C++], swap", "std::basic_ostream [C++], tellp", "std::basic_ostream [C++], write"]
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
@@ -26,7 +26,7 @@ The character `traits_type`.
 
 ## Remarks
 
-Most of the member functions that overload [operator<<](#op_lt_lt) are formatted output functions. They follow the pattern:
+Most of the member functions that overload [operator<<](#basic_ostream_operator_lt_lt) are formatted output functions. They follow the pattern:
 
 ```cpp
 iostate state = goodbit;
@@ -100,7 +100,7 @@ See the example for [basic_ofstream Class](../standard-library/basic-ofstream-cl
 |[put](#put)|Puts a character in a stream.|
 |[seekp](#seekp)|Resets position in output stream.|
 |[sentry](#sentry)|The nested class describes an object whose declaration structures the formatted output functions and the unformatted output functions.|
-|[swap](#op_eq)|Exchanges the values of this `basic_ostream` object for those of the provided `basic_ostream` object.|
+|[swap](#swap)|Exchanges the values of this `basic_ostream` object for those of the provided `basic_ostream` object.|
 |[tellp](#tellp)|Reports position in output stream.|
 |[write](#write)|Puts characters in a stream.|
 
@@ -108,7 +108,7 @@ See the example for [basic_ofstream Class](../standard-library/basic-ofstream-cl
 
 |Operator|Description|
 |-|-|
-|[operator=](#basic_ostream_operator_eq)|Assigns the value of the provided `basic_ostream` object parameter to this object.|
+|[operator=](#op_eq)|Assigns the value of the provided `basic_ostream` object parameter to this object.|
 |[operator<<](#basic_ostream_operator_lt_lt)|Writes to the stream.|
 
 ## Requirements

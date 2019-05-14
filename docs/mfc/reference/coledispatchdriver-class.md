@@ -380,7 +380,7 @@ A single parameter of the type specified by *vtProp*.
 
 ## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample ACDUAL](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)

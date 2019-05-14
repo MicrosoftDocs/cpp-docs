@@ -427,6 +427,6 @@ The first three forms call [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-w
 
 ## See also
 
-[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[Marquee Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CHandle Class](../../atl/reference/chandle-class.md)

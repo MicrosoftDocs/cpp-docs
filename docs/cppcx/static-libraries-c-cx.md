@@ -9,11 +9,32 @@ A static library that's used in a Universal Windows Platform (UWP) app can conta
 
 ## Creating static libraries
 
-#### To create a static library for use in a UWP app
+
+Instructions for creating a new project vary depending on which version of Visual Studio you have installed. Make sure you have the version selector in the upper left set to the correct version.
+
+::: moniker range="vs-2019"
+
+### To create a UWP static library in Visual Studio 2019
+
+1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **UWP**. 
+
+1. From the filtered list of project types, choose **Static Library (Universal Windows - C++/CX)** then choose **Next**. In the next page, give the project a name, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a UWP static library in Visual Studio 2017 or Visual Studio 2015
 
 1. On the menu bar, choose **File** > **New** > **Project**. Under **Visual C++** > **Windows Universal** choose **Static Library (Universal Windows)**.
 
 1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**. In the **Properties** dialog box, on the **Configuration Properties** > **C/C++** page, set **Consume Windows Runtime Extension** to **Yes (/ZW)**.
+
+::: moniker-end
 
 When you compile a new static library, if you make a call to a Win32 API that's excluded for UWP apps, the compiler will raise error C3861, “Identifier not found.” To look for an alternative method that's supported for the Windows Runtime, see [Alternatives to Windows APIs in UWP apps](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).
 

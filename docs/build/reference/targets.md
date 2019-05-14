@@ -20,6 +20,6 @@ In a dependency line, specify one or more targets, using any valid filename, dir
 
 [Dependency side effects](dependency-side-effects.md)
 
-## See Also
+## See also
 
 [Description Blocks](description-blocks.md)

@@ -9,7 +9,7 @@ ms.assetid: fdf49f21-d6b1-42f4-9eec-23b04ae8b4aa
 
 'native_type': a native type cannot derive from a managed or WinRT type 'type'
 
-A native class cannot inherit from a managed or WinRT class. For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md).
+A native class cannot inherit from a managed or WinRT class. For more information, see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## Example
 

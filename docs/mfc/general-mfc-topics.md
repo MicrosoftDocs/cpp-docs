@@ -14,7 +14,7 @@ The MFC framework is a powerful approach that lets you build upon the work of ex
 
 ## In This Section
 
-`MFC Samples`, which are supplied in [Visual C++ Samples](../visual-cpp-samples.md)
+`MFC Samples`, which are supplied in [Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)
 

@@ -11,7 +11,7 @@ operator 'operator' cannot be applied to an instance of a ref class
 
 use the unary '`operator` ' operator to convert an instance of a ref class to a handle type
 
-A CLR type requires CLR operators, not native (or standard) operators.  For more information, see [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).
+A CLR type requires CLR operators, not native (or standard) operators.  For more information, see [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md).
 
 ## Example
 

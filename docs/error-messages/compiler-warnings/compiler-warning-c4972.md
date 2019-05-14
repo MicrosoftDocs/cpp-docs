@@ -11,7 +11,7 @@ Directly modifying or treating the result of an unbox operation as an lvalue is 
 
 Dereferencing a handle to a value type, also known as unboxing, and then assigning to it is not verifiable.
 
-For more information, see [Boxing](../../windows/boxing-cpp-component-extensions.md).
+For more information, see [Boxing](../../extensions/boxing-cpp-component-extensions.md).
 
 ## Example
 

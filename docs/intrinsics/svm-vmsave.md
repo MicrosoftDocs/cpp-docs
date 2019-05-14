@@ -39,7 +39,7 @@ The `__svm_vmsave` function is equivalent to the `VMSAVE` machine instruction. T
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>

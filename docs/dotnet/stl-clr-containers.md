@@ -29,7 +29,7 @@ You cannot insert boxed value types into any of the STL/CLR containers.
 
 ### Handles to Reference Types
 
-You can insert a handle to a reference type into an STL/CLR container. A handle in C++ that targets the CLR is analogous to a pointer in native C++. For more information, see [Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md).
+You can insert a handle to a reference type into an STL/CLR container. A handle in C++ that targets the CLR is analogous to a pointer in native C++. For more information, see [Handle to Object Operator (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
 
 #### Example
 
@@ -221,7 +221,7 @@ int main()
 
 You can also insert an unboxed value type into an STL/CLR container. An unboxed value type is a value type that has not been *boxed* into a reference type.
 
-A value type element can be one of the standard value types, such as an `int`, or it can be a user-defined value type, such as a `value class`. For more information, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+A value type element can be one of the standard value types, such as an `int`, or it can be a user-defined value type, such as a `value class`. For more information, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### Example
 

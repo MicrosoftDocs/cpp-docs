@@ -9,7 +9,7 @@ ms.assetid: 485f6c12-cc1b-4146-9034-409a0a5e615e
 
 'var' : a literal data member must be initialized
 
-A [literal](../../windows/literal-cpp-component-extensions.md) variable must be initialized when it is declaraed.
+A [literal](../../extensions/literal-cpp-component-extensions.md) variable must be initialized when it is declaraed.
 
 The following sample generates C3886:
 

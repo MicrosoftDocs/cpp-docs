@@ -9,7 +9,7 @@ ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
 
 **Microsoft Specific**
 
-Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) function.
+Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) function.
 
 ## Syntax
 
@@ -150,7 +150,7 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>

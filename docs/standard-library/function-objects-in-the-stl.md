@@ -1,6 +1,6 @@
 ---
 title: "Function Objects in the C++ Standard Library"
-ms.date: "11/04/2016"
+ms.date: "03/15/2019"
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
 ---
@@ -23,9 +23,17 @@ public:
         return a < b;
     }
 };
+
+int main()
+{
+    Functor f;
+    int a = 5;
+    int b = 7;
+    int ans = f(a, b);
+}
 ```
 
-The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it is actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
+The last line of the `main` function shows how you call the function object. This call looks like a call to a function, but it's actually calling operator() of the Functor type. This similarity between calling a function object and a function is how the term function object came about.
 
 ## Function Objects and Containers
 
@@ -38,7 +46,7 @@ template <class Key,
 class set
 ```
 
-The second template argument is the function object `less`. This function object returns **true** if the first parameter passed to it is less than the second parameter passed. Since some containers sort their elements, the container needs a way of comparing two elements, and this is accomplished using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
+The second template argument is the function object `less`. This function object returns **true** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
 
 ## Function Objects and Algorithms
 

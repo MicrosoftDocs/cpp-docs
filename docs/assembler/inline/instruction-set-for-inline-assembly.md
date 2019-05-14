@@ -9,7 +9,7 @@ ms.assetid: a45b5b22-9b5f-4545-81ec-70eb8ea2ef9b
 
 **Microsoft Specific**
 
-The Visual C++ compiler supports all opcodes through the Pentium 4 and AMD Athlon. Additional instructions supported by the target processor can be created with the [_emit Pseudoinstruction](../../assembler/inline/emit-pseudoinstruction.md).
+The Microsoft C++ compiler supports all opcodes through the Pentium 4 and AMD Athlon. Additional instructions supported by the target processor can be created with the [_emit Pseudoinstruction](../../assembler/inline/emit-pseudoinstruction.md).
 
 **END Microsoft Specific**
 

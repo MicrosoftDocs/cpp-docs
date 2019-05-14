@@ -13,7 +13,7 @@ The language syntax requires a class, structure, union, or namespace name here.
 
 This error can occur when you use a name that has not been declared as a class, structure, union, or namespace in front of a scope operator. To fix this issue, declare the name or include the header that declares the name before it is used.
 
-C2653 is also possible if you try to define a *compound namespace*, a namespace that contains one or more scope-nested namespace names. Compound namespace definitions are not allowed in C++ prior to C++17. Compound namespaces are supported starting in Visual Studio 2015 Update 3 when you specify the [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) compiler option. Starting in Visual C++ 2017 version 15.5, the compiler supports compound namespace definitions when the [/std:c++17](../../build/reference/std-specify-language-standard-version.md) option is specified.
+C2653 is also possible if you try to define a *compound namespace*, a namespace that contains one or more scope-nested namespace names. Compound namespace definitions are not allowed in C++ prior to C++17. Compound namespaces are supported starting in Visual Studio 2015 Update 3 when you specify the [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) compiler option. Starting in Visual Studio 2017 version 15.5, the compiler supports compound namespace definitions when the [/std:c++17](../../build/reference/std-specify-language-standard-version.md) option is specified.
 
 ## Examples
 
@@ -34,7 +34,7 @@ In code that is not compiled for C++17 or later standards, nested namespaces mus
 
 ```cpp
 // C2653b.cpp
-namespace a::b {int i;}   // C2653 prior to Visual C++ 2015 Update 3,
+namespace a::b {int i;}   // C2653 prior to Visual Studio 2015 Update 3,
                           // C2429 thereafter. Use /std:c++17 or /std:c++latest to fix.
 
 namespace a {             // Use this form for compliant code under /std:c++14 (the default)

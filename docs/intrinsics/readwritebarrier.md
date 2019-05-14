@@ -34,7 +34,7 @@ The `_ReadWriteBarrier` intrinsic limits the compiler optimizations that can rem
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_ReadBarrier](../intrinsics/readbarrier.md)<br/>
 [_WriteBarrier](../intrinsics/writebarrier.md)<br/>

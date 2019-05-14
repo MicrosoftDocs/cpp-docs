@@ -9,7 +9,7 @@ ms.assetid: b254de79-931e-4a59-a9f4-1c690d90ca5e
 
 'typeid\<type abstract declarator>': this syntax is no longer supported, use ::typeid instead
 
-An obsolete form of [typeid](../../windows/typeid-cpp-component-extensions.md) was used, use the new form.
+An obsolete form of [typeid](../../extensions/typeid-cpp-component-extensions.md) was used, use the new form.
 
 The following sample generates C3189:
 

@@ -16,15 +16,15 @@ The appropriate editor opens automatically when you create or open a resource.
 
 |Use the...|To edit...|
 |----------------|----------------|
-|[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual C++ projects.|
+|[Accelerator Editor](../windows/accelerator-editor.md)|Accelerator tables in Visual Studio C++ projects.|
 |[Binary Editor](binary-editor.md)|Binary data information and custom resources in Visual C++, Visual Basic, or Visual C# projects.|
-|[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual C++ projects.|
+|[Dialog Editor](../windows/dialog-editor.md)|Dialog boxes in Visual Studio C++ projects.|
 |[Image Editor](../windows/image-editor-for-icons.md)|Bitmaps, icons, cursors, and other image files in Visual C++, Visual Basic, or Visual C# projects.|
-|[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual C++ projects.|
+|[Menu Editor](../windows/menu-editor.md)|Menu resources in Visual Studio C++ projects.|
 |[Ribbon Editor](../mfc/ribbon-designer-mfc.md)|Ribbon resources in MFC projects.|
-|[String Editor](../windows/string-editor.md)|String tables in Visual C++ projects.|
-|[Toolbar Editor](../windows/toolbar-editor.md)|Toolbar resources in Visual C++ projects. The **Toolbar Editor** is part of the **Image Editor**.|
-|[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual C++ projects.|
+|[String Editor](../windows/string-editor.md)|String tables in Visual Studio C++ projects.|
+|[Toolbar Editor](../windows/toolbar-editor.md)|Toolbar resources in Visual Studio C++ projects. The **Toolbar Editor** is part of the **Image Editor**.|
+|[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual Studio C++ projects.|
 
 > [!NOTE]
 > If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
@@ -40,13 +40,13 @@ Resources can also be edited outside of the project without having the project o
 > [!NOTE]
 > Properties of a resource can be modified using the **Properties** window.
 
-- To edit the properties of a resource, in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click the resource you want to edit and choose **Properties**.  Then, in the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
+- To edit the properties of a resource, in [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click the resource you want to edit and choose **Properties**.  Then, in the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
 
 - To undo a change made to the properties of a resource, make sure your resource has focus in **Resource View** and choose **Undo** from the **Edit** menu.
 
 ### Win32 Resources
 
-You can access Win32 resources in the [Resource View](/windows/how-to-create-a-resource-script-file#create-resources) pane.
+You can access Win32 resources in the [Resource View](how-to-create-a-resource-script-file.md#create-resources) pane.
 
 #### To view a Win32 resource in a resource editor
 
@@ -90,7 +90,7 @@ The following resources don't provide a visual preview: Accelerator, Manifest, S
 
 ### To preview resources
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources) or a document window, select your resource, for example, **IDD_ABOUTBOX**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources) or a document window, select your resource, for example, **IDD_ABOUTBOX**.
 
 1. In the [Properties window](/visualstudio/ide/reference/properties-window), select the **Property Pages** button.
 
@@ -103,7 +103,7 @@ The following resources don't provide a visual preview: Accelerator, Manifest, S
 
 None
 
-## See Also
+## See also
 
 [Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>

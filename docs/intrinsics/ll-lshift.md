@@ -77,7 +77,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__ll_rshift](../intrinsics/ll-rshift.md)<br/>
 [__ull_rshift](../intrinsics/ull-rshift.md)<br/>

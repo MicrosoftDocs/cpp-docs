@@ -914,7 +914,7 @@ Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or `
 
 The parameter's *x* and *y* (or `cx` and `cy`) values are added to `CRect`.
 
-The third overload inflates `CRect` by the number of units specifed in each member of the parameter.
+The third overload inflates `CRect` by the number of units specified in each member of the parameter.
 
 ### Example
 
@@ -952,7 +952,7 @@ Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or `
 
 The parameter's *x* and *y* (or `cx` and `cy`) values are subtracted from `CRect`.
 
-The third overload deflates `CRect` by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect).
+The third overload deflates `CRect` by the number of units specified in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect).
 
 ### Example
 
@@ -1049,7 +1049,7 @@ The `CRect` resulting from moving or inflating `CRect` by the number of units sp
 
 The parameter's *x* and *y* (or `cx` and `cy`) parameters are added to `CRect`'s position.
 
-The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specifed in each member of the parameter.
+The third overload returns a new `CRect` that is equal to `CRect` inflated by the number of units specified in each member of the parameter.
 
 ### Example
 
@@ -1092,7 +1092,7 @@ The `CRect` resulting from moving or deflating `CRect` by the number of units sp
 
 The parameter's *x* and *y* (or `cx` and `cy`) parameters are subtracted from `CRect`'s position.
 
-The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specifed in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect), not [SubtractRect](#subtractrect).
+The third overload returns a new `CRect` that is equal to `CRect` deflated by the number of units specified in each member of the parameter. Note that this overload functions like [DeflateRect](#deflaterect), not [SubtractRect](#subtractrect).
 
 ### Example
 

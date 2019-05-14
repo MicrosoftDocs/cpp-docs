@@ -11,7 +11,7 @@ ms.assetid: 7984bd3e-d51d-43e4-b6f4-08c1e9fb9704
 
 An attribute can not repeat named arguments.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

@@ -25,7 +25,7 @@ Libraries have predefined symbols that will appear as part of the project:
 
 Win32, MFC, or ATL
 
-## See Also
+## See also
 
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>
 [How to: Create Symbols](../windows/creating-new-symbols.md)<br/>

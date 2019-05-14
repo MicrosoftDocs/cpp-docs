@@ -1,6 +1,6 @@
 ---
 title: "/MP (Build with Multiple Processes)"
-ms.date: "02/22/2018"
+ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]
 helpviewer_keywords: ["-MP compiler option (C++)", "/MP compiler option (C++)", "MP compiler option (C++)", "cl.exe compiler, multi-process build"]
 ---
@@ -40,7 +40,7 @@ The following table lists compiler options and language features that are incomp
 |--------------------------------|-----------------|
 |[#import](../../preprocessor/hash-import-directive-cpp.md) preprocessor directive|Converts the types in a type library into C++ classes, and then writes those classes to a header file.|
 |[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to the standard output (**stdout**).|
-|[/Gm](gm-enable-minimal-rebuild.md)|Enables an incremental rebuild.|
+|[/Gm](gm-enable-minimal-rebuild.md)|Deprecated. Enables an incremental rebuild.|
 |[/showIncludes](showincludes-list-include-files.md)|Writes a list of include files to the standard error (**stderr**).|
 |[/Yc](yc-create-precompiled-header-file.md)|Writes a precompiled header file.|
 
@@ -113,10 +113,6 @@ The guideline for deciding whether to use MSBuild or **/MP** technology is as fo
 - If there are few projects with many files in each project, use the **/MP** option.
 
 - If the number of projects and files per project is balanced, use both MSBuild and **/MP**. Initially set the **/maxcpucount** option to the number of projects to build and the **/MP** option to the number of processors on your computer. Measure performance and then adjust your settings to yield the best results. Repeat that cycle until you are satisfied with the total build time.
-
-#### The /Gm Compiler Option
-
-By default, a project build enables the **/Gm** compiler option (incremental builds) for debug builds, and disables it for release builds. Therefore, the **/MP** compiler option is automatically disabled in debug builds because it conflicts with the default **/Gm** compiler option.
 
 ## See also
 

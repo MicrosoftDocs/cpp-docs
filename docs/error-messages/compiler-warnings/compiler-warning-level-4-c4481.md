@@ -13,7 +13,7 @@ A keyword was used that is not in the C++ standard, for example, one of the over
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md)
+- [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md)
 
 ## Example
 
