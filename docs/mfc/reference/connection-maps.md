@@ -1,7 +1,6 @@
 ---
 title: "Connection Maps"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.maps"]
 helpviewer_keywords: ["connection maps"]
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
 ---

@@ -70,7 +70,7 @@ An HRESULT error code indicating the cause of removal of the `accelerator_view` 
 
 A new instance of the `accelerator_view_removed` class.
 
-## get_view_removed_reason
+## <a name="get_view_removed_reason"></a> get_view_removed_reason
 
 Returns an HRESULT error code indicating the cause of the `accelerator_view` object's removal.
 

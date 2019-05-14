@@ -1,7 +1,6 @@
 ---
 title: "Persistence of OLE Controls"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.ole"]
 helpviewer_keywords: ["OLE controls [MFC], persistence", "persistence, OLE controls"]
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
 ---
