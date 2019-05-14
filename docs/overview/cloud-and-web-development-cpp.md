@@ -10,4 +10,4 @@ Use ANSI C99 [Azure IoT Hub SDKs](/azure/iot-hub/iot-hub-devguide-sdks) for Inte
 
 The [Microsoft Azure Storage Client Library for C++](https://azure.github.io/azure-storage-cpp/) allows you to build applications against Microsoft Azure Storage(azure/storage/common/storage-introduction).
 
-For more information, see the [Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/en-us/develop/cpp/).
+For more information, see the [Microsoft Azure C and C++ Developer Center](https://azure.microsoft.com/develop/cpp/).
