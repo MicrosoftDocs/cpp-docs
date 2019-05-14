@@ -1,6 +1,7 @@
 ---
 title: "TN041: MFC-OLE1 Migration to MFC-OLE 2"
-ms.date: "10/18/2018"helpviewer_keywords: ["OLE1 [MFC]", "migrating OLE1 to OLE2", "migration [MFC], OLE1 to OLE2", "OLE2 [MFC]", "porting OLE1 to OLE2", "converting OLE1 to OLE2", "upgrading Visual C++ applications [MFC], OLE1 to OLE2", "TN041"]
+ms.date: "10/18/2018"
+helpviewer_keywords: ["OLE1 [MFC]", "migrating OLE1 to OLE2", "migration [MFC], OLE1 to OLE2", "OLE2 [MFC]", "porting OLE1 to OLE2", "converting OLE1 to OLE2", "upgrading Visual C++ applications [MFC], OLE1 to OLE2", "TN041"]
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ---
 # TN041: MFC/OLE1 Migration to MFC/OLE 2

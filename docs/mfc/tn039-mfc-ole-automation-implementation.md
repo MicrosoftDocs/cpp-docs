@@ -1,6 +1,7 @@
 ---
 title: "TN039: MFC-OLE Automation Implementation"
-ms.date: "06/28/2018"helpviewer_keywords: ["MFC, COM support", "IDispatch interface", "MFC, OLE DB and", "TN039", "Automation, MFC COM interface entry points"]
+ms.date: "06/28/2018"
+helpviewer_keywords: ["MFC, COM support", "IDispatch interface", "MFC, OLE DB and", "TN039", "Automation, MFC COM interface entry points"]
 ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
 ---
 # TN039: MFC/OLE Automation Implementation

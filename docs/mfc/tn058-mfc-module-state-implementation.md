@@ -1,6 +1,7 @@
 ---
 title: "TN058: MFC Module State Implementation"
-ms.date: "06/28/2018"helpviewer_keywords: ["thread state [MFC]", "module states [MFC], managing state data", "TN058", "MFC, managing state data", "module states [MFC], switching", "DLLs [MFC], module states", "process state [MFC]"]
+ms.date: "06/28/2018"
+helpviewer_keywords: ["thread state [MFC]", "module states [MFC], managing state data", "TN058", "MFC, managing state data", "module states [MFC], switching", "DLLs [MFC], module states", "process state [MFC]"]
 ms.assetid: 72f5b36f-b3da-4009-a144-24258dcd2b2f
 ---
 # TN058: MFC Module State Implementation

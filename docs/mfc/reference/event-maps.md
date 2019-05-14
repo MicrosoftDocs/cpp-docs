@@ -1,6 +1,7 @@
 ---
 title: "Event Maps"
-ms.date: "06/20/2018"helpviewer_keywords: ["event maps [MFC]"]
+ms.date: "06/20/2018"
+helpviewer_keywords: ["event maps [MFC]"]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ---
 # Event Maps

@@ -1,6 +1,7 @@
 ---
 title: "Hierarchy Chart"
-ms.date: "11/19/2018"helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
+ms.date: "11/19/2018"
+helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 ---
 # Hierarchy Chart

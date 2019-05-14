@@ -1,6 +1,7 @@
 ---
 title: "Structures Used by MFC"
-ms.date: "12/03/2018"helpviewer_keywords: ["structures", "structures, MFC"]
+ms.date: "12/03/2018"
+helpviewer_keywords: ["structures", "structures, MFC"]
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
 ---
 # Structures Used by MFC
