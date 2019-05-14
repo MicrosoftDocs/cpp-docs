@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating a Ribbon Application By Using MFC"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["ribbon application, creating (MFC)", "creating a ribbon aplication (MFC)"]
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
 ---
@@ -14,9 +14,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
 ### To create an MFC application that has a ribbon
 
-1. Use the **MFC Application Wizard** to create an MFC application that has a ribbon. To run the wizard, on the **File** menu, point to **New**, and then click **Project**.
-
-1. In the **New Project** dialog box, expand the **Visual C++** node under **Installed Templates**, select **MFC**, and then select **MFC Application**. Type a name for the project, for example, *MFCRibbonApp*, and then click **OK**.
+1. Use the **MFC Application Wizard** to create an MFC application that has a ribbon. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 
 1. Set the following options in the **MFC Application Wizard**:
 
@@ -26,7 +24,7 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
     1. In the **Document Template Properties** section, in the **File extension** box, type a file name extension for documents that this application creates, for example, *mfcrbnapp*.
 
-    1. In the **Database Support** section, make sure that **None** is selected.
+    1. In the **Database Support** section (Visual Studio 2015 only), make sure that **None** is selected.
 
     1. In the **User Interface Features** section, make sure that **Use a ribbon** is selected.
 

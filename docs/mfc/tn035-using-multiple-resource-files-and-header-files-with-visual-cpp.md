@@ -197,7 +197,7 @@ RESOURCE.H     AFXRES.H
     AFXPRINT.RC
 ```
 
-Using Compile-Time Directives, you can organize your Visual C++-editable and non-editable resources into multiple .RC files, where the "master" MYAPP.RC does nothing but #include the other .RC files. If you are using a Visual C++ project .MAK file, then you should include the "master" .RC file in the project so that all the #include'd resources are compiled with your application.
+Using Compile-Time Directives, you can organize your Visual C++-editable and non-editable resources into multiple .RC files, where the "master" MYAPP.RC does nothing but #include the other .RC files. If you are using a Visual Studio C++ project .MAK file, then you should include the "master" .RC file in the project so that all the #include'd resources are compiled with your application.
 
 **Enforcement of Noneditable Visual C++ Files**
 

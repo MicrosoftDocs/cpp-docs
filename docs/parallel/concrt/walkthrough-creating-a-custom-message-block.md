@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating a Custom Message Block"
-ms.date: "11/04/2016"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["creating custom message blocks Concurrency Runtime]", "custom message blocks, creating [Concurrency Runtime]"]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
 ---

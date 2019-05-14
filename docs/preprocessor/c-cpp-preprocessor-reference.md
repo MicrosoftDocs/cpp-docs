@@ -32,5 +32,5 @@ Provides reference material for the Microsoft implementation of the C language.
 [Building a C/C++ Program](../build/reference/c-cpp-building-reference.md)<br/>
 Provides links to topics discussing compiler and linker options.
 
-[Creating and Managing Visual C++ Projects](../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[Visual Studio Projects - C++](../build/creating-and-managing-visual-cpp-projects.md)<br/>
 Describes the user interface in Visual Studio that enables you to specify the directories that the project system will search to locate files for your C++ project.

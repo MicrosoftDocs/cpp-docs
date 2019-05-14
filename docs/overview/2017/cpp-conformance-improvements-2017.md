@@ -8,7 +8,7 @@ ms.author: "mblome"
 ---
 # C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#improvements_159)
 
-With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
+With support for generalized constexpr and NSDMI for aggregates, the Microsoft C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ## C++11
 
@@ -949,7 +949,7 @@ The warning is excluded under **/Wv:18** and is on by default under warning leve
 
 ### std::is_convertible for array types
 
-Previous versions of the compiler gave incorrect results for [std::is_convertible](../../standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Microsoft Visual C++ compiler when using the `std::is_convertible<...>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
+Previous versions of the compiler gave incorrect results for [std::is_convertible](../../standard-library/is-convertible-class.md) for array types. This required library writers to special-case the Microsoft C++ compiler when using the `std::is_convertible<...>` type trait. In the following example, the static asserts pass in earlier versions of Visual Studio but fail in Visual Studio 2017 version 15.3:
 
 ```cpp
 #include <type_traits>

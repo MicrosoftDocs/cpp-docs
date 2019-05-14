@@ -1,6 +1,6 @@
 ---
 title: "Lambda Expressions in C++"
-ms.date: "11/19/2018"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
 ---
@@ -148,7 +148,7 @@ Typically, a lambda's function call operator is const-by-value, but use of the *
 
 ### Exception Specification
 
-You can use the `noexcept` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Visual C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `noexcept` exception specification and the lambda body throws an exception, as shown here:
+You can use the `noexcept` exception specification to indicate that the lambda expression does not throw any exceptions. As with ordinary functions, the Microsoft C++ compiler generates warning [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) if a lambda expression declares the `noexcept` exception specification and the lambda body throws an exception, as shown here:
 
 ```cpp
 // throw_lambda_expression.cpp

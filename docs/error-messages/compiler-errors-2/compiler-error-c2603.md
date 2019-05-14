@@ -9,9 +9,9 @@ ms.assetid: 9ca520d0-f082-4b65-933d-17c3bcf8b02c
 
 > '*function*' : Too many block scope static objects with constructor/destructors in function
 
-In versions of the Visual C++ compiler before Visual Studio 2015, or when the [/Zc:threadSafeInit-](../../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) compiler option is specified, there is a limit of 31 on the number of static objects you can have in an externally visible inline function.
+In versions of the Microsoft C++ compiler before Visual Studio 2015, or when the [/Zc:threadSafeInit-](../../build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md) compiler option is specified, there is a limit of 31 on the number of static objects you can have in an externally visible inline function.
 
-To resolve this issue, we recommend you adopt more recent version of the Visual C++ compiler toolset, or if possible, remove the /Zc:threadSafeInit- compiler option. If this is not possible, consider combining your static objects. If the objects are of the same type, consider use of a single static array of that type, and reference individual members as required.
+To resolve this issue, we recommend you adopt more recent version of the Microsoft C++ compiler toolset, or if possible, remove the /Zc:threadSafeInit- compiler option. If this is not possible, consider combining your static objects. If the objects are of the same type, consider use of a single static array of that type, and reference individual members as required.
 
 ## Example
 

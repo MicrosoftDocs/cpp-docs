@@ -137,7 +137,7 @@ void assign(InputIterator First, InputIterator Last);
 |*count*|The number of elements to assign.|
 |*val*|The value to assign each element.|
 |*Type*|The type of the value.|
-|*IList`|The initializer_list to copy.|
+|*IList*|The initializer_list to copy.|
 
 ### Remarks
 

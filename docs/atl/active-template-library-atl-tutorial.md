@@ -1,7 +1,8 @@
 ---
 title: "Active Template Library (ATL) Tutorial"
+description: "Create an ActiveX control using Microsoft C++ and the Active Template Library."
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "05/03/2019"
 helpviewer_keywords: ["ATL projects, tutorials", "controls [ATL], tutorials", "ATL tutorial", "tutorials [ATL]", "ATL, tutorials"]
 ms.assetid: f921a121-09c8-4812-9317-e15b2f1471fa
 ---

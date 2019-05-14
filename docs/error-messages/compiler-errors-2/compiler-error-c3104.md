@@ -13,7 +13,7 @@ You specified an invalid argument to an attribute.
 
 See [Attribute Parameter Types](../../extensions/attribute-parameter-types-cpp-component-extensions.md) for more information.
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: when passing managed arrays to custom attributes, the type of the array is no longer deduced from the aggregate initialization list. The compiler now requires you to specify the type of the array as well as the initializer list.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: when passing managed arrays to custom attributes, the type of the array is no longer deduced from the aggregate initialization list. The compiler now requires you to specify the type of the array as well as the initializer list.
 
 ## Example
 

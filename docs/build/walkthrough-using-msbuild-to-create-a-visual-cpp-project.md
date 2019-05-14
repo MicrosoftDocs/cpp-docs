@@ -1,13 +1,12 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
-ms.date: "09/24/2018"
-f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
+ms.date: "05/06/2019"
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project
 
-This walkthrough demonstrates how to use MSBuild to build a Visual C++ project at a command prompt. You'll learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
+This walkthrough demonstrates how to use MSBuild to build a Visual Studio C++ project at a command prompt. You'll learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
 
 This walkthrough illustrates the following tasks:
 
@@ -31,7 +30,7 @@ You need the following to complete this walkthrough:
 > Do not use this approach if you intend to edit the project file later by using the Visual Studio IDE. If you create a .vcxproj file manually, the Visual Studio IDE might not be able to edit or load it, especially if the project uses wildcards in project items.
 
 > [!NOTE]
-> Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VCTargets directory, stored in the property `$(VCTargetsPath)`. The default path for these files in Visual Studio 2017 Enterprise Edition is C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\VC\\VCTargets\\.
+> Most of the low-level build instructions are contained in the **.targets** and **.props** files that are defined in the VCTargets directory, stored in the property `$(VCTargetsPath)`. The default path for these files in Visual Studio 2019 Enterprise Edition is C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Common.props.
 
 ## Creating the C++ Source Files
 
@@ -73,10 +72,10 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### To create the MSBuild project file
 
-1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags:
+1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags. (Use ToolsVersion="15.0" if you are using Visual Studio 2017.)
 
     ```xml
-    <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
@@ -101,12 +100,12 @@ An MSBuild project file is an XML file that contains a project root element (`<P
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties:
+1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties. (Use v141 if you are using Visual Studio 2017.)
 
     ```xml
     <PropertyGroup>
       <ConfigurationType>Application</ConfigurationType>
-      <PlatformToolset>v141</PlatformToolset>
+      <PlatformToolset>v142</PlatformToolset>
     </PropertyGroup>
     ```
 
@@ -143,10 +142,10 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### Complete Project File
 
-The following code shows the complete project file that you created in the previous procedure.
+The following code shows the complete project file that you created in the previous procedure. (Use ToolsVersion="15.0" for Visual Studio 2017.)
 
 ```xml
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -160,7 +159,7 @@ The following code shows the complete project file that you created in the previ
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
   <PropertyGroup>
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ItemGroup>
@@ -227,7 +226,7 @@ At the command prompt, type the following command to create a release build for 
 
 ### Using MSBuild with the 64-bit Compiler and Tools
 
-If you have installed Visual C++ on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure MSBuild to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property doesn't affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:
+If you have installed Visual Studio on 64-bit Windows, by default, the 64-bit x64 native and cross tools are installed. You can configure MSBuild to use the 64-bit compiler and tools to build your application by setting the `PreferredToolArchitecture` property. This property doesn't affect the project configuration or platform properties. By default, the 32-bit version of the tools is used. To specify the 64-bit version of the compiler and tools, add the following property group element to the Myproject.vcxproj project file after the `Microsoft.Cpp.default.props` \<Import /> element:
 
 ```xml
 <PropertyGroup>

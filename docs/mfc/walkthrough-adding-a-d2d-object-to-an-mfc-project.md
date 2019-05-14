@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Adding a D2D Object to an MFC Project"
-ms.date: "09/20/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["MFC, D2D", "D2D [MFC]"]
 ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
 ---
@@ -28,9 +28,9 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
 ## To create an MFC application
 
-1. On the **File** menu, point to **New** and then choose **Project**.
+1. Use the **MFC Application Wizard** to create an MFC application. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 
-1. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type *MFCD2DWalkthrough*. Choose **OK**.
+1. In the **Name** box, type *MFCD2DWalkthrough*. Choose **OK**.
 
 1. In the **MFC Application Wizard**, choose **Finish** without changing any settings.
 

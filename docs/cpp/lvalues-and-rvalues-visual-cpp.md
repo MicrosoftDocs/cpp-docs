@@ -1,10 +1,10 @@
 ---
-title: "Value Categories: Lvalues and Rvalues (Visual C++)"
-ms.date: "04/06/2018"
+title: "Value Categories: Lvalues and Rvalues (C++)"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["R-values [C++]", "L-values [C++]"]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
 ---
-# Lvalues and Rvalues (Visual C++)
+# Lvalues and Rvalues (C++)
 
 Every C++ expression has a type, and belongs to a *value category*. The value categories are the basis for rules that compilers must follow when creating, copying, and moving temporary objects during expression evaluation.
 

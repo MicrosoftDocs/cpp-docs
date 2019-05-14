@@ -1,6 +1,6 @@
 ---
 title: "Composite Control Macros"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]
 helpviewer_keywords: ["composite controls, macros"]
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e

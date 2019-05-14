@@ -65,7 +65,7 @@ typename X<T>::Y func() { }
 
 You will also see this error as a result of compiler conformance work that was done for Visual Studio .NET 2003: explicit specializations no longer find template parameters from primary template.
 
-The use of `T` from the primary template is not allowed in the explicit specialization. For code to be valid in the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, replace all instances of the template parameter in the specialization with the explicitly specialized type.
+The use of `T` from the primary template is not allowed in the explicit specialization. For code to be valid in the Visual Studio .NET 2003 and Visual Studio .NET, replace all instances of the template parameter in the specialization with the explicitly specialized type.
 
 The following sample compiles in Visual Studio .NET but will fail in Visual Studio .NET 2003:
 

@@ -7,7 +7,7 @@ ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
 ---
 # Hint Files
 
-A *hint file* contains macros that would otherwise cause regions of code to be skipped by the C++ Browsing Database Parser. When you open a Visual C++ project, the parser analyzes the code in each source file in the project and builds a database with information about every identifier. The IDE uses that information to support code browsing features such as the **Class View** browser and the **Navigation Bar**.
+A *hint file* contains macros that would otherwise cause regions of code to be skipped by the C++ Browsing Database Parser. When you open a Visual Studio C++ project, the parser analyzes the code in each source file in the project and builds a database with information about every identifier. The IDE uses that information to support code browsing features such as the **Class View** browser and the **Navigation Bar**.
 
 The C++ Browsing Database Parser is a fuzzy parser that can parse large amounts of code in a short amount of time. One reason it's fast is because it skips the content of blocks. For instance, it only records the location and parameters of a function, and ignores its contents. Certain macros can cause issues for the heuristics used to determine the start and end of a block. These issues cause regions of code to be recorded improperly.
 
@@ -105,7 +105,7 @@ The parsing system searches directories for hint files in the following order.
 
 - The directory that contains the installation package for Visual C++ (**vcpackages**). This directory contains a built-in hint file that describes symbols in frequently used system files, such as **windows.h**. Consequently, your project automatically inherits most of the hints that it needs.
 
-- The path from the root directory of a source file to the directory that contains the source file itself. In a typical Visual C++ project, the root directory contains the solution or project file.
+- The path from the root directory of a source file to the directory that contains the source file itself. In a typical Visual Studio C++ project, the root directory contains the solution or project file.
 
    The exception to this rule is if a *stop file* is in the path to the source file. A stop file is any file that is named **cpp.stop**. A stop file provides additional control over the search order. Instead of starting from the root directory, the parsing system searches from the directory that contains the stop file to the directory that contains the source file. In a typical project, you don't need a stop file.
 
@@ -149,7 +149,7 @@ Hints use this syntax:
 
 This example shows how hints are accumulated from hint files. Stop files aren't used in this example.
 
-The illustration shows some of the physical directories in a Visual C++ project. There are hint files in the `vcpackages`, `Debug`, `A1`, and `A2` directories.
+The illustration shows some of the physical directories in a Visual Studio C++ project. There are hint files in the `vcpackages`, `Debug`, `A1`, and `A2` directories.
 
 ### Hint File Directories
 
@@ -231,7 +231,7 @@ These notes apply to the preceding list:
 
 ## See also
 
-[File Types Created for Visual C++ Projects](file-types-created-for-visual-cpp-projects.md)<br>
+[File Types Created for Visual C++ projects](file-types-created-for-visual-cpp-projects.md)<br>
 [#define Directive (C/C++)](../../preprocessor/hash-define-directive-c-cpp.md)<br>
 [#undef Directive (C/C++)](../../preprocessor/hash-undef-directive-c-cpp.md)<br>
 [SAL Annotations](../../c-runtime-library/sal-annotations.md)<br>

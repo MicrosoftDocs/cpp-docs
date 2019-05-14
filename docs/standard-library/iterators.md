@@ -78,7 +78,7 @@ It is important to understand the promises and limitations of each iterator cate
 > [!NOTE]
 > You can avoid using iterators explicitly by using range-for loops. For more information, see [Range-based for statement](../cpp/range-based-for-statement-cpp.md).
 
-Visual C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+Microsoft C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 ## See also
 

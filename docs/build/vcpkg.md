@@ -1,6 +1,6 @@
 ---
 title: vcpkg-- A C++ package manager for Windows, Linux and MacOS
-description: vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows.
+description: "vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows."
 author: mikeblome
 ms.author: mblome
 ms.date: "03/18/2019"
@@ -118,7 +118,7 @@ If you need to use a specific version of a library that is different from the ve
 
 ## Integrate with Visual Studio Code (Linux/MacOS)
 
-Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistement and enable IntelliSense on source files.
+Run **vcpkg integrate install** to configure Visual Studio Code on Linux/MacOS with the location of the vcpkg enlistment and enable IntelliSense on source files.
 
 ## Target Linux from Windows via WSL
 

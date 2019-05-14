@@ -1,10 +1,13 @@
 ---
 title: "OLE DB Architectural Design Issues"
-ms.date: "10/22/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB, application design considerations"]
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
 ---
 # OLE DB Architectural Design Issues
+
+> [!NOTE]
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 Consider the following issues before starting your OLE DB application:
 

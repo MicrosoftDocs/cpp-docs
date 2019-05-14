@@ -1,6 +1,6 @@
 ---
 title: "Unions"
-ms.date: "11/19/2018"
+ms.date: "05/06/2019"
 f1_keywords: ["union_cpp"]
 helpviewer_keywords: ["class types [C++], unions as", "union keyword [C++]"]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca

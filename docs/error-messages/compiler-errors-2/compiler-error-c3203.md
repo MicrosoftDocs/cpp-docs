@@ -11,7 +11,7 @@ ms.assetid: 6356770e-22c1-434c-91fe-f60b0aa23b91
 
 You passed an invalid argument to a class template or generic. The class template or generic expects a type as a parameter.
 
-This error can be generated as a result of compiler conformance work that was done for Visual C++ 2005: an unspecialized class template can't be used as a template argument in a base class list. To resolve C3203, explicitly add the template type parameter(s) to the template class name when using it as a template parameter in a base class list.
+This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: an unspecialized class template can't be used as a template argument in a base class list. To resolve C3203, explicitly add the template type parameter(s) to the template class name when using it as a template parameter in a base class list.
 
 ```
 // C3203.cpp

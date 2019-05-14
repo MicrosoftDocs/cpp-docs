@@ -1,6 +1,6 @@
 ---
 title: "Creating a Consumer Without Using a Wizard"
-ms.date: "10/12/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
 ---

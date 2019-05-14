@@ -24,7 +24,7 @@ A 128-bit, unique identifier.
 
 ## Remarks
 
-If the definition of an interface or class does not specify the **uuid** C++ attribute, then the Visual C++ compiler will provide one. When you specify a **uuid**, you must include the quotes.
+If the definition of an interface or class does not specify the **uuid** C++ attribute, then the Microsoft C++ compiler will provide one. When you specify a **uuid**, you must include the quotes.
 
 If you do not specify **uuid**, then the compiler will generate the same GUID for interfaces or classes with the same name in different attribute projects on a machine.
 
