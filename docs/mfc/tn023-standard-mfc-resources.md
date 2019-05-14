@@ -1,7 +1,6 @@
 ---
 title: "TN023: Standard MFC Resources"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.resources"]
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 ---
