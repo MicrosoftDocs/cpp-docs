@@ -1,6 +1,6 @@
 ---
 title: "3. Run-time library functions"
-ms.date: "01/17/2019"
+ms.date: "05/13/2019"
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
 ---
 # 3. Run-time library functions
@@ -49,6 +49,8 @@ This function has the effects described above when called from a portion of the 
 
 This call has precedence over the `OMP_NUM_THREADS` environment variable. The default value for the number of threads, which may be established by calling `omp_set_num_threads` or by setting the `OMP_NUM_THREADS` environment variable, can be explicitly overridden on a single `parallel` directive by specifying the `num_threads` clause.
 
+For more information, see [omp_set_dynamic](#317-omp_set_dynamic-function).
+
 #### Cross-references
 
 - [omp_set_dynamic](#317-omp_set_dynamic-function) function
@@ -68,6 +70,8 @@ int omp_get_num_threads(void);
 The `num_threads` clause, the `omp_set_num_threads` function, and the `OMP_NUM_THREADS` environment variable control the number of threads in a team.
 
 If the number of threads hasn't been explicitly set by the user, the default is implementation-defined. This function binds to the closest enclosing `parallel` directive. If called from a serial portion of a program, or from a nested parallel region that's serialized, this function returns 1.
+
+For more information, see [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 #### Cross-references
 
@@ -159,6 +163,12 @@ A call to `omp_set_dynamic` has precedence over the `OMP_DYNAMIC` environment va
 
 The default for the dynamic adjustment of threads is implementation-defined. As a result, user codes that depend on a specific number of threads for correct execution should explicitly disable dynamic threads. Implementations aren't required to provide the ability to dynamically adjust the number of threads, but they're required to provide the interface to support portability across all platforms.
 
+#### Microsoft specific
+
+The current support of `omp_get_dynamic` and `omp_set_dynamic` is as follows: 
+
+The input parameter to `omp_set_dynamic` does not affect the threading policy and does not change the number of threads. `omp_get_num_threads` always returns either the user-defined number, if that is set, or the default thread number. In the current Microsoft implementation, `omp_set_dynamic(0)` turns off dynamic threading so that the existing set of threads can be reused for the following parallel region. `omp_set_dynamic(1)` turns on dynamic threading by discarding the existing set of threads and creating a new set for the upcoming parallel region. The number of threads in the new set is the same as the old set, and is based on the return value of `omp_get_num_threads`. Therefore, for best performance, use `omp_set_dynamic(0)` to reuse the existing threads.
+
 #### Cross-references
 
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
@@ -174,7 +184,7 @@ The `omp_get_dynamic` function returns a nonzero value if dynamic adjustment of 
 int omp_get_dynamic(void);
 ```
 
-If the implementation doesn't implement dynamic adjustment of the number of threads, this function always returns 0.
+If the implementation doesn't implement dynamic adjustment of the number of threads, this function always returns 0. For more information, see [omp_set_dynamic](#317-omp_set_dynamic-function).
 
 #### Cross-references
 

@@ -1,7 +1,6 @@
 ---
 title: "TN059: Using MFC MBCS-Unicode Conversion Macros"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.mbcs"]
 helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
 ---

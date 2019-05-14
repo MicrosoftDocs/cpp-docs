@@ -1,7 +1,6 @@
 ---
 title: "How to: Use the Message-Map Cross-Reference"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.messages"]
 helpviewer_keywords: ["windows [MFC], message maps"]
 ms.assetid: 2e863d23-9e58-45ba-b5e4-a8ceefccd0c8
 ---

@@ -1,7 +1,6 @@
 ---
 title: "TN011: Using MFC as Part of a DLL"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.dll"]
 helpviewer_keywords: ["_USRDLL symbol", "USRDLLs, compiler switches", "TN011", "DLLs [MFC], linking", "MFC DLLs [MFC], linking regular MFC DLLs to MFC"]
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
 ---
