@@ -12,7 +12,7 @@ The ATL COM+ 1.0 Component wizard is not available in Visual Studio 2019 and lat
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 This wizard adds an object to your project that supports COM+ 1.0 services, including transactions.
 
