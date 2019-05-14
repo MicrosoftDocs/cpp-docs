@@ -1,6 +1,6 @@
 ---
 title: "Visual C++ Tools and Features in Visual Studio Editions"
-ms.date: "02/28/2018"
+ms.date: "05/14/2019"
 helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
@@ -167,5 +167,5 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 [Install Visual Studio](/visualstudio/install/install-visual-studio)<br/>
 [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br/>
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
+
