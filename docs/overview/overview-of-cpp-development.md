@@ -56,6 +56,10 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 For more information about Git integration with repos in Azure, see [Share your code with Visual Studio 2017 and Azure Repos Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017). For information about Git integration with GitHub, see [GitHub Extension for Visual Studio](https://visualstudio.github.com/).
 
+## Obtain libraries
+
+Use the [vcpkg](../build/vcpkg.md) package manager to obtain and install third-party libraries. Over 900 open-source libraries are currently available in the catalog.
+
 ## Create user interfaces with designers
 
 If your program has a user interface, you can use a designer to quickly populate it with controls such as buttons, list boxes and so on. When you drag a control from the toolbox window and drop it onto the design surface, Visual Studio generates the resources and code required to make it all work. You then write the code to customize the appearance and behavior.
