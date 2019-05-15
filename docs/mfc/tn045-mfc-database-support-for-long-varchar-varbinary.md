@@ -1,7 +1,6 @@
 ---
 title: "TN045: MFC-Database Support for Long Varchar-Varbinary"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.data"]
 helpviewer_keywords: ["TN045", "Varbinary data type", "Varchar data type"]
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
 ---

@@ -1,7 +1,6 @@
 ---
 title: "TN040: MFC-OLE In-Place Resizing and Zooming"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.ole"]
 helpviewer_keywords: ["resizing in-place", "TN040", "zooming and in-place activation", "in-place activation, zooming and resizing"]
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
 ---
