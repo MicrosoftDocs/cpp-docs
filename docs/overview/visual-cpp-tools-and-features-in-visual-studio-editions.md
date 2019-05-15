@@ -1,7 +1,6 @@
 ---
 title: "Visual C++ Tools and Features in Visual Studio Editions"
-ms.date: "05/14/2019"
-helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
+moniker-range: ">=vs-2015"
 ---
 ::: moniker range=">=vs-2019"
 
