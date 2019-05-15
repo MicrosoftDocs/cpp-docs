@@ -12,7 +12,7 @@ The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 When you've created an OLE DB provider using the **ATL Project Wizard** and **ATL OLE DB Provider Wizard**, you can add other functionality that you want to support. Start designing your provider by examining what kind of data you'll be sending to the consumer and under what conditions. It's especially important to determine whether you need to support commands, transactions, and other optional objects. A good design up front will speed implementation and testing.
 

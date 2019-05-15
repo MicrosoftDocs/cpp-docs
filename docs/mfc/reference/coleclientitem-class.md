@@ -1985,7 +1985,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 Pointer to a [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) data structure, which contains information about the new print-target device. Can be NULL.
 
 *ppd*<br/>
-Pointer to a [PRINTDLG](https://msdn.microsoft.com/library/windows/desktop/ms646940) data structure, which contains information about the new print-target device. Can be NULL.
+Pointer to a [PRINTDLG](/windows/desktop/ms646940) data structure, which contains information about the new print-target device. Can be NULL.
 
 ### Return Value
 
