@@ -1,14 +1,14 @@
 ---
 title: "Resource Files (C++)"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["resource files", "resources [C++]", "file types [C++], resource files"]
+ms.date: "05/14/2019"
+helpviewer_keywords: ["resource files", "resources [C++]"]
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
 ---
 # Resource Files (C++)
 
-Resources are interface elements that provide information to the user. Bitmaps, icons, toolbars, and cursors are all resources. Some resources can be manipulated to perform an action such as selecting from a menu or entering data in dialog box.
+Resources are interface elements that provide information to the user. Bitmaps, icons, toolbars, and cursors are all resources. Some resources can perform an action such as selecting from a menu or entering data in dialog box.
 
-See [Working with Resources](../../windows/working-with-resource-files.md) for more information.
+ For more information, see [Working with Resources](../../windows/working-with-resource-files.md).
 
 |File name|Directory location|Solution Explorer location|Description|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -23,4 +23,4 @@ See [Working with Resources](../../windows/working-with-resource-files.md) for m
 
 ## See also
 
-[File Types Created for Visual C++ projects](file-types-created-for-visual-cpp-projects.md)
+[File Types Created for Visual Studio C++ projects](file-types-created-for-visual-cpp-projects.md)

@@ -28,7 +28,7 @@ The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 The **ATL OLE DB Provider Wizard** creates three schema classes in the session header file:
 

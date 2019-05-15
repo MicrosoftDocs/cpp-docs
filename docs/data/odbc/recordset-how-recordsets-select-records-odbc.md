@@ -1,10 +1,13 @@
 ---
 title: "Recordset: How Recordsets Select Records (ODBC)"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["recordsets, selecting records", "record selection, ODBC recordsets", "SQL statements, recordset", "records, selecting", "recordsets, constructing SQL statements", "ODBC recordsets, selecting records"]
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 ---
 # Recordset: How Recordsets Select Records (ODBC)
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
 

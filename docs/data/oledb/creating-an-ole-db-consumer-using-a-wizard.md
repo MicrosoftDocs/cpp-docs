@@ -12,7 +12,7 @@ The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 This procedure demonstrates how you can use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard** to generate an OLE DB Templates consumer and then modify the main code of the console application to retrieve and display data from a database table.
 
