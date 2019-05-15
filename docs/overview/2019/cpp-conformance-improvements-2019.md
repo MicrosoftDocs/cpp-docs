@@ -42,7 +42,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### Partial support for operator <=>
 
-C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
+[P0515R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0515r3.pdf) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
 
 ```cpp
 struct S
@@ -224,7 +224,7 @@ void f() {
 
 ### Mac line endings in the editor
 
-'\r' (Mac line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line ending.
+'\r' (Mac line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line endings.
 
 ```cpp
 #include <assert.h>

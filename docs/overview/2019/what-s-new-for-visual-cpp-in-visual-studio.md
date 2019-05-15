@@ -9,7 +9,7 @@ ms.author: "mblome"
 
 # What's New for C++ in Visual Studio 2019
 
-Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environment. We've fixed many bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://developercommunity.visualstudio.com/spaces/62/index.html) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio](/visualstudio/ide/whats-new-visual-studio-2019).
+Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environment. We've fixed many bugs and issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://developercommunity.visualstudio.com/spaces/62/index.html) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio](/visualstudio/ide/whats-new-visual-studio-2019).
 
 ## C++ compiler
 
@@ -33,13 +33,13 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 - Clang-Format has been applied to the C++ Standard Library headers for improved readability.
 
-- Because Visual Studio now supports Just My Code for C++, the Standard Library no longer needs to provide the custom machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects, except that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of \<type_traits> or \<variant>.
+- Because Visual Studio now supports Just My Code for C++, the Standard Library no longer needs to provide custom machinery for `std::function` and `std::visit` to achieve the same effect. Removing that machinery largely has no user-visible effects, except that the compiler will no longer produce diagnostics that indicate issues on line 15732480 or 16707566 of \<type_traits> or \<variant>.
 
 ## Performance/throughput improvements in the compiler and Standard Library
 
 - Build throughput improvements, including the way the linker handles File I/O, and link time in PDB type merging and creation.
 
-- Added basic support for OpenMP SIMD vectorization. You can enable it using the new CL switch `-openmp:experimental`. This option allows loops annotated with `#pragma omp simd` to potentially be vectorized. The vectorization isn't guaranteed, and loops annotated but not vectorized will get a warning reported. No SIMD clauses are supported, they're simply ignored with a warning reported.
+- Added basic support for OpenMP SIMD vectorization. You can enable it using the new compiler switch `-openmp:experimental`. This option allows loops annotated with `#pragma omp simd` to potentially be vectorized. The vectorization isn't guaranteed, and loops annotated but not vectorized will get a warning reported. No SIMD clauses are supported, they're simply ignored with a warning reported.
 
 - Added a new inlining command-line switch `-Ob3`, which is a more aggressive version of `-Ob2`. `-O2` (optimize the binary for speed) still implies `-Ob2` by default. If you find that the compiler doesn't inline aggressively enough, consider passing `-O2 -Ob3`.
 
@@ -73,7 +73,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 - Suboptimal codegen in `std::bitset` caused by a conditional throw inside a noexcept function was fixed by factoring out the throwing path.
 
-- The `std::list` and std::unordered_* family use non-debugging iterators internally in more places.
+- The `std::list` and `std::unordered_*` family use non-debugging iterators internally in more places.
 
 - Several `std::list` members were changed to reuse list nodes where possible rather than deallocating and reallocating them. For example, given a `list<int>` that already has a size of 3, a call to `assign(4, 1729)` will now overwrite the ints in the first 3 list nodes, and allocate one new list node with the value 1729, rather than deallocating all 3 list nodes and then allocating 4 new list nodes with the value 1729.
 
@@ -171,7 +171,7 @@ IncrediBuild is included as an optional component in the **Desktop development w
 
 - For C++ applications running on Windows, PDB files now load in a separate 64-bit process. This change addresses a range of crashes caused by the debugger running out of memory when debugging applications that contain a large number of modules and PDB files.
 
-- Search is enabled in the **Watch**, **Autos**, and **Locals** windows
+- Search is enabled in the **Watch**, **Autos**, and **Locals** windows.
 
 ## Windows desktop development with C++
 
