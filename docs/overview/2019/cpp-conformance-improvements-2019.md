@@ -154,18 +154,18 @@ Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](htt
 
 ### char8_t
 
-C++20 adds a new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case up until C++17 [P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). The C standard makes similar changes in [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
+[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++20 adds a new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C Standard in [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
 
 #### Example
 
 ```cpp
-const char* s = u8"Hello"; //C++17
+const char* s = u8"Hello"; // C++17
 const char8_t* s = u8"Hello"; // C++20
 ```
 
 ### std::type_identity metafunction and std::identity function object
 
-The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
+[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
 
 The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017: 
 
@@ -194,7 +194,7 @@ long j = static_cast<long>(i);
 
 The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or under any other language mode with **/experimental:newLambdaProcessor**. 
 
-In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces error *C2760 syntax error: unexpected token '\<id-expr>', expected 'id-expression'*:
+In Visual Studio 2017, this code compiles without warnings, but in Visual Studio 2019 it produces error *C2760 syntax error: unexpected token '\<id-expr>', expected 'id-expression'*:
 
 ```cpp
 void f() {

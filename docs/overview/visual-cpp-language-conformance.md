@@ -95,14 +95,14 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |__C++20 Core Language Features__|__Supported__|
 |&nbsp;&nbsp;[P0306R4 Adding &#95;&#95;VA_OPT&#95;&#95; for comma omission and comma deletion](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0306r4.html)|No|
 |&nbsp;&nbsp;[P0329R4 Designated initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture [=, this]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture [=, this]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|No|
 |&nbsp;&nbsp;[P0683R1 Default member initializers for bit-fields](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0683r1.html)|No|
 |&nbsp;&nbsp;[P0704R1 Fixing const lvalue ref-qualified pointers to members](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0704r1.html)|No|
 |&nbsp;&nbsp;[P0734R0 Concepts](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0734r0.pdf)|No|
 |&nbsp;&nbsp;[P0515R3 Three-way (spaceship) comparison operator <=>](https://wg21.link/P0515R3) and [P0905R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0905r1.html)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0941R2 Feature-test macros](https://wg21.link/P0941R2)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P1008R1 Prohibiting aggregates with user-declared constructors](https://wg21.link/P1008R1)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1008R1 Prohibiting aggregates with user-declared constructors](https://wg21.link/P1008R1)|VS 2019 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0846R0 ADL and function templates that are not visible](https://wg21.link/P0846R0)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0306R4 Adding __VA_OPT__ for comma omission and comma deletion](https://wg21.link/P0306R4)  and [P1042R1](https://wg21.link/P1042R1)|No|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)|No|
@@ -154,8 +154,8 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp; [P0355R7 \<chrono> Calendars And Time Zones](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0355r7.html)|No|
 |&nbsp;&nbsp; [P0415R1 constexpr For \<complex> (Again)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0415r1.html)|No|
 |&nbsp;&nbsp; [P0439R0 enum class memory_order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0439r0.html)|No|
-|&nbsp;&nbsp; [P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp; [P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|VS 2019<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp; [P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp; [P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|VS 2019 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp; [P0551R3 Thou Shalt Not Specialize std Function Templates!](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0551r3.pdf)|No|
 |&nbsp;&nbsp; [P0600R1 \[\[nodiscard\]\] For The STL, Part 1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf)|No|
 |&nbsp;&nbsp; [P0616R0 Using move() In \<numeric>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0616r0.pdf)|No|
@@ -165,12 +165,12 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp; [P0767R1 Deprecating is_pod](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)|No|
 |&nbsp;&nbsp; [P0768R1 Library Support For The Spaceship Comparison Operator \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)|No|
 |&nbsp;&nbsp; [P0966R1 string::reserve() Should Not Shrink](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0966r1.html)|No|
-|&nbsp;&nbsp;[P0318R1 unwrap_reference, unwrap_ref_decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0318r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0458R2 contains() For Ordered And Unordered Associative Containers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0458r2.html)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P1164R1 Making create_directory() Intuitive (Defect report)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf)|VS 2019<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0318R1 unwrap_reference, unwrap_ref_decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0318r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0458R2 contains() For Ordered And Unordered Associative Containers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0458r2.html)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1164R1 Making create_directory() Intuitive (Defect report)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf)|VS 2019 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8))|No|
 |&nbsp;&nbsp;[P0339R6 polymorphic_allocator<>](https://wg21.link/P0339R6))|No|
 |&nbsp;&nbsp;[P0340R3 SFINAE-Friendly underlying_type](https://wg21.link/P0340R3))|No|
@@ -207,7 +207,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P1285R Improving Completeness Requirements For Type Traits](https://wg21.link/P1285R0)|No|
 |&nbsp;&nbsp;[P1357R is_bounded_array, is_unbounded_array](https://wg21.link/P1357R1)|No|
 |&nbsp;&nbsp;[P0487R Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|No|
-|&nbsp;&nbsp;[P0482R Library Support For char8_t](https://wg21.link/P0482R6)|No|
+|&nbsp;&nbsp;[P0482R char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|No|
 |&nbsp;&nbsp;[P0771R noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)|No|
 |__C++17 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[P0433R2 Integrating template deduction for class templates into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[P0739R0 Improving class template argument deduction integration into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|VS 2017 15.7|
