@@ -49,10 +49,6 @@
         - name: ATL
           tocHref: /cpp/atl/
           topicHref: /cpp/atl/atl-com-desktop-components
-          items:
-          - name: Reference
-            tocHref: /cpp/atl/reference/
-            topicHref: /cpp/atl/reference/atl-classes
         - name: MFC
           tocHref: /cpp/mfc/
           topicHref: /cpp/mfc/mfc-desktop-applications
