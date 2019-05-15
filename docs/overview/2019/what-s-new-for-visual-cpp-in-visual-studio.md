@@ -91,11 +91,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 ### IntelliCode for C++
 
-IntelliCode is an optional extension that uses its own extensive training and your code context to put what you’re most likely to use at the top of your completion list. It can often eliminate the need to scroll down through the list. For C++, IntelliCode offers the most help when using popular libraries such as the Standard Library. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
-
-**Visual Studio 2019 version 16.1**
-
-IntelliCode now ships as an optional component in the **Desktop Development with C++** workload. For more information, see [Improved C++ IntelliCode now Ships with Visual Studio 2019](TBD).
+IntelliCode is an optional extension (added as a workload component in 16.1) that uses its own extensive training and your code context to put what you’re most likely to use at the top of your completion list. It can often eliminate the need to scroll down through the list. For C++, IntelliCode offers the most help when using popular libraries such as the Standard Library. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
 
 ### Template IntelliSense
 
@@ -124,6 +120,16 @@ Visual Studio 2019 includes the following features that will help make coding ea
 - Go to Definition on #include opens the file
 
 For more information, see [C++ Productivity Improvements in Visual Studio 2019 Preview 2](https://devblogs.microsoft.com/cppblog/c-productivity-improvements-in-visual-studio-2019-preview-2/).
+
+**Visual Studio 2019 version 16.1**
+
+### QuickInfo improvements
+
+The Quick Info tooltip now respects the semantic colorization of your editor. It also has a new **Search Online** link that will search for online docs to learn more about the hovered code construct. For red-squiggled code, the link provided by Quick Info will search for the error online. This way you don’t need to retype the message into your browser. For more information, see [Quick Info Improvements in Visual Studio 2019: Colorization and Search Online](https://devblogs.microsoft.com/cppblog/quick-info-improvements-in-visual-studio-2019-colorization-and-search-online/).
+
+### IntelliCode available in C++ workload
+
+IntelliCode now ships as an optional component in the **Desktop Development with C++** workload. For more information, see [Improved C++ IntelliCode now Ships with Visual Studio 2019](https://devblogs.microsoft.com/cppblog/).
 
 ## CMake support
 
