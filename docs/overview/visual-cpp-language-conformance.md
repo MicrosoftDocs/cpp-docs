@@ -207,7 +207,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P1285R Improving Completeness Requirements For Type Traits](https://wg21.link/P1285R0)|No|
 |&nbsp;&nbsp;[P1357R is_bounded_array, is_unbounded_array](https://wg21.link/P1357R1)|No|
 |&nbsp;&nbsp;[P0487R Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|No|
-|&nbsp;&nbsp;[P0482R char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|No|
+|&nbsp;&nbsp;[P0482R char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|VS 2019 16.1 <sup>[charconv](#note_char8)</sup>|
 |&nbsp;&nbsp;[P0771R noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)|No|
 |__C++17 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[P0433R2 Integrating template deduction for class templates into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[P0739R0 Improving class template argument deduction integration into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|VS 2017 15.7|
@@ -372,6 +372,8 @@ previous std::experimental version, necessitated by symlink support, bug fixes, 
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features have opt-out macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
 
 <a name="note_charconv"></a>__charconv__  from_chars() and to_chars() are available for integers. We’re currently working on floating-point from_chars(), to be followed by floating-point to_chars().
+
+<a name="note_char8"></a>Requires the **/Zc:char8_t** compiler option in Visual Studio 2019 16.1.
 
 <a name ="note_parallel"></a> __parallel__  C++17’s parallel algorithms library is complete. Note that this doesn’t mean every algorithm is parallelized in every case; the most important algorithms have been parallelized and execution policy signatures are provided even where algorithms are not parallelized. Our STL implementation’s central internal header, yvals.h, contains the following “Parallel Algorithms Notes”: C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms.   This implementation parallelizes several common algorithm calls, but not all.
 
