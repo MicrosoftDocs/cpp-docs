@@ -61,4 +61,4 @@
 ### [Preparing a Test Machine To Run a Debug Executable](preparing-a-test-machine-to-run-a-debug-executable.md)
 ## [Redistributing Web Client Applications](redistributing-web-client-applications.md)
 ## [ClickOnce Deployment for Visual C++ Applications](clickonce-deployment-for-visual-cpp-applications.md)
-## [Running a C++ -clr Application on a Previous Runtime Version](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
+## [Running a C++ CLR Application on a Previous Runtime Version](running-a-cpp-clr-application-on-a-previous-runtime-version.md)

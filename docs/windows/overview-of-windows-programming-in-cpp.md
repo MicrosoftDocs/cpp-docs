@@ -5,21 +5,21 @@ ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
 
-There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library as well as third-party C++ libraries can be used in any of them. 
+There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them.
 
 ## Command line (console) applications
 
 C++ console applications run from the command line in a console window and can display text output only. For more information, see [Console Applications](console-applications-in-visual-cpp.md).
- 
+
 ## Native desktop client applications
 
-The term *native desktop client applicaton* refers to a C or C++ windowed application that uses the original native [Windows C APIs and/or COM APIs](/windows/desktop/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is somewhat object-oriented. Neither approach is considered "modern" compared to the Universal Windows Platform (see below), but both are still totally supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit  (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
+The term *native desktop client application* refers to a C or C++ windowed application that uses the original native [Windows C APIs and/or Component Object Model (COM) APIs](/windows/desktop/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is lightly object-oriented. Neither approach is considered "modern" compared to the Universal Windows Platform (UWP), but both are still fully supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
 
 To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
-### C++ or .NET? 
+### C++ or .NET?
 
-For most desktop application scenarios (in other words, not targeting UWP), consider using C# to create the user interface. This is because .NET programming is generally less complex, less error-prone, and has a more modern object-oriented API than Win32 or MFC. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume Win32 as well as the modern Windows Runtime API (see UWP below). As a general rule, we recommend using C++ for desktop applications when you require:
+In general, .NET programming is less complex, less error-prone, and has a more modern object-oriented API than Win32 or MFC. In most cases, its performance is more than adequate. .NET features the Windows Presentation Foundation (WPF) for rich graphics, and you can consume both Win32 and the modern Windows Runtime API. As a general rule, we recommend using C++ for desktop applications when you require:
 
 - precise control over memory usage
 - the utmost economy in power consumption
@@ -27,21 +27,21 @@ For most desktop application scenarios (in other words, not targeting UWP), cons
 - access to DirectX
 - heavy usage of standard C++ libraries
 
-You can create a user interface in C# and use C++/CLI to enable the application to consume native C++ libraries. For more information, see [.NET Programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+It's also possible to combine the power and efficiency of C++ with .NET programming. You can create a user interface in C# and use C++/CLI to enable the application to consume native C++ libraries. For more information, see [.NET Programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 ## COM Components
 
-The [Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a specification that enables programs written in different languages to communicate with one another. Many Windows components are implemented as COM objects and follow standard COM rules for object creation, interface discovery and object destruction.  Using COM objects from C++ desktop applications is relatively straightforward, but writing your own COM object is more advanced. The [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) provides macros and helper functions that simplify COM development. For more information, see [ATL COM desktop components](../atl/atl-com-desktop-components.md).
+The [Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a specification that enables programs written in different languages to communicate with one another. Many Windows components are implemented as COM objects and follow standard COM rules for object creation, interface discovery, and object destruction.  Using COM objects from C++ desktop applications is relatively straightforward, but writing your own COM object is more advanced. The [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) provides macros and helper functions that simplify COM development. For more information, see [ATL COM desktop components](../atl/atl-com-desktop-components.md).
 
-## Windows Universal Apps
+## Universal Windows Platform apps
 
 The Universal Windows Platform (UWP) is the modern Windows API. UWP apps run on any Windows 10 device, use XAML for the user-interface, and are fully touch-enabled. For more information about UWP, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/whats-a-uwp) and [Guide to Windows Universal Apps](/windows/uwp/get-started/universal-application-platform-guide).
 
-The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL) which is based on standard C++ and COM. Both C++/CX and WRL are still supported. For new projects we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) which is entirely based on standard C++ and provides faster performance. 
+The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with syntax extensions, or (2) the Windows Runtime Library (WRL), which is based on standard C++ and COM. Both C++/CX and WRL are still supported. For new projects, we recommend [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt), which is entirely based on standard C++ and provides faster performance.
 
 ## Desktop Bridge
 
-In Windows 10 you can package your existing desktop application or COM object as a UWP app and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
+In Windows 10, you can package your existing desktop application or COM object as a UWP app, and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
 
 In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
@@ -59,7 +59,7 @@ Drivers are low-level components that make data from hardware devices accessible
 
 ## Windows services
 
-A Windows *service* is a program that can run in the background with little or no user interaction. In UNIX these are called *daemons*. For more information, see [Services](/windows/desktop/services/services).
+A Windows *service* is a program that can run in the background with little or no user interaction. In UNIX, these programs are called *daemons*. For more information, see [Services](/windows/desktop/services/services).
 
 ## SDKs, libraries, and header files
 

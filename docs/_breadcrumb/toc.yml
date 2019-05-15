@@ -85,7 +85,7 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-      - name: Edit, navigate and refactor code
+      - name: Edit, navigate, and refactor code
         tocHref: /cpp/ide
         topicHref: /cpp/overview-of-cpp-development
         items:
