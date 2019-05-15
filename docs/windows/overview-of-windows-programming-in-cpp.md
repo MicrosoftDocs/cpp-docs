@@ -110,7 +110,7 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 
 |Title|Description|
 |-----------|-----------------|
-|[Visual C++](../overview/visual-cpp-in-visual-studio.md)|Parent topic for Visual C++ developer content.|
+|[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)|Parent topic for Visual C++ developer content.|
 [.NET Development with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Create wrappers for native C++ libraries that enable it to communication with .NET applications and components.|
 |[Component Extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)|Reference for syntax elements shared by C++/CX and C++/CLI.|
 |[Universal Windows Apps (C++)](universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|

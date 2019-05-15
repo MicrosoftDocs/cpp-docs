@@ -12,7 +12,7 @@ The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 When you use the **ATL OLE DB Consumer Wizard** to create a consumer, the wizard generates a data member in the user record class for each field that you specify in your column map. Each data member is of type `DWORD` and contains a status value corresponding to its respective field.
 

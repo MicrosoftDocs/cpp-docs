@@ -20,7 +20,7 @@ Here's how to getting information about how to write C++ code and use the Visual
 
 |Title|Description|
 |-----------|-----------------|
-|[Visual C++](visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|
+|[C++ in Visual Studio](visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|
 |[Windows Developer Center](https://developer.microsoft.com/windows/)|Contains information about how to use C++ and other languages to develop apps for Windows 10. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
 
 ### Online and Offline Documentation
