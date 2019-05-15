@@ -27,14 +27,14 @@ In C++, you have several options for connecting to the web and the cloud.
 
 ## Windows and cross-platform networking APIs
 
-- [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk)
+- [C++ REST SDK (Code name "Casablanca")](https://github.com/Microsoft/cpprestsdk)
 
   Provides a modern, cross-platform, asynchronous API for interacting with REST services.
 
   - Perform REST calls against any HTTP server, with built-in support for JSON document parsing and serialization
   - Supports OAuth 1 and 2, including a local redirect listener
-  - Make Websockets connections against remote services
-  - A fully asynchronous task API based on PPL, including a built-in threadpool
+  - Make WebSockets connections against remote services
+  - A fully asynchronous task API based on PPL, including a built-in thread pool
 
   Supports Windows Desktop (7+), Windows Server (2012+), Universal Windows Platform, Linux, OSX, Android, and iOS.
 
