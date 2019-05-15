@@ -192,7 +192,7 @@ long j = static_cast<long>(i);
 
 ### Syntax checks for generic lambdas
 
-The new lambda preprocessor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or under any other language mode with **/experimental:newLambdaProcessor**. 
+The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or under any other language mode with **/experimental:newLambdaProcessor**. 
 
 In Visual Studio 2017, this code compiles without warnings, but in Visual Studo 2019 it produces error *C2760 syntax error: unexpected token '\<id-expr>', expected 'id-expression'*:
 
