@@ -1,6 +1,6 @@
 ---
 title: "Visual C++ Language Conformance"
-ms.date: "11/15/2017"
+ms.date: "05/14/2019"
 ms.technology: "cpp-language"
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: "corob-msft"
@@ -8,7 +8,7 @@ ms.author: "corob"
 ---
 # Visual C++ Language Conformance
 
-This topic summarizes the ISO C++03, C++11, C++14, C++17, and Draft C++20 language standards conformance of compiler features and Standard Library features for the C++ compiler in Visual Studio 2019 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.
+This topic summarizes the ISO C++03, C++11, C++14, C++17, and C++20 language standards conformance of compiler features and Standard Library features for the C++ compiler in Visual Studio 2019 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.
 
 For details on conformance improvements and other changes in Visual Studio 2017 or Visual Studio 2019, set the version select in the upper left of this page, then see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md) and [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [Visual C++ team blog](https://blogs.msdn.microsoft.com/vcblog/).
 
@@ -118,8 +118,8 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp; [P0355R7 \<chrono> Calendars And Time Zones](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0355r7.html)|No|
 |&nbsp;&nbsp; [P0415R1 constexpr For \<complex> (Again)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0415r1.html)|No|
 |&nbsp;&nbsp; [P0439R0 enum class memory_order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0439r0.html)|No|
-|&nbsp;&nbsp; [P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)|No|
-|&nbsp;&nbsp; [P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|No|
+|&nbsp;&nbsp; [P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp; [P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|VS 2019<sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp; [P0551R3 Thou Shalt Not Specialize std Function Templates!](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0551r3.pdf)|No|
 |&nbsp;&nbsp; [P0600R1 \[\[nodiscard\]\] For The STL, Part 1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf)|No|
 |&nbsp;&nbsp; [P0616R0 Using move() In \<numeric>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0616r0.pdf)|No|
@@ -129,6 +129,56 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp; [P0767R1 Deprecating is_pod](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)|No|
 |&nbsp;&nbsp; [P0768R1 Library Support For The Spaceship Comparison Operator \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)|No|
 |&nbsp;&nbsp; [P0966R1 string::reserve() Should Not Shrink](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0966r1.html)|No|
+|&nbsp;&nbsp;[P0318R1 unwrap_reference, unwrap_ref_decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0318r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0458R2 contains() For Ordered And Unordered Associative Containers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0458r2.html)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1164R1 Making create_directory() Intuitive (Defect report)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf)|VS 2019<sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8))|No|
+|&nbsp;&nbsp;[P0339R6 polymorphic_allocator<>](https://wg21.link/P0339R6))|No|
+|&nbsp;&nbsp;[P0340R3 SFINAE-Friendly underlying_type](https://wg21.link/P0340R3))|No|
+|&nbsp;&nbsp;[P0356R bind_front()](https://wg21.link/P0356R5)|No|
+|&nbsp;&nbsp;[P0357R Supporting Incomplete Types In reference_wrappeR ](https://wg21.link/P0357R3)|No|
+|&nbsp;&nbsp;[P0475R Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)|No|
+|&nbsp;&nbsp;[P0476R <bit> bit_cast](https://wg21.link/P0476R2)|No|
+|&nbsp;&nbsp;[P0528R Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)|No|
+|&nbsp;&nbsp;[P0556R <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|No|
+|&nbsp;&nbsp;[P0591R Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)|No|
+|&nbsp;&nbsp;[P0608R Improving variant's Converting Constructor/Assignment](https://wg21.link/P0608R3)|No|
+|&nbsp;&nbsp;[P0619R Removing C++17-Deprecated Features In C++20](https://wg21.link/P0619R4)|No|
+|&nbsp;&nbsp;[P0655R visit<R>()](https://wg21.link/P0655R1)|No|
+|&nbsp;&nbsp;[P0738R istream_iterator Cleanup](https://wg21.link/P0738R2)|No|
+|&nbsp;&nbsp;[P0758R is_nothrow_convertible](https://wg21.link/P0758R1)|No|
+|&nbsp;&nbsp;[P0811R midpoint(), lerp()](https://wg21.link/P0811R3)|No|
+|&nbsp;&nbsp;[P0879R constexpr For Swapping Functions](https://wg21.link/P0879R0)|No|
+|&nbsp;&nbsp;[P0896R <ranges>](https://wg21.link/P0896R4)|No|
+|&nbsp;&nbsp;[P0898R Standard Library Concepts](https://wg21.link/P0898R3)|No|
+|&nbsp;&nbsp;[P0912R Library Support For Coroutines](https://wg21.link/P0912R5)|No|
+|&nbsp;&nbsp;[P0919R Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3)|No|
+|&nbsp;&nbsp;[P0920R Precalculated Hash Value Lookup](https://wg21.link/P0920R2)|No|
+|&nbsp;&nbsp;[P0935R Eradicating Unnecessarily Explicit Default Constructors](https://wg21.link/P0935R0)|No|
+|&nbsp;&nbsp;[P0966R string::reserve() Should Not Shrink](https://wg21.link/P0966R1)|No|
+|&nbsp;&nbsp;[P1001R execution::unseq](https://wg21.link/P1001R2)|No|
+|&nbsp;&nbsp;[P1006R constexpr For pointer_traits<T*>::pointer_to()](https://wg21.link/P1006R1)|No|
+|&nbsp;&nbsp;[P1007R assume_aligned()](https://wg21.link/P1007R3)|No|
+|&nbsp;&nbsp;[P1020R Smart Pointer Creation With Default Initialization](https://wg21.link/P1020R1)|No|
+|&nbsp;&nbsp;[P1023R constexpr For std::array Comparisons](https://wg21.link/P1023R0)|No|
+|&nbsp;&nbsp;[P1032R Miscellaneous constexpR ](https://wg21.link/P1032R1)|No|
+|&nbsp;&nbsp;[P1165R Consistently Propagating Stateful Allocators In basic_string's operator+()](https://wg21.link/P1165R1)|No|
+|&nbsp;&nbsp;[P1209R erase_if(), erase()](https://wg21.link/P1209R0)|No|
+|&nbsp;&nbsp;[P1227R Signed std::ssize(), Unsigned span::size()](https://wg21.link/P1227R2)|No|
+|&nbsp;&nbsp;[P1285R Improving Completeness Requirements For Type Traits](https://wg21.link/P1285R0)|No|
+|&nbsp;&nbsp;[P1357R is_bounded_array, is_unbounded_array](https://wg21.link/P1357R1)|No|
+|&nbsp;&nbsp;[P0487R Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|No|
+|&nbsp;&nbsp;[P0482R Library Support For char8_t](https://wg21.link/P0482R6)|No|
+|&nbsp;&nbsp;[P0771R noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)|No|
+
+
+
+
+<!-- end C++20 STL features -->
+
 |__C++17 Standard Library Features__|__Supported__|
 |&nbsp;&nbsp;[P0433R2 Integrating template deduction for class templates into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0433r2.html)<br />&nbsp;&nbsp;[P0739R0 Improving class template argument deduction integration into the standard library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html)|VS 2017 15.7|
 |&nbsp;&nbsp;[P0426R1 constexpr For char_traits](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html)|VS 2017 15.7|
@@ -241,16 +291,18 @@ A group of papers listed together indicates that a feature was voted into the St
 ### Supported values
 
 __No__ means not yet implemented.<br/>
-__Partial__ means the implementation in Visual Studio 2017 is incomplete. For more details, see the Notes section.<br/>
+__Partial__ means the implementation is incomplete. For more details, see the Notes section.<br/>
 __N/A__ means the proposal papers do not describe features. These papers altered the language of the standard, but didn’t create any work for implementers. They’re listed here for completeness.<br/>
 __VS 2010__ indicates features that are supported in Visual Studio 2010.<br/>
 __VS 2013__ indicates features that are supported in Visual Studio 2013.<br/>
 __VS 2015__ indicates features that are supported in Visual Studio 2015 RTM.<br/>
 __VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.<br/>
-__VS 2017__ indicates features that are supported in Visual Studio 2017 RTM.<br/>
+__VS 2017__ indicates features that are supported in Visual Studio 2017 RTW.<br/>
 __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 version 15.3.<br/>
 __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.<br/>
 __VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.<br/>
+__VS 2019 16__ indicates features that are supported in Visual Studio 2019 RTW.<br/>
+__VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.<br/>
 
 ### Notes
 
@@ -280,6 +332,8 @@ previous std::experimental version, necessitated by symlink support, bug fixes, 
 <a name="note_14"></a>__14__ These C++17/20 features are always enabled, even when [/std:c++14](../build/reference/std-specify-language-standard-version.md) (the default) is specified. This is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.
 
 <a name="note_17"></a>__17__ These features are enabled by the [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) compiler option.
+
+<a name="note_20"></a>__20__ These features are enabled by the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option. When the C++20 implementation is complete, a new **/std:c++20** compiler option will be added.
 
 <a name="note_byte"></a>__byte__ `std::byte` is enabled by [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.
 
