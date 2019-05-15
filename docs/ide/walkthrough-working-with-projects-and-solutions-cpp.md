@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Working with Projects and Solutions (C++)"
-ms.date: "04/25/2019"
+ms.date: "05/14/2019"
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
 ---
@@ -12,7 +12,7 @@ In Visual Studio, work is organized in projects and solutions. A solution can ha
 
 ## Before you start
 
-To complete this walkthrough, you need Visual Studio 2017 or later. If you need a copy, here's a short guide: [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md). If you haven't done it yet, follow the next steps after installation through the "Hello, World" tutorial to make sure Visual C++ is installed correctly and it all works.
+To complete this walkthrough, you need Visual Studio 2017 or later. If you need a copy, here's a short guide: [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md). If you haven't done it yet, follow the next steps after installation through the "Hello, World" tutorial to make sure the C++ components are installed correctly and it all works.
 
 It helps if you understand the fundamentals of the C++ language, and know what a compiler, linker, and debugger are used for. The tutorial also assumes that you're familiar with Windows and how to use menus, dialogs,
 
