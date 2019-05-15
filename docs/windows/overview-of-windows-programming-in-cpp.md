@@ -13,7 +13,7 @@ C++ console applications run from the command line in a console window and can d
 
 ## Native desktop client applications
 
-The term *native desktop client application* refers to a C or C++ windowed application that uses the original native [Windows C APIs and/or Component Object Model (COM) APIs](/windows/desktop/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. When creating this kind of application, you have the choice of programming directly against a C-style message loop that processes operating system events, or using *Microsoft Foundation Classes* (MFC), a C++ library that wraps Win32 in a way that is lightly object-oriented. Neither approach is considered "modern" compared to the Universal Windows Platform (UWP), but both are still fully supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
+A *native desktop client application* is a C or C++ windowed application that uses the original native [Windows C APIs or Component Object Model (COM) APIs](/windows/desktop/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. There's more than one way to create a native desktop app: You can program using the Win32 APIs directly, using a C-style message loop that processes operating system events. Or, you can program using *Microsoft Foundation Classes* (MFC), a lightly object-oriented C++ library that wraps Win32. Neither approach is considered "modern" compared to the Universal Windows Platform (UWP), but both are still fully supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
 
 To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
@@ -43,7 +43,7 @@ The original C++ support for UWP consisted of (1) C++/CX, a dialect of C++ with 
 
 In Windows 10, you can package your existing desktop application or COM object as a UWP app, and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
 
-In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
+In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply to the registry calls or APIs your desktop application can use. However, in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
 ## Games
 
@@ -59,11 +59,11 @@ Drivers are low-level components that make data from hardware devices accessible
 
 ## Windows services
 
-A Windows *service* is a program that can run in the background with little or no user interaction. In UNIX, these programs are called *daemons*. For more information, see [Services](/windows/desktop/services/services).
+A Windows *service* is a program that can run in the background with little or no user interaction. These programs are called *daemons* on UNIX systems. For more information, see [Services](/windows/desktop/services/services).
 
 ## SDKs, libraries, and header files
 
-Visual Studio includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are located either in the Visual Studio installation directory under the \VC\ folder, or in the case of the CRT, in the Windows SDK installation folder.
+Visual Studio includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are located either in the Visual Studio installation directory under the \VC\ folder, or for the CRT, in the Windows SDK installation folder.
 
 You can use the [Vcpkg package manager](../build/vcpkg.md) to conveniently install hundreds of third-party open-source libraries for Windows.
 
@@ -79,7 +79,7 @@ The Microsoft libraries include:
 
 Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, Visual Studio installs the Windows SDK as a component of the C++ Desktop workload, which enables development of Universal Windows apps. To develop UWP apps, you need the Windows 10 version of the Windows SDK. For information, see [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk). (For more information about the Windows SDKs for earlier versions of Windows, see the [Windows SDK archive](https://developer.microsoft.com/windows/downloads/sdk-archive)).
 
-**Program Files (x86)\Windows Kits** is the default location for all versions of the Windows SDK that you have installed.
+**Program Files (x86)\Windows Kits** is the default location for all versions of the Windows SDK that you've installed.
 
 Other platforms such as Xbox and Azure have their own SDKs that you may have to install. For more information, see the DirectX Developer Center and the Azure Developer Center.
 
@@ -91,7 +91,7 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 |Title|Description|
 |-----------|-----------------|
 |[Walkthrough: Creating a Standard C++ Program](walkthrough-creating-a-standard-cpp-program-cpp.md)| Create a Windows console application.|
-|[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a simple Windows desktop application.|
+|[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a native Windows desktop application.|
 |[Windows Desktop Wizard](windows-desktop-wizard.md)|Use the wizard to create new Windows projects.|
 |[Active Template Library (ATL)](../atl/atl-com-desktop-components.md)|Use the ATL library to create COM components in C++.|
 |[Microsoft Foundation Classes (MFC)](../mfc/TOC.md)|Use MFC to create large or small Windows applications with dialogs and controls|
@@ -105,7 +105,6 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 |[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
 |[Deploying Native Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)|Deploy native applications on Windows.|
 
-
 ## Related Articles
 
 |Title|Description|
@@ -115,4 +114,3 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 |[Component Extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)|Reference for syntax elements shared by C++/CX and C++/CLI.|
 |[Universal Windows Apps (C++)](universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|
 |[C++ Attributes for COM and .NET](attributes/cpp-attributes-com-net.md)|Non-standard attributes for Windows-only programming using .NET or COM.|
-
