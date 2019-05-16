@@ -5,25 +5,6 @@
   items: 
     - name: Active Template Library (ATL) concepts
       href: active-template-library-atl-concepts.md
-    - name: Active Template Library (ATL) tutorial
-      expanded: false
-      items: 
-        - name: Active Template Library (ATL) tutorial
-          href: active-template-library-atl-tutorial.md
-        - name: Creating the project (ATL tutorial, part 1)
-          href: creating-the-project-atl-tutorial-part-1.md
-        - name: Adding a control (ATL tutorial, part 2)
-          href: adding-a-control-atl-tutorial-part-2.md
-        - name: Adding a property to the control (ATL tutorial, part 3)
-          href: adding-a-property-to-the-control-atl-tutorial-part-3.md
-        - name: Changing the drawing code (ATL tutorial, part 4)
-          href: changing-the-drawing-code-atl-tutorial-part-4.md
-        - name: Adding an event (ATL tutorial, part 5)
-          href: adding-an-event-atl-tutorial-part-5.md
-        - name: Adding a property page (ATL tutorial, part 6)
-          href: adding-a-property-page-atl-tutorial-part-6.md
-        - name: Putting the control on a web page (ATL tutorial, part 7)
-          href: putting-the-control-on-a-web-page-atl-tutorial-part-7.md
     - name: Introduction to COM and ATL
       expanded: false
       items: 
@@ -285,6 +266,25 @@
       href: atl-encoding-reference.md
     - name: ATL utilities reference
       href: atl-utilities-reference.md
+- name: Active Template Library (ATL) tutorial
+  expanded: false
+  items: 
+    - name: Active Template Library (ATL) tutorial
+      href: active-template-library-atl-tutorial.md
+    - name: Creating the project (ATL tutorial, part 1)
+      href: creating-the-project-atl-tutorial-part-1.md
+    - name: Adding a control (ATL tutorial, part 2)
+      href: adding-a-control-atl-tutorial-part-2.md
+    - name: Adding a property to the control (ATL tutorial, part 3)
+      href: adding-a-property-to-the-control-atl-tutorial-part-3.md
+    - name: Changing the drawing code (ATL tutorial, part 4)
+      href: changing-the-drawing-code-atl-tutorial-part-4.md
+    - name: Adding an event (ATL tutorial, part 5)
+      href: adding-an-event-atl-tutorial-part-5.md
+    - name: Adding a property page (ATL tutorial, part 6)
+      href: adding-a-property-page-atl-tutorial-part-6.md
+    - name: Putting the control on a web page (ATL tutorial, part 7)
+      href: putting-the-control-on-a-web-page-atl-tutorial-part-7.md
 - name: ATL class overview by category
   expanded: false
   items: 
