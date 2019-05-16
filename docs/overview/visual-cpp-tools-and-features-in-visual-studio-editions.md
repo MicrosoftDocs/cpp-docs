@@ -1,7 +1,7 @@
 ---
-title: "Visual C++ Tools and Features in Visual Studio Editions"
+title: "C++ Tools and Features in Visual Studio Editions"
 ms.date: "05/16/2019"
-helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
+helpviewer_keywords: ["tools and platforms [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # Visual C++ Tools and Features in Visual Studio Editions
