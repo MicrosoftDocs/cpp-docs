@@ -1,13 +1,12 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
-ms.date: "09/24/2018"
-f1_keywords: ["msbuild.cpp.walkthrough.createproject"]
+ms.date: "05/06/2019"
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
 ---
 # Walkthrough: Using MSBuild to Create a Visual C++ Project
 
-This walkthrough demonstrates how to use MSBuild to build a Visual C++ project at a command prompt. You'll learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
+This walkthrough demonstrates how to use MSBuild to build a Visual Studio C++ project at a command prompt. You'll learn how to create the C++ source files and an XML-based project file for a Visual C++ console application. After building the project, you'll learn how to customize the build process.
 
 This walkthrough illustrates the following tasks:
 

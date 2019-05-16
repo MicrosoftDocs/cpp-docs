@@ -1,6 +1,6 @@
 ---
 title: "Active Template Library (ATL) Concepts"
-ms.date: "11/04/2016"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["ATL, about ATL"]
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
 ---
@@ -8,7 +8,7 @@ ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
 
 The Active Template Library (ATL) is a set of template-based C++ classes that let you create small, fast Component Object Model (COM) objects. It has special support for key COM features, including stock implementations, dual interfaces, standard COM enumerator interfaces, connection points, tear-off interfaces, and ActiveX controls.
 
-If you do a lot of ATL programming, you will want to learn more about attributes, a new feature in Visual C++ .NET that is designed to simplify COM programming. For more information, see [Attributed Programming](../windows/attributed-programming-concepts.md).
+If you do a lot of ATL programming, you will want to learn more about COM and .NET attributes, which is designed to simplify COM programming. For more information, see [Attributed Programming](../windows/attributed-programming-concepts.md). (COM and .NET attributes are not to be confused with the \[\[attribute]] feature in the C++ standard.)
 
 ## In This Section
 

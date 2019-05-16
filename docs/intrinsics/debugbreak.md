@@ -21,7 +21,7 @@ void __debugbreak();
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`__debugbreak`|x86, ARM, x64|\<intrin.h>|
+|`__debugbreak`|x86, x64, ARM, ARM64|\<intrin.h>|
 
 ## Remarks
 

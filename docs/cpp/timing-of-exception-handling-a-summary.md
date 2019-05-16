@@ -1,6 +1,6 @@
 ---
 title: "Timing of Exception Handling: A Summary"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["sequence [C++]", "sequence, of handlers", "exception handling [C++], timing", "setjmpex.h", "termination handlers [C++], timing", "setjmp.h", "handlers [C++], order of exception", "structured exception handling [C++], timing"]
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
 ---
@@ -9,7 +9,7 @@ ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
 A termination handler is executed no matter how the **__try** statement block is terminated. Causes include jumping out of the **__try** block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.
 
 > [!NOTE]
->  Visual C++ supports two forms of the `setjmp` and `longjmp` statements. The fast version bypasses termination handling but is more efficient. To use this version, include the file \<setjmp.h>. The other version supports termination handling as described in the previous paragraph. To use this version, include the file \<setjmpex.h>. The increase in performance of the fast version depends on hardware configuration.
+>  The Microsoft C++ compiler supports two forms of the `setjmp` and `longjmp` statements. The fast version bypasses termination handling but is more efficient. To use this version, include the file \<setjmp.h>. The other version supports termination handling as described in the previous paragraph. To use this version, include the file \<setjmpex.h>. The increase in performance of the fast version depends on hardware configuration.
 
 The operating system executes all termination handlers in the proper order before any other code can be executed, including the body of an exception handler.
 

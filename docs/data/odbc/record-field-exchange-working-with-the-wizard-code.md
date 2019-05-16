@@ -1,10 +1,13 @@
 ---
 title: "Record Field Exchange: Working with the Wizard Code"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["DoFieldExchange method, overriding", "Unicode, with database classes", "field data members, declaring", "RFX (ODBC), wizard code", "RFX (ODBC), implementing", "field data members", "ODBC, RFX", "m_nParams data member, initializing", "m_nFields data member", "m_nParams data member", "overriding, DoFieldExchange", "m_nFields data member, initializing"]
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
 ---
 # Record Field Exchange: Working with the Wizard Code
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic explains the code that the MFC Application Wizard and **Add Class** (as described in [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) write to support RFX and how you might want to alter that code.
 

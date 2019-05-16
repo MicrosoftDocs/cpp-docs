@@ -11,7 +11,7 @@ All Visual C++ CLR projects link to the C run-time libraries by default. Consequ
 > [!IMPORTANT]
 > Visual Studio 2015 deprecated and Visual Studio 2017 no longer supports the creation of **/clr:pure** or **/clr:safe** code for CLR applications. If you require pure or safe assemblies, we recommend you translate your application to C#.
 
-If you are using an earlier version of the Visual C++ compiler toolset that supports **/clr:pure** or **/clr:safe**, you can use this procedure to convert your code to pure MSIL:
+If you are using an earlier version of the Microsoft C++ compiler toolset that supports **/clr:pure** or **/clr:safe**, you can use this procedure to convert your code to pure MSIL:
 
 ### To convert your mixed-mode application into pure intermediate language
 

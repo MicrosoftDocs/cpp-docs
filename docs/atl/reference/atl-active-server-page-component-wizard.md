@@ -1,22 +1,26 @@
 ---
 title: "ATL Active Server Page Component Wizard"
-ms.date: "11/04/2016"
-f1_keywords: ["vc.codewiz.class.atl.asp.overview"]
-helpviewer_keywords: ["ASP components, creating in ATL", "ATL Active Server Page Component Wizard"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["ASP components, creating in ATL"]
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
 ---
 # ATL Active Server Page Component Wizard
+
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 This wizard inserts into the project an Active Server Pages (ASP) component. The Microsoft Internet Information Services (IIS) uses ASP components as part of its enhanced Web page development architecture.
 
 By using this wizard, you can specify the component's threading model and its aggregation support. You can also indicate support for the error information interface, connection points, and free-threaded marshaling.
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
-
 ## Remarks
 
-Beginning with Visual Studio 2008, the registration script produced by this wizard will register its COM components under **HKEY_CURRENT_USER** instead of **HKEY_LOCAL_MACHINE**. To modify this behavior, set the **Register component for all users** option of the ATL Wizard.
+Beginning with Visual Studio 2008, the registration script produced by this wizard registers its COM components under **HKEY_CURRENT_USER** instead of **HKEY_LOCAL_MACHINE**. To modify this behavior, set the **Register component for all users** option of the ATL Wizard.
 
 ## Names
 
@@ -77,6 +81,8 @@ Provides information about the COM functionality for the object.
 - **ProgID**
 
    Sets the name that containers can use instead of the CLSID of the object.
+
+::: moniker-end
 
 ## See also
 

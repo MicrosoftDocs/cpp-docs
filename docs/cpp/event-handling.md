@@ -1,7 +1,7 @@
 ---
 title: "Event Handling"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["attributes [C++], event handling", "intrinsic functions [C++], event handling", "event handling [C++], Visual C++"]
+ms.date: "05/07/2019"
+helpviewer_keywords: ["event handling [C++]"]
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
 ---
 # Event Handling
@@ -12,7 +12,7 @@ Event handling is also supported for native C++ classes (C++ classes that do not
 
 Event handling supports single- and multithreaded usage and protects data from simultaneous multithread access. It also allows you to derive subclasses from event source or receiver classes and support extended event sourcing/receiving in the derived class.
 
-Visual C++ includes attributes and keywords for declaring events and event handlers. The event attributes and keywords can be used in CLR programs and in native C++ programs.
+The Microsoft C++ compiler includes attributes and keywords for declaring events and event handlers. The event attributes and keywords can be used in CLR programs and in native C++ programs.
 
 |Topic|Description|
 |-----------|-----------------|

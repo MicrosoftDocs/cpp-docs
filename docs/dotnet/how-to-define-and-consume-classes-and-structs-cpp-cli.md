@@ -119,7 +119,7 @@ You can control the visibility of common language runtime (CLR) types so that, i
 
 `public` indicates that a type is visible to any source file that contains a `#using` directive for the assembly that contains the type.  `private` indicates that a type is not visible to source files that contain a `#using` directive for the assembly that contains the type. However, private types are visible within the same assembly. By default, the visibility for a class is `private`.
 
-By default prior to Visual C++ 2005, native types had public accessibility outside the assembly. Enable [Compiler Warning (level 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) to help you see where private native types are used incorrectly. Use the [make_public](../preprocessor/make-public.md) pragma to give public accessibility to a native type in a source code file that you can't modify.
+By default prior to Visual Studio 2005, native types had public accessibility outside the assembly. Enable [Compiler Warning (level 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) to help you see where private native types are used incorrectly. Use the [make_public](../preprocessor/make-public.md) pragma to give public accessibility to a native type in a source code file that you can't modify.
 
 For more information, see [#using Directive](../preprocessor/hash-using-directive-cpp.md).
 
@@ -580,7 +580,7 @@ int main() {
 Base::Test
 ```
 
-The next sample shows that the Visual C++ compiler calls a function in the most derived class—even if a conversion is required to match one or more of the parameters—and not call a function in a base class that is a better match for the function call.
+The next sample shows that the Microsoft C++ compiler calls a function in the most derived class—even if a conversion is required to match one or more of the parameters—and not call a function in a base class that is a better match for the function call.
 
 ```cpp
 // compile with: /clr
@@ -728,7 +728,7 @@ The CLR garbage collector deletes unused managed objects and releases their memo
 
 A Visual C++ finalizer is not the same as the <xref:System.Object.Finalize%2A> method. (CLR documentation uses finalizer and the <xref:System.Object.Finalize%2A> method synonymously). The <xref:System.Object.Finalize%2A> method is called by the garbage collector, which invokes each finalizer in a class inheritance chain. Unlike Visual C++ destructors, a derived-class finalizer call does not cause the compiler to invoke the finalizer in all base classes.
 
-Because the Visual C++ compiler supports deterministic release of resources, don't try to implement the <xref:System.IDisposable.Dispose%2A> or <xref:System.Object.Finalize%2A> methods. However, if you're familiar with these methods, here's how a Visual C++ finalizer and a destructor that calls the finalizer map to the <xref:System.IDisposable.Dispose%2A> pattern:
+Because the Microsoft C++ compiler supports deterministic release of resources, don't try to implement the <xref:System.IDisposable.Dispose%2A> or <xref:System.Object.Finalize%2A> methods. However, if you're familiar with these methods, here's how a Visual C++ finalizer and a destructor that calls the finalizer map to the <xref:System.IDisposable.Dispose%2A> pattern:
 
 ```cpp
 // Visual C++ code
@@ -749,7 +749,7 @@ void Dispose(bool disposing) {
 
 A managed type may also use managed resources that you would prefer to release deterministically, and not leave to the garbage collector to release nondeterministically at some point after the object is no longer required. The deterministic release of resources can significantly improve performance.
 
-The Visual C++ compiler enables the definition of a destructor to deterministically clean up objects. Use the destructor to release all resources that you want to deterministically release.  If a finalizer is present, call it from the destructor, to avoid code duplication.
+The Microsoft C++ compiler enables the definition of a destructor to deterministically clean up objects. Use the destructor to release all resources that you want to deterministically release.  If a finalizer is present, call it from the destructor, to avoid code duplication.
 
 ```cpp
 // compile with: /clr /c

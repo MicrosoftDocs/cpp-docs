@@ -123,6 +123,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/atl/understanding-backus-nauer-form-bnf-syntax.md",
+            "redirect_url": "/cpp/atl/understanding-backus-naur-form-bnf-syntax",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/atl/which-atl-classes-facilitate-activex-control-containment-q.md",
             "redirect_url": "/cpp/atl/atl-control-containment-faq",
             "redirect_document_id": false

@@ -26,7 +26,7 @@ This table describes a commonly used subset of the available macros; there are m
 |**$(FrameworkDir)**|The directory into which the .NET Framework was installed.|
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|
-|**$(FxCopDir)**|The path to the fxcop.cmd file. The fxcop.cmd file is not installed with all Visual C++ editions.|
+|**$(FxCopDir)**|The path to the fxcop.cmd file. The fxcop.cmd file is not installed with all Visual Studio editions.|
 |**$(IntDir)**|Path to the directory specified for intermediate files. If this is a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Intermediate Directory** property. Do not use **$(OutDir)** to define this property.|
 |**$(OutDir)**|Path to the output file directory. If this is a  relative path, output files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Output Directory** property. Do not use **$(IntDir)** to define this property.|
 |**$(Platform)**|The name of current project platform, for example, "Win32".|
@@ -48,7 +48,7 @@ This table describes a commonly used subset of the available macros; there are m
 |**$(TargetFileName)**|The file name of the primary output file for the build (defined as base name + file extension).|
 |**$(TargetName)**|The base name of the primary output file for the build.|
 |**$(TargetPath)**|The absolute path name of the primary output file for the build (defined as drive + path + base name + file extension).|
-|**$(VCInstallDir)**|The directory that contains the C++ content of your Visual Studio installation. This property contains the version of the targeted Visual C++ toolset, which might be different that the host Visual Studio. For example, when building with `$(PlatformToolset) = v140`, **$(VCInstallDir)** contains the path to the Visual C++ 2015 installation.|
+|**$(VCInstallDir)**|The directory that contains the C++ content of your Visual Studio installation. This property contains the version of the targeted Microsoft C++ (MSVC) toolset, which might be different that the host Visual Studio. For example, when building with `$(PlatformToolset) = v140`, **$(VCInstallDir)** contains the path to the Visual Studio 2015 installation.|
 |**$(VSInstallDir)**|The directory into which you installed Visual Studio. This property contains the version of the targeted Visual Studio toolset, which might be different that the host Visual Studio. For example, when building with `$(PlatformToolset) = v110`, **$(VSInstallDir)** contains the path to the Visual Studio 2012 installation.|
 |**$(WebDeployPath)**|The relative path from the web deployment root to where the project outputs belong. Returns the same value as <xref:Microsoft.VisualStudio.VCProjectEngine.VCWebDeploymentTool.RelativePath%2A>.|
 |**$(WebDeployRoot)**|The absolute path to the location of **\<localhost>**. For example, c:\inetpub\wwwroot.|

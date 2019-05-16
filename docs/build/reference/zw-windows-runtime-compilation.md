@@ -7,7 +7,7 @@ ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
 ---
 # /ZW (Windows Runtime Compilation)
 
-Compiles source code to support Visual C++ component extensions C++/CX for the creation of Universal Windows Platform (UWP) apps.
+Compiles source code to support Microsoft C++ component extensions C++/CX for the creation of Universal Windows Platform (UWP) apps.
 
 When you use **/ZW** to compile, always specify **/EHsc** as well.
 

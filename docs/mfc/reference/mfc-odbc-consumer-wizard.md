@@ -1,14 +1,18 @@
 ---
 title: "MFC ODBC Consumer Wizard"
-ms.date: "10/03/2018"
-f1_keywords: ["vc.codewiz.class.mfc.consumer.overview"]
-helpviewer_keywords: ["MFC ODBC Consumer Wizard", "wizards [MFC]"]
+ms.date: "05/09/2019"
+helpviewer_keywords: ["wizards [MFC]"]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
 ---
 # MFC ODBC Consumer Wizard
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 This wizard sets up an ODBC recordset class and the data bindings necessary to access the specified data source.
 
@@ -64,6 +68,8 @@ This wizard sets up an ODBC recordset class and the data bindings necessary to a
 - **Bind all columns**
 
    Specifies whether all columns in the selected table are bound. If you select this box (default), all columns are bound; if you do not select this box, no columns are bound, and you must bind them manually in the recordset class.
+
+::: moniker-end
 
 ## See also
 

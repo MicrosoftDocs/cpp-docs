@@ -32,4 +32,4 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 ## See also
 
-[DLLs in Visual C++](dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

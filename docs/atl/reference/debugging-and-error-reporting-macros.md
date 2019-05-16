@@ -1,6 +1,6 @@
 ---
 title: "Debugging and Error Reporting Macros"
-ms.date: "03/27/2019"
+ms.date: "05/06/2019"
 f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
 helpviewer_keywords: ["macros, error reporting"]
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
@@ -163,7 +163,7 @@ ATLTRACE(
 ### Parameters
 
 *exp*<br/>
-[in] The string and variables to send to the Visual C++ output window or any application that traps these messages.
+[in] The string and variables to send to the output window or any application that traps these messages.
 
 *category*<br/>
 [in] Type of event or method on which to report. See the Remarks for a list of categories.
@@ -194,7 +194,7 @@ ATLTRACE2(
 ### Parameters
 
 *exp*<br/>
-[in] The string to send to the Visual C++ output window or any application that traps these messages.
+[in] The string to send to the output window or any application that traps these messages.
 
 *category*<br/>
 [in] Type of event or method on which to report. See the Remarks for a list of categories.

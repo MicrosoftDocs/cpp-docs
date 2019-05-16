@@ -1,5 +1,6 @@
 ---
 title: "Compile a C++/CLI Program that Targets the CLR"
+description: "Use Microsoft C++ to create programs and libraries that can connect native C++ code and .NET programs."
 ms.date: "04/23/2019"
 helpviewer_keywords: ["command-line applications [C++], managed code", "compiling programs [C++]", "Visual C++, managed code", "managed code [C++]"]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4

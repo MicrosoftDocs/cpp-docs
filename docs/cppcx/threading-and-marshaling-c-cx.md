@@ -25,7 +25,7 @@ When you create a Universal Windows Platform app, you might interact with both a
 
 ### Compiler warning C4451 when consuming non-agile classes
 
-For various reasons, some classes can't be agile. If you are accessing instances of non-agile classes from both a user-interface thread and a background thread, then take extra care to ensure correct behavior at run time. The Visual C++ compiler issues warnings when you instantiate a non-agile run-time class in your app at global scope or declare a non-agile type as a class member in a ref class that itself is marked as agile.
+For various reasons, some classes can't be agile. If you are accessing instances of non-agile classes from both a user-interface thread and a background thread, then take extra care to ensure correct behavior at run time. The Microsoft C++ compiler issues warnings when you instantiate a non-agile run-time class in your app at global scope or declare a non-agile type as a class member in a ref class that itself is marked as agile.
 
 Of the non-agile classes, the easiest to deal with are those that have `ThreadingModel`=Both and `MarshallingType`=Standard.  You can make these classes agile just by using the `Agile<T>` helper class.   The following example shows a declaration of a non-agile object of type `Windows::Security::Credentials::UI::CredentialPickerOptions^`, and the compiler warning that's issued as a result.
 
