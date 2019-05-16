@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "05/13/2019"
+ms.date: "05/16/2019"
 description: "Microsoft C++ in Visual Studio 2019 is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -221,40 +221,6 @@ void f() {
 ### Designated initialization
 
 [P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (C++20) Designated initialization allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **/std:c++latest**.
-
-### Mac line endings in the editor
-
-'\r' (Mac line ending) is now recognized in addition to '\r\n' (Windows line ending) and '\n' (Linux line ending). This change is to help compile files with mixed line endings.
-
-```cpp
-#include <assert.h>
-#include <string.h>
-
-auto s = "
-"; // this is not a valid string literal
-
-int main()
-{
-    assert(strcmp(s, "\r") == 0);
-}
-
-(assume '\r' follows 'auto s = "' in the file)
-
-```
-
-After:
-
-```cpp
-#include <assert.h>
-#include <string.h>
-
-auto s = "\r"; // this is what 's' used to have
-
-int main()
-{
-    assert(strcmp(s, "\r") == 0);
-}
-```
 
 ### New and updated Standard Library functions (C++20)
 
