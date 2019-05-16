@@ -99,7 +99,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Memory usage|X|X|
 |Remote Debugging|X|X|
 |SQL Debugging|X|X|
-|Static Code Analysis|Limited|Limited|X|X|
+|Static Code Analysis|X|X|
 
 ## Designers and Editors
 
