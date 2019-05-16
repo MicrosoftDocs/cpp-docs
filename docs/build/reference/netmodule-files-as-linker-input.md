@@ -1,6 +1,6 @@
 ---
 title: ".netmodule Files as Linker Input"
-ms.date: "11/04/2016"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodules", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
 ---
@@ -10,7 +10,7 @@ link.exe now accepts MSIL .obj and .netmodules as input. The output file produce
 
 .netmodules are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). .objs are always created in a Visual C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
 
-You must pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+You must pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
 For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](linking.md), [Use the MSVC toolset from the command line](../building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 

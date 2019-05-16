@@ -1,6 +1,6 @@
 ---
 title: "Customize CMake build settings in Visual Studio"
-ms.date: "04/25/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings

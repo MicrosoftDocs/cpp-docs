@@ -1,6 +1,6 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "03/21/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["CMake in Visual Studio"]
 ---
 
@@ -258,7 +258,7 @@ You have access to the following built-in macros inside `CppProperties.json`:
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|
 |`${projectRoot}`| the full path to the folder where `CppProperties.json` is placed|
-|`${vsInstallDir}`| the full path to the folder where the running instance of VS 2017 is installed|
+|`${vsInstallDir}`| the full path to the folder where the running instance of Visual Studio is installed|
 
 For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with these includes:
 
@@ -283,7 +283,7 @@ For example, if your project has an include folder and also includes windows.h a
 ```
 
 > [!Note]
-> `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start devenv.exe from a "Developer Command Prompt for VS 2017" that defines these variables.
+> `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start devenv.exe from a Developer Command Prompt that defines these variables. (Type "developer" in the Windows Start Menu.)
 
 ## Troubleshoot IntelliSense errors
 

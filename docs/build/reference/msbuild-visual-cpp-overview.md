@@ -1,6 +1,6 @@
 ---
 title: "MSBuild internals for C++ projects in Visual Studio"
-ms.date: "12/08/2018"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["MSBuild overview"]
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
 ---
@@ -19,7 +19,7 @@ By default, the primary Visual Studio support files are located in the following
 |---------------|-----------------|
 |*drive*:\Program Files *(x86)*\Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp (x86)\v4.0\\*version*\ |Contains the primary target files (.targets) and property files (.props) that are used by the targets. By default, the $(VCTargetsPath) macro references this directory.|
 |*drive*:\Program Files *(x86)*\Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\ |Contains platform-specific target and property files that override targets and properties in its parent directory. This directory also contains a DLL that defines the tasks that are used by the targets in this directory.<br /><br /> The *platform* placeholder represents the ARM, Win32, or x64 subdirectory.|
-|*drive*:\Program Files *(x86)*\Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br /> The *year* and *edition* placeholders are used by Visual Studio 2017 and later editions. The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, or V140 for Visual Studio 2015. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory, for example, v140 for building Windows apps by using the Visual Studio 2015 toolset, v120_xp to build for Windows XP using the Visual Studio 2013 toolset, or v110_wp80 to build Windows Phone 8.0 apps by using the Visual Studio 2012 toolset.<br /><br />The path that contains the directories that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications doesn't include the *version*, and the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory.|
+|*drive*:\Program Files *(x86)*\Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)*\MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Contains the directories that enable the build to generate C++ applications by using the specified *toolset*.<br /><br /> The *year* and *edition* placeholders are used by Visual Studio 2017 and later editions. The *version* placeholder is V110 for Visual Studio 2012, V120 for Visual Studio 2013, V140 for Visual Studio 2015, v141 for Visual Studio 2017 and v142 for Visual Studio 2019. The *platform* placeholder represents the ARM, Win32, or x64 subdirectory. The *toolset* placeholder represents the toolset subdirectory, for example, v140 for building Windows apps by using the Visual Studio 2015 toolset, v120_xp to build for Windows XP using the Visual Studio 2013 toolset.<br /><br />The path that contains the directories that enable the build to generate either Visual Studio 2008 or Visual Studio 2010 applications doesn't include the *version*, and the *platform* placeholder represents the Itanium, Win32, or x64 subdirectory. The *toolset* placeholder represents the v90 or v100 toolset subdirectory.|
 
 ## Support Files
 
@@ -80,7 +80,7 @@ The following table lists several useful user-oriented targets.
 |Xsd|Executes the XML Schema Definition tool, xsd.exe. *See note below.*|
 
 > [!NOTE]
-> In Visual Studio 2017, C++ project support for **xsd** files is deprecated. You can still use **Microsoft.VisualC.CppCodeProvider** by adding **CppCodeProvider.dll** manually to the GAC.
+> In Visual Studio 2017 and later, C++ project support for **xsd** files is deprecated. You can still use **Microsoft.VisualC.CppCodeProvider** by adding **CppCodeProvider.dll** manually to the GAC.
 
 ## See also
 

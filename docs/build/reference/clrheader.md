@@ -1,6 +1,6 @@
 ---
 title: "/CLRHEADER"
-ms.date: "11/04/2016"
+ms.date: "05/16/2019"
 f1_keywords: ["/CLRHEADER"]
 helpviewer_keywords: ["-CLRHEADER dumpbin option", "/CLRHEADER dumpbin option", "CLRHEADER dumpbin option"]
 ms.assetid: cf73424f-4541-47e2-b94e-69b95266ef2a
@@ -30,7 +30,7 @@ When **/CLRHEADER** is used on a file that was compiled with /clr, there will be
 
 You can also programmatically check if an image was built for the common language runtime.  For more information, see [How to: Determine if an Image is Native or CLR](../../dotnet/how-to-determine-if-an-image-is-native-or-clr.md).
 
-The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017. Code that must be "pure" or "safe" should be ported to C#.
+The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later. Code that must be "pure" or "safe" should be ported to C#.
 
 ## See also
 

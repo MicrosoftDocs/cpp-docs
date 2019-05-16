@@ -1,12 +1,12 @@
 ---
 title: "CMakeSettings.json schema reference"
-ms.date: "04/25/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMakeSettings.json schema reference
 
-The **cmakesettings.json**` file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. The file stores information such as environment variables or arguments for the cmake.exe environment. You can edit directly or use the **CMake Settings editor**. See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information about the editor.
+The **cmakesettings.json**` file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. The file stores information such as environment variables or arguments for the cmake.exe environment. You can edit directly or use the **CMake Settings editor** (Visuasl Studio 2019 and later). See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information about the editor.
 
 ## Environments
 
@@ -21,7 +21,7 @@ The `environments` array contains a list of `items` of type `object` which defin
    "inheritEnvironments": [ "msvc_x64_x64" ]
    ```
 
-   The example above is the same as running the **Developer Command Prompt for VS 2017** with the **-arch=amd64 -host_arch=amd64** arguments. Any custom environment can be used, or these predefined environments:
+   The example above is the same as running the **Developer Command Prompt for VS 2017** or **Developer Command Prompt for VS 2019** with the **-arch=amd64 -host_arch=amd64** arguments. Any custom environment can be used, or these predefined environments:
  
   - linux_arm: Target ARM Linux remotely.
   - linux_x64: Target x64 Linux remotely.
@@ -43,7 +43,13 @@ A `configuration` has these properties:
 - `name`: names the configuration.
 - `description`: description of this configuration that will appear in menus.
 - `generator`: specifies CMake generator to use for this configuration. May be one of:
+  
+  **Visual Studio 2019 only:**
+  - Visual Studio 16 2019
+  - Visual Studio 16 2019 Win64
+  - Visual Studio 16 2019 ARM
 
+  **Visual Studio 2017 and later:**
   - Visual Studio 15 2017
   - Visual Studio 15 2017 Win64
   - Visual Studio 15 2017 ARM
@@ -55,7 +61,9 @@ A `configuration` has these properties:
 
 Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
 
-To specify a Visual Studio generator, open the  `CMakeSettings.json` from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
+To specify a Visual Studio generator in Visual Studio 2017, open the  `CMakeSettings.json` from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
+
+To specify a Visual Studio generator in Visual Studio 2019, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for project** > **Show Advanced Settings** > **Cmake Generator**.
 
 When the active configuration specifies a Visual Studio generator, by default MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the  `CMakeSettings.json` file, you can specify additional [MSBuild command line arguments](../build/reference/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
 

@@ -2,7 +2,7 @@
 title: "Use the MSVC toolset from the command line - Visual Studio"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "04/25/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
