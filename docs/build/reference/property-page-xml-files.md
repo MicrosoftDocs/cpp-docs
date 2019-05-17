@@ -6,7 +6,7 @@ ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
 ---
 # Property Page XML rule files
 
-The project property pages in the IDE are configured by XML files in the VCTargets folder. The exact path depends on which edition(s) of Visual Studio are installed, and the product language. For Visual Studio 2017 Enterprise Edition, in English, the path is `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033`. The XML files describe the names of the rules, the categories, and the individual properties, their data type, default values, and how they are to be displayed. When you set a property in the IDE, the new value is stored in the project file.
+The project property pages in the IDE are configured by XML files in the VCTargets folder. The exact path depends on which edition(s) of Visual Studio are installed, and the product language. For Visual Studio 2019 Enterprise Edition, in English, the path is `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033`. The XML files describe the names of the rules, the categories, and the individual properties, their data type, default values, and how they are to be displayed. When you set a property in the IDE, the new value is stored in the project file.
 
 The only scenarios in which you need to understand the internal workings of these files and the Visual Studio IDE are (a) you want to create a custom property page, or (b) you want to customize your project properties by some means other than through the Visual Studio IDE.
 
@@ -100,7 +100,7 @@ The following section describes each major elements and some of the metadata tha
 
    - `ItemType="ClCompile"` says that the properties will be stored as ItemDefinition metadata or item metadata (the latter only if the property pages were spawned from a file node in solution explorer) of this item type. If this field is not set, then the property is written as a common property in a PropertyGroup.
 
-   - `Label=""` indicates that when the properties are written as `ItemDefinition` metadata, the label of the parent ItemDefinitionGroup will be empty (every MSBuild element can have a Label). Visual Studio 2017 uses labeled groups to navigate the .vcxproj project file. Note that the groups that contain most Rule properties have an empty string as a label.
+   - `Label=""` indicates that when the properties are written as `ItemDefinition` metadata, the label of the parent ItemDefinitionGroup will be empty (every MSBuild element can have a Label). Visual Studio 2017 and later use labeled groups to navigate the .vcxproj project file. Note that the groups that contain most Rule properties have an empty string as a label.
 
    - `HasConfigurationCondition="true"` tells the project system to affix a configuration condition to the value so that it takes effect only for the current project configuration (the condition could be affixed to the parent group or the value itself). For example,  open the property pages off the project node and set the value of the property **Treat Warnings As Error** under **Configuration Properties > C/C++ General** to "Yes". The following value is written to the project file. Notice the configuration condition attached to the parent ItemDefinitionGroup.
 
@@ -126,7 +126,7 @@ The following section describes each major elements and some of the metadata tha
 
    An individual property can override its parent Rule’s DataSource. In that case,  the location for that property’s value will be different from other properties in the Rule.
 
-   h. There are other attributes of a Rule such as Description,  SupportsFileBatching, etc that are not shown here. The full set of attributes applicable to a Rule or on any other element can be obtained by browsing the documentation for these types. Alternately, you can examine the public properties on the types in the `Microsoft.Build.Framework.XamlTypes` namespace in the `Microsoft.Build.Framework .dll` assembly.
+   h. There are other attributes of a Rule, including Description and SupportsFileBatching, that are not shown here. The full set of attributes applicable to a Rule or on any other element can be obtained by browsing the documentation for these types. Alternately, you can examine the public properties on the types in the `Microsoft.Build.Framework.XamlTypes` namespace in the `Microsoft.Build.Framework .dll` assembly.
 
    i. **DisplayName**, **PageTemplate**, and **Order** are UI-related properties that are present in this otherwise UI-independent data model. These properties are almost certain to be used by any UI that is used to display the property pages. **DisplayName** and **Description** are two properties that are present on almost all elements in the xml file. And these are the only two properties that are localized (localization of these strings will be explained in a later post).
 

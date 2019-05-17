@@ -49,10 +49,6 @@
         - name: ATL
           tocHref: /cpp/atl/
           topicHref: /cpp/atl/atl-com-desktop-components
-          items:
-          - name: Reference
-            tocHref: /cpp/atl/reference/
-            topicHref: /cpp/atl/reference/atl-classes
         - name: MFC
           tocHref: /cpp/mfc/
           topicHref: /cpp/mfc/mfc-desktop-applications
@@ -89,7 +85,7 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-      - name: Edit, navigate and refactor code
+      - name: Edit, navigate, and refactor code
         tocHref: /cpp/ide
         topicHref: /cpp/overview-of-cpp-development
         items:

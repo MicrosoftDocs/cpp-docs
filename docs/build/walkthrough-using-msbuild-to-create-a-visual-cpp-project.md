@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Using MSBuild to Create a Visual C++ Project"
-ms.date: "05/06/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["msbuild (c++), walkthrough: create a project"]
 ms.assetid: 52350d1c-c373-4868-923c-5e8be6f67adb
 ---
@@ -72,7 +72,7 @@ An MSBuild project file is an XML file that contains a project root element (`<P
 
 ### To create the MSBuild project file
 
-1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags. (Use ToolsVersion="15.0" if you are using Visual Studio 2017.)
+1. Use a text editor to create a project file that is named `myproject.vcxproj`, and then add the following root `<Project>` element. Insert the elements in the following procedure steps between the root `<Project>` tags. (Use ToolsVersion="15.0" if you are using Visual Studio 2017 or ToolsVersion="16.0" if you are using Visual Studio 2019.)
 
     ```xml
     <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -100,7 +100,7 @@ An MSBuild project file is an XML file that contains a project root element (`<P
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
     ```
 
-1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties. (Use v141 if you are using Visual Studio 2017.)
+1. Add the following property group element (`<PropertyGroup>`) that specifies two project properties. (Use v141 if you are using Visual Studio 2017 or v142 if you are using Visual Studio 2019.)
 
     ```xml
     <PropertyGroup>
