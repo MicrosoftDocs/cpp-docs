@@ -262,7 +262,7 @@ The Visual Studio IDE depends on the project file having the ordering described 
 
 If a .vcxproj file does not follow this layout, the build results may not be what you expect. For example, if you mistakenly import a system property sheet after the property sheets defined by the user, the user settings will be overridden by the system property sheets.
 
-Even the IDE design time experience depends to some extent on correct ordering of elements. For example, if your .vcxproj file does not have the `PropertySheets` import group, the IDE might not be able to determine where to place a new property sheet that the user has created in **Property Manager**. This could result in a user sheet being overriden by a system sheet. Although the heuristic used by IDE can tolerate minor inconsistencies in the .vcxproj file layout, it is strongly recommended not to deviate from the structure shown earlier in this article.
+Even the IDE design time experience depends to some extent on correct ordering of elements. For example, if your .vcxproj file does not have the `PropertySheets` import group, the IDE might not be able to determine where to place a new property sheet that the user has created in **Property Manager**. This could result in a user sheet being overridden by a system sheet. Although the heuristic used by IDE can tolerate minor inconsistencies in the .vcxproj file layout, it is strongly recommended not to deviate from the structure shown earlier in this article.
 
 ## How the IDE uses element labels
 

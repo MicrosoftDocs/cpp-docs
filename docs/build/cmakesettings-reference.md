@@ -63,7 +63,7 @@ Because Ninja is designed for fast build speeds instead of flexibility and funct
 
 To specify a Visual Studio generator in Visual Studio 2017, open the  `CMakeSettings.json` from the main menu by choosing **CMake | Change CMake Settings**. Delete “Ninja” and type “V”. This activates IntelliSense, which enables you to choose the generator you want.
 
-To specify a Visual Studio generator in Visual Studio 2019, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for project** > **Show Advanced Settings** > **Cmake Generator**.
+To specify a Visual Studio generator in Visual Studio 2019, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for project** > **Show Advanced Settings** > **CMake Generator**.
 
 When the active configuration specifies a Visual Studio generator, by default MSBuild.exe is invoked with `-m -v:minimal` arguments. To customize the build, inside the  `CMakeSettings.json` file, you can specify additional [MSBuild command line arguments](../build/reference/msbuild-visual-cpp-overview.md) to be passed to the build system via the `buildCommandArgs` property:
 

@@ -126,7 +126,7 @@ The following section describes each major elements and some of the metadata tha
 
    An individual property can override its parent Rule’s DataSource. In that case,  the location for that property’s value will be different from other properties in the Rule.
 
-   h. There are other attributes of a Rule such as Description,  SupportsFileBatching, etc that are not shown here. The full set of attributes applicable to a Rule or on any other element can be obtained by browsing the documentation for these types. Alternately, you can examine the public properties on the types in the `Microsoft.Build.Framework.XamlTypes` namespace in the `Microsoft.Build.Framework .dll` assembly.
+   h. There are other attributes of a Rule, including Description and SupportsFileBatching, that are not shown here. The full set of attributes applicable to a Rule or on any other element can be obtained by browsing the documentation for these types. Alternately, you can examine the public properties on the types in the `Microsoft.Build.Framework.XamlTypes` namespace in the `Microsoft.Build.Framework .dll` assembly.
 
    i. **DisplayName**, **PageTemplate**, and **Order** are UI-related properties that are present in this otherwise UI-independent data model. These properties are almost certain to be used by any UI that is used to display the property pages. **DisplayName** and **Description** are two properties that are present on almost all elements in the xml file. And these are the only two properties that are localized (localization of these strings will be explained in a later post).
 

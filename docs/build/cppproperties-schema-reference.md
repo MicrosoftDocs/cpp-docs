@@ -116,7 +116,7 @@ Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only
 ## Custom configurations
 
 
-You can customize any of the default configuations in `CppProperties.json`, or create new configurations. Each will appear in the configuration dropdown:
+You can customize any of the default configurations in `CppProperties.json`, or create new configurations. Each will appear in the configuration dropdown:
 
 ```json
 {
