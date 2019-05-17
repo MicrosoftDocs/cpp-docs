@@ -120,9 +120,9 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|No|
 |&nbsp;&nbsp;[P0502R0 Parallel Algorithms Should terminate]() For Exceptions, Usually](https://wg21.link/P0502R0)|No|
 |&nbsp;&nbsp;[P0518R1 Copying Trivially Copy Constructible Elements In Parallel Algorithms](https://wg21.link/P0518R1)|No|
-|&nbsp;&nbsp;[P0523R1 Relaxing Complexity Requirements Of Parallel Algorithms](General)](https://wg21.link/P0523R1)|No|
+|&nbsp;&nbsp;[P0523R1 Relaxing Complexity Requirements Of Parallel Algorithms (General)](https://wg21.link/P0523R1)|No|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)|No|
-|&nbsp;&nbsp;[P0574R1 Relaxing Complexity Requirements Of Parallel Algorithms](Specific)](https://wg21.link/P0574R1)|No|
+|&nbsp;&nbsp;[P0574R1 Relaxing Complexity Requirements Of Parallel Algorithms (Specific)](https://wg21.link/P0574R1)|No|
 |&nbsp;&nbsp;[P0595R2 std::is_constant_evaluated()](https://wg21.link/P0595R2)|No|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)|No|
 |&nbsp;&nbsp;[P0623R0 Final C++17 Parallel Algorithms Fixes](https://wg21.link/P0623R0)|No|
