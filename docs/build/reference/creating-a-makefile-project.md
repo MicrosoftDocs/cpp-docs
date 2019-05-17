@@ -1,6 +1,6 @@
 ---
 title: "Create a C++ makefile project in Visual Studio"
-ms.date: "12/08/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["vc.appwiz.makefile.project"]
 helpviewer_keywords: ["Makefile projects, creating", "project files [C++], Makefile projects"]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
@@ -14,6 +14,7 @@ If you have an existing makefile project, you have these choices if you want to 
 - Create a makefile project in Visual Studio that uses your existing makefile to configure a .vcxproj file that Visual Studio will use for IntelliSense. (You will not have all the IDE features that you get with a native MSBuild project.) See [To create a makefile project](#create_a_makefile_project) below.
 - Use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. The original makefile will not be used after this. For more information, see [How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md).
 - **Visual Studio 2017 and later**: Use the **Open Folder** feature to edit and build a makefile project as-is without any involvement of the MSBuild system. For more information, see [Open Folder projects for C++](../open-folder-projects-cpp.md).
+- **Visual Studio 2019 and later**: Create a UNIX makefile project for Linux.
 
 ## <a name="create_a_makefile_project"> To create a makefile project with the makefile project template
 
@@ -25,11 +26,29 @@ By default, the makefile project displays no files in Solution Explorer. The mak
 
 The output file that you specify in the project has no effect on the name that the build script generates; it declares only an intention. Your makefile still controls the build process and specifies the build targets.
 
+::: moniker range="vs-2019"
+
+### To create a makefile project in Visual Studio 2019
+
+1. From the Visual Studio main menu, choose **File** > **New** > **Project** and type "makefile" into the search box. Or, in the **New Project** dialog box, expand **Visual C++** > **General** (Visual Studio 2015) or **Other** (Visual Studio 2017) and then select from the two options depending on whether you will be targeting Windows or Linux.
+
+1. **Windows only**: In the **Debug Configuration Settings** page, provide the command, output, clean, and rebuild information for debug and retail builds. Click **Next** if you want to specify different settings for a Release configuration.
+
+1. Click **Finish** to close the dialog and open the newly created project in **Solution Explorer**.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a makefile project in Visual Studio 2015 or Visual Studio 2017
+
 1. From the Visual Studio start page, type "makefile" in the **New Project** search box. Or, in the **New Project** dialog box, expand **Visual C++** > **General** (Visual Studio 2015) or **Other** (Visual Studio 2017) and then select **Makefile Project** in the Templates pane to open the project wizard.
 
 1. In the **Application Settings** page, provide the command, output, clean, and rebuild information for debug and retail builds.
 
 1. Click **Finish** to close the wizard and open the newly created project in **Solution Explorer**.
+
+::: moniker-end
 
 You can view and edit the project's properties in its property page. See [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md) for information about displaying the property page.
 

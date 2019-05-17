@@ -1,6 +1,6 @@
 ---
 title: ".vcxproj and .props file structure"
-ms.date: "09/18/2018"
+ms.date: "05/16/2019"
 helpviewer_keywords: [".vcxproj file structure"]
 ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ---
@@ -262,11 +262,11 @@ The Visual Studio IDE depends on the project file having the ordering described 
 
 If a .vcxproj file does not follow this layout, the build results may not be what you expect. For example, if you mistakenly import a system property sheet after the property sheets defined by the user, the user settings will be overridden by the system property sheets.
 
-Even the IDE design time experience depends to some extent on correct ordering of elements. For example, if your .vcxproj file does not have the `PropertySheets` import group, the IDE might not be able to determine where to place a new property sheet that the user has created in **Property Manager**. This could result in a user sheet being overriden by a system sheet. Although the heuristic used by IDE can tolerate minor inconsistencies in the .vcxproj file layout, it is strongly recommended not to deviate from the structure shown earlier in this article.
+Even the IDE design time experience depends to some extent on correct ordering of elements. For example, if your .vcxproj file does not have the `PropertySheets` import group, the IDE might not be able to determine where to place a new property sheet that the user has created in **Property Manager**. This could result in a user sheet being overridden by a system sheet. Although the heuristic used by IDE can tolerate minor inconsistencies in the .vcxproj file layout, it is strongly recommended not to deviate from the structure shown earlier in this article.
 
 ## How the IDE uses element labels
 
-In the IDE, when you set the **UseOfAtl** property in the general property page, it is written to the Configuration property group in the project file, while the **TargetName** property in the same property page is written to the label-less per-configuration property group. Visual Studio looks at the property page's xml file for the information on where to write each property. For the **General** property page (assuming you have an English version of Visual Studio Enterprise Edition), that file is `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. The property page XML rule file defines the static information about a Rule and all its properties. One such piece of information is the preferred position of a Rule property in the destination file (the file where its value will be written). The preferred position is specified by the Label attribute on the project file elements.
+In the IDE, when you set the **UseOfAtl** property in the general property page, it is written to the Configuration property group in the project file, while the **TargetName** property in the same property page is written to the label-less per-configuration property group. Visual Studio looks at the property page's xml file for the information on where to write each property. For the **General** property page (assuming you have an English version of Visual Studio 2019 Enterprise Edition), that file is `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets\1033\general.xml`. The property page XML rule file defines the static information about a Rule and all its properties. One such piece of information is the preferred position of a Rule property in the destination file (the file where its value will be written). The preferred position is specified by the Label attribute on the project file elements.
 
 ## Property Sheet layout
 
@@ -282,7 +282,7 @@ The following XML snippet is a minimal layout of a property sheet (.props) file.
 </Project>
 ```
 
-To make your own property sheet, copy one of the .props files in the VCTargets folder and modify it for your purposes. For Visual Studio 2017 Enterprise edition, the default VCTargets path is `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets`.
+To make your own property sheet, copy one of the .props files in the VCTargets folder and modify it for your purposes. For Visual Studio 2019 Enterprise edition, the default VCTargets path is `%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\VC\VCTargets`.
 
 ## See also
 

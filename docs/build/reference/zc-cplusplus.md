@@ -1,6 +1,6 @@
 ---
 title: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-ms.date: "05/30/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["/Zc:__cplusplus"]
 helpviewer_keywords: ["-Zc:__cplusplus compiler option (C++)", "__cplusplus macro (C++)"]
 ---
