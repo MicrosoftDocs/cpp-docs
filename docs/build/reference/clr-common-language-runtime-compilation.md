@@ -1,6 +1,6 @@
 ---
 title: "/clr (Common Language Runtime Compilation)"
-ms.date: "09/18/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
@@ -24,11 +24,11 @@ One or more of the following switches, comma-separated.
 
 - **pure**
 
-   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be pure MSIL to C#.
+   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be pure MSIL to C#.
 
 - **safe**
 
-   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be safe MSIL to C#.
+   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be safe MSIL to C#.
 
 - **noAssembly**
 

@@ -1,6 +1,6 @@
 ---
 title: "/LTCG (Link-time Code Generation)"
-ms.date: "03/14/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.LinkTimeCodeGeneration", "VC.Project.VCConfiguration.WholeProgramOptimization", "VC.Project.VCCLWCECompilerTool.WholeProgramOptimization", "/ltcg", "VC.Project.VCCLCompilerTool.WholeProgramOptimization"]
 helpviewer_keywords: ["link-time code generation in C++ linker", "/LTCG linker option", "-LTCG linker option", "LTCG linker option"]
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
@@ -117,7 +117,7 @@ If a function is called through a function pointer, or if a function is called f
 
 Modules that are compiled by using [/GL](gl-whole-program-optimization.md) and [/clr](clr-common-language-runtime-compilation.md) can be used as input to the linker when **/LTCG** is specified.
 
-- **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+- **/LTCG** can accept native object files, and mixed native/managed object files (compiled by using **/clr**). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
 - **/LTCG:PGI** does not accept native modules compiled by using **/GL** and **/clr**
 

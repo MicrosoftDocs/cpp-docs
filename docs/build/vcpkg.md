@@ -3,13 +3,13 @@ title: vcpkg-- A C++ package manager for Windows, Linux and MacOS
 description: "vcpkg is a command line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows."
 author: mikeblome
 ms.author: mblome
-ms.date: "03/18/2019"
+ms.date: "05/16/2019"
 ms.technology: "cpp-ide"
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ---
 # vcpkg: A C++ package manager for Windows, Linux and MacOS
 
-vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows, Linux and MacOS. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg Windows catalog have been tested for compatibility with Visual Studio 2015 and Visual Studio 2017. As of May 2018 there are over 900 libraries in the Windows catalog and over 350 in the Linux/MacOS catalog. The C++ community is adding more libraries to both catalogs on an ongoing basis.
+vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of third-party libraries on Windows, Linux and MacOS. If your project uses third-party libraries, we recommend that you use vcpkg to install them. vcpkg supports both open-source and proprietary libraries. All libraries in the vcpkg Windows catalog have been tested for compatibility with Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019. As of May 2018 there are over 900 libraries in the Windows catalog and over 350 in the Linux/MacOS catalog. The C++ community is adding more libraries to both catalogs on an ongoing basis.
 
 ## Simple yet flexible
 
@@ -17,7 +17,7 @@ With a single command, you can download sources and build a library. vcpkg is it
 
 ## Sources not binaries
 
-For libraries in the Windows catalog, vcpkg downloads sources instead of binaries[1]. It compiles those sources using Visual Studio 2017, or Visual Studio 2015 if 2017 is not installed. In C++, it is very important that any libraries you use are complied with the same compiler, and compiler version, as the application code that links to it. By using vcpkg, you eliminate or at least greatly reduce the potential for mismatched binaries and the problems they can cause. In teams that are standardized on a specific version of a compiler, one team member can use vcpkg to download sources and compile a set of binaries and then use the export command to zip up the binaries and headers for other team members. For more information, see [Export compiled binaries and headers](#export_binaries_per_project) below.
+For libraries in the Windows catalog, vcpkg downloads sources instead of binaries[1]. It compiles those sources using the most recent version of Visual Studio that it can find. In C++, it is very important that any libraries you use are complied with the same compiler, and compiler version, as the application code that links to it. By using vcpkg, you eliminate or at least greatly reduce the potential for mismatched binaries and the problems they can cause. In teams that are standardized on a specific version of a compiler, one team member can use vcpkg to download sources and compile a set of binaries and then use the export command to zip up the binaries and headers for other team members. For more information, see [Export compiled binaries and headers](#export_binaries_per_project) below.
 
 If you create a vcpkg clone with private libraries in the ports collection, you can add a port that downloads prebuilt binaries and headers and write a portfile.cmake file that simply copies those files to the desired location.
 
@@ -172,7 +172,7 @@ Type **vcpkg remove** to remove an installed library. If any other libraries dep
 
 ## Customize vcpkg
 
-You can modify your clone of vcpkg in any way you like. You can create multiple vcpkg clones and modify the portfiles in each one to obtain specific versions of libraries or specify command-line parameters. For example, in an enterprise, one group of developers might be working on software that has one set of dependencies, and another group might have a different set. You can set up two clones of vcpkg, and modify each one to download the versions of the libraries and the compilation switches, etc, according to your needs.
+You can modify your clone of vcpkg in any way you like. You can create multiple vcpkg clones and modify the portfiles in each one to obtain specific versions of libraries or specify command-line parameters. For example, in an enterprise, one group of developers might be working on software that has one set of dependencies, and another group might have a different set. You can set up two clones of vcpkg, and modify each one to download the versions of the libraries and the compilation switches, and so on, according to your needs.
 
 ## Uninstall vcpkg
 
