@@ -1,6 +1,6 @@
 ---
 title: "/CLRIMAGETYPE (Specify Type of CLR Image)"
-ms.date: "11/04/2016"
+ms.date: "05/16/2019"
 f1_keywords: ["/CLRIMAGETYPE", "VC.Project.VCLinkerTool.CLRImageType"]
 helpviewer_keywords: ["/CLRIMAGETYPE linker option", "-CLRIMAGETYPE linker option"]
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
@@ -15,7 +15,7 @@ Set the CLR image type in the linked image.
 
 ## Remarks
 
-The linker accepts native objects and also MSIL objects that are compiled by using [/clr](clr-common-language-runtime-compilation.md). The **/clr:pure** and **/clr:safe** compiler options were deprecated in Visual Studio 2015 and are unsupported in Visual Studio 2017. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.
+The linker accepts native objects and also MSIL objects that are compiled by using [/clr](clr-common-language-runtime-compilation.md). The **/clr:pure** and **/clr:safe** compiler options were deprecated in Visual Studio 2015 and are unsupported in Visual Studio 2017 and later. When mixed objects in the same build are passed, the verifiability of the resulting output file is, by default, equal to the lowest level of verifiability of the input modules. For example, if you pass a native image and a mixed mode image (compiled by using **/clr**), the resulting image will be a mixed mode image.
 
 You can use **/CLRIMAGETYPE** to specify a lower level of verifiability, if that is what you need.
 
