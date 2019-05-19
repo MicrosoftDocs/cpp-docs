@@ -1,6 +1,6 @@
 ---
 title: "C complex math support"
-ms.date: "03/30/2018"
+ms.date: "05/14/2019"
 f1_keywords: ["c.complex"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
 ---
@@ -18,15 +18,15 @@ The Microsoft implementation of the complex.h header defines these types as equi
 
 |Standard type|Microsoft type|
 |-|-|
-|**float complex** or **float _Complex**|**_FComplex**|
-|**double complex** or **double _Complex**|**_DComplex**|
-|**long double complex** or **long double _Complex**|**_LComplex**|
+|**float complex** or **float _Complex**|**_Fcomplex**|
+|**double complex** or **double _Complex**|**_Dcomplex**|
+|**long double complex** or **long double _Complex**|**_Lcomplex**|
 
 The math.h header defines a separate type, **struct _complex**, used for the [_cabs](../c-runtime-library/reference/cabs.md) function. The **struct _complex** type is not used by the equivalent complex math functions [cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md).
 
 ## Complex constants and macros
 
-**I** is defined as the **float** complex type **_FComplex** initialized by `{ 0.0f, 1.0f }`.
+**I** is defined as the **float** complex type **_Fcomplex** initialized by `{ 0.0f, 1.0f }`.
 
 ## Trigonometric functions
 

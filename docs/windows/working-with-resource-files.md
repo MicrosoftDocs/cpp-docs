@@ -40,7 +40,7 @@ Describes the resource editors provided in Visual Studio and the types of resour
 
 ## Related Sections
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)<br/>
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)<br/>
 Provides links into the Visual C++ documentation.
 
 [Talk to Us](/visualstudio/ide/talk-to-us)<br/>

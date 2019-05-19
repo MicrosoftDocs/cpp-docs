@@ -12,7 +12,7 @@ This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.
 

@@ -1,7 +1,6 @@
 ---
 title: "Application Information and Management"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros"]
 helpviewer_keywords: ["applications [MFC], managing"]
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
 ---

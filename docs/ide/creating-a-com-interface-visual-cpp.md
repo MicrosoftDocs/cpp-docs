@@ -1,13 +1,12 @@
 ---
 title: "Create a COM interface"
-ms.date: "11/12/2018"
-f1_keywords: ["vc.codewiz.com.creating.interfaces", "vc.codewiz.com.editing.interfaces"]
+ms.date: "05/14/2019"
 helpviewer_keywords: ["COM interfaces, creating", "methods [C++], adding to COM interfaces", "COM interfaces, editing", "properties [C++], adding to COM interfaces"]
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
 ---
 # Create a COM interface
 
-Visual C++ provides wizards and templates to create projects that use COM defining interfaces and dispinterfaces for your COM objects and automation classes.
+Visual Studio provides wizards and templates to create projects that use COM defining interfaces and dispinterfaces for your COM objects and automation classes.
 
 You can use these wizards to do the following three common tasks:
 

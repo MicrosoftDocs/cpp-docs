@@ -1,7 +1,6 @@
 ---
 title: "MFC Macros and Globals"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros"]
 helpviewer_keywords: ["MFC, global functions and variables", "MFC, macros", "global functions, MFC", "macros, MFC", "global functions [MFC]", "global variables, MFC", "Afx naming convention", "macros"]
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
 ---

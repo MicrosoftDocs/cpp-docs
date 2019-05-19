@@ -1,6 +1,6 @@
 ---
 title: "Customize CMake build settings in Visual Studio"
-ms.date: "04/25/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings
@@ -121,7 +121,7 @@ The directory on the remote machine in which CMake installs targets.
 
 ### Remote copy sources
 
-Specifies whether to copy source files to the remote machine and enables you to specify whether to yse rsync or sftp. 
+Specifies whether to copy source files to the remote machine and enables you to specify whether to use rsync or sftp. 
 
 ## Directly edit CMakeSettings.json
 

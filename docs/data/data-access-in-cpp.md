@@ -46,4 +46,4 @@ The ODBC interface is designed for use with the C programming language. Use of t
 
 ## See also
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)
