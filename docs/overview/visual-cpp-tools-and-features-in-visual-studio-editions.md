@@ -1,6 +1,6 @@
 ---
 title: "C++ Tools and Features in Visual Studio Editions"
-ms.date: "05/16/2019"
+ms.date: "05/21/2019"
 helpviewer_keywords: ["tools and platforms [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
@@ -17,17 +17,19 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Platform|Visual Studio Community/Professional|Visual Studio Enterprise|
 |Windows Desktop|X|X|
 |Universal Windows Platform ((tablet, PC, Xbox, IoT, and HoloLens))|X|X|
+|Linux|X|X|
 |Android|X|X|
 |iOS|X|X|
+
 
 ## Compilers
 
 |Compiler|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------------|------------------------------|
-|32-bit X86 compiler|X|X|
-|X86_arm cross-compiler|X|X|
-|64-bit x64 compiler|X|X|
-|X86_ x64 cross-compiler|X|X|
+|MSVC 32-bit compiler for x86, x64, and ARM|X|X|
+|MSVC 64-bit compiler for x86, x64, ARM, and ARM64|X|X|
+|GCC cross-compiler for ARM|X|X|
+
 
 ## Libraries and Headers
 
@@ -184,6 +186,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Platform|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|
 |Windows Desktop||X|X|X|
 |Universal Windows Platform ((phone, tablet, PC, Xbox, IoT, and HoloLens))|X||X|X|
+|Linux|X|X|
 |Microsoft Store 8.1|||X|X|
 |Windows Phone 8.0|||X|X|
 |Android|||X|X|
@@ -193,9 +196,9 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 |Compiler|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|32-bit X86 compiler|X|X|X|X|
+|MSVC 32-bit X86 compiler|X|X|X|X|
 |X86_arm cross-compiler|X||X|X|
-|64-bit x64 compiler|||X|X|
+|MSVC 64-bit x64 compiler|||X|X|
 |X86_ x64 cross-compiler|X|X|X|X|
 
 ## Libraries and Headers
