@@ -10,8 +10,6 @@ ms.author: "mblome"
 
 Visual Studio 2017 brings many updates and fixes to the C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem and Provide a Suggestion](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio).
 
-<!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
-
 ## C++ compiler
 
 ### C++ conformance improvements

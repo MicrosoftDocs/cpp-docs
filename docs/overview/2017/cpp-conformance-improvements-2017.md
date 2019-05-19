@@ -64,7 +64,7 @@ New syntax to enable only a single namespace identifier in an attribute list. Fo
 
 ### Structured bindings
 
-It is now possible in a single declaration to store a value with individual names for its components, when the value is an array, a std::tuple or std::pair, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) and [Returning multiple values from a function](../../cpp/functions-cpp.md#multi_val).
+It is now possible in a single declaration to store a value with individual names for its components, when the value is an array, a `std::tuple` or `std::pair`, or has all public non-static data members. For more information, see [Structured Bindings](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) and [Returning multiple values from a function](../../cpp/functions-cpp.md#multi_val).
 
 ### Construction rules for enum class values
 
