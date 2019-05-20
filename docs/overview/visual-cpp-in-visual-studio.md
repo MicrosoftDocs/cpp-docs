@@ -1,21 +1,23 @@
 ---
 title: "C++ in Visual Studio"
 description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
-ms.date: "09/26/2018"
+ms.date: "05/13/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
 ms.author: "mblome"
 ---
+
 # C++ in Visual Studio
 
 > [!NOTE]
-> This developer documentation applies to Visual Studio 2015 and Visual Studio 2017.
+> This developer documentation applies to Visual Studio 2015 and later. Use the version selector in the upper left of the page to match your version of Visual Studio.
 >
 > If you are looking for a Visual C++ redistributable package so that you can run a program, go to the [Microsoft Download Center](http://www.microsoft.com/download/) and enter **Visual C++** in the search box.
 
-
 Microsoft Visual C++, usually shortened to Visual C++ or MSVC, is the name for the C++, C, and assembly language development tools and libraries available as part of Visual Studio on Windows. These tools and libraries let you create Universal Windows Platform (UWP) apps, native Windows desktop and server applications, cross-platform libraries and apps that run on Windows, Linux, Android, and iOS, as well as managed apps and libraries that use the .NET Framework. You can use Visual C++ to write anything from simple console apps to the most sophisticated and complex apps for Windows desktop, from device drivers and operating system components to cross-platform games for mobile devices, and from the smallest IoT devices to multi-server high performance computing in the Azure cloud.
+
+Visual Studio 2015, 2017 and 2019 can be installed side-by-side. You can use Visual Studio 2019 (compiler toolset v142) to edit and build programs using the toolset from Visual Studio 2015 (v140) and Visual Studio 2017 (v141).
 
 ## What's New and Conformance History
 
