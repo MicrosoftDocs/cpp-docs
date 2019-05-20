@@ -4,7 +4,7 @@ Welcome! This repository contains source files for the work-in-progress Visual C
 
 This repository was moved from Microsoft/vcppdocs to MicrosoftDocs/cpp-docs-pr on June 23, 2017.
 
-The documentation for Visual Basic and Visual C# are located in a separate repository at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual Studio 2017 documentation is located in the repository located at [http://github.com/Microsoft/visualstudio-docs](http://github.com/Microsoft/visualstudio-docs).
+The documentation for Visual Basic and Visual C# are located in a separate repository at [https://github.com/dotnet/core-docs](https://github.com/dotnet/core-docs), and the Visual Studio 2017 documentation is located in the repository located at [https://github.com/Microsoft/visualstudio-docs](https://github.com/Microsoft/visualstudio-docs).
 
 ## Contributing to the documentation
 
