@@ -8,156 +8,154 @@ ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 
 ::: moniker range=">=vs-2019"
 
-The following tables show Visual C++ features that are available in Visual Studio 2019. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
+The following tables show C++ features that are available in all editions Visual Studio 2019: Visual Studio Community, Visual Studio Professional, Visual Studio Enterprise.
 
 ## Platforms
 
-||||||
-|-|-|-|-|-|
-|Platform|Visual Studio Community/Professional|Visual Studio Enterprise|
-|Windows Desktop|X|X|
-|Universal Windows Platform ((tablet, PC, Xbox, IoT, and HoloLens))|X|X|
-|Linux|X|X|
-|Android|X|X|
-|iOS|X|X|
+|Windows Desktop
+|Universal Windows Platform ((tablet, PC, Xbox, IoT, and HoloLens))
+|Linux
+|Android
+|iOS
 
 
 ## Compilers
 
 |Compiler|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------------|------------------------------|
-|MSVC 32-bit compiler for x86, x64, and ARM|X|X|
-|MSVC 64-bit compiler for x86, x64, ARM, and ARM64|X|X|
-|GCC cross-compiler for ARM|X|X|
+|MSVC 32-bit compiler for x86, x64, ARM, and ARM64
+|MSVC 64-bit compiler for x86, x64, ARM, and ARM64
+|GCC cross-compiler for ARM
+|||
 
 
 ## Libraries and Headers
 
 |Library or Header|Visual Studio Professional / Community|Visual Studio Enterprise|
 |-----------------------|---------------------------------------------|------------------------------|
-|Windows headers and libraries and CRT library|X|X|
-|C++ Standard Library|X|X|
-|ATL|X|X|
-|MFC|X|X|
-|.NET Framework class library|X|X|
-|C++ Support Library for .NET|X|X|
-|OpenMP|X|X|
+|Windows headers and libraries and CRT library
+|C++ Standard Library
+|ATL
+|MFC
+|.NET Framework class library
+|C++ Support Library for .NET
+|OpenMP
 
 ## Project Templates
 
 |Template|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------------|------------------------------|
-|XAML Templates for UWP, Windows 8.1, Windows Phone 8.0|X|X|
-|Direct3D App|X|X|
-|DLL (Universal Windows)|X|X|
-|Static Library (Universal Windows)|X|X|
-|Windows Runtime Component|X|X|
-|Unit Test App (Universal Windows)|X|X|
-|ATL Project|X|X|
-|Class Library (CLR)|X|X|
-|CLR Console Application|X|X|
-|CLR Empty Project|X|X|
-|Custom Wizard|X|X|
-|Empty Project|X|X|
-|Makefile Project|X|X|
-|MFC ActiveX Control|X|X|
-|MFC Application|X|X|
-|MFC DLL|X|X|
-|Test Project|X|X|
-|Win32 Console Application|X|X|
-|Win32 Project|X|X|
+|XAML Templates for UWP, Windows 8.1, Windows Phone 8.0
+|Direct3D App
+|DLL (Universal Windows)
+|Static Library (Universal Windows)
+|Windows Runtime Component
+|Unit Test App (Universal Windows)
+|ATL Project
+|Class Library (CLR)
+|CLR Console Application
+|CLR Empty Project
+|Custom Wizard
+|Empty Project
+|Makefile Project
+|MFC ActiveX Control
+|MFC Application
+|MFC DLL
+|Test Project
+|Win32 Console Application
+|Win32 Project
 
 ## Tools
 
 |Tool|Visual Studio Professional / Community|Visual Studio Enterprise|
 |----------|---------------------------------------------|------------------------------|
-|Incremental Linker (Link.exe)|X|X|
-|Program Maintenance Utility (Nmake.exe)|X|X|
-|Lib Generator (Lib.exe)|X|X|
-|Windows Resource Compiler (Rc.exe)|X|X|
-|Windows Resource to Object Converter (CvtRes.exe)|X|X|
-|Browse Information Maintenance Utility (BscMake.exe)|X|X|
-|C++ Name Undecorator (Undname.exe)|X|X|
-|COFF/PE Dumper (Dumpbin.exe)|X|X|
-|COFF/PE Editor (Editbin.exe)|X|X|
-|MASM (Ml.exe)|X|X|
-|Spy++|X|X|
-|ErrLook|X|X|
-|AtlTrace|X|X|
-|Devenv.com|X|X|
-|Inference Rules|X|X|
-|Upgrade VCBuild .vcproj projects to MSBuild (VCUpgrade.exe)|X|X|
-|Profile Guided Optimizations|X|X|
+|Incremental Linker (Link.exe)
+|Program Maintenance Utility (Nmake.exe)
+|Lib Generator (Lib.exe)
+|Windows Resource Compiler (Rc.exe)
+|Windows Resource to Object Converter (CvtRes.exe)
+|Browse Information Maintenance Utility (BscMake.exe)
+|C++ Name Undecorator (Undname.exe)
+|COFF/PE Dumper (Dumpbin.exe)
+|COFF/PE Editor (Editbin.exe)
+|MASM (Ml.exe)
+|Spy++
+|ErrLook
+|AtlTrace
+|Devenv.com
+|Inference Rules
+|Upgrade VCBuild .vcproj projects to MSBuild (VCUpgrade.exe)
+|Profile Guided Optimizations
 
 ## Debugging Features
 
 |Debugging Feature|Visual Studio Professional / Community|Visual Studio Enterprise|
 |-----------------------|--------------------------------------------|------------------------------|
-|Native Debugging|X|X|
-|natvis (native type visualization)|X|X|
-|Graphics Debugging|X|X|
-|Managed Debugging|X|X|
-|GPU usage|X|X|
-|Memory usage|X|X|
-|Remote Debugging|X|X|
-|SQL Debugging|X|X|
-|Static Code Analysis|X|X|
+|Native Debugging
+|natvis (native type visualization)
+|Graphics Debugging
+|Managed Debugging
+|GPU usage
+|Memory usage
+|Remote Debugging
+|SQL Debugging
+|Static Code Analysis
 
 ## Designers and Editors
 
 |Designer or Editor|Visual Studio Professional / Community|Visual Studio Enterprise|
 |------------------------|---------------------------------------------|------------------------------|
-|XAML Designer|X|X|
-|CSS Style Designer/Editor|X|X|
-|HTML Designer/Editor|X|X|
-|XML Editor|X|X|
-|Source Code Editor|X|X|
-|Productivity Features: Refactoring, IntelliSense, C++ Code Formatting|X|X|
-|Windows Forms Designer|X|X|
-|Data Designer|X|X|
-|Native Resource Editor (.rc files)|X|X|
-|Resource Editors|X|X|
-|Model editor|X|X|
-|Shader designer|X|X|
+|XAML Designer
+|CSS Style Designer/Editor
+|HTML Designer/Editor
+|XML Editor
+|Source Code Editor
+|Productivity Features: Refactoring, IntelliSense, C++ Code Formatting
+|Windows Forms Designer
+|Data Designer
+|Native Resource Editor (.rc files)
+|Resource Editors
+|Model editor
+|Shader designer
 
 ## Data Features
 
 |Data Feature|Visual Studio Professional / Community|Visual Studio Enterprise|
 |------------------|---------------------------------------------|------------------------------|
-|Data Designer|X|X|
-|Data Objects|X|X|
-|Web Services|X|X|
-|Server Explorer|X|X|
+|Data Designer
+|Data Objects
+|Web Services
+|Server Explorer
 
 ## Build and Project Systems
 
 |Build or Project Feature|Visual Studio Professional / Community|Visual Studio Enterprise|
 |------------------------------|---------------------------------------------|------------------------------|
-|Command line builds (msbuild.exe)|X|X|
-|Native Multi-targeting|X|X|
-|Managed Multi-targeting|X|X|
-|Parallel Builds|X|X|
-|Build Customizations|X|X|
-|Property Pages Extensibility|X|X|
+|Command line builds (msbuild.exe)
+|Native Multi-targeting
+|Managed Multi-targeting
+|Parallel Builds
+|Build Customizations
+|Property Pages Extensibility
 
 ## Automation and Extensibility
 
 |Automation and Extensibility|Visual Studio Professional / Community|Visual Studio Enterprise|
 |---------------------------------|---------------------------------------------|------------------------------|
-|Extensibility Object Models|X|X|
-|Code Model|X|X|
-|Project Model|X|X|
-|Resource Editor Model|X|X|
-|Wizard Model|X|X|
-|Debugger Object Model|X|X|
+|Extensibility Object Models
+|Code Model
+|Project Model
+|Resource Editor Model
+|Wizard Model
+|Debugger Object Model
 
 ## Application Lifecycle Management Tools
 
 ||||||
 |-|-|-|-|-|
 |Tool|Visual Studio Professional / Community|Visual Studio Enterprise|
-|Unit Testing (native framework)|X|X|
-|Unit Testing (managed framework)|X|X|
+|Unit Testing (native framework)
+|Unit Testing (managed framework)
 |Code coverage||X|
 |Manual testing||X|
 |Exploratory testing||X|
