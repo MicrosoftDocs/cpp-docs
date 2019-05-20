@@ -12,7 +12,7 @@ ms.assetid: 440b3750-ba0b-44d8-b82d-d581f62c08b2
 
 The MASM driver, called ML.exe, generated a system error.
 
-Note the circumstances of the error and notify Microsoft Corporation. Product Support Services is available at [http://support.microsoft.com/](http://support.microsoft.com/).
+Note the circumstances of the error and notify Microsoft Corporation. Product Support Services is available at [https://support.microsoft.com/](https://support.microsoft.com/).
 
 ## See also
 
