@@ -42,7 +42,7 @@ The following table lists the possible values for each parameter when targeting 
 
 ## Code
 
-For MASM-related samples, download the Compiler samples from [Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749).
+For MASM-related samples, download the Compiler samples from [Visual C++ Samples and Related Documentation for Visual Studio 2010](https://go.microsoft.com/fwlink/p/?linkid=178749).
 
 The following example demonstrates the use of the `.MODEL` directive.
 
