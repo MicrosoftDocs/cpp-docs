@@ -32,15 +32,15 @@ Visual Studio provides support for any project system or custom build tools that
 
 ::: moniker-end
 
-   In general, you should use these templates for new projects unless you are using CMake or another project system. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
+   In general, you should use these templates for new projects unless you are using existing CMake projects, or you are using another project system. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
 
-- **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md).
+- **CMake** is a cross-platform build system that is integrated into the Visual Studio IDE when you install the Desktop development with C++ workload. You can use the CMake project template for new projects, or simply open a folder with a CMakeLists.txt file. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md).
 
 - Any other C++ build system, including a loose collection of files, is supported via the **Open Folder** feature. You create simple JSON files to invoke your build program and configure debugging sessions. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md).
 
 ## Add to source control
 
-Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
+Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window. 
 
 ::: moniker range="vs-2019"
 
