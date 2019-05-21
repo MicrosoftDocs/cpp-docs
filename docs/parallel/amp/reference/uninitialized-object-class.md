@@ -37,7 +37,7 @@ class uninitialized_object : public runtime_exception;
 
 **Namespace:** Concurrency
 
-## uninitialized_object
+## <a name="uninitialized_object"></a> uninitialized_object
 
 Constructs a new instance of the `uninitialized_object` exception.
 
