@@ -49,7 +49,7 @@ Optional Components:
 - Test Adapter for Google Test
 - Live Share
 - IntelliCode
-- IntelliTrace
+- IntelliTrace (Enterprise only)
 - C++ MFC for v142 build tools (x86 & x64)
 - C++/CLI support for v142 build tools (14.21)
 - C++ Modules for v142 build tools (x64/x86 – experimental)
@@ -82,7 +82,7 @@ Included:
 
 Optional Components:
 - IntelliCode
-- IntelliTrace
+- IntelliTrace (Enterprise only)
 - USB Device Connectivity
 - C++ (v142) Universal Windows Platform tools
 - C++ (v141) Universal Windows Platform tools
@@ -104,7 +104,7 @@ Optional Components:
 - C++ profiling tools
 - Windows 10 SDK (10.0.17763.0)
 - IntelliCode
-- IntelliTrace
+- IntelliTrace (Enterprise only)
 - Windows 10 SDK (10.0.17134.0)
 - Windows 10 SDK (10.0.16299.0)
 - IncrediBuild - Build Acceleration
