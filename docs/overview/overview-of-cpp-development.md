@@ -20,17 +20,17 @@ Visual Studio provides support for any project system or custom build tools that
 
 - **MSBuild** is the native project system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-::: moniker range="vs-2019"
+   ::: moniker range="vs-2019"
 
    ![New Project Templates](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 New Project Dialog")
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="<=vs-2017"
+   ::: moniker range="<=vs-2017"
 
    ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
-::: moniker-end
+   ::: moniker-end
 
    In general, you should use these templates for new projects unless you are using existing CMake projects, or you are using another project system. For more information, see [Creating and managing MSBuild-based projects](../build/creating-and-managing-visual-cpp-projects.md).
 
