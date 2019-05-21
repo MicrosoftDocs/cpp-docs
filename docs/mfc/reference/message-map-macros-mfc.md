@@ -78,7 +78,7 @@ END_MESSAGE_MAP()
 
 **Header:** afxwin.h
 
-## BEGIN_TEMPLATE_MESSAGE_MAP
+## <a name="begin_template_message_map"></a> begin_template_message_map
 
 Begins the definition of a message map on a class type containing a single template argument.
 
