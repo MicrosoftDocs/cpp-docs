@@ -91,7 +91,7 @@ Destroys the object.
 virtual ~runtime_exception() throw();
 ```
 
-## get_error_code
+## <a name="get_error_code"></a> get_error_code
 
 Returns the error code that caused the exception.
 
