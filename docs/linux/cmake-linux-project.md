@@ -1,7 +1,7 @@
 ---
 title: "Configure a Linux CMake project in Visual Studio"
 description: "How to configure, edit and compile a Linux CMake project in Visual Studio"
-ms.date: "05/03/2019"
+ms.date: "05/21/2019"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 
@@ -147,9 +147,9 @@ You can use these optional settings for more control:
 
 ```json
 {
-      "remotePreBuildCommand": "",
+      "remotePrebuildCommand": "",
       "remotePreGenerateCommand": "",
-      "remotePostBuildCommand": "",
+      "remotePostbuildCommand": "",
 }
 ```
 
