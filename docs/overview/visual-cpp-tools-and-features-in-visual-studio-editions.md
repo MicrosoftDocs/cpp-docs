@@ -248,6 +248,10 @@ Linux:
 - Resource Editors
 - Model editor
 - Shader designer
+- Live Dependency Validation (Enterprise Only)
+- Architectural Layer Diagrams (Enterprise Only)
+- Architecture Validation (Enterprise Only)
+- Code Clone (Enterprise Only)
 
 ## Data Features
 
@@ -268,13 +272,17 @@ Linux:
 ## Application Lifecycle Management Tools
 
 - Unit Testing (Microsoft Native C++, Boost.Test, Google Test, CTest)
+- Code map and dependency graphs (Professional and Enterprise)
 - Code coverage (Enterprise Only)
 - Manual testing (Enterprise only)
 - Exploratory testing (Enterprise only)
 - Test case management (Enterprise only)
-- Code map and dependency graphs|read-only|X|
-- Code map debugging (Enterprise only)
-- Application Insights
+- Code map debugger integration (Enterprise only)
+- Live Unit Testing (Enterprise only)
+- IntelliTrace (Enterprise only)
+- IntelliTest (Enterprise only)
+- Microsoft Fakes (Unit Test Isolation) (Enterprise only)
+- Code Coverage (Enterprise only)
 
 ## See also
 
