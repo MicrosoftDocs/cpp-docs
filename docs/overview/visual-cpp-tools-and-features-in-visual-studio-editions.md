@@ -38,7 +38,7 @@ Visual Studio includes the following workloads for C++ development. You can inst
 Included:
 - C++ core desktop features
 
-Optional:
+Optional Components:
 - MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
 - Windows 10 SDK (10.0.17763.0)
 - Just-In-Time debugger
@@ -67,7 +67,7 @@ Included:
 - Windows Universal C Runtime
 - C++ for Linux Development
 
-Optional:
+Optional Components:
 - C++ CMake tools for Linux
 - Embedded and IoT development tools
 
@@ -80,7 +80,7 @@ Included:
 - Universal Windows Platform tools
 - Windows 10 SDK (10.0.17763.0)
 
-Optional:
+Optional Components:
 - IntelliCode
 - IntelliTrace
 - USB Device Connectivity
@@ -92,14 +92,6 @@ Optional:
 - Windows 10 SDK (10.0.16299.0)
 - Architecture and analysis tools
 
-## Individual components
-
-- JavaScript diagnostics
-- Live Share
-- C++ Universal Windows Platform runtime for v142 build tools
-- ClickOnce Publishing
-- Microsoft Visual Studio Installer Projects
-
 ### C++ Game Development
 
 Included:
@@ -108,7 +100,7 @@ Included:
 - C++ 2019 Redistributable Update
 - MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
 
-Optional:
+Optional Components:
 - C++ profiling tools
 - Windows 10 SDK (10.0.17763.0)
 - IntelliCode
@@ -126,7 +118,7 @@ Included:
 - C++ core features
 - Android SDK setup (API level 25) (local install for Mobile development with C++)
 
-Optional:
+Optional Components:
 - Android NDK (R16B)
 - Apache Ant (1.9.3)
 - C++ Android development tools
@@ -137,15 +129,27 @@ Optional:
 - C++ iOS development tools
 - IncrediBuild - Build Acceleration
 
+
+## Individual components
+
+You can install these components independently from any workload.
+
+- JavaScript diagnostics
+- Live Share
+- C++ Universal Windows Platform runtime for v142 build tools
+- ClickOnce Publishing
+- Microsoft Visual Studio Installer Projects
+
 ## Libraries and Headers
 
-- Windows headers and libraries, and CRT library
+- Windows headers and libraries
+- Windows Universal C Runtime (CRT)
 - C++ Standard Library
 - ATL
 - MFC
 - .NET Framework class library
 - C++ Support Library for .NET
-- OpenMP
+- OpenMP 2.0
 - Over 900 open-source libraries via vcpkg catalog
 
 ## Build and Project Systems
@@ -316,7 +320,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |MFC|||X|X|
 |.NET Framework class library||X|X|X|
 |C++ Support Library for .NET||X|X|X|
-|OpenMP|X|X|X|X|
+|OpenMP 2.0|X|X|X|X|
 
 ## Project Templates
 
