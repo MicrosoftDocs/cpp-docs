@@ -90,11 +90,11 @@ The `/NODEFAULTLIB` linker option (or the Ignore All Default Libraries linker pr
 
 Projects that use this option present a problem when upgrading, because the contents of some of the default libraries were refactored. Because each library has to be listed in the **Additional Dependencies** property or on the linker command line, you need to update the list of libraries to use all the current names.
 
-The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to replace the names in the first column with the names in the second column. Some of these libraries are import libraries, but that shouldn’t matter.
+The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to add the new library names in the second column to the libraries in the first column. Some of these libraries are import libraries, but that shouldn’t matter.
 
 |||
 |-|-|
-|If you were using:|You need to replace it with:|
+|If you were using:|You need to use these libraries:|
 |libcmt.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
 |libcmtd.lib|libcmtd.lib, libucrtd.lib, libvcruntimed.lib|
 |msvcrt.lib|msvcrt.lib, ucrt.lib, vcruntime.lib|
