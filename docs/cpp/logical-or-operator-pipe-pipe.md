@@ -1,16 +1,9 @@
 ---
-title: "Logical OR operator: || | Microsoft Docs"
-ms.custom: ""
+title: "Logical OR operator: ||"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["||"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OR operator [C++], logical", "|| operator", "OR operator", "logical OR operator"]
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Logical OR operator: ||
 

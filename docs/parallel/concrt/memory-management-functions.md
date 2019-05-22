@@ -1,15 +1,8 @@
 ---
-title: "Memory Management Functions | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory management functions [Concurrency Runtime]"]
 ms.assetid: d303dd2a-dfa4-4d90-a508-f6aa290bb9ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management Functions
 
@@ -32,8 +25,7 @@ Use the `Alloc` and `Free` functions when you allocate and free a fixed set of a
 
 For an example that uses the `Alloc` and `Free` functions to improve memory performance, see [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Use Alloc and Free to Improve Memory Performance](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
-

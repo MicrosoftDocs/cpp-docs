@@ -1,16 +1,9 @@
 ---
-title: "unordered_multimap Class | Microsoft Docs"
-ms.custom: ""
+title: "unordered_multimap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["unordered_map/std::unordered_multimap", "unordered_map/std::unordered_multimap::allocator_type", "unordered_map/std::unordered_multimap::const_iterator", "unordered_map/std::unordered_multimap::const_local_iterator", "unordered_map/std::unordered_multimap::const_pointer", "unordered_map/std::unordered_multimap::const_reference", "unordered_map/std::unordered_multimap::difference_type", "unordered_map/std::unordered_multimap::hasher", "unordered_map/std::unordered_multimap::iterator", "unordered_map/std::unordered_multimap::key_equal", "unordered_map/std::unordered_multimap::key_type", "unordered_map/std::unordered_multimap::local_iterator", "unordered_map/std::unordered_multimap::mapped_type", "unordered_map/std::unordered_multimap::pointer", "unordered_map/std::unordered_multimap::reference", "unordered_map/std::unordered_multimap::size_type", "unordered_map/std::unordered_multimap::value_type", "unordered_map/std::unordered_multimap::begin", "unordered_map/std::unordered_multimap::bucket", "unordered_map/std::unordered_multimap::bucket_count", "unordered_map/std::unordered_multimap::bucket_size", "unordered_map/std::unordered_multimap::cbegin", "unordered_map/std::unordered_multimap::cend", "unordered_map/std::unordered_multimap::clear", "unordered_map/std::unordered_multimap::count", "unordered_map/std::unordered_multimap::emplace", "unordered_map/std::unordered_multimap::emplace_hint", "unordered_map/std::unordered_multimap::empty", "unordered_map/std::unordered_multimap::end", "unordered_map/std::unordered_multimap::equal_range", "unordered_map/std::unordered_multimap::erase", "unordered_map/std::unordered_multimap::find", "unordered_map/std::unordered_multimap::get_allocator", "unordered_map/std::unordered_multimap::hash", "unordered_map/std::unordered_multimap::insert", "unordered_map/std::unordered_multimap::key_eq", "unordered_map/std::unordered_multimap::load_factor", "unordered_map/std::unordered_multimap::max_bucket_count", "unordered_map/std::unordered_multimap::max_load_factor", "unordered_map/std::unordered_multimap::max_size", "unordered_map/std::unordered_multimap::rehash", "unordered_map/std::unordered_multimap::size", "unordered_map/std::unordered_multimap::swap", "unordered_map/std::unordered_multimap::unordered_multimap", "unordered_map/std::unordered_multimap::operator=", "unordered_map/std::unordered_multimap::hash_function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::unordered_multimap", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear", "std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap", "std::unordered_multimap::unordered_multimap", "std::unordered_multimap::operator=", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear", "std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash_function", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap"]
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unordered_multimap Class
 
@@ -140,7 +133,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -207,7 +199,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -264,7 +255,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -339,7 +329,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -358,7 +347,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="bucket_size"></a>  unordered_multimap::bucket_size
@@ -409,7 +397,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -527,7 +514,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -577,7 +563,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -625,7 +610,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -673,7 +657,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -720,7 +703,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -773,7 +755,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -834,7 +815,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -959,7 +939,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1034,7 +1013,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1106,7 +1084,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1207,7 +1184,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1248,7 +1224,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1286,7 +1261,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1325,7 +1299,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1442,7 +1415,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1482,7 +1454,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1523,7 +1494,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1579,7 +1549,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1653,7 +1622,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ## <a name="local_iterator"></a>  unordered_multimap::local_iterator
@@ -1697,7 +1665,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1753,7 +1720,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1827,7 +1793,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1846,7 +1811,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_load_factor"></a>  unordered_multimap::max_load_factor
@@ -1922,7 +1886,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1941,7 +1904,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_size"></a>  unordered_multimap::max_size
@@ -1973,7 +1935,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2077,7 +2038,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2124,7 +2084,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2192,7 +2151,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2265,7 +2223,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2308,7 +2265,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2379,7 +2335,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2580,7 +2535,6 @@ int main()
     }
     cout << endl;
 }
-
 ```
 
 ```Output
@@ -2638,7 +2592,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

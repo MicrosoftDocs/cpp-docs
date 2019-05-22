@@ -1,16 +1,9 @@
 ---
-title: "CD2DSizeF Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DSizeF Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::IsNull"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DSizeF [MFC], CD2DSizeF", "CD2DSizeF [MFC], IsNull"]
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DSizeF Class
 
@@ -101,6 +94,6 @@ operator CSize();
 
 Current value of D2D size.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

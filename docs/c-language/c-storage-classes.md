@@ -1,15 +1,8 @@
 ---
-title: "C Storage Classes | Microsoft Docs"
-ms.custom: ""
+title: "C Storage Classes"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["static variables, lifetime", "storage classes", "lifetime, variables", "specifiers, storage class", "storage class specifiers, C storage classes", "storage duration"]
 ms.assetid: 893fb929-f7a9-43dc-a0b3-29cb1ef845c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Storage Classes
 
@@ -45,6 +38,6 @@ The exact meaning of each storage-class specifier depends on two factors:
 
 [Storage-Class Specifiers for External-Level Declarations](../c-language/storage-class-specifiers-for-external-level-declarations.md) and [Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md) describe the *storage-class-specifier* terminals in each kind of declaration and explain the default behavior when the *storage-class-specifier* is omitted from a variable. [Storage-Class Specifiers with Function Declarations](../c-language/storage-class-specifiers-with-function-declarations.md) discusses storage-class specifiers used with functions.
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

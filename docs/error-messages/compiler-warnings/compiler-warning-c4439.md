@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4439 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4439"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4439"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4439"]
 ms.assetid: 9449958f-f407-4824-829b-9e092f2af97d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4439
 

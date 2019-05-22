@@ -1,16 +1,10 @@
 ---
-title: "Implement Pure Virtuals | Microsoft Docs"
-ms.custom: ""
+title: "Implement Pure Virtuals"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-
 # Implement Pure Virtuals
+
 **What:** Lets you immediately generate the code required to implement all pure virtual methods in a class.
 
 **When:** You want to inherit from a class with pure virtual functions.

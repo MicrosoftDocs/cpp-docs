@@ -1,16 +1,9 @@
 ---
-title: "auto_rename | Microsoft Docs"
-ms.custom: ""
+title: "auto_rename"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["auto_rename"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_rename attribute"]
 ms.assetid: 1075f3ab-f6fc-4e04-8e22-ebe02695a567
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # auto_rename
 
@@ -30,7 +23,7 @@ This attribute is used when importing a type library that uses one or more C++ r
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

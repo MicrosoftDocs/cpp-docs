@@ -1,15 +1,8 @@
 ---
-title: "Expression Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "Expression Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["statements, expression", "expression statements"]
 ms.assetid: 1085982b-dc16-4c1e-9ddd-0cd85c8fe2e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expression Statement (C)
 
@@ -34,6 +27,6 @@ y = z = ( f( x ) + 3 );   /* A function-call expression        */
 
 In the last statement, the function-call expression, the value of the expression, which includes any value returned by the function, is increased by 3 and then assigned to both the variables `y` and `z`.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

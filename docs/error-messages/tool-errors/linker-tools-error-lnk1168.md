@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1168 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1168"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1168"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1168"]
 ms.assetid: 97ead151-fd99-46fe-9a1d-7e84dc0b8cc8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1168
 

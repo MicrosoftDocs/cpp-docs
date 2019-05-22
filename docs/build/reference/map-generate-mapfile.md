@@ -1,16 +1,9 @@
 ---
-title: "-MAP (Generate Mapfile) | Microsoft Docs"
-ms.custom: ""
+title: "/MAP (Generate Mapfile)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/map", "VC.Project.VCLinkerTool.MapFileName", "VC.Project.VCLinkerTool.GenerateMapFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mapfiles, creating linker", "generate mapfile linker option", "mapfile linker option", "mapfiles, information about program being linked", "MAP linker option", "-MAP linker option", "mapfiles, specifying file name", "/MAP linker option"]
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MAP (Generate Mapfile)
 
@@ -41,11 +34,11 @@ A mapfile is a text file that contains the following information about the progr
 
 - The entry point (as *section*:*offset*)
 
-The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
+The [/MAPINFO](mapinfo-include-information-in-mapfile.md) option specifies additional information to be included in the mapfile.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **Linker** folder.
 
@@ -57,7 +50,7 @@ The [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md) 
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

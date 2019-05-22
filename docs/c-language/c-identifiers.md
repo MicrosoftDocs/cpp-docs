@@ -1,15 +1,8 @@
 ---
-title: "C Identifiers | Microsoft Docs"
-ms.custom: ""
+title: "C Identifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["identifiers, C", "naming identifiers", "identifiers", "symbols, C identifiers", "identifiers, case sensitivity", "symbols, case sensitivity"]
 ms.assetid: d02edbbc-85a0-4118-997b-84ee6b972eb6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Identifiers
 
@@ -91,6 +84,6 @@ The "source character set" is the set of legal characters that can appear in sou
 
 An identifier has "scope," which is the region of the program in which it is known, and "linkage," which determines whether the same name in another scope refers to the same identifier. These topics are explained in [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md).
 
-## See Also
+## See also
 
 [Elements of C](../c-language/elements-of-c.md)

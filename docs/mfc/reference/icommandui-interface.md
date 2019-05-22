@@ -1,16 +1,9 @@
 ---
-title: "ICommandUI Interface | Microsoft Docs"
-ms.custom: ""
+title: "ICommandUI Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandUI interface [MFC]"]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ICommandUI Interface
 
@@ -132,6 +125,6 @@ This property sets the text of the user interface item for this command. Set Tex
 
 **Header:** afxwinforms.h (defined in assembly atlmfc\lib\mfcmifc80.dll)
 
-## See Also
+## See also
 
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)

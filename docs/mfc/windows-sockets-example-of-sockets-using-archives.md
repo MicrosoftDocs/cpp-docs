@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Example of Sockets Using Archives | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Example of Sockets Using Archives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], with archives", "examples [MFC], Windows Sockets", "Windows Sockets [MFC], with archives"]
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Example of Sockets Using Archives
 
@@ -51,7 +44,7 @@ For more information, see Windows Sockets Specification: **htonl**, **htons**, *
 
 - [Windows Sockets: Background](../mfc/windows-sockets-background.md)
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
@@ -59,4 +52,3 @@ For more information, see Windows Sockets Specification: **htonl**, **htons**, *
 [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
 [CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
 [CObject::Serialize](../mfc/reference/cobject-class.md#serialize)
-

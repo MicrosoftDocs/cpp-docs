@@ -1,16 +1,10 @@
 ---
-title: "Platform::Runtime::InteropServices Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Runtime::InteropServices Namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Runtime::InteropServices"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Runtime::InteropServices Namespace"]
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::InteropServices Namespace
 
@@ -47,6 +41,6 @@ Although this namespace is intended for internal use, browsers can display the f
 
 **Namespace:** Platform::InteropServices
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

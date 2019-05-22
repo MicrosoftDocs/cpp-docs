@@ -1,13 +1,7 @@
 ---
-title: "Template ref classes (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Template ref classes (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: a24d5f45-8dbb-4540-958f-c76c90d8ed93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Template ref classes (C++/CX)
 
@@ -19,7 +13,7 @@ The following example shows how to declare a private ref class as a template, an
 
 [!code-cpp[cx_templates#01](../cppcx/codesnippet/CPP/templatedemo/class1.h#01)]
 
-## See Also
+## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

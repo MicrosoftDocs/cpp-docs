@@ -1,15 +1,8 @@
 ---
-title: "How to: Manage a Scheduler Instance | Microsoft Docs"
-ms.custom: ""
+title: "How to: Manage a Scheduler Instance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["managing a scheduler instance [Concurrency Runtime]", "scheduler instances, managing [Concurrency Runtime]"]
 ms.assetid: 2cc804f0-5ff3-498b-97f1-a9f67a005448
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Manage a Scheduler Instance
 
@@ -37,7 +30,7 @@ The examples create schedulers that use the default scheduler policies. For an e
 
 1. Pass the handle to the event to the [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) function to wait for the scheduler to shut down.
 
-1. Call the [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) function to close the handle to the event object.
+1. Call the [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) function to close the handle to the event object.
 
 ## Example
 
@@ -74,8 +67,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc scheduler-instance.cpp**
 
-## See Also
+## See also
 
 [Scheduler Instances](../../parallel/concrt/scheduler-instances.md)<br/>
 [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)
-

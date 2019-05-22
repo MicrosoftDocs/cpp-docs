@@ -1,16 +1,9 @@
 ---
-title: "CDaoDatabase Class | Microsoft Docs"
-ms.custom: ""
+title: "CDaoDatabase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoDatabase", "AFXDAO/CDaoDatabase", "AFXDAO/CDaoDatabase::CDaoDatabase", "AFXDAO/CDaoDatabase::CanTransact", "AFXDAO/CDaoDatabase::CanUpdate", "AFXDAO/CDaoDatabase::Close", "AFXDAO/CDaoDatabase::Create", "AFXDAO/CDaoDatabase::CreateRelation", "AFXDAO/CDaoDatabase::DeleteQueryDef", "AFXDAO/CDaoDatabase::DeleteRelation", "AFXDAO/CDaoDatabase::DeleteTableDef", "AFXDAO/CDaoDatabase::Execute", "AFXDAO/CDaoDatabase::GetConnect", "AFXDAO/CDaoDatabase::GetName", "AFXDAO/CDaoDatabase::GetQueryDefCount", "AFXDAO/CDaoDatabase::GetQueryDefInfo", "AFXDAO/CDaoDatabase::GetQueryTimeout", "AFXDAO/CDaoDatabase::GetRecordsAffected", "AFXDAO/CDaoDatabase::GetRelationCount", "AFXDAO/CDaoDatabase::GetRelationInfo", "AFXDAO/CDaoDatabase::GetTableDefCount", "AFXDAO/CDaoDatabase::GetTableDefInfo", "AFXDAO/CDaoDatabase::GetVersion", "AFXDAO/CDaoDatabase::IsOpen", "AFXDAO/CDaoDatabase::Open", "AFXDAO/CDaoDatabase::SetQueryTimeout", "AFXDAO/CDaoDatabase::m_pDAODatabase", "AFXDAO/CDaoDatabase::m_pWorkspace"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoDatabase [MFC], CDaoDatabase", "CDaoDatabase [MFC], CanTransact", "CDaoDatabase [MFC], CanUpdate", "CDaoDatabase [MFC], Close", "CDaoDatabase [MFC], Create", "CDaoDatabase [MFC], CreateRelation", "CDaoDatabase [MFC], DeleteQueryDef", "CDaoDatabase [MFC], DeleteRelation", "CDaoDatabase [MFC], DeleteTableDef", "CDaoDatabase [MFC], Execute", "CDaoDatabase [MFC], GetConnect", "CDaoDatabase [MFC], GetName", "CDaoDatabase [MFC], GetQueryDefCount", "CDaoDatabase [MFC], GetQueryDefInfo", "CDaoDatabase [MFC], GetQueryTimeout", "CDaoDatabase [MFC], GetRecordsAffected", "CDaoDatabase [MFC], GetRelationCount", "CDaoDatabase [MFC], GetRelationInfo", "CDaoDatabase [MFC], GetTableDefCount", "CDaoDatabase [MFC], GetTableDefInfo", "CDaoDatabase [MFC], GetVersion", "CDaoDatabase [MFC], IsOpen", "CDaoDatabase [MFC], Open", "CDaoDatabase [MFC], SetQueryTimeout", "CDaoDatabase [MFC], m_pDAODatabase", "CDaoDatabase [MFC], m_pWorkspace"]
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoDatabase Class
 
@@ -840,7 +833,7 @@ The default value for query timeouts is 60 seconds. Not all databases support th
 
 For related information, see the topic "QueryTimeout Property" in DAO Help.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

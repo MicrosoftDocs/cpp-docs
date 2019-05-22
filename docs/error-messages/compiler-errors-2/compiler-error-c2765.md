@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2765 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2765"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2765"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2765"]
 ms.assetid: 47ad86f3-a7e0-47ad-85ff-0f5534458cb9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2765
 

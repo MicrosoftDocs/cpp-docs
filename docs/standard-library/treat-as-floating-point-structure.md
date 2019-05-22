@@ -1,15 +1,8 @@
 ---
-title: "treat_as_floating_point Structure | Microsoft Docs"
-ms.custom: ""
+title: "treat_as_floating_point Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::treat_as_floating_point"]
-dev_langs: ["C++"]
 ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # treat_as_floating_point Structure
 

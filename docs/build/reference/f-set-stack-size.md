@@ -1,16 +1,9 @@
 ---
-title: "-F (Set Stack Size) | Microsoft Docs"
-ms.custom: ""
+title: "/F (Set Stack Size)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/f"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["set stack size compiler option", "F compiler option [C++]", "-F compiler option [C++]", "/F compiler option [C++]", "stack, setting size"]
 ms.assetid: 17320b6f-8305-445b-9ec2-75833f4b29e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /F (Set Stack Size)
 
@@ -33,13 +26,13 @@ You may need to increase the stack size if your program gets stack-overflow mess
 
 You can also set the stack size by:
 
-- Using the **/STACK** linker option. For more information, see [/STACK](../../build/reference/stack.md).
+- Using the **/STACK** linker option. For more information, see [/STACK](stack.md).
 
-- Using EDITBIN on the .exe file. For more information, see [EDITBIN Reference](../../build/reference/editbin-reference.md).
+- Using EDITBIN on the .exe file. For more information, see [EDITBIN Reference](editbin-reference.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -49,7 +42,7 @@ You can also set the stack size by:
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

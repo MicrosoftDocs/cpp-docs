@@ -1,16 +1,9 @@
 ---
-title: "section | Microsoft Docs"
-ms.custom: ""
+title: "section"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["section_CPP", "vc-pragma.section"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, section", "section pragma"]
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # section
 
@@ -60,6 +53,6 @@ int i = 0;
 int main(){}
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

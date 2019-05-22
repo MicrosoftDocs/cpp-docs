@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0003 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0003"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0003"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0003"]
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0003
 
@@ -26,10 +19,10 @@ Possible reasons for this error include:
 
 - Insufficient security privileges. Verify that you have sufficient security privileges.
 
-- The executable paths specified in **VC++ Directories** do not include the path for the tool that you are attempting to run. For information, see [Working with Project Properties](../../ide/working-with-project-properties.md)
+- The executable paths specified in **VC++ Directories** do not include the path for the tool that you are attempting to run. For information, see [Set compiler and build properties](../../build/working-with-project-properties.md)
 
 - For makefile projects, you are missing a command to run on either **Build Command Line** or **Rebuild Command Line**.
 
-## See Also
+## See also
 
 [Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

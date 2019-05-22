@@ -1,19 +1,12 @@
 ---
-title: "scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl | Microsoft Docs"
-ms.custom: ""
+title: "scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scalbn function", "scalbln function", "scalblnl function", "scalbnl function", "scalbnf function", "scalblnf function"]
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 

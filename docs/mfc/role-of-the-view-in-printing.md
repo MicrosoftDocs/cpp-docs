@@ -1,15 +1,8 @@
 ---
-title: "Role of the View in Printing | Microsoft Docs"
-ms.custom: ""
+title: "Role of the View in Printing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC], printing", "OnDraw method [MFC], and printing", "printing [MFC], OnDraw method [MFC]", "printing [MFC], views", "CView class [MFC], role in printing", "printing views [MFC]"]
 ms.assetid: 8d4a3c8e-1fce-4edc-b608-94cb5f3e487e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Role of the View in Printing
 
@@ -23,7 +16,6 @@ The view:
 
 For more information about printing and about the view's role in printing, see [Printing and Print Preview](../mfc/printing-and-print-preview.md).
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

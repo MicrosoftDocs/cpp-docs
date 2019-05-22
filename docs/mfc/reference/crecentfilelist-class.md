@@ -1,16 +1,9 @@
 ---
-title: "CRecentFileList Class | Microsoft Docs"
-ms.custom: ""
+title: "CRecentFileList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRecentFileList", "AFXADV/CRecentFileList", "AFXADV/CRecentFileList::CRecentFileList", "AFXADV/CRecentFileList::Add", "AFXADV/CRecentFileList::GetDisplayName", "AFXADV/CRecentFileList::GetSize", "AFXADV/CRecentFileList::ReadList", "AFXADV/CRecentFileList::Remove", "AFXADV/CRecentFileList::UpdateMenu", "AFXADV/CRecentFileList::WriteList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRecentFileList [MFC], CRecentFileList", "CRecentFileList [MFC], Add", "CRecentFileList [MFC], GetDisplayName", "CRecentFileList [MFC], GetSize", "CRecentFileList [MFC], ReadList", "CRecentFileList [MFC], Remove", "CRecentFileList [MFC], UpdateMenu", "CRecentFileList [MFC], WriteList"]
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRecentFileList Class
 
@@ -46,7 +39,7 @@ class CRecentFileList
 
 |Name|Description|
 |----------|-----------------|
-|[CRecentFileList::operator [ ]](#operator_at)|Returns a `CString` object at a given position.|
+|[CRecentFileList::operator \[ \]](#operator_at)|Returns a `CString` object at a given position.|
 
 ## Remarks
 
@@ -244,7 +237,6 @@ Writes the most recently used (MRU) file list into the registry or the applicati
 virtual void WriteList();
 ```
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

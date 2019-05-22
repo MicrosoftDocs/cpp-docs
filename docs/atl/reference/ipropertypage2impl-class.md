@@ -1,16 +1,9 @@
 ---
-title: "IPropertyPage2Impl Class | Microsoft Docs"
-ms.custom: ""
+title: "IPropertyPage2Impl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl::EditProperty"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages", "IPropertyPage2 ATL implementation", "IPropertyPage2Impl class"]
 ms.assetid: e89fbe90-203a-47f0-a5de-23616697e1ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IPropertyPage2Impl Class
 
@@ -77,7 +70,7 @@ Returns E_NOTIMPL.
 
 See [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) in the Windows SDK.
 
-## See Also
+## See also
 
 [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [ISpecifyPropertyPagesImpl Class](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>

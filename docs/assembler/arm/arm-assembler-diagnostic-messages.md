@@ -1,16 +1,9 @@
 ---
-title: "ARM Assembler diagnostic messages | Microsoft Docs"
-ms.custom: ""
+title: "ARM Assembler diagnostic messages"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["A2193", "A2196", "A2202", "A2513", "A2557", "A4228", "A4508", "A4509"]
 helpviewer_keywords: ["A2193", "A2196", "A2202", "A2513", "A2557", "A4228", "A4508", "A4509"]
-dev_langs: ["C++"]
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ARM Assembler diagnostic messages
 

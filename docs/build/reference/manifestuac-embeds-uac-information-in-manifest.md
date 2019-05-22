@@ -1,16 +1,9 @@
 ---
-title: "-MANIFESTUAC (Embeds UAC information in manifest) | Microsoft Docs"
-ms.custom: ""
+title: "/MANIFESTUAC (Embeds UAC information in manifest)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.UACUIAccess", "VC.Project.VCLinkerTool.UACExecutionLevel", "VC.Project.VCLinkerTool.EnableUAC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/MANIFESTUAC linker option", "MANIFESTUAC linker option", "-MANIFESTUAC linker option"]
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /MANIFESTUAC (Embeds UAC information in manifest)
 
@@ -57,7 +50,7 @@ You can specify the level and uiAccess values in one step by using the /MANIFEST
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -71,7 +64,7 @@ You can specify the level and uiAccess values in one step by using the /MANIFEST
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A>, and <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

@@ -1,16 +1,9 @@
 ---
-title: "NMAKE Warning U4007 | Microsoft Docs"
-ms.custom: ""
+title: "NMAKE Warning U4007"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["U4007"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["U4007"]
 ms.assetid: 61ec0417-6961-43c1-ade8-f9d6e93289e9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # NMAKE Warning U4007
 

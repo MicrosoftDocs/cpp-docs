@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Datagram Sockets | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Datagram Sockets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], datagram", "Windows Sockets [MFC], bi-directional data flow", "datagram sockets [MFC]", "Windows Sockets [MFC], datagram", "sockets [MFC], bi-directional data flow"]
 ms.assetid: bec16a1c-74c0-4ff9-8c18-c2d87897d264
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Datagram Sockets
 
@@ -23,8 +16,7 @@ An example of a datagram socket is an application that keeps system clocks on th
 
 Datagram sockets are better than stream sockets for record-oriented data. For more information about datagram sockets, see the Windows Sockets specification, available in the Windows SDK.
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [Windows Sockets: Background](../mfc/windows-sockets-background.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "no_namespace | Microsoft Docs"
-ms.custom: ""
+title: "no_namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_namespace"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_namespace attribute"]
 ms.assetid: 5d81b741-a558-451b-b493-1f3b18967337
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_namespace
 **C++ Specific**
@@ -31,7 +24,7 @@ If you want to use a different namespace name, then use the [rename_namespace](.
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -1,19 +1,12 @@
 ---
-title: "_create_locale, _wcreate_locale | Microsoft Docs"
-ms.custom: ""
+title: "_create_locale, _wcreate_locale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_create_locale", "__create_locale", "_wcreate_locale"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["create_locale", "_create_locale", "__create_locale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["locales, creating", "_create_locale function", "create_locale function", "__create_locale function"]
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _create_locale, _wcreate_locale
 
@@ -50,16 +43,16 @@ The **_create_locale** function allows you to create an object that represents c
 
 **_wcreate_locale** is a wide-character version of **_create_locale**; the *locale* argument to **_wcreate_locale** is a wide-character string. **_wcreate_locale** and **_create_locale** behave identically otherwise.
 
-The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in the following table.
+The *category* argument specifies the parts of the locale-specific behavior that are affected. The flags used for *category* and the parts of the program they affect are as shown in this table:
 
-|*category* flag|Affects|
-|-|-|
-**LC_ALL**|All categories, as listed below.
-**LC_COLLATE**|The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions.
-**LC_CTYPE**|The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected).
-**LC_MONETARY**|Monetary-formatting information returned by the **localeconv** function.
-**LC_NUMERIC**|Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
-**LC_TIME**|The **strftime** and **wcsftime** functions.
+| *category* flag | Affects |
+|-----------------|---------|
+| **LC_ALL** |All categories, as listed below. |
+| **LC_COLLATE** |The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions. |
+| **LC_CTYPE** | The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected). |
+| **LC_MONETARY** | Monetary-formatting information returned by the **localeconv** function. |
+| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
+| **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
 This function validates the *category* and *locale* parameters. If the category parameter is not one of the values given in the previous table or if *locale* is **NULL**, the function returns **NULL**.
 

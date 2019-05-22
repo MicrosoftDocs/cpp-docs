@@ -1,15 +1,8 @@
 ---
-title: "Windows | Microsoft Docs"
-ms.custom: ""
+title: "Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["objects [MFC], window", "windows [MFC]", "MFC, windows", "window objects [MFC], MFC Framework"]
 ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows
 
@@ -101,11 +94,10 @@ The second group of articles describes [frame windows](../mfc/frame-windows.md)â
 
 - [Change the styles of a window created by MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Toolbars](../mfc/toolbars.md)<br/>
 [Status Bars](../mfc/status-bars.md)<br/>
 [Dialog Bars](../mfc/dialog-bars.md)
-

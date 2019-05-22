@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4274 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4274"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4274"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4274"]
 ms.assetid: 5a948680-7ed1-469f-978d-ae99d154e161
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4274
 
@@ -25,7 +18,7 @@ The `#ident` directive, which inserts a user-specified string in the object or e
 
 - Remove the `#ident "`*string*`"` directive.
 
-## See Also
+## See also
 
 [comment (C/C++)](../../preprocessor/comment-c-cpp.md)<br/>
 [Linker Tools Warning LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)<br/>

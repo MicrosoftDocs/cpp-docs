@@ -1,15 +1,8 @@
 ---
-title: "Using the Additive Operators | Microsoft Docs"
-ms.custom: ""
+title: "Using the Additive Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], addition", "additive operators"]
 ms.assetid: 7d54841e-436d-4ae8-9865-1ac1829e6f22
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using the Additive Operators
 
@@ -36,6 +29,6 @@ j = &x[i] - &x[i-2];
 
 In this example, the address of the third element of `x` (given by `x[i-2]`) is subtracted from the address of the fifth element of `x` (given by `x[i]`). The difference is divided by the length of a **float**; the result is the integer value 2.
 
-## See Also
+## See also
 
 [C Additive Operators](../c-language/c-additive-operators.md)

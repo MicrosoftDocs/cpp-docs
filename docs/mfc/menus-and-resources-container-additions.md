@@ -1,16 +1,9 @@
 ---
-title: "Menus and Resources: Container Additions | Microsoft Docs"
-ms.custom: ""
+title: "Menus and Resources: Container Additions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application accelerator table [MFC]", "VK_ESCAPE key [MFC]", "IDP_FAILED_TO_CREATE macro [MFC]", "visual editing, application menus and resources", "OLE containers [MFC], menus and resources", "accelerator tables [MFC], container applications", "IDP_OLE_INIT_FAILED macro [MFC]", "CONTAIN tutorial [MFC]", "Links menu item [MFC]"]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Container Additions
 
@@ -18,7 +11,7 @@ This article explains the changes that need to be made to the menus and other re
 
 In container applications, two types of changes need to be made: modifications to existing resources to support OLE visual editing and addition of new resources used for in-place activation. If you use the application wizard to create your container application, these steps will be done for you, but they may require some customization.
 
-If you do not use the application wizard, you may want to look at OCLIENT.RC, the resource script for the OCLIENT sample application, to see how these changes are implemented. See the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
+If you do not use the application wizard, you may want to look at OCLIENT.RC, the resource script for the OCLIENT sample application, to see how these changes are implemented. See the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md).
 
 Topics covered in this article include:
 
@@ -51,7 +44,7 @@ Small changes to a container application's accelerator table resources are neces
 |--------|---------|----------|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
-The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the VK_ESCAPE entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../visual-cpp-samples.md):
+The second change is to create a new accelerator table that corresponds to the new menu resource created for in-place activation. This table has entries for the File and Window menus in addition to the VK_ESCAPE entry above. The following example is the accelerator table created for in-place activation in the MFC sample [CONTAINER](../overview/visual-cpp-samples.md):
 
 |ID|Key|Type|
 |--------|---------|----------|
@@ -72,8 +65,7 @@ Most of the changes to string tables for container applications correspond to th
 |IDP_OLE_INIT_FAILED|OLE initialization failed. Make sure that the OLE libraries are the correct version.|
 |IDP_FAILED_TO_CREATE|Failed to create object. Make sure that the object is entered in the system registry.|
 
-## See Also
+## See also
 
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md)
-

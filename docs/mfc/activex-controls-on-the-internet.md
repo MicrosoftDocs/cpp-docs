@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Controls on the Internet | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Controls on the Internet"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls on the Internet
 
@@ -80,7 +73,7 @@ When creating a new control using the Application Wizard, you can choose to enab
 
 1. Click **New** on the **File** menu.
 
-1. Select **MFC ActiveX Control Wizard** from the Visual C++ projects and name your project.
+1. Select **MFC ActiveX Control Wizard** from the Visual Studio C++ projects and name your project.
 
 1. On the **Control Settings** page, select **Loads properties asynchronously**. Selecting this option sets up the ready state property and the ready state changed event for you.
 
@@ -186,8 +179,7 @@ If you are adding asynchronous property support to an existing control, you will
 
 You will update the ready state as your code is downloaded by calling [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate). One place you could call `InternalSetReadyState` is from the `OnProgress` override of `CDataPathProperty`-derived class.
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

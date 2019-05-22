@@ -1,15 +1,8 @@
 ---
-title: "Contexts | Microsoft Docs"
-ms.custom: ""
+title: "Contexts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["contexts [Concurrency Runtime]"]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Contexts
 
@@ -68,10 +61,9 @@ You can enable oversubscription multiple times from the current context, but you
 
 For an example that uses oversubscription to offset the latency that is caused by reading data from a network connection, see [How to: Use Oversubscription to Offset Latency](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
 [How to: Use the Context Class to Implement a Cooperative Semaphore](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [How to: Use Oversubscription to Offset Latency](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)
-

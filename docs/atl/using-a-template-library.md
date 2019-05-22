@@ -1,15 +1,8 @@
 ---
-title: "Using a Template Library (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using a Template Library (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["template libraries"]
 ms.assetid: 5e80ec6e-a61c-41ce-b34b-9a6252c46265
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Template Library
 
@@ -17,7 +10,6 @@ A template is somewhat like a macro. As with a macro, invoking a template causes
 
 Template libraries such as ATL differ from traditional C++ class libraries in that they are typically supplied only as source code (or as source code with a little, supporting run time) and are not inherently or necessarily hierarchical in nature. Rather than deriving from a class to get the functionality you desire, you instantiate a class from a template.
 
-## See Also
+## See also
 
 [Introduction to ATL](../atl/introduction-to-atl.md)
-

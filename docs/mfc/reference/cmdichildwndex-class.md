@@ -1,16 +1,9 @@
 ---
-title: "CMDIChildWndEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CMDIChildWndEx Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx", "AFXMDICHILDWNDEX/CMDIChildWndEx::ActivateTopLevelFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AddTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::AdjustDockingLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnMDITabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnTaskBarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::CanShowOnWindowsList", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::DockPaneLeftOf", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableAutoHidePanes", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableDocking", "AFXMDICHILDWNDEX/CMDIChildWndEx::EnableTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDockingManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetDocumentName", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameIcon", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetFrameText", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTabProxyWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarPreviewWnd", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::GetToolbarButtonToolTipText", "AFXMDICHILDWNDEX/CMDIChildWndEx::InsertPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::InvalidateIconicBitmaps", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsPointNearDockSite", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsReadOnly", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsRegisteredWithTaskbarTabs", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTabbedPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarTabsSupportEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::IsTaskbarThumbnailClipRectEnabled", "AFXMDICHILDWNDEX/CMDIChildWndEx::m_dwDefaultTaskbarTabPropertyFlags", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicLivePreviewBitmap", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnGetIconicThumbnail", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnMoveMiniFrame", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnPressTaskbarThmbnailCloseButton", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnSetPreviewMode", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailMouseActivate", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnTaskbarTabThumbnailStretch", "AFXMDICHILDWNDEX/CMDIChildWndEx::OnUpdateFrameTitle", "AFXMDICHILDWNDEX/CMDIChildWndEx::PaneFromPoint", "AFXMDICHILDWNDEX/CMDIChildWndEx::RecalcLayout", "AFXMDICHILDWNDEX/CMDIChildWndEx::RegisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::RemovePaneFromDockManager", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetRelatedTabGroup", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabActive", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabOrder", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarTabProperties", "AFXMDICHILDWNDEX/CMDIChildWndEx::SetTaskbarThumbnailClipRect", "AFXMDICHILDWNDEX/CMDIChildWndEx::ShowPane", "AFXMDICHILDWNDEX/CMDIChildWndEx::UnregisterTaskbarTab", "AFXMDICHILDWNDEX/CMDIChildWndEx::UpdateTaskbarTabIcon"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIChildWndEx [MFC], ActivateTopLevelFrame", "CMDIChildWndEx [MFC], AddPane", "CMDIChildWndEx [MFC], AddTabbedPane", "CMDIChildWndEx [MFC], AdjustDockingLayout", "CMDIChildWndEx [MFC], CanShowOnMDITabs", "CMDIChildWndEx [MFC], CanShowOnTaskBarTabs", "CMDIChildWndEx [MFC], CanShowOnWindowsList", "CMDIChildWndEx [MFC], DockPane", "CMDIChildWndEx [MFC], DockPaneLeftOf", "CMDIChildWndEx [MFC], EnableAutoHidePanes", "CMDIChildWndEx [MFC], EnableDocking", "CMDIChildWndEx [MFC], EnableTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], GetDockingManager", "CMDIChildWndEx [MFC], GetDocumentName", "CMDIChildWndEx [MFC], GetFrameIcon", "CMDIChildWndEx [MFC], GetFrameText", "CMDIChildWndEx [MFC], GetPane", "CMDIChildWndEx [MFC], GetRelatedTabGroup", "CMDIChildWndEx [MFC], GetTabbedPane", "CMDIChildWndEx [MFC], GetTabProxyWnd", "CMDIChildWndEx [MFC], GetTaskbarPreviewWnd", "CMDIChildWndEx [MFC], GetTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], GetToolbarButtonToolTipText", "CMDIChildWndEx [MFC], InsertPane", "CMDIChildWndEx [MFC], InvalidateIconicBitmaps", "CMDIChildWndEx [MFC], IsPointNearDockSite", "CMDIChildWndEx [MFC], IsReadOnly", "CMDIChildWndEx [MFC], IsRegisteredWithTaskbarTabs", "CMDIChildWndEx [MFC], IsTabbedPane", "CMDIChildWndEx [MFC], IsTaskbarTabsSupportEnabled", "CMDIChildWndEx [MFC], IsTaskbarThumbnailClipRectEnabled", "CMDIChildWndEx [MFC], m_dwDefaultTaskbarTabPropertyFlags", "CMDIChildWndEx [MFC], OnGetIconicLivePreviewBitmap", "CMDIChildWndEx [MFC], OnGetIconicThumbnail", "CMDIChildWndEx [MFC], OnMoveMiniFrame", "CMDIChildWndEx [MFC], OnPressTaskbarThmbnailCloseButton", "CMDIChildWndEx [MFC], OnSetPreviewMode", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailActivate", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailMouseActivate", "CMDIChildWndEx [MFC], OnTaskbarTabThumbnailStretch", "CMDIChildWndEx [MFC], OnUpdateFrameTitle", "CMDIChildWndEx [MFC], PaneFromPoint", "CMDIChildWndEx [MFC], RecalcLayout", "CMDIChildWndEx [MFC], RegisterTaskbarTab", "CMDIChildWndEx [MFC], RemovePaneFromDockManager", "CMDIChildWndEx [MFC], SetRelatedTabGroup", "CMDIChildWndEx [MFC], SetTaskbarTabActive", "CMDIChildWndEx [MFC], SetTaskbarTabOrder", "CMDIChildWndEx [MFC], SetTaskbarTabProperties", "CMDIChildWndEx [MFC], SetTaskbarThumbnailClipRect", "CMDIChildWndEx [MFC], ShowPane", "CMDIChildWndEx [MFC], UnregisterTaskbarTab", "CMDIChildWndEx [MFC], UpdateTaskbarTabIcon"]
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMDIChildWndEx Class
 
@@ -94,7 +87,7 @@ To take advantage of extended docking features in MDI applications, derive the M
 
 ## Example
 
-The following example derives a class from `CMDIChildWndEx`. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example derives a class from `CMDIChildWndEx`. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]
 
@@ -324,7 +317,7 @@ When the framework is restoring state later, the document name is read from the 
 
 ### Example
 
-The following example demonstrates the use of the `GetDocumentName` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example demonstrates the use of the `GetDocumentName` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]
 
@@ -495,7 +488,7 @@ This function is used to prevent saving of read-only documents.
 
 ### Example
 
-The following example demonstrates overriding the `IsReadOnly` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../visual-cpp-samples.md).
+The following example demonstrates overriding the `IsReadOnly` method. This code snippet comes from the [VisualStudioDemo Sample: MFC Visual Studio Application](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]
 
@@ -1076,7 +1069,7 @@ virtual void ActivateTopLevelFrame();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

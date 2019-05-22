@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonFontComboBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonFontComboBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "CMFCRibbonFontComboBox [MFC], BuildFonts", "CMFCRibbonFontComboBox [MFC], GetCharSet", "CMFCRibbonFontComboBox [MFC], GetFontDesc", "CMFCRibbonFontComboBox [MFC], GetFontType", "CMFCRibbonFontComboBox [MFC], GetPitchAndFamily", "CMFCRibbonFontComboBox [MFC], RebuildFonts", "CMFCRibbonFontComboBox [MFC], SetFont"]
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonFontComboBox Class
 
@@ -228,7 +221,7 @@ Pitch and the family (see LOGFONT in the Windows SDK documentation).
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

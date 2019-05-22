@@ -1,16 +1,9 @@
 ---
-title: "char_traits&lt;char32_t&gt; Struct | Microsoft Docs"
-ms.custom: ""
+title: "char_traits&lt;char32_t&gt; Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iosfwd/std::char_traits<char_32t>", "char_traits<char32_t>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["char_traits<char32_t> class"]
 ms.assetid: c0315466-45d0-4a99-b83e-3b1dbfbfbbc3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # char_traits&lt;char32_t&gt; Struct
 

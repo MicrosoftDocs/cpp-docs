@@ -1,16 +1,9 @@
 ---
-title: "once | Microsoft Docs"
-ms.custom: ""
+title: "once"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.once", "once_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["once pragma", "pragmas, once"]
 ms.assetid: c7517556-6403-4b16-8898-f2aa0a6f685f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # once
 Specifies that the file will be included (opened) only once by the compiler when compiling a source code file.
@@ -51,6 +44,6 @@ We recommend the `#include guard` idiom when code must be portable to compilers 
 
 Be careful not to use `#pragma once` or the `#include guard` idiom in header files that are designed to be included multiple times, using preprocessor symbols to control their effects. For an example of this design, see the \<assert.h> header file. Also be careful to manage include paths to avoid creating multiple paths to included files, which can defeat the multiple-include optimization for both `#include guard`s and `#pragma once`.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4997 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4997"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4997"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4997"]
 ms.assetid: d39678fd-0c1a-4104-8a45-9e3f20de0407
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4997
 

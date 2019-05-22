@@ -1,12 +1,7 @@
 ---
-title: "ATL HTTP Utility Functions | Microsoft Docs"
-ms.custom: ""
+title: "ATL HTTP Utility Functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL HTTP Utility Functions
 
@@ -74,10 +69,6 @@ Returns TRUE on success, FALSE on failure.
 ### Remarks
 
 Behaves like the current version of [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) but does not require WinInet or Internet Explorer to be installed.
-
-### See Also
-
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
 ## <a name="atlcombineurl"></a> AtlCombineUrl
 
@@ -284,7 +275,8 @@ The system time to be obtained as an HTTP format string.
 *strTime*<br/>
 A reference to a string variable to receive the HTTP date time as defined in RFC 2616 ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) and RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).
 
-## See Also
+## See also
 
-[Concepts](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
+[Concepts](../active-template-library-atl-concepts.md)<br/>
+[ATL COM Desktop Components](../atl-com-desktop-components.md)<br/>
+[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)

@@ -1,19 +1,12 @@
 ---
-title: "_fileno | Microsoft Docs"
-ms.custom: ""
+title: "_fileno"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fileno"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_fileno"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["file handles [C++], getting from streams", "fileno function", "_fileno function", "streams, getting file handles"]
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fileno
 

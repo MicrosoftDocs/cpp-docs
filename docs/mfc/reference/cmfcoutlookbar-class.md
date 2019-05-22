@@ -1,16 +1,9 @@
 ---
-title: "CMFCOutlookBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCOutlookBar Class"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane", "CMFCOutlookBar [MFC], CanAcceptPane", "CMFCOutlookBar [MFC], CanSetCaptionTextToTabName", "CMFCOutlookBar [MFC], Create", "CMFCOutlookBar [MFC], CreateCustomPage", "CMFCOutlookBar [MFC], DoesAllowDynInsertBefore", "CMFCOutlookBar [MFC], FloatTab", "CMFCOutlookBar [MFC], GetButtonsFont", "CMFCOutlookBar [MFC], GetTabArea", "CMFCOutlookBar [MFC], IsMode2003", "CMFCOutlookBar [MFC], OnAfterAnimation", "CMFCOutlookBar [MFC], OnBeforeAnimation", "CMFCOutlookBar [MFC], OnScroll", "CMFCOutlookBar [MFC], RemoveCustomPage", "CMFCOutlookBar [MFC], SetButtonsFont", "CMFCOutlookBar [MFC], SetMode2003"]
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBar Class
 
@@ -56,7 +49,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
 
 ## Remarks
 
-For an example of an Outlook bar, see the [OutlookDemo Sample: MFC OutlookDemo Application](../../visual-cpp-samples.md).
+For an example of an Outlook bar, see the [OutlookDemo Sample: MFC OutlookDemo Application](../../overview/visual-cpp-samples.md).
 
 ## Implementing the Outlook Bar
 
@@ -261,7 +254,7 @@ See [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) for t
 
 ### Example
 
-The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `Create` method of the `CMFCOutlookBar` class. This code snippet is part of the [Outlook Multi Views sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbar-class_2.cpp)]
@@ -540,7 +533,7 @@ By default, this mode is disabled.
 > [!NOTE]
 >  This function must be called before [CMFCOutlookBar::Create](#create).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

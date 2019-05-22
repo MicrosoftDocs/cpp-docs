@@ -1,16 +1,9 @@
 ---
-title: "_mm_insert_si64, _mm_inserti_si64 | Microsoft Docs"
-ms.custom: ""
+title: "_mm_insert_si64, _mm_inserti_si64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_inserti_si64", "_mm_insert_si64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["insertq instruction", "_mm_insert_si64 intrinsic", "_mm_inserti_si64 intrinsic"]
 ms.assetid: 897a4b36-8b08-4b00-a18f-7850f5732d7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_insert_si64, _mm_inserti_si64
 
@@ -118,7 +111,7 @@ result3 = 0xfffffffff3210fff
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

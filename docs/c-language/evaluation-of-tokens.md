@@ -1,15 +1,8 @@
 ---
-title: "Evaluation of Tokens | Microsoft Docs"
-ms.custom: ""
+title: "Evaluation of Tokens"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tokens, evaluating"]
 ms.assetid: 28870b62-dff6-4644-8b75-d58f340b48d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Evaluation of Tokens
 
@@ -27,6 +20,6 @@ The C compiler treats a CTRL+Z character as an end-of-file indicator. It ignores
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Tokens](../c-language/c-tokens.md)

@@ -1,16 +1,9 @@
 ---
-title: "CDocObjectServer Class | Microsoft Docs"
-ms.custom: ""
+title: "CDocObjectServer Class"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDocObjectServer", "AFXDOCOB/CDocObjectServer", "AFXDOCOB/CDocObjectServer::CDocObjectServer", "AFXDOCOB/CDocObjectServer::ActivateDocObject", "AFXDOCOB/CDocObjectServer::OnActivateView", "AFXDOCOB/CDocObjectServer::OnApplyViewState", "AFXDOCOB/CDocObjectServer::OnSaveViewState"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDocObjectServer [MFC], CDocObjectServer", "CDocObjectServer [MFC], ActivateDocObject", "CDocObjectServer [MFC], OnActivateView", "CDocObjectServer [MFC], OnApplyViewState", "CDocObjectServer [MFC], OnSaveViewState"]
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDocObjectServer Class
 
@@ -156,7 +149,7 @@ Your state might include properties like the view type, zoom factor, insertion a
 
 You can use `OnSaveViewState` to store persistent information specific to your view's state. If you override `OnSaveViewState` to store information, you will want to override `OnApplyViewState` to read that information and apply it to your view when it is newly activated.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

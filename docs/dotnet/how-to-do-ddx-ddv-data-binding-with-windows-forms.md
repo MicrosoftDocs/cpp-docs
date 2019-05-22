@@ -1,15 +1,9 @@
 ---
-title: "How to: Do DDX-DDV Data Binding with Windows Forms | Microsoft Docs"
+title: "How to: Do DDX-DDV Data Binding with Windows Forms"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], hosting a Windows Forms Control", "Windows Forms [C++], MFC support"]
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Do DDX/DDV Data Binding with Windows Forms
 
@@ -80,7 +74,7 @@ m_MyControl.GetControl()->textBox1->Text = "hello";
 
 You can now build and run the application. Notice that any text in the text box will be displayed in a pop-up message box when the application closes.
 
-## See Also
+## See also
 
 [CWinFormsControl Class](../mfc/reference/cwinformscontrol-class.md)<br/>
 [DDX_ManagedControl](../mfc/reference/standard-dialog-data-exchange-routines.md#ddx_managedcontrol)<br/>

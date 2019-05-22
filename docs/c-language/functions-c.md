@@ -1,15 +1,8 @@
 ---
-title: "Functions (C) | Microsoft Docs"
-ms.custom: ""
+title: "Functions (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C]", "Visual C, functions"]
 ms.assetid: 31839f65-49f4-43e1-85ec-8769924ffa96
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Functions (C)
 
@@ -35,6 +28,6 @@ The function is the fundamental modular unit in C. A function is usually designe
 
 - [Parameters](../c-language/parameters.md)
 
-## See Also
+## See also
 
 [C Language Reference](../c-language/c-language-reference.md)

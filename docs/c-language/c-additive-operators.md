@@ -1,15 +1,8 @@
 ---
-title: "C Additive Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Additive Operators"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["usual arithmetic conversions", "operators [C], addition", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators"]
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Additive Operators
 
@@ -29,6 +22,6 @@ The operands can be integral or floating values. Some additive operations can al
 
 The additive operators perform the usual arithmetic conversions on integral and floating operands. The type of the result is the type of the operands after conversion. Since the conversions performed by the additive operators do not provide for overflow or underflow conditions, information may be lost if the result of an additive operation cannot be represented in the type of the operands after conversion.
 
-## See Also
+## See also
 
 [Additive Operators: + and -](../cpp/additive-operators-plus-and.md)

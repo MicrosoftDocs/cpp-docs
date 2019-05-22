@@ -1,16 +1,9 @@
 ---
-title: "is_final Class | Microsoft Docs"
-ms.custom: ""
+title: "is_final Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_final"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_final"]
 ms.assetid: 9dbad82f-6685-4909-94e8-98e4a93994b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_final Class
 

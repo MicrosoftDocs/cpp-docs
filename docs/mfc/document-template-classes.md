@@ -1,16 +1,9 @@
 ---
-title: "Document-Template Classes | Microsoft Docs"
-ms.custom: ""
+title: "Document-Template Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.document"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["document templates [MFC], classes"]
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document-Template Classes
 
@@ -30,7 +23,6 @@ A template for documents in the single document interface (SDI). SDI application
 [CCreateContext](../mfc/reference/ccreatecontext-structure.md)<br/>
 A structure passed by a document template to window-creation functions to coordinate the creation of document, view, and frame-window objects.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

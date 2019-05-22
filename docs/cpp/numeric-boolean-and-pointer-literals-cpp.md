@@ -1,15 +1,8 @@
 ---
-title: "Numeric, Boolean and Pointer Literals  (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Numeric, Boolean and Pointer Literals  (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["literals, C++", "constants, literals", "literals [C++]"]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Numeric, Boolean and Pointer Literals  (C++)
 

@@ -1,16 +1,9 @@
 ---
-title: "DQ | Microsoft Docs"
-ms.custom: ""
+title: "DQ"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["DQ"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DQ directive"]
 ms.assetid: 15de9c41-db90-4bca-affc-426eeb38ebc0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DQ
 

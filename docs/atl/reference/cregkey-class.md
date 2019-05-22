@@ -1,16 +1,9 @@
 ---
-title: "CRegKey Class | Microsoft Docs"
-ms.custom: ""
+title: "CRegKey Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CRegKey", "ATLBASE/ATL::CRegKey", "ATLBASE/ATL::CRegKey::CRegKey", "ATLBASE/ATL::CRegKey::Attach", "ATLBASE/ATL::CRegKey::Close", "ATLBASE/ATL::CRegKey::Create", "ATLBASE/ATL::CRegKey::DeleteSubKey", "ATLBASE/ATL::CRegKey::DeleteValue", "ATLBASE/ATL::CRegKey::Detach", "ATLBASE/ATL::CRegKey::EnumKey", "ATLBASE/ATL::CRegKey::Flush", "ATLBASE/ATL::CRegKey::GetKeySecurity", "ATLBASE/ATL::CRegKey::NotifyChangeKeyValue", "ATLBASE/ATL::CRegKey::Open", "ATLBASE/ATL::CRegKey::QueryBinaryValue", "ATLBASE/ATL::CRegKey::QueryDWORDValue", "ATLBASE/ATL::CRegKey::QueryGUIDValue", "ATLBASE/ATL::CRegKey::QueryMultiStringValue", "ATLBASE/ATL::CRegKey::QueryQWORDValue", "ATLBASE/ATL::CRegKey::QueryStringValue", "ATLBASE/ATL::CRegKey::QueryValue", "ATLBASE/ATL::CRegKey::RecurseDeleteKey", "ATLBASE/ATL::CRegKey::SetBinaryValue", "ATLBASE/ATL::CRegKey::SetDWORDValue", "ATLBASE/ATL::CRegKey::SetGUIDValue", "ATLBASE/ATL::CRegKey::SetKeySecurity", "ATLBASE/ATL::CRegKey::SetKeyValue", "ATLBASE/ATL::CRegKey::SetMultiStringValue", "ATLBASE/ATL::CRegKey::SetQWORDValue", "ATLBASE/ATL::CRegKey::SetStringValue", "ATLBASE/ATL::CRegKey::SetValue", "ATLBASE/ATL::CRegKey::m_hKey", "ATLBASE/ATL::CRegKey::m_pTM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRegKey class", "ATL, registry", "registry, deleting values", "registry, writing to", "registry, deleting keys"]
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRegKey Class
 
@@ -855,7 +848,7 @@ Specifies the components of the security descriptor to set. The value can be a c
 |DACL_SECURITY_INFORMATION|Sets the key's discretionary access-control list (DACL). The key must have WRITE_DAC access, or the calling process must be the object's owner.|
 |GROUP_SECURITY_INFORMATION|Sets the key's primary group security identifier (SID). The key must have WRITE_OWNER access, or the calling process must be the object's owner.|
 |OWNER_SECURITY_INFORMATION|Sets the key's owner SID. The key must have WRITE_OWNER access, or the calling process must be the object's owner or have the SE_TAKE_OWNERSHIP_NAME privilege enabled.|
-|SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](https://msdn.microsoft.com/library/windows/desktop/aa379306) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|
+|SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](/windows/desktop/secauthz/privileges) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|
 
 *psd*<br/>
 Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure that specifies the security attributes to set for the specified key.
@@ -1019,7 +1012,7 @@ The two original versions of `SetValue` are marked as ATL_DEPRECATED and should 
 
 The third method calls [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).
 
-## See Also
+## See also
 
-[DCOM Sample](../../visual-cpp-samples.md)<br/>
+[DCOM Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

@@ -1,16 +1,9 @@
 ---
-title: "CGdiObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CGdiObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGdiObject", "AFXWIN/CGdiObject", "AFXWIN/CGdiObject::CGdiObject", "AFXWIN/CGdiObject::Attach", "AFXWIN/CGdiObject::CreateStockObject", "AFXWIN/CGdiObject::DeleteObject", "AFXWIN/CGdiObject::DeleteTempMap", "AFXWIN/CGdiObject::Detach", "AFXWIN/CGdiObject::FromHandle", "AFXWIN/CGdiObject::GetObject", "AFXWIN/CGdiObject::GetObjectType", "AFXWIN/CGdiObject::GetSafeHandle", "AFXWIN/CGdiObject::UnrealizeObject", "AFXWIN/CGdiObject::m_hObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGdiObject [MFC], CGdiObject", "CGdiObject [MFC], Attach", "CGdiObject [MFC], CreateStockObject", "CGdiObject [MFC], DeleteObject", "CGdiObject [MFC], DeleteTempMap", "CGdiObject [MFC], Detach", "CGdiObject [MFC], FromHandle", "CGdiObject [MFC], GetObject", "CGdiObject [MFC], GetObjectType", "CGdiObject [MFC], GetSafeHandle", "CGdiObject [MFC], UnrealizeObject", "CGdiObject [MFC], m_hObject"]
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGdiObject Class
 
@@ -222,10 +215,10 @@ The function retrieves a data structure whose type depends on the type of graphi
 
 |Object|Buffer type|
 |------------|-----------------|
-|`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|
-|`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|
+|`CPen`|[LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
+|`CBrush`|[LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
 |`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|
-|`CBitmap`|[BITMAP](../../mfc/reference/bitmap-structure.md)|
+|`CBitmap`|[BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
 |`CPalette`|WORD|
 |`CRgn`|Not supported|
 
@@ -361,7 +354,7 @@ For `CBrush` objects, `UnrealizeObject` directs the system to reset the origin o
 
 The `UnrealizeObject` function should not be used with stock objects. The `UnrealizeObject` function must be called whenever a new brush origin is set (by means of the [CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) function). The `UnrealizeObject` function must not be called for the currently selected brush or currently selected palette of any display context.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CBitmap Class](../../mfc/reference/cbitmap-class.md)<br/>

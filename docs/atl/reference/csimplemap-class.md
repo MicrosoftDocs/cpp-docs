@@ -1,16 +1,9 @@
 ---
-title: "CSimpleMap Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleMap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayElementType", "ATLSIMPCOLL/ATL::CSimpleMap::_ArrayKeyType", "ATLSIMPCOLL/ATL::CSimpleMap::CSimpleMap", "ATLSIMPCOLL/ATL::CSimpleMap::Add", "ATLSIMPCOLL/ATL::CSimpleMap::FindKey", "ATLSIMPCOLL/ATL::CSimpleMap::FindVal", "ATLSIMPCOLL/ATL::CSimpleMap::GetKeyAt", "ATLSIMPCOLL/ATL::CSimpleMap::GetSize", "ATLSIMPCOLL/ATL::CSimpleMap::GetValueAt", "ATLSIMPCOLL/ATL::CSimpleMap::Lookup", "ATLSIMPCOLL/ATL::CSimpleMap::Remove", "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleMap::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleMap::ReverseLookup", "ATLSIMPCOLL/ATL::CSimpleMap::SetAt", "ATLSIMPCOLL/ATL::CSimpleMap::SetAtIndex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleMap class"]
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleMap Class
 
@@ -368,6 +361,6 @@ Returns TRUE if successful, FALSE if the index was not valid.
 
 Updates both the key and value pointed to by *nIndex*.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

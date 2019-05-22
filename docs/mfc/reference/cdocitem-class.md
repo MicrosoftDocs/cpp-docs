@@ -1,16 +1,9 @@
 ---
-title: "CDocItem Class | Microsoft Docs"
-ms.custom: ""
+title: "CDocItem Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDocItem", "AFXOLE/CDocItem", "AFXOLE/CDocItem::GetDocument", "AFXOLE/CDocItem::IsBlank"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDocItem [MFC], GetDocument", "CDocItem [MFC], IsBlank"]
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDocItem Class
 
@@ -83,7 +76,7 @@ By default, `CDocItem` objects are not blank. [COleClientItem](../../mfc/referen
 
 Override this function if you want to implement other actions during serialization.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

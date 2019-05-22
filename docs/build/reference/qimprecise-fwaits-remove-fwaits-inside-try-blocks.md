@@ -1,20 +1,13 @@
 ---
-title: "-Qimprecise_fwaits (Remove fwaits Inside Try Blocks) | Microsoft Docs"
-ms.custom: ""
+title: "/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Qimprecise_fwaits"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Qimprecise_fwaits compiler option (C++)", "/Qimprecise_fwaits compiler option (C++)"]
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qimprecise_fwaits (Remove fwaits Inside Try Blocks)
 
-Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](../../build/reference/fp-specify-floating-point-behavior.md) compiler option.
+Removes the `fwait` commands internal to `try` blocks when you use the [/fp:except](fp-specify-floating-point-behavior.md) compiler option.
 
 ## Syntax
 
@@ -28,7 +21,7 @@ This option has no effect if **/fp:except** is not also specified. If you specif
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -40,8 +33,8 @@ This option has no effect if **/fp:except** is not also specified. If you specif
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

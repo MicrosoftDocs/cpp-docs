@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sockets [MFC], Windows sockets", "networks [MFC], Windows Sockets", "programming [MFC], network", "sockets [MFC]", "Windows Sockets [MFC]"]
 ms.assetid: c077ec53-540d-4bfb-a1e0-bd6482ab9e19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets
 
@@ -18,4 +11,3 @@ This family of articles covers the MFC implementation of Windows Sockets. MFC su
 ## In This Section
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
-

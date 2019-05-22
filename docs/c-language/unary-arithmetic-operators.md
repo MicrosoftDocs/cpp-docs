@@ -1,15 +1,8 @@
 ---
-title: "Unary Arithmetic Operators | Microsoft Docs"
-ms.custom: ""
+title: "Unary Arithmetic Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C], unary", "tilde (~) one's complement operator", "bitwise-complement operator", "arithmetic operators [C++], unary", "+ operator, unary operators", "unary operators", "exclamation points", "~ operator, one's complement operator", "logical negation", "! operator, unary arithmetic operators"]
 ms.assetid: 78c91415-d469-499e-9dfe-4435350fd333
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unary Arithmetic Operators
 
@@ -48,6 +41,6 @@ if( !(x < y) )
 
 If `x` is greater than or equal to `y`, the result of the expression is 1 (true). If `x` is less than `y`, the result is 0 (false).
 
-## See Also
+## See also
 
 [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)

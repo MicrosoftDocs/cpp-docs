@@ -1,15 +1,8 @@
 ---
-title: "Image Information in Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Image Information in Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], image information in", "image lists [MFC], image information in"]
 ms.assetid: 73c41543-fa91-405d-b15b-0feffa6a72c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Image Information in Image Lists
 
@@ -19,8 +12,7 @@ The [GetImageCount](../mfc/reference/cimagelist-class.md#getimagecount) member f
 
 You can create an icon based on an image and mask in an image list by using the [ExtractIcon](../mfc/reference/cimagelist-class.md#extracticon) member function. The function returns the handle of the new icon.
 
-## See Also
+## See also
 
 [Using CImageList](../mfc/using-cimagelist.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

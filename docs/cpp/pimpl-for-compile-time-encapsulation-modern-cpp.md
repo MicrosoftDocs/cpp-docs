@@ -1,14 +1,8 @@
 ---
-title: "Pimpl For Compile-Time Encapsulation (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Pimpl For Compile-Time Encapsulation (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pimpl For Compile-Time Encapsulation (Modern C++)
 
@@ -59,6 +53,6 @@ Consider whether to add support for non-throwing swap specialization.
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

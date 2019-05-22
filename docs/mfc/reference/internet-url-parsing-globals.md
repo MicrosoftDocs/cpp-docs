@@ -1,16 +1,8 @@
 ---
-title: "Internet URL Parsing Globals and Helpers | Microsoft Docs"
-ms.custom: ""
+title: "Internet URL Parsing Globals and Helpers"
 ms.date: "04/03/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.macros.isapi"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet URL Parsing Globals and Helpers
 
@@ -212,10 +204,6 @@ It parses a URL string and returns the type of service and its components, as we
 
   **Header** afxinet.h
 
-## See Also
-
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
 
 Use this global function to determine the type of an Internet handle.
@@ -272,11 +260,6 @@ The following list includes possible Internet types returned by `AfxGetInternetH
 
 **Header:** afxinet.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
-
 ## <a name="afxthrowinternetexception"></a>  AfxThrowInternetException
 
 Throws an Internet exception.
@@ -306,9 +289,8 @@ You are responsible for determining the cause based on the operating-system erro
 
 **Header:** afxinet.h
 
-### See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [CInternetException Class](cinternetexception-class.md)<br/>
-[THROW](#throw)
-
+[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)

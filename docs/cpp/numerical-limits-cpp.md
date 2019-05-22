@@ -1,15 +1,8 @@
 ---
-title: "Numerical Limits (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Numerical Limits (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["numerical limits"]
 ms.assetid: 5ebc9837-e273-4ea6-ac7d-14b3c2c974c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Numerical Limits (C++)
 

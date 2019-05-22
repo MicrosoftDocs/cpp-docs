@@ -1,16 +1,9 @@
 ---
-title: "CSimpleArrayEqualHelperFalse Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleArrayEqualHelperFalse Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleArrayEqualHelperFalse class"]
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleArrayEqualHelperFalse Class
 
@@ -60,7 +53,7 @@ Returns false.
 
 This method always returns false, and will call `ATLASSERT` with an argument of false if referenced. The purpose of `CSimpleArrayEqualHelperFalse::IsEqual` is to force methods using comparisons to fail in a well-defined manner when equality tests have not been adequately defined.
 
-## See Also
+## See also
 
 [CSimpleArrayEqualHelper Class](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

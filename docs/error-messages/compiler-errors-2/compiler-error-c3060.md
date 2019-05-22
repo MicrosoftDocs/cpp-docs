@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3060 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3060"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3060"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3060"]
 ms.assetid: 6282bb92-0546-4b59-9435-d3840bf93bdb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3060
 

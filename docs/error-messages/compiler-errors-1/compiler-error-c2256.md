@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2256 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2256"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2256"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2256"]
 ms.assetid: 171fa2bc-8c72-49cd-afe5-d723b7acd3c5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2256
 

@@ -1,16 +1,9 @@
 ---
-title: "_ITERATOR_DEBUG_LEVEL | Microsoft Docs"
-ms.custom: ""
+title: "_ITERATOR_DEBUG_LEVEL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_ITERATOR_DEBUG_LEVEL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ITERATOR_DEBUG_LEVEL"]
 ms.assetid: 718549cd-a9a9-4ab3-867b-aac00b321e67
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ITERATOR_DEBUG_LEVEL
 

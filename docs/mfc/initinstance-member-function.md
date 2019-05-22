@@ -1,16 +1,9 @@
 ---
-title: "InitInstance Member Function | Microsoft Docs"
-ms.custom: ""
+title: "InitInstance Member Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["InitInstance"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["InitInstance method [MFC]", "applications [MFC], initializing", "MFC, initializing", "initializing MFC applications"]
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # InitInstance Member Function
 
@@ -33,6 +26,6 @@ You can add your own initialization code or modify the code written by the wizar
 > [!NOTE]
 >  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
 
-## See Also
+## See also
 
 [CWinApp: The Application Class](../mfc/cwinapp-the-application-class.md)

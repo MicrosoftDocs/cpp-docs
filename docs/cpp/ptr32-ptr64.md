@@ -1,16 +1,9 @@
 ---
-title: "__ptr32, __ptr64 | Microsoft Docs"
-ms.custom: ""
+title: "__ptr32, __ptr64"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__ptr32_cpp", "__ptr64_cpp", "__ptr32", "__ptr64", "_ptr32", "_ptr64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__ptr64 keyword [C++]", "_ptr32 keyword [C++]", "ptr32 keyword [C++]", "ptr64 keyword [C++]", "_ptr64 keyword [C++]", "__ptr32 keyword [C++]"]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __ptr32, __ptr64
 

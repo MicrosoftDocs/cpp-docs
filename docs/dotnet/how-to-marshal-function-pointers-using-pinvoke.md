@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Function Pointers Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Function Pointers Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data marshaling [C++], callbacks and delegates", "interop [C++], callbacks and delegates", "platform invoke [C++], callbacks and delegates", "marshaling [C++], callbacks and delegates"]
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Function Pointers Using PInvoke
 
@@ -83,6 +77,6 @@ int main() {
 
 Note that no portion of the DLL is exposed to the managed code using the traditional #include directive. In fact, the DLL is accessed at run time only, so problems with functions imported with <xref:System.Runtime.InteropServices.DllImportAttribute> will not be detected at compile time.
 
-## See Also
+## See also
 
 [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

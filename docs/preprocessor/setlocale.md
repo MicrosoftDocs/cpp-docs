@@ -1,16 +1,9 @@
 ---
-title: "setlocale | Microsoft Docs"
-ms.custom: ""
+title: "setlocale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["setlocale_CPP", "vc-pragma.setlocale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, setlocale", "setlocale pragma"]
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setlocale
 
@@ -36,6 +29,6 @@ The "C" locale maps each character in the string to its value as a **wchar_t** (
 
 The ability to issue a language string depends on the code page and language ID support on your computer.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

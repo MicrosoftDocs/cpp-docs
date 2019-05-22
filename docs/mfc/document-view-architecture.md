@@ -1,15 +1,8 @@
 ---
-title: "Document-View Architecture | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Document-View Architecture"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["CView class [MFC], view architecture", "CDocument class [MFC]", "MFC, views", "views [MFC], MFC document/view model", "document objects [MFC]", "document objects [MFC], MFC document/view model", "MFC, documents", "documents [MFC], MFC document/view model", "document objects [MFC], document/view architecture"]
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document/View Architecture
 
@@ -39,7 +32,7 @@ The [CView](../mfc/reference/cview-class.md) (or one of its many derived classes
 
 The following figure shows the relationship between a document and its view.
 
-![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "vc379n1")
+![View is the part of the document that's displayed](../mfc/media/vc379n1.gif "View is the part of the document that's displayed") <br/>
 Document and View
 
 The document/view implementation in the class library separates the data itself from its display and from user operations on the data. All changes to the data are managed through the document class. The view calls this interface to access and update the data.
@@ -72,9 +65,9 @@ Documents, their associated views, and the frame windows that frame the views ar
 
 - [Using database classes without documents and views](../data/mfc-using-database-classes-without-documents-and-views.md)
 
-- [Samples](../visual-cpp-samples.md)
+- [Samples](../overview/visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)<br/>
 [Windows](../mfc/windows.md)<br/>
@@ -82,4 +75,3 @@ Documents, their associated views, and the frame windows that frame the views ar
 [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Document/View Creation](../mfc/document-view-creation.md)<br/>
 [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-

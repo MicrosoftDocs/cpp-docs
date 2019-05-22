@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonCustomizeDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonCustomizeDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog"]
 ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizeDialog Class
 
@@ -91,7 +84,7 @@ The following example demonstrates how to construct a `CMFCRibbonCustomizeDialog
 
 The constructor instantiates a [CMFCRibbonCustomizePropertyPage Class](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) object and adds it to the collection of property sheet pages.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

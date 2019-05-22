@@ -1,15 +1,8 @@
 ---
-title: "Work with ODBC and Drivers | Microsoft Docs"
-ms.custom: ""
+title: "Work with ODBC and Drivers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC drivers, using"]
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Work with ODBC and Drivers
 
@@ -27,6 +20,6 @@ ODBC allows you to write applications that are not dependent on just one databas
 
 - [Call ODBC API functions directly in MFC](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

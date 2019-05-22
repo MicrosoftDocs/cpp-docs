@@ -1,16 +1,9 @@
 ---
-title: "is_compound Class | Microsoft Docs"
-ms.custom: ""
+title: "is_compound Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_compound"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_compound class", "is_compound"]
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_compound Class
 
@@ -62,7 +55,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

@@ -1,16 +1,9 @@
 ---
-title: "CThreadPool Class | Microsoft Docs"
-ms.custom: ""
+title: "CThreadPool Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CThreadPool", "ATLUTIL/ATL::CThreadPool", "ATLUTIL/ATL::CThreadPool::CThreadPool", "ATLUTIL/ATL::CThreadPool::AddRef", "ATLUTIL/ATL::CThreadPool::GetNumThreads", "ATLUTIL/ATL::CThreadPool::GetQueueHandle", "ATLUTIL/ATL::CThreadPool::GetSize", "ATLUTIL/ATL::CThreadPool::GetTimeout", "ATLUTIL/ATL::CThreadPool::Initialize", "ATLUTIL/ATL::CThreadPool::QueryInterface", "ATLUTIL/ATL::CThreadPool::QueueRequest", "ATLUTIL/ATL::CThreadPool::Release", "ATLUTIL/ATL::CThreadPool::SetSize", "ATLUTIL/ATL::CThreadPool::SetTimeout", "ATLUTIL/ATL::CThreadPool::Shutdown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CThreadPool class"]
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CThreadPool Class
 
@@ -331,7 +324,7 @@ The requested maximum time in milliseconds that the thread pool will wait for a 
 
 This method posts a shutdown request to all threads in the pool. If the timeout expires, this method will call [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) on any thread that did not exit. This method is called automatically from the destructor of the class.
 
-## See Also
+## See also
 
 [IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>

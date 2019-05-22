@@ -1,16 +1,9 @@
 ---
-title: "CGlobalUtils Class | Microsoft Docs"
-ms.custom: ""
+title: "CGlobalUtils Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea", "AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect", "AFXGLOBALUTILS/CGlobalUtils::CanBeAttached", "AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd", "AFXGLOBALUTILS/CGlobalUtils::CheckAlignment", "AFXGLOBALUTILS/CGlobalUtils::CyFromString", "AFXGLOBALUTILS/CGlobalUtils::DecimalFromString", "AFXGLOBALUTILS/CGlobalUtils::FlipRect", "AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout", "AFXGLOBALUTILS/CGlobalUtils::GetDockingManager", "AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment", "AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint", "AFXGLOBALUTILS/CGlobalUtils::GetWndIcon", "AFXGLOBALUTILS/CGlobalUtils::SetNewParent", "AFXGLOBALUTILS/CGlobalUtils::StringFromCy", "AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGlobalUtils [MFC], AdjustRectToWorkArea", "CGlobalUtils [MFC], CalcExpectedDockedRect", "CGlobalUtils [MFC], CanBeAttached", "CGlobalUtils [MFC], CanPaneBeInFloatingMultiPaneFrameWnd", "CGlobalUtils [MFC], CheckAlignment", "CGlobalUtils [MFC], CyFromString", "CGlobalUtils [MFC], DecimalFromString", "CGlobalUtils [MFC], FlipRect", "CGlobalUtils [MFC], ForceAdjustLayout", "CGlobalUtils [MFC], GetDockingManager", "CGlobalUtils [MFC], GetOppositeAlignment", "CGlobalUtils [MFC], GetPaneAndAlignFromPoint", "CGlobalUtils [MFC], GetWndIcon", "CGlobalUtils [MFC], SetNewParent", "CGlobalUtils [MFC], StringFromCy", "CGlobalUtils [MFC], StringFromDecimal"]
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGlobalUtils Class
 
@@ -359,7 +352,7 @@ BOOL StringFromDecimal(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

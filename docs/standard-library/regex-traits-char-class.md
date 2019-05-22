@@ -1,16 +1,9 @@
 ---
-title: "regex_traits&lt;char&gt; Class | Microsoft Docs"
-ms.custom: ""
+title: "regex_traits&lt;char&gt; Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["regex/std::regex_traits<char>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["regex_traits<char> class"]
 ms.assetid: ce95ebcd-3687-4ad5-bf1d-b89fdc633675
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # regex_traits&lt;char&gt; Class
 

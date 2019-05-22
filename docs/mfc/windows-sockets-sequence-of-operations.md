@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Sequence of Operations | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Sequence of Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], operations", "Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "sockets [MFC], operations", "stream sockets [MFC]"]
 ms.assetid: 43ce76f5-aad3-4247-b8a6-16cc7d012796
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Sequence of Operations
 
@@ -62,10 +55,9 @@ For more information, see:
 
 - [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md)
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [CSocket Class](../mfc/reference/csocket-class.md)<br/>
 [CAsyncSocket::Create](../mfc/reference/casyncsocket-class.md#create)<br/>
 [CAsyncSocket::Close](../mfc/reference/casyncsocket-class.md#close)
-

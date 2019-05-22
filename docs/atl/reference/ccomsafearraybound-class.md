@@ -1,20 +1,13 @@
 ---
-title: "CComSafeArrayBound Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
+title: "CComSafeArrayBound Class"
+ms.date: "05/06/2019"
 f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeArrayBound class"]
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComSafeArrayBound Class
 
-This class is a wrapper for a [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
+This class is a wrapper for a [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
 
 ## Syntax
 
@@ -69,7 +62,7 @@ The lower bound from which the array is numbered.
 
 ### Remarks
 
-If the array is to be accessed from a Visual C++ program, it is recommended that the lower bound be defined as 0. It may be preferable to use a different lower bound value if the array is to be used with other languages, such as Visual Basic.
+If the array is to be accessed from a C++ program, it is recommended that the lower bound be defined as 0. It may be preferable to use a different lower bound value if the array is to be used with other languages, such as Visual Basic.
 
 ##  <a name="getcount"></a>  CComSafeArrayBound::GetCount
 
@@ -180,6 +173,6 @@ If the array is to be accessed from a Visual C++ program, it is recommended that
 
 The upper bound depends on the number of elements and the lower bound value. For example, if the lower bound is 0 and the number of elements is 10, the upper bound will automatically be set to 9.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

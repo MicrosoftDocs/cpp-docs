@@ -1,16 +1,9 @@
 ---
-title: "PROC | Microsoft Docs"
-ms.custom: ""
+title: "PROC"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["PROC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PROC directive"]
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # PROC
 

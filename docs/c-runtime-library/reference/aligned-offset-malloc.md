@@ -1,19 +1,12 @@
 ---
-title: "_aligned_offset_malloc | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_offset_malloc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_offset_malloc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_aligned_offset_malloc", "aligned_offset_malloc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_aligned_offset_malloc function", "aligned_offset_malloc function"]
 ms.assetid: 447681a3-7c95-4655-86ba-fa3a4ca4c521
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_malloc
 

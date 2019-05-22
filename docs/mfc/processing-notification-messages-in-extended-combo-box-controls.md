@@ -1,15 +1,8 @@
 ---
-title: "Processing Notification Messages in Extended Combo Box Controls | Microsoft Docs"
-ms.custom: ""
+title: "Processing Notification Messages in Extended Combo Box Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extended combo boxes [MFC], notifications", "notifications [MFC], extended combo box controls"]
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in Extended Combo Box Controls
 
@@ -31,8 +24,7 @@ The following list describes the various notifications sent by the extended comb
 
 - CBEN_INSERTITEM Sent when a new item has been inserted in the control.
 
-## See Also
+## See also
 
 [Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

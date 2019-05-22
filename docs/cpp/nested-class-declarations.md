@@ -1,15 +1,8 @@
 ---
-title: "Nested Class Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Nested Class Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], declaring", "declarations, class", "nested classes [C++]", "nested classes [C++], declaring", "declaring classes [C++]", "declarations, nested classes"]
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Nested Class Declarations
 

@@ -1,16 +1,9 @@
 ---
-title: "CPen Class | Microsoft Docs"
-ms.custom: ""
+title: "CPen Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPen", "AFXWIN/CPen", "AFXWIN/CPen::CPen", "AFXWIN/CPen::CreatePen", "AFXWIN/CPen::CreatePenIndirect", "AFXWIN/CPen::FromHandle", "AFXWIN/CPen::GetExtLogPen", "AFXWIN/CPen::GetLogPen"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPen [MFC], CPen", "CPen [MFC], CreatePen", "CPen [MFC], CreatePenIndirect", "CPen [MFC], FromHandle", "CPen [MFC], GetExtLogPen", "CPen [MFC], GetLogPen"]
 ms.assetid: 93175a3a-d46c-4768-be8d-863254f97a5f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPen Class
 
@@ -237,7 +230,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### Parameters
 
 *lpLogPen*<br/>
-Points to the Windows [LOGPEN](../../mfc/reference/logpen-structure.md) structure that contains information about the pen.
+Points to the Windows [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) structure that contains information about the pen.
 
 ### Return Value
 
@@ -372,7 +365,7 @@ For more information about using graphic objects, see the article [Graphic Objec
 
 [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]
 
-## See Also
+## See also
 
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

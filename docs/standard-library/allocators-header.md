@@ -1,16 +1,9 @@
 ---
-title: "&lt;allocators&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;allocators&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<allocators>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["allocators header"]
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;allocators&gt;
 

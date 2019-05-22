@@ -1,16 +1,9 @@
 ---
-title: "unsupported_os Class | Microsoft Docs"
-ms.custom: ""
+title: "unsupported_os Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["unsupported_os", "CONCRT/concurrency::unsupported_os", "CONCRT/concurrency::unsupported_os::unsupported_os"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unsupported_os class"]
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # unsupported_os Class
 
@@ -57,6 +50,6 @@ unsupported_os() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

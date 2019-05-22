@@ -1,15 +1,8 @@
 ---
-title: "Command Routing Illustration | Microsoft Docs"
-ms.custom: ""
+title: "Command Routing Illustration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "command routing [MFC], OnCmdMsg handler"]
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Routing Illustration
 
@@ -27,7 +20,6 @@ To illustrate, consider a command message from a Clear All menu item in an MDI a
 
 If the document did not have a handler, it would next route the command to its document template. Then the command would return to the view and then the frame window. Finally, the frame window would check its message map. If that check failed as well, the command would be routed back to the main MDI frame window and then to the application object — the ultimate destination of unhandled commands.
 
-## See Also
+## See also
 
 [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-

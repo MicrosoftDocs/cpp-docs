@@ -1,16 +1,10 @@
 ---
-title: "Platform::WriteOnlyArray Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::WriteOnlyArray Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::WriteOnlyArray::Data", "VCCORLIB/Platform::WriteOnlyArray::end", "VCCORLIB/Platform::WriteOnlyArray::FastPass", "VCCORLIB/Platform::WriteOnlyArray::Length", "VCCORLIB/Platform::WriteOnlyArray::set"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WriteOnlyArray Class"]
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::WriteOnlyArray Class
 
@@ -32,7 +26,6 @@ These methods have internal accessibility—that is, they are only accessible wi
 
 |Name|Description|
 |----------|-----------------|
-
 |[WriteOnlyArray::begin](#begin)|An iterator that points to the first element of the array.|
 |[WriteOnlyArray::Data](#data)|A pointer to the data buffer.|
 |[WriteOnlyArray::end](#end)|An iterator that points to one past the last element in the array.|
@@ -181,7 +174,7 @@ A reference to the element that was just set.
 
 For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

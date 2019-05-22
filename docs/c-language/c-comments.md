@@ -1,15 +1,8 @@
 ---
-title: "C Comments | Microsoft Docs"
-ms.custom: ""
+title: "C Comments"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["code comments, C code", "comments, documenting code", "comments, C code", "/* */ comment delimiters", "comments"]
 ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Comments
 
@@ -76,6 +69,6 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use /Z
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Tokens](../c-language/c-tokens.md)

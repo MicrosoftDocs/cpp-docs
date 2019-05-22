@@ -1,19 +1,12 @@
 ---
-title: "putchar, putwchar | Microsoft Docs"
-ms.custom: ""
+title: "putchar, putwchar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["putchar", "putwchar"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["putchar", "putwchar", "_puttchar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["putchar function", "_puttchar function", "characters, writing", "standard output, writing to", "putwchar function"]
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # putchar, putwchar
 
@@ -37,7 +30,7 @@ Character to be written.
 
 ## Return Value
 
-Returns the character written. To indicate an error or end-of-file condition, **putc** and **putchar** return **EOF`; **putwc` and **putwchar** return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
+Returns the character written. To indicate an error or end-of-file condition, **putc** and **putchar** return **EOF**; **putwc** and **putwchar** return **WEOF**. For all four routines, use [ferror](ferror.md) or [feof](feof.md) to check for an error or end of file. If passed a null pointer for *stream*, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, they return **EOF** or **WEOF** and set **errno** to **EINVAL**.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these, and other, error codes.
 

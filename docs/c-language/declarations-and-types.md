@@ -1,15 +1,8 @@
 ---
-title: "Declarations and Types | Microsoft Docs"
-ms.custom: ""
+title: "Declarations and Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data types [C]", "types [C]", "declarations [C++], C", "declarations [C++], types"]
 ms.assetid: 432a2286-cf42-42ce-8baf-c908ffb57ca8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Declarations and Types
 
@@ -37,6 +30,6 @@ This section describes the declaration and initialization of variables, function
 
 - [Extended storage-class attributes](../c-language/c-extended-storage-class-attributes.md)
 
-## See Also
+## See also
 
 [C Language Reference](../c-language/c-language-reference.md)

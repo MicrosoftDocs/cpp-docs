@@ -1,15 +1,8 @@
 ---
-title: "Processing Notification Messages in a Rebar Control | Microsoft Docs"
-ms.custom: ""
+title: "Processing Notification Messages in a Rebar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in a Rebar Control
 
@@ -35,10 +28,9 @@ The following notification messages can be sent by the rebar control object:
 
 - RBN_LAYOUTCHANGED Sent by a rebar control when the user changes the layout of the control's bands.
 
-For more information on these notifications, see [Rebar Control Reference](https://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.
+For more information on these notifications, see [Rebar Control Reference](/windows/desktop/controls/rebar-control-reference) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

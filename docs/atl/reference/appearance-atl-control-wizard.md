@@ -1,20 +1,11 @@
 ---
-title: "Appearance, ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Appearance, ATL Control Wizard"
 ms.date: "08/31/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.misc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Control Wizard, appearance"]
 ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Appearance, ATL Control Wizard
-
-Insert "Search Results" summary here.
 
 Use this page of the wizard to identify additional user element options for the control. This page is available for controls identified as **Standard controls** under **Control type** on the [Options, ATL Control Wizard](../../atl/reference/options-atl-control-wizard.md) page.
 
@@ -90,8 +81,7 @@ Use this page of the wizard to identify additional user element options for the 
 
    - **Insertable**: Select this option to have your control appear in the **Insert Object** dialog box of applications such as Word and Excel. Your control can then be inserted by any application that supports embedded objects through this dialog box.
 
-## See Also
+## See also
 
 [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)<br/>
 [SUBEDIT Sample: Superclasses a Standard Windows Control](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)
-

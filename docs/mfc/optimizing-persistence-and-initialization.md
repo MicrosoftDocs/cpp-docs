@@ -1,15 +1,8 @@
 ---
-title: "Optimizing Persistence and Initialization | Microsoft Docs"
-ms.custom: ""
+title: "Optimizing Persistence and Initialization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "optimizing performance, ActiveX controls"]
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Optimizing Persistence and Initialization
 
@@ -41,7 +34,6 @@ For the same control, you can optimize the control's initialization by overridin
 
 Although `Serialize` and `OnResetState` have been overridden, the `DoPropExchange` function should be kept intact because it is still used for persistence in the property-bag format. It is important to maintain all three of these functions to ensure that the control manages its properties consistently, regardless of which persistence mechanism the container uses.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-

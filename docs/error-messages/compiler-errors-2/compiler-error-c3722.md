@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3722 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3722"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3722"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3722"]
 ms.assetid: 3cb28363-5eff-4548-bd0d-d5c615846353
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3722
 
 a generic event is not allowed
 
-The compiler only allows generic classes, structs, and functions.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+The compiler only allows generic classes, structs, and functions.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 The following sample generates C3722:
 

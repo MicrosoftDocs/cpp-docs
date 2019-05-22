@@ -1,16 +1,9 @@
 ---
-title: "CRgn Class | Microsoft Docs"
-ms.custom: ""
+title: "CRgn Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRgn", "AFXWIN/CRgn", "AFXWIN/CRgn::CRgn", "AFXWIN/CRgn::CombineRgn", "AFXWIN/CRgn::CopyRgn", "AFXWIN/CRgn::CreateEllipticRgn", "AFXWIN/CRgn::CreateEllipticRgnIndirect", "AFXWIN/CRgn::CreateFromData", "AFXWIN/CRgn::CreateFromPath", "AFXWIN/CRgn::CreatePolygonRgn", "AFXWIN/CRgn::CreatePolyPolygonRgn", "AFXWIN/CRgn::CreateRectRgn", "AFXWIN/CRgn::CreateRectRgnIndirect", "AFXWIN/CRgn::CreateRoundRectRgn", "AFXWIN/CRgn::EqualRgn", "AFXWIN/CRgn::FromHandle", "AFXWIN/CRgn::GetRegionData", "AFXWIN/CRgn::GetRgnBox", "AFXWIN/CRgn::OffsetRgn", "AFXWIN/CRgn::PtInRegion", "AFXWIN/CRgn::RectInRegion", "AFXWIN/CRgn::SetRectRgn"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRgn [MFC], CRgn", "CRgn [MFC], CombineRgn", "CRgn [MFC], CopyRgn", "CRgn [MFC], CreateEllipticRgn", "CRgn [MFC], CreateEllipticRgnIndirect", "CRgn [MFC], CreateFromData", "CRgn [MFC], CreateFromPath", "CRgn [MFC], CreatePolygonRgn", "CRgn [MFC], CreatePolyPolygonRgn", "CRgn [MFC], CreateRectRgn", "CRgn [MFC], CreateRectRgnIndirect", "CRgn [MFC], CreateRoundRectRgn", "CRgn [MFC], EqualRgn", "CRgn [MFC], FromHandle", "CRgn [MFC], GetRegionData", "CRgn [MFC], GetRgnBox", "CRgn [MFC], OffsetRgn", "CRgn [MFC], PtInRegion", "CRgn [MFC], RectInRegion", "CRgn [MFC], SetRectRgn"]
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRgn Class
 
@@ -37,13 +30,13 @@ class CRgn : public CGdiObject
 |[CRgn::CombineRgn](#combinergn)|Sets a `CRgn` object so that it is equivalent to the union of two specified `CRgn` objects.|
 |[CRgn::CopyRgn](#copyrgn)|Sets a `CRgn` object so that it is a copy of a specified `CRgn` object.|
 |[CRgn::CreateEllipticRgn](#createellipticrgn)|Initializes a `CRgn` object with an elliptical region.|
-|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Initializes a `CRgn` object with an elliptical region defined by a [RECT](../../mfc/reference/rect-structure1.md) structure.|
+|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Initializes a `CRgn` object with an elliptical region defined by a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.|
 |[CRgn::CreateFromData](#createfromdata)|Creates a region from the given region and transformation data.|
 |[CRgn::CreateFromPath](#createfrompath)|Creates a region from the path that is selected into the given device context.|
 |[CRgn::CreatePolygonRgn](#createpolygonrgn)|Initializes a `CRgn` object with a polygonal region. The system closes the polygon automatically, if necessary, by drawing a line from the last vertex to the first.|
 |[CRgn::CreatePolyPolygonRgn](#createpolypolygonrgn)|Initializes a `CRgn` object with a region consisting of a series of closed polygons. The polygons may be disjoint, or they may overlap.|
 |[CRgn::CreateRectRgn](#createrectrgn)|Initializes a `CRgn` object with a rectangular region.|
-|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Initializes a `CRgn` object with a rectangular region defined by a [RECT](../../mfc/reference/rect-structure1.md) structure.|
+|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|Initializes a `CRgn` object with a rectangular region defined by a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.|
 |[CRgn::CreateRoundRectRgn](#createroundrectrgn)|Initializes a `CRgn` object with a rectangular region with rounded corners.|
 |[CRgn::EqualRgn](#equalrgn)|Checks two `CRgn` objects to determine whether they are equivalent.|
 |[CRgn::FromHandle](#fromhandle)|Returns a pointer to a `CRgn` object when given a handle to a Windows region.|
@@ -256,13 +249,13 @@ BOOL CreateFromData(
 ### Parameters
 
 *lpXForm*<br/>
-Points to an [XFORM](../../mfc/reference/xform-structure.md) data structure that defines the transformation to be performed on the region. If this pointer is NULL, the identity transformation is used.
+Points to an [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) data structure that defines the transformation to be performed on the region. If this pointer is NULL, the identity transformation is used.
 
 *nCount*<br/>
 Specifies the number of bytes pointed to by *pRgnData*.
 
 *pRgnData*<br/>
-Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that contains the region data.
+Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) data structure that contains the region data.
 
 ### Return Value
 
@@ -590,7 +583,7 @@ int GetRegionData(
 ### Parameters
 
 *lpRgnData*<br/>
-Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that receives the information. If this parameter is NULL, the return value contains the number of bytes needed for the region data.
+Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) data structure that receives the information. If this parameter is NULL, the return value contains the number of bytes needed for the region data.
 
 *nCount*<br/>
 Specifies the size, in bytes, of the *lpRgnData* buffer.
@@ -797,8 +790,7 @@ Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additi
 
 Use this function instead of the `CreateRectRgn` member function to avoid calls to the local memory manager.
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

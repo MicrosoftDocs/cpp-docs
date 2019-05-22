@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarComboBoxButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarComboBoxButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::AddItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::AddSortedItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::Compare", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::CreateEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::DeleteItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::FindItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetByCmd", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetComboBox", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCount", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCountAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCurSel", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetCurSelAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetEditCtrl", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemData", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemDataAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetItemDataPtrAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetText", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::GetTextAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::IsCenterVert", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::IsFlatMode", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::RemoveAllItems", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SelectItem", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SelectItemAll", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetCenterVert", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetDropDownHeight", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxButton::SetFlatMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarComboBoxButton [MFC], CMFCToolBarComboBoxButton", "CMFCToolBarComboBoxButton [MFC], AddItem", "CMFCToolBarComboBoxButton [MFC], AddSortedItem", "CMFCToolBarComboBoxButton [MFC], Compare", "CMFCToolBarComboBoxButton [MFC], CreateEdit", "CMFCToolBarComboBoxButton [MFC], DeleteItem", "CMFCToolBarComboBoxButton [MFC], FindItem", "CMFCToolBarComboBoxButton [MFC], GetByCmd", "CMFCToolBarComboBoxButton [MFC], GetComboBox", "CMFCToolBarComboBoxButton [MFC], GetCount", "CMFCToolBarComboBoxButton [MFC], GetCountAll", "CMFCToolBarComboBoxButton [MFC], GetCurSel", "CMFCToolBarComboBoxButton [MFC], GetCurSelAll", "CMFCToolBarComboBoxButton [MFC], GetEditCtrl", "CMFCToolBarComboBoxButton [MFC], GetItem", "CMFCToolBarComboBoxButton [MFC], GetItemAll", "CMFCToolBarComboBoxButton [MFC], GetItemData", "CMFCToolBarComboBoxButton [MFC], GetItemDataAll", "CMFCToolBarComboBoxButton [MFC], GetItemDataPtrAll", "CMFCToolBarComboBoxButton [MFC], GetText", "CMFCToolBarComboBoxButton [MFC], GetTextAll", "CMFCToolBarComboBoxButton [MFC], IsCenterVert", "CMFCToolBarComboBoxButton [MFC], IsFlatMode", "CMFCToolBarComboBoxButton [MFC], RemoveAllItems", "CMFCToolBarComboBoxButton [MFC], SelectItem", "CMFCToolBarComboBoxButton [MFC], SelectItemAll", "CMFCToolBarComboBoxButton [MFC], SetCenterVert", "CMFCToolBarComboBoxButton [MFC], SetDropDownHeight", "CMFCToolBarComboBoxButton [MFC], SetFlatMode"]
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarComboBoxButton Class
 
@@ -77,7 +70,7 @@ For more information, see [Walkthrough: Putting Controls On Toolbars](../../mfc/
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCToolBarComboBoxButton` class. The example shows how to enable the edit and combo boxes, set the vertical position of combo box buttons in the application, set the height of the list box when it is dropped down, set the flat style appearance of combo box buttons in the application, and set the text in the edit box of the combo box button. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCToolBarComboBoxButton` class. The example shows how to enable the edit and combo boxes, set the vertical position of combo box buttons in the application, set the height of the list box when it is dropped down, set the flat style appearance of combo box buttons in the application, and set the text in the edit box of the combo box button. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_2.cpp)]
@@ -1269,7 +1262,7 @@ void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 [in] Pointer to a string that contains the text for the edit box.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -1277,4 +1270,3 @@ void SetText(LPCTSTR lpszText);
 [CComboBox Class](../../mfc/reference/ccombobox-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

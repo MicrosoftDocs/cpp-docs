@@ -1,15 +1,8 @@
 ---
-title: "Subscripting | Microsoft Docs"
-ms.custom: ""
+title: "Subscripting"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["subscript operator [C++], overloaded", "arrays [C++], subscripting", "subscripting [C++]", "operators [C++], overloading", "operator overloading [C++], examples", "subscript operator"]
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Subscripting
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2602 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2602"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2602"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2602"]
 ms.assetid: 6c07a40e-537e-4954-b5c5-1e0e58fe1952
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2602
 

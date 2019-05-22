@@ -1,16 +1,9 @@
 ---
-title: "extent Class | Microsoft Docs"
-ms.custom: ""
+title: "extent Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::extent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["extent class", "extent"]
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # extent Class
 
@@ -52,7 +45,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

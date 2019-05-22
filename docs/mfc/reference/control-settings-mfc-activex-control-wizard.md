@@ -1,16 +1,9 @@
 ---
-title: "Control Settings, MFC ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Control Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.settings"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, control settings"]
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Control Settings, MFC ActiveX Control Wizard
 
@@ -92,9 +85,8 @@ For more information about how to select options on this page to maximize the ef
 
    Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.
 
-## See Also
+## See also
 
 [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Application Settings, MFC ActiveX Control Wizard](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
-

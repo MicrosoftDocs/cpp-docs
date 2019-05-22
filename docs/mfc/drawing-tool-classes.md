@@ -1,16 +1,9 @@
 ---
-title: "Drawing Tool Classes | Microsoft Docs"
-ms.custom: ""
+title: "Drawing Tool Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.drawing"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["drawing [MFC], tool classes", "screen output classes [MFC]", "output classes [MFC]"]
 ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Drawing Tool Classes
 
@@ -37,7 +30,6 @@ Encapsulates a GDI color palette for use as an interface between the application
 [CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
 Displays and handles the user interface for resizing and moving rectangular objects.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

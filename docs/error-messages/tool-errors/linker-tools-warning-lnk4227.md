@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4227 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4227"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4227"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4227"]
 ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4227
 

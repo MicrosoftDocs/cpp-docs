@@ -1,19 +1,12 @@
 ---
-title: "printf, _printf_l, wprintf, _wprintf_l | Microsoft Docs"
-ms.custom: ""
+title: "printf, _printf_l, wprintf, _wprintf_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_printf_l", "wprintf", "_wprintf_l", "printf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["printf", "_tprintf", "wprintf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["printf function", "printf_l function", "tprintf_l function", "tprintf function", "_printf_l function", "wprintf function", "writing to console", "wprintf_l function", "_tprintf_l function", "_wprintf_l function", "_tprintf function", "printf function, format specification fields", "printf function, using", "formatted text [C++]"]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # printf, _printf_l, wprintf, _wprintf_l
 

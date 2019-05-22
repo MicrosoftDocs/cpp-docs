@@ -1,16 +1,10 @@
 ---
-title: "Rename | Microsoft Docs"
-ms.custom: ""
+title: "Rename"
 ms.date: "11/16/2016"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
 ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-
 # Rename
+
 **What:** Lets you rename identifiers for code symbols, such as fields, local variables, methods, namespaces, properties and types.
 
 **When:** You want to safely rename something without having to find all instances, and copy/paste the new name.

@@ -1,16 +1,9 @@
 ---
-title: "fpos Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "fpos Class"
+ms.date: "03/27/2019"
 f1_keywords: ["iosfwd/std::fpos", "iosfwd/std::fpos::seekpos", "iosfwd/std::fpos::state", "iosfwd/std::fpos::operator streamoff"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fpos Class
 
@@ -215,7 +208,7 @@ The member function adds *_Off* to the stored offset member object and then retu
 
 See [operator!=](#op_neq) for a sample of using `operator+=`.
 
-## <a name="fpos__operator-"></a>  fpos::operator-
+## <a name="operator-"></a>  fpos::operator-
 
 Decrements a file-position indicator.
 
@@ -241,7 +234,7 @@ The first member function returns `(streamoff)*this - (streamoff) right`. The se
 
 See [operator!=](#op_neq) for a sample of using `operator-`.
 
-## <a name="fpos__operator-_eq"></a>  fpos::operator-=
+## <a name="operator-_eq"></a>  fpos::operator-=
 
 Decrements a file-position indicator.
 

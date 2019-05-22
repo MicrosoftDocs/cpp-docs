@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Converting from MFC Exception Macros | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Converting from MFC Exception Macros"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["converting exceptions [MFC]", "exception objects [MFC]", "conversions [MFC], code written with MFC macros", "keywords [MFC], macros", "macrosv, C++ keywords", "exception objects [MFC], deleting", "CException class [MFC], deleting CException class objects", "exceptions [MFC], converting", "exceptions [MFC], deleting exception objects", "catch blocks [MFC], delimiting", "exception handling [MFC], converting exceptions"]
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Converting from MFC Exception Macros
 

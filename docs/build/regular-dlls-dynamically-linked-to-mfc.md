@@ -1,15 +1,8 @@
 ---
-title: "Regular MFC DLLs Dynamically Linked to MFC | Microsoft Docs"
-ms.custom: ""
+title: "Regular MFC DLLs Dynamically Linked to MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "AFX_MANAGE_STATE macro", "DLLs [C++], regular", "shared DLL versions [C++]", "dynamically linked DLLs [C++]"]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Dynamically Linked to MFC
 
@@ -79,18 +72,18 @@ For an example of how to write, build, and use a regular MFC DLL, see the sample
 
 ## What do you want to do?
 
-- [Initialize regular MFC DLLs](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Initialize regular MFC DLLs](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## What do you want to know more about?
 
-- [The module states of a regular MFC DLL dynamically linked to MFC](../build/module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
+- [The module states of a regular MFC DLL dynamically linked to MFC](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)
 
 - [Managing the state data of MFC modules](../mfc/managing-the-state-data-of-mfc-modules.md)
 
-- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-## See Also
+## See also
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](kinds-of-dlls.md)

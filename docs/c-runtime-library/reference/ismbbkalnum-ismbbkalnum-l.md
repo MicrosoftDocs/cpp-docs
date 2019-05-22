@@ -1,19 +1,12 @@
 ---
-title: "_ismbbkalnum, _ismbbkalnum_l | Microsoft Docs"
-ms.custom: ""
+title: "_ismbbkalnum, _ismbbkalnum_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_ismbbkalnum", "_ismbbkalnum_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ismbbkalnum", "ismbbkalnum", "ismbbkalnum_l", "_ismbbkalnum_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ismbbkalnum_l function", "ismbbkalnum_l function", "_ismbbkalnum function", "ismbbkalnum function"]
 ms.assetid: e1d70e7b-29d0-469c-9d93-442b99de22ac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ismbbkalnum, _ismbbkalnum_l
 

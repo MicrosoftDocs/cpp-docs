@@ -1,16 +1,9 @@
 ---
-title: "event_source (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "event_source (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.event_source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, attributes", "event logs, event source", "event sources, creating", "event_source attribute", "event sources", "event handling, creating event source"]
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # event_source
 
@@ -65,7 +58,7 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)<br/>
 [event_receiver](event-receiver.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "-TLS | Microsoft Docs"
-ms.custom: ""
+title: "/TLS"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/TLS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/TLS dumpbin option", "-TLS dumpbin option"]
 ms.assetid: 2b3f48f9-cac4-4351-b15c-2833b43bc709
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /TLS
 
@@ -24,6 +17,6 @@ If a program does not use thread local storage, its image will not contain a TLS
 
 IMAGE_TLS_DIRECTORY is defined in winnt.h.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

@@ -1,16 +1,9 @@
 ---
-title: "rename (#import) | Microsoft Docs"
-ms.custom: ""
+title: "rename (#import)"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["Rename"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rename attribute"]
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rename (\#import)
 
@@ -57,7 +50,7 @@ This is because the name `GetMyParent` only occurs in the resulting type library
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -1,14 +1,7 @@
 ---
-title: "Character Sequences | Microsoft Docs"
-ms.custom: ""
+title: "Character Sequences"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 1e6961a9-150e-4c13-b427-9af4b6a1fb7a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Sequences
 
@@ -28,6 +21,6 @@ Within source code, two backslashes are necessary:
 fil = fopen( "path1\\path2\\myfile", "rt" );
 ```
 
-## See Also
+## See also
 
 [Preprocessing Directives](../c-language/preprocessing-directives.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4256 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4256"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4256"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4256"]
 ms.assetid: a755a32e-895a-4837-a2b5-4ea06b736798
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4256
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 Possible incompatibility.
 
-Consider the following code example. If the definition of the constructor S2::S2( int i, ... ) was compiled by using a version of the Visual C++ compiler before version 7, but the following example is compiled by using the current version, the call to the constructor for S3 would not work correctly because of a special-case calling-convention change. If both were compiled by using Visual C++ 6.0, the call would not work quite right either, unless no parameters were passed for the ellipsis.
+Consider the following code example. If the definition of the constructor S2::S2( int i, ... ) was compiled by using a version of the Microsoft C++ compiler before version 7, but the following example is compiled by using the current version, the call to the constructor for S3 would not work correctly because of a special-case calling-convention change. If both were compiled by using Visual C++ 6.0, the call would not work quite right either, unless no parameters were passed for the ellipsis.
 
 To fix this warning,
 

@@ -1,16 +1,9 @@
 ---
-title: "Importing Function Calls Using __declspec(dllimport) | Microsoft Docs"
-ms.custom: ""
+title: "Importing Function Calls Using __declspec(dllimport)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["__declspec", "dllimport"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["importing function calls [C++]", "dllimport attribute [C++], function call imports", "__declspec(dllimport) keyword [C++]", "function calls [C++], importing"]
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Importing Function Calls Using __declspec(dllimport)
 
@@ -67,6 +60,6 @@ There is no thunk and no `jmp` instruction, so the code is smaller and faster.
 
 On the other hand, for function calls inside a DLL, you do not want to have to use an indirect call. You already know a function's address. Because time and space are required to load and store the address of the function before an indirect call, a direct call is always faster and smaller. You only want to use **__declspec(dllimport)** when calling DLL functions from outside the DLL itself. Do not use **__declspec(dllimport)** on functions inside a DLL when building that DLL.
 
-## See Also
+## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

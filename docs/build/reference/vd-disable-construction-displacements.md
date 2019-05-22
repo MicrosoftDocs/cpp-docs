@@ -1,16 +1,9 @@
 ---
-title: "-vd (Disable Construction Displacements) | Microsoft Docs"
-ms.custom: ""
+title: "/vd (Disable Construction Displacements)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/vd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-vd0 compiler option [C++]", "vd1 compiler option [C++]", "/vdn (Disable Construction Displacement) compiler option", "constructor displacements", "vtordisp fields", "/vd0 compiler option [C++]", "-vd1 compiler option [C++]", "/vd1 compiler option [C++]", "displacements compiler option", "vd0 compiler option [C++]", "Disable Construction Displacements compiler option"]
 ms.assetid: 93258964-14d7-4b1c-9cbc-d6f4d74eab69
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /vd (Disable Construction Displacements)
 
@@ -47,7 +40,7 @@ These options affect entire source files. Use [vtordisp](../../preprocessor/vtor
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -59,7 +52,7 @@ These options affect entire source files. Use [vtordisp](../../preprocessor/vtor
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

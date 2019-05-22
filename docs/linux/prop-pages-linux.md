@@ -1,14 +1,7 @@
 ---
-title: "Linux C++ Project Property Pages in Visual Studio | Microsoft Docs"
-ms.custom: ""
+title: "Linux C++ Project Property Pages in Visual Studio"
 ms.date: "07/20/2018"
-ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 33d8c1f4-13f1-4f61-b407-30715b28142f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # Linux Project Property Page Reference
 

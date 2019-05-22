@@ -1,15 +1,8 @@
 ---
-title: "C Tokens | Microsoft Docs"
-ms.custom: ""
+title: "C Tokens"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tokens", "translation units"]
 ms.assetid: 05e5f6f1-b8ea-4f74-af17-c0b9b5dbd3b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Tokens
 
@@ -35,6 +28,6 @@ In a C source program, the basic element recognized by the compiler is the "toke
 
 The keywords, identifiers, constants, string literals, and operators described in this section are examples of tokens. Punctuation characters such as brackets (**[ ]**), braces (**{ }**), parentheses ( **( )** ), and commas (**,**) are also tokens.
 
-## See Also
+## See also
 
 [Elements of C](../c-language/elements-of-c.md)

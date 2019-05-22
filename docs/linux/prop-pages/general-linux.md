@@ -1,14 +1,7 @@
 ---
 title: "General Properties (Linux C++ Project)| Microsoft Docs"
-ms.custom: ""
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # General Properties (Linux C++)
 

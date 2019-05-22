@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorBar", "AFXCOLORBAR/CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::ContextToSize", "AFXCOLORBAR/CMFCColorBar::CreateControl", "AFXCOLORBAR/CMFCColorBar::Create", "AFXCOLORBAR/CMFCColorBar::EnableAutomaticButton", "AFXCOLORBAR/CMFCColorBar::EnableOtherButton", "AFXCOLORBAR/CMFCColorBar::GetColor", "AFXCOLORBAR/CMFCColorBar::GetCommandID", "AFXCOLORBAR/CMFCColorBar::GetHighlightedColor", "AFXCOLORBAR/CMFCColorBar::GetHorzMargin", "AFXCOLORBAR/CMFCColorBar::GetVertMargin", "AFXCOLORBAR/CMFCColorBar::IsTearOff", "AFXCOLORBAR/CMFCColorBar::SetColor", "AFXCOLORBAR/CMFCColorBar::SetColorName", "AFXCOLORBAR/CMFCColorBar::SetCommandID", "AFXCOLORBAR/CMFCColorBar::SetDocumentColors", "AFXCOLORBAR/CMFCColorBar::SetHorzMargin", "AFXCOLORBAR/CMFCColorBar::SetVertMargin", "AFXCOLORBAR/CMFCColorBar::AdjustLocations", "AFXCOLORBAR/CMFCColorBar::AllowChangeTextLabels", "AFXCOLORBAR/CMFCColorBar::AllowShowOnList", "AFXCOLORBAR/CMFCColorBar::CalcSize", "AFXCOLORBAR/CMFCColorBar::CreatePalette", "AFXCOLORBAR/CMFCColorBar::GetColorGridSize", "AFXCOLORBAR/CMFCColorBar::GetExtraHeight", "AFXCOLORBAR/CMFCColorBar::InitColors", "AFXCOLORBAR/CMFCColorBar::OnKey", "AFXCOLORBAR/CMFCColorBar::OnSendCommand", "AFXCOLORBAR/CMFCColorBar::OnUpdateCmdUI", "AFXCOLORBAR/CMFCColorBar::OpenColorDialog", "AFXCOLORBAR/CMFCColorBar::Rebuild", "AFXCOLORBAR/CMFCColorBar::SelectPalette", "AFXCOLORBAR/CMFCColorBar::SetPropList", "AFXCOLORBAR/CMFCColorBar::ShowCommandMessageString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorBar [MFC], CMFCColorBar", "CMFCColorBar [MFC], ContextToSize", "CMFCColorBar [MFC], CreateControl", "CMFCColorBar [MFC], Create", "CMFCColorBar [MFC], EnableAutomaticButton", "CMFCColorBar [MFC], EnableOtherButton", "CMFCColorBar [MFC], GetColor", "CMFCColorBar [MFC], GetCommandID", "CMFCColorBar [MFC], GetHighlightedColor", "CMFCColorBar [MFC], GetHorzMargin", "CMFCColorBar [MFC], GetVertMargin", "CMFCColorBar [MFC], IsTearOff", "CMFCColorBar [MFC], SetColor", "CMFCColorBar [MFC], SetColorName", "CMFCColorBar [MFC], SetCommandID", "CMFCColorBar [MFC], SetDocumentColors", "CMFCColorBar [MFC], SetHorzMargin", "CMFCColorBar [MFC], SetVertMargin", "CMFCColorBar [MFC], AdjustLocations", "CMFCColorBar [MFC], AllowChangeTextLabels", "CMFCColorBar [MFC], AllowShowOnList", "CMFCColorBar [MFC], CalcSize", "CMFCColorBar [MFC], CreatePalette", "CMFCColorBar [MFC], GetColorGridSize", "CMFCColorBar [MFC], GetExtraHeight", "CMFCColorBar [MFC], InitColors", "CMFCColorBar [MFC], OnKey", "CMFCColorBar [MFC], OnSendCommand", "CMFCColorBar [MFC], OnUpdateCmdUI", "CMFCColorBar [MFC], OpenColorDialog", "CMFCColorBar [MFC], Rebuild", "CMFCColorBar [MFC], SelectPalette", "CMFCColorBar [MFC], SetPropList", "CMFCColorBar [MFC], ShowCommandMessageString"]
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorBar Class
 
@@ -60,7 +53,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar::AllowChangeTextLabels](#allowchangetextlabels)|Indicates whether the text label of color buttons can change.|
 |[CMFCColorBar::AllowShowOnList](#allowshowonlist)|Indicates whether the color bar control object can appear in a toolbar list during the customization process.|
 |[CMFCColorBar::CalcSize](#calcsize)|Called by the framework as part of the layout calculation process.|
-|[CMFCColorBar::CreatePalette](#createpalette)|Initalizes a palette with the colors in a specified array of colors.|
+|[CMFCColorBar::CreatePalette](#createpalette)|Initializes a palette with the colors in a specified array of colors.|
 |[CMFCColorBar::GetColorGridSize](#getcolorgridsize)|Calculates the number of rows and columns in the grid of a color bar control.|
 |[CMFCColorBar::GetExtraHeight](#getextraheight)|Calculates the additional height that the current color bar requires to display miscellaneous user interface elements such as the **Other** button, document colors, and so on.|
 |[CMFCColorBar::InitColors](#initcolors)|Initializes an array of colors with the colors in a specified palette or the system default palette.|
@@ -133,7 +126,7 @@ When the user clicks a color bar control button, the framework uses the `ON_COMM
 
 ## Example
 
-The following example demonstrates how to configure a color bar by using various methods in the `CMFCColorBar` class. The methods set the horizontal and vertical margins, enable the other button, create a color bar control window, and sets the currently selected color. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to configure a color bar by using various methods in the `CMFCColorBar` class. The methods set the horizontal and vertical margins, enable the other button, create a color bar control window, and sets the currently selected color. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]
@@ -872,7 +865,7 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 
 This method sends the WM_SETMESSAGESTRING message to the owner of the color bar control.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

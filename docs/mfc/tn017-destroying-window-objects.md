@@ -1,16 +1,9 @@
 ---
-title: "TN017: Destroying Window Objects | Microsoft Docs"
-ms.custom: ""
+title: "TN017: Destroying Window Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.objects"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["destroying windows", "TN017", "PostNcDestroy method [MFC]"]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN017: Destroying Window Objects
 
@@ -90,8 +83,7 @@ In the case of C++ Windows objects that do perform auto-cleanup, you must call `
 
 After calling `DestroyWindow` on a non-auto-cleanup object, the C++ object will still be around, but *m_hWnd* will be NULL. After calling `DestroyWindow` on an auto-cleanup object, the C++ object will be gone, freed by the C++ delete operator in the auto-cleanup implementation of `PostNcDestroy`.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

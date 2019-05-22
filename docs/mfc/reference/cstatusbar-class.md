@@ -1,16 +1,9 @@
 ---
-title: "CStatusBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CStatusBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CStatusBar", "AFXEXT/CStatusBar", "AFXEXT/CStatusBar::CStatusBar", "AFXEXT/CStatusBar::CommandToIndex", "AFXEXT/CStatusBar::Create", "AFXEXT/CStatusBar::CreateEx", "AFXEXT/CStatusBar::DrawItem", "AFXEXT/CStatusBar::GetItemID", "AFXEXT/CStatusBar::GetItemRect", "AFXEXT/CStatusBar::GetPaneInfo", "AFXEXT/CStatusBar::GetPaneStyle", "AFXEXT/CStatusBar::GetPaneText", "AFXEXT/CStatusBar::GetStatusBarCtrl", "AFXEXT/CStatusBar::SetIndicators", "AFXEXT/CStatusBar::SetPaneInfo", "AFXEXT/CStatusBar::SetPaneStyle", "AFXEXT/CStatusBar::SetPaneText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBar [MFC], CStatusBar", "CStatusBar [MFC], CommandToIndex", "CStatusBar [MFC], Create", "CStatusBar [MFC], CreateEx", "CStatusBar [MFC], DrawItem", "CStatusBar [MFC], GetItemID", "CStatusBar [MFC], GetItemRect", "CStatusBar [MFC], GetPaneInfo", "CStatusBar [MFC], GetPaneStyle", "CStatusBar [MFC], GetPaneText", "CStatusBar [MFC], GetStatusBarCtrl", "CStatusBar [MFC], SetIndicators", "CStatusBar [MFC], SetPaneInfo", "CStatusBar [MFC], SetPaneStyle", "CStatusBar [MFC], SetPaneText"]
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStatusBar Class
 
@@ -252,7 +245,7 @@ void GetItemRect(
 Index of the indicator whose rectangle coordinates are to be retrieved.
 
 *lpRect*<br/>
-Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
+Points to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that will receive the coordinates of the indicator specified by *nIndex*.
 
 ### Remarks
 
@@ -473,10 +466,10 @@ After you call `SetPaneText`, you must add a UI update handler to display the ne
 
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
 [CControlBar Class](../../mfc/reference/ccontrolbar-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl Class](../../mfc/reference/cstatusbarctrl-class.md)<br/>

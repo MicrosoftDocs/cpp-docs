@@ -1,15 +1,8 @@
 ---
-title: "Registration | Microsoft Docs"
-ms.custom: ""
+title: "Registration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["servers [MFC], initializing", "initializing servers [MFC]", "OLE, registration", "installing servers [MFC]", "registry [MFC], OLE item database", "registration databases [MFC]", "servers [MFC], installing", "OLE server applications [MFC], registering servers"]
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registration
 
@@ -49,7 +42,7 @@ The `ConnectTemplate` function takes three parameters: the server's *CLSID*, a p
 
 If you are writing a miniserver, by definition it will always be launched by a container. You should still parse the command line to check for the "/Embedding" option. The absence of this option on the command line means that the user has tried to launch the miniserver as a stand-alone application. If this occurs, register the server with the system registration database and then display a message box informing the user to launch the miniserver from a container application.
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Servers](../mfc/servers.md)<br/>

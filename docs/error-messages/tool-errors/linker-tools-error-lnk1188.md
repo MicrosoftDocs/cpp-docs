@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1188 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1188"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1188"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1188"]
 ms.assetid: 4af574b0-5b41-4580-9a37-52a634add995
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1188
 

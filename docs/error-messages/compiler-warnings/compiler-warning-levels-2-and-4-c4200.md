@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (levels 2 and 4) C4200 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (levels 2 and 4) C4200"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4200"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4200"]
 ms.assetid: e44d6073-937f-42b7-acc1-65e802b475c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 2 and 4) C4200
 

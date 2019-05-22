@@ -1,16 +1,9 @@
 ---
-title: "registration_script (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "registration_script (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.registration_script"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["registration_script attribute"]
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # registration_script
 
@@ -69,7 +62,7 @@ class CMyClass:public IFace {};
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

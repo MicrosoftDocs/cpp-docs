@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3624 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3624"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3624"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3624"]
 ms.assetid: eaac6a4f-eb11-4e4d-ab12-124ba995c5cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3624
 

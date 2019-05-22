@@ -1,16 +1,9 @@
 ---
-title: "Gray and Dithered Bitmap Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "Gray and Dithered Bitmap Functions"
+ms.date: "11/19/2018"
 f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["gray and dithered bitmap functions [MFC]"]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Gray and Dithered Bitmap Functions
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 MFC provides two functions for giving a bitmap the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 |||
 |-|-|
@@ -29,7 +22,7 @@ MFC provides two functions for giving a bitmap the appearance of a disabled cont
 
 MFC also provides two functions for replacing a bitmap's background with a dithered pattern.
 
-![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
 
 |||
 |-|-|
@@ -70,7 +63,7 @@ The new background color (typically gray, such as COLOR_MENU).
 
 A bitmap drawn with `AfxDrawGrayBitmap` will have the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 ### Example
 
@@ -106,7 +99,7 @@ The new background color (typically gray, such as COLOR_MENU).
 
 A bitmap copied with `AfxGetGrayBitmap` will have the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "vcgraybitmap")
+![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 ### Example
 
@@ -154,7 +147,7 @@ The other dither color, typically light gray (COLOR_MENU).
 
 The source bitmap is drawn on the destination DC with a two-color (*cr1* and *cr2*) checkered pattern replacing the bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.
 
-![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
 
 ### Example
 
@@ -204,6 +197,6 @@ The source bitmap is copied to the destination bitmap with a two-color (*cr1* an
 
 **Header:** afxwin.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

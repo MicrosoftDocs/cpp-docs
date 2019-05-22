@@ -1,14 +1,7 @@
 ---
-title: "Values | Microsoft Docs"
-ms.custom: ""
+title: "Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 24003f89-220f-4f93-be7a-b650c26157d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Values
 
@@ -20,6 +13,6 @@ The **double** type contains 64 bits: 1 for the sign, 11 for the exponent, and 5
 
 The **long double** type contains 80 bits: 1 for the sign, 15 for the exponent, and 64 for the mantissa. Its range is +/- 1.2E4932 with at least 19 digits of precision. Note that with the Microsoft C compiler, the representation of type **long double** is identical to type **double**.
 
-## See Also
+## See also
 
 [Floating-Point Math](../c-language/floating-point-math.md)

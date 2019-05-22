@@ -1,16 +1,9 @@
 ---
-title: "iterator Struct | Microsoft Docs"
-ms.custom: ""
+title: "iterator Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xutility/std::iterator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["iterator class", "iterator struct"]
 ms.assetid: c74c8000-8b18-4829-9b71-6103c4229b74
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # iterator Struct
 

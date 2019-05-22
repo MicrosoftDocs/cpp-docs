@@ -1,16 +1,9 @@
 ---
-title: "dllexport, dllimport | Microsoft Docs"
-ms.custom: ""
+title: "dllexport, dllimport"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["dllimport_cpp", "dllexport_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dllexport __declspec keyword", "__declspec keyword [C++], dllexport", "dllimport __declspec keyword", "__declspec keyword [C++], dllimport"]
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # dllexport, dllimport
 

@@ -1,16 +1,9 @@
 ---
-title: "CComSimpleThreadAllocator Class | Microsoft Docs"
-ms.custom: ""
+title: "CComSimpleThreadAllocator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator::GetThread"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["threading [ATL], selecting threads", "ATL threads", "CComSimpleThreadAllocator class", "ATL threads, allocating"]
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComSimpleThreadAllocator Class
 
@@ -64,7 +57,7 @@ You can override `GetThread` to provide a different method of selection or to ma
 
 `GetThread` is called by [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).
 
-## See Also
+## See also
 
 [CComApartment Class](../../atl/reference/ccomapartment-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

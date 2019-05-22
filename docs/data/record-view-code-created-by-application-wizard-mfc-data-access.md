@@ -1,15 +1,8 @@
 ---
-title: "Record View Code Created by Application Wizard  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Record View Code Created by Application Wizard  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [C++], record view code", "record views, refreshing controls", "record views, application wizard code"]
 ms.assetid: 18fd4703-5939-491d-b759-985f767b951f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record View Code Created by Application Wizard  (MFC Data Access)
 
@@ -28,6 +21,6 @@ When the recordset opens, it selects records. [CRecordset::Open](../mfc/referenc
 > [!NOTE]
 >  You should give your end users the capability to refresh the record view controls from the recordset. Without this capability, if a user changes a control's value to an illegal value, the user can be permanently stuck on the current record. To refresh the controls, you call the `CWnd` member function [UpdateData](../mfc/reference/cwnd-class.md#updatedata) with a parameter of FALSE.
 
-## See Also
+## See also
 
 [Using a Record View](../data/using-a-record-view-mfc-data-access.md)

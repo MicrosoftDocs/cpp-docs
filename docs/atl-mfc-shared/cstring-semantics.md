@@ -1,15 +1,8 @@
 ---
-title: "CString Semantics | Microsoft Docs"
-ms.custom: ""
+title: "CString Semantics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["semantics in Cstring", "CString objects, assignment semantics", "assignment statements, assigning CString objects"]
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CString Semantics
 
@@ -21,7 +14,6 @@ You can assign one `CString` object to another. However, when you modify one of 
 
 Note in the example that the two `CString` objects are considered "equal" because they represent the same character string. The `CString` class overloads the equality operator (`==`) to compare two `CString` objects based on their value (contents) rather than their identity (address).
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

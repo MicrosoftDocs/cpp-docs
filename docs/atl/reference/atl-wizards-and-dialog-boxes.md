@@ -1,15 +1,8 @@
 ---
-title: "ATL Wizards and Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, class wizards"]
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Wizards and Dialog Boxes
 
@@ -29,4 +22,3 @@ The Active Template Library (ATL) wizards generate boilerplate code for various 
 |[ATL COM+ 1.0 Component](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)|Creates a basic ATL COM+ 1.0 component|
 |[ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)|Creates a basic ATL Active Server Page component.|
 |[ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)|Links to the ATL documentation.|
-

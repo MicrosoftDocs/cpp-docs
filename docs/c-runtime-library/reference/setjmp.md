@@ -1,19 +1,12 @@
 ---
-title: "setjmp | Microsoft Docs"
-ms.custom: ""
+title: "setjmp"
 ms.date: "08/14/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["setjmp"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["setjmp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["programs [C++], saving states", "current state", "setjmp function"]
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setjmp
 

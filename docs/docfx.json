@@ -9,12 +9,14 @@
         "group": "group-vc2015",
         "src": ".",
         "exclude": [
+          "**/2019/**",
+          "**/2017/**",
           "**/obj/**",
           "vcppdocs/**",
           "**/includes/**"
         ]
       }
-        ],
+    ],
     "resource": [
       {
         "files": [
@@ -35,35 +37,190 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "~/_breadcrumb/toc.yml",
-            "ROBOTS": "INDEX,FOLLOW",
-            "manager": "wpickett",
-            "ms.date": "11/16/2016",
-            "ms.topic": "conceptual",
-            "audience": "developer",
-            "ms.prod": "visual-cpp",
-            "ms.tgt_pltfrm": "",
-            "searchScope": ["C++"],
-            "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/cpp-docs",
-            "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
+      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "extendBreadcrumb": "true",
+      "ROBOTS": "INDEX,FOLLOW",
+      "manager": "wpickett",
+      "ms.date": "11/16/2016",
+      "ms.topic": "conceptual",
+      "audience": "developer",
+      "ms.prod": "visual-cpp",
+      "ms.tgt_pltfrm": "",
+      "ms.workload": [
+        "cplusplus"
+      ],
+      "dev_langs": [
+        "C++"
+      ],
+      "searchScope": [
+        "C++"
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/cpp-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
     "fileMetadata": {
+      "ms.tgt_pltfrm": {
+        "linux/**.md": "Linux"
+      },
+      "ms.workload": {
+        "data/**.md": [
+          "cplusplus",
+          "data-storage"
+        ],
+        "dotnet/**.md": [
+          "cplusplus",
+          "dotnet"
+        ],
+        "linux/**.md": [
+          "cplusplus",
+          "linux"
+        ],
+        "windows/**.md": [
+          "cplusplus"
+        ],
+        "cppcx/**.md": [
+          "cplusplus",
+          "uwp"
+        ]
+      },
+      "ms.topic": {
+        "assembler/arm/**.md": "reference",
+        "assembler/masm/**.md": "reference",
+        "attributes/**.md": "reference",
+        "atl/reference/**.md": "reference",
+        "atl-mfc-shared/**.md": "reference",
+        "build/reference/**.md": "reference",
+        "c-language/**.md": "language-reference",
+        "c-runtime-library/reference/**.md": "reference",
+        "cpp/**.md": "language-reference",
+        "cppcx/**.md": "language-reference",
+        "data/oledb/**.md": "reference",
+        "error-messages/**.md": "error-reference",
+        "extensions/**.md": "reference",
+        "intrinsics/**.md": "reference",
+        "mfc/reference/**.md": "reference",
+        "overview/**.md": "overview",
+        "parallel/amp/reference/**.md": "reference",
+        "parallel/concrt/reference/**.md": "reference",
+        "parallel/openmp/reference/**.md": "reference",
+        "preprocessor/**.md": "reference",
+        "safeint/**.md": "reference",
+        "standard-library/**.md": "reference",
+        "windows/attributes/**.md": "reference"
+      },
+      "ms.technology": {
+        "assembler/**.md": "cpp-masm",
+        "attributes/**.md": "cpp-cli",
+        "atl/**.md": "cpp-atl",
+        "atl-mfc-shared/**.md": "cpp-mfc",
+        "build/**.md": "cpp-tools",
+        "c-language/**.md": "cpp-c-language",
+        "c-runtime-library/**.md": "cpp-ucrt",
+        "cloud/**.md": "cpp-azure",
+        "cpp/**.md": "cpp-language",
+        "cppcx/**.md": "cpp-cx",
+        "data/**.md": "cpp-data",
+        "dotnet/**.md": "cpp-cli",
+        "error-messages/**.md": "cpp-diagnostics",
+        "extensions/**.md": "cpp-cli",
+        "get-started/**.md": "cpp-language",
+        "ide/**.md": "cpp-ide",
+        "intrinsics/**.md": "cpp-tools",
+        "linux/**.md": "cpp-linux",
+        "mfc/**.md": "cpp-mfc",
+        "overview/**.md": "cpp-tools",
+        "parallel/amp/**.md": "cpp-amp",
+        "parallel/concrt/**.md": "cpp-concrt",
+        "parallel/**.md": "cpp-parallel",
+        "porting/**.md": "cpp-language",
+        "preprocessor/**.md": "cpp-language",
+        "safeint/**.md": "cpp-standard-libraries",
+        "security/**.md": "cpp-windows",
+        "standard-library/**.md": "cpp-standard-libraries",
+        "text/**.md": "cpp-windows",
+        "windows/**.md": "cpp-windows"
+      },
       "author": {
-        "standard-library/**/**.md": "corob-msft"
+        "assembler/**.md": "corob-msft",
+        "attributes/**.md": "mikeblome",
+        "atl/**.md": "mikeblome",
+        "atl-mfc-shared/**.md": "mikeblome",
+        "build/**.md": "corob-msft",
+        "c-language/**.md": "mikeblome",
+        "c-runtime-library/**.md": "corob-msft",
+        "cloud/**.md": "mikeblome",
+        "cpp/**.md": "mikeblome",
+        "cppcx/**.md": "mikeblome",
+        "data/**.md": "mikeblome",
+        "dotnet/**.md": "mikeblome",
+        "error-messages/**.md": "corob-msft",
+        "extensions/**.md": "mikeblome",
+        "get-started/**.md": "corob-msft",
+        "ide/**.md": "mikeblome",
+        "intrinsics/**.md": "corob-msft",
+        "linux/**.md": "mikeblome",
+        "mfc/**.md": "mikeblome",
+        "overview/**.md": "mikeblome",
+        "parallel/amp/**.md": "mikeblome",
+        "parallel/concrt/**.md": "mikeblome",
+        "parallel/**.md": "mikeblome",
+        "porting/**.md": "mikeblome",
+        "preprocessor/**.md": "mikeblome",
+        "safeint/**.md": "mikeblome",
+        "security/**.md": "mikeblome",
+        "standard-library/**.md": "corob-msft",
+        "text/**.md": "corob-msft",
+        "windows/**.md": "mikeblome"
       },
       "ms.author": {
-        "standard-library/**/**.md": "corob"
-      }      
+        "assembler/**.md": "corob",
+        "atl/**.md": "mblome",
+        "atl-mfc-shared/**.md": "mblome",
+        "attributes/**.md": "mblome",
+        "build/**.md": "corob",
+        "c-language/**.md": "mblome",
+        "c-runtime-library/**.md": "corob",
+        "cloud/**.md": "mblome",
+        "cpp/**.md": "mblome",
+        "cppcx/**.md": "mblome",
+        "data/**.md": "mblome",
+        "dotnet/**.md": "mblome",
+        "error-messages/**.md": "corob",
+        "extensions/**.md": "mblome",
+        "get-started/**.md": "corob",
+        "ide/**.md": "mblome",
+        "intrinsics/**.md": "corob",
+        "linux/**.md": "mblome",
+        "mfc/**.md": "mblome",
+        "overview/**.md": "mblome",
+        "parallel/amp/**.md": "mblome",
+        "parallel/concrt/**.md": "mblome",
+        "parallel/**.md": "mblome",
+        "porting/**.md": "mblome",
+        "preprocessor/**.md": "mblome",
+        "safeint/**.md": "mblome",
+        "security/**.md": "mblome",
+        "standard-library/**.md": "corob",
+        "text/**.md": "corob",
+        "windows/**.md": "mblome"
+      }
     },
     "template": [],
-    "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
+    "xref": [
+      "msdn.4.5.2.zip",
+      "namespaces.4.5.2.zip",
+      "vs.110.zip",
+      "vs.140.zip",
+      "office15.zip"
+    ],
     "dest": "vcppdocs",
     "groups": {
-        "group-vc2015": {
+      "group-vc2015": {
         "moniker_range": ">= vs-2015",
         "dest": "vcppdocs-2015"
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }

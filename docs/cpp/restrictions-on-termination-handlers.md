@@ -1,15 +1,8 @@
 ---
-title: "Restrictions on Termination Handlers | Microsoft Docs"
-ms.custom: ""
+title: "Restrictions on Termination Handlers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["termination handlers [C++], limitations", "restrictions, termination handlers", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Restrictions on Termination Handlers
 

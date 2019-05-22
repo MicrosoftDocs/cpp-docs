@@ -1,15 +1,8 @@
 ---
-title: "Best Practices in the Asynchronous Agents Library | Microsoft Docs"
-ms.custom: ""
+title: "Best Practices in the Asynchronous Agents Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Best Practices in the Asynchronous Agents Library
 
@@ -111,7 +104,7 @@ receiver2: received resource 64
 Destroying resource 64...
 ```
 
-## See Also
+## See also
 
 [Concurrency Runtime Best Practices](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
@@ -120,4 +113,3 @@ Destroying resource 64...
 [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [Best Practices in the Parallel Patterns Library](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [General Best Practices in the Concurrency Runtime](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

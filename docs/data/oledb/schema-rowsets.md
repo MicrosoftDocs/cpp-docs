@@ -1,15 +1,8 @@
 ---
-title: "Schema Rowsets | Microsoft Docs"
-ms.custom: ""
+title: "Schema Rowsets"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["schema rowsets, defined"]
 ms.assetid: 0716a065-230c-4c20-bb53-98870e79ea29
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Schema Rowsets
 
@@ -17,6 +10,6 @@ Schema (or metadata) is any information about a database's structure or organiza
 
 For information about how to use schema rowsets, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

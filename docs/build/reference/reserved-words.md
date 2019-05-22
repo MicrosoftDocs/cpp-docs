@@ -1,20 +1,13 @@
 ---
-title: "Reserved words | Microsoft Docs"
-ms.custom: ""
+title: "Reserved words"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["code", "CONFORMING", "DISCARDABLE", "Description", "base", "APPLOADER", "Data", "DYNAMIC", "DEV386"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".def files [C++], reserved words", "def files [C++], reserved words", "linker [C++], reserved words", "reserved words [C++]"]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Reserved words
 
-The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](../../build/reference/module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
+The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
 
 ||||
 |-|-|-|
@@ -45,5 +38,5 @@ The following words are reserved by the linker. These names can be used as argum
 
 ## See also
 
-- [Setting Linker Options](../../build/reference/setting-linker-options.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [MSVC linker reference](linking.md)
+- [MSVC Linker Options](linker-options.md)

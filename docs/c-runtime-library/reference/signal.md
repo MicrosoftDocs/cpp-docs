@@ -1,18 +1,11 @@
 ---
-title: "signal | Microsoft Docs"
-ms.custom: ""
+title: "signal"
 ms.date: "04/12/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["signal"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["signal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["signal function"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # signal
 
@@ -106,30 +99,30 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 The following example shows how to use **signal** to add some custom behavior to the **SIGABRT** signal. For additional information about abort behavior, see [_set_abort_behavior](set-abort-behavior.md).
 
 ```C
-// crt_signal.c
-// compile with: /EHsc /W4
-// Use signal to attach a signal handler to the abort routine
-#include <stdlib.h>
-#include <signal.h>
-#include <tchar.h>
+// crt_signal.c
+// compile with: /EHsc /W4
+// Use signal to attach a signal handler to the abort routine
+#include <stdlib.h>
+#include <signal.h>
+#include <tchar.h>
 
-void SignalHandler(int signal)
+void SignalHandler(int signal)
 {
-    if (signal == SIGABRT) {
-        // abort signal handler code
-    } else {
-        // ...
-    }
+    if (signal == SIGABRT) {
+        // abort signal handler code
+    } else {
+        // ...
+    }
 }
 
-int main()
+int main()
 {
-    typedef void (*SignalHandlerPointer)(int);
+    typedef void (*SignalHandlerPointer)(int);
 
-    SignalHandlerPointer previousHandler;
-    previousHandler = signal(SIGABRT, SignalHandler);
+    SignalHandlerPointer previousHandler;
+    previousHandler = signal(SIGABRT, SignalHandler);
 
-    abort();
+    abort();
 }
 ```
 

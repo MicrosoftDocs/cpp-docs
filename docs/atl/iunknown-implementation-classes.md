@@ -1,16 +1,9 @@
 ---
-title: "IUnknown Implementation Classes (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "IUnknown Implementation Classes (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-f1_keywords: ["vc.atl.Iunknown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IUnknown implementation classes"]
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUnknown Implementation Classes
 
@@ -42,10 +35,9 @@ The following classes implement `IUnknown` and related methods:
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)<br/>
 [COM Map Macros](../atl/reference/com-map-macros.md)<br/>
 [COM Map Global Functions](../atl/reference/com-map-global-functions.md)
-

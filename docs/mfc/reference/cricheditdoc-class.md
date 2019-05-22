@@ -1,16 +1,9 @@
 ---
-title: "CRichEditDoc Class | Microsoft Docs"
-ms.custom: ""
+title: "CRichEditDoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRichEditDoc", "AFXRICH/CRichEditDoc", "AFXRICH/CRichEditDoc::CreateClientItem", "AFXRICH/CRichEditDoc::GetStreamFormat", "AFXRICH/CRichEditDoc::GetView", "AFXRICH/CRichEditDoc::m_bRTF"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditDoc [MFC], CreateClientItem", "CRichEditDoc [MFC], GetStreamFormat", "CRichEditDoc [MFC], GetView", "CRichEditDoc [MFC], m_bRTF"]
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRichEditDoc Class
 
@@ -46,7 +39,7 @@ A "rich edit control" is a window in which the user can enter and edit text. The
 
 This Windows Common control (and therefore the [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) and related classes) is available only to programs running under Windows 95/98 and Windows NT versions 3.51 and later.
 
-For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit document in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -135,9 +128,9 @@ When TRUE, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/crichedi
 BOOL m_bRTF;
 ```
 
-## See Also
+## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [COleServerDoc Class](../../mfc/reference/coleserverdoc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRichEditView Class](../../mfc/reference/cricheditview-class.md)<br/>

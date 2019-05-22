@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1332 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1332"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1332"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1332"]
 ms.assetid: b31d5ca0-c27f-4177-896b-2637dccbde24
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1332
 
@@ -22,7 +15,7 @@ When it produced the current target, the linker detected <`count`> Windows Runti
 
 - Correct each of the LNK2039 errors in the build according to the suggestion in the error message.
 
-## See Also
+## See also
 
 [Linker Tools Error LNK2039](../../error-messages/tool-errors/linker-tools-error-lnk2039.md)<br/>
 [Linker Tools Errors and Warnings](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

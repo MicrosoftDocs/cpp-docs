@@ -1,20 +1,13 @@
 ---
-title: "pointer_to_binary_function Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::pointer_to_binary"]
-dev_langs: ["C++"]
+title: "pointer_to_binary_function Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::pointer_to_binary"]
 helpviewer_keywords: ["pointer_to_binary_function function", "pointer_to_binary_function class"]
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pointer_to_binary_function Class
 
-Converts a binary function pointer into an adaptable binary function.
+Converts a binary function pointer into an adaptable binary function. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -43,7 +36,7 @@ The right object that the *\*pfunc* is called on.
 
 ## Return Value
 
-The template class stores a copy of `pfunc`. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*, \_ *Right*).
+The template class stores a copy of `pfunc`. It defines its member function `operator()` as returning `(* pfunc)(Left, right)`.
 
 ## Remarks
 

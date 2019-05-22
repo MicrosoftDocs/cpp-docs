@@ -1,16 +1,9 @@
 ---
-title: "CSmoothStopTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CSmoothStopTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSmoothStopTransition [MFC], CSmoothStopTransition", "CSmoothStopTransition [MFC], Create", "CSmoothStopTransition [MFC], m_dblFinalValue", "CSmoothStopTransition [MFC], m_maximumDuration"]
 ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSmoothStopTransition Class
 
@@ -112,6 +105,6 @@ The maximum duration of the transition.
 UI_ANIMATION_SECONDS m_maximumDuration;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

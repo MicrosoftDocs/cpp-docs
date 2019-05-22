@@ -1,23 +1,18 @@
 ---
-title: "ATL OLE DB Provider Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/03/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-f1_keywords: ["vc.codewiz.class.atl.provider.overview"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["ATL OLE DB Provider Wizard", "ATL projects, adding ATL OLE DB providers"]
+title: "ATL OLE DB Provider Wizard"
+ms.date: "05/09/2019"
+helpviewer_keywords: ["ATL projects, adding ATL OLE DB providers"]
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL OLE DB Provider Wizard
 
-This wizard creates the classes that compose an OLE DB provider.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 ## Remarks
 
@@ -83,7 +78,8 @@ The following table describes the options for the ATL OLE DB Provider Wizard:
 
    The provider's implementation file. You can edit this file's name or select an existing implementation file.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [ATL OLE DB Provider](../../atl/reference/adding-an-atl-ole-db-provider.md)
-

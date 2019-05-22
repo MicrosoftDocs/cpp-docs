@@ -1,15 +1,8 @@
 ---
-title: "/Zc:twoPhase- (disable two-phase name lookup) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:twoPhase- (disable two-phase name lookup)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["twoPhase", "/Zc:twoPhase", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["twoPhase", "disable two-phase name lookup", "/Zc:twoPhase"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:twoPhase- (disable two-phase name lookup)
 
@@ -153,11 +146,11 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 
 Under **/Zc:twoPhase-** and in older compilers, the compiler only requires the `template` keyword on line 2. By default, and in conformance mode, the compiler now also requires the `template` keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
 
-For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../cpp-conformance-improvements-2017.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
+For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../overview/cpp-conformance-improvements.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -165,4 +158,4 @@ For more information about conformance issues, see [C++ conformance improvements
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>

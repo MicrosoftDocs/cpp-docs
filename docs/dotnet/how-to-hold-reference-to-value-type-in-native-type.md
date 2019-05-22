@@ -1,15 +1,9 @@
 ---
-title: "How to: Hold Reference to Value Type in Native Type | Microsoft Docs"
+title: "How to: Hold Reference to Value Type in Native Type"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["value type reference in native type", "reference to value type in native type"]
 ms.assetid: 1eabf8be-7d4f-4339-9027-48d5c4244483
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Hold Reference to Value Type in Native Type
 
@@ -47,6 +41,6 @@ int main() {
 String in V: Hello
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

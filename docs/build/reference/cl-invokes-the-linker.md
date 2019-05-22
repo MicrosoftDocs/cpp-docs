@@ -1,16 +1,9 @@
 ---
-title: "CL Invokes the Linker | Microsoft Docs"
-ms.custom: ""
+title: "CL Invokes the Linker"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["cl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["compiling source code [C++], without linking", "invoking linker from the compiler", "LINK tool [C++], invoking from CL compiler", "cl.exe compiler [C++], compiling without linking", "cl.exe compiler [C++], controlling linker"]
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CL Invokes the Linker
 
@@ -23,7 +16,7 @@ CL automatically invokes the linker after compiling unless the /c option is used
 |/Zg|Generate function prototypes|
 |/Zs|Check syntax|
 
-For further details about linking, see [Linker Options](../../build/reference/linker-options.md).
+For further details about linking, see [MSVC Linker Options](linker-options.md).
 
 ## Example
 
@@ -41,7 +34,7 @@ To build this program, compile with the following command line:
 CL MAIN.c MOD1.C MOD2.C MYGRAPH.lib
 ```
 
-CL first compiles the C source files and creates the object files MAIN.obj, MOD1.obj, and MOD2.obj. The compiler places the name of the standard library in each .obj file. For more details, see [Use Run-Time Library](../../build/reference/md-mt-ld-use-run-time-library.md).
+CL first compiles the C source files and creates the object files MAIN.obj, MOD1.obj, and MOD2.obj. The compiler places the name of the standard library in each .obj file. For more details, see [Use Run-Time Library](md-mt-ld-use-run-time-library.md).
 
 CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the linker. The linker resolves the external references as follows:
 
@@ -51,7 +44,7 @@ CL passes the names of the .obj files, along with the name MYGRAPH.lib, to the l
 
 1. In MOD2.obj, the references to `myline` and `mycircle` are resolved using the definitions in MYGRAPH.lib.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[Setting Compiler Options](compiler-command-line-syntax.md)

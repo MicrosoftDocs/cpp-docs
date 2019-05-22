@@ -1,16 +1,9 @@
 ---
-title: "reverse_iterator Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "reverse_iterator Class"
+ms.date: "03/27/2019"
 f1_keywords: ["xutility/std::reverse_iterator", "iterator/std::reverse_iterator::difference_type", "iterator/std::reverse_iterator::iterator_type", "iterator/std::reverse_iterator::pointer", "iterator/std::reverse_iterator::reference", "iterator/std::reverse_iterator::base", "iterator/std::reverse_iterator::operator_star"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::reverse_iterator [C++]", "std::reverse_iterator [C++], difference_type", "std::reverse_iterator [C++], iterator_type", "std::reverse_iterator [C++], pointer", "std::reverse_iterator [C++], reference", "std::reverse_iterator [C++], base", "std::reverse_iterator [C++], operator_star"]
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # reverse_iterator Class
 
@@ -72,7 +65,7 @@ In practice, this means that in the reversed sequence the reverse_iterator will 
 |[operator-](#operator-)|Subtracts an offset from a `reverse_iterator` and returns a `reverse_iterator` addressing the element at the offset position.|
 |[operator--](#operator--)|Decrements the `reverse_iterator` to the previous element.|
 |[operator-=](#operator-_eq)|Subtracts a specified offset from a `reverse_iterator`.|
-|[operator->](#operator-_gt)|Returns a pointer to the element addressed by the `reverse_iterator`.|
+|[operator->](#op-arrow)|Returns a pointer to the element addressed by the `reverse_iterator`.|
 |[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `reverse_iterator` by a specified number of positions.|
 
 ## Requirements
@@ -465,7 +458,7 @@ After the +2 offset, the iterator rVPOS1 now points
 to the third element in the reversed sequence: 6.
 ```
 
-## <a name="reverse_iterator__operator-"></a>  reverse_iterator::operator-
+## <a name="operator-"></a>  reverse_iterator::operator-
 
 Subtracts an offset from a `reverse_iterator` and returns a `reverse_iterator` addressing the element at the offset position.
 
@@ -542,7 +535,7 @@ After the -2 offset, the iterator rVPOS2 points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iterator__operator--"></a>  reverse_iterator::operator--
+## <a name="operator--"></a>  reverse_iterator::operator--
 
 Decrements the reverse_iterator to the previous element.
 
@@ -615,7 +608,7 @@ After the decrement, the iterator rVPOS1 points
 to the next-to-last element in the reversed sequence: 3.
 ```
 
-## <a name="reverse_iterator__operator-_eq"></a>  reverse_iterator::operator-=
+## <a name="operator-_eq"></a>  reverse_iterator::operator-=
 
 Subtracts a specified offset from a `reverse_iterator`.
 
@@ -690,7 +683,7 @@ After the -2 offset, the iterator rVPOS1 now points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
+## <a name="op-arrow"></a>  reverse_iterator::operator-&gt;
 
 Returns a pointer to the element addressed by the `reverse_iterator`.
 

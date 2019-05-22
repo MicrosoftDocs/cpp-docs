@@ -1,18 +1,11 @@
 ---
-title: "_exec, _wexec Functions | Microsoft Docs"
-ms.custom: ""
+title: "_exec, _wexec Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr100.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_texecve", "texecl", "_texeclpe", "texecve", "texecv", "texeclp", "texecle", "exec", "texeclpe", "_texecvp", "_texecl", "_texecle", "wexec", "_exec", "_texeclp", "_texecvpe", "texecvpe", "_texecv", "_wexec"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_texecle function", "_texecv function", "texeclpe function", "texecle function", "_texecl function", "texecv function", "_texeclp function", "_texecve function", "texecl function", "texecve function", "exec function", "texeclp function", "texecvp function", "texecvpe function", "processes, executing new", "_texecvp function", "_texeclpe function", "_wexec functions", "wexec functions", "_exec function", "_texecvpe function"]
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _exec, _wexec Functions
 
@@ -187,7 +180,7 @@ int main( int ac, char* av[] )
 
 **Header:** process.h
 
-## See Also
+## See also
 
 [Process and Environment Control](../c-runtime-library/process-and-environment-control.md)<br/>
 [abort](../c-runtime-library/reference/abort.md)<br/>

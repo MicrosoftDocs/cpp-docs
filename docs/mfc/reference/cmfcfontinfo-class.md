@@ -1,16 +1,9 @@
 ---
-title: "CMFCFontInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCFontInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCFontInfo [MFC], GetFullName", "CMFCFontInfo [MFC], m_nCharSet", "CMFCFontInfo [MFC], m_nPitchAndFamily", "CMFCFontInfo [MFC], m_nType", "CMFCFontInfo [MFC], m_strName", "CMFCFontInfo [MFC], m_strScript"]
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCFontInfo Class
 
@@ -52,7 +45,7 @@ You can attach a `CMFCFontInfo` object to an item of the [CMFCToolBarFontComboBo
 
 ## Example
 
-The following example demonstrates how to use various members of the `CMFCFontInfo` class. The example demonstrates how to get a `CMFCFontInfo` object from a `CMFCRibbonFontComboBox`, and how to access its local variables. This example is part of the [MSOffice 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various members of the `CMFCFontInfo` class. The example demonstrates how to get a `CMFCFontInfo` object from a `CMFCRibbonFontComboBox`, and how to access its local variables. This example is part of the [MSOffice 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#6](../../mfc/reference/codesnippet/cpp/cmfcfontinfo-class_1.cpp)]
 
@@ -177,7 +170,7 @@ const CString m_strScript;
 
 For more information, see the *lpszScript* parameter of the [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) constructor.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

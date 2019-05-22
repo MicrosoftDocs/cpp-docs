@@ -1,16 +1,9 @@
 ---
-title: "__shiftleft128 | Microsoft Docs"
-ms.custom: ""
+title: "__shiftleft128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__shiftleft128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__shiftleft128 intrinsic"]
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __shiftleft128
 
@@ -21,10 +14,10 @@ Shifts a 128-bit quantity, represented as two 64-bit quantities `LowPart` and `H
 ## Syntax
 
 ```
-unsigned __int64 __shiftleft128( 
-   unsigned __int64 LowPart, 
-   unsigned __int64 HighPart, 
-   unsigned char Shift 
+unsigned __int64 __shiftleft128(
+   unsigned __int64 LowPart,
+   unsigned __int64 HighPart,
+   unsigned char Shift
 );
 ```
 
@@ -95,7 +88,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__shiftright128](../intrinsics/shiftright128.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

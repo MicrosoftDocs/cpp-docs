@@ -1,20 +1,13 @@
 ---
-title: "Container Class::erase | Microsoft Docs"
-ms.custom: ""
+title: "Container Class::erase"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["erase method"]
 ms.assetid: abc091c5-5a80-4bd8-93a8-a2d9bde2efec
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Container Class::erase
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Erases an element.
 

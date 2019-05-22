@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: Using RFX | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: Using RFX"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (ODBC), implementing"]
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using RFX
 
@@ -30,17 +23,15 @@ The following table shows your role in relation to what the framework does for y
 
 |You|The framework|
 |---------|-------------------|
-
 |Declare your recordset classes with a wizard. Specify names and data types of field data members.|The wizard derives a `CRecordset` class and writes a [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) override for you, including an RFX function call for each field data member.|
 |(Optional) Manually add any needed parameter data members to the class. Manually add an RFX function call to `DoFieldExchange` for each parameter data member, add a call to [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) for the group of parameters, and specify the total number of parameters in [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams). See [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).||
 |(Optional) Manually bind additional columns to field data members. Manually increment [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields). See [Recordset: Dynamically Binding Data Columns (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).||
-
 |Construct an object of your recordset class. Before using the object, set the values of its parameter data members, if any.|For efficiency, the framework prebinds the parameters, using ODBC. When you pass parameter values, the framework passes them to the data source. Only the parameter values are sent for requeries, unless the sort and/or filter strings have changed.|
 |Open a recordset object using [CRecordset::Open](../../mfc/reference/crecordset-class.md#open).|Executes the recordset's query, binds columns to field data members of the recordset, and calls `DoFieldExchange` to exchange data between the first selected record and the recordset's field data members.|
 |Scroll in the recordset using [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) or a menu or toolbar command.|Calls `DoFieldExchange` to transfer data to the field data members from the new current record.|
 |Add, update, and delete records.|Calls `DoFieldExchange` to transfer data to the data source.|
 
-## See Also
+## See also
 
 [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)<br/>

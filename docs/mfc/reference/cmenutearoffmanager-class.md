@@ -1,16 +1,9 @@
 ---
-title: "CMenuTearOffManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CMenuTearOffManager Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMenuTearOffManager [MFC], CMenuTearOffManager", "CMenuTearOffManager [MFC], Build", "CMenuTearOffManager [MFC], GetRegPath", "CMenuTearOffManager [MFC], Initialize", "CMenuTearOffManager [MFC], IsDynamicID", "CMenuTearOffManager [MFC], Parse", "CMenuTearOffManager [MFC], Reset", "CMenuTearOffManager [MFC], SetInUse", "CMenuTearOffManager [MFC], SetupTearOffMenus"]
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMenuTearOffManager Class
 
@@ -51,7 +44,7 @@ In order to use tear-off menus in your application, you must have a `CMenuTearOf
 
 ## Example
 
-The following example demonstrates how to construct and initialize a `CMenuTearOffManager` object by calling the `CWinAppEX::EnableTearOffMenus` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct and initialize a `CMenuTearOffManager` object by calling the `CWinAppEX::EnableTearOffMenus` method. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#12](../../mfc/reference/codesnippet/cpp/cmenutearoffmanager-class_1.cpp)]
 
@@ -201,7 +194,7 @@ void SetupTearOffMenus(HMENU hMenu);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

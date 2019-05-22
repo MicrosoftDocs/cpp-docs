@@ -1,16 +1,9 @@
 ---
-title: "async_uuid (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "async_uuid (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.async_uuid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["async_uuid attribute"]
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # async_uuid
 
@@ -58,7 +51,7 @@ __interface ICustom {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)

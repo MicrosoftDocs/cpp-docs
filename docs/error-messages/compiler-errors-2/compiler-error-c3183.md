@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3183 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3183"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3183"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3183"]
 ms.assetid: dbd0f020-c739-43c9-947e-9ce21537331b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3183
 

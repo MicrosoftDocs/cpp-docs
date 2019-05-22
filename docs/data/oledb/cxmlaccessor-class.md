@@ -1,16 +1,9 @@
 ---
-title: "CXMLAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CXMLAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor", "ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData", "ATL::CXMLAccessor::GetXMLRowData", "ATL.CXMLAccessor.GetXMLRowData", "CXMLAccessor::GetXMLRowData", "CXMLAccessor.GetXMLRowData", "GetXMLRowData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CXMLAccessor class", "GetXMLColumnData method", "GetXMLRowData method"]
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CXMLAccessor Class
 
@@ -83,7 +76,7 @@ Retrieves the entire contents of a table as XML-formatted string data, by row.
 ### Syntax
 
 ```cpp
-HRESULT GetXMLRowData(CSimpleStringW& strOutput, 
+HRESULT GetXMLRowData(CSimpleStringW& strOutput,
    bool bAppend = false) throw();
 ```
 
@@ -109,7 +102,7 @@ The following shows how the row data is formatted in XML. `DATA` below represent
 
 `</row>`
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

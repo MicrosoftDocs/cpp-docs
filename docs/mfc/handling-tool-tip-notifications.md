@@ -1,15 +1,8 @@
 ---
-title: "Handling Tool Tip Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Handling Tool Tip Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "CToolBarCtrl class [MFC], handling notifications", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
 ms.assetid: ddb93b5f-2e4f-4537-8053-3453c86e2bbb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling Tool Tip Notifications
 
@@ -40,8 +33,7 @@ In addition to the **TTN_NEEDTEXT** notification, a tool tip control can send th
 
 For an example handler function and more information about enabling tool tips, see [Tool Tips](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

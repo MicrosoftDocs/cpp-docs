@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4470 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4470"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4470"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4470"]
 ms.assetid: f52a3eaa-a235-4747-a47d-9ec4ad4cb0ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4470
 

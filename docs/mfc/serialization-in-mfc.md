@@ -1,15 +1,8 @@
 ---
-title: "Serialization in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Serialization in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes [MFC], serialization", "bypassing serialization [MFC]", "MFC, serialization", "serialization [MFC], MFC", "serialization [MFC], bypassing"]
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Serialization in MFC
 
@@ -38,7 +31,7 @@ The following articles cover the two main tasks required for serialization:
 
 The article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md) describes when serialization is an appropriate input/output technique in database applications.
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)<br/>

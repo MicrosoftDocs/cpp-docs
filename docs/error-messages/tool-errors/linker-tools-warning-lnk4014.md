@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4014 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4014"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4014"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4014"]
 ms.assetid: 394903e9-3ded-4ea4-b7c0-a3535d4b4da4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4014
 

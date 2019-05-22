@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Adding Animation to an MFC Project | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Adding Animation to an MFC Project"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["animation [MFC]", "MFC, animation"]
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adding Animation to an MFC Project
 
@@ -37,9 +30,9 @@ To complete this walkthrough, you must have Visual Studio.
 
 ### To create an MFC application
 
-1. On the **File** menu, point to **New** and then click **Project**.
+1. Use the **MFC Application Wizard** to create an MFC application. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 
-1. In the **New Project** dialog box, in the left pane under **Installed Templates**, expand **Visual C++** and then select **MFC**. In the middle pane, select **MFC Application**. In the **Name** box, type *MFCAnimationWalkthrough*. Click **OK**.
+1. In the **Name** box, type *MFCAnimationWalkthrough*. Click **OK**.
 
 1. In the **MFC Application Wizard** dialog box, verify that **Application Type** is **Multiple Documents**, **Project Style** is **Visual Studio**, and the **Document/View architecture support** option is selected. Click **Finish**.
 

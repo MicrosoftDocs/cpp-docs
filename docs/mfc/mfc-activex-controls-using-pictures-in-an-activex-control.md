@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Controls: Using Pictures in an ActiveX Control | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Using Pictures in an ActiveX Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["LPPICTUREDISP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OnDraw method, MFC ActiveX controls", "MFC ActiveX controls [MFC], pictures", "OnDraw method [MFC]", "OnResetState method [MFC]", "CLSID_CPicturePropPage [MFC]"]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Using Pictures in an ActiveX Control
 
@@ -142,9 +135,8 @@ The picture property must be made persistent so that information added at design
 
 After you complete the modifications, rebuild your project to incorporate the new functionality of the custom Picture property and use Test Container to test the new property. See [Testing Properties and Events with Test Container](../mfc/testing-properties-and-events-with-test-container.md) for information on how to access the test container.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Using Fonts](../mfc/mfc-activex-controls-using-fonts.md)<br/>
 [MFC ActiveX Controls: Property Pages](../mfc/mfc-activex-controls-property-pages.md)
-

@@ -1,14 +1,9 @@
 ---
-title: "&lt;string&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;string&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["string/std::getline", "string/std::stod", "string/std::stof", "string/std::stoi", "string/std::stol", "string/std::stold", "string/std::stoll", "string/std::stoul", "string/std::stoull", "string/std::swap", "string/std::to_string", "string/std::to_wstring"]
 ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]", "std::stoi [C++]", "std::stol [C++]", "std::stold [C++]", "std::stoll [C++]", "std::stoul [C++]", "std::stoull [C++]", "std::swap [C++]", "std::to_string [C++]", "std::to_wstring [C++]"]
-ms.workload: ["cplusplus"]
 ---
 # &lt;string&gt; functions
 
@@ -129,7 +124,6 @@ int main()
         cout << p << endl;
     }
 }
-
 ```
 
 ## <a name="stod"></a>  stod

@@ -1,14 +1,8 @@
 ---
-title: "Concurrency namespace enums (AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency namespace enums (AMP)"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
-dev_langs: ["C++"]
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency namespace enums (AMP)
 
@@ -49,6 +43,6 @@ enum queuing_mode;
 |`queuing_mode_immediate`|A queuing mode that specifies that any commands, for example, [parallel_for_each Function (C++ AMP)](concurrency-namespace-functions-amp.md#parallel_for_each), are sent to the corresponding accelerator device as soon as they return to the caller.|
 |`queuing_mode_automatic`|A queuing mode that specifies that commands be queued up on a command queue that corresponds to the [accelerator_view](accelerator-view-class.md) object. Commands are sent to the device when [accelerator_view::flush](accelerator-view-class.md#flush) is called.|
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

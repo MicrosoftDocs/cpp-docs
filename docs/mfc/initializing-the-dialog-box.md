@@ -1,15 +1,8 @@
 ---
-title: "Initializing the Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Initializing the Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["initializing dialog boxes [MFC]", "OnInitDialog method [MFC]", "modal dialog boxes [MFC], initializing", "modeless dialog boxes [MFC], initializing", "MFC dialog boxes [MFC], initializing"]
 ms.assetid: 968142f5-19f9-4b34-a1d4-8e6412d4379b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing the Dialog Box
 
@@ -17,7 +10,6 @@ After the dialog box and all of its controls are created but just before the dia
 
 If you want to set your dialog box's background color (and that of all other dialog boxes in your application), see [Setting the Dialog Box's Background Color](../mfc/setting-the-dialog-boxs-background-color.md).
 
-## See Also
+## See also
 
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

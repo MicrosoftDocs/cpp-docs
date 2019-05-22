@@ -1,15 +1,8 @@
 ---
-title: "Tabs and Tab Control Attributes | Microsoft Docs"
-ms.custom: ""
+title: "Tabs and Tab Control Attributes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [MFC], reference topics", "tab controls [MFC], attributes", "tabs [MFC]", "tabs [MFC], attributes", "CTabCtrl class [MFC], tab control attributes"]
 ms.assetid: ecf190cb-f323-4751-bfdb-766dbe6bb553
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tabs and Tab Control Attributes
 
@@ -23,8 +16,7 @@ The following code clears the state of all tab items and then modifies the state
 
 For more information about tab attributes, see [Tabs and Tab Attributes](/windows/desktop/Controls/tab-controls) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.
 
-## See Also
+## See also
 
 [Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

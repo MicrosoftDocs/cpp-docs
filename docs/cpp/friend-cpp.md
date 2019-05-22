@@ -1,16 +1,9 @@
 ---
-title: "friend (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "07/02/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "friend (C++)"
+ms.date: "11/19/2018"
 f1_keywords: ["friend_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["member access, from friend functions", "friend classes [C++]", "friend keyword [C++]"]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # friend (C++)
 
@@ -227,8 +220,8 @@ Friendship is not inherited, meaning that classes derived from `YourOtherClass` 
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Implications of friend relationship](../cpp/media/vc38v41.gif "vc38V41")
-Implications of friend Relationship
+![Implications of friend relationship](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
+Implications of friend relationship
 
 ## Inline friend definitions
 

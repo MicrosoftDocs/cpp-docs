@@ -1,13 +1,7 @@
 ---
-title: "-WHOLEARCHIVE (Include All Library Object Files) | Microsoft Docs"
-ms.custom: ""
+title: "/WHOLEARCHIVE (Include All Library Object Files)"
 ms.date: "11/04/2016"
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WHOLEARCHIVE (Include All Library Object Files)
 
@@ -27,13 +21,13 @@ The /WHOLEARCHIVE option was introduced in Visual Studio 2015 Update 2.
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Command Line** property page under **Configuration Properties**, **Linker**.
 
 1. Add the /WHOLEARCHIVE option to the **Additional Options** text box.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

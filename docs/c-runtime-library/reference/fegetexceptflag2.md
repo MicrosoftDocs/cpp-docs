@@ -1,19 +1,12 @@
 ---
-title: "fegetexceptflag | Microsoft Docs"
-ms.custom: ""
+title: "fegetexceptflag"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["fegetexceptflag"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fegetexceptflag", "fenv/fegetexceptflag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fegetexceptflag function"]
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fegetexceptflag
 
@@ -26,7 +19,6 @@ int fegetexceptflag(
    fexcept_t* pstatus,
    int excepts
 );
-
 ```
 
 ### Parameters

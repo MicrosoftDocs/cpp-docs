@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6027 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6027"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6027"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6027"]
 ms.assetid: c06a62b3-08d9-4bf5-bcad-8340ec552f69
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6027
 

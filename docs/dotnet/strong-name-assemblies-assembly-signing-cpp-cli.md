@@ -1,15 +1,8 @@
 ---
-title: "Strong Name Assemblies (Assembly Signing) (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Strong Name Assemblies (Assembly Signing) (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assemblies [C++]", "signing assemblies", ".NET Framework [C++], assembly signing", "assemblies [C++], signing", "linker [C++], assembly signing", "strong-named assemblies [C++]"]
 ms.assetid: c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Strong Name Assemblies (Assembly Signing) (C++/CLI)
 
@@ -29,7 +22,7 @@ Reasons for not using the attributes include the fact that the key name is visib
 
 If you build at the command line, use linker options to sign your assembly, and then run a post-processing tool (like mt.exe), you will need to re-sign the assembly with sn.exe. Alternatively, you can build and delay sign the assembly and after running post-processing tools, complete the signing.
 
-If you use the signing attributes when building in the development environment, you can successfully sign the assembly by explicitly calling sn.exe ([Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool)) in a post-build event. For more information, see [Specifying Build Events](../ide/specifying-build-events.md). Build times may be less if you use attributes and a post-build event, compared to using a linker options.
+If you use the signing attributes when building in the development environment, you can successfully sign the assembly by explicitly calling sn.exe ([Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool)) in a post-build event. For more information, see [Specifying Build Events](../build/specifying-build-events.md). Build times may be less if you use attributes and a post-build event, compared to using a linker options.
 
 The following linker options support assembly signing:
 
@@ -41,6 +34,6 @@ The following linker options support assembly signing:
 
 For more information on strong assemblies, see [Creating and Using Strong-Named Assemblies](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

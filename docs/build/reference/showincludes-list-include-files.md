@@ -1,16 +1,9 @@
 ---
-title: "-showIncludes (List Include Files) | Microsoft Docs"
-ms.custom: ""
+title: "/showIncludes (List Include Files)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ShowIncludes", "VC.Project.VCCLCompilerTool.ShowIncludes", "/showincludes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include files", "/showIncludes compiler option [C++]", "include files, displaying in compilation", "-showIncludes compiler option [C++]", "showIncludes compiler option [C++]"]
 ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /showIncludes (List Include Files)
 
@@ -43,7 +36,7 @@ The **/showIncludes** option emits to `stderr`, not `stdout`.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -55,7 +48,7 @@ The **/showIncludes** option emits to `stderr`, not `stdout`.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

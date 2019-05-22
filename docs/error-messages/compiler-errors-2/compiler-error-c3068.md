@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3068 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3068"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3068"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3068"]
 ms.assetid: 613e3447-b4a8-4268-a661-297bed63ccdf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3068
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3480 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3480"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3480"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3480"]
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3480
 
@@ -50,6 +43,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

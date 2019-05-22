@@ -1,15 +1,8 @@
 ---
-title: "Multithreading: MFC Programming Tips | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading: MFC Programming Tips"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], programming tips", "handle maps [C++]", "access control [C++], multithreading", "objects [C++], multiple threads and", "non-MFC threads [C++]", "threading [MFC], programming tips", "critical sections [C++]", "synchronization [C++], multithreading", "programming [C++], multithreaded", "communications [C++], between threads", "threading [C++], best practices", "troubleshooting [C++], multithreading", "Windows handle maps [C++]"]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading: MFC Programming Tips
 
@@ -47,6 +40,6 @@ For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapp
 
 MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK.
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

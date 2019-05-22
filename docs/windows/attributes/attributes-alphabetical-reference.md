@@ -1,16 +1,11 @@
 ---
-title: "Attributes Alphabetical Reference | Microsoft Docs"
+title: "Attributes Alphabetical Reference"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.attributes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes Alphabetical Reference
 
@@ -124,7 +119,7 @@ The following attributes are available in the Microsoft C++ compiler:
 |[vi_progid](vi-progid.md)|Specifies a version-independent form of the ProgID.|
 |[wire_marshal](wire-marshal.md)|Specifies a data type that will be used for transmission instead of an application-specific data type.|
 
-## See Also
+## See also
 
 [C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
 [Attributes by Group](attributes-by-group.md)<br/>

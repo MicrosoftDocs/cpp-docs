@@ -1,16 +1,9 @@
 ---
-title: "CWorkerThread Class | Microsoft Docs"
-ms.custom: ""
+title: "CWorkerThread Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CWorkerThread", "ATLUTIL/ATL::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::CWorkerThread", "ATLUTIL/ATL::CWorkerThread::AddHandle", "ATLUTIL/ATL::CWorkerThread::AddTimer", "ATLUTIL/ATL::CWorkerThread::GetThreadHandle", "ATLUTIL/ATL::CWorkerThread::GetThreadId", "ATLUTIL/ATL::CWorkerThread::Initialize", "ATLUTIL/ATL::CWorkerThread::RemoveHandle", "ATLUTIL/ATL::CWorkerThread::Shutdown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWorkerThread class"]
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWorkerThread Class
 
@@ -238,7 +231,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-When the handle is removed [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) will be called on the associated object that was passed to [AddHandle](#addhandle). If this call fails, `CWorkerThread` will call the Windows [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) function on the handle.
+When the handle is removed [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) will be called on the associated object that was passed to [AddHandle](#addhandle). If this call fails, `CWorkerThread` will call the Windows [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) function on the handle.
 
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown
 
@@ -263,7 +256,7 @@ To reuse the object, call [CWorkerThread::Initialize](#initialize) after calling
 
 Note that calling `Shutdown` on an object initialized with a pointer to another `CWorkerThread` object has no effect and always returns S_OK.
 
-## See Also
+## See also
 
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [Classes](../../atl/reference/atl-classes.md)<br/>

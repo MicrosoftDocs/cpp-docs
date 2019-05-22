@@ -1,16 +1,9 @@
 ---
-title: "allocator_fixed_size Class | Microsoft Docs"
-ms.custom: ""
+title: "allocator_fixed_size Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["allocators/stdext::allocators::allocator_fixed_size", "allocators/stdext::allocator_fixed_size", "stdext::allocators::allocator_fixed_size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stdext::allocators [C++], allocator_fixed_size", "stdext::allocator_fixed_size"]
 ms.assetid: 138f3ef8-b0b3-49c3-9486-58f2213c172f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # allocator_fixed_size Class
 

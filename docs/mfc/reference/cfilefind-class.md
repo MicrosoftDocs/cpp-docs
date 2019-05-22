@@ -1,16 +1,9 @@
 ---
-title: "CFileFind Class | Microsoft Docs"
-ms.custom: ""
+title: "CFileFind Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFileFind", "AFX/CFileFind", "AFX/CFileFind::CFileFind", "AFX/CFileFind::Close", "AFX/CFileFind::FindFile", "AFX/CFileFind::FindNextFile", "AFX/CFileFind::GetCreationTime", "AFX/CFileFind::GetFileName", "AFX/CFileFind::GetFilePath", "AFX/CFileFind::GetFileTitle", "AFX/CFileFind::GetFileURL", "AFX/CFileFind::GetLastAccessTime", "AFX/CFileFind::GetLastWriteTime", "AFX/CFileFind::GetLength", "AFX/CFileFind::GetRoot", "AFX/CFileFind::IsArchived", "AFX/CFileFind::IsCompressed", "AFX/CFileFind::IsDirectory", "AFX/CFileFind::IsDots", "AFX/CFileFind::IsHidden", "AFX/CFileFind::IsNormal", "AFX/CFileFind::IsReadOnly", "AFX/CFileFind::IsSystem", "AFX/CFileFind::IsTemporary", "AFX/CFileFind::MatchesMask", "AFX/CFileFind::CloseContext", "AFX/CFileFind::m_pTM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFileFind [MFC], CFileFind", "CFileFind [MFC], Close", "CFileFind [MFC], FindFile", "CFileFind [MFC], FindNextFile", "CFileFind [MFC], GetCreationTime", "CFileFind [MFC], GetFileName", "CFileFind [MFC], GetFilePath", "CFileFind [MFC], GetFileTitle", "CFileFind [MFC], GetFileURL", "CFileFind [MFC], GetLastAccessTime", "CFileFind [MFC], GetLastWriteTime", "CFileFind [MFC], GetLength", "CFileFind [MFC], GetRoot", "CFileFind [MFC], IsArchived", "CFileFind [MFC], IsCompressed", "CFileFind [MFC], IsDirectory", "CFileFind [MFC], IsDots", "CFileFind [MFC], IsHidden", "CFileFind [MFC], IsNormal", "CFileFind [MFC], IsReadOnly", "CFileFind [MFC], IsSystem", "CFileFind [MFC], IsTemporary", "CFileFind [MFC], MatchesMask", "CFileFind [MFC], CloseContext", "CFileFind [MFC], m_pTM"]
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFileFind Class
 
@@ -281,7 +274,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was created.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was created.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -422,7 +415,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last accessed.
 
 ### Return Value
 
@@ -451,7 +444,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last written to.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last written to.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -783,7 +776,7 @@ You must call [FindNextFile](#findnextfile) at least once before calling `Matche
 
 [!code-cpp[NVC_MFCFiles#35](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_5.cpp)]
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

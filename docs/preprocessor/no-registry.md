@@ -1,16 +1,9 @@
 ---
-title: "no_registry | Microsoft Docs"
-ms.custom: ""
+title: "no_registry"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_registry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_registry attribute"]
 ms.assetid: d30de4e2-551c-428c-98fd-951330d578d3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_registry
 
@@ -37,7 +30,7 @@ When `auto_search` is specified, the additional `#import`s will be generated wit
 
 **no_registry** is useful if you want to import cross referenced type libraries without the risk of the compiler finding an older version of the file in the registry. **no_registry** is also useful if the type library is not registered.
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

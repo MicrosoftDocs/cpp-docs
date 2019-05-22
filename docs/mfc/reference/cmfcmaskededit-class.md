@@ -1,16 +1,9 @@
 ---
-title: "CMFCMaskedEdit Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCMaskedEdit Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars", "AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCMaskedEdit [MFC], DisableMask", "CMFCMaskedEdit [MFC], EnableGetMaskedCharsOnly", "CMFCMaskedEdit [MFC], EnableMask", "CMFCMaskedEdit [MFC], EnableSelectByGroup", "CMFCMaskedEdit [MFC], EnableSetMaskedCharsOnly", "CMFCMaskedEdit [MFC], GetWindowText", "CMFCMaskedEdit [MFC], SetValidChars", "CMFCMaskedEdit [MFC], SetWindowText", "CMFCMaskedEdit [MFC], IsMaskedChar"]
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCMaskedEdit Class
 
@@ -69,7 +62,7 @@ If you do not call one or more methods to initialize the mask, valid characters,
 
 ## Example
 
-The following example demonstrates how to set up a mask (for example a phone number) by using the `EnableMask` method to create the mask for the masked edit control, the `SetValidChars` method to specify a string of valid characters that the user can enter, and `SetWindowText` method to display a prompt in the masked edit control. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to set up a mask (for example a phone number) by using the `EnableMask` method to create the mask for the masked edit control, the `SetValidChars` method to specify a string of valid characters that the user can enter, and `SetWindowText` method to display a prompt in the masked edit control. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#12](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_2.cpp)]
@@ -317,7 +310,7 @@ This method sets the control text.
 
 This method redefines [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

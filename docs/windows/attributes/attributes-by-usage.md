@@ -1,15 +1,10 @@
 ---
-title: "Attributes by Usage | Microsoft Docs"
+title: "Attributes by Usage"
 ms.custom: "index-page"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI]"]
 ms.assetid: 8be2de10-b1ff-4ca4-a114-75318408593c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Attributes by Usage
 
@@ -75,7 +70,7 @@ You must observe these rules for defining an interface:
 
 When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the same interface name in different attribute projects, the same GUID is generated.
 
-## See Also
+## See also
 
 [C++ Attributes for COM and .NET](cpp-attributes-com-net.md)<br/>
 [Attributes by Group](attributes-by-group.md)<br/>

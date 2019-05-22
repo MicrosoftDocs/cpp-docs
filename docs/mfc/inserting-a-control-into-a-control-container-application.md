@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Control Containers: Inserting a Control into a Control Container Application | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Control Containers: Inserting a Control into a Control Container Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX control containers [MFC], inserting controls", "ActiveX controls [MFC], adding to projects"]
 ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Control Containers: Inserting a Control into a Control Container Application
 
@@ -21,7 +14,6 @@ Once you add the control, you need to add a member variable (of the ActiveX cont
 
 Once you have added the member variable a class, referred to as a wrapper class, is automatically generated and added to your project. This class is used as an interface between the control container and the embedded control.
 
-## See Also
+## See also
 
 [ActiveX Control Containers](../mfc/activex-control-containers.md)
-

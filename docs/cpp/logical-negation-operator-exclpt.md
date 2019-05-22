@@ -1,16 +1,9 @@
 ---
-title: "Logical Negation Operator: ! | Microsoft Docs"
-ms.custom: ""
+title: "Logical Negation Operator: !"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["!", "Not"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["! operator", "NOT operator", "logical negation"]
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Logical Negation Operator: !
 

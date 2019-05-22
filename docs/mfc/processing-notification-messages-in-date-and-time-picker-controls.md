@@ -1,16 +1,9 @@
 ---
-title: "Processing Notification Messages in Date and Time Picker Controls | Microsoft Docs"
-ms.custom: ""
+title: "Processing Notification Messages in Date and Time Picker Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["DTN_CLOSEUP", "DTN_DATETIMECHANGE", "DTN_DROPDOWN"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DTN_DROPDOWN notification [MFC]", "DTN_DATETIMECHANGE notification [MFC]", "DTN_CLOSEUP notification [MFC]", "DateTimePicker control [MFC], handling notifications", "CDateTimeCtrl class [MFC], handling notifications", "DTN_FORMAT notification [MFC]", "DateTimePicker control [MFC]"]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in Date and Time Picker Controls
 
@@ -34,8 +27,7 @@ The following list describes the various notifications sent by the date and time
 
 - DTN_WMKEYDOWN Notifies the parent when the user types in a callback field. Handle this notification to emulate the same keyboard response supported for non-callback fields in a date and time picker control. For more information on this notification, see [Supporting Callback Fields in a DTP Control](/windows/desktop/Controls/date-and-time-picker-controls) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

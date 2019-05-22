@@ -1,16 +1,9 @@
 ---
-title: "cancellation_token_source Class | Microsoft Docs"
-ms.custom: ""
+title: "cancellation_token_source Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_source class"]
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # cancellation_token_source Class
 
@@ -171,6 +164,6 @@ Operand.
 
 ### Return Value
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

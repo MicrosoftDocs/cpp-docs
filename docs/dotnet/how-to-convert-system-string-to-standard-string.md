@@ -1,15 +1,9 @@
 ---
-title: "How to: Convert System::String to Standard String | Microsoft Docs"
+title: "How to: Convert System::String to Standard String"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["C++ Standard Library, converting System::String to standard string", "string conversion, System::String"]
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert System::String to Standard String
 
@@ -61,6 +55,6 @@ abcd
 efgh
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

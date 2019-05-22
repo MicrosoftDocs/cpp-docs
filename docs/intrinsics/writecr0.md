@@ -1,16 +1,9 @@
 ---
-title: "__writecr0 | Microsoft Docs"
-ms.custom: ""
+title: "__writecr0"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_writecr0"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_writecr0 intrinsic"]
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writecr0
 
@@ -21,8 +14,8 @@ Writes the value `Data` to the CR0 register.
 ## Syntax
 
 ```
-void writecr0( 
-   unsigned __int64 Data 
+void writecr0(
+   unsigned __int64 Data
 );
 ```
 
@@ -45,6 +38,6 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,16 +1,9 @@
 ---
-title: "Creating an MFC DLL Project | Microsoft Docs"
-ms.custom: ""
+title: "Creating an MFC DLL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcdll.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating projects", "DLLs [MFC], MFC", "projects [MFC], creating", "DLLs [MFC], creating"]
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an MFC DLL Project
 
@@ -21,7 +14,7 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
 
 ### To create an MFC DLL Project using the MFC DLL Wizard
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
 
 **Note** In the **New Project** dialog box, select the `MFC DLL` icon in the Templates pane to open the MFC DLL Wizard.
 
@@ -32,11 +25,11 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
 
 1. Click **Finish** to close the wizard and open your new project in **Solution Explorer**.
 
-Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md).
+Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual Studio C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
-## See Also
+## See also
 
-[Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
+[C++ project types in Visual Studio](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)
+[Property Pages](../../build/reference/property-pages-visual-cpp.md)
 

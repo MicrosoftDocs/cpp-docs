@@ -1,16 +1,9 @@
 ---
-title: "plus Struct | Microsoft Docs"
-ms.custom: ""
+title: "plus Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::plus"]
-dev_langs: ["C++"]
+f1_keywords: ["functional/std::plus"]
 helpviewer_keywords: ["plus class", "plus struct"]
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # plus Struct
 

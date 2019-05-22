@@ -1,16 +1,9 @@
 ---
-title: "while Statement (C++) | Microsoft Docs"
-ms.custom: ""
+title: "while Statement (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["while_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["while keyword [C++]", "while keyword [C++], syntax"]
 ms.assetid: 358dbe76-5e5e-4af5-b575-c2293c636899
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # while Statement (C++)
 
@@ -20,7 +13,7 @@ Executes *statement* repeatedly until *expression* evaluates to zero.
 
 ```
 while ( expression )
-   statement
+   statement
 ```
 
 ## Remarks

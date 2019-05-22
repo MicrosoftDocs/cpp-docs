@@ -1,15 +1,8 @@
 ---
-title: "Marshaling Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Marshaling Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]
-dev_langs: ["C++"]
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Marshaling Global Functions
 
@@ -113,6 +106,6 @@ A standard HRESULT value.
 
 See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

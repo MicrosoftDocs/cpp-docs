@@ -1,15 +1,8 @@
 ---
-title: "task_group Class | Microsoft Docs"
-ms.custom: ""
+title: "task_group Class"
 ms.date: "07/20/2018"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["task_group", "PPL/concurrency::task_group", "PPL/concurrency::task_group::task_group"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_group class"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # task_group Class
 
@@ -242,7 +235,7 @@ Calling `wait` on a `task_group` object resets it to a clean state where it can 
 
 In the non-exceptional path of execution, you have a mandate to call either this method or the `run_and_wait` method before the destructor of the `task_group` executes.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [structured_task_group Class](structured-task-group-class.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3771 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3771"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3771"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3771"]
 ms.assetid: 68c23b25-7f21-4eaa-8f7e-38fda1130a69
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3771
 
@@ -46,6 +39,6 @@ namespace NB {
 }
 ```
 
-## See Also
+## See also
 
 [Templates](../../cpp/templates-cpp.md)

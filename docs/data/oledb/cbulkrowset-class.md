@@ -1,16 +1,9 @@
 ---
-title: "CBulkRowset Class | Microsoft Docs"
-ms.custom: ""
+title: "CBulkRowset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["ATL::CBulkRowset", "ATL.CBulkRowset", "ATL::CBulkRowset<TAccessor>", "CBulkRowset", "ATL.CBulkRowset<TAccessor>", "CBulkRowset::AddRefRows", "AddRefRows", "CBulkRowset.AddRefRows", "ATL.CBulkRowset<TAccessor>.AddRefRows", "ATL::CBulkRowset::AddRefRows", "CBulkRowset<TAccessor>::AddRefRows", "ATL.CBulkRowset.AddRefRows", "ATL::CBulkRowset<TAccessor>::AddRefRows", "ATL.CBulkRowset<TAccessor>.CBulkRowset", "ATL::CBulkRowset::CBulkRowset", "CBulkRowset.CBulkRowset", "CBulkRowset::CBulkRowset", "ATL.CBulkRowset.CBulkRowset", "ATL::CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset", "ATL.CBulkRowset.MoveFirst", "CBulkRowset<TAccessor>.MoveFirst", "ATL.CBulkRowset<TAccessor>.MoveFirst", "ATL::CBulkRowset::MoveFirst", "ATL::CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset::MoveFirst", "CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset.MoveFirst", "CBulkRowset.MoveLast", "ATL.CBulkRowset.MoveLast", "ATL::CBulkRowset<TAccessor>::MoveLast", "CBulkRowset::MoveLast", "CBulkRowset<TAccessor>.MoveLast", "ATL::CBulkRowset::MoveLast", "ATL.CBulkRowset<TAccessor>.MoveLast", "CBulkRowset<TAccessor>::MoveLast", "MoveLast","ATL.CBulkRowset<TAccessor>.MoveNext", "ATL::CBulkRowset::MoveNext", "CBulkRowset::MoveNext", "ATL.CBulkRowset.MoveNext", "CBulkRowset.MoveNext", "ATL::CBulkRowset<TAccessor>::MoveNext", "CBulkRowset<TAccessor>.MoveNext", "CBulkRowset<TAccessor>::MoveNext", "CBulkRowset::MovePrev", "MovePrev", "CBulkRowset<TAccessor>::MovePrev", "ATL::CBulkRowset<TAccessor>::MovePrev", "CBulkRowset<TAccessor>.MovePrev", "ATL::CBulkRowset::MovePrev", "CBulkRowset.MovePrev", "ATL.CBulkRowset.MovePrev", "ATL.CBulkRowset<TAccessor>.MovePrev", "CBulkRowset<TAccessor>::MoveToBookmark", "CBulkRowset.MoveToBookmark", "MoveToBookmark", "ATL.CBulkRowset.MoveToBookmark", "CBulkRowset::MoveToBookmark", "ATL::CBulkRowset<TAccessor>::MoveToBookmark", "ATL::CBulkRowset::MoveToBookmark", "CBulkRowset.MoveToRatio", "ATL::CBulkRowset::MoveToRatio", "MoveToRatio", "CBulkRowset::MoveToRatio", "ATL.CBulkRowset<TAccessor>.MoveToRatio", "ATL::CBulkRowset<TAccessor>::MoveToRatio", "ATL.CBulkRowset.MoveToRatio", "CBulkRowset<TAccessor>::MoveToRatio", "ReleaseRows", "ATL.CBulkRowset<TAccessor>.ReleaseRows", "ATL::CBulkRowset<TAccessor>::ReleaseRows", "ATL.CBulkRowset.ReleaseRows", "CBulkRowset<TAccessor>::ReleaseRows", "ATL::CBulkRowset::ReleaseRows", "CBulkRowset::ReleaseRows", "CBulkRowset.ReleaseRows", "ATL.CBulkRowset.SetRows", "CBulkRowset::SetRows", "CBulkRowset<TAccessor>.SetRows", "ATL.CBulkRowset<TAccessor>.SetRows", "CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset::SetRows", "CBulkRowset.SetRows", "SetRows"]
-dev_langs: ["C++"]
+f1_keywords: ["ATL::CBulkRowset", "ATL.CBulkRowset", "ATL::CBulkRowset<TAccessor>", "CBulkRowset", "ATL.CBulkRowset<TAccessor>", "CBulkRowset::AddRefRows", "AddRefRows", "CBulkRowset.AddRefRows", "ATL.CBulkRowset<TAccessor>.AddRefRows", "ATL::CBulkRowset::AddRefRows", "CBulkRowset<TAccessor>::AddRefRows", "ATL.CBulkRowset.AddRefRows", "ATL::CBulkRowset<TAccessor>::AddRefRows", "ATL.CBulkRowset<TAccessor>.CBulkRowset", "ATL::CBulkRowset::CBulkRowset", "CBulkRowset.CBulkRowset", "CBulkRowset::CBulkRowset", "ATL.CBulkRowset.CBulkRowset", "ATL::CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset<TAccessor>::CBulkRowset", "CBulkRowset", "ATL.CBulkRowset.MoveFirst", "CBulkRowset<TAccessor>.MoveFirst", "ATL.CBulkRowset<TAccessor>.MoveFirst", "ATL::CBulkRowset::MoveFirst", "ATL::CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset::MoveFirst", "CBulkRowset<TAccessor>::MoveFirst", "CBulkRowset.MoveFirst", "CBulkRowset.MoveLast", "ATL.CBulkRowset.MoveLast", "ATL::CBulkRowset<TAccessor>::MoveLast", "CBulkRowset::MoveLast", "CBulkRowset<TAccessor>.MoveLast", "ATL::CBulkRowset::MoveLast", "ATL.CBulkRowset<TAccessor>.MoveLast", "CBulkRowset<TAccessor>::MoveLast", "MoveLast", "ATL.CBulkRowset<TAccessor>.MoveNext", "ATL::CBulkRowset::MoveNext", "CBulkRowset::MoveNext", "ATL.CBulkRowset.MoveNext", "CBulkRowset.MoveNext", "ATL::CBulkRowset<TAccessor>::MoveNext", "CBulkRowset<TAccessor>.MoveNext", "CBulkRowset<TAccessor>::MoveNext", "CBulkRowset::MovePrev", "MovePrev", "CBulkRowset<TAccessor>::MovePrev", "ATL::CBulkRowset<TAccessor>::MovePrev", "CBulkRowset<TAccessor>.MovePrev", "ATL::CBulkRowset::MovePrev", "CBulkRowset.MovePrev", "ATL.CBulkRowset.MovePrev", "ATL.CBulkRowset<TAccessor>.MovePrev", "CBulkRowset<TAccessor>::MoveToBookmark", "CBulkRowset.MoveToBookmark", "MoveToBookmark", "ATL.CBulkRowset.MoveToBookmark", "CBulkRowset::MoveToBookmark", "ATL::CBulkRowset<TAccessor>::MoveToBookmark", "ATL::CBulkRowset::MoveToBookmark", "CBulkRowset.MoveToRatio", "ATL::CBulkRowset::MoveToRatio", "MoveToRatio", "CBulkRowset::MoveToRatio", "ATL.CBulkRowset<TAccessor>.MoveToRatio", "ATL::CBulkRowset<TAccessor>::MoveToRatio", "ATL.CBulkRowset.MoveToRatio", "CBulkRowset<TAccessor>::MoveToRatio", "ReleaseRows", "ATL.CBulkRowset<TAccessor>.ReleaseRows", "ATL::CBulkRowset<TAccessor>::ReleaseRows", "ATL.CBulkRowset.ReleaseRows", "CBulkRowset<TAccessor>::ReleaseRows", "ATL::CBulkRowset::ReleaseRows", "CBulkRowset::ReleaseRows", "CBulkRowset.ReleaseRows", "ATL.CBulkRowset.SetRows", "CBulkRowset::SetRows", "CBulkRowset<TAccessor>.SetRows", "ATL.CBulkRowset<TAccessor>.SetRows", "CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset<TAccessor>::SetRows", "ATL::CBulkRowset::SetRows", "CBulkRowset.SetRows", "SetRows"]
 helpviewer_keywords: ["CBulkRowset class", "AddRefRows method", "CBulkRowset class, constructor", "MoveFirst method", "MoveLast method", "MoveNext method", "MovePrev method", "MoveToBookmark method", "MoveToRatio method", "ReleaseRows method", "SetRows method"]
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CBulkRowset Class
 
@@ -57,7 +50,7 @@ The following example demonstrates use of the `CBulkRowset` class.
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) to increment the reference count for all rows currently retrieved from the bulk rowset.
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) to increment the reference count for all rows currently retrieved from the bulk rowset.
 
 ### Syntax
 
@@ -156,7 +149,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### Return Value
 
-See [IRowset::GetData](/previous-versions/windows/desktop/ms716988) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
@@ -187,11 +180,11 @@ A standard HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602) in the *OLE DB Programmer's Reference*.
+Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) to decrement the reference count for all rows currently retrieved from the bulk rowset.
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) to decrement the reference count for all rows currently retrieved from the bulk rowset.
 
 ### Syntax
 
@@ -222,7 +215,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 
 If you call this function, it must be before the rowset is opened.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

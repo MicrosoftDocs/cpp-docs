@@ -1,16 +1,9 @@
 ---
-title: "uidefault (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "uidefault (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.uidefault"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["uidefault attribute"]
 ms.assetid: 200de0e0-2e34-40a2-bae4-8d485a62264d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # uidefault
 
@@ -60,7 +53,7 @@ __interface ICustom{
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)

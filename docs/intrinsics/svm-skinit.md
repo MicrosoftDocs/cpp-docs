@@ -1,16 +1,9 @@
 ---
-title: "__svm_skinit | Microsoft Docs"
-ms.custom: ""
+title: "__svm_skinit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_skinit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SKINIT instruction", "__svm_skinit intrinsic"]
 ms.assetid: 787ec781-4cf2-40a2-aa20-5192334b131a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_skinit
 
@@ -50,6 +43,6 @@ This function supports the interaction of a host's virtual machine monitor with 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

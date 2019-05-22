@@ -1,18 +1,11 @@
 ---
-title: "_countof Macro | Microsoft Docs"
-ms.custom: ""
+title: "_countof Macro"
 ms.date: "03/22/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_countof", "countof"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["countof macro", "_countof macro"]
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _countof Macro
 

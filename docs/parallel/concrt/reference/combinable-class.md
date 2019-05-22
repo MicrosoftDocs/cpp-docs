@@ -1,16 +1,9 @@
 ---
-title: "combinable Class | Microsoft Docs"
-ms.custom: ""
+title: "combinable Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["combinable", "PPL/concurrency::combinable", "PPL/concurrency::combinable::combinable", "PPL/concurrency::combinable::clear", "PPL/concurrency::combinable::combine", "PPL/concurrency::combinable::combine_each", "PPL/concurrency::combinable::local"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class"]
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # combinable Class
 
@@ -188,6 +181,6 @@ An existing `combinable` object to be copied into this one.
 
 A reference to this `combinable` object.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

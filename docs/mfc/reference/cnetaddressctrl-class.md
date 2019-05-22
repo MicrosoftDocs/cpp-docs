@@ -1,16 +1,9 @@
 ---
-title: "CNetAddressCtrl Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CNetAddressCtrl Class"
+ms.date: "11/19/2018"
 f1_keywords: ["CNetAddressCtrl", "AFXCMN/CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::Create", "AFXCMN/CNetAddressCtrl::CreateEx", "AFXCMN/CNetAddressCtrl::DisplayErrorTip", "AFXCMN/CNetAddressCtrl::GetAddress", "AFXCMN/CNetAddressCtrl::GetAllowType", "AFXCMN/CNetAddressCtrl::SetAllowType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CNetAddressCtrl [MFC], CNetAddressCtrl", "CNetAddressCtrl [MFC], Create", "CNetAddressCtrl [MFC], CreateEx", "CNetAddressCtrl [MFC], DisplayErrorTip", "CNetAddressCtrl [MFC], GetAddress", "CNetAddressCtrl [MFC], GetAllowType", "CNetAddressCtrl [MFC], SetAllowType"]
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CNetAddressCtrl Class
 
@@ -49,7 +42,7 @@ The `CNetAddressCtrl` class is derived from the [CEdit](../../mfc/reference/cedi
 
 The following figure depicts a dialog that contains a network address control. The text box (1) for the network address control contains an invalid network address. The infotip message (2) is displayed if the network address is invalid.
 
-![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")
+![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png "Dialog with a network address control and infotip.")
 
 ## Example
 
@@ -112,7 +105,7 @@ virtual BOOL Create(
 |Parameter|Description|
 |---------------|-----------------|
 |*dwStyle*|[in] A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|
+|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control.|
 |*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
 |*nID*|[in] The ID of the control.|
 
@@ -139,7 +132,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|
 |*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|
+|*rect*|[in] A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that contains the position and size of the control.|
 |*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
 |*nID*|[in] The ID of the control.|
 
@@ -230,7 +223,7 @@ Use the [CNetAddressCtrl::SetAllowType](#setallowtype) method to specify the typ
 
 This message invokes the [NetAddr_SetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_setallowtype) macro, which is described in the Windows SDK. That macro sends the NCM_SETALLOWTYPE message.
 
-## See Also
+## See also
 
 [CNetAddressCtrl Class](../../mfc/reference/cnetaddressctrl-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

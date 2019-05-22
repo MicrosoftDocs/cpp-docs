@@ -1,16 +1,9 @@
 ---
-title: "@SubStr | Microsoft Docs"
-ms.custom: ""
+title: "@SubStr"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["@SubStr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["@SubStr symbol"]
 ms.assetid: f4b8fc6e-14a0-46fe-8c27-6b3347a08504
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @SubStr
 

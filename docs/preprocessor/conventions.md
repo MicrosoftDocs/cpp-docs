@@ -1,15 +1,8 @@
 ---
-title: "Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor", "preprocessor, conventions"]
 ms.assetid: 469ce448-dc6c-4d0e-ba2b-e2e7a10155e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Conventions
 The conventions use different font attributes for different components of the syntax. The symbols and fonts are as follows:
@@ -23,6 +16,6 @@ The conventions use different font attributes for different components of the sy
 
 A colon (**:**) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines.
 
-## See Also
+## See also
 
 [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

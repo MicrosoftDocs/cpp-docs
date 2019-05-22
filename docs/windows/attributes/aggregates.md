@@ -1,16 +1,9 @@
 ---
-title: "aggregates (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "aggregates (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.aggregates"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregates attribute", "aggregation [C++]", "aggregate objects [C++], aggregates attribute", "aggregates [C++]"]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # aggregates
 
@@ -86,7 +79,7 @@ struct CObject : IObject
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

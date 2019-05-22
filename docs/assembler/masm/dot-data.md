@@ -1,16 +1,9 @@
 ---
-title: ".DATA | Microsoft Docs"
-ms.custom: ""
+title: ".DATA"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".DATA"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".DATA directive"]
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .DATA
 

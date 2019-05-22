@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2502 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2502"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2502"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2502"]
 ms.assetid: affa0b86-15fc-4e17-b7f2-6aad4a3771c4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2502
 

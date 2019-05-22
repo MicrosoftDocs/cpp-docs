@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmresume | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmresume"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmresume"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vmx_vmresume intrinsic", "VMRESUME instruction"]
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmresume
 
@@ -49,7 +42,7 @@ The `__vmx_vmresume` function is equivalent to the `VMRESUME` machine instructio
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "strerror Function | Microsoft Docs"
-ms.custom: ""
+title: "strerror Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["strerror function"]
 ms.assetid: 9fb9366e-d9a8-47d4-ad51-d98774a0617f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # strerror Function
 
@@ -57,6 +50,6 @@ The `strerror` function generates these messages:
 36  Resource deadlock would occur
 ```
 
-## See Also
+## See also
 
 [Library Functions](../c-language/library-functions.md)

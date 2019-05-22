@@ -1,16 +1,9 @@
 ---
-title: "_mm_cvttss_si64x | Microsoft Docs"
-ms.custom: ""
+title: "_mm_cvttss_si64x"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_cvttss_si64x"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_mm_cvttss_si64x intrinsic", "cvttss2si instruction"]
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_cvttss_si64x
 
@@ -21,8 +14,8 @@ Emits the x64 extended version of the Convert with Truncation Single-Precision F
 ## Syntax
 
 ```
-__int64 _mm_cvttss_si64x( 
-   __m128 value 
+__int64 _mm_cvttss_si64x(
+   __m128 value
 );
 ```
 
@@ -85,7 +78,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__m128](../cpp/m128.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,15 +1,8 @@
 ---
-title: "ODBC and the Database Classes | Microsoft Docs"
-ms.custom: ""
+title: "ODBC and the Database Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [C++], ODBC", "ODBC API functions [C++]", "ODBC classes [C++], MFC database classes", "MFC [C++], ODBC and"]
 ms.assetid: b166f82d-6f85-4556-aac8-fb851235d22c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC and the Database Classes
 
@@ -20,6 +13,6 @@ The MFC ODBC database classes encapsulate the ODBC API function calls you would 
 
 Although the database classes encapsulate ODBC functionality, they do not provide a one-to-one mapping of ODBC API functions. The database classes provide a higher level of abstraction, modeled after data-access objects found in Microsoft Access and Microsoft Visual Basic. For more information, see [ODBC and MFC](../../data/odbc/odbc-and-mfc.md).
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)

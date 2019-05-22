@@ -1,16 +1,9 @@
 ---
-title: "ML and ML64 Command-Line Reference | Microsoft Docs"
-ms.custom: ""
+title: "ML and ML64 Command-Line Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["ML"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/W* MASM compiler option", "/c MASM compiler option", "/EP MASM compiler option", "/Fe MASM compiler option", "/Zp MASM compiler option", "/AT MASM compiler option", "/Zm MASM compiler option", "/Sf MASM compiler option", "/Sp MASM compiler option", "/w MASM compiler option", "/Fl MASM compiler option", "/coff MASM compiler option", "/St MASM compiler option", "/Cx MASM compiler option", "/Sl MASM compiler option", "/Cu MASM compiler option", "MASM (Microsoft Macro Assembler), ML command-line reference", "/FPi MASM compiler option", "/Zf MASM compiler option", "ML environment variable", "/Fr MASM compiler option", "/help MASM compiler option", "/Sa MASM compiler option", "/Zd MASM compiler option", "/I MASM compiler option", "/? MASM compiler option", "/Bl MASM compiler option", "/Fm MASM compiler option", "/Fo MASM compiler option", "command-line reference [ML]", "/Sn MASM compiler option", "/Gd MASM compiler option", "/D* MASM compiler option", "environment variables, ML", "/Gc MASM compiler option", "/F* MASM compiler option", "/Sc MASM compiler option", "/H MASM compiler option", "/Zs MASM compiler option", "/omf MASM compiler option", "/Sg MASM compiler option", "/Cp MASM compiler option", "/Zi MASM compiler option", "/nologo MASM compiler option", "/Sx MASM compiler option", "/WX MASM compiler option", "/Ss MASM compiler option", "command line, reference [ML]", "/Ta MASM compiler option"]
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML and ML64 Command-Line Reference
 
@@ -20,9 +13,9 @@ For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/
 
 ## Syntax
 
-> ML [[*options*]] *filename* [[ [[*options*]]  *filename*]]
-
-> ML64 [[*options*]] *filename* [[ [[*options*]]  *filename*]] ... [[/link *linkoptions*]]
+> ML \[*options*] *filename* \[ \[*options*]  *filename*]
+>
+> ML64 \[*options*] *filename* \[ \[*options*]  *filename*] ... \[/link *linkoptions*]
 
 ### Parameters
 

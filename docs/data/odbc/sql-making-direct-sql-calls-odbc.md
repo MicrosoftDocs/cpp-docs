@@ -1,15 +1,8 @@
 ---
-title: "SQL: Making Direct SQL Calls (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "SQL: Making Direct SQL Calls (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["SQL, direct calls from ODBC", "SQL, calling directly from ODBC", "ODBC, SQL calls", "SQL calls", "direct SQL calls from ODBC"]
 ms.assetid: 091988d2-f5a5-4c2d-aa09-8779a9fb9607
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # SQL: Making Direct SQL Calls (ODBC)
 
@@ -32,6 +25,6 @@ You can use the DBMS itself to alter the schema or another tool that lets you pe
 
 You can directly execute a SQL call using a [CDatabase Class](../../mfc/reference/cdatabase-class.md) object. Set up your SQL statement string (usually in a `CString`) and pass it to the [CDatabase::ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) member function of your `CDatabase` object. If you use ODBC function calls to send a SQL statement that normally returns records, the records are ignored.
 
-## See Also
+## See also
 
 [SQL](../../data/odbc/sql.md)

@@ -1,16 +1,9 @@
 ---
-title: "-vmb, -vmg (Representation Method) | Microsoft Docs"
-ms.custom: ""
+title: "/vmb, -vmg (Representation Method)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/vmb", "/vmg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["vmb compiler option [C++]", "-vmg compiler option [C++]", "vmg compiler option [C++]", "-vmb compiler option [C++]", "/vmb compiler option [C++]", "representation method compiler options [C++]", "/vmg compiler option [C++]"]
 ms.assetid: ecdb391c-7dab-40b1-916b-673d10889fd4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /vmb, /vmg (Representation Method)
 
@@ -33,7 +26,7 @@ You can also use [pointers_to_members](../../preprocessor/pointers-to-members.md
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -45,7 +38,7 @@ You can also use [pointers_to_members](../../preprocessor/pointers-to-members.md
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

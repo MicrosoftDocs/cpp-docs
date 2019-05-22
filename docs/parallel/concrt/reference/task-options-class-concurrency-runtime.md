@@ -1,15 +1,8 @@
 ---
-title: "task_options Class (Concurrency Runtime) | Microsoft Docs"
-ms.custom: ""
+title: "task_options Class (Concurrency Runtime)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ppltasks/concurrency::task_options"]
-dev_langs: ["C++"]
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # task_options Class (Concurrency Runtime)
 
@@ -168,6 +161,6 @@ task_options(
 
 `_TaskOptions`
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

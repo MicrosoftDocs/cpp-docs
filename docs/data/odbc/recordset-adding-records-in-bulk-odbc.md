@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Adding Records in Bulk (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Adding Records in Bulk (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, adding records", "recordsets, adding records", "bulk record additions to recordsets"]
 ms.assetid: 4685f656-14b9-4f10-a1c5-147b2b89a0b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Adding Records in Bulk (ODBC)
 
@@ -30,7 +23,7 @@ If the ODBC Cursor Library is loaded or the ODBC driver does not support adding,
 appendOnly | optimizeBulkAdd
 ```
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>

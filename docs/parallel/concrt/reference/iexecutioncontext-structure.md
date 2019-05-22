@@ -1,16 +1,9 @@
 ---
-title: "IExecutionContext Structure | Microsoft Docs"
-ms.custom: ""
+title: "IExecutionContext Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IExecutionContext", "CONCRTRM/concurrency::IExecutionContext", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::Dispatch", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetId", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetProxy", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetScheduler", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::SetProxy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IExecutionContext structure"]
 ms.assetid: f3108089-ecda-4b07-86db-3efae60c31e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IExecutionContext Structure
 
@@ -128,7 +121,7 @@ An interface to the thread proxy that is about to enter the `Dispatch` method on
 
 You are expected to save the parameter `pThreadProxy` and return it on a call to the `GetProxy` method. The Resource Manager guarantees that the thread proxy associated with the execution context will not change while the thread proxy is executing the `Dispatch` method.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IScheduler Structure](ischeduler-structure.md)<br/>

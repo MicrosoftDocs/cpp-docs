@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4920 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4920"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4920"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4920"]
 ms.assetid: 1e501f2e-93c1-4d27-a4fa-54fc86271ae7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4920
 

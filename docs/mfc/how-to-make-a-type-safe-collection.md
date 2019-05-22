@@ -1,15 +1,8 @@
 ---
-title: "How to: Make a Type-Safe Collection | Microsoft Docs"
-ms.custom: ""
+title: "How to: Make a Type-Safe Collection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type-safe collections [MFC]", "serializing collection-class elements [MFC]", "collection classes [MFC], type safety", "SerializeElements function [MFC]", "collection classes [MFC], template-based", "serialization [MFC], collection classes", "collection classes [MFC], deriving from nontemplate"]
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Make a Type-Safe Collection
 
@@ -21,7 +14,7 @@ This article explains how to make type-safe collections for your own data types.
 
 - [Using nontemplate collection classes](#_core_using_nontemplate_collection_classes)
 
-The Microsoft Foundation Class Library provides predefined type-safe collections based on C++ templates. Because they are templates, these classes help provide type safety and ease of use without the type-casting and other extra work involved in using a nontemplate class for this purpose. The MFC sample [COLLECT](../visual-cpp-samples.md) demonstrates the use of template-based collection classes in an MFC application. In general, use these classes any time you write new collections code.
+The Microsoft Foundation Class Library provides predefined type-safe collections based on C++ templates. Because they are templates, these classes help provide type safety and ease of use without the type-casting and other extra work involved in using a nontemplate class for this purpose. The MFC sample [COLLECT](../overview/visual-cpp-samples.md) demonstrates the use of template-based collection classes in an MFC application. In general, use these classes any time you write new collections code.
 
 ##  <a name="_core_using_template.2d.based_classes_for_type_safety"></a> Using Template-Based Classes for Type Safety
 
@@ -91,7 +84,6 @@ There are two ways to create type-safe collections with the nontemplate collecti
 
    You can also add new functionality by defining new functions that extend the capabilities of the collection rather than just wrapping existing functionality in type-safe wrappers. For example, the article [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md) describes a function to delete all the objects contained in a list. This function could be added to the derived class as a member function.
 
-## See Also
+## See also
 
 [Collections](../mfc/collections.md)
-

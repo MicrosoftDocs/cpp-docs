@@ -1,15 +1,8 @@
 ---
-title: "Initializing Aggregate Types | Microsoft Docs"
-ms.custom: ""
+title: "Initializing Aggregate Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate types [C++]", "union keyword [C], declarations", "types [C], initializing", "union keyword [C]", "aggregates [C++], initializing"]
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Initializing Aggregate Types
 
@@ -146,6 +139,6 @@ union
 
 The union variable `y`, in this example, is initialized. The first element of the union is an array, so the initializer is an aggregate initializer. The initializer list `{'1'}` assigns values to the first row of the array. Since only one value appears in the list, the element in the first column is initialized to the character `1`, and the remaining two elements in the row are initialized to the value 0 by default. Similarly, the first element of the second row of `x` is initialized to the character `4`, and the remaining two elements in the row are initialized to the value 0.
 
-## See Also
+## See also
 
 [Initialization](../c-language/initialization.md)

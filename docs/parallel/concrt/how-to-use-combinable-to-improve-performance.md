@@ -1,15 +1,8 @@
 ---
-title: "How to: Use combinable to Improve Performance | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use combinable to Improve Performance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["combinable class, example", "improving parallel performance with combinable [Concurrency Runtime]"]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use combinable to Improve Performance
 
@@ -64,7 +57,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 For an example that uses map and reduce operations to produce the same results, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
-## See Also
+## See also
 
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable Class](../../parallel/concrt/reference/combinable-class.md)<br/>

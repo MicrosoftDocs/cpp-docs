@@ -1,16 +1,9 @@
 ---
-title: "Using CAnimateCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CAnimateCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CAnimateCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["animation controls [MFC], CAnimateCtrl class", "controls [MFC], animation", "CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]"]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CAnimateCtrl
 
@@ -26,7 +19,6 @@ Animation controls can only play simple AVI clips, and they do not support sound
 
 - [Notifications Sent by Animation Controls](../mfc/notifications-sent-by-animation-controls.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

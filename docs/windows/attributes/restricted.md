@@ -1,16 +1,9 @@
 ---
-title: "restricted (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "restricted (C++ COM Attribute)"
 ms.date: "10/03/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.restricted"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["restricted attribute"]
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # restricted
 
@@ -73,7 +66,7 @@ class c : public a, public b
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>

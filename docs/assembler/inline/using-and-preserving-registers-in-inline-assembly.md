@@ -1,15 +1,8 @@
 ---
-title: "Using and Preserving Registers in Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Using and Preserving Registers in Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__asm keyword [C++], register values", "inline assembly, registers", "registers, inline assembly", "preserving registers"]
 ms.assetid: dbcd7360-6f3e-4b22-9ee2-9f65ca6f2543
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using and Preserving Registers in Inline Assembly
 

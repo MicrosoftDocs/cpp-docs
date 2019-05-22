@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1026 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1026"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1026"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1026"]
 ms.assetid: 89bb9d40-673a-44aa-a9f4-b42c07b49d44
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1026
 

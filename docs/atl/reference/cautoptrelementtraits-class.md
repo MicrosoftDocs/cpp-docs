@@ -1,16 +1,9 @@
 ---
-title: "CAutoPtrElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CAutoPtrElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits", "ATLCOLL/ATL::CAutoPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoPtrElementTraits::OUTARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAutoPtrElementTraits class"]
 ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAutoPtrElementTraits Class
 
@@ -77,7 +70,7 @@ The data type to use for retrieving elements from the collection class object.
 typedef T *& OUTARGTYPE;
 ```
 
-## See Also
+## See also
 
 [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

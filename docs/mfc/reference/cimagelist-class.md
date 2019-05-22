@@ -1,16 +1,9 @@
 ---
-title: "CImageList Class | Microsoft Docs"
-ms.custom: ""
+title: "CImageList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CImageList", "AFXCMN/CImageList", "AFXCMN/CImageList::CImageList", "AFXCMN/CImageList::Add", "AFXCMN/CImageList::Attach", "AFXCMN/CImageList::BeginDrag", "AFXCMN/CImageList::Copy", "AFXCMN/CImageList::Create", "AFXCMN/CImageList::DeleteImageList", "AFXCMN/CImageList::DeleteTempMap", "AFXCMN/CImageList::Detach", "AFXCMN/CImageList::DragEnter", "AFXCMN/CImageList::DragLeave", "AFXCMN/CImageList::DragMove", "AFXCMN/CImageList::DragShowNolock", "AFXCMN/CImageList::Draw", "AFXCMN/CImageList::DrawEx", "AFXCMN/CImageList::DrawIndirect", "AFXCMN/CImageList::EndDrag", "AFXCMN/CImageList::ExtractIcon", "AFXCMN/CImageList::FromHandle", "AFXCMN/CImageList::FromHandlePermanent", "AFXCMN/CImageList::GetBkColor", "AFXCMN/CImageList::GetDragImage", "AFXCMN/CImageList::GetImageCount", "AFXCMN/CImageList::GetImageInfo", "AFXCMN/CImageList::GetSafeHandle", "AFXCMN/CImageList::Read", "AFXCMN/CImageList::Remove", "AFXCMN/CImageList::Replace", "AFXCMN/CImageList::SetBkColor", "AFXCMN/CImageList::SetDragCursorImage", "AFXCMN/CImageList::SetImageCount", "AFXCMN/CImageList::SetOverlayImage", "AFXCMN/CImageList::Write", "AFXCMN/CImageList::m_hImageList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList [MFC], CImageList", "CImageList [MFC], Add", "CImageList [MFC], Attach", "CImageList [MFC], BeginDrag", "CImageList [MFC], Copy", "CImageList [MFC], Create", "CImageList [MFC], DeleteImageList", "CImageList [MFC], DeleteTempMap", "CImageList [MFC], Detach", "CImageList [MFC], DragEnter", "CImageList [MFC], DragLeave", "CImageList [MFC], DragMove", "CImageList [MFC], DragShowNolock", "CImageList [MFC], Draw", "CImageList [MFC], DrawEx", "CImageList [MFC], DrawIndirect", "CImageList [MFC], EndDrag", "CImageList [MFC], ExtractIcon", "CImageList [MFC], FromHandle", "CImageList [MFC], FromHandlePermanent", "CImageList [MFC], GetBkColor", "CImageList [MFC], GetDragImage", "CImageList [MFC], GetImageCount", "CImageList [MFC], GetImageInfo", "CImageList [MFC], GetSafeHandle", "CImageList [MFC], Read", "CImageList [MFC], Remove", "CImageList [MFC], Replace", "CImageList [MFC], SetBkColor", "CImageList [MFC], SetDragCursorImage", "CImageList [MFC], SetImageCount", "CImageList [MFC], SetOverlayImage", "CImageList [MFC], Write", "CImageList [MFC], m_hImageList"]
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CImageList Class
 
@@ -622,13 +615,13 @@ A pointer to the destination device context. You must delete this [CDC](../../mf
 The zero-based index of the image to be drawn.
 
 *pt*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- and y- coordinates where the image will be drawn.
 
 *sz*<br/>
-A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.
+A [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure indicating the size of the image to be drawn.
 
 *ptOrigin*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.
 
 *fStyle*<br/>
 Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, ILD_NORMAL, draws the image using the background color for the image list. If the background color is the CLR_NONE value, the image is drawn transparently using a mask.
@@ -805,7 +798,7 @@ static CImageList* PASCAL GetDragImage(
 ### Parameters
 
 *lpPoint*<br/>
-Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the current drag position.
+Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the current drag position.
 
 *lpPointHotSpot*<br/>
 Address of a `POINT` structure that receives the offset of the drag image relative to the drag position.
@@ -1122,7 +1115,7 @@ Nonzero if successful; otherwise 0.
 
 [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

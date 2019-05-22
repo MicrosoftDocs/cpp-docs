@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2953 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2953"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2953"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2953"]
 ms.assetid: 8dbcfa24-8296-4e40-bdc4-5526c07d8892
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2953
 

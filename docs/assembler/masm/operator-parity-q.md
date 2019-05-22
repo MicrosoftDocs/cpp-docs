@@ -1,16 +1,9 @@
 ---
-title: "operator PARITY? | Microsoft Docs"
-ms.custom: ""
+title: "operator PARITY?"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["PARITY?", "operator PARITY?"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PARITY? operator", "operator PARITY?"]
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator PARITY?
 

@@ -1,15 +1,8 @@
 ---
-title: "Life Cycle of a Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Life Cycle of a Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], life cycle", "modal dialog boxes [MFC], life cycle", "modeless dialog boxes [MFC], life cycle", "MFC dialog boxes [MFC], life cycle", "life cycle of dialog boxes [MFC]"]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Life Cycle of a Dialog Box
 
@@ -45,7 +38,6 @@ For modeless dialog boxes, you may often extract data from the dialog object whi
 
 - [Property sheet dialog boxes](../mfc/property-sheets-and-property-pages-mfc.md)
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)
-

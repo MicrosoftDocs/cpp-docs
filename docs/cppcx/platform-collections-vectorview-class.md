@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::VectorView Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::VectorView Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLECTION/Platform::Collections::VectorView::First", "COLLECTION/Platform::Collections::VectorView::GetAt", "COLLECTION/Platform::Collections::VectorView::GetMany", "COLLECTION/Platform::Collections::VectorView::IndexOf", "COLLECTION/Platform::Collections::VectorView::Size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VectorView Class"]
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorView Class
 
@@ -267,7 +261,7 @@ The first element in a sequence of objects that are used to initialize the curre
 *last*<br/>
 The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -1,14 +1,7 @@
 ---
-title: "Overview of ARM ABI Conventions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of ARM ABI Conventions"
 ms.date: "07/11/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Overview of ARM32 ABI Conventions
 
@@ -24,7 +17,7 @@ Integer divide support (UDIV/SDIV) is strongly recommended but not required. Pla
 
 ## Endianness
 
-Windows on ARM executes in little-endian mode. Both the Visual C++ compiler and the Windows runtime expect little-endian data at all times. Although the SETEND instruction in the ARM instruction set architecture (ISA) allows even user-mode code to change the current endianness, doing so is discouraged because it's dangerous for an application. If an exception is generated in big-endian mode, the behavior is unpredictable and may lead to an application fault in user mode, or a bugcheck in kernel mode.
+Windows on ARM executes in little-endian mode. Both the MSVC compiler and the Windows runtime expect little-endian data at all times. Although the SETEND instruction in the ARM instruction set architecture (ISA) allows even user-mode code to change the current endianness, doing so is discouraged because it's dangerous for an application. If an exception is generated in big-endian mode, the behavior is unpredictable and may lead to an application fault in user mode, or a bugcheck in kernel mode.
 
 ## Alignment
 
@@ -206,13 +199,13 @@ Enumerations are 32-bit integer types unless at least one value in the enumerati
 
 ## Stack walking
 
-Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](../build/reference/oy-frame-pointer-omission.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.
+Windows code is compiled with frame pointers enabled ([/Oy (Frame-Pointer Omission)](reference/oy-frame-pointer-omission.md)) to enable fast stack walking. Generally, the r11 register points to the next link in the chain, which is an {r11, lr} pair that specifies the pointer to the previous frame on the stack and the return address. We recommend that your code also enable frame pointers for improved profiling and tracing.
 
 ## Exception unwinding
 
 Stack unwinding during exception handling is enabled by the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of the function prologue and epilogue code in an abstract manner, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
 
-The ARM EABI specifies an exception unwinding model that uses unwind codes. However, this specification is not sufficient for unwinding in Windows, which must handle cases where the processor is in the middle of the prologue or epilogue of a function. For more information about Windows on ARM exception data and unwinding, see [ARM Exception Handling](../build/arm-exception-handling.md).
+The ARM EABI specifies an exception unwinding model that uses unwind codes. However, this specification is not sufficient for unwinding in Windows, which must handle cases where the processor is in the middle of the prologue or epilogue of a function. For more information about Windows on ARM exception data and unwinding, see [ARM Exception Handling](arm-exception-handling.md).
 
 We recommend that dynamically generated code be described by using dynamic function tables specified in calls to `RtlAddFunctionTable` and associated functions, so that the generated code can participate in exception handling.
 
@@ -224,5 +217,5 @@ The counter is a true cycle counter, not a clock; therefore, the counting freque
 
 ## See also
 
-[Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)<br/>
-[ARM Exception Handling](../build/arm-exception-handling.md)
+[Common Visual C++ ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM Exception Handling](arm-exception-handling.md)

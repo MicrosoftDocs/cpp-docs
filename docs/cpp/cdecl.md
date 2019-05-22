@@ -1,16 +1,9 @@
 ---
-title: "__cdecl | Microsoft Docs"
-ms.custom: ""
+title: "__cdecl"
 ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__cdecl_cpp", "__cdecl", "_cdecl", "cdecl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__cdecl keyword [C++]"]
 ms.assetid: 1ff1d03e-fb4e-4562-8be1-74f1ad6427f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __cdecl
 

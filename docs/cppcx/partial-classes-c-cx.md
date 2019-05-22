@@ -1,13 +1,7 @@
 ---
-title: "Partial classes (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Partial classes (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Partial classes (C++/CX)
 
@@ -95,7 +89,7 @@ The following example defines the `Address` class across two code files. The des
 
 [!code-cpp[cx_partial#09](../cppcx/codesnippet/CPP/partialclassexample/address.h#09)]
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

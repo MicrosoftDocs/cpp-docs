@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3383 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3383"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3383"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3383"]
 ms.assetid: ceb7f725-f417-4dc3-8496-0f413bb76687
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3383
 

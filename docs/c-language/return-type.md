@@ -1,15 +1,8 @@
 ---
-title: "Return Type | Microsoft Docs"
-ms.custom: ""
+title: "Return Type"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function return types", "return values [C++], function procedures", "function return types, syntax", "return values [C++]", "data types [C++], function return types", "return keyword [C++], function return types", "functions [C++], return types"]
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Return Type
 
@@ -91,6 +84,6 @@ This example defines a function returning a pointer to an array of characters. T
 
 You need not declare functions with `int` return type before you call them, although prototypes are recommended so that correct type checking for arguments and return values is enabled.
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

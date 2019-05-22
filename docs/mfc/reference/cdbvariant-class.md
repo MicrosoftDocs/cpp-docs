@@ -1,16 +1,9 @@
 ---
-title: "CDBVariant Class | Microsoft Docs"
-ms.custom: ""
+title: "CDBVariant Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDBVariant", "AFXDB/CDBVariant", "AFXDB/CDBVariant::CDBVariant", "AFXDB/CDBVariant::Clear", "AFXDB/CDBVariant::m_dwType", "AFXDB/CDBVariant::m_boolVal", "AFXDB/CDBVariant::m_chVal", "AFXDB/CDBVariant::m_dblVal", "AFXDB/CDBVariant::m_fltVal", "AFXDB/CDBVariant::m_iVal", "AFXDB/CDBVariant::m_lVal", "AFXDB/CDBVariant::m_pbinary", "AFXDB/CDBVariant::m_pdate", "AFXDB/CDBVariant::m_pstring", "AFXDB/CDBVariant::m_pstringA", "AFXDB/CDBVariant::m_pstringW"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBVariant [MFC], CDBVariant", "CDBVariant [MFC], Clear", "CDBVariant [MFC], m_dwType", "CDBVariant [MFC], m_boolVal", "CDBVariant [MFC], m_chVal", "CDBVariant [MFC], m_dblVal", "CDBVariant [MFC], m_fltVal", "CDBVariant [MFC], m_iVal", "CDBVariant [MFC], m_lVal", "CDBVariant [MFC], m_pbinary", "CDBVariant [MFC], m_pdate", "CDBVariant [MFC], m_pstring", "CDBVariant [MFC], m_pstringA", "CDBVariant [MFC], m_pstringW"]
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDBVariant Class
 
@@ -187,7 +180,7 @@ Stores a pointer to an object of type TIMESTAMP_STRUCT.
 
 The `m_pdate` data member belongs to a union. Before accessing `m_pdate`, first check the value of [CDBVariant::m_dwType](#m_dwtype). If `m_dwType` is set to DBVT_DATE, then `m_pdate` contains a valid pointer; otherwise, accessing `m_pdate` will produce unreliable results.
 
-For more information about the TIMESTAMP_STRUCT data type, see the topic [C Data Types](/previous-versions/windows/desktop/ms714556) in Appendix D of the *ODBC Programmer's Reference* in the Windows SDK.
+For more information about the TIMESTAMP_STRUCT data type, see the topic [C Data Types](/sql/odbc/reference/appendixes/c-data-types) in Appendix D of the *ODBC Programmer's Reference* in the Windows SDK.
 
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring
 
@@ -213,7 +206,7 @@ Stores a pointer to a wide [CString](../../atl-mfc-shared/reference/cstringt-cla
 
 The `m_pstringW` data member belongs to a union. Before accessing `m_pstringW`, first check the value of [CDBVariant::m_dwType](#m_dwtype). If `m_dwType` is set to DBVT_WSTRING, then `m_pstringW` contains a valid pointer; otherwise, accessing `m_pstringW` will produce unreliable results.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset Class](../../mfc/reference/crecordset-class.md)

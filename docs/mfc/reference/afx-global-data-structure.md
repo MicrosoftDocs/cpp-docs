@@ -1,16 +1,9 @@
 ---
-title: "AFX_GLOBAL_DATA Structure | Microsoft Docs"
-ms.custom: ""
+title: "AFX_GLOBAL_DATA Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::CleanUp", "AFXGLOBALS/AFX_GLOBAL_DATA::D2D1MakeRotateMatrix", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawParentBackground", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawTextOnGlass", "AFXGLOBALS/AFX_GLOBAL_DATA::ExcludeTag", "AFXGLOBALS/AFX_GLOBAL_DATA::GetColor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetDirect2dFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetHandCursor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList3", "AFXGLOBALS/AFX_GLOBAL_DATA::GetNonClientMetrics", "AFXGLOBALS/AFX_GLOBAL_DATA::GetShellAutohideBars", "AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled", "AFXGLOBALS/AFX_GLOBAL_DATA::IsHighContrastMode", "AFXGLOBALS/AFX_GLOBAL_DATA::OnSettingChange", "AFXGLOBALS/AFX_GLOBAL_DATA::RegisterWindowClass", "AFXGLOBALS/AFX_GLOBAL_DATA::ReleaseTaskBarRefs", "AFXGLOBALS/AFX_GLOBAL_DATA::Resume", "AFXGLOBALS/AFX_GLOBAL_DATA::SetLayeredAttrib", "AFXGLOBALS/AFX_GLOBAL_DATA::SetMenuFont", "AFXGLOBALS/AFX_GLOBAL_DATA::ShellCreateItemFromParsingName", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateFonts", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateSysColors", "AFXGLOBALS/AFX_GLOBAL_DATA::EnableAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsWindows7", "AFXGLOBALS/AFX_GLOBAL_DATA::clrActiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::clrInactiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseSystemFont", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurHand", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretch", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretchVert", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hiconTool", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["AFX_GLOBAL_DATA structure [MFC]", "AFX_GLOBAL_DATA constructor"]
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # AFX_GLOBAL_DATA Structure
 
@@ -103,11 +96,6 @@ Most of the data in the `AFX_GLOBAL_DATA` structure is initialized when your app
 ### Requirements
 
 **Header:** afxglobals.h
-
-### See Also
-
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 
 ## <a name="bisosalphablendingsupport"></a> AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
 
@@ -209,10 +197,10 @@ Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) m
 [in] Pointer to a device context.
 
 *iPartId*<br/>
-[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
+[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](/windows/desktop/controls/parts-and-states). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
 
 *iStateId*<br/>
-[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210).
+[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](/windows/desktop/controls/parts-and-states).
 
 *strText*<br/>
 [in] The text to draw.
@@ -239,16 +227,6 @@ TRUE if a theme is used to draw the specified text; otherwise, FALSE.
 
 A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method is not supported, or if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is disabled.
 
-### See Also
-
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210)<br/>
-[CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)<br/>
-[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
-[Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
-[Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)
-
 ## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
 
 Enables or disables Microsoft Active Accessibility support.
@@ -267,11 +245,6 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 Active Accessibility is a COM-based technology that improves the way programs and the Windows operating system work together with assistive technology products. It provides reliable methods for exposing information about user interface elements. However, a newer accessibility model called Microsoft UI Automation is now available. For a comparison of the two technologies, see [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).
 
 Use the [AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport) method to determine whether Microsoft Active Accessibility support is enabled.
-
-### See Also
-
-[UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[AFX_GLOBAL_DATA::IsAccessibilitySupport](#isaccessibilitysupport)
 
 ## <a name="excludetag"></a> AFX_GLOBAL_DATA::ExcludeTag
 
@@ -340,12 +313,6 @@ The RGB color value of the specified user interface element. For more informatio
 
 If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) method, which returns NULL if the color is not supported.
 
-### See Also
-
-[GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
-
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
 
 Returns a pointer to the ID2D1Factory interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.
@@ -381,15 +348,11 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ### Parameters
 
 *info*<br/>
-[in, out] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
+[in, out] A [NONCLIENTMETRICS](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
 
 ### Return Value
 
 TRUE if this method succeeds; otherwise, FALSE.
-
-### See Also
-
-[NONCLIENTMETRICS Structure](https://msdn.microsoft.com/library/windows/desktop/ff729175)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
 
@@ -460,7 +423,6 @@ Indicates whether predefined 32-bit icons are supported.
 
 ```
 BOOL Is32BitIcons() const;
-
 ```
 
 ### Return Value
@@ -489,10 +451,6 @@ Microsoft Active Accessibility was the earlier solution for making applications 
 
 Use the [AFX_GLOBAL_DATA::EnableAccessibilitySupport](#enableaccessibilitysupport) method to enable or disable Active Accessibility support.
 
-### See Also
-
-[UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)
-
 ## <a name="isd2dinitialized"></a> AFX_GLOBAL_DATA::IsD2DInitialized
 
 Determines whether the D2D was initialized
@@ -516,11 +474,6 @@ BOOL IsDwmCompositionEnabled();
 ### Return Value
 
 TRUE if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is enabled; otherwise, FALSE.
-
-### See Also
-
-[Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
-[Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
 
@@ -694,11 +647,6 @@ The qualified name of the registered class if this method succeeds; otherwise, a
 
 The return value is a colon-delimited list of the *lpszClassNamePrefix* parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-### See Also
-
-[AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass)<br/>
-[AfxThrowResourceException](../../mfc/reference/exception-processing.md#afxthrowresourceexception)
-
 ## <a name="resume"></a> AFX_GLOBAL_DATA::Resume
 
 Reinitializes internal function pointers that access methods that support Windows themes and visual styles.
@@ -744,11 +692,6 @@ BOOL SetLayeredAttrib(
 ### Return Value
 
 TRUE if this method succeeds; otherwise, FALSE.
-
-### See Also
-
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
 
@@ -894,3 +837,20 @@ A reference to an interface ID.
 
 Returns S_OK if successful; an error value otherwise.
 
+## See also
+
+[Hierarchy Chart](../hierarchy-chart.md)<br/>
+[Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)<br/>
+[COLORREF](/windows/desktop/gdi/colorref)<br/>
+[Parts and States](/windows/desktop/controls/parts-and-states)<br/>
+[CDC::DrawText](cdc-class.md#drawtext)<br/>
+[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
+[Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
+[Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)<br/>
+[UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
+[GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
+[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
+[NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
+[AfxRegisterClass](application-information-and-management.md#afxregisterclass)<br/>
+[AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)<br/>
+[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)

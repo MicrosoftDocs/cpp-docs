@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: Using the Windows Clipboard | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: Using the Windows Clipboard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Clipboard commands", "Cut/Copy and Paste command handler functions [MFC]", "handler functions, Cut/Copy and Paste commands", "Clipboard [MFC], commands", "commands [MFC], implementing Edit", "Clipboard commands [MFC], implementing", "Windows Clipboard [MFC]", "Clipboard [MFC], Windows Clipboard API"]
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: Using the Windows Clipboard
 
@@ -33,7 +26,6 @@ Implementing other Edit menu commands, such as Undo (**ID_EDIT_UNDO**) and Redo 
 
 - [Using the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 
-## See Also
+## See also
 
 [Clipboard](../mfc/clipboard.md)
-

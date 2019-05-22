@@ -1,21 +1,14 @@
 ---
-title: "Updating Rowsets | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Updating Rowsets"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Updating Rowsets
 
 A basic database operation is to update, or write data to, the data store. In OLE DB, the update mechanism is simple: your consumer application sets the values of bound data members and then writes those values to the rowset; the consumer then requests that the provider update the data store.
 
-Consumers can complete the following kinds of updates on rowset data: setting column values within a row, inserting a row, and deleting a row. To complete these operations, the OLE DB Template class [CRowset](../../data/oledb/crowset-class.md) implements the [IRowsetChange](/previous-versions/windows/desktop/ms715790) interface and overrides the following interface methods:
+Consumers can complete the following kinds of updates on rowset data: setting column values within a row, inserting a row, and deleting a row. To complete these operations, the OLE DB Template class [CRowset](../../data/oledb/crowset-class.md) implements the [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) interface and overrides the following interface methods:
 
 - [SetData](../../data/oledb/crowset-setdata.md) changes column values in a row of a rowset; it equates to the SQL UPDATE command.
 
@@ -24,6 +17,9 @@ Consumers can complete the following kinds of updates on rowset data: setting co
 - [Delete](../../data/oledb/crowset-delete.md) deletes rows from a rowset; it equates to the SQL DELETE command.
 
 ## Supporting Update Operations
+
+> [!NOTE]
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 When you create a consumer with the **ATL OLE DB Consumer Wizard**, you can support the update operations by selecting one or more of the three check boxes **Change**, **Insert**, and **Delete**. If you select these options, the wizard modifies the code appropriately to support the type of changes you choose. However, if you don't use the wizard, you need to set the following rowset properties to `VARIANT_TRUE` to support updates:
 
@@ -200,8 +196,8 @@ For example, if the first `Update` call were missing from the above code, row 10
 
 Finally, one main reason to defer changes is to be able to undo them. Calling [CRowset::Undo](../../data/oledb/crowset-undo.md) rolls back the state of the local change cache to the state of the data store before any pending changes were made. It's important to note that `Undo` doesn't roll back the state of the local cache by one step (the state before only the latest change); instead, it clears the local cache for that row. Also, `Undo` affects only the current row.
 
-## See Also
+## See also
 
 [Working with OLE DB Consumer Templates](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset Class](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](/previous-versions/windows/desktop/ms715790)<br/>
+[IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85))<br/>

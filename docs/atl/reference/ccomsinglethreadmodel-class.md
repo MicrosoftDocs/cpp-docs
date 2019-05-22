@@ -1,15 +1,9 @@
 ---
-title: "CComSingleThreadModel Class | Microsoft Docs"
-ms.custom: ""
+title: "CComSingleThreadModel Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel", "ATLBASE/ATL::CComSingleThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComSingleThreadModel::CriticalSection", "ATLBASE/ATL::CComSingleThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComSingleThreadModel::Decrement", "ATLBASE/ATL::CComSingleThreadModel::Increment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["single-threaded applications", "CComSingleThreadModel class", "single-threaded applications, ATL"]
 ms.assetid: e5dc30c7-405a-4ba4-8ae9-51937243fce8
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # CComSingleThreadModel Class
 
@@ -165,6 +159,6 @@ typedef CComSingleThreadModel ThreadModelNoCS;
 
 See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

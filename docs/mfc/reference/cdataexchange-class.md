@@ -1,16 +1,9 @@
 ---
-title: "CDataExchange Class | Microsoft Docs"
-ms.custom: ""
+title: "CDataExchange Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDataExchange", "AFXWIN/CDataExchange", "AFXWIN/CDataExchange::CDataExchange", "AFXWIN/CDataExchange::Fail", "AFXWIN/CDataExchange::PrepareCtrl", "AFXWIN/CDataExchange::PrepareEditCtrl", "AFXWIN/CDataExchange::PrepareOleCtrl", "AFXWIN/CDataExchange::m_bSaveAndValidate", "AFXWIN/CDataExchange::m_pDlgWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDataExchange [MFC], CDataExchange", "CDataExchange [MFC], Fail", "CDataExchange [MFC], PrepareCtrl", "CDataExchange [MFC], PrepareEditCtrl", "CDataExchange [MFC], PrepareOleCtrl", "CDataExchange [MFC], m_bSaveAndValidate", "CDataExchange [MFC], m_pDlgWnd"]
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDataExchange Class
 
@@ -213,10 +206,9 @@ Implementors of custom DDX or DDV routines should call `PrepareOleCtrl` for all 
 
 For more information on writing your own DDX and DDV routines, see [Technical Note 26](../../mfc/tn026-ddx-and-ddv-routines.md). For an overview of DDX and DDV, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md) and [Dialog Box Topics](../../mfc/dialog-boxes.md).
 
-## See Also
+## See also
 
-[MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC Sample VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange)<br/>
 [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata)
-

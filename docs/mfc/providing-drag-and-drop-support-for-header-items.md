@@ -1,15 +1,8 @@
 ---
-title: "Providing Drag-and-Drop Support for Header Items | Microsoft Docs"
-ms.custom: ""
+title: "Providing Drag-and-Drop Support for Header Items"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HDS_DRAGDROP style", "header items in header controls", "CHeaderCtrl class [MFC], drag and drop support", "HDN_ notifications [MFC]"]
 ms.assetid: 93a152ec-804f-488f-b260-b3a438d0dc0f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Providing Drag-and-Drop Support for Header Items
 
@@ -20,7 +13,6 @@ As with common drag-and-drop functionality, you can extend the default drag-and-
 > [!NOTE]
 >  If you are providing drag-and-drop support for an embedded header control in a list control, see the Extended Style section in the [Changing List Control Styles](../mfc/changing-list-control-styles.md) topic.
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)
-

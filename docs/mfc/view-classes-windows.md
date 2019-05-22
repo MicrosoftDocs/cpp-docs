@@ -1,16 +1,9 @@
 ---
-title: "View Classes (Windows) | Microsoft Docs"
-ms.custom: ""
+title: "View Classes (Windows)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.view"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["form and record views [MFC]", "splitter window classes [MFC]", "view classes [MFC], Windows"]
 ms.assetid: b11683fb-9f43-4de3-9499-2b55775f9870
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # View Classes (Windows)
 
@@ -80,7 +73,6 @@ Maintains the list of OLE client items that are in a `CRichEditView`.
 [CRichEditCntrItem](../mfc/reference/cricheditcntritem-class.md)<br/>
 Provides client-side access to an OLE item stored in a `CRichEditView`.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

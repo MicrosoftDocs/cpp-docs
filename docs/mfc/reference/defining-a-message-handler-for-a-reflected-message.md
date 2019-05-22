@@ -1,16 +1,9 @@
 ---
-title: "Defining a Message Handler for a Reflected Message | Microsoft Docs"
-ms.custom: ""
+title: "Defining a Message Handler for a Reflected Message"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.defining.msg.msghandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], reflected", "message handling [MFC], reflected messages"]
 ms.assetid: 5a403528-58c5-46e7-90d5-4a77f0ab9b9c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Defining a Message Handler for a Reflected Message
 
@@ -45,7 +38,7 @@ To create an [ActiveX control](../../mfc/activex-controls-on-the-internet.md) wi
 
 9. To edit or delete a message handler, repeat steps 4 through 7. Click the cell containing the handler name to edit or delete and click the appropriate task.
 
-## See Also
+## See also
 
 [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

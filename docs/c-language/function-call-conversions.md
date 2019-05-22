@@ -1,15 +1,8 @@
 ---
-title: "Function-Call Conversions | Microsoft Docs"
-ms.custom: ""
+title: "Function-Call Conversions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, converting", "function calls, argument type conversions", "functions [C], argument conversions"]
 ms.assetid: 04ea0f81-509a-4913-8b12-0937a81babcf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function-Call Conversions
 
@@ -19,6 +12,6 @@ If a function prototype is present and includes declared argument types, the com
 
 If no function prototype is present, only the usual arithmetic conversions are performed on the arguments in the function call. These conversions are performed independently on each argument in the call. This means that a **float** value is converted to a **double**; a `char` or **short** value is converted to an `int`; and an `unsigned char` or **unsigned short** is converted to an `unsigned int`.
 
-## See Also
+## See also
 
 [Type Conversions](../c-language/type-conversions-c.md)

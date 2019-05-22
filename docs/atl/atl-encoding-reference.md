@@ -1,15 +1,8 @@
 ---
-title: "ATL Encoding Reference | Microsoft Docs"
-ms.custom: ""
+title: "ATL Encoding Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["encoding", "encoding, functions"]
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Encoding Reference
 
@@ -41,8 +34,7 @@ Encoding in a range of common Internet standards such as uuencode, hexadecimal, 
 |[UUEncode](reference/atl-text-encoding-functions.md#uuencode)|Call this function to uuencode some data.|
 |[UUEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#uuencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)
-

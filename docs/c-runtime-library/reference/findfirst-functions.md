@@ -1,19 +1,12 @@
 ---
-title: "_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64 | Microsoft Docs"
-ms.custom: ""
+title: "_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-apiname: ["_findfirst", "_wfindfirst"]
+apiname: ["_findfirst", "_wfindfirst", "_findfirst32", "_wfindfirst32", "_findfirst32i64", "_wfindfirst32i64", "_findfirst64", "_wfindfirst64", "_findfirst64i32", "_wfindfirst64i32", "_findfirsti64", "_wfindfirsti64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["findfirst32i64", "wfindfirst32i64", "tfindfirst64", "_findfirst64i32", "_wfindfirst32i64", "_wfindfirsti64", "wfindfirst", "_tfindfirsti64", "findfirst32", "_tfindfirst32", "_findfirsti64", "findfirst", "wfindfirst64", "wfindfirst32", "tfindfirst32", "_wfindfirst64i32", "findfirst64i32", "tfindfirst64i32", "_wfindfirst", "findfirsti64", "_findfirst32i64", "wfindfirst64i32", "_wfindfirst32", "_findfirst32", "_tfindfirst32i64", "tfindfirst", "_tfindfirst64i32", "findfirst64", "_tfindfirst", "_findfirst64", "_tfindfirst64", "tfindfirst32i64", "_findfirst", "_wfindfirst64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tfindfirst64 function", "_wfindfirst64i32 function", "_wfindfirst32i64 function", "wfindfirst32 function", "_findfirst function", "wfindfirst64 function", "_wfindfirst function", "_findfirst64i32 function", "wfindfirst function", "_findfirst64 function", "tfindfirst32 function", "_tfindfirst64i32 function", "findfirst function", "findfirst32i64 function", "tfindfirst64 function", "_tfindfirst32 function", "tfindfirst32i64 function", "tfindfirst64i32 function", "_wfindfirsti64 function", "_findfirst32i64 function", "findfirst32 function", "findfirsti64 function", "findfirst64i32 function", "tfindfirsti64 function", "tfindfirst function", "_wfindfirst32 function", "wfindfirsti64 function", "_tfindfirsti64 function", "_tfindfirst function", "_tfindfirst32i64 function", "findfirst64 function", "_findfirst32 function", "_findfirsti64 function", "wfindfirst32i64 function", "wfindfirst64i32 function", "_wfindfirst64 function"]
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -84,12 +77,12 @@ File information buffer.
 
 If successful, **_findfirst** returns a unique search handle identifying the file or group of files that match the *filespec* specification, which can be used in a subsequent call to [_findnext](findnext-functions.md) or to [_findclose](findclose.md). Otherwise, **_findfirst** returns -1 and sets **errno** to one of the following values.
 
-|errno value|Condition|
+| errno value | Condition |
 |-|-|
-**EINVAL**|Invalid parameter: *filespec* or *fileinfo* was **NULL**. Or, the operating system returned an unexpected error.
-**ENOENT**|File specification that could not be matched.
-**ENOMEM**|Insufficient memory.
-**EINVAL**|Invalid file name specification or the file name given was larger than **MAX_PATH**.
+| **EINVAL** | Invalid parameter: *filespec* or *fileinfo* was **NULL**. Or, the operating system returned an unexpected error. |
+| **ENOENT** | File specification that could not be matched. |
+| **ENOMEM** | Insufficient memory. |
+| **EINVAL** | Invalid file name specification or the file name given was larger than **MAX_PATH**. |
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

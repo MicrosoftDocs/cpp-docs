@@ -1,16 +1,9 @@
 ---
-title: "bindable (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "bindable (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.bindable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bindable attribute"]
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # bindable
 
@@ -70,7 +63,7 @@ __interface IPropDemo : IDispatch {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>

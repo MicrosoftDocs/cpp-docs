@@ -1,16 +1,9 @@
 ---
-title: "CComCurrency Class | Microsoft Docs"
-ms.custom: ""
+title: "CComCurrency Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComCurrency", "ATLCUR/ATL::CComCurrency", "ATLCUR/ATL::CComCurrency::CComCurrency", "ATLCUR/ATL::CComCurrency::GetCurrencyPtr", "ATLCUR/ATL::CComCurrency::GetFraction", "ATLCUR/ATL::CComCurrency::GetInteger", "ATLCUR/ATL::CComCurrency::Round", "ATLCUR/ATL::CComCurrency::SetFraction", "ATLCUR/ATL::CComCurrency::SetInteger", "ATLCUR/ATL::CComCurrency::m_currency"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComCurrency class"]
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComCurrency Class
 
@@ -629,7 +622,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]
 
-## See Also
+## See also
 
 [COleCurrency Class](../../mfc/reference/colecurrency-class.md)<br/>
 [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>

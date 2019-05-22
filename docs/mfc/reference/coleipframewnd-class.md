@@ -1,16 +1,9 @@
 ---
-title: "COleIPFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "COleIPFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleIPFrameWnd Class
 
@@ -123,9 +116,9 @@ Pointer to a `RECT` structure or a `CRect` object containing the in-place frame 
 
 Layout of control bars in the container window differs from that performed by a non-OLE frame window. The non-OLE frame window calculates the positions of control bars and other objects from a given frame-window size, as in a call to [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). The client area is what remains after space for control bars and other objects is subtracted. A `COleIPFrameWnd` window, on the other hand, positions toolbars in accordance with a given client area. In other words, `CFrameWnd::RecalcLayout` works "from the outside in," whereas `COleIPFrameWnd::RepositionFrame` works "from the inside out."
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)

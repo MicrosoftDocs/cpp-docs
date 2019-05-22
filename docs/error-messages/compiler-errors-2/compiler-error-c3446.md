@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3446 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3446"
 ms.date: "07/21/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3446"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3445"]
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3446
 

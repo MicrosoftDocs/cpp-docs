@@ -1,16 +1,9 @@
 ---
-title: "uuid (C++ Attributes) | Microsoft Docs"
-ms.custom: ""
+title: "uuid (C++ Attributes)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.uuid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["uuid attribute"]
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # uuid (C++ Attributes)
 
@@ -31,7 +24,7 @@ A 128-bit, unique identifier.
 
 ## Remarks
 
-If the definition of an interface or class does not specify the **uuid** C++ attribute, then the Visual C++ compiler will provide one. When you specify a **uuid**, you must include the quotes.
+If the definition of an interface or class does not specify the **uuid** C++ attribute, then the Microsoft C++ compiler will provide one. When you specify a **uuid**, you must include the quotes.
 
 If you do not specify **uuid**, then the compiler will generate the same GUID for interfaces or classes with the same name in different attribute projects on a machine.
 
@@ -56,7 +49,7 @@ See the [bindable](bindable.md) example for a sample use of **uuid**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "-H (Restrict Length of External Names) | Microsoft Docs"
-ms.custom: ""
+title: "/H (Restrict Length of External Names)"
 ms.date: "09/05/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/h"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["public name length", "/H compiler option [C++]", "H compiler option [C++]", "external names", "-H compiler option [C++]"]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /H (Restrict Length of External Names)
 
@@ -63,13 +56,13 @@ void func2(void) {}
 
 You must also be careful when using the **/H** option because of predefined compiler identifiers. If the maximum identifier length is too small, certain predefined identifiers will be unresolved as well as certain library function calls. For example, if the `printf` function is used and the option **/H5** is specified at compile time, the symbol **_prin** will be created in order to reference `printf`, and this will not be found in the library.
 
-Use of **/H** is incompatible with [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md).
+Use of **/H** is incompatible with [/GL (Whole Program Optimization)](gl-whole-program-optimization.md).
 
-The **/H** option is deprecated since Visual Studio 2005; the maximum length limits have been increased and **/H** is no longer needed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).
+The **/H** option is deprecated since Visual Studio 2005; the maximum length limits have been increased and **/H** is no longer needed. For a list of deprecated compiler options, see **Deprecated and Removed Compiler Options** in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -79,7 +72,7 @@ The **/H** option is deprecated since Visual Studio 2005; the maximum length lim
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

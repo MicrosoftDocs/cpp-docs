@@ -1,16 +1,9 @@
 ---
-title: "is_empty Class | Microsoft Docs"
-ms.custom: ""
+title: "is_empty Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_empty"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_empty class", "is_empty"]
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_empty Class
 
@@ -60,7 +53,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

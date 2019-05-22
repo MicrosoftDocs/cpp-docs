@@ -1,15 +1,8 @@
 ---
-title: "MASM Operators Reference | Microsoft Docs"
-ms.custom: ""
+title: "MASM Operators Reference"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), operators reference", "operators [MASM]"]
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MASM Operators Reference
 

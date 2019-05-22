@@ -1,16 +1,9 @@
 ---
-title: "switch Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "switch Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["switch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["switch keyword [C]"]
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # switch Statement (C)
 
@@ -109,6 +102,6 @@ The default for Microsoft C is that the Microsoft extensions are enabled. Use th
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [switch Statement (C++)](../cpp/switch-statement-cpp.md)

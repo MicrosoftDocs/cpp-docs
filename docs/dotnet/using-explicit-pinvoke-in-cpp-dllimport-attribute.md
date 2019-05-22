@@ -1,15 +1,8 @@
 ---
-title: "Using Explicit PInvoke in C++ (DllImport Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "Using Explicit PInvoke in C++ (DllImport Attribute)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshaling [C++], platform invoke", "C++ Interop, platform invoke", "interop [C++], platform invoke", "platform invoke [C++], marshaling in C++", "data marshaling [C++], platform invoke"]
 ms.assetid: 18e5218c-6916-48a1-a127-f66e22ef15fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Explicit PInvoke in C++ (DllImport Attribute)
 
@@ -35,6 +28,6 @@ The result is a managed entry point for each native DLL function that contains t
 
 - [How to: Marshal Embedded Pointers Using PInvoke](../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md)
 
-## See Also
+## See also
 
 [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md)

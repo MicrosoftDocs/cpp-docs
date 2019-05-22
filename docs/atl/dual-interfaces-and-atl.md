@@ -1,15 +1,8 @@
 ---
-title: "Dual Interfaces and ATL | Microsoft Docs"
-ms.custom: ""
+title: "Dual Interfaces and ATL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM, and ATL", "ATL, dual interfaces", "dual interfaces, about dual interfaces"]
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and ATL
 
@@ -34,7 +27,6 @@ Discusses design reasons for not making an event interface a dual interface.
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

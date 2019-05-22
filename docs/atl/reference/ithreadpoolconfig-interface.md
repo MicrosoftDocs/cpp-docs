@@ -1,16 +1,9 @@
 ---
-title: "IThreadPoolConfig Interface | Microsoft Docs"
-ms.custom: ""
+title: "IThreadPoolConfig Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IThreadPoolConfig interface"]
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IThreadPoolConfig Interface
 
@@ -133,7 +126,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 See [IThreadPoolConfig::GetSize](#getsize).
 
-## See Also
+## See also
 
 [Classes](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool Class](../../atl/reference/cthreadpool-class.md)

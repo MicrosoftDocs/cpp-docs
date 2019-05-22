@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Events in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Events in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["events [C++], accessing in interfaces"]
 ms.assetid: fbf452dc-2dd7-4322-adc0-656512d654d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Events in C++/CLI
 
@@ -647,6 +640,6 @@ hello
 hello
 ```
 
-## See Also
+## See also
 
-[event](../windows/event-cpp-component-extensions.md)
+[event](../extensions/event-cpp-component-extensions.md)

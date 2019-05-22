@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4674 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4674"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4674"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4674"]
 ms.assetid: 638dae0b-b82c-4865-9599-72630827ca09
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4674
 

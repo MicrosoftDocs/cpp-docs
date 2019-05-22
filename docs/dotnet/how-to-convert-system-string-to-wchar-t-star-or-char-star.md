@@ -1,15 +1,9 @@
 ---
-title: "How to: Convert System::String to wchar_t* or char* | Microsoft Docs"
+title: "How to: Convert System::String to wchar_t* or char*"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["System::String, converting to char or wchar_t", "PtrToStringChars method", "System::String", "wchart type, converting System::String", "char data type, converting System::String to"]
 ms.assetid: 385da01b-5649-4543-8076-e3e251243ff0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Convert System::String to wchar_t* or char*
 
@@ -59,6 +53,6 @@ Hello
 Hello
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

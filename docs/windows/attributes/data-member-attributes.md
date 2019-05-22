@@ -1,15 +1,8 @@
 ---
-title: "Data Member Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Data Member Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "data members [C++], attributes", "data members [C++]"]
 ms.assetid: 95b2397d-1daf-4ae4-8cd0-06956d005b13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Data Member Attributes
 
@@ -31,6 +24,6 @@ The following attributes apply to the data members in a class, coclass, or inter
 |[readonly](readonly-cpp.md)|Prohibits assignment to a data member.|
 |[requestedit](requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

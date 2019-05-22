@@ -1,16 +1,9 @@
 ---
-title: "IRowsetImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["IRowsetImpl", "IRowsetImpl::AddRefRows", "AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows", "IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow", "ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData", "GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus", "GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows", "IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "IRowsetImpl", "ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows", "ATL.IRowsetImpl.ReleaseRows", "ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows", "ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition", "IRowsetImpl.SetDBStatus", "IRowsetImpl::SetDBStatus",        "SetDBStatus", "ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack", "IRowsetImpl::m_bCanScrollBack", "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack", "ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset", "IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset", "IRowsetImpl::m_rgRowHandles", "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
-dev_langs: ["C++"]
+f1_keywords: ["IRowsetImpl", "IRowsetImpl::AddRefRows", "AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows", "IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow", "ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData", "GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus", "GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows", "IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "IRowsetImpl", "ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows", "ATL.IRowsetImpl.ReleaseRows", "ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows", "ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition", "IRowsetImpl.SetDBStatus", "IRowsetImpl::SetDBStatus", "SetDBStatus", "ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack", "IRowsetImpl::m_bCanScrollBack", "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack", "ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset", "IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset", "IRowsetImpl::m_rgRowHandles", "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
 helpviewer_keywords: ["IRowsetImpl class", "AddRefRows method", "CreateRow method", "GetData method [OLE DB]", "GetDBStatus method", "GetNextRows method", "IRowsetImpl constructor", "RefRows method", "ReleaseRows method", "RestartPosition method", "SetDBStatus method", "m_bCanFetchBack", "m_bCanScrollBack", "m_bReset", "m_iRowset", "m_rgRowHandles"]
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetImpl Class
 
@@ -20,7 +13,7 @@ Provides an implementation of the `IRowset` interface.
 
 ```cpp
 template <
-   class T, 
+   class T,
    class RowsetInterface,
    class RowClass = CSimpleRow,
    class MapClass = CAtlMap <
@@ -76,7 +69,7 @@ Storage unit for all row handles held by the provider.
 
 ## Remarks
 
-[IRowset](/previous-versions/windows/desktop/ms720986) is the base rowset interface.
+[IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) is the base rowset interface.
 
 ## <a name="addrefrows"></a> IRowsetImpl::AddRefRows
 
@@ -93,7 +86,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) in the *OLE DB Programmer's Reference*.
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
 
@@ -136,7 +129,7 @@ STDMETHOD(GetData )(HROW hRow,
 
 #### Parameters
 
-See [IRowset::GetData](/previous-versions/windows/desktop/ms716988) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:
 
@@ -169,7 +162,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 
 ### Return Value
 
-The [DBSTATUS](/previous-versions/windows/desktop/ms722617) flags for the column.
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) flags for the column.
 
 ## <a name="getnextrows"></a> IRowsetImpl::GetNextRows
 
@@ -187,7 +180,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 #### Parameters
 
-See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827) in the *OLE DB Programmer's Reference*.
+See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="irowsetimpl"></a> IRowsetImpl::IRowsetImpl
 
@@ -219,7 +212,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619) in the *OLE DB Programmer's Reference*.
+See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -241,7 +234,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 
 #### Parameters
 
-See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771) in the *OLE DB Programmer's Reference*.
+See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="restartposition"></a> IRowsetImpl::RestartPosition
 
@@ -255,7 +248,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 
 #### Parameters
 
-See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877) in the *OLE DB Programmer's Reference*.
+See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
@@ -276,7 +269,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 #### Parameters
 
 *statusFlags*<br/>
-The [DBSTATUS](/previous-versions/windows/desktop/ms722617) flags to set for the column.
+The [DBSTATUS](/previous-versions/windows/desktop/ms722617(v=vs.85)) flags to set for the column.
 
 *currentRow*<br/>
 The current row.
@@ -358,7 +351,7 @@ MapClass m_rgRowHandles;
 
 Row handles are removed by calling `ReleaseRows`. See the [IRowsetImpl overview](../../data/oledb/irowsetimpl-class.md) for the definition of *MapClass*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

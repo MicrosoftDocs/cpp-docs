@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3379 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3379"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3379"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3379"]
 ms.assetid: a66c2c4e-091c-4426-9cde-7c4cfb2ffce1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3379
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 When applied to a managed type, such as class or struct, the [public](../../cpp/public-cpp.md) and [private](../../cpp/private-cpp.md) keywords indicate whether the class will be exposed through assembly metadata. `public` or `private` cannot be applied to a nested class, which will inherit the assembly access of the enclosing class.
 
-When used with [/clr](../../build/reference/clr-common-language-runtime-compilation.md), the `ref` and `value` keywords indicate that a class is managed (see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md)).
+When used with [/clr](../../build/reference/clr-common-language-runtime-compilation.md), the `ref` and `value` keywords indicate that a class is managed (see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md)).
 
 The following sample generates C3379:
 

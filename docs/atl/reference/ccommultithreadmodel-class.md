@@ -1,16 +1,9 @@
 ---
-title: "CComMultiThreadModel Class | Microsoft Docs"
-ms.custom: ""
+title: "CComMultiThreadModel Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel", "ATLBASE/ATL::CComMultiThreadModel::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModel::CriticalSection", "ATLBASE/ATL::CComMultiThreadModel::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModel::Decrement", "ATLBASE/ATL::CComMultiThreadModel::Increment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, multithreading", "CComMultiThreadModel class", "threading [ATL]"]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComMultiThreadModel Class
 
@@ -148,7 +141,7 @@ See [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
 ##  <a name="decrement"></a>  CComMultiThreadModel::Decrement
 
-This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement), which decrements the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -169,7 +162,7 @@ If the result of the decrement is 0, then `Decrement` returns 0. If the result o
 
 ##  <a name="increment"></a>  CComMultiThreadModel::Increment
 
-This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), which increments the value of the variable pointed to by *p*.
+This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement), which increments the value of the variable pointed to by *p*.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();
@@ -212,7 +205,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 See [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).
 
-## See Also
+## See also
 
 [CComSingleThreadModel Class](ccomsinglethreadmodel-class.md)<br/>
 [CComAutoCriticalSection Class](ccomautocriticalsection-class.md)<br/>

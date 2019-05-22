@@ -1,16 +1,9 @@
 ---
-title: "CWinAppEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CWinAppEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CWinAppEx", "AFXWINAPPEX/CWinAppEx", "AFXWINAPPEX/CWinAppEx::CWinAppEx", "AFXWINAPPEX/CWinAppEx::CleanState", "AFXWINAPPEX/CWinAppEx::EnableLoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::EnableTearOffMenus", "AFXWINAPPEX/CWinAppEx::EnableUserTools", "AFXWINAPPEX/CWinAppEx::ExitInstance", "AFXWINAPPEX/CWinAppEx::GetBinary", "AFXWINAPPEX/CWinAppEx::GetContextMenuManager", "AFXWINAPPEX/CWinAppEx::GetDataVersion", "AFXWINAPPEX/CWinAppEx::GetDataVersionMajor", "AFXWINAPPEX/CWinAppEx::GetDataVersionMinor", "AFXWINAPPEX/CWinAppEx::GetInt", "AFXWINAPPEX/CWinAppEx::GetKeyboardManager", "AFXWINAPPEX/CWinAppEx::GetMouseManager", "AFXWINAPPEX/CWinAppEx::GetObject", "AFXWINAPPEX/CWinAppEx::GetRegSectionPath", "AFXWINAPPEX/CWinAppEx::GetRegistryBase", "AFXWINAPPEX/CWinAppEx::GetSectionBinary", "AFXWINAPPEX/CWinAppEx::GetSectionInt", "AFXWINAPPEX/CWinAppEx::GetSectionObject", "AFXWINAPPEX/CWinAppEx::GetSectionString", "AFXWINAPPEX/CWinAppEx::GetShellManager", "AFXWINAPPEX/CWinAppEx::GetString", "AFXWINAPPEX/CWinAppEx::GetTooltipManager", "AFXWINAPPEX/CWinAppEx::GetUserToolsManager", "AFXWINAPPEX/CWinAppEx::InitContextMenuManager", "AFXWINAPPEX/CWinAppEx::InitKeyboardManager", "AFXWINAPPEX/CWinAppEx::InitMouseManager", "AFXWINAPPEX/CWinAppEx::InitShellManager", "AFXWINAPPEX/CWinAppEx::InitTooltipManager", "AFXWINAPPEX/CWinAppEx::IsResourceSmartUpdate", "AFXWINAPPEX/CWinAppEx::IsStateExists", "AFXWINAPPEX/CWinAppEx::LoadState", "AFXWINAPPEX/CWinAppEx::OnAppContextHelp", "AFXWINAPPEX/CWinAppEx::OnViewDoubleClick", "AFXWINAPPEX/CWinAppEx::OnWorkspaceIdle", "AFXWINAPPEX/CWinAppEx::SaveState", "AFXWINAPPEX/CWinAppEx::SetRegistryBase", "AFXWINAPPEX/CWinAppEx::ShowPopupMenu", "AFXWINAPPEX/CWinAppEx::WriteBinary", "AFXWINAPPEX/CWinAppEx::WriteInt", "AFXWINAPPEX/CWinAppEx::WriteObject", "AFXWINAPPEX/CWinAppEx::WriteSectionBinary", "AFXWINAPPEX/CWinAppEx::WriteSectionInt", "AFXWINAPPEX/CWinAppEx::WriteSectionObject", "AFXWINAPPEX/CWinAppEx::WriteSectionString", "AFXWINAPPEX/CWinAppEx::WriteString", "AFXWINAPPEX/CWinAppEx::LoadCustomState", "AFXWINAPPEX/CWinAppEx::LoadWindowPlacement", "AFXWINAPPEX/CWinAppEx::OnClosingMainFrame", "AFXWINAPPEX/CWinAppEx::PreLoadState", "AFXWINAPPEX/CWinAppEx::PreSaveState", "AFXWINAPPEX/CWinAppEx::ReloadWindowPlacement", "AFXWINAPPEX/CWinAppEx::SaveCustomState", "AFXWINAPPEX/CWinAppEx::StoreWindowPlacement", "AFXWINAPPEX/CWinAppEx::m_bForceImageReset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWinAppEx [MFC], CWinAppEx", "CWinAppEx [MFC], CleanState", "CWinAppEx [MFC], EnableLoadWindowPlacement", "CWinAppEx [MFC], EnableTearOffMenus", "CWinAppEx [MFC], EnableUserTools", "CWinAppEx [MFC], ExitInstance", "CWinAppEx [MFC], GetBinary", "CWinAppEx [MFC], GetContextMenuManager", "CWinAppEx [MFC], GetDataVersion", "CWinAppEx [MFC], GetDataVersionMajor", "CWinAppEx [MFC], GetDataVersionMinor", "CWinAppEx [MFC], GetInt", "CWinAppEx [MFC], GetKeyboardManager", "CWinAppEx [MFC], GetMouseManager", "CWinAppEx [MFC], GetObject", "CWinAppEx [MFC], GetRegSectionPath", "CWinAppEx [MFC], GetRegistryBase", "CWinAppEx [MFC], GetSectionBinary", "CWinAppEx [MFC], GetSectionInt", "CWinAppEx [MFC], GetSectionObject", "CWinAppEx [MFC], GetSectionString", "CWinAppEx [MFC], GetShellManager", "CWinAppEx [MFC], GetString", "CWinAppEx [MFC], GetTooltipManager", "CWinAppEx [MFC], GetUserToolsManager", "CWinAppEx [MFC], InitContextMenuManager", "CWinAppEx [MFC], InitKeyboardManager", "CWinAppEx [MFC], InitMouseManager", "CWinAppEx [MFC], InitShellManager", "CWinAppEx [MFC], InitTooltipManager", "CWinAppEx [MFC], IsResourceSmartUpdate", "CWinAppEx [MFC], IsStateExists", "CWinAppEx [MFC], LoadState", "CWinAppEx [MFC], OnAppContextHelp", "CWinAppEx [MFC], OnViewDoubleClick", "CWinAppEx [MFC], OnWorkspaceIdle", "CWinAppEx [MFC], SaveState", "CWinAppEx [MFC], SetRegistryBase", "CWinAppEx [MFC], ShowPopupMenu", "CWinAppEx [MFC], WriteBinary", "CWinAppEx [MFC], WriteInt", "CWinAppEx [MFC], WriteObject", "CWinAppEx [MFC], WriteSectionBinary", "CWinAppEx [MFC], WriteSectionInt", "CWinAppEx [MFC], WriteSectionObject", "CWinAppEx [MFC], WriteSectionString", "CWinAppEx [MFC], WriteString", "CWinAppEx [MFC], LoadCustomState", "CWinAppEx [MFC], LoadWindowPlacement", "CWinAppEx [MFC], OnClosingMainFrame", "CWinAppEx [MFC], PreLoadState", "CWinAppEx [MFC], PreSaveState", "CWinAppEx [MFC], ReloadWindowPlacement", "CWinAppEx [MFC], SaveCustomState", "CWinAppEx [MFC], StoreWindowPlacement", "CWinAppEx [MFC], m_bForceImageReset"]
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinAppEx Class
 
@@ -1413,7 +1406,7 @@ The *lpszEntry* parameter is the name of a registry entry located under the defa
 
 If the key specified by *lspzEntry* does not exist, this method will create it.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

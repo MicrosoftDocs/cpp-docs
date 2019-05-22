@@ -1,16 +1,9 @@
 ---
-title: "__stosw | Microsoft Docs"
-ms.custom: ""
+title: "__stosw"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__stosw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stosw instruction", "__stosw intrinsic", "rep stosw instruction"]
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __stosw
 
@@ -21,10 +14,10 @@ Generates a store string instruction (`rep stosw`).
 ## Syntax
 
 ```
-void __stosw( 
-   unsigned short* Dest, 
-   unsigned short Data, 
-   size_t Count 
+void __stosw(
+   unsigned short* Dest,
+   unsigned short Data,
+   size_t Count
 );
 ```
 
@@ -79,6 +72,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

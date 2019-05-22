@@ -1,19 +1,12 @@
 ---
-title: "strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l | Microsoft Docs"
-ms.custom: ""
+title: "strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wcstoumax_l", "_strtoumax_l", "wcstoumax", "strtoumax"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wcstoumax", "_tcstoumax", "_strtoumax_l", "_wcstoumax_l", "_tcstoumax_l", "strtoumax"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_strtoumax_l function", "conversion functions", "wcstoumax function", "_wcstoumax_l function", "strtoumax function"]
 ms.assetid: 566769f9-495b-4508-b9c6-02217a578897
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l
 

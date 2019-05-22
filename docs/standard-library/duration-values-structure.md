@@ -1,15 +1,8 @@
 ---
-title: "duration_values Structure | Microsoft Docs"
-ms.custom: ""
+title: "duration_values Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::duration_values", "chrono/std::chrono::duration_values::max", "chrono/std::chrono::duration_values::min", "chrono/std::chrono::duration_values::zero"]
-dev_langs: ["C++"]
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # duration_values Structure
 

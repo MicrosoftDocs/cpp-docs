@@ -1,15 +1,8 @@
 ---
-title: "-Qpar (Auto-Parallelizer) | Microsoft Docs"
-ms.custom: ""
+title: "/Qpar (Auto-Parallelizer)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]
-dev_langs: ["C++"]
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Qpar (Auto-Parallelizer)
 
@@ -27,7 +20,7 @@ When  the compiler automatically parallelizes loops in code, it spreads computat
 
 The `#pragma loop()` directives are available to help the optimizer parallelize specific loops. For more information, see [loop](../../preprocessor/loop.md).
 
-For information about how to enable output messages for the auto-parallelizer, see [/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md).
+For information about how to enable output messages for the auto-parallelizer, see [/Qpar-report (Auto-Parallelizer Reporting Level)](qpar-report-auto-parallelizer-reporting-level.md).
 
 ### To set the /Qpar compiler option in Visual Studio
 
@@ -41,11 +34,11 @@ For information about how to enable output messages for the auto-parallelizer, s
 
 - Use the code example in <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
+[/Qpar-report (Auto-Parallelizer Reporting Level)](qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
 [Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

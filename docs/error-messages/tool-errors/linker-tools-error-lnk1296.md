@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1296 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1296"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1296"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1296"]
 ms.assetid: f94a3d18-5411-456b-966f-89810fdcfe60
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1296
 

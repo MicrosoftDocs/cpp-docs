@@ -1,16 +1,9 @@
 ---
-title: "BSCMAKE Error BK1503 | Microsoft Docs"
-ms.custom: ""
+title: "BSCMAKE Error BK1503"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["BK1503"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BK1503"]
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # BSCMAKE Error BK1503
 
@@ -22,6 +15,6 @@ If the problem is caused by more than 4092 .sbr files, you must reduce the numbe
 
 If the problem is caused by a .bsc file larger than 64MB, reducing the number of .sbr files as input will decrease the size of the resulting .bsc file. In addition, the amount of browse information may be reduced through the use of the /Em (Exclude Macro Expanded Symbols), /El (Exclude Local Variables), and /Es (Exclude System Files).
 
-## See Also
+## See also
 
 [BSCMAKE Options](../../build/reference/bscmake-options.md)

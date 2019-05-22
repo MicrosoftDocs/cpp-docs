@@ -1,16 +1,9 @@
 ---
-title: "CD2DGradientBrush Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CD2DGradientBrush Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::Destroy", "AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops", "AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma", "AFXRENDERTARGET/CD2DGradientBrush::m_extendMode", "AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DGradientBrush [MFC], CD2DGradientBrush", "CD2DGradientBrush [MFC], Destroy", "CD2DGradientBrush [MFC], m_arGradientStops", "CD2DGradientBrush [MFC], m_colorInterpolationGamma", "CD2DGradientBrush [MFC], m_extendMode", "CD2DGradientBrush [MFC], m_pGradientStops"]
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DGradientBrush Class
 
@@ -29,7 +22,7 @@ class CD2DGradientBrush : public CD2DBrush;
 |Name|Description|
 |----------|-----------------|
 |[CD2DGradientBrush::CD2DGradientBrush](#cd2dgradientbrush)|Constructs a CD2DGradientBrush object.|
-|[CD2DGradientBrush::~CD2DGradientBrush](#cd2dgradientbrush__~cd2dgradientbrush)|The destructor. Called when a D2D gradient brush object is being destroyed.|
+|[CD2DGradientBrush::~CD2DGradientBrush](#_dtorcd2dgradientbrush)|The destructor. Called when a D2D gradient brush object is being destroyed.|
 
 ### Protected Methods
 
@@ -146,6 +139,6 @@ A pointer to an array of D2D1_GRADIENT_STOP structures.
 ID2D1GradientStopCollection* m_pGradientStops;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

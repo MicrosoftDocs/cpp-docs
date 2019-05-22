@@ -1,16 +1,9 @@
 ---
-title: "/Zc:inline (Remove unreferenced COMDAT) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:inline (Remove unreferenced COMDAT)"
 ms.date: "03/01/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:inline", "VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)", "/Zc:inline"]
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:inline (Remove unreferenced COMDAT)
 
@@ -22,7 +15,7 @@ Removes unreferenced functions or data that are COMDATs or only have internal li
 
 ## Remarks
 
-When **/Zc:inline** is specified, the compiler does not emit symbol information for unreferenced COMDAT functions or data, or for functions or data that have internal linkage only. This optimization simplifies some of the work performed by the linker in release builds or when the linker option [/OPT:REF](../../build/reference/opt-optimizations.md) is specified. When the compiler performs this optimization, it can significantly reduce .obj file size and improve linker speeds. This compiler option is not enabled when optimizations are disabled ([/Od](../../build/reference/od-disable-debug.md)) or when [/GL (Whole Program Optimization)](../../build/reference/gl-whole-program-optimization.md) is specified.
+When **/Zc:inline** is specified, the compiler does not emit symbol information for unreferenced COMDAT functions or data, or for functions or data that have internal linkage only. This optimization simplifies some of the work performed by the linker in release builds or when the linker option [/OPT:REF](opt-optimizations.md) is specified. When the compiler performs this optimization, it can significantly reduce .obj file size and improve linker speeds. This compiler option is not enabled when optimizations are disabled ([/Od](od-disable-debug.md)) or when [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) is specified.
 
 By default, this option is off (**/Zc:inline-**). The [/permissive-](permissive-standards-conformance.md) option does not enable **/Zc:inline**.
 
@@ -118,7 +111,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
@@ -126,4 +119,4 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "is_trivially_constructible Class | Microsoft Docs"
-ms.custom: ""
+title: "is_trivially_constructible Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_trivially_constructible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_trivially_constructible"]
 ms.assetid: 3fa918c1-e66f-4d0e-a11b-be1fb2c02e7b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_trivially_constructible Class
 

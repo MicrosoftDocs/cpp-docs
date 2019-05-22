@@ -1,16 +1,9 @@
 ---
-title: "directory_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "directory_iterator Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]
-dev_langs: ["C++"]
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "std::experimental::filesystem::directory_iterator", "std::experimental::filesystem::directory_iterator::directory_iterator", "std::experimental::filesystem::directory_iterator::increment", "std::experimental::filesystem::directory_iterator::operator=", "std::experimental::filesystem::directory_iterator::operator==", "std::experimental::filesystem::directory_iterator::operator!=", "std::experimental::filesystem::directory_iterator::operator*", "std::experimental::filesystem::directory_iterator::operator-&gt;", "std::experimental::filesystem::directory_iterator::operator++"]
-ms.workload: ["cplusplus"]
 ---
 # directory_iterator Class
 

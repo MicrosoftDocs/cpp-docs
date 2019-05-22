@@ -1,15 +1,8 @@
 ---
-title: "Statements (C) | Microsoft Docs"
-ms.custom: ""
+title: "Statements (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["statements, C", "Visual C, statements", "statements"]
 ms.assetid: df3891cd-6195-4663-aecf-7fe7dc3ed9c3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Statements (C)
 
@@ -25,6 +18,6 @@ The statements of a C program control the flow of program execution. In C, as in
 |[for statement](../c-language/for-statement-c.md)|[try-finally statement](../c-language/try-finally-statement-c.md)|
 |[goto and labeled statements](../c-language/goto-and-labeled-statements-c.md)|[while statement](../c-language/while-statement-c.md)|
 
-## See Also
+## See also
 
 [C Language Reference](../c-language/c-language-reference.md)

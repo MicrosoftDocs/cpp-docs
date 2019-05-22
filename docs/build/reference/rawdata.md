@@ -1,16 +1,9 @@
 ---
-title: "-RAWDATA | Microsoft Docs"
-ms.custom: ""
+title: "/RAWDATA"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/rawdata"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RAWDATA dumpbin option", "raw data", "-RAWDATA dumpbin option", "/RAWDATA dumpbin option"]
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /RAWDATA
 
@@ -31,8 +24,8 @@ This option displays the raw contents of each section in the file. The arguments
 |NONE|Raw data is suppressed. This argument is useful to control the output of /ALL.|
 |*Number*|Displayed lines are set to a width that holds `number` values per line.|
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

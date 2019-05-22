@@ -1,16 +1,9 @@
 ---
-title: "Code Pages | Microsoft Docs"
-ms.custom: ""
+title: "Code Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.international"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["character sets [C++], code pages", "ANSI [C++], code pages", "system-default code page", "multibyte code pages [C++]", "localization [C++], code pages", "code pages [C++], types of", "locale code pages [C++]"]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Code Pages
 
@@ -34,7 +27,7 @@ The Microsoft run-time library uses the following types of code pages:
 
 - The "C" locale is defined by ANSI to correspond to the locale in which C programs have traditionally executed. The code page for the "C" locale ("C" code page) corresponds to the ASCII character set. For example, in the "C" locale, **islower** returns true for the values 0x61 - 0x7A only. In another locale, **islower** may return true for these as well as other values, as defined by that locale.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

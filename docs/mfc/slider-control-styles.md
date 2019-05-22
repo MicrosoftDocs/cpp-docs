@@ -1,15 +1,8 @@
 ---
-title: "Slider Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "Slider Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["slider controls [MFC], styles", "CSliderCtrl class [MFC], styles", "styles [MFC], CSliderCtrl", "styles [MFC], slider controls"]
 ms.assetid: 64c491fc-5af1-4f97-ae30-854071b3dc02
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Slider Control Styles
 
@@ -25,8 +18,7 @@ A slider control can display a selection range only if you specify the TBS_ENABL
 
 By default, the length of a slider control's slider varies as the selection range changes. If the slider control has the TBS_FIXEDLENGTH style, the length of the slider remains the same even if the selection range changes. A slider control that has the TBS_NOTHUMB style does not include a slider.
 
-## See Also
+## See also
 
 [Using CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

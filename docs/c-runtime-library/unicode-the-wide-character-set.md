@@ -1,16 +1,9 @@
 ---
-title: "Unicode: The Wide-Character Set | Microsoft Docs"
-ms.custom: ""
+title: "Unicode: The Wide-Character Set"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.international"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode [C++], wide character set", "wide characters [C++], Unicode"]
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Unicode: The Wide-Character Set
 
@@ -20,7 +13,7 @@ A wide character is of type **wchar_t**. A wide-character string is represented 
 
 Generally, wide characters take up more space in memory than multibyte characters but are faster to process. In addition, only one locale can be represented at a time in multibyte encoding, whereas all character sets in the world are represented simultaneously by the Unicode representation.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

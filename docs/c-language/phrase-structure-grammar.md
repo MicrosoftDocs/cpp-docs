@@ -1,15 +1,8 @@
 ---
-title: "Phrase Structure Grammar | Microsoft Docs"
-ms.custom: ""
+title: "Phrase Structure Grammar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["phrase structure grammar", "grammar, phrase structure"]
 ms.assetid: 546c2961-5d37-4ef9-a0ce-74e7550e3899
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Phrase Structure Grammar
 
@@ -21,6 +14,6 @@ ms.workload: ["cplusplus"]
 
 - [External Definitions](../c-language/external-definitions.md)
 
-## See Also
+## See also
 
 [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)

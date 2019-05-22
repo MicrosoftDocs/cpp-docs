@@ -1,15 +1,8 @@
 ---
-title: "return Statement in Program Termination (C++) | Microsoft Docs"
-ms.custom: ""
+title: "return Statement in Program Termination (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data types [C++], function return types", "function return types [C++], return statement", "return keyword [C++], syntax"]
 ms.assetid: 66d002ab-5625-4b68-8446-71e1b8fcdbd8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # return Statement in Program Termination (C++)
 

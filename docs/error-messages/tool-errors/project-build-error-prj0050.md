@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0050 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0050"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0050"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0050"]
 ms.assetid: ceef3b37-0acf-4abd-ac62-aa830b4fa145
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0050
 

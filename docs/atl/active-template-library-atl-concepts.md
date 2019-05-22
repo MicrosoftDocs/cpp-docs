@@ -1,26 +1,16 @@
 ---
-title: "Active Template Library (ATL) Concepts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Active Template Library (ATL) Concepts"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["ATL, about ATL"]
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Template Library (ATL) Concepts
 
 The Active Template Library (ATL) is a set of template-based C++ classes that let you create small, fast Component Object Model (COM) objects. It has special support for key COM features, including stock implementations, dual interfaces, standard COM enumerator interfaces, connection points, tear-off interfaces, and ActiveX controls.
 
-If you do a lot of ATL programming, you will want to learn more about attributes, a new feature in Visual C++ .NET that is designed to simplify COM programming. For more information, see [Attributed Programming](../windows/attributed-programming-concepts.md).
+If you do a lot of ATL programming, you will want to learn more about COM and .NET attributes, which is designed to simplify COM programming. For more information, see [Attributed Programming](../windows/attributed-programming-concepts.md). (COM and .NET attributes are not to be confused with the \[\[attribute]] feature in the C++ standard.)
 
 ## In This Section
-
-[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
-Leads you through the creation of a control and demonstrates some ATL fundamentals in the process.
 
 [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)<br/>
 Introduces the major concepts behind the Component Object Model (COM). This article also briefly explains what ATL is and when you should use it.
@@ -87,7 +77,10 @@ Provides code for manipulating paths and URLs in the form of [CPathT](../atl/ref
 
 ## Related Sections
 
-[ATL Samples](../visual-cpp-samples.md)<br/>
+[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
+Leads you through the creation of a control and demonstrates some ATL fundamentals in the process.
+
+[ATL Samples](../overview/visual-cpp-samples.md)<br/>
 Provides descriptions of and links to the ATL sample programs.
 
 [Creating an ATL Project](../atl/reference/creating-an-atl-project.md)<br/>
@@ -101,4 +94,3 @@ Provides an overview on using attributes to simplify COM programming plus a list
 
 [ATL Class Overview](../atl/atl-class-overview.md)<br/>
 Provides reference information and links to the ATL classes.
-

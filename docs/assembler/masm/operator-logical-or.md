@@ -1,16 +1,9 @@
 ---
-title: "operator || | Microsoft Docs"
-ms.custom: ""
+title: "operator ||"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator ||"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["|| operator", "operator ||"]
 ms.assetid: 50b15b63-649c-4bcf-a663-a10ee3cb3db6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator ||
 

@@ -1,15 +1,8 @@
 ---
-title: "finally | Microsoft Docs"
-ms.custom: ""
+title: "finally"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["finally keyword [C++]"]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # finally
 
@@ -19,7 +12,7 @@ In addition to `try` and `catch` clauses, CLR exception handling supports a `fin
 
 The purpose of the `finally` block is to clean up any resources left after the exception occurred. Note that the `finally` block is always executed, even if no exception was thrown. The `catch` block is only executed if a managed exception is thrown within the associated `try` block.
 
-`finally` is a context-sensitive keyword; see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.
+`finally` is a context-sensitive keyword; see [Context-Sensitive Keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md) for more information.
 
 ## Example
 
@@ -56,6 +49,6 @@ MyException
 in finally
 ```
 
-## See Also
+## See also
 
-[Exception Handling](../windows/exception-handling-cpp-component-extensions.md)
+[Exception Handling](../extensions/exception-handling-cpp-component-extensions.md)

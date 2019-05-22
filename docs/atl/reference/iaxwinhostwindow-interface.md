@@ -1,16 +1,9 @@
 ---
-title: "IAxWinHostWindow Interface | Microsoft Docs"
-ms.custom: ""
+title: "IAxWinHostWindow Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IAxWinHostWindow", "ATLIFACE/ATL::IAxWinHostWindow", "ATLIFACE/ATL::AttachControl", "ATLIFACE/ATL::CreateControl", "ATLIFACE/ATL::CreateControlEx", "ATLIFACE/ATL::QueryControl", "ATLIFACE/ATL::SetExternalDispatch", "ATLIFACE/ATL::SetExternalUIHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinHostWindow interface"]
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IAxWinHostWindow Interface
 
@@ -209,9 +202,8 @@ A standard HRESULT value.
 
 This function is used by controls (such as the Web browser control) that query the host's site for the `IDocHostUIHandlerDispatch` interface.
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatch Interface](../../atl/reference/iaxwinambientdispatch-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

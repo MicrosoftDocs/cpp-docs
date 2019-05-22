@@ -1,16 +1,8 @@
 ---
-title: "Styles Used by MFC | Microsoft Docs"
-ms.custom: ""
+title: "Styles Used by MFC"
 ms.date: "06/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.styles"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["button objects (CButton), button styles", "button styles [MFC]", "buttons, MFC toolbars", "combo boxes [MFC], styles", "edit styles [MFC]", "extended window styles [MFC]", "frame windows [MFC], styles", "list boxes [MFC], styles", "message-box styles [MFC]", "scroll bars [MFC], styles", "scroll-bar styles [MFC]", "static styles [MFC]", "styles [MFC], button objects", "styles [MFC], MFC", "styles [MFC], windows", "styles [MFC]", "window styles, in MFC", "window styles [MFC]", "BS_3STATE constant [MFC]", "BS_AUTO3STATE constant [MFC]", "BS_AUTOCHECKBOX constant [MFC]", "BS_AUTORADIOBUTTON constant [MFC]", "BS_BITMAP constant [MFC]", "BS_BOTTOM constant [MFC]", "BS_CENTER constant [MFC]", "BS_CHECKBOX constant [MFC]", "BS_DEFPUSHBUTTON constant [MFC]", "BS_FLAT constant [MFC]", "BS_GROUPBOX constant [MFC]", "BS_ICON constant [MFC]", "BS_LEFT constant [MFC]", "BS_LEFTTEXT constant [MFC]", "BS_MULTILINE constant [MFC]", "BS_NOTIFY constant [MFC]", "BS_OWNERDRAW constant [MFC]", "BS_PUSHBUTTON constant [MFC]", "BS_PUSHLIKE constant [MFC]", "BS_RADIOBUTTON constant [MFC]", "BS_RIGHT constant [MFC]", "BS_RIGHTBUTTON constant [MFC]", "BS_TEXT constant [MFC]", "BS_TOP constant [MFC]", "BS_USERBUTTON constant [MFC]", "BS_VCENTER constant [MFC]", "CBS_AUTOHSCROLL constant [MFC]", "CBS_DISABLENOSCROLL constant [MFC]", "CBS_DROPDOWN constant [MFC]", "CBS_DROPDOWNLIST constant [MFC]", "CBS_HASSTRINGS constant [MFC]", "CBS_LOWERCASE constant [MFC]", "CBS_NOINTEGRALHEIGHT constant [MFC]", "CBS_OEMCONVERT constant [MFC]", "CBS_OWNERDRAWFIXED constant [MFC]", "CBS_OWNERDRAWVARIABLE constant [MFC]", "CBS_SIMPLE constant [MFC]", "CBS_SORT constant [MFC]", "CBS_UPPERCASE constant [MFC]", "ES_AUTOHSCROLL constant [MFC]", "ES_AUTOVSCROLL constant [MFC]", "ES_CENTER constant [MFC]", "ES_LEFT constant [MFC]", "ES_LOWERCASE constant [MFC]", "ES_MULTILINE constant [MFC]", "ES_NOHIDESEL constant [MFC]", "ES_NUMBER constant [MFC]", "ES_OEMCONVERT constant [MFC]", "ES_PASSWORD constant [MFC]", "ES_READONLY constant [MFC]", "ES_RIGHT constant [MFC]", "ES_UPPERCASE constant [MFC]", "ES_WANTRETURN constant [MFC]", "FWS_ADDTOTITLE constant [MFC]", "FWS_PREFIXTITLE constant [MFC]", "FWS_SNAPTOBARS constant [MFC]", "LBS_DISABLENOSCROLL constant [MFC]", "LBS_EXTENDEDSEL constant [MFC]", "LBS_HASSTRINGS constant [MFC]", "LBS_MULTICOLUMN constant [MFC]", "LBS_MULTIPLESEL constant [MFC]", "LBS_NODATA constant [MFC]", "LBS_NOINTEGRALHEIGHT constant [MFC]", "LBS_NOREDRAW constant [MFC]", "LBS_NOSEL constant [MFC]", "LBS_NOTIFY constant [MFC]", "LBS_OWNERDRAWFIXED constant [MFC]", "LBS_OWNERDRAWVARIABLE constant [MFC]", "LBS_SORT constant [MFC]", "LBS_STANDARD constant [MFC]", "LBS_USETABSTOPS constant [MFC]", "LBS_WANTKEYBOARDINPUT constant [MFC]", "MB_ABORTRETRYOVERWRITE constant [MFC]", "MB_APPLMODAL constant [MFC]", "MB_DEFBUTTON1 constant [MFC]", "MB_DEFBUTTON2 constant [MFC]", "MB_DEFBUTTON3 constant [MFC]", "MB_ICONEXCLAMATION constant [MFC]", "MB_ICONINFORMATION constant [MFC]", "MB_ICONQUESTION constant [MFC]", "MB_ICONSTOP constant [MFC]", "MB_OK constant [MFC]", "MB_OKCANCEL constant [MFC]", "MB_RETRYCANCEL constant [MFC]", "MB_SYSTEMMODAL constant [MFC]", "MB_TASKMODAL constant [MFC]", "MB_YESNO constant [MFC]", "MB_YESNOCANCEL constant [MFC]", "SBS_BOTTOMALIGN constant [MFC]", "SBS_HORZ constant [MFC]", "SBS_LEFTALIGN constant [MFC]", "SBS_RIGHTALIGN constant [MFC]", "SBS_SIZEBOX constant [MFC]", "SBS_SIZEBOXBOTTOMRIGHTALIGN constant [MFC]", "SBS_SIZEBOXTOPLEFTALIGN constant [MFC]", "SBS_TOPALIGN constant [MFC]", "SBS_VERT constant [MFC]", "SS_BITMAP constant [MFC]", "SS_BLACKFRAME constant [MFC]", "SS_BLACKRECT constant [MFC]", "SS_CENTER constant [MFC]", "SS_CENTERIMAGE constant [MFC]", "SS_ENDELLIPSIS constant [MFC]", "SS_ENHMETAFILE constant [MFC]", "SS_ETCHEDFRAME constant [MFC]", "SS_ETCHEDHORZ constant [MFC]", "SS_ETCHEDVERT constant [MFC]", "SS_GRAYFRAME constant [MFC]", "SS_GRAYRECT constant [MFC]", "SS_ICON constant [MFC]", "SS_LEFT constant [MFC]", "SS_LEFTNOWORDWRAP constant [MFC]", "SS_NOPREFIX constant [MFC]", "SS_NOTIFY constant [MFC]", "SS_OWNERDRAW constant [MFC]", "SS_PATHELLIPSIS constant [MFC]", "SS_REALSIZEIMAGE constant [MFC]", "SS_RIGHT constant [MFC]", "SS_RIGHTJUST constant [MFC]", "SS_SIMPLE constant [MFC]", "SS_SUNKEN constant [MFC]", "SS_USERITEM constant [MFC]", "SS_WHITEFRAME constant [MFC]", "SS_WHITERECT constant [MFC]", "SS_WORDELLIPSIS constant [MFC]", "WS_BORDER constant [MFC]", "WS_CAPTION constant [MFC]", "WS_CHILD constant [MFC]", "WS_CHILDWINDOW constant [MFC]", "WS_CLIPCHILDREN constant [MFC]", "WS_CLIPSIBLINGS constant [MFC]", "WS_DISABLED constant [MFC]", "WS_DLGFRAME constant [MFC]", "WS_GROUP constant [MFC]", "WS_HSCROLL constant [MFC]", "WS_ICONIC constant [MFC]", "WS_MAXIMIZE constant [MFC]", "WS_MAXIMIZEBOX constant [MFC]", "WS_MINIMIZE constant [MFC]", "WS_MINIMIZEBOX constant [MFC]", "WS_OVERLAPPED constant [MFC]", "WS_OVERLAPPEDWINDOW constant [MFC]", "WS_POPUP constant [MFC]", "WS_POPUPWINDOW constant [MFC]", "WS_SIZEBOX constant [MFC]", "WS_SYSMENU constant [MFC]", "WS_TABSTOP constant [MFC]", "WS_THICKFRAME constant [MFC]", "WS_TILED constant [MFC]", "WS_TILEDWINDOW constant [MFC]", "WS_VISIBLE constant [MFC]", "WS_VSCROLL constant [MFC]", "WS_EX_ACCEPTFILES constant [MFC]", "WS_EX_APPWINDOW constant [MFC]", "WS_EX_CLIENTEDGE constant [MFC]", "WS_EX_CONTEXTHELP constant [MFC]", "WS_EX_CONTROLPARENT constant [MFC]", "WS_EX_DLGMODALFRAME constant [MFC]", "WS_EX_LEFT constant [MFC]", "WS_EX_LEFTSCROLLBAR constant [MFC]", "WS_EX_LTRREADING constant [MFC]", "WS_EX_MDICHILD constant [MFC]", "WS_EX_NOPARENTNOTIFY constant [MFC]", "WS_EX_OVERLAPPEDWINDOW constant [MFC]", "WS_EX_PALETTEWINDOW constant [MFC]", "WS_EX_RIGHT constant [MFC]", "WS_EX_RIGHTSCROLLBAR constant [MFC]", "WS_EX_RTLREADING constant [MFC]", "WS_EX_STATICEDGE constant [MFC]", "WS_EX_TOOLWINDOW constant [MFC]", "WS_EX_TOPMOST constant [MFC]", "WS_EX_TRANSPARENT constant [MFC]", "WS_EX_WINDOWEDGE constant [MFC]"]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Styles Used by MFC
 
@@ -147,7 +139,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |LBS_HASSTRINGS|Specifies an owner-draw list box that contains items consisting of strings. The list box maintains the memory and pointers for the strings so the application can use the `GetText` member function to retrieve the text for a particular item.|
 |LBS_MULTICOLUMN|Specifies a multicolumn list box that is scrolled horizontally. The `SetColumnWidth` member function sets the width of the columns.|
 |LBS_MULTIPLESEL|String selection is toggled each time the user clicks or double-clicks the string. Any number of strings can be selected.|
-|LBS_NODATA|Specifies a no-data list box. Specify this style when the count of items in the list box will exceed one thousand. A no-data list box must also have the LBS_OWNERDRAWFIXED style, but must not have the LBS_SORT or LBS_HASSTRINGS style. <br /></br />A no-data list box resembles an owner-drawn list box except that it contains no string or bitmap data for an item. Commands to add, insert, or delete an item always ignore any given item data; requests to find a string within the list box always fail. The system sends the WM_DRAWITEM message to the owner window when an item must be drawn. The itemID member of the `DRAWITEMSTRUCT` structure passed with the WM_DRAWITEM message specifies the line number of the item to be drawn. A no-data list box does not send a WM_DELETEITEM message.|
+|LBS_NODATA|Specifies a no-data list box. Specify this style when the count of items in the list box will exceed one thousand. A no-data list box must also have the LBS_OWNERDRAWFIXED style, but must not have the LBS_SORT or LBS_HASSTRINGS style.<br/><br/> A no-data list box resembles an owner-drawn list box except that it contains no string or bitmap data for an item. Commands to add, insert, or delete an item always ignore any given item data; requests to find a string within the list box always fail. The system sends the WM_DRAWITEM message to the owner window when an item must be drawn. The itemID member of the `DRAWITEMSTRUCT` structure passed with the WM_DRAWITEM message specifies the line number of the item to be drawn. A no-data list box does not send a WM_DELETEITEM message.|
 |LBS_NOINTEGRALHEIGHT|The size of the list box is exactly the size specified by the application when it created the list box. Usually, Windows sizes a list box so that the list box does not display partial items.|
 |LBS_NOREDRAW|List-box display is not updated when changes are made. This style can be changed at any time by sending a WM_SETREDRAW message.|
 |LBS_NOSEL|Specifies that the list box contains items that can be viewed but not selected.|
@@ -159,7 +151,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 |LBS_USETABSTOPS|Allows a list box to recognize and expand tab characters when drawing its strings. The default tab positions are 32 dialog units. (A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit. The dialog base units are computed based on the height and width of the current system font. The `GetDialogBaseUnits` Windows function returns the current dialog base units in pixels.) This style should not be used with LBS_OWNERDRAWFIXED.|
 |LBS_WANTKEYBOARDINPUT|The owner of the list box receives WM_VKEYTOITEM or WM_CHARTOITEM messages whenever the user presses a key while the list box has input focus. This allows an application to perform special processing on the keyboard input.|
 
-##<a name="message-box-styles"></a>  Message-box styles
+## <a name="message-box-styles"></a>  Message-box styles
 
 Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *nType* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox).
 
@@ -192,6 +184,7 @@ The following message-box styles are available.
 |MB_ICONINFORMATION|An icon consisting of an "I" in a circle appears in the message box.|
 |MB_ICONQUESTION|A question-mark icon appears in the message box.|
 |MB_ICONSTOP|A stop-sign icon appears in the message box.|
+
 ### Message-box default buttons
 
 |Style|Description|
@@ -253,7 +246,7 @@ Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) obj
 
 ## <a name="window-styles"></a> Window styles
 
-Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600).
+Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/desktop/winmsg/window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -314,7 +307,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_TRANSPARENT|Specifies that a window created with this style is to be transparent. That is, any windows that are beneath the window are not obscured by the window. A window created with this style receives WM_PAINT messages only after all sibling windows beneath it have been updated.|
 |WS_EX_WINDOWEDGE|Specifies that a window has a border with a raised edge.|
 
-## See Also
+## See also
 
 [MFC Class Overview](../../mfc/class-library-overview.md)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>
@@ -332,5 +325,5 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)<br/>
 [Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)<br/>
 [Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)<br/>
+[Window Styles (Windows)](/windows/desktop/winmsg/window-styles)<br/>
 [Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles)

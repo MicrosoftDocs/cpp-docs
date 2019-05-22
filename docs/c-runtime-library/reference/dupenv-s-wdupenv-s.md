@@ -1,19 +1,12 @@
 ---
-title: "_dupenv_s, _wdupenv_s | Microsoft Docs"
-ms.custom: ""
+title: "_dupenv_s, _wdupenv_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_dupenv_s", "_wdupenv_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tdupenv_s", "_dupenv_s", "wdupenv_s", "dupenv_s", "_tdupenv_s", "_wdupenv_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_dupenv_s function", "_tdupenv_s function", "_wdupenv_s function", "environment variables", "wdupenv_s function", "dupenv_s function", "tdupenv_s function"]
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _dupenv_s, _wdupenv_s
 

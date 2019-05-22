@@ -1,15 +1,8 @@
 ---
-title: "Using an Image List with a Rebar Control | Microsoft Docs"
-ms.custom: ""
+title: "Using an Image List with a Rebar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["image lists [MFC], rebar controls", "rebar controls [MFC], image lists"]
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using an Image List with a Rebar Control
 
@@ -33,8 +26,7 @@ The following example assumes that an existing image list object with two images
 
 [!code-cpp[NVC_MFCControlLadenDialog#28](../mfc/codesnippet/cpp/using-an-image-list-with-a-rebar-control_1.cpp)]
 
-## See Also
+## See also
 
 [Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

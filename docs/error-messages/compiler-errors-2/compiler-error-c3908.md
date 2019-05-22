@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3908 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3908"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3908"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3908"]
 ms.assetid: 3c322482-c79e-4197-a578-2ad9bc379d1a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3908
 
@@ -18,7 +11,7 @@ access level less restrictive than 'construct'
 
 A property accessor method (get or set) cannot have less restrictive access than the access specified on the property itself.  Similarly, for event accessor methods.
 
-For more information, see [property](../../windows/property-cpp-component-extensions.md) and [event](../../windows/event-cpp-component-extensions.md).
+For more information, see [property](../../extensions/property-cpp-component-extensions.md) and [event](../../extensions/event-cpp-component-extensions.md).
 
 The following sample generates C3908:
 

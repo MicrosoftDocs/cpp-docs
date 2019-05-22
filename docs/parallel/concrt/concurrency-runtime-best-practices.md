@@ -1,15 +1,8 @@
 ---
-title: "Concurrency Runtime Best Practices | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency Runtime Best Practices"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["best practices [Concurrency Runtime]", "Concurrency Runtime, practices to avoid", "practices to avoid [Concurrency Runtime]", "Concurrency Runtime, best practices"]
 ms.assetid: 7231d4be-d1e3-401d-8b66-94fd51b587c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime Best Practices
 
@@ -42,4 +35,3 @@ Describes the various synchronization primitives that the Concurrency Runtime pr
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 Describes how to use the Task Scheduler to adjust the performance of your applications.
-

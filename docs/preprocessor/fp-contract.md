@@ -1,16 +1,9 @@
 ---
-title: "fp_contract | Microsoft Docs"
-ms.custom: ""
+title: "fp_contract"
 ms.date: "03/12/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.fp_contract", "fp_contract_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, fp_contract", "fp_contract pragma"]
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fp_contract
 

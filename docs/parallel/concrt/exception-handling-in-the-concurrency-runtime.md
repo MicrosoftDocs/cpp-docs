@@ -1,15 +1,8 @@
 ---
-title: "Exception Handling in the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling in the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lightweight tasks, exception handling [Concurrency Runtime]", "exception handling [Concurrency Runtime]", "structured task groups, exception handling [Concurrency Runtime]", "agents, exception handling [Concurrency Runtime]", "task groups, exception handling [Concurrency Runtime]"]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling in the Concurrency Runtime
 
@@ -181,7 +174,7 @@ For more information about asynchronous agents, see [Asynchronous Agents](../../
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -189,4 +182,3 @@ For more information about asynchronous agents, see [Asynchronous Agents](../../
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md)
-

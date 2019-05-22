@@ -1,16 +1,9 @@
 ---
-title: "_emit Pseudoinstruction | Microsoft Docs"
-ms.custom: ""
+title: "_emit Pseudoinstruction"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
 f1_keywords: ["_emit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["byte defining (inline assembly)", "_emit pseudoinstruction"]
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _emit Pseudoinstruction
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4091 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4091"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4091"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4091"]
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4091
 

@@ -1,16 +1,9 @@
 ---
-title: "CTypedPtrMap Class | Microsoft Docs"
-ms.custom: ""
+title: "CTypedPtrMap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTypedPtrMap", "AFXTEMPL/CTypedPtrMap", "AFXTEMPL/CTypedPtrMap::GetNextAssoc", "AFXTEMPL/CTypedPtrMap::Lookup", "AFXTEMPL/CTypedPtrMap::RemoveKey", "AFXTEMPL/CTypedPtrMap::SetAt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrMap [MFC], GetNextAssoc", "CTypedPtrMap [MFC], Lookup", "CTypedPtrMap [MFC], RemoveKey", "CTypedPtrMap [MFC], SetAt"]
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTypedPtrMap Class
 
@@ -49,7 +42,7 @@ Class of the object stored in the map.
 
 |Name|Description|
 |----------|-----------------|
-|[CTypedPtrMap::operator [ ]](#operator_at)|Inserts an element into the map.|
+|[CTypedPtrMap::operator \[ \]](#operator_at)|Inserts an element into the map.|
 
 ## Remarks
 
@@ -205,9 +198,9 @@ Specifies the object pointer that is the value of the new element.
 
 For more detailed remarks, see [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CMapPtrToPtr Class](../../mfc/reference/cmapptrtoptr-class.md)<br/>
 [CMapPtrToWord Class](../../mfc/reference/cmapptrtoword-class.md)<br/>

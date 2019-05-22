@@ -1,15 +1,8 @@
 ---
-title: "Function Call (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Function Call (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function calls, C++ functions", "functions [C++], calling", "operator overloading [C++], function calls", "function overloading [C++], function-call operator", "function calls, operator", "operators [C++], overloading", "operator overloading [C++], examples", "function call operator ()"]
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Call (C++)
 

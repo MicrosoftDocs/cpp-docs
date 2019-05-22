@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4956 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4956"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4956"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4956"]
 ms.assetid: 9154f2d1-d49f-4e07-90d2-0e9bc028011a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4956
 

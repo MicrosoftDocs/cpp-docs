@@ -1,15 +1,8 @@
 ---
-title: "Storage of String Literals | Microsoft Docs"
-ms.custom: ""
+title: "Storage of String Literals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["string literals, storage"]
 ms.assetid: ba5e4d2c-d456-44b3-a8ca-354af547ac50
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Storage of String Literals
 
@@ -23,6 +16,6 @@ Strings have static storage duration. See [Storage Classes](../c-language/c-stor
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C String Literals](../c-language/c-string-literals.md)

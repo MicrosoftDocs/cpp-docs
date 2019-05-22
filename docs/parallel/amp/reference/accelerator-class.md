@@ -1,16 +1,9 @@
 ---
-title: "accelerator Class | Microsoft Docs"
-ms.custom: ""
+title: "accelerator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["AMPRT/accelerator", "AMPRT/Concurrency::accelerator::accelerator", "AMPRT/Concurrency::accelerator::create_view", "AMPRT/Concurrency::accelerator::get_all", "AMPRT/Concurrency::accelerator::get_auto_selection_view", "AMPRT/Concurrency::accelerator::get_dedicated_memory", "AMPRT/Concurrency::accelerator::get_default_cpu_access_type", "AMPRT/Concurrency::accelerator::get_default_view", "AMPRT/Concurrency::accelerator::get_description", "AMPRT/Concurrency::accelerator::get_device_path", "AMPRT/Concurrency::accelerator::get_has_display", "AMPRT/Concurrency::accelerator::get_is_debug", "AMPRT/Concurrency::accelerator::get_is_emulated", "AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::get_supports_double_precision", "AMPRT/Concurrency::accelerator::get_supports_limited_double_precision", "AMPRT/Concurrency::accelerator::get_version", "AMPRT/Concurrency::accelerator::set_default", "AMPRT/Concurrency::accelerator::set_default_cpu_access_type", "AMPRT/Concurrency::accelerator::cpu_accelerator", "AMPRT/Concurrency::accelerator::dedicated_memory", "AMPRT/Concurrency::accelerator::default_accelerator", "AMPRT/Concurrency::accelerator::default_cpu_access_type", "AMPRT/Concurrency::accelerator::default_view", "AMPRT/Concurrency::accelerator::description", "AMPRT/Concurrency::accelerator::device_path", "AMPRT/Concurrency::accelerator::direct3d_ref", "AMPRT/Concurrency::accelerator::direct3d_warp", "AMPRT/Concurrency::accelerator::has_display", "AMPRT/Concurrency::accelerator::is_debug", "AMPRT/Concurrency::accelerator::is_emulated", "AMPRT/Concurrency::accelerator::supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::supports_double_precision", "AMPRT/Concurrency::accelerator::supports_limited_double_precision", "AMPRT/Concurrency::accelerator::version"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator class"]
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # accelerator Class
 
@@ -247,7 +240,6 @@ Returns the dedicated memory for the `accelerator`, in kilobytes.
 
 ```
 size_t get_dedicated_memory() const;
-
 ```
 
 ### Return Value
@@ -260,7 +252,6 @@ Gets the default cpu access_type for buffers created on this accelerator
 
 ```
 access_type get_default_cpu_access_type() const;
-
 ```
 
 ### Return Value
@@ -273,7 +264,6 @@ Returns the default `accelerator_view` object that is associated with the `accel
 
 ```
 accelerator_view get_default_view() const;
-
 ```
 
 ### Return Value
@@ -286,7 +276,6 @@ Returns a short description of the `accelerator` device.
 
 ```
 std::wstring get_description() const;
-
 ```
 
 ### Return Value
@@ -299,7 +288,6 @@ Returns the path of the accelerator. The path is unique on the system.
 
 ```
 std::wstring get_device_path() const;
-
 ```
 
 ### Return Value
@@ -312,7 +300,6 @@ Returns a Boolean value that indicates whether the `accelerator` can output to a
 
 ```
 bool get_has_display() const;
-
 ```
 
 ### Return Value
@@ -325,7 +312,6 @@ Determines whether the `accelerator` has the DEBUG layer enabled for extensive e
 
 ```
 bool get_is_debug() const;
-
 ```
 
 ### Return Value
@@ -338,7 +324,6 @@ Determines whether the `accelerator` is emulated.
 
 ```
 bool get_is_emulated() const;
-
 ```
 
 ### Return Value
@@ -351,7 +336,6 @@ Returns a boolean value indicating whether the accelerator supports memory acces
 
 ```
 bool get_supports_cpu_shared_memory() const;
-
 ```
 
 ### Return Value
@@ -364,7 +348,6 @@ Returns a Boolean value that indicates whether the accelerator supports double p
 
 ```
 bool get_supports_double_precision() const;
-
 ```
 
 ### Return Value
@@ -377,7 +360,6 @@ Returns a Boolean value that indicates whether the accelerator has limited suppo
 
 ```
 bool get_supports_limited_double_precision() const;
-
 ```
 
 ### Return Value
@@ -390,7 +372,6 @@ Returns the version of the `accelerator`.
 
 ```
 unsigned int get_version() const;
-
 ```
 
 ### Return Value
@@ -427,7 +408,6 @@ Compares this `accelerator` object with another and returns **false** if they ar
 
 ```
 bool operator!= (const accelerator& _Other) const;
-
 ```
 
 ### Parameters
@@ -462,7 +442,6 @@ Compares this `accelerator` object with another and returns **true** if they are
 
 ```
 bool operator== (const accelerator& _Other) const;
-
 ```
 
 ### Parameters
@@ -601,7 +580,6 @@ Returns the `accelerator` object for the [accelerator_view](accelerator-view-cla
 
 ```
 accelerator get_accelerator() const;
-
 ```
 
 ### Return Value
@@ -614,7 +592,6 @@ Returns a Boolean value that indicates whether the runtime will automatically se
 
 ```
 bool get_is_auto_selection() const;
-
 ```
 
 ### Return Value
@@ -627,7 +604,6 @@ Returns a Boolean value that indicates whether the [accelerator_view](accelerato
 
 ```
 bool get_is_debug() const;
-
 ```
 
 ### Return Value
@@ -640,7 +616,6 @@ Returns the queuing mode for the [accelerator_view](accelerator-view-class.md) o
 
 ```
 queuing_mode get_queuing_mode() const;
-
 ```
 
 ### Return Value
@@ -653,7 +628,6 @@ Returns the version of the [accelerator_view](accelerator-view-class.md).
 
 ```
 unsigned int get_version() const;
-
 ```
 
 ### Return Value
@@ -682,7 +656,6 @@ Compares this [accelerator_view](accelerator-view-class.md) object with another 
 
 ```
 bool operator!= (const accelerator_view& _Other) const;
-
 ```
 
 ### Parameters
@@ -717,7 +690,6 @@ Compares this [accelerator_view](accelerator-view-class.md) object with another 
 
 ```
 bool operator== (const accelerator_view& _Other) const;
-
 ```
 
 ### Parameters
@@ -757,6 +729,6 @@ void wait();
 
 Returns `void`.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

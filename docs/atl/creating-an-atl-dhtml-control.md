@@ -1,15 +1,8 @@
 ---
-title: "Creating an ATL DHTML Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating an ATL DHTML Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["HTML controls, creating", "DHTML controls", "DHTML controls, creating"]
 ms.assetid: 1d8f0ede-7d8b-4959-976e-b4d0e2a87f5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an ATL DHTML Control
 
@@ -23,6 +16,6 @@ The ATL Control Wizard automates the process of creating a DHTML control. It gen
 
 You can now [test the default control](../atl/testing-the-atl-dhtml-control.md).
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

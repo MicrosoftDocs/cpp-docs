@@ -1,16 +1,9 @@
 ---
-title: "&lt;iosfwd&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;iosfwd&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<iosfwd>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["iosfwd header"]
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;iosfwd&gt;
 
@@ -20,7 +13,6 @@ Declares forward references to several template classes used throughout iostream
 
 ```cpp
 #include <iosfwd>
-
 ```
 
 ## Typedefs

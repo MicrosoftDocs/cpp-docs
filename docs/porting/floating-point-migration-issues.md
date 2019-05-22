@@ -1,14 +1,7 @@
 ---
-title: "Floating-point migration issues | Microsoft Docs"
-ms.custom: ""
+title: "Floating-point migration issues"
 ms.date: "05/17/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Floating-point migration issues
 
@@ -18,7 +11,7 @@ Sometimes when you upgrade your projects to a newer version of Visual Studio, yo
 
 Most CRT math functions have been available in Visual Studio for years, but starting in Visual Studio 2013, all of the functions required by ISO C99 are included. These functions are implemented to balance performance with correctness. Because producing the correctly rounded result in every case may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 unit of least precision, or *ulp*, of the correctly rounded result, though there may be cases where there is greater inaccuracy. If you were using a different math library to get these functions before, implementation differences may be responsible for the change in your results.
 
-When the math functions were moved to the Universal CRT in Visual Studio 2015, some new algorithms were used, and several bugs in the implementation of the functions that were new in Visual Studio 2013 were fixed. These changes can lead to detectable differences in the results of floating-point calculations that use these functions. The functions that had bug issues were erf, exp2, remainder, remquo, scalbln, and scalbn, and their float and long double variants.  Other changes in Visual Studio 2015 fixed issues in preserving floating point status word and exception state information in _clear87, _clearfp, fegetenv, fesetenv, and feholdexcept functions.
+When the math functions were moved to the Universal CRT in Visual Studio 2015, some new algorithms were used, and several bugs in the implementation of the functions that were new in Visual Studio 2013 were fixed. These changes can lead to detectable differences in the results of floating-point calculations that use these functions. The functions that had bug issues were erf, exp2, remainder, remquo, scalbln, and scalbn, and their float and long double variants.  Other changes in Visual Studio 2015 fixed issues in preserving floating point status word and exception state information in _clear87, _clearfp, fegetenv, fesetenv, and feholdexcept functions.
 
 ## Processor differences and compiler flags
 

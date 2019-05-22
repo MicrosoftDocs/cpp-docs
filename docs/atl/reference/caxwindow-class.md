@@ -1,16 +1,9 @@
 ---
-title: "CAxWindow Class | Microsoft Docs"
-ms.custom: ""
+title: "CAxWindow Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAxWindow", "ATLWIN/ATL::CAxWindow", "ATLWIN/ATL::AttachControl", "ATLWIN/ATL::CreateControl", "ATLWIN/ATL::CreateControlEx", "ATLWIN/ATL::GetWndClassName", "ATLWIN/ATL::QueryControl", "ATLWIN/ATL::QueryHost", "ATLWIN/ATL::SetExternalDispatch", "ATLWIN/ATL::SetExternalUIHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAxWindow class", "ATL, hosting ActiveX controls"]
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAxWindow Class
 
@@ -125,7 +118,7 @@ A pointer to a string to create the control. Must be formatted in one of the fol
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -192,7 +185,7 @@ A pointer to a string to create the control. Must be formatted in one of the fol
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -354,11 +347,10 @@ A standard HRESULT value.
 
 The external `IDocHostUIHandlerDispatch` interface is used by controls that query the host's site for the `IDocHostUIHandlerDispatch` interface. The WebBrowser control is one control that does this.
 
-## See Also
+## See also
 
-[ATLCON Sample](../../visual-cpp-samples.md)<br/>
+[ATLCON Sample](../../overview/visual-cpp-samples.md)<br/>
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Control Containment FAQ](../../atl/atl-control-containment-faq.md)
-

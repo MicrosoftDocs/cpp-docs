@@ -1,16 +1,8 @@
 ---
-title: "Application Control | Microsoft Docs"
-ms.custom: ""
+title: "Application Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application control [MFC]"]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Control
 
@@ -211,11 +203,6 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 
 **Header:** afxwin.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxOleUnlockControl](#afxoleunlockcontrol)
-
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass
 
 This function allows you to register your server in the OLE system registry.
@@ -332,10 +319,6 @@ You must have the following statement in your client's application resource scri
 
 **Header**: afxole.h
 
-## See Also
-
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
-
 ## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
 
 Unlocks the class factory of the specified control.
@@ -369,15 +352,12 @@ A control is locked with `AfxOleLockControl`, so that dynamically created data a
 // Unlock control's (Microsoft Calendar Control) class factory.
 
 AfxOleUnlockControl(_T("MSCAL.Calendar"));
-
 ```
 
 ### Requirements
 
 **Header:** afxwin.h
 
-### See Also
+## See also
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
-[AfxOleLockControl](#afxolelockcontrol)
-

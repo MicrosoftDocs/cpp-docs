@@ -1,15 +1,8 @@
 ---
-title: "Interface Elements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Interface Elements"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["architecture [MFC], MFC Feature Pack", "MFC Feature Pack, architecture"]
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interface Elements
 
@@ -17,7 +10,7 @@ This document describes interface elements that were introduced in Visual Studio
 
 The following illustration shows an application that was built by using the new interface elements.
 
-![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "mfc_featurepack")
+![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "MFC Feature Pack example application")
 
 ## Window Docking
 
@@ -65,7 +58,6 @@ The [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md) implement
 
 The Outlook bar control is also based on tabbed bars. The [CMFCOutlookBar Class](../mfc/reference/cmfcoutlookbar-class.md) is derived from `CBaseTabbedPane`. For more information about how to use Outlook bar, see [CMFCOutlookBar Class](../mfc/reference/cmfcoutlookbar-class.md).
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)
-

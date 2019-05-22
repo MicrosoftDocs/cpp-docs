@@ -1,16 +1,9 @@
 ---
-title: "COleDocument Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDocument Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDocument", "AFXOLE/COleDocument", "AFXOLE/COleDocument::COleDocument", "AFXOLE/COleDocument::AddItem", "AFXOLE/COleDocument::ApplyPrintDevice", "AFXOLE/COleDocument::EnableCompoundFile", "AFXOLE/COleDocument::GetInPlaceActiveItem", "AFXOLE/COleDocument::GetNextClientItem", "AFXOLE/COleDocument::GetNextItem", "AFXOLE/COleDocument::GetNextServerItem", "AFXOLE/COleDocument::GetPrimarySelectedItem", "AFXOLE/COleDocument::GetStartPosition", "AFXOLE/COleDocument::HasBlankItems", "AFXOLE/COleDocument::OnShowViews", "AFXOLE/COleDocument::RemoveItem", "AFXOLE/COleDocument::UpdateModifiedFlag", "AFXOLE/COleDocument::OnEditChangeIcon", "AFXOLE/COleDocument::OnEditConvert", "AFXOLE/COleDocument::OnEditLinks", "AFXOLE/COleDocument::OnFileSendMail", "AFXOLE/COleDocument::OnUpdateEditChangeIcon", "AFXOLE/COleDocument::OnUpdateEditLinksMenu", "AFXOLE/COleDocument::OnUpdateObjectVerbMenu", "AFXOLE/COleDocument::OnUpdatePasteLinkMenu", "AFXOLE/COleDocument::OnUpdatePasteMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDocument [MFC], COleDocument", "COleDocument [MFC], AddItem", "COleDocument [MFC], ApplyPrintDevice", "COleDocument [MFC], EnableCompoundFile", "COleDocument [MFC], GetInPlaceActiveItem", "COleDocument [MFC], GetNextClientItem", "COleDocument [MFC], GetNextItem", "COleDocument [MFC], GetNextServerItem", "COleDocument [MFC], GetPrimarySelectedItem", "COleDocument [MFC], GetStartPosition", "COleDocument [MFC], HasBlankItems", "COleDocument [MFC], OnShowViews", "COleDocument [MFC], RemoveItem", "COleDocument [MFC], UpdateModifiedFlag", "COleDocument [MFC], OnEditChangeIcon", "COleDocument [MFC], OnEditConvert", "COleDocument [MFC], OnEditLinks", "COleDocument [MFC], OnFileSendMail", "COleDocument [MFC], OnUpdateEditChangeIcon", "COleDocument [MFC], OnUpdateEditLinksMenu", "COleDocument [MFC], OnUpdateObjectVerbMenu", "COleDocument [MFC], OnUpdatePasteLinkMenu", "COleDocument [MFC], OnUpdatePasteMenu"]
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDocument Class
 
@@ -495,10 +488,9 @@ virtual void UpdateModifiedFlag();
 
 This allows the framework to prompt the user to save the document before closing, even if the native data in the document has not been modified.
 
-## See Also
+## See also
 
-[MFC Sample CONTAINER](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCBIND](../../visual-cpp-samples.md)<br/>
+[MFC Sample CONTAINER](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MFCBIND](../../overview/visual-cpp-samples.md)<br/>
 [CDocument Class](../../mfc/reference/cdocument-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

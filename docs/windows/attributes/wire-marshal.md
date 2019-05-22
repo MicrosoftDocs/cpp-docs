@@ -1,16 +1,9 @@
 ---
-title: "wire_marshal (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "wire_marshal (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.wire_marshal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wire_marshal attribute"]
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # wire_marshal
 
@@ -59,7 +52,7 @@ The following code shows a use of **wire_marshal**:
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)

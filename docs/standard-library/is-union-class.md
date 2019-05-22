@@ -1,16 +1,9 @@
 ---
-title: "is_union Class | Microsoft Docs"
-ms.custom: ""
+title: "is_union Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_union"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_union class", "is_union"]
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_union Class
 
@@ -62,7 +55,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

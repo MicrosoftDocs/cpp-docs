@@ -1,16 +1,9 @@
 ---
-title: "concurrent_vector Class | Microsoft Docs"
-ms.custom: ""
+title: "concurrent_vector Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector::concurrent_vector", "CONCURRENT_VECTOR/concurrency::concurrent_vector::assign", "CONCURRENT_VECTOR/concurrency::concurrent_vector::at", "CONCURRENT_VECTOR/concurrency::concurrent_vector::back", "CONCURRENT_VECTOR/concurrency::concurrent_vector::begin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::capacity", "CONCURRENT_VECTOR/concurrency::concurrent_vector::cbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::cend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::clear", "CONCURRENT_VECTOR/concurrency::concurrent_vector::crbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::crend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::empty", "CONCURRENT_VECTOR/concurrency::concurrent_vector::end", "CONCURRENT_VECTOR/concurrency::concurrent_vector::front", "CONCURRENT_VECTOR/concurrency::concurrent_vector::get_allocator", "CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_by", "CONCURRENT_VECTOR/concurrency::concurrent_vector::grow_to_at_least", "CONCURRENT_VECTOR/concurrency::concurrent_vector::max_size", "CONCURRENT_VECTOR/concurrency::concurrent_vector::push_back", "CONCURRENT_VECTOR/concurrency::concurrent_vector::rbegin", "CONCURRENT_VECTOR/concurrency::concurrent_vector::rend", "CONCURRENT_VECTOR/concurrency::concurrent_vector::reserve", "CONCURRENT_VECTOR/concurrency::concurrent_vector::resize", "CONCURRENT_VECTOR/concurrency::concurrent_vector::shrink_to_fit", "CONCURRENT_VECTOR/concurrency::concurrent_vector::size", "CONCURRENT_VECTOR/concurrency::concurrent_vector::swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_vector class"]
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrent_vector Class
 
@@ -93,7 +86,7 @@ The type that represents the stored allocator object that encapsulates details a
 
 |Name|Description|
 |----------|-----------------|
-|[operator[]](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|
+|[operator\[\]](#operator_at)|Overloaded. Provides access to the element at the given index in the concurrent vector. This method is concurrency-safe for read operations, and also while growing the vector, as long as the you have ensured that the value `_Index` is less than the size of the concurrent vector.|
 |[operator=](#operator_eq)|Overloaded. Assigns the contents of another `concurrent_vector` object to this one. This method is not concurrency-safe.|
 
 ## Remarks
@@ -657,8 +650,7 @@ void swap(concurrent_vector& _Vector);
 *_Vector*<br/>
 The `concurrent_vector` object to swap contents with.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Application and Thread Support Classes | Microsoft Docs"
-ms.custom: ""
+title: "Application and Thread Support Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.support"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["application objects [MFC], thread support classes", "lock classes [MFC]", "thread support classes [MFC]", "threading [MFC]", "synchronization classes [MFC], multithreading", "application support classes [MFC]"]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application and Thread Support Classes
 
@@ -65,7 +58,6 @@ Handles persistent storage of docking state data for control bars.
 [CRecentFileList](../mfc/reference/crecentfilelist-class.md)<br/>
 Maintains the most recently used (MRU) file list.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

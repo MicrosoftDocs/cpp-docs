@@ -1,16 +1,9 @@
 ---
-title: "Root Class: CObject | Microsoft Docs"
-ms.custom: ""
+title: "Root Class: CObject"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["base classes [MFC], MFC objects", "classes [MFC], MFC base class [MFC]", "root class [MFC]", "MFC, base class"]
 ms.assetid: 593706f3-e9e5-435f-815d-e7b5176b2a61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Root Class: CObject
 
@@ -22,7 +15,6 @@ The ultimate base class of most MFC classes. Supports serializing data and obtai
 [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
 Structure used to determine the exact class of an object at run time.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "CTokenGroups Class | Microsoft Docs"
-ms.custom: ""
+title: "CTokenGroups Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CTokenGroups", "ATLSECURITY/ATL::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::Add", "ATLSECURITY/ATL::CTokenGroups::Delete", "ATLSECURITY/ATL::CTokenGroups::DeleteAll", "ATLSECURITY/ATL::CTokenGroups::GetCount", "ATLSECURITY/ATL::CTokenGroups::GetLength", "ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS", "ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes", "ATLSECURITY/ATL::CTokenGroups::LookupSid"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTokenGroups class"]
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTokenGroups Class
 
@@ -260,9 +253,9 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [CSid Class](../../atl/reference/csid-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

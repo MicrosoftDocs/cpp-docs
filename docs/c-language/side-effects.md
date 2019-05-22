@@ -1,15 +1,8 @@
 ---
-title: "Side Effects | Microsoft Docs"
-ms.custom: ""
+title: "Side Effects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expression evaluation, side effects", "side effects in expression evaluation"]
 ms.assetid: d9b3004a-830e-43a0-bea5-8989d501d670
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Side Effects
 
@@ -30,6 +23,6 @@ In this example, the value of `x` that is modified is unpredictable. The value o
 
 Since C does not define the order of evaluation of side effects, both evaluation methods discussed above are correct and either may be implemented. To make sure that your code is portable and clear, avoid statements that depend on a particular order of evaluation for side effects.
 
-## See Also
+## See also
 
 [Expression Evaluation](../c-language/expression-evaluation-c.md)

@@ -1,15 +1,8 @@
 ---
-title: "When Update Handlers Are Called | Microsoft Docs"
-ms.custom: ""
+title: "When Update Handlers Are Called"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["updating user interface objects [MFC]", "command routing [MFC], update commands", "toolbar buttons [MFC], enabling", "disabling toolbar buttons", "menus [MFC], initializing", "update handlers [MFC]", "disabling menu items", "toolbars [MFC], updating", "menus [MFC], updating as context changes", "toolbar controls [MFC], updated during OnIdle method [MFC]", "menu items, enabling", "command routing [MFC], update handlers", "update handlers, calling"]
 ms.assetid: 7359f6b1-4669-477d-bd99-690affed08d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # When Update Handlers Are Called
 
@@ -23,7 +16,6 @@ It is possible to disable the default disabling of user-interface objects. For m
 
 Menu initialization is automatic in the framework, occurring when the application receives a WM_INITMENUPOPUP message. During the idle loop, the framework searches the command routing for button update handlers in much the same way as it does for menus.
 
-## See Also
+## See also
 
 [How to: Update User-Interface Objects](../mfc/how-to-update-user-interface-objects.md)
-

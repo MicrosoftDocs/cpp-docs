@@ -1,16 +1,9 @@
 ---
-title: "CWinThread Class | Microsoft Docs"
-ms.custom: ""
+title: "CWinThread Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CWinThread", "AFXWIN/CWinThread", "AFXWIN/CWinThread::CWinThread", "AFXWIN/CWinThread::CreateThread", "AFXWIN/CWinThread::ExitInstance", "AFXWIN/CWinThread::GetMainWnd", "AFXWIN/CWinThread::GetThreadPriority", "AFXWIN/CWinThread::InitInstance", "AFXWIN/CWinThread::IsIdleMessage", "AFXWIN/CWinThread::OnIdle", "AFXWIN/CWinThread::PostThreadMessage", "AFXWIN/CWinThread::PreTranslateMessage", "AFXWIN/CWinThread::ProcessMessageFilter", "AFXWIN/CWinThread::ProcessWndProcException", "AFXWIN/CWinThread::PumpMessage", "AFXWIN/CWinThread::ResumeThread", "AFXWIN/CWinThread::Run", "AFXWIN/CWinThread::SetThreadPriority", "AFXWIN/CWinThread::SuspendThread", "AFXWIN/CWinThread::m_bAutoDelete", "AFXWIN/CWinThread::m_hThread", "AFXWIN/CWinThread::m_nThreadID", "AFXWIN/CWinThread::m_pActiveWnd", "AFXWIN/CWinThread::m_pMainWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWinThread [MFC], CWinThread", "CWinThread [MFC], CreateThread", "CWinThread [MFC], ExitInstance", "CWinThread [MFC], GetMainWnd", "CWinThread [MFC], GetThreadPriority", "CWinThread [MFC], InitInstance", "CWinThread [MFC], IsIdleMessage", "CWinThread [MFC], OnIdle", "CWinThread [MFC], PostThreadMessage", "CWinThread [MFC], PreTranslateMessage", "CWinThread [MFC], ProcessMessageFilter", "CWinThread [MFC], ProcessWndProcException", "CWinThread [MFC], PumpMessage", "CWinThread [MFC], ResumeThread", "CWinThread [MFC], Run", "CWinThread [MFC], SetThreadPriority", "CWinThread [MFC], SuspendThread", "CWinThread [MFC], m_bAutoDelete", "CWinThread [MFC], m_hThread", "CWinThread [MFC], m_nThreadID", "CWinThread [MFC], m_pActiveWnd", "CWinThread [MFC], m_pMainWnd"]
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWinThread Class
 
@@ -266,7 +259,7 @@ BOOL m_bAutoDelete;
 
 The `m_bAutoDelete` data member is a public variable of type BOOL.
 
-The value of `m_bAutoDelete` does not affect how the underlying thread handle is closed. The thread handle is always closed when the `CWinThread` object is destroyed.
+The value of `m_bAutoDelete` doesn't affect how the underlying thread handle is closed, but it does affect the timing of closing the handle. The thread handle is always closed when the `CWinThread` object is destroyed.
 
 ##  <a name="m_hthread"></a>  CWinThread::m_hThread
 
@@ -278,7 +271,9 @@ HANDLE m_hThread;
 
 ### Remarks
 
-The `m_hThread` data member is a public variable of type HANDLE. It is only valid if underlying thread currently exists.
+The `m_hThread` data member is a public variable of type HANDLE. It's only valid if underlying kernel thread object currently exists, and the handle hasn't been closed yet.
+
+The CWinThread destructor calls CloseHandle on `m_hThread`. If [m_bAutoDelete](#m_bautodelete) is TRUE when the thread terminates, the CWinThread object is destroyed, which invalidates any pointers to the CWinThread object and its member variables. You may need the `m_hThread` member to check the thread exit value, or to wait for a signal. To keep the CWinThread object and its `m_hThread` member during thread execution and after it terminates, set `m_bAutoDelete` to FALSE before you allow thread execution to continue. Otherwise, the thread may terminate, destroy the CWinThread object, and close the handle before you try to use it. If you use this technique, you are responsible for deletion of the CWinThread object.
 
 ##  <a name="m_nthreadid"></a>  CWinThread::m_nThreadID
 
@@ -290,7 +285,8 @@ DWORD m_nThreadID;
 
 ### Remarks
 
-The `m_nThreadID` data member is a public variable of type DWORD. It is only valid if underlying thread currently exists.
+The `m_nThreadID` data member is a public variable of type DWORD. It's only valid if underlying kernel thread object currently exists.
+Also see remarks about [m_hThread](#m_hthread) lifetime.
 
 ### Example
 
@@ -400,7 +396,7 @@ Nonzero if successful; otherwise 0.
 The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.
 
 > [!NOTE]
-> When you call [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
+> When you call [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 
@@ -413,7 +409,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing the message to process.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing the message to process.
 
 ### Return Value
 
@@ -439,7 +435,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG structure](../../mfc/reference/msg-structure1.md).
+A pointer to a Windows [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg).
 
 ### Return Value
 
@@ -467,7 +463,7 @@ virtual LRESULT ProcessWndProcException(
 Points to an unhandled exception.
 
 *pMsg*<br/>
-Points to a [MSG structure](../../mfc/reference/msg-structure1.md) containing information about the windows message that caused the framework to throw an exception.
+Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -591,7 +587,7 @@ The thread's previous suspend count if successful; `0xFFFFFFFF` otherwise.
 
 If any thread has a suspend count above zero, that thread does not execute. The thread can be resumed by calling the [ResumeThread](#resumethread) member function.
 
-## See Also
+## See also
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

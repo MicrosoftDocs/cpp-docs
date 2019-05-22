@@ -1,15 +1,8 @@
 ---
-title: "Selecting a Graphic Object into a Device Context | Microsoft Docs"
-ms.custom: ""
+title: "Selecting a Graphic Object into a Device Context"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["graphic objects [MFC], selecting into device context", "SelectObject method [MFC]", "GDI objects [MFC], device contexts", "lifetime, graphic objects [MFC]", "device contexts, selecting graphic objects into", "device contexts, graphic objects [MFC]"]
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Selecting a Graphic Object into a Device Context
 
@@ -31,7 +24,6 @@ The graphic object returned by [SelectObject](../mfc/reference/cdc-class.md#sele
 
 - [Drawing in a View](../mfc/drawing-in-a-view.md)
 
-## See Also
+## See also
 
 [Graphic Objects](../mfc/graphic-objects.md)
-

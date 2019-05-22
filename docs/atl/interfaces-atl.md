@@ -1,15 +1,9 @@
 ---
-title: "Interfaces (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Interfaces (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces", "interfaces, COM"]
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interfaces (ATL)
 
@@ -22,8 +16,7 @@ Also, each interface is given a unique interface ID (IID). This uniqueness makes
 > [!NOTE]
 >  IIDs for the standard COM and OLE interfaces are predefined.
 
-## See Also
+## See also
 
 [Introduction to COM](../atl/introduction-to-com.md)<br/>
 [COM Objects and Interfaces](/windows/desktop/com/com-objects-and-interfaces)
-

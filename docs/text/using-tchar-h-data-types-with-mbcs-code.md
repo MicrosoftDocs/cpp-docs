@@ -1,16 +1,9 @@
 ---
-title: "Using TCHAR.H Data Types with _MBCS Code | Microsoft Docs"
-ms.custom: ""
+title: "Using TCHAR.H Data Types with _MBCS Code"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-f1_keywords: ["tchar.h", "TCHAR"]
-dev_langs: ["C++"]
+f1_keywords: ["TCHAR"]
 helpviewer_keywords: ["mapping generic-text", "generic-text data types [C++]", "generic-text mappings [C++]", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using TCHAR.H Data Types with _MBCS Code
 
@@ -22,7 +15,7 @@ When the manifest constant `_MBCS` is defined, a given generic-text routine maps
 
 Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
 
-- Use the default behavior. Tchar.h provides generic-text routine prototypes for routines in the run-time libraries, as in the following example.
+- Use the default behavior. tchar.h provides generic-text routine prototypes for routines in the run-time libraries, as in the following example.
 
     ```cpp
     char * _tcsrev(char *);
@@ -36,7 +29,7 @@ Following are three solutions for preventing this type conflict (and the C compi
     #define _USE_INLINING
     ```
 
-   This method causes an inline function thunk, provided in Tchar.h, to map the generic-text routine directly to the appropriate MBCS routine. The following code excerpt from Tchar.h provides an example of how this is done.
+   This method causes an inline function thunk, provided in tchar.h, to map the generic-text routine directly to the appropriate MBCS routine. The following code excerpt from tchar.h provides an example of how this is done.
 
     ```cpp
     __inline char *_tcsrev(char *_s1)
@@ -51,7 +44,7 @@ Following are three solutions for preventing this type conflict (and the C compi
     #define _MB_MAP_DIRECT
     ```
 
-   This approach provides a fast alternative if you do not want to use the default behavior or cannot use inlining. It causes the generic-text routine to be mapped by a macro directly to the MBCS version of the routine, as in the following example from Tchar.h.
+   This approach provides a fast alternative if you do not want to use the default behavior or cannot use inlining. It causes the generic-text routine to be mapped by a macro directly to the MBCS version of the routine, as in the following example from tchar.h.
 
     ```cpp
     #define _tcschr _mbschr
@@ -59,6 +52,6 @@ Following are three solutions for preventing this type conflict (and the C compi
 
    When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the `_TXCHAR` generic-text data type. `_TXCHAR` maps to type **char** in SBCS code but maps to type **unsigned char** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.
 
-## See Also
+## See also
 
-[Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md)
+[Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md)

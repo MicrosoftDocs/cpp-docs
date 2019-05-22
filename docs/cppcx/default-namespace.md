@@ -1,14 +1,7 @@
 ---
-title: "default namespace | Microsoft Docs"
-ms.custom: ""
+title: "default namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # default namespace
 
@@ -51,6 +44,6 @@ All built-in types inherit the following members.
 
 **Header:** vccorlib.h
 
-## See Also
+## See also
 
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

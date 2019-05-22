@@ -1,16 +1,9 @@
 ---
-title: "unordered_map Class | Microsoft Docs"
-ms.custom: ""
+title: "unordered_map Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["unordered_map/std::unordered_map", "unordered_map/std::unordered_map::allocator_type", "unordered_map/std::unordered_map::const_iterator", "unordered_map/std::unordered_map::const_local_iterator", "unordered_map/std::unordered_map::const_pointer", "unordered_map/std::unordered_map::const_reference", "unordered_map/std::unordered_map::difference_type", "unordered_map/std::unordered_map::hasher", "unordered_map/std::unordered_map::iterator", "unordered_map/std::unordered_map::key_equal", "unordered_map/std::unordered_map::key_type", "unordered_map/std::unordered_map::local_iterator", "unordered_map/std::unordered_map::mapped_type", "unordered_map/std::unordered_map::pointer", "unordered_map/std::unordered_map::reference", "unordered_map/std::unordered_map::size_type", "unordered_map/std::unordered_map::value_type", "unordered_map/std::unordered_map::at", "unordered_map/std::unordered_map::begin", "unordered_map/std::unordered_map::bucket", "unordered_map/std::unordered_map::bucket_count", "unordered_map/std::unordered_map::bucket_size", "unordered_map/std::unordered_map::cbegin", "unordered_map/std::unordered_map::cend", "unordered_map/std::unordered_map::clear", "unordered_map/std::unordered_map::count", "unordered_map/std::unordered_map::emplace", "unordered_map/std::unordered_map::emplace_hint", "unordered_map/std::unordered_map::empty", "unordered_map/std::unordered_map::end", "unordered_map/std::unordered_map::equal_range", "unordered_map/std::unordered_map::erase", "unordered_map/std::unordered_map::find", "unordered_map/std::unordered_map::get_allocator", "unordered_map/std::unordered_map::hash", "unordered_map/std::unordered_map::insert", "unordered_map/std::unordered_map::key_eq", "unordered_map/std::unordered_map::load_factor", "unordered_map/std::unordered_map::max_bucket_count", "unordered_map/std::unordered_map::max_load_factor", "unordered_map/std::unordered_map::max_size", "unordered_map/std::unordered_map::rehash", "unordered_map/std::unordered_map::size", "unordered_map/std::unordered_map::swap", "unordered_map/std::unordered_map::unordered_map", "unordered_map/std::unordered_map::hash_function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap", "std::unordered_map::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash_function", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap"]
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unordered_map Class
 
@@ -142,7 +135,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -386,7 +378,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -405,7 +396,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="bucket_size"></a>  unordered_map::bucket_size
@@ -572,7 +562,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -622,7 +611,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -670,7 +658,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -718,7 +705,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -765,7 +751,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -818,7 +803,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1096,7 +1080,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1191,7 +1174,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1232,7 +1214,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1270,7 +1251,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1309,7 +1289,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -1422,7 +1401,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1462,7 +1440,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1503,7 +1480,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1559,7 +1535,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1633,7 +1608,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1652,7 +1626,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="local_iterator"></a>  unordered_map::local_iterator
@@ -1696,7 +1669,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1752,7 +1724,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1826,7 +1797,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1845,7 +1815,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_load_factor"></a>  unordered_map::max_load_factor
@@ -1921,7 +1890,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1940,7 +1908,6 @@ bucket_count() == 128
 load_factor() == 0.0234375
 max_bucket_count() == 128
 max_load_factor() == 0.1
-
 ```
 
 ## <a name="max_size"></a>  unordered_map::max_size
@@ -1972,7 +1939,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2003,7 +1969,7 @@ A reference to the data value of the inserted element.
 
 If the argument key value is not found, then it is inserted along with the default value of the data type.
 
-`operator[]` may be used to insert elements into a map *m* using *m*[_ *Key*] = `DataValue`; where `DataValue` is the value of the `mapped_type` of the element with a key value of \_ *Key*.
+`operator[]` may be used to insert elements into a map *m* using *m*[*Key*] = `DataValue`; where `DataValue` is the value of the `mapped_type` of the element with a key value of *Key*.
 
 When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions [find](../standard-library/map-class.md#find) and [insert](../standard-library/map-class.md#insert) can be used to determine whether an element with a specified key is already present before an insertion.
 
@@ -2051,7 +2017,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2168,7 +2133,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2215,7 +2179,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2283,7 +2246,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2356,7 +2318,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2399,7 +2360,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2470,7 +2430,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -2733,7 +2692,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

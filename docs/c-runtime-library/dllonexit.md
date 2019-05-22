@@ -1,19 +1,12 @@
 ---
-title: "__dllonexit | Microsoft Docs"
-ms.custom: ""
+title: "__dllonexit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["__dllonexit"]
 apilocation: ["msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcr120_clr0400.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__dllonexit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __dllonexit
 
@@ -57,6 +50,6 @@ The `_PVFV` type is defined as `typedef void (__cdecl *_PVFV)(void)`.
 |-------------|-------------------|
 |__dllonexit|onexit.c|
 
-## See Also
+## See also
 
 [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)

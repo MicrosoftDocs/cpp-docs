@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4079 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4079"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4079"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4079"]
 ms.assetid: 549759f0-e168-47e9-8c9a-de93ac843689
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4079
 

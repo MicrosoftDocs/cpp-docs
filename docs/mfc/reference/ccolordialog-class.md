@@ -1,16 +1,9 @@
 ---
-title: "CColorDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CColorDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CColorDialog", "AFXDLGS/CColorDialog", "AFXDLGS/CColorDialog::CColorDialog", "AFXDLGS/CColorDialog::DoModal", "AFXDLGS/CColorDialog::GetColor", "AFXDLGS/CColorDialog::GetSavedCustomColors", "AFXDLGS/CColorDialog::SetCurrentColor", "AFXDLGS/CColorDialog::OnColorOK", "AFXDLGS/CColorDialog::m_cc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CColorDialog [MFC], CColorDialog", "CColorDialog [MFC], DoModal", "CColorDialog [MFC], GetColor", "CColorDialog [MFC], GetSavedCustomColors", "CColorDialog [MFC], SetCurrentColor", "CColorDialog [MFC], OnColorOK", "CColorDialog [MFC], m_cc"]
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CColorDialog Class
 
@@ -251,10 +244,9 @@ This function is called from within a message handler or `OnColorOK`. The dialog
 
   See the example for [CColorDialog::OnColorOK](#oncolorok).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample DRAWCLI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DRAWCLI](../../overview/visual-cpp-samples.md)<br/>
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

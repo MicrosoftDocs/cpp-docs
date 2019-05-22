@@ -1,17 +1,13 @@
 ---
-title: "Recordset: Creating and Closing Recordsets (ODBC) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Recordset: Creating and Closing Recordsets (ODBC)"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, creating", "recordsets, creating", "recordsets, opening", "recordsets, closing", "ODBC recordsets, closing", "ODBC recordsets, opening"]
 ms.assetid: 8d2aac23-4396-4ce2-8c60-5ecf1b360d3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Creating and Closing Recordsets (ODBC)
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
 
@@ -102,7 +98,7 @@ When you finish with your recordset, you must dispose of it and deallocate its m
 
 `Close` frees the recordset's `HSTMT` handle. It does not destroy the C++ object.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)<br/>

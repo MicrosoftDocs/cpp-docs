@@ -1,15 +1,8 @@
 ---
-title: "Conversions from Signed Integral Types | Microsoft Docs"
-ms.custom: ""
+title: "Conversions from Signed Integral Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integral conversions, from signed", "integers, converting", "conversions [C++], integral", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers"]
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conversions from Signed Integral Types
 
@@ -64,6 +57,6 @@ For the Microsoft 32-bit C compiler, an integer is equivalent to a **long**. Con
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Assignment Conversions](../c-language/assignment-conversions.md)

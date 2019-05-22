@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2890 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2890"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2890"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2890"]
 ms.assetid: 49147375-182c-42b1-b170-f475cd436d47
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2890
 

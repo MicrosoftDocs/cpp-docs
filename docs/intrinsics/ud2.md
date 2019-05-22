@@ -1,16 +1,9 @@
 ---
-title: "__ud2 | Microsoft Docs"
-ms.custom: ""
+title: "__ud2"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__ud2"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["UD2 instruction", "__ud2 intrinsic"]
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __ud2
 
@@ -80,6 +73,6 @@ Before __ud2(). Return code = 0.
 After __ud2().  Return code = 1.
 ```
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

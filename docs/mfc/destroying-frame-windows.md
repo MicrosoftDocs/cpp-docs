@@ -1,16 +1,9 @@
 ---
-title: "Destroying Frame Windows | Microsoft Docs"
-ms.custom: ""
+title: "Destroying Frame Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["PostNcDestroy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Default method [MFC]", "DestroyWindow method [MFC]", "frame windows [MFC], destroying", "OnNcDestroy method, and frame windows", "document frame windows [MFC], destroying", "destroying frame windows", "MFC, frame windows", "windows [MFC], destroying", "OnClose method [MFC]", "PostNcDestroy method [MFC]"]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Destroying Frame Windows
 
@@ -24,7 +17,6 @@ When the main window closes, the application closes. If there are modified unsav
 
 - [Creating document frame windows](../mfc/creating-document-frame-windows.md)
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "odl (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "odl (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.odl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["odl attribute"]
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # odl
 
@@ -61,7 +54,7 @@ public:
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)

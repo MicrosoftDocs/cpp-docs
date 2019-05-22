@@ -1,15 +1,8 @@
 ---
-title: "Recordset: How AddNew, Edit, and Delete Work (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: How AddNew, Edit, and Delete Work (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["records [C++], updating", "record editing [C++], in recordsets", "recordsets [C++], adding records", "records [C++], adding", "ODBC recordsets [C++], adding records", "recordsets [C++], editing records", "recordsets [C++], updating", "AddNew method", "ODBC recordsets [C++], deleting records", "records [C++], deleting in recordsets", "data in recordsets [C++]", "recordsets [C++], deleting records", "ODBC recordsets [C++], editing records", "records [C++], editing"]
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: How AddNew, Edit, and Delete Work (ODBC)
 
@@ -50,23 +43,23 @@ To commit your changes, you call `Update`. When you call `Update` for the new re
 
 - If `::SQLSetPos` cannot be used, MFC does the following:
 
-    1.  If no changes are detected, `Update` does nothing and returns 0.
+   1. If no changes are detected, `Update` does nothing and returns 0.
 
-    2.  If there are changes, `Update` constructs a SQL **INSERT** statement. The columns represented by all dirty field data members are listed in the **INSERT** statement. To force a column to be included, call the [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) member function:
+   1. If there are changes, `Update` constructs a SQL **INSERT** statement. The columns represented by all dirty field data members are listed in the **INSERT** statement. To force a column to be included, call the [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) member function:
 
-        ```
+        ```cpp
         SetFieldDirty( &m_dataMember, TRUE );
         ```
 
-    3.  `Update` commits the new record — the **INSERT** statement is executed and the record is committed to the table on the data source (and the recordset, if not a snapshot) unless a transaction is in progress.
+   1. `Update` commits the new record — the **INSERT** statement is executed and the record is committed to the table on the data source (and the recordset, if not a snapshot) unless a transaction is in progress.
 
-    4.  The stored record is restored to the edit buffer. The record that was current before the `AddNew` call is current again regardless of whether the **INSERT** statement was successfully executed.
+   1. The stored record is restored to the edit buffer. The record that was current before the `AddNew` call is current again regardless of whether the **INSERT** statement was successfully executed.
 
-    > [!TIP]
-    >  For complete control of a new record, take the following approach: set the values of any fields that will have values and then explicitly set any fields that will remain Null by calling `SetFieldNull` with a pointer to the field and the parameter TRUE (the default). If you want to ensure that a field is not written to the data source, call `SetFieldDirty` with a pointer to the field and the parameter FALSE, and do not modify the field's value. To determine whether a field is allowed to be Null, call `IsFieldNullable`.
+   > [!TIP]
+   > For complete control of a new record, take the following approach: set the values of any fields that will have values and then explicitly set any fields that will remain Null by calling `SetFieldNull` with a pointer to the field and the parameter TRUE (the default). If you want to ensure that a field is not written to the data source, call `SetFieldDirty` with a pointer to the field and the parameter FALSE, and do not modify the field's value. To determine whether a field is allowed to be Null, call `IsFieldNullable`.
 
-    > [!TIP]
-    >  To detect when recordset data members change value, MFC uses a PSEUDO_NULL value appropriate to each data type that you can store in a recordset. If you must explicitly set a field to the PSEUDO_NULL value and the field happens already to be marked Null, you must also call `SetFieldNull`, passing the address of the field in the first parameter and FALSE in the second parameter.
+   > [!TIP]
+   > To detect when recordset data members change value, MFC uses a PSEUDO_NULL value appropriate to each data type that you can store in a recordset. If you must explicitly set a field to the PSEUDO_NULL value and the field happens already to be marked Null, you must also call `SetFieldNull`, passing the address of the field in the first parameter and FALSE in the second parameter.
 
 ##  <a name="_core_visibility_of_added_records"></a> Visibility of Added Records
 
@@ -89,7 +82,7 @@ When you call `Edit`, the record in the edit buffer (the current record) is stor
 After you call `Edit`, the edit buffer still represents the current record but is now ready to accept changes to the field data members. To change the record, you manually set the values of any field data members you want to edit. Instead of specifying an actual data value for a field, you can call `SetFieldNull` to specify the value Null. To commit your changes, call `Update`.
 
 > [!TIP]
->  To get out of `AddNew` or `Edit` mode, call `Move` with the parameter *AFX_MOVE_REFRESH*.
+> To get out of `AddNew` or `Edit` mode, call `Move` with the parameter *AFX_MOVE_REFRESH*.
 
 As a precondition for calling `Update`, the recordset must not be empty and the current record must not have been deleted. `IsBOF`, `IsEOF`, and `IsDeleted` should all return 0.
 
@@ -97,23 +90,23 @@ When you call `Update` for the edited record:
 
 - If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to update the record on the data source. With `::SQLSetPos`, the driver compares your edit buffer with the corresponding record on the server, updating the record on the server if the two are different. With `::SQLSetPos`, MFC can update a record more efficiently because it does not have to construct and process a SQL statement.
 
-     -or-
+   \- or -
 
 - If `::SQLSetPos` cannot be used, MFC does the following:
 
-    1.  If there have been no changes, `Update` does nothing and returns 0.
+   1. If there have been no changes, `Update` does nothing and returns 0.
 
-    2.  If there are changes, `Update` constructs a SQL **UPDATE** statement. The columns listed in the **UPDATE** statement are based on the field data members that have changed.
+   1. If there are changes, `Update` constructs a SQL **UPDATE** statement. The columns listed in the **UPDATE** statement are based on the field data members that have changed.
 
-    3.  `Update` commits the changes — executes the **UPDATE** statement — and the record is changed on the data source, but not committed if a transaction is in progress (see [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) for information about how the transaction affects the update). ODBC keeps a copy of the record, which also changes.
+   1. `Update` commits the changes — executes the **UPDATE** statement — and the record is changed on the data source, but not committed if a transaction is in progress (see [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) for information about how the transaction affects the update). ODBC keeps a copy of the record, which also changes.
 
-    4.  Unlike the process for `AddNew`, the `Edit` process does not restore the stored record. The edited record remains in place as the current record.
+   1. Unlike the process for `AddNew`, the `Edit` process does not restore the stored record. The edited record remains in place as the current record.
 
-    > [!CAUTION]
-    >  When you prepare to update a recordset by calling `Update`, take care that your recordset includes all columns making up the primary key of the table (or all of the columns of any unique index on the table, or enough columns to uniquely identify the row). In some cases, the framework can use only the columns selected in your recordset to identify which record in your table to update. Without all the necessary columns, multiple records might be updated in the table. In this case, the framework throws exceptions when you call `Update`.
+   > [!CAUTION]
+   > When you prepare to update a recordset by calling `Update`, take care that your recordset includes all columns making up the primary key of the table (or all of the columns of any unique index on the table, or enough columns to uniquely identify the row). In some cases, the framework can use only the columns selected in your recordset to identify which record in your table to update. Without all the necessary columns, multiple records might be updated in the table. In this case, the framework throws exceptions when you call `Update`.
 
-    > [!TIP]
-    >  If you call `AddNew` or `Edit` after having called either function previously but before you call `Update`, the edit buffer is refreshed with the stored record, replacing the new or edited record in progress. This behavior gives you a way to abort an `AddNew` or `Edit` and begin a new one: if you determine that the record-in-progress is faulty, simply call `Edit` or `AddNew` again.
+   > [!TIP]
+   > If you call `AddNew` or `Edit` after having called either function previously but before you call `Update`, the edit buffer is refreshed with the stored record, replacing the new or edited record in progress. This behavior gives you a way to abort an `AddNew` or `Edit` and begin a new one: if you determine that the record-in-progress is faulty, simply call `Edit` or `AddNew` again.
 
 ##  <a name="_core_deleting_a_record"></a> Deleting a Record
 
@@ -125,26 +118,26 @@ When you call `Delete`:
 
 - If your ODBC driver supports the `::SQLSetPos` ODBC API function, MFC uses the function to delete the record on the data source. Using `::SQLSetPos` is usually more efficient than using SQL.
 
-     -or-
+   \- or -
 
 - If `::SQLSetPos` cannot be used, MFC does the following:
 
-    1.  The current record in the edit buffer is not backed up as in `AddNew` and `Edit`.
+   1. The current record in the edit buffer is not backed up as in `AddNew` and `Edit`.
 
-    2.  `Delete` constructs a SQL **DELETE** statement that removes the record.
+   1. `Delete` constructs a SQL **DELETE** statement that removes the record.
 
-         The current record in the edit buffer is not stored as in `AddNew` and `Edit`.
+      The current record in the edit buffer is not stored as in `AddNew` and `Edit`.
 
-    3.  `Delete` commits the deletion — executes the **DELETE** statement. The record is marked deleted on the data source and, if the record is a snapshot, in ODBC.
+   1. `Delete` commits the deletion — executes the **DELETE** statement. The record is marked deleted on the data source and, if the record is a snapshot, in ODBC.
 
-    4.  The deleted record's values are still in the field data members of the recordset, but the field data members are marked Null and the recordset's `IsDeleted` member function returns a nonzero value.
+   1. The deleted record's values are still in the field data members of the recordset, but the field data members are marked Null and the recordset's `IsDeleted` member function returns a nonzero value.
 
-    > [!NOTE]
-    >  After deleting a record, you should scroll to another record to refill the edit buffer with the new record's data. It is an error to call `Delete` again or to call `Edit`.
+   > [!NOTE]
+   > After deleting a record, you should scroll to another record to refill the edit buffer with the new record's data. It is an error to call `Delete` again or to call `Edit`.
 
 For information about the SQL statements used in update operations, see [SQL](../../data/odbc/sql.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: More About Updates (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>

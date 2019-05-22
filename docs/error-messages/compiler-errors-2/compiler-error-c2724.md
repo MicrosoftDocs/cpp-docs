@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2724 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2724"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2724"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2724"]
 ms.assetid: 4e4664bc-8c96-4156-b79f-03436f532ea8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2724
 

@@ -1,19 +1,12 @@
 ---
-title: "_fdopen, _wfdopen | Microsoft Docs"
-ms.custom: ""
+title: "_fdopen, _wfdopen"
 ms.date: "12/12/2017"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fdopen", "_wfdopen"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tfdopen", "_fdopen", "_wfdopen", "wfdopen", "tfdopen"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wfdopen function", "_fdopen function", "_wfdopen function", "tfdopen function", "fdopen function", "_tfdopen function", "streams, associating with files"]
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fdopen, _wfdopen
 
@@ -60,25 +53,25 @@ File descriptors passed into **_fdopen** are owned by the returned **FILE &#42;*
 
 The *mode* character string specifies the type of file access requested for the file:
 
-|*mode*|Access|
-|-|-|
-**"r"**|Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails.
-**"w"**|Opens an empty file for writing. If the given file exists, its contents are destroyed.
-**"a"**|Opens for writing at the end of the file (appending). Creates the file if it does not exist.
-**"r+"**|Opens for both reading and writing. The file must exist.
-**"w+"**|Opens an empty file for both reading and writing. If the file exists, its contents are destroyed.
-**"a+"**|Opens for reading and appending. Creates the file if it does not exist.
+| *mode* | Access |
+|--------|--------|
+| **"r"** | Opens for reading. If the file does not exist or cannot be found, the **fopen** call fails. |
+| **"w"** | Opens an empty file for writing. If the given file exists, its contents are destroyed. |
+| **"a"** | Opens for writing at the end of the file (appending). Creates the file if it does not exist. |
+| **"r+"** | Opens for both reading and writing. The file must exist. |
+| **"w+"** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
+| **"a+"** | Opens for reading and appending. Creates the file if it does not exist. |
 
 When a file is opened with the **"a"** or **"a+"** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [fseek](fseek-fseeki64.md) or [rewind](rewind.md), but it is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten. When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), or [rewind](rewind.md) operation. You can specify the current position for the [fsetpos](fsetpos.md) or [fseek](fseek-fseeki64.md) operation, if you want to.
 
 In addition to the above values, the following characters can also be included in *mode* to specify the translation mode for newline characters:
 
-|*mode* modifier|Behavior|
-|-|-|
-**t**|Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input.
-**b**|Open in binary (untranslated) mode. Any translations from **t** mode are suppressed.
-**c**|Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called.
-**n**|Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj.
+| *mode* modifier | Behavior |
+|-----------------|----------|
+| **t** | Open in text (translated) mode. In this mode, carriage return-line feed (CR-LF) combinations are translated into one-line feeds (LF) on input, and LF characters are translated to CR-LF combinations on output. Also, Ctrl+Z is interpreted as an end-of-file character on input. |
+| **b** | Open in binary (untranslated) mode. Any translations from **t** mode are suppressed. |
+| **c** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called. |
+| **n** | Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with Commode.obj. The global commit flag default is "no-commit" unless you explicitly link your program with Commode.obj. |
 
 The **t**, **c**, and **n** *mode* options are Microsoft extensions for **fopen** and **_fdopen**. Do not use them if you want to preserve ANSI portability.
 

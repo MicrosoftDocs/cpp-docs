@@ -1,15 +1,8 @@
 ---
-title: "Debug Iterator Support | Microsoft Docs"
-ms.custom: ""
+title: "Debug Iterator Support"
 ms.date: "09/13/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "C++ Standard Library, debug iterator support", "iterators, debug iterator support", "iterators, incompatible", "incompatible iterators", "debug iterator support"]
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Debug Iterator Support
 
@@ -158,11 +151,12 @@ struct derived : base {
    ~derived() {}
 };
 
-int main() {
-  auto vect = std::vector<int>(10);
-  auto sink = new auto(std::begin(vect));
-  ::operator delete(sink); // frees the memory without calling ~iterator()
-} // access violation
+ int main() {
+   std::vector<int> vect( 10 );
+   base * pb = new derived( vect.begin() );
+   delete pb;  // doesn't call ~derived()
+   // access violation
+}
 ```
 
 ## See also

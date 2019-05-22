@@ -1,15 +1,8 @@
 ---
-title: "Snapshot | Microsoft Docs"
-ms.custom: ""
+title: "Snapshot"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC cursor library [ODBC], snapshots", "cursors [ODBC], static", "recordsets, snapshots", "snapshots, support in ODBC", "static cursors", "ODBC recordsets, snapshots", "cursor library [ODBC], snapshots", "snapshots"]
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Snapshot
 
@@ -37,6 +30,6 @@ Snapshots are available only if the ODBC Cursor Library was loaded when the `CDa
 
 For more information about the properties snapshots share with all recordsets, see [Recordset (ODBC)](../../data/odbc/recordset-odbc.md). For more information about ODBC and snapshots, including the ODBC Cursor Library, see [ODBC](../../data/odbc/odbc-basics.md).
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

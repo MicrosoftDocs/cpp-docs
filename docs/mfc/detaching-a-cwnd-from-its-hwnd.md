@@ -1,16 +1,9 @@
 ---
-title: "Detaching a CWnd from Its HWND | Microsoft Docs"
-ms.custom: ""
+title: "Detaching a CWnd from Its HWND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["HWND, detaching CWnd from", "removing HWNDs from CWnds", "CWnd objects [MFC], detaching from HWND", "detaching CWnds from HWNDs", "Detach method (CWnd class)"]
 ms.assetid: 6efadf84-0517-4a3f-acfd-216e088f19c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Detaching a CWnd from Its HWND
 
@@ -24,7 +17,6 @@ If you need to circumvent the object-`HWND` relationship, MFC provides another `
 
 - [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)
 
-## See Also
+## See also
 
 [Window Objects](../mfc/window-objects.md)
-

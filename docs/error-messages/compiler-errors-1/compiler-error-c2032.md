@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2032 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2032"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2032"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2032"]
 ms.assetid: 625d7c83-70b6-42c2-a558-81fbc0026324
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2032
 

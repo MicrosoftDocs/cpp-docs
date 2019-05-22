@@ -1,16 +1,9 @@
 ---
-title: "CComControlBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CComControlBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComControlBase", "ATLCTL/ATL::CComControlBase", "ATLCTL/ATL::CComControlBase::AppearanceType", "ATLCTL/ATL::CComControlBase::CComControlBase", "ATLCTL/ATL::CComControlBase::ControlQueryInterface", "ATLCTL/ATL::CComControlBase::DoesVerbActivate", "ATLCTL/ATL::CComControlBase::DoesVerbUIActivate", "ATLCTL/ATL::CComControlBase::DoVerbProperties", "ATLCTL/ATL::CComControlBase::FireViewChange", "ATLCTL/ATL::CComControlBase::GetAmbientAppearance", "ATLCTL/ATL::CComControlBase::GetAmbientAutoClip", "ATLCTL/ATL::CComControlBase::GetAmbientBackColor", "ATLCTL/ATL::CComControlBase::GetAmbientCharSet", "ATLCTL/ATL::CComControlBase::GetAmbientCodePage", "ATLCTL/ATL::CComControlBase::GetAmbientDisplayAsDefault", "ATLCTL/ATL::CComControlBase::GetAmbientDisplayName", "ATLCTL/ATL::CComControlBase::GetAmbientFont", "ATLCTL/ATL::CComControlBase::GetAmbientFontDisp", "ATLCTL/ATL::CComControlBase::GetAmbientForeColor", "ATLCTL/ATL::CComControlBase::GetAmbientLocaleID", "ATLCTL/ATL::CComControlBase::GetAmbientMessageReflect", "ATLCTL/ATL::CComControlBase::GetAmbientPalette", "ATLCTL/ATL::CComControlBase::GetAmbientProperty", "ATLCTL/ATL::CComControlBase::GetAmbientRightToLeft", "ATLCTL/ATL::CComControlBase::GetAmbientScaleUnits", "ATLCTL/ATL::CComControlBase::GetAmbientShowGrabHandles", "ATLCTL/ATL::CComControlBase::GetAmbientShowHatching", "ATLCTL/ATL::CComControlBase::GetAmbientSupportsMnemonics", "ATLCTL/ATL::CComControlBase::GetAmbientTextAlign", "ATLCTL/ATL::CComControlBase::GetAmbientTopToBottom", "ATLCTL/ATL::CComControlBase::GetAmbientUIDead", "ATLCTL/ATL::CComControlBase::GetAmbientUserMode", "ATLCTL/ATL::CComControlBase::GetDirty", "ATLCTL/ATL::CComControlBase::GetZoomInfo", "ATLCTL/ATL::CComControlBase::InPlaceActivate", "ATLCTL/ATL::CComControlBase::InternalGetSite", "ATLCTL/ATL::CComControlBase::OnDraw", "ATLCTL/ATL::CComControlBase::OnDrawAdvanced", "ATLCTL/ATL::CComControlBase::OnKillFocus", "ATLCTL/ATL::CComControlBase::OnMouseActivate", "ATLCTL/ATL::CComControlBase::OnPaint", "ATLCTL/ATL::CComControlBase::OnSetFocus", "ATLCTL/ATL::CComControlBase::PreTranslateAccelerator", "ATLCTL/ATL::CComControlBase::SendOnClose", "ATLCTL/ATL::CComControlBase::SendOnDataChange", "ATLCTL/ATL::CComControlBase::SendOnRename", "ATLCTL/ATL::CComControlBase::SendOnSave", "ATLCTL/ATL::CComControlBase::SendOnViewChange", "ATLCTL/ATL::CComControlBase::SetControlFocus", "ATLCTL/ATL::CComControlBase::SetDirty", "ATLCTL/ATL::CComControlBase::m_bAutoSize", "ATLCTL/ATL::CComControlBase::m_bDrawFromNatural", "ATLCTL/ATL::CComControlBase::m_bDrawGetDataInHimetric", "ATLCTL/ATL::CComControlBase::m_bInPlaceActive", "ATLCTL/ATL::CComControlBase::m_bInPlaceSiteEx", "ATLCTL/ATL::CComControlBase::m_bNegotiatedWnd", "ATLCTL/ATL::CComControlBase::m_bRecomposeOnResize", "ATLCTL/ATL::CComControlBase::m_bRequiresSave", "ATLCTL/ATL::CComControlBase::m_bResizeNatural", "ATLCTL/ATL::CComControlBase::m_bUIActive", "ATLCTL/ATL::CComControlBase::m_bUsingWindowRgn", "ATLCTL/ATL::CComControlBase::m_bWasOnceWindowless", "ATLCTL/ATL::CComControlBase::m_bWindowOnly", "ATLCTL/ATL::CComControlBase::m_bWndLess", "ATLCTL/ATL::CComControlBase::m_hWndCD", "ATLCTL/ATL::CComControlBase::m_nFreezeEvents", "ATLCTL/ATL::CComControlBase::m_rcPos", "ATLCTL/ATL::CComControlBase::m_sizeExtent", "ATLCTL/ATL::CComControlBase::m_sizeNatural", "ATLCTL/ATL::CComControlBase::m_spAdviseSink", "ATLCTL/ATL::CComControlBase::m_spAmbientDispatch", "ATLCTL/ATL::CComControlBase::m_spClientSite", "ATLCTL/ATL::CComControlBase::m_spDataAdviseHolder", "ATLCTL/ATL::CComControlBase::m_spInPlaceSite", "ATLCTL/ATL::CComControlBase::m_spOleAdviseHolder"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComControlBase class"]
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComControlBase Class
 
@@ -436,7 +429,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 ### Parameters
 
 *ppFont*<br/>
-A pointer to the container's ambient [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.
+A pointer to the container's ambient [IFontDisp](/windows/desktop/api/ocidl/nn-ocidl-ifontdisp) dispatch interface.
 
 ### Return Value
 
@@ -1472,7 +1465,7 @@ Returns TRUE if the control successfully receives focus; otherwise, FALSE.
 
 ### Remarks
 
-For a windowed control, the Windows API function [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
+For a windowed control, the Windows API function [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.
 
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty
 
@@ -1491,7 +1484,7 @@ Value of the data member [CComControlBase::m_bRequiresSave](#m_brequiressave).
 
 `SetDirty(TRUE)` should be called to flag that the control has changed since it was last saved. The value of `m_bRequiresSave` is retrieved with [CComControlBase::GetDirty](#getdirty).
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

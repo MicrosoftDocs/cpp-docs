@@ -1,15 +1,8 @@
 ---
-title: "Using Views | Microsoft Docs"
-ms.custom: ""
+title: "Using Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interacting with users and role of view class [MFC]", "drawing [MFC], data", "rendering data", "view classes [MFC], role in managing user interaction", "CView class [MFC], view architecture", "MFC, views", "views [MFC], using", "painting data", "user input [MFC], interpreting through view class [MFC]", "view classes [MFC], role in displaying application data"]
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Views
 
@@ -37,10 +30,9 @@ In addition, you may need to override other `CView` member functions in your der
 
 - [Initializing and cleaning up documents and views](../mfc/initializing-and-cleaning-up-documents-and-views.md)
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)<br/>
 [CFormView Class](../mfc/reference/cformview-class.md)<br/>
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [Bypassing the Serialization Mechanism](../mfc/bypassing-the-serialization-mechanism.md)
-

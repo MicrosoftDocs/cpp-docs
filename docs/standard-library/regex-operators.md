@@ -1,10 +1,7 @@
 ---
-title: "&lt;regex&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;regex&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]
-dev_langs: ["C++"]
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ---
 # &lt;regex&gt; operators
@@ -118,7 +115,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -231,7 +227,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -300,7 +295,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -403,7 +397,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -529,7 +522,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -642,7 +634,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

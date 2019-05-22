@@ -1,16 +1,9 @@
 ---
-title: "modulus Struct | Microsoft Docs"
-ms.custom: ""
+title: "modulus Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::modulus"]
-dev_langs: ["C++"]
+f1_keywords: ["functional/std::modulus"]
 helpviewer_keywords: ["modulus class", "modulus struct"]
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # modulus Struct
 

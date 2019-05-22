@@ -1,15 +1,8 @@
 ---
-title: "C Function Definitions | Microsoft Docs"
-ms.custom: ""
+title: "C Function Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function declarators", "function definitions", "declaring functions, about function declarations", "declaring functions, declarators", "functions [C], parameters", "declarators, functions", "function parameters, function definitions", "function body", "declaring functions, variables"]
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Function Definitions
 
@@ -85,6 +78,6 @@ The *compound-statement* is the function body containing local variable declarat
 
 The sections [Function Attributes](../c-language/function-attributes.md), [Storage Class](../c-language/storage-class.md), [Return Type](../c-language/return-type.md), [Parameters](../c-language/parameters.md), and [Function Body](../c-language/function-body.md) describe the components of the function definition in detail.
 
-## See Also
+## See also
 
 [Functions](../c-language/functions-c.md)

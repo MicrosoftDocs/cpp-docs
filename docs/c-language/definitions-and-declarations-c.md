@@ -1,15 +1,8 @@
 ---
-title: "Definitions and Declarations (C) | Microsoft Docs"
-ms.custom: ""
+title: "Definitions and Declarations (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["export functions"]
 ms.assetid: d150395a-89d4-4298-9ac4-08f84fe1261c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Definitions and Declarations (C)
 
@@ -58,6 +51,6 @@ Dllimport int j;          /* a declaration. */
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [DLL Import and Export Functions](../c-language/dll-import-and-export-functions.md)

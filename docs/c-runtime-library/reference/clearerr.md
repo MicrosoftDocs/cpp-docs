@@ -1,19 +1,12 @@
 ---
-title: "clearerr | Microsoft Docs"
-ms.custom: ""
+title: "clearerr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["clearerr"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["clearerr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["error indicator for streams", "resetting stream error indicator", "clearerr function"]
 ms.assetid: a9711cd4-3335-43d4-a018-87bbac5b3bac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # clearerr
 
@@ -82,15 +75,16 @@ int main( void )
 }
 ```
 
-```Output
+### Input
 
+```Input
 n
-
 ```
 
-```Output
+### Output
 
-      nWrite error: No error
+```Output
+Write error: No error
 Will input cause an error? n
 No read error
 ```

@@ -1,16 +1,9 @@
 ---
-title: "PAGE | Microsoft Docs"
-ms.custom: ""
+title: "PAGE"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["PAGE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Page directive"]
 ms.assetid: 6654c094-c1f7-4d10-8d9d-902ddd1ac27e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # PAGE
 

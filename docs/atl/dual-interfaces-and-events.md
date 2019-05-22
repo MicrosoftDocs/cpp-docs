@@ -1,15 +1,8 @@
 ---
-title: "Dual Interfaces and Events | Microsoft Docs"
-ms.custom: ""
+title: "Dual Interfaces and Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["events [C++], dual interfaces", "dual interfaces, events"]
 ms.assetid: bb382f7c-e885-4274-bf07-83f3602615d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dual Interfaces and Events
 
@@ -20,7 +13,6 @@ While it is possible to design an event interface as a dual, there are a number 
 
 There are further reasons to avoid dual event interfaces; neither Visual Basic nor Internet Explorer support them.
 
-## See Also
+## See also
 
 [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
-

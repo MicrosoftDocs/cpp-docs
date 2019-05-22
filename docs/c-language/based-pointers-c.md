@@ -1,15 +1,8 @@
 ---
-title: "Based Pointers (C) | Microsoft Docs"
-ms.custom: ""
+title: "Based Pointers (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["__based keyword [C]", "based pointers", "pointers, based", "based addressing"]
 ms.assetid: b5446920-89e0-4e2f-91f3-1f2a769a08e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Based Pointers (C)
 
@@ -41,6 +34,6 @@ The pointer `vpBuffer` is assigned the address of memory allocated at some later
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

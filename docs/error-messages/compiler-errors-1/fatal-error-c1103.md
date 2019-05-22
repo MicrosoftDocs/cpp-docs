@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1103 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1103"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1103"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1103"]
 ms.assetid: 9d276939-9c47-4235-9d20-76b8434f9731
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1103
 

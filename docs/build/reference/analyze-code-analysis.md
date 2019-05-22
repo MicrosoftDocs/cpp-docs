@@ -1,16 +1,9 @@
 ---
-title: "-analyze (Code Analysis) | Microsoft Docs"
-ms.custom: ""
+title: "/analyze (Code Analysis)"
 ms.date: "04/26/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /analyze (Code Analysis)
 
@@ -28,7 +21,7 @@ Enables code analysis and control options.
 Turns on analysis in the default mode. Analysis output goes to the **Output** window like other error messages. Use **/analyze-** to explicitly turn off analysis.
 
 /analyze:WX-
-Specifying **/analyze:WX-** means that code analysis warnings are not treated as errors when you compile by using **/WX**. For more information, see [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](../../build/reference/compiler-option-warning-level.md).
+Specifying **/analyze:WX-** means that code analysis warnings are not treated as errors when you compile by using **/WX**. For more information, see [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](compiler-option-warning-level.md).
 
 /analyze:log `filename`
 Detailed analyzer results are written as XML to the file that is specified by `filename`.
@@ -82,7 +75,7 @@ For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Expand the **Configuration Properties** node.
 
@@ -96,7 +89,7 @@ For more information, see [Code Analysis for C/C++ Overview](/visualstudio/code-
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnablePREfast%2A>.
 
-## See Also
+## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [MSVC Compiler Options](compiler-options.md)
+- [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

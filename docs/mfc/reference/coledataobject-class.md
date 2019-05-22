@@ -1,16 +1,9 @@
 ---
-title: "COleDataObject Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDataObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDataObject", "AFXOLE/COleDataObject", "AFXOLE/COleDataObject::COleDataObject", "AFXOLE/COleDataObject::Attach", "AFXOLE/COleDataObject::AttachClipboard", "AFXOLE/COleDataObject::BeginEnumFormats", "AFXOLE/COleDataObject::Detach", "AFXOLE/COleDataObject::GetData", "AFXOLE/COleDataObject::GetFileData", "AFXOLE/COleDataObject::GetGlobalData", "AFXOLE/COleDataObject::GetNextFormat", "AFXOLE/COleDataObject::IsDataAvailable", "AFXOLE/COleDataObject::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDataObject [MFC], COleDataObject", "COleDataObject [MFC], Attach", "COleDataObject [MFC], AttachClipboard", "COleDataObject [MFC], BeginEnumFormats", "COleDataObject [MFC], Detach", "COleDataObject [MFC], GetData", "COleDataObject [MFC], GetFileData", "COleDataObject [MFC], GetGlobalData", "COleDataObject [MFC], GetNextFormat", "COleDataObject [MFC], IsDataAvailable", "COleDataObject [MFC], Release"]
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDataObject Class
 
@@ -313,10 +306,10 @@ void Release();
 
 The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the *bAutoRelease* parameter of `Attach` is FALSE, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release).
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDataSource Class](../../mfc/reference/coledatasource-class.md)<br/>
 [COleClientItem Class](../../mfc/reference/coleclientitem-class.md)<br/>

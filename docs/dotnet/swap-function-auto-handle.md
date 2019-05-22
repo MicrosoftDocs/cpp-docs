@@ -1,16 +1,10 @@
 ---
-title: "swap Function (auto_handle) | Microsoft Docs"
-ms.custom: ""
+title: "swap Function (auto_handle)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::swap", "msclr.swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["swap function"]
 ms.assetid: 7dd91b5c-f0de-4634-a2e2-642626706e27
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # swap Function (auto_handle)
 
@@ -67,7 +61,7 @@ s1 = 'string two', s2 = 'string one'
 
 **Namespace** msclr
 
-## See Also
+## See also
 
 [auto_handle](../dotnet/auto-handle.md)<br/>
 [auto_handle::swap](../dotnet/auto-handle-swap.md)

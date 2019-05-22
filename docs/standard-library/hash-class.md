@@ -1,16 +1,9 @@
 ---
-title: "hash Class | Microsoft Docs"
-ms.custom: ""
+title: "hash Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["functional/std::hash", "bitset/std::hash", "memory/std::hash", "string/std::hash", "system_error/std::hash", "thread/std::hash", "typeindex/std::hash", "vector/std::hash", "XSTDDEF/std::hash", "xstring/std::hash"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]", "std::hash [C++]"]
 ms.assetid: e1b500c6-a5c8-4f6f-ad33-7ec52eb8e2e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # hash Class
 
@@ -46,7 +39,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

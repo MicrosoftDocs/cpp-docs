@@ -1,16 +1,9 @@
 ---
-title: "_ATL_FUNC_INFO Structure | Microsoft Docs"
-ms.custom: ""
+title: "_ATL_FUNC_INFO Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_FUNC_INFO structure", "ATL_FUNC_INFO structure"]
 ms.assetid: 441ebe2c-f971-47de-9f52-a258e8d6f88e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _ATL_FUNC_INFO Structure
 
@@ -59,9 +52,8 @@ you would define an `_ATL_FUNC_INFO` structure:
 
 Header: atlcom.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)<br/>
 [IDispEventSimpleImpl Class](../../atl/reference/idispeventsimpleimpl-class.md)<br/>
 [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)
-

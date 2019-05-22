@@ -1,15 +1,8 @@
 ---
-title: "Expanding Wildcard Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Expanding Wildcard Arguments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["asterisk wildcard", "question mark, wildcard", "expanding wildcard arguments", "wildcards, expanding"]
 ms.assetid: 80a11c4b-0199-420e-a342-cf1d803be5bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Expanding Wildcard Arguments
 
@@ -27,7 +20,7 @@ The wildcards are expanded in the same manner as operating system commands. (See
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Link Options](../c-runtime-library/link-options.md)<br/>
 [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

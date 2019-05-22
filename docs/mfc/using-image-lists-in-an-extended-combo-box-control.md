@@ -1,15 +1,8 @@
 ---
-title: "Using Image Lists in an Extended Combo Box Control | Microsoft Docs"
-ms.custom: ""
+title: "Using Image Lists in an Extended Combo Box Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["image lists [MFC], combo boxes", "extended combo boxes [MFC], images", "images [MFC], combo box items"]
 ms.assetid: dfff25fe-af70-47a2-8032-3901d1e6842d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Image Lists in an Extended Combo Box Control
 
@@ -33,8 +26,7 @@ The following procedure associates an image list with an extended combo box cont
 
 Once the image list has been associated with the control, you can individually specify the images each item will use for the three possible states. For more information, see [Setting the Images for an Individual Item](../mfc/setting-the-images-for-an-individual-item.md).
 
-## See Also
+## See also
 
 [Using CComboBoxEx](../mfc/using-ccomboboxex.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

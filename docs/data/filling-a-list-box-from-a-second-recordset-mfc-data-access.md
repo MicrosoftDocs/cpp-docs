@@ -1,15 +1,8 @@
 ---
-title: "Filling a List Box from a Second Recordset  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Filling a List Box from a Second Recordset  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views, filling list boxes", "list boxes, filling from second recordset", "recordsets [C++], filling list boxes or combo boxes", "CComboBox class, filling object from second rowset", "ODBC recordsets [C++], filling list boxes or combo boxes", "combo boxes [C++], filling from second recordset", "CListCtrl class, filling from second recordset"]
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Filling a List Box from a Second Recordset  (MFC Data Access)
 
@@ -62,7 +55,7 @@ This function uses a second recordset, `m_courseSet`, which contains a record fo
 
 The function gets `m_courseSet` from the document and opens it. Then it empties `m_ctlCourseList` and scrolls through `m_courseSet`. For each record, the function calls the combo box's `AddString` member function to add the course ID value from the record. Finally, the code sets the combo box's selection.
 
-## See Also
+## See also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

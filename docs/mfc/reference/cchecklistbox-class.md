@@ -1,16 +1,9 @@
 ---
-title: "CCheckListBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CCheckListBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCheckListBox", "AFXWIN/CCheckListBox", "AFXWIN/CCheckListBox::CCheckListBox", "AFXWIN/CCheckListBox::Create", "AFXWIN/CCheckListBox::DrawItem", "AFXWIN/CCheckListBox::Enable", "AFXWIN/CCheckListBox::GetCheck", "AFXWIN/CCheckListBox::GetCheckStyle", "AFXWIN/CCheckListBox::IsEnabled", "AFXWIN/CCheckListBox::MeasureItem", "AFXWIN/CCheckListBox::OnGetCheckPosition", "AFXWIN/CCheckListBox::SetCheck", "AFXWIN/CCheckListBox::SetCheckStyle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCheckListBox [MFC], CCheckListBox", "CCheckListBox [MFC], Create", "CCheckListBox [MFC], DrawItem", "CCheckListBox [MFC], Enable", "CCheckListBox [MFC], GetCheck", "CCheckListBox [MFC], GetCheckStyle", "CCheckListBox [MFC], IsEnabled", "CCheckListBox [MFC], MeasureItem", "CCheckListBox [MFC], OnGetCheckPosition", "CCheckListBox [MFC], SetCheck", "CCheckListBox [MFC], SetCheckStyle"]
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCheckListBox Class
 
@@ -57,13 +50,13 @@ If you want to handle Windows notification messages sent by a list box to its pa
 
 Each message-map entry takes the following form:
 
-**ON_**Notification **(**`id`, `memberFxn`**)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 where `id` specifies the child window ID of the control sending the notification and `memberFxn` is the name of the parent member function you have written to handle the notification.
 
 The parent's function prototype is as follows:
 
-**afx_msg** `void` `memberFxn` **( );**
+`afx_msg void memberFxn();`
 
 There is only one message-map entry that pertains specifically to `CCheckListBox` (but see also the message-map entries for [CListBox](../../mfc/reference/clistbox-class.md)):
 
@@ -123,7 +116,7 @@ virtual BOOL Create(
 Specifies the style of the checklist box. The style must be LBS_HASSTRINGS and either LBS_OWNERDRAWFIXED (all items in the list are the same height) or LBS_OWNERDRAWVARIABLE (items in the list are of varying heights). This style can be combined with other [list-box styles](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) except LBS_USETABSTOPS.
 
 *rect*<br/>
-Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the checklist-box size and position. Can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the checklist box's parent window (usually a `CDialog` object). It must not be NULL.
@@ -170,7 +163,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -267,7 +260,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 
@@ -354,9 +347,9 @@ Valid styles are:
 
 For information on these styles, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).
 
-## See Also
+## See also
 
-[MFC Sample TSTCON](../../visual-cpp-samples.md)<br/>
+[MFC Sample TSTCON](../../overview/visual-cpp-samples.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CListBox Class](../../mfc/reference/clistbox-class.md)

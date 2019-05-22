@@ -1,16 +1,9 @@
 ---
-title: "defaultbind (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "defaultbind (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultbind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["defaultbind attribute"]
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultbind
 
@@ -43,7 +36,7 @@ See the example for [bindable](bindable.md) for an example of how to use **defau
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>

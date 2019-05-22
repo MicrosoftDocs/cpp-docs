@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4487 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4487"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4487"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4487"]
 ms.assetid: 796144cf-cd3c-4edc-b6a4-96192b7eb4f0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4487
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 A function in a derived class has the same signature as a non-virtual base class function. C4487 reminds you that the derived class function does not override the base class function. Explicitly mark the derived class function as `new` to resolve this warning.
 
-For more information, see [new (new slot in vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md).
+For more information, see [new (new slot in vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md).
 
 ## Example
 

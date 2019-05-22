@@ -1,16 +1,9 @@
 ---
-title: "CW2WEX Class | Microsoft Docs"
-ms.custom: ""
+title: "CW2WEX Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CW2WEX", "ATLCONV/ATL::CW2WEX", "ATLCONV/ATL::CW2WEX::CW2WEX", "ATLCONV/ATL::CW2WEX::m_psz", "ATLCONV/ATL::CW2WEX::m_szBuffer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CW2WEX class"]
 ms.assetid: 46262e56-e0d2-41fe-855b-0b67ecc8fcd7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CW2WEX Class
 
@@ -144,7 +137,7 @@ operator LPWSTR() const throw();
 
 Returns the text string as type LPWSTR.
 
-## See Also
+## See also
 
 [CA2AEX Class](../../atl/reference/ca2aex-class.md)<br/>
 [CA2CAEX Class](../../atl/reference/ca2caex-class.md)<br/>

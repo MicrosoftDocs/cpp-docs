@@ -1,15 +1,8 @@
 ---
-title: "Handlers for Message-Map Ranges | Microsoft Docs"
-ms.custom: ""
+title: "Handlers for Message-Map Ranges"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "handlers [MFC], message-map ranges", "message maps [MFC], message handler functions", "message maps [MFC], ranges", "control-notification messages [MFC]", "command IDs [MFC], message mapping", "message-map ranges [MFC]", "handlers [MFC]", "message handling [MFC], message handler functions", "mappings [MFC], message ranges", "command handling [MFC], command update handlers", "controls [MFC], notifications", "handler functions [MFC], message-map ranges", "handler functions [MFC]", "command update handlers [MFC]", "command routing [MFC], command update handlers", "message ranges [MFC]", "handler functions [MFC], declaring", "message ranges [MFC], mapping"]
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handlers for Message-Map Ranges
 
@@ -19,9 +12,9 @@ There are times when you need to process more than one message or control notifi
 
 - You can map ranges of command IDs to:
 
-   - A command handler function.
+  - A command handler function.
 
-   - A command update handler function.
+  - A command update handler function.
 
 - You can map control-notification messages for a range of control IDs to a message handler function.
 
@@ -45,25 +38,25 @@ The message-map entry consists of the following items:
 
 - The message-map range macro:
 
-   - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
+  - [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range)
 
-   - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
+  - [ON_UPDATE_COMMAND_UI_RANGE](reference/message-map-macros-mfc.md#on_update_command_ui_range)
 
-   - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
+  - [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range)
 
 - Parameters to the macro:
 
-   The first two macros take three parameters:
+  The first two macros take three parameters:
 
-   - The command ID that starts the range
+  - The command ID that starts the range
 
-   - The command ID that ends the range
+  - The command ID that ends the range
 
-   - The name of the message handler function
+  - The name of the message handler function
 
-   The range of command IDs must be contiguous.
+  The range of command IDs must be contiguous.
 
-   The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
+  The third macro, `ON_CONTROL_RANGE`, takes an additional first parameter: a control-notification message, such as **EN_CHANGE**.
 
 ##  <a name="_core_declaring_the_handler_function"></a> Declaring the Handler Function
 
@@ -77,7 +70,7 @@ For more information about parameter requirements for updating handler functions
 
 ##  <a name="_core_example_for_a_range_of_command_ids"></a> Example for a Range of Command IDs
 
-When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
+When might you use ranges One example is in handling commands like the Zoom command in the MFC sample [HIERSVR](../overview/visual-cpp-samples.md). This command zooms the view, scaling it between 25% and 300% of its normal size. HIERSVR's view class uses a range to handle the Zoom commands with a message-map entry resembling this:
 
 [!code-cpp[NVC_MFCMessageHandling#8](../mfc/codesnippet/cpp/handlers-for-message-map-ranges_3.cpp)]
 
@@ -127,6 +120,6 @@ The `OnButtonClicked` handler for a single **BN_CLICKED** message takes no param
 
 The code shown in the example is typical: converting the value passed to an `int` within the message range and asserting that this is the case. Then you might take some different action depending on which button was clicked.
 
-## See Also
+## See also
 
 [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

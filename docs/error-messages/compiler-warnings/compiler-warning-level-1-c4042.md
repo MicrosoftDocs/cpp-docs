@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4042 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4042"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4042"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4042"]
 ms.assetid: e4bd861b-1194-426b-bf79-68c5b021eb0a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4042
 

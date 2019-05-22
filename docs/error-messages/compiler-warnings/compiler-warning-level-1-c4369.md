@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4369 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4369"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4369"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4369"]
 ms.assetid: ade87e84-36be-4e00-be99-2930af848feb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4369
 

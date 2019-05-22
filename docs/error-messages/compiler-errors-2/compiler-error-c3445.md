@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3445 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3445"
 ms.date: "04/10/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3445"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3445"]
 ms.assetid: 0d272bfc-136b-4025-a9ba-5e4eea5f8215
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3445
 

@@ -1,15 +1,8 @@
 ---
-title: "Scheduler Policies | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Policies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler policies"]
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Policies
 
@@ -52,9 +45,8 @@ Use the [concurrency::CurrentScheduler::GetPolicy](reference/currentscheduler-cl
 
 To examine examples that use specific scheduler policies to control the behavior of the scheduler, see [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md) and [How to: Create Agents that Use Specific Scheduler Policies](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Specify Specific Scheduler Policies](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)<br/>
 [How to: Create Agents that Use Specific Scheduler Policies](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
-

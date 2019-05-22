@@ -1,14 +1,7 @@
 ---
-title: "Summary of Tokens | Microsoft Docs"
-ms.custom: ""
+title: "Summary of Tokens"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 2978cbf6-e66e-46fc-9938-caa052f2ccf7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Summary of Tokens
 
@@ -45,6 +38,6 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **E**  *sign*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **.**
 
-## See Also
+## See also
 
 [Lexical Grammar](../c-language/lexical-grammar.md)

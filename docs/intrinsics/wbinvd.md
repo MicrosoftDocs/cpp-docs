@@ -1,16 +1,9 @@
 ---
-title: "__wbinvd | Microsoft Docs"
-ms.custom: ""
+title: "__wbinvd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__wbinvd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__wbinvd intrinsic", "wbinvd instruction"]
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __wbinvd
 
@@ -38,6 +31,6 @@ This function is only available in kernel mode with a privilege level (CPL) of 0
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

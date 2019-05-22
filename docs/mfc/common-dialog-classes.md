@@ -1,15 +1,8 @@
 ---
-title: "Common Dialog Classes | Microsoft Docs"
-ms.custom: ""
+title: "Common Dialog Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog classes [MFC]", "dialog boxes [MFC], Windows common dialogs", "common dialog boxes [MFC], common dialog classes", "common dialog classes [MFC]", "MFC dialog boxes [MFC], Windows common dialogs", "Windows common dialogs [MFC]", "dialog classes [MFC], common", "common dialog boxes [MFC]"]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Common Dialog Classes
 
@@ -30,9 +23,8 @@ For more information about the common dialog classes, see the individual class n
 
 Three other classes in MFC have dialog-like characteristics. For information about classes [CFormView](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md), and [CDaoRecordView](../mfc/reference/cdaorecordview-class.md), see the classes in the *MFC Reference*. For information about class [CDialogBar](../mfc/reference/cdialogbar-class.md), see [Dialog Bars](../mfc/dialog-bars.md).
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Boxes in OLE](../mfc/dialog-boxes-in-ole.md)
-

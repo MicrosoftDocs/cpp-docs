@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2563 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2563"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2563"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2563"]
 ms.assetid: 54abba68-6458-4ca5-894d-3babdb7b3552
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2563
 

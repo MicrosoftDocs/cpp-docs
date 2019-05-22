@@ -1,16 +1,9 @@
 ---
-title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword | Microsoft Docs"
-ms.custom: ""
+title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__incgsdword", "__incgsqword_cpp", "__incgsword_cpp", "__incgsword", "__incgsbyte", "__incgsbyte_cpp", "__incgsqword", "__incgsdword_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__incgsbyte intrinsic", "__incgsword intrinsic", "__incgsqword intrinsic", "__incgsdword intrinsic"]
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __incgsbyte, __incgsword, __incgsdword, __incgsqword
 
@@ -21,17 +14,17 @@ Add one to the value at a memory location specified by an offset relative to the
 ## Syntax
 
 ```
-void __incgsbyte( 
-   unsigned long Offset 
-);
-void __incgsword( 
-   unsigned long Offset 
-);
-void __incgsdword( 
+void __incgsbyte(
    unsigned long Offset
 );
-void __incgsqword( 
-   unsigned long Offset 
+void __incgsword(
+   unsigned long Offset
+);
+void __incgsdword(
+   unsigned long Offset
+);
+void __incgsqword(
+   unsigned long Offset
 );
 ```
 
@@ -51,11 +44,11 @@ void __incgsqword( 
 
 ## Remarks
 
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)<br/>
 [__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>

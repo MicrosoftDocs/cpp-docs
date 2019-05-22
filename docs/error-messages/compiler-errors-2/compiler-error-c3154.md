@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3154 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3154"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3154"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3154"]
 ms.assetid: 78005c74-eaaf-4ac2-88ae-6c25d01a302a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3154
 
@@ -18,7 +11,7 @@ Expected ',' before ellipsis. Non-comma separated ellipsis not supported on para
 
 A variable argument function was not declared correctly.
 
-For more information, see [Variable Argument Lists (...) (C++/CLI)](../../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md).
+For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extensions/variable-argument-lists-dot-dot-dot-cpp-cli.md).
 
 ## Example
 

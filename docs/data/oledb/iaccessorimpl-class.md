@@ -1,20 +1,13 @@
 ---
-title: "IAccessorImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IAccessorImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IAccessorImpl", "ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "IAccessorImpl", "ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor", "IAccessorImpl::CreateAccessor", "CreateAccessor", "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor", "IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings", "ReleaseAccessor", "IAccessorImpl::ReleaseAccessor", "ATL.IAccessorImpl.ReleaseAccessor", "ATL::IAccessorImpl::ReleaseAccessor", "IAccessorImpl.ReleaseAccessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAccessorImpl class", "IAccessorImpl class, constructor", "IAccessorImpl constructor", "AddRefAccessor method", "CreateAccessor method", "GetBindings method", "ReleaseAccessor method"]
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IAccessorImpl Class
 
-Provides an implementation of the [IAccessor](/previous-versions/windows/desktop/ms719672) interface.
+Provides an implementation of the [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) interface.
 
 ## Syntax
 
@@ -59,7 +52,7 @@ Storage unit for column information. The default is [CAtlMap](../../atl/referenc
 
 ## Remarks
 
-This is mandatory on rowsets and commands. OLE DB requires providers to implement an HACCESSOR, which is a tag to an array of [DBBINDING](/previous-versions/windows/desktop/ms716845) structures. HACCESSORs provided by `IAccessorImpl` are addresses of the `BindType` structures. By default, `BindType` is defined as an `ATLBINDINGS` in `IAccessorImpl`'s template definition. `BindType` provides a mechanism used by `IAccessorImpl` to track the number of elements in its `DBBINDING` array as well as a reference count and accessor flags.
+This is mandatory on rowsets and commands. OLE DB requires providers to implement an HACCESSOR, which is a tag to an array of [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) structures. HACCESSORs provided by `IAccessorImpl` are addresses of the `BindType` structures. By default, `BindType` is defined as an `ATLBINDINGS` in `IAccessorImpl`'s template definition. `BindType` provides a mechanism used by `IAccessorImpl` to track the number of elements in its `DBBINDING` array as well as a reference count and accessor flags.
 
 ## <a name="iaccessorimpl"></a> IAccessorImpl::IAccessorImpl
 
@@ -84,7 +77,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 #### Parameters
 
-See [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978) in the *OLE DB Programmer's Reference*.
+See [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="createaccessor"></a> IAccessorImpl::CreateAccessor
 
@@ -103,7 +96,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 #### Parameters
 
-See [IAccessor::CreateAccessor](/previous-versions/windows/desktop/ms720969) in the *OLE DB Programmer's Reference*.
+See [IAccessor::CreateAccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="getbindings"></a> IAccessorImpl::GetBindings
 
@@ -120,7 +113,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 #### Parameters
 
-See [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253) in the *OLE DB Programmer's Reference*.
+See [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="releaseaccessor"></a> IAccessorImpl::ReleaseAccessor
 
@@ -135,9 +128,9 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 
 #### Parameters
 
-See [IAccessor::ReleaseAccessor](/previous-versions/windows/desktop/ms719717) in the *OLE DB Programmer's Reference*.
+See [IAccessor::ReleaseAccessor](/previous-versions/windows/desktop/ms719717(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

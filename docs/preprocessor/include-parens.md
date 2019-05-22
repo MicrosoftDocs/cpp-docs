@@ -1,16 +1,9 @@
 ---
-title: "include() | Microsoft Docs"
-ms.custom: ""
+title: "include()"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["include()"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["include() attribute"]
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # include()
 
@@ -38,7 +31,7 @@ Type libraries may include definitions of items defined in system headers or oth
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

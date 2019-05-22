@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2346 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2346"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2346"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2346"]
 ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2346
 

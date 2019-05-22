@@ -1,16 +1,9 @@
 ---
-title: "CMFCReBar Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCReBar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCReBar", "AFXREBAR/CMFCReBar", "AFXREBAR/CMFCReBar::AddBar", "AFXREBAR/CMFCReBar::CalcFixedLayout", "AFXREBAR/CMFCReBar::CanFloat", "AFXREBAR/CMFCReBar::Create", "AFXREBAR/CMFCReBar::EnableDocking", "AFXREBAR/CMFCReBar::GetReBarBandInfoSize", "AFXREBAR/CMFCReBar::GetReBarCtrl", "AFXREBAR/CMFCReBar::OnShowControlBarMenu", "AFXREBAR/CMFCReBar::OnToolHitTest", "AFXREBAR/CMFCReBar::OnUpdateCmdUI", "AFXREBAR/CMFCReBar::SetPaneAlignment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCReBar [MFC], AddBar", "CMFCReBar [MFC], CalcFixedLayout", "CMFCReBar [MFC], CanFloat", "CMFCReBar [MFC], Create", "CMFCReBar [MFC], EnableDocking", "CMFCReBar [MFC], GetReBarBandInfoSize", "CMFCReBar [MFC], GetReBarCtrl", "CMFCReBar [MFC], OnShowControlBarMenu", "CMFCReBar [MFC], OnToolHitTest", "CMFCReBar [MFC], OnUpdateCmdUI", "CMFCReBar [MFC], SetPaneAlignment"]
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 
@@ -48,7 +41,7 @@ A rebar object behaves similarly to a toolbar object. A rebar control can contai
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCReBar` class. The example shows how to create a rebar control and add a band to it. The band functions as an internal toolbar. This code snippet is part of the [Rebar Test sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCReBar` class. The example shows how to create a rebar control and add a band to it. The band functions as an internal toolbar. This code snippet is part of the [Rebar Test sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]
 [!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_2.cpp)]
@@ -261,7 +254,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

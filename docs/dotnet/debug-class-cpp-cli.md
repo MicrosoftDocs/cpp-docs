@@ -1,15 +1,8 @@
 ---
-title: "Debug Class (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Debug Class (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Trace class, Visual C++", ".NET Framework [C++], Debug class", "Debug class"]
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Debug Class (C++/CLI)
 
@@ -89,6 +82,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

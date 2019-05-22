@@ -1,16 +1,9 @@
 ---
-title: "OLE Common Dialog Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Common Dialog Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "dialog classes [MFC], OLE", "OLE common dialog classes [MFC]", "common dialog classes [MFC]"]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Common Dialog Classes
 
@@ -46,7 +39,6 @@ Displays the Change Source dialog box, the standard user interface for changing 
 [COleBusyDialog](../mfc/reference/colebusydialog-class.md)<br/>
 Displays the Server Busy and Server Not Responding dialog boxes, the standard user interface for handling calls to busy applications. Usually displayed automatically by the `COleMessageFilter` implementation.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Prefix Increment and Decrement Operators | Microsoft Docs"
-ms.custom: ""
+title: "Prefix Increment and Decrement Operators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["increment operators, types of", "decrement operators, syntax", "decrement operators"]
 ms.assetid: 9a441bb9-d94a-4b6a-9db2-0d0d76bc480d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Prefix Increment and Decrement Operators
 
@@ -30,6 +23,6 @@ if( line[--i] != '\n' )
 
 In this example, the variable `i` is decremented before it is used as a subscript to `line`.
 
-## See Also
+## See also
 
 [C Unary Operators](../c-language/c-unary-operators.md)

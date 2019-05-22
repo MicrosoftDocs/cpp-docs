@@ -1,16 +1,9 @@
 ---
-title: "CStatic Class | Microsoft Docs"
-ms.custom: ""
+title: "CStatic Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CStatic", "AFXWIN/CStatic", "AFXWIN/CStatic::CStatic", "AFXWIN/CStatic::Create", "AFXWIN/CStatic::DrawItem", "AFXWIN/CStatic::GetBitmap", "AFXWIN/CStatic::GetCursor", "AFXWIN/CStatic::GetEnhMetaFile", "AFXWIN/CStatic::GetIcon", "AFXWIN/CStatic::SetBitmap", "AFXWIN/CStatic::SetCursor", "AFXWIN/CStatic::SetEnhMetaFile", "AFXWIN/CStatic::SetIcon"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatic [MFC], CStatic", "CStatic [MFC], Create", "CStatic [MFC], DrawItem", "CStatic [MFC], GetBitmap", "CStatic [MFC], GetCursor", "CStatic [MFC], GetEnhMetaFile", "CStatic [MFC], GetIcon", "CStatic [MFC], SetBitmap", "CStatic [MFC], SetCursor", "CStatic [MFC], SetEnhMetaFile", "CStatic [MFC], SetIcon"]
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStatic Class
 
@@ -154,7 +147,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure. The structure contains information about the item to be drawn and the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure. The structure contains information about the item to be drawn and the type of drawing required.
 
 ### Remarks
 
@@ -357,7 +350,7 @@ You can use various window and static control styles, including the following:
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "CSocketFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CSocketFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSocketFile [MFC], CSocketFile"]
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSocketFile Class
 
@@ -92,7 +85,7 @@ With `CSocketFile`, however, data is message based; the buffer can contain multi
 
 For more information on the use of `CSocketFile`, see the articles [Windows Sockets: Using Sockets with Archives](../../mfc/windows-sockets-using-sockets-with-archives.md) and [Windows Sockets: Example of Sockets Using Archives](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
 
-## See Also
+## See also
 
 [CFile Class](../../mfc/reference/cfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

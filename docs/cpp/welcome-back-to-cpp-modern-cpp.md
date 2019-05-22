@@ -1,14 +1,8 @@
 ---
-title: "Welcome Back to C++ (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Welcome Back to C++ (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Welcome Back to C++ (Modern C++)
 
@@ -125,11 +119,11 @@ The articles in this part of the documentation provide high-level guidelines and
 
 - [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)
 
-For more information, see the StackOverflow article [what C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
+For more information, see the Stack Overflow article [Which C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
 
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[Visual C++ language conformance](../visual-cpp-language-conformance.md)
+[Visual C++ language conformance](../overview/visual-cpp-language-conformance.md)

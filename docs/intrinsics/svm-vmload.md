@@ -1,16 +1,9 @@
 ---
-title: "__svm_vmload | Microsoft Docs"
-ms.custom: ""
+title: "__svm_vmload"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_vmload"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_vmload intrinsic", "VMLOAD instruction"]
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_vmload
 
@@ -46,7 +39,7 @@ The `__svm_vmload` function is equivalent to the `VMLOAD` machine instruction. T
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>

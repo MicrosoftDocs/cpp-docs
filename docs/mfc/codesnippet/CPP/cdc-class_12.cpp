@@ -18,7 +18,7 @@ void CDCView::DrawRoundRect(CDC* pDC)
 
    // Draw a thick black rectangle filled with blue
    // corners rounded at a 17-unit radius. Note that
-   // a radius of three or less is not noticable because
+   // a radius of three or less is not noticeable because
    // the pen is three units wide.
    pDC->RoundRect(rect, CPoint(17, 17));
 

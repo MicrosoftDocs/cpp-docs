@@ -1,16 +1,9 @@
 ---
-title: ".NOCREF | Microsoft Docs"
-ms.custom: ""
+title: ".NOCREF"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".NOCREF"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".NOCREF directive"]
 ms.assetid: 696a6a71-7e88-4b60-8550-7857d772ed20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .NOCREF
 

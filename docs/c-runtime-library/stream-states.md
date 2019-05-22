@@ -1,21 +1,14 @@
 ---
-title: "Stream States | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Stream States"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["streams, states"]
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Stream States
 
 The valid states, and state transitions, for a stream are shown in the following figure.
 
-![Stream](../c-runtime-library/media/stream.gif "stream")
+![Stream state diagram](../c-runtime-library/media/stream.gif "Stream state diagram")
 
 Each of the circles denotes a stable state. Each of the lines denotes a transition that can occur as the result of a function call that operates on the stream. Five groups of functions can cause state transitions.
 
@@ -41,6 +34,6 @@ The state diagram shows that you must call one of the position functions between
 
 Finally, the state diagram shows that a position operation never decreases the number of valid function calls that can follow.
 
-## See Also
+## See also
 
 [Files and Streams](../c-runtime-library/files-and-streams.md)

@@ -1,16 +1,9 @@
 ---
-title: "-IGNORE (Ignore Specific Warnings) | Microsoft Docs"
-ms.custom: ""
+title: "/IGNORE (Ignore Specific Warnings)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/OVERWRITE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/IGNORE linker option"]
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /IGNORE (Ignore Specific Warnings)
 
@@ -53,7 +46,7 @@ In general, linker warnings that can't be ignored represent build failures, comm
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the **Linker** folder, select the **Command Line** property page.
 

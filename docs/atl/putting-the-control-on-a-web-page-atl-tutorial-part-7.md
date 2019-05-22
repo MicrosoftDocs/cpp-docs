@@ -1,14 +1,8 @@
 ---
-title: "Putting the Control on a Web Page (ATL Tutorial, Part 7) | Microsoft Docs"
+title: "Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 ms.custom: "get-started-article"
-ms.date: "09/27/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+ms.date: "05/06/2019"
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Putting the Control on a Web Page (ATL Tutorial, Part 7)
 
@@ -74,7 +68,7 @@ You have added some VBScript code that gets the Sides property from the control 
 
 ## Indicating that the Control Is Safe for Scripting
 
-You can view the Web page with the control in Internet Explorer or, more conveniently, use the Web browser view built into Visual C++. To see your control in the Web browser view, right-click PolyCtl.htm, and click **View in Browser**.
+You can view the Web page with the control in Internet Explorer only. Other browsers no longer support ActiveX controls because of security weaknesses. 
 
 > [!NOTE]
 > If the control isn't visible, know that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
@@ -106,6 +100,6 @@ Build the control. Once the build has finished, open PolyCtl.htm in browser view
 
 This concludes the ATL tutorial. For links to more information about ATL, see the [ATL start page](../atl/active-template-library-atl-concepts.md).
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

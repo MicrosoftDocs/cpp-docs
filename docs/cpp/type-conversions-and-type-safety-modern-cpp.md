@@ -1,14 +1,8 @@
 ---
-title: "Type Conversions and Type Safety (Modern C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
+title: "Type Conversions and Type Safety (Modern C++)"
+ms.date: "05/07/2019"
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type Conversions and Type Safety (Modern C++)
 
@@ -61,7 +55,7 @@ A signed integral type and its unsigned counterpart are always the same size, bu
 
 ```cpp
 using namespace std;
-unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
+unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
 short num2 = num;
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 // Prints: unsigned val = 65535 signed val = -1
@@ -84,7 +78,7 @@ The compiler does not warn about implicit conversions between signed and unsigne
 
 ### Pointer conversions
 
-In many expressions, a C-style array is implicitly converted to a pointer to the first element in the array, and constant conversions can happen silently. Although this is convenient, it's also potentially error-prone. For example, the following badly designed code example seems nonsensical, and yet it will compile in Visual C++ and produces a result of 'p'. First, the "Help" string constant literal is converted to a `char*` that points to the first element of the array; that pointer is then incremented by three elements so that it now points to the last element 'p'.
+In many expressions, a C-style array is implicitly converted to a pointer to the first element in the array, and constant conversions can happen silently. Although this is convenient, it's also potentially error-prone. For example, the following badly designed code example seems nonsensical, and yet it will compile and produces a result of 'p'. First, the "Help" string constant literal is converted to a `char*` that points to the first element of the array; that pointer is then incremented by three elements so that it now points to the last element 'p'.
 
 ```cpp
 char* s = "Help" + 3;
@@ -178,7 +172,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
 
 ## See also
 
-[C++ Type System](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ Type System (Modern C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

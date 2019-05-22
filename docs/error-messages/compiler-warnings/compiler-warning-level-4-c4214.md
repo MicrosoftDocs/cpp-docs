@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4214 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4214"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4214"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4214"]
 ms.assetid: 9b8db279-1f12-4a6b-a923-2db22acd1947
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4214
 

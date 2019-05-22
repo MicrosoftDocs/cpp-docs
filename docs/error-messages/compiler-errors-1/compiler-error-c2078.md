@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2078 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2078"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2078"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2078"]
 ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2078
 
@@ -44,5 +37,4 @@ int main() {
    S s3{{1, 2, 3, 4}};     // OK
    S s4{{{1, 2}, {3, 4}}}; // OK
 }
-
 ```

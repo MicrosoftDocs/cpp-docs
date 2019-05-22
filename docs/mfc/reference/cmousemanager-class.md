@@ -1,16 +1,9 @@
 ---
-title: "CMouseManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CMouseManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMouseManager", "AFXMOUSEMANAGER/CMouseManager", "AFXMOUSEMANAGER/CMouseManager::AddView", "AFXMOUSEMANAGER/CMouseManager::GetViewDblClickCommand", "AFXMOUSEMANAGER/CMouseManager::GetViewIconId", "AFXMOUSEMANAGER/CMouseManager::GetViewIdByName", "AFXMOUSEMANAGER/CMouseManager::GetViewNames", "AFXMOUSEMANAGER/CMouseManager::LoadState", "AFXMOUSEMANAGER/CMouseManager::SaveState", "AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMouseManager [MFC], AddView", "CMouseManager [MFC], GetViewDblClickCommand", "CMouseManager [MFC], GetViewIconId", "CMouseManager [MFC], GetViewIdByName", "CMouseManager [MFC], GetViewNames", "CMouseManager [MFC], LoadState", "CMouseManager [MFC], SaveState", "CMouseManager [MFC], SetCommandForDblClk"]
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMouseManager Class
 
@@ -100,7 +93,7 @@ For more information about how to provide custom mouse behavior, see [Keyboard a
 
 ### Example
 
-The following example demonstrates how to retrieve a pointer to a `CMouseManager` object by using the `CWinAppEx::GetMouseManager` method and the `AddView` method in the `CMouseManager` class. This code snippet is part of the [State Collection sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a pointer to a `CMouseManager` object by using the `CWinAppEx::GetMouseManager` method and the `AddView` method in the `CMouseManager` class. This code snippet is part of the [State Collection sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]
 
@@ -250,10 +243,9 @@ In order to associate a custom command with a view, you must first register the 
 
 If *uiCmd* is set to 0, the specified view is no longer associated with a command.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx Class](../../mfc/reference/cwinappex-class.md)<br/>
 [Keyboard and Mouse Customization](../../mfc/keyboard-and-mouse-customization.md)
-

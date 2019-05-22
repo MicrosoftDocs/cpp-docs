@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonGallery Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonGallery Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonGallery", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::CMFCRibbonGallery", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::AddGroup", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::AddSubItem", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::Clear", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::EnableMenuResize", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::EnableMenuSideBar", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetCompactSize", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetDroppedDown", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetGroupName", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetGroupOffset", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetIconsInRow", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetItemToolTip", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetLastSelectedItem", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetPaletteID", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetRegularSize", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::GetSelectedItem", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::HasMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsButtonMode", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuResizeEnabled", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuResizeVertical", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::IsMenuSideBar", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnAfterChangeRect", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnDraw", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnEnable", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnRTLChanged", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::RedrawIcons", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::RemoveItemToolTips", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SelectItem", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetACCData", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetButtonMode", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetGroupName", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetIconsInRow", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetItemToolTip", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::SetPaletteID", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGallery::OnDrawPaletteIcon"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonGallery [MFC], CMFCRibbonGallery", "CMFCRibbonGallery [MFC], AddGroup", "CMFCRibbonGallery [MFC], AddSubItem", "CMFCRibbonGallery [MFC], Clear", "CMFCRibbonGallery [MFC], EnableMenuResize", "CMFCRibbonGallery [MFC], EnableMenuSideBar", "CMFCRibbonGallery [MFC], GetCompactSize", "CMFCRibbonGallery [MFC], GetDroppedDown", "CMFCRibbonGallery [MFC], GetGroupName", "CMFCRibbonGallery [MFC], GetGroupOffset", "CMFCRibbonGallery [MFC], GetIconsInRow", "CMFCRibbonGallery [MFC], GetItemToolTip", "CMFCRibbonGallery [MFC], GetLastSelectedItem", "CMFCRibbonGallery [MFC], GetPaletteID", "CMFCRibbonGallery [MFC], GetRegularSize", "CMFCRibbonGallery [MFC], GetSelectedItem", "CMFCRibbonGallery [MFC], HasMenu", "CMFCRibbonGallery [MFC], IsButtonMode", "CMFCRibbonGallery [MFC], IsMenuResizeEnabled", "CMFCRibbonGallery [MFC], IsMenuResizeVertical", "CMFCRibbonGallery [MFC], IsMenuSideBar", "CMFCRibbonGallery [MFC], OnAfterChangeRect", "CMFCRibbonGallery [MFC], OnDraw", "CMFCRibbonGallery [MFC], OnEnable", "CMFCRibbonGallery [MFC], OnRTLChanged", "CMFCRibbonGallery [MFC], RedrawIcons", "CMFCRibbonGallery [MFC], RemoveItemToolTips", "CMFCRibbonGallery [MFC], SelectItem", "CMFCRibbonGallery [MFC], SetACCData", "CMFCRibbonGallery [MFC], SetButtonMode", "CMFCRibbonGallery [MFC], SetGroupName", "CMFCRibbonGallery [MFC], SetIconsInRow", "CMFCRibbonGallery [MFC], SetItemToolTip", "CMFCRibbonGallery [MFC], SetPalette", "CMFCRibbonGallery [MFC], SetPaletteID", "CMFCRibbonGallery [MFC], OnDrawPaletteIcon"]
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonGallery Class
 
@@ -82,7 +75,7 @@ A gallery button behaves just like a regular menu button except that it displays
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCRibbonGallery` class to configure a `CMFCRibbonGallery` object. The example illustrates how to specify the number of items per row in the gallery, enable resizing of the menu panel, enable the side bar to the left of the pop-up menu, and display the ribbon gallery as a palette directly on the ribbon bar. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCRibbonGallery` class to configure a `CMFCRibbonGallery` object. The example illustrates how to specify the number of items per row in the gallery, enable resizing of the menu panel, enable the side bar to the left of the pop-up menu, and display the ribbon gallery as a palette directly on the ribbon bar. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#6](../../mfc/reference/codesnippet/cpp/cmfcribbongallery-class_1.cpp)]
 
@@ -743,7 +736,7 @@ void SetPaletteID(UINT nID);
 
 To determine the specific item that a user selected from the gallery, call the [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) static method.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "tile_static Keyword | Microsoft Docs"
-ms.custom: ""
+title: "tile_static Keyword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["tile_static_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tile_static keyword"]
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # tile_static Keyword
 

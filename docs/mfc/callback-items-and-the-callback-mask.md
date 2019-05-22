@@ -1,15 +1,8 @@
 ---
-title: "Callback Items and the Callback Mask | Microsoft Docs"
-ms.custom: ""
+title: "Callback Items and the Callback Mask"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["callback items in CListCtrl class [MFC]", "CListCtrl class [MFC], callback item and callback mask"]
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Callback Items and the Callback Mask
 
@@ -33,8 +26,7 @@ In addition to defining callback items, you can also modify the control's callba
 
 For further information on retrieving and setting this mask, see [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) and [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask).
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

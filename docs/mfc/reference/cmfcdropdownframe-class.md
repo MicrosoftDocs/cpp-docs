@@ -1,16 +1,9 @@
 ---
-title: "CMFCDropDownFrame Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDropDownFrame Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDropDownFrame [MFC], Create", "CMFCDropDownFrame [MFC], GetParentMenuBar", "CMFCDropDownFrame [MFC], GetParentPopupMenu", "CMFCDropDownFrame [MFC], RecalcLayout", "CMFCDropDownFrame [MFC], SetAutoDestroy"]
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDropDownFrame Class
 
@@ -175,7 +168,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 
 If *bAutoDestroy* is TRUE, then the `CMFCDropDownFrame` destructor destroys the associated drop-down toolbar window. The default value is TRUE.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

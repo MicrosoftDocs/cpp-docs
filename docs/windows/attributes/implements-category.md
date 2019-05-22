@@ -1,16 +1,9 @@
 ---
-title: "implements_category (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "implements_category (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.implements_category"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["implements_category attribute"]
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # implements_category
 
@@ -63,7 +56,7 @@ class CMyClass {};
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

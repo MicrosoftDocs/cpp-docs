@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Unicode Strings Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal Unicode Strings Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "C++ Interop, strings", "data marshaling [C++], strings", "Unicode, marshaling strings"]
 ms.assetid: 96c2141d-6c5d-43ef-a1aa-5785afb9a9aa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Unicode Strings Using C++ Interop
 
@@ -25,7 +19,7 @@ This topic demonstrates how Unicode strings can be passed from a managed to an u
 
 ## Example
 
-To pass a Unicode string from a managed to an unmanaged function, the PtrToStringChars function (declared in Vcclr.h) can be used to access in the memory where the managed string is stored. Because this address will be passed to a native function, it is important that the memory be pinned with [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to prevent the string data from being relocated, should a garbage collection cycle take place while the unmanaged function executes.
+To pass a Unicode string from a managed to an unmanaged function, the PtrToStringChars function (declared in Vcclr.h) can be used to access in the memory where the managed string is stored. Because this address will be passed to a native function, it is important that the memory be pinned with [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to prevent the string data from being relocated, should a garbage collection cycle take place while the unmanaged function executes.
 
 ```
 // MarshalUnicode1.cpp
@@ -90,6 +84,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

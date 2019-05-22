@@ -1,15 +1,8 @@
 ---
-title: "Automation Clients | Microsoft Docs"
-ms.custom: ""
+title: "Automation Clients"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["clients, Automation", "Automation clients", "type libraries, Automation clients", "clients"]
 ms.assetid: 84e34a79-06f6-4752-a33b-ae0ede1d8ecf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Clients
 
@@ -35,9 +28,8 @@ You then specify the type-library file describing the properties and functions o
 
 If you want to handle events in your automation client, you need to add a sink interface. MFC provides wizard support to add sink interfaces for ActiveX controls, but not support for other COM servers.
 
-## See Also
+## See also
 
 [Automation Clients: Using Type Libraries](../mfc/automation-clients-using-type-libraries.md)<br/>
 [Automation](../mfc/automation.md)<br/>
 [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
-

@@ -1,19 +1,12 @@
 ---
-title: "ctanh, ctanhf, ctanhl | Microsoft Docs"
-ms.custom: ""
+title: "ctanh, ctanhf, ctanhl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
-apiname: ["ctanh", "ctahf", "ctahl"]
+apiname: ["ctanh", "ctanhf", "ctanhl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["ctanh", "ctanhf", "ctanhl", "complex/ctanh", "complex/ctanhf", "complex/ctanhl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ctanh function", "ctanhl function", "ctanhf function"]
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ctanh, ctanhf, ctanhl
 

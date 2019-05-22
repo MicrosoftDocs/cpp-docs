@@ -1,16 +1,9 @@
 ---
-title: "requires_category (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "requires_category (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.requires_category"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["requires_category attribute"]
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # requires_category
 
@@ -65,7 +58,7 @@ class CMyClass {};
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [implements_category](implements-category.md)

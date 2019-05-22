@@ -1,16 +1,9 @@
 ---
-title: "CCustomInterpolator Class | Microsoft Docs"
-ms.custom: ""
+title: "CCustomInterpolator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator::CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDependencies", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDuration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetFinalValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::Init", "AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::SetDuration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::SetInitialValueAndVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_duration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCustomInterpolator [MFC], CCustomInterpolator", "CCustomInterpolator [MFC], GetDependencies", "CCustomInterpolator [MFC], GetDuration", "CCustomInterpolator [MFC], GetFinalValue", "CCustomInterpolator [MFC], Init", "CCustomInterpolator [MFC], InterpolateValue", "CCustomInterpolator [MFC], InterpolateVelocity", "CCustomInterpolator [MFC], SetDuration", "CCustomInterpolator [MFC], SetInitialValueAndVelocity", "CCustomInterpolator [MFC], m_currentValue", "CCustomInterpolator [MFC], m_currentVelocity", "CCustomInterpolator [MFC], m_duration", "CCustomInterpolator [MFC], m_finalValue", "CCustomInterpolator [MFC], m_initialValue", "CCustomInterpolator [MFC], m_initialVelocity"]
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCustomInterpolator Class
 
@@ -292,6 +285,6 @@ The velocity of the variable at the start of the transition.
 
 The basic implementation always returns TRUE. Return FALSE from overridden implementation if you wish to fail the event.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

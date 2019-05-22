@@ -1,20 +1,14 @@
 ---
-title: "&lt;filesystem&gt; functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "&lt;filesystem&gt; functions"
+ms.date: "03/27/2019"
 f1_keywords: ["FILESYSTEM/std::experimental::filesystem::absolute", "FILESYSTEM/std::experimental::filesystem::canonical", "FILESYSTEM/std::experimental::filesystem::copy", "FILESYSTEM/std::experimental::filesystem::copy_file", "FILESYSTEM/std::experimental::filesystem::copy_symlink", "FILESYSTEM/std::experimental::filesystem::create_directories", "FILESYSTEM/std::experimental::filesystem::create_directory", "FILESYSTEM/std::experimental::filesystem::create_directory_symlink", "FILESYSTEM/std::experimental::filesystem::create_hard_link", "FILESYSTEM/std::experimental::filesystem::create_symlink", "FILESYSTEM/std::experimental::filesystem::current_path", "FILESYSTEM/std::experimental::filesystem::equivalent", "FILESYSTEM/std::experimental::filesystem::exists", "FILESYSTEM/std::experimental::filesystem::file_size", "FILESYSTEM/std::experimental::filesystem::hard_link_count", "FILESYSTEM/std::experimental::filesystem::hash_value", "FILESYSTEM/std::experimental::filesystem::is_block_file", "FILESYSTEM/std::experimental::filesystem::is_character_file", "FILESYSTEM/std::experimental::filesystem::is_directory", "FILESYSTEM/std::experimental::filesystem::is_empty", "FILESYSTEM/std::experimental::filesystem::is_fifo", "FILESYSTEM/std::experimental::filesystem::is_other", "FILESYSTEM/std::experimental::filesystem::is_regular_file", "FILESYSTEM/std::experimental::filesystem::is_socket", "FILESYSTEM/std::experimental::filesystem::is_symlink", "FILESYSTEM/std::experimental::filesystem::last_write_time", "FILESYSTEM/std::experimental::filesystem::permissions", "FILESYSTEM/std::experimental::filesystem::read_symlink", "FILESYSTEM/std::experimental::filesystem::remove", "FILESYSTEM/std::experimental::filesystem::remove_all", "FILESYSTEM/std::experimental::filesystem::rename", "FILESYSTEM/std::experimental::filesystem::resize_file", "FILESYSTEM/std::experimental::filesystem::space", "FILESYSTEM/std::experimental::filesystem::status", "FILESYSTEM/std::experimental::filesystem::status_known", "FILESYSTEM/std::experimental::filesystem::swap", "FILESYSTEM/std::experimental::filesystem::symlink_status", "FILESYSTEM/std::experimental::filesystem::system_complete", "FILESYSTEM/std::experimental::filesystem::temp_directory_path", "FILESYSTEM/std::experimental::filesystem::u8path"]
-dev_langs: ["C++"]
 ms.assetid: be3cb821-4728-4d47-ab78-858fa8aa5045
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::experimental::filesystem::absolute", "std::experimental::filesystem::canonical", "std::experimental::filesystem::copy", "std::experimental::filesystem::copy_file", "std::experimental::filesystem::copy_symlink", "std::experimental::filesystem::create_directories", "std::experimental::filesystem::create_directory", "std::experimental::filesystem::create_directory_symlink", "std::experimental::filesystem::create_hard_link", "std::experimental::filesystem::create_symlink", "std::experimental::filesystem::current_path", "std::experimental::filesystem::equivalent", "std::experimental::filesystem::exists", "std::experimental::filesystem::file_size", "std::experimental::filesystem::hard_link_count", "std::experimental::filesystem::hash_value", "std::experimental::filesystem::is_block_file", "std::experimental::filesystem::is_character_file", "std::experimental::filesystem::is_directory", "std::experimental::filesystem::is_empty", "std::experimental::filesystem::is_fifo", "std::experimental::filesystem::is_other", "std::experimental::filesystem::is_regular_file", "std::experimental::filesystem::is_socket", "std::experimental::filesystem::is_symlink", "std::experimental::filesystem::last_write_time", "std::experimental::filesystem::permissions", "std::experimental::filesystem::read_symlink", "std::experimental::filesystem::remove", "std::experimental::filesystem::remove_all", "std::experimental::filesystem::rename", "std::experimental::filesystem::resize_file", "std::experimental::filesystem::space", "std::experimental::filesystem::status", "std::experimental::filesystem::status_known", "std::experimental::filesystem::swap", "std::experimental::filesystem::symlink_status", "std::experimental::filesystem::system_complete", "std::experimental::filesystem::temp_directory_path", "std::experimental::filesystem::u8path"]
-ms.workload: ["cplusplus"]
 ---
 # &lt;filesystem&gt; functions
 
 These free functions in the [\<filesystem>](../standard-library/filesystem.md) header perform modifying and query operations on paths, files, symlinks, directories and volumes. For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
+
 ||||
 |-|-|-|
 |[absolute](#absolute)|[begin](#begin)|[canonical](#canonical)|
@@ -156,7 +150,7 @@ Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & 
 
 The functions return **true** if the copy is attempted and succeeds, otherwise **false**.
 
-## <a name="copy_symlink "></a>  copy_symlink
+## <a name="copy_symlink"></a>  copy_symlink
 
 ```cpp
 void copy_symlink(const path& from, const path& to);
@@ -186,7 +180,7 @@ bool create_directory(const path& pval, const path& attr, error_code& ec) noexce
 
 The function creates the directory *pval* as needed. It returns true only if it actually creates the directory *pval*, in which case it copies permissions from the existing file *attr*, or uses `perms::all` for the overloads with no *attr* parameter.
 
-## <a name="create_directory_symlink "></a>  create_directory_symlink
+## <a name="create_directory_symlink"></a>  create_directory_symlink
 
 ```cpp
 void create_directory_symlink(const path& to, const path& link);
@@ -204,7 +198,7 @@ void create_hard_link(const path& to, const path& link, error_code& ec) noexcept
 
 The function creates link as a hard link to the directory or file *to*.
 
-## <a name="create_symlink "></a>  create_symlink
+## <a name="create_symlink"></a>  create_symlink
 
 ```cpp
 void create_symlink(const path& to,  const path& link);
@@ -299,7 +293,7 @@ bool is_character_file(const path& pval, error_code& ec) noexcept;
 
 The first function returns `stat.type() == file_type::character`. The remaining functions return `is_character_file(status(pval))`.
 
-## <a name="is_directory "></a>  is_directory
+## <a name="is_directory"></a>  is_directory
 
 ```cpp
 bool is_directory(file_status stat) noexcept;
@@ -339,7 +333,7 @@ bool is_other(const path& pval, error_code& ec) noexcept;
 
 The first function returns `stat.type() == file_type::other`. The remaining functions return `is_other(status(pval))`.
 
-## <a name="s_regular_file"></a>  is_regular_file
+## <a name="is_regular_file"></a>  is_regular_file
 
 ```cpp
 bool is_regular_file(file_status stat) noexcept;

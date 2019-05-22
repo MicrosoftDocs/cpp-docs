@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1190 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1190"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1190"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1190"]
 ms.assetid: dee2266d-6c40-4f6e-91db-f01e65f8d2bc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1190
 

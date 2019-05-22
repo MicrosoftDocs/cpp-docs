@@ -1,15 +1,9 @@
 ---
-title: "How to: Hold Object Reference in Unmanaged Memory | Microsoft Docs"
+title: "How to: Hold Object Reference in Unmanaged Memory"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["object references, in native functions", "objects [C++], reference in native functions", "references, to objects in native functions", "gcroot keyword [C++], object reference in native function"]
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Hold Object Reference in Unmanaged Memory
 
@@ -90,6 +84,6 @@ int main() {
 StringWrapper::m_handle == ManagedString
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4957 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4957"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4957"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4957"]
 ms.assetid: a18c52d4-23e2-44f1-b4b5-f7fa5a7f3987
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4957
 
@@ -20,7 +13,7 @@ ms.workload: ["cplusplus"]
 
 A cast will result in an unverifiable image.
 
-Some casts are safe (for example, a `static_cast` that triggers user-defined conversions and a `const_cast`). A [safe_cast](../../windows/safe-cast-cpp-component-extensions.md) is guaranteed to produce verifiable code.
+Some casts are safe (for example, a `static_cast` that triggers user-defined conversions and a `const_cast`). A [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) is guaranteed to produce verifiable code.
 
 For more information, see [Pure and Verifiable Code (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 

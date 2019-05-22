@@ -1,15 +1,8 @@
 ---
-title: "Types of Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Types of Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lists [MFC], image", "image lists [MFC], types of", "CImageList class [MFC], types"]
 ms.assetid: bee5e7c3-78f5-4037-a136-9c50d67cdee5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Types of Image Lists
 
@@ -19,8 +12,7 @@ One of the overloads of the `Create` member function takes a flag to indicate wh
 
 When a nonmasked image is drawn, it is simply copied into the target device context; that is, it is drawn over the existing background color of the device context. When a masked image is drawn, the bits of the image are combined with the bits of the mask, typically producing transparent areas in the bitmap where the background color of the target device context shows through. You can specify several drawing styles when drawing a masked image. For example, you can specify that the image be dithered to indicate a selected object.
 
-## See Also
+## See also
 
 [Using CImageList](../mfc/using-cimagelist.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Messages and Commands in the Framework | Microsoft Docs"
-ms.custom: ""
+title: "Messages and Commands in the Framework"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["events [MFC], command routing in MFC", "event-driven programming [MFC]", "events [MFC], event-driven programming", "message-driven programming [MFC]"]
 ms.assetid: d799ed8c-6a9f-4f05-be5d-29cb5bc6d185
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Messages and Commands in the Framework
 
@@ -33,7 +26,6 @@ The following topics introduce the key terms used in the rest of the article fam
 
 - [Command targets](../mfc/command-targets.md)
 
-## See Also
+## See also
 
 [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-

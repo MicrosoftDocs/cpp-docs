@@ -1,16 +1,9 @@
 ---
-title: "Memory Allocation | Microsoft Docs"
-ms.custom: ""
+title: "Memory Allocation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.memory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory allocation, routines", "memory, managing", "memory, allocation"]
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Memory Allocation
 
@@ -49,6 +42,6 @@ Use these routines to allocate, free, and reallocate memory.
 |[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Enable error-handling mechanism when **new** operator fails (to allocate memory) and enable compilation of C++ Standard Libraries|
 |[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|Set new handler mode for **malloc**|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

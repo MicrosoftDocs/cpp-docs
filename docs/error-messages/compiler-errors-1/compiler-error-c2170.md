@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2170 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2170"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2170"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2170"]
 ms.assetid: d5c663f0-2459-4e11-a8bf-a52b62f3c71d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2170
 

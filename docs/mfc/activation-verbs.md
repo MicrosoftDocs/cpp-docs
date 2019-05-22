@@ -1,15 +1,8 @@
 ---
-title: "Activation: Verbs | Microsoft Docs"
-ms.custom: ""
+title: "Activation: Verbs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]", "activation [MFC], verbs", "OLE [MFC], editing", "Primary verb [MFC]", "OLE activation {MFC]"]
 ms.assetid: eb56ff23-1de8-43ad-abeb-dc7346ba7b70
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Activation: Verbs
 
@@ -27,9 +20,8 @@ Any verbs other than the primary verb must be invoked through a submenu command 
 
 The verbs a server application supports are listed in the Windows registration database. If your server application is written with the Microsoft Foundation Class Library, it will automatically register all verbs when the server is started. If not, you should register them during the server application's initialization phase. For more information, see the article [Registration](../mfc/registration.md).
 
-## See Also
+## See also
 
 [Activation](../mfc/activation-cpp.md)<br/>
 [Containers](../mfc/containers.md)<br/>
 [Servers](../mfc/servers.md)
-

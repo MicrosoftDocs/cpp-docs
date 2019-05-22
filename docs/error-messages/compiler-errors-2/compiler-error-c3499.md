@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3499 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3499"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3499"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3499"]
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3499
 
@@ -59,6 +52,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

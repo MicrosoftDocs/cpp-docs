@@ -1,16 +1,9 @@
 ---
-title: "Running LIB | Microsoft Docs"
-ms.custom: ""
+title: "Running LIB"
 ms.date: "09/28/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Running LIB
 
@@ -45,7 +38,7 @@ The following options apply to all modes of LIB:
 
 If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
 
-For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).
+For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
 > **/LTCG**
 
@@ -69,10 +62,10 @@ Displays details about the progress of the session, including names of the .obj 
 
 > **/WX**[**:NO**]
 
-Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](../../build/reference/wx-treat-linker-warnings-as-errors.md) for more information.
+Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](wx-treat-linker-warnings-as-errors.md) for more information.
 
 Other options apply only to specific modes of LIB. These options are discussed in the sections describing each mode.
 
-## See Also
+## See also
 
-[LIB Reference](../../build/reference/lib-reference.md)
+[LIB Reference](lib-reference.md)

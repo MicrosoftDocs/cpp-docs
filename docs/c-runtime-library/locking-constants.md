@@ -1,16 +1,9 @@
 ---
-title: "_locking Constants | Microsoft Docs"
-ms.custom: ""
+title: "_locking Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_LK_RLCK", "_LK_NBLCK", "_LK_LOCK", "_LK_NBRLCK", "_LK_UNLCK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LK_UNLCK constant", "LK_NBRLCK constant", "_LK_NBRLCK constant", "_LK_NBLCK constant", "_LK_LOCK constant", "LK_NBLCK constant", "_LK_UNLCK constant", "LK_RLCK constant", "_LK_RLCK constant", "LK_LOCK constant"]
 ms.assetid: c3dc92c8-60e3-4d29-9f50-5d217627c8ad
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _locking Constants
 
@@ -34,7 +27,7 @@ The *mode* argument must be one of the following manifest constants.
 | `_LK_NBRLCK`  | Same as `_LK_NBLCK`.  |
 | `_LK_UNLCK`  | Unlocks the specified bytes. (The bytes must have been previously locked.)  |
 
-## See Also
+## See also
 
 [_locking](../c-runtime-library/reference/locking.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)

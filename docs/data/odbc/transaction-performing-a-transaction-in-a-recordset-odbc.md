@@ -1,15 +1,8 @@
 ---
-title: "Transaction: Performing a Transaction in a Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction: Performing a Transaction in a Recordset (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["transactions, updating recordsets"]
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: Performing a Transaction in a Recordset (ODBC)
 
@@ -81,7 +74,7 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 > [!NOTE]
 >  Calling `BeginTrans` again without calling `CommitTrans` or `Rollback` is an error.
 
-## See Also
+## See also
 
 [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [Transaction: How Transactions Affect Updates (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)<br/>

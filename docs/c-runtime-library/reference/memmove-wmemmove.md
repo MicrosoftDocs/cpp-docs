@@ -1,19 +1,12 @@
 ---
-title: "memmove, wmemmove | Microsoft Docs"
-ms.custom: ""
+title: "memmove, wmemmove"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["memmove", "wmemmove"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["memmove", "wmemmove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wmemmove function", "memmove function"]
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # memmove, wmemmove
 

@@ -1,15 +1,8 @@
 ---
-title: "Creating a Rebar Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Rebar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rebar controls [MFC], creating", "CReBarCtrl class [MFC], creating"]
 ms.assetid: 0a012e08-772b-4f6a-af86-7cb651d11d3e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Rebar Control
 
@@ -33,8 +26,7 @@ To use a `CReBarCtrl` object, you will typically follow these steps:
 
 1. Call [InsertBand](../mfc/reference/crebarctrl-class.md#insertband) to insert existing child windows (such as `m_wndReToolBar`) into the new rebar control. For more information on inserting bands into an existing rebar control, see [Rebar Controls and Bands](../mfc/rebar-controls-and-bands.md).
 
-## See Also
+## See also
 
 [Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Object Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "Object Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::DECLARE_OBJECT_DESCRIPTION", "atlcom/ATL::OBJECT_ENTRY_AUTO", "atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO"]
-dev_langs: ["C++"]
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Object Map Macros
 
@@ -106,6 +99,6 @@ Object entry macros are placed at global scope in the project to provide support
 
 OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](#object_entry_auto) for more information), but it should not be creatable via `CoCreateInstance`.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

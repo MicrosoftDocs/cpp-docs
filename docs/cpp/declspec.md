@@ -1,15 +1,8 @@
 ---
-title: "__declspec | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/09/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "__declspec"
+ms.date: "03/21/2019"
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++]"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __declspec
 
@@ -29,6 +22,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 *extended-decl-modifier*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**align(** *#* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**allocate("** *segname* **")**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**allocator**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**appdomain**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**code_seg("** *segname* **")**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**deprecated**<br/>
@@ -52,7 +46,7 @@ The extended attribute syntax for specifying storage-class information uses the 
 
 White space separates the declaration modifier sequence. Examples appear in later sections.
 
-Extended attribute grammar supports these Microsoft-specific storage-class attributes: [align](../cpp/align-cpp.md), [allocate](../cpp/allocate.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [deprecated](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [process](../cpp/process.md), [restrict](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), and [thread](../cpp/thread.md). It also supports these COM-object attributes: [property](../cpp/property-cpp.md) and [uuid](../cpp/uuid-cpp.md).
+Extended attribute grammar supports these Microsoft-specific storage-class attributes: [align](../cpp/align-cpp.md), [allocate](../cpp/allocate.md), [allocator](../cpp/allocator.md), [appdomain](../cpp/appdomain.md), [code_seg](../cpp/code-seg-declspec.md), [deprecated](../cpp/deprecated-cpp.md), [dllexport](../cpp/dllexport-dllimport.md), [dllimport](../cpp/dllexport-dllimport.md), [jitintrinsic](../cpp/jitintrinsic.md), [naked](../cpp/naked-cpp.md), [noalias](../cpp/noalias.md), [noinline](../cpp/noinline.md), [noreturn](../cpp/noreturn.md), [nothrow](../cpp/nothrow-cpp.md), [novtable](../cpp/novtable.md), [process](../cpp/process.md), [restrict](../cpp/restrict.md), [safebuffers](../cpp/safebuffers.md), [selectany](../cpp/selectany.md), [spectre](../cpp/spectre.md), and [thread](../cpp/thread.md). It also supports these COM-object attributes: [property](../cpp/property-cpp.md) and [uuid](../cpp/uuid-cpp.md).
 
 The **code_seg**, **dllexport**, **dllimport**, **naked**, **noalias**, **nothrow**, **property**, **restrict**, **selectany**, **thread**, and **uuid** storage-class attributes are properties only of the declaration of the object or function to which they are applied. The **thread** attribute affects data and objects only. The **naked** and **spectre** attributes affect functions only. The **dllimport** and **dllexport** attributes affect functions, data, and objects. The **property**, **selectany**, and **uuid** attributes affect COM objects.
 

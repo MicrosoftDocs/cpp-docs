@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Window (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Window (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL, windows", "CWindowImpl class, using", "windows [C++], implementing in ATL"]
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing a Window
 
@@ -23,7 +16,6 @@ Class [CWindowImpl](../atl/reference/cwindowimpl-class.md) allows you to impleme
 
 - How to [implement a window with CWindowImpl](../atl/implementing-a-window-with-cwindowimpl.md).
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

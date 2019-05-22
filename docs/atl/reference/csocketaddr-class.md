@@ -1,16 +1,9 @@
 ---
-title: "CSocketAddr Class | Microsoft Docs"
-ms.custom: ""
+title: "CSocketAddr Class"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSocketAddr", "ATLSOCKET/ATL::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::CSocketAddr", "ATLSOCKET/ATL::CSocketAddr::FindAddr", "ATLSOCKET/ATL::CSocketAddr::FindINET4Addr", "ATLSOCKET/ATL::CSocketAddr::FindINET6Addr", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfo", "ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSocketAddr class"]
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSocketAddr Class
 
@@ -196,7 +189,7 @@ addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ### Parameters
 
 *nIndex*<br/>
-A reference to a specific element in the [addrinfo](https://msdn.microsoft.com/library/windows/desktop/ms737530) list.
+A reference to a specific element in the [addrinfo](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa) list.
 
 ### Return Value
 
@@ -212,8 +205,8 @@ addrinfo* const GetAddrInfoList() const;
 
 ### Return Value
 
-Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](https://msdn.microsoft.com/library/windows/desktop/ms737530).
+Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

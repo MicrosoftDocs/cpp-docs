@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3923 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3923"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3923"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3923"]
 ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3923
 

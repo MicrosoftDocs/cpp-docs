@@ -1,22 +1,15 @@
 ---
-title: "_InterlockedIncrement Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "_InterlockedIncrement Intrinsic Functions"
+ms.date: "12/17/2018" 
 f1_keywords: ["_InterlockedIncrement_acq", "_InterlockedIncrement16_rel_cpp", "_InterlockedIncrement16_cpp", "_InterlockedIncrement64_rel", "_InterlockedIncrement_rel", "_InterlockedIncrement64_nf", "_InterlockedIncrement16_acq_cpp", "_InterlockedIncrement_rel_cpp", "_InterlockedIncrement64", "_InterlockedIncrement64_rel_cpp", "_InterlockedIncrement16_nf", "_InterlockedIncrement16_rel", "_InterlockedIncrement16_acq", "_InterlockedIncrement_nf", "_InterlockedIncrement_acq_cpp", "_InterlockedIncrement64_cpp", "_InterlockedIncrement64_acq_cpp", "_InterlockedIncrement", "_InterlockedIncrement_cpp", "_InterlockedIncrement64_acq", "_InterlockedIncrement16"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedIncrement64_rel intrinsic", "_InterlockedIncrement16_rel intrinsic", "InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16 intrinsic", "_InterlockedIncrement16_acq intrinsic", "_InterlockedIncrement_nf intrinsic", "_InterlockedIncrement_rel intrinsic", "_InterlockedIncrement64_nf intrinsic", "InterlockedIncrement_rel intrinsic", "InterlockedIncrement_acq intrinsic", "_InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16_nf intrinsic", "_InterlockedIncrement intrinsic", "_InterlockedIncrement64 intrinsic", "InterlockedIncrement64_rel intrinsic", "InterlockedIncrement64 intrinsic", "InterlockedIncrement16 intrinsic", "_InterlockedIncrement_acq intrinsic", "InterlockedIncrement intrinsic"]
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedIncrement Intrinsic Functions
 
 **Microsoft Specific**
 
-Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) function.
 
 ## Syntax
 
@@ -95,8 +88,8 @@ For a sample of how to use `_InterlockedIncrement`, see [_InterlockedDecrement](
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -1,16 +1,9 @@
 ---
-title: "Simplifying Data Access with Database Attributes | Microsoft Docs"
-ms.custom: ""
+title: "Simplifying Data Access with Database Attributes"
 ms.date: "10/19/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Simplifying Data Access with Database Attributes
 
@@ -193,6 +186,6 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 };
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4481 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4481"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4481"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4481"]
 ms.assetid: 7bfd4e0c-b452-4e6c-b7c4-ac5cc93fe4ea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4481
 
@@ -20,7 +13,7 @@ A keyword was used that is not in the C++ standard, for example, one of the over
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md)
+- [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md)
 
 ## Example
 

@@ -1,14 +1,8 @@
 ---
-title: "&lt;memory&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;memory&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;memory&gt; operators
 
@@ -112,7 +106,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -225,7 +218,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -408,7 +400,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

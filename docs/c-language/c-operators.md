@@ -1,15 +1,8 @@
 ---
-title: "C Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Operators"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ternary operators", "operators [C]", "symbols, operators", "binary operators", "associativity of operators", "binary data, binary expressions"]
 ms.assetid: 13bc4c8e-2dc9-4b23-9f3a-25064e8777ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Operators
 

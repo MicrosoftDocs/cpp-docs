@@ -1,15 +1,8 @@
 ---
-title: "Message Sending and Receiving | Microsoft Docs"
-ms.custom: ""
+title: "Message Sending and Receiving"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Sending and Receiving
 
@@ -27,7 +20,6 @@ Each object capable of receiving messages or commands has its own message map th
 
 When a command-target object receives a message or command, it searches its message map for a match. If it finds a handler for the message, it calls the handler. For more information about how message maps are searched, see [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md). Refer again to the figure [Commands in the Framework](../mfc/user-interface-objects-and-command-ids.md).
 
-## See Also
+## See also
 
 [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-

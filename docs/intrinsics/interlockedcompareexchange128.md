@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedCompareExchange128 | Microsoft Docs"
-ms.custom: ""
+title: "_InterlockedCompareExchange128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange128
 
@@ -124,8 +117,8 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [_InterlockedCompareExchange Intrinsic Functions](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

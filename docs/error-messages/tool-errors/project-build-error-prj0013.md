@@ -1,16 +1,9 @@
 ---
-title: "Project Build Error PRJ0013 | Microsoft Docs"
-ms.custom: ""
+title: "Project Build Error PRJ0013"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PRJ0013"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PRJ0013"]
 ms.assetid: 95e7bafd-63c8-4b2d-b778-f19cdf9ba36c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Project Build Error PRJ0013
 

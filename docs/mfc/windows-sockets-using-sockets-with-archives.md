@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Using Sockets with Archives | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Using Sockets with Archives"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows Sockets [MFC], archives", "sockets [MFC], with archives", "archives [MFC], and Windows Sockets", "CSocket class [MFC], programming model"]
 ms.assetid: 17e71a99-a09e-4e1a-9fda-13d62805c824
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Using Sockets with Archives
 
@@ -75,8 +68,7 @@ For more information, see:
 
 - [Windows Sockets: Datagram Sockets](../mfc/windows-sockets-datagram-sockets.md)
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [CSocket::Create](../mfc/reference/csocket-class.md#create)
-

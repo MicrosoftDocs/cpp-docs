@@ -1,19 +1,12 @@
 ---
-title: "cabs, cabsf, cabsl | Microsoft Docs"
-ms.custom: ""
+title: "cabs, cabsf, cabsl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["cabs", "cabsf", "cabsl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["cabs", "cabsf", "cabsl", "complex/cabs", "complex/cabsf", "complex/cabsl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cabs function", "cabsf function", "cabsl function"]
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # cabs, cabsf, cabsl
 

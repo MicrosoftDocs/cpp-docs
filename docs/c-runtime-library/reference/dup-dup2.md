@@ -1,19 +1,12 @@
 ---
-title: "_dup, _dup2 | Microsoft Docs"
-ms.custom: ""
+title: "_dup, _dup2"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_dup", "_dup2"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_dup2", "_dup"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_dup2 function", "dup function", "file handles [C++], duplicating", "file handles [C++], reassigning", "dup2 function", "_dup function"]
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _dup, _dup2
 

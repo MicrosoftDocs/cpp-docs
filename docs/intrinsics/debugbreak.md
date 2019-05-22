@@ -1,16 +1,9 @@
 ---
-title: "__debugbreak | Microsoft Docs"
-ms.custom: ""
+title: "__debugbreak"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__debugbreak_cpp", "__debugbreak"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["breakpoints, __debugbreak intrinsic", "__debugbreak intrinsic"]
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __debugbreak
 
@@ -28,7 +21,7 @@ void __debugbreak();
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`__debugbreak`|x86, ARM, x64|\<intrin.h>|
+|`__debugbreak`|x86, x64, ARM, ARM64|\<intrin.h>|
 
 ## Remarks
 
@@ -61,7 +54,7 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1099 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1099"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1099"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1099"]
 ms.assetid: c050b074-a06a-4026-9e10-569029cc0739
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1099
 

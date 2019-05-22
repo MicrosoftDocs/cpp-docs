@@ -1,19 +1,12 @@
 ---
-title: "_putch, _putwch | Microsoft Docs"
-ms.custom: ""
+title: "_putch, _putwch"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_putwch", "_putch"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_putch", "putwch", "_putwch"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_putch function", "characters, writing", "putwch function", "_putwch function", "putch function", "console, writing characters to"]
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _putch, _putwch
 
@@ -26,10 +19,11 @@ Writes a character to the console.
 
 ```C
 int _putch(
-int c
+   int c
 );
+
 wint_t _putwch(
-   wchar_t c
+   wchar_t c
 );
 ```
 

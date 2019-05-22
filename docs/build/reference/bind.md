@@ -1,16 +1,9 @@
 ---
-title: "-BIND | Microsoft Docs"
-ms.custom: ""
+title: "/BIND"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/bind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-BIND editbin option", "entry points, addresses", "BIND editbin option", "entry points", "/BIND editbin option", "import address table"]
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /BIND
 
@@ -26,6 +19,6 @@ Specify the program's executable file and DLLs in the *files* argument on the ED
 
 By default, the program loader sets the addresses of entry points when it loads a program. The amount of time this process takes varies, depending on the number of DLLs and the number of entry points referenced in the program. If a program has been modified with /BIND, and if the base addresses for the executable file and its DLLs do not conflict with DLLs that are already loaded, the operating system does not need to set these addresses. In a situation where the files are incorrectly based, the operating system relocates the program's DLLs and recalculates the entry-point addresses, which adds to the program's load time.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

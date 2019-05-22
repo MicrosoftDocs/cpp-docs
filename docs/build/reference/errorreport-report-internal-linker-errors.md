@@ -1,16 +1,9 @@
 ---
-title: "-ERRORREPORT (Report Internal Linker Errors) | Microsoft Docs"
-ms.custom: ""
+title: "/ERRORREPORT (Report Internal Linker Errors)"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/ERRORREPORT", "VC.Project.VCLinkerTool.ErrorReporting"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/ERRORREPORT linker option", "ERRORREPORT linker option", "-ERRORREPORT linker option"]
 ms.assetid: f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ERRORREPORT (Report Internal Linker Errors)
 
@@ -38,7 +31,7 @@ The option **/errorreport:send** automatically sends error information to Micros
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Open the **Configuration Properties** > **Linker** > **Advanced** property page.
 
@@ -50,6 +43,6 @@ The option **/errorreport:send** automatically sends error information to Micros
 
 ## See also
 
-[/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md)<br/>
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md)<br/>
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

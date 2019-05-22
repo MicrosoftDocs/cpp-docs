@@ -1,16 +1,9 @@
 ---
-title: "cpp_quote (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "cpp_quote (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.cpp_quote"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cpp_quote attribute"]
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # cpp_quote
 
@@ -52,7 +45,7 @@ See the example for [dual](dual.md) for an example use how to use **cpp_quote**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Stand-Alone Attributes](stand-alone-attributes.md)

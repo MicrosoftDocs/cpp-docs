@@ -1,15 +1,8 @@
 ---
-title: "Basic CString Operations | Microsoft Docs"
-ms.custom: ""
+title: "Basic CString Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Basic CString Operations
 
@@ -86,19 +79,17 @@ For information about converting CString objects to other string types, see [How
 
 To use a CString with `wcout` you must explicitly cast the object to a `const wchar_t*` as shown in the following example:
 
-```
+```cpp
 CString cs("meow");
 
-    wcout <<(const wchar_t*) cs <<endl;
-
+wcout << (const wchar_t*) cs << endl;
 ```
 
 Without the cast, `cs` is treated as a `void*` and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [Template Specialization](../cpp/template-specialization-cpp.md)<br/>
 [How to: Convert Between Various String Types](../text/how-to-convert-between-various-string-types.md)
-

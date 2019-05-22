@@ -1,15 +1,8 @@
 ---
-title: "Link an executable to a DLL | Microsoft Docs"
-ms.custom: ""
+title: "Link an executable to a DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["run time [C++], linking", "dynamic load linking [C++]", "linking [C++], DLLs", "DLLs [C++], linking", "implicit linking [C++]", "explicit linking [C++]", "executable files [C++], linking to DLLs", "loading DLLs [C++]"]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Link an executable to a DLL
 
@@ -23,7 +16,7 @@ An executable can use either linking method to link to the same DLL. Furthermore
 
 <a name="determining-which-linking-method-to-use"></a>
 
-## Determine which linking method to use
+## Link an executable to a DLL
 
 Whether to use implicit linking or explicit linking is an architectural decision you must make for your application. There are advantages and disadvantages to each method.
 
@@ -63,13 +56,13 @@ Here are two hazards of explicit linking to be aware of:
 
 <a name="linking-implicitly"></a>
 
-## How to link implicitly to a DLL
+## Link an executable to a DLL
 
 To use a DLL by implicit linking, client executables must obtain these files from the provider of the DLL:
 
 - One or more header files (.h files) that contain the declarations of the exported data, functions and/or C++ classes in the DLL. The classes, functions, and data exported by the DLL must all be marked `__declspec(dllimport)` in the header file. For more information, see [dllexport, dllimport](../cpp/dllexport-dllimport.md).
 
-- An import library to link into your executable. The linker creates the import library when the DLL is built. For more information, see [.LIB files](../build/reference/dot-lib-files-as-linker-input.md).
+- An import library to link into your executable. The linker creates the import library when the DLL is built. For more information, see [.LIB files](reference/dot-lib-files-as-linker-input.md).
 
 - The actual DLL file.
 
@@ -132,10 +125,10 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
 
 ## What do you want to know more about?
 
-- [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)
+- [Working with Import Libraries and Export Files](reference/working-with-import-libraries-and-export-files.md)
 
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

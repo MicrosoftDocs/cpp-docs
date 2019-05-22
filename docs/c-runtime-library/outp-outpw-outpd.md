@@ -1,19 +1,12 @@
 ---
-title: "_outp, _outpw, _outpd | Microsoft Docs"
-ms.custom: ""
+title: "_outp, _outpw, _outpd"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_outpd", "_outp", "_outpw"]
 apilocation: ["msvcrt.dll", "msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_outpw", "_outpd", "_outp", "outpd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["outpw function", "words", "_outpd function", "outpd function", "outp function", "ports, writing bytes at", "bytes, writing to ports", "words, writing to ports", "double words", "double words, writing to ports", "_outpw function", "_outp function"]
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _outp, _outpw, _outpd
 
@@ -74,7 +67,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).
 
-## See Also
+## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)

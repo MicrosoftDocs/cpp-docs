@@ -1,15 +1,8 @@
 ---
-title: "Null Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "Null Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["semicolon, C null statement", "expressions [C++], null", "null statement", "null values, expressions"]
 ms.assetid: 72576ce6-26d0-4379-be65-fee522088790
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Null Statement (C)
 
@@ -34,6 +27,6 @@ for ( i = 0; i < 10; line[i++] = 0 )
 
 In this example, the loop expression of the **for** statement `line[i++] = 0` initializes the first 10 elements of `line` to 0. The statement body is a null statement, since no further statements are necessary.
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

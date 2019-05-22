@@ -1,16 +1,9 @@
 ---
-title: "Recommendations for Choosing Between Functions and Macros | Microsoft Docs"
-ms.custom: ""
+title: "Recommendations for Choosing Between Functions and Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.functions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [CRT], vs. macros", "macros, vs. functions"]
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing Between Functions and Macros
 
@@ -40,6 +33,6 @@ If you need to choose between a function and a macro implementation of a library
 
 - **Type-checking** When you declare a function, the compiler can check the argument types. Because you cannot declare a macro, the compiler cannot check macro argument types; although it can check the number of arguments you pass to a macro.
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

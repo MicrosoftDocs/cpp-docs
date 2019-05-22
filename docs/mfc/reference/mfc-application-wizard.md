@@ -1,23 +1,16 @@
 ---
-title: "MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard", "executable files, creating"]
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC Application Wizard
 
 The MFC Application Wizard generates an application that, when compiled, implements the basic features of a Windows executable (.exe) application. The MFC starter application includes C++ source (.cpp) files, resource (.rc) files, header (.h) files, and a project (.vcxproj) file. The code that is generated in these starter files is based on MFC.
 
 > [!NOTE]
->  Depending on the options that you select, the wizard creates additional files in your project. For example, if you select **Context-sensitive help** on the [Advanced Features](../../mfc/reference/advanced-features-mfc-application-wizard.md) page, the wizard creates the files that are necessary to compile the project's Help files. For more information about the files that the wizard creates, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md), and see the Readme.txt file in the project.
+>  Depending on the options that you select, the wizard creates additional files in your project. For example, if you select **Context-sensitive help** on the [Advanced Features](../../mfc/reference/advanced-features-mfc-application-wizard.md) page, the wizard creates the files that are necessary to compile the project's Help files. For more information about the files that the wizard creates, see [File Types Created for Visual Studio C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md), and see the Readme.txt file in the project.
 
 ## Overview
 
@@ -33,7 +26,7 @@ This wizard page describes the current application settings for the MFC applicat
 
    - The project is created using the Visual Studio project style and enables visual style switching.
 
-   - The project uses MFC in a shared DLL. For more information, see [DLLs in Visual C++](../../build/dlls-in-visual-cpp.md).
+   - The project uses MFC in a shared DLL. For more information, see [Create C/C++ DLLs in Visual Studio](../../build/dlls-in-visual-cpp.md).
 
 - [Compound Document Support, MFC Application Wizard](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 
@@ -59,7 +52,7 @@ This wizard page describes the current application settings for the MFC applicat
 
    - The project provides no support for [Automation](../../mfc/automation.md), [MAPI](../../mfc/mapi-support-in-mfc.md), [Windows Sockets](../../mfc/windows-sockets-in-mfc.md), or Active Accessibility.
 
-   - The project supports an **Explorer** docking pane, an **Ouput** docking pane, and a **Properties** docking pane.
+   - The project supports an **Explorer** docking pane, an **Output** docking pane, and a **Properties** docking pane.
 
 - [Generated Classes, MFC Application Wizard](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
@@ -77,7 +70,7 @@ To change these default settings, click the appropriate tab title in the left co
 
 After you create an MFC application project, you can add objects or controls to your project using Visual C++ [code wizards](../../ide/adding-functionality-with-code-wizards-cpp.md).
 
-## See Also
+## See also
 
 [Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md)<br/>
 [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "C++ Bit Fields | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
+title: "C++ Bit Fields"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["bitfields [C++]", "fields [C++], bit", "bit fields"]
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Bit Fields
 
@@ -41,7 +34,7 @@ struct Date {
 
 The conceptual memory layout of an object of type `Date` is shown in the following figure.
 
-![Memory layout of a date object](../cpp/media/vc38uq1.png "vc38UQ1")
+![Memory layout of a date object](../cpp/media/vc38uq1.png "Memory layout of a date object") <br/>
 Memory Layout of Date Object
 
 Note that `nYear` is 8 bits long and would overflow the word boundary of the declared type, **unsigned** **short**. Therefore, it is begun at the beginning of a new **unsigned** **short**. It is not necessary that all bit fields fit in one object of the underlying type; new units of storage are allocated, according to the number of bits requested in the declaration.
@@ -68,7 +61,7 @@ struct Date {
 
 then the memory layout is as shown in the following figure:
 
-![Layout of Date object with zero&#45;length bit field](../cpp/media/vc38uq2.png "vc38UQ2")
+![Layout of Date object with zero&#45;length bit field](../cpp/media/vc38uq2.png "Layout of Date object with zero&#45;length bit field") <br/>
 Layout of Date Object with Zero-Length Bit Field
 
 The underlying type of a bit field must be an integral type, as described in [Fundamental Types](../cpp/fundamental-types-cpp.md).

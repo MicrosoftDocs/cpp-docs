@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3372 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3372"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3372"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3372"]
 ms.assetid: 38ee39ed-03ff-4e6d-9104-f1977b96645d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3372
 

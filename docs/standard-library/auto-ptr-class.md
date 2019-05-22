@@ -1,16 +1,9 @@
 ---
-title: "auto_ptr Class | Microsoft Docs"
-ms.custom: ""
+title: "auto_ptr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::auto_ptr [C++]", "std::auto_ptr [C++], element_type", "std::auto_ptr [C++], get", "std::auto_ptr [C++], release", "std::auto_ptr [C++], reset"]
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # auto_ptr Class
 
@@ -273,11 +266,11 @@ An object of type `auto_ptr`.
 
 ### Return Value
 
-A reference to an object of type `auto_ptr`\< **Type**>.
+A reference to an object of type `auto_ptr<Type>`.
 
 ### Remarks
 
-The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in _ *Right*, by storing \_ *Right*. [release](#release) in `myptr`. The function returns **\*this**.
+The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in *right*, by storing *right*.[release](#release) in `myptr`. The function returns __\*this__.
 
 ### Example
 

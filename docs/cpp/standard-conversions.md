@@ -1,15 +1,8 @@
 ---
-title: "Standard Conversions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
+title: "Standard Conversions"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Conversions
 
@@ -187,7 +180,7 @@ The first case is when the specified base class is accessible and the conversion
 
 Whether a base class is accessible depends on the kind of inheritance used in derivation. Consider the inheritance illustrated in the following figure.
 
-![Inheritance graph showing base&#45;class accessibility](../cpp/media/vc38xa1.gif "vc38XA1")
+![Inheritance graph showing base&#45;class accessibility](../cpp/media/vc38xa1.gif "Inheritance graph showing base&#45;class accessibility") <br/>
 Inheritance Graph for Illustration of Base-Class Accessibility
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.

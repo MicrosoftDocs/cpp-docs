@@ -1,16 +1,9 @@
 ---
-title: "goto Statement (C++) | Microsoft Docs"
-ms.custom: ""
+title: "goto Statement (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["goto_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["goto keyword [C++]"]
 ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # goto Statement (C++)
 

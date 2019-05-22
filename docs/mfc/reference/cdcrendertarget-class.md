@@ -1,16 +1,9 @@
 ---
-title: "CDCRenderTarget Class | Microsoft Docs"
-ms.custom: ""
+title: "CDCRenderTarget Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::Attach", "AFXRENDERTARGET/CDCRenderTarget::BindDC", "AFXRENDERTARGET/CDCRenderTarget::Create", "AFXRENDERTARGET/CDCRenderTarget::Detach", "AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDCRenderTarget [MFC], CDCRenderTarget", "CDCRenderTarget [MFC], Attach", "CDCRenderTarget [MFC], BindDC", "CDCRenderTarget [MFC], Create", "CDCRenderTarget [MFC], Detach", "CDCRenderTarget [MFC], GetDCRenderTarget", "CDCRenderTarget [MFC], m_pDCRenderTarget"]
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDCRenderTarget Class
 
@@ -168,6 +161,6 @@ operator ID2D1DCRenderTarget*();
 
 Pointer to an ID2D1DCRenderTarget interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

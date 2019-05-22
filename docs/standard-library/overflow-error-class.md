@@ -1,16 +1,9 @@
 ---
-title: "overflow_error Class | Microsoft Docs"
-ms.custom: ""
+title: "overflow_error Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["stdexcept/std::overflow_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["overflow_error class"]
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # overflow_error Class
 

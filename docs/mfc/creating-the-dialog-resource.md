@@ -1,15 +1,8 @@
 ---
-title: "Creating the Dialog Resource | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Dialog Resource"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog resources", "MFC dialog boxes [MFC], creating", "dialog templates [MFC], creating dialog resource", "templates [MFC], creating", "resources [MFC], creating dialog boxes", "MFC dialog boxes [MFC], dialog resource"]
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Dialog Resource
 
@@ -27,8 +20,7 @@ When you finish, your dialog-template resource is stored in your application's r
 
 When the dialog box's appearance suits you, create a dialog class and map its messages, as discussed in [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md).
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

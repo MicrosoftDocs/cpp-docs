@@ -1,16 +1,9 @@
 ---
-title: "CAnimationController Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CAnimationController Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController::CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController::AddAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::AddKeyframeToGroup", "AFXANIMATIONCONTROLLER/CAnimationController::AnimateGroup", "AFXANIMATIONCONTROLLER/CAnimationController::CleanUpGroup", "AFXANIMATIONCONTROLLER/CAnimationController::CreateKeyframe", "AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationManagerEvent", "AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationController::EnablePriorityComparisonHandler", "AFXANIMATIONCONTROLLER/CAnimationController::EnableStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::GetKeyframeStoryboardStart", "AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationTimer", "AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionFactory", "AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionLibrary", "AFXANIMATIONCONTROLLER/CAnimationController::IsAnimationInProgress", "AFXANIMATIONCONTROLLER/CAnimationController::IsValid", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationIntegerValueChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationManagerStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationValueChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnBeforeAnimationStart", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCancel", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCompress", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityConclude", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityTrim", "AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardUpdated", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAllAnimationGroups", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveTransitions", "AFXANIMATIONCONTROLLER/CAnimationController::ScheduleGroup", "AFXANIMATIONCONTROLLER/CAnimationController::SetRelatedWnd", "AFXANIMATIONCONTROLLER/CAnimationController::UpdateAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::OnAfterSchedule", "AFXANIMATIONCONTROLLER/CAnimationController::gkeyframeStoryboardStart", "AFXANIMATIONCONTROLLER/CAnimationController::m_bIsValid", "AFXANIMATIONCONTROLLER/CAnimationController::m_lstAnimationGroups", "AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationTimer", "AFXANIMATIONCONTROLLER/CAnimationController::m_pRelatedWnd", "AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionFactory", "AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionLibrary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationController [MFC], CAnimationController", "CAnimationController [MFC], AddAnimationObject", "CAnimationController [MFC], AddKeyframeToGroup", "CAnimationController [MFC], AnimateGroup", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], CreateKeyframe", "CAnimationController [MFC], EnableAnimationManagerEvent", "CAnimationController [MFC], EnableAnimationTimerEventHandler", "CAnimationController [MFC], EnablePriorityComparisonHandler", "CAnimationController [MFC], EnableStoryboardEventHandler", "CAnimationController [MFC], FindAnimationGroup", "CAnimationController [MFC], FindAnimationObject", "CAnimationController [MFC], GetKeyframeStoryboardStart", "CAnimationController [MFC], GetUIAnimationManager", "CAnimationController [MFC], GetUIAnimationTimer", "CAnimationController [MFC], GetUITransitionFactory", "CAnimationController [MFC], GetUITransitionLibrary", "CAnimationController [MFC], IsAnimationInProgress", "CAnimationController [MFC], IsValid", "CAnimationController [MFC], OnAnimationIntegerValueChanged", "CAnimationController [MFC], OnAnimationManagerStatusChanged", "CAnimationController [MFC], OnAnimationTimerPostUpdate", "CAnimationController [MFC], OnAnimationTimerPreUpdate", "CAnimationController [MFC], OnAnimationTimerRenderingTooSlow", "CAnimationController [MFC], OnAnimationValueChanged", "CAnimationController [MFC], OnBeforeAnimationStart", "CAnimationController [MFC], OnHasPriorityCancel", "CAnimationController [MFC], OnHasPriorityCompress", "CAnimationController [MFC], OnHasPriorityConclude", "CAnimationController [MFC], OnHasPriorityTrim", "CAnimationController [MFC], OnStoryboardStatusChanged", "CAnimationController [MFC], OnStoryboardUpdated", "CAnimationController [MFC], RemoveAllAnimationGroups", "CAnimationController [MFC], RemoveAnimationGroup", "CAnimationController [MFC], RemoveAnimationObject", "CAnimationController [MFC], RemoveTransitions", "CAnimationController [MFC], ScheduleGroup", "CAnimationController [MFC], SetRelatedWnd", "CAnimationController [MFC], UpdateAnimationManager", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], OnAfterSchedule", "CAnimationController [MFC], gkeyframeStoryboardStart", "CAnimationController [MFC], m_bIsValid", "CAnimationController [MFC], m_lstAnimationGroups", "CAnimationController [MFC], m_pAnimationManager", "CAnimationController [MFC], m_pAnimationTimer", "CAnimationController [MFC], m_pRelatedWnd", "CAnimationController [MFC], m_pTransitionFactory", "CAnimationController [MFC], m_pTransitionLibrary"]
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationController Class
 
@@ -29,7 +22,7 @@ class CAnimationController : public CObject;
 |Name|Description|
 |----------|-----------------|
 |[CAnimationController::CAnimationController](#canimationcontroller)|Constructs an animation controller.|
-|[CAnimationController::~CAnimationController](#canimationcontroller__~canimationcontroller)|The destructor. Called when animation controller object is being destroyed.|
+|[CAnimationController::~CAnimationController](#_dtorcanimationcontroller)|The destructor. Called when animation controller object is being destroyed.|
 
 ### Public Methods
 
@@ -42,7 +35,7 @@ class CAnimationController : public CObject;
 |[CAnimationController::CreateKeyframe](#createkeyframe)|Overloaded. Creates a keyframe that depends on transition and adds it to the specified group.|
 |[CAnimationController::EnableAnimationManagerEvent](#enableanimationmanagerevent)|Sets or releases a handler to call when animation manager's status changes.|
 |[CAnimationController::EnableAnimationTimerEventHandler](#enableanimationtimereventhandler)|Sets or releases a handler for timing events and handler for timing updates.|
-|[CAnimationController::EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be cancelled, concluded, trimmed or compressed.|
+|[CAnimationController::EnablePriorityComparisonHandler](#enableprioritycomparisonhandler)|Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be canceled, concluded, trimmed or compressed.|
 |[CAnimationController::EnableStoryboardEventHandler](#enablestoryboardeventhandler)|Sets or releases a handler for storyboard status and update events.|
 |[CAnimationController::FindAnimationGroup](#findanimationgroup)|Overloaded. Finds an animation group by its storyboard.|
 |[CAnimationController::FindAnimationObject](#findanimationobject)|Finds animation object containing a specified animation variable.|
@@ -304,7 +297,7 @@ When the handlers are set (enabled) Windows Animation API calls OnAnimationTimer
 
 ##  <a name="enableprioritycomparisonhandler"></a>  CAnimationController::EnablePriorityComparisonHandler
 
-Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be cancelled, concluded, trimmed or compressed.
+Sets or releases the priority comparison handler to call to determine whether a scheduled storyboard can be canceled, concluded, trimmed or compressed.
 
 ```
 virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
@@ -773,7 +766,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress
 
@@ -803,7 +796,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude
 
@@ -833,7 +826,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim
 
@@ -863,7 +856,7 @@ Should return TRUE if storyboard owned by pGroupNew has priority. Should return 
 
 ### Remarks
 
-This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](https://msdn.microsoft.com/library/dd371759).
+This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about [Conflict Management](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority).
 
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged
 
@@ -1031,6 +1024,6 @@ virtual void UpdateAnimationManager();
 
 Calling this method advances the animation manager to current time, changing statuses of storyboards as necessary and updating any animation variables to appropriate interpolated values. Internally this method calls IUIAnimationTimer::GetTime(timeNow) and IUIAnimationManager::Update(timeNow). Override this method in a derived class to customize this behavior.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4803 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4803"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4803"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4803"]
 ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4803
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 Event methods must have the same storage class as the event declaration. The compiler adjusts the event's methods so that the storage classes are the same.
 
-This warning can occur if you have a class that implements an event from an interface. The compiler does not implicitly generate a raise method for an event in an interface. When you implement that interface in a class, the compiler does implicitly generate a raise method and that method will not be virtual, hence the warning. For more information on events, see [event](../../windows/event-cpp-component-extensions.md).
+This warning can occur if you have a class that implements an event from an interface. The compiler does not implicitly generate a raise method for an event in an interface. When you implement that interface in a class, the compiler does implicitly generate a raise method and that method will not be virtual, hence the warning. For more information on events, see [event](../../extensions/event-cpp-component-extensions.md).
 
 See [warning](../../preprocessor/warning.md) pragma for information on how to turn a warning off.
 

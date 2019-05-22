@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Using join to Prevent Deadlock | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Using join to Prevent Deadlock"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Using join to Prevent Deadlock
 
@@ -45,7 +38,7 @@ This walkthrough contains the following sections:
 
 The dining philosophers problem illustrates how deadlock occurs in an application. In this problem, five philosophers sit at a round table. Every philosopher alternates between thinking and eating. Every philosopher must share a chopstick with the neighbor to the left and another chopstick with the neighbor to the right. The following illustration shows this layout.
 
-![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")
+![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "The Dining Philosophers Problem")
 
 To eat, a philosopher must hold two chopsticks. If every philosopher holds just one chopstick and is waiting for another one, then no philosopher can eat and all starve.
 
@@ -149,7 +142,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime Walkthroughs](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>

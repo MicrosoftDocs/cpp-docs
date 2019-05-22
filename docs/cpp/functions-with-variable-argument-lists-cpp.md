@@ -1,15 +1,8 @@
 ---
-title: "Functions with Variable Argument Lists  (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Functions with Variable Argument Lists  (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], variable number of", "variable argument lists", "declarators, functions", "argument lists [C++], variable number of", "declaring functions [C++], variables", "function calls, variable number of arguments"]
 ms.assetid: 27c2f83a-21dd-44c6-913c-2834cb944703
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Functions with Variable Argument Lists  (C++)
 

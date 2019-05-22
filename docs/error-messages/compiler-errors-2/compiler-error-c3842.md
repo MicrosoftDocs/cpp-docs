@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3842 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3842"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3842"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3842"]
 ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3842
 

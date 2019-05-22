@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2873 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2873"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2873"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2873"]
 ms.assetid: 7a10036b-400e-4364-bd2f-dcd7370c5e28
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2873
 

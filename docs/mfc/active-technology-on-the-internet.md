@@ -1,22 +1,15 @@
 ---
-title: "Active Technology on the Internet | Microsoft Docs"
-ms.custom: ""
+title: "Active Technology on the Internet"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet applications [MFC], Active technology"]
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Technology on the Internet
 
 Active technology is an open platform that lets developers create exciting, dynamic content and applications for the global Internet, or for a company's internal network, known as an intranet. The major technologies provided by Microsoft for Internet programming are described below.
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ## ActiveX Controls
 
@@ -34,9 +27,8 @@ VBScript and other scripting languages connect controls and add interactive func
 
 HTML extensions, such as the object tag, have been added to support controls and scripting.
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)<br/>
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
-

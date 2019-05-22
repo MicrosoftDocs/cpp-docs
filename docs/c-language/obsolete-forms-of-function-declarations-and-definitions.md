@@ -1,15 +1,8 @@
 ---
-title: "Obsolete Forms of Function Declarations and Definitions | Microsoft Docs"
-ms.custom: ""
+title: "Obsolete Forms of Function Declarations and Definitions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["old style function declarations"]
 ms.assetid: 67c5038f-0529-4f29-9d0f-c27580977b50
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Obsolete Forms of Function Declarations and Definitions
 
@@ -49,6 +42,6 @@ Old-style function declarations also generate warnings if you subsequently decla
 
 The next section, [C Function Definitions](../c-language/c-function-definitions.md), shows the syntax for function definitions, including the old-style syntax. The nonterminal for the list of parameters in the old-style syntax is *identifier-list*.
 
-## See Also
+## See also
 
 [Overview of Functions](../c-language/overview-of-functions.md)

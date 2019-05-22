@@ -1,15 +1,8 @@
 ---
-title: "Character Formatting in Rich Edit Controls | Microsoft Docs"
-ms.custom: ""
+title: "Character Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["formatting [MFC], characters", "rich edit controls [MFC], character formatting in", "CRichEditCtrl class [MFC], character formatting in"]
 ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Character Formatting in Rich Edit Controls
 
@@ -23,8 +16,7 @@ The "protected" character attribute does not change the appearance of text. If t
 
 Foreground color is a character attribute, but background color is a property of the rich edit control. To set the background color, use the [SetBackgroundColor](../mfc/reference/cricheditctrl-class.md#setbackgroundcolor) member function.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,19 +1,12 @@
 ---
-title: "_get_current_locale | Microsoft Docs"
-ms.custom: ""
+title: "_get_current_locale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_get_current_locale"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["get_current_locale", "__get_current_locale", "_get_current_locale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["get_current_locale function", "_get_current_locale function", "locales, getting information on", "__get_current_locale function"]
 ms.assetid: 572217f2-a37a-4105-a293-a250b4fabd99
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_current_locale
 

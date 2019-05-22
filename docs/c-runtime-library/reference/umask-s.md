@@ -1,19 +1,12 @@
 ---
-title: "_umask_s | Microsoft Docs"
-ms.custom: ""
+title: "_umask_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_umask_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["unmask_s", "_umask_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["masks, file-permission-setting", "_umask_s function", "masks", "file permissions [C++]", "umask_s function", "files [C++], permission settings for"]
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _umask_s
 

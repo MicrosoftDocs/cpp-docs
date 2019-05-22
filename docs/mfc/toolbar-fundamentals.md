@@ -1,16 +1,9 @@
 ---
-title: "Toolbar Fundamentals | Microsoft Docs"
-ms.custom: ""
+title: "Toolbar Fundamentals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["RT_TOOLBAR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["embedding toolbar in frame window class [MFC]", "application wizards [MFC], installing default application toolbars", "toolbars [MFC], creating", "resources [MFC], toolbar", "toolbar controls [MFC], toolbars created using Application Wizard", "toolbar controls [MFC], command ID", "RT_TOOLBAR resource [MFC]", "toolbars [MFC], adding default using Application Wizard", "LoadBitmap method [MFC], toolbars", "Toolbar editor [MFC], Application Wizard", "command IDs [MFC], toolbar buttons", "SetButtons method [MFC]", "CToolBar class [MFC], default toolbars in Application Wizard", "frame window classes [MFC], toolbar embedded in", "LoadToolBar method [MFC]"]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Toolbar Fundamentals
 
@@ -47,7 +40,7 @@ Toolbar creation occurs in `CMainFrame::OnCreate`. MFC calls [OnCreate](../mfc/r
 1. Calls functions to enable docking, floating, and tool tips. For details about these calls, see the article [Docking and Floating Toolbars](../mfc/docking-and-floating-toolbars.md).
 
 > [!NOTE]
->  The MFC General sample [DOCKTOOL](../visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
+>  The MFC General sample [DOCKTOOL](../overview/visual-cpp-samples.md) includes illustrations of both old and new MFC toolbars. The toolbars that use `COldToolbar` require calls in step 2 to `LoadBitmap` (rather than `LoadToolBar`) and to `SetButtons`. The new toolbars require calls to `LoadToolBar`.
 
 The docking, floating, and tool tips calls are optional. You can remove those lines from `OnCreate` if you prefer. The result is a toolbar that remains fixed, unable to float or redock and unable to display tool tips.
 
@@ -87,7 +80,6 @@ If you want to display a toolbar as the result of a command, you'll need to:
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

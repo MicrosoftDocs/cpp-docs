@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Fetching Records in Bulk (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Fetching Records in Bulk (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bulk row fetching, implementing", "ODBC recordsets, bulk row fetching", "bulk record field exchange", "bulk row fetching", "bulk RFX functions", "recordsets, bulk row fetching", "DoBulkFieldExchange method", "fetching ODBC records in bulk", "RFX (ODBC), bulk", "rowsets, bulk row fetching", "RFX (ODBC), bulk row fetching"]
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Fetching Records in Bulk (ODBC)
 
@@ -129,7 +122,7 @@ void MultiRowSet::DoBulkFieldExchange( CFieldExchange* pFX )
 
 For more information about record field exchange (RFX), see [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md). For more information about using parameters, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) and [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [CRecordset::m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)<br/>

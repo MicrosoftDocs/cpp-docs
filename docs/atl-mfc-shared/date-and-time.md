@@ -1,15 +1,8 @@
 ---
-title: "Date and Time | Microsoft Docs"
-ms.custom: ""
+title: "Date and Time"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["time, MFC programming", "time", "MFC, date and time", "dates, MFC"]
 ms.assetid: ecf56dc5-d418-4603-ad3e-af7e205a6403
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Date and Time
 
@@ -29,8 +22,7 @@ MFC supports several different ways of working with dates and times. These inclu
 
 - [Date and Time: Database Support](../atl-mfc-shared/date-and-time-database-support.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

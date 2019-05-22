@@ -1,15 +1,8 @@
 ---
-title: "ODBC Classes and Threads | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Classes and Threads"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC classes, and threads", "ODBC, multithreaded applications", "threading [MFC], ODBC support"]
 ms.assetid: 16543926-7331-41a6-ba50-72288f2a61b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC Classes and Threads
 
@@ -24,7 +17,7 @@ When creating a multithreaded application, you should be very careful in using m
 
 For more information about creating multithreaded applications, see [Multithreading Topics](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

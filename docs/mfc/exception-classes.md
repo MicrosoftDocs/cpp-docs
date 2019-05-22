@@ -1,16 +1,9 @@
 ---
-title: "Exception Classes | Microsoft Docs"
-ms.custom: ""
+title: "Exception Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.exception"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception classes [MFC]", "exception handling [MFC], exception classes", "MFC, exceptions"]
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Classes
 
@@ -51,7 +44,6 @@ An exception resulting from a failure to load a Windows resource.
 [CUserException](../mfc/reference/cuserexception-class.md)<br/>
 An exception used to stop a user-initiated operation. Typically, the user has been notified of the problem before this exception is thrown.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

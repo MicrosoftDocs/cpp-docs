@@ -1,16 +1,9 @@
 ---
-title: "Pragma Directives and the __Pragma Keyword | Microsoft Docs"
-ms.custom: ""
+title: "Pragma Directives and the __Pragma Keyword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#pragma"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["#pragma directives, C/C++", "__pragma keyword", "pragma directives, C/C++", "pragmas, C/C++", "preprocessor", "pragmas", "preprocessor, pragmas", "pragma directives (#pragma)"]
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Pragma Directives and the __Pragma Keyword
 
@@ -98,7 +91,7 @@ return _hr; \
 
 **End Microsoft specific**
 
-## See Also
+## See also
 
 [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [C Pragmas](../c-language/c-pragmas.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2064 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2064"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2064"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2064"]
 ms.assetid: 6cda05da-f437-4f50-9813-ae69538713a3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2064
 
@@ -47,7 +40,6 @@ int main() {
    (funcArray[0])();    // C2064
    (c.*funcArray[0])(); // OK - function called in instance context
 }
-
 ```
 
 Within a class, member function pointers must also indicate the calling object context. The following sample generates C2064 and shows how to fix it:

@@ -1,15 +1,8 @@
 ---
-title: "Creating Stack and Queue Collections | Microsoft Docs"
-ms.custom: ""
+title: "Creating Stack and Queue Collections"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC collection classes [MFC], stack collections", "collections, stack", "stack", "collection classes [MFC], creating", "queue collections", "MFC collection classes [MFC], queue collections", "stack collections", "collections, queue"]
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Stack and Queue Collections
 
@@ -41,7 +34,6 @@ Because the standard list collection has both a head and a tail, it is also easy
 
    [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
-## See Also
+## See also
 
 [Collections](../mfc/collections.md)
-

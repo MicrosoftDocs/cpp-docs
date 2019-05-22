@@ -1,15 +1,9 @@
 ---
-title: "Introduction to ATL | Microsoft Docs"
+title: "Introduction to ATL"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM objects, creating in ATL", "ATL"]
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Introduction to ATL
 
@@ -25,7 +19,6 @@ Topics covered in this section include:
 
 - [Recommendations for choosing between ATL and MFC](../atl/recommendations-for-choosing-between-atl-and-mfc.md).
 
-## See Also
+## See also
 
 [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)
-

@@ -1,22 +1,15 @@
 ---
-title: "Date and Time: SYSTEMTIME Support | Microsoft Docs"
-ms.custom: ""
+title: "Date and Time: SYSTEMTIME Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["SYSTEMTIME"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["system time", "FILETIME structure, with CTime class", "time [C++], formatting", "SYSTEMTIME structure", "dates [C++], MFC", "formatting [C++], time"]
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Date and Time: SYSTEMTIME Support
 
 The [CTime](../atl-mfc-shared/reference/ctime-class.md) class has constructors that accept system and file times from Win32. If you use `CTime` objects for these purposes, you must modify their initialization accordingly, as described in this article.
 
-For information about the SYSTEMTIME structure, see [SYSTEMTIME](../mfc/reference/systemtime-structure.md). For information about the FILETIME structure, see [FILETIME](../mfc/reference/filetime-structure.md).
+For information about the SYSTEMTIME structure, see [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime). For information about the FILETIME structure, see [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
 
 MFC still provides `CTime` constructors that take time arguments in the MS-DOS style, but, starting in MFC version 3.0, the `CTime` class also supports a constructor that takes a Win32 `SYSTEMTIME` structure and another that takes a Win32 `FILETIME` structure.
 
@@ -38,6 +31,6 @@ You most likely will not use `CTime` `FILETIME` initialization directly. If you 
 
 - [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## See Also
+## See also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)

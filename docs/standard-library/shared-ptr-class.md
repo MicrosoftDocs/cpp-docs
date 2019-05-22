@@ -1,16 +1,9 @@
 ---
-title: "shared_ptr Class | Microsoft Docs"
-ms.custom: ""
+title: "shared_ptr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["memory/std::shared_ptr", "memory/std::shared_ptr::element_type", "memory/std::shared_ptr::get", "memory/std::shared_ptr::owner_before", "memory/std::shared_ptr::reset", "memory/std::shared_ptr::swap", "memory/std::shared_ptr::unique", "memory/std::shared_ptr::use_count", "memory/std::shared_ptr::operator boolean-type", "memory/std::shared_ptr::operator*", "memory/std::shared_ptr::operator=", "memory/std::shared_ptr::operator->"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::shared_ptr [C++]", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count"]
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # shared_ptr Class
 
@@ -169,7 +162,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -207,7 +199,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -247,7 +238,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -283,7 +273,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -347,7 +336,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -385,7 +373,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -492,7 +479,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -626,7 +612,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -683,7 +668,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -752,7 +736,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -805,7 +788,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output
@@ -845,7 +827,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 ```Output

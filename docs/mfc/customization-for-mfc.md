@@ -1,15 +1,8 @@
 ---
-title: "Customization for MFC | Microsoft Docs"
-ms.custom: ""
+title: "Customization for MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["customizations, MFC Extensions"]
 ms.assetid: 3b1b7532-8cc9-48dc-9bbe-7fd4060530b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Customization for MFC
 
@@ -37,8 +30,7 @@ Additional customization tips can be found in the following topics:
 
 [User-defined Tools](../mfc/user-defined-tools.md)
 
-## See Also
+## See also
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
 [Security Implications of Customization](../mfc/security-implications-of-customization.md)
-

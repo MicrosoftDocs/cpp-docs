@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedExchangePointer Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "_InterlockedExchangePointer Intrinsic Functions"
+ms.date: "12/17/2018" 
 f1_keywords: ["_InterlockedExchangePointer_cpp", "_InterlockedExchangePointer_rel", "_InterlockedExchangePointer_nf", "_InterlockedExchangePointer_HLERelease", "_InterlockedExchangePointer_acq", "_InterlockedExchangePointer", "_InterlockedExchangePointer_acq_cpp", "_InterlockedExchangePointer_HLEAcquire"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedExchangePointer_rel intrinsic", "_InterlockedExchangePointer_HLERelease intrinsic", "_InterlockedExchangePointer intrinsic", "_InterlockedExchangePointer_nf intrinsic", "_InterlockedExchangePointer_acq intrinsic", "_InterlockedExchangePointer_HLEAcquire intrinsic", "InterlockedExchangePointer_acq intrinsic", "InterlockedExchangePointer intrinsic"]
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedExchangePointer Intrinsic Functions
 
@@ -81,7 +74,7 @@ These routines are only available as intrinsics.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

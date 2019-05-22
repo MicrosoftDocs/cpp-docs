@@ -1,16 +1,9 @@
 ---
-title: "CComModule Class | Microsoft Docs"
-ms.custom: ""
+title: "CComModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComModule", "ATLBASE/ATL::CComModule", "ATLBASE/ATL::CComModule::GetClassObject", "ATLBASE/ATL::CComModule::GetModuleInstance", "ATLBASE/ATL::CComModule::GetResourceInstance", "ATLBASE/ATL::CComModule::GetTypeLibInstance", "ATLBASE/ATL::CComModule::Init", "ATLBASE/ATL::CComModule::RegisterClassHelper", "ATLBASE/ATL::CComModule::RegisterClassObjects", "ATLBASE/ATL::CComModule::RegisterServer", "ATLBASE/ATL::CComModule::RegisterTypeLib", "ATLBASE/ATL::CComModule::RevokeClassObjects", "ATLBASE/ATL::CComModule::Term", "ATLBASE/ATL::CComModule::UnregisterClassHelper", "ATLBASE/ATL::CComModule::UnregisterServer", "ATLBASE/ATL::CComModule::UpdateRegistryClass", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceD", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceS", "ATLBASE/ATL::CComModule::m_csObjMap", "ATLBASE/ATL::CComModule::m_csTypeInfoHolder", "ATLBASE/ATL::CComModule::m_csWindowCreate", "ATLBASE/ATL::CComModule::m_hInst", "ATLBASE/ATL::CComModule::m_hInstResource", "ATLBASE/ATL::CComModule::m_hInstTypeLib", "ATLBASE/ATL::CComModule::m_pObjMap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComModule class", "DLL modules [C++], ATL"]
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComModule Class
 
@@ -662,6 +655,6 @@ Similar to [UpdateRegistryFromResourceD](#updateregistryfromresourced) except `U
 
 For more information about replaceable parameters and scripting, see the article [The ATL Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

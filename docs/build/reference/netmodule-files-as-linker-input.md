@@ -1,41 +1,34 @@
 ---
-title: ".netmodule Files as Linker Input | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: ".netmodule Files as Linker Input"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["MSIL linking", "linking [C++], modules", ".netmodules", "modules, Visual C++"]
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .netmodule Files as Linker Input
 
 link.exe now accepts MSIL .obj and .netmodules as input. The output file produced by the linker is an assembly or a .netmodule with no run-time dependency on any of the .obj or .netmodules that were input to the linker.
 
-.netmodules are created by the Visual C++ compiler with [/LN (Create MSIL Module)](../../build/reference/ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](../../build/reference/noassembly-create-a-msil-module.md). .objs are always created in a Visual C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
+.netmodules are created by the MSVC compiler with [/LN (Create MSIL Module)](ln-create-msil-module.md) or by the linker with [/NOASSEMBLY (Create a MSIL Module)](noassembly-create-a-msil-module.md). .objs are always created in a Visual C++ compilation. For other Visual Studio compilers, use the **/target:module** compiler option.
 
-You must pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+You must pass to the linker the .obj file from the Visual C++ compilation that created the .netmodule. Passing in a .netmodule is no longer supported because the **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
-For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](../../build/reference/linker-command-line-syntax.md), [Build C/C++ code on the command line](../../build/building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+For information on how to invoke the linker from the command line, see [Linker Command-Line Syntax](linking.md), [Use the MSVC toolset from the command line](../building-on-the-command-line.md), and [Set the Path and Environment Variables for Command-Line Builds](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
-Passing a .netmodule or .dll file to the linker that was compiled by the Visual C++ compiler with **/clr** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](../../build/reference/choosing-the-format-of-netmodule-input-files.md).
+Passing a .netmodule or .dll file to the linker that was compiled by the MSVC compiler with **/clr** can result in a linker error. For more information, see [Choosing the Format of .netmodule Input Files](choosing-the-format-of-netmodule-input-files.md).
 
 The linker accepts native .obj files as well as MSIL .obj files compiled with **/clr**. When passing mixed .objs in the same build, the verifiability of the resulting output file will, by default, be equal to the lowest level of verifiability of the input modules.
 
 If you currently have an application that is composed of two or more assemblies and you want the application to be contained in one assembly, you must recompile the assemblies and then link the .objs or .netmodules to produce a single assembly.
 
-You must specify an entry point using [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) when creating an executable image.
+You must specify an entry point using [/ENTRY (Entry-Point Symbol)](entry-entry-point-symbol.md) when creating an executable image.
 
-When linking with an MSIL .obj or .netmodule file, use [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md), otherwise when the linker encounters the MSIL .obj or .netmodule, it will restart the link with /LTCG.
+When linking with an MSIL .obj or .netmodule file, use [/LTCG (Link-time Code Generation)](ltcg-link-time-code-generation.md), otherwise when the linker encounters the MSIL .obj or .netmodule, it will restart the link with /LTCG.
 
 MSIL .obj or .netmodule files can also be passed to cl.exe.
 
-Input MSIL .obj or .netmodule files cannot have embedded resources. A resource is embedded in an output file (module or assembly) with [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../../build/reference/assemblyresource-embed-a-managed-resource.md) linker option or with the **/resource** compiler option in other Visual Studio compilers.
+Input MSIL .obj or .netmodule files cannot have embedded resources. A resource is embedded in an output file (module or assembly) with [/ASSEMBLYRESOURCE (Embed a Managed Resource)](assemblyresource-embed-a-managed-resource.md) linker option or with the **/resource** compiler option in other Visual Studio compilers.
 
-When performing MSIL linking, and if you do not also specify [/LTCG (Link-time Code Generation)](../../build/reference/ltcg-link-time-code-generation.md), you will see an informational message reporting that the link is restarting. This message can be ignored, but to improve linker performance with MSIL linking, explicitly specify **/LTCG**.
+When performing MSIL linking, and if you do not also specify [/LTCG (Link-time Code Generation)](ltcg-link-time-code-generation.md), you will see an informational message reporting that the link is restarting. This message can be ignored, but to improve linker performance with MSIL linking, explicitly specify **/LTCG**.
 
 ## Example
 
@@ -95,5 +88,5 @@ caught non System exception in C++ source code file
 
 ## See also
 
-- [LINK Input Files](../../build/reference/link-input-files.md)
-- [Linker Options](../../build/reference/linker-options.md)
+- [LINK Input Files](link-input-files.md)
+- [MSVC Linker Options](linker-options.md)

@@ -1,16 +1,8 @@
 ---
-title: "Diagnostic Services | Microsoft Docs"
-ms.custom: ""
+title: "Diagnostic Services"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.macros"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Diagnostic Services
 
@@ -305,12 +297,6 @@ If any of these tests fails, an alert message is displayed in the same manner as
 
 **Header:** afx.h
 
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[VERIFY](#verify)<br/>
-[ATLENSURE](#altensure)
-
 ## <a name="this_file"></a> THIS_FILE
 
 Expands to the name of the file that is being compiled.
@@ -340,12 +326,6 @@ static char THIS_FILE[] = __FILE__;
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)<br/>
-[ASSERT](#assert)<br/>
-[VERIFY](#verify)
 
 ##  <a name="trace"></a>  TRACE
 
@@ -449,10 +429,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 ### Requirements
 
 **Header:** afx.h
-
-### See Also
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -567,10 +543,6 @@ Your program code should not call `AfxDump`, but should instead call the `Dump` 
 
 **Header:** afx.h
 
-### See Also
-
-[CObject::Dump](cobject-class.md#dump)
-
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 
 This global function can be used to generate an image of the current stack.
@@ -642,7 +614,7 @@ To use this function successfully:
 - The file IMAGEHLP.DLL must be on your path. If you do not have this DLL, the function will display an error message. See [Image Help Library](/windows/desktop/Debug/image-help-library) for information on the function set provided by IMAGEHLP.
 
 - The modules that have frames on the stack must include debugging information. If they do not contain debugging information, the function will still generate a stack trace, but the trace will be less detailed.
-### Requirements
+  ### Requirements
 
 **Header:** afx.h
 
@@ -925,6 +897,7 @@ Stack, global, or embedded objects are not enumerated. The pointer passed to `Af
 
 [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CObject::Dump](cobject-class.md#dump)

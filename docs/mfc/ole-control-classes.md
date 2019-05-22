@@ -1,16 +1,9 @@
 ---
-title: "OLE Control Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Control Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "custom controls [MFC], classes", "ActiveX controls [MFC], OLE control classes", "ActiveX control classes [MFC]", "OLE controls [MFC], classes", "OLE control classes [MFC]", "reusable component classes [MFC]"]
 ms.assetid: 96495ec3-319e-4163-b839-1af0428ed9dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Control Classes
 
@@ -57,7 +50,6 @@ Allows an Active document to receive commands that originate in its container's 
 [COleSafeArray](../mfc/reference/colesafearray-class.md)<br/>
 Works with arrays of arbitrary type and dimension.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -1,17 +1,13 @@
 ---
-title: "Recordset: Declaring a Class for a Predefined Query (ODBC) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Recordset: Declaring a Class for a Predefined Query (ODBC)"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, queries", "predefined queries and recordsets", "stored procedures, and recordsets", "recordsets, predefined queries", "recordsets, stored procedures"]
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Declaring a Class for a Predefined Query (ODBC)
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
 
@@ -146,7 +142,7 @@ This code constructs a snapshot, passes it a parameter obtained earlier from the
 > [!TIP]
 >  You might want to handle a return value (output parameter) from a stored procedure. For more information and an example, see [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Requerying a Recordset (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)<br/>

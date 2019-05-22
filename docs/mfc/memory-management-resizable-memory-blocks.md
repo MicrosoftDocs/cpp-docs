@@ -1,15 +1,8 @@
 ---
-title: "Memory Management: Resizable Memory Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Memory Management: Resizable Memory Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["memory blocks [MFC], resizable", "memory [MFC], corruption", "memory allocation [MFC], memory block size", "memory blocks [MFC], allocating", "blocks [MFC], memory allocation", "resizable memory blocks [MFC]"]
 ms.assetid: f0efe6f4-a3ed-4541-9195-51ec1291967a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Memory Management: Resizable Memory Blocks
 
@@ -18,7 +11,6 @@ The **new** and **delete** operators, described in the article [Memory Managemen
 > [!IMPORTANT]
 >  Mixing the **new** and **delete** operators with the resizable memory-allocation functions on the same memory block will result in corrupted memory in the Debug version of MFC. You should not use **realloc** on a memory block allocated with **new**. Likewise, you should not allocate a memory block with the **new** operator and delete it with **free**, or use the **delete** operator on a block of memory allocated with **malloc**.
 
-## See Also
+## See also
 
 [Memory Management: Heap Allocation](../mfc/memory-management-heap-allocation.md)
-

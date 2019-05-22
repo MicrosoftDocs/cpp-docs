@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3391 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3391"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3391"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3391"]
 ms.assetid: c32532b9-7db4-4ccd-84b9-479e5a1a19d1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3391
 
 'type_arg' : invalid type argument for generic parameter 'param' of generic 'generic_type', must be a non-nullable value type
 
-A generic type was instantiated incorrectly. Check the type definition. For more information, see <xref:System.Nullable> and [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic type was instantiated incorrectly. Check the type definition. For more information, see <xref:System.Nullable> and [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

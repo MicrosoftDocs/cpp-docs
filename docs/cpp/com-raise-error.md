@@ -1,16 +1,9 @@
 ---
-title: "_com_raise_error | Microsoft Docs"
-ms.custom: ""
+title: "_com_raise_error"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_raise_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_com_raise_error function"]
 ms.assetid: a98226c2-c3fe-44f1-8ff5-85863de11cd6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_raise_error
 

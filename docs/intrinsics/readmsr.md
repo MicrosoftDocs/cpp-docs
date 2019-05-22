@@ -1,16 +1,9 @@
 ---
-title: "__readmsr | Microsoft Docs"
-ms.custom: ""
+title: "__readmsr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readmsr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Read Model Specific Register", "rdmsr instruction", "__readmsr intrinsic"]
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readmsr
 
@@ -21,8 +14,8 @@ Generates the `rdmsr` instruction, which reads the model-specific register speci
 ## Syntax
 
 ```
-__int64 __readmsr( 
-   int register 
+__int64 __readmsr(
+   int register
 );
 ```
 
@@ -51,6 +44,6 @@ For more information, see the AMD documentation.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

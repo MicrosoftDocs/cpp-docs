@@ -1,16 +1,9 @@
 ---
-title: "message | Microsoft Docs"
-ms.custom: ""
+title: "message"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["message_CPP", "vc-pragma.message"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message pragma", "pragmas, message"]
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # message
 Sends a string literal to the standard output without terminating the compilation.
@@ -54,6 +47,6 @@ The following code fragment uses the **message** pragma to display messages duri
 #pragma message("")
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

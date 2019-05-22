@@ -1,15 +1,8 @@
 ---
-title: "How to: Add Restart Manager Support | Microsoft Docs"
-ms.custom: ""
+title: "How to: Add Restart Manager Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Restart manager [MFC]", "C++, application crash support"]
 ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Add Restart Manager Support
 
@@ -40,11 +33,10 @@ By default, MFC applications created by using the project wizard in Visual Studi
 
 1. Compile and run your application.
 
-## See Also
+## See also
 
 [CDataRecoveryHandler Class](../mfc/reference/cdatarecoveryhandler-class.md)<br/>
 [CWinApp::m_dwRestartManagerSupportFlags](../mfc/reference/cwinapp-class.md#m_dwrestartmanagersupportflags)<br/>
 [CWinApp Class](../mfc/reference/cwinapp-class.md)<br/>
 [CWinApp::m_nAutosaveInterval](../mfc/reference/cwinapp-class.md#m_nautosaveinterval)<br/>
 [CDocument::OnDocumentEvent](../mfc/reference/cdocument-class.md#ondocumentevent)
-

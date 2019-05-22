@@ -1,16 +1,9 @@
 ---
-title: "is_pod Class | Microsoft Docs"
-ms.custom: ""
+title: "is_pod Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_pod"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_pod class", "is_pod"]
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_pod Class
 

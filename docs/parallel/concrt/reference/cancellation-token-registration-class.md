@@ -1,16 +1,9 @@
 ---
-title: "cancellation_token_registration Class | Microsoft Docs"
-ms.custom: ""
+title: "cancellation_token_registration Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cancellation_token_registration class"]
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # cancellation_token_registration Class
 
@@ -111,6 +104,6 @@ The `cancellation_token_registration` to compare.
 
 ### Return Value
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

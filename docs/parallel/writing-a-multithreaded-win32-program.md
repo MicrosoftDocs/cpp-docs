@@ -1,15 +1,8 @@
 ---
-title: "Writing a Multithreaded Win32 Program | Microsoft Docs"
-ms.custom: ""
+title: "Writing a Multithreaded Win32 Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["thread stacks [C++]", "resources [C++], multithreading", "stacks [C++]", "shared resources [C++]", "threading [C++], sharing common resources", "multithreading [C++], thread stacks", "multithreading [C++], sharing common resources", "mutual exclusion [C++]", "communications [C++], between threads", "mutex [C++]", "threading [C++], thread stacks"]
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Writing a Multithreaded Win32 Program
 
@@ -51,6 +44,6 @@ Because each thread has its own stack, you can avoid potential collisions over d
 
 Win32 also provides Thread-Local Storage (TLS) to store per-thread data. For more information, see [Thread Local Storage (TLS)](thread-local-storage-tls.md).
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

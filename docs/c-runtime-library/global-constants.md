@@ -1,16 +1,9 @@
 ---
-title: "Global Constants | Microsoft Docs"
-ms.custom: ""
+title: "Global Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.constants"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["global constants"]
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Global Constants
 
@@ -42,7 +35,7 @@ The Microsoft run-time library contains definitions for global constants used by
 |[TZNAME_MAX](../c-runtime-library/tzname-max.md)|[_WAIT_CHILD, _WAIT_GRANDCHILD](../c-runtime-library/wait-child-wait-grandchild.md)|
 |[WCHAR_MAX](../c-runtime-library/wchar-max.md)|[WCHAR_MIN](../c-runtime-library/wchar-min.md)|
 
-## See Also
+## See also
 
 [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [Global Variables](../c-runtime-library/global-variables.md)<br/>

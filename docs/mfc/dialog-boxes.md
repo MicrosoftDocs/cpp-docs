@@ -1,15 +1,8 @@
 ---
-title: "Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["modeless dialog boxes [MFC], MFC dialog boxes", "MFC, dialog boxes", "modal dialog boxes [MFC], MFC dialog boxes", "CDialog class [MFC], MFC dialog boxes", "MFC dialog boxes"]
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Boxes
 
@@ -57,10 +50,10 @@ Most dialog boxes are modal, which require the user to close the dialog box befo
 
 - [Dialog boxes in OLE](../mfc/dialog-boxes-in-ole.md)
 
-- Create an application whose user interface is a dialog box: see the [CMNCTRL1](../visual-cpp-samples.md) or [CMNCTRL2](../visual-cpp-samples.md) sample programs. The Application Wizard provides this option as well.
+- Create an application whose user interface is a dialog box: see the [CMNCTRL1](../overview/visual-cpp-samples.md) or [CMNCTRL2](../overview/visual-cpp-samples.md) sample programs. The Application Wizard provides this option as well.
 
 - [Samples](../mfc/dialog-sample-list.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

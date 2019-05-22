@@ -1,14 +1,8 @@
 ---
-title: "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"
+title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
 ms.custom: "get-started-article"
-ms.date: "09/18/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+ms.date: "04/23/2019"
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
 
@@ -23,7 +17,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 - A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
 
-- A copy of Visual Studio 2017. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
+- A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
    ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
@@ -33,9 +27,37 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 ## Create a Windows desktop project
 
-Follow these steps to create your first Windows desktop project and enter the code for a working Windows desktop application. If you're using a version of Visual Studio older than Visual Studio 2017 version 15.3, skip ahead to [To create a Windows desktop project in Visual Studio 2017 RTM](#create-in-vs2017-rtm).
+Follow these steps to create your first Windows desktop project and enter the code for a working Windows desktop application. Make sure that the version selector in the upper left of this page is set to the correct version of Visual Studio that you are using.
 
-### To create a Windows desktop project in Visual Studio 2017 Update 15.3 and later
+::: moniker range="vs-2019"
+
+### To create a Windows desktop project in Visual Studio 2019
+
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Desktop**. 
+
+1. From the filtered list of project types, choose **Windows Desktop Wizard** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+1. The **Windows Desktop Project** dialog now appears. Under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Choose **OK** to create the project.
+
+1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
+
+   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+
+1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
+
+   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+
+Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### To create a Windows desktop project in Visual Studio 2017
 
 1. On the **File** menu, choose **New** and then choose **Project**.
 
@@ -59,7 +81,11 @@ Follow these steps to create your first Windows desktop project and enter the co
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 
-### <a id="create-in-vs2017-rtm"></a> To create a Windows desktop project in Visual Studio 2017 RTM
+::: moniker-end
+
+::: moniker range="vs-2015"
+
+### To create a Windows desktop project in Visual Studio 2015
 
 1. On the **File** menu, choose **New** and then choose **Project**.
 
@@ -87,6 +113,8 @@ Your project is now created and your source file is opened in the editor. To con
 
 Your project is now created and your source file is opened in the editor.
 
+::: moniker-end
+
 ## Create the code
 
 Next, you'll learn how to create the code for a Windows desktop application in Visual Studio.
@@ -104,7 +132,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    );
    ```
 
-   For information about the parameters and return value of this function, see [WinMain entry point](https://msdn.microsoft.com/library/windows/desktop/ms633559).
+   For information about the parameters and return value of this function, see [WinMain entry point](/windows/desktop/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
    > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **__declspec** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
@@ -129,11 +157,11 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    In this function, you write code to handle *messages* that the application receives from Windows when *events* occur. For example, if a user chooses an OK button in your application, Windows will send a message to you and you can write code inside your `WndProc` function that does whatever work is appropriate. It's called *handling* an event. You only handle the events that are relevant for your application.
 
-   For more information, see [Window Procedures](https://msdn.microsoft.com/library/windows/desktop/ms632593).
+   For more information, see [Window Procedures](/windows/desktop/winmsg/window-procedures).
 
 ### To add functionality to the WinMain function
 
-1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
+1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -152,9 +180,9 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   For information about the fields of the structure above, see [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577).
+   For information about the fields of the structure above, see [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa).
 
-1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
+1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -234,7 +262,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    return (int) msg.wParam;
    ```
 
-   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   For more information about the structures and functions in the message loop, see [MSG](/windows/desktop/api/winuser/ns-winuser-msg), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    At this point, the `WinMain` function should resemble the following code.
 
@@ -556,6 +584,6 @@ As promised, here's the complete code for the working application.
 
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 
-## See Also
+## See also
 
 [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)

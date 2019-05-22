@@ -1,16 +1,9 @@
 ---
-title: "multimap Class | Microsoft Docs"
-ms.custom: ""
+title: "multimap Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["map/std::multimap", "map/std::multimap::allocator_type", "map/std::multimap::const_iterator", "map/std::multimap::const_pointer", "map/std::multimap::const_reference", "map/std::multimap::const_reverse_iterator", "map/std::multimap::difference_type", "map/std::multimap::iterator", "map/std::multimap::key_compare", "map/std::multimap::key_type", "map/std::multimap::mapped_type", "map/std::multimap::pointer", "map/std::multimap::reference", "map/std::multimap::reverse_iterator", "map/std::multimap::size_type", "map/std::multimap::value_type", "map/std::multimap::begin", "map/std::multimap::cbegin", "map/std::multimap::cend", "map/std::multimap::clear", "map/std::multimap::count", "map/std::multimap::crbegin", "map/std::multimap::crend", "map/std::multimap::emplace", "map/std::multimap::emplace_hint", "map/std::multimap::empty", "map/std::multimap::end", "map/std::multimap::equal_range", "map/std::multimap::erase", "map/std::multimap::find", "map/std::multimap::get_allocator", "map/std::multimap::insert", "map/std::multimap::key_comp", "map/std::multimap::lower_bound", "map/std::multimap::max_size", "map/std::multimap::rbegin", "map/std::multimap::rend", "map/std::multimap::size", "map/std::multimap::swap", "map/std::multimap::upper_bound", "map/std::multimap::value_comp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::multimap [C++]", "std::multimap [C++], allocator_type", "std::multimap [C++], const_iterator", "std::multimap [C++], const_pointer", "std::multimap [C++], const_reference", "std::multimap [C++], const_reverse_iterator", "std::multimap [C++], difference_type", "std::multimap [C++], iterator", "std::multimap [C++], key_compare", "std::multimap [C++], key_type", "std::multimap [C++], mapped_type", "std::multimap [C++], pointer", "std::multimap [C++], reference", "std::multimap [C++], reverse_iterator", "std::multimap [C++], size_type", "std::multimap [C++], value_type", "std::multimap [C++], begin", "std::multimap [C++], cbegin", "std::multimap [C++], cend", "std::multimap [C++], clear", "std::multimap [C++], count", "std::multimap [C++], crbegin", "std::multimap [C++], crend", "std::multimap [C++], emplace", "std::multimap [C++], emplace_hint", "std::multimap [C++], empty", "std::multimap [C++], end", "std::multimap [C++], equal_range", "std::multimap [C++], erase", "std::multimap [C++], find", "std::multimap [C++], get_allocator", "std::multimap [C++], insert", "std::multimap [C++], key_comp", "std::multimap [C++], lower_bound", "std::multimap [C++], max_size", "std::multimap [C++], rbegin", "std::multimap [C++], rend", "std::multimap [C++], size", "std::multimap [C++], swap", "std::multimap [C++], upper_bound", "std::multimap [C++], value_comp"]
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # multimap Class
 
@@ -434,7 +427,7 @@ The number of elements whose sort keys match the parameter key; 0 if the multima
 
 The member function returns the number of elements in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 that have a key value *key*.
 
@@ -709,7 +702,6 @@ int main()
     print(m1);
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  multimap::emplace_hint
@@ -1017,7 +1009,6 @@ int main()
     findit(m1, 45);
     findit(m1, 6);
 }
-
 ```
 
 ## <a name="get_allocator"></a>  multimap::get_allocator
@@ -1250,7 +1241,6 @@ int main()
     print(m4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  multimap::iterator
@@ -1625,7 +1615,7 @@ int main()
     m1.insert(Int_Pair(4, 40));
 
     // Create an empty multimap m2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     multimap <int, int, less<int> > m2;
     m2.insert(Int_Pair(1, 10));
     m2.insert(Int_Pair(2, 20));
@@ -1706,7 +1696,6 @@ int main()
     cout << endl;
 
 }
-
 ```
 
 ## <a name="op_eq"></a>  multimap::operator=
@@ -1829,14 +1818,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
@@ -1969,14 +1958,14 @@ int main( )
         << m1_rIter -> first << "." << endl;
 
    // begin can be used to start an iteration
-   // throught a multimap in a forward order
+   // through a multimap in a forward order
    cout << "The multimap is: ";
    for ( m1_Iter = m1.begin( ) ; m1_Iter != m1.end( ); m1_Iter++)
       cout << m1_Iter -> first << " ";
       cout << "." << endl;
 
    // rbegin can be used to start an iteration
-   // throught a multimap in a reverse order
+   // through a multimap in a reverse order
    cout << "The reversed multimap is: ";
    for ( m1_rIter = m1.rbegin( ) ; m1_rIter != m1.rend( ); m1_rIter++)
       cout << m1_rIter -> first << " ";
@@ -2210,7 +2199,7 @@ int main( )
            << m1_RcIter -> second << "." << endl;
 
    // The element at a specific location in the multimap can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    m1_AcIter = m1.begin( );
    m1_RcIter = m1.upper_bound( m1_AcIter -> first );
    cout << "The first element of m1 with a key greater than\n"
@@ -2320,7 +2309,7 @@ int main( )
    multimap <int, int> :: iterator pIter;
 
    // value_type can be used to pass the correct type
-   // explicitely to avoid implicit type conversion
+   // explicitly to avoid implicit type conversion
    m1.insert ( multimap <int, int> :: value_type ( 1, 10 ) );
 
    // Compare another way to insert objects into a hash_multimap

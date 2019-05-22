@@ -1,15 +1,8 @@
 ---
-title: "Parallel Patterns Library (PPL) | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Patterns Library (PPL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Patterns Library (PPL)"]
 ms.assetid: 40fd86b2-69fa-45e5-93d8-98a75636c242
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Patterns Library (PPL)
 
@@ -58,4 +51,3 @@ Each iteration of the loop requires a different amount of time to finish. The pe
 |[Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)|Describes the various parallel containers and objects that are provided by the PPL.|
 |[Cancellation in the PPL](cancellation-in-the-ppl.md)|Explains how to cancel the work that is being performed by a parallel algorithm.|
 |[Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)|Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.|
-

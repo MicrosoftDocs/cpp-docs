@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2270 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2270"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2270"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2270"]
 ms.assetid: b52c068e-0b61-42e7-b775-4d57b3ddcba0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2270
 

@@ -1,21 +1,14 @@
 ---
-title: "Scrolling and Scaling Views | Microsoft Docs"
-ms.custom: ""
+title: "Scrolling and Scaling Views"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "scaling views [MFC]", "message handling [MFC], scroll bars in view class [MFC]", "scroll bars [MFC], messages", "scrolling views [MFC]"]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scrolling and Scaling Views
 
 MFC supports views that scroll and views that are automatically scaled to the size of the frame window that displays them. Class `CScrollView` supports both kinds of views.
 
-For more information about scrolling and scaling, see class [CScrollView](../mfc/reference/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../visual-cpp-samples.md).
+For more information about scrolling and scaling, see class [CScrollView](../mfc/reference/cscrollview-class.md) in the *MFC Reference*. For a scrolling example, see the [Scribble sample](../overview/visual-cpp-samples.md).
 
 ## What do you want to know more about
 
@@ -43,7 +36,6 @@ You can specify how much to scroll for a "page" (when the user clicks in a scrol
 
 When you want the view to automatically fit the size of its frame window, you can use `CScrollView` for scaling instead of scrolling. The logical view is stretched or shrunk to fit the window's client area exactly. A scaled view has no scroll bars.
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

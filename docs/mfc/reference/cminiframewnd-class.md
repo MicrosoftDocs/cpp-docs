@@ -1,16 +1,9 @@
 ---
-title: "CMiniFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMiniFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMiniFrameWnd [MFC], CMiniFrameWnd", "CMiniFrameWnd [MFC], Create", "CMiniFrameWnd [MFC], CreateEx"]
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMiniFrameWnd Class
 
@@ -160,7 +153,7 @@ virtual BOOL CreateEx(
 Specifies the extended style of the `CMiniFrameWnd` being created. Apply any of the [extended window styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) to the window.
 
 *lpClassName*<br/>
-Points to a null-terminated character string that names the Windows class (a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function or any of the predefined control-class names. It must not be NULL.
+Points to a null-terminated character string that names the Windows class (a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure). The class name can be any name registered with the global [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) function or any of the predefined control-class names. It must not be NULL.
 
 *lpWindowName*<br/>
 Points to a null-terminated character string that contains the window name.
@@ -197,7 +190,7 @@ The *dwStyle* parameter can be any combination of [window styles](../../mfc/refe
 
 The old style Palette toolbox windows are no longer supported. The old style, which did not have an "X" Close button, was supported when running an MFC application on previous versions of Windows, but is no longer supported in Visual C++.NET. Only the new WS_EX_TOOLWINDOW style is now supported; for a description of this style, see [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
 
-## See Also
+## See also
 
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

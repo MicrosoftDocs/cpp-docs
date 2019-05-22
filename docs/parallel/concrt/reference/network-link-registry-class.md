@@ -1,16 +1,9 @@
 ---
-title: "network_link_registry Class | Microsoft Docs"
-ms.custom: ""
+title: "network_link_registry Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["network_link_registry", "AGENTS/concurrency::network_link_registry", "AGENTS/concurrency::network_link_registry::add", "AGENTS/concurrency::network_link_registry::begin", "AGENTS/concurrency::network_link_registry::contains", "AGENTS/concurrency::network_link_registry::count", "AGENTS/concurrency::network_link_registry::remove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["network_link_registry class"]
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # network_link_registry Class
 
@@ -138,7 +131,7 @@ A pointer to a block to be removed, if found.
 
 **true** if the link was found and removed, **false** otherwise.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [single_link_registry Class](single-link-registry-class.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "COleLinkingDoc Class | Microsoft Docs"
-ms.custom: ""
+title: "COleLinkingDoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleLinkingDoc", "AFXOLE/COleLinkingDoc", "AFXOLE/COleLinkingDoc::COleLinkingDoc", "AFXOLE/COleLinkingDoc::Register", "AFXOLE/COleLinkingDoc::Revoke", "AFXOLE/COleLinkingDoc::OnFindEmbeddedItem", "AFXOLE/COleLinkingDoc::OnGetLinkedItem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleLinkingDoc [MFC], COleLinkingDoc", "COleLinkingDoc [MFC], Register", "COleLinkingDoc [MFC], Revoke", "COleLinkingDoc [MFC], OnFindEmbeddedItem", "COleLinkingDoc [MFC], OnGetLinkedItem"]
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleLinkingDoc Class
 
@@ -46,7 +39,7 @@ class COleLinkingDoc : public COleDocument
 
 ## Remarks
 
-A container application that supports linking to embedded items is called a "link container." The [OCLIENT](../../visual-cpp-samples.md) sample application is an example of a link container.
+A container application that supports linking to embedded items is called a "link container." The [OCLIENT](../../overview/visual-cpp-samples.md) sample application is an example of a link container.
 
 When a linked item's source is an embedded item in another document, that containing document must be loaded in order for the embedded item to be edited. For this reason, a link container must be able to be launched by another container application when the user wants to edit the source of a linked item. Your application must also use the [COleTemplateServer](../../mfc/reference/coletemplateserver-class.md) class so that it can create documents when launched programmatically.
 
@@ -64,7 +57,7 @@ Connect your `COleTemplateServer` object to your document templates by calling t
 
 [!code-cpp[NVC_MFCOleContainer#25](../../mfc/codesnippet/cpp/colelinkingdoc-class_3.cpp)]
 
-For a sample `CWinApp`-derived class definition and `InitInstance` function, see OCLIENT.H and OCLIENT.CPP in the MFC sample [OCLIENT](../../visual-cpp-samples.md).
+For a sample `CWinApp`-derived class definition and `InitInstance` function, see OCLIENT.H and OCLIENT.CPP in the MFC sample [OCLIENT](../../overview/visual-cpp-samples.md).
 
 For more information on using `COleLinkingDoc`, see the articles [Containers: Implementing a Container](../../mfc/containers-implementing-a-container.md) and [Containers: Advanced Features](../../mfc/containers-advanced-features.md).
 
@@ -180,9 +173,9 @@ Call this function to revoke the document's registration with the OLE system DLL
 
 You should call this function when closing a named file, but you usually do not need to call it directly. `Revoke` is called for you by `COleLinkingDoc`'s implementation of `OnCloseDocument`, `OnNewDocument`, `OnOpenDocument`, and `OnSaveDocument`.
 
-## See Also
+## See also
 
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)

@@ -1,15 +1,8 @@
 ---
-title: "return Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "return Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["( ) parentheses in return statements"]
 ms.assetid: 18cd82cf-f899-4b28-83ad-4eff353ddcb4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # return Statement (C)
 
@@ -67,6 +60,6 @@ The output of the example looks like this:
 i = 2147483647, ll = 4611686014132420609
 ```
 
-## See Also
+## See also
 
 [Statements](../c-language/statements-c.md)

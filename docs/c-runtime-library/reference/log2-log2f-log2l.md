@@ -1,17 +1,10 @@
 ---
-title: "log2, log2f, log2l | Microsoft Docs"
-ms.custom: ""
+title: "log2, log2f, log2l"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["log2", "log2l", "log2f"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
-dev_langs: ["C++"]
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # log2, log2f, log2l
 
@@ -39,7 +32,6 @@ float log2f(
 long double log2l(
    long double x
 );
-
 ```
 
 ### Parameters

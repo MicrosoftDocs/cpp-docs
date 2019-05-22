@@ -1,19 +1,12 @@
 ---
-title: "_lseek, _lseeki64 | Microsoft Docs"
-ms.custom: ""
+title: "_lseek, _lseeki64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_lseeki64", "_lseek"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_lseeki64", "_lseek", "lseeki64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lseek function", "_lseek function", "_lseeki64 function", "lseeki64 function", "file pointers [C++], moving", "seek file pointers"]
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _lseek, _lseeki64
 
@@ -57,9 +50,9 @@ The **_lseek** function moves the file pointer associated with *fd* to a new loc
 
 |*origin* value||
 |-|-|
-**SEEK_SET**|Beginning of the file.
-**SEEK_CUR**|Current position of the file pointer.
-**SEEK_END**|End of file.
+| **SEEK_SET** | Beginning of the file. |
+| **SEEK_CUR** | Current position of the file pointer. |
+| **SEEK_END** | End of file. |
 
 You can use **_lseek** to reposition the pointer anywhere in a file or beyond the end of the file.
 

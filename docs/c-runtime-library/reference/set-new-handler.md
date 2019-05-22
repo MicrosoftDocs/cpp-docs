@@ -1,19 +1,12 @@
 ---
-title: "_set_new_handler | Microsoft Docs"
-ms.custom: ""
+title: "_set_new_handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_new_handler"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_set_new_handler", "set_new_handler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_set_new_handler function", "set_new_handler function", "error handling", "transferring control to error handler"]
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_new_handler
 

@@ -1,16 +1,9 @@
 ---
-title: "CMFCVisualManagerVS2005 Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCVisualManagerVS2005 Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCVisualManagerVS2005", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetDockingTabsBordersSize", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetMDITabsBordersSize", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetPropertyGridGroupColor", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::GetTabFrameColors", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawAutoHideButtonBorder", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawCaptionButton", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawPaneCaption", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawSeparator", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawTab", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnDrawToolBoxFrame", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnEraseTabsArea", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillAutoHideButtonBackground", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillHighlightedArea", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillMiniFrameCaption", "AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnUpdateSystemColors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManagerVS2005 [MFC], GetDockingTabsBordersSize", "CMFCVisualManagerVS2005 [MFC], GetMDITabsBordersSize", "CMFCVisualManagerVS2005 [MFC], GetPropertyGridGroupColor", "CMFCVisualManagerVS2005 [MFC], GetTabFrameColors", "CMFCVisualManagerVS2005 [MFC], HasOverlappedAutoHideButtons", "CMFCVisualManagerVS2005 [MFC], OnDrawAutoHideButtonBorder", "CMFCVisualManagerVS2005 [MFC], OnDrawCaptionButton", "CMFCVisualManagerVS2005 [MFC], OnDrawPaneCaption", "CMFCVisualManagerVS2005 [MFC], OnDrawSeparator", "CMFCVisualManagerVS2005 [MFC], OnDrawTab", "CMFCVisualManagerVS2005 [MFC], OnDrawToolBoxFrame", "CMFCVisualManagerVS2005 [MFC], OnEraseTabsArea", "CMFCVisualManagerVS2005 [MFC], OnFillAutoHideButtonBackground", "CMFCVisualManagerVS2005 [MFC], OnFillHighlightedArea", "CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption", "CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors"]
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerVS2005 Class
 
@@ -53,7 +46,7 @@ All of the members of this class are virtual functions that are derived from the
 
 ## Example
 
-The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the visual manager VS 2005. This code snippet is part of the [Desktop Alert Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]
 
@@ -352,7 +345,7 @@ virtual void OnUpdateSystemColors();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

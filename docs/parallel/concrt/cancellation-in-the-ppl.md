@@ -1,15 +1,8 @@
 ---
-title: "Cancellation in the PPL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Cancellation in the PPL"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Cancellation in the PPL
 
@@ -52,7 +45,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 The PPL uses tasks and task groups to manage fine-grained tasks and computations. You can nest task groups to form *trees* of parallel work. The following illustration shows a parallel work tree. In this illustration, `tg1` and `tg2` represent task groups; `t1`, `t2`, `t3`, `t4`, and `t5` represent the work that the task groups perform.
 
-![A parallel work tree](../../parallel/concrt/media/parallelwork_trees.png "parallelwork_trees")
+![A parallel work tree](../../parallel/concrt/media/parallelwork_trees.png "A parallel work tree")
 
 The following example shows the code that is required to create the tree in the illustration. In this example, `tg1` and `tg2` are [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) objects; `t1`, `t2`, `t3`, `t4`, and `t5` are [concurrency::task_handle](../../parallel/concrt/reference/task-handle-class.md) objects.
 
@@ -85,13 +78,12 @@ The following example shows the first basic pattern for task cancellation. The t
 The `cancel_current_task` function throws; therefore, you do not need to explicitly return from the current loop or function.
 
 > [!TIP]
-
->  Alternatively, you can call the [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) function instead of `cancel_current_task`.
+> Alternatively, you can call the [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) function instead of `cancel_current_task`.
 
 It is important to call `cancel_current_task` when you respond to cancellation because it transitions the task to the canceled state. If you return early instead of calling `cancel_current_task`, the operation transitions to the completed state and any value-based continuations are run.
 
 > [!CAUTION]
->  Never throw `task_canceled` from your code. Call `cancel_current_task` instead.
+> Never throw `task_canceled` from your code. Call `cancel_current_task` instead.
 
 When a task ends in the canceled state, the [concurrency::task::get](reference/task-class.md#get) method throws [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (Conversely, [concurrency::task::wait](reference/task-class.md#wait) returns [task_status::canceled](reference/concurrency-namespace-enums.md#task_group_status) and does not throw.) The following example illustrates this behavior for a task-based continuation. A task-based continuation is always called, even when the antecedent task is canceled.
 
@@ -102,8 +94,7 @@ Because value-based continuations inherit the token of their antecedent task unl
 [!code-cpp[concrt-task-canceled#2](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_4.cpp)]
 
 > [!CAUTION]
-
->  If you do not pass a cancellation token to the `task` constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable. In addition, you must pass the same cancellation token to the constructor of any nested tasks (that is, tasks that are created in the body of another task) to cancel all tasks simultaneously.
+> If you do not pass a cancellation token to the `task` constructor or the [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) function, that task is not cancellable. In addition, you must pass the same cancellation token to the constructor of any nested tasks (that is, tasks that are created in the body of another task) to cancel all tasks simultaneously.
 
 You might want to run arbitrary code when a cancellation token is canceled. For example, if your user chooses a **Cancel** button on the user interface to cancel the operation, you could disable that button until the user starts another operation. The following example shows how to use the [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#register_callback) method to register a callback function that runs when a cancellation token is canceled.
 
@@ -118,11 +109,10 @@ The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurren
 These behaviors are not affected by a faulted task (that is, one that throws an exception). In this case, a value-based continuation is cancelled; a task-based continuation is not cancelled.
 
 > [!CAUTION]
->  A task that is created in another task (in other words, a nested task) does not inherit the cancellation token of the parent task. Only a value-based continuation inherits the cancellation token of its antecedent task.
+> A task that is created in another task (in other words, a nested task) does not inherit the cancellation token of the parent task. Only a value-based continuation inherits the cancellation token of its antecedent task.
 
 > [!TIP]
-
->  Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) method when you call a constructor or function that takes a `cancellation_token` object and you do not want the operation to be cancellable.
+> Use the [concurrency::cancellation_token::none](reference/cancellation-token-class.md#none) method when you call a constructor or function that takes a `cancellation_token` object and you do not want the operation to be cancellable.
 
 You can also provide a cancellation token to the constructor of a `task_group` or `structured_task_group` object. An important aspect of this is that child task groups inherit this cancellation token. For an example that demonstrates this concept by using the [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) function to run to call `parallel_for`, see [Canceling Parallel Algorithms](#algorithms) later in this document.
 
@@ -262,4 +252,3 @@ The use of cancellation is appropriate when each member of a group of related ta
 [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)
 
 [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
-

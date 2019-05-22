@@ -1,15 +1,8 @@
 ---
-title: "ODBC: Calling ODBC API Functions Directly | Microsoft Docs"
-ms.custom: ""
+title: "ODBC: Calling ODBC API Functions Directly"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC API functions [C++], calling", "ODBC [C++], catalog functions", "ODBC API functions [C++]", "APIs [C++], calling", "ODBC classes [C++], vs. ODBC API", "direct ODBC API calls", "catalog functions (ODBC)", "catalog functions (ODBC), calling", "ODBC [C++], API functions"]
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: Calling ODBC API Functions Directly
 
@@ -30,10 +23,10 @@ To call an ODBC API function directly, you must take the same steps you would ta
 
 - Deallocate storage when you finish.
 
-For more information about these steps, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK in the MSDN documentation.
+For more information about these steps, see the [Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK in the MSDN documentation.
 
 In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the AFX_SQL_ASYNC and AFX_SQL_SYNC macros. For more information, see [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *MFC Reference*.
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)

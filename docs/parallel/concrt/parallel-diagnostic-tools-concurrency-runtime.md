@@ -1,15 +1,8 @@
 ---
-title: "Parallel Diagnostic Tools (Concurrency Runtime) | Microsoft Docs"
-ms.custom: ""
+title: "Parallel Diagnostic Tools (Concurrency Runtime)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Parallel Diagnostic Tools [Concurrency Runtime]"]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Diagnostic Tools (Concurrency Runtime)
 
@@ -35,7 +28,6 @@ The following table describes the events that the runtime raises when event trac
 
 |Event|Description|Value|
 |-----------|-----------------|-----------|
-
 |[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|The ETW provider identifier for the Concurrency Runtime.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|
 |[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)|Marks events that are related to contexts.|`5727a00f-50be-4519-8256-f7699871fecb`|
 |[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)|Marks the entrance and exit to calls to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.|`31c8da6b-6165-4042-8b92-949e315f4d84`|
@@ -64,7 +56,6 @@ The following example illustrates how to enable tracing for a call to `parallel_
 
 The runtime tracks the number of times that you call `EnableTracing` and `DisableTracing`. Therefore, if you call `EnableTracing` multiple times, you must call `DisableTracing` the same number of times in order to disable tracing.
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)
-

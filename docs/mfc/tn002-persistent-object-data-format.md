@@ -1,16 +1,9 @@
 ---
-title: "TN002: Persistent Object Data Format | Microsoft Docs"
-ms.custom: ""
+title: "TN002: Persistent Object Data Format"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data", "CArchive class [MFC], support for persistent data", "persistent C++ objects [MFC]", "TN002"]
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN002: Persistent Object Data Format
 
@@ -102,8 +95,7 @@ Because `Serialize` is called directly on your document, it is not usually possi
 
 As noted earlier, you should encode the version and class information yourself when you call `Serialize` directly, enabling you to change the format later while still maintaining backward compatibility with older files. The `CArchive::SerializeClass` function can be called explicitly before directly serializing an object or before calling a base class.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -1,14 +1,7 @@
 ---
-title: "Directives to the Preprocessor | Microsoft Docs"
-ms.custom: ""
+title: "Directives to the Preprocessor"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: adc6251e-cf6b-4508-bdbb-55f446c838d3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Directives to the Preprocessor
 
@@ -25,6 +18,6 @@ This statement tells the compiler to replace each occurrence of `MAX` by `100` b
 |`#elif`|`#error`|**#ifndef**|**#pragma**|
 |`#else`|`#if`|`#include`|`#undef`|
 
-## See Also
+## See also
 
 [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

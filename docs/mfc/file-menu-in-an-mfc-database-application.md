@@ -1,15 +1,8 @@
 ---
-title: "File Menu in an MFC Database Application | Microsoft Docs"
-ms.custom: ""
+title: "File Menu in an MFC Database Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["File menu", "database applications [MFC], File menu commands"]
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # File Menu in an MFC Database Application
 
@@ -31,7 +24,6 @@ To interpret a File menu command in a special way, you must override one or more
 
 - Because database applications typically don't save a whole document, you'll probably want to remove the Save and Save As implementations unless you use a serialized document to store profile information. Otherwise, you might implement the Save command as, for example, "commit transaction." See [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) for more information about overriding these commands.
 
-## See Also
+## See also
 
 [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md)
-

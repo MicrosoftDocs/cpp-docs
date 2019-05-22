@@ -1,19 +1,12 @@
 ---
-title: "asin, asinf, asinl | Microsoft Docs"
-ms.custom: ""
+title: "asin, asinf, asinl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["asinf", "asinl", "asin"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["asin", "asinl", "asinf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["asin function", "asinl function", "asinf function", "trigonometric functions", "arcsine function"]
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # asin, asinf, asinl
 

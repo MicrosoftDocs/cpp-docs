@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2902 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2902"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2902"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2902"]
 ms.assetid: 89d78d0e-78e5-4c2c-a0f9-a60110e9395e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2902
 

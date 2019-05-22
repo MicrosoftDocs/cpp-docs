@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2316 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2316"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2316"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2316"]
 ms.assetid: 9ad08eb5-060b-4eb0-8d66-0dc134f7bf67
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2316
 

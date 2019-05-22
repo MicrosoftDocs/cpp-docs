@@ -1,16 +1,9 @@
 ---
-title: "is_class Class | Microsoft Docs"
-ms.custom: ""
+title: "is_class Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_class"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_class class", "is_class"]
 ms.assetid: 96fc34a3-a81b-4ec6-b7fb-baafde1a0f4e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_class Class
 
@@ -54,7 +47,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

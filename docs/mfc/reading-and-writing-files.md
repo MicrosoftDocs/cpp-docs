@@ -1,15 +1,8 @@
 ---
-title: "Reading and Writing Files | Microsoft Docs"
-ms.custom: ""
+title: "Reading and Writing Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFile class [MFC], objects", "examples [MFC], reading files", "files [MFC], writing to", "examples [MFC], writing to files", "files [MFC], reading", "MFC, file operations", "CFile class [MFC], reading and writing CFile objects", "reading files", "writing to files [MFC]"]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Reading and Writing Files
 
@@ -30,7 +23,6 @@ If you've used the C run-time library file-handling functions, MFC reading and w
 > [!NOTE]
 >  You should normally carry out input/output operations within a **try**/**catch** exception handling block. For more information, see [Exception Handling (MFC)](../mfc/exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
 [Files](../mfc/files-in-mfc.md)
-

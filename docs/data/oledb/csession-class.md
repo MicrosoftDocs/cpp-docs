@@ -1,16 +1,9 @@
 ---
-title: "CSession Class | Microsoft Docs"
-ms.custom: ""
+title: "CSession Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CSession", "ATL::CSession", "ATL.CSession", "CSession.Abort", "CSession::Abort", "ATL.CSession.Abort", "ATL::CSession::Abort", "CSession::Close", "ATL.CSession.Close", "CSession.Close", "ATL::CSession::Close", "CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit", "GetTransactionInfo", "CSession.GetTransactionInfo", "ATL.CSession.GetTransactionInfo", "CSession::GetTransactionInfo", "ATL::CSession::GetTransactionInfo", "ATL::CSession::Open", "CSession::Open", "CSession.Open", "ATL.CSession.Open", "CSession::StartTransaction", "StartTransaction", "ATL.CSession.StartTransaction", "CSession.StartTransaction", "ATL::CSession::StartTransaction"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSession class", "Abort method", "Close method", "Commit method", "GetTransactionInfo method", "Open method", "StartTransaction method"]
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CSession Class
 
@@ -50,14 +43,14 @@ Terminates the transaction.
 ### Syntax
 
 ```cpp
-HRESULT Abort(BOID* pboidReason = NULL, 
-   BOOL bRetaining = FALSE, 
+HRESULT Abort(BOID* pboidReason = NULL,
+   BOOL bRetaining = FALSE,
    BOOL bAsync = FALSE) const throw();
 ```
 
 #### Parameters
 
-See [ITransaction::Abort](/previous-versions/windows/desktop/ms709833) in the *OLE DB Programmer's Reference*.
+See [ITransaction::Abort](/previous-versions/windows/desktop/ms709833(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -84,14 +77,14 @@ Commits the transaction.
 ### Syntax
 
 ```cpp
-HRESULT Commit(BOOL bRetaining = FALSE, 
-   DWORD grfTC = XACTTC_SYNC, 
+HRESULT Commit(BOOL bRetaining = FALSE,
+   DWORD grfTC = XACTTC_SYNC,
    DWORD grfRM = 0) const throw();
 ```
 
 #### Parameters
 
-See [ITransaction::Commit](/previous-versions/windows/desktop/ms713008) in the *OLE DB Programmer's Reference*.
+See [ITransaction::Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -99,7 +92,7 @@ A standard HRESULT.
 
 ### Remarks
 
-For more information, see [ITransaction::Commit](/previous-versions/windows/desktop/ms713008).
+For more information, see [ITransaction::Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
 ## <a name="gettransactioninfo"></a> CSession::GetTransactionInfo
 
@@ -113,7 +106,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 #### Parameters
 
-See [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) in the *OLE DB Programmer's Reference*.
+See [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -121,7 +114,7 @@ A standard HRESULT.
 
 ### Remarks
 
-For more information, see [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975) in the *OLE DB Programmer's Reference*.
+For more information, see [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="open"></a> CSession::Open
 
@@ -141,10 +134,10 @@ HRESULT Open(const CDataSource& ds,
 [in] The data source for which the session is to be opened.
 
 *pPropSet*<br/>
-[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696) in the *OLE DB Programmer's Reference* in the Windows SDK.
+[in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
 *ulPropSets*<br/>
-[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367) structures passed in the *pPropSet* argument.
+[in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) structures passed in the *pPropSet* argument.
 
 ### Return Value
 
@@ -169,7 +162,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 #### Parameters
 
-See [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) in the *OLE DB Programmer's Reference*.
+See [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Return Value
 
@@ -177,10 +170,10 @@ A standard HRESULT.
 
 ### Remarks
 
-For more information, see [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786) in the *OLE DB Programmer's Reference*.
+For more information, see [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
-## See Also
+## See also
 
-[CatDB](../../visual-cpp-samples.md)<br/>
+[CatDB](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3898 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3898"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3898"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3898"]
 ms.assetid: d9a90df6-87e4-4fe7-ab01-c226ee86bf10
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3898
 

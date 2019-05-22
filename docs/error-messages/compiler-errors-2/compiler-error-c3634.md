@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3634 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3634"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3634"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3634"]
 ms.assetid: fd09f10c-f863-483b-9756-71c16b760b02
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3634
 

@@ -1,15 +1,8 @@
 ---
-title: "Comparing the Concurrency Runtime to Other Concurrency Models | Microsoft Docs"
-ms.custom: ""
+title: "Comparing the Concurrency Runtime to Other Concurrency Models"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, compared to other models"]
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Comparing the Concurrency Runtime to Other Concurrency Models
 
@@ -33,7 +26,7 @@ The preemptive model and cooperative scheduling models are two common ways to en
 
 ### Preemptive and Cooperative Scheduling
 
-*Preemptive scheduling* is a round-robin, priority-based mechanism that gives every task exclusive access to a computing resource for a given time period, and then switches to another task. Preemptive scheduling is common in multitasking operating systems such as Windows*. Cooperative scheduling* is a mechanism that gives every task exclusive access to a computing resource until the task finishes or until the task yields its access to the resource. The Concurrency Runtime uses cooperative scheduling together with the preemptive scheduler of the operating system to achieve maximum usage of processing resources.
+*Preemptive scheduling* is a round-robin, priority-based mechanism that gives every task exclusive access to a computing resource for a given time period, and then switches to another task. Preemptive scheduling is common in multitasking operating systems such as Windows. *Cooperative scheduling* is a mechanism that gives every task exclusive access to a computing resource until the task finishes or until the task yields its access to the resource. The Concurrency Runtime uses cooperative scheduling together with the preemptive scheduler of the operating system to achieve maximum usage of processing resources.
 
 ### Differences Between Preemptive and Cooperative Schedulers
 
@@ -95,7 +88,7 @@ For more information about how the Concurrency Runtime compares to OpenMP and ho
 
 [[Top](#top)]
 
-## See Also
+## See also
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Overview](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

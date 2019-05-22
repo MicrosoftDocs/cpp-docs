@@ -1,16 +1,10 @@
 ---
-title: "functional (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "functional (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["<cliext/functional>", "cliext::binary_delegate", "cliext::binary_delegate_noreturn", "cliext::binary_negate", "cliext::bind1st", "cliext::bind2nd", "cliext::binder1st", "cliext::binder2nd", "cliext::divides", "cliext::equal_to", "cliext::greater", "cliext::greater_equal", "cliext::less", "cliext::less_equal", "cliext::logical_and", "cliext::logical_not", "cliext::logical_or", "cliext::minus", "cliext::modulus", "cliext::multiplies", "cliext::negate", "cliext::not_equal_to", "cliext::not1", "cliext::not2", "cliext::plus", "cliext::unary_delegate", "cliext::unary_delegate_noreturn", "cliext::unary_negate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<functional> header [STL/CLR]", "<cliext/functional> header [STL/CLR]", "functional functions [STL/CLR]", "binary_delegate function [STL/CLR]", "binary_delegate_noreturn function [STL/CLR]", "binary_negate function [STL/CLR]", "bind1st function [STL/CLR]", "bind2nd function [STL/CLR]", "binder1st function [STL/CLR]", "binder2nd function [STL/CLR]", "divides function [STL/CLR]", "equal_to function [STL/CLR]", "greater function [STL/CLR]", "greater_equal function [STL/CLR]", "less function [STL/CLR]", "less_equal function [STL/CLR]", "logical_and function [STL/CLR]", "logical_not function [STL/CLR]", "logical_or function [STL/CLR]", "minus function [STL/CLR]", "modulus function [STL/CLR]", "multiplies function [STL/CLR]", "negate function [STL/CLR]", "not_equal_to function [STL/CLR]", "not1 function [STL/CLR]", "not2 function [STL/CLR]", "plus function [STL/CLR]", "unary_delegate function [STL/CLR]", "unary_delegate_noreturn function [STL/CLR]", "unary_negate function [STL/CLR]"]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # functional (STL/CLR)
 

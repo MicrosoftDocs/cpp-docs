@@ -1,15 +1,8 @@
 ---
-title: "Sequence of Operations for Building MFC Applications | Microsoft Docs"
-ms.custom: ""
+title: "Sequence of Operations for Building MFC Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], developing"]
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Sequence of Operations for Building MFC Applications
 
@@ -41,10 +34,9 @@ The following table explains the general sequence you might typically follow as 
 |Add splitter windows.|If you want to support window splitting, add a [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) object to your SDI frame window or MDI child window and hook it up in the window's [OnCreateClient](../mfc/reference/cframewnd-class.md#oncreateclient) member function.|The framework supplies splitter-box controls next to the scroll bars and manages splitting your view into multiple panes. If the user splits a window, the framework creates and attaches additional view objects to the document.|
 |Build, test, and debug your application.|Use the facilities of Visual C++ to build, test, and debug your application.|Visual C++ lets you adjust compile, link, and other options. It also lets you browse your source code and class structure.|
 
-## See Also
+## See also
 
 [Sequence of Operations for Creating OLE Applications](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
 [Sequence of Operations for Creating ActiveX Controls](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
 [Sequence of Operations for Creating Database Applications](../mfc/sequence-of-operations-for-creating-database-applications.md)<br/>
 [Building on the Framework](../mfc/building-on-the-framework.md)
-

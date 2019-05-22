@@ -1,16 +1,9 @@
 ---
-title: "CEditView Class | Microsoft Docs"
-ms.custom: ""
+title: "CEditView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CEditView", "AFXEXT/CEditView", "AFXEXT/CEditView::CEditView", "AFXEXT/CEditView::FindText", "AFXEXT/CEditView::GetBufferLength", "AFXEXT/CEditView::GetEditCtrl", "AFXEXT/CEditView::GetPrinterFont", "AFXEXT/CEditView::GetSelectedText", "AFXEXT/CEditView::LockBuffer", "AFXEXT/CEditView::PrintInsideRect", "AFXEXT/CEditView::SerializeRaw", "AFXEXT/CEditView::SetPrinterFont", "AFXEXT/CEditView::SetTabStops", "AFXEXT/CEditView::UnlockBuffer", "AFXEXT/CEditView::OnFindNext", "AFXEXT/CEditView::OnReplaceAll", "AFXEXT/CEditView::OnReplaceSel", "AFXEXT/CEditView::OnTextNotFound", "AFXEXT/CEditView::dwStyleDefault"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CEditView [MFC], CEditView", "CEditView [MFC], FindText", "CEditView [MFC], GetBufferLength", "CEditView [MFC], GetEditCtrl", "CEditView [MFC], GetPrinterFont", "CEditView [MFC], GetSelectedText", "CEditView [MFC], LockBuffer", "CEditView [MFC], PrintInsideRect", "CEditView [MFC], SerializeRaw", "CEditView [MFC], SetPrinterFont", "CEditView [MFC], SetTabStops", "CEditView [MFC], UnlockBuffer", "CEditView [MFC], OnFindNext", "CEditView [MFC], OnReplaceAll", "CEditView [MFC], OnReplaceSel", "CEditView [MFC], OnTextNotFound", "CEditView [MFC], dwStyleDefault"]
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CEditView Class
 
@@ -366,7 +359,7 @@ UINT PrintInsideRect(
 Pointer to the printer device context.
 
 *rectLayout*<br/>
-Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](../../mfc/reference/rect-structure1.md) specifying the rectangle in which the text is to be rendered.
+Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) specifying the rectangle in which the text is to be rendered.
 
 *nIndexStart*<br/>
 Index within the buffer of the first character to be rendered.
@@ -455,9 +448,9 @@ void UnlockBuffer() const;
 
 Call `UnlockBuffer` after you have finished using the pointer returned by [LockBuffer](#lockbuffer).
 
-## See Also
+## See also
 
-[MFC Sample SUPERPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>

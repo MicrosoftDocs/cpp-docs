@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2974 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2974"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2974"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2974"]
 ms.assetid: 1b444260-f2bf-48d7-ab1e-35573d8c4a0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2974
 

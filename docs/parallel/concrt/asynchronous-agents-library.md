@@ -1,15 +1,8 @@
 ---
-title: "Asynchronous Agents Library | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Asynchronous Agents Library"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["Agents Library", "Asynchronous Agents Library"]
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Asynchronous Agents Library
 
@@ -25,7 +18,7 @@ The Agents Library is composed of three components: *asynchronous agents*, *asyn
 
 The following illustration shows how two agents use message blocks and message-passing functions to communicate. In this illustration, `agent1` sends a message to `agent2` by using the [concurrency::send](reference/concurrency-namespace-functions.md#send) function and a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object. `agent2` uses the [concurrency::receive](reference/concurrency-namespace-functions.md#receive) function to read the message. `agent2` uses the same method to send a message to `agent1`. Dashed arrows represent the flow of data between agents. Solid arrows connect the agents to the message blocks that they write to or read from.
 
-![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")
+![The components of the Agents Library](../../parallel/concrt/media/agent_librarycomp.png "The components of the Agents Library")
 
 A code example that implements this illustration is shown later in this topic.
 
@@ -88,4 +81,3 @@ Describes how to use various parallel patterns, such as parallel algorithms, in 
 
 [Concurrency Runtime](../../parallel/concrt/concurrency-runtime.md)<br/>
 Describes the Concurrency Runtime, which simplifies parallel programming, and contains links to related topics.
-

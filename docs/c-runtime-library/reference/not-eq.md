@@ -1,18 +1,11 @@
 ---
-title: "not_eq | Microsoft Docs"
-ms.custom: ""
+title: "not_eq"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["not_eq", "std::not_eq", "std.not_eq"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["not_eq function"]
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # not_eq
 
@@ -23,7 +16,6 @@ An alternative to the != operator.
 ```C
 
 #define not_eq !=
-
 ```
 
 ## Remarks

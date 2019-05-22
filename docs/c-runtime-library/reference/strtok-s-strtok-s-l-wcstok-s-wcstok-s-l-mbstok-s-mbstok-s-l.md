@@ -1,19 +1,12 @@
 ---
-title: "strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l"
+ms.date: "03/25/2019"
 apiname: ["_wcstok_s_l", "_mbstok_s_l", "_mbstok_s", "strtok_s", "wcstok_s", "_strtok_s_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_tcstok_s_l", "_wcstok_s_l", "_tcstok_s", "_mbstok_s_l", "strtok_s", "wcstok_s", "_mbstok_s", "_strtok_s_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_strtok_s_l function", "_mbstok_s_l function", "strings [C++], searching", "mbstok_s_l function", "wcstok_s_l function", "_wcstok_s_l function", "_tcstok_s function", "_tcstok_s_l function", "strtok_s_l function", "wcstok_s function", "tokens, finding in strings", "mbstok_s function", "_mbstok_s function", "strtok_s function"]
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
@@ -57,7 +50,7 @@ unsigned char* _mbstok_s(
    char** context
 );
 
-unsigned char* _mbstok_s(
+unsigned char* _mbstok_s_l(
    unsigned char* str,
    const unsigned char* delimiters,
    char** context,
@@ -91,19 +84,21 @@ Returns a pointer to the next token found in *str*. Returns **NULL** when no mor
 |any|**NULL**|any|**NULL**|**EINVAL**|
 |any|any|**NULL**|**NULL**|**EINVAL**|
 
-If *str* is **NULL** but *context* is a pointer to a valid context pointer, there is no error.
+If *str* is **NULL** but *context* is a pointer to a valid context pointer, there's no error.
 
 ## Remarks
 
 The **strtok_s** family of functions finds the next token in *str*. The set of characters in *delimiters* specifies possible delimiters of the token to be found in *str* on the current call. **wcstok_s** and **_mbstok_s** are wide-character and multibyte-character versions of **strtok_s**. The arguments and return values of **wcstok_s** and **_wcstok_s_l** are wide-character strings; those of **_mbstok_s** and **_mbstok_s_l** are multibyte-character strings. These functions behave identically otherwise.
 
-This function validates its parameters. If an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **NULL**.
+This function validates its parameters. When an error condition occurs, as in the Error Conditions table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **NULL**.
 
-On the first call to **strtok_s** the function skips leading delimiters and returns a pointer to the first token in *str*, terminating the token with a null character. More tokens can be broken out of the remainder of *str* by a series of calls to **strtok_s**. Each call to **strtok_s** modifies *str* by inserting a null character after the token returned by that call. The *context* pointer keeps track of which string is being read and where in the string the next token is to be read. To read the next token from *str*, call **strtok_s** with a **NULL** value for the *str* argument, and pass the same *context* parameter. The **NULL** *str* argument causes **strtok_s** to search for the next token in the modified *str*. The *delimiters* argument can take any value from one call to the next so that the set of delimiters may vary.
+On the first call to **strtok_s**, the function skips leading delimiters and returns a pointer to the first token in *str*, terminating the token with a null character. More tokens can be broken out of the remainder of *str* by a series of calls to **strtok_s**. Each call to **strtok_s** modifies *str* by inserting a null character after the token returned by that call. The *context* pointer keeps track of which string is being read and where in the string the next token is to be read. To read the next token from *str*, call **strtok_s** with a **NULL** value for the *str* argument, and pass the same *context* parameter. The **NULL** *str* argument causes **strtok_s** to search for the next token in the modified *str*. The *delimiters* argument can take any value from one call to the next so that the set of delimiters may vary.
 
-Since the *context* parameter supersedes the static buffers used in **strtok** and **_strtok_l**, it is possible to parse two strings simultaneously in the same thread.
+Since the *context* parameter supersedes the static buffers used in **strtok** and **_strtok_l**, it's possible to parse two strings simultaneously in the same thread.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except that they instead use the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [setlocale](setlocale-wsetlocale.md).
+
+The versions of these functions without the **_l** suffix use the current thread locale for this locale-dependent behavior. The versions with the **_l** suffix are identical except they instead use the locale specified by the *locale* parameter. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ## Requirements
 

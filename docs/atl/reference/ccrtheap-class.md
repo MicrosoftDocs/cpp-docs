@@ -1,16 +1,9 @@
 ---
-title: "CCRTHeap Class | Microsoft Docs"
-ms.custom: ""
+title: "CCRTHeap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CCRTHeap", "ATLMEM/ATL::CCRTHeap", "ATLMEM/ATL::CCRTHeap::Allocate", "ATLMEM/ATL::CCRTHeap::Free", "ATLMEM/ATL::CCRTHeap::GetSize", "ATLMEM/ATL::CCRTHeap::Reallocate"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCRTHeap class"]
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCRTHeap Class
 
@@ -136,7 +129,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CCRTHeap::Free](#free) to free the memory allocated by this method. Implemented using [realloc](../../c-runtime-library/reference/realloc.md).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComHeap Class](../../atl/reference/ccomheap-class.md)<br/>

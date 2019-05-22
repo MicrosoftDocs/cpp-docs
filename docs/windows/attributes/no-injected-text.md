@@ -1,16 +1,9 @@
 ---
-title: "no_injected_text (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "no_injected_text (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.no_injected_text"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_injected_text attribute"]
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # no_injected_text
 
@@ -44,6 +37,6 @@ The most common use of the **no_injected_text** C++ attribute is by the [/Fx](..
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [Compiler Attributes](compiler-attributes.md)

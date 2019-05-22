@@ -1,16 +1,10 @@
 ---
-title: "Platform::NotImplementedException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::NotImplementedException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::NotImplementedException", "VCCORLIB/Platform::NotImplementedException::NotImplementedException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::NotImplementedException"]
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::NotImplementedException Class
 
@@ -36,6 +30,6 @@ For more information, see the [COMException](../cppcx/platform-comexception-clas
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::COMException Class](../cppcx/platform-comexception-class.md)

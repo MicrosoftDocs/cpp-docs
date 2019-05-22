@@ -1,16 +1,9 @@
 ---
-title: "Using CToolBarCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CToolBarCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CToolBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC]", "toolbar controls [MFC], creating"]
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CToolBarCtrl
 
@@ -30,7 +23,6 @@ You can use the toolbar control ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-cl
 
 - [Customizing the Appearance of a Toolbar Control](../mfc/customizing-the-appearance-of-a-toolbar-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

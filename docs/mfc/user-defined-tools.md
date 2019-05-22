@@ -1,15 +1,8 @@
 ---
-title: "User-defined Tools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "User-defined Tools"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["user-defined tools (MFC Extensions)"]
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # User-defined Tools
 
@@ -17,7 +10,7 @@ MFC supports user-defined tools. A user-defined tool is a special command that e
 
 If you enabled user-defined tools support, the customization dialog box automatically includes the **Tools** tab. The following illustration shows the **Tools** page.
 
-![Tools tab in the Customize dialog box](../mfc/media/custdialogboxtoolstab.png "custdialogboxtoolstab")
+![Tools tab in the Customize dialog box](../mfc/media/custdialogboxtoolstab.png "Tools tab in the Customize dialog box") <br/>
 Customization dialog box Tools tab
 
 ## Enabling user-defined tools support
@@ -52,10 +45,9 @@ If you want to predefine some tools on the application startup, you must overrid
 
 1. For each tool, set its text label by setting `CUserTool::m_strLabel` and set its command by calling `CUserTool::SetCommand`. The default implementation of [CUserTool Class](../mfc/reference/cusertool-class.md) automatically retrieves available icons from the program that is specified in the call to `SetCommand`.
 
-## See Also
+## See also
 
 [Customization for MFC](../mfc/customization-for-mfc.md)<br/>
 [CUserTool Class](../mfc/reference/cusertool-class.md)<br/>
 [CUserToolsManager Class](../mfc/reference/cusertoolsmanager-class.md)<br/>
 [CWinAppEx Class](../mfc/reference/cwinappex-class.md)
-

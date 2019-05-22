@@ -1,19 +1,12 @@
 ---
-title: "_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l | Microsoft Docs"
-ms.custom: ""
+title: "_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_mbsnbcnt", "wcsncnt", "_tcsnbcnt", "_mbsnccnt", "_ftcsnbcnt", "mbsnbcnt", "strncnt", "mbsnbcnt_l", "mbsnccnt_l", "mbsnccnt", "_strncnt", "_wcsncnt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_strncnt function", "_mbsnbcnt function", "_mbsnbcnt_l function", "_mbsnccnt_l function", "mbsnbcnt_l function", "mbsnbcnt function", "tcsnbcnt function", "mbsnccnt_l function", "strncnt function", "_tcsnbcnt function", "mbsnccnt function", "wcsncnt function", "_mbsnccnt function", "_wcsncnt function"]
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
@@ -51,7 +44,6 @@ size_t _mbsnccnt_l(
    size_t count,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

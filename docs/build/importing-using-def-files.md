@@ -1,15 +1,8 @@
 ---
-title: "Importing Using DEF Files | Microsoft Docs"
-ms.custom: ""
+title: "Importing Using DEF Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["importing DLLs [C++], DEF files", "def files [C++], importing with", ".def files [C++], importing with", "dllimport attribute [C++], DEF files", "DLLs [C++], DEF files"]
 ms.assetid: aefdbf50-f603-488a-b0d7-ed737bae311d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Importing Using DEF Files
 
@@ -55,8 +48,8 @@ if (ulDataInDll == 0L)   /*sample code fragment*/
 
 Using CONSTANT is more risky because if you forget to use the extra level of indirection, you could potentially access the import address table's pointer to the variable — not the variable itself. This type of problem can often manifest as an access violation because the import address table is currently made read-only by the compiler and linker.
 
-The current Visual C++ linker issues a warning if it sees CONSTANT in the .def file to account for this case. The only real reason to use CONSTANT is if you cannot recompile some object file where the header file did not list **__declspec(dllimport)** on the prototype.
+The current MSVC linker issues a warning if it sees CONSTANT in the .def file to account for this case. The only real reason to use CONSTANT is if you cannot recompile some object file where the header file did not list **__declspec(dllimport)** on the prototype.
 
-## See Also
+## See also
 
-[Importing into an Application](../build/importing-into-an-application.md)
+[Importing into an Application](importing-into-an-application.md)

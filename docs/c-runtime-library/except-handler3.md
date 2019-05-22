@@ -1,19 +1,12 @@
 ---
-title: "_except_handler3 | Microsoft Docs"
-ms.custom: ""
+title: "_except_handler3"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_except_handler3"]
 apilocation: ["msvcrt.dll", "msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_except_handler3", "except_handler3"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_except_handler3 function", "except_handler3 function"]
 ms.assetid: b0c64898-0ae5-48b7-9724-80135a0813e2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _except_handler3
 
@@ -52,6 +45,6 @@ If an exception should be dismissed, returns `DISPOSITION_DISMISS`. If the excep
 
 If this method finds an appropriate exception handler, it passes the exception to the handler. In this situation, this method does not return to the code that called it and the return value is irrelevant.
 
-## See Also
+## See also
 
 [Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

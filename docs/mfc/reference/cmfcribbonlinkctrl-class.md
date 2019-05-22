@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonLinkCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonLinkCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CopyFrom", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetCompactSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetRegularSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetToolTipText", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::IsDrawTooltipImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDraw", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDrawMenuImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnMouseMove", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonLinkCtrl [MFC], CMFCRibbonLinkCtrl", "CMFCRibbonLinkCtrl [MFC], CopyFrom", "CMFCRibbonLinkCtrl [MFC], GetCompactSize", "CMFCRibbonLinkCtrl [MFC], GetLink", "CMFCRibbonLinkCtrl [MFC], GetRegularSize", "CMFCRibbonLinkCtrl [MFC], GetToolTipText", "CMFCRibbonLinkCtrl [MFC], IsDrawTooltipImage", "CMFCRibbonLinkCtrl [MFC], OnDraw", "CMFCRibbonLinkCtrl [MFC], OnDrawMenuImage", "CMFCRibbonLinkCtrl [MFC], OnMouseMove", "CMFCRibbonLinkCtrl [MFC], OnSetIcon", "CMFCRibbonLinkCtrl [MFC], OpenLink", "CMFCRibbonLinkCtrl [MFC], SetLink"]
 ms.assetid: 77ae1941-e0ab-4a9d-911e-1752d34c079b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonLinkCtrl Class
 
@@ -86,7 +79,7 @@ CMFCRibbonLinkCtrl(
 
 ### Example
 
-The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the constructor of the `CMFCRibbonLinkCtrl` class. This code snippet is part of the [Ribbon Gadgets sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_RibbonGadgets#1](../../mfc/reference/codesnippet/cpp/cmfcribbonlinkctrl-class_1.cpp)]
 
@@ -240,7 +233,7 @@ void SetLink(LPCTSTR lpszLink);
 *lpszLink*<br/>
 [in] Specifies the hyperlink text.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

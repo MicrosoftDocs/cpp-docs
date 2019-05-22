@@ -1,15 +1,8 @@
 ---
-title: "International Enabling | Microsoft Docs"
-ms.custom: ""
+title: "International Enabling"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "strings [C++], international enabling", "localization [C++], character sets", "MBCS [C++], enabling", "Unicode [C++], enabling"]
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # International Enabling
 
@@ -23,7 +16,7 @@ Most traditional C and C++ code makes assumptions about character and string man
 
    - Use the same portable run-time functions that make MFC portable under either environment.
 
-   - Make literal strings and characters portable under either environment, using the `_T` macro. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+   - Make literal strings and characters portable under either environment, using the `_T` macro. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
    - Take precautions when parsing strings under MBCS. These precautions are not needed under Unicode. For more information, see [MBCS Programming Tips](../text/mbcs-programming-tips.md).
 
@@ -34,7 +27,7 @@ Most traditional C and C++ code makes assumptions about character and string man
 > [!NOTE]
 >  European and MBCS character sets have some characters, such as accented letters, with character codes greater than 0x80. Because most code uses signed characters, these characters greater than 0x80 are sign-extended when converted to **int**. This is a problem for array indexing because the sign-extended characters, being negative, indexes outside the array. Languages that use MBCS, such as Japanese, are also unique. Because a character might consist of 1 or 2 bytes, you should always manipulate both bytes at the same time.
 
-## See Also
+## See also
 
 [Unicode and MBCS](../text/unicode-and-mbcs.md)<br/>
 [Internationalization Strategies](../text/internationalization-strategies.md)

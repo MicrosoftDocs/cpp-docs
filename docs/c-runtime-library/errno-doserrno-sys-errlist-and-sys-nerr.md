@@ -1,19 +1,12 @@
 ---
-title: "errno, _doserrno, _sys_errlist, and _sys_nerr | Microsoft Docs"
-ms.custom: ""
+title: "errno, _doserrno, _sys_errlist, and _sys_nerr"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_errno"]
 apilocation: ["msvcrt.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_sys_errlist", "errno", "_sys_nerr", "_doserrno"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["error codes, printing", "sys_errlist global variable", "doserrno global variable", "errno global variable", "_doserrno global variable", "_sys_errlist global variable", "_sys_nerr global variable", "sys_nerr global variable"]
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # errno, _doserrno, _sys_errlist, and _sys_nerr
 
@@ -98,7 +91,7 @@ All `errno` values in the following table are predefined constants in \<errno.h>
 
 The `_doserrno`, `_sys_errlist`, and `_sys_nerr` macros are Microsoft extensions. For more compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [Global Variables](../c-runtime-library/global-variables.md)<br/>
 [errno Constants](../c-runtime-library/errno-constants.md)<br/>

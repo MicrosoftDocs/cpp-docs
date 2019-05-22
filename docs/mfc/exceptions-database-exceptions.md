@@ -1,15 +1,8 @@
 ---
-title: "Exceptions: Database Exceptions | Microsoft Docs"
-ms.custom: ""
+title: "Exceptions: Database Exceptions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO [MFC], exceptions", "exceptions [MFC], database", "exception handling [MFC], databases", "ODBC exceptions [MFC]", "ODBC [MFC], exceptions", "database exceptions [MFC]", "databases [MFC], exception handling", "error codes [MFC], database exception handling"]
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exceptions: Database Exceptions
 
@@ -67,7 +60,6 @@ For a discussion of the error information returned by a `CDaoException` object, 
 
 When you are working with Microsoft Jet (.mdb) databases, and in most cases when you are working with ODBC, there will be only one error object. In the rare case when you are using an ODBC data source and there are multiple errors, you can loop through DAO's Errors collection based on the number of errors returned by [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount). Each time through the loop, call [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) to refill the `m_pErrorInfo` data member.
 
-## See Also
+## See also
 
 [Exception Handling](../mfc/exception-handling-in-mfc.md)
-

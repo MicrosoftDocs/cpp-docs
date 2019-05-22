@@ -1,20 +1,13 @@
 ---
-title: "unary_negate Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::unary_negate"]
-dev_langs: ["C++"]
+title: "unary_negate Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::unary_negate"]
 helpviewer_keywords: ["unary_negate class"]
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # unary_negate Class
 
-A template class providing a member function that negates the return value of a specified unary function.
+A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 
@@ -43,7 +36,7 @@ The negation of the unary function.
 
 ## Remarks
 
-The template class stores a copy of a unary function object _ *Func.* It defines its member function `operator()` as returning **!**\_ *Func(left).*
+The template class stores a copy of a unary function object *\_Func*. It defines its member function `operator()` as returning `!_Func(left)`.
 
 The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1) provides an easier way to declare and use the **unary_negator** adaptor predicate.
 

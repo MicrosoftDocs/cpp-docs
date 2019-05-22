@@ -1,15 +1,8 @@
 ---
-title: "OLE Background | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE, about OLE"]
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background
 
@@ -69,7 +62,6 @@ Some of the more important OLE topics are covered in the following articles:
 
 For general OLE information not found in the above articles, search for OLE in MSDN.
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3238 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3238"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3238"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3238"]
 ms.assetid: 19942497-b3c5-4df0-9144-142ced92468b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3238
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 A type was defined in a client application that is also defined, via type forwarding syntax, in a referenced assembly. Both types cannot be defined in the scope of the application.
 
-See [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md) for more information.
+See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for more information.
 
 ## Example
 

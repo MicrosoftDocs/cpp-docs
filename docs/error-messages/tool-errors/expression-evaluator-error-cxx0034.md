@@ -1,16 +1,9 @@
 ---
-title: "Expression Evaluator Error CXX0034 | Microsoft Docs"
-ms.custom: ""
+title: "Expression Evaluator Error CXX0034"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["CXX0034"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAN0034", "CXX0034"]
 ms.assetid: afcee5f1-beff-489f-aea6-04f55e76364f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Expression Evaluator Error CXX0034
 

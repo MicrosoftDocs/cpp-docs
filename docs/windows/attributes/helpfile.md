@@ -1,16 +1,9 @@
 ---
-title: "helpfile (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "helpfile (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.helpfile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["helpfile attribute"]
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # helpfile
 
@@ -48,7 +41,7 @@ See the example for [module](module-cpp.md) for an example of how to use **helpf
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)<br/>

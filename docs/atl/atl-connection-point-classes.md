@@ -1,15 +1,8 @@
 ---
-title: "ATL Connection Point Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Connection Point Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFirePropNotifyEvent class, connection point classes", "connection points [C++], ATL classes", "ATL, connection points", "CComDynamicUnkArray class, connection point classes", "CFirePropNotifyEvent class", "CComUnkArray class, connection point classes"]
 ms.assetid: 9582ba71-7ace-4df4-9c9b-1b0636953efc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Connection Point Classes
 
@@ -31,7 +24,6 @@ ATL uses the following classes to support connection points:
 
 - [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) works in conjunction with the event sink map in your class to route events to the appropriate handler function.
 
-## See Also
+## See also
 
 [Connection Point](../atl/atl-connection-points.md)
-

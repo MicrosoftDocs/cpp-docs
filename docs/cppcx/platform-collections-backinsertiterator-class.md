@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::BackInsertIterator Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
+title: "Platform::Collections::BackInsertIterator Class"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BackInsertIterator Class"]
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::BackInsertIterator Class
 
@@ -139,8 +133,8 @@ A reference to the current BackInsertIterator.
 
 By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
-However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#dereference-operator).
+However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#operator-dereference).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Dynamically Binding Data Columns (ODBC) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Recordset: Dynamically Binding Data Columns (ODBC)"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets [C++], binding columns dynamically", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "columns [C++], binding to recordsets"]
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Dynamically Binding Data Columns (ODBC)
 
@@ -25,6 +18,9 @@ Recordsets manage binding table columns that you specify at design time, but the
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. The techniques described generally are not recommended if you are using bulk row fetching. For more information about bulk row fetching, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_when_you_might_bind_columns_dynamically"></a> When You Might Bind Columns Dynamically
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 At design time, the MFC Application Wizard or [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (from **Add Class**) creates recordset classes based on the known tables and columns on your data source. Databases can change between when you design them and later when your application uses those tables and columns at run time. You or another user might add or drop a table or add or drop columns from a table that your application's recordset relies on. This probably is not a concern for all data-access applications, but if it is for yours, how can you cope with changes in the database schema, other than by redesigning and recompiling? The purpose of this topic is to answer that question.
 
@@ -74,7 +70,7 @@ Dynamically binding added columns at run time requires the following steps:
 
    One approach is to build one or more dynamic lists, one for the new columns' names, another for their result values, and a third for their data types (if necessary). These lists, particularly the value list, provide the information and the necessary storage for binding. The following figure illustrates building the lists.
 
-   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "vc37w61")<br/>
+   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "Building lists of columns to bind dynamically")<br/>
    Building Lists of Columns to Bind Dynamically
 
 1. Add an RFX function call in your main recordset's `DoFieldExchange` function for each added column. These RFX calls do the work of fetching a record, including the additional columns, and binding the columns to recordset data members or to your dynamically supplied storage for them.
@@ -164,7 +160,7 @@ For more information about RFX functions, see [Macros and Globals](../../mfc/ref
 
 When the framework calls `DoFieldExchange` during the `Open` process to bind columns to the recordset, the RFX calls for the static columns bind those columns. Then your loop repeatedly calls RFX functions for the dynamic columns.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Working with Large Data Items (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)

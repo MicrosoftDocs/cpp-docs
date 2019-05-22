@@ -1,26 +1,19 @@
 ---
-title: ".Lib Files as Linker Input | Microsoft Docs"
-ms.custom: ""
+title: ".Lib Files as Linker Input"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalDependencies"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OMF libraries", "linking [C++], OMF libraries", "import libraries, linker files", "libraries [C++], .lib files as linker input", "COFF files, import libraries", "default libraries [C++], linker output", "default libraries [C++]", "defaults [C++], libraries", ".lib files"]
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .Lib Files as Linker Input
 
-LINK accepts COFF standard libraries and COFF import libraries, both of which usually have the extension .lib. Standard libraries contain objects and are created by the LIB tool. Import libraries contain information about exports in other programs and are created either by LINK when it builds a program that contains exports or by the LIB tool. For information on using LIB to create standard or import libraries, see [LIB Reference](../../build/reference/lib-reference.md). For details on using LINK to create an import library, see the [/DLL](../../build/reference/dll-build-a-dll.md) option.
+LINK accepts COFF standard libraries and COFF import libraries, both of which usually have the extension .lib. Standard libraries contain objects and are created by the LIB tool. Import libraries contain information about exports in other programs and are created either by LINK when it builds a program that contains exports or by the LIB tool. For information on using LIB to create standard or import libraries, see [LIB Reference](lib-reference.md). For details on using LINK to create an import library, see the [/DLL](dll-build-a-dll.md) option.
 
-A library is specified to LINK as either a file name argument or a default library. LINK resolves external references by searching first in libraries specified on the command line, then in default libraries specified with the [/DEFAULTLIB](../../build/reference/defaultlib-specify-default-library.md) option, and then in default libraries named in .obj files. If a path is specified with the library name, LINK looks for the library in that directory. If no path is specified, LINK looks first in the directory that LINK is running from, and then in any directories specified in the LIB environment variable.
+A library is specified to LINK as either a file name argument or a default library. LINK resolves external references by searching first in libraries specified on the command line, then in default libraries specified with the [/DEFAULTLIB](defaultlib-specify-default-library.md) option, and then in default libraries named in .obj files. If a path is specified with the library name, LINK looks for the library in that directory. If no path is specified, LINK looks first in the directory that LINK is running from, and then in any directories specified in the LIB environment variable.
 
 ## To add .lib files as linker input in the development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Choose the **Input** property page in the **Linker** folder.
 
@@ -28,7 +21,7 @@ A library is specified to LINK as either a file name argument or a default libra
 
 ## To programmatically add .lib files as linker input
 
-- See [AdditionalDependencies](https://msdn.microsoft.com/library/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies.aspx).
+- See [AdditionalDependencies](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies).
 
 ## Example
 
@@ -58,7 +51,7 @@ int main() {
 213
 ```
 
-## See Also
+## See also
 
-[LINK Input Files](../../build/reference/link-input-files.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[LINK Input Files](link-input-files.md)<br/>
+[MSVC Linker Options](linker-options.md)

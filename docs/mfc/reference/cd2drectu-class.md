@@ -1,16 +1,9 @@
 ---
-title: "CD2DRectU Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DRectU Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DRectU", "AFXRENDERTARGET/CD2DRectU", "AFXRENDERTARGET/CD2DRectU::CD2DRectU", "AFXRENDERTARGET/CD2DRectU::IsNull"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DRectU [MFC], CD2DRectU", "CD2DRectU [MFC], IsNull"]
 ms.assetid: a62f17d1-011d-4867-8f51-fd7e7c00561d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DRectU Class
 
@@ -109,6 +102,6 @@ operator CRect();
 
 Current value of D2D rectangle.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

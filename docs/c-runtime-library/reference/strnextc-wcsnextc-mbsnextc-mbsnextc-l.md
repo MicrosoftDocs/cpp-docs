@@ -1,19 +1,12 @@
 ---
-title: "_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l | Microsoft Docs"
-ms.custom: ""
+title: "_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_strnextc", "_mbsnextc_l", "_mbsnextc", "_wcsnextc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["strnextc", "tcsnextc", "_mbsnextc_l", "_mbsnextc", "mbsnextc_l", "ftcsnextc", "mbsnextc", "_tcsnextc", "_wcsnextc", "_ftcsnextc", "_strnextc", "wcsnextc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_mbsnextc function", "_tcsnextc function", "_wcsnextc function", "tcsnextc function", "strnextc function", "mbsnextc function", "_strnextc function", "_mbsnextc_l function", "mbsnextc_l function", "wcsnextc function"]
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
@@ -38,7 +31,6 @@ unsigned int _mbsnextc_l(
    const unsigned char *str,
    _locale_t locale
 );
-
 ```
 
 ### Parameters

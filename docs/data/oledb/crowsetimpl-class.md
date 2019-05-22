@@ -1,16 +1,9 @@
 ---
-title: "CRowsetImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CRowsetImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "GetColumnInfo", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRowsetImpl class", "NameFromDBID method", "SetCommandText method", "GetColumnInfo method", "GetCommandFromID method", "ValidateCommandID method", "m_rgRowData", "m_strCommandText", "m_strIndexText"]
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CRowsetImpl Class
 
@@ -23,13 +16,13 @@ template <
    class T,
    class Storage,
    class CreatorClass,
-   class ArrayType = CAtlArray<Storage>, 
-   class RowClass = CSimpleRow, 
-   class RowsetInterface = IRowsetImpl <T, IRowset> 
+   class ArrayType = CAtlArray<Storage>,
+   class RowClass = CSimpleRow,
+   class RowsetInterface = IRowsetImpl <T, IRowset>
 >
-class CRowsetImpl :  
-   public CComObjectRootEx<CreatorClass::_ThreadModel>, 
-   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>, 
+class CRowsetImpl : 
+   public CComObjectRootEx<CreatorClass::_ThreadModel>,
+   public CRowsetBaseImpl<T, Storage, ArrayType, RowsetInterface>,
    public IRowsetInfoImpl<T, CreatorClass::_PropClass>
 ```
 

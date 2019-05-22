@@ -1,16 +1,8 @@
 ---
-title: "Linking to the CRT in Your ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Linking to the CRT in Your ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["DllMainCRTStartup", "wWinMainCRTStartup", "WinMainCRTStartup"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRT, linking with ATL", "WinMainCRTStartup method", "DllMainCRTStartup method", "wWinMainCRTStartup method", "ATL, C Run-Time library (CRT)"]
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Linking to the CRT in Your ATL Project
 
@@ -28,8 +20,7 @@ For more information, see the linker topic [/ENTRY (Entry-Point Symbol)](../buil
 
 Using the linker option /OPT:NOWIN98 can further reduce a default ATL control by 10K, at the expense of increased loading time on Windows 98 systems. For more information on linking options, see [/OPT (Optimizations)](../build/reference/opt-optimizations.md).
 
-## See Also
+## See also
 
 [Programming with ATL and C Run-Time Code](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLLs and Visual C++ run-time library behavior](../build/run-time-library-behavior.md)
-

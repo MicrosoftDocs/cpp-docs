@@ -1,16 +1,10 @@
 ---
-title: "C Language Reference | Microsoft Docs"
+title: "C Language Reference"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["c"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C", "C, language reference", "Visual C, language reference", "language reference, C"]
 ms.assetid: 3a306c30-8dd2-435b-bd1c-c143b02c0872
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Language Reference
 
@@ -26,6 +20,6 @@ For additional reference material on C++ and the preprocessor, see:
 
 Compiler and linker options are documented in the [C/C++ Building Reference](../build/reference/c-cpp-building-reference.md).
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)

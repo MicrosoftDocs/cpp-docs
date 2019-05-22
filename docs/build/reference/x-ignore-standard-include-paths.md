@@ -1,16 +1,9 @@
 ---
-title: "-X (Ignore Standard Include Paths) | Microsoft Docs"
-ms.custom: ""
+title: "/X (Ignore Standard Include Paths)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/x", "VC.Project.VCCLCompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCCLWCECompilerTool.OVERWRITEStandardIncludePath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/X compiler option [C++]", "include files, ignore standard path", "-X compiler option [C++]", "include directories, ignore standard", "X compiler option", "Ignore Standard Include Paths compiler option"]
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /X (Ignore Standard Include Paths)
 
@@ -24,11 +17,11 @@ Prevents the compiler from searching for include files in directories specified 
 
 ## Remarks
 
-You can use this option with the [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md) (**/I**`directory`) option.
+You can use this option with the [/I (Additional Include Directories)](i-additional-include-directories.md) (**/I**`directory`) option.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -48,7 +41,7 @@ In the following command, `/X` tells the compiler to ignore locations specified 
 CL /X /I \ALT\INCLUDE MAIN.C
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

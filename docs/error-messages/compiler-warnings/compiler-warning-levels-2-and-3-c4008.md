@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (levels 2 and 3) C4008 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (levels 2 and 3) C4008"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4008"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4008"]
 ms.assetid: fb45e535-cb68-4743-80e9-a6e34cfffeca
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (levels 2 and 3) C4008
 

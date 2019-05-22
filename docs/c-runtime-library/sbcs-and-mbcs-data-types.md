@@ -1,16 +1,9 @@
 ---
-title: "SBCS and MBCS Data Types | Microsoft Docs"
-ms.custom: ""
+title: "SBCS and MBCS Data Types"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["MBCS", "SBCS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SBCS and MBCS data types", "data types [C], MBCS and SBCS"]
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # SBCS and MBCS Data Types
 
@@ -29,7 +22,7 @@ Because some SBCS string-handling functions take (signed) **char**<strong>\*</st
 
 1. Use the type-safe statically linked library functions in TCHAR.H. To do so, define the constant **_NO_INLINING** on the command line. This is the slowest method, but the most type-safe.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "_enable | Microsoft Docs"
-ms.custom: ""
+title: "_enable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_enable", "_enable_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["enable intrinsic", "_enable intrinsic", "ssm instruction"]
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _enable
 
@@ -40,6 +33,6 @@ This function is only available in kernel mode. If used in user mode, a Privileg
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

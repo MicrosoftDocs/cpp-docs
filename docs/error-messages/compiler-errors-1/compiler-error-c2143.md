@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2143 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2143"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2143"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2143"]
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2143
 
@@ -32,7 +25,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 By default, C++ assumes that `Ty::PutFuncType` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `PutFuncType` is a template so that it can correctly parse the angle bracket. To correct this error, use the `template` keyword on the dependent type's name, as shown here:
@@ -45,7 +37,6 @@ class MyClass
     {
     };
 };
-
 ```
 
 C2143 can occur when **/clr** is used and a `using` directive has a syntax error:

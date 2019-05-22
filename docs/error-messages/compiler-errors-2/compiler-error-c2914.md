@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2914 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2914"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2914"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2914"]
 ms.assetid: fc6a0592-f53e-4f5a-88cb-780bbed4acf2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2914
 

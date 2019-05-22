@@ -1,19 +1,12 @@
 ---
-title: "difftime, _difftime32, _difftime64 | Microsoft Docs"
-ms.custom: ""
+title: "difftime, _difftime32, _difftime64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_difftime32", "difftime", "_difftime64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_difftime64", "difftime", "difftime64", "_difftime32", "difftime32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_difftime32 function", "difftime function", "time, finding the difference", "difftime64 function", "_difftime64 function", "difftime32 function"]
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # difftime, _difftime32, _difftime64
 
@@ -107,13 +100,12 @@ int main( void )
    elapsed_time = difftime( finish, start );
    printf( "\nProgram takes %6.0f seconds.\n", elapsed_time );
 }
-
 ```
 
 ```Output
-Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038Multiplying 2 floating point numbers 100 million times...Program takes      3 seconds.Multiplying 2 floating point numbers 500 million times...
-
-Program takes      5 seconds.
+Using random floating point numbers 1.04749e+038 2.01482e+038 1.72737e+038
+Multiplying 2 floating point numbers 100 million times...
+Program takes      3 seconds.
 ```
 
 ## See also

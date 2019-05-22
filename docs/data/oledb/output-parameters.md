@@ -1,15 +1,8 @@
 ---
-title: "Output Parameters | Microsoft Docs"
-ms.custom: ""
+title: "Output Parameters"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, calling", "stored procedures, parameters", "procedure calls", "procedure calls, stored procedures"]
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Output Parameters
 
@@ -51,6 +44,6 @@ return 0
 
 The `@_rowcount` outparameter reports how many rows were returned from the test table. However, this stored procedure limits the number of rows to 50. For example, if there were 100 rows in test, the rowcount would be 50 (because this code retrieves only the top 50 rows). If there were only 30 rows in the table, the rowcount would be 30. Be sure to call `Close` or `CloseAll` to populate the outparameter before you fetch its value.
 
-## See Also
+## See also
 
 [Using Stored Procedures](../../data/oledb/using-stored-procedures.md)

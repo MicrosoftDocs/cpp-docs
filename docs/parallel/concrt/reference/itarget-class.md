@@ -1,16 +1,9 @@
 ---
-title: "ITarget Class | Microsoft Docs"
-ms.custom: ""
+title: "ITarget Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ITarget", "AGENTS/concurrency::ITarget", "AGENTS/concurrency::ITarget::propagate", "AGENTS/concurrency::ITarget::send", "AGENTS/concurrency::ITarget::supports_anonymous_source", "AGENTS/concurrency::ITarget::link_source", "AGENTS/concurrency::ITarget::unlink_source", "AGENTS/concurrency::ITarget::unlink_sources"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ITarget class"]
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ITarget Class
 
@@ -191,7 +184,7 @@ When overridden in a derived class, unlinks all source blocks from this `ITarget
 virtual void unlink_sources() = 0;
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [ISource Class](isource-class.md)

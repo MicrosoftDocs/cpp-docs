@@ -1,15 +1,8 @@
 ---
-title: "Explicit Overrides (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Explicit Overrides (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["virtual functions [C++], explicit overrides", "overriding, functions", "derived classes [C++], virtual functions", "explicit virtual function overrides", "explicit override of virtual function"]
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicit Overrides (C++)
 
@@ -17,7 +10,7 @@ ms.workload: ["cplusplus"]
 
 If the same virtual function is declared in two or more [interfaces](../cpp/interface.md) and if a class is derived from these interfaces, you can explicitly override each virtual function.
 
-For information on explicit overrides in managed code using the new managed syntax, see [Explicit Overrides](../windows/explicit-overrides-cpp-component-extensions.md).
+For information on explicit overrides in managed code using C++/CLI, see [Explicit Overrides](../extensions/explicit-overrides-cpp-component-extensions.md).
 
 **END Microsoft Specific**
 
@@ -100,7 +93,7 @@ int main() {
 
    // Cast to a CMyClass pointer so that the destructor gets called
       CMyClass *p = dynamic_cast<CMyClass *>(pIMyInt1);
-      delete p;
+      delete p;
 }
 ```
 

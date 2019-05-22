@@ -1,15 +1,8 @@
 ---
-title: "Using an Import Library and Export File | Microsoft Docs"
-ms.custom: ""
+title: "Using an Import Library and Export File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["circular exports", "import libraries, using", "export files"]
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Using an Import Library and Export File
 
@@ -25,6 +18,6 @@ After you create the import library (.lib) and the export file (.exp) for the pr
 
 Finally, link the program you began with. In the LINK command, specify the objects and libraries for the program, the .exp file that LIB created for the program, and the import library or libraries for the exports used by the program. To continue the example, the LINK command for ONE.dll contains ONE.exp and TWO.lib, as well as the objects and libraries that go into ONE.dll. Do not specify the .def file or /EXPORT specifications in the LINK command; these are not needed, because the export definitions are contained in the .exp file. When you link using an .exp file, LINK does not create an import library, because it assumes that one was created when the .exp file was created.
 
-## See Also
+## See also
 
-[Working with Import Libraries and Export Files](../../build/reference/working-with-import-libraries-and-export-files.md)
+[Working with Import Libraries and Export Files](working-with-import-libraries-and-export-files.md)

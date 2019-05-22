@@ -1,16 +1,9 @@
 ---
-title: "OLE DB Provider Templates Reference | Microsoft Docs"
-ms.custom: ""
+title: "OLE DB Provider Templates Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["vc.templates.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB provider templates"]
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates Reference
 
@@ -51,7 +44,7 @@ Implements the `IDBSchemaRowset` interface and the templatized creator function 
 Opens and returns a rowset that includes all rows from a single base table or index. Mandatory interface for a session object.
 
 [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)<br/>
-Implements the OLE DB [IRowsetChange](/previous-versions/windows/desktop/ms715790) interface, which enables updating of the values of columns in existing rows, deleting rows, and inserting new rows.
+Implements the OLE DB [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) interface, which enables updating of the values of columns in existing rows, deleting rows, and inserting new rows.
 
 [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)<br/>
 This class inherits from [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). `IRowsetCreatorImpl` performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS` and `DBPROPCANFETCHBACKWARDS`.
@@ -66,13 +59,13 @@ Provides an implementation of the `IRowset` interface, which is the base rowset 
 Implements the rowset properties by using the property set map defined in your command class. Mandatory interface on rowsets.
 
 [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)<br/>
-Implements the OLE DB [IRowsetLocate](/previous-versions/windows/desktop/ms721190) interface, which fetches arbitrary rows from a rowset. To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.
+Implements the OLE DB [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) interface, which fetches arbitrary rows from a rowset. To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.
 
 [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md)<br/>
-Implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset. Consumers that handle notifications implement [IRowsetNotify](/previous-versions/windows/desktop/ms712959) and register it on that connection point.
+Implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset. Consumers that handle notifications implement [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)) and register it on that connection point.
 
 [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)<br/>
-Implements the OLE DB [IRowsetUpdate](/previous-versions/windows/desktop/ms714401) interface, which enables consumers to delay the transmission of changes made with [IRowsetChange](/previous-versions/windows/desktop/ms715790) to the data source and undo changes before transmission.
+Implements the OLE DB [IRowsetUpdate](/previous-versions/windows/desktop/ms714401(v=vs.85)) interface, which enables consumers to delay the transmission of changes made with [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) to the data source and undo changes before transmission.
 
 ## Command Classes
 
@@ -108,9 +101,9 @@ Implements properties for a variety of OLE DB property interfaces (for example, 
 
 [IErrorRecordsImpl](../../data/oledb/ierrorrecordsimpl-class.md)
 
-Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112) interface, adding records to and retrieving records from a data member.
+Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [OLE DB Templates](../../data/oledb/ole-db-templates.md)

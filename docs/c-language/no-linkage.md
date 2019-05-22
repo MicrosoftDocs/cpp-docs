@@ -1,15 +1,8 @@
 ---
-title: "No Linkage | Microsoft Docs"
-ms.custom: ""
+title: "No Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["no linkage", "linkage [C++], none"]
 ms.assetid: 5a413082-1034-4e04-b76b-8d14668bf434
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # No Linkage
 
@@ -25,6 +18,6 @@ The following identifiers have no linkage:
 
 If an identifier has no linkage, declaring the same name again (in a declarator or type specifier) in the same scope level generates a symbol redefinition error.
 
-## See Also
+## See also
 
 [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)

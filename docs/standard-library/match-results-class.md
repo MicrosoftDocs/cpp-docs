@@ -1,16 +1,9 @@
 ---
-title: "match_results Class | Microsoft Docs"
-ms.custom: ""
+title: "match_results Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["regex/std::match_results"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["match_results class"]
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # match_results Class
 
@@ -79,7 +72,7 @@ The template class describes an object that controls a non-modifiable sequence o
 |Operator|Description|
 |-|-|
 |[operator=](#op_eq)|Copy a match_results object.|
-|[operator[]](#op_at)|Access a subobject.|
+|[operator\[\]](#op_at)|Access a subobject.|
 
 ## Requirements
 

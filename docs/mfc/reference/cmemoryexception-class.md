@@ -1,16 +1,9 @@
 ---
-title: "CMemoryException Class | Microsoft Docs"
-ms.custom: ""
+title: "CMemoryException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMemoryException", "AFX/CMemoryException", "AFX/CMemoryException::CMemoryException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMemoryException [MFC], CMemoryException"]
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMemoryException Class
 
@@ -62,8 +55,7 @@ CMemoryException();
 
 Do not use this constructor directly, but rather call the global function [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception). this global function can succeed in an out-of-memory situation because it constructs the exception object in previously allocated memory. for more information about exception processing, see the article [exceptions](../exception-handling-in-mfc.md).
 
-## See Also
+## See also
 
 [CException Class](cexception-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)
-

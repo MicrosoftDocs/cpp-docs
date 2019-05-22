@@ -1,15 +1,8 @@
 ---
-title: "Displaying and Manipulating Data in a Form | Microsoft Docs"
-ms.custom: ""
+title: "Displaying and Manipulating Data in a Form"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["forms [C++], displaying data", "displaying data [C++], forms", "ODBC [C++], forms", "record views [C++], displaying data", "data [MFC]", "data [MFC], displaying in a form"]
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Displaying and Manipulating Data in a Form
 
@@ -19,6 +12,6 @@ You can use the MFC Application Wizard or **Add Class** (as described in [Adding
 
 The record view and its recordset are destroyed when you close the document. For more information about record views, see [Record Views](../../data/record-views-mfc-data-access.md). For more information about RFX, see [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

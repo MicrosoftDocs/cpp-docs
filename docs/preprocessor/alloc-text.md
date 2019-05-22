@@ -1,16 +1,9 @@
 ---
-title: "alloc_text | Microsoft Docs"
-ms.custom: ""
+title: "alloc_text"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.alloc_text", "alloc_text_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["alloc_text pragma", "pragmas, alloc_text"]
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # alloc_text
 Names the code section where the specified function definitions are to reside. The pragma must occur between a function declarator and the function definition for the named functions.
@@ -39,6 +32,6 @@ Other limitations on **alloc_text** are as follows:
 
 - It must be used after the function has been declared, but before the function has been defined.
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

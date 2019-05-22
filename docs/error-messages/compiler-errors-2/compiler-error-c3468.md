@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3468 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3468"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3468"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3468"]
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3468
 
@@ -20,7 +13,7 @@ ms.workload: ["cplusplus"]
 
 Only types in an assembly can be forwarded.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

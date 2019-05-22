@@ -1,19 +1,12 @@
 ---
-title: "_getdiskfree | Microsoft Docs"
-ms.custom: ""
+title: "_getdiskfree"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_getdiskfree"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["getdiskfree", "_getdiskfree"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["diskfree_t type", "_getdiskfree function", "_diskfree_t type", "disk size", "getdiskfree function"]
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getdiskfree
 

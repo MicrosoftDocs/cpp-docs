@@ -1,15 +1,8 @@
 ---
-title: "Creating Your Dialog Class | Microsoft Docs"
-ms.custom: ""
+title: "Creating Your Dialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "files [MFC], creating", "dialog classes [MFC], Add Class Wizard", "dialog classes [MFC], creating"]
 ms.assetid: d5321741-da41-47a8-bb1c-6a0e8b28c4c1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Your Dialog Class
 
@@ -29,8 +22,7 @@ In the .CPP file:
 
 - An override of the [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) member function. Edit this function. It is used for dialog data exchange and validation capabilities as described later in [Dialog data exchange and validation](../mfc/dialog-data-exchange-and-validation.md).
 
-## See Also
+## See also
 
 [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

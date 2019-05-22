@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2191 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2191"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2191"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2191"]
 ms.assetid: 051b8350-e5de-4f51-ab6e-96d32366bcef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2191
 

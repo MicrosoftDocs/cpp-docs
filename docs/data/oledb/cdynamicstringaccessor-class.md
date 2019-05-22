@@ -1,16 +1,9 @@
 ---
-title: "CDynamicStringAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CDynamicStringAccessor Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessor", "CDynamicStringAccessor.GetString", "CDynamicStringAccessor::GetString", "CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessor class", "GetString method", "SetString method"]
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessor Class
 
@@ -116,7 +109,7 @@ The second override form takes the column name as an ANSI string and the third o
 
 If _SECURE_ATL is defined to have a nonzero value, a runtime assertion failure will be generated if the input *data* string is longer than the maximum allowable length of the referenced data column. Otherwise, the input string will be truncated if it is longer than the maximum allowable length.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

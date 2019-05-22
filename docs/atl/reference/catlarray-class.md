@@ -1,16 +1,9 @@
 ---
-title: "CAtlArray Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlArray Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlArray", "ATLCOLL/ATL::CAtlArray", "ATLCOLL/ATL::Add", "ATLCOLL/ATL::Append", "ATLCOLL/ATL::AssertValid", "ATLCOLL/ATL::Copy", "ATLCOLL/ATL::FreeExtra", "ATLCOLL/ATL::GetAt", "ATLCOLL/ATL::GetCount", "ATLCOLL/ATL::GetData", "ATLCOLL/ATL::InsertArrayAt", "ATLCOLL/ATL::InsertAt", "ATLCOLL/ATL::IsEmpty", "ATLCOLL/ATL::RemoveAll", "ATLCOLL/ATL::RemoveAt", "ATLCOLL/ATL::SetAt", "ATLCOLL/ATL::SetAtGrow", "ATLCOLL/ATL::SetCount", "ATLCOLL/ATL::INARGTYPE", "ATLCOLL/ATL::OUTARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlArray class"]
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlArray Class
 
@@ -527,11 +520,11 @@ Replaces the value of the element pointed to by the index. If *iElement* is larg
 
 [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]
 
-## See Also
+## See also
 
-[MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
-[DynamicConsumer Sample](../../visual-cpp-samples.md)<br/>
-[UpdatePV Sample](../../visual-cpp-samples.md)<br/>
-[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[MMXSwarm Sample](../../overview/visual-cpp-samples.md)<br/>
+[DynamicConsumer Sample](../../overview/visual-cpp-samples.md)<br/>
+[UpdatePV Sample](../../overview/visual-cpp-samples.md)<br/>
+[Marquee Sample](../../overview/visual-cpp-samples.md)<br/>
 [CArray Class](../../mfc/reference/carray-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

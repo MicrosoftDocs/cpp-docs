@@ -1,14 +1,7 @@
 ---
-title: "Arguments to main | Microsoft Docs"
-ms.custom: ""
+title: "Arguments to main"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 39824fef-05ad-461d-ae82-49447dda8060
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Arguments to main
 
@@ -34,6 +27,6 @@ A program invoked with no command-line arguments will receive a value of one for
 
 The parameters **argc** and **argv** are modifiable and retain their last-stored values between program startup and program termination.
 
-## See Also
+## See also
 
 [Environment](../c-language/environment.md)

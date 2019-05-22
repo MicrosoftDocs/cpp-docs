@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4703 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4703"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4703"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4703"]
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4703
 
@@ -45,7 +38,6 @@ void main()
 ```Output
 c:\src\test.cpp(10) : warning C4701: potentially uninitialized local variable 'p' used
 c:\src\test.cpp(10) : warning C4703: potentially uninitialized local pointer variable 'p' used
-
 ```
 
 To correct this warning, initialize the variable as shown in this example:
@@ -70,7 +62,7 @@ void main()
 }
 ```
 
-## See Also
+## See also
 
 [Compiler Warning (level 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)<br/>
-[Warnings, /sdl, and improving uninitialized variable detection](http://blogs.msdn.com/b/sdl/archive/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection.aspx)
+[Warnings, /sdl, and improving uninitialized variable detection](https://www.microsoft.com/security/blog/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/)

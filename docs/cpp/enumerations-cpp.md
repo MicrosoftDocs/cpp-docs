@@ -1,30 +1,23 @@
 ---
-title: "Enumerations (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Enumerations (C++)"
 ms.date: "06/01/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["enum_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, enumerations", "enumerators, declaring", "enum keyword [C++]", "named constants, enumeration declarations", "declaring enumerations"]
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Enumerations (C++)
 
 An enumeration is a user-defined type that consists of a set of named integral constants that are known as enumerators.
 
 > [!NOTE]
->  This article covers the ISO Standard C++ Language **enum** type and the scoped (or strongly-typed) **enum class** type which is introduced in C++11. For information about the **public enum class** or **private enum class** types in C++/CLI and C++/CX, see [enum class](../windows/enum-class-cpp-component-extensions.md).
+>  This article covers the ISO Standard C++ Language **enum** type and the scoped (or strongly-typed) **enum class** type which is introduced in C++11. For information about the **public enum class** or **private enum class** types in C++/CLI and C++/CX, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ## Syntax
 
 ```
 // unscoped enum:
 enum [identifier] [: type]
-{enum-list}; 
+{enum-list};
 
 // scoped enum:
 enum [class|struct]
@@ -119,19 +112,20 @@ Using implicit conversions in this way can lead to unintended side-effects. To h
 ```cpp
 namespace ScopedEnumConversions
 {
-    enum class Suit { Diamonds, Hearts, Clubs, Spades };
+    enum class Suit { Diamonds, Hearts, Clubs, Spades };
 
-    void AttemptConversions()
+    void AttemptConversions()
     {
-        Suit hand; 
-        hand = Clubs; // error C2065: 'Clubs' : undeclared identifier
-        hand = Suit::Clubs; //Correct.
-        int account_num = 135692;
-        hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'
-        hand = static_cast<Suit>(account_num); // OK, but probably a bug!!!
+        Suit hand;
+        hand = Clubs; // error C2065: 'Clubs' : undeclared identifier
+        hand = Suit::Clubs; //Correct.
+        int account_num = 135692;
+        hand = account_num; // error C2440: '=' : cannot convert from 'int' to 'Suit'
+        hand = static_cast<Suit>(account_num); // OK, but probably a bug!!!
 
-        account_num = Suit::Hearts; // error C2440: '=' : cannot convert from 'Suit' to 'int'
-        account_num = static_cast<int>(Suit::Hearts); // OK
+        account_num = Suit::Hearts; // error C2440: '=' : cannot convert from 'Suit' to 'int'
+        account_num = static_cast<int>(Suit::Hearts); // OK
+    }
 }
 ```
 

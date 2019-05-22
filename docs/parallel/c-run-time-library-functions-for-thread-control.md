@@ -1,15 +1,8 @@
 ---
-title: "C Run-Time Library Functions for Thread Control | Microsoft Docs"
-ms.custom: ""
+title: "C Run-Time Library Functions for Thread Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_beginthread function", "_endthread function", "threading [C++], controlling threads", "multithreading [C++], controlling threads", "_beginthreadex function", "_endthreadex function"]
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Run-Time Library Functions for Thread Control
 
@@ -38,6 +31,6 @@ The `_beginthread` and `_beginthreadex` functions create a new thread. A thread 
 
 The [_endthread](../c-runtime-library/reference/endthread-endthreadex.md) function terminates a thread created by `_beginthread` (and similarly, `_endthreadex` terminates a thread created by `_beginthreadex`). Threads terminate automatically when they finish. `_endthread` and `_endthreadex` are useful for conditional termination from within a thread. A thread dedicated to communications processing, for example, can quit if it is unable to get control of the communications port.
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

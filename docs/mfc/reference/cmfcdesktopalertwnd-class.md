@@ -1,16 +1,9 @@
 ---
-title: "CMFCDesktopAlertWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDesktopAlertWnd Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::Create", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetCaptionHeight", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetDialogSize", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetLastPos", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetTransparency", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::HasSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnBeforeShow", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnClickLinkButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnDraw", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::ProcessCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWnd [MFC], Create", "CMFCDesktopAlertWnd [MFC], GetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], GetAnimationType", "CMFCDesktopAlertWnd [MFC], GetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], GetCaptionHeight", "CMFCDesktopAlertWnd [MFC], GetDialogSize", "CMFCDesktopAlertWnd [MFC], GetLastPos", "CMFCDesktopAlertWnd [MFC], GetTransparency", "CMFCDesktopAlertWnd [MFC], HasSmallCaption", "CMFCDesktopAlertWnd [MFC], OnBeforeShow", "CMFCDesktopAlertWnd [MFC], OnClickLinkButton", "CMFCDesktopAlertWnd [MFC], OnCommand", "CMFCDesktopAlertWnd [MFC], OnDraw", "CMFCDesktopAlertWnd [MFC], ProcessCommand", "CMFCDesktopAlertWnd [MFC], SetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], SetAnimationType", "CMFCDesktopAlertWnd [MFC], SetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], SetSmallCaption", "CMFCDesktopAlertWnd [MFC], SetTransparency"]
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWnd Class
 
@@ -81,7 +74,7 @@ Use the following functions to control the behavior of the desktop alert window:
 
 ## Example
 
-The following example illustrates how to use various methods in the `CMFCDesktopAlertWnd` class to configure a `CMFCDesktopAlertWnd` object. The example shows how to set an animation type, set the transparency of the pop-up window, specify that the alert window displays a small caption, and set the time that elapses before the alert window automatically closes. The example also demonstrates how to create and initialize the desktop alert window. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).
+The following example illustrates how to use various methods in the `CMFCDesktopAlertWnd` class to configure a `CMFCDesktopAlertWnd` object. The example shows how to set an animation type, set the transparency of the pop-up window, specify that the alert window displays a small caption, and set the time that elapses before the alert window automatically closes. The example also demonstrates how to create and initialize the desktop alert window. This code snippet is part of the [Desktop Alert Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#1](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwnd-class_1.cpp)]
 
@@ -452,7 +445,7 @@ virtual CSize GetDialogSize();
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

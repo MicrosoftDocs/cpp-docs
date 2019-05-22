@@ -1,15 +1,8 @@
 ---
-title: "Interpreting User Input Through a View | Microsoft Docs"
-ms.custom: ""
+title: "Interpreting User Input Through a View"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interpreting user input through views [MFC]", "views [MFC], user interface and input", "input [MFC], view class [MFC]", "CView class [MFC], interpreting user input", "user input [MFC], interpreting through view class [MFC]"]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interpreting User Input Through a View
 
@@ -35,7 +28,6 @@ For example, your application might need to implement direct mouse drawing in th
 
 Your view might also handle certain menu commands, such as those from the Edit menu to cut, copy, paste, or delete selected data using the Clipboard. Such a handler would call some of the Clipboard-related member functions of class `CWnd` to transfer a selected data item to or from the Clipboard.
 
-## See Also
+## See also
 
 [Using Views](../mfc/using-views.md)
-

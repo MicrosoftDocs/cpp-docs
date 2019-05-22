@@ -1,15 +1,8 @@
 ---
-title: "Last Character in a String | Microsoft Docs"
-ms.custom: ""
+title: "Last Character in a String"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["last character in string", "MBCS [C++], last character in string"]
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Last Character in a String
 
@@ -37,7 +30,7 @@ Use the following tips:
 
    This code uses the MBCS functions `_mbsrchr` and `_mbsinc`. Because these functions are MBCS-aware, they can distinguish between a '\\' character and a trail byte '\\'. The code performs some action if the last character in the string is a null ('\0').
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Character Assignment](../text/character-assignment.md)

@@ -1,15 +1,8 @@
 ---
-title: "Steps in a Typical FTP Client Application to Delete a File | Microsoft Docs"
-ms.custom: ""
+title: "Steps in a Typical FTP Client Application to Delete a File"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Internet client applications [MFC], FTP delete", "WinInet classes [MFC], FTP", "FTP (File Transfer Protocol) [MFC], client applications", "Internet applications [MFC], FTP client applications"]
 ms.assetid: 2c347a96-c0a4-4827-98fe-668406e552bc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical FTP Client Application to Delete a File
 
@@ -27,7 +20,7 @@ The following table shows the steps you might perform in a typical FTP client ap
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|
 |End the FTP session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|
 
-## See Also
+## See also
 
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>

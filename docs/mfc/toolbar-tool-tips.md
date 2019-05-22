@@ -1,15 +1,8 @@
 ---
-title: "Toolbar Tool Tips | Microsoft Docs"
-ms.custom: ""
+title: "Toolbar Tool Tips"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], activating", "CBRS_TOOLTIPS constant [MFC]", "tool tips [MFC], adding text", "updates [MFC]", "CBRS_FLYBY constant [MFC]", "tool tips [MFC]", "updating status bar messages", "updates, status bar messages", "status bars [MFC], tool tips", "flyby status bar updates"]
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Toolbar Tool Tips
 
@@ -60,7 +53,6 @@ A feature related to tool tips is "flyby" status bar updating. By default, the m
 
 - [Using your old toolbars](../mfc/using-your-old-toolbars.md)
 
-## See Also
+## See also
 
 [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "ATL COM Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "ATL COM Property Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages, COM", "ATL COM objects", "COM property pages", "property pages, ATL", "COM objects, ATL", "ATL property pages"]
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL COM Property Pages
 
@@ -31,13 +24,12 @@ Lists the steps for implementing property pages, including methods to override. 
 
 ## Related Sections
 
-[ATLPages Sample](../visual-cpp-samples.md)<br/>
+[ATLPages Sample](../overview/visual-cpp-samples.md)<br/>
 The sample abstract for the ATLPages sample, which implements a property page using `IPropertyPageImpl`.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Provides links to conceptual topics on how to program using the Active Template Library.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)
-

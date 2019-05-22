@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1181 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1181"
 ms.date: "08/22/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1181"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1181"]
 ms.assetid: 984b0db6-e331-4284-b2a7-a212fe96c486
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1181
 
@@ -32,6 +25,6 @@ Another possible cause for LNK1181 is that a long file name with embedded spaces
 
 Compiling with the [/P (Preprocess to a File)](../../build/reference/p-preprocess-to-a-file.md) option can result in LNK1181 because that option suppresses the creation of .obj files.
 
-## See Also
+## See also
 
 [/LIBPATH (Additional Libpath)](../../build/reference/libpath-additional-libpath.md)

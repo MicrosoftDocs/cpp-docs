@@ -1,16 +1,9 @@
 ---
-title: "CSnapInPropertyPageImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "CSnapInPropertyPageImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CancelToClose", "ATLSNAP/ATL::CSnapInPropertyPageImpl::Create", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnApply", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnHelp", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnKillActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnQueryCancel", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnReset", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnSetActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardBack", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardFinish", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardNext", "ATLSNAP/ATL::CSnapInPropertyPageImpl::QuerySiblings", "ATLSNAP/ATL::CSnapInPropertyPageImpl::SetModified", "ATLSNAP/ATL::CSnapInPropertyPageImpl::m_psp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["snap-ins, property pages", "snap-ins", "property pages, ATL", "CSnapInPropertyPageImpl class"]
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSnapInPropertyPageImpl Class
 
@@ -327,6 +320,6 @@ void SetModified(BOOL bChanged = TRUE);
 
 The property sheet keeps track of which pages are "dirty," that is, property pages for which you have called `SetModified( TRUE )`. The **Apply Now** button will always be enabled if you call `SetModified( TRUE )` for one of the pages. The **Apply Now** button will be disabled when you call `SetModified( FALSE )` for one of the pages, but only if none of the other pages is "dirty."
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

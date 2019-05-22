@@ -1,19 +1,12 @@
 ---
-title: "atoi, _atoi_l, _wtoi, _wtoi_l | Microsoft Docs"
-ms.custom: ""
+title: "atoi, _atoi_l, _wtoi, _wtoi_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wtoi", "_wtoi_l", "atoi", "_atoi_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_tstoi", "_wtoi", "_ttoi", "atoi", "_atoi_l", "_wtoi_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_atoi_l function", "ttoi function", "atoi_l function", "string conversion, to integers", "_wtoi function", "wtoi_l function", "tstoi function", "_ttoi function", "_tstoi function", "_wtoi_l function", "atoi function", "wtoi function"]
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # atoi, _atoi_l, _wtoi, _wtoi_l
 
@@ -108,7 +101,7 @@ int main( void )
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );
 
     // Another example of the atoi function
-    // with an overflow condition occuring.
+    // with an overflow condition occurring.
     str = "3336402735171707160320";
     value = atoi( str );
     printf( "Function: atoi( \"%s\" ) = %d\n", str, value );

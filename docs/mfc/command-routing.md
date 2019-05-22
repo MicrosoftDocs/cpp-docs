@@ -1,15 +1,8 @@
 ---
-title: "Command Routing | Microsoft Docs"
-ms.custom: ""
+title: "Command Routing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command Routing
 
@@ -39,7 +32,6 @@ How expensive is this routing mechanism Compared to what your handler does in re
 
 Where numbered entries in the second column of the preceding table mention other objects, such as a document, see the corresponding item in the first column. For instance, when you read in the second column that the view forwards a command to its document, see the "Document" entry in the first column to follow the routing further.
 
-## See Also
+## See also
 
 [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-

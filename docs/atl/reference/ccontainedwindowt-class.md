@@ -1,16 +1,9 @@
 ---
-title: "CContainedWindowT Class | Microsoft Docs"
-ms.custom: ""
+title: "CContainedWindowT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CContainedWindowT", "ATLWIN/ATL::CContainedWindowT", "ATLWIN/ATL::CContainedWindowT::CContainedWindowT", "ATLWIN/ATL::CContainedWindowT::Create", "ATLWIN/ATL::CContainedWindowT::DefWindowProc", "ATLWIN/ATL::CContainedWindowT::GetCurrentMessage", "ATLWIN/ATL::CContainedWindowT::RegisterWndSuperclass", "ATLWIN/ATL::CContainedWindowT::SubclassWindow", "ATLWIN/ATL::CContainedWindowT::SwitchMessageMap", "ATLWIN/ATL::CContainedWindowT::UnsubclassWindow", "ATLWIN/ATL::CContainedWindowT::WindowProc", "ATLWIN/ATL::CContainedWindowT::m_dwMsgMapID", "ATLWIN/ATL::CContainedWindowT::m_lpszClassName", "ATLWIN/ATL::CContainedWindowT::m_pfnSuperWindowProc", "ATLWIN/ATL::CContainedWindowT::m_pObject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CContainedWindow class", "contained windows", "CContainedWindowT class"]
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CContainedWindowT Class
 
@@ -197,7 +190,7 @@ HWND Create(
 [in] The handle to the parent or owner window.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.
 
 *szWindowName*<br/>
 [in] Specifies the name of the window. The default value is NULL.
@@ -257,7 +250,7 @@ The result of the message processing.
 
 ### Remarks
 
-By default, `DefWindowProc` calls the [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
+By default, `DefWindowProc` calls the [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage
 
@@ -443,7 +436,7 @@ The result of the message processing.
 
 `WindowProc` directs messages to the message map identified by [m_dwMsgMapID](#m_dwmsgmapid). If necessary, `WindowProc` calls [DefWindowProc](#defwindowproc) for additional message processing.
 
-## See Also
+## See also
 
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [CWindowImpl Class](../../atl/reference/cwindowimpl-class.md)<br/>

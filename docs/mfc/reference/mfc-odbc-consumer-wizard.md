@@ -1,21 +1,18 @@
 ---
-title: "MFC ODBC Consumer Wizard | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/03/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.codewiz.class.mfc.consumer.overview"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["MFC ODBC Consumer Wizard", "wizards [MFC]"]
+title: "MFC ODBC Consumer Wizard"
+ms.date: "05/09/2019"
+helpviewer_keywords: ["wizards [MFC]"]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ODBC Consumer Wizard
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 This wizard sets up an ODBC recordset class and the data bindings necessary to access the specified data source.
 
@@ -23,30 +20,30 @@ This wizard sets up an ODBC recordset class and the data bindings necessary to a
 
 - **Data Source**
 
-   The **Data Source** button lets you set up the specified data source using the specified ODBC driver. For more information about data source files (DSN), see [File Data Sources](/previous-versions/windows/desktop/ms715401) in the ODBC SDK.
+  The **Data Source** button lets you set up the specified data source using the specified ODBC driver. For more information about data source files (DSN), see [File Data Sources](/sql/odbc/reference/file-data-sources) in the ODBC SDK.
 
-   The **Select Data Source** dialog box has two tabs:
+  The **Select Data Source** dialog box has two tabs:
 
-   - **File Data Source** tab:
+  - **File Data Source** tab:
 
-      The **Look in** box specifies the directory in which to select files to be used as data sources. The default is \Program Files\Common Files\ODBC\Data Sources. The existing file data sources (.dsn files) appear in the main list box. You can either set up the data sources ahead of time using the **File DSN** tab on the [ODBC Data Source Administrator](/previous-versions/windows/desktop/ms714024), or create new ones using this dialog box.
+     The **Look in** box specifies the directory in which to select files to be used as data sources. The default is \Program Files\Common Files\ODBC\Data Sources. The existing file data sources (.dsn files) appear in the main list box. You can either set up the data sources ahead of time using the **File DSN** tab on the [ODBC Data Source Administrator](/sql/odbc/admin/odbc-data-source-administrator), or create new ones using this dialog box.
 
-      To create a new file data source from this dialog box, click `New` to specify a DSN name; the **Create New Data Source** dialog box appears. In the **Create New Data Source** dialog box, select an appropriate driver and click `Next`; click **Browse**, and select the name of the file to be used as a data source (you have to select "All Files" to view non-DSN files, such as .xls files); click `Next`, and then click **Finish**. (If you selected a non-DSN file, you will get a driver-specific dialog box, such as "ODBC Microsoft Excel Setup," which will convert the file to a DSN.)
+     To create a new file data source from this dialog box, click `New` to specify a DSN name; the **Create New Data Source** dialog box appears. In the **Create New Data Source** dialog box, select an appropriate driver and click `Next`; click **Browse**, and select the name of the file to be used as a data source (you have to select "All Files" to view non-DSN files, such as .xls files); click `Next`, and then click **Finish**. (If you selected a non-DSN file, you will get a driver-specific dialog box, such as "ODBC Microsoft Excel Setup," which will convert the file to a DSN.)
 
-      > [!NOTE]
-      > You can also create a new file data source beforehand using the ODBC Data Source Administrator. From the **Start** menu, select **Settings**, **Control Panel**, **Administrative Tools**, **Data Sources (ODBC)**, and then **ODBC Data Source Administrator**.
+     > [!NOTE]
+     > You can also create a new file data source beforehand using the ODBC Data Source Administrator. From the **Start** menu, select **Settings**, **Control Panel**, **Administrative Tools**, **Data Sources (ODBC)**, and then **ODBC Data Source Administrator**.
 
-      The **DSN Name** box allows you to specify a name for the file data source. You must ensure that the DSN name ends with the appropriate file extension, such as .xls for Excel files or .mdb for Access files.
+     The **DSN Name** box allows you to specify a name for the file data source. You must ensure that the DSN name ends with the appropriate file extension, such as .xls for Excel files or .mdb for Access files.
 
-      For more information on DSNs, see [File Data Sources](/previous-versions/windows/desktop/ms715401) in the ODBC SDK.
+     For more information on DSNs, see [File Data Sources](/sql/odbc/reference/file-data-sources) in the ODBC SDK.
 
-   - **Machine Data Source** tab:
+  - **Machine Data Source** tab:
 
-      This tab lists system and User DATA sources. User data sources are specific to a user on this machine. System data sources can be used by all users on this machine or on a systemwide service. See [Machine Data Sources](/previous-versions/windows/desktop/ms710952) in the ODBC SDK
+     This tab lists system and User DATA sources. User data sources are specific to a user on this machine. System data sources can be used by all users on this machine or on a systemwide service. See [Machine Data Sources](/sql/odbc/reference/machine-data-sources) in the ODBC SDK
 
-      For more information on ODBC data sources, see [Data Sources](/previous-versions/windows/desktop/ms711688) in the ODBC SDK.
+     For more information on ODBC data sources, see [Data Sources](/sql/odbc/reference/data-sources) in the ODBC SDK.
 
-   Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table or view that the consumer will use. Note that you can select multiple views and tables by holding the control key while clicking on the items. Click **OK** to finish.
+  Click **OK** to finish. The **Select Database Object** dialog box appears. From this dialog box, select the table or view that the consumer will use. Note that you can select multiple views and tables by holding the control key while clicking on the items. Click **OK** to finish.
 
 - **Class**
 
@@ -72,8 +69,9 @@ This wizard sets up an ODBC recordset class and the data bindings necessary to a
 
    Specifies whether all columns in the selected table are bound. If you select this box (default), all columns are bound; if you do not select this box, no columns are bound, and you must bind them manually in the recordset class.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

@@ -1,14 +1,7 @@
 ---
-title: "File System Navigation | Microsoft Docs"
-ms.custom: ""
+title: "File System Navigation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: f7cc5f5e-a541-4e00-87c7-a3769ef6096d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # File System Navigation
 

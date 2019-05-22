@@ -1,19 +1,12 @@
 ---
-title: "__security_init_cookie | Microsoft Docs"
-ms.custom: ""
+title: "__security_init_cookie"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["__security_init_cookie"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["security_init_cookie", "__security_init_cookie"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["security cookie [C++]", "__security_init_cookie function", "security_init_cookie function", "global security cookie"]
 ms.assetid: 32119905-0897-4a1c-84ca-bffd16c9b2af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __security_init_cookie
 

@@ -1,14 +1,9 @@
 ---
-title: "How to: Create and Use CComPtr and CComQIPtr Instances | Microsoft Docs"
+title: "How to: Create and Use CComPtr and CComQIPtr Instances"
 ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use CComPtr and CComQIPtr Instances
 
@@ -38,4 +33,4 @@ ATL also provides `CComQIPtr`, which has a simpler syntax for querying a COM obj
 
 ## See also
 
-[Smart Pointers](../cpp/smart-pointers-modern-cpp.md)
+[Smart Pointers (Modern C++)](../cpp/smart-pointers-modern-cpp.md)

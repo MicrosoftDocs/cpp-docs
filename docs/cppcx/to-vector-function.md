@@ -1,16 +1,9 @@
 ---
-title: "to_vector Function | Microsoft Docs"
-ms.custom: ""
+title: "to_vector Function"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 f1_keywords: ["collection/Windows::Foundation::Collections::to_vector"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["to_vector Function"]
 ms.assetid: 9cdd5123-7243-4def-a1d3-162e0bf6219e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # to_vector Function
 
@@ -42,6 +35,6 @@ An IVector or IVectorView interface that provides access to an underlying Vector
 
 **Namespace:** Windows::Foundation::Collections
 
-## See Also
+## See also
 
 [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

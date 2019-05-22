@@ -1,16 +1,9 @@
 ---
-title: "while Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "while Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["while"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["while keyword [C]", "while keyword [C], syntax"]
 ms.assetid: d0c970b8-12a9-4827-afb2-a051111834b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # while Statement (C)
 
@@ -43,6 +36,6 @@ while ( i >= 0 )
 
 This example copies characters from `string2` to `string1`. If `i` is greater than or equal to 0, `string2[i]` is assigned to `string1[i]` and `i` is decremented. When `i` reaches or falls below 0, execution of the `while` statement terminates.
 
-## See Also
+## See also
 
 [while Statement (C++)](../cpp/while-statement-cpp.md)

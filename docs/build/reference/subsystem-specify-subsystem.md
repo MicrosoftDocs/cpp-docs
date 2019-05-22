@@ -1,16 +1,9 @@
 ---
-title: "-SUBSYSTEM (Specify Subsystem) | Microsoft Docs"
-ms.custom: ""
+title: "/SUBSYSTEM (Specify Subsystem)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/subsystem", "VC.Project.VCLinkerTool.SubSystem", "VC.Project.VCLinkerTool.SubSystemVersion"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SUBSYSTEM linker option", "SUBSYSTEM linker option", "-SUBSYSTEM linker option", "subsystem specifications"]
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM (Specify Subsystem)
 
@@ -36,7 +29,7 @@ Win32 character-mode application. The operating system provides a console for co
 The Extensible Firmware Interface subsystems. See the EFI specification for more information. For examples, see the Intel Web site. The minimum version and default version is 1.0.
 
 **NATIVE**<br/>
-Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](../../build/reference/driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
+Kernel mode drivers for Windows NT. This option is usually reserved for Windows system components. If [/DRIVER:WDM](driver-windows-nt-kernel-mode-driver.md) is specified, NATIVE is the default.
 
 **POSIX**<br/>
 Application that runs with the POSIX subsystem in Windows NT.
@@ -67,7 +60,7 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the Linker folder.
 
@@ -79,7 +72,7 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem%2A>.
 
-## See Also
+## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

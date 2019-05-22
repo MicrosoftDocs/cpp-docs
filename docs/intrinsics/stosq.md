@@ -1,16 +1,9 @@
 ---
-title: "__stosq | Microsoft Docs"
-ms.custom: ""
+title: "__stosq"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__stosq"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rep stosq instruction", "stosq instruction", "__stosq intrinsic"]
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __stosq
 
@@ -21,10 +14,10 @@ Generates a store string instruction (`rep stosq`).
 ## Syntax
 
 ```
-void __stosb( 
-   unsigned __int64* Dest, 
-   unsigned __int64 Data, 
-   size_t Count 
+void __stosb(
+   unsigned __int64* Dest,
+   unsigned __int64 Data,
+   size_t Count
 );
 ```
 
@@ -81,6 +74,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

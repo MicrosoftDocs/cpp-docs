@@ -1,16 +1,9 @@
 ---
-title: "INCLUDE (MASM) | Microsoft Docs"
-ms.custom: ""
+title: "INCLUDE (MASM)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["include"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INCLUDE directive"]
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # INCLUDE (MASM)
 

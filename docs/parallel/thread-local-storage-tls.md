@@ -1,19 +1,12 @@
 ---
-title: "Thread Local Storage (TLS) | Microsoft Docs"
-ms.custom: ""
+title: "Thread Local Storage (TLS)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Thread Local Storage (TLS)
 
-Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 and the Visual C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.
+Thread Local Storage (TLS) is the method by which each thread in a given multithreaded process can allocate locations in which to store thread-specific data. Dynamically bound (run-time) thread-specific data is supported by way of the TLS API ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 and the Microsoft C++ compiler now support statically bound (load-time) per-thread data in addition to the existing API implementation.
 
 ##  <a name="_core_compiler_implementation_for_tls"></a> Compiler Implementation for TLS
 
@@ -101,6 +94,6 @@ The following guidelines must be observed when declaring statically bound thread
 
 - On Windows operating systems before Windows Vista, `__declspec`( thread ) has some limitations. If a DLL declares any data or object as `__declspec`( thread ), it can cause a protection fault if dynamically loaded. After the DLL is loaded with [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya), it causes system failure whenever the code references the `__declspec`( thread ) data. Because the global variable space for a thread is allocated at run time, the size of this space is based on a calculation of the requirements of the application plus the requirements of all the DLLs that are statically linked. When you use `LoadLibrary`, you cannot extend this space to allow for the thread local variables declared with `__declspec`( thread ). Use the TLS APIs, such as [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc), in your DLL to allocate TLS if the DLL might be loaded with `LoadLibrary`.
 
-## See Also
+## See also
 
 [Multithreading with C and Win32](multithreading-with-c-and-win32.md)

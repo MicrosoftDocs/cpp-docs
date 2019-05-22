@@ -1,15 +1,8 @@
 ---
-title: "How to: Create a Task that Completes After a Delay | Microsoft Docs"
-ms.custom: ""
+title: "How to: Create a Task that Completes After a Delay"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["task_completion_event class, example", "create a task that completes after a delay, example [C++]"]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Create a Task that Completes After a Delay
 
@@ -46,7 +39,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc task-delay.cpp**
 
-## See Also
+## See also
 
 [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [task Class (Concurrency Runtime)](../../parallel/concrt/reference/task-class.md)<br/>
@@ -57,4 +50,3 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 [call Class](../../parallel/concrt/reference/call-class.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Data Alignment | Microsoft Docs"
-ms.custom: ""
+title: "Data Alignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["data.alignment"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data alignment [C++]"]
 ms.assetid: 35ac3d2d-a4b3-421b-954f-b7372b1f18e1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Alignment
 
@@ -37,6 +30,6 @@ The following C run-time functions support data alignment.
 |[_aligned_recalloc](../c-runtime-library/reference/aligned-recalloc.md)|Changes the size of a memory block that was allocated with [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0.|
 |[_aligned_recalloc_dbg](../c-runtime-library/reference/aligned-recalloc-dbg.md)|Changes the size of a memory block that was allocated with [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) or [_aligned_offset_malloc](../c-runtime-library/reference/aligned-offset-malloc.md) and initializes the memory to 0 (debug version only).|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

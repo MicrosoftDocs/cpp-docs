@@ -1,19 +1,12 @@
 ---
-title: "_CrtIsValidHeapPointer | Microsoft Docs"
-ms.custom: ""
+title: "_CrtIsValidHeapPointer"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtIsValidHeapPointer"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["CrtlsValidHeapPointer", "_CrtIsValidHeapPointer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_CrtIsValidHeapPointer function", "CrtIsValidHeapPointer function"]
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtIsValidHeapPointer
 

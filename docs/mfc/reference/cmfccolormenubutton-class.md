@@ -1,16 +1,9 @@
 ---
-title: "CMFCColorMenuButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCColorMenuButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CMFCColorMenuButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableAutomaticButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableDocumentColors", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableOtherButton", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::EnableTearOff", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetAutomaticColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::GetColorByCmdID", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnChangeParentWnd", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OpenColorDialog", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColor", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorByCmdID", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColorName", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::SetColumnsNumber", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CopyFrom", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::CreatePopupMenu", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::IsEmptyMenuAllowed", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDraw", "AFXCOLORMENUBUTTON/CMFCColorMenuButton::OnDrawOnCustomizeList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorMenuButton [MFC], CMFCColorMenuButton", "CMFCColorMenuButton [MFC], EnableAutomaticButton", "CMFCColorMenuButton [MFC], EnableDocumentColors", "CMFCColorMenuButton [MFC], EnableOtherButton", "CMFCColorMenuButton [MFC], EnableTearOff", "CMFCColorMenuButton [MFC], GetAutomaticColor", "CMFCColorMenuButton [MFC], GetColor", "CMFCColorMenuButton [MFC], GetColorByCmdID", "CMFCColorMenuButton [MFC], OnChangeParentWnd", "CMFCColorMenuButton [MFC], OpenColorDialog", "CMFCColorMenuButton [MFC], SetColor", "CMFCColorMenuButton [MFC], SetColorByCmdID", "CMFCColorMenuButton [MFC], SetColorName", "CMFCColorMenuButton [MFC], SetColumnsNumber", "CMFCColorMenuButton [MFC], CopyFrom", "CMFCColorMenuButton [MFC], CreatePopupMenu", "CMFCColorMenuButton [MFC], IsEmptyMenuAllowed", "CMFCColorMenuButton [MFC], OnDraw", "CMFCColorMenuButton [MFC], OnDrawOnCustomizeList"]
 ms.assetid: 42685704-e994-4f7b-9553-62283c27b754
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCColorMenuButton Class
 
@@ -66,7 +59,7 @@ The color picker dialog box is created during the processing of the [CMFCColorMe
 
 ## Example
 
-The following example demonstrates how to create and configure a color menu button by using various methods in the `CMFCColorMenuButton` class. In the example, a `CPalette` object is first created and then used to construct an object of the `CMFCColorMenuButton` class. The `CMFCColorMenuButton` object is then configured by enabling its automatic and other buttons, and setting its color and the number of columns. This code is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to create and configure a color menu button by using various methods in the `CMFCColorMenuButton` class. In the example, a `CPalette` object is first created and then used to construct an object of the `CMFCColorMenuButton` class. The `CMFCColorMenuButton` object is then configured by enabling its automatic and other buttons, and setting its color and the number of columns. This code is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#5](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#6](../../mfc/reference/codesnippet/cpp/cmfccolormenubutton-class_2.cpp)]
@@ -505,7 +498,7 @@ void SetColumnsNumber(int nColumns);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "OLE Initialization | Microsoft Docs"
-ms.custom: ""
+title: "OLE Initialization"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["afxdisp/AfxOleInit", "afxdisp/AfxEnableControlContainer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE initialization"]
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Initialization
 
@@ -71,6 +64,6 @@ Call this function to initialize the OLE support for an MFC application. When th
 
 **Header:** afxdisp.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

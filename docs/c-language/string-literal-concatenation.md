@@ -1,15 +1,8 @@
 ---
-title: "String Literal Concatenation | Microsoft Docs"
-ms.custom: ""
+title: "String Literal Concatenation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["concatenating strings", "strings [C++], concatenating"]
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String Literal Concatenation
 
@@ -58,6 +51,6 @@ printf_s( "%s" , string ) ;
 
 In translation phase 6, the multibyte-character sequences specified by any sequence of adjacent string literals or adjacent wide-string literals are concatenated into a single multibyte-character sequence. Therefore, do not design programs to allow modification of string literals during execution. The ANSI C standard specifies that the result of modifying a string is undefined.
 
-## See Also
+## See also
 
 [C String Literals](../c-language/c-string-literals.md)

@@ -1,19 +1,12 @@
 ---
-title: "localeconv | Microsoft Docs"
-ms.custom: ""
+title: "localeconv"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["localeconv"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["localeconv"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lconv type", "localeconv function", "locales, getting information on"]
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # localeconv
 

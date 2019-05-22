@@ -1,16 +1,9 @@
 ---
-title: "dispinterface (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "dispinterface (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.dispinterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dispinterface attribute"]
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # dispinterface
 
@@ -54,7 +47,7 @@ See the example for [bindable](bindable.md) for an example of how to use **dispi
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Attributes by Usage](attributes-by-usage.md)<br/>

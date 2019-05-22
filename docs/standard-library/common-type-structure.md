@@ -1,15 +1,8 @@
 ---
-title: "common_type Structure | Microsoft Docs"
-ms.custom: ""
+title: "common_type Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["chrono/std::common_type"]
-dev_langs: ["C++"]
 ms.assetid: 2b42722c-c3dc-4d62-8613-0271e52b6f00
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # common_type Structure
 

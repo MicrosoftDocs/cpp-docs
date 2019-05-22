@@ -1,16 +1,9 @@
 ---
-title: "&lt;ostream&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ostream&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<ostream>", "ostream/std::<ostream>", "std::<ostream>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ostream header"]
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;ostream&gt;
 
@@ -20,7 +13,6 @@ Defines the template class [basic_ostream](../standard-library/basic-ostream-cla
 
 ```cpp
 #include <ostream>
-
 ```
 
 ### Typedefs

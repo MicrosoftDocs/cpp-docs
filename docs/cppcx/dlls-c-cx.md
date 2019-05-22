@@ -1,17 +1,11 @@
 ---
-title: "DLLs (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "DLLs (C++/CX)"
 ms.date: "02/06/2018"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DLLs (C++/CX)
 
-You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform (UWP) apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a UWP app and may not pass the app verification test in the Microsoft Store.
+You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform (UWP) apps. A standard DLL that was created by using a version of Visual Studio or the Microsoft C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a UWP app and may not pass the app verification test in the Microsoft Store.
 
 ## Windows Runtime component DLLs
 

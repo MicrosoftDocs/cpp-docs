@@ -1,15 +1,8 @@
 ---
-title: "Naked Functions | Microsoft Docs"
-ms.custom: ""
+title: "Naked Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["naked functions", "functions [C++], naked", "prolog code", "epilog code"]
 ms.assetid: 2543c8af-00d4-4a2a-8a87-e746da1f9929
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Naked Functions
 
@@ -55,6 +48,6 @@ __declspec( naked ) int func();   /* Error--naked attribute not */
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

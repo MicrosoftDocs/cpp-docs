@@ -1,15 +1,8 @@
 ---
-title: "C logical operators | Microsoft Docs"
-ms.custom: ""
+title: "C logical operators"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["logical operators, expression sequence points", "logical operators, C", "logical AND operator", "|| operator", "operators [C], logical", "short-circuit evaluation", "&& operator", "logical OR operator"]
 ms.assetid: c0a4e766-ad56-4300-bf76-b28dc0e19b43
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C logical operators
 

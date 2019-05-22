@@ -1,15 +1,8 @@
 ---
-title: "Inserting a Form into a Project | Microsoft Docs"
-ms.custom: ""
+title: "Inserting a Form into a Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["inserting forms [MFC]", "Insert New dialog box [MFC]", "forms, adding to projects"]
 ms.assetid: f3bd2998-3ce2-496d-ac5c-57ca70eec7cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Inserting a Form into a Project
 
@@ -37,7 +30,6 @@ You may want to perform the following additional steps (not applicable for dialo
 
 1. Create an `OnPrint` member function.
 
-## See Also
+## See also
 
 [Form Views](../mfc/form-views-mfc.md)
-

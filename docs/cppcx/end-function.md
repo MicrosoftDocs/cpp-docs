@@ -1,16 +1,9 @@
 ---
-title: "end Function | Microsoft Docs"
-ms.custom: ""
+title: "end Function"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 f1_keywords: ["collection/Windows::Foundation::Collections::end"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["end Function"]
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # end Function
 
@@ -64,6 +57,6 @@ The [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-ve
 
 **Namespace:** Windows::Foundation::Collections
 
-## See Also
+## See also
 
 [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

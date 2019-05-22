@@ -1,8 +1,6 @@
 ---
-title: "&lt;thread&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;thread&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["thread/std::get_id", "thread/std::sleep_for", "thread/std::sleep_until", "thread/std::swap", "thread/std::yield"]
 ms.assetid: bb1aa1ef-fe3f-4e2c-8b6e-e22dbf2f5a19
 helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_until [C++]", "std::swap [C++]", "std::yield [C++]"]

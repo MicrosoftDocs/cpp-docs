@@ -1,15 +1,8 @@
 ---
-title: "Mapping Windows Messages to Your Class | Microsoft Docs"
-ms.custom: ""
+title: "Mapping Windows Messages to Your Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "message maps [MFC], in dialog class", "Windows messages [MFC], mapping in dialog classes", "messages to dialog class [MFC]", "mappings [MFC], messages to dialog class [MFC]", "message maps [MFC], mapping Windows messages to classes", "messages to dialog class [MFC], mapping"]
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Mapping Windows Messages to Your Class
 
@@ -25,8 +18,7 @@ You can also override member functions of [CDialog](../mfc/reference/cdialog-cla
 
 - [Commonly added member functions](../mfc/commonly-added-member-functions.md)
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

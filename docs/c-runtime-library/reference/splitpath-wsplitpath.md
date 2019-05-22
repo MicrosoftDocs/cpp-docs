@@ -1,19 +1,12 @@
 ---
-title: "_splitpath, _wsplitpath | Microsoft Docs"
-ms.custom: ""
+title: "_splitpath, _wsplitpath"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wsplitpath", "_splitpath"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wsplitpath", "_splitpath", "splitpath", "_wsplitpath", "_tsplitpath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_splitpath function", "pathnames", "wsplitpath function", "splitpath function", "_wsplitpath function", "tsplitpath function", "path names", "_tsplitpath function"]
 ms.assetid: 32bd76b5-1385-4ee8-a64c-abcb541cd2e4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _splitpath, _wsplitpath
 

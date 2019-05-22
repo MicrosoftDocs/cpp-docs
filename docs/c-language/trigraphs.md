@@ -1,15 +1,8 @@
 ---
-title: "Trigraphs | Microsoft Docs"
-ms.custom: ""
+title: "Trigraphs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["??) trigraph", "??- trigraph", "question mark, in trigraphs", "??= trigraph", "?? trigraph", "??< trigraph", "??/ trigraph", "trigraphs", "? symbol, trigraph", "??> trigraph", "??! trigraph", "??' trigraph"]
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Trigraphs
 
@@ -23,35 +16,35 @@ The following table shows the nine trigraph sequences. All occurrences in a sour
 
 ### Trigraph Sequences
 
-|Trigraph|Punctuation Character|
-|--------------|---------------------------|
-|??=|#|
-|??(|[|
-|??/|\|
-|??)|]|
-|??'|^|
-|??\<|{|
-|??!|&#124;|
-|??>|}|
-|??-|~|
+| Trigraph | Punctuation Character |
+|----------|-----------------------|
+| ??= | # |
+| ??( | \[ |
+| ??/ | \\ |
+| ??) | ] |
+| ??' | ^ |
+| ??\< | { |
+| ??! | &#124; |
+| ??> | } |
+| ??- | ~ |
 
 A trigraph is always treated as a single source character. The translation of trigraphs takes place in the first [translation phase](../preprocessor/phases-of-translation.md), before the recognition of escape characters in string literals and character constants. Only the nine trigraphs shown in the above table are recognized. All other character sequences are left untranslated.
 
 The character escape sequence, **\\?**, prevents the misinterpretation of trigraph-like character sequences. (For information about escape sequences, see [Escape Sequences](../c-language/escape-sequences.md).) For example, if you attempt to print the string `What??!` with this `printf` statement
 
-```
+```C
 printf( "What??!\n" );
 ```
 
 the string printed is `What|` because `??!` is a trigraph sequence that is replaced with the `|` character. Write the statement as follows to correctly print the string:
 
-```
+```C
 printf( "What?\?!\n" );
 ```
 
 In this `printf` statement, a backslash escape character in front of the second question mark prevents the misinterpretation of `??!` as a trigraph.
 
-## See Also
+## See also
 
 [/Zc:trigraphs (Trigraphs Substitution)](../build/reference/zc-trigraphs-trigraphs-substitution.md)<br/>
 [C Identifiers](../c-language/c-identifiers.md)

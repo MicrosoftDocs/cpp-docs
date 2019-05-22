@@ -1,15 +1,8 @@
 ---
-title: "Device Contexts | Microsoft Docs"
-ms.custom: ""
+title: "Device Contexts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OnPrepareDC method [MFC]", "windows [MFC], and device context", "drawing [MFC], device context", "CClientDC class [MFC], and GetDC method [MFC]", "drawing [MFC], in mouse and device contexts", "CDC class [MFC], objects", "device contexts [MFC]", "client areas", "CMetaFileDC class [MFC], and OnPrepareDC method [MFC]", "GDI objects [MFC], device contexts", "graphic objects [MFC], device contexts", "frame windows [MFC], device contexts", "metafiles and device contexts", "EndPaint method [MFC]", "printers [MFC], device contexts", "mouse [MFC], drawing and device contexts", "BeginPaint method, CPaintDC", "CPaintDC class [MFC], device context for painting", "windows [MFC], drawing directly into", "client areas, and device context", "device contexts [MFC], CDC class [MFC]", "user interface [MFC], device contexts", "device-independent drawing", "GetDC method and CClientDC class [MFC]", "CClientDC class [MFC], and ReleaseDC method [MFC]", "ReleaseDC method [MFC]", "device contexts [MFC], about device contexts", "drawing [MFC], directly into windows", "painting and device context"]
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Device Contexts
 
@@ -29,23 +22,22 @@ In such a case, you can use a [CClientDC](../mfc/reference/cclientdc-class.md) d
 
 ### What do you want to know more about
 
-- [Device contexts (definition)](https://msdn.microsoft.com/library/windows/desktop/dd183553)
+- [Device contexts (definition)](/windows/desktop/gdi/device-contexts)
 
 - [Drawing in a View](../mfc/drawing-in-a-view.md)
 
 - [Interpreting User Input Through a View](../mfc/interpreting-user-input-through-a-view.md)
 
-- [Lines and curves](https://msdn.microsoft.com/library/windows/desktop/dd145028)
+- [Lines and curves](/windows/desktop/gdi/lines-and-curves)
 
-- [Filled shapes](https://msdn.microsoft.com/library/windows/desktop/dd162714)
+- [Filled shapes](/windows/desktop/gdi/filled-shapes)
 
 - [Fonts and text](/windows/desktop/gdi/fonts-and-text)
 
-- [Colors](https://msdn.microsoft.com/library/windows/desktop/dd183450)
+- [Colors](/windows/desktop/gdi/colors)
 
-- [Coordinate spaces and transformations](https://msdn.microsoft.com/library/windows/desktop/dd183475)
+- [Coordinate spaces and transformations](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
-## See Also
+## See also
 
 [Window Objects](../mfc/window-objects.md)
-

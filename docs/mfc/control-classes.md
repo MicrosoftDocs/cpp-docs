@@ -1,16 +1,9 @@
 ---
-title: "Control Classes | Microsoft Docs"
-ms.custom: ""
+title: "Control Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.control"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["static display controls [MFC]", "control classes [MFC]", "buttons, MFC control classes", "controls [MFC], MFC control classes", "controls [MFC]", "list boxes [MFC], MFC control classes", "control classes [MFC], MFC", "text, controls for input [MFC]", "user input [MFC], MFC control classes"]
 ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Control Classes
 
@@ -136,7 +129,6 @@ A view that contains a Windows list control.
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 A view that contains a Windows tree control.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

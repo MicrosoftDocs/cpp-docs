@@ -1,15 +1,8 @@
 ---
-title: "Interpretation of Subscript Operator | Microsoft Docs"
-ms.custom: ""
+title: "Interpretation of Subscript Operator"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["subscript operator [C++], interpretation of", "arrays [C++], subscripting", "interpreting subscript operators [C++]", "operators [C++], interpretation of subscript"]
 ms.assetid: 8852ca18-9d5b-43f7-b8bd-abc89364fbf2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interpretation of Subscript Operator
 

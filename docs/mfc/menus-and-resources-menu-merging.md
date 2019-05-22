@@ -1,15 +1,8 @@
 ---
-title: "Menus and Resources: Menu Merging | Microsoft Docs"
-ms.custom: ""
+title: "Menus and Resources: Menu Merging"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "coordinating menu layouts [MFC]", "OLE containers [MFC], menus and resources", "toolbars [MFC], OLE document applications", "merging toolbar and status bar [MFC]", "menus [MFC], OLE document applications"]
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Menus and Resources: Menu Merging
 
@@ -101,10 +94,9 @@ Server applications should create a new toolbar and store its bitmap in a separa
 
 This toolbar is loaded in your `COleIPFrameWnd`-derived class, created for you by the application wizard. The status bar is handled by the container application. For more information on the implementation of in-place frame windows, see [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md).
 
-## See Also
+## See also
 
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Activation](../mfc/activation-cpp.md)<br/>
 [Servers](../mfc/servers.md)<br/>
 [Containers](../mfc/containers.md)
-

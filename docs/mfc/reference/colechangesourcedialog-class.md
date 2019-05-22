@@ -1,16 +1,9 @@
 ---
-title: "COleChangeSourceDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COleChangeSourceDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::DoModal", "AFXODLGS/COleChangeSourceDialog::GetDisplayName", "AFXODLGS/COleChangeSourceDialog::GetFileName", "AFXODLGS/COleChangeSourceDialog::GetFromPrefix", "AFXODLGS/COleChangeSourceDialog::GetItemName", "AFXODLGS/COleChangeSourceDialog::GetToPrefix", "AFXODLGS/COleChangeSourceDialog::IsValidSource", "AFXODLGS/COleChangeSourceDialog::m_cs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleChangeSourceDialog [MFC], COleChangeSourceDialog", "COleChangeSourceDialog [MFC], DoModal", "COleChangeSourceDialog [MFC], GetDisplayName", "COleChangeSourceDialog [MFC], GetFileName", "COleChangeSourceDialog [MFC], GetFromPrefix", "COleChangeSourceDialog [MFC], GetItemName", "COleChangeSourceDialog [MFC], GetToPrefix", "COleChangeSourceDialog [MFC], IsValidSource", "COleChangeSourceDialog [MFC], m_cs"]
 ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleChangeSourceDialog Class
 
@@ -246,7 +239,7 @@ Call this function only after [DoModal](#domodal) returns IDOK.
 
 For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.
 
-## See Also
+## See also
 
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

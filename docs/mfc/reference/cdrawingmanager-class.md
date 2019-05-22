@@ -1,16 +1,9 @@
 ---
-title: "CDrawingManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CDrawingManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDrawingManager", "AFXDRAWMANAGER/CDrawingManager", "AFXDRAWMANAGER/CDrawingManager::CDrawingManager", "AFXDRAWMANAGER/CDrawingManager::CreateBitmap_32", "AFXDRAWMANAGER/CDrawingManager::DrawAlpha", "AFXDRAWMANAGER/CDrawingManager::DrawRotated", "AFXDRAWMANAGER/CDrawingManager::DrawEllipse", "AFXDRAWMANAGER/CDrawingManager::DrawGradientRing", "AFXDRAWMANAGER/CDrawingManager::DrawRect", "AFXDRAWMANAGER/CDrawingManager::DrawShadow", "AFXDRAWMANAGER/CDrawingManager::Fill4ColorsGradient", "AFXDRAWMANAGER/CDrawingManager::FillGradient", "AFXDRAWMANAGER/CDrawingManager::FillGradient2", "AFXDRAWMANAGER/CDrawingManager::GrayRect", "AFXDRAWMANAGER/CDrawingManager::HighlightRect", "AFXDRAWMANAGER/CDrawingManager::HLStoRGB_ONE", "AFXDRAWMANAGER/CDrawingManager::HLStoRGB_TWO", "AFXDRAWMANAGER/CDrawingManager::HSVtoRGB", "AFXDRAWMANAGER/CDrawingManager::HuetoRGB", "AFXDRAWMANAGER/CDrawingManager::MirrorRect", "AFXDRAWMANAGER/CDrawingManager::PixelAlpha", "AFXDRAWMANAGER/CDrawingManager::PrepareShadowMask", "AFXDRAWMANAGER/CDrawingManager::RGBtoHSL", "AFXDRAWMANAGER/CDrawingManager::RGBtoHSV", "AFXDRAWMANAGER/CDrawingManager::SetAlphaPixel", "AFXDRAWMANAGER/CDrawingManager::SetPixel", "AFXDRAWMANAGER/CDrawingManager::SmartMixColors"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDrawingManager [MFC], CDrawingManager", "CDrawingManager [MFC], CreateBitmap_32", "CDrawingManager [MFC], DrawAlpha", "CDrawingManager [MFC], DrawRotated", "CDrawingManager [MFC], DrawEllipse", "CDrawingManager [MFC], DrawGradientRing", "CDrawingManager [MFC], DrawRect", "CDrawingManager [MFC], DrawShadow", "CDrawingManager [MFC], Fill4ColorsGradient", "CDrawingManager [MFC], FillGradient", "CDrawingManager [MFC], FillGradient2", "CDrawingManager [MFC], GrayRect", "CDrawingManager [MFC], HighlightRect", "CDrawingManager [MFC], HLStoRGB_ONE", "CDrawingManager [MFC], HLStoRGB_TWO", "CDrawingManager [MFC], HSVtoRGB", "CDrawingManager [MFC], HuetoRGB", "CDrawingManager [MFC], MirrorRect", "CDrawingManager [MFC], PixelAlpha", "CDrawingManager [MFC], PrepareShadowMask", "CDrawingManager [MFC], RGBtoHSL", "CDrawingManager [MFC], RGBtoHSV", "CDrawingManager [MFC], SetAlphaPixel", "CDrawingManager [MFC], SetPixel", "CDrawingManager [MFC], SmartMixColors"]
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDrawingManager Class
 
@@ -338,7 +331,7 @@ If you set *bRightShadow* to FALSE, the shadow will be drawn underneath and to t
 
 ### Example
 
-The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `DrawShadow` method of the `CDrawingManager` class. This code snippet is part of the [Prop Sheet Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]
 
@@ -422,7 +415,7 @@ void FillGradient(
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient` method of the `CDrawingManager` class. This code snippet is part of the [MS Office 2007 Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]
 
@@ -458,7 +451,7 @@ Use *nAngle* to specify the direction of the color gradient. When you specify th
 
 ### Example
 
-The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `FillGradient2` method of the `CDrawingManager` class. This code snippet is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]
 
@@ -566,7 +559,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 This method and the `CDrawingManager::HLStoRGB_TWO` method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a percentage of the circle. In the `CDrawingManager::HLStoRGB_TWO` method, *H* is a degree value between 0 and 360, which both represent red. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -598,7 +591,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 This method and the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a degree value between 0 and 360, which both represent red. In the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method, *H* is a percentage of the circle. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -628,7 +621,7 @@ The RGB representation of the HSV color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 ##  <a name="huetorgb"></a>  CDrawingManager::HuetoRGB
 
@@ -813,7 +806,7 @@ static void __stdcall RGBtoHSL(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 The returned value for *H* is represented as a fraction between 0 and 1 where both 0 and 1 represent red. The returned values for *S* and *L* are numbers between 0 and 1.
 
@@ -845,7 +838,7 @@ static void __stdcall RGBtoHSV(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](http://go.microsoft.com/fwlink/p/?linkid=119126).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
 
 The returned value for *H* is a number between 0 and 360 where both 0 and 360 indicate red. The return values for *S* and *V* are numbers between 0 and 1.
 
@@ -981,7 +974,7 @@ TRUE indicates rotate +90 degrees; FALSE indicates rotate -90 degrees.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

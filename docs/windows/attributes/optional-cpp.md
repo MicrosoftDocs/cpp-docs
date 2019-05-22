@@ -1,16 +1,9 @@
 ---
-title: "optional  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "optional  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.optional"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["optional attribute"]
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # optional (C++)
 
@@ -56,7 +49,7 @@ __interface IFireTabCtrl : IDispatch
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Parameter Attributes](parameter-attributes.md)

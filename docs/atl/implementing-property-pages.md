@@ -1,17 +1,18 @@
 ---
-title: "Implementing Property Pages | Microsoft Docs"
-ms.custom: ""
+title: "Implementing Property Pages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IPropertyPage2 class", "IPropertyPage class", "property pages, implementing"]
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing Property Pages
+
+::: moniker range="vs-2019"
+
+The ATL Property Page wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Property pages are COM objects that implement the `IPropertyPage` or `IPropertyPage2` interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).
 
@@ -43,7 +44,9 @@ For an example property page implementation, see [Example: Implementing a Proper
 > [!NOTE]
 > If you want to host ActiveX controls in your property page, you will need to change the derivation of your wizard-generated class. Replace **CDialogImpl\<CYourClass>** with **CAxDialogImpl\<CYourClass>** in the list of base classes.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Property Pages](../atl/atl-com-property-pages.md)<br/>
-[ATLPages Sample](../visual-cpp-samples.md)
+[ATLPages Sample](../overview/visual-cpp-samples.md)

@@ -1,16 +1,9 @@
 ---
-title: "CAnimationValue Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimationValue Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationValue::GetValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationValue::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationValue::m_value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationValue [MFC], CAnimationValue", "CAnimationValue [MFC], AddTransition", "CAnimationValue [MFC], GetValue", "CAnimationValue [MFC], GetVariable", "CAnimationValue [MFC], SetDefaultValue", "CAnimationValue [MFC], GetAnimationVariableList", "CAnimationValue [MFC], m_value"]
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimationValue Class
 
@@ -258,6 +251,6 @@ Specifies the default value.
 
 Use this method to set a default value. A default value is returned to application when animation has not been started and/or underlying COM object has not been created. If the underlying COM object encapsulated in CAnimationVarible was already created, this method recreates it, therefore you might need to call EnableValueChanged/EnableIntegerValueChanged methods again.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

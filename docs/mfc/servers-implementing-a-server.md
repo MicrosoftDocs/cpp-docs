@@ -1,15 +1,8 @@
 ---
-title: "Servers: Implementing a Server | Microsoft Docs"
-ms.custom: ""
+title: "Servers: Implementing a Server"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["servers, implementing", "OLE server applications [MFC], implementing OLE servers"]
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers: Implementing a Server
 
@@ -21,11 +14,11 @@ The server code that the application wizard provides falls into several categori
 
 - Defining server resources:
 
-   - The menu resource used when the server is editing an embedded item in its own window.
+  - The menu resource used when the server is editing an embedded item in its own window.
 
-   - The menu and toolbar resources used when the server is active in place.
+  - The menu and toolbar resources used when the server is active in place.
 
-   For more information on these resources, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).
+  For more information on these resources, see [Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md).
 
 - Defining an item class derived from `COleServerItem`. For further details on server items, see [Servers: Server Items](../mfc/servers-server-items.md).
 
@@ -39,10 +32,9 @@ The server code that the application wizard provides falls into several categori
 
 For more information, see [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerDoc](../mfc/reference/coleserverdoc-class.md), and [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md) in the *Class Library Reference*.
 
-## See Also
+## See also
 
 [Servers](../mfc/servers.md)<br/>
 [Containers](../mfc/containers.md)<br/>
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Registration](../mfc/registration.md)
-

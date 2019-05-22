@@ -1,16 +1,9 @@
 ---
-title: "uniform_real_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "uniform_real_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::uniform_real_distribution", "random/std::uniform_real_distribution::reset", "random/std::uniform_real_distribution::a", "random/std::uniform_real_distribution::b", "random/std::uniform_real_distribution::param", "random/std::uniform_real_distribution::min", "random/std::uniform_real_distribution::max", "random/std::uniform_real_distribution::operator()", "random/std::uniform_real_distribution::param_type", "random/std::uniform_real_distribution::param_type::a", "random/std::uniform_real_distribution::param_type::b", "random/std::uniform_real_distribution::param_type::operator==", "random/std::uniform_real_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::uniform_real_distribution [C++]", "std::uniform_real_distribution [C++], reset", "std::uniform_real_distribution [C++], a", "std::uniform_real_distribution [C++], b", "std::uniform_real_distribution [C++], param", "std::uniform_real_distribution [C++], min", "std::uniform_real_distribution [C++], max", "std::uniform_real_distribution [C++], param_type", "std::uniform_real_distribution [C++], param_type"]
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # uniform_real_distribution Class
 
@@ -129,7 +122,6 @@ int main()
 
     test(a_dist, b_dist, samples);
 }
-
 ```
 
 ```Output

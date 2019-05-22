@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3282 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3282"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3282"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3282"]
 ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3282
 
 generic parameter lists can only appear on managed or WinRTclasses, structs, or functions
 
-A generic parameter list was used incorrectly.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic parameter list was used incorrectly.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

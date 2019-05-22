@@ -1,16 +1,9 @@
 ---
-title: "Dialog Box Classes | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Box Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.dialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property sheet classes", "dialog box classes", "OLE common dialog classes", "common dialog classes [MFC]", "tab dialog boxes"]
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Box Classes
 
@@ -124,7 +117,6 @@ Provides a form view directly connected to an Open Database Connectivity (ODBC) 
 [CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
 A structure containing information about a print or print preview job. Used by the printing architecture of [CView](../mfc/reference/cview-class.md).
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

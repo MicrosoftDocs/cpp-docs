@@ -1,16 +1,9 @@
 ---
-title: ".DOSSEG | Microsoft Docs"
-ms.custom: ""
+title: ".DOSSEG"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".DOSSEG"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".DOSSEG directive"]
 ms.assetid: 175ad470-0a2b-4e2b-b078-65e224fec040
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .DOSSEG
 

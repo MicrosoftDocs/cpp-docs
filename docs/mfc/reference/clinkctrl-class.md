@@ -1,16 +1,9 @@
 ---
-title: "CLinkCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CLinkCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CLinkCtrl", "AFXCMN/CLinkCtrl", "AFXCMN/CLinkCtrl::CLinkCtrl", "AFXCMN/CLinkCtrl::Create", "AFXCMN/CLinkCtrl::CreateEx", "AFXCMN/CLinkCtrl::GetIdealHeight", "AFXCMN/CLinkCtrl::GetIdealSize", "AFXCMN/CLinkCtrl::GetItem", "AFXCMN/CLinkCtrl::GetItemID", "AFXCMN/CLinkCtrl::GetItemState", "AFXCMN/CLinkCtrl::GetItemUrl", "AFXCMN/CLinkCtrl::HitTest", "AFXCMN/CLinkCtrl::SetItem", "AFXCMN/CLinkCtrl::SetItemID", "AFXCMN/CLinkCtrl::SetItemState", "AFXCMN/CLinkCtrl::SetItemUrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLinkCtrl [MFC], CLinkCtrl", "CLinkCtrl [MFC], Create", "CLinkCtrl [MFC], CreateEx", "CLinkCtrl [MFC], GetIdealHeight", "CLinkCtrl [MFC], GetIdealSize", "CLinkCtrl [MFC], GetItem", "CLinkCtrl [MFC], GetItemID", "CLinkCtrl [MFC], GetItemState", "CLinkCtrl [MFC], GetItemUrl", "CLinkCtrl [MFC], HitTest", "CLinkCtrl [MFC], SetItem", "CLinkCtrl [MFC], SetItemID", "CLinkCtrl [MFC], SetItemState", "CLinkCtrl [MFC], SetItemUrl"]
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLinkCtrl Class
 
@@ -105,7 +98,7 @@ Pointer to a zero-terminated string that contains the marked up text to display.
 Specifies the link control's style. Apply any combination of control styles. See [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the `Windows SDK` for more information.
 
 *rect*<br/>
-Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the link control's parent window. It must not be NULL.
@@ -167,7 +160,7 @@ Specifies the extended style of the link control. For a list of extended Windows
 Specifies the link control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the link control's parent window. It must not be NULL.
@@ -216,7 +209,7 @@ int GetIdealSize(
 |Parameter|Description|
 |---------------|-----------------|
 |*cxMaxWidth*|[in] The maximum width of the link, in pixels.|
-|[out] \* *pSize*|A pointer to a Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|
+|[out] \* *pSize*|A pointer to a Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|
 
 ### Return Value
 
@@ -483,7 +476,7 @@ Returns TRUE on success, FALSE on failure.
 
 Sets the URL represented by the specified link control item. For more information, see the Win32 message [LM_SETITEM](/windows/desktop/Controls/lm-setitem) in the Windows SDK.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)

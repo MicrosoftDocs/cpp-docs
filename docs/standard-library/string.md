@@ -1,16 +1,9 @@
 ---
-title: "&lt;string&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;string&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["string/std::<string>", "<string>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["string header"]
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;string&gt;
 

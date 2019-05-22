@@ -1,14 +1,8 @@
 ---
-title: "Concurrency::graphics::direct3d namespace functions | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::graphics::direct3d namespace functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp_graphics/Concurrency::graphics::direct3d::get_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_sampler", "amp_graphics/Concurrency::graphics::direct3d::make_texture"]
-dev_langs: ["C++"]
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics::direct3d namespace functions
 
@@ -64,7 +58,6 @@ template<
 >
 _Ret_ IUnknown *get_texture(
     const texture_view<value_type, _Rank>& _Texture) restrict(cpu);
-
 ```
 
 ### Parameters
@@ -167,6 +160,6 @@ Returns a vector of 4 sums. Each sum corresponds to the masked sum of absolute d
 
 **Namespace:** Concurrency::graphics::direct3d
 
-## See Also
+## See also
 
 [Concurrency::graphics::direct3d Namespace](concurrency-graphics-direct3d-namespace.md)

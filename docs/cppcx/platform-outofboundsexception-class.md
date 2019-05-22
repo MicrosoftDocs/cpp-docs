@@ -1,16 +1,10 @@
 ---
-title: "Platform::OutOfBoundsException Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::OutOfBoundsException Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::OutOfBoundsException", "VCCORLIB/Platform::OutOfBoundsException::OutOfBoundsException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfBoundsException"]
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfBoundsException Class
 
@@ -36,6 +30,6 @@ For more information, see the [COMException](../cppcx/platform-comexception-clas
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::COMException Class](../cppcx/platform-comexception-class.md)

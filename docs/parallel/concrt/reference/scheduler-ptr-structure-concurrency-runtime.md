@@ -1,15 +1,8 @@
 ---
-title: "scheduler_ptr Structure | Microsoft Docs"
-ms.custom: ""
+title: "scheduler_ptr Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool"]
-dev_langs: ["C++"]
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # scheduler_ptr Structure
 
@@ -54,7 +47,7 @@ struct scheduler_ptr;
 
 ##  <a name="get"></a>  scheduler_ptr::get Method
 
-Returns the raw pointer to the scheduler
+Returns the raw pointer to the scheduler.
 
 ```
 scheduler_interface* get() const;
@@ -64,14 +57,15 @@ scheduler_interface* get() const;
 
 ##  <a name="operator_bool"></a>  scheduler_ptr::operator bool
 
-Test whether the scheduler pointer is non-null
+Tests whether the scheduler pointer is non-null.
 
-```operator bool() const;
+```
+operator bool() const;
 ```
 
 ##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;
 
-Behave like a pointer
+Behaves like a pointer.
 
 ```
 scheduler_interface* operator->() const;
@@ -81,11 +75,10 @@ scheduler_interface* operator->() const;
 
 ##  <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Constructor
 
-Creates a scheduler pointer from shared_ptr to scheduler
+Creates a scheduler pointer from shared_ptr to scheduler.
 
 ```
 explicit scheduler_ptr(std::shared_ptr<scheduler_interface> scheduler);
-
 explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
 ```
 
@@ -97,6 +90,6 @@ The scheduler to convert.
 *pScheduler*<br/>
 The scheduler pointer to convert.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

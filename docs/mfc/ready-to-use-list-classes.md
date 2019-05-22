@@ -1,16 +1,9 @@
 ---
-title: "Ready-to-Use List Classes | Microsoft Docs"
-ms.custom: ""
+title: "Ready-to-Use List Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.list"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["classes [MFC], list", "list classes [MFC]", "collection classes [MFC], lists"]
 ms.assetid: aed8e9bd-edb7-4620-84a2-77c20322abd7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use List Classes
 
@@ -25,7 +18,6 @@ Stores pointers to **void** (generic pointers) in a linked list.
 [CStringList](../mfc/reference/cstringlist-class.md)<br/>
 Stores `CString` objects in a linked list.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

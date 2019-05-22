@@ -1,16 +1,9 @@
 ---
-title: "CBindStatusCallback Class | Microsoft Docs"
-ms.custom: ""
+title: "CBindStatusCallback Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::CBindStatusCallback", "ATLCTL/ATL::CBindStatusCallback::Download", "ATLCTL/ATL::CBindStatusCallback::GetBindInfo", "ATLCTL/ATL::CBindStatusCallback::GetPriority", "ATLCTL/ATL::CBindStatusCallback::OnDataAvailable", "ATLCTL/ATL::CBindStatusCallback::OnLowResource", "ATLCTL/ATL::CBindStatusCallback::OnObjectAvailable", "ATLCTL/ATL::CBindStatusCallback::OnProgress", "ATLCTL/ATL::CBindStatusCallback::OnStartBinding", "ATLCTL/ATL::CBindStatusCallback::OnStopBinding", "ATLCTL/ATL::CBindStatusCallback::StartAsyncDownload", "ATLCTL/ATL::CBindStatusCallback::m_dwAvailableToRead", "ATLCTL/ATL::CBindStatusCallback::m_dwTotalRead", "ATLCTL/ATL::CBindStatusCallback::m_pFunc", "ATLCTL/ATL::CBindStatusCallback::m_pT", "ATLCTL/ATL::CBindStatusCallback::m_spBindCtx", "ATLCTL/ATL::CBindStatusCallback::m_spBinding", "ATLCTL/ATL::CBindStatusCallback::m_spMoniker", "ATLCTL/ATL::CBindStatusCallback::m_spStream"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["asynchronous data transfer [C++]", "data transfer [C++]", "data transfer [C++], asynchronous", "CBindStatusCallback class"]
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBindStatusCallback Class
 
@@ -77,7 +70,7 @@ Specifies the bind flags that are returned by [GetBindInfo](#getbindinfo). The d
 
 The `CBindStatusCallback` class implements the `IBindStatusCallback` interface. `IBindStatusCallback` must be implemented by your application so it can receive notifications from an asynchronous data transfer. The asynchronous moniker provided by the system uses `IBindStatusCallback` methods to send and receive information about the asynchronous data transfer to and from your object.
 
-Typically, the `CBindStatusCallback` object is associated with a specific bind operation. For example, in the [ASYNC](../../visual-cpp-samples.md) sample, when you set the URL property, it creates a `CBindStatusCallback` object in the call to `Download`:
+Typically, the `CBindStatusCallback` object is associated with a specific bind operation. For example, in the [ASYNC](../../overview/visual-cpp-samples.md) sample, when you set the URL property, it creates a `CBindStatusCallback` object in the call to `Download`:
 
 [!code-cpp[NVC_ATL_Windowing#86](../../atl/codesnippet/cpp/cbindstatuscallback-class_1.h)]
 
@@ -504,12 +497,12 @@ void Function_Name(
     DWORD dwSize);
 ```
 
-In the following example (taken from the [ASYNC](../../visual-cpp-samples.md) sample), the function `OnData` writes the received data into a text box.
+In the following example (taken from the [ASYNC](../../overview/visual-cpp-samples.md) sample), the function `OnData` writes the received data into a text box.
 
 ### Example
 
 [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

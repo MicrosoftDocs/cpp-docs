@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1189 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1189"
 ms.date: "04/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1189"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1189"]
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1189
 

@@ -1,16 +1,9 @@
 ---
-title: "CSplitterWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CSplitterWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSplitterWnd", "AFXEXT/CSplitterWnd", "AFXEXT/CSplitterWnd::CSplitterWnd", "AFXEXT/CSplitterWnd::ActivateNext", "AFXEXT/CSplitterWnd::CanActivateNext", "AFXEXT/CSplitterWnd::Create", "AFXEXT/CSplitterWnd::CreateScrollBarCtrl", "AFXEXT/CSplitterWnd::CreateStatic", "AFXEXT/CSplitterWnd::CreateView", "AFXEXT/CSplitterWnd::DeleteColumn", "AFXEXT/CSplitterWnd::DeleteRow", "AFXEXT/CSplitterWnd::DeleteView", "AFXEXT/CSplitterWnd::DoKeyboardSplit", "AFXEXT/CSplitterWnd::DoScroll", "AFXEXT/CSplitterWnd::DoScrollBy", "AFXEXT/CSplitterWnd::GetActivePane", "AFXEXT/CSplitterWnd::GetColumnCount", "AFXEXT/CSplitterWnd::GetColumnInfo", "AFXEXT/CSplitterWnd::GetPane", "AFXEXT/CSplitterWnd::GetRowCount", "AFXEXT/CSplitterWnd::GetRowInfo", "AFXEXT/CSplitterWnd::GetScrollStyle", "AFXEXT/CSplitterWnd::IdFromRowCol", "AFXEXT/CSplitterWnd::IsChildPane", "AFXEXT/CSplitterWnd::IsTracking", "AFXEXT/CSplitterWnd::RecalcLayout", "AFXEXT/CSplitterWnd::SetActivePane", "AFXEXT/CSplitterWnd::SetColumnInfo", "AFXEXT/CSplitterWnd::SetRowInfo", "AFXEXT/CSplitterWnd::SetScrollStyle", "AFXEXT/CSplitterWnd::SplitColumn", "AFXEXT/CSplitterWnd::SplitRow", "AFXEXT/CSplitterWnd::OnDraw", "AFXEXT/CSplitterWnd::OnDrawSplitter", "AFXEXT/CSplitterWnd::OnInvertTracker"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSplitterWnd [MFC], CSplitterWnd", "CSplitterWnd [MFC], ActivateNext", "CSplitterWnd [MFC], CanActivateNext", "CSplitterWnd [MFC], Create", "CSplitterWnd [MFC], CreateScrollBarCtrl", "CSplitterWnd [MFC], CreateStatic", "CSplitterWnd [MFC], CreateView", "CSplitterWnd [MFC], DeleteColumn", "CSplitterWnd [MFC], DeleteRow", "CSplitterWnd [MFC], DeleteView", "CSplitterWnd [MFC], DoKeyboardSplit", "CSplitterWnd [MFC], DoScroll", "CSplitterWnd [MFC], DoScrollBy", "CSplitterWnd [MFC], GetActivePane", "CSplitterWnd [MFC], GetColumnCount", "CSplitterWnd [MFC], GetColumnInfo", "CSplitterWnd [MFC], GetPane", "CSplitterWnd [MFC], GetRowCount", "CSplitterWnd [MFC], GetRowInfo", "CSplitterWnd [MFC], GetScrollStyle", "CSplitterWnd [MFC], IdFromRowCol", "CSplitterWnd [MFC], IsChildPane", "CSplitterWnd [MFC], IsTracking", "CSplitterWnd [MFC], RecalcLayout", "CSplitterWnd [MFC], SetActivePane", "CSplitterWnd [MFC], SetColumnInfo", "CSplitterWnd [MFC], SetRowInfo", "CSplitterWnd [MFC], SetScrollStyle", "CSplitterWnd [MFC], SplitColumn", "CSplitterWnd [MFC], SplitRow", "CSplitterWnd [MFC], OnDraw", "CSplitterWnd [MFC], OnDrawSplitter", "CSplitterWnd [MFC], OnInvertTracker"]
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSplitterWnd Class
 
@@ -108,9 +101,9 @@ For further information on splitter windows, see [Technical Note 29](../../mfc/t
 
 For more information on how to create dynamic splitter windows, see:
 
-- MFC sample [Scribble](../../visual-cpp-samples.md)
+- MFC sample [Scribble](../../overview/visual-cpp-samples.md)
 
-- MFC sample [VIEWEX](../../visual-cpp-samples.md).
+- MFC sample [VIEWEX](../../overview/visual-cpp-samples.md).
 
 ## Inheritance Hierarchy
 
@@ -967,9 +960,9 @@ A pointer to a device context.
 
 ### Remarks
 
-## See Also
+## See also
 
-[MFC Sample VIEWEX](../../visual-cpp-samples.md)<br/>
+[MFC Sample VIEWEX](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CView Class](../../mfc/reference/cview-class.md)<br/>

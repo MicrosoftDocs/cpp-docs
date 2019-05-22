@@ -1,15 +1,8 @@
 ---
-title: "Window Class Macros | Microsoft Docs"
-ms.custom: ""
+title: "Window Class Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlwin/ATL::DECLARE_WND_CLASS", "atlwin/ATL::DECLARE_WND_SUPERCLASS", "atlwin/ATL::DECLARE_WND_CLASS_EX"]
-dev_langs: ["C++"]
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Window Class Macros
 
@@ -139,7 +132,6 @@ This macro allows you to specify the class parameters of a new window class, who
 
 If you want to use the default styles and background color, use the [DECLARE_WND_CLASS](#declare_wnd_class) macro. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
-## See Also
+## See also
 
 [Macros](atl-macros.md)
-

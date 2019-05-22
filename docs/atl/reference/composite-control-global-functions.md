@@ -1,16 +1,9 @@
 ---
-title: "Composite Control Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "Composite Control Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlhost/ATL::AtlAxDialogBox", "atlhost/ATL::AtlAxCreateDialog", "atlhost/ATL::AtlAxCreateControl", "atlhost/ATL::AtlAxCreateControlEx", "atlhost/ATL::AtlAxCreateControlLic", "atlhost/ATL::AtlAxCreateControlLicEx", "atlhost/ATL::AtlAxAttachControl", "atlhost/ATL::AtlAxGetHost", "atlhost/ATL::AtlAxGetControl", "atlhost/ATL::AtlSetChildSite", "atlhost/ATL::AtlAxWinInit", "atlhost/ATL::AtlAxWinTerm", "atlhost/ATL::AtlGetObjectSourceInterface"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, global functions"]
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Composite Control Global Functions
 
@@ -64,7 +57,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -82,7 +75,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK*: SDK Tools*.
+For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK: SDK Tools.
 
 For more information on dialog boxes in general, refer to [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.
 
@@ -111,7 +104,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -147,7 +140,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -199,7 +192,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -258,7 +251,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -312,7 +305,7 @@ A pointer to a string to be passed to the control. Must be formatted in one of t
 
 - A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
 
-- A URL such as "http://www.microsoft.com"
+- A URL such as "<http://www.microsoft.com>"
 
 - A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
 
@@ -477,7 +470,7 @@ Always returns TRUE.
 
 ### Remarks
 
-This function simply calls [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) as described in the Windows SDK.
+This function simply calls [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) as described in the Windows SDK.
 
 Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.
 
@@ -528,7 +521,7 @@ The example below shows how you might define an event sink class, `CEasySink`, t
 
 [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [Composite Control Macros](../../atl/reference/composite-control-macros.md)

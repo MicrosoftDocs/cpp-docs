@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2912 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2912"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2912"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2912"]
 ms.assetid: bd55cecd-ab1a-4636-ab8a-a00393fe7b3d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2912
 

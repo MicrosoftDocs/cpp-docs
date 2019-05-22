@@ -1,16 +1,9 @@
 ---
-title: "CSimpleStringT Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleStringT Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::PCXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::PXSTR", "ATLSIMPSTR/ATL::CSimpleStringT::CSimpleStringT", "ATLSIMPSTR/ATL::CSimpleStringT::Append", "ATLSIMPSTR/ATL::CSimpleStringT::AppendChar", "ATLSIMPSTR/ATL::CSimpleStringT::CopyChars", "ATLSIMPSTR/ATL::CSimpleStringT::CopyCharsOverlapped", "ATLSIMPSTR/ATL::CSimpleStringT::Empty", "ATLSIMPSTR/ATL::CSimpleStringT::FreeExtra", "ATLSIMPSTR/ATL::CSimpleStringT::GetAllocLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetAt", "ATLSIMPSTR/ATL::CSimpleStringT::GetBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::GetBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetLength", "ATLSIMPSTR/ATL::CSimpleStringT::GetManager", "ATLSIMPSTR/ATL::CSimpleStringT::GetString", "ATLSIMPSTR/ATL::CSimpleStringT::IsEmpty", "ATLSIMPSTR/ATL::CSimpleStringT::LockBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::Preallocate", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBuffer", "ATLSIMPSTR/ATL::CSimpleStringT::ReleaseBufferSetLength", "ATLSIMPSTR/ATL::CSimpleStringT::SetAt", "ATLSIMPSTR/ATL::CSimpleStringT::SetManager", "ATLSIMPSTR/ATL::CSimpleStringT::SetString", "ATLSIMPSTR/ATL::CSimpleStringT::StringLength", "ATLSIMPSTR/ATL::CSimpleStringT::Truncate", "ATLSIMPSTR/ATL::CSimpleStringT::UnlockBuffer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["shared classes, CSimpleStringT", "strings [C++], ATL class", "CSimpleStringT class"]
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleStringT Class
 
@@ -1158,7 +1151,7 @@ Destroys a `CSimpleStringT` object.
 
 Call this method to destroy the `CSimpleStringT` object.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

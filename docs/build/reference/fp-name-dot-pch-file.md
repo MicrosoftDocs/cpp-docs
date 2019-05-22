@@ -1,16 +1,9 @@
 ---
-title: "-Fp (Name .Pch File) | Microsoft Docs"
-ms.custom: ""
+title: "/Fp (Name .Pch File)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.PrecompiledHeaderFile", "/fp", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Fp compiler option [C++]", "-Fp compiler option [C++]", "naming precompiler header files", "PCH files, naming", "names [C++], PCH", ".pch files, naming", "precompiled header files, naming", "/Fp compiler option [C++]"]
 ms.assetid: 0fcd9cbd-e09f-44d3-9715-b41efb5d0be2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fp (Name .Pch File)
 
@@ -22,7 +15,7 @@ Provides a path name for a precompiled header instead of using the default path 
 
 ## Remarks
 
-Use this option with [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](../../build/reference/yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc**<em>filename</em> argument and from the base name of the source file.
+Use this option with [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md) or [/Yu (Use Precompiled Header File)](yu-use-precompiled-header-file.md) to provide a path name for a precompiled header instead of using the default path name. You can also use **/Fp** with **/Yc** to specify the use of a precompiled header file that differs from the **/Yc**<em>filename</em> argument and from the base name of the source file.
 
 If you do not specify an extension as part of the path name, an extension of .pch is assumed. If you specify a directory without a file name, the default file name is VC*x*0.pch, where *x* is the major version of Visual C++ in use.
 
@@ -30,7 +23,7 @@ You can also use the **/Fp** option with **/Yu**.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -58,9 +51,9 @@ The following command specifies the use of a precompiled header file named MYPCH
 CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP
 ```
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Specifying the Pathname](../../build/reference/specifying-the-pathname.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[Specifying the Pathname](specifying-the-pathname.md)

@@ -1,16 +1,9 @@
 ---
-title: "Declaring a Variable Based on Your New Control Class | Microsoft Docs"
-ms.custom: ""
+title: "Declaring a Variable Based on Your New Control Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.classes.control.variable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["variables [MFC], control classes", "control classes [MFC], variables", "classes [MFC], declaring variables based on"]
 ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Declaring a Variable Based on Your New Control Class
 
@@ -40,7 +33,7 @@ Once you have created an MFC control class, you can declare a variable based on 
 
 10. Click **OK**.
 
-## See Also
+## See also
 
 [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

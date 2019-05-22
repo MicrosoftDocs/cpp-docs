@@ -1,16 +1,10 @@
 ---
-title: "Platform::Runtime::CompilerServices Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Runtime::CompilerServices Namespace"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Runtime::CompilerServices"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Runtime::CompilerServices Namespace"]
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::CompilerServices Namespace
 
@@ -58,6 +52,6 @@ Although this namespace is intended for internal use, browsers can display the f
 
 **Namespace:** Platform::CompilerServices
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)

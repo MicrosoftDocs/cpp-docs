@@ -1,15 +1,8 @@
 ---
-title: "Framework (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Framework (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["encapsulation [MFC], Win32 API", "MFC, application framework", "wrapper classes [MFC], explained", "Win32 [MFC], API encapsulation by MFC", "application framework [MFC], about MFC application framework", "APIs [MFC], encapsulation by MFC Win32", "encapsulation [MFC]", "Windows API [MFC], encapsulation by MFC", "encapsulated Win32 API [MFC]"]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Framework (MFC)
 
@@ -41,6 +34,6 @@ Encapsulation means that the C++ class `CWnd`, for example, contains a member va
 
 [Window Objects](../mfc/window-objects.md)
 
-## See Also
+## See also
 
 [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md)

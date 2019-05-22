@@ -1,16 +1,9 @@
 ---
-title: "CDBPropIDSet Class | Microsoft Docs"
-ms.custom: ""
+title: "CDBPropIDSet Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDBPropIDSet", "ATL.CDBPropIDSet", "ATL::CDBPropIDSet", "CDBPropIDSet.AddPropertyID", "CDBPropIDSet::AddPropertyID", "AddPropertyID", "ATL.CDBPropIDSet.AddPropertyID", "ATL::CDBPropIDSet::AddPropertyID", "ATL::CDBPropIDSet::CDBPropIDSet", "CDBPropIDSet", "CDBPropIDSet.CDBPropIDSet", "CDBPropIDSet::CDBPropIDSet", "ATL.CDBPropIDSet.CDBPropIDSet", "CDBPropIDSet.operator=", "ATL.CDBPropIDSet.operator=", "ATL::CDBPropIDSet::operator=", "CDBPropIDSet::operator=", "CDBPropIDSet.SetGUID", "ATL::CDBPropIDSet::SetGUID", "SetGUID", "ATL.CDBPropIDSet.SetGUID", "CDBPropIDSet::SetGUID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBPropIDSet class", "AddPropertyID method", "CDBPropIDSet class, constructor", "operator =, property sets", "= operator, with OLE DB templates", "operator=, property sets", "SetGUID method"]
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBPropIDSet Class
 
@@ -44,7 +37,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ## Remarks
 
-OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure belong to one property set.
+OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure belong to one property set.
 
 ## <a name="addpropertyid"></a> CDBPropIDSet::AddPropertyID
 
@@ -63,7 +56,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> CDBPropIDSet::CDBPropIDSet
 
-The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.
+The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
 
 ### Syntax
 
@@ -96,7 +89,7 @@ void SetGUID(const GUID& guid) throw();
 #### Parameters
 
 *guid*<br/>
-[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) structure.
+[in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) structure.
 
 ### Remarks
 
@@ -112,7 +105,7 @@ Assigns the contents of one property ID set to another ID property set.
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

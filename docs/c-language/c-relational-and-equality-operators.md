@@ -1,15 +1,8 @@
 ---
-title: "C Relational and Equality Operators | Microsoft Docs"
-ms.custom: ""
+title: "C Relational and Equality Operators"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["relational operators, syntax", "equality operator", "operators [C], equality", "equality operator, syntax", "operators [C], relational"]
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Relational and Equality Operators
 
@@ -86,7 +79,7 @@ enum color { red, white, green } col;
 
 These statements declare an enumeration variable named `col` with the tag `color`. At any time, the variable may contain an integer value of 0, 1, or 2, which represents one of the elements of the enumeration set `color`: the color red, white, or green, respectively. If `col` contains 0 when the **if** statement is executed, any statements depending on the **if** will be executed.
 
-## See Also
+## See also
 
 [Relational Operators: \<, >, \<=, and >=](../cpp/relational-operators-equal-and-equal.md)<br/>
 [Equality Operators: == and !=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)

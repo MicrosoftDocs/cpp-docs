@@ -1,15 +1,8 @@
 ---
-title: "Opening Files | Microsoft Docs"
-ms.custom: ""
+title: "Opening Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Open member functions [MFC]", "CFile class [MFC], variable", "opening files, in MFC", "Open calls [MFC]", "Open method, CFile class [MFC]", "examples [MFC], opening files", "opening files, handling exceptions", "exception handling [MFC], when opening files", "files [MFC], opening", "file objects [MFC]", "MFC, file operations", "opening files [MFC]", "exception handling [MFC], opening files"]
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Opening Files
 
@@ -36,9 +29,8 @@ The following example shows how to create a new file with read/write permission 
 > [!NOTE]
 >  This example creates and opens a file. If there are problems, the `Open` call can return a `CFileException` object in its last parameter, as shown here. The TRACE macro prints both the file name and a code indicating the reason for failure. You can call the `AfxThrowFileException` function if you require more detailed error reporting.
 
-## See Also
+## See also
 
 [CFile Class](../mfc/reference/cfile-class.md)<br/>
 [CFile::Open](../mfc/reference/cfile-class.md#open)<br/>
 [Files](../mfc/files-in-mfc.md)
-

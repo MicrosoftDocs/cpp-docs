@@ -1,19 +1,12 @@
 ---
-title: "strtol, wcstol, _strtol_l, _wcstol_l | Microsoft Docs"
-ms.custom: ""
+title: "strtol, wcstol, _strtol_l, _wcstol_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strtol", "wcstol", "_strtol_l", "_wcstol_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wcstol_l", "strtol", "_tcstol", "wcstol", "_strtol_l", "_tcstol_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wcstol function", "wcstol_l function", "_tcstol function", "string conversion, to integers", "tcstol function", "strtol_l function", "_wcstol_l function", "_strtol_l function", "strtol function"]
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strtol, wcstol, _strtol_l, _wcstol_l
 
@@ -79,7 +72,7 @@ The **strtol** function converts *strSource* to a **long**. **strtol** stops rea
 |**_tcstol**|**strtol**|**strtol**|**wcstol**|
 |**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
 
-The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource**;* for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtol_l** and **_wcstol_l** are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The current locale's **LC_NUMERIC** category setting determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtol_l** and **_wcstol_l** are identical to the corresponding functions without the **_l** suffix except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* is not **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 

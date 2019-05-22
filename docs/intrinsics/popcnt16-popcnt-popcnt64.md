@@ -1,22 +1,15 @@
 ---
-title: "__popcnt16, __popcnt, __popcnt64 | Microsoft Docs"
-ms.custom: ""
+title: "__popcnt16, __popcnt, __popcnt64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __popcnt16, __popcnt, __popcnt64
 
 **Microsoft Specific**
 
-Counts the number of one bits (population count) in a 16-, 32-, or 64-byte unsigned integer.
+Counts the number of one bits (population count) in a 16-, 32-, or 64-bit unsigned integer.
 
 ## Syntax
 
@@ -53,7 +46,7 @@ The number of one bits in the `value` parameter.
 
 ## Remarks
 
-Each of these intrinsics generates the `popcnt` instruction.  The size of the value that the `popcnt` instruction returns is the same as the size of its argument.  In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
+Each of these intrinsics generates the `popcnt` instruction. In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
 
 To determine hardware support for the `popcnt` instruction, call the `__cpuid` intrinsic with `InfoType=0x00000001` and check bit 23 of `CPUInfo[2] (ECX)`. This bit is 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `popcnt` instruction, the results are unpredictable.
 
@@ -81,7 +74,6 @@ int main()
     cout << "__popcnt(0x" << hex << ui[i] << ") = " << dec << uir << endl;
   }
 }
-
 ```
 
 ```Output
@@ -98,6 +90,6 @@ __popcnt(0xffffffff) = 32
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2212 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2212"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2212"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2212"]
 ms.assetid: 3fdab304-272c-4d07-bfd4-fad75170e536
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2212
 

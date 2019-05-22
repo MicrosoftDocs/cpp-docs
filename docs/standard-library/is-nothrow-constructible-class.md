@@ -1,16 +1,9 @@
 ---
-title: "is_nothrow_constructible Class | Microsoft Docs"
-ms.custom: ""
+title: "is_nothrow_constructible Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_nothrow_constructible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_constructible"]
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_nothrow_constructible Class
 

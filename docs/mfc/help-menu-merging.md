@@ -1,15 +1,8 @@
 ---
-title: "Help Menu Merging | Microsoft Docs"
-ms.custom: ""
+title: "Help Menu Merging"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], merging", "merging Help menus [MFC]", "Help [MFC], for active document containers"]
 ms.assetid: 9d615999-79ba-471a-9288-718f0c903d49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Help Menu Merging
 
@@ -47,7 +40,6 @@ When the object calls `IOleInPlaceFrame::SetMenu`, before displaying the merged 
 
 Finally, when it is time to disassemble the menu, the object removes the inserted **Help** menu in addition to removing the other inserted menus. When the container removes its menus, it will remove its **Help** menu in addition to the other menus that it has inserted.
 
-## See Also
+## See also
 
 [Active Document Containers](../mfc/active-document-containers.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Processing Notification Messages in Month Calendar Controls | Microsoft Docs"
-ms.custom: ""
+title: "Processing Notification Messages in Month Calendar Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], notifications", "CMonthCalCtrl class [MFC], day states", "month calendar controls [MFC], notification messages", "notifications [MFC], for CMonthCalCtrl", "notifications [MFC], month calendar control"]
 ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in Month Calendar Controls
 
@@ -25,8 +18,7 @@ The following list describes the various notifications sent by the month calenda
 
 - MCN_SELECT Notifies the parent that an explicit date selection has been made.
 
-## See Also
+## See also
 
 [Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

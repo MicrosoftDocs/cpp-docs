@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2569 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2569"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2569"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2569"]
 ms.assetid: 092bed1e-f631-436c-9586-7750629f6fac
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2569
 

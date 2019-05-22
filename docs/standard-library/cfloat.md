@@ -1,16 +1,9 @@
 ---
-title: "&lt;cfloat&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cfloat&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cfloat>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cfloat header"]
 ms.assetid: 25ec4ab9-3c1d-46e3-9e68-ad9a8762cadb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cfloat&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<float.h>.
 
 ```cpp
 #include <cfloat>
-
 ```
 
 ## See also

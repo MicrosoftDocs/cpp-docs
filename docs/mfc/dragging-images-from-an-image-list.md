@@ -1,15 +1,8 @@
 ---
-title: "Dragging Images from an Image List | Microsoft Docs"
-ms.custom: ""
+title: "Dragging Images from an Image List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CImageList class [MFC], dragging images from", "dragging images from image lists [MFC]", "image lists [MFC], dragging images from", "images [MFC], dragging from image lists"]
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dragging Images from an Image List
 
@@ -27,8 +20,7 @@ The [SetDragCursorImage](../mfc/reference/cimagelist-class.md#setdragcursorimage
 
 When an application calls `BeginDrag`, the system creates a temporary, internal image list and copies the specified drag image to the internal list. You can retrieve a pointer to the temporary drag image list by using the [GetDragImage](../mfc/reference/cimagelist-class.md#getdragimage) member function. The function also retrieves the current drag position and the offset of the drag image relative to the drag position.
 
-## See Also
+## See also
 
 [Using CImageList](../mfc/using-cimagelist.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "&lt;tuple&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;tuple&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<tuple>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tuple header"]
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;tuple&gt;
 

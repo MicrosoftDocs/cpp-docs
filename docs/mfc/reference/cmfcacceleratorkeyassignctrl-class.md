@@ -1,16 +1,9 @@
 ---
-title: "CMFCAcceleratorKeyAssignCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCAcceleratorKeyAssignCtrl Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCAcceleratorKeyAssignCtrl [MFC], CMFCAcceleratorKeyAssignCtrl", "CMFCAcceleratorKeyAssignCtrl [MFC], GetAccel", "CMFCAcceleratorKeyAssignCtrl [MFC], IsFocused", "CMFCAcceleratorKeyAssignCtrl [MFC], IsKeyDefined", "CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage", "CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey"]
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCAcceleratorKeyAssignCtrl Class
 
@@ -148,7 +141,7 @@ void ResetKey();
 
 The function clears the edit control text. This includes any shortcut keys that the user pressed.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Registering Window Classes | Microsoft Docs"
-ms.custom: ""
+title: "Registering Window Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["WndProc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["window classes [MFC], registering", "registry [MFC], registering classes", "AfxRegisterWndClass method [MFC]", "MFC, windows", "WinMain method [MFC], and registering window classes", "WndProc method [MFC]", "classes [MFC], registering window classes", "WinMain method [MFC]", "registering window classes [MFC]"]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registering Window Classes
 
@@ -26,7 +19,6 @@ In contrast, most window class registration activity is done automatically in an
 
 For more information, see [Technical Note 1](../mfc/tn001-window-class-registration.md).
 
-## See Also
+## See also
 
 [Creating Windows](../mfc/creating-windows.md)
-

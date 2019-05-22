@@ -1,15 +1,8 @@
 ---
-title: "make_exception_ptr Function | Microsoft Docs"
-ms.custom: ""
+title: "make_exception_ptr Function"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["ppltasks/std::make_exception_ptr"]
-dev_langs: ["C++"]
 ms.assetid: 8d81cf7a-818e-4b27-8d49-440ec3088609
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # make_exception_ptr Function
 
@@ -36,6 +29,6 @@ Exception value.
 
 **Namespace:** std
 
-## See Also
+## See also
 
 [std Namespace](std-namespace.md)

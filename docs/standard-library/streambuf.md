@@ -1,16 +1,9 @@
 ---
-title: "&lt;streambuf&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;streambuf&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<streambuf>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streambuf header"]
 ms.assetid: 4365b25c-5831-488b-b9c2-867bfe961b89
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;streambuf&gt;
 
@@ -20,7 +13,6 @@ Include the iostreams standard header \<streambuf> to define the template class 
 
 ```cpp
 #include <streambuf>
-
 ```
 
 ### Typedefs

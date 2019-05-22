@@ -1,15 +1,8 @@
 ---
-title: "Global Hot Keys | Microsoft Docs"
-ms.custom: ""
+title: "Global Hot Keys"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["keyboard shortcuts [MFC], hot keys", "CHotKeyCtrl class [MFC], global hot keys", "access keys [MFC], hot keys", "global hot keys [MFC]"]
 ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Global Hot Keys
 
@@ -19,8 +12,7 @@ A global hot key is associated with a particular nonchild window. It allows the 
 
 Whenever the user presses a global hot key, the window specified receives a [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) message that specifies **SC_HOTKEY** as the type of the command. This message also activates the window that receives it. Because this message does not include any information on the exact key that was pressed, using this method does not allow distinguishing between different hot keys that may be attached to the same window. The hot key remains valid until the application that sent **WM_SETHOTKEY** exits.
 
-## See Also
+## See also
 
 [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

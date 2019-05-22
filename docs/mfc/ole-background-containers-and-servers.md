@@ -1,15 +1,8 @@
 ---
-title: "OLE Background: Containers and Servers | Microsoft Docs"
-ms.custom: ""
+title: "OLE Background: Containers and Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE full-server applications [MFC]", "server applications [MFC], communication with containers", "full-server [MFC]", "server applications [MFC], requirements", "server applications [MFC], defined", "OLE server applications [MFC], about server applications", "server applications [MFC], full-server vs. mini-server", "OLE server applications [MFC], mini-server applications", "OLE containers [MFC], container applications", "containers [MFC], OLE container applications", "server applications [MFC]"]
 ms.assetid: dafbb31d-096c-4654-b774-12900d832919
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Background: Containers and Servers
 
@@ -23,7 +16,7 @@ Containers and servers do not communicate directly. Instead, they communicate th
 
 Using this means of communication, a container does not need to know the implementation details of the server application. It allows a container to accept items created by any server without having to define the types of servers with which it can work. As a result, the user of a container application can take advantage of future applications and data formats. If these new applications are OLE components, then a compound document will be able to incorporate items created by those applications.
 
-## See Also
+## See also
 
 [OLE Background](../mfc/ole-background.md)<br/>
 [OLE Background: MFC Implementation](../mfc/ole-background-mfc-implementation.md)<br/>
@@ -31,4 +24,3 @@ Using this means of communication, a container does not need to know the impleme
 [Servers](../mfc/servers.md)<br/>
 [Containers: Client Items](../mfc/containers-client-items.md)<br/>
 [Servers: Server Items](../mfc/servers-server-items.md)
-

@@ -1,14 +1,8 @@
 ---
-title: "Concurrency::graphics namespace enums | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::graphics namespace enums"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["amp_graphics/concurrency::graphics::address_mode", "amp_graphics/concurrency::graphics::filter_mode"]
-dev_langs: ["C++"]
 ms.assetid: 1d2e1859-a3d7-4d3d-8e03-1a877a86b3e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics namespace enums
 
@@ -37,6 +31,6 @@ enum filter_mode;
 **Header:** amp_graphics.h
 **Namespace:** Concurrency::graphics
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

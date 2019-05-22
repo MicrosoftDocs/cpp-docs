@@ -1,16 +1,9 @@
 ---
-title: "Creating a Forms-Based MFC Application | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Forms-Based MFC Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcforms.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], forms-based", "forms-based applications [MFC]"]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Forms-Based MFC Application
 
@@ -55,10 +48,9 @@ For more information, see:
 
 - [Application Design Choices](../../mfc/application-design-choices.md)
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Form Views](../../mfc/form-views-mfc.md)<br/>
 [Creating a File Explorer-Style MFC Application](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)<br/>
 [Creating a Web Browser-Style MFC Application](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "operator SHL | Microsoft Docs"
-ms.custom: ""
+title: "operator SHL"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator SHL", "SHL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SHL operator", "operator SHL"]
 ms.assetid: 7c4fbc25-cbbf-41ee-a07e-d6a15e9192ff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator SHL
 

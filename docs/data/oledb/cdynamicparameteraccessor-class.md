@@ -1,17 +1,9 @@
 ---
-title: "CDynamicParameterAccessor Class | Microsoft Docs"
-ms.custom: ""
+title: "CDynamicParameterAccessor Class"
 ms.date: "02/14/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-f1_keywords: ["ATL.CDynamicParameterAccessor", "ATL::CDynamicParameterAccessor", "CDynamicParameterAccessor", "CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor", "CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam", "ATL::CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor.GetParamCount", "GetParamCount", "ATL.CDynamicParameterAccessor.GetParamCount", "GetParamIO", "CDynamicParameterAccessor::GetParamIO", "ATL.CDynamicParameterAccessor.GetParamIO", "CDynamicParameterAccessor.GetParamIO", "ATL::CDynamicParameterAccessor::GetParamIO", "ATL::CDynamicParameterAccessor::GetParamLength", "ATL.CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor::GetParamLength", "GetParamLength", "CDynamicParameterAccessor::GetParamName", "ATL.CDynamicParameterAccessor.GetParamName", "GetParamName", "CDynamicParameterAccessor.GetParamName", "ATL::CDynamicParameterAccessor::GetParamName", "CDynamicParameterAccessor::GetParamStatus", "CDynamicParameterAccessor.GetParamStatus","ATL.CDynamicParameterAccessor.GetParamStatus", "ATL::CDynamicParameterAccessor::GetParamStatus", "GetParamStatus", "CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString",  "CDynamicParameterAccessor.GetParamType", "CDynamicParameterAccessor:GetParamType", "CDynamicParameterAccessor::GetParamType", "ATL.CDynamicParameterAccessor.GetParamType", "GetParamType", "ATL::CDynamicParameterAccessor::GetParamType", "ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParamLength", "CDynamicParameterAccessor.SetParamLength", "ATL.CDynamicParameterAccessor.SetParamLength", "CDynamicParameterAccessor::SetParamLength", "SetParamLength", "CDynamicParameterAccessor::SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamStatus", "ATL::CDynamicParameterAccessor::SetParamStatus", "CDynamicParameterAccessor.SetParamStatus", "SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["CDynamicParameterAccessor class", "CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method", "GetParam method",
-  "GetParamCount method", "GetParamIO method", "GetParamLength method", "GetParamName method", "GetParamStatus method", "GetParamString method", "GetParamType method", "SetParam method", "SetParamLength method", "SetParamStatus method", "SetParamString method"]
+f1_keywords: ["ATL.CDynamicParameterAccessor", "ATL::CDynamicParameterAccessor", "CDynamicParameterAccessor", "CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor", "CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam", "ATL::CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor.GetParamCount", "GetParamCount", "ATL.CDynamicParameterAccessor.GetParamCount", "GetParamIO", "CDynamicParameterAccessor::GetParamIO", "ATL.CDynamicParameterAccessor.GetParamIO", "CDynamicParameterAccessor.GetParamIO", "ATL::CDynamicParameterAccessor::GetParamIO", "ATL::CDynamicParameterAccessor::GetParamLength", "ATL.CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor::GetParamLength", "GetParamLength", "CDynamicParameterAccessor::GetParamName", "ATL.CDynamicParameterAccessor.GetParamName", "GetParamName", "CDynamicParameterAccessor.GetParamName", "ATL::CDynamicParameterAccessor::GetParamName", "CDynamicParameterAccessor::GetParamStatus", "CDynamicParameterAccessor.GetParamStatus", "ATL.CDynamicParameterAccessor.GetParamStatus", "ATL::CDynamicParameterAccessor::GetParamStatus", "GetParamStatus", "CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString", "CDynamicParameterAccessor.GetParamType", "CDynamicParameterAccessor:GetParamType", "CDynamicParameterAccessor::GetParamType", "ATL.CDynamicParameterAccessor.GetParamType", "GetParamType", "ATL::CDynamicParameterAccessor::GetParamType", "ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParamLength", "CDynamicParameterAccessor.SetParamLength", "ATL.CDynamicParameterAccessor.SetParamLength", "CDynamicParameterAccessor::SetParamLength", "SetParamLength", "CDynamicParameterAccessor::SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamStatus", "ATL::CDynamicParameterAccessor::SetParamStatus", "CDynamicParameterAccessor.SetParamStatus", "SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
+helpviewer_keywords: ["CDynamicParameterAccessor class", "CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method", "GetParam method", "GetParamCount method", "GetParamIO method", "GetParamLength method", "GetParamName method", "GetParamStatus method", "GetParamString method", "GetParamType method", "SetParam method", "SetParamLength method", "SetParamStatus method", "SetParamString method"]
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicParameterAccessor Class
 
@@ -63,9 +55,10 @@ The constructor.
 
 ```cpp
 typedef CDynamicParameterAccessor _ParamClass;
-CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
-   DBLENGTH nBlobSize = 8000 )
-   : CDynamicAccessor(eBlobHandling, nBlobSize )
+CDynamicParameterAccessor(
+   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
+   DBLENGTH nBlobSize = 8000 )
+   : CDynamicAccessor(eBlobHandling, nBlobSize )
 ```
 
 #### Parameters
@@ -87,10 +80,10 @@ Retrieves the nonstring data for a specified parameter from the parameter buffer
 ### Syntax
 
 ```cpp
-template <class ctype>bool GetParam(DBORDINAL nParam, 
+template <class ctype>bool GetParam(DBORDINAL nParam,
    ctype* pData) const throw();
 
-template <class ctype> bool GetParam(TCHAR* pParamName, 
+template <class ctype> bool GetParam(TCHAR* pParamName,
    ctype* pData) const throw();
 
 void* GetParam(DBORDINAL nParam) const throw();
@@ -139,7 +132,7 @@ Determines whether the specified parameter is an input or output parameter.
 ### Syntax
 
 ```cpp
-bool GetParamIO(DBORDINAL nParam, 
+bool GetParamIO(DBORDINAL nParam,
    DBPARAMIO* pParamIO) const throw();
 ```
 
@@ -228,7 +221,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] The parameter number (offset from 1). Parameter 0 is reserved for return values. The parameter number is the index of the parameter based on its order in the SQL or stored procedure call. See [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) for an example.
 
 *pStatus*<br/>
-[out] A pointer to the variable containing the DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[out] A pointer to the variable containing the DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 
@@ -340,7 +333,7 @@ A templated parameter that is the data type.
 [in] The pointer to the memory containing the data to be written to the buffer.
 
 *status*<br/>
-[in] The DBSTATUS column status. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS column status. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Return Value
 
@@ -388,7 +381,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] The parameter number (offset from 1). Parameter 0 is reserved for return values. The parameter number is the index of the parameter based on its order in the SQL or stored procedure call. See [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) for an example.
 
 *status*<br/>
-[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 
@@ -401,10 +394,10 @@ Sets the string data of the specified parameter stored in the buffer.
 ### Syntax
 
 ```cpp
-bool SetParamString(DBORDINAL nParam, 
-   constCHAR* pString, 
-   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam, 
-   constWCHAR* pString, 
+bool SetParamString(DBORDINAL nParam,
+   constCHAR* pString,
+   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam,
+   constWCHAR* pString,
    DBSTATUS status = DBSTATUS_S_OK) throw();
 ```
 
@@ -417,7 +410,7 @@ bool SetParamString(DBORDINAL nParam, 
 [in] A pointer to the ANSI (**CHAR**) or Unicode (**WCHAR**) string data of the specified parameter. See DBSTATUS in oledb.h.
 
 *status*<br/>
-[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
+[in] The DBSTATUS status of the specified parameter. For information on DBSTATUS values, see [Status](/previous-versions/windows/desktop/ms722617(v=vs.85)) in the *OLE DB Programmer's Reference*, or search for DBSTATUS in oledb.h.
 
 ### Remarks
 

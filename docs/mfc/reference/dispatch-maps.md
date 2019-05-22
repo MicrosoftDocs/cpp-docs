@@ -1,16 +1,8 @@
 ---
-title: "Dispatch Maps | Microsoft Docs"
-ms.custom: ""
+title: "Dispatch Maps"
 ms.date: "06/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.macros.maps"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dispatch Maps
 

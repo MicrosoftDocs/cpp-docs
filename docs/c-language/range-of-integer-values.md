@@ -1,14 +1,7 @@
 ---
-title: "Range of Integer Values | Microsoft Docs"
-ms.custom: ""
+title: "Range of Integer Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 0e9c6161-8f3f-4bfb-9fcc-a6c8dc97d702
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Range of Integer Values
 
@@ -23,6 +16,6 @@ Integers contain 32 bits (four bytes). Signed integers are represented in two's-
 |`unsigned long`|0 to 4294967295|
 |**signed long**|-2147483648 to 2147483647|
 
-## See Also
+## See also
 
 [Integers](../c-language/integers.md)

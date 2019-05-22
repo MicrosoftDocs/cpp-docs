@@ -1,22 +1,15 @@
 ---
-title: "Adding Multiple Views to a Single Document | Microsoft Docs"
-ms.custom: ""
+title: "Adding Multiple Views to a Single Document"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multiple views [MFC], SDI applications", "documents [MFC], multiple views", "single document interface (SDI), adding views", "views [MFC], SDI applications"]
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Multiple Views to a Single Document
 
 In a single-document interface (SDI) application created with the Microsoft Foundation Class (MFC) Library, each document type is associated with a single view type. In some cases, it is desirable to have the ability to switch the current view of a document with a new view.
 
 > [!TIP]
->  For additional procedures on implementing multiple views for a single document, see [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) and the [COLLECT](../visual-cpp-samples.md) MFC sample.
+>  For additional procedures on implementing multiple views for a single document, see [CDocument::AddView](../mfc/reference/cdocument-class.md#addview) and the [COLLECT](../overview/visual-cpp-samples.md) MFC sample.
 
 You can implement this functionality by adding a new `CView`-derived class and additional code for switching the views dynamically to an existing MFC application.
 
@@ -94,7 +87,6 @@ The final step involves adding code that calls the `SwitchView` method when the 
 
 For more information on adding new menu items and command handler functions, see [Handlers for Commands and Control Notifications](../mfc/handlers-for-commands-and-control-notifications.md).
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

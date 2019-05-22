@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonColorButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonColorButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::CMFCRibbonColorButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::AddColorsGroup", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableAutomaticButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::EnableOtherButton", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetAutomaticColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColorBoxSize", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetColumns", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::GetHighlightedColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::RemoveAllColorGroups", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColor", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorBoxSize", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColorName", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetColumns", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetDocumentColors", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetPalette", "AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::UpdateColor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonColorButton [MFC], CMFCRibbonColorButton", "CMFCRibbonColorButton [MFC], AddColorsGroup", "CMFCRibbonColorButton [MFC], EnableAutomaticButton", "CMFCRibbonColorButton [MFC], EnableOtherButton", "CMFCRibbonColorButton [MFC], GetAutomaticColor", "CMFCRibbonColorButton [MFC], GetColor", "CMFCRibbonColorButton [MFC], GetColorBoxSize", "CMFCRibbonColorButton [MFC], GetColumns", "CMFCRibbonColorButton [MFC], GetHighlightedColor", "CMFCRibbonColorButton [MFC], RemoveAllColorGroups", "CMFCRibbonColorButton [MFC], SetColor", "CMFCRibbonColorButton [MFC], SetColorBoxSize", "CMFCRibbonColorButton [MFC], SetColorName", "CMFCRibbonColorButton [MFC], SetColumns", "CMFCRibbonColorButton [MFC], SetDocumentColors", "CMFCRibbonColorButton [MFC], SetPalette", "CMFCRibbonColorButton [MFC], UpdateColor"]
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonColorButton Class
 
@@ -57,7 +50,7 @@ The ribbon color button displays a color bar when a user presses it. By default,
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCRibbonColorButton` class. The example shows how to construct a `CMFCRibbonColorButton` object, set the large image, enable the **Automatic** button, enable the **Other** button, set the number of columns, set the size of all the color elements that appear on the color bar, add a group of colors to the regular color area, and specify a list of RGB values to display in the document color area. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCRibbonColorButton` class. The example shows how to construct a `CMFCRibbonColorButton` object, set the large image, enable the **Automatic** button, enable the **Other** button, set the number of columns, set the size of all the color elements that appear on the color bar, add a group of colors to the regular color area, and specify a list of RGB values to display in the document color area. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#3](../../mfc/reference/codesnippet/cpp/cmfcribboncolorbutton-class_1.cpp)]
 
@@ -392,7 +385,7 @@ void UpdateColor(COLORREF color);
 
 The `CMFCRibbonColorButton::UpdateColor` method changes the currently selected button's color and notifies its parent by sending a WM_COMMAND message with a BN_CLICKED standard notification. Use the [CMFCRibbonColorButton::GetColor](#getcolor) method to retrieve the selected color.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

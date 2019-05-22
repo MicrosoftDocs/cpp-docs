@@ -1,16 +1,9 @@
 ---
-title: "defaultcollelem | Microsoft Docs"
-ms.custom: ""
+title: "defaultcollelem"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultcollelem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["defaultcollelem attribute"]
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultcollelem
 
@@ -56,7 +49,7 @@ __interface IMyForm
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)

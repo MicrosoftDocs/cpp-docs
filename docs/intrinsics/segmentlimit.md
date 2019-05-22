@@ -1,16 +1,9 @@
 ---
-title: "__segmentlimit | Microsoft Docs"
-ms.custom: ""
+title: "__segmentlimit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__segmentlimit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__segmentlimit intrinsic", "lsl instruction"]
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __segmentlimit
 
@@ -21,8 +14,8 @@ Generates the `lsl` (Load Segment Limit) instruction.
 ## Syntax
 
 ```
-unsigned long __segmentlimit( 
-   unsigned long a 
+unsigned long __segmentlimit(
+   unsigned long a
 );
 ```
 
@@ -105,6 +98,6 @@ sl was changed
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

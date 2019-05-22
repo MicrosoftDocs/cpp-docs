@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3464 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3464"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3464"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3464"]
 ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3464
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 Type forwarding does not work on nested types.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
 ## Example
 

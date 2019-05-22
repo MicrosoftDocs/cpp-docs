@@ -1,16 +1,9 @@
 ---
-title: "__thiscall | Microsoft Docs"
-ms.custom: ""
+title: "__thiscall"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["__thiscall", "__thiscall_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__thiscall keyword [C++]"]
 ms.assetid: a6a22dd2-0101-4885-b33b-22f6057965df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # __thiscall
 
@@ -22,7 +15,7 @@ One reason to use **__thiscall** is in classes whose member functions use `__clr
 
 When compiling with [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), all functions and function pointers are `__clrcall` unless specified otherwise. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-In releases before Visual C++ 2005, the **__thiscall** calling convention could not be explicitly specified in a program, because **__thiscall** was not a keyword.
+In releases before Visual Studio 2005, the **__thiscall** calling convention could not be explicitly specified in a program, because **__thiscall** was not a keyword.
 
 `vararg` member functions use the **__cdecl** calling convention. All function arguments are pushed on the stack, with the **this** pointer placed on the stack last
 

@@ -1,16 +1,8 @@
 ---
-title: "TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications | Microsoft Docs"
-ms.custom: ""
+title: "TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.odbc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["installing ODBC", "ODBC, installing", "setup, ODBC setup programs", "TN048", "ODBC, and MFC", "MFC, database applications"]
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN048: Writing ODBC Setup and Administration Programs for MFC Database Applications
 
@@ -47,8 +39,7 @@ To display a dialog box with which a user can add, modify, and delete data sourc
 
 For more information, see ODBC SDK *Programmer's Reference,* Chapter 23, Setup DLL Function Reference, and Chapter 24, Installer DLL Function Reference.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

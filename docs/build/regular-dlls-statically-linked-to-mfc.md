@@ -1,15 +1,8 @@
 ---
-title: "Regular MFC DLLs Statically Linked to MFC | Microsoft Docs"
-ms.custom: ""
+title: "Regular MFC DLLs Statically Linked to MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["regular MFC DLLs [C++]", "DLLs [C++], regular", "USRDLLs", "USRDLLs, statically linked to MFC", "statically linked DLLs [C++]", "regular MFC DLLs [C++], statically linked to MFC"]
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Statically Linked to MFC
 
@@ -61,20 +54,20 @@ The standard MFC static link libraries are named according to the convention des
 
 ## What do you want to do?
 
-- [Initialize regular MFC DLLs](../build/run-time-library-behavior.md#initializing-regular-dlls)
+- [Initialize regular MFC DLLs](run-time-library-behavior.md#initializing-regular-dlls)
 
 ## What do you want to know more about?
 
 - [Using MFC as Part of a DLL](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
+- [Using Database, OLE, and Sockets MFC extension DLLs in regular MFC DLLs](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
 - [Creating an MFC DLL](../mfc/reference/mfc-dll-wizard.md)
 
-- [Regular MFC DLLs Dynamically Linked to MFC](../build/regular-dlls-dynamically-linked-to-mfc.md)
+- [Regular MFC DLLs Dynamically Linked to MFC](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC extension DLLs](../build/extension-dlls-overview.md)
+- [MFC extension DLLs](extension-dlls-overview.md)
 
-## See Also
+## See also
 
-[Kinds of DLLs](../build/kinds-of-dlls.md)
+[Kinds of DLLs](kinds-of-dlls.md)

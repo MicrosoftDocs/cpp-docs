@@ -1,20 +1,13 @@
 ---
-title: "IDBCreateCommandImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDBCreateCommandImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::IDBCreateCommandImpl", "IDBCreateCommandImpl", "ATL.IDBCreateCommandImpl", "IDBCreateCommandImpl.CreateCommand", "CreateCommand", "IDBCreateCommandImpl::CreateCommand"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDBCreateCommandImpl class", "CreateCommand method"]
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateCommandImpl Class
 
-Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625) interface.
+Provides an implementation of the [IDBCreateCommand](/previous-versions/windows/desktop/ms711625(v=vs.85)) interface.
 
 ## Syntax
 
@@ -55,14 +48,14 @@ Creates a new command and returns the requested interface.
 ### Syntax
 
 ```cpp
-STDMETHOD(CreateCommand)(IUnknown * pUnkOuter, 
-   REFIID riid, 
+STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
+   REFIID riid,
    IUnknown ** ppvCommand);
 ```
 
 #### Parameters
 
-See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772) in the *OLE DB Programmer's Reference*.
+See [IDBCreateCommand::CreateCommand](/previous-versions/windows/desktop/ms709772(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBCreateCommand::CreateCommand`:
 
@@ -70,7 +63,7 @@ Some parameters correspond to *OLE DB Programmer's Reference* parameters of diff
 |--------------------------------|------------------------------------------------|
 |*ppvCommand*|*ppCommand*|
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -1,16 +1,9 @@
 ---
-title: "-volatile (volatile Keyword Interpretation) | Microsoft Docs"
-ms.custom: ""
+title: "/volatile (volatile Keyword Interpretation)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/volatile:iso", "/volatile:ms", "/volatile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/volatile compiler option", "/volatile compiler option [C++]", "-volatile compiler option", "volatile compiler option [C++]", "volatile compiler option", "-volatile compiler option [C++]"]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /volatile (volatile Keyword Interpretation)
 
@@ -38,7 +31,7 @@ There is no `#pragma` equivalent to control this option.
 
 ### To set the /volatile compiler option in Visual Studio
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -47,5 +40,5 @@ There is no `#pragma` equivalent to control this option.
 ## See also
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

@@ -1,16 +1,9 @@
 ---
-title: "-GS (Buffer Security Check) | Microsoft Docs"
-ms.custom: ""
+title: "/GS (Buffer Security Check)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck", "/GS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["buffers [C++], buffer overruns", "buffer overruns, compiler /GS switch", "GS compiler option [C++]", "/GS compiler option [C++]", "security check compiler option [C++]", "-GS compiler option [C++]", "buffers [C++], avoiding overruns"]
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GS (Buffer Security Check)
 
@@ -87,7 +80,7 @@ The compiler does not make copies of vulnerable parameters in the following situ
 
 - Functions that do not contain a GS buffer.
 
-- Optimizations ([/O options](../../build/reference/o-options-optimize-code.md)) are not enabled.
+- Optimizations ([/O options](o-options-optimize-code.md)) are not enabled.
 
 - Functions that have a variable argument list (...).
 
@@ -107,7 +100,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 
 1. In **Solution Explorer**, right-click the project and then click **Properties**.
 
-   For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+   For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. In the **Property Pages** dialog box, click the **C/C++** folder.
 
@@ -146,7 +139,7 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

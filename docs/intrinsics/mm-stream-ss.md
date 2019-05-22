@@ -1,16 +1,9 @@
 ---
-title: "_mm_stream_ss | Microsoft Docs"
-ms.custom: ""
+title: "_mm_stream_ss"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_stream_ss"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["movntss instruction", "_mm_stream_ss intrinsic"]
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_stream_ss
 
@@ -89,7 +82,7 @@ f[2] = -3, f[3] = 3
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [_mm_stream_sd](../intrinsics/mm-stream-sd.md)<br/>
 [_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)<br/>

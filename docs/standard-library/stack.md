@@ -1,16 +1,9 @@
 ---
-title: "&lt;stack&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;stack&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<stack>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["stack, stack header", "stack header"]
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;stack&gt;
 

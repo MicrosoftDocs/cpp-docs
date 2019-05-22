@@ -1,16 +1,9 @@
 ---
-title: "dual (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "dual (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.dual"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["dual attribute"]
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # dual
 
@@ -65,7 +58,7 @@ __interface IStatic : IDispatch
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Attributes by Usage](attributes-by-usage.md)<br/>

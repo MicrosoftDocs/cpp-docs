@@ -1,16 +1,9 @@
 ---
-title: "naked (C++) | Microsoft Docs"
-ms.custom: ""
+title: "naked (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["naked_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], naked", "naked __declspec keyword"]
 ms.assetid: 69723241-05e1-439b-868e-20a83a16ab6d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # naked (C++)
 

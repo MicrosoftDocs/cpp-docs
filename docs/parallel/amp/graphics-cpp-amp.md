@@ -1,14 +1,7 @@
 ---
-title: "Graphics (C++ AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Graphics (C++ AMP)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Graphics (C++ AMP)
 
@@ -407,7 +400,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](http://go.microsoft.com/fwlink/p/?linkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](http://go.microsoft.com/fwlink/p/?linkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](http://go.microsoft.com/fwlink/p/?linkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.
 
-## See Also
+## See also
 
 [double_2 Class](../../parallel/amp/reference/double-2-class.md)<br/>
 [double_3 Class](../../parallel/amp/reference/double-3-class.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2287 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2287"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2287"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2287"]
 ms.assetid: 64556299-4e1f-4437-88b7-2464fc0b95bb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2287
 

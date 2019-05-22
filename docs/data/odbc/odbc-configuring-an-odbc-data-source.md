@@ -1,15 +1,8 @@
 ---
-title: "ODBC: Configuring an ODBC Data Source | Microsoft Docs"
-ms.custom: ""
+title: "ODBC: Configuring an ODBC Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources, configuring", "ODBC connections, configuring", "configuring ODBC data sources"]
 ms.assetid: 1cd03e6a-8d59-4eca-a8c6-1010582d5e67
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC: Configuring an ODBC Data Source
 
@@ -22,7 +15,7 @@ ODBC Administrator is automatically installed with the Microsoft Foundation Clas
 
 For information about how to write ODBC Setup and Administration programs for MFC database applications,[Technical Note 48](../../mfc/tn048-writing-odbc-setup-and-administration-programs.md).
 
-## See Also
+## See also
 
 [ODBC Basics](../../data/odbc/odbc-basics.md)<br/>
 [ODBC: Calling ODBC API Functions Directly](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)

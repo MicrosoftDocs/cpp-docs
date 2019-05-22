@@ -1,16 +1,9 @@
 ---
-title: "__mulh | Microsoft Docs"
-ms.custom: ""
+title: "__mulh"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__mulh"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__mulh intrinsic"]
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __mulh
 
@@ -21,9 +14,9 @@ Returns the high 64 bits of the product of two 64-bit signed integers.
 ## Syntax
 
 ```
-__int64 __mulh( 
-   __int64 a, 
-   __int64 b 
+__int64 __mulh(
+   __int64 a,
+   __int64 b
 );
 ```
 
@@ -80,6 +73,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

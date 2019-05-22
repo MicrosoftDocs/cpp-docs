@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3487 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3487"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3487"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3487"]
 ms.assetid: 39bda474-4418-4a79-98bf-2b22fa92eaaa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3487
 
@@ -41,6 +34,6 @@ int* test(int* pi) {
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

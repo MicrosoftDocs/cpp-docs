@@ -1,15 +1,8 @@
 ---
-title: "ERRLOOK Reference | Microsoft Docs"
-ms.custom: ""
+title: "ERRLOOK Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ErrLook tool", "Error lookup tool"]
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ERRLOOK Reference
 
@@ -19,19 +12,19 @@ The accelerator keys for Copy (CTRL+C), Cut (CTRL+X), and Paste (CTRL+V) work fo
 
 ## In This Section
 
-[Value Edit Control](../../build/reference/value-edit-control.md)<br/>
+[Value Edit Control](value-edit-control.md)<br/>
 Describes the Value Edit control in ERRLOOK.
 
-[Error Message Edit Control](../../build/reference/error-message-edit-control.md)<br/>
+[Error Message Edit Control](error-message-edit-control.md)<br/>
 Describes the Error Message Edit control in ERRLOOK.
 
-[Modules Button](../../build/reference/modules-button.md)<br/>
+[Modules Button](modules-button.md)<br/>
 Describes the Modules button in ERRLOOK.
 
-[Look Up Button](../../build/reference/look-up-button.md)<br/>
+[Look Up Button](look-up-button.md)<br/>
 Describes the Look Up button in ERRLOOK.
 
 ## Related Sections
 
-[C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
 Provides links to topics discussing the C/C++ build tools provided in Visual C++.

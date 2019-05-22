@@ -1,15 +1,8 @@
 ---
-title: "Windows Sockets: Deriving from Socket Classes | Microsoft Docs"
-ms.custom: ""
+title: "Windows Sockets: Deriving from Socket Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["derived classes [MFC], from socket classes", "Windows Sockets [MFC], deriving from socket classes", "sockets [MFC], deriving from socket classes"]
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Deriving from Socket Classes
 
@@ -35,7 +28,6 @@ For more information, see:
 
 - [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md)
 
-## See Also
+## See also
 
 [Windows Sockets in MFC](../mfc/windows-sockets-in-mfc.md)
-

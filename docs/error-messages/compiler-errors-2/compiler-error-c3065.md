@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3065 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3065"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3065"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3065"]
 ms.assetid: e7a0bc69-1c68-459e-a7c4-93c65609ff7c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3065
 

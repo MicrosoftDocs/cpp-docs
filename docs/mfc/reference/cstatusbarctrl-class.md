@@ -1,16 +1,9 @@
 ---
-title: "CStatusBarCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CStatusBarCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CStatusBarCtrl", "AFXCMN/CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::CStatusBarCtrl", "AFXCMN/CStatusBarCtrl::Create", "AFXCMN/CStatusBarCtrl::CreateEx", "AFXCMN/CStatusBarCtrl::DrawItem", "AFXCMN/CStatusBarCtrl::GetBorders", "AFXCMN/CStatusBarCtrl::GetIcon", "AFXCMN/CStatusBarCtrl::GetParts", "AFXCMN/CStatusBarCtrl::GetRect", "AFXCMN/CStatusBarCtrl::GetText", "AFXCMN/CStatusBarCtrl::GetTextLength", "AFXCMN/CStatusBarCtrl::GetTipText", "AFXCMN/CStatusBarCtrl::IsSimple", "AFXCMN/CStatusBarCtrl::SetBkColor", "AFXCMN/CStatusBarCtrl::SetIcon", "AFXCMN/CStatusBarCtrl::SetMinHeight", "AFXCMN/CStatusBarCtrl::SetParts", "AFXCMN/CStatusBarCtrl::SetSimple", "AFXCMN/CStatusBarCtrl::SetText", "AFXCMN/CStatusBarCtrl::SetTipText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStatusBarCtrl [MFC], CStatusBarCtrl", "CStatusBarCtrl [MFC], Create", "CStatusBarCtrl [MFC], CreateEx", "CStatusBarCtrl [MFC], DrawItem", "CStatusBarCtrl [MFC], GetBorders", "CStatusBarCtrl [MFC], GetIcon", "CStatusBarCtrl [MFC], GetParts", "CStatusBarCtrl [MFC], GetRect", "CStatusBarCtrl [MFC], GetText", "CStatusBarCtrl [MFC], GetTextLength", "CStatusBarCtrl [MFC], GetTipText", "CStatusBarCtrl [MFC], IsSimple", "CStatusBarCtrl [MFC], SetBkColor", "CStatusBarCtrl [MFC], SetIcon", "CStatusBarCtrl [MFC], SetMinHeight", "CStatusBarCtrl [MFC], SetParts", "CStatusBarCtrl [MFC], SetSimple", "CStatusBarCtrl [MFC], SetText", "CStatusBarCtrl [MFC], SetTipText"]
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CStatusBarCtrl Class
 
@@ -93,7 +86,7 @@ virtual BOOL Create(
 Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.
 
 *rect*<br/>
-Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the status bar control's parent window, usually a `CDialog`. It must not be NULL.
@@ -139,7 +132,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -305,7 +298,7 @@ BOOL GetRect(
 Zero-based index of the part whose bounding rectangle is to be retrieved.
 
 *lpRect*<br/>
-Address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle.
+Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle.
 
 ### Return Value
 
@@ -615,7 +608,7 @@ This member function implements the behavior of the Win32 message [SB_SETTIPTEXT
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

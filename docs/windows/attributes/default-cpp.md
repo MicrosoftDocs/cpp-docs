@@ -1,16 +1,9 @@
 ---
-title: "default  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "default  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.default"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["default attribute", "attributes [C#], default attribute", "defaults, default attribute"]
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # default (C++)
 
@@ -103,7 +96,7 @@ The [source](source-cpp.md) attribute also has an example of how to use **defaul
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

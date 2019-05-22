@@ -1,16 +1,9 @@
 ---
-title: "bad_weak_ptr Class | Microsoft Docs"
-ms.custom: ""
+title: "bad_weak_ptr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["memory/std::bad_weak_ptr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["bad_weak_ptr", "bad_weak_ptr class"]
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # bad_weak_ptr Class
 

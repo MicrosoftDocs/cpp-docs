@@ -1,16 +1,9 @@
 ---
-title: "COM Map Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "COM Map Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlInternalQueryInterface", "atlbase/ATL::InlineIsEqualIUnknown"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, COM map global functions"]
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COM Map Global Functions
 
@@ -76,7 +69,7 @@ BOOL InlineIsEqualUnknown(REFGUID rguid1);
 *rguid1*<br/>
 [in] The GUID to compare to `IID_IUnknown`.
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)<br/>
 [COM Map Macros](../../atl/reference/com-map-macros.md)

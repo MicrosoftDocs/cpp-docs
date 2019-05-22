@@ -1,16 +1,9 @@
 ---
-title: "Mapping Messages to Functions | Microsoft Docs"
-ms.custom: ""
+title: "Mapping Messages to Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.mapping.msg.function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows messages [MFC], adding message handlers", "message maps [MFC], mapping messages to functions"]
 ms.assetid: a7727a62-f638-4b20-b7f5-131f47200d6a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Mapping Messages to Functions
 
@@ -40,7 +33,7 @@ When you use Class View to create a new class derived from one of the framework 
 
 To remove a message handler, double-click the handler in the right column and select \<delete>*HandlerName*. The function's code is commented out.
 
-## See Also
+## See also
 
 [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

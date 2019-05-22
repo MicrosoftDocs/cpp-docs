@@ -1,16 +1,9 @@
 ---
-title: "-bigobj (Increase Number of Sections in .Obj file) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "/bigobj (Increase Number of Sections in .Obj file)"
+ms.date: "03/26/2019"
 f1_keywords: ["/bigobj"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-bigobj compiler option [C++]", "/bigobj compiler option [C++]", "bigobj compiler option [C++]"]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /bigobj (Increase Number of Sections in .Obj file)
 
@@ -18,33 +11,29 @@ ms.workload: ["cplusplus"]
 
 ## Syntax
 
-```
-/bigobj
-```
+> **/bigobj**
 
 ## Remarks
 
-By default, an object file can hold up to 65,536 (2^16) addressable sections. This is the case no matter which target platform is specified. **/bigobj** increases that address capacity to 4,294,967,296 (2^32).
+By default, an object file can hold up to 65,279 (almost 2^16) addressable sections. This limit applies no matter which target platform is specified. **/bigobj** increases that address capacity to 4,294,967,296 (2^32).
 
-Most modules will never generate an .obj file that contains more than 65,536 sections. However, machine generated code, or code that makes heavy use of template libraries may require .obj files that can hold more sections. **/bigobj** is enabled by default on Universal Windows Platform (UWP) projects because the machine-generated XAML code includes a large number of headers. If you disable this option on a UWP app project you are likely to encounter compiler error C1128.
+Most modules never generate an .obj file that contains more than 65,279 sections. However, machine-generated code, or code that makes heavy use of template libraries, may require .obj files that can hold more sections. **/bigobj** is enabled by default on Universal Windows Platform (UWP) projects because the machine-generated XAML code includes a large number of headers. If you disable this option on a UWP app project, your code may generate compiler error C1128.
 
-Linkers that shipped prior to Visual C++ 2005 cannot read .obj files that were produced with **/bigobj**.
+For information on the PE-COFF object file format, see [PE Format](/windows/desktop/debug/pe-format) in the Windows documentation.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Click the **Command Line** property page.
-
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the **/bigobj** compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

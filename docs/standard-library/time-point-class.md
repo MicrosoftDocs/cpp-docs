@@ -1,16 +1,9 @@
 ---
-title: "time_point Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "time_point Class"
+ms.date: "03/27/2019"
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
-dev_langs: ["C++"]
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::chrono [C++], time_point"]
-ms.workload: ["cplusplus"]
 ---
 # time_point Class
 
@@ -103,7 +96,7 @@ A `duration` object.
 
 The `time_point` object after the addition is performed.
 
-## <a name="time_point__operator-_eq"></a>  time_point::operator-=
+## <a name="operator-_eq"></a>  time_point::operator-=
 
 Subtracts a specified value from the stored [duration](../standard-library/duration-class.md) value.
 

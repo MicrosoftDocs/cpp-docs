@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3394 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3394"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3394"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3394"]
 ms.assetid: 4e025d79-27ba-43c8-b0d9-839ecef98126
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3394
 
 syntax error in constraint clause: found 'identifier' expected a type
 
-A constraint was ill formed.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+A constraint was ill formed.  For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

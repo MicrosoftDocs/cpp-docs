@@ -1,16 +1,9 @@
 ---
-title: "Tree Control Styles | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["TVS_SINGLEEXPAND", "TVS_LINESATROOT", "TVS_HASBUTTONS", "TVS_NOTOOLTIPS", "TVS_HASLINES"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TVS_LINESATROOT [MFC]", "styles [MFC], CTreeCtrl", "styles [MFC], tree control", "TVS_HASLINES", "TVS_SINGLEEXPAND", "CTreeCtrl class [MFC], styles", "TVS_EDITLABELS [MFC]", "TVS_NOTOOLTIPS [MFC]", "TVS_HASBUTTONS [MFC]", "tree controls [MFC], styles"]
 ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Styles
 
@@ -26,8 +19,7 @@ The **TVS_EDITLABELS** style makes it possible for the user to edit the labels o
 
 The **TVS_NOTOOLTIPS** style disables the automatic tool tip feature of tree view controls. This feature automatically displays a tool tip, containing the title of the item under the mouse cursor, if the entire title is not currently visible.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

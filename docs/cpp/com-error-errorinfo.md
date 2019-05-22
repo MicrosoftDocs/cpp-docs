@@ -1,16 +1,9 @@
 ---
-title: "_com_error::ErrorInfo | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::ErrorInfo"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::ErrorInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ErrorInfo method [C++]"]
 ms.assetid: 071b446c-4395-4fb8-bd3d-300a8b25f5cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::ErrorInfo
 

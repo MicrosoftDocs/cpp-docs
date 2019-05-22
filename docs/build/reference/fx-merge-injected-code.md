@@ -1,16 +1,9 @@
 ---
-title: "-Fx (Merge Injected Code) | Microsoft Docs"
-ms.custom: ""
+title: "/Fx (Merge Injected Code)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExpandAttributedSource", "/Fx", "VC.Project.VCCLCompilerTool.ExpandAttributedSource"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Fx compiler option [C++]", "-Fx compiler option [C++]", "injected code", "merging injected code", "/Fx compiler option [C++]"]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Fx (Merge Injected Code)
 
@@ -55,7 +48,7 @@ If your program includes a header file that uses injected code, **/Fx** generate
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -67,8 +60,8 @@ If your program includes a header file that uses injected code, **/Fx** generate
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>.
 
-## See Also
+## See also
 
-[Output-File (/F) Options](../../build/reference/output-file-f-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[Output-File (/F) Options](output-file-f-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

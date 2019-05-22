@@ -1,19 +1,12 @@
 ---
-title: "feof | Microsoft Docs"
-ms.custom: ""
+title: "feof"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["feof"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["feof"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["end of file, testing for", "feof function"]
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # feof
 

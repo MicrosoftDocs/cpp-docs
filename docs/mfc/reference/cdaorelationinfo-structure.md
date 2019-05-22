@@ -1,16 +1,9 @@
 ---
-title: "CDaoRelationInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoRelationInfo Structure"
 ms.date: "06/25/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoRelationInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO (Data Access Objects), Relations collection", "CDaoRelationInfo structure [MFC]"]
 ms.assetid: 92dda090-fe72-4090-84ec-429498a48aad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoRelationInfo Structure
 
@@ -79,6 +72,6 @@ Information retrieved by the [CDaoDatabase::GetRelationInfo](../../mfc/reference
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)

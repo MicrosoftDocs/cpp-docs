@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4221 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4221"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4221"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4221"]
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4221
 
@@ -30,7 +23,6 @@ int function()
 {
    return 0;
 }
-
 ```
 
 To compile the files and create two object files, run **cl /c a.cpp b.cpp** at a command prompt. If you link the object files by running **link /lib /out:test.lib a.obj b.obj**, you will receive the LNK4221 warning. If you link the objects by running **link /lib /out:test.lib b.obj a.obj**, you will not receive a warning.

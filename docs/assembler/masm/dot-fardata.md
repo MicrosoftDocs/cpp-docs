@@ -1,16 +1,9 @@
 ---
-title: ".FARDATA | Microsoft Docs"
-ms.custom: ""
+title: ".FARDATA"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".FARDATA"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".FARDATA directive"]
 ms.assetid: 4458ef66-5626-4607-bf83-71637b459f77
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .FARDATA
 

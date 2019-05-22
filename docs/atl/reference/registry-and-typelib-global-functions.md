@@ -1,16 +1,9 @@
 ---
-title: "Registry and TypeLib Global Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
+title: "Registry and TypeLib Global Functions"
+ms.date: "03/27/2019"
 f1_keywords: ["atlbase/ATL::AtlGetPerUserRegistration", "afxpriv/ATL::AfxRegCreateKey", "afxpriv/ATL::AfxRegDeleteKey", "atlbase/ATL::AtlRegisterTypeLib", "afxpriv/ATL::AfxRegOpenKey", "afxpriv/ATL::AfxRegOpenKeyEx", "afxdisp/ATL::AfxUnregisterPreviewHandler", "atlbase/ATL::AtlSetPerUserRegistration", "atlbase/ATL::AtlUnRegisterTypeLib", "atlbase/ATL::AtlLoadTypeLib", "atlbase/ATL::AtlUpdateRegistryFromResourceD", "atlbase/ATL::RegistryDataExchange"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RegistryDataExchange function, global functions"]
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry and TypeLib Global Functions
 
@@ -21,8 +14,8 @@ These functions provide support for loading and registering a type library.
 
 |||
 |-|-|
-|[AfxRegCreateKey](#afxrefcreatekey)|Creates the specified registry key.|
-|[AfxRegDeleteKey](#afxrefdeletekey)|Deletes the specified registry key.|
+|[AfxRegCreateKey](#afxregcreatekey)|Creates the specified registry key.|
+|[AfxRegDeleteKey](#afxregdeletekey)|Deletes the specified registry key.|
 |[AfxRegisterPreviewHandler](#afxregisterpreviewhandler)|A helper to register a preview handler.|
 |[AfxUnregisterPreviewHandler](#afxunregisterpreviewhandler)| A helper to unregister a preview handler. |
 |[AtlRegisterTypeLib](#atlregistertypelib)|This function is called to register a type library.|
@@ -331,7 +324,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](#atlcommoduleunregisterserver).
+This helper function is utilized by [CAtlComModule::UnRegisterTypeLib](../../atl/reference/catlcommodule-class.md#unregistertypelib) and [AtlComModuleUnregisterServer](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
 ### Requirements
 
@@ -425,7 +418,7 @@ The possible enum values that indicate the operation the function should perform
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Functions](atl-functions.md)<br/>
 [Registry Data Exchange Macros](registry-data-exchange-macros.md)

@@ -1,15 +1,8 @@
 ---
-title: "Explicit Type Conversion Operator: () | Microsoft Docs"
-ms.custom: ""
+title: "Explicit Type Conversion Operator: ()"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["explicit data type conversion operator", "conversions [C++], explicit", "operators [C++], explicit type conversion", "data type conversion [C++], explicit", "type conversion [C++], explicit conversions"]
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Explicit Type Conversion Operator: ()
 

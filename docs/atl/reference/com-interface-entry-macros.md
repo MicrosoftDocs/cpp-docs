@@ -1,18 +1,10 @@
 ---
-title: "COM Interface Entry Macros | Microsoft Docs"
-ms.custom: ""
+title: "COM Interface Entry Macros"
 ms.date: "03/28/2017"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::COM_INTERFACE_ENTRY", "atlcom/ATL::COM_INTERFACE_ENTRY_IID", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE", "atlcom/ATL::COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_BREAK", "atlcom/ATL::COM_INTERFACE_ENTRY_CACHED_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_TEAR_OFF", "atlcom/ATL::COM_INTERFACE_ENTRY_CHAIN", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC", "atlcom/ATL::COM_INTERFACE_ENTRY_FUNC_BLIND", "atlcom/ATL::COM_INTERFACE_ENTRY_NOINTERFACE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COM interfaces, COM interface entry macros"]
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-
 # COM_INTERFACE_ENTRY Macros
 
 These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.
@@ -385,4 +377,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 You can use this macro to prevent an interface from being used in a particular case. For example, you can insert this macro into your COM map right before COM_INTERFACE_ENTRY_AGGREGATE_BLIND to prevent a query for the interface from being forwarded to the aggregate's inner unknown.
 
 The interface IID will be constructed by appending *x* to `IID_`. For example, if *x* is `IPersistStorage`, the IID will be `IID_IPersistStorage`.
-
