@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::experimental::filesystem::absolute", "std::experimen
 ---
 # &lt;filesystem&gt; functions
 
-These free functions in the [\<filesystem>](../standard-library/filesystem.md) header perform modifying and query operations on paths, files, symlinks, directories and volumes. For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
+These free functions in the [\<filesystem>](../standard-library/filesystem.md) header do modifying and query operations on paths, files, symlinks, directories, and volumes. For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
 ||||
 |-|-|-|
@@ -202,7 +202,7 @@ The function creates link as a hard link to the directory or file *to*.
 ## <a name="create_symlink"></a>  create_symlink
 
 ```cpp
-void create_symlink(const path& to,  const path& link);
+void create_symlink(const path& to, const path& link);
 
 void create_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
@@ -236,7 +236,7 @@ bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if *left* and *right* designate the same filesystem entity.
+The functions return **true** only if *left* and *right* choose the same filesystem entity.
 
 ## <a name="exists"></a>  exists
 
@@ -255,7 +255,7 @@ uintmax_t file_size(const path& pval);
 uintmax_t file_size(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return the size in bytes of the file designated by *pval*, if `exists(pval) && is_regular_file(pval)` and the file size can be determined. Otherwise they report an error and return `uintmax_t(-1)`.
+The functions return the size in bytes of the file chosen by *pval*, if `exists(pval) && is_regular_file(pval)` and the file size can be determined. Otherwise they report an error and return `uintmax_t(-1)`.
 
 ## <a name="hard_link_count"></a>  hard_link_count
 
@@ -418,7 +418,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it designates.
+The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
 
 ## <a name="remove_all"></a>  remove_all
 
@@ -432,11 +432,11 @@ If *pval* is a directory, the functions recursively remove all directory entries
 ## <a name="rename"></a>  rename
 
 ```cpp
-void rename(const path& from,  const path& to);
-void rename(const path& from,  const path& to, error_code& ec) noexcept;
+void rename(const path& from, const path& to);
+void rename(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-The functions rename *from* to *to*. A symlink is itself renamed, not the file it designates.
+The functions rename *from* to *to*. A symlink is itself renamed, not the file it chooses.
 
 ## <a name="resize_file"></a>  resize_file
 
@@ -454,7 +454,7 @@ space_info space(const path& pval);
 space_info space(const path& pval, error_code& ec) noexcept;
 ```
 
-The function returns information about the volume designated by *pval*, in a structure of type `space_info`. The structure contains `uintmax_t(-1)` for any value that cannot be determined.
+The function returns information about the volume chosen by *pval*, in a structure of type `space_info`. The structure contains `uintmax_t(-1)` for any value that can't be determined.
 
 ## <a name="status"></a>  status
 
@@ -463,7 +463,7 @@ file_status status(const path& pval);
 file_status status(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return the pathname status, the file type and permissions, associated with *pval*. A symlink is itself not tested, but the file it designates.
+The functions return the pathname status, the file type, and permissions, associated with *pval*. A symlink is itself not tested, but the file it chooses.
 
 ## <a name="status_known"></a>  status_known
 
@@ -488,7 +488,7 @@ file_status symlink_status(const path& pval);
 file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
 ```
 
-The functions return the pathname symlink status, the file type and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it designates.
+The functions return the pathname symlink status, the file type, and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it chooses.
 
 ## <a name="system_complete"></a>  system_complete
 
@@ -518,7 +518,7 @@ template <class InIt>
 path u8path(InIt first, InIt last);
 ```
 
-The first function behaves the same as `path(source)` and the second function behaves the same as `path(first, last)` except that the designated source in each case is taken as a sequence of char elements encoded as UTF-8, regardless of the filesystem.
+The first function behaves the same as `path(source)` and the second function behaves the same as `path(first, last)` except that the chosen source in each case is taken as a sequence of char elements encoded as UTF-8, whatever the filesystem.
 
 ## <a name="weakly_canonical"></a> weakly_canonical
 
