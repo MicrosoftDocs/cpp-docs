@@ -169,6 +169,22 @@ OutputIterator adjacent_difference(
     InputIterator last,
     OutputIterator result,
     BinaryOperation binary_op);
+
+template <class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2>
+ForwardIterator2 adjacent_difference(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result);
+
+template <class ExecutionPolicy, class ForwardIterator1, class ForwardIterator2,
+class BinaryOperation>
+ForwardIterator2 adjacent_difference(
+    ExecutionPolicy&& exec,
+    ForwardIterator1 first,
+    ForwardIterator1 last,
+    ForwardIterator2 result,
+    BinaryOperation binary_op);
 ```
 
 ### Parameters
@@ -492,8 +508,6 @@ An input iterator that addresses the last element in the range to be filled.
 
 *value*<br/>
 The starting value to store in the first element and to successively increment for subsequent elements.
-
-### Remarks
 
 ### Example
 
