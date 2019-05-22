@@ -53,7 +53,7 @@ Determines whether the Common Controls library implements the specified API.
 
 ### Syntax
 
-  ```
+```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
 
@@ -158,7 +158,7 @@ See the example for [IMPLEMENT_DYNCREATE](#implement_dyncreate).
 
 **Header:** afx.h
 
-## <a name="declare_olectltype"></a> declare_olectltype
+## <a name="declare_olectltype"></a> DECLARE_OLECTLTYPE
 
 Declares the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 
@@ -181,7 +181,7 @@ The name of the control class.
 
 **Header:** afxctl.h
 
-## <a name="declare_proppageids"> declare_proppageids
+## <a name="declare_proppageids"></a> DECLARE_PROPPAGEIDS
 
 Declares that the OLE control provides a list of property pages to display its properties.
 
@@ -355,7 +355,7 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header:** afxdisp.h
 
-## <a name="implement_olectltype"> implement_olectltype
+## <a name="implement_olectltype"></a> IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 
