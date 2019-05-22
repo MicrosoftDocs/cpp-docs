@@ -10,7 +10,7 @@ helpviewer_keywords: ["std::exchange [C++]", "std::forward [C++]", "std::make_pa
 ||||
 |-|-|-|
 |[as_const](#asconst)|[declval](#declval)|[exchange](#exchange)|
-|[forward](#forward)|[from_chars](#fromchars)|[get](#get)|
+|[forward](#forward)|[from_chars](#from_chars)|[get](#get)|
 |[index_sequence](#index_sequence)|[index_sequence_for](#index_sequence_for)|[make_index_sequence](#make_index_sequence)|
 |[make_integer_sequence](#make_integer_sequence)|[make_pair](#make_pair)|[move](#move)|
 |[move_if_noexcept](#moveif)|[swap](#swap)||
