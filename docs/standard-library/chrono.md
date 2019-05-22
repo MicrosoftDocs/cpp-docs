@@ -8,7 +8,7 @@ ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 
 Include the standard header \<chrono> to define classes and functions that represent and manipulate time durations and time instants.
 
-Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this is not necessarily the case for other implementations.
+Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this rule isn't necessarily the case for other implementations.
 
 ## Syntax
 
@@ -72,7 +72,7 @@ For more information about ratio types that are used in the following typedefs, 
 
 ### Literals
 
-**(C++11)** The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.
+**(C++11)** The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety, and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.
 
 |Literal|Description|
 |-------------|-----------------|
