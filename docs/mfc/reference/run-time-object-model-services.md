@@ -158,7 +158,7 @@ See the example for [IMPLEMENT_DYNCREATE](#implement_dyncreate).
 
 **Header:** afx.h
 
-## <a name="declare_olectltype"></a> declare_olectltype
+## DECLARE_OLECTLTYPE
 
 Declares the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 
@@ -181,7 +181,7 @@ The name of the control class.
 
 **Header:** afxctl.h
 
-## <a name="declare_proppageids"> declare_proppageids
+## DECLARE_PROPPAGEIDS
 
 Declares that the OLE control provides a list of property pages to display its properties.
 
@@ -355,7 +355,7 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header:** afxdisp.h
 
-## <a name="implement_olectltype"> implement_olectltype
+## IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 
