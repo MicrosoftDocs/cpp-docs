@@ -6,7 +6,7 @@ helpviewer_keywords: ["execution header"]
 ---
 # &lt;execution&gt;
 
-Defines the container template classes hash_map and hash_multimap and their supporting templates.
+Describes the execution policies for parallel algorithms.
 
 ## Syntax
 
