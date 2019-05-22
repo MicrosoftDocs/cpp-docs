@@ -13,6 +13,57 @@ The following illustration shows several `shared_ptr` instances that point to on
 
 ![Shared pointer diagram](../cpp/media/shared_ptr.png "Shared pointer diagram")
 
+## Example setup
+
+The examples that follow all assume that you've included the required headers and declared the required types, as shown here:
+
+```cpp
+// shared_ptr-examples.cpp
+// The following examples assume these declarations:
+#include <algorithm>
+#include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
+
+struct MediaAsset
+{
+    virtual ~MediaAsset() = default; // make it polymorphic
+};
+
+struct Song : public MediaAsset
+{
+    std::wstring artist;
+    std::wstring title;
+    Song(const std::wstring& artist_, const std::wstring& title_) :
+        artist{ artist_ }, title{ title_ } {}
+};
+
+struct Photo : public MediaAsset
+{
+    std::wstring date;
+    std::wstring location;
+    std::wstring subject;
+    Photo(
+        const std::wstring& date_,
+        const std::wstring& location_,
+        const std::wstring& subject_) :
+        date{ date_ }, location{ location_ }, subject{ subject_ } {}
+};
+
+using namespace std;
+
+int main()
+{
+    // The examples go here, in order:
+    // Example 1
+    // Example 2
+    // Example 3
+    // Example 4
+    // Example 6
+}
+```
+
 ## Example 1
 
 Whenever possible, use the [make_shared](../standard-library/memory-functions.md#make_shared) function to create a `shared_ptr` when the memory resource is created for the first time. `make_shared` is exception-safe. It uses the same call to allocate the memory for the control block and the resource, and thereby reduces the construction overhead. If you do not use `make_shared`, then you have to use an explicit new expression to create the object before you pass it to the `shared_ptr` constructor. The following example shows various ways to declare and initialize a `shared_ptr` together with a new object.
