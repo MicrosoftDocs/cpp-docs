@@ -7,7 +7,7 @@ ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
 ---
 # &lt;iostream&gt;
 
-Declares objects that control reading from and writing to the standard streams. This is often the only header you need to include to perform input and output from a C++ program.
+Declares objects that control reading from and writing to the standard streams. This include is often the only header you need to do input and output from a C++ program.
 
 ## Syntax
 
@@ -22,15 +22,15 @@ Declares objects that control reading from and writing to the standard streams. 
 
 The objects fall into two groups:
 
-- [cin](#cin), [cout](#cout), [cerr](#cerr), and [clog](#clog) are byte oriented, performing conventional byte-at-a-time transfers.
+- [cin](#cin), [cout](#cout), [cerr](#cerr), and [clog](#clog) are byte oriented, doing conventional byte-at-a-time transfers.
 
 - [wcin](#wcin), [wcout](#wcout), [wcerr](#wcerr), and [wclog](#wclog) are wide oriented, translating to and from the wide characters that the program manipulates internally.
 
-Once you perform certain operations on a stream, such as the standard input, you cannot perform operations of a different orientation on the same stream. Therefore, a program cannot operate interchangeably on both [cin](#cin) and [wcin](#wcin), for example.
+Once you do certain operations on a stream, such as the standard input, you can't do operations of a different orientation on the same stream. Therefore, a program can't operate interchangeably on both [cin](#cin) and [wcin](#wcin), for example.
 
-All the objects declared in this header share a peculiar property — you can assume they are constructed before any static objects you define, in a translation unit that includes \<iostream>. Equally, you can assume that these objects are not destroyed before the destructors for any such static objects you define. (The output streams are, however, flushed during program termination.) Therefore, you can safely read from or write to the standard streams before program startup and after program termination.
+All the objects declared in this header share a peculiar property — you can assume they're constructed before any static objects you define, in a translation unit that includes \<iostream>. Equally, you can assume that these objects aren't destroyed before the destructors for any such static objects you define. (The output streams are, however, flushed during program termination.) Therefore, you can safely read from or write to the standard streams before program startup and after program termination.
 
-This guarantee is not universal, however. A static constructor may call a function in another translation unit. The called function cannot assume that the objects declared in this header have been constructed, given the uncertain order in which translation units participate in static construction. To use these objects in such a context, you must first construct an object of class [ios_base::Init](../standard-library/ios-base-class.md#init).
+This guarantee isn't universal, however. A static constructor may call a function in another translation unit. The called function can't assume that the objects declared in this header have been constructed, given the uncertain order in which translation units participate in static construction. To use these objects in such a context, you must first construct an object of class [ios_base::Init](../standard-library/ios-base-class.md#init).
 
 ### Global Stream Objects
 
@@ -109,7 +109,7 @@ The object controls extractions from the standard input as a byte stream. Once t
 
 #### Example
 
-In this example, `cin` sets the fail bit on the stream when it encounters non-numeric characters. The program clears the fail bit and strips the invalid character from the stream to proceed.
+In this example, `cin` sets the fail bit on the stream when it comes across non-numeric characters. The program clears the fail bit and strips the invalid character from the stream to continue.
 
 ```cpp
 // iostream_cin.cpp
