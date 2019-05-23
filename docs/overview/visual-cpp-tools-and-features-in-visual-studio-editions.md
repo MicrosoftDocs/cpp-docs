@@ -1,12 +1,300 @@
 ---
-title: "Visual C++ Tools and Features in Visual Studio Editions"
-ms.date: "02/28/2018"
-helpviewer_keywords: ["versions [C++]", "Visual C++, versions", "editions [C++]"]
+title: "C++ Tools and Features in Visual Studio Editions"
+ms.date: "05/21/2019"
+helpviewer_keywords: ["tools and platforms [C++]"]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
-# Visual C++ Tools and Features in Visual Studio Editions
+# C++ Tools and Features in Visual Studio Editions
 
-The following tables show Visual C++ features that are available in Visual Studio. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
+
+::: moniker range=">=vs-2019"
+
+
+The following C++ features are available in Visual Studio 2019. Unless stated otherwise, all features are available in all editions: Visual Studio Community, Visual Studio Professional, and Visual Studio Enterprise. Some features require specific workloads or optional components, which you can install with the Visual Studio Installer.
+
+## Platforms
+
+- Windows Desktop
+- Universal Windows Platform ((tablet, PC, Xbox, IoT, and HoloLens))
+- Linux
+- Android
+- iOS
+
+## Compilers
+
+- MSVC 32-bit compiler for x86, x64, ARM, and ARM64
+- MSVC 64-bit compiler for x86, x64, ARM, and ARM64
+- GCC cross-compiler for ARM
+- Clang/LLVM
+  - On Windows, Clang/LLVM 7.0, targeting x86 or x64 (CMake support only). Other Clang versions might work but are not officially supported.
+  - On Linux, any Clang/LLVM installation supported by the distro.
+ 
+## C++ Workloads
+
+Visual Studio includes the following workloads for C++ development. You can install any or all of these, along with other workloads such as .NET Desktop Development, Python Development, Azure Development, Visual Studio Extension Development, and others.
+
+### Desktop development with C++
+
+Included:
+- C++ core desktop features
+
+Optional Components:
+- MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
+- Windows 10 SDK (10.0.17763.0)
+- Just-In-Time debugger
+- C++ profiling tools
+- C++ CMake tools for Windows
+- C++ ATL for v142 build tools (x86 & x64)
+- Test Adapter for Boost.Test
+- Test Adapter for Google Test
+- Live Share
+- IntelliCode
+- IntelliTrace (Enterprise only)
+- C++ MFC for v142 build tools (x86 & x64)
+- C++/CLI support for v142 build tools (14.21)
+- C++ Modules for v142 build tools (x64/x86 – experimental)
+- Clang compiler for Windows
+- IncrediBuild - Build Acceleration
+- Windows 10 SDK (10.0.17134.0)
+- Windows 10 SDK (10.0.16299.0)
+- MSVC v141 - VS 2017 C++ x64/x86 build tools (v14.16)
+- MSVC v140 - VS 2015 C++ build tools (v14.00)
+
+### Linux development with C++
+
+Included:
+- C++ core features
+- Windows Universal C Runtime
+- C++ for Linux Development
+
+Optional Components:
+- C++ CMake tools for Linux
+- Embedded and IoT development tools
+
+### Universal Windows Platform development
+
+Included:
+- Blend for Visual Studio
+- .NET Native and .NET Standard
+- NuGet package manager
+- Universal Windows Platform tools
+- Windows 10 SDK (10.0.17763.0)
+
+Optional Components:
+- IntelliCode
+- IntelliTrace (Enterprise only)
+- USB Device Connectivity
+- C++ (v142) Universal Windows Platform tools
+- C++ (v141) Universal Windows Platform tools
+- Graphics debugger and GPU profiler for DirectX
+- Windows 10 SDK (10.0.18362.0)
+- Windows 10 SDK (10.0.17134.0)
+- Windows 10 SDK (10.0.16299.0)
+- Architecture and analysis tools
+
+### C++ Game Development
+
+Included:
+- C++ core features
+- Windows Universal C Runtime
+- C++ 2019 Redistributable Update
+- MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)
+
+Optional Components:
+- C++ profiling tools
+- Windows 10 SDK (10.0.17763.0)
+- IntelliCode
+- IntelliTrace (Enterprise only)
+- Windows 10 SDK (10.0.17134.0)
+- Windows 10 SDK (10.0.16299.0)
+- IncrediBuild - Build Acceleration
+- Cocos
+- Unreal Engine installer
+- Android IDE support for Unreal engine
+
+### Mobile development with C++
+
+Included:
+- C++ core features
+- Android SDK setup (API level 25) (local install for Mobile development with C++)
+
+Optional Components:
+- Android NDK (R16B)
+- Apache Ant (1.9.3)
+- C++ Android development tools
+- IntelliCode
+- Google Android Emulator (API Level 25) (local install)
+- Intel Hardware Accelerated Execution Manager (HAXM) (local install)
+- Android NDK (R16B) (32bit)
+- C++ iOS development tools
+- IncrediBuild - Build Acceleration
+
+
+## Individual components
+
+You can install these components independently from any workload.
+
+- JavaScript diagnostics
+- Live Share
+- C++ Universal Windows Platform runtime for v142 build tools
+- ClickOnce Publishing
+- Microsoft Visual Studio Installer Projects
+
+## Libraries and Headers
+
+- Windows headers and libraries
+- Windows Universal C Runtime (CRT)
+- C++ Standard Library
+- ATL
+- MFC
+- .NET Framework class library
+- C++ Support Library for .NET
+- OpenMP 2.0
+- Over 900 open-source libraries via vcpkg catalog
+
+## Build and Project Systems
+
+- CMake
+- Any build system via Open Folder
+- Command line builds (msbuild.exe)
+- Native Multi-targeting
+- Managed Multi-targeting
+- Parallel Builds
+- Build Customizations
+- Property Pages Extensibility
+
+## Project Templates
+
+The following project templates are available depending on which workloads you have installed.
+
+Windows Desktop:
+- Empty Project
+- Console App
+- Windows Desktop Wizard
+- Windows Desktop Application
+- Shared Items Project
+- MFC App
+- Dynamic Link Library
+- CLR Empty Project
+- CLR Console App
+- Static Library
+- CMake Project
+- ATL Project
+- MFC Dynamic Link Library
+- CLR Class Library
+- Makefile Project (Windows)
+- MFC ActiveXControl
+- Native Unit Test Project
+- Google Test
+
+Universal Windows Platform (C++/CX):
+- Blank App
+- DirectX 11 and XAML App
+- DirectX 11 App
+- DirectX 12 App 
+- Unit Test App 
+- DLL 
+- Windows Runtime Component 
+- Static Library 
+- Windows Application Packaging Project
+
+Linux:
+- Console App (Linux)
+- Empty Project (Linux)
+- Raspberry Pi Blink
+- Makefile Project (Linux)
+
+## Tools
+
+- Incremental Linker (Link.exe)
+- Microsoft Makefile Utility (Nmake.exe)
+- Lib Generator (Lib.exe)
+- Windows Resource Compiler (Rc.exe)
+- Windows Resource to Object Converter (CvtRes.exe)
+- Browse Information Maintenance Utility (BscMake.exe)
+- C++ Name Undecorator (Undname.exe)
+- COFF/PE Dumper (Dumpbin.exe)
+- COFF/PE Editor (Editbin.exe)
+- MASM (Ml.exe)
+- Spy++
+- ErrLook
+- AtlTrace
+- Inference Rules
+- Profile Guided Optimizations
+
+## Debugging Features
+
+- Native Debugging
+- natvis (native type visualization)
+- Graphics Debugging
+- Managed Debugging
+- GPU usage
+- Memory usage
+- Remote Debugging
+- SQL Debugging
+- Static Code Analysis
+
+## Designers and Editors
+
+- XAML Designer
+- CSS Style Designer/Editor
+- HTML Designer/Editor
+- XML Editor
+- Source Code Editor
+- Productivity Features: Refactoring, EDG IntelliSense engine, C++ Code Formatting
+- Windows Forms Designer
+- Data Designer
+- Native Resource Editor (.rc files)
+- Resource Editors
+- Model editor
+- Shader designer
+- Live Dependency Validation (Enterprise Only)
+- Architectural Layer Diagrams (Enterprise Only)
+- Architecture Validation (Enterprise Only)
+- Code Clone (Enterprise Only)
+
+## Data Features
+
+- Data Designer
+- Data Objects
+- Web Services
+- Server Explorer
+
+## Automation and Extensibility
+
+- Extensibility Object Models
+- Code Model
+- Project Model
+- Resource Editor Model
+- Wizard Model
+- Debugger Object Model
+
+## Application Lifecycle Management Tools
+
+- Unit Testing (Microsoft Native C++, Boost.Test, Google Test, CTest)
+- Code map and dependency graphs (Professional and Enterprise)
+- Code coverage (Enterprise Only)
+- Manual testing (Enterprise only)
+- Exploratory testing (Enterprise only)
+- Test case management (Enterprise only)
+- Code map debugger integration (Enterprise only)
+- Live Unit Testing (Enterprise only)
+- IntelliTrace (Enterprise only)
+- IntelliTest (Enterprise only)
+- Microsoft Fakes (Unit Test Isolation) (Enterprise only)
+- Code Coverage (Enterprise only)
+
+## See also
+
+[Install Visual Studio](/visualstudio/install/install-visual-studio)<br/>
+[What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)<br/>
+[C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br/>
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+The following tables show Visual C++ features that are available in Visual Studio 2017. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
 
 ## Platforms
 
@@ -15,6 +303,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |Platform|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|
 |Windows Desktop||X|X|X|
 |Universal Windows Platform ((phone, tablet, PC, Xbox, IoT, and HoloLens))|X||X|X|
+|Linux|X|X|
 |Microsoft Store 8.1|||X|X|
 |Windows Phone 8.0|||X|X|
 |Android|||X|X|
@@ -24,9 +313,9 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 |Compiler|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|32-bit X86 compiler|X|X|X|X|
+|MSVC 32-bit X86 compiler|X|X|X|X|
 |X86_arm cross-compiler|X||X|X|
-|64-bit x64 compiler|||X|X|
+|MSVC 64-bit x64 compiler|||X|X|
 |X86_ x64 cross-compiler|X|X|X|X|
 
 ## Libraries and Headers
@@ -39,7 +328,7 @@ The following tables show Visual C++ features that are available in Visual Studi
 |MFC|||X|X|
 |.NET Framework class library||X|X|X|
 |C++ Support Library for .NET||X|X|X|
-|OpenMP|X|X|X|X|
+|OpenMP 2.0|X|X|X|X|
 
 ## Project Templates
 
@@ -168,4 +457,5 @@ The following tables show Visual C++ features that are available in Visual Studi
 [Install Visual Studio](/visualstudio/install/install-visual-studio)<br/>
 [What's New in Visual Studio](/visualstudio/ide/whats-new-in-visual-studio)<br/>
 [C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br/>
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)<br/>
+
+::: moniker-end

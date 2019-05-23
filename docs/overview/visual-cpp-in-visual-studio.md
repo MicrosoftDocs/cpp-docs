@@ -1,7 +1,7 @@
 ---
 title: "C++ in Visual Studio"
 description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
-ms.date: "05/13/2019"
+ms.date: "05/14/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
@@ -39,10 +39,10 @@ Learn about the breaking changes in previous versions.
 ## Install Visual Studio and upgrade from earlier versions
 
 [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md)<br/>
-Download Visual Studio 2015 or Visual Studio 2017 and install the Visual C++ toolset.
+Download Visual Studio 2017 or Visual Studio 2019 and install the Visual C++ toolset.
 
 [Visual C++ Porting and Upgrading Guide](../porting/visual-cpp-porting-and-upgrading-guide.md)<br/>
-Guidance for porting code and upgrading projects to Visual Studio 2015 or Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.
+Guidance for porting code and upgrading projects to Visual Studio 2015 or later to take advantage of greater compiler conformance to the C++ standard as well as greatly improved compilation times and security features such as Spectre mitigation.
 
 [Visual C++ Tools and Features in Visual Studio Editions](visual-cpp-tools-and-features-in-visual-studio-editions.md)<br/>
 Find out about different Visual Studio editions.
@@ -53,7 +53,7 @@ Find out which platforms are supported.
 ## Learn C++
 
 [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-Learn more about modern C++ programming techniques based on C++11 and C++14 that enable you to write fast, safe code and avoid many of the pitfalls of C-style programming.
+Learn more about modern C++ programming techniques based on C++11 and later that enable you to write fast, safe code and avoid many of the pitfalls of C-style programming.
 
 [Standard C++](http://isocpp.org/)<br/>
 Learn about C++, get an overview of Modern C++, and find links to books, articles, talks, and events
@@ -73,7 +73,7 @@ How to use the Visual Studio IDE to create projects, edit code, link to librarie
 How to create and configure Visual Studio C++ projects, CMake projects, and other kinds of projects with MSVC compiler and linker options.
 
 [Writing and refactoring C++ code](../ide/writing-and-refactoring-code-cpp.md)<br/>
-How to use the productivity features in the C++ editor to refactor, navigate and write code.
+How to use the productivity features in the C++ editor to refactor, navigate, understand and write code.
 
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.
@@ -111,7 +111,7 @@ Learn how to protect applications from malicious code and unauthorized use.
 In C++, you have several options for connecting to the web and the cloud.
 
 [Data Access](../data/data-access-in-cpp.md)<br/>
-Connect to databases using ODBC and other database access technologies.
+Connect to databases using ODBC and OLE DB.
 
 [Text and Strings](../text/text-and-strings-in-visual-cpp.md)<br/>
 Learn about working with different text and string formats and encodings for local and international development.
