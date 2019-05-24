@@ -1,6 +1,6 @@
 - name: Linux with Visual Studio C++ documentation
   href: index.md
-- name: Download, install and set up the Linux Development workload
+- name: Download, install, and set up the Linux Development workload
   href: download-install-and-setup-the-linux-development-workload.md
 - name: Configure a Linux project
   href: configure-a-linux-project.md
