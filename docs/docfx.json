@@ -40,7 +40,7 @@
       "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "extendBreadcrumb": "true",
       "ROBOTS": "INDEX,FOLLOW",
-      "manager": "wpickett",
+      "manager": "markl",
       "ms.date": "11/16/2016",
       "ms.topic": "conceptual",
       "audience": "developer",
