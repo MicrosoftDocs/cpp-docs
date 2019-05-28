@@ -725,7 +725,7 @@
               href: windows/deployment-concepts.md
             - name: Understand the dependencies of a Visual C++ application
               href: windows/understanding-the-dependencies-of-a-visual-cpp-application.md
-            - name: Determine Which DLLs to redistribute
+            - name: Determine which DLLs to redistribute
               href: windows/determining-which-dlls-to-redistribute.md
             - name: Choose a deployment method
               href: windows/choosing-a-deployment-method.md
@@ -3745,7 +3745,7 @@
                   href: cpp/auto-keyword.md
             - name: Punctuators
               href: cpp/punctuators-cpp.md
-            - name: Numeric, boolean and pointer literals
+            - name: Numeric, boolean, and pointer literals
               href: cpp/numeric-boolean-and-pointer-literals-cpp.md
             - name: String and character literals
               href: cpp/string-and-character-literals-cpp.md
@@ -3902,10 +3902,10 @@
                   href: cpp/floating-limits.md
             - name: Standard conversions
               href: cpp/standard-conversions.md
-        - name: Built-in operators, precedence and associativity
+        - name: Built-in operators, precedence, and associativity
           expanded: false
           items: 
-            - name: Built-in operators, precedence and associativity
+            - name: Built-in operators, precedence, and associativity
               href: cpp/cpp-built-in-operators-precedence-and-associativity.md
             - name: __alignof operator
               href: cpp/alignof-operator.md
