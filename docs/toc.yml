@@ -161,38 +161,6 @@
                       href: build/pgosweep.md
                     - name: "How to: Merge multiple PGO profiles into a single profile"
                       href: build/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md
-        - name: Use the MSVC toolset from the command line
-          expanded: false
-          items: 
-            - name: Use the MSVC toolset from the command line
-              href: build/building-on-the-command-line.md
-            - name: "Walkthrough: Compile a native C++ program on the command line"
-              href: build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
-            - name: "Walkthrough: Compile a C program on the command line"
-              href: build/walkthrough-compile-a-c-program-on-the-command-line.md
-            - name: "Walkthrough: Compiling a C++/CLI program on the command line"
-              href: build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
-            - name: "Walkthrough: Compiling a C++/CX program on the command line"
-              href: build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
-            - name: Set the path and environment variables for command-line builds
-              href: build/setting-the-path-and-environment-variables-for-command-line-builds.md
-        - name: Use MSBuild from the command line
-          expanded: false
-          items: 
-            - name: Use MSBuild from the command line
-              href: build/msbuild-visual-cpp.md
-            - name: "Walkthrough: Using MSBuild to create a C++ project"
-              href: build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md
-            - name: "How to: Use build events in MSBuild projects"
-              href: build/how-to-use-build-events-in-msbuild-projects.md
-            - name: "How to: Add a custom build step to MSBuild projects"
-              href: build/how-to-add-a-custom-build-step-to-msbuild-projects.md
-            - name: "How to: Add custom build tools to MSBuild projects"
-              href: build/how-to-add-custom-build-tools-to-msbuild-projects.md
-            - name: "How to: Integrate custom tools into the project properties"
-              href: build/how-to-integrate-custom-tools-into-the-project-properties.md
-            - name: "How to: Modify the target framework and platform toolset"
-              href: build/how-to-modify-the-target-framework-and-platform-toolset.md
         - name: "Walkthrough: Creating and using a static library (C++)"
           href: build/walkthrough-creating-and-using-a-static-library-cpp.md
         - name: Building C++ DLLs in Visual Studio
@@ -426,1179 +394,38 @@
 - name: Use C++ at the command line
   expanded: false
   items:
-    - name: C/C++ compiler and build tools reference
+    - name: Use the MSVC toolset from the command line
       expanded: false
       items: 
-        - name: C/C++ build reference
-          href: build/reference/c-cpp-building-reference.md
-        - name: MSBuild reference for C++ projects
-          expanded: false
-          items: 
-            - name: MSBuild reference for C++ projects
-              href: build/reference/msbuild-reference-cpp.md
-            - name: MSBuild internals for C++ projects
-              href: build/reference/msbuild-visual-cpp-overview.md
-            - name: Common macros for build commands and properties
-              href: build/reference/common-macros-for-build-commands-and-properties.md
-            - name: File types used in C++ projects
-              expanded: false
-              items: 
-                - name: File types used in C++ projects
-                  href: build/reference/file-types-created-for-visual-cpp-projects.md
-                - name: Project and solution files
-                  href: build/reference/project-and-solution-files.md
-                - name: C++ project templates
-                  href: build/reference/visual-cpp-project-types.md
-                - name: C++ new item templates
-                  href: build/reference/using-visual-cpp-add-new-item-templates.md
-                - name: Resource files
-                  href: build/reference/resource-files-cpp.md
-                - name: Files created for CLR projects
-                  href: build/reference/files-created-for-clr-projects.md
-                - name: ATL program or control source and header files
-                  href: build/reference/atl-program-or-control-source-and-header-files.md
-                - name: MFC program or control source and header files
-                  href: build/reference/mfc-program-or-control-source-and-header-files.md
-                - name: HTML help files
-                  href: build/reference/help-files-html-help.md
-                - name: Winhelp help files
-                  href: build/reference/help-files-winhelp.md
-                - name: Hint files for Intellisense
-                  href: build/reference/hint-files.md
-                - name: Property page XML files
-                  href: build/reference/property-page-xml-files.md
-                - name: .vcxproj and .props file structure
-                  href: build/reference/vcxproj-file-structure.md
-                - name: Example project file
-                  href: build/reference/project-files.md
-            - name: C++ project properties reference
-              expanded: false
-              items: 
-                - name: C++ project properties reference
-                  href: build/reference/property-pages-visual-cpp.md
-                - name: General property page (project)
-                  href: build/reference/general-property-page-project.md
-                - name: General property page
-                  href: build/reference/general-property-page-file.md
-                - name: VC++ Directories property page
-                  href: build/reference/vcpp-directories-property-page.md
-                - name: Command line property pages
-                  href: build/reference/command-line-property-pages.md
-                - name: NMake property page
-                  href: build/reference/nmake-property-page.md
-                - name: Linker property pages
-                  href: build/reference/linker-property-pages.md
-                - name: Manifest Tool property pages
-                  expanded: false
-                  items: 
-                    - name: Manifest Tool property pages
-                      href: build/reference/manifest-tool-property-pages.md
-                    - name: General, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/general-manifest-tool-configuration-properties.md
-                    - name: Input and Output, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/input-and-output-manifest-tool.md
-                    - name: Isolated COM, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/isolated-com-manifest-tool.md
-                    - name: Advanced, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/advanced-manifest-tool.md
-                - name: Resources property pages
-                  href: build/reference/resources-property-pages.md
-                - name: Managed Resources property page
-                  href: build/reference/managed-resources-property-page.md
-                - name: MIDL property pages
-                  expanded: false
-                  items: 
-                    - name: MIDL property pages
-                      href: build/reference/midl-property-pages.md
-                    - name: "MIDL property pages: General"
-                      href: build/reference/midl-property-pages-general.md
-                    - name: "MIDL property pages: Output"
-                      href: build/reference/midl-property-pages-output.md
-                    - name: "MIDL property pages: Advanced"
-                      href: build/reference/midl-property-pages-advanced.md
-                - name: Web References property page
-                  href: build/reference/web-references-property-page.md
-                - name: XML Data Generator Tool property page
-                  href: build/reference/xml-data-generator-tool-property-page.md
-                - name: XML Document Generator Tool property pages
-                  href: build/reference/xml-document-generator-tool-property-pages.md
-                - name: "Custom build step property page: General"
-                  href: build/reference/custom-build-step-property-page-general.md
-                - name: HLSL property pages
-                  expanded: false
-                  items: 
-                    - name: HLSL property pages
-                      href: build/reference/hlsl-property-pages.md
-                    - name: "HLSL property pages: General"
-                      href: build/reference/hlsl-property-pages-general.md
-                    - name: "HLSL property pages: Advanced"
-                      href: build/reference/hlsl-property-pages-advanced.md
-                    - name: "HLSL property pages: Output files"
-                      href: build/reference/hlsl-property-pages-output-files.md
-        - name: MSVC compiler reference
-          expanded: false
-          items: 
-            - name: MSVC compiler reference
-              href: build/reference/compiling-a-c-cpp-program.md
-            - name: MSVC compiler command-line syntax
-              expanded: false
-              items: 
-                - name: MSVC compiler command-line syntax
-                  href: build/reference/compiler-command-line-syntax.md
-                - name: CL filename syntax
-                  href: build/reference/cl-filename-syntax.md
-                - name: Order of CL options
-                  href: build/reference/order-of-cl-options.md
-                - name: Return value of cl.exe
-                  href: build/reference/return-value-of-cl-exe.md
-            - name: CL environment variables
-              href: build/reference/cl-environment-variables.md
-            - name: CL command files
-              href: build/reference/cl-command-files.md
-            - name: CL invokes the linker
-              href: build/reference/cl-invokes-the-linker.md
-            - name: MSVC compiler options
-              expanded: false
-              items: 
-                - name: MSVC compiler options
-                  href: build/reference/compiler-options.md
-                - name: Compiler options listed by category
-                  href: build/reference/compiler-options-listed-by-category.md
-                - name: Compiler options listed alphabetically
-                  expanded: false
-                  items: 
-                    - name: Compiler options listed alphabetically
-                      href: build/reference/compiler-options-listed-alphabetically.md
-                    - name: "@ (Specify a compiler response file)"
-                      href: build/reference/at-specify-a-compiler-response-file.md
-                    - name: /AI (Specify metadata directories)
-                      href: build/reference/ai-specify-metadata-directories.md
-                    - name: /analyze (Code analysis)
-                      href: build/reference/analyze-code-analysis.md
-                    - name: /arch (Minimum CPU architecture)
-                      expanded: false
-                      items: 
-                        - name: /arch (Minimum CPU architecture)
-                          href: build/reference/arch-minimum-cpu-architecture.md
-                        - name: /arch (x86)
-                          href: build/reference/arch-x86.md
-                        - name: /arch (x64)
-                          href: build/reference/arch-x64.md
-                        - name: /arch (ARM)
-                          href: build/reference/arch-arm.md
-                    - name: /await (Enable coroutine support)
-                      href: build/reference/await-enable-coroutine-support.md
-                    - name: /bigobj (Increase number of sections in .Obj file)
-                      href: build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md
-                    - name: /C (Preserve comments during preprocessing)
-                      href: build/reference/c-preserve-comments-during-preprocessing.md
-                    - name: /c (Compile without linking)
-                      href: build/reference/c-compile-without-linking.md
-                    - name: /cgthreads (Code generation threads)
-                      href: build/reference/cgthreads-code-generation-threads.md
-                    - name: /clr (Common Language Runtime compilation)
-                      expanded: false
-                      items: 
-                        - name: /clr (Common Language Runtime compilation)
-                          href: build/reference/clr-common-language-runtime-compilation.md
-                        - name: /clr restrictions
-                          href: build/reference/clr-restrictions.md
-                    - name: /constexpr (Control constexpr evaluation)
-                      href: build/reference/constexpr-control-constexpr-evaluation.md
-                    - name: /D (Preprocessor definitions)
-                      href: build/reference/d-preprocessor-definitions.md
-                    - name: /diagnostics (Compiler diagnostics options)
-                      href: build/reference/diagnostics-compiler-diagnostic-options.md
-                    - name: /doc (Process documentation comments) (C/C++)
-                      href: build/reference/doc-process-documentation-comments-c-cpp.md
-                    - name: /E (Preprocess to stdout)
-                      href: build/reference/e-preprocess-to-stdout.md
-                    - name: /EH (Exception handling model)
-                      href: build/reference/eh-exception-handling-model.md
-                    - name: "/EP (Preprocess to stdout without #line directives)"
-                      href: build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
-                    - name: /errorReport (Report internal compiler errors)
-                      href: build/reference/errorreport-report-internal-compiler-errors.md
-                    - name: /execution/charset (Set execution character set)
-                      href: build/reference/execution-charset-set-execution-character-set.md
-                    - name: /F (Set stack size)
-                      href: build/reference/f-set-stack-size.md
-                    - name: Output-file (/F) options
-                      expanded: false
-                      items: 
-                        - name: Output-file (/F) options
-                          href: build/reference/output-file-f-options.md
-                        - name: /FA, /Fa (Listing file)
-                          href: build/reference/fa-fa-listing-file.md
-                        - name: Specifying the pathname
-                          href: build/reference/specifying-the-pathname.md
-                        - name: /FD (IDE minimal rebuild)
-                          href: build/reference/fd-ide-minimal-rebuild.md
-                        - name: /Fd (Program database file name)
-                          href: build/reference/fd-program-database-file-name.md
-                        - name: /Fe (Name EXE file)
-                          href: build/reference/fe-name-exe-file.md
-                        - name: /Fi (Preprocess output file name)
-                          href: build/reference/fi-preprocess-output-file-name.md
-                        - name: /FI (Name forced include file)
-                          href: build/reference/fi-name-forced-include-file.md
-                        - name: /Fm (Name mapfile)
-                          href: build/reference/fm-name-mapfile.md
-                        - name: /Fo (Object file name)
-                          href: build/reference/fo-object-file-name.md
-                        - name: /Fp (Name .Pch file)
-                          href: build/reference/fp-name-dot-pch-file.md
-                        - name: /FR, /Fr (Create .Sbr file)
-                          href: build/reference/fr-fr-create-dot-sbr-file.md
-                        - name: /FU (Name forced
-                          href: build/reference/fu-name-forced-hash-using-file.md
-                        - name: /Fx (Merge injected code)
-                          href: build/reference/fx-merge-injected-code.md
-                    - name: /favor (Optimize for architecture specifics)
-                      href: build/reference/favor-optimize-for-architecture-specifics.md
-                    - name: /FC (Full path of source code file in diagnostics)
-                      href: build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
-                    - name: /fp (Specify floating-point behavior)
-                      href: build/reference/fp-specify-floating-point-behavior.md
-                    - name: /FS (Force synchronous PDB writes)
-                      href: build/reference/fs-force-synchronous-pdb-writes.md
-                    - name: /GA (Optimize for Windows application)
-                      href: build/reference/ga-optimize-for-windows-application.md
-                    - name: /Gd, /Gr, /Gv, /Gz (Calling convention)
-                      href: build/reference/gd-gr-gv-gz-calling-convention.md
-                    - name: /Ge (Enable stack probes)
-                      href: build/reference/ge-enable-stack-probes.md
-                    - name: /GF (Eliminate duplicate strings)
-                      href: build/reference/gf-eliminate-duplicate-strings.md
-                    - name: /GH (Enable _pexit hook function)
-                      href: build/reference/gh-enable-pexit-hook-function.md
-                    - name: /Gh (Enable _penter hook function)
-                      href: build/reference/gh-enable-penter-hook-function.md
-                    - name: /GL (Whole program optimization)
-                      href: build/reference/gl-whole-program-optimization.md
-                    - name: /Gm (Enable minimal rebuild)
-                      href: build/reference/gm-enable-minimal-rebuild.md
-                    - name: /GR (Enable Run-Time Type Information)
-                      href: build/reference/gr-enable-run-time-type-information.md
-                    - name: /GS (Buffer security check)
-                      href: build/reference/gs-buffer-security-check.md
-                    - name: /Gs (Control stack checking calls)
-                      href: build/reference/gs-control-stack-checking-calls.md
-                    - name: /guard (Enable Control Flow Guard)
-                      href: build/reference/guard-enable-control-flow-guard.md
-                    - name: /GT (Support fiber-safe thread-local storage)
-                      href: build/reference/gt-support-fiber-safe-thread-local-storage.md
-                    - name: /Gw (Optimize global data)
-                      href: build/reference/gw-optimize-global-data.md
-                    - name: /GX (Enable exception handling)
-                      href: build/reference/gx-enable-exception-handling.md
-                    - name: /Gy (Enable function-level linking)
-                      href: build/reference/gy-enable-function-level-linking.md
-                    - name: /GZ (Enable stack frame run-time error checking)
-                      href: build/reference/gz-enable-stack-frame-run-time-error-checking.md
-                    - name: /H (Restrict length of external names)
-                      href: build/reference/h-restrict-length-of-external-names.md
-                    - name: /HELP (Compiler command-line help)
-                      href: build/reference/help-compiler-command-line-help.md
-                    - name: /homeparams (Copy register parameters to stack)
-                      href: build/reference/homeparams-copy-register-parameters-to-stack.md
-                    - name: /hotpatch (Create hotpatchable image)
-                      href: build/reference/hotpatch-create-hotpatchable-image.md
-                    - name: /I (Additional include directories)
-                      href: build/reference/i-additional-include-directories.md
-                    - name: /J (Default char type is unsigned)
-                      href: build/reference/j-default-char-type-is-unsigned.md
-                    - name: /JMC (Just My Code debugging)
-                      href: build/reference/jmc.md
-                    - name: /kernel (Create kernel mode binary)
-                      href: build/reference/kernel-create-kernel-mode-binary.md
-                    - name: /link (Pass options to linker)
-                      href: build/reference/link-pass-options-to-linker.md
-                    - name: /LN (Create MSIL module)
-                      href: build/reference/ln-create-msil-module.md
-                    - name: /MD, /MT, /LD (Use Run-time library)
-                      href: build/reference/md-mt-ld-use-run-time-library.md
-                    - name: /MP (Build with multiple processes)
-                      href: build/reference/mp-build-with-multiple-processes.md
-                    - name: /nologo (Suppress startup banner) (C/C++)
-                      href: build/reference/nologo-suppress-startup-banner-c-cpp.md
-                    - name: /O options (Optimize code)
-                      expanded: false
-                      items: 
-                        - name: /O options (Optimize code)
-                          href: build/reference/o-options-optimize-code.md
-                        - name: /O1, /O2 (Minimize size, maximize speed)
-                          href: build/reference/o1-o2-minimize-size-maximize-speed.md
-                        - name: /Ob (Inline function expansion)
-                          href: build/reference/ob-inline-function-expansion.md
-                        - name: /Od (Disable (Debug))
-                          href: build/reference/od-disable-debug.md
-                        - name: /Og (Global optimizations)
-                          href: build/reference/og-global-optimizations.md
-                        - name: /Oi (Generate intrinsic functions)
-                          href: build/reference/oi-generate-intrinsic-functions.md
-                        - name: /Os, /Ot (Favor small code, favor fast code)
-                          href: build/reference/os-ot-favor-small-code-favor-fast-code.md
-                        - name: /Ox (Enable most speed optimizations)
-                          href: build/reference/ox-full-optimization.md
-                        - name: /Oy (Frame/Pointer omission)
-                          href: build/reference/oy-frame-pointer-omission.md
-                    - name: /openmp (Enable OpenMP 2.0 support)
-                      href: build/reference/openmp-enable-openmp-2-0-support.md
-                    - name: /P (Preprocess to a file)
-                      href: build/reference/p-preprocess-to-a-file.md
-                    - name: /permissive- (Standards conformance)
-                      href: build/reference/permissive-standards-conformance.md
-                    - name: /Q options (Low-level operations)
-                      expanded: false
-                      items: 
-                        - name: /Q options (Low-level operations)
-                          href: build/reference/q-options-low-level-operations.md
-                        - name: /Qfast_transcendentals (Force fast transcendentals)
-                          href: build/reference/qfast-transcendentals-force-fast-transcendentals.md
-                        - name: /QIfist (Suppress _ftol)
-                          href: build/reference/qifist-suppress-ftol.md
-                        - name: /Qimprecise_fwaits (Remove fwaits inside try blocks)
-                          href: build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
-                        - name: /Qpar (Auto-parallelizer)
-                          href: build/reference/qpar-auto-parallelizer.md
-                        - name: /Qpar-report (Auto-parallelizer reporting level)
-                          href: build/reference/qpar-report-auto-parallelizer-reporting-level.md
-                        - name: /Qsafe_fp_loads
-                          href: build/reference/qsafe-fp-loads.md
-                        - name: /Qspectre
-                          href: build/reference/qspectre.md
-                        - name: /Qvec-report (Auto-vectorizer reporting level)
-                          href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
-                    - name: /RTC (Run-time error checks)
-                      href: build/reference/rtc-run-time-error-checks.md
-                    - name: /sdl (Enable additional security checks)
-                      href: build/reference/sdl-enable-additional-security-checks.md
-                    - name: /showIncludes (List include files)
-                      href: build/reference/showincludes-list-include-files.md
-                    - name: /source-charset (Set source character set)
-                      href: build/reference/source-charset-set-source-character-set.md
-                    - name: /std (Specify language standard version)
-                      href: build/reference/std-specify-language-standard-version.md
-                    - name: /Tc, /Tp, /TC, /TP (Specify source file type)
-                      href: build/reference/tc-tp-tc-tp-specify-source-file-type.md
-                    - name: /U, /u (Undefine symbols)
-                      href: build/reference/u-u-undefine-symbols.md
-                    - name: /utf-8 (Set source and executable character sets to UTF-8)
-                      href: build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md
-                    - name: /V (Version number)
-                      href: build/reference/v-version-number.md
-                    - name: /validate-charset (Validate for compatible characters)
-                      href: build/reference/validate-charset-validate-for-compatible-characters.md
-                    - name: /vd (Disable construction displacements)
-                      href: build/reference/vd-disable-construction-displacements.md
-                    - name: /vmb, /vmg (Representation method)
-                      href: build/reference/vmb-vmg-representation-method.md
-                    - name: /vmm, /vms, /vmv (General purpose representation)
-                      href: build/reference/vmm-vms-vmv-general-purpose-representation.md
-                    - name: /volatile (volatile keyword interpretation)
-                      href: build/reference/volatile-volatile-keyword-interpretation.md
-                    - name: /w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning level)
-                      href: build/reference/compiler-option-warning-level.md
-                    - name: /WL (Enable one-line diagnostics)
-                      href: build/reference/wl-enable-one-line-diagnostics.md
-                    - name: /Wp64 (Detect 64-bit portability issues)
-                      href: build/reference/wp64-detect-64-bit-portability-issues.md
-                    - name: /X (Ignore standard include paths)
-                      href: build/reference/x-ignore-standard-include-paths.md
-                    - name: /Y (Precompiled headers)
-                      expanded: false
-                      items: 
-                        - name: /Y (Precompiled headers)
-                          href: build/reference/y-precompiled-headers.md
-                        - name: /Y- (Ignore precompiled header options)
-                          href: build/reference/y-ignore-precompiled-header-options.md
-                        - name: /Yc (Create precompiled header file)
-                          href: build/reference/yc-create-precompiled-header-file.md
-                        - name: /Yd (Place debug information in object file)
-                          href: build/reference/yd-place-debug-information-in-object-file.md
-                        - name: /Yl (Inject PCH reference for debug library)
-                          href: build/reference/yl-inject-pch-reference-for-debug-library.md
-                        - name: /Yu (Use precompiled header file)
-                          href: build/reference/yu-use-precompiled-header-file.md
-                    - name: /Z7, /Zi, /ZI (Debug information format)
-                      href: build/reference/z7-zi-zi-debug-information-format.md
-                    - name: /Za, /Ze (Disable language extensions)
-                      expanded: false
-                      items: 
-                        - name: /Za, /Ze (Disable language extensions)
-                          href: build/reference/za-ze-disable-language-extensions.md
-                        - name: Microsoft extensions to C and C++
-                          href: build/reference/microsoft-extensions-to-c-and-cpp.md
-                    - name: /Zc (Conformance)
-                      expanded: false
-                      items: 
-                        - name: /Zc (Conformance)
-                          href: build/reference/zc-conformance.md
-                        - name: "/Zc:alignedNew (C++17 over-aligned allocation)"
-                          href: build/reference/zc-alignednew.md
-                        - name: "/Zc:auto (Deduce variable type)"
-                          href: build/reference/zc-auto-deduce-variable-type.md
-                        - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
-                          href: build/reference/zc-cplusplus.md
-                        - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
-                          href: build/reference/zc-externconstexpr.md
-                        - name: "/Zc:forScope (Force conformance in for loop scope)"
-                          href: build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
-                        - name: "/Zc:implicitNoexcept (Implicit exception specifiers)"
-                          href: build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
-                        - name: "/Zc:inline (Remove unreferenced COMDAT)"
-                          href: build/reference/zc-inline-remove-unreferenced-comdat.md
-                        - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
-                          href: build/reference/zc-noexcepttypes.md
-                        - name: "/Zc:referenceBinding (Enforce reference binding rules)"
-                          href: build/reference/zc-referencebinding-enforce-reference-binding-rules.md
-                        - name: "/Zc:rvalueCast (Enforce type conversion rules)"
-                          href: build/reference/zc-rvaluecast-enforce-type-conversion-rules.md
-                        - name: "/Zc:sizedDealloc (Enable global sized deallocation functions)"
-                          href: build/reference/zc-sizeddealloc-enable-global-sized-dealloc-functions.md
-                        - name: "/Zc:strictStrings (Disable string literal type conversion)"
-                          href: build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
-                        - name: "/Zc:ternary (Enforce conditional operator rules)"
-                          href: build/reference/zc-ternary.md
-                        - name: "/Zc:threadSafeInit  (Thread-safe local static initialization)"
-                          href: build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md
-                        - name: "/Zc:throwingNew (Assume operator new throws)"
-                          href: build/reference/zc-throwingnew-assume-operator-new-throws.md
-                        - name: "/Zc:trigraphs (Trigraphs substitution)"
-                          href: build/reference/zc-trigraphs-trigraphs-substitution.md
-                        - name: "/Zc:twoPhase- (disable two-phase name lookup)"
-                          href: build/reference/zc-twophase.md
-                        - name: "/Zc:wchar_t (wchar_t is native type)"
-                          href: build/reference/zc-wchar-t-wchar-t-is-native-type.md
-                    - name: /Zf (Faster PDB generation)
-                      href: build/reference/zf.md
-                    - name: /Zg (Generate function prototypes)
-                      href: build/reference/zg-generate-function-prototypes.md
-                    - name: /Zl (Omit default library name)
-                      href: build/reference/zl-omit-default-library-name.md
-                    - name: /Zm (Specify precompiled header memory allocation limit)
-                      href: build/reference/zm-specify-precompiled-header-memory-allocation-limit.md
-                    - name: /Zo (Enhance optimized debugging)
-                      href: build/reference/zo-enhance-optimized-debugging.md
-                    - name: /Zp (Struct member alignment)
-                      href: build/reference/zp-struct-member-alignment.md
-                    - name: /Zs (Syntax check only)
-                      href: build/reference/zs-syntax-check-only.md
-                    - name: /ZW (Windows Runtime compilation)
-                      href: build/reference/zw-windows-runtime-compilation.md
-            - name: Unicode support in the compiler and linker
-              href: build/reference/unicode-support-in-the-compiler-and-linker.md
-        - name: MSVC linker reference
-          expanded: false
-          items: 
-            - name: MSVC linker reference
-              href: build/reference/linking.md
-            - name: MSVC linker options
-              expanded: false
-              items: 
-                - name: MSVC linker options
-                  href: build/reference/linker-options.md
-                - name: Compiler-controlled LINK options
-                  href: build/reference/compiler-controlled-link-options.md
-                - name: LINK input files
-                  expanded: false
-                  items: 
-                    - name: LINK input files
-                      href: build/reference/link-input-files.md
-                    - name: .Obj files as linker input
-                      href: build/reference/dot-obj-files-as-linker-input.md
-                    - name: .netmodule files as linker input
-                      expanded: false
-                      items: 
-                        - name: .netmodule files as linker input
-                          href: build/reference/netmodule-files-as-linker-input.md
-                        - name: Choosing the format of .netmodule input files
-                          href: build/reference/choosing-the-format-of-netmodule-input-files.md
-                    - name: .Lib files as linker input
-                      href: build/reference/dot-lib-files-as-linker-input.md
-                    - name: .Exp files as linker input
-                      href: build/reference/dot-exp-files-as-linker-input.md
-                    - name: .Def files as linker input
-                      href: build/reference/dot-def-files-as-linker-input.md
-                    - name: .Pdb files as linker input
-                      href: build/reference/dot-pdb-files-as-linker-input.md
-                    - name: .Res files as linker input
-                      href: build/reference/dot-res-files-as-linker-input.md
-                    - name: .Exe files as linker input
-                      href: build/reference/dot-exe-files-as-linker-input.md
-                    - name: .Txt files as linker input
-                      href: build/reference/dot-txt-files-as-linker-input.md
-                    - name: .Ilk files as linker input
-                      href: build/reference/dot-ilk-files-as-linker-input.md
-                - name: LINK output
-                  href: build/reference/link-output.md
-                - name: Reserved words
-                  href: build/reference/reserved-words.md
-                - name: "@ (Specify a linker response file)"
-                  href: build/reference/at-specify-a-linker-response-file.md
-                - name: /ALIGN (Section alignment)
-                  href: build/reference/align-section-alignment.md
-                - name: /ALLOWBIND (Prevent DLL binding)
-                  href: build/reference/allowbind-prevent-dll-binding.md
-                - name: /ALLOWISOLATION (Manifest lookup)
-                  href: build/reference/allowisolation-manifest-lookup.md
-                - name: /APPCONTAINER (UWP/Microsoft Store app)
-                  href: build/reference/appcontainer-windows-store-app.md
-                - name: /ASSEMBLYDEBUG (Add DebuggableAttribute)
-                  href: build/reference/assemblydebug-add-debuggableattribute.md
-                - name: /ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)
-                  href: build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md
-                - name: /ASSEMBLYMODULE (Add a MSIL module to the assembly)
-                  href: build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md
-                - name: /ASSEMBLYRESOURCE (Embed a managed resource)
-                  href: build/reference/assemblyresource-embed-a-managed-resource.md
-                - name: /BASE (Base address)
-                  href: build/reference/base-base-address.md
-                - name: /CETCOMPAT (Control-flow Enforcement Technology compatible)
-                  href: build/reference/cetcompat.md
-                - name: /CGTHREADS (Compiler threads)
-                  href: build/reference/cgthreads-compiler-threads.md
-                - name: /CLRIMAGETYPE (Specify type of CLR image)
-                  href: build/reference/clrimagetype-specify-type-of-clr-image.md
-                - name: /CLRSUPPORTLASTERROR (Preserve last error code for PInvoke calls)
-                  href: build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md
-                - name: /CLRTHREADATTRIBUTE (Set CLR thread attribute)
-                  href: build/reference/clrthreadattribute-set-clr-thread-attribute.md
-                - name: /CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)
-                  href: build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md
-                - name: /DEBUG (Generate debug info)
-                  href: build/reference/debug-generate-debug-info.md
-                - name: /DEBUGTYPE (Debug info options)
-                  href: build/reference/debugtype-debug-info-options.md
-                - name: /DEF (Specify module-definition file)
-                  href: build/reference/def-specify-module-definition-file.md
-                - name: /DEFAULTLIB (Specify default library)
-                  href: build/reference/defaultlib-specify-default-library.md
-                - name: /DELAY (Delay load import settings)
-                  href: build/reference/delay-delay-load-import-settings.md
-                - name: /DELAYLOAD (Delay load import)
-                  href: build/reference/delayload-delay-load-import.md
-                - name: /DELAYSIGN (Partially sign an assembly)
-                  href: build/reference/delaysign-partially-sign-an-assembly.md
-                - name: /DEPENDENTLOADFLAG (Set default dependent load flags)
-                  href: build/reference/dependentloadflag.md
-                - name: /DLL (Build a DLL)
-                  href: build/reference/dll-build-a-dll.md
-                - name: /DRIVER (Windows NT kernel mode driver)
-                  href: build/reference/driver-windows-nt-kernel-mode-driver.md
-                - name: /DYNAMICBASE (Use address space layout randomization)
-                  href: build/reference/dynamicbase-use-address-space-layout-randomization.md
-                - name: /ENTRY (Entry-point symbol)
-                  href: build/reference/entry-entry-point-symbol.md
-                - name: /ERRORREPORT (Report internal linker errors)
-                  href: build/reference/errorreport-report-internal-linker-errors.md
-                - name: /EXPORT (Exports a function)
-                  href: build/reference/export-exports-a-function.md
-                - name: /FILEALIGN (Align sections in files)
-                  href: build/reference/filealign.md
-                - name: /FIXED (Fixed base address)
-                  href: build/reference/fixed-fixed-base-address.md
-                - name: /FORCE (Force file output)
-                  href: build/reference/force-force-file-output.md
-                - name: /FUNCTIONPADMIN (Create hotpatchable image)
-                  href: build/reference/functionpadmin-create-hotpatchable-image.md
-                - name: /GENPROFILE, /FASTGENPROFILE (Generate profiling instrumented build)
-                  href: build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md
-                - name: /GUARD (Enable guard checks)
-                  href: build/reference/guard-enable-guard-checks.md
-                - name: /HEAP (Set heap size)
-                  href: build/reference/heap-set-heap-size.md
-                - name: /HIGHENTROPYVA (Support 64-bit ASLR)
-                  href: build/reference/highentropyva-support-64-bit-aslr.md
-                - name: /IDLOUT (Name MIDL output files)
-                  href: build/reference/idlout-name-midl-output-files.md
-                - name: /IGNORE (Ignore specific warnings)
-                  href: build/reference/ignore-ignore-specific-warnings.md
-                - name: /IGNOREIDL (Don't process attributes into MIDL)
-                  href: build/reference/ignoreidl-don-t-process-attributes-into-midl.md
-                - name: /IMPLIB (Name import library)
-                  href: build/reference/implib-name-import-library.md
-                - name: /INCLUDE (Force symbol references)
-                  href: build/reference/include-force-symbol-references.md
-                - name: /INCREMENTAL (Link incrementally)
-                  href: build/reference/incremental-link-incrementally.md
-                - name: /INTEGRITYCHECK (Require signature check)
-                  href: build/reference/integritycheck-require-signature-check.md
-                - name: /KEYCONTAINER (Specify a key container to sign an assembly)
-                  href: build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md
-                - name: /KEYFILE (Specify key or key pair to sign an assembly)
-                  href: build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md
-                - name: /LARGEADDRESSAWARE (Handle large addresses)
-                  href: build/reference/largeaddressaware-handle-large-addresses.md
-                - name: /LIBPATH (Additional libpath)
-                  href: build/reference/libpath-additional-libpath.md
-                - name: /LTCG (Link-time code generation)
-                  href: build/reference/ltcg-link-time-code-generation.md
-                - name: /MACHINE (Specify target platform)
-                  href: build/reference/machine-specify-target-platform.md
-                - name: /MANIFEST (Create side-by-side assembly manifest)
-                  href: build/reference/manifest-create-side-by-side-assembly-manifest.md
-                - name: /MANIFESTDEPENDENCY (Specify manifest dependencies)
-                  href: build/reference/manifestdependency-specify-manifest-dependencies.md
-                - name: /MANIFESTFILE (Name manifest file)
-                  href: build/reference/manifestfile-name-manifest-file.md
-                - name: /MANIFESTINPUT (Specify manifest input)
-                  href: build/reference/manifestinput-specify-manifest-input.md
-                - name: /MANIFESTUAC (Embeds UAC information in manifest)
-                  href: build/reference/manifestuac-embeds-uac-information-in-manifest.md
-                - name: /MAP (Generate mapfile)
-                  href: build/reference/map-generate-mapfile.md
-                - name: /MAPINFO (Include information in mapfile)
-                  href: build/reference/mapinfo-include-information-in-mapfile.md
-                - name: /MERGE (Combine sections)
-                  href: build/reference/merge-combine-sections.md
-                - name: /MIDL (Specify MIDL command line options)
-                  href: build/reference/midl-specify-midl-command-line-options.md
-                - name: /NATVIS (Add Natvis to PDB)
-                  href: build/reference/natvis-add-natvis-to-pdb.md
-                - name: /NOASSEMBLY (Create a MSIL module)
-                  href: build/reference/noassembly-create-a-msil-module.md
-                - name: /NODEFAULTLIB (Ignore libraries)
-                  href: build/reference/nodefaultlib-ignore-libraries.md
-                - name: /NOENTRY (No entry point)
-                  href: build/reference/noentry-no-entry-point.md
-                - name: /NOLOGO (Suppress startup banner) (Linker)
-                  href: build/reference/nologo-suppress-startup-banner-linker.md
-                - name: /NXCOMPAT (Compatible with Data Execution Prevention)
-                  href: build/reference/nxcompat-compatible-with-data-execution-prevention.md
-                - name: /OPT (Optimizations)
-                  href: build/reference/opt-optimizations.md
-                - name: /ORDER (Put functions in order)
-                  href: build/reference/order-put-functions-in-order.md
-                - name: /OUT (Output file name)
-                  href: build/reference/out-output-file-name.md
-                - name: /PDB (Use program database)
-                  href: build/reference/pdb-use-program-database.md
-                - name: /PDBALTPATH (Use alternate PDB path)
-                  href: build/reference/pdbaltpath-use-alternate-pdb-path.md
-                - name: /PDBSTRIPPED (Strip private symbols)
-                  href: build/reference/pdbstripped-strip-private-symbols.md
-                - name: /PGD (Specify database for profile-guided optimizations)
-                  href: build/reference/pgd-specify-database-for-profile-guided-optimizations.md
-                - name: /POGOSAFEMODE
-                  href: build/reference/pogosafemode-linker-option.md
-                - name: /PROFILE (Performance tools profiler)
-                  href: build/reference/profile-performance-tools-profiler.md
-                - name: /RELEASE (Set the checksum)
-                  href: build/reference/release-set-the-checksum.md
-                - name: /SAFESEH (Image has safe exception handlers)
-                  href: build/reference/safeseh-image-has-safe-exception-handlers.md
-                - name: /SECTION (Specify section attributes)
-                  href: build/reference/section-specify-section-attributes.md
-                - name: /SOURCELINK (Include Sourcelink file in PDB)
-                  href: build/reference/sourcelink.md
-                - name: /STACK (Stack allocations)
-                  href: build/reference/stack-stack-allocations.md
-                - name: /STUB (MS-DOS stub file name)
-                  href: build/reference/stub-ms-dos-stub-file-name.md
-                - name: /SUBSYSTEM (Specify subsystem)
-                  href: build/reference/subsystem-specify-subsystem.md
-                - name: /SWAPRUN (Load linker output to swap file)
-                  href: build/reference/swaprun-load-linker-output-to-swap-file.md
-                - name: /TLBID (Specify resource ID for TypeLib)
-                  href: build/reference/tlbid-specify-resource-id-for-typelib.md
-                - name: /TLBOUT (Name .TLB file)
-                  href: build/reference/tlbout-name-dot-tlb-file.md
-                - name: /TSAWARE (Create Terminal Server aware application)
-                  href: build/reference/tsaware-create-terminal-server-aware-application.md
-                - name: /USEPROFILE
-                  href: build/reference/useprofile.md
-                - name: /VERBOSE (Print progress messages)
-                  href: build/reference/verbose-print-progress-messages.md
-                - name: /VERSION (Version information)
-                  href: build/reference/version-version-information.md
-                - name: /WHOLEARCHIVE (Include all library object files)
-                  href: build/reference/wholearchive-include-all-library-object-files.md
-                - name: /WINMD (Generate Windows metadata)
-                  href: build/reference/winmd-generate-windows-metadata.md
-                - name: /WINMDFILE (Specify winmd file)
-                  href: build/reference/winmdfile-specify-winmd-file.md
-                - name: /WINMDKEYFILE (Specify winmd key file)
-                  href: build/reference/winmdkeyfile-specify-winmd-key-file.md
-                - name: /WINMDKEYCONTAINER (Specify key container)
-                  href: build/reference/winmdkeycontainer-specify-key-container.md
-                - name: /WINMDDELAYSIGN (Partially sign a winmd)
-                  href: build/reference/winmddelaysign-partially-sign-a-winmd.md
-                - name: /WX (Treat linker warnings as errors)
-                  href: build/reference/wx-treat-linker-warnings-as-errors.md
-            - name: Decorated names
-              href: build/reference/decorated-names.md
-            - name: Module-definition (.Def) files
-              expanded: false
-              items: 
-                - name: Module-definition (.Def) files
-                  href: build/reference/module-definition-dot-def-files.md
-                - name: Rules for module-definition statements
-                  expanded: false
-                  items: 
-                    - name: Rules for module-definition statements
-                      href: build/reference/rules-for-module-definition-statements.md
-                    - name: EXPORTS
-                      href: build/reference/exports.md
-                    - name: LIBRARY
-                      href: build/reference/library.md
-                    - name: HEAPSIZE
-                      href: build/reference/heapsize.md
-                    - name: NAME (C/C++)
-                      href: build/reference/name-c-cpp.md
-                    - name: SECTIONS (C/C++)
-                      href: build/reference/sections-c-cpp.md
-                    - name: STACKSIZE
-                      href: build/reference/stacksize.md
-                    - name: STUB
-                      href: build/reference/stub.md
-                    - name: VERSION (C/C++)
-                      href: build/reference/version-c-cpp.md
-            - name: Linker support for delay-loaded DLLs
-              expanded: false
-              items: 
-                - name: Linker support for delay-loaded DLLs
-                  href: build/reference/linker-support-for-delay-loaded-dlls.md
-                - name: Specifying DLLs to delay load
-                  href: build/reference/specifying-dlls-to-delay-load.md
-                - name: Explicitly unloading a delay-loaded DLL
-                  href: build/reference/explicitly-unloading-a-delay-loaded-dll.md
-                - name: Binding imports
-                  href: build/reference/binding-imports.md
-                - name: Loading all imports for a delay-loaded DLL
-                  href: build/reference/loading-all-imports-for-a-delay-loaded-dll.md
-                - name: Error handling and notification
-                  expanded: false
-                  items: 
-                    - name: Error handling and notification
-                      href: build/reference/error-handling-and-notification.md
-                    - name: Notification hooks
-                      href: build/reference/notification-hooks.md
-                    - name: Failure hooks
-                      href: build/reference/failure-hooks.md
-                    - name: Exceptions (C/C++)
-                      href: build/reference/exceptions-c-cpp.md
-                - name: Dumping delay-loaded imports
-                  href: build/reference/dumping-delay-loaded-imports.md
-                - name: Constraints of delay loading DLLs
-                  href: build/reference/constraints-of-delay-loading-dlls.md
-                - name: Understanding the helper function
-                  expanded: false
-                  items: 
-                    - name: Understanding the helper function
-                      href: build/reference/understanding-the-helper-function.md
-                    - name: Changes in the DLL delayed loading helper function since Visual C++ 6.0
-                      href: build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
-                    - name: Calling conventions, parameters, and return type
-                      href: build/reference/calling-conventions-parameters-and-return-type.md
-                    - name: Structure and constant definitions
-                      href: build/reference/structure-and-constant-definitions.md
-                    - name: Calculating necessary values
-                      href: build/reference/calculating-necessary-values.md
-                    - name: Unloading a delay-loaded DLL
-                      href: build/reference/unloading-a-delay-loaded-dll.md
-                - name: Developing your own helper function
-                  href: build/reference/developing-your-own-helper-function.md
-        - name: Additional MSVC build tools
-          expanded: false
-          items: 
-            - name: Additional MSVC build tools
-              href: build/reference/c-cpp-build-tools.md
-            - name: NMAKE reference
-              expanded: false
-              items: 
-                - name: NMAKE reference
-                  href: build/reference/nmake-reference.md
-                - name: NMAKE projects in Visual Studio
-                  href: build/reference/creating-a-makefile-project.md
-                - name: Running NMAKE
-                  expanded: false
-                  items: 
-                    - name: Running NMAKE
-                      href: build/reference/running-nmake.md
-                    - name: NMAKE options
-                      href: build/reference/nmake-options.md
-                    - name: Tools.ini and NMAKE
-                      href: build/reference/tools-ini-and-nmake.md
-                    - name: Exit codes from NMAKE
-                      href: build/reference/exit-codes-from-nmake.md
-                - name: Contents of a makefile
-                  expanded: false
-                  items: 
-                    - name: Contents of a makefile
-                      href: build/reference/contents-of-a-makefile.md
-                    - name: Wildcards and NMAKE
-                      href: build/reference/wildcards-and-nmake.md
-                    - name: Long filenames in a makefile
-                      href: build/reference/long-filenames-in-a-makefile.md
-                    - name: Comments in a makefile
-                      href: build/reference/comments-in-a-makefile.md
-                    - name: Special characters in a makefile
-                      href: build/reference/special-characters-in-a-makefile.md
-                    - name: Sample makefile
-                      href: build/reference/sample-makefile.md
-                - name: Description blocks
-                  expanded: false
-                  items: 
-                    - name: Description blocks
-                      href: build/reference/description-blocks.md
-                    - name: Targets
-                      expanded: false
-                      items: 
-                        - name: Targets
-                          href: build/reference/targets.md
-                        - name: Pseudotargets
-                          href: build/reference/pseudotargets.md
-                        - name: Multiple targets
-                          href: build/reference/multiple-targets.md
-                        - name: Cumulative dependencies
-                          href: build/reference/cumulative-dependencies.md
-                        - name: Targets in multiple description blocks
-                          href: build/reference/targets-in-multiple-description-blocks.md
-                        - name: Dependency side effects
-                          href: build/reference/dependency-side-effects.md
-                    - name: Dependents
-                      expanded: false
-                      items: 
-                        - name: Dependents
-                          href: build/reference/dependents.md
-                        - name: Inferred dependents
-                          href: build/reference/inferred-dependents.md
-                        - name: Search paths for dependents
-                          href: build/reference/search-paths-for-dependents.md
-                - name: Commands in a makefile
-                  expanded: false
-                  items: 
-                    - name: Commands in a makefile
-                      href: build/reference/commands-in-a-makefile.md
-                    - name: Command modifiers
-                      href: build/reference/command-modifiers.md
-                    - name: Filename-parts syntax
-                      href: build/reference/filename-parts-syntax.md
-                    - name: Inline files in a makefile
-                      expanded: false
-                      items: 
-                        - name: Inline files in a makefile
-                          href: build/reference/inline-files-in-a-makefile.md
-                        - name: Specifying an inline file
-                          href: build/reference/specifying-an-inline-file.md
-                        - name: Creating inline file text
-                          href: build/reference/creating-inline-file-text.md
-                        - name: Reusing inline files
-                          href: build/reference/reusing-inline-files.md
-                        - name: Multiple inline files
-                          href: build/reference/multiple-inline-files.md
-                - name: Macros and NMAKE
-                  expanded: false
-                  items: 
-                    - name: Macros and NMAKE
-                      href: build/reference/macros-and-nmake.md
-                    - name: Defining an NMAKE macro
-                      expanded: false
-                      items: 
-                        - name: Defining an NMAKE macro
-                          href: build/reference/defining-an-nmake-macro.md
-                        - name: Special characters in macros
-                          href: build/reference/special-characters-in-macros.md
-                        - name: Null and undefined macros
-                          href: build/reference/null-and-undefined-macros.md
-                        - name: Where to define macros
-                          href: build/reference/where-to-define-macros.md
-                        - name: Precedence in macro definitions
-                          href: build/reference/precedence-in-macro-definitions.md
-                    - name: Using an NMAKE macro
-                      expanded: false
-                      items: 
-                        - name: Using an NMAKE macro
-                          href: build/reference/using-an-nmake-macro.md
-                        - name: Macro substitution
-                          href: build/reference/macro-substitution.md
-                    - name: Special NMAKE macros
-                      expanded: false
-                      items: 
-                        - name: Special NMAKE macros
-                          href: build/reference/special-nmake-macros.md
-                        - name: Filename macros
-                          href: build/reference/filename-macros.md
-                        - name: Recursion macros
-                          href: build/reference/recursion-macros.md
-                        - name: Command macros and options macros
-                          href: build/reference/command-macros-and-options-macros.md
-                        - name: Environment-variable macros
-                          href: build/reference/environment-variable-macros.md
-                - name: Inference rules
-                  expanded: false
-                  items: 
-                    - name: Inference rules
-                      href: build/reference/inference-rules.md
-                    - name: Defining a rule
-                      expanded: false
-                      items: 
-                        - name: Defining a rule
-                          href: build/reference/defining-a-rule.md
-                        - name: Search paths in rules
-                          href: build/reference/search-paths-in-rules.md
-                    - name: Batch-mode rules
-                      href: build/reference/batch-mode-rules.md
-                    - name: Predefined rules
-                      href: build/reference/predefined-rules.md
-                    - name: Inferred dependents and rules
-                      href: build/reference/inferred-dependents-and-rules.md
-                    - name: Precedence in inference rules
-                      href: build/reference/precedence-in-inference-rules.md
-                - name: Dot directives
-                  href: build/reference/dot-directives.md
-                - name: Makefile preprocessing
-                  expanded: false
-                  items: 
-                    - name: Makefile preprocessing
-                      href: build/reference/makefile-preprocessing.md
-                    - name: Makefile preprocessing directives
-                      href: build/reference/makefile-preprocessing-directives.md
-                    - name: Expressions in makefile preprocessing
-                      expanded: false
-                      items: 
-                        - name: Expressions in makefile preprocessing
-                          href: build/reference/expressions-in-makefile-preprocessing.md
-                        - name: Makefile preprocessing operators
-                          href: build/reference/makefile-preprocessing-operators.md
-                        - name: Executing a program in preprocessing
-                          href: build/reference/executing-a-program-in-preprocessing.md
-            - name: LIB reference
-              expanded: false
-              items: 
-                - name: LIB reference
-                  href: build/reference/lib-reference.md
-                - name: Overview of LIB
-                  expanded: false
-                  items: 
-                    - name: Overview of LIB
-                      href: build/reference/overview-of-lib.md
-                    - name: "How to: Set LIB.EXE options in the Visual Studio development environment"
-                      href: build/reference/how-to-set-lib-exe-options-in-the-visual-studio-development-environment.md
-                    - name: LIB input files
-                      href: build/reference/lib-input-files.md
-                    - name: LIB output files
-                      href: build/reference/lib-output-files.md
-                    - name: Other LIB output
-                      href: build/reference/other-lib-output.md
-                    - name: Structure of a library
-                      href: build/reference/structure-of-a-library.md
-                - name: Running LIB
-                  href: build/reference/running-lib.md
-                - name: Managing a library
-                  href: build/reference/managing-a-library.md
-                - name: Extracting a library member
-                  href: build/reference/extracting-a-library-member.md
-                - name: Working with import libraries and export files
-                  expanded: false
-                  items: 
-                    - name: Working with import libraries and export files
-                      href: build/reference/working-with-import-libraries-and-export-files.md
-                    - name: Building an import library and export file
-                      href: build/reference/building-an-import-library-and-export-file.md
-                    - name: Using an import library and export file
-                      href: build/reference/using-an-import-library-and-export-file.md
-            - name: EDITBIN reference
-              expanded: false
-              items: 
-                - name: EDITBIN reference
-                  href: build/reference/editbin-reference.md
-                - name: EDITBIN command line
-                  href: build/reference/editbin-command-line.md
-                - name: EDITBIN options
-                  expanded: false
-                  items: 
-                    - name: EDITBIN options
-                      href: build/reference/editbin-options.md
-                    - name: /ALLOWISOLATION
-                      href: build/reference/allowisolation.md
-                    - name: /ALLOWBIND
-                      href: build/reference/allowbind.md
-                    - name: /APPCONTAINER
-                      href: build/reference/appcontainer.md
-                    - name: /BIND
-                      href: build/reference/bind.md
-                    - name: /DYNAMICBASE
-                      href: build/reference/dynamicbase.md
-                    - name: /ERRORREPORT (editbin.exe)
-                      href: build/reference/errorreport-editbin-exe.md
-                    - name: /HEAP
-                      href: build/reference/heap.md
-                    - name: /HIGHENTROPYVA
-                      href: build/reference/highentropyva.md
-                    - name: /INTEGRITYCHECK
-                      href: build/reference/integritycheck.md
-                    - name: /LARGEADDRESSAWARE
-                      href: build/reference/largeaddressaware.md
-                    - name: /NOLOGO (EDITBIN)
-                      href: build/reference/nologo-editbin.md
-                    - name: /NXCOMPAT
-                      href: build/reference/nxcompat.md
-                    - name: /REBASE
-                      href: build/reference/rebase.md
-                    - name: /RELEASE
-                      href: build/reference/release.md
-                    - name: /SECTION (EDITBIN)
-                      href: build/reference/section-editbin.md
-                    - name: /STACK
-                      href: build/reference/stack.md
-                    - name: /SUBSYSTEM
-                      href: build/reference/subsystem.md
-                    - name: /SWAPRUN
-                      href: build/reference/swaprun.md
-                    - name: /TSAWARE
-                      href: build/reference/tsaware.md
-                    - name: /VERSION
-                      href: build/reference/version.md
-            - name: DUMPBIN reference
-              expanded: false
-              items: 
-                - name: DUMPBIN reference
-                  href: build/reference/dumpbin-reference.md
-                - name: DUMPBIN command line
-                  href: build/reference/dumpbin-command-line.md
-                - name: DUMPBIN options
-                  expanded: false
-                  items: 
-                    - name: DUMPBIN options
-                      href: build/reference/dumpbin-options.md
-                    - name: /ALL
-                      href: build/reference/all.md
-                    - name: /ARCHIVEMEMBERS
-                      href: build/reference/archivemembers.md
-                    - name: /CLRHEADER
-                      href: build/reference/clrheader.md
-                    - name: /DEPENDENTS
-                      href: build/reference/dependents.md
-                    - name: /DIRECTIVES
-                      href: build/reference/directives.md
-                    - name: /DISASM
-                      href: build/reference/disasm.md
-                    - name: /ERRORREPORT (dumpbin.exe)
-                      href: build/reference/errorreport-dumpbin-exe.md
-                    - name: /EXPORTS
-                      href: build/reference/dash-exports.md
-                    - name: /FPO
-                      href: build/reference/fpo.md
-                    - name: /HEADERS
-                      href: build/reference/headers.md
-                    - name: /IMPORTS (DUMPBIN)
-                      href: build/reference/imports-dumpbin.md
-                    - name: /LINENUMBERS
-                      href: build/reference/linenumbers.md
-                    - name: /LINKERMEMBER
-                      href: build/reference/linkermember.md
-                    - name: /LOADCONFIG
-                      href: build/reference/loadconfig.md
-                    - name: /OUT (DUMPBIN)
-                      href: build/reference/out-dumpbin.md
-                    - name: /PDATA
-                      href: build/reference/pdata.md
-                    - name: /PDBPATH
-                      href: build/reference/pdbpath.md
-                    - name: /RANGE
-                      href: build/reference/range.md
-                    - name: /RAWDATA
-                      href: build/reference/rawdata.md
-                    - name: /RELOCATIONS
-                      href: build/reference/relocations.md
-                    - name: /SECTION (DUMPBIN)
-                      href: build/reference/section-dumpbin.md
-                    - name: /SUMMARY
-                      href: build/reference/summary.md
-                    - name: /SYMBOLS
-                      href: build/reference/symbols.md
-                    - name: /TLS
-                      href: build/reference/tls.md
-            - name: ERRLOOK reference
-              expanded: false
-              items: 
-                - name: ERRLOOK reference
-                  href: build/reference/errlook-reference.md
-                - name: Value edit control
-                  href: build/reference/value-edit-control.md
-                - name: Error message edit control
-                  href: build/reference/error-message-edit-control.md
-                - name: Modules button
-                  href: build/reference/modules-button.md
-                - name: Look up button
-                  href: build/reference/look-up-button.md
-            - name: XDCMake reference
-              href: build/reference/xdcmake-reference.md
-            - name: BSCMAKE reference
-              expanded: false
-              items: 
-                - name: BSCMAKE reference
-                  href: build/reference/bscmake-reference.md
-                - name: "Building browse information files: Overview"
-                  href: build/reference/building-browse-information-files-overview.md
-                - name: Building a .Bsc file
-                  expanded: false
-                  items: 
-                    - name: Building a .Bsc file
-                      href: build/reference/building-a-dot-bsc-file.md
-                    - name: Creating an .Sbr file
-                      href: build/reference/creating-an-dot-sbr-file.md
-                    - name: How BSCMAKE builds a .Bsc file
-                      href: build/reference/how-bscmake-builds-a-dot-bsc-file.md
-                - name: BSCMAKE command line
-                  href: build/reference/bscmake-command-line.md
-                - name: BSCMAKE command file (Response file)
-                  href: build/reference/bscmake-command-file-response-file.md
-                - name: BSCMAKE options
-                  href: build/reference/bscmake-options.md
-                - name: BSCMAKE exit codes
-                  href: build/reference/bscmake-exit-codes.md
-        - name: Compiler and build tools errors
-          href: error-messages/
-        - name: XML documentation for C++
-          expanded: false
-          items: 
-            - name: XML documentation for C++
-              href: build/reference/xml-documentation-visual-cpp.md
-            - name: Recommended tags for C++ documentation comments
-              expanded: false
-              items: 
-                - name: Recommended tags for C++ documentation comments
-                  href: build/reference/recommended-tags-for-documentation-comments-visual-cpp.md
-                - name: <c>
-                  href: build/reference/c-visual-cpp.md
-                - name: <code>
-                  href: build/reference/code-visual-cpp.md
-                - name: <example>
-                  href: build/reference/example-visual-cpp.md
-                - name: <exception>
-                  href: build/reference/exception-visual-cpp.md
-                - name: <include>
-                  href: build/reference/include-visual-cpp.md
-                - name: <list>
-                  href: build/reference/list-visual-cpp.md
-                - name: <para>
-                  href: build/reference/para-visual-cpp.md
-                - name: <param>
-                  href: build/reference/param-visual-cpp.md
-                - name: <paramref>
-                  href: build/reference/paramref-visual-cpp.md
-                - name: <permission>
-                  href: build/reference/permission-visual-cpp.md
-                - name: <remarks>
-                  href: build/reference/remarks-visual-cpp.md
-                - name: <returns>
-                  href: build/reference/returns-visual-cpp.md
-                - name: <see>
-                  href: build/reference/see-visual-cpp.md
-                - name: <seealso>
-                  href: build/reference/seealso-visual-cpp.md
-                - name: <summary>
-                  href: build/reference/summary-visual-cpp.md
-                - name: <value>
-                  href: build/reference/value-visual-cpp.md
-            - name: .Xml file processing
-              href: build/reference/dot-xml-file-processing.md
-            - name: Delimiters for C++ documentation tags
-              href: build/reference/delimiters-for-visual-cpp-documentation-tags.md
+        - name: Use the MSVC toolset from the command line
+          href: build/building-on-the-command-line.md
+        - name: "Walkthrough: Compile a native C++ program on the command line"
+          href: build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
+        - name: "Walkthrough: Compile a C program on the command line"
+          href: build/walkthrough-compile-a-c-program-on-the-command-line.md
+        - name: "Walkthrough: Compiling a C++/CLI program on the command line"
+          href: build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
+        - name: "Walkthrough: Compiling a C++/CX program on the command line"
+          href: build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
+        - name: Set the path and environment variables for command-line builds
+          href: build/setting-the-path-and-environment-variables-for-command-line-builds.md
+    - name: Use MSBuild from the command line
+      expanded: false
+      items: 
+        - name: Use MSBuild from the command line
+          href: build/msbuild-visual-cpp.md
+        - name: "Walkthrough: Using MSBuild to create a C++ project"
+          href: build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md
+        - name: "How to: Use build events in MSBuild projects"
+          href: build/how-to-use-build-events-in-msbuild-projects.md
+        - name: "How to: Add a custom build step to MSBuild projects"
+          href: build/how-to-add-a-custom-build-step-to-msbuild-projects.md
+        - name: "How to: Add custom build tools to MSBuild projects"
+          href: build/how-to-add-custom-build-tools-to-msbuild-projects.md
+        - name: "How to: Integrate custom tools into the project properties"
+          href: build/how-to-integrate-custom-tools-into-the-project-properties.md
+        - name: "How to: Modify the target framework and platform toolset"
+          href: build/how-to-modify-the-target-framework-and-platform-toolset.md
 - name: Develop in C++ for specific platforms
   expanded: false
   items:
@@ -2912,6 +1739,1179 @@
       href: security/developer-guidance-speculative-execution.md
 - name: Samples
   href: overview/visual-cpp-samples.md
+- name: Compiler and build tools reference
+  expanded: false
+  items: 
+    - name: C/C++ build reference
+      href: build/reference/c-cpp-building-reference.md
+    - name: MSBuild reference for C++ projects
+      expanded: false
+      items: 
+        - name: MSBuild reference for C++ projects
+          href: build/reference/msbuild-reference-cpp.md
+        - name: MSBuild internals for C++ projects
+          href: build/reference/msbuild-visual-cpp-overview.md
+        - name: Common macros for build commands and properties
+          href: build/reference/common-macros-for-build-commands-and-properties.md
+        - name: File types used in C++ projects
+          expanded: false
+          items: 
+            - name: File types used in C++ projects
+              href: build/reference/file-types-created-for-visual-cpp-projects.md
+            - name: Project and solution files
+              href: build/reference/project-and-solution-files.md
+            - name: C++ project templates
+              href: build/reference/visual-cpp-project-types.md
+            - name: C++ new item templates
+              href: build/reference/using-visual-cpp-add-new-item-templates.md
+            - name: Resource files
+              href: build/reference/resource-files-cpp.md
+            - name: Files created for CLR projects
+              href: build/reference/files-created-for-clr-projects.md
+            - name: ATL program or control source and header files
+              href: build/reference/atl-program-or-control-source-and-header-files.md
+            - name: MFC program or control source and header files
+              href: build/reference/mfc-program-or-control-source-and-header-files.md
+            - name: HTML help files
+              href: build/reference/help-files-html-help.md
+            - name: Winhelp help files
+              href: build/reference/help-files-winhelp.md
+            - name: Hint files for Intellisense
+              href: build/reference/hint-files.md
+            - name: Property page XML files
+              href: build/reference/property-page-xml-files.md
+            - name: .vcxproj and .props file structure
+              href: build/reference/vcxproj-file-structure.md
+            - name: Example project file
+              href: build/reference/project-files.md
+        - name: C++ project properties reference
+          expanded: false
+          items: 
+            - name: C++ project properties reference
+              href: build/reference/property-pages-visual-cpp.md
+            - name: General property page (project)
+              href: build/reference/general-property-page-project.md
+            - name: General property page
+              href: build/reference/general-property-page-file.md
+            - name: VC++ Directories property page
+              href: build/reference/vcpp-directories-property-page.md
+            - name: Command line property pages
+              href: build/reference/command-line-property-pages.md
+            - name: NMake property page
+              href: build/reference/nmake-property-page.md
+            - name: Linker property pages
+              href: build/reference/linker-property-pages.md
+            - name: Manifest Tool property pages
+              expanded: false
+              items: 
+                - name: Manifest Tool property pages
+                  href: build/reference/manifest-tool-property-pages.md
+                - name: General, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
+                  href: build/reference/general-manifest-tool-configuration-properties.md
+                - name: Input and Output, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
+                  href: build/reference/input-and-output-manifest-tool.md
+                - name: Isolated COM, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
+                  href: build/reference/isolated-com-manifest-tool.md
+                - name: Advanced, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
+                  href: build/reference/advanced-manifest-tool.md
+            - name: Resources property pages
+              href: build/reference/resources-property-pages.md
+            - name: Managed Resources property page
+              href: build/reference/managed-resources-property-page.md
+            - name: MIDL property pages
+              expanded: false
+              items: 
+                - name: MIDL property pages
+                  href: build/reference/midl-property-pages.md
+                - name: "MIDL property pages: General"
+                  href: build/reference/midl-property-pages-general.md
+                - name: "MIDL property pages: Output"
+                  href: build/reference/midl-property-pages-output.md
+                - name: "MIDL property pages: Advanced"
+                  href: build/reference/midl-property-pages-advanced.md
+            - name: Web References property page
+              href: build/reference/web-references-property-page.md
+            - name: XML Data Generator Tool property page
+              href: build/reference/xml-data-generator-tool-property-page.md
+            - name: XML Document Generator Tool property pages
+              href: build/reference/xml-document-generator-tool-property-pages.md
+            - name: "Custom build step property page: General"
+              href: build/reference/custom-build-step-property-page-general.md
+            - name: HLSL property pages
+              expanded: false
+              items: 
+                - name: HLSL property pages
+                  href: build/reference/hlsl-property-pages.md
+                - name: "HLSL property pages: General"
+                  href: build/reference/hlsl-property-pages-general.md
+                - name: "HLSL property pages: Advanced"
+                  href: build/reference/hlsl-property-pages-advanced.md
+                - name: "HLSL property pages: Output files"
+                  href: build/reference/hlsl-property-pages-output-files.md
+    - name: MSVC compiler reference
+      expanded: false
+      items: 
+        - name: MSVC compiler reference
+          href: build/reference/compiling-a-c-cpp-program.md
+        - name: MSVC compiler command-line syntax
+          expanded: false
+          items: 
+            - name: MSVC compiler command-line syntax
+              href: build/reference/compiler-command-line-syntax.md
+            - name: CL filename syntax
+              href: build/reference/cl-filename-syntax.md
+            - name: Order of CL options
+              href: build/reference/order-of-cl-options.md
+            - name: Return value of cl.exe
+              href: build/reference/return-value-of-cl-exe.md
+        - name: CL environment variables
+          href: build/reference/cl-environment-variables.md
+        - name: CL command files
+          href: build/reference/cl-command-files.md
+        - name: CL invokes the linker
+          href: build/reference/cl-invokes-the-linker.md
+        - name: MSVC compiler options
+          expanded: false
+          items: 
+            - name: MSVC compiler options
+              href: build/reference/compiler-options.md
+            - name: Compiler options listed by category
+              href: build/reference/compiler-options-listed-by-category.md
+            - name: Compiler options listed alphabetically
+              expanded: false
+              items: 
+                - name: Compiler options listed alphabetically
+                  href: build/reference/compiler-options-listed-alphabetically.md
+                - name: "@ (Specify a compiler response file)"
+                  href: build/reference/at-specify-a-compiler-response-file.md
+                - name: /AI (Specify metadata directories)
+                  href: build/reference/ai-specify-metadata-directories.md
+                - name: /analyze (Code analysis)
+                  href: build/reference/analyze-code-analysis.md
+                - name: /arch (Minimum CPU architecture)
+                  expanded: false
+                  items: 
+                    - name: /arch (Minimum CPU architecture)
+                      href: build/reference/arch-minimum-cpu-architecture.md
+                    - name: /arch (x86)
+                      href: build/reference/arch-x86.md
+                    - name: /arch (x64)
+                      href: build/reference/arch-x64.md
+                    - name: /arch (ARM)
+                      href: build/reference/arch-arm.md
+                - name: /await (Enable coroutine support)
+                  href: build/reference/await-enable-coroutine-support.md
+                - name: /bigobj (Increase number of sections in .Obj file)
+                  href: build/reference/bigobj-increase-number-of-sections-in-dot-obj-file.md
+                - name: /C (Preserve comments during preprocessing)
+                  href: build/reference/c-preserve-comments-during-preprocessing.md
+                - name: /c (Compile without linking)
+                  href: build/reference/c-compile-without-linking.md
+                - name: /cgthreads (Code generation threads)
+                  href: build/reference/cgthreads-code-generation-threads.md
+                - name: /clr (Common Language Runtime compilation)
+                  expanded: false
+                  items: 
+                    - name: /clr (Common Language Runtime compilation)
+                      href: build/reference/clr-common-language-runtime-compilation.md
+                    - name: /clr restrictions
+                      href: build/reference/clr-restrictions.md
+                - name: /constexpr (Control constexpr evaluation)
+                  href: build/reference/constexpr-control-constexpr-evaluation.md
+                - name: /D (Preprocessor definitions)
+                  href: build/reference/d-preprocessor-definitions.md
+                - name: /diagnostics (Compiler diagnostics options)
+                  href: build/reference/diagnostics-compiler-diagnostic-options.md
+                - name: /doc (Process documentation comments) (C/C++)
+                  href: build/reference/doc-process-documentation-comments-c-cpp.md
+                - name: /E (Preprocess to stdout)
+                  href: build/reference/e-preprocess-to-stdout.md
+                - name: /EH (Exception handling model)
+                  href: build/reference/eh-exception-handling-model.md
+                - name: "/EP (Preprocess to stdout without #line directives)"
+                  href: build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
+                - name: /errorReport (Report internal compiler errors)
+                  href: build/reference/errorreport-report-internal-compiler-errors.md
+                - name: /execution/charset (Set execution character set)
+                  href: build/reference/execution-charset-set-execution-character-set.md
+                - name: /F (Set stack size)
+                  href: build/reference/f-set-stack-size.md
+                - name: Output-file (/F) options
+                  expanded: false
+                  items: 
+                    - name: Output-file (/F) options
+                      href: build/reference/output-file-f-options.md
+                    - name: /FA, /Fa (Listing file)
+                      href: build/reference/fa-fa-listing-file.md
+                    - name: Specifying the pathname
+                      href: build/reference/specifying-the-pathname.md
+                    - name: /FD (IDE minimal rebuild)
+                      href: build/reference/fd-ide-minimal-rebuild.md
+                    - name: /Fd (Program database file name)
+                      href: build/reference/fd-program-database-file-name.md
+                    - name: /Fe (Name EXE file)
+                      href: build/reference/fe-name-exe-file.md
+                    - name: /Fi (Preprocess output file name)
+                      href: build/reference/fi-preprocess-output-file-name.md
+                    - name: /FI (Name forced include file)
+                      href: build/reference/fi-name-forced-include-file.md
+                    - name: /Fm (Name mapfile)
+                      href: build/reference/fm-name-mapfile.md
+                    - name: /Fo (Object file name)
+                      href: build/reference/fo-object-file-name.md
+                    - name: /Fp (Name .Pch file)
+                      href: build/reference/fp-name-dot-pch-file.md
+                    - name: /FR, /Fr (Create .Sbr file)
+                      href: build/reference/fr-fr-create-dot-sbr-file.md
+                    - name: /FU (Name forced
+                      href: build/reference/fu-name-forced-hash-using-file.md
+                    - name: /Fx (Merge injected code)
+                      href: build/reference/fx-merge-injected-code.md
+                - name: /favor (Optimize for architecture specifics)
+                  href: build/reference/favor-optimize-for-architecture-specifics.md
+                - name: /FC (Full path of source code file in diagnostics)
+                  href: build/reference/fc-full-path-of-source-code-file-in-diagnostics.md
+                - name: /fp (Specify floating-point behavior)
+                  href: build/reference/fp-specify-floating-point-behavior.md
+                - name: /FS (Force synchronous PDB writes)
+                  href: build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /GA (Optimize for Windows application)
+                  href: build/reference/ga-optimize-for-windows-application.md
+                - name: /Gd, /Gr, /Gv, /Gz (Calling convention)
+                  href: build/reference/gd-gr-gv-gz-calling-convention.md
+                - name: /Ge (Enable stack probes)
+                  href: build/reference/ge-enable-stack-probes.md
+                - name: /GF (Eliminate duplicate strings)
+                  href: build/reference/gf-eliminate-duplicate-strings.md
+                - name: /GH (Enable _pexit hook function)
+                  href: build/reference/gh-enable-pexit-hook-function.md
+                - name: /Gh (Enable _penter hook function)
+                  href: build/reference/gh-enable-penter-hook-function.md
+                - name: /GL (Whole program optimization)
+                  href: build/reference/gl-whole-program-optimization.md
+                - name: /Gm (Enable minimal rebuild)
+                  href: build/reference/gm-enable-minimal-rebuild.md
+                - name: /GR (Enable Run-Time Type Information)
+                  href: build/reference/gr-enable-run-time-type-information.md
+                - name: /GS (Buffer security check)
+                  href: build/reference/gs-buffer-security-check.md
+                - name: /Gs (Control stack checking calls)
+                  href: build/reference/gs-control-stack-checking-calls.md
+                - name: /guard (Enable Control Flow Guard)
+                  href: build/reference/guard-enable-control-flow-guard.md
+                - name: /GT (Support fiber-safe thread-local storage)
+                  href: build/reference/gt-support-fiber-safe-thread-local-storage.md
+                - name: /Gw (Optimize global data)
+                  href: build/reference/gw-optimize-global-data.md
+                - name: /GX (Enable exception handling)
+                  href: build/reference/gx-enable-exception-handling.md
+                - name: /Gy (Enable function-level linking)
+                  href: build/reference/gy-enable-function-level-linking.md
+                - name: /GZ (Enable stack frame run-time error checking)
+                  href: build/reference/gz-enable-stack-frame-run-time-error-checking.md
+                - name: /H (Restrict length of external names)
+                  href: build/reference/h-restrict-length-of-external-names.md
+                - name: /HELP (Compiler command-line help)
+                  href: build/reference/help-compiler-command-line-help.md
+                - name: /homeparams (Copy register parameters to stack)
+                  href: build/reference/homeparams-copy-register-parameters-to-stack.md
+                - name: /hotpatch (Create hotpatchable image)
+                  href: build/reference/hotpatch-create-hotpatchable-image.md
+                - name: /I (Additional include directories)
+                  href: build/reference/i-additional-include-directories.md
+                - name: /J (Default char type is unsigned)
+                  href: build/reference/j-default-char-type-is-unsigned.md
+                - name: /JMC (Just My Code debugging)
+                  href: build/reference/jmc.md
+                - name: /kernel (Create kernel mode binary)
+                  href: build/reference/kernel-create-kernel-mode-binary.md
+                - name: /link (Pass options to linker)
+                  href: build/reference/link-pass-options-to-linker.md
+                - name: /LN (Create MSIL module)
+                  href: build/reference/ln-create-msil-module.md
+                - name: /MD, /MT, /LD (Use Run-time library)
+                  href: build/reference/md-mt-ld-use-run-time-library.md
+                - name: /MP (Build with multiple processes)
+                  href: build/reference/mp-build-with-multiple-processes.md
+                - name: /nologo (Suppress startup banner) (C/C++)
+                  href: build/reference/nologo-suppress-startup-banner-c-cpp.md
+                - name: /O options (Optimize code)
+                  expanded: false
+                  items: 
+                    - name: /O options (Optimize code)
+                      href: build/reference/o-options-optimize-code.md
+                    - name: /O1, /O2 (Minimize size, maximize speed)
+                      href: build/reference/o1-o2-minimize-size-maximize-speed.md
+                    - name: /Ob (Inline function expansion)
+                      href: build/reference/ob-inline-function-expansion.md
+                    - name: /Od (Disable (Debug))
+                      href: build/reference/od-disable-debug.md
+                    - name: /Og (Global optimizations)
+                      href: build/reference/og-global-optimizations.md
+                    - name: /Oi (Generate intrinsic functions)
+                      href: build/reference/oi-generate-intrinsic-functions.md
+                    - name: /Os, /Ot (Favor small code, favor fast code)
+                      href: build/reference/os-ot-favor-small-code-favor-fast-code.md
+                    - name: /Ox (Enable most speed optimizations)
+                      href: build/reference/ox-full-optimization.md
+                    - name: /Oy (Frame/Pointer omission)
+                      href: build/reference/oy-frame-pointer-omission.md
+                - name: /openmp (Enable OpenMP 2.0 support)
+                  href: build/reference/openmp-enable-openmp-2-0-support.md
+                - name: /P (Preprocess to a file)
+                  href: build/reference/p-preprocess-to-a-file.md
+                - name: /permissive- (Standards conformance)
+                  href: build/reference/permissive-standards-conformance.md
+                - name: /Q options (Low-level operations)
+                  expanded: false
+                  items: 
+                    - name: /Q options (Low-level operations)
+                      href: build/reference/q-options-low-level-operations.md
+                    - name: /Qfast_transcendentals (Force fast transcendentals)
+                      href: build/reference/qfast-transcendentals-force-fast-transcendentals.md
+                    - name: /QIfist (Suppress _ftol)
+                      href: build/reference/qifist-suppress-ftol.md
+                    - name: /Qimprecise_fwaits (Remove fwaits inside try blocks)
+                      href: build/reference/qimprecise-fwaits-remove-fwaits-inside-try-blocks.md
+                    - name: /Qpar (Auto-parallelizer)
+                      href: build/reference/qpar-auto-parallelizer.md
+                    - name: /Qpar-report (Auto-parallelizer reporting level)
+                      href: build/reference/qpar-report-auto-parallelizer-reporting-level.md
+                    - name: /Qsafe_fp_loads
+                      href: build/reference/qsafe-fp-loads.md
+                    - name: /Qspectre
+                      href: build/reference/qspectre.md
+                    - name: /Qvec-report (Auto-vectorizer reporting level)
+                      href: build/reference/qvec-report-auto-vectorizer-reporting-level.md
+                - name: /RTC (Run-time error checks)
+                  href: build/reference/rtc-run-time-error-checks.md
+                - name: /sdl (Enable additional security checks)
+                  href: build/reference/sdl-enable-additional-security-checks.md
+                - name: /showIncludes (List include files)
+                  href: build/reference/showincludes-list-include-files.md
+                - name: /source-charset (Set source character set)
+                  href: build/reference/source-charset-set-source-character-set.md
+                - name: /std (Specify language standard version)
+                  href: build/reference/std-specify-language-standard-version.md
+                - name: /Tc, /Tp, /TC, /TP (Specify source file type)
+                  href: build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: /U, /u (Undefine symbols)
+                  href: build/reference/u-u-undefine-symbols.md
+                - name: /utf-8 (Set source and executable character sets to UTF-8)
+                  href: build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md
+                - name: /V (Version number)
+                  href: build/reference/v-version-number.md
+                - name: /validate-charset (Validate for compatible characters)
+                  href: build/reference/validate-charset-validate-for-compatible-characters.md
+                - name: /vd (Disable construction displacements)
+                  href: build/reference/vd-disable-construction-displacements.md
+                - name: /vmb, /vmg (Representation method)
+                  href: build/reference/vmb-vmg-representation-method.md
+                - name: /vmm, /vms, /vmv (General purpose representation)
+                  href: build/reference/vmm-vms-vmv-general-purpose-representation.md
+                - name: /volatile (volatile keyword interpretation)
+                  href: build/reference/volatile-volatile-keyword-interpretation.md
+                - name: /w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning level)
+                  href: build/reference/compiler-option-warning-level.md
+                - name: /WL (Enable one-line diagnostics)
+                  href: build/reference/wl-enable-one-line-diagnostics.md
+                - name: /Wp64 (Detect 64-bit portability issues)
+                  href: build/reference/wp64-detect-64-bit-portability-issues.md
+                - name: /X (Ignore standard include paths)
+                  href: build/reference/x-ignore-standard-include-paths.md
+                - name: /Y (Precompiled headers)
+                  expanded: false
+                  items: 
+                    - name: /Y (Precompiled headers)
+                      href: build/reference/y-precompiled-headers.md
+                    - name: /Y- (Ignore precompiled header options)
+                      href: build/reference/y-ignore-precompiled-header-options.md
+                    - name: /Yc (Create precompiled header file)
+                      href: build/reference/yc-create-precompiled-header-file.md
+                    - name: /Yd (Place debug information in object file)
+                      href: build/reference/yd-place-debug-information-in-object-file.md
+                    - name: /Yl (Inject PCH reference for debug library)
+                      href: build/reference/yl-inject-pch-reference-for-debug-library.md
+                    - name: /Yu (Use precompiled header file)
+                      href: build/reference/yu-use-precompiled-header-file.md
+                - name: /Z7, /Zi, /ZI (Debug information format)
+                  href: build/reference/z7-zi-zi-debug-information-format.md
+                - name: /Za, /Ze (Disable language extensions)
+                  expanded: false
+                  items: 
+                    - name: /Za, /Ze (Disable language extensions)
+                      href: build/reference/za-ze-disable-language-extensions.md
+                    - name: Microsoft extensions to C and C++
+                      href: build/reference/microsoft-extensions-to-c-and-cpp.md
+                - name: /Zc (Conformance)
+                  expanded: false
+                  items: 
+                    - name: /Zc (Conformance)
+                      href: build/reference/zc-conformance.md
+                    - name: "/Zc:alignedNew (C++17 over-aligned allocation)"
+                      href: build/reference/zc-alignednew.md
+                    - name: "/Zc:auto (Deduce variable type)"
+                      href: build/reference/zc-auto-deduce-variable-type.md
+                    - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
+                      href: build/reference/zc-cplusplus.md
+                    - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
+                      href: build/reference/zc-externconstexpr.md
+                    - name: "/Zc:forScope (Force conformance in for loop scope)"
+                      href: build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: "/Zc:implicitNoexcept (Implicit exception specifiers)"
+                      href: build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
+                    - name: "/Zc:inline (Remove unreferenced COMDAT)"
+                      href: build/reference/zc-inline-remove-unreferenced-comdat.md
+                    - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
+                      href: build/reference/zc-noexcepttypes.md
+                    - name: "/Zc:referenceBinding (Enforce reference binding rules)"
+                      href: build/reference/zc-referencebinding-enforce-reference-binding-rules.md
+                    - name: "/Zc:rvalueCast (Enforce type conversion rules)"
+                      href: build/reference/zc-rvaluecast-enforce-type-conversion-rules.md
+                    - name: "/Zc:sizedDealloc (Enable global sized deallocation functions)"
+                      href: build/reference/zc-sizeddealloc-enable-global-sized-dealloc-functions.md
+                    - name: "/Zc:strictStrings (Disable string literal type conversion)"
+                      href: build/reference/zc-strictstrings-disable-string-literal-type-conversion.md
+                    - name: "/Zc:ternary (Enforce conditional operator rules)"
+                      href: build/reference/zc-ternary.md
+                    - name: "/Zc:threadSafeInit  (Thread-safe local static initialization)"
+                      href: build/reference/zc-threadsafeinit-thread-safe-local-static-initialization.md
+                    - name: "/Zc:throwingNew (Assume operator new throws)"
+                      href: build/reference/zc-throwingnew-assume-operator-new-throws.md
+                    - name: "/Zc:trigraphs (Trigraphs substitution)"
+                      href: build/reference/zc-trigraphs-trigraphs-substitution.md
+                    - name: "/Zc:twoPhase- (disable two-phase name lookup)"
+                      href: build/reference/zc-twophase.md
+                    - name: "/Zc:wchar_t (wchar_t is native type)"
+                      href: build/reference/zc-wchar-t-wchar-t-is-native-type.md
+                - name: /Zf (Faster PDB generation)
+                  href: build/reference/zf.md
+                - name: /Zg (Generate function prototypes)
+                  href: build/reference/zg-generate-function-prototypes.md
+                - name: /Zl (Omit default library name)
+                  href: build/reference/zl-omit-default-library-name.md
+                - name: /Zm (Specify precompiled header memory allocation limit)
+                  href: build/reference/zm-specify-precompiled-header-memory-allocation-limit.md
+                - name: /Zo (Enhance optimized debugging)
+                  href: build/reference/zo-enhance-optimized-debugging.md
+                - name: /Zp (Struct member alignment)
+                  href: build/reference/zp-struct-member-alignment.md
+                - name: /Zs (Syntax check only)
+                  href: build/reference/zs-syntax-check-only.md
+                - name: /ZW (Windows Runtime compilation)
+                  href: build/reference/zw-windows-runtime-compilation.md
+        - name: Unicode support in the compiler and linker
+          href: build/reference/unicode-support-in-the-compiler-and-linker.md
+    - name: MSVC linker reference
+      expanded: false
+      items: 
+        - name: MSVC linker reference
+          href: build/reference/linking.md
+        - name: MSVC linker options
+          expanded: false
+          items: 
+            - name: MSVC linker options
+              href: build/reference/linker-options.md
+            - name: Compiler-controlled LINK options
+              href: build/reference/compiler-controlled-link-options.md
+            - name: LINK input files
+              expanded: false
+              items: 
+                - name: LINK input files
+                  href: build/reference/link-input-files.md
+                - name: .Obj files as linker input
+                  href: build/reference/dot-obj-files-as-linker-input.md
+                - name: .netmodule files as linker input
+                  expanded: false
+                  items: 
+                    - name: .netmodule files as linker input
+                      href: build/reference/netmodule-files-as-linker-input.md
+                    - name: Choosing the format of .netmodule input files
+                      href: build/reference/choosing-the-format-of-netmodule-input-files.md
+                - name: .Lib files as linker input
+                  href: build/reference/dot-lib-files-as-linker-input.md
+                - name: .Exp files as linker input
+                  href: build/reference/dot-exp-files-as-linker-input.md
+                - name: .Def files as linker input
+                  href: build/reference/dot-def-files-as-linker-input.md
+                - name: .Pdb files as linker input
+                  href: build/reference/dot-pdb-files-as-linker-input.md
+                - name: .Res files as linker input
+                  href: build/reference/dot-res-files-as-linker-input.md
+                - name: .Exe files as linker input
+                  href: build/reference/dot-exe-files-as-linker-input.md
+                - name: .Txt files as linker input
+                  href: build/reference/dot-txt-files-as-linker-input.md
+                - name: .Ilk files as linker input
+                  href: build/reference/dot-ilk-files-as-linker-input.md
+            - name: LINK output
+              href: build/reference/link-output.md
+            - name: Reserved words
+              href: build/reference/reserved-words.md
+            - name: "@ (Specify a linker response file)"
+              href: build/reference/at-specify-a-linker-response-file.md
+            - name: /ALIGN (Section alignment)
+              href: build/reference/align-section-alignment.md
+            - name: /ALLOWBIND (Prevent DLL binding)
+              href: build/reference/allowbind-prevent-dll-binding.md
+            - name: /ALLOWISOLATION (Manifest lookup)
+              href: build/reference/allowisolation-manifest-lookup.md
+            - name: /APPCONTAINER (UWP/Microsoft Store app)
+              href: build/reference/appcontainer-windows-store-app.md
+            - name: /ASSEMBLYDEBUG (Add DebuggableAttribute)
+              href: build/reference/assemblydebug-add-debuggableattribute.md
+            - name: /ASSEMBLYLINKRESOURCE (Link to .NET Framework resource)
+              href: build/reference/assemblylinkresource-link-to-dotnet-framework-resource.md
+            - name: /ASSEMBLYMODULE (Add a MSIL module to the assembly)
+              href: build/reference/assemblymodule-add-a-msil-module-to-the-assembly.md
+            - name: /ASSEMBLYRESOURCE (Embed a managed resource)
+              href: build/reference/assemblyresource-embed-a-managed-resource.md
+            - name: /BASE (Base address)
+              href: build/reference/base-base-address.md
+            - name: /CETCOMPAT (Control-flow Enforcement Technology compatible)
+              href: build/reference/cetcompat.md
+            - name: /CGTHREADS (Compiler threads)
+              href: build/reference/cgthreads-compiler-threads.md
+            - name: /CLRIMAGETYPE (Specify type of CLR image)
+              href: build/reference/clrimagetype-specify-type-of-clr-image.md
+            - name: /CLRSUPPORTLASTERROR (Preserve last error code for PInvoke calls)
+              href: build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md
+            - name: /CLRTHREADATTRIBUTE (Set CLR thread attribute)
+              href: build/reference/clrthreadattribute-set-clr-thread-attribute.md
+            - name: /CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)
+              href: build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute.md
+            - name: /DEBUG (Generate debug info)
+              href: build/reference/debug-generate-debug-info.md
+            - name: /DEBUGTYPE (Debug info options)
+              href: build/reference/debugtype-debug-info-options.md
+            - name: /DEF (Specify module-definition file)
+              href: build/reference/def-specify-module-definition-file.md
+            - name: /DEFAULTLIB (Specify default library)
+              href: build/reference/defaultlib-specify-default-library.md
+            - name: /DELAY (Delay load import settings)
+              href: build/reference/delay-delay-load-import-settings.md
+            - name: /DELAYLOAD (Delay load import)
+              href: build/reference/delayload-delay-load-import.md
+            - name: /DELAYSIGN (Partially sign an assembly)
+              href: build/reference/delaysign-partially-sign-an-assembly.md
+            - name: /DEPENDENTLOADFLAG (Set default dependent load flags)
+              href: build/reference/dependentloadflag.md
+            - name: /DLL (Build a DLL)
+              href: build/reference/dll-build-a-dll.md
+            - name: /DRIVER (Windows NT kernel mode driver)
+              href: build/reference/driver-windows-nt-kernel-mode-driver.md
+            - name: /DYNAMICBASE (Use address space layout randomization)
+              href: build/reference/dynamicbase-use-address-space-layout-randomization.md
+            - name: /ENTRY (Entry-point symbol)
+              href: build/reference/entry-entry-point-symbol.md
+            - name: /ERRORREPORT (Report internal linker errors)
+              href: build/reference/errorreport-report-internal-linker-errors.md
+            - name: /EXPORT (Exports a function)
+              href: build/reference/export-exports-a-function.md
+            - name: /FILEALIGN (Align sections in files)
+              href: build/reference/filealign.md
+            - name: /FIXED (Fixed base address)
+              href: build/reference/fixed-fixed-base-address.md
+            - name: /FORCE (Force file output)
+              href: build/reference/force-force-file-output.md
+            - name: /FUNCTIONPADMIN (Create hotpatchable image)
+              href: build/reference/functionpadmin-create-hotpatchable-image.md
+            - name: /GENPROFILE, /FASTGENPROFILE (Generate profiling instrumented build)
+              href: build/reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md
+            - name: /GUARD (Enable guard checks)
+              href: build/reference/guard-enable-guard-checks.md
+            - name: /HEAP (Set heap size)
+              href: build/reference/heap-set-heap-size.md
+            - name: /HIGHENTROPYVA (Support 64-bit ASLR)
+              href: build/reference/highentropyva-support-64-bit-aslr.md
+            - name: /IDLOUT (Name MIDL output files)
+              href: build/reference/idlout-name-midl-output-files.md
+            - name: /IGNORE (Ignore specific warnings)
+              href: build/reference/ignore-ignore-specific-warnings.md
+            - name: /IGNOREIDL (Don't process attributes into MIDL)
+              href: build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /IMPLIB (Name import library)
+              href: build/reference/implib-name-import-library.md
+            - name: /INCLUDE (Force symbol references)
+              href: build/reference/include-force-symbol-references.md
+            - name: /INCREMENTAL (Link incrementally)
+              href: build/reference/incremental-link-incrementally.md
+            - name: /INTEGRITYCHECK (Require signature check)
+              href: build/reference/integritycheck-require-signature-check.md
+            - name: /KEYCONTAINER (Specify a key container to sign an assembly)
+              href: build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md
+            - name: /KEYFILE (Specify key or key pair to sign an assembly)
+              href: build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md
+            - name: /LARGEADDRESSAWARE (Handle large addresses)
+              href: build/reference/largeaddressaware-handle-large-addresses.md
+            - name: /LIBPATH (Additional libpath)
+              href: build/reference/libpath-additional-libpath.md
+            - name: /LTCG (Link-time code generation)
+              href: build/reference/ltcg-link-time-code-generation.md
+            - name: /MACHINE (Specify target platform)
+              href: build/reference/machine-specify-target-platform.md
+            - name: /MANIFEST (Create side-by-side assembly manifest)
+              href: build/reference/manifest-create-side-by-side-assembly-manifest.md
+            - name: /MANIFESTDEPENDENCY (Specify manifest dependencies)
+              href: build/reference/manifestdependency-specify-manifest-dependencies.md
+            - name: /MANIFESTFILE (Name manifest file)
+              href: build/reference/manifestfile-name-manifest-file.md
+            - name: /MANIFESTINPUT (Specify manifest input)
+              href: build/reference/manifestinput-specify-manifest-input.md
+            - name: /MANIFESTUAC (Embeds UAC information in manifest)
+              href: build/reference/manifestuac-embeds-uac-information-in-manifest.md
+            - name: /MAP (Generate mapfile)
+              href: build/reference/map-generate-mapfile.md
+            - name: /MAPINFO (Include information in mapfile)
+              href: build/reference/mapinfo-include-information-in-mapfile.md
+            - name: /MERGE (Combine sections)
+              href: build/reference/merge-combine-sections.md
+            - name: /MIDL (Specify MIDL command line options)
+              href: build/reference/midl-specify-midl-command-line-options.md
+            - name: /NATVIS (Add Natvis to PDB)
+              href: build/reference/natvis-add-natvis-to-pdb.md
+            - name: /NOASSEMBLY (Create a MSIL module)
+              href: build/reference/noassembly-create-a-msil-module.md
+            - name: /NODEFAULTLIB (Ignore libraries)
+              href: build/reference/nodefaultlib-ignore-libraries.md
+            - name: /NOENTRY (No entry point)
+              href: build/reference/noentry-no-entry-point.md
+            - name: /NOLOGO (Suppress startup banner) (Linker)
+              href: build/reference/nologo-suppress-startup-banner-linker.md
+            - name: /NXCOMPAT (Compatible with Data Execution Prevention)
+              href: build/reference/nxcompat-compatible-with-data-execution-prevention.md
+            - name: /OPT (Optimizations)
+              href: build/reference/opt-optimizations.md
+            - name: /ORDER (Put functions in order)
+              href: build/reference/order-put-functions-in-order.md
+            - name: /OUT (Output file name)
+              href: build/reference/out-output-file-name.md
+            - name: /PDB (Use program database)
+              href: build/reference/pdb-use-program-database.md
+            - name: /PDBALTPATH (Use alternate PDB path)
+              href: build/reference/pdbaltpath-use-alternate-pdb-path.md
+            - name: /PDBSTRIPPED (Strip private symbols)
+              href: build/reference/pdbstripped-strip-private-symbols.md
+            - name: /PGD (Specify database for profile-guided optimizations)
+              href: build/reference/pgd-specify-database-for-profile-guided-optimizations.md
+            - name: /POGOSAFEMODE
+              href: build/reference/pogosafemode-linker-option.md
+            - name: /PROFILE (Performance tools profiler)
+              href: build/reference/profile-performance-tools-profiler.md
+            - name: /RELEASE (Set the checksum)
+              href: build/reference/release-set-the-checksum.md
+            - name: /SAFESEH (Image has safe exception handlers)
+              href: build/reference/safeseh-image-has-safe-exception-handlers.md
+            - name: /SECTION (Specify section attributes)
+              href: build/reference/section-specify-section-attributes.md
+            - name: /SOURCELINK (Include Sourcelink file in PDB)
+              href: build/reference/sourcelink.md
+            - name: /STACK (Stack allocations)
+              href: build/reference/stack-stack-allocations.md
+            - name: /STUB (MS-DOS stub file name)
+              href: build/reference/stub-ms-dos-stub-file-name.md
+            - name: /SUBSYSTEM (Specify subsystem)
+              href: build/reference/subsystem-specify-subsystem.md
+            - name: /SWAPRUN (Load linker output to swap file)
+              href: build/reference/swaprun-load-linker-output-to-swap-file.md
+            - name: /TLBID (Specify resource ID for TypeLib)
+              href: build/reference/tlbid-specify-resource-id-for-typelib.md
+            - name: /TLBOUT (Name .TLB file)
+              href: build/reference/tlbout-name-dot-tlb-file.md
+            - name: /TSAWARE (Create Terminal Server aware application)
+              href: build/reference/tsaware-create-terminal-server-aware-application.md
+            - name: /USEPROFILE
+              href: build/reference/useprofile.md
+            - name: /VERBOSE (Print progress messages)
+              href: build/reference/verbose-print-progress-messages.md
+            - name: /VERSION (Version information)
+              href: build/reference/version-version-information.md
+            - name: /WHOLEARCHIVE (Include all library object files)
+              href: build/reference/wholearchive-include-all-library-object-files.md
+            - name: /WINMD (Generate Windows metadata)
+              href: build/reference/winmd-generate-windows-metadata.md
+            - name: /WINMDFILE (Specify winmd file)
+              href: build/reference/winmdfile-specify-winmd-file.md
+            - name: /WINMDKEYFILE (Specify winmd key file)
+              href: build/reference/winmdkeyfile-specify-winmd-key-file.md
+            - name: /WINMDKEYCONTAINER (Specify key container)
+              href: build/reference/winmdkeycontainer-specify-key-container.md
+            - name: /WINMDDELAYSIGN (Partially sign a winmd)
+              href: build/reference/winmddelaysign-partially-sign-a-winmd.md
+            - name: /WX (Treat linker warnings as errors)
+              href: build/reference/wx-treat-linker-warnings-as-errors.md
+        - name: Decorated names
+          href: build/reference/decorated-names.md
+        - name: Module-definition (.Def) files
+          expanded: false
+          items: 
+            - name: Module-definition (.Def) files
+              href: build/reference/module-definition-dot-def-files.md
+            - name: Rules for module-definition statements
+              expanded: false
+              items: 
+                - name: Rules for module-definition statements
+                  href: build/reference/rules-for-module-definition-statements.md
+                - name: EXPORTS
+                  href: build/reference/exports.md
+                - name: LIBRARY
+                  href: build/reference/library.md
+                - name: HEAPSIZE
+                  href: build/reference/heapsize.md
+                - name: NAME (C/C++)
+                  href: build/reference/name-c-cpp.md
+                - name: SECTIONS (C/C++)
+                  href: build/reference/sections-c-cpp.md
+                - name: STACKSIZE
+                  href: build/reference/stacksize.md
+                - name: STUB
+                  href: build/reference/stub.md
+                - name: VERSION (C/C++)
+                  href: build/reference/version-c-cpp.md
+        - name: Linker support for delay-loaded DLLs
+          expanded: false
+          items: 
+            - name: Linker support for delay-loaded DLLs
+              href: build/reference/linker-support-for-delay-loaded-dlls.md
+            - name: Specifying DLLs to delay load
+              href: build/reference/specifying-dlls-to-delay-load.md
+            - name: Explicitly unloading a delay-loaded DLL
+              href: build/reference/explicitly-unloading-a-delay-loaded-dll.md
+            - name: Binding imports
+              href: build/reference/binding-imports.md
+            - name: Loading all imports for a delay-loaded DLL
+              href: build/reference/loading-all-imports-for-a-delay-loaded-dll.md
+            - name: Error handling and notification
+              expanded: false
+              items: 
+                - name: Error handling and notification
+                  href: build/reference/error-handling-and-notification.md
+                - name: Notification hooks
+                  href: build/reference/notification-hooks.md
+                - name: Failure hooks
+                  href: build/reference/failure-hooks.md
+                - name: Exceptions (C/C++)
+                  href: build/reference/exceptions-c-cpp.md
+            - name: Dumping delay-loaded imports
+              href: build/reference/dumping-delay-loaded-imports.md
+            - name: Constraints of delay loading DLLs
+              href: build/reference/constraints-of-delay-loading-dlls.md
+            - name: Understanding the helper function
+              expanded: false
+              items: 
+                - name: Understanding the helper function
+                  href: build/reference/understanding-the-helper-function.md
+                - name: Changes in the DLL delayed loading helper function since Visual C++ 6.0
+                  href: build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
+                - name: Calling conventions, parameters, and return type
+                  href: build/reference/calling-conventions-parameters-and-return-type.md
+                - name: Structure and constant definitions
+                  href: build/reference/structure-and-constant-definitions.md
+                - name: Calculating necessary values
+                  href: build/reference/calculating-necessary-values.md
+                - name: Unloading a delay-loaded DLL
+                  href: build/reference/unloading-a-delay-loaded-dll.md
+            - name: Developing your own helper function
+              href: build/reference/developing-your-own-helper-function.md
+    - name: Additional MSVC build tools
+      expanded: false
+      items: 
+        - name: Additional MSVC build tools
+          href: build/reference/c-cpp-build-tools.md
+        - name: NMAKE reference
+          expanded: false
+          items: 
+            - name: NMAKE reference
+              href: build/reference/nmake-reference.md
+            - name: NMAKE projects in Visual Studio
+              href: build/reference/creating-a-makefile-project.md
+            - name: Running NMAKE
+              expanded: false
+              items: 
+                - name: Running NMAKE
+                  href: build/reference/running-nmake.md
+                - name: NMAKE options
+                  href: build/reference/nmake-options.md
+                - name: Tools.ini and NMAKE
+                  href: build/reference/tools-ini-and-nmake.md
+                - name: Exit codes from NMAKE
+                  href: build/reference/exit-codes-from-nmake.md
+            - name: Contents of a makefile
+              expanded: false
+              items: 
+                - name: Contents of a makefile
+                  href: build/reference/contents-of-a-makefile.md
+                - name: Wildcards and NMAKE
+                  href: build/reference/wildcards-and-nmake.md
+                - name: Long filenames in a makefile
+                  href: build/reference/long-filenames-in-a-makefile.md
+                - name: Comments in a makefile
+                  href: build/reference/comments-in-a-makefile.md
+                - name: Special characters in a makefile
+                  href: build/reference/special-characters-in-a-makefile.md
+                - name: Sample makefile
+                  href: build/reference/sample-makefile.md
+            - name: Description blocks
+              expanded: false
+              items: 
+                - name: Description blocks
+                  href: build/reference/description-blocks.md
+                - name: Targets
+                  expanded: false
+                  items: 
+                    - name: Targets
+                      href: build/reference/targets.md
+                    - name: Pseudotargets
+                      href: build/reference/pseudotargets.md
+                    - name: Multiple targets
+                      href: build/reference/multiple-targets.md
+                    - name: Cumulative dependencies
+                      href: build/reference/cumulative-dependencies.md
+                    - name: Targets in multiple description blocks
+                      href: build/reference/targets-in-multiple-description-blocks.md
+                    - name: Dependency side effects
+                      href: build/reference/dependency-side-effects.md
+                - name: Dependents
+                  expanded: false
+                  items: 
+                    - name: Dependents
+                      href: build/reference/dependents.md
+                    - name: Inferred dependents
+                      href: build/reference/inferred-dependents.md
+                    - name: Search paths for dependents
+                      href: build/reference/search-paths-for-dependents.md
+            - name: Commands in a makefile
+              expanded: false
+              items: 
+                - name: Commands in a makefile
+                  href: build/reference/commands-in-a-makefile.md
+                - name: Command modifiers
+                  href: build/reference/command-modifiers.md
+                - name: Filename-parts syntax
+                  href: build/reference/filename-parts-syntax.md
+                - name: Inline files in a makefile
+                  expanded: false
+                  items: 
+                    - name: Inline files in a makefile
+                      href: build/reference/inline-files-in-a-makefile.md
+                    - name: Specifying an inline file
+                      href: build/reference/specifying-an-inline-file.md
+                    - name: Creating inline file text
+                      href: build/reference/creating-inline-file-text.md
+                    - name: Reusing inline files
+                      href: build/reference/reusing-inline-files.md
+                    - name: Multiple inline files
+                      href: build/reference/multiple-inline-files.md
+            - name: Macros and NMAKE
+              expanded: false
+              items: 
+                - name: Macros and NMAKE
+                  href: build/reference/macros-and-nmake.md
+                - name: Defining an NMAKE macro
+                  expanded: false
+                  items: 
+                    - name: Defining an NMAKE macro
+                      href: build/reference/defining-an-nmake-macro.md
+                    - name: Special characters in macros
+                      href: build/reference/special-characters-in-macros.md
+                    - name: Null and undefined macros
+                      href: build/reference/null-and-undefined-macros.md
+                    - name: Where to define macros
+                      href: build/reference/where-to-define-macros.md
+                    - name: Precedence in macro definitions
+                      href: build/reference/precedence-in-macro-definitions.md
+                - name: Using an NMAKE macro
+                  expanded: false
+                  items: 
+                    - name: Using an NMAKE macro
+                      href: build/reference/using-an-nmake-macro.md
+                    - name: Macro substitution
+                      href: build/reference/macro-substitution.md
+                - name: Special NMAKE macros
+                  expanded: false
+                  items: 
+                    - name: Special NMAKE macros
+                      href: build/reference/special-nmake-macros.md
+                    - name: Filename macros
+                      href: build/reference/filename-macros.md
+                    - name: Recursion macros
+                      href: build/reference/recursion-macros.md
+                    - name: Command macros and options macros
+                      href: build/reference/command-macros-and-options-macros.md
+                    - name: Environment-variable macros
+                      href: build/reference/environment-variable-macros.md
+            - name: Inference rules
+              expanded: false
+              items: 
+                - name: Inference rules
+                  href: build/reference/inference-rules.md
+                - name: Defining a rule
+                  expanded: false
+                  items: 
+                    - name: Defining a rule
+                      href: build/reference/defining-a-rule.md
+                    - name: Search paths in rules
+                      href: build/reference/search-paths-in-rules.md
+                - name: Batch-mode rules
+                  href: build/reference/batch-mode-rules.md
+                - name: Predefined rules
+                  href: build/reference/predefined-rules.md
+                - name: Inferred dependents and rules
+                  href: build/reference/inferred-dependents-and-rules.md
+                - name: Precedence in inference rules
+                  href: build/reference/precedence-in-inference-rules.md
+            - name: Dot directives
+              href: build/reference/dot-directives.md
+            - name: Makefile preprocessing
+              expanded: false
+              items: 
+                - name: Makefile preprocessing
+                  href: build/reference/makefile-preprocessing.md
+                - name: Makefile preprocessing directives
+                  href: build/reference/makefile-preprocessing-directives.md
+                - name: Expressions in makefile preprocessing
+                  expanded: false
+                  items: 
+                    - name: Expressions in makefile preprocessing
+                      href: build/reference/expressions-in-makefile-preprocessing.md
+                    - name: Makefile preprocessing operators
+                      href: build/reference/makefile-preprocessing-operators.md
+                    - name: Executing a program in preprocessing
+                      href: build/reference/executing-a-program-in-preprocessing.md
+        - name: LIB reference
+          expanded: false
+          items: 
+            - name: LIB reference
+              href: build/reference/lib-reference.md
+            - name: Overview of LIB
+              expanded: false
+              items: 
+                - name: Overview of LIB
+                  href: build/reference/overview-of-lib.md
+                - name: "How to: Set LIB.EXE options in the Visual Studio development environment"
+                  href: build/reference/how-to-set-lib-exe-options-in-the-visual-studio-development-environment.md
+                - name: LIB input files
+                  href: build/reference/lib-input-files.md
+                - name: LIB output files
+                  href: build/reference/lib-output-files.md
+                - name: Other LIB output
+                  href: build/reference/other-lib-output.md
+                - name: Structure of a library
+                  href: build/reference/structure-of-a-library.md
+            - name: Running LIB
+              href: build/reference/running-lib.md
+            - name: Managing a library
+              href: build/reference/managing-a-library.md
+            - name: Extracting a library member
+              href: build/reference/extracting-a-library-member.md
+            - name: Working with import libraries and export files
+              expanded: false
+              items: 
+                - name: Working with import libraries and export files
+                  href: build/reference/working-with-import-libraries-and-export-files.md
+                - name: Building an import library and export file
+                  href: build/reference/building-an-import-library-and-export-file.md
+                - name: Using an import library and export file
+                  href: build/reference/using-an-import-library-and-export-file.md
+        - name: EDITBIN reference
+          expanded: false
+          items: 
+            - name: EDITBIN reference
+              href: build/reference/editbin-reference.md
+            - name: EDITBIN command line
+              href: build/reference/editbin-command-line.md
+            - name: EDITBIN options
+              expanded: false
+              items: 
+                - name: EDITBIN options
+                  href: build/reference/editbin-options.md
+                - name: /ALLOWISOLATION
+                  href: build/reference/allowisolation.md
+                - name: /ALLOWBIND
+                  href: build/reference/allowbind.md
+                - name: /APPCONTAINER
+                  href: build/reference/appcontainer.md
+                - name: /BIND
+                  href: build/reference/bind.md
+                - name: /DYNAMICBASE
+                  href: build/reference/dynamicbase.md
+                - name: /ERRORREPORT (editbin.exe)
+                  href: build/reference/errorreport-editbin-exe.md
+                - name: /HEAP
+                  href: build/reference/heap.md
+                - name: /HIGHENTROPYVA
+                  href: build/reference/highentropyva.md
+                - name: /INTEGRITYCHECK
+                  href: build/reference/integritycheck.md
+                - name: /LARGEADDRESSAWARE
+                  href: build/reference/largeaddressaware.md
+                - name: /NOLOGO (EDITBIN)
+                  href: build/reference/nologo-editbin.md
+                - name: /NXCOMPAT
+                  href: build/reference/nxcompat.md
+                - name: /REBASE
+                  href: build/reference/rebase.md
+                - name: /RELEASE
+                  href: build/reference/release.md
+                - name: /SECTION (EDITBIN)
+                  href: build/reference/section-editbin.md
+                - name: /STACK
+                  href: build/reference/stack.md
+                - name: /SUBSYSTEM
+                  href: build/reference/subsystem.md
+                - name: /SWAPRUN
+                  href: build/reference/swaprun.md
+                - name: /TSAWARE
+                  href: build/reference/tsaware.md
+                - name: /VERSION
+                  href: build/reference/version.md
+        - name: DUMPBIN reference
+          expanded: false
+          items: 
+            - name: DUMPBIN reference
+              href: build/reference/dumpbin-reference.md
+            - name: DUMPBIN command line
+              href: build/reference/dumpbin-command-line.md
+            - name: DUMPBIN options
+              expanded: false
+              items: 
+                - name: DUMPBIN options
+                  href: build/reference/dumpbin-options.md
+                - name: /ALL
+                  href: build/reference/all.md
+                - name: /ARCHIVEMEMBERS
+                  href: build/reference/archivemembers.md
+                - name: /CLRHEADER
+                  href: build/reference/clrheader.md
+                - name: /DEPENDENTS
+                  href: build/reference/dependents.md
+                - name: /DIRECTIVES
+                  href: build/reference/directives.md
+                - name: /DISASM
+                  href: build/reference/disasm.md
+                - name: /ERRORREPORT (dumpbin.exe)
+                  href: build/reference/errorreport-dumpbin-exe.md
+                - name: /EXPORTS
+                  href: build/reference/dash-exports.md
+                - name: /FPO
+                  href: build/reference/fpo.md
+                - name: /HEADERS
+                  href: build/reference/headers.md
+                - name: /IMPORTS (DUMPBIN)
+                  href: build/reference/imports-dumpbin.md
+                - name: /LINENUMBERS
+                  href: build/reference/linenumbers.md
+                - name: /LINKERMEMBER
+                  href: build/reference/linkermember.md
+                - name: /LOADCONFIG
+                  href: build/reference/loadconfig.md
+                - name: /OUT (DUMPBIN)
+                  href: build/reference/out-dumpbin.md
+                - name: /PDATA
+                  href: build/reference/pdata.md
+                - name: /PDBPATH
+                  href: build/reference/pdbpath.md
+                - name: /RANGE
+                  href: build/reference/range.md
+                - name: /RAWDATA
+                  href: build/reference/rawdata.md
+                - name: /RELOCATIONS
+                  href: build/reference/relocations.md
+                - name: /SECTION (DUMPBIN)
+                  href: build/reference/section-dumpbin.md
+                - name: /SUMMARY
+                  href: build/reference/summary.md
+                - name: /SYMBOLS
+                  href: build/reference/symbols.md
+                - name: /TLS
+                  href: build/reference/tls.md
+        - name: ERRLOOK reference
+          expanded: false
+          items: 
+            - name: ERRLOOK reference
+              href: build/reference/errlook-reference.md
+            - name: Value edit control
+              href: build/reference/value-edit-control.md
+            - name: Error message edit control
+              href: build/reference/error-message-edit-control.md
+            - name: Modules button
+              href: build/reference/modules-button.md
+            - name: Look up button
+              href: build/reference/look-up-button.md
+        - name: XDCMake reference
+          href: build/reference/xdcmake-reference.md
+        - name: BSCMAKE reference
+          expanded: false
+          items: 
+            - name: BSCMAKE reference
+              href: build/reference/bscmake-reference.md
+            - name: "Building browse information files: Overview"
+              href: build/reference/building-browse-information-files-overview.md
+            - name: Building a .Bsc file
+              expanded: false
+              items: 
+                - name: Building a .Bsc file
+                  href: build/reference/building-a-dot-bsc-file.md
+                - name: Creating an .Sbr file
+                  href: build/reference/creating-an-dot-sbr-file.md
+                - name: How BSCMAKE builds a .Bsc file
+                  href: build/reference/how-bscmake-builds-a-dot-bsc-file.md
+            - name: BSCMAKE command line
+              href: build/reference/bscmake-command-line.md
+            - name: BSCMAKE command file (Response file)
+              href: build/reference/bscmake-command-file-response-file.md
+            - name: BSCMAKE options
+              href: build/reference/bscmake-options.md
+            - name: BSCMAKE exit codes
+              href: build/reference/bscmake-exit-codes.md
+    - name: Compiler and build tools errors
+      href: error-messages/
+    - name: XML documentation for C++
+      expanded: false
+      items: 
+        - name: XML documentation for C++
+          href: build/reference/xml-documentation-visual-cpp.md
+        - name: Recommended tags for C++ documentation comments
+          expanded: false
+          items: 
+            - name: Recommended tags for C++ documentation comments
+              href: build/reference/recommended-tags-for-documentation-comments-visual-cpp.md
+            - name: <c>
+              href: build/reference/c-visual-cpp.md
+            - name: <code>
+              href: build/reference/code-visual-cpp.md
+            - name: <example>
+              href: build/reference/example-visual-cpp.md
+            - name: <exception>
+              href: build/reference/exception-visual-cpp.md
+            - name: <include>
+              href: build/reference/include-visual-cpp.md
+            - name: <list>
+              href: build/reference/list-visual-cpp.md
+            - name: <para>
+              href: build/reference/para-visual-cpp.md
+            - name: <param>
+              href: build/reference/param-visual-cpp.md
+            - name: <paramref>
+              href: build/reference/paramref-visual-cpp.md
+            - name: <permission>
+              href: build/reference/permission-visual-cpp.md
+            - name: <remarks>
+              href: build/reference/remarks-visual-cpp.md
+            - name: <returns>
+              href: build/reference/returns-visual-cpp.md
+            - name: <see>
+              href: build/reference/see-visual-cpp.md
+            - name: <seealso>
+              href: build/reference/seealso-visual-cpp.md
+            - name: <summary>
+              href: build/reference/summary-visual-cpp.md
+            - name: <value>
+              href: build/reference/value-visual-cpp.md
+        - name: .Xml file processing
+          href: build/reference/dot-xml-file-processing.md
+        - name: Delimiters for C++ documentation tags
+          href: build/reference/delimiters-for-visual-cpp-documentation-tags.md
 - name: Languages reference
   expanded: false
   items: 
@@ -11120,7 +11120,7 @@
                   href: data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md
                 - name: "Transaction: How transactions affect updates (ODBC)"
                   href: data/odbc/transaction-how-transactions-affect-updates-odbc.md
-- name: Resources
+- name: Developer resources
   expanded: false
   items: 
     - name: Supported target platforms
