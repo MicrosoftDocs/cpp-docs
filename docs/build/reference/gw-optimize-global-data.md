@@ -23,7 +23,7 @@ When you compile and link separately, you can use the [/OPT:REF](opt-optimizatio
 
 You can also use the [/OPT:ICF](opt-optimizations.md) and [/LTCG](ltcg-link-time-code-generation.md) linker options together to merge in the executable any identical read-only global data across multiple object files compiled with the **/Gw** option.
 
-For more information, see [Introducing /Gw Compiler Switch](https://blogs.msdn.com/b/vcblog/archive/2013/09/11/introducing-gw-compiler-switch.aspx) on the Visual C++ Team Blog.
+For more information, see [Introducing /Gw Compiler Switch](https://devblogs.microsoft.com/cppblog/introducing-gw-compiler-switch/) on the C++ Team Blog.
 
 ### To set this compiler option in the Visual Studio development environment
 
