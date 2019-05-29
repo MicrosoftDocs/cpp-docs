@@ -118,6 +118,56 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/assembler/masm/ml-fatal-errors.md",
+            "redirect_url": "/cpp/assembler/masm/ml-fatal-error-a1000",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2004",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors-a2000-a2049.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2004",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors-a2050-a2099.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2050",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors-a2100-a2149.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2107",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors-a2150-a2199.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2189",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-nonfatal-errors-A2200-A2901.md",
+            "redirect_url": "/cpp/assembler/masm/ml-nonfatal-error-a2206",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/ml-warnings.md",
+            "redirect_url": "/cpp/assembler/masm/ml-warning-a4004",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/operators-masm.md",
+            "redirect_url": "/cpp/assembler/masm/operators-reference",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/assembler/masm/run-time-operators.md",
+            "redirect_url": "/cpp/assembler/masm/operator-equal-masm-run-time",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/atl/index.md",
             "redirect_url": "/cpp/atl/atl-com-desktop-components",
             "redirect_document_id": false
@@ -7125,7 +7175,7 @@
         },
         {
             "source_path": "docs/intrinsics/index.md",
-            "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
+            "redirect_url": "/cpp/intrinsics/compiler-intrinsics",
             "redirect_document_id": false
         },
         {

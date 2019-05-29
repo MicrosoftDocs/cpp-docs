@@ -95,7 +95,7 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 |[Windows Desktop Wizard](windows-desktop-wizard.md)|Use the wizard to create new Windows projects.|
 |[Active Template Library (ATL)](../atl/atl-com-desktop-components.md)|Use the ATL library to create COM components in C++.|
 |[Microsoft Foundation Classes (MFC)](../mfc/mfc-desktop-applications.md)|Use MFC to create large or small Windows applications with dialogs and controls|
-|[ATL and MFC Shared Classes](../atl-mfc-shared/TOC.md)|Use classes such as CString that are shared in ATL and MFC.|
+|[ATL and MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)|Use classes such as CString that are shared in ATL and MFC.|
 |[Data Access](../data/data-access-in-cpp.md)| OLE DB and ODBC|
 |[Text and Strings](../text/text-and-strings-in-visual-cpp.md)|Various string types on Windows.|
 |[Resources for Creating a Game Using DirectX](resources-for-creating-a-game-using-directx.md)
