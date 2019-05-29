@@ -21,6 +21,10 @@ search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text E
 
 The **Member List Filter Mode** option controls what kinds of IntelliSense autocomplete suggestions you see. By default, it is set to **Fuzzy**. In a fuzzy search, if you have a symbol called *MyAwesomeClass*, you can type "MAC" and find the class in your autocomplete suggestions. The fuzzy algorithm sets a minimum threshold that symbols must meet to show up in the list. **Smart** filtering displays all symbols containing substrings that match what you typed. **Prefix** filtering searches for strings that begin with what you typed.
 
+For more information about C++ IntelliSense, see [Visual C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense) and [Configure a C++ project for IntelliSense](/visualstudio/ide/visual-cpp-intellisense-configuration).
+
+## Predictive IntelliSense (Experimental)
+
 **Predictive IntelliSense** is an experimental feature that uses contextual awareness to limit the number of results displayed in the IntelliSense dropdown list. The algorithm applies type matching so that it shows only those results that match the expected type. In the simplest case, if you type `int x =` and invoke the IntelliSense dropdown, you will see only integers or functions returning integers. This feature is off by default because it is still in development. It works best with global symbols; member functions are not yet supported. You can turn it on by typing "Predictive" in **Quick Launch** or by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Experimental** > **Enable Predictive IntelliSense**.
 
 To override **Predictive IntelliSense** and show the longer list, press **Ctrl + J**. If **Predictive IntelliSense** is on, invoking **Ctrl + J** removes the Predictive filter. Pressing **Ctrl + J** again removes the accessibility filter from Member List results where relevant. The ([+]) button under the IntelliSense dropdown list does the same thing as **Ctrl + J**. Hover over the button to see tooltip information about what is being shown.
@@ -37,8 +41,6 @@ The preceding screenshot shows several buttons under the dropdown list. These en
 - Namespaces
 
 A button is displayed only if it is relevant to your current IntelliSense session. You typically do not see all the buttons at the same time.
-
-For more information about C++ IntelliSense, see [Visual C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense) and [Configure a C++ project for IntelliSense](/visualstudio/ide/visual-cpp-intellisense-configuration).
 
 ## Template IntelliSense
 
