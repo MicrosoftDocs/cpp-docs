@@ -94,7 +94,7 @@
           topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
       - name: Building C/C++ Projects
         tocHref: /cpp/build/
-        tocHref: /cpp/build/building-c-cpp-programs
+        topicHref: /cpp/build/building-c-cpp-programs
         items:
         - name: Build Reference
           tocHref: /cpp/build/reference/
