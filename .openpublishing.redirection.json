@@ -703,11 +703,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/get-started/toc.yml",
-            "redirect_url": "/cpp/get-started/tutorial-console-cpp",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/ide/adding-references-in-visual-cpp-projects.md",
             "redirect_url": "/cpp/build/adding-references-in-visual-cpp-projects",
             "redirect_document_id": false
