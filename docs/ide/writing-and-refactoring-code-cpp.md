@@ -21,7 +21,7 @@ search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text E
 
 The **Member List Filter Mode** option controls what kinds of IntelliSense autocomplete suggestions you see. By default, it is set to **Fuzzy**. In a fuzzy search, if you have a symbol called *MyAwesomeClass*, you can type "MAC" and find the class in your autocomplete suggestions. The fuzzy algorithm sets a minimum threshold that symbols must meet to show up in the list. **Smart** filtering displays all symbols containing substrings that match what you typed. **Prefix** filtering searches for strings that begin with what you typed.
 
-**Predictive IntelliSense** uses contextual awareness to limit the number of results displayed in the IntelliSense dropdown list. The algorithm applies type matching so that it shows only those results that match the expected type. In the simplest case, if you type int `x =` and invoke the IntelliSense dropdown, you will see only integers or functions returning integers. This feature is currently experimental and is turned off by default, but you can turn it on by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Experimental** > **Enable Predictive IntelliSense**.
+**Predictive IntelliSense** is an experimental feature that uses contextual awareness to limit the number of results displayed in the IntelliSense dropdown list. The algorithm applies type matching so that it shows only those results that match the expected type. In the simplest case, if you type `int x =` and invoke the IntelliSense dropdown, you will see only integers or functions returning integers. This feature is off by default because it is still in development. It works best with global symbols; member functions are not yet supported. You can turn it on by typing "Predictive" in **Quick Launch** or by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Experimental** > **Enable Predictive IntelliSense**.
 
 To override **Predictive IntelliSense** and show the longer list, press **Ctrl + J**. If **Predictive IntelliSense** is on, invoking **Ctrl + J** removes the Predictive filter. Pressing **Ctrl + J** again removes the accessibility filter from Member List results where relevant. The ([+]) button under the IntelliSense dropdown list does the same thing as **Ctrl + J**. Hover over the button to see tooltip information about what is being shown.
 
@@ -44,18 +44,15 @@ For more information about C++ IntelliSense, see [Visual C++ IntelliSense](/visu
 
 When the caret is inside a template definition, a **Template Bar** appears, which enables you to provide sample template arguments for IntelliSense. 
 
-Click the **<T>** icon to expand/collapse the **Template Bar**. 
-Click the pencil icon or double-click the **Template Bar** to open the **Edit** window. 
+![C&#43;&#43; Template IntelliSense Show Existing Instantiations](../ide/media/template-intellisense-cpp-1.png "Template IntelliSense Show Existing Instantiations")
+
+Click the **<T>** icon to expand/collapse the **Template Bar**. Click the pencil icon or double-click the **Template Bar** to open the **Edit** window. 
 
 ![C&#43;&#43; Template IntelliSense](../ide/media/template-intellisense-cpp-3.png "Template IntelliSense")
 
 Edits that you make in the window are applied directly to the source code, so that you can see the effects in real time. 
 
-The Template Bar can auto-populate candidates based on instantiations in your code. 
-
-![C&#43;&#43; Template IntelliSense Show Existing Instantiations](../ide/media/template-intellisense-cpp-1.png "Template IntelliSense Show Existing Instantiations")
-
-Click on **Add All Existing Instantiations** to see a list of all concrete arguments that have been used to instantiate the template throughout your code base.
+The Template Bar can auto-populate candidates based on instantiations in your code. Click on **Add All Existing Instantiations** to see a list of all concrete arguments that have been used to instantiate the template throughout your code base.
 
 ![C&#43;&#43; Template IntelliSense Results List](../ide/media/template-intellisense-cpp-2.png "Template IntelliSense Results List")
 
