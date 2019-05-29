@@ -367,7 +367,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 ### Close the app
 
-1. If it's still running, close the console window for the calculator app.
+- If it's still running, close the console window for the calculator app.
 
 ## The finished app
 
@@ -738,7 +738,7 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 ### Close the app
 
-1. If it's still running, close the console window for the calculator app.
+- If it's still running, close the console window for the calculator app.
 
 ## The finished app
 
