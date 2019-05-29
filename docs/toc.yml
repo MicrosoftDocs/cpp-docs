@@ -1534,11 +1534,17 @@
 - name: Write and refactor code
   expanded: false
   items:
-    - name: Write and refactor code
+    - name: Read and write code
       expanded: false
       items: 
-        - name: Writing and refactoring code
+        - name: Read and understand C++ code
+          href: ide/read-and-understand-code-cpp.md
+        - name: Edit and refactor C++ code
           href: ide/writing-and-refactoring-code-cpp.md
+        - name: Navigate C++ code
+          href: ide/navigate-code-cpp.md
+        - name: Collaborate using Live Share for C++
+          href: ide/live-share-cpp.md
         - name: Change signature
           href: ide/refactoring/change-signature.md
         - name: Convert to raw string literal
