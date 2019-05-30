@@ -1531,7 +1531,7 @@
               href: build/reference/dot-xml-file-processing.md
             - name: Delimiters for C++ documentation tags
               href: build/reference/delimiters-for-visual-cpp-documentation-tags.md
-- name: Write and refactor code
+- name: Read and write code
   expanded: false
   items:
     - name: Read and write code
