@@ -12162,6 +12162,146 @@
             "source_path": "docs/windows/wrl/wrl-reference.md",
             "redirect_url": "/cpp/cppcx/wrl/wrl-reference",
             "redirect_document_id": false
+        },        
+        {
+            "source_path": "docs/windows/abstract-cpp-component-extensions.md",
+            "redirect_url": "/cpp/abstract-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/arrays-cpp-component-extensions.md",
+            "redirect_url": "/cpp/arrays-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attribute-targets-cpp-component-extensions.md",
+            "redirect_url": "/cpp/attribute-targets-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/c-style-casts-with-clr-cpp-cli.md",
+            "redirect_url": "/cpp/c-style-casts-with-clr-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/compiler-support-for-type-traits-cpp-component-extensions.md",
+            "redirect_url": "/cpp/compiler-support-for-type-traits-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/constraints-on-generic-type-parameters-cpp-cli.md",
+            "redirect_url": "/cpp/constraints-on-generic-type-parameters-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/context-sensitive-keywords-cpp-component-extensions.md",
+            "redirect_url": "/cpp/context-sensitive-keywords-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/enum-class-cpp-component-extensions.md",
+            "redirect_url": "/cpp/enum-class-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/exception-handling-cpp-component-extensions.md",
+            "redirect_url": "/cpp/exception-handling-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/extensions-that-are-specific-to-cpp-cli.md",
+            "redirect_url": "/cpp/extensions-that-are-specific-to-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-delegates-visual-cpp.md",
+            "redirect_url": "/cpp/generic-delegates-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-interfaces-visual-cpp.md",
+            "redirect_url": "/cpp/generic-interfaces-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generics-cpp-component-extensions.md",
+            "redirect_url": "/cpp/generics-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md",
+            "redirect_url": "/cpp/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-pinning-pointers-and-value-types.md",
+            "redirect_url": "/cpp/how-to-declare-pinning-pointers-and-value-types",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-improve-performance-with-generics-visual-cpp.md",
+            "redirect_url": "/cpp/how-to-improve-performance-with-generics-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-pin-pointers-and-arrays.md",
+            "redirect_url": "/cpp/how-to-pin-pointers-and-arrays",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interface-class-cpp-component-extensions.md",
+            "redirect_url": "/cpp/interface-class-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/literal-cpp-component-extensions.md",
+            "redirect_url": "/cpp/literal-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nullptr-cpp-component-extensions.md",
+            "redirect_url": "/cpp/nullptr-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/override-specifiers-cpp-component-extensions.md",
+            "redirect_url": "/cpp/override-specifiers-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/partial-cpp-component-extensions.md",
+            "redirect_url": "/cpp/partial-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/platform-default-and-cli-namespaces-cpp-component-extensions.md",
+            "redirect_url": "/cpp/platform-default-and-cli-namespaces-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ref-new-gcnew-cpp-component-extensions.md",
+            "redirect_url": "/cpp/ref-new-gcnew-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/sealed-cpp-component-extensions.md",
+            "redirect_url": "/cpp/sealed-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/tracking-reference-operator-cpp-component-extensions.md",
+            "redirect_url": "/cpp/tracking-reference-operator-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/typeid-cpp-component-extensions.md",
+            "redirect_url": "/cpp/typeid-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/variable-argument-lists-dot-dot-dot-cpp-cli.md",
+            "redirect_url": "/cpp/variable-argument-lists-dot-dot-dot-cpp-cli",
+            "redirect_document_id": true
         },
         {
             "source_path": "deploying-native-desktop-applications-visual-cpp.md",
