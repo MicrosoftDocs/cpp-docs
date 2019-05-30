@@ -12162,104 +12162,379 @@
             "source_path": "docs/windows/wrl/wrl-reference.md",
             "redirect_url": "/cpp/cppcx/wrl/wrl-reference",
             "redirect_document_id": false
+        },        
+        {
+            "source_path": "docs/windows/abstract-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/abstract-cpp-component-extensions",
+            "redirect_document_id": true
         },
         {
-            "source_path": "deploying-native-desktop-applications-visual-cpp.md",
+            "source_path": "docs/windows/arrays-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/arrays-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attribute-parameter-types-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/attribute-parameter-types-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/attribute-targets-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/attribute-targets-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/boxing-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/boxing-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/c-style-casts-with-clr-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/c-style-casts-with-clr-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/classes-and-structs-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/classes-and-structs-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/compiler-support-for-type-traits-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/compiler-support-for-type-traits-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/component-extensions-for-runtime-platforms.md",
+            "redirect_url": "/cpp/extensions/component-extensions-for-runtime-platforms",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/constraints-on-generic-type-parameters-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/constraints-on-generic-type-parameters-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/consuming-generics-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/consuming-generics-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/context-sensitive-keywords-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/context-sensitive-keywords-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/delegate-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/delegate-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/enum-class-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/enum-class-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/event-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/event-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/exception-handling-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/exception-handling-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/explicit-overrides-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/explicit-overrides-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/extensions-that-are-specific-to-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/extensions-that-are-specific-to-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-classes-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/generic-classes-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-delegates-visual-cpp.md",
+            "redirect_url": "/cpp/extensions/generic-delegates-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-functions-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/generic-functions-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generic-interfaces-visual-cpp.md",
+            "redirect_url": "/cpp/extensions/generic-interfaces-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generics-and-templates-visual-cpp.md",
+            "redirect_url": "/cpp/extensions/generics-and-templates-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/generics-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/generics-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/handle-to-object-operator-hat-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/handle-to-object-operator-hat-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-pinning-pointers-and-value-types.md",
+            "redirect_url": "/cpp/extensions/how-to-declare-pinning-pointers-and-value-types",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-improve-performance-with-generics-visual-cpp.md",
+            "redirect_url": "/cpp/extensions/how-to-improve-performance-with-generics-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/how-to-pin-pointers-and-arrays.md",
+            "redirect_url": "/cpp/extensions/how-to-pin-pointers-and-arrays",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/identifier-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/identifier-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interface-class-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/interface-class-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/interior-ptr-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/interior-ptr-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/literal-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/literal-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/new-new-slot-in-vtable-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/new-new-slot-in-vtable-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/nullptr-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/nullptr-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/override-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/override-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/override-specifiers-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/override-specifiers-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/overview-of-generics-in-visual-cpp.md",
+            "redirect_url": "/cpp/extensions/overview-of-generics-in-visual-cpp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/partial-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/partial-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/pin-ptr-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/pin-ptr-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/platform-default-and-cli-namespaces-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/platform-default-and-cli-namespaces-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/property-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/property-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/ref-new-gcnew-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/ref-new-gcnew-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/safe-cast-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/safe-cast-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/sealed-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/sealed-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/string-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/string-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/tracking-reference-operator-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/tracking-reference-operator-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/type-forwarding-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/type-forwarding-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/typeid-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/typeid-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/user-defined-attributes-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/user-defined-attributes-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/variable-argument-lists-dot-dot-dot-cpp-cli.md",
+            "redirect_url": "/cpp/extensions/variable-argument-lists-dot-dot-dot-cpp-cli",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/windows/windows-runtime-and-managed-templates-cpp-component-extensions.md",
+            "redirect_url": "/cpp/extensions/windows-runtime-and-managed-templates-cpp-component-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/build/deploying-native-desktop-applications-visual-cpp.md",
             "redirect_url": "/cpp/windows/deploying-native-desktop-applications-visual-cpp",
             "redirect_document_id": true
         },
         {
-            "source_path": "deployment-in-visual-cpp.md",
+            "source_path": "docs/build/deployment-in-visual-cpp.md",
             "redirect_url": "/cpp/windows/deployment-in-visual-cpp",
             "redirect_document_id": true
         },
         {
-            "source_path": "deployment-concepts.md",
+            "source_path": "docs/build/deployment-concepts.md",
             "redirect_url": "/cpp/windows/deployment-concepts",
             "redirect_document_id": true
         },
         {
-            "source_path": "understanding-the-dependencies-of-a-visual-cpp-application.md",
+            "source_path": "docs/build/understanding-the-dependencies-of-a-visual-cpp-application.md",
             "redirect_url": "/cpp/windows/understanding-the-dependencies-of-a-visual-cpp-application",
             "redirect_document_id": true
         },
         {
-            "source_path": "determining-which-dlls-to-redistribute.md",
+            "source_path": "docs/build/determining-which-dlls-to-redistribute.md",
             "redirect_url": "/cpp/windows/determining-which-dlls-to-redistribute",
             "redirect_document_id": true
         },
         {
-            "source_path": "choosing-a-deployment-method.md",
+            "source_path": "docs/build/choosing-a-deployment-method.md",
             "redirect_url": "/cpp/windows/choosing-a-deployment-method",
             "redirect_document_id": true
         },
         {
-            "source_path": "universal-crt-deployment.md",
+            "source_path": "docs/build/universal-crt-deployment.md",
             "redirect_url": "/cpp/windows/universal-crt-deployment",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-visual-cpp-files.md",
+            "source_path": "docs/build/redistributing-visual-cpp-files.md",
             "redirect_url": "/cpp/windows/redistributing-visual-cpp-files",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-components-by-using-merge-modules.md",
+            "source_path": "docs/build/redistributing-components-by-using-merge-modules.md",
             "redirect_url": "/cpp/windows/redistributing-components-by-using-merge-modules",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-visual-cpp-activex-controls.md",
+            "source_path": "docs/build/redistributing-visual-cpp-activex-controls.md",
             "redirect_url": "/cpp/windows/redistributing-visual-cpp-activex-controls",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-the-mfc-library.md",
+            "source_path": "docs/build/redistributing-the-mfc-library.md",
             "redirect_url": "/cpp/windows/redistributing-the-mfc-library",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-an-atl-application.md",
+            "source_path": "docs/build/redistributing-an-atl-application.md",
             "redirect_url": "/cpp/windows/redistributing-an-atl-application",
             "redirect_document_id": true
         },
         {
-            "source_path": "deployment-examples.md",
+            "source_path": "docs/build/deployment-examples.md",
             "redirect_url": "/cpp/windows/deployment-examples",
             "redirect_document_id": true
         },
         {
-            "source_path": "walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md",
+            "source_path": "docs/build/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md",
             "redirect_url": "/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project",
             "redirect_document_id": true
         },
         {
-            "source_path": "walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md",
+            "source_path": "docs/build/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md",
             "redirect_url": "/cpp/windows/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder",
             "redirect_document_id": true
         },
         {
-            "source_path": "deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md",
+            "source_path": "docs/build/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md",
             "redirect_url": "/cpp/windows/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package",
             "redirect_document_id": true
         },
         {
-            "source_path": "preparing-a-test-machine-to-run-a-debug-executable.md",
+            "source_path": "docs/build/preparing-a-test-machine-to-run-a-debug-executable.md",
             "redirect_url": "/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable",
             "redirect_document_id": true
         },
         {
-            "source_path": "redistributing-web-client-applications.md",
+            "source_path": "docs/build/redistributing-web-client-applications.md",
             "redirect_url": "/cpp/windows/redistributing-web-client-applications",
             "redirect_document_id": true
         },
         {
-            "source_path": "clickonce-deployment-for-visual-cpp-applications.md",
+            "source_path": "docs/build/clickonce-deployment-for-visual-cpp-applications.md",
             "redirect_url": "/cpp/windows/clickonce-deployment-for-visual-cpp-applications",
             "redirect_document_id": true
         },
         {
-            "source_path": "running-a-cpp-clr-application-on-a-previous-runtime-version.md",
+            "source_path": "docs/build/running-a-cpp-clr-application-on-a-previous-runtime-version.md",
             "redirect_url": "/cpp/windows/running-a-cpp-clr-application-on-a-previous-runtime-version",
             "redirect_document_id": true
         },
