@@ -66,7 +66,7 @@ The following example shows results from a *Go To Files* operation using the 'f'
 
 To see the list of text filters, type a ? followed by a space. You can also access the **Go To** commands with the **Edit** menu. This is another way to remind yourself of the main Go To keyboard shortcuts.
 
-![C&#43;&#43; Go To Menu](../ide/media/vs2017go-to-menu-cpp.png "Go To Menu")
+![C&#43;&#43; Go To Menu](../ide/media/go-to-menu-cpp.png "Go To Menu")
 
 ## Find / Find in Files
 
