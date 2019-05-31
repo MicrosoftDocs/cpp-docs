@@ -17,7 +17,7 @@ The Microsoft ARM assembler (*armasm*) emits diagnostic warnings and errors when
 
 > A2193: this instruction generates unpredictable behavior
 
-The ARM architecture cannot guarantee what happens when this instruction is executed.  For details about the well-defined forms of this instruction, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).
+The ARM architecture cannot guarantee what happens when this instruction is executed.  For details about the well-defined forms of this instruction, consult the [ARM Architecture Reference Manual](https://go.microsoft.com/fwlink/p/?linkid=246464).
 
 ```asm
     ADD r0, r8, pc         ; A2193: this instruction generates unpredictable behavior
@@ -93,7 +93,7 @@ In ARM mode, there is an alternate syntax for specifying constants.  Instead of 
 
 > A4509: This form of conditional instruction is deprecated
 
-This form of conditional instruction has been deprecated by ARM in the ARMv8 architecture. We recommend that you change the code to use conditional branches. To see which conditional instructions are still supported, consult the [ARM Architecture Reference Manual](http://go.microsoft.com/fwlink/p/?linkid=246464).
+This form of conditional instruction has been deprecated by ARM in the ARMv8 architecture. We recommend that you change the code to use conditional branches. To see which conditional instructions are still supported, consult the [ARM Architecture Reference Manual](https://go.microsoft.com/fwlink/p/?linkid=246464).
 
 This warning is not emitted when the **-oldit** command-line switch is used.
 

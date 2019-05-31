@@ -54,7 +54,7 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 |-|-|
 |[Creating Asynchronous Operations in C++ for UWP Apps](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Describes some of the key points to keep in mind when you use the Concurrency Runtime to produce asynchronous operations in a UWP app.|
 |[Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|Shows how to combine PPL tasks with the `IXMLHTTPRequest2` and `IXMLHTTPRequest2Callback` interfaces to send HTTP GET and POST requests to a web service in a UWP app.|
-|[Windows Runtime app samples](http://code.msdn.microsoft.com/windowsapps)|Contains downloadable code samples and demo apps for Windows 8.x. The C++ samples use Concurrency Runtime features such as PPL tasks to process data in the background to keep the UX responsive.|
+|[Windows Runtime app samples](https://code.msdn.microsoft.com/windowsapps)|Contains downloadable code samples and demo apps for Windows 8.x. The C++ samples use Concurrency Runtime features such as PPL tasks to process data in the background to keep the UX responsive.|
 
 ## Dataflow Programming in the Asynchronous Agents Library
 
@@ -90,8 +90,8 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 |||
 |-|-|
 |[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a Windows Runtime app using C++ and XAML.|
-|[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/p/?linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|
-|[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/p/?linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|
+|[Parallel Programming in Native Code blog](https://go.microsoft.com/fwlink/p/?linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|
+|[Parallel Computing in C++ and Native Code forum](https://go.microsoft.com/fwlink/p/?linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|
 |[Parallel Programming](/dotnet/standard/parallel-programming/index)|Teaches you about the parallel programming model that is available in the .NET Framework.|
 
 ## See also

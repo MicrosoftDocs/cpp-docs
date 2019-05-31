@@ -8,7 +8,7 @@ ms.assetid: 05ee28a4-f3ae-4203-84ac-022f266ff2ab
 
 You can set the background color of your dialog boxes by handling WM_CTLCOLOR messages for the dialog box window. The color you set is used for only the specified dialog box.
 
-See [codexpert blog](http://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) for an example.
+See [codexpert blog](https://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) for an example.
 
 ## See also
 

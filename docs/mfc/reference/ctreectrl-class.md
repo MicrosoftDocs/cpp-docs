@@ -1341,7 +1341,7 @@ The handle to a tree-view item ( `HTREEITEM`) that corresponds to the *uAccId* p
 
 ### Remarks
 
-Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 This method sends the [TVM_MAPACCIDTOHTREEITEM](/windows/desktop/Controls/tvm-mapaccidtohtreeitem) message, which is described in the Windows SDK.
 
@@ -1377,7 +1377,7 @@ The accessibility identifier that corresponds to the *hItem* parameter.
 
 ### Remarks
 
-Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 This method sends the [TVM_MAPHTREEITEMTOACCID](/windows/desktop/Controls/tvm-maphtreeitemtoaccid) message, which is described in the Windows SDK.
 
@@ -2117,7 +2117,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### Remarks
 
-For more information about the difference between tooltips and infotips, search for the "Tooltips and Infotips" topic at [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).
+For more information about the difference between tooltips and infotips, search for the "Tooltips and Infotips" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
 This method sends the [TVM_SHOWINFOTIP](/windows/desktop/Controls/tvm-showinfotip) message, which is described in the Windows SDK.
 
