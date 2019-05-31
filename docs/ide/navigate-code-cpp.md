@@ -23,54 +23,6 @@ You can navigate to the definition of a code symbol by right-clicking it in the 
 
 ![C&#43;&#43; Go To Definition](../ide/media/go-to-def.png "Go To Definition")
 
-## Find / Find in Files
-
-You can run a text search for anything in your solution with **Find (Ctrl + F)**  or **Find in Files (Ctrl + Shift + F)**.
-
-Find can be scoped to a selection, the current document, all open documents, the current project, or the entire solution. You can use regular expressions as well as plain text. It also highlights all matches automatically in the IDE.
-
-![C&#43;&#43; Find](../ide/media/find-cpp.png "Find")
-
-**Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by filetypes, and more. You can organize **Find in Files** results in two windows. You can also append results from multiple searches together in the **Find Results** window. You can delete individual entries in the **Find Results** window.
-
-![C&#43;&#43; Find in Files](../ide/media/find-in-files-cpp.png "Find in Files")
-
-## Find All References
-
-To find all usages of a symbol in your codebase, place the caret in or just after the symbol, then right-click and choose **Find All References**. You can filter, sort, or group results in many different ways. Results populate incrementally. They are classified as Reads or Writes to help you see what is in your solution as opposed to system headers or other libraries.
-
-![C&#43;&#43; Find all references](../ide/media/find-all-references-results-cpp.png "Find all references")
-
-You group results by the following categories:
-
-- Project then Definition
-- Definition Only
-- Definition then Project
-- Definition then Path
-- Definition, Project then Path
-
- #### Filter Results
-
-To filter results, hover over a column and click the filtering icon that pops up. You can filter results from the first column to hide things like string and comment references that you might not want to see.
-
-![C&#43;&#43; Find all references filters](../ide/media/find-all-references-filters-cpp.png "Find all references filters")
-
-- **Confirmed Results**: Actual code references to the symbol being searched for. For example, searching for a member function called `Size` will return all references to `Size` that match the scope of the class defining `Size`.
-
-- **Disconfirmed Results**: This filter is off by default because it shows symbols whose name matches but are not actual references to the symbol you are searching for. For example, if you have two classes that each define a member function called `Size`, and you run a search for `Size` on a reference from an object of `Class1`, any references to `Size` from `Class2` appear as disconfirmed.
-
-- **Unprocessed Results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but have not yet been confirmed as actual code references. You can turn on this filter to get faster results. Just be aware that some results might not be actual references.
-
- #### Sort Results
-
-You can sort results by any column by clicking on that column. You can swap between ascending/descending order by clicking the column again.
-
-## Navigation Bar
-
-You can navigate to the definition of a type in a file, or to type members, by using the **Navigation Bar** that is above the editor window.
-
-![C&#43;&#43; Navigation bar](../ide/media/navbar-cpp.png "Navigation bar")
-
 ## Go To
 
 **Go To** refers to a set of navigation features that each provide a specific kind of result based on filters you specify. 
@@ -108,9 +60,67 @@ To apply a text filter, start your search query with the filter’s correspondin
 - Go To Member: m
 - Go To Symbol: #
 
+The following example shows results from a *Go To Files* operation using the 'f' filter:
+
+![C&#43;&#43; Go To Menu](../ide/media/vs2017-go-to-results.png "Go To Menu")
+
 To see the list of text filters, type a ? followed by a space. You can also access the **Go To** commands with the **Edit** menu. This is another way to remind yourself of the main Go To keyboard shortcuts.
 
-![C&#43;&#43; Go To Menu](../ide/media/go-to-menu-cpp.png "Go To Menu")
+![C&#43;&#43; Go To Menu](../ide/media/vs2017go-to-menu-cpp.png "Go To Menu")
+
+## Find / Find in Files
+
+You can run a text search for anything in your solution with **Find (Ctrl + F)**  or **Find in Files (Ctrl + Shift + F)**.
+
+Find can be scoped to a selection, the current document, all open documents, the current project, or the entire solution. You can use regular expressions as well as plain text. It also highlights all matches automatically in the IDE.
+
+![C&#43;&#43; Find](../ide/media/find-cpp.png "Find")
+
+**Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by filetypes, and more. 
+
+![C&#43;&#43; Find in Files](../ide/media/find-in-files-cpp.png "Find in Files")
+
+You can organize **Find in Files** results in two windows. You can append results from multiple searches together. Click on a result to go to that location in the file.
+
+![C&#43;&#43; Find in Files](../ide/media/vs2017-find-in-files-results.png "Find in Files")
+
+For more information, see [Find in Files](/visualstudio/ide/find-in-files) in the Visual Studio documentation.
+
+## Find All References
+
+To find all usages of a symbol in your codebase, place the caret in or just after the symbol, then right-click and choose **Find All References**. You can filter, sort, or group results in many different ways. Results populate incrementally. They are classified as Reads or Writes to help you see what is in your solution as opposed to system headers or other libraries.
+
+![C&#43;&#43; Find all references](../ide/media/find-all-references-results-cpp.png "Find all references")
+
+You group results by the following categories:
+
+- Project then Definition
+- Definition Only
+- Definition then Project
+- Definition then Path
+- Definition, Project then Path
+
+ #### Filter Results
+
+To filter results, hover over a column and click the filtering icon that pops up. You can filter results from the first column to hide things like string and comment references that you might not want to see.
+
+![C&#43;&#43; Find all references filters](../ide/media/find-all-references-filters-cpp.png "Find all references filters")
+
+- **Confirmed Results**: Actual code references to the symbol being searched for. For example, searching for a member function called `Size` will return all references to `Size` that match the scope of the class defining `Size`.
+
+- **Disconfirmed Results**: This filter is off by default because it shows symbols whose name matches but are not actual references to the symbol you are searching for. For example, if you have two classes that each define a member function called `Size`, and you run a search for `Size` on a reference from an object of `Class1`, any references to `Size` from `Class2` appear as disconfirmed.
+
+- **Unprocessed Results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but have not yet been confirmed as actual code references. You can turn on this filter to get faster results. Just be aware that some results might not be actual references.
+
+ #### Sort Results
+
+You can sort results by any column by clicking on that column. You can swap between ascending/descending order by clicking the column again.
+
+## Navigation Bar
+
+You can navigate to the definition of a type in a file, or to type members, by using the **Navigation Bar** that is above the editor window.
+
+![C&#43;&#43; Navigation bar](../ide/media/navbar-cpp.png "Navigation bar")
 
 ## See Also
 

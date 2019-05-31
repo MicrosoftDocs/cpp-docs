@@ -25,7 +25,6 @@ The host and guests can use these IntelliSense features:
 - Symbol Search (Ctrl+T)
 - Reference Highlighting
 - Diagnostics/Errors/Squiggles
-- Completion
 
 ![C&#43;&#43; Live Share Debugging](../ide/media/live-share-debug-cpp.png "Live Share Debugging in C++")
 

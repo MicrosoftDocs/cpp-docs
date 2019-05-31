@@ -1,7 +1,7 @@
 ---
 title: "Edit and refactor C++ code in Visual Studio"
 description: "Use the C++ code editor in Visual Studio to format, navigate, understand and refactor your code."
-ms.date: "05/28/2019"
+ms.date: "05/31/2019"
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ---
 # Edit and refactor C++ code in Visual Studio
@@ -12,9 +12,9 @@ Visual Studio provides several tools to help you write, edit, and refactor your 
 
 IntelliSense is a powerful code completion tool that suggests symbols and code snippets for you as you type. C++ IntelliSense in Visual Studio runs in real time, analyzing your codebase as you update it and providing recommendations. As you type more characters, the list of recommended results narrows down.
 
-![C&#43;&#43; member list drop down](../ide/media/vs2015_cpp_statement_completion.png "vs2015_cpp_statement_completion")
+![C&#43;&#43; member list drop down](../ide/media/cpp-statement-completion.png)
 
-Some symbols are omitted automatically to help narrow down the results. For example, when accessing a class object’s members from outside the class, you will not be able to see private members by default, or protected members (if you are not in the context of a child class).
+Some symbols are omitted automatically to help narrow down the results. For example, when accessing a class object’s members from outside the class, you will not be able to see private members by default, or protected members (if you are not in the context of a child class). You can adjust the filtering by using the buttons at the bottom.
 
 After you choose the symbol from the drop-down list, you can autocomplete it with **Tab**, **Enter**, or one of the other commit characters (by default: {}[]().,:;+-*/%&|^!=?@#\). To add or remove characters from this list, 
 search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text Editor > C/C++ > Advanced** option. The **Member List Commit Characters** option enables you to customize the list with the changes you want.
@@ -22,6 +22,26 @@ search for "IntelliSense" in **Quick Launch** (Ctrl + Q) and choose the **Text E
 The **Member List Filter Mode** option controls what kinds of IntelliSense autocomplete suggestions you see. By default, it is set to **Fuzzy**. In a fuzzy search, if you have a symbol called *MyAwesomeClass*, you can type "MAC" and find the class in your autocomplete suggestions. The fuzzy algorithm sets a minimum threshold that symbols must meet to show up in the list. **Smart** filtering displays all symbols containing substrings that match what you typed. **Prefix** filtering searches for strings that begin with what you typed.
 
 For more information about C++ IntelliSense, see [Visual C++ IntelliSense](/visualstudio/ide/visual-cpp-intellisense) and [Configure a C++ project for IntelliSense](/visualstudio/ide/visual-cpp-intellisense-configuration).
+
+## IntelliCode
+
+IntelliCode is AI-assisted IntelliSense. It puts the most likely candidate at the top of your completion list. IntelliCode recommendations are based on thousands of open source projects on GitHub each with over 100 stars. When combined with the context of your code, the completion list is tailored to promote common practices.
+
+When writing C++, IntelliCode will assist when using popular libraries such as the C++ Standard Library. The context of your code is used to provide the most useful recommendations first. In the following example, the `size` member function is commonly used with the `sort` function, so it is surfaced to the top of the results list.
+
+![C&#43;&#43; IntelliCode](../ide/media/intellicode-cpp.png "C++ IntelliCode")
+
+::: moniker range="vs-2019"
+
+In Visual Studio 2019, IntelliCode is available as an optional component in the **C++ Desktop Development** workload. To make sure that IntelliCode is active for C++, go to **Tools** > **Options** > **IntelliCode** > **General** and set **C++ base model** to **Enabled**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+In Visual Studio 2017, IntelliCode is available as an extension in the Visual Studio Marketplace.
+
+::: moniker-end
 
 ## Predictive IntelliSense (Experimental)
 
@@ -68,7 +88,13 @@ A window at the bottom of the editor shows where each instantiation was found, a
 
 If the editor detects problems with your code, it will add colored squiggles under the problem. Red squiggles indicate code that won't compile. Green squiggles indicate other kinds of problems that might still be potentially serious. You can open the **Error List** window to get more information about the problems.
 
-For some kinds of problems as well as common coding patterns, the editor will offer a **Quick Fix**. For example, if you declare a class in a header file, Visual Studio will suggest that it can declare a definition for it in a separate .cpp file. If a quick fix is available, you will see a light bulb when you hover over the squiggle.
+For some kinds of errors, as well as common coding patterns, the editor will offer a **Quick Fix** in the form of a light bulb that appears when you hover over the squiggle. Click the down arrow to see the suggestions. 
+
+In the following example, a `vector` was declared but no definition was found, so the editor offers to include the necessary header file:
+
+![C&#43;&#43; quick fix](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
+
+The editor also offers Quick Fixes for some refactoring opportunities. For example, if you declare a class in a header file, Visual Studio will offer to create a definition for it in a separate .cpp file. 
 
 ![C&#43;&#43; quick fix](../ide/media/quick-fix.png "C++ Quick Fix")
 
@@ -77,26 +103,6 @@ For some kinds of problems as well as common coding patterns, the editor will of
 Whenever you make a change to a file, a yellow bar appears on the left to indicate that unsaved changes were made. When you save the file, the bar turns green. The green and yellow bars are preserved as long as the document is open in the editor. They represent the changes that were made since you last opened the document.
 
 ![C&#43;&#43; change tracking](../ide/media/change-tracking-cpp.png "Change tracking")
-
-## IntelliCode
-
-IntelliCode is AI-assisted IntelliSense. It puts the most likely candidate at the top of your completion list. IntelliCode recommendations are based on thousands of open source projects on GitHub each with over 100 stars. When combined with the context of your code, the completion list is tailored to promote common practices.
-
-When writing C++, IntelliCode will assist when using popular libraries such as the C++ Standard Library. The context of your code is used to provide the most useful recommendations first. In the following example, the `size` member function is commonly used with the `sort` function, so it is surfaced to the top of the results list.
-
-![C&#43;&#43; IntelliCode](../ide/media/intellicode-cpp.png "C++ IntelliCode")
-
-::: moniker range="vs-2019"
-
-In Visual Studio 2019, IntelliCode is available as an optional component in the **C++ Desktop Development** workload. To make sure that IntelliCode is active for C++, go to **Tools** > **Options** > **IntelliCode** > **General** and set **C++ base model** to **Enabled**.
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-In Visual Studio 2017, IntelliCode is available as an extension in the Visual Studio Marketplace.
-
-::: moniker-end
 
 ## Move code
 
@@ -110,13 +116,13 @@ A snippet is a predefined piece of source code. Right-click on a single point or
 
 ##  Add Class
 
-Add a new class from the **Project** menu by using the Class Wizard.
+Add a new class from the **Project** menu, or from the context menu in **Solution Explorer**:
 
-![Add New Class in C&#43;&#43;](../ide/media/vs2015_cpp_add_class.png "vs2015_cpp_add_class")
+![Add New Class in C&#43;&#43;](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
 
 You can also use Class Wizard to modify or examine an existing class.
 
-![C&#43;&#43; Class Wizard](../ide/media/vs2015_cpp_class_wizard.png "vs2015_cpp_class_wizard")
+![C&#43;&#43; Class Wizard](../ide/media/vs2017-class-wizard.png)
 
 For more information, see [Adding Functionality with Code Wizards (C++)](../ide/adding-functionality-with-code-wizards-cpp.md).
 
