@@ -5359,7 +5359,7 @@ int main() {
 
 ## <a name="random_shuffle"></a>  random_shuffle
 
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/p/?linkid=397954).
+The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
 ## <a name="remove"></a>  remove
 

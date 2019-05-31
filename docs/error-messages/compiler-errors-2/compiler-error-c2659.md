@@ -9,7 +9,7 @@ ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
 
 'operator' : function as left operand
 
-A function was on the left side of the specified operator. The most common reason for this error is that the compiler has parsed the identifier on the left side of the operator as a function when the developer intended it to be a variable. For more information, see Wikipedia article [Most vexing parse](http://en.wikipedia.org/wiki/Most_vexing_parse). This example shows a function declaration and a variable definition that are easily confused:
+A function was on the left side of the specified operator. The most common reason for this error is that the compiler has parsed the identifier on the left side of the operator as a function when the developer intended it to be a variable. For more information, see Wikipedia article [Most vexing parse](https://en.wikipedia.org/wiki/Most_vexing_parse). This example shows a function declaration and a variable definition that are easily confused:
 
 ```
 // C2659a.cpp
