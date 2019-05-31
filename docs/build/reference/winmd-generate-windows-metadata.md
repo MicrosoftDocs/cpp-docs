@@ -23,7 +23,7 @@ The linker generates only the .winmd file, but not the binary executable file.
 
 ## Remarks
 
-The **/WINMD** linker option is used for UWP apps and Windows runtime components to control the creation of a Windows Runtime metadata (.winmd) file. A .winmd file is a kind of DLL that contains metadata for Windows runtime types and, in the case of runtime components, the implementations of those types. The metadata follows the [ECMA-335](http://www.ecma-international.org/publications/standards/Ecma-335.htm) standard.
+The **/WINMD** linker option is used for UWP apps and Windows runtime components to control the creation of a Windows Runtime metadata (.winmd) file. A .winmd file is a kind of DLL that contains metadata for Windows runtime types and, in the case of runtime components, the implementations of those types. The metadata follows the [ECMA-335](https://www.ecma-international.org/publications/standards/Ecma-335.htm) standard.
 
 By default, the output file name has the form *binaryname*.winmd. To specify a different file name, use the [/WINMDFILE](winmdfile-specify-winmd-file.md) option.
 

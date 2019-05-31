@@ -101,12 +101,12 @@ As with the Auto-Parallelizer, you can specify the [/Qvec-report (Auto-Vectorize
 
 For more information about reason codes and messages, see [Vectorizer and Parallelizer Messages](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
-For an example showing how the vectorizer works in practice, see [Project Austin Part 2 of 6: Page Curling](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
+For an example showing how the vectorizer works in practice, see [Project Austin Part 2 of 6: Page Curling](https://devblogs.microsoft.com/cppblog/project-austin-part-2-of-6-page-curling/)
 
 ## See also
 
 [loop](../preprocessor/loop.md)<br/>
-[Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
+[Parallel Programming in Native Code](https://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
 [/Qpar (Auto-Parallelizer)](../build/reference/qpar-auto-parallelizer.md)<br/>
 [/Qpar-report (Auto-Parallelizer Reporting Level)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (Auto-Vectorizer Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>

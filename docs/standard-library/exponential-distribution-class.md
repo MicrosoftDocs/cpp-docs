@@ -63,7 +63,7 @@ The property member function `param()` sets or returns the `param_type` stored d
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/p/?linkid=401098).
+For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](https://go.microsoft.com/fwlink/p/?linkid=401098).
 
 ## Example
 
