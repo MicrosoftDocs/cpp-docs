@@ -1,12 +1,14 @@
 ---
 title: "Configure Linux projects to use Address Sanitizer"
 description: "Describes how to configure C++ Linux projects in Visual Studio to use Address Sanitizer."
-ms.date: "05/29/2019"
+ms.date: "05/31/2019"
 ---
 
 # Configure Linux projects to use Address Sanitizer
 
 In Visual Studio 2019 version 16.1, AddressSanitizer (ASan) support is integrated into Linux projects. You can enable ASan for MSBuild-based Linux projects as well as CMake projects. It works on remote Linux systems and on Windows Subsystem for Linux (WSL).
+
+## About ASan
 
 ASan is a runtime memory error detector for C/C++ that catches the following errors:
 
@@ -23,9 +25,31 @@ When ASan detects an error it stops execution immediately. When you run an ASan-
 
 You can also view the full ASan output (including where the corrupted memory was allocated/deallocated) in the Debug pane of the output window.
 
-## Getting started with ASan in Visual Studio
+## Enable ASan for MSBuild-based Linux projects
 
-To use ASan in Visual Studio, you have to install the debug symbols for ASan (libasan-dbg) on your remote Linux machine or WSL installation. The version of libasan-dbg that you load depends on the version of GCC you have installed on your Linux machine:
+To enable ASan for MSBuild-based Linux projects,right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags and requires recompilation in order to work.
+
+![Enable ASan for an MSBuild project](media/msbuild-asan-prop-page.png)
+
+You can pass optional ASan runtime flags by navigating to **Configuration Properties** > **Debugging** > **AddressSanitizer Runtime Flags**. Click the down arrow to add or remove flags.
+
+![Configure ASan runtime flags](media/msbuild-asan-runtime-flags.png)
+
+## Enable ASan for Visual Studio CMake projects
+
+To enable ASan for CMake, right click on the CMakeLists.txt file in **Solution Explorer** and choose open the **CMake Settings for Project**.
+
+Make sure you have a Linux configuration (for example **Linux-Debug**) selected in the left pane of the dialog:
+
+![Linix Debug Configuration](media/linux-debug-configuration.png)
+
+The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by semicolons.
+
+![Linix Debug Configuration](media/cmake-settings-asan-options.png)
+
+## Install the ASan debug symbols
+
+To enable the ASan diagnosticsa, you have to install its debug symbols (libasan-dbg) on your remote Linux machine or WSL installation. The version of libasan-dbg that you load depends on the version of GCC you have installed on your Linux machine:
 
 |**ASan version**|**GCC version**|
 | --- | --- |
@@ -55,14 +79,3 @@ sudo apt-get install libasan4-dbg
 
 If ASan is enabled, Visual Studio prompts you at the top of the Debug pane of the output window to install the ASan debug symbols.
 
-## Enable ASan for MSBuild-based Linux projects
-
-To enable ASan for MSBuild-based Linux projects,right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags and requires recompilation in order to work.
-
-[image]
-
-You can pass optional ASan runtime flags by navigating to **Configuration Properties** > **Debugging** > **AddressSanitizer Runtime Flags**.
-
-## Enable ASan for Visual Studio CMake projects
-
-To enable ASan for CMake configurations targeting a remote Linux machine or WSL, Open the **CMake Settings Editor** and go to **General**. Check the option to enable AddressSanizer, and specify the runtime flags.
