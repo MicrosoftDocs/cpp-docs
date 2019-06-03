@@ -102,7 +102,7 @@ To determine if an attached bitmap is a DIB section, call [IsDibSection](#isdibs
 > [!NOTE]
 > Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.
 
-`CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle).
+`CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#fromhandle).
 
 ## Example
 
