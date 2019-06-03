@@ -92,7 +92,7 @@ inline BOOL CreateManagedControl(
 ### Parameters
 
 *pType*<br/>
-The data type of the control to be created. Must be a [Type](https://msdn.microsoft.com/library/system.type) data type.
+The data type of the control to be created. Must be a [Type](/dotnet/api/system.type) data type.
 
 *dwStyle*<br/>
 The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.
@@ -120,7 +120,7 @@ If successful, returns a nonzero value. If unsuccessful, returns zero.
 
 This method instantiates a .NET Framework Windows Forms control in an MFC container.
 
-The first overload of the method accepts a .NET Framework data type *pType* so that MFC can instantiate a new object of this type. *pType* must be a [Type](https://msdn.microsoft.com/library/system.type) data type.
+The first overload of the method accepts a .NET Framework data type *pType* so that MFC can instantiate a new object of this type. *pType* must be a [Type](/dotnet/api/system.type) data type.
 
 The second overload of the method creates a Windows Forms control based on the `TManagedControl` template parameter of the `CWinFormsControl` class. The size and position of the control is based on the `RECT` structure passed to the method. Only *dwStyle* matters for the styles.
 

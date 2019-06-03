@@ -176,7 +176,7 @@ A pointer to a string containing the name of the directory to create.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -214,7 +214,7 @@ A pointer to a DWORD that contains the following information:
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -252,7 +252,7 @@ A pointer to a DWORD that contains the following information:
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -312,7 +312,7 @@ The context identifier for the file retrieval. See **Remarks** for more informat
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -402,7 +402,7 @@ The context identifier for placing the file. See **Remarks** for more informatio
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -425,7 +425,7 @@ A pointer to a string containing the file name to remove.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -446,7 +446,7 @@ A pointer to a string containing the directory to be removed.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -474,7 +474,7 @@ A pointer to a string containing the file's new name.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -495,7 +495,7 @@ A pointer to a string containing the name of the directory.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 

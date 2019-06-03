@@ -695,7 +695,7 @@ The index of the item, based on its order in the header control. The index count
 
 ### Remarks
 
-This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb775355), as described in the Windows SDK. It is provided to support header item ordering.
+This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](/windows/desktop/controls/hdm-ordertoindex), as described in the Windows SDK. It is provided to support header item ordering.
 
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin
 

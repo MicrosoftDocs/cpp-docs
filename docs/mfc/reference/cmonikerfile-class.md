@@ -97,7 +97,7 @@ A pointer to a file exception. In the event of an error, it will be set to the c
 
 ### Return Value
 
-A pointer to the bind context [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) interface, see the Windows SDK.
+A pointer to the bind context [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) interface, see the Windows SDK.
 
 ### Remarks
 

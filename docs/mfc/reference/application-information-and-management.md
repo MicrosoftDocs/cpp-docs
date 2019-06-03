@@ -91,7 +91,7 @@ Specifies an additional flag that controls the creation of the thread. This flag
 - **0** Start the thread immediately after creation.
 
 *lpSecurityAttrs*<br/>
-Points to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread. If NULL, the same security attributes as the creating thread will be used. For more information on this structure, see the Windows SDK.
+Points to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies the security attributes for the thread. If NULL, the same security attributes as the creating thread will be used. For more information on this structure, see the Windows SDK.
 
 ### Return Value
 

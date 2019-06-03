@@ -1,6 +1,6 @@
 ---
 title: "Allocating GDI Resources"
-ms.date: "11/04/2016"
+ms.date: "06/03/2019"
 helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
 ---
@@ -9,7 +9,7 @@ ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
 This article explains how to allocate and deallocate the Windows graphics device interface (GDI) objects needed for printing.
 
 > [!NOTE]
->  For more information, see the GDI+ SDK documentation at: [https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).
+>  For more information, see the [GDI+ SDK documentation](/windows/desktop/gdiplus/-gdiplus-gdi-start).
 
 Suppose you need to use certain fonts, pens, or other GDI objects for printing, but not for screen display. Because of the memory they require, it's inefficient to allocate these objects when the application starts up. When the application isn't printing a document, that memory might be needed for other purposes. It's better to allocate them when printing begins, and then delete them when printing ends.
 

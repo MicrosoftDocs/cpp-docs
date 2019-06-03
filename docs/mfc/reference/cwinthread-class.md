@@ -112,7 +112,7 @@ Specifies an additional flag that controls the creation of the thread. This flag
 Specifies the size in bytes of the stack for the new thread. If **0**, the stack size defaults to the same size as that of the process's primary thread.
 
 *lpSecurityAttrs*<br/>
-Points to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread.
+Points to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies the security attributes for the thread.
 
 ### Return Value
 

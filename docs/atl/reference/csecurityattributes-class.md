@@ -88,7 +88,7 @@ This method is used by the constructor to initialize the `CSecurityAttributes` o
 ## See also
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
-[SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>
+[SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
 [security descriptor](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

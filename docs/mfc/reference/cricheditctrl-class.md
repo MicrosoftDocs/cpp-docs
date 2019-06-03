@@ -1200,7 +1200,7 @@ The character index of the line specified in *nLine* or -1 if the specified line
 
 The character index is the number of characters from the beginning of the rich edit control to the specified line.
 
-For more information, see [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) in the Windows SDK.
+For more information, see [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) in the Windows SDK.
 
 ### Example
 
