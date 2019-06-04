@@ -6,8 +6,6 @@ helpviewer_keywords: ["to_chars_result class", "to_chars_result structure"]
 ---
 # to_chars_result Structure
 
-No description.
-
 ## Syntax
 
 ```cpp
@@ -16,13 +14,3 @@ struct to_chars_result {
     error_code ec;
 };
 ```
-
-## Requirements
-
-**Header:** \<utility>
-
-**Namespace:** std
-
-## See also
-
-[\<utility>](../standard-library/utility.md)<br/>

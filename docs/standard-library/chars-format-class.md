@@ -12,19 +12,9 @@ Floating-point format for primitive numerical conversion.
 
 ```cpp
 enum class chars_format {
-scientific = unspecified ,
-fixed = unspecified ,
-hex = unspecified ,
-general = fixed | scientific
+    scientific = unspecified ,
+    fixed = unspecified ,
+    hex = unspecified ,
+    general = fixed | scientific
 };
 ```
-
-## Requirements
-
-**Header:** \<utility>
-
-**Namespace:** std
-
-## See also
-
-[\<utility>](../standard-library/utility.md)

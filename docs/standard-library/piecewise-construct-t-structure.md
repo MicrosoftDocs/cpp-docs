@@ -15,13 +15,3 @@ struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
 
 inline constexpr piecewise_construct_t piecewise_construct{};
 ```
-
-## Requirements
-
-**Header:** \<utility>
-
-**Namespace:** std
-
-## See also
-
-[\<utility>](../standard-library/utility.md)<br/>

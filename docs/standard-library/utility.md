@@ -9,11 +9,11 @@ ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
 
 Defines C++ Standard Library types, functions, and operators that help to construct and manage pairs of objects, which are useful whenever two objects need to be treated as if they were one.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <utility>
-```
+**Header:** \<utility>
+
+**Namespace:** std
 
 ## Remarks
 
@@ -22,9 +22,11 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 > [!NOTE]
 > The \<utility> header uses the statement `#include <initializer_list>`. It also refers to `class tuple` as defined in \<tuple>.
 
+## Members
+
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[chars_format](../standard-library/chars-format-class.md)|Floating-point format for primitive numerical conversion.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|A class that wraps the type of a `pair` element.|
@@ -32,7 +34,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Objects
 
-|Object|Description|
+|||
 |-|-|
 |[index_sequence](../standard-library/utility-functions.md#index_sequence)||
 |[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)||
@@ -41,7 +43,7 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[as_const](../standard-library/utility-functions.md#asconst)|Returns type.|
 |[declval](../standard-library/utility-functions.md#declval)|Shorthand expression evaluation.|
@@ -57,18 +59,18 @@ Pairs are widely used in the C++ Standard Library. They are required both as the
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/utility-operators.md#op_neq)|Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.|
 |[operator==](../standard-library/utility-operators.md#op_eq_eq)|Tests if the pair object on the left side of the operator is equal to the pair object on the right side.|
-|[operator<](../standard-library/utility-operators.md#op_lt)|Tests if the pair object on the left side of the operator is less than the pair object on the right side.|
+|[operator\<](../standard-library/utility-operators.md#op_lt)|Tests if the pair object on the left side of the operator is less than the pair object on the right side.|
 |[operator\<=](../standard-library/utility-operators.md#op_gt_eq)|Tests if the pair object on the left side of the operator is less than or equal to the pair object on the right side.|
 |[operator>](../standard-library/utility-operators.md#op_gt)|Tests if the pair object on the left side of the operator is greater than the pair object on the right side.|
 |[operator>=](../standard-library/utility-operators.md#op_gt_eq)|Tests if the pair object on the left side of the operator is greater than or equal to the pair object on the right side.|
 
 ### Structs
 
-|Structure|Description|
+|||
 |-|-|
 |[from_chars_result](../standard-library/from-chars-result-structure.md)|A struct used for `from_chars`.|
 |[identity](../standard-library/identity-structure.md)|A struct that provides a type definition as the template parameter.|

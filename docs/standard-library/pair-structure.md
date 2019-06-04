@@ -51,13 +51,13 @@ template<class T1, class T2>
 
 ### Parameters
 
-*Val1*<br/>
+*Val1*\
 Value initializing the first element of `pair`.
 
-*Val2*<br/>
+*Val2*\
 Value initializing the second element of `pair`.
 
-*Right*<br/>
+*Right*\
 A pair whose values are to be used to initialize the elements of another pair.
 
 ## Return Value
@@ -151,7 +151,9 @@ int main( )
            << " is already in m1,\n so the insertion failed." << endl;
    }
 }
-/* Output:
+```
+
+```Output
 The pair p1 is: ( 10, 0.011 ).
 The pair p2 is: ( 10, 0.222 ).
 The pair p3 is: ( 10, 0.011 ).
@@ -160,15 +162,4 @@ The element (4,40) was inserted successfully in m1.
 The element with a key value of
 ( (pr2.first) -> first ) = 1 is already in m1,
 so the insertion failed.
-*/
 ```
-
-## Requirements
-
-**Header:** \<utility>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

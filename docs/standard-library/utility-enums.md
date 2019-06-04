@@ -9,9 +9,5 @@ helpviewer_keywords: ["std::chars_format [C++]"]
 ## <a name="chars_format"></a> chars_format
 
 ```cpp
-    enum class chars_format { scientific = unspecified, fixed = unspecified, hex = unspecified, general = fixed | scientific };
+enum class chars_format { scientific = unspecified, fixed = unspecified, hex = unspecified, general = fixed | scientific };
 ```
-
-## See also
-
-[\<utility>](../standard-library/utility.md)<br/>
