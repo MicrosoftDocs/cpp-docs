@@ -29,15 +29,21 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 ## Members
 
-|Constructor|Description|
+### Constructors
+
+|||
 |-|-|
 |[bitset](#bitset)|Constructs an object of class `bitset\<N>` and initializes the bits to zero, to some specified value, or to values obtained from characters in a string.|
 
-|Typedef|Description|
+### Typedefs
+
+|||
 |-|-|
 |[element_type](#element_type)|A type that is a synonym for the data type **bool** and can be used to reference element bits in a `bitset`.|
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
 |[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **true**.|
 |[any](#any)|The member function tests whether any bit in the sequence is set to 1.|
@@ -52,11 +58,15 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[to_ullong](#to_ullong)|Returns the sum of the bit values in the `bitset` as an **unsigned long long**.|
 |[to_ulong](#to_ulong)|Converts a `bitset` object to the **unsigned long** that would generate the sequence of bits contained if used to initialize the `bitset`.|
 
-|Class|Description|
+### Classes
+
+|||
 |-|-|
 |[reference](#reference)|A proxy class that provides references to bits contained in a `bitset` that is used to access and manipulate the individual bits as a helper class for the `operator[]` of class `bitset`.|
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
 |[operator!=](#op_neq)|Tests a target `bitset` for inequality with a specified `bitset`.|
 |[operator&=](#op_and_eq)|Performs a bitwise combination of bitsets with the logical `AND` operation.|
@@ -70,9 +80,11 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[operator&#124;=](#op_or_eq)|Performs a bitwise combination of bitsets with the inclusive `OR` operation.|
 |[operator~](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
-|Structure|Description|
+### Structures
+
+|||
 |-|-|
-|[hash](#hash)|TBD|
+|[hash](#hash)||
 
 ## Requirements
 

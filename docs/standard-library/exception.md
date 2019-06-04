@@ -17,13 +17,17 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ## Members
 
-|Typedef|Description|
+### Typedefs
+
+|||
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|A type that describes a pointer to an exception.|
 |[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|A type that describes a pointer to a function suitable for use as a `terminate_handler`.|
 |[unexpected_handler](../standard-library/exception-typedefs.md#unexpected_handler)|A type that describes a pointer to a function suitable for use as an `unexpected_handler`.|
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Obtains a pointer to the current exception.|
 |[get_terminate](../standard-library/exception-functions.md#get_terminate)|Obtains the current `terminate_handler` function.|
@@ -38,7 +42,9 @@ Defines several types and functions related to the handling of exceptions. Excep
 |[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Returns **true** only if a thrown exception is being currently processed.|
 |[unexpected](../standard-library/exception-functions.md#unexpected)|Calls an unexpected handler.|
 
-|Class|Description|
+### Classes
+
+|||
 |-|-|
 |[bad_exception Class](../standard-library/bad-exception-class.md)|The class describes an exception that can be thrown from an `unexpected_handler`.|
 |[exception Class](../standard-library/exception-class.md)|The class serves as the base class for all exceptions thrown by certain expressions and by the C++ Standard Library.|

@@ -13,7 +13,7 @@ Gets the true address of an object.
 
 ```cpp
 template <class T>
-T* addressof(T& Val);
+    T* addressof(T& Val);
 ```
 
 ### Parameters
@@ -93,8 +93,7 @@ Creates a `shared_ptr` to objects that are allocated and constructed for a given
 
 ```cpp
 template <class Type, class Allocator, class... Types>
-shared_ptr<Type>
-    allocate_shared(Allocator Alloc, Types&&... Args);
+    shared_ptr<Type> allocate_shared(Allocator Alloc, Types&&... Args);
 ```
 
 ### Parameters

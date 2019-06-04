@@ -94,38 +94,46 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ## Members
 
-|Constructor|Description|
+### Constructors
+
+|||
 |-|-|
 |[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|
 |[shared_ptr::~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
 
-|Typedef|Description|
+### Typedefs
+
+|||
 |-|-|
 |[element_type](#element_type)|The type of an element.|
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
-|[allocate_shared](#allocate_shared)|TBD|
-|[const_pointer_cast](#const_pointer_cast)|TBD
-|[dynamic_pointer_cast](#dynamic_pointer_cast)|TBD|
+|[allocate_shared](#allocate_shared)||
+|[const_pointer_cast](#const_pointer_cast)||
+|[dynamic_pointer_cast](#dynamic_pointer_cast)||
 |[get](#get)|Gets address of owned resource.|
-|[get_deleter](#get_deleter)|TBD|
-|[make_shared](#make_shared)|TBD|
+|[get_deleter](#get_deleter)||
+|[make_shared](#make_shared)||
 |[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
-|[reinterpret_pointer_cast](#reinterpret_pointer_cast)|TBD|
+|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
 |[reset](#reset)|Replace owned resource.|
-|[static_pointer_cast](#static_pointer_cast)|TBD|
+|[static_pointer_cast](#static_pointer_cast)||
 |[swap](#swap)|Swaps two `shared_ptr` objects.|
 |[unique](#unique)|Tests if owned resource is unique.|
 |[use_count](#use_count)|Counts numbers of resource owners.|
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
 |[shared_ptr::operator bool](#op_bool)|Tests if an owned resource exists.|
 |[shared_ptr::operator*](#op_star)|Gets the designated value.|
 |[shared_ptr::operator=](#op_eq)|Replaces the owned resource.|
 |[shared_ptr::operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
-|[shared_ptr::operator&lt;&lt;](#op_arrowarrow)|TBD|
+|[shared_ptr::operator&lt;&lt;](#op_arrowarrow)||
 
 ## Requirements
 

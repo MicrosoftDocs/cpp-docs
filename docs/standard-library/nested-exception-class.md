@@ -22,11 +22,15 @@ class nested_exception {
 
 ## Members
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
 |[operator=](#op_as)||
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
 |[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
 |[nested_ptr](#nested_ptr)|Returns the stored exception.|

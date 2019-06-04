@@ -6,11 +6,7 @@ ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
 ---
 # &lt;limits&gt; enums
 
-|||
-|-|-|
-|[float_denorm_style](#float_denorm_style)|[float_round_style](#float_round_style)|
-
-## <a name="float_denorm_style"></a>  float_denorm_style Enumeration
+## <a name="float_denorm_style"></a> float_denorm_style Enumeration
 
 The enumeration describes the various methods that an implementation can choose for representing a denormalized floating-point value — one too small to represent as a normalized value:
 
@@ -35,7 +31,7 @@ The enumeration returns:
 
 See [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm) for an example in which the values of this enumeration may be accessed.
 
-## <a name="float_round_style"></a>  float_round_style Enumeration
+## <a name="float_round_style"></a> float_round_style Enumeration
 
 The enumeration describes the various methods that an implementation can choose for rounding a floating-point value to an integer value.
 

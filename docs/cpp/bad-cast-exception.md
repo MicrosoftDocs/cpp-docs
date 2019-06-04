@@ -107,8 +107,6 @@ bad_cast& operator=(const bad_cast&) noexcept;
 
 ## <a name="what"></a> what
 
-TBD
-
 ```cpp
 const char* what() const noexcept override;
 ```

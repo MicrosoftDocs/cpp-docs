@@ -23,11 +23,15 @@ template <class T>
 
 ## Members
 
-|Constructor|Description|
+### Constructors
+
+|||
 |-|-|
 |[default_delete](#default_delete)|The constructor for objects of type `default_delete`.|
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
 |[operator()](#op_paren)|A reference operator to access `default_delete`.|
 

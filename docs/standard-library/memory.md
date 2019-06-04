@@ -16,7 +16,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ## Members
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|
@@ -61,9 +63,11 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[uninitialized_move_n](../standard-library/memory-functions.md#uninitialized_move_n)|Shorthand `uninitialized_move` method.|
 |[uninitialized_value_construct](../standard-library/memory-functions.md#uninitialized_value_construct)|Shorthand `uninitialized_value_construct` method.|
 |[uninitialized_value_construct_n](../standard-library/memory-functions.md#uninitialized_value_construct_n)|Shorthand `uninitialized_value_construct` method.|
-|[uses_allocator_v](../standard-library/memory-functions.md#uses_allocator_v)|TBD|
+|[uses_allocator_v](../standard-library/memory-functions.md#uses_allocator_v)||
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
 |[operator!=](../standard-library/memory-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|
 |[operator==](../standard-library/memory-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|
@@ -73,7 +77,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[operator>](../standard-library/memory-operators.md#op_gt)|Tests for one object being greater than a second object of a specified class.|
 |[operator<<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` inserter.|
 
-|Class|Description|
+### Classes
+
+|||
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Describes an object that determines all the information that is needed by an allocator-enabled container.|
@@ -86,7 +92,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[unique_ptr](../standard-library/unique-ptr-class.md)|Stores a pointer to an owned object. The pointer is owned by no other `unique_ptr`. The `unique_ptr` is destroyed when the owner is destroyed.|
 |[weak_ptr](../standard-library/weak-ptr-class.md)|Wraps a weakly linked pointer.|
 
-|Structure|Description|
+### Structures
+
+|||
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
@@ -94,7 +102,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|
 |[uses_allocator](../standard-library/allocator-class.md#uses_allocator)||
 
-|Specialization|Description|
+### Specializations
+
+|||
 |-|-|
 |[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type void, defining the only the member types that make sense in this specialized context.|
 

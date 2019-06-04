@@ -35,7 +35,7 @@ Creates an [exception_ptr](../standard-library/exception-typedefs.md#exception_p
 
 ```cpp
 template <class E>
-exception_ptr make_exception_ptr(E Except);
+    exception_ptr make_exception_ptr(E Except);
 ```
 
 ### Parameters

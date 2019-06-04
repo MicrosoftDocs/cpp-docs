@@ -25,22 +25,28 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ## Members
 
-|Typedef|Description|
+### Typedefs
+
+|||
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
-|Function|Description|
+### Functions
+
+|||
 |-|-|
 |[default_error_condition](#default_error_condition)|Stores the error code value for an error condition object.|
 |[equivalent](#equivalent)|Returns a value that specifies whether error objects are equivalent.|
-|[generic_category](#generic)|TBD|
+|[generic_category](#generic)||
 |[message](#message)|Returns the name of the specified error code.|
 |[name](#name)|Returns the name of the category.|
-|[system_category](#system)|TBD|
+|[system_category](#system)||
 
-|Operator|Description|
+### Operators
+
+|||
 |-|-|
-|[operator=](#op_as)|TBD|
+|[operator=](#op_as)||
 |[operator==](#op_eq_eq)|Tests for equality between `error_category` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|
 |[operator<](#op_lt)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|
