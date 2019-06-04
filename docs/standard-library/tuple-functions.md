@@ -7,13 +7,6 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 ---
 # &lt;tuple&gt; functions
 
-||||
-|-|-|-|
-|[apply](#apply)|[forward_as_tuple](#forward)|[get](#get)|
-|[make_from_tuple](#make_from_tuple)|[make_tuple](#make_tuple)|[swap](#swap)|
-|[tie](#tie)|[tuple_cat](#tuple_cat)|[tuple_element_t](#tuple_element_t)|
-|[tuple_size_v](#tuple_size_v)|||
-
 ## <a name="apply"></a> apply
 
 ```cpp
@@ -39,7 +32,7 @@ Returns `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
 
 Constructs a tuple of references to the arguments in *t* suitable for forwarding as arguments to a function.
 
-## <a name="get"></a>  get
+## <a name="get"></a> get
 
 Gets an element from a `tuple` object, by index or (in C++14) by type.
 
@@ -73,17 +66,17 @@ template <class T, class... Types>
 
 ### Parameters
 
-*Index*<br/>
+*Index*\
 The index of the element to get.
 
-*Types*<br/>
+*Types*\
 The sequence of types declared in the tuple, in declaration order.
 
-*T*<br/>
+*T*\
 The type of the element to get.
 
-*Tuple*<br/>
-A std::tuple that contains any number of elements.
+*Tuple*\
+A `std::tuple` that contains any number of elements.
 
 ### Remarks
 
@@ -120,7 +113,7 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-## <a name="make_from_tuple"></a>  make_from_tuple
+## <a name="make_from_tuple"></a> make_from_tuple
 
 ```cpp
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
@@ -130,7 +123,7 @@ template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 
 Same as `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
 
-## <a name="make_tuple"></a>  make_tuple
+## <a name="make_tuple"></a> make_tuple
 
 Makes a `tuple` from element values.
 
@@ -141,10 +134,10 @@ template <class T1, class T2, ..., class TN>
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The type of the Nth function parameter.
 
-*tN*<br/>
+*tN*\
 The value of the Nth function parameter.
 
 ### Remarks
@@ -192,7 +185,7 @@ int main() {
 
 ```cpp
 template <class... Types>
-void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
+    void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
 ```
 
 ## <a name="tie"></a> tie
@@ -206,7 +199,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The base type of the Nth tuple element.
 
 ### Remarks
@@ -268,16 +261,12 @@ A tuple object constructed by initializing the each type element.
 
 ```cpp
 template <size_t I, class T>
-using tuple_element_t = typename tuple_element<I, T>::type;
+    using tuple_element_t = typename tuple_element<I, T>::type;
 ```
 
 ## <a name="tuple_size_v"></a> tuple_size_v
 
 ```cpp
 template <class T>
-inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+    inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 ```
-
-## See also
-
-[\<tuple>](../standard-library/tuple.md)<br/>

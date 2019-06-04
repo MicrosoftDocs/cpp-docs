@@ -9,15 +9,17 @@ ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
 
 Defines a template `tuple` whose instances hold objects of varying types.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <tuple>
-```
+**Header:** \<tuple>
 
-### Classes (and Structs)
+**Namespace:** std
 
-|Class (or Struct)|Description|
+## Members
+
+### Classes and Structs
+
+|||
 |-|-|
 |[tuple Class](../standard-library/tuple-class.md)|Wraps a fixed-length sequence of elements.|
 |[tuple_element Class](../standard-library/tuple-element-class-tuple.md)|Wraps the type of a `tuple` element.|
@@ -26,14 +28,14 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Objects
 
-|Object|Description|
+|||
 |-|-|
 |[tuple_element_t](../standard-library/tuple-functions.md#tuple_element_t)||
 |[tuple_size_v](../standard-library/tuple-functions.md#tuple_size_v)||
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/tuple-operators.md#op_eq_eq)|Comparison of `tuple` objects, equal.|
 |[operator!=](../standard-library/tuple-operators.md#op_neq)|Comparison of `tuple` objects, not equal.|
@@ -44,7 +46,7 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[apply](../standard-library/tuple-functions.md#apply)|Calls a function with a tuple.|
 |[forward_as_tuple](../standard-library/tuple-functions.md#forward)|Constructs a tuple of references.|

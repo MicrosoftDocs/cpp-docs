@@ -48,22 +48,22 @@ template <class T1, class T2>
 
 ### Parameters
 
-*Index*<br/>
+*Index*\
 The index of the designated element.
 
-*Tuple*<br/>
+*Tuple*\
 The type of the tuple.
 
-*Elem*<br/>
+*Elem*\
 The type of an array element.
 
-*Size*<br/>
+*Size*\
 The size of the array.
 
-*T1*<br/>
+*T1*\
 The type of the first element in a pair.
 
-*T2*<br/>
+*T2*\
 The type of the second element in a pair.
 
 ## Remarks
@@ -173,7 +173,3 @@ int main() {
 **Header:** \<utility> (for pair specializations)
 
 **Namespace:** std
-
-## See also
-
-[tuple ](../standard-library/tuple-class.md)<br/>

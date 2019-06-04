@@ -50,22 +50,22 @@ template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 
 ### Parameters
 
-*Tuple*<br/>
+*Tuple*\
 The type of the tuple.
 
-*Elem*<br/>
+*Elem*\
 The type of the array elements.
 
-*Size*<br/>
+*Size*\
 The size of the array.
 
-*T1*<br/>
+*T1*\
 The type of the first member of the pair.
 
-*T2*<br/>
+*T2*\
 The type of the second member of the pair.
 
-*Types*<br/>
+*Types*\
 The types of the tuple elements.
 
 ## Remarks
@@ -114,9 +114,3 @@ int main()
 **Header:** \<utility> (for pair specialization)
 
 **Namespace:** std
-
-## See also
-
-[\<tuple>](../standard-library/tuple.md)<br/>
-[tuple](../standard-library/tuple-class.md)<br/>
-[tuple_element Class](../standard-library/tuple-element-class-tuple.md)<br/>
