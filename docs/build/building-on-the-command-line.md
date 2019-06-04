@@ -2,13 +2,13 @@
 title: "Use the MSVC toolset from the command line - Visual Studio"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "12/10/2018"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
 # Use the MSVC toolset from the command line
 
-You can build C and C++ applications on the command line by using tools that are included in Visual Studio. You can also download the compiler toolset as a standalone package from [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=875721).
+You can build C and C++ applications on the command line by using tools that are included in Visual Studio. You can also download the compiler toolset as a standalone package from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page. It is part of the **Build Tools for Visual Studio** package; you can choose to download only the tools you need for C++ development.
 
 ## How to use the command-line tools
 
@@ -32,13 +32,11 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x86_x64 Cross Tools Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
 - **x64_x86 Cross Tools Command Prompt** - Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
-The actual Start menu folder and shortcut names vary depending on the version of Visual Studio you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2017 installed, and you've given it an installation Nickname of *Preview*, the developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Preview)**, in a folder named **Visual Studio 2017**.
-
-If you've installed the [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=875721) (which also includes the Visual Studio 2015 Update 3 compiler toolset), only the architecture-specific native or cross tools developer command prompt options are installed, and not the general **Developer Command Prompt** shortcut.
+The actual Start menu folder and shortcut names vary depending on the version of Visual Studio you have installed, and the installation Nickname if you set one. For example, if you have Visual Studio 2019 installed, and you've given it an installation Nickname of *Preview*, the developer command prompt shortcut is named **Developer Command Prompt for VS 2019**, in a folder named **Visual Studio 2019**.
 
 ## <a name="developer_command_prompt"></a> To open a developer command prompt window
 
-1. On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2017**. In some older versions of Visual Studio, the shortcuts are in a subfolder called **Visual Studio Tools**.
+1. On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2019**. In some older versions of Visual Studio, the shortcuts are in a subfolder called **Visual Studio Tools**.
 
 1. In the folder, choose the **Developer Command Prompt** for your version of Visual Studio. This shortcut starts a developer command prompt window that uses the default build architecture of 32-bit, x86-native tools to build 32-bit, x86-native code. If you prefer a non-default build architecture, choose one of the native or cross tools command prompts to specify the host and target architecture.
 
@@ -46,11 +44,11 @@ An even faster way to open a developer command prompt window is to enter *develo
 
 ## <a name="developer_command_file_locations"></a> Developer command file locations
 
-If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2017\\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
+If you prefer to set the build architecture environment in an existing command prompt window, you can use one of the command files (batch files) created by the installer to set the required environment. We only recommend you do this in a new command prompt window, and we do not recommend you later switch environments in the same command window. The location of these files depends on the version of Visual Studio you have installed, and on location and naming choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit computer is in \Program Files (x86)\Microsoft Visual Studio\2019\*edition*, where *edition* may be Community, Professional, Enterprise, BuildTools, or another name you supplied. The Visual Studio 2017 location is similar. For Visual Studio 2015, the typical installation location is in \Program Files (x86)\Microsoft Visual Studio 14.0.
 
 The primary developer command prompt command file, VsDevCmd.bat, is located in the Common7\Tools subdirectory of the installation directory. When no parameters are specified, this sets the environment and the host and target build architecture to use the 32-bit x86-native tools to build 32-bit x86 code.
 
-Additional command files are available to set up specific build architectures, depending on your processor architecture and the Visual Studio workloads and options you have installed. In Visual Studio 2017, these are located in the VC\Auxiliary\Build subdirectory of the Visual Studio installation directory. In Visual Studio 2015, these are located in the VC, VC\bin, or VC\bin\\*architectures* subdirectories of the installation directory, where *architectures* is one of the native or cross-compiler options. These command files set default parameters and call VsDevCmd.bat to set up the specified build architecture environment. A typical installation may include these command files:
+Additional command files are available to set up specific build architectures, depending on your processor architecture and the Visual Studio workloads and options you have installed. In Visual Studio 2017 and Visual Studio 2019, these are located in the VC\Auxiliary\Build subdirectory of the Visual Studio installation directory. In Visual Studio 2015, these are located in the VC, VC\bin, or VC\bin\\*architectures* subdirectories of the installation directory, where *architectures* is one of the native or cross-compiler options. These command files set default parameters and call VsDevCmd.bat to set up the specified build architecture environment. A typical installation may include these command files:
 
 |Command File|Host and Target architectures|
 |---|---|
@@ -96,28 +94,28 @@ This optional argument allows you to specify **store** or **uwp** as the platfor
 Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows 10 SDK number such as **10.0.10240.0**, or specify **8.1** to use the Windows 8.1 SDK.
 
 *vcversion*<br/>
-Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio 2017 compiler toolset. Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
+Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset. Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset or **-vcvars_ver=15.0** to specify the Visual Studio 2017 compiler toolset.
 
 <a name="vcvarsall"></a>
 #### To set up the build environment in an existing command prompt window
 
-1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017, this is the VC\Auxiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.
+1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017 and Visual Studio 2019, this is the VC\Auxiliary\Build subdirectory. For Visual Studio 2015, use the VC subdirectory.
 
-1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2017 RTM compiler toolset, use this command line:
+1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2019 compiler toolset, use this command line:
 
-   `vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10`
+   `vcvarsall.bat amd64_arm uwp`
 
 ## Create your own command prompt shortcut
 
-If you open the Properties dialog for one of the existing developer command prompt shortcuts, you can see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2017** shortcut is something similar to:
+If you open the Properties dialog for one of the existing developer command prompt shortcuts, you can see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2019** shortcut is something similar to:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
-The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same additional options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, to set up a shortcut to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and the Visual Studio 2017 RTM compiler toolset, use something like this command target in your shortcut:
+The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same additional options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, to set up a shortcut to build ARM code for UWP on a 64-bit platform by using the latest Windows SDK and a compiler toolset that is earlier than the current version, you need to specify the version number. Use something like this command target in your shortcut:
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.10"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=15.0"`
 
-You must adjust the path to reflect your Visual Studio installation directory.
+You must adjust the path to reflect your Visual Studio installation directory. The vcvarsall.bat file has additional information about specific version numbers.
 
 ## Command line tools
 

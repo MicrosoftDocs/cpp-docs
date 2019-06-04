@@ -1,10 +1,18 @@
 ---
 title: "COM+ 1.0, ATL COM+ 1.0 Component Wizard"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.mts.options"]
 ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
+
+::: moniker range="vs-2019"
+
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and additional interfaces to be supported.
 
@@ -43,6 +51,8 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |**Required**|Specifies that the object may or may not be the root of a transaction stream by adding the component attribute macro custom(TLBATTR_TRANS_REQUIRED,0) to the .h file (attributed projects) or to the .idl file (nonattributed projects).|
    |**Not supported**|Specifies that the object excludes transactions. Adds the component attribute macro custom(TLBATTR_TRANS_NOTSUPP,0) to the .h file (attributed projects) or to the .idl file (nonattributed projects).|
    |**Requires new**|Specifies that the object is always the root of a transaction stream by adding the component attribute macro custom(TLBATTR_TRANS_REQNEW,0) to the .h file (attributed projects) or to the .idl file (nonattributed projects).|
+
+::: moniker-end
 
 ## See also
 

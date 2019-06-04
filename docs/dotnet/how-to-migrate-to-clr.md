@@ -29,13 +29,13 @@ Before using **/clr** on any module in your project, first compile and link your
 
 The following steps, followed in order, provide the easiest path to a **/clr** compilation. It is important to compile and run your project after each of these steps.
 
-### Versions Prior to Visual C++ 2003
+### Versions Prior to Visual Studio 2003
 
-If you are upgrading to Visual Studio 2010 from a version prior to Visual C++ 2003, you may see compiler errors related to the enhanced C++ standard conformance in Visual C++ 2003
+If you are upgrading to Visual Studio 2010 from a version prior to Visual Studio 2003, you may see compiler errors related to the enhanced C++ standard conformance in Visual Studio 2003
 
-### Upgrading from Visual C++ 2003
+### Upgrading from Visual Studio 2003
 
-Projects previous built with Visual C++ 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.
+Projects previous built with Visual Studio 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.
 
 ### Upgrading from Managed Extensions for C++
 
@@ -86,7 +86,7 @@ This step has different implications for projects that use makefiles. In this ca
 **/clr** can be selected in the development environment by following the instructions in [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md). As mentioned previously, this step will automatically disable conflicting project settings.
 
 > [!NOTE]
->  When upgrading a managed library or web service project from Visual C++ 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Set compiler and build properties](../build/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.
+>  When upgrading a managed library or web service project from Visual Studio 2003, the **/Zl** compiler option will added to the **Command Line** property page. This will cause LNK2001. Remove **/Zl** from the **Command Line** property page to resolve. See [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) and [Set compiler and build properties](../build/working-with-project-properties.md) for more information. Or, add msvcrt.lib and msvcmrt.lib to the linker's **Additional Dependencies** property.
 
 For projects built with makefiles, incompatible compiler options must be disabled manually once **/clr** is added. See /[/clr Restrictions](../build/reference/clr-restrictions.md) for information on compiler options that are not compatible with **/clr**.
 

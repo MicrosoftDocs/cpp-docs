@@ -1,6 +1,6 @@
 ---
 title: "/DEBUG (Generate Debug Info)"
-ms.date: "11/04/2016"
+ms.date: "05/16/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugInformation", "/debug"]
 helpviewer_keywords: ["DEBUG linker option", "/DEBUG linker option", "-DEBUG linker option", "PDB files", "debugging [C++], debug information files", "generate debug info linker option", "pdb files, generating debug info", ".pdb files, generating debug info", "debugging [C++], linker option", "program databases [C++]"]
 ms.assetid: 1af389ae-3f8b-4d76-a087-1cdf861e9103
@@ -43,7 +43,7 @@ It is not possible to create an .exe or .dll that contains debug information. De
 
 1. Click the **Debugging** property page.
 
-1. Modify the **Generate Debug Info** property to enable PDB generation. This enables /DEBUG:FASTLINK by default in Visual Studio 2017.
+1. Modify the **Generate Debug Info** property to enable PDB generation. This enables /DEBUG:FASTLINK by default in Visual Studio 2017 and later.
 
 1. Modify the **Generate Full Program Database File** property to enable /DEBUG:FULL for full PDB generation for every incremental build.
 

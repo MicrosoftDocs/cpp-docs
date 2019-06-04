@@ -70,7 +70,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](http://go.microsoft.com/fwlink/p/?linkid=398469).
+For detailed information about the binomial distribution discrete probability function, see the Wolfram MathWorld article [Binomial Distribution](https://go.microsoft.com/fwlink/p/?linkid=398469).
 
 ## Example
 

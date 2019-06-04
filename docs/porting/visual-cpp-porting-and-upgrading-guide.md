@@ -47,7 +47,7 @@ To start upgrading a project or solution, just open the solution in the new vers
 
 8. Runtime errors or unexpected results due to behavior changes
 
-9. Errors due to errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio Feedback Center](http://connect.microsoft.com/VisualStudio/Feedback).
+9. Errors due to errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
 
 In addition to changes that you can't avoid due to compiler errors, some changes are optional in an upgrade process, such as:
 
@@ -69,7 +69,7 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 
 |Title|Description|
 |-----------|-----------------|
-|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual C++.|
+|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual Studio.|
 |[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools to the current version of Visual Studio|
 |[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Visual C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
@@ -82,4 +82,4 @@ Alternatively, perhaps you now have new requirements, or you can foresee the nee
 
 ## See also
 
-[Visual C++](../overview/visual-cpp-in-visual-studio.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)

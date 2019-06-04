@@ -183,7 +183,7 @@ A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) tha
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ##  <a name="openfile"></a>  CGopherConnection::OpenFile
 

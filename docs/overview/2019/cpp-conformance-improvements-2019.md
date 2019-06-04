@@ -1,17 +1,18 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "03/22/2019"
+ms.date: "05/16/2019"
+description: "Microsoft C++ in Visual Studio 2019 is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
 ms.author: "mblome"
 ---
-# C++ conformance improvements in Visual Studio 2019
+# C++ conformance improvements in Visual Studio 2019 RTW and version [16.1](#improvements_161)
+
+## Improvements in Visual Studio 2019 RTW
 
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes and behavior changes in the Microsoft C++ compiler (MSVC).
 
 **Note:** C++20 features will be made available in `/std:c++latest` mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, the `/std:c++20` compiler mode will be introduced.
-
-## Conformance improvements
 
 ### Improved modules support for templates and error detection
 
@@ -19,7 +20,7 @@ Modules are now officially in the C++20 standard. Improved support was added in 
 
 ### Modified specification of aggregate type
 
-The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](http://wg21.link/p1008r1)). In Visual Studio 2019, under `/std:c++latest`, a class with any user-declared constructor (e.g. including a constructor declared `= default` or `= delete`) is not an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts additional restrictions on how such types can be initialized.
+The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under `/std:c++latest`, a class with any user-declared constructor (e.g. including a constructor declared `= default` or `= delete`) is not an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts additional restrictions on how such types can be initialized.
 
 The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under `/std:c++latest`:
 
@@ -41,7 +42,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### Partial support for operator <=>
 
-C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
+[P0515R3](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0515r3.pdf) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in `/std:c++latest` mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under `/std:c++latest`:
 
 ```cpp
 struct S
@@ -121,7 +122,114 @@ int main()
 
 To avoid the error, either remove the `constexpr` qualifier, or else change the conformance mode to `/std:c++17`.
 
-## Bug fixes and behavior changes
+### std::create_directory failure codes
+
+Implemented [P1164](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1164r1.pdf) from C++20 unconditionally. This changes `std::create_directory` to check whether the target was already a directory on failure. Previously, all ERROR_ALREADY_EXISTS type errors were turned into success-but-directory-not-created codes.
+
+### operator<<(std::ostream, nullptr_t)
+
+Per [LWG 2221](https://cplusplus.github.io/LWG/issue2221), added `operator<<(std::ostream, nullptr_t)` for writing nullptrs to streams. 
+
+### Additional parallel algorithms
+
+New parallel versions of `is_sorted`, `is_sorted_until`, `is_partitioned`, `set_difference`, `set_intersection`, `is_heap`, and `is_heap_until`.
+
+### atomic initialization
+
+[P0883 "Fixing atomic initialization"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0883r1.pdf) changes `std::atomic` to value-initialize the contained T rather than default-initializing it. The fix is enabled when using Clang/LLVM with the Microsoft Standard Library. It is currently disabled for the Microsoft C++ compiler as a workaround for a bug in constexpr processing.
+
+### remove_cvref and remove_cvref_t
+
+Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf). These remove reference-ness and cv-qualification from a type without decaying functions and arrays to pointers (unlike `std::decay` and `std::decay_t`).
+
+### Feature-test macros
+
+[P0941R2 - feature-test macros](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0941r2.html) is complete, with support for `__has_cpp_attribute`. Feature-test macros are supported in all Standard modes.
+
+### Prohibit aggregates with user-declared constructors
+
+[C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is complete.
+
+## <a name="improvements_161"></a> Improvements in Visual Studio 2019 version 16.1
+
+### char8_t
+
+[P0482r6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html). C++20 adds a new character type that is used to represent UTF-8 code units. u8 string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C Standard in [N2231](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2231.htm). Suggestions for char8_t backward compatibility remediation are given in [P1423r0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1423r0.html). The Microsoft C++ compiler adds support for char8_t in Visual Studio 2019 version 16.1 when you specify the **/Zc:char8_t** compiler option. In the future, it will be supported with [/std:c++latest](../../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **/Zc:char8_t-**. The EDG compiler which powers IntelliSense does not yet support it, so you will see spurious IntelliSense-only errors which do not impact the actual compilation.
+
+#### Example
+
+```cpp
+const char* s = u8"Hello"; // C++17
+const char8_t* s = u8"Hello"; // C++20
+```
+
+### std::type_identity metafunction and std::identity function object
+
+[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md). 
+
+The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017: 
+
+```cpp
+#include <type_traits>
+
+using T = std::identity<int>::type;
+T x, y = std::identity<T>{}(x);
+int i = 42;
+long j = std::identity<long>{}(i);
+```
+
+The following example shows how to use the new `std::identity` (defined in \<functional>) together with the new `std::type_identity`:
+
+```cpp
+#include <type_traits>
+#include <functional>
+
+using T = std::type_identity<int>::type;
+T x, y = std::identity{}(x);
+int i = 42;
+long j = static_cast<long>(i);
+```
+
+### Syntax checks for generic lambdas
+
+The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [/std:c++latest](../../build/reference/std-specify-language-standard-version.md) or under any other language mode with **/experimental:newLambdaProcessor**. 
+
+In Visual Studio 2017, this code compiles without warnings, but in Visual Studio 2019 it produces error *C2760 syntax error: unexpected token '\<id-expr>', expected 'id-expression'*:
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        decltype(arg)::Type t;
+    };
+}
+```
+
+The following example shows the correct syntax, now enforced by the compiler:
+
+```cpp
+void f() {
+    auto a = [](auto arg) {
+        typename decltype(arg)::Type t;
+    };
+}
+```
+
+### Argument-dependent lookup for function calls
+
+[P0846R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0846r0.html) (C++20) Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments. Requires **/std:c++latest**.
+
+### Designated initialization
+
+[P0329R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf) (C++20) Designated initialization allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **/std:c++latest**.
+
+### New and updated Standard Library functions (C++20)
+
+- `starts_with()` and `ends_with()` for `basic_string` and `basic_string_view`.
+- `contains()` for associative containers.
+- `remove()`, `remove_if()`, and `unique()` for` list` and `forward_list` now return `size_type`.
+- `shift_left()` and `shift_right()` added to \<algorithm>.
+
+## Bug fixes and behavior changes in Visual Studio 2019 RTW
 
 ### Correct diagnostics for basic_string range constructor
 
@@ -143,7 +251,7 @@ for (wchar_t ch : ws)
 }
 ```
 
-### Incorrect calls to += and -= under /clr or /ZW are now correctly detected.
+### Incorrect calls to += and -= under /clr or /ZW are now correctly detected
 
 A bug was introduced in Visual Studio 2017 which caused the compiler to silently ignore errors and generate no code for the invalid calls to += and -= under `/clr` or `/ZW`. The following code compiles without errors in Visual Studio 2017 but in Visual Studio 2019 it correctly raises *error C2845: 'System::String ^': pointer arithmetic not allowed on this type*:
 
@@ -155,6 +263,7 @@ void f(System::String ^s)
     s += E::e; // C2845 in VS2019
 }
 ```
+
 To avoid the error in this example, use the operator with the ToString() method: `s += E::e.ToString();`.
 
 ### Initializers for inline static data members
@@ -183,9 +292,10 @@ struct X
         static inline const int c = 1000;
 };
 ```
+
 ### C4800 reinstated
 
-MSVC used to have a performance warning C4800 about implicit conversion to bool that was too noisy and insuppressible, leading us to remove it in VS 2017. However, over the lifecycle of VS 2017 we got a lot of feedback on the useful cases it was solving. We bring back in Visual Studio 2019 a carefully tailored C4800 along with its accompanying C4165, both of which can be easily suppressed with either an explicit cast or comparison to 0 of the appropriate type. C4800 is an off-by-default level 4 warning, and C4165 is an off-by-default level 3 warning. Both are discoverable by using the `/Wall` compiler option.
+MSVC used to have a performance warning C4800 about implicit conversion to bool that was too noisy and insuppressible, leading us to remove it in Visual Studio 2017. However, over the lifecycle of Visual Studio 2017 we got a lot of feedback on the useful cases it was solving. We bring back in Visual Studio 2019 a carefully tailored C4800 along with its accompanying C4165, both of which can be easily suppressed with either an explicit cast or comparison to 0 of the appropriate type. C4800 is an off-by-default level 4 warning, and C4165 is an off-by-default level 3 warning. Both are discoverable by using the `/Wall` compiler option.
 
 The following example raises C4800 and C4165 under `/Wall`:
 
@@ -198,6 +308,7 @@ bool test(IUnknown* p)
     return hr; // warning C4165: 'HRESULT' is being converted to 'bool'; are you sure this is what you want?
 }
 ```
+
 To avoid the warnings in the previous example, you can write the code like this:
 
 ```cpp
@@ -223,10 +334,6 @@ void foo()
         };
 }
 ```
-
-### /clr now incompatible with /std:c++latest
-
-As MSVC begins implementing features from the C++20 standard draft under the `/std:c++latest` flag, `/std:c++latest` is now incompatible with `/clr` (all flavors), `/ZW`, and `/Gm`. In Visual Studio 2019, use `/std:c++17` or `/std:c++14` modes when compiling with `/clr`, `/ZW` or `/Gm`.
 
 ### Function template bodies containing constexpr if statements
 
@@ -324,6 +431,83 @@ int main()
     std::printf("%d\n", f());
 }
 ```
+
+### Iterator debugging and std::move_iterator
+
+The iterator debugging feature has been taught to properly unwrap `std::move_iterator`. For example, `std::copy(std::move_iterator<std::vector<int>::iterator>, std::move_iterator<std::vector<int>::iterator>, int*)` can now engage the `memcpy` fast path.
+
+### Fixes for \<xkeycheck.h> keyword enforcement
+
+The Standard Library’s macro-ized keyword enforcement \<xkeycheck.h> was fixed to emit the actual problem keyword detected rather than a generic message. It also supports C++20 keywords, and avoids tricking IntelliSense into saying random keywords are macros.
+
+### Allocator types un-deprecated
+
+`std::allocator<void>`, `std::allocator::size_type`, and `std::allocator::difference_type` have been un-deprecated.
+
+### Correct warning for narrowing string conversions
+
+A spurious `static_cast` not called for by the standard that accidentally suppressed C4244 narrowing warnings was removed from std::string. Attempting to call `std::string::string(const wchar_t*, const wchar_t*)` will now properly emit *C4244 "narrowing a wchar_t into a char."*
+
+### Various \<filesystem> correctness fixes
+
+- Fixed `std::filesystem::last_write_time` failing when attempting to change a directory’s last write time.
+- The `std::filesystem::directory_entry` constructor now stores a failed result, rather than throwing an exception, when supplied a nonexistent target path.
+- The `std::filesystem::create_directory` 2-parameter version was changed to call the 1-parameter version, as the underlying `CreateDirectoryExW` function would perform `copy_symlink` when the existing_p was a symlink.
+- `std::filesystem::directory_iterator` no longer fails when encountering a broken symlink.
+- `std::filesystem::space` now accepts relative paths.
+- `std::filesystem::path::lexically_relative` is no longer confused by trailing slashes, reported as [LWG 3096](https://cplusplus.github.io/LWG/issue3096).
+- Worked around `CreateSymbolicLinkW` rejecting paths with forward slashes in `std::filesystem::create_symlink`.
+- Worked around the POSIX deletion mode `delete` function existing on Windows 10 LTSB 1609 but not actually being capable of deleting files.
+- `std::boyer_moore_searcher` and `std::boyer_moore_horspool_searcher`'s copy constructors and copy assignment operators now actually copy things.
+
+### Parallel algorithms on Windows 8 and later
+
+The parallel algorithms library now properly uses the real `WaitOnAddress` family on Windows 8 and later, rather than always using the Windows 7 and earlier fake versions.
+
+### std::system_category::message() whitespace
+
+`std::system_category::message()` now trims trailing whitespace from the returned message.
+
+### std::linear_congruential_engine divide by zero
+
+Some conditions that would cause `std::linear_congruential_engine` to trigger divide by 0 have been fixed.
+
+### Fixes for iterator unwrapping
+
+The iterator unwrapping machinery that was first exposed for programmer-user integration in Visual Studio 2017 15.8 (as described in https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/ ) no longer unwraps iterators derived from standard library iterators. For example, a user that derives from `std::vector<int>::iterator` and tries to customize behavior now gets their customized behavior when calling standard library algorithms, rather than the behavior of a pointer.
+The unordered container reserve function now actually reserves for N elements, as described in [LWG 2156](https://cplusplus.github.io/LWG/issue2156).
+
+### Time handling
+
+- Previously, some time values that were passed to the concurrency library would overflow, for example, `condition_variable::wait_for(seconds::max())`. These overflows, now fixed, changed behavior on a seemingly random 29-day cycle (when uint32_t milliseconds accepted by underlying Win32 APIs overflowed).
+
+- The <ctime> header now correctly declares timespec and timespec_get in namespace std in addition to declaring them in the global namespace.
+
+### Various fixes for containers
+
+- Many Standard Library internal container functions have been made private for an improved IntelliSense experience. Additional fixes to mark members as private are expected in subsequent releases of MSVC.
+
+- Exception safety correctness problems wherein the node-based containers like `list`, `map`, and `unordered_map` would become corrupted were fixed. During a `propagate_on_container_copy_assignment` or `propagate_on_container_move_assignment` reassignment operation, we would free the container’s sentinel node with the old allocator, do the POCCA/POCMA assignment over the old allocator, and then try to acquire the sentinel node from the new allocator. If this allocation failed, the container is corrupted and can’t even be destroyed, as owning a sentinel node is a hard data structure invariant. This was fixed to allocate the new sentinel node from the source container’s allocator before destroying the existing sentinel node.
+
+- The containers were fixed to always copy/move/swap allocators according to `propagate_on_container_copy_assignment`, `propagate_on_container_move_assignment`, and `propagate_on_container_swap`, even for allocators declared `is_always_equal`.
+
+- Added the overloads for container merge and extract member functions that accept rvalue containers per [P0083 "Splicing Maps And Sets"](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)
+
+### std::basic_istream::read processing of \r\n => \n
+
+`std::basic_istream::read` was fixed to not write into parts of the supplied buffer temporarily as part of \r\n => \n processing. This gives up some of the performance advantage that was gained in Visual Studio 2017 15.8 for reads larger than 4K in size, but efficiency improvements from avoiding 3 virtual calls per character are still present.
+
+### std::bitset constructor
+
+`std::bitset`'s constructor no longer reads the ones and zeroes in reverse order for large bitsets.
+
+### std::pair::operator= regression
+
+Fixed a regression in `std::pair`'s assignment operator introduced when implementing [LWG 2729 "Missing SFINAE on std::pair::operator=";](https://cplusplus.github.io/LWG/issue2729). It now correctly accepts types convertible to `std::pair` again.
+
+### Non-deduced contexts for add_const_t
+
+Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
 
 ## See also
 

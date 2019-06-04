@@ -1,6 +1,6 @@
 ---
 title: "/clr (Common Language Runtime Compilation)"
-ms.date: "09/18/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
@@ -24,11 +24,11 @@ One or more of the following switches, comma-separated.
 
 - **pure**
 
-   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be pure MSIL to C#.
+   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be pure MSIL to C#.
 
 - **safe**
 
-   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be safe MSIL to C#.
+   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be safe MSIL to C#.
 
 - **noAssembly**
 
@@ -38,7 +38,7 @@ One or more of the following switches, comma-separated.
 
    A managed program that does not have assembly metadata in the manifest is known as a *module*. The **noAssembly** option can be used only to produce a module. If you compile by using [/c](c-compile-without-linking.md) and **/clr:noAssembly**, then specify the [/NOASSEMBLY](noassembly-create-a-msil-module.md) option in the linker phase to create a module.
 
-   Before Visual C++ 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.
+   Before Visual Studio 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.
 
 - **initialAppDomain**
 

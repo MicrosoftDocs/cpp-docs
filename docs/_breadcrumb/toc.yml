@@ -49,10 +49,6 @@
         - name: ATL
           tocHref: /cpp/atl/
           topicHref: /cpp/atl/atl-com-desktop-components
-          items:
-          - name: Reference
-            tocHref: /cpp/atl/reference/
-            topicHref: /cpp/atl/reference/atl-classes
         - name: MFC
           tocHref: /cpp/mfc/
           topicHref: /cpp/mfc/mfc-desktop-applications
@@ -89,7 +85,7 @@
         - name: ODBC
           tocHref: /cpp/data/odbc/
           topicHref: /cpp/data/odbc/open-database-connectivity-odbc
-      - name: Edit, navigate and refactor code
+      - name: Edit, navigate, and refactor code
         tocHref: /cpp/ide
         topicHref: /cpp/overview-of-cpp-development
         items:
@@ -98,21 +94,15 @@
           topicHref: /cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development
       - name: Building C/C++ Projects
         tocHref: /cpp/build/
-        tocHref: /cpp/build/building-c-cpp-programs
+        topicHref: /cpp/build/building-c-cpp-programs
         items:
         - name: Build Reference
           tocHref: /cpp/build/reference/
           topicHref: /cpp/build/reference/c-cpp-building-reference
           items:
-            - name: Compiler Errors
-              tocHref: /cpp/error-messages/compiler-errors-1/
-              topicHref: /cpp/compiler-errors-1/c-cpp-build-errors
-            - name: Compiler Warnings
-              tocHref: /cpp/compiler-warnings/
-              topicHref: /cpp/compiler-warnings/compiler-warnings-c4000-through-C4199
-            - name: Other Tools
-              tocHref: /cpp/error-messages/tool-errors/
-              topicHref: /cpp/error-messages/tool-errors/vectorizer-and-parallelizer-messages
+            - name: Compiler and tool errors and warnings
+              tocHref: /cpp/error-messages/
+              topicHref: /cpp/error-messages/compiler-errors-1/c-cpp-build-errors
       - name: Porting and Upgrading
         tocHref: /cpp/porting/
         topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide

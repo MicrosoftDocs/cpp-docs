@@ -12,7 +12,7 @@ One way to resolve this error is to include the const initializations in a heade
 
 The following sample generates C2019:
 
-```
+```cpp
 // global_constants.cpp
 // LNK2019 expected
 void test(void);
@@ -25,7 +25,7 @@ int main() {
 
 And then,
 
-```
+```cpp
 // global_constants_2.cpp
 // compile with: global_constants.cpp
 extern int lnktest1;

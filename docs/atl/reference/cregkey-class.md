@@ -151,7 +151,7 @@ Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of
 The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see `RegCreateKeyEx`.
 
 *lpSecAttr*<br/>
-A pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).
+A pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).
 
 *lpdwDisposition*<br/>
 [out] If non-NULL, retrieves either REG_CREATED_NEW_KEY (if the key did not exist and was created) or REG_OPENED_EXISTING_KEY (if the key existed and was opened).

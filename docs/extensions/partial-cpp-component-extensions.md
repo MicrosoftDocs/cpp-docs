@@ -58,7 +58,7 @@ Templates: A partial class cannot be a template.
 
 Generics: A partial class can be a generic if the full definition could be generic. But every partial and full class must have exactly the same generic parameters, including formal parameter names.
 
-For more information about how to use the **partial** keyword, see [Partial Classes (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).
+For more information about how to use the **partial** keyword, see [Partial Classes (C++/CX)](https://go.microsoft.com/fwlink/p/?LinkId=249023).
 
 ### Requirements
 
@@ -70,4 +70,4 @@ Compiler option: `/ZW`
 
 ## See also
 
-[Partial Classes (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023)
+[Partial Classes (C++/CX)](https://go.microsoft.com/fwlink/p/?LinkId=249023)

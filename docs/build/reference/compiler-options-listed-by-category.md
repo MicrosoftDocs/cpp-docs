@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "11/12/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -146,7 +146,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md)|Increases the number of addressable sections in an .obj file.|
 |[/c](c-compile-without-linking.md)|Compiles without linking.|
 |[/cgthreads](cgthreads-code-generation-threads.md)|Specifies number of cl.exe threads to use for optimization and code generation.|
-|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Visual C++ team.|
+|[/errorReport](errorreport-report-internal-compiler-errors.md)|Enables you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Displays the full path of source code files passed to cl.exe in diagnostic text.|
 |[/FS](fs-force-synchronous-pdb-writes.md)|Forces writes to the program database (PDB) file to be serialized through MSPDBSRV.EXE.|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
@@ -206,7 +206,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Yd](yd-place-debug-information-in-object-file.md)|Deprecated. Places complete debugging information in all object files. Use [/Zi](z7-zi-zi-debug-information-format.md) instead.|
 |[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|Deprecated. Disables conformance in for loop scope.|
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
-|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual C++ 2015. Generates function prototypes.|
+|[/Zg](zg-generate-function-prototypes.md)|Removed in Visual Studio 2015. Generates function prototypes.|
 
 ## See also
 

@@ -1,7 +1,6 @@
 ---
 title: "Run-Time Object Model Services"
 ms.date: "03/27/2019"
-f1_keywords: ["vc.mfc.macros"]
 helpviewer_keywords: ["run-time object model services macros"]
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
 ---
@@ -54,7 +53,7 @@ Determines whether the Common Controls library implements the specified API.
 
 ### Syntax
 
-  ```
+```
 AFX_COMCTL32_IF_EXISTS(  proc );
 ```
 
@@ -159,7 +158,7 @@ See the example for [IMPLEMENT_DYNCREATE](#implement_dyncreate).
 
 **Header:** afx.h
 
-## DECLARE_OLECTLTYPE
+## <a name="declare_olectltype"></a> DECLARE_OLECTLTYPE
 
 Declares the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 
@@ -182,7 +181,7 @@ The name of the control class.
 
 **Header:** afxctl.h
 
-## DECLARE_PROPPAGEIDS
+## <a name="declare_proppageids"></a> DECLARE_PROPPAGEIDS
 
 Declares that the OLE control provides a list of property pages to display its properties.
 
@@ -356,7 +355,7 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 **Header:** afxdisp.h
 
-## IMPLEMENT_OLECTLTYPE
+## <a name="implement_olectltype"></a> IMPLEMENT_OLECTLTYPE
 
 Implements the `GetUserTypeNameID` and `GetMiscStatus` member functions of your control class.
 

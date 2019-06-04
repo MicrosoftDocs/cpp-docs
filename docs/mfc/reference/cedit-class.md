@@ -612,7 +612,7 @@ Specifies the character to be displayed instead of the character that the user t
 
 ### Remarks
 
-If you create the edit control with the ES_PASSWORD style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](https://msdn.microsoft.com/library/windows/desktop/bb776779).
+If you create the edit control with the ES_PASSWORD style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](/previous-versions/windows/desktop/legacy/bb776779\(v=vs.85\)).
 
 This method sends the [EM_GETPASSWORDCHAR](/windows/desktop/Controls/em-getpasswordchar) message, which is described in the Windows SDK.
 
@@ -771,7 +771,7 @@ The character index is the number of characters from the beginning of the edit c
 
 This member function is only processed by multiple-line edit controls.
 
-For more information, see [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) in the Windows SDK.
+For more information, see [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) in the Windows SDK.
 
 ### Example
 

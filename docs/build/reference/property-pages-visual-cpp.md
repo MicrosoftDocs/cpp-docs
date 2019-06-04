@@ -1,8 +1,8 @@
 ---
 title: "C++ project property page reference - Visual Studio"
-ms.date: "12/12/2018"
+ms.date: "05/06/2019"
 f1_keywords: ["VC.Project.NotAProp.Edit"]
-helpviewer_keywords: ["project-file macro", "project properties [C++], default values", "user-defined values", "project properties [C++], setting", "macros, project-file", "property pages, project settings", "Visual C++ projects, properties", "build macro", "user-defined macros"]
+helpviewer_keywords: ["project-file macro", "project properties [C++], default values", "user-defined values", "project properties [C++], setting", "macros, project-file", "property pages, project settings", "C++ projects, properties", "build macro", "user-defined macros"]
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
 ---
 # C++ project property page reference

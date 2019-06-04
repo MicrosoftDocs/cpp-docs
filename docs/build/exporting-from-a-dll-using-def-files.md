@@ -1,6 +1,6 @@
 ---
 title: "Exporting from a DLL Using DEF Files"
-ms.date: "01/09/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs", "exporting DLLs [C++], DEF files"]
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
 ---
@@ -27,7 +27,10 @@ EXPORTS
 
 If you use the [MFC DLL Wizard](../mfc/reference/mfc-dll-wizard.md) to create an MFC DLL, the wizard creates a skeleton DEF file for you and automatically adds it to your project. Add the names of the functions to be exported to this file. For non-MFC DLLs, create the DEF file yourself and add it to your project. Then go to **Project** > **Properties** > **Linker** > **Input** > **Module Definition File** and enter the name of the DEF file. Repeat this step for each configuration and platform, or do it all at once by selecting **Configuration = All Configurations**, and **Platform = All Platforms**.
 
-If you are exporting functions in a C++ file, you have to either place the decorated names in the DEF file or define your exported functions with standard C linkage by using extern "C". If you need to place the decorated names in the DEF file, you can obtain them by using the [DUMPBIN](../build/reference/dumpbin-reference.md) tool or by using the linker [/MAP](../build/reference/map-generate-mapfile.md) option. Note that the decorated names produced by the compiler are compiler specific. If you place the decorated names produced by the Visual C++ compiler into a DEF file, applications that link to your DLL must also be built using the same version of Visual C++ so that the decorated names in the calling application match the exported names in the DLL's DEF file.
+If you are exporting functions in a C++ file, you have to either place the decorated names in the DEF file or define your exported functions with standard C linkage by using extern "C". If you need to place the decorated names in the DEF file, you can obtain them by using the [DUMPBIN](../build/reference/dumpbin-reference.md) tool or by using the linker [/MAP](../build/reference/map-generate-mapfile.md) option. Note that the decorated names produced by the compiler are compiler specific. If you place the decorated names produced by the Microsoft C++ compiler (MSVC) into a DEF file, applications that link to your DLL must also be built using the same version of MSVC so that the decorated names in the calling application match the exported names in the DLL's DEF file. 
+
+> [!NOTE]
+> A DLL built with Visual Studio 2015 can be consumed by applications built with Visual Studio 2017 or Visual Studio 2019.
 
 If you are building an [extension DLL](../build/extension-dlls-overview.md), and exporting using a DEF file, place the following code at the beginning and end of your header files that contain the exported classes:
 

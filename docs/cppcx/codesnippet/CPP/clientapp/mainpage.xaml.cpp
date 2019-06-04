@@ -22,7 +22,7 @@ using namespace Windows::UI::Xaml::Navigation;
 
 using namespace DelegatesEvents;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/p/?linkid=234238
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/p/?linkid=234238
 
 MainPage::MainPage()
 {

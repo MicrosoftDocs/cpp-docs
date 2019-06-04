@@ -10,10 +10,10 @@ Visual Studio provides two different technologies for deploying Windows applicat
 
 ## ClickOnce Deployment in C++
 
-The Visual C++ development environment does not directly support deployment of Visual C++ projects with ClickOnce, but tools are available to use it.
+The Visual C++ development environment does not directly support deployment of Visual Studio C++ projects with ClickOnce, but tools are available to use it.
 
 > [!NOTE]
->  Visual Studio does support ClickOnce in the Visual C# and Visual Basic development environments. If your Visual C++ project is a dependency of a Visual C# project, you can publish the application (including its dependencies) using ClickOnce deployment from the Visual C# development environment.
+>  Visual Studio does support ClickOnce in the Visual C# and Visual Basic development environments. If your Visual Studio C++ project is a dependency of a Visual C# project, you can publish the application (including its dependencies) using ClickOnce deployment from the Visual C# development environment.
 
 To deploy a Visual C++ application using ClickOnce, you first have to build a [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest) and a [ClickOnce Deployment Manifest](/visualstudio/deployment/clickonce-deployment-manifest) using the [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) or its graphical user interface version (for information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
 
@@ -33,7 +33,7 @@ For a more detailed description of the technology, see [ClickOnce Security and D
 
 [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)<br>
+[Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)<br>
 [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)<br>
 [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)<br>
 [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)<br>

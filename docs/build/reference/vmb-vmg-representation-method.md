@@ -1,5 +1,5 @@
 ---
-title: "/vmb, -vmg (Representation Method)"
+title: "/vmb, /vmg (Representation Method)"
 ms.date: "11/04/2016"
 f1_keywords: ["/vmb", "/vmg"]
 helpviewer_keywords: ["vmb compiler option [C++]", "-vmg compiler option [C++]", "vmg compiler option [C++]", "-vmb compiler option [C++]", "/vmb compiler option [C++]", "representation method compiler options [C++]", "/vmg compiler option [C++]"]

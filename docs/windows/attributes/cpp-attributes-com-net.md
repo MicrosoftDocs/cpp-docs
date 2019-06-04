@@ -27,7 +27,7 @@ Attributes extend C++ in directions not currently possible without breaking the 
 
 - Replaces the large amount of IDL code required by a COM component with a few concise attributes.
 
-For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
+For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Microsoft C++ compiler, which inserts the proper code into the object file.
 
 ```cpp
 [event_receiver(com)]
@@ -42,7 +42,7 @@ You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handl
 
 ## Basic Mechanics of Attributes
 
-There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the **Properties** window and the various wizards, see [Creating and Managing Visual C++ Projects](../../build/creating-and-managing-visual-cpp-projects.md).
+There are three ways to insert attributes into your project. First, you can insert them manually into your source code. Second, you can insert them using the property grid of an object in your project. Finally, you can insert them using the various wizards. For more information on using the **Properties** window and the various wizards, see [Visual Studio Projects - C++](../../build/creating-and-managing-visual-cpp-projects.md).
 
 As before, when the project is built, the compiler parses each C++ source file, producing an object file. However, when the compiler encounters an attribute, it is parsed and syntactically verified. The compiler then dynamically calls an attribute provider to insert code or make other modifications at compile time. The implementation of the provider differs depending on the type of attribute. For example, ATL-related attributes are implemented by Atlprov.dll.
 
@@ -57,7 +57,7 @@ Like most C++ constructs, attributes have a set of characteristics that defines 
 
 ## Building an Attributed Program
 
-After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
+After you put Visual C++ attributes into your source code, you may want the Microsoft C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
 
 - [/IDLOUT](../../build/reference/idlout-name-midl-output-files.md)
 

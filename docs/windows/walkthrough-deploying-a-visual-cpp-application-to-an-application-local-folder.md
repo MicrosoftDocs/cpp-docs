@@ -1,6 +1,6 @@
 ---
 title: "Deploy a Visual C++ Application to an App-local Folder"
-ms.date: "09/17/2018"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["deploying Visual C++ applications"]
 ms.assetid: 47a81c47-9dbe-47c6-96cc-fbb2fda5e6ad
 ---

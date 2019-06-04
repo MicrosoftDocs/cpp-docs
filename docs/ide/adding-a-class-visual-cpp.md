@@ -1,13 +1,13 @@
 ---
 title: "Add a class"
-ms.date: "11/08/2018"
-f1_keywords: ["vc.codewiz.classes.adding", "vc.addclass"]
+ms.date: "05/14/2019"
+f1_keywords: ["vc.addclass"]
 helpviewer_keywords: ["ATL projects, adding classes", "classes [C++], creating", "classes [C++], adding", "Add Class dialog box"]
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ---
 # Add a class
 
-To add a class in a Visual C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
+To add a class in a Visual Studio C++ project, in **Solution Explorer**, right-click the project, choose **Add**, and then choose **Class**. This opens the [Add Class dialog box](#add-class-dialog-box).
 
 When you add a class, you must specify a name that is different from classes that already exist in MFC or ATL. If you specify a name that already exists in either library, the IDE shows an error message.
 
@@ -69,13 +69,8 @@ There are four categories of **Add Class** templates: .NET, ATL, MFC, and Generi
 |Template|Wizard|
 |--------------|------------|
 |Add ATL Support to MFC|Not available|
-|ATL Active Server Page Component|[ATL active server page component wizard](../atl/reference/atl-active-server-page-component-wizard.md)|
 |ATL Control|[ATL control wizard](../atl/reference/atl-control-wizard.md)|
 |ATL Dialog|[ATL dialog wizard](../atl/reference/atl-dialog-wizard.md)|
-|ATL COM+ 1.0 Component|[ATL COM+ 1.0 component wizard](../atl/reference/atl-com-plus-1-0-component-wizard.md)|
-|ATL OLEDB Consumer|[ATL OLE DB consumer wizard](../atl/reference/atl-ole-db-consumer-wizard.md)|
-|ATL OLEDB Provider|[ATL OLE DB provider wizard](../atl/reference/atl-ole-db-provider-wizard.md)|
-|ATL Property Page|[ATL property page wizard](../atl/reference/atl-property-page-wizard.md)|
 |ATL Simple Object|[ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md)|
 |WMI Event Provider|WMI event provider wizard|
 |WMI Instance Provider|WMI instance provider wizard|
@@ -85,9 +80,6 @@ There are four categories of **Add Class** templates: .NET, ATL, MFC, and Generi
 |Template|Wizard|
 |--------------|------------|
 |MFC Class|[MFC add class wizard](../mfc/reference/mfc-add-class-wizard.md)|
-|MFC Class From ActiveX Control|[Add class from ActiveX control wizard](../ide/add-class-from-activex-control-wizard.md)|
-|MFC Class From TypeLib|[Add class from Typelib wizard](../mfc/reference/add-class-from-typelib-wizard.md)|
-|MFC ODBC Consumer|[MFC ODBC consumer wizard](../mfc/reference/mfc-odbc-consumer-wizard.md)|
 
 #### Generic classes
 

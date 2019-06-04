@@ -1,12 +1,15 @@
 ---
 title: "Walkthrough: Creating a UWP app using WRL and Media Foundation"
-ms.date: "09/17/2018"
+ms.date: "04/23/2019"
 ms.topic: "reference"
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
 ---
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 
-Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
+> [!NOTE]
+> For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
+
+In this tutorial, you will learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
 This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
 
@@ -16,9 +19,11 @@ This example creates a custom Media Foundation transform that applies a grayscal
 In most cases, you can use C++/CX to create Windows Runtime. However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL because it enables the implementation of both COM and Windows Runtime interfaces.
 
 > [!NOTE]
-> Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.
+> Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.
 
 ## Prerequisites
+
+- In Visual Studio 2017 and later, UWP support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu and find your version of Visual Studio. Choose **Modify** and then make sure the **Universal Windows Platform Development** tile is checked. Under **Optional Components** check **C++ Tools for UWP (v141)** for Visual Studio 2017, or **C++ Tools for UWP (v142)** for Visual Studio 2019. Then check the version of the Windows SDK that you want to use. 
 
 - Experience with the [Windows Runtime](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
 
@@ -111,10 +116,10 @@ The following illustration shows the `MediaCapture app`.
 
 ## Next Steps
 
-The example shows how to capture photos from the default webcam one at a time. The [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) does more. It demonstrates how to enumerate webcam devices and work with local scheme handlers, and demonstrates additional media effects that work on both individual photos and streams of video.
+The example shows how to capture photos from the default webcam one at a time. The [Media extensions sample](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096) does more. It demonstrates how to enumerate webcam devices and work with local scheme handlers, and demonstrates additional media effects that work on both individual photos and streams of video.
 
 ## See also
 
 [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
 [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
-[Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)
+[Media extensions sample](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

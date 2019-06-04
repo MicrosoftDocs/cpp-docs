@@ -20,7 +20,7 @@ The profiling tools provide three data views that display graphical, tabular and
 
 The Concurrency Runtime uses [Event Tracing for Windows](/windows/desktop/ETW/event-tracing-portal) (ETW) to notify instrumentation tools, such as profilers, when various events occur. These events include when a scheduler is activated or deactivated, when a context begins, ends, blocks, unblocks, or yields, and when a parallel algorithm begins or ends.
 
-Tools such as the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](http://go.microsoft.com/fwlink/p/?linkid=160628).
+Tools such as the [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer) utilize this functionality; therefore, you typically do not have to work with these events directly. However, these events are useful when you are developing a custom profiler or when you use event tracing tools such as [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628).
 
 The Concurrency Runtime raises these events only when tracing is enabled. Call the [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) function to enable event tracing and the [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#disabletracing) function to disable tracing.
 

@@ -1,7 +1,7 @@
 ---
 title: "CMake predefined configuration reference"
 ms.description: "Visual Studio provides several predefined build configurations for CMake projects on Linux, Windows, ARM, and IoT."
-ms.date: "03/05/2019"
+ms.date: "05/15/2019"
 helpviewer_keywords: ["CMake redefined configurations"]
 ---
 
@@ -89,9 +89,9 @@ You can use these optional settings for more control:
 
 ```json
 {
-      "remotePreBuildCommand": "",
+      "remotePrebuildCommand": "",
       "remotePreGenerateCommand": "",
-      "remotePostBuildCommand": "",
+      "remotePostbuildCommand": "",
 }
 ```
 

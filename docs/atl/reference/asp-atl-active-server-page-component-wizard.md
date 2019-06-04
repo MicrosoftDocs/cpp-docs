@@ -15,7 +15,7 @@ Use this page of the ATL Active Server Page Component Wizard to specify optional
 
 - **OnStartPage/OnEndPage**
 
-   [OnStartPage](https://msdn.microsoft.com/library/ms691624.aspx) is called the first time the script tries to access the object. **OnEndPage** is called when the object is finished processing the script.
+   [OnStartPage](/previous-versions//ms691624\(v=vs.85\)) is called the first time the script tries to access the object. **OnEndPage** is called when the object is finished processing the script.
 
 - **Intrinsic object**
 

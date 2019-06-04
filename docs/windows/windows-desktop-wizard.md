@@ -41,7 +41,7 @@ Creates the specified application type.
 
 |Option|Description|
 |------------|-----------------|
-|**Console application**|Creates a console application. Console programs are developed with [Console Functions](https://msdn.microsoft.com/library/ms813137.aspx), which provide character-mode support in console windows. The Visual C++ [run-time libraries](../c-runtime-library/c-run-time-library-reference.md) also provide output and input from console windows with standard I/O functions, such as `printf_s()` and `scanf_s()`. A console application has no graphical user interface. It compiles into an .exe file and can be run as a stand-alone application from the command line.<br /><br /> You can add MFC and ATL support to a console application.|
+|**Console application**|Creates a console application. The Visual C++ [run-time libraries](../c-runtime-library/c-run-time-library-reference.md) also provide output and input from console windows with standard I/O functions, such as `printf_s()` and `scanf_s()`. A console application has no graphical user interface. It compiles into an .exe file and can be run as a stand-alone application from the command line.<br /><br /> You can add MFC and ATL support to a console application.|
 |**Windows application**|Creates a Win32 program. A Win32 program is an executable application (EXE) written in C or C++, using calls to the Win32 API to create a graphical user interface.<br /><br /> You cannot add MFC or ATL support to a Windows application.|
 |**Dynamic Link Library**|Creates a Win32 dynamic-link library (DLL). A Win32 DLL is a binary file, written in C or C++, that uses calls to the Win32 API rather than to MFC classes, and that acts as a shared library of functions that can be used simultaneously by multiple applications.<br /><br /> You cannot add MFC or ATL support to a DLL application created by using this wizard, but you can create an MFC DLL by choose **New > Project > MFC DLL**.|
 |**Static library**|Creates a static library. A static library is a file containing objects and their functions and data that links into your program when the executable file is built. This topic explains how to create the starter files and [project properties](../build/reference/property-pages-visual-cpp.md) for a static library. A static library file provides the following benefits:<br /><br />- A Win32 static library is useful if the application you are working on makes calls to the Win32 API rather than to MFC classes.<br />- The linking process is the same whether the rest of your Windows application is written in C or in C++.<br />- You can link a static library to an MFC-based program or to a non-MFC program.|
@@ -73,8 +73,8 @@ Once you have created a Windows desktop application, you can add generic C++ cla
 > [!NOTE]
 > You cannot add ATL classes, and you can add MFC classes only to those Windows desktop application types that support MFC (see the previous table).
 
-You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file, `ReadMe.txt`. For more information about the file types, [File Types Created for Visual C++ Projects](../build/reference/file-types-created-for-visual-cpp-projects.md).
+You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file, `ReadMe.txt`. For more information about the file types, [File Types Created for Visual Studio C++ projects](../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## See also
 
-[Visual C++ Project Types](../build/reference/visual-cpp-project-types.md)
+[C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)

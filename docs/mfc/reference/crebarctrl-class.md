@@ -578,7 +578,7 @@ The zero-based index of the band at the given point, or -1 if no rebar band was 
 
 ##  <a name="idtoindex"></a>  CReBarCtrl::IDToIndex
 
-Implements the behavior of the Win32 message [RB_IDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774496), as described in the Windows SDK.
+Implements the behavior of the Win32 message [RB_IDTOINDEX](/windows/desktop/controls/rb-idtoindex), as described in the Windows SDK.
 
 ```
 int IDToIndex(UINT uBandID) const;

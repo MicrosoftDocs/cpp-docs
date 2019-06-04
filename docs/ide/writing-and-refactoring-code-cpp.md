@@ -1,11 +1,12 @@
 ---
 title: "Writing and refactoring code (C++)"
-ms.date: "04/30/2018"
+description: "Use the C++ code editor in Visual Studio to format, navigate, understand and refactor your code."
+ms.date: "05/14/2019"
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ---
 # Writing and refactoring code (C++)
 
-The Visual C++ code editor and IDE provide many coding aids. Some are unique to C++, and some are essentially the same for all Visual Studio languages. For more information about the shared features, see [Writing Code in the Code and Text Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Options for enabling and configuring C++-specific features are located under **Tools &#124; Options &#124; Text Editor &#124; C/C++**. After choosing which option you want to set, you can get more help by pressing **F1** when the dialog is in focus. For general code formatting options, type `Editor C++` into **QuickLaunch**.
+The C++ code editor and Visual Studio IDE provide many coding aids. Some are unique to C++, and some are essentially the same for all Visual Studio languages. For more information about the shared features, see [Writing Code in the Code and Text Editor](/visualstudio/ide/writing-code-in-the-code-and-text-editor). Options for enabling and configuring C++-specific features are located under **Tools &#124; Options &#124; Text Editor &#124; C/C++**. After choosing which option you want to set, you can get more help by pressing **F1** when the dialog is in focus. For general code formatting options, type `Editor C++` into **QuickLaunch**.
 
 Experimental features, which may or may not be included in a future version of Visual Studio, are found in the [Text Editor C++ Experimental](/visualstudio/ide/reference/options-text-editor-c-cpp-experimental) dialog. In Visual Studio 2017 you can enable **Predictive IntelliSense** in this dialog.
 
@@ -85,7 +86,7 @@ Hover over a variable or function declaration, right-click, then choose **Go To 
 
 ## View Call Hierarchy
 
-Right click on any function call and view a resursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
+Right click on any function call and view a recursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
 
 ![Visual C&#43;&#43; Call Hierarchy](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 

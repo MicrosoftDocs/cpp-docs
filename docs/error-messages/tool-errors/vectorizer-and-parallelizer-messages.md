@@ -1,30 +1,14 @@
 ---
-title: "Vectorizer and Parallelizer Messages"
-ms.date: "11/04/2016"
+title: "Vectorizer and parallelizer messages"
+ms.date: "04/17/2019"
 f1_keywords: ["C5011", "C5002", "C5021", "C5001", "C5012"]
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
 ---
-# Vectorizer and Parallelizer Messages
+# Vectorizer and parallelizer messages
 
-You can use the Visual C++ compiler options [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) and [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) to set the [Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md) to output reason codes and informational messages about its activity. This article explains the reason codes and the messages.
+You can use the Microsoft C++ compiler options [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) and [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) to set the [Auto-parallelization and auto-vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md) to output reason codes and informational messages about its activity. This article explains the reason codes and the messages.
 
-- [Informational Messages](#BKMK_InformationalMessages)
-
-- [5xx](#BKMK_ReasonCode50x)
-
-- [10xx](#BKMK_ReasonCode100x)
-
-- [11xx](#BKMK_ReasonCode110x)
-
-- [12xx](#BKMK_ReasonCode120x)
-
-- [13xx](#BKMK_ReasonCode130x)
-
-- [14xx](#BKMK_ReasonCode140x)
-
-- [15xx](#BKMK_ReasonCode150x)
-
-##  <a name="BKMK_InformationalMessages"></a> Informational Messages
+## <a name="BKMK_InformationalMessages"></a> Informational messages
 
 Depending on the reporting level that you specify, one of the following informational messages appears for each loop.
 
@@ -32,27 +16,25 @@ For information about reason codes, refer to the next part of this article.
 
 |Informational Message|Description|
 |---------------------------|-----------------|
-|5001|Loop vectorized.|
-|5002|Loop not vectorized due to reason 'description'.|
-|5011|Loop parallelized.|
-|5012|Loop not parallelized due to reason 'description'.|
-|5021|Unable to associate loop with pragma.|
+|5001|`Loop vectorized.`|
+|5002|`Loop not vectorized due to reason '*description*'.`|
+|5011|`Loop parallelized.`|
+|5012|`Loop not parallelized due to reason '*description*'.`|
+|5021|`Unable to associate loop with pragma.`|
 
-## Reason Codes
+The following sections list possible reason codes for the parallelizer and vectorizer.
 
-The following sections list possible reason codes for the auto-parallelizer and auto-vectorizer.
+## <a name="BKMK_ReasonCode50x"></a> 5xx reason codes
 
-###  <a name="BKMK_ReasonCode50x"></a> 5xx
-
-The 5*xx* reason codes apply to both the auto-parallelizer and the auto-vectorizer.
+The 5*xx* reason codes apply to both the parallelizer and the vectorizer.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|500|This is a generic message that covers several cases—for example, the loop includes multiple exits, or the loop header does not end by incrementing the induction variable.|
-|501|Induction variable is not local; or upper bound is not loop-invariant.|
-|502|Induction variable is stepped in some manner other than a simple +1.|
-|503|Loop includes exception-handling or switch statements.|
-|504|Loop body may throw an exception that requires destruction of a C++ object.|
+|500|A generic message that covers several cases—for example, the loop includes multiple exits, or the loop header doesn't end by incrementing the induction variable.|
+|501|`Induction variable is not local; or upper bound is not loop-invariant.`|
+|502|`Induction variable is stepped in some manner other than a simple +1.`|
+|503|`Loop includes exception-handling or switch statements.`|
+|504|`Loop body may throw an exception that requires destruction of a C++ object.`|
 
 ```cpp
 void code_500(int *A)
@@ -205,23 +187,23 @@ void code_504(int *A) {
 }
 ```
 
-###  <a name="BKMK_ReasonCode100x"></a> 10xx
+## <a name="BKMK_ReasonCode100x"></a> 10xx reason codes
 
-The 10*xx* reason codes apply to the auto-parallelizer.
+The 10*xx* reason codes apply to the parallelizer.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1000|The compiler detected a data dependency in the loop body.|
-|1001|The compiler detected a store to a scalar variable in the loop body, and that scalar has a use beyond the loop.|
-|1002|The compiler tried to parallelize a loop that has an inner loop that was already parallelized.|
-|1003|The loop body contains an intrinsic call that may read or write to memory.|
-|1004|There is a scalar reduction in the loop body. Scalar reduction can occur if the loop has been vectorized.|
-|1005|The **no_parallel** pragma was specified.|
-|1006|This function contains **openmp**. Resolve this by removing any **openmp** in this function.|
-|1007|The loop induction variable or the loop bounds are not signed 32-bit numbers (`int` or `long`). Resolve this by changing the type of the induction variable.|
-|1008|The compiler detected that this loop does not perform enough work to warrant auto-parallelization.|
-|1009|The compiler detected an attempt to parallelize a "do-while" loop. The auto-parallelizer only targets `for` loops.|
-|1010|The compiler detected that the loop is using "not-equals" (!=) for its condition.|
+|1000|`The compiler detected a data dependency in the loop body.`|
+|1001|`The compiler detected a store to a scalar variable in the loop body, and that scalar has a use beyond the loop.`|
+|1002|`The compiler tried to parallelize a loop that has an inner loop that was already parallelized.`|
+|1003|`The loop body contains an intrinsic call that may read or write to memory.`|
+|1004|`There is a scalar reduction in the loop body. Scalar reduction can occur if the loop has been vectorized.`|
+|1005|`The no_parallel pragma was specified.`|
+|1006|`This function contains openmp. Resolve this by removing any openmp in this function.`|
+|1007|`The loop induction variable or the loop bounds are not signed 32-bit numbers (int or long). Resolve this by changing the type of the induction variable.`|
+|1008|`The compiler detected that this loop does not perform enough work to warrant auto-parallelization.`|
+|1009|`The compiler detected an attempt to parallelize a "do-while" loop. The auto-parallelizer only targets "for" loops.`|
+|1010|`The compiler detected that the loop is using "not-equals" (!=) for its condition.`|
 
 ```cpp
 int A[1000];
@@ -414,19 +396,19 @@ void code_1010()
 }
 ```
 
-###  <a name="BKMK_ReasonCode110x"></a> 11xx
+## <a name="BKMK_ReasonCode110x"></a> 11xx reason codes
 
-The 11*xx* reason codes apply to the auto-vectorizer.
+The 11*xx* reason codes apply to the vectorizer.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1100|Loop contains control flow—for example, "if" or "?".|
-|1101|Loop contains datatype conversion—perhaps implicit—that cannot be vectorized.|
-|1102|Loop contains non-arithmetic or other non-vectorizable operations.|
-|1103|Loop body includes shift operations whose size might vary within the loop.|
-|1104|Loop body includes scalar variables.|
-|1105|Loop includes a unrecognized reduction operation.|
-|1106|Outer loop not vectorized.|
+|1100|`Loop contains control flow—for example, "if" or "?".`|
+|1101|`Loop contains datatype conversion—perhaps implicit—that cannot be vectorized.`|
+|1102|`Loop contains non-arithmetic or other non-vectorizable operations.`|
+|1103|`Loop body includes shift operations whose size might vary within the loop.`|
+|1104|`Loop body includes scalar variables.`|
+|1105|`Loop includes a unrecognized reduction operation.`|
+|1106|`Outer loop not vectorized.`|
 
 ```cpp
 void code_1100(int *A, int x)
@@ -562,16 +544,16 @@ void code_1106(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode120x"></a> 12xx
+## <a name="BKMK_ReasonCode120x"></a> 12xx reason codes
 
-The 12*xx* reason codes apply to the auto-vectorizer.
+The 12*xx* reason codes apply to the vectorizer.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1200|Loop contains loop-carried data dependences that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer cannot prove to itself that there are no such data dependences.|
-|1201|Array base changes during the loop.|
-|1202|Field in a struct is not 32 or 64 bits wide.|
-|1203|Loop body includes non-contiguous accesses into an array.|
+|1200|`Loop contains loop-carried data dependences that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer cannot prove to itself that there are no such data dependences.`|
+|1201|`Array base changes during the loop.`|
+|1202|`Field in a struct is not 32 or 64 bits wide.`|
+|1203|`Loop body includes non-contiguous accesses into an array.`|
 
 ```cpp
 void fn();
@@ -637,18 +619,18 @@ void code_1203(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode130x"></a> 13xx
+## <a name="BKMK_ReasonCode130x"></a> 13xx reason codes
 
-The 13*xx* reason codes apply to the auto-vectorizer.
+The 13*xx* reason codes apply to the vectorizer.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1300|Loop body contains no—or very little—computation.|
-|1301|Loop stride is not +1.|
-|1302|Loop is a "do-while".|
-|1303|Too few loop iterations for vectorization to provide value.|
-|1304|Loop includes assignments that are of different sizes.|
-|1305|Not enough type information.|
+|1300|`Loop body contains no—or very little—computation.`|
+|1301|`Loop stride is not +1.`|
+|1302|`Loop is a "do-while".`|
+|1303|`Too few loop iterations for vectorization to provide value.`|
+|1304|`Loop includes assignments that are of different sizes.`|
+|1305|`Not enough type information.`|
 
 ```cpp
 void code_1300(int *A, int *B)
@@ -769,18 +751,18 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-###  <a name="BKMK_ReasonCode140x"></a> 14xx
+## <a name="BKMK_ReasonCode140x"></a> 14xx reason codes
 
-The 14*xx* reason codes occur when some option that is incompatible with auto-vectorization is specified.
+The 14*xx* reason codes occur when some option that is incompatible with vectorization is specified.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1400|**#pragma loop(no_vector)** is specified.|
-|1401|**/kernel** switch is specified when targeting x86 or ARM.|
-|1402|**/arch:SSE2** or higher switch is not specified when targeting x86.|
-|1403|**/arch:ATOM** switch is specified and the loop includes operations on doubles.|
-|1404|**/O1** or **/Os** switch is specified.|
-|1405|Vectorization is disabled to aid in dynamic-initializer-to-static-initializer optimization.|
+|1400|`#pragma loop(no_vector) is specified.`|
+|1401|`/kernel switch is specified when targeting x86 or ARM.`|
+|1402|`/arch:SSE2 or higher switch is not specified when targeting x86.`|
+|1403|`/arch:ATOM switch is specified and the loop includes operations on doubles.`|
+|1404|`/O1 or /Os switch is specified.`|
+|1405|`Vectorization is disabled to aid in dynamic-initializer-to-static-initializer optimization.`|
 
 ```cpp
 void code_1400(int *A)
@@ -841,18 +823,18 @@ void code_1404(int *A)
 }
 ```
 
-###  <a name="BKMK_ReasonCode150x"></a> 15xx
+## <a name="BKMK_ReasonCode150x"></a> 15xx reason codes
 
-The block of 15*xx* reason codes apply to aliasing. Aliasing occurs when a location in memory can be accessed by two different names.
+The 15*xx* reason codes apply to aliasing. Aliasing occurs when a location in memory can be accessed by two different names.
 
 |Reason Code|Explanation|
 |-----------------|-----------------|
-|1500|Possible aliasing on multi-dimensional arrays.|
-|1501|Possible aliasing on arrays-of-structs.|
-|1502|Possible aliasing and array index is other than n + K.|
-|1503|Possible aliasing and array index has multiple offsets.|
-|1504|Possible aliasing; would require too many runtime checks.|
-|1505|Possible aliasing, but runtime checks are too complex.|
+|1500|`Possible aliasing on multi-dimensional arrays.`|
+|1501|`Possible aliasing on arrays-of-structs.`|
+|1502|`Possible aliasing and array index is other than n + K.`|
+|1503|`Possible aliasing and array index has multiple offsets.`|
+|1504|`Possible aliasing; would require too many runtime checks.`|
+|1505|`Possible aliasing, but runtime checks are too complex.`|
 
 ```cpp
 void code_1500(int A[100][100], int B[100][100])
@@ -971,9 +953,10 @@ void code_1505(int *A, int *B)
 
 ## See also
 
-[Auto-Parallelization and Auto-Vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md)<br/>
-[Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>
-[#pragma loop()](../../preprocessor/loop.md)<br/>
-[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)<br/>
-[/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md)
+[Auto-parallelization and auto-vectorization](../../parallel/auto-parallelization-and-auto-vectorization.md) \
+[Auto-Vectorizer in Visual Studio 2012 – Overview](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[#pragma loop()](../../preprocessor/loop.md) \
+[/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md) \
+[/Qpar-report (Auto-Parallelizer Reporting Level)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
 [/Qvec-report (Auto-Vectorizer Reporting Level)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

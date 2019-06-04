@@ -37,9 +37,9 @@ Your class, derived from `IPersistPropertyBagImpl`.
 
 ## Remarks
 
-The [IPersistPropertyBag](https://msdn.microsoft.com/library/aa768205.aspx) interface allows an object to save its properties to a client-supplied property bag. Class `IPersistPropertyBagImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) interface allows an object to save its properties to a client-supplied property bag. Class `IPersistPropertyBagImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
-`IPersistPropertyBag` works in conjunction with [IPropertyBag](https://msdn.microsoft.com/library/aa768196.aspx) and [IErrorLog](https://msdn.microsoft.com/library/aa768231.aspx). These latter two interfaces must be implemented by the client. Through `IPropertyBag`, the client saves and loads the object's individual properties. Through `IErrorLog`, both the object and the client can report any errors encountered.
+`IPersistPropertyBag` works in conjunction with [IPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768196\(v=vs.85\)) and [IErrorLog](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768231\(v=vs.85\)). These latter two interfaces must be implemented by the client. Through `IPropertyBag`, the client saves and loads the object's individual properties. Through `IErrorLog`, both the object and the client can report any errors encountered.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -79,7 +79,7 @@ Returns S_OK.
 
 ### Remarks
 
-See [IPersistPropertyBag::InitNew](https://msdn.microsoft.com/library/aa768204.aspx) in the Windows SDK.
+See [IPersistPropertyBag::InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) in the Windows SDK.
 
 ##  <a name="load"></a>  IPersistPropertyBagImpl::Load
 
@@ -93,7 +93,7 @@ STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 
 ATL uses the object's property map to retrieve this information.
 
-See [IPersistPropertyBag::Load](https://msdn.microsoft.com/library/aa768206.aspx) in the Windows SDK.
+See [IPersistPropertyBag::Load](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768206\(v=vs.85\)) in the Windows SDK.
 
 ##  <a name="save"></a>  IPersistPropertyBagImpl::Save
 
@@ -110,7 +110,7 @@ STDMETHOD(Save)(
 
 ATL uses the object's property map to store this information. By default, this method saves all properties, regardless of the value of *fSaveAllProperties*.
 
-See [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) in the Windows SDK.
+See [IPersistPropertyBag::Save](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768207\(v=vs.85\)) in the Windows SDK.
 
 ## See also
 

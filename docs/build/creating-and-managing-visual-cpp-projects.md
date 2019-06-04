@@ -1,8 +1,7 @@
 ---
 title: "Visual Studio Projects - C++"
 ms.date: "12/12/2018"
-f1_keywords: ["vcprojects", "creatingmanagingVC"]
-helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
+helpviewer_keywords: ["ATL projects, creating", "Visual Studio C++ projects, creating", "projects [C++], creating", "Visual Studio C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
 ---
 # Visual Studio projects - C++
@@ -11,9 +10,21 @@ A *Visual Studio project* is a project based on the MSBuild build system. MSBuil
 
 ## Create a project
 
-You can create C++ projects by choosing **File &#124; New &#124; Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates: 
+::: moniker range="vs-2019"
+
+You can create C++ projects by choosing **File** > **New** > **Project**, then setting the **Language** to C++. In the results list you see a list of project templates which you can filter by setting the **Platform** or **Project Type** and by typing keywords into the search box. 
+
+   ![Visual Studio 2019 Project Templates](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 New Project Dialog")
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+You can create C++ projects by choosing **File** > **New** > **Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates:
 
    ![Project Templates](../overview/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+
+::: moniker-end
 
 For more information about all the default project templates that are included in Visual Studio, see [C++ project templates in Visual Studio](reference/visual-cpp-project-types.md). You can create your own project templates. For more information, see [How to: Create project templates](/visualstudio/ide/how-to-create-project-templates).
 

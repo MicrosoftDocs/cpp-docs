@@ -1,7 +1,6 @@
 ---
 title: "Registering OLE Controls"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.macros.ole"]
 helpviewer_keywords: ["registering OLE controls", "OLE controls [MFC], registering"]
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
 ---
