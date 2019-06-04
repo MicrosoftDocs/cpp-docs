@@ -6,10 +6,6 @@ ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 ---
 # &lt;optional&gt; functions
 
-||||
-|-|-|-|
-|[make_optional](#make_optional)|[nullopt](#nullopt)|[swap](#swap)|
-
 ## <a name="make_optional"></a> make_optional
 
 Makes an object optional.
@@ -33,9 +29,5 @@ inline constexpr nullopt_t nullopt(unspecified );
 
 ```cpp
 template <class T>
-void swap(optional<T>&, optional<T>&) noexcept(see below );
+    void swap(optional<T>&, optional<T>&) noexcept(see below );
 ```
-
-## See also
-
-[<optional>](../standard-library/optional.md)<br/>

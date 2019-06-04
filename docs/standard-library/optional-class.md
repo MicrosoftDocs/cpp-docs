@@ -21,15 +21,17 @@ class optional
 template<class T> optional(T) -> optional<T>;
 ```
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[optional](#optional)|Constructs an object of type `optional`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[has_value](#has_value)|Returns **true** if `optional` contains value.|
 |[reset](#reset)|Resets the `optional`.|
@@ -38,28 +40,20 @@ template<class T> optional(T) -> optional<T>;
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|Replaces the `optional` with a copy of another `optional`.|
 |[operator->](#op_as)|Assign value to `optional`.|
 |[operator*](#op_mem)|Reference memory of `optional`.|
 |[operator bool](#op_bool)|Return Boolean of `optional` value.|
 
-## Requirements
-
-**Header:** \<optional>
-
-**Namespace:** std
-
-## <a name="has_value"></a>  optional::has_value
-
-No description.
+### <a name="has_value"></a> has_value
 
 ```cpp
 constexpr bool has_value() const noexcept;
 ```
 
-## <a name="optional"></a> optional::optional
+### <a name="optional"></a> optional
 
 Constructs an object of type `optional`. Also includes a destructor.
 
@@ -83,7 +77,7 @@ template <class U>
 ~optional();
 ```
 
-## <a name="op_eq"></a>  optional::operator=
+### <a name="op_eq"></a> operator=
 
 Replaces the `optional` with a copy of another `optional`.
 
@@ -100,18 +94,14 @@ template <class U, class... Args>
     T& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="op_as"></a>  optional::operator->
-
-No description.
+### <a name="op_as"></a> operator->
 
 ```cpp
 constexpr const T* operator->() const;
 constexpr T* operator->();
 ```
 
-## <a name="op_mem"></a>  optional::operator*
-
-No description.
+### <a name="op_mem"></a> operator*
 
 ```cpp
 constexpr const T& operator*() const&;
@@ -120,25 +110,19 @@ constexpr T&& operator*() &&;
 constexpr const T&& operator*() const&&;
 ```
 
-## <a name="op_bool"></a>  optional::operator bool
-
-No description.
+### <a name="op_bool"></a> operator bool
 
 ```cpp
 constexpr explicit operator bool() const noexcept;
 ```
 
-## <a name="reset"></a>  optional::reset
-
-No description.
+### <a name="reset"></a> reset
 
 ```cpp
 void reset() noexcept;
 ```
 
-## <a name="value"></a>  optional::value
-
-No description.
+### <a name="value"></a> value
 
 ```cpp
 constexpr const T& value() const&;
@@ -147,9 +131,7 @@ constexpr T&& value() &&;
 constexpr const T&& value() const&&;
 ```
 
-## <a name="value_or"></a>  optional::value_or
-
-No description.
+### <a name="value_or"></a> value_or
 
 ```cpp
 template <class U>
@@ -157,7 +139,3 @@ template <class U>
 template <class U>
     constexpr T value_or(U&&) &&;
 ```
-
-## See also
-
-[&lt;optional>](../standard-library/optional.md)

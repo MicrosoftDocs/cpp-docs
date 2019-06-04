@@ -16,7 +16,3 @@ class bad_optional_access : public exception
     public: bad_optional_access();
 };
 ```
-
-## See also
-
-[&lt;optional>](../standard-library/optional.md)

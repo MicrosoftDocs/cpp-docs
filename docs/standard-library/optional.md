@@ -9,15 +9,17 @@ ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
 
 Defines the container template class optional and several supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <optional>
-```
+**Header:** \<optional>
+
+**Namespace:** std
+
+## Members
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/optional-operators.md#op_eq_eq)|Tests if the `optional` object on the left side of the operator is equal to the `optional` object on the right side.|
 |[operator!=](../standard-library/optional-operators.md#op_neq)|Tests if the `optional` object on the left side of the operator is not equal to the `optional` object on the right side.|
@@ -31,14 +33,14 @@ Defines the container template class optional and several supporting templates.
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[make_optional](../standard-library/optional-functions.md#make_optional)|Makes an object optional.|
 |[swap](../standard-library/optional-functions.md#swap)||
 
 ### Classes and Structs
 
-|Class or Struct|Description|
+|||
 |-|-|
 |[hash]()||
 |[optional Class](../standard-library/optional-class.md)|Describes an object that may or may not hold a value.|
@@ -47,7 +49,7 @@ Defines the container template class optional and several supporting templates.
 
 ### Objects
 
-|Object|Description|
+|||
 |-|-|
 |[nullopt](../standard-library/optional-functions.md#nullopt)||
 

@@ -14,7 +14,3 @@ An empty structure type used as a unique type to indicate the state of not conta
 struct nullopt_t{see below};
 inline constexpr nullopt_t nullopt(unspecified);
 ```
-
-## See also
-
-[&lt;optional>](../standard-library/optional.md)

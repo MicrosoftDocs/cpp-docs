@@ -7,12 +7,7 @@ helpviewer_keywords: ["std::operator!= (optional)", "std::operator== (optional)"
 ---
 # &lt;optional&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if the `optional` object on the left side of the operator is equal to the `optional` object on the right side.
 
@@ -26,12 +21,13 @@ template <class T, class U> constexpr bool operator==(const U&, const optional<T
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
-## <a name="op_neq"></a>  operator!=
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+## <a name="op_neq"></a> operator!=
 
 Tests if the `optional` object on the left side of the operator is not equal to the `optional` object on the right side.
 
@@ -45,16 +41,17 @@ template <class T, class U> constexpr bool operator!=(const U&, const optional<T
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Remarks
 
 This template function returns `!(left == right)`.
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Tests if the `optional` object on the left side of the operator is less than the `optional` object on the right side.
 
@@ -68,10 +65,11 @@ template <class T, class U> constexpr bool operator<(const U&, const optional<T>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
@@ -91,10 +89,11 @@ template <class T, class U> constexpr bool operator<=(const U&, const optional<T
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
@@ -104,7 +103,7 @@ template <class T, class U> constexpr bool operator<=(const U&, const optional<T
 
 This template function returns `!(right < left)`.
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> operator&gt;
 
 Tests if the `optional` object on the left side of the operator is greater than the `optional` object on the right side.
 
@@ -118,10 +117,11 @@ template <class T, class U> constexpr bool operator>(const U&, const optional<T>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
@@ -131,7 +131,7 @@ template <class T, class U> constexpr bool operator>(const U&, const optional<T>
 
 This template function returns `right < left`.
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Tests if the `optional` object on the left side of the operator is greater than or equal to the `optional` object on the right side.
 
@@ -145,10 +145,11 @@ template <class T, class U> constexpr bool operator>=(const U&, const optional<T
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `optional`, `nullopt_t`, or `T`.|
-|*right*|An object of type `optional`, `nullopt_t`, or `T`.|
+*left*\
+An object of type `optional`, `nullopt_t`, or `T`.
+
+*right*\
+An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
@@ -157,7 +158,3 @@ template <class T, class U> constexpr bool operator>=(const U&, const optional<T
 ### Remarks
 
 The template function returns `!(left < right)`.
-
-## See also
-
-[<forward_list>](../standard-library/forward-list.md)<br/>
