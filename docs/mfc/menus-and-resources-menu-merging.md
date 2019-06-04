@@ -16,9 +16,7 @@ Topics covered in this article include:
 
 ##  <a name="_core_menu_layouts"></a> Menu Layouts
 
-The first step is to coordinate menu layouts. For more information, see the **Menu Creation** section in [Menu Programming Considerations](https://msdn.microsoft.com/library/ms647557.aspx) in the Windows SDK.
-
-Container applications should create a new menu to be used only when embedded items are activated in place. At the minimum, this menu should consist of the following, in the order listed:
+The first step is to coordinate menu layouts. Container applications should create a new menu to be used only when embedded items are activated in place. At the minimum, this menu should consist of the following, in the order listed:
 
 1. File menu identical to the one used when files are open. (Usually no other menu items are placed before the next item.)
 

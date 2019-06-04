@@ -33,7 +33,7 @@ For a more detailed description of the technology, see [ClickOnce Security and D
 
 [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)<br>
+[Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)<br>
 [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)<br>
 [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)<br>
 [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)<br>

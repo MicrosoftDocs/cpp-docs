@@ -102,7 +102,7 @@ To determine if an attached bitmap is a DIB section, call [IsDibSection](#isdibs
 > [!NOTE]
 > Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [CImage::ReleaseGDIPlus](#releasegdiplus) to explicitly release resources used by GDI+.
 
-`CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#cdc__fromhandle.
+`CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#fromhandle).
 
 ## Example
 
@@ -424,7 +424,7 @@ Specifies the type of compression for a compressed bottom-up bitmap (top-down DI
 - BI_BITFIELDS The format is uncompressed and the color table consists of three DWORD color masks that specify the red, green, and blue components, respectively, of each pixel. This is valid when used with 16- and 32-bpp bitmaps.
 
 *pdwBitfields*<br/>
-Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) in the Windows SDK.
+Only used if *eCompression* is set to BI_BITFIELDS, otherwise it must be NULL. A pointer to an array of three DWORD bitmasks, specifying which bits of each pixel are used for the red, green, and blue components of the color, respectively. For information on restrictions for the bitfields, see [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK.
 
 *dwFlags*<br/>
 Specifies if the bitmap object has an alpha channel. Can be a combination of zero or more of the following values:
@@ -592,7 +592,7 @@ The number of bits per pixel.
 
 This value determines the number of bits that define each pixel and the maximum number of colors in the bitmap.
 
-The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) in the Windows SDK for more information about this value.
+The bits per pixel is usually 1, 4, 8, 16, 24, or 32. See the `biBitCount` member of [BITMAPINFOHEADER](/previous-versions//dd183376\(v=vs.85\)) in the Windows SDK for more information about this value.
 
 ##  <a name="getcolortable"></a>  CImage::GetColorTable
 
