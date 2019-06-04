@@ -18,7 +18,7 @@ class bitset
 
 ### Parameters
 
-*N*<br/>
+*N*\
 Specifies the number of bits in the bitset object with a nonzero integer of type `size_t` that must be known at compile time.
 
 ## Remarks
@@ -27,21 +27,17 @@ Unlike the similar [vector\<bool> Class](../standard-library/vector-bool-class.m
 
 A bit is set if its value is 1 and reset if its value is 0. To flip or invert a bit is to change its value from 1 to 0 or from 0 to 1. The *N* bits in a bitset are indexed by integer values from 0 to *N* - 1, where 0 indexes the first bit position and *N* - 1 the final bit position.
 
-### Constructors
+## Members
 
 |Constructor|Description|
 |-|-|
 |[bitset](#bitset)|Constructs an object of class `bitset\<N>` and initializes the bits to zero, to some specified value, or to values obtained from characters in a string.|
 
-### Typedefs
-
-|Type name|Description|
+|Typedef|Description|
 |-|-|
 |[element_type](#element_type)|A type that is a synonym for the data type **bool** and can be used to reference element bits in a `bitset`.|
 
-### Member functions
-
-|Member function|Description|
+|Function|Description|
 |-|-|
 |[all](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **true**.|
 |[any](#any)|The member function tests whether any bit in the sequence is set to 1.|
@@ -56,13 +52,9 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[to_ullong](#to_ullong)|Returns the sum of the bit values in the `bitset` as an **unsigned long long**.|
 |[to_ulong](#to_ulong)|Converts a `bitset` object to the **unsigned long** that would generate the sequence of bits contained if used to initialize the `bitset`.|
 
-### Member Classes
-
-|Member class|Description|
+|Class|Description|
 |-|-|
 |[reference](#reference)|A proxy class that provides references to bits contained in a `bitset` that is used to access and manipulate the individual bits as a helper class for the `operator[]` of class `bitset`.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -78,11 +70,9 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |[operator&#124;=](#op_or_eq)|Performs a bitwise combination of bitsets with the inclusive `OR` operation.|
 |[operator~](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
-### Structures
-
 |Structure|Description|
 |-|-|
-|[hash](#hash)||
+|[hash](#hash)|TBD|
 
 ## Requirements
 
@@ -90,7 +80,7 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 **Namespace:** std
 
-## <a name="all"></a>  bitset::all
+## <a name="all"></a> all
 
 Tests all of the bits in this bitset to determine if they are all set to true.
 
@@ -102,7 +92,7 @@ bool all() const;
 
 Returns true if all bits in this set are true. Returns **false** if one or more bits are false.
 
-## <a name="any"></a>  bitset::any
+## <a name="any"></a> any
 
 Tests whether any bit in the sequence is set to 1.
 
@@ -165,7 +155,7 @@ The reset bitset is: ( 00000 )
 None of the bits in bitset b1 are set to 1.
 ```
 
-## <a name="bitset"></a>  bitset::bitset
+## <a name="bitset"></a> bitset
 
 Constructs an object of class `bitset\<N>` and initializes the bits to zero, or to some specified value, or to values obtained from characters in a string.
 
@@ -198,25 +188,25 @@ explicit bitset(
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The unsigned integer whose base two representation is used to initialize the bits in the bitset being constructed.
 
-*str*<br/>
+*str*\
 The string of zeros and ones used to initialize the bitset bit values.
 
-*_CStr*<br/>
+*_CStr*\
 A C-style string of zeros and ones used to initialize the bitset bit values.
 
-*_Pos*<br/>
+*_Pos*\
 The position of the character in the string, counting from left to right and starting with zero, used to initialize the first bit in the bitset.
 
-*count*<br/>
+*count*\
 The number of characters in the string that is used to provide initial values for the bits in the bitset.
 
-*_Zero*<br/>
+*_Zero*\
 The character that is used to represent a zero. The default is '0'.
 
-*_One*<br/>
+*_One*\
 The character that is used to represent a one. The default is '1'.
 
 ### Remarks
@@ -310,7 +300,7 @@ The set of bits in bitset<11> b6( bitval5, 3, 5 ) is ( 00000010011 ).
 The set of bits in bitset<9> b7( bitval, 2 ) is ( 110011011 ).
 ```
 
-## <a name="count"></a>  bitset::count
+## <a name="count"></a> count
 
 Returns the number of bits set in the bit sequence.
 
@@ -323,8 +313,6 @@ size_t count() const;
 The number of bits set in the bit sequence.
 
 ### Example
-
-The following example demonstrates the use of the bitset::count member function.
 
 ```cpp
 // bitset_count.cpp
@@ -366,7 +354,7 @@ The collection of flipped bits in the modified bitset is: ( 11011 )
 The number of bits in the bitset set to 1 is: 4.
 ```
 
-## <a name="element_type"></a>  bitset::element_type
+## <a name="element_type"></a> element_type
 
 A type that is a synonym for the data type **bool** and can be used to reference element bits in a bitset.
 
@@ -422,7 +410,7 @@ Bitset b1 modified by b1[2] = 1 is: ( 110 )
 The bit at position 2 of bitset b1has a value of 1.
 ```
 
-## <a name="flip"></a>  bitset::flip
+## <a name="flip"></a> flip
 
 Inverts the value of all the bits in a bitset or inverts a single bit at a specified position.
 
@@ -433,7 +421,7 @@ bitset\<N>& flip(size_t _Pos);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position of the bit whose value is to be inverted.
 
 ### Return Value
@@ -495,14 +483,14 @@ After flipping the fourth bit, the bitset becomes: ( 10001 )
 11111  The bit flipped is in position 4.
 ```
 
-## <a name="hash"></a>  bitset::hash
+## <a name="hash"></a> hash
 
 ```cpp
 template <class T> struct hash;
 template <size_t N> struct hash<bitset<N>>;
 ```
 
-## <a name="none"></a>  bitset::none
+## <a name="none"></a> none
 
 Tests if no bit has been set to 1 in a bitset object.
 
@@ -559,7 +547,7 @@ At least one of the bits in bitset b1 is set to 1.
 None of the bits in bitset b1 are set to 1.
 ```
 
-## <a name="op_neq"></a>  bitset::operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests a target bitset for inequality with a specified bitset.
 
@@ -569,7 +557,7 @@ bool operator!=(const bitset\<N>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The bitset that is to be compared to the target bitset for inequality.
 
 ### Return Value
@@ -621,7 +609,7 @@ Bitset b1 is the same as bitset b2.
 Bitset b1 is different from bitset b3.
 ```
 
-## <a name="op_and_eq"></a>  bitset::operator&amp;=
+## <a name="op_and_eq"></a> operator&amp;=
 
 Performs a bitwise combination of bitsets with the logical `AND` operation.
 
@@ -631,7 +619,7 @@ bitset\<N>& operator&=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -688,7 +676,7 @@ the target bitset b1 becomes:   ( 00011 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-## <a name="op_lshift"></a> bitset::operator\<\<
+## <a name="op_lshift"></a> operator\<\<
 
 Shifts the bits in a bitset to the left a specified number of positions and returns the result to a new bitset.
 
@@ -698,7 +686,7 @@ bitset\<N> operator<<(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The number of positions to the left that the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -740,7 +728,7 @@ int main( )
 }
 ```
 
-## <a name="op_lshift_eq"></a>  bitset::operator&lt;&lt;=
+## <a name="op_lshift_eq"></a> operator&lt;&lt;=
 
 Shifts the bits in a bitset to the left a specified number of positions and returns the result to the targeted bitset.
 
@@ -750,7 +738,7 @@ bitset\<N>& operator<<=(size_t _Pos);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The number of positions to the left the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -787,7 +775,7 @@ After shifting the bits 2 positions to the left,
 the target bitset b1 becomes: ( 11100 ).
 ```
 
-## <a name="op_eq_eq"></a>  bitset::operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests a target bitset for equality with a specified bitset.
 
@@ -797,7 +785,7 @@ bool operator==(const bitset\<N>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The bitset that is to be compared to the target bitset for equality.
 
 ### Return Value
@@ -848,7 +836,7 @@ Bitset b1 is the same as bitset b2.
 Bitset b1 is different from bitset b3.
 ```
 
-## <a name="op_rshift"></a>  bitset::operator&gt;&gt;
+## <a name="op_rshift"></a> operator&gt;&gt;
 
 Shifts the bits in a bitset to the right a specified number of positions and returns the result to a new bitset.
 
@@ -858,7 +846,7 @@ bitset\<N> operator>>(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The number of positions to the right the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -901,7 +889,7 @@ After shifting the bits 1 position to the right,
 the bitset b3 is: ( 01110 ).
 ```
 
-## <a name="op_rshift_eq"></a>  bitset::operator&gt;&gt;=
+## <a name="op_rshift_eq"></a> operator&gt;&gt;=
 
 Shifts the bits in a bitset to the right a specified number of positions and returns the result to the targeted bitset.
 
@@ -911,7 +899,7 @@ bitset\<N>& operator>>=(size_t _Pos);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The number of positions to the right the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -949,7 +937,7 @@ After shifting the bits 2 positions to the right,
 the target bitset b1 becomes: ( 00111 ).
 ```
 
-## <a name="op_at"></a>  bitset::operator[]
+## <a name="op_at"></a> operator[]
 
 Returns a reference to a bit at a specified position in a bitset if the bitset is modifiable; otherwise, it returns the value of the bit at that position.
 
@@ -960,7 +948,7 @@ reference operator[](size_t _Pos);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position locating the bit within the bitset.
 
 ### Remarks
@@ -993,7 +981,7 @@ int main( )
 }
 ```
 
-## <a name="op_xor_eq"></a>  bitset::operator^=
+## <a name="op_xor_eq"></a> operator^=
 
 Performs a bitwise combination of bitsets with the exclusive `OR` operation.
 
@@ -1003,7 +991,7 @@ bitset\<N>& operator^=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -1059,7 +1047,7 @@ the target bitset b1 becomes:   ( 01100 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-## <a name="op_or_eq"></a>  bitset::operator&#124;=
+## <a name="op_or_eq"></a> operator&#124;=
 
 Performs a bitwise combination of bitsets with the inclusive `OR` operation.
 
@@ -1069,7 +1057,7 @@ bitset\<N>& operator|=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -1126,7 +1114,7 @@ the target bitset b1 becomes:   ( 01111 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-## <a name="op_not"></a>  bitset::operator~
+## <a name="op_not"></a> operator~
 
 Inverts all the bits in a target bitset and returns the result.
 
@@ -1189,10 +1177,10 @@ public:
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The value of the object of type **bool** to be assigned to a bit in a bitset.
 
-*_Bitref*<br/>
+*_Bitref*\
 A reference of the form *x [ i ]* to the bit at position *i* in bitset *x*.
 
 ### Return Value
@@ -1293,7 +1281,7 @@ it becomes ( 00110 ).
 After a second flip, the value of the position 4 bit in b2 is now: 1.
 ```
 
-## <a name="reset"></a>  bitset::reset
+## <a name="reset"></a> reset
 
 Resets all the bits in a bitset to 0 or resets a bit at a specified position to 0.
 
@@ -1304,7 +1292,7 @@ bitset\<N>& reset(size_t _Pos);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position of the bit in the bitset to be reset to 0.
 
 ### Return Value
@@ -1353,7 +1341,7 @@ The collecion of bits obtained from resetting all
 the elements of the bitset b1 is: ( 00000 )
 ```
 
-## <a name="set"></a>  bitset::set
+## <a name="set"></a> set
 
 Sets all the bits in a bitset to 1 or sets a bit at a specified position to 1.
 
@@ -1367,10 +1355,10 @@ bitset\<N>& set(
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position of the bit in the bitset to be set to assigned a value.
 
-*val*<br/>
+*val*\
 The value to be assigned to the bit at the position specified.
 
 ### Return Value
@@ -1419,7 +1407,7 @@ The collecion of bits obtained from setting all the
 elements of the bitset b1 is: ( 11111 )
 ```
 
-## <a name="size"></a>  bitset::size
+## <a name="size"></a> size
 
 Returns the number of bits in a bitset object.
 
@@ -1432,8 +1420,6 @@ size_t size() const;
 The number of bits, *N*, in a bitset\<N>.
 
 ### Example
-
-The following example demonstrates the use of the bitset::size member function.
 
 ```cpp
 // bitset_size.cpp
@@ -1463,7 +1449,7 @@ The set of bits in bitset<5> b1( 6 ) is: ( 00110 )
 The number of bits in bitset b1 is: 5.
 ```
 
-## <a name="test"></a>  bitset::test
+## <a name="test"></a> test
 
 Tests whether the bit at a specified position in a bitset is set to 1.
 
@@ -1473,7 +1459,7 @@ bool test(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position of the bit in the bitset to be tested for its value.
 
 ### Return Value
@@ -1484,7 +1470,7 @@ The position of the bit in the bitset to be tested for its value.
 
 The member function throws an [out_of_range](../standard-library/out-of-range-class.md)
 
-## <a name="to_string"></a> bitset::to_string
+## <a name="to_string"></a> to_string
 
 Converts a bitset object to a string representation.
 
@@ -1532,7 +1518,7 @@ The string returned from the bitset b1
   by the member function to_string( ) is: 00111.
 ```
 
-## <a name="to_ullong"></a> bitset::to_ullong
+## <a name="to_ullong"></a> to_ullong
 
 Returns an **unsigned long long** value that contains the same bits set as the contents of the bitset object.
 
@@ -1552,7 +1538,7 @@ Throws an [overflow_error](overflow-error-class.md) object if any bit in the bit
 
 Returns the sum of the bit values that are in the bit sequence as an **unsigned long long**.
 
-## <a name="to_ulong"></a> bitset::to_ulong
+## <a name="to_ulong"></a> to_ulong
 
 Converts a bitset object to the integer that would generate the sequence of bits contained if used to initialize the bitset.
 

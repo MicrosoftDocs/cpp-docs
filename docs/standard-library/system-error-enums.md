@@ -6,11 +6,7 @@ ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 ---
 # &lt;system_error&gt; enums
 
-|||
-|-|-|
-|[errc](#errc)|[io_errc](#io_errc)|
-
-## <a name="errc"></a>  errc Enumeration
+## <a name="errc"></a> errc
 
 Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
 
@@ -94,18 +90,20 @@ class errc {
    too_many_synbolic_link_levels = ELOOP,
    value_too_large = EOVERFLOW,
    wrong_protocol_type = EPROTOTYPE,
-   };
+};
 ```
 
 ### Remarks
 
-## <a name="io_errc"></a>  io_errc Enumeration
+## <a name="io_errc"></a> io_errc
 
 Provides symbolic names for the error conditions in \<iostream>. Can be used to create [error_condition](../standard-library/error-condition-class.md) objects to be compared with the value that's returned by the [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()` function.
 
+```
 class io_errc {
    stream = 1
-   };
+};
+```
 
 ### Remarks
 

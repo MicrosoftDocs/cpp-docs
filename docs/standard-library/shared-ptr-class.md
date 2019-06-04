@@ -94,38 +94,30 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ## Members
 
-### Constructors
-
 |Constructor|Description|
 |-|-|
 |[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|
 |[shared_ptr::~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
 
-### Types
-
-|Type name|Description|
+|Typedef|Description|
 |-|-|
 |[element_type](#element_type)|The type of an element.|
 
-### Functions
-
 |Function|Description|
 |-|-|
-|[allocate_shared](#allocate_shared)||
-|[const_pointer_cast](#const_pointer_cast)||
-|[dynamic_pointer_cast](#dynamic_pointer_cast)||
+|[allocate_shared](#allocate_shared)|TBD|
+|[const_pointer_cast](#const_pointer_cast)|TBD
+|[dynamic_pointer_cast](#dynamic_pointer_cast)|TBD|
 |[get](#get)|Gets address of owned resource.|
-|[get_deleter](#get_deleter)||
-|[make_shared](#make_shared)||
+|[get_deleter](#get_deleter)|TBD|
+|[make_shared](#make_shared)|TBD|
 |[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
-|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
+|[reinterpret_pointer_cast](#reinterpret_pointer_cast)|TBD|
 |[reset](#reset)|Replace owned resource.|
-|[static_pointer_cast](#static_pointer_cast)||
+|[static_pointer_cast](#static_pointer_cast)|TBD|
 |[swap](#swap)|Swaps two `shared_ptr` objects.|
 |[unique](#unique)|Tests if owned resource is unique.|
 |[use_count](#use_count)|Counts numbers of resource owners.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -133,7 +125,7 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 |[shared_ptr::operator*](#op_star)|Gets the designated value.|
 |[shared_ptr::operator=](#op_eq)|Replaces the owned resource.|
 |[shared_ptr::operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
-|[shared_ptr::operator&lt;&lt;](#op_arrowarrow)||
+|[shared_ptr::operator&lt;&lt;](#op_arrowarrow)|TBD|
 
 ## Requirements
 
@@ -141,28 +133,28 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 **Namespace:** std
 
-## <a name="allocate_shared"></a>  allocate_shared
+## <a name="allocate_shared"></a> allocate_shared
 
 ```cpp
 template<class T, class A, class... Args>
-shared_ptr<T> allocate_shared(const A& a, Args&&... args);
+    shared_ptr<T> allocate_shared(const A& a, Args&&... args);
 ```
 
-## <a name="const_pointer_cast"></a>  const_pointer_cast
+## <a name="const_pointer_cast"></a> const_pointer_cast
 
 ```cpp
 template<class T, class U>
-shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
+    shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
 ```
 
-## <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast
+## <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
 
 ```cpp
 template<class T, class U>
-shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
+    shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
 ```
 
-## <a name="element_type"></a>  shared_ptr::element_type
+## <a name="element_type"></a> shared_ptr::element_type
 
 The type of an element.
 
@@ -197,7 +189,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="get"></a>  shared_ptr::get
+## <a name="get"></a> get
 
 Gets address of owned resource.
 
@@ -235,21 +227,21 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="get_deleter"></a>  get_deleter
+## <a name="get_deleter"></a> get_deleter
 
 ```cpp
 template<class D, class T>
-D* get_deleter(const shared_ptr<T>& p) noexcept;
+    D* get_deleter(const shared_ptr<T>& p) noexcept;
 ```
 
-## <a name="make_shared"></a>  make_shared
+## <a name="make_shared"></a> make_shared
 
 ```cpp
 template<class T, class... Args>
-shared_ptr<T> make_shared(Args&&... args);
+    shared_ptr<T> make_shared(Args&&... args);
 ```
 
-## <a name="op_bool"></a>  shared_ptr::operator bool
+## <a name="op_bool"></a> operator bool
 
 Tests if an owned resource exists.
 
@@ -288,7 +280,7 @@ int main()
 (bool)sp1 == true
 ```
 
-## <a name="op_star"></a>  shared_ptr::operator*
+## <a name="op_star"></a> operator*
 
 Gets the designated value.
 
@@ -322,7 +314,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="op_eq"></a>  shared_ptr::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the owned resource.
 
@@ -330,27 +322,27 @@ Replaces the owned resource.
 shared_ptr& operator=(const shared_ptr& sp);
 
 template <class Other>
-shared_ptr& operator=(const shared_ptr<Other>& sp);
+    shared_ptr& operator=(const shared_ptr<Other>& sp);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>& ap);
+    shared_ptr& operator=(auto_ptr<Other>& ap);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>& ap);
+    shared_ptr& operator=(auto_ptr<Other>& ap);
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>&& ap);
+    shared_ptr& operator=(auto_ptr<Other>&& ap);
 
 template <class Other, class Deletor>
-shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
+    shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 ```
 
 ### Parameters
 
-*sp*<br/>
+*sp*\
 The shared pointer to copy.
 
-*ap*<br/>
+*ap*\
 The auto pointer to copy.
 
 ### Remarks
@@ -386,7 +378,7 @@ int main()
 *sp0 == 10
 ```
 
-## <a name="op_arrow"></a>  shared_ptr::operator-&gt;
+## <a name="op_arrow"></a> operator-&gt;
 
 Gets a pointer to the designated value.
 
@@ -423,42 +415,42 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-## <a name="op_arrowarrow"></a>  shared_ptr::operator&lt;&lt;
+## <a name="op_arrowarrow"></a> operator&lt;&lt;
 
 ```cpp
 template<class E, class T, class Y>
-basic_ostream<E, T>& operator<< (basic_ostream<E, T>& os, const shared_ptr<Y>& p);
+    basic_ostream<E, T>& operator<< (basic_ostream<E, T>& os, const shared_ptr<Y>& p);
 ```
 
-## <a name="owner_before"></a>  shared_ptr::owner_before
+## <a name="owner_before"></a> owner_before
 
 Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
-bool owner_before(const shared_ptr<Other>& ptr);
+    bool owner_before(const shared_ptr<Other>& ptr);
 
 template <class Other>
-bool owner_before(const weak_ptr<Other>& ptr);
+    bool owner_before(const weak_ptr<Other>& ptr);
 ```
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
 The template member function returns true if `*this` is `ordered before` `ptr`.
 
-## <a name="reinterpret_pointer_cast"></a>  reinterpret_pointer_cast
+## <a name="reinterpret_pointer_cast"></a> reinterpret_pointer_cast
 
 ```cpp
 template<class T, class U>
-shared_ptr<T> reinterpret_pointer_cast(const shared_ptr<U>& r) noexcept;
+    shared_ptr<T> reinterpret_pointer_cast(const shared_ptr<U>& r) noexcept;
 ```
 
-## <a name="reset"></a>  shared_ptr::reset
+## <a name="reset"></a> reset
 
 Replace owned resource.
 
@@ -466,33 +458,33 @@ Replace owned resource.
 void reset();
 
 template <class Other>
-void reset(Other *ptr;);
+    void reset(Other *ptr;);
 
 template <class Other, class D>
-void reset(Other *ptr, D dtor);
+    void reset(Other *ptr, D dtor);
 
 template <class Other, class D, class A>
-void reset(Other *ptr, D dtor, A alloc);
+    void reset(Other *ptr, D dtor, A alloc);
 ```
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 The type controlled by the argument pointer.
 
-*D*<br/>
+*D*\
 The type of the deleter.
 
-*ptr*<br/>
+*ptr*\
 The pointer to copy.
 
-*dtor*<br/>
+*dtor*\
 The deleter to copy.
 
-*A*<br/>
+*A*\
 The type of the allocator.
 
-*alloc*<br/>
+*alloc*\
 The allocator to copy.
 
 ### Remarks
@@ -545,7 +537,7 @@ int main()
 *sp == 15
 ```
 
-## <a name="shared_ptr"></a>  shared_ptr::shared_ptr
+## <a name="shared_ptr"></a> shared_ptr
 
 Constructs a `shared_ptr`.
 
@@ -559,69 +551,69 @@ shared_ptr(const shared_ptr& sp);
 shared_ptr(shared_ptr&& sp);
 
 template <class Other>
-explicit shared_ptr(Other* ptr);
+    explicit shared_ptr(Other* ptr);
 
 template <class Other, class D>
-shared_ptr(Other* ptr, D dtor);
+    shared_ptr(Other* ptr, D dtor);
 
 template <class D>
-shared_ptr(nullptr_t ptr, D dtor);
+    shared_ptr(nullptr_t ptr, D dtor);
 
 template <class Other, class D, class A>
-shared_ptr(Other* ptr, D dtor, A  alloc);
+    shared_ptr(Other* ptr, D dtor, A  alloc);
 
 template <class D, class A>
-shared_ptr(nullptr_t ptr, D dtor, A alloc);
+    shared_ptr(nullptr_t ptr, D dtor, A alloc);
 
 template <class Other>
-shared_ptr(const shared_ptr<Other>& sp);
+    shared_ptr(const shared_ptr<Other>& sp);
 
 template <class Other>
-shared_ptr(const weak_ptr<Other>& wp);
+    shared_ptr(const weak_ptr<Other>& wp);
 
 template <class &>
-shared_ptr(std::auto_ptr<Other>& ap);
+    shared_ptr(std::auto_ptr<Other>& ap);
 
 template <class &>
-shared_ptr(std::auto_ptr<Other>&& ap);
+    shared_ptr(std::auto_ptr<Other>&& ap);
 
 template <class Other, class D>
-shared_ptr(unique_ptr<Other, D>&& up);
+    shared_ptr(unique_ptr<Other, D>&& up);
 
 template <class Other>
-shared_ptr(const shared_ptr<Other>& sp, T* ptr);
+    shared_ptr(const shared_ptr<Other>& sp, T* ptr);
 
 template <class Other, class D>
-shared_ptr(const unique_ptr<Other, D>& up) = delete;
+    shared_ptr(const unique_ptr<Other, D>& up) = delete;
 ```
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 The type controlled by the argument pointer.
 
-*ptr*<br/>
+*ptr*\
 The pointer to copy.
 
-*D*<br/>
+*D*\
 The type of the deleter.
 
-*A*<br/>
+*A*\
 The type of the allocator.
 
-*dtor*<br/>
+*dtor*\
 The deleter.
 
-*ator*<br/>
+*ator*\
 The allocator.
 
-*sp*<br/>
+*sp*\
 The smart pointer to copy.
 
-*wp*<br/>
+*wp*\
 The weak pointer.
 
-*ap*<br/>
+*ap*\
 The auto pointer to copy.
 
 ### Remarks
@@ -680,7 +672,7 @@ int main()
 *sp5 == 15
 ```
 
-## <a name="dtorshared_ptr"></a>  shared_ptr::~shared_ptr
+## <a name="dtorshared_ptr"></a> ~shared_ptr
 
 Destroys a `shared_ptr`.
 
@@ -735,14 +727,14 @@ use count == 2
 use count == 1
 ```
 
-## <a name="static_pointer_cast"></a>  static_pointer_cast
+## <a name="static_pointer_cast"></a> static_pointer_cast
 
 ```cpp
 template<class T, class U>
 shared_ptr<T> static_pointer_cast(const shared_ptr<U>& r) noexcept;
 ```
 
-## <a name="swap"></a>  shared_ptr::swap
+## <a name="swap"></a> swap
 
 Swaps two `shared_ptr` objects.
 
@@ -752,7 +744,7 @@ void swap(shared_ptr& sp);
 
 ### Parameters
 
-*sp*<br/>
+*sp*\
 The shared pointer to swap with.
 
 ### Remarks
@@ -812,7 +804,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="unique"></a>  shared_ptr::unique
+## <a name="unique"></a> unique
 
 Tests if owned resource is unique.
 
@@ -859,7 +851,7 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-## <a name="use_count"></a>  shared_ptr::use_count
+## <a name="use_count"></a> use_count
 
 Counts numbers of resource owners.
 

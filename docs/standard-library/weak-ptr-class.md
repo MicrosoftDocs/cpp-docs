@@ -27,17 +27,18 @@ public:
       weak_ptr& operator=(const weak_ptr<Other>&);
    template <class Other>
       weak_ptr& operator=(shared_ptr<Other>&);
+      
    void swap(weak_ptr&);
    void reset();
    long use_count() const;
    bool expired() const;
    shared_ptr<Ty> lock() const;
-   };
+};
 ```
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type controlled by the weak pointer.
 
 ## Remarks
@@ -52,15 +53,11 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 ## Members
 
-### Constructors
-
 |Constructor|Description|
 |-|-|
 |[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|
 
-### Methods
-
-|||
+|Method|Description|
 |-|-|
 |[element_type](#element_type)|The type of the element.|
 |[expired](#expired)|Tests if ownership has expired.|
@@ -69,8 +66,6 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 |[reset](#reset)|Releases owned resource.|
 |[swap](#swap)|Swaps two `weak_ptr` objects.|
 |[use_count](#use_count)|Counts number of designated `shared_ptr` objects.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -82,7 +77,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 **Namespace:** std
 
-## <a name="element_type"></a>  element_type
+## <a name="element_type"></a> element_type
 
 The type of the element.
 
@@ -118,7 +113,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a>  expired
+## <a name="expired"></a> expired
 
 Tests if ownership has expired.
 
@@ -175,7 +170,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a>  lock
+## <a name="lock"></a> lock
 
 Obtains exclusive ownership of a resource.
 
@@ -232,7 +227,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="op_eq"></a>  operator=
+## <a name="op_eq"></a> operator=
 
 Replaces owned resource.
 
@@ -240,21 +235,21 @@ Replaces owned resource.
 weak_ptr& operator=(const weak_ptr& wp);
 
 template <class Other>
-weak_ptr& operator=(const weak_ptr<Other>& wp);
+    weak_ptr& operator=(const weak_ptr<Other>& wp);
 
 template <class Other>
-weak_ptr& operator=(const shared_ptr<Other>& sp);
+    weak_ptr& operator=(const shared_ptr<Other>& sp);
 ```
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 The type controlled by the argument shared/weak pointer.
 
-*wp*<br/>
+*wp*\
 The weak pointer to copy.
 
-*sp*<br/>
+*sp*\
 The shared pointer to copy.
 
 ### Remarks
@@ -293,16 +288,16 @@ int main()
 *wp1.lock() == 10
 ```
 
-## <a name="owner_before"></a>  owner_before
+## <a name="owner_before"></a> owner_before
 
 Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
-bool owner_before(const shared_ptr<Other>& ptr);
+    bool owner_before(const shared_ptr<Other>& ptr);
 
 template <class Other>
-bool owner_before(const weak_ptr<Other>& ptr);
+    bool owner_before(const weak_ptr<Other>& ptr);
 ```
 
 ### Parameters
@@ -314,7 +309,7 @@ An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 The template member function returns **true** if `*this` is `ordered before` `ptr`.
 
-## <a name="reset"></a>  reset
+## <a name="reset"></a> reset
 
 Releases owned resource.
 
@@ -356,7 +351,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Swaps two `weak_ptr` objects.
 
@@ -367,12 +362,13 @@ void swap(weak_ptr& wp);
 Also includes the specialization.
 
 ```cpp
-template<class T> void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
+template<class T>
+    void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 ```
 
 ### Parameters
 
-*wp*<br/>
+*wp*\
 The weak pointer to swap with.
 
 ### Remarks
@@ -432,7 +428,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="use_count"></a>  use_count
+## <a name="use_count"></a> use_count
 
 Counts number of designated `shared_ptr` objects.
 
@@ -472,7 +468,7 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-## <a name="weak_ptr"></a>  weak_ptr
+## <a name="weak_ptr"></a> weak_ptr
 
 Constructs a `weak_ptr`. Also includes a destructor.
 
@@ -482,23 +478,23 @@ weak_ptr();
 weak_ptr(const weak_ptr& wp);
 
 template <class Other>
-weak_ptr(const weak_ptr<Other>& wp);
+    weak_ptr(const weak_ptr<Other>& wp);
 
 template <class Other>
-weak_ptr(const shared_ptr<Other>& sp);
+    weak_ptr(const shared_ptr<Other>& sp);
 
 ~weak_ptr();
 ```
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 The type controlled by the argument shared/weak pointer.
 
-*wp*<br/>
+*wp*\
 The weak pointer to copy.
 
-*sp*<br/>
+*sp*\
 The shared pointer to copy.
 
 ### Remarks

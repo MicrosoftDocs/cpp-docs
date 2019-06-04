@@ -19,29 +19,23 @@ Defines several types and functions that control the allocation and freeing of s
 
 Some of the functions declared in this header are replaceable. The implementation supplies a default version, whose behavior is described in this document. A program can, however, define a function with the same signature to replace the default version at link time. The replacement version must satisfy the requirements described in this document.
 
-### Objects
+## Members
 
-|||
+|Object|Description|
 |-|-|
 |[nothrow](../standard-library/new-functions.md#nothrow)|Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.|
 
-### Typedefs
-
-|Type name|Description|
+|Typedef|Description|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|A type that points to a function suitable for use as a new handler.|
-|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
-|[hardware_destructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
-
-### Functions
+|[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)|TBD|
+|[hardware_destructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)|TBD|
 
 |Function|Description|
 |-|-|
-|[get_new_handler](../standard-library/new-functions.md#get_new_handler)||
-|[launder](../standard-library/new-functions.md#launder)||
+|[get_new_handler](../standard-library/new-functions.md#get_new_handler)|TBD|
+|[launder](../standard-library/new-functions.md#launder)|TBD|
 |[set_new_handler](../standard-library/new-functions.md#set_new_handler)|Installs a user function that is called when new fails in its attempt to allocate memory.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -50,18 +44,14 @@ Some of the functions declared in this header are replaceable. The implementatio
 |[operator new](../standard-library/new-operators.md#op_new)|The function called by a new expression to allocate storage for individual objects.|
 |[operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|The function called by a new expression to allocate storage for an array of objects.|
 
-### Enums
-
 |Enum|Description|
 |-|-|
-|[align_val_t](../standard-library/new-operators.md#op_align_val_t)||
-
-### Classes
+|[align_val_t](../standard-library/new-operators.md#op_align_val_t)|TBD|
 
 |Class|Description|
 |-|-|
 |[bad_alloc Class](../standard-library/bad-alloc-class.md)|The class describes an exception thrown to indicate that an allocation request did not succeed.|
-|[bad_array_new_length Class](../standard-library/bad-array-new-length.md)||
+|[bad_array_new_length Class](../standard-library/bad-array-new-length.md)|TBD|
 |[nothrow_t Class](../standard-library/nothrow-t-structure.md)|The class is used as a function parameter to operator new to indicate that the function should return a null pointer to report an allocation failure, rather than throw an exception.|
 
 ## See also

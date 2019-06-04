@@ -80,7 +80,7 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 |Function|Description|
 |-|-|
-|[what](#what)|No description.|
+|[what](#what)|TBD|
 
 ### Operators
 
@@ -88,7 +88,7 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 |-|-|
 |[operator=](#op_eq)|An assignment operator that assigns one `bad_cast` object to another.|
 
-## <a name="bad_cast"></a>  bad_cast::bad_cast
+## <a name="bad_cast"></a> bad_cast
 
 The constructor for objects of type `bad_cast`.
 
@@ -97,7 +97,7 @@ bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a>  bad_cast::operator=
+## <a name="op_eq"></a> operator=
 
 An assignment operator that assigns one `bad_cast` object to another.
 
@@ -105,12 +105,12 @@ An assignment operator that assigns one `bad_cast` object to another.
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a>  bad_cast::what
+## <a name="what"></a> what
 
-No description.
+TBD
 
 ```cpp
-const char* what() const noexcept override
+const char* what() const noexcept override;
 ```
 
 ## See also

@@ -6,12 +6,7 @@ ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
 ---
 # &lt;system_error&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&lt;](#op_lt)|[operator==](#op_eq_eq)|
-|[operator&lt;&lt;](#op_ostream)|||
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if the object on the left side of the operator is equal to the object on the right side.
 
@@ -28,10 +23,11 @@ bool operator==(const error_condition& left,
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|The object to be tested for equality.|
-|*right*|The object to be tested for equality.|
+*left*\
+The object to be tested for equality.
+
+*right*\
+The object to be tested for equality.
 
 ### Return Value
 
@@ -41,30 +37,24 @@ bool operator==(const error_condition& left,
 
 This function returns `left.category() == right.category() && left.value() == right.value()`.
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
 
 ```cpp
-bool operator!=(const error_code& left,
-    const error_condition& right);
-
-bool operator!=(const error_condition& left,
-    const error_code& right);
-
-bool operator!=(const error_code& left,
-    const error_code& right);
-
-bool operator!=(const error_condition& left,
-    const error_condition& right);
+bool operator!=(const error_code& left, const error_condition& right);
+bool operator!=(const error_condition& left, const error_code& right);
+bool operator!=(const error_code& left, const error_code& right);
+bool operator!=(const error_condition& left, const error_condition& right);
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|The object to be tested for inequality.|
-|*right*|The object to be tested for inequality.|
+*left*\
+The object to be tested for inequality.
+
+*right*\
+The object to be tested for inequality.
 
 ### Return Value
 
@@ -74,7 +64,7 @@ bool operator!=(const error_condition& left,
 
 This function returns `!(left == right)`.
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Tests if an object is less than the object passed in for comparison.
 
@@ -104,10 +94,11 @@ inline bool operator<(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|The object to be compared.|
-|*right*|The object to be compared.|
+*left*\
+The object to be compared.
+
+*right*\
+The object to be compared.
 
 ### Return Value
 
@@ -120,8 +111,8 @@ This function tests the error order.
 ## <a name="op_ostream"></a> operator&lt;&lt;
 
 ```cpp
-    template <class charT, class traits> 
-        basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
+template <class charT, class traits> 
+    basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
 ```
 
 ## See also

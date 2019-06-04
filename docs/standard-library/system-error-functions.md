@@ -7,11 +7,6 @@ helpviewer_keywords: ["std::generic_category", "std::make_error_code", "std::mak
 ---
 # &lt;system_error&gt; functions
 
-||||
-|-|-|-|
-|[generic_category](#generic_category)|[is_error_code_enum_v](#is_error_code_enum_v)|[is_error_condition_enum_v](#is_error_condition_enum_v)|
-|[make_error_code](#make_error_code)|[make_error_condition](#make_error_condition)|[system_category](#system_category)|
-
 ## <a name="generic_category"></a> generic_category
 
 Represents the category for generic errors.
@@ -26,21 +21,19 @@ The `generic_category` object is an implementation of [error_category](../standa
 
 ## <a name="is_error_code_enum_v"></a> is_error_code_enum_v
 
-No description.
-
 ```cpp
-template <class T> inline constexpr bool is_error_code_enum_v = is_error_code_enum<T>::value;
+template <class T> 
+    inline constexpr bool is_error_code_enum_v = is_error_code_enum<T>::value;
 ```
 
 ## <a name="is_error_condition_enum_v"></a> is_error_condition_enum_v
 
-No description.
-
 ```cpp
-template <class T> inline constexpr bool is_error_condition_enum_v = is_error_condition_enum<T>::value;
+template <class T> 
+    inline constexpr bool is_error_condition_enum_v = is_error_condition_enum<T>::value;
 ```
 
-## <a name="make_error_code"></a>  make_error_code
+## <a name="make_error_code"></a> make_error_code
 
 Creates an error code object.
 
@@ -59,7 +52,7 @@ The error code object.
 
 ### Remarks
 
-## <a name="make_error_condition"></a>  make_error_condition
+## <a name="make_error_condition"></a> make_error_condition
 
 Creates an error condition object.
 
@@ -78,7 +71,7 @@ The error condition object.
 
 ### Remarks
 
-## <a name="system_category"></a>  system_category
+## <a name="system_category"></a> system_category
 
 Represents the category for errors caused by low-level system overflows.
 

@@ -34,16 +34,16 @@ namespace std {
 
 ### Parameters
 
-*ptrdiff_t*<br/>
+*ptrdiff_t*\
 An implementation-defined signed integer type that can hold the difference of two subscripts in an array object.
 
-*size_t*<br/>
+*size_t*\
 An implementation-defined unsigned integer type that is large enough to contain the size in bytes of any object.
 
-*max_align_t*<br/>
+*max_align_t*\
 A POD type whose alignment requirement is at least as great as that of every scalar type, and whose alignment requirement is supported in every context.
 
-*nullptr_t*<br/>
+*nullptr_t*\
 A synonym for the type of a **nullptr** expression. Although a **nullptr** address can't be taken, the address of another *nullptr_t* object that is an lvalue can be taken.
 
 ## byte Class

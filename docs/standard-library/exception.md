@@ -15,15 +15,13 @@ Defines several types and functions related to the handling of exceptions. Excep
 #include <exception>
 ```
 
-### Typedefs
+## Members
 
-|Type name|Description|
+|Typedef|Description|
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|A type that describes a pointer to an exception.|
 |[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|A type that describes a pointer to a function suitable for use as a `terminate_handler`.|
 |[unexpected_handler](../standard-library/exception-typedefs.md#unexpected_handler)|A type that describes a pointer to a function suitable for use as an `unexpected_handler`.|
-
-### Functions
 
 |Function|Description|
 |-|-|
@@ -39,8 +37,6 @@ Defines several types and functions related to the handling of exceptions. Excep
 |[throw_with_nested](../standard-library/exception-functions.md#throw_with_nested)|Throws exception if nested.|
 |[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Returns **true** only if a thrown exception is being currently processed.|
 |[unexpected](../standard-library/exception-functions.md#unexpected)|Calls an unexpected handler.|
-
-### Classes
 
 |Class|Description|
 |-|-|

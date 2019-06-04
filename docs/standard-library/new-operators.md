@@ -6,15 +6,10 @@ ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
 # &lt;new&gt; operators and enums
 
-||||
-|-|-|-|
-|[enum align_val_t](#op_align_val_t)|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|
-|[operator new](#op_new)|[operator new[]](#op_new_arr)||
-
 ## <a name="op_align_val_t"></a> enum align_val_t
 
 ```cpp
-    enum class align_val_t : size_t {};
+enum class align_val_t : size_t {};
 ```
 
 ## <a name="op_delete"></a> operator delete
@@ -23,17 +18,13 @@ The function called by a delete expression to de-allocate storage for individual
 
 ```cpp
 void operator delete(void* ptr) throw();
-
-void operator delete(void *,
-    void*) throw();
-
-void operator delete(void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete(void *, void*) throw();
+void operator delete(void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
@@ -55,16 +46,14 @@ See [operator new](../standard-library/new-operators.md#op_new) for an example t
 The function called by a delete expression to deallocate storage for an array of objects.
 
 ```cpp
-    void operator delete[](void* ptr) throw();
-    
-    void operator delete[](void *, void*) throw();
-    
-    void operator delete[](void* ptr, const std::nothrow_t&) throw();
+void operator delete[](void* ptr) throw();
+void operator delete[](void *, void*) throw();
+void operator delete[](void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
@@ -79,26 +68,22 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of the use of `operator delete[]`.
 
-## <a name="op_new"></a>  operator new
+## <a name="op_new"></a> operator new
 
 The function called by a new-expression to allocate storage for individual objects.
 
 ```cpp
 void* operator new(std::size_t count) throw(bad_alloc);
-
-void* operator new(std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new(std::size_t count,
-    void* ptr) throw();
+void* operator new(std::size_t count, const std::nothrow_t&) throw();
+void* operator new(std::size_t count, void* ptr) throw();
 ```
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of bytes of storage to be allocated.
 
-*ptr*<br/>
+*ptr*\
 The pointer to be returned.
 
 ### Return Value
@@ -178,26 +163,22 @@ int main( )
 }
 ```
 
-## <a name="op_new_arr"></a>  operator new[]
+## <a name="op_new_arr"></a> operator new[]
 
 The allocation function called by a new expression to allocate storage for an array of objects.
 
 ```cpp
 void* operator new[](std::size_t count) throw(std::bad_alloc);
-
-void* operator new[](std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new[](std::size_t count,
-    void* ptr) throw();
+void* operator new[](std::size_t count, const std::nothrow_t&) throw();
+void* operator new[](std::size_t count, void* ptr) throw();
 ```
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of bytes of storage to be allocated for the array object.
 
-*ptr*<br/>
+*ptr*\
 The pointer to be returned.
 
 ### Return Value

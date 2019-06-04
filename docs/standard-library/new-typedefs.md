@@ -6,11 +6,6 @@ ms.assetid: aef01de1-06b5-4b6c-aebc-2c9f423d7e47
 ---
 # &lt;new&gt; typedefs
 
-|||
-|-|-|
-|[hardware_constructive_interference_size](#hardware_destructive_interference_size)|[hardware_destructive_interference_size](#hardware_destructive_interference_size)|
-|[new_handler](#new_handler)||
-
 ## <a name="hardware_constructive_interference_size"></a> hardware_constructive_interference_size
 
 ```cpp

@@ -20,20 +20,22 @@ class nested_exception {
 };
 ```
 
-### Operators
+## Members
+
+|Operator|Description|
+|-|-|
+|[operator=](#op_as)||
+
+|Function|Description|
+|-|-|
+|[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
+|[nested_ptr](#nested_ptr)|Returns the stored exception.|
 
 ### <a name="op_as"></a> operator=
 
 ```cpp
 nested_exception& operator=(const nested_exception&) = default;
 ```
-
-## Functions
-
-|Function|Description|
-|-|-|
-|[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
-|[nested_ptr](#nested_ptr)|Returns the stored exception.|
 
 ### <a name="nested_ptr"></a> nested_ptr
 

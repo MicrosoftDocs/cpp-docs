@@ -23,7 +23,7 @@ using jmp_buf = see below;
 [[noreturn]] void longjmp(jmp_buf env, int val);
 ```
 
-## Definitions
+## Macros
 
 ```cpp
 #define setjmp(env)

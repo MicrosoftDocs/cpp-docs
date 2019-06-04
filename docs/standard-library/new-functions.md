@@ -6,11 +6,6 @@ ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 ---
 # &lt;new&gt; functions
 
-|||
-|-|-|
-|[get_new_handler](#get_new_handler)|[launder](#launder)|
-|[nothrow](#nothrow)|[set_new_handler](#set_new_handler)|
-
 ## <a name="get_new_handler"></a> get_new_handler
 
 ```cpp
@@ -30,7 +25,7 @@ template <class T>
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The address of a byte in memory which holds an object whose type is similar to *T*.
 
 ### Return Value
@@ -81,7 +76,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### Parameters
 
-*Pnew*<br/>
+*Pnew*\
 The `new_handler` to be installed.
 
 ### Return Value

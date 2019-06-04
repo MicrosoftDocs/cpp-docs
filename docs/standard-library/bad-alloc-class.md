@@ -52,8 +52,6 @@ int main() {
 }
 ```
 
-## Sample Output
-
 ```Output
 bad allocation
 ```

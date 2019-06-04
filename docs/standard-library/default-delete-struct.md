@@ -23,19 +23,15 @@ template <class T>
 
 ## Members
 
-### Constructors
-
 |Constructor|Description|
 |-|-|
 |[default_delete](#default_delete)|The constructor for objects of type `default_delete`.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
 |[operator()](#op_paren)|A reference operator to access `default_delete`.|
 
-## <a name="default_delete"></a>  default_delete::default_delete
+## <a name="default_delete"></a> default_delete
 
 The constructor for objects of type `default_delete`.
 
@@ -45,7 +41,7 @@ template <class U>
     default_delete(const default_delete<U>&) noexcept;
 ```
 
-## <a name="op_paren"></a>  default_delete::operator()
+## <a name="op_paren"></a> operator()
 
 A reference operator to access `default_delete`.
 

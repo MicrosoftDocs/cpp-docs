@@ -12,7 +12,7 @@ The class describes an exception that can be thrown from an unexpected handler.
 ## Syntax
 
 ```cpp
-class bad_exception    : public exception {};
+class bad_exception : public exception {};
 
 bad_exception();
 bad_exception(const bad_exception&);

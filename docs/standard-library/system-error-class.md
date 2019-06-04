@@ -13,22 +13,13 @@ Represents the base class for all exceptions thrown to report a low-level system
 
 ```cpp
 class system_error : public runtime_error {
-public:
-    explicit system_error(error_code _Errcode,
-    const string& _Message = "");
-
-    system_error(error_code _Errcode,
-    const char *_Message);
-
-    system_error(error_code::value_type _Errval,
-    const error_category& _Errcat,
-    const string& _Message);
-
-    system_error(error_code::value_type _Errval,
-    const error_category& _Errcat,
-    const char *_Message);
-const error_code& code() const throw();
-const char* what() const noexcept override;
+    explicit system_error(error_code _Errcode, const string& _Message = "");
+    system_error(error_code _Errcode, const char *_Message);
+    system_error(error_code::value_type _Errval, const error_category& _Errcat, const string& _Message);
+    system_error(error_code::value_type _Errval, const error_category& _Errcat, const char *_Message);
+    
+    const error_code& code() const throw();
+    const char* what() const noexcept override;
 };
 ```
 
