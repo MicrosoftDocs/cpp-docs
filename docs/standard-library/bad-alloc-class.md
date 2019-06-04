@@ -25,12 +25,6 @@ class bad_alloc : public exception {
 
 The value returned by `what` is an implementation-defined C string. None of the member functions throw any exceptions.
 
-## Requirements
-
-**Header:** \<new>
-
-**Namespace:** std
-
 ## Example
 
 ```cpp
@@ -55,12 +49,3 @@ int main() {
 ```Output
 bad allocation
 ```
-
-## Requirements
-
-**Header:** \<new>
-
-## See also
-
-[exception Class](../standard-library/exception-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

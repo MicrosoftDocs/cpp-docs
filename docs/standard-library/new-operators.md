@@ -237,7 +237,3 @@ int main() {
    delete[ ] fPtr3;
 }
 ```
-
-## See also
-
-[\<new>](../standard-library/new.md)<br/>

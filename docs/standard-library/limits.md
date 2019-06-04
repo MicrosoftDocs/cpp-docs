@@ -9,11 +9,11 @@ ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 
 Defines the template class `numeric_limits` and two enumerations concerning floating-point representations and rounding.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <limits>
-```
+**Header:** \<limits>
+
+**Namespace:** std
 
 ## Remarks
 

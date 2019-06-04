@@ -135,7 +135,7 @@ Obtains the current `unexpected_handler` function.
 unexpected_handler get_unexpected();
 ```
 
-## <a name="rethrow_if_nested"> rethrow_if_nested
+## <a name="rethrow_if_nested"></a> rethrow_if_nested
 
 ```cpp
 template <class E> 
@@ -212,7 +212,7 @@ A terminate handler may not return to its caller. At program startup, the termin
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `terminate`.
 
-## <a name="throw_with_nested"> throw_with_nested
+## <a name="throw_with_nested"></a> throw_with_nested
 
 ```cpp
 template <class T> [[noreturn]]
@@ -315,7 +315,3 @@ At program startup, the unexpected handler is a function that calls [terminate](
 ### Example
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `unexpected`.
-
-## See also
-
-[\<exception>](../standard-library/exception.md)<br/>

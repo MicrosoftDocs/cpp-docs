@@ -67,7 +67,3 @@ This type of handler function is called by **operator new** or `operator new[]` 
 ### Example
 
 See [set_new_handler](../standard-library/new-functions.md#set_new_handler) for an example using `new_handler` as a return value.
-
-## See also
-
-[\<new>](../standard-library/new.md)<br/>

@@ -8,11 +8,11 @@ helpviewer_keywords: ["memory header"]
 
 Defines a class, an operator, and several templates that help allocate and free objects.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <memory>
-```
+**Header:** \<memory>
+
+**Namespace:** std
 
 ## Members
 

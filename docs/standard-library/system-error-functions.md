@@ -82,7 +82,3 @@ const error_category& system_category() noexcept;
 ### Remarks
 
 The `system_category` object is an implementation of [error_category](../standard-library/error-category-class.md).
-
-## See also
-
-[\<system_error>](../standard-library/system-error.md)<br/>

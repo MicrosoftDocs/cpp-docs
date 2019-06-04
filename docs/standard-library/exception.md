@@ -9,11 +9,11 @@ ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
 
 Defines several types and functions related to the handling of exceptions. Exception handling is used in situations in which the system can recover from an error. It provides a means for control to be returned from a function to the program. The objective of incorporating exception handling is to increase the program's robustness while providing a way to recover from an error in an orderly fashion.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <exception>
-```
+**Header:** \<exception>
+
+**Namespace:** std
 
 ## Members
 

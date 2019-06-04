@@ -9,11 +9,11 @@ ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
 
 Defines several types and functions that control the allocation and freeing of storage under program control. It also defines components for reporting on storage management errors.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <new>
-```
+**Header:** \<new>
+
+**Namespace:** std
 
 ## Remarks
 

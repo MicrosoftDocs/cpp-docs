@@ -40,12 +40,6 @@ The constructors, destructor, and assignment operator are protected to help prev
 
 For an example of usage, see [enable_shared_from_this::shared_from_this](#shared_from_this).
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
 ## <a name="shared_from_this"></a> shared_from_this
 
 Generates a `shared_ptr` that shares ownership of the instance with existing `shared_ptr` owners.
@@ -99,7 +93,3 @@ sp2->val == 3
 weak_ptr<T> weak_from_this() noexcept;
 weak_ptr<T const> weak_from_this() const noexcept;
 ```
-
-## See also
-
-[shared_ptr Class](../standard-library/shared-ptr-class.md)<br/>

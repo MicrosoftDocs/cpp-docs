@@ -149,7 +149,3 @@ Allocating 5000000 ints.
 The new_handler is called:
 bad allocation
 ```
-
-## See also
-
-[\<new>](../standard-library/new.md)<br/>

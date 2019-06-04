@@ -31,14 +31,3 @@ For a list of members inherited by the `bad_exception` class, see [exception Cla
 ## Example
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of [unexpected](../standard-library/exception-functions.md#unexpected) throwing a `bad_exception`.
-
-## Requirements
-
-**Header:** \<exception>
-
-**Namespace:** std
-
-## See also
-
-[exception Class](../standard-library/exception-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

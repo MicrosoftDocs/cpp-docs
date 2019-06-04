@@ -9,11 +9,11 @@ ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
 
 Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.
 
-## Syntax
+## Requirements
 
-```
-#include <bitset>
-```
+**Header:** \<bitset>
+
+**Namespace:** std
 
 ## Members
 

@@ -51,12 +51,6 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|
 |[operator<](#op_lt)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|
 
-## Requirements
-
-**Header:** \<system_error>
-
-**Namespace:** std
-
 ## <a name="default_error_condition"></a> default_error_condition
 
 Stores the error code value for an error condition object.
@@ -76,7 +70,7 @@ Returns `error_condition(_Errval, *this)`.
 
 ### Remarks
 
-## <a name="equivalent"></a> equivalent
+### <a name="equivalent"></a> equivalent
 
 Returns a value that specifies whether error objects are equivalent.
 
@@ -88,7 +82,7 @@ virtual bool equivalent(const error_code& _Code,
     value_type _Errval) const;
 ```
 
-### Parameters
+#### Parameters
 
 *_Errval*\
 The error code value to compare.
@@ -99,23 +93,23 @@ The [error_condition](../standard-library/error-condition-class.md) object to co
 *_Code*\
 The [error_code](../standard-library/error-code-class.md) object to compare.
 
-### Return Value
+#### Return Value
 
 **true** if the category and value are equal; otherwise, **false**.
 
-### Remarks
+#### Remarks
 
 The first member function returns `*this == _Cond.category() && _Cond.value() == _Errval`.
 
 The second member function returns `*this == _Code.category() && _Code.value() == _Errval`.
 
-## <a name="generic"></a> generic_category
+### <a name="generic"></a> generic_category
 
 ```cpp
 const error_category& generic_category();
 ```
 
-## <a name="message"></a> message
+### <a name="message"></a> message
 
 Returns the name of the specified error code.
 
@@ -123,18 +117,18 @@ Returns the name of the specified error code.
 virtual string message(error_code::value_type val) const = 0;
 ```
 
-### Parameters
+#### Parameters
 
 *val*\
 The error code value to describe.
 
-### Return Value
+#### Return Value
 
 Returns a descriptive name of the error code *val* for the category.
 
-### Remarks
+#### Remarks
 
-## <a name="name"></a> name
+### <a name="name"></a> name
 
 Returns the name of the category.
 
@@ -142,18 +136,18 @@ Returns the name of the category.
 virtual const char *name() const = 0;
 ```
 
-### Return Value
+#### Return Value
 
 Returns the name of the category as a null-terminated byte string.
 
-## <a name="op_as"></a> operator=
+### <a name="op_as"></a> operator=
 
 ```cpp
-    error_category& operator=(const error_category&) = delete;
+error_category& operator=(const error_category&) = delete;
 ```
 
 
-## <a name="op_eq_eq"></a> operator==
+### <a name="op_eq_eq"></a> operator==
 
 Tests for equality between `error_category` objects.
 
@@ -161,20 +155,20 @@ Tests for equality between `error_category` objects.
 bool operator==(const error_category& right) const;
 ```
 
-### Parameters
+#### Parameters
 
 *right*\
 The object to be tested for equality.
 
-### Return Value
+#### Return Value
 
 **true** if the objects are equal; **false** if the objects are not equal.
 
-### Remarks
+#### Remarks
 
 This member operator returns `this == &right`.
 
-## <a name="op_neq"></a> operator!=
+### <a name="op_neq"></a> operator!=
 
 Tests for inequality between `error_category` objects.
 
@@ -182,20 +176,20 @@ Tests for inequality between `error_category` objects.
 bool operator!=(const error_category& right) const;
 ```
 
-### Parameters
+#### Parameters
 
 *right*\
 The object to be tested for inequality.
 
-### Return Value
+#### Return Value
 
 **true** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **false**.
 
-### Remarks
+#### Remarks
 
 The member operator returns `(!*this == right)`.
 
-## <a name="op_lt"></a> operator&lt;
+### <a name="op_lt"></a> operator&lt;
 
 Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.
 
@@ -203,26 +197,26 @@ Tests if the [error_category](../standard-library/error-category-class.md) objec
 bool operator<(const error_category& right) const;
 ```
 
-### Parameters
+#### Parameters
 
 *right*\
 The `error_category` object to be compared.
 
-### Return Value
+#### Return Value
 
 **true** if the `error_category` object is less than the `error_category` object passed in for comparison; Otherwise, **false**.
 
-### Remarks
+#### Remarks
 
 The member operator returns `this < &right`.
 
-## <a name="system"></a> system_category
+### <a name="system"></a> system_category
 
 ```cpp
 const error_category& system_category();
 ```
 
-## <a name="value_type"></a> value_type
+### <a name="value_type"></a> value_type
 
 A type that represents the stored error code value.
 
@@ -230,10 +224,6 @@ A type that represents the stored error code value.
 typedef int value_type;
 ```
 
-### Remarks
+#### Remarks
 
 This type definition is a synonym for **int**.
-
-## See also
-
-[<system_error>](../standard-library/system-error.md)<br/>

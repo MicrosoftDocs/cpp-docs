@@ -28,13 +28,3 @@ class system_error : public runtime_error {
 The value returned by `what` in the class [exception](../standard-library/exception-class.md) is constructed from `_Message` and the stored object of type [error_code](../standard-library/error-code-class.md) (either `code` or `error_code(_Errval, _Errcat)`).
 
 The member function `code` returns the stored [error_code](../standard-library/error-code-class.md) object.
-
-## Requirements
-
-**Header:** \<system_error>
-
-**Namespace:** std
-
-## See also
-
-[<system_error>](../standard-library/system-error.md)<br/>

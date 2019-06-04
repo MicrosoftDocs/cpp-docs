@@ -9,11 +9,11 @@ ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 
 Include the header \<system_error> to define the exception class `system_error` and related templates for processing low-level system errors.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <system_error>
-```
+**Header:** \<system_error>
+
+**Namespace:** std
 
 ## Members
 
@@ -59,12 +59,6 @@ Include the header \<system_error> to define the exception class `system_error` 
 |[is_error_code_enum](../standard-library/is-error-code-enum-class.md)|Represents a type predicate that tests for the [error_code Class](../standard-library/error-code-class.md) enumeration.|
 |[is_error_condition_enum](../standard-library/is-error-condition-enum-class.md)|Represents a type predicate that tests for the [error_condition Class](../standard-library/error-condition-class.md) enumeration.|
 |[system_error](../standard-library/system-error-class.md)|Represents the base class for all exceptions thrown to report a low-level system overflow.|
-
-## Requirements
-
-**Header:** \<system_error>
-
-**Namespace:** std
 
 ## See also
 

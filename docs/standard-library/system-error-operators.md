@@ -114,7 +114,3 @@ This function tests the error order.
 template <class charT, class traits> 
     basic_ostream<charT, traits>& operator<<(basic_ostream<charT, traits>& os, const error_code& ec);
 ```
-
-## See also
-
-[<system_error>](../standard-library/system-error.md)<br/>
