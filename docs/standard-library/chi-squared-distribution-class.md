@@ -68,7 +68,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](http://go.microsoft.com/fwlink/p/?linkid=400528).
+For detailed information about the chi-squared distribution, see the Wolfram MathWorld article [Chi-Squared Distribution](https://go.microsoft.com/fwlink/p/?linkid=400528).
 
 ## Example
 

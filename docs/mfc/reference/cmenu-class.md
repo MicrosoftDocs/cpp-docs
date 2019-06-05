@@ -683,7 +683,7 @@ Value specifying the meaning of `nIDItem`. By default, `ByPos` is FALSE, which i
 
 ### Return Value
 
-If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.
+If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
 
 ### Remarks
 
@@ -1181,7 +1181,7 @@ Value specifying the meaning of *uItem*. If this parameter is FALSE, *uItem* is 
 
 ### Return Value
 
-If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.
+If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
 
 ### Remarks
 
@@ -1390,7 +1390,7 @@ Pointer to a [TPMPARAMS](/windows/desktop/api/winuser/ns-winuser-tagtpmparams) s
 
 If you specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is the menu-item identifier of the item that the user selected. If the user cancels the menu without making a selection, or if an error occurs, then the return value is 0.
 
-If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 

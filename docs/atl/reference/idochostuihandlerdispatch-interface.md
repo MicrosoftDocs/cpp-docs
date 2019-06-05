@@ -23,7 +23,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 ### Public Methods
 
 > [!NOTE]
->  The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.
+>  The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.
 
 |||
 |-|-|
@@ -58,4 +58,4 @@ The definition of this interface is available as IDL or C++, as shown below.
 
 ## See also
 
-[IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx)
+[IDocUIHostHandler](/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\))

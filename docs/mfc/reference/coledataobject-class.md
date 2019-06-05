@@ -258,7 +258,7 @@ After a call to [COleDataObject::BeginEnumFormats](#beginenumformats), the posit
 
 To check for the availability of a given format, call [COleDataObject::IsDataAvailable](#isdataavailable).
 
-For more information, see [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) in the Windows SDK.
+For more information, see [IEnumXXXX::Next](/previous-versions//ms695273\(v=vs.85\)) in the Windows SDK.
 
 ##  <a name="isdataavailable"></a>  COleDataObject::IsDataAvailable
 

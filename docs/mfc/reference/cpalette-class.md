@@ -83,7 +83,7 @@ Specifies the first entry in the palette to be animated.
 Specifies the number of entries in the palette to be animated.
 
 *lpPaletteColors*<br/>
-Points to the first member of an array of [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) structures to replace the palette entries identified by *nStartIndex* and *nNumEntries*.
+Points to the first member of an array of [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) structures to replace the palette entries identified by *nStartIndex* and *nNumEntries*.
 
 ### Remarks
 
@@ -217,7 +217,7 @@ Specifies the first entry in the logical palette to be retrieved.
 Specifies the number of entries in the logical palette to be retrieved.
 
 *lpPaletteColors*<br/>
-Points to an array of [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.
+Points to an array of [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.
 
 ### Return Value
 
@@ -284,7 +284,7 @@ Specifies the first entry in the logical palette to be set.
 Specifies the number of entries in the logical palette to be set.
 
 *lpPaletteColors*<br/>
-Points to an array of [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.
+Points to an array of [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) data structures to receive the palette entries. The array must contain at least as many data structures as specified by *nNumEntries*.
 
 ### Return Value
 
@@ -294,7 +294,7 @@ The number of entries set in the logical palette; 0 if the function failed.
 
 If the logical palette is selected into a device context when the application calls `SetPaletteEntries`, the changes will not take effect until the application calls [CDC::RealizePalette](../../mfc/reference/cdc-class.md#realizepalette).
 
-For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.
+For more information, see [PALETTEENTRY](/previous-versions/dd162769\(v=vs.85\)) in the Windows SDK.
 
 ## See also
 

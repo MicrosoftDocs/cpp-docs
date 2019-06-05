@@ -2816,7 +2816,7 @@ Returns the current graphics mode on success. For a list of the values that this
 
 Returns 0 on failure.
 
-To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -2872,7 +2872,7 @@ DWORD GetLayout() const;
 
 ### Return Value
 
-If successful, the layout flags for the current device context. Otherwise, GDI_ERROR. For extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). For a list of the layout flags, see [CDC::SetLayout](#setlayout).
+If successful, the layout flags for the current device context. Otherwise, GDI_ERROR. For extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). For a list of the layout flags, see [CDC::SetLayout](#setlayout).
 
 ### Remarks
 
@@ -3608,7 +3608,7 @@ Returns a nonzero value on success.
 
 Returns 0 on failure.
 
-To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -4055,7 +4055,7 @@ Returns a nonzero value on success.
 
 Returns 0 on failure.
 
-To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -5599,7 +5599,7 @@ Specifies the graphics mode. For a list of the values that this parameter can ta
 
 Returns the old graphics mode on success.
 
-Returns 0 on failure. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Returns 0 on failure. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -5628,7 +5628,7 @@ Device context layout and bitmap control flags. It can be a combination of the f
 
 If successful, the previous layout of the device context.
 
-If unsuccessful, GDI_ERROR. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If unsuccessful, GDI_ERROR. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -6253,7 +6253,7 @@ Returns a nonzero value on success.
 
 Returns 0 on failure.
 
-To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 

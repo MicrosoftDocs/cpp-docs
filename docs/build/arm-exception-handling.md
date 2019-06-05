@@ -15,7 +15,7 @@ The ARM EABI (embedded application binary interface) specifies an exception unwi
 
 ### Assumptions
 
-Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [Microsoft PE and COFF Specification](http://go.microsoft.com/fwlink/p/?linkid=84140). Exception handling information is stored in the .pdata and .xdata sections of the image.
+Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [Microsoft PE and COFF Specification](https://go.microsoft.com/fwlink/p/?linkid=84140). Exception handling information is stored in the .pdata and .xdata sections of the image.
 
 The exception handling mechanism makes certain assumptions about code that follows the ABI for Windows on ARM:
 

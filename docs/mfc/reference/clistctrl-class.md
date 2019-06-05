@@ -1101,7 +1101,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [LVM_GETGROUPINFOBYINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774933) message, which is described in the Windows SDK -->.
+This method sends the [LVM_GETGROUPINFOBYINDEX](/windows/desktop/controls/lvm-getgroupinfobyindex) message, which is described in the Windows SDK -->.
 
 ### Example
 
@@ -1521,7 +1521,7 @@ BOOL GetItemIndexRect(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be NULL.|
+|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) structure. This parameter cannot be NULL.|
 |*iColumn*|[in] Zero-based index of a column in the control.|
 |*rectType*|[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|
 |*pRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. This parameter cannot be NULL.|
@@ -1827,8 +1827,8 @@ BOOL GetNextItemIndex(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pItemIndex*|[in, out] Pointer to the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|
-|*nFlags*|[in] A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) message.|
+|*pItemIndex*|[in, out] Pointer to the [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|
+|*nFlags*|[in] A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) message.|
 
 ### Return Value
 
@@ -1838,7 +1838,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 The caller is responsible for allocating and setting the members of the `LVITEMINDEX` structure pointed to by the *pItemIndex* parameter.
 
-This method sends the [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) message, which is described in the Windows SDK.
+This method sends the [LVM_GETNEXTITEMINDEX](/windows/desktop/controls/lvm-getnextitemindex) message, which is described in the Windows SDK.
 
 ## <a name="getnextselecteditem"></a>  CListCtrl::GetNextSelectedItem
 
@@ -2643,7 +2643,7 @@ A list-view control internally tracks items by index. This can present problems 
 
 Note that in a multithreaded environment the index is guaranteed only on the thread that hosts the list-view control, not on background threads.
 
-This method sends the [LVM_MAPIDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761137) message, which is described in the Windows SDK.
+This method sends the [LVM_MAPIDTOINDEX](/windows/desktop/controls/lvm-mapidtoindex) message, which is described in the Windows SDK.
 
 ## <a name="mapindextoid"></a>  CListCtrl::MapIndexToID
 
@@ -3556,7 +3556,7 @@ BOOL SetItemIndexState(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|
+|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](/windows/desktop/api/commctrl/ns-commctrl-lvitemindex) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|
 |*dwState*|[in] The state to set the item, which is a bitwise combination of [list view item states](/windows/desktop/Controls/list-view-item-states). Specify zero to reset, or one to set, a state.|
 |*dwMask*|[in] A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](/windows/desktop/Controls/list-view-item-states).|
 

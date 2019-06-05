@@ -224,7 +224,7 @@ The variable specifying the size of the *pstrCookieData* buffer. If the function
 
 ### Return Value
 
-Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to determine the cause of the error. The following error values apply:
+Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to determine the cause of the error. The following error values apply:
 
 - ERROR_NO_MORE_ITEMS There is no cookie for the specified URL and all its parents.
 
@@ -586,7 +586,7 @@ Indicates various caching options. The default is set to 0. The possible values 
 
 ### Return Value
 
-If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
+If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ## See also
 

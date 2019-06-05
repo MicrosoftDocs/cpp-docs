@@ -47,7 +47,7 @@ To start upgrading a project or solution, just open the solution in the new vers
 
 8. Runtime errors or unexpected results due to behavior changes
 
-9. Errors due to errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio Feedback Center](http://connect.microsoft.com/VisualStudio/Feedback).
+9. Errors due to errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
 
 In addition to changes that you can't avoid due to compiler errors, some changes are optional in an upgrade process, such as:
 

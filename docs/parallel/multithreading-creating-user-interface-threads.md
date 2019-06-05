@@ -32,7 +32,7 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
 
 - (Optional) CREATE_SUSPENDED if you want the thread to be created in a suspended state. The default is 0, or start the thread normally.
 
-- (Optional) The desired security attributes. The default is the same access as the parent thread. For more information about the format of this security information, see [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.
+- (Optional) The desired security attributes. The default is the same access as the parent thread. For more information about the format of this security information, see [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) in the Windows SDK.
 
 `AfxBeginThread` does most of the work for you. It creates a new object of your class, initializes it with the information you supply, and calls [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) to start executing the thread. Checks are made throughout the procedure to make sure all objects are deallocated properly should any part of the creation fail.
 
