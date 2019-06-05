@@ -154,7 +154,7 @@ Reserved to make `FindFile` polymorphic with derived classes. Must be 0.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -212,7 +212,7 @@ virtual BOOL FindNextFile();
 
 ### Return Value
 
-Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
+Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
 
 ### Remarks
 
@@ -766,7 +766,7 @@ Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](/wind
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 

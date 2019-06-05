@@ -4787,7 +4787,7 @@ Nonzero if the function is successful. It is 0 if a failure occurs or if the `Lo
 
 A locked window cannot be moved. Only one window can be locked at a time. To unlock a window locked with `LockWindowUpdate`, call [UnlockWindowUpdate](#unlockwindowupdate).
 
-If an application with a locked window (or any locked child windows) calls the [GetDC,](https://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx,](https://msdn.microsoft.com/library/windows/desktop/dd144873) or [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows function, the called function returns a device context whose visible region is empty. This will occur until the application unlocks the window by calling the `UnlockWindowUpdate` member function.
+If an application with a locked window (or any locked child windows) calls the [GetDC,](/windows/desktop/api/winuser/nf-winuser-getdc) [GetDCEx,](/windows/desktop/api/winuser/nf-winuser-getdcex) or [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows function, the called function returns a device context whose visible region is empty. This will occur until the application unlocks the window by calling the `UnlockWindowUpdate` member function.
 
 While window updates are locked, the system keeps track of the bounding rectangle of any drawing operations to device contexts associated with a locked window. When drawing is reenabled, this bounding rectangle is invalidated in the locked window and its child windows to force an eventual [WM_PAINT](/windows/desktop/gdi/wm-paint) message to update the screen. If no drawing has occurred while the window updates were locked, no area is invalidated.
 
@@ -9218,7 +9218,7 @@ afx_msg void OnUserChanged();
 
 ### Remarks
 
-This method receives the [WM_USERCHANGED](https://msdn.microsoft.com/library/windows/desktop/ms632651) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.
+This method receives the [WM_USERCHANGED](/windows/desktop/winmsg/wm-userchanged) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.

@@ -166,7 +166,7 @@ To use a licensed ActiveX control in Internet Explorer, you must check the vendo
 
 - Use of the Codebase parameter
 
-To use a licensed control in an HTML page on a nonlicensed machine, you must generate a license package file (LPK). The LPK file contains run-time licenses for licensed controls in the HTML page. This file is generated via LPK_TOOL.EXE which comes with the ActiveX SDK. For more information, see the MSDN Web site at [https://msdn.microsoft.com](https://msdn.microsoft.com).
+To use a licensed control in an HTML page on a nonlicensed machine, you must generate a license package file (LPK). The LPK file contains run-time licenses for licensed controls in the HTML page. This file is generated via LPK_TOOL.EXE which comes with the ActiveX SDK.
 
 #### To create an LPK file
 

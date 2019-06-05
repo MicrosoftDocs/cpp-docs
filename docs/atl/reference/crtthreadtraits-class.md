@@ -78,7 +78,7 @@ The creation flags (0 or CREATE_SUSPENDED).
 
 ### Return Value
 
-Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to get extended error information.
+Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to get extended error information.
 
 ### Remarks
 

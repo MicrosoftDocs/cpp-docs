@@ -297,7 +297,7 @@ A variant used for specifying command output arguments.
 
 ### Remarks
 
-See [IWebBrowser2::ExecWB](https://msdn.microsoft.com/library/aa752117.aspx) in the Windows SDK.
+See [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) in the Windows SDK.
 
 ##  <a name="getaddressbar"></a>  CHtmlView::GetAddressBar
 
@@ -563,7 +563,7 @@ READYSTATE GetReadyState() const;
 
 ### Return Value
 
-A [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) value, as described in the Windows SDK.
+A [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) value, as described in the Windows SDK.
 
 ### Remarks
 
@@ -1111,7 +1111,7 @@ Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notific
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
-This member function is called by the framework when the [FullScreen](https://msdn.microsoft.com/library/aa752119.aspx) property has changed.
+This member function is called by the framework when the [FullScreen](/previous-versions/aa752119\(v=vs.85\)) property has changed.
 
 ```
 virtual void OnFullScreen(BOOL bFullScreen);
@@ -1234,7 +1234,7 @@ Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
-This member function is called by the framework when the [MenuBar](https://msdn.microsoft.com/library/aa752131.aspx) property has changed.
+This member function is called by the framework when the [MenuBar](/previous-versions/aa752131\(v=vs.85\)) property has changed.
 
 ```
 virtual void OnMenuBar(BOOL bMenuBar);
@@ -1285,7 +1285,7 @@ The URL for which navigation failed.
 The name of the frame in which the resource is to be displayed, or NULL if no named frame was targeted for the resource.
 
 *dwError*<br/>
-An error status code, if available. For a list of the possible HRESULT and HTTP status codes, see [NavigateError Event Status Codes.](https://msdn.microsoft.com/library/aa768365.aspx)
+An error status code, if available. For a list of the possible HRESULT and HTTP status codes, see [NavigateError Event Status Codes.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\)).
 
 *pbCancel*<br/>
 Specifies whether to cancel the navigation to an error page or any further autosearch. If TRUE (the default), continue with navigation to an error page or autosearch; if FALSE, cancel navigation to an error page or autosearch.
@@ -1294,7 +1294,7 @@ Specifies whether to cancel the navigation to an error page or any further autos
 
 Override this method to provide custom navigation error handling.
 
-For more information, see [DWebBrowserEvents2::NavigateError](https://msdn.microsoft.com/library/aa768286.aspx)
+For more information, see [DWebBrowserEvents2::NavigateError](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
 
 ##  <a name="onnewwindow2"></a>  CHtmlView::OnNewWindow2
 
@@ -1465,7 +1465,7 @@ Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
-This member function is called by the framework when the [StatusBar](https://msdn.microsoft.com/library/aa768270.aspx) property has changed.
+This member function is called by the framework when the [StatusBar](/previous-versions//aa768270\(v=vs.85\)) property has changed.
 
 ```
 virtual void OnStatusBar(BOOL bStatusBar);
@@ -1491,7 +1491,7 @@ A string that contains the new status bar text.
 
 ##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode
 
-This member function is called by the framework when the [TheaterMode](https://msdn.microsoft.com/library/aa768273.aspx) property has changed.
+This member function is called by the framework when the [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) property has changed.
 
 ```
 virtual void OnTheaterMode(BOOL bTheaterMode);
@@ -1521,7 +1521,7 @@ For HTML, the title might change; while HTML is still downloading, the URL of th
 
 ##  <a name="ontoolbar"></a>  CHtmlView::OnToolBar
 
-This member function is called by the framework when the [ToolBar](https://msdn.microsoft.com/library/aa768274.aspx) property has changed.
+This member function is called by the framework when the [ToolBar](/previous-versions/aa768274\(v=vs.85\)) property has changed.
 
 ```
 virtual void OnToolBar(BOOL bToolBar);
@@ -1760,7 +1760,7 @@ void Refresh2(int nLevel);
 ### Parameters
 
 *nLevel*<br/>
-The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), in the Windows SDK.
+The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](/previous-versions/aa768363\(v=vs.85\)), in the Windows SDK.
 
 ### Remarks
 

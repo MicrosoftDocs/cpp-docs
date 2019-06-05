@@ -234,7 +234,7 @@ virtual INT_PTR DoModal();
 
 ### Return Value
 
-An **int** value that specifies the value of the *nResult* parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is -1 if the function could not create the dialog box, or IDABORT if some other error occurred, in which case the output window will contain error information from [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+An **int** value that specifies the value of the *nResult* parameter that was passed to the [CDialog::EndDialog](#enddialog) member function, which is used to close the dialog box. The return value is -1 if the function could not create the dialog box, or IDABORT if some other error occurred, in which case the output window will contain error information from [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 

@@ -378,7 +378,7 @@ void ApplyOFNToShellDialog();
 
 ### Remarks
 
-In versions of Windows before Windows Vista, the member [OPENFILENAME](https://msdn.microsoft.com/library/ms911906.aspx) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable were immediately reflected in the state of the dialog box. Also, any changes to the state of the dialog box immediately update the `m_ofn` member variable.
+In versions of Windows before Windows Vista, the member [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable were immediately reflected in the state of the dialog box. Also, any changes to the state of the dialog box immediately update the `m_ofn` member variable.
 
 In Windows Vista or later, the values in the `m_ofn` member variable and state of the `CFileDialog` are not guaranteed to be synchronized. This function forces the state of the `CFileDialog` to be updated to match the `m_ofn` structure. Windows calls this function automatically during [CFileDialog::DoModal](#domodal).
 
@@ -1492,7 +1492,7 @@ void UpdateOFNFromShellDialog();
 
 ### Remarks
 
-In versions of Windows before Windows Vista, the member [OPENFILENAME](https://msdn.microsoft.com/library/ms911906.aspx) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable directly affected the state of the dialog box. Also, any changes to the state of the dialog immediately updated the m_ofn member variable.
+In versions of Windows before Windows Vista, the member [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable directly affected the state of the dialog box. Also, any changes to the state of the dialog immediately updated the m_ofn member variable.
 
 In Windows Vista or later, the `m_ofn` data structure is not automatically updated. To guarantee the accuracy of the data in the `m_ofn` member variable, you should call the `UpdateOFNFromShellDialog` function before accessing the data. Windows calls this function automatically during the processing of [IFileDialog::OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
 

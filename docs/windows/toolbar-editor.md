@@ -152,6 +152,5 @@ MFC or ATL
 ## See also
 
 [Resource Editors](../windows/resource-editors.md)
-<!--
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>-->
+[Menus and Other Resources](/windows/desktop/menurc/resources)<br/>
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>
