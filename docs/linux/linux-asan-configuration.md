@@ -49,7 +49,7 @@ The ASan options are under **General**. Enter the ASan runtime flags in the form
 
 ## Install the ASan debug symbols
 
-To enable the ASan diagnosticsa, you have to install its debug symbols (libasan-dbg) on your remote Linux machine or WSL installation. The version of libasan-dbg that you load depends on the version of GCC you have installed on your Linux machine:
+To enable the ASan diagnostics, you have to install its debug symbols (libasan-dbg) on your remote Linux machine or WSL installation. The version of libasan-dbg that you load depends on the version of GCC you have installed on your Linux machine:
 
 |**ASan version**|**GCC version**|
 | --- | --- |
@@ -65,7 +65,7 @@ You can determine the version of GCC you have with the following command:
 gcc --version
 ```
 
-You can also view the version of libasan-dbg you will need by looking at the Debug pane of the output window. The version of ASan that is loaded corresponds to the version of libasan-dbg you will need on your Linux machine. You can use **Ctrl + F** to search for "libasan" in the Debug pane of the output window. If you have libasan4, for example, you see a line like this:
+You can also view the version of libasan-dbg you will need by running your program and then looking at the **Debug** pane of the **Output** window. The version of ASan that is loaded corresponds to the version of libasan-dbg you will need on your Linux machine. You can use **Ctrl + F** to search for "libasan" in the window. If you have libasan4, for example, you see a line like this:
 
 ```output
 Loaded '/usr/lib/x86_64-linux-gnu/libasan.so.4'. Symbols loaded.
@@ -77,5 +77,5 @@ You can install the ASan debug bits on Linux distros that use apt with the follo
 sudo apt-get install libasan4-dbg
 ```
 
-If ASan is enabled, Visual Studio prompts you at the top of the Debug pane of the output window to install the ASan debug symbols.
+If ASan is enabled, Visual Studio prompts you at the top of the **Debug** pane of the **Output** window to install the ASan debug symbols.
 

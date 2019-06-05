@@ -1,7 +1,7 @@
 ---
 title: "Install the C++ Linux workload in Visual Studio"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
-ms.date: "03/05/2019"
+ms.date: "06/07/2019"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
 
@@ -20,7 +20,9 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 ::: moniker range="vs-2019"
 
-In Visual Studio 2019 version 16.1 and later, support for [AddressSanitizer (ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer) is integrated into Visual Studio for Linux projects.
+In Visual Studio 2019 you can specify separate targets for building and debugging. When targeting WSL, it is no longer necessary to add a remote connection or configure SSH.
+
+Support for [AddressSanitizer (ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer) is integrated into Visual Studio for Linux projects.
 
 ::: moniker-end
 
@@ -42,11 +44,26 @@ In Visual Studio 2019 version 16.1 and later, support for [AddressSanitizer (ASa
 
 If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
 
-Another option, on Windows 10, is to activate the Windows Subsystem for Linux (WSL). For more information, see [Windows 10 Installation Guide](/windows/wsl/install-win10). Using WSL is convenient because it does not require openssh; however, WSL is not recommended for graphical applications.
+On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). WSL is a convenient console environment but is not recommended for graphical applications. 
 
-## Linux setup: Ubuntu
+::: moniker-end
 
-The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running. **zip** is required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
+::: moniker range="vs-2019"
+
+## Linux setup: Ubuntu on WSL
+
+On WSL, no remote connection is required. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
+
+```bash
+   `sudo g++ gdb make rsync zip`
+```
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+## Ubuntu on remote Linux systems
+
+The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gdbserver** installed, and the ssh daemon must be running. **zip** is required for automatic syncing of remote headers with your local machine for Intellisense support. If these applications are not already present, you can install them as follows:
 
 1. At a shell prompt on your Linux computer, run:
 
@@ -60,7 +77,23 @@ The target Linux computer must have **openssh-server**, **g++**, **gdb**, and **
 
    This starts the service and runs it in the background, ready to accept connections.
 
-## Linux setup: Fedora
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+## Fedora on WSL
+
+Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **rsync** and **zip**, run:
+
+   `sudo dnf install gcc-g++ gdb rsync zip`
+
+**zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
+## Fedora on remote Linux systems
 
 The target machine running Fedora uses the **dnf** package installer. To download **openssh-server**, **g++**, **gdb**, **gdbserver** and **zip**, and restart the ssh daemon, follow these instructions:
 
@@ -76,10 +109,6 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
    This starts the service and runs it in the background, ready to accept connections.
 
-## Ensure you have CMake 3.8 on the remote Linux machine
-
-Your Linux distro may have an older version of CMake. The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. For a Microsoft-provided CMake variant, download the latest prebuilt binaries to your Linux machine at [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
-
 ::: moniker-end
 
 ::: moniker range="vs-2015"
@@ -87,3 +116,10 @@ Your Linux distro may have an older version of CMake. The CMake support in Visua
 Support for Linux C++ development is available in Visual Studio 2017 and later.
 
 ::: moniker-end
+
+## Next Steps
+
+You are now ready to create or open a Linux project and configure it to run on the target system. For more information, see:
+
+- [Create a new Linux project](create-a-new-linux-project.md)
+- [Configure a Linux CMake project](cmake-linux-project.md)

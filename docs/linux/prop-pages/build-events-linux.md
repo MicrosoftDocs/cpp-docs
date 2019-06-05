@@ -1,6 +1,6 @@
 ---
 title: "Remote Build Events (Linux C++)"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
 ---
 # Build Event Properties (Linux C++)

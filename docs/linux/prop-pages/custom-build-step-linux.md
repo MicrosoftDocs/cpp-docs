@@ -1,6 +1,6 @@
 ---
 title: "Custom Build Step Properties (Linux C++)"
-ms.date: "10/17/2017"
+ms.date: "06/07/2019"
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
 ---
 # Custom Build Step Properties (Linux C++)

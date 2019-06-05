@@ -1,6 +1,6 @@
 ---
 title: "Linker Properties (Linux C++)"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 ---
 # Linker Properties (Linux C++)

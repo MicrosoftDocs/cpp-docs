@@ -1,6 +1,6 @@
 ---
 title: "Copy Sources Project Properties (Linux C++)"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150
 ---
 # Copy Sources Project Properties (Linux C++)

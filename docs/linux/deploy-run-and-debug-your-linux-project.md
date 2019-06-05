@@ -1,12 +1,18 @@
 ---
 title: "Deploy, run, and debug your C++ Linux project in Visual Studio"
 description: "Describes how to compile, execute, and debug code on the remote target from inside a Linux C++ project in Visual Studio."
-ms.date: "09/12/2018"
+ms.date: "06/07/2019"
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ---
 # Deploy, run, and debug your Linux project
 
 Once you have created a Linux C++ project in Visual Studio and you have connected to the project using the [Linux Connection Manager](connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
+
+::: moniker range="vs-2019"
+
+**Visual Studio 2019 version 16.1** You can target different Linux systems for debugging and building. Specify the debug machine on the **General** property page and the debug machine on the **Debugging** property page.
+
+::: moniker-end
 
 There are several ways to interact with and debug your Linux project.
 

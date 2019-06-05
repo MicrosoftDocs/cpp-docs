@@ -1,6 +1,6 @@
 ---
 title: "C/C++ Properties (Linux C++)"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
 ---

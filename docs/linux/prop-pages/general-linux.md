@@ -1,6 +1,6 @@
 ---
 title: "General Properties (Linux C++ Project)| Microsoft Docs"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 ---
 # General Properties (Linux C++)

@@ -1,6 +1,6 @@
 ---
 title: "Debugger Properties (Linux C++)| Microsoft Docs"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 ---
 # C++ Debugging Properties (Linux C++)
