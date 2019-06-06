@@ -43,7 +43,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
    ![WSL build machine](media/wsl-remote-vs2019.png)
 
-   If you have side-by-side WSL installations, you can specify a different path here. For example, if you have Ubuntu 18.04 installed, it is located in **C:\Users\\<username>\AppData\Local\Microsoft\WindowsApps\ubuntu1804.exe**.
+   If you have side-by-side WSL installations, you can specify a different path here. For more information about managing multiple distros, see [Manage and configure Windows Subsystem for Linux](/windows/wsl/wsl-config#set-a-default-distribution).
 
    You can specify a different target for debugging on the **Configuration Properties** > **Debugging** page.
 
