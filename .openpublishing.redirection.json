@@ -48,6 +48,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/ide/navigating-the-class-structure-visual-cpp.md",
+            "redirect_url": "/cpp/ide/navigate-code-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/ide/visual-cpp-tools-and-features-in-visual-studio-editions.md",
             "redirect_url": "/cpp/overview/visual-cpp-tools-and-features-in-visual-studio-editions",
             "redirect_document_id": true

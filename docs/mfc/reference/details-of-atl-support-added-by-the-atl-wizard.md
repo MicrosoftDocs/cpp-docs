@@ -28,4 +28,4 @@ When you add ATL support to an MFC DLL project, you will see some differences. C
 [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+[Navigating the Class Structure](../../ide/navigate-code-cpp.md)

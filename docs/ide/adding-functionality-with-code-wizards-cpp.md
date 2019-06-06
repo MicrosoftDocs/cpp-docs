@@ -69,6 +69,6 @@ There are three locations where you can access C++ code wizards:
 ## See also
 
 [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
-[Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)<br>
+[Navigate your C++ code base in Visual Studio](../ide/navigate-code-cpp.md)<br>
 [C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br>
 [File Types Created for Visual Studio C++ projects](../build/reference/file-types-created-for-visual-cpp-projects.md)
