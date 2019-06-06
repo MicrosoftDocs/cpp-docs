@@ -10,29 +10,19 @@ helpviewer_keywords: ["std::synchronized_pool_resource"]
 
 ```cpp
 class synchronized_pool_resource : public memory_resource {
-public:
-synchronized_pool_resource(const pool_options& opts,
-memory_resource* upstream);
-synchronized_pool_resource()
-: synchronized_pool_resource(pool_options(), get_default_resource()) {}
-explicit synchronized_pool_resource(memory_resource* upstream)
-: synchronized_pool_resource(pool_options(), upstream) {}
-explicit synchronized_pool_resource(const pool_options& opts)
-: synchronized_pool_resource(opts, get_default_resource()) {}
-synchronized_pool_resource(const synchronized_pool_resource&) = delete;
-virtual ~synchronized_pool_resource();
-synchronized_pool_resource&
-operator=(const synchronized_pool_resource&) = delete;
-void release();
-memory_resource* upstream_resource() const;
-pool_options options() const;
-protected:
-void *do_allocate(size_t bytes, size_t alignment) override;
-void do_deallocate(void *p, size_t bytes, size_t alignment) override;
-bool do_is_equal(const memory_resource& other) const noexcept override;
+    synchronized_pool_resource(const pool_options& opts, memory_resource* upstream);
+    synchronized_pool_resource()
+        : synchronized_pool_resource(pool_options(), get_default_resource()) {}
+    explicit synchronized_pool_resource(memory_resource* upstream)
+        : synchronized_pool_resource(pool_options(), upstream) {}
+    explicit synchronized_pool_resource(const pool_options& opts)
+        : synchronized_pool_resource(opts, get_default_resource()) {}
+    synchronized_pool_resource(const synchronized_pool_resource&) = delete;
+    virtual ~synchronized_pool_resource();
+    synchronized_pool_resource&
+        operator=(const synchronized_pool_resource&) = delete;
+    void release();
+    memory_resource* upstream_resource() const;
+    pool_options options() const;
 };
 ```
-
-## See also
-
-[\<memory_resource>](../standard-library/memory-resource.md)

@@ -18,20 +18,20 @@ Defines the container template class memory_resource and its supporting template
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/memory-resource-operators.md#op_neq)|Tests if the memory_resource object on the left side of the operator is not equal to the memory_resource object on the right side.|
 |[operator==](../standard-library/memory-resource-operators.md#op_eq_eq)|Tests if the memory_resource object on the left side of the operator is equal to the memory_resource object on the right side.|
 
 ### Specialized Template Functions
 
-|Template|Description|
+|||
 |-|-|
 |[polymorphic_allocator](../standard-library/memory-resource-functions.md#poly_alloc)||
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[get_default_resource](../standard-library/memory-resource-functions.md#get_default)||
 |[new_delete_resource](../standard-library/memory-resource-functions.md#new_delete)||
@@ -40,7 +40,7 @@ Defines the container template class memory_resource and its supporting template
 
 ### Classes and Structs
 
-|Class (or Struct)|Description|
+|||
 |-|-|
 |[memory_resource Class](../standard-library/memory-resource-class.md)||
 |[monotonic_buffer_resource Class](../standard-library/monotonic-buffer-resource-class.md)||

@@ -7,11 +7,7 @@ f1_keywords: ["memory_resource/std::pool_options"]
 
 ```cpp
 struct pool_options {
-size_t max_blocks_per_chunk = 0;
-size_t largest_required_pool_block = 0;
+    size_t max_blocks_per_chunk = 0;
+    size_t largest_required_pool_block = 0;
 };
 ```
-
-## See also
-
-[\<memory_resource>](../standard-library/memory-resource.md)

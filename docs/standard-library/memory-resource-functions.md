@@ -6,18 +6,13 @@ helpviewer_keywords: ["std::get_default_resource [C++]", "std::new_delete_resour
 ---
 # &lt;numeric&gt; functions
 
-||||
-|-|-|-|
-|[get_default_resource](#get_default)|[new_delete_resource](#new_delete)|[null_memory_resource](#null_memory)|
-|[polymorphic_allocator](#poly_alloc)|[set_default_resource](#set_default)||
-
-## <a name="get_default"></a>  get_default_resource
+## <a name="get_default"></a> get_default_resource
 
 ```cpp
 memory_resource* get_default_resource() noexcept;
 ```
 
-## <a name="new_delete"></a>  new_delete_resource
+## <a name="new_delete"></a> new_delete_resource
 
 ```cpp
 memory_resource* new_delete_resource() noexcept;
@@ -69,12 +64,8 @@ class polymorphic_allocator {
 };
 ```
 
-## <a name="set_default"></a>  set_default_resource
+## <a name="set_default"></a> set_default_resource
 
 ```cpp
 memory_resource* set_default_resource(memory_resource* r) noexcept;
 ```
-
-## See also
-
-[\<memory_resource>](../standard-library/memory-resource.md)
