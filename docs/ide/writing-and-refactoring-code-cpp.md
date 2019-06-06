@@ -82,7 +82,7 @@ A window at the bottom of the editor shows where each instantiation was found, a
 
 ![C&#43;&#43; Template IntelliSense Instantiation Map](../ide/media/template-intellisense-cpp-4.png "Template IntelliSense Instantiation Map")
 
-**Template Bar** information is treated as user-specific. It is stored in the .vs folder and is not commited to source control.
+**Template Bar** information is treated as user-specific. It is stored in the .vs folder and is not committed to source control.
 
 ##  Error squiggles and quick fixes
 
@@ -98,7 +98,7 @@ The editor also offers Quick Fixes for some refactoring opportunities. For examp
 
 ![C&#43;&#43; quick fix](../ide/media/quick-fix.png "C++ Quick Fix")
 
-## Change Tracking
+## Change tracking
 
 Whenever you make a change to a file, a yellow bar appears on the left to indicate that unsaved changes were made. When you save the file, the bar turns green. The green and yellow bars are preserved as long as the document is open in the editor. They represent the changes that were made since you last opened the document.
 
@@ -108,7 +108,7 @@ Whenever you make a change to a file, a yellow bar appears on the left to indica
 
 You can move lines of code up and down by selecting them, holding down Alt, and pressing the **Up/Down** arrow keys.
 
-##  Insert Snippets
+##  Insert snippets
 
 A snippet is a predefined piece of source code. Right-click on a single point or on selected text to either insert a snippet or surround the selected text with the snippet. The following illustration shows the three steps to surround a selected statement with a for loop. The yellow highlights in the final image are editable fields that you access with the tab key. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 
@@ -138,7 +138,7 @@ Refactorings are available under the Quick Action context menu, or by clicking o
 * [Convert to Raw String Literal](refactoring/convert-to-raw-string-literal.md)
 * [Change Signature](refactoring/change-signature.md)
 
-## Code Style Enforcement with ClangFormat and EditorConfig
+## Code style enforcement with ClangFormat and EditorConfig
 
 Visual Studio 2017 and later comes with built-in support for [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html), a popular code-formatting utility for C++ based on Clang/LLVM. Type "ClangFormat" into [Quick Launch](/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) to set it to use one of these common formats:
 

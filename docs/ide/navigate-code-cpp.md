@@ -100,7 +100,7 @@ You group results by the following categories:
 - Definition then Path
 - Definition, Project then Path
 
- #### Filter Results
+ #### Filter results
 
 To filter results, hover over a column and click the filtering icon that pops up. You can filter results from the first column to hide things like string and comment references that you might not want to see.
 
@@ -112,7 +112,7 @@ To filter results, hover over a column and click the filtering icon that pops up
 
 - **Unprocessed Results**: **Find All References** operations can take time to complete on larger codebases, so the Results list shows "unprocessed" results here. Unprocessed results match the name of the symbol being searched for but have not yet been confirmed as actual code references. You can turn on this filter to get faster results. Just be aware that some results might not be actual references.
 
- #### Sort Results
+ #### Sort results
 
 You can sort results by any column by clicking on that column. You can swap between ascending/descending order by clicking the column again.
 

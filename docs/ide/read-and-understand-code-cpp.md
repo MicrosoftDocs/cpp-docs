@@ -41,7 +41,7 @@ You can zoom in or out in the editor by pressing the **Ctrl** key and scrolling 
 
 Scrollbar **Map Mode** enables you to quickly scroll and browse through a code file without leaving your current location. You can click anywhere on the code map to go directly to that location.
 
-![Code Map in C&#43;&#43;](../ide/media/vs2015_cpp_code_map.png "Code Map")
+![Code Map in C&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "Code Map")
 
 To turn on **Map Mode**, type “map” in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
