@@ -42,4 +42,4 @@ Once you have created an MFC control class, you can declare a variable based on 
 [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [MFC Message Handler](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+[Navigating the Class Structure](../../ide/navigate-code-cpp.md)
