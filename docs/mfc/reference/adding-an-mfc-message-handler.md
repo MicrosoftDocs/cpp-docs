@@ -21,5 +21,5 @@ By using the Properties window to define message- and event-handling functions, 
 [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)<br/>
 [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
+[Navigating the Class Structure](../../ide/navigate-code-cpp.md)<br/>
 [Dialog Editor](../../windows/dialog-editor.md)

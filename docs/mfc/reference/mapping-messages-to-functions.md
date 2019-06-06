@@ -42,4 +42,4 @@ To remove a message handler, double-click the handler in the right column and se
 [Adding a Member Variable](../../ide/adding-a-member-variable-visual-cpp.md)<br/>
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [Adding Event Handlers for Dialog Box Controls](../../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)
+[Navigating the Class Structure](../../ide/navigate-code-cpp.md)
