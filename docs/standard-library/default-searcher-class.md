@@ -21,24 +21,14 @@ class default_searcher {
 
 ## Members
 
-### Public Constructors
+### Constructors
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[default_searcher](#default_searcher)||
 
 ### Operators
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[operator()](#op_paren)||
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[\<functional>](../standard-library/functional.md)

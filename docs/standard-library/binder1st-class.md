@@ -35,13 +35,13 @@ protected:
 
 ### Parameters
 
-*binary_fn*<br/>
+*binary_fn*\
 The binary function object to be converted to a unary function object.
 
-*left*<br/>
+*left*\
 The value to which the first argument of the binary function object is to be bound.
 
-*right*<br/>
+*right*\
 The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
 ## Return Value
@@ -50,9 +50,9 @@ The unary function object that results from binding the first argument of the bi
 
 ## Remarks
 
-The template class stores a copy of a binary function object *binary_fn* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning `op( value, right )`.
+The template class stores a copy of a binary function object *binary_fn* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning `op(value, right)`.
 
-If *binary_fn* is an object of type `Operation` and `c` is a constant, then `bind1st( binary_fn, c )` is a more convenient equivalent to `binder1st<Operation>( binary_fn, c )`. For more information, see [bind1st](../standard-library/functional-functions.md#bind1st).
+If *binary_fn* is an object of type `Operation` and `c` is a constant, then `bind1st(binary_fn, c)` is a more convenient equivalent to `binder1st<Operation>(binary_fn, c)`. For more information, see [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## Example
 
@@ -97,20 +97,10 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

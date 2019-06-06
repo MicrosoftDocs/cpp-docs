@@ -9,11 +9,11 @@ ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 
 Defines C++ Standard Library functions that help construct *function objects*, also known as *functors*, and their binders. A function object is an object of a type that defines `operator()`. A function object can be a function pointer, but more typically, the object is used to store additional information that can be accessed during a function call.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <functional>
-```
+**Header:** \<functional>
+
+**Namespace:** std
 
 ## Remarks
 
@@ -61,9 +61,11 @@ If a call wrapper has a *weak result type*, the type of its member type `result_
 
 Every call wrapper has a move constructor and a copy constructor. A *simple call wrapper* is a call wrapper that has an assignment operator and whose copy constructor, move constructor, and assignment operator do not throw exceptions. A *forwarding call wrapper* is a call wrapper that can be called by using an arbitrary argument list and that delivers the arguments to the wrapped callable object as references. All rvalue arguments are delivered as rvalue references, and lvalue arguments are delivered as lvalue references.
 
-## Classes
+## Members
 
-|Class|Description|
+### Classes
+
+|||
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|A class that describes an exception thrown to indicate that a call to `operator()` on a [function](../standard-library/function-class.md) object failed because the object was empty.|
 |[binary_negate](../standard-library/binary-negate-class.md)|A template class providing a member function that negates the return value of a specified binary function.<br/> (Deprecated in C++17.) |
@@ -89,9 +91,9 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|A class that wraps a reference.|
 |[unary_negate](../standard-library/unary-negate-class.md)|A template class providing a member function that negates the return value of a specified unary function.<br/> (Deprecated in C++17.)  |
 
-## Functions
+### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[bind](../standard-library/functional-functions.md#bind)|Binds arguments to a callable object.|
 |[bind1st](../standard-library/functional-functions.md#bind1st)|A helper template function that creates an adaptor to convert a binary function object into a unary function object by binding the first argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
@@ -112,9 +114,9 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[ref](../standard-library/functional-functions.md#ref)|Constructs a `reference_wrapper` from an argument.|
 |[swap](../standard-library/functional-functions.md#swap)|Swaps two `function` objects.|
 
-## Structs
+### Structs
 
-|Struct|Description|
+|||
 |-|-|
 |[binary_function](../standard-library/binary-function-struct.md)|An empty base class that defines types that may be inherited by derived class that provides a binary function object.<br/> (Deprecated in C++11, removed in C++17.) |
 |[divides](../standard-library/divides-struct.md)|The class provides a predefined function object that performs the arithmetic operation of division on elements of a specified value type.|
@@ -134,15 +136,15 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[plus](../standard-library/plus-struct.md)|The class provides a predefined function object that performs the arithmetic operation of addition on elements of a specified value type.|
 |[unary_function](../standard-library/unary-function-struct.md)|An empty base class that defines types that may be inherited by derived class that provides a unary function object.<br/> (Deprecated in C++11, removed in C++17.) |
 
-## Objects
+### Objects
 
-|Object|Description|
+|||
 |-|-|
 |[_1.._M](../standard-library/1-object.md)|Placeholders for replaceable arguments.|
 
-## Operators
+### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/functional-operators.md#op_eq_eq)|Disallows equality comparison of callable objects.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|Disallows inequality comparison of callable objects.|

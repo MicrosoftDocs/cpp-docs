@@ -30,10 +30,10 @@ struct logical_not<void>
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 Any type that supports an `operator!` that takes an operand of the specified or inferred type.
 
-*Left*<br/>
+*Left*\
 The operand of the logical not operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
@@ -77,21 +77,11 @@ int main( )
       cout << *iter2 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 Original deque:
 d1 = ( false true false true false true false )
 The deque with its values negated is:
 d2 = ( true false true false true false true )
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

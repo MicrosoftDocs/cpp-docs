@@ -7,31 +7,27 @@ ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
 ---
 # &lt;functional&gt; operators
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if callable object is empty.
 
 ```cpp
 template <class Fty>
-bool operator==(const function<Fty>& f, null_ptr_type npc);
+    bool operator==(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator==(null_ptr_type npc, const function<Fty>& f);
+    bool operator==(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### Parameters
 
-*Fty*<br/>
+*Fty*\
 The function type to wrap.
 
-*f*<br/>
+*f*\
 The function object
 
-*npc*<br/>
+*npc*\
 A null pointer.
 
 ### Remarks
@@ -70,27 +66,27 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if callable object is not empty.
 
 ```cpp
 template <class Fty>
-bool operator!=(const function<Fty>& f, null_ptr_type npc);
+    bool operator!=(const function<Fty>& f, null_ptr_type npc);
 
 template <class Fty>
-bool operator!=(null_ptr_type npc, const function<Fty>& f);
+    bool operator!=(null_ptr_type npc, const function<Fty>& f);
 ```
 
 ### Parameters
 
-*Fty*<br/>
+*Fty*\
 The function type to wrap.
 
-*f*<br/>
+*f*\
 The function object
 
-*npc*<br/>
+*npc*\
 A null pointer.
 
 ### Remarks
@@ -128,7 +124,3 @@ int main()
 not empty == false
 not empty == true
 ```
-
-## See also
-
-[\<functional>](../standard-library/functional.md)<br/>
