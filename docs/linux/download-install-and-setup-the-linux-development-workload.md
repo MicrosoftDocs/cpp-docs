@@ -55,7 +55,7 @@ On Windows 10, you can install and target your favorite Linux distro on the Wind
 On WSL, no remote connection is required. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
 
 ```bash
-   `sudo g++ gdb make rsync zip`
+sudo g++ gdb make rsync zip
 ```
 ::: moniker-end
 
@@ -67,14 +67,17 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gd
 
 1. At a shell prompt on your Linux computer, run:
 
-   `sudo apt-get install openssh-server g++ gdb gdbserver zip`
+   ```bash
+   sudo apt-get install openssh-server g++ gdb gdbserver zip
+   ```
 
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
 1. Ensure the ssh service is running on your Linux computer by running:
 
-   `sudo service ssh start`
-
+   ```bash
+   sudo service ssh start
+   ```
    This starts the service and runs it in the background, ready to accept connections.
 
 ::: moniker-end
@@ -85,7 +88,9 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **gd
 
 Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **rsync** and **zip**, run:
 
-   `sudo dnf install gcc-g++ gdb rsync zip`
+   ```bash
+   sudo dnf install gcc-g++ gdb rsync zip
+   ```
 
 **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support.
 
@@ -99,13 +104,16 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
 1. At a shell prompt on your Linux computer, run:
 
-   `sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip`
-
+   ```bash
+   sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip
+   ```
    You may be prompted for your root password due to the sudo command.  If so, enter it and continue. Once complete, the required services and tools are installed.
 
 1. Ensure the ssh service is running on your Linux computer by running:
 
-   `sudo systemctl start sshd`
+   ```bash
+   sudo systemctl start sshd
+   ```
 
    This starts the service and runs it in the background, ready to accept connections.
 

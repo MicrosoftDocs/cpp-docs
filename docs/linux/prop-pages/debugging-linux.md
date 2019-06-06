@@ -7,7 +7,7 @@ ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 
 Property | Description | Choices
 --- | ---| ---
-Remote debug machine | **Visual Studio 2019 version 16.1**: Specifies the machine to debug the program on. Can be different than the remote build machine that is specified on the **General** page.
+Remote debug machine | **Visual Studio 2019 version 16.1**: Specifies the machine to debug the program on. Can be different than the remote build machine that is specified on the [General](general-linux.md) page.
 Pre-Launch Command | A command that is run on the shell before the debugging starts and before the debugger is running, and can be used to affect the debugging environment.
 Program | The full path to the program to debug on the remote system. This is a path on the remote system. If left empty or unchanged it defaults to the current project output.
 Program Arguments | The command line arguments to pass to the program being debugged.

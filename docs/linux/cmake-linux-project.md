@@ -17,7 +17,7 @@ For general information about CMake support in Visual Studio, see [CMake Tools f
 
 First, make sure you have the **Linux development with C++** workload installed, including the CMake component. See [Install the C++ Linux workload in Visual Studio](download-install-and-setup-the-linux-development-workload.md). 
 
-On the Linux machine, make sure that the following are installed: 
+On the Linux system, make sure that the following are installed: 
 
 - gcc
 - gdb
@@ -63,25 +63,29 @@ add_executable(hello-cmake hello.cpp)
 
 ## Choose a Linux target
 
-As soon as you open the folder, Visual Studio parses the CMakeLists.txt file and specifies a Windows target of **x86-Debug**. To target Linux, change the project settings to **Linux-Debug** or **Linux-Release**. 
+As soon as you open the folder, Visual Studio parses the CMakeLists.txt file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, change the project settings to **Linux-Debug** or **Linux-Release**. 
 
 ::: moniker range="vs-2019"
 
-To target Windows Subsystem for Linux, choose **WSL-Debug**.
+To target Windows Subsystem for Linux, choose **WSL-Debug** or **WSL-Release** if using GCC, or the Clang variants if using the Clang/LLVM toolset. 
+
+**Visual Studio 2019 version 16.1** When targeting WSL, no copying or sources or headers is necessary because the compiler on Linux has direct access to the Windows file system where your source files are located, and Visual Studio likewise can access the Linux header files directly.
 
 ::: moniker-end
 
-By default, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager**. If no remote connections are found, you are prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+For remote targets, Visual Studio by default chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager**. If no remote connections are found, you are prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
-After you specify a Linux target, your source is copied to your Linux machine. Then, CMake is run on the Linux machine to generate the CMake cache for your project.
+If you specify a remote Linux target, your source is copied to the remote system.
+
+After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project. 
 
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
-To provide IntelliSense support for remote headers, Visual Studio automatically copies them from the Linux machine (or WSL installation) to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
+To provide IntelliSense support for headers on remote Linux systems, Visual Studio automatically copies them from the Linux machine to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
 ## Debug the project
 
-To debug your code on the remote system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
+To debug your code on the specified debug target system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
 To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
@@ -159,7 +163,7 @@ You can use these optional settings for more control:
 }
 ```
 
-These options allow you to run commands on the remote system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
+These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
 
 ::: moniker range="vs-2019"
 

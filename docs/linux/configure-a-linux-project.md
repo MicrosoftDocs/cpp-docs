@@ -7,11 +7,15 @@ ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 
 This topic describes how to configure a C++ Linux project as described in [Create a new C++ Linux project in Visual Studio](create-a-new-linux-project.md). For CMake Linux projects, see [Configure a Linux CMake Project ](cmake-linux-project.md). 
 
-You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about). 
+You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). 
 
 ::: moniker range="vs-2019"
 
-**Visual Studio 2019 version 16.1** You can specify separate Linux targets for building and debugging. 
+**Visual Studio 2019 version 16.1**:
+
+- When targeting WSL, you can avoid the copy operations that are necessary for building and IntelliSense when targeting remote Linux systems.
+
+- You can specify separate Linux targets for building and debugging.
 
 ::: moniker-end
 
@@ -35,9 +39,11 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
    ::: moniker range="vs-2019"
 
-- **Visual Studio 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the WSL shell will appear in their place:
+- **Visual Studio 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
    ![WSL build machine](media/wsl-remote-vs2019.png)
+
+   If you have side-by-side WSL installations, you can specify a different path here. For example, if you have Ubuntu 18.04 installed, it is located in **C:\Users\\<username>\AppData\Local\Microsoft\WindowsApps\ubuntu1804.exe**.
 
    You can specify a different target for debugging on the **Configuration Properties** > **Debugging** page.
 
@@ -50,9 +56,15 @@ To change settings pertaining to the remote Linux computer, configure the remote
 > [!NOTE]
 > To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section. You can specify a certain version of GCC or Clang, for example. For more information see [C/C++ Properties (Linux C++)](prop-pages/c-cpp-linux.md) and [Linker Properties (Linux C++)](prop-pages/linker-linux.md).
 
-## Copy sources
+## Copy sources (remote systems only)
 
-When building, the source files on your development PC are copied to the Linux computer and compiled there. By default, all sources in the Visual Studio project are copied to the locations set in the settings above. However, additional sources can also be added to the list, or copying sources can be turned off entirely, which is the default for a Makefile project.
+::: moniker range="vs-2019"
+
+This section does not apply when targeting WSL.
+
+::: moniker-end
+
+When building on remote systems, the source files on your development PC are copied to the Linux computer and compiled there. By default, all sources in the Visual Studio project are copied to the locations set in the settings above. However, additional sources can also be added to the list, or copying sources can be turned off entirely, which is the default for a Makefile project.
 
 - **Sources to copy** determines which sources are copied to the remote computer. By default, the **\@(SourcesToCopyRemotely)** defaults to all source code files in the project, but does not include any asset/resource files, such as images.
 
@@ -68,7 +80,13 @@ Since all compilation is happening on a remote computer (or WSL), several additi
 
 ![Build Events](media/settings_buildevents.png)
 
-## <a name="remote_intellisense"></a> IntelliSense for remote headers
+## <a name="remote_intellisense"></a> IntelliSense for headers on remote systems
+
+::: moniker range="vs-2019"
+
+This section does not apply when targeting WSL.
+
+::: moniker-end
 
 When you add a new connection in **Connection Manager**, Visual Studio automatically detects the include directories for the compiler on the remote system. Visual Studio then zips up and copies those files to a directory on your local Windows machine. After that, whenever you use that connection in a Visual Studio or CMake project, the headers in those directories are used to provide IntelliSense.
 
