@@ -100,7 +100,7 @@ There are several ways to interact with and debug your Linux project.
 
 ## Debug with Attach to Process
 
-The [Debugging](debugging-linux.md) property page for Visual Studio projects, and the **Launch.vs.json** settings for CMake projects, have settings that enable you to attach to a running process. If you require additional control beyond what is provided in those settings, you can place a file named `Microsoft.MIEngine.Options.xml` in the root of your solution or workspace. Here is a simple example:
+The [Debugging](prop-pages/debugging-linux.md) property page for Visual Studio projects, and the **Launch.vs.json** settings for CMake projects, have settings that enable you to attach to a running process. If you require additional control beyond what is provided in those settings, you can place a file named `Microsoft.MIEngine.Options.xml` in the root of your solution or workspace. Here is a simple example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
