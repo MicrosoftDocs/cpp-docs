@@ -33,4 +33,3 @@ An instance of the type predicate holds true if the type *T* is a class type mar
 ## See also
 
 [<type_traits>](../standard-library/type-traits.md)<br/>
-[aggregate Specifier](../cpp/aggregate-specifier.md)<br/>

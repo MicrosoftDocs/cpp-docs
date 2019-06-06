@@ -29,10 +29,10 @@ class BinaryPredicate = equal_to<>>
 
 |||
 |-|-|
-|[boyer_moore_horspool_searcher](#boyer_moore_horspool_searcher)||
+|[boyer_moore_horspool_searcher]()||
 
 ### Operators
 
 |||
 |-|-|
-|[operator()](#op_paren)||
+|[operator()]()||

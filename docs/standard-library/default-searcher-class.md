@@ -25,10 +25,10 @@ class default_searcher {
 
 |||
 |-|-|
-|[default_searcher](#default_searcher)||
+|[default_searcher]()||
 
 ### Operators
 
 |||
 |-|-|
-|[operator()](#op_paren)||
+|[operator()]()||
