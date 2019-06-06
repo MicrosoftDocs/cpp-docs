@@ -13,13 +13,3 @@ Detects execution policies for the purpose of excluding function signatures from
 ```
 template<class T> struct is_execution_policy { see below };
 ```
-
-## Requirements
-
-**Header:** \<execution>
-
-**Namespace:** std
-
-## See also
-
-[\<execution>](../standard-library/execution.md)

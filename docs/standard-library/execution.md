@@ -11,8 +11,6 @@ Defines the container template classes hash_map and hash_multimap and their supp
 ## Syntax
 
 ```
-#include <execution>
-
 namespace std {
     template<class T> inline constexpr bool is_execution_policy_v = is_execution_policy<T>::value;
 }
@@ -24,7 +22,7 @@ namespace std::execution {
 ```
 ### Classes and Structs
 
-|Class (or Struct)|Description|
+|||
 |-|-|
 |[is_execution_policy Struct](is-execution-policy-struct.md)|Detects execution policies for the purpose of excluding function signatures from otherwise ambiguous overload resolution participation.|
 |[parallel_policy Class](parallel-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading and indicate that a parallel algorithm’s execution may be parallelized.|

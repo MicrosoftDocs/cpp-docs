@@ -16,13 +16,3 @@ class execution::sequenced_policy;
 ## Remarks
 
 During the execution of a parallel algorithm with the `execution::sequenced_policy` policy, if the invocation of an element access function exits via an uncaught exception, `terminate()` shall be called.
-
-## Requirements
-
-**Header:** \<execution>
-
-**Namespace:** std::execution
-
-## See also
-
-[\<execution>](../standard-library/execution.md)
