@@ -8,15 +8,17 @@ helpviewer_keywords: ["<any>"]
 
 Defines the class any and several supporting functions and classes.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <any>
-```
+**Header:** \<any>
+
+**Namespace:** std
+
+## Members
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[any_cast](../standard-library/any-functions.md#any_cast)|Makes an object into an any.|
 |[make_any](../standard-library/any-functions.md#make_any)|Takes values and creates an any object.|
@@ -24,7 +26,7 @@ Defines the class any and several supporting functions and classes.
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[any](../standard-library/any-class.md)|Stores any type that satisfies the constructor requirements or has no value.|
 |[bad_any_cast](../standard-library/bad-any-cast-class.md)|Objects thrown by a failed `any_cast`.|

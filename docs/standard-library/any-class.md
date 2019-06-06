@@ -16,15 +16,17 @@ The stored instance is called the contained value. Two states are the same if ei
 class any
 ```
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[any](#any)|Constructs an object of type `any`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[emplace](#emplace)|Sets an any value.|
 |[has_value](#has_value)|Returns **true** if any has a value.|
@@ -34,17 +36,11 @@ class any
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|Replaces the any with a copy of another any.|
 
-## Requirements
-
-**Header:** \<any>
-
-**Namespace:** std
-
-## <a name="any"></a>  any::any
+## <a name="any"></a> any
 
 Constructs an object of type `any`. Also includes a destructor.
 
@@ -62,7 +58,7 @@ template <class T, class U, class... Args>
 ~any();
 ```
 
-## <a name="emplace"></a>  any::emplace
+## <a name="emplace"></a> emplace
 
 Sets an any value.
 
@@ -73,7 +69,7 @@ template <class T, class U, class... Args>
     decay_t<T>& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="has_value"></a>  any::has_value
+## <a name="has_value"></a> has_value
 
 Returns **true** if any has a value.
 
@@ -81,7 +77,7 @@ Returns **true** if any has a value.
 bool has_value() const noexcept;
 ```
 
-## <a name="op_eq"></a>  any::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the any with a copy of another any.
 
@@ -94,11 +90,10 @@ template <class T>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|The any being copied into the any.|
+*right*\
+The any being copied into the any.
 
-## <a name="reset"></a>  any::reset
+## <a name="reset"></a> reset
 
 Resets an any.
 
@@ -106,7 +101,7 @@ Resets an any.
 void reset() noexcept;
 ```
 
-## <a name="swap"></a>  any::swap
+## <a name="swap"></a> swap
 
 Swaps two any objects.
 
@@ -114,14 +109,10 @@ Swaps two any objects.
 void swap(any& rhs) noexcept;
 ```
 
-## <a name="type"></a>  any::type
+## <a name="type"></a> type
 
 Returns the any type.
 
 ```cpp
 const type_info& type() const noexcept;
 ```
-
-## See also
-
-[&lt;any>](../standard-library/any.md)

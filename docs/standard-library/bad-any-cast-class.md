@@ -16,24 +16,14 @@ class bad_any_cast
 
 ### Member functions
 
-|Member function|Description|
+|||
 |-|-|
 |[what](#what)|Returns the type.|
 
-## Requirements
-
-**Header:** \<any>
-
-**Namespace:** std
-
-## <a name="what"></a>  bad_any_cast::what
+## <a name="what"></a> what
 
 Returns the type.
 
 ```cpp
 const char* what() const noexcept override;
 ```
-
-## See also
-
-[&lt;any>](../standard-library/any.md)

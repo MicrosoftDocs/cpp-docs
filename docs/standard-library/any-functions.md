@@ -5,11 +5,7 @@ f1_keywords: ["any/std::any_cast", "any/std::make_any", "any/std::swap"]
 ---
 # &lt;any&gt; functions
 
-||||
-|-|-|-|
-|[any_cast](#any_cast)|[make_any](#make_any)|[swap](#swap)|
-
-## <a name="any_cast"></a>  any_cast
+## <a name="any_cast"></a> any_cast
 
 Makes an object into an any.
 
@@ -26,7 +22,7 @@ template<class T>
     T* any_cast(any* operand) noexcept;
 ```
 
-## <a name="make_any"></a>  make_any
+## <a name="make_any"></a> make_any
 
 Takes values and creates an any object.
 
@@ -37,7 +33,7 @@ template <class T, class U, class... Args>
     any make_any(initializer_list<U> il, Args&& ...args);
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two objects any.
 
@@ -47,11 +43,8 @@ void swap(any& left, any& right) noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `any`.|
-|*right*|An object of type `any`.|
+*left*\
+An object of type `any`.
 
-## See also
-
-[&lt;any>](../standard-library/any.md)
+*right*\
+An object of type `any`.
