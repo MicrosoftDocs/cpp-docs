@@ -5,6 +5,14 @@ ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
 ---
 # Build Event Properties (Linux C++)
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 ## Pre-Build Event
 
 Property | Description
@@ -58,3 +66,7 @@ Command Line | Specifies a command line for the post-build event tool to run on 
 Description | Specifies a description for the post-build event tool to display.
 Use In Build | Specifies whether this build event is excluded from the build for the current configuration.
 Additional files to copy | Specifies additional files to copy from the remote system. Optionally the list can be provided as a remote to local mapping pairs using a syntax like this: fullremotepath1:=fulllocalpath1;fullremotepath2:=fulllocalpath2, where a remote file can be copied to the specified location on the local machine.
+
+::: moniker-end
+
+

@@ -7,6 +7,14 @@ f1_keywords: []
 
 # Remote Archive Properties (C++ Linux)
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 Property | Description
 --- | ---
 Create an archive index | Create an archive index (cf. ranlib).  This can speed up linking and reduce dependency within its own library.
@@ -20,3 +28,5 @@ Output File | The /OUT option overrides the default name and location of the pro
 Archiver | Specifies the program to invoke during linking of static objects, or the path to the archiver on the remote system.
 Archiver Timeout | Remote archiver timeout, in milliseconds.
 Copy Output | Specifies whether to copy the build output file from the remote system to the local machine.
+
+::: moniker-end

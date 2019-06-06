@@ -7,6 +7,12 @@ ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 
 # Configure a Linux CMake project
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
 When you open a folder that contains a CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
 
 Visual Studio does not modify the CMakeLists.txt files or the original CMake cache, so that others working on the same project can continue to use whatever tools they are already using.

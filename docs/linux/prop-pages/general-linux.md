@@ -5,6 +5,14 @@ ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 ---
 # General Properties (Linux C++)
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 Property | Description | Choices
 --- | ---| ---
 Output Directory | Specifies a relative path to the output file directory; can include environment variables.
@@ -19,3 +27,6 @@ Remote Build Root Directory | Specifies a path to a directory on the remote mach
 Remote Build Project Directory | Specifies a path to a directory on the remote machine or device for the project.
 Configuration Type | Specifies the type of output this configuration generates. | **Dynamic Library (.so)** - Dynamic Library (.so)<br>**Static library (.a)** - Static Library (.a)<br>**Application (.out)** - Application (.out)<br>**Makefile** - Makefile<br>
 Use of STL | Specifies which C++ Standard Library to use for this configuration. | **Shared GNU Standard C++ Library**<br>**Static GNU Standard C++ Library (-static)**<br>
+
+::: moniker-end
+

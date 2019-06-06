@@ -7,6 +7,14 @@ f1_keywords: []
 
 # C/C++ Properties (Linux C++)
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 ## General
 
 Property | Description | Choices
@@ -70,4 +78,4 @@ Property | Description | Choices
 Compile As | Select compile language option for .c and .cpp files.  'Default' will detect based on .c or .cpp extention. (-x c, -x c++) | **Default** - Default.<br/>**Compile as C Code** - Compile as C Code.<br/>**Compile as C++ Code** - Compile as C++ Code.<br/>
 Forced Include Files | One or more forced include files (-include [name])
 
-## Additional Options
+::: moniker-end

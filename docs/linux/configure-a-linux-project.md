@@ -5,6 +5,12 @@ ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux project
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
 This topic describes how to configure a C++ Linux project as described in [Create a new C++ Linux project in Visual Studio](create-a-new-linux-project.md). For CMake Linux projects, see [Configure a Linux CMake Project ](cmake-linux-project.md). 
 
 You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL). 
@@ -39,7 +45,7 @@ To change settings pertaining to the remote Linux computer, configure the remote
 
    ::: moniker range="vs-2019"
 
-   **Visual Studio 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
+   **Visual Studio 2019 version 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
    ![WSL build machine](media/wsl-remote-vs2019.png)
 
@@ -113,7 +119,6 @@ You can enable logging to help troubleshoot problems:
 ![Remote Logging](media/remote-logging-vs2019.png)
 
 ::: moniker-end
-
 
 ## See also
 

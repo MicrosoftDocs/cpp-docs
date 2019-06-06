@@ -19,7 +19,7 @@ ASan is a runtime memory error detector for C/C++ that catches the following err
 - Use after scope
 - Initialization order bugs
 
-When ASan detects an error it stops execution immediately. When you run an ASan-enabled program in the debugger, you see a message that describes the type of error, the memory address, and the location in the source file where the error occurred:
+When ASan detects an error, it stops execution immediately. When you run an ASan-enabled program in the debugger, you see a message that describes the type of error, the memory address, and the location in the source file where the error occurred:
 
    ![ASan error message](media/asan-error.png)
 
@@ -27,7 +27,7 @@ You can also view the full ASan output (including where the corrupted memory was
 
 ## Enable ASan for MSBuild-based Linux projects
 
-To enable ASan for MSBuild-based Linux projects,right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags and requires recompilation in order to work.
+To enable ASan for MSBuild-based Linux projects, right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags and requires recompilation in order to work.
 
 ![Enable ASan for an MSBuild project](media/msbuild-asan-prop-page.png)
 

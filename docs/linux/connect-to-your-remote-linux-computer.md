@@ -7,6 +7,12 @@ ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 
 # Connect to your remote Linux computer
 
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
 ::: moniker range="vs-2019"
 
 When you target Windows Subsystem for Linux (WSL) Visual Studio interacts with your Linux distro directly through the file system; no remote connection is necessary.
