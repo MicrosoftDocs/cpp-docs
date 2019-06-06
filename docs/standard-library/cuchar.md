@@ -8,15 +8,15 @@ helpviewer_keywords: ["cuchar header"]
 
 Includes the Standard C library header \<uchar.h> and adds the associated names to the `std` namespace.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cuchar>
-```
+**Header:** \<cuchar>
 
-## Functions
+**Namespace:** std
 
-|Function|Description|
+## Member functions
+
+|||
 |-|-|
 |[c16rtomb](../standard-library/cuchar-functions.md#c16rtomb)|No description.|
 |[c32rtomb](../standard-library/cuchar-functions.md#c32rtomb)|No description.|

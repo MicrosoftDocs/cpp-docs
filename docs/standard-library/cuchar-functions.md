@@ -6,43 +6,26 @@ helpviewer_keywords: ["std::c16rtomb [C++]", "std::c32rtomb [C++]", "mbrtoc16 [C
 ---
 # &lt;cuchar&gt; functions
 
-||||
-|-|-|-|
-|[c16rtomb](#c16rtomb)|[c32rtomb](#c32rtomb)|[mbrtoc16](#mbrtoc16)|
-|[mbrtoc32](#mbrtoc32)|||
-
-## <a name="c16rtomb"></a>  c16rtomb
-
-No description.
+## <a name="c16rtomb"></a> c16rtomb
 
 ```cpp
 size_t c16rtomb(char* s, char16_t c16, mbstate_t* ps);
 ```
 
-## <a name="c32rtomb"></a>  c32rtomb
-
-No description.
+## <a name="c32rtomb"></a> c32rtomb
 
 ```cpp
 size_t c32rtomb(char* s, char32_t c32, mbstate_t* ps);
 ```
 
-## <a name="mbrtoc16"></a>  mbrtoc16
-
-No description.
+## <a name="mbrtoc16"></a> mbrtoc16
 
 ```cpp
 size_t mbrtoc16(char16_t* pc16, const char* s, size_t n, mbstate_t* ps);
 ```
 
-## <a name="mbrtoc32"></a>  mbrtoc32
-
-No description.
+## <a name="mbrtoc32"></a> mbrtoc32
 
 ```cpp
 size_t mbrtoc32(char32_t* pc32, const char* s, size_t n, mbstate_t* ps);
 ```
-
-## See also
-
-[\<cuchar>](../standard-library/cuchar.md)<br/>
