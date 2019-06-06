@@ -20,7 +20,3 @@ constexpr bool operator>=(monostate, monostate) noexcept;
 constexpr bool operator==(monostate, monostate) noexcept;
 constexpr bool operator!=(monostate, monostate) noexcept;
 ```
-
-## See also
-
-[&lt;variant>](../standard-library/variant.md)

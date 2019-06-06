@@ -15,15 +15,17 @@ template <class... Types>
     class variant
 ```
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[variant](#variant)|Constructs an object of type `variant`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[emplace](#emplace)|Creates a new contained value.|
 |[index](#index)|Returns the index of a contained value.|
@@ -32,17 +34,11 @@ template <class... Types>
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|Replaces the variant with a copy of another variant.|
 
-## Requirements
-
-**Header:** \<variant>
-
-**Namespace:** std
-
-## <a name="emplace"></a>  variant::emplace
+## <a name="emplace"></a> emplace
 
 Creates a new contained value.
 
@@ -57,7 +53,7 @@ template <size_t I, class U, class... Args>
     variant_alternative_t<I, variant<Types...>>& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="index"></a>  variant::index
+## <a name="index"></a> index
 
 Returns the index of a contained value.
 
@@ -65,7 +61,7 @@ Returns the index of a contained value.
 constexpr size_t index() const noexcept;
 ```
 
-## <a name="variant"></a>  variant::variant
+## <a name="variant"></a> variant
 
 Constructs an object of type `variant`. Also includes a destructor.
 
@@ -106,11 +102,10 @@ template <class Alloc, size_t I, class U, class... Args>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Al*|The allocator class to use with this object.|
+*Al*\
+The allocator class to use with this object.
 
-## <a name="op_eq"></a>  variant::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the variant with a copy of another variant.
 
@@ -121,20 +116,16 @@ template <class T>
     variant& operator=(T&&) noexcept(see below);
 ```
 
-## <a name="swap"></a> variant::swap
+## <a name="swap"></a> swap
 
 ```cpp
 void swap(variant&) noexcept(see below);
 ```
 
-## <a name="valueless"></a>  variant::valueless_by_exception
+## <a name="valueless"></a> valueless_by_exception
 
 Returns **false** if the variant holds a value.
 
 ```cpp
 constexpr bool valueless_by_exception() const noexcept;
 ```
-
-## See also
-
-[<variant>](../standard-library/variant.md)

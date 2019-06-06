@@ -24,7 +24,3 @@ template <size_t I, class T>
 template <size_t I, class... Types>
     struct variant_alternative<I, variant<Types...>>;
 ```
-
-## See also
-
-[&lt;variant>](../standard-library/variant.md)

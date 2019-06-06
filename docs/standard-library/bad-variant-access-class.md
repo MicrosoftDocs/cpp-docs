@@ -13,7 +13,3 @@ Objects of type bad_variant_access are thrown to report invalid accesses to the 
 ```cpp
 class bad_variant_access;
 ```
-
-## See also
-
-[&lt;variant>](../standard-library/variant.md)

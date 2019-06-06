@@ -5,12 +5,7 @@ f1_keywords: ["variant/std::get", "variant/std::get_if", "variant/std::holds_alt
 ---
 # &lt;variant&gt; functions
 
-||||
-|-|-|-|
-|[get](#get)|[get_if](#get_if)|[holds_alternative](#holds_alternative)|
-|[swap](#swap)|[variant_npos](#variant_npos)|[visit](#visit)|
-
-## <a name="get"></a>  get
+## <a name="get"></a> get
 
 Gets the variant of an object.
 
@@ -33,7 +28,7 @@ template <class T, class... Types>
     constexpr const T&& get(const variant<Types...>&&);
 ```
 
-## <a name="get_if"></a>  get_if
+## <a name="get_if"></a> get_if
 
 Gets the variant of an object if it exists.
 
@@ -48,7 +43,7 @@ template <class T, class... Types>
     constexpr add_pointer_t<const T> get_if(const variant<Types...>*) noexcept;
 ```
 
-## <a name="holds_alternative"></a>  holds_alternative
+## <a name="holds_alternative"></a> holds_alternative
 
 Return **true** if a variant exists.
 
@@ -57,14 +52,14 @@ template <class T, class... Types>
     constexpr bool holds_alternative(const variant<Types...>&) noexcept;
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 ```cpp
 template <class... Types>
     void swap(variant<Types...>&, variant<Types...>&) noexcept(see below);
 ```
 
-## <a name="variant_npos"></a>  variant_npos
+## <a name="variant_npos"></a> variant_npos
 
 ```cpp
 namespace std {
@@ -72,7 +67,7 @@ namespace std {
 }
 ```
 
-## <a name="visit"></a>  visit
+## <a name="visit"></a> visit
 
 Moves to the next **variant**.
 
@@ -81,7 +76,3 @@ template <class Visitor, class... Variants>
     constexpr see below
         visit(Visitor&&, Variants&&...);
 ```
-
-## See also
-
-[&lt;variant>](../standard-library/variant.md)

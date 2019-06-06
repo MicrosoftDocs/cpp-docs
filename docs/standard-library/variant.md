@@ -8,15 +8,17 @@ helpviewer_keywords: ["<variant>"]
 
 A variant object holds and manages a value. If the variant holds a value, that value’s type has to be one of the template argument types given to variant. These template arguments are called alternatives.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <variant>
-```
+**Header:** \<variant>
+
+**Namespace:** std
+
+## Members
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|Tests if the variant object on the left side of the operator is equal to the variant object on the right side.|
 |[operator!=](../standard-library/forward-list-operators.md#op_neq)|Tests if the variant object on the left side of the operator is not equal to the variant object on the right side.|
@@ -27,7 +29,7 @@ A variant object holds and manages a value. If the variant holds a value, that v
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[get](../standard-library/variant-functions.md#get)|Gets the variant of an object.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Gets the variant of an object if it exists.|
@@ -37,14 +39,14 @@ A variant object holds and manages a value. If the variant holds a value, that v
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[bad_variant_access](../standard-library/bad-variant-access-class.md)|Objects thrown to report invalid accesses to the value of a variant object.|
 |[variant](../standard-library/variant.md)|An object to either hold a value of one of its alternative types, or no value.|
 
 ### Structs
 
-|Struct|Description|
+|||
 |-|-|
 |[hash](../standard-library/hash-structure.md)||
 |[monostate](../standard-library/monostate-structure.md)|An alternative type for a variant to make the variant type default constructible.|
@@ -54,7 +56,7 @@ A variant object holds and manages a value. If the variant holds a value, that v
 
 ### Objects
 
-|Object|Description|
+|||
 |-|-|
 |[variant_npos](../standard-library/variant-functions.md#variant_npos)||
 

@@ -24,7 +24,3 @@ template <class T>
 template <class... Types>
     struct variant_size<variant<Types...>>;
 ```
-
-## See also
-
-[&lt;variant>](../standard-library/variant.md)
