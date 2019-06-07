@@ -22,7 +22,7 @@ You can set the CL or \_CL_ environment variable using the following syntax:
 
 For details on the arguments to the CL and \_CL_ environment variables, see [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md).
 
-You can use these environment variables to define the files and options you use most often and use the command line to define specific files and options for specific purposes. The CL and \_CL\_ environment variables are limited to 1024 characters (the command-line input limit).
+You can use these environment variables to define the files and options you use most often. Then use the command line to give more files and options to CL for specific purposes. The CL and \_CL_ environment variables are limited to 1024 characters (the command-line input limit).
 
 You can't use the [/D](d-preprocessor-definitions.md) option to define a symbol that uses an equal sign (**=**). Instead, you can use the number sign (**#**) for an equal sign. In this way, you can use the CL or \_CL_ environment variables to define preprocessor constants with explicit values—for example, `/DDEBUG#1` to define `DEBUG=1`.
 
@@ -44,7 +44,7 @@ The following example causes a plain CL command to compile the source files FILE
 > SET \_CL_=FILE3.OBJ \
 > CL
 
-These environment variables have the same effect as the following command line:
+These environment variables make the call to CL have the same effect as the following command line:
 
 > CL FILE1.C FILE2.C FILE3.OBJ
 
