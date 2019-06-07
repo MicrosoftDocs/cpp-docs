@@ -30,7 +30,21 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x86_x64 Cross Tools Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
 - **x64_x86 Cross Tools Command Prompt** - Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
+::: moniker range=">= vs-2019"
+
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2019, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2019 (Latest)**, in a folder named **Visual Studio 2019**.
+
+::: moniker-end
+::: moniker range="= vs-2017"
+
+The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2017, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Latest)**, in a folder named **Visual Studio 2017**.
+
+::: moniker-end
+::: moniker range="< vs-2017"
+
+The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed Visual Studio 2015. The developer command prompt shortcut is named **Developer Command Prompt for VS 2015**.
+
+::: moniker-end
 
 ## <a name="developer_command_prompt"></a> To open a developer command prompt window
 
@@ -127,14 +141,16 @@ Optionally specifies the Visual Studio compiler toolset to use. By default, the 
 
 Use **-vcvars_ver=14.2x.yyyyy** to specify a specific version of the Visual Studio 2019 compiler toolset.
 
+Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
+
 ::: moniker-end
 ::: moniker range="= vs-2017"
+
+Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
 
 Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Studio 2017 compiler toolset.
 
 ::: moniker-end
-
-Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
 
 Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 
