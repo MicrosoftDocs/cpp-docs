@@ -157,16 +157,7 @@ Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 <a name="vcvarsall"></a>
 #### To set up the build environment in an existing command prompt window
 
-::: moniker range=">= vs-2019"
-
 1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2019 and Visual Studio 2017, use the *VC\\Auxiliary\\Build* subdirectory. For Visual Studio 2015, use the *VC* subdirectory.
-
-::: moniker-end
-::: moniker range="<= vs-2017"
-
-1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2017, use the *VC\\Auxiliary\\Build* subdirectory. For Visual Studio 2015, use the *VC* subdirectory.
-
-::: moniker-end
 
 1. Enter the command for your preferred developer environment. For example, to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK and Visual Studio compiler toolset, use this command line:
 
