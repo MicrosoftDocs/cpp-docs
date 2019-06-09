@@ -10,11 +10,11 @@ Defines the classes [condition_variable](../standard-library/condition-variable-
 
 This header uses Concurrency Runtime (ConcRT) so that you can use it together with other ConcRT mechanisms. For more information about ConcRT, see [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).
 
-## Syntax
+## Requirements
 
-```cpp
-#include <condition_variable>
-```
+**Header:** \<condition_variable>
+
+**Namespace:** std
 
 > [!NOTE]
 > In code that is compiled by using **/clr**, this header is blocked.

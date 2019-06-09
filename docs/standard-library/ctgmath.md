@@ -7,11 +7,11 @@ ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
 
 In effect, includes the C++ Standard Library headers \<complex> and \<cmath>, which provide type-generic math macros equivalent to \<tgmath.h>.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ctgmath>
-```
+**Header:** \<ctgmath>
+
+**Namespace:** std
 
 ## Remarks
 

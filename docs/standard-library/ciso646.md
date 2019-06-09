@@ -12,11 +12,11 @@ Includes the Standard C library header \<iso646.h> and adds the associated names
 > [!NOTE]
 > Use of this header is unnecessary in C++.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ciso646>
-```
+**Header:** \<ciso646>
+
+**Namespace:** std
 
 ## Remarks
 

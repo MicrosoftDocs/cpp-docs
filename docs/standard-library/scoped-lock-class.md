@@ -18,14 +18,3 @@ class scoped_lock {
     scoped_lock& operator=(const scoped_lock&) = delete;
 }
 ```
-
-## Requirements
-
-**Header:** \<mutex>
-
-**Namespace:** std
-
-## See also
-
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>

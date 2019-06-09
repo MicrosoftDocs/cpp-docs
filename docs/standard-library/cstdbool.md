@@ -10,11 +10,11 @@ Includes the Standard C library header \<stdbool.h> and adds the associated name
 > [!NOTE]
 > This header has been deprecated in C++ 17.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cstdbool>
-```
+**Header:** \<cstdbool>
+
+**Namespace:** std
 
 ## Remarks
 

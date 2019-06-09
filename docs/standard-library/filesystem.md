@@ -77,10 +77,12 @@ Finally, an important feature of path objects is that you can use them wherever 
 
 For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
-## Classes
+## Members
 
-|Name|Description|
-|----------|-----------------|
+### Classes
+
+|||
+|-|-|
 |[directory_entry Class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a path.|
 |[directory_iterator Class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|
 |[filesystem_error Class](../standard-library/filesystem-error-class.md)|A base class for exceptions that are thrown to report a low-level system overflow.|
@@ -88,10 +90,10 @@ For more information and code examples, see [File System Navigation (C++)](../st
 |[recursive_directory_iterator Class](../standard-library/recursive-directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory. The iterator can also descend into subdirectories.|
 |[file_status Class](../standard-library/file-status-class.md)|Wraps a `file_type`.|
 
-## Structs
+### Structs
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[space_info Structure](../standard-library/space-info-structure.md)|Holds information about a volume.|
 
 ## Functions
@@ -104,8 +106,8 @@ For more information and code examples, see [File System Navigation (C++)](../st
 
 ## Enumerations
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|
