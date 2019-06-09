@@ -7,17 +7,7 @@ helpviewer_keywords: ["std::abs [C++]", "std::acos [C++]", "std::asin [C++]", "s
 ---
 # &lt;valarray&gt; functions
 
-||||
-|-|-|-|
-|[abs](#abs)|[acos](#acos)|[asin](#asin)|
-|[atan](#atan)|[atan2](#atan2)|[begin](#begin)|
-|[cos](#cos)|[cosh](#cosh)|[end](#end)|
-|[exp](#exp)|[log](#log)|[log10](#log10)|
-|[pow](#pow)|[sin](#sin)|[sinh](#sinh)|
-|[sqrt](#sqrt)|[swap](#swap)|[tan](#tan)|
-|[tanh](#tanh)|||
-
-## <a name="abs"></a>  abs
+## <a name="abs"></a> abs
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the absolute value of the elements of the input valarray.
 
@@ -28,7 +18,7 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -72,7 +62,7 @@ The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .
 The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .
 ```
 
-## <a name="acos"></a>  acos
+## <a name="acos"></a> acos
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the arccosine of the elements of the input valarray.
 
@@ -83,7 +73,7 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -145,7 +135,7 @@ The arccosine of the initial valarray is:
          0  radians, which is            0  degrees
 ```
 
-## <a name="asin"></a>  asin
+## <a name="asin"></a> asin
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the arcsine of the elements of the input valarray.
 
@@ -156,7 +146,7 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -218,7 +208,7 @@ The arcsine of the initial valarray is:
     1.5708  radians, which is           90  degrees
 ```
 
-## <a name="atan"></a>  atan
+## <a name="atan"></a> atan
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the principal value of the arctangent of the elements of the input valarray.
 
@@ -229,7 +219,7 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -294,7 +284,7 @@ The arcsine of the initial valarray is:
     1.5608  radians, which is      89.4271  degrees
 ```
 
-## <a name="atan2"></a>  atan2
+## <a name="atan2"></a> atan2
 
 Returns a valarray whose elements are equal to the arctangent of the Cartesian components specified by a combination of constants and elements of valarrays.
 
@@ -311,10 +301,10 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The constant numerical data type or input valarray whose elements provide the values for the y-coordinate of the arctangent argument.
 
-*right*<br/>
+*right*\
 The constant numerical data type or input valarray whose elements provide the values for the x-coordinate of the arctangent argument.
 
 ### Return Value
@@ -388,14 +378,14 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
-## <a name="begin"></a>  begin
+## <a name="begin"></a> begin
 
 ```cpp
 template <class T> unspecified 1 begin(valarray<T>& v);
 template <class T> unspecified 2 begin(const valarray<T>& v);
 ```
 
-## <a name="cos"></a>  cos
+## <a name="cos"></a> cos
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the cosine of the elements of the input valarray.
 
@@ -406,7 +396,7 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -472,7 +462,7 @@ The cosine of the initial valarray is:
 -1
 ```
 
-## <a name="cosh"></a>  cosh
+## <a name="cosh"></a> cosh
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the hyperbolic cosine of the elements of the input valarray.
 
@@ -483,7 +473,7 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -555,14 +545,14 @@ The hyperbolic cosine of the initial valarray is:
 11.592
 ```
 
-## <a name="end"></a>  end
+## <a name="end"></a> end
 
 ```cpp
 template <class T> unspecified 1 end(valarray<T>& v);
 template <class T> unspecified 2 end(const valarray<T>& v);
 ```
 
-## <a name="exp"></a>  exp
+## <a name="exp"></a> exp
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the natural exponential of the elements of the input valarray.
 
@@ -573,7 +563,7 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -625,7 +615,7 @@ The natural exponential of the initial valarray is:
 22026.5
 ```
 
-## <a name="log"></a>  log
+## <a name="log"></a> log
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the natural logarithm of the elements of the input valarray.
 
@@ -636,7 +626,7 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -688,7 +678,7 @@ The natural logarithm of the initial valarray is:
 4.38203
 ```
 
-## <a name="log10"></a>  log10
+## <a name="log10"></a> log10
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the base 10 or common logarithm of the elements of the input valarray.
 
@@ -699,7 +689,7 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -753,7 +743,7 @@ The common logarithm of the initial valarray is:
 2
 ```
 
-## <a name="pow"></a>  pow
+## <a name="pow"></a> pow
 
 Operates on the elements of input valarrays and constants, returning a valarray whose elements are equal to a base specified either by the elements of an input valarray or a constant raised to an exponent specified either by the elements of an input valarray or a constant.
 
@@ -779,10 +769,10 @@ pow(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements supply the base for each element to be exponentiated.
 
-*right*<br/>
+*right*\
 The input valarray whose elements supply the power for each element to be exponentiated.
 
 ### Return Value
@@ -850,7 +840,7 @@ n = 4   gives 256
 n = 5   gives 1024
 ```
 
-## <a name="sin"></a>  sin
+## <a name="sin"></a> sin
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the sine of the elements of the input valarray.
 
@@ -861,7 +851,7 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -927,7 +917,7 @@ The sine of the initial valarray is:
 -2.06823e-013
 ```
 
-## <a name="sinh"></a>  sinh
+## <a name="sinh"></a> sinh
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the hyperbolic sine of the elements of the input valarray.
 
@@ -938,7 +928,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1010,7 +1000,7 @@ The hyperbolic sine of the initial valarray is:
 11.5487
 ```
 
-## <a name="sqrt"></a>  sqrt
+## <a name="sqrt"></a> sqrt
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the square root of the elements of the input valarray.
 
@@ -1021,7 +1011,7 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1064,7 +1054,7 @@ The initial valarray is: ( 0 1 4 9 16 ).
 The square root of the initial valarray is: ( 0 1 2 3 4 ).
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two valarrays.
 
@@ -1077,16 +1067,17 @@ void swap(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `valarray`.|
-|*right*|An object of type `valarray`.|
+*left*\
+An object of type `valarray`.
+
+*right*\
+An object of type `valarray`.
 
 ### Remarks
 
-The template function executes ` left.swap( right)`.
+The template function executes `left.swap(right)`.
 
-## <a name="tan"></a>  tan
+## <a name="tan"></a> tan
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the tangent of the elements of the input valarray.
 
@@ -1097,7 +1088,7 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1163,7 +1154,7 @@ The tangent of the initial valarray is:
 -9.6701e+012
 ```
 
-## <a name="tanh"></a>  tanh
+## <a name="tanh"></a> tanh
 
 Operates on the elements of an input valarray, returning a valarray whose elements are equal to the hyperbolic tangent of the elements of the input valarray.
 
@@ -1174,7 +1165,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The input valarray whose elements are to be operated on by the member function.
 
 ### Return Value
@@ -1245,7 +1236,3 @@ The hyperbolic tangent of the initial valarray is:
 0.982193
 0.996272
 ```
-
-## See also
-
-[\<valarray>](../standard-library/valarray.md)<br/>

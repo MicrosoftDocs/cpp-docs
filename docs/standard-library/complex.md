@@ -9,11 +9,11 @@ ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 
 Defines the container template class `complex` and its supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <complex>
-```
+**Header**: \<complex>
+
+**Namespace:** std
 
 ## Remarks
 
@@ -63,9 +63,11 @@ The terms used in these standard representations of a complex number are referre
 
 Unless otherwise specified, functions that can return multiple values are required to return a principal value for their arguments greater than -π and less than or equal to +π to keep them single valued. All angles must be expressed in radians, where there are 2π radians (360 degrees) in a circle.
 
+## Members
+
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|Calculates the modulus of a complex number.|
 |[acos](../standard-library/complex-functions.md#acos)||
@@ -95,7 +97,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/complex-operators.md#op_neq)|Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
 |[operator*](../standard-library/complex-operators.md#op_star)|Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
@@ -108,7 +110,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **double**, where the first represents the real part of a complex number and the second represents the imaginary part.|
 |[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized template class describes an object that stores an ordered pair of objects, both of type **float**, where the first represents the real part of a complex number and the second represents the imaginary part.|

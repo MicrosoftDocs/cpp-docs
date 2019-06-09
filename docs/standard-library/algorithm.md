@@ -36,7 +36,7 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 
 ### Function templates
 
-|Function template|Description|
+|||
 |-|-|
 |[adjacent_find](../standard-library/algorithm-functions.md#adjacent_find)|Searches for two adjacent elements that are either equal or satisfy a specified condition.|
 |[all_of](../standard-library/algorithm-functions.md#all_of)|Returns **true** when a condition is present at each element in the given range.|

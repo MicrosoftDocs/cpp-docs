@@ -7,15 +7,7 @@ helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]",
 ---
 # &lt;numeric&gt; functions
 
-||||
-|-|-|-|
-|[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[exclusive_scan](#exclusive_scan)|
-|[gcd](#gcd)|[inclusive_scan](#inclusive_scan)|[inner_product](#inner_product)|
-|[iota](#iota)|[lcm](#lcm)|[partial_sum](#partial_sum)|
-|[reduce](#reduce)|[transform_exclusive_scan](#transform_exclusive_scan)|[transform_inclusive_scan](#transform_inclusive_scan)|
-|[transform_reduce](#transform_reduce)|||
-
-## <a name="accumulate"></a>  accumulate
+## <a name="accumulate"></a> accumulate
 
 Computes the sum of all the elements in a specified range including some initial value by computing successive partial sums or computes the result of successive partial results similarly obtained from using a specified binary operation other than the sum.
 
@@ -33,16 +25,16 @@ Type accumulate(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 An input iterator addressing the first element in the range to be summed or combined according to a specified binary operation.
 
-*last*<br/>
+*last*\
 An input iterator addressing the last element in the range to be summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-*val*<br/>
+*val*\
 An initial value to which each element is in turn added or combined with according to a specified binary operation.
 
-*binary_op*<br/>
+*binary_op*\
 The binary operation that is to be applied to the each element in the specified range and the result of its previous applications.
 
 ### Return Value
@@ -152,7 +144,7 @@ The vector of partial products is:
 ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
 ```
 
-## <a name="adjacent_difference"></a>  adjacent_difference
+## <a name="adjacent_difference"></a> adjacent_difference
 
 Computes the successive differences between each element and its predecessor in an input range and outputs the results to a destination range or computes the result of a generalized procedure where the difference operation is replaced by another, specified binary operation.
 
@@ -189,16 +181,16 @@ ForwardIterator2 adjacent_difference(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 An input iterator addressing the first element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-*last*<br/>
+*last*\
 An input iterator addressing the last element in the input range whose elements are to be differenced with their respective predecessors or where the pair of values is to be operated on by another specified binary operation.
 
-*result*<br/>
+*result*\
 An output iterator addressing the first element a destination range where the series of differences or the results of the specified operation is to be stored.
 
-*binary_op*<br/>
+*binary_op*\
 The binary operation that is to be applied in the generalized operation replacing the operation of subtraction in the differencing procedure.
 
 ### Return Value
@@ -276,7 +268,7 @@ int main( )
 }
 ```
 
-## <a name="exclusive_scan"></a>  exclusive_scan
+## <a name="exclusive_scan"></a> exclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator, class T>
@@ -300,14 +292,14 @@ ForwardIterator2 result,
 T init, BinaryOperation binary_op);
 ```
 
-## <a name="gcd"></a>  gcd
+## <a name="gcd"></a> gcd
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> gcd(M m, N n);
 ```
 
-## <a name="inclusive_scan"></a>  inclusive_scan
+## <a name="inclusive_scan"></a> inclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator>
@@ -339,7 +331,7 @@ ForwardIterator2 result,
 BinaryOperation binary_op, T init);
 ```
 
-## <a name="inner_product"></a>  inner_product
+## <a name="inner_product"></a> inner_product
 
 Computes the sum of the element-wise product of two ranges and adds it to a specified initial value or computes the result of a generalized procedure where the sum and product binary operations are replaced by other specified binary operations.
 
@@ -363,22 +355,22 @@ Type inner_product(
 
 ### Parameters
 
-*first1*<br/>
+*first1*\
 An input iterator addressing the first element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-*last1*<br/>
+*last1*\
 An input iterator addressing the last element in the first range whose inner product or generalized inner product with the second range is to be computed.
 
-*first2*<br/>
+*first2*\
 An input iterator addressing the first element in the second range whose inner product or generalized inner product with the first range is to be computed.
 
-*val*<br/>
+*val*\
 An initial value to which the inner product or generalized inner product between the ranges is to be added.
 
-*binary_op1*<br/>
+*binary_op1*\
 The binary operation that replaces the inner product operation of sum applied to the element-wise products in the generalization of the inner product.
 
-*binary_op2*<br/>
+*binary_op2*\
 The binary operation that replaces the inner product element-wise operation of multiply in the generalization of the inner product.
 
 ### Return Value
@@ -489,7 +481,7 @@ int main()
 }
 ```
 
-## <a name="iota"></a>  iota
+## <a name="iota"></a> iota
 
 Stores a starting value, beginning with the first element and filling with successive increments of that value (` value++`) in each of the elements in the interval `[first,  last)`.
 
@@ -500,13 +492,13 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### Parameters
 
-*first*<br/>
+*first*\
 An input iterator that addresses the first element in the range to be filled.
 
-*last*<br/>
+*last*\
 An input iterator that addresses the last element in the range to be filled.
 
-*value*<br/>
+*value*\
 The starting value to store in the first element and to successively increment for later elements.
 
 ### Example
@@ -551,14 +543,14 @@ int main(void)
 }
 ```
 
-## <a name="lcm"></a>  lcm
+## <a name="lcm"></a> lcm
 
 ```cpp
 template <class M, class N>
 constexpr common_type_t<M,N> lcm(M m, N n);
 ```
 
-## <a name="partial_sum"></a>  partial_sum
+## <a name="partial_sum"></a> partial_sum
 
 Computes a series of sums in an input range from the first element through the *i*th element and stores the result of each such sum in the *i*th element of a destination range or computes the result of a generalized procedure where the sum operation is replaced by another specified binary operation.
 
@@ -579,16 +571,16 @@ OutputIterator partial_sum(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 An input iterator addressing the first element in the range to be partially summed or combined according to a specified binary operation.
 
-*last*<br/>
+*last*\
 An input iterator addressing the last element in the range to be partially summed or combined according to a specified binary operation that is one position beyond the final element actually included in the iterated accumulation.
 
-*result*<br/>
+*result*\
 An output iterator addressing the first element a destination range where the series of partial sums or the results of the specified operation is to be stored.
 
-*binary_op*<br/>
+*binary_op*\
 The binary operation that is to be applied in the generalized operation replacing the operation of sum in the partial sum procedure.
 
 ### Return Value
@@ -665,7 +657,7 @@ int main( )
 }
 ```
 
-## <a name="reduce"></a>  reduce
+## <a name="reduce"></a> reduce
 
 ```cpp
 template<class InputIterator>
@@ -689,7 +681,7 @@ ForwardIterator first, ForwardIterator last, T init,
 BinaryOperation binary_op);
 ```
 
-## <a name="transform_exclusive_scan"></a>  transform_exclusive_scan
+## <a name="transform_exclusive_scan"></a> transform_exclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator, class T,
@@ -710,7 +702,7 @@ BinaryOperation binary_op,
 UnaryOperation unary_op);
 ```
 
-## <a name="transform_inclusive_scan"></a>  transform_inclusive_scan
+## <a name="transform_inclusive_scan"></a> transform_inclusive_scan
 
 ```cpp
 template<class InputIterator, class OutputIterator,
@@ -745,7 +737,7 @@ UnaryOperation unary_op,
 T init);
 ```
 
-## <a name="transform_reduce"></a>  transform_reduce
+## <a name="transform_reduce"></a> transform_reduce
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class T>
@@ -787,7 +779,3 @@ ForwardIterator first, ForwardIterator last,
 T init,
 BinaryOperation binary_op, UnaryOperation unary_op);
 ```
-
-## See also
-
-[\<numeric>](../standard-library/numeric.md)<br/>

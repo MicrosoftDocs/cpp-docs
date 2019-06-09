@@ -45,7 +45,7 @@ This guarantee isn't universal, however. A static constructor may call a functio
 |[wclog](#wclog)|Specifies the `wclog` global stream.|
 |[wcout](#wcout)|Specifies the `wcout` global stream.|
 
-###  <a name="cerr"></a>  cerr
+###  <a name="cerr"></a> cerr
 
 The object `cerr` controls output to a stream buffer associated with the object `stderr`, declared in \<cstdio>.
 
@@ -91,7 +91,7 @@ int main( )
 }
 ```
 
-###  <a name="cin"></a>  cin
+###  <a name="cin"></a> cin
 
 Specifies the `cin` global stream.
 
@@ -139,11 +139,10 @@ int main()
 ```
 
 ```Output
-
 2
 ```
 
-###  <a name="clog"></a>  clog
+###  <a name="clog"></a> clog
 
 Specifies the `clog` global stream.
 
@@ -163,7 +162,7 @@ The object controls buffered insertions to the standard error output as a byte s
 
 See [cerr](#cerr) for an example of using `clog`.
 
-###  <a name="cout"></a>  cout
+###  <a name="cout"></a> cout
 
 Specifies the `cout` global stream.
 
@@ -183,7 +182,7 @@ The object controls insertions to the standard output as a byte stream.
 
 See [cerr](#cerr) for an example of using `cout`.
 
-###  <a name="wcerr"></a>  wcerr
+### <a name="wcerr"></a> wcerr
 
 Specifies the `wcerr` global stream.
 
@@ -203,7 +202,7 @@ The object controls unbuffered insertions to the standard error output as a wide
 
 See [cerr](#cerr) for an example of using `wcerr`.
 
-###  <a name="wcin"></a>  wcin
+### <a name="wcin"></a> wcin
 
 Specifies the `wcin` global stream.
 
@@ -223,7 +222,7 @@ The object controls extractions from the standard input as a wide stream. Once t
 
 See [cerr](#cerr) for an example of using `wcin`.
 
-###  <a name="wclog"></a>  wclog
+### <a name="wclog"></a> wclog
 
 Specifies the `wclog` global stream.
 
@@ -243,7 +242,7 @@ The object controls buffered insertions to the standard error output as a wide s
 
 See [cerr](#cerr) for an example of using `wclog`.
 
-###  <a name="wcout"></a>  wcout
+### <a name="wcout"></a> wcout
 
 Specifies the `wcout` global stream.
 
@@ -266,10 +265,9 @@ See [cerr](#cerr) for an example of using `wcout`.
 `CString` instances in a `wcout` statement must be cast to `const wchar_t*`, as shown in the following example.
 
 ```
+CString cs("meow");
 
-    CString cs("meow");
-
-    wcout <<(const wchar_t*) cs <<endl;
+wcout <<(const wchar_t*) cs <<endl;
 ```
 
 For more information, see [Basic CString Operations](../atl-mfc-shared/basic-cstring-operations.md).

@@ -9,11 +9,11 @@ ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
 
 Defines several types and functions basic to the operation of iostreams. This header is typically included for you by another iostream headers; you rarely include it directly.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ios>
-```
+**Header**: \<ios>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<ios> library uses the `#include <iosfwd>` statement.
@@ -30,9 +30,11 @@ istr>> noskipws;
 
 calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
+## Members
+
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[ios](../standard-library/ios-typedefs.md#ios)|Supports the ios class from the old iostream library.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|Supports internal operations.|
@@ -82,7 +84,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters.|
 |[fpos](../standard-library/fpos-class.md)|The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream.|

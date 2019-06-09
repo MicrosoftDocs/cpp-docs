@@ -7,20 +7,7 @@ helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::d
 ---
 # &lt;ios&gt; functions
 
-||||
-|-|-|-|
-|[defaultfloat](#ios_defaultfloat)|[boolalpha](#boolalpha)|[dec](#dec)|
-|[fixed](#fixed)|[hex](#hex)|[hexfloat](#hexfloat)|
-|[io_errc](#io_errc)|[internal](#internal)|[iostream_category](#iostream_category)|
-|[is_error_code_enum](#is_error_code_enum)|[left](#left)|[make_error_code](#make_error_code)|
-|[make_error_condition](#make_error_condition)|[noboolalpha](#noboolalpha)|[noshowbase](#noshowbase)|
-|[noshowpoint](#noshowpoint)|[noshowpos](#noshowpos)|[noskipws](#noskipws)|
-|[nounitbuf](#nounitbuf)|[nouppercase](#nouppercase)|[oct](#oct)|
-|[right](#right)|[scientific](#scientific)|[showbase](#showbase)|
-|[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|
-|[unitbuf](#unitbuf)|[uppercase](#uppercase)||
-
-## <a name="boolalpha"></a>  boolalpha
+## <a name="boolalpha"></a> boolalpha
 
 Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **true** or **false** in the stream.
 
@@ -30,7 +17,7 @@ ios_base& boolalpha(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -72,7 +59,7 @@ true
 true
 ```
 
-## <a name="dec"></a>  dec
+## <a name="dec"></a> dec
 
 Specifies that integer variables appear in base 10 notation.
 
@@ -82,7 +69,7 @@ ios_base& dec(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -125,7 +112,7 @@ int main( )
 100
 ```
 
-## <a name="ios_defaultfloat"></a>  &lt;ios&gt; defaultfloat
+## <a name="ios_defaultfloat"></a> &lt;ios&gt; defaultfloat
 
 Configures the flags of an `ios_base` object to use a default display format for float values.
 
@@ -135,14 +122,14 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 ### Parameters
 
-*_Iosbase*<br/>
+*_Iosbase*\
 An `ios_base` object.
 
 ### Remarks
 
 The manipulator effectively calls _I `osbase.`[ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, then returns _I `osbase`.
 
-## <a name="fixed"></a>  fixed
+## <a name="fixed"></a> fixed
 
 Specifies that a floating-point number is displayed in fixed-decimal notation.
 
@@ -152,7 +139,7 @@ ios_base& fixed(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -190,7 +177,7 @@ int main( )
 1.1
 ```
 
-## <a name="hex"></a>  hex
+## <a name="hex"></a> hex
 
 Specifies that integer variables shall appear in base 16 notation.
 
@@ -200,7 +187,7 @@ ios_base& hex(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -217,13 +204,13 @@ The manipulator effectively calls `str`**.**[setf](../standard-library/ios-base-
 
 See [dec](../standard-library/ios-functions.md#dec) for an example of how to use `hex`.
 
-## <a name="hexfloat"></a>  hexfloat
+## <a name="hexfloat"></a> hexfloat
 
 ```cpp
 ios_base& hexfloat (ios_base& str);
 ```
 
-## <a name="io_errc"></a>  io_errc
+## <a name="io_errc"></a> io_errc
 
 ```cpp
 enum class io_errc {
@@ -231,7 +218,7 @@ enum class io_errc {
 };
 ```
 
-## <a name="internal"></a>  internal
+## <a name="internal"></a> internal
 
 Causes a number's sign to be left justified and the number to be right justified.
 
@@ -241,7 +228,7 @@ ios_base& internal(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -277,19 +264,19 @@ int main( void )
 -..123.456
 ```
 
-## <a name="is_error_code_enum"></a>  is_error_code_enum
+## <a name="is_error_code_enum"></a> is_error_code_enum
 
 ```cpp
 template <> struct is_error_code_enum<io_errc> : public true_type { };
 ```
 
-## <a name="iostream_category"></a>  iostream_category
+## <a name="iostream_category"></a> iostream_category
 
 ```cpp
 const error_category& iostream_category() noexcept;
 ```
 
-## <a name="left"></a>  left
+## <a name="left"></a> left
 
 Causes text that is not as wide as the output width to appear in the stream flush with the left margin.
 
@@ -299,7 +286,7 @@ ios_base& left(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -328,23 +315,23 @@ int main( )
 ```
 
 ```Output
-                   5
 5
+        5
 ```
 
-## <a name="make_error_code"></a>  make_error_code
+## <a name="make_error_code"></a> make_error_code
 
 ```cpp
 error_code make_error_code(io_errc e) noexcept;
 ```
 
-## <a name="make_error_condition"></a>  make_error_condition
+## <a name="make_error_condition"></a> make_error_condition
 
 ```cpp
 error_condition make_error_condition(io_errc e) noexcept;
 ```
 
-## <a name="noboolalpha"></a>  noboolalpha
+## <a name="noboolalpha"></a> noboolalpha
 
 Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as 1 or 0 in the stream.
 
@@ -354,7 +341,7 @@ ios_base& noboolalpha(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -373,7 +360,7 @@ By default, `noboolalpha` is in effect.
 
 See [boolalpha](../standard-library/ios-functions.md#boolalpha) for an example of using `noboolalpha`.
 
-## <a name="noshowbase"></a>  noshowbase
+## <a name="noshowbase"></a> noshowbase
 
 Turns off indicating the notational base in which a number is displayed.
 
@@ -383,7 +370,7 @@ ios_base& noshowbase(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -400,7 +387,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [showbase](../standard-library/ios-functions.md#showbase) for an example of how to use `noshowbase`.
 
-## <a name="noshowpoint"></a>  noshowpoint
+## <a name="noshowpoint"></a> noshowpoint
 
 Displays only the whole-number part of floating-point numbers whose fractional part is zero.
 
@@ -410,7 +397,7 @@ ios_base& noshowpoint(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -447,7 +434,7 @@ int main( )
 5
 ```
 
-## <a name="noshowpos"></a>  noshowpos
+## <a name="noshowpos"></a> noshowpos
 
 Causes positive numbers to not be explicitly signed.
 
@@ -457,7 +444,7 @@ ios_base& noshowpos(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -474,7 +461,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [showpos](../standard-library/ios-functions.md#showpos) for an example of using `noshowpos`.
 
-## <a name="noskipws"></a>  noskipws
+## <a name="noskipws"></a> noskipws
 
 Cause spaces to be read by the input stream.
 
@@ -484,7 +471,7 @@ ios_base& noskipws(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -516,7 +503,7 @@ int main() {
 }
 ```
 
-## <a name="nounitbuf"></a>  nounitbuf
+## <a name="nounitbuf"></a> nounitbuf
 
 Causes output to be buffered and processed on when the buffer is full.
 
@@ -526,7 +513,7 @@ ios_base& nounitbuf(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -539,7 +526,7 @@ A reference to the object from which _ *Str* is derived.
 
 The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`), and then returns *str*.
 
-## <a name="nouppercase"></a>  nouppercase
+## <a name="nouppercase"></a> nouppercase
 
 Specifies that hexadecimal digits and the exponent in scientific notation appear in lowercase.
 
@@ -549,7 +536,7 @@ ios_base& nouppercase(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -564,7 +551,7 @@ The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-cl
 
 See [uppercase](../standard-library/ios-functions.md#uppercase) for an example of using `nouppercase`.
 
-## <a name="oct"></a>  oct
+## <a name="oct"></a> oct
 
 Specifies that integer variables appear in base 8 notation.
 
@@ -574,7 +561,7 @@ ios_base& oct(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -591,7 +578,7 @@ The manipulator effectively calls `str`.[setf](../standard-library/ios-base-clas
 
 See [dec](../standard-library/ios-functions.md#dec) for an example of how to use `oct`.
 
-## <a name="right"></a>  right
+## <a name="right"></a> right
 
 Causes text that is not as wide as the output width to appear in the stream flush with the right margin.
 
@@ -601,7 +588,7 @@ ios_base& right(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -648,7 +635,7 @@ int main( )
                    5
 ```
 
-## <a name="scientific"></a>  scientific
+## <a name="scientific"></a> scientific
 
 Causes floating-point numbers to be displayed using scientific notation.
 
@@ -658,7 +645,7 @@ ios_base& scientific(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -693,7 +680,7 @@ int main( )
 1.002300e+002
 ```
 
-## <a name="showbase"></a>  showbase
+## <a name="showbase"></a> showbase
 
 Indicates the notational base in which a number is displayed.
 
@@ -703,7 +690,7 @@ ios_base& showbase(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -747,7 +734,7 @@ int main( )
 144
 ```
 
-## <a name="showpoint"></a>  showpoint
+## <a name="showpoint"></a> showpoint
 
 Displays the whole-number part of a floating-point number and digits to the right of the decimal point even when the fractional part is zero.
 
@@ -757,7 +744,7 @@ ios_base& showpoint(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -774,7 +761,7 @@ The manipulator effectively calls `str`.[setf](../standard-library/ios-base-clas
 
 See [noshowpoint](../standard-library/ios-functions.md#noshowpoint) for an example of using `showpoint`.
 
-## <a name="showpos"></a>  showpos
+## <a name="showpos"></a> showpos
 
 Causes positive numbers to be explicitly signed.
 
@@ -784,7 +771,7 @@ ios_base& showpos(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -819,7 +806,7 @@ int main( )
 +1
 ```
 
-## <a name="skipws"></a>  skipws
+## <a name="skipws"></a> skipws
 
 Cause spaces to not be read by the input stream.
 
@@ -829,7 +816,7 @@ ios_base& skipws(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -871,7 +858,7 @@ Enter three characters: 1 2 3
 .3.
 ```
 
-## <a name="unitbuf"></a>  unitbuf
+## <a name="unitbuf"></a> unitbuf
 
 Causes output to be processed when the buffer is not empty.
 
@@ -881,7 +868,7 @@ ios_base& unitbuf(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -906,7 +893,7 @@ ios_base& uppercase(ios_base& str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
@@ -946,7 +933,3 @@ int main( void )
 a
 A
 ```
-
-## See also
-
-[\<ios>](../standard-library/ios.md)<br/>

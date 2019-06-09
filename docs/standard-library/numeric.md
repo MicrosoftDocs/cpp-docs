@@ -9,11 +9,11 @@ ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
 
 Defines container template functions that perform algorithms for numerical processing.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <numeric>
-```
+**Header**: \<numeric>
+
+**Namespace:** std
 
 ## Remarks
 
@@ -21,9 +21,11 @@ The numeric algorithms resemble the C++ Standard Library algorithms in [\<algori
 
 The algorithms extend the actions that are supported by the operations and member functions of each of the C++ Standard Library containers and enable interaction with different types of container objects at the same time.
 
+## Members
+
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[accumulate](../standard-library/numeric-functions.md#accumulate)|Computes the sum of all elements in a specified range—including some initial value—by computing successive partial sums, or computes the result of successive partial results that are obtained by using a specified binary operation instead of the sum operation.|
 |[adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)|Computes the successive differences between each element and its predecessor in an input range and outputs the results to a destination range, or computes the result of a generalized procedure where the difference operation is replaced by another specified binary operation.|

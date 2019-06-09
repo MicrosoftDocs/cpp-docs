@@ -9,11 +9,11 @@ ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
 
 Defines the template class valarray and numerous supporting template classes and functions.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <valarray>
-```
+**Header:** \<valarray>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<valarray> library uses the `#include <initializer_list>' statement.
@@ -22,9 +22,11 @@ Defines the template class valarray and numerous supporting template classes and
 
 These template classes and functions are permitted unusual latitude in the interest of improved performance. Specifically, any function returning type `valarray<T1>` may return an object of some other type T2. In that case, any function that accepts one or more arguments of type `valarray<T2>` must have overloads that accept arbitrary combinations of those arguments, each replaced with an argument of type T2.
 
+## Members
+
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[abs](../standard-library/valarray-functions.md#abs)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the absolute value of the elements of the input valarray.|
 |[acos](../standard-library/valarray-functions.md#acos)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the arccosine of the elements of the input valarray.|
@@ -48,7 +50,7 @@ These template classes and functions are permitted unusual latitude in the inter
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|Tests whether the corresponding elements of two equally sized valarrays are unequal or whether all the elements of a valarray are unequal a specified value of the valarray's element type.|
 |[operator%](../standard-library/valarray-operators.md#op_mod)|Obtains the remainder of dividing the corresponding elements of two equally sized valarrays or of dividing a valarray by a specified value of the valarray's element type or of dividing a specified value by a valarray.|
@@ -71,7 +73,7 @@ These template classes and functions are permitted unusual latitude in the inter
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[gslice Class](../standard-library/gslice-class.md)|A utility class to valarray that is used to define multi-dimensional slices of a valarray.|
 |[gslice_array Class](../standard-library/gslice-array-class.md)|An internal, auxiliary template class that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.|
