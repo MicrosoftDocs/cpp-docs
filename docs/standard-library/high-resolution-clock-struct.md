@@ -20,34 +20,25 @@ Represents a *high_resolution* clock.
 class high_resolution_clock
 ```
 
-### Public typedefs
+## Members
+
+### Typedefs
 
 |Name|Description|
 |----------|-----------------|
-|`high_resolution_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
-|`high_resolution_clock::period`|A synonym for `nano`, defined in \<ratio>.|
-|`high_resolution_clock::rep`|A synonym for **long** **long**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
-|`high_resolution_clock::time_point`|A synonym for `chrono::time_point<high_resolution_clock>`.|
+|`duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
+|`period`|A synonym for `nano`, defined in \<ratio>.|
+|`rep`|A synonym for **long** **long**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`time_point`|A synonym for `chrono::time_point<high_resolution_clock>`.|
 
-## Public functions
+## Functions
 
-|Function|Description|
-|--------------|-----------------|
+|||
+|-|-|
 |`now`|Returns the current time as a `time_point` value.|
 
-## Public constants
+## Constants
 
 |Name|Description|
 |----------|-----------------|
-|`high_resolution_clock::is_steady`|Holds **true**. A `high_resolution_clock` is *steady*.|
-
-## Requirements
-
-**Header:** \<chrono>
-
-**Namespace:** std::chrono
-
-## See also
-
-- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
-- [\<chrono>](../standard-library/chrono.md)
+|`is_steady`|Holds **true**. A `high_resolution_clock` is *steady*.|

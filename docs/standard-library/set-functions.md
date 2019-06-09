@@ -8,11 +8,7 @@ ms.assetid: d1277d14-8502-46c0-b820-bcda820f9406
 ---
 # &lt;set&gt; functions
 
-|||
-|-|-|
-|[swap (map)](#swap)|[swap (multiset)](#swap_multiset)|
-
-## <a name="swap"></a>  swap  (map)
+## <a name="swap"></a> swap (map)
 
 Exchanges the elements of two sets.
 
@@ -23,10 +19,10 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The set providing the elements to be swapped, or the set whose elements are to be exchanged with those of the set *left*.
 
-*left*<br/>
+*left*\
 The set whose elements are to be exchanged with those of the set *right*.
 
 ### Remarks
@@ -41,7 +37,7 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 
 See the code example for the member class [set::swap](../standard-library/set-class.md#swap) for an example of the use of the template version of `swap`.
 
-## <a name="swap_multiset"></a>  swap  (multiset)
+## <a name="swap_multiset"></a> swap (multiset)
 
 Exchanges the elements of two multisets.
 
@@ -52,10 +48,10 @@ void swap(multiset<Key, Traits, Allocator>& left, multiset<Key, Traits, Allocato
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The multiset providing the elements to be swapped, or the multiset whose elements are to be exchanged with those of the multiset *left*.
 
-*left*<br/>
+*left*\
 The multiset whose elements are to be exchanged with those of the multiset *right*.
 
 ### Remarks
@@ -69,7 +65,3 @@ in the algorithm class works by assignment and is a slow operation. The speciali
 ### Example
 
 See the code example for the member class [multiset::swap](../standard-library/multiset-class.md#swap)for an example of the use of the template version of `swap`.
-
-## See also
-
-[\<set>](../standard-library/set.md)<br/>

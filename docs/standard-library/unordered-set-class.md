@@ -29,16 +29,23 @@ class unordered_set;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Key*|The key type.|
-|*Hash*|The hash function object type.|
-|*Pred*|The equality comparison function object type.|
-|*Alloc*|The allocator class.|
+*Key*\
+The key type.
+
+*Hash*\
+The hash function object type.
+
+*Pred*\
+The equality comparison function object type.
+
+*Alloc*\
+The allocator class.
 
 ## Members
 
-|Type Definition|Description|
+### Typedefs
+
+|||
 |-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
@@ -56,7 +63,9 @@ class unordered_set;
 |[size_type](#size_type)|The type of an unsigned distance between two elements.|
 |[value_type](#value_type)|The type of an element.|
 
-|Member Function|Description|
+### Functions
+
+|||
 |-|-|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
@@ -86,7 +95,9 @@ class unordered_set;
 |[swap](#swap)|Swaps the contents of two containers.|
 |[unordered_set](#unordered_set)|Constructs a container object.|
 
-|Operators|Description|
+### Operators
+
+|||
 |-|-|
 |[unordered_set::operator=](#op_eq)|Copies a hash table.|
 
@@ -99,12 +110,6 @@ The object also stores a maximum load factor, which specifies the maximum desire
 The actual order of elements in the controlled sequence depends on the hash function, the comparison function, the order of insertion, the maximum load factor, and the current number of buckets. You cannot in general predict the order of elements in the controlled sequence. You can always be assured, however, that any subset of elements that have equivalent ordering are adjacent in the controlled sequence.
 
 The object allocates and frees storage for the sequence it controls through a stored allocator object of type[unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of template class `allocator`. Note that the stored allocator object is not copied when the container object is assigned.
-
-## Requirements
-
-**Header:** \<unordered_set>
-
-**Namespace:** std
 
 ## <a name="allocator_type"></a>  unordered_set::allocator_type
 
@@ -144,7 +149,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a>  unordered_set::begin
+## <a name="begin"></a> begin
 
 Designates the beginning of the controlled sequence or a bucket.
 
@@ -160,9 +165,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -224,7 +228,7 @@ int main()
 [a]
 ```
 
-## <a name="bucket"></a>  unordered_set::bucket
+## <a name="bucket"></a> bucket
 
 Gets the bucket number for a key value.
 
@@ -234,7 +238,7 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 The key value to map.
 
 ### Remarks
@@ -279,7 +283,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a>  unordered_set::bucket_count
+## <a name="bucket_count"></a> bucket_count
 
 Gets the number of buckets.
 
@@ -364,7 +368,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a>  unordered_set::bucket_size
+## <a name="bucket_size"></a> bucket_size
 
 Gets the size of a bucket
 
@@ -374,7 +378,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*<br/>
+*nbucket*\
 The bucket number.
 
 ### Remarks
@@ -419,7 +423,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="cbegin"></a>  unordered_set::cbegin
+## <a name="cbegin"></a> cbegin
 
 Returns a **const** iterator that addresses the first element in the range.
 
@@ -445,7 +449,7 @@ auto i2 = Container.cbegin();
 // i2 isContainer<T>::const_iterator
 ```
 
-## <a name="cend"></a>  unordered_set::cend
+## <a name="cend"></a> cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -473,7 +477,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-## <a name="clear"></a>  unordered_set::clear
+## <a name="clear"></a> clear
 
 Removes all elements.
 
@@ -537,7 +541,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a>  unordered_set::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 The type of a constant iterator for the controlled sequence.
 
@@ -579,7 +583,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_local_iterator"></a>  unordered_set::const_local_iterator
+## <a name="const_local_iterator"></a> const_local_iterator
 
 The type of a constant bucket iterator for the controlled sequence.
 
@@ -626,7 +630,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a>  unordered_set::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 The type of a constant pointer to an element.
 
@@ -671,7 +675,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a>  unordered_set::const_reference
+## <a name="const_reference"></a> const_reference
 
 The type of a constant reference to an element.
 
@@ -716,7 +720,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a>  unordered_set::count
+## <a name="count"></a> count
 
 Finds the number of elements matching a specified key.
 
@@ -726,7 +730,7 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -770,7 +774,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-## <a name="difference_type"></a>  unordered_set::difference_type
+## <a name="difference_type"></a> difference_type
 
 The type of a signed distance between two elements.
 
@@ -826,7 +830,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a>  unordered_set::emplace
+## <a name="emplace"></a> emplace
 
 Inserts an element constructed in place (no copy or move operations are performed).
 
@@ -839,9 +843,8 @@ Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_set unless it already contains an element whose value is equivalently ordered.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_set unless it already contains an element whose value is equivalently ordered.
 
 ### Return Value
 
@@ -857,7 +860,7 @@ During the insertion, if an exception is thrown but does not occur in the contai
 
 For a code example, see[set::emplace](../standard-library/set-class.md#emplace).
 
-## <a name="emplace_hint"></a>  unordered_set::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.
 
@@ -870,10 +873,11 @@ Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_set unless the unordered_set already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
-|*where*|A hint regarding the place to start searching for the correct point of insertion.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_set unless the unordered_set already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.
+
+*where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -889,7 +893,7 @@ During the insertion, if an exception is thrown but does not occur in the contai
 
 For a code example, see[set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="empty"></a>  unordered_set::empty
+## <a name="empty"></a> empty
 
 Tests whether no elements are present.
 
@@ -953,7 +957,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a>  unordered_set::end
+## <a name="end"></a> end
 
 Designates the end of the controlled sequence.
 
@@ -969,9 +973,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -1022,7 +1025,7 @@ int main()
 [a]
 ```
 
-## <a name="equal_range"></a>  unordered_set::equal_range
+## <a name="equal_range"></a> equal_range
 
 Finds range that matches a specified key.
 
@@ -1036,7 +1039,7 @@ equal_range(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -1090,7 +1093,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a>  unordered_set::erase
+## <a name="erase"></a> erase
 
 Removes an element or a range of elements in a unordered_set from specified positions or removes elements that match a specified key.
 
@@ -1104,16 +1107,16 @@ size_type erase(const key_type& Key);
 
 ### Parameters
 
-*Where*<br/>
+*Where*\
 Position of the element to be removed.
 
-*First*<br/>
+*First*\
 Position of the first element to be removed.
 
-*Last*<br/>
+*Last*\
 Position just beyond the last element to be removed.
 
-*Key*<br/>
+*Key*\
 The key value of the elements to be removed.
 
 ### Return Value
@@ -1126,7 +1129,7 @@ For the third member function, returns the number of elements that have been rem
 
 For a code example, see[set::erase](../standard-library/set-class.md#erase).
 
-## <a name="find"></a>  unordered_set::find
+## <a name="find"></a> find
 
 Finds an element that matches a specified key.
 
@@ -1136,7 +1139,7 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -1185,7 +1188,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a>  unordered_set::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Gets the stored allocator object.
 
@@ -1223,7 +1226,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash"></a>  unordered_set::hash_function
+## <a name="hash"></a> hash_function
 
 Gets the stored hash function object.
 
@@ -1261,7 +1264,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a>  unordered_set::hasher
+## <a name="hasher"></a> hasher
 
 The type of the hash function.
 
@@ -1299,7 +1302,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a>  unordered_set::insert
+## <a name="insert"></a> insert
 
 Inserts an element or a range of elements into an unordered_set.
 
@@ -1328,15 +1331,26 @@ void insert(initializer_list<value_type> IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the unordered_set unless it already contains an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion.|
-|*ValTy*|Template parameter that specifies the argument type that the unordered_set can use to construct an element of[value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an[input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct[value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The[initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the unordered_set unless it already contains an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion.
+
+*ValTy*\
+Template parameter that specifies the argument type that the unordered_set can use to construct an element of[value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an[input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct[value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The[initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1362,7 +1376,7 @@ For insertion of an element constructed in place—that is, no copy or move oper
 
 For a code example, see[set::insert](../standard-library/set-class.md#insert).
 
-## <a name="iterator"></a>  unordered_set::iterator
+## <a name="iterator"></a> iterator
 
 A type that provides a constant[forward iterator](../standard-library/forward-iterator-tag-struct.md) that can read elements in an unordered_set.
 
@@ -1374,7 +1388,7 @@ typedef implementation-defined iterator;
 
 See the example for[begin](../standard-library/set-class.md#begin) for an example of how to declare and use an**iterator**.
 
-## <a name="key_eq"></a>  unordered_set::key_eq
+## <a name="key_eq"></a> key_eq
 
 Gets the stored comparison function object.
 
@@ -1414,7 +1428,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a>  unordered_set::key_equal
+## <a name="key_equal"></a> key_equal
 
 The type of the comparison function.
 
@@ -1454,7 +1468,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a>  unordered_set::key_type
+## <a name="key_type"></a> key_type
 
 The type of an ordering key.
 
@@ -1506,7 +1520,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="load_factor"></a>  unordered_set::load_factor
+## <a name="load_factor"></a> load_factor
 
 Counts the average elements per bucket.
 
@@ -1591,7 +1605,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="local_iterator"></a>  unordered_set::local_iterator
+## <a name="local_iterator"></a> local_iterator
 
 The type of a bucket iterator.
 
@@ -1638,7 +1652,7 @@ int main()
 [a]
 ```
 
-## <a name="max_bucket_count"></a>  unordered_set::max_bucket_count
+## <a name="max_bucket_count"></a> max_bucket_count
 
 Gets the maximum number of buckets.
 
@@ -1723,7 +1737,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a>  unordered_set::max_load_factor
+## <a name="max_load_factor"></a> max_load_factor
 
 Gets or sets the maximum elements per bucket.
 
@@ -1735,7 +1749,7 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*<br/>
+*factor*\
 The new maximum load factor.
 
 ### Remarks
@@ -1815,7 +1829,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a>  unordered_set::max_size
+## <a name="max_size"></a> max_size
 
 Gets the maximum size of the controlled sequence.
 
@@ -1850,7 +1864,7 @@ int main()
 max_size() == 4294967295
 ```
 
-## <a name="op_eq"></a>  unordered_set::operator=
+## <a name="op_eq"></a> operator=
 
 Copies a hash table.
 
@@ -1862,9 +1876,8 @@ unordered_set& operator=(unordered_set&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The[unordered_set](../standard-library/unordered-set-class.md) being copied into the `unordered_set`.|
+*right*\
+The[unordered_set](../standard-library/unordered-set-class.md) being copied into the `unordered_set`.
 
 ### Remarks
 
@@ -1907,7 +1920,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  unordered_set::pointer
+## <a name="pointer"></a> pointer
 
 The type of a pointer to an element.
 
@@ -1953,7 +1966,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="reference"></a>  unordered_set::reference
+## <a name="reference"></a> reference
 
 The type of a reference to an element.
 
@@ -1999,7 +2012,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a>  unordered_set::rehash
+## <a name="rehash"></a> rehash
 
 Rebuilds the hash table.
 
@@ -2009,7 +2022,7 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*<br/>
+*nbuckets*\
 The requested number of buckets.
 
 ### Remarks
@@ -2076,7 +2089,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a>  unordered_set::size
+## <a name="size"></a> size
 
 Counts the number of elements.
 
@@ -2141,7 +2154,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a>  unordered_set::size_type
+## <a name="size_type"></a> size_type
 
 The type of an unsigned distance between two elements.
 
@@ -2177,7 +2190,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a>  unordered_set::swap
+## <a name="swap"></a> swap
 
 Swaps the contents of two containers.
 
@@ -2187,7 +2200,7 @@ void swap(unordered_set& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The container to swap with.
 
 ### Remarks
@@ -2246,7 +2259,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_set"></a>  unordered_set::unordered_set
+## <a name="unordered_set"></a> unordered_set
 
 Constructs a container object.
 
@@ -2295,15 +2308,26 @@ unordered_set(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*InputIterator*|The iterator type.|
-|*Al*|The allocator object to store.|
-|*Comp*|The comparison function object to store.|
-|*Hash*|The hash function object to store.|
-|*bucket_count*|The minimum number of buckets.|
-|*Right*|The container to copy.|
-|*IList*|The initializer_list containing the elements to copy.|
+*InputIterator*\
+The iterator type.
+
+*Al*\
+The allocator object to store.
+
+*Comp*\
+The comparison function object to store.
+
+*Hash*\
+The hash function object to store.
+
+*bucket_count*\
+The minimum number of buckets.
+
+*Right*\
+The container to copy.
+
+*IList*\
+The initializer_list containing the elements to copy.
 
 ### Remarks
 
@@ -2319,7 +2343,7 @@ The comparison function object is the argument *Comp*, if present; otherwise it 
 
 The allocator object is the argument *Al*, if present; otherwise, it is `Alloc()`.
 
-## <a name="value_type"></a>  unordered_set::value_type
+## <a name="value_type"></a> value_type
 
 The type of an element.
 
@@ -2370,10 +2394,3 @@ int main()
 [c] [b] [a]
 [d] [c] [b] [a]
 ```
-
-## See also
-
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
-[Containers](../cpp/containers-modern-cpp.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

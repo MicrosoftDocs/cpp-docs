@@ -16,11 +16,11 @@ ms.workload: ["cplusplus"]
 
 Defines the iterator primitives, predefined iterators and stream iterators, as well as several supporting templates. The predefined iterators include insert and reverse adaptors. There are three classes of insert iterator adaptors: front, back, and general. They provide insert semantics rather than the overwrite semantics that the container member function iterators provide.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <iterator>
-```
+**Header:** \<iterator>
+
+**Namespace:** std
 
 ## Remarks
 
@@ -40,9 +40,11 @@ Iterators that have greater requirements and so more powerful access to elements
 
 Visual Studio has added extensions to C++ Standard Library iterators to support a variety of debug mode situations for checked and unchecked iterators. For more information, see [Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md).
 
+## Members
+
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[advance](../standard-library/iterator-functions.md#advance)|Increments an iterator by a specified number of positions.|
 |[back_inserter](../standard-library/iterator-functions.md#back_inserter)|Creates an iterator that can insert elements at the back of a specified container.|
@@ -68,7 +70,7 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/iterator-operators.md#op_neq)|Tests if the iterator object on the left side of the operator is not equal to the iterator object on the right side.|
 |[operator==](../standard-library/iterator-operators.md#op_eq_eq)|Tests if the iterator object on the left side of the operator is equal to the iterator object on the right side.|
@@ -81,7 +83,7 @@ Visual Studio has added extensions to C++ Standard Library iterators to support 
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[back_insert_iterator](../standard-library/back-insert-iterator-class.md)|The template class describes an output iterator object. It inserts elements into a container of type `Container`, which it accesses through the protected `pointer` object it stores called container.|
 |[bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)|A class that provides a return type for an `iterator_category` function that represents a bidirectional iterator.|

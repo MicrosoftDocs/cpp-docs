@@ -8,11 +8,7 @@ ms.assetid: d6800e15-77a1-4df3-900e-d8b2fee190c7
 ---
 # &lt;chrono&gt; functions
 
-||||
-|-|-|-|
-|[duration_cast](#duration_cast)|[time_point_cast](#time_point_cast)|
-
-## <a name="duration_cast"></a>  duration_cast
+## <a name="duration_cast"></a> duration_cast
 
 Casts a `duration` object to a specified type.
 
@@ -36,7 +32,7 @@ A `duration` object of type `To` that represents the time interval `Dur`, which 
 
 If `To` is an instantiation of `duration`, this function does not participate in overload resolution.
 
-## <a name="time_point_cast"></a>  time_point_cast
+## <a name="time_point_cast"></a> time_point_cast
 
 Casts a [time_point](../standard-library/time-point-class.md) object to a specified type.
 
@@ -62,7 +58,3 @@ A `time_point` object that has a duration of type `To`.
 ### Remarks
 
 Unless `To` is an instantiation of [duration](../standard-library/duration-class.md), this function does not participate in overload resolution.
-
-## See also
-
-[\<chrono>](../standard-library/chrono.md)<br/>

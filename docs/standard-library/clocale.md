@@ -16,11 +16,11 @@ ms.workload: ["cplusplus"]
 
 Includes the Standard C library header \<locale.h> and adds the associated names to the `std` namespace.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <clocale>
-```
+**Header:** \<clocale>
+
+**Namespace:** std
 
 ## Remarks
 

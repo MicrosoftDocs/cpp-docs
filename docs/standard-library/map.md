@@ -16,11 +16,11 @@ ms.workload: ["cplusplus"]
 
 Defines the container template classes map and multimap and their supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <map>
-```
+**Header:** \<map>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<map> library also uses the `#include <initializer_list>` statement.
@@ -46,7 +46,7 @@ Defines the container template classes map and multimap and their supporting tem
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[value_compare Class](../standard-library/value-compare-class-map.md)|Provides a function object that can compare the elements of a map by comparing the values of their keys to determine their relative order in the map.|
 |[map Class](../standard-library/map-class.md)|Used for the storage and retrieval of data from a collection in which the each of the elements has a unique key with which the data is automatically ordered.|

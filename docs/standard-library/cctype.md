@@ -16,11 +16,11 @@ ms.workload: ["cplusplus"]
 
 Includes the Standard C library header \<ctype.h> and adds the associated names to the `std` namespace.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cctype>
-```
+**Header:** \<cctype>
+
+**Namespace:** std
 
 ## Remarks
 

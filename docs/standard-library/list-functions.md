@@ -7,11 +7,7 @@ f1_keywords: ["list/std::swap"]
 ---
 # &lt;list&gt; functions
 
-||
-|-|
-|[swap](#swap)|
-
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two lists.
 
@@ -22,15 +18,12 @@ template <class T, class Allocator>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `list`.|
-|*right*|An object of type `list`.|
+*left*\
+An object of type `list`.
+
+*right*\
+An object of type `list`.
 
 ### Remarks
 
 This template function executes `left.swap(right)`.
-
-## See also
-
-[<list>](../standard-library/list.md)<br/>

@@ -8,11 +8,7 @@ ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
 ---
 # &lt;map&gt; functions
 
-|||
-|-|-|
-|[swap (map)](#swap)|[swap (multimap)](#swap_multimap)|
-
-## <a name="swap_multimap"></a>  swap  (map)
+## <a name="swap_multimap"></a> swap (map)
 
 Exchanges the elements of two maps.
 
@@ -25,10 +21,10 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The map providing the elements to be swapped, or the map whose elements are to be exchanged with those of the map *left*.
 
-*left*<br/>
+*left*\
 The map whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
@@ -39,7 +35,7 @@ The template function is an algorithm specialized on the container class map to 
 
 See the code example for member function [map::swap](../standard-library/map-class.md#swap) for an example that uses the template version of `swap`.
 
-## <a name="swap"></a>  swap  (multimap)
+## <a name="swap"></a> swap (multimap)
 
 Exchanges the elements of two multimaps.
 
@@ -52,10 +48,10 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap *left*.
 
-*left*<br/>
+*left*\
 The multimap whose elements are to be exchanged with those of the multimap *right*.
 
 ### Remarks
@@ -65,7 +61,3 @@ The template function is an algorithm specialized on the container class map to 
 ### Example
 
 See the code example for member function [multimap::swap](../standard-library/multimap-class.md#swap) for an example that uses the template version of `swap`.
-
-## See also
-
-[\<map>](../standard-library/map.md)<br/>

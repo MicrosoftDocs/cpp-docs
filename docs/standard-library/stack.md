@@ -16,18 +16,20 @@ ms.workload: ["cplusplus"]
 
 Defines the template class stack and two supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <stack>
-```
+**Header:** \<stack>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<stack> library also uses the `#include <initializer_list>` statement.
 
+## Members
+
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/stack-operators.md#op_neq)|Tests if the stack object on the left side of the operator is not equal to the stack object on the right side.|
 |[operator<](../standard-library/stack-operators.md#op_lt)|Tests if the stack object on the left side of the operator is less than the stack object on the right side.|
@@ -38,13 +40,13 @@ Defines the template class stack and two supporting templates.
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[swap]()||
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[stack Class](../standard-library/stack-class.md)|A template container adaptor class that provides a restriction of functionality limiting access to the element most recently added to some underlying container type.|
 

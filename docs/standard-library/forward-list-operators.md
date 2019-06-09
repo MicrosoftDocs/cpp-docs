@@ -10,12 +10,7 @@ helpviewer_keywords: ["std::operator!= (forward_list)", "std::operator== (forwar
 ---
 # &lt;forward_list&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if the forward list object on the left side of the operator is equal to the forward list object on the right side.
 
@@ -27,16 +22,17 @@ bool operator==(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Remarks
 
 This template function overloads `operator==` to compare two objects of template class `forward_list`. The function returns `distance(left.begin(), end()) == distance(right.begin(),right.end()) && equal(left. begin(),left. end(),right.begin())`.
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if the forward list object on the left side of the operator is not equal to the forward list object on the right side.
 
@@ -48,10 +44,11 @@ bool operator!=(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Return Value
 
@@ -61,7 +58,7 @@ bool operator!=(
 
 This template function returns `!(left == right)`.
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Tests if the forward list object on the left side of the operator is less than the forward list object on the right side.
 
@@ -73,10 +70,11 @@ bool operator<(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Return Value
 
@@ -86,7 +84,7 @@ bool operator<(
 
 This template function overloads `operator<` to compare two objects of template class `forward_list`. The function returns `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())`.
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> operator&lt;=
 
 Tests if the forward list object on the left side of the operator is less than or equal to the forward list object on the right side.
 
@@ -98,10 +96,11 @@ bool operator<=(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Return Value
 
@@ -111,7 +110,7 @@ bool operator<=(
 
 This template function returns `!(right < left)`.
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> operator&gt;
 
 Tests if the forward list object on the left side of the operator is greater than the forward list object on the right side.
 
@@ -123,10 +122,11 @@ bool operator>(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Return Value
 
@@ -136,7 +136,7 @@ bool operator>(
 
 This template function returns `right < left`.
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Tests if the forward list object on the left side of the operator is greater than or equal to the forward list object on the right side.
 
@@ -148,10 +148,11 @@ bool operator>=(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Return Value
 
@@ -160,7 +161,3 @@ bool operator>=(
 ### Remarks
 
 The template function returns `!(left < right)`.
-
-## See also
-
-[<forward_list>](../standard-library/forward-list.md)<br/>

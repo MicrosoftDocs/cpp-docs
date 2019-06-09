@@ -9,11 +9,7 @@ ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
 ---
 # &lt;unordered_set&gt; operators
 
-|||||
-|-|-|-|-|
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_unordered_multiset)|[operator==](#op_eq_eq_unordered_multiset)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is not equal to the unordered_set object on the right side.
 
@@ -23,10 +19,10 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_set`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_set`.
 
 ### Return Value
@@ -71,7 +67,6 @@ int main()
 
     return (0);
 }
-
 ```
 
 **Output:**
@@ -82,7 +77,7 @@ int main()
 
 `c2 != c3: true`
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests whether the [unordered_set](../standard-library/unordered-set-class.md) object on the left side of the operator is equal to the unordered_set object on the right side.
 
@@ -92,10 +87,10 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_set`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_set`.
 
 ### Return Value
@@ -140,18 +135,15 @@ int main()
 
     return (0);
 }
-
 ```
 
-**Output:**
+```Output
+c1 == c2: false
+c1 == c3: true
+c2 == c3: false
+```
 
-`c1 == c2: false`
-
-`c1 == c3: true`
-
-`c2 == c3: false`
-
-## <a name="op_neq_unordered_multiset"></a>  operator!=
+## <a name="op_neq_unordered_multiset"></a> operator!=
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is not equal to the unordered_multiset object on the right side.
 
@@ -161,10 +153,10 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_multiset`.
 
 ### Return Value
@@ -212,18 +204,15 @@ int main()
 
     return (0);
 }
-
 ```
 
-**Output:**
+```Output
+c1 != c2: true
+c1 != c3: false
+c2 != c3: true
+```
 
-`c1 != c2: true`
-
-`c1 != c3: false`
-
-`c2 != c3: true`
-
-## <a name="op_eq_eq_unordered_multiset"></a>  operator==
+## <a name="op_eq_eq_unordered_multiset"></a> operator==
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is equal to the unordered_multiset object on the right side.
 
@@ -233,10 +222,10 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_multiset`.
 
 ### Return Value
@@ -284,17 +273,10 @@ int main()
 
     return (0);
 }
-
 ```
 
-**Output:**
-
-`c1 == c2: false`
-
-`c1 == c3: true`
-
-`c2 == c3: false`
-
-## See also
-
-[<unordered_set>](../standard-library/unordered-set.md)<br/>
+```Output
+c1 == c2: false
+c1 == c3: true
+c2 == c3: false
+```

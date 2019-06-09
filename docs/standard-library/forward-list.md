@@ -16,18 +16,20 @@ ms.workload: ["cplusplus"]
 
 Defines the container template class forward_list and several supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <forward_list>
-```
+**Header:** \<forward_list>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<forward_list> library also uses the `#include <initializer_list>` statement.
 
+## Members
+
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|Tests if the forward list object on the left side of the operator is equal to the forward list object on the right side.|
 |[operator!=](../standard-library/forward-list-operators.md#op_neq)|Tests if the forward list object on the left side of the operator is not equal to the forward list object on the right side.|
@@ -38,13 +40,13 @@ Defines the container template class forward_list and several supporting templat
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[swap](../standard-library/forward-list-functions.md#swap)|Exchanges the elements of two forward lists.|
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[forward_list](../standard-library/forward-list-class.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
 

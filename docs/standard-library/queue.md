@@ -16,18 +16,20 @@ ms.workload: ["cplusplus"]
 
 Defines the template classes priority_queue and queue and several supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <queue>
-```
+**Header:** \<queue>
+
+**Namespace:** std
 
 > [!NOTE]
 > The \<queue> library also uses the `#include <initializer_list>` statement.
 
+## Members
+
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/queue-operators.md#op_neq)|Tests if the queue object on the left side of the operator is not equal to the queue object on the right side.|
 |[operator<](../standard-library/queue-operators.md#op_lt)|Tests if the queue object on the left side of the operator is less than the queue object on the right side.|
@@ -38,13 +40,13 @@ Defines the template classes priority_queue and queue and several supporting tem
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[swap]()||
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[queue Class](../standard-library/queue-class.md)|A template container adaptor class that provides a restriction of functionality limiting access to the front and back elements of some underlying container type.|
 |[priority_queue Class](../standard-library/priority-queue-class.md)|A template container adaptor class that provides a restriction of functionality limiting access to the top element of some underlying container type, which is always the largest.|
