@@ -145,16 +145,6 @@ The type of the value.
 
 *IList*\
 The initializer_list to copy.
-=======
-|Parameter|Description|
-|---------------|-----------------|
-|*first*|The beginning of the replacement range.|
-|*last*|The end of the replacement range.|
-|*count*|The number of elements to assign.|
-|*val*|The value to assign each element.|
-|*Type*|The type of the value.|
-|*IList*|The initializer_list to copy.|
->>>>>>> 009c7ce384664f2a62ffb0bc61d6586b585ed38a
 
 ### Remarks
 
