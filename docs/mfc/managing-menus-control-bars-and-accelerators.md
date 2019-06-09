@@ -1,15 +1,8 @@
 ---
-title: "Managing Menus, Control Bars, and Accelerators | Microsoft Docs"
-ms.custom: ""
+title: "Managing Menus, Control Bars, and Accelerators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MDI [MFC], frame windows", "control bars [MFC], updating in frame windows", "menus [MFC], updating as context changes", "user interface objects [MFC], updating", "accelerator tables [MFC]", "sharing menus [MFC]", "updating user-interface objects [MFC]", "frame windows [MFC], updating", "status bars [MFC], updating"]
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Managing Menus, Control Bars, and Accelerators
 
@@ -33,7 +26,6 @@ The frame window also positions the status bar within its client area and manage
 
 Each frame window maintains an optional accelerator table that does keyboard accelerator translation for you automatically. This mechanism makes it easy to define accelerator keys (also called shortcut keys) that invoke menu commands.
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

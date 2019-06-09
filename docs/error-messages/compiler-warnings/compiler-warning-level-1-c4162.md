@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4162 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4162"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4162"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4162"]
 ms.assetid: 21ae3c92-501d-4689-ad7d-13753cb65eff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4162
 

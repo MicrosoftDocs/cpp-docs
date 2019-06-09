@@ -1,15 +1,8 @@
 ---
-title: "Testing the Modified ATL DHTML Control | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Testing the Modified ATL DHTML Control"
+ms.date: "11/06/2018"
 helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls, testing"]
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Testing the Modified ATL DHTML Control
 
@@ -29,16 +22,16 @@ Now test the methods that are not part of the UI.
 
 1. Highlight the control, so the border is activated.
 
-1. On the **Control** menu, click **Invoke Methods**.
+1. On the **Control** menu, choose **Invoke Methods**.
 
-The methods in the list labeled **Method Name** are the methods that the container can call: `MethodInvoked` and `GoToURL`. All other methods are controlled by the UI.
+   The methods in the list labeled **Method Name** are the methods that the container can call: `MethodInvoked` and `GoToURL`. All other methods are controlled by the UI.
 
-1. Select a method to invoke and click `Invoke` to display the method's message box or to navigate to www.microsoft.com.
+1. Select a method to invoke and choose **Invoke** to display the method's message box or to navigate to `www.microsoft.com`.
 
-1. In the **Invoke Methods** dialog box, click **Close**.
+1. In the **Invoke Methods** dialog box, choose **Close**.
 
 To learn more about the various elements and files that make up an ATL DHTML control, see [Identifying the Elements of the DHTML Control Project](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
-## See Also
+## See also
 
 [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)

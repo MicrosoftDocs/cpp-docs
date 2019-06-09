@@ -1,15 +1,8 @@
 ---
-title: "Static Members (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Static Members (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["class members [C++], static", "instance constructors, static members", "class members [C++], shared", "members [C++], static data members", "static members [C++], data members", "static data members [C++]", "data members [C++], static data members", "class instances [C++], shared members", "instance constructors, shared members", "class instances [C++], static members"]
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Static Members (C++)
 

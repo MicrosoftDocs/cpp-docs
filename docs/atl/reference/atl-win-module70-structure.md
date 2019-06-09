@@ -1,16 +1,9 @@
 ---
-title: "_ATL_WIN_MODULE70 Structure | Microsoft Docs"
-ms.custom: ""
+title: "_ATL_WIN_MODULE70 Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["_ATL_WIN_MODULE70", "ATL::_ATL_WIN_MODULE70", "ATL._ATL_WIN_MODULE70"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ATL_WIN_MODULE70 structure", "ATL_WIN_MODULE70 structure"]
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _ATL_WIN_MODULE70 Structure
 
@@ -49,7 +42,6 @@ Used to track window class registrations so that they can be properly unregister
 
 **Header:** atlbase.h
 
-## See Also
+## See also
 
 [Classes and structs](../../atl/reference/atl-classes.md)
-

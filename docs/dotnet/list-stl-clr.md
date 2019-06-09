@@ -1,16 +1,10 @@
 ---
-title: "list (STL/CLR) | Microsoft Docs"
-ms.custom: ""
+title: "list (STL/CLR)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["cliext::list", "cliext::list::assign", "cliext::list::assign", "cliext::list::back", "cliext::list::back_item", "cliext::list::begin", "cliext::list::clear", "cliext::list::const_iterator", "cliext::list::const_reference", "cliext::list::const_reverse_iterator", "cliext::list::difference_type", "cliext::list::empty", "cliext::list::end", "cliext::list::erase", "cliext::list::front", "cliext::list::front_item", "cliext::list::generic_container", "cliext::list::generic_iterator", "cliext::list::generic_reverse_iterator", "cliext::list::generic_value", "cliext::list::insert", "cliext::list::iterator", "cliext::list::list", "cliext::list::merge", "cliext::list::operator=", "cliext::list::pop_back", "cliext::list::pop_front", "cliext::list::push_back", "cliext::list::push_front", "cliext::list::rbegin", "cliext::list::reference", "cliext::list::remove", "cliext::list::remove_if", "cliext::list::rend", "cliext::list::resize", "cliext::list::reverse", "cliext::list::reverse_iterator", "cliext::list::size", "cliext::list::size_type", "cliext::list::sort", "cliext::list::splice", "cliext::list::swap", "cliext::list::to_array", "cliext::list::unique", "cliext::list::value_type", "cliext::operator!=(list)", "cliext::operator<(list)", "cliext::operator<=(list)", "cliext::operator==(list)", "cliext::operator>(list)", "cliext::operator>=(list)"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["<cliext/list> header [STL/CLR]", "list class [STL/CLR]", "<list> header [STL/CLR]", "assign member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "erase member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "list member [STL/CLR]", "merge member [STL/CLR]", "operator= member [STL/CLR]", "pop_back member [STL/CLR]", "pop_front member [STL/CLR]", "push_back member [STL/CLR]", "push_front member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "remove member [STL/CLR]", "remove_if member [STL/CLR]", "rend member [STL/CLR]", "resize member [STL/CLR]", "reverse member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "sort member [STL/CLR]", "splice member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "unique member [STL/CLR]", "value_type member [STL/CLR]", "operator!=(list) member [STL/CLR]", "operator<(list) member [STL/CLR]", "operator<=(list) member [STL/CLR]", "operator==(list) member [STL/CLR]", "operator>(list) member [STL/CLR]", "operator>=(list) member [STL/CLR]"]
 ms.assetid: a70c45c8-a257-4f6b-8434-b27ff6685bac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # list (STL/CLR)
 

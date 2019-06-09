@@ -1,16 +1,9 @@
 ---
-title: "CMFCDesktopAlertWndButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDesktopAlertWndButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWndButton [MFC], IsCaptionButton", "CMFCDesktopAlertWndButton [MFC], IsCloseButton"]
 ms.assetid: df39a0c8-0c39-4ab0-8c64-78c5b2c4ecaf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndButton Class
 
@@ -56,7 +49,7 @@ Add `CMFCDesktopAlertWndButton` objects to a `CMFCDesktopAlertDialog` object as 
 
 ## Example
 
-The following example demonstrates how to use the `SetImage` method in the `CMFCDesktopAlertWndButton` class. This code snippet is part of the [Desktop Alert Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `SetImage` method in the `CMFCDesktopAlertWndButton` class. This code snippet is part of the [Desktop Alert Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#4](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwndbutton-class_1.h)]
 [!code-cpp[NVC_MFC_DesktopAlertDemo#5](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwndbutton-class_2.cpp)]
@@ -103,7 +96,7 @@ BOOL IsCloseButton() const;
 
 Nonzero if the button closes the alert dialog box; otherwise, 0.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

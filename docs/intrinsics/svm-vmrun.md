@@ -1,16 +1,9 @@
 ---
-title: "__svm_vmrun | Microsoft Docs"
-ms.custom: ""
+title: "__svm_vmrun"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__svm_vmrun"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__svm_vmrun intrinsic", "VMRUN instruction"]
 ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __svm_vmrun
 
@@ -48,7 +41,7 @@ The `__svm_vmrun` function is equivalent to the `VMRUN` machine instruction. Thi
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__svm_vmsave](../intrinsics/svm-vmsave.md)<br/>

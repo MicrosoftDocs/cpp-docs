@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::operator +=, + | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::operator +=, +"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::operator+", "_bstr_t::operator+="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["+= operator [C++], appending strings", "+ operator [C++], _bstr_t objects"]
 ms.assetid: d28316ce-c2c8-4a38-bdb3-44fa4e582c44
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::operator +=, +
 

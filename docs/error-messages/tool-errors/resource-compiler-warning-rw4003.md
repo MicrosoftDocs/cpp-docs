@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Warning RW4003 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Warning RW4003"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RW4003"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RW4003"]
 ms.assetid: e9c289f2-c065-4f26-bc24-991953742abc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Warning RW4003
 

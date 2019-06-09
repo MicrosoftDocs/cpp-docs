@@ -1,16 +1,9 @@
 ---
-title: "Application Settings, MFC ActiveX Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Application Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.appset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, application settings"]
 ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Settings, MFC ActiveX Control Wizard
 
@@ -37,9 +30,8 @@ Use this page of the MFC ActiveX Control Wizard to design and add basic features
 
    - The project includes the HLP directory to contain the project help bitmap files and the help topic file (*projname*.rtf). This help topic file contains the standard help topics for the common properties, events, and methods supported by many ActiveX controls. You can edit the .rtf file to add or remove specific help topics.
 
-## See Also
+## See also
 
 [MFC ActiveX Control Wizard](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Control Names, MFC ActiveX Control Wizard](../../mfc/reference/control-names-mfc-activex-control-wizard.md)<br/>
 [Control Settings, MFC ActiveX Control Wizard](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)
-

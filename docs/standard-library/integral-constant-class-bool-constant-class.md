@@ -1,16 +1,9 @@
 ---
-title: "integral_constant Class, bool_constant Class | Microsoft Docs"
-ms.custom: ""
+title: "integral_constant Class, bool_constant Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::integral_constant", "XTR1COMMON/std::integral_constant", "type_traits/std::bool_constant", "XTR1COMMON/std::bool_constant"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::integral_constant [C++]", "std::bool_constant [C++]"]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # integral_constant Class, bool_constant Class
 
@@ -60,7 +53,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

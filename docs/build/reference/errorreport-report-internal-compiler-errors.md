@@ -1,16 +1,9 @@
 ---
-title: "-errorReport (Report Internal Compiler Errors) | Microsoft Docs"
-ms.custom: ""
+title: "/errorReport (Report Internal Compiler Errors)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ErrorReporting", "/errorreport"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/errorReport compiler option [C++]", "-errorReport compiler option [C++]"]
 ms.assetid: 819828f8-b0a5-412c-9c57-bf822f17e667
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /errorReport (Report Internal Compiler Errors)
 
@@ -46,7 +39,7 @@ A user's ability to send reports depends on computer and user policy permissions
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -58,7 +51,7 @@ A user's ability to send reports depends on computer and user policy permissions
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ErrorReporting%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

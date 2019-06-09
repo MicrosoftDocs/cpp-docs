@@ -1,16 +1,9 @@
 ---
-title: "ATL Simple Object Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Simple Object Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.simple.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding objects", "ATL Simple Object Wizard"]
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Simple Object Wizard
 
@@ -86,7 +79,6 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object.
 
-## See Also
+## See also
 
 [ATL Simple Object](../../atl/reference/adding-an-atl-simple-object.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "CHeapPtrBase Class | Microsoft Docs"
-ms.custom: ""
+title: "CHeapPtrBase Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase::AllocateBytes", "ATLCORE/ATL::CHeapPtrBase::Attach", "ATLCORE/ATL::CHeapPtrBase::Detach", "ATLCORE/ATL::CHeapPtrBase::Free", "ATLCORE/ATL::CHeapPtrBase::ReallocateBytes", "ATLCORE/ATL::CHeapPtrBase::m_pData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeapPtrBase class"]
 ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHeapPtrBase Class
 
@@ -223,7 +216,7 @@ The new amount of memory to allocate, in bytes.
 
 Returns true if the memory is successfully allocated, false otherwise.
 
-## See Also
+## See also
 
 [CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
 [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "auto_partitioner Class | Microsoft Docs"
-ms.custom: ""
+title: "auto_partitioner Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["auto_partitioner", "PPL/concurrency::auto_partitioner", "PPL/concurrency::auto_partitioner::auto_partitioner"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_partitioner class"]
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto_partitioner Class
 
@@ -57,6 +50,6 @@ Constructs a `auto_partitioner` object.
 auto_partitioner();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

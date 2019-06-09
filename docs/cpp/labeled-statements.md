@@ -1,15 +1,8 @@
 ---
-title: "Labeled Statements | Microsoft Docs"
-ms.custom: ""
+title: "Labeled Statements"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["labeled statement", "statements, labeled"]
 ms.assetid: 456a26d5-0fcc-4d1a-b71f-fa9ff3d73b91
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Labeled Statements
 

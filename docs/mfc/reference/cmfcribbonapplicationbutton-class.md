@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonApplicationButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonApplicationButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonApplicationButton Class
 
@@ -40,7 +33,7 @@ class CMFCRibbonApplicationButton : public CMFCRibbonButton
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCRibbonApplicationButton` class. The example shows how to assign an image to the application button, and how to set its tooltip. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCRibbonApplicationButton` class. The example shows how to assign an image to the application button, and how to set its tooltip. This code snippet is part of the [Draw Client sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#4](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_1.h)]
 [!code-cpp[NVC_MFC_DrawClient#5](../../mfc/reference/codesnippet/cpp/cmfcribbonapplicationbutton-class_2.cpp)]
@@ -102,7 +95,7 @@ void SetImage(HBITMAP hBmp);
 
 Use this method to assign a new image to the ribbon application button after you create the button. The application button is located in the upper-left corner of the application window.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

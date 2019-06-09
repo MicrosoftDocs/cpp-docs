@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3764 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3764"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3764"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3764"]
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3764
 
 'override_function': cannot override base class method 'base_class_function'
 
-The compiler detected an ill-formed override. For example, the base class function was not `virtual`. For more information, see [override](../../windows/override-cpp-component-extensions.md).
+The compiler detected an ill-formed override. For example, the base class function was not `virtual`. For more information, see [override](../../extensions/override-cpp-component-extensions.md).
 
 ## Example
 

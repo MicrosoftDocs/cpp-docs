@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarFontSizeComboBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarFontSizeComboBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::GetTwipSize", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::RebuildFontSizes", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontSizeComboBox::SetTwipSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarFontSizeComboBox [MFC], CMFCToolBarFontSizeComboBox", "CMFCToolBarFontSizeComboBox [MFC], GetTwipSize", "CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes", "CMFCToolBarFontSizeComboBox [MFC], SetTwipSize"]
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarFontSizeComboBox Class
 
@@ -48,7 +41,7 @@ When the user selects a new font in a `CMFCToolBarFontComboBox` object, you can 
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCToolBarFontSizeComboBox` class to configure a `CMFCToolBarFontSizeComboBox` object. The example illustrates how to retrieve the font size, in twips, from the text box, fill the font size combo box with all valid sizes of the given font, and specify the font size in twips. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCToolBarFontSizeComboBox` class to configure a `CMFCToolBarFontSizeComboBox` object. The example illustrates how to retrieve the font size, in twips, from the text box, fill the font size combo box with all valid sizes of the given font, and specify the font size in twips. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#8](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontsizecombobox-class_1.cpp)]
 
@@ -120,7 +113,7 @@ void SetTwipSize(int nSize);
 
 You can retrieve the previous valid font size later by calling the [CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize) method.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -130,4 +123,3 @@ You can retrieve the previous valid font size later by calling the [CMFCToolBarF
 [CMFCFontInfo Class](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

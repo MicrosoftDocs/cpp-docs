@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::Map Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2018"
-ms.technology: "cpp-windows"
+title: "Platform::Collections::Map Class"
+ms.date: "03/27/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class
 
@@ -38,7 +32,7 @@ The type of the value in the key-value pair.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
 *__is_valid_winrt_type()*
-A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
+A compiler-generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
 
@@ -46,7 +40,7 @@ Allowed types are:
 
 - integers
 
-- interface class ^
+- interface class^
 
 - public ref class^
 
@@ -84,7 +78,7 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 |||
 |-|-|
 |Name|Description|
-|[Map::MapChanged](#mapchanged-event.md) `event`|Occurs when the Map changes.|
+|[Map::MapChanged](#mapchanged) event|Occurs when the Map changes.|
 
 ## Inheritance Hierarchy
 
@@ -229,7 +223,7 @@ The typename of the current Map.
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.
 
 *m*<br/>
-A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
+A reference or [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
 
 *first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current Map.
@@ -249,7 +243,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) and [CollectionChange Enumeration](/uwp/api/windows.foundation.collections.collectionchange).
 
 ## .NET Framework Equivalent
 
@@ -272,7 +266,7 @@ The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  Map::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the Map.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the Map.
 
 ### Syntax
 
@@ -284,7 +278,7 @@ virtual property unsigned int Size;
 
 The number of elements in the Map.
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

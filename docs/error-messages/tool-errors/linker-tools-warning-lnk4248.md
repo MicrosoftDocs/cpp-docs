@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4248 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4248"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4248"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4248"]
 ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4248
 

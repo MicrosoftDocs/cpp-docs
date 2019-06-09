@@ -1,16 +1,9 @@
 ---
-title: "&lt;map&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;map&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<map>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["map header"]
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;map&gt;
 

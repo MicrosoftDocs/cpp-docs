@@ -1,16 +1,9 @@
 ---
-title: "rdx (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "rdx (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.rdx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rdx attribute"]
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # rdx
 
@@ -75,7 +68,7 @@ public:
 };
 ```
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [registration_script](registration-script.md)

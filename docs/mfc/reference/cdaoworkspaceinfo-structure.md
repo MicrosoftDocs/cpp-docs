@@ -1,16 +1,9 @@
 ---
-title: "CDaoWorkspaceInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoWorkspaceInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoWorkspaceInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoWorkspaceInfo structure [MFC]", "DAO (Data Access Objects), Workspaces collection"]
 ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspaceInfo Structure
 
@@ -48,7 +41,7 @@ Information retrieved by the [CDaoWorkspace::GetWorkspaceInfo](../../mfc/referen
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoWorkspace Class](../../mfc/reference/cdaoworkspace-class.md)

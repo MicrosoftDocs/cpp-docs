@@ -1,16 +1,9 @@
 ---
-title: "IExecutionResource Structure | Microsoft Docs"
-ms.custom: ""
+title: "IExecutionResource Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IExecutionResource", "CONCRTRM/concurrency::IExecutionResource", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IExecutionResource structure"]
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IExecutionResource Structure
 
@@ -128,7 +121,7 @@ Virtual processor roots, too, can be returned to the Resource Manager by invokin
 
 `invalid_operation` is thrown if the parameter `pScheduler` is different from the scheduler that this execution resource was created for, or, with a standalone execution resource, if the current thread is different from the thread that created the thread subscription.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)

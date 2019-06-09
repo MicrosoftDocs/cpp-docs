@@ -1,16 +1,13 @@
 ---
-title: "&lt;map&gt; operators | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.topic: "reference"
+title: "&lt;map&gt; operators"
+ms.date: "03/27/2019"
 f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 helpviewer_keywords: ["std::operator!= (map)", "std::operator&gt; (map)", "std::operator&gt;= (map)", "std::operator&lt; (map)", "std::operator&lt;= (map)", "std::operator== (map)"]
 ---
 # &lt;map&gt; operators
 
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests if the map object on the left side of the operator is not equal to the map object on the right side.
 
@@ -535,7 +532,11 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
+<<<<<<< HEAD
 ## <a name="eq_multimap"></a> operator&lt;=
+=======
+## <a name="op_lt_eq_multimap"></a>  operator&lt;=
+>>>>>>> 009c7ce384664f2a62ffb0bc61d6586b585ed38a
 
 Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Metadata::Attribute Attribute | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Metadata::Attribute Attribute"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::Attribute"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata::Attribute Attribute"]
 ms.assetid: 0e69727f-429b-4f7d-85c6-eea614f14dd7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::Attribute Attribute
 
@@ -38,6 +32,6 @@ public ref class Attribute abstract : Object
 
 **Metadata:** platform.winmd
 
-## See Also
+## See also
 
 [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)

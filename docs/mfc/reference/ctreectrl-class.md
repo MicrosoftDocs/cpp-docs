@@ -1,16 +1,9 @@
 ---
-title: "CTreeCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CTreeCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTreeCtrl", "AFXCMN/CTreeCtrl", "AFXCMN/CTreeCtrl::CTreeCtrl", "AFXCMN/CTreeCtrl::Create", "AFXCMN/CTreeCtrl::CreateDragImage", "AFXCMN/CTreeCtrl::CreateEx", "AFXCMN/CTreeCtrl::DeleteAllItems", "AFXCMN/CTreeCtrl::DeleteItem", "AFXCMN/CTreeCtrl::EditLabel", "AFXCMN/CTreeCtrl::EndEditLabelNow", "AFXCMN/CTreeCtrl::EnsureVisible", "AFXCMN/CTreeCtrl::Expand", "AFXCMN/CTreeCtrl::GetBkColor", "AFXCMN/CTreeCtrl::GetCheck", "AFXCMN/CTreeCtrl::GetChildItem", "AFXCMN/CTreeCtrl::GetCount", "AFXCMN/CTreeCtrl::GetDropHilightItem", "AFXCMN/CTreeCtrl::GetEditControl", "AFXCMN/CTreeCtrl::GetExtendedStyle", "AFXCMN/CTreeCtrl::GetFirstVisibleItem", "AFXCMN/CTreeCtrl::GetImageList", "AFXCMN/CTreeCtrl::GetIndent", "AFXCMN/CTreeCtrl::GetInsertMarkColor", "AFXCMN/CTreeCtrl::GetItem", "AFXCMN/CTreeCtrl::GetItemData", "AFXCMN/CTreeCtrl::GetItemExpandedImageIndex", "AFXCMN/CTreeCtrl::GetItemHeight", "AFXCMN/CTreeCtrl::GetItemImage", "AFXCMN/CTreeCtrl::GetItemPartRect", "AFXCMN/CTreeCtrl::GetItemRect", "AFXCMN/CTreeCtrl::GetItemState", "AFXCMN/CTreeCtrl::GetItemStateEx", "AFXCMN/CTreeCtrl::GetItemText", "AFXCMN/CTreeCtrl::GetLastVisibleItem", "AFXCMN/CTreeCtrl::GetLineColor", "AFXCMN/CTreeCtrl::GetNextItem", "AFXCMN/CTreeCtrl::GetNextSiblingItem", "AFXCMN/CTreeCtrl::GetNextVisibleItem", "AFXCMN/CTreeCtrl::GetParentItem", "AFXCMN/CTreeCtrl::GetPrevSiblingItem", "AFXCMN/CTreeCtrl::GetPrevVisibleItem", "AFXCMN/CTreeCtrl::GetRootItem", "AFXCMN/CTreeCtrl::GetScrollTime", "AFXCMN/CTreeCtrl::GetSelectedCount", "AFXCMN/CTreeCtrl::GetSelectedItem", "AFXCMN/CTreeCtrl::GetTextColor", "AFXCMN/CTreeCtrl::GetToolTips", "AFXCMN/CTreeCtrl::GetVisibleCount", "AFXCMN/CTreeCtrl::HitTest", "AFXCMN/CTreeCtrl::InsertItem", "AFXCMN/CTreeCtrl::ItemHasChildren", "AFXCMN/CTreeCtrl::MapAccIdToItem", "AFXCMN/CTreeCtrl::MapItemToAccID", "AFXCMN/CTreeCtrl::Select", "AFXCMN/CTreeCtrl::SelectDropTarget", "AFXCMN/CTreeCtrl::SelectItem", "AFXCMN/CTreeCtrl::SelectSetFirstVisible", "AFXCMN/CTreeCtrl::SetAutoscrollInfo", "AFXCMN/CTreeCtrl::SetBkColor", "AFXCMN/CTreeCtrl::SetCheck", "AFXCMN/CTreeCtrl::SetExtendedStyle", "AFXCMN/CTreeCtrl::SetImageList", "AFXCMN/CTreeCtrl::SetIndent", "AFXCMN/CTreeCtrl::SetInsertMark", "AFXCMN/CTreeCtrl::SetInsertMarkColor", "AFXCMN/CTreeCtrl::SetItem", "AFXCMN/CTreeCtrl::SetItemData", "AFXCMN/CTreeCtrl::SetItemExpandedImageIndex", "AFXCMN/CTreeCtrl::SetItemHeight", "AFXCMN/CTreeCtrl::SetItemImage", "AFXCMN/CTreeCtrl::SetItemState", "AFXCMN/CTreeCtrl::SetItemStateEx", "AFXCMN/CTreeCtrl::SetItemText", "AFXCMN/CTreeCtrl::SetLineColor", "AFXCMN/CTreeCtrl::SetScrollTime", "AFXCMN/CTreeCtrl::SetTextColor", "AFXCMN/CTreeCtrl::SetToolTips", "AFXCMN/CTreeCtrl::ShowInfoTip", "AFXCMN/CTreeCtrl::SortChildren", "AFXCMN/CTreeCtrl::SortChildrenCB"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeCtrl [MFC], CTreeCtrl", "CTreeCtrl [MFC], Create", "CTreeCtrl [MFC], CreateDragImage", "CTreeCtrl [MFC], CreateEx", "CTreeCtrl [MFC], DeleteAllItems", "CTreeCtrl [MFC], DeleteItem", "CTreeCtrl [MFC], EditLabel", "CTreeCtrl [MFC], EndEditLabelNow", "CTreeCtrl [MFC], EnsureVisible", "CTreeCtrl [MFC], Expand", "CTreeCtrl [MFC], GetBkColor", "CTreeCtrl [MFC], GetCheck", "CTreeCtrl [MFC], GetChildItem", "CTreeCtrl [MFC], GetCount", "CTreeCtrl [MFC], GetDropHilightItem", "CTreeCtrl [MFC], GetEditControl", "CTreeCtrl [MFC], GetExtendedStyle", "CTreeCtrl [MFC], GetFirstVisibleItem", "CTreeCtrl [MFC], GetImageList", "CTreeCtrl [MFC], GetIndent", "CTreeCtrl [MFC], GetInsertMarkColor", "CTreeCtrl [MFC], GetItem", "CTreeCtrl [MFC], GetItemData", "CTreeCtrl [MFC], GetItemExpandedImageIndex", "CTreeCtrl [MFC], GetItemHeight", "CTreeCtrl [MFC], GetItemImage", "CTreeCtrl [MFC], GetItemPartRect", "CTreeCtrl [MFC], GetItemRect", "CTreeCtrl [MFC], GetItemState", "CTreeCtrl [MFC], GetItemStateEx", "CTreeCtrl [MFC], GetItemText", "CTreeCtrl [MFC], GetLastVisibleItem", "CTreeCtrl [MFC], GetLineColor", "CTreeCtrl [MFC], GetNextItem", "CTreeCtrl [MFC], GetNextSiblingItem", "CTreeCtrl [MFC], GetNextVisibleItem", "CTreeCtrl [MFC], GetParentItem", "CTreeCtrl [MFC], GetPrevSiblingItem", "CTreeCtrl [MFC], GetPrevVisibleItem", "CTreeCtrl [MFC], GetRootItem", "CTreeCtrl [MFC], GetScrollTime", "CTreeCtrl [MFC], GetSelectedCount", "CTreeCtrl [MFC], GetSelectedItem", "CTreeCtrl [MFC], GetTextColor", "CTreeCtrl [MFC], GetToolTips", "CTreeCtrl [MFC], GetVisibleCount", "CTreeCtrl [MFC], HitTest", "CTreeCtrl [MFC], InsertItem", "CTreeCtrl [MFC], ItemHasChildren", "CTreeCtrl [MFC], MapAccIdToItem", "CTreeCtrl [MFC], MapItemToAccID", "CTreeCtrl [MFC], Select", "CTreeCtrl [MFC], SelectDropTarget", "CTreeCtrl [MFC], SelectItem", "CTreeCtrl [MFC], SelectSetFirstVisible", "CTreeCtrl [MFC], SetAutoscrollInfo", "CTreeCtrl [MFC], SetBkColor", "CTreeCtrl [MFC], SetCheck", "CTreeCtrl [MFC], SetExtendedStyle", "CTreeCtrl [MFC], SetImageList", "CTreeCtrl [MFC], SetIndent", "CTreeCtrl [MFC], SetInsertMark", "CTreeCtrl [MFC], SetInsertMarkColor", "CTreeCtrl [MFC], SetItem", "CTreeCtrl [MFC], SetItemData", "CTreeCtrl [MFC], SetItemExpandedImageIndex", "CTreeCtrl [MFC], SetItemHeight", "CTreeCtrl [MFC], SetItemImage", "CTreeCtrl [MFC], SetItemState", "CTreeCtrl [MFC], SetItemStateEx", "CTreeCtrl [MFC], SetItemText", "CTreeCtrl [MFC], SetLineColor", "CTreeCtrl [MFC], SetScrollTime", "CTreeCtrl [MFC], SetTextColor", "CTreeCtrl [MFC], SetToolTips", "CTreeCtrl [MFC], ShowInfoTip", "CTreeCtrl [MFC], SortChildren", "CTreeCtrl [MFC], SortChildrenCB"]
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTreeCtrl Class
 
@@ -158,7 +151,7 @@ virtual BOOL Create(
 Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
-Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the tree view control's parent window, usually a `CDialog`. It must not be NULL.
@@ -204,7 +197,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -730,7 +723,7 @@ BOOL GetItemPartRect(
 |---------------|-----------------|
 |*hItem*|[in] Handle to a tree-view control item.|
 |*nPart*|[in] Identifier for the part. Must be set to TVGIPR_BUTTON.|
-|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|
+|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. If this method is successful, the structure receives the rectangle coordinates of the part specified by *hItem* and *nPart*.|
 
 ### Return Value
 
@@ -771,7 +764,7 @@ BOOL GetItemRect(
 The handle of a tree view control item.
 
 *lpRect*<br/>
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle. The coordinates are relative to the upper-left corner of the tree view control.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle. The coordinates are relative to the upper-left corner of the tree view control.
 
 *bTextOnly*<br/>
 If this parameter is nonzero, the bounding rectangle includes only the text of the item. Otherwise it includes the entire line that the item occupies in the tree view control.
@@ -2182,9 +2175,9 @@ The *lParam1* and *lParam2* parameters correspond to the `lParam` member of the 
 
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CImageList Class](../../mfc/reference/cimagelist-class.md)

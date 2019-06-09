@@ -1,15 +1,8 @@
 ---
-title: "Menus and Resources (OLE) | Microsoft Docs"
-ms.custom: ""
+title: "Menus and Resources (OLE)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE visual editing servers [MFC]", "status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "string tables [MFC], visual editing applications", "OLE containers [MFC], menus and resources", "OLE applications [MFC], menus and resources", "OLE server applications [MFC], menus and resources", "toolbars [MFC], OLE document applications", "string editing [MFC], visual editing applications", "server applications [MFC], OLE menus and resources", "applications [OLE], menus and resources", "menus [MFC], OLE document applications", "in-place activation [MFC], OLE menus and resources", "containers [MFC], OLE container applications", "OLE menus and resources [MFC]"]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Menus and Resources (OLE)
 
@@ -46,7 +39,6 @@ The following articles discuss topics related to containers, servers, and the me
 
 - [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md)
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)
-

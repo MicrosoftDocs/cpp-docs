@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3018 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3018"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3018"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3018"]
 ms.assetid: 685be45f-f116-43a8-a88d-05ab6616e2f1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3018
 

@@ -1,16 +1,9 @@
 ---
-title: "CComQIPtrElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CComQIPtrElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComQIPtrElementTraits class"]
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComQIPtrElementTraits Class
 
@@ -70,7 +63,7 @@ The data type to use for adding elements to the collection class object.
 typedef I* INARGTYPE;
 ```
 
-## See Also
+## See also
 
 [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

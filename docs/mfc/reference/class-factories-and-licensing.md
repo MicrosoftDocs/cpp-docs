@@ -1,16 +1,8 @@
 ---
-title: "Class Factories and Licensing | Microsoft Docs"
-ms.custom: ""
+title: "Class Factories and Licensing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-f1_keywords: ["vc.mfc.macros.classes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["class factories [MFC], and licensing"]
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Class Factories and Licensing
 
@@ -173,6 +165,6 @@ If *cch* is -1, this function uses:
 
   **Header** afxctl.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

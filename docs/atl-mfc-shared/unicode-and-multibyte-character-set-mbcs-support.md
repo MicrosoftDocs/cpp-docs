@@ -1,14 +1,7 @@
 ---
-title: "Unicode and Multibyte Character Set (MBCS) Support | Microsoft Docs"
-ms.custom: ""
+title: "Unicode and Multibyte Character Set (MBCS) Support"
 ms.date: "1/09/2017"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings and MFC support", "strings [C++], MBCS support in MFC", "character sets [C++], multibyte", "Unicode [C++], MFC strings", "Unicode [C++], string objects", "strings [C++], Unicode", "strings [C++], character set support"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unicode and Multibyte Character Set (MBCS) Support
 
@@ -86,7 +79,7 @@ Generic-text function mappings for all of the run-time string-handling routines 
 
 Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or `wchar_t`, LPTSTR for **char**<strong>\*</strong> or `wchar_t*`, and LPCTSTR for **const char**<strong>\*</strong> or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [String Manipulation](../c-runtime-library/string-manipulation-crt.md)

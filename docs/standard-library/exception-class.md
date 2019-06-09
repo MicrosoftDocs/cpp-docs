@@ -1,16 +1,9 @@
 ---
-title: "exception Class | Microsoft Docs"
-ms.custom: ""
+title: "exception Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["exception"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["exception class"]
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # exception Class
 

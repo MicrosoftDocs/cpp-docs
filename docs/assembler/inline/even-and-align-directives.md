@@ -1,16 +1,9 @@
 ---
-title: "EVEN and ALIGN Directives | Microsoft Docs"
-ms.custom: ""
+title: "EVEN and ALIGN Directives"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
 f1_keywords: ["align", "EVEN"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["EVEN directive", "directives, MASM", "MASM (Microsoft Macro Assembler), directives", "NOP (no operation instruction)", "ALIGN directive"]
 ms.assetid: 7357ab2d-4a5c-43ca-accb-a5f21cdfcde5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # EVEN and ALIGN Directives
 

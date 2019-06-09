@@ -1,15 +1,8 @@
 ---
-title: "Property Sheets as Wizards | Microsoft Docs"
-ms.custom: ""
+title: "Property Sheets as Wizards"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property sheets, as wizards"]
 ms.assetid: 1ea66ecb-23b0-484a-838d-58671a2999b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Sheets as Wizards
 
@@ -23,7 +16,6 @@ To display all of the default buttons, you mush show the Finish button and move 
 
 [!code-cpp[NVC_MFCDocView#5](../mfc/codesnippet/cpp/property-sheets-as-wizards_1.cpp)]
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

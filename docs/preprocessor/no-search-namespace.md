@@ -1,16 +1,9 @@
 ---
-title: "no_search_namespace | Microsoft Docs"
-ms.custom: ""
+title: "no_search_namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["no_search_namespace"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["no_search_namespace attribute"]
 ms.assetid: 482dc4a7-5acf-456a-a995-ef4ddd5f6018
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # no_search_namespace
 **C++ Specific**
@@ -27,7 +20,7 @@ no_search_namespace
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

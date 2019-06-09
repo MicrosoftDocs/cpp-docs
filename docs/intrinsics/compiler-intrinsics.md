@@ -1,15 +1,8 @@
 ---
-title: "Compiler Intrinsics | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Intrinsics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["intrinsics, compiler", "compiler intrinsics", "cl.exe compiler, performance", "cl.exe compiler, intrinsics"]
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Intrinsics
 
@@ -41,7 +34,7 @@ The following sections list all intrinsics that are available on various archite
 
 - [Alphabetical Listing of Intrinsic Functions](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
-## See Also
+## See also
 
 [ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>
 [Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Printing and Print Preview | Microsoft Docs"
-ms.custom: ""
+title: "Printing and Print Preview"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["printing [MFC]", "previewing printing", "printing [MFC]", "print preview", "printing [MFC], print preview"]
 ms.assetid: d15059cd-32de-4450-95f7-e73aece238f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Printing and Print Preview
 
@@ -25,8 +18,8 @@ This family of articles explains how printing is implemented in the Microsoft Fo
 
 - [Print preview architecture](../mfc/print-preview-architecture.md)
 
-- [Sample](../visual-cpp-samples.md)
+- [Sample](../overview/visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

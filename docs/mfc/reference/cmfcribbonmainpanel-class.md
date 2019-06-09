@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonMainPanel Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonMainPanel Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::Add", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddRecentFilesList", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToBottom", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToRight", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::GetCommandsFrame"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonMainPanel [MFC], Add", "CMFCRibbonMainPanel [MFC], AddRecentFilesList", "CMFCRibbonMainPanel [MFC], AddToBottom", "CMFCRibbonMainPanel [MFC], AddToRight", "CMFCRibbonMainPanel [MFC], GetCommandsFrame"]
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonMainPanel Class
 
@@ -151,7 +144,7 @@ CRect GetCommandsFrame() const;
 
 A rectangle that represents the area of the ribbon main panel.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

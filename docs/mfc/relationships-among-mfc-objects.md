@@ -1,15 +1,8 @@
 ---
-title: "Relationships Among MFC Objects | Microsoft Docs"
-ms.custom: ""
+title: "Relationships Among MFC Objects"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, relationships between key objects", "objects [MFC], relationships", "relationships, MFC objects", "MFC object relationships"]
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Relationships Among MFC Objects
 
@@ -43,10 +36,9 @@ Typically, a frame window has one view, but sometimes, as in splitter windows, t
 > [!NOTE]
 >  A pointer to the main frame window is stored in the [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) member variable of the application object. A call to `OnFileNew` in your override of the `InitInstance` member function of `CWinApp` sets *m_pMainWnd* for you. If you do not call `OnFileNew`, you must set the variable's value in `InitInstance` yourself. (SDI COM component (server) applications may not set the variable if /Embedding is on the command line.) Note that *m_pMainWnd* is now a member of class `CWinThread` rather than `CWinApp`.
 
-## See Also
+## See also
 
 [Document Templates and the Document/View Creation Process](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [Document Template Creation](../mfc/document-template-creation.md)<br/>
 [Document/View Creation](../mfc/document-view-creation.md)<br/>
 [Creating New Documents, Windows, and Views](../mfc/creating-new-documents-windows-and-views.md)
-

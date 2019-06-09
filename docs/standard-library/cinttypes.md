@@ -1,14 +1,7 @@
 ---
-title: "&lt;cinttypes&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cinttypes&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 18eb738c-aa74-4ed3-9cdd-049ef4c64b80
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cinttypes&gt;
 
@@ -18,7 +11,6 @@ Includes the Standard C library header \<inttypes.h>. Including this header also
 
 ```cpp
 #include <cinttypes>
-
 ```
 
 ## Remarks

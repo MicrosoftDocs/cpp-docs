@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4383 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4383"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4383"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4383"]
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4383
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 When you add a user-defined instance override of the dereference operator in a managed type, you potentially override the ability of the type's dereference operator to return the handle's object. Consider writing a static, user-defined dereference operator.
 
-For more information, see [Handle to Object Operator (^)](../../windows/handle-to-object-operator-hat-cpp-component-extensions.md) and [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).
+For more information, see [Handle to Object Operator (^)](../../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) and [Tracking Reference Operator](../../extensions/tracking-reference-operator-cpp-component-extensions.md).
 
 Also, an instance operator is not available to other language compilers via referenced metadata. For more information, see [User-Defined Operators (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
 

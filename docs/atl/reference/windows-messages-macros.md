@@ -1,15 +1,8 @@
 ---
-title: "Windows Messages Macros | Microsoft Docs"
-ms.custom: ""
+title: "Windows Messages Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::WM_FORWARDMSG"]
-dev_langs: ["C++"]
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Windows Messages Macros
 
@@ -50,6 +43,6 @@ In the following example, `m_hWndOther` represents the other window that receive
 
 [!code-cpp[NVC_ATL_Windowing#137](../../atl/codesnippet/cpp/windows-messages-macros_1.cpp)]
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

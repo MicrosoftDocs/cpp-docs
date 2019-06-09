@@ -1,16 +1,9 @@
 ---
-title: "CLongBinary Class | Microsoft Docs"
-ms.custom: ""
+title: "CLongBinary Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLongBinary class [MFC]"]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLongBinary Class
 
@@ -88,7 +81,7 @@ Stores a Windows HGLOBAL handle to the actual binary large object data.
 HGLOBAL m_hData;
 ```
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

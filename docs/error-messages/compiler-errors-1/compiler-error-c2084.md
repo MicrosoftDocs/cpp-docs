@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2084 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2084"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2084"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2084"]
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2084
 
@@ -18,7 +11,7 @@ function '*function*' already has a body
 
 The function has already been defined.
 
-In versions of Visual C++ before Visual Studio 2002,
+Before Visual Studio 2002,
 
 - The compiler would accept multiple template specializations that resolved to the same actual type, although the additional definitions would never be available. The compiler now detects these multiple definitions.
 

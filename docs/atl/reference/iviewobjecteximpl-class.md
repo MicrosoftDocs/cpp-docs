@@ -1,16 +1,9 @@
 ---
-title: "IViewObjectExImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IViewObjectExImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl", "ATLCTL/ATL::IViewObjectExImpl::Draw", "ATLCTL/ATL::IViewObjectExImpl::Freeze", "ATLCTL/ATL::IViewObjectExImpl::GetAdvise", "ATLCTL/ATL::IViewObjectExImpl::GetColorSet", "ATLCTL/ATL::IViewObjectExImpl::GetExtent", "ATLCTL/ATL::IViewObjectExImpl::GetNaturalExtent", "ATLCTL/ATL::IViewObjectExImpl::GetRect", "ATLCTL/ATL::IViewObjectExImpl::GetViewStatus", "ATLCTL/ATL::IViewObjectExImpl::QueryHitPoint", "ATLCTL/ATL::IViewObjectExImpl::QueryHitRect", "ATLCTL/ATL::IViewObjectExImpl::SetAdvise", "ATLCTL/ATL::IViewObjectExImpl::Unfreeze"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [C++], drawing", "IViewObjectEx ATL implementation", "advise sinks", "IViewObjectExImpl class"]
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IViewObjectExImpl Class
 
@@ -329,7 +322,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iviewobjecteximpl-class_2.cpp)]
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>

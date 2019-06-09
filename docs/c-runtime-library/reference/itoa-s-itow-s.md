@@ -1,19 +1,12 @@
 ---
-title: "_itoa_s, _itow_s functions | Microsoft Docs"
-ms.custom: ""
+title: "_itoa_s, _itow_s functions"
 ms.date: "03/21/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s", "_itot_s", "_ltot_s", "_ultot_s", "_i64tot_s", "_ui64tot_s", "itoa_s", "ltoa_s", "ultoa_s", "i64toa_s", "ui64toa_s", "itow_s", "ltow_s", "ultow_s", "i64tow_s", "ui64tow_s", "itot_s", "ltot_s", "ultot_s", "i64tot_s", "ui64tot_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ui64toa_s function", "_itow_s function", "_i64tow_s function", "_itot_s function", "converting integers", "itow_s function", "i64toa_s function", "_ui64tow_s function", "integers, converting", "_i64tot_s function", "itoa_s function", "_itoa_s function", "ui64toa_s function", "i64tow_s function", "converting numbers, to strings", "_ui64tot_s function", "_i64toa_s function"]
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
 

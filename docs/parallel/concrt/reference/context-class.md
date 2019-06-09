@@ -1,16 +1,9 @@
 ---
-title: "Context Class | Microsoft Docs"
-ms.custom: ""
+title: "Context Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["Context", "CONCRT/concurrency::Context", "CONCRT/concurrency::Context::Block", "CONCRT/concurrency::Context::CurrentContext", "CONCRT/concurrency::Context::GetId", "CONCRT/concurrency::Context::GetScheduleGroupId", "CONCRT/concurrency::Context::GetVirtualProcessorId", "CONCRT/concurrency::Context::Id", "CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling", "CONCRT/concurrency::Context::IsSynchronouslyBlocked", "CONCRT/concurrency::Context::Oversubscribe", "CONCRT/concurrency::Context::ScheduleGroupId", "CONCRT/concurrency::Context::Unblock", "CONCRT/concurrency::Context::VirtualProcessorId", "CONCRT/concurrency::Context::Yield"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Context class"]
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Context Class
 
@@ -288,9 +281,8 @@ This method will result in the process' default scheduler being created and/or a
 
 This function is new in Visual Studio 2015 and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)<br/>
 [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

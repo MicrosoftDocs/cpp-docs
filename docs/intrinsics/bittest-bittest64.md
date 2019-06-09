@@ -1,16 +1,9 @@
 ---
-title: "_bittest, _bittest64 | Microsoft Docs"
-ms.custom: ""
+title: "_bittest, _bittest64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_bittest intrinsic", "_bittest64 intrinsic", "bt instruction"]
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _bittest, _bittest64
 
@@ -96,6 +89,6 @@ Binary representation:
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,16 +1,9 @@
 ---
-title: "CComSafeDeleteCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComSafeDeleteCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComSafeDeleteCriticalSection class"]
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComSafeDeleteCriticalSection Class
 
@@ -145,7 +138,7 @@ Returns the result of [CComCriticalSection::Term](../../atl/reference/ccomcritic
 
 It is safe to call this method even if the internal `CRITICAL_SECTION` object is not valid. The destructor of this class calls this method if the [m_bInitialized](#m_binitialized) data member is set to TRUE.
 
-## See Also
+## See also
 
 [CComCriticalSection Class](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

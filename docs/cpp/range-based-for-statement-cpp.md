@@ -1,14 +1,7 @@
 ---
-title: "Range-based for Statement (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Range-based for Statement (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Range-based for Statement (C++)
 
@@ -18,7 +11,7 @@ Executes `statement` repeatedly and sequentially for each element in `expression
 
 ```
 for ( for-range-declaration : expression )
-   statement
+   statement
 ```
 
 ## Remarks

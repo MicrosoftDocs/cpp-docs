@@ -1,15 +1,9 @@
 ---
-title: "Types of Expressions | Microsoft Docs"
+title: "Types of Expressions"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], types"]
 ms.assetid: 1e7540b0-8fdb-49ab-b3e1-6ec439ff473a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Types of Expressions
 

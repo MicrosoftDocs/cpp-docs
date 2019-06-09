@@ -1,15 +1,8 @@
 ---
-title: "Task Parallelism (Concurrency Runtime) | Microsoft Docs"
-ms.custom: ""
+title: "Task Parallelism (Concurrency Runtime)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structured task groups [Concurrency Runtime]", "structured tasks [Concurrency Runtime]", "task groups [Concurrency Runtime]", "task parallelism", "tasks [Concurrency Runtime]"]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Task Parallelism (Concurrency Runtime)
 
@@ -18,8 +11,7 @@ In the Concurrency Runtime, a *task* is a unit of work that performs a specific 
 You use tasks when you write asynchronous code and want some operation to occur after the asynchronous operation completes. For example, you could use a task to asynchronously read from a file and then use another task—a *continuation task*, which is explained later in this document—to process the data after it becomes available. Conversely, you can use tasks groups to decompose parallel work into smaller pieces. For example, suppose you have a recursive algorithm that divides the remaining work into two partitions. You can use task groups to run these partitions concurrently, and then wait for the divided work to complete.
 
 > [!TIP]
-
->  When you want to apply the same routine to every element of a collection in parallel, use a parallel algorithm, such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), instead of a task or task group. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
+> When you want to apply the same routine to every element of a collection in parallel, use a parallel algorithm, such as [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), instead of a task or task group. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
 ## Key Points
 
@@ -201,7 +193,6 @@ Consider a UWP app that uses C++ and XAML and writes a set of files to disk. The
 1. In MainPage.xaml.cpp, implement `WriteFilesAsync` as shown in the example.
 
 > [!TIP]
-
 > `when_all` is a non-blocking function that produces a `task` as its result. Unlike [task::wait](reference/task-class.md#wait), it is safe to call this function in a UWP app on the ASTA (Application STA) thread.
 
 ###  <a name="when-any"></a> The when_any Function
@@ -225,14 +216,14 @@ As with `when_all`, it is common to use a continuation that has `when_any` to pe
 In this example, you can also specify `task<pair<int, size_t>>` to produce a task-based continuation.
 
 > [!NOTE]
->  As with `when_all`, the tasks that you pass to `when_any` must all return the same type.
+> As with `when_all`, the tasks that you pass to `when_any` must all return the same type.
 
 You can also use the `||` syntax to produce a task that completes after the first task in a set of tasks completes, as shown in the following example.
 
 `auto t = t1 || t2; // same as when_any`
 
 > [!TIP]
->  As with `when_all`, `when_any` is non-blocking and is safe to call in a UWP app on the ASTA thread.
+> As with `when_all`, `when_any` is non-blocking and is safe to call in a UWP app on the ASTA thread.
 
 ##  <a name="delayed-tasks"></a> Delayed Task Execution
 
@@ -253,8 +244,7 @@ The PPL uses the [concurrency::task_group](reference/task-group-class.md) and [c
 The PPL divides task groups into these two categories: *unstructured task groups* and *structured task groups*. The PPL uses the `task_group` class to represent unstructured task groups and the `structured_task_group` class to represent structured task groups.
 
 > [!IMPORTANT]
-
->  The PPL also defines the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm, which uses the `structured_task_group` class to execute a set of tasks in parallel. Because the `parallel_invoke` algorithm has a more succinct syntax, we recommend that you use it instead of the `structured_task_group` class when you can. The topic [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md) describes `parallel_invoke` in greater detail.
+> The PPL also defines the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm, which uses the `structured_task_group` class to execute a set of tasks in parallel. Because the `parallel_invoke` algorithm has a more succinct syntax, we recommend that you use it instead of the `structured_task_group` class when you can. The topic [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md) describes `parallel_invoke` in greater detail.
 
 Use `parallel_invoke` when you have several independent tasks that you want to execute at the same time, and you must wait for all tasks to finish before you continue. This technique is often referred to as *fork and join* parallelism. Use `task_group` when you have several independent tasks that you want to execute at the same time, but you want to wait for the tasks to finish at a later time. For example, you can add tasks to a `task_group` object and wait for the tasks to finish in another function or from another thread.
 

@@ -1,15 +1,8 @@
 ---
-title: "How to: Perform Map and Reduce Operations in Parallel | Microsoft Docs"
-ms.custom: ""
+title: "How to: Perform Map and Reduce Operations in Parallel"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parallel_transform function, example", "parallel map and reduce, example", "parallel_reduce function, example"]
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Perform Map and Reduce Operations in Parallel
 
@@ -37,7 +30,7 @@ In this example, you can use the `concurrent_unordered_map` class—which is def
 
 Typically, you parallelize only the outer or the inner loop. Parallelize the inner loop if you have relatively few files and each file contains many words. Parallelize the outer loop if you have relatively many files and each file contains few words.
 
-## See Also
+## See also
 
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_transform Function](reference/concurrency-namespace-functions.md#parallel_transform)<br/>

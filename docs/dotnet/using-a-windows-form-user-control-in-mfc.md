@@ -1,15 +1,8 @@
 ---
-title: "Using a Windows Form User Control in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Using a Windows Form User Control in MFC"
 ms.date: "1/08/2018"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "interoperability [C++], Windows Forms in MFC", "interoperability [C++], MFC", "interop [C++], Windows Forms in MFC", "interop [C++], MFC", "Windows Forms [C++], MFC support"]
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using a Windows Form User Control in MFC
 
@@ -29,7 +22,7 @@ The following sections describe how to:
 > [!NOTE]
 > When you build your application using a private (modified) copy of the MFC Windows Forms interfaces DLL (mfcmifc80.dll), it will fail to install in the GAC unless you replace the Microsoft key with your own vendor key. For more information on assembly signing, see [Programming with Assemblies](/dotnet/framework/app-domains/programming-with-assemblies) and [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
-If your MFC application uses Windows Forms, you need to redistribute mfcmifc80.dll with your application. For more information, see [Redistributing the MFC Library](../ide/redistributing-the-mfc-library.md).
+If your MFC application uses Windows Forms, you need to redistribute mfcmifc80.dll with your application. For more information, see [Redistributing the MFC Library](../windows/redistributing-the-mfc-library.md).
 
 ## In This Section
 

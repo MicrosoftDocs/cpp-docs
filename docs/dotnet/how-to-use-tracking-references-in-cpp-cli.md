@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Tracking References in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Tracking References in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLR types, passing by reference"]
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use Tracking References in C++/CLI
 
@@ -70,7 +63,7 @@ int main() {
 zip == 20100
 ```
 
-The next sample shows that taking the address of a tracking reference returns an [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md), and shows how to modify and access data through a tracking reference.
+The next sample shows that taking the address of a tracking reference returns an [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), and shows how to modify and access data through a tracking reference.
 
 ```cpp
 // tracking_reference_data.cpp
@@ -341,6 +334,6 @@ T %
 T &
 ```
 
-## See Also
+## See also
 
-[Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md)
+[Tracking Reference Operator](../extensions/tracking-reference-operator-cpp-component-extensions.md)

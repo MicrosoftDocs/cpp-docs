@@ -1,16 +1,9 @@
 ---
-title: "Ready-to-Use Map Classes | Microsoft Docs"
-ms.custom: ""
+title: "Ready-to-Use Map Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.map"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes [MFC], maps", "classes [MFC], map", "map classes [MFC]"]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Ready-to-Use Map Classes
 
@@ -37,7 +30,6 @@ Uses data of type **WORD** to find `CObject` pointers.
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
 Uses data of type **WORD** to find **void** pointers.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Transaction (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Transaction (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets [C++], updating", "transactions [C++], MFC ODBC classes", "ODBC [C++], transactions", "recordsets [C++], updating", "databases [C++], transactions", "recordsets [C++], transactions", "ODBC recordsets [C++], transactions"]
 ms.assetid: a2ec0995-2029-45f2-8092-6efd6f2a77f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction (ODBC)
 
@@ -41,6 +34,6 @@ The following topics provide more information about how transactions are perform
 
 - [Transaction: How Transactions Affect Updates (ODBC)](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1164 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1164"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1164"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1164"]
 ms.assetid: da89765c-affa-4f88-b170-6d6b19a577cf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1164
 

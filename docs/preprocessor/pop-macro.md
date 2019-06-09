@@ -1,16 +1,9 @@
 ---
-title: "pop_macro | Microsoft Docs"
-ms.custom: ""
+title: "pop_macro"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.pop_macro", "pop_macro_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pop_macro pragma", "pragmas, pop_macro"]
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # pop_macro
 Sets the value of the *macro_name* macro to the value on the top of the stack for this macro.
@@ -61,6 +54,6 @@ int main() {
 3
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

@@ -1,15 +1,8 @@
 ---
-title: "ATL Registrar and Parse Trees | Microsoft Docs"
-ms.custom: ""
+title: "ATL Registrar and Parse Trees"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["parse trees"]
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Understanding Parse Trees
 
@@ -57,7 +50,6 @@ HKEY_CLASSES_ROOT
 
 Here, the Registrar initially opens (creates) `HKEY_CLASSES_ROOT\MyVeryOwnKey`. It then sees that `MyVeryOwnKey` has a subkey. Rather than close the key to `MyVeryOwnKey`, the Registrar retains the handle and opens (creates) `HasASubKey` using this parent handle. (The system registry can be slower when no parent handle is open.) Thus, opening `HKEY_CLASSES_ROOT\MyVeryOwnKey` and then opening `HasASubKey` with `MyVeryOwnKey` as the parent is faster than opening `MyVeryOwnKey`, closing `MyVeryOwnKey`, and then opening `MyVeryOwnKey\HasASubKey`.
 
-## See Also
+## See also
 
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
-

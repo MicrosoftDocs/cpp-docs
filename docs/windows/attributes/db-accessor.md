@@ -1,16 +1,9 @@
 ---
-title: "db_accessor (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "db_accessor (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.db_accessor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["db_accessor attribute"]
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # db_accessor
 
@@ -77,6 +70,6 @@ public:
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [OLE DB Consumer Attributes](ole-db-consumer-attributes.md)

@@ -1,16 +1,9 @@
 ---
-title: "CMFCOutlookBarPane Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCOutlookBarPane Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::AddButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::CanBeAttached", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::ClearAll", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::Create", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnablePageScrollMode", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::GetRegularColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsBackgroundTexture", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsDrawShadedHighlight", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackImage", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetDefaultState", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetExtraSpace", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTextColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTransparentColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnableContextMenuItems", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveAllButtons"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBarPane [MFC], AddButton", "CMFCOutlookBarPane [MFC], CanBeAttached", "CMFCOutlookBarPane [MFC], ClearAll", "CMFCOutlookBarPane [MFC], Create", "CMFCOutlookBarPane [MFC], EnablePageScrollMode", "CMFCOutlookBarPane [MFC], GetRegularColor", "CMFCOutlookBarPane [MFC], IsBackgroundTexture", "CMFCOutlookBarPane [MFC], IsDrawShadedHighlight", "CMFCOutlookBarPane [MFC], RemoveButton", "CMFCOutlookBarPane [MFC], SetBackColor", "CMFCOutlookBarPane [MFC], SetBackImage", "CMFCOutlookBarPane [MFC], SetDefaultState", "CMFCOutlookBarPane [MFC], SetExtraSpace", "CMFCOutlookBarPane [MFC], SetTextColor", "CMFCOutlookBarPane [MFC], SetTransparentColor", "CMFCOutlookBarPane [MFC], EnableContextMenuItems", "CMFCOutlookBarPane [MFC], RemoveAllButtons"]
 ms.assetid: 094e2ef3-a118-487e-a4cc-27626108fe08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarPane Class
 
@@ -76,7 +69,7 @@ For an example of an Outlook bar, see the OutlookDemo sample project.
 
 ## Example
 
-The following example demonstrates how to use various methods of the `CMFCOutlookBarPane` class. The example shows how to create an Outlook bar pane, enable the page scroll mode, enable docking, and set the background color of the Outlook bar. This code snippet is part of the [Outlook Multi Views sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods of the `CMFCOutlookBarPane` class. The example shows how to create an Outlook bar pane, enable the page scroll mode, enable docking, and set the background color of the Outlook bar. This code snippet is part of the [Outlook Multi Views sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_OutlookMultiViews#3](../../mfc/reference/codesnippet/cpp/cmfcoutlookbarpane-class_1.h)]
 [!code-cpp[NVC_MFC_OutlookMultiViews#4](../../mfc/reference/codesnippet/cpp/cmfcoutlookbarpane-class_2.cpp)]
@@ -445,7 +438,7 @@ Specifies the new transparent color.
 
 The transparent color is required to display transparent images. Any occurrence of this color in an image is painted with the background color instead.  There is no blending of background and foreground images.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

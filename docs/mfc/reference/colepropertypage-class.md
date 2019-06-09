@@ -1,16 +1,9 @@
 ---
-title: "COlePropertyPage Class | Microsoft Docs"
-ms.custom: ""
+title: "COlePropertyPage Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COlePropertyPage", "AFXCTL/COlePropertyPage", "AFXCTL/COlePropertyPage::COlePropertyPage", "AFXCTL/COlePropertyPage::GetControlStatus", "AFXCTL/COlePropertyPage::GetObjectArray", "AFXCTL/COlePropertyPage::GetPageSite", "AFXCTL/COlePropertyPage::OVERWRITEApply", "AFXCTL/COlePropertyPage::IsModified", "AFXCTL/COlePropertyPage::OnEditProperty", "AFXCTL/COlePropertyPage::OnHelp", "AFXCTL/COlePropertyPage::OnInitDialog", "AFXCTL/COlePropertyPage::OnObjectsChanged", "AFXCTL/COlePropertyPage::OnSetPageSite", "AFXCTL/COlePropertyPage::SetControlStatus", "AFXCTL/COlePropertyPage::SetDialogResource", "AFXCTL/COlePropertyPage::SetHelpInfo", "AFXCTL/COlePropertyPage::SetModifiedFlag", "AFXCTL/COlePropertyPage::SetPageName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COlePropertyPage [MFC], COlePropertyPage", "COlePropertyPage [MFC], GetControlStatus", "COlePropertyPage [MFC], GetObjectArray", "COlePropertyPage [MFC], GetPageSite", "COlePropertyPage [MFC], IgnoreApply", "COlePropertyPage [MFC], IsModified", "COlePropertyPage [MFC], OnEditProperty", "COlePropertyPage [MFC], OnHelp", "COlePropertyPage [MFC], OnInitDialog", "COlePropertyPage [MFC], OnObjectsChanged", "COlePropertyPage [MFC], OnSetPageSite", "COlePropertyPage [MFC], SetControlStatus", "COlePropertyPage [MFC], SetDialogResource", "COlePropertyPage [MFC], SetHelpInfo", "COlePropertyPage [MFC], SetModifiedFlag", "COlePropertyPage [MFC], SetPageName"]
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COlePropertyPage Class
 
@@ -350,10 +343,10 @@ void SetPageName(LPCTSTR lpszPageName);
 *lpszPageName*<br/>
 Pointer to a string containing the property page's name.
 
-## See Also
+## See also
 
-[MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [CDialog Class](../../mfc/reference/cdialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDialog Class](../../mfc/reference/cdialog-class.md)

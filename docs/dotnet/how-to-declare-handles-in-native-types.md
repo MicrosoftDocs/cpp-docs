@@ -1,16 +1,10 @@
 ---
-title: "How to: Declare Handles in Native Types | Microsoft Docs"
+title: "How to: Declare Handles in Native Types"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
 f1_keywords: ["gcroot"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["handles, declaring", "gcroot keyword [C++]", "types [C++], declaring handles in"]
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Declare Handles in Native Types
 
@@ -109,6 +103,6 @@ int main() {
 String in V: Hello
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

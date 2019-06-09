@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Embedded Pointers Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Embedded Pointers Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["embedded pointers [C++]", "interop [C++], embedded pointers", "platform invoke [C++], embedded pointers", "marshaling [C++], embedded pointers", "data marshaling [C++], embedded pointers"]
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Embedded Pointers Using PInvoke
 
@@ -95,6 +89,6 @@ int main() {
 
 Note that no portion of the DLL is exposed to the managed code using the traditional #include directive. In fact, the DLL is accessed at run time only, so problems with functions imported with <xref:System.Runtime.InteropServices.DllImportAttribute> will not be detected at compile time.
 
-## See Also
+## See also
 
 [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

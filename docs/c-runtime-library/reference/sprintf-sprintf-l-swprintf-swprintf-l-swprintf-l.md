@@ -1,19 +1,12 @@
 ---
-title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l | Microsoft Docs"
-ms.custom: ""
+title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
@@ -65,7 +58,6 @@ int _sprintf_l(
    locale_t locale [,
    argument] ...
 ); // C++ only
-
 ```
 
 ### Parameters

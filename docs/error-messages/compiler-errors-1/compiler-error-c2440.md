@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2440 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2440"
 ms.date: "03/28/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2440"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2440"]
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2440
 
@@ -73,7 +66,6 @@ struct Derived; // Forward declaration, not defined
 Base * func(Derived * d) {
     return static_cast<Base *>(d); // error C2440: 'static_cast' : cannot convert from 'Derived *' to 'Base *'
 }
-
 ```
 
 ## Example
@@ -167,7 +159,7 @@ int main() {
 
 ## Example
 
-C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../windows/arrays-cpp-component-extensions.md).  The next sample generates C2440:
+C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md).  The next sample generates C2440:
 
 ```cpp
 // C2440e.cpp
@@ -194,7 +186,7 @@ C2440 can also occur because of changes in the attributes feature.  The followin
 
 ## Example
 
-The Visual C++ compiler no longer allows the [const_cast Operator](../../cpp/const-cast-operator.md) to down cast when source code that uses **/clr** programming is compiled.
+The Microsoft C++ compiler no longer allows the [const_cast Operator](../../cpp/const-cast-operator.md) to down cast when source code that uses **/clr** programming is compiled.
 
 To resolve this C2440, use the correct cast operator. For more information, see [Casting Operators](../../cpp/casting-operators.md).
 
@@ -238,7 +230,6 @@ int main()
 }
 
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
-
 ```
 
 ## Example

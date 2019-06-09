@@ -1,16 +1,9 @@
 ---
-title: "Adding an ATL Simple Object | Microsoft Docs"
-ms.custom: ""
+title: "Adding an ATL Simple Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.classes.adding.atl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding objects", "objects [ATL]", "ATL, simple objects"]
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an ATL Simple Object
 
@@ -30,7 +23,7 @@ You can define COM interfaces for your new ATL object when you first create it, 
 
 1. Click **Finish** to add the object to your project.
 
-## See Also
+## See also
 
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Adding a New Interface in an ATL Project](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

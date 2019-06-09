@@ -1,15 +1,8 @@
 ---
-title: "Walkthroughs (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Walkthroughs (MFC)"
 ms.date: "09/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Feature Pack, walkthroughs"]
 ms.assetid: 20d5756f-ad58-46f4-8b6c-c7a1020b72eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthroughs (MFC)
 
@@ -29,6 +22,6 @@ Demonstrates how to add a D2D object to a project and introduces how to use D2D.
 [Walkthrough: Adding Animation to an MFC Project](../mfc/walkthrough-adding-animation-to-an-mfc-project.md)<br/>
 Demonstrates how to add a graphical object to a project and introduces how to animate it.
 
-## See Also
+## See also
 
 [MFC Desktop Applications](../mfc/mfc-desktop-applications.md)

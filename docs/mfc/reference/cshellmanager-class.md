@@ -1,16 +1,9 @@
 ---
-title: "CShellManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CShellManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CShellManager", "AFXSHELLMANAGER/CShellManager", "AFXSHELLMANAGER/CShellManager::CShellManager", "AFXSHELLMANAGER/CShellManager::BrowseForFolder", "AFXSHELLMANAGER/CShellManager::ConcatenateItem", "AFXSHELLMANAGER/CShellManager::CopyItem", "AFXSHELLMANAGER/CShellManager::CreateItem", "AFXSHELLMANAGER/CShellManager::FreeItem", "AFXSHELLMANAGER/CShellManager::GetItemCount", "AFXSHELLMANAGER/CShellManager::GetItemSize", "AFXSHELLMANAGER/CShellManager::GetNextItem", "AFXSHELLMANAGER/CShellManager::GetParentItem", "AFXSHELLMANAGER/CShellManager::ItemFromPath"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CShellManager [MFC], CShellManager", "CShellManager [MFC], BrowseForFolder", "CShellManager [MFC], ConcatenateItem", "CShellManager [MFC], CopyItem", "CShellManager [MFC], CreateItem", "CShellManager [MFC], FreeItem", "CShellManager [MFC], GetItemCount", "CShellManager [MFC], GetItemSize", "CShellManager [MFC], GetNextItem", "CShellManager [MFC], GetParentItem", "CShellManager [MFC], ItemFromPath"]
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CShellManager Class
 
@@ -105,7 +98,7 @@ When you call this method, the application creates and shows a dialog box that e
 
 ### Example
 
-The following example demonstrates how to retrieve a reference to a `CShellManager` object by using the `CWinAppEx::GetShellManager` method and how to use the `BrowseForFolder` method. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).
+The following example demonstrates how to retrieve a reference to a `CShellManager` object by using the `CWinAppEx::GetShellManager` method and how to use the `BrowseForFolder` method. This code snippet is part of the [Explorer sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#6](../../mfc/reference/codesnippet/cpp/cshellmanager-class_1.cpp)]
 
@@ -301,7 +294,7 @@ HRESULT ItemFromPath(
 
 Returns NOERROR if successful; an OLE-defined error value.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)

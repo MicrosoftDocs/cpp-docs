@@ -1,16 +1,9 @@
 ---
-title: "Directory Control | Microsoft Docs"
-ms.custom: ""
+title: "Directory Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.programs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], directory", "directory control routines"]
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Directory Control
 
@@ -31,7 +24,7 @@ These routines access, modify, and obtain information about the directory struct
 |[_rmdir, _wrmdir](../c-runtime-library/reference/rmdir-wrmdir.md)|Remove directory|
 |[_searchenv, _wsearchenv](../c-runtime-library/reference/searchenv-wsearchenv.md), [_searchenv_s, _wsearchenv_s](../c-runtime-library/reference/searchenv-s-wsearchenv-s.md)|Search for given file on specified paths|
 
-## See Also
+## See also
 
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [File Handling](../c-runtime-library/file-handling.md)<br/>

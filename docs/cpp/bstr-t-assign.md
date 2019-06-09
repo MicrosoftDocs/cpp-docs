@@ -1,16 +1,9 @@
 ---
-title: "_bstr_t::Assign | Microsoft Docs"
-ms.custom: ""
+title: "_bstr_t::Assign"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Assign"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Assign method [C++]"]
 ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _bstr_t::Assign
 

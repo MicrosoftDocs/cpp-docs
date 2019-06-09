@@ -1,15 +1,8 @@
 ---
-title: "Files and Streams | Microsoft Docs"
-ms.custom: ""
+title: "Files and Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++]", "streams"]
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Files and Streams
 
@@ -39,7 +32,7 @@ Once the file is successfully opened, you can then determine whether the stream 
 
 © 1989-2001 by P.J. Plauger and Jim Brodie. All rights reserved.
 
-## See Also
+## See also
 
 [Text and Binary Streams](../c-runtime-library/text-and-binary-streams.md)<br/>
 [Byte and Wide Streams](../c-runtime-library/byte-and-wide-streams.md)<br/>

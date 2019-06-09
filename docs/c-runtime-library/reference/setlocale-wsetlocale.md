@@ -1,19 +1,12 @@
 ---
-title: "setlocale, _wsetlocale | Microsoft Docs"
-ms.custom: ""
+title: "setlocale, _wsetlocale"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wsetlocale", "setlocale"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wsetlocale function", "setlocale function", "tsetlocale function", "locales, defining", "_tsetlocale function", "defining locales", "_wsetlocale function"]
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setlocale, _wsetlocale
 
@@ -74,12 +67,12 @@ The *category* argument specifies the parts of a program's locale information th
 
 |*category* flag|Affects|
 |-|-|
-**LC_ALL**|All categories, as listed below.
-**LC_COLLATE**|The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions.
-**LC_CTYPE**|The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected).
-**LC_MONETARY**|Monetary-formatting information returned by the **localeconv** function.
-**LC_NUMERIC**|Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md).
-**LC_TIME**|The **strftime** and **wcsftime** functions.
+| **LC_ALL** | All categories, as listed below. |
+| **LC_COLLATE** | The **strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**, and **wcsxfrm** functions. |
+| **LC_CTYPE** | The character-handling functions (except **isdigit**, **isxdigit**, **mbstowcs**, and **mbtowc**, which are unaffected). |
+| **LC_MONETARY** | Monetary-formatting information returned by the **localeconv** function. |
+| **LC_NUMERIC** | Decimal-point character for the formatted output routines (such as **printf**), for the data-conversion routines, and for the non-monetary formatting information returned by **localeconv**. In addition to the decimal-point character, **LC_NUMERIC** sets the thousands separator and the grouping control string returned by [localeconv](localeconv.md). |
+| **LC_TIME** | The **strftime** and **wcsftime** functions. |
 
 This function validates the category parameter. If the category parameter is not one of the values given in the previous table, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns **NULL**.
 
@@ -249,8 +242,8 @@ int main()
     unsigned        threadID;
     unsigned char   str[BUFF_SIZE];
 
-    // Configure per-thread locale to cause all subsequently created
-    // threads to have their own locale.
+    // Enable per-thread locale causes all subsequent locale
+    // setting changes in this thread to only affect this thread.
     _configthreadlocale(_ENABLE_PER_THREAD_LOCALE);
 
     // Set the locale of the main thread to US English.

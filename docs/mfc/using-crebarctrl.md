@@ -1,16 +1,9 @@
 ---
-title: "Using CReBarCtrl | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
+title: "Using CReBarCtrl"
+ms.date: "11/19/2018"
 f1_keywords: ["CReBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CReBarCtrl
 
@@ -18,7 +11,7 @@ A rebar control acts as a container for child windows. These child windows, ofte
 
 The following illustration shows a rebar control that has two bands. One contains a gripper bar, a text label ("Address"), and a combo box child window. The other band contains a gripper bar, a text label, and a flat toolbar (implemented with a child window).
 
-![Rebar control that has two bands](../mfc/media/vc4ruz1.gif "vc4ruz1")
+![Rebar control that has two bands](../mfc/media/vc4ruz1.gif "Rebar control that has two bands")
 
 ## What do you want to know more about
 
@@ -34,7 +27,6 @@ The following illustration shows a rebar control that has two bands. One contain
 
 - [Processing Notification Messages in a Rebar Control](../mfc/processing-notification-messages-in-a-rebar-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

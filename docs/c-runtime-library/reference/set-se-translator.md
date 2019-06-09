@@ -1,19 +1,12 @@
 ---
-title: "_set_se_translator | Microsoft Docs"
-ms.custom: ""
+title: "_set_se_translator"
 ms.date: "02/21/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_set_se_translator"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_set_se_translator", "set_se_translator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["set_se_translator function", "exception handling, changing", "_set_se_translator function"]
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _set_se_translator
 
@@ -74,8 +67,9 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 #include <stdio.h>
 #include <windows.h>
 #include <eh.h>
+#include <exception>
 
-class SE_Exception
+class SE_Exception : public std::exception
 {
 private:
     unsigned int nSE;
@@ -138,6 +132,7 @@ Although the functionality provided by **_set_se_translator** is not available i
 #include <eh.h>
 #include <assert.h>
 #include <stdio.h>
+#include <exception>
 
 int thrower_func(int i) {
    int y = 0;
@@ -146,19 +141,19 @@ int thrower_func(int i) {
    return 0;
 }
 
-class CMyException{
+class SE_Exception : public std::exception {
 private:
     unsigned int nSE;
 public:
-    CMyException() : nSE{ 0 } {}
-    CMyException(unsigned int n) : nSE{ n } {}
+    SE_Exception() : nSE{ 0 } {}
+    SE_Exception(unsigned int n) : nSE{ n } {}
     unsigned int getSeNumber() { return nSE; }
 };
 
 #pragma unmanaged
 void my_trans_func(unsigned int u, PEXCEPTION_POINTERS)
 {
-    throw CMyException(u);
+    throw SE_Exception(u);
 }
 
 void DoTest()
@@ -167,9 +162,9 @@ void DoTest()
     {
         thrower_func(10);
     }
-    catch(CMyException e)
+    catch(SE_Exception& e)
     {
-        printf("Caught CMyException.\n");
+        printf("Caught SE_Exception, error %8.8x\n", e.getSeNumber());
     }
     catch(...)
     {
@@ -186,7 +181,7 @@ int main() {
 ```
 
 ```Output
-Caught CMyException, error c0000094
+Caught SE_Exception, error c0000094
 ```
 
 ## See also

@@ -1,16 +1,9 @@
 ---
-title: "-RANGE | Microsoft Docs"
-ms.custom: ""
+title: "/RANGE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/RANGE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/RANGE dumpbin option", "-RANGE dumpbin option"]
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /RANGE
 
@@ -42,6 +35,6 @@ In this example, **/range** is used to modify the display of the **/disasm** opt
 dumpbin /disasm /range:4219334,0x004061CD t.exe
 ```
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

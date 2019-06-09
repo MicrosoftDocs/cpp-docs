@@ -1,19 +1,12 @@
 ---
-title: "_ismbbkprint, _ismbbkprint_l | Microsoft Docs"
-ms.custom: ""
+title: "_ismbbkprint, _ismbbkprint_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_ismbbkprint", "_ismbbkprint_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ismbbkprint_l", "ismbbkprint", "_ismbbkprint", "ismbbkprint_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_ismbbkprint function", "ismbbkprint_l function", "ismbbkprint function", "_ismbbkprint_l function"]
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ismbbkprint, _ismbbkprint_l
 

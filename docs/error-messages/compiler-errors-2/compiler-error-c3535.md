@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3535 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3535"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3535"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3535"]
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3535
 
@@ -67,7 +60,7 @@ A x;
 auto *p = x;  // C3535
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)<br/>
 [Fundamental Types](../../cpp/fundamental-types-cpp.md)

@@ -1,15 +1,8 @@
 ---
-title: "path Class | Microsoft Docs"
-ms.custom: ""
+title: "path Class"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
-dev_langs: ["C++"]
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # path Class
 

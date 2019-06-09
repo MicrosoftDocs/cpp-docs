@@ -1,16 +1,9 @@
 ---
-title: "-RTC (Run-Time Error Checks) | Microsoft Docs"
-ms.custom: ""
+title: "/RTC (Run-Time Error Checks)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/rtc", "VC.Project.VCCLCompilerTool.SmallerTypeCheck", "VC.Project.VCCLCompilerTool.UninitializedVariableCheck", "VC.Project.VCCLCompilerTool.StackFrameCheck", "VC.Project.VCCLCompilerTool.BasicRuntimeChecks"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/RTCs compiler option [C++]", "-RTC1 compiler option [C++]", "run-time errors, error checks", "-RTCu compiler option [C++]", "/RTC1 compiler option [C++]", "/RTCc compiler option [C++]", "/RTCu compiler option [C++]", "__MSVC_RUNTIME_CHECKS macro", "-RTCs compiler option [C++]", "RTCs compiler option", "RTC1 compiler option", "run-time errors, run-time checks", "run-time checks, /RTC option", "RTCu compiler option", "RTCc compiler option", "-RTCc compiler option [C++]"]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /RTC (Run-Time Error Checks)
 
@@ -55,7 +48,7 @@ Enables stack frame run-time error checking, as follows:
 
 - Initialization of local variables to a nonzero value. This helps identify bugs that do not appear when running in debug mode. There is a greater chance that stack variables will still be zero in a debug build compared to a release build because of compiler optimizations of stack variables in a release build. Once a program has used an area of its stack, it is never reset to 0 by the compiler. Therefore, subsequent, uninitialized stack variables that happen to use the same stack area can return values left over from the prior use of this stack memory.
 
-- Detection of overruns and underruns of local variables such as arrays. **/RTC**`s` will not detect overruns when accessing memory that results from compiler padding within a structure. Padding could occur by using [align](../../cpp/align-cpp.md), [/Zp (Struct Member Alignment)](../../build/reference/zp-struct-member-alignment.md), or [pack](../../preprocessor/pack.md), or if you order structure elements in such a way as to require the compiler to add padding.
+- Detection of overruns and underruns of local variables such as arrays. **/RTC**`s` will not detect overruns when accessing memory that results from compiler padding within a structure. Padding could occur by using [align](../../cpp/align-cpp.md), [/Zp (Struct Member Alignment)](zp-struct-member-alignment.md), or [pack](../../preprocessor/pack.md), or if you order structure elements in such a way as to require the compiler to add padding.
 
 - Stack pointer verification, which detects stack pointer corruption. Stack pointer corruption can be caused by a calling convention mismatch. For example, using a function pointer, you call a function in a DLL that is exported as [__stdcall](../../cpp/stdcall.md) but you declare the pointer to the function as [__cdecl](../../cpp/cdecl.md).
 
@@ -79,13 +72,13 @@ Run-time error checks are a way for you to find problems in your running code; f
 
 If you compile your program at the command line using any of the **/RTC** compiler options, any pragma [optimize](../../preprocessor/optimize.md) instructions in your code will silently fail. This is because run-time error checks are not valid in a release (optimized) build.
 
-You should use **/RTC** for development builds; **/RTC** should not be used for a retail build. **/RTC** cannot be used with compiler optimizations ([/O Options (Optimize Code)](../../build/reference/o-options-optimize-code.md)). A program image built with **/RTC** will be slightly larger and slightly slower than an image built with **/Od** (up to 5 percent slower than an **/Od** build).
+You should use **/RTC** for development builds; **/RTC** should not be used for a retail build. **/RTC** cannot be used with compiler optimizations ([/O Options (Optimize Code)](o-options-optimize-code.md)). A program image built with **/RTC** will be slightly larger and slightly slower than an image built with **/Od** (up to 5 percent slower than an **/Od** build).
 
-The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use any **/RTC** option or [/GZ](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md).
+The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use any **/RTC** option or [/GZ](gz-enable-stack-frame-run-time-error-checking.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -97,8 +90,8 @@ The __MSVC_RUNTIME_CHECKS preprocessor directive will be defined when you use an
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> and <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> properties.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [How to: Use Native Run-Time Checks](/visualstudio/debugger/how-to-use-native-run-time-checks)

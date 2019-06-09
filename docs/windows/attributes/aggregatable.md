@@ -1,16 +1,9 @@
 ---
-title: "aggregatable (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "aggregatable (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.aggregatable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregatable attribute"]
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # aggregatable
 
@@ -78,7 +71,7 @@ class CMyClass {};
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

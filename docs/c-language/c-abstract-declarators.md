@@ -1,15 +1,8 @@
 ---
-title: "C Abstract Declarators | Microsoft Docs"
-ms.custom: ""
+title: "C Abstract Declarators"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, abstract", "abstract declarations"]
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Abstract Declarators
 
@@ -44,6 +37,6 @@ int (*const []) ( unsigned int, ... )
 > [!NOTE]
 >  The abstract declarator consisting of a set of empty parentheses, **( )**, is not allowed because it is ambiguous. It is impossible to determine whether the implied identifier belongs inside the parentheses (in which case it is an unmodified type) or before the parentheses (in which case it is a function type).
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

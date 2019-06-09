@@ -1,16 +1,9 @@
 ---
-title: "allocate | Microsoft Docs"
-ms.custom: ""
+title: "allocate"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["allocate_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], allocate", "allocate __declspec keyword"]
 ms.assetid: 67828b31-de60-4c0e-b0a6-ef3aab22641d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # allocate
 

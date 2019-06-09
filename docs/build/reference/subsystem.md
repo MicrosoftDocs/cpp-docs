@@ -1,16 +1,9 @@
 ---
-title: "-SUBSYSTEM | Microsoft Docs"
-ms.custom: ""
+title: "/SUBSYSTEM"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/subsystem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/SUBSYSTEM editbin option", "-SUBSYSTEM editbin option", "SUBSYSTEM editbin option"]
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM
 
@@ -62,10 +55,10 @@ The optional `major` and `minor` values specify the minimum required version of 
 
 - The values of `major` and `minor` must be from 0 through 65,535.
 
-The choice of subsystem affects the default starting address for the program. For more information, see [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md), the linker /ENTRY:*function* option.
+The choice of subsystem affects the default starting address for the program. For more information, see [/ENTRY (Entry-Point Symbol)](entry-entry-point-symbol.md), the linker /ENTRY:*function* option.
 
-For more information, including the minimum and default values for the major and minor version numbers for each subsystem, see the [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) linker option.
+For more information, including the minimum and default values for the major and minor version numbers for each subsystem, see the [/SUBSYSTEM](subsystem-specify-subsystem.md) linker option.
 
-## See Also
+## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

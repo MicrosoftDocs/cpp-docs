@@ -1,16 +1,9 @@
 ---
-title: "is_scalar Class | Microsoft Docs"
-ms.custom: ""
+title: "is_scalar Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_scalar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_scalar class", "is_scalar"]
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_scalar Class
 
@@ -58,7 +51,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

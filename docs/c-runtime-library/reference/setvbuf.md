@@ -1,19 +1,12 @@
 ---
-title: "setvbuf | Microsoft Docs"
-ms.custom: ""
+title: "setvbuf"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["setvbuf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["setvbuf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["controlling stream buffering", "stream buffering", "setvbuf function"]
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setvbuf
 
@@ -60,9 +53,9 @@ The mode must be **_IOFBF**, **_IOLBF**, or **_IONBF**. If *mode* is **_IOFBF** 
 
 |*mode* value|Meaning|
 |-|-|
-**_IOFBF**|Full buffering; that is, *buffer* is used as the buffer and *size* is used as the size of the buffer. If *buffer* is **NULL**, an automatically allocated buffer *size* bytes long is used.
-**_IOLBF**|For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering.
-**_IONBF**|No buffer is used, regardless of *buffer* or *size*.
+| **_IOFBF** | Full buffering; that is, *buffer* is used as the buffer and *size* is used as the size of the buffer. If *buffer* is **NULL**, an automatically allocated buffer *size* bytes long is used. |
+| **_IOLBF** | For some systems, this provides line buffering. However, for Win32, the behavior is the same as **_IOFBF** - Full Buffering. |
+| **_IONBF** | No buffer is used, regardless of *buffer* or *size*. |
 
 ## Requirements
 

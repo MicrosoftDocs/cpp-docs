@@ -1,16 +1,10 @@
 ---
-title: "auto_handle | Microsoft Docs"
-ms.custom: ""
+title: "auto_handle"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["auto_handle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["auto_handle"]
 ms.assetid: 505e967a-b75f-4bd8-8f46-57eb66c53538
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # auto_handle
 
@@ -30,6 +24,6 @@ In this header file:
 
 [swap Function (auto_handle)](../dotnet/swap-function-auto-handle.md)
 
-## See Also
+## See also
 
 [C++ Support Library](../dotnet/cpp-support-library.md)

@@ -1,16 +1,8 @@
 ---
-title: "How to: Integrate Custom Tools into the Project Properties | Microsoft Docs"
-ms.custom: ""
-ms.date: "04/27/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-f1_keywords: ["msbuild.cpp.howto.integratecustomtools"]
-dev_langs: ["C++"]
+title: "How to: Integrate Custom Tools into the Project Properties"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["msbuild (c++), howto: integrate custom tools"]
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # How to: Integrate Custom Tools into the Project Properties
 
@@ -24,18 +16,18 @@ This document explains how to create a file in a set directory that contains pro
 
 1. In the XML editor, create an XML file.
 
-1. Save the file in the Visual Studio 2017 `VCTargets\1033` folder. You will have a different path for each edition of Visual Studio 2017 that is installed and each language. For example, the folder path for Visual Studio Enterprise edition in English is `%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033`. Adjust the path for your language and Visual Studio edition. Every rule in the **Property Pages** window is represented by an XML file in this folder. Make sure that the file is uniquely named in the folder.
+1. Save the file in the Visual Studio `VCTargets\1033` folder. You will have a different path for each edition of Visual Studio that is installed and each language. For example, the default folder path for Visual Studio 2019 Community edition in English is `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VC\VCTargets`. Adjust the path for your language and Visual Studio edition. Every rule in the **Property Pages** window is represented by an XML file in this folder. Make sure that the file is uniquely named in the folder.
 
-1. Copy the content of  `%ProgramFiles%\Microsoft Visual Studio\2017\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>\cl.xml`, close it without saving changes, and then paste the content in your new XML file. You can use any XML schema file - this is just one that can be used so you start with a template.
+1. Copy the content of `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>\cl.xml` (or whatever your path is), close it without saving changes, and then paste the content in your new XML file. You can use any XML schema file - this is just one that can be used so you start with a template.
 
 1. In the new XML file, modify the content according to your requirements. Make sure to change the **Rule Name** and **Rule.DisplayName** at the top of the file.
 
 1. Save the changes and close the file.
 
-1. The XML files in `%ProgramFiles%\Microsoft Visual Studio\2017\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>` are loaded when Visual Studio starts. Therefore, to test the new file, restart Visual Studio.
+1. The XML files in `%ProgramFiles%\Microsoft Visual Studio\2019\<VS Edition>\Common7\IDE\VC\VCTargets\<LCID>` (or wherever you saved them) are loaded when Visual Studio starts. Therefore, to test the new file, restart Visual Studio.
 
 1. In **Solution Explorer**, right-click a project and then click **Properties**. In the **Property Pages** window, in the left pane, verify that there is a new node with the name of your Rule.
 
-## See Also
+## See also
 
-[MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)
+[MSBuild on the command line - C++](msbuild-visual-cpp.md)

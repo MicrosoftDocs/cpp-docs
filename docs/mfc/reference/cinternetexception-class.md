@@ -1,16 +1,9 @@
 ---
-title: "CInternetException Class | Microsoft Docs"
-ms.custom: ""
+title: "CInternetException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetException [MFC], CInternetException", "CInternetException [MFC], m_dwContext", "CInternetException [MFC], m_dwError"]
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInternetException Class
 
@@ -98,7 +91,7 @@ This error value may be a system error code, found in WINERROR.H, or an error va
 
 For a list of Win32 error codes, see [Error Codes](/windows/desktop/Debug/system-error-codes). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

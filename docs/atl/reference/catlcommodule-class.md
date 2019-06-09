@@ -1,16 +1,9 @@
 ---
-title: "CAtlComModule Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlComModule Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlComModule", "ATLBASE/ATL::CAtlComModule", "ATLBASE/ATL::CAtlComModule::CAtlComModule", "ATLBASE/ATL::CAtlComModule::RegisterServer", "ATLBASE/ATL::CAtlComModule::RegisterTypeLib", "ATLBASE/ATL::CAtlComModule::UnregisterServer", "ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlComModule class"]
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlComModule Class
 
@@ -174,7 +167,7 @@ Removes information about a type library from the system registry. If the module
 
 Returns S_OK on success, or an error HRESULT on failure.
 
-## See Also
+## See also
 
 [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

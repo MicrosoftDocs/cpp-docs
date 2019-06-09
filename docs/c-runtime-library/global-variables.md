@@ -1,16 +1,9 @@
 ---
-title: "Global Variables | Microsoft Docs"
-ms.custom: ""
+title: "Global Variables"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.variables"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["global variables", "variables, global", "global variables, Microsoft run-time library"]
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Global Variables
 
@@ -27,7 +20,7 @@ The Microsoft C run-time library provides the following global variables or macr
 |[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)|Contains information used by the character-classification functions.|
 |[_pgmptr, _wpgmptr](../c-runtime-library/pgmptr-wpgmptr.md)|Deprecated. Instead, use `_get_pgmptr` or `_get_wpgmptr`.<br /><br /> Initialized at program startup to the fully-qualified or relative path of the program, the full program name, or the program name without its file name extension, depending on how the program was invoked.|
 
-## See Also
+## See also
 
 [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [Global Constants](../c-runtime-library/global-constants.md)<br/>

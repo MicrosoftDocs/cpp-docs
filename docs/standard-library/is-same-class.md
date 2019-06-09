@@ -1,16 +1,9 @@
 ---
-title: "is_same Class | Microsoft Docs"
-ms.custom: ""
+title: "is_same Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_same"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_same class", "is_same"]
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_same Class
 
@@ -68,7 +61,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

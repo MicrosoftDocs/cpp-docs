@@ -1,15 +1,8 @@
 ---
-title: "Recordset (ODBC) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Recordset (ODBC)"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["recordsets, snapshots", "recordsets, creating", "dynamic recordsets", "forward-only recordsets", "recordsets, dynasets", "ODBC recordsets, CRecordset objects", "ODBC recordsets", "recordsets, about recordsets", "snapshots, ODBC recordsets", "dynasets"]
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset (ODBC)
 
@@ -26,10 +19,7 @@ A [CRecordset](../../mfc/reference/crecordset-class.md) object represents a set 
 An example of a recordset based on a table is "all customers," which accesses a Customer table. An example of a query is "all invoices for Joe Smith." An example of a recordset based on a stored procedure (sometimes called a predefined query) is "all of the delinquent accounts," which invokes a stored procedure in the back-end database. A recordset can join two or more tables from the same data source, but not tables from different data sources.
 
 > [!NOTE]
->  For information about deriving recordset classes with the wizards, see [Adding an MFC ODBC Consumer](../../mfc/reference/adding-an-mfc-odbc-consumer.md) and [Database Support, MFC Application Wizard](../../mfc/reference/database-support-mfc-application-wizard.md).
-
-> [!NOTE]
->  Some ODBC drivers support views of the database. A view in this sense is a query originally created with the SQL `CREATE VIEW` statement. The wizards currently do not support views, but it is possible to code this support yourself.
+>  Some ODBC drivers support views of the database. A view in this sense is a query originally created with the SQL `CREATE VIEW` statement.
 
 ##  <a name="_core_recordset_capabilities"></a> Recordset Capabilities
 
@@ -112,7 +102,7 @@ The following topics explain the details of using recordset objects. The topics 
 
 - [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>

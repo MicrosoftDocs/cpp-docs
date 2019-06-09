@@ -1,16 +1,9 @@
 ---
-title: "forward_list Class | Microsoft Docs"
-ms.custom: ""
+title: "forward_list Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["forward_list/std::forward_list", "forward_list/std::forward_list::allocator_type", "forward_list/std::forward_list::const_iterator", "forward_list/std::forward_list::const_pointer", "forward_list/std::forward_list::const_reference", "forward_list/std::forward_list::difference_type", "forward_list/std::forward_list::iterator", "forward_list/std::forward_list::pointer", "forward_list/std::forward_list::reference", "forward_list/std::forward_list::size_type", "forward_list/std::forward_list::value_type", "forward_list/std::forward_list::assign", "forward_list/std::forward_list::before_begin", "forward_list/std::forward_list::begin", "forward_list/std::forward_list::cbefore_begin", "forward_list/std::forward_list::cbegin", "forward_list/std::forward_list::cend", "forward_list/std::forward_list::clear", "forward_list/std::forward_list::emplace_after", "forward_list/std::forward_list::emplace_front", "forward_list/std::forward_list::empty", "forward_list/std::forward_list::end", "forward_list/std::forward_list::erase_after", "forward_list/std::forward_list::front", "forward_list/std::forward_list::get_allocator", "forward_list/std::forward_list::insert_after", "forward_list/std::forward_list::max_size", "forward_list/std::forward_list::merge", "forward_list/std::forward_list::pop_front", "forward_list/std::forward_list::push_front", "forward_list/std::forward_list::remove", "forward_list/std::forward_list::remove_if", "forward_list/std::forward_list::resize", "forward_list/std::forward_list::reverse", "forward_list/std::forward_list::sort", "forward_list/std::forward_list::splice_after", "forward_list/std::forward_list::swap", "forward_list/std::forward_list::unique"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::forward_list", "std::forward_list::allocator_type", "std::forward_list::const_iterator", "std::forward_list::const_pointer", "std::forward_list::const_reference", "std::forward_list::difference_type", "std::forward_list::iterator", "std::forward_list::pointer", "std::forward_list::reference", "std::forward_list::size_type", "std::forward_list::value_type", "std::forward_list::assign", "std::forward_list::before_begin", "std::forward_list::begin", "std::forward_list::cbefore_begin", "std::forward_list::cbegin", "std::forward_list::cend", "std::forward_list::clear", "std::forward_list::emplace_after", "std::forward_list::emplace_front", "std::forward_list::empty", "std::forward_list::end", "std::forward_list::erase_after", "std::forward_list::front", "std::forward_list::get_allocator", "std::forward_list::insert_after", "std::forward_list::max_size", "std::forward_list::merge", "std::forward_list::pop_front", "std::forward_list::push_front", "std::forward_list::remove", "std::forward_list::remove_if", "std::forward_list::resize", "std::forward_list::reverse", "std::forward_list::sort", "std::forward_list::splice_after", "std::forward_list::swap", "std::forward_list::unique"]
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # forward_list Class
 
@@ -134,6 +127,7 @@ void assign(InputIterator First, InputIterator Last);
 
 ### Parameters
 
+<<<<<<< HEAD
 *first*\
 The beginning of the replacement range.
 
@@ -151,6 +145,16 @@ The type of the value.
 
 *IList*\
 The initializer_list to copy.
+=======
+|Parameter|Description|
+|---------------|-----------------|
+|*first*|The beginning of the replacement range.|
+|*last*|The end of the replacement range.|
+|*count*|The number of elements to assign.|
+|*val*|The value to assign each element.|
+|*Type*|The type of the value.|
+|*IList*|The initializer_list to copy.|
+>>>>>>> 009c7ce384664f2a62ffb0bc61d6586b585ed38a
 
 ### Remarks
 

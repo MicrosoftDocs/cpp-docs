@@ -1,15 +1,8 @@
 ---
-title: "Allocating GDI Resources | Microsoft Docs"
-ms.custom: ""
+title: "Allocating GDI Resources"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Allocating GDI Resources
 
@@ -26,8 +19,7 @@ To use the GDI objects you've created, select them into the printer device conte
 
 To deallocate these GDI objects, override the [OnEndPrinting](../mfc/reference/cview-class.md#onendprinting) member function. The framework calls this function at the end of each print job, giving you the opportunity to deallocate printing-specific GDI objects before the application returns to other tasks.
 
-## See Also
+## See also
 
 [Printing](../mfc/printing.md)<br/>
 [How Default Printing Is Done](../mfc/how-default-printing-is-done.md)
-

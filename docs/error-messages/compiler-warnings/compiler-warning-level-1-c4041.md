@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4041 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4041"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4041"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4041"]
 ms.assetid: 107ee9fd-4b88-4f22-a18f-a20726831095
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4041
 

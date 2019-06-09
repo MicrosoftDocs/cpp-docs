@@ -1,15 +1,8 @@
 ---
-title: "Creating the Header Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Header Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeaderCtrl class [MFC], creating", "header controls [MFC], creating"]
 ms.assetid: 7864d9d2-4a2c-4622-b58b-7b110a1e28d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Header Control
 
@@ -39,8 +32,7 @@ In either case, the embedded control object is created when the view or dialog o
 
 For more information, see [Creating a Header Control](/windows/desktop/Controls/header-controls) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

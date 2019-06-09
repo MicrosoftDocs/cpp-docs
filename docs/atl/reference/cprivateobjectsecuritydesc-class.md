@@ -1,16 +1,9 @@
 ---
-title: "CPrivateObjectSecurityDesc Class | Microsoft Docs"
-ms.custom: ""
+title: "CPrivateObjectSecurityDesc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrivateObjectSecurityDesc class"]
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrivateObjectSecurityDesc Class
 
@@ -94,7 +87,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](https://msdn.microsoft.com/library/windows/desktop/aa376403) function.
+This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) function.
 
 ##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
 
@@ -174,7 +167,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method calls [CreatePrivateObjectSercurity](https://msdn.microsoft.com/library/windows/desktop/aa376405) or [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581).
+This method calls [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) or [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581).
 
 The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.
 
@@ -268,7 +261,7 @@ Returns true on success, false on failure.
 
 The second method permits specifying the object type GUID of the object or controlling how ACEs are inherited.
 
-## See Also
+## See also
 
 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

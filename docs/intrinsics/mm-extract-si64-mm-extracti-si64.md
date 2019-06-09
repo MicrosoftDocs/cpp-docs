@@ -1,16 +1,9 @@
 ---
-title: "_mm_extract_si64, _mm_extracti_si64 | Microsoft Docs"
-ms.custom: ""
+title: "_mm_extract_si64, _mm_extracti_si64"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_extracti_si64", "_mm_extract_si64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["extrq instruction", "_mm_extracti_si64 intrinsic", "_mm_extract_si64 intrinsic"]
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_extract_si64, _mm_extracti_si64
 
@@ -108,7 +101,7 @@ result3 = 0x30eca86
 
 Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
-## See Also
+## See also
 
 [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

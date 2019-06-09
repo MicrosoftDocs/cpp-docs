@@ -1,16 +1,9 @@
 ---
-title: "CAtlTransactionManager Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlTransactionManager Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::CAtlTransactionManager", "ATLTRANSACTIONMANAGER/ATL::Close", "ATLTRANSACTIONMANAGER/ATL::Commit", "ATLTRANSACTIONMANAGER/ATL::Create", "ATLTRANSACTIONMANAGER/ATL::CreateFile", "ATLTRANSACTIONMANAGER/ATL::DeleteFile", "ATLTRANSACTIONMANAGER/ATL::FindFirstFile", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::GetFileAttributesEx", "ATLTRANSACTIONMANAGER/ATL::GetHandle", "ATLTRANSACTIONMANAGER/ATL::IsFallback", "ATLTRANSACTIONMANAGER/ATL::MoveFile", "ATLTRANSACTIONMANAGER/ATL::RegCreateKeyEx", "ATLTRANSACTIONMANAGER/ATL::RegDeleteKey", "ATLTRANSACTIONMANAGER/ATL::RegOpenKeyEx", "ATLTRANSACTIONMANAGER/ATL::Rollback", "ATLTRANSACTIONMANAGER/ATL::SetFileAttributes", "ATLTRANSACTIONMANAGER/ATL::m_bFallback", "ATLTRANSACTIONMANAGER/ATL::m_hTransaction"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlTransactionManager class"]
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlTransactionManager Class
 
@@ -501,6 +494,6 @@ The file attributes to set for the file. For more information, see [SetFileAttri
 
 This wrapper calls the `SetFileAttributesTransacted` function.
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)

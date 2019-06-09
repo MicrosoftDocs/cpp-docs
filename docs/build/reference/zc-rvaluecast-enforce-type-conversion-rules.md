@@ -1,16 +1,9 @@
 ---
-title: "/Zc:rvalueCast (Enforce type conversion rules) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:rvalueCast (Enforce type conversion rules)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["rvaluecast", "/Zc:rvalueCast", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "rvaluecast", "Enforce type conversion rules", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: 7825277d-e565-4c48-b0fb-76ac0b0c6e38
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:rvalueCast (Enforce type conversion rules)
 
@@ -79,7 +72,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -87,4 +80,4 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>

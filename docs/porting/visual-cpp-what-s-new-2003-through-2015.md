@@ -1,21 +1,14 @@
 ---
-title: "Visual C++ What&#39;s New 2003 through 2015 | Microsoft Docs"
-ms.custom: ""
+title: "Visual C++ What&#39;s New 2003 through 2015"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Visual C++ What&#39;s New 2003 through 2015
 
-This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual C++.
+This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual Studio.
 
 > [!NOTE]
-> For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
+> For information about the current version of Visual Studio, see [What's new for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio](../overview/cpp-conformance-improvements.md).
 
 ## What's New for C++ in Visual Studio 2015
 
@@ -76,7 +69,7 @@ Although these differences can affect your source code or other build artifacts,
     };
    ```
 
-   Previous versions of the Visual C++ compiler accepted this, but now the compiler gives the following error:
+   Previous versions of the Microsoft C++ compiler accepted this, but now the compiler gives the following error:
 
    ```Output
     error C2071: 'S::r': illegal storage class
@@ -261,7 +254,7 @@ Although these differences can affect your source code or other build artifacts,
    For example, suppose your code defines both a **placement new** and a **placement delete**:
 
    ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
    ```
 
@@ -307,15 +300,15 @@ Although these differences can affect your source code or other build artifacts,
    are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in Visual Studio 2015.
 
    ```cpp
-    struct S {
-      S();
-     };
+   struct S {
+      S();
+   };
 
-     union {
-      struct {
-       S s;
-      };
-     } u; // C2280
+   union {
+      struct {
+         S s;
+      };
+   } u; // C2280
    ```
 
    The preceding code generates the following error in Visual Studio 2015:
@@ -329,14 +322,14 @@ Although these differences can affect your source code or other build artifacts,
 
    ```cpp
     struct S {
-    // Provide a default constructor by adding an empty function body.
-    S() {}
+       // Provide a default constructor by adding an empty function body.
+       S() {}
     };
 
     union {
-    struct {
-    S s;
-    };
+       struct {
+          S s;
+       };
     } u;
    ```
 
@@ -553,7 +546,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-  -or-
+  \-or-
 
    ```cpp
     class base;  // as above
@@ -587,7 +580,7 @@ Although these differences can affect your source code or other build artifacts,
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-      Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
 
 - **Calling 'operator *type*()' (user-defined conversion) on non-class types**  Previous versions of the compiler allowed 'operator *type*()' to be called on non-class types while silently ignoring it. This old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2228 instead.
 
@@ -1517,7 +1510,7 @@ Although these differences can affect your source code or other build artifacts,
 
 #### Compiler
 
-The Microsoft Visual C++ compiler supports these ISO C++11 language features:
+MSVC supports these ISO C++11 language features:
 
 - Default template arguments for function templates.
 - Delegating constructors
@@ -1674,10 +1667,10 @@ This improved support for ISO C/C++ standards may require changes to existing co
 - Scoped enumerations support. The C++ enum class enum-key is now supported. The following code demonstrates how this enum-key differs from previous enum behavior.
 
    ```cpp
-enum class Element { Hydrogen, Helium, Lithium, Beryllium };
-void func1(Element e);
-func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
-func1(Element::Helium); // OK
+  enum class Element { Hydrogen, Helium, Lithium, Beryllium };
+  void func1(Element e);
+  func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
+  func1(Element::Helium); // OK
    ```
 
 ### Windows Runtime App Development Support
@@ -1697,7 +1690,7 @@ func1(Element::Helium); // OK
 ### New in Visual Studio 2012 Update 1
 
 Target Windows XP when you build your C++ code.
-You can use the Visual C++ compiler and libraries to target Windows XP and Windows Server 2003.
+You can use the Microsoft C++ compiler and libraries to target Windows XP and Windows Server 2003.
 
 #### Parallel Programming Support
 
@@ -1788,7 +1781,7 @@ Code coverage has been updated to dynamically instrument binaries at runtime. Th
 
 **static_assert Declaration.** A **static_assert** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
 
-**nullptr and __nullptr Keywords.** The Visual C++ compiler lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
+**nullptr and __nullptr Keywords.** MSVC lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
 The Microsoft-specific **__nullptr** keyword has the same meaning as **nullptr**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **nullptr** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
 
 **/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the `/Zc:trigraphs` compiler option to enable trigraphs support.
@@ -1798,13 +1791,13 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 
 **New Common Language Runtime (CLR) Option /clr:nostdlib.** A new option is added for `/clr` (Common Language Runtime Compilation). If different versions of the same libraries are included, a compile error is issued. The new option lets you exclude the default CLR libraries so that your program can use a specified version.
 
-**New pragma directive detect_mistmatch.** The pragma directive detect_mismatch lets you put a tag in your files that is compared to other tags that have the same name. If there are multiple values for the same name, the linker issues an error.
+**New pragma directive detect_mismatch.** The pragma directive detect_mismatch lets you put a tag in your files that is compared to other tags that have the same name. If there are multiple values for the same name, the linker issues an error.
 
 **XOP Intrinsics, FMA4 Intrinsics, and LWP Intrinsics.** New intrinsic functions have been added to support the XOP Intrinsics Added for Visual Studio 2010 SP1, FMA4 Intrinsics Added for Visual Studio 2010 SP1, and LWP Intrinsics Added for Visual Studio 2010 SP1 processor technologies. Use __cpuid, __cpuidex to determine which processor technologies are supported on a particular computer.
 
-### Visual C++ Projects and the Build System
+### Visual Studio C++ projects and the Build System
 
-**MSBuild.** Visual C++ solutions and projects are now built by using MSBuild.exe, which replaces VCBuild.exe. MSBuild is the same flexible, extensible, XML-based build tool that is used by the other Visual Studio languages and project types. Because of this change, Visual C++ project files now use an XML file format and have the .vcxproj file name extension. Visual C++ project files from earlier versions of Visual Studio are automatically converted to the new file format.
+**MSBuild.** Visual C++ solutions and projects are now built by using MSBuild.exe, which replaces VCBuild.exe. MSBuild is the same flexible, extensible, XML-based build tool that is used by the other Visual Studio languages and project types. Because of this change, Visual Studio C++ project files now use an XML file format and have the .vcxproj file name extension. Visual Studio C++ project files from earlier versions of Visual Studio are automatically converted to the new file format.
 
 **VC++ Directories.** The VC++ directories setting is now located in two places. Use project property pages to set per-project values for VC++ directories. Use the **Property Manager** and a property sheet to set global, per-configuration values for VC++ directories.
 
@@ -1935,7 +1928,7 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 - Intrinsics support newer AMD and Intel processors. Several new intrinsic instructions support the greater functionality in more recent AMD and Intel processors. For more information about the new intrinsics, see **Supplemental Streaming SIMD Extensions 3 Instructions**, **Streaming SIMD Extensions 4 Instructions**, **SSE4A and Advanced Bit Manipulation Intrinsics**, **AES Intrinsics**, **_mm_clmulepi64_si128**, and **__rdtscp**.
 - The `__cpuid` function is updated. The `__cpuid`, `__cpuidex` functions now support several new features from the latest revisions of AMD and Intel processors. The `__cpuidex` intrinsic is new and gathers more information from recent processors.
 - The `/MP` compiler option reduces total build time. The `/MP` option can significantly reduce the total time to compile several source files by creating several processes that compile the files simultaneously. This option is especially useful on computers that support hyperthreading, multiple processors, or multiple cores.
-- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a Visual C++ compiler that targets a 64-bit platform.
+- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a MSVC that targets a 64-bit platform.
 - `/Qfast_transcendentals` generates inline code for transcendental functions.
 - `/Qimprecise_fwaits` removes the fwait commands internal to try blocks when you use the `/fp:except` compiler option.
 
@@ -2090,7 +2083,7 @@ The compiler has breaking changes in this release.
 - `/CLRIMAGETYPE` (Specify Type of CLR Image) linker option has been added.
 - `/CLRSUPPORTLASTERROR` (Preserve Last Error Code for PInvoke Calls) linker option has been added.
 - `/CLRTHREADATTRIBUTE` (Set CLR Thread Attribute) linker option has been added.
-- `/CLRUNMANAGEDCODECHECK` (Add SupressUnmanagedCodeSecurityAttribute) linker option has been added.
+- `/CLRUNMANAGEDCODECHECK` (Add SuppressUnmanagedCodeSecurityAttribute) linker option has been added.
 - `/ERRORREPORT` (Report Internal Linker Errors) linker option has been added.
 - `/EXETYPE` linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The EXETYPE keyword is no longer valid for module definition files.
 - `/FUNCTIONPADMIN` (Create Hotpatchable Image) linker option has been added.
@@ -2234,6 +2227,6 @@ The following linker switches have been added:
 
 The .SAFESEH directive and `/safeseh` ml.exe option were added.
 
-## See Also
+## See also
 
 [Visual C++ Porting and Upgrading Guide](visual-cpp-porting-and-upgrading-guide.md)

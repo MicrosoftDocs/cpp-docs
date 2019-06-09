@@ -1,15 +1,8 @@
 ---
-title: "Template-Based Classes | Microsoft Docs"
-ms.custom: ""
+title: "Template-Based Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type-safe collections", "CTypedPtrList class [MFC], template-based classes", "arrays [MFC], classes", "arrays [MFC], pointers", "typed pointers, collections of", "arrays [MFC], template-based", "CArray class [MFC], template-based classes", "simple template-based collections", "simple array collection classes [MFC]", "typed pointers", "collections, typed-pointer", "CList class [MFC], template-based classes", "collection classes [MFC], template-based", "CTypedPtrMap class [MFC], template-based classes", "pointers, collections of typed", "CTypedPtrArray class [MFC], template-based classes", "MFC collection classes [MFC], template-based", "template-based collection classes [MFC]", "simple list collection classes [MFC]"]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Template-Based Classes
 
@@ -94,7 +87,6 @@ The second example is a map based on `CMapStringToOb` — it uses string keys ma
 
 For more information, see [How to Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md).
 
-## See Also
+## See also
 
 [Collections](../mfc/collections.md)
-

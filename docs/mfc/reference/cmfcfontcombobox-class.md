@@ -1,16 +1,9 @@
 ---
-title: "CMFCFontComboBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCFontComboBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::CMFCFontComboBox", "AFXFONTCOMBOBOX/CMFCFontComboBox::GetSelFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::SelectFont", "AFXFONTCOMBOBOX/CMFCFontComboBox::Setup", "AFXFONTCOMBOBOX/CMFCFontComboBox::m_bDrawUsingFont"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCFontComboBox [MFC], CMFCFontComboBox", "CMFCFontComboBox [MFC], GetSelFont", "CMFCFontComboBox [MFC], SelectFont", "CMFCFontComboBox [MFC], Setup", "CMFCFontComboBox [MFC], m_bDrawUsingFont"]
 ms.assetid: 9a53fb0c-7b45-486d-8187-2a4c723d9fbb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCFontComboBox Class
 
@@ -140,7 +133,7 @@ Use this method to select and scroll to the item in the font combo box that corr
 
 ### Example
 
-The following example demonstrates how to use the `SelectFont` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `SelectFont` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#35](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_2.cpp)]
@@ -177,12 +170,12 @@ This method initializes the font combo box by enumerating the currently installe
 
 ### Example
 
-The following example demonstrates how to use the `Setup` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the `Setup` method in the `CMFCFontComboBox` class. This example is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#34](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#36](../../mfc/reference/codesnippet/cpp/cmfcfontcombobox-class_3.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

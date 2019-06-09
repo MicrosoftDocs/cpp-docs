@@ -1,16 +1,9 @@
 ---
-title: "CMetaFileDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CMetaFileDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMetaFileDC", "AFXEXT/CMetaFileDC", "AFXEXT/CMetaFileDC::CMetaFileDC", "AFXEXT/CMetaFileDC::Close", "AFXEXT/CMetaFileDC::CloseEnhanced", "AFXEXT/CMetaFileDC::Create", "AFXEXT/CMetaFileDC::CreateEnhanced"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMetaFileDC [MFC], CMetaFileDC", "CMetaFileDC [MFC], Close", "CMetaFileDC [MFC], CloseEnhanced", "CMetaFileDC [MFC], Create", "CMetaFileDC [MFC], CreateEnhanced"]
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMetaFileDC Class
 
@@ -175,7 +168,7 @@ Identifies a reference device for the enhanced metafile.
 Points to a null-terminated character string. Specifies the filename for the enhanced metafile to be created. If this parameter is NULL, the enhanced metafile is memory based and its contents lost when the object is destroyed or when the Win32 `DeleteEnhMetaFile` function is called.
 
 *lpBounds*<br/>
-Points to a [RECT](../../mfc/reference/rect-structure1.md) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
+Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
 
 *lpszDescription*<br/>
 Points to a zero-terminated string that specifies the name of the application that created the picture, as well as the picture's title.
@@ -202,8 +195,7 @@ Applications must use the Win32 `GetWinMetaFileBits` function to convert an enha
 
 The filename for the enhanced metafile should use the .EMF extension.
 
-## See Also
+## See also
 
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

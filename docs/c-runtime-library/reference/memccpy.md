@@ -1,19 +1,12 @@
 ---
-title: "_memccpy | Microsoft Docs"
-ms.custom: ""
+title: "_memccpy"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_memccpy"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_memccpy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_memccpy function", "memccpy function"]
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _memccpy
 

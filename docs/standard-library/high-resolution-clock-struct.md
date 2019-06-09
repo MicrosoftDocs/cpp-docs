@@ -2,7 +2,7 @@
 title: "high_resolution_clock struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/22/2018"
-ms.technology: ["cpp-standard-libraries"]
+ms.technology: "cpp-standard-libraries"
 ms.topic: "reference"
 f1_keywords: ["chrono/std::chrono::high_resolution_clock"]
 dev_langs: ["C++"]

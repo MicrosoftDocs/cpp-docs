@@ -1,16 +1,8 @@
 ---
-title: "TN059: Using MFC MBCS-Unicode Conversion Macros | Microsoft Docs"
-ms.custom: ""
+title: "TN059: Using MFC MBCS-Unicode Conversion Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.mbcs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN059: Using MFC MBCS/Unicode Conversion Macros
 
@@ -186,8 +178,7 @@ return lpszT; // CString makes copy
 
 The macros are easy to use and easy to insert into your code, but as you can tell from the caveats above, you need to be careful when using them.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

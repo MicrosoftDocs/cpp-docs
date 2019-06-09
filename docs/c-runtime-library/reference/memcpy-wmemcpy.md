@@ -1,19 +1,12 @@
 ---
-title: "memcpy, wmemcpy | Microsoft Docs"
-ms.custom: ""
+title: "memcpy, wmemcpy"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["memcpy", "wmemcpy"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["wmemcpy", "memcpy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wmemcpy function", "memcpy function"]
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # memcpy, wmemcpy
 

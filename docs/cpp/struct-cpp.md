@@ -1,16 +1,9 @@
 ---
-title: "struct (C++) | Microsoft Docs"
-ms.custom: ""
+title: "struct (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["struct_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["struct constructors"]
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # struct (C++)
 
@@ -19,9 +12,9 @@ The **struct** keyword defines a structure type and/or a variable of a structure
 ## Syntax
 
 ```
-[template-spec] struct[ms-decl-spec] [tag [: base-list ]]
-{ 
-   member-list 
+[template-spec] struct [ms-decl-spec] [tag [: base-list ]]
+{
+   member-list
 } [declarators];
 [struct] tag declarators;
 ```
@@ -47,7 +40,7 @@ Optional list of classes or structures this structure will derive its members fr
 List of structure members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information. The only difference here is that **struct** is used in place of **class**.
 
 *declarators*<br/>
-Declarator list specifying the names of the class. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the class are **public**. Initializer lists are common in structures because data members are **public** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
+Declarator list specifying the names of the structure. Declarator lists declare one or more instances of the structure type. Declarators may include initializer lists if all data members of the structure are **public**. Initializer lists are common in structures because data members are **public** by default.  See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
 
 ## Remarks
 
@@ -55,7 +48,7 @@ A structure type is a user-defined composite type. It is composed of fields or m
 
 In C++, a structure is the same as a class except that its members are **public** by default.
 
-For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).
+For information on managed classes and structs in C++/CLI, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## Using a Structure
 

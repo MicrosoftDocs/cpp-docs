@@ -1,16 +1,9 @@
 ---
-title: "if Statement (C) | Microsoft Docs"
-ms.custom: ""
+title: "if Statement (C)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["else", "if"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["if keyword [C]", "else clauses", "else keyword [C]", "if keyword [C], if statement syntax", "nested statements"]
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # if Statement (C)
 
@@ -65,6 +58,6 @@ else
 
 The braces surrounding the inner **if** statement in this example make the **else** clause part of the outer **if** statement. If `i` is less than or equal to 0, `i` is assigned to `x`.
 
-## See Also
+## See also
 
 [if-else Statement (C++)](../cpp/if-else-statement-cpp.md)

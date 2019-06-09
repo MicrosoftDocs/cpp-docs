@@ -1,19 +1,12 @@
 ---
-title: "_fputchar, _fputwchar | Microsoft Docs"
-ms.custom: ""
+title: "_fputchar, _fputwchar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_fputchar", "_fputwchar"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fputtchar", "_fputwchar", "fputwchar", "_fputtchar", "fputchar", "_fputchar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fputchar function", "standard output, writing to", "_fputtchar function", "fputwchar function", "_fputwchar function", "fputtchar function", "_fputchar function"]
 ms.assetid: b92ff600-a924-4f2b-b0e7-3097ee31bdff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _fputchar, _fputwchar
 

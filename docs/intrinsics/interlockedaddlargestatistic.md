@@ -1,16 +1,9 @@
 ---
-title: "_InterlockedAddLargeStatistic | Microsoft Docs"
-ms.custom: ""
+title: "_InterlockedAddLargeStatistic"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_InterlockedAddLargeStatistic", "_InterlockedAddLargeStatistic_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_InterlockedAddLargeStatistic intrinsic", "InterlockedAddLargeStatistic intrinsic"]
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _InterlockedAddLargeStatistic
 
@@ -55,7 +48,7 @@ This function behaves as a read-write barrier. For more information, see [_ReadW
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

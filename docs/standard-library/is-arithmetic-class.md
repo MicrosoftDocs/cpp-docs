@@ -1,16 +1,9 @@
 ---
-title: "is_arithmetic Class | Microsoft Docs"
-ms.custom: ""
+title: "is_arithmetic Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_arithmetic"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_arithmetic class", "is_arithmetic"]
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_arithmetic Class
 

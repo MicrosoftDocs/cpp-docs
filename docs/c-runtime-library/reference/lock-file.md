@@ -1,19 +1,12 @@
 ---
-title: "_lock_file | Microsoft Docs"
-ms.custom: ""
+title: "_lock_file"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_lock_file"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_lock_file", "lock_file"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["file locking [C++]", "_lock_file function", "lock_file function"]
 ms.assetid: 75c7e0e6-efff-4747-b6ed-9bcf2b0894c3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _lock_file
 

@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections::Vector Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::Vector Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Vector Class
 
@@ -374,7 +368,7 @@ The first element in a sequence of objects that are used to initialize the curre
 *last*<br/>
 The last element in a sequence of objects that are used to initialize the current Vector. The type of *last* is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## See Also
+## See also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

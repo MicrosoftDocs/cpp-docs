@@ -1,16 +1,9 @@
 ---
-title: "__vmx_vmptrst | Microsoft Docs"
-ms.custom: ""
+title: "__vmx_vmptrst"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__vmx_vmptrst"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__vmx_vmptrst intrinsic", "VMPTRST instruction"]
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __vmx_vmptrst
 
@@ -21,8 +14,8 @@ Stores the pointer to the current virtual-machine control structure (VMCS) at th
 ## Syntax
 
 ```
-void __vmx_vmptrst( 
-   unsigned __int64 *VmcsPhysicalAddress 
+void __vmx_vmptrst(
+   unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 
@@ -47,7 +40,7 @@ The `__vmx_vmptrst` function is equivalent to the `VMPTRST` machine instruction.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
 [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

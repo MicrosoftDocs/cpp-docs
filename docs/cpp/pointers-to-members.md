@@ -1,15 +1,8 @@
 ---
-title: "Pointers to Members | Microsoft Docs"
-ms.custom: ""
+title: "Pointers to Members"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declarations, pointers", "class members [C++], pointers to", "pointers, to members", "members [C++], pointers to", "pointers, declarations"]
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pointers to Members
 
@@ -21,28 +14,40 @@ Declarations of pointers to members are special cases of pointer declarations.  
 ```
 
 1. The declaration specifier:
-  - An optional storage class specifier.
 
-  - Optional **const** and/or **volatile** specifiers.
+   - An optional storage class specifier.
 
-  - The type specifier: the name of a type.  This is the type of the member to be pointed to, not the class.
+   - Optional **const** and/or **volatile** specifiers.
+
+   - The type specifier: the name of a type.  This is the type of the member to be pointed to, not the class.
 
 1. The declarator:
 
-  - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
-1. The qualified name of the class containing the members to be pointed to.
-  - The :: operator.
-  - The <strong>\*</strong> operator.
-  - Optional **const** and/or **volatile** specifiers.
-  - The identifier naming the pointer to member.
+   - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
-  - An optional initializer:
-  - The **=** operator.
-  - The **&** operator.
-  - The qualified name of the class.
-  - The `::` operator.
-  - The name of a nonstatic member of the class of the appropriate type.
-  - As always, multiple declarators (and any associated initializers) are allowed in a single declaration.
+   - The qualified name of the class containing the members to be pointed to.
+
+   - The __::__ operator.
+
+   - The __\*__ operator.
+
+   - Optional **const** and/or **volatile** specifiers.
+
+   - The identifier naming the pointer to member.
+
+1. An optional initializer:
+
+   - The **=** operator.
+
+   - The **&** operator.
+
+   - The qualified name of the class.
+
+   - The __::__ operator.
+
+   - The name of a nonstatic member of the class of the appropriate type.
+
+As always, multiple declarators (and any associated initializers) are allowed in a single declaration.
 
 A pointer to a member of a class differs from a normal pointer because it has type information for the type of the member and for the class to which the member belongs. A normal pointer identifies (has the address of) only a single object in memory. A pointer to a member of a class identifies that member in any instance of the class. The following example declares a class, `Window`, and some pointers to member data.
 

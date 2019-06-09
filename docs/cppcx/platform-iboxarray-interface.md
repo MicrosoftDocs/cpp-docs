@@ -1,16 +1,10 @@
 ---
-title: "Platform::IBoxArray Interface | Microsoft Docs"
-ms.custom: ""
+title: "Platform::IBoxArray Interface"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IBoxArray"]
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::IBoxArray Interface
 
@@ -63,6 +57,6 @@ Returns the value that was originally stored in this object.
 
 For an example, see [Boxing](../cppcx/boxing-c-cx.md).
 
-## See Also
+## See also
 
 [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

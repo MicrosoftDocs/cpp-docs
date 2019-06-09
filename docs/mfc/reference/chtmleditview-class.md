@@ -1,16 +1,9 @@
 ---
-title: "CHtmlEditView Class | Microsoft Docs"
-ms.custom: ""
+title: "CHtmlEditView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHtmlEditView", "AFXHTML/CHtmlEditView", "AFXHTML/CHtmlEditView::CHtmlEditView", "AFXHTML/CHtmlEditView::Create", "AFXHTML/CHtmlEditView::GetDHtmlDocument", "AFXHTML/CHtmlEditView::GetStartDocument"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlEditView [MFC], CHtmlEditView", "CHtmlEditView [MFC], Create", "CHtmlEditView [MFC], GetDHtmlDocument", "CHtmlEditView [MFC], GetStartDocument"]
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHtmlEditView Class
 
@@ -97,7 +90,7 @@ Points to a null-terminated character string that represents the window name.
 Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
 
 *pParentWnd*<br/>
 A pointer to the parent window of the control.
@@ -123,7 +116,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 ### Parameters
 
 *ppDocument*<br/>
-The [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) interface.
+The [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) interface.
 
 ##  <a name="getstartdocument"></a>  CHtmlEditView::GetStartDocument
 
@@ -133,8 +126,7 @@ Retrieves the name of the default document for this view.
 virtual LPCTSTR GetStartDocument();
 ```
 
-## See Also
+## See also
 
-[HTMLEdit Sample](../../visual-cpp-samples.md)<br/>
+[HTMLEdit Sample](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

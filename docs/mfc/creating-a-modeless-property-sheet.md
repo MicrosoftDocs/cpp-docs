@@ -1,15 +1,8 @@
 ---
-title: "Creating a Modeless Property Sheet | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Modeless Property Sheet"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["modeless property sheets", "property sheets, modeless", "Create method [MFC], property sheets"]
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a Modeless Property Sheet
 
@@ -25,9 +18,8 @@ The most convenient way to provide access to property pages within a property sh
 
 There are many user-interface alternatives for determining when the settings of the modeless property sheet should be applied to an external object. One alternative is to apply the settings of the current property page whenever the user changes any value. Another alternative is to provide an Apply button, which allows the user to accumulate changes in the property pages before committing them to the external object. For information on ways to handle the Apply button, see the article [Handling the Apply Button](../mfc/handling-the-apply-button.md).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)<br/>
 [Exchanging Data](../mfc/exchanging-data.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

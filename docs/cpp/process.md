@@ -1,16 +1,9 @@
 ---
-title: "process | Microsoft Docs"
-ms.custom: ""
+title: "process"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["process_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], process", "process __declspec keyword"]
 ms.assetid: 60eecc2f-4eef-4567-b9db-aaed34733023
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # process
 

@@ -1,16 +1,9 @@
 ---
-title: "@DataSize | Microsoft Docs"
-ms.custom: ""
+title: "@DataSize"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["@DataSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["@DataSize symbol"]
 ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @DataSize
 

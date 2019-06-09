@@ -1,15 +1,8 @@
 ---
-title: "How to: Expose an STL/CLR Container from an Assembly | Microsoft Docs"
-ms.custom: ""
+title: "How to: Expose an STL/CLR Container from an Assembly"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR Containers [STL/CLR]", "STL/CLR, cross-assembly issues"]
 ms.assetid: 87efb41b-3db3-4498-a2e7-f3ef8a99f04d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Expose an STL/CLR Container from an Assembly
 
@@ -383,6 +376,6 @@ cliext::vector contents:
 20
 ```
 
-## See Also
+## See also
 
 [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)

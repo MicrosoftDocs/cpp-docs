@@ -1,15 +1,8 @@
 ---
-title: "How the Framework Calls a Handler | Microsoft Docs"
-ms.custom: ""
+title: "How the Framework Calls a Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, command routing", "handler functions, MFC framework", "command handling [MFC], calling handlers and code in MFC", "command routing [MFC], MFC"]
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How the Framework Calls a Handler
 
@@ -27,7 +20,6 @@ The following topics first examine how the framework routes commands, then exami
 
 - [Overriding the Standard Command Routing](../mfc/overriding-the-standard-command-routing.md)
 
-## See Also
+## See also
 
 [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Scheduler Instances | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Instances"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["scheduler instances"]
 ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Instances
 
@@ -122,10 +115,9 @@ The following table shows the important methods that are defined by the `Schedul
 
 For basic examples of how to create and manage a scheduler instance, see [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [How to: Manage a Scheduler Instance](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [Scheduler Policies](../../parallel/concrt/scheduler-policies.md)<br/>
 [Schedule Groups](../../parallel/concrt/schedule-groups.md)
-

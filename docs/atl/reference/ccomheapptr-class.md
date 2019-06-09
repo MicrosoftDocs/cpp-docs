@@ -1,16 +1,9 @@
 ---
-title: "CComHeapPtr Class | Microsoft Docs"
-ms.custom: ""
+title: "CComHeapPtr Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComHeapPtr", "ATLBASE/ATL::CComHeapPtr", "ATLBASE/ATL::CComHeapPtr::CComHeapPtr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComHeapPtr class"]
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComHeapPtr Class
 
@@ -70,7 +63,7 @@ An existing `CComHeapPtr` object.
 
 The heap pointer can optionally be created using an existing `CComHeapPtr` object. If so, the new `CComHeapPtr` object assumes responsibility for managing the new pointer and resources.
 
-## See Also
+## See also
 
 [CHeapPtr Class](../../atl/reference/cheapptr-class.md)<br/>
 [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)<br/>

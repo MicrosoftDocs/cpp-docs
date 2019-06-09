@@ -1,16 +1,9 @@
 ---
-title: "CPrintDialogEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CPrintDialogEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPrintDialogEx", "AFXDLGS/CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CPrintDialogEx", "AFXDLGS/CPrintDialogEx::CreatePrinterDC", "AFXDLGS/CPrintDialogEx::DoModal", "AFXDLGS/CPrintDialogEx::GetCopies", "AFXDLGS/CPrintDialogEx::GetDefaults", "AFXDLGS/CPrintDialogEx::GetDeviceName", "AFXDLGS/CPrintDialogEx::GetDevMode", "AFXDLGS/CPrintDialogEx::GetDriverName", "AFXDLGS/CPrintDialogEx::GetPortName", "AFXDLGS/CPrintDialogEx::GetPrinterDC", "AFXDLGS/CPrintDialogEx::PrintAll", "AFXDLGS/CPrintDialogEx::PrintCollate", "AFXDLGS/CPrintDialogEx::PrintCurrentPage", "AFXDLGS/CPrintDialogEx::PrintRange", "AFXDLGS/CPrintDialogEx::PrintSelection", "AFXDLGS/CPrintDialogEx::m_pdex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintDialogEx [MFC], CPrintDialogEx", "CPrintDialogEx [MFC], CreatePrinterDC", "CPrintDialogEx [MFC], DoModal", "CPrintDialogEx [MFC], GetCopies", "CPrintDialogEx [MFC], GetDefaults", "CPrintDialogEx [MFC], GetDeviceName", "CPrintDialogEx [MFC], GetDevMode", "CPrintDialogEx [MFC], GetDriverName", "CPrintDialogEx [MFC], GetPortName", "CPrintDialogEx [MFC], GetPrinterDC", "CPrintDialogEx [MFC], PrintAll", "CPrintDialogEx [MFC], PrintCollate", "CPrintDialogEx [MFC], PrintCurrentPage", "CPrintDialogEx [MFC], PrintRange", "CPrintDialogEx [MFC], PrintSelection", "CPrintDialogEx [MFC], m_pdex"]
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrintDialogEx Class
 
@@ -121,7 +114,7 @@ This member function only constructs the object. Use the `DoModal` member functi
 
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -183,9 +176,9 @@ TRUE if successful, otherwise FALSE.
 
 ### Remarks
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
-`GetDefaults` does not display the Print property sheet. Instead, it sets the `hDevNames` and `hDevMode` members of [m_pdex](#m_pdex) to handles to the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer. Both `hDevNames` and `hDevMode` must be NULL, or `GetDefaults` fails.
+`GetDefaults` does not display the Print property sheet. Instead, it sets the `hDevNames` and `hDevMode` members of [m_pdex](#m_pdex) to handles to the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures that are initialized for the system default printer. Both `hDevNames` and `hDevMode` must be NULL, or `GetDefaults` fails.
 
 If the PD_RETURNDC flag is set, this function will not only return `hDevNames` and `hDevMode` (located in `m_pdex.hDevNames` and `m_pdex.hDevMode`) to the caller, but will also return a printer DC in `m_pdex.hDC`. It is the responsibility of the caller to delete the printer DC and call the Windows [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) function on the handles when you are finished with the `CPrintDialogEx` object.
 
@@ -339,7 +332,7 @@ BOOL PrintSelection() const;
 
 TRUE if only the selected items are to be printed; otherwise FALSE.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

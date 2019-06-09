@@ -1,16 +1,9 @@
 ---
-title: "out_of_memory Class | Microsoft Docs"
-ms.custom: ""
+title: "out_of_memory Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["out_of_memory", "AMPRT/out_of_memory", "AMPRT/Concurrency::out_of_memory::out_of_memory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["out_of_memory class"]
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # out_of_memory Class
 
@@ -65,6 +58,6 @@ A description of the error.
 
 A new instance of the `out_of_memory` class.
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

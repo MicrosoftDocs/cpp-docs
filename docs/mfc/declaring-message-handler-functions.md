@@ -1,15 +1,8 @@
 ---
-title: "Declaring Message Handler Functions | Microsoft Docs"
-ms.custom: ""
+title: "Declaring Message Handler Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["declaring functions, message handler functions [MFC]"]
 ms.assetid: f8d3dbc1-4500-4f1e-a18d-7371edf36386
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Declaring Message Handler Functions
 
@@ -23,7 +16,6 @@ Certain rules and conventions govern the names of your message-handler functions
 
 - [Handling reflected messages](../mfc/handling-reflected-messages.md)
 
-## See Also
+## See also
 
 [Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
-

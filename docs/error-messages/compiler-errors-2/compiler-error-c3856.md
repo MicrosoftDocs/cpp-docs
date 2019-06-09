@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3856 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3856"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3856"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3856"]
 ms.assetid: 242d9322-c325-4f20-be58-b2be6da56d60
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3856
 

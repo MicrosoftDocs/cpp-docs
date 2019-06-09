@@ -1,13 +1,8 @@
 ---
-title: "/Zc:ternary (Enforce conditional operator rules) | Microsoft Docs"
+title: "/Zc:ternary (Enforce conditional operator rules)"
 ms.date: "3/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/Zc:ternary"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
-author: "corob-msft"
-ms.author: "corob"
 ---
 # /Zc:ternary (Enforce conditional operator rules)
 
@@ -146,7 +141,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
@@ -154,4 +149,4 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)
+[/Zc (Conformance)](zc-conformance.md)

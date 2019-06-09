@@ -1,16 +1,9 @@
 ---
-title: "CPrimitiveElementTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CPrimitiveElementTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE", "ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPrimitiveElementTraits class"]
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPrimitiveElementTraits Class
 
@@ -75,7 +68,7 @@ The data type to use for retrieving elements from the collection class object.
 typedef T& OUTARGTYPE;
 ```
 
-## See Also
+## See also
 
 [CDefaultElementTraits Class](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

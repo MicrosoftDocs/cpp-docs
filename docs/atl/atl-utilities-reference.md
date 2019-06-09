@@ -1,14 +1,7 @@
 ---
-title: "ATL Utilities Reference | Microsoft Docs"
-ms.custom: ""
+title: "ATL Utilities Reference"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Utilities Reference
 
@@ -92,7 +85,7 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#striptoroot)|This function is an overloaded wrapper for [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota).|
 |[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#unquotespaces)|This function is an overloaded wrapper for [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa).|
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM Desktop Components](../atl/atl-com-desktop-components.md)

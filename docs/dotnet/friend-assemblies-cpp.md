@@ -1,15 +1,8 @@
 ---
-title: "Friend Assemblies (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Friend Assemblies (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["friend assemblies, Visual C++"]
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Friend Assemblies (C++)
 
@@ -47,7 +40,7 @@ Although types at namespace scope and global scope can be known to a client asse
 
 Access to all types in an assembly must be explicitly granted.  For example, assembly C does not have access to all types in assembly A if assembly C references assembly B and assembly B has access to all types in assembly A.
 
-For information about how to sign—that is, how to give a strong name to—an assembly that is built by using the Visual C++ compiler, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+For information about how to sign—that is, how to give a strong name to—an assembly that is built by using the Microsoft C++ compiler, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 As an alternative to using the friend assemblies feature, you can use <xref:System.Security.Permissions.StrongNameIdentityPermission> to restrict access to individual types.
 
@@ -184,6 +177,6 @@ int main() {
 Class1::Test_Public
 ```
 
-## See Also
+## See also
 
-[Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4484 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4484"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4484"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4484"]
 ms.assetid: 3d30e5b3-2297-45b7-a37a-1360056fdd0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4484
 
@@ -22,9 +15,9 @@ For more information, see:
 
 - [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [override](../../windows/override-cpp-component-extensions.md)
+- [override](../../extensions/override-cpp-component-extensions.md)
 
-- [new (new slot in vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md)
+- [new (new slot in vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 C4484 is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to suppress C4484.
 

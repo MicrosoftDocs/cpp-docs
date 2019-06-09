@@ -1,15 +1,8 @@
 ---
-title: "Using the Classes to Write Applications for Windows | Microsoft Docs"
-ms.custom: ""
+title: "Using the Classes to Write Applications for Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows applications [MFC], MFC application framework", "MFC, application development", "applications [OLE], MFC application framework", "MFC ActiveX controls [MFC], creating", "OLE applications [MFC], MFC application framework", "database applications [MFC], creating"]
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using the Classes to Write Applications for Windows
 
@@ -65,7 +58,6 @@ Other parts of the framework include:
 
 For a general guide to MFC documentation, see [General MFC Topics](../mfc/general-mfc-topics.md).
 
-## See Also
+## See also
 
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

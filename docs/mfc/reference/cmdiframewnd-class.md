@@ -1,16 +1,9 @@
 ---
-title: "CMDIFrameWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMDIFrameWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMDIFrameWnd", "AFXWIN/CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CreateClient", "AFXWIN/CMDIFrameWnd::CreateNewChild", "AFXWIN/CMDIFrameWnd::GetWindowMenuPopup", "AFXWIN/CMDIFrameWnd::MDIActivate", "AFXWIN/CMDIFrameWnd::MDICascade", "AFXWIN/CMDIFrameWnd::MDIGetActive", "AFXWIN/CMDIFrameWnd::MDIIconArrange", "AFXWIN/CMDIFrameWnd::MDIMaximize", "AFXWIN/CMDIFrameWnd::MDINext", "AFXWIN/CMDIFrameWnd::MDIPrev", "AFXWIN/CMDIFrameWnd::MDIRestore", "AFXWIN/CMDIFrameWnd::MDISetMenu", "AFXWIN/CMDIFrameWnd::MDITile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIFrameWnd [MFC], CMDIFrameWnd", "CMDIFrameWnd [MFC], CreateClient", "CMDIFrameWnd [MFC], CreateNewChild", "CMDIFrameWnd [MFC], GetWindowMenuPopup", "CMDIFrameWnd [MFC], MDIActivate", "CMDIFrameWnd [MFC], MDICascade", "CMDIFrameWnd [MFC], MDIGetActive", "CMDIFrameWnd [MFC], MDIIconArrange", "CMDIFrameWnd [MFC], MDIMaximize", "CMDIFrameWnd [MFC], MDINext", "CMDIFrameWnd [MFC], MDIPrev", "CMDIFrameWnd [MFC], MDIRestore", "CMDIFrameWnd [MFC], MDISetMenu", "CMDIFrameWnd [MFC], MDITile"]
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMDIFrameWnd Class
 
@@ -131,7 +124,7 @@ virtual BOOL CreateClient(
 ### Parameters
 
 *lpCreateStruct*<br/>
-A long pointer to a [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.
+A long pointer to a [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
 
 *pWindowMenu*<br/>
 A pointer to the Window pop-up menu.
@@ -428,11 +421,11 @@ The first version of `MDITile`, without parameters, tiles the windows vertically
 
 See the example for [CMDIFrameWnd::MDICascade](#mdicascade).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

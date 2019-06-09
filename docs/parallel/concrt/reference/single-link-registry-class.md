@@ -1,16 +1,9 @@
 ---
-title: "single_link_registry Class | Microsoft Docs"
-ms.custom: ""
+title: "single_link_registry Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["single_link_registry", "AGENTS/concurrency::single_link_registry", "AGENTS/concurrency::single_link_registry::single_link_registry", "AGENTS/concurrency::single_link_registry::add", "AGENTS/concurrency::single_link_registry::begin", "AGENTS/concurrency::single_link_registry::contains", "AGENTS/concurrency::single_link_registry::count", "AGENTS/concurrency::single_link_registry::remove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["single_link_registry class"]
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # single_link_registry Class
 
@@ -158,7 +151,7 @@ virtual ~single_link_registry();
 
 The method throws an [invalid_operation](invalid-operation-class.md) exception if it is called before the link is removed.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [multi_link_registry Class](multi-link-registry-class.md)

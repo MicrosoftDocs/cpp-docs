@@ -1,16 +1,9 @@
 ---
-title: "pointer_default (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "pointer_default (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.pointer_default"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer_default attribute"]
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # pointer_default
 
@@ -48,7 +41,7 @@ See the example for [defaultvalue](defaultvalue.md) for a sample use of **pointe
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Interface Attributes](interface-attributes.md)

@@ -1,16 +1,9 @@
 ---
-title: "is_nothrow_destructible Class | Microsoft Docs"
-ms.custom: ""
+title: "is_nothrow_destructible Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::is_nothrow_destructible"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_nothrow_destructible"]
 ms.assetid: 0bbd8a28-e312-4d72-bd28-aac027f974d3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_nothrow_destructible Class
 

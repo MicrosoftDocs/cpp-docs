@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning C4958 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4958"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4958"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4958"]
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4958
 
@@ -43,7 +36,7 @@ int main( ) {
 }
 ```
 
-The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).
+The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 
 The following sample generates C4958:
 

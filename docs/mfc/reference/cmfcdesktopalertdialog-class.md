@@ -1,16 +1,9 @@
 ---
-title: "CMFCDesktopAlertDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDesktopAlertDialog Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::CreateFromParams", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertDialog [MFC], CreateFromParams", "CMFCDesktopAlertDialog [MFC], GetDlgSize", "CMFCDesktopAlertDialog [MFC], HasFocus", "CMFCDesktopAlertDialog [MFC], PreTranslateMessage"]
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertDialog Class
 
@@ -117,7 +110,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

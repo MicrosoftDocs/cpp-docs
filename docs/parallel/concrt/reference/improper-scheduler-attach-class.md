@@ -1,16 +1,9 @@
 ---
-title: "improper_scheduler_attach Class | Microsoft Docs"
-ms.custom: ""
+title: "improper_scheduler_attach Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach::improper_scheduler_attach"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["improper_scheduler_attach class"]
 ms.assetid: 5a76da0a-091b-4748-8f62-b3a28f674f9e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # improper_scheduler_attach Class
 
@@ -57,7 +50,7 @@ improper_scheduler_attach() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)

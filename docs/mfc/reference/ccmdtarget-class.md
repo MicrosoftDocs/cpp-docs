@@ -1,16 +1,9 @@
 ---
-title: "CCmdTarget Class | Microsoft Docs"
-ms.custom: ""
+title: "CCmdTarget Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCmdTarget", "AFXWIN/CCmdTarget", "AFXWIN/CCmdTarget::CCmdTarget", "AFXWIN/CCmdTarget::BeginWaitCursor", "AFXWIN/CCmdTarget::DoOleVerb", "AFXWIN/CCmdTarget::EnableAutomation", "AFXWIN/CCmdTarget::EnableConnections", "AFXWIN/CCmdTarget::EnableTypeLib", "AFXWIN/CCmdTarget::EndWaitCursor", "AFXWIN/CCmdTarget::EnumOleVerbs", "AFXWIN/CCmdTarget::FromIDispatch", "AFXWIN/CCmdTarget::GetDispatchIID", "AFXWIN/CCmdTarget::GetIDispatch", "AFXWIN/CCmdTarget::GetTypeInfoCount", "AFXWIN/CCmdTarget::GetTypeInfoOfGuid", "AFXWIN/CCmdTarget::GetTypeLib", "AFXWIN/CCmdTarget::GetTypeLibCache", "AFXWIN/CCmdTarget::IsInvokeAllowed", "AFXWIN/CCmdTarget::IsResultExpected", "AFXWIN/CCmdTarget::OnCmdMsg", "AFXWIN/CCmdTarget::OnFinalRelease", "AFXWIN/CCmdTarget::RestoreWaitCursor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCmdTarget [MFC], CCmdTarget", "CCmdTarget [MFC], BeginWaitCursor", "CCmdTarget [MFC], DoOleVerb", "CCmdTarget [MFC], EnableAutomation", "CCmdTarget [MFC], EnableConnections", "CCmdTarget [MFC], EnableTypeLib", "CCmdTarget [MFC], EndWaitCursor", "CCmdTarget [MFC], EnumOleVerbs", "CCmdTarget [MFC], FromIDispatch", "CCmdTarget [MFC], GetDispatchIID", "CCmdTarget [MFC], GetIDispatch", "CCmdTarget [MFC], GetTypeInfoCount", "CCmdTarget [MFC], GetTypeInfoOfGuid", "CCmdTarget [MFC], GetTypeLib", "CCmdTarget [MFC], GetTypeLibCache", "CCmdTarget [MFC], IsInvokeAllowed", "CCmdTarget [MFC], IsResultExpected", "CCmdTarget [MFC], OnCmdMsg", "CCmdTarget [MFC], OnFinalRelease", "CCmdTarget [MFC], RestoreWaitCursor"]
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCmdTarget Class
 
@@ -122,13 +115,13 @@ BOOL DoOleVerb(
 Numerical identifier of the verb.
 
 *lpMsg*<br/>
-Pointer to the [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.
+Pointer to the [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure describing the event (such as a double-click) that invoked the verb.
 
 *hWndParent*<br/>
 Handle of the document window containing the object.
 
 *lpRect*<br/>
-Pointer to the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
+Pointer to the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.
 
 ### Return Value
 
@@ -288,7 +281,7 @@ The number of type information interfaces.
 
 ### Remarks
 
-This member function basically implements [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).
+This member function basically implements [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).
 
 Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, `GetTypeInfoCount` returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.
 
@@ -481,9 +474,9 @@ void RestoreWaitCursor();
 
 [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
+[MFC Sample ACDUAL](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>

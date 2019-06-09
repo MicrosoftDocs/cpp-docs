@@ -1,16 +1,9 @@
 ---
-title: "Data Type Mappings | Microsoft Docs"
-ms.custom: ""
+title: "Data Type Mappings"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["_TXCHAR", "_TUCHAR", "_TINT", "_TSCHAR", "_TCHAR", "TCHAR::H", "TCHAR", "_T", "_TEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "TXCHAR type", "_TSCHAR type", "T type", "_TUCHAR type", "_TEXT type", "_T type"]
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Type Mappings
 
@@ -32,7 +25,7 @@ For related information, see [Using TCHAR.H Data Types with _MBCS Code](../text/
 |`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|
 |`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts following character or string to its Unicode counterpart)|
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Constant and Global Variable Mappings](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>

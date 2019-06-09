@@ -1,16 +1,9 @@
 ---
-title: "Running as a Member of the Users Group | Microsoft Docs"
-ms.custom: ""
+title: "Running as a Member of the Users Group"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
 f1_keywords: ["PRJ0050", "VCD0047"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Users Group [C++]", "security [C++], Users Group", "Windows accounts [C++]", "non administrator users [C++]", "user accounts [C++]", "administrator (not running as) [C++]"]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Running as a Member of the Users Group
 
@@ -44,6 +37,6 @@ Generally, these actions should be limited to application installation programs.
 
 You can debug any applications that you launch within Visual Studio (native and unmanaged) as a non-administrator by becoming part of the Debugging Group. This includes the ability to attach to a running application using the Attach to Process command. However, it is necessary to be part of the Administrator Group in order to debug native or managed applications that were launched by a different user.
 
-## See Also
+## See also
 
 [Security Best Practices](security-best-practices-for-cpp.md)

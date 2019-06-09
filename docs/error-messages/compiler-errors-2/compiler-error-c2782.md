@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2782 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2782"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2782"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2782"]
 ms.assetid: 8b685422-294d-4f64-9f3d-c14eaf03a93d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2782
 

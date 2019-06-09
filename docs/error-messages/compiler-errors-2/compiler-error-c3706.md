@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3706 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3706"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3706"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3706"]
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3706
 

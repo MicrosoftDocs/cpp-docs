@@ -1,14 +1,7 @@
 ---
-title: "chrono literals | Microsoft Docs"
-ms.custom: ""
+title: "chrono literals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # chrono literals
 

@@ -1,19 +1,12 @@
 ---
-title: "feraiseexcept | Microsoft Docs"
-ms.custom: ""
+title: "feraiseexcept"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["feraiseexcept"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "HeaderDef"
 f1_keywords: ["feraiseexcept", "fenv/feraiseexcept"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["feraiseexcept function"]
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # feraiseexcept
 

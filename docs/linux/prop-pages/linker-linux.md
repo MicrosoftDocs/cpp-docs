@@ -1,14 +1,7 @@
 ---
-title: "Linker Properties (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "Linker Properties (Linux C++)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "linux"]
 ---
 # Linker Properties (Linux C++)
 
@@ -36,7 +29,7 @@ Copy Output | Specifies whether to copy the build output file from the remote sy
 Property | Description | Choices
 --- | ---| ---
 Ignore Specific Default Libraries | Specifies one or more names of default libraries to ignore. (--exclude-libs lib,lib)
-Ignore Default Libraries | Ignore default libraries and only search libraries explicitely specified.
+Ignore Default Libraries | Ignore default libraries and only search libraries explicitly specified.
 Force Undefined Symbol References | Force symbol to be entered in the output file as an undefined symbol. (-u symbol --undefined=symbol)
 Library Dependencies | This option allows specifying additional libraries to be  added to the linker command line. The additional library will be added to the end of the linker command line  prefixed with 'lib' and end with the '.a' extension.  (-lFILE)
 Additional Dependencies | Specifies additional items to add to the link command line.

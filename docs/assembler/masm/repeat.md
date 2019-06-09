@@ -1,16 +1,9 @@
 ---
-title: "REPEAT | Microsoft Docs"
-ms.custom: ""
+title: "REPEAT"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["REPEAT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["REPEAT directive"]
 ms.assetid: 26a72d91-d6b0-4d32-b5ba-4f5074e7973b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # REPEAT
 

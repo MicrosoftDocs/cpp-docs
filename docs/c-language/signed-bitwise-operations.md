@@ -1,15 +1,8 @@
 ---
-title: "Signed Bitwise Operations | Microsoft Docs"
-ms.custom: ""
+title: "Signed Bitwise Operations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bitwise operations", "signed bitwise operations"]
 ms.assetid: 1e5cf65b-ee32-41a0-a5c2-82c1854091f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Signed Bitwise Operations
 
@@ -26,6 +19,6 @@ Bitwise operations on signed integers work the same as bitwise operations on uns
 
 The result of the bitwise AND is 96.
 
-## See Also
+## See also
 
 [Integers](../c-language/integers.md)

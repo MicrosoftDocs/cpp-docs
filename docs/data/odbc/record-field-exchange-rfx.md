@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange (RFX) | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange (RFX)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (ODBC) [C++]", "data [MFC], moving between sources and recordsets", "database classes [C++], RFX", "data [MFC]", "ODBC [C++], RFX"]
 ms.assetid: f5ddfbf0-2901-48d7-9848-4fb84de3c7ee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange (RFX)
 
@@ -40,7 +33,7 @@ The following topics explain the details of using recordset objects:
 
 - [Record Field Exchange: How RFX Works](../../data/odbc/record-field-exchange-how-rfx-works.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>

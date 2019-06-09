@@ -1,16 +1,9 @@
 ---
-title: "@WordSize | Microsoft Docs"
-ms.custom: ""
+title: "@WordSize"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["@WordSize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["@WordSize symbol"]
 ms.assetid: a4fb3bf1-4f87-4306-ad4d-27d999ce2b3a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # @WordSize
 

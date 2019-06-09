@@ -1,16 +1,9 @@
 ---
-title: "CSecurityDesc Class | Microsoft Docs"
-ms.custom: ""
+title: "CSecurityDesc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::FromString", "ATLSECURITY/ATL::CSecurityDesc::GetControl", "ATLSECURITY/ATL::CSecurityDesc::GetDacl", "ATLSECURITY/ATL::CSecurityDesc::GetGroup", "ATLSECURITY/ATL::CSecurityDesc::GetOwner", "ATLSECURITY/ATL::CSecurityDesc::GetPSECURITY_DESCRIPTOR", "ATLSECURITY/ATL::CSecurityDesc::GetSacl", "ATLSECURITY/ATL::CSecurityDesc::IsDaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsDaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsDaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsDaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsGroupDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsOwnerDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsSaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsSaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::MakeAbsolute", "ATLSECURITY/ATL::CSecurityDesc::MakeSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::SetControl", "ATLSECURITY/ATL::CSecurityDesc::SetDacl", "ATLSECURITY/ATL::CSecurityDesc::SetGroup", "ATLSECURITY/ATL::CSecurityDesc::SetOwner", "ATLSECURITY/ATL::CSecurityDesc::SetSacl", "ATLSECURITY/ATL::CSecurityDesc::ToString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSecurityDesc class"]
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSecurityDesc Class
 
@@ -157,7 +150,7 @@ Returns true if the method succeeds, false if it fails.
 
 ### Remarks
 
-This method calls [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647).
+This method calls [GetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-getsecuritydescriptorcontrol).
 
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl
 
@@ -524,7 +517,7 @@ bool SetControl(
 ### Parameters
 
 *ControlBitsOfInterest*<br/>
-A SECURITY_DESCRIPTOR_CONTROL mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+A SECURITY_DESCRIPTOR_CONTROL mask that indicates the control bits to set. For a list of the flags which can be set, see [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 *ControlBitsToSet*<br/>
 A SECURITY_DESCRIPTOR_CONTROL mask that indicates the new values for the control bits specified by the *ControlBitsOfInterest* mask. This parameter can be a combination of the flags listed for the *ControlBitsOfInterest* parameter.
@@ -535,7 +528,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method calls [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582).
+This method calls [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol).
 
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl
 
@@ -672,9 +665,9 @@ If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input 
 
 This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

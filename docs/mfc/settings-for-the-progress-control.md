@@ -1,15 +1,8 @@
 ---
-title: "Settings for the Progress Control | Microsoft Docs"
-ms.custom: ""
+title: "Settings for the Progress Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CProgressCtrl class [MFC], settings", "progress controls [MFC], settings"]
 ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Settings for the Progress Control
 
@@ -21,8 +14,7 @@ To set the position, use [SetPos](../mfc/reference/cprogressctrl-class.md#setpos
 
 To step the current position of the progress control, use [StepIt](../mfc/reference/cprogressctrl-class.md#stepit). To set the amount of each step, use [SetStep](../mfc/reference/cprogressctrl-class.md#setstep)
 
-## See Also
+## See also
 
 [Using CProgressCtrl](../mfc/using-cprogressctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "External Linkage | Microsoft Docs"
-ms.custom: ""
+title: "External Linkage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["linkage [C++], external", "external linkage, about external linkage", "external linkage"]
 ms.assetid: a6f8ea69-b405-4cdd-bf12-ad5462b73183
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # External Linkage
 
@@ -19,6 +12,6 @@ If the declaration of an identifier for a function has no *storage-class-specifi
 
 An identifier's name with external linkage designates the same function or data object as does any other declaration for the same name with external linkage. The two declarations can be in the same translation unit or in different translation units. If the object or function also has global lifetime, the object or function is shared by the entire program.
 
-## See Also
+## See also
 
 [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)

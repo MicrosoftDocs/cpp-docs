@@ -1,16 +1,9 @@
 ---
-title: "OLE Container Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Container Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "container classes [MFC]", "OLE classes [MFC]", "visual editing [MFC], classes", "OLE [MFC], classes", "containers [MFC], OLE container applications"]
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Container Classes
 
@@ -42,7 +35,6 @@ Provides client-side access to an OLE item stored in a rich edit control when us
 [COleException](../mfc/reference/coleexception-class.md)<br/>
 An exception resulting from a failure in OLE processing. This class is used by both containers and servers.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

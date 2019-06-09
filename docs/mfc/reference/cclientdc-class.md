@@ -1,16 +1,9 @@
 ---
-title: "CClientDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CClientDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CClientDC", "AFXWIN/CClientDC", "AFXWIN/CClientDC::CClientDC", "AFXWIN/CClientDC::m_hWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CClientDC [MFC], CClientDC", "CClientDC [MFC], m_hWnd"]
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CClientDC Class
 
@@ -93,9 +86,9 @@ HWND m_hWnd;
 
   See the example for [CClientDC::CClientDC](#cclientdc).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDC Class](../../mfc/reference/cdc-class.md)

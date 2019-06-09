@@ -1,16 +1,9 @@
 ---
-title: "CHeaderCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CHeaderCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHeaderCtrl", "AFXCMN/CHeaderCtrl", "AFXCMN/CHeaderCtrl::CHeaderCtrl", "AFXCMN/CHeaderCtrl::ClearAllFilters", "AFXCMN/CHeaderCtrl::ClearFilter", "AFXCMN/CHeaderCtrl::Create", "AFXCMN/CHeaderCtrl::CreateDragImage", "AFXCMN/CHeaderCtrl::CreateEx", "AFXCMN/CHeaderCtrl::DeleteItem", "AFXCMN/CHeaderCtrl::DrawItem", "AFXCMN/CHeaderCtrl::EditFilter", "AFXCMN/CHeaderCtrl::GetBitmapMargin", "AFXCMN/CHeaderCtrl::GetFocusedItem", "AFXCMN/CHeaderCtrl::GetImageList", "AFXCMN/CHeaderCtrl::GetItem", "AFXCMN/CHeaderCtrl::GetItemCount", "AFXCMN/CHeaderCtrl::GetItemDropDownRect", "AFXCMN/CHeaderCtrl::GetItemRect", "AFXCMN/CHeaderCtrl::GetOrderArray", "AFXCMN/CHeaderCtrl::GetOverflowRect", "AFXCMN/CHeaderCtrl::HitTest", "AFXCMN/CHeaderCtrl::InsertItem", "AFXCMN/CHeaderCtrl::Layout", "AFXCMN/CHeaderCtrl::OrderToIndex", "AFXCMN/CHeaderCtrl::SetBitmapMargin", "AFXCMN/CHeaderCtrl::SetFilterChangeTimeout", "AFXCMN/CHeaderCtrl::SetFocusedItem", "AFXCMN/CHeaderCtrl::SetHotDivider", "AFXCMN/CHeaderCtrl::SetImageList", "AFXCMN/CHeaderCtrl::SetItem", "AFXCMN/CHeaderCtrl::SetOrderArray"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHeaderCtrl [MFC], CHeaderCtrl", "CHeaderCtrl [MFC], ClearAllFilters", "CHeaderCtrl [MFC], ClearFilter", "CHeaderCtrl [MFC], Create", "CHeaderCtrl [MFC], CreateDragImage", "CHeaderCtrl [MFC], CreateEx", "CHeaderCtrl [MFC], DeleteItem", "CHeaderCtrl [MFC], DrawItem", "CHeaderCtrl [MFC], EditFilter", "CHeaderCtrl [MFC], GetBitmapMargin", "CHeaderCtrl [MFC], GetFocusedItem", "CHeaderCtrl [MFC], GetImageList", "CHeaderCtrl [MFC], GetItem", "CHeaderCtrl [MFC], GetItemCount", "CHeaderCtrl [MFC], GetItemDropDownRect", "CHeaderCtrl [MFC], GetItemRect", "CHeaderCtrl [MFC], GetOrderArray", "CHeaderCtrl [MFC], GetOverflowRect", "CHeaderCtrl [MFC], HitTest", "CHeaderCtrl [MFC], InsertItem", "CHeaderCtrl [MFC], Layout", "CHeaderCtrl [MFC], OrderToIndex", "CHeaderCtrl [MFC], SetBitmapMargin", "CHeaderCtrl [MFC], SetFilterChangeTimeout", "CHeaderCtrl [MFC], SetFocusedItem", "CHeaderCtrl [MFC], SetHotDivider", "CHeaderCtrl [MFC], SetImageList", "CHeaderCtrl [MFC], SetItem", "CHeaderCtrl [MFC], SetOrderArray"]
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHeaderCtrl Class
 
@@ -172,7 +165,7 @@ virtual BOOL Create(
 Specifies the header control's style. For a description of header control styles, see [Header Control Styles](/windows/desktop/Controls/header-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the header control's parent window, usually a `CDialog`. It must not be NULL.
@@ -242,7 +235,7 @@ Specifies the extended style of the control being created. For a list of extende
 The header control's style. For a description of header control styles, see [Header Control Styles](/windows/desktop/Controls/header-control-styles) in the Windows SDK. See [Create](#create) for a list of additional styles.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -484,7 +477,7 @@ BOOL GetItemDropDownRect(
 |Parameter|Description|
 |---------------|-----------------|
 |*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure.|
-|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure to receive the bounding rectangle information.|
+|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.|
 
 ### Return Value
 
@@ -522,7 +515,7 @@ BOOL GetItemRect(
 The zero-based index of the header control item.
 
 *lpRect*<br/>
-A pointer to the address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.
+A pointer to the address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle information.
 
 ### Return Value
 
@@ -574,7 +567,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*lpRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle information.|
+|*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle information.|
 
 ### Return Value
 
@@ -898,7 +891,7 @@ This member function implements the behavior of the Win32 macro [HDM_SETORDERARR
 
   See the example for [CHeaderCtrl::GetOrderArray](#getorderarray).
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

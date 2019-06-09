@@ -1,16 +1,9 @@
 ---
-title: "TN043: RFX Routines | Microsoft Docs"
-ms.custom: ""
+title: "TN043: RFX Routines"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["RFX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RFX (record field exchange), architecture", "TN043", "RFX (record field exchange)"]
 ms.assetid: f552d0c1-2c83-4389-b472-42c9940aa713
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN043: RFX Routines
 
@@ -155,7 +148,7 @@ When writing your own **RFX_** function, you will often be able to use `CFieldEx
 
 It is important to call `IsFieldType` at the start of your RFX function, and return immediately if it returns FALSE. This mechanism keeps parameter operations from being performed on *outputColumns*, and vice versa (like calling `BindParam` on an *outputColumn*). In addition, `IsFieldType` automatically keeps track of the count of *outputColumns* (*m_nFields*) and params (*m_nParams*).
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)

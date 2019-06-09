@@ -1,16 +1,9 @@
 ---
-title: "-c (Compile Without Linking) | Microsoft Docs"
-ms.custom: ""
+title: "/c (Compile Without Linking)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/c"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["suppress link", "cl.exe compiler, compiling without linking", "-c compiler option [C++]", "c compiler option [C++]", "/c compiler option [C++]"]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /c (Compile Without Linking)
 
@@ -50,7 +43,7 @@ To create an executable file, you must invoke LINK:
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

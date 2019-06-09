@@ -1,15 +1,8 @@
 ---
-title: "Methods of Creating a Toolbar | Microsoft Docs"
-ms.custom: ""
+title: "Methods of Creating a Toolbar"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC], and CToolBar class [MFC]", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "toolbar controls [MFC]", "toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
 ms.assetid: f19d8d65-d49f-445c-abe8-d47d3e4101c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Methods of Creating a Toolbar
 
@@ -25,8 +18,7 @@ Visual C++ provides two ways to take advantage of the toolbar common control.
 
 Either method will give you access to the member functions of the toolbar control. When you call `CToolBar::GetToolBarCtrl`, it returns a reference to a `CToolBarCtrl` object so you can use either set of member functions. See [CToolBar](../mfc/reference/ctoolbar-class.md) for information on constructing and creating a toolbar using `CToolBar`.
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

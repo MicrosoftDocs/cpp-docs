@@ -1,15 +1,8 @@
 ---
-title: "Standard Conversions and Implicit Boxing | Microsoft Docs"
-ms.custom: ""
+title: "Standard Conversions and Implicit Boxing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["boxing, implicit"]
 ms.assetid: 33f7fc7d-5674-44a2-a859-0e6a04fae519
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Standard Conversions and Implicit Boxing
 
@@ -38,6 +31,6 @@ int main() {
 2
 ```
 
-## See Also
+## See also
 
-[Boxing](../windows/boxing-cpp-component-extensions.md)
+[Boxing](../extensions/boxing-cpp-component-extensions.md)

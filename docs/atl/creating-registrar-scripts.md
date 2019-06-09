@@ -1,17 +1,10 @@
 ---
-title: "Creating Scripts for ATL Registrar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Creating scripts for ATL Registrar"
+ms.date: "05/14/2014"
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "scripts, Registrar scripts", "scripts, creating"]
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-# Creating Registrar Scripts
+# Creating Registrar scripts
 
 A registrar script provides data-driven, rather than API-driven, access to the system registry. Data-driven access is typically more efficient since it takes only one or two lines in a script to add a key to the registry.
 
@@ -21,7 +14,7 @@ The ATL Registrar's Script Engine processes your registrar script at run time. A
 
 This article covers the following topics related to the registrar scripts:
 
-- [Understanding Backus Nauer Form (BNF) Syntax](../atl/understanding-backus-nauer-form-bnf-syntax.md)
+- [Understanding Backus-Naur form (BNF) syntax](../atl/understanding-backus-naur-form-bnf-syntax.md)
 
 - [Understanding Parse Trees](../atl/understanding-parse-trees.md)
 
@@ -31,7 +24,6 @@ This article covers the following topics related to the registrar scripts:
 
 - [Invoking Scripts](../atl/invoking-scripts.md)
 
-## See Also
+## See also
 
 [Registry Component (Registrar)](../atl/atl-registry-component-registrar.md)
-

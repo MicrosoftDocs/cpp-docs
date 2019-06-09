@@ -1,15 +1,8 @@
 ---
-title: "Creating the Image Lists | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Image Lists"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl class [MFC], creating image lists for", "image lists [MFC], creating for CListCtrl", "lists [MFC], image"]
 ms.assetid: c2768515-deba-49e8-a6f3-5be6482afb19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Image Lists
 
@@ -22,8 +15,7 @@ Use class `CImageList` to create one or more image lists (for full-size icons, s
 
 Call [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) for each image list; pass a pointer to the appropriate `CImageList` object.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

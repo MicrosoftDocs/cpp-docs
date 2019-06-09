@@ -1,15 +1,8 @@
 ---
-title: "Interface Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Interface Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "interface attributes"]
 ms.assetid: 27fcdfee-abce-4585-8b53-ee31635356e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Interface Attributes
 
@@ -49,6 +42,6 @@ You must observe these rules for defining an interface:
 
 When not specifying the [uuid](uuid-cpp-attributes.md) attribute and using the same interface name in different attribute projects, the same GUID is generated.
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

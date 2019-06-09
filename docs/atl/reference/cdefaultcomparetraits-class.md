@@ -1,16 +1,9 @@
 ---
-title: "CDefaultCompareTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CDefaultCompareTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElements", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultCompareTraits class"]
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDefaultCompareTraits Class
 
@@ -101,6 +94,6 @@ Returns an integer based on the following table:
 
 The default implementation of this function uses the **==**, **\<**, and **>** operators. For objects other than simple data types, this function may need to be overridden.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

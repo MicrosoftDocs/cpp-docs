@@ -1,16 +1,9 @@
 ---
-title: "CListCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CListCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CListCtrl", "AFXCMN/CListCtrl", "AFXCMN/CListCtrl::CListCtrl", "AFXCMN/CListCtrl::ApproximateViewRect", "AFXCMN/CListCtrl::Arrange", "AFXCMN/CListCtrl::CancelEditLabel", "AFXCMN/CListCtrl::Create", "AFXCMN/CListCtrl::CreateDragImage", "AFXCMN/CListCtrl::CreateEx", "AFXCMN/CListCtrl::DeleteAllItems", "AFXCMN/CListCtrl::DeleteColumn", "AFXCMN/CListCtrl::DeleteItem", "AFXCMN/CListCtrl::DrawItem", "AFXCMN/CListCtrl::EditLabel", "AFXCMN/CListCtrl::EnableGroupView", "AFXCMN/CListCtrl::EnsureVisible", "AFXCMN/CListCtrl::FindItem", "AFXCMN/CListCtrl::GetBkColor", "AFXCMN/CListCtrl::GetBkImage", "AFXCMN/CListCtrl::GetCallbackMask", "AFXCMN/CListCtrl::GetCheck", "AFXCMN/CListCtrl::GetColumn", "AFXCMN/CListCtrl::GetColumnOrderArray", "AFXCMN/CListCtrl::GetColumnWidth", "AFXCMN/CListCtrl::GetCountPerPage", "AFXCMN/CListCtrl::GetEditControl", "AFXCMN/CListCtrl::GetEmptyText", "AFXCMN/CListCtrl::GetExtendedStyle", "AFXCMN/CListCtrl::GetFirstSelectedItemPosition", "AFXCMN/CListCtrl::GetFocusedGroup", "AFXCMN/CListCtrl::GetGroupCount", "AFXCMN/CListCtrl::GetGroupInfo", "AFXCMN/CListCtrl::GetGroupInfoByIndex", "AFXCMN/CListCtrl::GetGroupMetrics", "AFXCMN/CListCtrl::GetGroupRect", "AFXCMN/CListCtrl::GetGroupState", "AFXCMN/CListCtrl::GetHeaderCtrl", "AFXCMN/CListCtrl::GetHotCursor", "AFXCMN/CListCtrl::GetHotItem", "AFXCMN/CListCtrl::GetHoverTime", "AFXCMN/CListCtrl::GetImageList", "AFXCMN/CListCtrl::GetInsertMark", "AFXCMN/CListCtrl::GetInsertMarkColor", "AFXCMN/CListCtrl::GetInsertMarkRect", "AFXCMN/CListCtrl::GetItem", "AFXCMN/CListCtrl::GetItemCount", "AFXCMN/CListCtrl::GetItemData", "AFXCMN/CListCtrl::GetItemIndexRect", "AFXCMN/CListCtrl::GetItemPosition", "AFXCMN/CListCtrl::GetItemRect", "AFXCMN/CListCtrl::GetItemSpacing", "AFXCMN/CListCtrl::GetItemState", "AFXCMN/CListCtrl::GetItemText", "AFXCMN/CListCtrl::GetNextItem", "AFXCMN/CListCtrl::GetNextItemIndex", "AFXCMN/CListCtrl::GetNextSelectedItem", "AFXCMN/CListCtrl::GetNumberOfWorkAreas", "AFXCMN/CListCtrl::GetOrigin", "AFXCMN/CListCtrl::GetOutlineColor", "AFXCMN/CListCtrl::GetSelectedColumn", "AFXCMN/CListCtrl::GetSelectedCount", "AFXCMN/CListCtrl::GetSelectionMark", "AFXCMN/CListCtrl::GetStringWidth", "AFXCMN/CListCtrl::GetSubItemRect", "AFXCMN/CListCtrl::GetTextBkColor", "AFXCMN/CListCtrl::GetTextColor", "AFXCMN/CListCtrl::GetTileInfo", "AFXCMN/CListCtrl::GetTileViewInfo", "AFXCMN/CListCtrl::GetToolTips", "AFXCMN/CListCtrl::GetTopIndex", "AFXCMN/CListCtrl::GetView", "AFXCMN/CListCtrl::GetViewRect", "AFXCMN/CListCtrl::GetWorkAreas", "AFXCMN/CListCtrl::HasGroup", "AFXCMN/CListCtrl::HitTest", "AFXCMN/CListCtrl::InsertColumn", "AFXCMN/CListCtrl::InsertGroup", "AFXCMN/CListCtrl::InsertGroupSorted", "AFXCMN/CListCtrl::InsertItem", "AFXCMN/CListCtrl::InsertMarkHitTest", "AFXCMN/CListCtrl::IsGroupViewEnabled", "AFXCMN/CListCtrl::IsItemVisible", "AFXCMN/CListCtrl::MapIDToIndex", "AFXCMN/CListCtrl::MapIndexToID", "AFXCMN/CListCtrl::MoveGroup", "AFXCMN/CListCtrl::MoveItemToGroup", "AFXCMN/CListCtrl::RedrawItems", "AFXCMN/CListCtrl::RemoveAllGroups", "AFXCMN/CListCtrl::RemoveGroup", "AFXCMN/CListCtrl::Scroll", "AFXCMN/CListCtrl::SetBkColor", "AFXCMN/CListCtrl::SetBkImage", "AFXCMN/CListCtrl::SetCallbackMask", "AFXCMN/CListCtrl::SetCheck", "AFXCMN/CListCtrl::SetColumn", "AFXCMN/CListCtrl::SetColumnOrderArray", "AFXCMN/CListCtrl::SetColumnWidth", "AFXCMN/CListCtrl::SetExtendedStyle", "AFXCMN/CListCtrl::SetGroupInfo", "AFXCMN/CListCtrl::SetGroupMetrics", "AFXCMN/CListCtrl::SetHotCursor", "AFXCMN/CListCtrl::SetHotItem", "AFXCMN/CListCtrl::SetHoverTime", "AFXCMN/CListCtrl::SetIconSpacing", "AFXCMN/CListCtrl::SetImageList", "AFXCMN/CListCtrl::SetInfoTip", "AFXCMN/CListCtrl::SetInsertMark", "AFXCMN/CListCtrl::SetInsertMarkColor", "AFXCMN/CListCtrl::SetItem", "AFXCMN/CListCtrl::SetItemCount", "AFXCMN/CListCtrl::SetItemCountEx", "AFXCMN/CListCtrl::SetItemData", "AFXCMN/CListCtrl::SetItemIndexState", "AFXCMN/CListCtrl::SetItemPosition", "AFXCMN/CListCtrl::SetItemState", "AFXCMN/CListCtrl::SetItemText", "AFXCMN/CListCtrl::SetOutlineColor", "AFXCMN/CListCtrl::SetSelectedColumn", "AFXCMN/CListCtrl::SetSelectionMark", "AFXCMN/CListCtrl::SetTextBkColor", "AFXCMN/CListCtrl::SetTextColor", "AFXCMN/CListCtrl::SetTileInfo", "AFXCMN/CListCtrl::SetTileViewInfo", "AFXCMN/CListCtrl::SetToolTips", "AFXCMN/CListCtrl::SetView", "AFXCMN/CListCtrl::SetWorkAreas", "AFXCMN/CListCtrl::SortGroups", "AFXCMN/CListCtrl::SortItems", "AFXCMN/CListCtrl::SortItemsEx", "AFXCMN/CListCtrl::SubItemHitTest", "AFXCMN/CListCtrl::Update"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListCtrl [MFC], CListCtrl", "CListCtrl [MFC], ApproximateViewRect", "CListCtrl [MFC], Arrange", "CListCtrl [MFC], CancelEditLabel", "CListCtrl [MFC], Create", "CListCtrl [MFC], CreateDragImage", "CListCtrl [MFC], CreateEx", "CListCtrl [MFC], DeleteAllItems", "CListCtrl [MFC], DeleteColumn", "CListCtrl [MFC], DeleteItem", "CListCtrl [MFC], DrawItem", "CListCtrl [MFC], EditLabel", "CListCtrl [MFC], EnableGroupView", "CListCtrl [MFC], EnsureVisible", "CListCtrl [MFC], FindItem", "CListCtrl [MFC], GetBkColor", "CListCtrl [MFC], GetBkImage", "CListCtrl [MFC], GetCallbackMask", "CListCtrl [MFC], GetCheck", "CListCtrl [MFC], GetColumn", "CListCtrl [MFC], GetColumnOrderArray", "CListCtrl [MFC], GetColumnWidth", "CListCtrl [MFC], GetCountPerPage", "CListCtrl [MFC], GetEditControl", "CListCtrl [MFC], GetEmptyText", "CListCtrl [MFC], GetExtendedStyle", "CListCtrl [MFC], GetFirstSelectedItemPosition", "CListCtrl [MFC], GetFocusedGroup", "CListCtrl [MFC], GetGroupCount", "CListCtrl [MFC], GetGroupInfo", "CListCtrl [MFC], GetGroupInfoByIndex", "CListCtrl [MFC], GetGroupMetrics", "CListCtrl [MFC], GetGroupRect", "CListCtrl [MFC], GetGroupState", "CListCtrl [MFC], GetHeaderCtrl", "CListCtrl [MFC], GetHotCursor", "CListCtrl [MFC], GetHotItem", "CListCtrl [MFC], GetHoverTime", "CListCtrl [MFC], GetImageList", "CListCtrl [MFC], GetInsertMark", "CListCtrl [MFC], GetInsertMarkColor", "CListCtrl [MFC], GetInsertMarkRect", "CListCtrl [MFC], GetItem", "CListCtrl [MFC], GetItemCount", "CListCtrl [MFC], GetItemData", "CListCtrl [MFC], GetItemIndexRect", "CListCtrl [MFC], GetItemPosition", "CListCtrl [MFC], GetItemRect", "CListCtrl [MFC], GetItemSpacing", "CListCtrl [MFC], GetItemState", "CListCtrl [MFC], GetItemText", "CListCtrl [MFC], GetNextItem", "CListCtrl [MFC], GetNextItemIndex", "CListCtrl [MFC], GetNextSelectedItem", "CListCtrl [MFC], GetNumberOfWorkAreas", "CListCtrl [MFC], GetOrigin", "CListCtrl [MFC], GetOutlineColor", "CListCtrl [MFC], GetSelectedColumn", "CListCtrl [MFC], GetSelectedCount", "CListCtrl [MFC], GetSelectionMark", "CListCtrl [MFC], GetStringWidth", "CListCtrl [MFC], GetSubItemRect", "CListCtrl [MFC], GetTextBkColor", "CListCtrl [MFC], GetTextColor", "CListCtrl [MFC], GetTileInfo", "CListCtrl [MFC], GetTileViewInfo", "CListCtrl [MFC], GetToolTips", "CListCtrl [MFC], GetTopIndex", "CListCtrl [MFC], GetView", "CListCtrl [MFC], GetViewRect", "CListCtrl [MFC], GetWorkAreas", "CListCtrl [MFC], HasGroup", "CListCtrl [MFC], HitTest", "CListCtrl [MFC], InsertColumn", "CListCtrl [MFC], InsertGroup", "CListCtrl [MFC], InsertGroupSorted", "CListCtrl [MFC], InsertItem", "CListCtrl [MFC], InsertMarkHitTest", "CListCtrl [MFC], IsGroupViewEnabled", "CListCtrl [MFC], IsItemVisible", "CListCtrl [MFC], MapIDToIndex", "CListCtrl [MFC], MapIndexToID", "CListCtrl [MFC], MoveGroup", "CListCtrl [MFC], MoveItemToGroup", "CListCtrl [MFC], RedrawItems", "CListCtrl [MFC], RemoveAllGroups", "CListCtrl [MFC], RemoveGroup", "CListCtrl [MFC], Scroll", "CListCtrl [MFC], SetBkColor", "CListCtrl [MFC], SetBkImage", "CListCtrl [MFC], SetCallbackMask", "CListCtrl [MFC], SetCheck", "CListCtrl [MFC], SetColumn", "CListCtrl [MFC], SetColumnOrderArray", "CListCtrl [MFC], SetColumnWidth", "CListCtrl [MFC], SetExtendedStyle", "CListCtrl [MFC], SetGroupInfo", "CListCtrl [MFC], SetGroupMetrics", "CListCtrl [MFC], SetHotCursor", "CListCtrl [MFC], SetHotItem", "CListCtrl [MFC], SetHoverTime", "CListCtrl [MFC], SetIconSpacing", "CListCtrl [MFC], SetImageList", "CListCtrl [MFC], SetInfoTip", "CListCtrl [MFC], SetInsertMark", "CListCtrl [MFC], SetInsertMarkColor", "CListCtrl [MFC], SetItem", "CListCtrl [MFC], SetItemCount", "CListCtrl [MFC], SetItemCountEx", "CListCtrl [MFC], SetItemData", "CListCtrl [MFC], SetItemIndexState", "CListCtrl [MFC], SetItemPosition", "CListCtrl [MFC], SetItemState", "CListCtrl [MFC], SetItemText", "CListCtrl [MFC], SetOutlineColor", "CListCtrl [MFC], SetSelectedColumn", "CListCtrl [MFC], SetSelectionMark", "CListCtrl [MFC], SetTextBkColor", "CListCtrl [MFC], SetTextColor", "CListCtrl [MFC], SetTileInfo", "CListCtrl [MFC], SetTileViewInfo", "CListCtrl [MFC], SetToolTips", "CListCtrl [MFC], SetView", "CListCtrl [MFC], SetWorkAreas", "CListCtrl [MFC], SortGroups", "CListCtrl [MFC], SortItems", "CListCtrl [MFC], SortItemsEx", "CListCtrl [MFC], SubItemHitTest", "CListCtrl [MFC], Update"]
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CListCtrl Class
 
@@ -360,7 +353,7 @@ virtual BOOL Create(
 Specifies the list control's style. Apply any combination of list control styles to the control. See [List view window styles](/windows/desktop/Controls/list-view-window-styles) in the Windows SDK for a complete list of these styles. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle).
 
 *rect*<br/>
-Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Specifies the list control's size and position. It can be either a `CRect` object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 *pParentWnd*<br/>
 Specifies the list control's parent window, usually a `CDialog`. It must not be NULL.
@@ -408,7 +401,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the list control's style. Apply any combination of list control styles to the control. For a complete list of these styles, see [List view window styles](/windows/desktop/Controls/list-view-window-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -442,7 +435,7 @@ CImageList* CreateDragImage(
 Index of the item whose drag image list is to be created.
 
 *lpPoint*<br/>
-Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the initial location of the upper-left corner of the image, in view coordinates.
+Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the initial location of the upper-left corner of the image, in view coordinates.
 
 ### Return Value
 
@@ -1183,7 +1176,7 @@ BOOL GetGroupRect(
 |Parameter|Description|
 |---------------|-----------------|
 |*iGroupId*|[in] Specifies a group.|
-|*lpRect*|[in, out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|
+|*lpRect*|[in, out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|
 |*iCoords*|[in] Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - LVGGR_GROUP - (Default) Coordinates of the entire expanded group.<br />- LVGGR_HEADER - Coordinates of only the header (collapsed group).<br />- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).|
 
 ### Return Value
@@ -1192,7 +1185,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-The caller is responsible for allocating the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure pointed to by the *pRect* parameter.
+The caller is responsible for allocating the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure pointed to by the *pRect* parameter.
 
 This method sends the [LVM_GETGROUPRECT](/windows/desktop/Controls/lvm-getgrouprect) message, which is described in the Windows SDK.
 
@@ -1531,7 +1524,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[in] Pointer to an [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) structure. This parameter cannot be NULL.|
 |*iColumn*|[in] Zero-based index of a column in the control.|
 |*rectType*|[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|
-|*pRect*|[out] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. This parameter cannot be NULL.|
+|*pRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. This parameter cannot be NULL.|
 
 ### Return Value
 
@@ -1585,7 +1578,7 @@ BOOL GetItemPosition(
 The index of the item whose position is to be retrieved.
 
 *lpPoint*<br/>
-Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the position of the item's upper-left corner, in view coordinates.
+Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the position of the item's upper-left corner, in view coordinates.
 
 ### Return Value
 
@@ -1624,7 +1617,7 @@ BOOL GetItemRect(
 The index of the item whose position is to be retrieved.
 
 *lpRect*<br/>
-Address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that receives the bounding rectangle.
+Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that receives the bounding rectangle.
 
 *nCode*<br/>
 Portion of the list view item for which to retrieve the bounding rectangle. It can be one of these values:
@@ -1932,7 +1925,6 @@ This member function implements the behavior of the Win32 macro, [ListView_GetNu
         {
             TRACE(_T("Couldn't allocate enough memory!"));
         }
-
 ```
 
 ## <a name="getoutlinecolor"></a>  CListCtrl::GetOutlineColor
@@ -1962,7 +1954,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### Parameters
 
 *lpPoint*<br/>
-Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the view origin.
+Address of a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that receives the view origin.
 
 ### Return Value
 
@@ -2273,7 +2265,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Address of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.
+Address of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
 ### Return Value
 
@@ -2576,7 +2568,7 @@ int InsertMarkHitTest(
 ### Parameters
 
 *pPoint*<br/>
-A pointer to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that contains the hit test coordinates, relative to the client area of the list control.
+A pointer to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that contains the hit test coordinates, relative to the client area of the list control.
 
 *lvim*<br/>
 A pointer to an [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) structure that specifies the insertion point closest to the coordinates defined by the point parameter.
@@ -3596,7 +3588,7 @@ BOOL SetItemPosition(
 Index of the item whose position is to be set.
 
 *pt*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure specifying the new position, in view coordinates, of the item's upper-left corner.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure specifying the new position, in view coordinates, of the item's upper-left corner.
 
 ### Return Value
 
@@ -4162,10 +4154,9 @@ This function also arranges the list view control if it has the LVS_AUTOARRANGE 
 
   See the example for [CListCtrl::GetSelectedCount](#getselectedcount).
 
-## See Also
+## See also
 
-[MFC Sample ROWLIST](../../visual-cpp-samples.md)<br/>
+[MFC Sample ROWLIST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [CImageList Class](cimagelist-class.md)
-

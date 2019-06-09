@@ -1,16 +1,9 @@
 ---
-title: "Options, ATL Active Server Page Component Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Options, ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.asp.options"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Active Server Page Component Wizard, options"]
 ms.assetid: 54f34e26-53c7-4456-9675-cb86e356bde0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Options, ATL Active Server Page Component Wizard
 
@@ -52,8 +45,7 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |**Connection points**|Enables connection points for your object by making your object's class derive from [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md).|
    |**Free-threaded marshaler**|Creates a free-threaded marshaler object to marshal interface pointers efficiently between threads in the same process. Available to object specifying either **Both** or **Free** as the threading model.|
 
-## See Also
+## See also
 
 [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)
-

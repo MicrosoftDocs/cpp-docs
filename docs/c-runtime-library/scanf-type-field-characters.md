@@ -1,18 +1,11 @@
 ---
-title: "scanf Type Field Characters | Microsoft Docs"
-ms.custom: ""
+title: "scanf Type Field Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr120.dll"]
 apitype: "DLLExport"
 f1_keywords: ["scanf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scanf function, type field characters"]
 ms.assetid: 5d546a84-715b-44ca-b1c5-bbe997f9ff62
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # scanf Type Field Characters
 
@@ -58,6 +51,6 @@ The format string can handle single-byte or wide character input regardless of w
 
 To scan strings with `scanf` functions, and `wscanf` functions, use the above table with format type-specifiers `s` and `S` instead of `c` and `C`.
 
-## See Also
+## See also
 
 [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)

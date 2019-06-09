@@ -1,16 +1,9 @@
 ---
-title: "CImage Class | Microsoft Docs"
-ms.custom: ""
+title: "CImage Class"
 ms.date: "02/01/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CImage", "ATLIMAGE/ATL::CImage", "ATLIMAGE/ATL::CImage::CImage", "ATLIMAGE/ATL::CImage::AlphaBlend", "ATLIMAGE/ATL::CImage::Attach", "ATLIMAGE/ATL::CImage::BitBlt", "ATLIMAGE/ATL::CImage::Create", "ATLIMAGE/ATL::CImage::CreateEx", "ATLIMAGE/ATL::CImage::Destroy", "ATLIMAGE/ATL::CImage::Detach", "ATLIMAGE/ATL::CImage::Draw", "ATLIMAGE/ATL::CImage::GetBits", "ATLIMAGE/ATL::CImage::GetBPP", "ATLIMAGE/ATL::CImage::GetColorTable", "ATLIMAGE/ATL::CImage::GetDC", "ATLIMAGE/ATL::CImage::GetExporterFilterString", "ATLIMAGE/ATL::CImage::GetHeight", "ATLIMAGE/ATL::CImage::GetImporterFilterString", "ATLIMAGE/ATL::CImage::GetMaxColorTableEntries", "ATLIMAGE/ATL::CImage::GetPitch", "ATLIMAGE/ATL::CImage::GetPixel", "ATLIMAGE/ATL::CImage::GetPixelAddress", "ATLIMAGE/ATL::CImage::GetTransparentColor", "ATLIMAGE/ATL::CImage::GetWidth", "ATLIMAGE/ATL::CImage::IsDIBSection", "ATLIMAGE/ATL::CImage::IsIndexed", "ATLIMAGE/ATL::CImage::IsNull", "ATLIMAGE/ATL::CImage::IsTransparencySupported", "ATLIMAGE/ATL::CImage::Load", "ATLIMAGE/ATL::CImage::LoadFromResource", "ATLIMAGE/ATL::CImage::MaskBlt", "ATLIMAGE/ATL::CImage::PlgBlt", "ATLIMAGE/ATL::CImage::ReleaseDC", "ATLIMAGE/ATL::CImage::ReleaseGDIPlus", "ATLIMAGE/ATL::CImage::Save", "ATLIMAGE/ATL::CImage::SetColorTable", "ATLIMAGE/ATL::CImage::SetPixel", "ATLIMAGE/ATL::CImage::SetPixelIndexed", "ATLIMAGE/ATL::CImage::SetPixelRGB", "ATLIMAGE/ATL::CImage::SetTransparentColor", "ATLIMAGE/ATL::CImage::StretchBlt", "ATLIMAGE/ATL::CImage::TransparentBlt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["jpeg files", "bitmaps [C++], ATL and MFC support for", "images [C++], ATL and MFC support for", "gif files, ATL and MFC support", ".gif files, ATL and MFC support", "PNG files, ATL and MFC support", "CImage class", "transparent color"]
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CImage Class
 
@@ -209,7 +202,7 @@ An alpha transparency value to be used on the entire source bitmap. The default 
 The alpha-blending function for source and destination bitmaps, a global alpha value to be applied to the entire source bitmap, and format information for the source bitmap. The source and destination blend functions are currently limited to AC_SRC_OVER.
 
 *pointDest*<br/>
-A reference to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -230,7 +223,7 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
@@ -319,7 +312,7 @@ The logical y-coordinate of the upper left corner of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *pointDest*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the destination rectangle.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the destination rectangle.
 
 *nDestWidth*<br/>
 The width, in logical units, of the destination rectangle.
@@ -334,7 +327,7 @@ The logical x-coordinate of the upper left corner of the source rectangle.
 The logical y-coordinate of the upper left corner of the source rectangle.
 
 *rectDest*<br/>
-A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure indicating the destination rectangle.
+A [RECT](/previous-versions/dd162897\(v=vs.85\)) structure indicating the destination rectangle.
 
 *pointSrc*<br/>
 A `POINT` structure indicating the upper left corner of the source rectangle.
@@ -546,13 +539,13 @@ The width, in logical units, of the source rectangle.
 The height, in logical units, of the source rectangle.
 
 *rectDest*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
 
 *rectSrc*<br/>
 A reference to a `RECT` structure, identifying the source.
 
 *pointDest*<br/>
-A reference to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that identifies the upper left corner of the destination rectangle, in logical units.
+A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the upper left corner of the destination rectangle, in logical units.
 
 ### Return Value
 
@@ -1210,10 +1203,10 @@ The x-coordinate of the upper left corner of the monochrome bitmap.
 The y-coordinate of the upper left corner of the monochrome bitmap.
 
 *rectSrc*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the coordinates of the source rectangle.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the coordinates of the source rectangle.
 
 *pointMask*<br/>
-A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the mask bitmap.
+A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure indicating the upper left corner of the mask bitmap.
 
 ### Return Value
 
@@ -1470,7 +1463,7 @@ The height, in logical units, of the destination rectangle.
 The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.
 
 *rectDest*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
@@ -1553,7 +1546,7 @@ The height, in logical units, of the destination rectangle.
 The color in the source bitmap to treat as transparent. By default, CLR_INVALID, indicating that the color currently set as the transparent color of the image should be used.
 
 *rectDest*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, identifying the destination.
 
 *xSrc*<br/>
 The x-coordinate, in logical units, of the upper left corner of the source rectangle.
@@ -1607,10 +1600,10 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 }
 ```
 
-## See Also
+## See also
 
-[MMXSwarm Sample](../../visual-cpp-samples.md)<br/>
-[SimpleImage Sample](../../visual-cpp-samples.md)<br/>
+[MMXSwarm Sample](../../overview/visual-cpp-samples.md)<br/>
+[SimpleImage Sample](../../overview/visual-cpp-samples.md)<br/>
 [Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)<br/>
 [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)<br/>
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>

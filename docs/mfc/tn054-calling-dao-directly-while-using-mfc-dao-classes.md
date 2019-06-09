@@ -1,16 +1,8 @@
 ---
-title: "TN054: Calling DAO Directly While Using MFC DAO Classes | Microsoft Docs"
-ms.custom: ""
+title: "TN054: Calling DAO Directly While Using MFC DAO Classes"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.dao"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, DAO and", "passwords [MFC], calling DAO", "security [MFC], DAO", "DAO (Data Access Objects), calling directly", "DAO (Data Access Objects), security", "security [MFC]", "TN054", "DAO (Data Access Objects), and MFC"]
 ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN054: Calling DAO Directly While Using MFC DAO Classes
 

@@ -1,14 +1,7 @@
 ---
-title: "Storage of Bit Fields | Microsoft Docs"
-ms.custom: ""
+title: "Storage of Bit Fields"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 4816a241-1580-4d1c-82ed-13d359733959
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Storage of Bit Fields
 
@@ -41,6 +34,6 @@ cccccccb bbbbaaaa
 
 Since the 80x86 processors store the low byte of integer values before the high byte, the integer 0x01F2 above would be stored in physical memory as 0xF2 followed by 0x01.
 
-## See Also
+## See also
 
 [Structures, Unions, Enumerations, and Bit Fields](../c-language/structures-unions-enumerations-and-bit-fields.md)

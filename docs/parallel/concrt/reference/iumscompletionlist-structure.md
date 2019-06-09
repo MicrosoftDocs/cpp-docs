@@ -1,16 +1,9 @@
 ---
-title: "IUMSCompletionList Structure | Microsoft Docs"
-ms.custom: ""
+title: "IUMSCompletionList Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSCompletionList structure"]
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUMSCompletionList Structure
 
@@ -60,7 +53,7 @@ A chain of `IUMSUnblockNotification` interfaces.
 
 The returned notifications are invalid once the execution contexts are rescheduled.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IUMSScheduler Structure](iumsscheduler-structure.md)<br/>

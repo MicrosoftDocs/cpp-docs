@@ -1,16 +1,9 @@
 ---
-title: "COleDBRecordView Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDBRecordView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDBRecordView Class
 
@@ -100,7 +93,6 @@ Returns a handle for the **CRowset<>** object associated with the record view.
 
 ```
 virtual CRowset<>* OnGetRowset() = 0;
-
 ```
 
 ### Return Value
@@ -155,7 +147,6 @@ The Application Wizard creates a menu resource with First Record, Last Record, N
 
 If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

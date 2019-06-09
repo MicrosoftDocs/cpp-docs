@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3920 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3920"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3920"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3920"]
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3920
 
@@ -34,5 +27,4 @@ public value struct V {
 
    int m_i;
 };
-
 ```

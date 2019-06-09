@@ -1,15 +1,9 @@
 ---
-title: "STL/CLR Containers | Microsoft Docs"
-ms.custom: ""
+title: "STL/CLR Containers"
 ms.date: "09/18/2018"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["STL/CLR, containers", "containers, STL/CLR"]
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # STL/CLR Containers
 
@@ -35,7 +29,7 @@ You cannot insert boxed value types into any of the STL/CLR containers.
 
 ### Handles to Reference Types
 
-You can insert a handle to a reference type into an STL/CLR container. A handle in C++ that targets the CLR is analogous to a pointer in native C++. For more information, see [Handle to Object Operator (^)](../windows/handle-to-object-operator-hat-cpp-component-extensions.md).
+You can insert a handle to a reference type into an STL/CLR container. A handle in C++ that targets the CLR is analogous to a pointer in native C++. For more information, see [Handle to Object Operator (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
 
 #### Example
 
@@ -227,7 +221,7 @@ int main()
 
 You can also insert an unboxed value type into an STL/CLR container. An unboxed value type is a value type that has not been *boxed* into a reference type.
 
-A value type element can be one of the standard value types, such as an `int`, or it can be a user-defined value type, such as a `value class`. For more information, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+A value type element can be one of the standard value types, such as an `int`, or it can be a user-defined value type, such as a `value class`. For more information, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### Example
 
@@ -308,6 +302,6 @@ Containers in STL/CLR work on value semantics. Every time you insert an element 
 
 When you call the clear or erase method of a container of handle objects, the objects that the handles refer to are not freed from memory. You must either explicitly delete the object, or, because these objects reside on the managed heap, allow the garbage collector to free the memory once it determines that the object is no longer being used.
 
-## See Also
+## See also
 
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

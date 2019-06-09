@@ -1,16 +1,9 @@
 ---
-title: "Profile-Guided Optimization Warning PG1087 | Microsoft Docs"
-ms.custom: ""
+title: "Profile-Guided Optimization Warning PG1087"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["PG1087"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PG1087"]
 ms.assetid: 50785d68-17a2-4d82-bee2-8c514faf61c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Profile-Guided Optimization Warning PG1087
 

@@ -1,16 +1,9 @@
 ---
-title: "CMFCWindowsManagerDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCWindowsManagerDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog"]
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCWindowsManagerDialog Class
 
@@ -38,7 +31,7 @@ The `CMFCWindowsManagerDialog` contains a list of MDI child windows that are cur
 
 ## Example
 
-The following example demonstrates how to construct a `CMFCWindowsManagerDialog` object by calling `CMDIFrameWndEx::ShowWindowsDialog`. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct a `CMFCWindowsManagerDialog` object by calling `CMDIFrameWndEx::ShowWindowsDialog`. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]
 
@@ -80,7 +73,7 @@ CMFCWindowsManagerDialog(
 
 For more information about visual managers, see [Visualization Manager](../../mfc/visualization-manager.md).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

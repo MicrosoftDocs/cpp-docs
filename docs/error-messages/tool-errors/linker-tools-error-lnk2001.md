@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK2001 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2001"
 ms.date: "05/17/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2001"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK2001"]
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2001
 
@@ -46,7 +39,7 @@ This error can be caused by trying to use a variable declared within a function 
 
 This error can occur when you build a Release version of an ATL project, producing a message that CRT startup code is required. To fix this issue, do one of the following,
 
-- Remove `_ATL_MIN_CRT` from the list of preprocessor defines to allow CRT startup code to be included. See [General Property Page (Project)](../../ide/general-property-page-project.md) for more information.
+- Remove `_ATL_MIN_CRT` from the list of preprocessor defines to allow CRT startup code to be included. See [General Property Page (Project)](../../build/reference/general-property-page-project.md) for more information.
 
 - If possible, remove calls to CRT functions that require CRT startup code. Instead, use their Win32 equivalents. For example, use `lstrcmp` instead of `strcmp`. Known functions that require CRT startup code are some of the string and floating point functions.
 

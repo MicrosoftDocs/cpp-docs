@@ -1,16 +1,9 @@
 ---
-title: "CArchiveException Class | Microsoft Docs"
-ms.custom: ""
+title: "CArchiveException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CArchiveException", "AFX/CArchiveException", "AFX/CArchiveException::CArchiveException", "AFX/CArchiveException::m_cause", "AFX/CArchiveException::m_strFileName"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CArchiveException [MFC], CArchiveException", "CArchiveException [MFC], m_cause", "CArchiveException [MFC], m_strFileName"]
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CArchiveException Class
 
@@ -121,11 +114,10 @@ Specifies the name of the file for this exception condition.
 CString m_strFileName;
 ```
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CArchive Class](../../mfc/reference/carchive-class.md)<br/>
 [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)<br/>
 [Exception Processing](../../mfc/reference/exception-processing.md)
-

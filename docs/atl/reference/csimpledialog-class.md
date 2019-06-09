@@ -1,16 +1,9 @@
 ---
-title: "CSimpleDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleDialog class", "CSimpleDialog class, modal dialog boxes in ATL", "dialog boxes, modal", "modal dialog boxes, ATL"]
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleDialog Class
 
@@ -81,6 +74,6 @@ If the function fails, the return value is -1. To get extended error information
 
 This method handles all interaction with the user while the dialog box is active. This is what makes the dialog box modal; that is, the user cannot interact with other windows until the dialog box is closed.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

@@ -1,15 +1,8 @@
 ---
-title: "Conversions to and from Pointer Types | Microsoft Docs"
-ms.custom: ""
+title: "Conversions to and from Pointer Types"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointers, converting", "conversions, pointer", "type casts, involving pointers", "void pointers"]
 ms.assetid: 3facc56f-06d3-4570-b1a2-7d4927b83086
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conversions to and from Pointer Types
 
@@ -33,6 +26,6 @@ Conversely, an integral type can be converted to a pointer type according to the
 
 An integral constant expression with value 0 or such an expression cast to type **void** <strong>\*</strong> can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This produces a null pointer that is equal to another null pointer of the same type, but this null pointer is not equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result is not portable.
 
-## See Also
+## See also
 
 [Assignment Conversions](../c-language/assignment-conversions.md)

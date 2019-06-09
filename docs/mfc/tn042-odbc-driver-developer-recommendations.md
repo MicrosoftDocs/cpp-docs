@@ -1,16 +1,9 @@
 ---
-title: "TN042: ODBC Driver Developer Recommendations | Microsoft Docs"
-ms.custom: ""
+title: "TN042: ODBC Driver Developer Recommendations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.odbc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC drivers [MFC], writing", "databases [MFC], ODBC", "TN042"]
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN042: ODBC Driver Developer Recommendations
 
@@ -113,8 +106,7 @@ Below is the minimum support required to open a dynaset:
 
 In addition, if pessimistic locking is requested, a call to `SQLSetPos` with irow 1, fRefresh FALSE and fLock **SQL_LCK_EXCLUSIVE** will be made.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "&lt;array&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;array&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<array>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["array header"]
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;array&gt;
 

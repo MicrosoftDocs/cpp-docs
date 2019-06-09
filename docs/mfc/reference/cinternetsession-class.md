@@ -1,16 +1,9 @@
 ---
-title: "CInternetSession Class | Microsoft Docs"
-ms.custom: ""
+title: "CInternetSession Class"
 ms.date: "06/20/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInternetSession", "AFXINET/CInternetSession", "AFXINET/CInternetSession::CInternetSession", "AFXINET/CInternetSession::Close", "AFXINET/CInternetSession::EnableStatusCallback", "AFXINET/CInternetSession::GetContext", "AFXINET/CInternetSession::GetCookie", "AFXINET/CInternetSession::GetCookieLength", "AFXINET/CInternetSession::GetFtpConnection", "AFXINET/CInternetSession::GetGopherConnection", "AFXINET/CInternetSession::GetHttpConnection", "AFXINET/CInternetSession::OnStatusCallback", "AFXINET/CInternetSession::OpenURL", "AFXINET/CInternetSession::SetCookie", "AFXINET/CInternetSession::SetOption"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInternetSession [MFC], CInternetSession", "CInternetSession [MFC], Close", "CInternetSession [MFC], EnableStatusCallback", "CInternetSession [MFC], GetContext", "CInternetSession [MFC], GetCookie", "CInternetSession [MFC], GetCookieLength", "CInternetSession [MFC], GetFtpConnection", "CInternetSession [MFC], GetGopherConnection", "CInternetSession [MFC], GetHttpConnection", "CInternetSession [MFC], OnStatusCallback", "CInternetSession [MFC], OpenURL", "CInternetSession [MFC], SetCookie", "CInternetSession [MFC], SetOption"]
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInternetSession Class
 
@@ -291,12 +284,12 @@ Pointer to a null-terminated string that specifies the name of the user to log i
 *pstrPassword*<br/>
 A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
 
-|*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|
-|--------------------|--------------------|---------------------------------|---------------------------------|
-|NULL or " "|NULL or " "|"anonymous"|User's email name|
-|Non-NULL String|NULL or " "|*pstrUserName*|" "|
-|NULL|Non-NULL String|ERROR|ERROR||
-|Non-NULL String|Non-NULL String|*pstrUserName*|*pstrPassword*|
+| *pstrUserName*  | *pstrPassword*  | Username sent to FTP server | Password sent to FTP server |
+|-----------------|-----------------|-----------------------------|-----------------------------|
+|   NULL or " "   |   NULL or " "   |         "anonymous"         |      User's email name      |
+| Non-NULL String |   NULL or " "   |       *pstrUserName*        |             " "             |
+|      NULL       | Non-NULL String |            ERROR            |            ERROR            |
+| Non-NULL String | Non-NULL String |       *pstrUserName*        |       *pstrPassword*        |
 
 *nPort*<br/>
 A number that identifies the TCP/IP port to use on the server.
@@ -430,7 +423,7 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 |-----------|-------------|
 |INTERNET_STATUS_RESOLVING_NAME|Looking up the IP address of the name contained in *lpvStatusInformation*.|
 |INTERNET_STATUS_NAME_RESOLVED|Successfully found the IP address of the name contained in *lpvStatusInformation*.|
-|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](../../mfc/reference/sockaddr-structure.md)) pointed to by *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](/windows/desktop/winsock/sockaddr-2)) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_CONNECTED_TO_SERVER|Successfully connected to the socket address (SOCKADDR) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_SENDING_REQUEST|Sending the information request to the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_ REQUEST_SENT|Successfully sent the information request to the server. The *lpvStatusInformation* parameter is NULL.|
@@ -595,7 +588,7 @@ Indicates various caching options. The default is set to 0. The possible values 
 
 If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

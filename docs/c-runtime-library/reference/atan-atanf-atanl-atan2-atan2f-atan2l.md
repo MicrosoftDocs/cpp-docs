@@ -1,19 +1,12 @@
 ---
-title: "atan, atanf, atanl, atan2, atan2f, atan2l | Microsoft Docs"
-ms.custom: ""
+title: "atan, atanf, atanl, atan2, atan2f, atan2l"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["atan2f", "atan2l", "atan2", "atanf", "atan", "atanl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["atan", "atan2l", "atan2", "atanl", "atanf", "atan2f"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["atan function", "atanf function", "atanl function", "atan2 function", "atan2l function", "arctangent function", "trigonometric functions", "atan2f function"]
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # atan, atanf, atanl, atan2, atan2f, atan2l
 

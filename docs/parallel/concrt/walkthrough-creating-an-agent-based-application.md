@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Creating an Agent-Based Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Creating an Agent-Based Application"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["asynchronous agents, creating", "agent class, example"]
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating an Agent-Based Application
 
@@ -39,9 +32,27 @@ This walkthrough demonstrates how to perform the following tasks:
 
 ##  <a name="createapplication"></a> Creating the Console Application
 
-This section shows how to create a Visual C++ console application that references the header files that the program will use.
+This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. Make sure the version selector is set correctly in the upper left of this page.
 
-#### To create a Visual C++ application by using the Win32 Console Application Wizard
+::: moniker range="vs-2019"
+
+### To create a C++ console application in Visual Studio 2019
+
+1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
+
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+
+1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `BasicAgent` as the name for the project, and specify the project location if desired.
+
+1. Choose the **Create** button to create the project.
+
+1. Right-click the project node in **Solution Explorer**, and choose **Properties**. Under **Configuration Properties** > **C/C++** > **Precompiled Headers** > **Precompiled header** choose **Create**.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+### To create a C++ console application in Visual Studio 2017 and earlier
 
 1. On the **File** menu, click **New**, and then click **Project** to display the **New Project** dialog box.
 
@@ -49,7 +60,9 @@ This section shows how to create a Visual C++ console application that reference
 
 1. In the **Win32 Console Application Wizard** dialog box, click **Finish**.
 
-1. In stdafx.h, add the following code.
+::: moniker-end
+
+1. In stdafx.h (or pch.h depending on your version of Visual Studio), add the following code.
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
@@ -181,11 +194,10 @@ Always call the [concurrency::agent::done](reference/agent-class.md#done) method
 
 For another example of an agent-based application, see [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
 
-## See Also
+## See also
 
 [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [Message Passing Functions](../../parallel/concrt/message-passing-functions.md)<br/>
 [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md)<br/>
 [Walkthrough: Using join to Prevent Deadlock](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
-

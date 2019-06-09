@@ -1,15 +1,8 @@
 ---
-title: "Advantages of Inline Assembly | Microsoft Docs"
-ms.custom: ""
+title: "Advantages of Inline Assembly"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assembler [C++], advantages", "inline assembly [C++], about inline assembly", "inline assembly [C++], using"]
 ms.assetid: 94364d97-faa7-4bdf-8473-570956986c51
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Advantages of Inline Assembly
 

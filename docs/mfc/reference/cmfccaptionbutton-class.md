@@ -1,16 +1,9 @@
 ---
-title: "CMFCCaptionButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCCaptionButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize", "AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::Move", "AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw", "AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCaptionButton [MFC], CMFCCaptionButton", "CMFCCaptionButton [MFC], GetHit", "CMFCCaptionButton [MFC], GetIconID", "CMFCCaptionButton [MFC], GetRect", "CMFCCaptionButton [MFC], GetSize", "CMFCCaptionButton [MFC], IsMiniFrameButton", "CMFCCaptionButton [MFC], Move", "CMFCCaptionButton [MFC], OnDraw", "CMFCCaptionButton [MFC], SetMiniFrameButton"]
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCCaptionButton Class
 
@@ -268,7 +261,7 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 *bSet*<br/>
 [in] TRUE for mini title bar height; FALSE for default title bar height.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

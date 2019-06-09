@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2030 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2030"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2030"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2030"]
 ms.assetid: 5806cead-64df-4eff-92de-52c9a3f5ee62
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2030
 

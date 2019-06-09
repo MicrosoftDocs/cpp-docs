@@ -1,16 +1,9 @@
 ---
-title: "-await (Enable coroutine support) | Microsoft Docs"
-ms.custom: ""
+title: "/await (Enable coroutine support)"
 ms.date: "08/15/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/await", "-await"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/await enable coroutine support [C++]", "-await enable coroutine support [C++]", "await enable coroutine support [C++]"]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /await (Enable coroutine support)
 
@@ -38,7 +31,7 @@ The **/await** option is available beginning in Visual Studio 2015.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

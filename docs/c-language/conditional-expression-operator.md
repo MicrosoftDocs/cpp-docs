@@ -1,15 +1,8 @@
 ---
-title: "Conditional-Expression Operator | Microsoft Docs"
-ms.custom: ""
+title: "Conditional-Expression Operator"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["conditional operators", "operators [C++], conditional", "expressions [C++], conditional"]
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Conditional-Expression Operator
 
@@ -66,6 +59,6 @@ int y;
 
 In this example, two functions, `f1` and `f2`, and two variables, `x` and `y`, are declared. Later in the program, if the two variables have the same value, the function `f1` is called. Otherwise, `f2` is called.
 
-## See Also
+## See also
 
 [Conditional Operator: ? :](../cpp/conditional-operator-q.md)

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4489 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4489"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4489"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4489"]
 ms.assetid: 43b51c8c-27b5-44c9-b974-fe4b48f4896f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4489
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 A specifier keyword was incorrectly used on an interface method.
 
-For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## Example
 

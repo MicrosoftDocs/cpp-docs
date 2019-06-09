@@ -1,21 +1,14 @@
 ---
-title: "Error Handling and Notification | Microsoft Docs"
-ms.custom: ""
+title: "Error Handling and Notification"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["error handling, and notification"]
 ms.assetid: b621cf60-d869-451a-b05e-dc86d78addaa
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Error Handling and Notification
 
 For more information on error handling and notification, see [Understanding the Helper Function](understanding-the-helper-function.md).
 
-For more information on hook functions, see [Structure and Constant Definitions](../../build/reference/structure-and-constant-definitions.md).
+For more information on hook functions, see [Structure and Constant Definitions](structure-and-constant-definitions.md).
 
 If your program uses delay-loaded DLLs, it must handle errors robustly since failures that occur while the program is running will result in unhandled exceptions. Failure handling is comprised of two portions:
 
@@ -27,12 +20,12 @@ If all that is necessary for handling the error is to abort the procedure, no ho
 
 The following topics discuss error handling and notification:
 
-- [Notification Hooks](../../build/reference/notification-hooks.md)
+- [Notification Hooks](notification-hooks.md)
 
-- [Failure Hooks](../../build/reference/failure-hooks.md)
+- [Failure Hooks](failure-hooks.md)
 
-- [Exceptions](../../build/reference/exceptions-c-cpp.md)
+- [Exceptions](exceptions-c-cpp.md)
 
-## See Also
+## See also
 
-[Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)

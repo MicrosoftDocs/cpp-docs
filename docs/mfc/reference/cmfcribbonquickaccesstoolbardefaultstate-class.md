@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonQuickAccessToolBarDefaultState Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonQuickAccessToolBarDefaultState Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::AddCommand", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonQuickAccessToolBarDefaultState [MFC], CMFCRibbonQuickAccessToolBarDefaultState", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], AddCommand", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], CopyFrom", "CMFCRibbonQuickAccessToolBarDefaultState [MFC], RemoveAll"]
 ms.assetid: eca99200-b87b-47ba-b2e8-2f3f2444b176
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonQuickAccessToolBarDefaultState Class
 
@@ -119,7 +112,7 @@ void RemoveAll();
 
 This function removes from this instance all the commands that the previous calls to [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) added.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

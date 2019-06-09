@@ -1,15 +1,8 @@
 ---
-title: "ATL Composite Control Fundamentals | Microsoft Docs"
-ms.custom: ""
+title: "ATL Composite Control Fundamentals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["composite controls, about composite controls"]
 ms.assetid: 2ac78cdd-1ec4-4d78-871c-1bcc23b5253e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Composite Control Fundamentals
 
@@ -27,9 +20,8 @@ The ATL Project Wizard and **Add Class** dialog box automate the process of crea
 
 - [Building and testing the ATL project](../atl/building-and-testing-the-atl-project.md)
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Composite Control Global Functions](../atl/reference/composite-control-global-functions.md)<br/>
 [Composite Control Macros](../atl/reference/composite-control-macros.md)
-

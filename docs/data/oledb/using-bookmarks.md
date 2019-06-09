@@ -1,15 +1,8 @@
 ---
-title: "Using Bookmarks | Microsoft Docs"
-ms.custom: ""
+title: "Using Bookmarks"
 ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets, bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "OLE DB providers, bookmark support"]
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Bookmarks
 
@@ -54,6 +47,6 @@ product.GetBookmark(&bookmark);
 
 For information about supporting bookmarks in providers, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md).
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

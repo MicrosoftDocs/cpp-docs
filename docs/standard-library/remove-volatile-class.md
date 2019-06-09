@@ -1,16 +1,9 @@
 ---
-title: "remove_volatile Class | Microsoft Docs"
-ms.custom: ""
+title: "remove_volatile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_volatile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remove_volatile class", "remove_volatile"]
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove_volatile Class
 

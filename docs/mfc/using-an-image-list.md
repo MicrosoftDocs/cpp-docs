@@ -1,15 +1,8 @@
 ---
-title: "Using an Image List | Microsoft Docs"
-ms.custom: ""
+title: "Using an Image List"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lists [MFC], image", "CImageList class [MFC], using", "image lists [MFC]"]
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using an Image List
 
@@ -26,8 +19,7 @@ Typical usage of an image list follows the pattern below:
 > [!NOTE]
 >  If the image list was created with the **new** operator, you must destroy the `CImageList` object when you are done with it.
 
-## See Also
+## See also
 
 [Using CImageList](../mfc/using-cimagelist.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

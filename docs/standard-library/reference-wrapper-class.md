@@ -1,16 +1,9 @@
 ---
-title: "reference_wrapper Class | Microsoft Docs"
-ms.custom: ""
+title: "reference_wrapper Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["functional/std::reference_wrapper", "type_traits/std::reference_wrapper", "xrefwrap/std::reference_wrapper", "type_traits/std::reference_wrapper::get", "type_traits/std::reference_wrapper::operator()", "functional/std::reference_wrapper::result_type", "functional/std::reference_wrapper::type", "functional/std::reference_wrapper::get", "functional/std::reference_wrapper::operator()"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::reference_wrapper [C++]", "std::reference_wrapper [C++]", "std::reference_wrapper [C++], result_type", "std::reference_wrapper [C++], type", "std::reference_wrapper [C++], get"]
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # reference_wrapper Class
 
@@ -71,6 +64,7 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 |-|-|
 |[reference_wrapper::operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|
 |[reference_wrapper::operator()](#op_call)|Calls the wrapped reference.|
+
 ## Requirements
 
 **Header:** \<functional>

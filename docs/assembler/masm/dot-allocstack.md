@@ -1,16 +1,9 @@
 ---
-title: ".ALLOCSTACK | Microsoft Docs"
-ms.custom: ""
+title: ".ALLOCSTACK"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".ALLOCSTACK"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".ALLOCSTACK directive"]
 ms.assetid: 9801594b-7ac2-4df2-a49d-07d9dd9af99e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .ALLOCSTACK
 

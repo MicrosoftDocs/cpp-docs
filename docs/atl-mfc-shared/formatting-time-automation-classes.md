@@ -1,15 +1,8 @@
 ---
-title: "Formatting Time: Automation Classes | Microsoft Docs"
-ms.custom: ""
+title: "Formatting Time: Automation Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Automation classes, formatting time", "time [C++], formatting", "formatting [C++], time"]
 ms.assetid: 155c5bef-b555-4bed-9545-29afc49715f1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Formatting Time: Automation Classes
 
@@ -27,7 +20,6 @@ For more information, see class [COleVariant](../mfc/reference/colevariant-class
 
 - [Working with SYSTEMTIME](../atl-mfc-shared/date-and-time-systemtime-support.md)
 
-## See Also
+## See also
 
 [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)
-

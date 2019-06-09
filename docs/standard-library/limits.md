@@ -1,16 +1,9 @@
 ---
-title: "&lt;limits&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;limits&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["limits/std::<limits>", "<limits>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["limits header"]
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;limits&gt;
 
@@ -20,7 +13,6 @@ Defines the template class `numeric_limits` and two enumerations concerning floa
 
 ```cpp
 #include <limits>
-
 ```
 
 ## Remarks

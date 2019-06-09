@@ -1,16 +1,9 @@
 ---
-title: "CAtlFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlFile", "ATLFILE/ATL::CAtlFile", "ATLFILE/ATL::CAtlFile::CAtlFile", "ATLFILE/ATL::CAtlFile::Create", "ATLFILE/ATL::CAtlFile::Flush", "ATLFILE/ATL::CAtlFile::GetOverlappedResult", "ATLFILE/ATL::CAtlFile::GetPosition", "ATLFILE/ATL::CAtlFile::GetSize", "ATLFILE/ATL::CAtlFile::LockRange", "ATLFILE/ATL::CAtlFile::Read", "ATLFILE/ATL::CAtlFile::Seek", "ATLFILE/ATL::CAtlFile::SetSize", "ATLFILE/ATL::CAtlFile::UnlockRange", "ATLFILE/ATL::CAtlFile::Write", "ATLFILE/ATL::CAtlFile::m_pTM"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlFile class"]
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlFile Class
 
@@ -432,8 +425,8 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 The first three forms call [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), the last calls [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) to write data to the file. Use [CAtlFile::Seek](#seek) to move the file pointer.
 
-## See Also
+## See also
 
-[Marquee Sample](../../visual-cpp-samples.md)<br/>
+[Marquee Sample](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CHandle Class](../../atl/reference/chandle-class.md)

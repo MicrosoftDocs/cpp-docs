@@ -1,16 +1,9 @@
 ---
-title: "CTreeView Class | Microsoft Docs"
-ms.custom: ""
+title: "CTreeView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTreeView", "AFXCVIEW/CTreeView", "AFXCVIEW/CTreeView::CTreeView", "AFXCVIEW/CTreeView::GetTreeCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTreeView [MFC], CTreeView", "CTreeView [MFC], GetTreeCtrl"]
 ms.assetid: 5df583a6-d69f-42ca-9d8d-57e04558afff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTreeView Class
 
@@ -74,7 +67,7 @@ Returns a reference to the tree control associated with the view.
 CTreeCtrl& GetTreeCtrl() const;
 ```
 
-## See Also
+## See also
 
 [CCtrlView Class](../../mfc/reference/cctrlview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

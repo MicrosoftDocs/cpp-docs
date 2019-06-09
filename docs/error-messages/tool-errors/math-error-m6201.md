@@ -1,16 +1,9 @@
 ---
-title: "Math Error M6201 | Microsoft Docs"
-ms.custom: ""
+title: "Math Error M6201"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["M6201"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["M6201"]
 ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math Error M6201
 

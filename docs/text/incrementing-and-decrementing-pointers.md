@@ -1,15 +1,8 @@
 ---
-title: "Incrementing and Decrementing Pointers | Microsoft Docs"
-ms.custom: ""
+title: "Incrementing and Decrementing Pointers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["incrementing pointers", "MBCS [C++], pointers", "pointers [C++], multibyte characters", "decrementing pointers"]
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Incrementing and Decrementing Pointers
 
@@ -53,7 +46,7 @@ Use the following tips:
 
 - You might want to maintain a pointer to the previous character for faster calls to `_mbsdec`.
 
-## See Also
+## See also
 
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)<br/>
 [Byte Indices](../text/byte-indices.md)

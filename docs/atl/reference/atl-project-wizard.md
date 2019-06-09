@@ -1,16 +1,9 @@
 ---
-title: "ATL Project Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Project Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.atl.com.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "ATL Project Wizard"]
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Project Wizard
 
@@ -42,14 +35,12 @@ Additionally, consider these tasks when you create and enhance an ATL project:
 
 - [Optimize the compiler for an ATL project](../../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../ide/general-property-page-project.md) page, and you can set [build configurations](/visualstudio/ide/understanding-build-configurations) for an ATL project.
+You can specify project properties (for example, [whether to link statically to the CRT](../../atl/programming-with-atl-and-c-run-time-code.md)) in the [Project Properties](../../build/reference/general-property-page-project.md) page, and you can set [build configurations](/visualstudio/ide/understanding-build-configurations) for an ATL project.
 
-## See Also
+## See also
 
-[Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
-[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[Visual Studio Projects - C++](../../build/creating-and-managing-visual-cpp-projects.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Tutorial](../../atl/active-template-library-atl-tutorial.md)
-

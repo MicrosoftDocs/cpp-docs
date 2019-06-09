@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4537 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4537"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4537"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4537"]
 ms.assetid: 9454493c-d419-475e-8f35-9c00233c9329
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4537
 

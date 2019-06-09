@@ -1,16 +1,9 @@
 ---
-title: "-J (Default char Type Is unsigned) | Microsoft Docs"
-ms.custom: ""
+title: "/J (Default char Type Is unsigned)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned", "VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned", "/j"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["defaults, char type", "char data type", "-J compiler option [C++]", "/J compiler option [C++]", "J compiler option [C++]", "default char type is unsigned"]
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /J (Default char Type Is unsigned)
 
@@ -45,8 +38,8 @@ ANSI C and C++ do not require a specific implementation of the `char` type. This
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Working with Project Properties](../../ide/working-with-project-properties.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)

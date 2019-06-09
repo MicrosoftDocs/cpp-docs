@@ -1,16 +1,9 @@
 ---
-title: "_umul128 | Microsoft Docs"
-ms.custom: ""
+title: "_umul128"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__umul128"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__umul128 intrinsic"]
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _umul128
 
@@ -21,10 +14,10 @@ Multiplies two 64-bit unsigned integers passed in as the first two arguments and
 ## Syntax
 
 ```
-unsigned __int64 _umul128( 
-   unsigned __int64 Multiplier, 
-   unsigned __int64 Multiplicand, 
-   unsigned __int64 *HighProduct 
+unsigned __int64 _umul128(
+   unsigned __int64 Multiplier,
+   unsigned __int64 Multiplicand,
+   unsigned __int64 *HighProduct
 );
 ```
 
@@ -47,13 +40,13 @@ The low 64 bits of the product.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_umul128`|ARM, x64|\<intrin.h>|
+|`_umul128`|x64|\<intrin.h>|
 
 ## Example
 
 ```
 // umul128.c
-// processor: IPF, x64
+// processor: x64
 
 #include <stdio.h>
 #include <intrin.h>
@@ -78,6 +71,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

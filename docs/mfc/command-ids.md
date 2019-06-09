@@ -1,15 +1,8 @@
 ---
-title: "Command IDs | Microsoft Docs"
-ms.custom: ""
+title: "Command IDs"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["command IDs, MFC", "command IDs"]
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Command IDs
 
@@ -19,7 +12,6 @@ For example, a Clear All item in the Edit menu might be assigned an ID such as *
 
 When you create your own menus in the Visual C++ menu editor, it is a good idea to follow the class library's naming convention as illustrated by **ID_FILE_OPEN**. [Standard Commands](../mfc/standard-commands.md) explains the standard commands defined by the class library.
 
-## See Also
+## See also
 
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)
-

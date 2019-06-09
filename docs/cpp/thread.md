@@ -1,16 +1,9 @@
 ---
-title: "thread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "thread"
+ms.date: "05/07/2019"
 f1_keywords: ["thread_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["thread local storage (TLS)", "thread __declspec keyword", "TLS (thread local storage), compiler implementation", "__declspec keyword [C++], thread"]
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # thread
 
@@ -36,7 +29,7 @@ When using thread-local variables in dynamically-loaded libraries, you need to b
 
 1. If the variable is initialized with a function call (including constructors), this function will only be called for the thread that caused the binary/DLL to load into the process, and for those threads that started after the binary/DLL was loaded. The initialization functions are not called for any other thread that was already running when the DLL was loaded. Dynamic initialization occurs on the DllMain call for DLL_THREAD_ATTACH, but the DLL never gets that message if the DLL isn't in the process when the thread starts.
 
-1. Thread-local variables that are initialized statically with constant values are generally initialized properly on all threads. However, as of December 2017 there is a known conformance issue in the Microsoft Visual C++ compiler whereby constexpr variables receive dynamic rather than static initialization.
+1. Thread-local variables that are initialized statically with constant values are generally initialized properly on all threads. However, as of December 2017 there is a known conformance issue in the Microsoft C++ compiler whereby constexpr variables receive dynamic rather than static initialization.
 
    Note: Both of these issues are expected to be fixed in future updates of the compiler.
 

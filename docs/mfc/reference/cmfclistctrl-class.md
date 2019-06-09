@@ -1,16 +1,9 @@
 ---
-title: "CMFCListCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCListCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn", "AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort", "AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl", "AFXLISTCTRL/CMFCListCtrl::IsMultipleSort", "AFXLISTCTRL/CMFCListCtrl::OnCompareItems", "AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor", "AFXLISTCTRL/CMFCListCtrl::OnGetCellFont", "AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor", "AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn", "AFXLISTCTRL/CMFCListCtrl::SetSortColumn", "AFXLISTCTRL/CMFCListCtrl::Sort"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtrl [MFC], EnableMultipleSort", "CMFCListCtrl [MFC], GetHeaderCtrl", "CMFCListCtrl [MFC], IsMultipleSort", "CMFCListCtrl [MFC], OnCompareItems", "CMFCListCtrl [MFC], OnGetCellBkColor", "CMFCListCtrl [MFC], OnGetCellFont", "CMFCListCtrl [MFC], OnGetCellTextColor", "CMFCListCtrl [MFC], RemoveSortColumn", "CMFCListCtrl [MFC], SetSortColumn", "CMFCListCtrl [MFC], Sort"]
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCListCtrl Class
 
@@ -46,7 +39,7 @@ class CMFCListCtrl : public CListCtrl
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCListCtrl` class. The example shows how to create a list control, insert columns, insert items, set the text of an item, and set the font of the list control. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCListCtrl` class. The example shows how to create a list control, insert columns, insert items, set the text of an item, and set the font of the list control. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#25](../../mfc/codesnippet/cpp/cmfclistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#26](../../mfc/codesnippet/cpp/cmfclistctrl-class_2.cpp)]
@@ -315,7 +308,7 @@ virtual void Sort(
 *bAdd*<br/>
 [in] A Boolean that specifies whether this method adds the column indicated by *iColumn* to the list of sort columns.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

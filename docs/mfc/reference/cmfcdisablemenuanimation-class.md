@@ -1,16 +1,9 @@
 ---
-title: "CMFCDisableMenuAnimation Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCDisableMenuAnimation Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDisableMenuAnimation [MFC], Restore"]
 ms.assetid: c6eb07da-c382-43d6-8028-007f2320e50e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCDisableMenuAnimation Class
 
@@ -80,7 +73,7 @@ void Restore ();
 
 This method is called by the `CMFCDisableMenuAnimation` destructor to restore the previous animation that the framework used to display a pop-up menu.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

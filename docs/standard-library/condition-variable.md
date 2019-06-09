@@ -1,15 +1,8 @@
 ---
-title: "&lt;condition_variable&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;condition_variable&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<condition_variable>"]
-dev_langs: ["C++"]
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;condition_variable&gt;
 

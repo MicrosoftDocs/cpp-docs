@@ -1,16 +1,9 @@
 ---
-title: "Document Template Strings, MFC Add Class Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Document Template Strings, MFC Add Class Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.mfc.simple.doctemp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Add Class Wizard, document control strings"]
 ms.assetid: 14e1c834-5e79-4dbd-811f-ec8f0a9cdcb2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Template Strings, MFC Add Class Wizard
 
@@ -70,7 +63,7 @@ Produces strings associated with the forms and documents that are read and used 
 
    Indicates the project's document class. By default, this class is the main application's document class, as listed in the [Review Generated Classes](../../mfc/reference/generated-classes-mfc-application-wizard.md) page of the MFC Application Wizard. You can select another document class from the list, if you have added other document classes in the project.
 
-## See Also
+## See also
 
 [MFC Add Class Wizard](../../mfc/reference/mfc-add-class-wizard.md)<br/>
 [MFC Class](../../mfc/reference/adding-an-mfc-class.md)<br/>

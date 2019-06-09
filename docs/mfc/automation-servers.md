@@ -1,15 +1,8 @@
 ---
-title: "Automation Servers | Microsoft Docs"
-ms.custom: ""
+title: "Automation Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Automation servers", "COM components, Automation servers", "dispatch maps [MFC], Automation servers", "servers, Automation"]
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Automation Servers
 
@@ -48,8 +41,7 @@ The MFC Application Wizard simplifies the steps involved in getting your automat
 
 - [Learn more about class COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)
 
-## See Also
+## See also
 
 [Automation](../mfc/automation.md)<br/>
 [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
-

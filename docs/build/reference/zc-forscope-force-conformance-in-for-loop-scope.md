@@ -1,20 +1,13 @@
 ---
-title: "/Zc:forScope (Force Conformance in for Loop Scope) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:forScope (Force Conformance in for Loop Scope)"
 ms.date: "03/06/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ForceConformanceInForLoopScope", "VC.Project.VCCLWCECompilerTool.ForceConformanceInForLoopScope", "/zc:forScope"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:forScope (Force Conformance in for Loop Scope)
 
-Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md) loops with Microsoft extensions ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).
+Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md) loops with Microsoft extensions ([/Ze](za-ze-disable-language-extensions.md)).
 
 ## Syntax
 
@@ -22,7 +15,7 @@ Used to implement standard C++ behavior for [for](../../cpp/for-statement-cpp.md
 
 ## Remarks
 
-Standard behavior is to let a **for** loop's initializer go out of scope after the **for** loop. Under **/Zc:forScope-** and [/Ze](../../build/reference/za-ze-disable-language-extensions.md), the **for** loop's initializer remains in scope until the local scope ends.
+Standard behavior is to let a **for** loop's initializer go out of scope after the **for** loop. Under **/Zc:forScope-** and [/Ze](za-ze-disable-language-extensions.md), the **for** loop's initializer remains in scope until the local scope ends.
 
 The **/Zc:forScope** option is on by default. **/Zc:forScope** is not affected when the [/permissive-](permissive-standards-conformance.md) option is specified.
 
@@ -49,13 +42,13 @@ If you use **/Zc:forScope-**, warning C4288 (off by default) is generated if a v
 
 You can modify the run-time behavior of **/Zc:forScope** by using the [conform](../../preprocessor/conform.md) pragma.
 
-If you use **/Zc:forScope-** in a project that has an existing .pch file, a warning is generated, **/Zc:forScope-** is ignored, and compilation continues by using the existing .pch files. If you want a new .pch file generated, use [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md).
+If you use **/Zc:forScope-** in a project that has an existing .pch file, a warning is generated, **/Zc:forScope-** is ignored, and compilation continues by using the existing .pch files. If you want a new .pch file generated, use [/Yc (Create Precompiled Header File)](yc-create-precompiled-header-file.md).
 
 For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
@@ -67,5 +60,5 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
-[/Za, /Ze (Disable Language Extensions)](../../build/reference/za-ze-disable-language-extensions.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>
+[/Za, /Ze (Disable Language Extensions)](za-ze-disable-language-extensions.md)<br/>

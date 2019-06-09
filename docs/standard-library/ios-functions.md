@@ -1,8 +1,6 @@
 ---
-title: "&lt;ios&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ios&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::internal", "ios/std::left", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
 ms.assetid: 1382d53f-e531-4b41-adf6-6a1543512e51
 helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::dec [C++]", "std::fixed [C++]", "std::hex [C++]", "std::internal [C++]", "std::left [C++]", "std::noboolalpha [C++]", "std::noshowbase [C++]", "std::noshowpoint [C++]", "std::noshowpos [C++]", "std::noskipws [C++]", "std::nounitbuf [C++]", "std::nouppercase [C++]", "std::oct [C++]", "std::right [C++]", "std::scientific [C++]", "std::showbase [C++]", "std::showpoint [C++]", "std::showpos [C++]", "std::skipws [C++]", "std::unitbuf [C++]", "std::uppercase [C++]"]
@@ -163,7 +161,7 @@ A reference to the object from which _ *Str* is derived.
 
 `fixed` is the default display notation for floating-point numbers. [scientific](../standard-library/ios-functions.md#scientific) causes floating-point numbers to be displayed using scientific notation.
 
-The manipulator effectively calls * str.*[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`, `ios_base::floatfield`), and then returns *str*.
+The manipulator effectively calls *str*.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`, `ios_base::floatfield` ), and then returns *str*.
 
 ### Example
 
@@ -822,15 +820,13 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 1 2 3
-
 ```
 
 ```Output
-
-      1 2 3.1.
+Enter three characters: 1 2 3
+.1.
 .2.
 .3.
 ```

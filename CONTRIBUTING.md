@@ -52,7 +52,7 @@ The Visual Studio team will review your PR and let you know if the change looks 
 
 The maintainers will merge your PR into the master branch once feedback has been applied and your change looks good.
 
-On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live on [docs.microsoft.com](https://docs.microsoft.com/en-us/cpp/).
+On a certain cadence, we push all commits from master branch into the live branch and then you'll be able to see your contribution live on [docs.microsoft.com](https://docs.microsoft.com/cpp/).
 
 ## DOs and DON'Ts
 

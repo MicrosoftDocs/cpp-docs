@@ -1,16 +1,9 @@
 ---
-title: "CDaoException Class | Microsoft Docs"
-ms.custom: ""
+title: "CDaoException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoException", "AFXDAO/CDaoException", "AFXDAO/CDaoException::CDaoException", "AFXDAO/CDaoException::GetErrorCount", "AFXDAO/CDaoException::GetErrorInfo", "AFXDAO/CDaoException::m_nAfxDaoError", "AFXDAO/CDaoException::m_pErrorInfo", "AFXDAO/CDaoException::m_scode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoException [MFC], CDaoException", "CDaoException [MFC], GetErrorCount", "CDaoException [MFC], GetErrorInfo", "CDaoException [MFC], m_nAfxDaoError", "CDaoException [MFC], m_pErrorInfo", "CDaoException [MFC], m_scode"]
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoException Class
 
@@ -198,7 +191,7 @@ This is an OLE code. You will seldom need to use this value because, in almost a
 
 For information about SCODE, see the topic [Structure of OLE Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK. The SCODE data type maps to the HRESULT data type.
 
-## See Also
+## See also
 
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

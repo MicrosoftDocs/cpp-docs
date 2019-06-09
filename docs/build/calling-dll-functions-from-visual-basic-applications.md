@@ -1,15 +1,8 @@
 ---
-title: "Calling DLL Functions from Visual Basic Applications | Microsoft Docs"
-ms.custom: ""
+title: "Calling DLL Functions from Visual Basic Applications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++], calling DLL functions from Visual Basic", "DLL functions [C++]", "function calls [C++], DLL functions", "DLLs [C++], calling", "calling DLL functions from VB applications [C++]", "__stdcall keyword [C++]", "DLL functions [C++], calling"]
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Calling DLL Functions from Visual Basic Applications
 
@@ -27,7 +20,7 @@ is decorated as `_func@12` in the output.
 
 The C calling convention (`__cdecl`) decorates the name as `_func`.
 
-To get the decorated name, use [/MAP](../build/reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:
+To get the decorated name, use [/MAP](reference/map-generate-mapfile.md). Use of **__declspec(dllexport)** does the following:
 
 - If the function is exported with the C calling convention (`__cdecl`), it strips the leading underscore ( **\_** ) when the name is exported.
 
@@ -52,18 +45,18 @@ For DLLs to be called by programs written in Visual Basic, the alias technique s
 
 ## What do you want to know more about?
 
-- [Exporting from a DLL](../build/exporting-from-a-dll.md)
+- [Exporting from a DLL](exporting-from-a-dll.md)
 
-- [Exporting from a DLL using .DEF files](../build/exporting-from-a-dll-using-def-files.md)
+- [Exporting from a DLL using .DEF files](exporting-from-a-dll-using-def-files.md)
 
-- [Exporting from a DLL using __declspec(dllexport)](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [Exporting from a DLL using __declspec(dllexport)](exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [Exporting C++ functions for use in C-language executables](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [Exporting C++ functions for use in C-language executables](exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [Determining which exporting method to use](../build/determining-which-exporting-method-to-use.md)
+- [Determine which exporting method to use](determining-which-exporting-method-to-use.md)
 
-- [Decorated names](../build/reference/decorated-names.md)
+- [Decorated names](reference/decorated-names.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

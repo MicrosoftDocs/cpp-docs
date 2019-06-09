@@ -1,16 +1,9 @@
 ---
-title: "immediatebind (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "immediatebind (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.immediatebind"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["immediatebind attribute"]
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # immediatebind
 
@@ -43,7 +36,7 @@ See [bindable](bindable.md) for an example of how to use **immediatebind**.
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>

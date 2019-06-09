@@ -1,15 +1,8 @@
 ---
-title: "Argument Description | Microsoft Docs"
-ms.custom: ""
+title: "Argument Description"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["envp argument", "main function, syntax", "arguments [C++], for main function", "argv argument", "argc argument"]
 ms.assetid: 91c2cbe3-9aca-4277-afa1-6137eb8fb704
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Argument Description
 
@@ -29,6 +22,6 @@ The `envp` parameter is a pointer to an array of null-terminated strings that re
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [main Function and Program Execution](../c-language/main-function-and-program-execution.md)

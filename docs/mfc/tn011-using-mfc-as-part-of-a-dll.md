@@ -1,16 +1,8 @@
 ---
-title: "TN011: Using MFC as Part of a DLL | Microsoft Docs"
-ms.custom: ""
+title: "TN011: Using MFC as Part of a DLL"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.dll"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_USRDLL symbol", "USRDLLs, compiler switches", "TN011", "DLLs [MFC], linking", "MFC DLLs [MFC], linking regular MFC DLLs to MFC"]
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN011: Using MFC as Part of a DLL
 
@@ -28,7 +20,7 @@ regular MFC DLLs have several advantages:
 
 - With regular MFC DLLs that statically link to MFC, the size of the DLL depends only on the MFC and C runtime routines that are used and linked.
 
-- With regular MFC DLLs that dynamically link to MFC, the savings in memory from using the shared version of MFC can be significant. However, you must distribute the shared DLLs, Mfc*\<version>*.dll and Msvvcrt*\<version>*.dll, with your DLL.
+- With regular MFC DLLs that dynamically link to MFC, the savings in memory from using the shared version of MFC can be significant. However, you must distribute the shared DLLs, Mfc\<*version*>.dll and Msvvcrt\<*version*>.dll, with your DLL.
 
 - The DLL design is independent of how classes are implemented. Your DLL design exports only to the APIs you want. As a result, if the implementation changes, regular MFC DLLs are still valid.
 
@@ -52,7 +44,7 @@ You must also define these symbols and use these compiler switches when you comp
 
 The interfaces (APIs) between the application and the DLL must be explicitly exported. We recommend that you define your interfaces to be low bandwidth, and use only C interfaces if you can. Direct C interfaces are easier to maintain than more complex C++ classes.
 
-Place your APIs in a separate header that can be included by both C and C++ files. See the header ScreenCap.h in the MFC Advanced Concepts sample [DLLScreenCap](../visual-cpp-samples.md) for an example. To export your functions, enter them in the `EXPORTS` section of your module definition file (.DEF) or include `__declspec(dllexport)` on your function definitions. Use `__declspec(dllimport)` to import these functions into the client executable.
+Place your APIs in a separate header that can be included by both C and C++ files. See the header ScreenCap.h in the MFC Advanced Concepts sample [DLLScreenCap](../overview/visual-cpp-samples.md) for an example. To export your functions, enter them in the `EXPORTS` section of your module definition file (.DEF) or include `__declspec(dllexport)` on your function definitions. Use `__declspec(dllimport)` to import these functions into the client executable.
 
 You must add the AFX_MANAGE_STATE macro at the beginning of all the exported functions in regular MFC DLLs that dynamically link to MFC. This macro sets the current module state to the one for the DLL. To use this macro, add the following line of code to the beginning of functions exported from the DLL:
 
@@ -106,8 +98,7 @@ BOOL PromptTraceFlags(TracerData FAR* lpData);
 
 The structures used by the API are not derived from MFC classes and are defined in the API header. This reduces the complexity of the interface between the DLL and the application and makes the DLL usable by C programs.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

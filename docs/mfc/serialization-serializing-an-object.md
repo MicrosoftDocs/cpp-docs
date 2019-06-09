@@ -1,15 +1,8 @@
 ---
-title: "Serialization: Serializing an Object | Microsoft Docs"
-ms.custom: ""
+title: "Serialization: Serializing an Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["serializing objects [MFC]", "serialization [MFC], objects", "objects [MFC], serializing"]
 ms.assetid: 1db772b1-ad55-4fcf-b133-126cca082510
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Serialization: Serializing an Object
 
@@ -25,7 +18,6 @@ The article [Serialization: Making a Serializable Class](../mfc/serialization-ma
 
 You can let the framework create the archive for your serializable document or explicitly create the `CArchive` object yourself. You can transfer data between a file and your serializable object by using the <\< and >> operators for `CArchive` or, in some cases, by calling the `Serialize` function of a `CObject`-derived class.
 
-## See Also
+## See also
 
 [Serialization](../mfc/serialization-in-mfc.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "fisher_f_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "fisher_f_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::fisher_f_distribution", "random/std::fisher_f_distribution::reset", "random/std::fisher_f_distribution::m", "random/std::fisher_f_distribution::n", "random/std::fisher_f_distribution::param", "random/std::fisher_f_distribution::min", "random/std::fisher_f_distribution::max", "random/std::fisher_f_distribution::operator()", "random/std::fisher_f_distribution::param_type", "random/std::fisher_f_distribution::param_type::m", "random/std::fisher_f_distribution::param_type::n", "random/std::fisher_f_distribution::param_type::operator==", "random/std::fisher_f_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::fisher_f_distribution [C++]", "std::fisher_f_distribution [C++], reset", "std::fisher_f_distribution [C++], m", "std::fisher_f_distribution [C++], n", "std::fisher_f_distribution [C++], param", "std::fisher_f_distribution [C++], min", "std::fisher_f_distribution [C++], max", "std::fisher_f_distribution [C++], param_type", "std::fisher_f_distribution [C++], param_type"]
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fisher_f_distribution Class
 
@@ -134,7 +127,6 @@ int main()
 
     test(m_dist, n_dist, samples);
 }
-
 ```
 
 ## Output

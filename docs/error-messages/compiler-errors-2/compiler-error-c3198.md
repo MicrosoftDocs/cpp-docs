@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3198 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3198"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3198"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3198"]
 ms.assetid: ec4ecf61-0067-4aa4-b443-a91013a1e59d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3198
 

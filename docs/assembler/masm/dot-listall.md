@@ -1,16 +1,9 @@
 ---
-title: ".LISTALL | Microsoft Docs"
-ms.custom: ""
+title: ".LISTALL"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: [".LISTALL"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".LISTALL directive"]
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # .LISTALL
 

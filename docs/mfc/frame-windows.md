@@ -1,15 +1,8 @@
 ---
-title: "Frame Windows | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Frame Windows"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["document frame windows [MFC]", "windows [MFC], MDI", "window classes [MFC], frame", "single document interface (SDI) [MFC]", "single document interface (SDI) [MFC], frame windows", "views [MFC], and frame windows", "CFrameWnd class [MFC], frame windows", "frame windows [MFC]", "frame windows [MFC], about frame windows", "MFC, frame windows", "MDI [MFC], frame windows", "splitter windows [MFC], and frame windows"]
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Frame Windows
 
@@ -19,7 +12,7 @@ When an application runs under Windows, the user interacts with documents displa
 
 The MFC framework uses frame windows to contain views. The two components — frame and contents — are represented and managed by two different classes in MFC. A frame-window class manages the frame, and a view class manages the contents. The view window is a child of the frame window. Drawing and other user interaction with the document take place in the view's client area, not the frame window's client area. The frame window provides a visible frame around a view, complete with a caption bar and standard window controls such as a control menu, buttons to minimize and maximize the window, and controls for resizing the window. The "contents" consist of the window's client area, which is fully occupied by a child window — the view. The following figure shows the relationship between a frame window and a view.
 
-![Frame window view](../mfc/media/vc37fx1.gif "vc37fx1")
+![Frame window view](../mfc/media/vc37fx1.gif "Frame window view") <br/>
 Frame Window and View
 
 ## Frame Windows and Splitter Windows
@@ -72,7 +65,6 @@ Another common arrangement is for the frame window to frame multiple views, usua
 
 - [Controls](../mfc/controls-mfc.md)
 
-## See Also
+## See also
 
 [Windows](../mfc/windows.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Structure Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Structure Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["structure declarations", "anonymous structures", "types [C], declarations", "structure members", "embedded structures"]
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Structure Declarations
 
@@ -171,6 +164,6 @@ See [Structure and Union Members](../c-language/structure-and-union-members.md) 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

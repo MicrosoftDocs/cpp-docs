@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4618 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4618"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4618"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4618"]
 ms.assetid: 6ff10d0a-6d5b-4373-8196-1d57bb6b1611
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4618
 

@@ -1,16 +1,9 @@
 ---
-title: "is_placeholder Class | Microsoft Docs"
-ms.custom: ""
+title: "is_placeholder Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["functional/std::is_placeholder"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_placeholder class"]
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_placeholder Class
 

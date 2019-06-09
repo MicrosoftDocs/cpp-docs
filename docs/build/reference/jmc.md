@@ -1,14 +1,8 @@
 ---
-title: "/JMC (Just My Code debugging) | Microsoft Docs"
-ms.custom: "08/20/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "/JMC (Just My Code debugging)"
+ms.date: "08/20/2018"
 f1_keywords: ["/JMC"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/JMC compiler option [C++]", "Just my code [C++]", "-JMC compiler option [C++]", "User code, debugging", "JMC compiler option [C++]"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /JMC (Just My Code debugging)
 
@@ -30,7 +24,7 @@ For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
@@ -40,7 +34,7 @@ For more information, see [C++ Just My Code](/visualstudio/debugger/just-my-code
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>

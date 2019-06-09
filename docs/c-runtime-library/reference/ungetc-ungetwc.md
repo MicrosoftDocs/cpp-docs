@@ -1,19 +1,12 @@
 ---
-title: "ungetc, ungetwc | Microsoft Docs"
-ms.custom: ""
+title: "ungetc, ungetwc"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["ungetwc", "ungetc"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ungettc", "ungetwc", "ungetc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ungetwc function", "ungettc function", "characters, pushing back onto stream", "_ungettc function", "ungetc function"]
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ungetc, ungetwc
 
@@ -42,7 +35,7 @@ Pointer to **FILE** structure.
 
 ## Return Value
 
-If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and **ungetc** returns **EOF`; **ungetwc` returns **WEOF**. If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
+If successful, each of these functions returns the character argument *c*. If *c* cannot be pushed back or if no character has been read, the input stream is unchanged and **ungetc** returns **EOF**; **ungetwc** returns **WEOF**. If *stream* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **EOF** or **WEOF** is returned and **errno** is set to **EINVAL**.
 
 For information on these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

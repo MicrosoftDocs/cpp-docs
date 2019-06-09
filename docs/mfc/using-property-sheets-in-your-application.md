@@ -1,15 +1,8 @@
 ---
-title: "Using Property Sheets in Your Application | Microsoft Docs"
-ms.custom: ""
+title: "Using Property Sheets in Your Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog templates [MFC], property sheets", "dialog resources", "property pages [MFC], property sheets", "DoModal method property sheets", "AddPage method [MFC]", "property sheets, about property sheets", "Create method [MFC], property sheets", "CPropertyPage class [MFC], styles"]
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using Property Sheets in Your Application
 
@@ -51,9 +44,8 @@ To use a property sheet in your application, complete the following steps:
 
 1. Exchange data between property pages and the owner of the property sheet. This is explained in the article [Exchanging Data](../mfc/exchanging-data.md).
 
-For an example of how to use property sheets, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
+For an example of how to use property sheets, see the MFC General sample [PROPDLG](../overview/visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "transmit_as (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "transmit_as (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.transmit_as"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["transmit_as attribute"]
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # transmit_as
 
@@ -76,7 +69,7 @@ struct _TREE_NODE_TYPE * right;
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

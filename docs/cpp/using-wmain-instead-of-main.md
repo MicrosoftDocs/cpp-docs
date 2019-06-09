@@ -1,16 +1,9 @@
 ---
-title: "Using wmain Instead of main | Microsoft Docs"
-ms.custom: ""
+title: "Using wmain Instead of main"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["wmain"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["main function, vs. wmain", "wmain function"]
 ms.assetid: 7abb1257-b85c-413a-b913-d45b1582a71d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using wmain Instead of main
 

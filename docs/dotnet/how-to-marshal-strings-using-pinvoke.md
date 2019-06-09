@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Strings Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Strings Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "data marshaling [C++], strings", "platform invoke [C++], strings"]
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Strings Using PInvoke
 
@@ -73,6 +67,6 @@ This technique causes a copy of the string to be constructed on the unmanaged he
 
 Note that no portion of the DLL is exposed to the managed code via the traditional #include directive. In fact, the DLL is accessed at runtime only, so problems with functions imported with `DllImport` will not be detected at compile time.
 
-## See Also
+## See also
 
 [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

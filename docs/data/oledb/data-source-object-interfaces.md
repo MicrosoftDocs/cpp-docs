@@ -1,15 +1,8 @@
 ---
-title: "Data Source Object Interfaces | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Data Source Object Interfaces"
+ms.date: "10/24/2018"
 helpviewer_keywords: ["data source objects [C++], interfaces", "data source objects [C++]", "interfaces [C++], OLE DB", "interfaces [C++], list of", "OLE DB provider templates [C++], object interfaces", "OLE DB [C++], interfaces"]
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source Object Interfaces
 
@@ -29,6 +22,6 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 
 The data source object implements the `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces through inheritance. You can choose to support additional functionality by inheriting or not inheriting from one of these implementation classes. If you want to support the `IDBDataSourceAdmin` interface, you must inherit from the `IDBDataSourceAdminImpl` class.
 
-## See Also
+## See also
 
-[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

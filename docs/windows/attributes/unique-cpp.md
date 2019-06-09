@@ -1,16 +1,9 @@
 ---
-title: "unique  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "unique  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.unique"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unique attribute"]
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # unique (C++)
 
@@ -43,7 +36,7 @@ See the [ref](ref-cpp.md) example for a sample use of **unique**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

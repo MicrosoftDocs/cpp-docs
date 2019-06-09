@@ -1,14 +1,7 @@
 ---
-title: "Compiler Warning (level 4) C4437 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4437"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: dc07e350-20eb-474c-a7ad-f841ae7ec339
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4437
 
@@ -78,7 +71,7 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [dynamic_cast Operator](../../cpp/dynamic-cast-operator.md)<br/>
 [vtordisp](../../preprocessor/vtordisp.md)<br/>

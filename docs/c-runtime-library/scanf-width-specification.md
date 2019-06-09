@@ -1,18 +1,11 @@
 ---
-title: "scanf Width Specification | Microsoft Docs"
-ms.custom: ""
+title: "scanf Width Specification"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["scanf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scanf function, width specification"]
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # scanf Width Specification
 
@@ -94,7 +87,7 @@ The `scanf` function scans each input field, character by character. It may stop
 
 For whatever reason, when the `scanf` function stops reading an input field, the next input field is considered to begin at the first unread character. The conflicting character, if there is one, is considered unread and is the first character of the next input field or the first character in subsequent read operations on the input stream.
 
-## See Also
+## See also
 
 [scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>

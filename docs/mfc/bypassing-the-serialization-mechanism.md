@@ -1,15 +1,8 @@
 ---
-title: "Bypassing the Serialization Mechanism | Microsoft Docs"
-ms.custom: ""
+title: "Bypassing the Serialization Mechanism"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["archive objects [MFC]", "bypassing serialization", "archives [MFC], serialization", "serialization [MFC], bypassing", "archives [MFC]", "serialization [MFC], role of framework", "serialization [MFC], overriding"]
 ms.assetid: 48d4a279-b51c-4ba5-81cd-ed043312b582
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bypassing the Serialization Mechanism
 
@@ -23,7 +16,6 @@ You can use the `Open`, `Read`, `Write`, `Close`, and `Seek` member functions of
 
 In this scenario, your `Serialize` override does nothing, unless, for example, you want to have it read and write a file header to keep it up to date when the document closes.
 
-## See Also
+## See also
 
 [Using Documents](../mfc/using-documents.md)
-

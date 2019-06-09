@@ -1,21 +1,14 @@
 ---
-title: "operator!= | Microsoft Docs"
-ms.custom: ""
+title: "operator!="
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["std::!=", "!=", "std::operator!=", "std.operator!=", "std.!=", "operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["!= operator", "operator!=", "operator !="]
 ms.assetid: ef2be7f0-1c94-4edc-b65c-731fddd519f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator!=
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Overloads `operator!=` to compare two objects of template class [Container](../standard-library/sample-container-class.md).
 

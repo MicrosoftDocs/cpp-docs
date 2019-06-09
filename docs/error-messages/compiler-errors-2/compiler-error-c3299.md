@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3299 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3299"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3299"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3299"]
 ms.assetid: 7cabdf01-bceb-404f-9401-cdd9c7fc1641
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3299
 
@@ -20,7 +13,7 @@ When overriding a generic member function, you cannot specify constraint clauses
 
 The constraint clauses on the generic function you are overriding will be inherited.
 
-For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constraints-on-generic-type-parameters-cpp-cli.md).
 
 ## Example
 

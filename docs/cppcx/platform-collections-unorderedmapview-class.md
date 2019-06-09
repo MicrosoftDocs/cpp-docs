@@ -1,14 +1,9 @@
 ---
-title: "Platform::Collections::UnorderedMapView Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections::UnorderedMapView Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMapView"]
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMapView Class
 
@@ -69,7 +64,7 @@ UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::C
 
 ## <a name="first"></a>  UnorderedMapView::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) element in the unordered map.
 
 ### Syntax
 
@@ -127,7 +122,7 @@ The value that is paired with the `key`. The type of the return value is typenam
 
 ## <a name="size"></a>  UnorderedMapView::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) elements in the UnorderedMapView.
 
 ### Syntax
 
@@ -237,7 +232,7 @@ The input iterator of the first element in a range of elements used to initializ
 *last*<br/>
 The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.
 
-## See Also
+## See also
 
 [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
 [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

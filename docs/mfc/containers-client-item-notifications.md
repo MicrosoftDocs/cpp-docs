@@ -1,15 +1,8 @@
 ---
-title: "Containers: Client-Item Notifications | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Client-Item Notifications"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [MFC], container client item", "OLE containers [MFC], client-item notifications", "client items and OLE containers"]
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Client-Item Notifications
 
@@ -44,9 +37,8 @@ The framework calls `COleClientItem::OnGetItemPosition` when an item is being ac
 
 If an OLE item's position or size changes during in-place editing, the container's information about the item's position and clipping rectangles must be updated and the server must receive information about the changes. The framework calls `COleClientItem::OnChangeItemPosition` for this purpose. The MFC Application Wizard provides an override that calls the base class's function. You should edit the function that the application wizard writes for your `COleClientItem`-derived class so that the function updates any information retained by your client-item object.
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: Client-Item States](../mfc/containers-client-item-states.md)<br/>
 [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
-

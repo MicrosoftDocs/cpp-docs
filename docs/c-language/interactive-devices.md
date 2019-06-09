@@ -1,14 +1,7 @@
 ---
-title: "Interactive Devices | Microsoft Docs"
-ms.custom: ""
+title: "Interactive Devices"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: a15ac95d-faf8-4fcf-80ab-0e346d1a5b5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interactive Devices
 
@@ -16,6 +9,6 @@ ms.workload: ["cplusplus"]
 
 Microsoft C defines the keyboard and the display as interactive devices.
 
-## See Also
+## See also
 
 [Environment](../c-language/environment.md)

@@ -1,17 +1,13 @@
 ---
-title: "OLE DB Architectural Design Issues | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "OLE DB Architectural Design Issues"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB, application design considerations"]
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Architectural Design Issues
+
+> [!NOTE]
+> The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 Consider the following issues before starting your OLE DB application:
 
@@ -37,7 +33,7 @@ Given the possible combinations of technologies (such as using ADO components wi
 
 - [Microsoft Data Access Technical Articles Overview](https://msdn.microsoft.com/library/ms810811.aspx)
 
-## See Also
+## See also
 
 [OLE DB Programming](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB Programming Overview](../../data/oledb/ole-db-programming-overview.md)

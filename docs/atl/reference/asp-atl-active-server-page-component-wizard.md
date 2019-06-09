@@ -1,16 +1,9 @@
 ---
-title: "ASP, ATL Active Server Page Component Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ASP, ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.asp.asp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Active Server Page Component Wizard, ASP"]
 ms.assetid: 4d8cafd6-5e12-4461-8911-29288896af3c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ASP, ATL Active Server Page Component Wizard
 
@@ -36,8 +29,7 @@ Use this page of the ATL Active Server Page Component Wizard to specify optional
 |**Application**|Provides access to the Active Server Pages intrinsic **Application** object. The **Application** object manages state that is shared across multiple ASP objects.|
 |**Server**|Provides access to the Active Server Pages intrinsic **Server** object. The **Server** object allows you to create other ASP objects.|
 
-## See Also
+## See also
 
 [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
 [ATL Active Server Page Component](../../atl/reference/adding-an-atl-active-server-page-component.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Storage and Alignment of Structures | Microsoft Docs"
-ms.custom: ""
+title: "Storage and Alignment of Structures"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["alignment of structures", "structure storage", "storing structures", "packing structures"]
 ms.assetid: 60ff292f-2595-4f37-ae00-4c4b4f047196
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Storage and Alignment of Structures
 
@@ -37,6 +30,6 @@ Bit fields default to size **long** for the Microsoft C compiler. Structure memb
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Structure Declarations](../c-language/structure-declarations.md)

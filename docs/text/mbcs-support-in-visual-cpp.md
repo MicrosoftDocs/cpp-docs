@@ -1,16 +1,8 @@
 ---
-title: "MBCS Support in Visual C++ | Microsoft Docs"
-ms.custom: ""
+title: "MBCS Support in Visual C++"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-f1_keywords: ["_mbcs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tools [C++], MBCS support", "Asian languages [C++]", "Code Editor [C++], MBCS support", "IME [C++]", "Chinese characters [C++]", "Input Method Editor [C++], MBCS", "resource editors [C++], MBCS support", "debugger [C++], MBCS support", "character sets [C++], multibyte", "Japanese characters [C++]", "multibyte characters [C++]", "Kanji character support [C++]", "NMAKE program, MBCS support", "double-byte character sets [C++]", "IME [C++], MBCS", "Input Method Editor [C++]", "MBCS [C++], enabling"]
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MBCS Support in Visual C++
 
@@ -44,7 +36,7 @@ To change the default locale at source code compile time, use [#pragma setlocale
 
 The Visual C++ Windows-based tools, such as Spy++ and the resource editing tools, fully support IME strings.
 
-## See Also
+## See also
 
 [Support for Multibyte Character Sets (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 [MBCS Programming Tips](../text/mbcs-programming-tips.md)

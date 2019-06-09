@@ -1,15 +1,8 @@
 ---
-title: "scoped_d3d_access_lock Class | Microsoft Docs"
-ms.custom: ""
+title: "scoped_d3d_access_lock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["scoped_d3d_access_lock", "AMPRT/scoped_d3d_access_lock", "AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock"]
-dev_langs: ["C++"]
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # scoped_d3d_access_lock Class
 
@@ -109,6 +102,6 @@ The accelerator_view from which to move the D3D access lock.
 
 A reference to this `scoped_accelerator_view_lock`.
 
-## See Also
+## See also
 
 [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

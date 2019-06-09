@@ -1,15 +1,8 @@
 ---
-title: "Changing the Styles of a Window Created by MFC | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Styles of a Window Created by MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["window styles [MFC]", "WS_OVERLAPPEDWINDOW macro [MFC]", "single document interface (SDI), changing window attributes", "MDI [MFC], window styles", "windows [MFC], MFC", "child windows [MFC], styles", "MFC, windows", "CFrameWnd class [MFC], window styles", "CREATESTRUCT macro [MFC]", "CMDIChildWnd class [MFC], changing window styles", "multidocument interface style", "PreCreateWindow method [MFC], window styles", "single document interface (SDI), style", "default window style", "defaults [MFC], window style", "PreCreateWindow method [MFC], changing window styles", "CMainFrame class [MFC]", "styles [MFC], windows"]
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Changing the Styles of a Window Created by MFC
 
@@ -29,11 +22,11 @@ For main frame windows, you can also specify whether the window has a System Men
 
 If you're changing window attributes in an existing application, follow the instructions in the rest of this article instead.
 
-To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](../mfc/reference/createstruct-structure.md) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:
+To change the default window attributes used by a framework application created with the Application Wizard, override the window's [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) virtual member function. `PreCreateWindow` allows an application to access the creation process normally managed internally by the [CDocTemplate](../mfc/reference/cdoctemplate-class.md) class. The framework calls `PreCreateWindow` just prior to creating the window. By modifying the [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure passed to `PreCreateWindow`, your application can change the attributes used to create the window. For example, to ensure that a window does not use a caption, use the following bitwise operation:
 
 [!code-cpp[NVC_MFCDocView#15](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_1.cpp)]
 
-The [CTRLBARS](../visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
+The [CTRLBARS](../overview/visual-cpp-samples.md) sample application demonstrates this technique for changing window attributes. Depending on what your application changes in `PreCreateWindow`, it may be necessary to call the base class implementation of the function.
 
 The following discussion covers the SDI case and the [MDI case](#_core_the_mdi_case).
 
@@ -61,9 +54,8 @@ This code creates MDI child windows without a Maximize button.
 
 - [Frame-window styles](../mfc/frame-window-styles-cpp.md)
 
-- [Window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600)
+- [Window styles](/windows/desktop/winmsg/window-styles)
 
-## See Also
+## See also
 
 [Frame-Window Styles](../mfc/frame-window-styles-cpp.md)
-

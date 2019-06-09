@@ -1,16 +1,9 @@
 ---
-title: "CLinearTransitionFromSpeed Class | Microsoft Docs"
-ms.custom: ""
+title: "CLinearTransitionFromSpeed Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CLinearTransitionFromSpeed [MFC], CLinearTransitionFromSpeed", "CLinearTransitionFromSpeed [MFC], Create", "CLinearTransitionFromSpeed [MFC], m_dblFinalValue", "CLinearTransitionFromSpeed [MFC], m_dblSpeed"]
 ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLinearTransitionFromSpeed Class
 
@@ -112,6 +105,6 @@ The absolute value of the variable's velocity.
 DOUBLE m_dblSpeed;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

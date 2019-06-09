@@ -1,15 +1,8 @@
 ---
-title: "Type Qualifiers | Microsoft Docs"
-ms.custom: ""
+title: "Type Qualifiers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["volatile keyword [C], type qualifier", "type qualifiers", "volatile keyword [C]", "qualifiers for types", "const keyword [C]", "memory, access using volatile", "volatile keyword [C], type specifier"]
 ms.assetid: bb4c6744-1dd7-40a8-b4eb-f5585be30908
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Type Qualifiers
 
@@ -58,6 +51,6 @@ This list describes how to use **const** and `volatile`.
 
 - An item can be both **const** and `volatile`, in which case the item could not be legitimately modified by its own program, but could be modified by some asynchronous process.
 
-## See Also
+## See also
 
 [Declarations and Types](../c-language/declarations-and-types.md)

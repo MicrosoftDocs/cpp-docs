@@ -1,15 +1,8 @@
 ---
-title: "Limits on Floating-Point Constants | Microsoft Docs"
-ms.custom: ""
+title: "Limits on Floating-Point Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ranges, floating-point constants", "floating-point constants, limits", "FLOAT.H header file", "constants, floating-point", "limits, floating-point constants", "floating-point numbers, floating limits"]
 ms.assetid: 2d975868-2af6-45d7-a8af-db79f2c6b67b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Limits on Floating-Point Constants
 
@@ -39,6 +32,6 @@ Note that the information in the above table may differ in future implementation
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Floating-Point Constants](../c-language/c-floating-point-constants.md)

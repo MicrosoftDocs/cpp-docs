@@ -1,15 +1,8 @@
 ---
-title: "Pure and Verifiable Code (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Pure and Verifiable Code (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["/clr compiler option [C++], verifiable assemblies", "/clr compiler option [C++], mixed assemblies", "pure MSIL [C++]", "verifiable assemblies [C++]", "verifiably type-safe code [C++]", "/clr compiler option [C++], pure assemblies", ".NET Framework [C++], pure and verifiable code", "assemblies [C++], mixed code", "verifiable assemblies [C++], about verifiable assemblies", "mixed assemblies [C++], about mixed assemblies", "pure MSIL [C++], about pure code", "assemblies [C++], verifiable code", "mixed assemblies [C++]", "assemblies [C++], pure code"]
 ms.assetid: 9050e110-fa11-4356-b56c-665187ff871c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Pure and verifiable code (C++/CLI)
 
@@ -26,4 +19,3 @@ There is one coding scenario that will pass the compiler but that will result in
 ## See also
 
 - [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-

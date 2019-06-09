@@ -1,16 +1,9 @@
 ---
-title: "IOleInPlaceActiveObjectImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IOleInPlaceActiveObjectImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IOleInPlaceActiveObjectImpl class", "ActiveX controls [C++], communication between container and control", "IOleInPlaceActiveObject, ATL implementation"]
 ms.assetid: 44e6cc6d-a2dc-4187-98e3-73cf0320dea9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IOleInPlaceActiveObjectImpl Class
 
@@ -178,7 +171,7 @@ S_FALSE if the message was not translated.
 
 See [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) in the Windows SDK.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>

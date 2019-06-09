@@ -1,16 +1,9 @@
 ---
-title: "__inword | Microsoft Docs"
-ms.custom: ""
+title: "__inword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__indword_cpp", "__indword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["in instruction", "__inword intrinsic"]
 ms.assetid: 5c617edd-6709-40a1-aad2-40d5e39283c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __inword
 
@@ -49,6 +42,6 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

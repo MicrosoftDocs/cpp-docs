@@ -1,16 +1,9 @@
 ---
-title: "CMFCSpinButtonCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCSpinButtonCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCSpinButtonCtrl [MFC], OnDraw"]
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCSpinButtonCtrl Class
 
@@ -80,7 +73,7 @@ virtual void OnDraw(CDC* pDC);
 
 The framework calls the `CMFCSpinButtonCtrl::OnPaint` method to handle the [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) message, and that method in turn calls this `CMFCSpinButtonCtrl::OnDraw` method. Override this method to customize the way the framework draws the spin button control.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,19 +1,12 @@
 ---
-title: "_read | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "_read"
+ms.date: "02/13/2019"
 apiname: ["_read"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_read"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data [CRT]", "_read function", "read function", "data [C++], reading", "reading data [C++]", "files [C++], reading"]
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _read
 
@@ -23,9 +16,9 @@ Reads data from a file.
 
 ```C
 int _read(
-   int fd,
-   void *buffer,
-   unsigned int count
+   int const fd,
+   void * const buffer,
+   unsigned const buffer_size
 );
 ```
 
@@ -37,22 +30,22 @@ File descriptor referring to the open file.
 *buffer*<br/>
 Storage location for data.
 
-*count*<br/>
-Maximum number of bytes.
+*buffer_size*<br/>
+Maximum number of bytes to read.
 
 ## Return Value
 
-**_read** returns the number of bytes read, which might be less than *count* if there are fewer than *count* bytes left in the file or if the file was opened in text mode, in which case each carriage return-line feed pair '\r\n' is replaced with a single linefeed character '\n'. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
+**_read** returns the number of bytes read, which might be less than *buffer_size* if there are fewer than *buffer_size* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single linefeed character `\n`. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
 
-If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file is not open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EBADF**.
+If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EBADF**.
 
-If *buffer* is **NULL**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **errno** is set to **EINVAL**.
+If *buffer* is **NULL**, or if *buffer_size* > **INT_MAX**, the invalid parameter handler is invoked. If execution is allowed to continue, the function returns -1 and **errno** is set to **EINVAL**.
 
 For more information about this and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_read** function reads a maximum of *count* bytes into *buffer* from the file associated with *fd*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
+The **_read** function reads a maximum of *buffer_size* bytes into *buffer* from the file associated with *fd*. The read operation begins at the current position of the file pointer associated with the given file. After the read operation, the file pointer points to the next unread character.
 
 If the file was opened in text mode, the read terminates when **_read** encounters a CTRL+Z character, which is treated as an end-of-file indicator. Use [_lseek](lseek-lseeki64.md) to clear the end-of-file indicator.
 
@@ -88,18 +81,18 @@ char buffer[60000];
 
 int main( void )
 {
-   int fh;
-   unsigned int nbytes = 60000, bytesread;
+   int fh, bytesread;
+   unsigned int nbytes = 60000;
 
    /* Open file for input: */
-   if( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ) )
+   if ( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ))
    {
       perror( "open failed on input file" );
       exit( 1 );
    }
 
    /* Read in input: */
-   if( ( bytesread = _read( fh, buffer, nbytes ) ) <= 0 )
+   if (( bytesread = _read( fh, buffer, nbytes )) <= 0 )
       perror( "Problem reading file" );
    else
       printf( "Read %u bytes from file\n", bytesread );

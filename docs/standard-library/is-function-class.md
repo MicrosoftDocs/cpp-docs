@@ -1,16 +1,9 @@
 ---
-title: "is_function Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["type_traits/std::is"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["is_function class", "is"]
+title: "is_function Class"
+ms.date: "02/21/2019"
+f1_keywords: ["type_traits/std::is_function"]
+helpviewer_keywords: ["is_function class", "is_function"]
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_function Class
 
@@ -61,7 +54,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output

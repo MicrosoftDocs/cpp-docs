@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonCategory Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CMFCRibbonCategory Class"
+ms.date: "11/19/2018"
 f1_keywords: ["CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory::CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory::AddHidden", "AFXRIBBONCATEGORY/CMFCRibbonCategory::AddPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::CopyFrom", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindByData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindByID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindPanelWithElem", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetContextID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetDroppedDown", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetElements", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetElementsByID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetFirstVisibleElement", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetFocused", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetHighlighted", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetImageCount", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetImageSize", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetItemIDsList", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetLastVisibleElement", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetLargeImages", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetMaxHeight", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetName", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelCount", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelFromPoint", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelIndex", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentButton", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentMenuBar", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentRibbonBar", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetRect", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetSmallImages", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTabColor", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTabRect", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTextTopLine", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetVisibleElements", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HighlightPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTest", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTestEx", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTestScrollButtons", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsActive", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsVisible", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsWindows7Look", "AFXRIBBONCATEGORY/CMFCRibbonCategory::NotifyControlCommand", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnCancelMode", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDraw", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDrawImage", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDrawMenuBorder", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnKey", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnLButtonDown", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnLButtonUp", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnMouseMove", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnRTLChanged", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnScrollHorz", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnUpdateCmdUI", "AFXRIBBONCATEGORY/CMFCRibbonCategory::RecalcLayout", "AFXRIBBONCATEGORY/CMFCRibbonCategory::RemovePanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::ReposPanels", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetCollapseOrder", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetKeys", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetName", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetTabColor"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCategory [MFC], CMFCRibbonCategory", "CMFCRibbonCategory [MFC], AddHidden", "CMFCRibbonCategory [MFC], AddPanel", "CMFCRibbonCategory [MFC], CopyFrom", "CMFCRibbonCategory [MFC], FindByData", "CMFCRibbonCategory [MFC], FindByID", "CMFCRibbonCategory [MFC], FindPanelWithElem", "CMFCRibbonCategory [MFC], GetContextID", "CMFCRibbonCategory [MFC], GetData", "CMFCRibbonCategory [MFC], GetDroppedDown", "CMFCRibbonCategory [MFC], GetElements", "CMFCRibbonCategory [MFC], GetElementsByID", "CMFCRibbonCategory [MFC], GetFirstVisibleElement", "CMFCRibbonCategory [MFC], GetFocused", "CMFCRibbonCategory [MFC], GetHighlighted", "CMFCRibbonCategory [MFC], GetImageCount", "CMFCRibbonCategory [MFC], GetImageSize", "CMFCRibbonCategory [MFC], GetItemIDsList", "CMFCRibbonCategory [MFC], GetLastVisibleElement", "CMFCRibbonCategory [MFC], GetLargeImages", "CMFCRibbonCategory [MFC], GetMaxHeight", "CMFCRibbonCategory [MFC], GetName", "CMFCRibbonCategory [MFC], GetPanel", "CMFCRibbonCategory [MFC], GetPanelCount", "CMFCRibbonCategory [MFC], GetPanelFromPoint", "CMFCRibbonCategory [MFC], GetPanelIndex", "CMFCRibbonCategory [MFC], GetParentButton", "CMFCRibbonCategory [MFC], GetParentMenuBar", "CMFCRibbonCategory [MFC], GetParentRibbonBar", "CMFCRibbonCategory [MFC], GetRect", "CMFCRibbonCategory [MFC], GetSmallImages", "CMFCRibbonCategory [MFC], GetTabColor", "CMFCRibbonCategory [MFC], GetTabRect", "CMFCRibbonCategory [MFC], GetTextTopLine", "CMFCRibbonCategory [MFC], GetVisibleElements", "CMFCRibbonCategory [MFC], HighlightPanel", "CMFCRibbonCategory [MFC], HitTest", "CMFCRibbonCategory [MFC], HitTestEx", "CMFCRibbonCategory [MFC], HitTestScrollButtons", "CMFCRibbonCategory [MFC], IsActive", "CMFCRibbonCategory [MFC], IsVisible", "CMFCRibbonCategory [MFC], IsWindows7Look", "CMFCRibbonCategory [MFC], NotifyControlCommand", "CMFCRibbonCategory [MFC], OnCancelMode", "CMFCRibbonCategory [MFC], OnDraw", "CMFCRibbonCategory [MFC], OnDrawImage", "CMFCRibbonCategory [MFC], OnDrawMenuBorder", "CMFCRibbonCategory [MFC], OnKey", "CMFCRibbonCategory [MFC], OnLButtonDown", "CMFCRibbonCategory [MFC], OnLButtonUp", "CMFCRibbonCategory [MFC], OnMouseMove", "CMFCRibbonCategory [MFC], OnRTLChanged", "CMFCRibbonCategory [MFC], OnScrollHorz", "CMFCRibbonCategory [MFC], OnUpdateCmdUI", "CMFCRibbonCategory [MFC], RecalcLayout", "CMFCRibbonCategory [MFC], RemovePanel", "CMFCRibbonCategory [MFC], ReposPanels", "CMFCRibbonCategory [MFC], SetCollapseOrder", "CMFCRibbonCategory [MFC], SetData", "CMFCRibbonCategory [MFC], SetKeys", "CMFCRibbonCategory [MFC], SetName", "CMFCRibbonCategory [MFC], SetTabColor"]
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCategory Class
 
@@ -119,7 +112,7 @@ CMFCRibbonPanel* pPanel = pCategory->AddPanel (
 
 The following diagram shows a figure of the Home category from the RibbonApp sample application.
 
-![CMFCRibbonCategory image](../../mfc/reference/media/cmfcribboncategory.png "cmfcribboncategory")
+![Home category from the RibbonApp sample application](../../mfc/reference/media/cmfcribboncategory.png "Home category from the RibbonApp sample application")
 
 ## Inheritance Hierarchy
 
@@ -1314,7 +1307,7 @@ Color can be one of the following values:
 
 - AFX_CategoryColor_Violet
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "make_public | Microsoft Docs"
-ms.custom: ""
+title: "make_public"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.make_public", "make_public_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, make_public", "make_public pragma"]
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # make_public
 Indicates that a native type should have public assembly accessibility.
@@ -58,6 +51,6 @@ public ref struct A {
 };
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

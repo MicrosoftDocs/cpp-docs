@@ -1,16 +1,9 @@
 ---
-title: "CMutex Class | Microsoft Docs"
-ms.custom: ""
+title: "CMutex Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMutex", "AFXMT/CMutex", "AFXMT/CMutex::CMutex"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMutex [MFC], CMutex"]
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMutex Class
 
@@ -83,8 +76,7 @@ To access or release a `CMutex` object, create a [CMultiLock](../../mfc/referenc
 > [!IMPORTANT]
 >  After creating the `CMutex` object, use [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to ensure that the mutex did not already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
 
-## See Also
+## See also
 
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

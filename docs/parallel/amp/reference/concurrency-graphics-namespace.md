@@ -1,15 +1,8 @@
 ---
-title: "Concurrency::graphics Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::graphics Namespace"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["AMP_GRAPHICS/Concurrency"]
-dev_langs: ["C++"]
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::graphics Namespace
 
@@ -84,6 +77,6 @@ namespace graphics;
 
 **Namespace:** Concurrency
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

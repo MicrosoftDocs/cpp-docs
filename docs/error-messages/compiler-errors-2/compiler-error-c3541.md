@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3541 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3541"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3541"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3541"]
 ms.assetid: 252cfd4c-5fd2-415e-a17d-6b0c254350db
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3541
 
 'type': typeid cannot be applied to a type that contains 'auto'
 
-The [typeid](../../windows/typeid-cpp-component-extensions.md) operator cannot be applied to the indicated type because it contains the `auto` specifier.
+The [typeid](../../extensions/typeid-cpp-component-extensions.md) operator cannot be applied to the indicated type because it contains the `auto` specifier.
 
 ## Example
 
@@ -34,8 +27,8 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)<br/>
 [/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[typeid](../../windows/typeid-cpp-component-extensions.md)
+[typeid](../../extensions/typeid-cpp-component-extensions.md)

@@ -1,19 +1,12 @@
 ---
-title: "mbsrtowcs_s | Microsoft Docs"
-ms.custom: ""
+title: "mbsrtowcs_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["mbsrtowcs_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["mbsrtowcs_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mbsrtowcs_s function"]
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # mbsrtowcs_s
 

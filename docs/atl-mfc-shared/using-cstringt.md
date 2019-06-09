@@ -1,15 +1,8 @@
 ---
-title: "Using CStringT | Microsoft Docs"
-ms.custom: ""
+title: "Using CStringT"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStringT class, using"]
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CStringT
 
@@ -28,7 +21,6 @@ Explains how to export your own string class from a DLL using the CStringT<> tem
 [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md).<br/>
 Provides reference information about the shared `CStringT` class.
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
-

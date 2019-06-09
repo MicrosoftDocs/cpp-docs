@@ -1,15 +1,8 @@
 ---
-title: "Service Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "Service Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_SERVICE_MAP", "atlcom/ATL::END_SERVICE_MAP", "atlcom/ATL::SERVICE_ENTRY", "atlcom/ATL::SERVICE_ENTRY_CHAIN"]
-dev_langs: ["C++"]
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Service Map Macros
 
@@ -147,6 +140,6 @@ The object that implements the interface might also implement interfaces that ar
 
 Two different services, such as SID_SMyService and SID_SYourService, can both specify the use of the same interface, even though the implementation of the interface might have nothing in common between the two services. This works, because a call to `QueryService` (SID_SMyService, IID_IDispatch) can return a different object than `QueryService` (SID_SYourService, IID_IDispatch). Object identity is not assumed when you specify a different service identifier.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

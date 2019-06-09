@@ -1,16 +1,9 @@
 ---
-title: "if-else Statement (C++) | Microsoft Docs"
-ms.custom: ""
+title: "if-else Statement (C++)"
 ms.date: "07/17/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["else_cpp", "if_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]", "if keyword [C++], if-else"]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # if-else Statement (C++)
 
@@ -26,24 +19,24 @@ Controls conditional branching. Statements in the *if-block* are executed only i
 ```cpp
 if ( expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
 // Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )
 {
-   statement1;
+   statement1;
    ...
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 
@@ -55,7 +48,7 @@ if constexpr (expression)
 }
 else  // optional
 {
-   statement2;
+   statement2;
    ...
 }
 ```

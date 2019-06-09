@@ -1,19 +1,12 @@
 ---
-title: "setbuf | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "setbuf"
+ms.date: "04/08/2019"
 apiname: ["setbuf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["setbuf"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["setbuf function", "stream buffering"]
 ms.assetid: 13beda22-7b56-455d-8a6c-f2eb636885b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # setbuf
 
@@ -38,9 +31,9 @@ User-allocated buffer.
 
 ## Remarks
 
-The **setbuf** function controls buffering for *stream*. The *stream* argument must refer to an open file that has not been read or written. If the *buffer* argument is **NULL**, the stream is un-buffered. If not, the buffer must point to a character array of length **BUFSIZ**, where **BUFSIZ** is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The **stderr** stream is un-buffered by default, but you can use **setbuf** to assign buffers to **stderr**.
+The **setbuf** function controls buffering for *stream*. The *stream* argument must refer to an open file that hasn't been read or written. If the *buffer* argument is **NULL**, the stream is unbuffered. If not, the buffer must point to a character array of length **BUFSIZ**, where **BUFSIZ** is the buffer size as defined in STDIO.H. The user-specified buffer, instead of the default system-allocated buffer for the given stream, is used for I/O buffering. The **stderr** stream is unbuffered by default, but you can use **setbuf** to assign buffers to **stderr**.
 
-**setbuf** has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. **setbuf** is retained for compatibility with existing code.
+**setbuf** has been replaced by [setvbuf](setvbuf.md), which is the preferred routine for new code. Unlike **setvbuf**, **setbuf** has no way of reporting errors. **setvbuf** also lets you control both the buffering mode and the buffer size. **setbuf** exists for compatibility with existing code.
 
 ## Requirements
 

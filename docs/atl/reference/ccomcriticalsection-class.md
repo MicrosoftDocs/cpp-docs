@@ -1,16 +1,9 @@
 ---
-title: "CComCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CComCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComCriticalSection", "ATLCORE/ATL::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::Init", "ATLCORE/ATL::CComCriticalSection::Lock", "ATLCORE/ATL::CComCriticalSection::Term", "ATLCORE/ATL::CComCriticalSection::Unlock", "ATLCORE/ATL::CComCriticalSection::m_sec"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComCriticalSection class"]
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComCriticalSection Class
 
@@ -137,7 +130,7 @@ Returns S_OK.
 
 To first obtain ownership, the thread must call the [Lock](#lock) method. Each call to `Lock` requires a corresponding call to `Unlock` to release ownership of the critical section.
 
-## See Also
+## See also
 
 [CComFakeCriticalSection Class](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "ATL Module Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Module Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComModule class, what's changed", "ATL, module classes", "module classes"]
 ms.assetid: fd75382d-c955-46ba-a38e-37728b7fa00f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Module Classes
 
@@ -53,8 +46,7 @@ The functionality of `CComModule` was distributed into several new classes for t
 
    Init and Term methods have moved into the constructors and destructors for the module classes; there is no longer a need to call Init and Term.
 
-## See Also
+## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
 [Class Overview](../atl/atl-class-overview.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "How to: Convert an Existing MFC Ribbon to a Ribbon Resource | Microsoft Docs"
-ms.custom: ""
+title: "How to: Convert an Existing MFC Ribbon to a Ribbon Resource"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ribbon resource, converting from an MFC ribbon", "MFC ribbon, converting to a ribbon resource"]
 ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Convert an Existing MFC Ribbon to a Ribbon Resource
 
@@ -23,7 +16,6 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ```
     m_wndRibbonBar.SaveToXMLFile("RibbonOutput.xml");
-
 ```
 
    Save and close the file.
@@ -40,12 +32,10 @@ You must have an existing MFC project that has code that uses the MFC ribbon cla
 
 ```
     m_wndRibbonBar.LoadFromResource(IDR_RIBBON1);
-
 ```
 
 1. Build the project and run the program.
 
-## See Also
+## See also
 
 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
-

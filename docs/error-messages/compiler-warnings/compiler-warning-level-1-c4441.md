@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4441 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4441"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4441"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4441"]
 ms.assetid: 7fc540a5-e41f-47cf-aa37-b2b699c2685e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4441
 

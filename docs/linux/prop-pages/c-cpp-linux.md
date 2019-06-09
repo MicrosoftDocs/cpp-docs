@@ -1,15 +1,8 @@
 ---
-title: "C/C++ Properties (Linux C++) | Microsoft Docs"
-ms.custom: ""
+title: "C/C++ Properties (Linux C++)"
 ms.date: "9/26/2017"
-ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: "Linux"
-ms.topic: "conceptual"
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
-author: "mikeblome"
-ms.author: "mblome"
 f1_keywords: []
-ms.workload: ["cplusplus", "linux"]
 ---
 
 # C/C++ Properties (Linux C++)

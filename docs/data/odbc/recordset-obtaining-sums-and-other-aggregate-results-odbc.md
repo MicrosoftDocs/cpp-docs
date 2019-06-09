@@ -1,17 +1,13 @@
 ---
-title: "Recordset: Obtaining SUMs and Other Aggregate Results (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["SQL, retrieving aggregate values from recordsets", "recordsets, retrieving SQL aggregate values", "retrieving SQL aggregate values from recordsets", "ODBC recordsets, retrieving SQL aggregate values", "SQL aggregate values", "SQL Server projects, retrieving aggregate values from recordsets", "SQL aggregate values, retrieving from recordsets"]
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
 
@@ -82,7 +78,7 @@ To:
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_dblSumSales, m_pSet);
 ```
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: How Recordsets Select Records (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

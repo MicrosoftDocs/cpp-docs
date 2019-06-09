@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Error RC2165 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Error RC2165"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC2165"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC2165"]
 ms.assetid: bf7d4630-9355-47e3-87fa-6693fcf0ef0d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Error RC2165
 

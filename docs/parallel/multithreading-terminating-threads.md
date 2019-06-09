@@ -1,16 +1,9 @@
 ---
-title: "Multithreading: Terminating Threads in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading: Terminating Threads in MFC"
 ms.date: "08/27/2018"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["premature thread termination", "starting threads", "threading [MFC], terminating threads", "multithreading [C++], terminating threads", "threading [C++], stopping threads", "terminating threads", "stopping threads", "AfxEndThread method"]
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading: Terminating Threads in MFC
 
@@ -26,7 +19,7 @@ Two normal situations cause a thread to terminate: the controlling function exit
 
 For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) function or a **return** statement. Typically, 0 signifies successful completion, but that is up to you.
 
-For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) in the Windows SDK. The only parameter that `PostQuitMessage` takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.
+For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](/windows/desktop/api/winuser/nf-winuser-postquitmessage) in the Windows SDK. The only parameter that `PostQuitMessage` takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.
 
 ##  <a name="_core_premature_thread_termination"></a> Premature Thread Termination
 
@@ -48,7 +41,7 @@ Retrieving the exit code of [CWinThread](../mfc/reference/cwinthread-class.md) o
 
 Either method allows you to determine why a `CWinThread` object terminated.
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)<br/>
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)<br/>

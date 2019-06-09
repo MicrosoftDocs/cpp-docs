@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Error LNK1313 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK1313"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK1313"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1313"]
 ms.assetid: 5df0b72e-bb3f-428c-8d84-6084238f9827
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1313
 

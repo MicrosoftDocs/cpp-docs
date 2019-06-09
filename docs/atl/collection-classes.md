@@ -1,15 +1,9 @@
 ---
-title: "ATL Collection Classes | Microsoft Docs"
-ms.custom: ""
+title: "ATL Collection Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes"]
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Collection Classes
 
@@ -31,9 +25,9 @@ The following classes provide support for arrays, lists, maps, and also traits m
 
 - [CComQIPtrElementTraits](../atl/reference/ccomqiptrelementtraits-class.md) This class provides methods, static functions, and typedefs useful when creating collections of COM interface pointers.
 
-- [CComSafeArray](../atl/reference/ccomsafearray-class.md) This class is a wrapper for the [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) structure.
+- [CComSafeArray](../atl/reference/ccomsafearray-class.md) This class is a wrapper for the [SAFEARRAY Data Type](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) structure.
 
-- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) This class is a wrapper for a [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
+- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) This class is a wrapper for a [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.
 
 - [CComUnkArray](../atl/reference/ccomunkarray-class.md) This class stores **IUnknown** pointers and is designed to be used as a parameter to the [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) template class.
 
@@ -87,8 +81,7 @@ The following classes provide support for arrays, lists, maps, and also traits m
 
 [ATL Collection Classes](../atl/atl-collection-classes.md)
 
-## See Also
+## See also
 
 [Class Overview](../atl/atl-class-overview.md)<br/>
 [Collection Classes](../atl/atl-collection-classes.md)
-

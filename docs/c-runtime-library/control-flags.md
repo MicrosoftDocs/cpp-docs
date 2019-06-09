@@ -1,16 +1,9 @@
 ---
-title: "Control Flags | Microsoft Docs"
-ms.custom: ""
+title: "Control Flags"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.flags"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["flags, control", "heap allocation, control flags", "debug heap, control flags"]
 ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Control Flags
 
@@ -24,6 +17,6 @@ The debug version of the Microsoft C run-time library uses the following flags t
 
 These flags can be defined with a /D command-line option or with a `#define` directive. When the flag is defined with `#define`, the directive must appear before the header file include statement for the routine declarations.
 
-## See Also
+## See also
 
 [Global Variables and Standard Types](../c-runtime-library/global-variables-and-standard-types.md)

@@ -1,15 +1,8 @@
 ---
-title: "Containers: Advanced Features | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Advanced Features"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Advanced Features
 
@@ -31,7 +24,7 @@ The article [Servers: Implementing a Server](../mfc/servers-implementing-a-serve
 
 - Override `COleClientItem::CanActivate` to avoid editing items in place while the server itself is being used to edit in place.
 
-   For example, the MFC OLE sample [OCLIENT](../visual-cpp-samples.md) has embedded an item created by your container/server application. You open the OCLIENT application and in-place edit the item created by your container/server application. While editing your application's item, you decide you want to embed an item created by the MFC OLE sample [HIERSVR](../visual-cpp-samples.md). To do this, you cannot use in-place activation. You must fully open HIERSVR to activate this item. Because the Microsoft Foundation Class Library does not support this OLE feature, overriding `COleClientItem::CanActivate` allows you to check for this situation and prevent a possible run-time error in your application.
+   For example, the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) has embedded an item created by your container/server application. You open the OCLIENT application and in-place edit the item created by your container/server application. While editing your application's item, you decide you want to embed an item created by the MFC OLE sample [HIERSVR](../overview/visual-cpp-samples.md). To do this, you cannot use in-place activation. You must fully open HIERSVR to activate this item. Because the Microsoft Foundation Class Library does not support this OLE feature, overriding `COleClientItem::CanActivate` allows you to check for this situation and prevent a possible run-time error in your application.
 
 If you are creating a new application and want it to function as a container/server application, choose that option in the OLE Options dialog box in the application wizard and this support will be created automatically. For more information, see the article [Overview: Creating an ActiveX Control Container](../mfc/reference/creating-an-mfc-activex-control-container.md). For information about MFC samples, see MFC Samples.
 
@@ -61,10 +54,9 @@ The Links to Embedded Objects feature enables a user to create a document with a
 
          If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.
 
-The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.
+The MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Servers](../mfc/servers.md)
-

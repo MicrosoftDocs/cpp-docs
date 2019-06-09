@@ -1,16 +1,9 @@
 ---
-title: "GetProcAddress | Microsoft Docs"
-ms.custom: ""
+title: "GetProcAddress"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
 f1_keywords: ["GetProcAddress"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], GetProcAddress", "ordinal exports [C++]", "GetProcAddress method"]
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # GetProcAddress
 
@@ -52,18 +45,18 @@ You can only obtain the export ordinal if the DLL you are linking to is built wi
 
 ## What do you want to do?
 
-- [How to link implicitly to a DLL](../build/linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#linking-implicitly)
 
-- [Determine which linking method to use](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [Link an executable to a DLL](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 
 ## What do you want to know more about?
 
-- [LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)
+- [LoadLibrary and AfxLoadLibrary](loadlibrary-and-afxloadlibrary.md)
 
 - [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)
 
-- [Exporting from a DLL Using DEF Files](../build/exporting-from-a-dll-using-def-files.md)
+- [Exporting from a DLL Using DEF Files](exporting-from-a-dll-using-def-files.md)
 
-## See Also
+## See also
 
-[DLLs in Visual C++](../build/dlls-in-visual-cpp.md)
+[Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md)

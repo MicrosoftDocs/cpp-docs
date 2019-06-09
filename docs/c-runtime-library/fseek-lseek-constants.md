@@ -1,25 +1,16 @@
 ---
-title: "fseek, _lseek Constants | Microsoft Docs"
-ms.custom: ""
+title: "fseek, _lseek Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["SEEK_END", "SEEK_SET", "SEEK_CUR"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SEEK_SET constant", "SEEK_END constant", "SEEK_CUR constant"]
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fseek, _lseek Constants
 
 ## Syntax
 
 ```
-
 #include <stdio.h>
-
 ```
 
 ## Remarks
@@ -32,7 +23,7 @@ The *origin* argument specifies the initial position and can be one of the follo
 |`SEEK_CUR`|Current position of file pointer|
 |`SEEK_SET`|Beginning of file|
 
-## See Also
+## See also
 
 [fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)<br/>
 [_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)<br/>

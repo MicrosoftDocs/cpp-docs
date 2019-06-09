@@ -1,16 +1,9 @@
 ---
-title: "choice Class | Microsoft Docs"
-ms.custom: ""
+title: "choice Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["choice", "AGENTS/concurrency::choice", "AGENTS/concurrency::choice::choice", "AGENTS/concurrency::choice::accept", "AGENTS/concurrency::choice::acquire_ref", "AGENTS/concurrency::choice::consume", "AGENTS/concurrency::choice::has_value", "AGENTS/concurrency::choice::index", "AGENTS/concurrency::choice::link_target", "AGENTS/concurrency::choice::release", "AGENTS/concurrency::choice::release_ref", "AGENTS/concurrency::choice::reserve", "AGENTS/concurrency::choice::unlink_target", "AGENTS/concurrency::choice::unlink_targets", "AGENTS/concurrency::choice::value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["choice class"]
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # choice Class
 
@@ -199,7 +192,6 @@ Checks whether this `choice` messaging block has been initialized with a value y
 
 ```
 bool has_value() const;
-
 ```
 
 ### Return Value
@@ -345,7 +337,7 @@ The payload of the message.
 
 Because a `choice` messaging block can take inputs with different payload types, you must specify the type of the payload at the point of retrieval. You can determine the type based on the result of the `index` method.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [join Class](join-class.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Your Role in Working with a Record View  (MFC Data Access) | Microsoft Docs"
-ms.custom: ""
+title: "Your Role in Working with a Record View  (MFC Data Access)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record views, customizing default code", "MFC, record views"]
 ms.assetid: 691e89a5-ff21-4ca3-9278-69d4678288bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Your Role in Working with a Record View  (MFC Data Access)
 
@@ -30,7 +23,7 @@ The following table shows what you typically must do to work with a record view 
 
 Form-based programming is only one approach to working with a database. For information about applications using some other user interface, or no user interface, see [MFC: Using Database Classes with Documents and Views](../data/mfc-using-database-classes-with-documents-and-views.md) and [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md). For alternative approaches to displaying database records, see classes [CListView](../mfc/reference/clistview-class.md) and [CTreeView](../mfc/reference/ctreeview-class.md).
 
-## See Also
+## See also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [ODBC Driver List](../data/odbc/odbc-driver-list.md)

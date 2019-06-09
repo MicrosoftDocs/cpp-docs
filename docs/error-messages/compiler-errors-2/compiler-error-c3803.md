@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3803 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3803"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3803"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3803"]
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3803
 

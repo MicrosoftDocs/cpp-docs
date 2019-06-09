@@ -1,14 +1,7 @@
 ---
-title: "Right Shifts | Microsoft Docs"
-ms.custom: ""
+title: "Right Shifts"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: c878e97d-ea3c-4c6b-90a8-b1b24b2d5b19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Right Shifts
 
@@ -20,6 +13,6 @@ Right shifts preserve the sign bit of signed integral types. When a signed integ
 
 When an unsigned integer shifts right, the most-significant bit is cleared. For example, if 0xF000 is unsigned, the result is 0x7800. Shifting an `unsigned` or positive `int` right 32 times produces 0x00000000.
 
-## See Also
+## See also
 
 [Integers](../c-language/integers.md)

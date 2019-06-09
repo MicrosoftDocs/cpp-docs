@@ -1,15 +1,8 @@
 ---
-title: "Servers: Implementing In-Place Frame Windows | Microsoft Docs"
-ms.custom: ""
+title: "Servers: Implementing In-Place Frame Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], implementing", "OLE server applications [MFC], frame windows", "servers, in-place frame windows", "frame windows [MFC], in-place", "in-place frame windows"]
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers: Implementing In-Place Frame Windows
 
@@ -45,10 +38,9 @@ The ID for the toolbar bitmap should be the same as the other in-place resources
 
 For more information, see [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md), [COleResizeBar](../mfc/reference/coleresizebar-class.md), and [CDocTemplate::SetServerInfo](../mfc/reference/cdoctemplate-class.md#setserverinfo) in the *Class Library Reference*.
 
-## See Also
+## See also
 
 [Servers](../mfc/servers.md)<br/>
 [Servers: Implementing a Server](../mfc/servers-implementing-a-server.md)<br/>
 [Servers: Implementing Server Documents](../mfc/servers-implementing-server-documents.md)<br/>
 [Servers: Server Items](../mfc/servers-server-items.md)
-

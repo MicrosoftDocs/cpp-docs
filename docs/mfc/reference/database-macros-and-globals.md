@@ -1,16 +1,9 @@
 ---
-title: "Database Macros and Globals | Microsoft Docs"
-ms.custom: ""
+title: "Database Macros and Globals"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["AFXDB/AFX_ODBC_CALL", "AFXDB/AFX_SQL_ASYNC", "AFXDB/AFX_SQL_SYNC", "AFXDB/AfxGetHENV"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["global database functions [MFC]", "database macros [MFC]", "database globals [MFC]", "global functions [MFC], database functions", "macros [MFC], MFC database"]
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Database Macros and Globals
 
@@ -50,10 +43,6 @@ Make sure this call occurs before any base-class call or any added code which ac
 ### Requirements
 
 **Header:** \<afxdll_.h>
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
 
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
@@ -160,6 +149,6 @@ The handle to the ODBC environment currently in use by MFC. Can be `SQL_HENV_NUL
 
   **Header** afxdb.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

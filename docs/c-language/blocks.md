@@ -1,15 +1,8 @@
 ---
-title: "Blocks | Microsoft Docs"
-ms.custom: ""
+title: "Blocks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["function definitions, blocks in code", "blocks", "compound statements", "statements, compound"]
 ms.assetid: be231a92-c712-464e-ae25-a4becb20f7f5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Blocks
 
@@ -17,6 +10,6 @@ A sequence of declarations, definitions, and statements enclosed within curly br
 
 Note that while all compound statements are enclosed within curly braces, not everything enclosed within curly braces constitutes a compound statement. For example, although the specifications of array, structure, or enumeration elements can appear within curly braces, they are not compound statements.
 
-## See Also
+## See also
 
 [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

@@ -1,15 +1,8 @@
 ---
-title: "Form Views (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Form Views (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["user interfaces [MFC], forms", "forms [MFC]", "applications [MFC], forms-based", "forms-based applications [MFC]", "forms [MFC], adding to applications"]
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Form Views (MFC)
 
@@ -34,7 +27,7 @@ When you insert a new form into your application, Visual C++ does the following:
 
      **WS_VISIBLE**=Off
 
-     **WS_CAPTION=**Off
+     **WS_CAPTION**=Off
 
 For applications based on the document/view architecture, the **New Form** command (right-click in Class View) also:
 
@@ -58,6 +51,6 @@ For more information, see:
 
 - [Inserting a Form into a Project](../mfc/inserting-a-form-into-a-project.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

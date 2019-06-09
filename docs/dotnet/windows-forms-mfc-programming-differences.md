@@ -1,15 +1,8 @@
 ---
-title: "Windows Forms-MFC Programming Differences | Microsoft Docs"
-ms.custom: ""
+title: "Windows Forms-MFC Programming Differences"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], compared to MFC"]
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Forms/MFC Programming Differences
 
@@ -53,6 +46,6 @@ The following MFC view or document and command routing features have no equivale
 
    MFC has a command update mechanism. Therefore, the active view or document is responsible for the state of the UI elements (for example, enabling or disabling a menu item or tool button, and checked states). Windows Forms has no equivalent of a command update mechanism.
 
-## See Also
+## See also
 
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)

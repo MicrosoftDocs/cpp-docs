@@ -1,16 +1,9 @@
 ---
-title: "CEdit Class | Microsoft Docs"
-ms.custom: ""
+title: "CEdit Class"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CEdit", "AFXWIN/CEdit", "AFXWIN/CEdit::CEdit", "AFXWIN/CEdit::CanUndo", "AFXWIN/CEdit::CharFromPos", "AFXWIN/CEdit::Clear", "AFXWIN/CEdit::Copy", "AFXWIN/CEdit::Create", "AFXWIN/CEdit::Cut", "AFXWIN/CEdit::EmptyUndoBuffer", "AFXWIN/CEdit::FmtLines", "AFXWIN/CEdit::GetCueBanner", "AFXWIN/CEdit::GetFirstVisibleLine", "AFXWIN/CEdit::GetHandle", "AFXWIN/CEdit::GetHighlight", "AFXWIN/CEdit::GetLimitText", "AFXWIN/CEdit::GetLine", "AFXWIN/CEdit::GetLineCount", "AFXWIN/CEdit::GetMargins", "AFXWIN/CEdit::GetModify", "AFXWIN/CEdit::GetPasswordChar", "AFXWIN/CEdit::GetRect", "AFXWIN/CEdit::GetSel", "AFXWIN/CEdit::HideBalloonTip", "AFXWIN/CEdit::LimitText", "AFXWIN/CEdit::LineFromChar", "AFXWIN/CEdit::LineIndex", "AFXWIN/CEdit::LineLength", "AFXWIN/CEdit::LineScroll", "AFXWIN/CEdit::Paste", "AFXWIN/CEdit::PosFromChar", "AFXWIN/CEdit::ReplaceSel", "AFXWIN/CEdit::SetCueBanner", "AFXWIN/CEdit::SetHandle", "AFXWIN/CEdit::SetHighlight", "AFXWIN/CEdit::SetLimitText", "AFXWIN/CEdit::SetMargins", "AFXWIN/CEdit::SetModify", "AFXWIN/CEdit::SetPasswordChar", "AFXWIN/CEdit::SetReadOnly", "AFXWIN/CEdit::SetRect", "AFXWIN/CEdit::SetRectNP", "AFXWIN/CEdit::SetSel", "AFXWIN/CEdit::SetTabStops", "AFXWIN/CEdit::ShowBalloonTip", "AFXWIN/CEdit::Undo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CEdit [MFC], CEdit", "CEdit [MFC], CanUndo", "CEdit [MFC], CharFromPos", "CEdit [MFC], Clear", "CEdit [MFC], Copy", "CEdit [MFC], Create", "CEdit [MFC], Cut", "CEdit [MFC], EmptyUndoBuffer", "CEdit [MFC], FmtLines", "CEdit [MFC], GetCueBanner", "CEdit [MFC], GetFirstVisibleLine", "CEdit [MFC], GetHandle", "CEdit [MFC], GetHighlight", "CEdit [MFC], GetLimitText", "CEdit [MFC], GetLine", "CEdit [MFC], GetLineCount", "CEdit [MFC], GetMargins", "CEdit [MFC], GetModify", "CEdit [MFC], GetPasswordChar", "CEdit [MFC], GetRect", "CEdit [MFC], GetSel", "CEdit [MFC], HideBalloonTip", "CEdit [MFC], LimitText", "CEdit [MFC], LineFromChar", "CEdit [MFC], LineIndex", "CEdit [MFC], LineLength", "CEdit [MFC], LineScroll", "CEdit [MFC], Paste", "CEdit [MFC], PosFromChar", "CEdit [MFC], ReplaceSel", "CEdit [MFC], SetCueBanner", "CEdit [MFC], SetHandle", "CEdit [MFC], SetHighlight", "CEdit [MFC], SetLimitText", "CEdit [MFC], SetMargins", "CEdit [MFC], SetModify", "CEdit [MFC], SetPasswordChar", "CEdit [MFC], SetReadOnly", "CEdit [MFC], SetRect", "CEdit [MFC], SetRectNP", "CEdit [MFC], SetSel", "CEdit [MFC], SetTabStops", "CEdit [MFC], ShowBalloonTip", "CEdit [MFC], Undo"]
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CEdit Class
 
@@ -481,11 +474,11 @@ UINT GetLimitText() const;
 
 ### Return Value
 
-The current text limit, in bytes, for this `CEdit` object.
+The current text limit, in TCHARs, for this `CEdit` object.
 
 ### Remarks
 
-The text limit is the maximum amount of text, in bytes, that the edit control can accept.
+The text limit is the maximum amount of text, in TCHARs, that the edit control can accept.
 
 > [!NOTE]
 >  This member function is available beginning with Windows 95 and Windows NT 4.0.
@@ -517,14 +510,14 @@ int GetLine(
 Specifies the line number to retrieve from a multiple-line edit control. Line numbers are zero-based; a value of 0 specifies the first line. This parameter is ignored by a single-line edit control.
 
 *lpszBuffer*<br/>
-Points to the buffer that receives a copy of the line. The first word of the buffer must specify the maximum number of characters that can be copied to the buffer.
+Points to the buffer that receives a copy of the line. The first word of the buffer must specify the maximum number of TCHARs that can be copied to the buffer.
 
 *nMaxLength*<br/>
-Specifies the maximum number of bytes that can be copied to the buffer. `GetLine` places this value in the first word of *lpszBuffer* before making the call to Windows.
+Specifies the maximum number of TCHAR characters that can be copied to the buffer. `GetLine` places this value in the first word of *lpszBuffer* before making the call to Windows.
 
 ### Return Value
 
-The number of bytes actually copied. The return value is 0 if the line number specified by *nIndex* is greater than the number of lines in the edit control.
+The number of characters actually copied. The return value is 0 if the line number specified by *nIndex* is greater than the number of lines in the edit control.
 
 ### Remarks
 
@@ -711,7 +704,7 @@ void LimitText(int nChars = 0);
 ### Parameters
 
 *nChars*<br/>
-Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to UINT_MAX bytes. This is the default behavior.
+Specifies the length (in TCHARs) of the text that the user can enter. If this parameter is 0, the text length is set to UINT_MAX bytes. This is the default behavior.
 
 ### Remarks
 
@@ -1358,10 +1351,10 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/cpp/cedit-class_27.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>

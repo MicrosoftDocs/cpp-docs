@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2075 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2075"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2075"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2075"]
 ms.assetid: 8b1865d2-540b-4117-b982-e7a58a0b6cf7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2075
 

@@ -1,15 +1,8 @@
 ---
-title: "Schedule Groups | Microsoft Docs"
-ms.custom: ""
+title: "Schedule Groups"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["schedule groups"]
 ms.assetid: 03523572-5891-4d17-89ce-fa795605f28b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Schedule Groups
 
@@ -32,9 +25,8 @@ You can also use the [concurrency::ScheduleGroup::ScheduleTask](reference/schedu
 
 For an example that uses schedule groups to control the order of task execution, see [How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Scheduler Instances](../../parallel/concrt/scheduler-instances.md)<br/>
 [How to: Use Schedule Groups to Influence Order of Execution](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)
-

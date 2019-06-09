@@ -1,16 +1,9 @@
 ---
-title: "CMultiPageDHtmlDialog Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
+title: "CMultiPageDHtmlDialog Class"
+ms.date: "03/27/2019"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMultiPageDHtmlDialog Class
 
@@ -29,7 +22,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 |Name|Description|
 |----------|-----------------|
 |[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|Constructs a multipage (wizard-style) DHTML dialog object.|
-|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|
+|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#_dtorcmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|
 
 ## Remarks
 
@@ -116,6 +109,6 @@ Destroys a multipage DHTML dialog object.
 virtual ~CMultiPageDHtmlDialog();
 ```
 
-## See Also
+## See also
 
 [CDHtmlDialog Class](../../mfc/reference/cdhtmldialog-class.md)

@@ -1,15 +1,8 @@
 ---
-title: "Parameters | Microsoft Docs"
-ms.custom: ""
+title: "Parameters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "parameters [C++]", "function arguments, vs. parameters", "parameters [C++], function", "functions [C], parameters", "function parameters, syntax", "ellipses (...), parameters", "... ellipsis"]
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parameters
 
@@ -66,6 +59,6 @@ The order and type of parameters, including any use of the ellipsis notation, mu
 
 The compiler performs the usual arithmetic conversions independently on each parameter and on each argument, if necessary. After conversion, no parameter is shorter than an `int`, and no parameter has **float** type unless the parameter type is explicitly specified as **float** in the prototype. This means, for example, that declaring a parameter as a `char` has the same effect as declaring it as an `int`.
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

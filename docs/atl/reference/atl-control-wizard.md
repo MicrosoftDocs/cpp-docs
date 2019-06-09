@@ -1,16 +1,9 @@
 ---
-title: "ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects", "ATL Control Wizard"]
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Control Wizard
 
@@ -92,9 +85,8 @@ Provides information about the COM functionality for the object.
 
    Sets the name that containers can use instead of the CLSID of the object. This field is not automatically populated. If you do not manually populate this field, the control may not be available to other tools. For example, ActiveX controls that are generated without a `ProgID` are not available in the **Insert ActiveX Control** dialog box. For more information about the dialog box, see [Insert ActiveX Control Dialog Box](../../windows/insert-activex-control-dialog-box.md).
 
-## See Also
+## See also
 
 [ATL Control](../../atl/reference/adding-an-atl-control.md)<br/>
 [Adding Functionality to the Composite Control](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)
-

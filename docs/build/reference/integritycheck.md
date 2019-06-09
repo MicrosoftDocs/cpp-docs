@@ -1,15 +1,8 @@
 ---
-title: "/INTEGRITYCHECK | Microsoft Docs"
-ms.custom: ""
+title: "/INTEGRITYCHECK"
 ms.date: "12/28/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/INTEGRITYCHECK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-INTEGRITYCHECK editbin options", "/INTEGRITYCHECK editbin options", "INTEGRITYCHECK editbin options"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /INTEGRITYCHECK
 
@@ -23,4 +16,4 @@ In the header of the DLL file or executable file, this option sets a flag that r
 
 ## See also
 
-[EDITBIN Options](../../build/reference/editbin-options.md)
+[EDITBIN Options](editbin-options.md)

@@ -1,15 +1,8 @@
 ---
-title: "Dialog Boxes in OLE | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Boxes in OLE"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Boxes in OLE
 
@@ -25,7 +18,7 @@ This dialog box allows the user to control the format used when pasting data int
 This dialog box allows the user to select which icon is displayed to represent the linked or embedded item. Display this dialog box when the user chooses Change Icon from the Edit menu or chooses the Change Icon button in either the Paste Special or Convert dialog boxes. Also display it when the user opens the Insert Object dialog box and chooses Display as Icon. Use the [COleChangeIconDialog](../mfc/reference/colechangeicondialog-class.md) class to display this dialog box.
 
 *Convert*<br/>
-This dialog box allows the user to change the type of an embedded or linked item. For example, if you have embedded a metafile in a compound document and later want to use another application to modify the embedded metafile, you can use the Convert dialog box. This dialog box is usually displayed by clicking *item type* Object on the Edit menu and then, on the cascading menu, clicking Convert. Use the [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) class to display this dialog box. For an example, run the MFC OLE sample [OCLIENT](../visual-cpp-samples.md).
+This dialog box allows the user to change the type of an embedded or linked item. For example, if you have embedded a metafile in a compound document and later want to use another application to modify the embedded metafile, you can use the Convert dialog box. This dialog box is usually displayed by clicking *item type* Object on the Edit menu and then, on the cascading menu, clicking Convert. Use the [COleConvertDialog](../mfc/reference/coleconvertdialog-class.md) class to display this dialog box. For an example, run the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md).
 
 *Edit Links or Update Links*<br/>
 The Edit Links dialog box allows the user to change information about the source of a linked object. The Update Links dialog box verifies the sources of all the linked items in the current dialog box and displays the Edit Links dialog box if necessary. Display the Edit Links dialog box when the user chooses Links from the Edit menu. The Update Links dialog box is usually displayed when a compound document is first opened. Use either the [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) or the [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) class, depending on which dialog box you want to display.
@@ -33,9 +26,8 @@ The Edit Links dialog box allows the user to change information about the source
 *Server Busy or Server Not Responding*<br/>
 The Server Busy dialog box is displayed when the user attempts to activate an item and the server is currently unable to handle the request, usually because the server is in use by another user or task. The Server Not Responding dialog box is displayed if the server does not respond to the activation request at all. These dialog boxes are displayed via `COleMessageFilter`, based on an implementation of the OLE interface `IMessageFilter`, and the user can decide whether to attempt the activation request again. Use the [COleBusyDialog](../mfc/reference/colebusydialog-class.md) class to display this dialog box.
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [OLE](../mfc/ole-in-mfc.md)
-

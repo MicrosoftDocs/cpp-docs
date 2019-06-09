@@ -1,16 +1,9 @@
 ---
-title: "ODBC Classes | Microsoft Docs"
-ms.custom: ""
+title: "ODBC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [MFC], ODBC", "ODBC classes [MFC]"]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ODBC Classes
 
@@ -41,7 +34,6 @@ Encapsulates a handle to storage for a binary large object (BLOB), such as a bit
 [CDBVariant](../mfc/reference/cdbvariant-class.md)<br/>
 Allows you to store a value without worrying about the value's data type. `CDBVariant` tracks the data type of the current value, which is stored in a union.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

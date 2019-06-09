@@ -1,16 +1,9 @@
 ---
-title: "_disable | Microsoft Docs"
-ms.custom: ""
+title: "_disable"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_disable_cpp", "_disable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_disable intrinsic", "rsm instruction", "disable intrinsic"]
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _disable
 
@@ -42,6 +35,6 @@ On ARM platforms, this routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

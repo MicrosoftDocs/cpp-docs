@@ -1,13 +1,7 @@
 ---
-title: "Containers (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Containers (Modern C++)"
 ms.date: "1/18/2018"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers (Modern C++)
 
@@ -40,6 +34,6 @@ For more information about containers, see [C++ Standard Library Containers](../
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

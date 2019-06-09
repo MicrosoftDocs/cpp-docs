@@ -1,16 +1,9 @@
 ---
-title: "#using Directive (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "#using Directive (C++/CLI)"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["friend_as_cpp", "#using", "friend_as", "#using_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["using directive (#using)", "#using directive", "LIBPATH environment variable", "preprocessor, directives"]
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #using Directive (C++/CLI)
 
@@ -104,6 +97,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

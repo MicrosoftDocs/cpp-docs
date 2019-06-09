@@ -1,16 +1,9 @@
 ---
-title: "CDiscreteTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CDiscreteTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::Create", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDiscreteTransition [MFC], CDiscreteTransition", "CDiscreteTransition [MFC], Create", "CDiscreteTransition [MFC], m_dblFinalValue", "CDiscreteTransition [MFC], m_delay", "CDiscreteTransition [MFC], m_hold"]
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDiscreteTransition Class
 
@@ -123,6 +116,6 @@ The amount of time by which to hold the variable at its final value.
 UI_ANIMATION_SECONDS m_hold;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

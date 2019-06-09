@@ -1,19 +1,12 @@
 ---
-title: "abs, labs, llabs, _abs64 | Microsoft Docs"
-ms.custom: ""
+title: "abs, labs, llabs, _abs64"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["abs", "_abs64", "labs", "llabs"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["stdlib/_abs64", "math/abs", "_abs64", "abs", "labs", "math/labs", "llabs", "math/llabs", "cmath/abs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["absolute values", "abs function", "abs64 function", "_abs64 function", "calculating absolute values"]
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # abs, labs, llabs, _abs64
 

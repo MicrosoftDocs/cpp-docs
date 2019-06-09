@@ -1,16 +1,9 @@
 ---
-title: "CInvalidArgException Class | Microsoft Docs"
-ms.custom: ""
+title: "CInvalidArgException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CInvalidArgException", "AFX/CInvalidArgException", "AFX/CInvalidArgException::CInvalidArgException"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInvalidArgException [MFC], CInvalidArgException"]
 ms.assetid: e43d7c67-1157-47f8-817a-804083e8186e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInvalidArgException Class
 
@@ -62,7 +55,7 @@ CInvalidArgException();
 
 Do not use this constructor directly; call the global function **AfxThrowInvalidArgException**.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CSimpleException Class](../../mfc/reference/csimpleexception-class.md)

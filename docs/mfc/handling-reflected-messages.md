@@ -1,15 +1,8 @@
 ---
-title: "Handling Reflected Messages | Microsoft Docs"
-ms.custom: ""
+title: "Handling Reflected Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handling [MFC], reflected messages", "reflected messages, handling"]
 ms.assetid: 147a4e0c-51cc-4447-a8e1-c28b4cece578
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling Reflected Messages
 
@@ -25,6 +18,6 @@ Message reflection lets you reuse your `CWnd`-derived classes more readily. Mess
 
 - [Implement message reflection for an ActiveX control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)
 
-## See Also
+## See also
 
 [Declaring Message Handler Functions](../mfc/declaring-message-handler-functions.md)

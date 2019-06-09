@@ -1,15 +1,8 @@
 ---
-title: "Data Objects and Data Sources (OLE) | Microsoft Docs"
-ms.custom: ""
+title: "Data Objects and Data Sources (OLE)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources (OLE)
 
@@ -31,7 +24,7 @@ The following articles explain how to use data objects and data sources in your 
 
 [Clipboard](../mfc/clipboard.md)
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>

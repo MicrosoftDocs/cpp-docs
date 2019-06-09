@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Performing a Join (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Performing a Join (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["joins [C++], in recordsets", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "filters [C++], join conditions for recordsets", "ODBC recordsets [C++], joins", "recordsets [C++], joining tables"]
 ms.assetid: ca720900-a156-4780-bf01-4293633bea64
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Performing a Join (ODBC)
 
@@ -29,7 +22,7 @@ To select records containing columns from joined tables, you need the following 
 
 You can join more than two tables in the same way by equating multiple pairs of columns, each pair joined by the SQL keyword **AND**.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>

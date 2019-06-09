@@ -1,16 +1,9 @@
 ---
-title: "_SCL_SECURE_NO_WARNINGS | Microsoft Docs"
-ms.custom: ""
+title: "_SCL_SECURE_NO_WARNINGS"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]
 ms.assetid: ef0ddea9-7c62-4b53-8b64-5f4fd369776f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _SCL_SECURE_NO_WARNINGS
 

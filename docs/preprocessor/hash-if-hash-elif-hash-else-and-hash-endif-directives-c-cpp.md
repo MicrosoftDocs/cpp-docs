@@ -1,16 +1,9 @@
 ---
-title: "#if, #elif, #else, and #endif Directives (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#if, #elif, #else, and #endif Directives (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#else", "#endif", "#if", "#elif", "defined", "__has_include"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["#elif directive", "conditional compilation, directives", "endif directive (#endif)", "preprocessor, directives", "#else directive", "#endif directive", "if directive (#if)", "else directive (#else)", "#if directive", "elif directive (#elif)", "defined directive"]
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #if, #elif, #else, and #endif Directives (C/C++)
 
@@ -175,6 +168,6 @@ The preceding code checks to see if the symbolic constant `EXAMPLE_H` is defined
 #endif
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

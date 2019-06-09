@@ -1,15 +1,8 @@
 ---
-title: "Bottomless Rich Edit Controls | Microsoft Docs"
-ms.custom: ""
+title: "Bottomless Rich Edit Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["bottomless rich edit controls", "rich edit controls [MFC], bottomless", "CRichEditCtrl class [MFC], bottomless"]
 ms.assetid: 2877dd32-1e9a-4fd1-98c0-66dcbbeef1de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Bottomless Rich Edit Controls
 
@@ -21,8 +14,7 @@ You can force a bottomless rich edit control to send an **EN_REQUESTRESIZE** not
 
 To receive **EN_REQUESTRESIZE** notification messages, you must enable the notification by using the `SetEventMask` member function.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

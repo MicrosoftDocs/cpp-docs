@@ -1,19 +1,12 @@
 ---
-title: "set_unexpected (CRT) | Microsoft Docs"
-ms.custom: ""
+title: "set_unexpected (CRT)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["set_unexpected"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["set_unexpected"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["set_unexpected function", "unexpected function", "exception handling, termination"]
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # set_unexpected (CRT)
 

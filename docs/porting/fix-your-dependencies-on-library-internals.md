@@ -1,15 +1,8 @@
 ---
-title: "Fix your dependencies on library internals | Microsoft Docs"
-ms.custom: ""
+title: "Fix your dependencies on library internals"
 ms.date: "05/24/2017"
-ms.technology: ["cpp-language"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-helpviewer_keywords: ["library internals in an upgraded Visual C++ project", "_Hash_seq in an upgraded Visual C++ project"]
+helpviewer_keywords: ["library internals in an upgraded Visual Studio C++ project", "_Hash_seq in an upgraded Visual Studio C++ project"]
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fix your dependencies on library internals
 

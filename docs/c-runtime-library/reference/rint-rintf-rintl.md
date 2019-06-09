@@ -1,19 +1,12 @@
 ---
-title: "rint, rintf, rintl | Microsoft Docs"
-ms.custom: ""
+title: "rint, rintf, rintl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["rintf", "rintl", "rint"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["rintf", "rintl", "rint"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rintf function", "rint function", "rintl function"]
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # rint, rintf, rintl
 

@@ -1,16 +1,9 @@
 ---
-title: "is_error_condition_enum Class | Microsoft Docs"
-ms.custom: ""
+title: "is_error_condition_enum Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["system_error/std::is_error_condition_enum"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is_error_condition_enum class"]
 ms.assetid: 752bb87a-c61c-4304-9254-5aaf228b59c0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is_error_condition_enum Class
 

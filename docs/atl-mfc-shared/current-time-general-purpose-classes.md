@@ -1,15 +1,8 @@
 ---
-title: "Current Time: General Purpose Classes | Microsoft Docs"
-ms.custom: ""
+title: "Current Time: General Purpose Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["time, setting current", "current time, CTime object", "procedures, getting current time", "initializing objects, with the current time", "time, getting current"]
 ms.assetid: c39e6775-6a92-4b27-95a7-5c86ed371d8a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Current Time: General Purpose Classes
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3482 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3482"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3482"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3482"]
 ms.assetid: bf99558e-bef4-421c-bb16-dcd9c54c1011
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3482
 
@@ -42,6 +35,6 @@ public:
 };
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

@@ -1,27 +1,8 @@
 ---
-title: "Windows Operations (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Windows Operations (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
-helpviewer_keywords: ["Windows [C++], Windows-specific tasks", ".NET Framework [C++], Windows operations", "Visual C++, Windows operations", "Windows operations [C++]",
-    ".NET Framework, shutdown", "shutdown", "termination", "applications [C++], shutdown",
-    "Visual C++, user interactive state", "user interactive state",
-    "Visual C++, reading from Windows Registry", "registry, reading",
-    "performance counters", "performance counters, reading Windows performance counters", "performance monitoring, Windows performance counters", "performance, counters", "counters, reading Windows performance counters", "performance", "performance monitoring",
-    "text, retrieving from Clipboard", "Clipboard, retrieving text",
-    "current user names", "user names, retrieving", "UserName string",
-    ".NET Framework, version", "Version property, retrieving .NET Framework version",
-    "computer name, retrieving", "machine name, retrieving", "computer name",
-    "Windows [C++], version", "Windows [C++], retrieving version using Visual C++",
-    "time, elapsed since startup", "counters, elapsed time", "startup, time elapsed since", "tick counts", "startup",
-    "text, storing in Clipboard", "Clipboard, storing text",
-    "registry, writing to", "Visual C++, writing to Windows Registry"]
+helpviewer_keywords: ["Windows [C++], Windows-specific tasks", ".NET Framework [C++], Windows operations", "Visual C++, Windows operations", "Windows operations [C++]", ".NET Framework, shutdown", "shutdown", "termination", "applications [C++], shutdown", "Visual C++, user interactive state", "user interactive state", "Visual C++, reading from Windows Registry", "registry, reading", "performance counters", "performance counters, reading Windows performance counters", "performance monitoring, Windows performance counters", "performance, counters", "counters, reading Windows performance counters", "performance", "performance monitoring", "text, retrieving from Clipboard", "Clipboard, retrieving text", "current user names", "user names, retrieving", "UserName string", ".NET Framework, version", "Version property, retrieving .NET Framework version", "computer name, retrieving", "machine name, retrieving", "computer name", "Windows [C++], version", "Windows [C++], retrieving version using Visual C++", "time, elapsed since startup", "counters, elapsed time", "startup, time elapsed since", "tick counts", "startup", "text, storing in Clipboard", "Clipboard, storing text", "registry, writing to", "Visual C++, writing to Windows Registry"]
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Operations (C++/CLI)
 
@@ -476,12 +457,12 @@ int main()
 
 ### Remarks
 
-You can use the .NET Framework to access the registry with the <xref:Microsoft.Win32.Registry> and [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) classes, which are both defined in the <xref:Microsoft.Win32> namespace. The **Registry** class is a container for static instances of the <xref:Microsoft.Win32.RegistryKey> class. Each instance represents a root registry node. The instances are <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, and <xref:Microsoft.Win32.Registry.Users>.
+You can use the .NET Framework to access the registry with the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes, which are both defined in the <xref:Microsoft.Win32> namespace. The **Registry** class is a container for static instances of the <xref:Microsoft.Win32.RegistryKey> class. Each instance represents a root registry node. The instances are <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, and <xref:Microsoft.Win32.Registry.Users>.
 
 ## Related Sections
 
 <xref:System.Environment>
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

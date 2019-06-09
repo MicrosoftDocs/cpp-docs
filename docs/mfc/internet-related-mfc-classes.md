@@ -1,15 +1,8 @@
 ---
-title: "Internet-Related MFC Classes | Microsoft Docs"
-ms.custom: ""
+title: "Internet-Related MFC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Internet classes"]
 ms.assetid: e50c6b39-4b65-4b8a-8101-8934d0780723
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Internet-Related MFC Classes
 
@@ -65,7 +58,6 @@ For information about Internet-related classes and functions, see:
 
 - [CInternetException](../mfc/reference/cinternetexception-class.md)
 
-## See Also
+## See also
 
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
-

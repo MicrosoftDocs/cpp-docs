@@ -1,16 +1,9 @@
 ---
-title: "raw_interfaces_only | Microsoft Docs"
-ms.custom: ""
+title: "raw_interfaces_only"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["raw_interfaces_only"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["raw_interfaces_only attribute"]
 ms.assetid: 87056c6d-3f34-4248-af58-f5775a35bfb7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # raw_interfaces_only
 **C++ Specific**
@@ -31,7 +24,7 @@ This attribute allows you to expose only the low-level contents of the type libr
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

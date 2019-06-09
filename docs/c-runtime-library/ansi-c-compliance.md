@@ -1,16 +1,9 @@
 ---
-title: "ANSI C Compliance | Microsoft Docs"
-ms.custom: ""
+title: "ANSI C Compliance"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["Ansi"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["underscores, leading", "compatibility [C++], ANSI C", "compliance with ANSI C", "conventions [C++], Microsoft extensions", "underscores", "naming conventions [C++], Microsoft library", "ANSI [C++], C standard", "Microsoft extensions naming conventions"]
 ms.assetid: 6be271bf-eecf-491a-a928-0ee2dd60e3b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ANSI C Compliance
 
@@ -20,6 +13,6 @@ The names of Microsoft-specific functions and global variables begin with a sing
 
 The names of Microsoft-specific macros and manifest constants begin with two underscores, or with a single leading underscore immediately followed by an uppercase letter. The scope of these identifiers is absolute. For example, you cannot use the Microsoft-specific identifier **_UPPER** for this reason.
 
-## See Also
+## See also
 
 [Compatibility](../c-runtime-library/compatibility.md)

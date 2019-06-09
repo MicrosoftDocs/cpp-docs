@@ -1,15 +1,8 @@
 ---
-title: "Unicode Programming Summary | Microsoft Docs"
-ms.custom: ""
+title: "Unicode Programming Summary"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unicode Programming Summary
 
@@ -21,11 +14,11 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
 
 - Specify entry point.
 
-   On the **Output** page of the **Linker** folder in the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
+   On the **Advanced** page of the **Linker** folder in the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
 
 - Use portable run-time functions and types.
 
-   Use the proper C run-time functions for Unicode string handling. You can use the `wcs` family of functions, but you might prefer the fully portable (internationally enabled) `_TCHAR` macros. These macros are all prefixed with `_tcs`; they substitute, one for one, for the `str` family of functions. These functions are described in detail in the [Internationalization](../c-runtime-library/internationalization.md) section of the *Run-Time Library Reference*. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+   Use the proper C run-time functions for Unicode string handling. You can use the `wcs` family of functions, but you might prefer the fully portable (internationally enabled) `_TCHAR` macros. These macros are all prefixed with `_tcs`; they substitute, one for one, for the `str` family of functions. These functions are described in detail in the [Internationalization](../c-runtime-library/internationalization.md) section of the *Run-Time Library Reference*. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
    Use `_TCHAR` and the related portable data types described in [Support for Unicode](../text/support-for-unicode.md).
 
@@ -86,10 +79,10 @@ To summarize, MFC and the run-time library provide the following support for Uni
 
 - The run-time library supplies Unicode versions of all string-handling functions. (The run-time library also supplies portable versions suitable for Unicode or for MBCS. These are the `_tcs` macros.)
 
-- Tchar.h supplies portable data types and the `_T` macro for translating literal strings and characters. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).
+- tchar.h supplies portable data types and the `_T` macro for translating literal strings and characters. For more information, see [Generic-Text Mappings in tchar.h](../text/generic-text-mappings-in-tchar-h.md).
 
 - The run-time library provides a wide-character version of `main`. Use `wmain` to make your application Unicode-aware.
 
-## See Also
+## See also
 
 [Support for Unicode](../text/support-for-unicode.md)

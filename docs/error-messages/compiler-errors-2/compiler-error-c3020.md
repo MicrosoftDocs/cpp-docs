@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3020 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3020"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3020"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3020"]
 ms.assetid: f625c7a3-afaa-4bd8-9c1b-51891b832f36
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3020
 

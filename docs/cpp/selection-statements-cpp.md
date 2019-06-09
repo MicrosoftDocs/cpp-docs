@@ -1,15 +1,9 @@
 ---
-title: "Selection Statements (C++) | Microsoft Docs"
+title: "Selection Statements (C++)"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["selection statements [C++], syntax", "selection statements"]
 ms.assetid: 2ce662fc-5e62-461b-ac31-2c159d8ef33b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Selection Statements (C++)
 

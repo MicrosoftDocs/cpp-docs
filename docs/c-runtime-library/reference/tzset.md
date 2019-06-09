@@ -1,19 +1,12 @@
 ---
-title: "_tzset | Microsoft Docs"
-ms.custom: ""
+title: "_tzset"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_tzset"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tzset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_tzset function", "time environment variables", "environment variables, setting time"]
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _tzset
 
@@ -36,11 +29,11 @@ The **_tzset** function uses the current setting of the environment variable **T
 
 |Parameter|Description|
 |-|-|
-*tzn*|Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC.
-*hh*|Difference in hours between UTC and local time. Sign (+) optional for positive values.
-*mm*|Minutes. Separated from *hh* by a colon (**:**).
-*ss*|Seconds. Separated from *mm* by a colon (**:**).
-*dzn*|Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST).
+| *tzn* | Three-letter time-zone name, such as PST. You must specify the correct offset from local time to UTC. |
+| *hh* | Difference in hours between UTC and local time. Sign (+) optional for positive values. |
+| *mm* | Minutes. Separated from *hh* by a colon (**:**). |
+| *ss* | Seconds. Separated from *mm* by a colon (**:**). |
+| *dzn* | Three-letter daylight-saving-time zone such as PDT. If daylight saving time is never in effect in the locality, set **TZ** without a value for *dzn*. The C run-time library assumes the United States' rules for implementing the calculation of daylight saving time (DST). |
 
 > [!NOTE]
 > Take care in computing the sign of the time difference. Because the time difference is the offset from local time to UTC (rather than the reverse), its sign may be the opposite of what you might intuitively expect. For time zones ahead of UTC, the time difference is negative; for those behind UTC, the difference is positive.

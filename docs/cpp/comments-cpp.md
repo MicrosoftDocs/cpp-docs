@@ -1,15 +1,8 @@
 ---
-title: "Comments (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Comments (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["code comments, C++", "comments, documenting code", "comments, C++ code", "white space, C++ comments"]
 ms.assetid: 6fcb906c-c264-4083-84bc-373800b2e514
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Comments (C++)
 

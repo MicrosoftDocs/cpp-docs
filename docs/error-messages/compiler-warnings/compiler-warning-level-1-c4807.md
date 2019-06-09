@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4807 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4807"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4807"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4807"]
 ms.assetid: 089c9f87-fd81-402e-9826-66a8ef1ef1fe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4807
 

@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal COM Strings Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal COM Strings Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "C++ Interop, strings", "data marshaling [C++], strings", "COM [C++], marshaling strings"]
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal COM Strings Using C++ Interop
 
@@ -23,7 +17,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 ## Example
 
-The following example demonstrates how a BSTR (a string format used in COM programming) can be passed from a managed to an unmanaged function. The calling managed function uses <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> to obtain the address of a BSTR representation of the contents of a .NET System.String. This pointer is pinned using [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to ensure that its physical address is not changed during a garbage collection cycle while the unmanaged function executes. The garbage collector is prohibited from moving the memory until the [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) goes out of scope.
+The following example demonstrates how a BSTR (a string format used in COM programming) can be passed from a managed to an unmanaged function. The calling managed function uses <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> to obtain the address of a BSTR representation of the contents of a .NET System.String. This pointer is pinned using [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to ensure that its physical address is not changed during a garbage collection cycle while the unmanaged function executes. The garbage collector is prohibited from moving the memory until the [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) goes out of scope.
 
 ```
 // MarshalBSTR1.cpp
@@ -97,6 +91,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

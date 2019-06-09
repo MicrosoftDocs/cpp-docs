@@ -1,16 +1,9 @@
 ---
-title: "regex_error Class | Microsoft Docs"
-ms.custom: ""
+title: "regex_error Class"
 ms.date: "09/10/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["regex/std::regex_error", "regex/std::regex_error::code"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["regex_error class"]
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # regex_error Class
 

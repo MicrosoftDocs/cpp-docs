@@ -1,16 +1,8 @@
 ---
-title: "Invoking Scripts (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Invoking Scripts (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["StringRegister"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["StringRegister method", "scripts, invoking registry in ATL"]
 ms.assetid: eabd41ee-586b-4266-9e92-5aaad04b73a4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Invoking Scripts
 
@@ -31,7 +23,6 @@ ms.workload: ["cplusplus"]
 
 The methods **FileRegister** and **FileUnregister** are useful if you do not want the script in a resource or if you want the script in its own file. The methods **StringRegister** and **StringUnregister** allow the .rgs file to be stored in a dynamically allocated string.
 
-## See Also
+## See also
 
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
-

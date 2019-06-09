@@ -1,16 +1,9 @@
 ---
-title: "IDispEventSimpleImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IDispEventSimpleImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl::Advise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise", "ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventSimpleImpl::Invoke", "ATLCOM/ATL::IDispEventSimpleImpl::Unadvise"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventSimpleImpl class"]
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IDispEventSimpleImpl Class
 
@@ -188,7 +181,7 @@ STDMETHOD(GetIDsOfNames)(
 
 ### Remarks
 
-See [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
+See [IDispatch::GetIDsOfNames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
 
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo
 
@@ -203,7 +196,7 @@ STDMETHOD(GetTypeInfo)(
 
 ### Remarks
 
-See [IDispatch::GetTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
+See [IDispatch::GetTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
 
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount
 
@@ -215,7 +208,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 
 ### Remarks
 
-See [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
+See [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
 
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke
 
@@ -235,7 +228,7 @@ STDMETHOD(Invoke)(
 
 ### Remarks
 
-See [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
+See [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
 
 ##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise
 
@@ -265,7 +258,7 @@ Once the connection is broken, events will no longer be routed to the handler fu
 
 `Unavise` breaks a connection with the default event source, it gets the IID of the default event source of the object as determined by [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface).
 
-## See Also
+## See also
 
 [_ATL_FUNC_INFO Structure](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl Class](../../atl/reference/idispatchimpl-class.md)<br/>

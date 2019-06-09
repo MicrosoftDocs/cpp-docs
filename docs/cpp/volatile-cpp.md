@@ -1,16 +1,9 @@
 ---
-title: "volatile (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "volatile (C++)"
+ms.date: "05/07/2019"
 f1_keywords: ["volatile_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["interrupt handlers and volatile keyword [C++]", "volatile keyword [C++]", "volatile objects", "objects [C++], volatile"]
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # volatile (C++)
 
@@ -46,7 +39,7 @@ Objects that are declared as **volatile** are not used in certain optimizations 
 
 ## ISO Compliant
 
-If you are familiar with the C# volatile keyword, or familiar with the behavior of **volatile** in earlier versions of Visual C++, be aware that the C++11 ISO Standard **volatile** keyword is different and is supported in Visual Studio when the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is specified. (For ARM, it's specified by default). The **volatile** keyword in C++11 ISO Standard code is to be used only for hardware access; do not use it for inter-thread communication. For inter-thread communication, use mechanisms such as [std::atomic\<T>](../standard-library/atomic.md) from the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
+If you are familiar with the C# volatile keyword, or familiar with the behavior of **volatile** in earlier versions of the Microsoft C++ compiler (MSVC), be aware that the C++11 ISO Standard **volatile** keyword is different and is supported in MSVC when the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is specified. (For ARM, it's specified by default). The **volatile** keyword in C++11 ISO Standard code is to be used only for hardware access; do not use it for inter-thread communication. For inter-thread communication, use mechanisms such as [std::atomic\<T>](../standard-library/atomic.md) from the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
 
 ## End of ISO Compliant
 

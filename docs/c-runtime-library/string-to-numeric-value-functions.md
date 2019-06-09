@@ -1,18 +1,11 @@
 ---
-title: "String to Numeric Value Functions | Microsoft Docs"
-ms.custom: ""
+title: "String to Numeric Value Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_tcstoui64", "_tcstoi64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["parsing, numeric strings", "string conversion, to numeric values"]
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # String to Numeric Value Functions
 
@@ -79,7 +72,7 @@ When the value returned by these functions would cause an overflow or underflow,
 
 `wcstod`, `wcstol`, `wcstoul`, `_wcstoi64`, and `_wcstoui64` are wide-character versions of `strtod`, `strtol`, `strtoul`, `_strtoi64`, and `_strtoui64`, respectively; the pointer to an end-of-conversion argument to each of these wide-character functions is a wide-character string. Otherwise, each of these wide-character functions behaves identically to its single-byte-character counterpart.
 
-## See Also
+## See also
 
 [Data Conversion](../c-runtime-library/data-conversion.md)<br/>
 [Locale](../c-runtime-library/locale.md)<br/>

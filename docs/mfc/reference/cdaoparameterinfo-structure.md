@@ -1,16 +1,9 @@
 ---
-title: "CDaoParameterInfo Structure | Microsoft Docs"
-ms.custom: ""
+title: "CDaoParameterInfo Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoParameterInfo"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoParameterInfo structure [MFC]", "DAO (Data Access Objects), Parameters collection"]
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoParameterInfo Structure
 
@@ -55,7 +48,7 @@ Information retrieved by the [CDaoQueryDef::GetParameterInfo](../../mfc/referenc
 
 **Header:** afxdao.h
 
-## See Also
+## See also
 
 [Structures, Styles, Callbacks, and Message Maps](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoQueryDef Class](../../mfc/reference/cdaoquerydef-class.md)

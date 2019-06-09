@@ -1,15 +1,8 @@
 ---
-title: "Notifications from a Rich Edit Control | Microsoft Docs"
-ms.custom: ""
+title: "Notifications from a Rich Edit Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], notification [MFC]", "CRichEditCtrl class [MFC], notifications", "rich edit controls [MFC], notifications", "notifications [MFC], from CRichEditCtrl"]
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Notifications from a Rich Edit Control
 
@@ -27,8 +20,7 @@ The following paragraphs list several specific notifications and their uses:
 
 - EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-_selchange) structure containing information about the new selection.
 
-## See Also
+## See also
 
 [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

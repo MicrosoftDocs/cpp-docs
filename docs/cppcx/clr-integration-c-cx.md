@@ -1,13 +1,7 @@
 ---
-title: "CLR integration (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "CLR integration (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CLR integration (C++/CX)
 
@@ -69,6 +63,6 @@ When the Visual C++ or C# compilers read a .winmd file, they automatically map c
 
 IReference\<T> in the Windows Runtime maps to Nullable\<T> in .NET.
 
-## See Also
+## See also
 
 [Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)

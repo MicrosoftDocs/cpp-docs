@@ -1,15 +1,8 @@
 ---
-title: "Function Attributes | Microsoft Docs"
-ms.custom: ""
+title: "Function Attributes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C]", "attributes [C], reference topics", "functions [C], attributes", "function attributes"]
 ms.assetid: f0c03e20-94f2-47b5-a166-993a949a1a40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Function Attributes
 
@@ -19,6 +12,6 @@ The optional *attribute-seq* nonterminal allows you to select a calling conventi
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

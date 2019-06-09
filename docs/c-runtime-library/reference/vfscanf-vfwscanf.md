@@ -1,18 +1,11 @@
 ---
-title: "vfscanf, vfwscanf | Microsoft Docs"
-ms.custom: ""
+title: "vfscanf, vfwscanf"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["vfwscanf", "vfscanf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["vfwscanf", "_vftscanf", "vfscanf"]
-dev_langs: ["C++"]
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # vfscanf, vfwscanf
 
@@ -131,7 +124,6 @@ int main(void)
         fclose(stream);
     }
 }
-
 ```
 
 ```Output

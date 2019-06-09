@@ -1,16 +1,9 @@
 ---
-title: "Registry Data Exchange Macros | Microsoft Docs"
-ms.custom: ""
+title: "Registry Data Exchange Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RegistryDataExchange function, macros"]
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Registry Data Exchange Macros
 
@@ -194,8 +187,7 @@ The size, in bytes, of the member variable.
 
 This macro is used in conjunction with the BEGIN_RDX_MAP and END_RDX_MAP macros to associate a member variable with a given registry entry. The global function [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), or the member function of the same name created by the BEGIN_RDX_MAP and END_RDX_MAP macros, should be used to perform exchange of data between the system registry and the member variables in the RDX map.
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
-

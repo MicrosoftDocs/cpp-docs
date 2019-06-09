@@ -1,18 +1,11 @@
 ---
-title: "_ismbb Routines | Microsoft Docs"
-ms.custom: ""
+title: "_ismbb Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_ismbb", "ismbb"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _ismbb Routines
 
@@ -66,7 +59,7 @@ The following table shows the ORed values that compose the test conditions for t
 
 The `_ismbb` routines are implemented both as functions and as macros. For more information about how to choose either implementation, see [Recommendations for Choosing Between Functions and Macros](../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md).
 
-## See Also
+## See also
 
 [Byte Classification](../c-runtime-library/byte-classification.md)<br/>
 [is, isw Routines](../c-runtime-library/is-isw-routines.md)<br/>

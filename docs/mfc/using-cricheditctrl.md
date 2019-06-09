@@ -1,16 +1,9 @@
 ---
-title: "Using CRichEditCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CRichEditCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CRichEditCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["rich edit controls [MFC], using", "CRichEditCtrl class [MFC], using"]
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CRichEditCtrl
 
@@ -42,7 +35,6 @@ A rich edit control is a window in which the user can enter and edit text. The t
 
 - [Notifications from a Rich Edit Control](../mfc/notifications-from-a-rich-edit-control.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

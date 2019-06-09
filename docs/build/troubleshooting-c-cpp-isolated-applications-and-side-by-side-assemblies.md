@@ -1,15 +1,8 @@
 ---
-title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies | Microsoft Docs"
-ms.custom: ""
+title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies
 
@@ -29,13 +22,13 @@ If your application has no manifest and depends on a DLL that Windows can’t fi
 
 If your application is deployed on a computer that doesn't have Visual Studio, and it crashes with error messages that resemble the previous ones, check these things:
 
-1. Follow the steps that are described in [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). The dependency walker can show most dependencies for an application or DLL. If you observe that some DLLs are missing, install them on the computer on which you are trying to run your application.
+1. Follow the steps that are described in [Understanding the Dependencies of a Visual C++ Application](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md). The dependency walker can show most dependencies for an application or DLL. If you observe that some DLLs are missing, install them on the computer on which you are trying to run your application.
 
 1. The operating system loader uses the application manifest to load assemblies that the application depends on. The manifest can either be embedded in the binary as a resource, or installed as a separate file in the application folder. To check whether the manifest is embedded in the binary, open the binary in Visual Studio and look for RT_MANIFEST in its list of resources. If you can't find an embedded manifest, look in the application folder for a file that's named something like <binary_name>.\<extension>.manifest.
 
 1. If your application depends on side-by-side assemblies and a manifest is not present, you have to ensure that the linker generates a manifest for your project. Check the linker option **Generate manifest** in the **Project Properties** dialog box for the project.
 
-1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](https://msdn.microsoft.com/library/aa375365).
+1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](/windows/desktop/sbscs/manifests).
 
    > [!NOTE]
    > If both an embedded manifest and a separate manifest file are present, the operating system loader uses the embedded manifest and ignores the separate file. However, on Windows XP, the opposite is true—the separate manifest file is used and the embedded manifest is ignored.
@@ -98,7 +91,7 @@ However, the assembly can also be installed as a private side-by-side assembly i
 
 For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.
 
-## See Also
+## See also
 
-[Concepts of Isolated Applications and Side-by-side Assemblies](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
-[Building C/C++ Isolated Applications and Side-by-side Assemblies](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Concepts of Isolated Applications and Side-by-side Assemblies](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
+[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

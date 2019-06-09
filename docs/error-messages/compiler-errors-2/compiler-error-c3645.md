@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3645 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3645"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3645"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3645"]
 ms.assetid: 346da528-ae86-4cd0-9654-f41bee26ac0d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3645
 

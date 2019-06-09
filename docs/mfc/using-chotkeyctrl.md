@@ -1,16 +1,9 @@
 ---
-title: "Using CHotKeyCtrl | Microsoft Docs"
-ms.custom: ""
+title: "Using CHotKeyCtrl"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CHotKeyCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["keys, hot and CHotKeyCtrl", "CHotKeyCtrl class [MFC], using", "hot key controls"]
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using CHotKeyCtrl
 
@@ -28,7 +21,6 @@ Use a hot key control to get a user's input for which hot key to associate with 
 
 - [Thread-Specific Hot Keys](../mfc/thread-specific-hot-keys.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

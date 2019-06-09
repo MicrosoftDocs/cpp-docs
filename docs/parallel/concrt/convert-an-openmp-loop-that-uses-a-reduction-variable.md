@@ -1,15 +1,8 @@
 ---
-title: "How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, reduction variables", "reduction variables, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime
 
@@ -42,8 +35,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc /openmp concrt-omp-fibonacci-reduction.cpp**
 
-## See Also
+## See also
 
 [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md)
-

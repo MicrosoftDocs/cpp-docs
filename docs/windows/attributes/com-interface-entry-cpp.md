@@ -1,16 +1,9 @@
 ---
-title: "com_interface_entry  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "com_interface_entry  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.com_interface_entry"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["com_interface_entry attribute"]
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # com_interface_entry (C++)
 
@@ -115,7 +108,7 @@ END_COM_MAP()
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "CPaneContainer Class | Microsoft Docs"
-ms.custom: ""
+title: "CPaneContainer Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPaneContainer", "AFXPANECONTAINER/CPaneContainer", "AFXPANECONTAINER/CPaneContainer::CPaneContainer", "AFXPANECONTAINER/CPaneContainer::AddPane", "AFXPANECONTAINER/CPaneContainer::AddRef", "AFXPANECONTAINER/CPaneContainer::AddSubPaneContainer", "AFXPANECONTAINER/CPaneContainer::CalcAvailablePaneSpace", "AFXPANECONTAINER/CPaneContainer::CalcAvailableSpace", "AFXPANECONTAINER/CPaneContainer::CalculateRecentSize", "AFXPANECONTAINER/CPaneContainer::CheckPaneDividerVisibility", "AFXPANECONTAINER/CPaneContainer::Copy", "AFXPANECONTAINER/CPaneContainer::DeletePane", "AFXPANECONTAINER/CPaneContainer::FindSubPaneContainer", "AFXPANECONTAINER/CPaneContainer::FindTabbedPane", "AFXPANECONTAINER/CPaneContainer::GetAssociatedSiblingPaneIDs", "AFXPANECONTAINER/CPaneContainer::GetLeftPane", "AFXPANECONTAINER/CPaneContainer::GetLeftPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetMinSize", "AFXPANECONTAINER/CPaneContainer::GetMinSizeLeft", "AFXPANECONTAINER/CPaneContainer::GetMinSizeRight", "AFXPANECONTAINER/CPaneContainer::GetNodeCount", "AFXPANECONTAINER/CPaneContainer::GetPaneDivider", "AFXPANECONTAINER/CPaneContainer::GetParentPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetRecentPaneDividerRect", "AFXPANECONTAINER/CPaneContainer::GetRecentPaneDividerStyle", "AFXPANECONTAINER/CPaneContainer::GetRecentPercent", "AFXPANECONTAINER/CPaneContainer::GetRefCount", "AFXPANECONTAINER/CPaneContainer::GetResizeStep", "AFXPANECONTAINER/CPaneContainer::GetRightPane", "AFXPANECONTAINER/CPaneContainer::GetRightPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetTotalReferenceCount", "AFXPANECONTAINER/CPaneContainer::GetWindowRect", "AFXPANECONTAINER/CPaneContainer::IsDisposed", "AFXPANECONTAINER/CPaneContainer::IsEmpty", "AFXPANECONTAINER/CPaneContainer::IsLeftPane", "AFXPANECONTAINER/CPaneContainer::IsLeftPaneContainer", "AFXPANECONTAINER/CPaneContainer::IsLeftPartEmpty", "AFXPANECONTAINER/CPaneContainer::IsRightPartEmpty", "AFXPANECONTAINER/CPaneContainer::IsVisible", "AFXPANECONTAINER/CPaneContainer::Move", "AFXPANECONTAINER/CPaneContainer::OnDeleteHidePane", "AFXPANECONTAINER/CPaneContainer::OnMoveInternalPaneDivider", "AFXPANECONTAINER/CPaneContainer::OnShowPane", "AFXPANECONTAINER/CPaneContainer::Release", "AFXPANECONTAINER/CPaneContainer::ReleaseEmptyPaneContainer", "AFXPANECONTAINER/CPaneContainer::RemoveNonValidPanes", "AFXPANECONTAINER/CPaneContainer::RemovePane", "AFXPANECONTAINER/CPaneContainer::Resize", "AFXPANECONTAINER/CPaneContainer::ResizePane", "AFXPANECONTAINER/CPaneContainer::ResizePartOfPaneContainer", "AFXPANECONTAINER/CPaneContainer::Serialize", "AFXPANECONTAINER/CPaneContainer::SetPane", "AFXPANECONTAINER/CPaneContainer::SetPaneContainer", "AFXPANECONTAINER/CPaneContainer::SetPaneDivider", "AFXPANECONTAINER/CPaneContainer::SetParentPaneContainer", "AFXPANECONTAINER/CPaneContainer::SetRecentPercent", "AFXPANECONTAINER/CPaneContainer::SetUpByID", "AFXPANECONTAINER/CPaneContainer::StoreRecentDockSiteInfo", "AFXPANECONTAINER/CPaneContainer::StretchPaneContainer"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPaneContainer [MFC], CPaneContainer", "CPaneContainer [MFC], AddPane", "CPaneContainer [MFC], AddRef", "CPaneContainer [MFC], AddSubPaneContainer", "CPaneContainer [MFC], CalcAvailablePaneSpace", "CPaneContainer [MFC], CalcAvailableSpace", "CPaneContainer [MFC], CalculateRecentSize", "CPaneContainer [MFC], CheckPaneDividerVisibility", "CPaneContainer [MFC], Copy", "CPaneContainer [MFC], DeletePane", "CPaneContainer [MFC], FindSubPaneContainer", "CPaneContainer [MFC], FindTabbedPane", "CPaneContainer [MFC], GetAssociatedSiblingPaneIDs", "CPaneContainer [MFC], GetLeftPane", "CPaneContainer [MFC], GetLeftPaneContainer", "CPaneContainer [MFC], GetMinSize", "CPaneContainer [MFC], GetMinSizeLeft", "CPaneContainer [MFC], GetMinSizeRight", "CPaneContainer [MFC], GetNodeCount", "CPaneContainer [MFC], GetPaneDivider", "CPaneContainer [MFC], GetParentPaneContainer", "CPaneContainer [MFC], GetRecentPaneDividerRect", "CPaneContainer [MFC], GetRecentPaneDividerStyle", "CPaneContainer [MFC], GetRecentPercent", "CPaneContainer [MFC], GetRefCount", "CPaneContainer [MFC], GetResizeStep", "CPaneContainer [MFC], GetRightPane", "CPaneContainer [MFC], GetRightPaneContainer", "CPaneContainer [MFC], GetTotalReferenceCount", "CPaneContainer [MFC], GetWindowRect", "CPaneContainer [MFC], IsDisposed", "CPaneContainer [MFC], IsEmpty", "CPaneContainer [MFC], IsLeftPane", "CPaneContainer [MFC], IsLeftPaneContainer", "CPaneContainer [MFC], IsLeftPartEmpty", "CPaneContainer [MFC], IsRightPartEmpty", "CPaneContainer [MFC], IsVisible", "CPaneContainer [MFC], Move", "CPaneContainer [MFC], OnDeleteHidePane", "CPaneContainer [MFC], OnMoveInternalPaneDivider", "CPaneContainer [MFC], OnShowPane", "CPaneContainer [MFC], Release", "CPaneContainer [MFC], ReleaseEmptyPaneContainer", "CPaneContainer [MFC], RemoveNonValidPanes", "CPaneContainer [MFC], RemovePane", "CPaneContainer [MFC], Resize", "CPaneContainer [MFC], ResizePane", "CPaneContainer [MFC], ResizePartOfPaneContainer", "CPaneContainer [MFC], Serialize", "CPaneContainer [MFC], SetPane", "CPaneContainer [MFC], SetPaneContainer", "CPaneContainer [MFC], SetPaneDivider", "CPaneContainer [MFC], SetParentPaneContainer", "CPaneContainer [MFC], SetRecentPercent", "CPaneContainer [MFC], SetUpByID", "CPaneContainer [MFC], StoreRecentDockSiteInfo", "CPaneContainer [MFC], StretchPaneContainer"]
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPaneContainer Class
 
@@ -99,7 +92,7 @@ class CPaneContainer : public CObject
 
 ## Example
 
-The following example demonstrates how to construct an instance of the `CPaneContainer` class. This code snippet is part of the [Set Pane Size sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an instance of the `CPaneContainer` class. This code snippet is part of the [Set Pane Size sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#1](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_2.cpp)]
@@ -847,7 +840,7 @@ virtual int StretchPaneContainer(
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

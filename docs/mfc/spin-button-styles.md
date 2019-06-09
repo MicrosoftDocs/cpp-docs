@@ -1,15 +1,8 @@
 ---
-title: "Spin Button Styles | Microsoft Docs"
-ms.custom: ""
+title: "Spin Button Styles"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["styles [MFC], CSpinButtonCtrl", "CSpinButtonCtrl class [MFC], styles", "styles [MFC], spin button control", "spin button control, styles"]
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Spin Button Styles
 
@@ -32,8 +25,7 @@ Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspin
 
 - **Arrow Keys** Causes the spin button to increment or decrement the position when the UP ARROW and DOWN ARROW keys are pressed. Associated with the UDS_ARROWKEYS style.
 
-## See Also
+## See also
 
 [Using CSpinButtonCtrl](../mfc/using-cspinbuttonctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

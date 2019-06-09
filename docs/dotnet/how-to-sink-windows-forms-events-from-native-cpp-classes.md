@@ -1,15 +1,9 @@
 ---
-title: "How to: Sink Windows Forms Events from Native C++ Classes | Microsoft Docs"
+title: "How to: Sink Windows Forms Events from Native C++ Classes"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handling, managed/native interop", "event handling, sinking .NET in C++", "event handling, .NET/native interop", "event handling, Windows Forms in C++"]
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Sink Windows Forms Events from Native C++ Classes
 
@@ -53,7 +47,7 @@ Now, you will associate your MFC control (`m_MyControl`) with a managed event ha
     }
     ```
 
-## See Also
+## See also
 
 [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)<br/>
 [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)<br/>

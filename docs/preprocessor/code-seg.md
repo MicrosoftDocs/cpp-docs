@@ -1,16 +1,9 @@
 ---
-title: "code_seg | Microsoft Docs"
-ms.custom: ""
+title: "code_seg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["code_seg_CPP", "vc-pragma.code_seg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, code_seg", "code_seg pragma"]
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # code_seg
 Specifies the text segment where functions are stored in the .obj file.
@@ -21,7 +14,7 @@ Specifies the text segment where functions are stored in the .obj file.
 #pragma code_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
 ```
 
-### Paramters
+### Parameters
 
 **push**<br/>
 (Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.
@@ -81,7 +74,7 @@ For a list of names that should not be used to create a section, see [/SECTION](
 
 You can also specify sections for initialized data ([data_seg](../preprocessor/data-seg.md)), uninitialized data ([bss_seg](../preprocessor/bss-seg.md)), and const variables ([const_seg](../preprocessor/const-seg.md)).
 
-## See Also
+## See also
 
 [code_seg (__declspec)](../cpp/code-seg-declspec.md)<br/>
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

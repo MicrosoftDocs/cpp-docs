@@ -1,13 +1,7 @@
 ---
-title: "Enums (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Enums (C++/CX)"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Enums (C++/CX)
 
@@ -37,7 +31,7 @@ The next example shows how to cast to numeric equivalents, and perform compariso
 
 [!code-cpp[cx_enums#04](../cppcx/codesnippet/CPP/cpp/class1.h#04)]
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

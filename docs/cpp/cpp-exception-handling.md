@@ -1,15 +1,8 @@
 ---
-title: "C++ Exception Handling | Microsoft Docs"
-ms.custom: ""
+title: "C++ Exception Handling"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["C++ exception handling", "Visual C++, exception handling"]
+helpviewer_keywords: ["C++ exception handling"]
 ms.assetid: 65f80b44-9d0f-4d17-b910-07205a5c5c40
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Exception Handling
 

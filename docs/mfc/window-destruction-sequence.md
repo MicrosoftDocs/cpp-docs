@@ -1,15 +1,8 @@
 ---
-title: "Window Destruction Sequence | Microsoft Docs"
-ms.custom: ""
+title: "Window Destruction Sequence"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["destruction, windows", "destroying windows", "sequence [MFC], window destruction", "CWnd objects [MFC], destruction sequence", "sequence [MFC]", "windows [MFC], destroying"]
 ms.assetid: 2d819196-6240-415f-a308-db43745e616c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Window Destruction Sequence
 
@@ -21,7 +14,6 @@ In the MFC framework, when the user closes the frame window, the window's defaul
 
 - [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
 
-## See Also
+## See also
 
 [Destroying Window Objects](../mfc/destroying-window-objects.md)
-

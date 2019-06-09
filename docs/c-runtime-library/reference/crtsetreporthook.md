@@ -1,19 +1,12 @@
 ---
-title: "_CrtSetReportHook | Microsoft Docs"
-ms.custom: ""
+title: "_CrtSetReportHook"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_CrtSetReportHook"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_CrtSetReportHook", "CrtSetReportHook"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CrtSetReportHook function", "_CrtSetReportHook function"]
 ms.assetid: 1ae7c64f-8c84-4797-9574-b59f00f7a509
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _CrtSetReportHook
 

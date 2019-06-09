@@ -1,16 +1,10 @@
 ---
-title: "Platform::Array Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Array Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not found::Platform::Array Constructors", "VCCORLIB/Namespace not found::Platform::Array::Value"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Array Class"]
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Array Class
 
@@ -52,8 +46,6 @@ The Array class is sealed and cannot be inherited.
 The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
 
 For more information about when and how to use Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
-
-The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
 
 This class is defined in the vccorlib.h header, which is automatically included by the compiler. It is visible in IntelliSense but not in Object Browser because it is not a public type defined in platform.winmd.
 
@@ -120,7 +112,7 @@ property Array^ Value;
 
 A handle to the current array.
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
 [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

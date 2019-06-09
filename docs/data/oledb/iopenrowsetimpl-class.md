@@ -1,16 +1,9 @@
 ---
-title: "IOpenRowsetImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IOpenRowsetImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IOpenRowsetImpl class", "CreateRowset method", "OpenRowset method"]
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IOpenRowsetImpl Class
 
@@ -43,11 +36,11 @@ Your class, derived from `IOpenRowsetImpl`.
 
 ## Remarks
 
-The [IOpenRowset](/previous-versions/windows/desktop/ms716946) interface is mandatory for a session object. It opens and returns a rowset that includes all rows from a single base table or index.
+The [IOpenRowset](/previous-versions/windows/desktop/ms716946(v=vs.85)) interface is mandatory for a session object. It opens and returns a rowset that includes all rows from a single base table or index.
 
 ## <a name="createrowset"></a> IOpenRowsetImpl::CreateRowset
 
-Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference.*
+Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference.*
 
 ### Syntax
 
@@ -71,7 +64,7 @@ A template class member representing the user's rowset class. Usually generated 
 *pRowsetObj*<br/>
 [out] A pointer to a rowset object. Typically this parameter is not used, but it can be used if you must perform more work on the rowset before passing it to a COM object. The lifetime of *pRowsetObj* is bound by *ppRowset*.
 
-For other parameters, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference.*
+For other parameters, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference.*
 
 ## <a name="openrowset"></a> IOpenRowsetImpl::OpenRowset
 
@@ -91,13 +84,13 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 
 #### Parameters
 
-See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724) in the *OLE DB Programmer's Reference*.
+See [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 This method is not found in ATLDB.H. It is created by the ATL Object Wizard when you create a provider.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

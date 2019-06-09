@@ -1,21 +1,14 @@
 ---
-title: "Determining Which Type of Accessor to Use | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/24/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
+title: "Determining Which Type of Accessor to Use"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Determining Which Type of Accessor to Use
 
 You can determine data types on a rowset at compile time or at run time.
 
-If you need to determine data types at compile time, use a static accessor (such as `CAccessor`). You can determine the data types manually or by using the **ATL OLE DB Consumer Wizard**.
+If you need to determine data types at compile time, use a static accessor (such as `CAccessor`). 
 
 If you need to determine the data types at run time, use a dynamic (`CDynamicAccessor` or its children) or manual accessor (`CManualAccessor`). In these cases, you can call `GetColumnInfo` on the rowset to return the column binding information, from which you can determine types.
 
@@ -30,6 +23,6 @@ The following table lists the types of accessors provided in the consumer templa
 |`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](https://github.com/Microsoft/VCSamples) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It's more like calling OLE DB directly.|
 |`CXMLAccessor`|Automatic.|No.|Retrieves data accessed from the data store as string data and formats it as XML-tagged data.|
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

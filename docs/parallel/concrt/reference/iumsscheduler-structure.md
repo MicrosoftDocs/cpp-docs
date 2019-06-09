@@ -1,16 +1,9 @@
 ---
-title: "IUMSScheduler Structure | Microsoft Docs"
-ms.custom: ""
+title: "IUMSScheduler Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSScheduler structure"]
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUMSScheduler Structure
 
@@ -67,7 +60,7 @@ The completion list interface for the scheduler. There is a single list per sche
 
 The Resource Manager will invoke this method on a scheduler that specifies it wants UMS threads, after the scheduler has requested an initial allocation of resources. The scheduler can use the `IUMSCompletionList` interface to determine when UMS thread proxies have unblocked. It is only valid to access this interface from a thread proxy running on a virtual processor root assigned to the UMS scheduler.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>

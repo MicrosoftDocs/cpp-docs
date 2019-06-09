@@ -1,16 +1,9 @@
 ---
-title: "Low-Level I/O | Microsoft Docs"
-ms.custom: ""
+title: "Low-Level I/O"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["I/O [CRT], low-level", "I/O [CRT], functions", "low-level I/O routines", "file handles [C++]", "file handles [C++], I/O functions"]
 ms.assetid: 53e11bdd-6720-481c-8b2b-3a3a569ed534
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Low-Level I/O
 
@@ -46,7 +39,7 @@ Low-level I/O routines set the [errno](../c-runtime-library/errno-doserrno-sys-e
 
 **_dup** and **_dup2** are typically used to associate the predefined file descriptors with different files.
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

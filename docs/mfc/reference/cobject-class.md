@@ -1,16 +1,9 @@
 ---
-title: "CObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CObject", "AFX/CObject", "AFX/CObject::CObject", "AFX/CObject::AssertValid", "AFX/CObject::Dump", "AFX/CObject::GetRuntimeClass", "AFX/CObject::IsKindOf", "AFX/CObject::IsSerializable", "AFX/CObject::Serialize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CObject [MFC], CObject", "CObject [MFC], AssertValid", "CObject [MFC], Dump", "CObject [MFC], GetRuntimeClass", "CObject [MFC], IsKindOf", "CObject [MFC], IsSerializable", "CObject [MFC], Serialize"]
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CObject Class
 
@@ -359,7 +352,6 @@ See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listi
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "final Specifier | Microsoft Docs"
-ms.custom: ""
+title: "final Specifier"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["final_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["final Identifier"]
 ms.assetid: 649866d0-79d4-449f-ab74-f84b911b79a3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # final Specifier
 

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4339 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4339"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4339"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4339"]
 ms.assetid: 5b83353d-7777-4afb-8476-3c368349028c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4339
 

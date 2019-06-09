@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3489 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3489"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3489"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3489"]
 ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3489
 
@@ -71,6 +64,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)

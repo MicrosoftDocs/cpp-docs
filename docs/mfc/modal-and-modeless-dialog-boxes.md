@@ -1,15 +1,8 @@
 ---
-title: "Modal and Modeless Dialog Boxes | Microsoft Docs"
-ms.custom: ""
+title: "Modal and Modeless Dialog Boxes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], modeless", "modeless dialog boxes [MFC]", "MFC dialog boxes [MFC], modal", "modal dialog boxes [MFC]"]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Modal and Modeless Dialog Boxes
 
@@ -31,8 +24,7 @@ Creating a dialog box for your program requires the following steps:
 
 1. Add data members associated with the dialog box's controls and to specify [dialog data exchange](../mfc/dialog-data-exchange.md) and [dialog data validations](../mfc/dialog-data-validation.md) for the controls.
 
-## See Also
+## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
-

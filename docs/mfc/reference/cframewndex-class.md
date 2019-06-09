@@ -1,16 +1,9 @@
 ---
-title: "CFrameWndEx Class | Microsoft Docs"
-ms.custom: ""
+title: "CFrameWndEx Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx::ActiveItemRecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::AddPane", "AFXFRAMEWNDEX/CFrameWndEx::AdjustDockingLayout", "AFXFRAMEWNDEX/CFrameWndEx::DelayUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::DockPane", "AFXFRAMEWNDEX/CFrameWndEx::DockPaneLeftOf", "AFXFRAMEWNDEX/CFrameWndEx::EnableAutoHidePanes", "AFXFRAMEWNDEX/CFrameWndEx::EnableDocking", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMainMenu", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMode", "AFXFRAMEWNDEX/CFrameWndEx::EnableLoadDockState", "AFXFRAMEWNDEX/CFrameWndEx::EnablePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::GetActivePopup", "AFXFRAMEWNDEX/CFrameWndEx::GetDefaultResId", "AFXFRAMEWNDEX/CFrameWndEx::GetDockingManager", "AFXFRAMEWNDEX/CFrameWndEx::GetMenuBar", "AFXFRAMEWNDEX/CFrameWndEx::GetPane", "AFXFRAMEWNDEX/CFrameWndEx::GetRibbonBar", "AFXFRAMEWNDEX/CFrameWndEx::GetTearOffBars", "AFXFRAMEWNDEX/CFrameWndEx::GetToolbarButtonToolTipText", "AFXFRAMEWNDEX/CFrameWndEx::InsertPane", "AFXFRAMEWNDEX/CFrameWndEx::IsFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::IsMenuBarAvailable", "AFXFRAMEWNDEX/CFrameWndEx::IsPointNearDockSite", "AFXFRAMEWNDEX/CFrameWndEx::IsPrintPreview", "AFXFRAMEWNDEX/CFrameWndEx::LoadFrame", "AFXFRAMEWNDEX/CFrameWndEx::NegotiateBorderSpace", "AFXFRAMEWNDEX/CFrameWndEx::OnActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnActivateApp", "AFXFRAMEWNDEX/CFrameWndEx::OnChangeVisualManager", "AFXFRAMEWNDEX/CFrameWndEx::OnClose", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseDockingPane", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnClosePopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnCmdMsg", "AFXFRAMEWNDEX/CFrameWndEx::OnContextHelp", "AFXFRAMEWNDEX/CFrameWndEx::OnCreate", "AFXFRAMEWNDEX/CFrameWndEx::OnDestroy", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuImage", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuLogo", "AFXFRAMEWNDEX/CFrameWndEx::OnDWMCompositionChanged", "AFXFRAMEWNDEX/CFrameWndEx::OnExitSizeMove", "AFXFRAMEWNDEX/CFrameWndEx::OnGetMinMaxInfo", "AFXFRAMEWNDEX/CFrameWndEx::OnIdleUpdateCmdUI", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonDown", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonUp", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuButtonToolHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuChar", "AFXFRAMEWNDEX/CFrameWndEx::OnMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnMoveMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnNcActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnNcCalcSize", "AFXFRAMEWNDEX/CFrameWndEx::OnNcHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnNcMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnNcPaint", "AFXFRAMEWNDEX/CFrameWndEx::OnPaneCheck", "AFXFRAMEWNDEX/CFrameWndEx::OnPostPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnPowerBroadcast", "AFXFRAMEWNDEX/CFrameWndEx::OnSetMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSetPreviewMode", "AFXFRAMEWNDEX/CFrameWndEx::OnSetText", "AFXFRAMEWNDEX/CFrameWndEx::OnShowCustomizePane", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPanes", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSize", "AFXFRAMEWNDEX/CFrameWndEx::OnSizing", "AFXFRAMEWNDEX/CFrameWndEx::OnSysColorChange", "AFXFRAMEWNDEX/CFrameWndEx::OnTearOffMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarContextMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarCreateNew", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarDelete", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameTitle", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdatePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnWindowPosChanged", "AFXFRAMEWNDEX/CFrameWndEx::PaneFromPoint", "AFXFRAMEWNDEX/CFrameWndEx::PreTranslateMessage", "AFXFRAMEWNDEX/CFrameWndEx::RecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::RemovePaneFromDockManager", "AFXFRAMEWNDEX/CFrameWndEx::SetDockState", "AFXFRAMEWNDEX/CFrameWndEx::SetPrintPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::SetupToolbarMenu", "AFXFRAMEWNDEX/CFrameWndEx::ShowFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::ShowPane", "AFXFRAMEWNDEX/CFrameWndEx::UpdateCaption", "AFXFRAMEWNDEX/CFrameWndEx::WinHelp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFrameWndEx [MFC], ActiveItemRecalcLayout", "CFrameWndEx [MFC], AddPane", "CFrameWndEx [MFC], AdjustDockingLayout", "CFrameWndEx [MFC], DelayUpdateFrameMenu", "CFrameWndEx [MFC], DockPane", "CFrameWndEx [MFC], DockPaneLeftOf", "CFrameWndEx [MFC], EnableAutoHidePanes", "CFrameWndEx [MFC], EnableDocking", "CFrameWndEx [MFC], EnableFullScreenMainMenu", "CFrameWndEx [MFC], EnableFullScreenMode", "CFrameWndEx [MFC], EnableLoadDockState", "CFrameWndEx [MFC], EnablePaneMenu", "CFrameWndEx [MFC], GetActivePopup", "CFrameWndEx [MFC], GetDefaultResId", "CFrameWndEx [MFC], GetDockingManager", "CFrameWndEx [MFC], GetMenuBar", "CFrameWndEx [MFC], GetPane", "CFrameWndEx [MFC], GetRibbonBar", "CFrameWndEx [MFC], GetTearOffBars", "CFrameWndEx [MFC], GetToolbarButtonToolTipText", "CFrameWndEx [MFC], InsertPane", "CFrameWndEx [MFC], IsFullScreen", "CFrameWndEx [MFC], IsMenuBarAvailable", "CFrameWndEx [MFC], IsPointNearDockSite", "CFrameWndEx [MFC], IsPrintPreview", "CFrameWndEx [MFC], LoadFrame", "CFrameWndEx [MFC], NegotiateBorderSpace", "CFrameWndEx [MFC], OnActivate", "CFrameWndEx [MFC], OnActivateApp", "CFrameWndEx [MFC], OnChangeVisualManager", "CFrameWndEx [MFC], OnClose", "CFrameWndEx [MFC], OnCloseDockingPane", "CFrameWndEx [MFC], OnCloseMiniFrame", "CFrameWndEx [MFC], OnClosePopupMenu", "CFrameWndEx [MFC], OnCmdMsg", "CFrameWndEx [MFC], OnContextHelp", "CFrameWndEx [MFC], OnCreate", "CFrameWndEx [MFC], OnDestroy", "CFrameWndEx [MFC], OnDrawMenuImage", "CFrameWndEx [MFC], OnDrawMenuLogo", "CFrameWndEx [MFC], OnDWMCompositionChanged", "CFrameWndEx [MFC], OnExitSizeMove", "CFrameWndEx [MFC], OnGetMinMaxInfo", "CFrameWndEx [MFC], OnIdleUpdateCmdUI", "CFrameWndEx [MFC], OnLButtonDown", "CFrameWndEx [MFC], OnLButtonUp", "CFrameWndEx [MFC], OnMenuButtonToolHitTest", "CFrameWndEx [MFC], OnMenuChar", "CFrameWndEx [MFC], OnMouseMove", "CFrameWndEx [MFC], OnMoveMiniFrame", "CFrameWndEx [MFC], OnNcActivate", "CFrameWndEx [MFC], OnNcCalcSize", "CFrameWndEx [MFC], OnNcHitTest", "CFrameWndEx [MFC], OnNcMouseMove", "CFrameWndEx [MFC], OnNcPaint", "CFrameWndEx [MFC], OnPaneCheck", "CFrameWndEx [MFC], OnPostPreviewFrame", "CFrameWndEx [MFC], OnPowerBroadcast", "CFrameWndEx [MFC], OnSetMenu", "CFrameWndEx [MFC], OnSetPreviewMode", "CFrameWndEx [MFC], OnSetText", "CFrameWndEx [MFC], OnShowCustomizePane", "CFrameWndEx [MFC], OnShowPanes", "CFrameWndEx [MFC], OnShowPopupMenu", "CFrameWndEx [MFC], OnSize", "CFrameWndEx [MFC], OnSizing", "CFrameWndEx [MFC], OnSysColorChange", "CFrameWndEx [MFC], OnTearOffMenu", "CFrameWndEx [MFC], OnToolbarContextMenu", "CFrameWndEx [MFC], OnToolbarCreateNew", "CFrameWndEx [MFC], OnToolbarDelete", "CFrameWndEx [MFC], OnUpdateFrameMenu", "CFrameWndEx [MFC], OnUpdateFrameTitle", "CFrameWndEx [MFC], OnUpdatePaneMenu", "CFrameWndEx [MFC], OnWindowPosChanged", "CFrameWndEx [MFC], PaneFromPoint", "CFrameWndEx [MFC], PreTranslateMessage", "CFrameWndEx [MFC], RecalcLayout", "CFrameWndEx [MFC], RemovePaneFromDockManager", "CFrameWndEx [MFC], SetDockState", "CFrameWndEx [MFC], SetPrintPreviewFrame", "CFrameWndEx [MFC], SetupToolbarMenu", "CFrameWndEx [MFC], ShowFullScreen", "CFrameWndEx [MFC], ShowPane", "CFrameWndEx [MFC], UpdateCaption", "CFrameWndEx [MFC], WinHelp"]
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFrameWndEx Class
 
@@ -118,7 +111,7 @@ class CFrameWndEx : public CFrameWnd
 
 ## Example
 
-The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../visual-cpp-samples.md).
+The following example demonstrates how to inherit a class from the `CFrameWndEx` class. The example illustrates the method signatures in the subclass, and how to override the `OnShowPopupMenu` method. This code snippet is part of the [Word Pad sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#3](../../mfc/reference/codesnippet/cpp/cframewndex-class_1.h)]
 [!code-cpp[NVC_MFC_WordPad#4](../../mfc/reference/codesnippet/cpp/cframewndex-class_2.cpp)]
@@ -186,7 +179,7 @@ A handle to a structure that contains the positions of multiple windows. .
 
 ### Remarks
 
-The hdwp structure is initialized by the [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) method.
+The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) method.
 
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu
 
@@ -889,7 +882,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-[in] A pointer to the [CREATESTRUCT Structure](../../mfc/reference/createstruct-structure.md) for the new frame.
+[in] A pointer to the [CREATESTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) for the new frame.
 
 ### Return Value
 
@@ -1024,7 +1017,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-[in] Pointer to a [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) structure.
+[in] Pointer to a [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
 
 ### Remarks
 
@@ -1531,7 +1524,7 @@ afx_msg void OnSizing(
 [in] The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).
 
 *pRect*<br/>
-[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](../../mfc/reference/rect-structure1.md) structure that contains the frame's coordinates.
+[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the frame's coordinates.
 
 ### Remarks
 
@@ -1701,7 +1694,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-[in] Pointer to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure that contains the new size and position.
+[in] Pointer to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure that contains the new size and position.
 
 ### Remarks
 
@@ -1761,7 +1754,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.
+[in] A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -1940,7 +1933,7 @@ The help command. For a list of possible values see [WinHelp](/windows/desktop/a
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "CInterfaceList Class | Microsoft Docs"
-ms.custom: ""
+title: "CInterfaceList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CInterfaceList", "ATLCOLL/ATL::CInterfaceList", "ATLCOLL/ATL::CInterfaceList::CInterfaceList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CInterfaceList class"]
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CInterfaceList Class
 
@@ -74,7 +67,7 @@ The block size, with a default of 10.
 
 The block size is a measure of the amount of memory allocated when a new element is required. Larger block sizes reduce calls to memory allocation routines, but use more resources.
 
-## See Also
+## See also
 
 [CAtlList Class](../../atl/reference/catllist-class.md)<br/>
 [CComQIPtr Class](../../atl/reference/ccomqiptr-class.md)<br/>

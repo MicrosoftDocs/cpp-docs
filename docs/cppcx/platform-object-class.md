@@ -1,16 +1,10 @@
 ---
-title: "Platform::Object Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Object Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Object::Object", "VCCORLIB/Platform::Object::Equals", "VCCORLIB/Platform::Object::GetHashCode", "VCCORLIB/Platform::Object::ReferenceEquals", "VCCORLIB/Platform::ToString", "VCCORLIB/Platform::GetType"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Object class"]
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Object Class
 
@@ -109,19 +103,13 @@ A [Platform::Type](../cppcx/platform-type-class.md) object that describes the ru
 
 The static [Type::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) can be used to get a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value that represents the current type. This is mostly useful for built-in types. The type code for any ref class besides [Platform::String](../cppcx/platform-string-class.md) is Object (1).
 
-The [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.
+The [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) class is used in the Windows APIs as a language-independent way of passing type information between Windows components and apps. The T[Platform::Type Class](../cppcx/platform-type-class.md) has operators for converting between `Type` and `TypeName`.
 
-Use the [typeid](../windows/typeid-cpp-component-extensions.md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:
+Use the [typeid](../extensions/typeid-cpp-component-extensions.md) operator to return a `Platform::Type` object for a class name, for example when navigating between XAML pages:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
-
-## See Also
-
-[Platform::Type Class](../cppcx/platform-type-class.md)<br/>
-[Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
-[Type System](../cppcx/type-system-c-cx.md
 
 ## <a name="ctor"></a>  Object::Object Constructor
 
@@ -182,6 +170,8 @@ public:
 };
 ```
 
-## See Also
+## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Platform::Type Class](platform-type-class.md)<br/>
+[Type System](type-system-c-cx.md)

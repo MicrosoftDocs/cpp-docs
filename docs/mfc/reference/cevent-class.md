@@ -1,16 +1,9 @@
 ---
-title: "CEvent Class | Microsoft Docs"
-ms.custom: ""
+title: "CEvent Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CEvent", "AFXMT/CEvent", "AFXMT/CEvent::CEvent", "AFXMT/CEvent::PulseEvent", "AFXMT/CEvent::ResetEvent", "AFXMT/CEvent::SetEvent", "AFXMT/CEvent::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CEvent [MFC], CEvent", "CEvent [MFC], PulseEvent", "CEvent [MFC], ResetEvent", "CEvent [MFC], SetEvent", "CEvent [MFC], Unlock"]
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CEvent Class
 
@@ -180,8 +173,7 @@ Nonzero if the thread owned the event object and the event is an automatic event
 
 This member function is called by threads that currently own an automatic event to release it after they are done, if their lock object is to be reused. If the lock object is not to be reused, this function will be called by the lock object's destructor.
 
-## See Also
+## See also
 
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

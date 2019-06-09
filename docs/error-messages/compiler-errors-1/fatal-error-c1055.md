@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1055 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1055"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1055"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1055"]
 ms.assetid: a9fb9190-d7eb-4d5f-b1a2-a41e584a28c1
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1055
 

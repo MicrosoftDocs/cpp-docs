@@ -1,19 +1,12 @@
 ---
-title: "_execle, _wexecle | Microsoft Docs"
-ms.custom: ""
+title: "_execle, _wexecle"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_execle", "_wexecle"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["wexecle", "_execle", "_wexecle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wexecle function", "execle function", "_wexecle function", "_execle function"]
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _execle, _wexecle
 

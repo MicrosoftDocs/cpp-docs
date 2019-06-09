@@ -1,15 +1,8 @@
 ---
-title: "Inline Assembler | Microsoft Docs"
-ms.custom: ""
+title: "Inline Assembler"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["assembler [C++]", "assembler [C++], inline", "assembly language [C++], inline", "inline assembler [C++]", "inline assembly [C++]"]
 ms.assetid: 7e13f18f-3628-4306-8b81-4a6d09c043fe
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Inline Assembler
 

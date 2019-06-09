@@ -1,15 +1,8 @@
 ---
-title: "Property Sheets (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Property Sheets (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["dialog boxes [MFC], tabs", "property sheets", "dialog boxes [MFC], property sheets", "tab dialog boxes"]
 ms.assetid: 09439f65-921d-45a2-b3cc-e13884a087b1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Sheets (MFC)
 
@@ -35,8 +28,8 @@ This family of articles explains how to implement support for property sheets in
 
 - [Class CPropertyPage](../mfc/reference/cpropertypage-class.md)
 
-- [Sample](../visual-cpp-samples.md)
+- [Sample](../overview/visual-cpp-samples.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

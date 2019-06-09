@@ -1,15 +1,8 @@
 ---
-title: "Collections | Microsoft Docs"
-ms.custom: ""
+title: "Collections"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, collections", "arrays [MFC], classes", "MFC collection classes", "shapes, collection", "collection classes [MFC], MFC", "collections, about collections", "array templates [MFC]", "collection classes [MFC], template-based", "collection classes [MFC], about collection classes", "collection classes [MFC], maps", "collection classes [MFC], arrays", "shapes", "collection classes [MFC], lists", "collection classes [MFC], shapes"]
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Collections
 
@@ -42,7 +35,7 @@ Each of the three provided collection shapes is described briefly later in this 
 
 ##  <a name="_core_the_template_based_collection_classes"></a> The Template-Based Collection Classes
 
-The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../visual-cpp-samples.md).
+The easiest way to implement a type-safe collection that contains objects of any type is to use one of the MFC template-based classes. For examples of these classes, see the MFC sample [COLLECT](../overview/visual-cpp-samples.md).
 
 The following table lists the MFC template-based collection classes.
 
@@ -101,8 +94,7 @@ The Characteristics of MFC Collection Classes table in [Recommendations for Choo
 
 - [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md)
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)<br/>
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

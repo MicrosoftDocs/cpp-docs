@@ -1,19 +1,12 @@
 ---
-title: "strcpy, wcscpy, _mbscpy | Microsoft Docs"
-ms.custom: ""
+title: "strcpy, wcscpy, _mbscpy"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["strcpy", "wcscpy", "_mbscpy"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
 f1_keywords: ["_mbscpy", "_ftcscpy", "wcscpy", "_tcscpy", "strcpy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["strcpy function", "tcscpy function", "ftcscpy function", "mbscpy function", "wcscpy function", "copying strings", "strings [C++], copying", "_tcscpy function", "_ftcscpy function", "_mbscpy function"]
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # strcpy, wcscpy, _mbscpy
 

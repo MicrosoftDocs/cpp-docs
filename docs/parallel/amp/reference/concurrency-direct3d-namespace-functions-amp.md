@@ -1,15 +1,8 @@
 ---
-title: "Concurrency::direct3d namespace functions (AMP) | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency::direct3d namespace functions (AMP)"
 ms.date: "08/31/2018"
-ms.topic: "reference"
-f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer",
-"amp/Concurrency::direct3d::get_device", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]
-dev_langs: ["C++"]
+f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer", "amp/Concurrency::direct3d::get_device", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency::direct3d namespace functions (AMP)
 
@@ -594,6 +587,6 @@ Integer value
 
 Return the minimum numeric value of the arguments
 
-## See Also
+## See also
 
 [Concurrency::direct3d Namespace](concurrency-direct3d-namespace.md)

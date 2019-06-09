@@ -1,15 +1,8 @@
 ---
-title: "Standard Dialog Data Exchange Routines | Microsoft Docs"
-ms.custom: ""
+title: "Standard Dialog Data Exchange Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["standard dialog, data exchange routines"]
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Exchange Routines
 
@@ -283,11 +276,6 @@ For more information, see [How to: Do DDX/DDV Data Binding with Windows Forms](.
 ### Requirements
 
 **Header:** afxwinforms.h
-
-### See Also
-
-[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
-[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)
 
 ##  <a name="ddx_ipaddress"></a>  DDX_IPAddress
 
@@ -654,7 +642,9 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
   **Header** afxdd_.h
 
-## See Also
+## See also
 
-[Standard Dialog Data Validation Routines](../../mfc/reference/standard-dialog-data-validation-routines.md)<br/>
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Standard Dialog Data Validation Routines](standard-dialog-data-validation-routines.md)<br/>
+[Macros and Globals](mfc-macros-and-globals.md)<br/>
+[CWinFormsControl::CreateManagedControl](cwinformscontrol-class.md#createmanagedcontrol)<br/>
+[CDialog::OnInitDialog](cdialog-class.md#oninitdialog)

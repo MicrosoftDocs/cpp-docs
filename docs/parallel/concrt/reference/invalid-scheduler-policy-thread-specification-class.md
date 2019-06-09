@@ -1,16 +1,9 @@
 ---
-title: "invalid_scheduler_policy_thread_specification Class | Microsoft Docs"
-ms.custom: ""
+title: "invalid_scheduler_policy_thread_specification Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_thread_specification"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["invalid_scheduler_policy_thread_specification class"]
 ms.assetid: 2d0fafb2-18f8-4284-8040-3db640d33303
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # invalid_scheduler_policy_thread_specification Class
 
@@ -56,7 +49,7 @@ invalid_scheduler_policy_thread_specification() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [SchedulerPolicy Class](schedulerpolicy-class.md)

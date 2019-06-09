@@ -1,15 +1,8 @@
 ---
-title: "/NXCOMPAT (Compatible with Data Execution Prevention) | Microsoft Docs"
-ms.custom: ""
+title: "/NXCOMPAT (Compatible with Data Execution Prevention)"
 ms.date: "12/29/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/NXCOMPAT"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/NXCOMPAT linker option", "-NXCOMPAT linker option", "NXCOMPAT linker option"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /NXCOMPAT (Compatible with Data Execution Prevention)
 
@@ -35,7 +28,7 @@ For more information about Data Execution Prevention, see these articles:
 
 ### To set this linker option in Visual Studio
 
-1. Open the project **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Choose the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -47,5 +40,5 @@ For more information about Data Execution Prevention, see these articles:
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

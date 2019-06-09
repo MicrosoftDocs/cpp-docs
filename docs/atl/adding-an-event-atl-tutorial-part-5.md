@@ -1,14 +1,8 @@
 ---
-title: "Adding an Event (ATL Tutorial, Part 5) | Microsoft Docs"
+title: "Adding an Event (ATL Tutorial, Part 5)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 2de12022-3148-4ce3-8606-8a9d4274f0e9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an Event (ATL Tutorial, Part 5)
 
@@ -156,6 +150,6 @@ Next, you will add a property page.
 
 [Back to Step 4](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) &#124; [On to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 
-## See Also
+## See also
 
 [Tutorial](../atl/active-template-library-atl-tutorial.md)

@@ -1,16 +1,9 @@
 ---
-title: "IUMSUnblockNotification Structure | Microsoft Docs"
-ms.custom: ""
+title: "IUMSUnblockNotification Structure"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IUMSUnblockNotification structure"]
 ms.assetid: eaca9529-c1cc-472b-8ec6-722a1ff0fa2a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IUMSUnblockNotification Structure
 
@@ -65,7 +58,7 @@ virtual IUMSUnblockNotification* GetNextUnblockNotification() = 0;
 
 The next `IUMSUnblockNotification` interface in the chain returned from the method `IUMSCompletionList::GetUnblockNotifications`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [IUMSScheduler Structure](iumsscheduler-structure.md)<br/>

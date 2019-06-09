@@ -1,16 +1,9 @@
 ---
-title: "-diagnostics (Compiler diagnostic options) | Microsoft Docs"
-ms.custom: ""
+title: "/diagnostics (Compiler diagnostic options)"
 ms.date: "11/11/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/diagnostics", "VC.Project.VCCLCompilerTool.DiagnosticsFormat"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/diagnostics compiler diagnostic options [C++]", "-diagnostics compiler diagnostic options [C++]", "diagnostics compiler diagnostic options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /diagnostics (Compiler diagnostic options)
 
@@ -46,7 +39,7 @@ The **/diagnostics** option is available starting in Visual Studio 2017.
 
 1. Use the dropdown control in the **Diagnostics Format** field to select a diagnostics display option. Choose **OK** or **Apply** to save your changes.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

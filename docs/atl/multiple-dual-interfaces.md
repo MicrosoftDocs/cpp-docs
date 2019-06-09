@@ -1,15 +1,9 @@
 ---
-title: "Multiple Dual Interfaces | Microsoft Docs"
-ms.custom: ""
+title: "Multiple Dual Interfaces"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multiple dual interfaces", "COM_INTERFACE_ENTRY2 macro", "dual interfaces, exposing multiple", "multiple dual interfaces, exposing with ATL", "IDispatchImpl class, multiple dual interfaces", "COM_INTERFACE_ENTRY_IID macro"]
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multiple Dual Interfaces
 
@@ -31,7 +25,6 @@ ATL does not provide any support for combining multiple dual interfaces into a s
 
 These approaches have problems with potential namespace collisions, as well as code complexity and maintainability. It is not recommended that you create multiple dual interfaces.
 
-## See Also
+## See also
 
 [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md)
-

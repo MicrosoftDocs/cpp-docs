@@ -1,15 +1,8 @@
 ---
-title: "Preprocessor | Microsoft Docs"
-ms.custom: ""
+title: "Preprocessor"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor"]
 ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Preprocessor
 The preprocessor is a text processor that manipulates the text of a source file as part of the first phase of translation. The preprocessor does not parse the source text, but it does break it up into tokens for the purpose of locating macro calls. Although the compiler ordinarily invokes the preprocessor in its first pass, the preprocessor can also be invoked separately to process text without compiling.
@@ -36,7 +29,7 @@ In the preprocessor documentation, the term "argument" refers to the entity that
 
 The term "variable" refers to a simple C-type data object. The term "object" refers to both C++ objects and variables; it is an inclusive term.
 
-## See Also
+## See also
 
 [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)<br/>
 [Phases of Translation](../preprocessor/phases-of-translation.md)

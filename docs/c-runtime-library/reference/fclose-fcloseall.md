@@ -1,19 +1,12 @@
 ---
-title: "fclose, _fcloseall | Microsoft Docs"
-ms.custom: ""
+title: "fclose, _fcloseall"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["fclose", "_fcloseall"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["fclose", "_fcloseall"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["fclose function", "streams, closing", "_fcloseall function"]
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # fclose, _fcloseall
 

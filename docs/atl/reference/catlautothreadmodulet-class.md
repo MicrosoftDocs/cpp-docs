@@ -1,16 +1,9 @@
 ---
-title: "CAtlAutoThreadModuleT Class | Microsoft Docs"
-ms.custom: ""
+title: "CAtlAutoThreadModuleT Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAtlAutoThreadModuleT class"]
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAtlAutoThreadModuleT Class
 
@@ -80,7 +73,7 @@ The number of threads to be created in the EXE module.
 
 Override this method if you want to use a different method for calculating the number of threads. By default, the number of threads is based on the number of processors.
 
-## See Also
+## See also
 
 [IAtlAutoThreadModule Class](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

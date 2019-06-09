@@ -1,27 +1,20 @@
 ---
-title: "IRowsetInfoImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IRowsetInfoImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetInfoImpl class", "GetProperties method", "GetReferencedRowset method", "GetSpecification method"]
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl Class
 
-Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desktop/ms724541) interface.
+Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) interface.
 
 ## Syntax
 
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE IRowsetInfoImpl :
-   public IRowsetInfo,  
+   public IRowsetInfo, 
    public CUtlProps<PropClass>
 ```
 
@@ -66,7 +59,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 #### Parameters
 
-See [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611) in the *OLE DB Programmer's Reference*.
+See [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="getreferencedrowset"></a> IRowsetInfoImpl::GetReferencedRowset
 
@@ -82,7 +75,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 #### Parameters
 
-See [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column.
+See [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column.
 
 ## <a name="getspecification"></a> IRowsetInfoImpl::GetSpecification
 
@@ -97,13 +90,13 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 #### Parameters
 
-See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) in the *OLE DB Programmer's Reference*.
+See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ### Remarks
 
 Use this method with [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) to retrieve properties from the data source object.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

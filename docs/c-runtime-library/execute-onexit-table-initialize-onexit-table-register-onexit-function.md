@@ -1,18 +1,12 @@
 ---
-title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function | Microsoft Docs"
-ms.custom: ""
+title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 ms.date: "11/04/2016"
-ms.topic: "conceptual"
 apiname: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function"]
 apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initialize_onexit_table", "process/_initialize_onexit_table", "_register_onexit_function", "process/_register_onexit_function"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_execute_onexit_table function", "_initialize_onexit_table function", "_register_onexit_function function"]
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
@@ -65,7 +59,7 @@ The `_execute_onexit_table` function executes all of the functions in the onexit
 
 The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft specific. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
-## See Also
+## See also
 
 [atexit](../c-runtime-library/reference/atexit.md)<br/>
 [exit, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)<br/>

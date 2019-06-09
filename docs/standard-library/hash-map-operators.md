@@ -1,10 +1,7 @@
 ---
-title: "&lt;hash_map&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;hash_map&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ---
 # &lt;hash_map&gt; operators

@@ -1,16 +1,9 @@
 ---
-title: "ConvertBSTRToString | Microsoft Docs"
-ms.custom: ""
+title: "ConvertBSTRToString"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["ConvertBSTRToString"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ConvertBSTRToString function"]
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ConvertBSTRToString
 

@@ -1,16 +1,9 @@
 ---
-title: "_mm_cvtsi64x_ss | Microsoft Docs"
-ms.custom: ""
+title: "_mm_cvtsi64x_ss"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_mm_cvtsi64x_ss"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cvtsi2ss instruction", "_mm_cvtsi64x_ss intrinsic"]
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mm_cvtsi64x_ss
 
@@ -21,9 +14,9 @@ Generates the x64 extended version of the Convert 64-Bit Integer to Scalar Singl
 ## Syntax
 
 ```
-__m128 _mm_cvtsi64x_ss( 
-   __m128 a, 
-   __int64 b 
+__m128 _mm_cvtsi64x_ss(
+   __m128 a,
+   __int64 b
 );
 ```
 
@@ -87,7 +80,7 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__m128](../cpp/m128.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,16 +1,9 @@
 ---
-title: "DAO Classes | Microsoft Docs"
-ms.custom: ""
+title: "DAO Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.data"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DAO Classes
 
@@ -59,7 +52,6 @@ Wrapper for the OLE automation type **DATE**. Represents date and time values.
 [COleVariant](../mfc/reference/colevariant-class.md)<br/>
 Wrapper for the OLE automation type **VARIANT**. Data in **VARIANT**s can be stored in many formats.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

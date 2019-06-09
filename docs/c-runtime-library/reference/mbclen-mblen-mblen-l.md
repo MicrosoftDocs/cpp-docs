@@ -1,21 +1,14 @@
 ---
-title: "_mbclen, mblen, _mblen_l | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-apiname: ["_mbclen", "mblen", "_mblen_l"]
+title: "_mbclen, mblen, _mblen_l, _mbclen_l"
+ms.date: "01/22/2019"
+apiname: ["_mbclen", "mblen", "_mblen_l", "_mbclen_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 apitype: "DLLExport"
-f1_keywords: ["mblen", "ftclen", "_mbclen", "tclen", "_ftclen", "_tclen", "mbclen"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["tclen function", "_mblen_l function", "_tclen function", "mblen_l function", "_mbclen function", "mbclen function", "mblen function"]
+f1_keywords: ["mblen", "ftclen", "_mbclen", "_mbclen_l", "tclen", "_ftclen", "_tclen", "mbclen"]
+helpviewer_keywords: ["tclen function", "_mblen_l function", "_tclen function", "mblen_l function", "_mbclen function", "_mbclen_l function", "mbclen function", "mblen function"]
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
-# _mbclen, mblen, _mblen_l
+# _mbclen, mblen, _mblen_l, _mbclen_l
 
 Gets the length and determines the validity of a multibyte character.
 
@@ -27,6 +20,10 @@ Gets the length and determines the validity of a multibyte character.
 ```C
 size_t _mbclen(
    const unsigned char *c
+);
+size_t _mbclen_l(
+   unsigned char const* c,
+   _locale_t locale
 );
 int mblen(
    const char *mbstr,
@@ -55,15 +52,15 @@ Locale to use.
 
 ## Return Value
 
-**_mbclen** returns 1 or 2, according to whether the multibyte character *c* is 1 or 2 bytes long. There is no error return for **_mbclen**. If *mbstr* is not **NULL**, **mblen** returns the length, in bytes, of the multibyte character. If *mbstr* is **NULL** or it points to the wide-character null character, **mblen** returns 0. If the object that *mbstr* points to does not form a valid multibyte character within the first *count* characters, **mblen** returns -1.
+**_mbclen** returns 1 or 2, according to whether the multibyte character *c* is 1 or 2 bytes long. There is no error return for **_mbclen**. If *mbstr* isn't **NULL**, **mblen** returns the length, in bytes, of the multibyte character. If *mbstr* is **NULL** or it points to the wide-character null character, **mblen** returns 0. When the object that *mbstr* points to doesn't form a valid multibyte character within the first *count* characters, **mblen** returns -1.
 
 ## Remarks
 
-The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* does not point to the lead byte of a multibyte character as determined by an implicit call to **_ismbblead**, the result of **_mbclen** is unpredictable.
+The **_mbclen** function returns the length, in bytes, of the multibyte character *c*. If *c* doesn't point to the lead byte of a multibyte character as determined by an implicit call to **_ismbblead**, the result of **_mbclen** is unpredictable.
 
-**mblen** returns the length in bytes of *mbstr* if it is a valid multibyte character and determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
+**mblen** returns the length in bytes of *mbstr* if it's a valid multibyte character and determines multibyte-character validity associated with the code page. **mblen** examines *count* or fewer bytes contained in *mbstr*, but not more than **MB_CUR_MAX** bytes.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 ### Generic-Text Routine Mappings
 

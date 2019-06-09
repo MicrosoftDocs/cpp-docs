@@ -1,15 +1,8 @@
 ---
-title: "Class Attributes (C++ COM) | Microsoft Docs"
-ms.custom: ""
+title: "Class Attributes (C++ COM)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++/CLI], class attributes"]
 ms.assetid: fad04ea1-d8ff-46d4-bb42-2b4500a6ab60
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # Class Attributes
 
@@ -52,6 +45,6 @@ The following attributes apply to the [class](../../cpp/class-cpp.md) C++ keywor
 |[version](version-cpp.md)|Identifies a particular version among multiple versions of a class.|
 |[vi_progid](vi-progid.md)|Specifies a version-independent form of the ProgID.|
 
-## See Also
+## See also
 
 [Attributes by Usage](attributes-by-usage.md)

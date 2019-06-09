@@ -1,15 +1,8 @@
 ---
-title: "C++ Built-in Operators, Precedence and Associativity | Microsoft Docs"
-ms.custom: ""
+title: "C++ Built-in Operators, Precedence and Associativity"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators (C++), hierarchy", "operator precedence", "precedence, operators", "operators (C++), associativity", "multiple operators [C++]", "associativity of operators [C++]", "operators [C++], precedence", "evaluation order", "hierarchy, operator"]
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C++ Built-in Operators, Precedence and Associativity
 

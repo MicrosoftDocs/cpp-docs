@@ -1,16 +1,9 @@
 ---
-title: "Receiving Notification from Common Controls | Microsoft Docs"
-ms.custom: ""
+title: "Receiving Notification from Common Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["ON_NOTIFY", "WM_NOTIFY"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["OnNotify method [MFC]", "common controls [MFC], notifications", "ON_NOTIFY macro [MFC]", "controls [MFC], notifications", "receiving notifications from common controls", "notifications [MFC], common controls", "Windows common controls [MFC], notifications", "WM_NOTIFY message"]
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Receiving Notification from Common Controls
 
@@ -35,8 +28,7 @@ Add the following code to the body of the notification message handler (in this 
 
 At this point, the mouse cursor location is stored in the `cursorPos` object.
 
-## See Also
+## See also
 
 [Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

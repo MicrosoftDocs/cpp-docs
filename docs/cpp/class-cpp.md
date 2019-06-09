@@ -1,16 +1,9 @@
 ---
-title: "class (C++) | Microsoft Docs"
-ms.custom: ""
+title: "class (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["class_cpp"]
-dev_langs: ["CPP"]
 helpviewer_keywords: ["class types [C++], class statements", "class keyword [C++]"]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # class (C++)
 
@@ -22,7 +15,7 @@ The **class** keyword declares a class type or defines an object of a class type
 [template-spec]
 class [ms-decl-spec] [tag [: base-list ]]
 {
-   member-list
+   member-list
 } [declarators];
 [ class ] tag declarators;
 ```
@@ -64,7 +57,7 @@ For more information on classes in general, refer to one of the following topics
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-For information on managed classes and structs, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md)
+For information on managed classes and structs in C++/CLI and C++/CX, see [Classes and Structs](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 ## Example
 

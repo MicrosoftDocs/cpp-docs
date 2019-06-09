@@ -1,16 +1,9 @@
 ---
-title: "OLE Classes | Microsoft Docs"
-ms.custom: ""
+title: "OLE Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX classes [MFC]", "classes [MFC], OLE", "OLE classes [MFC]", "OLE [MFC], classes"]
 ms.assetid: 4c2b2bca-fafb-4d2d-8498-9ed1e04011d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE Classes
 
@@ -46,7 +39,6 @@ The following categories of classes support ActiveX:
 
 To see the inheritance of a class, use the [Class Hierarchy Chart](../mfc/hierarchy-chart.md).
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

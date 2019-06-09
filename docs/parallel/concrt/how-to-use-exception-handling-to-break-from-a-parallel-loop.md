@@ -1,15 +1,8 @@
 ---
-title: "How to: Use Exception Handling to Break from a Parallel Loop | Microsoft Docs"
-ms.custom: ""
+title: "How to: Use Exception Handling to Break from a Parallel Loop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["search algorithm, writing [Concurrency Runtime]", "writing a search algorithm [Concurrency Runtime]"]
 ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Use Exception Handling to Break from a Parallel Loop
 
@@ -67,7 +60,7 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc task-tree-search.cpp**
 
-## See Also
+## See also
 
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
@@ -76,4 +69,3 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 [task_group Class](reference/task-group-class.md)<br/>
 [structured_task_group Class](../../parallel/concrt/reference/structured-task-group-class.md)<br/>
 [parallel_for_each Function](reference/concurrency-namespace-functions.md#parallel_for_each)
-

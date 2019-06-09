@@ -1,16 +1,10 @@
 ---
-title: "Platform::IntPtr value class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::IntPtr value class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/PlatformIntPtr::IntPtr", "VCCORLIB/PlatformIntPtr::op_explicit Operator", "VCCORLIB/PlatformIntPtr::ToInt32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IntPtr Struct"]
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::IntPtr value class
 
@@ -96,6 +90,6 @@ int32 IntPtr::ToInt32();
 
 A 32-bit integer.
 
-## See Also
+## See also
 
 [Platform namespace](../cppcx/platform-namespace-c-cx.md)

@@ -1,16 +1,9 @@
 ---
-title: "CGopherFileFind Class | Microsoft Docs"
-ms.custom: ""
+title: "CGopherFileFind Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGopherFileFind", "AFXINET/CGopherFileFind", "AFXINET/CGopherFileFind::CGopherFileFind", "AFXINET/CGopherFileFind::FindFile", "AFXINET/CGopherFileFind::FindNextFile", "AFXINET/CGopherFileFind::GetCreationTime", "AFXINET/CGopherFileFind::GetLastAccessTime", "AFXINET/CGopherFileFind::GetLastWriteTime", "AFXINET/CGopherFileFind::GetLength", "AFXINET/CGopherFileFind::GetLocator", "AFXINET/CGopherFileFind::GetScreenName", "AFXINET/CGopherFileFind::IsDots"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherFileFind [MFC], CGopherFileFind", "CGopherFileFind [MFC], FindFile", "CGopherFileFind [MFC], FindNextFile", "CGopherFileFind [MFC], GetCreationTime", "CGopherFileFind [MFC], GetLastAccessTime", "CGopherFileFind [MFC], GetLastWriteTime", "CGopherFileFind [MFC], GetLength", "CGopherFileFind [MFC], GetLocator", "CGopherFileFind [MFC], GetScreenName", "CGopherFileFind [MFC], IsDots"]
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGopherFileFind Class
 
@@ -170,7 +163,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was created.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was created.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -201,7 +194,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last accessed.
 
 ### Return Value
 
@@ -226,7 +219,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last written to.
+A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last written to.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -305,7 +298,7 @@ Nonzero if the found file has the name "." or "..", which indicates that the fou
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsDots`.
 
-## See Also
+## See also
 
 [CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

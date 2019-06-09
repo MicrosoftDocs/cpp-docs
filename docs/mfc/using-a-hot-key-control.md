@@ -1,15 +1,8 @@
 ---
-title: "Using a Hot Key Control | Microsoft Docs"
-ms.custom: ""
+title: "Using a Hot Key Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], using", "hot key controls"]
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using a Hot Key Control
 
@@ -27,8 +20,7 @@ Typical usage of a hot key control follows the pattern below:
 
 - If the hot key control is in a dialog box, it and the `CHotKeyCtrl` object will be destroyed automatically. If not, you need to ensure that both the control and the `CHotKeyCtrl` object are properly destroyed.
 
-## See Also
+## See also
 
 [Using CHotKeyCtrl](../mfc/using-chotkeyctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

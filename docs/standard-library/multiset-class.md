@@ -1,16 +1,9 @@
 ---
-title: "multiset Class | Microsoft Docs"
-ms.custom: ""
+title: "multiset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["set/std::multiset", "set/std::multiset::allocator_type", "set/std::multiset::const_iterator", "set/std::multiset::const_pointer", "set/std::multiset::const_reference", "set/std::multiset::const_reverse_iterator", "set/std::multiset::difference_type", "set/std::multiset::iterator", "set/std::multiset::key_compare", "set/std::multiset::key_type", "set/std::multiset::pointer", "set/std::multiset::reference", "set/std::multiset::reverse_iterator", "set/std::multiset::size_type", "set/std::multiset::value_compare", "set/std::multiset::value_type", "set/std::multiset::begin", "set/std::multiset::cbegin", "set/std::multiset::cend", "set/std::multiset::clear", "set/std::multiset::count", "set/std::multiset::crbegin", "set/std::multiset::crend", "set/std::multiset::emplace", "set/std::multiset::emplace_hint", "set/std::multiset::empty", "set/std::multiset::end", "set/std::multiset::equal_range", "set/std::multiset::erase", "set/std::multiset::find", "set/std::multiset::get_allocator", "set/std::multiset::insert", "set/std::multiset::key_comp", "set/std::multiset::lower_bound", "set/std::multiset::max_size", "set/std::multiset::rbegin", "set/std::multiset::rend", "set/std::multiset::size", "set/std::multiset::swap", "set/std::multiset::upper_bound", "set/std::multiset::value_comp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # multiset Class
 
@@ -401,7 +394,7 @@ The number of elements in the multiset whose sort key matches the parameter key.
 
 The member function returns the number of elements *x* in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 ### Example
 
@@ -675,7 +668,6 @@ int main()
     print(s1);
     cout << endl;
 }
-
 ```
 
 ## <a name="emplace_hint"></a>  multiset::emplace_hint
@@ -1204,7 +1196,6 @@ int main()
     print(s4);
     cout << endl;
 }
-
 ```
 
 ## <a name="iterator"></a>  multiset::iterator
@@ -1382,7 +1373,7 @@ int main( )
            << *ms1_RcIter << "." << endl;
 
    // The element at a specific location in the multiset can be
-   // found using a derefenced iterator addressing the location
+   // found using a dereferenced iterator addressing the location
    ms1_AcIter = ms1.end( );
    ms1_AcIter--;
    ms1_RcIter = ms1.lower_bound( *ms1_AcIter );
@@ -1536,7 +1527,7 @@ int main()
     ms1.insert(40);
 
     // Create an empty multiset ms2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     multiset <int, less<int> > ms2;
     ms2.insert(10);
     ms2.insert(20);
@@ -1727,15 +1718,15 @@ int main( )
    cout << "The first element in the reversed multiset is "
         << *ms1_rIter << "." << endl;
 
-   // begin can be used to start an interation
-   // throught a multiset in a forward order
+   // begin can be used to start an iteration
+   // through a multiset in a forward order
    cout << "The multiset is:";
    for ( ms1_Iter = ms1.begin( ) ; ms1_Iter != ms1.end( ); ms1_Iter++ )
       cout << " " << *ms1_Iter;
    cout << endl;
 
-   // rbegin can be used to start an interation
-   // throught a multiset in a reverse order
+   // rbegin can be used to start an iteration
+   // through a multiset in a reverse order
    cout << "The reversed multiset is:";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
       cout << " " << *ms1_rIter;
@@ -1843,15 +1834,15 @@ int main() {
    cout << "The last element in the reversed multiset is "
         << *ms1_rIter << "." << endl;
 
-   // end can be used to terminate an interation
-   // throught a multiset in a forward order
+   // end can be used to terminate an iteration
+   // through a multiset in a forward order
    cout << "The multiset is: ";
    for ( ms1_Iter = ms1.begin( ) ; ms1_Iter != ms1.end( ); ms1_Iter++ )
       cout << *ms1_Iter << " ";
    cout << "." << endl;
 
-   // rend can be used to terminate an interation
-   // throught a multiset in a reverse order
+   // rend can be used to terminate an iteration
+   // through a multiset in a reverse order
    cout << "The reversed multiset is: ";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
       cout << *ms1_rIter << " ";

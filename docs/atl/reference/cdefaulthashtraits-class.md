@@ -1,16 +1,9 @@
 ---
-title: "CDefaultHashTraits Class | Microsoft Docs"
-ms.custom: ""
+title: "CDefaultHashTraits Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits::Hash"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDefaultHashTraits class"]
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDefaultHashTraits Class
 
@@ -67,6 +60,6 @@ Returns the hash value.
 
 The default hashing algorithm is very simple: the return value is the element number. Override this function if a more complicated algorithm is required.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

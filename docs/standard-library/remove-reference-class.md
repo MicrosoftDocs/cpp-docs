@@ -1,16 +1,9 @@
 ---
-title: "remove_reference Class | Microsoft Docs"
-ms.custom: ""
+title: "remove_reference Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["type_traits/std::remove_reference"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remove_reference class", "remove_reference"]
 ms.assetid: 294e1965-3ae3-46ee-bc42-4fdf60c24717
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove_reference Class
 

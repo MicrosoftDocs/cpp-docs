@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3699 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3699"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3699"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3699"]
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3699
 
@@ -35,7 +28,7 @@ int main() {
 
 ## Example
 
-A trivial property cannot have reference type. See [property](../../windows/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
+A trivial property cannot have reference type. See [property](../../extensions/property-cpp-component-extensions.md) for more information. The following sample generates C3699.
 
 ```
 // C3699_b.cpp

@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2843 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2843"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2843"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2843"]
 ms.assetid: 9d3f2ac4-eea5-4fed-abeb-e752f442bfcc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2843
 

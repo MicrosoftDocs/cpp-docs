@@ -1,15 +1,8 @@
 ---
-title: "Clipboard | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cutting and copying data", "copying data", "Clipboard", "Clipboard, programming", "transferring data"]
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard
 
@@ -39,6 +32,6 @@ The Clipboard is a system service shared by the entire Windows session, so it do
 
 - [Implementing drag and drop (OLE)](../mfc/drag-and-drop-ole.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

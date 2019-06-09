@@ -1,15 +1,8 @@
 ---
-title: "OLE in MFC | Microsoft Docs"
-ms.custom: ""
+title: "OLE in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, OLE and", "OLE items", "OLE applications [MFC], about OLE", "OLE [MFC]", "OLE containers [MFC], about OLE", "applications [OLE], about OLE", "OLE component object model (COM)"]
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OLE in MFC
 
@@ -70,7 +63,6 @@ Describes the steps necessary to incorporate optional advanced features into exi
 [The Component Object Model](/windows/desktop/com/the-component-object-model)<br/>
 Describes using OLE without MFC.
 
-## See Also
+## See also
 
 [Concepts](../mfc/mfc-concepts.md)
-

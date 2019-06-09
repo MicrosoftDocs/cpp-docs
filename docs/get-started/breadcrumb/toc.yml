@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: C++ | Visual Studio
+    tocHref: /cpp/
+    topicHref: /cpp/ide/
+    items:
+    - name: C++
+      tocHref: /cpp/get-started/
+      topicHref: /cpp/get-started/index

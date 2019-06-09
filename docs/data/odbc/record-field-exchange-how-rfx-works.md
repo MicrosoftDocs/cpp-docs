@@ -1,15 +1,8 @@
 ---
-title: "Record Field Exchange: How RFX Works | Microsoft Docs"
-ms.custom: ""
+title: "Record Field Exchange: How RFX Works"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["record editing [C++], using RFX", "RFX (ODBC) [C++], updating data in recordsets", "scrolling [C++]", "ODBC [C++], RFX", "data binding [C++], DFX", "scrolling [C++], RFX", "RFX (ODBC) [C++], binding fields and parameters"]
 ms.assetid: e647cacd-62b0-4b80-9e20-b392deca5a88
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: How RFX Works
 
@@ -114,7 +107,7 @@ The following table shows the sequence of RFX operations when you add a new reco
 
 When you delete a record, RFX sets all the fields to NULL as a reminder that the record is deleted and you must move off it. You do not need any other RFX sequence information.
 
-## See Also
+## See also
 
 [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)<br/>
 [MFC ODBC Consume](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>

@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C3833 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3833"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3833"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3833"]
 ms.assetid: 8152be53-e01e-48cd-9eef-9de38723664c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3833
 
 'type' : invalid target type for pointer_type
 
-An [interior_ptr](../../windows/interior-ptr-cpp-cli.md) or [pin_ptr](../../windows/pin-ptr-cpp-cli.md) was declared incorrectly.
+An [interior_ptr](../../extensions/interior-ptr-cpp-cli.md) or [pin_ptr](../../extensions/pin-ptr-cpp-cli.md) was declared incorrectly.
 
 The following sample generates C3833:
 

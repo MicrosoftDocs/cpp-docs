@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3530 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3530"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3530"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3530"]
 ms.assetid: 21be81ce-b699-4c74-81bc-80a0c34d2d5a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3530
 
@@ -36,6 +29,6 @@ int main()
 }
 ```
 
-## See Also
+## See also
 
 [auto Keyword](../../cpp/auto-keyword.md)

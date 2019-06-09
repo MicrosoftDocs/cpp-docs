@@ -1,15 +1,8 @@
 ---
-title: "Application Design Choices | Microsoft Docs"
-ms.custom: ""
+title: "Application Design Choices"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Application Design Choices
 
@@ -79,10 +72,9 @@ The following table summarizes several ways of using MFC to transfer data across
 |[WinInet](../mfc/win32-internet-extensions-wininet.md)|For Internet protocols for HTTP, FTP, and gopher. Data can be transferred synchronously or asynchronously and is stored in a system-wide cache.|[CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md), and many more.|
 |[WinSock](../mfc/windows-sockets-in-mfc.md)|For maximum efficiency and control. Requires understanding of sockets and TCP/IP protocols.|[CSocket](../mfc/reference/csocket-class.md), [CAsyncSocket](../mfc/reference/casyncsocket-class.md)|
 
-## See Also
+## See also
 
 [MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)
-

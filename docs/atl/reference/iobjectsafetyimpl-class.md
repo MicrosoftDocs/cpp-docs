@@ -1,16 +1,9 @@
 ---
-title: "IObjectSafetyImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IObjectSafetyImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl::GetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::SetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::m_dwCurrentSafety"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [ATL], safe", "safe for scripting and initialization (controls)", "IObjectSafety, ATL implementation", "IObjectSafetyImpl class"]
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IObjectSafetyImpl Class
 
@@ -119,7 +112,7 @@ The implementation returns E_NOINTERFACE for any interface not supported by the 
 
 See [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) in the Windows SDK.
 
-## See Also
+## See also
 
 [IObjectSafety Interface](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

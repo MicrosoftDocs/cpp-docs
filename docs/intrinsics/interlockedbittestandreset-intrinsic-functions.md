@@ -1,16 +1,9 @@
 ---
-title: "_interlockedbittestandreset Intrinsic Functions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "_interlockedbittestandreset Intrinsic Functions"
+ms.date: "12/17/2018" 
 f1_keywords: ["_interlockedbittestandreset_rel", "_interlockedbittestandreset64", "_interlockedbittestandreset64_HLERelease", "_interlockedbittestandreset_HLERelease", "_interlockedbittestandreset_HLEAcquire", "_interlockedbittestandreset_acq", "_interlockedbittestandreset_cpp", "_interlockedbittestandreset_nf", "_interlockedbittestandreset64_cpp", "_interlockedbittestandreset64_HLEAcquire", "_interlockedbittestandreset"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["lock_btr instruction", "_interlockedbittestandreset64 intrinsic", "_interlockedbittestandreset intrinsic"]
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _interlockedbittestandreset Intrinsic Functions
 
@@ -93,7 +86,7 @@ These routines are only available as intrinsics.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Conflicts with the x86 Compiler](../build/conflicts-with-the-x86-compiler.md)
+[Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

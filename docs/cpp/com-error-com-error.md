@@ -1,16 +1,9 @@
 ---
-title: "_com_error::_com_error | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::_com_error"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::_com_error"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_com_error method [C++]"]
 ms.assetid: 0a69e46c-caab-49ef-b091-eee401253ce6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::_com_error
 

@@ -1,15 +1,8 @@
 ---
-title: "Property Sheets and Property Pages in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Property Sheets and Property Pages in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["property pages [MFC], MFC", "controls [MFC], property sheets", "property sheets, MFC", "tab dialog boxes"]
 ms.assetid: e1bede2b-0285-4b88-a052-0f8a372807a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Sheets and Property Pages in MFC
 
@@ -24,7 +17,6 @@ A property sheet is a special kind of dialog box that is generally used to modif
 > [!NOTE]
 >  When you are trying to show a property sheet by using `CPropertySheet::DoModal`, the system might generate a first-chance exception. This exception occurs because the system is trying to change the [Window Styles](../mfc/reference/styles-used-by-mfc.md#window-styles) of the object before the object has been created. For more information about this exception, and also how to avoid it or handle it, see [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "C Runtime Error R6018 | Microsoft Docs"
-ms.custom: ""
+title: "C Runtime Error R6018"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["R6018"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["R6018"]
 ms.assetid: f6dd40d1-a119-4d8b-b39e-97350ea23349
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6018
 
@@ -31,4 +24,4 @@ The program encountered an unexpected error while performing a memory-management
 
 This error usually occurs if the program inadvertently alters the run-time heap data. However, it can also be caused by an internal error in the runtime or operating-system code.
 
-To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../ide/deployment-in-visual-cpp.md).
+To fix this issue, check for heap corruption bugs in your code. For more information and examples, see [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Next, check that you are using the latest redistributables for your app deployment. For information, see [Deployment in Visual C++](../../windows/deployment-in-visual-cpp.md).

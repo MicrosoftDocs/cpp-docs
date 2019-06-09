@@ -1,16 +1,9 @@
 ---
-title: "tiled_index Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
+title: "tiled_index Class"
+ms.date: "03/27/2019"
 f1_keywords: ["tiled_index", "AMP/tiled_index", "AMP/Concurrency::tiled_index::tiled_index", "AMP/Concurrency::tiled_index::get_tile_extent", "AMP/Concurrency::tiled_index::barrier", "AMP/Concurrency::tiled_index::global", "AMP/Concurrency::tiled_index::local", "AMP/Concurrency::tiled_index::rank", "AMP/Concurrency::tiled_index::tile", "AMP/Concurrency::tiled_index::tile_dim0", "AMP/Concurrency::tiled_index::tile_dim1", "AMP/Concurrency::tiled_index::tile_dim2", "AMP/Concurrency::tiled_index::tile_origin", "AMP/Concurrency::tiled_index::tile_extent"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tiled_index class"]
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # tiled_index Class
 
@@ -96,7 +89,7 @@ The length of the least significant dimension.
 
 **Namespace:** Concurrency
 
-## <a name="tiled_index__ctor"></a>  tiled_index Constructor
+## <a name="ctor"></a>  tiled_index Constructor
 
 Initializes a new instance of the `tiled_index` class.
 
@@ -255,6 +248,6 @@ const index<rank> tile_origin
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```
 
-## See Also
+## See also
 
 [Concurrency Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)

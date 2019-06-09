@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4792 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4792"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4792"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4792"]
 ms.assetid: c047ce69-a622-44e1-9425-d41aa9261c61
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4792
 

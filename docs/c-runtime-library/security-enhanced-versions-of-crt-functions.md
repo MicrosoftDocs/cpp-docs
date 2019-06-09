@@ -1,15 +1,8 @@
 ---
-title: "Security-Enhanced Versions of CRT Functions | Microsoft Docs"
-ms.custom: ""
+title: "Security-Enhanced Versions of CRT Functions"
 ms.date: "03/21/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["security [CRT]", "security-enhanced CRT", "CRT, security enhancements"]
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Security-Enhanced Versions of CRT Functions
 
@@ -97,6 +90,6 @@ More secure versions of run-time library routines are available. For further inf
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)|[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|Convert a sequence of wide characters to a corresponding sequence of multibyte characters|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)|[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|Convert a wide character to the corresponding multibyte character|
 
-## See Also
+## See also
 
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

@@ -1,15 +1,8 @@
 ---
-title: "Identifiers (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/12/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
+title: "Identifiers (C++)"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["decorated names", "decorated names, about decorated names", "identifiers, C++", "white space, in C++ identifiers", "identifiers [C++]"]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Identifiers (C++)
 
@@ -66,7 +59,7 @@ Only the first 2048 characters of Microsoft C++ identifiers are significant. Nam
 
 - The number of arguments to a function.
 
-The dollar sign `$` is a valid identifier character in Visual C++. Visual C++ also allows you to use the actual characters represented by the allowed ranges of universal character names in identifiers. To use these characters, you must save the file by using a file encoding codepage that includes them.  This example shows how both extended characters and universal character names can be used interchangeably in your code.
+The dollar sign `$` is a valid identifier character in the Microsoft C++ compiler (MSVC). MSVC also allows you to use the actual characters represented by the allowed ranges of universal character names in identifiers. To use these characters, you must save the file by using a file encoding codepage that includes them.  This example shows how both extended characters and universal character names can be used interchangeably in your code.
 
 ```cpp
 // extended_identifier.cpp

@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Label Editing | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Label Editing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["editing tree control labels", "CTreeCtrl class [MFC], editing labels", "label editing in CTreeCtrl class [MFC]", "tree controls [MFC], label editing"]
 ms.assetid: 6cde2ac3-43ee-468f-bac2-cf1a228ad32d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Label Editing
 
@@ -21,8 +14,7 @@ When label editing is canceled or completed, a tree control sends a [TVN_ENDLABE
 
 During label editing, typically in response to the [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) notification message, you can get a pointer to the edit control used for label editing by using the [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) member function. You can call the edit control's [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) member function to limit the amount of text a user can enter or subclass the edit control to intercept and discard invalid characters. Note, however, that the edit control is displayed only *after* **TVN_BEGINLABELEDIT** is sent.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

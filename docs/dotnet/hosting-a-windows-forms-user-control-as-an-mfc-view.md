@@ -1,15 +1,8 @@
 ---
-title: "Hosting a Windows Forms User Control as an MFC View | Microsoft Docs"
-ms.custom: ""
+title: "Hosting a Windows Forms User Control as an MFC View"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms controls [C++], hosting as an MFC view", "hosting Windows Forms control [C++]"]
 ms.assetid: 43c02ab4-1366-434c-a980-0b19326d6ea0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Hosting a Windows Forms User Control as an MFC View
 
@@ -29,7 +22,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
 [How to: Call Properties and Methods of the Windows Forms Control](../dotnet/how-to-call-properties-and-methods-of-the-windows-forms-control.md)
 
-## See Also
+## See also
 
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)<br/>
 [How to: Author Composite Controls](/dotnet/framework/winforms/controls/how-to-author-composite-controls)

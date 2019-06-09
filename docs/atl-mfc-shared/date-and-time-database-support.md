@@ -1,15 +1,8 @@
 ---
-title: "Date and Time: Database Support | Microsoft Docs"
-ms.custom: ""
+title: "Date and Time: Database Support"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tables [C++]", "dates [C++], database support", "COleDateTime class, database programming", "time [C++], database support", "database tables [C++], date/time data", "tables [C++], date/time data", "databases [C++], date/time data", "COleDateTimeSpan class, database programming"]
 ms.assetid: 4a57a1bb-fad5-4b70-b32c-42ad75c710c8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Date and Time: Database Support
 
@@ -19,7 +12,6 @@ As of version 4.0, MFC database programming uses the [COleDateTime](../atl-mfc-s
 
 - [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)
 
-## See Also
+## See also
 
 [Date and Time](../atl-mfc-shared/date-and-time.md)
-

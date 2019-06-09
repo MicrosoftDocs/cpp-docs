@@ -1,15 +1,8 @@
 ---
-title: "Multithreading and Locales | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading and Locales"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["locales [C++], multithreading", "multithreading [C++], locales", "threading [C++], locales", "per-thread locale"]
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading and Locales
 
@@ -432,7 +425,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## See Also
+## See also
 
 [Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>

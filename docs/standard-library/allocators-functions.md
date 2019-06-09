@@ -1,8 +1,6 @@
 ---
-title: "&lt;allocators&gt; macros | Microsoft Docs"
-ms.custom: ""
+title: "&lt;allocators&gt; macros"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]
 ms.assetid: 9cb5ee07-1ff9-4594-ae32-3c8c6efb511a
 helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]", "std::CACHE_FREELIST [C++]", "std::CACHE_SUBALLOC [C++]", "std::SYNC_DEFAULT [C++]"]

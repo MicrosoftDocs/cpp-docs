@@ -1,16 +1,9 @@
 ---
-title: "CDaoFieldExchange Class | Microsoft Docs"
-ms.custom: ""
+title: "CDaoFieldExchange Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDaoFieldExchange Class
 
@@ -146,7 +139,7 @@ If you parameterize your recordset class, you should add DFX calls for all param
 
 In general, each group of DFX function calls associated with field data members or parameter data members must be preceded by a call to `SetFieldType`. The *nFieldType* parameter of each `SetFieldType` call identifies the type of the data members represented by the DFX function calls that follow the `SetFieldType` call.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDaoRecordset Class](../../mfc/reference/cdaorecordset-class.md)

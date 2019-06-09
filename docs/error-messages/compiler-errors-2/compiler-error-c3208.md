@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3208 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3208"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3208"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3208"]
 ms.assetid: 6d060bfe-52cf-4599-8f70-bdeb5a670df3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3208
 

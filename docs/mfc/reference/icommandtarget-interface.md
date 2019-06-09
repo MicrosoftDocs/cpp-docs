@@ -1,16 +1,9 @@
 ---
-title: "ICommandTarget Interface | Microsoft Docs"
-ms.custom: ""
+title: "ICommandTarget Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["ICommandTarget", "AFXWINFORMS/ICommandTarget", "AFXWINFORMS/ICommandTarget::Initialize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandTarget interface [MFC]"]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ICommandTarget Interface
 
@@ -61,8 +54,7 @@ When you host a user control in an MFC View, CWinFormsView routes commands and u
 
 This method initializes the command target object and associates it with the specified command source object cmdSource. It should be called in the user control class implementation. At initialization, you should register command handlers with the command source object by calling ICommandSource::AddCommandHandler in the Initialize implementation. See How to: Add Command Routing to the Windows Forms Control for an example of how to use Initialize to do this.
 
-## See Also
+## See also
 
 [How to: Add Command Routing to the Windows Forms Control](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandSource Interface](../../mfc/reference/icommandsource-interface.md)
-

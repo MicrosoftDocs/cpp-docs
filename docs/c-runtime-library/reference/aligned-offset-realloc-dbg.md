@@ -1,19 +1,12 @@
 ---
-title: "_aligned_offset_realloc_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_aligned_offset_realloc_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_aligned_offset_realloc_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["aligned_offset_realloc_dbg", "_aligned_offset_realloc_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aligned_offset_realloc_dbg function", "_aligned_offset_realloc_dbg function"]
 ms.assetid: 64e30a12-887e-453b-aea8-aed793fca9d8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _aligned_offset_realloc_dbg
 
@@ -58,7 +51,7 @@ Line number in the source file where the **aligned_offset_realloc** operation wa
 
 ## Remarks
 
-**_aligned_offset_realloc_dbg** is a debug version of the [_aligned_offset_realloc](aligned-offset-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_offset_realloc_dbg** is reduced to a call to **_aligned_offset_realloc**. Both **_aligned_offset_realloc** and **_aligned_offset_realloc_dbg** reallocate a memory block in the base heap, but **_aligned_offset_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, a block type parameter to track specific allocation types, and *filename*/*linenumber* information to determine the origin of allocation requests.
+**_aligned_offset_realloc_dbg** is a debug version of the [_aligned_offset_realloc](aligned-offset-realloc.md) function. When [_DEBUG](../../c-runtime-library/debug.md) is not defined, each call to **_aligned_offset_realloc_dbg** is reduced to a call to **_aligned_offset_realloc**. Both **_aligned_offset_realloc** and **_aligned_offset_realloc_dbg** reallocate a memory block in the base heap, but **_aligned_offset_realloc_dbg** accommodates several debugging features: buffers on either side of the user portion of the block to test for leaks, and *filename*/*linenumber* information to determine the origin of allocation requests. Tracking specific allocation types with a block type parameter is not a supported debug feature for aligned allocations. Aligned allocations will appear as a _NORMAL_BLOCK block type.
 
 Like [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_realloc_dbg** allows a structure to be aligned at an offset within the structure.
 

@@ -1,16 +1,10 @@
 ---
-title: "swap Function (auto_gcroot) | Microsoft Docs"
-ms.custom: ""
+title: "swap Function (auto_gcroot)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["msclr::swap", "msclr.swap"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["swap function"]
 ms.assetid: 2fe8146b-a7f7-445a-9ae9-53b5556be701
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # swap Function (auto_gcroot)
 
@@ -67,7 +61,7 @@ s1 = 'string two', s2 = 'string one'
 
 **Namespace** msclr
 
-## See Also
+## See also
 
 [auto_gcroot](../dotnet/auto-gcroot.md)<br/>
 [auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)

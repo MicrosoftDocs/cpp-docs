@@ -1,16 +1,9 @@
 ---
-title: "static_partitioner Class | Microsoft Docs"
-ms.custom: ""
+title: "static_partitioner Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["static_partitioner", "PPL/concurrency::static_partitioner", "PPL/concurrency::static_partitioner::static_partitioner"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["static_partitioner class"]
 ms.assetid: 2b3dbdf0-6eb9-49f6-8639-03df1d974143
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # static_partitioner Class
 
@@ -57,6 +50,6 @@ Constructs a `static_partitioner` object.
 static_partitioner();
 ```
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

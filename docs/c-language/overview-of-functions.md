@@ -1,15 +1,8 @@
 ---
-title: "Overview of Functions | Microsoft Docs"
-ms.custom: ""
+title: "Overview of Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [C++]", "control flow, function calls"]
 ms.assetid: b6f4637f-02b9-49d8-8601-1f886bd2cfb9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Overview of Functions
 
@@ -21,6 +14,6 @@ The compiler uses the prototype to compare the types of arguments in subsequent 
 
 A function call passes execution control from the calling function to the called function. The arguments, if any, are passed by value to the called function. Execution of a `return` statement in the called function returns control and possibly a value to the calling function.
 
-## See Also
+## See also
 
 [Functions](../c-language/functions-c.md)

@@ -1,16 +1,9 @@
 ---
-title: "appobject (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "appobject (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.appobject"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["appobject attribute"]
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # appobject
 
@@ -58,7 +51,7 @@ class A : public ICustom {
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

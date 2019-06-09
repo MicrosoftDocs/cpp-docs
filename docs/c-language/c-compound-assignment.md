@@ -1,15 +1,8 @@
 ---
-title: "C Compound Assignment | Microsoft Docs"
-ms.custom: ""
+title: "C Compound Assignment"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C], assignment", "compound assignment operators", "assignment operators, compound"]
 ms.assetid: db7b5893-cd56-4f1c-9981-5a024200ab63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Compound Assignment
 
@@ -33,6 +26,6 @@ n &= MASK;
 
 In this example, a bitwise-inclusive-AND operation is performed on `n` and `MASK`, and the result is assigned to `n`. The manifest constant `MASK` is defined with a [#define](../preprocessor/hash-define-directive-c-cpp.md) preprocessor directive.
 
-## See Also
+## See also
 
 [C Assignment Operators](../c-language/c-assignment-operators.md)

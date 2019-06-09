@@ -1,16 +1,9 @@
 ---
-title: "_rotl8, _rotl16 | Microsoft Docs"
-ms.custom: ""
+title: "_rotl8, _rotl16"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_rotl8", "_rotl16"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_rotl8 intrinsic", "_rotl16 intrinsic"]
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _rotl8, _rotl16
 
@@ -21,13 +14,13 @@ Rotate the input values to the left to the most significant bit (MSB) by a speci
 ## Syntax
 
 ```
-unsigned char _rotl8( 
-   unsigned char value, 
-   unsigned char shift 
+unsigned char _rotl8(
+   unsigned char value,
+   unsigned char shift
 );
-unsigned short _rotl16( 
-   unsigned short value, 
-   unsigned char shift 
+unsigned short _rotl16(
+   unsigned short value,
+   unsigned char shift
 );
 ```
 
@@ -97,7 +90,7 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

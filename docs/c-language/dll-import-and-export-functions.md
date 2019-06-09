@@ -1,15 +1,8 @@
 ---
-title: "DLL Import and Export Functions | Microsoft Docs"
-ms.custom: ""
+title: "DLL Import and Export Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], importing", "dllimport attribute [C++], storage-class attribute", "DLL exports [C++]", "declaring functions, with dllexport and dllimport", "extended storage-class attributes", "dllexport attribute [C++], storage-class attribute"]
 ms.assetid: 08d164b9-770a-4e14-afeb-c6f21d9e33e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DLL Import and Export Functions
 
@@ -35,6 +28,6 @@ For specific information about the syntax for extended storage-class modifiers, 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [C Function Definitions](../c-language/c-function-definitions.md)

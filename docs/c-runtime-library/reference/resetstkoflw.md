@@ -1,19 +1,12 @@
 ---
-title: "_resetstkoflw | Microsoft Docs"
-ms.custom: ""
+title: "_resetstkoflw"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_resetstkoflw"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["resetstkoflw", "_resetstkoflw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["resetstkoflw function", "stack overflow", "stack, recovering", "_resetstkoflw function"]
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _resetstkoflw
 

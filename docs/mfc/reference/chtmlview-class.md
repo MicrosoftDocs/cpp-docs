@@ -1,16 +1,9 @@
 ---
-title: "CHtmlView Class | Microsoft Docs"
-ms.custom: ""
+title: "CHtmlView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CHtmlView", "AFXHTML/CHtmlView", "AFXHTML/CHtmlView::Create", "AFXHTML/CHtmlView::CreateControlSite", "AFXHTML/CHtmlView::ExecFormsCommand", "AFXHTML/CHtmlView::ExecWB", "AFXHTML/CHtmlView::GetAddressBar", "AFXHTML/CHtmlView::GetApplication", "AFXHTML/CHtmlView::GetBusy", "AFXHTML/CHtmlView::GetContainer", "AFXHTML/CHtmlView::GetFullName", "AFXHTML/CHtmlView::GetFullScreen", "AFXHTML/CHtmlView::GetHeight", "AFXHTML/CHtmlView::GetHtmlDocument", "AFXHTML/CHtmlView::GetLeft", "AFXHTML/CHtmlView::GetLocationName", "AFXHTML/CHtmlView::GetLocationURL", "AFXHTML/CHtmlView::GetMenuBar", "AFXHTML/CHtmlView::GetOffline", "AFXHTML/CHtmlView::GetParentBrowser", "AFXHTML/CHtmlView::GetProperty", "AFXHTML/CHtmlView::GetReadyState", "AFXHTML/CHtmlView::GetRegisterAsBrowser", "AFXHTML/CHtmlView::GetRegisterAsDropTarget", "AFXHTML/CHtmlView::GetSilent", "AFXHTML/CHtmlView::GetSource", "AFXHTML/CHtmlView::GetStatusBar", "AFXHTML/CHtmlView::GetTheaterMode", "AFXHTML/CHtmlView::GetToolBar", "AFXHTML/CHtmlView::GetTop", "AFXHTML/CHtmlView::GetTopLevelContainer", "AFXHTML/CHtmlView::GetType", "AFXHTML/CHtmlView::GetVisible", "AFXHTML/CHtmlView::GetWidth", "AFXHTML/CHtmlView::GoBack", "AFXHTML/CHtmlView::GoForward", "AFXHTML/CHtmlView::GoHome", "AFXHTML/CHtmlView::GoSearch", "AFXHTML/CHtmlView::LoadFromResource", "AFXHTML/CHtmlView::Navigate", "AFXHTML/CHtmlView::Navigate2", "AFXHTML/CHtmlView::OnBeforeNavigate2", "AFXHTML/CHtmlView::OnCommandStateChange", "AFXHTML/CHtmlView::OnDocumentComplete", "AFXHTML/CHtmlView::OnDocWindowActivate", "AFXHTML/CHtmlView::OnDownloadBegin", "AFXHTML/CHtmlView::OnDownloadComplete", "AFXHTML/CHtmlView::OnEnableModeless", "AFXHTML/CHtmlView::OnFilterDataObject", "AFXHTML/CHtmlView::OnFrameWindowActivate", "AFXHTML/CHtmlView::OnFullScreen", "AFXHTML/CHtmlView::OnGetDropTarget", "AFXHTML/CHtmlView::OnGetExternal", "AFXHTML/CHtmlView::OnGetHostInfo", "AFXHTML/CHtmlView::OnGetOptionKeyPath", "AFXHTML/CHtmlView::OnHideUI", "AFXHTML/CHtmlView::OnMenuBar", "AFXHTML/CHtmlView::OnNavigateComplete2", "AFXHTML/CHtmlView::OnNavigateError", "AFXHTML/CHtmlView::OnNewWindow2", "AFXHTML/CHtmlView::OnProgressChange", "AFXHTML/CHtmlView::OnPropertyChange", "AFXHTML/CHtmlView::OnQuit", "AFXHTML/CHtmlView::OnResizeBorder", "AFXHTML/CHtmlView::OnShowContextMenu", "AFXHTML/CHtmlView::OnShowUI", "AFXHTML/CHtmlView::OnStatusBar", "AFXHTML/CHtmlView::OnStatusTextChange", "AFXHTML/CHtmlView::OnTheaterMode", "AFXHTML/CHtmlView::OnTitleChange", "AFXHTML/CHtmlView::OnToolBar", "AFXHTML/CHtmlView::OnTranslateAccelerator", "AFXHTML/CHtmlView::OnTranslateUrl", "AFXHTML/CHtmlView::OnUpdateUI", "AFXHTML/CHtmlView::OnVisible", "AFXHTML/CHtmlView::PutProperty", "AFXHTML/CHtmlView::QueryFormsCommand", "AFXHTML/CHtmlView::QueryStatusWB", "AFXHTML/CHtmlView::Refresh", "AFXHTML/CHtmlView::Refresh2", "AFXHTML/CHtmlView::SetAddressBar", "AFXHTML/CHtmlView::SetFullScreen", "AFXHTML/CHtmlView::SetHeight", "AFXHTML/CHtmlView::SetLeft", "AFXHTML/CHtmlView::SetMenuBar", "AFXHTML/CHtmlView::SetOffline", "AFXHTML/CHtmlView::SetRegisterAsBrowser", "AFXHTML/CHtmlView::SetRegisterAsDropTarget", "AFXHTML/CHtmlView::SetSilent", "AFXHTML/CHtmlView::SetStatusBar", "AFXHTML/CHtmlView::SetTheaterMode", "AFXHTML/CHtmlView::SetToolBar", "AFXHTML/CHtmlView::SetTop", "AFXHTML/CHtmlView::SetVisible", "AFXHTML/CHtmlView::SetWidth", "AFXHTML/CHtmlView::Stop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlView [MFC], Create", "CHtmlView [MFC], CreateControlSite", "CHtmlView [MFC], ExecFormsCommand", "CHtmlView [MFC], ExecWB", "CHtmlView [MFC], GetAddressBar", "CHtmlView [MFC], GetApplication", "CHtmlView [MFC], GetBusy", "CHtmlView [MFC], GetContainer", "CHtmlView [MFC], GetFullName", "CHtmlView [MFC], GetFullScreen", "CHtmlView [MFC], GetHeight", "CHtmlView [MFC], GetHtmlDocument", "CHtmlView [MFC], GetLeft", "CHtmlView [MFC], GetLocationName", "CHtmlView [MFC], GetLocationURL", "CHtmlView [MFC], GetMenuBar", "CHtmlView [MFC], GetOffline", "CHtmlView [MFC], GetParentBrowser", "CHtmlView [MFC], GetProperty", "CHtmlView [MFC], GetReadyState", "CHtmlView [MFC], GetRegisterAsBrowser", "CHtmlView [MFC], GetRegisterAsDropTarget", "CHtmlView [MFC], GetSilent", "CHtmlView [MFC], GetSource", "CHtmlView [MFC], GetStatusBar", "CHtmlView [MFC], GetTheaterMode", "CHtmlView [MFC], GetToolBar", "CHtmlView [MFC], GetTop", "CHtmlView [MFC], GetTopLevelContainer", "CHtmlView [MFC], GetType", "CHtmlView [MFC], GetVisible", "CHtmlView [MFC], GetWidth", "CHtmlView [MFC], GoBack", "CHtmlView [MFC], GoForward", "CHtmlView [MFC], GoHome", "CHtmlView [MFC], GoSearch", "CHtmlView [MFC], LoadFromResource", "CHtmlView [MFC], Navigate", "CHtmlView [MFC], Navigate2", "CHtmlView [MFC], OnBeforeNavigate2", "CHtmlView [MFC], OnCommandStateChange", "CHtmlView [MFC], OnDocumentComplete", "CHtmlView [MFC], OnDocWindowActivate", "CHtmlView [MFC], OnDownloadBegin", "CHtmlView [MFC], OnDownloadComplete", "CHtmlView [MFC], OnEnableModeless", "CHtmlView [MFC], OnFilterDataObject", "CHtmlView [MFC], OnFrameWindowActivate", "CHtmlView [MFC], OnFullScreen", "CHtmlView [MFC], OnGetDropTarget", "CHtmlView [MFC], OnGetExternal", "CHtmlView [MFC], OnGetHostInfo", "CHtmlView [MFC], OnGetOptionKeyPath", "CHtmlView [MFC], OnHideUI", "CHtmlView [MFC], OnMenuBar", "CHtmlView [MFC], OnNavigateComplete2", "CHtmlView [MFC], OnNavigateError", "CHtmlView [MFC], OnNewWindow2", "CHtmlView [MFC], OnProgressChange", "CHtmlView [MFC], OnPropertyChange", "CHtmlView [MFC], OnQuit", "CHtmlView [MFC], OnResizeBorder", "CHtmlView [MFC], OnShowContextMenu", "CHtmlView [MFC], OnShowUI", "CHtmlView [MFC], OnStatusBar", "CHtmlView [MFC], OnStatusTextChange", "CHtmlView [MFC], OnTheaterMode", "CHtmlView [MFC], OnTitleChange", "CHtmlView [MFC], OnToolBar", "CHtmlView [MFC], OnTranslateAccelerator", "CHtmlView [MFC], OnTranslateUrl", "CHtmlView [MFC], OnUpdateUI", "CHtmlView [MFC], OnVisible", "CHtmlView [MFC], PutProperty", "CHtmlView [MFC], QueryFormsCommand", "CHtmlView [MFC], QueryStatusWB", "CHtmlView [MFC], Refresh", "CHtmlView [MFC], Refresh2", "CHtmlView [MFC], SetAddressBar", "CHtmlView [MFC], SetFullScreen", "CHtmlView [MFC], SetHeight", "CHtmlView [MFC], SetLeft", "CHtmlView [MFC], SetMenuBar", "CHtmlView [MFC], SetOffline", "CHtmlView [MFC], SetRegisterAsBrowser", "CHtmlView [MFC], SetRegisterAsDropTarget", "CHtmlView [MFC], SetSilent", "CHtmlView [MFC], SetStatusBar", "CHtmlView [MFC], SetTheaterMode", "CHtmlView [MFC], SetToolBar", "CHtmlView [MFC], SetTop", "CHtmlView [MFC], SetVisible", "CHtmlView [MFC], SetWidth", "CHtmlView [MFC], Stop"]
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CHtmlView Class
 
@@ -201,7 +194,7 @@ Points to a null-terminated character string that represents the window name.
 Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.
 
 *pParentWnd*<br/>
 A pointer to the parent window of the control.
@@ -856,7 +849,7 @@ void Navigate(
 A caller-allocated string that contains the URL to navigate to, or the full path of the file to display.
 
 *dwFlags*<br/>
-The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) enumeration.
+The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
 
 *lpszTargetFrameName*<br/>
 A pointer to a string that contains the name of the frame in which to display the resource.
@@ -906,7 +899,7 @@ void Navigate2(
 A pointer to an [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) structure.
 
 *dwFlags*<br/>
-The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) enumeration.
+The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.
 
 *lpszTargetFrameName*<br/>
 A pointer to a string that contains the name of the frame in which to display the resource.
@@ -1005,7 +998,7 @@ A pointer to a string that evaluates to the URL, UNC file name, or a PIDL (a poi
 
 Not every frame will fire this event, but each frame that fires an [OnDownloadBegin](#ondownloadbegin) event will fire a corresponding `OnDocumentComplete` event.
 
-The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "<http://www.microsoft.com/>". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate
 
@@ -1026,7 +1019,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the Windows SDK for more information.
+Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin
 
@@ -1067,7 +1060,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the Windows SDK for more information.
+Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject
 
@@ -1093,7 +1086,7 @@ S_OK if the data object is replaced, S_FALSE if the data object is not replaced,
 
 ### Remarks
 
-Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the Windows SDK for more information.
+Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
 
@@ -1114,7 +1107,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the Windows SDK for more information.
+Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
@@ -1149,11 +1142,11 @@ Address of the `IDropTarget` that receives the `IDropTarget` interface pointer t
 
 ### Return Value
 
-See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK for a list of return codes.
+See [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) in the Windows SDK for a list of return codes.
 
 ### Remarks
 
-Override `OnGetDropTarget` to react to the `GetDropTarget` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) in the Windows SDK for more information.
+Override `OnGetDropTarget` to react to the `GetDropTarget` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal
 
@@ -1174,7 +1167,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the Windows SDK for more information.
+Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo
 
@@ -1187,7 +1180,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ### Parameters
 
 *pInfo*<br/>
-Address of a [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) structure that receives the host's UI capabilities.
+Address of a [DOCHOSTUIINFO](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) structure that receives the host's UI capabilities.
 
 ### Return Value
 
@@ -1195,7 +1188,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the Windows SDK for more information.
+Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath
 
@@ -1221,7 +1214,7 @@ S_OK if successful, or S_FALSE otherwise. If S_FALSE, Internet Explorer or MSHTM
 
 ### Remarks
 
-Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the Windows SDK for more information.
+Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onhideui"></a>  CHtmlView::OnHideUI
 
@@ -1237,7 +1230,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) in the Windows SDK for more information.
+Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
@@ -1269,7 +1262,7 @@ A string expression that evaluates to the URL, UNC file name, or PIDL (a pointer
 
 The URL parameter can be a PIDL in the case of a shell name space entity for which there is no URL representation.
 
-Note that the URL contained in *strURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
+Note that the URL contained in *strURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "<http://www.microsoft.com/>". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.
 
 ##  <a name="onnavigateerror"></a>  CHtmlView::OnNavigateError
 
@@ -1396,7 +1389,7 @@ S_OK if successful, or an OLE-defined error code otherwise.
 
 ### Remarks
 
-Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the Windows SDK for more information.
+Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu
 
@@ -1426,11 +1419,11 @@ IDispatch interface of the object at the screen coordinates. This allows a host 
 
 ### Return Value
 
-See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK for a list of values.
+See [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) in the Windows SDK for a list of values.
 
 ### Remarks
 
-Override `OnShowContextMenu` to react to the `ShowContextMenu` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) in the Windows SDK for more information.
+Override `OnShowContextMenu` to react to the `ShowContextMenu` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onshowui"></a>  CHtmlView::OnShowUI
 
@@ -1464,11 +1457,11 @@ Reserved for future use.
 
 ### Return Value
 
-See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK for a list of values.
+See [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) in the Windows SDK for a list of values.
 
 ### Remarks
 
-Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) in the Windows SDK for more information.
+Override `OnShowUI` to react to the `ShowUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
@@ -1567,7 +1560,7 @@ S_OK if successful, or S_FALSE otherwise.
 
 ### Remarks
 
-Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the Windows SDK for more information.
+Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl
 
@@ -1597,7 +1590,7 @@ Address of a string pointer that receives the address of the translated URL. The
 
 ### Remarks
 
-Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the Windows SDK for more information.
+Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) in the Windows SDK for more information.
 
 ##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI
 
@@ -2042,10 +2035,9 @@ void Stop();
 
 Applies to Internet Explorer and WebBrowser.
 
-## See Also
+## See also
 
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
-
+[IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

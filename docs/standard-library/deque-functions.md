@@ -1,13 +1,8 @@
 ---
-title: "&lt;deque&gt; functions | Microsoft Docs"
-ms.custom: ""
+title: "&lt;deque&gt; functions"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["deque/std::swap"]
 ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;deque&gt; functions
 

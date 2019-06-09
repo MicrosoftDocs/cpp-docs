@@ -1,16 +1,9 @@
 ---
-title: "IAxWinAmbientDispatch Interface | Microsoft Docs"
-ms.custom: ""
+title: "IAxWinAmbientDispatch Interface"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IAxWinAmbientDispatch", "ATLIFACE/ATL::IAxWinAmbientDispatch", "ATLIFACE/ATL::get_AllowContextMenu", "ATLIFACE/ATL::get_AllowShowUI", "ATLIFACE/ATL::get_AllowWindowlessActivation", "ATLIFACE/ATL::get_BackColor", "ATLIFACE/ATL::get_DisplayAsDefault", "ATLIFACE/ATL::get_DocHostDoubleClickFlags", "ATLIFACE/ATL::get_DocHostFlags", "ATLIFACE/ATL::get_Font", "ATLIFACE/ATL::get_ForeColor", "ATLIFACE/ATL::get_LocaleID", "ATLIFACE/ATL::get_MessageReflect", "ATLIFACE/ATL::get_OptionKeyPath", "ATLIFACE/ATL::get_ShowGrabHandles", "ATLIFACE/ATL::get_ShowHatching", "ATLIFACE/ATL::get_UserMode", "ATLIFACE/ATL::put_AllowContextMenu", "ATLIFACE/ATL::put_AllowShowUI", "ATLIFACE/ATL::put_AllowWindowlessActivation", "ATLIFACE/ATL::put_BackColor", "ATLIFACE/ATL::put_DisplayAsDefault", "ATLIFACE/ATL::put_DocHostDoubleClickFlags", "ATLIFACE/ATL::put_DocHostFlags", "ATLIFACE/ATL::put_Font", "ATLIFACE/ATL::put_ForeColor", "ATLIFACE/ATL::put_LocaleID", "ATLIFACE/ATL::put_MessageReflect", "ATLIFACE/ATL::put_OptionKeyPath", "ATLIFACE/ATL::put_UserMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAxWinAmbientDispatch interface"]
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IAxWinAmbientDispatch Interface
 
@@ -64,7 +57,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 This interface is exposed by ATL's ActiveX control hosting objects. Call the methods on this interface to set the ambient properties available to the hosted control or to specify other aspects of the container's behavior. To supplement the properties provided by `IAxWinAmbientDispatch`, use [IAxWinAmbientDispatchEx](../../atl/reference/iaxwinambientdispatchex-interface.md).
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the typelib that contains the code.
+<xref:System.Windows.Forms.AxHost> will try to load type information about `IAxWinAmbientDispatch` and `IAxWinAmbientDispatchEx` from the typelib that contains the code.
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the typelib in the DLL.
 
@@ -662,10 +655,9 @@ A standard HRESULT value.
 
 The ATL host object implementation uses VARIANT_TRUE as the default value of this property.
 
-## See Also
+## See also
 
 [IAxWinAmbientDispatchEx Interface](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
 [IAxWinHostWindow Interface](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

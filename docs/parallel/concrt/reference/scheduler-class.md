@@ -1,16 +1,9 @@
 ---
-title: "Scheduler Class | Microsoft Docs"
-ms.custom: ""
+title: "Scheduler Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["Scheduler", "CONCRT/concurrency::Scheduler", "CONCRT/concurrency::Scheduler::Scheduler", "CONCRT/concurrency::Scheduler::Attach", "CONCRT/concurrency::Scheduler::Create", "CONCRT/concurrency::Scheduler::CreateScheduleGroup", "CONCRT/concurrency::Scheduler::GetNumberOfVirtualProcessors", "CONCRT/concurrency::Scheduler::GetPolicy", "CONCRT/concurrency::Scheduler::Id", "CONCRT/concurrency::Scheduler::IsAvailableLocation", "CONCRT/concurrency::Scheduler::Reference", "CONCRT/concurrency::Scheduler::RegisterShutdownEvent", "CONCRT/concurrency::Scheduler::Release", "CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy", "CONCRT/concurrency::Scheduler::ScheduleTask", "CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Scheduler class"]
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scheduler Class
 
@@ -314,10 +307,9 @@ The policy to be set as the default scheduler policy.
 
 If the `SetDefaultSchedulerPolicy` method is called when a default scheduler already exists within the process, the runtime will throw a [default_scheduler_exists](default-scheduler-exists-class.md) exception.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)<br/>
 [Scheduler Class](scheduler-class.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [Task Scheduler](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

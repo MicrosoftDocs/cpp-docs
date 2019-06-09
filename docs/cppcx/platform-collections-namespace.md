@@ -1,16 +1,10 @@
 ---
-title: "Platform::Collections Namespace | Microsoft Docs"
-ms.custom: ""
+title: "Platform::Collections Namespace"
 ms.date: "01/18/2018"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Collections Namespace"]
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::Collections Namespace
 

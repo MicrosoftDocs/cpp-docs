@@ -1,15 +1,8 @@
 ---
-title: "Implementation of a Custom String Manager (Basic Method) | Microsoft Docs"
-ms.custom: ""
+title: "Implementation of a Custom String Manager (Basic Method)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["IAtlStringMgr class, using"]
 ms.assetid: eac5d13e-cbb4-4e82-b01e-f5f2dbcb962a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementation of a Custom String Manager (Basic Method)
 
@@ -33,7 +26,6 @@ To use this private string manager to manage memory for a `CString` variable, pa
 
 [!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]
 
-## See Also
+## See also
 
 [Memory Management with CStringT](../atl-mfc-shared/memory-management-with-cstringt.md)
-

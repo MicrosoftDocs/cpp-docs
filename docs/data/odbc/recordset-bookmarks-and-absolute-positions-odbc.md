@@ -1,16 +1,9 @@
 ---
-title: "Recordset: Bookmarks and Absolute Positions (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Bookmarks and Absolute Positions (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
 f1_keywords: ["SetAbsolutePosition"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDBVariant class, bookmarks", "absolute positions, ODBC recordsets", "bookmarks, CDBVariant", "bookmarks, ODBC recordsets", "ODBC recordsets, absolute positions", "ODBC recordsets, bookmarks", "cursors [ODBC], absolute position in recordsets", "recordsets, bookmarks", "bookmarks", "SetAbsolutePosition method", "recordsets, absolute positions", "positioning records", "SetBookmark method", "record positioning", "GetBookmark method", "SetAbsolutePosition method, bookmarks"]
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Bookmarks and Absolute Positions (ODBC)
 
@@ -66,6 +59,6 @@ To move the current record pointer using absolute position, call [CRecordset::Se
 
 For more information about recordset navigation, see [Recordset: Scrolling (ODBC)](../../data/odbc/recordset-scrolling-odbc.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)

@@ -1,15 +1,8 @@
 ---
-title: "Alternatives to the Document-View Architecture | Microsoft Docs"
-ms.custom: ""
+title: "Alternatives to the Document-View Architecture"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], applications without", "CDocument class [MFC], space requirements", "views [MFC], applications without"]
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Alternatives to the Document/View Architecture
 
@@ -46,15 +39,15 @@ It is strongly recommended that you use the MFC Application Wizard to create app
 
    Declared in `CDocument`:
 
-   - Two `CString` objects.
+  - Two `CString` objects.
 
-   - Three **BOOL**s.
+  - Three **BOOL**s.
 
-   - One `CDocTemplate` pointer.
+  - One `CDocTemplate` pointer.
 
-   - One `CPtrList` object, which contains a list of the document's views.
+  - One `CPtrList` object, which contains a list of the document's views.
 
-   Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
+  Additionally, the document requires the amount of time to create the document object, its view objects, a frame window, and a document template object.
 
 - Treat both the document and view as unused appendages. Put your data management and drawing code in the frame window rather than the view. This approach is closer to the C-language programming model.
 
@@ -62,7 +55,6 @@ It is strongly recommended that you use the MFC Application Wizard to create app
 
 The article [MFC: Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md) gives more concrete examples of document/view alternatives in the context of database applications.
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

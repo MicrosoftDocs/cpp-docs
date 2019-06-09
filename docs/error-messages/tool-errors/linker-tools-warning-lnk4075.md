@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4075 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4075"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4075"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4075"]
 ms.assetid: f39ad3f9-c263-4cf0-9d70-259fc56ac96d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4075
 
@@ -20,7 +13,7 @@ The second option overrides the first.
 
 Mutually exclusive linker options are being specified.  Examine your linker options.  Where linker options are specified depends on how you are building your project.
 
-- If you are building in the development environment, look in the linker property pages for your project, and see where both linker options are being specified.  See [Working with Project Properties](../../ide/working-with-project-properties.md) for more information.
+- If you are building in the development environment, look in the linker property pages for your project, and see where both linker options are being specified.  See [Set compiler and build properties](../../build/working-with-project-properties.md) for more information.
 
 - If you build at the command line, look at the linker options specified there.
 

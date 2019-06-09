@@ -1,16 +1,9 @@
 ---
-title: "Linker Tools Warning LNK4071 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Warning LNK4071"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK4071"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LNK4071"]
 ms.assetid: 803f8c34-8219-4f55-a4ae-7133ceff2ba3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Warning LNK4071
 

@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Architecture (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Architecture (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, data members", "field data members, recordset architecture", "field data members", "m_nParams data member, recordsets", "recordsets, architecture", "parameter data members in recordsets", "m_nFields data member", "ODBC recordsets, architecture", "m_nParams data member", "m_nFields data member, recordsets"]
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Architecture (ODBC)
 
@@ -27,6 +20,9 @@ This topic describes the data members that comprise the architecture of a record
 >  This topic applies to objects derived from `CRecordset` in which bulk row fetching has not been implemented. If bulk row fetching is implemented, the architecture is similar. To understand the differences, see [Recordset: Fetching Records in Bulk (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ##  <a name="_core_a_sample_class"></a> Sample Class
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 When you use the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** wizard to declare a recordset class derived from `CRecordset`, the resulting class has the general structure shown in the following simple class:
 
@@ -82,7 +78,7 @@ When a wizard writes a constructor for your class, it also initializes the [m_nF
 
 For more information and examples, see [Record Field Exchange: Using RFX](../../data/odbc/record-field-exchange-using-rfx.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Declaring a Class for a Table (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>

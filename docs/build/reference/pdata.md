@@ -1,16 +1,9 @@
 ---
-title: "-PDATA | Microsoft Docs"
-ms.custom: ""
+title: "/PDATA"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/pdata"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["PDATA dumpbin option", "/PDATA dumpbin option", "-PDATA dumpbin option"]
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PDATA
 
@@ -24,8 +17,8 @@ RISC processors only.
 
 This option dumps the exception tables (.pdata) from an image or object.
 
-Only the [/HEADERS](../../build/reference/headers.md) DUMPBIN option is available for use on files produced with the [/GL](../../build/reference/gl-whole-program-optimization.md) compiler option.
+Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)
+[DUMPBIN Options](dumpbin-options.md)

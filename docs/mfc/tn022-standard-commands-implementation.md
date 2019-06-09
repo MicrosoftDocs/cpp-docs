@@ -1,16 +1,9 @@
 ---
-title: "TN022: Standard Commands Implementation | Microsoft Docs"
-ms.custom: ""
+title: "TN022: Standard Commands Implementation"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.commands"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ID_PREV_PANE command [MFC]", "ID_APP_EXIT command [MFC]", "ID_NEXT_PANE command [MFC]", "ID_INDICATOR_REC command [MFC]", "ID_WINDOW_SPLIT command [MFC]", "ID_FILE_PRINT_PREVIEW command [MFC]", "ID_WINDOW_CASCADE command [MFC]", "ID_FILE_CLOSE command [MFC]", "ID_FILE_SAVE_COPY_AS command [MFC]", "ID_WINDOW_ARRANGE command [MFC]", "ID_EDIT_FIND command [MFC]", "ID_FILE_OPEN command [MFC]", "ID_FILE_PAGE_SETUP command [MFC]", "ID_OLE_VERB_FIRST command [MFC]", "ID_EDIT_UNDO command [MFC]", "ID_EDIT_CLEAR command [MFC]", "ID_INDICATOR_CAPS command [MFC]", "ID_HELP_INDEX command [MFC]", "commands [MFC], standard", "ID_FILE_PRINT_SETUP command [MFC]", "ID_DEFAULT_HELP command [MFC]", "ID_INDICATOR_SCRL command [MFC]", "ID_FILE_PRINT command [MFC]", "ID_INDICATOR_OVR command [MFC]", "ID_INDICATOR_KANA command [MFC]", "ID_EDIT_COPY command [MFC]", "ID_EDIT_REDO command [MFC]", "ID_EDIT_PASTE command [MFC]", "ID_OLE_INSERT_NEW command [MFC]", "ID_OLE_EDIT_LINKS command [MFC]", "ID_EDIT_PASTE_SPECIAL command [MFC]", "ID_INDICATOR_EXT command [MFC]", "ID_HELP_USING command [MFC]", "standard commands", "ID_VIEW_STATUS_BAR command [MFC]", "ID_FILE_SAVE_AS command [MFC]", "ID_EDIT_CLEAR_ALL command [MFC]", "ID_WINDOW_NEW command [MFC]", "ID_CONTEXT_HELP command [MFC]", "ID_EDIT_REPLACE command [MFC]", "ID_WINDOW_TILE_HORZ command [MFC]", "ID_APP_ABOUT command [MFC]", "TN022", "ID_VIEW_TOOLBAR command [MFC]", "ID_HELP command [MFC]", "ID_WINDOW_TILE_VERT command [MFC]", "ID_EDIT_CUT command [MFC]", "ID_FILE_UPDATE command [MFC]", "ID_EDIT_REPEAT command [MFC]", "ID_FILE_SAVE command [MFC]", "ID_EDIT_PASTE_LINK command [MFC]", "ID_EDIT_SELECT_ALL command [MFC]", "ID_FILE_NEW command [MFC]", "ID_INDICATOR_NUM command"]
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN022: Standard Commands Implementation
 
@@ -167,7 +160,7 @@ For each command ID, there is a standard message line prompt string that can be 
 
    Currently there is no standard implementation for this command. You must implement this for each `CView`-derived class.
 
-   If you choose to implement this command, we recommend you use this command ID. See the MFC Tutorial sample [SCRIBBLE](../visual-cpp-samples.md) for an example implementation.
+   If you choose to implement this command, we recommend you use this command ID. See the MFC Tutorial sample [SCRIBBLE](../overview/visual-cpp-samples.md) for an example implementation.
 
 - ID_EDIT_COPY   Copies the current selection to the Clipboard.
 
@@ -384,7 +377,7 @@ For each command ID, there is a standard message line prompt string that can be 
 
    All OLE client applications should implement this command. AppWizard, with the OLE option, will create a skeleton implementation of `OnInsertObject` in your view class that you will have to complete.
 
-   See the MFC OLE sample [OCLIENT](../visual-cpp-samples.md) example for a complete implementation of this command.
+   See the MFC OLE sample [OCLIENT](../overview/visual-cpp-samples.md) example for a complete implementation of this command.
 
 - ID_OLE_EDIT_LINKS   Edits OLE links
 
@@ -436,8 +429,7 @@ Currently there is no standard implementation for these indicators.
 
 If you choose to implement these indicators, we recommend you use these indicator IDs and maintaining the ordering of the indicators in your status bar (that is, in this order: EXT, CAP, NUM, SCRL, OVR, REC).
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

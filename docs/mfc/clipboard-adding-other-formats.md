@@ -1,15 +1,8 @@
 ---
-title: "Clipboard: Adding Other Formats | Microsoft Docs"
-ms.custom: ""
+title: "Clipboard: Adding Other Formats"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["formats [MFC], Clipboard", "Clipboard, formats", "custom formats, placing on Clipboard", "custom formats", "registering custom Clipboard data formats", "custom Clipboard data formats"]
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Clipboard: Adding Other Formats
 
@@ -31,7 +24,7 @@ To add more formats to those placed on the Clipboard, you must override the `OnG
 
 1. Add standard formats by calling `COleDataSource::CacheGlobalData` for each standard format you want to support.
 
-This technique is used in the MFC OLE sample program [HIERSVR](../visual-cpp-samples.md) (examine the `OnGetClipboardData` member function of the **CServerItem** class). The only difference in this sample is that step three is not implemented because HIERSVR supports no other standard formats.
+This technique is used in the MFC OLE sample program [HIERSVR](../overview/visual-cpp-samples.md) (examine the `OnGetClipboardData` member function of the **CServerItem** class). The only difference in this sample is that step three is not implemented because HIERSVR supports no other standard formats.
 
 ### What do you want to know more about
 
@@ -41,7 +34,6 @@ This technique is used in the MFC OLE sample program [HIERSVR](../visual-cpp-sam
 
 - [OLE](../mfc/ole-background.md)
 
-## See Also
+## See also
 
 [Clipboard: Using the OLE Clipboard Mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-

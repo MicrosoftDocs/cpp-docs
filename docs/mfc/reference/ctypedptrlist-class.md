@@ -1,16 +1,9 @@
 ---
-title: "CTypedPtrList Class | Microsoft Docs"
-ms.custom: ""
+title: "CTypedPtrList Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTypedPtrList", "AFXTEMPL/CTypedPtrList", "AFXTEMPL/CTypedPtrList::AddHead", "AFXTEMPL/CTypedPtrList::AddTail", "AFXTEMPL/CTypedPtrList::GetAt", "AFXTEMPL/CTypedPtrList::GetHead", "AFXTEMPL/CTypedPtrList::GetNext", "AFXTEMPL/CTypedPtrList::GetPrev", "AFXTEMPL/CTypedPtrList::GetTail", "AFXTEMPL/CTypedPtrList::RemoveHead", "AFXTEMPL/CTypedPtrList::RemoveTail", "AFXTEMPL/CTypedPtrList::SetAt"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrList [MFC], AddHead", "CTypedPtrList [MFC], AddTail", "CTypedPtrList [MFC], GetAt", "CTypedPtrList [MFC], GetHead", "CTypedPtrList [MFC], GetNext", "CTypedPtrList [MFC], GetPrev", "CTypedPtrList [MFC], GetTail", "CTypedPtrList [MFC], RemoveHead", "CTypedPtrList [MFC], RemoveTail", "CTypedPtrList [MFC], SetAt"]
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTypedPtrList Class
 
@@ -356,9 +349,9 @@ You must ensure that your POSITION value represents a valid position in the list
 
 For more detailed remarks, see [CObList::SetAt](../../mfc/reference/coblist-class.md#setat).
 
-## See Also
+## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPtrList Class](../../mfc/reference/cptrlist-class.md)<br/>
 [CObList Class](../../mfc/reference/coblist-class.md)

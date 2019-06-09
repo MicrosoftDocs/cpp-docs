@@ -1,16 +1,9 @@
 ---
-title: "__outword | Microsoft Docs"
-ms.custom: ""
+title: "__outword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__outword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__outword intrinsic", "out instruction"]
 ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __outword
 
@@ -21,9 +14,9 @@ Generates the `out` instruction, which sends the word `Data` out the I/O port sp
 ## Syntax
 
 ```
-void __outword( 
-   unsigned short Port, 
-   unsigned short Data 
+void __outword(
+   unsigned short Port,
+   unsigned short Data
 );
 ```
 
@@ -49,6 +42,6 @@ This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

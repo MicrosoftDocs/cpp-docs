@@ -1,15 +1,8 @@
 ---
-title: "&lt;ccomplex&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;ccomplex&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<ccomplex>"]
-dev_langs: ["C++"]
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;ccomplex&gt;
 
@@ -19,7 +12,6 @@ Includes the C++ Standard Library header [\<complex>](../standard-library/comple
 
 ```cpp
 #include <ccomplex>
-
 ```
 
 ## Remarks

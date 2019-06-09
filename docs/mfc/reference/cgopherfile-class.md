@@ -1,16 +1,9 @@
 ---
-title: "CGopherFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CGopherFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherFile [MFC], CGopherFile"]
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CGopherFile Class
 
@@ -102,7 +95,7 @@ You need a `CGopherFile` object to read from a file during a gopher Internet ses
 
 You never create a `CGopherFile` object directly. Instead, call [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) to open a file on a gopher server.
 
-## See Also
+## See also
 
 [CInternetFile Class](../../mfc/reference/cinternetfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

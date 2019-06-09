@@ -1,16 +1,9 @@
 ---
-title: "operator &gt;= (MASM Run Time) | Microsoft Docs"
-ms.custom: ""
+title: "operator &gt;= (MASM Run Time)"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["operator >="]
-dev_langs: ["C++"]
 helpviewer_keywords: [">= operator, comparing specific objects", "operator >="]
 ms.assetid: c7366d99-f7b8-4eb8-b5df-6dc74491b114
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # operator &gt;= (MASM Run Time)
 

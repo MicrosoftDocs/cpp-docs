@@ -1,16 +1,9 @@
 ---
-title: "CTime Class | Microsoft Docs"
-ms.custom: ""
+title: "CTime Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CTime", "ATLTIME/ATL::CTime", "ATLTIME/ATL::CTime::CTime", "ATLTIME/ATL::CTime::Format", "ATLTIME/ATL::CTime::FormatGmt", "ATLTIME/ATL::CTime::GetAsDBTIMESTAMP", "ATLTIME/ATL::CTime::GetAsSystemTime", "ATLTIME/ATL::CTime::GetCurrentTime", "ATLTIME/ATL::CTime::GetDay", "ATLTIME/ATL::CTime::GetDayOfWeek", "ATLTIME/ATL::CTime::GetGmtTm", "ATLTIME/ATL::CTime::GetHour", "ATLTIME/ATL::CTime::GetLocalTm", "ATLTIME/ATL::CTime::GetMinute", "ATLTIME/ATL::CTime::GetMonth", "ATLTIME/ATL::CTime::GetSecond", "ATLTIME/ATL::CTime::GetTime", "ATLTIME/ATL::CTime::GetYear", "ATLTIME/ATL::CTime::Serialize64"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CTime class", "shared classes, CTime"]
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CTime Class
 
@@ -37,7 +30,7 @@ class CTime
 |[CTime::Format](#format)|Converts a `CTime` object into a formatted string — based on the local time zone.|
 |[CTime::FormatGmt](#formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.|
-|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|
+|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.|
 |[CTime::GetCurrentTime](#getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|
 |[CTime::GetDay](#getday)|Returns the day represent by the `CTime` object.|
 |[CTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week represented by the `CTime` object.|
@@ -149,10 +142,10 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
 *st*<br/>
-A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 *ft*<br/>
-A [FILETIME](../../mfc/reference/filetime-structure.md) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 *dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
@@ -189,7 +182,7 @@ Each constructor is described below:
    > [!NOTE]
    > The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.
 
-For more information, see the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the Windows SDK. Also see the [MS-DOS Date and Time](/windows/desktop/SysInfo/ms-dos-date-and-time) entry in the Windows SDK.
+For more information, see the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure in the Windows SDK. Also see the [MS-DOS Date and Time](/windows/desktop/SysInfo/ms-dos-date-and-time) entry in the Windows SDK.
 
 ### Example
 
@@ -284,7 +277,7 @@ Stores the resulting time in the referenced *dbts* structure. The `DBTIMESTAMP` 
 
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime
 
-Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.
+Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.
 
 ```
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -293,7 +286,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ### Parameters
 
 *timeDest*<br/>
-A reference to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.
+A reference to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will hold the converted date/time value of the `CTime` object.
 
 ### Return Value
 
@@ -630,7 +623,7 @@ The `CArchive` object that you want to update.
 
 The updated `CArchive` object.
 
-## See Also
+## See also
 
 [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)<br/>
 [_ftime_s, _ftime32_s, _ftime64_s](../../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)<br/>

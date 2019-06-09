@@ -1,15 +1,8 @@
 ---
-title: "Pointer Arithmetic | Microsoft Docs"
-ms.custom: ""
+title: "Pointer Arithmetic"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pointer arithmetic", "arithmetic pointer"]
 ms.assetid: eb924a29-59d3-48a5-9d62-9424790730eb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Pointer Arithmetic
 
@@ -19,6 +12,6 @@ This assumption is valid for array members. By definition, an array is a series 
 
 Similarly, when two pointer values are subtracted, the conversion assumes that only values of the same type, with no blanks, lie between the addresses given by the operands.
 
-## See Also
+## See also
 
 [C Additive Operators](../c-language/c-additive-operators.md)

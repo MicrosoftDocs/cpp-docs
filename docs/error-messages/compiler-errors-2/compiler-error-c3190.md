@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3190 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3190"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3190"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3190"]
 ms.assetid: 7c701afa-85a7-4f7a-8881-0662436ac244
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3190
 

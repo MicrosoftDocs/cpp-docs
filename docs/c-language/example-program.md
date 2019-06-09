@@ -1,14 +1,7 @@
 ---
-title: "Example Program | Microsoft Docs"
-ms.custom: ""
+title: "Example Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Example Program
 
@@ -74,6 +67,6 @@ FILE1.C uses defining declarations to initialize the global variables `a` and `b
 
 The lifetime and visibility of identifiers are discussed in [Lifetime, Scope, Visibility, and Linkage](../c-language/lifetime-scope-visibility-and-linkage.md). For more information on functions, see [Functions](../c-language/functions-c.md).
 
-## See Also
+## See also
 
 [Source Files and Source Programs](../c-language/source-files-and-source-programs.md)

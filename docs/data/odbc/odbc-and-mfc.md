@@ -1,15 +1,8 @@
 ---
-title: "ODBC and MFC | Microsoft Docs"
-ms.custom: ""
+title: "ODBC and MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++], MFC", "connections [C++], databases", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "MFC [C++], ODBC and", "database connections [C++], MFC ODBC classes"]
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC and MFC
 
@@ -32,6 +25,6 @@ This topic introduces the main concepts of the Microsoft Foundation Classes (MFC
 
 The MFC database classes based on ODBC are designed to provide access to any database for which an ODBC driver is available. Because the classes use ODBC, your application can access data in many different data formats and different local/remote configurations. You do not have to write special-case code to handle different database management systems (DBMSs). As long as your users have an appropriate ODBC driver for the data they want to access, they can use your program to manipulate data in tables stored there.
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](open-database-connectivity-odbc.md)

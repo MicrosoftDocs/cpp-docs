@@ -1,16 +1,9 @@
 ---
-title: "codecvt_byname Class | Microsoft Docs"
-ms.custom: ""
+title: "codecvt_byname Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocale/std::codecvt_byname"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt_byname class"]
 ms.assetid: b63b6c04-f60c-47b9-8e30-a933f24a8ffb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # codecvt_byname Class
 

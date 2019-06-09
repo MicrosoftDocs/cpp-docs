@@ -1,16 +1,9 @@
 ---
-title: "CDocument Class | Microsoft Docs"
-ms.custom: ""
+title: "CDocument Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDocument", "AFXWIN/CDocument", "AFXWIN/CDocument::CDocument", "AFXWIN/CDocument::AddView", "AFXWIN/CDocument::BeginReadChunks", "AFXWIN/CDocument::CanCloseFrame", "AFXWIN/CDocument::ClearChunkList", "AFXWIN/CDocument::ClearPathName", "AFXWIN/CDocument::DeleteContents", "AFXWIN/CDocument::FindChunk", "AFXWIN/CDocument::GetAdapter", "AFXWIN/CDocument::GetDocTemplate", "AFXWIN/CDocument::GetFile", "AFXWIN/CDocument::GetFirstViewPosition", "AFXWIN/CDocument::GetNextView", "AFXWIN/CDocument::GetPathName", "AFXWIN/CDocument::GetThumbnail", "AFXWIN/CDocument::GetTitle", "AFXWIN/CDocument::InitializeSearchContent", "AFXWIN/CDocument::IsModified", "AFXWIN/CDocument::IsSearchAndOrganizeHandler", "AFXWIN/CDocument::LoadDocumentFromStream", "AFXWIN/CDocument::OnBeforeRichPreviewFontChanged", "AFXWIN/CDocument::OnChangedViewList", "AFXWIN/CDocument::OnCloseDocument", "AFXWIN/CDocument::OnCreatePreviewFrame", "AFXWIN/CDocument::OnDocumentEvent", "AFXWIN/CDocument::OnDrawThumbnail", "AFXWIN/CDocument::OnLoadDocumentFromStream", "AFXWIN/CDocument::OnNewDocument", "AFXWIN/CDocument::OnOpenDocument", "AFXWIN/CDocument::OnPreviewHandlerQueryFocus", "AFXWIN/CDocument::OnPreviewHandlerTranslateAccelerator", "AFXWIN/CDocument::OnRichPreviewBackColorChanged", "AFXWIN/CDocument::OnRichPreviewFontChanged", "AFXWIN/CDocument::OnRichPreviewSiteChanged", "AFXWIN/CDocument::OnRichPreviewTextColorChanged", "AFXWIN/CDocument::OnSaveDocument", "AFXWIN/CDocument::OnUnloadHandler", "AFXWIN/CDocument::PreCloseFrame", "AFXWIN/CDocument::ReadNextChunkValue", "AFXWIN/CDocument::ReleaseFile", "AFXWIN/CDocument::RemoveChunk", "AFXWIN/CDocument::RemoveView", "AFXWIN/CDocument::ReportSaveLoadException", "AFXWIN/CDocument::SaveModified", "AFXWIN/CDocument::SetChunkValue", "AFXWIN/CDocument::SetModifiedFlag", "AFXWIN/CDocument::SetPathName", "AFXWIN/CDocument::SetTitle", "AFXWIN/CDocument::UpdateAllViews", "AFXWIN/CDocument::OnFileSendMail", "AFXWIN/CDocument::OnUpdateFileSendMail", "AFXWIN/CDocument::m_bGetThumbnailMode", "AFXWIN/CDocument::m_bPreviewHandlerMode", "AFXWIN/CDocument::m_bSearchMode", "AFXWIN/CDocument::m_clrRichPreviewBackColor", "AFXWIN/CDocument::m_clrRichPreviewTextColor", "AFXWIN/CDocument::m_lfRichPreviewFont"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDocument [MFC], CDocument", "CDocument [MFC], AddView", "CDocument [MFC], BeginReadChunks", "CDocument [MFC], CanCloseFrame", "CDocument [MFC], ClearChunkList", "CDocument [MFC], ClearPathName", "CDocument [MFC], DeleteContents", "CDocument [MFC], FindChunk", "CDocument [MFC], GetAdapter", "CDocument [MFC], GetDocTemplate", "CDocument [MFC], GetFile", "CDocument [MFC], GetFirstViewPosition", "CDocument [MFC], GetNextView", "CDocument [MFC], GetPathName", "CDocument [MFC], GetThumbnail", "CDocument [MFC], GetTitle", "CDocument [MFC], InitializeSearchContent", "CDocument [MFC], IsModified", "CDocument [MFC], IsSearchAndOrganizeHandler", "CDocument [MFC], LoadDocumentFromStream", "CDocument [MFC], OnBeforeRichPreviewFontChanged", "CDocument [MFC], OnChangedViewList", "CDocument [MFC], OnCloseDocument", "CDocument [MFC], OnCreatePreviewFrame", "CDocument [MFC], OnDocumentEvent", "CDocument [MFC], OnDrawThumbnail", "CDocument [MFC], OnLoadDocumentFromStream", "CDocument [MFC], OnNewDocument", "CDocument [MFC], OnOpenDocument", "CDocument [MFC], OnPreviewHandlerQueryFocus", "CDocument [MFC], OnPreviewHandlerTranslateAccelerator", "CDocument [MFC], OnRichPreviewBackColorChanged", "CDocument [MFC], OnRichPreviewFontChanged", "CDocument [MFC], OnRichPreviewSiteChanged", "CDocument [MFC], OnRichPreviewTextColorChanged", "CDocument [MFC], OnSaveDocument", "CDocument [MFC], OnUnloadHandler", "CDocument [MFC], PreCloseFrame", "CDocument [MFC], ReadNextChunkValue", "CDocument [MFC], ReleaseFile", "CDocument [MFC], RemoveChunk", "CDocument [MFC], RemoveView", "CDocument [MFC], ReportSaveLoadException", "CDocument [MFC], SaveModified", "CDocument [MFC], SetChunkValue", "CDocument [MFC], SetModifiedFlag", "CDocument [MFC], SetPathName", "CDocument [MFC], SetTitle", "CDocument [MFC], UpdateAllViews", "CDocument [MFC], OnFileSendMail", "CDocument [MFC], OnUpdateFileSendMail", "CDocument [MFC], m_bGetThumbnailMode", "CDocument [MFC], m_bPreviewHandlerMode", "CDocument [MFC], m_bSearchMode", "CDocument [MFC], m_clrRichPreviewBackColor", "CDocument [MFC], m_clrRichPreviewTextColor", "CDocument [MFC], m_lfRichPreviewFont"]
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDocument Class
 
@@ -1137,11 +1130,11 @@ This function calls the [CView::OnUpdate](../../mfc/reference/cview-class.md#onu
 
 [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample NPP](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample NPP](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>

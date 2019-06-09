@@ -1,16 +1,9 @@
 ---
-title: "auto (C++) | Microsoft Docs"
-ms.custom: ""
+title: "auto (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 f1_keywords: ["auto_CPP", "auto"]
 helpviewer_keywords: ["auto keyword [C++]"]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # auto (C++)
 
@@ -50,7 +43,7 @@ To use the **auto** keyword, use it instead of a type to declare a variable, and
 
 The initialization expression can be an assignment (equal-sign syntax), a direct initialization (function-style syntax), an [operator new](new-operator-cpp.md) expression, or the initialization expression can be the *for-range-declaration* parameter in a [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) statement. For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
 
-The **auto** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **auto** keyword cannot be used in casts or operators such as [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md).
+The **auto** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **auto** keyword cannot be used in casts or operators such as [sizeof](../cpp/sizeof-operator.md) and (for C++/CLI) [typeid](../extensions/typeid-cpp-component-extensions.md).
 
 ## Usefulness
 
@@ -67,31 +60,30 @@ You can use **auto**, together with the **decltype** type specifier, to help wri
 Note that using **auto** drops references, const qualifiers, and volatile qualifiers. Consider the following example:
 
 ```cpp
-// cl.exe /analyze /EHsc /W4
-#include <iostream>
+// cl.exe /analyze /EHsc /W4
+#include <iostream>
 
-using namespace std;
+using namespace std;
 
-int main( )
+int main( )
 {
-    int count = 10;
-    int& countRef = count;
-    auto myAuto = countRef;
+    int count = 10;
+    int& countRef = count;
+    auto myAuto = countRef;
 
-    countRef = 11;
-    cout << count << " ";
+    countRef = 11;
+    cout << count << " ";
 
-    myAuto = 12;
-    cout << count << endl;
+    myAuto = 12;
+    cout << count << endl;
 }
-
 ```
 
 In the previous example, myAuto is an int, not an int reference, so the output is `11 11`, not `11 12` as would be the case if the reference qualifier had not been dropped by **auto**.
 
 ## Type deduction with braced initializers (C++14)
 
-The following code exmample shows how to intialize an auto variable using braces. Note the difference between B and C and between A and E.
+The following code example shows how to initialize an auto variable using braces. Note the difference between B and C and between A and E.
 
 ```cpp
 #include <initializer_list>
@@ -132,7 +124,7 @@ The following table lists the restrictions on the use of the **auto** keyword, a
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|A symbol cannot be used before it is initialized. In practice, this means that a variable cannot be used to initialize itself.|
 |[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|You cannot cast to a type that is declared with the **auto** keyword.|
 |[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|All the symbols in a declarator list that is declared with the **auto** keyword must resolve to the same type. For more information, see [Declarations and Definitions](declarations-and-definitions-cpp.md).|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../windows/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the **auto** keyword.|
+|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|The [sizeof](../cpp/sizeof-operator.md) and [typeid](../extensions/typeid-cpp-component-extensions.md) operators cannot be applied to a symbol that is declared with the **auto** keyword.|
 
 ## Examples
 
@@ -224,7 +216,7 @@ int main()
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof Operator](../cpp/sizeof-operator.md)<br/>
-[typeid](../windows/typeid-cpp-component-extensions.md)<br/>
+[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
 [operator new](new-operator-cpp.md)<br/>
 [Declarations and Definitions](declarations-and-definitions-cpp.md)<br/>
 [Examples of Lambda Expressions](../cpp/examples-of-lambda-expressions.md)<br/>

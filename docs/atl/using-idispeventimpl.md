@@ -1,16 +1,8 @@
 ---
-title: "Using IDispEventImpl (ATL) | Microsoft Docs"
-ms.custom: ""
+title: "Using IDispEventImpl (ATL)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-f1_keywords: ["IDispEventImpl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IDispEventImpl class, using"]
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using IDispEventImpl
 
@@ -30,7 +22,7 @@ When using `IDispEventImpl` to handle events, you will need to:
 
 The example below shows how to handle the `DocumentChange` event fired by Word's **Application** object. This event is defined as a method on the `ApplicationEvents` dispinterface.
 
-The example is from the [ATLEventHandling sample](../visual-cpp-samples.md).
+The example is from the [ATLEventHandling sample](../overview/visual-cpp-samples.md).
 
 ```cpp
 [ uuid(000209F7-0000-0000-C000-000000000046), hidden ]
@@ -56,8 +48,7 @@ The following code appears in NotSoSimple.h. The relevant code is noted by comme
 
 [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]
 
-## See Also
+## See also
 
 [Event Handling](../atl/event-handling-and-atl.md)<br/>
-[ATLEventHandling Sample](../visual-cpp-samples.md)
-
+[ATLEventHandling Sample](../overview/visual-cpp-samples.md)

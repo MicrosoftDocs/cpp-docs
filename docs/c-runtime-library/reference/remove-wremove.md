@@ -1,19 +1,12 @@
 ---
-title: "remove, _wremove | Microsoft Docs"
-ms.custom: ""
+title: "remove, _wremove"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wremove", "remove"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["remove", "_wremove", "_tremove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tremove function", "_wremove function", "files [C++], deleting", "_tremove function", "files [C++], removing", "wremove function", "remove function"]
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remove, _wremove
 
@@ -37,7 +30,7 @@ Path of file to be removed.
 
 ## Return Value
 
-Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **errno** either to **EACCES** to indicate that the path specifies a read-only file or the file is open, or to **ENOENT** to indicate that the filename or path was not found or that the path specifies a directory.
+Each of these functions returns 0 if the file is successfully deleted. Otherwise, it returns -1 and sets **errno** either to **EACCES** to indicate that the path specifies a read-only file, specifies a directory, or the file is open, or to **ENOENT** to indicate that the filename or path was not found.
 
 See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information on these and other return codes.
 

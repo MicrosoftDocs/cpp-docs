@@ -1,16 +1,9 @@
 ---
-title: "CFtpFileFind Class | Microsoft Docs"
-ms.custom: ""
+title: "CFtpFileFind Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFtpFileFind", "AFXINET/CFtpFileFind", "AFXINET/CFtpFileFind::CFtpFileFind", "AFXINET/CFtpFileFind::FindFile", "AFXINET/CFtpFileFind::FindNextFile", "AFXINET/CFtpFileFind::GetFileURL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFtpFileFind [MFC], CFtpFileFind", "CFtpFileFind [MFC], FindFile", "CFtpFileFind [MFC], FindNextFile", "CFtpFileFind [MFC], GetFileURL"]
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFtpFileFind Class
 
@@ -168,7 +161,7 @@ The file and path of the Universal Resource Locator (URL).
 
 `GetFileURL` is similar to the member function [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath), except that it returns the URL in the form `ftp://moose/dir/file.txt`.
 
-## See Also
+## See also
 
 [CFileFind Class](../../mfc/reference/cfilefind-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

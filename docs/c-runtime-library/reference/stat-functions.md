@@ -1,19 +1,12 @@
 ---
-title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32 | Microsoft Docs"
-ms.custom: ""
+title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["tstat32", "tstat", "_tstat64i32", "tstati64", "_wstat64", "_wstat32", "wstati64", "tstat64", "_stati64", "_wstat", "wstat64i32", "stat32i64", "tstat32i64", "_tstat", "_wstati64", "_tstati64", "_wstat32i64", "wstat32", "_wstat64i32", "_stat", "_tstat32", "stat64i32", "wstat64", "stat", "_stat32i64", "_stat32", "stati64", "wstat", "_stat64i32", "stat32", "_tstat32i64", "tstat64i32", "_tstat64", "_stat64", "stat/_stat", "stat/_stat32", "stat/_stat64", "stat/_stati64", "stat/_stat32i64", "stat/_stat64i32", "stat/_wstat", "stat/_wstat32", "stat/_wstat64", "stat/_wstati64", "stat/_wstat32i64", "stat/_wstat64i32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], status information", "_stat function", "_wstat function", "_stat64i32 function", "tstat function", "_tstat64i32 function", "_stati64 function", "_stat64 function", "tstati64 function", "wstati64 function", "wstat64 function", "_wstat64i32 function", "_tstat32i64 function", "_stat32i64 function", "stat function", "status of files", "_tstat32 function", "tstat64 function", "_wstat64 function", "_tstat function", "_stat32 function", "wstat function", "_wstat32i64 function", "_tstati64 function", "_wstat32 function", "stat64 function", "stati64 function", "_wstati64 function", "_tstat64 function", "files [C++], getting status information"]
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
@@ -130,17 +123,17 @@ The **_stat** structure, defined in SYS\STAT.H, includes the following fields.
 
 |Field||
 |-|-|
-**st_gid**|Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
-**st_atime**|Time of last access of file. Valid on NTFS but not on FAT formatted disk drives.
-**st_ctime**|Time of creation of file. Valid on NTFS but not on FAT formatted disk drives.
-**st_dev**|Drive number of the disk containing the file (same as **st_rdev**).
-**st_ino**|Number of the information node (the **inode**) for the file (UNIX-specific). On UNIX file systems, the **inode** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **inode**. The **inode**, and therefore **st_ino**, has no meaning in the FAT, HPFS, or NTFS file systems.
-**st_mode**|Bit mask for file-mode information. The **_S_IFDIR** bit is set if *path* specifies a directory; the **_S_IFREG** bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension.
-**st_mtime**|Time of last modification of file.
-**st_nlink**|Always 1 on non-NTFS file systems.
-**st_rdev**|Drive number of the disk containing the file (same as **st_dev**).
-**st_size**|Size of the file in bytes; a 64-bit integer for variations with the **i64** suffix.
-**st_uid**|Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file.
+| **st_gid** | Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
+| **st_atime** | Time of last access of file. Valid on NTFS but not on FAT formatted disk drives. |
+| **st_ctime** | Time of creation of file. Valid on NTFS but not on FAT formatted disk drives. |
+| **st_dev** | Drive number of the disk containing the file (same as **st_rdev**). |
+| **st_ino** | Number of the information node (the **inode**) for the file (UNIX-specific). On UNIX file systems, the **inode** describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same **inode**. The **inode**, and therefore **st_ino**, has no meaning in the FAT, HPFS, or NTFS file systems. |
+| **st_mode** | Bit mask for file-mode information. The **_S_IFDIR** bit is set if *path* specifies a directory; the **_S_IFREG** bit is set if *path* specifies an ordinary file or a device. User read/write bits are set according to the file's permission mode; user execute bits are set according to the filename extension. |
+| **st_mtime** | Time of last modification of file. |
+| **st_nlink** | Always 1 on non-NTFS file systems. |
+| **st_rdev** | Drive number of the disk containing the file (same as **st_dev**). |
+| **st_size** | Size of the file in bytes; a 64-bit integer for variations with the **i64** suffix. |
+| **st_uid** | Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
 
 If *path* refers to a device, the **st_size**, various time fields, **st_dev**, and **st_rdev** fields in the **_stat** structure are meaningless. Because STAT.H uses the [_dev_t](../../c-runtime-library/standard-types.md) type that is defined in TYPES.H, you must include TYPES.H before STAT.H in your code.
 

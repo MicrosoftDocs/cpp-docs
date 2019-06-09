@@ -1,16 +1,9 @@
 ---
-title: "CUtlProps Class | Microsoft Docs"
-ms.custom: ""
+title: "CUtlProps Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "CUtlProps", "OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CUtlProps class", "GetPropValue method", "IsValidValue method", "OnInterfaceRequested method", "OnPropertyChanged method", "SetPropValue method"]
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CUtlProps Class
 
@@ -96,7 +89,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 The index into the property-set array; zero if there is only one property set.
 
 *pDBProp*<br/>
-The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970) structure.
+The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
 
 ### Return Value
 
@@ -158,7 +151,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 The index into the property-set array; zero if there is only one property set.
 
 *pDBProp*<br/>
-The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970) structure.
+The property ID and new value in a [DBPROP](/previous-versions/windows/desktop/ms717970(v=vs.85)) structure.
 
 ### Return Value
 
@@ -201,7 +194,7 @@ HRESULT SetPropValue(const GUID* pguidPropSet,
 
 `Failure` on failure and S_OK if successful.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

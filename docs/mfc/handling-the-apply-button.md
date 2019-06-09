@@ -1,15 +1,8 @@
 ---
-title: "Handling the Apply Button | Microsoft Docs"
-ms.custom: ""
+title: "Handling the Apply Button"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Apply button in property sheet", "property sheets, Apply button"]
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handling the Apply Button
 
@@ -29,9 +22,8 @@ You should call [CPropertyPage::SetModified](../mfc/reference/cpropertypage-clas
 
 To implement the effect of the Apply button, the property sheet must tell its owner, or some other external object in the application, to apply the current settings in the property pages. At the same time, the property sheet should disable the Apply button by calling `CPropertyPage::SetModified( FALSE )` for all pages that applied their modifications to the external object.
 
-For an example of this process, see the MFC General sample [PROPDLG](../visual-cpp-samples.md).
+For an example of this process, see the MFC General sample [PROPDLG](../overview/visual-cpp-samples.md).
 
-## See Also
+## See also
 
 [Property Sheets](../mfc/property-sheets-mfc.md)
-

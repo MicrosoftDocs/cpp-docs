@@ -1,16 +1,9 @@
 ---
-title: "TN062: Message Reflection for Windows Controls | Microsoft Docs"
-ms.custom: ""
+title: "TN062: Message Reflection for Windows Controls"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.controls.messages"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ON_WM_VKEYTOITEM_REFLECT macro [MFC]", "ON_WM_DRAWITEM_REFLECT macro [MFC]", "ON_WM_VSCROLL_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT message [MFC]", "ON_CONTROL_REFLECT_EX macro [MFC]", "ON_UPDATE_COMMAND_UI_REFLECT macro [MFC]", "ON_NOTIFY_REFLECT_EX message [MFC]", "ON_WM_HSCROLL_REFLECT macro [MFC]", "message reflection [MFC]", "ON_WM_COMPAREITEM_REFLECT macro [MFC]", "ON_WM_MEASUREITEM_REFLECT macro [MFC]", "ON_NOTIFY message [MFC]", "WM_COMMAND [MFC]", "WM_CTLCOLOR message [MFC]", "TN062 [MFC]", "ON_WM_CHARTOITEM_REFLECT macro [MFC]", "ON_WM_CTLCOLOR_REFLECT macro [MFC]", "ON_WM_DELETEITEM_REFLECT macro [MFC]", "notification messages [MFC]", "ON_WM_PARENTNOTIFY_REFLECT macro [MFC]", "WM_NOTIFY message [MFC]", "ON_CONTROL_REFLECT macro"]
 ms.assetid: 53efb0ba-fcda-4fa0-a3c7-14e0b78fb494
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN062: Message Reflection for Windows Controls
 

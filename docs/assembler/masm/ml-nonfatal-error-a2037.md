@@ -1,16 +1,10 @@
 ---
-title: "ML Nonfatal Error A2037 | Microsoft Docs"
-ms.custom: ""
+title: "ML Nonfatal Error A2037"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2037"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["A2037"]
 ms.assetid: e7fdb98b-3ce9-4e1f-99fc-1b1ea10b6961
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2037
 

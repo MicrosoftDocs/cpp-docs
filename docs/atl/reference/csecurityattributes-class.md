@@ -1,16 +1,9 @@
 ---
-title: "CSecurityAttributes Class | Microsoft Docs"
-ms.custom: ""
+title: "CSecurityAttributes Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::Set"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSecurityAttributes class"]
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSecurityAttributes Class
 
@@ -92,9 +85,9 @@ Specifies whether the returned handle is inherited when a new process is created
 
 This method is used by the constructor to initialize the `CSecurityAttributes` object.
 
-## See Also
+## See also
 
-[Security Sample](../../visual-cpp-samples.md)<br/>
+[Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>
 [security descriptor](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>

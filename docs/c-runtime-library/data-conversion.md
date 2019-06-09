@@ -1,16 +1,9 @@
 ---
-title: "Data Conversion | Microsoft Docs"
-ms.custom: ""
+title: "Data Conversion"
 ms.date: "03/21/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["c.conversions"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["data conversion routines [C++]", "converting data"]
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Data Conversion
 
@@ -45,9 +38,9 @@ These routines convert data from one form to another. Generally these routines e
 |[strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)|Convert string to **long** integer|
 |[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)|Convert string to **unsigned long** integer|
 |[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)|Transform string into collated form based on locale-specific information|
-|[toascii, __toascii](../c-runtime-library/reference/toascii-toascii.md)|Convert character to ASCII code||
+|[toascii, __toascii](../c-runtime-library/reference/toascii-toascii.md)|Convert character to ASCII code|
 |[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|Test character and convert to lowercase if currently uppercase|
-|[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)|Convert character to lowercase unconditionally|[System::String::ToLower](https://msdn.microsoft.com/library/system.string.tolower.aspx)|
+|[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)|Convert character to lowercase unconditionally|
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|Test character and convert to uppercase if currently lowercase|
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|Convert character to uppercase unconditionally|
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md), [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|Convert sequence of wide characters to corresponding sequence of multibyte characters|

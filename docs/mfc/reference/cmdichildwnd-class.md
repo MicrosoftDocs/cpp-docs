@@ -1,16 +1,9 @@
 ---
-title: "CMDIChildWnd Class | Microsoft Docs"
-ms.custom: ""
+title: "CMDIChildWnd Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIChildWnd [MFC], CMDIChildWnd", "CMDIChildWnd [MFC], Create", "CMDIChildWnd [MFC], GetMDIFrame", "CMDIChildWnd [MFC], MDIActivate", "CMDIChildWnd [MFC], MDIDestroy", "CMDIChildWnd [MFC], MDIMaximize", "CMDIChildWnd [MFC], MDIRestore", "CMDIChildWnd [MFC], SetHandles"]
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMDIChildWnd Class
 
@@ -125,7 +118,7 @@ virtual BOOL Create(
 ### Parameters
 
 *lpszClassName*<br/>
-Points to a null-terminated character string that names the Windows class (a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
+Points to a null-terminated character string that names the Windows class (a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
 
 *lpszWindowName*<br/>
 Points to a null-terminated character string that represents the window name. Used as text for the title bar.
@@ -268,11 +261,11 @@ The handle of an accelerator resource.
 
 Call this function to set the menu and accelerator resources used by the MDI child window object.
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
-[MFC Sample MDIDOCVW](../../visual-cpp-samples.md)<br/>
-[MFC Sample SNAPVW](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample SNAPVW](../../overview/visual-cpp-samples.md)<br/>
 [CFrameWnd Class](../../mfc/reference/cframewnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

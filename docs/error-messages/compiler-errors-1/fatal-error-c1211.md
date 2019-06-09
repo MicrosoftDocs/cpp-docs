@@ -1,16 +1,9 @@
 ---
-title: "Fatal Error C1211 | Microsoft Docs"
-ms.custom: ""
+title: "Fatal Error C1211"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C1211"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C1211"]
 ms.assetid: df0ca70d-ec6e-4400-926a-b877e2599978
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1211
 
@@ -22,4 +15,4 @@ Some functionality of the compiler may not work on a previous version of the run
 
 To resolve C1211 install the common language runtime that shipped with the compiler you are using.
 
-For more information, see [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md).
+For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).

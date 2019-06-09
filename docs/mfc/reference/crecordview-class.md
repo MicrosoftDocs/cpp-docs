@@ -1,16 +1,9 @@
 ---
-title: "CRecordView Class | Microsoft Docs"
-ms.custom: ""
+title: "CRecordView Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CRecordView [MFC], CRecordView", "CRecordView [MFC], IsOnFirstRecord", "CRecordView [MFC], IsOnLastRecord", "CRecordView [MFC], OnGetRecordset", "CRecordView [MFC], OnMove", "CRecordView [MFC], OnMove"]
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CRecordView Class
 
@@ -208,7 +201,7 @@ If you move past the last record in the recordset, the record view continues to 
 > [!CAUTION]
 >  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.
 
-## See Also
+## See also
 
 [CFormView Class](../../mfc/reference/cformview-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

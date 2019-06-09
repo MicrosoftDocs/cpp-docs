@@ -1,16 +1,9 @@
 ---
-title: "CConstantTransition Class | Microsoft Docs"
-ms.custom: ""
+title: "CConstantTransition Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::Create", "AFXANIMATIONCONTROLLER/CConstantTransition::m_duration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CConstantTransition [MFC], CConstantTransition", "CConstantTransition [MFC], Create", "CConstantTransition [MFC], m_duration"]
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CConstantTransition Class
 
@@ -98,6 +91,6 @@ The duration of the transition.
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

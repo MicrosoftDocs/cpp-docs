@@ -1,18 +1,11 @@
 ---
-title: "DHTML Editing Command Maps | Microsoft Docs"
-ms.custom: ""
+title: "DHTML Editing Command Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # DHTML Editing Command Maps
 
-The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../visual-cpp-samples.md).
+The following macros can be used to map DHTML editing commands in [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-derived classes. For an example of their use, see [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### DHTML Editing Command Map Macros
 
@@ -47,7 +40,7 @@ Use [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap) to implement the map
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
@@ -90,7 +83,7 @@ Use in conjunction with [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap).
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
@@ -114,7 +107,7 @@ The HTML editing command to which *cmdID* maps (such as IDM_COPY).
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
@@ -141,7 +134,7 @@ The name of the message-handler function to which the command is mapped.
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
@@ -168,7 +161,7 @@ The user interface element type; one of AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
@@ -198,12 +191,12 @@ The user interface element type; one of AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_
 
 ### Example
 
-See [HTMLEdit Sample](../../visual-cpp-samples.md).
+See [HTMLEdit Sample](../../overview/visual-cpp-samples.md).
 
 ### Requirements
 
   **Header** afxhtml.h
 
-## See Also
+## See also
 
 [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)

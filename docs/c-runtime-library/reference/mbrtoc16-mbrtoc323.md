@@ -1,19 +1,12 @@
 ---
-title: "mbrtoc16, mbrtoc323 | Microsoft Docs"
-ms.custom: ""
+title: "mbrtoc16, mbrtoc323"
 ms.date: "11/04/2016"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["mbrtoc16", "mbrtoc32"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mbrtoc16 function", "mbrtoc32 function"]
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # mbrtoc16, mbrtoc32
 
@@ -35,7 +28,6 @@ size_t mbrtoc32(
    size_t max_bytes,
    mbstate_t* state
 );
-
 ```
 
 ### Parameters

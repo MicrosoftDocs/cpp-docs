@@ -1,15 +1,8 @@
 ---
-title: "How to: Explicitly Request Boxing | Microsoft Docs"
-ms.custom: ""
+title: "How to: Explicitly Request Boxing"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["boxing, explicitly requesting"]
 ms.assetid: 1359e6e5-162d-4f5d-9b6a-1690d93df3ee
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Explicitly Request Boxing
 
@@ -45,6 +38,6 @@ f(Object^ o)
 f(Object^ o)
 ```
 
-## See Also
+## See also
 
-[Boxing](../windows/boxing-cpp-component-extensions.md)
+[Boxing](../extensions/boxing-cpp-component-extensions.md)

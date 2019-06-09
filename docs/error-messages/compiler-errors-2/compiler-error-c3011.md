@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3011 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3011"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3011"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3011"]
 ms.assetid: 24c3a917-ebff-4deb-9155-23adf6468531
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3011
 

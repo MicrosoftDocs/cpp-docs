@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 2) C4244 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 2) C4244"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4244"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4244"]
 ms.assetid: 2c19d157-21d1-42c2-a6c0-3f30f2ce3813
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 2) C4244
 

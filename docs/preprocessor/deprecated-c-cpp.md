@@ -1,16 +1,9 @@
 ---
-title: "deprecated (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "deprecated (C/C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.deprecated", "deprecated_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["deprecated pragma", "pragmas, deprecated"]
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # deprecated (C/C++)
 
@@ -72,6 +65,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

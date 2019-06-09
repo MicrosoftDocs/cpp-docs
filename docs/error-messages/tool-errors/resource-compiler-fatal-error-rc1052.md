@@ -1,16 +1,9 @@
 ---
-title: "Resource Compiler Fatal Error RC1052 | Microsoft Docs"
-ms.custom: ""
+title: "Resource Compiler Fatal Error RC1052"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["RC1052"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["RC1052"]
 ms.assetid: 59803673-492b-44fa-80fa-df93b8aaf9fb
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Resource Compiler Fatal Error RC1052
 

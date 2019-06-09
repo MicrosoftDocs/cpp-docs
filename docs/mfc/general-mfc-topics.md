@@ -1,15 +1,8 @@
 ---
-title: "General MFC Topics | Microsoft Docs"
-ms.custom: ""
+title: "General MFC Topics"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC", "class libraries [MFC], MFC", "MFC, application development"]
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General MFC Topics
 
@@ -21,7 +14,7 @@ The MFC framework is a powerful approach that lets you build upon the work of ex
 
 ## In This Section
 
-`MFC Samples`, which are supplied in [Visual C++ Samples](../visual-cpp-samples.md)
+`MFC Samples`, which are supplied in [Visual C++ Samples](../overview/visual-cpp-samples.md)
 
 [Using the MFC Source Files](../mfc/using-the-mfc-source-files.md)
 
@@ -53,7 +46,6 @@ For an overview of the MFC reference documentation, see [Microsoft Foundation Cl
 
 For information about ATL, see [Active Template Library Reference](../atl/atl-class-overview.md).
 
-## See Also
+## See also
 
 [Working with Window Objects](../mfc/working-with-window-objects.md)
-

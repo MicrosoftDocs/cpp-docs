@@ -1,15 +1,8 @@
 ---
-title: "MFC Database Classes (ODBC and DAO) | Microsoft Docs"
-ms.custom: ""
+title: "MFC Database Classes (ODBC and DAO)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC, ODBC classes", "MFC, database applications"]
 ms.assetid: 88aabe65-84e3-4122-b636-5d334a5fe570
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # MFC Database Classes
 
@@ -28,6 +21,6 @@ For more information, see the following topics:
 
 - [Using Database Classes Without Documents and Views](../data/mfc-using-database-classes-without-documents-and-views.md)
 
-## See Also
+## See also
 
 [Data Access Programming (MFC/ATL)](../data/data-access-programming-mfc-atl.md)

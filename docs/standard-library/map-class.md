@@ -1,16 +1,9 @@
 ---
-title: "map Class | Microsoft Docs"
-ms.custom: ""
+title: "map Class"
 ms.date: "10/18/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::map [C++]", "std::map [C++], allocator_type", "std::map [C++], const_iterator", "std::map [C++], const_pointer", "std::map [C++], const_reference", "std::map [C++], const_reverse_iterator", "std::map [C++], difference_type", "std::map [C++], iterator", "std::map [C++], key_compare", "std::map [C++], key_type", "std::map [C++], mapped_type", "std::map [C++], pointer", "std::map [C++], reference", "std::map [C++], reverse_iterator", "std::map [C++], size_type", "std::map [C++], value_type", "std::map [C++], at", "std::map [C++], begin", "std::map [C++], cbegin", "std::map [C++], cend", "std::map [C++], clear", "std::map [C++], count", "std::map [C++], crbegin", "std::map [C++], crend", "std::map [C++], emplace", "std::map [C++], emplace_hint", "std::map [C++], empty", "std::map [C++], end", "std::map [C++], equal_range", "std::map [C++], erase", "std::map [C++], find", "std::map [C++], get_allocator", "std::map [C++], insert", "std::map [C++], key_comp", "std::map [C++], lower_bound", "std::map [C++], max_size", "std::map [C++], rbegin", "std::map [C++], rend", "std::map [C++], size", "std::map [C++], swap", "std::map [C++], upper_bound", "std::map [C++], value_comp"]
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # map Class
 
@@ -486,7 +479,7 @@ The key value of the elements to be matched from the map.
 
 The member function returns the number of elements *x* in the range
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 which is 0 or 1 in the case of map, which is a unique associative container.
 
@@ -853,7 +846,6 @@ int main()
     print(m1);
     cout << endl;
 }
-
 ```
 
 ## <a name="empty"></a> empty
@@ -1078,7 +1070,7 @@ int main()
     cout << "After the 2nd element is deleted, the map m1 is:" << endl;
     printmap(m1);
 
-    // Fill in some data to test with, one at a time, using an intializer list
+    // Fill in some data to test with, one at a time, using an initializer list
     mymap m2
     {
         { 10, "Bob" },
@@ -1770,7 +1762,7 @@ int main()
     m1.insert(Int_Pair(4, 40));
 
     // Create an empty map m2 with the key comparison
-    // function of geater than, then insert 2 elements
+    // function of greater than, then insert 2 elements
     map <int, int, less<int> > m2;
     m2.insert(Int_Pair(1, 10));
     m2.insert(Int_Pair(2, 20));

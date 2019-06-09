@@ -1,16 +1,9 @@
 ---
-title: "ATL Dialog Wizard | Microsoft Docs"
-ms.custom: ""
+title: "ATL Dialog Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.dlg.overview"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, adding dialog resources", "ATL Dialog Wizard"]
 ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Dialog Wizard
 
@@ -40,7 +33,6 @@ The wizard inserts into the header file a [message map](../../atl/message-maps-a
 
    The wizard does not overwrite a file. If you select the name of an existing file, when you click **Finish**, the wizard prompts you to indicate whether the class implementation should be appended to the contents of the file. Click **Yes** to append the file; click **No** to return to the wizard and specify another file name.
 
-## See Also
+## See also
 
 [ATL Dialog Box](../../atl/reference/adding-an-atl-dialog-box.md)
-

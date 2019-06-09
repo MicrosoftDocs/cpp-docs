@@ -1,15 +1,8 @@
 ---
-title: "Where to Find Message Maps | Microsoft Docs"
-ms.custom: ""
+title: "Where to Find Message Maps"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["macros, message map", "locating message maps", "message classes [MFC], finding", "message-map macros"]
 ms.assetid: bf59fbc8-b222-42d3-b5d3-0a79aa3cb923
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Where to Find Message Maps
 
@@ -26,7 +19,6 @@ The message map consists of a collection of macros. Two macros, [BEGIN_MESSAGE_M
 
 When you use the Add Class wizard to create a new class, it provides a message map for the class. Alternatively, you can create a message map manually using the source code editor.
 
-## See Also
+## See also
 
 [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md)
-

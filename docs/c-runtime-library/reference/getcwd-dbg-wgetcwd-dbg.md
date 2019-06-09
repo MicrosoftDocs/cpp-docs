@@ -1,19 +1,12 @@
 ---
-title: "_getcwd_dbg, _wgetcwd_dbg | Microsoft Docs"
-ms.custom: ""
+title: "_getcwd_dbg, _wgetcwd_dbg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_wgetcwd_dbg", "_getcwd_dbg"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_getcwd_dbg", "_wgetcwd_dbg", "getcwd_dbg", "wgetcwd_dbg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["wgetcwd_dbg function", "working directory", "_getcwd_dbg function", "getcwd_dbg function", "current working directory", "_wgetcwd_dbg function", "directories [C++], current working"]
 ms.assetid: 8d5d151f-d844-4aa6-a28c-1c11a22dc00d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _getcwd_dbg, _wgetcwd_dbg
 

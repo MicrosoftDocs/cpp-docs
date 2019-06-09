@@ -1,16 +1,9 @@
 ---
-title: "Token-Pasting Operator (##) | Microsoft Docs"
-ms.custom: ""
+title: "Token-Pasting Operator (##)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["##"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, operators", "## preprocessor operator"]
 ms.assetid: 4f173503-990f-4bff-aef3-ec4d1f1458ef
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Token-Pasting Operator (##)
 
@@ -63,6 +56,6 @@ int main()
 token9 = 9
 ```
 
-## See Also
+## See also
 
 [Preprocessor Operators](../preprocessor/preprocessor-operators.md)

@@ -1,16 +1,9 @@
 ---
-title: "Customizing the Appearance of a Toolbar Control | Microsoft Docs"
-ms.custom: ""
+title: "Customizing the Appearance of a Toolbar Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["TBSTYLE_"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["flat toolbars", "CToolBar class [MFC], styles", "transparent toolbars", "TBSTYLE_ styles [MFC]", "CToolBarCtrl class [MFC], object styles", "toolbar controls [MFC], style"]
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Customizing the Appearance of a Toolbar Control
 
@@ -46,8 +39,7 @@ The remaining styles affect visual and nonvisual aspects of the toolbar object:
 
 For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) and [Toolbar Extended Styles](/windows/desktop/Controls/toolbar-extended-styles) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

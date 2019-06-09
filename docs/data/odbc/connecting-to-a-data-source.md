@@ -1,15 +1,8 @@
 ---
-title: "Connecting to a Data Source | Microsoft Docs"
-ms.custom: ""
+title: "Connecting to a Data Source"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["database connections [C++], ODBC", "ODBC connections [C++], using", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Connecting to a Data Source
 
@@ -27,6 +20,6 @@ Data-source connections are encapsulated by class [CDatabase](../../mfc/referenc
 
 When you finish working with a data-source connection, you close the `CDatabase` object and either destroy it or reuse it for a new connection. For more information about data-source connections, see [Data Source (ODBC)](../../data/odbc/data-source-odbc.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)

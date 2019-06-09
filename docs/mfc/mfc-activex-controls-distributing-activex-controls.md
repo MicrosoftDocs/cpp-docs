@@ -1,16 +1,9 @@
 ---
-title: "MFC ActiveX Controls: Distributing ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Distributing ActiveX Controls"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["GetWindowsDirectory", "GetSystemDirectory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], ANSI or Unicode versions", "RegSvr32.exe", "MFC ActiveX controls [MFC], distributing", "distributing MFC ActiveX controls", "redistributable files, MFC ActiveX controls", "GetSystemDirectory method [MFC]", "registering ActiveX controls", "MSVCRT40.dll", "registry [MFC], registering controls", "LoadLibrary method, registering ActiveX controls", "MFC40U.DLL", "MFC40.DLL", "GetWindowsDirectory method [MFC]", "installing ActiveX controls", "GetProcAddress method, registering ActiveX controls", "MFC ActiveX controls [MFC], installing", "MFC ActiveX controls [MFC], registering", "registering controls", "OLEPRO32.DLL"]
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Distributing ActiveX Controls
 
@@ -23,7 +16,7 @@ This article discusses several issues related to redistributing ActiveX controls
 - [Registering Controls](#_core_registering_controls)
 
 >[!IMPORTANT]
-> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
 
 ##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI or Unicode Control Versions
 
@@ -59,7 +52,6 @@ The advantage of registering the control directly is that you do not need to inv
 
 You should register MFCx0.DLL.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
-

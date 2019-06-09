@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3646 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3646"
 ms.date: "06/14/2018"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3646"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3646"]
 ms.assetid: 4391ead2-9637-4ca3-aeda-5a991b18d66d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3646
 
@@ -22,7 +15,7 @@ The compiler found a token in the position where it expected to find an override
 
 For example, if the unrecognized *specifier* is **_NOEXCEPT**, replace it with the keyword **noexcept**.
 
-For more information, see [Override Specifiers](../../windows/override-specifiers-cpp-component-extensions.md).
+For more information, see [Override Specifiers](../../extensions/override-specifiers-cpp-component-extensions.md).
 
 ## Example
 

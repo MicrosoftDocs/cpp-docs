@@ -1,15 +1,8 @@
 ---
-title: "Containers: Client-Item States | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Client-Item States"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE containers [MFC], client-item states", "states, OLE container client-item", "lifetime, lifetime states and OLE container client items", "client items and OLE containers"]
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Client-Item States
 
@@ -35,7 +28,7 @@ When an item has been opened in the server's window rather than opened in place 
 
 When an item has been activated in place, it passes, usually only briefly, through the active state. It then enters the UI active state, in which the server has merged its menus, toolbars, and other user-interface components with those of the container. The presence of these user-interface components distinguishes the UI active state from the active state. Otherwise, the active state resembles the UI active state. If the server supports Undo, the server is required to retain the OLE item's undo-state information until it reaches the loaded or open state.
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Activation](../mfc/activation-cpp.md)<br/>

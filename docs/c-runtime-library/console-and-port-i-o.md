@@ -1,16 +1,9 @@
 ---
-title: "Console and Port I/O | Microsoft Docs"
-ms.custom: ""
+title: "Console and Port I/O"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["routines, console and port I/O", "routines", "ports, I/O routines", "I/O [CRT], console", "I/O [CRT], port", "I/O routines, console and port I/O"]
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Console and Port I/O
 
@@ -36,7 +29,7 @@ These routines read and write on your console or on the specified port. The cons
 |[_putch, _putwch](../c-runtime-library/reference/putch-putwch.md)|Write character to console|
 |[_ungetch, _ungetwch](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)|"Unget" last character read from console so it becomes next character read|
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

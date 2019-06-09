@@ -1,16 +1,9 @@
 ---
-title: "CListBox Class | Microsoft Docs"
-ms.custom: ""
+title: "CListBox Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CListBox", "AFXWIN/CListBox", "AFXWIN/CListBox::CListBox", "AFXWIN/CListBox::AddString", "AFXWIN/CListBox::CharToItem", "AFXWIN/CListBox::CompareItem", "AFXWIN/CListBox::Create", "AFXWIN/CListBox::DeleteItem", "AFXWIN/CListBox::DeleteString", "AFXWIN/CListBox::Dir", "AFXWIN/CListBox::DrawItem", "AFXWIN/CListBox::FindString", "AFXWIN/CListBox::FindStringExact", "AFXWIN/CListBox::GetAnchorIndex", "AFXWIN/CListBox::GetCaretIndex", "AFXWIN/CListBox::GetCount", "AFXWIN/CListBox::GetCurSel", "AFXWIN/CListBox::GetHorizontalExtent", "AFXWIN/CListBox::GetItemData", "AFXWIN/CListBox::GetItemDataPtr", "AFXWIN/CListBox::GetItemHeight", "AFXWIN/CListBox::GetItemRect", "AFXWIN/CListBox::GetListBoxInfo", "AFXWIN/CListBox::GetLocale", "AFXWIN/CListBox::GetSel", "AFXWIN/CListBox::GetSelCount", "AFXWIN/CListBox::GetSelItems", "AFXWIN/CListBox::GetText", "AFXWIN/CListBox::GetTextLen", "AFXWIN/CListBox::GetTopIndex", "AFXWIN/CListBox::InitStorage", "AFXWIN/CListBox::InsertString", "AFXWIN/CListBox::ItemFromPoint", "AFXWIN/CListBox::MeasureItem", "AFXWIN/CListBox::ResetContent", "AFXWIN/CListBox::SelectString", "AFXWIN/CListBox::SelItemRange", "AFXWIN/CListBox::SetAnchorIndex", "AFXWIN/CListBox::SetCaretIndex", "AFXWIN/CListBox::SetColumnWidth", "AFXWIN/CListBox::SetCurSel", "AFXWIN/CListBox::SetHorizontalExtent", "AFXWIN/CListBox::SetItemData", "AFXWIN/CListBox::SetItemDataPtr", "AFXWIN/CListBox::SetItemHeight", "AFXWIN/CListBox::SetLocale", "AFXWIN/CListBox::SetSel", "AFXWIN/CListBox::SetTabStops", "AFXWIN/CListBox::SetTopIndex", "AFXWIN/CListBox::VKeyToItem"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListBox [MFC], CListBox", "CListBox [MFC], AddString", "CListBox [MFC], CharToItem", "CListBox [MFC], CompareItem", "CListBox [MFC], Create", "CListBox [MFC], DeleteItem", "CListBox [MFC], DeleteString", "CListBox [MFC], Dir", "CListBox [MFC], DrawItem", "CListBox [MFC], FindString", "CListBox [MFC], FindStringExact", "CListBox [MFC], GetAnchorIndex", "CListBox [MFC], GetCaretIndex", "CListBox [MFC], GetCount", "CListBox [MFC], GetCurSel", "CListBox [MFC], GetHorizontalExtent", "CListBox [MFC], GetItemData", "CListBox [MFC], GetItemDataPtr", "CListBox [MFC], GetItemHeight", "CListBox [MFC], GetItemRect", "CListBox [MFC], GetListBoxInfo", "CListBox [MFC], GetLocale", "CListBox [MFC], GetSel", "CListBox [MFC], GetSelCount", "CListBox [MFC], GetSelItems", "CListBox [MFC], GetText", "CListBox [MFC], GetTextLen", "CListBox [MFC], GetTopIndex", "CListBox [MFC], InitStorage", "CListBox [MFC], InsertString", "CListBox [MFC], ItemFromPoint", "CListBox [MFC], MeasureItem", "CListBox [MFC], ResetContent", "CListBox [MFC], SelectString", "CListBox [MFC], SelItemRange", "CListBox [MFC], SetAnchorIndex", "CListBox [MFC], SetCaretIndex", "CListBox [MFC], SetColumnWidth", "CListBox [MFC], SetCurSel", "CListBox [MFC], SetHorizontalExtent", "CListBox [MFC], SetItemData", "CListBox [MFC], SetItemDataPtr", "CListBox [MFC], SetItemHeight", "CListBox [MFC], SetLocale", "CListBox [MFC], SetSel", "CListBox [MFC], SetTabStops", "CListBox [MFC], SetTopIndex", "CListBox [MFC], VKeyToItem"]
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CListBox Class
 
@@ -242,7 +235,7 @@ A long pointer to a `COMPAREITEMSTRUCT` structure.
 
 ### Return Value
 
-Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) structure. It may be any of the following values:
+Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure. It may be any of the following values:
 
 |Value|Meaning|
 |-----------|-------------|
@@ -329,7 +322,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) structure that contains information about the deleted item.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item.
 
 ### Remarks
 
@@ -414,7 +407,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure that contains information about the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -673,7 +666,7 @@ int GetItemRect(
 Specifies the zero-based index of the item.
 
 *lpRect*<br/>
-Specifies a long pointer to a [RECT structure](../../mfc/reference/rect-structure1.md) that receives the list-box client coordinates of the item.
+Specifies a long pointer to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that receives the list-box client coordinates of the item.
 
 ### Return Value
 
@@ -971,7 +964,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
 
 ### Remarks
 
@@ -1439,9 +1432,9 @@ A return value of 0 or greater specifies the index of an item in the list box an
 
 [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample CTRLTEST](../../visual-cpp-samples.md)<br/>
+[MFC Sample CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>

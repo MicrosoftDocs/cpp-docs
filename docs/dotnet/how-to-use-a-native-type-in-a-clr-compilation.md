@@ -1,15 +1,9 @@
 ---
-title: "How to: Use a Native Type in a -clr Compilation | Microsoft Docs"
+title: "How to: Use a Native Type in a -clr Compilation"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compilation, native types in /clr", "/clr compiler option [C++], using native types"]
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use a Native Type in a /clr Compilation
 
@@ -59,6 +53,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

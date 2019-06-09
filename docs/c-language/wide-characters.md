@@ -1,15 +1,8 @@
 ---
-title: "Wide Characters | Microsoft Docs"
-ms.custom: ""
+title: "Wide Characters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["wide characters"]
 ms.assetid: 165c4a12-8ab9-45fb-9964-c55e9956194c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Wide Characters
 
@@ -19,6 +12,6 @@ The regular character constant, 'ab' has the integer value (int)0x6162. When the
 
 The multibyte character constant is read as above and this is converted to a wide-character constant using the `mbtowc` run-time function. If the result is not a valid wide-character constant, an error is issued. In any event, the number of bytes examined by the `mbtowc` function is limited to the value of `MB_CUR_MAX`.
 
-## See Also
+## See also
 
 [Characters](../c-language/characters.md)

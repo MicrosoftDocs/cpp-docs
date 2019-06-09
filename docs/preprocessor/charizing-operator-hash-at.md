@@ -1,16 +1,9 @@
 ---
-title: "Charizing Operator (#@) | Microsoft Docs"
-ms.custom: ""
+title: "Charizing Operator (#@)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#@"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, operators", "charizing operator", "#@ preprocessor operator"]
 ms.assetid: dee03314-d27c-4063-965c-64756efbef22
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Charizing Operator (#@)
 **Microsoft Specific**
@@ -37,6 +30,6 @@ The single-quotation character cannot be used with the charizing operator.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Operators](../preprocessor/preprocessor-operators.md)

@@ -1,15 +1,8 @@
 ---
-title: "List Control and List View | Microsoft Docs"
-ms.custom: ""
+title: "List Control and List View"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CListView class [MFC], and CListCtrl", "views [MFC], list and list control", "CListCtrl class [MFC], and CListView", "list views [MFC]", "list controls [MFC], List view"]
 ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # List Control and List View
 
@@ -33,8 +26,7 @@ To obtain a reference to the `CListCtrl` underlying a `CListView`, call `GetList
 
 This topic describes both ways to use the list control.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

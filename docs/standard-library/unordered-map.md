@@ -1,16 +1,9 @@
 ---
-title: "&lt;unordered_map&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;unordered_map&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<unordered_map>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unordered_map header"]
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;unordered_map&gt;
 

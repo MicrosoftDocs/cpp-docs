@@ -1,16 +1,9 @@
 ---
-title: "TN021: Command and Message Routing | Microsoft Docs"
-ms.custom: ""
+title: "TN021: Command and Message Routing"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.routing"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN021", "command routing [MFC], technical note TN021", "Windows messages [MFC], routing"]
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN021: Command and Message Routing
 
@@ -200,7 +193,7 @@ For **CMDIFrameWnd** the scroll bar styles you pass in to **Create** or **LoadFr
 
 For **CSplitterWnd** the scroll bar styles apply to the special shared scroll bars for the splitter regions. For static splitter windows, you will normally not set either scroll bar style. For dynamic splitter windows, you will usually have the scroll bar style set for the direction you will split, That is, **WS_HSCROLL** if you can split rows, **WS_VSCROLL** if you can split columns.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)

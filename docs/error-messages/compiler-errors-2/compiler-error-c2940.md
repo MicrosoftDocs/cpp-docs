@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2940 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2940"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2940"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2940"]
 ms.assetid: af6bf2bf-8de6-4cfd-bbf0-4c6b32a30edf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2940
 

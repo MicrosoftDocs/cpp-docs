@@ -1,17 +1,18 @@
 ---
-title: "Implementing a Simple Consumer | Microsoft Docs"
-ms.custom: ""
-ms.date: "10/12/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
-helpviewer_keywords: ["clients, creating", "OLE DB consumers, implementing"]
+title: "Implementing a Simple Consumer"
+ms.date: "05/09/2019"
+helpviewer_keywords: ["OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Implementing a Simple Consumer
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 The following topics show how to edit the files created by the **MFC Application Wizard** and **ATL OLE DB Consumer Wizard** to create a simple consumer. This example has the following parts:
 
@@ -195,6 +196,8 @@ The previous steps give you bookmark support and a bookmark object with which to
 
 For more information about bookmarks, see [Using Bookmarks](../../data/oledb/using-bookmarks.md). Examples of bookmarks are also shown in [Updating Rowsets](../../data/oledb/updating-rowsets.md).
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Creating an OLE DB Consumer Using a Wizard](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

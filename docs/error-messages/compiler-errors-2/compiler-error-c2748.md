@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C2748 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2748"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2748"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2748"]
 ms.assetid: b63ac78b-a200-499c-afea-15af1a1e819e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2748
 
 managed or WinRT array creation must have array size or array initializer
 
-A managed or WinRT array was ill formed. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).
+A managed or WinRT array was ill formed. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 
 The following sample generates C2748 and shows how to fix it:
 

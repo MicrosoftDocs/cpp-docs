@@ -1,16 +1,9 @@
 ---
-title: "COleDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDialog Class
 
@@ -88,8 +81,7 @@ The error codes returned by `GetLastError` depend on the specific dialog box dis
 
 See the `DoModal` member function in the derived classes for information about specific error messages.
 
-## See Also
+## See also
 
 [CCommonDialog Class](../../mfc/reference/ccommondialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

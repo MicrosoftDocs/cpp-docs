@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2139 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2139"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2139"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2139"]
 ms.assetid: 31e047c0-5bf9-46c2-b6de-b627ea6a5768
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2139
 
@@ -18,7 +11,7 @@ ms.workload: ["cplusplus"]
 
 An invalid argument was passed to a type trait.
 
-For more information, see [Compiler Support for Type Traits](../../windows/compiler-support-for-type-traits-cpp-component-extensions.md).
+For more information, see [Compiler Support for Type Traits](../../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## Example
 

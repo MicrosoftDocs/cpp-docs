@@ -1,15 +1,8 @@
 ---
-title: "Hosting a Windows Form User Control as an MFC Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Hosting a Windows Form User Control as an MFC Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], hosting as MFC Dialog", "hosting Windows Forms control [C++]"]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Hosting a Windows Form User Control as an MFC Dialog Box
 
@@ -66,7 +59,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
    Next you will add code to monitor the state of a control on the Windows Forms from the MFC application.
 
-9. Add a handler for OnInitDialog.
+1. Add a handler for OnInitDialog.
 
    Display the **Properties** window (F4). In **Class View**, select CHostForWinForm. In the **Properties** window, select overrides and in the row for OnInitDialog, click in the left hand column and select \< Add >. This adds the following line to CHostForWinForm.h:
 
@@ -74,9 +67,9 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
     virtual BOOL OnInitDialog();
     ```
 
-10. Define OnInitDialog (in CHostForWinForm.cpp) as follows:
+1. Define OnInitDialog (in CHostForWinForm.cpp) as follows:
 
-    ```
+    ```cpp
     BOOL CHostForWinForm::OnInitDialog() {
        CWinFormsDialog<WindowsControlLibrary1::UserControl1>::OnInitDialog();
        GetControl()->button1->Click += MAKE_DELEGATE(System::EventHandler, OnButton1);
@@ -84,9 +77,9 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
     }
     ```
 
-11. Next add the OnButton1 handler. Add the following lines to the public section of the CHostForWinForm class in CHostForWinForm.h:
+1. Next add the OnButton1 handler. Add the following lines to the public section of the CHostForWinForm class in CHostForWinForm.h:
 
-    ```
+    ```cpp
     virtual void OnButton1( System::Object^ sender, System::EventArgs^ e );
 
     BEGIN_DELEGATE_MAP( CHostForWinForm )
@@ -96,43 +89,43 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
    In CHostForWinForm.cpp, add this definition:
 
-    ```
+    ```cpp
     void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
     {
        System::Windows::Forms::MessageBox::Show("test");
     }
     ```
 
-12. Build and run the project. When you click the button, which is on the Windows Form, code in the MFC application will run.
+1. Build and run the project. When you click the button, which is on the Windows Form, code in the MFC application will run.
 
-   Next you will add code to display from the MFC code the value in the text box on the Windows Form.
+    Next you will add code to display from the MFC code the value in the text box on the Windows Form.
 
-13. In the public section of the CHostForWinForm class in CHostForWinForm.h, add the following declaration:
+1. In the public section of the CHostForWinForm class in CHostForWinForm.h, add the following declaration:
 
-    ```
+    ```cpp
     CString m_sEditBoxOnWinForm;
     ```
 
-14. In the definition of DoDataExchange in CHostForWinForm.cpp, add the following three lines to the end of the function:
+1. In the definition of DoDataExchange in CHostForWinForm.cpp, add the following three lines to the end of the function:
 
-    ```
+    ```cpp
     if (pDX->m_bSaveAndValidate)
        m_sEditBoxOnWinForm = CString( GetControl()->textBox1->Text);
     else
        GetControl()->textBox1->Text = gcnew System::String(m_sEditBoxOnWinForm);
     ```
 
-15. In the definition of OnButton1 in CHostForWinForm.cpp, add the following three lines to the end of the function:
+1. In the definition of OnButton1 in CHostForWinForm.cpp, add the following three lines to the end of the function:
 
-    ```
+    ```cpp
     this->UpdateData(TRUE);
     System::String ^ z = gcnew System::String(m_sEditBoxOnWinForm);
     System::Windows::Forms::MessageBox::Show(z);
     ```
 
-16. Build and run the project.
+1. Build and run the project.
 
-## See Also
+## See also
 
 <xref:System.Windows.Forms.UserControl?displayProperty=fullName>
 [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)

@@ -1,16 +1,9 @@
 ---
-title: "CComTearOffObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CComTearOffObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComTearOffObject", "ATLCOM/ATL::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::CComTearOffObject", "ATLCOM/ATL::CComTearOffObject::AddRef", "ATLCOM/ATL::CComTearOffObject::QueryInterface", "ATLCOM/ATL::CComTearOffObject::Release", "ATLCOM/ATL::CComTearOffObjectBase", "ATLCOM/ATL::m_pOwner"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["tear-off interfaces, ATL", "tear-off interfaces", "CComTearOffObject class"]
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComTearOffObject Class
 
@@ -187,7 +180,7 @@ STDMETHOD_ULONG Release();
 
 In non-debug builds, always returns zero. In debug builds, returns a value that may be useful for diagnostics or testing.
 
-## See Also
+## See also
 
 [CComCachedTearOffObject Class](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

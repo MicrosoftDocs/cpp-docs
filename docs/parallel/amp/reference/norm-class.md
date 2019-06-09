@@ -1,15 +1,8 @@
 ---
-title: "norm Class | Microsoft Docs"
-ms.custom: ""
+title: "norm Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["norm", "AMP_SHORT_VECTORS/norm", "AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor"]
-dev_langs: ["C++"]
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # norm Class
 
@@ -95,6 +88,6 @@ The value used to initialize.
 *_Other*<br/>
 The object used to initialize.
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

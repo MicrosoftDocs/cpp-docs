@@ -1,15 +1,8 @@
 ---
-title: "Lightweight Tasks | Microsoft Docs"
-ms.custom: ""
+title: "Lightweight Tasks"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["lightweight tasks"]
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Lightweight Tasks
 
@@ -28,8 +21,7 @@ To create a lightweight task, call the [concurrency::ScheduleGroup::ScheduleTask
 
 For an example that demonstrates how to adapt existing code to use a lightweight task, see [Walkthrough: Adapting Existing Code to Use Lightweight Tasks](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).
 
-## See Also
+## See also
 
 [Task Scheduler](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Walkthrough: Adapting Existing Code to Use Lightweight Tasks](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
-

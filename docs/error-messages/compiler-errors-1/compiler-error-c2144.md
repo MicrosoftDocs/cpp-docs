@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2144 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2144"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2144"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2144"]
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2144
 
@@ -22,7 +15,7 @@ This error may be caused by a missing closing brace, right parenthesis, or semic
 
 C2144 can also occur when attempting to create a macro from a CLR keyword that contains a white space character.
 
-You may also see C2144 if you are trying to do type forwarding. See [Type Forwarding (C++/CLI)](../../windows/type-forwarding-cpp-cli.md) for more information.
+You may also see C2144 if you are trying to do type forwarding. See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for more information.
 
 ## Examples
 

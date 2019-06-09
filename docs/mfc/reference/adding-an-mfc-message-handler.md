@@ -1,16 +1,9 @@
 ---
-title: "Adding an MFC Message Handler | Microsoft Docs"
-ms.custom: ""
+title: "Adding an MFC Message Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.adding.mfc.msghandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["message handling [MFC], adding handlers"]
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding an MFC Message Handler
 
@@ -21,7 +14,7 @@ By using the Properties window to define message- and event-handling functions, 
 > [!NOTE]
 >  You can add a message handler to an ATL class using the Properties window; however, some results may vary. For more information, see the ATL topic [Adding an ATL Message Handler](../../atl/adding-an-atl-message-handler.md).
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Adding a Class](../../ide/adding-a-class-visual-cpp.md)<br/>
@@ -30,4 +23,3 @@ By using the Properties window to define message- and event-handling functions, 
 [Overriding a Virtual Function](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [Navigating the Class Structure](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
 [Dialog Editor](../../windows/dialog-editor.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Creating a CToolBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Creating a CToolBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CToolBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]
 ms.assetid: a4f6bf0c-0195-4dbf-a09e-aee503e19dc3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a CToolBarCtrl Object
 
@@ -30,8 +23,7 @@ To use a `CToolBarCtrl` object, you will typically follow these steps:
 
 1. If you want your user to be able to customize the toolbar, handle customization notification messages in the owner window as described in [Handling Customization Notifications](../mfc/handling-customization-notifications.md).
 
-## See Also
+## See also
 
 [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

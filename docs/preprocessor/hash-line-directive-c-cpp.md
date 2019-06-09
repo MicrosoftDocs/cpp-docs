@@ -1,16 +1,9 @@
 ---
-title: "#line Directive (C/C++) | Microsoft Docs"
-ms.custom: ""
+title: "#line Directive (C/C++)"
 ms.date: "10/18/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["#line"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, directives", "line directive (#line)", "#line directive"]
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # #line Directive (C/C++)
 
@@ -48,6 +41,6 @@ In this example, the macro `ASSERT` uses the predefined macros `__LINE__` and `_
 __LINE__, __FILE__ );}
 ```
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)

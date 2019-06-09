@@ -1,16 +1,9 @@
 ---
-title: "normal_distribution Class | Microsoft Docs"
-ms.custom: ""
+title: "normal_distribution Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["random/std::normal_distribution", "random/std::normal_distribution::reset", "random/std::normal_distribution::mean", "random/std::normal_distribution::stddev", "random/std::normal_distribution::param", "random/std::normal_distribution::min", "random/std::normal_distribution::max", "random/std::normal_distribution::operator()", "random/std::normal_distribution::param_type", "random/std::normal_distribution::param_type::mean", "random/std::normal_distribution::param_type::stddev", "random/std::normal_distribution::param_type::operator==", "random/std::normal_distribution::param_type::operator!="]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::normal_distribution [C++]", "std::normal_distribution [C++], reset", "std::normal_distribution [C++], mean", "std::normal_distribution [C++], stddev", "std::normal_distribution [C++], param", "std::normal_distribution [C++], min", "std::normal_distribution [C++], max", "std::normal_distribution [C++], param_type", "std::normal_distribution [C++], param_type"]
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # normal_distribution Class
 
@@ -135,7 +128,6 @@ int main()
 
     test(m_dist, s_dist, samples);
 }
-
 ```
 
 ```Output
@@ -189,7 +181,7 @@ The parameter structure used to construct the distribution.
 
 ### Remarks
 
-**Precondition:** `0.0 ≤ stddev`
+**Precondition:** `0.0 < stddev`
 
 The first constructor constructs an object whose stored `mean` value holds the value *mean* and whose stored `stddev` value holds the value *stddev*.
 
@@ -224,7 +216,7 @@ The `param_type` structure used to compare.
 
 ### Remarks
 
-**Precondition:** `0.0 ≤ stddev`
+**Precondition:** `0.0 < stddev`
 
 This structure can be passed to the distribution's class constructor at instantiation, to the `param()` member function to set the stored parameters of an existing distribution, and to `operator()` to be used in place of the stored parameters.
 

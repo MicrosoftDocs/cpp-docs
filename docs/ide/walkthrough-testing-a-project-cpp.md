@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Testing a Project (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/14/2018"
-ms.technology: ["cpp-ide"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Testing a Project (C++)"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["project testing [C++]", "testing projects", "projects [C++], testing"]
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Testing a Project (C++)
 
@@ -58,7 +51,7 @@ In this walkthrough, you watch the value of a variable as the program runs and d
 **Previous:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
 **Next:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
 
-## See Also
+## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[Building C/C++ Programs](../build/building-c-cpp-programs.md)<br/>
+[Projects and build systems](../build/projects-and-build-systems-cpp.md)<br/>

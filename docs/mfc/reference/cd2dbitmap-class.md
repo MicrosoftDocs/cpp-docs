@@ -1,16 +1,9 @@
 ---
-title: "CD2DBitmap Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DBitmap Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap::CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap::Attach", "AFXRENDERTARGET/CD2DBitmap::CopyFromBitmap", "AFXRENDERTARGET/CD2DBitmap::CopyFromMemory", "AFXRENDERTARGET/CD2DBitmap::CopyFromRenderTarget", "AFXRENDERTARGET/CD2DBitmap::Create", "AFXRENDERTARGET/CD2DBitmap::Destroy", "AFXRENDERTARGET/CD2DBitmap::Detach", "AFXRENDERTARGET/CD2DBitmap::Get", "AFXRENDERTARGET/CD2DBitmap::GetDPI", "AFXRENDERTARGET/CD2DBitmap::GetPixelFormat", "AFXRENDERTARGET/CD2DBitmap::GetPixelSize", "AFXRENDERTARGET/CD2DBitmap::GetSize", "AFXRENDERTARGET/CD2DBitmap::IsValid", "AFXRENDERTARGET/CD2DBitmap::CommonInit", "AFXRENDERTARGET/CD2DBitmap::m_bAutoDestroyHBMP", "AFXRENDERTARGET/CD2DBitmap::m_hBmpSrc", "AFXRENDERTARGET/CD2DBitmap::m_lpszType", "AFXRENDERTARGET/CD2DBitmap::m_pBitmap", "AFXRENDERTARGET/CD2DBitmap::m_sizeDest", "AFXRENDERTARGET/CD2DBitmap::m_strPath", "AFXRENDERTARGET/CD2DBitmap::m_uiResID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DBitmap [MFC], CD2DBitmap", "CD2DBitmap [MFC], CD2DBitmap", "CD2DBitmap [MFC], Attach", "CD2DBitmap [MFC], CopyFromBitmap", "CD2DBitmap [MFC], CopyFromMemory", "CD2DBitmap [MFC], CopyFromRenderTarget", "CD2DBitmap [MFC], Create", "CD2DBitmap [MFC], Destroy", "CD2DBitmap [MFC], Detach", "CD2DBitmap [MFC], Get", "CD2DBitmap [MFC], GetDPI", "CD2DBitmap [MFC], GetPixelFormat", "CD2DBitmap [MFC], GetPixelSize", "CD2DBitmap [MFC], GetSize", "CD2DBitmap [MFC], IsValid", "CD2DBitmap [MFC], CommonInit", "CD2DBitmap [MFC], m_bAutoDestroyHBMP", "CD2DBitmap [MFC], m_hBmpSrc", "CD2DBitmap [MFC], m_lpszType", "CD2DBitmap [MFC], m_pBitmap", "CD2DBitmap [MFC], m_sizeDest", "CD2DBitmap [MFC], m_strPath", "CD2DBitmap [MFC], m_uiResID"]
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DBitmap Class
 
@@ -427,6 +420,6 @@ operator ID2D1Bitmap*();
 
 Pointer to an ID2D1Bitmap interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

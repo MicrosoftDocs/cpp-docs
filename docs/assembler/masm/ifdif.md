@@ -1,16 +1,9 @@
 ---
-title: "IFDIF] | Microsoft Docs"
-ms.custom: ""
+title: "IFDIF]"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["IFDIF[[I]]"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["IFDIF[[I]] directive"]
 ms.assetid: b85a553c-9098-4a57-a24f-596456eefa1c
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # IFDIF]
 

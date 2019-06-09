@@ -1,16 +1,9 @@
 ---
-title: "Interfaces, ATL Control Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Interfaces, ATL Control Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.control.interfaces"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL Control Wizard, interfaces"]
 ms.assetid: 971eadcd-6a1e-46f2-b8fe-ee6b53dfe3ea
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interfaces, ATL Control Wizard
 
@@ -34,7 +27,6 @@ This page of the wizard identifies the interfaces that the control supports. By 
    |**\<**|Removes the interface name currently selected in the **Supported** list.|
    |**\<\<**|Removes all interface names currently listed in the **Supported** list.|
 
-## See Also
+## See also
 
 [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
-

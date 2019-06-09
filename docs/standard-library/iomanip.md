@@ -1,16 +1,9 @@
 ---
-title: "&lt;iomanip&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;iomanip&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["iomanip header"]
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;iomanip&gt;
 
@@ -20,7 +13,6 @@ Include the `iostreams` standard header \<iomanip> to define several manipulator
 
 ```cpp
 #include <iomanip>
-
 ```
 
 ## Remarks

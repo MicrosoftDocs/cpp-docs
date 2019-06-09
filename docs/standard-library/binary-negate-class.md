@@ -1,20 +1,13 @@
 ---
-title: "binary_negate Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::binary_negate"]
-dev_langs: ["C++"]
+title: "binary_negate Class"
+ms.date: "02/21/2019"
+f1_keywords: ["functional/std::binary_negate"]
 helpviewer_keywords: ["binary_negate class"]
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # binary_negate Class
 
-A template class providing a member function that negates the return value of a specified binary function.
+A template class providing a member function that negates the return value of a specified binary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 
@@ -48,7 +41,7 @@ The negation of the binary function.
 
 ## Remarks
 
-The template class stores a copy of a binary function object _ *Func*. It defines its member function `operator()` as returning **!**\_ *Func(left, right).*
+The template class stores a copy of a binary function object *Func*. It defines its member function `operator()` as returning `!Func(left, right)`.
 
 The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2) is usually preferred to declare and use the **binary_negator** adaptor predicate.
 

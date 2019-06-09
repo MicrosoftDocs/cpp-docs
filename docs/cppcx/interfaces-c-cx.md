@@ -1,13 +1,7 @@
 ---
-title: "Interfaces (C++/CX) | Microsoft Docs"
-ms.custom: ""
+title: "Interfaces (C++/CX)"
 ms.date: "01/22/2017"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Interfaces (C++/CX)
 
@@ -95,7 +89,7 @@ Here's how Windows Runtime types can be used to author a generic interface:
 
 - Templated ref classes must be private. They can implement generic interfaces, and can pass template parameter *T* to generic argument *T*. Each instantiation of a templated ref class is itself a ref class.
 
-## See Also
+## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>

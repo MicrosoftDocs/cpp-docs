@@ -1,16 +1,9 @@
 ---
-title: "CD2DMesh Class | Microsoft Docs"
-ms.custom: ""
+title: "CD2DMesh Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CD2DMesh", "AFXRENDERTARGET/CD2DMesh", "AFXRENDERTARGET/CD2DMesh::CD2DMesh", "AFXRENDERTARGET/CD2DMesh::Attach", "AFXRENDERTARGET/CD2DMesh::Create", "AFXRENDERTARGET/CD2DMesh::Destroy", "AFXRENDERTARGET/CD2DMesh::Detach", "AFXRENDERTARGET/CD2DMesh::Get", "AFXRENDERTARGET/CD2DMesh::IsValid", "AFXRENDERTARGET/CD2DMesh::Open", "AFXRENDERTARGET/CD2DMesh::m_pMesh"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DMesh [MFC], CD2DMesh", "CD2DMesh [MFC], Attach", "CD2DMesh [MFC], Create", "CD2DMesh [MFC], Destroy", "CD2DMesh [MFC], Detach", "CD2DMesh [MFC], Get", "CD2DMesh [MFC], IsValid", "CD2DMesh [MFC], Open", "CD2DMesh [MFC], m_pMesh"]
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CD2DMesh Class
 
@@ -199,6 +192,6 @@ operator ID2D1Mesh*();
 
 Pointer to an ID2D1Mesh interface or NULL if object is not initialized yet.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)

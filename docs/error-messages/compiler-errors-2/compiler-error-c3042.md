@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3042 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3042"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3042"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3042"]
 ms.assetid: bf73f61e-5bd2-40a8-9b06-6244e6a15a41
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3042
 

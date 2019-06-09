@@ -1,15 +1,8 @@
 ---
-title: "Message Categories | Microsoft Docs"
-ms.custom: ""
+title: "Message Categories"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages [MFC], categories", "control-notification messages [MFC]", "Windows messages [MFC], categories", "controls [MFC], notifications", "command messages [MFC]", "messages [MFC], Windows", "message handling [MFC], message types"]
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Message Categories
 
@@ -37,7 +30,6 @@ Messages in categories 1 and 2 — Windows messages and control notifications �
 
 Messages in category 3 — commands — can be handled by a wider variety of objects: documents, document templates, and the application object itself in addition to windows and views. When a command directly affects some particular object, it makes sense to have that object handle the command. For example, the Open command on the File menu is logically associated with the application: the application opens a specified document upon receiving the command. So the handler for the Open command is a member function of the application class. For more about commands and how they are routed to objects, see [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md).
 
-## See Also
+## See also
 
 [Messages and Commands in the Framework](../mfc/messages-and-commands-in-the-framework.md)
-

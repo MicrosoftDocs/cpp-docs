@@ -1,15 +1,8 @@
 ---
-title: "ATL Functions | Microsoft Docs"
-ms.custom: ""
+title: "ATL Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["functions [ATL]", "ATL, global functions"]
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ATL Functions
 
@@ -57,7 +50,7 @@ Provide support for registering and unregistering server objects in the object m
 [WinModule Global Functions](../../atl/reference/winmodule-global-functions.md)<br/>
 Provide support for `_AtlCreateWndData` structure operations.
 
-## See Also
+## See also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)<br/>
 [Macros](../../atl/reference/atl-macros.md)<br/>

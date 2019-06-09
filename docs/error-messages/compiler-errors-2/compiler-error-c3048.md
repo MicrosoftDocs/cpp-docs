@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3048 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3048"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3048"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3048"]
 ms.assetid: 48e07091-94d9-471d-befe-7e2507631edd
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3048
 

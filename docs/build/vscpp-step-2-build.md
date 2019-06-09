@@ -1,16 +1,11 @@
 ---
-title: Build and run a C++ console app project | Microsoft Docs
+title: Build and run a C++ console app project
 description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
 ms.topic: "tutorial"
-ms.technology: ["cpp-tools"]
-ms.devlang: "C++"
-dev_langs: ["C++"]
+ms.devlang: "cpp"
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Build and run a C++ console app project
 
@@ -18,23 +13,23 @@ When you've created a C++ console app project and entered your code, you can bui
 
 ## Prerequisites
 
-- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, follow the steps in [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md).
+- Have Visual Studio with the Desktop development with C++ workload installed and running on your computer. If it's not installed yet, follow the steps in [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
-- Create a "Hello, World!" project and enter its source code. If you haven't done this yet, follow the steps in [Create a C++ console app project](../build/vscpp-step-1-create.md).
+- Create a "Hello, World!" project and enter its source code. If you haven't done this yet, follow the steps in [Create a C++ console app project](vscpp-step-1-create.md).
 
 If Visual Studio looks like this, you're ready to build and run your app:
 
-   ![Ready to build the new project](../build/media/vscpp-ready-to-build.png "Ready to build the new project")
+   ![Ready to build the new project](media/vscpp-ready-to-build.png "Ready to build the new project")
 
 ## Build and run your code in Visual Studio
 
 1. To build your project, choose **Build Solution** from the **Build** menu. The **Output** window shows the results of the build process.
 
-   ![Build the project](../build/media/vscpp-build-solution.gif "Build the project")
+   ![Build the project](media/vscpp-build-solution.gif "Build the project")
 
 1. To run the code, on the menu bar, choose **Debug**, **Start without debugging**.
 
-   ![Start the project](../build/media/vscpp-start-without-debugging.gif "Start the project")
+   ![Start the project](media/vscpp-start-without-debugging.gif "Start the project")
 
    A console window opens and then runs your app. When you start a console app in Visual Studio, it runs your code, then prints "Press any key to continue . . ." to give you a chance to see the output.
 
@@ -54,7 +49,7 @@ Normally, you run console apps at the command prompt, not in Visual Studio. Once
 
 1. In the command prompt window, right-click to paste the path to your app into the command prompt. Press Enter to run your app.
 
-   ![Run the app at the command prompt](../build/media/vscpp-run-in-cmd.gif "Run the app at the command prompt")
+   ![Run the app at the command prompt](media/vscpp-run-in-cmd.gif "Run the app at the command prompt")
 
 Congratulations, you've built and run a console app in Visual Studio!
 

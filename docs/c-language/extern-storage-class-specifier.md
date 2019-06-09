@@ -1,15 +1,8 @@
 ---
-title: "extern Storage-Class Specifier | Microsoft Docs"
-ms.custom: ""
+title: "extern Storage-Class Specifier"
 ms.date: "07/10/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["extern keyword [C]", "storage class specifiers, extern", "extern keyword [C], storage class specifier", "external linkage, storage-class specifiers", "external linkage, extern modifier"]
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # extern Storage-Class Specifier
 
@@ -59,6 +52,6 @@ In this example, the variable `i` is defined in Source1.c with an initial value 
 
 In the `func` function, the address of the global variable `i` is used to initialize the **static** pointer variable `external_i`. This works because the global variable has **static** lifetime, meaning its address does not change during program execution. Next, a variable `i` is defined within the scope of `func` as a local variable with initial value 16. This definition does not affect the value of the external-level `i`, which is hidden by the use of its name for the local variable. The value of the global `i` is now accessible only through the pointer `external_i`.
 
-## See Also
+## See also
 
 [Storage-Class Specifiers for Internal-Level Declarations](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

@@ -1,16 +1,9 @@
 ---
-title: "Document Classes | Microsoft Docs"
-ms.custom: ""
+title: "Document Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.classes.document"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["document classes [MFC]"]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document Classes
 
@@ -48,7 +41,6 @@ Documents can also contain OLE objects. `CDocItem` is the base class of the serv
 [CDocItem](../mfc/reference/cdocitem-class.md)<br/>
 Abstract base class of [COleClientItem](../mfc/reference/coleclientitem-class.md) and [COleServerItem](../mfc/reference/coleserveritem-class.md). Objects of classes derived from `CDocItem` represent parts of documents.
 
-## See Also
+## See also
 
 [Class Overview](../mfc/class-library-overview.md)
-

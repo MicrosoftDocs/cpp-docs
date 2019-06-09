@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2065 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2065"
 ms.date: "09/01/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2065"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2065"]
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2065
 
@@ -204,7 +197,7 @@ int main() {
 
 ## Example: C++/CLI type deduction failure
 
-This error can occur when calling a generic function, if the intended type argument cannot be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../windows/generic-functions-cpp-cli.md).
+This error can occur when calling a generic function, if the intended type argument cannot be deduced from the parameters used. For more information, see [Generic Functions (C++/CLI)](../../extensions/generic-functions-cpp-cli.md).
 
 ```cpp
 // C2065_b.cpp
@@ -221,7 +214,7 @@ int main() {
 
 ## Example: C++/CLI attribute parameters
 
-This error can also be generated as a result of compiler conformance work that was done for Visual C++ 2005: parameter checking for Visual C++ attributes.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: parameter checking for Visual C++ attributes.
 
 ```cpp
 // C2065_attributes.cpp

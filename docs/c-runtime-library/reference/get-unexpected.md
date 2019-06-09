@@ -1,19 +1,12 @@
 ---
-title: "_get_unexpected | Microsoft Docs"
-ms.custom: ""
+title: "_get_unexpected"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_get_unexpected"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__get_unexpected", "_get_unexpected", "get_unexpected"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__get_unexpected function", "get_unexpected function", "_get_unexpected function"]
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _get_unexpected
 

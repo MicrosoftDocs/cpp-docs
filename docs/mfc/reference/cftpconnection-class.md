@@ -1,16 +1,9 @@
 ---
-title: "CFtpConnection Class | Microsoft Docs"
-ms.custom: ""
+title: "CFtpConnection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CFtpConnection", "AFXINET/CFtpConnection", "AFXINET/CFtpConnection::CFtpConnection", "AFXINET/CFtpConnection::Command", "AFXINET/CFtpConnection::CreateDirectory", "AFXINET/CFtpConnection::GetCurrentDirectory", "AFXINET/CFtpConnection::GetCurrentDirectoryAsURL", "AFXINET/CFtpConnection::GetFile", "AFXINET/CFtpConnection::OpenFile", "AFXINET/CFtpConnection::PutFile", "AFXINET/CFtpConnection::Remove", "AFXINET/CFtpConnection::RemoveDirectory", "AFXINET/CFtpConnection::Rename", "AFXINET/CFtpConnection::SetCurrentDirectory"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CFtpConnection [MFC], CFtpConnection", "CFtpConnection [MFC], Command", "CFtpConnection [MFC], CreateDirectory", "CFtpConnection [MFC], GetCurrentDirectory", "CFtpConnection [MFC], GetCurrentDirectoryAsURL", "CFtpConnection [MFC], GetFile", "CFtpConnection [MFC], OpenFile", "CFtpConnection [MFC], PutFile", "CFtpConnection [MFC], Remove", "CFtpConnection [MFC], RemoveDirectory", "CFtpConnection [MFC], Rename", "CFtpConnection [MFC], SetCurrentDirectory"]
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CFtpConnection Class
 
@@ -510,7 +503,7 @@ The *pstrDirName* parameter can be either a partially or fully qualified filenam
 
 Use [GetCurrentDirectory](#getcurrentdirectory) to determine an FTP server's current working directory. Do not assume that the remote system has connected you to the root directory.
 
-## See Also
+## See also
 
 [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

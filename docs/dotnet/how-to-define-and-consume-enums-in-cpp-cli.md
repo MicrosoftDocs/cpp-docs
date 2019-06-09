@@ -1,15 +1,8 @@
 ---
-title: "How to: Define and consume enums in C++/CLI | Microsoft Docs"
-ms.custom: ""
+title: "How to: Define and consume enums in C++/CLI"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["enum class, specifying underlying types"]
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Define and consume enums in C++/CLI
 
@@ -92,7 +85,7 @@ Operators &#124; ^ & ~ ++ -- are defined only for enumerations with integral und
 The compiler does no static or dynamic checking of the result of an enum operation; an operation may result in a value not in the range of the enum's valid enumerators.
 
 > [!NOTE]
->  C++11 introduces enum class types in unmanaged code which are significantly different than managed enum classes in C++/CLI. In particular, the C++11 enum class type does not support the same operators as the managed enum class type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) enum class declarations. For more information about enum classes in C++/CLI, C++/CX, and C++11, see [enum class](../windows/enum-class-cpp-component-extensions.md).
+>  C++11 introduces enum class types in unmanaged code which are significantly different than managed enum classes in C++/CLI. In particular, the C++11 enum class type does not support the same operators as the managed enum class type in C++/CLI, and C++/CLI source code must provide an accessibility specifier in managed enum class declarations in order to distinguish them from unmanaged (C++11) enum class declarations. For more information about enum classes in C++/CLI, C++/CX, and C++11, see [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ```
 // mcppv2_enum_5.cpp
@@ -135,6 +128,6 @@ int main() {
 True
 ```
 
-## See Also
+## See also
 
-[enum class](../windows/enum-class-cpp-component-extensions.md)
+[enum class](../extensions/enum-class-cpp-component-extensions.md)

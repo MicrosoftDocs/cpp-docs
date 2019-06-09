@@ -1,16 +1,9 @@
 ---
-title: "_com_error::ErrorMessage | Microsoft Docs"
-ms.custom: ""
+title: "_com_error::ErrorMessage"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["_com_error::ErrorMessage"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ErrorMessage method [C++]"]
 ms.assetid: e47335b6-01af-4975-a841-121597479eb7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _com_error::ErrorMessage
 

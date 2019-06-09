@@ -1,15 +1,8 @@
 ---
-title: "Text and Binary Streams | Microsoft Docs"
-ms.custom: ""
+title: "Text and Binary Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["binary streams", "text streams"]
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Text and Binary Streams
 
@@ -35,6 +28,6 @@ Thus, positioning within a binary stream is well defined, except for positioning
 
 A byte stream treats a file as a sequence of bytes. Within the program, the stream looks like the same sequence of bytes, except for the possible alterations described above.
 
-## See Also
+## See also
 
 [Files and Streams](../c-runtime-library/files-and-streams.md)

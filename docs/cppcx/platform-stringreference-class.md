@@ -1,15 +1,9 @@
 ---
-title: "Platform::StringReference Class | Microsoft Docs"
-ms.custom: ""
+title: "Platform::StringReference Class"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::StringReference::StringReference", "VCCORLIB/Platform::StringReference::Data", "VCCORLIB/Platform::StringReference::Length", "VCCORLIB/Platform::StringReference::GetHSTRING", "VCCORLIB/Platform::StringReference::GetString"]
-dev_langs: ["C++"]
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Platform::StringReference Class
 
@@ -188,6 +182,6 @@ The number of elements in `__strArg`.
 
 The first version of this constructor is the default constructor. The second version initializes a new `StringReference` instance class from the object that's specified by the `__fstrArg` parameter. The third and fourth overloads initialize a new `StringReference` instance from an array of char16 values. char16 represents a 16-bit UNICODE text character.
 
-## See Also
+## See also
 
 [Platform::StringReference Class](../cppcx/platform-stringreference-class.md)

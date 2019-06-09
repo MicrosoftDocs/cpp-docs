@@ -1,16 +1,9 @@
 ---
-title: "-WL (Enable One-Line Diagnostics) | Microsoft Docs"
-ms.custom: ""
+title: "/WL (Enable One-Line Diagnostics)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/wl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-WL compiler option [C++]", "/WL compiler option [C++]", "WL compiler option [C++]"]
 ms.assetid: 332cadb4-8ea6-45fe-b67d-33ddec1f2c2e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /WL (Enable One-Line Diagnostics)
 
@@ -40,7 +33,7 @@ int main() {
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -52,7 +45,7 @@ int main() {
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

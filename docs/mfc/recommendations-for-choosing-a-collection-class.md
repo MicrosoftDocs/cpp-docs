@@ -1,15 +1,8 @@
 ---
-title: "Recommendations for Choosing a Collection Class | Microsoft Docs"
-ms.custom: ""
+title: "Recommendations for Choosing a Collection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["type safety of collection classes [MFC]", "collection classes [MFC], serialization", "collection classes [MFC], speed", "collection classes [MFC], type safety", "collection classes [MFC], choosing", "collection classes [MFC], functionality", "shapes, collection", "collection classes [MFC], template-based", "MFC collection classes [MFC], characteristics", "collection classes [MFC], about collection classes [MFC]", "serialization [MFC], collection classes", "collection classes [MFC], duplicates allowed", "collection classes [MFC], shapes"]
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Recommendations for Choosing a Collection Class
 
@@ -79,10 +72,9 @@ The following table, [Characteristics of MFC Collection Classes](#_core_characte
 
 3. If marked Yes in this column, a nontemplate collection class is type-safe provided you use it as intended. For example, if you store bytes in a `CByteArray`, the array is type-safe. But if you use it to store characters, its type safety is less certain.
 
-## See Also
+## See also
 
 [Collections](../mfc/collections.md)<br/>
 [Template-Based Classes](../mfc/template-based-classes.md)<br/>
 [How to: Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md)<br/>
 [Accessing All Members of a Collection](../mfc/accessing-all-members-of-a-collection.md)
-

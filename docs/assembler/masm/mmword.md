@@ -1,16 +1,9 @@
 ---
-title: "MMWORD | Microsoft Docs"
-ms.custom: ""
+title: "MMWORD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["MMWORD"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MMWORD directive"]
 ms.assetid: b4c5a104-9078-4fb4-afc3-d1e63abe562a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # MMWORD
 
@@ -35,5 +28,5 @@ While both instructions work on 64-bit operands, `QWORD` is the type for 64-bit 
 ## Example
 
 ```asm
-    movq     mm0, mmword ptr [ebx]
+    movq     mm0, mmword ptr [ebx]
 ```

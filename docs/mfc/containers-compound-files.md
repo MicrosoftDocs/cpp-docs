@@ -1,15 +1,8 @@
 ---
-title: "Containers: Compound Files | Microsoft Docs"
-ms.custom: ""
+title: "Containers: Compound Files"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["compound files [MFC]", "compound documents", "containers [MFC], compound files", "OLE documents [MFC], compound files", "performance [MFC], compound files", "files [MFC], compound", "standardized file structure compound files", "documents [MFC], compound", "documents [MFC], OLE", "OLE containers [MFC], compound files", "access modes for files [MFC]"]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Containers: Compound Files
 
@@ -72,7 +65,7 @@ After successfully creating an application that has a document class derived fro
 
 In the *OLE Programmer's Reference*, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), and [ILockBytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).
 
-## See Also
+## See also
 
 [Containers](../mfc/containers.md)<br/>
 [Containers: User-Interface Issues](../mfc/containers-user-interface-issues.md)<br/>

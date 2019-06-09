@@ -1,16 +1,9 @@
 ---
-title: "COlePropertiesDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "COlePropertiesDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::DoModal", "AFXODLGS/COlePropertiesDialog::OnApplyScale", "AFXODLGS/COlePropertiesDialog::m_gp", "AFXODLGS/COlePropertiesDialog::m_lp", "AFXODLGS/COlePropertiesDialog::m_op", "AFXODLGS/COlePropertiesDialog::m_psh", "AFXODLGS/COlePropertiesDialog::m_vp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COlePropertiesDialog [MFC], COlePropertiesDialog", "COlePropertiesDialog [MFC], DoModal", "COlePropertiesDialog [MFC], OnApplyScale", "COlePropertiesDialog [MFC], m_gp", "COlePropertiesDialog [MFC], m_lp", "COlePropertiesDialog [MFC], m_op", "COlePropertiesDialog [MFC], m_psh", "COlePropertiesDialog [MFC], m_vp"]
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COlePropertiesDialog Class
 
@@ -242,9 +235,9 @@ The default implementation does nothing. You must override this function to enab
 > [!NOTE]
 >  Before the common OLE Object Properties dialog box is displayed, the framework calls this function with a NULL for *pItem* and a - 1 for *nCurrentScale*. This is done to determine if the scaling controls should be enabled.
 
-## See Also
+## See also
 
-[MFC Sample CIRC](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC](../../overview/visual-cpp-samples.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDialog Class](../../mfc/reference/coledialog-class.md)<br/>

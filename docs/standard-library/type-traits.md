@@ -1,20 +1,13 @@
 ---
-title: "&lt;type_traits&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "&lt;type_traits&gt;"
+ms.date: "02/21/2019"
 f1_keywords: ["<type_traits>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["typetrait header", "type_traits"]
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;type_traits&gt;
 
-Defines templates that provide compile-time constants that give information about the properties of their type arguments or produce transformed types.
+Defines templates for compile-time constants that give information about the properties of their type arguments, or produce transformed types.
 
 ## Syntax
 
@@ -24,29 +17,33 @@ Defines templates that provide compile-time constants that give information abou
 
 ## Remarks
 
-The classes and templates in \<type_traits> are used to support type inference, classification, and transformation at compile time, to detect type-related errors, and to help you optimize your generic code. These classes and templates include unary type traits that describe a property of a type, binary type traits that describe a relationship between types, and transformation traits that modify a property of a type.
+The classes and templates in \<type_traits> are used to support type inference, classification, and transformation at compile time. They are also used to detect type-related errors, and to help you optimize your generic code. Unary type traits describe a property of a type, binary type traits describe a relationship between types, and transformation traits modify a property of a type.
 
-To support type traits, a helper class, `integral_constant`, is defined. It has template specializations `true_type` and `false_type` that form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it is publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type). When a type predicate *holds false*, it is publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type).
+The helper class `integral_constant` and its template specializations `true_type` and `false_type` form the base classes for type predicates. A *type predicate* is a template that takes one or more type arguments. When a type predicate *holds true*, it's publicly derived, directly or indirectly, from [true_type](../standard-library/type-traits-typedefs.md#true_type). When a type predicate *holds false*, it's publicly derived, directly or indirectly, from [false_type](../standard-library/type-traits-typedefs.md#false_type).
 
 A *type modifier* or *transformation trait* is a template that takes one or more template arguments and has one member, `type`, which is a synonym for the modified type.
 
 ### Alias Templates
 
-To simplify type traits expressions, [alias templates](../cpp/aliases-and-typedefs-cpp.md) for `typename some_trait<T>::type` are provided, where " `some_trait`" is the template class name. For example, [add_const](../standard-library/add-const-class.md) has an alias template for its type, `add_const_t`, defined as:
+To simplify type traits expressions, [alias templates](../cpp/aliases-and-typedefs-cpp.md) for `typename some_trait<T>::type` are provided, where *some_trait* is the template class name. For example, [add_const](../standard-library/add-const-class.md) has an alias template for its type, `add_const_t`, defined as:
 
 ```cpp
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-|||||
-|-|-|-|-|
-|add_const_t|aligned_storage_t|make_signed_t|remove_pointer_t|
-|add_cv_t|aligned_union_t|make_unsigned_t|remove_reference_t|
-|add_lvalue_reference_t|common_type_t|remove_all_extents_t|remove_volatile_t|
-|add_pointer_t|conditional_t|remove_const_t|result_of_t|
-|add_rvalue_reference_t|decay_t|remove_cv_t|underlying_type_t|
-|add_volatile_t|enable_if_t|remove_extent_t||
+These are the provided aliases for the `type` members:
+
+||||
+|-|-|-|
+| add_const_t | add_cv_t | add_lvalue_reference_t |
+| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
+| aligned_storage_t | aligned_union_t | common_type_t |
+| conditional_t | decay_t | enable_if_t |
+| invoke_result_t | make_signed_t | make_unsigned_t |
+| remove_all_extents_t | remove_const_t | remove_cv_t |
+| remove_extent_t | remove_pointer_t | remove_reference_t |
+| remove_volatile_t | result_of_t | underlying_type_t |
 
 ### Classes
 
@@ -131,6 +128,10 @@ Type properties
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|Tests whether the type is move assignable and the assignment is known not to throw.|
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|Tests whether the type is destructible and the destructor is known not to throw.|
 |`has_virtual_destructor`|Tests whether the type has a virtual destructor.|
+| [is_invocable](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types.<br/> Added in C++17. |
+| [is_invocable_r](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types and the result is convertible to the specified type.<br/> Added in C++17. |
+| [is_nothrow_invocable](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types and is known not to throw exceptions.<br/> Added in C++17. |
+| [is_nothrow_invocable_r](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types and is known not to throw exceptions, and the result is convertible to the specified type.<br/> Added in C++17. |
 
 Type property queries
 
@@ -198,7 +199,8 @@ Other transformations
 |[conditional](../standard-library/conditional-class.md)|If the condition is true, produces the first specified type, otherwise the second specified type.|
 |[decay](../standard-library/decay-class.md)|Produces the type as passed by value. Makes non-reference, non-const, or non-volatile type, or makes a pointer to type.|
 |[enable_if](../standard-library/enable-if-class.md)|If the condition is true, produces the specified type, otherwise no type.|
-|[result_of](../standard-library/result-of-class.md)|Determines the return type of the callable type that takes the specified argument types.|
+|[invoke_result](invoke-result-class.md)|Determines the return type of the callable type that takes the specified argument types. <br/>Added in C++17. |
+|[result_of](../standard-library/result-of-class.md)|Determines the return type of the callable type that takes the specified argument types. <br/>Added in C++14, deprecated in C++17. |
 |[underlying_type](../standard-library/underlying-type-class.md)|Produces the underlying integral type for an enumeration type.|
 
 ## See also

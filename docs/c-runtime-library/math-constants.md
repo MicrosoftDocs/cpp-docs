@@ -1,16 +1,9 @@
 ---
-title: "Math Constants | Microsoft Docs"
-ms.custom: ""
+title: "Math Constants"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.constants"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["M_PI constant", "M_PI_2 constant", "math constants", "M_2_PI constant", "M_1_PI constant", "M_E constant", "USE_MATH_DEFINES constant", "M_LOG2E constant", "M_LOG10E constant", "M_LN10 constant", "M_SQRT1_2 constant", "_USE_MATH_DEFINES constant", "M_PI_4 constant", "constants, math", "M_2_SQRTPI constant", "M_SQRT2 constant", "M_LN2 constant"]
 ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Math Constants
 
@@ -48,6 +41,6 @@ Math Constants are not defined in Standard C/C++. To use them, you must first de
 
 The file ATLComTime.h includes math.h when your project is built in Release mode. If you use one or more of the math constants in a project that also includes ATLComTime.h, you must define `_USE_MATH_DEFINES` before you include ATLComTime.h.
 
-## See Also
+## See also
 
 [Global Constants](../c-runtime-library/global-constants.md)

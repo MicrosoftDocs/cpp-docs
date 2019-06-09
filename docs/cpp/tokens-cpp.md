@@ -1,15 +1,8 @@
 ---
-title: "Tokens (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Tokens (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tokens [C++]", "parsing, C++ tokens", "translation units", "white space, in C++ tokens"]
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tokens (C++)
 

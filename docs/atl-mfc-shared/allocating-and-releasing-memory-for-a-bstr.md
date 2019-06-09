@@ -1,16 +1,9 @@
 ---
-title: "Allocating and Releasing Memory for a BSTR | Microsoft Docs"
-ms.custom: ""
+title: "Allocating and Releasing Memory for a BSTR"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["bstr"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["BSTRs, memory allocation", "memory deallocation, string memory", "memory [C++], releasing", "memory allocation, BSTRs", "memory deallocation, BSTR memory", "strings [C++], releasing"]
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Allocating and Releasing Memory for a BSTR
 
@@ -34,10 +27,9 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 
    [!code-cpp[NVC_ATLMFC_Utilities#196](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_5.cpp)]
 
-## See Also
+## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
 [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
-[SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
-[SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
-
+[SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)<br/>
+[SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)

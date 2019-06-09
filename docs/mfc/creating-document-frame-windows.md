@@ -1,15 +1,8 @@
 ---
-title: "Creating Document Frame Windows | Microsoft Docs"
-ms.custom: ""
+title: "Creating Document Frame Windows"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["frame windows [MFC], creating", "document templates [MFC], and document frame windows", "windows [MFC], creating", "runtime, class information", "run-time class [MFC], and document frame window creation", "document frame windows [MFC], creating", "MFC, frame windows"]
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating Document Frame Windows
 
@@ -29,7 +22,6 @@ Use caution in deciding [when to initialize](../mfc/when-to-initialize-cwnd-obje
 
 - [Destroying frame windows](../mfc/destroying-frame-windows.md)
 
-## See Also
+## See also
 
 [Using Frame Windows](../mfc/using-frame-windows.md)
-

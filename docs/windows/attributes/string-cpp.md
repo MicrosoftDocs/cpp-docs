@@ -1,16 +1,9 @@
 ---
-title: "string  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "string  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.string"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["string attribute"]
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # string (C++)
 
@@ -56,7 +49,7 @@ __interface IFireTabCtrl
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Array Attributes](array-attributes.md)<br/>

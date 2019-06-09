@@ -1,16 +1,9 @@
 ---
-title: "CPaintDC Class | Microsoft Docs"
-ms.custom: ""
+title: "CPaintDC Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPaintDC", "AFXWIN/CPaintDC", "AFXWIN/CPaintDC::CPaintDC", "AFXWIN/CPaintDC::m_ps", "AFXWIN/CPaintDC::m_hWnd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPaintDC [MFC], CPaintDC", "CPaintDC [MFC], m_ps", "CPaintDC [MFC], m_hWnd"]
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPaintDC Class
 
@@ -34,7 +27,7 @@ class CPaintDC : public CDC
 
 |Name|Description|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) used to paint the client area.|
+|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) used to paint the client area.|
 
 ### Protected Data Members
 
@@ -64,7 +57,7 @@ For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device
 
 ##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
 
-Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) structure in the [m_ps](#m_ps) member variable.
+Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure in the [m_ps](#m_ps) member variable.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -101,7 +94,7 @@ HWND m_hWnd;
 
 ##  <a name="m_ps"></a>  CPaintDC::m_ps
 
-`m_ps` is a public member variable of type [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md).
+`m_ps` is a public member variable of type [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct).
 
 ```
 PAINTSTRUCT m_ps;
@@ -119,9 +112,8 @@ Note that you can access the device-context handle through the `PAINTSTRUCT`. Ho
 
   See the example for [CPaintDC::m_hWnd](#m_hwnd).
 
-## See Also
+## See also
 
-[MFC Sample MDI](../../visual-cpp-samples.md)<br/>
+[MFC Sample MDI](../../overview/visual-cpp-samples.md)<br/>
 [CDC Class](../../mfc/reference/cdc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

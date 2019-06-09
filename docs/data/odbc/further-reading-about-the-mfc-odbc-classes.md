@@ -1,15 +1,8 @@
 ---
-title: "Further Reading About the MFC ODBC Classes | Microsoft Docs"
-ms.custom: ""
+title: "Further Reading About the MFC ODBC Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ODBC classes"]
 ms.assetid: 155c092b-3577-4cb8-b00e-f1adf4cb2adc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Further Reading About the MFC ODBC Classes
 
@@ -51,7 +44,7 @@ A good place to start your reading is with [Recordset (ODBC)](../../data/odbc/re
 
 In the *MFC Reference*, see [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), and [CDBException](../../mfc/reference/cdbexception-class.md).
 
-## See Also
+## See also
 
 [ODBC and MFC](../../data/odbc/odbc-and-mfc.md)<br/>
 [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

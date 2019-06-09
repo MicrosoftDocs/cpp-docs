@@ -1,15 +1,8 @@
 ---
-title: "Servers | Microsoft Docs"
-ms.custom: ""
+title: "Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["OLE server applications [MFC]", "OLE server applications [MFC], activation", "full-server", "servers", "mini-server", "OLE server applications [MFC], server types", "server applications [MFC]"]
 ms.assetid: e45172e8-eae3-400a-8139-0fa009a42fdc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Servers
 
@@ -47,7 +40,7 @@ For more details on servers, see:
 
 - [Servers: User-Interface Issues](../mfc/servers-user-interface-issues.md)
 
-## See Also
+## See also
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Containers](../mfc/containers.md)<br/>
@@ -55,4 +48,3 @@ For more details on servers, see:
 [Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [Registration](../mfc/registration.md)<br/>
 [Automation Servers](../mfc/automation-servers.md)
-

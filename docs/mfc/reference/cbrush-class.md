@@ -1,16 +1,9 @@
 ---
-title: "CBrush Class | Microsoft Docs"
-ms.custom: ""
+title: "CBrush Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CBrush", "AFXWIN/CBrush", "AFXWIN/CBrush::CBrush", "AFXWIN/CBrush::CreateBrushIndirect", "AFXWIN/CBrush::CreateDIBPatternBrush", "AFXWIN/CBrush::CreateHatchBrush", "AFXWIN/CBrush::CreatePatternBrush", "AFXWIN/CBrush::CreateSolidBrush", "AFXWIN/CBrush::CreateSysColorBrush", "AFXWIN/CBrush::FromHandle", "AFXWIN/CBrush::GetLogBrush"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CBrush [MFC], CBrush", "CBrush [MFC], CreateBrushIndirect", "CBrush [MFC], CreateDIBPatternBrush", "CBrush [MFC], CreateHatchBrush", "CBrush [MFC], CreatePatternBrush", "CBrush [MFC], CreateSolidBrush", "CBrush [MFC], CreateSysColorBrush", "CBrush [MFC], FromHandle", "CBrush [MFC], GetLogBrush"]
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CBrush Class
 
@@ -166,7 +159,7 @@ BOOL CreateDIBPatternBrush(
 Identifies a global-memory object containing a packed device-independent bitmap (DIB).
 
 *nUsage*<br/>
-Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
+Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
 
 - DIB_PAL_COLORS The color table consists of an array of 16-bit indexes.
 
@@ -414,9 +407,9 @@ For more information about using graphic objects, see [Graphic Objects](/windows
 
 [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]
 
-## See Also
+## See also
 
-[MFC Sample PROPDLG](../../visual-cpp-samples.md)<br/>
+[MFC Sample PROPDLG](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CBitmap Class](../../mfc/reference/cbitmap-class.md)<br/>

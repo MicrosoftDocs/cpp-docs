@@ -1,15 +1,8 @@
 ---
-title: "MFC ActiveX Controls: Adding Custom Events | Microsoft Docs"
-ms.custom: ""
+title: "MFC ActiveX Controls: Adding Custom Events"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], events [MFC]", "EVENT_CUSTOM prefix [MFC]", "custom events [MFC], adding to ActiveX controls", "EVENT_CUSTOM macro [MFC]", "InCircle method [MFC]", "ClickIn event", "FireClickIn event", "COleControl class [MFC], custom events [MFC]", "Click event, custom events [MFC]", "events [MFC], ActiveX controls", "custom events [MFC]", "FireEvent method, adding custom events"]
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Adding Custom Events
 
@@ -81,7 +74,7 @@ Now that you have added the ClickIn custom event using the Add Event Wizard, you
 
 1. Double-click the new handler function in Class View to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.
 
-The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the WM_LBUTTONDOWN handler function, `OnLButtonDown`, in the [Circ sample](../visual-cpp-samples.md) abstract.
+The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the WM_LBUTTONDOWN handler function, `OnLButtonDown`, in the [Circ sample](../overview/visual-cpp-samples.md) abstract.
 
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 
@@ -120,7 +113,7 @@ The following procedure adds a custom Click event.
 
 1. Call `FireClick` at appropriate places in your code.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md)<br/>

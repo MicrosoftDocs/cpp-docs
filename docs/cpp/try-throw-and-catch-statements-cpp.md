@@ -1,16 +1,9 @@
 ---
-title: "try, throw, and catch Statements (C++) | Microsoft Docs"
-ms.custom: ""
+title: "try, throw, and catch Statements (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["catch_cpp", "try_cpp", "throw_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["catch keyword [C++]", "keywords [C++], exception handling", "C++ exception handling, statement syntax", "try-catch keyword [C++], about try-catch exception handling", "throw keyword [C++]", "try-catch keyword [C++]", "try-catch keyword [C++], exception handling", "throwing exceptions [C++], throw keyword", "try-catch keyword [C++], throw keyword [C++]s", "throwing exceptions [C++], implementing C++ exception handling", "throwing exceptions [C++]", "throw keyword [C++], throw() vs. throw(...)"]
 ms.assetid: 15e6a87b-b8a5-4032-a7ef-946c644ba12a
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # try, throw, and catch Statements (C++)
 
@@ -27,34 +20,34 @@ This example shows a **try** block and its handlers. Assume that `GetNetworkReso
 ## Example
 
 ```cpp
-MyData md;
-try {
-   // Code that could throw an exception
-   md = GetNetworkResource();
+MyData md;
+try {
+   // Code that could throw an exception
+   md = GetNetworkResource();
 }
-catch (const networkIOException& e) {
-   // Code that executes when an exception of type
-   // networkIOException is thrown in the try block
-   // ...
-   // Log error message in the exception object
-   cerr << e.what();
+catch (const networkIOException& e) {
+   // Code that executes when an exception of type
+   // networkIOException is thrown in the try block
+   // ...
+   // Log error message in the exception object
+   cerr << e.what();
 }
-catch (const myDataFormatException& e) {
-   // Code that handles another exception type
-   // ...
-   cerr << e.what();
+catch (const myDataFormatException& e) {
+   // Code that handles another exception type
+   // ...
+   cerr << e.what();
 }
 
 // The following syntax shows a throw expression
-MyData GetNetworkResource()
+MyData GetNetworkResource()
 {
-   // ...
-   if (IOSuccess == false)
-      throw networkIOException("Unable to connect");
-   // ...
-   if (readError)
-      throw myDataFormatException("Format error");
-   // ...
+   // ...
+   if (IOSuccess == false)
+      throw networkIOException("Unable to connect");
+   // ...
+   if (readError)
+      throw myDataFormatException("Format error");
+   // ...
 }
 ```
 
@@ -66,14 +59,14 @@ A **throw** expression that has no operand re-throws the exception currently bei
 
 ```cpp
 try {
-   throw CSomeOtherException();
+   throw CSomeOtherException();
 }
 catch(...) {
-   // Catch all exceptions - dangerous!!!
-   // Respond (perhaps only partially) to the exception, then
-   // re-throw to pass the exception to some other handler
-   // ...
-   throw;
+   // Catch all exceptions - dangerous!!!
+   // Respond (perhaps only partially) to the exception, then
+   // re-throw to pass the exception to some other handler
+   // ...
+   throw;
 }
 ```
 

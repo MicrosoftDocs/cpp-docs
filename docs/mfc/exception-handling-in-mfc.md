@@ -1,15 +1,8 @@
 ---
-title: "Exception Handling in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Exception Handling in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DAO [MFC], exceptions", "assertions [MFC], When to use exceptions", "exception handling [MFC], MFC", "resource allocation exception", "resources [MFC], allocating", "keywords [MFC], exception handling", "errors [MFC], detected by assertions", "ODBC exceptions [MFC]", "serialization [MFC], exceptions", "Automation [MFC], exceptions", "exception macros [MFC]", "predefined exceptions [MFC]", "C++ exception handling [MFC], enabling", "C++ exception handling [MFC], MFC applications", "requests for unsupported services [MFC]", "database exceptions [MFC]", "archive exceptions [MFC]", "MFC, exceptions", "C++ exception handling [MFC], types of", "macros [MFC], exception handling", "abnormal program execution [MFC]", "OLE exceptions [MFC], MFC exception handling", "error handling [MFC], exceptions and", "class libraries [MFC], exception support", "exceptions [MFC], MFC macros vs. C++ keywords", "memory [MFC], out-of-memory exceptions", "Windows [MFC], resource allocation exceptions", "macros [MFC], MFC exception macros", "function calls [MFC], results", "out-of-memory exceptions [MFC]"]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Exception Handling in MFC
 
@@ -26,7 +19,7 @@ You can readily convert existing code to use C++ exceptions instead of the MFC e
 If you have already developed an application using the MFC exception macros, you can continue using these macros in your existing code, while using C++ exceptions in your new code. The article [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) gives guidelines for doing so.
 
 > [!NOTE]
->  To enable C++ exception handling in your code, select Enable C++ Exceptions on the Code Generation page in the C/C++ folder of the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, or use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option.
+>  To enable C++ exception handling in your code, select Enable C++ Exceptions on the Code Generation page in the C/C++ folder of the project's [Property Pages](../build/reference/property-pages-visual-cpp.md) dialog box, or use the [/EHsc](../build/reference/eh-exception-handling-model.md) compiler option.
 
 This article covers the following topics:
 
@@ -74,7 +67,7 @@ The following table shows the predefined exceptions provided by MFC.
 |[CUserException Class](../mfc/reference/cuserexception-class.md)|Exception that alerts the user with a message box, then throws a generic [CException Class](../mfc/reference/cexception-class.md)|
 
 > [!NOTE]
->  MFC supports both C++ exceptions and the MFC exception macros. MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](https://msdn.microsoft.com/library/windows/desktop/ms680657).
+>  MFC supports both C++ exceptions and the MFC exception macros. MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/desktop/debug/structured-exception-handling).
 
 ##  <a name="_core_further_reading_about_exceptions"></a> Further Reading About Exceptions
 
@@ -100,8 +93,7 @@ The following articles compare the MFC exception macros with the C++ exception k
 
 - [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
-## See Also
+## See also
 
 [C++ Exception Handling](../cpp/cpp-exception-handling.md)<br/>
 [How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
-

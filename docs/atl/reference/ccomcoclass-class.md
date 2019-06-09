@@ -1,16 +1,9 @@
 ---
-title: "CComCoClass Class | Microsoft Docs"
-ms.custom: ""
+title: "CComCoClass Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComCoClass", "ATLCOM/ATL::CComCoClass", "ATLCOM/ATL::CComCoClass::CreateInstance", "ATLCOM/ATL::CComCoClass::Error", "ATLCOM/ATL::CComCoClass::GetObjectCLSID", "ATLCOM/ATL::CComCoClass::GetObjectDescription"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComCoClass class", "aggregation [C++], aggregation models"]
 ms.assetid: 67cfefa4-8df9-47fa-ad58-2d1a1ae25762
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComCoClass Class
 
@@ -214,6 +207,6 @@ The default implementation returns NULL. You can override this method with the [
 
 For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

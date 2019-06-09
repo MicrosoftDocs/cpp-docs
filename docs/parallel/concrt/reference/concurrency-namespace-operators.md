@@ -1,14 +1,8 @@
 ---
-title: "concurrency namespace Operators | Microsoft Docs"
-ms.custom: ""
+title: "concurrency namespace Operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
-dev_langs: ["C++"]
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # concurrency namespace Operators
 
@@ -16,7 +10,7 @@ ms.workload: ["cplusplus"]
 |-|-|-|
 |[operator!=](#operator_neq)|[operator&amp;&amp;](#operator_amp_amp)|[operator&gt;](#operator_gt)|
 |[operator&gt;=](#operator_gt_eq)|[operator&lt;](#operator_lt)|[operator&lt;=](#operator_lt_eq)|
-|[operator==](#operator_eq_eq)|[operator||](#operator_lor)|
+|[operator==](#operator_eq_eq)|[operator&#124;&#124;](#operator_lor)| |
 
 ##  <a name="operator_lor"></a>  operator&#124;&#124; Operator
 
@@ -339,6 +333,6 @@ The behavior of this operator is identical to the equivalent operator for the `v
 
 This method is not concurrency-safe with respect to other methods that could modify either of the concurrent vectors `_A` or `_B`.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

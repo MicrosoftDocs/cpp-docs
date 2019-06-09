@@ -1,15 +1,8 @@
 ---
-title: "Semantics of Expressions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
+title: "Semantics of Expressions"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["grammar, expressions", "expressions [C++], semantics", "expression evaluation", "expression evaluation, about expression evaluation"]
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Semantics of Expressions
 
@@ -40,8 +33,8 @@ int main()
 54
 ```
 
-![Evaluation order in an expression](../cpp/media/vc38zv1.gif "vc38ZV1")
-Expression-Evaluation Order
+![Evaluation order in an expression](../cpp/media/vc38zv1.gif "Evaluation order in an expression") <br/>
+Expression-evaluation order
 
 The order in which the expression shown in the above figure is evaluated is determined by the precedence and associativity of the operators:
 
@@ -53,8 +46,8 @@ The order in which the expression shown in the above figure is evaluated is dete
 
 When parentheses are used to group the subexpressions, they alter the precedence and also the order in which the expression is evaluated, as shown in the following figure.
 
-![Evaluation order of expression with parentheses](../cpp/media/vc38zv2.gif "vc38ZV2")
-Expression-Evaluation Order with Parentheses
+![Evaluation order of expression with parentheses](../cpp/media/vc38zv2.gif "Evaluation order of expression with parentheses") <br/>
+Expression-evaluation order with parentheses
 
 Expressions such as those in the above figure are evaluated purely for their side effects — in this case, to transfer information to the standard output device.
 
@@ -67,7 +60,7 @@ The C++ language specifies certain compatibilities when specifying operands. The
 |Type expected|Types allowed|
 |-------------------|-------------------|
 |*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|
-|*type*\*|*type*\*<br /> `const` *type*\*<br /> `volatile` *type*\*<br /> `volatile const` *type*\*|
+|*type* \*|*type* \*<br /> `const` *type* \*<br /> `volatile` *type* \*<br /> `volatile const` *type* \*|
 |`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|
 |`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|
 

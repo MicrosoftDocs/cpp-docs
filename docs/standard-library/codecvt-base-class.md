@@ -1,16 +1,9 @@
 ---
-title: "codecvt_base Class | Microsoft Docs"
-ms.custom: ""
+title: "codecvt_base Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["xlocale/std::codecvt_base"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["codecvt_base class"]
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # codecvt_base Class
 

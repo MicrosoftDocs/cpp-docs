@@ -1,16 +1,9 @@
 ---
-title: "COleDropTarget Class | Microsoft Docs"
-ms.custom: ""
+title: "COleDropTarget Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleDropTarget", "AFXOLE/COleDropTarget", "AFXOLE/COleDropTarget::COleDropTarget", "AFXOLE/COleDropTarget::OnDragEnter", "AFXOLE/COleDropTarget::OnDragLeave", "AFXOLE/COleDropTarget::OnDragOver", "AFXOLE/COleDropTarget::OnDragScroll", "AFXOLE/COleDropTarget::OnDrop", "AFXOLE/COleDropTarget::OnDropEx", "AFXOLE/COleDropTarget::Register", "AFXOLE/COleDropTarget::Revoke"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleDropTarget [MFC], COleDropTarget", "COleDropTarget [MFC], OnDragEnter", "COleDropTarget [MFC], OnDragLeave", "COleDropTarget [MFC], OnDragOver", "COleDropTarget [MFC], OnDragScroll", "COleDropTarget [MFC], OnDrop", "COleDropTarget [MFC], OnDropEx", "COleDropTarget [MFC], Register", "COleDropTarget [MFC], Revoke"]
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleDropTarget Class
 
@@ -365,10 +358,10 @@ This function is called automatically from the [OnDestroy](../../mfc/reference/c
 
 For more information, see [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
-[MFC Sample OCLIENT](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample OCLIENT](../../overview/visual-cpp-samples.md)<br/>
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDropSource Class](../../mfc/reference/coledropsource-class.md)

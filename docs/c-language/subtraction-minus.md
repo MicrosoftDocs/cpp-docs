@@ -1,15 +1,8 @@
 ---
-title: "Subtraction (-) | Microsoft Docs"
-ms.custom: ""
+title: "Subtraction (-)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C], subtraction", "subtraction operator, syntax"]
 ms.assetid: 9cacba7d-20b3-4372-8a63-ba5d8ee64177
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Subtraction (-)
 
@@ -19,6 +12,6 @@ When two pointers are subtracted, the difference is converted to a signed integr
 
 When an integer value is subtracted from a pointer value, the subtraction operator converts the integer value (*i*) by multiplying it by the size of the value that the pointer addresses. After conversion, the integer value represents *i* memory positions, where each position has the length specified by the pointer type. When the converted integer value is subtracted from the pointer value, the result is the memory address *i* positions before the original address. The new pointer points to a value of the type addressed by the original pointer value.
 
-## See Also
+## See also
 
 [C Additive Operators](../c-language/c-additive-operators.md)

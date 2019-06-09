@@ -1,16 +1,9 @@
 ---
-title: "protected (C++) | Microsoft Docs"
-ms.custom: ""
+title: "protected (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["protected_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["protected keyword [C++], member access", "protected keyword [C++]"]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # protected (C++)
 

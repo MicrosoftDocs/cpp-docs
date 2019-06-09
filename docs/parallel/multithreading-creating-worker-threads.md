@@ -1,15 +1,8 @@
 ---
-title: "Multithreading: Creating Worker Threads in MFC | Microsoft Docs"
-ms.custom: ""
+title: "Multithreading: Creating Worker Threads in MFC"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-parallel"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Multithreading: Creating Worker Threads in MFC
 
@@ -88,6 +81,6 @@ AfxBeginThread(MyThreadProc, pNewObject);
 
 - [Multithreading: Creating User-Interface Threads](multithreading-creating-user-interface-threads.md)
 
-## See Also
+## See also
 
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

@@ -1,15 +1,8 @@
 ---
-title: "Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "Concurrency Runtime"
 ms.date: "07/20/2018"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Concurrency Runtime, getting started", "ConcRT (see Concurrency Runtime)", "Concurrency Runtime"]
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime
 
@@ -97,12 +90,10 @@ For reference documentation, see [Reference](../../parallel/concrt/reference/ref
 |||
 |-|-|
 |[Async programming patterns and tips in Hilo (Windows Store apps using C++ and XAML)](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Learn how we used the Concurrency Runtime to implement asynchronous operations in Hilo, a Windows Runtime app using C++ and XAML.|
-|[Code samples for the Concurrency Runtime and Parallel Pattern Library in Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=183875)|Provides sample applications and utilities that demonstrate the Concurrency Runtime.|
 |[Parallel Programming in Native Code blog](http://go.microsoft.com/fwlink/p/?linkid=183873)|Provides additional in-depth blog articles about parallel programming in the Concurrency Runtime.|
 |[Parallel Computing in C++ and Native Code forum](http://go.microsoft.com/fwlink/p/?linkid=183874)|Enables you to participate in community discussions about the Concurrency Runtime.|
 |[Parallel Programming](/dotnet/standard/parallel-programming/index)|Teaches you about the parallel programming model that is available in the .NET Framework.|
 
-## See Also
+## See also
 
 [Reference](../../parallel/concrt/reference/reference-concurrency-runtime.md)
-

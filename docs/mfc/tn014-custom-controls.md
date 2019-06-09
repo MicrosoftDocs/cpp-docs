@@ -1,22 +1,15 @@
 ---
-title: "TN014: Custom Controls | Microsoft Docs"
-ms.custom: ""
+title: "TN014: Custom Controls"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.controls"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN014", "custom controls [MFC]"]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN014: Custom Controls
 
 This note describes the MFC Support for custom and self-drawing controls. It also describes dynamic subclassing, and describes the relationship between [CWnd](../mfc/reference/cwnd-class.md) objects and `HWND`s.
 
-The MFC sample application CTRLTEST illustrates how to use many custom controls. See the source code for the MFC General sample [CTRLTEST](../visual-cpp-samples.md) and online help.
+The MFC sample application CTRLTEST illustrates how to use many custom controls. See the source code for the MFC General sample [CTRLTEST](../overview/visual-cpp-samples.md) and online help.
 
 ## Owner-Draw Controls/Menus
 
@@ -86,7 +79,7 @@ By using self-draw controls you can build reusable control classes that use owne
     // insert code to delete an item from this combo box
     ```
 
-For details on the owner-draw structures ([DRAWITEMSTRUCT](../mfc/reference/drawitemstruct-structure.md), [MEASUREITEMSTRUCT](../mfc/reference/measureitemstruct-structure.md), [COMPAREITEMSTRUCT](../mfc/reference/compareitemstruct-structure.md), and [DELETEITEMSTRUCT](../mfc/reference/deleteitemstruct-structure.md)) see the MFC documentation for `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`, `CWnd::OnCompareItem`, and `CWnd::OnDeleteItem` respectively.
+For details on the owner-draw structures ([DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct), [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct), [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct), and [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct)) see the MFC documentation for `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`, `CWnd::OnCompareItem`, and `CWnd::OnDeleteItem` respectively.
 
 ## Using self-draw controls and menus
 
@@ -102,7 +95,7 @@ For self-drawing list boxes and combo boxes, `OnDeleteItem` is not usually overr
 
 ## Examples of Self-Drawing Controls and Menus
 
-The MFC General sample [CTRLTEST](../visual-cpp-samples.md) provides samples of a self-draw menu and a self-draw list box.
+The MFC General sample [CTRLTEST](../overview/visual-cpp-samples.md) provides samples of a self-draw menu and a self-draw list box.
 
 The most typical example of a self-drawing button is a bitmap button. A bitmap button is a button that shows one, two, or three bitmap images for the different states. An example of this is provided in the MFC class [CBitmapButton](../mfc/reference/cbitmapbutton-class.md).
 
@@ -128,9 +121,9 @@ You can achieve dynamic subclassing by using the methods [CWnd::SubclassWindow](
 
 Both routines attach a `CWnd` object to an existing `HWND`. `SubclassWindow` takes the `HWND` directly. `SubclassDlgItem` is a helper function that takes a control ID and the parent window. `SubclassDlgItem` is designed for attaching C++ objects to dialog controls created from a dialog template.
 
-See the [CTRLTEST](../visual-cpp-samples.md) example for several examples of when to use `SubclassWindow` and `SubclassDlgItem`.
+See the [CTRLTEST](../overview/visual-cpp-samples.md) example for several examples of when to use `SubclassWindow` and `SubclassDlgItem`.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)

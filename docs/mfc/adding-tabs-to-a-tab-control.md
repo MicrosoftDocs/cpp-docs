@@ -1,15 +1,8 @@
 ---
-title: "Adding Tabs to a Tab Control | Microsoft Docs"
-ms.custom: ""
+title: "Adding Tabs to a Tab Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tab controls [MFC], adding tabs", "putting tabs on CTabCtrls [MFC]", "CTabCtrl class [MFC], adding tabs", "tabs [MFC], adding to CTabCtrl class [MFC]"]
 ms.assetid: 7f3d9340-e3c7-4c71-9912-be57534ecc78
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Tabs to a Tab Control
 
@@ -25,8 +18,7 @@ After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)),
 
 For more information, see [Creating a Tab Control](/windows/desktop/Controls/tab-controls) in the Windows SDK.
 
-## See Also
+## See also
 
 [Using CTabCtrl](../mfc/using-ctabctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

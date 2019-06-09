@@ -1,15 +1,8 @@
 ---
-title: "Parallel Algorithms | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Parallel Algorithms"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms [Concurrency Runtime]"]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Parallel Algorithms
 
@@ -247,7 +240,7 @@ The following table summarizes the important properties of the three parallel so
 
 The following illustration  shows the important properties of the three parallel sorting algorithms more graphically.
 
-![Comparison of the sorting algorithms](../../parallel/concrt/media/concrt_parallel_sorting.png "concrt_parallel_sorting")
+![Comparison of the sorting algorithms](../../parallel/concrt/media/concrt_parallel_sorting.png "Comparison of the sorting algorithms")
 
 These parallel sorting algorithms follow the rules of cancellation and exception handling. For more information about cancellation and exception handling in the Concurrency Runtime, see [Canceling Parallel Algorithms](../../parallel/concrt/cancellation-in-the-ppl.md#algorithms) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
@@ -343,4 +336,3 @@ In this example, which assumes that it is acceptable to allocate O(N) space duri
 [parallel_buffered_sort Function](reference/concurrency-namespace-functions.md#parallel_buffered_sort)
 
 [parallel_radixsort Function](reference/concurrency-namespace-functions.md#parallel_radixsort)
-

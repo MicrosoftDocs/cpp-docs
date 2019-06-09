@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Arrays Using C++ Interop | Microsoft Docs"
+title: "How to: Marshal Arrays Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["arrays [C++], marshaling", "marshaling [C++], arrays", "interop [C++], arrays", "C++ Interop, arrays", "data marshaling [C++], arrays"]
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Arrays Using C++ Interop
 
@@ -19,7 +13,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 ## Example
 
-The following example demonstrates how to pass a managed array to an unmanaged function. The managed function uses [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md) to suppress garbage collection for the array before calling the unmanaged function. By providing the unmanaged function with a pinned pointer into the GC heap, the overhead of making a copy of the array can be avoided. To demonstrate that the unmanaged function is accessing GC heap memory, it modifies the contents of the array and the changes are reflected when the managed function resumes control.
+The following example demonstrates how to pass a managed array to an unmanaged function. The managed function uses [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to suppress garbage collection for the array before calling the unmanaged function. By providing the unmanaged function with a pinned pointer into the GC heap, the overhead of making a copy of the array can be avoided. To demonstrate that the unmanaged function is accessing GC heap memory, it modifies the contents of the array and the changes are reflected when the managed function resumes control.
 
 ```
 // PassArray1.cpp
@@ -124,6 +118,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

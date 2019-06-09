@@ -1,15 +1,9 @@
 ---
-title: "CSingleLock Class | Microsoft Docs"
-ms.custom: ""
+title: "CSingleLock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSingleLock", "AFXMT/CSingleLock", "AFXMT/CSingleLock::CSingleLock", "AFXMT/CSingleLock::IsLocked", "AFXMT/CSingleLock::Lock", "AFXMT/CSingleLock::Unlock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSingleLock [MFC], CSingleLock", "CSingleLock [MFC], IsLocked", "CSingleLock [MFC], Lock", "CSingleLock [MFC], Unlock"]
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # CSingleLock Class
 
@@ -156,7 +150,7 @@ If you need to release more than one access count of a semaphore, use the second
 
 [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CMultiLock Class](../../mfc/reference/cmultilock-class.md)

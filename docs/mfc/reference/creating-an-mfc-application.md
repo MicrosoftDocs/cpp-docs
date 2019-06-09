@@ -1,15 +1,8 @@
 ---
-title: "Creating an MFC Application | Microsoft Docs"
-ms.custom: ""
+title: "Creating an MFC Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating an MFC Application
 
@@ -34,7 +27,7 @@ The MFC Application Wizard generates the appropriate classes and files for any o
 
 ### To create an MFC application using the MFC Application Wizard
 
-1. Follow the instructions in the help topic [Creating a Project with a Visual C++ Application Wizard](../../ide/creating-desktop-projects-by-using-application-wizards.md).
+1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
 
 1. In the **New Project** dialog box, select **MFC Application** in the Templates pane to open the wizard.
 
@@ -45,10 +38,10 @@ The MFC Application Wizard generates the appropriate classes and files for any o
 
 1. Click **Finish** to close the wizard and open your new project in the development environment.
 
-Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual C++ Projects](../../ide/file-types-created-for-visual-cpp-projects.md).
+Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual Studio C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
-## See Also
+## See also
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Property Pages](../../ide/property-pages-visual-cpp.md)
+[Property Pages](../../build/reference/property-pages-visual-cpp.md)
 

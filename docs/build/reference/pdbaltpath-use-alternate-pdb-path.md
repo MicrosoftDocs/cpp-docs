@@ -1,16 +1,9 @@
 ---
-title: "-PDBALTPATH (Use Alternate PDB Path) | Microsoft Docs"
-ms.custom: ""
+title: "/PDBALTPATH (Use Alternate PDB Path)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["/pdbaltpath"]
-dev_langs: ["C++"]
 helpviewer_keywords: [".pdb files, path", "PDBALTPATH dumpbin option", "-PDBALTPATH dumpbin option", "/PDBALTPATH dumpbin option", "PDB files, path"]
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /PDBALTPATH (Use Alternate PDB Path)
 
@@ -29,7 +22,7 @@ Use this option to provide an alternate location for the Program Database (.pdb)
 
 The value of *pdb_file_name* can be an arbitrary string, an environment variable, or **%_PDB%**. The linker will expand an environment variable, such as **%SystemRoot%**, to its value. The linker defines the environment variables **%_PDB%** and **%_EXT%**. **%_PDB%** expands to the file name of the actual .pdb file without any path information and **%_EXT%** is the extension of the generated executable.
 
-## See Also
+## See also
 
-[DUMPBIN Options](../../build/reference/dumpbin-options.md)<br/>
-[/PDBPATH](../../build/reference/pdbpath.md)
+[DUMPBIN Options](dumpbin-options.md)<br/>
+[/PDBPATH](pdbpath.md)

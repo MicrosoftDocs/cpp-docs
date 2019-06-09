@@ -1,16 +1,9 @@
 ---
-title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword | Microsoft Docs"
-ms.custom: ""
+title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__readgsbyte", "__readgsdword", "__readgsqword", "__readgsword"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__readgsword intrinsic", "__readgsdword intrinsic", "__readgsqword intrinsic", "__readgsbyte intrinsic"]
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __readgsbyte, __readgsdword, __readgsqword, __readgsword
 
@@ -21,17 +14,17 @@ Read memory from a location specified by an offset relative to the beginning of 
 ## Syntax
 
 ```
-unsigned char __readgsbyte( 
-   unsigned long Offset 
-);
-unsigned short __readgsword( 
-   unsigned long Offset 
-);
-unsigned long __readgsdword( 
+unsigned char __readgsbyte(
    unsigned long Offset
 );
-unsigned __int64 __readgsqword( 
-   unsigned long Offset 
+unsigned short __readgsword(
+   unsigned long Offset
+);
+unsigned long __readgsdword(
+   unsigned long Offset
+);
+unsigned __int64 __readgsqword(
+   unsigned long Offset
 );
 ```
 
@@ -57,11 +50,11 @@ The memory contents of the byte, word, double word, or quadword (as indicated by
 
 ## Remarks
 
-These intrinsics are only available in kernel mode, and the routines are only available as intrinsics.
+These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

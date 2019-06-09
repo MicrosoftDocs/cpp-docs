@@ -1,16 +1,9 @@
 ---
-title: "Controlling Streams | Microsoft Docs"
-ms.custom: ""
+title: "Controlling Streams"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["Controlling Streams"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["streams, controlling", "controlling streams", "streams"]
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Controlling Streams
 
@@ -34,6 +27,6 @@ A `FILE` object stores the state of a stream, including:
 
 Do not alter any value stored in a `FILE` object or in a file buffer that you specify for use with that object. You cannot copy a `FILE` object and portably use the address of the copy as a `stream` argument to a library function.
 
-## See Also
+## See also
 
 [Files and Streams](../c-runtime-library/files-and-streams.md)

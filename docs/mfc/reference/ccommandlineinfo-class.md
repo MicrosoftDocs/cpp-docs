@@ -1,16 +1,9 @@
 ---
-title: "CCommandLineInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CCommandLineInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCommandLineInfo", "AFXWIN/CCommandLineInfo", "AFXWIN/CCommandLineInfo::CCommandLineInfo", "AFXWIN/CCommandLineInfo::ParseParam", "AFXWIN/CCommandLineInfo::m_bRunAutomated", "AFXWIN/CCommandLineInfo::m_bRunEmbedded", "AFXWIN/CCommandLineInfo::m_bShowSplash", "AFXWIN/CCommandLineInfo::m_nShellCommand", "AFXWIN/CCommandLineInfo::m_strDriverName", "AFXWIN/CCommandLineInfo::m_strFileName", "AFXWIN/CCommandLineInfo::m_strPortName", "AFXWIN/CCommandLineInfo::m_strPrinterName", "AFXWIN/CCommandLineInfo::m_strRestartIdentifier"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCommandLineInfo [MFC], CCommandLineInfo", "CCommandLineInfo [MFC], ParseParam", "CCommandLineInfo [MFC], m_bRunAutomated", "CCommandLineInfo [MFC], m_bRunEmbedded", "CCommandLineInfo [MFC], m_bShowSplash", "CCommandLineInfo [MFC], m_nShellCommand", "CCommandLineInfo [MFC], m_strDriverName", "CCommandLineInfo [MFC], m_strFileName", "CCommandLineInfo [MFC], m_strPortName", "CCommandLineInfo [MFC], m_strPrinterName", "CCommandLineInfo [MFC], m_strRestartIdentifier"]
 ms.assetid: 3e313ddb-0a82-4991-87ac-a27feff4668c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCommandLineInfo Class
 
@@ -299,10 +292,9 @@ The default implementation also sets [m_bShowSplash](#m_bshowsplash) to TRUE onl
 
 Override this function in your derived class to handle other flag and parameter values.
 
-## See Also
+## See also
 
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline)<br/>
 [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand)
-

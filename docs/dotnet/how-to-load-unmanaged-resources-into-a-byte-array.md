@@ -1,15 +1,9 @@
 ---
-title: "How to: Load Unmanaged Resources into a Byte Array | Microsoft Docs"
+title: "How to: Load Unmanaged Resources into a Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["native resources, loading into Byte array", "unmanaged resources, loading into Byte array", "native resources"]
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Load Unmanaged Resources into a Byte Array
 
@@ -72,6 +66,6 @@ int main() {
 }
 ```
 
-## See Also
+## See also
 
 [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

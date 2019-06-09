@@ -1,15 +1,8 @@
 ---
-title: "ActiveX Controls | Microsoft Docs"
-ms.custom: ""
+title: "ActiveX Controls"
 ms.date: "09/12/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC]"]
 ms.assetid: 52aaec4d-3889-402e-b57d-758078f8ac57
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls
 
@@ -22,6 +15,6 @@ In Visual C++ you can create ActiveX controls using MFC or ATL.
 
 - [ATL](../atl/active-template-library-atl-concepts.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

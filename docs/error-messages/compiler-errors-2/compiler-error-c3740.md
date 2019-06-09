@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3740 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3740"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3740"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3740"]
 ms.assetid: edb17a90-2307-4df6-943d-580460d26d2b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3740
 

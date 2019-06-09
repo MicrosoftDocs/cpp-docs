@@ -1,19 +1,12 @@
 ---
-title: "remainder, remainderf, remainderl | Microsoft Docs"
-ms.custom: ""
+title: "remainder, remainderf, remainderl"
 ms.date: "04/05/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["remainderl", "remainder", "remainderf"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["remainderf", "remainder", "remainderl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["remainderf", "remainderl", "remainder"]
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # remainder, remainderf, remainderl
 

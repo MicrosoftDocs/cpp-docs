@@ -1,16 +1,9 @@
 ---
-title: "__movsw | Microsoft Docs"
-ms.custom: ""
+title: "__movsw"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["__movsw"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["movsw instruction", "rep movsw instruction", "__movsw intrinsic"]
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __movsw
 
@@ -21,10 +14,10 @@ Generates a Move String (`rep movsw`) instruction.
 ## Syntax
 
 ```
-void __movsw( 
-   unsigned short* Dest, 
-   unsigned short* Source, 
-   size_t Count 
+void __movsw(
+   unsigned short* Dest,
+   unsigned short* Source,
+   size_t Count
 );
 ```
 
@@ -81,6 +74,6 @@ int main()
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

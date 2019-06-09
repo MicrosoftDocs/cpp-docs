@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4336 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4336"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4336"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4336"]
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4336
 

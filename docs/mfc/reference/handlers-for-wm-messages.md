@@ -1,16 +1,9 @@
 ---
-title: "Handlers for WM_ Messages | Microsoft Docs"
-ms.custom: ""
+title: "Handlers for WM_ Messages"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["WM_"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["WM_ messages [MFC]"]
 ms.assetid: cad81690-90bf-4f77-943f-a435e7563bdd
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Handlers for WM_ Messages
 
@@ -27,7 +20,6 @@ The following topics correspond to the map entries.
 |[S](../../mfc/reference/wm-messages-s.md)|ON_WM_SETCURSOR through ON_WM_SYSKEYUP|
 |[T - Z](../../mfc/reference/wm-messages-t-z.md)|ON_WM_TIMECHANGE through ON_WM_WININICHANGE|
 
-## See Also
+## See also
 
 [Message Maps](../../mfc/reference/message-maps-mfc.md)
-

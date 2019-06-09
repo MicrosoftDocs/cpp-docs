@@ -1,16 +1,9 @@
 ---
-title: "decltype  (C++) | Microsoft Docs"
-ms.custom: ""
+title: "decltype  (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["decltype_cpp"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], decltype", "decltype operator", "operators [C++], type of an expression", "operators [C++], deduce expression type"]
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # decltype  (C++)
 
@@ -34,7 +27,7 @@ The type of the *expression* parameter.
 
 ## Remarks
 
-The **decltype** type specifier is supported in Visual C++ 2010 or later versions, and can be used with native or managed code. `decltype(auto)` (C++14) is supported in Visual Studio 2015 and later.
+The **decltype** type specifier is supported in Visual Studio 2010 or later versions, and can be used with native or managed code. `decltype(auto)` (C++14) is supported in Visual Studio 2015 and later.
 
 The compiler uses the following rules to determine the type of the *expression* parameter.
 
@@ -200,6 +193,6 @@ static_assert(test2, "PASS2");
 
 ## Requirements
 
-Visual C++ 2010 or later versions.
+Visual Studio 2010 or later versions.
 
 `decltype(auto)` requires Visual Studio 2015 or later.

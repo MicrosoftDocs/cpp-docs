@@ -1,16 +1,9 @@
 ---
-title: "__writecr8 | Microsoft Docs"
-ms.custom: ""
+title: "__writecr8"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["_writecr8"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_writecr8 intrinsic"]
 ms.assetid: 6f8bd632-dddb-4335-971e-1acee24aa2b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __writecr8
 
@@ -21,8 +14,8 @@ Writes the value `Data` to the CR8 register.
 ## Syntax
 
 ```
-void writecr8( 
-   unsigned __int64 Data 
+void writecr8(
+   unsigned __int64 Data
 );
 ```
 
@@ -45,6 +38,6 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

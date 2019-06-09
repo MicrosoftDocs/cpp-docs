@@ -1,16 +1,9 @@
 ---
-title: "CPalette Class | Microsoft Docs"
-ms.custom: ""
+title: "CPalette Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CPalette", "AFXWIN/CPalette", "AFXWIN/CPalette::CPalette", "AFXWIN/CPalette::AnimatePalette", "AFXWIN/CPalette::CreateHalftonePalette", "AFXWIN/CPalette::CreatePalette", "AFXWIN/CPalette::FromHandle", "AFXWIN/CPalette::GetEntryCount", "AFXWIN/CPalette::GetNearestPaletteIndex", "AFXWIN/CPalette::GetPaletteEntries", "AFXWIN/CPalette::ResizePalette", "AFXWIN/CPalette::SetPaletteEntries"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CPalette [MFC], CPalette", "CPalette [MFC], AnimatePalette", "CPalette [MFC], CreateHalftonePalette", "CPalette [MFC], CreatePalette", "CPalette [MFC], FromHandle", "CPalette [MFC], GetEntryCount", "CPalette [MFC], GetNearestPaletteIndex", "CPalette [MFC], GetPaletteEntries", "CPalette [MFC], ResizePalette", "CPalette [MFC], SetPaletteEntries"]
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CPalette Class
 
@@ -303,11 +296,10 @@ If the logical palette is selected into a device context when the application ca
 
 For more information on the Windows structure `PALETTEENTRY`, see [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample DIBLOOK](../../visual-cpp-samples.md)<br/>
+[MFC Sample DIBLOOK](../../overview/visual-cpp-samples.md)<br/>
 [CGdiObject Class](../../mfc/reference/cgdiobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
-

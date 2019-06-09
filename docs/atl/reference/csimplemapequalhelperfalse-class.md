@@ -1,16 +1,9 @@
 ---
-title: "CSimpleMapEqualHelperFalse Class | Microsoft Docs"
-ms.custom: ""
+title: "CSimpleMapEqualHelperFalse Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleMapEqualHelperFalse class"]
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSimpleMapEqualHelperFalse Class
 
@@ -82,7 +75,7 @@ Returns false.
 
 This method always returns false, and will call `ATLASSERT` with an argument of false if it is ever referenced. The purpose of `CSimpleMapEqualHelperFalse::IsEqualValue` is to force methods using comparisons to fail in a well-defined manner when equality tests have not been adequately defined.
 
-## See Also
+## See also
 
 [CSimpleMapEqualHelper Class](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

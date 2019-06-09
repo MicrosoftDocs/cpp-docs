@@ -1,16 +1,9 @@
 ---
-title: "CStreamRowset Class | Microsoft Docs"
-ms.custom: ""
+title: "CStreamRowset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset", "CStreamRowset::CStreamRowset", "CStreamRowset.CStreamRowset", "ATL.CStreamRowset.CStreamRowset", "ATL::CStreamRowset::CStreamRowset", "CStreamRowset", "CStreamRowset<TAccessor>::CStreamRowset", "ATL::CStreamRowset<TAccessor>::CStreamRowset", "CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CStreamRowset class", "CStreamRowset class, constructor", "Close method"]
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CStreamRowset Class
 
@@ -39,7 +32,7 @@ An accessor class.
 |||
 |-|-|
 |[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|
-|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.|
+|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.|
 
 ## Remarks
 
@@ -72,7 +65,7 @@ CStreamRowset();
 
 ## <a name="close"></a> CStreamRowset::Close
 
-Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) interface pointer in the class.
+Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) interface pointer in the class.
 
 ### Syntax
 
@@ -80,7 +73,7 @@ Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035) in
 void Close();
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)

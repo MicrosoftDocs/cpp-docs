@@ -1,15 +1,8 @@
 ---
-title: "Menus (MFC) | Microsoft Docs"
-ms.custom: ""
+title: "Menus (MFC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["menus [MFC], updating as context changes", "menus [MFC], MFC resources for working with", "menus [MFC], manipulating during execution", "menus [MFC]"]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Menus (MFC)
 
@@ -29,6 +22,6 @@ Visual C++ also provides a [menu editor](../windows/menu-editor.md) for creating
 
 - [Sample](../mfc/menu-sample-list.md)
 
-## See Also
+## See also
 
 [User Interface Elements](../mfc/user-interface-elements-mfc.md)

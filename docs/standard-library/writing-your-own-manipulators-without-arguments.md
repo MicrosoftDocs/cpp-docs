@@ -1,15 +1,8 @@
 ---
-title: "Writing Your Own Manipulators Without Arguments | Microsoft Docs"
-ms.custom: ""
+title: "Writing Your Own Manipulators Without Arguments"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["manipulators"]
 ms.assetid: 2dc62d09-45b7-454d-bd9d-55f3c72c206d
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Writing Your Own Manipulators Without Arguments
 

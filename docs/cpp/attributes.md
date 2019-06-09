@@ -1,14 +1,8 @@
 ---
-title: "Attributes in C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "06/01/2018"
-ms.topic: "language-reference"
+title: "Attributes in C++"
+ms.date: "05/06/2019"
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
-
 # Attributes in C++
 
 The C++ Standard defines a set of attributes and also allows compiler vendors to define their own attributes (within a vendor-specific namespace), but compilers are required to recognize only those attributes defined in the standard.
@@ -41,20 +35,20 @@ Attributes represent a standardized alternative to vendor-specific extensions su
 
 - `[[deprecated]]` **Visual Studio 2015 and later:** Specifies that a function is not intended to be used, and might not exist in future versions of a library interface. The compiler can use this to generate an informational message when client code attempts to call the function. Can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.
 
-- `[[fallthrough]]` **Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Visual C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
+- `[[fallthrough]]` **Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [switch](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Microsoft C++ compiler currently does not warn on fallthrough behavior, so this attribute has no effect compiler behavior.
 
 - `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value is not intended to be discarded. Raises warning C4834, as shown in this example:
 
-   ```cpp
-   [[nodiscard]]
-   int foo(int i) { return i * i; }
+    ```cpp
+    [[nodiscard]]
+    int foo(int i) { return i * i; }
 
-   int main()
-   {
-       foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
-       return 0;
-   }
-   ```
+    int main()
+    {
+        foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
+        return 0;
+    }
+    ```
 
 - `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler does not warn when an entity marked `[[maybe_unused]]` is not used. An entity that is declared without the attribute can later be redeclared with the attribute and vice versa. An entity is considered marked after its first declaration that is marked is analyzed, and for the remainder of translation of the current translation unit.
 
@@ -75,12 +69,12 @@ Attributes represent a standardized alternative to vendor-specific extensions su
     }
     ```
 
-   The example raises these warnings:
+  The example raises these warnings:
 
-   - 26494 (Type Rule 5: Always initialize an object.)
+  - 26494 (Type Rule 5: Always initialize an object.)
 
-   - 26485 (Bounds Rule 3: No array to pointer decay.)
+  - 26485 (Bounds Rule 3: No array to pointer decay.)
 
-   - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
+  - 26481 (Bounds Rule 1: Don't use pointer arithmetic. Use span instead.)
 
-   The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.
+  The first two warnings fire when you compile this code with the CppCoreCheck code analysis tool installed and activated. But the third warning doesn't fire because of the attribute. You can suppress the entire bounds profile by writing [[gsl::suppress(bounds)]] without including a specific rule number. The C++ Core Guidelines are designed to help you write better and safer code. The suppress attribute makes it easy to turn off the warnings when they are not wanted.

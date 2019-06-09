@@ -1,15 +1,8 @@
 ---
-title: "General Rules for Operator Overloading | Microsoft Docs"
-ms.custom: ""
+title: "General Rules for Operator Overloading"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["operator overloading [C++], rules"]
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # General Rules for Operator Overloading
 

@@ -1,15 +1,8 @@
 ---
-title: "Data Source: Managing Connections (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Data Source: Managing Connections (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources [C++], multiuser environments", "generalizing connection strings", "ODBC [C++], disconnecting from data sources", "connection strings [C++], generalizing", "database connections [C++], creating", "GetDefaultConnect method", "connections [C++], data source", "ODBC connections [C++], configuring", "disconnecting from data sources", "databases [C++], connecting to", "ODBC connections [C++], disconnecting", "data sources [C++], connecting to", "ODBC connections [C++], connecting to data source", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Managing Connections (ODBC)
 
@@ -122,7 +115,7 @@ You can reuse a `CDatabase` object after disconnecting from it, whether you use 
 
 1. Instead of destroying the object, call its `OpenEx` or `Open` member function again.
 
-## See Also
+## See also
 
 [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
 [Data Source: Determining the Schema of the Data Source (ODBC)](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Virtual List Controls | Microsoft Docs"
-ms.custom: ""
+title: "Virtual List Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["cache, virtual list control item data", "list controls [MFC], virtual", "list controls [MFC], List view", "virtual list controls"]
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Virtual List Controls
 
@@ -60,8 +53,7 @@ The LVN_ODFINDITEM notification message is sent by the virtual list control when
 
 You should be prepared to search for an item that matches the information given by the list view control. You should return the index of the item if successful, or -1 if no matching item is found.
 
-## See Also
+## See also
 
 [Using CListCtrl](../mfc/using-clistctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

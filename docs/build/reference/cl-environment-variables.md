@@ -1,16 +1,9 @@
 ---
-title: "CL Environment Variables | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "CL Environment Variables"
+ms.date: "05/06/2019"
 f1_keywords: ["cl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]
 ms.assetid: 2606585b-a681-42ee-986e-1c9a2da32108
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # CL Environment Variables
 
@@ -18,7 +11,7 @@ The CL tool uses the following environment variables:
 
 - CL and \_CL\_, if defined. The CL tool prepends the options and arguments defined in the CL environment variable to the command line arguments, and appends the options and arguments defined in \_CL\_, before processing.
 
-- INCLUDE, which must point to the \include subdirectory of your Visual C++ installation.
+- INCLUDE, which must point to the \include subdirectory of your Visual Studio installation.
 
 - LIBPATH, which specifies directories to search for metadata files referenced with [#using](../../preprocessor/hash-using-directive-cpp.md). See `#using` for more information on LIBPATH.
 
@@ -27,13 +20,13 @@ You can set the CL or \_CL\_ environment variable using the following syntax:
 > SET CL=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 > SET \_CL\_=[ [*option*] ... [*file*] ...] [/link *link-opt* ...]
 
-For details on the arguments to the CL and \_CL\_ environment variables, see [Compiler Command-Line Syntax](../../build/reference/compiler-command-line-syntax.md).
+For details on the arguments to the CL and \_CL\_ environment variables, see [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md).
 
 You can use these environment variables to define the files and options you use most often and use the command line to define specific files and options for specific purposes. The CL and \_CL\_ environment variables are limited to 1024 characters (the command-line input limit).
 
 You cannot use the /D option to define a symbol that uses an equal sign (=). You can substitute the number sign (#) for an equal sign. In this way, you can use the CL or \_CL\_ environment variables to define preprocessor constants with explicit values—for example, `/DDEBUG#1` to define `DEBUG=1`.
 
-For related information, see [Set Environment Variables](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).
+For related information, see [Set Environment Variables](../setting-the-path-and-environment-variables-for-command-line-builds.md).
 
 ## Examples
 
@@ -55,7 +48,7 @@ This has the same effect as the following command line:
 
 > CL FILE1.C FILE2.C FILE3.OBJ
 
-## See Also
+## See also
 
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+[Setting Compiler Options](compiler-command-line-syntax.md)<br/>
+[MSVC Compiler Options](compiler-options.md)

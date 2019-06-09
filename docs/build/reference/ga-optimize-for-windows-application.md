@@ -1,16 +1,9 @@
 ---
-title: "-GA (Optimize for Windows Application) | Microsoft Docs"
-ms.custom: ""
+title: "/GA (Optimize for Windows Application)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication", "/ga"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/GA compiler option [C++]", "GA compiler option [C++]", "-GA compiler option [C++]", "Optimize for Windows compiler options"]
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /GA (Optimize for Windows Application)
 
@@ -30,7 +23,7 @@ Using **/GA** for a DLL can result in bad code generation.
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Click the **C/C++** folder.
 
@@ -42,7 +35,7 @@ Using **/GA** for a DLL can result in bad code generation.
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## See Also
+## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

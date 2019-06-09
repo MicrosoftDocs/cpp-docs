@@ -1,14 +1,8 @@
 ---
-title: "Object Lifetime And Resource Management (Modern C++) | Microsoft Docs"
-ms.custom: ""
+title: "Object Lifetime And Resource Management (Modern C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
-dev_langs: ["C++"]
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Object Lifetime And Resource Management (Modern C++)
 
@@ -85,6 +79,6 @@ Use static lifetime sparingly (global static, function local static) because pro
 
 ## See also
 
-[Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

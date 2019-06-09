@@ -1,15 +1,8 @@
 ---
-title: "Building on the Framework | Microsoft Docs"
-ms.custom: ""
+title: "Building on the Framework"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application-specific classes [MFC]", "application framework [MFC], building applications", "applications [MFC]", "MFC, application development"]
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Building on the Framework
 
@@ -27,7 +20,6 @@ In related topics, the following tables describe the general sequence of operati
 
 For the most part, you can follow these tables as a sequence of steps for creating an MFC application, although some of the steps are alternative options. For example, most applications use one type of view class from the several types available.
 
-## See Also
+## See also
 
 [General MFC Topics](../mfc/general-mfc-topics.md)
-

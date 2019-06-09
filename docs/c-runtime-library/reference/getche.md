@@ -1,19 +1,12 @@
 ---
-title: "getche | Microsoft Docs"
-ms.custom: ""
+title: "getche"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["getche"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
 f1_keywords: ["getche"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["getche function"]
 ms.assetid: 95e62bb8-eec0-4145-b2e8-f6406849af52
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # getche
 

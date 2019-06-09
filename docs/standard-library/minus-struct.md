@@ -1,16 +1,9 @@
 ---
-title: "minus Struct | Microsoft Docs"
-ms.custom: ""
+title: "minus Struct"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-f1_keywords: ["xfunctional/std::minus"]
-dev_langs: ["C++"]
+f1_keywords: ["functional/std::minus"]
 helpviewer_keywords: ["minus struct", "minus class"]
 ms.assetid: 7bce784e-2be6-413a-b516-004e9ecb2a39
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # minus Struct
 

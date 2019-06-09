@@ -1,15 +1,8 @@
 ---
-title: "Linker Tools Error LNK2019 | Microsoft Docs"
-ms.custom: ""
+title: "Linker Tools Error LNK2019"
 ms.date: "12/15/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["LNK2019"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_version"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK2019
 
@@ -83,7 +76,7 @@ For example, if you use an AVX2 intrinsic, but do not specify the [/ARCH:AVX2](.
 
 ### You mix code that uses native wchar\_t with code that doesn't
 
-C++ language conformance work that was done in Visual C++ 2005 made `wchar_t` a native type by default. You must use the [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option to generate code compatible with library and object files compiled by using earlier versions of Visual C++. If not all files have been compiled by using the same **/Zc:wchar\_t** settings, type references may not resolve to compatible types. Verify that `wchar_t` types in all library and object files are compatible, either by updating the types that are used, or by using consistent **/Zc:wchar_t** settings when you compile.
+C++ language conformance work that was done in Visual Studio 2005 made `wchar_t` a native type by default. You must use the [/Zc:wchar_t-](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option to generate code compatible with library and object files compiled by using earlier versions of Visual Studio. If not all files have been compiled by using the same **/Zc:wchar\_t** settings, type references may not resolve to compatible types. Verify that `wchar_t` types in all library and object files are compatible, either by updating the types that are used, or by using consistent **/Zc:wchar_t** settings when you compile.
 
 ## Third-party library issues and Vcpkg
 

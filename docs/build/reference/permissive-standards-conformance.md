@@ -1,15 +1,9 @@
 ---
-title: "-permissive- (Standards conformance) | Microsoft Docs"
-ms.date: "06/21/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
+title: "/permissive- (Standards conformance)"
+ms.date: "03/08/2019"
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /permissive- (Standards conformance)
 
@@ -23,21 +17,21 @@ Specify standards conformance mode to the compiler. Use this option to help you 
 
 This option is supported in Visual Studio 2017 and later.
 
-You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
+You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
 
 By default, the **/permissive-** option is set in new projects created by Visual Studio 2017 version 15.5 and later versions. It is not set by default in earlier versions. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code.
 
 The **/permissive-** option is compatible with almost all of the header files from the latest Windows Kits, such as the Software Development Kit (SDK) or Windows Driver Kit (WDK), starting in the Windows Fall Creators SDK (10.0.16299.0). Older versions of the SDK may fail to compile under **/permissive-** for various source code conformance reasons. The compiler and SDKs ship on different release timelines, therefore there are some remaining issues. For specific header file issues, see [Windows header issues](#windows-header-issues) below.
 
-The **/permissive-** option sets the [/Zc:strictStrings](../../build/reference/zc-conformance.md) and [/Zc:rvalueCast](../../build/reference/zc-conformance.md) options to conforming behavior. They default to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.
+The **/permissive-** option sets the [/Zc:referenceBinding](zc-referencebinding-enforce-reference-binding-rules.md), [/Zc:strictStrings](zc-strictstrings-disable-string-literal-type-conversion.md), and [/Zc:rvalueCast](zc-rvaluecast-enforce-type-conversion-rules.md) options to conforming behavior. These options defaults to non-conforming behavior. You can pass specific **/Zc** options after **/permissive-** on the command line to override this behavior.
 
-In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **/permissive-** option sets the [/Zc:ternary](../../build/reference/zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
+In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **/permissive-** option sets the [/Zc:ternary](zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **/permissive-** option is set, the compiler parses function and class template definitions, and identifies dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
 
 Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **/permissive-**. For example, the Microsoft-specific `__declspec`, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **/permissive-** mode.
 
-The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [/std:c++17](../../build/reference/std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](../../build/reference/std-specify-language-standard-version.md) option, which is the default.
+The **/permissive-** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option does not determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [/std:latest](std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [/std:c++17](std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [/std:c++14](std-specify-language-standard-version.md) option, which is the default.
 
-Not all C++11, C++14, or C++17 standards-conforming code is supported by the Visual C++ compiler in Visual Studio 2017. Depending on the version of Visual Studio, the **/permissive-** option may not detect issues regarding some aspects of two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md). To get the most out of **/permissive-**, update Visual Studio to the latest version.
+Not all C++11, C++14, or C++17 standards-conforming code is supported by the MSVC compiler in all versions of Visual Studio 2017. Depending on the version of Visual Studio, the **/permissive-** option may not detect issues regarding some aspects of two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md). To get the most out of **/permissive-**, update Visual Studio to the latest version.
 
 ### How to fix your code
 
@@ -50,7 +44,7 @@ void func(int default); // Error C2321: 'default' is a keyword, and
                         // cannot be used in this context
 ```
 
-#### Lookup members in dependent base
+#### Look up members in dependent base
 
 ```cpp
 template <typename T>
@@ -231,7 +225,7 @@ class ATL_NO_VTABLE CFooImpl : public ICustom,
 
 In versions of the compiler before Visual Studio 2017 version 15.3, the compiler accepted arguments to the conditional operator (or ternary operator) `?:` that are considered ambiguous by the Standard. In **/permissive-** mode, the compiler now issues one or more diagnostics in cases that compiled without diagnostics in earlier versions.
 
-Commmon errors that may result from this change include:
+Common errors that may result from this change include:
 
 - error C2593: 'operator ?' is ambiguous
 
@@ -241,7 +235,7 @@ Commmon errors that may result from this change include:
 
 - error C2446: ':': no conversion from 'B' to 'A'
 
-A typical code pattern that can cause this issue is when some class C provides both a non-explicit constructor from another type T and a non-explicit conversion operator to type T. In this case, both the conversion of the 2nd argument to the type of the 3rd and the conversion of the 3rd argument to the type of the 2nd are valid conversions, which is ambiguous according to the standard.
+A typical code pattern that can cause this issue is when some class C provides both a non-explicit constructor from another type T and a non-explicit conversion operator to type T. In this case, both the conversion of the second argument to the type of the third argument, and the conversion of the third argument to the type of the second argument, are valid conversions. Since both are valid, it's ambiguous according to the standard.
 
 ```cpp
 // Example 1: class that provides conversion to and initialization from some type T
@@ -305,9 +299,9 @@ decltype(auto) x = cond ? a : b; // char without, const char& with /Zc:ternary
 const char (&z)[2] = count > 3 ? "A" : "B"; // const char* without /Zc:ternary
 ```
 
-#### Two-phase name look up
+#### Two-phase name look-up
 
-When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase name look-up. In Visual Studio 2017 version 15.3, name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. In Visual Studio 2017 version 15.7, binding of non-dependent names that require argument dependent look up in the definition context is also done.
+When the **/permissive-** option is set, the compiler parses function and class template definitions, identifying dependent and non-dependent names used in templates as required for two-phase name look-up. In Visual Studio 2017 version 15.3, name dependency analysis is performed. In particular, non-dependent names that are not declared in the context of a template definition cause a diagnostic message as required by the ISO C++ standards. In Visual Studio 2017 version 15.7, binding of non-dependent names that require argument-dependent look-up in the definition context is also done.
 
 ```cpp
 // dependent base
@@ -419,7 +413,7 @@ These issues are specific to User Mode headers in the Windows Fall Creators Upda
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **/permissive-** option, or use the [/wd](../../build/reference/compiler-option-warning-level.md) option to silence warning C4471.
+   The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **/permissive-** option, or use the [/wd](compiler-option-warning-level.md) option to silence warning C4471.
 
 - Issue in um/omscript.h
 
@@ -458,5 +452,5 @@ In versions before Visual Studio 2017 version 15.5, use this procedure:
 
 ## See also
 
-- [Compiler Options](../../build/reference/compiler-options.md)
-- [Setting Compiler Options](../../build/reference/setting-compiler-options.md)
+- [MSVC Compiler Options](compiler-options.md)
+- [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)

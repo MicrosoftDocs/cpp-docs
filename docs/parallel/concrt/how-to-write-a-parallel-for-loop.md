@@ -1,15 +1,8 @@
 ---
-title: "How to: Write a parallel_for Loop | Microsoft Docs"
-ms.custom: ""
+title: "How to: Write a parallel_for Loop"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["writing a parallel_for loop [Concurrency Runtime]", "parallel_for function, example"]
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Write a parallel_for Loop
 
@@ -48,8 +41,7 @@ To compile the code, copy it and then paste it in a Visual Studio project, or pa
 
 **cl.exe /EHsc parallel-matrix-multiply.cpp**
 
-## See Also
+## See also
 
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_for Function](reference/concurrency-namespace-functions.md#parallel_for)
-

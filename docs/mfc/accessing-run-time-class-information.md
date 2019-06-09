@@ -1,15 +1,8 @@
 ---
-title: "Accessing Run-Time Class Information | Microsoft Docs"
-ms.custom: ""
+title: "Accessing Run-Time Class Information"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CObject class [MFC], and RTTI", "CObject class [MFC], using IsKindOf method [MFC]", "run time [MFC], class information", "RUNTIME_CLASS macro [MFC]", "CObject class [MFC], using RUNTIME_CLASS macro [MFC]", "RTTI compiler option [MFC]", "CObject class [MFC], accessing run-time class information", "run time [MFC]", "IsKindOf method method [MFC]", "run-time class [MFC], accessing information", "classes [MFC], run-time class information", "run-time class [MFC]", "RUNTIME_CLASS macro, using"]
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Accessing Run-Time Class Information
 
@@ -49,7 +42,6 @@ One use of run-time class information is in the dynamic creation of objects. Thi
 
 For more detailed information on serialization and run-time class information, see the articles [Files in MFC](../mfc/files-in-mfc.md) and [Serialization](../mfc/serialization-in-mfc.md).
 
-## See Also
+## See also
 
 [Using CObject](../mfc/using-cobject.md)
-

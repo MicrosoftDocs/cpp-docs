@@ -1,15 +1,8 @@
 ---
-title: "Tree Control Item Information | Microsoft Docs"
-ms.custom: ""
+title: "Tree Control Item Information"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["tree controls [MFC], item information", "CTreeCtrl class [MFC], item information"]
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Tree Control Item Information
 
@@ -21,8 +14,7 @@ The [GetNextItem](../mfc/reference/ctreectrl-class.md#getnextitem) member functi
 
 The [GetItemRect](../mfc/reference/ctreectrl-class.md#getitemrect) member function retrieves the bounding rectangle for a tree control item. The [GetCount](../mfc/reference/ctreectrl-class.md#getcount) and [GetVisibleCount](../mfc/reference/ctreectrl-class.md#getvisiblecount) member functions retrieve a count of the items in a tree control and a count of the items that are currently visible in the tree control's window, respectively. You can ensure that a particular item is visible by calling the [EnsureVisible](../mfc/reference/ctreectrl-class.md#ensurevisible) member function.
 
-## See Also
+## See also
 
 [Using CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

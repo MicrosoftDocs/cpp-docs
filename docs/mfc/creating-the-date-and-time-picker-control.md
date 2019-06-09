@@ -1,15 +1,8 @@
 ---
-title: "Creating the Date and Time Picker Control | Microsoft Docs"
-ms.custom: ""
+title: "Creating the Date and Time Picker Control"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], creating", "CDateTimeCtrl class [MFC], creating"]
 ms.assetid: 764ec2fb-98cd-478b-a5f2-d63f0bb12279
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating the Date and Time Picker Control
 
@@ -33,8 +26,7 @@ How the date and time picker control is created depends on whether you are using
 
 1. Call the control's [Create](../mfc/reference/ctabctrl-class.md#create) member function, possibly in [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), possibly as early as the parent window's [OnCreate](../mfc/reference/cwnd-class.md#oncreate) handler function (if you're subclassing the control). Set the styles for the control.
 
-## See Also
+## See also
 
 [Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

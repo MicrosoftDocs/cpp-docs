@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2179 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2179"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2179"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2179"]
 ms.assetid: f929bfc6-3964-4e54-87d6-7529b9b6c0b9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2179
 

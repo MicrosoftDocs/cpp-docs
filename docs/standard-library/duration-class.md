@@ -1,16 +1,9 @@
 ---
-title: "duration Class | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
+title: "duration Class"
+ms.date: "03/27/2016"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
-dev_langs: ["C++"]
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::chrono [C++], duration"]
-ms.workload: ["cplusplus"]
 ---
 # duration Class
 
@@ -153,7 +146,7 @@ static constexpr duration min();
 
 In effect, returns `duration(duration_values<rep>::min())`.
 
-## <a name="duration__operator-"></a>  duration::operator-
+## <a name="operator-"></a>  duration::operator-
 
 Returns a copy of the `duration` object together with a negated tick count.
 
@@ -161,7 +154,7 @@ Returns a copy of the `duration` object together with a negated tick count.
 constexpr duration operator-() const;
 ```
 
-## <a name="duration__operator--"></a>  duration::operator--
+## <a name="operator--"></a>  duration::operator--
 
 Decrements the stored tick count.
 
@@ -271,7 +264,7 @@ A `duration` object.
 
 The `duration` object after the addition is performed.
 
-## <a name="duration__operator-_eq"></a>  duration::operator-=
+## <a name="operator-_eq"></a>  duration::operator-=
 
 Subtracts the tick count of a specified `duration` object from the stored tick count.
 

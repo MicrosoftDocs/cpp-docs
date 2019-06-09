@@ -1,15 +1,8 @@
 ---
-title: "Making and Using Controls | Microsoft Docs"
-ms.custom: ""
+title: "Making and Using Controls"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["controls [MFC], creating for dialog boxes", "Windows common controls [MFC], about common controls", "common controls [MFC], about common controls"]
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Making and Using Controls
 
@@ -39,7 +32,6 @@ You make most controls for dialog boxes in the Visual C++ [dialog editor](../win
 
 - [Dialog bars](../mfc/dialog-bars.md)
 
-## See Also
+## See also
 
 [Controls](../mfc/controls-mfc.md)
-

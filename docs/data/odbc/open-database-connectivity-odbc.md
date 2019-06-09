@@ -1,21 +1,14 @@
 ---
-title: "Open Database Connectivity (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Open Database Connectivity (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++]", "databases [C++], ODBC", "data access [C++], ODBC"]
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Open Database Connectivity (ODBC)
 
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.
 
-For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK in MSDN.
+For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK in MSDN.
 
 
 ## In This Section
@@ -56,7 +49,7 @@ For more information about using the ODBC API without MFC, see the [Open Databas
 
 ## ODBC Database Tasks
 
-These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252) SDK.
+These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK.
 
 - [Install and Get Started with ODBC](installing-and-getting-started-with-odbc.md)
 
@@ -74,6 +67,6 @@ These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more inform
 
 - [Use MFC ODBC Recordsets](use-mfc-odbc-recordsets.md)
 
-## See Also
+## See also
 
 [Data Access Programming (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

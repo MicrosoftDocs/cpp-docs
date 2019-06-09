@@ -1,16 +1,9 @@
 ---
-title: "CArrayRowset Class | Microsoft Docs"
-ms.custom: ""
+title: "CArrayRowset Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["ATL.CArrayRowset<TAccessor>", "ATL.CArrayRowset", "CArrayRowset", "ATL::CArrayRowset", "ATL::CArrayRowset<TAccessor>", "ATL::CArrayRowset::CArrayRowset", "CArrayRowset.CArrayRowset", "ATL.CArrayRowset.CArrayRowset", "ATL.CArrayRowset<TAccessor>.CArrayRowset", "CArrayRowset::CArrayRowset", "CArrayRowset", "CArrayRowset<TAccessor>::CArrayRowset", "ATL::CArrayRowset<TAccessor>::CArrayRowset", "CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset::Snapshot", "Snapshot", "CArrayRowset<TAccessor>::Snapshot", "ATL.CArrayRowset.Snapshot", "ATL.CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset<TAccessor>::Snapshot", "CArrayRowset::Snapshot", "CArrayRowset.Snapshot", "CArrayRowset::operator[]", "CArrayRowset.operator[]", "ATL::CArrayRowset::m_nRowsRead", "ATL::CArrayRowset<TAccessor>::m_nRowsRead", "CArrayRowset<TAccessor>::m_nRowsRead", "ATL.CArrayRowset<TAccessor>.m_nRowsRead", "CArrayRowset.m_nRowsRead", "m_nRowsRead", "ATL.CArrayRowset.m_nRowsRead", "CArrayRowset::m_nRowsRead"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CArrayRowset class", "CArrayRowset class, constructor", "Snapshot method", "operator [], arrays", "[] operator", "operator[], arrays", "m_nRowsRead"]
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CArrayRowset Class
 
@@ -21,7 +14,7 @@ Accesses elements of a rowset using array syntax.
 ```cpp
 template < class TAccessor >
 class CArrayRowset :
-   public CVirtualBuffer <TAccessor>, 
+   public CVirtualBuffer <TAccessor>,
    protected CBulkRowset <TAccessor>
 ```
 
@@ -116,7 +109,7 @@ Contains the number of rows in the rowset that have already been read.
 ULONG m_nRowsRead;
 ```
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

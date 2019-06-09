@@ -1,16 +1,9 @@
 ---
-title: "Property Map Macros | Microsoft Docs"
-ms.custom: ""
+title: "Property Map Macros"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlcom/ATL::BEGIN_PROP_MAP", "atlcom/ATL::PROP_DATA_ENTRY", "atlcom/ATL::PROP_ENTRY_TYPE", "atlcom/ATL::PROP_ENTRY_TYPE_EX", "atlcom/ATL::PROP_PAGE", "atlcom/ATL::END_PROP_MAP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["property maps"]
 ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Property Map Macros
 
@@ -198,6 +191,6 @@ When you create an object with the ATL Project Wizard, the wizard will create an
 
 See the example for [BEGIN_PROP_MAP](#begin_prop_map).
 
-## See Also
+## See also
 
 [Macros](../../atl/reference/atl-macros.md)

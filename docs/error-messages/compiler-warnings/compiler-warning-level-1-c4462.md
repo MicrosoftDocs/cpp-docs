@@ -1,15 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4462 | Microsoft Docs"
+title: "Compiler Warning (level 1) C4462"
 ms.date: "10/25/2017"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4462"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4462"]
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4462
 
@@ -30,18 +24,18 @@ This sample generates warning C4462:
 ```cpp
 namespace N
 {
-       public ref struct EventArgs sealed {};
-       public ref struct R sealed
-       {
-              R() {}
-              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
-       };
+    public ref struct EventArgs sealed {};
+    public ref struct R sealed
+    {
+        R() {}
+        event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
+    };
 }
 
 [Platform::MTAThread]
 int main()
 {
-     auto x = ref new N::R();
+    auto x = ref new N::R();
 }
 ```
 

@@ -1,16 +1,9 @@
 ---
-title: "CSettingsStoreSP Class | Microsoft Docs"
-ms.custom: ""
+title: "CSettingsStoreSP Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::Create", "AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSettingsStoreSP [MFC], CSettingsStoreSP", "CSettingsStoreSP [MFC], Create", "CSettingsStoreSP [MFC], SetRuntimeClass"]
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSettingsStoreSP Class
 
@@ -138,7 +131,7 @@ TRUE if successful; FALSE if the class identified by *pRTI* is not derived from 
 
 You can use the [CSettingsStoreSP Class](../../mfc/reference/csettingsstoresp-class.md) to derive classes from `CSettingsStore`. Use the method `SetRuntimeClass` if you want to create objects of a custom class that is derived from `CSettingsStore`.
 
-## See Also
+## See also
 
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Thread Safety in the C++ Standard Library | Microsoft Docs"
-ms.custom: ""
+title: "Thread Safety in the C++ Standard Library"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["thread safety", "C++ Standard Library, thread safety", "thread safety, C++ Standard Library"]
 ms.assetid: 9351c8fb-4539-4728-b0e9-226e2ac4284b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Thread Safety in the C++ Standard Library
 

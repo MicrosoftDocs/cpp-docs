@@ -1,16 +1,9 @@
 ---
-title: "&lt;cstdlib&gt; | Microsoft Docs"
-ms.custom: ""
+title: "&lt;cstdlib&gt;"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["<cstdlib>"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cstdlib header"]
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # &lt;cstdlib&gt;
 
@@ -20,7 +13,6 @@ Includes the Standard C library header \<stdlib.h> and adds the associated names
 
 ```cpp
 #include <cstdlib>
-
 ```
 
 ## Remarks

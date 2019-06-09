@@ -1,16 +1,9 @@
 ---
-title: "CComContainedObject Class | Microsoft Docs"
-ms.custom: ""
+title: "CComContainedObject Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComContainedObject", "ATLCOM/ATL::CComContainedObject", "ATLCOM/ATL::CComContainedObject::CComContainedObject", "ATLCOM/ATL::CComContainedObject::AddRef", "ATLCOM/ATL::CComContainedObject::GetControllingUnknown", "ATLCOM/ATL::CComContainedObject::QueryInterface", "ATLCOM/ATL::CComContainedObject::Release"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregate objects [C++], in ATL", "aggregation [C++], ATL objects", "CComContainedObject class"]
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComContainedObject Class
 
@@ -157,6 +150,6 @@ STDMETHOD_(ULONG, Release)();
 
 In debug builds, `Release` returns a value that may be useful for diagnostics or testing. In non-debug builds, `Release` always returns 0.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

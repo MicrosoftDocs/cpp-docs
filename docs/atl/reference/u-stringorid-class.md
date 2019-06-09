@@ -1,16 +1,9 @@
 ---
-title: "_U_STRINGorID Class | Microsoft Docs"
-ms.custom: ""
+title: "_U_STRINGorID Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["ATL._U_STRINGorID", "ATL::_U_STRINGorID", "_U_STRINGorID"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_U_STRINGorID class", "U_STRINGorID class"]
 ms.assetid: 443cdc00-d265-4b27-8ef3-2feb95f3e5e3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # _U_STRINGorID Class
 
@@ -78,6 +71,6 @@ A resource name.
 
 The argument to the LPCTSTR constructor is stored directly without conversion.
 
-## See Also
+## See also
 
 [Class Overview](../../atl/atl-class-overview.md)

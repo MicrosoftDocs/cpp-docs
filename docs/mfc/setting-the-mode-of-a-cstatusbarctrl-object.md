@@ -1,16 +1,9 @@
 ---
-title: "Setting the Mode of a CStatusBarCtrl Object | Microsoft Docs"
-ms.custom: ""
+title: "Setting the Mode of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["CStatusBarCtrl"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["simple mode and status bar controls", "IsSimple method, using", "SetSimple method [MFC]", "status bar controls [MFC], simple and nonsimple modes", "non-simple mode and status bar controls", "CStatusBarCtrl class [MFC], simple and nonsimple modes"]
 ms.assetid: ca6076e5-1501-4e33-8d35-9308941e46c0
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Setting the Mode of a CStatusBarCtrl Object
 
@@ -23,8 +16,7 @@ You can use the [IsSimple](../mfc/reference/cstatusbarctrl-class.md#issimple) fu
 > [!NOTE]
 >  If the status bar object is being changed from nonsimple to simple, or vice versa, the window is immediately redrawn and, if applicable, any defined parts are automatically restored.
 
-## See Also
+## See also
 
 [Using CStatusBarCtrl](../mfc/using-cstatusbarctrl.md)<br/>
 [Controls](../mfc/controls-mfc.md)
-

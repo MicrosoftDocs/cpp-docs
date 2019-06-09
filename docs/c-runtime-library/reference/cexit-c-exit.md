@@ -1,19 +1,12 @@
 ---
-title: "_cexit, _c_exit | Microsoft Docs"
-ms.custom: ""
+title: "_cexit, _c_exit"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_c_exit", "_cexit"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_cexit", "c_exit", "_c_exit", "cexit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["cleanup operations during processes", "cexit function", "_c_exit function", "_cexit function", "c_exit function"]
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _cexit, _c_exit
 

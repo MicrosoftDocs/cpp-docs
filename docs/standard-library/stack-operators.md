@@ -1,10 +1,7 @@
 ---
-title: "&lt;stack&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;stack&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["stack/std::operator!=", "stack/std::operator&gt;", "stack/std::operator&gt;=", "stack/std::operator&lt;", "stack/std::operator&lt;=", "stack/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
 helpviewer_keywords: ["std::operator!= (stack)", "std::operator&gt; (stack)", "std::operator&gt;= (stack)", "std::operator&lt; (stack)", "std::operator&lt;= (stack)", "std::operator== (stack)"]
 ---

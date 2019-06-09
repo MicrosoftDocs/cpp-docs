@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolTipCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolTipCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolTipCtrl [MFC], GetIconSize", "CMFCToolTipCtrl [MFC], GetParams", "CMFCToolTipCtrl [MFC], OnDrawBorder", "CMFCToolTipCtrl [MFC], OnDrawDescription", "CMFCToolTipCtrl [MFC], OnDrawIcon", "CMFCToolTipCtrl [MFC], OnDrawLabel", "CMFCToolTipCtrl [MFC], OnDrawSeparator", "CMFCToolTipCtrl [MFC], OnFillBackground", "CMFCToolTipCtrl [MFC], SetDescription", "CMFCToolTipCtrl [MFC], SetFixedWidth", "CMFCToolTipCtrl [MFC], SetHotRibbonButton", "CMFCToolTipCtrl [MFC], SetLocation", "CMFCToolTipCtrl [MFC], SetParams"]
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolTipCtrl Class
 
@@ -403,7 +396,7 @@ void SetParams(CMFCToolTipInfo* pParams);
 
 Whenever the tooltip is displayed, it is drawn by using the colors and visual styles that *pParams* specifies. The value of *pParams* is stored in the protected member `m_Params`, which can be accessed by a derived class that overrides [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), or [CMFCToolTipCtrl::OnFillBackground](#onfillbackground) to maintain the specified appearance.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

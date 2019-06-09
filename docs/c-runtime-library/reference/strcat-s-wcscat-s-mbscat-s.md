@@ -1,26 +1,19 @@
 ---
-title: "strcat_s, wcscat_s, _mbscat_s | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
-apiname: ["strcat_s", "_mbscat_s", "wcscat_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+title: "strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l"
+ms.date: "01/22/2019"
+apiname: ["strcat_s", "_mbscat_s", "_mbscat_s_l", "wcscat_s"]
+apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
-f1_keywords: ["strcat_s", "wcscat_s", "_mbscat_s"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["wcscat_s function", "strcat_s function", "mbscat_s function", "strings [C++], appending", "_mbscat_s function", "appending strings"]
+f1_keywords: ["strcat_s", "wcscat_s", "_mbscat_s", "_mbscat_s_l"]
+helpviewer_keywords: ["wcscat_s function", "strcat_s function", "mbscat_s function", "strings [C++], appending", "_mbscat_s function", "_mbscat_s_l function", "appending strings"]
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
-# strcat_s, wcscat_s, _mbscat_s
+# strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
 Appends a string. These versions of [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> **_mbscat_s** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** and **_mbscat_s_l** cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## Syntax
 
@@ -40,6 +33,12 @@ errno_t _mbscat_s(
    size_t numberOfElements,
    const unsigned char *strSource
 );
+errno_t _mbscat_s_l(
+   unsigned char *strDestination,
+   size_t numberOfElements,
+   const unsigned char *strSource,
+   _locale_t locale
+);
 template <size_t size>
 errno_t strcat_s(
    char (&strDestination)[size],
@@ -55,6 +54,12 @@ errno_t _mbscat_s(
    unsigned char (&strDestination)[size],
    const unsigned char *strSource
 ); // C++ only
+template <size_t size>
+errno_t _mbscat_s_l(
+   unsigned char (&strDestination)[size],
+   const unsigned char *strSource,
+   _locale_t locale
+); // C++ only
 ```
 
 ### Parameters
@@ -67,6 +72,9 @@ Size of the destination string buffer.
 
 *strSource*<br/>
 Null-terminated source string buffer.
+
+*locale*<br/>
+Locale to use.
 
 ## Return Value
 
@@ -96,6 +104,8 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 **wcscat_s** and **_mbscat_s** are wide-character and multibyte-character versions of **strcat_s**. The arguments and return value of **wcscat_s** are wide-character strings; those of **_mbscat_s** are multibyte-character strings. These three functions behave identically otherwise.
 
 If *strDestination* is a null pointer, or is not null-terminated, or if *strSource* is a **NULL** pointer, or if the destination string is too small, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return **EINVAL** and set **errno** to **EINVAL**.
+
+The versions of functions that have the **_l** suffix have the same behavior, but use the locale parameter that's passed in instead of the current locale. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 

@@ -1,16 +1,9 @@
 ---
-title: "propget (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "propget (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.propget"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["propget attribute"]
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # propget
 
@@ -43,7 +36,7 @@ See the example for [bindable](bindable.md) for a sample use of **propget**.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>

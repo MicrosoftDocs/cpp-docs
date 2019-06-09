@@ -1,16 +1,9 @@
 ---
-title: "istreambuf_iterator Class | Microsoft Docs"
-ms.custom: ""
+title: "istreambuf_iterator Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 f1_keywords: ["streambuf/std::istreambuf_iterator", "iterator/std::istreambuf_iterator::char_type", "iterator/std::istreambuf_iterator::int_type", "iterator/std::istreambuf_iterator::istream_type", "iterator/std::istreambuf_iterator::streambuf_type", "iterator/std::istreambuf_iterator::traits_type", "iterator/std::istreambuf_iterator::equal"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["std::istreambuf_iterator [C++]", "std::istreambuf_iterator [C++], char_type", "std::istreambuf_iterator [C++], int_type", "std::istreambuf_iterator [C++], istream_type", "std::istreambuf_iterator [C++], streambuf_type", "std::istreambuf_iterator [C++], traits_type", "std::istreambuf_iterator [C++], equal"]
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # istreambuf_iterator Class
 

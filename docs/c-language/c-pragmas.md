@@ -1,15 +1,8 @@
 ---
-title: "C Pragmas | Microsoft Docs"
-ms.custom: ""
+title: "C Pragmas"
 ms.date: "01/29/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, C/C++"]
 ms.assetid: 3d6d36b4-d565-4632-a4cd-e39aeaded5ad
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # C Pragmas
 

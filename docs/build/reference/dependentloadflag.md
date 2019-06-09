@@ -1,16 +1,9 @@
 ---
 title: "/DEPENDENTLOADFLAG (Set default dependent load flags)"
 description: "The /DEPENDENTLOADFLAG option sets default flags for DLLs loaded using LoadLibrary"
-ms.custom: ""
 ms.date: "05/18/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["dependentloadflag"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["LINK tool [C++], dependent load flags", "-DEPENDENTLOADFLAG linker option", "linker [C++], DEPENDENTLOADFLAG", "DEPENDENTLOADFLAG linker option", "/DEPENDENTLOADFLAG linker option"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /DEPENDENTLOADFLAG (Set default dependent load flags)
 
@@ -22,9 +15,8 @@ Sets the default load flags used when `LoadLibrary` is used to load DLLs.
 
 ### Arguments
 
-|||
-|-|-|
-*loadflags*|An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) calls. The default value is 0.
+*loadflags*<br/>
+An optional "C"-style 16-bit integer value in decimal, octal with a leading zero, or hexadecimal with a leading `0x`, that specifies the dependent load flags to apply to all [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) calls. The default value is 0.
 
 ## Remarks
 
@@ -38,7 +30,7 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 ### To set the DEPENDENTLOADFLAG linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -50,9 +42,9 @@ If you specify the link option `/DEPENDENTLOADFLAG:0xA00` (the value of the comb
 
 ## See also
 
-- [Setting Linker Options](setting-linker-options.md)
-- [Linker Options](linker-options.md)
-- [How to link implicitly to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
-- [Determine which linking method to use](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+- [MSVC linker reference](linking.md)
+- [MSVC Linker Options](linker-options.md)
+- [Link an executable to a DLL](../linking-an-executable-to-a-dll.md#linking-implicitly)
+- [Link an executable to a DLL](../linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
 - [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa)
 - [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)

@@ -1,19 +1,12 @@
 ---
-title: "_chsize | Microsoft Docs"
-ms.custom: ""
+title: "_chsize"
 ms.date: "03/29/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_chsize"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_chsize"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["size", "_chsize function", "size, changing file", "files [C++], changing size", "chsize function"]
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _chsize
 

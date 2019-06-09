@@ -1,15 +1,8 @@
 ---
-title: "Array Declarations | Microsoft Docs"
-ms.custom: ""
+title: "Array Declarations"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["multidimensional arrays", "declaring arrays", "arrays [C++], declaring"]
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Array Declarations
 
@@ -92,6 +85,6 @@ The type of integer required to hold the maximum size of an array is the size of
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md)

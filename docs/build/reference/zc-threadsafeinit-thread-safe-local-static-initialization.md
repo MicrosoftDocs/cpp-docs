@@ -1,16 +1,9 @@
 ---
-title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization) | Microsoft Docs"
-ms.custom: ""
+title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization)"
 ms.date: "03/14/2018"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "threadSafeInit", "Thread-safe Local Static Initialization", "/Zc compiler options (C++)", "Zc compiler options (C++)"]
 ms.assetid: a0fc4b34-2cf0-45a7-a642-b8afc4ca19f2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /Zc:threadSafeInit (Thread-safe Local Static Initialization)
 
@@ -34,7 +27,7 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. From the **Configurations** drop down menu, choose **All Configurations**.
 
@@ -44,6 +37,6 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[Compiler Options](../../build/reference/compiler-options.md)<br/>
-[Setting Compiler Options](../../build/reference/setting-compiler-options.md)<br/>
-[/Zc (Conformance)](../../build/reference/zc-conformance.md)<br/>
+[MSVC Compiler Options](compiler-options.md)<br/>
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)<br/>

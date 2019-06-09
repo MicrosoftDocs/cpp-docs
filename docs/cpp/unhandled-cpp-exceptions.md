@@ -1,15 +1,8 @@
 ---
-title: "Unhandled C++ Exceptions | Microsoft Docs"
-ms.custom: ""
+title: "Unhandled C++ Exceptions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [C++], unhandled exceptions", "catch keyword [C++], handler not found", "exceptions [C++], unhandled", "C++ exception handling, unhandled exceptions", "unhandled exceptions [C++]"]
 ms.assetid: 13f09c53-9254-4407-9db9-14e730e047cc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unhandled C++ Exceptions
 

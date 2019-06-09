@@ -1,15 +1,9 @@
 ---
-title: "How to: Extend the Marshaling Library | Microsoft Docs"
+title: "How to: Extend the Marshaling Library"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Marshaling Library, extending"]
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Extend the Marshaling Library
 
@@ -265,6 +259,6 @@ Native address: 123 Main Street
 Native zip code: 98111
 ```
 
-## See Also
+## See also
 
 [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)

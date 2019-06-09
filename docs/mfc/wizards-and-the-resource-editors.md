@@ -1,15 +1,8 @@
 ---
-title: "Wizards and the Resource Editors | Microsoft Docs"
-ms.custom: ""
+title: "Wizards and the Resource Editors"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["application wizards [MFC], and MFC", "MFC, resource editors", "resource editors, MFC", "MFC Application Wizard", "editors [MFC], resource", "wizards [MFC]", "wizards [MFC], MFC programming", "MFC, wizards", "Class View tool, managing Windows messages"]
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Wizards and the Resource Editors
 
@@ -38,10 +31,10 @@ The Properties window will create empty message-handler member functions, and yo
 
 Use the Visual C++ [resource editors](../windows/resource-editors.md) to create and edit menus, dialog boxes, custom controls, accelerator keys, bitmaps, icons, cursors, strings, and version resources. As of Visual C++ version 4.0, a toolbar editor makes creating toolbars much easier.
 
-To help you even more, the Microsoft Foundation Class Library provides a file called COMMON.RES, which contains "clip art" resources that you can copy from COMMON.RES and paste into your own resource file. COMMON.RES includes toolbar buttons, common cursors, icons, and more. You can use, modify, and redistribute these resources in your application. For more information about COMMON.RES, see the [Clipart sample](../visual-cpp-samples.md).
+To help you even more, the Microsoft Foundation Class Library provides a file called COMMON.RES, which contains "clip art" resources that you can copy from COMMON.RES and paste into your own resource file. COMMON.RES includes toolbar buttons, common cursors, icons, and more. You can use, modify, and redistribute these resources in your application. For more information about COMMON.RES, see the [Clipart sample](../overview/visual-cpp-samples.md).
 
 The MFC Application Wizard, the Visual C++ wizards, resource editors, and the MFC framework do a lot of work for you and make managing your code much easier. The bulk of your application-specific code is in your document and view classes.
 
-## See Also
+## See also
 
 [Using the Classes to Write Applications for Windows](../mfc/using-the-classes-to-write-applications-for-windows.md)

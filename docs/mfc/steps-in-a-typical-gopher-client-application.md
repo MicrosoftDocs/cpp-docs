@@ -1,15 +1,8 @@
 ---
-title: "Steps in a Typical Gopher Client Application | Microsoft Docs"
-ms.custom: ""
+title: "Steps in a Typical Gopher Client Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["WinInet classes [MFC], gopher", "Internet applications [MFC], gopher client applications", "Gopher client applications [MFC]", "Internet client applications [MFC], gopher table"]
 ms.assetid: 3e4e1869-5da0-453d-8ba9-b648c894bb90
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Steps in a Typical Gopher Client Application
 
@@ -27,7 +20,7 @@ The following table shows the steps you might perform in a typical gopher client
 |Handle exceptions.|Use the [CInternetException](../mfc/reference/cinternetexception-class.md) class.|Handles all common Internet exception types.|
 |End the gopher session.|Dispose of the [CInternetSession](../mfc/reference/cinternetsession-class.md) object.|Automatically cleans up open file handles and connections.|
 
-## See Also
+## See also
 
 [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [Prerequisites for Internet Client Classes](../mfc/prerequisites-for-internet-client-classes.md)<br/>

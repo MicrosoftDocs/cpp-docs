@@ -1,15 +1,8 @@
 ---
-title: "Indirection and Address-of Operators | Microsoft Docs"
-ms.custom: ""
+title: "Indirection and Address-of Operators"
 ms.date: "02/16/2018"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["address-of operator (&)", "* operator", "operators [C++], address-of", "ampersand operator (&)", "* operator, indirection operator", "addresses [C++], indirection", "addresses [C++]", "indirection operator", "& operator, address-of operator", "null pointers [C++]", "* operator, address-of operator", "operators [C++], indirection"]
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Indirection and Address-of Operators
 

@@ -1,16 +1,9 @@
 ---
-title: "Single-Byte and Multibyte Character Sets | Microsoft Docs"
-ms.custom: ""
+title: "Single-Byte and Multibyte Character Sets"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.character.multibyte"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["SBCS (single byte character set)", "MBCS [C++], about MBCS", "character sets [C++], multibyte", "character sets [C++], single byte"]
 ms.assetid: 2cbc78ea-33c0-4cfb-b0df-7ce2458431ce
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Single-Byte and Multibyte Character Sets
 
@@ -21,7 +14,7 @@ The ASCII character set defines characters in the range 0x00 - 0x7F. There are a
 
 A multibyte character set may consist of both one-byte and two-byte characters. Thus a multibyte-character string may contain a mixture of single-byte and double-byte characters. A two-byte multibyte character has a lead byte and a trail byte. In a particular multibyte-character set, the lead bytes fall within a certain range, as do the trail bytes. When these ranges overlap, it may be necessary to evaluate the particular context to determine whether a given byte is functioning as a lead byte or a trail byte.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,16 +1,9 @@
 ---
-title: "Dialog Data Exchange Functions for CRecordView and CDaoRecordView | Microsoft Docs"
-ms.custom: ""
+title: "Dialog Data Exchange Functions for CRecordView and CDaoRecordView"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DDX_Field functions [MFC]", "ODBC [MFC], dialog data exchange (DDX) support", "DDX (dialog data exchange) [MFC], database support", "DDX (dialog data exchange) [MFC], functions", "databases [MFC], dialog data exchange (DDX) support", "DAO [MFC], dialog data exchange (DDX) support"]
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
 
@@ -461,7 +454,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
   **Header** afxdao.h
 
-  ## name="ddx_fieldslider"></a>  DDX_FieldSlider
+  ## <a name="ddx_fieldslider"></a>  DDX_FieldSlider
 The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ### Syntax
@@ -511,10 +504,6 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 ### Requirements
 
 **Header:** afxdao.h
-
-### See Also
-
-[Macros and Globals](mfc-macros-and-globals.md)
 
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
@@ -662,6 +651,6 @@ The following `DoDataExchange` function for a [CRecordView](../../mfc/reference/
 
   **Header** afxdao.h
 
-## See Also
+## See also
 
-[Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md)
+[Macros and Globals](mfc-macros-and-globals.md)

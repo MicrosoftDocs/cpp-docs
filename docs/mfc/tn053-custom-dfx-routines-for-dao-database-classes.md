@@ -1,16 +1,8 @@
 ---
-title: "TN053: Custom DFX Routines for DAO Database Classes | Microsoft Docs"
-ms.custom: ""
+title: "TN053: Custom DFX Routines for DAO Database Classes"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.dfx"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, DAO and", "database classes [MFC], DAO", "DAO [MFC], MFC", "DFX (DAO record field exchange) [MFC], custom routines", "TN053", "DAO [MFC], classes", "DFX (DAO record field exchange) [MFC]", "custom DFX routines [MFC]"]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN053: Custom DFX Routines for DAO Database Classes
 
@@ -208,8 +200,7 @@ All the remaining operations only deal with using the data cache. The data cache
 > [!TIP]
 > Model your custom DFX routines on the existing DFX routines for standard data types.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

@@ -1,25 +1,27 @@
 ---
-title: "ALIGN (MASM) | Microsoft Docs"
-ms.custom: ""
-ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
+title: "ALIGN (MASM)"
+ms.date: "01/02/2019"
 f1_keywords: ["align"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ALIGN directive"]
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # ALIGN (MASM)
 
-Aligns the next variable or instruction on a byte that is a multiple of *number*.
+The **ALIGN** directive aligns the next data element or instruction on an address that is a multiple of its parameter. The parameter must be a power of 2 (for example, 1, 2, 4, and so on) that is less than or equal to the segment alignment.
 
 ## Syntax
 
 > ALIGN [[*number*]]
 
+## Remarks
+
+The **ALIGN** directive allows you to specify the beginning offset of a data element or an instruction. Aligned data can improve performance, at the expense of wasted space between data elements. Large performance improvements can be seen when data accesses are on boundaries that fit within cache lines. Accesses on natural boundaries for native types means less time spent in internal hardware realignment microcode.
+
+The need for aligned instructions is rare on modern processors that use a flat addressing model, but may be required for jump targets in older code for other addressing models.
+
+When data is aligned, the skipped space is padded with zeroes. When instructions are aligned, the skipped space is filled with appropriately-sized NOP instructions.
+
 ## See also
 
+[EVEN](even.md)<br/>
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

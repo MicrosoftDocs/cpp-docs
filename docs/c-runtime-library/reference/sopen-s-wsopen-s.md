@@ -1,19 +1,12 @@
 ---
-title: "_sopen_s, _wsopen_s | Microsoft Docs"
-ms.custom: ""
+title: "_sopen_s, _wsopen_s"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_sopen_s", "_wsopen_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_sopen_s", "wsopen_s", "_wsopen_s", "sopen_s"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sopen_s function", "_wsopen_s function", "wsopen_s function", "opening files, for sharing", "files [C++], opening", "_sopen_s function", "files [C++], sharing"]
 ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _sopen_s, _wsopen_s
 
@@ -61,11 +54,11 @@ A nonzero return value indicates an error; in that case **errno** is set to one 
 
 |errno value|Condition|
 |-|-|
-**EACCES**| The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted.
-**EEXIST**| **_O_CREAT** and **_O_EXCL** flags were specified, but *filename* already exists.
-**EINVAL**| Invalid *oflag*, *shflag*, or *pmode* argument, or *pfh* or *filename* was a null pointer.
-**EMFILE**|No more file descriptors available.
-**ENOENT**|File or path not found.
+| **EACCES** |  The given path is a directory, or the file is read-only, but an open-for-writing operation was attempted. |
+| **EEXIST** |  **_O_CREAT** and **_O_EXCL** flags were specified, but *filename* already exists. |
+| **EINVAL** |  Invalid *oflag*, *shflag*, or *pmode* argument, or *pfh* or *filename* was a null pointer. |
+| **EMFILE** | No more file descriptors available. |
+| **ENOENT** | File or path not found. |
 
 If an invalid argument is passed to the function, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and **EINVAL** is returned.
 
@@ -87,23 +80,23 @@ The integer expression *oflag* is formed by combining one or more manifest const
 
 |*oflag* constant|Behavior|
 |-|-|
-**_O_APPEND**|Moves the file pointer to the end of the file before every write operation.
-**_O_BINARY**|Opens the file in binary (untranslated) mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.)
-**_O_CREAT**|Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when **_O_CREAT** is specified.
-**_O_CREAT** &#124; **_O_SHORT_LIVED**|Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when **_O_CREAT** is specified.
-**_O_CREAT** &#124; **_O_TEMPORARY**|Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when **_O_CREAT** is specified.
-**_O_CREAT** &#124; ` _O_EXCL`|Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**.
-**_O_NOINHERIT**|Prevents creation of a shared file descriptor.
-**_O_RANDOM**|Specifies that caching is optimized for, but not restricted to, random access from disk.
-**_O_RDONLY**|Opens a file for reading only. Cannot be specified with **_O_RDWR** or **_O_WRONLY**.
-**_O_RDWR**|Opens a file for both reading and writing. Cannot be specified with **_O_RDONLY** or **_O_WRONLY**.
-**_O_SEQUENTIAL**|Specifies that caching is optimized for, but not restricted to, sequential access from disk.
-**_O_TEXT**|Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](fopen-wfopen.md).)
-**_O_TRUNC**|Opens a file and truncates it to zero length; the file must have write permission. Cannot be specified with **_O_RDONLY**. **_O_TRUNC** used with **_O_CREAT** opens an existing file or creates a file. **Note:** The **_O_TRUNC** flag destroys the contents of the specified file.
-**_O_WRONLY**|Opens a file for writing only. Cannot be specified with **_O_RDONLY** or **_O_RDWR**.
-**_O_U16TEXT**|Opens a file in Unicode UTF-16 mode.
-**_O_U8TEXT**|Opens a file in Unicode UTF-8 mode.
-**_O_WTEXT**|Opens a file in Unicode mode.
+| **_O_APPEND** | Moves the file pointer to the end of the file before every write operation. |
+| **_O_BINARY** | Opens the file in binary (untranslated) mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.) |
+| **_O_CREAT** | Creates a file and opens it for writing. Has no effect if the file specified by *filename* exists. The *pmode* argument is required when **_O_CREAT** is specified. |
+| **_O_CREAT** &#124; **_O_SHORT_LIVED** | Creates a file as temporary and if possible does not flush to disk. The *pmode* argument is required when **_O_CREAT** is specified. |
+| **_O_CREAT** &#124; **_O_TEMPORARY** | Creates a file as temporary; the file is deleted when the last file descriptor is closed. The *pmode* argument is required when **_O_CREAT** is specified. |
+| **_O_CREAT** &#124; ` _O_EXCL` | Returns an error value if a file specified by *filename* exists. Applies only when used with **_O_CREAT**. |
+| **_O_NOINHERIT** | Prevents creation of a shared file descriptor. |
+| **_O_RANDOM** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
+| **_O_RDONLY** | Opens a file for reading only. Cannot be specified with **_O_RDWR** or **_O_WRONLY**. |
+| **_O_RDWR** | Opens a file for both reading and writing. Cannot be specified with **_O_RDONLY** or **_O_WRONLY**. |
+| **_O_SEQUENTIAL** | Specifies that caching is optimized for, but not restricted to, sequential access from disk. |
+| **_O_TEXT** | Opens a file in text (translated) mode. (For more information, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) and [fopen](fopen-wfopen.md).) |
+| **_O_TRUNC** | Opens a file and truncates it to zero length; the file must have write permission. Cannot be specified with **_O_RDONLY**. **_O_TRUNC** used with **_O_CREAT** opens an existing file or creates a file. **Note:** The **_O_TRUNC** flag destroys the contents of the specified file. |
+| **_O_WRONLY** | Opens a file for writing only. Cannot be specified with **_O_RDONLY** or **_O_RDWR**. |
+| **_O_U16TEXT** | Opens a file in Unicode UTF-16 mode. |
+| **_O_U8TEXT** | Opens a file in Unicode UTF-8 mode. |
+| **_O_WTEXT** | Opens a file in Unicode mode. |
 
 To specify the file access mode, you must specify either **_O_RDONLY**, **_O_RDWR**, or **_O_WRONLY**. There is no default value for the access mode.
 
@@ -115,18 +108,18 @@ The argument *shflag* is a constant expression that consists of one of the follo
 
 |*shflag* constant|Behavior|
 |-|-|
-**_SH_DENYRW**|Denies read and write access to a file.
-**_SH_DENYWR**|Denies write access to a file.
-**_SH_DENYRD**|Denies read access to a file.
-**_SH_DENYNO**|Permits read and write access.
+| **_SH_DENYRW** | Denies read and write access to a file. |
+| **_SH_DENYWR** | Denies write access to a file. |
+| **_SH_DENYRD** | Denies read access to a file. |
+| **_SH_DENYNO** | Permits read and write access. |
 
 The *pmode* argument is always required, unlike in **_sopen**. When you specify **_O_CREAT**, if the file does not exist, *pmode* specifies the file's permission settings, which are set when the new file is closed the first time. Otherwise, *pmode* is ignored. *pmode* is an integer expression that contains one or both of the manifest constants **_S_IWRITE** and **_S_IREAD**, which are defined in \<sys\stat.h>. When both constants are given, they are combined with the bitwise-OR operator. The meaning of *pmode* is as follows.
 
 |*pmode*|Meaning|
 |-|-|
-**_S_IREAD**|Only reading permitted.
-**_S_IWRITE**|Writing permitted. (In effect, permits reading and writing.)
-**_S_IREAD** &#124; **_S_IWRITE**|Reading and writing permitted.
+| **_S_IREAD** | Only reading permitted. |
+| **_S_IWRITE** | Writing permitted. (In effect, permits reading and writing.) |
+| **_S_IREAD** &#124; **_S_IWRITE** | Reading and writing permitted. |
 
 If write permission is not given, the file is read-only. In the Windows operating system, all files are readable; it is not possible to give write-only permission. Therefore, the modes **_S_IWRITE** and **_S_IREAD** | **_S_IWRITE** are equivalent.
 

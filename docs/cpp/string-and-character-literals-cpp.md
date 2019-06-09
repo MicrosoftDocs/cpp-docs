@@ -1,16 +1,9 @@
 ---
-title: "String and Character Literals  (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
+title: "String and Character Literals  (C++)"
+ms.date: "05/07/2019"
 f1_keywords: ["R"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["L constant", "escape sequences", "Null strings, null-terminated strings", "literal strings, C++", "Null strings", "string literals, syntax", "string literals", "literal strings", "strings [C++], string literals", "NULL, character constant", "wide characters, strings"]
+helpviewer_keywords: ["literal strings [C++]", "string literals [C++]"]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # String and Character Literals  (C++)
 
@@ -38,7 +31,7 @@ int main()
 
     // Raw string literals containing unescaped \ and "
     auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
+    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
     auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
@@ -95,15 +88,22 @@ Character literals are encoded differently based their prefix.
 
 There are three kinds of escape sequences: simple, octal, and hexadecimal. Escape sequences may be any of the following:
 
-|Value|Escape sequence|Value|Escape sequence|
-|-----------|---------------------|-----------|---------------------|
-|newline|\n|backslash|\\\|
-|horizontal tab|\t|question mark|? or \\?|
-|vertical tab|\v|single quote|\\'|
-|backspace|\b|double quote|\\"|
-|carriage return|\r|the null character|\0|
-|form feed|\f|octal|\ooo|
-|alert (bell)|\a|hexadecimal|\xhhh|
+|Value|Escape sequence|
+|-----------|---------------------|
+| newline | \\n |
+| backslash | \\\\ |
+| horizontal tab | \\t |
+| question mark | ? or \\? |
+| vertical tab | \\v |
+| single quote | \\' |
+| backspace | \\b |
+| double quote | \\" |
+| carriage return | \\r |
+| the null character | \\0 |
+| form feed | \\f |
+| octal | \\ooo |
+| alert (bell) | \\a |
+| hexadecimal | \\xhhh |
 
 The following code shows some examples of escaped characters using ordinary character literals. The same escape sequence syntax is valid for the other character literal types.
 
@@ -242,7 +242,7 @@ A raw string literal is a null-terminated array—of any character type—that c
 // represents the string: An unescaped \ character
 const char* raw_narrow = R"(An unescaped \ character)";
 const wchar_t* raw_wide = LR"(An unescaped \ character)";
-const char*       raw_utf8  = u8R"(An unescaped \ character)";
+const char*       raw_utf8  = u8R"(An unescaped \ character)";
 const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```
@@ -310,7 +310,7 @@ Because string literals (not including std:string literals) are constants, tryin
 
 **Microsoft Specific**
 
-In Visual C++ you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
+In Microsoft C++ you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:
 
 ```cpp
 wchar_t* str = L"hello";

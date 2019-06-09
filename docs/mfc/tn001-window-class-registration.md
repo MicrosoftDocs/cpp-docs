@@ -1,20 +1,13 @@
 ---
-title: "TN001: Window Class Registration | Microsoft Docs"
-ms.custom: ""
+title: "TN001: Window Class Registration"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.registration"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN001", "WNDCLASS [MFC]", "AfxRegisterClass function"]
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN001: Window Class Registration
 
-This note describes the MFC routines that register the special [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
+This note describes the MFC routines that register the special [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
 
 ## The Problem
 
@@ -28,7 +21,7 @@ This `WNDCLASS` must be registered through one of four means:
 
 - Explicitly by calling the MFC [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) or [AfxRegisterClass](../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-- Explicitly by calling the Windows routine [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586).
+- Explicitly by calling the Windows routine [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa).
 
 ## WNDCLASS Fields
 
@@ -103,8 +96,7 @@ If you want to do anything more sophisticated than what `AfxRegisterWndClass` pr
 
 It is important to use `AfxRegisterClass` (or `AfxRegisterWndClass`) in a DLL on Win32. Win32 does not automatically unregister classes registered by a DLL, so you must explicitly unregister classes when the DLL is terminated. By using `AfxRegisterClass` instead of `RegisterClass` this is handled automatically for you. `AfxRegisterClass` maintains a list of unique classes registered by your DLL and will automatically unregister them when the DLL terminates. When you use `RegisterClass` in a DLL, you must ensure that all classes are unregistered when the DLL is terminated (in your [DllMain](/windows/desktop/Dlls/dllmain) function). Failure to do so might cause `RegisterClass` to fail unexpectedly when another client application tries to use your DLL.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

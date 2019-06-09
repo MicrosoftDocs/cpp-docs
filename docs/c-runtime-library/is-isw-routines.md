@@ -1,18 +1,11 @@
 ---
-title: "is, isw Routines | Microsoft Docs"
-ms.custom: ""
+title: "is, isw Routines"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll", "msvcr120.dll"]
 apitype: "DLLExport"
 f1_keywords: ["isw", "is"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["is routines", "isw routines"]
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # is, isw Routines
 
@@ -326,7 +319,7 @@ int main( void )
 7f            AS  C                              .
 ```
 
-## See Also
+## See also
 
 [Character Classification](../c-runtime-library/character-classification.md)<br/>
 [Locale](../c-runtime-library/locale.md)<br/>

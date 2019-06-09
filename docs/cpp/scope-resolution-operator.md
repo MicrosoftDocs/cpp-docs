@@ -1,16 +1,9 @@
 ---
-title: "Scope Resolution Operator: :: | Microsoft Docs"
-ms.custom: ""
+title: "Scope Resolution Operator: ::"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["::"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", ":: operator"]
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Scope Resolution Operator: ::
 

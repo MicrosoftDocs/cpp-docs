@@ -1,16 +1,9 @@
 ---
-title: "COleServerDoc Class | Microsoft Docs"
-ms.custom: ""
+title: "COleServerDoc Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleServerDoc", "AFXOLE/COleServerDoc", "AFXOLE/COleServerDoc::COleServerDoc", "AFXOLE/COleServerDoc::ActivateDocObject", "AFXOLE/COleServerDoc::ActivateInPlace", "AFXOLE/COleServerDoc::DeactivateAndUndo", "AFXOLE/COleServerDoc::DiscardUndoState", "AFXOLE/COleServerDoc::GetClientSite", "AFXOLE/COleServerDoc::GetEmbeddedItem", "AFXOLE/COleServerDoc::GetItemClipRect", "AFXOLE/COleServerDoc::GetItemPosition", "AFXOLE/COleServerDoc::GetZoomFactor", "AFXOLE/COleServerDoc::IsDocObject", "AFXOLE/COleServerDoc::IsEmbedded", "AFXOLE/COleServerDoc::IsInPlaceActive", "AFXOLE/COleServerDoc::NotifyChanged", "AFXOLE/COleServerDoc::NotifyClosed", "AFXOLE/COleServerDoc::NotifyRename", "AFXOLE/COleServerDoc::NotifySaved", "AFXOLE/COleServerDoc::OnDeactivate", "AFXOLE/COleServerDoc::OnDeactivateUI", "AFXOLE/COleServerDoc::OnDocWindowActivate", "AFXOLE/COleServerDoc::OnResizeBorder", "AFXOLE/COleServerDoc::OnShowControlBars", "AFXOLE/COleServerDoc::OnUpdateDocument", "AFXOLE/COleServerDoc::RequestPositionChange", "AFXOLE/COleServerDoc::SaveEmbedding", "AFXOLE/COleServerDoc::ScrollContainerBy", "AFXOLE/COleServerDoc::UpdateAllItems", "AFXOLE/COleServerDoc::CreateInPlaceFrame", "AFXOLE/COleServerDoc::DestroyInPlaceFrame", "AFXOLE/COleServerDoc::GetDocObjectServer", "AFXOLE/COleServerDoc::OnClose", "AFXOLE/COleServerDoc::OnExecOleCmd", "AFXOLE/COleServerDoc::OnFrameWindowActivate", "AFXOLE/COleServerDoc::OnGetEmbeddedItem", "AFXOLE/COleServerDoc::OnReactivateAndUndo", "AFXOLE/COleServerDoc::OnSetHostNames", "AFXOLE/COleServerDoc::OnSetItemRects", "AFXOLE/COleServerDoc::OnShowDocument"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleServerDoc [MFC], COleServerDoc", "COleServerDoc [MFC], ActivateDocObject", "COleServerDoc [MFC], ActivateInPlace", "COleServerDoc [MFC], DeactivateAndUndo", "COleServerDoc [MFC], DiscardUndoState", "COleServerDoc [MFC], GetClientSite", "COleServerDoc [MFC], GetEmbeddedItem", "COleServerDoc [MFC], GetItemClipRect", "COleServerDoc [MFC], GetItemPosition", "COleServerDoc [MFC], GetZoomFactor", "COleServerDoc [MFC], IsDocObject", "COleServerDoc [MFC], IsEmbedded", "COleServerDoc [MFC], IsInPlaceActive", "COleServerDoc [MFC], NotifyChanged", "COleServerDoc [MFC], NotifyClosed", "COleServerDoc [MFC], NotifyRename", "COleServerDoc [MFC], NotifySaved", "COleServerDoc [MFC], OnDeactivate", "COleServerDoc [MFC], OnDeactivateUI", "COleServerDoc [MFC], OnDocWindowActivate", "COleServerDoc [MFC], OnResizeBorder", "COleServerDoc [MFC], OnShowControlBars", "COleServerDoc [MFC], OnUpdateDocument", "COleServerDoc [MFC], RequestPositionChange", "COleServerDoc [MFC], SaveEmbedding", "COleServerDoc [MFC], ScrollContainerBy", "COleServerDoc [MFC], UpdateAllItems", "COleServerDoc [MFC], CreateInPlaceFrame", "COleServerDoc [MFC], DestroyInPlaceFrame", "COleServerDoc [MFC], GetDocObjectServer", "COleServerDoc [MFC], OnClose", "COleServerDoc [MFC], OnExecOleCmd", "COleServerDoc [MFC], OnFrameWindowActivate", "COleServerDoc [MFC], OnGetEmbeddedItem", "COleServerDoc [MFC], OnReactivateAndUndo", "COleServerDoc [MFC], OnSetHostNames", "COleServerDoc [MFC], OnSetItemRects", "COleServerDoc [MFC], OnShowDocument"]
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleServerDoc Class
 
@@ -864,9 +857,9 @@ You typically call this function after the user changes the server document. If 
 
 This function calls the `OnUpdate` member function for each of the document's items except the sending item, passing *pHint*, *lHint*, and *nDrawAspect*. Use these parameters to pass information to the items about the modifications made to the document. You can encode information using *lHint* or you can define a `CObject`-derived class to store information about the modifications and pass an object of that class using *pHint*. Override the `OnUpdate` member function in your `COleServerItem`-derived class to optimize the updating of each item depending on whether its presentation has changed.
 
-## See Also
+## See also
 
-[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [COleLinkingDoc Class](../../mfc/reference/colelinkingdoc-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [COleDocument Class](../../mfc/reference/coledocument-class.md)<br/>

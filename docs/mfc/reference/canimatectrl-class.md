@@ -1,16 +1,9 @@
 ---
-title: "CAnimateCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CAnimateCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CAnimateCtrl", "AFXCMN/CAnimateCtrl", "AFXCMN/CAnimateCtrl::CAnimateCtrl", "AFXCMN/CAnimateCtrl::Close", "AFXCMN/CAnimateCtrl::Create", "AFXCMN/CAnimateCtrl::CreateEx", "AFXCMN/CAnimateCtrl::IsPlaying", "AFXCMN/CAnimateCtrl::Open", "AFXCMN/CAnimateCtrl::Play", "AFXCMN/CAnimateCtrl::Seek", "AFXCMN/CAnimateCtrl::Stop"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimateCtrl [MFC], CAnimateCtrl", "CAnimateCtrl [MFC], Close", "CAnimateCtrl [MFC], Create", "CAnimateCtrl [MFC], CreateEx", "CAnimateCtrl [MFC], IsPlaying", "CAnimateCtrl [MFC], Open", "CAnimateCtrl [MFC], Play", "CAnimateCtrl [MFC], Seek", "CAnimateCtrl [MFC], Stop"]
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CAnimateCtrl Class
 
@@ -133,7 +126,7 @@ virtual BOOL Create(
 Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](/windows/desktop/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.
+Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
 
 *pParentWnd*<br/>
 Specifies the animation control's parent window, usually a `CDialog`. It must not be NULL.
@@ -187,7 +180,7 @@ Specifies the extended style of the control being created. For a list of extende
 Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](/windows/desktop/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
 
 *pParentWnd*<br/>
 A pointer to the window that is the control's parent.
@@ -331,10 +324,9 @@ Nonzero if successful; otherwise zero.
 
   See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
-## See Also
+## See also
 
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CAnimateCtrl::Create](#create)<br/>
 [ON_CONTROL](message-map-macros-mfc.md#on_control)
-

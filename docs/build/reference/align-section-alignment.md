@@ -1,15 +1,8 @@
 ---
-title: "/ALIGN (Section Alignment) | Microsoft Docs"
-ms.custom: ""
+title: "/ALIGN (Section Alignment)"
 ms.date: "12/29/2017"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["sections, specifying alignment", "ALIGN linker option", "/ALIGN linker option", "-ALIGN linker option", "section alignment", "sections"]
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # /ALIGN (Section Alignment)
 
@@ -28,13 +21,13 @@ The **/ALIGN** option specifies the alignment of each section within the linear 
 
 Unless you are writing an application such as a device driver, you should not need to modify the alignment.
 
-It is possible to modify the alignment of a particular section with the align parameter to the [/SECTION](../../build/reference/section-specify-section-attributes.md) option.
+It is possible to modify the alignment of a particular section with the align parameter to the [/SECTION](section-specify-section-attributes.md) option.
 
 The alignment value that you specify cannot be smaller than the largest section alignment.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Choose the **Configuration Properties** > **Linker** > **Command Line** property page.
 
@@ -46,5 +39,5 @@ The alignment value that you specify cannot be smaller than the largest section 
 
 ## See also
 
-[Setting Linker Options](../../build/reference/setting-linker-options.md)<br/>
-[Linker Options](../../build/reference/linker-options.md)
+[MSVC linker reference](linking.md)<br/>
+[MSVC Linker Options](linker-options.md)

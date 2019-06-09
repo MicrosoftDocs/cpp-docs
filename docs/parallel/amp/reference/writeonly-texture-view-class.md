@@ -1,15 +1,8 @@
 ---
-title: "writeonly_texture_view Class | Microsoft Docs"
-ms.custom: ""
+title: "writeonly_texture_view Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-amp"]
-ms.topic: "reference"
 f1_keywords: ["writeonly_texture_view", "AMP_GRAPHICS/writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::rank Constant"]
-dev_langs: ["C++"]
 ms.assetid: 8d117ad3-0a1c-41ae-b29c-7c95fdd4d04d
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # writeonly_texture_view Class
 
@@ -162,6 +155,6 @@ The type of the elements in the texture.
 *_Src*<br/>
 The texture that is used to create the `writeonly_texture_view`.
 
-## See Also
+## See also
 
 [Concurrency::graphics Namespace](concurrency-graphics-namespace.md)

@@ -1,14 +1,7 @@
 ---
-title: "Resolving ambiguous declarations (C++) | Microsoft Docs"
-ms.custom: ""
+title: "Resolving ambiguous declarations (C++)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 ms.assetid: 3d773ee7-bbea-47de-80c2-cb0a9d4ec0b9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Resolving ambiguous declarations (C++)
 

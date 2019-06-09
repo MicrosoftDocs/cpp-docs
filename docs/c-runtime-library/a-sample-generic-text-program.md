@@ -1,15 +1,8 @@
 ---
-title: "A Sample Generic-Text Program | Microsoft Docs"
-ms.custom: ""
+title: "A Sample Generic-Text Program"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_TCHAR type", "mappings, TCHAR.H data types", "generic-text example [CRT]", "TCHAR type", "TCHAR.H data types, mapping"]
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # A Sample Generic-Text Program
 
@@ -170,7 +163,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md)<br/>
 [Data Type Mappings](../c-runtime-library/data-type-mappings.md)<br/>

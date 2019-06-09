@@ -1,16 +1,9 @@
 ---
-title: "CComEnumOnSTL Class | Microsoft Docs"
-ms.custom: ""
+title: "CComEnumOnSTL Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CComEnumOnSTL", "atlcom/ATL::CComEnumOnSTL"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComEnumOnSTL class"]
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CComEnumOnSTL Class
 
@@ -97,10 +90,10 @@ This template function can be used to implement the `_NewEnum` property of a col
 
 This code creates a **typedef** for `CComEnumOnSTL` that exposes a vector of `CComVariant`s by means of the `IEnumVariant` interface. The `CVariantCollection` class simply specializes `CreateSTLEnumerator` to work with enumerator objects of this type.
 
-## See Also
+## See also
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../visual-cpp-samples.md)<br/>
+[ATLCollections Sample: Demonstrates ICollectionOnSTLImpl, CComEnumOnSTL, and Custom Copy Policy Classes](../../overview/visual-cpp-samples.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

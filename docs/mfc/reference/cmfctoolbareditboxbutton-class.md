@@ -1,16 +1,9 @@
 ---
-title: "CMFCToolBarEditBoxButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCToolBarEditBoxButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CanBeStretched", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::CopyFrom", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetByCmd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContentsAll", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetEditBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetHwnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::GetInvalidateRect", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::HaveHotBorder", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::IsFlatMode", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::NotifyCommand", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnAddToCustomizePage", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnChangeParentWnd", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnClick", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnCtlColor", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnGlobalFontsChanged", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnMove", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnShow", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnSize", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::OnUpdateToolTip", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetContextMenuID", "AFXTOOLBAREDITBOXBUTTON/CMFCToolBarEditBoxButton::SetFlatMode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolBarEditBoxButton [MFC], CMFCToolBarEditBoxButton", "CMFCToolBarEditBoxButton [MFC], CanBeStretched", "CMFCToolBarEditBoxButton [MFC], CopyFrom", "CMFCToolBarEditBoxButton [MFC], GetByCmd", "CMFCToolBarEditBoxButton [MFC], GetContentsAll", "CMFCToolBarEditBoxButton [MFC], GetContextMenuID", "CMFCToolBarEditBoxButton [MFC], GetEditBorder", "CMFCToolBarEditBoxButton [MFC], GetHwnd", "CMFCToolBarEditBoxButton [MFC], GetInvalidateRect", "CMFCToolBarEditBoxButton [MFC], HaveHotBorder", "CMFCToolBarEditBoxButton [MFC], IsFlatMode", "CMFCToolBarEditBoxButton [MFC], NotifyCommand", "CMFCToolBarEditBoxButton [MFC], OnAddToCustomizePage", "CMFCToolBarEditBoxButton [MFC], OnChangeParentWnd", "CMFCToolBarEditBoxButton [MFC], OnClick", "CMFCToolBarEditBoxButton [MFC], OnCtlColor", "CMFCToolBarEditBoxButton [MFC], OnGlobalFontsChanged", "CMFCToolBarEditBoxButton [MFC], OnMove", "CMFCToolBarEditBoxButton [MFC], OnShow", "CMFCToolBarEditBoxButton [MFC], OnSize", "CMFCToolBarEditBoxButton [MFC], OnUpdateToolTip", "CMFCToolBarEditBoxButton [MFC], SetContextMenuID", "CMFCToolBarEditBoxButton [MFC], SetFlatMode"]
 ms.assetid: b21d9b67-6bf7-4ca9-bd62-b237756e0ab3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarEditBoxButton Class
 
@@ -638,7 +631,7 @@ virtual void SetStyle(UINT nStyle);
 
 This method sets [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) to *nStyle* It also disables the text box when the application is in Customize mode, and enables it when the application is not in Customize mode (see [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) and [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for a list of valid style flags.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
@@ -646,4 +639,3 @@ This method sets [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbu
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [Walkthrough: Putting Controls On Toolbars](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

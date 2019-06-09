@@ -1,16 +1,9 @@
 ---
-title: "OnCmdMsg Handler | Microsoft Docs"
-ms.custom: ""
+title: "OnCmdMsg Handler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["OnCmdMsg"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["messages, routing", "handlers [MFC]", "command routing [MFC], OnCmdMsg handler", "handlers, OnCmdMessage [MFC]", "OnCmdMessage method [MFC]"]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # OnCmdMsg Handler
 
@@ -20,7 +13,6 @@ Each command-target class may override the `OnCmdMsg` member function. The overr
 
 The default `CCmdTarget` implementation of `OnCmdMsg` uses the message map of the command-target class to search for a handler function for each command message it receives — in the same way that standard messages are searched. If it finds a match, it calls the handler. Message-map searching is explained in [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md).
 
-## See Also
+## See also
 
 [How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
-

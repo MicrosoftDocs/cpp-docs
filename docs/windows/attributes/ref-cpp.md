@@ -1,16 +1,9 @@
 ---
-title: "ref  (C++ COM Attribute) | Microsoft Docs"
-ms.custom: ""
+title: "ref  (C++ COM Attribute)"
 ms.date: "10/02/2018"
-ms.technology: ["cpp-windows"]
-ms.topic: "reference"
 f1_keywords: ["vc-attr.ref"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ref attribute"]
 ms.assetid: 67e82d3e-07d9-4ef8-bf2b-0a4491d12557
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
 # ref (C++)
 
@@ -55,7 +48,7 @@ __interface IFireTabCtrl
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>

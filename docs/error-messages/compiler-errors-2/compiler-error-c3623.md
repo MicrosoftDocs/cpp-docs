@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C3623 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C3623"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C3623"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C3623"]
 ms.assetid: a0341b45-062a-4f67-beb9-ba74201ed1ed
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3623
 

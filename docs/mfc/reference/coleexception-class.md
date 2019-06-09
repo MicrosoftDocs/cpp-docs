@@ -1,16 +1,9 @@
 ---
-title: "COleException Class | Microsoft Docs"
-ms.custom: ""
+title: "COleException Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["COleException [MFC], Process", "COleException [MFC], m_sc"]
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # COleException Class
 
@@ -102,9 +95,8 @@ For more information on SCODE, see [Structure of COM Error Codes](/windows/deskt
 
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## See Also
+## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
 [CException Class](../../mfc/reference/cexception-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

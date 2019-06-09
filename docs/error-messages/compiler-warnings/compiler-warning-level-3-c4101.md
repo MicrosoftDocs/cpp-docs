@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 3) C4101 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 3) C4101"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4101"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4101"]
 ms.assetid: d98563cd-9dce-4aae-8f12-bd552a4ea677
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4101
 

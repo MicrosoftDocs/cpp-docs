@@ -1,10 +1,7 @@
 ---
-title: "&lt;vector&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;vector&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["vector/std::operator!=", "vector/std::operator&gt;", "vector/std::operator&gt;=", "vector/std::operator&lt;", "vector/std::operator&lt;=", "vector/std::operator=="]
-dev_langs: ["C++"]
 ms.assetid: 1d14f312-6f59-4ec7-88ae-95f89a558823
 helpviewer_keywords: ["std::operator!= (vector)", "std::operator&gt; (vector)", "std::operator&gt;= (vector)", "std::operator&lt; (vector)", "std::operator&lt;= (vector)", "std::operator== (vector)"]
 ---

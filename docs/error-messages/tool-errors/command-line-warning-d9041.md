@@ -1,16 +1,9 @@
 ---
-title: "Command-Line Warning D9041 | Microsoft Docs"
-ms.custom: ""
+title: "Command-Line Warning D9041"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["D9041"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["D9041"]
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9041
 
@@ -28,7 +21,7 @@ cl /EHsc /LD /wd6001 filename.cpp
 
 To fix the warning, add the **/analyze** command line option. If **/analyze** is not supported on your version of the compiler, remove the invalid warning number from the **/wd** option.
 
-## See Also
+## See also
 
 [Command-Line Errors D8000 Through D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
-[Compiler Options](../../build/reference/compiler-options.md)
+[MSVC Compiler Options](../../build/reference/compiler-options.md)

@@ -1,19 +1,12 @@
 ---
-title: "_mbsnbcpy, _mbsnbcpy_l | Microsoft Docs"
-ms.custom: ""
+title: "_mbsnbcpy, _mbsnbcpy_l"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_mbsnbcpy", "_mbsnbcpy_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["mbsnbcpy", "_ftcsncpy", "_mbsnbcpy", "mbsnbcpy_l", "_mbsnbcpy_l"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["mbsnbcpy function", "_mbsnbcpy_l function", "_mbsnbcpy function", "_tcsncpy function", "tcsncpy_l function", "_tcsncpy_l function", "mbsnbcpy_l function", "tcsncpy function"]
 ms.assetid: 83d17b50-3cbf-4df9-bce8-3b6d52f85d04
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _mbsnbcpy, _mbsnbcpy_l
 

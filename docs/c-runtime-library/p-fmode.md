@@ -1,19 +1,12 @@
 ---
-title: "__p__fmode | Microsoft Docs"
-ms.custom: ""
+title: "__p__fmode"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["__p__fmode"]
-apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll"]
+apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["__p__fmode"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["__p__fmode"]
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # __p__fmode
 

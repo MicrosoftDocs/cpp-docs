@@ -1,16 +1,9 @@
 ---
-title: "TN020: ID Naming and Numbering Conventions | Microsoft Docs"
-ms.custom: ""
+title: "TN020: ID Naming and Numbering Conventions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
 f1_keywords: ["vc.id"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["TN020", "resource identifiers, naming and numbering", "resource identifiers"]
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN020: ID Naming and Numbering Conventions
 
@@ -86,13 +79,13 @@ Reasons for these range limits:
 
 - MFC's internal framework reserves these ranges:
 
-   - 0x7000 through 0x7FFF (see afxres.h)
+  - 0x7000 through 0x7FFF (see afxres.h)
 
-   - 0xE000 through 0xEFFF (see afxres.h)
+  - 0xE000 through 0xEFFF (see afxres.h)
 
-   - 16000 through 18000 (see afxribbonres.h)
+  - 16000 through 18000 (see afxribbonres.h)
 
-   These ranges may change in future MFC implementations.
+  These ranges may change in future MFC implementations.
 
 - Several Windows system commands use the range of 0xF000 through 0xFFFF.
 
@@ -100,8 +93,7 @@ Reasons for these range limits:
 
 - The range of 0x8000 through 0xFFFF for strings is reserved for menu prompts for commands.
 
-## See Also
+## See also
 
 [Technical Notes by Number](../mfc/technical-notes-by-number.md)<br/>
 [Technical Notes by Category](../mfc/technical-notes-by-category.md)
-

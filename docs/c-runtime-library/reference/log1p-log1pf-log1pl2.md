@@ -1,18 +1,12 @@
 ---
-title: "log1p, log1pf, log1pl2 | Microsoft Docs"
-ms.custom: ""
+title: "log1p, log1pf, log1pl2"
 ms.date: "04/05/2018"
-ms.technology: ["cpp", "devlang-cpp"]
-ms.topic: "reference"
 apiname: ["log1p", "log1pf", "log1pl"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["log1p", "log1pf", "log1pl", "math/log1p", "math/log1pf", "math/log1pl"]
 helpviewer_keywords: ["log1p function", "log1pf function", "log1pl function"]
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # log1p, log1pf, log1pl
 
@@ -40,7 +34,6 @@ float log1pf(
 long double log1pl(
    long double x
 );
-
 ```
 
 ### Parameters

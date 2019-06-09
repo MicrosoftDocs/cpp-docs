@@ -1,15 +1,8 @@
 ---
-title: "Creating a Project for the Provider | Microsoft Docs"
-ms.custom: ""
+title: "Creating a Project for the Provider"
 ms.date: "10/22/2018"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "OLE DB providers, projects", "projects [C++], creating"]
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Project for the Provider
 
@@ -32,6 +25,6 @@ ms.workload: ["cplusplus", "data-storage"]
 
 1. Click **Finish**.
 
-## See Also
+## See also
 
 [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)

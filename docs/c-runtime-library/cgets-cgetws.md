@@ -1,19 +1,12 @@
 ---
-title: "_cgets, _cgetws | Microsoft Docs"
-ms.custom: ""
+title: "_cgets, _cgetws"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apiname: ["_cgetws", "_cgets"]
 apilocation: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["cgetws", "_cgetws", "_cgets"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _cgets, _cgetws
 
@@ -120,7 +113,7 @@ Line Length = 16
 Text = A line of input.
 ```
 
-## See Also
+## See also
 
 [Console and Port I/O](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)

@@ -1,15 +1,8 @@
 ---
-title: "Dialog Data Exchange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Dialog Data Exchange"
+ms.date: "11/19/2018"
 helpviewer_keywords: ["initializing dialog boxes", "canceling data exchange", "dialog box data, retrieving", "DDX (dialog data exchange), data exchange mechanism", "dialog boxes [MFC], initializing", "dialog boxes [MFC], retrieving user input using DDX", "dialog box data", "dialog boxes [MFC], data exchange", "CDataExchange class [MFC], using DDX", "DoDataExchange method [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "transferring dialog box data", "DDX (dialog data exchange), canceling", "UpdateData method [MFC]", "retrieving dialog box data [MFC]"]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Dialog Data Exchange
 
@@ -19,7 +12,7 @@ The same mechanism transfers values from the controls to the member variables wh
 
 The following figure illustrates dialog data exchange.
 
-![Dialog box data exchange](../mfc/media/vc379d1.gif "vc379d1")
+![Dialog box data exchange](../mfc/media/vc379d1.gif "Dialog box data exchange") <br/>
 Dialog Data Exchange
 
 `UpdateData` works in both directions, as specified by the **BOOL** parameter passed to it. To carry out the exchange, `UpdateData` sets up a `CDataExchange` object and calls your dialog class's override of `CDialog`'s `DoDataExchange` member function. `DoDataExchange` takes an argument of type `CDataExchange`. The `CDataExchange` object passed to `UpdateData` represents the context of the exchange, defining such information as the direction of the exchange.
@@ -34,9 +27,8 @@ The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions sho
 
 If the user cancels a modal dialog box, the `OnCancel` member function terminates the dialog box and `DoModal` returns the value **IDCANCEL**. In that case, no data is exchanged between the dialog box and the dialog object.
 
-## See Also
+## See also
 
 [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
 [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Data Validation](../mfc/dialog-data-validation.md)
-

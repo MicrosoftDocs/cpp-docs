@@ -1,15 +1,8 @@
 ---
-title: "Implementing a Dialog Box | Microsoft Docs"
-ms.custom: ""
+title: "Implementing a Dialog Box"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleDialog class, implementing dialog boxes in ATL", "dialog boxes, ATL", "CAxDialogImpl class, implementing dialog boxes in ATL", "ATL, dialog boxes"]
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Implementing a Dialog Box
 
@@ -43,7 +36,6 @@ The following class implements a dialog box:
 
 [!code-cpp[NVC_ATL_Windowing#66](../atl/codesnippet/cpp/implementing-a-dialog-box_1.h)]
 
-## See Also
+## See also
 
 [Window Classes](../atl/atl-window-classes.md)
-

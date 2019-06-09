@@ -1,16 +1,9 @@
 ---
-title: "IConnectionPointContainerImpl Class | Microsoft Docs"
-ms.custom: ""
+title: "IConnectionPointContainerImpl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints", "ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["connectable objects", "connection points [C++], container", "IConnectionPointContainerImpl class"]
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # IConnectionPointContainerImpl Class
 
@@ -82,7 +75,7 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 
 See [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) in the Windows SDK.
 
-## See Also
+## See also
 
 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

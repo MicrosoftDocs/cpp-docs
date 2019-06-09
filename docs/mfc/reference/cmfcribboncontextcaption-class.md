@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonContextCaption Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonContextCaption Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonContextCaption [MFC], GetColor", "CMFCRibbonContextCaption [MFC], GetRightTabX"]
 ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonContextCaption Class
 
@@ -99,7 +92,7 @@ Returns the right-hand X-value of the enclosing rectangle of the `CMFCRibbonCate
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

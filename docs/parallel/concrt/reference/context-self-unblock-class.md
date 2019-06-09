@@ -1,16 +1,9 @@
 ---
-title: "context_self_unblock Class | Microsoft Docs"
-ms.custom: ""
+title: "context_self_unblock Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "reference"
 f1_keywords: ["context_self_unblock", "CONCRT/concurrency::context_self_unblock", "CONCRT/concurrency::context_self_unblock::context_self_unblock"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["context_self_unblock class"]
 ms.assetid: 9601cd28-4f40-4c2e-89ab-747068956331
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # context_self_unblock Class
 
@@ -57,6 +50,6 @@ context_self_unblock() throw();
 *_Message*<br/>
 A descriptive message of the error.
 
-## See Also
+## See also
 
 [concurrency Namespace](concurrency-namespace.md)

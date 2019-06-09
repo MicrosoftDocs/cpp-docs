@@ -1,15 +1,8 @@
 ---
-title: "Print Preview Architecture | Microsoft Docs"
-ms.custom: ""
+title: "Print Preview Architecture"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["print preview [MFC], process", "previewing printing", "print preview [MFC], architecture", "printing [MFC], print preview", "print preview [MFC], modifications to MFC"]
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Print Preview Architecture
 
@@ -51,7 +44,7 @@ Sometimes you may want `OnPreparePrinting` to perform different initialization d
 
 The `CPrintInfo` structure also contains a member named *m_strPageDesc*, which is used to format the strings displayed at the bottom of the screen in single-page and multiple-page modes. By default these strings are of the form "Page *n*" and "Pages *n* - *m*," but you can modify *m_strPageDesc* from within `OnPreparePrinting` and set the strings to something more elaborate. See [CPrintInfo Structure](../mfc/reference/cprintinfo-structure.md) in the *MFC Reference* for more information.
 
-## See Also
+## See also
 
 [Printing and Print Preview](../mfc/printing-and-print-preview.md)<br/>
 [Printing](../mfc/printing.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Adding Controls By Hand | Microsoft Docs"
-ms.custom: ""
+title: "Adding Controls By Hand"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Windows common controls [MFC], adding", "dialog box controls [MFC], adding to dialog boxes", "controlling input focus", "input focus control", "focus, controlling input [MFC]", "controls [MFC], adding to dialog boxes", "common controls [MFC], adding"]
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Adding Controls By Hand
 
@@ -27,9 +20,8 @@ The following `OnInitDialog` function sets up a rectangle, then calls `Create` t
 
 After creating the edit object, you can also set the input focus to the control by calling the `SetFocus` member function. Finally, you return 0 from `OnInitDialog` to show that you set the focus. If you return a nonzero value, the dialog manager sets the focus to the first control item in the dialog item list. In most cases, you'll want to add controls to your dialog boxes with the dialog editor.
 
-## See Also
+## See also
 
 [Making and Using Controls](../mfc/making-and-using-controls.md)<br/>
 [Controls](../mfc/controls-mfc.md)<br/>
 [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
-

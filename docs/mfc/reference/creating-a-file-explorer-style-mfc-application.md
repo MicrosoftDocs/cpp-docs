@@ -1,16 +1,9 @@
 ---
-title: "Creating a File Explorer-Style MFC Application | Microsoft Docs"
-ms.custom: ""
+title: "Creating a File Explorer-Style MFC Application"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcexplorer.project"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["browsers [MFC], Explorer-style applications", "MFC applications [MFC], Windows Explorer-style", "Explorer-style applications [MFC], creating"]
 ms.assetid: f843ab5d-2d5d-41ca-88a4-badc0d2f8052
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Creating a File Explorer-Style MFC Application
 
@@ -46,9 +39,8 @@ For more information, see:
 
 - [Application Design Choices](../../mfc/application-design-choices.md)
 
-## See Also
+## See also
 
 [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Creating a Web Browser-Style MFC Application](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)<br/>
 [Creating a Forms-Based MFC Application](../../mfc/reference/creating-a-forms-based-mfc-application.md)
-

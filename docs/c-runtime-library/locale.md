@@ -1,16 +1,9 @@
 ---
-title: "Locale | Microsoft Docs"
-ms.custom: ""
+title: "Locale"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.international"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["localization, locale", "country information", "language information routines", "setlocale function", "locale routines"]
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Locale
 
@@ -64,7 +57,7 @@ More secure versions of the functions in the following table are available, indi
 > [!NOTE]
 > For multibyte routines, the multibyte code page must be equivalent to the locale set with [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md). [_setmbcp](../c-runtime-library/reference/setmbcp.md), with an argument of **_MB_CP_LOCALE** makes the multibyte code page the same as the **setlocale** code page.
 
-## See Also
+## See also
 
 [Internationalization](../c-runtime-library/internationalization.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

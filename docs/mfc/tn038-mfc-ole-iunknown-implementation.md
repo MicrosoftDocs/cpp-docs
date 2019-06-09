@@ -1,16 +1,8 @@
 ---
-title: "TN038: MFC-OLE IUnknown Implementation | Microsoft Docs"
-ms.custom: ""
+title: "TN038: MFC-OLE IUnknown Implementation"
 ms.date: "06/28/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.mfc.ole"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["aggregation macros [MFC]", "COM interfaces, base interface", "IUnknown interface", "END_INTERFACE_MAP macro [MFC]", "TN038", "BEGIN_INTERFACE_PART macro [MFC]", "DECLARE_INTERFACE_MAP macro [MFC]", "BEGIN_INTERFACE_MAP macro [MFC]", "OLE [MFC], implementing IUnknown interface", "METHOD_PROLOGUE macro [MFC]", "STDMETHOD macro [MFC]", "END_INTERFACE_PART macro [MFC]", "INTERFACE_PART macro"]
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # TN038: MFC/OLE IUnknown Implementation
 

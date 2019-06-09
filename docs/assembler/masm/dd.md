@@ -1,16 +1,9 @@
 ---
-title: "DD | Microsoft Docs"
-ms.custom: ""
+title: "DD"
 ms.date: "08/30/2018"
-ms.technology: ["cpp-masm"]
-ms.topic: "reference"
 f1_keywords: ["dd"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["DD directive"]
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # DD
 

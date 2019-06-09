@@ -1,16 +1,9 @@
 ---
-title: "CDynamicStringAccessorW Class | Microsoft Docs"
-ms.custom: ""
+title: "CDynamicStringAccessorW Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "reference"
 f1_keywords: ["CDynamicStringAccessorW"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDynamicStringAccessorW class"]
 ms.assetid: 9b7fd5cc-3a9b-4b57-b907-f1e35de2c98f
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDynamicStringAccessorW Class
 
@@ -32,7 +25,7 @@ They both request that the provider fetch all data accessed from the data store 
 
 **Header**: atldbcli.h
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>

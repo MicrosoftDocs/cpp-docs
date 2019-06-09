@@ -1,15 +1,8 @@
 ---
-title: "Active Document Servers | Microsoft Docs"
-ms.custom: ""
+title: "Active Document Servers"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], servers", "servers [MFC], active document", "active document servers [MFC]"]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Active Document Servers
 
@@ -27,7 +20,6 @@ A regular MFC server hooks up its own `COleServerItem`-derived class. The MFC Ap
 
 The `COleDocObjectItem` class allows an OLE container to become an active document container. You can use the MFC Application Wizard to create an active document container by selecting the **Active document container** checkbox in the Compound Document Support page of the MFC Application Wizard. For more information, see [Creating an Active Document Container Application](../mfc/creating-an-active-document-container-application.md).
 
-## See Also
+## See also
 
 [Active Document Containment](../mfc/active-document-containment.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "Status Bar Implementation in MFC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
+title: "Status Bar Implementation in MFC"
+ms.date: "11/19/2018"
 f1_keywords: ["COldStatusBar"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["status bars [MFC], implementing in MFC", "CStatusBarCtrl class [MFC], and MFC status bars", "CStatusBar class [MFC], and CStatusBarCtrl class [MFC]", "CStatusBarCtrl class [MFC], and CStatusBar class [MFC]", "status bars [MFC], backward compatibility", "status bars [MFC], old with COldStatusBar class [MFC]", "COldStatusBar class [MFC]", "status bars [MFC], and CStatusBarCtrl class", "CStatusBar class [MFC], and MFC status bars", "status indicators", "status bars [MFC], Windows 95 implementation"]
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Status Bar Implementation in MFC
 
@@ -22,7 +15,7 @@ As of MFC version 4.0, status bars are implemented using class [CStatusBarCtrl](
 
 The following figure shows a status bar that displays several indicators.
 
-![Status bar](../mfc/media/vc37dy1.gif "vc37dy1")
+![Status bar](../mfc/media/vc37dy1.gif "Status bar") <br/>
 A Status Bar
 
 Like the toolbar, the status-bar object is embedded in its parent frame window and is constructed automatically when the frame window is constructed. The status bar, like all control bars, is destroyed automatically as well when the parent frame is destroyed.
@@ -39,7 +32,6 @@ Like the toolbar, the status-bar object is embedded in its parent frame window a
 
 - [Toolbars (MFC Toolbar Implementation)](../mfc/mfc-toolbar-implementation.md)
 
-## See Also
+## See also
 
 [Status Bars](../mfc/status-bars.md)
-

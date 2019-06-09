@@ -1,17 +1,10 @@
 ---
-title: "printf_p Positional Parameters | Microsoft Docs"
-ms.custom: ""
+title: "printf_p Positional Parameters"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 apilocation: ["msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll"]
 apitype: "DLLExport"
-dev_langs: ["C++"]
 helpviewer_keywords: ["_printf_p function, positional parameters", "printf_p function, positional parameters"]
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # printf_p Positional Parameters
 
@@ -139,6 +132,6 @@ ghi abc def
 333.333300 2.22 0.100
 ```
 
-## See Also
+## See also
 
 [Format Specification Syntax: printf and wprintf Functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)

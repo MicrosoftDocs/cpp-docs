@@ -1,16 +1,9 @@
 ---
-title: "CMFCRibbonUndoButton Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCRibbonUndoButton Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CMFCRibbonUndoButton", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::AddUndoAction", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::CleanUpUndoList", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::GetActionNumber", "AFXRIBBONUNDOBUTTON/CMFCRibbonUndoButton::HasMenu"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonUndoButton [MFC], CMFCRibbonUndoButton", "CMFCRibbonUndoButton [MFC], AddUndoAction", "CMFCRibbonUndoButton [MFC], CleanUpUndoList", "CMFCRibbonUndoButton [MFC], GetActionNumber", "CMFCRibbonUndoButton [MFC], HasMenu"]
 ms.assetid: 5c42adf7-871d-4239-901e-47ae7fb816fc
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonUndoButton Class
 
@@ -45,7 +38,7 @@ The `CMFCRibbonUndoButton` class uses a stack to represent the drop-down list.
 
 ## Example
 
-The following example demonstrates how to construct an object of the `CMFCRibbonUndoButton` class, and add a new action to the list of actions. This code snippet is part of the [Ribbon Gadgets sample](../../visual-cpp-samples.md).
+The following example demonstrates how to construct an object of the `CMFCRibbonUndoButton` class, and add a new action to the list of actions. This code snippet is part of the [Ribbon Gadgets sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_RibbonGadgets#2](../../mfc/reference/codesnippet/cpp/cmfcribbonundobutton-class_1.cpp)]
 
@@ -146,7 +139,7 @@ Always returns TRUE.
 
 ### Remarks
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

@@ -1,15 +1,8 @@
 ---
-title: "Recordset: Sorting Records (ODBC) | Microsoft Docs"
-ms.custom: ""
+title: "Recordset: Sorting Records (ODBC)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-data"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["sorting data, recordset data", "ODBC recordsets, sorting", "recordsets, sorting"]
 ms.assetid: b40b152e-0a91-452e-be7b-e5bc27f744c7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Sorting Records (ODBC)
 
@@ -57,7 +50,7 @@ The recordset contains all of the student records, sorted in descending order (Z
 > [!NOTE]
 >  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, do not set a sort if your custom string has an **ORDER BY** clause.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)<br/>

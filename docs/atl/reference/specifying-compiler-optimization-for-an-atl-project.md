@@ -1,16 +1,9 @@
 ---
-title: "Specifying Compiler Optimization for an ATL Project | Microsoft Docs"
-ms.custom: ""
+title: "Specifying Compiler Optimization for an ATL Project"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["ATL_DISABLE_NO_VTABLE macro", "ATL projects, compiler optimization", "ATL_NO_VTABLE macro"]
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Specifying Compiler Optimization for an ATL Project
 
@@ -47,13 +40,11 @@ If you are unsure whether you should use the `declspec(novtable)` modifier, you 
 
 in stdafx.h, before all other ATL header files are included.
 
-## See Also
+## See also
 
 [ATL Project Wizard](../../atl/reference/atl-project-wizard.md)<br/>
-[Visual C++ Project Types](../../ide/visual-cpp-project-types.md)<br/>
-[Creating Desktop Projects By Using Application Wizards](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[C++ project types in Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Programming with ATL and C Run-Time Code](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [novtable](../../cpp/novtable.md)<br/>
 [Default ATL Project Configurations](../../atl/reference/default-atl-project-configurations.md)
-

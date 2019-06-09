@@ -1,16 +1,9 @@
 ---
-title: "CSharedFile Class | Microsoft Docs"
-ms.custom: ""
+title: "CSharedFile Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSharedFile", "AFXADV/CSharedFile", "AFXADV/CSharedFile::CSharedFile", "AFXADV/CSharedFile::Detach", "AFXADV/CSharedFile::SetHandle"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSharedFile [MFC], CSharedFile", "CSharedFile [MFC], Detach", "CSharedFile [MFC], SetHandle"]
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSharedFile Class
 
@@ -121,7 +114,7 @@ Specifies whether the memory block is allowed to grow.
 
 If *bAllowGrow* is nonzero, the size of the memory block is increased as necessary, for example, if an attempt is made to write more bytes to the file than were allocated for the memory block.
 
-## See Also
+## See also
 
 [CMemFile Class](../../mfc/reference/cmemfile-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

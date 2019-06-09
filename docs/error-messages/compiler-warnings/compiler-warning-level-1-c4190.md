@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 1) C4190 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 1) C4190"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4190"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4190"]
 ms.assetid: a4d0ad93-a19a-4063-addd-36d605831567
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4190
 

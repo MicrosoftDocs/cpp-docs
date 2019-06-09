@@ -1,16 +1,9 @@
 ---
-title: "Text and Binary Mode File I/O | Microsoft Docs"
-ms.custom: ""
+title: "Text and Binary Mode File I/O"
 ms.date: "04/11/2018"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "conceptual"
 f1_keywords: ["c.io"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["files [C++], open functions", "I/O [CRT], text files", "functions [CRT], file access", "binary access, binary mode file I/O", "translation, modes", "I/O [CRT], binary", "text files, I/O", "I/O [CRT], translation modes", "translation modes (file I/O)", "binary access"]
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Text and Binary Mode File I/O
 
@@ -24,7 +17,7 @@ File I/O operations take place in one of two translation modes, *text* or *binar
 
 When you call a file-open function such as [_open](../c-runtime-library/reference/open-wopen.md), [fopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md), [freopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md), [_fsopen](../c-runtime-library/reference/fsopen-wfsopen.md) or [_sopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md), you can override the current default setting of **_fmode** by specifying the appropriate argument to the function [_set_fmode](../c-runtime-library/reference/set-fmode.md). The **stdin**, **stdout**, and **stderr** streams always open in text mode by default; you can also override this default when opening any of these files. Use [_setmode](../c-runtime-library/reference/setmode.md) to change the translation mode using the file descriptor after the file is open.
 
-## See Also
+## See also
 
 [Input and Output](../c-runtime-library/input-and-output.md)<br/>
 [Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,65 +1,164 @@
 ---
-title: "Menu Editor (C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.technology: ["cpp-windows"]
-ms.topic: "conceptual"
-f1_keywords: ["vc.editors.menu.F1"]
-dev_langs: ["C++"]
-helpviewer_keywords: ["resource editors [C++], Menu editor", "editors, menus", "Menu editor", "menus [C++], Menu editor"]
+title: "Menu Editor (C++)"
+ms.date: "02/15/2019"
+f1_keywords: ["vc.editors.menu.F1", "vc.editors.menu"]
+helpviewer_keywords: ["resource editors [C++], Menu editor", "editors, menus", "Menu editor", "menus [C++], Menu editor", "mnemonics [C++], associating menu items", "menus [C++], associating commands with mnemonic keys", "menus [C++], creating", "menus [C++], adding items", "commands [C++], adding to menus", "menu items, adding to menus", "submenus", "submenus [C++], creating", "menus [C++], creating", "context menus [C++], Menu Editor", "pop-up menus [C++], creating", "menus [C++], pop-up", "menus [C++], creating", "shortcut menus [C++], creating", "pop-up menus [C++], displaying", "pop-up menus [C++], connecting to applications", "context menus [C++], connecting to applications", "shortcut menus [C++], connecting to applications", "pop-up menus", "menu commands [C++], selecting", "menus [C++], selecting", "commands [C++], menu commands", "commands [C++], copying on menus", "menu items, moving", "commands [C++], moving on menus", "menu items, copying", "menu items, deleting", "commands [C++], deleting from menus", "menus [C++], deleting"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "uwp"]
 ---
-# Menu Editor
+# Menu Editor (C++)
 
-Menus allow you to arrange commands in a logical and easy-to-find fashion. With the **Menu** editor, you can create and edit menus by working directly with a menu bar that closely resembles the one in your finished application.
+Menus allow you to arrange commands in a logical and easy-to-find fashion. With the **Menu Editor**, you can create and edit menus by working directly with a menu bar that closely resembles the one in your finished application.
 
-For Visual C++ projects, you can use the **Menu** editor to:
+> [!TIP]
+> While using the **Menu Editor**, in many instances, you can right-click to display a pop-up menu of frequently used commands. The commands available depend on what the pointer is pointing to.
 
-- [Create Menus](../windows/creating-a-menu.md)
+## How To
 
-- [Insert a New Menu Between Existing Menus](../windows/inserting-a-new-menu-between-existing-menus.md)
+The **Menu Editor** enables you:
 
-- [Create a Menu Command](../windows/adding-commands-to-a-menu.md)
+### To create a standard menu
 
-- [Create a Submenu Menu](../windows/creating-a-submenu.md)
+1. Go to menu **View** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
 
-- [Select Menus and Menu Commands](../windows/selecting-multiple-menus-or-menu-commands.md)
+1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
 
-- [Move and Copy Menus and Menu Commands](../windows/moving-and-copying-menus-and-menu-commands.md)
+   ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   **New Item** box
 
-- [Create Pop-up Menus](../windows/creating-pop-up-menus.md)
+1. Type a name for your new menu, for example, *File*.
 
-- [Connect a Pop-Up Menu to Your Application](../windows/connecting-a-pop-up-menu-to-your-application.md)
+   The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
 
-- [View a Menu Resource as a Pop-up Menu](../windows/viewing-a-menu-as-a-pop-up-menu.md)
+   Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
 
-- [Associate a Menu Command with an Accelerator Key](../windows/associating-a-menu-command-with-an-accelerator-key.md)
-
-- [Associate a Menu Command with Status Bar Text](../windows/associating-menu-commands-with-status-bar-text-in-mfc-applications.md)
-
-- [Assigning Access Keys to Menu Commands](../windows/assigning-access-keys-to-menu-commands.md)
-
-- [Change Menu Command Properties](../windows/menu-command-properties.md)
-
-   > [!TIP]
-   > While using the **Menu** editor, in many instances, you can click the right mouse button to display a pop-up menu of frequently used commands. The commands available depend on what the pointer is pointing to.
+   ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   **New Item** box with focus shifted after you type menu name
 
    > [!NOTE]
-   > For Microsoft Foundation Class Library (MFC) programs and ATL programs, you can use **Code Wizards** to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event-visual-cpp.md).
+   > To create a single-item menu on the menu bar, set the **Popup** property to **False**.
 
-For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+### To create a submenu
+
+1. Select the menu command for which you want to create a submenu.
+
+1. In the **New Item** box that appears to the right, type the name of the new menu command. This new command will appear first on the submenu menu.
+
+1. Add additional menu commands to the submenu menu.
+
+### To insert a new menu between existing menus
+
+Select an existing menu name and press the **Insert** key, or right-click on the menu bar and choose **Insert New**.
+
+   The **New Item** box is inserted before the selected item.
+
+### To add commands to a menu
+
+1. Create a menu. Then select a menu name, for example, **File**.
+
+   Each menu will expand and expose a new item box for commands. For example, you can add the commands **New**, **Open**, and **Close** to a **File** menu.
+
+1. In the new item box, type a name for the new menu command.
+
+   > [!NOTE]
+   > The text you type appears in both the **Menu Editor** and in the **Caption** box in the [Properties Window](/visualstudio/ide/reference/properties-window). You can edit the properties for your new menu in either location.
+
+   > [!TIP]
+   > You can define a mnemonic key (hot key) that allows the user to select the menu command. Type an ampersand (`&`) in front of a letter to specify it as the mnemonic. The user can select the menu command by typing that letter.
+
+1. In the **Properties** window, select the menu command properties that apply. For details, see [Menu Command Properties](../windows/menu-command-properties.md).
+
+1. In the **Prompt** box in the **Properties** window, type the prompt string you want to appear in your application's status bar.
+
+   This step creates an entry in the string table with the same resource identifier as the menu command you created.
+
+   > [!NOTE]
+   > Prompts can only apply to menu items with a **Popup** property of **True**. For example, top-level menu items can have prompts if they have sub-menu items. The purpose of a **Prompt** is to indicate what will happen if a user selects the menu item.
+
+1. Press **Enter** to complete the menu command.
+
+   The new item box is selected so you can create additional menu commands.
+
+### To select multiple menu commands to run bulk operations such as deleting or changing properties
+
+While holding down the **Ctrl** key, select the menus or submenu commands you want.
+
+### To move and copy menus and menu commands
+
+- Use the drag-and-drop method:
+
+   1. Drag or copy the item you want to move to:
+
+      - A new location on the current menu.
+
+      - A different menu. You can navigate to other menus by dragging the mouse pointer over them.
+
+   1. Drop the menu command when the insertion guide shows the position you want.
+
+- Use shortcut menu commands:
+
+   1. Right-click one or more menus or menu commands, then choose **Cut** (to move) or **Copy**.
+
+   1. If you're moving the items to another menu resource or resource script file, [open it in another window](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
+
+   1. Select the position of the menu or menu command you want to move or copy to.
+
+   1. From the shortcut menu, choose **Paste**. The moved or copied item is placed before the item you select.
+
+> [!NOTE]
+> You can also drag, copy, and paste to other menus in other menu windows.
+
+### To delete a menu or menu command
+
+Right-click the menu name or command and choose **Delete**.
+
+> [!NOTE]
+> Similarly, you can use the shortcut menu to perform other actions such as Copy, Cut, Paste, Insert New, Insert Separator, Edit IDs, View as Pop-up, Check Mnemonics, etc.
+
+## Pop-up Menus
+
+[Pop-up menus](../mfc/menus-mfc.md) display frequently used commands. They can be context sensitive to the location of the pointer. Using pop-up menus in your application requires building the menu itself and then connecting it to application code.
+
+Once you've created the menu resource, your application code needs to load the menu resource and use [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) to cause the menu to appear. Once the user has dismissed the pop-up menu by selecting outside it, or has selected a command, that function will return. If the user chooses a command, that command message will be sent to the window whose handle was passed.
+
+> [!NOTE]
+> For Microsoft Foundation Class (MFC) library programs and ATL programs, use **Code Wizards** to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event-visual-cpp.md) and [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
+
+- To create a pop-up menu, create a menu with an empty title and don't provide a *Caption*. Then, add a menu command to the new menu, move to the first menu command below the blank menu title with the temporary caption *Type Here* and type a *Caption* and any other information.
+
+   Repeat this process for any other menu commands in the pop-up menu and be sure to save the menu resource.
+
+- To connect a pop-up menu to your application, for example, add a message handler for WM_CONTEXTMENU, then add the following code to the message handler:
+
+    ```cpp
+    CMenu menu;
+    VERIFY(menu.LoadMenu(IDR_MENU1));
+    CMenu* pPopup = menu.GetSubMenu(0);
+    ASSERT(pPopup != NULL);
+    pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, AfxGetMainWnd());
+    ```
+
+   > [!NOTE]
+   > The [CPoint](../atl-mfc-shared/reference/cpoint-class.md) passed by the message handler is in screen coordinates.
+
+Normally, when you're working in the **Menu Editor**, a menu resource is displayed as a menu bar. However, you might have menu resources that are added to the application's menu bar while the program is running.
+
+- To view a menu resource as a pop-up menu, right-click the menu and choose **View as Popup**.
+
+   This option is only a viewing preference and won't modify your menu.
+
+> [!TIP]
+> To change back to the menu-bar view, select **View as Popup** again. This action removes the check mark and returns your menu-bar view.
 
 ## Requirements
 
 Win32
 
-## See Also
+## See also
 
-[Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Resource Editors](../windows/resource-editors.md)<br/>
+[Menu Commands](../windows/menu-command-properties.md)<br/>
+
+<!--
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)<br/>
 [Menus](../mfc/menus-mfc.md)<br/>
-[Menus](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)
+[Menus](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)-->

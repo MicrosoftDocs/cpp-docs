@@ -1,15 +1,8 @@
 ---
-title: "Accessing All Members of a Collection | Microsoft Docs"
-ms.custom: ""
+title: "Accessing All Members of a Collection"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, collections", "enumerations [MFC]", "enumerating collections [MFC]", "collections [MFC], accessing", "collection classes [MFC]", ", ", ", ", ", ", ", ", ", ", ", ", ", "]
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Accessing All Members of a Collection
 
@@ -62,7 +55,6 @@ The following procedures show how to iterate over the three main types of collec
 
 For more information, see [Deleting All Objects in a CObject Collection](../mfc/deleting-all-objects-in-a-cobject-collection.md).
 
-## See Also
+## See also
 
 [Collections](../mfc/collections.md)
-

@@ -1,15 +1,8 @@
 ---
-title: "Document and View Classes Created by the MFC Application Wizard | Microsoft Docs"
-ms.custom: ""
+title: "Document and View Classes Created by the MFC Application Wizard"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["document classes [MFC]", "document classes [MFC], created by application wizards", "application wizards [MFC], document/view classes created", "view classes [MFC], created by application wizards"]
 ms.assetid: 70c34a60-2701-4981-acea-c08a5787d8e6
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Document and View Classes Created by the MFC Application Wizard
 
@@ -19,7 +12,6 @@ The document class created by the MFC Application Wizard is derived from class [
 
 Some applications might need more than one document class, view class, or frame-window class. For more information, see [Multiple Document Types, Views, and Frame Windows](../mfc/multiple-document-types-views-and-frame-windows.md).
 
-## See Also
+## See also
 
 [Document/View Architecture](../mfc/document-view-architecture.md)
-

@@ -1,16 +1,9 @@
 ---
-title: "CMFCShellTreeCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCShellTreeCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCShellTreeCtrl [MFC], EnableShellContextMenu", "CMFCShellTreeCtrl [MFC], GetFlags", "CMFCShellTreeCtrl [MFC], GetItemPath", "CMFCShellTreeCtrl [MFC], GetRelatedList", "CMFCShellTreeCtrl [MFC], OnChildNotify", "CMFCShellTreeCtrl [MFC], OnGetItemIcon", "CMFCShellTreeCtrl [MFC], OnGetItemText", "CMFCShellTreeCtrl [MFC], Refresh", "CMFCShellTreeCtrl [MFC], SelectPath", "CMFCShellTreeCtrl [MFC], SetFlags", "CMFCShellTreeCtrl [MFC], SetRelatedList"]
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCShellTreeCtrl Class
 
@@ -30,7 +23,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |Name|Description|
 |----------|-----------------|
 |[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Enables or disables the shortcut menu.|
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|Returns a combination of flags that are passed to [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).|
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|Returns a combination of flags that are passed to [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects).|
 |[CMFCShellTreeCtrl::GetItemPath](#getitempath)|Retrieves the path to an item.|
 |[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is used together with this `CMFCShellTreeCtrl` object to create an Explorer-like window.|
 |[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|This member function is called by this window's parent window when it receives a notification message that applies to this window. (Overrides [CWnd::OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|
@@ -63,7 +56,7 @@ This class extends the `CTreeCtrl` class by enabling your program to include Win
 
 ## Example
 
-The following example demonstrates how to create an object of the `CMFCShellTreeCtrl` class. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).
+The following example demonstrates how to create an object of the `CMFCShellTreeCtrl` class. This code snippet is part of the [Explorer sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#4](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#5](../../mfc/reference/codesnippet/cpp/cmfcshelltreectrl-class_2.cpp)]
@@ -95,7 +88,7 @@ A DWORD value that specifies the combination of flags currently set.
 
 ### Remarks
 
-The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.
+The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.
 
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath
 
@@ -246,7 +239,7 @@ void SetFlags(
 
 ### Remarks
 
-The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066). For more information about the values of different flags, see [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).
+The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects). For more information about the values of different flags, see [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects).
 
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList
 
@@ -267,7 +260,7 @@ This method associates a `CMFCShellListCtrl` with a `CMFCShellTreeCtrl`. These o
 
 Use the method [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) to retrieve the `CMFCShellListCtrl` associated with a `CMFCShellTreeCtrl`.
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

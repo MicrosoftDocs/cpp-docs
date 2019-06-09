@@ -1,16 +1,9 @@
 ---
-title: "CSettingsStore Class | Microsoft Docs"
-ms.custom: ""
+title: "CSettingsStore Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::Close", "AFXSETTINGSSTORE/CSettingsStore::CreateKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteValue", "AFXSETTINGSSTORE/CSettingsStore::Open", "AFXSETTINGSSTORE/CSettingsStore::Read", "AFXSETTINGSSTORE/CSettingsStore::Write"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CSettingsStore [MFC], CSettingsStore", "CSettingsStore [MFC], Close", "CSettingsStore [MFC], CreateKey", "CSettingsStore [MFC], DeleteKey", "CSettingsStore [MFC], DeleteValue", "CSettingsStore [MFC], Open", "CSettingsStore [MFC], Read", "CSettingsStore [MFC], Write"]
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CSettingsStore Class
 
@@ -48,7 +41,7 @@ The member functions `CreateKey` and `Open` are very similar. If the registry ke
 
 ## Example
 
-The following example demonstrates how to use the Open and Read methods of the `CSettingsStore` class. This code snippet is part of the [Tool Tip Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use the Open and Read methods of the `CSettingsStore` class. This code snippet is part of the [Tool Tip Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_ToolTipDemo#1](../../mfc/reference/codesnippet/cpp/csettingsstore-class_1.cpp)]
 
@@ -429,7 +422,7 @@ TRUE if successful; otherwise FALSE.
 
 In order to write to the registry, you must set *bReadOnly* to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

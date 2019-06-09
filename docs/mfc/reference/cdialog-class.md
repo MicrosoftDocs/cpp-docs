@@ -1,16 +1,9 @@
 ---
-title: "CDialog Class | Microsoft Docs"
-ms.custom: ""
+title: "CDialog Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CDialog", "AFXWIN/CDialog", "AFXWIN/CDialog::CDialog", "AFXWIN/CDialog::Create", "AFXWIN/CDialog::CreateIndirect", "AFXWIN/CDialog::DoModal", "AFXWIN/CDialog::EndDialog", "AFXWIN/CDialog::GetDefID", "AFXWIN/CDialog::GotoDlgCtrl", "AFXWIN/CDialog::InitModalIndirect", "AFXWIN/CDialog::MapDialogRect", "AFXWIN/CDialog::NextDlgCtrl", "AFXWIN/CDialog::OnInitDialog", "AFXWIN/CDialog::OnSetFont", "AFXWIN/CDialog::PrevDlgCtrl", "AFXWIN/CDialog::SetDefID", "AFXWIN/CDialog::SetHelpID", "AFXWIN/CDialog::OnCancel", "AFXWIN/CDialog::OnOK"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CDialog [MFC], CDialog", "CDialog [MFC], Create", "CDialog [MFC], CreateIndirect", "CDialog [MFC], DoModal", "CDialog [MFC], EndDialog", "CDialog [MFC], GetDefID", "CDialog [MFC], GotoDlgCtrl", "CDialog [MFC], InitModalIndirect", "CDialog [MFC], MapDialogRect", "CDialog [MFC], NextDlgCtrl", "CDialog [MFC], OnInitDialog", "CDialog [MFC], OnSetFont", "CDialog [MFC], PrevDlgCtrl", "CDialog [MFC], SetDefID", "CDialog [MFC], SetHelpID", "CDialog [MFC], OnCancel", "CDialog [MFC], OnOK"]
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CDialog Class
 
@@ -370,7 +363,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*<br/>
-Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
+Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
 
@@ -521,10 +514,9 @@ void SetHelpID(UINT nIDR);
 *nIDR*<br/>
 Specifies the context-sensitive help ID.
 
-## See Also
+## See also
 
-[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
-[MFC Sample DLGTEMPL](../../visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample DLGTEMPL](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)
-

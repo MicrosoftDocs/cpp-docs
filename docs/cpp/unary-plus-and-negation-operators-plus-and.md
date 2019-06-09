@@ -1,16 +1,9 @@
 ---
-title: "Unary Plus and Negation Operators: + and - | Microsoft Docs"
-ms.custom: ""
+title: "Unary Plus and Negation Operators: + and -"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
 f1_keywords: ["+", "-"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["unary operators [C++], plus", "- operator", "negation operator", "+ operator [C++], unary operators", "+ operator"]
 ms.assetid: 2c58c4f4-0d92-4ae3-9d0c-1a6157875cc1
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Unary Plus and Negation Operators: + and -
 

@@ -1,22 +1,16 @@
 ---
-title: "&lt;bitset&gt; operators | Microsoft Docs"
-ms.custom: ""
+title: "&lt;bitset&gt; operators"
 ms.date: "11/04/2016"
-ms.topic: "reference"
 f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]
-dev_langs: ["C++"]
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
-author: "corob-msft"
-ms.author: "corob"
 helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bitset)", "std::operator&lt;&lt; (bitset)"]
-ms.workload: ["cplusplus"]
 ---
 # &lt;bitset&gt; operators
 
 ||||
 |-|-|-|
 |[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator^](#op_xor)|[operator|](#op_or)|
+|[operator^](#op_xor)|[operator&#124;](#op_or)| |
 
 ## <a name="op_amp"></a>  operator&amp;
 
@@ -75,7 +69,6 @@ bitset 3: 0001
 Inserts a text representation of the bit sequence into the output stream.
 
 ```
-
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -133,7 +126,6 @@ int main( )
 Reads a string of bit characters into a bitset.
 
 ```
-
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>&
@@ -267,7 +259,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator|
+## <a name="op_or"></a>  operator&#124;
 
 Performs a bitwise `OR` between two bitsets.
 

@@ -1,12 +1,8 @@
 ---
-title: "Compiler Warning C4868 | Microsoft Docs"
+title: "Compiler Warning C4868"
 ms.date: "10/26/2017"
-ms.topic: "error-reference"
 f1_keywords: ["C4868"]
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4868
 
@@ -14,7 +10,7 @@ ms.workload: ["cplusplus"]
 
 The elements of a braced initializer list are to be evaluated in left-to-right order. There are two cases in which the compiler is unable to guarantee this order: the first is when some of the elements are objects passed by value; the second is  when compiling with `/clr` and some of the elements are fields of objects or are array elements. When the compiler can't guarantee left-to-right evaluation it emits warning C4868.
 
-This warning can be generated as a result of compiler conformance work that was done for Visual C++ 2015 Update 2. Code that compiled prior to Visual C++ 2015 Update 2 can now generate C4868.
+This warning can be generated as a result of compiler conformance work that was done for Visual Studio 2015 Update 2. Code that compiled prior to Visual Studio 2015 Update 2 can now generate C4868.
 
 This warning is off by default. Use `/Wall` to activate this warning.
 

@@ -1,15 +1,8 @@
 ---
-title: "Changing the Default Class Factory and Aggregation Model | Microsoft Docs"
-ms.custom: ""
+title: "Changing the Default Class Factory and Aggregation Model"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["CComClassFactory class, making the default", "aggregation [C++], using ATL", "aggregation [C++], aggregation models", "defaults [C++], aggregation model in ATL", "default class factory", "class factories, changing default", "CComCoClass class, default class factory and aggregation model", "default class factory, ATL", "defaults [C++], class factory"]
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Changing the Default Class Factory and Aggregation Model
 
@@ -27,8 +20,7 @@ Two other macros that define a class factory are [DECLARE_CLASSFACTORY_AUTO_THRE
 
 ATL also uses the **typedef** mechanism to implement default behavior. For example, the DECLARE_AGGREGATABLE macro uses **typedef** to define a type called `_CreatorClass`, which is then referenced throughout ATL. Note that in a derived class, a **typedef** using the same name as the base class's **typedef** results in ATL using your definition and overriding the default behavior.
 
-## See Also
+## See also
 
 [Fundamentals of ATL COM Objects](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Aggregation and Class Factory Macros](../atl/reference/aggregation-and-class-factory-macros.md)
-

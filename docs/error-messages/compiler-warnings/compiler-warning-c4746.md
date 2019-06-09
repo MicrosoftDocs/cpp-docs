@@ -1,14 +1,7 @@
 ---
-title: "Compiler Warning C4746 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning C4746"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
-dev_langs: ["C++"]
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning C4746
 

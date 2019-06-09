@@ -1,15 +1,8 @@
 ---
-title: "Microsoft Extensions | Microsoft Docs"
-ms.custom: ""
+title: "Microsoft Extensions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft extensions to C/C++"]
 ms.assetid: 68654516-24ef-4f33-aae2-175f86cc1979
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Microsoft Extensions
 

@@ -1,22 +1,15 @@
 ---
-title: "Compiler Error C2978 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2978"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2978"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2978"]
 ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2978
 
 syntax error : expected 'keyword1' or 'keyword2'; found type 'keyword3'; non-type parameters are not supported in generics
 
-A generic class was declared incorrectly. See [Generics](../../windows/generics-cpp-component-extensions.md)for more information.
+A generic class was declared incorrectly. See [Generics](../../extensions/generics-cpp-component-extensions.md)for more information.
 
 ## Example
 

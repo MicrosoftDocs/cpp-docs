@@ -1,15 +1,8 @@
 ---
-title: "Casting Integers to Floating-Point Values | Microsoft Docs"
-ms.custom: ""
+title: "Casting Integers to Floating-Point Values"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-language"]
-ms.topic: "language-reference"
-dev_langs: ["C++"]
 helpviewer_keywords: ["integers, casting to floating-point values"]
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Casting Integers to Floating-Point Values
 
@@ -19,6 +12,6 @@ When an integral number is cast to a floating-point value that cannot exactly re
 
 For example, casting an **unsigned long** (with 32 bits of precision) to a **float** (whose mantissa has 23 bits of precision) rounds the number to the nearest multiple of 256. The **long** values 4,294,966,913 to 4,294,967,167 are all rounded to the **float** value 4,294,967,040.
 
-## See Also
+## See also
 
 [Floating-Point Math](../c-language/floating-point-math.md)

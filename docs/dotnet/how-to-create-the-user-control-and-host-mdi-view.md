@@ -1,15 +1,9 @@
 ---
-title: "How to: Create the User Control and Host MDI View | Microsoft Docs"
+title: "How to: Create the User Control and Host MDI View"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], Windows Forms Controls", "Windows Forms [C++], MFC support"]
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create the User Control and Host MDI View
 
@@ -99,6 +93,6 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
    On the **Debug** menu, click **Start without debugging**.
 
-## See Also
+## See also
 
 [Hosting a Windows Forms User Control as an MFC View](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

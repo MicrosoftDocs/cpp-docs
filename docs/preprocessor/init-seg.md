@@ -1,16 +1,9 @@
 ---
-title: "init_seg | Microsoft Docs"
-ms.custom: ""
+title: "init_seg"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["vc-pragma.init_seg", "init_seg_CPP"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, init_seg", "init_seg pragma", "data segment initializing [C++]"]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # init_seg
 
@@ -152,6 +145,6 @@ A()
 ~A()
 ```
 
-## See Also
+## See also
 
 [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

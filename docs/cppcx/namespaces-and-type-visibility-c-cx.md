@@ -1,13 +1,7 @@
 ---
-title: "Namespaces and Type Visibility (C++/CX ) | Microsoft Docs"
-ms.custom: ""
+title: "Namespaces and Type Visibility (C++/CX )"
 ms.date: "12/30/2016"
-ms.technology: "cpp-windows"
-ms.topic: "language-reference"
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Namespaces and Type Visibility (C++/CX )
 
@@ -40,7 +34,7 @@ Use the following access modifiers to control both metadata visibility and sourc
 
 ## Windows Runtime namespaces
 
-The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377).
+The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](/uwp/api/).
 
 ## C++/CX namespaces
 
@@ -54,6 +48,6 @@ The C++/CX define certain types in these namespaces as part of the projection of
 |Platform::Collections|Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|
 |Platform::Details|Contains types that are used by the compiler and are not meant for public consumption.|
 
-## See Also
+## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)

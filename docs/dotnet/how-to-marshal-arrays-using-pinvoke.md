@@ -1,15 +1,9 @@
 ---
-title: "How to: Marshal Arrays Using PInvoke | Microsoft Docs"
+title: "How to: Marshal Arrays Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["marshaling [C++], arrays", "platform invoke [C++], arrays", "interop [C++], arrays", "data marshaling [C++], arrays"]
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Arrays Using PInvoke
 
@@ -75,6 +69,6 @@ int main() {
 
 Note that no portion of the DLL is exposed to the managed code through the traditional #include directive. In fact, because the DLL is accessed at run time only, problems with functions imported with <xref:System.Runtime.InteropServices.DllImportAttribute> will not be detected at compile time.
 
-## See Also
+## See also
 
 [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

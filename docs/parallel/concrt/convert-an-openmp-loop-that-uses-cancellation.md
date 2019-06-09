@@ -1,15 +1,8 @@
 ---
-title: "How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime | Microsoft Docs"
-ms.custom: ""
+title: "How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-concrt"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, cancellation", "cancellation, converting from OpenMP to the Concurrency Runtime"]
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime
 
@@ -46,9 +39,8 @@ Copy the example code and paste it in a Visual Studio project, or paste it in a 
 
 **cl.exe /EHsc /openmp concrt-omp-parallel-any-of.cpp**
 
-## See Also
+## See also
 
 [Migrating from OpenMP to the Concurrency Runtime](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [Cancellation in the PPL](cancellation-in-the-ppl.md)<br/>
 [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md)
-

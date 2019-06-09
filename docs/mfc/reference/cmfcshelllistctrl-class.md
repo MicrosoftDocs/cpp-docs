@@ -1,16 +1,9 @@
 ---
-title: "CMFCShellListCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMFCShellListCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes", "AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns", "AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh", "AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCShellListCtrl [MFC], DisplayFolder", "CMFCShellListCtrl [MFC], DisplayParentFolder", "CMFCShellListCtrl [MFC], EnableShellContextMenu", "CMFCShellListCtrl [MFC], GetCurrentFolder", "CMFCShellListCtrl [MFC], GetCurrentFolderName", "CMFCShellListCtrl [MFC], GetCurrentItemIdList", "CMFCShellListCtrl [MFC], GetCurrentShellFolder", "CMFCShellListCtrl [MFC], GetItemPath", "CMFCShellListCtrl [MFC], GetItemTypes", "CMFCShellListCtrl [MFC], IsDesktop", "CMFCShellListCtrl [MFC], OnCompareItems", "CMFCShellListCtrl [MFC], OnFormatFileDate", "CMFCShellListCtrl [MFC], OnFormatFileSize", "CMFCShellListCtrl [MFC], OnGetItemIcon", "CMFCShellListCtrl [MFC], OnGetItemText", "CMFCShellListCtrl [MFC], OnSetColumns", "CMFCShellListCtrl [MFC], Refresh", "CMFCShellListCtrl [MFC], SetItemTypes"]
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMFCShellListCtrl Class
 
@@ -55,7 +48,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object can
 
 ## Example
 
-The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).
+The following example demonstrates how to create an object of the `CMFCShellListCtrl` class and how to display the parent folder of the currently displayed folder. This code snippet is part of the [Explorer sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_Explorer#1](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]
@@ -189,7 +182,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 ### Return Value
 
-A pointer to the [IShellFolder Interface](https://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.
+A pointer to the [IShellFolder Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder) for the selected object.
 
 ### Remarks
 
@@ -419,7 +412,7 @@ void SetItemTypes(SHCONTF nTypes);
 
 For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).
 
-## See Also
+## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>

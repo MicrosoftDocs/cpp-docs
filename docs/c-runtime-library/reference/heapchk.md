@@ -1,19 +1,12 @@
 ---
-title: "_heapchk | Microsoft Docs"
-ms.custom: ""
+title: "_heapchk"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-standard-libraries"]
-ms.topic: "reference"
 apiname: ["_heapchk"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_heapchk", "heapchk"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["debugging [CRT], heap-related problems", "consistency checking of heaps", "heapchk function", "heaps, checking consistency", "_heapchk function"]
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # _heapchk
 
@@ -31,11 +24,11 @@ int _heapchk( void );
 
 |Return value|Condition|
 |-|-|
-**_HEAPBADBEGIN**|Initial header information is bad or cannot be found.
-**_HEAPBADNODE**|Bad node has been found or heap is damaged.
-**_HEAPBADPTR**|Pointer into heap is not valid.
-**_HEAPEMPTY**|Heap has not been initialized.
-**_HEAPOK**|Heap appears to be consistent.
+| **_HEAPBADBEGIN** | Initial header information is bad or cannot be found. |
+| **_HEAPBADNODE** | Bad node has been found or heap is damaged. |
+| **_HEAPBADPTR** | Pointer into heap is not valid. |
+| **_HEAPEMPTY** | Heap has not been initialized. |
+| **_HEAPOK** | Heap appears to be consistent. |
 
 In addition, if an error occurs, **_heapchk** sets **errno** to **ENOSYS**.
 

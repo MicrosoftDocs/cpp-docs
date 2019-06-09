@@ -1,15 +1,8 @@
 ---
-title: "WinModule Global Functions | Microsoft Docs"
-ms.custom: ""
+title: "WinModule Global Functions"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlWinModuleAddCreateWndData", "atlbase/ATL::AtlWinModuleExtractCreateWndData"]
-dev_langs: ["C++"]
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # WinModule Global Functions
 
@@ -74,6 +67,6 @@ Returns a pointer to the [_AtlCreateWndData](../../atl/reference/atlcreatewnddat
 
 This function will extract an existing `_AtlCreateWndData` structure from the list referenced by a module's `_ATL_WIN_MODULE70` structure.
 
-## See Also
+## See also
 
 [Functions](../../atl/reference/atl-functions.md)

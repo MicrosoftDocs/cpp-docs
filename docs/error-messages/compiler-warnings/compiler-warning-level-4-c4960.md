@@ -1,16 +1,9 @@
 ---
-title: "Compiler Warning (level 4) C4960 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Warning (level 4) C4960"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C4960"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C4960"]
 ms.assetid: 3b4ed286-9e8d-46f1-af0c-00ba669693a9
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 4) C4960
 

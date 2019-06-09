@@ -1,16 +1,9 @@
 ---
-title: "raw_dispinterfaces | Microsoft Docs"
-ms.custom: ""
+title: "raw_dispinterfaces"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-tools"]
-ms.topic: "reference"
 f1_keywords: ["raw_dispinterfaces"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["raw_dispinterfaces attribute"]
 ms.assetid: f762864d-29bf-445b-825a-ba7b29a95409
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # raw_dispinterfaces
 **C++ Specific**
@@ -29,7 +22,7 @@ If this attribute is not specified, only high-level wrappers are generated, whic
 
 **END C++ Specific**
 
-## See Also
+## See also
 
 [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
 [#import Directive](../preprocessor/hash-import-directive-cpp.md)

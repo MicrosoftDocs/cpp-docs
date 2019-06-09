@@ -1,15 +1,8 @@
 ---
-title: "Walkthrough: Adding a CTaskDialog to an Application | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/19/2018"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
+title: "Walkthrough: Adding a CTaskDialog to an Application"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["CTaskDialog, adding", "walkthroughs [MFC], dialogs"]
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Adding a CTaskDialog to an Application
 
@@ -36,7 +29,9 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
 
 ### To Replace a Windows Message Box with a CTaskDialog
 
-1. Create a new MFC Application project with the default settings. Call it *MyProject*.
+1. Use the **MFC Application Wizard** to create an MFC application with all the default settings. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
+
+1. Call it *MyProject*. 
 
 1. Use the **Solution Explorer** to open the file MyProject.cpp.
 

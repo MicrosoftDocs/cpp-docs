@@ -1,16 +1,9 @@
 ---
-title: "CMonthCalCtrl Class | Microsoft Docs"
-ms.custom: ""
+title: "CMonthCalCtrl Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::Create", "AFXDTCTL/CMonthCalCtrl::GetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::GetCalendarCount", "AFXDTCTL/CMonthCalCtrl::GetCalendarGridInfo", "AFXDTCTL/CMonthCalCtrl::GetCalID", "AFXDTCTL/CMonthCalCtrl::GetColor", "AFXDTCTL/CMonthCalCtrl::GetCurrentView", "AFXDTCTL/CMonthCalCtrl::GetCurSel", "AFXDTCTL/CMonthCalCtrl::GetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::GetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::GetMaxTodayWidth", "AFXDTCTL/CMonthCalCtrl::GetMinReqRect", "AFXDTCTL/CMonthCalCtrl::GetMonthDelta", "AFXDTCTL/CMonthCalCtrl::GetMonthRange", "AFXDTCTL/CMonthCalCtrl::GetRange", "AFXDTCTL/CMonthCalCtrl::GetSelRange", "AFXDTCTL/CMonthCalCtrl::GetToday", "AFXDTCTL/CMonthCalCtrl::HitTest", "AFXDTCTL/CMonthCalCtrl::IsCenturyView", "AFXDTCTL/CMonthCalCtrl::IsDecadeView", "AFXDTCTL/CMonthCalCtrl::IsMonthView", "AFXDTCTL/CMonthCalCtrl::IsYearView", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorderDefault", "AFXDTCTL/CMonthCalCtrl::SetCalID", "AFXDTCTL/CMonthCalCtrl::SetCenturyView", "AFXDTCTL/CMonthCalCtrl::SetColor", "AFXDTCTL/CMonthCalCtrl::SetCurrentView", "AFXDTCTL/CMonthCalCtrl::SetCurSel", "AFXDTCTL/CMonthCalCtrl::SetDayState", "AFXDTCTL/CMonthCalCtrl::SetDecadeView", "AFXDTCTL/CMonthCalCtrl::SetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::SetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::SetMonthDelta", "AFXDTCTL/CMonthCalCtrl::SetMonthView", "AFXDTCTL/CMonthCalCtrl::SetRange", "AFXDTCTL/CMonthCalCtrl::SetSelRange", "AFXDTCTL/CMonthCalCtrl::SetToday", "AFXDTCTL/CMonthCalCtrl::SetYearView", "AFXDTCTL/CMonthCalCtrl::SizeMinReq", "AFXDTCTL/CMonthCalCtrl::SizeRectToMin"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CMonthCalCtrl [MFC], CMonthCalCtrl", "CMonthCalCtrl [MFC], Create", "CMonthCalCtrl [MFC], GetCalendarBorder", "CMonthCalCtrl [MFC], GetCalendarCount", "CMonthCalCtrl [MFC], GetCalendarGridInfo", "CMonthCalCtrl [MFC], GetCalID", "CMonthCalCtrl [MFC], GetColor", "CMonthCalCtrl [MFC], GetCurrentView", "CMonthCalCtrl [MFC], GetCurSel", "CMonthCalCtrl [MFC], GetFirstDayOfWeek", "CMonthCalCtrl [MFC], GetMaxSelCount", "CMonthCalCtrl [MFC], GetMaxTodayWidth", "CMonthCalCtrl [MFC], GetMinReqRect", "CMonthCalCtrl [MFC], GetMonthDelta", "CMonthCalCtrl [MFC], GetMonthRange", "CMonthCalCtrl [MFC], GetRange", "CMonthCalCtrl [MFC], GetSelRange", "CMonthCalCtrl [MFC], GetToday", "CMonthCalCtrl [MFC], HitTest", "CMonthCalCtrl [MFC], IsCenturyView", "CMonthCalCtrl [MFC], IsDecadeView", "CMonthCalCtrl [MFC], IsMonthView", "CMonthCalCtrl [MFC], IsYearView", "CMonthCalCtrl [MFC], SetCalendarBorder", "CMonthCalCtrl [MFC], SetCalendarBorderDefault", "CMonthCalCtrl [MFC], SetCalID", "CMonthCalCtrl [MFC], SetCenturyView", "CMonthCalCtrl [MFC], SetColor", "CMonthCalCtrl [MFC], SetCurrentView", "CMonthCalCtrl [MFC], SetCurSel", "CMonthCalCtrl [MFC], SetDayState", "CMonthCalCtrl [MFC], SetDecadeView", "CMonthCalCtrl [MFC], SetFirstDayOfWeek", "CMonthCalCtrl [MFC], SetMaxSelCount", "CMonthCalCtrl [MFC], SetMonthDelta", "CMonthCalCtrl [MFC], SetMonthView", "CMonthCalCtrl [MFC], SetRange", "CMonthCalCtrl [MFC], SetSelRange", "CMonthCalCtrl [MFC], SetToday", "CMonthCalCtrl [MFC], SetYearView", "CMonthCalCtrl [MFC], SizeMinReq", "CMonthCalCtrl [MFC], SizeRectToMin"]
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CMonthCalCtrl Class
 
@@ -142,10 +135,10 @@ virtual BOOL Create(
 Specifies the combination of Windows styles applied to the month calendar control. See [Month Calendar Control Styles](/windows/desktop/Controls/month-calendar-control-styles) in the Windows SDK for more information about the styles.
 
 *rect*<br/>
-A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Contains the position and size of the month calendar control.
+A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure. Contains the position and size of the month calendar control.
 
 *pt*<br/>
-A reference to a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that identifies the location of the month calendar control.
+A reference to a [POINT](/previous-versions/dd162805\(v=vs.85\)) structure that identifies the location of the month calendar control.
 
 *pParentWnd*<br/>
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the month calendar control. It must not be NULL.
@@ -327,7 +320,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object or a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object. Receives the current time.
 
 *pDateTime*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will receive the currently-selected date information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will receive the currently-selected date information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -438,7 +431,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### Parameters
 
 *pRect*<br/>
-A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive bounding rectangle information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that will receive bounding rectangle information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -494,7 +487,7 @@ A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 A reference to a `COleDateTime` or `CTime` object containing the maximum date allowed.
 
 *pMinRange*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -540,10 +533,10 @@ DWORD GetRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the highest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the highest end of the range.
 
 ### Return Value
 
@@ -589,7 +582,7 @@ A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-clas
 A reference to a `COleDateTime` or `CTime` object containing the maximum date allowed.
 
 *pMinRange*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -620,7 +613,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) or [CTime](../../atl-mfc-shared/reference/ctime-class.md) object indicating the current day.
 
 *pDateTime*<br/>
-A pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will receive the date information. This parameter must be a valid address and cannot be NULL.
+A pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will receive the date information. This parameter must be a valid address and cannot be NULL.
 
 ### Return Value
 
@@ -894,7 +887,7 @@ BOOL SetCurSel(const CTime& refDateTime);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) or [CTime](../../atl-mfc-shared/reference/ctime-class.md) object indicating the currently-selected month calendar control.
 
 *pDateTime*<br/>
-Pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the date to be set as the current selection.
+Pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the date to be set as the current selection.
 
 ### Return Value
 
@@ -1079,7 +1072,7 @@ BOOL SetRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `COleDateTime` object, a `CTime` object, or `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -1117,7 +1110,7 @@ BOOL SetSelRange(
 ### Parameters
 
 *pMinRange*<br/>
-A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure containing the date at the lowest end of the range.
+A pointer to a `COleDateTime` object, a `CTime` object, or [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the date at the lowest end of the range.
 
 *pMaxRange*<br/>
 A pointer to a `COleDateTime` object, a `CTime` object, or `SYSTEMTIME` structure containing the date at the highest end of the range.
@@ -1146,7 +1139,7 @@ void SetToday(const CTime* pDateTime);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the current date.
 
 *pDateTime*<br/>
-In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the current date information. In the third version, a pointer to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that contains the current date information.
+In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the current date information. In the third version, a pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the current date information.
 
 ### Remarks
 
@@ -1205,11 +1198,11 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*lpRect*|[in] Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that defines a rectangle that contains the desired number of calendars.|
+|*lpRect*|[in] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that defines a rectangle that contains the desired number of calendars.|
 
 ### Return Value
 
-Pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that defines a rectangle whose size is less than or equal to the rectangle defined by the *lpRect* parameter.
+Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure that defines a rectangle whose size is less than or equal to the rectangle defined by the *lpRect* parameter.
 
 ### Remarks
 
@@ -1217,9 +1210,9 @@ This method calculates how many calendars can fit in the rectangle specified by 
 
 This method sends the [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerecttomin) message, which is described in the Windows SDK.
 
-## See Also
+## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDateTimeCtrl Class](../../mfc/reference/cdatetimectrl-class.md)

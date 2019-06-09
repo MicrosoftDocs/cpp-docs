@@ -1,15 +1,8 @@
 ---
-title: "Serialization (C++/CLI) | Microsoft Docs"
-ms.custom: ""
+title: "Serialization (C++/CLI)"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-cli"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["serialization [C++]", "SerializableAttribute class, managed applications", "NonSerializedAttribute class, managed applications", "managed code [C++], serializing", ".NET Framework [C++], serialization", "serialization [C++], about serialization"]
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus", "dotnet"]
 ---
 # Serialization (C++/CLI)
 
@@ -46,6 +39,6 @@ private:
 
 Note that both attributes can be referenced using their "short name" (**Serializable** and **NonSerialized**). This is further explained in [Applying Attributes](/dotnet/standard/attributes/applying-attributes).
 
-## See Also
+## See also
 
 [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

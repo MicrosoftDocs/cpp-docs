@@ -1,16 +1,9 @@
 ---
-title: "CCriticalSection Class | Microsoft Docs"
-ms.custom: ""
+title: "CCriticalSection Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "reference"
 f1_keywords: ["CCriticalSection", "AFXMT/CCriticalSection", "AFXMT/CCriticalSection::CCriticalSection", "AFXMT/CCriticalSection::Lock", "AFXMT/CCriticalSection::Unlock", "AFXMT/CCriticalSection::m_sect"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CCriticalSection [MFC], CCriticalSection", "CCriticalSection [MFC], Lock", "CCriticalSection [MFC], Unlock", "CCriticalSection [MFC], m_sect"]
 ms.assetid: f776f74b-5b0b-4f32-9c13-2b8e4a0d7b2b
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CCriticalSection Class
 
@@ -170,7 +163,7 @@ If the `CCriticalSection` is being used stand-alone, `Unlock` must be called imm
 
   See the example for [CCriticalSection::Lock](#lock).
 
-## See Also
+## See also
 
 [CSyncObject Class](../../mfc/reference/csyncobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

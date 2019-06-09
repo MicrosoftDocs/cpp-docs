@@ -1,16 +1,9 @@
 ---
-title: "CWndClassInfo Class | Microsoft Docs"
-ms.custom: ""
+title: "CWndClassInfo Class"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
-ms.topic: "reference"
 f1_keywords: ["CWndClassInfo", "ATLWIN/ATL::CWndClassInfo", "ATLWIN/ATL::Register", "ATLWIN/ATL::m_atom", "ATLWIN/ATL::m_bSystemCursor", "ATLWIN/ATL::m_lpszCursorID", "ATLWIN/ATL::m_lpszOrigName", "ATLWIN/ATL::m_szAutoName", "ATLWIN/ATL::m_wc", "ATLWIN/ATL::pWndProc"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CWndClassInfo class"]
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CWndClassInfo Class
 
@@ -131,7 +124,7 @@ TCHAR m_szAutoName[13];
 
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc
 
-Maintains the window class information in a [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) structure.
+Maintains the window class information in a [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa) structure.
 
 ```
 WNDCLASSEX m_wc;
@@ -178,7 +171,7 @@ If you have specified the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd
 
 If you have specified the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro, `Register` registers a superclass — a window class that is based on an existing class but uses a different window procedure. The existing window class's window procedure is returned in *pProc*.
 
-## See Also
+## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

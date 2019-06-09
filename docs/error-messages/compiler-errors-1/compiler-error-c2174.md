@@ -1,16 +1,9 @@
 ---
-title: "Compiler Error C2174 | Microsoft Docs"
-ms.custom: ""
+title: "Compiler Error C2174"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-diagnostics"]
-ms.topic: "error-reference"
 f1_keywords: ["C2174"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["C2174"]
 ms.assetid: 161d563c-76e9-47e9-9142-7812e9ea169e
-author: "corob-msft"
-ms.author: "corob"
-ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2174
 

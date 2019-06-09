@@ -1,15 +1,8 @@
 ---
-title: "Using an Unclipped Device Context | Microsoft Docs"
-ms.custom: ""
+title: "Using an Unclipped Device Context"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-mfc"]
-ms.topic: "conceptual"
-dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], unclipped device context"]
 ms.assetid: 9c020063-73da-4803-bf7b-2e1fd950c9ed
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # Using an Unclipped Device Context
 
@@ -23,7 +16,6 @@ The code to remove this flag is automatically generated if you select the **Uncl
 
 If you are using windowless activation, this optimization has no effect.
 
-## See Also
+## See also
 
 [MFC ActiveX Controls: Optimization](../mfc/mfc-activex-controls-optimization.md)
-

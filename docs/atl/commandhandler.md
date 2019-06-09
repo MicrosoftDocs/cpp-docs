@@ -1,16 +1,9 @@
 ---
-title: "CommandHandler | Microsoft Docs"
-ms.custom: ""
+title: "CommandHandler"
 ms.date: "11/04/2016"
-ms.technology: ["cpp-atl"]
 ms.topic: "reference"
-f1_keywords: ["CommandHandler"]
-dev_langs: ["C++"]
 helpviewer_keywords: ["CommandHandler function"]
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-author: "mikeblome"
-ms.author: "mblome"
-ms.workload: ["cplusplus"]
 ---
 # CommandHandler
 
@@ -48,9 +41,8 @@ The result of message processing. 0 if successful.
 
 For an example of using this message handler in a message map, see [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler).
 
-## See Also
+## See also
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
-
+[WM_NOTIFY](/windows/desktop/controls/wm-notify)
