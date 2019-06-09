@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::experimental::filesystem::absolute", "std::experimen
 ---
 # &lt;filesystem&gt; functions
 
-These free functions in the [\<filesystem>](../standard-library/filesystem.md) header perform modifying and query operations on paths, files, symlinks, directories and volumes. For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
+These free functions in the [\<filesystem>](../standard-library/filesystem.md) header do modifying and query operations on paths, files, symlinks, directories, and volumes. For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
 ## <a name="absolute"></a> absolute
 
@@ -82,25 +82,25 @@ If `!exists(f) || equivalent(f, t) || is_other(f) || is_other(t) || is_directory
 
 Otherwise, if `is_symlink(f)` then:
 
-- If `options & copy_options::skip_symlinks` then do nothing.
+- If `options & copy_options::skip_symlinks`, then do nothing.
 
-- Otherwise, if `!exists(t)&& options & copy_options::copy_symlinks` then `copy_symlink(from, to, opts)`.
+- Otherwise, if `!exists(t)&& options & copy_options::copy_symlinks`, then `copy_symlink(from, to, opts)`.
 
-- Otherwise report an error.
+- Otherwise, report an error.
 
-Otherwise, if `is_regular_file(f)` then:
+Otherwise, if `is_regular_file(f)`, then:
 
-- If `opts & copy_options::directories_only` then do nothing.
+- If `opts & copy_options::directories_only`, then do nothing.
 
-- Otherwise, if `opts & copy_options::create_symlinks` then `create_symlink(to, from)`.
+- Otherwise, if `opts & copy_options::create_symlinks`, then `create_symlink(to, from)`.
 
-- Otherwise, if `opts & copy_options::create_hard_links` then `create_hard_link(to, from)`.
+- Otherwise, if `opts & copy_options::create_hard_links`, then `create_hard_link(to, from)`.
 
-- Otherwise, if `is_directory(f)` then `copy_file(from, to` / `from.filename(), opts)`.
+- Otherwise, if `is_directory(f)`, then `copy_file(from, to` / `from.filename(), opts)`.
 
 - Otherwise, `copy_file(from, to, opts)`.
 
-Otherwise, if `is_directory(f) && (opts & copy_options::recursive || !opts)` then:
+Otherwise, if `is_directory(f) && (opts & copy_options::recursive || !opts)`, then:
 
 ```cpp
 if (!exists(t))
@@ -127,9 +127,9 @@ bool copy_file(const path& from, const path& to, copy_options opts, error_code& 
 
 The functions all possibly copy the file at *from* to *to* under control of *opts*, which is taken as `copy_options::none` for the overloads with no *opts* parameter. *opts* shall contain at most one of `skip_existing`, `overwrite_existing`, or `update_existing`.
 
-If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))` then report as an error that the file already exists.
+If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))`, then report as an error that the file already exists.
 
-Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))` then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
+Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`, then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
 
 The functions return **true** if the copy is attempted and succeeds, otherwise **false**.
 
@@ -140,7 +140,7 @@ void copy_symlink(const path& from, const path& to);
 void copy_symlink(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-If `is_directory(from)` the function calls `create_directory_symlink(from, to)`. Otherwise, it calls `create_symlink(from, to)`.
+If `is_directory(from)`, the function calls `create_directory_symlink(from, to)`. Otherwise, it calls `create_symlink(from, to)`.
 
 ## <a name="create_directories"></a> create_directories
 
@@ -149,7 +149,7 @@ bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-For a pathname such as a\/b\/c the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **true** only if it actually creates the directory *pval*.
+For a pathname such as a\/b\/c, the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **true** only if it actually creates the directory *pval*.
 
 ## <a name="create_directory"></a> create_directory
 
@@ -184,7 +184,7 @@ The function creates link as a hard link to the directory or file *to*.
 ## <a name="create_symlink"></a> create_symlink
 
 ```cpp
-void create_symlink(const path& to,  const path& link);
+void create_symlink(const path& to, const path& link);
 
 void create_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
@@ -218,7 +218,7 @@ bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if *left* and *right* designate the same filesystem entity.
+The functions return **true** only if *left* and *right* choose the same filesystem entity.
 
 ## <a name="exists"></a>  exists
 
@@ -237,7 +237,7 @@ uintmax_t file_size(const path& pval);
 uintmax_t file_size(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return the size in bytes of the file designated by *pval*, if `exists(pval) && is_regular_file(pval)` and the file size can be determined. Otherwise they report an error and return `uintmax_t(-1)`.
+The functions return the size in bytes of the file chosen by *pval*, if `exists(pval) && is_regular_file(pval)` and the file size can be determined. Otherwise they report an error and return `uintmax_t(-1)`.
 
 ## <a name="hard_link_count"></a> hard_link_count
 
@@ -294,7 +294,7 @@ bool is_empty(const path& pval);
 bool is_empty(const path& pval, error_code& ec) noexcept;
 ```
 
-If `is_directory(pval)` then the function returns `directory_iterator(pval) == directory_iterator()`; otherwise it returns `file_size(pval) == 0`.
+If `is_directory(pval)`, then the function returns `directory_iterator(pval) == directory_iterator()`; otherwise it returns `file_size(pval) == 0`.
 
 ## <a name="is_fifo"></a> is_fifo
 
@@ -364,9 +364,9 @@ void permissions(const path& pval, perms mask);
 void permissions(const path& pval, perms mask, error_code& ec) noexcept;
 ```
 
-The functions set the permissions for the pathname designated by *pval* to `mask & perms::mask` under control of `perms & (perms::add_perms | perms::remove_perms)`. *mask* shall contain at most one of `perms::add_perms` and `perms::remove_perms`.
+The functions set the permissions for the pathname chosen by *pval* to `mask & perms::mask` under control of `perms & (perms::add_perms | perms::remove_perms)`. *mask* shall contain at most one of `perms::add_perms` and `perms::remove_perms`.
 
-If `mask & perms::add_perms` the functions set the permissions to `status(pval).permissions() | mask & perms::mask`. Otherwise, if `mask & perms::remove_perms` the functions set the permissions to `status(pval).permissions() & ~(mask & perms::mask)`. Otherwise, the functions set the permissions to `mask & perms::mask`.
+If `mask & perms::add_perms`, the functions set the permissions to `status(pval).permissions() | mask & perms::mask`. Otherwise, if `mask & perms::remove_perms`, the functions set the permissions to `status(pval).permissions() & ~(mask & perms::mask)`. Otherwise, the functions set the permissions to `mask & perms::mask`.
 
 ## <a name="proximate"></a> proximate
 
@@ -400,7 +400,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it designates.
+The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
 
 ## <a name="remove_all"></a> remove_all
 
@@ -414,11 +414,11 @@ If *pval* is a directory, the functions recursively remove all directory entries
 ## <a name="rename"></a> rename
 
 ```cpp
-void rename(const path& from,  const path& to);
-void rename(const path& from,  const path& to, error_code& ec) noexcept;
+void rename(const path& from, const path& to);
+void rename(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-The functions rename *from* to *to*. A symlink is itself renamed, not the file it designates.
+The functions rename *from* to *to*. A symlink is itself renamed, not the file it chooses.
 
 ## <a name="resize_file"></a> resize_file
 
@@ -436,7 +436,7 @@ space_info space(const path& pval);
 space_info space(const path& pval, error_code& ec) noexcept;
 ```
 
-The function returns information about the volume designated by *pval*, in a structure of type `space_info`. The structure contains `uintmax_t(-1)` for any value that cannot be determined.
+The function returns information about the volume chosen by *pval*, in a structure of type `space_info`. The structure contains `uintmax_t(-1)` for any value that can't be determined.
 
 ## <a name="status"></a> status
 
@@ -445,7 +445,7 @@ file_status status(const path& pval);
 file_status status(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return the pathname status, the file type and permissions, associated with *pval*. A symlink is itself not tested, but the file it designates.
+The functions return the pathname status, the file type, and permissions, associated with *pval*. A symlink is itself not tested, but the file it chooses.
 
 ## <a name="status_known"></a> status_known
 
@@ -470,7 +470,7 @@ file_status symlink_status(const path& pval);
 file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
 ```
 
-The functions return the pathname symlink status, the file type and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it designates.
+The functions return the pathname symlink status, the file type, and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it chooses.
 
 ## <a name="system_complete"></a> system_complete
 
@@ -500,7 +500,7 @@ template <class InIt>
 path u8path(InIt first, InIt last);
 ```
 
-The first function behaves the same as `path(source)` and the second function behaves the same as `path(first, last)` except that the designated source in each case is taken as a sequence of char elements encoded as UTF-8, regardless of the filesystem.
+The first function behaves the same as `path(source)` and the second function behaves the same as `path(first, last)` except that the chosen source in each case is taken as a sequence of char elements encoded as UTF-8, whatever the filesystem.
 
 ## <a name="weakly_canonical"></a> weakly_canonical
 
