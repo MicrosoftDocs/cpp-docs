@@ -6,7 +6,7 @@ description: Create and debug applications running on Linux.
 
 # Linux Development with C++ Documentation
 
-Use Visual Studio 2017 to create and debug applications running on Linux.
+Use Visual Studio 2017 and later to create and debug applications running on Linux remote machines or Windows Subsystem for Linux.
 
 <ul class="panelContent cardsF">
     <li>
@@ -59,8 +59,8 @@ Use Visual Studio 2017 to create and debug applications running on Linux.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">C++ in Visual Studio</a></h3>
-                        <p><a href="/cpp/build/cmake-projects-in-visual-studio">CMake projects in Visual Studio</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">C++ in Visual Studio</a></h3>
+                        <p><a href="/cpp/overview-of-cpp-development">Overview of C++ development in Visual Studio</a></p>
                     </div>
                 </div>
             </div>

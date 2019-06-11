@@ -1,9 +1,17 @@
 ---
 title: "Linker Properties (Linux C++)"
-ms.date: "9/26/2017"
+ms.date: "06/07/2019"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 ---
 # Linker Properties (Linux C++)
+
+::: moniker range="vs-2015"
+
+Linux support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 ## General
 
@@ -49,3 +57,5 @@ Mark Variables ReadOnly After Relocation | This option marks variables read-only
 Enable Immediate Function Binding | This option marks object for immediate function binding.
 Do Not Require Executable Stack | This option marks output as not requiring executable stack.
 Whole Archive | Whole Archive uses all code from Sources and Additional Dependencies.
+
+::: moniker-end
