@@ -29,7 +29,7 @@ Use Visual Studio 2017 to create and debug applications running on Linux.
         </a>
     </li>
     <li>
-        <a href="https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/">
+        <a href="https://devblogs.microsoft.com/cppblog/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -39,8 +39,8 @@ Use Visual Studio 2017 to create and debug applications running on Linux.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual C++ for Linux Blog</h3>
-                        <p>Keep up to date with new features added to the Visual C++ for Linux Workload.</p>
+                        <h3>C++ Team Blog</h3>
+                        <p>Keep up to date with all the latest C++ features in Visual Studio.</p>
                     </div>
                 </div>
             </div>
@@ -59,8 +59,8 @@ Use Visual Studio 2017 to create and debug applications running on Linux.
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">Visual C++</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">IDE and Tools for Visual C++ Development</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">C++ in Visual Studio</a></h3>
+                        <p><a href="/cpp/build/cmake-projects-in-visual-studio">CMake projects in Visual Studio</a></p>
                     </div>
                 </div>
             </div>
