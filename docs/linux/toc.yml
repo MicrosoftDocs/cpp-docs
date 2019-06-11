@@ -4,7 +4,7 @@
   href: download-install-and-setup-the-linux-development-workload.md
 - name: Configure a Linux project
   href: configure-a-linux-project.md
-- name: Configure a Linux CMake project
+- name: Create and configure a Linux CMake project
   href: cmake-linux-project.md
 - name: Create a new Linux project
   href: create-a-new-linux-project.md

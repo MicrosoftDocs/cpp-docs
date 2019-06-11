@@ -1,6 +1,6 @@
 ---
-title: "Configure a Linux CMake project in Visual Studio"
-description: "How to configure, edit and compile a Linux CMake project in Visual Studio"
+title: "Create and configure a Linux CMake project in Visual Studio"
+description: "How to create, configure, edit and compile a Linux CMake project in Visual Studio"
 ms.date: "06/07/2019"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
@@ -13,7 +13,18 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-When you open a folder that contains a CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
+::: moniker range="vs-2019"
+
+To create a new Linux CMake project in Visual Studio 2019:
+
+1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
+1. Set the **Language** to **C++** and search for "CMake". Then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
+
+Visual Studio creates a minimal CMakeLists.txt file with only the name of the executable and the minimum CMake version required. You can manually edit this file however you like; Visual Studio will never overwrite your changes. You can specify CMake command-line arguments and environment variables by right-clicking on the CMakeLists.txt file in **Solution Explorer** and choosing **CMake settings for project**. To specify options for debugging, right-click on the project node and choose **Debug and launch settings**.
+
+::: moniker-end
+
+When you open a folder that contains an existing CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
 
 Visual Studio does not modify the CMakeLists.txt files or the original CMake cache, so that others working on the same project can continue to use whatever tools they are already using.
 
@@ -69,13 +80,13 @@ add_executable(hello-cmake hello.cpp)
 
 ## Choose a Linux target
 
-As soon as you open the folder, Visual Studio parses the CMakeLists.txt file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, change the project settings to **Linux-Debug** or **Linux-Release**. 
+As soon as you open the folder, Visual Studio parses the CMakeLists.txt file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, change the project settings to **Linux-Debug** or **Linux-Release**. (See [Configure CMake settings for Linux](#configure_cmake_linux) below.)
 
 ::: moniker range="vs-2019"
 
 To target Windows Subsystem for Linux, choose **WSL-Debug** or **WSL-Release** if using GCC, or the Clang variants if using the Clang/LLVM toolset. 
 
-**Visual Studio 2019 version 16.1** When targeting WSL, no copying or sources or headers is necessary because the compiler on Linux has direct access to the Windows file system where your source files are located, and Visual Studio likewise can access the Linux header files directly.
+**Visual Studio 2019 version 16.1** When targeting WSL, no copying or sources or headers is necessary because the compiler on Linux has direct access to the Windows file system where your source files are located. (In Windows version 1903 and later, Windows applications likewise can access the Linux header files directly, but Visual Studio does not yet take advantage of this capability).
 
 ::: moniker-end
 
@@ -95,7 +106,7 @@ To debug your code on the specified debug target system, set a breakpoint, selec
 
 To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
-## Configure CMake settings for Linux
+## <a name="configure_cmake_linux"></a> Configure CMake settings for Linux
 
 A CMakeSettings.json file in a CMake Linux project can specify all the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine. 
 
