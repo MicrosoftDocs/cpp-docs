@@ -1,11 +1,11 @@
 ---
 title: "Create and configure a Linux CMake project in Visual Studio"
-description: "How to create, configure, edit and compile a Linux CMake project in Visual Studio"
-ms.date: "06/07/2019"
+description: "How to create, configure, edit, and compile a Linux CMake project in Visual Studio"
+ms.date: "06/12/2019"
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
 ---
 
-# Configure a Linux CMake project
+# Create and configure a Linux CMake project
 
 ::: moniker range="vs-2015"
 
