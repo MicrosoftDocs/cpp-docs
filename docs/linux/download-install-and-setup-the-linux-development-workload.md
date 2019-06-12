@@ -56,7 +56,7 @@ On Windows 10, you can install and target your favorite Linux distro on the Wind
 When you are targeting WSL, there is no need to add a remote connection or configure SSH in order to build and debug. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
 
 ```bash
-sudo apt-get g++ gdb make rsync zip
+sudo apt-get install g++ gdb make rsync zip
 ```
 ::: moniker-end
 

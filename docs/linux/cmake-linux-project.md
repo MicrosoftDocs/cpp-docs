@@ -26,7 +26,7 @@ Visual Studio creates a minimal CMakeLists.txt file with only the name of the ex
 
 When you open a folder that contains an existing CMake project, Visual Studio uses the metadata that CMake produces to configure IntelliSense and builds automatically. Local configuration and debugging settings are stored in JSON files that can optionally be shared with others who are using Visual Studio. 
 
-Visual Studio does not modify the CMakeLists.txt files or the original CMake cache, so that others working on the same project can continue to use whatever tools they are already using.
+Visual Studio does not modify the CMakeLists.txt files, so that others working on the same project can continue to use whatever tools they are already using. Visual Studio does regenerate the cache when you make edits to CMakeLists.txt or in some cases to CMakeSettings.json. But if you are using an **Existing Cache** configuration, then Visual Studio does not modify the cache.
 
 For general information about CMake support in Visual Studio, see [CMake Tools for Visual Studio](../build/cmake-projects-in-visual-studio.md). Read that first before continuing here.
 
@@ -43,7 +43,9 @@ On the Linux system, make sure that the following are installed:
 
 ::: moniker range="vs-2019"
 
-Linux support for CMake projects requires a recent version of CMake to be installed on the target machine. Often, the version offered by a distribution’s default package manager is not recent enough to support all the features that are required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane that offers to install it for you.
+Linux support for CMake projects requires a recent version of CMake to be installed on the target machine. Often, the version offered by a distribution’s default package manager is not recent enough to support all the features that are required by Visual Studio. Visual Studio 2019 detects whether a recent version of CMake is installed on the Linux system. If none is found, Visual Studio shows an info-bar at the top of the editor pane that offers to install it for you from [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases).
+
+The CMake support in Visual Studio requires the server mode support that was introduced in CMake 3.8. In Visual Studio 2019, version 3.14 or later is recommended.
 
 ::: moniker-end
 
@@ -74,6 +76,7 @@ int main(int argc, char* argv[])
 CMakeLists.txt:
 
 ```cmd
+cmake_minimum_required(VERSION 3.8)
 project (hello-cmake)
 add_executable(hello-cmake hello.cpp)
 ```
@@ -84,9 +87,9 @@ As soon as you open the folder, Visual Studio parses the CMakeLists.txt file and
 
 ::: moniker range="vs-2019"
 
-To target Windows Subsystem for Linux, choose **WSL-Debug** or **WSL-Release** if using GCC, or the Clang variants if using the Clang/LLVM toolset. 
+To target Windows Subsystem for Linux, click on **Manage Configurations** in the in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC, or the Clang variants if using the Clang/LLVM toolset. 
 
-**Visual Studio 2019 version 16.1** When targeting WSL, no copying or sources or headers is necessary because the compiler on Linux has direct access to the Windows file system where your source files are located. (In Windows version 1903 and later, Windows applications likewise can access the Linux header files directly, but Visual Studio does not yet take advantage of this capability).
+**Visual Studio 2019 version 16.1** When targeting WSL, no copying of sources or headers is necessary because the compiler on Linux has direct access to the Windows file system where your source files are located. (In Windows version 1903 and later, Windows applications likewise can access the Linux header files directly, but Visual Studio does not yet take advantage of this capability).
 
 ::: moniker-end
 
@@ -104,7 +107,7 @@ To provide IntelliSense support for headers on remote Linux systems, Visual Stud
 
 To debug your code on the specified debug target system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
+To customize your program’s command line arguments, press the **Switch Targets** button at the top of **Solution Explorer** and then choose **Targets View**. Then right-click on the target and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
 ## <a name="configure_cmake_linux"></a> Configure CMake settings for Linux
 
@@ -124,7 +127,7 @@ This brings up the **CMake Settings Editor** which you can use to edit the `CMak
 
 To change the default CMake settings in Visual Studio 2017, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
-The following example shows the default configuration for Linux-Debug in Visual Studio 2017 based on the previous code example:
+The following example shows the default configuration for Linux-Debug in Visual Studio 2017 (and Visual Studio 2019 version 16.0) based on the previous code example:
 
 ```json
 {
@@ -151,21 +154,8 @@ The following example shows the default configuration for Linux-Debug in Visual 
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
-For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-refernce.md).
 
 ::: moniker-end
-
-You can use these optional settings for more control:
-
-```json
-{
-      "remotePrebuildCommand": "",
-      "remotePreGenerateCommand": "",
-      "remotePostbuildCommand": "",
-}
-```
-
-These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
 
 ::: moniker range="vs-2019"
 
@@ -196,9 +186,26 @@ These options allow you to run commands on the Linux system before and after bui
   ]
 }
 ```
-For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-refernce.md).
-
 ::: moniker-end
+
+For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
+
+
+## Optional Settings
+
+You can use the following optional settings for more control:
+
+```json
+{
+      "remotePrebuildCommand": "",
+      "remotePreGenerateCommand": "",
+      "remotePostbuildCommand": "",
+}
+```
+
+These options allow you to run commands on the Linux system before and after building, and before CMake generation. The values can be any command that is valid on the remote system. The output is piped back to Visual Studio.
+
+
 
 ## See also
 

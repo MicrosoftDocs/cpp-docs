@@ -99,7 +99,7 @@ When you add a new connection in **Connection Manager**, Visual Studio automatic
 This functionality depends on the Linux machine having zip installed. You can install zip by using this apt-get command:
 
 ```cmd
-apt install zip
+sudo apt install zip
 ```
 
 To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created prior to Visual Studio 2017 version 15.3, select the connection and then select **Download**.

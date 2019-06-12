@@ -9,8 +9,8 @@ helpviewer_keywords: ["CMake redefined configurations"]
 
 ::: moniker range="vs-2017"
 
-In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio: 
-- x86 Debug 
+In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
+- x86 Debug
 - x86 Release
 - x64 Debug
 - x64 Release
@@ -19,9 +19,9 @@ In a CMake project, build configurations are stored in a CMakeSettings.json file
 - IoT Debug
 - IoT Release
 - MinGW Debug
-- MinGW Release 
+- MinGW Release
 
-When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project. 
+When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project.
 
 
 ## Linux predefined build configurations:
@@ -343,8 +343,9 @@ These options allow you to run commands on the remote system before and after bu
 
 ::: moniker range="vs-2019"
 
-In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio: 
-- x86 Debug 
+In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
+
+- x86 Debug
 - x86 Clang Debug
 - x86 Release
 - x86 Clang Release
@@ -357,16 +358,16 @@ In a CMake project, build configurations are stored in a CMakeSettings.json file
 - Linux-Clang-Debug
 - Linux-Clang-Release
 - Existing Cache (remote)
-- Existing Cache (local)
+- Existing Cache
 - MinGW Debug
 - MinGW Release
 - WSL Debug
 - WSL Release
 - WSL Clang Debug
 - WSL Clang Release
-- Clang 
+- Clang
 
-When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project. 
+When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project.
 
 
 ```json
