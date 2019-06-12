@@ -51,6 +51,8 @@ To set up this remote connection:
 
    ![Connection Manager Error](media/settings_connectionmanagererror.png)
 
+   ::: moniker-end
+
    ::: moniker range="vs-2019"
 
    Go to **Tools > Options > Cross Platform > Logging** to enable logging to help troubleshoot connection problems:

@@ -100,7 +100,7 @@ After you select a target, CMake runs automatically on the Linux system to gener
 
 To provide IntelliSense support for headers on remote Linux systems, Visual Studio automatically copies them from the Linux machine to a directory on your local Windows machine. For more information, see [IntelliSense for remote headers](configure-a-linux-project.md#remote_intellisense).
 
-## Debug the project
+## <a name="debug_cmake_project"></a> Debug the CMake project
 
 To debug your code on the specified debug target system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
