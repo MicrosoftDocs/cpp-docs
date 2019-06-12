@@ -124,9 +124,7 @@ This brings up the **CMake Settings Editor** which you can use to edit the `CMak
 
 To change the default CMake settings in Visual Studio 2017, choose **CMake | Change CMake Settings | CMakeLists.txt** from the main menu, or right-click CMakeSettings.txt in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new `CMakeSettings.json` file in your root project folder. You can open the file using the **CMake Settings** editor or modify the file directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
-::: moniker-end
-
-The following example shows the default configuration for Linux-Debug based on the previous code example:
+The following example shows the default configuration for Linux-Debug in Visual Studio 2017 based on the previous code example:
 
 ```json
 {
@@ -153,22 +151,9 @@ The following example shows the default configuration for Linux-Debug based on t
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
-The following table summarizes the settings:
+For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-refernce.md).
 
-|Setting|Description|
-|-----------|-----------------|
-|`name`|This value can be whatever you like.|
-|`remoteMachineName`|Specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system.|
-|`remoteCMakeListsRoot`|Specifies where your project sources will be copied to on the remote system.|
-|`remoteBuildRoot`|Specifies where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`.|
-|`remoteInstallRoot` and `installRoot`| Similar to `remoteBuildRoot` and `buildRoot`, except they apply when doing a CMake install.|
-|`remoteCopySources`|Specifies whether or not your local sources are copied to the remote machine. You might set this to false if you have many files and you're already syncing the sources yourself.|
-|`remoteCopyOutputVerbosity`| Specifies the verbosity of the copy step in case you need to diagnose errors.|
-|`remoteCopySourcesConcurrentCopies`| Specifies how many processes are spawned to do the copy.|
-|`remoteCopySourcesMethod`| Can be either `rsync` or `sftp`.|
-|`remoteCopySourcesExclusionList`| Specifies files that you do not want to be copied to the remote machine.|
-|`rsyncCommandArgs`|Controls the rsync method of copying.|
-|`remoteCopyBuildOutput`| Controls whether or not the remote build output is copied to your local build folder.|
+::: moniker-end
 
 You can use these optional settings for more control:
 
@@ -184,7 +169,34 @@ These options allow you to run commands on the Linux system before and after bui
 
 ::: moniker range="vs-2019"
 
-In Visual Studio 2019 you can edit all these settings in the **CMake Settings Editor**.
+ The default Linux-Debug configuration in Visual Studio 2019 version 16.1 and later is as shown here:
+
+```json
+{
+      "name": "Linux-Debug",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "cmakeExecutable": "/usr/bin/cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git", "out" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "remoteCMakeListsRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/src",
+      "remoteBuildRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/build/${name}",
+      "remoteInstallRoot": "$HOME/.vs/${projectDirName}/${workspaceHash}/out/install/${name}",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "rsync",
+      "addressSanitizerRuntimeFlags": "detect_leaks=0",
+      "variables": []
+    }
+  ]
+}
+```
+For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-refernce.md).
 
 ::: moniker-end
 
