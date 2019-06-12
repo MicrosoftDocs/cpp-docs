@@ -60,7 +60,6 @@ Use Visual Studio 2017 and later to create and debug applications running on Lin
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">C++ in Visual Studio</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">Overview of C++ development in Visual Studio</a></p>
                     </div>
                 </div>
             </div>
