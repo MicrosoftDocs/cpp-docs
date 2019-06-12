@@ -28,7 +28,7 @@ When you open a folder that contains an existing CMake project, Visual Studio us
 
 Visual Studio does not modify the CMakeLists.txt files, so that others working on the same project can continue to use whatever tools they are already using. Visual Studio does regenerate the cache when you make edits to CMakeLists.txt or in some cases to CMakeSettings.json. But if you are using an **Existing Cache** configuration, then Visual Studio does not modify the cache.
 
-For general information about CMake support in Visual Studio, see [CMake Tools for Visual Studio](../build/cmake-projects-in-visual-studio.md). Read that first before continuing here.
+For general information about CMake support in Visual Studio, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md). Read that first before continuing here.
 
 ## Before you begin
 
