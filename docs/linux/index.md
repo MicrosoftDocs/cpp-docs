@@ -29,7 +29,7 @@ Use Visual Studio 2017 and later to create and debug applications running on Lin
         </a>
     </li>
     <li>
-        <a href="https://blogs.msdn.microsoft.com/vcblog/2016/03/30/visual-c-for-linux-development/">
+        <a href="https://devblogs.microsoft.com/cppblog/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -39,8 +39,8 @@ Use Visual Studio 2017 and later to create and debug applications running on Lin
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual C++ for Linux Blog</h3>
-                        <p>Keep up to date with new features added to the Visual C++ for Linux Workload.</p>
+                        <h3>C++ Team Blog</h3>
+                        <p>Keep up to date with all the latest C++ features in Visual Studio.</p>
                     </div>
                 </div>
             </div>
@@ -59,8 +59,7 @@ Use Visual Studio 2017 and later to create and debug applications running on Lin
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio.md">C++ in Visual Studio</a></h3>
-                        <p><a href="/cpp/overview-of-cpp-development">Overview of C++ development in Visual Studio</a></p>
+                        <h3><a href="/cpp/overview/visual-cpp-in-visual-studio">C++ in Visual Studio</a></h3>
                     </div>
                 </div>
             </div>

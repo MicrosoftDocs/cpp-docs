@@ -1,6 +1,6 @@
 ---
 title: "Configure a C++ Linux project in Visual Studio"
-ms.date: "06/07/2019"
+ms.date: "06/11/2019"
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux project
@@ -31,7 +31,7 @@ To view configuration options, select the **Project > Properties** menu, or righ
 
 ![General configuration](media/settings_general.png)
 
-By default, an executable (.out) is built with the tool. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
+By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
 
 For more information about the settings in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
 
@@ -99,7 +99,7 @@ When you add a new connection in **Connection Manager**, Visual Studio automatic
 This functionality depends on the Linux machine having zip installed. You can install zip by using this apt-get command:
 
 ```cmd
-apt install zip
+sudo apt install zip
 ```
 
 To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created prior to Visual Studio 2017 version 15.3, select the connection and then select **Download**.
