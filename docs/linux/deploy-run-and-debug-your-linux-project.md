@@ -16,7 +16,7 @@ Once you have created a Linux C++ project in Visual Studio and you have connecte
 
 ::: moniker range="vs-2019"
 
-**Visual Studio 2019 version 16.1** You can target different Linux systems for debugging and building. Specify the build machine on the **General** property page and the debug machine on the **Debugging** property page.
+**Visual Studio 2019 version 16.1** You can target different Linux systems for debugging and building. For example, you can cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios. For more information, see [Specify different machines for building and debugging](#separate_build_debug) later in this article.
 
 ::: moniker-end
 
@@ -29,8 +29,6 @@ There are several ways to interact with and debug your Linux project.
 ## Debug your Linux project
 
 1. Select debugging mode in the **Debugging** property page.
-
-   
    
    ::: moniker range="vs-2019"
 
@@ -88,15 +86,19 @@ There are several ways to interact with and debug your Linux project.
 
    ![Linux Console window](media/consolewindow.png)
 
-## Configure other debugging options
+## Configure other debugging options (MSBuild-based projects)
 
 - Command-line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
 
    ![Program Arguments](media/settings_programarguments.png)
 
-- Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this.  by adding the following to the **Additional Debugger Commands** entry as shown above:
+- Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
 
    `handle SIGILL nostop noprint`
+
+## Configure other debugging options (CMake projects)
+
+You can specify additional command-line arguments for a CMake project in the launch.vs.json file. For more information, see [Debug the CMake project](cmake-linux-project.md#debug_cmake_project)
 
 ## Debug with Attach to Process
 
@@ -118,6 +120,72 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 ```
 
 The **AttachOptionsForConnection** has most of the attributes you might need. The example above shows how to specify a location to search for additional .so libraries. The child element **ServerOptions** enables attaching to the remote process with gdbserver instead. To do that you need to specify a local gdb client (the one shipped in Visual Studio 2017 is shown above) and a local copy of the binary with symbols. The **SetupCommands** element enables you to pass commands directly to gdb. You can find all the options available in the [LaunchOptions.xsd schema](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) on GitHub.
+
+::: moniker range="vs-2019"
+
+## <a name="separate_build_debug"></a> Specify different machines for building and debugging
+
+In Visual Studio 2019 version 16.1 You can separate your remote build machine from your remote debug machine for both MSBuild-based Linux projects and CMake projects that target a remote Linux machine. For example, you can now cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios.
+
+### MSBuild-based projects
+
+By default, the remote debug machine is the same as the remote build machine (**Configuration Properties** > **General** > **Remote Build Machine**). To specify a new remote debug machine, right-click on the project in **Solution Explorer** and go to **Configuration Properties** > **Debugging** > **Remote Debug Machine**.  
+
+![Linux remote debug machine](media/linux-remote-debug-machine.png)
+
+The drop-down menu for **Remote Debug Machine** is populated with all established remote connections. To add a new remote connection, navigate to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or search for "Connection Manager" in **Quick Launch**. You can also specify a new remote deploy directory in the project’s Property Pages (**Configuration Properties** > **General** > **Remote Deploy Directory**).
+
+By default, only the files necessary for the process to debug will be deployed to the remote debug machine. You can use **Solution Explorer** to configure which source files will be deployed to the remote debug machine. When you click on a source file, you will see a preview of its File Properties directly below the Solution Explorer.
+
+![Linux deployable files](media/linux-deployable-content.png)
+
+The **Content** property specifies whether the file will be deployed to the remote debug machine. You can disable deployment entirely by navigating to **Property Pages** > **Configuration Manager** and unchecking **Deploy** for the desired configuration.
+
+In some cases, you may require more control over your project’s deployment. For example, some files that you want to deploy might be outside of your solution or you want to customize your remote deploy directory per file ordirectory. In these cases, append the following code block(s) to your .vcxproj file and replace "example.cpp" with the actual file names:
+
+```xml
+
+<ItemGroup>
+   <RemoteDeploy Include="__example.cpp">
+<!-- This is the source Linux machine, can be empty if DeploymentType is LocalRemote -->
+      <SourceMachine>$(RemoteTarget)</SourceMachine>
+      <TargetMachine>$(RemoteDebuggingTarget)</TargetMachine>
+      <SourcePath>~/example.cpp</SourcePath>
+      <TargetPath>~/example.cpp</TargetPath>
+<!-- DeploymentType can be LocalRemote, in which case SourceMachine will be empty and SourcePath is a local file on Windows -->
+      <DeploymentType>RemoteRemote</DeploymentType>
+<!-- Indicates whether the deployment contains executables -->
+      <Executable>true</Executable>
+   </RemoteDeploy>
+</ItemGroup>
+```
+
+### CMake projects
+
+For CMake projects that target a remote Linux machine, you can specify a new remote debug machine in launch.vs.json. By default, the value of "remoteMachineName" is synchronized with the "remoteMachineName" property in CMakeSettings.json, which corresponds to your remote build machine. These properties no longer need to match, and the value of "remoteMachineName" in launch.vs.json will dictate which remote machine is used for deploy and debug.
+
+![CMake remote debug machine](media/cmake-remote-debug-machine.png)
+
+IntelliSense will suggest all a list of all established remote connections. You can add a new remote connection by navigating to **Tools** > **Options** > **Cross Platform** > **Connection Manager** or searching for "Connection Manager" in **Quick Launch**.
+
+If you want complete control over your deployment, you can append the following code block(s) to the launch.vs.json file. Remember to replace the placeholder values with real values:
+
+```json
+
+"disableDeploy": false,
+"deployDirectory": "~\foo",
+"deploy" : [
+   {
+      "sourceMachine": "127.0.0.1 (username=example1, port=22, authentication=Password)",
+      "targetMachine": "192.0.0.1 (username=example2, port=22, authentication=Password)",
+      "sourcePath": "~/example.cpp",
+      "targetPath": "~/example.cpp",
+      "executable": "false"
+   }
+]
+
+```
+::: moniker-end
 
 ## Next steps
 
