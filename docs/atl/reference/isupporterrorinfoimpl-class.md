@@ -63,23 +63,6 @@ STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 
 See [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) in the Windows SDK.
 
-##  <a name="getsize"></a>  IThreadPoolConfig::GetSize
-
-Call this method to get the number of threads in the pool.
-
-```cpp
-STDMETHOD(GetSize)(int* pnNumThreads);
-```
-
-### Parameters
-
-*pnNumThreads*<br/>
-[out] Address of the variable that, on success, receives the number of threads in the pool.
-
-### Return Value
-
-Returns S_OK on success, or an error HRESULT on failure.
-
 ## See also
 
 [Class Overview](../../atl/atl-class-overview.md)
