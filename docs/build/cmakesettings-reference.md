@@ -114,7 +114,7 @@ When the active configuration specifies a Visual Studio generator, by default MS
 
 - `remoteMachineName`: specifies the name of the remote Linux machine that hosts CMake, builds, and the debugger. Use the Connection Manager for adding new Linux machines. Supported macros include `${defaultRemoteMachineName}`.
 - `remoteCopySourcesOutputVerbosity`: specifies the verbosity level of the source copying operation to the remote machine. May be one of ""Normal", "Verbose", or "Diagnostic".
-- `remoteCopySourcesConcurrentCopies`: specifies the number of concurrent copies used during the synchronization of the sources to the remote machine.
+- `remoteCopySourcesConcurrentCopies`: specifies the number of concurrent copies used during the synchronization of the sources to the remote machine (sftp only).
 - `remoteCopySourcesMethod`: specifies the method to copy files to the remote machine. May be "rsync" or "sftp".
 - `remoteCMakeListsRoot`: specifies the directory on the remote machine that contains the CMake project. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `remoteBuildRoot`: specifies the directory on the remote machine in which CMake generates build scripts for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.

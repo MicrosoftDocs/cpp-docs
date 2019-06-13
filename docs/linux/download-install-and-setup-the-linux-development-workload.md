@@ -1,12 +1,17 @@
 ---
 title: "Install the C++ Linux workload in Visual Studio"
 description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
-ms.date: "06/07/2019"
+ms.date: "06/11/2019"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
 
 # Download, install, and set up the Linux workload
 
+::: moniker range="vs-2015"
+
+Linux projects are supported in Visual Studio 2017 and later.
+
+::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
@@ -31,7 +36,9 @@ Support for [AddressSanitizer (ASan)](https://github.com/google/sanitizers/wiki/
 ## Visual Studio setup
 
 1. Type "Visual Studio Installer" in the Windows search box:
+
    ![Windows search box](media/visual-studio-installer-search.png)
+
 2. Look for the installer under the **Apps** results and double-click it. When the installer opens, choose **Modify**, and then click on the **Workloads** tab. Scroll down to **Other toolsets** and select the **Linux development with C++** workload.
 
    ![Visual C++ for Linux Development workload](media/linuxworkload.png)
@@ -52,10 +59,10 @@ On Windows 10, you can install and target your favorite Linux distro on the Wind
 
 ## Linux setup: Ubuntu on WSL
 
-On WSL, no remote connection is required. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
+When you are targeting WSL, there is no need to add a remote connection or configure SSH in order to build and debug. **zip** and **rsync** are required for automatic syncing of Linux headers with Visual Studio for Intellisense support. If the required applications are not already present, you can install them as follows:
 
 ```bash
-sudo g++ gdb make rsync zip
+sudo apt-get install g++ gdb make rsync zip
 ```
 ::: moniker-end
 
