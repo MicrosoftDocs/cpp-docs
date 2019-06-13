@@ -87,7 +87,7 @@ Corresponds to **generator**: maps to the CMake **-G** switch and specifies the 
   - "Unix Makefiles"
   - "Visual Studio 16 2019"
   - "Visual Studio 16 2019 Win64"
-  - - "Visual Studio 16 2019 ARM"
+  - "Visual Studio 16 2019 ARM"
   - "Visual Studio 15 2017"
   - "Visual Studio 15 2017 Win64"
   - "Visual Studio 15 2017 ARM"

@@ -8,14 +8,14 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
-CMake is integrated in the Visual Studio IDE as CMake Tools for Visual Studio, a component of the C++ desktop workload. For more information, see [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md). For any other build system, you can use the Open Folder feature. Open Folder effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
+CMake is integrated in the Visual Studio IDE as a component of the C++ desktop workload. For more information, see [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md). For any other build system, you can use the Open Folder feature. Open Folder effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
 
 To use Open Folder, from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**.
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. 
 
 ## QMake projects that target the Qt framework
 
-You can use CMake Tools for Visual Studio to target Qt to build Qt projects, or you can use the [Qt Visual Studio Extension](https://download.qt.io/development_releases/vsaddin/) for either Visual Studio 2015 or Visual Studio 2017.
+You can use CMake to build Qt projects, or you can use the [Qt Visual Studio Extension](https://download.qt.io/development_releases/vsaddin/) for either Visual Studio 2015 or Visual Studio 2017.
 
 ## gyp, Cons, SCons, Buck, etc
 
