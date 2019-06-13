@@ -256,8 +256,7 @@ Determines the width and height required to display the items of a list view con
 
 ```
 CSize ApproximateViewRect(
-    CSize sz = CSize(-1,
--1),
+    CSize sz = CSize(-1, -1),
     int iCount = -1) const;
 ```
 
@@ -705,7 +704,7 @@ A 32-bit value used to specify an RGB color.
 
 ### Example
 
-  See the example for [CListCtrl::SetBkColor](#setbkcolor).
+See the example for [CListCtrl::SetBkColor](#setbkcolor).
 
 ## <a name="getbkimage"></a>  CListCtrl::GetBkImage
 
@@ -761,7 +760,7 @@ A "callback item" is a list view item for which the application — rather than 
 
 ### Example
 
-  See the example for [CListCtrl::SetCallbackMask](#setcallbackmask).
+See the example for [CListCtrl::SetCallbackMask](#setcallbackmask).
 
 ## <a name="getcheck"></a>  CListCtrl::GetCheck
 
@@ -786,7 +785,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetCh
 
 ### Example
 
-  See the example for [CListCtrl::SetCheck](#setcheck).
+See the example for [CListCtrl::SetCheck](#setcheck).
 
 ## <a name="getcolumn"></a>  CListCtrl::GetColumn
 
@@ -868,7 +867,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetCo
             int  nColumnCount = pHeaderCtrl->GetItemCount();
             LPINT pnOrder = (LPINT) malloc(nColumnCount*sizeof(int));
             ASSERT(pnOrder != NULL);
-m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
+            m_myListCtrl.GetColumnOrderArray(pnOrder, nColumnCount);
 
             int i, j, nTemp;
             for (i = 0, j = nColumnCount-1; i < j; i++, j--)
@@ -922,7 +921,7 @@ The number of items that can fit vertically in the visible area of a list view c
 
 ### Example
 
-  See the example for [CListCtrl::GetTopIndex](#gettopindex).
+See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="geteditcontrol"></a>  CListCtrl::GetEditControl
 
@@ -985,7 +984,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetEx
 
 ### Example
 
-  See the example for [CListCtrl::SetExtendedStyle](#setextendedstyle).
+See the example for [CListCtrl::SetExtendedStyle](#setextendedstyle).
 
 ## <a name="getfirstselecteditemposition"></a>  CListCtrl::GetFirstSelectedItemPosition
 
@@ -1262,7 +1261,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetHe
 
 ### Example
 
-  See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
+See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
 ## <a name="gethotcursor"></a>  CListCtrl::GetHotCursor
 
@@ -1368,7 +1367,7 @@ A pointer to the image list used for drawing list view items.
 
 ```cpp
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == NULL);
-m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
+        m_myListCtrl.SetImageList(&m_lcImageList, LVSIL_NORMAL);
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
@@ -1469,7 +1468,7 @@ The number of items in the list view control.
 
 ### Example
 
-  See the example for [CListCtrl::DeleteItem](#deleteitem).
+See the example for [CListCtrl::DeleteItem](#deleteitem).
 
 ## <a name="getitemdata"></a>  CListCtrl::GetItemData
 
@@ -1639,7 +1638,7 @@ Nonzero if successful; otherwise zero.
 void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
 
     // Get the current mouse location and convert it to client
     // coordinates.
@@ -1729,7 +1728,7 @@ An item's state is specified by the `state` member of the [LVITEM](/windows/desk
 
 ### Example
 
-  See the example for [CListCtrl::GetTopIndex](#gettopindex).
+See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="getitemtext"></a>  CListCtrl::GetItemText
 
@@ -2122,7 +2121,7 @@ A 32-bit value used to specify an RGB color.
 
 ### Example
 
-  See the example for [CListCtrl::SetTextBkColor](#settextbkcolor).
+See the example for [CListCtrl::SetTextBkColor](#settextbkcolor).
 
 ## <a name="gettextcolor"></a>  CListCtrl::GetTextColor
 
@@ -2138,7 +2137,7 @@ A 32-bit value used to specify an RGB color.
 
 ### Example
 
-  See the example for [CListCtrl::SetTextColor](#settextcolor).
+See the example for [CListCtrl::SetTextColor](#settextcolor).
 
 ## <a name="gettileinfo"></a>  CListCtrl::GetTileInfo
 
@@ -2299,7 +2298,7 @@ This member function implements the behavior of the Win32 macro, [ListView_GetWo
 
 ### Example
 
-  See the example for [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).
+See the example for [CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas).
 
 ## <a name="hasgroup"></a>  CListCtrl::HasGroup
 
@@ -2915,7 +2914,7 @@ Returns nonzero if successful, or zero otherwise.
 
 ### Example
 
-  See the example for [CListCtrl::GetBkImage](#getbkimage).
+See the example for [CListCtrl::GetBkImage](#getbkimage).
 
 ## <a name="setcallbackmask"></a>  CListCtrl::SetCallbackMask
 
@@ -3007,7 +3006,7 @@ Nonzero if successful; otherwise zero.
 
 ### Example
 
-  See the example for [CListCtrl::GetColumn](#getcolumn).
+See the example for [CListCtrl::GetColumn](#getcolumn).
 
 ## <a name="setcolumnorderarray"></a>  CListCtrl::SetColumnOrderArray
 
@@ -3037,7 +3036,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetCo
 
 ### Example
 
-  See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
+See the example for [CListCtrl::GetColumnOrderArray](#getcolumnorderarray).
 
 ## <a name="setcolumnwidth"></a>  CListCtrl::SetColumnWidth
 
@@ -3158,7 +3157,7 @@ The hot cursor, only visible when hover selection is enabled, appears as the cur
 
 ### Example
 
-  See the example for [CListCtrl::GetHotCursor](#gethotcursor).
+See the example for [CListCtrl::GetHotCursor](#gethotcursor).
 
 ## <a name="sethotitem"></a>  CListCtrl::SetHotItem
 
@@ -3183,7 +3182,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetHo
 
 ### Example
 
-  See the example for [CListCtrl::GetHotItem](#gethotitem).
+See the example for [CListCtrl::GetHotItem](#gethotitem).
 
 ## <a name="sethovertime"></a>  CListCtrl::SetHoverTime
 
@@ -3208,7 +3207,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetHo
 
 ### Example
 
-  See the example for [CListCtrl::GetHoverTime](#gethovertime).
+See the example for [CListCtrl::GetHoverTime](#gethovertime).
 
 ## <a name="seticonspacing"></a>  CListCtrl::SetIconSpacing
 
@@ -3278,7 +3277,7 @@ A pointer to the previous image list.
 
 ### Example
 
-  See the example for [CListCtrl::GetImageList](#getimagelist).
+See the example for [CListCtrl::GetImageList](#getimagelist).
 
 ## <a name="setinfotip"></a>  CListCtrl::SetInfoTip
 
@@ -3420,7 +3419,7 @@ The `mask` member of the `LVITEM` structure and the *nMask* parameter specify wh
 
 ### Example
 
-  See the example for [CListCtrl::HitTest](#hittest).
+See the example for [CListCtrl::HitTest](#hittest).
 
 ## <a name="setitemcount"></a>  CListCtrl::SetItemCount
 
@@ -3602,7 +3601,7 @@ If the list view control has the LVS_AUTOARRANGE style, the list view is arrange
 
 ### Example
 
-  See the example for [CListCtrl::GetItemPosition](#getitemposition).
+See the example for [CListCtrl::GetItemPosition](#getitemposition).
 
 ## <a name="setitemstate"></a>  CListCtrl::SetItemState
 
@@ -3643,7 +3642,7 @@ An item's "state" is a value that specifies the item's availability, indicates u
 
 ### Example
 
-  See the example for [CListCtrl::GetTopIndex](#gettopindex).
+See the example for [CListCtrl::GetTopIndex](#gettopindex).
 
 ## <a name="setitemtext"></a>  CListCtrl::SetItemText
 
@@ -3677,7 +3676,7 @@ This method is not intended for use with controls containing the LVS_OWNERDATA w
 
 ### Example
 
-  See the example for [CListCtrl::InsertItem](#insertitem).
+See the example for [CListCtrl::InsertItem](#insertitem).
 
 ## <a name="setoutlinecolor"></a>  CListCtrl::SetOutlineColor
 
@@ -3744,7 +3743,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SetSe
 
 ### Example
 
-  See the example for [CListCtrl::GetSelectionMark](#getselectionmark).
+See the example for [CListCtrl::GetSelectionMark](#getselectionmark).
 
 ## <a name="settextbkcolor"></a>  CListCtrl::SetTextBkColor
 
@@ -3991,7 +3990,7 @@ int CALLBACK CListCtrlDlg::MyCompareProc(LPARAM lParam1, LPARAM lParam2,
     LPARAM lParamSort)
 {
     UNREFERENCED_PARAMETER(lParamSort);
-return (int)(lParam1 - lParam2);
+    return (int)(lParam1 - lParam2);
 }
 ```
 
@@ -4115,7 +4114,7 @@ This member function implements the behavior of the Win32 macro, [ListView_SubIt
 void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 {
     UNREFERENCED_PARAMETER(pResult);
-LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
+    LPNMITEMACTIVATE pia = (LPNMITEMACTIVATE)pNMHDR;
     LVHITTESTINFO lvhti;
 
     // Clear the subitem text the user clicked on.
@@ -4152,7 +4151,7 @@ This function also arranges the list view control if it has the LVS_AUTOARRANGE 
 
 ### Example
 
-  See the example for [CListCtrl::GetSelectedCount](#getselectedcount).
+See the example for [CListCtrl::GetSelectedCount](#getselectedcount).
 
 ## See also
 
