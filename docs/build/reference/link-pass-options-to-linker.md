@@ -20,7 +20,7 @@ The linker option or options to be passed to the linker.
 
 ## Remarks
 
-The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linkeroptions`. For more information, see [MSVC linker reference](linking.md).
+The **/link** option and its linker options must appear after any file names and CL options. A space is required between **/link** and `linker-options`. For more information, see [MSVC linker reference](linking.md).
 
 ## Example
 
