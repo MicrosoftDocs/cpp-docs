@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "05/16/2019"
+ms.date: "06/14/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -8,13 +8,11 @@ ms.author: "mblome"
 ---
 # C++ conformance improvements in Visual Studio
 
-Microsoft C++ makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. It also lists major bug fixes by version.
+Microsoft C++ makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. It also lists major bug fixes by version. To jump directly to the changes for a specific version, use the **In this article** list.
 
 ::: moniker range=">=vs-2019"
 
-## C++ conformance improvements in Visual Studio 2019 versions 16.0 and [16.1](#improvements_161)
-
-## <a name="improvements_160"></a> Improvements in Visual Studio 2019 RTW (16.0)
+## <a name="improvements_160"></a> Improvements in Visual Studio 2019 RTW (version 16.0)
 
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler (MSVC).
 
@@ -519,7 +517,9 @@ Fixed a minor type traits bug, where `add_const_t` and related functions are sup
 
 ::: moniker-end
 
-## C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#improvements_159)
+::: moniker range=">=vs-2017"
+
+## <a name="improvements_150"></a> Improvements in Visual Studio 2017 RTW (version 15.0)
 
 With support for generalized `constexpr` and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -589,7 +589,7 @@ The `*this` object in a lambda expression may now be captured by value. This cha
 
 The `register` keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
-## <a name="improvements_155"></a>  Improvements in Visual Studio 2017 version 15.5
+## <a name="improvements_155"></a> Improvements in Visual Studio 2017 version 15.5
 
 Features marked with \[14] are available unconditionally even in **/std:c++14** mode.
 
@@ -653,7 +653,7 @@ The standard library now uses variable templates internally.
 
 The standard library has been updated in response to C++17 compiler changes, including the addition of `noexcept` in the type system and the removal of dynamic-exception-specifications.
 
-## <a name="improvements_156"></a>  Improvements in Visual Studio 2017 version 15.6
+## <a name="improvements_156"></a> Improvements in Visual Studio 2017 version 15.6
 
 ### C++17 Library Fundamentals V1
 
@@ -876,7 +876,7 @@ int main()
 };
 ```
 
-## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15.8](#update_158), and [15.9](#update_159)
+## <a name="update_150"></a> Bug fixes in Visual Studio 2017 RTW (version 15.0)
 
 ### Copy-list-initialization
 
@@ -2549,7 +2549,9 @@ note: see usage of 'g'.
 
 To avoid the error, remove the `constexpr` qualifier from the explicit instantiation of the function `f()`.
 
-## Improvements in older versions of Visual Studio
+::: moniker-end
+
+## C++ conformance improvements in Visual Studio 2015
 
 For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
 
