@@ -1,18 +1,18 @@
 ---
-title: "References to Pointers"
-ms.date: "08/20/2018"
+title: "References to pointers"
+ms.date: "06/13/2019"
 helpviewer_keywords: ["references, to pointers"]
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
 ---
-# References to Pointers
+# References to pointers
 
-References to pointers can be declared in much the same way as references to objects. Declaring a reference to a pointer yields a modifiable value that is used like a normal pointer.
+References to pointers can be declared in much the same way as references to objects. A reference to a pointer is a modifiable value that's used like a normal pointer.
 
 ## Example
 
-The following code samples illustrate the difference between using a pointer to a pointer and a reference to a pointer.
+This code sample shows the difference between using a pointer to a pointer and a reference to a pointer.
 
-Functions `Add1` and `Add2` are functionally equivalent (although they are not called the same way). The difference is that `Add1` uses double indirection whereas `Add2` uses the convenience of a reference to a pointer.
+Functions `Add1` and `Add2` are functionally equivalent, although they're not called the same way. The difference is that `Add1` uses double indirection, but `Add2` uses the convenience of a reference to a pointer.
 
 ```cpp
 // references_to_pointers.cpp
@@ -45,11 +45,11 @@ void PrintTree( BTree* btRoot );
 int main( int argc, char *argv[] ) {
    // Usage message
    if( argc < 2 ) {
-      cerr << "Usage: Refptr [1 | 2]" << "\n";
+      cerr << "Usage: " << argv[0] << " [1 | 2]" << "\n";
       cerr << "\nwhere:\n";
       cerr << "1 uses double indirection\n";
       cerr << "2 uses a reference to a pointer.\n";
-      cerr << "\nInput is from stdin.\n";
+      cerr << "\nInput is from stdin. Use ^Z to terminate input.\n";
       return 1;
    }
 
@@ -92,15 +92,15 @@ int main( int argc, char *argv[] ) {
 // PrintTree: Display the binary tree in order.
 void PrintTree( BTree* MybtRoot ) {
    // Traverse the left branch of the tree recursively.
-   if ( btRoot->Left )
-      PrintTree( btRoot->Left );
+   if ( MybtRoot->Left )
+      PrintTree( MybtRoot->Left );
 
    // Print the current node.
-   cout << btRoot->szText << "\n";
+   cout << MybtRoot->szText << "\n";
 
    // Traverse the right branch of the tree recursively.
-   if ( btRoot->Right )
-      PrintTree( btRoot->Right );
+   if ( MybtRoot->Right )
+      PrintTree( MybtRoot->Right );
 }
 
 // Add1: Add a node to the binary tree.
@@ -143,13 +143,13 @@ int Add2( BTree*& Root, char *szToAdd ) {
 ```
 
 ```Output
-Usage: Refptr [1 | 2]
+Usage: references_to_pointers.exe [1 | 2]
 
 where:
 1 uses double indirection
 2 uses a reference to a pointer.
 
-Input is from stdin.
+Input is from stdin. Use ^Z to terminate input.
 ```
 
 ## See also
