@@ -7469,6 +7469,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/overview/2017/cpp-conformance-improvements.md",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/overview/2019/cpp-conformance-improvements.md",
+            "redirect_url": "/cpp/overview/cpp-conformance-improvements",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/parallel/openmp/contents.md",
             "redirect_url": "/cpp/parallel/openmp/openmp-c-and-cpp-application-program-interface",
             "redirect_document_id": false
