@@ -7469,12 +7469,12 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/overview/2017/cpp-conformance-improvements.md",
+            "source_path": "docs/overview/2017/cpp-conformance-improvements-2017.md",
             "redirect_url": "/cpp/overview/cpp-conformance-improvements",
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/overview/2019/cpp-conformance-improvements.md",
+            "source_path": "docs/overview/2019/cpp-conformance-improvements-2019.md",
             "redirect_url": "/cpp/overview/cpp-conformance-improvements",
             "redirect_document_id": false
         },
