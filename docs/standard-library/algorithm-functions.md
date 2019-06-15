@@ -164,7 +164,7 @@ A condition to test for. This is a user-defined predicate function object that d
 
 ### Return Value
 
-Returns **true** if the condition is detected at each element in the indicated range, and **false** if the condition is not detected at least one time.
+Returns **true** if the condition is detected at each element in the indicated range or if the range is empty, and **false** otherwise.
 
 ### Remarks
 
