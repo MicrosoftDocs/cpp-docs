@@ -170,6 +170,54 @@ Returns **true** if the condition is detected at each element in the indicated r
 
 The template function returns **true** only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is **true**.
 
+### Example
+
+```cpp
+// alg_all_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+// Returns whether element is even
+bool is_even(int elem)
+{
+
+	return elem % 2 == 0;
+}
+
+int main()
+{
+	using namespace std;
+	list <int> L;
+	list <int>::iterator Iter;
+	list <int>::iterator result1, result2;
+
+	L.push_back(50);
+	L.push_back(40);
+	L.push_back(10);
+	L.push_back(20);
+	L.push_back(20);
+
+	cout << "L = ( ";
+	for (Iter = L.begin(); Iter != L.end(); Iter++)
+		cout << *Iter << " ";
+	cout << ")" << endl;
+
+	// Check if all elements in L are even.
+	if (all_of(L.begin(), L.end(), is_even))
+		cout << "All the elements are even numbers.\n";
+	else
+		cout << "Not all the elements are even numbers.\n";
+}
+```
+
+```Output
+L = ( 50 40 10 20 20 )
+All the elements are even numbers.
+```
+
+
 ## <a name="any_of"></a>  any_of
 
 Returns **true** when a condition is present at least once in the specified range of elements.
