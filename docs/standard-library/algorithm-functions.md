@@ -203,6 +203,52 @@ The template function returns **true** only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `comp(*(first + N))` is true.
 
+### Example
+
+```cpp
+// alg_any_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+// Returns whether element is even
+bool is_even(int elem)
+{
+	return elem % 2 == 0;
+}
+
+int main()
+{
+	using namespace std;
+	list <int> L;
+	list <int>::iterator Iter;
+	list <int>::iterator result1, result2;
+
+	L.push_back(51);
+	L.push_back(41);
+	L.push_back(11);
+	L.push_back(21);
+	L.push_back(20);
+
+	cout << "L = ( ";
+	for (Iter = L.begin(); Iter != L.end(); Iter++)
+		cout << *Iter << " ";
+	cout << ")" << endl;
+
+	// Check if there is an even elememt in L.
+	if (any_of(L.begin(), L.end(), is_even))
+		cout << "There is even element in L\n";
+	else
+		cout << "There are not even elements in L.\n";
+}
+```
+
+```Output
+L = ( 51 41 11 21 20 )
+There is even element in L
+```
+
 ## <a name="binary_search"></a>  binary_search
 
 Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.
