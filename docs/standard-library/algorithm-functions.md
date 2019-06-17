@@ -212,41 +212,30 @@ The template function returns **true** only if, for some `N` in the range
 #include <algorithm>
 #include <iostream>
 
-// Returns whether element is even
-bool is_even(int elem)
-{
-	return elem % 2 == 0;
-}
 
 int main()
 {
-	using namespace std;
-	list <int> L;
-	list <int>::iterator Iter;
-	list <int>::iterator result1, result2;
+    using namespace std;
 
-	L.push_back(51);
-	L.push_back(41);
-	L.push_back(11);
-	L.push_back(21);
-	L.push_back(20);
+    list<int> li { 51, 41, 11, 21, 20 };
 
-	cout << "L = ( ";
-	for (Iter = L.begin(); Iter != L.end(); Iter++)
-		cout << *Iter << " ";
-	cout << ")" << endl;
+    cout << "li = ( ";
+    for (auto const& el : li)
+        cout << el << " ";
+    cout << ")" << endl;
 
-	// Check if there is an even elememt in L.
-	if (any_of(L.begin(), L.end(), is_even))
-		cout << "There is even element in L\n";
-	else
-		cout << "There are not even elements in L.\n";
+    // Check if there is an even elememt in li.
+    auto is_even = [](int const elem){ return !(elem % 2); };
+    if (any_of(li.begin(), li.end(), is_even))
+        cout << "There's an even element in li.\n";
+    else
+        cout << "There are no even elements in li.\n";
 }
 ```
 
 ```Output
 L = ( 51 41 11 21 20 )
-There is even element in L
+There's an even element in li.
 ```
 
 ## <a name="binary_search"></a>  binary_search
