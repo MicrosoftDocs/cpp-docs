@@ -212,7 +212,6 @@ The template function returns **true** only if, for some `N` in the range
 #include <algorithm>
 #include <iostream>
 
-
 int main()
 {
     using namespace std;
