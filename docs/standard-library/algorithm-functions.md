@@ -115,19 +115,21 @@ int main()
       cout << "There are not two adjacent elements that are equal."
            << endl;
    else
-      cout << "There are two adjacent elements that are equal."
-           << "\n They have a value of "
-           <<  *( result1 ) << "." << endl;
+      cout << "There are two adjacent elements that are equal.\n"
+           << "They have a value of "
+           << *( result1 ) << "." << endl;
 
    result2 = adjacent_find( L.begin( ), L.end( ), twice );
    if ( result2 == L.end( ) )
       cout << "There are not two adjacent elements where the "
-           << " second is twice the first." << endl;
+           << "second is twice the first." << endl;
    else
+   {
       cout << "There are two adjacent elements where "
-           << "the second is twice the first."
-           << "\n They have values of " << *(result2++);
-      cout << " & " << *result2 << "." << endl;
+           << "the second is twice the first.\n"
+           << "They have values of " << *(result2++)
+           << " & " << *result2 << "." << endl;
+   }
 }
 ```
 
