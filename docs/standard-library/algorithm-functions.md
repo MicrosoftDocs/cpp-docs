@@ -179,36 +179,24 @@ The template function returns **true** only if, for each `N` in the range `[0,La
 #include <algorithm>
 #include <iostream>
 
-// Returns whether element is even
-bool is_even(int elem)
-{
-
-	return elem % 2 == 0;
-}
-
 int main()
 {
-	using namespace std;
-	list <int> L;
-	list <int>::iterator Iter;
-	list <int>::iterator result1, result2;
+    using namespace std;
 
-	L.push_back(50);
-	L.push_back(40);
-	L.push_back(10);
-	L.push_back(20);
-	L.push_back(20);
+    list<int> li { 50, 40, 10, 20, 20 };
+    list<int>::iterator iter;
 
-	cout << "L = ( ";
-	for (Iter = L.begin(); Iter != L.end(); Iter++)
-		cout << *Iter << " ";
-	cout << ")" << endl;
+    cout << "li = ( ";
+    for (iter = li.begin(); iter != li.end(); iter++)
+        cout << *iter << " ";
+    cout << ")" << endl;
 
-	// Check if all elements in L are even.
-	if (all_of(L.begin(), L.end(), is_even))
-		cout << "All the elements are even numbers.\n";
-	else
-		cout << "Not all the elements are even numbers.\n";
+    // Check if all elements in li are even.
+    auto is_even = [](int elem){ return !(elem % 2); };
+    if (all_of(li.begin(), li.end(), is_even))
+        cout << "All the elements are even numbers.\n";
+    else
+        cout << "Not all the elements are even numbers.\n";
 }
 ```
 
@@ -216,7 +204,6 @@ int main()
 L = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
-
 
 ## <a name="any_of"></a>  any_of
 
