@@ -14,7 +14,7 @@ Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environmen
 
 ## C++ compiler
 
-- Enhanced support for C++17 features and correctness fixes, plus experimental support for C++20 features such as modules and coroutines. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](../cpp-conformance-improvements.md).
+- Enhanced support for C++17 features and correctness fixes, plus experimental support for C++20 features such as modules and coroutines. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](cpp-conformance-improvements.md).
 
 - The `/std:c++latest` option now includes C++20 features that aren't necessarily complete, including initial support for the C++20 operator \<=> ("spaceship") for three-way comparison.
 
@@ -30,7 +30,7 @@ Improved analysis with `/Qspectre` for providing mitigation assistance for Spect
 
 ## C++ standard library improvements
 
-- Implementation of additional C++17 and C++20 library features and correctness fixes. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](../cpp-conformance-improvements.md).
+- Implementation of additional C++17 and C++20 library features and correctness fixes. For detailed information, see [C++ Conformance Improvements in Visual Studio 2019](cpp-conformance-improvements.md).
 
 - Clang-Format has been applied to the C++ standard library headers for improved readability.
 
@@ -241,11 +241,11 @@ Visual Studio 2017 brings many updates and fixes to the C++ environment. We've f
 
 ### C++ conformance improvements
 
-In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](../cpp-conformance-improvements.md).
+In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements.md).
 
 ##### Visual Studio 2017 version 15.5
 
-The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These features are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](../cpp-conformance-improvements.md)
+The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These features are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements.md)
 
 ##### Visual Studio 2017 version 15.7
 
@@ -253,7 +253,7 @@ The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C+
 
 ### New compiler options
 
-- [/permissive-](../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio](../cpp-conformance-improvements.md).
+- [/permissive-](../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio](cpp-conformance-improvements.md).
 
 - [/diagnostics](../build/reference/diagnostics-compiler-diagnostic-options.md): Enable display of the line number, the line number and column, or the line number and column and a caret under the line of code where the diagnostic error or warning was found.
 
@@ -288,7 +288,7 @@ Visual C++ runtime performance continues to improve due to better generated code
 
 The Microsoft C++ compiler supports Intel's AVX-512, including the Vector Length instructions that bring new functions in AVX-512 to 128-bit and 256-bit wide registers.
 
-The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This option enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](../cpp-conformance-improvements.md#noexcept_removal).
+The [/Zc:noexceptTypes-](../build/reference/zc-noexcepttypes.md) option can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. This option enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time. For more information, see [Dynamic exception specification removal and noexcept](cpp-conformance-improvements.md#noexcept_removal).
 
 ##### Visual Studio 2017 version 15.7
 
@@ -373,7 +373,7 @@ For more information, see [Visual C++ language conformance](../visual-cpp-langua
 
 ##### Visual Studio 2017 version 15.5
 
-- Several standard library features have been added, deprecated, or removed in accordance with the C++17 standard. For more information, see [C++ conformance improvements in Visual Studio](../cpp-conformance-improvements.md#improvements_155).
+- Several standard library features have been added, deprecated, or removed in accordance with the C++17 standard. For more information, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md#improvements_155).
 - Experimental support for the following parallel algorithms:
   - `all_of`
   - `any_of`
