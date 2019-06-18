@@ -115,19 +115,21 @@ int main()
       cout << "There are not two adjacent elements that are equal."
            << endl;
    else
-      cout << "There are two adjacent elements that are equal."
-           << "\n They have a value of "
-           <<  *( result1 ) << "." << endl;
+      cout << "There are two adjacent elements that are equal.\n"
+           << "They have a value of "
+           << *( result1 ) << "." << endl;
 
    result2 = adjacent_find( L.begin( ), L.end( ), twice );
    if ( result2 == L.end( ) )
       cout << "There are not two adjacent elements where the "
-           << " second is twice the first." << endl;
+           << "second is twice the first." << endl;
    else
+   {
       cout << "There are two adjacent elements where "
-           << "the second is twice the first."
-           << "\n They have values of " << *(result2++);
-      cout << " & " << *result2 << "." << endl;
+           << "the second is twice the first.\n"
+           << "They have values of " << *(result2++)
+           << " & " << *result2 << "." << endl;
+   }
 }
 ```
 
@@ -164,11 +166,46 @@ A condition to test for. This is a user-defined predicate function object that d
 
 ### Return Value
 
-Returns **true** if the condition is detected at each element in the indicated range, and **false** if the condition is not detected at least one time.
+Returns **true** if the condition is detected at each element in the indicated range or if the range is empty, and **false** otherwise.
 
 ### Remarks
 
 The template function returns **true** only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is **true**.
+
+### Example
+
+```cpp
+// alg_all_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 50, 40, 10, 20, 20 };
+    list<int>::iterator iter;
+
+    cout << "li = ( ";
+    for (iter = li.begin(); iter != li.end(); iter++)
+        cout << *iter << " ";
+    cout << ")" << endl;
+
+    // Check if all elements in li are even.
+    auto is_even = [](int elem){ return !(elem % 2); };
+    if (all_of(li.begin(), li.end(), is_even))
+        cout << "All the elements are even numbers.\n";
+    else
+        cout << "Not all the elements are even numbers.\n";
+}
+```
+
+```Output
+L = ( 50 40 10 20 20 )
+All the elements are even numbers.
+```
 
 ## <a name="any_of"></a>  any_of
 
@@ -202,6 +239,40 @@ Returns **true** if the condition is detected at least once in the indicated ran
 The template function returns **true** only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `comp(*(first + N))` is true.
+
+### Example
+
+```cpp
+// alg_any_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 51, 41, 11, 21, 20 };
+
+    cout << "li = ( ";
+    for (auto const& el : li)
+        cout << el << " ";
+    cout << ")" << endl;
+
+    // Check if there is an even elememt in li.
+    auto is_even = [](int const elem){ return !(elem % 2); };
+    if (any_of(li.begin(), li.end(), is_even))
+        cout << "There's an even element in li.\n";
+    else
+        cout << "There are no even elements in li.\n";
+}
+```
+
+```Output
+L = ( 51 41 11 21 20 )
+There's an even element in li.
+```
 
 ## <a name="binary_search"></a>  binary_search
 
