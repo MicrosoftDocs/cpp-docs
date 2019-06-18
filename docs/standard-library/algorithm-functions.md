@@ -203,7 +203,7 @@ int main()
 ```
 
 ```Output
-L = ( 50 40 10 20 20 )
+li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
@@ -270,7 +270,7 @@ int main()
 ```
 
 ```Output
-L = ( 51 41 11 21 20 )
+li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
