@@ -588,6 +588,13 @@ int main() {
 }
 ```
 
+```Output
+v1 = ( 0 10 20 30 40 50 )
+v2 = ( 0 3 6 9 12 15 18 21 24 27 30 )
+v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
+v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
+```
+
 ## <a name="copy_if"></a>  copy_if
 
 In a range of elements, copies the elements that are **true** for the specified condition.
