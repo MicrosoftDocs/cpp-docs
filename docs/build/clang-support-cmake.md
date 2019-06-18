@@ -72,7 +72,9 @@ You can specify another location by setting the “CMAKE_C_COMPILER” and “CM
 
 ## Clang compatibility modes
 
-For Windows configurations, CMake by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode and links with the Microsoft implementation of the Standard Library. For Linux, If targeting Linux, CMake invokes Clang in GCC compatibility mode.
+For Linux configurations, CMake invokes Clang in GCC compatibility mode. For Windows configurations, CMake by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode and links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin`.
+
+ You can modify these values in **CMake Settings** under **CMake variables and cache**. Click **Show advanced variables**. Scroll down to find **CMAKE_CXX_COMPILER**, the click the **Browse**  button to specify a different compiler path.
 
 ## Edit, build and debug
 

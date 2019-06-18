@@ -159,7 +159,7 @@ IntelliCode now ships as an optional component in the **Desktop Development with
 
 **Visual Studio 2019 version 16.1**
 
-- Integrated support for editing, building, and debugging CMake projects with Clang/LLVM. For more information, see [Clang/LLVM Support in Visual Studio](https://devblogs.microsoft.com/cppblog/clang-llvm-support-in-visual-studio/).
+- Integrated support for editing, building, and debugging CMake projects with Clang/LLVM. For more information, see [Clang/LLVM Support in CMake projects](../../build/clang-support-cmake.md).
 
 ## Linux and WSL
 
