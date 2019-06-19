@@ -6,7 +6,7 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMakeSettings.json schema reference
 
-The **cmakesettings.json**` file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. The file stores information such as environment variables or arguments for the cmake.exe environment. You can edit directly or use the **CMake Settings editor** (Visual Studio 2019 and later). See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information about the editor.
+The **cmakesettings.json** file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. The file stores information such as environment variables or arguments for the cmake.exe environment. You can edit directly or use the **CMake Settings editor** (Visual Studio 2019 and later). See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information about the editor.
 
 ## Environments
 
