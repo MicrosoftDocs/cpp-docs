@@ -1,7 +1,7 @@
 ---
 title: "Connect to your target Linux system in Visual Studio"
 description: "How to connect to a remote Linux machine or WSL from inside a Visual Studio C++ project."
-ms.date: "06/11/2019"
+ms.date: "06/19/2019"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 ---
 
@@ -23,6 +23,16 @@ When building a C++ Linux project for a remote Linux system (VM or physical mach
 
 To set up this remote connection:
 
+1. Create a private key file. Currently only RSA and DSA keys are supported. You can create a private key file by following these steps:
+
+    1. On the Windows machine, create the ssh key pair with `ssh-keygen -t rsa` 
+
+    1. From Windows, copy the public key to the Linux machine: `scp -p C:\Users\<USERNAME>\.ssh\id_rsa.pub user@hostname`:
+
+    1. On the Linux system, add the key to the list of authorized keys (and ensure the file has the correct permissions): `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
+
+    1. In Visual Studio, add the connection (in Connection Manager). The default private key name is `C:\Users\<USERNAME>\.ssh\id_rsa`.
+
 1. Build the project for the first time or manually create a new entry by selecting **Tools > Options** and then open the **Cross Platform > Connection Manager** node and click the **Add** button.
 
    ![Connection Manager](media/settings_connectionmanager.png)
@@ -43,6 +53,7 @@ To set up this remote connection:
    | **Private key file**    | Private key file created for ssh connection
    | **Passphrase**          | Passphrase used with private key selected above
 
+   
 1. Click the **Connect** button to attempt a connection to the remote computer. 
 
    If the connection succeeds, Visual Studio will begin configuring IntelliSense to use the remote headers. For more information, see [IntelliSense for headers on remote systems](configure-a-linux-project.md#remote_intellisense).
