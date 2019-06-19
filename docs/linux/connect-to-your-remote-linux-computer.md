@@ -23,7 +23,7 @@ When building a C++ Linux project for a remote Linux system (VM or physical mach
 
 To set up this remote connection:
 
-1. Create a private key file. Currently only RSA and DSA keys are supported. You can create a private key file by following these steps:
+1. Create a private key file (or [reuse an existing one](https://security.stackexchange.com/questions/10203/reusing-private-public-keys)). Currently only RSA and DSA keys are supported. You can create a private RSA key file by following these steps:
 
     1. On the Windows machine, create the ssh key pair with `ssh-keygen -t rsa` 
 
