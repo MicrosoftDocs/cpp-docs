@@ -15,7 +15,7 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker range=">=vs-2017"
 
-You can configure a Linux project to target a remote machine or to Windows Subsystem for Linux (WSL).
+You can configure a Linux project to target a remote machine or Windows Subsystem for Linux (WSL). For remote machines, and for WSL on Visual Studio 2017, you need to set up a connection. 
 
 ## Connect to a remote Linux computer
 
@@ -47,9 +47,9 @@ To set up this remote connection:
    
    You can create a private RSA key file by following these steps:
 
-    1. On the Windows machine, create the ssh key pair with `ssh-keygen -t rsa`. This will create a public key and a private key. By default the keys are placed under `C:\Users\%USERNAME%\.ssh` with names `id_rsa.pub` and `id_rsa`."
+    1. On the Windows machine, create the ssh key pair with `ssh-keygen -t rsa`. This will create a public key and a private key. By default the keys are placed under `C:\Users\%USERNAME%\.ssh` with names `id_rsa.pub` and `id_rsa`.
 
-    1. From Windows, copy the public key to the Linux machine: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`:
+    1. From Windows, copy the public key to the Linux machine: `scp -p C:\Users\%USERNAME%\.ssh\id_rsa.pub user@hostname`.
 
     1. On the Linux system, add the key to the list of authorized keys (and ensure the file has the correct permissions): `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys`
 
@@ -57,7 +57,7 @@ To set up this remote connection:
 
    If the connection succeeds, Visual Studio will begin configuring IntelliSense to use the remote headers. For more information, see [IntelliSense for headers on remote systems](configure-a-linux-project.md#remote_intellisense).
 
-   If the connection fails, the entry boxes which need to be changed will be outlined in red.
+   If the connection fails, the entry boxes that need to be changed are outlined in red.
 
    ![Connection Manager Error](media/settings_connectionmanagererror.png)
 
@@ -71,9 +71,11 @@ To set up this remote connection:
 
    ![Remote Logging](media/remote-logging-vs2019.png)
 
-   Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all writes from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
+   Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 
    You can configure the output to go to a file or to the **Cross Platform Logging** pane in the Output Window. For MSBuild-based Linux projects, commands issued to the remote machine by MSBuild are not routed to the **Output Window** because they are emitted out-of-process. Instead, they are logged to a file with the "msbuild_" prefix.
+
+   ::: moniker-end
 
 ## Connect to WSL
 
