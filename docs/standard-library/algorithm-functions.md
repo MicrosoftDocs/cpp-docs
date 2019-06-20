@@ -658,6 +658,35 @@ Returns an output iterator where elements have been copied to. It is the same as
 
 The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If *dest* and *first* designate regions of storage, *dest* must not be in the range `[first, last)`.
 
+### Example
+
+```cpp
+// alg_copy_n.cpp
+// compile with: cl /EHsc /W4 alg_copy_n.cpp
+#include <algorithm>
+#include <iostream>
+#include <string>
+
+int main()
+{
+    using namespace std;
+    string s1{"dandelion"};
+    string s2{"badger"};
+
+    cout << s1 << " + " << s2 << " = ";
+    
+    // Copy the first 3 letters from s1 
+    // to the first 3 positions in s2
+    copy_n(s1.begin(), 3, s2.begin());
+
+    cout << s2 << endl;
+}
+```
+
+```Output
+dandelion + badger = danger
+```
+
 ## <a name="count"></a>  count
 
 Returns the number of elements in a range whose values match a specified value.
