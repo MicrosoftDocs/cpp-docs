@@ -50,6 +50,8 @@ main() {
 
 on an x86 computer.
 
+On ARM64, `__debugbreak` intrinsic is compiled into instruction `brk #0xF000`.
+
 This routine is only available as an intrinsic.
 
 **END Microsoft Specific**
