@@ -628,7 +628,7 @@ You can use the Desktop Bridge infrastructure to package your existing desktop a
 
 ##### Visual Studio 2017 version 15.5
 
-A **Windows Application Packaging Project** project template is added, which greatly simplifies packaging of desktop applications with  Desktop Bridge. It's available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+A **Windows Application Packaging Project** project template is added, which greatly simplifies packaging of desktop applications with Desktop Bridge. It's available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 When writing new code, you can now use C++/WinRT, a standard C++ language projection for the Windows Runtime implemented solely in header files. It allows you to both author and consume Windows Runtime APIs using any standards-compliant C++ compiler. C++/WinRT is designed to provide C++ developers with first-class access to the modern Windows API. For more information, see [C++/WinRT: Modern C++ for the Windows Runtime](https://moderncpp.com/).
 
