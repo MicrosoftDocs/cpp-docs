@@ -9,7 +9,7 @@ ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
 
 **Microsoft Specific**
 
-Performs an interlocked compare and exchange.
+Does an interlocked compare and exchange.
 
 ## Syntax
 
@@ -152,25 +152,25 @@ The return value is the initial value of the `Destination` pointer.
 
 ## Remarks
 
-`_InterlockedCompareExchange` performs an atomic comparison of the `Destination` value with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, no operation is performed.
+`_InterlockedCompareExchange` does an atomic comparison of the `Destination` value with the `Comparand` value. If the `Destination` value is equal to the `Comparand` value, the `Exchange` value is stored in the address specified by `Destination`. Otherwise, does no operation.
 
 `_InterlockedCompareExchange` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchange](/windows/desktop/api/winnt/nf-winnt-interlockedcompareexchange) function.
 
-There are several variations on `_InterlockedCompareExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics is used.
+There are several variations on `_InterlockedCompareExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics are used.
 
-While the `_InterlockedCompareExchange` function operates on long integer values, `_InterlockedCompareExchange8` operates on 8-bit integer values, `_InterlockedCompareExchange16` operates on short integer values and `_InterlockedCompareExchange64` operates on 64-bit integer values.
+While the `_InterlockedCompareExchange` function operates on long integer values, `_InterlockedCompareExchange8` operates on 8-bit integer values, `_InterlockedCompareExchange16` operates on short integer values, and `_InterlockedCompareExchange64` operates on 64-bit integer values.
 
-On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The ARM intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
+On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The ARM intrinsics with an `_nf` ("no fence") suffix don't act as a memory barrier.
 
 The intrinsics with an `_np` ("no prefetch") suffix prevent a possible prefetch operation from being inserted by the compiler.
 
-On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that do not support HLE, the hint is ignored.
+On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that don't support HLE, the hint is ignored.
 
 These routines are only available as intrinsics.
 
 ## Example
 
-In the following example, `_InterlockedCompareExchange` is used for simple low-level thread synchronization. The approach has its limitations as a basis for multithreaded programming; it is presented to illustrate the typical use of the interlocked intrinsics. For best results, use the Windows API. For further information about multithreaded programming, see [Writing a Multithreaded Win32 Program](../parallel/writing-a-multithreaded-win32-program.md).
+In the following example, `_InterlockedCompareExchange` is used for simple low-level thread synchronization. The approach has its limitations as a basis for multithreaded programming; it's presented to illustrate the typical use of the interlocked intrinsics. For best results, use the Windows API. For more information about multithreaded programming, see [Writing a Multithreaded Win32 Program](../parallel/writing-a-multithreaded-win32-program.md).
 
 ```
 // intrinExample.cpp
