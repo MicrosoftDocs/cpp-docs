@@ -534,7 +534,7 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 - **Find All References** (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we're reading from or writing to a variable.
 - The Dot-to-Arrow IntelliSense feature has been moved from experimental to advanced, and is now enabled by default. The editor features **Expand Scopes** and **Expand Precedence** have also been moved from experimental to advanced.
 - The experimental refactoring features **Change Signature** and **Extract Function** are now available by default.
-- The experimental 'Faster project load' feature for C++ projects. The next time you open a C++ project it will load faster, and the time after that it will load *much* faster!
+- Added an experimental 'Faster project load' feature for C++ projects. The next time you open a C++ project it will load faster, and the time after that it will load *much* faster!
 - Some of these features are common to other languages, and some are specific to C++. For more information about these new features, see [Announcing Visual Studio "15" Preview 5](https://devblogs.microsoft.com/visualstudio/announcing-visual-studio-15-preview-5/).
 
 ##### Visual Studio 2017 version 15.7
@@ -628,7 +628,7 @@ You can use the Desktop Bridge infrastructure to package your existing desktop a
 
 ##### Visual Studio 2017 version 15.5
 
-A **Windows Application Packaging Project** project template is added which greatly simplifies the work of packaging desktop applications with using Desktop Bridge. It's available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+A **Windows Application Packaging Project** project template is added, which greatly simplifies packaging of desktop applications with  Desktop Bridge. It's available under **File | New | Project | Installed | Visual C++ | Universal Windows Platform**. For more information, see [Package an app by using Visual Studio (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 When writing new code, you can now use C++/WinRT, a standard C++ language projection for the Windows Runtime implemented solely in header files. It allows you to both author and consume Windows Runtime APIs using any standards-compliant C++ compiler. C++/WinRT is designed to provide C++ developers with first-class access to the modern Windows API. For more information, see [C++/WinRT: Modern C++ for the Windows Runtime](https://moderncpp.com/).
 
@@ -678,7 +678,7 @@ For more information, see [Boost.Test Unit Testing: Dynamic Library support and 
 
 ##### Visual Studio 2017 version 15.7
 
-[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) supported added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://devblogs.microsoft.com/cppblog/announcing-codelens-for-c-unit-testing/).
+[CodeLens](/visualstudio/ide/find-code-changes-and-other-history-with-codelens) support added for C++ unit test projects. For more information, see [Announcing CodeLens for C++ Unit Testing](https://devblogs.microsoft.com/cppblog/announcing-codelens-for-c-unit-testing/).
 
 ## Visual Studio graphics diagnostics
 
@@ -718,7 +718,7 @@ Visual Studio Graphics Diagnostics is a set of tools for recording and analyzing
 
   ![Frame analysis](media/frame-analysis.png)
 
-- **GPU Usage Improvements:** Open traces taken via the Visual Studio GPU Usage profiler with either GPU View or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed there will be two hyperlinks, one for WPA and other for GPU View, at the bottom right of the session overview.
+- **GPU Usage Improvements:** Open traces can be taken via the Visual Studio GPU Usage profiler with either GPU View or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed, there are two hyperlinks, one for WPA and another for GPU View, at the bottom right of the session overview.
 
   ![GPU usage](media/gpu-usage.png)
 
