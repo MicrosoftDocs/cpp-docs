@@ -111,7 +111,7 @@ A configuration may have any of the following properties:
 |`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
 |`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- windows-msvc-x86 (default)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
-Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only. Please use the `windows-msvc*` variants.
+Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only. Use the `windows-msvc-*` variants instead.
 
 ## Custom configurations
 

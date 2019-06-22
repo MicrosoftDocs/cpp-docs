@@ -46,7 +46,7 @@ Alternatively, if `DllMain` is not required or if it does not need to be execute
 
 If DllMain attempts to execute MSIL directly, [Compiler Warning (level 1) C4747](../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md) will result. However, the compiler cannot detect cases where DllMain calls a function in another module that in turn attempts to execute MSIL.
 
-Please see "Impediments to Diagnosis" for more information on this scenario.
+For more information on this scenario, see [Impediments to Diagnosis](#impediments-to-diagnosis).
 
 ### Initializing Static Objects
 
@@ -77,7 +77,7 @@ There are several user-supplied functions on which libraries depend for initiali
 
 If the user-provided versions are compiled to MSIL, then these initializers will be attempting to execute MSIL instructions while the loader lock is held. A user-supplied `malloc` has the same consequences. To resolve this problem, any of these overloads or user-supplied definitions must be implemented as native code using the #pragma `unmanaged` directive.
 
-Please see "Impediments to Diagnosis" for more information on this scenario.
+For more information on this scenario, see [Impediments to Diagnosis](#impediments-to-diagnosis).
 
 ### Custom Locales
 

@@ -82,9 +82,9 @@ Copy and paste the entire command line into your report.
 
 We need a detailed description of the problem you've encountered so that we can verify that we see the same effect on our machines; its also sometimes useful for us to know what you were trying to accomplish, and what you expected to happen.
 
-Please provide the **exact error messages** given by the toolset, or the exact runtime behavior you see. We need this information to verify that we've properly reproduced the issue. Please include **all** of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command line compiler, that compiler output is preferred; the IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
+A good description provides the **exact error messages** given by the toolset, or the exact runtime behavior you see. We need this information to verify that we've properly reproduced the issue. Include **all** of the compiler output, not just the last error message. We need to see everything that led up to the issue you report. If you can duplicate the issue by using the command line compiler, that compiler output is preferred; the IDE and other build systems may filter the error messages you see, or only capture the first line of an error message.
 
-If the issue is that the compiler accepts invalid code and does not generate a diagnostic, please note this in your report.
+If the issue is that the compiler accepts invalid code and does not generate a diagnostic, note this in your report.
 
 To report a runtime behavior problem, include an **exact copy** of what the program prints out, and what you expect to see. Ideally, this is embedded in the output statement itself, for example, `printf("This should be 5: %d\n", actual_result);`. If your program crashes or hangs, mention that as well.
 
@@ -98,9 +98,9 @@ A repro is a complete, self-contained source code example that reproducibly demo
 
 A good repro is:
 
-- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, please do so. You do not need to include counter-examples of code that works.
+- **Minimal.** Repros should be as small as possible yet still demonstrate exactly the problem you encountered. Repros do not need to be complex or realistic; they only need to show code that conforms to the Standard or the documented compiler implementation, or in the case of a missing diagnostic, the code that is not conformant. Simple, to-the-point repros that contain just enough code to demonstrate the problem are best. If you can eliminate or simplify the code and remain conformant and also leave the issue unchanged, then do so. You do not need to include counter-examples of code that works.
 
-- **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, please do so. If you can reproduce the problem without any library code besides simple output statements (for example, `puts("this shouldn't compile");`, `std::cout << value;`, and `printf("%d\n", value);` are okay), please do so. It's ideal if the example can be condensed to a single source code file, without reference to any user headers. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
+- **Self-Contained.** Repros should avoid unnecessary dependencies. If you can reproduce the problem without third-party libraries, then do so. If you can reproduce the problem without any library code besides simple output statements (for example, `puts("this shouldn't compile");`, `std::cout << value;`, and `printf("%d\n", value);` are okay), then do so. It's ideal if the example can be condensed to a single source code file, without reference to any user headers. Reducing the amount of code we have to consider as a possible contributor to the problem is enormously helpful to us.
 
 - **Against the latest compiler version.** Repros should use the most recent update to the latest version of the toolset, or the most recent prerelease version of the next update or next major release, whenever possible. Problems you may encounter in older versions of the toolset have very often been fixed in newer versions. Fixes are backported to older versions only in exceptional circumstances.
 
@@ -117,7 +117,7 @@ Problems in the compiler, linker, and in the libraries, tend to show themselves 
 
 Frontend crashes occur during the parsing phase of the compiler. Typically, the compiler will emit [Fatal Error C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md) and reference the source code file and line number on which the error occurred; it will often mention a file msc1.cpp, but you can ignore this detail.
 
-For this kind of crash, please provide a [Preprocessed Repro](#preprocessed-repros).
+For this kind of crash, provide a [Preprocessed Repro](#preprocessed-repros).
 
 Here's example compiler output for this kind of crash:
 
@@ -144,7 +144,7 @@ INTERNAL COMPILER ERROR in 'd:\o\dev\otools\bin\x64\cl.exe'
 
 Backend crashes occur during the code generation phase of the compiler. Typically, the compiler will emit [Fatal Error C1001](../error-messages/compiler-errors-1/fatal-error-c1001.md), and might not reference the source code file and line number associated with the problem; it will often mention the file compiler\\utc\\src\\p2\\main.c, but you can ignore this detail.
 
-For this kind of crash, please provide a [Link repro](#link-repros) if you are using Link-Time Code Generation (LTCG), enabled by the **/GL** command-line argument to cl.exe. If not, please provide a [Preprocessed repro](#preprocessed-repros) instead.
+For this kind of crash, provide a [Link repro](#link-repros) if you are using Link-Time Code Generation (LTCG), enabled by the **/GL** command-line argument to cl.exe. If not, provide a [Preprocessed repro](#preprocessed-repros) instead.
 
 Here's example compiler output for a backend crash in which LTCG is not used. If your compiler output looks like this you should provide a [Preprocessed Repro](#preprocessed-repros).
 
@@ -172,7 +172,7 @@ Linker crashes occur during the linking phase, after the compiler has run. Typic
 > [!NOTE]
 > If the output mentions C1001 or involves Link-Time Code Generation, refer to [Backend (code generation) crash](#backend-code-generation-crash) instead for more information.
 
-For this kind of crash, please provide a [Link repro](#link-repros).
+For this kind of crash, provide a [Link repro](#link-repros).
 
 Here's example compiler output for this kind of crash.
 
@@ -208,13 +208,13 @@ CONTEXT:
   Dr2    = 0000000000000000  Dr7    = 0000000000000000
 ```
 
-If incremental linking is enabled and the crash occurred only after a successful initial link, (that is, only after the first full linking on which subsequent incremental linking is based) please also provide a copy of the object (.obj) and library (.lib) files that correspond to source files that were modified after the initial link was completed.
+If incremental linking is enabled and the crash occurred only after a successful initial link, (that is, only after the first full linking on which subsequent incremental linking is based,) also provide a copy of the object (.obj) and library (.lib) files that correspond to source files that were modified after the initial link was completed.
 
 #### Bad code generation
 
 Bad code generation is rare, but occurs when the compiler mistakenly generates incorrect code that will cause your application to crash at runtime rather than detecting this problem at compile-time. If you believe the problem you are experiencing results in bad code generation, treat your report the same as a [Backend (code generation) crash](#backend-code-generation-crash).
 
-For this kind of crash please provide a [Link repro](#link-repros) if you are using Link-Time Code Generation (LTCG), enabled by the **/GL** command-line argument to cl.exe. Please provide a [Preprocessed repro](#preprocessed-repros) if not.
+For this kind of crash, provide a [Link repro](#link-repros) if you are using Link-Time Code Generation (LTCG), enabled by the **/GL** command-line argument to cl.exe. Provide a [Preprocessed repro](#preprocessed-repros) if not.
 
 ## How to generate a repro
 
@@ -358,7 +358,7 @@ When you choose to report a problem, first search the Developer Community for si
 
 ### Use the Visual Studio Developer Community pages
 
-The Visual Studio Developer Community pages are another convenient way to report problems and find solutions for Visual Studio and the C++ compiler, tools, and libraries. There are specific Developer Community pages for [Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html), [Visual Studio for Mac](https://developercommunity.visualstudio.com/spaces/41/index.html), [.NET](https://developercommunity.visualstudio.com/spaces/61/index.html), [C++](https://developercommunity.visualstudio.com/spaces/62/index.html), [Azure DevOps](https://developercommunity.visualstudio.com/spaces/21/index.html), and [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html). Beneath these tabs, near the top of each page, is a search box you can use to find posts or topics that report problems similar to yours. You may find that a solution or other useful information related to your problem is already available. If someone has reported the same problem before, please upvote and comment on that topic rather than create a new problem report. To comment, vote, or report a new problem, you may be asked to sign in to your Visual Studio account and to agree to give the Developer Community app access to your profile.
+The Visual Studio Developer Community pages are another convenient way to report problems and find solutions for Visual Studio and the C++ compiler, tools, and libraries. There are specific Developer Community pages for [Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html), [Visual Studio for Mac](https://developercommunity.visualstudio.com/spaces/41/index.html), [.NET](https://developercommunity.visualstudio.com/spaces/61/index.html), [C++](https://developercommunity.visualstudio.com/spaces/62/index.html), [Azure DevOps](https://developercommunity.visualstudio.com/spaces/21/index.html), and [TFS](https://developercommunity.visualstudio.com/spaces/22/index.html). Beneath these tabs, near the top of each page, is a search box you can use to find posts or topics that report problems similar to yours. You may find that a solution or other useful information related to your problem is already available. If someone has reported the same problem before, then upvote and comment on that topic rather than create a new problem report. To comment, vote, or report a new problem, you may be asked to sign in to your Visual Studio account and to agree to give the Developer Community app access to your profile.
 
 For issues with the C++ compiler, linker, and other tools and libraries, use the [C++](https://developercommunity.visualstudio.com/spaces/62/index.html) page. If you search for your problem, and it hasn't been reported before, choose the **Report a problem** button next to the search box at the top of the page. You can include your repro code and command line, screen shots, links to related discussions, and any other information you think is relevant and useful.
 
@@ -381,14 +381,14 @@ If you are concerned about revealing your identity, [create a new Microsoft acco
 
 1. Add the description and any other information, images, and file attachments needed for your repro. Choose the **Submit** button to send this information privately.
 
-   Note that there is a 2GB limit on attached files, and a maximum of 10 files. For any larger uploads, please request an upload URL in your private comment.
+   There is a 2GB limit on attached files, and a maximum of 10 files. For any larger uploads, request an upload URL in your private comment.
 
 Any replies under this comment have the same restricted visibility you specified. This is true even if the dropdown control on replies does not show the restricted visibility status correctly.
 
-To maintain your privacy and keep your sensitive information out of public view, please take care to keep all interaction with Microsoft to replies under this restricted comment. Replies to other comments may cause you to accidentally disclose sensitive information.
+To maintain your privacy and keep your sensitive information out of public view, take care to keep all interaction with Microsoft to replies under this restricted comment. Replies to other comments may cause you to accidentally disclose sensitive information.
 
 ## How to report a C++ documentation issue
 
 We use GitHub issues to track problems reported in our documentation. You can now create GitHub issues directly from a content page, which enables you interact in a much richer way with writers and product teams. If you see an issue with a document, a bad code sample, a confusing explanation, a critical omission, or even just a typo, you can easily let us know. Scroll to the bottom of the page and select **Sign in to give documentation feedback**. You'll need to create a GitHub account if you don't have one already, but once you do, you can see all of our documentation issues, their status, and get notifications when changes are made for the issue you reported. For more information, see [A New Feedback System Is Coming to docs.microsoft.com](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Please don't edit this information. Just append the details about what's wrong and, if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.
+When you create a documentation issue on GitHub by using the documentation feedback button, the issue is automatically filled in with some information about the page you created the issue on, so we know where the problem is located. Don't edit this information. Just append the details about what's wrong, and if you like, a suggested fix. [Our documentation is open source](https://github.com/MicrosoftDocs/cpp-docs/), so if you'd like to actually make a fix and propose it yourself, you can do that. For more information about how you can contribute to our documentation, see our [Contributing guide](https://github.com/MicrosoftDocs/cpp-docs/blob/master/CONTRIBUTING.md) on GitHub.

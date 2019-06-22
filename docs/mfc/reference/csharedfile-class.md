@@ -38,7 +38,7 @@ Shared memory files differ from other memory files in that memory for them is al
 
 `GlobalAlloc` returns an HGLOBAL handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The HGLOBAL handle is needed in certain applications. For example, to put data on the Clipboard you need an HGLOBAL handle.
 
-Please note that `CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.
+`CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.
 
 `CSharedFile` objects can automatically allocate their own memory or you can attach your own memory block to the `CSharedFile` object by calling [CSharedFile::SetHandle](#sethandle). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` is not zero.
 
