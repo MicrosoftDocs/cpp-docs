@@ -27,7 +27,7 @@ The appropriate editor opens automatically when you create or open a resource.
 |[Version Information Editor](../windows/version-information-editor.md)|Version information in Visual Studio C++ projects.|
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
 
 ## View and Edit Resources
 
