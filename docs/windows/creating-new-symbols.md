@@ -10,7 +10,7 @@ ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 When you're beginning a new project, you may find it convenient to map out the symbol names you need before creating the resources to which they'll be assigned.
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, please see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md).
 
 The **Resource Symbols** dialog box allows you to add new resource symbols, change the symbols that are displayed, or skip to the location in the source code where a symbol is in use.
 
