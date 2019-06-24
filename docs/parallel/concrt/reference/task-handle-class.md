@@ -66,7 +66,7 @@ The function call operator that the runtime invokes to perform the work of the t
 void operator()() const;
 ```
 
-## task_handle
+## <a name="task_handle"></a> task_handle
 
 Constructs a new `task_handle` object. The work of the task is performed by invoking the function specified as a parameter to the constructor.
 

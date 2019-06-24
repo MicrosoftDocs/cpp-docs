@@ -6,6 +6,9 @@ ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
 ---
 # Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)
 
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
+
 This topic applies to the MFC ODBC classes.
 
 This topic explains how to obtain aggregate results using the following [SQL](../../data/odbc/sql.md) keywords:

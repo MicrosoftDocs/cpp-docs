@@ -732,7 +732,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](http://go.microsoft.com/fwlink/p/?linkid=18507).
+If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507).
 
 This method sends the [BCM_SETSHIELD](/windows/desktop/Controls/bcm-setshield) message, which is described in the Windows SDK.
 

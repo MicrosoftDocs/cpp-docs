@@ -12,7 +12,7 @@ This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use 
 
 ## Prerequisites
 
-The [Scribble 1.0 MFC sample](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
+The [Scribble 1.0 MFC sample](https://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ##  <a name="top"></a> Sections
 

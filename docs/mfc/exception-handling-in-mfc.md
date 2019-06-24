@@ -96,4 +96,4 @@ The following articles compare the MFC exception macros with the C++ exception k
 ## See also
 
 [C++ Exception Handling](../cpp/cpp-exception-handling.md)<br/>
-[How Do I: Create my Own Custom Exception Classes](http://go.microsoft.com/fwlink/p/?linkid=128045)
+[How Do I: Create my Own Custom Exception Classes](https://go.microsoft.com/fwlink/p/?linkid=128045)

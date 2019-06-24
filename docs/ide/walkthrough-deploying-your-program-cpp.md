@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Deploying Your Program (C++)"
-ms.date: "04/25/2019"
+ms.date: "05/14/2019"
 helpviewer_keywords: ["deploying applications [C++], walkthroughs", "setup projects [C++]", "program deployments [C++]", "projects [C++], setup", "projects [C++], deploying programs", "application deployment [C++], walkthroughs"]
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
 ---

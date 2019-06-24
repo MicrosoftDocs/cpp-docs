@@ -12,9 +12,6 @@ If you do a lot of ATL programming, you will want to learn more about COM and .N
 
 ## In This Section
 
-[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
-Leads you through the creation of a control and demonstrates some ATL fundamentals in the process.
-
 [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)<br/>
 Introduces the major concepts behind the Component Object Model (COM). This article also briefly explains what ATL is and when you should use it.
 
@@ -79,6 +76,9 @@ Provides functions and macros that support encoding in a range of common Interne
 Provides code for manipulating paths and URLs in the form of [CPathT](../atl/reference/cpatht-class.md) and [CUrl](../atl/reference/curl-class.md). A thread pool, [CThreadPool](../atl/reference/cthreadpool-class.md), can be used in your own applications. This code can be found in atlpath.h and atlutil.h.
 
 ## Related Sections
+
+[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)<br/>
+Leads you through the creation of a control and demonstrates some ATL fundamentals in the process.
 
 [ATL Samples](../overview/visual-cpp-samples.md)<br/>
 Provides descriptions of and links to the ATL sample programs.

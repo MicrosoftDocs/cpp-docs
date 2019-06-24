@@ -189,7 +189,7 @@ Indicate the date and time values to be copied into the new `COleDateTime` objec
 MS-DOS date and time values to be converted to a date/time value and copied into the new `COleDateTime` object.
 
 *timeStamp*<br/>
-A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure containing the current local time.
+A reference to a [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) structure containing the current local time.
 
 ### Remarks
 
@@ -311,7 +311,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& timeStamp) const throw();
 ### Parameters
 
 *timeStamp*<br/>
-A reference to a [DBTimeStamp](https://msdn.microsoft.com/library/system.data.oledb.oledbtype) structure.
+A reference to a [DBTimeStamp](/dotnet/api/system.data.oledb.oledbtype) structure.
 
 ### Return Value
 

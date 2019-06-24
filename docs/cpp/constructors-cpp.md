@@ -131,7 +131,7 @@ myclass mc();     // warning C4930: prototyped function not called (was a variab
 }
 ```
 
-This is an example of the Most Vexing Parse problem. Because the example expression can be interpreted either as the declaration of a function or as the invocation of a default constructor, and because C++ parsers favor declarations over other things, the expression is treated as a function declaration. For more information, see [Most Vexing Parse](http://en.wikipedia.org/wiki/Most_vexing_parse).
+This is an example of the Most Vexing Parse problem. Because the example expression can be interpreted either as the declaration of a function or as the invocation of a default constructor, and because C++ parsers favor declarations over other things, the expression is treated as a function declaration. For more information, see [Most Vexing Parse](https://en.wikipedia.org/wiki/Most_vexing_parse).
 
 If any non-default constructors are declared, the compiler does not provide a default constructor:
 

@@ -34,7 +34,7 @@ char *t = "This is a character buffer";
 > [!NOTE]
 >  The **/GF** compiler option creates an addressable section for each unique string. And by default, an object file can contain up to 65,536 addressable sections. If your program contains more than 65,536 strings, use the [/bigobj](bigobj-increase-number-of-sections-in-dot-obj-file.md) compiler option to create more sections.
 
-**/GF** is in effect when [/O1](o1-o2-minimize-size-maximize-speed.md) or **/O2** is used.
+**/GF** is in effect when [/O1](o1-o2-minimize-size-maximize-speed.md) or [/O2](o1-o2-minimize-size-maximize-speed.md) is used.
 
 ### To set this compiler option in the Visual Studio development environment
 

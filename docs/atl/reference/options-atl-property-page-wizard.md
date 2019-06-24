@@ -14,7 +14,7 @@ The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="<=vs-2017"
 
 Use this page of the wizard to define the threading model and aggregation level of property page you are creating.
 

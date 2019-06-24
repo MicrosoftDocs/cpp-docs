@@ -1,6 +1,6 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "03/21/2019"
+ms.date: "05/16/2019"
 helpviewer_keywords: ["CMake in Visual Studio"]
 ---
 
@@ -11,9 +11,9 @@ Open Folder projects that don't use CMake can store project configuration settin
 
 ## Default configurations
 
-Visual Studio provides predefined configurations for x86 and x64 Debug and Release. By default, your project has an x86-Debug configuration in `CppProperties.json`. To add a new configuration, right click on the `CppProperties.json` file in **Solution Explorer** and choose **Add Configuration**:
+Visual Studio provides predefined configurations for x86 and x64 Debug and Release. By default, your project has an x86-Debug configuration in `CppProperties.json`. To add a new configuration, right-click on the `CppProperties.json` file in **Solution Explorer** and choose **Add Configuration**:
 
-![Open Folder add configuration](media/open-folder-add-config.png "Open Folder add new configuration")
+![Open Folder - add new configuration](media/open-folder-add-config.png "Open Folder add new configuration")
 
 The default configurations are shown here:
 
@@ -109,14 +109,14 @@ A configuration may have any of the following properties:
 |`compilerSwitches`|One or more additional switches that can influence IntelliSense behavior|
 |`forcedInclude`|Header to be automatically included in every compilation unit (maps to /FI for MSVC or -include for clang)|
 |`undefines`|The list of macros to be undefined (maps to /U for MSVC)|
-|`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture specific variants for MSVC, gcc or Clang:<br/><br/>- windows-msvc-x86 (default)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
+|`intelliSenseMode`|The IntelliSense engine to be used. You can specify the architecture-specific variants for MSVC, gcc, or Clang:<br/><br/>- windows-msvc-x86 (default)<br/>- windows-msvc-x64<br/>- msvc-arm<br/>- windows-clang-x86<br/>- windows-clang-x64<br/>- windows-clang-arm<br/>- Linux-x64<br/>- Linux-x86<br/>- Linux-arm<br/>- gccarm|
 
-Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only. Please use the `windows-msvc*` variants.
+Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only. Use the `windows-msvc-*` variants instead.
 
 ## Custom configurations
 
 
-You can customize any of the default configuations in `CppProperties.json`, or create new configurations. Each will appear in the configuration dropdown:
+You can customize any of the default configurations in `CppProperties.json`, or create new configurations. Each will appear in the configuration dropdown:
 
 ```json
 {
@@ -202,7 +202,7 @@ You can define custom environment variables in `CppProperties.json` either globa
 ```
 ## Per-configuration environment variables
 
-You can also define an **environments** property inside a configuration, so that it applies only to that configuration, and overrides any global variables of the same name. In the following example, the x64 configuration defines a local **INCLUDE** variable that overrides the global value:
+You can also define an **environments** property inside a configuration. It applies only to that configuration, and overrides any global variables of the same name. In the following example, the x64 configuration defines a local **INCLUDE** variable that overrides the global value:
 
 ```json
 {
@@ -258,9 +258,9 @@ You have access to the following built-in macros inside `CppProperties.json`:
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|
 |`${projectRoot}`| the full path to the folder where `CppProperties.json` is placed|
-|`${vsInstallDir}`| the full path to the folder where the running instance of VS 2017 is installed|
+|`${vsInstallDir}`| the full path to the folder where the running instance of Visual Studio is installed|
 
-For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with these includes:
+For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with the following includes:
 
 ```json
 {
@@ -283,11 +283,8 @@ For example, if your project has an include folder and also includes windows.h a
 ```
 
 > [!Note]
-> `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start devenv.exe from a "Developer Command Prompt for VS 2017" that defines these variables.
+> `%WindowsSdkDir%` and `%VCToolsInstallDir%` are not set as global environment variables so make sure you start devenv.exe from a Developer Command Prompt that defines these variables. (Type "developer" in the Windows Start Menu.)
 
 ## Troubleshoot IntelliSense errors
 
 To troubleshoot IntelliSense errors caused by missing include paths, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...".
-
-
-

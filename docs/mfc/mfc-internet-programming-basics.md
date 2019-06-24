@@ -51,11 +51,11 @@ MFC provides classes that support Internet programming. You can use [COleControl
 
 ##  <a name="_core_web_sites_for_more_information"></a> Web Sites for More Information
 
-For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web site. (Links may change without notice.)
+For additional information about Microsoft Internet technology, see the [Microsoft Developer Network (MSDN)](https://go.microsoft.com/fwlink/p/?linkid=56322) Web site. (Links may change without notice.)
 
 This Web site for developers contains information on using Microsoft development tools and technologies, and top stories about recent and upcoming conferences. From this page, you can jump to many related developer sites, including the .NET, and XML Developer Centers. You can also download beta SDKs and samples.
 
-The [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
+The [World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
 
 ##  <a name="_core_more_internet_help"></a> More Internet Help
 

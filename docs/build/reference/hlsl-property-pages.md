@@ -20,10 +20,10 @@ You can use the HLSL compiler (fxc.exe) property pages to configure how individu
 
    Provides properties to specify how files are output by the HLSL compiler.
 
-You can specify command-line arguments to the HLSL compiler by using the **Additional Options** property of the **Command Line** property page; this includes arguments that can't be configured by using other properties of the HLSL property pages. For information about the HLSL compiler, see [Effect-Compiler Tool](http://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)
+You can specify command-line arguments to the HLSL compiler by using the **Additional Options** property of the **Command Line** property page; this includes arguments that can't be configured by using other properties of the HLSL property pages. For information about the HLSL compiler, see [Effect-Compiler Tool](https://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)
 
 ## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)<br>
 [Command Line Property Pages](command-line-property-pages.md)<br>
-[Compiling Shaders](http://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)
+[Compiling Shaders](https://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)

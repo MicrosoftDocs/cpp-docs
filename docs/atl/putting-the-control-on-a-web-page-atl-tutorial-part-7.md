@@ -8,7 +8,7 @@ ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
 
 Your control is now finished. To see your control work in a real-world situation, put it on a Web page. An HTML file that contains the control was created when you defined your control. Open the PolyCtl.htm file from **Solution Explorer**, and you can see your control on a Web page.
 
-In this step, you will add functionality to the control and script the Web page to respond to events. You will also modify the control to let Internet Explorer know that the control is safe for scripting.
+In this step, you add functionality to the control and script the Web page to respond to events. You'll also modify the control to let Internet Explorer know the control is safe for scripting.
 
 ## Adding new functionality
 
@@ -43,7 +43,7 @@ The shape will now add or remove sides depending on where you click.
 
 ## Scripting the Web Page
 
-The control does not do anything yet, so change the Web page to respond to the events that you send.
+The control doesn't do anything yet, so change the Web page to respond to the events that you send.
 
 ### To script the Web page
 
@@ -64,21 +64,21 @@ The control does not do anything yet, so change the Web page to respond to the e
 
 1. Save the HTM file.
 
-You have added some VBScript code that gets the Sides property from the control and increases the number of sides by one if you click inside the control. If you click outside the control, you reduce the number of sides by one.
+You've added some VBScript code that gets the Sides property from the control. It increases the number of sides by one if you click inside the control. If you click outside the control, you reduce the number of sides by one.
 
 ## Indicating that the Control Is Safe for Scripting
 
-You can view the Web page with the control in Internet Explorer only. Other browsers no longer support ActiveX controls because of security weaknesses. 
+You can view the Web page with the control in Internet Explorer only. Other browsers no longer support ActiveX controls because of security weaknesses.
 
 > [!NOTE]
-> If the control isn't visible, know that some browsers require settings adjustments to run ActiveX controls. Please refer to the browser's documentation on how to enable ActiveX controls.
+> If the control isn't visible, know that some browsers require settings adjustments to run ActiveX controls. Refer to the browser's documentation on how to enable ActiveX controls.
 
-Based on your current Internet Explorer security settings, you may receive a Security Alert dialog box stating that the control may not be safe to script and could potentially do damage. For example, if you had a control that displayed a file but also had a `Delete` method that deleted a file, it would be safe if you just viewed it on a page. It would be not safe to script, however, because someone could call the `Delete` method.
+Based on your current Internet Explorer security settings, you may receive a Security Alert dialog box. It states that the control may not be safe to script and could potentially do damage. For example, if you had a control that displayed a file but also had a `Delete` method that deleted a file, it would be safe if you just viewed it on a page. It would be not safe to script, however, because someone could call the `Delete` method.
 
 > [!IMPORTANT]
 > For this tutorial, you can change your security settings in Internet Explorer to run ActiveX controls that are not marked as safe. In Control Panel, click **Internet Properties** and click **Security** to change the appropriate settings. When you have completed the tutorial, change your security settings back to their original state.
 
-You can programmatically alert Internet Explorer that it does not need to display the Security Alert dialog box for this particular control. You can do this with the `IObjectSafety` interface, and ATL supplies an implementation of this interface in the class [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md). To add the interface to your control, add `IObjectSafetyImpl` to your list of inherited classes and add an entry for it in your COM map.
+You can programmatically alert Internet Explorer that it doesn't need to display the Security Alert dialog box for this particular control. You can do it by using the `IObjectSafety` interface. ATL supplies an implementation of this interface in the class [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md). To add the interface to your control, add `IObjectSafetyImpl` to your list of inherited classes, and add an entry for it in your COM map.
 
 ### To add IObjectSafetyImpl to the control
 
@@ -92,13 +92,13 @@ You can programmatically alert Internet Explorer that it does not need to displa
 
 ## Building and Testing the Control
 
-Build the control. Once the build has finished, open PolyCtl.htm in browser view again. This time, the Web page should be displayed directly without the **Safety Alert** dialog box. Click inside the polygon; the number of sides increases by one. Click outside the polygon to reduce the number of sides.
+Build the control. Once the build has finished, open PolyCtl.htm in browser view again. This time, the Web page should be displayed directly without the **Safety Alert** dialog box. If you click inside the polygon, the number of sides increases by one. Click outside the polygon to reduce the number of sides.
 
 [Back to Step 6](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 
 ## Next Steps
 
-This concludes the ATL tutorial. For links to more information about ATL, see the [ATL start page](../atl/active-template-library-atl-concepts.md).
+This step concludes the ATL tutorial. For links to more information about ATL, see the [ATL start page](../atl/active-template-library-atl-concepts.md).
 
 ## See also
 

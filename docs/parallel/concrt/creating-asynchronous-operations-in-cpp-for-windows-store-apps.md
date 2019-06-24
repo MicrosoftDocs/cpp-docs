@@ -118,7 +118,7 @@ The following illustration shows the `Primes` app after each option has been cho
 
 ![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
 
-For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
+For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) and [Windows 8 Asynchronous Operations in C++ with PPL](https://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
 
 ##  <a name="exethread"></a> Controlling the Execution Thread
 

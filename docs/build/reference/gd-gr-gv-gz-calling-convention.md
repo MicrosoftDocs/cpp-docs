@@ -24,11 +24,11 @@ These options determine the order in which function arguments are pushed onto th
 
 **/Gz** specifies the `__stdcall` calling convention for all functions except C++ member functions, functions named `main`, and functions that are marked `__cdecl`, `__fastcall`, or `__vectorcall`. All `__stdcall` functions must have prototypes. This calling convention is only available in compilers that target x86, and is ignored by compilers that target other architectures.
 
-**/Gv** specifies the `__vectorcall` calling convention for all functions except C++ member functions, functions named main, functions with a `vararg` variable argument list, or functions that are marked with a conflicting `__cdecl`, `__stdcall`, or `__fastcall` attribute. This calling convention is only available on x86 and x64 architectures that support /arch:SSE2 and above, and is ignored by compilers that target the ARM architecture.
+**/Gv** specifies the `__vectorcall` calling convention for all functions except C++ member functions, functions named `main`, functions with a `vararg` variable argument list, or functions that are marked with a conflicting `__cdecl`, `__stdcall`, or `__fastcall` attribute. This calling convention is only available on x86 and x64 architectures that support /arch:SSE2 and above, and is ignored by compilers that target the ARM architecture.
 
 Functions that take a variable number of arguments must be marked `__cdecl`.
 
-**/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+**/Gd**, **/Gr**, **/Gv** and **/Gz** are not compatible with [/clr:safe](clr-common-language-runtime-compilation.md) or **/clr:pure**. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later.
 
 > [!NOTE]
 > By default for x86 processors, C++ member functions use [__thiscall](../../cpp/thiscall.md).

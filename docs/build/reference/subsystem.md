@@ -33,7 +33,7 @@ A Windows character-mode application. The operating system provides a console fo
 **EFI_RUNTIME_DRIVER**<br/>
 Extensible Firmware Interface (EFI) Image
 
-The EFI subsystem options describe executable images that run in the Extensible Firmware Interface environment. This environment is typically provided with the hardware and executes before the operating system is loaded. The major differences between EFI image types are the memory location that the image is loaded into and the action that's taken when the call to the image returns. An EFI_APPLICATION image is unloaded when control returns. An EFI_BOOT_SERVICE_DRIVER or EFI_RUNTIME_DRIVER is unloaded only if control returns with an error code. An EFI_ROM image is executed from ROM. For more information, see the specifications on the [Unified EFI Forum](http://www.uefi.org/) website.
+The EFI subsystem options describe executable images that run in the Extensible Firmware Interface environment. This environment is typically provided with the hardware and executes before the operating system is loaded. The major differences between EFI image types are the memory location that the image is loaded into and the action that's taken when the call to the image returns. An EFI_APPLICATION image is unloaded when control returns. An EFI_BOOT_SERVICE_DRIVER or EFI_RUNTIME_DRIVER is unloaded only if control returns with an error code. An EFI_ROM image is executed from ROM. For more information, see the specifications on the [Unified EFI Forum](https://www.uefi.org/) website.
 
 **NATIVE**<br/>
 Code that runs without a subsystem environment—for example, kernel mode device drivers and native system processes. This option is usually reserved for Windows system features.

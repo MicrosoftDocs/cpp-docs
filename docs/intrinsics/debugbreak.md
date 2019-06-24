@@ -21,7 +21,7 @@ void __debugbreak();
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`__debugbreak`|x86, ARM, x64|\<intrin.h>|
+|`__debugbreak`|x86, x64, ARM, ARM64|\<intrin.h>|
 
 ## Remarks
 
@@ -49,6 +49,8 @@ main() {
 ```
 
 on an x86 computer.
+
+On ARM64, the `__debugbreak` intrinsic is compiled into the instruction `brk #0xF000`.
 
 This routine is only available as an intrinsic.
 

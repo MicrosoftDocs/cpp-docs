@@ -1,7 +1,6 @@
 ---
 title: "TN037: Multithreaded MFC 2.1 Applications"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.multithread"]
 helpviewer_keywords: ["TN037"]
 ms.assetid: 05ee204c-700a-4c40-957c-dc2d0db1249d
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Recordset: Parameterizing a Recordset (ODBC)"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["parameterizing recordsets", "ODBC recordsets, parameterizing", "recordsets, parameterizing", "passing parameters, to queries at runtime"]
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
 ---
@@ -82,6 +82,9 @@ For more information about filters, see [Recordset: Filtering Records (ODBC)](..
 Before you create your recordset class, determine what parameters you need, what their data types are, and how the recordset uses them.
 
 #### To parameterize a recordset class
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create this functionality manually.
 
 1. Run the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** to create the class.
 

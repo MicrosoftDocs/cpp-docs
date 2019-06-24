@@ -1,0 +1,43 @@
+- name: Linux with Visual Studio C++ documentation
+  href: index.md
+- name: Download, install, and set up the Linux Development workload
+  href: download-install-and-setup-the-linux-development-workload.md
+- name: Connect to your remote Linux computer
+  href: connect-to-your-remote-linux-computer.md
+- name: Create a new Linux project
+  href: create-a-new-linux-project.md
+- name: Configure a Linux project
+  href: configure-a-linux-project.md
+- name: Create and configure a Linux CMake project
+  href: cmake-linux-project.md
+- name: Configure Linux projects to use Address Sanitizer
+  href: linux-asan-configuration.md
+- name: Deploy, run, and debug your Linux project
+  href: deploy-run-and-debug-your-linux-project.md
+- name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
+  href: ../build/get-started-linux-cmake.md
+- name: Linux Project Property Page reference
+  expanded: false
+  items:
+    - name: Linux Project Property Page reference
+      href: prop-pages-linux.md
+    - name: General Properties (Linux)
+      href: prop-pages/general-linux.md
+    - name: Debugging Properties (Linux)
+      href: prop-pages/debugging-linux.md
+    - name: VC++ Directories Properties (Linux)
+      href: prop-pages/directories-linux.md
+    - name: Copy Sources Properties (Linux)
+      href: prop-pages/copy-sources-project.md
+    - name: C/C++ Properties (Linux)
+      href: prop-pages/c-cpp-linux.md
+    - name: Linker Properties (Linux)
+      href: prop-pages/linker-linux.md
+    - name: Build Event Properties (Linux)
+      href: prop-pages/build-events-linux.md
+    - name: Custom Build Step Properties (Linux)
+      href: prop-pages/custom-build-step-linux.md
+    - name: Makefile Project Properties (Linux)
+      href: prop-pages/makefile-linux.md
+    - name: Remote Archive Properties (Linux)
+      href: prop-pages/remote-ar-linux.md

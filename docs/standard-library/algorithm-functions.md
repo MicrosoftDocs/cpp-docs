@@ -96,19 +96,21 @@ int main()
       cout << "There are not two adjacent elements that are equal."
            << endl;
    else
-      cout << "There are two adjacent elements that are equal."
-           << "\n They have a value of "
-           <<  *( result1 ) << "." << endl;
+      cout << "There are two adjacent elements that are equal.\n"
+           << "They have a value of "
+           << *( result1 ) << "." << endl;
 
    result2 = adjacent_find( L.begin( ), L.end( ), twice );
    if ( result2 == L.end( ) )
       cout << "There are not two adjacent elements where the "
-           << " second is twice the first." << endl;
+           << "second is twice the first." << endl;
    else
+   {
       cout << "There are two adjacent elements where "
-           << "the second is twice the first."
-           << "\n They have values of " << *(result2++);
-      cout << " & " << *result2 << "." << endl;
+           << "the second is twice the first.\n"
+           << "They have values of " << *(result2++)
+           << " & " << *result2 << "." << endl;
+   }
 }
 ```
 
@@ -152,11 +154,46 @@ A condition to test for. This is a user-defined predicate function object that d
 
 ### Return Value
 
-Returns **true** if the condition is detected at each element in the indicated range, and **false** if the condition is not detected at least one time.
+Returns **true** if the condition is detected at each element in the indicated range or if the range is empty, and **false** otherwise.
 
 ### Remarks
 
 The template function returns **true** only if, for each `N` in the range `[0,Last - first)`, the predicate `comp(*(_First + N))` is **true**.
+
+### Example
+
+```cpp
+// alg_all_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 50, 40, 10, 20, 20 };
+    list<int>::iterator iter;
+
+    cout << "li = ( ";
+    for (iter = li.begin(); iter != li.end(); iter++)
+        cout << *iter << " ";
+    cout << ")" << endl;
+
+    // Check if all elements in li are even.
+    auto is_even = [](int elem){ return !(elem % 2); };
+    if (all_of(li.begin(), li.end(), is_even))
+        cout << "All the elements are even numbers.\n";
+    else
+        cout << "Not all the elements are even numbers.\n";
+}
+```
+
+```Output
+li = ( 50 40 10 20 20 )
+All the elements are even numbers.
+```
 
 ## <a name="any_of"></a> any_of
 
@@ -197,6 +234,40 @@ Returns **true** if the condition is detected at least once in the indicated ran
 The template function returns **true** only if, for some `N` in the range
 
 `[0, last - first)`, the predicate `comp(*(first + N))` is true.
+
+### Example
+
+```cpp
+// alg_any_of.cpp
+// compile with: /EHsc
+#include <list>
+#include <algorithm>
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+
+    list<int> li { 51, 41, 11, 21, 20 };
+
+    cout << "li = ( ";
+    for (auto const& el : li)
+        cout << el << " ";
+    cout << ")" << endl;
+
+    // Check if there is an even elememt in li.
+    auto is_even = [](int const elem){ return !(elem % 2); };
+    if (any_of(li.begin(), li.end(), is_even))
+        cout << "There's an even element in li.\n";
+    else
+        cout << "There are no even elements in li.\n";
+}
+```
+
+```Output
+li = ( 51 41 11 21 20 )
+There's an even element in li.
+```
 
 ## <a name="binary_search"></a> binary_search
 
@@ -610,6 +681,35 @@ Returns an output iterator where elements have been copied to. It is the same as
 ### Remarks
 
 The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If *dest* and *first* designate regions of storage, *dest* must not be in the range `[first, last)`.
+
+### Example
+
+```cpp
+// alg_copy_n.cpp
+// compile with: cl /EHsc /W4 alg_copy_n.cpp
+#include <algorithm>
+#include <iostream>
+#include <string>
+
+int main()
+{
+    using namespace std;
+    string s1{"dandelion"};
+    string s2{"badger"};
+
+    cout << s1 << " + " << s2 << " = ";
+    
+    // Copy the first 3 letters from s1 
+    // to the first 3 positions in s2
+    copy_n(s1.begin(), 3, s2.begin());
+
+    cout << s2 << endl;
+}
+```
+
+```Output
+dandelion + badger = danger
+```
 
 ## <a name="count"></a> count
 
@@ -5828,7 +5928,7 @@ int main() {
 
 ## <a name="random_shuffle"></a> random_shuffle
 
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](http://go.microsoft.com/fwlink/p/?linkid=397954).
+The std::random_shuffle() function is deprecated, replaced by [std::shuffle](../standard-library/algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](../standard-library/random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
 ## <a name="remove"></a> remove
 

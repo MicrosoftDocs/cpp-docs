@@ -372,7 +372,7 @@ Nonzero if successful; otherwise 0.
 
 By default, `LoadMappedBitmap` will map colors commonly used in button glyphs.
 
-For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-_colormap) structure in the Windows SDK.
+For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-_colormap) structure in the Windows SDK.
 
 ##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap
 
