@@ -32,15 +32,15 @@ class CSharedFile : public CMemFile
 
 ## Remarks
 
-Memory files behave like disk files except that the file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage or for transferring raw bytes or serialized objects between independent processes.
+Memory files behave like disk files. The difference is, a memory file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage, or for transferring raw bytes or serialized objects between independent processes.
 
 Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using `GlobalAlloc`), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.
 
 `GlobalAlloc` returns an HGLOBAL handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The HGLOBAL handle is needed in certain applications. For example, to put data on the Clipboard you need an HGLOBAL handle.
 
-Please note that `CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.
+`CSharedFile` doesn't use memory-mapped files, and the data can't be directly shared between processes.
 
-`CSharedFile` objects can automatically allocate their own memory or you can attach your own memory block to the `CSharedFile` object by calling [CSharedFile::SetHandle](#sethandle). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` is not zero.
+`CSharedFile` objects can automatically allocate their own memory. Or, you can attach your own memory block to the `CSharedFile` object by calling [CSharedFile::SetHandle](#sethandle). In either case, memory for growing the memory file automatically is allocated in `nGrowBytes`-sized increments if `nGrowBytes` isn't zero.
 
 For more information, see the article [Files in MFC](../../mfc/files-in-mfc.md) and [File Handling](../../c-runtime-library/file-handling.md) in the *Run-Time Library Reference*.
 
@@ -112,7 +112,7 @@ Specifies whether the memory block is allowed to grow.
 
 ### Remarks
 
-If *bAllowGrow* is nonzero, the size of the memory block is increased as necessary, for example, if an attempt is made to write more bytes to the file than were allocated for the memory block.
+If *bAllowGrow* is nonzero, the size of the memory block is increased as necessary, for example, if you attempt to write more bytes to the file than the size of the memory block.
 
 ## See also
 
