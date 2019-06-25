@@ -339,7 +339,7 @@ __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 ver
 __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.<br/>
 __VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.<br/>
 __VS 2019 16.0__ indicates features that are supported in Visual Studio 2019 version 16.0 (RTW).<br/>
-__VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.<br/>
+__VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.
 
 ### Notes
 

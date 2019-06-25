@@ -99,9 +99,9 @@ The following steps vary depending on which version of Visual Studio you are usi
 ## Next Steps
 
 **Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md)<br/>
-**Next:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+**Next:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 
 ## See also
 
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
+[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

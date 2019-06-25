@@ -43,7 +43,7 @@ class promise;
 
 ## Inheritance Hierarchy
 
-*promise*<br/>
+*promise*
 
 ## Requirements
 

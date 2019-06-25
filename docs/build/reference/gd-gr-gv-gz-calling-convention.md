@@ -14,7 +14,7 @@ These options determine the order in which function arguments are pushed onto th
 > **/Gd**<br/>
 > **/Gr**<br/>
 > **/Gv**<br/>
-> **/Gz**<br/>
+> **/Gz**
 
 ## Remarks
 

@@ -187,7 +187,7 @@ Win32
 
 [Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
 [How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)<br/>
-[How to: Define Control Access and Values](defining-mnemonics-access-keys.md)<br/>
+[How to: Define Control Access and Values](defining-mnemonics-access-keys.md)
 
 <!-- excluded links
 [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>
