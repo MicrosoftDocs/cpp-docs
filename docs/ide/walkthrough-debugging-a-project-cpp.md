@@ -45,7 +45,7 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 ## Next Steps
 
 **Previous:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
-**Next:** [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
+**Next:** [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
 
 ## See also
 
