@@ -46,7 +46,7 @@ In this walkthrough, you deliberately introduce a C++ syntax error in your code 
 ## Next Steps
 
 **Previous:** [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)<br/>
-**Next:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
+**Next:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)
 
 ## See also
 
