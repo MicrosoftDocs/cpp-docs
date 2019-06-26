@@ -50,7 +50,7 @@ The hierarchy of iterator categories can be summarized by showing three sequence
 > output iterator<br/>
 > -> forward iterator<br/>
 > -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> -> random-access iterator
 
 The right arrow means "can be replaced by." Any algorithm that calls for an output iterator should work nicely with a forward iterator, for example, but *not* the other way around.
 
@@ -59,7 +59,7 @@ For read-only access to a sequence, you can use any of:
 > input iterator<br/>
 > -> forward iterator<br/>
 > -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> -> random-access iterator
 
 An input iterator is the weakest of all categories, in this case.
 
@@ -67,7 +67,7 @@ Finally, for read/write access to a sequence, you can use any of:
 
 > forward iterator<br/>
 > -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> -> random-access iterator
 
 An object pointer can always serve as a random-access iterator, so it can serve as any category of iterator if it supports the proper read/write access to the sequence it designates.
 

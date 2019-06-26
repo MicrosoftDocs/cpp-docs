@@ -98,7 +98,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 ## Next Steps
 
-**Previous:** [Walkthrough: Debugging a Project (C++)](walkthrough-debugging-a-project-cpp.md)<br/>
+**Previous:** [Walkthrough: Debugging a Project (C++)](walkthrough-debugging-a-project-cpp.md)
 
 ## See also
 

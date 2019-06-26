@@ -49,7 +49,7 @@ In this walkthrough, you watch the value of a variable as the program runs and d
 ## Next Steps
 
 **Previous:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
-**Next:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)<br/>
+**Next:** [Walkthrough: Debugging a Project (C++)](../ide/walkthrough-debugging-a-project-cpp.md)
 
 ## See also
 

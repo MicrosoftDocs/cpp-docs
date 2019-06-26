@@ -20,7 +20,7 @@ The **try-except** statement is a Microsoft extension to the C and C++ languages
 > **\_\_except** ( *expression* )<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;// exception handler code<br/>
-> }<br/>
+> }
 
 ## Remarks
 
