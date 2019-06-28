@@ -1,6 +1,6 @@
 ---
 title: "Clang/LLVM support in Visual Studio CMake projects"
-ms.date: "06/19/2019"
+ms.date: "06/28/2019"
 helpviewer_keywords: ["Clang support for C++"]
 ---
 
@@ -32,24 +32,7 @@ To add a new Clang configuration to a CMake project:
 
    ![CMake Clang configuration](media/cmake-clang-configuration.png)
 
-1. In the CMakeSettings.json file, Visual Studio adds a default configuration. The following example shows the configuration for **x64-Clang-Debug**:
-
-```json
-{
-      "name": "x64-Clang-Debug",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "clang_cl_x64" ],
-      "variables": []
-    }
-```
-
-For more information about these settings and how to customize them, see [CMakeSettings reference](cmakesettings-reference.md).
+1. To make modifications to this configuration, use the **CMake Settings Editor**. For more information, see [Customize CMake build settings in Visual Studio](customize-cmake-settings.md).
 
 ## Modify an existing configuration to use Clang
 
