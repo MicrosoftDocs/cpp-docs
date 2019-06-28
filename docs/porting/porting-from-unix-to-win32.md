@@ -1,6 +1,6 @@
 ---
 title: "Porting from UNIX to Win32"
-ms.date: "05/02/2019"
+ms.date: "06/20/2019"
 helpviewer_keywords: ["APIs [C++], porting to Win32", "Windows API [C++], migrating from UNIX", "migration [C++]", "UNIX [C++], porting to Win32", "porting to Win32 [C++], from UNIX", "porting to Win32 [C++]", "Win32 applications [C++], migrating from UNIX"]
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
 ---
