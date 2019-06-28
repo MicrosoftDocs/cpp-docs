@@ -10,7 +10,7 @@ ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 The location and size of a C++ dialog box, and the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 ## How To
 

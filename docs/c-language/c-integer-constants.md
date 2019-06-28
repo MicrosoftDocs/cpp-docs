@@ -13,33 +13,33 @@ An *integer constant* is a decimal (base 10), octal (base 8), or hexadecimal (ba
 *integer-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *integer-suffix*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *integer-suffix*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *integer-suffix*<sub>opt</sub>
 
 *decimal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*nonzero-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*decimal-constant* *digit*
 
 *octal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *octal-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *octal-digit*
 
 *hexadecimal-constant*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-prefix* *hexadecimal-digit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *hexadecimal-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*hexadecimal-constant* *hexadecimal-digit*
 
 *hexadecimal-prefix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**
 
 *nonzero-digit*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
 
 *octal-digit*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
 *hexadecimal-digit*: one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**a b c d e f**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**
 
 *integer-suffix*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *long-suffix*<sub>opt</sub><br/>
@@ -47,19 +47,19 @@ An *integer constant* is a decimal (base 10), octal (base 8), or hexadecimal (ba
 &nbsp;&nbsp;&nbsp;&nbsp;*unsigned-suffix* *64-bit-integer-suffix*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*long-long-suffix* *unsigned-suffix*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*
 
 *unsigned-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**u U**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**u U**
 
 *long-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**l L**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**l L**
 
 *long-long-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**
 
 *64-bit-integer-suffix*: one of<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**
 
 The **i64** and **I64** suffixes are Microsoft-specific.
 

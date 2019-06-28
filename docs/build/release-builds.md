@@ -16,7 +16,7 @@ A release build uses optimizations. When you use optimizations to create a relea
 [Using the Debug Build to Check for Memory Overwrite](using-the-debug-build-to-check-for-memory-overwrite.md)<br/>
 [How to: Debug a Release Build](how-to-debug-a-release-build.md)<br/>
 [Checking for Memory Overwrites](checking-for-memory-overwrites.md)<br/>
-[Optimizing Your Code](optimizing-your-code.md)<br/>
+[Optimizing Your Code](optimizing-your-code.md)
 
 ## See also
 
