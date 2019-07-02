@@ -1,6 +1,6 @@
 ---
 title: "Preparing a Test Machine To Run a Debug Executable"
-ms.date: "11/04/2016"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["debug executable, preparing a test machine to run"]
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
 ---

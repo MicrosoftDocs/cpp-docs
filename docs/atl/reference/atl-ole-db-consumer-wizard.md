@@ -1,6 +1,6 @@
 ---
 title: "ATL OLE DB Consumer Wizard"
-ms.date: "05/09/2019"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers"]
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 ---

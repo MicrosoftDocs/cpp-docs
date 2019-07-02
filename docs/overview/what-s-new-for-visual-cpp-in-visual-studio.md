@@ -1,6 +1,6 @@
 ---
 title: "What's new for C++ in Visual Studio"
-ms.date: "06/17/2019"
+ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: "mikeblome"
