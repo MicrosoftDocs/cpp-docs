@@ -17,6 +17,29 @@ Dumps the names of the DLLs from which the image imports functions. Does not dum
 
 Only the [/HEADERS](headers.md) DUMPBIN option is available for use on files produced with the [/GL](gl-whole-program-optimization.md) compiler option.
 
+
+## Usage
+
+Open a the Developer Command Prompt (Visual Studio Install), and type the following:
+
+```
+dumpbin /DEPENDENTS <%Fully Qualified Path Assembly Name%>
+
+```
+### Output
+
+File Type: EXE/DLL
+  
+    Image has the following dependencies: (list of dependencies)
+       *.dll
+
+
+### Suggested Use
+
+Use this tool to troubleshoot errors like the following:
+
+- Could not load file or assembly '.dll' or one of its dependencies
+
 ## See also
 
 [DUMPBIN Options](dumpbin-options.md)
