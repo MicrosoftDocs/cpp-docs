@@ -1,6 +1,6 @@
 ---
 title: "Constructors (C++)"
-ms.date: "04/06/2018"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ---

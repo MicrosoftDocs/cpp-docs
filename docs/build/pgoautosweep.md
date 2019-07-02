@@ -1,6 +1,6 @@
 ---
 title: "PgoAutoSweep"
-ms.date: "03/14/2018"
+ms.date: "07/02/2019"
 f1_keywords: ["PgoAutoSweep", "PogoAutoSweepA", "PogoAutoSweepW"]
 ---
 # PgoAutoSweep
@@ -29,7 +29,7 @@ The .pgc files created by `PgoAutoSweep` must be merged into a .pgd file to be u
 
 You can pass the name of the merged .pgd file to the linker during the optimization build by using the **PGD=**_filename_ argument to the [/USEPROFILE](reference/useprofile.md) linker option, or by using the deprecated **/PGD** linker option. If you merge the .pgc files into a file named *base_name*.pgd, you do not need to specify the filename on the command line, because the linker picks up this file name by default.
 
-The `PgoAutoSweep` function maintains the thread-safety setting specified when the instrumented build is created. If you use the default setting or specify the **NOEXACT** argument to the [/GENPROFILE or /FASTGENPROFILE]() linker option, calls to `PgoAutoSweep` are not thread-safe. The **EXACT** argument creates a thread-safe and more accurate, but slower, instrumented executable.
+The `PgoAutoSweep` function maintains the thread-safety setting specified when the instrumented build is created. If you use the default setting or specify the **NOEXACT** argument to the [/GENPROFILE or /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker option, calls to `PgoAutoSweep` are not thread-safe. The **EXACT** argument creates a thread-safe and more accurate, but slower, instrumented executable.
 
 ## Requirements
 

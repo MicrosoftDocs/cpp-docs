@@ -23,7 +23,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 - **Data Source**
 
-   The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](/previous-versions/windows/desktop/ms718102) in the Windows SDK documentation.
+   The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](/previous-versions/windows/desktop/ms718102(v=vs.85)) in the Windows SDK documentation.
 
    The following additional information describes the tabs in the **Data Link Properties** dialog box.
 
@@ -164,7 +164,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 - **Support**
 
-   Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892) and the appropriate entries for [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676) in the property set map.
+   Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85)) and the appropriate entries for [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85)) in the property set map.
 
    - **Change**
 
@@ -184,4 +184,4 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 [ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376)
+[Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376(v=vs.85))

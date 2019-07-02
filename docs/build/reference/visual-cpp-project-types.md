@@ -59,7 +59,7 @@ If you add the MFC and ATL support component to your Visual Studio installation,
 
 If you add the C++ Windows Universal Platform tools component to your Visual Studio installation, these project templates are added to Visual Studio.
 
-For an overview of Windows Universal apps in C++, see [Universal Windows Apps (C++)](../../windows/universal-windows-apps-cpp.md).
+For an overview of Windows Universal apps in C++, see [Universal Windows Apps (C++)](../../cppcx/universal-windows-apps-cpp.md).
 
 |Project template|Description|
 |----------------------|-----------------------------|

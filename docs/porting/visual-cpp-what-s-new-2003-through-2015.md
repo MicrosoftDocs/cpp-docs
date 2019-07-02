@@ -1676,7 +1676,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 ### Windows Runtime App Development Support
 
 - **Native XAML-based UI model**. For Windows Runtime apps, you can use the new native XAML-based UI model.
-- **Visual C++ Component Extensions**. These extensions simplify consumption of Windows Runtime objects, which are a necessary part of Windows Runtime apps. For more information, see [Roadmap for Windows Runtime apps using C++](../windows/universal-windows-apps-cpp.md) and [Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
+- **Visual C++ Component Extensions**. These extensions simplify consumption of Windows Runtime objects, which are a necessary part of Windows Runtime apps. For more information, see [Roadmap for Windows Runtime apps using C++](../cppcx/universal-windows-apps-cpp.md) and [Visual C++ language reference (C++/CX)](../cppcx/visual-c-language-reference-c-cx.md)
 - **DirectX games**. You can develop engaging games by using the new DirectX support for Windows Runtime apps.
 - **XAML/DirectX interop**. Windows Runtime apps that use both XAML and DirectX now interoperate efficiently.
 - **Windows Runtime Component DLL development**. Component DLL development makes the Windows Runtime environment extensible.
