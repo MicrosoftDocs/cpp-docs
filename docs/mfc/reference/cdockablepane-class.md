@@ -78,8 +78,8 @@ class CDockablePane : public CPane
 |[CDockablePane::RemoveFromDefaultPaneDividier](#removefromdefaultpanedividier)|The framework calls this method when a pane is being undocked.|
 |[CDockablePane::ReplacePane](#replacepane)|Replaces the pane with a specified pane.|
 |[CDockablePane::RestoreDefaultPaneDivider](#restoredefaultpanedivider)|The framework calls this method as a pane is deserialized to restore the default pane divider.|
-|[CDockablePane::SaveState](#savestate)|Used internally.|
-|[CDockablePane::Serialize](#serialize)|Serializes the pane. (Overrides `CBasePane::Serialize`.)|
+|`CDockablePane::SaveState`|Used internally.|
+|`CDockablePane::Serialize`|Serializes the pane. (Overrides `CBasePane::Serialize`.)|
 |[CDockablePane::SetAutoHideMode](#setautohidemode)|Toggles the docking pane between visible and auto-hide mode.|
 |[CDockablePane::SetAutoHideParents](#setautohideparents)|Sets the auto-hide button and auto-hide toolbar for the pane.|
 |`CDockablePane::SetDefaultPaneDivider`|Used internally.|

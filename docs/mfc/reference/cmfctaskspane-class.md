@@ -97,8 +97,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemoveGroup](#removegroup)|Removes a group.|
 |[CMFCTasksPane::RemovePage](#removepage)|Removes a specified page from the task pane.|
 |[CMFCTasksPane::RemoveTask](#removetask)|Removes a task from a task group.|
-|[CMFCTasksPane::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](cdockablepane-class.md#savestate).)|
-|[CMFCTasksPane::Serialize](#serialize)|(Overrides [CDockablePane::Serialize](cdockablepane-class.md#serialize).)|
+|[CMFCTasksPane::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](cdockablepane-class.md).)|
+|[CMFCTasksPane::Serialize](#serialize)|(Overrides [CDockablePane::Serialize](cdockablepane-class.md).)|
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Activates a specified page in the task pane.|
 |[CMFCTasksPane::SetCaption](#setcaption)|Sets the caption name of a task pane.|
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Sets the height of a group caption.|
