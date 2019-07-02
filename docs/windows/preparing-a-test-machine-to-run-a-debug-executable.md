@@ -1,6 +1,6 @@
 ---
 title: "Preparing a Test Machine To Run a Debug Executable"
-ms.date: "11/04/2016"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["debug executable, preparing a test machine to run"]
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
 ---
@@ -22,11 +22,11 @@ There are three ways to deploy debug versions of Visual C++ library DLLs togethe
 
 - Use the_**Deploy** option in the **Configuration Manager** dialog box in Visual Studio to copy the project output and other files to the remote computer.
 
-After Visual C++ DLLs are installed, you can run a remote debugger on a network share. For more information about remote debugging, see [Remote Debugging](/visualstudio/debugger/remote-debugging.md).
+After Visual C++ DLLs are installed, you can run a remote debugger on a network share. For more information about remote debugging, see [Remote Debugging](/visualstudio/debugger/remote-debugging).
 
 ## See also
 
 [Deployment in Visual C++](deployment-in-visual-cpp.md)<br>
 [Windows Installer Command line options](/windows/desktop/Msi/command-line-options)<br>
 [Deployment Examples](deployment-examples.md)<br>
-[Remote Debugging](/visualstudio/debugger/remote-debugging.md)
+[Remote Debugging](/visualstudio/debugger/remote-debugging)
