@@ -1,6 +1,6 @@
 ---
 title: "Constructors (C++)"
-ms.date: "04/06/2018"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ---
@@ -627,7 +627,11 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
+::: moniker range=">=vs-2017"
+
 **Visual Studio 2017 version 15.7 and later**: The **using** statement in **/std:C++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](../overview/cpp-conformance-improvements.md#improvements_157).
+
+::: moniker-end
 
 A class template can inherit all the constructors from a type argument if that type specifies a base class:
 

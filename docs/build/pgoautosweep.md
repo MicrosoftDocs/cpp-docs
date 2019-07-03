@@ -1,11 +1,11 @@
 ---
 title: "PgoAutoSweep"
-ms.date: "03/14/2018"
+ms.date: "07/02/2019"
 f1_keywords: ["PgoAutoSweep", "PogoAutoSweepA", "PogoAutoSweepW"]
 ---
 # PgoAutoSweep
 
-`PgoAutoSweep` saves the current profile counter information to a file, and then resets the counters. Use the function during profile-guided optimization training to write all profile data from the running program to a .pgc file for later use in the optimization build.
+`PgoAutoSweep` saves the current profile counter information to a file, and then resets the counters. Use the function during profile-guided optimization training to write all profile data from the running program to a `.pgc` file for later use in the optimization build.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ void PgoAutoSweep(const wchar_t* name); // UNICODE
 ### Parameters
 
 *name*<br/>
-An identifying string for the saved .pgc file.
+An identifying string for the saved `.pgc` file.
 
 ## Remarks
 
@@ -25,11 +25,11 @@ You can call `PgoAutoSweep` from your application to save and reset the profile 
 
 The saved profile counter data is placed in a file named *base_name*-*name*!*value*.pgc, where *base_name* is the base name of the executable, *name* is the parameter passed to `PgoAutoSweep`, and *value* is a unique value, usually a monotonically increasing number, to prevent file name collisions.
 
-The .pgc files created by `PgoAutoSweep` must be merged into a .pgd file to be used to create an optimized executable. You can use the [pgomgr](pgomgr.md) command to perform the merge.
+The `.pgc` files created by `PgoAutoSweep` must be merged into a `.pgd` file to be used to create an optimized executable. You can use the [pgomgr](pgomgr.md) command to perform the merge.
 
-You can pass the name of the merged .pgd file to the linker during the optimization build by using the **PGD=**_filename_ argument to the [/USEPROFILE](reference/useprofile.md) linker option, or by using the deprecated **/PGD** linker option. If you merge the .pgc files into a file named *base_name*.pgd, you do not need to specify the filename on the command line, because the linker picks up this file name by default.
+You can pass the name of the merged `.pgd` file to the linker during the optimization build by using the **PGD=**_filename_ argument to the [/USEPROFILE](reference/useprofile.md) linker option, or by using the deprecated **/PGD** linker option. If you merge the `.pgc` files into a file named *base_name*.pgd, you do not need to specify the filename on the command line, because the linker picks up this file name by default.
 
-The `PgoAutoSweep` function maintains the thread-safety setting specified when the instrumented build is created. If you use the default setting or specify the **NOEXACT** argument to the [/GENPROFILE or /FASTGENPROFILE]() linker option, calls to `PgoAutoSweep` are not thread-safe. The **EXACT** argument creates a thread-safe and more accurate, but slower, instrumented executable.
+The `PgoAutoSweep` function maintains the thread-safety setting specified when the instrumented build is created. If you use the default setting or specify the **NOEXACT** argument to the [/GENPROFILE or /FASTGENPROFILE](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md) linker option, calls to `PgoAutoSweep` are not thread-safe. The **EXACT** argument creates a thread-safe and more accurate, but slower, instrumented executable.
 
 ## Requirements
 
@@ -41,7 +41,7 @@ The executable must include the pgobootrun.lib file in the linked libraries. Thi
 
 ## Example
 
-The example below uses `PgoAutoSweep` to create two .PGC files at different points during execution. The first contains data that describes the runtime behavior until `count` is equal to 3, and the second contains the data collected after this point until just before application termination.
+The example below uses `PgoAutoSweep` to create two `.pgc` files at different points during execution. The first contains data that describes the runtime behavior until `count` is equal to 3, and the second contains the data collected after this point until just before application termination.
 
 ```cpp
 // pgoautosweep.cpp
