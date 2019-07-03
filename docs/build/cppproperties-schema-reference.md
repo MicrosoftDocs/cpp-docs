@@ -258,7 +258,7 @@ You have access to the following built-in macros inside `CppProperties.json`:
 |-|-|
 |`${workspaceRoot}`| the full path to the workspace folder|
 |`${projectRoot}`| the full path to the folder where `CppProperties.json` is placed|
-|`${vsInstallDir}`| the full path to the folder where the running instance of Visual Studio is installed|
+|`${env.vsInstallDir}`| the full path to the folder where the running instance of Visual Studio is installed|
 
 For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with the following includes:
 

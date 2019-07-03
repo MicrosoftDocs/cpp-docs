@@ -1,6 +1,6 @@
 ---
 title: "Microsoft C++ Language Conformance Table"
-ms.date: "05/20/2019"
+ms.date: "07/02/2019"
 ms.technology: "cpp-language"
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: "corob-msft"
@@ -109,7 +109,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0306R4 Adding \_\_VA_OPT\_\_ for comma omission and comma deletion](https://wg21.link/P0306R4)|No|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)|No|
 |&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](https://wg21.link/P0409R2)|No|
-|&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/pa pers/2017/p0428r2.pdf)|No|
+|&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|No|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)|No|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)|No|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)|No|
