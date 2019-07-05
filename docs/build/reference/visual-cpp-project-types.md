@@ -1,6 +1,6 @@
 ---
 title: "Visual C++ Project Types"
-ms.date: "11/29/2018"
+ms.date: "07/02/2019"
 helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "C++ projects, types"]
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
 ---
@@ -59,7 +59,7 @@ If you add the MFC and ATL support component to your Visual Studio installation,
 
 If you add the C++ Windows Universal Platform tools component to your Visual Studio installation, these project templates are added to Visual Studio.
 
-For an overview of Windows Universal apps in C++, see [Universal Windows Apps (C++)](../../windows/universal-windows-apps-cpp.md).
+For an overview of Windows Universal apps in C++, see [Universal Windows Apps (C++)](../../cppcx/universal-windows-apps-cpp.md).
 
 |Project template|Description|
 |----------------------|-----------------------------|

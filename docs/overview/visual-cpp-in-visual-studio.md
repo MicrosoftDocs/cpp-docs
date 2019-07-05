@@ -1,7 +1,7 @@
 ---
 title: "C++ in Visual Studio"
 description: "Visual C++ is the name for the Microsoft C++ compiler, code editor, and related tools in the Visual Studio IDE. Use Visual C++ to develop programs for Windows, Linux, Android and iOS."
-ms.date: "05/14/2019"
+ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 author: "mikeblome"
@@ -86,7 +86,7 @@ Create unit tests using the Microsoft Unit Testing Framework for C++, Google Tes
 
 ## Write applications in C++
 
-[Universal Windows Apps](../windows/universal-windows-apps-cpp.md)<br/>
+[Universal Windows Apps (C++)](../cppcx/universal-windows-apps-cpp.md)<br/>
 Find guides and reference content on the Windows Developer Center. For information about developing UWP apps, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide) and [Create your first UWP app using C++](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Desktop Applications (C++)](../windows/desktop-applications-visual-cpp.md)<br/>
