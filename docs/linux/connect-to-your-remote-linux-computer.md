@@ -103,7 +103,7 @@ To configure your project for WSL, see [Configure a Linux project](configure-a-l
 
 [Configure a Linux project](configure-a-linux-project.md)<br />
 [Configure a Linux CMake project](cmake-linux-project.md)<br />
-[Deply, run and debug your Linux project](deploy-run-and-debug-your-linux-project.md)<br />
+[Deploy, run and debug your Linux project](deploy-run-and-debug-your-linux-project.md)<br />
 
 
 
