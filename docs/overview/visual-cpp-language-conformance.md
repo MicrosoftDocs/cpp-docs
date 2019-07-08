@@ -1,6 +1,6 @@
 ---
 title: "Microsoft C++ Language Conformance Table"
-ms.date: "05/20/2019"
+ms.date: "07/02/2019"
 ms.technology: "cpp-language"
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: "corob-msft"
