@@ -580,7 +580,7 @@ As promised, here's the complete code for the working application.
 
 1. To run the application, press **F5**. A window that contains the text "Hello, Windows desktop!" should appear in the upper-left corner of the display.
 
-   ![Run the DesktopApp Project](../build/media/desktop-app-project-run-157.png "Run the DesktopApp Project")
+   ![Run the DesktopApp Project](../build/media/desktop-app-project-run-157.PNG "Run the DesktopApp Project")
 
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 
