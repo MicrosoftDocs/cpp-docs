@@ -11,8 +11,6 @@ ms.assetid: 9ad08eb5-060b-4eb0-8d66-0dc134f7bf67
 
 An exception was caught by value or by reference, but the copy constructor, the assignment operator, or both were inaccessible.
 
-This code was accepted by versions of Visual C++ before Visual Studio 2013, but now gives an error.
-
 ## Remarks
 
 Conformance changes in Visual Studio 2015 made this error apply to bad catch statements of MFC exceptions derived from `CException`. Because `CException` has an inherited private copy constructor, the class and its derivatives aren't copyable, and can't be passed by value, which also means they can't be caught by value. Catch statements that caught MFC exceptions by value previously led to uncaught exceptions at runtime. Now the compiler correctly identifies this situation and reports error C2316. To fix this issue, we recommend you use the MFC TRY/CATCH macros rather than write your own exception handlers. If that's not appropriate for your code, catch MFC exceptions by reference instead.
