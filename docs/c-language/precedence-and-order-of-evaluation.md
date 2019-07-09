@@ -14,21 +14,21 @@ The following table summarizes the precedence and associativity (the order in wh
 
 |Symbol <sup>1</sup>|Type of Operation|Associativity|
 |-------------|-----------------------|-------------------|
-|**\[ ] ( ) . ->**<br /><br />**++** **--** (postfix)|Expression|Left to right|
-**sizeof & \* + - ~ !**<br /><br />**++ --** (prefix)|Unary|Right to left|
+|**\[  ]  (  )  .  ->**<br /><br />**++**  **--** (postfix)|Expression|Left to right|
+**sizeof & \*  +  -  ~  !**<br /><br />**++  --** (prefix)|Unary|Right to left|
 |*typecasts*|Unary|Right to left|
-|**\* / %**|Multiplicative|Left to right|
-|**+ -**|Additive|Left to right|
-|**\<\< >>**|Bitwise shift|Left to right|
-|**\< > \<= >=**|Relational|Left to right|
-|**== !=**|Equality|Left to right|
+|**\*  /  %**|Multiplicative|Left to right|
+|**+  -**|Additive|Left to right|
+|**\<\<  >>**|Bitwise shift|Left to right|
+|**\<  >  \<=  >=**|Relational|Left to right|
+|**==  !=**|Equality|Left to right|
 |**&**|Bitwise-AND|Left to right|
 |**^**|Bitwise-exclusive-OR|Left to right|
 |**&#124;**|Bitwise-inclusive-OR|Left to right|
 |**&&**|Logical-AND|Left to right|
 |**&#124;&#124;**|Logical-OR|Left to right|
-|**? :**|Conditional-expression|Right to left|
-|**= \*= /= %=**<br /><br /> **+= -= \<\<= >>= &=**<br /><br /> **^= &#124;=**|Simple and compound assignment <sup>2</sup>|Right to left|
+|**?  :**|Conditional-expression|Right to left|
+|**=  \*=  /=  %=**<br /><br /> **+=  -=  \<\<=  >>=  &=**<br /><br /> **^=  &#124;  =**|Simple and compound assignment <sup>2</sup>|Right to left|
 |**,**|Sequential evaluation|Left to right|
 
 1. Operators are listed in descending order of precedence. If several operators appear on the same line or in a group, they have equal precedence.
