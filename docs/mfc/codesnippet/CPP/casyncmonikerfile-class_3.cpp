@@ -1,2 +1,2 @@
-               CMyMoniker* pMyMoniker = new CMyMoniker();
-               pMyMoniker->Open(_T("file:c:\\mydata.dat"));
+CMyMoniker* pMyMoniker = new CMyMoniker();
+pMyMoniker->Open(_T("file:c:\\mydata.dat"));

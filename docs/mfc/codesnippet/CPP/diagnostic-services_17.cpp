@@ -1,5 +1,5 @@
 #ifdef _DEBUG
-   CString cStr;
-   AfxDoForAllClasses(DoForAllClasses, &cStr);
-   AfxMessageBox(cStr);
+CString cStr;
+AfxDoForAllClasses(DoForAllClasses, &cStr);
+AfxMessageBox(cStr);
 #endif

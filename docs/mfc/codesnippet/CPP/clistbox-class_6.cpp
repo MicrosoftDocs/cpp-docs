@@ -9,7 +9,7 @@
 void CMyODListBox::DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct)
 {
    ASSERT(lpDeleteItemStruct->CtlType == ODT_LISTBOX);
-   LPVOID lpszText = (LPVOID) lpDeleteItemStruct->itemData;
+   LPVOID lpszText = (LPVOID)lpDeleteItemStruct->itemData;
    ASSERT(lpszText != NULL);
 
    free(lpszText);

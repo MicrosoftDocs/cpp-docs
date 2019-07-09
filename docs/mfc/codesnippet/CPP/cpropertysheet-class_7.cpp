@@ -8,9 +8,9 @@ BOOL CMyPropertySheet::OnInitDialog()
 {
    BOOL bResult = CPropertySheet::OnInitDialog();
 
-   CMDIFrameWnd* pframe = (CMDIFrameWnd*) AfxGetMainWnd();
+   CMDIFrameWnd* pframe = (CMDIFrameWnd*)AfxGetMainWnd();
    CMDIChildWnd* pchild = pframe->MDIGetActive();
-   CPSheetDoc* doc = (CPSheetDoc*) pchild->GetActiveDocument();
+   CPSheetDoc* doc = (CPSheetDoc*)pchild->GetActiveDocument();
    SetActivePage(doc->m_LastActivePage);
 
    return bResult;
@@ -20,9 +20,9 @@ BOOL CMyPropertySheet::OnCommand(WPARAM wParam, LPARAM lParam)
 {
    if (LOWORD(wParam) == IDOK)
    {
-      CMDIFrameWnd* pframe = (CMDIFrameWnd*) AfxGetMainWnd();
+      CMDIFrameWnd* pframe = (CMDIFrameWnd*)AfxGetMainWnd();
       CMDIChildWnd* pchild = pframe->MDIGetActive();
-      CPSheetDoc* doc = (CPSheetDoc*) pchild->GetActiveDocument();
+      CPSheetDoc* doc = (CPSheetDoc*)pchild->GetActiveDocument();
       doc->m_LastActivePage = GetPageIndex(GetActivePage()); // or GetActiveIndex()
    }
 

@@ -1,2 +1,2 @@
-   CMyScrollDoc* pMyDoc = (CMyScrollDoc*)GetDocument();
-   SetScrollSizes(nMapMode, pMyDoc->GetMyDocSize());
+CMyScrollDoc* pMyDoc = (CMyScrollDoc*)GetDocument();
+SetScrollSizes(nMapMode, pMyDoc->GetMyDocSize());

@@ -1,1 +1,1 @@
-   PX_DataPath(pPX, _T("DataPath"), EditControlText);
+PX_DataPath(pPX, _T("DataPath"), EditControlText);

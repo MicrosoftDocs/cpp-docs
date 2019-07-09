@@ -1,1 +1,1 @@
-   CTestDialog* m_pTestDlg;
+CTestDialog* m_pTestDlg;

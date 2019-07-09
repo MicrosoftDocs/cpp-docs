@@ -10,7 +10,7 @@ long CStrArrayDoc::Sort(VARIANT* vArray)
    // throwing COleDispatchException allows the EXCEPINFO structure of 
    // IDispatch::Invoke() to set
    if (V_VT(vArray) != (VT_ARRAY | VT_BSTR))
-      AfxThrowOleDispatchException(1001, 
+      AfxThrowOleDispatchException(1001,
          _T("Type Mismatch in Parameter. Pass a string array by reference"));
 
    // ...

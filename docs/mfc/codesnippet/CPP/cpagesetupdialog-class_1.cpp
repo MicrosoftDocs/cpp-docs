@@ -1,6 +1,6 @@
 void CMyRichEditView::OnPageSetupDlg()
 {
-   CPageSetupDialog psd(PSD_INTHOUSANDTHSOFINCHES | PSD_MARGINS | 
+   CPageSetupDialog psd(PSD_INTHOUSANDTHSOFINCHES | PSD_MARGINS |
       PSD_ENABLEPAGEPAINTHOOK, this);
 
    // Initialize margins
@@ -10,7 +10,7 @@ void CMyRichEditView::OnPageSetupDlg()
    psd.m_psd.rtMargin.bottom = 1000;
    psd.m_psd.lpfnPagePaintHook = (LPPAGEPAINTHOOK)PaintHook;
 
-   if(IDOK == psd.DoModal()) 
+   if (IDOK == psd.DoModal())
    {
       // Propagate changes to the app
       AfxGetApp()->SelectPrinter(psd.m_psd.hDevNames, psd.m_psd.hDevMode);
