@@ -1,6 +1,6 @@
 ---
 title: "localtime_s, _localtime32_s, _localtime64_s"
-ms.date: "11/04/2016"
+ms.date: "07/09/2019"
 apiname: ["_localtime64_s", "_localtime32_s", "localtime_s"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 apitype: "DLLExport"
@@ -53,9 +53,9 @@ In the case of the first two error conditions, the invalid parameter handler is 
 
 ## Remarks
 
-The **_localtime32_s** function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [tm](../../c-runtime-library/standard-types.md). The **long** value *sourceTime* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [time](time-time32-time64.md) function.
+The **localtime_s** function converts a time stored as a [time_t](../../c-runtime-library/standard-types.md) value and stores the result in a structure of type [tm](../../c-runtime-library/standard-types.md). The **time_t** value *sourceTime* represents the seconds elapsed since midnight (00:00:00), January 1, 1970, UTC. This value is usually obtained from the [time](time-time32-time64.md) function.
 
-**_localtime32_s** corrects for the local time zone if the user first sets the global environment variable **TZ**. When **TZ** is set, three other environment variables (**_timezone**, **_daylight**, and **_tzname**) are automatically set as well. If the **TZ** variable is not set, **localtime32_s** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific time zone, is used by default. See [_tzset](tzset.md) for a description of these variables. **TZ** is a Microsoft extension and not part of the ANSI standard definition of **localtime**.
+**localtime_s** corrects for the local time zone if the user first sets the global environment variable **TZ**. When **TZ** is set, three other environment variables (**_timezone**, **_daylight**, and **_tzname**) are automatically set as well. If the **TZ** variable is not set, **localtime_s** attempts to use the time zone information specified in the Date/Time application in Control Panel. If this information cannot be obtained, PST8PDT, which signifies the Pacific time zone, is used by default. See [_tzset](tzset.md) for a description of these variables. **TZ** is a Microsoft extension and not part of the ANSI standard definition of **localtime**.
 
 > [!NOTE]
 > The target environment should try to determine whether daylight saving time is in effect.
