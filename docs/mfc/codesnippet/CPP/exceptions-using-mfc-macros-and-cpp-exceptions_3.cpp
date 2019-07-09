@@ -1,18 +1,18 @@
-   TRY
+TRY
+{
+   // Do something to throw an exception.
+   AfxThrowUserException();
+}
+CATCH(CException, e)
+{
+   try
    {
-      // Do something to throw an exception.
-      AfxThrowUserException();
+      throw;  // Wrong.  Causes e (the exception 
+            // being thrown) to be deleted.
    }
-   CATCH(CException, e)
+   catch (CException* exception)
    {
-      try
-      {
-         throw;  // Wrong.  Causes e (the exception 
-               // being thrown) to be deleted.
-      }
-      catch(CException* exception)
-      {
-         exception->ReportError();
-      }
+      exception->ReportError();
    }
-   END_CATCH
+}
+END_CATCH

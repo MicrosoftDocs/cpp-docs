@@ -1,2 +1,2 @@
-   // Declare a CToolTipCtrl object.
-   CToolTipCtrl m_ToolTipCtrl;
+// Declare a CToolTipCtrl object.
+CToolTipCtrl m_ToolTipCtrl;

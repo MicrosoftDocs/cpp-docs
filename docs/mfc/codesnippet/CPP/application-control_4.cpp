@@ -8,11 +8,11 @@
 
 CCMFCAutomationDoc::CCMFCAutomationDoc()
 {
-	EnableAutomation();
-	AfxOleLockApp();
+   EnableAutomation();
+   AfxOleLockApp();
 }
 
 CCMFCAutomationDoc::~CCMFCAutomationDoc()
 {
-	AfxOleUnlockApp();
+   AfxOleUnlockApp();
 }

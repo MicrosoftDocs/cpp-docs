@@ -18,12 +18,12 @@
 UINT MyClipThreadProc(LPVOID pParam)
 {
    // NOTE: pParentWnd is the parent window of the animation control.
-   CWnd* pParentWnd = (CWnd*) pParam;
+   CWnd* pParentWnd = (CWnd*)pParam;
    CAnimateCtrl cAnimCtrl;
 
    // Create the animation control.
-   if (!cAnimCtrl.Create(WS_CHILD|WS_VISIBLE|ACS_CENTER, 
-      CRect(10,10,100,100), pParentWnd, 1))
+   if (!cAnimCtrl.Create(WS_CHILD | WS_VISIBLE | ACS_CENTER,
+      CRect(10, 10, 100, 100), pParentWnd, 1))
    {
       return false;
    }
@@ -42,24 +42,24 @@ UINT MyClipThreadProc(LPVOID pParam)
       {
          // Start playing from the first frame to the last, 
          // continuously repeating.
-         case WM_PLAYCLIP:
-            if (!cAnimCtrl.Play(0, (UINT)-1, (UINT)-1))
-               return false;
-            break;
-         
+      case WM_PLAYCLIP:
+         if (!cAnimCtrl.Play(0, (UINT)-1, (UINT)-1))
+            return false;
+         break;
+
          // Show the first frame.
-         case WM_SHOWFIRSTFRAME:
-            if (!cAnimCtrl.Seek(0))
-               return false;
-            cAnimCtrl.RedrawWindow();
-            break;
+      case WM_SHOWFIRSTFRAME:
+         if (!cAnimCtrl.Seek(0))
+            return false;
+         cAnimCtrl.RedrawWindow();
+         break;
 
          // Show the last frame.
-         case WM_SHOWLASTFRAME:
-            if (!cAnimCtrl.Seek((UINT)-1))
-               return false;
-            cAnimCtrl.RedrawWindow();
-            break;
+      case WM_SHOWLASTFRAME:
+         if (!cAnimCtrl.Seek((UINT)-1))
+            return false;
+         cAnimCtrl.RedrawWindow();
+         break;
       }
 
       TranslateMessage(&msg);

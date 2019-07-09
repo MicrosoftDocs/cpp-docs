@@ -1,2 +1,2 @@
-	DockPane(&m_wndToolbarBuild);
-	DockPaneLeftOf(&m_wndToolbarEdit, &m_wndToolbarBuild);
+DockPane(&m_wndToolbarBuild);
+DockPaneLeftOf(&m_wndToolbarEdit, &m_wndToolbarBuild);

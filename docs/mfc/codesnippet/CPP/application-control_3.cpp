@@ -2,14 +2,14 @@
 //CWinApp-derived class
 BOOL CCMFCAutomationApp::InitInstance()
 {
-	CWinApp::InitInstance();
+   CWinApp::InitInstance();
 
-	// Initialize OLE libraries
-	if (!AfxOleInit())
-	{
-		AfxMessageBox(IDP_OLE_INIT_FAILED);
-		return FALSE;
-	}
+   // Initialize OLE libraries
+   if (!AfxOleInit())
+   {
+      AfxMessageBox(IDP_OLE_INIT_FAILED);
+      return FALSE;
+   }
 
    CWinThread* pThread = AfxGetThread();
    if (pThread != NULL)
@@ -29,3 +29,4 @@ BOOL CCMFCAutomationApp::InitInstance()
    //...
    //...
    //...
+}

@@ -1,15 +1,15 @@
-   CCustomer rsCustSet(&m_dbCust);
+CCustomer rsCustSet(&m_dbCust);
 
-   // Open the recordset
-   rsCustSet.Open();
+// Open the recordset
+rsCustSet.Open();
 
-   // Use the recordset ...
+// Use the recordset ...
 
-   // Set the sort order and Requery the recordset
-   rsCustSet.m_strSort = _T("L_Name, ContactFirstName");
-   if(!rsCustSet.CanRestart())
-      return;    // Unable to requery
+// Set the sort order and Requery the recordset
+rsCustSet.m_strSort = _T("L_Name, ContactFirstName");
+if (!rsCustSet.CanRestart())
+return;    // Unable to requery
 
-   if(!rsCustSet.Requery())
-      // Requery failed, so take action
-      AfxMessageBox(_T("Requery failed!"));
+if (!rsCustSet.Requery())
+// Requery failed, so take action
+AfxMessageBox(_T("Requery failed!"));

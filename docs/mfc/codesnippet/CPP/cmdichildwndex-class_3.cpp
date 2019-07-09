@@ -1,4 +1,4 @@
 BOOL CChildFrame::IsReadOnly()
 {
-	return DYNAMIC_DOWNCAST(CStartView, GetActiveView()) != NULL;
+   return DYNAMIC_DOWNCAST(CStartView, GetActiveView()) != NULL;
 }

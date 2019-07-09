@@ -12,14 +12,14 @@ int CMyODListBox::VKeyToItem(UINT nKey, UINT nIndex)
    // On key up, move the caret up one item.
    if ((nKey == VK_UP) && (nIndex > 0))
    {
-      SetCaretIndex(nIndex-1);
+      SetCaretIndex(nIndex - 1);
    }
    // On key down, move the caret down one item.
    else if ((nKey == VK_DOWN) && (nIndex < (UINT)GetCount()))
    {
-      SetCaretIndex(nIndex+1);
+      SetCaretIndex(nIndex + 1);
    }
-   
+
    // Do not perform any default processing.
    return -2;
 }

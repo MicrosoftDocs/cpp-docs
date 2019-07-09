@@ -1,4 +1,4 @@
-class CBaseClass : public CObject 
+class CBaseClass : public CObject
 {
    DECLARE_SERIAL(CBaseClass);
 };

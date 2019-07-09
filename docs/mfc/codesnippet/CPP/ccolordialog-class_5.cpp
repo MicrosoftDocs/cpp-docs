@@ -14,12 +14,12 @@ BOOL CMyColorDlg::OnColorOK()
          _T("Please enter a color again"));
 
       // GetColor() returns initially selected color.
-      SetCurrentColor(GetColor());        
+      SetCurrentColor(GetColor());
 
       // Won't dismiss color dialog.
-      return TRUE;                        
+      return TRUE;
    }
 
    // OK to dismiss color dialog.
-   return FALSE;                          
+   return FALSE;
 }
