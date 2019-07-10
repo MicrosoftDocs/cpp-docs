@@ -1,1 +1,1 @@
-   delete m_pTestDlg;
+delete m_pTestDlg;

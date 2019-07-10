@@ -1,4 +1,4 @@
-void CMyRichEditView::OnReplaceAll(LPCTSTR lpszFind, LPCTSTR lpszReplace, 
+void CMyRichEditView::OnReplaceAll(LPCTSTR lpszFind, LPCTSTR lpszReplace,
    BOOL bCase, BOOL bWord)
 {
    CWaitCursor wait;

@@ -1,2 +1,2 @@
-   CTestDialog testdlg;
-   testdlg.DoModal();	
+CTestDialog testdlg;
+testdlg.DoModal();

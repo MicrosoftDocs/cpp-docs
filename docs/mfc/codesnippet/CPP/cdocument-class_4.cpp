@@ -1,4 +1,5 @@
 //To get the first view in the list of views:
+//To get the first view in the list of views:
 // POSITION pos = GetFirstViewPosition();
 // CView* pFirstView = GetNextView(pos);
 //
@@ -13,5 +14,5 @@ void CExampleDoc::OnRepaintAllViews()
    {
       CView* pView = GetNextView(pos);
       pView->UpdateWindow();
-   }   
+   }
 }

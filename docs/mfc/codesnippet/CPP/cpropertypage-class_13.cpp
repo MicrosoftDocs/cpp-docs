@@ -3,7 +3,7 @@
 // entered to the Number edit control of the CStylePage. Otherwise
 // display a message to the user and stay on the current page.
 
-LRESULT CStylePage::OnWizardNext() 
+LRESULT CStylePage::OnWizardNext()
 {
    // Get the number from the edit control
    int num = GetDlgItemInt(IDC_NUMOBJECTS);

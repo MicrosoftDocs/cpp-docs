@@ -1,4 +1,5 @@
    // Open a recordset; first record is current
+   // Open a recordset; first record is current
    CCustomer rsCustSet(&m_dbCust);
    rsCustSet.Open();
 

@@ -28,7 +28,7 @@ void CDCView::DrawBitmap(CDC* pDC)
       // Copy the bits from the in-memory DC into the on-
       // screen DC to actually do the painting. Use the centerpoint
       // we computed for the target offset.
-      pDC->BitBlt(nX, nY, bmpInfo.bmWidth, bmpInfo.bmHeight, &dcMemory, 
+      pDC->BitBlt(nX, nY, bmpInfo.bmWidth, bmpInfo.bmHeight, &dcMemory,
          0, 0, SRCCOPY);
 
       dcMemory.SelectObject(pOldBitmap);

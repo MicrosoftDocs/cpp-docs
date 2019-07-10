@@ -8,14 +8,14 @@ void COleContainerView::OnAttachDispatch()
    {
       AfxCheckError(::CLSIDFromProgID(_T("WMPlayer.OCX"), &clsidWMP));
 
-      AfxCheckError(::CoCreateInstance(clsidWMP, NULL, CLSCTX_INPROC_SERVER, 
-         IID_IDispatch, (LPVOID*)&pWMPDispatch));
+      AfxCheckError(::CoCreateInstance(clsidWMP, NULL, CLSCTX_INPROC_SERVER,
+         IID_IDispatch, (LPVOID*)& pWMPDispatch));
 
       oddWMP.AttachDispatch(pWMPDispatch, TRUE);
       pWMPDispatch = NULL; // our COleDispatchDriver now owns the interface
 
       CString strUIMode;
-      oddWMP.GetProperty(23, VT_BSTR, (void*)&strUIMode);
+      oddWMP.GetProperty(23, VT_BSTR, (void*)& strUIMode);
       TRACE(_T("WMP uiMode is %s.\n"), strUIMode);
    }
    catch (COleException* pe)
@@ -32,7 +32,7 @@ void COleContainerView::OnAttachDispatch()
    // cleanup
    if (NULL != pWMPDispatch)
    {
-      pWMPDispatch->Release();   
+      pWMPDispatch->Release();
    }
 
    // COleDispatchDriver automatically releases the dispatch interface when
