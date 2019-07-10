@@ -1,3 +1,3 @@
-   [ uuid(913E450B-E720-4C71-BCDF-71C96EE98FEB), licensed,
-     helpstring("MyAxUI Control"), control ]
-   coclass NVC_MFC_AxUI
+[uuid(913E450B-E720-4C71-BCDF-71C96EE98FEB), licensed,
+helpstring("MyAxUI Control"), control]
+coclass NVC_MFC_AxUI

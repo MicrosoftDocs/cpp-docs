@@ -8,7 +8,7 @@ void CMyDialog::OnTbnDropDownToolBar1(NMHDR* pNMHDR, LRESULT* pResult)
    CMenu* pPopup = menu.GetSubMenu(0);
    if (NULL != pPopup)
    {
-      pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, 
+      pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON,
          pToolBar->rcButton.left, pToolBar->rcButton.bottom, this);
    }
 

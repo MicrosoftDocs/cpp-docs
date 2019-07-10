@@ -1,1 +1,1 @@
-   afx_msg void OnEditCut();
+afx_msg void OnEditCut();

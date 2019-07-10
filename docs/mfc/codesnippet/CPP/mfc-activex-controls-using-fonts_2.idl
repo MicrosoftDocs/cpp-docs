@@ -1,1 +1,1 @@
-         [id(DISPID_FONT)] IFontDisp*Font;
+[id(DISPID_FONT)] IFontDisp* Font;

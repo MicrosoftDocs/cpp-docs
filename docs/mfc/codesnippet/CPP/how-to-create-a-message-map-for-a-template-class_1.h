@@ -1,6 +1,6 @@
 // Extends the CListBox class to provide synchronization with 
 // an external data source
-template <typename CollectionT> 
+template <typename CollectionT>
 class CSyncListBox : public CListBox
 {
 public:

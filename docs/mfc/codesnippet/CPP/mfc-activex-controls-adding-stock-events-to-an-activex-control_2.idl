@@ -1,1 +1,1 @@
-         [id(DISPID_KEYPRESS)] void KeyPress(SHORT* KeyAscii);
+[id(DISPID_KEYPRESS)] void KeyPress(SHORT* KeyAscii);

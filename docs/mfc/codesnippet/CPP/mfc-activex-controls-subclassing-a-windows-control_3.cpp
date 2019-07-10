@@ -1,1 +1,1 @@
-   cs.style |= BS_CHECKBOX;
+cs.style |= BS_CHECKBOX;

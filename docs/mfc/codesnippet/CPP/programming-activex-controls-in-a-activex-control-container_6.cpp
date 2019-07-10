@@ -1,1 +1,1 @@
-   DDX_Control(pDX, IDC_CIRCCTRL1, m_circctl);
+DDX_Control(pDX, IDC_CIRCCTRL1, m_circctl);

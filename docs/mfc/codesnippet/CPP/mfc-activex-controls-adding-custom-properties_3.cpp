@@ -1,1 +1,1 @@
-   DISP_PROPERTY_EX_ID(CMyAxUICtrl, "CircleOffset", dispidCircleOffset, GetCircleOffset, SetCircleOffset, VT_I2)
+DISP_PROPERTY_EX_ID(CMyAxUICtrl, "CircleOffset", dispidCircleOffset, GetCircleOffset, SetCircleOffset, VT_I2)

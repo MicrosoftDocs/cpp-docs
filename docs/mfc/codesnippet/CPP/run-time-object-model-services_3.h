@@ -1,6 +1,6 @@
-class CPerson : public CObject 
+class CPerson : public CObject
 {
-   DECLARE_DYNAMIC( CPerson )
+   DECLARE_DYNAMIC(CPerson)
 
    // other declarations
 };

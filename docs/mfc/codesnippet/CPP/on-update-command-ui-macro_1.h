@@ -1,1 +1,1 @@
-   afx_msg void OnUpdateEditClearAll(CCmdUI *pCmdUI);
+afx_msg void OnUpdateEditClearAll(CCmdUI* pCmdUI);
