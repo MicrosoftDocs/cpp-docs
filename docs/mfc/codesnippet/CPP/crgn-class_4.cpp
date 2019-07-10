@@ -1,4 +1,4 @@
-   CRgn   rgn;
+CRgn   rgn;
 
-   BOOL bSucceeded = rgn.CreateRectRgn( 50, 20, 150, 120 );
-   ASSERT( bSucceeded == TRUE );
+BOOL bSucceeded = rgn.CreateRectRgn(50, 20, 150, 120);
+ASSERT(bSucceeded == TRUE);

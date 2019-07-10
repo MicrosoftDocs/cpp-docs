@@ -151,6 +151,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes default library name from .obj file (x86 only).|
 |[/Zm](zm-specify-precompiled-header-memory-allocation-limit.md)|Specifies the precompiled header memory allocation limit.|
+|[/Zo](zo-enhance-optimized-debugging.md)|Generates enhanced debugging information for optimized code.|
 |[/Zp](zp-struct-member-alignment.md)|Packs structure members.|
 |[/Zs](zs-syntax-check-only.md)|Checks syntax only.|
 |[/ZW](zw-windows-runtime-compilation.md)|Produces an output file to run on the Windows Runtime.|

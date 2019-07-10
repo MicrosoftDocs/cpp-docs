@@ -1,1 +1,1 @@
-   CMyDataPathProperty EditControlText;
+CMyDataPathProperty EditControlText;

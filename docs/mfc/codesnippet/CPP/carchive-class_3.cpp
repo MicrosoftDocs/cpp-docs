@@ -1,1 +1,1 @@
-         const CFile* fp = ar.GetFile();
+const CFile* fp = ar.GetFile();

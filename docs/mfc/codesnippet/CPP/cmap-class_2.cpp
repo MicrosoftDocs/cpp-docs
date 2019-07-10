@@ -1,3 +1,3 @@
-         CMap<int,int,CPoint,CPoint> myMap;
+CMap<int, int, CPoint, CPoint> myMap;
 
-         UINT uTableSize = myMap.GetHashTableSize();      
+UINT uTableSize = myMap.GetHashTableSize();

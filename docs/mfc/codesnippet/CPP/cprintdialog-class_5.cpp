@@ -1,4 +1,5 @@
    CPrintDialog dlg(FALSE);
+   CPrintDialog dlg(FALSE);
    if (dlg.DoModal() == IDOK)
    {
       // Get a handle to the printer device context (DC).

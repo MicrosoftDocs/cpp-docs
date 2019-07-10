@@ -7,7 +7,9 @@
 BOOL CExampleDoc::OnNewDocument()
 {
    if (!CDocument::OnNewDocument())
+   {
       return FALSE;
+   }
 
    InitMyDocument(); // call your shared initialization function
 

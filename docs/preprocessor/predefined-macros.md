@@ -237,6 +237,9 @@ MSVC supports these additional predefined macros.
    |Visual Studio 2017 version 15.8|1915|
    |Visual Studio 2017 version 15.9|1916|
    |Visual Studio 2019 RTW (16.0)|1920|
+   |Visual Studio 2019 version 16.1|1921|
+   |Visual Studio 2019 version 16.2|1922|
+   |Visual Studio 2019 version 16.3|1923|
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the **>=** operator. You can use it in a conditional directive to compare **&#95;MSC&#95;VER** against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 

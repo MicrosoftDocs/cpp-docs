@@ -5,8 +5,8 @@ BOOL CShapePage::OnWizardFinish()
    CString report = _T("You have selected the following options:\n");
 
    // Get the number of property pages from CPropertySheet.
-   CPropertySheet* sheet = (CPropertySheet*) GetParent();
-   int count = sheet->GetPageCount();   
+   CPropertySheet* sheet = (CPropertySheet*)GetParent();
+   int count = sheet->GetPageCount();
 
    // Get the formatted string from each page. This formatted string 
    // will be shown in a message box. Each page knows about the 
@@ -18,7 +18,7 @@ BOOL CShapePage::OnWizardFinish()
    // formatted string by calling the GetPageSelections() function.
    for (int i = 0; i < count; i++)
    {
-      CMyPropertyPage* page = (CMyPropertyPage*) sheet->GetPage(i);
+      CMyPropertyPage* page = (CMyPropertyPage*)sheet->GetPage(i);
 
       CString str;
       page->GetPageSelections(str);
@@ -26,6 +26,6 @@ BOOL CShapePage::OnWizardFinish()
    }
 
    AfxMessageBox(report);
-   
+
    return CPropertyPage::OnWizardFinish();
 }

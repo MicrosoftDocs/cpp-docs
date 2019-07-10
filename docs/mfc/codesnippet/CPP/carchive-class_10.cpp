@@ -8,14 +8,14 @@ void CSubItem::Serialize(CArchive& ar)
    {
       // will serialize a reference 
       // to the "mapped" document pointer
-      ar << (CObject *)m_pDoc;
+      ar << (CObject*)m_pDoc;
       ar << m_i;
    }
    else
    {
       // Will load a reference to
       // the "mapped" document pointer
-      ar >> (CObject *&) m_pDoc;
+      ar >> (CObject * &)m_pDoc;
       ar >> m_i;
    }
 }

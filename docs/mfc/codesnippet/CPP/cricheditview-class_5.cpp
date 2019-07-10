@@ -1,4 +1,4 @@
 void CMyRichEditView::OnItalic()
 {
-   OnCharEffect( CFM_ITALIC, CFE_ITALIC );
+   OnCharEffect(CFM_ITALIC, CFE_ITALIC);
 }
