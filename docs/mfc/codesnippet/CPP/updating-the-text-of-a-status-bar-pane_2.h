@@ -1,1 +1,1 @@
-   afx_msg void OnUpdatePage(CCmdUI *pCmdUI);
+afx_msg void OnUpdatePage(CCmdUI* pCmdUI);

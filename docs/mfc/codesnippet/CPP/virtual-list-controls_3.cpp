@@ -1,4 +1,4 @@
-void CMyDialog::OnLvnOdcachehintList3(NMHDR *pNMHDR, LRESULT *pResult)
+void CMyDialog::OnLvnOdcachehintList3(NMHDR* pNMHDR, LRESULT* pResult)
 {
    LPNMLVCACHEHINT pCacheHint = reinterpret_cast<LPNMLVCACHEHINT>(pNMHDR);
 

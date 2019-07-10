@@ -1,3 +1,3 @@
 protected:
-	LRESULT OnOcmCommand(WPARAM wParam, LPARAM lParam);
+   LRESULT OnOcmCommand(WPARAM wParam, LPARAM lParam);
 };

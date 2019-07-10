@@ -1,2 +1,2 @@
-   WORD wKeyAndShift = static_cast<WORD>(m_HotKeyCtrl.GetHotKey());
-   this->SendMessage(WM_SETHOTKEY, wKeyAndShift);	
+WORD wKeyAndShift = static_cast<WORD>(m_HotKeyCtrl.GetHotKey());
+this->SendMessage(WM_SETHOTKEY, wKeyAndShift);

@@ -1,1 +1,1 @@
-   DISP_PROPERTY_PARAM_ID(CMyAxUICtrl, "Array", dispidArray, GetArray, SetArray, VT_I2, VTS_I2 VTS_I2)
+DISP_PROPERTY_PARAM_ID(CMyAxUICtrl, "Array", dispidArray, GetArray, SetArray, VT_I2, VTS_I2 VTS_I2)

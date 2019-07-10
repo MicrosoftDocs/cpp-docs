@@ -1,11 +1,11 @@
 struct MyStructType { int topScore; };
 void MyFunc()
 {
-    // Frame allocation
-    MyStructType myStruct;
+   // Frame allocation
+   MyStructType myStruct;
 
-    // Use the struct 
-    myStruct.topScore = 297;
+   // Use the struct 
+   myStruct.topScore = 297;
 
-    // Reclaimed when exiting scope
+   // Reclaimed when exiting scope
 }

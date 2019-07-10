@@ -1,3 +1,3 @@
-         CArray<CPerson, CPerson&> personArr;
-         CPerson person;
-         personArr.Add(person);
+CArray<CPerson, CPerson&> personArr;
+CPerson person;
+personArr.Add(person);

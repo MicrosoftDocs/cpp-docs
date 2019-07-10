@@ -1,1 +1,1 @@
-   m_Checkbox.SetCheck(BST_CHECKED);
+m_Checkbox.SetCheck(BST_CHECKED);

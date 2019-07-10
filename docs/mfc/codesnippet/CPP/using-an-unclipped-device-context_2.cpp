@@ -1,1 +1,1 @@
-   dwFlags &= ~clipPaintDC;
+dwFlags &= ~clipPaintDC;
