@@ -8,7 +8,7 @@ public:
 
    virtual void OnFinalRelease();
 
-// Dialog Data
+   // Dialog Data
    enum { IDD = IDD_CONTAINER_DIALOG };
 
 protected:

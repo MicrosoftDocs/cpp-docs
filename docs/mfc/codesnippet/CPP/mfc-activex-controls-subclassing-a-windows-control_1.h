@@ -1,2 +1,2 @@
-	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
-	BOOL IsSubclassedControl();
+virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+BOOL IsSubclassedControl();

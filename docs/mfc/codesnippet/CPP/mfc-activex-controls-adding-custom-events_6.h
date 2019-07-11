@@ -1,1 +1,1 @@
-   VARIANT_BOOL InCircle(CPoint& point);
+VARIANT_BOOL InCircle(CPoint& point);

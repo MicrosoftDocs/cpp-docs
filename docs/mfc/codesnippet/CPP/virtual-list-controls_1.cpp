@@ -1,1 +1,1 @@
-   ON_NOTIFY(LVN_GETDISPINFO, IDC_LIST3, &CMyDialog::OnLvnGetdispinfoList3)
+ON_NOTIFY(LVN_GETDISPINFO, IDC_LIST3, &CMyDialog::OnLvnGetdispinfoList3)

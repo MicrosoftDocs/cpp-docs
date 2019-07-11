@@ -1,1 +1,1 @@
-         CList<int, int> m_intList;
+CList<int, int> m_intList;

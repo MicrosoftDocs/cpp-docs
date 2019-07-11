@@ -1,2 +1,2 @@
-   m_pic.SetPictureDispatch(pVal);
-   InvalidateControl();
+m_pic.SetPictureDispatch(pVal);
+InvalidateControl();
