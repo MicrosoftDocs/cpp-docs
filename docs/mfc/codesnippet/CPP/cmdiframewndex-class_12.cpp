@@ -1,4 +1,4 @@
 void CMainFrame::OnMdiNewHorzTabGroup()
 {
-	MDITabNewGroup(FALSE);
+   MDITabNewGroup(FALSE);
 }

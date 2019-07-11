@@ -12,12 +12,12 @@ int CMyODListBox::CharToItem(UINT nChar, UINT nIndex)
    // On a numeric key, move the caret up one item.
    if (isdigit(nChar) && (nIndex > 0))
    {
-      SetCaretIndex(nIndex-1);
+      SetCaretIndex(nIndex - 1);
    }
    // On an alphabetic key, move the caret down one item.
    else if (isalpha(nChar) && (nIndex < (UINT)GetCount()))
    {
-      SetCaretIndex(nIndex+1);
+      SetCaretIndex(nIndex + 1);
    }
 
    // Do not perform any default processing.

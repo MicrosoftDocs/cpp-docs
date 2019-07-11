@@ -1,1 +1,1 @@
-      VTS_I2 VTS_BOOL
+VTS_I2 VTS_BOOL

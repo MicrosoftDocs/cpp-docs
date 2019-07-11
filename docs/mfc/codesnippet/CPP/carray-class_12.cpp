@@ -1,12 +1,14 @@
-         CArray<CPoint,CPoint> myArray;
+CArray<CPoint, CPoint> myArray;
 
-         // Add elements to the array.
-         for (int i = 0; i < 10; i++)
-            myArray.Add(CPoint(i, 2*i));
+// Add elements to the array.
+for (int i = 0; i < 10; i++) 
+{
+   myArray.Add(CPoint(i, 2 * i));
+}
 
-         myArray.RemoveAt(5);
+myArray.RemoveAt(5);
 
-         #ifdef _DEBUG
-            afxDump.SetDepth(1);
-            afxDump << "myArray: " << &myArray << "\n";
-         #endif		
+#ifdef _DEBUG
+afxDump.SetDepth(1);
+afxDump << "myArray: " << &myArray << "\n";
+#endif		

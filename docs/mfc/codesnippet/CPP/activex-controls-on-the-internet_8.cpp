@@ -1,1 +1,1 @@
-   m_lReadyState = READYSTATE_LOADING;
+m_lReadyState = READYSTATE_LOADING;

@@ -1,1 +1,1 @@
-         _tcslen(pszLicFileContents);
+_tcslen(pszLicFileContents);

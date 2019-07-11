@@ -10,14 +10,14 @@
 void CMyODListBox::MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct)
 {
    ASSERT(lpMeasureItemStruct->CtlType == ODT_LISTBOX);
-   LPCTSTR lpszText = (LPCTSTR) lpMeasureItemStruct->itemData;
+   LPCTSTR lpszText = (LPCTSTR)lpMeasureItemStruct->itemData;
    ASSERT(lpszText != NULL);
    CSize   sz;
-   CDC*    pDC = GetDC();
+   CDC* pDC = GetDC();
 
    sz = pDC->GetTextExtent(lpszText);
 
    ReleaseDC(pDC);
 
-   lpMeasureItemStruct->itemHeight = 2*sz.cy;
+   lpMeasureItemStruct->itemHeight = 2 * sz.cy;
 }

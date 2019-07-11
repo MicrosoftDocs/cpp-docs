@@ -6,5 +6,5 @@ void CDCView::DoInvertRect(CDC* pDC)
 
    // inverting again restores to normal
    ::Sleep(1000);
-   pDC->InvertRect(rect);   
+   pDC->InvertRect(rect);
 }

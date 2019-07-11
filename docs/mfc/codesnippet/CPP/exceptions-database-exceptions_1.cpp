@@ -5,7 +5,7 @@ CRecordset* CMyDatabaseDoc::GetRecordset()
    {
       pSet->Open();
    }
-   catch(CDBException* e)
+   catch (CDBException* e)
    {
       AfxMessageBox(e->m_strError, MB_ICONEXCLAMATION);
       // Delete the incomplete recordset object

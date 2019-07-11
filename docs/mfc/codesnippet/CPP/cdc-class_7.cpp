@@ -1,8 +1,8 @@
 // print some info about a pen we're ready to enumerate
 BOOL CALLBACK EnumObjectHandler(LPVOID lpLogObject, LPARAM /* lpData */)
 {
-   LOGPEN* pPen = (LOGPEN*) lpLogObject;
-   
+   LOGPEN* pPen = (LOGPEN*)lpLogObject;
+
    switch (pPen->lopnStyle)
    {
    case PS_SOLID:
