@@ -1,12 +1,16 @@
 ---
 title: "&lt;ccomplex&gt;"
-ms.date: "11/04/2016"
-f1_keywords: ["<ccomplex>"]
+ms.date: "07/11/2019"
+f1_keywords: ["<ccomplex>", "ccomplex"]
+helpviewer_keywords: ["ccomplex header"]
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
 ---
 # &lt;ccomplex&gt;
 
-Includes the C++ Standard Library header [\<complex>](../standard-library/complex.md), which effectively includes the Standard C library header \<complex.h> and adds the associated names to the `std` namespace.
+Includes the C++ standard library header [\<complex>](complex.md).
+
+> [!NOTE]
+> The C standard library \<complex.h> header isn't included by \<ccomplex>, because it's effectively replaced by the C++ overloads in \<complex> and \<cmath>. That makes the \<ccomplex> header redundant. The \<complex.h> header is deprecated in C++. The \<ccomplex> header is deprecated in C++17 and removed in the draft C++20 standard.
 
 ## Syntax
 
@@ -16,11 +20,12 @@ Includes the C++ Standard Library header [\<complex>](../standard-library/comple
 
 ## Remarks
 
-Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
-
-The name `clog`, which is declared in \<complex.h>, is not defined in the `std` namespace because of potential conflicts with the `clog` that is declared in [\<iostream>](../standard-library/iostream.md).
+The name `clog`, which is declared in \<complex.h>, isn't defined in the `std` namespace because of potential conflicts with the `clog` that's declared in [\<iostream>](iostream.md).
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+[\<complex>](complex.md)\
+[\<cmath>](cmath.md)\
+[Header files reference](cpp-standard-library-header-files.md)\
+[C++ standard library overview](cpp-standard-library-overview.md)\
+[Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
