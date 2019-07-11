@@ -24,6 +24,6 @@ Including this header ensures that the names declared using external linkage in 
 
 ## See also
 
-[[Header files reference](cpp-standard-library-header-files.md)\
+[Header files reference](cpp-standard-library-header-files.md)\
 [C++ standard library overview](cpp-standard-library-overview.md)\
 [Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
