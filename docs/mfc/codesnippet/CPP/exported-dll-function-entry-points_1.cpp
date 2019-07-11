@@ -1,1 +1,1 @@
-   AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
+AFX_MANAGE_STATE(AfxGetStaticModuleState())

@@ -1,2 +1,2 @@
-   IPictureDisp* GetControlPicture(void);
-   void SetControlPicture(IPictureDisp* pVal);
+IPictureDisp* GetControlPicture(void);
+void SetControlPicture(IPictureDisp* pVal);

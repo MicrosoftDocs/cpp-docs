@@ -30,7 +30,7 @@ void DisplayHttpPage(LPCTSTR pszServerName, LPCTSTR pszFileName)
    }
    catch (CInternetException* pEx)
    {
-       //catch errors from WinInet
+      //catch errors from WinInet
       TCHAR pszError[64];
       pEx->GetErrorMessage(pszError, 64);
       _tprintf_s(_T("%63s"), pszError);

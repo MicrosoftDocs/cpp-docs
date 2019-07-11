@@ -1,1 +1,1 @@
-IMPLEMENT_SERIAL( CPerson, CObject, 1 )
+IMPLEMENT_SERIAL(CPerson, CObject, 1)

@@ -1,1 +1,1 @@
-   afx_msg void OnBnClickedMybutton();
+afx_msg void OnBnClickedMybutton();

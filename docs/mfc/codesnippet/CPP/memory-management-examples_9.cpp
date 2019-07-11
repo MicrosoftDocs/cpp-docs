@@ -1,1 +1,1 @@
-         CMyClass* myClass = new CMyClass("Joe Smith");
+CMyClass* myClass = new CMyClass("Joe Smith");

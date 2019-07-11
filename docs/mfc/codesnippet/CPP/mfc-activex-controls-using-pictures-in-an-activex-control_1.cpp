@@ -1,1 +1,1 @@
-   PROPPAGEID(CLSID_CPicturePropPage)
+PROPPAGEID(CLSID_CPicturePropPage)

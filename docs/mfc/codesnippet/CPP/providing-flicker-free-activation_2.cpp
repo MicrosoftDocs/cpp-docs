@@ -1,1 +1,1 @@
-   dwFlags |= noFlickerActivate;
+dwFlags |= noFlickerActivate;

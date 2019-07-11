@@ -1,1 +1,1 @@
-   pdc->SelectObject(pOldHeadingFont);
+pdc->SelectObject(pOldHeadingFont);
