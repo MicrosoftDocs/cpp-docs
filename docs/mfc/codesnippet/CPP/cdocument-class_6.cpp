@@ -5,7 +5,9 @@
 BOOL CMyDoc::OnNewDocument()
 {
    if (!CDocument::OnNewDocument())
+   {
       return FALSE;
+   }
 
    // Do initialization of new document here.
 

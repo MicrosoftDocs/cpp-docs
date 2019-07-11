@@ -1,2 +1,2 @@
-         CAsyncSocket sock;
-         sock.Create( );    // Use the default parameters					
+CAsyncSocket sock;
+sock.Create();    // Use the default parameters					

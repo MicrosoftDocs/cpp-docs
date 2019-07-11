@@ -1,1 +1,1 @@
-	CMFCDropDownToolBar m_wndToolbarResource;
+CMFCDropDownToolBar m_wndToolbarResource;

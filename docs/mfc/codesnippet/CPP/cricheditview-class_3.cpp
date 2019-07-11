@@ -1,11 +1,11 @@
-void CMyRichEditView::OnPrint(CDC* pDC, CPrintInfo* pInfo) 
+void CMyRichEditView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 {
    UNREFERENCED_PARAMETER(pInfo);
 
    // Get the current paper size and construct an actual printing
    // rectangle by leaving out one half inch margin from each side.
    CSize sizePaper = GetPaperSize();
-   CRect rectMargins(720, 720, sizePaper.cx - 720, 
+   CRect rectMargins(720, 720, sizePaper.cx - 720,
       sizePaper.cy - 720);
 
    // Need to set the margins when printing from CRichEditView
@@ -29,7 +29,7 @@ void CMyRichEditView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
    // Format the third 10 characters in the buffer.
    nSavedDC = pDC->SaveDC();
    PrintInsideRect(pDC, rectFooter, 20, 30, TRUE); // characters 20-30
-   pDC->RestoreDC(nSavedDC);   
+   pDC->RestoreDC(nSavedDC);
 
-//   CRichEditView::OnPrint(pDC, pInfo);
+   //   CRichEditView::OnPrint(pDC, pInfo);
 }

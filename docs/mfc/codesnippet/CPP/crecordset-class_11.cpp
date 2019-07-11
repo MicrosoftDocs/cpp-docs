@@ -1,1 +1,1 @@
-   SetFieldNull(&m_strParam);
+SetFieldNull(&m_strParam);

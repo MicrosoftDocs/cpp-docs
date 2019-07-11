@@ -8,11 +8,11 @@ void CCourses::DoFieldExchange(CFieldExchange* pFX)
 {
    pFX->SetFieldType(CFieldExchange::outputParam);
    RFX_Long(pFX, _T("Param1"), m_nCountParam);
-      // The "Param1" name here is a dummy name 
-      // that is never used
+   // The "Param1" name here is a dummy name 
+   // that is never used
 
    pFX->SetFieldType(CFieldExchange::inputParam);
    RFX_Text(pFX, _T("Param2"), m_strNameParam);
-      // The "Param2" name here is a dummy name 
-      // that is never used
+   // The "Param2" name here is a dummy name 
+   // that is never used
 }

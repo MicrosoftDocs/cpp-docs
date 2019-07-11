@@ -1,1 +1,1 @@
-   pOldHeadingFont = SelectFontObject(pdc, m_fontHeading);
+pOldHeadingFont = SelectFontObject(pdc, m_fontHeading);

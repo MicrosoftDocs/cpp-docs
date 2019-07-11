@@ -1,5 +1,5 @@
 // This code fragment is taken from the Wordpad sample.
-HRESULT CMyRichEditView::QueryAcceptData(LPDATAOBJECT lpdataobj, 
+HRESULT CMyRichEditView::QueryAcceptData(LPDATAOBJECT lpdataobj,
    CLIPFORMAT* lpcfFormat, DWORD dwReco, BOOL bReally, HGLOBAL hMetaFile)
 {
    if (bReally && *lpcfFormat == 0 && (m_nPasteType == 0))
@@ -17,6 +17,6 @@ HRESULT CMyRichEditView::QueryAcceptData(LPDATAOBJECT lpdataobj,
          }
       }
    }
-   return CRichEditView::QueryAcceptData(lpdataobj, lpcfFormat, dwReco, 
+   return CRichEditView::QueryAcceptData(lpdataobj, lpcfFormat, dwReco,
       bReally, hMetaFile);
 }

@@ -1,1 +1,1 @@
-   EditControlText.ResetData();
+EditControlText.ResetData();

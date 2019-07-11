@@ -2,7 +2,7 @@ void CMyAxLocPropPage::OnSetPageSite()
 {
    LPPROPERTYPAGESITE pSite;
    LCID lcid = 0;
-   if((pSite = GetPageSite()) != NULL)
+   if ((pSite = GetPageSite()) != NULL)
       pSite->GetLocaleID(&lcid);
    HINSTANCE hResource = GetLocalizedResourceHandle(lcid);
    HINSTANCE hResourceSave = NULL;

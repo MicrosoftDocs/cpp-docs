@@ -1,1 +1,1 @@
-   CFont* pOldHeadingFont;
+CFont* pOldHeadingFont;

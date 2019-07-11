@@ -1,1 +1,1 @@
-   EnableToolTips(TRUE);
+EnableToolTips(TRUE);

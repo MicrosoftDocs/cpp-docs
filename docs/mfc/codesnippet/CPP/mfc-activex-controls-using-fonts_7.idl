@@ -1,1 +1,1 @@
-         [id(1)] IDispatch* HeadingFont;
+[id(1)] IDispatch* HeadingFont;

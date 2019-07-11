@@ -1,4 +1,4 @@
-void CMyScrollView::OnUpdate(CView* /*pSender*/, LPARAM /*lHint*/, 
+void CMyScrollView::OnUpdate(CView* /*pSender*/, LPARAM /*lHint*/,
    CObject* /*pHint*/)
 {
    // Implement a GetMyDocSize() member function in 

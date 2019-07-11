@@ -1,1 +1,1 @@
-   SetScrollSizes(nMapMode, CSize(100, 100));
+SetScrollSizes(nMapMode, CSize(100, 100));
