@@ -2,28 +2,102 @@
 title: "Overview of modules in C++"
 ms.date: "07/15/2019"
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
-ms.description: Modules in C++20 represent a modern alternative to header files.
+ms.description: Modules in C++20 provide a modern alternative to header files.
 ---
 
 # Overview of modules in C++
 
-C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros and preprocessor directives declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled, the result can be reused wherever else the module is imported.
+C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled once, the result can be reused wherever else the module is imported.
 
-Modules are intended as an eventual replacement for the use of the #include preprocessor directive and header files. However, modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. A module can import any number of other modules. Modules are orthogonal to namespaces. For example, multiple modules are used to expose the STL using the std namespace.
+Modules are intended as a preferred alternative to the use of the #include preprocessor directive and header files. However, modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend that new projects use modules rather than header files as much as possible. For larger existing projects under active development, we suggest that you experiment with converting legacy headers to modules to see whether you get a meaningful reduction in compilation times.
+
+A module can consist of a single interface source file, or as an interface file and additional  and zero or more implementation files or additional interface files.
 
 ## Enabling modules in the Microsoft C++ compiler
 
-To enable support for modules in Visual Studio 2017 and later, compile with `/experimental:modules`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
+To enable support for modules in Visual Studio 2017 and later, compile with `/experimental:modules`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**. Module interface files must either use the extension **.xxx** or else have the `/experimental:interface` compiler option set. (TBD How?)
 
-## Importing modules
+## Basic example
 
-Use the **import** statement to make a module's exported names visible in your program. 
+The following example shows a minimal module definition in a source file called **Foo.ixx**. The **export module Foo** statement indicates that this file is the primary interface for a module called **Foo**. The **export** modifier on f() indicates that this function will be visible when **Foo** is imported by another program or module. Note that the module 
 
-The import declaration can appear only at the global scope. Any class completely defined along with all its members are made visible to the importing module. An incomplete class declaration in the export of a modu
+```cpp
+export module Foo;
 
-Any names not exported are "owned" by the module and cannot conflict with names defined in your program or imported from other modules. A module cannot export macros
+namespace Bar
+{
+   export int f()
+   {
+      return 108;
+   }
+}
+```
 
-It is not possible for a module to export a macro, nor is it possible for a macro in an importing module to affect the imported module. Components that need to export macros should continue to use header files, with module-based subcomponents for the parts that are well behaved. For example, an existing library that provides interfaces controlled by a preprocessor macro symbol UNICODE can modularize its constituents and continue to provide a traditional header file-based solution as follows:
+The file **MyProgram.cpp** uses the **import** statement to access the names exported by **Foo**.
+
+```cpp
+import Foo;
+
+using namespace Bar;
+
+int main()
+{
+   int answer = f();
+}
+
+```
+
+The import declaration can appear only at the global scope.
+
+## Implementing modules
+
+You can create a module with a single interface file (.ixx) that exports names and includes implementations of all functions. You can also put the implementations in one or more separate implementation files (.cxx), similar to how .h and .cpp files are used. An interface file and the set of implementation files that back it are called a *module unit*. An implementation file cannot contain the export keyword. For larger modules, you can split the module into multiple module units called *partitions*. Each partition consists of an interface file backed by one or more implementation files. The primary interface file imports the partition interfaces, and implicitly exports them. Declarations in any of the partitions are visible within the entire module. No special precautions are need to avoid one-definition-rule (ODR) errors in cases where multiple partitions import the same partition. You can declare a name (function, class, etc.) in one partition and define it in another.
+
+## Modules and namespaces
+
+The rules for namespaces in modules are the same as in any other code. If a declaration within a namespace is exported, the enclosing namespace (excluding non-exported members) is also implicitly exported. If a namespace is explicitly exported, all declarations within that namespace definition are exported.
+
+### Module partitions
+
+A module partition is similar to a module, except that is shares ownership of all declarations in the entire module. A partition's name must begin with the module name followed by a colon. A partition implementation file begins like this: 
+
+```cpp
+module Foo:part1
+```
+
+and the partition interface file begins like this:
+
+```cpp
+module Foo:part1
+```
+
+To access declarations in another partition, a partition must import it, but it can only use the part name, not the module name:
+
+```cpp
+module Foo:part2;
+import :part1;
+```
+
+The primary interface unit must import and re-export all the module's interface partition files like this:
+
+```cpp
+export import :part1
+export import :part2
+...
+```
+
+The primary interface unit can import partition implementation files, but cannot export them because those files are not allowed to export any names. This enables a module to keep implementation details internal to the module.
+ 
+Declarations in a    you can import an implementation in a partition but not re-xport it. 
+
+
+
+## Modules and header files
+
+You can include header files in a module source file by putting the #include before the module declaration. These files are considered to be in the global module fragment, and no module "owns" them. module can only see symbols there that are in headers it specifically includes. The global module only contains symbols that are actually used.
+
+
+A module cannot export a macro. A macro in an importing module cannot affect the imported module. Components that need to export macros should continue to use header files, with module-based subcomponents for the parts that are well behaved. For example, an existing library that provides interfaces controlled by a preprocessor macro symbol UNICODE can modularize its constituents and continue to provide a traditional header file-based solution as follows:
 
 ```cpp
 // Header file C.h
@@ -51,47 +125,14 @@ import <vector>
 import "myheader.h"
 ```
 
-everything is exported including all #defines inside that file, but not any defines brought in from other included headers. 
+everything is exported including all #defines inside that file, but not any defines brought in from other included headers. A module can import any number of other modules. Modules are orthogonal to namespaces. For example, multiple modules are used to expose the STL using the std namespace.
 
 ### Preamble
 
 Import statements and #include statements only. No declarations. The #defines are immediately available even for other imported headers in the preamble.
 
-## Creating modules
-
-A module consists of one primary interface source file and zero or more implementation files or additional interface files. The primary interface file begins with the keywords `export module` followed by the name you give to the module. Any names that you intend to make visible outside the module, for example function or type names, must be preceded by the `export` keyword. You can define function bodies in the interface file itself, or in a separate implementation file.
-
-The following example shows a minimal module definition:
-
-```cpp
-export module Foo;
-
-
-```
-
- impl units import module foo and can see the declarations. no export keyword allowed in an impl unit unless it's combined with the interface file. no worries about multiple definitions when imported by multiple files in the program.
-
-a module unit is introduced by a declaration:
-module module-name ;
-This declaration means that subsequent declarations in the current translation unit are part of the module nominated by module-name. For simplicity, there can be at most one module declaration per translation unit. A module can span several module units — all of which must declare the module they belong to. Like most declarations in C++, it may be necessary to allow attributes on module declarations.
-
-You can include header files in a module source file by putting the #include before the module declaration. These files are considered to be in the global module fragment, and no module "owns" them. module can only see symbols there that are in headers it specifically includes. The global module only contains symbols that are actually used. 
-
-### Module partitions
-
-```cpp
-module baz:prt1
-...
-export module baz
-export import baz:part1
-```
-
-you can import an implementation in a partition but not rexport it, allowing impl to remain hidden from end users
-
-inline partitions?
-
 ### Argument dependent lookup when instantiating templates declared in a module
 
-path of instantiation for templates declared in imported headers (30:03)
+Path of instantiation for templates declared in imported headers (30:03)
 
 ## See Also 
