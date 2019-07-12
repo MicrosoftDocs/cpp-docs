@@ -136,12 +136,12 @@ Struct2 func4(int a, double b, int c, float d);
 
 ## Caller/Callee saved registers
 
-The registers RAX, RCX, RDX, R8, R9, R10, R11 are considered volatile and must be considered destroyed on function calls (unless otherwise safety-provable by analysis such as whole program optimization).
+The registers RAX, RCX, RDX, R8, R9, R10, R11, XMM0-5 and the upper portions of YMM0-15 and ZMM0-15 are considered volatile and must be considered destroyed on function calls (unless otherwise safety-provable by analysis such as whole program optimization). On AVX512VL, the ZMM, YMM, and XMM registers 16-31 are volatile.
 
-The registers RBX, RBP, RDI, RSI, RSP, R12, R13, R14, and R15 are considered nonvolatile and must be saved and restored by a function that uses them.
+The registers RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15, and XMM6-15are considered nonvolatile and must be saved and restored by a function that uses them.
 
 ## Function pointers
-
+ 
 Function pointers are simply pointers to the label of the respective function. There are no table of contents (TOC) requirements for function pointers.
 
 ## Floating-point support for older code
