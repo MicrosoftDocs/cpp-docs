@@ -187,9 +187,9 @@ However, you can use a static library in a UWP without recompiling it with `/ZW`
 
 ### To use a native C++ static library in a UWP project
 
-1. In the project properties for the UWP project, in the **Linker** section, add the path to the library in the **Input** property. For example, for a library in the project that places its output in *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, add the relative path `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
+1. In the project properties for the UWP project, choose **Configuration Properties** > **Linker** > **Input** in the left pane. In the right pane, add the path to the library in the **Additional Dependencies** property. For example, for a library in the project that places its output in *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, add the relative path `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
 
-2. Add an include statement to reference the header file to your pch.h in the UWP project and start adding code that uses the library.
+2. Add an include statement to reference the header file to your pch.h file (if present), or in any .cpp file as needed, and start adding code that uses the library.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"

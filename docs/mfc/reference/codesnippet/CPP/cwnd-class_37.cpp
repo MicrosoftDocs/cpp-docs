@@ -1,3 +1,5 @@
+BOOL CMyDlg::OnInitDialog()
+{
    // Find the child controls on the dialog
    HRESULT hr = E_FAIL;
    CWnd* pDSC = GetDlgItem(IDC_DATASOURCE);
@@ -29,3 +31,5 @@
       }
 
       pList->Release();
+      return TRUE;
+}

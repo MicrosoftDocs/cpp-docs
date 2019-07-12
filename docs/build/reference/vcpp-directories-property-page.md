@@ -7,7 +7,7 @@ ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
 ---
 # VC++ Directories Property Page (Windows)
 
-Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Share or resuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
+Use this property page to tell Visual Studio which directories to use when building the currently-selected project. To set directories for multiple projects in a solution, use a custom property sheet as described in [Share or reuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
 
 For the Linux version of this page, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -39,7 +39,7 @@ You now see a dialog box like this:
 
 ![Show Library Directories](../media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
-Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Share or resuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
+Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Share or reuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
 
 As shown above, many of the inherited paths are given as macros.  To examine the current value of a macro, choose the **Macros** button in the lower right corner of the dialog box. Note that many macros depend on the configuration type. A macro in a debug build might evaluate to a different path than the same macro in a release build.
 
