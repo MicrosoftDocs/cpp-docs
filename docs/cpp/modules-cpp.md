@@ -7,19 +7,38 @@ ms.description: Modules in C++20 provide a modern alternative to header files.
 
 # Overview of modules in C++
 
-C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled once, the result can be reused wherever else the module is imported.
+C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. A module is a set of source code files that are compiled independently of the program that imports them rather than being textually included by the preprocessor. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled once, the result can be reused wherever else the module is imported in a project.
 
-Modules are intended as a preferred alternative to the use of the #include preprocessor directive and header files. However, modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend that new projects use modules rather than header files as much as possible. For larger existing projects under active development, we suggest that you experiment with converting legacy headers to modules to see whether you get a meaningful reduction in compilation times.
+Modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend that new projects use modules rather than header files as much as possible. For larger existing projects under active development, we suggest that you experiment with converting legacy headers to modules to see whether you get a meaningful reduction in compilation times.
 
-A module can consist of a single interface source file, or as an interface file and additional  and zero or more implementation files or additional interface files.
+ and require the **/experimental:modules** compiler option as well as **/std:c++latest**. 
 
-## Enabling modules in the Microsoft C++ compiler
+## Enable modules in the Microsoft C++ compiler
 
-To enable support for modules in Visual Studio 2017 and later, compile with `/experimental:modules`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**. Module interface files must either use the extension **.xxx** or else have the `/experimental:interface` compiler option set. (TBD How?)
+As of Visual Studio 2019 version 16.2, modules are not fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for modules, compile with `/experimental:modules` and `std:c++latest`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
+
+Modules must be compiled with the [/Ehsc](../build/reference/eh-exception-handling-model.md) and [/MD](../build/reference/md-mt-ld-use-run-time-library.md) options.
+
+## Consume the C++ Standard Library as modules
+
+By importing the Standard Library as modules rather than #including it through header files, you can potentially speed up compilation times depending on the size of your project. The library is componentized into the following modules:
+
+- std.regex provides the content of header \<regex>
+- std.filesystem provides the content of header \<experimental/filesystem>
+- std.memory provides the content of header \<memory>
+- std.threading provides the contents of headers \<atomic>, \<condition_variable>, \<future>, \<mutex>, \<shared_mutex>, and \<thread>
+- std.core provides everything else in the C++ Standard Library
+
+To consume these modules, just add an import statement to the top of the source code file:
+
+```cpp
+import std.core;
+import std.regex;
+```
 
 ## Basic example
 
-The following example shows a minimal module definition in a source file called **Foo.ixx**. The **export module Foo** statement indicates that this file is the primary interface for a module called **Foo**. The **export** modifier on f() indicates that this function will be visible when **Foo** is imported by another program or module. Note that the module 
+The following example shows a simple module definition in a source file called **Foo.ixx**. The **ixx** extension is required for module interface files in Visual Studio. In this example, the interface file contains the function definition as well as the declaration but the definitions can be placed in a separate file (as shown in a later example). The **export module Foo** statement indicates that this file is the primary interface for a module called **Foo**. The **export** modifier on f() indicates that this function will be visible when **Foo** is imported by another program or module. Note that the module references a namespace `Bar`. 
 
 ```cpp
 export module Foo;
