@@ -786,9 +786,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 `BindDefaultProperty` might be used in the following context:
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#2](../../mfc/reference/codesnippet/cpp/cwnd-class_7.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="bindproperty"></a>  CWnd::BindProperty
 
@@ -816,9 +814,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 `BindProperty` might be used in the following context:
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#4](../../mfc/reference/codesnippet/cpp/cwnd-class_9.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="bringwindowtotop"></a>  CWnd::BringWindowToTop
 
@@ -3245,9 +3241,7 @@ Use the returned pointer to set the ICursor property of a complex data-bound con
 
 ### Example
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#5](../../mfc/reference/codesnippet/cpp/cwnd-class_37.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="getdynamiclayout"></a>  CWnd::GetDynamicLayout
 
