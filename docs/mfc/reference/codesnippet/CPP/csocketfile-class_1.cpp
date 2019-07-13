@@ -6,7 +6,7 @@ void CChatSocket::OnReceive(int nErrorCode)
 
    if (IOCtl(FIONREAD, &dwReceived))
    {
-      if (dwReceived >= m_dwExpected)   // Process only if you have enough data
+      if (dwReceived >= m_dwExpected) // Process only if you have enough data
          m_pDoc->ProcessPendingRead();
    }
    else

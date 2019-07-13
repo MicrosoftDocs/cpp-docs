@@ -1,2 +1,2 @@
-	CMFCHeaderCtrl* headerCtrl = new CMFCHeaderCtrl();
-	headerCtrl->EnableMultipleSort();
+CMFCHeaderCtrl *headerCtrl = new CMFCHeaderCtrl();
+headerCtrl->EnableMultipleSort();

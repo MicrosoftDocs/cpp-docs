@@ -1,2 +1,2 @@
-	// restore original values of the properties
-	m_wndPropList.ResetOriginalValues();
+// restore original values of the properties
+m_wndPropList.ResetOriginalValues();

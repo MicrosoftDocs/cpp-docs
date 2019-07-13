@@ -6,11 +6,11 @@ void CMdiView::OnRButtonDown(UINT nFlags, CPoint point)
 {
    CView::OnRButtonDown(nFlags, point);
 
-   CMenu* menu_bar = AfxGetMainWnd()->GetMenu();
-   CMenu* file_menu = menu_bar->GetSubMenu(0);    
+   CMenu *menu_bar = AfxGetMainWnd()->GetMenu();
+   CMenu *file_menu = menu_bar->GetSubMenu(0);
    ASSERT(file_menu);
 
    ClientToScreen(&point);
-   file_menu->TrackPopupMenu(TPM_LEFTALIGN |TPM_RIGHTBUTTON, point.x, 
-      point.y, this);
+   file_menu->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x,
+                             point.y, this);
 }

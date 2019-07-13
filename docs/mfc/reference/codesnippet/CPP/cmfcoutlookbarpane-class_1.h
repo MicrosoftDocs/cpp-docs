@@ -1,1 +1,1 @@
-	CMFCOutlookBarPane		m_wndShortcutsPane1;
+CMFCOutlookBarPane m_wndShortcutsPane1;

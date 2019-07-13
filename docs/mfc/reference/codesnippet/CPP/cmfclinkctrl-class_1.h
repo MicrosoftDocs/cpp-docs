@@ -1,1 +1,1 @@
-	CMFCLinkCtrl m_btnLink;
+CMFCLinkCtrl m_btnLink;

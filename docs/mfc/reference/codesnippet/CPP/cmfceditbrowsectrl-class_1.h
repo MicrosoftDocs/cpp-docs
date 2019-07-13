@@ -1,2 +1,2 @@
-	CMFCEditBrowseCtrl m_wndFolderEdit;
-	CMFCEditBrowseCtrl m_wndFileEdit;
+CMFCEditBrowseCtrl m_wndFolderEdit;
+CMFCEditBrowseCtrl m_wndFileEdit;

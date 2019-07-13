@@ -1,4 +1,4 @@
-   return TRUE;
+return TRUE;
 }
 
 int CUserApp::ExitInstance()
