@@ -407,9 +407,11 @@ This code can be compiled, but not linked, because the linker can't find the imp
 1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.lib** file. Enter this value to use a macro that works for both Debug and Release builds:
 
    **Visual Studio 2019:**
+
    `..\MathLibrary\$(IntDir)`
 
    **Visual Studio 2017 and earlier:**
+
    `..\..\MathLibrary\$(IntDir)`
  
    ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
@@ -429,9 +431,11 @@ Your client app can now compile and link successfully, but it still doesn't have
 1. In the property pane, select the edit control in the **Command Line** field, and then enter this command:
 
    **Visual Studio 2019:**
+
    `xcopy /y /d "..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
     **Visual Studio 2017 and earlier:**
+
    `xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
    ![Add the post-build command](media/mathclient-post-build-command-line.png "Add the post-build command")
