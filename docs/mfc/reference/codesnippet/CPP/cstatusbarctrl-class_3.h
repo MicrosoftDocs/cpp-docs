@@ -1,2 +1,2 @@
 public:
-	CStatusBarCtrl m_statusBar;
+CStatusBarCtrl m_statusBar;

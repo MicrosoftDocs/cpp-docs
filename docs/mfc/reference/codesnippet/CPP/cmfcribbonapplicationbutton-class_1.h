@@ -1,1 +1,1 @@
-	CMFCRibbonApplicationButton m_MainButton;
+CMFCRibbonApplicationButton m_MainButton;

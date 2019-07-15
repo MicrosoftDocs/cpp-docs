@@ -1,8 +1,8 @@
-      CReBarCtrl* pReBarCtrl = new CReBarCtrl();
-      CRect rect;
-      GetWindowRect(rect);
-      pReBarCtrl->Create(RBS_BANDBORDERS, rect, this, AFX_IDW_REBAR);
+CReBarCtrl *pReBarCtrl = new CReBarCtrl();
+CRect rect;
+GetWindowRect(rect);
+pReBarCtrl->Create(RBS_BANDBORDERS, rect, this, AFX_IDW_REBAR);
 
-      // Use ReBar Control.
+// Use ReBar Control.
 
-      delete pReBarCtrl;   
+delete pReBarCtrl;

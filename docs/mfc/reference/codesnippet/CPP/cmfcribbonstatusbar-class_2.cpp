@@ -1,2 +1,2 @@
-	m_wndStatusBar.AddSeparator();
-	m_wndStatusBar.SetInformation(NULL);
+m_wndStatusBar.AddSeparator();
+m_wndStatusBar.SetInformation(NULL);

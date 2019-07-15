@@ -1,1 +1,1 @@
-	CMFCOutlookBar			m_wndShortcutsBar;
+CMFCOutlookBar m_wndShortcutsBar;

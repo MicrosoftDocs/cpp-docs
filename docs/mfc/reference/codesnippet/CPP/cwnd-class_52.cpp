@@ -6,14 +6,14 @@ void CMdiView::OnEditCopy()
       AfxMessageBox(_T("Cannot open the Clipboard"));
       return;
    }
-   // Remove the current Clipboard contents  
-   if(!EmptyClipboard())
+   // Remove the current Clipboard contents
+   if (!EmptyClipboard())
    {
       AfxMessageBox(_T("Cannot empty the Clipboard"));
-      return;  
+      return;
    }
 
-   // Get the currently selected data, hData handle to 
+   // Get the currently selected data, hData handle to
    // global memory of data
    CString str;
    m_Edit.GetWindowText(str);
@@ -25,12 +25,12 @@ void CMdiView::OnEditCopy()
 
    // For the appropriate data formats...
    UINT uiFormat = (sizeof(TCHAR) == sizeof(WCHAR)) ? CF_UNICODETEXT : CF_TEXT;
-   if (::SetClipboardData(uiFormat, hData) == NULL)  
+   if (::SetClipboardData(uiFormat, hData) == NULL)
    {
-      AfxMessageBox(_T("Unable to set Clipboard data"));    
+      AfxMessageBox(_T("Unable to set Clipboard data"));
       CloseClipboard();
-      return;  
-   }  
+      return;
+   }
 
    CloseClipboard();
 }

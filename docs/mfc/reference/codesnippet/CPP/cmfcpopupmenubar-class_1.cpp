@@ -1,2 +1,2 @@
-	// CMFCPopupMenu* pMenuPopup
-	CMFCPopupMenuBar* pMenuBar = pMenuPopup->GetMenuBar();
+// CMFCPopupMenu* pMenuPopup
+CMFCPopupMenuBar *pMenuBar = pMenuPopup->GetMenuBar();

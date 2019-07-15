@@ -1,13 +1,13 @@
-void CMyAxCtrl::Serialize(CArchive& ar)
+void CMyAxCtrl::Serialize(CArchive &ar)
 {
    SerializeVersion(ar, MAKELONG(_wVerMinor, _wVerMajor));
    SerializeExtent(ar);
    SerializeStockProps(ar);
 
    if (ar.IsStoring())
-   {	// storing code
+   { // storing code
    }
    else
-   {	// loading code
+   { // loading code
    }
 }

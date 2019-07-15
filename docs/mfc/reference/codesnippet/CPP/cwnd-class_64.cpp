@@ -1,7 +1,7 @@
 // The following code shows how to subclass the edit control and list box
 // controls inside a combo box. It uses WM_CTLCOLOR for subclassing.
 // CSuperComboBox represents the combo box
-HBRUSH CSuperComboBox::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
+HBRUSH CSuperComboBox::OnCtlColor(CDC *pDC, CWnd *pWnd, UINT nCtlColor)
 {
    if (nCtlColor == CTLCOLOR_EDIT)
    {
