@@ -1,7 +1,7 @@
 // An example of implementing the GetPageSelections() for CShapePage.
 // CShapePage is a CMyPropertyPage-derived class, which in turn is a 
 // CPropertyPage-derived class.
-void CShapePage::GetPageSelections(CString &str)
+void CShapePage::GetPageSelections(CString& str)
 {
    CString shapename;
    switch (m_Selection)

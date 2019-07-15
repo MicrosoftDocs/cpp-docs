@@ -1,1 +1,2 @@
-   EVENT_CUSTOM_ID("ClickIn", eventidClickIn, FireClickIn, VTS_XPOS_PIXELS VTS_YPOS_PIXELS)
+EVENT_CUSTOM_ID("ClickIn", eventidClickIn, FireClickIn, VTS_XPOS_PIXELS VTS_YPOS_PIXELS)
+EVENT_CUSTOM_ID("ClickIn", eventidClickIn, FireClickIn, VTS_XPOS_PIXELS VTS_YPOS_PIXELS)

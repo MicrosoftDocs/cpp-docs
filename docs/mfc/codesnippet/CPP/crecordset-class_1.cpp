@@ -1,12 +1,12 @@
-   // Construct a snapshot object
-   CCustomer rsCustSet(NULL);
+// Construct a snapshot object
+CCustomer rsCustSet(NULL);
 
-   if(!rsCustSet.Open())
-      return;
+if (!rsCustSet.Open())
+return;
 
-   // Use the snapshot ...
+// Use the snapshot ...
 
-   // Close the snapshot
-   rsCustSet.Close();
+// Close the snapshot
+rsCustSet.Close();
 
-   // Destructor is called when the function exits
+// Destructor is called when the function exits

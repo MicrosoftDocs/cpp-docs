@@ -6,12 +6,12 @@ void LengthyFunction()
    // perhaps you display a dialog box before displaying a
    // wait cursor
 
-   CWaitCursor wait;   // display wait cursor
+   CWaitCursor wait; // display wait cursor
 
    // do some lengthy processing
    Sleep(1000);
 
-}  // destructor automatically removes the wait cursor
+} // destructor automatically removes the wait cursor
 
 // This example shows using a CWaitCursor object inside a block
 // so the wait cursor is displayed only while the program is
@@ -20,12 +20,12 @@ void ConditionalFunction()
 {
    if (SomeCondition)
    {
-      CWaitCursor wait;   // display wait cursor in this block only
+      CWaitCursor wait; // display wait cursor in this block only
 
       // do some lengthy processing
       Sleep(1000);
 
-   }  // at this point, the destructor removes the wait cursor
+   } // at this point, the destructor removes the wait cursor
    else
    {
       // no wait cursor--only quick processing

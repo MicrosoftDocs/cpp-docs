@@ -44,7 +44,6 @@ The following table explains the effects of `Rollback` on transactions.
 ## See also
 
 [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
-[Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
 [CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>
 [CRecordset Class](../../mfc/reference/crecordset-class.md)

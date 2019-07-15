@@ -1,2 +1,2 @@
-         [id(2), helpstring("property CircleOffset")] SHORT CircleOffset;
-         [id(3), helpstring("property MyProperty")] SHORT MyProperty;
+[id(2), helpstring("property CircleOffset")] SHORT CircleOffset;
+[id(3), helpstring("property MyProperty")] SHORT MyProperty;

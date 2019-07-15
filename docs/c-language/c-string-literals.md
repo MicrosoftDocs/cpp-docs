@@ -20,7 +20,7 @@ A "string literal" is a sequence of characters from the source character set enc
 &nbsp;&nbsp;&nbsp;&nbsp;*s-char-sequence* *s-char*
 
 *s-char*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;any member of the source character set except the double quotation mark ("), backslash (\\), or newline character
 
 &nbsp;&nbsp;&nbsp;&nbsp;*escape-sequence*
 

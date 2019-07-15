@@ -1,1 +1,1 @@
-   GetParentFrame()->RecalcLayout();
+GetParentFrame()->RecalcLayout();

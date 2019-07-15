@@ -1,4 +1,4 @@
-void CMyView::OnPrint(CDC *pDC, CPrintInfo *pInfo)
+void CMyView::OnPrint(CDC* pDC, CPrintInfo* pInfo)
 {
    UNREFERENCED_PARAMETER(pInfo);
 

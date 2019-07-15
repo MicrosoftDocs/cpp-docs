@@ -3,7 +3,7 @@ void CMyAxCtrl::OnFontChanged()
    // Always set it to the container's font
    if (m_MyEdit.m_hWnd != NULL)
    {
-      IFontDisp* pFontDisp = NULL;
+      IFontDisp *pFontDisp = NULL;
       IFont *pFont = NULL;
       HRESULT hr;
 
@@ -11,7 +11,7 @@ void CMyAxCtrl::OnFontChanged()
       pFontDisp = AmbientFont();
       if (pFontDisp)
       {
-         hr = pFontDisp->QueryInterface(IID_IFont, (LPVOID *) &pFont);
+         hr = pFontDisp->QueryInterface(IID_IFont, (LPVOID *)&pFont);
          if (FAILED(hr))
          {
             pFontDisp->Release();
@@ -32,6 +32,6 @@ void CMyAxCtrl::OnFontChanged()
    // Invalidate the control
    m_MyEdit.Invalidate();
    m_MyEdit.UpdateWindow();
-   
+
    COleControl::OnFontChanged();
 }

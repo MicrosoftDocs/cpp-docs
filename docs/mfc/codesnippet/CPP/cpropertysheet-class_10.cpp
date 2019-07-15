@@ -1,7 +1,7 @@
 // Simulate the selection of OK and Cancel buttons when Alt+K and
 // Alt+C are pressed.  CMyPropertySheet is a CPropertySheet-derived 
 // class.
-BOOL CMyPropertySheet::PreTranslateMessage(MSG* pMsg) 
+BOOL CMyPropertySheet::PreTranslateMessage(MSG* pMsg)
 {
    if (pMsg->message >= WM_KEYFIRST && pMsg->message <= WM_KEYLAST)
    {
@@ -9,7 +9,7 @@ BOOL CMyPropertySheet::PreTranslateMessage(MSG* pMsg)
       if (altkey)
       {
          BOOL handled = TRUE;
-         switch(toupper((int)pMsg->wParam))
+         switch (toupper((int)pMsg->wParam))
          {
          case 'C':                     // for Alt+C - Cancel button
             PressButton(PSBTN_CANCEL);   // or EndDialog(IDCANCEL);

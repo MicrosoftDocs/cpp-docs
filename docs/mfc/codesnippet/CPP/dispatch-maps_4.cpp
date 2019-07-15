@@ -1,1 +1,1 @@
-   DISP_PROPERTY_PARAM(CMFCActiveXControlCtrl, "Array", GetArray, SetArray, VT_I2, VTS_I2 VTS_I2 )
+DISP_PROPERTY_PARAM(CMFCActiveXControlCtrl, "Array", GetArray, SetArray, VT_I2, VTS_I2 VTS_I2)

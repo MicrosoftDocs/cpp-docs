@@ -1,7 +1,7 @@
 void CMyAxSerCtrl::DoPropExchange(CPropExchange* pPX)
 {
-	ExchangeVersion(pPX, MAKELONG(_wVerMinor, _wVerMajor));
-	COleControl::DoPropExchange(pPX);
+   ExchangeVersion(pPX, MAKELONG(_wVerMinor, _wVerMajor));
+   COleControl::DoPropExchange(pPX);
 
    PX_Long(pPX, _T("ReleaseDate"), m_ReleaseDate);
    if (pPX->GetVersion() >= MAKELONG(0, 2))

@@ -5,7 +5,7 @@ BOOL CMainFrame::CanExit()
    {
       // No outstanding object counts - go ahead and exit
       return TRUE;
-   } 
+   }
    else
    {
       // There are outstanding OLE object counts...

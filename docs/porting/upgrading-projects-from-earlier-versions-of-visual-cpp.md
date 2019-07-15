@@ -34,7 +34,7 @@ For information about how to update the targeted Windows versions, see [Modifyin
 [Floating-point migration issues](floating-point-migration-issues.md)<br/>
 [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)<br/>
 [Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)<br/>
-[Build System Changes](build-system-changes.md)<br/>
+[Build System Changes](build-system-changes.md)
 
 ## See also
 

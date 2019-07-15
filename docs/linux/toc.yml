@@ -2,14 +2,16 @@
   href: index.md
 - name: Download, install, and set up the Linux Development workload
   href: download-install-and-setup-the-linux-development-workload.md
-- name: Configure a Linux project
-  href: configure-a-linux-project.md
-- name: Configure a Linux CMake project
-  href: cmake-linux-project.md
-- name: Create a new Linux project
-  href: create-a-new-linux-project.md
 - name: Connect to your remote Linux computer
   href: connect-to-your-remote-linux-computer.md
+- name: Create a new Linux project
+  href: create-a-new-linux-project.md
+- name: Configure a Linux project
+  href: configure-a-linux-project.md
+- name: Create and configure a Linux CMake project
+  href: cmake-linux-project.md
+- name: Configure Linux projects to use Address Sanitizer
+  href: linux-asan-configuration.md
 - name: Deploy, run, and debug your Linux project
   href: deploy-run-and-debug-your-linux-project.md
 - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"

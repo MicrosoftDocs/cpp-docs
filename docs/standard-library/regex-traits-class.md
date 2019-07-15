@@ -219,7 +219,6 @@ static size_type length(const char_type *str);
 ### Parameters
 
 *str*<br/>
-
 The null-terminated sequence.
 
 ### Remarks

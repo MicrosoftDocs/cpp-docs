@@ -1,3 +1,3 @@
-            CArchive ar(&theFile, CArchive::load);
-            WORD wEmployeeID;
-            ar >> wEmployeeID;
+CArchive ar(&theFile, CArchive::load);
+WORD wEmployeeID;
+ar >> wEmployeeID;

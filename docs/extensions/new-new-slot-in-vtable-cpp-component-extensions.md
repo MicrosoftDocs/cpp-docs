@@ -99,5 +99,4 @@ E::f() called
 ## See also
 
 [Component Extensions for .NET and UWP](component-extensions-for-runtime-platforms.md)<br/>
-
 [Override Specifiers](override-specifiers-cpp-component-extensions.md)

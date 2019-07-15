@@ -5,7 +5,7 @@ CDaoRecordset* CMyDaoDatabaseDoc::GetRecordset()
    {
       pSet->Open();
    }
-   catch(CDaoException* pe)
+   catch (CDaoException* pe)
    {
       AfxMessageBox(pe->m_pErrorInfo->m_strDescription, MB_ICONEXCLAMATION);
       // Delete the incomplete recordset object

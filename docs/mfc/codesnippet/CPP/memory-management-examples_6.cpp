@@ -1,5 +1,5 @@
       {
-         CMyClass myClass;     // Automatic constructor call here
+      CMyClass myClass;     // Automatic constructor call here
 
-         myClass.SomeMemberFunction();     // Use the object
+      myClass.SomeMemberFunction();     // Use the object
       }

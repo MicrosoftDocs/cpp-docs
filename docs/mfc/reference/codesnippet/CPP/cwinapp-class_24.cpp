@@ -9,4 +9,4 @@ BOOL CMyApp::OnDDECommand(LPTSTR lpszCommand)
 
    // Return FALSE for any DDE commands you do not handle.
    return FALSE;
- }
+}

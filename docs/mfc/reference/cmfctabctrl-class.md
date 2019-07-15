@@ -1034,5 +1034,4 @@ This method affects only a tab control that displays flat tabs. The scroll bar i
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [Classes](../../mfc/reference/mfc-classes.md)<br/>
 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)

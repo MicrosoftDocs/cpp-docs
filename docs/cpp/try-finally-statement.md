@@ -18,7 +18,7 @@ The following syntax describes the **try-finally** statement:
 > **\_\_finally**<br/>
 > {<br/>
 > &nbsp;&nbsp;&nbsp;&nbsp;// termination code<br/>
-> }<br/>
+> }
 
 ## Grammar
 

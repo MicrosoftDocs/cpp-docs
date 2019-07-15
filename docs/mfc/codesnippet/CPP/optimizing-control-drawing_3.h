@@ -1,3 +1,3 @@
-   CPen m_pen;
-   CBrush m_brush;
+CPen m_pen;
+CBrush m_brush;
 };

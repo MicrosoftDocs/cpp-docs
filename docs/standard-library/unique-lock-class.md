@@ -59,7 +59,7 @@ Internally, a `unique_lock` stores a pointer to an associated `mutex` object and
 
 ## Inheritance Hierarchy
 
-*unique_lock*<br/>
+*unique_lock*
 
 ## Requirements
 

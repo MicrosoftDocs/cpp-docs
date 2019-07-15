@@ -1,6 +1,6 @@
 ---
 title: "friend (C++)"
-ms.date: "11/19/2018"
+ms.date: "07/15/2019"
 f1_keywords: ["friend_cpp"]
 helpviewer_keywords: ["member access, from friend functions", "friend classes [C++]", "friend keyword [C++]"]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
@@ -214,7 +214,7 @@ int main() {
 
 Friendship is not mutual unless explicitly specified as such. In the above example, member functions of `YourClass` cannot access the private members of `YourOtherClass`.
 
-A managed type cannot have any friend functions, friend classes, or friend interfaces.
+A managed type (in C++/CLI) cannot have any friend functions, friend classes, or friend interfaces.
 
 Friendship is not inherited, meaning that classes derived from `YourOtherClass` cannot access `YourClass`'s private members. Friendship is not transitive, so classes that are friends of `YourOtherClass` cannot access `YourClass`'s private members.
 
@@ -225,9 +225,7 @@ Implications of friend relationship
 
 ## Inline friend definitions
 
-Friend functions can be defined inside class declarations. These functions are inline functions, and like member inline functions they behave as though they were defined immediately after all class members have been seen but before the class scope is closed (the end of the class declaration).
-
-Friend functions defined inside class declarations are not considered in the scope of the enclosing class; they are in file scope.
+Friend functions can be defined (given a function body) inside class declarations. These functions are inline functions, and like member inline functions they behave as though they were defined immediately after all class members have been seen but before the class scope is closed (the end of the class declaration). Friend functions that are defined inside class declarations are in the scope of the enclosing class.
 
 ## See also
 

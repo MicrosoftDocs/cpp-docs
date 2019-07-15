@@ -14,7 +14,7 @@ void CMyDocument::Serialize(CArchive& ar)
       // TODO: add loading code here
    }
 
-   ar.MapObject(this);  
+   ar.MapObject(this);
 
    //serialize the subitems in the document;
    //they will be able to serialize their m_pDoc

@@ -7,7 +7,7 @@ void CMyAxOptCtrl::OnDraw(CDC* pdc, const CRect& rcBounds, const CRect& /*rcInva
    CPen* pPenSave = pdc->SelectObject(&m_pen);
    CBrush* pBrushSave = pdc->SelectObject(&m_brush);
    pdc->Rectangle(rcBounds);
-   if (! IsOptimizedDraw())
+   if (!IsOptimizedDraw())
    {
       pdc->SelectObject(pPenSave);
       pdc->SelectObject(pBrushSave);

@@ -151,7 +151,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 ::: moniker range=">= vs-2019"
 <sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.<br/>
 ::: moniker-end
-<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.<br/>
+<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
 

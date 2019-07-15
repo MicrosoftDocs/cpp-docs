@@ -40,11 +40,11 @@ void CDCView::DrawPath(CDC* pDC)
    }
    catch (CException* pe)
    {
-      delete [] lpPoints;
+      delete[] lpPoints;
       lpPoints = NULL;
-      delete [] lpTypes;
+      delete[] lpTypes;
       lpTypes = NULL;
-      pe->Delete();	
+      pe->Delete();
    }
    if (lpPoints == NULL || lpTypes == NULL)
       return;
@@ -62,8 +62,8 @@ void CDCView::DrawPath(CDC* pDC)
       pDC->PolyDraw(lpPoints, lpTypes, nNumPts);
 
    // Release the memory we used
-   delete [] lpPoints;
-   delete [] lpTypes;
+   delete[] lpPoints;
+   delete[] lpTypes;
 
    // Put back the old font
    pDC->SelectObject(pOldFont);

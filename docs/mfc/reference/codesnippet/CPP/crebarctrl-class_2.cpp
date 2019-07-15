@@ -1,4 +1,4 @@
-      UINT nCount = m_wndReBar.GetReBarCtrl().GetBandCount();
+UINT nCount = m_wndReBar.GetReBarCtrl().GetBandCount();
 
-      if (nCount > 0)
-         m_wndReBar.GetReBarCtrl().DeleteBand(nCount - 1);   
+if (nCount > 0)
+   m_wndReBar.GetReBarCtrl().DeleteBand(nCount - 1);

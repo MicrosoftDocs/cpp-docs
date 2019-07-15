@@ -1,1 +1,1 @@
-         CMyClass myClass("Joe Smith");
+CMyClass myClass("Joe Smith");
