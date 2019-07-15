@@ -21,12 +21,7 @@ catch (bad_cast)
 The interface for **bad_cast** is:
 
 ```cpp
-class bad_cast : public exception {
-public:
-   bad_cast(const char * _Message = "bad cast");
-   bad_cast(const bad_cast &);
-   virtual ~bad_cast();
-};
+class bad_cast : public exception
 ```
 
 The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.
@@ -71,6 +66,49 @@ Then reverse the sense of the cast in the **try** block as follows:
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
+```
+
+## Members
+
+### Constructors
+
+|Constructor|Description|
+|-|-|
+|[bad_cast](#bad_cast)|The constructor for objects of type `bad_cast`.|
+
+### Functions
+
+|Function|Description|
+|-|-|
+|[what](#what)|TBD|
+
+### Operators
+
+|Operator|Description|
+|-|-|
+|[operator=](#op_eq)|An assignment operator that assigns one `bad_cast` object to another.|
+
+## <a name="bad_cast"></a> bad_cast
+
+The constructor for objects of type `bad_cast`.
+
+```cpp
+bad_cast(const char * _Message = "bad cast");
+bad_cast(const bad_cast &);
+```
+
+## <a name="op_eq"></a> operator=
+
+An assignment operator that assigns one `bad_cast` object to another.
+
+```cpp
+bad_cast& operator=(const bad_cast&) noexcept;
+```
+
+## <a name="what"></a> what
+
+```cpp
+const char* what() const noexcept override;
 ```
 
 ## See also

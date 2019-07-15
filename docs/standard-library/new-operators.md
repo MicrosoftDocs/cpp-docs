@@ -1,33 +1,30 @@
 ---
-title: "&lt;new&gt; operators"
+title: "&lt;new&gt; operators and enums"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 ---
-# &lt;new&gt; operators
+# &lt;new&gt; operators and enums
 
-||||
-|-|-|-|
-|[operator delete](#op_delete)|[operator delete[]](#op_delete_arr)|[operator new](#op_new)|
-|[operator new[]](#op_new_arr)|
+## <a name="op_align_val_t"></a> enum align_val_t
 
-## <a name="op_delete"></a>  operator delete
+```cpp
+enum class align_val_t : size_t {};
+```
 
-The function called by a delete expression to deallocate storage for individual of objects.
+## <a name="op_delete"></a> operator delete
+
+The function called by a delete expression to de-allocate storage for individual of objects.
 
 ```cpp
 void operator delete(void* ptr) throw();
-
-void operator delete(void *,
-    void*) throw();
-
-void operator delete(void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete(void *, void*) throw();
+void operator delete(void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
@@ -44,23 +41,19 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new](../standard-library/new-operators.md#op_new) for an example that use **operator delete**.
 
-## <a name="op_delete_arr"></a>  operator delete[]
+## <a name="op_delete_arr"></a> operator delete[]
 
 The function called by a delete expression to deallocate storage for an array of objects.
 
 ```cpp
 void operator delete[](void* ptr) throw();
-
-void operator delete[](void *,
-    void*) throw();
-
-void operator delete[](void* ptr,
-    const std::nothrow_t&) throw();
+void operator delete[](void *, void*) throw();
+void operator delete[](void* ptr, const std::nothrow_t&) throw();
 ```
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
@@ -75,26 +68,22 @@ The third function is called by a placement delete expression corresponding to a
 
 See [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) for examples of the use of `operator delete[]`.
 
-## <a name="op_new"></a>  operator new
+## <a name="op_new"></a> operator new
 
 The function called by a new-expression to allocate storage for individual objects.
 
 ```cpp
 void* operator new(std::size_t count) throw(bad_alloc);
-
-void* operator new(std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new(std::size_t count,
-    void* ptr) throw();
+void* operator new(std::size_t count, const std::nothrow_t&) throw();
+void* operator new(std::size_t count, void* ptr) throw();
 ```
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of bytes of storage to be allocated.
 
-*ptr*<br/>
+*ptr*\
 The pointer to be returned.
 
 ### Return Value
@@ -129,7 +118,7 @@ The third function is called by a placement **new** expression, of the form **ne
 
 To free storage allocated by **operator new**, call [operator delete](../standard-library/new-operators.md#op_delete).
 
-For information on throwing or nonthrowing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
+For information on throwing or non-throwing behavior of new, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
 ### Example
 
@@ -174,26 +163,22 @@ int main( )
 }
 ```
 
-## <a name="op_new_arr"></a>  operator new[]
+## <a name="op_new_arr"></a> operator new[]
 
 The allocation function called by a new expression to allocate storage for an array of objects.
 
 ```cpp
 void* operator new[](std::size_t count) throw(std::bad_alloc);
-
-void* operator new[](std::size_t count,
-    const std::nothrow_t&) throw();
-
-void* operator new[](std::size_t count,
-    void* ptr) throw();
+void* operator new[](std::size_t count, const std::nothrow_t&) throw();
+void* operator new[](std::size_t count, void* ptr) throw();
 ```
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of bytes of storage to be allocated for the array object.
 
-*ptr*<br/>
+*ptr*\
 The pointer to be returned.
 
 ### Return Value
@@ -252,7 +237,3 @@ int main() {
    delete[ ] fPtr3;
 }
 ```
-
-## See also
-
-[\<new>](../standard-library/new.md)<br/>
