@@ -4354,6 +4354,13 @@
                   href: cpp/assertion-and-user-supplied-messages-cpp.md
                 - name: static_assert
                   href: cpp/static-assert.md
+            - name: Modules
+              expanded: false
+              items:
+                - name: Overview of modules in C++
+                  href: cpp/modules-cpp.md
+                - name: module, import, export
+                  href: cpp/import-export-module.cpp
             - name: Templates
               expanded: false
               items: 

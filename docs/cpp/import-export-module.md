@@ -6,16 +6,18 @@ helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], 
 ms.description: Use the import statement to access types and functions defined in the specified module.
 ---
 
-## import, export, module
+# import, export, module
 
-### module
+The **import**, **export** and **module** keywords are available in C++20 and require the `/experimental:modules` compiler switch along with `/std:c++latest`. For more information, see [Overview of modules in C++](modules-cpp.md).
+
+ ## module
 Use the **module** statement at the beginning of a module implemetation file to specify that the file contents belong to the named module. 
 
 ```cpp
 module ModuleA;
 ```
 
-### export
+ ## export
 Use the **export module** statement for the module's primary interface file, which must have extension **.ixx**:
 
 ```cpp
@@ -36,7 +38,7 @@ namespace Bar
 
 When the **export** modifier is applied to a namespace name, all names in the namespace are exported. The **export** keyword may not appear in a module implementation file.
 
-### import
+ ## import
 
 Use the **import** statement to make a module's names visible in your program. The import statement must appear after the module statement and after any #include directives, but before any declarations in the file.
 
