@@ -96,9 +96,3 @@ is>> str;
 pval = str;
 return (is);
 ```
-
-## See also
-
-[path Class (C++ Standard Library)](../standard-library/path-class.md)<br/>
-[File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
