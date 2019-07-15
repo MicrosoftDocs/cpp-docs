@@ -7,31 +7,21 @@ helpviewer_keywords: ["std::advance [C++]", "std::back_inserter [C++]", "std::be
 ---
 # &lt;iterator&gt; functions
 
-||||
-|-|-|-|
-|[advance](#advance)|[back_inserter](#back_inserter)|[begin](#begin)|
-|[cbegin](#cbegin)|[cend](#cend)|[distance](#distance)|
-|[end](#end)|[front_inserter](#front_inserter)|[inserter](#inserter)|
-|[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|
-|[next](#next)|[prev](#prev)|
-
-## <a name="advance"></a>  advance
+## <a name="advance"></a> advance
 
 Increments an iterator by a specified number of positions.
 
 ```cpp
 template <class InputIterator, class Distance>
-void advance(
-    InputIterator& InIt,
-    Distance Off);
+    void advance(InputIterator& InIt, Distance Off);
 ```
 
 ### Parameters
 
-*InIt*<br/>
+*InIt*\
 The iterator that is to be incremented and that must satisfy the requirements for an input iterator.
 
-*Off*<br/>
+*Off*\
 An integral type that is convertible to the iterator's difference type and that specifies the number of increments the position of the iterator is to be advanced.
 
 ### Remarks
@@ -89,7 +79,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a>  back_inserter
+## <a name="back_inserter"></a> back_inserter
 
 Creates an iterator that can insert elements at the back of a specified container.
 
@@ -100,7 +90,7 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### Parameters
 
-*_Cont*<br/>
+*_Cont*\
 The container into which the back insertion is to be executed.
 
 ### Return Value
@@ -160,7 +150,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a>  begin
+## <a name="begin"></a> begin
 
 Retrieves an iterator to the first element in a specified container.
 
@@ -179,10 +169,10 @@ Ty *begin(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*<br/>
+*cont*\
 A container.
 
-*array*<br/>
+*array*\
 An array of objects of type `Ty`.
 
 ### Return Value
@@ -262,7 +252,7 @@ Then sending an array to it would cause this compiler error:
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a>  cbegin
+## <a name="cbegin"></a> cbegin
 
 Retrieves a const iterator to the first element in a specified container.
 
@@ -274,7 +264,7 @@ auto cbegin(const Container& cont)
 
 ### Parameters
 
-*cont*<br/>
+*cont*\
 A container or initializer_list.
 
 ### Return Value
@@ -295,7 +285,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  cend
+## <a name="cend"></a> cend
 
 Retrieves a const iterator to the element that follows the last element in the specified container.
 
@@ -307,7 +297,7 @@ auto cend(const Container& cont)
 
 ### Parameters
 
-*cont*<br/>
+*cont*\
 A container or initializer_list.
 
 ### Return Value
@@ -328,7 +318,28 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="distance"></a>  distance
+## <a name="crbegin"></a> crbegin
+
+```cpp
+template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
+```
+
+## <a name="crend"></a> crend
+
+```cpp
+template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
+```
+
+## <a name="data"></a> data
+
+```cpp
+template <class C> constexpr auto data(C& c) -> decltype(c.data());
+template <class C> constexpr auto data(const C& c) -> decltype(c.data());
+template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
+template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
+```
+
+## <a name="distance"></a> distance
 
 Determines the number of increments between the positions addressed by two iterators.
 
@@ -339,10 +350,10 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### Parameters
 
-*first*<br/>
+*first*\
 The first iterator whose distance from the second is to be determined.
 
-*last*<br/>
+*last*\
 The second iterator whose distance from the first is to be determined.
 
 ### Return Value
@@ -401,7 +412,15 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="end"></a>  end
+## <a name="empty"></a> empty
+
+```cpp
+template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
+template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
+template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
+```
+
+## <a name="end"></a> end
 
 Retrieves an iterator to the element that follows the last element in the specified container.
 
@@ -420,10 +439,10 @@ Ty *end(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*<br/>
+*cont*\
 A container.
 
-*array*<br/>
+*array*\
 An array of objects of type `Ty`.
 
 ### Return Value
@@ -436,7 +455,7 @@ The third template function returns `array + Size`.
 
 For a code example, see [begin](../standard-library/iterator-functions.md#begin).
 
-## <a name="front_inserter"></a>  front_inserter
+## <a name="front_inserter"></a> front_inserter
 
 Creates an iterator that can insert elements at the front of a specified container.
 
@@ -447,7 +466,7 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### Parameters
 
-*_Cont*<br/>
+*_Cont*\
 The container object whose front is having an element inserted.
 
 ### Return Value
@@ -507,7 +526,7 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a>  inserter
+## <a name="inserter"></a> inserter
 
 A helper template function that lets you use `inserter(_Cont, _Where)` instead of `insert_iterator<Container>(_Cont, _Where)`.
 
@@ -521,10 +540,10 @@ inserter(
 
 ### Parameters
 
-*_Cont*<br/>
+*_Cont*\
 The container to which new elements are to be added.
 
-*_Where*<br/>
+*_Where*\
 An iterator locating the point of insertion.
 
 ### Remarks
@@ -578,7 +597,7 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a> make_checked_array_iterator
 
 Creates a [checked_array_iterator](../standard-library/checked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -596,13 +615,13 @@ Iter Ptr,
 
 ### Parameters
 
-*Ptr*<br/>
+*Ptr*\
 A pointer to the destination array.
 
-*Size*<br/>
+*Size*\
 The size of the destination array.
 
-*Index*<br/>
+*Index*\
 Optional index into the array.
 
 ### Return Value
@@ -672,7 +691,7 @@ int main()
 }
 ```
 
-## <a name="make_move_iterator"></a>  make_move_iterator
+## <a name="make_move_iterator"></a> make_move_iterator
 
 Creates a `move iterator` that contains the provided iterator as the `stored` iterator.
 
@@ -684,14 +703,14 @@ make_move_iterator(const Iterator& _It);
 
 ### Parameters
 
-*_It*<br/>
+*_It*\
 The iterator stored in the new move iterator.
 
 ### Remarks
 
 The template function returns `move_iterator` `<Iterator>(_It)`.
 
-## <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a> make_unchecked_array_iterator
 
 Creates an [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) that can be used by other algorithms.
 
@@ -706,7 +725,7 @@ unchecked_array_iterator<Iter>
 
 ### Parameters
 
-*Ptr*<br/>
+*Ptr*\
 A pointer to the destination array.
 
 ### Return Value
@@ -770,7 +789,7 @@ int main()
 }
 ```
 
-## <a name="next"></a>  next
+## <a name="next"></a> next
 
 Iterates a specified number of times and returns the new iterator position.
 
@@ -783,10 +802,10 @@ InputIterator next(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 The current position.
 
-*_Off*<br/>
+*_Off*\
 The number of times to iterate.
 
 ### Return Value
@@ -797,7 +816,7 @@ Returns the new iterator position after iterating *_Off* times.
 
 The template function returns `next` incremented *_Off* times
 
-## <a name="prev"></a>  prev
+## <a name="prev"></a> prev
 
 Iterates in reverse a specified number of times and returns the new iterator position.
 
@@ -810,16 +829,33 @@ BidirectionalIterator prev(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 The current position.
 
-*_Off*<br/>
+*_Off*\
 The number of times to iterate.
 
 ### Remarks
 
 The template function returns `next` decremented `off` times.
 
-## See also
+## <a name="rbegin"></a> rbegin
 
-[\<iterator>](../standard-library/iterator.md)<br/>
+```cpp
+template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
+template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
+```
+
+## <a name="rend"></a> rend
+
+```cpp
+template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
+template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
+```
+
+## <a name="size"></a> size
+
+```cpp
+template <class C> constexpr auto size(const C& c) -> decltype(c.size());
+template <class T, size_t N> constexpr size_t size(const T (&array)[N]) noexcept;
+```

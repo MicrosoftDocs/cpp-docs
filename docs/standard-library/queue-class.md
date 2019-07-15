@@ -18,10 +18,10 @@ class queue
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the queue
 
-*Container*<br/>
+*Container*\
 The type of the underlying container used to implement the queue.
 
 ## Remarks
@@ -40,23 +40,25 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 - The [priority_queue class](../standard-library/priority-queue-class.md) orders its elements so that the largest element is always at the top position. It supports insertion of an element and the inspection and removal of the top element. A good analogue to keep in mind would be people lining up where they are arranged by age, height, or some other criterion.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[queue](#queue)|Constructs a `queue` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by the `queue`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `queue`.|
 |[value_type](#value_type)|A type that represents the type of object stored as an element in a `queue`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[back](#back)|Returns a reference to the last and most recently added element at the back of the `queue`.|
 |[empty](#empty)|Tests if the `queue` is empty.|
@@ -65,13 +67,7 @@ There are three types of container adaptors defined by the C++ Standard Library:
 |[push](#push)|Adds an element to the back of the `queue`.|
 |[size](#size)|Returns the number of elements in the `queue`.|
 
-## Requirements
-
-**Header:** \<queue>
-
-**Namespace:** std
-
-## <a name="back"></a>  queue::back
+## <a name="back"></a> back
 
 Returns a reference to the last and most recently added element at the back of the queue.
 
@@ -117,7 +113,7 @@ int main( )
 }
 ```
 
-## <a name="container_type"></a>  queue::container_type
+## <a name="container_type"></a> container_type
 
 A type that provides the base container to be adapted.
 
@@ -135,7 +131,7 @@ For more information on `Container`, see the Remarks section of the [queue Class
 
 See the example for [queue](#queue) for an example of how to declare and use `container_type`.
 
-## <a name="empty"></a>  queue::empty
+## <a name="empty"></a> empty
 
 Tests if a queue is empty.
 
@@ -181,7 +177,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-## <a name="front"></a>  queue::front
+## <a name="front"></a> front
 
 Returns a reference to the first element at the front of the queue.
 
@@ -233,7 +229,7 @@ int main() {
 }
 ```
 
-## <a name="pop"></a>  queue::pop
+## <a name="pop"></a> pop
 
 Removes an element from the front of the queue.
 
@@ -289,7 +285,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-## <a name="push"></a>  queue::push
+## <a name="push"></a> push
 
 Adds an element to the back of the queue.
 
@@ -299,7 +295,7 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The element added to the back of the queue.
 
 ### Remarks
@@ -338,7 +334,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-## <a name="queue"></a>  queue::queue
+## <a name="queue"></a> queue
 
 Constructs a queue that is empty or that is a copy of a base container object.
 
@@ -350,7 +346,7 @@ explicit queue(const container_type& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The **const** container of which the constructed queue is to be a copy.
 
 ### Remarks
@@ -405,7 +401,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-## <a name="size"></a>  queue::size
+## <a name="size"></a> size
 
 Returns the number of elements in the queue.
 
@@ -446,7 +442,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-## <a name="size_type"></a>  queue::size_type
+## <a name="size_type"></a> size_type
 
 An unsigned integer type that can represent the number of elements in a queue.
 
@@ -462,7 +458,7 @@ The type is a synonym for the `size_type` of the base container adapted by the q
 
 See the example for [queue::front](#front) for an example of how to declare and use `size_type`.
 
-## <a name="value_type"></a>  queue::value_type
+## <a name="value_type"></a> value_type
 
 A type that represents the type of object stored as an element in a queue.
 

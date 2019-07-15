@@ -7,12 +7,7 @@ helpviewer_keywords: ["std::operator!= (vector)", "std::operator&gt; (vector)", 
 ---
 # &lt;vector&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
-
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
 
@@ -22,10 +17,10 @@ bool operator!=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -63,7 +58,7 @@ int main( )
 Vectors not equal.
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Tests if the object on the left side of the operator is less than the object on the right side.
 
@@ -73,10 +68,10 @@ bool operator<(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -114,7 +109,7 @@ int main( )
 Vector v1 is less than vector v2.
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> operator&lt;=
 
 Tests if the object on the left side of the operator is less than or equal to the object on the right side.
 
@@ -124,10 +119,10 @@ bool operator<=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -165,7 +160,7 @@ int main( )
 Vector v1 is less than or equal to vector v2.
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if the object on the left side of the operator is equal to the object on the right side.
 
@@ -175,10 +170,10 @@ bool operator==(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -216,7 +211,7 @@ int main( )
 Vectors equal.
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> operator&gt;
 
 Tests if the object on the left side of the operator is greater than the object on the right side.
 
@@ -226,10 +221,10 @@ bool operator>(const vector<Type, Allocator>& left, const vector<Type, Allocator
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -268,7 +263,7 @@ int main( )
 Vector v1 is greater than vector v2.
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Tests if the object on the left side of the operator is greater than or equal to the object on the right side.
 
@@ -278,10 +273,10 @@ bool operator>=(const vector<Type, Allocator>& left, const vector<Type, Allocato
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `vector`.
 
-*right*<br/>
+*right*\
 An object of type `vector`.
 
 ### Return Value
@@ -319,7 +314,3 @@ int main( )
 ```Output
 Vector v1 is greater than or equal to vector v2.
 ```
-
-## See also
-
-[\<vector>](../standard-library/vector.md)<br/>

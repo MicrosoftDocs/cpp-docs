@@ -9,15 +9,34 @@ ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
 
 Includes the Standard C library header \<ctype.h> and adds the associated names to the `std` namespace.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cctype>
-```
+**Header:** \<cctype>
+
+**Namespace:** std
 
 ## Remarks
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+
+## Functions
+
+```cpp
+int isalnum(int c);
+int isalpha(int c);
+int isblank(int c);
+int iscntrl(int c);
+int isdigit(int c);
+int isgraph(int c);
+int islower(int c);
+int isprint(int c);
+int ispunct(int c);
+int isspace(int c);
+int isupper(int c);
+int isxdigit(int c);
+int tolower(int c);
+int toupper(int c);
+```
 
 ## See also
 

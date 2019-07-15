@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::swap [vector]"]
 ---
 # &lt;vector&gt; functions
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two vectors.
 
@@ -18,10 +18,10 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The vector providing the elements to be swapped, or the vector whose elements are to be exchanged with those of the vector *left*.
 
-*left*<br/>
+*left*\
 The vector whose elements are to be exchanged with those of the vector *right*.
 
 ### Remarks
@@ -31,7 +31,3 @@ The template function is an algorithm specialized on the container class vector 
 ### Example
 
 See the code example for member function [vector::swap](../standard-library/vector-class.md) for an example that uses the template version of `swap`.
-
-## See also
-
-[\<vector>](../standard-library/vector.md)<br/>
