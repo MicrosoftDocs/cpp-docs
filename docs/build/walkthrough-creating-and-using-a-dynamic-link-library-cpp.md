@@ -2,7 +2,7 @@
 title: "Walkthrough: Create and use your own Dynamic Link Library (C++)"
 description: "Use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
 ms.custom: "conceptual"
-ms.date: "04/22/2019"
+ms.date: "07/14/2019"
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ---
@@ -26,7 +26,7 @@ Like a statically linked library, a DLL _exports_ variables, functions, and reso
 
 This walkthrough creates two Visual Studio solutions; one that builds the DLL, and one that builds the client app. The DLL uses the C calling convention so it can be called from apps built by using other languages, as long as the platform and calling and linking conventions match. The client app uses _implicit linking_, where Windows links the app to the DLL at load-time. This linking lets the app call the DLL-supplied functions just like the functions in a statically linked library.
 
-This walkthrough doesn't cover some common situations. It doesn't show the use of C++ DLLs by other programming languages. It doesn't show how to create a resource-only DLL. It also doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. Rest assured, you can use Visual C++ to do all these things. For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](calling-dll-functions-from-visual-basic-applications.md).
+This walkthrough doesn't cover some common situations. It doesn't show the use of C++ DLLs by other programming languages. It doesn't show how to create a resource-only DLL. It also doesn't show the use of explicit linking to load DLLs at run-time rather than at load-time. Rest assured, you can use Visual Studio to do all these things. For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studio](dlls-in-visual-cpp.md). For more information about implicit linking and explicit linking, see [Determining Which Linking Method to Use](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use). For information about creating C++ DLLs for use with programming languages that use C-language linkage conventions, see [Exporting C++ Functions for Use in C-Language Executables](exporting-cpp-functions-for-use-in-c-language-executables.md). For information about how to create DLLs for use with .NET languages, see [Calling DLL Functions from Visual Basic Applications](calling-dll-functions-from-visual-basic-applications.md).
 
 ## Prerequisites
 
@@ -272,7 +272,7 @@ To verify that everything works so far, compile the dynamic link library. To com
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Congratulations, you've created a DLL using Visual C++! Next, you'll create a client app that uses the functions exported by the DLL.
+Congratulations, you've created a DLL using Visual Studio! Next, you'll create a client app that uses the functions exported by the DLL.
 
 ## Create a client app that uses the DLL
 
@@ -346,15 +346,17 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. Double-click in the top pane of the **Additional Include Directories** dialog box to enable an edit control.
 
-1. In the edit control, specify the path to the location of the **MathLibrary.h** header file. In this case, you can use a relative path from the folder that contains your .cpp files in the client project to the folder that contains the .h file in the DLL project. If your client project is in a separate solution in the same folder as the DLL solution, the relative path should look like this:
+1. In the edit control, specify the path to the location of the **MathLibrary.h** header file. Click the down-arrow, then choose **\<Edit>**. You can click the folder icon, then the ellipsis (**...**) to browse to the correct folder.
+ 
+   You can also this case, you can type in a relative path from the folder that contains your .cpp files in the client project to the folder that contains the .h file in the DLL project. If your client project is in a separate solution in the same folder as the DLL solution, the relative path should look like this:
 
-   `..\..\MathLibrary\MathLibrary`
+   `..\MathLibrary\MathLibrary`
 
-   If your DLL and client projects are in the same solution, or the solutions are in different folders, then you must adjust the relative path accordingly.
+   If your DLL and client projects are in the same solution, or the solutions are in different folders, then you must adjust the relative path accordingly or else browse for the folder using the method described previously.
 
    ![Add the header location to the Additional Include Directories property](media/mathclient-additional-include-directories.png "Add the header location to the Additional Include Directories property")
 
-1. Once you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box, and then choose the **OK** button to save your changes.
+1. After you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box, and then choose the **OK** button to save your changes.
 
 You can now include the **MathLibrary.h** file and use the functions it declares in your client application. Replace the contents of **MathClient.cpp** by using this code:
 
@@ -404,8 +406,14 @@ This code can be compiled, but not linked, because the linker can't find the imp
 
 1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.lib** file. Enter this value to use a macro that works for both Debug and Release builds:
 
-   `..\..\MathLibrary\$(IntDir)`
+   **Visual Studio 2019:**
 
+   `..\MathLibrary\$(IntDir)`
+
+   **Visual Studio 2017 and earlier:**
+
+   `..\..\MathLibrary\$(IntDir)`
+ 
    ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
 
 1. Once you've entered the path to the library file in the **Additional Library Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box.
@@ -422,13 +430,19 @@ Your client app can now compile and link successfully, but it still doesn't have
 
 1. In the property pane, select the edit control in the **Command Line** field, and then enter this command:
 
+   **Visual Studio 2019:**
+
+   `xcopy /y /d "..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
+
+    **Visual Studio 2017 and earlier:**
+
    `xcopy /y /d "..\..\MathLibrary\$(IntDir)MathLibrary.dll" "$(OutDir)"`
 
    ![Add the post-build command](media/mathclient-post-build-command-line.png "Add the post-build command")
 
 1. Choose the **OK** button to save your changes to the project properties.
 
-Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like:
+Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like this depending on your version of Visual Studio:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------

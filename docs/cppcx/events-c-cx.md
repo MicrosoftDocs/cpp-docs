@@ -1,6 +1,6 @@
 ---
 title: "Events (C++/CX)"
-ms.date: "01/22/2017"
+ms.date: "07/15/2019"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
 ---
 # Events (C++/CX)
@@ -9,7 +9,7 @@ A Windows Runtime type can declare (that is, publish) events, and client code in
 
 ## Consuming events in Windows components
 
-Many components in the Windows Runtime expose events. For example, a LightSensor object fires a ReadingChanged event when the sensor reports a new luminescence value. When you use a LightSensor object in your program, you can define a method that will be called when the ReadingChanged event is fired. The method can do whatever you want it to do; the only requirement is that its signature must match the signature of the delegate that is  For more information about how to create an delegate event handler and subscribe to an event, see [Delegates](../cppcx/delegates-c-cx.md).
+Many components in the Windows Runtime expose events. For example, a LightSensor object fires a ReadingChanged event when the sensor reports a new luminescence value. When you use a LightSensor object in your program, you can define a method that will be called when the ReadingChanged event is fired. The method can do whatever you want it to do; the only requirement is that its signature must match the signature of the delegate that is invoked. For more information about how to create an delegate event handler and subscribe to an event, see [Delegates](../cppcx/delegates-c-cx.md).
 
 ## Creating custom events
 

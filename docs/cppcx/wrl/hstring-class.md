@@ -1,8 +1,8 @@
 ---
 title: "HString Class"
-ms.date: "09/24/2018"
+ms.date: "07/15/2019"
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::Attach", "corewrappers/Microsoft::WRL::Wrappers::HString::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HString::Detach", "corewrappers/Microsoft::WRL::Wrappers::HString::Get", "corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf", "corewrappers/Microsoft::WRL::Wrappers::HString::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::IsValid", "corewrappers/Microsoft::WRL::Wrappers::HString::MakeReference", "corewrappers/Microsoft::WRL::Wrappers::HString::operator=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator==", "corewrappers/Microsoft::WRL::Wrappers::HString::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator<", "corewrappers/Microsoft::WRL::Wrappers::HString::Release", "corewrappers/Microsoft::WRL::Wrappers::HString::Set", "corewrappers/Microsoft::WRL::Wrappers::HString::~HString"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::Attach", "corewrappers/Microsoft::WRL::Wrappers::HString::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HString::Detach", "corewrappers/Microsoft::WRL::Wrappers::HString::Get", "corewrappers/Microsoft::WRL::Wrappers::HString::GetRawBuffer","corewrappers/Microsoft::WRL::Wrappers::HString::GetAddressOf", "corewrappers/Microsoft::WRL::Wrappers::HString::HString", "corewrappers/Microsoft::WRL::Wrappers::HString::IsValid", "corewrappers/Microsoft::WRL::Wrappers::HString::MakeReference", "corewrappers/Microsoft::WRL::Wrappers::HString::operator=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator==", "corewrappers/Microsoft::WRL::Wrappers::HString::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HString::operator<", "corewrappers/Microsoft::WRL::Wrappers::HString::Release", "corewrappers/Microsoft::WRL::Wrappers::HString::Set", "corewrappers/Microsoft::WRL::Wrappers::HString::~HString"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HString class", "Microsoft::WRL::Wrappers::HString::Attach method", "Microsoft::WRL::Wrappers::HString::CopyTo method", "Microsoft::WRL::Wrappers::HString::Detach method", "Microsoft::WRL::Wrappers::HString::Get method", "Microsoft::WRL::Wrappers::HString::GetAddressOf method", "Microsoft::WRL::Wrappers::HString::HString, constructor", "Microsoft::WRL::Wrappers::HString::IsValid method", "Microsoft::WRL::Wrappers::HString::MakeReference method", "Microsoft::WRL::Wrappers::HString::operator= operator", "Microsoft::WRL::Wrappers::HString::operator== operator", "Microsoft::WRL::Wrappers::HString::operator!= operator", "Microsoft::WRL::Wrappers::HString::operator< operator", "Microsoft::WRL::Wrappers::HString::Release method", "Microsoft::WRL::Wrappers::HString::Set method", "Microsoft::WRL::Wrappers::HString::~HString, destructor"]
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
 ---
@@ -38,6 +38,7 @@ Name                                     | Description
 [HString::Detach](#detach)               | Disassociates the specified `HString` object from its underlying value.
 [HString::Get](#get)                     | Retrieves the value of the underlying HSTRING handle.
 [HString::GetAddressOf](#getaddressof)   | Retrieves a pointer to the underlying HSTRING handle.
+[HString::GetRawBuffer](#getrawbuffer)   | Retrieves a pointer to the underlying string data.
 [HString::IsValid](#isvalid)             | Indicates whether the current `HString` object is valid.
 [HString::MakeReference](#makereference) | Creates an `HStringReference` object from a specified string parameter.
 [HString::Release](#release)             | Deletes the underlying string value and intializes the current `HString` object to an empty value.
@@ -143,6 +144,23 @@ A pointer to the underlying HSTRING handle.
 ### Remarks
 
 After this operation, the string value of the underlying HSTRING handle is destroyed.
+
+## <a name="getrawbuffer"></a>HString::GetRawBuffer
+
+Retrieves a pointer to the underlying string data.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### Parameters
+
+*length*
+Pointer to an **int** variable that receives the length of the data.
+
+### Return Value
+
+A **const** pointer to the underlying string data.
+
 
 ## <a name="hstring"></a>HString::HString
 
