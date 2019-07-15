@@ -598,7 +598,7 @@ Specifies the zero-based index of the item in the list box.
 
 ### Return Value
 
-Value associated with the item, or LB_ERR if an error occurs.
+The value associated with the item, or LB_ERR if an error occurs.
 
 ### Remarks
 
