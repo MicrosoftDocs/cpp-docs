@@ -13,7 +13,7 @@ Modules can be used side by side with header files. A C++ source file can import
 
 ## Enable modules in the Microsoft C++ compiler
 
-As of Visual Studio 2019 version 16.2, modules are not fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for modules, compile with `/experimental:modules` and `std:c++latest`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
+As of Visual Studio 2019 version 16.2, modules are not fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for modules, compile with `/experimental:modules` and `/std:c++latest`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
 
 Modules must be compiled with the [/Ehsc](../build/reference/eh-exception-handling-model.md) and [/MD](../build/reference/md-mt-ld-use-run-time-library.md) options.
 
@@ -55,7 +55,7 @@ namespace Bar
 }
 ```
 
-The file **MyProgram.cpp** uses the **import** statement to access the name that is exported by `Foo`. Note that the name `Bar` is exported, but not all of its members.
+The file **MyProgram.cpp** uses the **import** statement to access the name that is exported by `Foo`. Note that the name `Bar` is visible here, but not all of its members. Also note that the macro `ANSWER` is not visible.
 
 ```cpp
 

@@ -32,7 +32,8 @@ export module ModuleA;
 namespace Bar
 {
    export int f();
-   export std::string s();
+   export double d();
+   double internal_f(); // not exported
 }
 ```
 
