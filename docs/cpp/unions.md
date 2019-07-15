@@ -7,6 +7,9 @@ ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
 ---
 # Unions
 
+> [!NOTE]
+> In C++17 and later, the **std::variant** class is a type-safe alternative for unions.
+
 A **union** is a user-defined type in which all members share the same memory location. This means that at any given time a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.
 
 Unions can be useful for conserving memory when you have lots of objects and/or limited memory. However they require extra care to use correctly because you are responsible for ensuring that you always access the last member that was written to. If any member types have a non-trivial constructor, then you must write additional code to explicitly construct and destroy that member. Before using a union, consider whether the problem you are trying to solve could be better expressed by using a base class and derived classes.
