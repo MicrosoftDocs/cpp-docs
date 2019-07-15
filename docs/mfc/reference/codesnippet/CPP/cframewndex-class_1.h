@@ -25,7 +25,10 @@ public:
    //{{AFX_VIRTUAL(CMainFrame)
 public:
    virtual void ActivateFrame(int nCmdShow = -1);
-   virtual BOOL LoadFrame(UINT nIDResource, DWORD dwDefaultStyle = WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, CWnd *pParentWnd = NULL, CCreateContext *pContext = NULL);
+   virtual BOOL LoadFrame(UINT nIDResource,
+                          DWORD dwDefaultStyle = WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE,
+                          CWnd *pParentWnd = NULL,
+                          CCreateContext *pContext = NULL);
 
 protected:
    virtual BOOL PreCreateWindow(CREATESTRUCT &cs);
