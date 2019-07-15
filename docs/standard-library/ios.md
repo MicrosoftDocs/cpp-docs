@@ -52,7 +52,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Configures the flags of an `ios_base` object to use a default display format for float values.|
 |[fixed](../standard-library/ios-functions.md#fixed)|Specifies that a floating-point number is displayed in fixed-decimal notation.|
 |[hex](../standard-library/ios-functions.md#hex)|Specifies that integer variables appear in base 16 notation.|
-|[hexfloat](../standard-library/ios-functions.md#hexfloat||
+|[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|Causes a number's sign to be left justified and the number to be right justified.|
 |[left](../standard-library/ios-functions.md#left)|Causes text that is not as wide as the output width to appear in the stream flush with the left margin.|
 |[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as 1 or 0 in the stream.|
