@@ -7,13 +7,22 @@ ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
 ---
 # C++ project property page reference
 
-By using property pages, you can specify settings for Visual Studio projects. To open the **Property Pages** dialog box for a Visual Studio project, on the **Project** menu, choose **Properties**. For more information about project properties, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+In Visual Studio, you specify compiler and linker options, file paths, and other build settings through the property pages for the project. To open the **Property Pages**, choose  **Project** > **Properties** from the main menu, or right-click on the project node in Visual Studio and choose **Properties**. For more information about project properties, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-For property pages in non-Windows projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md).
+For property pages in Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md).
 
 ## In This Section
 
-[Advanced, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](advanced-manifest-tool.md)
+[General Property Page (Project)](general-property-page-project.md)
+[Advanced Property Page](advanced-property-page.md)
+[Debugging Property Page]()
+[VC++ Directories Property Page](vcpp-directories-property-page.md)
+
+[Manifest Tool, General](general-manifest-tool-configuration-properties.md)
+[Manifest Tool, Input and Output](input-and-output-manifest-tool.md)
+[Manifest Tool, Isolated COM](isolated-com-manifest-tool.md)
+[Manifest Tool, Advanced](advanced-manifest-tool.md)
+
 
 [Command Line Property Pages](command-line-property-pages.md)
 
@@ -23,9 +32,9 @@ For property pages in non-Windows projects, see [Linux C++ Property Page Referen
 
 [General Property Page (File)](general-property-page-file.md)
 
-[General Property Page (Project)](general-property-page-project.md)
 
-[General, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](general-manifest-tool-configuration-properties.md)
+
+
 
 [HLSL Property Pages](hlsl-property-pages.md)
 
@@ -35,9 +44,9 @@ For property pages in non-Windows projects, see [Linux C++ Property Page Referen
 
 [HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
 
-[Input and Output, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](input-and-output-manifest-tool.md)
 
-[Isolated COM, Manifest Tool, Configuration Properties, \<Projectname> Property Pages Dialog Box](isolated-com-manifest-tool.md)
+
+
 
 [Linker Property Pages](linker-property-pages.md)
 
@@ -57,7 +66,7 @@ For property pages in non-Windows projects, see [Linux C++ Property Page Referen
 
 [Resources Property Pages](resources-property-pages.md)
 
-[VC++ Directories Property Page](vcpp-directories-property-page.md)
+
 
 [Web References Property Page](web-references-property-page.md)
 

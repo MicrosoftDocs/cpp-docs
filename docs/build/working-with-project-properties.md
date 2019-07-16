@@ -33,7 +33,6 @@ The following illustration shows the same project property page, but the configu
 
 The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](reference/clrimagetype-specify-type-of-clr-image.md).
 
-
 For more information about setting properties for a Debug build, see:
 
 - [Project settings for a C++ debug configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
