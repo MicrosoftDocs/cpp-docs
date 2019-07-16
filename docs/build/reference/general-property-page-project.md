@@ -8,7 +8,7 @@ helpviewer_keywords: ["Clean Build option", "output files, setting directory", "
 
 ::: moniker range=">=vs-2019"
 
-This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md).
+This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md).
 
 When you right-click on a project node in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays these properties:
 
