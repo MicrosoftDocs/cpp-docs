@@ -61,6 +61,8 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 ## Example
 
+This sample wraps the calls to set a structured exception translator and to restore the old one in an RAII class, `Scoped_SE_Translator`. This class lets you introduce a scope-specific translator as a single declaration. The class destructor restores the original translator when control leaves the scope.
+
 ```cpp
 // crt_settrans.cpp
 // compile with: cl /W4 /EHa crt_settrans.cpp
@@ -84,9 +86,9 @@ class Scoped_SE_Translator
 private:
     const _se_translator_function old_SE_translator;
 public:
-    Scoped_SE_Translator(_se_translator_function new_SE_translator) noexcept
-        : old_SE_translator{_set_se_translator(new_SE_translator)} {}
-    ~Scoped_SE_Translator() noexcept { _set_se_translator(old_SE_translator); }
+    Scoped_SE_Translator( _se_translator_function new_SE_translator ) noexcept
+        : old_SE_translator{ _set_se_translator( new_SE_translator ) } {}
+    ~Scoped_SE_Translator() noexcept { _set_se_translator( old_SE_translator ); }
 };
 
 void SEFunc()
@@ -105,21 +107,21 @@ void SEFunc()
     }
 }
 
-void trans_func(unsigned int u, EXCEPTION_POINTERS*)
+void trans_func( unsigned int u, EXCEPTION_POINTERS* )
 {
-    throw SE_Exception(u);
+    throw SE_Exception( u );
 }
 
 int main()
 {
-    Scoped_SE_Translator scoped_se_translator{trans_func};
+    Scoped_SE_Translator scoped_se_translator{ trans_func };
     try
     {
         SEFunc();
     }
-    catch(const SE_Exception& e)
+    catch( const SE_Exception& e )
     {
-        printf("Caught a __try exception, error %8.8x.\n", e.getSeNumber());
+        printf( "Caught a __try exception, error %8.8x.\n", e.getSeNumber() );
     }
 }
 ```
@@ -142,7 +144,7 @@ Although the functionality provided by **_set_se_translator** is not available i
 #include <stdio.h>
 #include <exception>
 
-int thrower_func(int i) {
+int thrower_func( int i ) {
    int y = 0;
    int *p = &y;
    *p = i / *p;
@@ -164,36 +166,36 @@ class Scoped_SE_Translator
 private:
     const _se_translator_function old_SE_translator;
 public:
-    Scoped_SE_Translator(_se_translator_function new_SE_translator) noexcept
-        : old_SE_translator{_set_se_translator(new_SE_translator)} {}
-    ~Scoped_SE_Translator() noexcept { _set_se_translator(old_SE_translator); }
+    Scoped_SE_Translator( _se_translator_function new_SE_translator ) noexcept
+        : old_SE_translator{ _set_se_translator( new_SE_translator ) } {}
+    ~Scoped_SE_Translator() noexcept { _set_se_translator( old_SE_translator ); }
 };
 
 #pragma unmanaged
-void my_trans_func(unsigned int u, PEXCEPTION_POINTERS)
+void my_trans_func( unsigned int u, PEXCEPTION_POINTERS )
 {
-    throw SE_Exception(u);
+    throw SE_Exception( u );
 }
 
 void DoTest()
 {
     try
     {
-        thrower_func(10);
+        thrower_func( 10 );
     }
-    catch(const SE_Exception& e)
+    catch( const SE_Exception& e )
     {
-        printf("Caught SE_Exception, error %8.8x\n", e.getSeNumber());
+        printf( "Caught SE_Exception, error %8.8x\n", e.getSeNumber() );
     }
     catch(...)
     {
-        printf("Caught unexpected SEH exception.\n");
+        printf( "Caught unexpected SEH exception.\n" );
     }
 }
 #pragma managed
 
 int main() {
-    Scoped_SE_Translator scoped_se_translator{my_trans_func};
+    Scoped_SE_Translator scoped_se_translator{ my_trans_func };
 
     DoTest();
 }
