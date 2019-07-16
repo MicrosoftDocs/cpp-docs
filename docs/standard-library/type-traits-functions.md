@@ -11,8 +11,9 @@ helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_
 |-|-|-|
 |[is_assignable](#is_assignable)|[is_copy_assignable](#is_copy_assignable)|[is_copy_constructible](#is_copy_constructible)|
 |[is_default_constructible](#is_default_constructible)|[is_move_assignable](#is_move_assignable)|[is_move_constructible](#is_move_constructible)|
-|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|[is_trivially_move_assignable](#is_trivially_move_assignable)|
-|[is_trivially_move_constructible](#is_trivially_move_constructible)|
+|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_nothrow_swappable](#is_nothrow_swappable)|[is_nothrow_swappable_with](#is_nothrow_swappable_with)|
+|[is_swappable](#is_swappable)|[is_swappable_with](#is_swappable_with)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|
+|[is_trivially_move_assignable](#is_trivially_move_assignable)|[is_trivially_move_constructible](#is_trivially_move_constructible)|
 
 ## <a name="is_assignable"></a>  is_assignable
 
@@ -210,6 +211,30 @@ The type to query.
 ### Remarks
 
 An instance of the type predicate holds true if the type *Ty* has a nothrow move assignment operator, otherwise it holds false.
+
+## <a name="is_nothrow_swappable"></a>  is_nothrow_swappable
+
+```cpp
+template <class T> struct is_nothrow_swappable;
+```
+
+## <a name="is_nothrow_swappable_with"></a>  is_nothrow_swappable_with
+
+```cpp
+template <class T, class U> struct is_nothrow_swappable_with;
+```
+
+## <a name="is_swappable"></a>  is_swappable
+
+```cpp
+template <class T> struct is_swappable;
+```
+
+## <a name="is_swappable_with"></a>  is_swappable_with
+
+```cpp
+template <class T, class U> struct is_swappable_with;
+```
 
 ## <a name="is_trivially_copy_assignable"></a>  is_trivially_copy_assignable
 

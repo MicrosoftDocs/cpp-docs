@@ -1,12 +1,12 @@
-BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
+BOOL CMainFrame::OnShowPopupMenu(CMFCPopupMenu *pMenuPopup)
 {
-	BOOL bRes = CFrameWndEx::OnShowPopupMenu (pMenuPopup);
+   BOOL bRes = CFrameWndEx::OnShowPopupMenu(pMenuPopup);
 
-	if (pMenuPopup != NULL && !pMenuPopup->IsCustomizePane())
-	{
-		AdjustObjectSubmenu (pMenuPopup);
-		AdjustColorsMenu (pMenuPopup, ID_CHAR_COLOR);
-	}
+   if (pMenuPopup != NULL && !pMenuPopup->IsCustomizePane())
+   {
+      AdjustObjectSubmenu(pMenuPopup);
+      AdjustColorsMenu(pMenuPopup, ID_CHAR_COLOR);
+   }
 
-	return bRes;
+   return bRes;
 }

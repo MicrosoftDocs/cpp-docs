@@ -6,5 +6,5 @@ void CMyDlg::OnSizeToClient()
 
    ClientToScreen(myRect);
    MoveWindow(myRect.left, myRect.top,
-      myRect.Width(), myRect.Height());
+              myRect.Width(), myRect.Height());
 }

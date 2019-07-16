@@ -1,2 +1,2 @@
-	CRect rectToolBar;
-	m_wndToolBar.GetItemRect(0, &rectToolBar);
+CRect rectToolBar;
+m_wndToolBar.GetItemRect(0, &rectToolBar);

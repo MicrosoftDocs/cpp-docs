@@ -26,7 +26,7 @@ void CMonthCalDlg::OnBnClickedRangebutton()
    ShowRange(&m_calCtrl1);
 }
 
-void CMonthCalDlg::ShowRange(CMonthCalCtrl* pMoCalCtrl)
+void CMonthCalDlg::ShowRange(CMonthCalCtrl *pMoCalCtrl)
 {
    ASSERT(pMoCalCtrl != NULL);
    CString strMessage;

@@ -106,6 +106,14 @@ enum class file_type {
 |`socket`|7|Represents a socket on UNIX based systems. (Not supported.)|
 |`unknown`|8|Represents a file whose status cannot be determined.|
 
+## <a name="perm_options"></a>  perm_options
+
+Includes values `replace`, `add`, `remove`, and `nofollow`.
+
+```cpp
+enum class perm_options;
+```
+
 ## <a name="perms"></a>  perms
 
 Flags for file permissions. The supported values are essentially “readonly” and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.

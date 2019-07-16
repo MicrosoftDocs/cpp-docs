@@ -11,13 +11,21 @@ The template class defines its method as returning `val.hash_code()`. The method
 ## Syntax
 
 ```cpp
-template <>
-struct hash<type_index>
+template <> struct hash<type_index>
 : public unary_function<type_index, size_t>
 { // hashes a typeinfo object
     size_t operator()(type_index val) const;
-
 };
+```
+
+## Specialized Types
+
+### <a name="system_error"></a> \<system_error>
+
+```cpp
+template <class T> struct hash;
+template <> struct hash<error_code>;
+template <> struct hash<error_condition>;
 ```
 
 ## See also

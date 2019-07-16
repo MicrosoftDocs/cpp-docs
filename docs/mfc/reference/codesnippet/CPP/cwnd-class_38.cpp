@@ -2,14 +2,14 @@ void CMainFrame::OnCwndDeletefilemenu()
 {
    // This example deletes the leftmost popup menu or leftmost
    // popup menu item from the application's main window.
-   CWnd* pMain = AfxGetMainWnd();
+   CWnd *pMain = AfxGetMainWnd();
 
    // The main window _can_ be NULL, so this code
    // doesn't ASSERT and actually tests.
    if (pMain != NULL)
    {
       // Get the main window's menu
-      CMenu* pMenu = pMain->GetMenu();
+      CMenu *pMenu = pMain->GetMenu();
 
       // If there is a menu and it has items, we'll
       // delete the first one.

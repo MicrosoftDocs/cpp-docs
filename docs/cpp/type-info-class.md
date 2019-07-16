@@ -14,11 +14,14 @@ The `<typeinfo>` header file must be included in order to use the **type_info** 
 ```cpp
 class type_info {
 public:
+    type_info(const type_info& rhs) = delete; // cannot be copied
     virtual ~type_info();
-    size_t hash_code() const
+    size_t hash_code() const;
     _CRTIMP_PURE bool operator==(const type_info& rhs) const;
+    type_info& operator=(const type_info& rhs) = delete; // cannot be copied
     _CRTIMP_PURE bool operator!=(const type_info& rhs) const;
     _CRTIMP_PURE int before(const type_info& rhs) const;
+    size_t hash_code() const noexcept;
     _CRTIMP_PURE const char* name() const;
     _CRTIMP_PURE const char* raw_name() const;
 };

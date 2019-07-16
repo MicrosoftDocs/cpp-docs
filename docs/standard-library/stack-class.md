@@ -18,10 +18,10 @@ class stack
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the stack.
 
-*Container*<br/>
+*Container*\
 The type of the underlying container used to implement the stack. The default value is the class `deque`*\<Type>*.
 
 ## Remarks
@@ -38,23 +38,25 @@ The stack objects are equality comparable if and only if the elements of class `
 
 - The [priority_queue class](../standard-library/priority-queue-class.md) orders its elements so that the largest element is always at the top position. It supports insertion of an element and the inspection and removal of the top element. A good analogue to keep in mind would be people lining up where they are arranged by age, height, or some other criterion.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[stack](#stack)|Constructs a `stack` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by a `stack`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `stack`.|
 |[value_type](#value_type)|A type that represents the type of object stored as an element in a `stack`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[empty](#empty)|Tests if the `stack` is empty.|
 |[pop](#pop)|Removes the element from the top of the `stack`.|
@@ -62,13 +64,7 @@ The stack objects are equality comparable if and only if the elements of class `
 |[size](#size)|Returns the number of elements in the `stack`.|
 |[top](#top)|Returns a reference to an element at the top of the `stack`.|
 
-## Requirements
-
-**Header:** \<stack>
-
-**Namespace:** std
-
-## <a name="container_type"></a>  stack::container_type
+## <a name="container_type"></a> container_type
 
 A type that provides the base container to be adapted.
 
@@ -86,7 +82,7 @@ For more information on `Container`, see the Remarks section of the [stack Class
 
 See the example for [stack::stack](#stack) for an example of how to declare and use `container_type`.
 
-## <a name="empty"></a>  stack::empty
+## <a name="empty"></a> empty
 
 Tests if a stack is empty.
 
@@ -131,7 +127,7 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-## <a name="pop"></a>  stack::pop
+## <a name="pop"></a> pop
 
 Removes the element from the top of the stack.
 
@@ -187,7 +183,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-## <a name="push"></a>  stack::push
+## <a name="push"></a> push
 
 Adds an element to the top of the stack.
 
@@ -197,7 +193,7 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The element added to the top of the stack.
 
 ### Remarks
@@ -236,7 +232,7 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-## <a name="size"></a>  stack::size
+## <a name="size"></a> size
 
 Returns the number of elements in the stack.
 
@@ -277,7 +273,7 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-## <a name="size_type"></a>  stack::size_type
+## <a name="size_type"></a> size_type
 
 An unsigned integer type that can represent the number of elements in a stack.
 
@@ -293,7 +289,7 @@ The type is a synonym for `size_type` of the base container adapted by the stack
 
 See the example for [size](#size) for an example of how to declare and use `size_type`.
 
-## <a name="stack"></a>  stack::stack
+## <a name="stack"></a> stack
 
 Constructs a stack that is empty or that is a copy of a base container class.
 
@@ -305,7 +301,7 @@ explicit stack(const container_type& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The container of which the constructed stack is to be a copy.
 
 ### Example
@@ -347,7 +343,7 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-## <a name="top"></a>  stack::top
+## <a name="top"></a> top
 
 Returns a reference to an element at the top of the stack.
 
@@ -398,7 +394,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-## <a name="value_type"></a>  stack::value_type
+## <a name="value_type"></a> value_type
 
 A type that represents the type of object stored as an element in a stack.
 

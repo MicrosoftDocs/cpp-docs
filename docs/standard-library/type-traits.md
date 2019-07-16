@@ -101,6 +101,7 @@ Type properties
 |[is_polymorphic](../standard-library/is-polymorphic-class.md)|Tests whether the type is a polymorphic class.|
 |[is_abstract](../standard-library/is-abstract-class.md)|Tests whether the type is an abstract class.|
 |[is_final](../standard-library/is-final-class.md)|Tests whether the type is a class type marked `final`.|
+|[is_aggregate](../standard-library/is-aggregate-class.md)||
 |[is_signed](../standard-library/is-signed-class.md)|Tests whether the type is a signed integer.|
 |[is_unsigned](../standard-library/is-unsigned-class.md)|Tests whether the type is an unsigned integer.|
 |[is_constructible](../standard-library/is-constructible-class.md)|Tests whether the type is constructible using the specified argument types.|
@@ -110,6 +111,8 @@ Type properties
 |[is_assignable](../standard-library/type-traits-functions.md#is_assignable)|Tests whether the first type can be assigned a value of the second type.|
 |[is_copy_assignable](../standard-library/type-traits-functions.md#is_copy_assignable)|Tests whether a type can be assigned a const reference value of the type.|
 |[is_move_assignable](../standard-library/type-traits-functions.md#is_move_assignable)|Tests whether a type can be assigned an rvalue reference of the type.|
+|[is_swappable](../standard-library/type-traits-functions.md#is_swappable)||
+|[is_swappable_with](../standard-library/type-traits-functions.md#is_swappable_with)||
 |[is_destructible](../standard-library/is-destructible-class.md)|Tests whether the type is destructible.|
 |[is_trivially_constructible](../standard-library/is-trivially-constructible-class.md)|Tests whether the type uses no non-trivial operations when constructed using the specified types.|
 |[is_trivially_default_constructible](../standard-library/is-trivially-default-constructible-class.md)|Tests whether the type uses no non-trivial operations when default constructed.|
@@ -126,8 +129,11 @@ Type properties
 |[is_nothrow_assignable](../standard-library/is-nothrow-assignable-class.md)|Tests whether the type is assignable using the specified type and the assignment is known not to throw.|
 |[is_nothrow_copy_assignable](../standard-library/is-nothrow-copy-assignable-class.md)|Tests whether the type is copy assignable and the assignment is known not to throw.|
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|Tests whether the type is move assignable and the assignment is known not to throw.|
+|[is_nothrow_swappable](../standard-library/type-traits-functions.md#is_nothrow_swappable)||
+|[is_nothrow_swappable_with](../standard-library/type-traits-functions.md#is_nothrow_swappable_with)||
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|Tests whether the type is destructible and the destructor is known not to throw.|
 |`has_virtual_destructor`|Tests whether the type has a virtual destructor.|
+|`has_unique_object_representations`||
 | [is_invocable](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types.<br/> Added in C++17. |
 | [is_invocable_r](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types and the result is convertible to the specified type.<br/> Added in C++17. |
 | [is_nothrow_invocable](is-invocable-classes.md) | Tests whether a callable type can be invoked using the specified argument types and is known not to throw exceptions.<br/> Added in C++17. |
@@ -202,6 +208,14 @@ Other transformations
 |[invoke_result](invoke-result-class.md)|Determines the return type of the callable type that takes the specified argument types. <br/>Added in C++17. |
 |[result_of](../standard-library/result-of-class.md)|Determines the return type of the callable type that takes the specified argument types. <br/>Added in C++14, deprecated in C++17. |
 |[underlying_type](../standard-library/underlying-type-class.md)|Produces the underlying integral type for an enumeration type.|
+
+Logical operator traits
+
+|||
+|-|-|
+|[conjunction](../standard-library/conjunction-class.md)||
+|[disjunction](../standard-library/disjunction-class.md)||
+|[negation](../standard-library/negation-class.md)||
 
 ## See also
 

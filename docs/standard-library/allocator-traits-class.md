@@ -13,31 +13,33 @@ The template class describes an object that supplements an *allocator type*. An 
 
 ```cpp
 template <class Alloc>
-class allocator_traits;
+    class allocator_traits;
 ```
+
+## Members
 
 ### Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`allocator_traits::allocator_type`|This type is a synonym for the template parameter `Alloc`.|
-|`allocator_traits::const_pointer`|This type is `Alloc::const_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const value_type>`.|
-|`allocator_traits::const_void_pointer`|This type is `Alloc::const_void_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const void>`.|
-|`allocator_traits::difference_type`|This type is `Alloc::difference_type`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::difference_type`.|
-|`allocator_traits::pointer`|This type is `Alloc::pointer`, if that type is well-formed; otherwise, this type is `value_type *`.|
-|`allocator_traits::propagate_on_container_copy_assignment`|This type is `Alloc::propagate_on_container_copy_assignment`, if that type is well-formed; otherwise, this type is `false_type`.|
-|`allocator_traits::propagate_on_container_move_assignment`|This type is `Alloc::propagate_on_container_move_assignment`, if that type is well-formed; otherwise, this type is `false_type`. If the type holds true, an allocator-enabled container copies its stored allocator on a move assignment.|
-|`allocator_traits::propagate_on_container_swap`|This type is `Alloc::propagate_on_container_swap`, if that type is well-formed; otherwise, this type is `false_type`. If the type holds true, an allocator-enabled container swaps its stored allocator on a swap.|
-|`allocator_traits::size_type`|This type is `Alloc::size_type`, if that type is well-formed; otherwise, this type is `make_unsigned<difference_type>::type`.|
-|`allocator_traits::value_type`|This type is a synonym for `Alloc::value_type`.|
-|`allocator_traits::void_pointer`|This type is `Alloc::void_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<void>`.|
+|||
+|-|-|
+|`allocator_type`|This type is a synonym for the template parameter `Alloc`.|
+|`const_pointer`|This type is `Alloc::const_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const value_type>`.|
+|`const_void_pointer`|This type is `Alloc::const_void_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const void>`.|
+|`difference_type`|This type is `Alloc::difference_type`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::difference_type`.|
+|`pointer`|This type is `Alloc::pointer`, if that type is well-formed; otherwise, this type is `value_type *`.|
+|`propagate_on_container_copy_assignment`|This type is `Alloc::propagate_on_container_copy_assignment`, if that type is well-formed; otherwise, this type is `false_type`.|
+|`propagate_on_container_move_assignment`|This type is `Alloc::propagate_on_container_move_assignment`, if that type is well-formed; otherwise, this type is `false_type`. If the type holds true, an allocator-enabled container copies its stored allocator on a move assignment.|
+|`propagate_on_container_swap`|This type is `Alloc::propagate_on_container_swap`, if that type is well-formed; otherwise, this type is `false_type`. If the type holds true, an allocator-enabled container swaps its stored allocator on a swap.|
+|`size_type`|This type is `Alloc::size_type`, if that type is well-formed; otherwise, this type is `make_unsigned<difference_type>::type`.|
+|`value_type`|This type is a synonym for `Alloc::value_type`.|
+|`void_pointer`|This type is `Alloc::void_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<void>`.|
 
 ### Static Methods
 
 The following static methods call the corresponding method on a given allocator parameter.
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[allocate](#allocate)|Static method that allocates memory by using the given allocator parameter.|
 |[construct](#construct)|Static method that uses a specified allocator to construct an object.|
 |[deallocate](#deallocate)|Static method that uses a specified allocator to deallocate a specified number of objects.|
@@ -45,13 +47,7 @@ The following static methods call the corresponding method on a given allocator 
 |[max_size](#max_size)|Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.|
 |[select_on_container_copy_construction](#select_on_container_copy_construction)|Static method that calls `select_on_container_copy_construction` on the specified allocator.|
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
-## <a name="allocate"></a>  allocator_traits::allocate
+### <a name="allocate"></a> allocate
 
 Static method that allocates memory by using the given allocator parameter.
 
@@ -62,18 +58,18 @@ static pointer allocate(Alloc& al, size_type count,
     typename allocator_traits<void>::const_pointer* hint);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-*count*<br/>
+*count*\
 The number of elements to allocate.
 
-*hint*<br/>
+*hint*\
 A `const_pointer` that might assist the allocator object in satisfying the request for storage by locating the address of an allocated object prior to the request. A null pointer is treated as no hint.
 
-### Return Value
+#### Return Value
 
 Each method returns a pointer to the allocated object.
 
@@ -81,7 +77,7 @@ The first static method returns `al.allocate(count)`.
 
 The second method returns `al.allocate(count, hint)`, if that expression is well formed; otherwise it returns `al.allocate(count)`.
 
-## <a name="construct"></a>  allocator_traits::construct
+### <a name="construct"></a> construct
 
 Static method that uses a specified allocator to construct an object.
 
@@ -90,22 +86,22 @@ template <class Uty, class Types>
 static void construct(Alloc& al, Uty* ptr, Types&&... args);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-*ptr*<br/>
+*ptr*\
 A pointer to the location where the object is to be constructed.
 
-*args*<br/>
+*args*\
 A list of arguments that is passed to the object constructor.
 
-### Remarks
+#### Remarks
 
 The static member function calls `al.construct(ptr, args...)`, if that expression is well formed; otherwise it evaluates `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.
 
-## <a name="deallocate"></a>  allocator_traits::deallocate
+### <a name="deallocate"></a> deallocate
 
 Static method that uses a specified allocator to deallocate a specified number of objects.
 
@@ -115,45 +111,45 @@ static void deallocate(Alloc al,
     size_type count);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-*ptr*<br/>
+*ptr*\
 A pointer to the starting location of the objects to be deallocated.
 
-*count*<br/>
+*count*\
 The number of objects to deallocate.
 
-### Remarks
+#### Remarks
 
 This method calls `al.deallocate(ptr, count)`.
 
 This method throws nothing.
 
-## <a name="destroy"></a>  allocator_traits::destroy
+### <a name="destroy"></a> destroy
 
 Static method that uses a specified allocator to call the destructor on an object without deallocating its memory.
 
 ```cpp
 template <class Uty>
-static void destroy(Alloc& al, Uty* ptr);
+    static void destroy(Alloc& al, Uty* ptr);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-*ptr*<br/>
+*ptr*\
 A pointer to the location of the object.
 
-### Remarks
+#### Remarks
 
 This method calls `al.destroy(ptr)`, if that expression is well formed; otherwise it evaluates `ptr->~Uty()`.
 
-## <a name="max_size"></a>  allocator_traits::max_size
+### <a name="max_size"></a> max_size
 
 Static method that uses a specified allocator to determine the maximum number of objects that can be allocated.
 
@@ -161,16 +157,16 @@ Static method that uses a specified allocator to determine the maximum number of
 static size_type max_size(const Alloc& al);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-### Remarks
+#### Remarks
 
 This method returns `al.max_size()`, if that expression is well formed; otherwise it returns `numeric_limits<size_type>::max()`.
 
-## <a name="select_on_container_copy_construction"></a>  allocator_traits::select_on_container_copy_construction
+### <a name="select_on_container_copy_construction"></a> select_on_container_copy_construction
 
 Static method that calls `select_on_container_copy_construction` on the specified allocator.
 
@@ -178,21 +174,15 @@ Static method that calls `select_on_container_copy_construction` on the specifie
 static Alloc select_on_container_copy_construction(const Alloc& al);
 ```
 
-### Parameters
+#### Parameters
 
-*al*<br/>
+*al*\
 An allocator object.
 
-### Return Value
+#### Return Value
 
 This method returns `al.select_on_container_copy_construction()`, if that type is well formed; otherwise it returns *al*.
 
-### Remarks
+#### Remarks
 
 This method is used to specify an allocator when the associated container is copy-constructed.
-
-## See also
-
-[\<memory>](../standard-library/memory.md)<br/>
-[pointer_traits Struct](../standard-library/pointer-traits-struct.md)<br/>
-[scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)<br/>

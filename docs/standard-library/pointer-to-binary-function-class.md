@@ -16,7 +16,6 @@ template <class Arg1, class Arg2, class Result>
 class pointer_to_binary_function
     : public binary_function <Arg1, Arg2, Result>
 {
-public:
     explicit pointer_to_binary_function(
         Result(*pfunc)(Arg1, Arg2));
     Result operator()(Arg1 left, Arg2 right) const;
@@ -25,13 +24,13 @@ public:
 
 ### Parameters
 
-*pfunc*<br/>
+*pfunc*\
 The binary function to be converted.
 
-*left*<br/>
+*left*\
 The left object that the *\*pfunc* is called on.
 
-*right*<br/>
+*right*\
 The right object that the *\*pfunc* is called on.
 
 ## Return Value
@@ -45,13 +44,3 @@ A binary function pointer is a function object and may be passed to any C++ Stan
 ## Example
 
 The constructor of `pointer_to_binary_function` is rarely used directly. See the helper function [ptr_fun](../standard-library/functional-functions.md#ptr_fun) for an example of how to declare and use the `pointer_to_binary_function` adaptor predicate.
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

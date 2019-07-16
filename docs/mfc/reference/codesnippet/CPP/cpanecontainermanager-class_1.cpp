@@ -1,2 +1,2 @@
-		// CMultiPaneFrameWnd* pParentMiniFrame
-		CPaneContainerManager& manager = pParentMiniFrame->GetPaneContainerManager ();
+// CMultiPaneFrameWnd* pParentMiniFrame
+CPaneContainerManager &manager = pParentMiniFrame->GetPaneContainerManager();

@@ -17,7 +17,6 @@ class binary_negate
     : public binaryFunction <typename Operation::first_argument_type,
                               typename Operation::second_argument_type, bool>
 {
-public:
     explicit binary_negate(const Operation& Func);
     bool operator()(const typename Operation::first_argument_type& left,
                     const typename Operation::second_argument_type& right) const;
@@ -26,13 +25,13 @@ public:
 
 ### Parameters
 
-*Func*<br/>
+*Func*\
 The binary function to be negated.
 
-*left*<br/>
+*left*\
 The left operand of the binary function to be negated.
 
-*right*<br/>
+*right*\
 The right operand of the binary function to be negated.
 
 ## Return Value
@@ -101,20 +100,10 @@ int main( )
       cout << *Iter1 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 Original vector v1 = ( 6262 6262 2233879413 2621500314 580942933 3715465425 3739828298 )
 Sorted vector v1 = ( 6262 6262 580942933 2233879413 2621500314 3715465425 3739828298 )
 Resorted vector v1 = ( 3739828298 3715465425 2621500314 2233879413 580942933 6262 6262 )
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -6,10 +6,6 @@ ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
 ---
 # &lt;exception&gt; typedefs
 
-||||
-|-|-|-|
-|[exception_ptr](#exception_ptr)|[terminate_handler](#terminate_handler)|[unexpected_handler](#unexpected_handler)|
-
 ## <a name="exception_ptr"></a>  exception_ptr
 
 A type that describes a pointer to an exception.
@@ -34,7 +30,7 @@ Despite its name, an `exception_ptr` object is not itself a pointer. It does not
 
 You can use the equal ( `==`) and not-equal ( `!=`) operators to compare two `exception_ptr` objects. The operators do not compare the binary value (bit pattern) of the `EXCEPTION_RECORD` structures that represent the exceptions. Instead, the operators compare the addresses in the exception reference field of the `exception_ptr` objects. Consequently, a null `exception_ptr` and the NULL value compare as equal.
 
-## <a name="terminate_handler"></a>  terminate_handler
+## <a name="terminate_handler"></a> terminate_handler
 
 The type describes a pointer to a function suitable for use as a `terminate_handler`.
 
@@ -50,7 +46,7 @@ The type describes a pointer to a function suitable for use as a terminate handl
 
 See [set_terminate](../standard-library/exception-functions.md#set_terminate) for an example of the use of `terminate_handler`.
 
-## <a name="unexpected_handler"></a>  unexpected_handler
+## <a name="unexpected_handler"></a> unexpected_handler
 
 The type describes a pointer to a function suitable for use as an `unexpected_handler`.
 
@@ -61,7 +57,3 @@ typedef void (*unexpected_handler)();
 ### Example
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `unexpected_handler`.
-
-## See also
-
-[\<exception>](../standard-library/exception.md)<br/>

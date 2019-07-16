@@ -13,7 +13,7 @@ An adapter class that allows a **const** member function that takes no arguments
 
 ```cpp
 template <class Result, class Type>
-class const_mem_fun_ref_t
+    class const_mem_fun_ref_t
 : public unary_function<Type, Result>
 {
     explicit const_mem_fun_t(Result (Type::* Pm)() const);
@@ -23,10 +23,10 @@ class const_mem_fun_ref_t
 
 ### Parameters
 
-*Pm*<br/>
+*Pm*\
 A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*<br/>
+*left*\
 The object that the *Pm* member function is called on.
 
 ## Return Value
@@ -35,19 +35,8 @@ An adaptable unary function.
 
 ## Remarks
 
-The template class stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( **left**.\* `Pm`)() **const**.
+The template class stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**left**.\* `Pm`)() **const**.
 
 ## Example
 
 The constructor of `const_mem_fun_ref_t` is not usually used directly; the helper function `mem_fun_ref` is used to adapt member functions. See [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) for an example of how to use member function adaptors.
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
