@@ -74,13 +74,13 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 ::: moniker range="<=vs-2017"
 
-When you right-click on a project node in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:
+In Visual Studio 2015 and Visual Studio 2017, when you right-click on a project node in **Solution Explorer**, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:
 
 - General
 
 - Project Defaults
 
-## General (Visual Studio 2015 and Visual Studio 2017)
+## General
 
 - **Target Platform**
 
@@ -140,7 +140,7 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
    For managed projects, this enables detection of external visibility when you generate assemblies. If a change to a managed project is not visible to other projects, then dependent projects are not rebuilt. This can dramatically improve build times in solutions that include managed projects.
 
-## Project Defaults (Visual Studio 2015)
+## Project Defaults
  
 The properties in the Project Default section represent default properties that you can modify. The definition for these properties can be found in the .props files in *Installation Directory*\VC\VCProjectDefaults.
 
