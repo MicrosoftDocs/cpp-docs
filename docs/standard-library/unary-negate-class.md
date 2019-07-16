@@ -16,7 +16,6 @@ template <class Predicate>
 class unary_negate
     : public unaryFunction<typename Predicate::argument_type, bool>
 {
-public:
     explicit unary_negate(const Predicate& Func);
     bool operator()(const typename Predicate::argument_type& left) const;
 };
@@ -24,10 +23,10 @@ public:
 
 ### Parameters
 
-*Func*<br/>
+*Func*\
 The unary function to be negated.
 
-*left*<br/>
+*left*\
 The operand of the unary function to be negated.
 
 ## Return Value
@@ -85,20 +84,10 @@ int main()
     cout << "The number of elements in v1 not greater than 10 is: "
          << result2 << "." << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 5 10 15 20 25 30 35 )
 The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

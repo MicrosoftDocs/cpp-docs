@@ -30,15 +30,15 @@ struct negate<void>
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 Any type that supports an `operator-` that takes an operand of the specified or inferred type.
 
-*Left*<br/>
+*Left*\
 The operand to be negated. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
 
-The result of `-Left.` The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.
+The result of `-Left`. The specialized template does perfect forwarding of the result, which has the type that's returned by unary `operator-`.
 
 ## Example
 
@@ -76,19 +76,9 @@ int main( )
       cout << *Iter2 << " ";
    cout << ")" << endl;
 }
-/* Output:
-The vector v1 = ( -10 -5 0 5 10 15 20 25 )
-The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
-*/
 ```
 
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+```Output
+The vector v1 = ( -10 -5 0 5 10 15 20 25 )
+The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
+```

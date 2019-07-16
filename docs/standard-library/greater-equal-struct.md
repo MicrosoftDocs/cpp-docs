@@ -30,13 +30,13 @@ struct greater_equal<void>
 
 ### Parameters
 
-*Type*, *T*, *U*
+*Type*, *T*, *U*\
 Any type that supports an `operator>=` that takes operands of the specified or inferred types.
 
-*Left*<br/>
+*Left*\
 The left operand of the greater-than-or-equal-to operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*<br/>
+*Right*\
 The right operand of the greater-than-or-equal-to operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
@@ -45,7 +45,7 @@ The result of `Left >= Right`. The specialized template does perfect forwarding 
 
 ## Remarks
 
-The binary predicate `greater_equal`< `Type`> provides a strict weak ordering of a set of element values of type *Type* into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.
+The binary predicate `greater_equal`<`Type`> provides a strict weak ordering of a set of element values of type *Type* into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.
 
 ## Example
 
@@ -100,13 +100,3 @@ Original vector v1 = (6262 6262 41 18467 6334 26500 19169)
 Sorted vector v1 = (41 6262 6262 6334 18467 19169 26500)
 Resorted vector v1 = (26500 19169 18467 6334 6262 6262 41)
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
