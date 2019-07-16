@@ -1,20 +1,25 @@
 ---
 title: "How to: Modify the Target Framework and Platform Toolset"
 ms.custom: "conceptual"
-ms.date: "07/15/2019"
+ms.date: "07/17/2019"
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
 ---
 # How to: Modify the Target Framework and Platform Toolset
 
-You can edit a Visual Studio C++ project file to target different versions of the C++ platform toolset (compiler, linker, etc.), the Windows SDK and the .NET Framework (C++/CLI projects only). By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can modify all these values in the .vcxproj file so that you can use the same code base for every compilation target.
+You can edit a Visual Studio C++ project file to target different versions of the C++ platform toolset, the Windows SDK and the .NET Framework (C++/CLI projects only). By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can modify all these values in the .vcxproj file so that you can use the same code base for every compilation target.
 
 ## Platform toolset
 
+The platform toolset consists of the C++ compiler (cl.exe), linker, along with the C/C++ standard libraries. Since Visual Studio 2015, the major version of the toolset has remained at 14, which means that projects compiled with Visual Studio 2019 or 107 are ABI-compatible with projects compiled with Visual Studio 2015. The minor version has updated by 1 for each version since Visual Studio 2015:
+
+- Visual Studio 2015: v140
+- Visual Studio 2017: v141
+- Visual Studio 2019: v142
 
 Visual Studio also supports multitargeting for C++ projects. You can use the Visual Studio IDE to edit and build projects that were created with older versions of Visual Studio, without upgrading them to use a new version of the toolset. You do need to have the older toolsets installed on your computer. For more information, see [How to use native multi-targeting in Visual Studio](../porting/use-native-multi-targeting.md).
 
-The platform toolset consists of the C++ compiler (cl.exe), linker, along with the C/C++ standard libraries.  
+  
 
 ## Target framework (C++/CLI project only)
 
