@@ -14,8 +14,7 @@ For property pages in Linux projects, see [Linux C++ Property Page Reference](..
 ## In This Section
 
 [General Property Page (Project)](general-property-page-project.md)
-[Advanced Property Page](advanced-property-page.md)
-[Debugging Property Page]()
+
 [VC++ Directories Property Page](vcpp-directories-property-page.md)
 
 [Manifest Tool, General](general-manifest-tool-configuration-properties.md)
