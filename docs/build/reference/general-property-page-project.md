@@ -88,9 +88,9 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 - **Target Platform Version (Visual Studio 2015)**
 
-      Specifies the lowest version of the platform that the project can run on. This property appears only if the project type supports it. If your app can take advantage of features in a newer Windows SDK version, but can still run on earlier versions without those features, perhaps with some loss of functionality, then the value of these two properties might be different. If so, your code should check the version of the platform it is running against at runtime and not try to use features that aren't available in older platform version.
+   Specifies the lowest version of the platform that the project can run on. This property appears only if the project type supports it. If your app can take advantage of features in a newer Windows SDK version, but can still run on earlier versions without those features, perhaps with some loss of functionality, then the value of these two properties might be different. If so, your code should check the version of the platform it is running against at runtime and not try to use features that aren't available in older platform version.
 
-      Note that the C++ project system does not enforce this option. It is included for consistency with other languages, such as C# and JavaScript, and as a guide for anyone who uses your project. Visual C++ won't generate an error if you use a feature that is not available in the minimum version.
+   The C++ project system does not enforce this option. It is included for consistency with other languages, such as C# and JavaScript, and as a guide for anyone who uses your project. Visual C++ won't generate an error if you use a feature that is not available in the minimum version.
 
 - **Windows SDK Version (Visual Studio 2017)**
 
