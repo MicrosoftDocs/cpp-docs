@@ -259,7 +259,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    }
    ```
 
-To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The output should look something like this. Note that the DLL executable and related compiler output is placed in a folder called `Debug` directly below the solution folder. If you create a Release build, the output will be placed in a folder called **Release**:
+To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The output should look something like this. Note that the DLL executable and related compiler output is placed in a folder called *Debug* directly below the solution folder. If you create a Release build, the output will be placed in a folder called *Release*:
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -442,7 +442,7 @@ Your client app can now compile and link successfully, but it still doesn't have
 
 1. Choose the **OK** button to save your changes to the project properties.
 
-Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like this depending on your version of Visual Studio:
+Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like the following example depending on your version of Visual Studio:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
