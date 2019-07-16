@@ -25,7 +25,7 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 ::: moniker range="vs-2019"
 
-Support for [AddressSanitizer (ASan)](https://github.com/google/sanitizers/wiki/AddressSanitizer) is integrated into Visual Studio for Linux projects.
+In Visual Studio 2019 you can specify separate targets for building and debugging. When targeting WSL, it is no longer necessary to add a remote connection or configure SSH.
 
 ::: moniker-end
 
