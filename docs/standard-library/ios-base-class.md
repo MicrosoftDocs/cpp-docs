@@ -25,15 +25,17 @@ An object of class ios_base stores formatting information, which consists of:
 
 An object of class ios_base also stores stream state information, in an object of type [iostate](#iostate), and a callback stack.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[ios_base](#ios_base)|Constructs `ios_base` objects.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[event_callback](#event_callback)|Describes a function passed to [register_call](#register_callback).|
 |[fmtflags](#fmtflags)|Constants to specify the appearance of output.|
@@ -83,9 +85,9 @@ An object of class ios_base also stores stream state information, in an object o
 |[unitbuf](#fmtflags)|Causes output to be flushed after each insertion.|
 |[uppercase](#fmtflags)|Specifies insertion of uppercase equivalents of lowercase letters in certain insertions.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in template class [basic_ios](../standard-library/basic-ios-class.md).|
 |[flags](#flags)|Sets or returns the current flag settings.|
@@ -104,7 +106,7 @@ An object of class ios_base also stores stream state information, in an object o
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|The assignment operator for `ios_base` objects.|
 
@@ -114,7 +116,7 @@ An object of class ios_base also stores stream state information, in an object o
 
 **Namespace:** std
 
-## <a name="event"></a>  ios_base::event
+## <a name="event"></a> event
 
 Specifies event types.
 
@@ -139,7 +141,7 @@ The type is an enumerated type that describes an object that can store the callb
 
 See [register_callback](#register_callback) for an example.
 
-## <a name="event_callback"></a>  ios_base::event_callback
+## <a name="event_callback"></a> event_callback
 
 Describes a function passed to [register_call](#register_callback).
 
@@ -152,13 +154,13 @@ typedef void (__cdecl *event_callback)(
 
 ### Parameters
 
-*_E*<br/>
+*_E*\
 The [event](#event).
 
-*_Base*<br/>
+*_Base*\
 The stream in which the event was called.
 
-*_I*<br/>
+*_I*\
 A user-defined number.
 
 ### Remarks
@@ -169,7 +171,7 @@ The type describes a pointer to a function that can be registered with [register
 
 See [register_call](#register_callback) for an example that uses `event_callback`.
 
-## <a name="failure"></a>  ios_base::failure
+## <a name="failure"></a> failure
 
 The class `failure` defines the base class for the types of all objects thrown as exceptions, by functions in the `iostreams` library, to report errors detected during stream buffer operations.
 
@@ -221,7 +223,7 @@ int main ( )
 Caught an exception: ios_base::failbit set
 ```
 
-## <a name="flags"></a>  ios_base::flags
+## <a name="flags"></a> flags
 
 Sets or returns the current flag settings.
 
@@ -232,7 +234,7 @@ fmtflags flags(fmtflags fmtfl);
 
 ### Parameters
 
-*fmtfl*<br/>
+*fmtfl*\
 The new `fmtflags` setting.
 
 ### Return Value
@@ -267,7 +269,7 @@ int main ( )
 16896
 ```
 
-## <a name="fmtflags"></a>  ios_base::fmtflags
+## <a name="fmtflags"></a> fmtflags
 
 Constants to specify the appearance of output.
 
@@ -343,7 +345,7 @@ In addition, several useful values are:
 
 For examples of functions that modify these format flags, see [\<iomanip>](../standard-library/iomanip.md).
 
-## <a name="getloc"></a>  ios_base::getloc
+## <a name="getloc"></a> getloc
 
 Returns the stored locale object.
 
@@ -373,7 +375,7 @@ int main( )
 C
 ```
 
-## <a name="imbue"></a>  ios_base::imbue
+## <a name="imbue"></a> imbue
 
 Changes the locale.
 
@@ -383,7 +385,7 @@ locale imbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*<br/>
+*_Loc*\
 The new locale setting.
 
 ### Return Value
@@ -398,7 +400,7 @@ The member function stores *_Loc* in the locale object and then reports the call
 
 See [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) for a sample.
 
-## <a name="init"></a>  ios_base::Init
+## <a name="init"></a> Init
 
 Creates the standard iostream objects when constructed.
 
@@ -410,7 +412,7 @@ class Init { };
 
 The nested class describes an object whose construction ensures that the standard iostreams objects are properly constructed, even before the execution of a constructor for an arbitrary static object.
 
-## <a name="ios_base"></a>  ios_base::ios_base
+## <a name="ios_base"></a> ios_base
 
 Constructs ios_base objects.
 
@@ -422,7 +424,7 @@ ios_base();
 
 The (protected) constructor does nothing. A later call to **basic_ios::**[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for template class [basic_ios](../standard-library/basic-ios-class.md).
 
-## <a name="iostate"></a>  ios_base::iostate
+## <a name="iostate"></a> iostate
 
 The type of constants that describe the state of a stream.
 
@@ -450,7 +452,7 @@ The type is a bitmask type that describes an object that can store stream state 
 
 In addition, a useful value is `goodbit`, where none of the previously mentioned bits are set (`goodbit` is guaranteed to be zero).
 
-## <a name="iword"></a>  ios_base::iword
+## <a name="iword"></a> iword
 
 Assigns a value to be stored as an `iword`.
 
@@ -460,7 +462,7 @@ long& iword(int idx);
 
 ### Parameters
 
-*idx*<br/>
+*idx*\
 The index of the value to store as an `iword`.
 
 ### Remarks
@@ -475,7 +477,7 @@ To obtain a unique index, for use across all objects of type `ios_base`, call [x
 
 See [xalloc](#xalloc) for a sample of how to use `iword`.
 
-## <a name="openmode"></a>  ios_base::openmode
+## <a name="openmode"></a> openmode
 
 Describes how to interact with a stream.
 
@@ -525,7 +527,7 @@ int main ( )
 }
 ```
 
-## <a name="op_eq"></a>  ios_base::operator=
+## <a name="op_eq"></a> operator=
 
 The assignment operator for ios_base objects.
 
@@ -535,7 +537,7 @@ ios_base& operator=(const ios_base& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An object of type `ios_base`.
 
 ### Return Value
@@ -548,7 +550,7 @@ The operator copies the stored formatting information, making a new copy of any 
 
 This operator is only used by classes derived from `ios_base`.
 
-## <a name="precision"></a>  ios_base::precision
+## <a name="precision"></a> precision
 
 Specifies the number of digits to display in a floating-point number.
 
@@ -559,7 +561,7 @@ streamsize precision(streamsize _Prec);
 
 ### Parameters
 
-*_Prec*<br/>
+*_Prec*\
 The number of significant digits to display, or the number of digits after the decimal point in fixed notation.
 
 ### Return Value
@@ -594,7 +596,7 @@ int main( )
 31.312
 ```
 
-## <a name="pword"></a>  ios_base::pword
+## <a name="pword"></a> pword
 
 Assigns a value to be stored as a `pword`.
 
@@ -604,7 +606,7 @@ void *& pword(int _Idx);
 
 ### Parameters
 
-*_Idx*<br/>
+*_Idx*\
 The index of the value to store as a `pword`.
 
 ### Remarks
@@ -619,7 +621,7 @@ To obtain a unique index, for use across all objects of type `ios_base`, call [x
 
 See [xalloc](#xalloc) for an example of using `pword`.
 
-## <a name="register_callback"></a>  ios_base::register_callback
+## <a name="register_callback"></a> register_callback
 
 Specifies a callback function.
 
@@ -630,10 +632,10 @@ void register_callback(
 
 ### Parameters
 
-*pfn*<br/>
+*pfn*\
 Pointer to the callback function.
 
-*idx*<br/>
+*idx*\
 A user-defined number.
 
 ### Remarks
@@ -727,7 +729,7 @@ in callback2
 an erase event
 ```
 
-## <a name="seekdir"></a> ios_base::seekdir
+## <a name="seekdir"></a> seekdir
 
 Specifies starting point for offset operations.
 
@@ -781,7 +783,7 @@ int main ( )
 }
 ```
 
-## <a name="setf"></a> ios_base::setf
+## <a name="setf"></a> setf
 
 Sets the specified flags.
 
@@ -797,10 +799,10 @@ fmtflags setf(
 
 ### Parameters
 
-*_Mask*<br/>
+*_Mask*\
 The flags to turn on.
 
-*_Unset*<br/>
+*_Unset*\
 The flags to turn off.
 
 ### Return Value
@@ -835,7 +837,7 @@ int main( )
 }
 ```
 
-## <a name="sync_with_stdio"></a> ios_base::sync_with_stdio
+## <a name="sync_with_stdio"></a> sync_with_stdio
 
 Ensures that iostream and C run-time library operations occur in the order that they appear in source code.
 
@@ -847,7 +849,7 @@ static bool sync_with_stdio(
 
 ### Parameters
 
-*_Sync*<br/>
+*_Sync*\
 Whether all streams are in sync with `stdio`.
 
 ### Return Value
@@ -858,7 +860,7 @@ Previous setting for this function.
 
 The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
-## <a name="unsetf"></a> ios_base::unsetf
+## <a name="unsetf"></a> unsetf
 
 Causes the specified flags to be off.
 
@@ -870,7 +872,7 @@ void unsetf(
 
 ### Parameters
 
-*_Mask*<br/>
+*_Mask*\
 The flags that you want off.
 
 ### Remarks
@@ -881,7 +883,7 @@ The member function effectively calls [flags](#flags)(`~`*_Mask* **& flags**) (c
 
 See [ios_base::setf](#setf) for a sample of using `unsetf`.
 
-## <a name="width"></a> ios_base::width
+## <a name="width"></a> width
 
 Sets the length of the output stream.
 
@@ -894,7 +896,7 @@ streamsize width(
 
 ### Parameters
 
-*_Wide*<br/>
+*_Wide*\
 The desired size of the output stream.
 
 ### Return Value
@@ -926,7 +928,7 @@ int main( ) {
 0
 ```
 
-## <a name="xalloc"></a> ios_base::xalloc
+## <a name="xalloc"></a> xalloc
 
 Specifies that a variable is part of the stream.
 

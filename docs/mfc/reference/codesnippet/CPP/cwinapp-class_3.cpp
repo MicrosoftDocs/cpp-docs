@@ -28,7 +28,7 @@ void CMdiView::OnMButtonDown(UINT nFlags, CPoint point)
    // the standard arrow cursor, and leave the cursor in
    // as the standard arrow cursor when the message box is
    // closed.
-   AfxMessageBox (_T("DoWaitCursor Sample"));
+   AfxMessageBox(_T("DoWaitCursor Sample"));
 
    // Call DoWaitCursor with parameter 0 to restore
    // the cursor back to the hourglass cursor.

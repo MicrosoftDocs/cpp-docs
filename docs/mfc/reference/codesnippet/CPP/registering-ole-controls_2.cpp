@@ -1,1 +1,1 @@
-			afxRegInsertable | afxRegApartmentThreading,
+afxRegInsertable | afxRegApartmentThreading,

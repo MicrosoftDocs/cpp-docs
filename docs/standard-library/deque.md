@@ -9,15 +9,18 @@ ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
 
 Defines the container template class deque and several supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <deque>
-```
+**Header**: \<deque>
+
+> [!NOTE]
+> The \<deque> library also uses the `#include <initializer_list>` statement.
+
+## Members
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/deque-operators.md#op_neq)|Tests if the deque object on the left side of the operator is not equal to the deque object on the right side.|
 |[operator<](../standard-library/deque-operators.md#op_lt)|Tests if the deque object on the left side of the operator is less than the deque object on the right side.|
@@ -28,13 +31,13 @@ Defines the container template class deque and several supporting templates.
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[swap](../standard-library/deque-functions.md#swap)|Exchanges the elements of two deques.|
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[deque Class](../standard-library/deque-class.md)|A template class of sequence containers that arrange elements of a given type in a linear arrangement and, like vectors, allow fast random access to any element and efficient insertion and deletion at the back of the container.|
 

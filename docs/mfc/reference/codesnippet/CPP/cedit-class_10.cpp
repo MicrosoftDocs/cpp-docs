@@ -1,7 +1,7 @@
-      HLOCAL h = m_myEdit.GetHandle();
-      LPCTSTR lpszText = (LPCTSTR) ::LocalLock(h);
+HLOCAL h = m_myEdit.GetHandle();
+LPCTSTR lpszText = (LPCTSTR)::LocalLock(h);
 
-      // Dump the text of the edit control.
-      AFXDUMP(lpszText);
+// Dump the text of the edit control.
+AFXDUMP(lpszText);
 
-      ::LocalUnlock(h);
+::LocalUnlock(h);

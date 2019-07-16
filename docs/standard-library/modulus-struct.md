@@ -30,13 +30,13 @@ struct modulus<void>
 
 ### Parameters
 
-*Type*, *T*, *U*
+*Type*, *T*, *U*\
 Any type that supports an `operator%` that takes operands of the specified or inferred types.
 
-*Left*<br/>
+*Left*\
 The left operand of the modulus operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*<br/>
+*Right*\
 The right operand of the modulus operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
@@ -95,21 +95,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 5 10 15 20 25 30 )
 The vector v2 = ( 3 6 9 12 15 18 )
 The element-wise remainders of the modular division
 are: ( 2 4 6 8 10 12 )
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

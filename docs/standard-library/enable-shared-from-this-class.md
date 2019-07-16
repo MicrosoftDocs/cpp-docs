@@ -17,6 +17,8 @@ public:
     shared_ptr<Ty>
         shared_from_this();
     shared_ptr<const Ty> shared_from_this() const;
+    weak_ptr<T> weak_from_this() noexcept;
+    weak_ptr<T const> weak_from_this() const noexcept;
 protected:
     enable_shared_from_this();
     enable_shared_from_this(const enable_shared_from_this&);
@@ -27,7 +29,7 @@ protected:
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type controlled by the shared pointer.
 
 ## Remarks
@@ -38,13 +40,7 @@ The constructors, destructor, and assignment operator are protected to help prev
 
 For an example of usage, see [enable_shared_from_this::shared_from_this](#shared_from_this).
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
-## <a name="shared_from_this"></a>  enable_shared_from_this::shared_from_this
+## <a name="shared_from_this"></a> shared_from_this
 
 Generates a `shared_ptr` that shares ownership of the instance with existing `shared_ptr` owners.
 
@@ -91,7 +87,9 @@ int main()
 sp2->val == 3
 ```
 
-## See also
+## <a name="weak_from_this"></a> weak_from_this
 
-[enable_shared_from_this::shared_from_this](#shared_from_this)<br/>
-[shared_ptr Class](../standard-library/shared-ptr-class.md)<br/>
+```cpp
+weak_ptr<T> weak_from_this() noexcept;
+weak_ptr<T const> weak_from_this() const noexcept;
+```

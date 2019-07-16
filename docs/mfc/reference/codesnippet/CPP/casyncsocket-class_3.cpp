@@ -1,4 +1,4 @@
-// CMyAsyncSocket is derived from CAsyncSocket and defines the 
+// CMyAsyncSocket is derived from CAsyncSocket and defines the
 // following variables:
 //    CString  m_sendBuffer;   //for async send
 //    int      m_nBytesSent;
@@ -9,20 +9,20 @@ void CMyAsyncSocket::OnSend(int nErrorCode)
    {
       int dwBytes;
 
-      if ((dwBytes = Send((LPCTSTR)m_sendBuffer + m_nBytesSent, 
-         m_nBytesBufferSize - m_nBytesSent)) == SOCKET_ERROR)
+      if ((dwBytes = Send((LPCTSTR)m_sendBuffer + m_nBytesSent,
+                          m_nBytesBufferSize - m_nBytesSent)) == SOCKET_ERROR)
       {
          if (GetLastError() == WSAEWOULDBLOCK)
-       {
-          break;
-       }
+         {
+            break;
+         }
          else
          {
             TCHAR szError[256];
-            _stprintf_s(szError, _T("Server Socket failed to send: %d"), 
-               GetLastError());
+            _stprintf_s(szError, _T("Server Socket failed to send: %d"),
+                        GetLastError());
             Close();
-            AfxMessageBox (szError);
+            AfxMessageBox(szError);
          }
       }
       else

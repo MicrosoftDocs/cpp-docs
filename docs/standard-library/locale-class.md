@@ -145,6 +145,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 |Operator|Description|
 |-|-|
+|[operator=](#op_eq)|Assigns a locale.|
 |[operator!=](#op_neq)|Tests two locales for inequality.|
 |[operator( )](#op_call)|Compares two `basic_string` objects.|
 |[operator==](#op_eq_eq)|Tests two locales for equality.|
@@ -394,7 +395,7 @@ The member class describes the static member object required by each unique loca
 
 ## <a name="locale"></a>  locale::locale
 
-Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.
+Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale. Also includes a destructor.
 
 ```cpp
 locale();
@@ -407,6 +408,8 @@ locale(const locale& Loc, const char* Locname, category Cat);
 
 template <class Facet>
 locale(const locale& Loc, const Facet* Fac);
+
+~locale();
 ```
 
 ### Parameters
@@ -523,6 +526,14 @@ int main( )
 ```Output
 The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
+```
+
+## <a name="op_eq"></a>  locale::operator=
+
+Assigns a locale.
+
+```cpp
+const locale& operator=(const locale& other) noexcept;
 ```
 
 ## <a name="op_neq"></a>  locale::operator!=

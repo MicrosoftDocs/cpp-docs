@@ -1,7 +1,7 @@
 #include <afx.h>
 #include <afxdb.h>
 
-int _tmain(int /*argc*/, TCHAR* /*argv[]*/, TCHAR* /*envp[]*/)
+int _tmain(int /*argc*/, TCHAR * /*argv[]*/, TCHAR * /*envp[]*/)
 {
    int nRetCode = 0;
 
@@ -25,11 +25,11 @@ int _tmain(int /*argc*/, TCHAR* /*argv[]*/, TCHAR* /*envp[]*/)
          // we shouldn't realistically get here
 
          _tprintf_s(_T("Successful!\n")
-            _T("Closing ...\n"));
+                    _T("Closing ...\n"));
          db.Close();
          _tprintf_s(_T("Closed!"));
       }
-      catch (CDBException* pEx)
+      catch (CDBException *pEx)
       {
          // we got an exception! print an error message
          // (this wouldn't work without initializing MFC)

@@ -1,1 +1,1 @@
-	m_btnFlag.SetImage (IDB_FLAG);
+m_btnFlag.SetImage(IDB_FLAG);
