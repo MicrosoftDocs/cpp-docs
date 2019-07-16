@@ -1,1 +1,1 @@
-	CPaneDialog		m_wndDlgBar;
+CPaneDialog m_wndDlgBar;

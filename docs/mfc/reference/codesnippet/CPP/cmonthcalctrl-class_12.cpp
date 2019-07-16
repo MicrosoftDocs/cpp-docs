@@ -26,12 +26,12 @@ void CMonthCalDlg::OnBnClickedDaystatebutton()
    // Set the 4th day, 19th day, and 26th day of the first
    // _fully_ visible month as bold.
 
-   pDayState[nIndex] |= 1 << 3;   // 4th day
-   pDayState[nIndex] |= 1 << 18;   // 19th day
-   pDayState[nIndex] |= 1 << 25;   // 25th day
+   pDayState[nIndex] |= 1 << 3;  // 4th day
+   pDayState[nIndex] |= 1 << 18; // 19th day
+   pDayState[nIndex] |= 1 << 25; // 25th day
 
    // Set state and clean up
 
    VERIFY(m_calCtrl1.SetDayState(nCount, pDayState));
-   delete [] pDayState;
+   delete[] pDayState;
 }

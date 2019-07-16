@@ -1,1 +1,1 @@
-	CMFCCaptionBar m_wndMessageBar;
+CMFCCaptionBar m_wndMessageBar;

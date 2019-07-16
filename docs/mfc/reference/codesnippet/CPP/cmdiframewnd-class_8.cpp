@@ -1,7 +1,7 @@
-// GetDefaultMenu() is an undocumented virtual function for 
-// CDocument class. It allows the document to determine which 
+// GetDefaultMenu() is an undocumented virtual function for
+// CDocument class. It allows the document to determine which
 // menu to display. m_hDefaultMenu is of type HMENU. Its value
-// is initialized to NULL either in the constructor or 
+// is initialized to NULL either in the constructor or
 // CDocument::OnNewDocument(). And the menu resource is destroyed
 // in the destructor to avoid having too many menus loaded at once.
 HMENU CMdiDoc::GetDefaultMenu()

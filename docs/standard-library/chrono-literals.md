@@ -65,13 +65,3 @@ constexpr auto day = 24h;
 constexpr auto week = 24h* 7;
 constexpr auto my_duration_unit = 108ms;
 ```
-
-## Requirements
-
-**Header**: \<chrono>
-
-**Namespace**: std::literals::chrono_literals
-
-## See also
-
-[\<chrono>](../standard-library/chrono.md)<br/>

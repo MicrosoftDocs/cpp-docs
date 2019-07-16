@@ -24,9 +24,13 @@ The interface for **bad_typeid** is:
 class bad_typeid : public exception
 {
 public:
+   bad_typeid();
    bad_typeid(const char * _Message = "bad typeid");
    bad_typeid(const bad_typeid &);
    virtual ~bad_typeid();
+
+   bad_typeid& operator=(const bad_typeid&);
+   const char* what() const;
 };
 ```
 

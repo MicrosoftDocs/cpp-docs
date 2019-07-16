@@ -7,29 +7,27 @@ helpviewer_keywords: ["std::operator!= (utility)", "std::operator&gt; (utility)"
 ---
 # &lt;utility&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+> [!NOTE]
+> Operators using `Type&` are included under `namespace rel_ops`.
 
-## <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a> operator!=
 
 Tests if the pair object on the left side of the operator is not equal to the pair object on the right side.
 
 ```cpp
 template <class Type>
-constexpr bool operator!=(const Type& left, const Type& right);
+    constexpr bool operator!=(const Type& left, const Type& right);
 
 template <class T, class U>
-constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
+    constexpr bool operator!=(const pair<T, U>& left, const pair<T, U>& right);
 ```
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair`.
 
-*right*<br/>
+*right*\
 An object of type `pair`.
 
 ### Return Value
@@ -87,7 +85,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a> operator==
 
 Tests if the pair object on the left side of the operator is equal to the pair object on the right side.
 
@@ -98,10 +96,10 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair`.
 
-*right*<br/>
+*right*\
 An object of type `pair`.
 
 ### Return Value
@@ -150,7 +148,7 @@ int main( )
 }
 ```
 
-## <a name="op_lt"></a>  operator&lt;
+## <a name="op_lt"></a> operator&lt;
 
 Tests if the pair object on the left side of the operator is less than the pair object on the right side.
 
@@ -161,10 +159,10 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair` on the left side of the operator.
 
-*right*<br/>
+*right*\
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -224,7 +222,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="op_lt_eq"></a>  operator&lt;=
+## <a name="op_lt_eq"></a> operator&lt;=
 
 Tests if the pair object on the left side of the operator is less than or equal to the pair object on the right side.
 
@@ -238,10 +236,10 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair` on the left side of the operator.
 
-*right*<br/>
+*right*\
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -309,7 +307,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="op_gt"></a>  operator&gt;
+## <a name="op_gt"></a> operator&gt;
 
 Tests if the pair object on the left side of the operator is greater than the pair object on the right side.
 
@@ -323,10 +321,10 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair` on the left side of the operator.
 
-*right*<br/>
+*right*\
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -396,24 +394,24 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="op_gt_eq"></a>  operator&gt;=
+## <a name="op_gt_eq"></a> operator&gt;=
 
 Tests if the pair object on the left side of the operator is greater than or equal to the pair object on the right side.
 
 ```cpp
 template <class Type>
-constexpr bool operator>=(const Type& left, const Type& right);
+    constexpr bool operator>=(const Type& left, const Type& right);
 
 template <class T, class U>
-constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
+    constexpr bool operator>=(const pair<T, U>& left, const pair<T, U>& right);
 ```
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `pair` on the left side of the operator.
 
-*right*<br/>
+*right*\
 An object of type `pair` on the right side of the operator.
 
 ### Return Value
@@ -480,7 +478,3 @@ The pair p1 is less than the pair p2.
 Pair p1 is greater than or equal to pair p3.
 Pair p1 is greater than or equal to pair p4.
 ```
-
-## See also
-
-[\<utility>](../standard-library/utility.md)<br/>
