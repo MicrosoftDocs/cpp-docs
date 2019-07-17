@@ -31,7 +31,7 @@ The Advanced property page is available in Visual Studio 2019 and later.
 
 - **Preferred Build Tool Architecture**
 
-   Specifies whether to use the x86 or x94 build tools.
+   Specifies whether to use the x86 or x64 build tools.
 
 - **Use Debug Libraries**
 
