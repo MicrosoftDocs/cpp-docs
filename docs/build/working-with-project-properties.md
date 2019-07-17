@@ -33,7 +33,6 @@ The following illustration shows the same project property page, but the configu
 
 The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](reference/clrimagetype-specify-type-of-clr-image.md).
 
-
 For more information about setting properties for a Debug build, see:
 
 - [Project settings for a C++ debug configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)
@@ -119,7 +118,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 ## In this section
 
 [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
-How to create a .props file with custom build settings that can be shared or resused.
+How to create a .props file with custom build settings that can be shared or reused.
 
 [Project property inheritance](project-property-inheritance.md)<br/>
 Describes the order of evaluation for the .props, .targets, .vcxproj files and environment variables in the build process.
