@@ -1,6 +1,6 @@
 ---
 title: "Share or reuse Visual Studio project settings - C++"
-ms.date: "03/27/2019"
+ms.date: "07/17/2019"
 helpviewer_keywords: ["project properties [C++], reusable"]
 ---
 
@@ -15,7 +15,7 @@ To create a custom group of settings that you can share with others or reuse in 
 >
 > Although .user files are still installed by Visual Studio and participate in property inheritance, they are empty by default. The best practice is to delete the reference to them in **Property Manager** to ensure that your projects operate independently of any per-user, per-computer settings This is important to ensure correct behavior in a SCC (source code control) environment.
 
-To display **Property Manager**, on the menu bar, choose **View** | **Property Manager** or **View** | **Other Windows** | **Property Manager** depending on your settings.
+To display **Property Manager**, on the menu bar, choose **View** > **Property Manager** or **View** > **Other Windows** > **Property Manager**, depending on your settings.
 
 If you have a common, frequently used set of properties that you want to apply to multiple projects, you can use **Property Manager** to capture them in a reusable *property sheet* file, which by convention has a .props file name extension. You can apply the sheet (or sheets) to new projects so that you don't have to set its properties from scratch.
 
@@ -38,7 +38,7 @@ In large solutions that will have many projects, it can be useful to create a pr
 
 #### To create a property sheet
 
-1. On the menu bar, choose **View** | **Property Manager** or **View** | **Other Windows** | **Property Manager**. The **Property Manager** opens.
+1. On the menu bar, choose **View** > **Property Manager** or **View** > **Other Windows** > **Property Manager**. The **Property Manager** opens.
 
 2. To define the scope of the property sheet, select the item to which it applies. This can be a particular configuration, or another property sheet. Open the shortcut menu for this item and then choose **Add New Project Property Sheet**. Specify a name and location.
 
