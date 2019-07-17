@@ -1,1 +1,1 @@
-   AFX_MANAGE_STATE(AfxGetAppModuleState());
+AFX_MANAGE_STATE(AfxGetAppModuleState());

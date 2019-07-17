@@ -12,11 +12,14 @@ Includes the C standard library header \<iso646.h>, and adds the associated name
 > [!NOTE]
 > Because this compatibility header defines names that are keywords in C++, including it has no effect. The \<iso646.h> header is deprecated in C++. The \<ciso646> header is removed in the draft C++20 standard.
 
-## Syntax
+> [!NOTE]
+> Use of this header is unnecessary in C++.
 
-```cpp
-#include <ciso646>
-```
+## Requirements
+
+**Header:** \<ciso646>
+
+**Namespace:** std
 
 ## Remarks
 

@@ -1,1 +1,1 @@
-		GetStatusBar ().SetPaneProgress (nStatusProgress, m_nProgressCurr);
+GetStatusBar().SetPaneProgress(nStatusProgress, m_nProgressCurr);

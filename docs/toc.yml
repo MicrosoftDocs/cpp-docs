@@ -414,6 +414,8 @@
                   href: build/reference/general-property-page-project.md
                 - name: General property page
                   href: build/reference/general-property-page-file.md
+                - name: Advanced property page
+                  href: build/reference/advanced-property-page.md
                 - name: VC++ Directories property page
                   href: build/reference/vcpp-directories-property-page.md
                 - name: Command line property pages

@@ -1,2 +1,2 @@
-	CMFCToolBarComboBoxButton* pButton = new CMFCToolBarComboBoxButton();
-	CMFCToolBarComboBoxEdit* pWndEdit = new CMFCToolBarComboBoxEdit(*pButton);
+CMFCToolBarComboBoxButton *pButton = new CMFCToolBarComboBoxButton();
+CMFCToolBarComboBoxEdit *pWndEdit = new CMFCToolBarComboBoxEdit(*pButton);

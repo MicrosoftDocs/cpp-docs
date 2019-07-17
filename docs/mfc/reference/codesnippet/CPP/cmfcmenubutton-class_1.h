@@ -1,1 +1,1 @@
-	CMFCMenuButton m_btnMenu;
+CMFCMenuButton m_btnMenu;

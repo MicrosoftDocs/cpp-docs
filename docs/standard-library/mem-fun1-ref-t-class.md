@@ -20,19 +20,18 @@ class mem_fun1_ref_t : public binary_function<Type, Arg, Result> {
     Result operator()(
     Type& left,
     Arg right) const;
-
 };
 ```
 
 ### Parameters
 
-*_Pm*<br/>
+*_Pm*\
 A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*<br/>
+*left*\
 The object that the *_Pm* member function is called on.
 
-*right*<br/>
+*right*\
 The argument that is being given to *_Pm*.
 
 ## Return Value
@@ -41,19 +40,8 @@ An adaptable binary function.
 
 ## Remarks
 
-The template class stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( **left**.\* `_Pm`)( **right**).
+The template class stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**left**.\* `_Pm`)(**right**).
 
 ## Example
 
 The constructor of `mem_fun1_ref_t` is not usually used directly; the helper function `mem_fun_ref` is used to adapt member functions. See [mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref) for an example of how to use member function adaptors.
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

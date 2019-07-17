@@ -9,16 +9,17 @@ ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
 
 Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.
 
-## Syntax
+## Requirements
 
-```
+**Header:** \<bitset>
 
-#include <bitset>
-```
+**Namespace:** std
+
+## Members
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator&](../standard-library/bitset-operators.md#op_amp)|Performs a bitwise AND between two bitsets.|
 |[operator<\<](../standard-library/bitset-operators.md#op_lt_lt)|Inserts a text representation of the bit sequence into the standard output stream.|
@@ -28,9 +29,9 @@ Defines the template class bitset and two supporting template functions for repr
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
-|[bitset Class](../standard-library/bitset-class.md)|The template class describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
+|[bitset](../standard-library/bitset-class.md)|The template class describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
 
 ## See also
 

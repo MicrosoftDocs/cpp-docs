@@ -12,11 +12,11 @@ In effect, includes the C++ standard library headers \<complex> and \<cmath>, wh
 > [!NOTE]
 > The C standard library \<tgmath.h> header isn't included by \<ctgmath>, because it's effectively replaced by the C++ overloads in \<complex> and \<cmath>. That makes the \<ctgmath> header redundant. The \<tgmath.h> header is deprecated in C++. The \<ctgmath> header is deprecated in C++17 and removed in the draft C++20 standard.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ctgmath>
-```
+**Header:** \<ctgmath>
+
+**Namespace:** std
 
 ## Remarks
 

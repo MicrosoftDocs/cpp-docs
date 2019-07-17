@@ -21,7 +21,7 @@ class exception {
    exception& operator=(const exception &right);
    virtual ~exception();
    virtual const char *what() const;
-   };
+};
 ```
 
 ## Remarks
@@ -36,13 +36,3 @@ The **int** parameter allows you to specify that no memory should be allocated. 
 ## Example
 
 For examples of the use of the standard exception classes that inherit from the `exception` class, see any of the classes defined in [\<stdexcept>](../standard-library/stdexcept.md).
-
-## Requirements
-
-**Header:** \<exception>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

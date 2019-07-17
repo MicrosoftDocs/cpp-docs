@@ -1,14 +1,14 @@
 ---
 title: "Overview of Marshaling in C++"
-ms.date: "06/28/2018"
+ms.date: "07/12/2019"
 ms.topic: "reference"
 f1_keywords: ["marshaling", "marshalling"]
 helpviewer_keywords: ["Visual C++, marshaling", "C++ Support Library, marshaling", "marshaling, about marshaling"]
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
 ---
-# Overview of Marshaling in C++
+# Overview of Marshaling in C++/CLI
 
-In mixed mode, you sometimes must marshal your data between native and managed types. Visual Studio 2008 introduced the *marshaling library* to help you marshal and convert data in a simple way.  The marshaling library consists of a set of functions and a `marshal_context` class that perform marshaling for common types. The library is defined in these headers in the **include/msclr** directory for your Visual Studio edition:
+In mixed mode, you sometimes must marshal your data between native and managed types. The *marshaling library* helps you marshal and convert data in a simple way.  The marshaling library consists of a set of functions and a `marshal_context` class that perform marshaling for common types. The library is defined in these headers in the **include/msclr** directory for your Visual Studio edition:
 
 |Header|Description|
 |---------------|-----------------|
@@ -60,8 +60,6 @@ This example shows how to include the msclr directory in an include header decla
 `#include "msclr\marshal_cppstd.h"`
 
 The marshaling library is extensible so that you can add your own marshaling types. For more information about extending the marshaling library, see [How to: Extend the Marshaling Library](../dotnet/how-to-extend-the-marshaling-library.md).
-
-In earlier versions, you could marshal data by using [Platform Invoke](/dotnet/framework/interop/consuming-unmanaged-dll-functions). For more information about `PInvoke`, see [Calling Native Functions from Managed Code](../dotnet/calling-native-functions-from-managed-code.md).
 
 ## See also
 

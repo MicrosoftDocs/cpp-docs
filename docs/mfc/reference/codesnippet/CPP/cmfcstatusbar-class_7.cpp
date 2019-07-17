@@ -1,1 +1,1 @@
-		GetStatusBar ().SetPaneAnimation (nStatusAnimation, NULL);
+GetStatusBar().SetPaneAnimation(nStatusAnimation, NULL);

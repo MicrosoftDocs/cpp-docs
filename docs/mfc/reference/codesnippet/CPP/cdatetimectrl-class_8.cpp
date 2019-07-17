@@ -22,6 +22,6 @@ void CDateTimeDlg::OnBnClickedTimebutton()
    }
 
    // Calling as SYSTIME is much the same, but calling for a COleDateTime
-   // has us test the state of the COleDateTime object for validity to 
+   // has us test the state of the COleDateTime object for validity to
    // see if the user did or didn't check the "none" box.
 }

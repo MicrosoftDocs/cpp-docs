@@ -19,6 +19,42 @@ Includes the Standard C library header \<time.h> and adds the associated names t
 
 Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
 
+## Constants
+
+```cpp
+#define NULL
+#define CLOCKS_PER_SEC
+#define TIME_UTC
+
+namespace std {
+    using size_t = see below;
+    using clock_t = see below ;
+    using time_t = see below ;
+}
+```
+    
+## Structures
+    
+```cpp
+struct timespec;
+struct tm;
+```
+    
+## Functions
+
+```cpp
+clock_t clock();
+double difftime(time_t time1, time_t time0);
+time_t mktime(struct tm* timeptr);
+time_t time(time_t* timer);
+int timespec_get(timespec* ts, int base);
+char* asctime(const struct tm* timeptr);
+char* ctime(const time_t* timer);
+struct tm* gmtime(const time_t* timer);
+struct tm* localtime(const time_t* timer);
+size_t strftime(char* s, size_t maxsize, const char* format, const struct tm* timeptr);
+```
+
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>

@@ -18,10 +18,10 @@ class vector
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the vector
 
-*Allocator*<br/>
+*Allocator*\
 The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is `allocator<Type>`.
 
 ## Remarks
@@ -38,13 +38,13 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[vector](#vector)|Constructs a vector of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other vector.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the vector object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can read a **const** element in a vector.|
@@ -59,9 +59,9 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 |[size_type](#size_type)|A type that counts the number of elements in a vector.|
 |[value_type](#value_type)|A type that represents the data type stored in a vector.|
 
-### Member Functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[assign](#assign)|Erases a vector and copies the specified elements to the empty vector.|
 |[at](#at)|Returns a reference to the element at a specified location in the vector.|
@@ -95,18 +95,12 @@ The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#ref
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the vector element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the vector with a copy of another vector.|
 
-## Requirements
-
-**Header:** \<vector>
-
-**Namespace:** std
-
-## <a name="allocator_type"></a>  vector::allocator_type
+## <a name="allocator_type"></a> allocator_type
 
 A type that represents the allocator class for the vector object.
 
@@ -122,7 +116,7 @@ typedef Allocator allocator_type;
 
 See the example for [get_allocator](#get_allocator) for an example that uses `allocator_type`.
 
-## <a name="assign"></a>  vector::assign
+## <a name="assign"></a> assign
 
 Erases a vector and copies the specified elements to the empty vector.
 
@@ -136,19 +130,19 @@ void assign(InputIterator First, InputIterator Last);
 
 ### Parameters
 
-*First*<br/>
+*First*\
 Position of the first element in the range of elements to be copied.
 
-*Last*<br/>
+*Last*\
 Position of the first element beyond the range of elements to be copied.
 
-*Count*<br/>
+*Count*\
 The number of copies of an element being inserted into the vector.
 
-*Val*<br/>
+*Val*\
 The value of the element being inserted into the vector.
 
-*IList*<br/>
+*IList*\
 The initializer_list containing the elements to insert.
 
 ### Remarks
@@ -202,7 +196,7 @@ int main()
 }
 ```
 
-## <a name="at"></a>  vector::at
+## <a name="at"></a> at
 
 Returns a reference to the element at a specified location in the vector.
 
@@ -214,7 +208,7 @@ const_reference at(size_type _Pos) const;
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The subscript or position number of the element to reference in the vector.
 
 ### Return Value
@@ -253,7 +247,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="back"></a>  vector::back
+## <a name="back"></a> back
 
 Returns a reference to the last element of the vector.
 
@@ -297,7 +291,7 @@ int main() {
 }
 ```
 
-## <a name="begin"></a>  vector::begin
+## <a name="begin"></a> begin
 
 Returns a random-access iterator to the first element in the vector.
 
@@ -360,7 +354,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2
 ```
 
-## <a name="capacity"></a>  vector::capacity
+## <a name="capacity"></a> capacity
 
 Returns the number of elements that the vector could contain without allocating more storage.
 
@@ -404,7 +398,7 @@ The length of storage allocated is 1.
 The length of storage allocated is now 2.
 ```
 
-## <a name="cbegin"></a>  vector::cbegin
+## <a name="cbegin"></a> cbegin
 
 Returns a **const** iterator that addresses the first element in the range.
 
@@ -430,7 +424,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  vector::cend
+## <a name="cend"></a> cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -458,7 +452,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-## <a name="clear"></a>  vector::clear
+## <a name="clear"></a> clear
 
 Erases the elements of the vector.
 
@@ -494,7 +488,7 @@ The size of v1 is 3
 The size of v1 after clearing is 0
 ```
 
-## <a name="const_iterator"></a>  vector::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 A type that provides a random-access iterator that can read a **const** element in a vector.
 
@@ -510,7 +504,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 See the example for [back](#back) for an example that uses `const_iterator`.
 
-## <a name="const_pointer"></a>  vector::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 A type that provides a pointer to a **const** element in a vector.
 
@@ -524,7 +518,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 An [iterator](#iterator) is more commonly used to access a vector element.
 
-## <a name="const_reference"></a>  vector::const_reference
+## <a name="const_reference"></a> const_reference
 
 A type that provides a reference to a **const** element stored in a vector for reading and performing **const** operations.
 
@@ -568,7 +562,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="const_reverse_iterator"></a>  vector::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
 A type that provides a random-access iterator that can read any **const** element in the vector.
 
@@ -584,7 +578,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 See [rbegin](#rbegin) for an example of how to declare and use an iterator.
 
-## <a name="crbegin"></a>  vector::crbegin
+## <a name="crbegin"></a> crbegin
 
 Returns a const iterator to the first element in a reversed vector.
 
@@ -633,7 +627,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.
 ```
 
-## <a name="crend"></a>  vector::crend
+## <a name="crend"></a> crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed vector.
 
@@ -682,7 +676,7 @@ int main( )
 1
 ```
 
-## <a name="data"></a>  vector::data
+## <a name="data"></a> data
 
 Returns a pointer to the first element in the vector.
 
@@ -738,7 +732,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2
 ```
 
-## <a name="difference_type"></a>  vector::difference_type
+## <a name="difference_type"></a> difference_type
 
 A type that provides the difference between two iterators that refer to elements within the same vector.
 
@@ -795,7 +789,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-## <a name="emplace"></a>  vector::emplace
+## <a name="emplace"></a> emplace
 
 Inserts an element constructed in place into the vector at a specified position.
 
@@ -807,10 +801,11 @@ iterator emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*_Where*|The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.|
-|*val*|The value of the element being inserted into the `vector`.|
+*_Where*\
+The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.
+
+*val*\
+The value of the element being inserted into the `vector`.
 
 ### Return Value
 
@@ -862,7 +857,7 @@ v1 = 10 20 30
 vv1[0] = 10 20 30
 ```
 
-## <a name="emplace_back"></a>  vector::emplace_back
+## <a name="emplace_back"></a> emplace_back
 
 Adds an element constructed in place to the end of the vector.
 
@@ -873,9 +868,8 @@ void emplace_back(Types&&... _Args);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Args*|Constructor arguments. The function infers which constructor overload to invoke based on the arguments provided.|
+*_Args*\
+Constructor arguments. The function infers which constructor overload to invoke based on the arguments provided.
 
 ### Example
 
@@ -893,7 +887,7 @@ int main()
 }
 ```
 
-## <a name="empty"></a>  vector::empty
+## <a name="empty"></a> empty
 
 Tests if the vector is empty.
 
@@ -931,7 +925,7 @@ int main( )
 The vector is not empty.
 ```
 
-## <a name="end"></a>  vector::end
+## <a name="end"></a> end
 
 Returns the past-the-end iterator.
 
@@ -975,7 +969,7 @@ int main( )
 2
 ```
 
-## <a name="erase"></a>  vector::erase
+## <a name="erase"></a> erase
 
 Removes an element or a range of elements in a vector from specified positions.
 
@@ -990,11 +984,14 @@ iterator erase(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*_Where*|Position of the element to be removed from the vector.|
-|*first*|Position of the first element removed from the vector.|
-|*last*|Position just beyond the last element removed from the vector.|
+*_Where*\
+Position of the element to be removed from the vector.
+
+*first*\
+Position of the first element removed from the vector.
+
+*last*\
+Position just beyond the last element removed from the vector.
 
 ### Return Value
 
@@ -1045,7 +1042,7 @@ v1 = 20 30 40 50
 v1 = 20 50
 ```
 
-## <a name="front"></a>  vector::front
+## <a name="front"></a> front
 
 Returns a reference to the first element in a vector.
 
@@ -1091,7 +1088,7 @@ int main( )
 }
 ```
 
-## <a name="get_allocator"></a>  vector::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Returns a copy of the allocator object used to construct the vector.
 
@@ -1130,7 +1127,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>  vector::insert
+## <a name="insert"></a> insert
 
 Inserts an element or a number of elements or a range of elements into the vector at a specified position.
 
@@ -1157,13 +1154,20 @@ void insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*_Where*|The position in the vector where the first element is inserted.|
-|*val*|The value of the element being inserted into the vector.|
-|*count*|The number of elements being inserted into the vector.|
-|*first*|The position of the first element in the range of elements to be copied.|
-|*last*|The position of the first element beyond the range of elements to be copied.|
+*_Where*\
+The position in the vector where the first element is inserted.
+
+*val*\
+The value of the element being inserted into the vector.
+
+*count*\
+The number of elements being inserted into the vector.
+
+*first*\
+The position of the first element in the range of elements to be copied.
+
+*last*\
+The position of the first element beyond the range of elements to be copied.
 
 ### Return Value
 
@@ -1237,7 +1241,7 @@ v1 = 10 50 50 40 50 50 50 50 20 30
 vv1[0] = 10 50 50 40 50 50 50 50 20 30
 ```
 
-## <a name="iterator"></a>  vector::iterator
+## <a name="iterator"></a> iterator
 
 A type that provides a random-access iterator that can read or modify any element in a vector.
 
@@ -1253,7 +1257,7 @@ A type **iterator** can be used to modify the value of an element.
 
 See the example for [begin](#begin).
 
-## <a name="max_size"></a>  vector::max_size
+## <a name="max_size"></a> max_size
 
 Returns the maximum length of the vector.
 
@@ -1284,7 +1288,7 @@ int main( )
 }
 ```
 
-## <a name="op_at"></a>  vector::operator[]
+## <a name="op_at"></a> operator[]
 
 Returns a reference to the vector element at a specified position.
 
@@ -1296,9 +1300,8 @@ const_reference operator[](size_type Pos) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Pos*|The position of the vector element.|
+*Pos*\
+The position of the vector element.
 
 ### Return Value
 
@@ -1331,7 +1334,7 @@ int main( )
 }
 ```
 
-## <a name="op_eq"></a>  vector::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the elements of the vector with a copy of another vector.
 
@@ -1343,9 +1346,8 @@ vector& operator=(vector&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [vector](../standard-library/vector-class.md) being copied into the `vector`.|
+*right*\
+The [vector](../standard-library/vector-class.md) being copied into the `vector`.
 
 ### Remarks
 
@@ -1392,7 +1394,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  vector::pointer
+## <a name="pointer"></a> pointer
 
 A type that provides a pointer to an element in a vector.
 
@@ -1434,7 +1436,7 @@ int main( )
 44
 ```
 
-## <a name="pop_back"></a>  vector::pop_back
+## <a name="pop_back"></a> pop_back
 
 Deletes the element at the end of the vector.
 
@@ -1446,7 +1448,7 @@ void pop_back();
 
 For a code example, see [vector::push_back()](#push_back).
 
-## <a name="push_back"></a>  vector::push_back
+## <a name="push_back"></a> push_back
 
 Adds an element to the end of the vector.
 
@@ -1458,7 +1460,7 @@ void push_back(T&& Val);
 
 ### Parameters
 
-*Val*<br/>
+*Val*\
 The value to assign to the element added to the end of the vector.
 
 ### Example
@@ -1501,7 +1503,7 @@ int main()
 }
 ```
 
-## <a name="rbegin"></a>  vector::rbegin
+## <a name="rbegin"></a> rbegin
 
 Returns an iterator to the first element in a reversed vector.
 
@@ -1551,7 +1553,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.
 ```
 
-## <a name="reference"></a>  vector::reference
+## <a name="reference"></a> reference
 
 A type that provides a reference to an element stored in a vector.
 
@@ -1563,7 +1565,7 @@ typedef typename Allocator::reference reference;
 
 See [at](#at) for an example of how to use **reference** in the vector class.
 
-## <a name="rend"></a>  vector::rend
+## <a name="rend"></a> rend
 
 Returns an iterator that addresses the location succeeding the last element in a reversed vector.
 
@@ -1613,7 +1615,7 @@ int main( )
 1
 ```
 
-## <a name="reserve"></a>  vector::reserve
+## <a name="reserve"></a> reserve
 
 Reserves a minimum length of storage for a vector object, allocating space if necessary.
 
@@ -1623,7 +1625,7 @@ void reserve(size_type count);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The minimum length of storage to be allocated for the vector.
 
 ### Example
@@ -1654,7 +1656,7 @@ Current capacity of v1 = 1
 Current capacity of v1 = 20
 ```
 
-## <a name="resize"></a>  vector::resize
+## <a name="resize"></a> resize
 
 Specifies a new size for a vector.
 
@@ -1665,10 +1667,10 @@ void resize(size_type Newsize, Type Val);
 
 ### Parameters
 
-*Newsize*<br/>
+*Newsize*\
 The new size of the vector.
 
-*Val*<br/>
+*Val*\
 The initialization value of new elements added to the vector if the new size is larger that the original size. If the value is omitted, the new objects use their default constructor.
 
 ### Remarks
@@ -1783,7 +1785,7 @@ int main()
 }
 ```
 
-## <a name="reverse_iterator"></a>  vector::reverse_iterator
+## <a name="reverse_iterator"></a> reverse_iterator
 
 A type that provides a random-access iterator that can read or modify any element in a reversed vector.
 
@@ -1799,7 +1801,7 @@ A type `reverse_iterator` is used to iterate through the vector in reverse.
 
 See the example for [rbegin](#rbegin).
 
-## <a name="shrink_to_fit"></a>  vector::shrink_to_fit
+## <a name="shrink_to_fit"></a> shrink_to_fit
 
 Discards excess capacity.
 
@@ -1839,7 +1841,7 @@ Current capacity of v1 = 20
 Current capacity of v1 = 1
 ```
 
-## <a name="size"></a>  vector::size
+## <a name="size"></a> size
 
 Returns the number of elements in the vector.
 
@@ -1880,7 +1882,7 @@ Vector length is 1.
 Vector length is now 2.
 ```
 
-## <a name="size_type"></a>  vector::size_type
+## <a name="size_type"></a> size_type
 
 A type that counts the number of elements in a vector.
 
@@ -1892,7 +1894,7 @@ typedef typename Allocator::size_type size_type;
 
 See the example for [capacity](#capacity).
 
-## <a name="swap"></a>  vector::swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two vectors.
 
@@ -1907,10 +1909,10 @@ friend void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 A vector providing the elements to be swapped, or a vector whose elements are to be exchanged with those of the vector *left*.
 
-*left*<br/>
+*left*\
 A vector whose elements are to be exchanged with those of the vector *right*.
 
 ### Example
@@ -1952,7 +1954,7 @@ The number of elements in v1 = 2
 The number of elements in v2 = 3
 ```
 
-## <a name="value_type"></a>  vector::value_type
+## <a name="value_type"></a> value_type
 
 A type that represents the data type stored in a vector.
 
@@ -1985,7 +1987,7 @@ int main( )
 44
 ```
 
-## <a name="vector"></a>  vector::vector
+## <a name="vector"></a> vector
 
 Constructs a vector of a specific size or with elements of a specific value or with a specific allocator or as a copy of all or part of some other vector.
 
@@ -2008,15 +2010,26 @@ vector(InputIterator First, InputIterator Last, const Allocator& Al);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The allocator class to use with this object. [get_allocator](#get_allocator) returns the allocator class for the object.|
-|*Count*|The number of elements in the constructed vector.|
-|*Val*|The value of the elements in the constructed vector.|
-|*Right*|The vector of which the constructed vector is to be a copy.|
-|*First*|Position of the first element in the range of elements to be copied.|
-|*Last*|Position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list containing the elmeents to copy.|
+*Al*\
+The allocator class to use with this object. [get_allocator](#get_allocator) returns the allocator class for the object.
+
+*Count*\
+The number of elements in the constructed vector.
+
+*Val*\
+The value of the elements in the constructed vector.
+
+*Right*\
+The vector of which the constructed vector is to be a copy.
+
+*First*\
+Position of the first element in the range of elements to be copied.
+
+*Last*\
+Position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list containing the elmeents to copy.
 
 ### Remarks
 
@@ -2034,7 +2047,7 @@ The seventh constructor moves the vector *Right*.
 
 The eighth constructor uses an initializer_list to specify the elements.
 
-The ninth and tenth constructors copy the range [ `First`, `Last`) of a vector.
+The ninth and tenth constructors copy the range [`First`, `Last`) of a vector.
 
 ### Example
 

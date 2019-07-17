@@ -12,11 +12,14 @@ Includes the C standard library header \<stdbool.h> and adds the associated name
 > [!NOTE]
 > Because the \<stdbool.h> header defines macros that are keywords in C++, including it has no effect. The \<stdbool.h> header is deprecated in C++. The \<cstdbool> header is deprecated in C++17 and removed in the draft C++20 standard.
 
-## Syntax
+> [!NOTE]
+> This header has been deprecated in C++ 17.
 
-```cpp
-#include <cstdbool>
-```
+## Requirements
+
+**Header:** \<cstdbool>
+
+**Namespace:** std
 
 ## Remarks
 

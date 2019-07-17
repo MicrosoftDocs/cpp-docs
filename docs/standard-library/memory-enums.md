@@ -6,19 +6,17 @@ ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
 ---
 # &lt;memory&gt; enums
 
-||
-|-|
-|[pointer_safety](#pointer_safety)|
-
-## <a name="pointer_safety"></a>  pointer_safety Enumeration
+## <a name="pointer_safety"></a> pointer_safety Enumeration
 
 The enumeration of possible values returned by `get_pointer_safety`.
 
+```
 class pointer_safety {
    relaxed,
    preferred,
    strict
-   };
+};
+```
 
 ### Remarks
 
@@ -29,7 +27,3 @@ The scoped **enum** defines the values that can be returned by `get_pointer_safe
 `preferred` -- as before, but pointers not safely derived should not be dereferenced.
 
 `strict` -- pointers not safely derived might be treated differently than those safely derived.
-
-## See also
-
-[\<memory>](../standard-library/memory.md)<br/>

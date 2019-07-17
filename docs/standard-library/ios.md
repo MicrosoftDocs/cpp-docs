@@ -9,11 +9,14 @@ ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
 
 Defines several types and functions basic to the operation of iostreams. This header is typically included for you by another iostream headers; you rarely include it directly.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ios>
-```
+**Header**: \<ios>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<ios> library uses the `#include <iosfwd>` statement.
 
 ## Remarks
 
@@ -27,9 +30,11 @@ istr>> noskipws;
 
 calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
+## Members
+
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[ios](../standard-library/ios-typedefs.md#ios)|Supports the ios class from the old iostream library.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|Supports internal operations.|
@@ -47,6 +52,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Configures the flags of an `ios_base` object to use a default display format for float values.|
 |[fixed](../standard-library/ios-functions.md#fixed)|Specifies that a floating-point number is displayed in fixed-decimal notation.|
 |[hex](../standard-library/ios-functions.md#hex)|Specifies that integer variables appear in base 16 notation.|
+|[hexfloat](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|Causes a number's sign to be left justified and the number to be right justified.|
 |[left](../standard-library/ios-functions.md#left)|Causes text that is not as wide as the output width to appear in the stream flush with the left margin.|
 |[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as 1 or 0 in the stream.|
@@ -66,9 +72,19 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 |[unitbuf](../standard-library/ios-functions.md#unitbuf)|Causes output to be processed when the buffer is not empty.|
 |[uppercase](../standard-library/ios-functions.md#uppercase)|Specifies that hexadecimal digits and the exponent in scientific notation appear in uppercase.|
 
+### Error Reporting
+
+|||
+|-|-|
+|[io_errc](../standard-library/ios-functions.md#io_errc)||
+|[is_error_code_enum](../standard-library/ios-functions.md#is_error_code_enum)||
+|[iostream_category](../standard-library/ios-functions.md#iostream_category)||
+|[make_error_code](../standard-library/ios-functions.md#make_error_code)||
+|[make_error_condition](../standard-library/ios-functions.md#make_error_condition)||
+
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters.|
 |[fpos](../standard-library/fpos-class.md)|The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream.|

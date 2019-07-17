@@ -6,20 +6,21 @@ helpviewer_keywords: ["cuchar header"]
 ---
 # &lt;cuchar&gt;
 
-Includes the Standard C library header \<uchar.h> and adds the associated names to the `std` namespace.
+Includes the C standard library header \<uchar.h> and adds the associated names to the `std` namespace.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cuchar>
-```
+**Header:** \<cuchar>
+
+**Namespace:** std
 
 ## Remarks
 
-Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+This header adds the C standard library functions [c16rtomb](../../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [c32rtomb](../../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [mbrtoc16](../../c-runtime-library/reference/mbrtoc16-mbrtoc323.md), and [mbrtoc32](../../c-runtime-library/reference/mbrtoc16-mbrtoc323.md) to the `std` namespace.
 
 ## See also
 
-[Header files reference](../standard-library/cpp-standard-library-header-files.md)\
-[C++ standard library overview](../standard-library/cpp-standard-library-overview.md)\
-[Thread safety in the C++ standard library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Header files reference](cpp-standard-library-header-files.md)\
+[C++ standard library overview](cpp-standard-library-overview.md)\
+[Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
+

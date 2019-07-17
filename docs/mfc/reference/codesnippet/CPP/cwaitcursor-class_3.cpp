@@ -1,10 +1,10 @@
-// This example illustrates performing an operation 
-// which changes the wait cursor. You should call 
-// CWaitCursor::Restore to restore the wait 
+// This example illustrates performing an operation
+// which changes the wait cursor. You should call
+// CWaitCursor::Restore to restore the wait
 // cursor after an operation which changes the cursor.
-void AnotherLengthyFunction( )
+void AnotherLengthyFunction()
 {
-   CWaitCursor wait;   // display wait cursor
+   CWaitCursor wait; // display wait cursor
 
    // do some lengthy processing
    Sleep(1000);
@@ -25,15 +25,15 @@ void AnotherLengthyFunction( )
 }
 
 // If the wait cursor is changed by a function called by
-// the function which created the wait cursor, you 
-// can call CCmdTarget::RestoreWaitCursor to restore 
+// the function which created the wait cursor, you
+// can call CCmdTarget::RestoreWaitCursor to restore
 // the wait cursor.
 void CalledFunction()
 {
    CFileDialog dlg(TRUE);
    dlg.DoModal();
 
-   // Since CWinApp is derived from CCmdTarget, we can use a 
+   // Since CWinApp is derived from CCmdTarget, we can use a
    // pointer to our application object to make the call to
    // CCmdTarget::RestoreWaitCursor.
    AfxGetApp()->RestoreWaitCursor();

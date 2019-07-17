@@ -17,7 +17,6 @@ class binder2nd
     : public unaryFunction <typename Operation::first_argument_type,
     typename Operation::result_type>
 {
-public:
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder2nd(
@@ -26,22 +25,18 @@ public:
 
     result_type operator()(const argument_type& left) const;
     result_type operator()(argument_type& left) const;
-
-protected:
-    Operation op;
-    typename Operation::second_argument_type value;
 };
 ```
 
 ### Parameters
 
-*Func*<br/>
+*Func*\
 The binary function object to be converted to a unary function object.
 
-*right*<br/>
+*right*\
 The value to which the second argument of the binary function object is to be bound.
 
-*left*<br/>
+*left*\
 The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
 ## Return Value
@@ -50,9 +45,9 @@ The unary function object that results from binding the second argument of the b
 
 ## Remarks
 
-The template class stores a copy of a binary function object _ *Func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning **op**( `left`, **value**).
+The template class stores a copy of a binary function object _ *Func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning **op**(`left`, **value**).
 
-If `Func` is an object of type `Operation` and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) ( `Func`, `c` ) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> ( `Func`, `c` ) and more convenient.
+If `Func` is an object of type `Operation` and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> (`Func`, `c`) and more convenient.
 
 ## Example
 
@@ -97,20 +92,10 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

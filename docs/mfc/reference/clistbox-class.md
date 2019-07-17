@@ -42,7 +42,7 @@ class CListBox : public CWnd
 |[CListBox::GetCount](#getcount)|Returns the number of strings in a list box.|
 |[CListBox::GetCurSel](#getcursel)|Returns the zero-based index of the currently selected string in a list box.|
 |[CListBox::GetHorizontalExtent](#gethorizontalextent)|Returns the width in pixels that a list box can be scrolled horizontally.|
-|[CListBox::GetItemData](#getitemdata)|Returns the 32-bit value associated with the list-box item.|
+|[CListBox::GetItemData](#getitemdata)|Returns a value associated with the list-box item.|
 |[CListBox::GetItemDataPtr](#getitemdataptr)|Returns a pointer to a list-box item.|
 |[CListBox::GetItemHeight](#getitemheight)|Determines the height of items in a list box.|
 |[CListBox::GetItemRect](#getitemrect)|Returns the bounding rectangle of the list-box item as it is currently displayed.|
@@ -66,7 +66,7 @@ class CListBox : public CWnd
 |[CListBox::SetColumnWidth](#setcolumnwidth)|Sets the column width of a multicolumn list box.|
 |[CListBox::SetCurSel](#setcursel)|Selects a list-box string.|
 |[CListBox::SetHorizontalExtent](#sethorizontalextent)|Sets the width in pixels that a list box can be scrolled horizontally.|
-|[CListBox::SetItemData](#setitemdata)|Sets the 32-bit value associated with the list-box item.|
+|[CListBox::SetItemData](#setitemdata)|Sets a value associated with the list-box item.|
 |[CListBox::SetItemDataPtr](#setitemdataptr)|Sets a pointer to the list-box item.|
 |[CListBox::SetItemHeight](#setitemheight)|Sets the height of items in a list box.|
 |[CListBox::SetLocale](#setlocale)|Sets the locale identifier for a list box.|
@@ -598,7 +598,7 @@ Specifies the zero-based index of the item in the list box.
 
 ### Return Value
 
-The 32-bit value associated with the item, or LB_ERR if an error occurs.
+The value associated with the item, or LB_ERR if an error occurs.
 
 ### Remarks
 
@@ -1184,7 +1184,7 @@ This member function is not useful for multicolumn list boxes. For multicolumn l
 
 ##  <a name="setitemdata"></a>  CListBox::SetItemData
 
-Sets a 32-bit value associated with the specified item in a list box.
+Sets a value associated with the specified item in a list box.
 
 ```
 int SetItemData(

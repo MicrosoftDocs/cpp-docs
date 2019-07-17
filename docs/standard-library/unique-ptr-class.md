@@ -69,16 +69,16 @@ public:
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `unique_ptr`.
 
-*Nptr*<br/>
+*Nptr*\
 An `rvalue` of type `std::nullptr_t`.
 
-*Ptr*<br/>
+*Ptr*\
 A `pointer`.
 
-*Deleter*<br/>
+*Deleter*\
 A `deleter` function that is bound to a `unique_ptr`.
 
 ## Exceptions
@@ -101,21 +101,21 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[unique_ptr](#unique_ptr)|There are seven constructors for `unique_ptr`.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[deleter_type](#deleter_type)|A synonym for the template parameter `Del`.|
 |[element_type](#element_type)|A synonym for the template parameter `T`.|
 |[pointer](#pointer)|A synonym for `Del::pointer` if defined, otherwise `T *`.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[get](#get)|Returns `stored_ptr`.|
 |[get_deleter](#get_deleter)|Returns a reference to `stored_deleter`.|
@@ -125,20 +125,14 @@ The stored pointer to an owned resource, `stored_ptr` has type `pointer`. It is 
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |**operator bool**|The operator returns a value of a type that is convertible to **bool**. The result of the conversion to **bool** is **true** when `get() != pointer()`, otherwise **false**.|
 |`operator->`|The member function returns `stored_ptr`.|
 |`operator*`|The member function returns `*stored_ptr`.|
-|[unique_ptr operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|
+|[operator=](#unique_ptr_operator_eq)|Assigns the value of a `unique_ptr` (or a `pointer-type`) to the current `unique_ptr`.|
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
-## <a name="deleter_type"></a>  deleter_type
+### <a name="deleter_type"></a> deleter_type
 
 The type is a synonym for the template parameter `Del`.
 
@@ -146,11 +140,11 @@ The type is a synonym for the template parameter `Del`.
 typedef Del deleter_type;
 ```
 
-### Remarks
+#### Remarks
 
 The type is a synonym for the template parameter `Del`.
 
-## <a name="element_type"></a>  element_type
+### <a name="element_type"></a> element_type
 
 The type is a synonym for the template parameter `Type`.
 
@@ -158,11 +152,11 @@ The type is a synonym for the template parameter `Type`.
 typedef Type element_type;
 ```
 
-### Remarks
+#### Remarks
 
 The type is a synonym for the template parameter `Ty`.
 
-## <a name="get"></a>  unique_ptr::get
+### <a name="get"></a> get
 
 Returns `stored_ptr`.
 
@@ -170,11 +164,11 @@ Returns `stored_ptr`.
 pointer get() const;
 ```
 
-### Remarks
+#### Remarks
 
 The member function returns `stored_ptr`.
 
-## <a name="get_deleter"></a>  unique_ptr::get_deleter
+### <a name="get_deleter"></a> get_deleter
 
 Returns a reference to `stored_deleter`.
 
@@ -184,11 +178,11 @@ Del& get_deleter();
 const Del& get_deleter() const;
 ```
 
-### Remarks
+#### Remarks
 
 The member function returns a reference to `stored_deleter`.
 
-## <a name="unique_ptr_operator_eq"></a>  unique_ptr operator=
+### <a name="unique_ptr_operator_eq"></a> operator=
 
 Assigns the address of the provided `unique_ptr` to the current one.
 
@@ -199,15 +193,15 @@ unique_ptr& operator=(unique_ptr<Type, Del>&& right);
 unique_ptr& operator=(pointer-type);
 ```
 
-### Parameters
+#### Parameters
 
 A `unique_ptr` reference used to assign the value of to the current `unique_ptr`.
 
-### Remarks
+#### Remarks
 
 The member functions call `reset(right.release())` and move `right.stored_deleter` to `stored_deleter`, then return `*this`.
 
-## <a name="pointer"></a>  pointer
+### <a name="pointer"></a> pointer
 
 A synonym for `Del::pointer` if defined, otherwise `Type *`.
 
@@ -215,11 +209,11 @@ A synonym for `Del::pointer` if defined, otherwise `Type *`.
 typedef T1 pointer;
 ```
 
-### Remarks
+#### Remarks
 
 The type is a synonym for `Del::pointer` if defined, otherwise `Type *`.
 
-## <a name="release"></a>  unique_ptr::release
+### <a name="release"></a> release
 
 Releases ownership of the returned stored pointer to the caller and sets the stored pointer value to **nullptr**.
 
@@ -227,11 +221,11 @@ Releases ownership of the returned stored pointer to the caller and sets the sto
 pointer release();
 ```
 
-### Remarks
+#### Remarks
 
 Use `release` to take over ownership of the raw pointer stored by the `unique_ptr`. The caller is responsible for deletion of the returned pointer. The `unique-ptr` is set to the empty default-constructed state. You can assign another pointer of compatible type to the `unique_ptr` after the call to `release`.
 
-### Example
+#### Example
 
 This example shows how the caller of release is responsible for the object returned:
 
@@ -272,8 +266,6 @@ int main() {
 }
 ```
 
-Computer output:
-
 ```Output
 Constructing Sample(3)
 Constructing Sample(42)
@@ -281,7 +273,7 @@ Deleting Sample(42)
 Deleting Sample(3)
 ```
 
-## <a name="reset"></a>  unique_ptr::reset
+### <a name="reset"></a> reset
 
 Takes ownership of the pointer parameter, and then deletes the original stored pointer. If the new pointer is the same as the original stored pointer, `reset` deletes the pointer and sets the stored pointer to **nullptr**.
 
@@ -290,19 +282,18 @@ void reset(pointer ptr = pointer());
 void reset(nullptr_t ptr);
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the resource to take ownership of.|
+*ptr*\
+A pointer to the resource to take ownership of.
 
-### Remarks
+#### Remarks
 
 Use `reset` to change the stored [pointer](#pointer) owned by the `unique_ptr` to *ptr* and then delete the original stored pointer. If the `unique_ptr` was not empty, `reset` invokes the deleter function returned by [get_deleter](#get_deleter) on the original stored pointer.
 
 Because `reset` first stores the new pointer *ptr*, and then deletes the original stored pointer, it's possible for `reset` to immediately delete *ptr* if it is the same as the original stored pointer.
 
-## <a name="swap"></a>  unique_ptr::swap
+### <a name="swap"></a> swap
 
 Exchanges pointers between two `unique_ptr` objects.
 
@@ -310,16 +301,16 @@ Exchanges pointers between two `unique_ptr` objects.
 void swap(unique_ptr& right);
 ```
 
-### Parameters
+#### Parameters
 
-*right*<br/>
+*right*\
 A `unique_ptr` used to swap pointers.
 
-### Remarks
+#### Remarks
 
 The member function swaps `stored_ptr` with `right.stored_ptr` and `stored_deleter` with `right.stored_deleter`.
 
-## <a name="unique_ptr"></a>  unique_ptr::unique_ptr
+### <a name="unique_ptr"></a> unique_ptr
 
 There are seven constructors for `unique_ptr`.
 
@@ -339,24 +330,27 @@ unique_ptr(
 unique_ptr(pointer ptr, typename remove_reference<Del>::type&& _Deleter);
 unique_ptr(unique_ptr&& right);
 template <class Ty2, Class Del2>
-unique_ptr(unique_ptr<Ty2, Del2>&& right);
+    unique_ptr(unique_ptr<Ty2, Del2>&& right);
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the resource to be assigned to a `unique_ptr.`|
-|*_Deleter*|A `deleter` to be assigned to a `unique_ptr`.|
-|*right*|An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.|
+*ptr*\
+A pointer to the resource to be assigned to a `unique_ptr`.
 
-### Remarks
+*_Deleter*\
+A `deleter` to be assigned to a `unique_ptr`.
+
+*right*\
+An `rvalue reference` to a `unique_ptr` from which `unique_ptr` fields are move assigned to the newly constructed `unique_ptr`.
+
+#### Remarks
 
 The first two constructors construct an object that manages no resource. The third constructor stores *ptr* in `stored_ptr`. The fourth constructor stores *ptr* in `stored_ptr` and `deleter` in `stored_deleter`.
 
 The fifth constructor stores *ptr* in `stored_ptr` and moves `deleter` into `stored_deleter`. The sixth and seventh constructors store `right.release()` in `stored_ptr` and moves `right.get_deleter()` into `stored_deleter`.
 
-## <a name="dtorunique_ptr"></a>  unique_ptr ~unique_ptr
+### <a name="dtorunique_ptr"></a> ~unique_ptr
 
 The destructor for `unique_ptr`, destroys a `unique_ptr` object.
 
@@ -364,10 +358,6 @@ The destructor for `unique_ptr`, destroys a `unique_ptr` object.
 ~unique_ptr();
 ```
 
-### Remarks
+#### Remarks
 
 The destructor calls `get_deleter()(stored_ptr)`.
-
-## See also
-
-[\<memory>](../standard-library/memory.md)<br/>

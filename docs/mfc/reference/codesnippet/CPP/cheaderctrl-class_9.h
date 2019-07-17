@@ -1,2 +1,2 @@
-	CHeaderCtrl m_headerCtrl;
-	CSplitButton m_splitButton;
+CHeaderCtrl m_headerCtrl;
+CSplitButton m_splitButton;

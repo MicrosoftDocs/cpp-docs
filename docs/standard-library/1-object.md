@@ -13,8 +13,7 @@ Placeholders for replaceable arguments.
 
 ```cpp
 namespace placeholders {
-    extern unspecified _1,
-    _2, ... _M
+    extern unspecified _1, _2, ... _M
 } // namespace placeholders (within std)
 ```
 
@@ -74,14 +73,3 @@ int main()
 2^2 == 4
 3^2 == 9
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[bind](../standard-library/functional-functions.md#bind)<br/>
-[is_placeholder Class](../standard-library/is-placeholder-class.md)<br/>
