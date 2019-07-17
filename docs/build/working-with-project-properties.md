@@ -1,13 +1,13 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
 description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
-ms.date: "07/17/2019"
+ms.date: "03/27/2019"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ---
 # Set compiler and build properties
 
-In the IDE, all information that is needed to build a project is exposed as *properties*. This information includes the application name, extension (such as DLL, LIB, EXE), compiler options, linker options, debugger settings, custom build steps, and many other things. Typically, you use *property pages* to view and modify these properties. To access the property pages, choose **Project** > **_projectname_ Properties** from the main menu, or right-click on the project node in **Solution Explorer** and choose **Properties**.
+In the IDE, all information that is needed to build a project is exposed as *properties*. This information includes the application name, extension (such as DLL, LIB, EXE), compiler options, linker options, debugger settings, custom build steps, and many other things. Typically, you use *property pages* ( **Project &#124; Properties**) to view and modify these properties. To access the property pages, choose **Project > \<project name> Properties** from the main menu, or right-click on the project node in **Solution Explorer** and choose **Properties**.
 
 ## Default properties
 
@@ -72,7 +72,7 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 #### To create a user-defined macro
 
-1. Open the **Property Manager** window. (On the menu bar, choose **View** > **Property Manager** or **View** > **Other Windows** > **Property Manager**.) Open the shortcut menu for a property sheet (its name ends in .user) and then choose **Properties**. The **Property Pages** dialog box for that property sheet opens.
+1. In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
 
 1. In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
 
