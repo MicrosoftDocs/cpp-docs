@@ -1,6 +1,6 @@
 ---
 title: "/FORCE (Force File Output)"
-ms.date: "11/04/2016"
+ms.date: "07/19/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.ForceLink", "/force"]
 helpviewer_keywords: ["FORCE linker option", "file output in linker", "/FORCE linker option", "-FORCE linker option"]
 ms.assetid: b1e9a218-a5eb-4e60-a4a4-65b4be15e5da
@@ -29,13 +29,15 @@ If a module is compiled with **/clr**, **/FORCE** will not create an image.
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Right-click on the project in **Solution Explorer** and choose **Properties**. 
 
 1. Click the **Linker** folder.
 
 1. Click the **Command Line** property page.
 
 1. Type the option into the **Additional Options** box.
+
+For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 ### To set this linker option programmatically
 
