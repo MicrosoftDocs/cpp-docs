@@ -118,7 +118,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 ## In this section
 
 [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
-How to create a .props file with custom build settings that can be shared or resused.
+How to create a .props file with custom build settings that can be shared or reused.
 
 [Project property inheritance](project-property-inheritance.md)<br/>
 Describes the order of evaluation for the .props, .targets, .vcxproj files and environment variables in the build process.
