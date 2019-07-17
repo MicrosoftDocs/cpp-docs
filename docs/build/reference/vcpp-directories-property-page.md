@@ -1,6 +1,6 @@
 ---
 title: "VC++ Directories Property Page"
-ms.date: "10/09/2018"
+ms.date: "07/17/2019"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]
 helpviewer_keywords: ["VC++ Directories Property Page"]
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
