@@ -2,7 +2,7 @@
 title: "Walkthrough: Create and use your own Dynamic Link Library (C++)"
 description: "Use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
 ms.custom: "conceptual"
-ms.date: "07/14/2019"
+ms.date: "07/17/2019"
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ---
@@ -259,7 +259,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
    }
    ```
 
-To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The output should look something like:
+To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The output should look something like this. Note that the DLL executable and related compiler output is placed in a folder called *Debug* directly below the solution folder. If you create a Release build, the output will be placed in a folder called *Release*:
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -404,7 +404,7 @@ This code can be compiled, but not linked, because the linker can't find the imp
 
    ![Edit the Additional Library Directories property](media/mathclient-additional-library-directories-property.png "Edit the Additional Library Directories property")
 
-1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.lib** file. Enter this value to use a macro that works for both Debug and Release builds:
+1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.lib** file. It is in a folder called `Debug` directly under your solution folder. If you create a release build, the output will be placed in a folder called `Release`. You can use the following macro so that the linker can find your DLL regardless of which kind of build you create:
 
    **Visual Studio 2019:**
 
@@ -413,7 +413,7 @@ This code can be compiled, but not linked, because the linker can't find the imp
    **Visual Studio 2017 and earlier:**
 
    `..\..\MathLibrary\$(IntDir)`
- 
+
    ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
 
 1. Once you've entered the path to the library file in the **Additional Library Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box.
@@ -442,7 +442,7 @@ Your client app can now compile and link successfully, but it still doesn't have
 
 1. Choose the **OK** button to save your changes to the project properties.
 
-Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like this depending on your version of Visual Studio:
+Now your client app has everything it needs to build and run. Build the application by choosing **Build** > **Build Solution** on the menu bar. The **Output** window in Visual Studio should have something like the following example depending on your version of Visual Studio:
 
 ```Output
 1>------ Build started: Project: MathClient, Configuration: Debug Win32 ------
