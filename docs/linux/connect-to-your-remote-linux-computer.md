@@ -15,11 +15,11 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker range=">=vs-2017"
 
-You can configure a Linux project to target a remote machine or Windows Subsystem for Linux (WSL). For remote machines, and for WSL on Visual Studio 2017, you need to set up a connection. 
+You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For remote machines, and for WSL on Visual Studio 2017, you need to set up a remote connection. 
 
 ## Connect to a remote Linux computer
 
-When building a C++ Linux project for a remote Linux system (VM or physical machine), Linux code is copied to your remote Linux computer and then compiled based on Visual Studio settings.
+When building a C++ Linux project for a remote Linux system (VM or physical machine), Linux source code is copied to your remote Linux computer and then compiled based on Visual Studio settings.
 
 To set up this remote connection:
 
