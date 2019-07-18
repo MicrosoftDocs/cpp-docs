@@ -6,9 +6,9 @@ helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], 
 ms.description: Use the import statement to access types and functions defined in the specified module.
 ---
 
-# import, export, module
+# module, import, export
 
-The **import**, **export** and **module** keywords are available in C++20 and require the `/experimental:modules` compiler switch along with `/std:c++latest`. For more information, see [Overview of modules in C++](modules-cpp.md).
+The **module**, **import**, and **export** keywords are available in C++20 and require the `/experimental:modules` compiler switch along with `/std:c++latest`. For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## module
 
