@@ -110,7 +110,7 @@ Select option for code optimization; choose Custom to use specific optimization 
 
 ### Inline Function Expansion
 
-Select the level of [inline function](../cpp/inline-functions-cpp.md) expansion for the build. Sets [/Ob1, /Ob2](ob-inline-function-expansion.md).
+Select the level of [inline function](../../cpp/inline-functions-cpp.md) expansion for the build. Sets [/Ob1, /Ob2](ob-inline-function-expansion.md).
 
 **Choices**
 
