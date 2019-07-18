@@ -12,11 +12,11 @@ Includes the C++ standard library header [\<complex>](complex.md).
 > [!NOTE]
 > The C standard library \<complex.h> header isn't included by \<ccomplex>, because it's effectively replaced by the C++ overloads in \<complex> and \<cmath>. That makes the \<ccomplex> header redundant. The \<complex.h> header is deprecated in C++. The \<ccomplex> header is deprecated in C++17 and removed in the draft C++20 standard.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <ccomplex>
-```
+**Header:** \<ccomplex>
+
+**Namespace:** std
 
 ## Remarks
 

@@ -12,11 +12,11 @@ In some C++ standard library implementations, this header includes the C standar
 > [!NOTE]
 > Because the \<stdalign.h> header defines macros that are keywords in C++, including it has no effect. The \<stdalign.h> header is deprecated in C++. The \<cstdalign> header is deprecated in C++17 and removed in the draft C++20 standard.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <cstdalign>
-```
+**Header:** \<cstdalign>
+
+**Namespace:** std
 
 ## Macros
 
