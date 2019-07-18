@@ -10,14 +10,16 @@ ms.description: Use the import statement to access types and functions defined i
 
 The **import**, **export** and **module** keywords are available in C++20 and require the `/experimental:modules` compiler switch along with `/std:c++latest`. For more information, see [Overview of modules in C++](modules-cpp.md).
 
- ## module
+## module
+
 Use the **module** statement at the beginning of a module implemetation file to specify that the file contents belong to the named module. 
 
 ```cpp
 module ModuleA;
 ```
 
- ## export
+## export
+
 Use the **export module** statement for the module's primary interface file, which must have extension **.ixx**:
 
 ```cpp
@@ -27,6 +29,8 @@ export module ModuleA;
 In an interface file, use the **export** modifier on names that are intended to be part of the public interface:
 
 ```cpp
+// ModuleA.ixx
+
 export module ModuleA;
 
 namespace Bar
@@ -37,9 +41,23 @@ namespace Bar
 }
 ```
 
-When the **export** modifier is applied to a namespace name, all names in the namespace are exported. The **export** keyword may not appear in a module implementation file.
+Non-exported names are not visible to code that imports the module:
 
- ## import
+```cpp
+//MyProgram.cpp
+
+import module ModuleA;
+
+void main() {
+  Bar::f(); // OK
+  Bar::d(); // OK
+  Bar::internal_f(); // Ill-formed: error C2065: 'internal_f': undeclared identifier
+}
+```
+
+The **export** keyword may not appear in a module implementation file. When the **export** modifier is applied to a namespace name, all names in the namespace are exported.
+
+## import
 
 Use the **import** statement to make a module's names visible in your program. The import statement must appear after the module statement and after any #include directives, but before any declarations in the file.
 
