@@ -4360,7 +4360,7 @@
                 - name: Overview of modules in C++
                   href: cpp/modules-cpp.md
                 - name: module, import, export
-                  href: cpp/import-export-module.cpp
+                  href: cpp/import-export-module.md
             - name: Templates
               expanded: false
               items: 
