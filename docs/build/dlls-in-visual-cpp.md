@@ -26,7 +26,7 @@ Even though DLLs and applications are both executable modules, they differ in se
 
 ## Advantages of using DLLs
 
-Dynamic linking instead of static linking to code and resources offers the following advantages.
+Dynamic linking instead of static linking to code and resources offers the following advantages:
 
 - Dynamic linking saves memory and reduces swapping. Many processes can use a DLL simultaneously, sharing a single copy of the read-only parts of a DLL in memory. In contrast, every application that is built by using a statically linked library has a complete copy of the library code that Windows must load into memory.
 
