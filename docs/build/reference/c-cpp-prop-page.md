@@ -1,93 +1,15 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
-ms.date: "7/17/2019"
+ms.date: "7/18/2019"
 ms.topic: "article"
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
 author: "mikeblome"
 ms.author: "mblome"
-f1_keywords:
-  - VC.Project.VCCLCompilerTool.AdditionalIncludeDirectories
-  - VC.Project.VCCLCompilerTool.AdditionalUsingDirectories
-  - VC.Project.VCCLCompilerTool.DebugInformationFormat
-  - VC.Project.VCCLCompilerTool.SupportJustMyCode
-  - VC.Project.VCCLCompilerTool.CompileAsManaged
-  - VC.Project.VCCLCompilerTool.CompileAsWinRT
-  - VC.Project.VCCLCompilerTool.SuppressStartupBanner
-  - VC.Project.VCCLCompilerTool.WarningLevel
-  - VC.Project.VCCLCompilerTool.WarnAsError
-  - VC.Project.VCCLCompilerTool.WarningVersion
-  - VC.Project.VCCLCompilerTool.DiagnosticsFormat
-  - VC.Project.VCCLCompilerTool.SDLCheck
-  - VC.Project.VCCLCompilerTool.MultiProcessorCompilation
-  - VC.Project.VCCLCompilerTool.Optimization
-  - VC.Project.VCCLCompilerTool.InlineFunctionExpansion
-  - VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions
-  - VC.Project.VCCLCompilerTool.FavorSizeOrSpeed
-  - VC.Project.VCCLCompilerTool.OmitFramePointers
-  - VC.Project.VCCLCompilerTool.EnableFiberSafeOptimizations
-  - VC.Project.VCCLWCECompilerTool.WholeProgramOptimization
-  - VC.Project.VCCLCompilerTool.PreprocessorDefinitions
-  - VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions
-  - VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions
-  - VC.Project.VCCLCompilerTool.IgnoreStandardIncludePath
-  - VC.Project.VCCLCompilerTool.GeneratePreprocessedFile
-  - VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines
-  - VC.Project.VCCLCompilerTool.KeepComments
-  - VC.Project.VCCLCompilerTool.StringPooling
-  - VC.Project.VCCLCompilerTool.MinimalRebuild
-  - VC.Project.VCCLCompilerTool.ExceptionHandling
-  - VC.Project.VCCLCompilerTool.SmallerTypeCheck
-  - VC.Project.VCCLCompilerTool.BasicRuntimeChecks
-  - VC.Project.VCCLCompilerTool.RuntimeLibrary
-  - VC.Project.VCCLCompilerTool.StructMemberAlignment
-  - VC.Project.VCCLCompilerTool.BufferSecurityCheck
-  - VC.Project.VCCLCompilerTool.ControlFlowGuard
-  - VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking
-  - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
-  - VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet
-  - VC.Project.VCCLCompilerTool.floatingPointModel
-  - VC.Project.VCCLCompilerTool.FloatingPointExceptions
-  - VC.Project.VCCLCompilerTool.CreateHotpatchableImage
-  - VC.Project.VCCLCompilerTool.SpectreMitigation
-  - VC.Project.VCCLCompilerTool.DisableLanguageExtensions
-  - VC.Project.VCCLCompilerTool.ConformanceMode
-  - VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType
-  - VC.Project.VCCLCompilerTool.ForceConformanceInForLoopScope
-  - VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData
-  - VC.Project.VCCLCompilerTool.EnforceTypeConversionRules
-  - VC.Project.VCCLCompilerTool.RuntimeTypeInfo
-  - VC.Project.VCCLCompilerTool.OpenMP
-  - VC.Project.VCCLCompilerTool.CppLanguageStandard
-  - VC.Project.VCCLCompilerTool.ModulesSupport
-  - VC.Project.VCCLCompilerTool.UsePrecompiledHeader
-  - VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough
-  - VC.Project.VCCLCompilerTool.PrecompiledHeaderFile
-  - VC.Project.VCCLCompilerTool.ExpandAttributedSource
-  - VC.Project.VCCLCompilerTool.AssemblerOutput
-  - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
-  - VC.Project.VCCLCompilerTool.AssemblerListingLocation
-  - VC.Project.VCCLCompilerTool.ObjectFile
-  - VC.Project.VCCLCompilerTool.ProgramDataBaseFileName
-  - VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles
-  - VC.Project.VCCLCompilerTool.XMLDocumentationFileName
-  - VC.Project.VCCLCompilerTool.BrowseInformation
-  - VC.Project.VCCLCompilerTool.BrowseInformationFile
-  - VC.Project.VCCLCompilerTool.CallingConvention
-  - VC.Project.VCCLCompilerTool.CompileAs
-  - VC.Project.VCCLCompilerTool.DisableSpecificWarnings
-  - VC.Project.VCCLCompilerTool.ForcedIncludeFiles
-  - VC.Project.VCCLCompilerTool.ForcedUsingFiles
-  - VC.Project.VCCLCompilerTool.ShowIncludes
-  - VC.Project.VCCLCompilerTool.UseFullPaths
-  - VC.Project.VCCLCompilerTool.OmitDefaultLibName
-  - VC.Project.VCCLCompilerTool.ErrorReporting
-  - VC.Project.VCCLCompilerTool.TreatSpecificWarningsAsErrors
-  - vc.project.AdditionalOptionsPage
 ---
 
 # C/C++ Property Pages
 
-The following property pages are found under **Configuration Properties** > **C/C++**:
+The following property pages are found under **Project** > **Properties** > **Configuration Properties** > **C/C++**:
 
 ## C/C++ General Properties
 

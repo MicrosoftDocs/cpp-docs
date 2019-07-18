@@ -416,12 +416,14 @@
                   href: build/reference/general-property-page-file.md
                 - name: VC++ Directories property page
                   href: build/reference/vcpp-directories-property-page.md
+                - name: C/C++ property pages
+                  href: build/reference/c-cpp-prop-page.md
+                - name: Linker property pages
+                  href: build/reference/linker-property-pages.md
                 - name: Command line property pages
                   href: build/reference/command-line-property-pages.md
                 - name: NMake property page
-                  href: build/reference/nmake-property-page.md
-                - name: Linker property pages
-                  href: build/reference/linker-property-pages.md
+                  href: build/reference/nmake-property-page.md                
                 - name: Manifest Tool property pages
                   expanded: false
                   items: 
