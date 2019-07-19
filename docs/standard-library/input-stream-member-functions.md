@@ -1,12 +1,12 @@
 ---
 title: "Input Stream Member Functions"
-ms.date: "11/04/2016"
+ms.date: "07/19/2019"
 helpviewer_keywords: ["input stream objects", "input streams, member functions"]
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
 ---
 # Input Stream Member Functions
 
-Input stream member functions are used for disk input. 
+Input stream member functions are used for disk input.
 
 ## <a name="vclrftheopenfunctionforinputstreamsanchor11"></a> open
 
