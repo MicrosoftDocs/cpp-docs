@@ -1,12 +1,12 @@
 ---
 title: "&lt;cuchar&gt;"
-ms.date: "04/04/2019"
-f1_keywords: ["<cuchar>"]
+ms.date: "07/17/2019"
+f1_keywords: ["<cuchar>", "cuchar"]
 helpviewer_keywords: ["cuchar header"]
 ---
-# &lt;cwchar&gt;
+# &lt;cuchar&gt;
 
-Includes the Standard C library header \<uchar.h> and adds the associated names to the `std` namespace.
+Includes the C standard library header \<uchar.h> and adds the associated names to the `std` namespace.
 
 ## Requirements
 
@@ -14,21 +14,12 @@ Includes the Standard C library header \<uchar.h> and adds the associated names 
 
 **Namespace:** std
 
-## Member functions
-
-|||
-|-|-|
-|[c16rtomb](../standard-library/cuchar-functions.md#c16rtomb)|No description.|
-|[c32rtomb](../standard-library/cuchar-functions.md#c32rtomb)|No description.|
-|[mbrtoc16](../standard-library/cuchar-functions.md#mbrtoc16)|No description.|
-|[mbrtoc32](../standard-library/cuchar-functions.md#mbrtoc32)|No description.|
-
 ## Remarks
 
-Including this header ensures that the names declared using external linkage in the Standard C library header are declared in the `std` namespace.
+This header adds the C standard library types `mbstate_t` and `size_t`, and the functions [c16rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [mbrtoc16](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md), and [mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md) to the `std` namespace.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Header files reference](cpp-standard-library-header-files.md)\
+[C++ standard library overview](cpp-standard-library-overview.md)\
+[Thread safety in the C++ standard library](thread-safety-in-the-cpp-standard-library.md)
