@@ -22,7 +22,7 @@ Encoding in a range of common Internet standards such as uuencode, hexadecimal, 
 |[BEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#bencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 |[EscapeXML](reference/atl-text-encoding-functions.md#escapexml)|Call this function to convert characters that are unsafe for use in XML to their safe equivalents.|
 |[GetExtendedChars](reference/atl-text-encoding-functions.md#getextendedchars)|Call this function to get the number of extended characters in a string.|
-|[IsExtendedChar](reference/atl-text-encoding-functions.md#isextendedchar)|Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, linefeed or carriage return)|
+|[IsExtendedChar](reference/atl-text-encoding-functions.md#isextendedchar)|Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, line feed or carriage return)|
 |[QEncode](reference/atl-text-encoding-functions.md#qencode)|Call this function to convert some data using the "Q" encoding.|
 |[QEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#qencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 |[QPDecode](reference/atl-text-encoding-functions.md#qpdecode)|Decodes a string of data that has been encoded in quoted-printable format such as by a previous call to [QPEncode](reference/atl-text-encoding-functions.md#qpencode).|
