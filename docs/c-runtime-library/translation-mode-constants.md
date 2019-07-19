@@ -21,7 +21,7 @@ The allowed values are:
 
 |||
 |-|-|
-`_O_TEXT`  | Opens file in text (translated) mode. Carriage return - linefeed (CR-LF) combinations are translated into a single linefeed (LF) on input. Linefeed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading and reading/writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file.
+`_O_TEXT`  | Opens file in text (translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed (LF) on input. Line feed characters are translated into CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading, and for reading and writing, `fopen` checks for CTRL+Z at the end of the file and removes it, if possible. This is done because using the `fseek` and `ftell` functions to move within a file ending with CTRL+Z may cause `fseek` to behave improperly near the end of the file.
 `_O_BINARY`  | Opens file in binary (untranslated) mode. The above translations are suppressed.
 `_O_RAW`  | Same as `_O_BINARY`. Supported for C 2.0 compatibility.
 

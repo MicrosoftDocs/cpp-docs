@@ -39,7 +39,7 @@ If successful, **_write** returns the number of bytes actually written. If the a
 
 For more information about these and other return codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-If the file is opened in text mode, each linefeed character is replaced with a carriage return - linefeed pair in the output. The replacement does not affect the return value.
+If the file is opened in text mode, each line feed character is replaced with a carriage return-line feed pair in the output. The replacement does not affect the return value.
 
 When the file is opened in Unicode translation mode—for example, if *fd* is opened by using **_open** or **_sopen** and a mode parameter that includes **_O_WTEXT**, **_O_U16TEXT**, or **_O_U8TEXT**, or if it is opened by using **fopen** and a mode parameter that includes **ccs=UNICODE**, **ccs=UTF-16LE**, or **ccs=UTF-8**, or if the mode is changed to a Unicode translation mode by using **_setmode**—*buffer* is interpreted as a pointer to an array of **wchar_t** that contains **UTF-16** data. An attempt to write an odd number of bytes in this mode causes a parameter validation error.
 
