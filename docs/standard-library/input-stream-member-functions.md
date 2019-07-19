@@ -127,7 +127,7 @@ int main()
 }
 ```
 
-The program assumes that the data records are formatted exactly as specified by the structure with no terminating carriage-return or linefeed characters.
+The program assumes that the data records are formatted exactly as specified by the structure with no terminating carriage return or line feed characters.
 
 ## <a name="vclrftheseekgandtellgfunctionsanchor7"></a> The seekg and tellg Functions
 
