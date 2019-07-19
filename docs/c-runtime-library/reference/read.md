@@ -35,7 +35,7 @@ Maximum number of bytes to read.
 
 ## Return Value
 
-**_read** returns the number of bytes read, which might be less than *buffer_size* if there are fewer than *buffer_size* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single linefeed character `\n`. Only the single linefeed character is counted in the return value. The replacement does not affect the file pointer.
+**_read** returns the number of bytes read, which might be less than *buffer_size* if there are fewer than *buffer_size* bytes left in the file, or if the file was opened in text mode. In text mode, each carriage return-line feed pair `\r\n` is replaced with a single line feed character `\n`. Only the single line feed character is counted in the return value. The replacement does not affect the file pointer.
 
 If the function tries to read at end of file, it returns 0. If *fd* is not valid, the file isn't open for reading, or the file is locked, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EBADF**.
 

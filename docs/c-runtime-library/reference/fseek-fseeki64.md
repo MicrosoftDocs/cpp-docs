@@ -56,7 +56,7 @@ You can use **fseek** and **_fseeki64** to reposition the pointer anywhere in a 
 
 When a file is opened for appending data, the current file position is determined by the last I/O operation, not by where the next write would occur. If no I/O operation has yet occurred on a file opened for appending, the file position is the start of the file.
 
-For streams opened in text mode, **fseek** and **_fseeki64** have limited use, because carriage return-linefeed translations can cause **fseek** and **_fseeki64** to produce unexpected results. The only **fseek** and **_fseeki64** operations guaranteed to work on streams opened in text mode are:
+For streams opened in text mode, **fseek** and **_fseeki64** have limited use, because carriage return-line feed translations can cause **fseek** and **_fseeki64** to produce unexpected results. The only **fseek** and **_fseeki64** operations guaranteed to work on streams opened in text mode are:
 
 - Seeking with an offset of 0 relative to any of the origin values.
 

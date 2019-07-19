@@ -78,9 +78,9 @@ When the **"r+"**, **"w+"**, or **"a+"** access type is specified, both reading 
 |*mode* modifier|Translation mode|
 |-|-|
 | **t** | Open in text (translated) mode. |
-| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
-In text (translated) mode, carriage return-linefeed (CR-LF) combinations are translated into single linefeed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **"a+"**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and [ftell](ftell-ftelli64.md) to move within a file may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file. The **t** option is a Microsoft extension that should not be used where ANSI portability is desired.
+In text (translated) mode, carriage return-line feed (CR-LF) combinations are translated into single line feed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **"a+"**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and [ftell](ftell-ftelli64.md) to move within a file may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file. The **t** option is a Microsoft extension that should not be used where ANSI portability is desired.
 
 If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns **NULL**.
 
