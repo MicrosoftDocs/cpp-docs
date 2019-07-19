@@ -1,7 +1,7 @@
 ---
 title: "Escape Sequences"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["\r escape sequence", "double backslash", "horizontal-tab \t escape sequence", "(') single quotation mark", "bell character \a escape sequence", "escape sequences", "hexadecimal escape sequence", "carriage returns", "tab \t escape sequence", "\f escape sequence", "quotation marks, single", "formfeed \f escape sequence", "\v escape sequence", "control character escape sequences", "\ symbol in escape sequences", "octal escape sequence", "escape characters", "newline character \n escape sequence", "nongraphic control characters", "question mark, literal", "\n escape sequence", "vertical tab \v escape sequence", "\a escape sequence", "? symbol", "? symbol, escape sequence character", "\t escape sequence", "backspace escape sequence"]
+helpviewer_keywords: ["\r escape sequence", "double backslash", "horizontal-tab \t escape sequence", "(') single quotation mark", "bell character \a escape sequence", "escape sequences", "hexadecimal escape sequence", "carriage returns", "tab \t escape sequence", "\f escape sequence", "quotation marks, single", "form feed \f escape sequence", "\v escape sequence", "control character escape sequences", "\ symbol in escape sequences", "octal escape sequence", "escape characters", "newline character \n escape sequence", "nongraphic control characters", "question mark, literal", "\n escape sequence", "vertical tab \v escape sequence", "\a escape sequence", "? symbol", "? symbol, escape sequence character", "\t escape sequence", "backspace escape sequence"]
 ms.assetid: 5aef377f-a76c-4d5c-aa04-8308758ad6a8
 ---
 # Escape Sequences
@@ -18,7 +18,7 @@ Note that the question mark preceded by a backslash (**\\?**) specifies a litera
 |---------------------|----------------|
 |**\a**|Bell (alert)|
 |**\b**|Backspace|
-|**\f**|Formfeed|
+|**\f**|Form feed|
 |**\n**|New line|
 |**\r**|Carriage return|
 |**\t**|Horizontal tab|
@@ -37,7 +37,7 @@ If a backslash precedes a character that does not appear in the table, the compi
 
 **END Microsoft Specific**
 
-Escape sequences allow you to send nongraphic control characters to a display device. For example, the ESC character (**\033**) is often used as the first character of a control command for a terminal or printer. Some escape sequences are device-specific. For instance, the vertical-tab and formfeed escape sequences (**\v** and **\f**) do not affect screen output, but they do perform appropriate printer operations.
+Escape sequences allow you to send nongraphic control characters to a display device. For example, the ESC character (**\033**) is often used as the first character of a control command for a terminal or printer. Some escape sequences are device-specific. For instance, the vertical tab and form feed escape sequences (**\v** and **\f**) do not affect screen output, but they do perform appropriate printer operations.
 
 You can also use the backslash (**\\**) as a continuation character. When a newline character (equivalent to pressing the RETURN key) immediately follows the backslash, the compiler ignores the backslash and the newline character and treats the next line as part of the previous line. This is useful primarily for preprocessor definitions longer than a single line. For example:
 

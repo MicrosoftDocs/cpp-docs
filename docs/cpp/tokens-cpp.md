@@ -16,7 +16,7 @@ Tokens are usually separated by *white space*. White space can be one or more:
 
 - New lines
 
-- Formfeeds
+- Form feeds
 
 - Comments
 
