@@ -348,7 +348,7 @@ Nonzero if any formatting occurs; otherwise 0.
 
 ### Remarks
 
-A soft line break consists of two carriage returns and a linefeed inserted at the end of a line that is broken because of word wrapping. A hard line break consists of one carriage return and a linefeed. Lines that end with a hard line break are not affected by `FmtLines`.
+A soft line break consists of two carriage returns and a line feed inserted at the end of a line that is broken because of word wrapping. A hard line break consists of one carriage return and a line feed. Lines that end with a hard line break are not affected by `FmtLines`.
 
 Windows will only respond if the `CEdit` object is a multiple-line edit control.
 
