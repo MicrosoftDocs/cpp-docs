@@ -1,7 +1,7 @@
 ---
 title: "/Qspectre"
 ms.date: "10/12/2018"
-f1_keywords: ["/Qspectre"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
 # /Qspectre
