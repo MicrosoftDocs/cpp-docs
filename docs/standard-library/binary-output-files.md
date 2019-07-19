@@ -21,7 +21,7 @@ int main( )
 }
 ```
 
-You might expect this program to output the byte sequence { 99, 0, 10, 0 }; instead, it outputs { 99, 0, 13, 10, 0 }, which causes problems for a program expecting binary input. If you need true binary output, in which characters are written untranslated, you could specify binary output by using the [ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) constructor openmode argument:
+You might expect this program to output the byte sequence { 99, 0, 10, 0 }; instead, it outputs { 99, 0, 13, 10, 0 }, which causes problems for a program expecting binary input. If you need true binary output, in which characters are written untranslated, you could specify binary output by using the [ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) constructor `openmode` argument:
 
 ```cpp
 // binary_output_files2.cpp
@@ -41,4 +41,4 @@ int main()
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+[Output Streams](../standard-library/output-streams.md)
