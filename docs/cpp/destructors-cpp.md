@@ -238,5 +238,5 @@ Explicitly defining a destructor, copy constructor, or copy assignment operator 
 
 ## See also
 
-[Copy Constructors and Copy Assignment Operators](.../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
-[Move Constructors and Move Assignment Operators](.../cpp/move-constructors-and-move-assignment-operators-cpp.md)
+[Copy Constructors and Copy Assignment Operators](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
+[Move Constructors and Move Assignment Operators](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
