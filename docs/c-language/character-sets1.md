@@ -15,7 +15,7 @@ The source character set and execution character set include the ASCII character
 |---------------------|---------------|-----------------|
 |&#92;a|Alert/bell|7|
 |&#92;b|Backspace|8|
-|&#92;f|Formfeed|12|
+|&#92;f|Form feed|12|
 |&#92;n|Newline|10|
 |&#92;r|Carriage return|13|
 |&#92;t|Horizontal tab|9|

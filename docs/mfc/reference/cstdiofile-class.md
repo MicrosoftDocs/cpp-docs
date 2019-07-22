@@ -42,7 +42,7 @@ class CStdioFile : public CFile
 
 Stream files are buffered and can be opened in either text mode (the default) or binary mode.
 
-Text mode provides special processing for carriage return-linefeed pairs. When you write a newline character (0x0A) to a text-mode `CStdioFile` object, the byte pair (0x0D, 0x0A) is sent to the file. When you read, the byte pair (0x0D, 0x0A) is translated to a single 0x0A byte.
+Text mode provides special processing for carriage return-line feed pairs. When you write a line feed (newline) character (0x0A) to a text-mode `CStdioFile` object, the byte pair (0x0D, 0x0A) is sent to the file. When you read, the byte pair (0x0D, 0x0A) is translated to a single 0x0A byte.
 
 The [CFile](../../mfc/reference/cfile-class.md) functions [Duplicate](../../mfc/reference/cfile-class.md#duplicate), [LockRange](../../mfc/reference/cfile-class.md#lockrange), and [UnlockRange](../../mfc/reference/cfile-class.md#unlockrange) are not supported for `CStdioFile`.
 
@@ -193,7 +193,7 @@ A pointer to the buffer containing the text data. NULL if end-of-file was reache
 
 Reading is stopped by the first newline character. If, in that case, fewer than *nMax*-1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.
 
-[CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return-linefeed pair.
+[CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return-line feed pair.
 
 > [!NOTE]
 >  The `CString` version of this function removes the `'\n'` if present; the LPTSTR version does not.
@@ -259,7 +259,7 @@ Specifies a pointer to a buffer that contains a null-terminated string.
 
 ### Remarks
 
-The terminating null character ( `\0`) is not written to the file. This method writes newline characters in *lpsz* to the file as a carriage return/linefeed pair.
+The terminating null character ( `\0`) is not written to the file. This method writes newline characters in *lpsz* to the file as a carriage return-line feed pair.
 
 If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [CFile::Write](../../mfc/reference/cfile-class.md#write).
 
