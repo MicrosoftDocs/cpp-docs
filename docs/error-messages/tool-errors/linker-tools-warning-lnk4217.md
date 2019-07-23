@@ -1,6 +1,6 @@
 ---
 title: "Linker Tools Warning LNK4217"
-ms.date: "04/15/2019"
+ms.date: "07/23/2019"
 f1_keywords: ["LNK4217"]
 helpviewer_keywords: ["LNK4217"]
 ms.assetid: 280dc03e-5933-4e8d-bb8c-891fbe788738
@@ -20,22 +20,39 @@ This warning doesn't appear when you compile by using the [/clr](../../build/ref
 LNK4217 can also occur if you attempt to link two modules together, when instead you should compile the second module with the import library of the first module.
 
 ```cpp
-// LNK4217.cpp
-// compile with: /LD
-#include "windows.h"
-__declspec(dllexport) void func(unsigned short*) {}
+// main.cpp
+__declspec(dllimport) void func();
+
+int main()
+{
+    func();
+    return 0;
+}
+
 ```
 
 And then,
 
 ```cpp
-// LNK4217b.cpp
+// tt.cpp
 // compile with: /c
-#include "windows.h"
-__declspec(dllexport) void func(unsigned short*) {}
+void func() {}
 ```
 
-Attempting to link these two modules will result in LNK4217. Compile the second sample with the import library of the first sample to resolve.
+Attempting to compile these two modules as shown here will result in LNK4217:
+
+```cmd
+cl.exe /c main.cpp tt.cpp
+link.exe main.obj tt.obj
+```
+
+To fix the error, compile the second sample with the import library of the first code snippet as shown here:
+
+```cmd
+cl.exe /c main.cpp tt.cpp
+lib.exe tt.obj /export:func /def
+link.exe main.obj tt.lib
+```
 
 ## See also
 
