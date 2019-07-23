@@ -63,10 +63,10 @@ istrstream(
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The length of the buffer (*ptr*).
 
-*ptr*<br/>
+*ptr*\
 The contents with which the buffer is initialized.
 
 ### Remarks
@@ -115,7 +115,7 @@ See [strstream::str](../standard-library/strstreambuf-class.md#str) for a sample
 
 ## See also
 
-[istream](../standard-library/istream-typedefs.md#istream)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[istream](../standard-library/istream-typedefs.md#istream)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

@@ -21,7 +21,7 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -69,6 +69,6 @@ Namespace: std
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_lvalue_reference Class](../standard-library/add-lvalue-reference-class.md)<br/>
-[is_rvalue_reference Class](../standard-library/is-rvalue-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_lvalue_reference Class](../standard-library/add-lvalue-reference-class.md)\
+[is_rvalue_reference Class](../standard-library/is-rvalue-reference-class.md)

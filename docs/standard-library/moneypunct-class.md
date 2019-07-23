@@ -18,10 +18,10 @@ class moneypunct;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters.
 
-*Intl*<br/>
+*Intl*\
 A flag specifying whether international conventions are to be observed.
 
 ## Remarks
@@ -475,7 +475,7 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -787,5 +787,5 @@ English_Canada.1252 domestic thousands separator: ,
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

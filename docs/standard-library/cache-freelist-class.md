@@ -97,4 +97,4 @@ void deallocate(void* ptr, std::size_t count);
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

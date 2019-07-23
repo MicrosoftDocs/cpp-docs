@@ -219,4 +219,4 @@ Logical operator traits
 
 ## See also
 
-[\<functional>](../standard-library/functional.md)<br/>
+[\<functional>](../standard-library/functional.md)

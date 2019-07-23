@@ -18,10 +18,10 @@ class wstring_convert
 
 ### Parameters
 
-*Codecvt*<br/>
+*Codecvt*\
 The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
 
-*Elem*<br/>
+*Elem*\
 The wide-character element type.
 
 ## Remarks

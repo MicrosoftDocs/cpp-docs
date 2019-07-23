@@ -69,46 +69,46 @@ bool regex_match(
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches. For common cases this one of `string::const_iterator`, `wstring::const_iterator`, `const char*` or `const wchar_t*`.
 
-*Alloc*<br/>
+*Alloc*\
 The match results allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match. For common cases this is `string`, `wstring`, `char*` or `wchar_t*`.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
-*Alloc2*<br/>
+*Alloc2*\
 The regular expression allocator class.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*IOalloc*<br/>
+*IOalloc*\
 The string allocator class.
 
-*flags*<br/>
+*flags*\
 Flags for matches.
 
-*first*<br/>
+*first*\
 Beginning of sequence to match.
 
-*last*<br/>
+*last*\
 End of sequence to match.
 
-*match*<br/>
+*match*\
 The match results. Corresponds to Elem type: [smatch](../standard-library/regex-typedefs.md#smatch) for `string`, [wsmatch](../standard-library/regex-typedefs.md#wsmatch) for `wstring`, [cmatch](../standard-library/regex-typedefs.md#cmatch) for `char*` or [wcmatch](../standard-library/regex-typedefs.md#wcmatch) for `wchar_t*`.
 
-*ptr*<br/>
+*ptr*\
 Pointer to beginning of sequence to match. If *ptr* is `char*`, then use `cmatch` and `regex`. If *ptr* is `wchar_t*` then use `wcmatch` and `wregex`.
 
-*re*<br/>
+*re*\
 The regular expression to match. Type `regex` for `string` and `char*`, or `wregex` for `wstring` and `wchar_t*`.
 
-*str*<br/>
+*str*\
 String to match. Corresponds to the type of *Elem*.
 
 ### Remarks
@@ -205,40 +205,40 @@ basic_string<Elem> regex_replace(
 
 ### Parameters
 
-*OutIt*<br/>
+*OutIt*\
 The iterator type for replacements.
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
-*Alloc*<br/>
+*Alloc*\
 The regular expression allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match.
 
-*flags*<br/>
+*flags*\
 Flags for matches.
 
-*first*<br/>
+*first*\
 Beginning of sequence to match.
 
-*fmt*<br/>
+*fmt*\
 The format for replacements.
 
-*last*<br/>
+*last*\
 End of sequence to match.
 
-*out*<br/>
+*out*\
 The output iterator.
 
-*re*<br/>
+*re*\
 The regular expression to match.
 
-*str*<br/>
+*str*\
 String to match.
 
 ### Remarks
@@ -338,46 +338,46 @@ bool regex_search(
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches.
 
-*Alloc*<br/>
+*Alloc*\
 The match results allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
-*Alloc2*<br/>
+*Alloc2*\
 The regular expression allocator class.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*IOalloc*<br/>
+*IOalloc*\
 The string allocator class.
 
-*flags*<br/>
+*flags*\
 Flags for matches.
 
-*first*<br/>
+*first*\
 Beginning of sequence to match.
 
-*last*<br/>
+*last*\
 End of sequence to match.
 
-*match*<br/>
+*match*\
 The match results.
 
-*ptr*<br/>
+*ptr*\
 Pointer to beginning of sequence to match.
 
-*re*<br/>
+*re*\
 The regular expression to match.
 
-*str*<br/>
+*str*\
 String to match.
 
 ### Remarks
@@ -458,10 +458,10 @@ void swap(
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
 ### Remarks
@@ -505,11 +505,11 @@ string == aaa
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Class](../standard-library/regex-constants-class.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[\<regex> operators](../standard-library/regex-operators.md)\
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)\
+[regex_traits Class](../standard-library/regex-traits-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

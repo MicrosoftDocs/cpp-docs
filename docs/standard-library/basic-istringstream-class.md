@@ -18,13 +18,13 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### Parameters
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of the basic element of the string.
 
-*Tr*<br/>
+*Tr*\
 The character traits specialized on the basic element of the string.
 
 ## Remarks
@@ -89,13 +89,13 @@ basic_istringstream(
 
 ### Parameters
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*<br/>
+*str*\
 An object of type `basic_string`.
 
-*right*<br/>
+*right*\
 An rvalue reference of a `basic_istringstream` object.
 
 ### Remarks
@@ -116,7 +116,7 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An rvalue reference to a `basic_istringstream` object.
 
 ### Remarks
@@ -152,7 +152,7 @@ void str(
 
 ### Parameters
 
-*_Newstr*<br/>
+*_Newstr*\
 The new string.
 
 ### Return Value
@@ -187,6 +187,6 @@ The member function exchanges the values of this object and the values of *right
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

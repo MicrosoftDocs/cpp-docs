@@ -23,7 +23,7 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -60,6 +60,6 @@ remove_const_t<const int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_const Class](../standard-library/add-const-class.md)<br/>
-[remove_cv Class](../standard-library/remove-cv-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_const Class](../standard-library/add-const-class.md)\
+[remove_cv Class](../standard-library/remove-cv-class.md)

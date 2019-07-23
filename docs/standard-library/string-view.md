@@ -64,4 +64,4 @@ The \<string_view> operators can compare `string_view` objects to objects of any
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

@@ -18,13 +18,13 @@ class codecvt : public locale::facet, codecvt_base;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters.
 
-*Byte*<br/>
+*Byte*\
 A type used to encode characters outside a program.
 
-*StateType*<br/>
+*StateType*\
 A type that can be used to represent intermediate states of a conversion between internal and external types of character representations.
 
 ## Remarks
@@ -160,7 +160,7 @@ explicit codecvt(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -232,25 +232,25 @@ virtual result do_in(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the sequence to be converted.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the sequence to be converted.
 
-*next1*<br/>
+*next1*\
 Pointer beyond the end of the converted sequence, to the first unconverted character.
 
-*first2*<br/>
+*first2*\
 Pointer to the beginning of the converted sequence.
 
-*last2*<br/>
+*last2*\
 Pointer to the end of the converted sequence.
 
-*next2*<br/>
+*next2*\
 Pointer to the `CharType` that comes after the last converted `CharType`, to the first unaltered character in the destination sequence.
 
 ### Return Value
@@ -287,16 +287,16 @@ virtual int do_length(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the external sequence.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the external sequence.
 
-*_Len2*<br/>
+*_Len2*\
 The maximum number of `Byte`s that can be returned by the member function.
 
 ### Return Value
@@ -352,25 +352,25 @@ virtual result do_out(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the sequence to be converted.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the sequence to be converted.
 
-*next1*<br/>
+*next1*\
 Reference to a pointer to the first unconverted `CharType`, after the last `CharType` converted.
 
-*first2*<br/>
+*first2*\
 Pointer to the beginning of the converted sequence.
 
-*last2*<br/>
+*last2*\
 Pointer to the end of the converted sequence.
 
-*next2*<br/>
+*next2*\
 Reference to a pointer to the first unconverted `Byte`, after the last `Byte` converted.
 
 ### Return Value
@@ -407,16 +407,16 @@ virtual result do_unshift(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first2*<br/>
+*first2*\
 Pointer to the first position in the destination range.
 
-*last2*<br/>
+*last2*\
 Pointer to the last position in the destination range.
 
-*next2*<br/>
+*next2*\
 Pointer to the first unaltered element in the destination sequence.
 
 ### Return Value
@@ -521,25 +521,25 @@ result in(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the sequence to be converted.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the sequence to be converted.
 
-*next1*<br/>
+*next1*\
 Pointer beyond the end of the converted sequence to the first unconverted character.
 
-*first2*<br/>
+*first2*\
 Pointer to the beginning of the converted sequence.
 
-*last2*<br/>
+*last2*\
 Pointer to the end of the converted sequence.
 
-*next2*<br/>
+*next2*\
 Pointer to the `CharType` that comes after the last converted `Chartype` to the first unaltered character in the destination sequence.
 
 ### Return Value
@@ -623,16 +623,16 @@ int length(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the external sequence.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the external sequence.
 
-*_Len2*<br/>
+*_Len2*\
 The maximum number of Bytes that can be returned by the member function.
 
 ### Return Value
@@ -728,25 +728,25 @@ result out(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first1*<br/>
+*first1*\
 Pointer to the beginning of the sequence to be converted.
 
-*last1*<br/>
+*last1*\
 Pointer to the end of the sequence to be converted.
 
-*next1*<br/>
+*next1*\
 Reference to a pointer to the first unconverted `CharType` after the last `CharType` converted.
 
-*first2*<br/>
+*first2*\
 Pointer to the beginning of the converted sequence.
 
-*last2*<br/>
+*last2*\
 Pointer to the end of the converted sequence.
 
-*next2*<br/>
+*next2*\
 Reference to a pointer to the first unconverted `Byte` after the last converted `Byte`.
 
 ### Return Value
@@ -820,16 +820,16 @@ result unshift(
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The conversion state that is maintained between calls to the member function.
 
-*first2*<br/>
+*first2*\
 Pointer to the first position in the destination range.
 
-*last2*<br/>
+*last2*\
 Pointer to the last position in the destination range.
 
-*next2*<br/>
+*next2*\
 Pointer to the first unaltered element in the destination sequence.
 
 ### Return Value
@@ -854,7 +854,7 @@ The member function returns [do_unshift](#do_unshift)( `_State`, `first2`, `last
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Code Pages](../c-runtime-library/code-pages.md)<br/>
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[Code Pages](../c-runtime-library/code-pages.md)\
+[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -28,7 +28,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### Parameters
 
-*policy*<br/>
+*policy*\
 A [launch](../standard-library/future-enums.md#launch) value.
 
 ### Remarks
@@ -76,7 +76,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 
 ### Parameters
 
-*Errno*<br/>
+*Errno*\
 A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
@@ -93,7 +93,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 ### Parameters
 
-*Errno*<br/>
+*Errno*\
 A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
@@ -114,12 +114,12 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `promise` object.
 
-*Right*<br/>
+*Right*\
 The right `promise` object.
 
 ## See also
 
-[\<future>](../standard-library/future.md)<br/>
+[\<future>](../standard-library/future.md)

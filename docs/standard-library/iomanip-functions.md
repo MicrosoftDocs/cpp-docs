@@ -25,10 +25,10 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### Parameters
 
-*_Amount*<br/>
+*_Amount*\
 The extracted monetary value.
 
-*_Intl*<br/>
+*_Intl*\
 If **true**, use international format. The default value is **false**.
 
 ### Remarks
@@ -48,10 +48,10 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 ### Parameters
 
-*_Tptr*<br/>
+*_Tptr*\
 The time in the form of a time structure.
 
-*_Fmt*<br/>
+*_Fmt*\
 The desired format to use to obtain the time value.
 
 ### Remarks
@@ -69,10 +69,10 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### Parameters
 
-*_Amount*<br/>
+*_Amount*\
 The monetary amount to insert into the stream.
 
-*_Intl*<br/>
+*_Intl*\
 Set to **true** if manipulator should use international format, **false** if it should not.
 
 ### Return Value
@@ -96,10 +96,10 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### Parameters
 
-*_Tptr*<br/>
+*_Tptr*\
 The time value to write to the stream, provided in a time structure.
 
-*_Fmt*<br/>
+*_Fmt*\
 The desired format to write the time value.
 
 ### Remarks
@@ -119,13 +119,13 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
 
-*delimiter*<br/>
+*delimiter*\
 A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
 
-*escape*<br/>
+*escape*\
 A user-specified character, or wide character, to use as the escape character for escape sequences within the string.
 
 ### Remarks
@@ -283,7 +283,7 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### Parameters
 
-*Mask*<br/>
+*Mask*\
 The flags to clear.
 
 ### Return Value
@@ -304,7 +304,7 @@ T3 setbase(int _Base);
 
 ### Parameters
 
-*_Base*<br/>
+*_Base*\
 The number base.
 
 ### Return Value
@@ -334,7 +334,7 @@ T4 setfill(Elem Ch);
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The character that will be used to fill spaces in a right-justified display.
 
 ### Return Value
@@ -355,7 +355,7 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### Parameters
 
-*Mask*<br/>
+*Mask*\
 The flags to set.
 
 ### Return Value
@@ -376,7 +376,7 @@ T5 setprecision(streamsize Prec);
 
 ### Parameters
 
-*Prec*<br/>
+*Prec*\
 The precision for floating-point values.
 
 ### Return Value
@@ -397,7 +397,7 @@ T6 setw(streamsize Wide);
 
 ### Parameters
 
-*Wide*<br/>
+*Wide*\
 The width of the display field.
 
 ### Return Value
@@ -625,4 +625,4 @@ l5 = 65536
 
 ## See also
 
-[\<iomanip>](../standard-library/iomanip.md)<br/>
+[\<iomanip>](../standard-library/iomanip.md)

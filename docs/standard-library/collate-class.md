@@ -18,7 +18,7 @@ class collate : public locale::facet;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters.
 
 ## Remarks
@@ -84,10 +84,10 @@ const char* _Locname,
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
-*_Locname*<br/>
+*_Locname*\
 The name of the locale.
 
 ### Remarks
@@ -115,16 +115,16 @@ int compare(const CharType* first1,
 
 ### Parameters
 
-*first1*<br/>
+*first1*\
 Pointer to the first element in the first sequence to be compared.
 
-*last1*<br/>
+*last1*\
 Pointer to the last element in the first sequence to be compared.
 
-*first2*<br/>
+*first2*\
 Pointer to the first element in the second sequence to be compared.
 
-*last2*<br/>
+*last2*\
 Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
@@ -181,16 +181,16 @@ virtual int do_compare(const CharType* first1,
 
 ### Parameters
 
-*first1*<br/>
+*first1*\
 Pointer to the first element in the first sequence to be compared.
 
-*last1*<br/>
+*last1*\
 Pointer to the last element in the first sequence to be compared.
 
-*first2*<br/>
+*first2*\
 Pointer to the first element in the second sequence to be compared.
 
-*last2*<br/>
+*last2*\
 Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
@@ -221,10 +221,10 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 A pointer to the first character in the sequence whose has value is to be determined.
 
-*last*<br/>
+*last*\
 A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
@@ -249,10 +249,10 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### Parameters
 
-*first*<br/>
+*first*\
 A pointer to the first character in the sequence to be converted.
 
-*last*<br/>
+*last*\
 A pointer to the last character in the sequence to be converted.
 
 ### Return Value
@@ -277,10 +277,10 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 A pointer to the first character in the sequence whose has value is to be determined.
 
-*last*<br/>
+*last*\
 A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
@@ -347,10 +347,10 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 A pointer to the first character in the sequence to be converted.
 
-*last*<br/>
+*last*\
 A pointer to the last character in the sequence to be converted.
 
 ### Return Value
@@ -405,5 +405,5 @@ int main( )
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -132,4 +132,4 @@ The **void\*()** operator is not equivalent to `good` because it does not test f
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+[Output Streams](../standard-library/output-streams.md)

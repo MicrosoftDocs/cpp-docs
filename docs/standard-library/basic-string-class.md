@@ -18,13 +18,13 @@ class basic_string;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **char**, [wstring](../standard-library/string-typedefs.md#wstring), for **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.
 
-*Traits*<br/>
+*Traits*\
 Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
 
-*Allocator*<br/>
+*Allocator*\
 The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is **allocator**< `CharType`>.
 
 ### Constructors
@@ -189,25 +189,25 @@ basic_string<CharType, Traits, Allocator>& append(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The C-string to be appended.
 
-*str*<br/>
+*str*\
 The string whose characters are to be appended.
 
-*_Off*<br/>
+*_Off*\
 The index of the part of the source string supplying the characters to be appended.
 
-*count*<br/>
+*count*\
 The number of characters to be appended, at most, from the source string.
 
-*_Ch*<br/>
+*_Ch*\
 The character value to be appended.
 
-*first*<br/>
+*first*\
 An input iterator addressing the first element in the range to be appended.
 
-*last*<br/>
+*last*\
 An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the range to be appended.
 
 ### Return Value
@@ -350,25 +350,25 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the characters of the C-string to be assigned to the target string.
 
-*count*<br/>
+*count*\
 The number of characters to be assigned, from the source string.
 
-*str*<br/>
+*str*\
 The source string whose characters are to be assigned to the target string.
 
-*_Ch*<br/>
+*_Ch*\
 The character value to be assigned.
 
-*first*<br/>
+*first*\
 An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
 
-*last*<br/>
+*last*\
 An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
 
-*off*<br/>
+*off*\
 The position at which new characters will start to be assigned.
 
 ### Return Value
@@ -483,7 +483,7 @@ reference at(size_type _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The index of the position of the element to be referenced.
 
 ### Return Value
@@ -629,28 +629,28 @@ basic_string(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The C-string whose characters are to be used to initialize the `string` being constructed. This value cannot be a null pointer.
 
-*_Al*<br/>
+*_Al*\
 The storage allocator class for the string object being constructed.
 
-*count*<br/>
+*count*\
 The number of characters to be initialized.
 
-*right*<br/>
+*right*\
 The string to initialize the string being constructed.
 
-*_Roff*<br/>
+*_Roff*\
 The index of a character in a string that is the first to be used to initialize character values for the string being constructed.
 
-*_Ch*<br/>
+*_Ch*\
 The character value to be copied into the string being constructed.
 
-*first*<br/>
+*first*\
 An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
 
-*last*<br/>
+*last*\
 An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
@@ -1038,25 +1038,25 @@ int compare(
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string that is to be compared to the operand string.
 
-*_Pos1*<br/>
+*_Pos1*\
 The index of the operand string at which the comparison begins.
 
-*_Num1*<br/>
+*_Num1*\
 The maximum number of characters from the operand string to be compared.
 
-*_Num2*<br/>
+*_Num2*\
 The maximum number of characters from the parameter string to be compared.
 
-*_Off*<br/>
+*_Off*\
 The index of the parameter string at which the comparison begins.
 
-*count*<br/>
+*count*\
 The maximum number of characters from the parameter string to be compared.
 
-*ptr*<br/>
+*ptr*\
 The C-string to be compared to the operand string.
 
 ### Return Value
@@ -1367,13 +1367,13 @@ size_type copy(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The target character array to which the elements are to be copied.
 
 _ *Count*
 The number of characters to be copied, at most, from the source string.
 
-*_Off*<br/>
+*_Off*\
 The beginning position in the source string from which copies are to be made.
 
 ### Return Value
@@ -1473,16 +1473,16 @@ size_type _Copy_s(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 The target character array to which the elements are to be copied.
 
-*dest_size*<br/>
+*dest_size*\
 The size of *dest*.
 
 _ *Count*
 The number of characters to be copied, at most, from the source string.
 
-*_Off*<br/>
+*_Off*\
 The beginning position in the source string from which copies are to be made.
 
 ### Return Value
@@ -1794,19 +1794,19 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 An iterator addressing the position of the first element in the range to be erased.
 
-*last*<br/>
+*last*\
 An iterator addressing the position one past the last element in the range to be erased.
 
-*_It*<br/>
+*_It*\
 An iterator addressing the position of the element in the string to be erased.
 
-*_Pos*<br/>
+*_Pos*\
 The index of the first character in the string to be removed.
 
-*count*<br/>
+*count*\
 The number of elements that will be removed if there are as many in the range of the string beginning with *_Pos*.
 
 ### Return Value
@@ -1903,19 +1903,19 @@ size_type find(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2078,19 +2078,19 @@ size_type find_first_not_of(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2266,19 +2266,19 @@ size_type find_first_of(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2453,19 +2453,19 @@ size_type find_last_not_of(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to finish.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2642,19 +2642,19 @@ size_type find_last_of(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to finish.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2909,31 +2909,31 @@ void insert(
 
 ### Parameters
 
-*_P0*<br/>
+*_P0*\
 The index of the position behind the point of insertion the new characters.
 
-*ptr*<br/>
+*ptr*\
 The C-string to be wholly or partly inserted into the string.
 
-*count*<br/>
+*count*\
 The number of characters to be inserted.
 
-*str*<br/>
+*str*\
 The string to be wholly or partly inserted into the target string.
 
-*_Off*<br/>
+*_Off*\
 The index of the part of the source string supplying the characters to be appended.
 
-*_Ch*<br/>
+*_Ch*\
 The character value of the elements to be inserted.
 
-*_It*<br/>
+*_It*\
 An iterator addressing the position behind which a character is to be inserted.
 
-*first*<br/>
+*first*\
 An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
 
-*last*<br/>
+*last*\
 An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
@@ -3214,13 +3214,13 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character to be appended.
 
-*ptr*<br/>
+*ptr*\
 The characters of the C-string to be appended.
 
-*right*<br/>
+*right*\
 The characters of the string to be appended.
 
 ### Return Value
@@ -3306,13 +3306,13 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value to be assigned.
 
-*ptr*<br/>
+*ptr*\
 A pointer to the characters of the C-string to be assigned to the target string.
 
-*right*<br/>
+*right*\
 The source string whose characters are to be assigned to the target string.
 
 ### Return Value
@@ -3391,7 +3391,7 @@ reference operator[](size_type _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The index of the position of the element to be referenced.
 
 ### Return Value
@@ -3508,7 +3508,7 @@ void push_back(value_type _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character to be added to the end of the string.
 
 ### Remarks
@@ -3805,40 +3805,40 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string that is to be a source of characters for the operand string.
 
-*_Pos1*<br/>
+*_Pos1*\
 The index of the operand string at which the replacement begins.
 
-*_Num1*<br/>
+*_Num1*\
 The maximum number of characters to be replaced in the operand string.
 
-*_Pos2*<br/>
+*_Pos2*\
 The index of the parameter string at which the copying begins.
 
-*_Num2*<br/>
+*_Num2*\
 The maximum number of characters to be used from the parameter C-string.
 
-*ptr*<br/>
+*ptr*\
 The C-string that is to be a source of characters for the operand string.
 
-*_Ch*<br/>
+*_Ch*\
 The character to be copied into the operand string.
 
-*first0*<br/>
+*first0*\
 An iterator addressing the first character to be removed in the operand string.
 
-*last0*<br/>
+*last0*\
 An iterator addressing the last character to be removed in the operand string.
 
-*first*<br/>
+*first*\
 An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
 
-*last*<br/>
+*last*\
 An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
 
-*count*<br/>
+*count*\
 The number of times *_Ch* is copied into the operand string.
 
 ### Return Value
@@ -4034,7 +4034,7 @@ void reserve(size_type count = 0);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of characters for which memory is being reserved.
 
 ### Remarks
@@ -4129,10 +4129,10 @@ void resize(
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The new size of the string.
 
-*_Ch*<br/>
+*_Ch*\
 The value that appended characters are initialized with if additional elements are required.
 
 ### Remarks
@@ -4265,19 +4265,19 @@ size_type rfind(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character value for which the member function is to search.
 
-*_Off*<br/>
+*_Off*\
 Index of the position at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C-string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -4548,10 +4548,10 @@ basic_string<CharType, Traits, Allocator> substr(
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 An index locating the element at the position from which the copy of the string is made, with a default value of 0.
 
-*count*<br/>
+*count*\
 The number of characters that are to be copied if they are present.
 
 ### Return Value
@@ -4606,7 +4606,7 @@ void swap(
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The source string whose elements are to be exchanged with those in the destination string.
 
 ### Remarks
@@ -4714,5 +4714,5 @@ The character ch2 is: H.
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<string>](../standard-library/string.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

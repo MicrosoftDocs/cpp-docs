@@ -48,5 +48,5 @@ Defines the container template class **array** and several supporting templates.
 
 ## See also
 
-[\<tuple>](../standard-library/tuple.md)<br/>
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<tuple>](../standard-library/tuple.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

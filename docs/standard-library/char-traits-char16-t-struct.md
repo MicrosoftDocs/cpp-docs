@@ -28,6 +28,6 @@ Specialization allows the struct to take advantage of library functions that man
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
-[char_traits Struct](../standard-library/char-traits-struct.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<string>](../standard-library/string.md)\
+[char_traits Struct](../standard-library/char-traits-struct.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

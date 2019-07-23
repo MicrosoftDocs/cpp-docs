@@ -26,7 +26,7 @@ bool has_facet(const locale& Loc);
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The locale to be tested for the presence of a facet.
 
 ### Return Value
@@ -69,10 +69,10 @@ bool isalnum(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The alphanumeric element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the alphanumeric element to be tested.
 
 ### Return Value
@@ -136,10 +136,10 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the alphabetic element to be tested.
 
 ### Return Value
@@ -201,10 +201,10 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -266,10 +266,10 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -331,10 +331,10 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -396,10 +396,10 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -461,10 +461,10 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -525,10 +525,10 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -590,10 +590,10 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -655,10 +655,10 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -720,10 +720,10 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The element to be tested.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the element to be tested.
 
 ### Return Value
@@ -787,10 +787,10 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The character to be converted to lower case.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the character to be converted.
 
 ### Return Value
@@ -836,10 +836,10 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 The character to be converted to upper case.
 
-*Loc*<br/>
+*Loc*\
 The locale containing the character to be converted.
 
 ### Return Value
@@ -885,7 +885,7 @@ const Facet& use_facet(const locale& Loc);
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The const locale containing the type of facet being referenced.
 
 ### Return Value
@@ -937,4 +937,4 @@ The character '!' in locale loc2 is not alphabetic.
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
+[\<locale>](../standard-library/locale.md)

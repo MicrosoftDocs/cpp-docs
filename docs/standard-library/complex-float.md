@@ -33,13 +33,13 @@ constexpr complex(
 
 ### Parameters
 
-*_RealVal*<br/>
+*_RealVal*\
 The value of type **float** for the real part of the complex number being constructed.
 
-*_ImagVal*<br/>
+*_ImagVal*\
 The value of type **float** for the imaginary part of the complex number being constructed.
 
-*complexNum*<br/>
+*complexNum*\
 The complex number of type **double** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.
 
 ## Return Value
@@ -116,5 +116,5 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## See also
 
-[complex Class](../standard-library/complex-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[complex Class](../standard-library/complex-class.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

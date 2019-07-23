@@ -69,5 +69,5 @@ If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`.
 
 ## See also
 
-[exception Class](../standard-library/exception-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[exception Class](../standard-library/exception-class.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

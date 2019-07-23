@@ -18,10 +18,10 @@ class basic_streambuf;
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 A [char_type](#char_type).
 
-*Tr*<br/>
+*Tr*\
 The character [traits_type](#traits_type).
 
 ## Remarks
@@ -146,7 +146,7 @@ basic_streambuf(const basic_streambuf& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An lvalue reference to the `basic_streambuf` object that is used to set the values for this `basic_streambuf` object.
 
 ### Remarks
@@ -209,7 +209,7 @@ void gbump(int count);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The amount by which to advance the pointer.
 
 ## <a name="getloc"></a>  basic_streambuf::getloc
@@ -268,7 +268,7 @@ virtual void imbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*<br/>
+*_Loc*\
 A reference to a locale.
 
 ### Remarks
@@ -335,7 +335,7 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.
 
 ### Remarks
@@ -352,7 +352,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
@@ -387,7 +387,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
@@ -426,7 +426,7 @@ void pbump(int count);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of characters by which to move the write position forward.
 
 ## <a name="pos_type"></a>  basic_streambuf::pos_type
@@ -459,7 +459,7 @@ locale pubimbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*<br/>
+*_Loc*\
 A reference to a locale.
 
 ### Return Value
@@ -486,13 +486,13 @@ pos_type pubseekoff(off_type _Off,
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The position to seek for relative to *_Way*.
 
-*_Way*<br/>
+*_Way*\
 The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -513,10 +513,10 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### Parameters
 
-*_Sp*<br/>
+*_Sp*\
 The position to seek for.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -539,10 +539,10 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### Parameters
 
-*_Buffer*<br/>
+*_Buffer*\
 A pointer to `char_type` for this instantiation.
 
-*count*<br/>
+*count*\
 The size of the buffer.
 
 ### Return Value
@@ -615,13 +615,13 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The position to seek for relative to *_Way*.
 
-*_Way*<br/>
+*_Way*\
 The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -652,10 +652,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### Parameters
 
-*_Sp*<br/>
+*_Sp*\
 The position to seek for.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -682,10 +682,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### Parameters
 
-*_Buffer*<br/>
+*_Buffer*\
 Pointer to a buffer.
 
-*count*<br/>
+*count*\
 Size of the buffer.
 
 ### Return Value
@@ -708,13 +708,13 @@ void setg(char_type* _Gbeg,
 
 ### Parameters
 
-*_Gbeg*<br/>
+*_Gbeg*\
 A pointer to the beginning of the buffer.
 
-*_Gnext*<br/>
+*_Gnext*\
 A pointer to somewhere in the middle of the buffer.
 
-*_Gend*<br/>
+*_Gend*\
 A pointer to the end of the buffer.
 
 ## <a name="setp"></a>  basic_streambuf::setp
@@ -727,10 +727,10 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### Parameters
 
-*_Pbeg*<br/>
+*_Pbeg*\
 A pointer to the beginning of the buffer.
 
-*_Pend*<br/>
+*_Pend*\
 A pointer to the end of the buffer.
 
 ## <a name="sgetc"></a>  basic_streambuf::sgetc
@@ -783,10 +783,10 @@ streamsize sgetn(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The buffer to contain the extracted characters.
 
-*count*<br/>
+*count*\
 The number of elements to read.
 
 ### Return Value
@@ -886,7 +886,7 @@ int_type sputbackc(char_type _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character.
 
 ### Return Value
@@ -934,7 +934,7 @@ int_type sputc(char_type _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character.
 
 ### Return Value
@@ -977,10 +977,10 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The character string.
 
-*count*<br/>
+*count*\
 The count of characters.
 
 ### Return Value
@@ -1204,10 +1204,10 @@ virtual streamsize xsgetn(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The buffer to contain the extracted characters.
 
-*count*<br/>
+*count*\
 The number of elements to extract.
 
 ### Return Value
@@ -1228,10 +1228,10 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 Pointer to elements to insert.
 
-*count*<br/>
+*count*\
 Number of elements to insert.
 
 ### Return Value
@@ -1244,6 +1244,6 @@ The protected virtual member function inserts up to *count* elements into the ou
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

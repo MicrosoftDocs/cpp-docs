@@ -38,5 +38,5 @@ Defines the container template classes [unordered_map](../standard-library/unord
 
 ## See also
 
-[unordered_multiset Class](../standard-library/unordered-multiset-class.md)<br/>
-[unordered_set Class](../standard-library/unordered-set-class.md)<br/>
+[unordered_multiset Class](../standard-library/unordered-multiset-class.md)\
+[unordered_set Class](../standard-library/unordered-set-class.md)

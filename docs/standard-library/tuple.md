@@ -59,4 +59,4 @@ Defines a template `tuple` whose instances hold objects of varying types.
 
 ## See also
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

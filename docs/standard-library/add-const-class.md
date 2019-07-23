@@ -18,7 +18,7 @@ struct add_const;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to modify.
 
 ## Remarks
@@ -57,5 +57,5 @@ add_const<int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const Class](../standard-library/remove-const-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_const Class](../standard-library/remove-const-class.md)

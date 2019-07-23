@@ -109,4 +109,4 @@ This member function does nothing. It is called by `cache_freelist::deallocate` 
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

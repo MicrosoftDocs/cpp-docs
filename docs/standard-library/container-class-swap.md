@@ -23,4 +23,4 @@ If **\*this.get\_allocator ==** _right_**.get_allocator**, it does a swap in con
 
 ## See also
 
-[Sample Container Class](../standard-library/sample-container-class.md)<br/>
+[Sample Container Class](../standard-library/sample-container-class.md)

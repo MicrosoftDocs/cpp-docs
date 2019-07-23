@@ -18,7 +18,7 @@ struct is_nothrow_copy_constructible;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -33,4 +33,4 @@ An instance of the type predicate holds true if the type *Ty* has a nothrow copy
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

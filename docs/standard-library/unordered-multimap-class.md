@@ -217,7 +217,7 @@ size_type bucket(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 The key value to map.
 
 ### Remarks
@@ -359,7 +359,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-*nbucket*<br/>
+*nbucket*\
 The bucket number.
 
 ### Remarks
@@ -719,7 +719,7 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -1035,7 +1035,7 @@ std::pair<const_iterator, const_iterator>
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -1110,16 +1110,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*<br/>
+*Where*\
 Position of the element to be removed.
 
-*First*<br/>
+*First*\
 Position of the first element to be removed.
 
-*Last*<br/>
+*Last*\
 Position just beyond the last element to be removed.
 
-*Key*<br/>
+*Key*\
 The key value of the elements to be removed.
 
 ### Return Value
@@ -1142,7 +1142,7 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-*keyval*<br/>
+*keyval*\
 Key value to search for.
 
 ### Remarks
@@ -1825,7 +1825,7 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-*factor*<br/>
+*factor*\
 The new maximum load factor.
 
 ### Remarks
@@ -2100,7 +2100,7 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-*nbuckets*<br/>
+*nbuckets*\
 The requested number of buckets.
 
 ### Remarks
@@ -2281,7 +2281,7 @@ void swap(unordered_multimap& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The container to swap with.
 
 ### Remarks
@@ -2601,7 +2601,7 @@ int main()
 
 ## See also
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
-[Containers](../cpp/containers-modern-cpp.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)\
+[Containers](../cpp/containers-modern-cpp.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -96,16 +96,16 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### Parameters
 
-*Rep2*<br/>
+*Rep2*\
 An arithmetic type to represent the number of ticks.
 
-*Period2*<br/>
+*Period2*\
 A `std::ratio` template specialization to represent the tick period in units of seconds.
 
-*R*<br/>
+*R*\
 The number of ticks of default period.
 
-*Dur*<br/>
+*Dur*\
 The number of ticks of period specified by *Period2*.
 
 ### Remarks
@@ -182,7 +182,7 @@ duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
 
 ### Return Value
@@ -199,7 +199,7 @@ duration& operator*=(const rep& Mult);
 
 ### Parameters
 
-*Mult*<br/>
+*Mult*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -216,7 +216,7 @@ duration& operator/=(const rep& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -257,7 +257,7 @@ duration& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -274,7 +274,7 @@ duration& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -299,7 +299,7 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 The divisor, which is either a duration object or a value that represents tick counts.
 
 ### Remarks
@@ -308,6 +308,6 @@ The first member function reduces the stored tick count modulo Div and returns *
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[duration_values Structure](../standard-library/duration-values-structure.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
+[duration_values Structure](../standard-library/duration-values-structure.md)

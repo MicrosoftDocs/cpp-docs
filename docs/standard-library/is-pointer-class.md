@@ -18,7 +18,7 @@ struct is_pointer;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -71,6 +71,6 @@ is_pointer<int *> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_member_pointer Class](../standard-library/is-member-pointer-class.md)<br/>
-[is_reference Class](../standard-library/is-reference-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_member_pointer Class](../standard-library/is-member-pointer-class.md)\
+[is_reference Class](../standard-library/is-reference-class.md)

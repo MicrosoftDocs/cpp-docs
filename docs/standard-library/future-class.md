@@ -62,7 +62,7 @@ future(future&& Other) noexcept;
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 A `future` object.
 
 ### Remarks
@@ -103,7 +103,7 @@ future& operator=(future&& Right) noexcept;
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `future` object.
 
 ### Return Value
@@ -161,7 +161,7 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 ### Parameters
 
-*Rel_time*<br/>
+*Rel_time*\
 A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
@@ -183,7 +183,7 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 ### Parameters
 
-*Abs_time*<br/>
+*Abs_time*\
 A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value
@@ -196,5 +196,5 @@ An associated asynchronous state is *ready* only if its asynchronous provider ha
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

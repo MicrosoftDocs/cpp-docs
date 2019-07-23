@@ -18,7 +18,7 @@ struct is_destructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -33,4 +33,4 @@ An instance of the type predicate holds true if the type *T* is a destructible t
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

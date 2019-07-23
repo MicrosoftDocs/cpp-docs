@@ -18,13 +18,13 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ### Parameters
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of the basic element of the string.
 
-*Tr*<br/>
+*Tr*\
 The character traits specialized on the basic element of the string.
 
 ## Remarks
@@ -76,10 +76,10 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
 
 ### Parameters
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*<br/>
+*str*\
 An object of type `basic_string`.
 
 ### Remarks
@@ -117,7 +117,7 @@ void str(
 
 ### Parameters
 
-*_Newstr*<br/>
+*_Newstr*\
 The new string.
 
 ### Return Value
@@ -134,6 +134,6 @@ See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) for
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)
