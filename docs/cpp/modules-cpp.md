@@ -1,13 +1,13 @@
 ---
 title: "Overview of modules in C++"
-ms.date: "07/15/2019"
+ms.date: "07/23/2019"
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 ms.description: Modules in C++20 provide a modern alternative to header files.
 ---
 
 # Overview of modules in C++
 
-C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. A module is a set of source code files that are compiled independently of the translation units that import them. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types. That file can be processed much faster than a header file, and can be reused by the compiler every place where the module is imported in a project.
+C++20 introduces *modules*, a modern solution for componentization of C++ libraries and programs. A module is a set of source code files that are compiled independently of the [translation units](https://wikipedia.org/wiki/Translation_unit_(programming)) that import them. Modules eliminate or greatly reduce many of the problems associated with the use of header files, and also potentially reduce compilation times. Macros, preprocessor directives, and non-exported names declared in a module are not visible and therefore have no effect on the compilation of the translation unit that imports the module. You can import modules in any order without concern for macro redefinitions. Declarations in the importing translation unit do not participate in overload resolution or name lookup in the imported module. After a module is compiled once, the results are stored in a binary file that describes all the exported types, functions and templates. That file can be processed much faster than a header file, and can be reused by the compiler every place where the module is imported in a project.
 
 Modules can be used side by side with header files. A C++ source file can import modules and also #include header files. In some cases, a header file can be imported as a module rather than textually #included by the preprocessor. We recommend that new projects use modules rather than header files as much as possible. For larger existing projects under active development, we suggest that you experiment with converting legacy headers to modules to see whether you get a meaningful reduction in compilation times.
 
@@ -19,10 +19,10 @@ A module and the code that consumes it must be compiled with the same compiler o
 
 ## Consume the C++ Standard Library as modules
 
-By importing the C++ Standard Library as modules rather than #including it through header files, you can potentially speed up compilation times depending on the size of your project. The library is componentized into the following modules:
+Although not specified by the C++20 standard, Microsoft enables its implementation of the C++ Standard Library to be imported as modules. By importing the C++ Standard Library as modules rather than #including it through header files, you can potentially speed up compilation times depending on the size of your project. The library is componentized into the following modules:
 
 - std.regex provides the content of header \<regex>
-- std.filesystem provides the content of header \<experimental/filesystem>
+- std.filesystem provides the content of header \<filesystem>
 - std.memory provides the content of header \<memory>
 - std.threading provides the contents of headers \<atomic>, \<condition_variable>, \<future>, \<mutex>, \<shared_mutex>, and \<thread>
 - std.core provides everything else in the C++ Standard Library
@@ -51,7 +51,7 @@ namespace Bar
         return ANSWER;
       }
 
-     export int f() {
+   export int f() {
       return f_internal();
    }
 }
@@ -92,7 +92,7 @@ The rules for namespaces in modules are the same as in any other code. If a decl
 >[!NOTE]
 > This section is provided for completeness. Partitions are not yet implemented in the Microsoft C++ compiler.
 
-A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except that it shares ownership of all declarations in the entire module. All names that are exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are need to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, etc.) in one partition and define it in another. A partition implementation file begins like this:
+A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except that it shares ownership of all declarations in the entire module. All names that are exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, etc.) in one partition and define it in another. A partition implementation file begins like this:
 
 ```cpp
 module Foo:part1
@@ -104,7 +104,7 @@ and the partition interface file begins like this:
 export module Foo:part1
 ```
 
-To access declarations in another partition, a partition must import it, but it can only use the part name, not the module name:
+To access declarations in another partition, a partition must import it, but it can only use the partition name, not the module name:
 
 ```cpp
 module Foo:part2;
@@ -141,7 +141,7 @@ You can use a traditional header file to control which modules are imported:
 
 ```cpp
 // MyProgram.h
-import std.Ccore
+import std.core;
 #ifdef DEBUG_LOGGING
 import std.filesystem;
 #endif
