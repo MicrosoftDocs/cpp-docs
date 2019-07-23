@@ -46,7 +46,7 @@ cl.exe /c main.cpp tt.cpp
 link.exe main.obj tt.obj
 ```
 
-To fix the error, compile the second sample with the import library of the first code snippet as shown here:
+To fix the error, after compiling the two files, pass tt.obj to lib.exe to create a .lib file, and then link main.obj with tt.lib as shown here:
 
 ```cmd
 cl.exe /c main.cpp tt.cpp
