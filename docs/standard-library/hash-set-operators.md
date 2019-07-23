@@ -24,10 +24,10 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_set`.
 
-*right*<br/>
+*right*\
 An object of type `hash_set`.
 
 ### Return Value
@@ -92,10 +92,10 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_set`.
 
-*right*<br/>
+*right*\
 An object of type `hash_set`.
 
 ### Return Value
@@ -158,10 +158,10 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `hash_multiset`.
 
 ### Return Value
@@ -224,10 +224,10 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `hash_multiset`.
 
 ### Return Value
@@ -279,4 +279,4 @@ The hash_multisets s1 and s2 are equal.
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+[<hash_set>](../standard-library/hash-set.md)

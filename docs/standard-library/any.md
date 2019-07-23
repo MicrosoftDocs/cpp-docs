@@ -33,4 +33,4 @@ Defines the class any and several supporting functions and classes.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

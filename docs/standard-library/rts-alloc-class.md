@@ -102,5 +102,5 @@ bool equals(const sync<_Cache>& _Other) const;
 
 ## See also
 
-[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)<br/>
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)\
+[\<allocators>](../standard-library/allocators-header.md)

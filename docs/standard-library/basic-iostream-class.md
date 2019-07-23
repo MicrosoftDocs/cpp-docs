@@ -66,10 +66,10 @@ basic_iostream();
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 An existing `basic_streambuf` object.
 
-*right*<br/>
+*right*\
 An existing `basic_iostream` object that is used to construct a new `basic_iostream`.
 
 ### Remarks
@@ -88,7 +88,7 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `rvalue` reference to a `basic_iostream` object to assign from.
 
 ### Remarks
@@ -105,7 +105,7 @@ void swap(basic_iostream& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `basic_iostream` object to swap.
 
 ### Remarks
@@ -114,6 +114,6 @@ The member function calls `swap(right)`.
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

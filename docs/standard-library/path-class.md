@@ -109,13 +109,13 @@ path& append(InIt first, InIt last);
 
 ### Parameters
 
-*source*<br/>
+*source*\
 Specified sequence.
 
-*first*<br/>
+*first*\
 Start of specified sequence.
 
-*last*<br/>
+*last*\
 End of specified sequence.
 
 ## <a name="assign"></a> path::assign
@@ -132,13 +132,13 @@ path& assign(InIt first, InIt last);
 
 ### Parameters
 
-*source*<br/>
+*source*\
 Specified sequence.
 
-*first*<br/>
+*first*\
 Start of specified sequence.
 
-*last*<br/>
+*last*\
 End of specified sequence.
 
 ## <a name="begin"></a> path::begin
@@ -177,13 +177,13 @@ int compare(const value_type *ptr) const;
 
 ### Parameters
 
-*pval*<br/>
+*pval*\
 Path to compare.
 
-*str*<br/>
+*str*\
 String to compare.
 
-*ptr*<br/>
+*ptr*\
 Pointer to compare.
 
 ## <a name="concat"></a> path::concat
@@ -200,13 +200,13 @@ path& concat(InIt first, InIt last);
 
 ### Parameters
 
-*source*<br/>
+*source*\
 Specified sequence.
 
-*first*<br/>
+*first*\
 Start of specified sequence.
 
-*last*<br/>
+*last*\
 End of specified sequence.
 
 ## <a name="const_iterator"></a> path::const_iterator
@@ -454,10 +454,10 @@ path& operator=(const Source& source);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [path](../standard-library/path-class.md) being copied into the `path`.
 
-*source*<br/>
+*source*\
 The source path.
 
 ### Remarks
@@ -483,19 +483,19 @@ path& operator+=(Elem elem);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The added path.
 
-*str*<br/>
+*str*\
 The added string.
 
-*ptr*<br/>
+*ptr*\
 The added pointer.
 
-*elem*<br/>
+*elem*\
 The added `value_type` or `Elem`.
 
-*source*<br/>
+*source*\
 The added source.
 
 ### Remarks
@@ -527,10 +527,10 @@ path& operator/=(const Source& source);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The added path.
 
-*source*<br/>
+*source*\
 The added source.
 
 ### Remarks
@@ -586,19 +586,19 @@ path(InIt first, InIt last, const locale& loc);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The path of which the constructed path is to be a copy.
 
-*source*<br/>
+*source*\
 The source of which the constructed path is to be a copy.
 
-*loc*<br/>
+*loc*\
 The specified locale.
 
-*first*<br/>
+*first*\
 The position of the first element to be copied.
 
-*last*<br/>
+*last*\
 The position of the last element to be copied.
 
 ### Remarks
@@ -665,7 +665,7 @@ path& replace_extension(const path& newext = path());
 
 ### Parameters
 
-*newext*<br/>
+*newext*\
 The new extension.
 
 ### Remarks
@@ -682,7 +682,7 @@ path& replace_filename(const path& pval);
 
 ### Parameters
 
-*pval*<br/>
+*pval*\
 The path of the filename.
 
 ### Remarks
@@ -830,4 +830,4 @@ wstring wstring() const;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

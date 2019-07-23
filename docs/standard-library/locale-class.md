@@ -269,7 +269,7 @@ locale combine(const locale& Loc) const;
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
@@ -338,7 +338,7 @@ static locale global(const locale& Loc);
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The locale to be used as the default locale by the program.
 
 ### Return Value
@@ -414,19 +414,19 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### Parameters
 
-*Locname*<br/>
+*Locname*\
 Name of a locale.
 
-*Loc*<br/>
+*Loc*\
 A locale that is to be copied in constructing the new locale.
 
-*Other*<br/>
+*Other*\
 A locale from which to select a category.
 
-*Cat*<br/>
+*Cat*\
 The category to be substituted into the constructed locale.
 
-*Fac*<br/>
+*Fac*\
 The facet to be substituted into the constructed locale.
 
 ### Remarks
@@ -546,7 +546,7 @@ bool operator!=(const locale& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 One of the locales to be tested for inequality.
 
 ### Return Value
@@ -610,10 +610,10 @@ bool operator()(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The left string.
 
-*right*<br/>
+*right*\
 The right string.
 
 ### Return Value
@@ -679,7 +679,7 @@ bool operator==(const locale& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 One of the locales to be tested for equality.
 
 ### Return Value
@@ -736,7 +736,7 @@ and loc3 (English_United States.1252) are not equal.
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Code Pages](../c-runtime-library/code-pages.md)<br/>
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[Code Pages](../c-runtime-library/code-pages.md)\
+[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

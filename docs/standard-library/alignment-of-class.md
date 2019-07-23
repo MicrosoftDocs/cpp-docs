@@ -18,7 +18,7 @@ struct alignment_of;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -33,5 +33,5 @@ The type query holds the value of the alignment of the type *Ty*.
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[aligned_storage Class](../standard-library/aligned-storage-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[aligned_storage Class](../standard-library/aligned-storage-class.md)

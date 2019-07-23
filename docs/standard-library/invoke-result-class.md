@@ -21,10 +21,10 @@ template<lass Callable, class... Args>
 
 ### Parameters
 
-*Callable*<br/>
+*Callable*\
 The callable type to query.
 
-*Args*<br/>
+*Args*\
 The types of the argument list to the callable type to query.
 
 ## Remarks
@@ -39,5 +39,5 @@ Use this template to determine the result type of *Callable*(*Args*...) at compi
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
 [invoke](functional-functions.md#invoke)

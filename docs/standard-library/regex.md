@@ -88,12 +88,12 @@ To modify the details of the grammar of regular expressions, write a class that 
 
 ## See also
 
-[Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+[Regular Expressions (C++)](../standard-library/regular-expressions-cpp.md)\
+[regex_constants Class](../standard-library/regex-constants-class.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[\<regex> functions](../standard-library/regex-functions.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[\<regex> operators](../standard-library/regex-operators.md)\
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)\
+[regex_traits Class](../standard-library/regex-traits-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

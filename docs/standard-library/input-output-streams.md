@@ -23,8 +23,8 @@ The class template `basic_stringstream` and its common specialization, `stringst
 
 ## See also
 
-[stringstream](../standard-library/basic-stringstream-class.md)<br/>
-[basic_stringstream Class](../standard-library/basic-stringstream-class.md)<br/>
-[\<sstream>](../standard-library/sstream.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
+[stringstream](../standard-library/basic-stringstream-class.md)\
+[basic_stringstream Class](../standard-library/basic-stringstream-class.md)\
+[\<sstream>](../standard-library/sstream.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

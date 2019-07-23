@@ -18,13 +18,13 @@ class priority_queue
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the priority_queue.
 
-*Container*<br/>
+*Container*\
 The type of the underlying container used to implement the priority_queue.
 
-*Compare*<br/>
+*Compare*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate `less<typename Container::value_type>` is the default value.
 
 ## Remarks
@@ -220,19 +220,19 @@ priority_queue(InputIterator first, InputIterator last, const Traits& _comp, con
 
 ### Parameters
 
-*_comp*<br/>
+*_comp*\
 The comparison function of type **constTraits** used to order the elements in the priority_queue, which defaults to compare function of the base container.
 
-*_Cont*<br/>
+*_Cont*\
 The base container of which the constructed priority_queue is to be a copy.
 
-*right*<br/>
+*right*\
 The priority_queue of which the constructed set is to be a copy.
 
-*first*<br/>
+*first*\
 The position of the first element in the range of elements to be copied.
 
-*last*<br/>
+*last*\
 The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
@@ -364,7 +364,7 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The element added to the top of the priority_queue.
 
 ### Remarks
@@ -552,5 +552,5 @@ The element at the top of the priority_queue is 69.
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

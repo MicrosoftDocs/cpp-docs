@@ -41,10 +41,10 @@ public:
 
 ### Parameters
 
-*IntType*<br/>
+*IntType*\
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*<br/>
+*URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -195,10 +195,10 @@ explicit geometric_distribution(const param_type& parm);
 
 ### Parameters
 
-*p*<br/>
+*p*\
 The `p` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -226,10 +226,10 @@ struct param_type {
 
 ### Parameters
 
-*p*<br/>
+*p*\
 The `p` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` instance to compare this to.
 
 ### Remarks
@@ -240,4 +240,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

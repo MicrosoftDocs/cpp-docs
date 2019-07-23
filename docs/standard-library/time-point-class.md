@@ -89,7 +89,7 @@ time_point& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -106,7 +106,7 @@ time_point& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -128,10 +128,10 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A [duration](../standard-library/duration-class.md) object.
 
-*Tp*<br/>
+*Tp*\
 A `time_point` object.
 
 ### Remarks
@@ -152,5 +152,5 @@ constexpr duration time_since_epoch() const;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)

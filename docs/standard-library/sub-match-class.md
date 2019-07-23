@@ -19,7 +19,7 @@ class sub_match
 
 ## Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches.
 
 ## Remarks
@@ -127,13 +127,13 @@ int compare(const value_type *ptr) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The submatch to compare to.
 
-*str*<br/>
+*str*\
 The string to compare to.
 
-*ptr*<br/>
+*ptr*\
 The null-terminated sequence to compare to.
 
 ### Remarks
@@ -234,5 +234,5 @@ The typedef is a synonym for `iterator_traits<BidIt>::value_type`.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[sub_match](../standard-library/sub-match-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[sub_match](../standard-library/sub-match-class.md)

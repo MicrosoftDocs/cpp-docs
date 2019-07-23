@@ -18,7 +18,7 @@ struct is_signed;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -68,5 +68,5 @@ is_signed<float> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_unsigned Class](../standard-library/is-unsigned-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_unsigned Class](../standard-library/is-unsigned-class.md)

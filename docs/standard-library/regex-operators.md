@@ -53,19 +53,19 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -168,19 +168,19 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -253,22 +253,22 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 The element type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*os*<br/>
+*os*\
 The output stream.
 
-*right*<br/>
+*right*\
 The object to insert.
 
 ### Remarks
@@ -338,19 +338,19 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -452,19 +452,19 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -575,19 +575,19 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -685,19 +685,19 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type.
 
-*IOtraits*<br/>
+*IOtraits*\
 The string traits class.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The left object to compare.
 
-*right*<br/>
+*right*\
 The right object to compare.
 
 ### Remarks
@@ -760,11 +760,11 @@ sub >= 'a' == true
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Class](../standard-library/regex-constants-class.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[\<regex> functions](../standard-library/regex-functions.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)\
+[regex_traits Class](../standard-library/regex-traits-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

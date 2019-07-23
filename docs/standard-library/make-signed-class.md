@@ -21,7 +21,7 @@ using make_signed_t = typename make_signed<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -36,4 +36,4 @@ An instance of the type modifier holds a modified-type that is *T* if `is_signed
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -37,10 +37,10 @@ bool operator!=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -76,10 +76,10 @@ bool operator==(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -115,10 +115,10 @@ bool operator<(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -176,10 +176,10 @@ bool operator<=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -202,10 +202,10 @@ inline basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*Ostr*<br/>
+*Ostr*\
 an output stream being written to.
 
-*Str*<br/>
+*Str*\
 The string_view to be entered into an output stream.
 
 ### Return Value
@@ -239,10 +239,10 @@ bool operator>(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -276,10 +276,10 @@ bool operator>=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*<br/>
+*right*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -309,4 +309,4 @@ using namespace literals::string_view_literals;
 
 ## See also
 
-[\<string_view>](../standard-library/string-view.md)<br/>
+[\<string_view>](../standard-library/string-view.md)

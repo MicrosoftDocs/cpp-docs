@@ -31,10 +31,10 @@ protected:
 
 ### Parameters
 
-*_Locname*<br/>
+*_Locname*\
 A named locale.
 
-*_Refs*<br/>
+*_Refs*\
 An initial reference count.
 
 ## Remarks
@@ -49,4 +49,4 @@ The template class describes an object that can serve as a [locale facet](../sta
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

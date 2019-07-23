@@ -49,4 +49,4 @@ The template function executes `left.swap(right)`.
 
 ## See also
 
-[\<sstream>](../standard-library/sstream.md)<br/>
+[\<sstream>](../standard-library/sstream.md)

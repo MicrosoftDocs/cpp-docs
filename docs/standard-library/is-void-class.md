@@ -18,7 +18,7 @@ struct is_void;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -65,4 +65,4 @@ is_void<void> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -17,10 +17,10 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **char**.
 
-*Traits*<br/>
+*Traits*\
 The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
@@ -268,7 +268,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 ### Parameters
 
-*_Char*<br/>
+*_Char*\
 The character to be inserted into the stream buffer.
 
 ### Return Value
@@ -321,10 +321,10 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 The output streambuf object used to initialize the output stream-buffer pointer.
 
-*Ostr*<br/>
+*Ostr*\
 The output stream object used to initialize the output stream-buffer pointer.
 
 ### Remarks
@@ -450,6 +450,6 @@ by charOutBuf are: OUT.
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

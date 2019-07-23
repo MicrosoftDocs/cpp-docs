@@ -43,13 +43,13 @@ inline constexpr bool is_nothrow_invocable_r_v =
 
 ### Parameters
 
-*Callable*<br/>
+*Callable*\
 The callable type to query.
 
-*Args*<br/>
+*Args*\
 The argument types to query.
 
-*Convertible*<br/>
+*Convertible*\
 The type the result of *Callable* must be convertible to.
 
 ## Remarks
@@ -104,5 +104,5 @@ int main()
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[invoke](functional-functions.md#invoke)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[invoke](functional-functions.md#invoke)

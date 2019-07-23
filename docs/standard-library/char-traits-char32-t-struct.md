@@ -28,5 +28,5 @@ Specialization allows the struct to take advantage of library functions that man
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
-[char_traits Struct](../standard-library/char-traits-struct.md)<br/>
+[\<string>](../standard-library/string.md)\
+[char_traits Struct](../standard-library/char-traits-struct.md)

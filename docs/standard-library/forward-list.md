@@ -45,4 +45,4 @@ Defines the container template class forward_list and several supporting templat
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

@@ -42,6 +42,6 @@ Like the run-time function `sprintf_s`, the `ostringstream` class supports outpu
 
 ## See also
 
-[ofstream](../standard-library/basic-ofstream-class.md)<br/>
-[ostringstream](../standard-library/basic-ostringstream-class.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
+[ofstream](../standard-library/basic-ofstream-class.md)\
+[ostringstream](../standard-library/basic-ostringstream-class.md)\
+[iostream Programming](../standard-library/iostream-programming.md)

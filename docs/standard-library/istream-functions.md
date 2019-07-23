@@ -28,10 +28,10 @@ void swap(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A stream.
 
-*right*<br/>
+*right*\
 A stream.
 
 ## <a name="ws"></a>  ws
@@ -44,7 +44,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 ### Parameters
 
-*_Istr*<br/>
+*_Istr*\
 A stream.
 
 ### Return Value
@@ -63,4 +63,4 @@ See [operator>>](../standard-library/istream-operators.md#op_gt_gt) for an examp
 
 ## See also
 
-[\<istream>](../standard-library/istream.md)<br/>
+[\<istream>](../standard-library/istream.md)

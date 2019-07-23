@@ -21,7 +21,7 @@ using decay_t = typename decay<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -44,4 +44,4 @@ Use the decay template to produce the resulting type as if the type was passed b
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

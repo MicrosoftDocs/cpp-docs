@@ -181,4 +181,4 @@ Member functions of this class do not throw exceptions.
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

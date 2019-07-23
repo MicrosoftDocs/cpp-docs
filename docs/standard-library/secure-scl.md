@@ -30,7 +30,7 @@ For information on how to disable warnings about checked iterators, see [_SCL_SE
 
 ## See also
 
-[_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)<br/>
-[Checked Iterators](../standard-library/checked-iterators.md)<br/>
-[Debug Iterator Support](../standard-library/debug-iterator-support.md)<br/>
-[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)<br/>
+[_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)\
+[Checked Iterators](../standard-library/checked-iterators.md)\
+[Debug Iterator Support](../standard-library/debug-iterator-support.md)\
+[Safe Libraries: C++ Standard Library](../standard-library/safe-libraries-cpp-standard-library.md)

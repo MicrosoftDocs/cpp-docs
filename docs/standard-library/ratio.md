@@ -74,4 +74,4 @@ typedef ratio<1000000000000000000, 1> exa;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

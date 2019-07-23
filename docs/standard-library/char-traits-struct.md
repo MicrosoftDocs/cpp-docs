@@ -18,7 +18,7 @@ struct char_traits;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The element data type.
 
 ## Remarks
@@ -79,13 +79,13 @@ static char_type *assign(char_type* strTo,
 **_** *CharFrom*
 The character whose value is to be assigned.
 
-*_CharTo*<br/>
+*_CharTo*\
 The element that is to be assigned the character value.
 
-*strTo*<br/>
+*strTo*\
 The string or character array whose initial elements are to be assigned character values.
 
-*_Num*<br/>
+*_Num*\
 The number of elements that are going to be assigned values.
 
 ### Return Value
@@ -161,13 +161,13 @@ static int compare(const char_type* str1,
 
 ### Parameters
 
-*str1*<br/>
+*str1*\
 The first of two strings to be compared to each other.
 
-*str2*<br/>
+*str2*\
 The second of two strings to be compared to each other.
 
-*_Num*<br/>
+*_Num*\
 The number of elements in the strings to be compared.
 
 ### Return Value
@@ -227,13 +227,13 @@ static char_type *copy(char_type* _To,
 
 ### Parameters
 
-*_To*<br/>
+*_To*\
 The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-*_From*<br/>
+*_From*\
 The element at the beginning of the source string or character array to be copied.
 
-*_Num*<br/>
+*_Num*\
 The number of elements to be copied.
 
 ### Return Value
@@ -289,16 +289,16 @@ static char_type *_Copy_s(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 The string or character array targeted to receive the copied sequence of characters.
 
-*dest_size*<br/>
+*dest_size*\
 The size of *dest*. If `char_type` is **char**, then this size is in bytes. If `char_type` is **wchar_t**, then this size is in words.
 
-*_From*<br/>
+*_From*\
 The source string or character array to be copied.
 
-*count*<br/>
+*count*\
 The number of elements to be copied.
 
 ### Return Value
@@ -401,10 +401,10 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 
 ### Parameters
 
-*_Ch1*<br/>
+*_Ch1*\
 The first of two characters to be tested for equality.
 
-*_Ch2*<br/>
+*_Ch2*\
 The second of two characters to be tested for equality.
 
 ### Return Value
@@ -461,10 +461,10 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 
 ### Parameters
 
-*_Ch1*<br/>
+*_Ch1*\
 The first of the two characters to be tested for equality as `int_type`s.
 
-*_Ch2*<br/>
+*_Ch2*\
 The second of the two characters to be tested for equality as `int_type`s.
 
 ### Return Value
@@ -548,13 +548,13 @@ static const char_type* find(const char_type* str,
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The first character in the string to be searched.
 
-*_Num*<br/>
+*_Num*\
 The number of positions, counting from the first, in the range to be searched.
 
-*_Ch*<br/>
+*_Ch*\
 The character to be searched for in the range.
 
 ### Return Value
@@ -629,7 +629,7 @@ static size_t length(const char_type* str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The C-string whose length is to be measured.
 
 ### Return Value
@@ -672,10 +672,10 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 
 ### Parameters
 
-*_Ch1*<br/>
+*_Ch1*\
 The first of two characters to be tested for less than.
 
-*_Ch2*<br/>
+*_Ch2*\
 The second of two characters to be tested for less than.
 
 ### Return Value
@@ -735,13 +735,13 @@ static char_type *move(char_type* _To,
 
 ### Parameters
 
-*_To*<br/>
+*_To*\
 The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-*_From*<br/>
+*_From*\
 The element at the beginning of the source string or character array to be copied.
 
-*_Num*<br/>
+*_Num*\
 The number of elements to be copied from the source string.
 
 ### Return Value
@@ -812,16 +812,16 @@ static char_type *_Move_s(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 The element at the beginning of the string or character array targeted to receive the copied sequence of characters.
 
-*dest_size*<br/>
+*dest_size*\
 The size of *dest*. If `char_type` is **char**, then this is in bytes. If `char_type` is **wchar_t**, then this is in words.
 
-*_From*<br/>
+*_From*\
 The element at the beginning of the source string or character array to be copied.
 
-*count*<br/>
+*count*\
 The number of elements to be copied from the source string.
 
 ### Return Value
@@ -888,7 +888,7 @@ static int_type not_eof(const int_type& _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The character represented as an `int_type` to be tested for whether it is the EOF character or not.
 
 ### Return Value
@@ -996,7 +996,7 @@ static char_type to_char_type(const int_type& _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The `int_type` character to be represented as a `char_type`.
 
 ### Return Value
@@ -1102,7 +1102,7 @@ static int_type to_int_type(const char_type& _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 The `char_type` character to be represented as an `int_type`.
 
 ### Return Value
@@ -1197,4 +1197,4 @@ The recovered char_type of ch2 is equal to the original ch2.
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
