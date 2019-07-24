@@ -1,7 +1,6 @@
 ---
 title: "C++ project property page reference - Visual Studio"
-ms.date: "07/16/2019"
-f1_keywords: ["VC.Project.NotAProp.Edit"]
+ms.date: "07/24/2019"
 helpviewer_keywords: ["project-file macro", "project properties [C++], default values", "user-defined values", "project properties [C++], setting", "macros, project-file", "property pages, project settings", "C++ projects, properties", "build macro", "user-defined macros"]
 ms.assetid: 13ffe3ea-1bc3-4bee-be5e-053a8a99cce4
 ---
@@ -14,44 +13,18 @@ For property pages in Linux projects, see [Linux C++ Property Page Reference](..
 ## In This Section
 
 [General Property Page (Project)](general-property-page-project.md)
-
-[VC++ Directories Property Page](vcpp-directories-property-page.md)
-
-[Manifest Tool, General](general-manifest-tool-configuration-properties.md)
-[Manifest Tool, Input and Output](input-and-output-manifest-tool.md)
-[Manifest Tool, Isolated COM](isolated-com-manifest-tool.md)
-[Manifest Tool, Advanced](advanced-manifest-tool.md)
-
-
-[Command Line Property Pages](command-line-property-pages.md)
-
-[Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
-
-[Adding references](../adding-references-in-visual-cpp-projects.md)
-
 [General Property Page (File)](general-property-page-file.md)
-
-
-
-
-
-[HLSL Property Pages](hlsl-property-pages.md)
-
-[HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)
-
-[HLSL Property Pages: General](hlsl-property-pages-general.md)
-
-[HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
-
-
-
-
-
+[Advanced Property Page](advanced-property-page.md)
+[Debugging Property Pages](debugging-property-pages.md)
+[VC++ Directories Property Page](vcpp-directories-property-page.md)
+[C/C++ Property Pages](c-cpp-prop-pages.md)
 [Linker Property Pages](linker-property-pages.md)
-
-[Managed Resources Property Page](managed-resources-property-page.md)
-
 [Manifest Tool Property Pages](manifest-tool-property-pages.md)
+[HLSL Property Pages](hlsl-property-pages.md)
+[Command Line Property Pages](command-line-property-pages.md)
+[Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
+[Adding references](../adding-references-in-visual-cpp-projects.md)
+[Managed Resources Property Page](managed-resources-property-page.md)
 
 [MIDL Property Pages](midl-property-pages.md)
 

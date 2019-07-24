@@ -907,17 +907,17 @@
       },
       {
          "source_path": "docs/ide/hlsl-property-pages-advanced.md",
-         "redirect_url": "/cpp/build/reference/hlsl-property-pages-advanced",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/ide/hlsl-property-pages-general.md",
-         "redirect_url": "/cpp/build/reference/hlsl-property-pages-general",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/ide/hlsl-property-pages-output-files.md",
-         "redirect_url": "/cpp/build/reference/hlsl-property-pages-output-files",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
       {

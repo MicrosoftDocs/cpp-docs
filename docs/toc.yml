@@ -452,16 +452,7 @@
                 - name: "Custom build step property page: General"
                   href: build/reference/custom-build-step-property-page-general.md
                 - name: HLSL property pages
-                  expanded: false
-                  items: 
-                    - name: HLSL property pages
-                      href: build/reference/hlsl-property-pages.md
-                    - name: "HLSL property pages: General"
-                      href: build/reference/hlsl-property-pages-general.md
-                    - name: "HLSL property pages: Advanced"
-                      href: build/reference/hlsl-property-pages-advanced.md
-                    - name: "HLSL property pages: Output files"
-                      href: build/reference/hlsl-property-pages-output-files.md
+                  href: build/reference/hlsl-property-pages.md
         - name: MSVC compiler reference
           expanded: false
           items: 
