@@ -417,13 +417,13 @@
                 - name: Advanced property page
                   href: build/reference/advanced-property-page.md
                 - name: Debugging (Local) property page
-                  href: build/reference/debugging-local-window-property-page.md
+                  href: build/reference/debugger-local-window-property-page.md
                 - name: Debugging (Remote) property page
-                  href: build/reference/debugging-remote-window-property-page.md
+                  href: build/reference/debugger-remote-window-property-page.md
                 - name: Debugging (Web Browser) property page
-                  href: build/reference/debugging-web-browser-property-page.md
+                  href: build/reference/debugger-web-browser-property-page.md
                 - name: Debugging (Web Service) property page
-                  href: build/reference/debugging-web-service-property-page.md
+                  href: build/reference/debugger-web-service-property-page.md
                 - name: VC++ Directories property page
                   href: build/reference/vcpp-directories-property-page.md
                 - name: C/C++ property pages

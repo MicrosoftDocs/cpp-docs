@@ -26,7 +26,7 @@ Prints Linker Progress Messages
 - **For Libraries Searched** - Displays progress messages indicating just the libraries searched.
 - **About COMDAT folding during optimized linking** - Displays information about COMDAT folding during optimized linking.
 - **About data removed during optimized linking** - Displays information about functions and data removed during optimized linking.
-- **About Modules incompatible with SEH** - Displays information about modoules incompatible with Safe Exception Handling.
+- **About Modules incompatible with SEH** - Displays information about modules incompatible with Safe Exception Handling.
 - **About linker activity related to managed code** - Display information about linker activity related to managed code.
 
 ### Version
@@ -247,19 +247,19 @@ Specify the minimum required version of the subsystem. The arguments are decimal
 
 ### Heap Reserve Size
 
-Specifies total heap allocation size in virtual memory. Default is 1MB.    ([/HEAP](heap-set-heap-size.md):reserve)
+Specifies total heap allocation size in virtual memory. Default is 1 MB.    ([/HEAP](heap-set-heap-size.md):reserve)
 
 ### Heap Commit Size
 
-Specifies total heap allocation size in physical memory. Default is 4KB.    ([/HEAP](heap-set-heap-size.md):reserve,commit)
+Specifies total heap allocation size in physical memory. Default is 4 KB.    ([/HEAP](heap-set-heap-size.md):reserve,commit)
 
 ### Stack Reserve Size
 
-Specifies the total stack allocation size in virtual memory. Default is 1MB.     ([/STACK](stack-stack-allocations.md):reserve)
+Specifies the total stack allocation size in virtual memory. Default is 1 MB.     ([/STACK](stack-stack-allocations.md):reserve)
 
 ### Stack Commit Size
 
-Specifies the total stack allocation size in physical memory. Default is 4KB.     ([/STACK](stack-stack-allocations.md):reserve,commit)
+Specifies the total stack allocation size in physical memory. Default is 4 KB.     ([/STACK](stack-stack-allocations.md):reserve,commit)
 
 ### Enable Large Addresses
 
