@@ -34,5 +34,5 @@ struct uses_allocator<tuple<Types...>, Alloc>;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

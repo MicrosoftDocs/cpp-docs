@@ -37,16 +37,16 @@ class linear_congruential_engine{
 
 ### Parameters
 
-*UIntType*<br/>
+*UIntType*\
 The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-*A*<br/>
+*A*\
 **Multiplier**. **Precondition**: See Remarks section.
 
-*C*<br/>
+*C*\
 **Increment**. **Precondition**: See Remarks section.
 
-*M*<br/>
+*M*\
 **Modulus**. **Precondition**: See remarks.
 
 ## Members
@@ -94,4 +94,4 @@ For detailed information about the linear congruential engine algorithm, see the
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

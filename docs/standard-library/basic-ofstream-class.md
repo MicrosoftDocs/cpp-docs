@@ -18,10 +18,10 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 The basic element of the file buffer.
 
-*Tr*<br/>
+*Tr*\
 The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
@@ -103,16 +103,16 @@ basic_ofstream(
 
 ### Parameters
 
-*_Filename*<br/>
+*_Filename*\
 The name of the file to open.
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*<br/>
+*_Prot*\
 The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-*right*<br/>
+*right*\
 The rvalue reference to the `basic_ofstream` object being used to initialize this `basic_ofstream` object.
 
 ### Remarks
@@ -225,13 +225,13 @@ void open(
 
 ### Parameters
 
-*_Filename*<br/>
+*_Filename*\
 The name of the file to open.
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*<br/>
+*_Prot*\
 The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
@@ -252,7 +252,7 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An rvalue reference to a `basic_ofstream` object.
 
 ### Return Value
@@ -289,7 +289,7 @@ void swap(basic_ofstream& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `lvalue` reference to another `basic_ofstream` object.
 
 ### Remarks
@@ -298,7 +298,7 @@ The member function exchanges the contents of this object for the contents of *r
 
 ## See also
 
-[basic_ostream Class](../standard-library/basic-ostream-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[basic_ostream Class](../standard-library/basic-ostream-class.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

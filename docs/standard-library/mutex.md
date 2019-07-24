@@ -82,4 +82,4 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

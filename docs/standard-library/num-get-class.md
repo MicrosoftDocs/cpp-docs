@@ -18,10 +18,10 @@ class num_get : public locale::facet;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters in a locale.
 
-*InputIterator*<br/>
+*InputIterator*\
 The type of iterator from which the numeric get functions read their input.
 
 ## Remarks
@@ -151,19 +151,19 @@ virtual iter_type do_get(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 The beginning of the range of characters from which to read the number.
 
-*last*<br/>
+*last*\
 The end of the range of characters from which to read the number.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
 
-*_State*<br/>
+*_State*\
 The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
 
-*val*<br/>
+*val*\
 The value that was read.
 
 ### Return Value
@@ -398,19 +398,19 @@ iter_type get(
 
 ### Parameters
 
-*first*<br/>
+*first*\
 The beginning of the range of characters from which to read the number.
 
-*last*<br/>
+*last*\
 The end of the range of characters from which to read the number.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
 
-*_State*<br/>
+*_State*\
 The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
 
-*val*<br/>
+*val*\
 The value that was read.
 
 ### Return Value
@@ -557,7 +557,7 @@ explicit num_get(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -576,6 +576,6 @@ The constructor initializes its base object with **locale::**[facet](../standard
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet Class](../standard-library/locale-class.md#facet_class)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet Class](../standard-library/locale-class.md#facet_class)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

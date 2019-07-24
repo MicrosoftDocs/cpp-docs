@@ -53,7 +53,7 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-*_Freezeit*<br/>
+*_Freezeit*\
 A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
@@ -138,13 +138,13 @@ strstream(char* ptr,
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The size of the buffer.
 
-*_Mode*<br/>
+*_Mode*\
 The input and output mode of the buffer. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for more information.
 
-*ptr*<br/>
+*ptr*\
 The buffer.
 
 ### Remarks
@@ -157,7 +157,7 @@ Both constructors initialize the base class by calling [streambuf](../standard-l
 
 ## See also
 
-[iostream](../standard-library/istream-typedefs.md#iostream)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[iostream](../standard-library/istream-typedefs.md#iostream)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

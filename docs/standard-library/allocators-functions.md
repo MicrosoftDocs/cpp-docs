@@ -96,4 +96,4 @@ If a compiler supports compiling both single-threaded and multi-threaded applica
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

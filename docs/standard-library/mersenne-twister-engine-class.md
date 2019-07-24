@@ -21,31 +21,31 @@ class mersenne_twister_engine;
 
 ### Parameters
 
-*UIntType*<br/>
+*UIntType*\
 The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-*W*<br/>
+*W*\
 **Word size**. Size of each word, in bits, of the state sequence. **Precondition**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-*N*<br/>
+*N*\
 **State size**. The number of elements (values) in the state sequence.
 
-*M*<br/>
+*M*\
 **Shift size**. The number of elements to skip during each twist. **Precondition**: `0 < M ≤ N`
 
-*R*<br/>
+*R*\
 **Mask bits**. **Precondition**: `R ≤ W`
 
-*A*<br/>
+*A*\
 **XOR mask**. **Precondition**: `A ≤ (1u<<W) - 1u`
 
-*U*, *S*, *T*, *L*<br/>
+*U*, *S*, *T*, *L*\
 **Tempering shift parameters**. Used as shift values during scrambling (tempering). Precondition: `U,S,T,L ≤ W`
 
-*D*, *B*, *C*<br/>
+*D*, *B*, *C*\
 **Tempering bit mask parameters**. Used as bit mask values during scrambling (tempering). Precondition: `D,B,C ≤ (1u<<W) - 1u`
 
-*F*<br/>
+*F*\
 **Initialization multiplier**. Used to help with initialization of the sequence. Precondition: `F ≤ (1u<<W) - 1u`
 
 ## Members
@@ -105,4 +105,4 @@ For a code example, see [\<random>](../standard-library/random.md).
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

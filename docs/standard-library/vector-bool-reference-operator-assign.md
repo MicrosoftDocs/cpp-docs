@@ -19,10 +19,10 @@ reference& operator=(bool Val);
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 The element reference whose value is to be assigned to the bit.
 
-*Val*<br/>
+*Val*\
 The Boolean value to be assigned to the bit.
 
 ## Example
@@ -106,5 +106,5 @@ The original value of the 3rd element still stored in a bool: false
 
 ## See also
 
-[vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

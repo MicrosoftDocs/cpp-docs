@@ -122,13 +122,13 @@ slice(
 
 ### Parameters
 
-*_StartIndex*<br/>
+*_StartIndex*\
 The valarray index of the first element in the subset.
 
-*_Len*<br/>
+*_Len*\
 The number of elements in the subset.
 
-*stride*<br/>
+*stride*\
 The distance between elements in the subset.
 
 ### Return Value
@@ -298,4 +298,4 @@ The stride of slice vaSlice is: 3.
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -28,6 +28,6 @@ struct hash<thread::id> :
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<thread>](../standard-library/thread.md)<br/>
-[unary_function Struct](../standard-library/unary-function-struct.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<thread>](../standard-library/thread.md)\
+[unary_function Struct](../standard-library/unary-function-struct.md)

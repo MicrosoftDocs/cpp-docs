@@ -18,10 +18,10 @@ struct is_base_of;
 
 ### Parameters
 
-*Base*<br/>
+*Base*\
 The base class to test for.
 
-*Derived*<br/>
+*Derived*\
 The derived type to test for.
 
 ## Remarks
@@ -71,5 +71,5 @@ is_base_of<derived, base> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_convertible Class](../standard-library/is-convertible-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_convertible Class](../standard-library/is-convertible-class.md)

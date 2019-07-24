@@ -18,7 +18,7 @@ class allocator
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The type of object for which storage is being allocated or deallocated.
 
 ## Remarks

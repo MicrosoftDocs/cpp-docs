@@ -501,4 +501,4 @@ By definition, `random_device` results are not reproducible, and a side-effect i
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

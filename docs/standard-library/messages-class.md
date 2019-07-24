@@ -20,7 +20,7 @@ class messages : public messages_base;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters in a locale.
 
 ## Remarks
@@ -81,7 +81,7 @@ void close(catalog _Catval) const;
 
 ### Parameters
 
-*_Catval*<br/>
+*_Catval*\
 The catalog to be closed.
 
 ### Remarks
@@ -98,7 +98,7 @@ virtual void do_close(catalog _Catval) const;
 
 ### Parameters
 
-*_Catval*<br/>
+*_Catval*\
 The catalog to be closed.
 
 ### Remarks
@@ -125,16 +125,16 @@ virtual string_type do_get(
 
 ### Parameters
 
-*_Catval*<br/>
+*_Catval*\
 The identification value specifying the message catalog to be searched.
 
-*_Set*<br/>
+*_Set*\
 The first identified used to locate a message in a message catalog.
 
-*_Message*<br/>
+*_Message*\
 The second identified used to locate a message in a message catalog.
 
-*_Dfault*<br/>
+*_Dfault*\
 The string to be returned on failure.
 
 ### Return Value
@@ -161,10 +161,10 @@ virtual catalog do_open(
 
 ### Parameters
 
-*_Catname*<br/>
+*_Catname*\
 The name of the catalog to be searched.
 
-*_Loc*<br/>
+*_Loc*\
 The locale being searched for in the catalog.
 
 ### Return Value
@@ -195,16 +195,16 @@ string_type get(
 
 ### Parameters
 
-*_Catval*<br/>
+*_Catval*\
 The identification value specifying the message catalog to be searched.
 
-*_Set*<br/>
+*_Set*\
 The first identified used to locate a message in a message catalog.
 
-*_Message*<br/>
+*_Message*\
 The second identified used to locate a message in a message catalog.
 
-*_Dfault*<br/>
+*_Dfault*\
 The string to be returned on failure.
 
 ### Return Value
@@ -230,10 +230,10 @@ protected: messages(
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
-*_Locname*<br/>
+*_Locname*\
 The name of the locale.
 
 ### Remarks
@@ -262,10 +262,10 @@ catalog open(
 
 ### Parameters
 
-*_Catname*<br/>
+*_Catname*\
 The name of the catalog to be searched.
 
-*_Loc*<br/>
+*_Loc*\
 The locale being searched for in the catalog.
 
 ### Return Value
@@ -290,6 +290,6 @@ The type describes a specialization of template class [basic_string](../standard
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[messages_base Class](../standard-library/messages-base-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[messages_base Class](../standard-library/messages-base-class.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

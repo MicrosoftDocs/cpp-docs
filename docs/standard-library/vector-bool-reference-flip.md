@@ -64,5 +64,5 @@ The vector with first element flipped is:
 
 ## See also
 
-[vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

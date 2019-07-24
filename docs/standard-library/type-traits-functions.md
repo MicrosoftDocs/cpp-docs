@@ -26,10 +26,10 @@ struct is_assignable;
 
 ### Parameters
 
-*To*<br/>
+*To*\
 The type of the object that receives the assignment.
 
-*From*<br/>
+*From*\
 The type of the object that provides the value.
 
 ### Remarks
@@ -47,7 +47,7 @@ struct is_copy_assignable;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ### Remarks
@@ -65,7 +65,7 @@ struct is_copy_constructible;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ### Remarks
@@ -117,7 +117,7 @@ struct is_default_constructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ### Remarks
@@ -169,7 +169,7 @@ struct is_move_assignable;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ### Remarks
@@ -187,7 +187,7 @@ struct is_move_constructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to be evaluated
 
 ### Remarks
@@ -205,7 +205,7 @@ struct is_nothrow_move_assignable;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ### Remarks
@@ -247,7 +247,7 @@ struct is_trivially_copy_assignable;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ### Remarks
@@ -267,7 +267,7 @@ struct is_trivially_move_assignable;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ### Remarks
@@ -297,7 +297,7 @@ struct is_trivially_move_constructible;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ### Remarks
@@ -324,4 +324,4 @@ the classes of all the non-static data members of type array of class have trivi
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

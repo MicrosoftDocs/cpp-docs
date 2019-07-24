@@ -18,7 +18,7 @@ class insert_iterator;
 
 ### Parameters
 
-*Container*<br/>
+*Container*\
 The type of container into which elements are to be inserted by an `insert_iterator`.
 
 ## Remarks
@@ -104,10 +104,10 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 
 ### Parameters
 
-*_Cont*<br/>
+*_Cont*\
 The container into which the `insert_iterator` is to insert elements.
 
-*_It*<br/>
+*_It*\
 The position for the insertion.
 
 ### Remarks
@@ -298,7 +298,7 @@ insert_iterator<Container>& operator=(
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The value to be assigned to the container.
 
 ### Return Value
@@ -417,6 +417,6 @@ The first element in the list L is: 10.
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

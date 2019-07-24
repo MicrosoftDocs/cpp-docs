@@ -24,7 +24,7 @@ class fpos
 
 ### Parameters
 
-*Statetype*<br/>
+*Statetype*\
 State information.
 
 ### Constructors
@@ -70,13 +70,13 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset into the stream.
 
-*_State*<br/>
+*_State*\
 The starting state of the `fpos` object.
 
-*_Filepos*<br/>
+*_Filepos*\
 The offset into the stream.
 
 ### Remarks
@@ -95,7 +95,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The file-position indicator against which to compare.
 
 ### Return Value
@@ -168,7 +168,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -193,7 +193,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -220,10 +220,10 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 File position.
 
-*_Off*<br/>
+*_Off*\
 Stream offset.
 
 ### Return Value
@@ -244,7 +244,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 Stream offset.
 
 ### Return Value
@@ -269,7 +269,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The file-position indicator against which to compare.
 
 ### Return Value
@@ -343,7 +343,7 @@ void state(Statetype _State);
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The new conversion state.
 
 ### Return Value
@@ -381,6 +381,6 @@ int main() {
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

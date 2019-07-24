@@ -265,10 +265,10 @@ reference& operator=(bool Val);
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 The element reference whose value is to be assigned to the bit.
 
-*Val*<br/>
+*Val*\
 The Boolean value to be assigned to the bit.
 
 #### Example
@@ -354,10 +354,10 @@ static void swap(
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The element to be exchanged with the *Right* element.
 
-*Right*<br/>
+*Right*\
 The element to be exchanged with the *Left* element.
 
 ### Remarks
@@ -366,5 +366,5 @@ This overload supports the special proxy requirements of `vector<bool>`. [vector
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

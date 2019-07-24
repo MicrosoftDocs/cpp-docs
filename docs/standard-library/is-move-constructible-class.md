@@ -18,7 +18,7 @@ struct is_move_constructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to be evaluated
 
 ## Remarks
@@ -33,4 +33,4 @@ A type predicate that evaluates to true if the type *T* can be constructed by us
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

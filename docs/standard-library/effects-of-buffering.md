@@ -35,4 +35,4 @@ This step flushes the buffer, ensuring the message prints before the wait. You c
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+[Output Streams](../standard-library/output-streams.md)

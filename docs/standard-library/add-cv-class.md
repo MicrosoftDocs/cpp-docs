@@ -21,7 +21,7 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -83,6 +83,6 @@ invoked const volatile S.f()
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_const Class](../standard-library/remove-const-class.md)<br/>
-[remove_volatile Class](../standard-library/remove-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_const Class](../standard-library/remove-const-class.md)\
+[remove_volatile Class](../standard-library/remove-volatile-class.md)

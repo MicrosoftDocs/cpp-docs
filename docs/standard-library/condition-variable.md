@@ -60,6 +60,6 @@ enum class cv_status { no_timeout, timeout };
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[condition_variable Class](../standard-library/condition-variable-class.md)<br/>
-[condition_variable_any Class](../standard-library/condition-variable-any-class.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[condition_variable Class](../standard-library/condition-variable-class.md)\
+[condition_variable_any Class](../standard-library/condition-variable-any-class.md)

@@ -73,22 +73,22 @@ basic_ostream <_Elem, _Tr>& operator<<(
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 A character.
 
-*_Elem*<br/>
+*_Elem*\
 The element type.
 
-*_Ostr*<br/>
+*_Ostr*\
 A `basic_ostream` object.
 
-*str*<br/>
+*str*\
 A character string.
 
-*_Tr*<br/>
+*_Tr*\
 Character traits.
 
-*val*<br/>
+*val*\
 The type
 
 ### Return Value
@@ -262,4 +262,4 @@ See [flush](../standard-library/ostream-functions.md#flush) for an example using
 
 ## See also
 
-[\<ostream>](../standard-library/ostream.md)<br/>
+[\<ostream>](../standard-library/ostream.md)

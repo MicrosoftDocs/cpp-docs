@@ -42,7 +42,7 @@ public:
 
 ### Parameters
 
-*IntType*<br/>
+*IntType*\
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -182,10 +182,10 @@ explicit binomial_distribution(const param_type& parm);
 
 ### Parameters
 
-*mean*<br/>
+*mean*\
 The `mean` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -223,4 +223,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

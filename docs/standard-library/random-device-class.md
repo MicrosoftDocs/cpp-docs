@@ -130,4 +130,4 @@ Returns values uniformly distributed in the closed interval [ `min, max`] as det
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

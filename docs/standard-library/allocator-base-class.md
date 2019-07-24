@@ -113,7 +113,7 @@ const_pointer address(const_reference val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The const or nonconst value of the object whose address is being searched for.
 
 ### Return Value
@@ -301,4 +301,4 @@ typedef Type value_type;
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)<br/>
+[\<allocators>](../standard-library/allocators-header.md)

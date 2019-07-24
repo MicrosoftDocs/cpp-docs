@@ -18,7 +18,7 @@ struct is_literal_type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -33,4 +33,4 @@ An instance of the type predicate holds true if the type *T* is a *literal type*
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -85,7 +85,7 @@ shared_future& operator=(const shared_future& Right);
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `shared_future` object.
 
 ### Return Value
@@ -111,7 +111,7 @@ shared_future(const shared_future& Right);
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A [future](../standard-library/future-class.md) or `shared_future` object.
 
 ### Remarks
@@ -158,7 +158,7 @@ future_status wait_for(
 
 ### Parameters
 
-*Rel_time*<br/>
+*Rel_time*\
 A [chrono::duration](../standard-library/duration-class.md) object that specifies a maximum time interval that the thread blocks.
 
 ### Return Value
@@ -181,7 +181,7 @@ future_status wait_until(
 
 ### Parameters
 
-*Abs_time*<br/>
+*Abs_time*\
 A [chrono::time_point](../standard-library/time-point-class.md) object that specifies a time after which the thread can unblock.
 
 ### Return Value
@@ -194,5 +194,5 @@ An associated asynchronous state is ready only if its asynchronous provider has 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

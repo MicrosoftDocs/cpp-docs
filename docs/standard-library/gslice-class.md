@@ -60,13 +60,13 @@ gslice(
 
 ### Parameters
 
-*_StartIndex*<br/>
+*_StartIndex*\
 The valarray index of the first element in the subset.
 
-*_LenArray*<br/>
+*_LenArray*\
 An array specifying the number of elements in each slice.
 
-*_IncArray*<br/>
+*_IncArray*\
 An array specifying the stride in each slice.
 
 ### Return Value
@@ -335,4 +335,4 @@ vaGSlice.stride ( ) = ( 7 4 ).
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

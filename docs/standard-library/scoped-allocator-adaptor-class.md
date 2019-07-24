@@ -104,10 +104,10 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of elements for which sufficient storage is to be allocated.
 
-*hint*<br/>
+*hint*\
 A pointer that might assist the allocator object by locating the address of an object allocated prior to the request.
 
 ### Return Value
@@ -143,19 +143,19 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the memory location where the object is to be constructed.
 
-*args*<br/>
+*args*\
 A list of arguments.
 
-*first*<br/>
+*first*\
 An object of the first type in a pair.
 
-*second*<br/>
+*second*\
 An object of the second type in a pair.
 
-*right*<br/>
+*right*\
 An existing object to be moved or copied.
 
 ### Remarks
@@ -188,10 +188,10 @@ void deallocate(pointer ptr, size_type count);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the starting location of the objects to be deallocated.
 
-*count*<br/>
+*count*\
 The number of objects to deallocate.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
@@ -205,7 +205,7 @@ void destroy(Ty* ptr)
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the object to be destroyed.
 
 ### Return Value
@@ -306,13 +306,13 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An existing `scoped_allocator_adaptor`.
 
-*al*<br/>
+*al*\
 An existing allocator to be used as the outer allocator.
 
-*rest*<br/>
+*rest*\
 A list of allocators to be used as the inner allocators.
 
 ### Remarks
@@ -333,4 +333,4 @@ This method effectively returns `scoped_allocator_adaptor(Outer_traits::select_o
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
