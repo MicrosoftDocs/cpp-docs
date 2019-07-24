@@ -2,6 +2,27 @@
 title: "HLSL Property Pages"
 ms.date: "07/24/2019"
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
+f1_keywords:
+- VC.Project.FXCompilerTool.AdditionalIncludeDirectories
+- VC.Project.FXCompilerTool.SuppressStartupBanner
+- VC.Project.FXCompilerTool.EntryPointName
+- VC.Project.FXCompilerTool.TreatWarningAsError
+- VC.Project.FXCompilerTool.DisableOptimizations
+- VC.Project.FXCompilerTool.EnableDebuggingInformation
+- VC.Project.FXCompilerTool.ShaderType
+- VC.Project.FXCompilerTool.ShaderModel
+- VC.Project.FXCompilerTool.AllResourcesBound
+- VC.Project.FXCompilerTool.EnableUnboundedDescriptorTables
+- VC.Project.FXCompilerTool.SetRootSignature
+- VC.Project.FXCompilerTool.PreprocessorDefinitions
+- VC.Project.FXCompilerTool.AdditionalOptionsPage
+- VC.Project.FXCompilerTool.VariableName
+- VC.Project.FXCompilerTool.HeaderFileOutput
+- VC.Project.FXCompilerTool.ObjectFileOutput
+- VC.Project.FXCompilerTool.AssemblerOutput
+- VC.Project.FXCompilerTool.AssemblerOutputFile
+- VC.Project.FXCompilerTool.CompileD2DCustomEffect
+- VC.Project.FXCompilerTool.MultiProcFXC
 ---
 # HLSL Compiler Property Pages
 
@@ -107,7 +128,7 @@ Specifies the contents of assembly language output file. (/Fc, /Fx)
 
 **Choices**
 
-- **No Listing** - No listing. 
+- **No Listing** - No listing.
 - **Assembly-Only Listing** - Assembly code file
 - **Assembly Code and Hex** - Assembly code and hex listing file
 
