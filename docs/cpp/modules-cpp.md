@@ -83,9 +83,11 @@ You can create a module with a single interface file (.ixx) that exports names a
 
 For larger modules, you can split the module into multiple module units called *partitions*. Each partition consists of an interface file backed by one or more implementation files. (Note: As of Visual Studio 2019 version 16.2, partitions are not yet fully implemented.)
 
-## Modules and namespaces
+## Modules, namespaces, and argument-dependent lookup
 
 The rules for namespaces in modules are the same as in any other code. If a declaration within a namespace is exported, the enclosing namespace (excluding non-exported members) is also implicitly exported. If a namespace is explicitly exported, all declarations within that namespace definition are exported.
+
+When performing argument-dependent lookup for overload resolutions in the importing translation unit, the compiler considers functions which are declared in the same translation unit (including module interfaces) as where the type of the function's arguments are defined.
 
 ### Module partitions
 
