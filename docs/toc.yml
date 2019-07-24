@@ -427,18 +427,7 @@
                 - name: NMake property page
                   href: build/reference/nmake-property-page.md                
                 - name: Manifest Tool property pages
-                  expanded: false
-                  items: 
-                    - name: Manifest Tool property pages
-                      href: build/reference/manifest-tool-property-pages.md
-                    - name: General, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/general-manifest-tool-configuration-properties.md
-                    - name: Input and Output, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/input-and-output-manifest-tool.md
-                    - name: Isolated COM, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/isolated-com-manifest-tool.md
-                    - name: Advanced, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/advanced-manifest-tool.md
+                  href: build/reference/manifest-tool-property-pages.md
                 - name: Resources property pages
                   href: build/reference/resources-property-pages.md
                 - name: Managed Resources property page
