@@ -1,21 +1,29 @@
 ---
 title: "How to: Modify the Target Framework and Platform Toolset"
 ms.custom: "conceptual"
-ms.date: "05/06/2019"
+ms.date: "07/24/2019"
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
 ---
 # How to: Modify the Target Framework and Platform Toolset
 
-You can change Visual Studio C++ project settings to target different versions of the .NET Framework and to use different platform toolsets. By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can change the target platform toolset by modifying the project properties. You can change the target Framework by modifying the project (.vcxproj) file. You do not have to maintain a separate code base for every compilation target.
+You can edit a Visual Studio C++ project file to target different versions of the C++ platform toolset, the Windows SDK and the .NET Framework (C++/CLI projects only). By default, the project system uses the .NET Framework version and the toolset version that correspond to the version of Visual Studio that you use to create the project. You can modify all these values in the .vcxproj file so that you can use the same code base for every compilation target.
 
-> [!IMPORTANT]
->  Some editions might not support modified target Frameworks or platform toolsets. For compatibility information, see [Port, Migrate, and Upgrade Visual Studio Projects](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects).
+## Platform toolset
 
-When you change the target Framework, also change the platform toolset to a version that supports that Framework. For example, to target the .NET Framework 4.5, you must use a compatible platform toolset such as Visual Studio 2015 (v140), Visual Studio 2013 (v120) or Visual Studio 2012 (v110). You can use the **Windows7.1SDK** platform toolset to target the .NET Framework 2.0, 3.0, 3.5, and 4, and the x86, Itanium, and x64 platforms.
+The platform toolset consists of the C++ compiler (cl.exe) and linker (link.exe), along with the C/C++ standard libraries. Since Visual Studio 2015, the major version of the toolset has remained at 14, which means that projects compiled with Visual Studio 2019 or Visual Studio 2017 are ABI-backwards-compatible with projects compiled with Visual Studio 2015. The minor version has updated by 1 for each version since Visual Studio 2015:
 
-> [!NOTE]
->  To change the target platform toolset, you must have the associated version of Visual Studio or the Windows Platform SDK installed. For example, to target the Itanium platform with the **Windows7.1SDK** platform toolset, you must have [Microsoft Windows SDK for Windows 7 and .NET Framework 4 SP1](https://www.microsoft.com/download/details.aspx?id=8279) installed; however, you could use another compatible version of Visual Studio to do your development work, provided that you target the correct Framework version and platform toolset.
+- Visual Studio 2015: v140
+- Visual Studio 2017: v141
+- Visual Studio 2019: v142
+
+These toolsets support .NET Framework 4.5 and later.
+
+Visual Studio also supports multitargeting for C++ projects. You can use the Visual Studio IDE to edit and build projects that were created with older versions of Visual Studio, without upgrading them to use a new version of the toolset. You do need to have the older toolsets installed on your computer. For more information, see [How to use native multi-targeting in Visual Studio](../porting/use-native-multi-targeting.md). For example, in Visual Studio 2015, you can *target* .NET Framework 2.0 but you must use an earlier toolset that supports it.
+
+## Target framework (C++/CLI project only)
+
+When you change the target Framework, also change the platform toolset to a version that supports that Framework. For example, to target the .NET Framework 4.5, you must use a compatible platform toolset such as Visual Studio 2015 (v140), Visual Studio 2013 (v120) or Visual Studio 2012 (v110). You can use the [Windows 7.1 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=8279) platform toolset to target the .NET Framework 2.0, 3.0, 3.5, and 4, and the x86/x64 platforms.
 
 You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) on the Visual C++ blog.
 
@@ -23,8 +31,8 @@ You can extend the target platform further by creating a custom platform toolset
 
 1. In Visual Studio, in **Solution Explorer**, select your project. On the menu bar, open the **Project** menu and choose **Unload project**. This unloads the project (.vcxproj) file for your project.
 
-    > [!NOTE]
-    >  A C++ project cannot be loaded while the project file is being modified in Visual Studio. However, you can use another editor such as Notepad to modify the project file while the project is loaded in Visual Studio. Visual Studio will detect that the project file has changed and prompt you to reload the project.
+   > [!NOTE]
+   >  A C++ project cannot be loaded while the project file is being modified in Visual Studio. However, you can use another editor such as Notepad to modify the project file while the project is loaded in Visual Studio. Visual Studio will detect that the project file has changed and prompt you to reload the project.
 
 1. On the menu bar, select **File**, **Open**, **File**. In the **Open File** dialog box, navigate to your project folder, and then open the project (.vcxproj) file.
 
@@ -38,7 +46,7 @@ You can extend the target platform further by creating a custom platform toolset
 
 1. To verify the change, in **Solution Explorer**, right-click to open the shortcut menu for your project (not for your solution) and then choose **Properties** to open your project **Property Pages** dialog box. In the left pane of the dialog box, expand **Configuration Properties** and then select **General**. Verify that **.NET Target Framework Version** shows the new Framework version.
 
-### To change the project toolset
+### To change the platform toolset
 
 1. In Visual Studio, in **Solution Explorer**, open the shortcut menu for your project (not for your solution) and then choose **Properties** to open your project **Property Pages** dialog box.
 
