@@ -405,7 +405,7 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Example project file
                   href: build/reference/project-files.md
-            - name: C++ project properties reference
+            - name: C++ project property pages
               expanded: false
               items: 
                 - name: C++ project properties reference
@@ -416,6 +416,14 @@
                   href: build/reference/general-property-page-file.md
                 - name: Advanced property page
                   href: build/reference/advanced-property-page.md
+                - name: Debugging (Local) property page
+                  href: build/reference/debugging-local-window-property-page.md
+                - name: Debugging (Remote) property page
+                  href: build/reference/debugging-remote-window-property-page.md
+                - name: Debugging (Web Browser) property page
+                  href: build/reference/debugging-web-browser-property-page.md
+                - name: Debugging (Web Service) property page
+                  href: build/reference/debugging-web-service-property-page.md
                 - name: VC++ Directories property page
                   href: build/reference/vcpp-directories-property-page.md
                 - name: C/C++ property pages
