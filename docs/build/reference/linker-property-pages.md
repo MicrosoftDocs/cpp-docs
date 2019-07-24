@@ -13,7 +13,7 @@ The following properties are found under **Project** > **Properties** > **Config
 
 ### Output File
 
-The /OUT option overrides the default name and location of the program that the linker creates.
+The [/OUT](out-output-file-name.md) option overrides the default name and location of the program that the linker creates.
 
 ### Show Progress
 
@@ -144,7 +144,7 @@ The [/INCLUDE](include-force-symbol-references.md) option tells the linker to ad
 
 ### Delay Loaded Dlls
 
-The [/DELAYLOAD](delayload-delay-load-import.md) option causes delayed loading of DLLs. The dllname specifies a DLL to delay load. 
+The [/DELAYLOAD](delayload-delay-load-import.md) option causes delayed loading of DLLs. The dll name specifies a DLL to delay load. 
 
 ### Assembly Link Resource
 
