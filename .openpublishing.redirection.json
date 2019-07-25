@@ -13771,11 +13771,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/ide/advanced-manifest-tool.md",
-            "redirect_url": "/cpp/build/reference/advanced-manifest-tool",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/ide/atl-program-or-control-source-and-header-files.md",
             "redirect_url": "/cpp/build/reference/atl-program-or-control-source-and-header-files",
             "redirect_document_id": false
@@ -13882,7 +13877,7 @@
         },
         {
             "source_path": "docs/ide/general-manifest-tool-configuration-properties.md",
-            "redirect_url": "/cpp/build/reference/general-manifest-tool-configuration-properties",
+            "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
             "redirect_document_id": false
         },
         {
@@ -13917,17 +13912,17 @@
         },
         {
             "source_path": "docs/ide/hlsl-property-pages-advanced.md",
-            "redirect_url": "/cpp/build/reference/hlsl-property-pages-advanced",
+            "redirect_url": "/cpp/build/reference/hlsl-property-pages",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/hlsl-property-pages-general.md",
-            "redirect_url": "/cpp/build/reference/hlsl-property-pages-general",
+            "redirect_url": "/cpp/build/reference/hlsl-property-pages",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/hlsl-property-pages-output-files.md",
-            "redirect_url": "/cpp/build/reference/hlsl-property-pages-output-files",
+            "redirect_url": "/cpp/build/reference/hlsl-property-pages",
             "redirect_document_id": false
         },
         {
@@ -13957,12 +13952,12 @@
         },
         {
             "source_path": "docs/ide/input-and-output-manifest-tool.md",
-            "redirect_url": "/cpp/build/reference/input-and-output-manifest-tool",
+            "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/isolated-com-manifest-tool.md",
-            "redirect_url": "/cpp/build/reference/isolated-com-manifest-tool",
+            "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
             "redirect_document_id": false
         },
         {
@@ -20598,12 +20593,12 @@
         },
         {
             "source_path": "docs/parallel/openmp/reference/omp-lock-t.md",
-            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types#omp-lock-t",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/parallel/openmp/reference/omp-nest-lock-t.md",
-            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types#omp-nest-lock-t",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types",
             "redirect_document_id": false
         },
         {
