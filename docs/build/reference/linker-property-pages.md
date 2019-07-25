@@ -313,9 +313,9 @@ Specifies link-time code generation. ([/LTCG](ltcg-link-time-code-generation.md)
 **Choices**
 
 - **Default** - Default LTCG setting.
-- **Use Fast Link Time Code Generation** - Use fast [Link Time Code Generation](ltcg-link-time-code-generation.md).
-- **Use Link Time Code Generation** - Use Link Time Code Generation.
-- **Profile Guided Optimization - Instrument** - Use [profile guided optimization](profile-guided-optimizations.md).
+- **Use Fast Link Time Code Generation** - Use Link Time Code Generation with [/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md).
+- **Use Link Time Code Generation** - Use [Link Time Code Generation](ltcg-link-time-code-generation.md).
+- **Profile Guided Optimization - Instrument** - Use [profile guided optimization](../profile-guided-optimizations.md) with :PGINSTRUMENT.
 - **Profile Guided Optimization - Optimization** - Specifies that the linker should use the profile data created after running the instrumented binary to create an optimized image.
 - **Profile Guided Optimization - Update** - Allows and tracks list of input files to be added or modified from what was specified in the :PGINSTRUMENT phase.
 
