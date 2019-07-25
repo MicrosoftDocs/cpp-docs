@@ -31,21 +31,7 @@ For property pages in Linux projects, see [Linux C++ Property Page Reference](..
 
 [General Property Page (File)](general-property-page-file.md)
 
-
-
-
-
 [HLSL Property Pages](hlsl-property-pages.md)
-
-[HLSL Property Pages: Advanced](hlsl-property-pages-advanced.md)
-
-[HLSL Property Pages: General](hlsl-property-pages-general.md)
-
-[HLSL Property Pages: Output Files](hlsl-property-pages-output-files.md)
-
-
-
-
 
 [Linker Property Pages](linker-property-pages.md)
 
@@ -55,17 +41,9 @@ For property pages in Linux projects, see [Linux C++ Property Page Reference](..
 
 [MIDL Property Pages](midl-property-pages.md)
 
-[MIDL Property Pages: Advanced](midl-property-pages-advanced.md)
-
-[MIDL Property Pages: General](midl-property-pages-general.md)
-
-[MIDL Property Pages: Output](midl-property-pages-output.md)
-
 [NMake Property Page](nmake-property-page.md)
 
 [Resources Property Pages](resources-property-pages.md)
-
-
 
 [Web References Property Page](web-references-property-page.md)
 

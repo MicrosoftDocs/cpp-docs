@@ -984,17 +984,17 @@
         },
         {
             "source_path": "docs/ide/midl-property-pages-advanced.md",
-            "redirect_url": "/cpp/build/reference/midl-property-pages-advanced",
+            "redirect_url": "/cpp/build/reference/midl-property-pages",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/midl-property-pages-general.md",
-            "redirect_url": "/cpp/build/reference/midl-property-pages-general",
+            "redirect_url": "/cpp/build/reference/midl-property-pages",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/ide/midl-property-pages-output.md",
-            "redirect_url": "/cpp/build/reference/midl-property-pages-output",
+            "redirect_url": "/cpp/build/reference/midl-property-pages",
             "redirect_document_id": false
         },
         {
