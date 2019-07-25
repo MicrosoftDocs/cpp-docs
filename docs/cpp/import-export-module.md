@@ -12,7 +12,7 @@ The **module**, **import**, and **export** keywords are available in C++20 and r
 
 ## module
 
-Use the **module** statement at the beginning of a module implemetation file to specify that the file contents belong to the named module. 
+Use the **module** statement at the beginning of a module implementation file to specify that the file contents belong to the named module. 
 
 ```cpp
 module ModuleA;
