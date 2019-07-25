@@ -12,41 +12,25 @@ For property pages in Linux projects, see [Linux C++ Property Page Reference](..
 
 ## In This Section
 
-[General Property Page (Project)](general-property-page-project.md)
-[General Property Page (File)](general-property-page-file.md)
-[Advanced Property Page](advanced-property-page.md)
-[Debugging Property Pages](debugging-property-pages.md)
-[VC++ Directories Property Page](vcpp-directories-property-page.md)
-[C/C++ Property Pages](c-cpp-prop-pages.md)
-[Linker Property Pages](linker-property-pages.md)
-[Manifest Tool Property Pages](manifest-tool-property-pages.md)
-[HLSL Property Pages](hlsl-property-pages.md)
-[Command Line Property Pages](command-line-property-pages.md)
-[Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
-[Adding references](../adding-references-in-visual-cpp-projects.md)
-[Managed Resources Property Page](managed-resources-property-page.md)
-
-[MIDL Property Pages](midl-property-pages.md)
-
-[MIDL Property Pages: Advanced](midl-property-pages-advanced.md)
-
-[MIDL Property Pages: General](midl-property-pages-general.md)
-
-[MIDL Property Pages: Output](midl-property-pages-output.md)
-
-[NMake Property Page](nmake-property-page.md)
-
-[Resources Property Pages](resources-property-pages.md)
-
-
-
-[Web References Property Page](web-references-property-page.md)
-
-[XML Data Generator Tool Property Page](xml-data-generator-tool-property-page.md)
-
-[XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md)
+- [General Property Page (Project)](general-property-page-project.md)
+- [General Property Page (File)](general-property-page-file.md)
+- [Advanced Property Page](advanced-property-page.md)
+- [VC++ Directories Property Page](vcpp-directories-property-page.md)
+- [Linker Property Pages](linker-property-pages.md)
+- [Manifest Tool Property Pages](manifest-tool-property-pages.md)
+- [HLSL Property Pages](hlsl-property-pages.md)
+- [Command Line Property Pages](command-line-property-pages.md)
+- [Custom Build Step Property Page: General](custom-build-step-property-page-general.md)
+- [Adding references](../adding-references-in-visual-cpp-projects.md)
+- [Managed Resources Property Page](managed-resources-property-page.md)
+- [MIDL Property Pages](midl-property-pages.md)
+- [NMake Property Page](nmake-property-page.md)
+- [Resources Property Pages](resources-property-pages.md)
+- [Web References Property Page](web-references-property-page.md)
+- [XML Data Generator Tool Property Page](xml-data-generator-tool-property-page.md)
+- [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md)
 
 ## See also
 
-[How to: Create and Remove Project Dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies)<br>
+[How to: Create and Remove Project Dependencies](/visualstudio/ide/how-to-create-and-remove-project-dependencies)<br/>
 [How to: Create and Edit Configurations](/visualstudio/ide/how-to-create-and-edit-configurations)
