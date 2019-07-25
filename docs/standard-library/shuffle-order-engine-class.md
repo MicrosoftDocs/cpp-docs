@@ -18,10 +18,10 @@ class shuffle_order_engine;
 
 ### Parameters
 
-*Engine*<br/>
+*Engine*\
 The base engine type.
 
-*K*<br/>
+*K*\
 **Table size**. Number of elements in the buffer (table). **Precondition**: `0 < K`
 
 ## Members
@@ -45,4 +45,4 @@ This template class describes an *engine adaptor* that produces values by reorde
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

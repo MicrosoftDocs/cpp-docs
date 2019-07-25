@@ -18,10 +18,10 @@ struct integer_sequence
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type of the values; must be an integral type: bool, char, char16_t, char32_t, wchar_t, or signed or unsigned integer types.
 
-*Vals*<br/>
+*Vals*\
 A non-type parameter pack that represents a sequence of values of integral type T.
 
 ## Members
@@ -109,4 +109,4 @@ Namepace: std
 
 ## See also
 
-[Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md)<br/>
+[Ellipses and Variadic Templates](../cpp/ellipses-and-variadic-templates.md)

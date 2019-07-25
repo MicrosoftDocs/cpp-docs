@@ -18,13 +18,13 @@ class independent_bits_engine;
 
 ### Parameters
 
-*Engine*<br/>
+*Engine*\
 The base engine type.
 
-*W*<br/>
+*W*\
 **Word size**. Size, in bits, of each number generated. **Precondition**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*UIntType*<br/>
+*UIntType*\
 The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Members
@@ -48,4 +48,4 @@ This template class describes an *engine adaptor* that produces values by repack
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

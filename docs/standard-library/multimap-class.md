@@ -21,18 +21,18 @@ class multimap;
 
 ### Parameters
 
-*Key*<br/>
+*Key*\
 The key data type to be stored in the multimap.
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the multimap.
 
-*Traits*<br/>
+*Traits*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multimap. The binary predicate `less<Key>` is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)
 
-*Allocator*<br/>
+*Allocator*\
 The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair <const Key, Type> >`.
 
 ## Remarks
@@ -416,7 +416,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key of the elements to be matched from the multimap.
 
 ### Return Value
@@ -815,7 +815,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -902,16 +902,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*<br/>
+*Where*\
 Position of the element to be removed.
 
-*First*<br/>
+*First*\
 Position of the first element to be removed.
 
-*Last*<br/>
+*Last*\
 Position just beyond the last element to be removed.
 
-*Key*<br/>
+*Key*\
 The key of the elements to be removed.
 
 ### Return Value
@@ -936,7 +936,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key value to be matched by the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -1384,7 +1384,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -2079,7 +2079,7 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap `left`.
 
 ### Remarks
@@ -2149,7 +2149,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -2350,6 +2350,6 @@ The values of the mapped elements are: 10 20.
 
 ## See also
 
-[Containers](../cpp/containers-modern-cpp.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Containers](../cpp/containers-modern-cpp.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

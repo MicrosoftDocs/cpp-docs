@@ -32,5 +32,5 @@ This is the unchecked version of the [checked_array_iterator Class](../standard-
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

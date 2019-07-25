@@ -25,10 +25,10 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The hash_set providing the elements to be swapped, or the hash_set whose elements are to be exchanged with those of the hash_set *left*.
 
-*left*<br/>
+*left*\
 The hash_set whose elements are to be exchanged with those of the hash_set *right*.
 
 ### Remarks
@@ -56,10 +56,10 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The hash_multiset providing the elements to be swapped, or the hash_multiset whose elements are to be exchanged with those of the hash_multiset *left*.
 
-*left*<br/>
+*left*\
 The hash_multiset whose elements are to be exchanged with those of the hash_multiset *right*.
 
 ### Remarks
@@ -76,4 +76,4 @@ See the code example for the member class [hash_multiset::swap](../standard-libr
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+[<hash_set>](../standard-library/hash-set.md)

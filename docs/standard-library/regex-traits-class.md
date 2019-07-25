@@ -18,7 +18,7 @@ class regex_traits
 
 ## Parameters
 
-*Elem*<br/>
+*Elem*\
 The character element type to describe.
 
 ## Remarks
@@ -181,7 +181,7 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-*loc*<br/>
+*loc*\
 The locale object to store.
 
 ### Remarks
@@ -198,10 +198,10 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### Parameters
 
-*ch*<br/>
+*ch*\
 The element to test.
 
-*cls*<br/>
+*cls*\
 The classes to test for.
 
 ### Remarks
@@ -218,7 +218,7 @@ static size_type length(const char_type *str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The null-terminated sequence.
 
 ### Remarks
@@ -248,10 +248,10 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Beginning of sequence to look up.
 
-*last*<br/>
+*last*\
 End of sequence to look up.
 
 ### Remarks
@@ -273,10 +273,10 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Beginning of sequence to look up.
 
-*last*<br/>
+*last*\
 End of sequence to look up.
 
 ### Remarks
@@ -332,10 +332,10 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Beginning of sequence to transform.
 
-*last*<br/>
+*last*\
 End of sequence to transform.
 
 ### Remarks
@@ -353,10 +353,10 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Beginning of sequence to transform.
 
-*last*<br/>
+*last*\
 End of sequence to transform.
 
 ### Remarks
@@ -373,7 +373,7 @@ char_type translate(char_type ch) const;
 
 ### Parameters
 
-*ch*<br/>
+*ch*\
 The element to convert.
 
 ### Remarks
@@ -390,7 +390,7 @@ char_type translate_nocase(char_type ch) const;
 
 ### Parameters
 
-*ch*<br/>
+*ch*\
 The element to convert.
 
 ### Remarks
@@ -407,10 +407,10 @@ int value(Elem ch, int radix) const;
 
 ### Parameters
 
-*ch*<br/>
+*ch*\
 The element to convert.
 
-*radix*<br/>
+*radix*\
 The arithmetic base to use.
 
 ### Remarks
@@ -419,13 +419,13 @@ The member function returns the value represented by the character *ch* in the b
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
-[regex_traits\<char> Class](../standard-library/regex-traits-char-class.md)<br/>
-[regex_traits\<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Class](../standard-library/regex-constants-class.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[\<regex> functions](../standard-library/regex-functions.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[\<regex> operators](../standard-library/regex-operators.md)\
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)\
+[regex_traits\<char> Class](../standard-library/regex-traits-char-class.md)\
+[regex_traits\<wchar_t> Class](../standard-library/regex-traits-wchar-t-class.md)

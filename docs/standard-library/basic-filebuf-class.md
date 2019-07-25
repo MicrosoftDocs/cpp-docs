@@ -18,10 +18,10 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 The basic element of the file buffer.
 
-*Tr*<br/>
+*Tr*\
 The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
@@ -360,13 +360,13 @@ basic_filebuf<Elem, Tr> *open(
 
 ### Parameters
 
-*_Filename*<br/>
+*_Filename*\
 The name of the file to open.
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*<br/>
+*_Prot*\
 The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Return Value
@@ -409,7 +409,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An rvalue reference to a [basic_filebuf](../standard-library/basic-filebuf-class.md) object.
 
 ### Return Value
@@ -430,7 +430,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer or `traits_type::eof`.
 
 ### Return Value
@@ -457,7 +457,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
@@ -494,13 +494,13 @@ virtual pos_type seekoff(off_type _Off,
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The position to seek for relative to *_Way*.
 
-*_Way*<br/>
+*_Way*\
 The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -525,10 +525,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### Parameters
 
-*_Sp*<br/>
+*_Sp*\
 The position to seek for.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -555,10 +555,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### Parameters
 
-*_Buffer*<br/>
+*_Buffer*\
 Pointer to a buffer.
 
-*count*<br/>
+*count*\
 Size of the buffer.
 
 ### Return Value
@@ -579,7 +579,7 @@ void swap(basic_filebuf& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `lvalue` reference to another `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::sync
@@ -624,7 +624,7 @@ The protected virtual member function endeavors to extract the current element `
 
 ## See also
 
-[\<fstream>](../standard-library/fstream.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[\<fstream>](../standard-library/fstream.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

@@ -18,10 +18,10 @@ class basic_regex
 
 ## Parameters
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
 ## Remarks
@@ -222,37 +222,37 @@ basic_regex& assign(
 
 ### Parameters
 
-*STtraits*<br/>
+*STtraits*\
 Traits class for a string source.
 
-*STalloc*<br/>
+*STalloc*\
 Allocator class for a string source.
 
-*InIt*<br/>
+*InIt*\
 Input iterator type for a range source.
 
-*right*<br/>
+*right*\
 Regex source to copy.
 
-*ptr*<br/>
+*ptr*\
 Pointer to beginning of sequence to copy.
 
-*flags*<br/>
+*flags*\
 Syntax option flags to add while copying.
 
-*len/TD>*<br/>
+*len/TD>*\
 Length of sequence to copy.
 
-*str*<br/>
+*str*\
 String to copy.
 
-*first*<br/>
+*first*\
 Beginning of sequence to copy.
 
-*last*<br/>
+*last*\
 End of sequence to copy.
 
-*IList*<br/>
+*IList*\
 The initializer_list to copy.
 
 ### Remarks
@@ -296,37 +296,37 @@ explicit basic_regex(
 
 ### Parameters
 
-*STtraits*<br/>
+*STtraits*\
 Traits class for a string source.
 
-*STalloc*<br/>
+*STalloc*\
 Allocator class for a string source.
 
-*InIt*<br/>
+*InIt*\
 Input iterator type for a range source.
 
-*right*<br/>
+*right*\
 Regex source to copy.
 
-*ptr*<br/>
+*ptr*\
 Pointer to beginning of sequence to copy.
 
-*flags*<br/>
+*flags*\
 Syntax option flags to add while copying.
 
-*len/TD>*<br/>
+*len/TD>*\
 Length of sequence to copy.
 
-*str*<br/>
+*str*\
 String to copy.
 
-*first*<br/>
+*first*\
 Beginning of sequence to copy.
 
-*last*<br/>
+*last*\
 End of sequence to copy.
 
-*IList*<br/>
+*IList*\
 The initializer_list to copy.
 
 ### Remarks
@@ -383,7 +383,7 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-*loc*<br/>
+*loc*\
 The locale object to store.
 
 ### Remarks
@@ -429,16 +429,16 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### Parameters
 
-*STtraits*<br/>
+*STtraits*\
 Traits class for a string source.
 
-*STalloc*<br/>
+*STalloc*\
 Allocator class for a string source.
 
-*right*<br/>
+*right*\
 Regex source to copy.
 
-*str*<br/>
+*str*\
 String to copy.
 
 ### Remarks
@@ -455,7 +455,7 @@ void swap(basic_regex& right) throw();
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The regular expression object to swap with.
 
 ### Remarks
@@ -476,10 +476,10 @@ The type is a synonym for the template parameter *Elem*.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_match](../standard-library/regex-functions.md#regex_match)<br/>
-[regex_search](../standard-library/regex-functions.md#regex_search)<br/>
-[regex_replace](../standard-library/regex-functions.md#regex_replace)<br/>
-[regex](../standard-library/regex-typedefs.md#regex)<br/>
-[wregex](../standard-library/regex-typedefs.md#wregex)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_match](../standard-library/regex-functions.md#regex_match)\
+[regex_search](../standard-library/regex-functions.md#regex_search)\
+[regex_replace](../standard-library/regex-functions.md#regex_replace)\
+[regex](../standard-library/regex-typedefs.md#regex)\
+[wregex](../standard-library/regex-typedefs.md#wregex)\
+[regex_traits Class](../standard-library/regex-traits-class.md)

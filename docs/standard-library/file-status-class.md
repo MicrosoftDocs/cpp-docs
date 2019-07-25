@@ -58,13 +58,13 @@ file_status(file_status&&) noexcept = default;
 
 ### Parameters
 
-*ftype*<br/>
+*ftype*\
 Specified `file_type`, defaults to `file_type::none`.
 
-*mask*<br/>
+*mask*\
 Specified file `perms`, defaults to `perms::unknown`.
 
-*file_status*<br/>
+*file_status*\
 The stored object.
 
 ## <a name="op_as"></a> file_status::operator=
@@ -78,7 +78,7 @@ file_status& operator=(file_status&&) nexcept = default;
 
 ### Parameters
 
-*file_status*<br/>
+*file_status*\
 The [file_status](../standard-library/file-status-class.md) being copied into the `file_status`.
 
 ## <a name="type"></a> type
@@ -92,7 +92,7 @@ void type(file_type ftype) noexcept
 
 ### Parameters
 
-*ftype*<br/>
+*ftype*\
 Specified `file_type`.
 
 ## <a name="permissions"></a> permissions
@@ -108,11 +108,11 @@ void permissions(perms mask) noexcept
 
 ### Parameters
 
-*mask*<br/>
+*mask*\
 Specified `perms`.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[path Class](../standard-library/path-class.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[path Class](../standard-library/path-class.md)\
+[\<filesystem>](../standard-library/filesystem.md)

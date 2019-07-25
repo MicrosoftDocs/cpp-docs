@@ -165,7 +165,7 @@ thread& operator=(thread&& Other) noexcept;
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 A **thread** object.
 
 ### Return Value
@@ -188,7 +188,7 @@ void swap(thread& Other) noexcept;
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 A **thread** object.
 
 ## <a name="thread"></a>  thread::thread Constructor
@@ -205,13 +205,13 @@ thread(thread&& Other) noexcept;
 
 ### Parameters
 
-*F*<br/>
+*F*\
 An application-defined function to be executed by the thread.
 
-*A*<br/>
+*A*\
 A list of arguments to be passed to *F*.
 
-*Other*<br/>
+*Other*\
 An existing **thread** object.
 
 ### Remarks
@@ -224,5 +224,5 @@ The third constructor constructs an object that's associated with the thread tha
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<thread>](../standard-library/thread.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<thread>](../standard-library/thread.md)

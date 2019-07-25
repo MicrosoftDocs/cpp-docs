@@ -88,4 +88,4 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
+[\<string>](../standard-library/string.md)

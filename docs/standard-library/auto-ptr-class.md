@@ -523,4 +523,4 @@ Destructing 00311B88 Value: 6
 
 ## See also
 
-[unique_ptr Class](../standard-library/unique-ptr-class.md)<br/>
+[unique_ptr Class](../standard-library/unique-ptr-class.md)

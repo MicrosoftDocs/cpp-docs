@@ -20,13 +20,13 @@ class regex_token_iterator
 
 ## Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches.
 
-*Elem*<br/>
+*Elem*\
 The type of elements to match.
 
-*RXtraits*<br/>
+*RXtraits*\
 Traits class for elements.
 
 ## Remarks
@@ -206,7 +206,7 @@ bool operator!=(const regex_token_iterator& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The iterator to compare to.
 
 ### Remarks
@@ -251,7 +251,7 @@ bool operator==(const regex_token_iterator& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The iterator to compare to.
 
 ### Remarks
@@ -317,16 +317,16 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Beginning of sequence to match.
 
-*last*<br/>
+*last*\
 End of sequence to match.
 
-*re*<br/>
+*re*\
 Regular expression for matches.
 
-*f*<br/>
+*f*\
 Flags for matches.
 
 ### Remarks
@@ -365,11 +365,11 @@ The type is a synonym for `sub_match<BidIt>`, where `BidIt` is the template para
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_constants Class](../standard-library/regex-constants-class.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_constants Class](../standard-library/regex-constants-class.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[\<regex> functions](../standard-library/regex-functions.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[\<regex> operators](../standard-library/regex-operators.md)\
+[regex_traits Class](../standard-library/regex-traits-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

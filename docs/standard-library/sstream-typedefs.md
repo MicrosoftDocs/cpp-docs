@@ -110,4 +110,4 @@ The type is a synonym for template class [basic_stringstream](../standard-librar
 
 ## See also
 
-[\<sstream>](../standard-library/sstream.md)<br/>
+[\<sstream>](../standard-library/sstream.md)

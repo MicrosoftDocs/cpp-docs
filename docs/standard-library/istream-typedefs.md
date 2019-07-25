@@ -61,4 +61,4 @@ The type is a synonym for template class [basic_istream](../standard-library/bas
 
 ## See also
 
-[\<istream>](../standard-library/istream.md)<br/>
+[\<istream>](../standard-library/istream.md)

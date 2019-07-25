@@ -94,7 +94,7 @@ array(const array& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 Object or range to insert.
 
 ### Remarks
@@ -149,7 +149,7 @@ void assign(const Ty& val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The value to assign.
 
 ### Remarks
@@ -205,7 +205,7 @@ constexpr const_reference at(size_type off) const;
 
 ### Parameters
 
-*off*<br/>
+*off*\
 Position of element to access.
 
 ### Remarks
@@ -1051,7 +1051,7 @@ constexpr const_reference operator[](size_type off) const;
 
 ### Parameters
 
-*off*<br/>
+*off*\
 Position of element to access.
 
 ### Remarks
@@ -1103,7 +1103,7 @@ array<Value> operator=(array<Value> right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 Container to copy.
 
 ### Remarks
@@ -1473,7 +1473,7 @@ void swap(array& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 Array to swap contents with.
 
 ### Remarks
@@ -1579,4 +1579,4 @@ int main()
 
 ## See also
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

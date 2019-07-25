@@ -30,4 +30,4 @@ template <> struct hash<error_condition>;
 
 ## See also
 
-[\<typeindex>](../standard-library/typeindex.md)<br/>
+[\<typeindex>](../standard-library/typeindex.md)

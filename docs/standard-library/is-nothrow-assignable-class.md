@@ -18,10 +18,10 @@ struct is_nothrow_assignable;
 
 ### Parameters
 
-*To*<br/>
+*To*\
 The type of the object that receives the assignment.
 
-*From*<br/>
+*From*\
 The type of the object that provides the value.
 
 ## Remarks
@@ -36,4 +36,4 @@ The expression `declval<To>() = declval<From>()` must be well-formed and must be
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

@@ -18,7 +18,7 @@ struct is_function;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -70,5 +70,5 @@ is_function<float()> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_object Class](../standard-library/is-object-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_object Class](../standard-library/is-object-class.md)

@@ -18,10 +18,10 @@ class match_results
 
 ## Parameters
 
-*BidIt*<br/>
+*BidIt*\
 The iterator type for submatches.
 
-*Alloc*<br/>
+*Alloc*\
 The type of an allocator for managing storage.
 
 ## Remarks
@@ -290,16 +290,16 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### Parameters
 
-*OutIt*<br/>
+*OutIt*\
 The output iterator type.
 
-*out*<br/>
+*out*\
 The output stream to write to.
 
-*fmt*<br/>
+*fmt*\
 The format string.
 
-*flags*<br/>
+*flags*\
 The format flags.
 
 ### Remarks
@@ -342,7 +342,7 @@ difference_type length(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*<br/>
+*sub*\
 The index of the submatch.
 
 ### Remarks
@@ -361,10 +361,10 @@ match_results(const match_results& right);
 
 ### Parameters
 
-*alloc*<br/>
+*alloc*\
 The allocator object to store.
 
-*right*<br/>
+*right*\
 The match_results object to copy.
 
 ### Remarks
@@ -393,7 +393,7 @@ match_results& operator=(const match_results& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The match_results object to copy.
 
 ### Remarks
@@ -410,7 +410,7 @@ const_reference operator[](size_type n) const;
 
 ### Parameters
 
-*n*<br/>
+*n*\
 Index of the submatch.
 
 ### Remarks
@@ -427,7 +427,7 @@ difference_type position(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*<br/>
+*sub*\
 Index of the submatch.
 
 ### Remarks
@@ -492,7 +492,7 @@ string_type str(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*<br/>
+*sub*\
 Index of the submatch.
 
 ### Remarks
@@ -533,7 +533,7 @@ void swap(const match_results& right) throw();
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The match_results object to swap with.
 
 ### Remarks
@@ -554,4 +554,4 @@ The typedef is a synonym for the type `sub_match<BidIt>`.
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
+[\<regex>](../standard-library/regex.md)

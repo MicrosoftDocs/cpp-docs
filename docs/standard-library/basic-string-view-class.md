@@ -56,14 +56,14 @@ class basic_string_view;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type of the characters that are stored in the string_view. The C++ Standard Library provides the following typedefs for specializations of this template.
 - [string_view](../standard-library/string-view-typedefs.md#string_view) for elements of type **char**
 - [wstring_view](../standard-library/string-view-typedefs.md#wstring_view), for **wchar_t**
 - [u16string_view](../standard-library/string-view-typedefs.md#u16string_view) for **char16_t**
 - [u32string_view](../standard-library/string-view-typedefs.md#u32string_view) for **char32_t**.
 
-*Traits*<br/>
+*Traits*\
 Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 
 ### Constructors
@@ -153,7 +153,7 @@ constexpr const_reference at(size_type offset) const;
 
 ### Parameters
 
-*offset*<br/>
+*offset*\
 The index of the element to be referenced.
 
 ### Return Value
@@ -234,10 +234,10 @@ constexpr basic_string_view(const charT* str, size_type len);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The pointer to the character values.
 
-*len*<br/>
+*len*\
 The number of characters to include in the view.
 
 ## Remarks
@@ -300,22 +300,22 @@ constexpr int compare(size_type pos, size_type num, const charT* ptr, size_type 
 
 ### Parameters
 
-*strv*<br/>
+*strv*\
 The string_view that is to be compared to this string_view.
 
-*pos*<br/>
+*pos*\
 The index of this string_view at which the comparison begins.
 
-*num*<br/>
+*num*\
 The maximum number of characters from this string_view to be compared.
 
-*num2*<br/>
+*num2*\
 The maximum number of characters from *strv* to be compared.
 
-*offset*<br/>
+*offset*\
 The index of *strv* at which the comparison begins.
 
-*ptr*<br/>
+*ptr*\
 The C string to be compared to this string_view.
 
 ### Return Value
@@ -444,13 +444,13 @@ size_type copy(charT* ptr, size_type count, size_type offset = 0) const;
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The target character array to which the elements are to be copied.
 
-*count*<br/>
+*count*\
 The number of characters to be copied, at most, from the source string_view.
 
-*offset*<br/>
+*offset*\
 The beginning position in the source string_view from which copies are to be made.
 
 ### Return Value
@@ -475,16 +475,16 @@ size_type _Copy_s(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 The target character array to which the elements are to be copied.
 
-*dest_size*<br/>
+*dest_size*\
 The size of *dest*.
 
 _ *Count*
 The number of characters to be copied, at most, from the source string.
 
-*_Off*<br/>
+*_Off*\
 The beginning position in the source string from which copies are to be made.
 
 ### Return Value
@@ -584,19 +584,19 @@ constexpr size_type find(const charT* ptr, size_type offset = 0) const;
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters in *ptr*, counting forward from the first character.
 
 ### Return Value
@@ -616,19 +616,19 @@ constexpr size_type find_first_not_of(const charT* ptr, size_type offset = 0) co
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 ### Return Value
@@ -648,19 +648,19 @@ constexpr size_type find_first_of(const charT* str, size_type offset = 0) const;
 
 ### Parameters
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
 ### Return Value
@@ -680,19 +680,19 @@ constexpr size_type find_last_not_of(const charT* ptr, size_type offset = npos) 
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to finish.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in *ptr*.
 
 ### Return Value
@@ -712,19 +712,19 @@ constexpr size_type find_last_of(const charT* ptr, size_type offset = npos) cons
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to finish.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
 ### Return Value
@@ -798,7 +798,7 @@ constexpr const_reference operator[](size_type offset) const;
 
 ### Parameters
 
-*offset*<br/>
+*offset*\
 The index of the element to be referenced.
 
 ### Return Value
@@ -886,19 +886,19 @@ constexpr size_type rfind(const charT* ptr, size_type offset = npos) const;
 
 ### Parameters
 
-*chVal*<br/>
+*chVal*\
 The character value for which the member function is to search.
 
-*offset*<br/>
+*offset*\
 Index at which the search is to begin.
 
-*ptr*<br/>
+*ptr*\
 The C string for which the member function is to search.
 
-*count*<br/>
+*count*\
 The number of characters, counting forward from the first character, in the C string for which the member function is to search.
 
-*str*<br/>
+*str*\
 The string_view for which the member function is to search.
 
 ### Return Value
@@ -931,10 +931,10 @@ constexpr basic_string_view substr(size_type offset = 0, size_type count = npos)
 
 ### Parameters
 
-*offset*<br/>
+*offset*\
 An index locating the element at the position from which the copy is made, with a default value of 0.
 
-*count*<br/>
+*count*\
 The number of characters to include in the substring, if they are present.
 
 ### Return Value
@@ -951,10 +951,10 @@ constexpr void swap(basic_string_view& sv) noexcept;
 
 ### Parameters
 
-*sv*<br/>
+*sv*\
 The source string_view whose pointer and size values are to be exchanged with that of the destination string_view.
 
 ## See also
 
-[\<string_view>](../standard-library/string-view.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<string_view>](../standard-library/string-view.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

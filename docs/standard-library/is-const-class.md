@@ -18,7 +18,7 @@ struct is_const;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -68,5 +68,5 @@ is_const<const int> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_volatile Class](../standard-library/is-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_volatile Class](../standard-library/is-volatile-class.md)

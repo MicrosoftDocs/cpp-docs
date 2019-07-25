@@ -81,10 +81,10 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be concatenated.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be concatenated.
 
 ### Return Value
@@ -170,10 +170,10 @@ bool operator!=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -261,10 +261,10 @@ bool operator==(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -352,10 +352,10 @@ bool operator<(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -448,10 +448,10 @@ bool operator<=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -541,10 +541,10 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*_Ostr*<br/>
+*_Ostr*\
 The output stream being written to.
 
-*str*<br/>
+*str*\
 The string to be entered into the output stream.
 
 ### Return Value
@@ -578,10 +578,10 @@ bool operator>(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -681,10 +681,10 @@ bool operator>=(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 A C-style string or an object of type `basic_string` to be compared.
 
-*right*<br/>
+*right*\
 A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
@@ -774,10 +774,10 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### Parameters
 
-*_Istr*<br/>
+*_Istr*\
 The input stream used to extract the sequence
 
-*right*<br/>
+*right*\
 The string that is being extracted from the input stream.
 
 ### Return Value
@@ -821,4 +821,4 @@ int main( )
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
+[\<string>](../standard-library/string.md)

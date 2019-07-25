@@ -19,7 +19,7 @@ Including this header ensures that the names declared by using external linkage 
 
 ## See also
 
-[\<cstdint>](../standard-library/cstdint.md)<br/>
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<cstdint>](../standard-library/cstdint.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

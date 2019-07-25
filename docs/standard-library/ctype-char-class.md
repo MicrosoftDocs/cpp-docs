@@ -121,6 +121,6 @@ The member functions [do_narrow](../standard-library/ctype-class.md#do_narrow) a
 
 ## See also
 
-[facet Class](locale-class.md#facet_class)<br/>
-[ctype_base Class](../standard-library/ctype-base-class.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[facet Class](locale-class.md#facet_class)\
+[ctype_base Class](../standard-library/ctype-base-class.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

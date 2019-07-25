@@ -18,7 +18,7 @@ struct is_volatile;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -68,5 +68,5 @@ is_volatile<volatile int> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_const Class](../standard-library/is-const-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_const Class](../standard-library/is-const-class.md)

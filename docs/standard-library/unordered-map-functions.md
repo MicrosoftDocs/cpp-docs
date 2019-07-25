@@ -24,25 +24,25 @@ void swap(
 
 ### Parameters
 
-*Key*<br/>
+*Key*\
 The key type.
 
-*Ty*<br/>
+*Ty*\
 The mapped type.
 
-*Hash*<br/>
+*Hash*\
 The hash function object type.
 
-*Pred*<br/>
+*Pred*\
 The equality comparison function object type.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The first container to swap.
 
-*right*<br/>
+*right*\
 The second container to swap.
 
 ### Remarks
@@ -117,25 +117,25 @@ void swap(
 
 ### Parameters
 
-*Key*<br/>
+*Key*\
 The key type.
 
-*Ty*<br/>
+*Ty*\
 The mapped type.
 
-*Hash*<br/>
+*Hash*\
 The hash function object type.
 
-*Pred*<br/>
+*Pred*\
 The equality comparison function object type.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*left*<br/>
+*left*\
 The first container to swap.
 
-*right*<br/>
+*right*\
 The second container to swap.
 
 ### Remarks
@@ -199,4 +199,4 @@ int main()
 
 ## See also
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)
