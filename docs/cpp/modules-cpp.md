@@ -81,7 +81,7 @@ The import declaration can appear only at global scope.
 
 You can create a module with a single interface file (.ixx) that exports names and includes implementations of all functions and types. You can also put the implementations in one or more separate implementation files, similar to how .h and .cpp files are used. The **export** keyword is used in the interface file only. An implementation file can **import** another module, but cannot **export** any names. Implementation files may be named with any extension. An interface file and the set of implementation files that back it are treated as a special kind of translation unit called a *module unit*. A name that is declared in any implementation file is automatically visible in all other files within the same module unit.
 
-For larger modules, you can split the module into multiple module units called *partitions*. Each partition consists of an interface file backed by one or more implementation files. (Note: As of Visual Studio 2019 version 16.2, partitions are not yet fully implemented.)
+For larger modules, you can split the module into multiple module units called *partitions*. Each partition consists of an interface file backed by one or more implementation files. (As of Visual Studio 2019 version 16.2, partitions are not yet fully implemented.)
 
 ## Modules, namespaces, and argument-dependent lookup
 
@@ -91,7 +91,7 @@ When performing argument-dependent lookup for overload resolutions in the import
 
 ### Module partitions
 
->[!NOTE]
+> [!NOTE]
 > This section is provided for completeness. Partitions are not yet implemented in the Microsoft C++ compiler.
 
 A module can be componentized into *partitions*, each consisting of an interface file and zero or more implementation files. A module partition is similar to a module, except that it shares ownership of all declarations in the entire module. All names that are exported by partition interface files are imported and re-exported by the primary interface file. A partition's name must begin with the module name followed by a colon. Declarations in any of the partitions are visible within the entire module. No special precautions are needed to avoid one-definition-rule (ODR) errors. You can declare a name (function, class, etc.) in one partition and define it in another. A partition implementation file begins like this:
@@ -151,7 +151,7 @@ import std.filesystem;
 
 ### Imported header files
 
-> [NOTE!]
+> [!NOTE]
 > This section is informational only. Legacy imports are not yet implemented in the Microsoft C++ compiler.
 
 Some headers are sufficiently self-contained that they are allowed to be brought in using the **import** keyword. The main difference between an imported header and an imported module is that any preprocessor definitions in the header are visible in the importing program immediately after the import statement. (Preprocessor definitions in any files included by that header are *not* visible.)
@@ -161,6 +161,6 @@ import <vector>
 import "myheader.h"
 ```
 
-## See Also
+## See also
 
 [module, import, export](import-export-module.md)
