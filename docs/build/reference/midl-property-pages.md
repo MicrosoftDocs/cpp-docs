@@ -57,19 +57,19 @@ The MIDL property pages are available as an item property on an .IDL file in a C
 
 ### Preprocessor Definitions
 
-Specifies one or more defines, including MIDL macros ([/D](/windows/win32/midl/-d))\[macros\])
+Specifies one or more defines, including MIDL macros ([/D](/windows/win32/midl/-d))\[macros\]).
 
 ### Additional Include Directories
 
-Specifies one or more directories to add to the include path ([/I](/windows/win32/midl/-i)\[path\])
+Specifies one or more directories to add to the include path ([/I](/windows/win32/midl/-i)\[path\]).
 
-### Additional Metadata Directories 
+### Additional Metadata Directories
 
-Specify the directory containing the Windows.Foundation.WinMD file ([/metadata_dir](/windows/win32/midl/-metadata-dir) \[path\])
+Specify the directory containing the Windows.Foundation.WinMD file ([/metadata_dir](/windows/win32/midl/-metadata-dir) \[path\]).
 
 ### Enable Windows Runtime
 
-Enable Windows Runtime semantics to create Windows metadata file. ([/winrt](/windows/win32/midl/-winrt))
+Enable Windows Runtime semantics to create Windows metadata file ([/winrt](/windows/win32/midl/-winrt)).
 
 ### Ignore Standard Include Path
 
@@ -77,11 +77,11 @@ Ignore the current and the INCLUDE directories ([/no_def_idir](/windows/win32/mi
 
 ### MkTypLib Compatible
 
-Forces compatibility with mktyplib.exe version 2.03 ([/mktyplib203](/windows/win32/midl/-mktyplib203))
+Forces compatibility with mktyplib.exe version 2.03 ([/mktyplib203](/windows/win32/midl/-mktyplib203)).
 
 ### Warning Level
 
-Selects the strictness of the MIDL code errors ([/W](/windows/win32/midl/-w))
+Selects the strictness of the MIDL code errors ([/W](/windows/win32/midl/-w)).
 
 **Choices**
 
@@ -93,15 +93,15 @@ Selects the strictness of the MIDL code errors ([/W](/windows/win32/midl/-w))
 
 ### Treat Warnings as Errors
 
-Enables MIDL to treat all warnings as errors ([/WX](/windows/win32/midl/-wx))
+Enables MIDL to treat all warnings as errors ([/WX](/windows/win32/midl/-wx)).
 
 ### Suppress Startup Banner
 
-Suppress the display of the startup banner and information message ([/nologo](/windows/win32/midl/-nologo))
+Suppress the display of the startup banner and information message ([/nologo](/windows/win32/midl/-nologo)).
 
 ### C Compiler Char Type
 
-Specifies the default character type of the C compiler that will be used to compile the generated code. ([/char](/windows/win32/midl/-char) signed|unsigned|ascii7)
+Specifies the default character type of the C compiler that will be used to compile the generated code. ([/char](/windows/win32/midl/-char) signed|unsigned|ascii7).
 
 **Choices**
 
@@ -111,7 +111,7 @@ Specifies the default character type of the C compiler that will be used to comp
 
 ### Target Environment
 
-Specifies environment to target ([/env](/windows/win32/midl/-env) arm32|win32|ia64|x64)
+Specifies which environment to target ([/env](/windows/win32/midl/-env) arm32|win32|ia64|x64).
 
 **Choices**
 
@@ -124,19 +124,19 @@ Specifies environment to target ([/env](/windows/win32/midl/-env) arm32|win32|ia
 
 ### Generate Stubless Proxies
 
-Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-Oicf), [/Oif](/windows/win32/midl/-Oif) ) 
+Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-Oicf), [/Oif](/windows/win32/midl/-Oif) ).
 
 ### Suppress Compiler Warnings
 
-Supress compiler warning messages ([/no_warn](/windows/win32/midl/-no_warn))
+Suppress compiler warning messages ([/no_warn](/windows/win32/midl/-no_warn)).
 
 ### Application Configuration Mode
 
-Allow selected ACF attributes in the IDL file ([/app_config](/windows/win32/midl/-app_config))
+Allow selected ACF attributes in the IDL file ([/app_config](/windows/win32/midl/-app_config)).
 
 ### Locale ID
 
-Specifies the LCID for input files, file names and directory paths ([/lcid](/windows/win32/midl/-lcid) DECIMAL)
+Specifies the LCID for input files, file names and directory paths ([/lcid](/windows/win32/midl/-lcid) DECIMAL).
 
 ### Multi-Processor Compilation
 
@@ -146,39 +146,39 @@ Run multiple instances at the same time.
 
 ### Output Directory
 
-Output directory ([/out](/windows/win32/midl/-out) [directory])
+Specifies the output directory ([/out](/windows/win32/midl/-out) [directory]).
 
 ### Metadata File
 
-Specifies the name of the generated metadata file ([/winmd](/windows/win32/midl/-winmd) filename)
+Specifies the name of the generated metadata file ([/winmd](/windows/win32/midl/-winmd) filename).
 
 ### Header File
 
-Specifies the name of the generated header file ([/h](/windows/win32/midl/-h) filename)
+Specifies the name of the generated header file ([/h](/windows/win32/midl/-h) filename).
 
 ### DllData File
 
-Specifies the name of the DLLDATA file ([/dlldata](/windows/win32/midl/-dlldata) filename)
+Specifies the name of the DLLDATA file ([/dlldata](/windows/win32/midl/-dlldata) filename).
 
 ### IID File
 
-Specifies the name for the Interface Identifier file ([/iid](/windows/win32/midl/-iid) filename)
+Specifies the name for the Interface Identifier file ([/iid](/windows/win32/midl/-iid) filename).
 
 ### Proxy File
 
-Specifies the name of the proxy file ([/proxy](/windows/win32/midl/-proxy) filename)
+Specifies the name of the proxy file ([/proxy](/windows/win32/midl/-proxy) filename).
 
 ### Generate Type Library
 
-Specify not to generate a typelib ([/notlb] for no)
+Specify not to generate a type library ([/notlb] for no).
 
 ### Type Library
 
-Specifies the name of the type library file ([/tlb](/windows/win32/midl/-tlb) filename)
+Specifies the name of the type library file ([/tlb](/windows/win32/midl/-tlb) filename).
 
 ### Generate Client Stub Files
 
-Generate client stub file only ([/client](/windows/win32/midl/-client) [stub|none])
+Generate client stub file only ([/client](/windows/win32/midl/-client) [stub|none]).
 
 **Choices**
 
@@ -187,7 +187,7 @@ Generate client stub file only ([/client](/windows/win32/midl/-client) [stub|non
 
 ### Generate Server Stub Files
 
-Generate server stub file only ([/server](/windows/win32/midl/-server) [stub|none])
+Generate server stub file only ([/server](/windows/win32/midl/-server) [stub|none]).
 
 **Choices**
 
@@ -196,15 +196,15 @@ Generate server stub file only ([/server](/windows/win32/midl/-server) [stub|non
 
 ### Client Stub File
 
-Specify the client stub file ([/cstub](/windows/win32/midl/-cstub) [file])
+Specify the client stub file ([/cstub](/windows/win32/midl/-cstub) [file]).
 
 ### Server Stub File
 
-Specify the server stub file ([/sstub](/windows/win32/midl/-sstub) [file])
+Specify the server stub file ([/sstub](/windows/win32/midl/-sstub) [file]).
 
 ### Type Library Format
 
-Specifies the type library file format ([/oldtlb|/newtlb])
+Specifies the type library file format ([/oldtlb|/newtlb]).
 
 **Choices**
 
@@ -215,15 +215,15 @@ Specifies the type library file format ([/oldtlb|/newtlb])
 
 ### C Preprocess Options
 
-Specifies switches to pass to C compiler preprocessor ([/cpp_opt](/windows/win32/midl/-cpp_opt) switches)
+Specifies switches to pass to C compiler preprocessor ([/cpp_opt](/windows/win32/midl/-cpp_opt) switches).
 
 ### Undefine Preprocessor Definitions
 
-Specifies one or more undefines, including MIDL macros ([/U](/windows/win32/midl/-U)  [macros])
+Specifies one or more undefines, including MIDL macros ([/U](/windows/win32/midl/-U)  [macros]).
 
 ### Enable Error Checking
 
-Select error checking option ([/error all|none])
+Select error checking option ([/error all|none]).
 
 **Choices**
 
@@ -233,35 +233,35 @@ Select error checking option ([/error all|none])
 
 ### Check Allocations
 
-Check for out of memory errors ([/error](/windows/win32/midl/-error) allocation)
+Check for out of memory errors ([/error](/windows/win32/midl/-error) allocation).
 
 ### Check Bounds
 
-Check size vs transmission length specification ([/error](/windows/win32/midl/-error) bounds_check)
+Check size vs transmission length specification ([/error](/windows/win32/midl/-error) bounds_check).
 
 ### Check Enum Range
 
-Check enum values to be in allowable range ([/error](/windows/win32/midl/-error) enum)
+Check enum values to be in allowable range ([/error](/windows/win32/midl/-error) enum).
 
 ### Check Reference Pointers
 
-Check ref pointers to be non-null ([/error](/windows/win32/midl/-error) ref)
+Check ref pointers to be non-null ([/error](/windows/win32/midl/-error) ref).
 
 ### Check Stub Data
 
-Emit additional check for server side stub data validity ([/error](/windows/win32/midl/-error) stub_data)
+Emit additional check for server side stub data validity ([/error](/windows/win32/midl/-error) stub_data).
 
 ### Prepend with 'ABI' namespace
 
-Prepend the 'ABI' namespace to all types.  ([/ns_prefix](/windows/win32/midl/-ns_prefix))
+Prepend the 'ABI' namespace to all types.  ([/ns_prefix](/windows/win32/midl/-ns_prefix)).
 
 ### Validate Parameters
 
-Generate additonal information to validate parameters ([/robust](/windows/win32/midl/-robust) | [/robust](/windows/win32/midl/-no_robust))
+Generate additional information to validate parameters ([/robust](/windows/win32/midl/-robust) | [/robust](/windows/win32/midl/-no_robust)).
 
 ### Struct Member Alignment
 
-Specifies the packing level of structures in the target system ([/ZpN](/windows/win32/midl/-zpn))
+Specifies the packing level of structures in the target system ([/ZpN](/windows/win32/midl/-zpn)).
 
 **Choices**
 
@@ -273,11 +273,11 @@ Specifies the packing level of structures in the target system ([/ZpN](/windows/
 
 ### Redirect Output
 
-Redirects output from screen to a file ([/o](/windows/win32/midl/-o) file)
+Redirects output from screen to a file ([/o](/windows/win32/midl/-o) file).
 
 ### Minimum Target System
 
-Set the minimum target system ([/target](/windows/win32/midl/-target) STRING)
+Set the minimum target system ([/target](/windows/win32/midl/-target) STRING).
 
 
 
