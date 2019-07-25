@@ -429,7 +429,7 @@ Select the default calling convention for your application (can be overridden by
 **Choices**
 
 - **__cdecl** - Specifies the __cdecl calling convention for all functions except C++ member functions and functions marked __stdcall or __fastcall.
-- **__fastcall** - Specifies the __fastcall calling convention for all functions except C++ member sfunctions and functions marked __cdecl or __stdcall. All __fastcall functions must have prototypes.
+- **__fastcall** - Specifies the __fastcall calling convention for all functions except C++ member functions and functions marked __cdecl or __stdcall. All __fastcall functions must have prototypes.
 - **__stdcall** - Specifies the __stdcall calling convention for all functions except C++ member functions and functions marked __cdecl or __fastcall. All __stdcall functions must have prototypes.
 - **__vectorcall** - Specifies the __vectorcall calling convention for all functions except C++ member functions and functions marked __cdecl, __fastcall, or __stdcall. All __vectorcall functions must have prototypes.
 
@@ -475,7 +475,7 @@ Specifies how internal tool errors should be reported back to Microsoft.  The de
 
 - **Do Not Send Report** - Reports about internal compiler errors will not be collected or sent to Microsoft.
 - **Prompt Immediately** - Prompts you to send a report when you receive an internal compiler error.
-- **Queue For Next Login** - Queues the error report. When you log in with administrator privileges, a pop-up window is displayed and allows you to report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). queue is the default when compiling an application at the command line.
+- **Queue For Next Login** - Queues the error report. When you sign in with administrator privileges, a pop-up window is displayed and allows you to report any failures since the last time you were logged in (you will not be prompted to send reports for failures more than once every three days). queue is the default when compiling an application at the command line.
 - **Send Automatically** - Automatically sends reports of internal compiler errors to Microsoft. To enable this option, you must first agree to Microsoft%27s data collection policy. The first time you specify /errorReport:send on a computer, a compiler message will refer you to a website that contains Microsoft%27s data collection policy.
 
 ### Treat Specific Warnings As Errors

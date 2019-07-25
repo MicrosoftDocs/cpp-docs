@@ -73,11 +73,11 @@ Specifies the debugger type to use. When set to Auto, the debugger type will be 
 
 ### Environment
 
-Specifies the environment for the debugee, or variables to merge with existing environment.
+Specifies the environment for the program to be debugged, or variables to merge with existing environment.
 
 ### Debugging Accelerator Type
 
-The debugging accelerator type to use for debugging the GPU code.  (Available when the GPU debugger is active.)
+The debugging accelerator type to use for debugging the GPU code. (Available when the GPU debugger is active.)
 
 ### GPU Default Breakpoint Behavior
 
@@ -126,8 +126,8 @@ Specifies the connection type.
 
 **Choices**
 
-- **Remote with Windows authentication** - Remote with Windows authentication
-- **Remote with no authentication** - Remote with no authentication
+- **Remote with Windows authentication** - Remote with [Windows authentication](/windows-server/security/windows-authentication/windows-authentication-overview).
+- **Remote with no authentication** - Remote with no authentication.
 
 ### Debugger Type
 
@@ -144,11 +144,11 @@ Specifies the debugger type to use. When set to Auto, the debugger type will be 
 
 ### Environment
 
-Specifies the environment for the debugee, or variables to merge with existing environment.
+Specifies the environment for the program to be debugged, or variables to merge with existing environment.
 
 ### Debugging Accelerator Type
 
-The debugging accelerator type to use for debugging the GPU code.  (Available when the GPU debugger is active.)
+The debugging accelerator type to use for debugging the GPU code. (Available when the GPU debugger is active.)
 
 ### GPU Default Breakpoint Behavior
 
@@ -169,7 +169,7 @@ Attach the SQL debugger.
 
 ### Deployment Directory
 
-When debugging on a remote machine, if you want the contents of the project output (except for PDB files) to be copied to the remote machine, specify the path here
+When debugging on a remote machine, if you want the contents of the project output (except for PDB files) to be copied to the remote machine, specify the path here.
 
 ### Additional Files to Deploy
 

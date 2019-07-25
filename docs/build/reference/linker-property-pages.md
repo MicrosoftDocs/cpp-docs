@@ -89,7 +89,7 @@ Specifies whether the linker should display a progress indicator showing what pe
 
 ### Force File Output
 
-The [/FORCE](force-force-file-output.md) option tells the linker to create an .exe file or DLL even if a symbol is referenced but not defined or is multiply defined. It may create invalid exe file.
+The [/FORCE](force-force-file-output.md) option tells the linker to create an .exe file or DLL even if a symbol is referenced but not defined or is multiply defined. It may create invalid .exe file.
 
 **Choices**
 
@@ -313,9 +313,9 @@ Specifies link-time code generation. ([/LTCG](ltcg-link-time-code-generation.md)
 **Choices**
 
 - **Default** - Default LTCG setting.
-- **Use Fast Link Time Code Generation** - Use Link Time Code Generation.
+- **Use Fast Link Time Code Generation** - Use fast [Link Time Code Generation](ltcg-link-time-code-generation.md).
 - **Use Link Time Code Generation** - Use Link Time Code Generation.
-- **Profile Guided Optimization - Instrument** - Specifies link-time code generation.
+- **Profile Guided Optimization - Instrument** - Use [profile guided optimization](profile-guided-optimizations.md).
 - **Profile Guided Optimization - Optimization** - Specifies that the linker should use the profile data created after running the instrumented binary to create an optimized image.
 - **Profile Guided Optimization - Update** - Allows and tracks list of input files to be added or modified from what was specified in the :PGINSTRUMENT phase.
 
@@ -376,7 +376,7 @@ The [/ENTRY](entry-entry-point-symbol.md) option specifies an entry point functi
 
 ### No Entry Point
 
-The [/NOENTRY](noentry-no-entry-point.md)option is required for creating a resource-only DLL.Use this option to prevent LINK from linking a reference to _main into the DLL.
+The [/NOENTRY](noentry-no-entry-point.md)option is required for creating a resource-only DLL.Use this option to prevent LINK from linking a reference to `_main` into the DLL.
 
 ### Set Checksum
 
@@ -507,8 +507,3 @@ The [/ALIGN](align-section-alignment.md) option specifies the alignment of each 
 ### Image Has Safe Exception Handlers
 
 When [/SAFESEH](safeseh-image-has-safe-exception-handlers.md) is specified, the linker will only produce an image if it can also produce a table of the image's safe exception handlers. This table specifies for the operating system which exception handlers are valid for the image.
-
-### Additional Options
-
-Additional Options.
-
