@@ -2,7 +2,7 @@
 title: "Overview of modules in C++"
 ms.date: "07/23/2019"
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
-ms.description: Modules in C++20 provide a modern alternative to header files.
+description: Modules in C++20 provide a modern alternative to header files.
 ---
 
 # Overview of modules in C++
@@ -151,7 +151,7 @@ import std.filesystem;
 
 ### Imported header files
 
->[NOTE!]
+> [NOTE!]
 > This section is informational only. Legacy imports are not yet implemented in the Microsoft C++ compiler.
 
 Some headers are sufficiently self-contained that they are allowed to be brought in using the **import** keyword. The main difference between an imported header and an imported module is that any preprocessor definitions in the header are visible in the importing program immediately after the import statement. (Preprocessor definitions in any files included by that header are *not* visible.)
@@ -161,4 +161,6 @@ import <vector>
 import "myheader.h"
 ```
 
-## See Also 
+## See Also
+
+[module, import, export](import-export-module.md)
