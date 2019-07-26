@@ -3,7 +3,7 @@ title: "module, import, export"
 ms.date: "07/15/2019"
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
-ms.description: Use the import statement to access types and functions defined in the specified module.
+description: Use the import statement to access types and functions defined in the specified module.
 ---
 
 # module, import, export
