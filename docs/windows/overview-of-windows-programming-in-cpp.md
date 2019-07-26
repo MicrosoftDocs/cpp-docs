@@ -1,11 +1,13 @@
 ---
 title: "Overview of Windows Programming in C++"
-ms.date: "07/02/2019"
+ms.date: "07/28/2019"
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
 
-There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them.
+There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them. 
+
+This section discusses how to use Visual Studio and the MFC/ATL wrapper libraries to create Windows programs. For documentation on the Windows platform itself, see [Windows documentation](/windows/index).
 
 ## Command line (console) applications
 
