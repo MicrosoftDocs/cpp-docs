@@ -1,6 +1,6 @@
 ---
 title: "ComPtr Class"
-ms.date: "10/01/2018"
+ms.date: "07/26/2019"
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr", "client/Microsoft::WRL::ComPtr::As", "client/Microsoft::WRL::ComPtr::AsIID", "client/Microsoft::WRL::ComPtr::AsWeak", "client/Microsoft::WRL::ComPtr::Attach", "client/Microsoft::WRL::ComPtr::ComPtr", "client/Microsoft::WRL::ComPtr::CopyTo", "client/Microsoft::WRL::ComPtr::Detach", "client/Microsoft::WRL::ComPtr::Get", "client/Microsoft::WRL::ComPtr::GetAddressOf", "client/Microsoft::WRL::ComPtr::InternalAddRef", "client/Microsoft::WRL::ComPtr::InternalRelease", "client/Microsoft::WRL::ComPtr::operator&", "client/Microsoft::WRL::ComPtr::operator->", "client/Microsoft::WRL::ComPtr::operator=", "client/Microsoft::WRL::ComPtr::operator==", "client/Microsoft::WRL::ComPtr::operator!=", "client/Microsoft::WRL::ComPtr::operator Microsoft::WRL::Details::BoolType", "client/Microsoft::WRL::ComPtr::ptr_", "client/Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf", "client/Microsoft::WRL::ComPtr::Reset", "client/Microsoft::WRL::ComPtr::Swap", "client/Microsoft::WRL::ComPtr::~ComPtr"]
 helpviewer_keywords: ["Microsoft::WRL::ComPtr class", "Microsoft::WRL::ComPtr::As method", "Microsoft::WRL::ComPtr::AsIID method", "Microsoft::WRL::ComPtr::AsWeak method", "Microsoft::WRL::ComPtr::Attach method", "Microsoft::WRL::ComPtr::ComPtr, constructor", "Microsoft::WRL::ComPtr::CopyTo method", "Microsoft::WRL::ComPtr::Detach method", "Microsoft::WRL::ComPtr::Get method", "Microsoft::WRL::ComPtr::GetAddressOf method", "Microsoft::WRL::ComPtr::InternalAddRef method", "Microsoft::WRL::ComPtr::InternalRelease method", "Microsoft::WRL::ComPtr::operator& operator", "Microsoft::WRL::ComPtr::operator-> operator", "Microsoft::WRL::ComPtr::operator= operator", "Microsoft::WRL::ComPtr::operator== operator", "Microsoft::WRL::ComPtr::operator!= operator", "Microsoft::WRL::ComPtr::operator Microsoft::WRL::Details::BoolType operator", "Microsoft::WRL::ComPtr::ptr_ data member", "Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf method", "Microsoft::WRL::ComPtr::Reset method", "Microsoft::WRL::ComPtr::Swap method", "Microsoft::WRL::ComPtr::~ComPtr, destructor"]
@@ -202,31 +202,34 @@ Intializes a new instance of the `ComPtr` class. Overloads provide default, copy
 
 ```cpp
 WRL_NOTHROW ComPtr();
+
 WRL_NOTHROW ComPtr(
    decltype(__nullptr)
 );
+
 template<class U>
 WRL_NOTHROW ComPtr(
    _In_opt_ U *other
 );
+
 WRL_NOTHROW ComPtr(
    const ComPtr& other
 );
+
 template<class U>
 WRL_NOTHROW ComPtr(
    const ComPtr<U> &other,
-   typename ENABLE_IF<__is_convertible_to(U*,
-   T*),
-   void *>;
+   typename ENABLE_IF<__is_convertible_to(U*, T*), void *>
+);
+
 WRL_NOTHROW ComPtr(
    _Inout_ ComPtr &&other
 );
+
 template<class U>
 WRL_NOTHROW ComPtr(
-   _Inout_ ComPtr<U>&& other,
-   typename ENABLE_IF<__is_convertible_to(U*,
-   T*),
-   void *>;
+   _Inout_ ComPtr<U>&& other, typename ENABLE_IF<__is_convertible_to(U*, T*), void *>
+);
 ```
 
 ### Parameters
@@ -243,7 +246,7 @@ An object of type *U*.
 
 The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](../../extensions/nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
 
-The third constructor creates an object from the object specified by a pointer.
+The third constructor creates an object from the object specified by a pointer. The ComPtr now owns the pointed-to memory and maintains a reference count to it.
 
 The fourth and fifth constructors are copy constructors. The fifth constructor copies an object if it is convertible to the current type.
 
