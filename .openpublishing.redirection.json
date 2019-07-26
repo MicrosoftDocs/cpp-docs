@@ -551,6 +551,26 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/build/reference/advanced-manifest-tool.md",
+         "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/general-manifest-tool-configuration-properties.md",
+         "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/input-and-output-manifest-tool.md",
+         "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
+         "redirect_document_id": false
+      },       
+      {
+         "source_path": "docs/build/reference/isolated-com-manifest-tool.md",
+         "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/build/reference/floating-point-optimization.md",
          "redirect_url": "/cpp/build/reference/fp-specify-floating-point-behavior",
          "redirect_document_id": false
@@ -12541,6 +12561,21 @@
          "redirect_document_id": true
       },
       {
+         "source_path": "docs/build/hlsl-property-pages-advanced.md",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/hlsl-property-pages-general.md",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/hlsl-property-pages-output-files.md",
+         "redirect_url": "/cpp/build/reference/hlsl-property-pages",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/parallel/openmp/1-1-scope.md",
          "redirect_url": "/cpp/parallel/openmp/1-introduction#11-scope",
          "redirect_document_id": false
@@ -20593,12 +20628,12 @@
         },
         {
             "source_path": "docs/parallel/openmp/reference/omp-lock-t.md",
-            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions",
             "redirect_document_id": false
         },
         {
             "source_path": "docs/parallel/openmp/reference/omp-nest-lock-t.md",
-            "redirect_url": "/cpp/parallel/openmp/reference/openmp-data-types",
+            "redirect_url": "/cpp/parallel/openmp/reference/openmp-functions",
             "redirect_document_id": false
         },
         {
