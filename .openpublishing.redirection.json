@@ -12561,17 +12561,17 @@
          "redirect_document_id": true
       },
       {
-         "source_path": "docs/build/hlsl-property-pages-advanced.md",
+         "source_path": "docs/build/reference/hlsl-property-pages-advanced.md",
          "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
       {
-         "source_path": "docs/build/hlsl-property-pages-general.md",
+         "source_path": "docs/build/reference/hlsl-property-pages-general.md",
          "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
       {
-         "source_path": "docs/build/hlsl-property-pages-output-files.md",
+         "source_path": "docs/build/reference/hlsl-property-pages-output-files.md",
          "redirect_url": "/cpp/build/reference/hlsl-property-pages",
          "redirect_document_id": false
       },
