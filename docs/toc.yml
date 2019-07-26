@@ -1587,10 +1587,10 @@
 - name: Windows desktop development
   expanded: false
   items:
-    - name: Desktop Applications in C++
-      href: windows/desktop-applications-visual-cpp.md
     - name: Overview of Windows programming in C++
       href: windows/overview-of-windows-programming-in-cpp.md
+    - name: Desktop Applications in C++
+      href: windows/desktop-applications-visual-cpp.md
     - name: "Walkthrough: Create a Standard C++ program"
       href: windows/walkthrough-creating-a-standard-cpp-program-cpp.md
     - name: "Walkthrough: Create Windows Desktop applications"
