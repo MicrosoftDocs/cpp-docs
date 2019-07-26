@@ -1,12 +1,12 @@
 ---
 title: "Creating an MFC Application"
-ms.date: "11/04/2016"
+ms.date: "07/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
 ---
 # Creating an MFC Application
 
-An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. The easiest way to create an MFC application is to use the MFC Application Wizard.
+An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. The easiest way to create an MFC application is to use the MFC Application Wizard. To create an MFC console application, use the Desktop Desktop Wizard and choose the **Console Application** and **MFC Headers** options.
 
 > [!IMPORTANT]
 >  MFC projects are not supported in Visual Studio Express editions.
