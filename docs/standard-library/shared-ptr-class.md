@@ -690,6 +690,67 @@ use count == 2
 use count == 1
 ```
 
+## <a name="swap"></a> swap
+
+Swaps two `shared_ptr` objects.
+
+```cpp
+void swap(shared_ptr& sp) noexcept;
+```
+
+### Parameters
+
+*sp*\
+The shared pointer to swap with.
+
+### Remarks
+
+The member function leaves the resource originally owned by `*this` subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+
+### Example
+
+```cpp
+// std__memory__shared_ptr_swap.cpp
+// compile with: /EHsc
+#include <memory>
+#include <iostream>
+
+int main()
+{
+    std::shared_ptr<int> sp1(new int(5));
+    std::shared_ptr<int> sp2(new int(10));
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    sp1.swap(sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+
+    swap(sp1, sp2);
+    std::cout << "*sp1 == " << *sp1 << std::endl;
+    std::cout << std::endl;
+
+    std::weak_ptr<int> wp1(sp1);
+    std::weak_ptr<int> wp2(sp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    wp1.swap(wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    swap(wp1, wp2);
+    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
+
+    return (0);
+}
+```
+
+```Output
+*sp1 == 5
+*sp1 == 10
+*sp1 == 5
+*wp1 == 5
+*wp1 == 10
+*wp1 == 5
+```
+
 ## <a name="unique"></a> unique
 
 Tests if owned resource is unique. This function was deprecated in C++17, and removed in C++20.
