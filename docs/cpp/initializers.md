@@ -1,7 +1,8 @@
 ---
 title: "Initializers"
-ms.date: "11/19/2018"
-helpviewer_keywords: ["array-element initializers", "initializing arrays [C++], initializers", "arrays [C++], array-element initializers", "declarators, as initializers", "initializers, array element"]
+ms.date: "07/29/2019"
+description: "How to initialize classes, structs, arrays and fundamental types in C++."
+helpviewer_keywords: ["arrays [C++], array-element initializers", "aggregate initializers [C++]"]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 ---
 # Initializers
