@@ -1,6 +1,6 @@
 ---
 title: "static_assert"
-ms.date: "11/04/2016"
+ms.date: "07/29/2019"
 f1_keywords: ["static_assert_cpp"]
 helpviewer_keywords: ["C++ keywords, static_assert", "C2338", "assertions [C++], static_assert", "static_assert"]
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
@@ -14,7 +14,7 @@ Tests a software assertion at compile time. If the specified constant expression
 ```
 static_assert( constant-expression, string-literal );
 
-static_assert( constant-expression ); // Visual Studio 2017 and later
+static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)s
 ```
 
 #### Parameters
