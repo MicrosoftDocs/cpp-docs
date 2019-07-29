@@ -379,9 +379,14 @@ struct MyAggregate{
     char myChar;
 };
 
+struct MyAggregate2{
+    int myInt;
+    char myChar = 'Z'; // member-initializer OK in C++14
+};
+
 int main() {
     MyAggregate agg1{ 1, 'c' };
-
+    MyAggregate2 agg2{2};
     cout << "agg1: " << agg1.myChar << ": " << agg1.myInt << endl;
     cout << "agg2: " << agg2.myChar << ": " << agg2.myInt << endl;
 
@@ -407,7 +412,7 @@ You should see the following output:
 
 ```Output
 agg1: c: 1
-agg2: d: 2
+agg2: Z: 2
 myArr1: 1 2 3 4
 myArr3: 8 9 10 0 0
 ```
