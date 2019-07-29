@@ -1,7 +1,8 @@
 ---
 title: "Initializers"
-ms.date: "11/19/2018"
-helpviewer_keywords: ["array-element initializers", "initializing arrays [C++], initializers", "arrays [C++], array-element initializers", "declarators, as initializers", "initializers, array element"]
+ms.date: "07/29/2019"
+description: "How to initialize classes, structs, arrays and fundamental types in C++."
+helpviewer_keywords: ["arrays [C++], array-element initializers", "aggregate initializers [C++]"]
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
 ---
 # Initializers
@@ -379,9 +380,14 @@ struct MyAggregate{
     char myChar;
 };
 
+struct MyAggregate2{
+    int myInt;
+    char myChar = 'Z'; // member-initializer OK in C++14
+};
+
 int main() {
     MyAggregate agg1{ 1, 'c' };
-
+    MyAggregate2 agg2{2};
     cout << "agg1: " << agg1.myChar << ": " << agg1.myInt << endl;
     cout << "agg2: " << agg2.myChar << ": " << agg2.myInt << endl;
 
@@ -407,7 +413,7 @@ You should see the following output:
 
 ```Output
 agg1: c: 1
-agg2: d: 2
+agg2: Z: 2
 myArr1: 1 2 3 4
 myArr3: 8 9 10 0 0
 ```
