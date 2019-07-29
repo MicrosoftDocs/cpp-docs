@@ -78,13 +78,13 @@ no arguments -- the resulting object is an empty `shared_ptr` object or an empty
 
 `ptr, deleter` -- a pointer of type `Other*` to the resource to be managed and a deleter for that resource. If the function fails (because the control block cannot be allocated), it calls `deleter(ptr)`, which must be well defined.
 
-`ptr, deleter, alloc` -- a pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated) it calls `deleter(ptr)`, which must be well defined.
+`ptr, deleter, alloc` -- a pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well defined.
 
 `sp` -- a `shared_ptr<Other>` object that owns the resource to be managed.
 
 `wp` -- a `weak_ptr<Other>` object that points to the resource to be managed.
 
-`ap` -- an `auto_ptr<Other>` object that holds a pointer to the resource to be managed. If the function succeeds it calls `ap.release()`; otherwise it leaves `ap` unchanged.
+`ap` -- an `auto_ptr<Other>` object that holds a pointer to the resource to be managed. If the function succeeds, it calls `ap.release()`; otherwise it leaves `ap` unchanged.
 
 In all cases, the pointer type `Other*` must be convertible to `T*`.
 
@@ -161,7 +161,7 @@ element_type* get() const noexcept;
 
 ### Remarks
 
-The member function returns the address of the owned resource. If the object does not own a resource it returns 0.
+The member function returns the address of the owned resource. If the object does not own a resource, it returns 0.
 
 ### Example
 
@@ -303,7 +303,7 @@ The type of the deleter of the owned object, stored for later deletion of the ob
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
 
 ### Example
 
@@ -436,7 +436,7 @@ The allocator to copy.
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
 
 ### Example
 
