@@ -1,13 +1,13 @@
 ---
 title: "MFC Desktop Applications"
-ms.date: "11/04/2016"
+ms.date: "07/28/2019"
 f1_keywords: ["MFC", "mfc"]
 helpviewer_keywords: ["libraries, MFC", "class libraries, MFC", "MFC, about MFC"]
 ms.assetid: 7101cb18-a681-495c-8f2b-069ad20c72f7
 ---
 # MFC Desktop Applications
 
-The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper over much of the Win32 and COM APIs. Although it can be used to create very simple desktop applications, it is most useful when you need to develop more complex user interfaces with multiple controls. You can use MFC to create applications with Office-style user interfaces.
+The Microsoft Foundation Class (MFC) Library provides an object-oriented wrapper over much of the Win32 and COM APIs. Although it can be used to create very simple desktop applications, it is most useful when you need to develop more complex user interfaces with multiple controls. You can use MFC to create applications with Office-style user interfaces. For documentation on the Windows platform itself, see [Windows documentation](/windows/index). For information on building Windows applications in C++ without MFC, see [Build desktop Windows apps using the Win32 API](/windows/win32/index).
 
 The MFC Reference covers the classes, global functions, global variables, and macros that make up the Microsoft Foundation Class Library.
 
