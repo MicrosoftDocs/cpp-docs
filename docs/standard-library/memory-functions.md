@@ -14,7 +14,15 @@ Gets the true address of an object.
 ```cpp
 template <class T>
 T* addressof(
-    T& value);
+    T& value) noexcept;    // before C++17
+
+template <class T>
+constexpr T* addressof(
+    T& value) noexcept;    // C++17
+
+template <class T>
+const T* addressof(
+    const T&& value) = delete;   // C++17
 ```
 
 ### Parameters
@@ -225,7 +233,11 @@ Const cast to [shared_ptr](shared-ptr-class.md).
 ```cpp
 template <class Type, class Other>
 shared_ptr<Type> const_pointer_cast(
-    const shared_ptr<Other>& sp);
+    const shared_ptr<Other>& sp) noexcept;
+
+template <class Type, class Other>
+shared_ptr<Type> const_pointer_cast(
+    shared_ptr<Other>&& sp) noexcept;
 ```
 
 ### Parameters
@@ -386,7 +398,11 @@ Dynamic cast to [shared_ptr](shared-ptr-class.md).
 ```cpp
 template <class Type, class Other>
 shared_ptr<Type> dynamic_pointer_cast(
-    const shared_ptr<Other>& sp);
+    const shared_ptr<Other>& sp) noexcept;
+
+template <class Type, class Other>
+shared_ptr<Type> dynamic_pointer_cast(
+    shared_ptr<Other>&& sp) noexcept;
 ```
 
 ### Parameters
@@ -447,7 +463,7 @@ Get the deleter from a [shared_ptr](shared-ptr-class.md).
 ```cpp
 template <class D, class Type>
 D* get_deleter(
-    const shared_ptr<Type>& sp);
+    const shared_ptr<Type>& sp) noexcept;
 ```
 
 ### Parameters
@@ -514,7 +530,7 @@ get_deleter(sp1) != 0 == true
 Returns the type of pointer safety assumed by any garbage collector.
 
 ```cpp
-pointer_safety get_pointer_safety();
+pointer_safety get_pointer_safety() noexcept;
 ```
 
 ### Remarks
@@ -744,30 +760,53 @@ struct owner_less< shared_ptr<Type> >
 {
     bool operator()(
         const shared_ptr<Type>& left,
-        const shared_ptr<Type>& right);
+        const shared_ptr<Type>& right) const noexcept;
 
     bool operator()(
         const shared_ptr<Type>& left,
-        const weak_ptr<Type>& right);
+        const weak_ptr<Type>& right) const noexcept;
 
     bool operator()(
         const weak_ptr<Type>& left,
-        const shared_ptr<Type>& right);
+        const shared_ptr<Type>& right) const noexcept;
 };
 
 template <class Type>
 struct owner_less<weak_ptr<Type>>
     bool operator()(
         const weak_ptr<Type>& left,
-        const weak_ptr<Type>& right);
+        const weak_ptr<Type>& right) const noexcept;
 
     bool operator()(
         const weak_ptr<Type>& left,
-        const shared_ptr<Type>& right);
+        const shared_ptr<Type>& right) const noexcept;
 
     bool operator()(
         const shared_ptr<Type>& left,
-        const weak_ptr<Type>& right);
+        const weak_ptr<Type>& right) const noexcept;
+};
+
+template<> struct owner_less<void>
+{
+    template<class T, class U>
+    bool operator()(
+        const shared_ptr<T>& left,
+        const shared_ptr<U>& right) const noexcept;
+
+    template<class T, class U>
+    bool operator()(
+        const shared_ptr<T>& left,
+        const weak_ptr<U>& right) const noexcept;
+
+    template<class T, class U>
+    bool operator()(
+        const weak_ptr<T>& left,
+        const shared_ptr<U>& right) const noexcept;
+
+    template<class T, class U>
+    bool operator()(
+        const weak_ptr<T>& left,
+        const weak_ptr<U>& right) const noexcept;
 };
 ```
 
@@ -872,7 +911,11 @@ Static cast to [shared_ptr](shared-ptr-class.md).
 ```cpp
 template <class Type, class Other>
 shared_ptr<Type> static_pointer_cast(
-    const shared_ptr<Other>& sp);
+    const shared_ptr<Other>& sp) noexcept;
+
+template <class Type, class Other>
+shared_ptr<Type> static_pointer_cast(
+    shared_ptr<Other>&& sp) noexcept;
 ```
 
 ### Parameters
@@ -927,33 +970,39 @@ sp1->value == 3
 
 ## <a name="swap"></a> swap
 
-Swap two [shared_ptr](shared-ptr-class.md) or [weak_ptr](weak-ptr-class.md) objects.
+Swap two [shared_ptr](shared-ptr-class.md), [unique_ptr](unique-ptr-class.md), or [weak_ptr](weak-ptr-class.md) objects.
 
 ```cpp
-template <class Type, class Other>
+template <class Type>
 void swap(
     shared_ptr<Type>& left,
-    shared_ptr<Other>& right);
+    shared_ptr<Type>& right) noexcept;
 
-template <class Type, class Other>
+template <class Type, class D>
+void swap(
+    unique_ptr<Type, D>& left,
+    unique_ptr<Type, D>& right) noexcept;
+
+template <class Type>
 void swap(
     weak_ptr<Type>& left,
-    weak_ptr<Other>& right);
+    weak_ptr<Type>& right) noexcept;
+
 ```
 
 ### Parameters
 
 *Type*\
-The type controlled by the left shared/weak pointer.
+The type controlled by the argument pointer.
 
-*Other*\
-The type controlled by the right shared/weak pointer.
+*D*\
+The deleter of the unique pointer type.
 
 *left*\
-The left shared/weak pointer.
+The left pointer.
 
 *right*\
-The right shared/weak pointer.
+The right pointer.
 
 ### Remarks
 
