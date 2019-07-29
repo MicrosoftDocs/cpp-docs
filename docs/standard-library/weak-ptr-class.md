@@ -12,28 +12,7 @@ Wraps a weakly linked pointer.
 ## Syntax
 
 ```cpp
-template<class Type>
-   class weak_ptr {
-public:
-   typedef Type element_type;
-   weak_ptr();
-   weak_ptr(const weak_ptr&);
-   template <class Other>
-      weak_ptr(const weak_ptr<Other>&);
-   template <class Other>
-      weak_ptr(const shared_ptr<Other>&);
-   weak_ptr& operator=(const weak_ptr&);
-   template <class Other>
-      weak_ptr& operator=(const weak_ptr<Other>&);
-   template <class Other>
-      weak_ptr& operator=(shared_ptr<Other>&);
-
-   void swap(weak_ptr&);
-   void reset();
-   long use_count() const;
-   bool expired() const;
-   shared_ptr<Type> lock() const;
-};
+template<class Type> class weak_ptr;
 ```
 
 ### Parameters
@@ -43,7 +22,7 @@ The type controlled by the weak pointer.
 
 ## Remarks
 
-The template class describes an object that points to a resource that is managed by one or more [shared_ptr Class](../standard-library/shared-ptr-class.md) objects. The `weak_ptr` objects that point to a resource don't affect the resource's reference count. When the last `shared_ptr` object that manages that resource is destroyed, the resource will be freed, even if there are `weak_ptr` objects pointing to that resource. This behavior is essential for avoiding cycles in data structures.
+The template class describes an object that points to a resource that is managed by one or more [shared_ptr](shared-ptr-class.md) objects. The `weak_ptr` objects that point to a resource don't affect the resource's reference count. When the last `shared_ptr` object that manages that resource is destroyed, the resource will be freed, even if there are `weak_ptr` objects pointing to that resource. This behavior is essential for avoiding cycles in data structures.
 
 A `weak_ptr` object points to a resource if it was constructed from a `shared_ptr` object that owns that resource, if it was constructed from a `weak_ptr` object that points to that resource, or if that resource was assigned to it with [operator=](#op_eq). A `weak_ptr` object doesn't provide direct access to the resource that it points to. Code that needs to use the resource does so through a `shared_ptr` object that owns that resource, created by calling the member function [lock](#lock). A `weak_ptr` object has expired when the resource that it points at has been freed because all of the `shared_ptr` objects that own the resource have been destroyed. Calling `lock` on a `weak_ptr` object that has expired creates an empty shared_ptr object.
 
@@ -53,43 +32,38 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 
 ## Members
 
-### Constructors
-
 |||
 |-|-|
+| **Constructors** | |
 |[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|
-
-### Methods
-
-|||
-|-|-|
+| **Destructors** | |
+|[~weak_ptr](#tilde-weak_ptr)|Constructs a `weak_ptr`.|
+| **Types** | |
 |[element_type](#element_type)|The type of the element.|
+| **Member functions** | |
 |[expired](#expired)|Tests if ownership has expired.|
 |[lock](#lock)|Obtains exclusive ownership of a resource.|
 |[owner_before](#owner_before)|Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.|
 |[reset](#reset)|Releases owned resource.|
 |[swap](#swap)|Swaps two `weak_ptr` objects.|
 |[use_count](#use_count)|Counts number of `shared_ptr` objects.|
-
-### Operators
-
-|||
-|-|-|
+| **Operators** | |
 |[operator=](#op_eq)|Replaces owned resource.|
 
-### <a name="element_type"></a> element_type
+## <a name="element_type"></a> element_type
 
 The type of the element.
 
 ```cpp
-typedef Type element_type;
+typedef Type element_type; // through C++17
+using element_type = remove_extent_t<Type>; // C++20
 ```
 
-#### Remarks
+### Remarks
 
 The type is a synonym for the template parameter `Type`.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_element_type.cpp
@@ -113,19 +87,19 @@ int main()
 *wp0.lock() == 5
 ```
 
-### <a name="expired"></a> expired
+## <a name="expired"></a> expired
 
-Tests if ownership has expired.
+Tests if ownership has expired, that is, the referenced object has been deleted.
 
 ```cpp
-bool expired() const;
+bool expired() const noexcept;
 ```
 
-#### Remarks
+### Remarks
 
 The member function returns **true** if `*this` has expired, otherwise **false**.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_expired.cpp
@@ -162,19 +136,19 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-### <a name="lock"></a> lock
+## <a name="lock"></a> lock
 
-Obtains exclusive ownership of a resource.
+Obtains a `shared_ptr` that shares ownership of a resource.
 
 ```cpp
-shared_ptr<Type> lock() const;
+shared_ptr<Type> lock() const noexcept;
 ```
 
-#### Remarks
+### Remarks
 
-The member function returns an empty shared_ptr object if `*this` has expired; otherwise it returns a [shared_ptr Class](../standard-library/shared-ptr-class.md)\<Type> object that owns the resource that `*this` points to.
+The member function returns an empty [shared_ptr](shared-ptr-class.md) object if `*this` has expired; otherwise it returns a `shared_ptr<Type>` object that owns the resource that `*this` points to. Returns a value equivalent to the atomic execution of `expired() ? shared_ptr<Type>() : shared_ptr<Type>(*this)`.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_lock.cpp
@@ -211,36 +185,33 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-### <a name="op_eq"></a> operator=
+## <a name="op_eq"></a> operator=
 
 Replaces owned resource.
 
 ```cpp
-weak_ptr& operator=(const weak_ptr& wp);
+weak_ptr& operator=(const weak_ptr& p) noexcept;
 
 template <class Other>
-    weak_ptr& operator=(const weak_ptr<Other>& wp);
+weak_ptr& operator=(const weak_ptr<Other>& p) noexcept;
 
 template <class Other>
-    weak_ptr& operator=(const shared_ptr<Other>& sp);
+weak_ptr& operator=(const shared_ptr<Other>& p) noexcept;
 ```
 
-#### Parameters
+### Parameters
 
 *Other*\
-The type controlled by the argument shared/weak pointer.
+The type controlled by the argument shared or weak pointer.
 
-*wp*\
-The weak pointer to copy.
+*p*\
+The weak pointer or shared pointer to copy.
 
-*sp*\
-The shared pointer to copy.
+### Remarks
 
-#### Remarks
+The operators all release the resource currently pointed to by `*this` and assign ownership of the resource named by *p* to `*this`. If an operator fails, it leaves `*this` unchanged. Each operator has an effect equivalent to `weak_ptr(p).swap(*this)`.
 
-The operators all release the resource currently pointed to by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If an operator fails, it leaves `*this` unchanged.
-
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_operator_as.cpp
@@ -272,40 +243,40 @@ int main()
 *wp1.lock() == 10
 ```
 
-### <a name="owner_before"></a> owner_before
+## <a name="owner_before"></a> owner_before
 
 Returns **true** if this `weak_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
-    bool owner_before(const shared_ptr<Other>& ptr);
+bool owner_before(const shared_ptr<Other>& ptr) const noexcept;
 
 template <class Other>
-    bool owner_before(const weak_ptr<Other>& ptr);
+bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 ```
 
-#### Parameters
+### Parameters
 
 *ptr*\
-An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
+An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
-#### Remarks
+### Remarks
 
-The template member function returns **true** if `*this` is `ordered before` `ptr`.
+The template member function returns **true** if `*this` is ordered before *ptr*.
 
-### <a name="reset"></a> reset
+## <a name="reset"></a> reset
 
-Releases owned resource.
+Releases the owned resource.
 
 ```cpp
-void reset();
+void reset() noexcept;
 ```
 
-#### Remarks
+### Remarks
 
-The member function releases the resource pointed to by `*this` and converts `*this` to an empty weak_ptr object.
+The member function releases the resource pointed to by `*this` and converts `*this` to an empty `weak_ptr` object.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_reset.cpp
@@ -335,31 +306,31 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-### <a name="swap"></a> swap
+## <a name="swap"></a> swap
 
 Swaps two `weak_ptr` objects.
 
 ```cpp
-void swap(weak_ptr& wp);
+void swap(weak_ptr& wp) noexcept;
 ```
 
-Also includes the specialization.
+Also includes the specialization:
 
 ```cpp
 template<class T>
-    void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
+void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 ```
 
-#### Parameters
+### Parameters
 
 *wp*\
 The weak pointer to swap with.
 
-#### Remarks
+### Remarks
 
-After a `swap`, the resource originally pointed to by `*this` is pointed to by *wp*, and the resource originally pointed to by *wp* is pointed to by `*this`. The function doesn't change the reference counts for the two resources and it doesn't throw any exceptions.
+After a `swap`, the resource originally pointed to by `*this` is pointed to by *wp*, and the resource originally pointed to by *wp* is pointed to by `*this`. The function doesn't change the reference counts for the two resources and it doesn't throw any exceptions. The effect of the template specialization is the equivalent of `a.swap(b)`.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_swap.cpp
@@ -404,19 +375,19 @@ int main()
 *wp1 == 5
 ```
 
-### <a name="use_count"></a> use_count
+## <a name="use_count"></a> use_count
 
 Counts the number of `shared_ptr` objects that own the shared resource.
 
 ```cpp
-long use_count() const;
+long use_count() const noexcept;
 ```
 
-#### Remarks
+### Remarks
 
 The member function returns the number of `shared_ptr` objects that own the resource pointed to by `*this`.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_use_count.cpp
@@ -444,28 +415,31 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-### <a name="weak_ptr"></a> weak_ptr
+## <a name="weak_ptr"></a> weak_ptr
 
-Constructs a `weak_ptr`. Also includes a destructor.
+Constructs a `weak_ptr`.
 
 ```cpp
-weak_ptr();
+constexpr weak_ptr() noexcept;
 
-weak_ptr(const weak_ptr& wp);
+weak_ptr(const weak_ptr& wp) noexcept;
+
+weak_ptr(weak_ptr&& wp) noexcept;
 
 template <class Other>
-    weak_ptr(const weak_ptr<Other>& wp);
+weak_ptr(const weak_ptr<Other>& wp) noexcept;
 
 template <class Other>
-    weak_ptr(const shared_ptr<Other>& sp);
+weak_ptr(weak_ptr<Other>&& sp) noexcept;
 
-~weak_ptr();
+template <class Other>
+weak_ptr(const shared_ptr<Other>& sp) noexcept;
 ```
 
-#### Parameters
+### Parameters
 
 *Other*\
-The type controlled by the argument shared/weak pointer.
+The type controlled by the argument shared/weak pointer. These constructors don't participate in overload resolution unless _Other\*_ is compatible with `element_type*`.
 
 *wp*\
 The weak pointer to copy.
@@ -473,11 +447,11 @@ The weak pointer to copy.
 *sp*\
 The shared pointer to copy.
 
-#### Remarks
+### Remarks
 
-The constructors each construct an object that points to the resource named by the operand sequence.
+The default constructor constructs an empty `weak_ptr` object. The constructors that take an argument each construct an empty `weak_ptr` object if the argument pointer is empty. Otherwise, they construct a `weak_ptr` object that points to the resource named by the argument. The reference count of the shared object is not changed.
 
-#### Example
+### Example
 
 ```cpp
 // std__memory__weak_ptr_construct.cpp
@@ -509,3 +483,21 @@ wp0.expired() == true
 *wp1.lock() == 5
 *wp2.lock() == 5
 ```
+
+## <a name="tilde-weak_ptr"></a> ~weak_ptr
+
+Destroys a `weak_ptr`.
+
+```cpp
+~weak_ptr();
+```
+
+### Remarks
+
+The destructor destroys this `weak_ptr` but has no effect on the reference count of the object its stored pointer points at.
+
+## See also
+
+[Header Files Reference](cpp-standard-library-header-files.md)\
+[\<memory>](memory.md)\
+[shared_ptr class](shared-ptr-class.md)

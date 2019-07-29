@@ -1,6 +1,6 @@
 ---
 title: "shared_ptr class"
-ms.date: "07/25/2019"
+ms.date: "07/29/2019"
 f1_keywords: ["memory/std::shared_ptr", "memory/std::shared_ptr::element_type", "memory/std::shared_ptr::get", "memory/std::shared_ptr::owner_before", "memory/std::shared_ptr::reset", "memory/std::shared_ptr::swap", "memory/std::shared_ptr::unique", "memory/std::shared_ptr::use_count", "memory/std::shared_ptr::operator boolean-type", "memory/std::shared_ptr::operator*", "memory/std::shared_ptr::operator=", "memory/std::shared_ptr::operator->"]
 helpviewer_keywords: ["std::shared_ptr [C++]", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count"]
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
@@ -48,7 +48,7 @@ A `shared_ptr` object owns a resource:
 
 - if it was constructed from a `shared_ptr` object that owns that resource,
 
-- if it was constructed from a [weak_ptr](../standard-library/weak-ptr-class.md) object that points to that resource, or
+- if it was constructed from a [weak_ptr](weak-ptr-class.md) object that points to that resource, or
 
 - if ownership of that resource was assigned to it, either with [shared_ptr::operator=](#op_eq) or by calling the member function [shared_ptr::reset](#reset).
 
@@ -101,7 +101,8 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 |[~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
 | **Typedefs** | |
 |[element_type](#element_type)|The type of an element.|
-| **Functions** | |
+|[weak_type](#weak_type)|The type of a weak pointer to an element.|
+| **Member functions** | |
 |[get](#get)|Gets address of owned resource.|
 |[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
 |[reset](#reset)|Replace owned resource.|
@@ -114,52 +115,18 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 |[operator=](#op_eq)|Replaces the owned resource.|
 |[operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
 
-## Non-members
-
-|||
-|-|-|
-| **Non-member functions** | |
-|[allocate_shared](#allocate_shared)||
-|[const_pointer_cast](#const_pointer_cast)||
-|[dynamic_pointer_cast](#dynamic_pointer_cast)||
-|[get_deleter](#get_deleter)||
-|[make_shared](#make_shared)||
-|[operator&lt;&lt;](#op_lt_lt)||
-|[reinterpret_pointer_cast](#reinterpret_pointer_cast)||
-|[static_pointer_cast](#static_pointer_cast)||
-
-## <a name="allocate_shared"></a> allocate_shared
-
-```cpp
-template<class T, class A, class... Args>
-shared_ptr<T> allocate_shared(const A& a, Args&&... args);
-```
-
-## <a name="const_pointer_cast"></a> const_pointer_cast
-
-```cpp
-template<class T, class U>
-shared_ptr<T> const_pointer_cast(const shared_ptr<U>& r) noexcept;
-```
-
-## <a name="dynamic_pointer_cast"></a> dynamic_pointer_cast
-
-```cpp
-template<class T, class U>
-shared_ptr<T> dynamic_pointer_cast(const shared_ptr<U>& r) noexcept;
-```
-
 ## <a name="element_type"></a> element_type
 
 The type of an element.
 
 ```cpp
-typedef T element_type;
+typedef T element_type;                  // before C++17
+using element_type = remove_extent_t<T>; // C++17
 ```
 
 ### Remarks
 
-The type is a synonym for the template parameter `T`.
+The `element_type` type is a synonym for the template parameter `T`.
 
 ### Example
 
@@ -189,7 +156,7 @@ int main()
 Gets address of owned resource.
 
 ```cpp
-T* get() const;
+element_type* get() const noexcept;
 ```
 
 ### Remarks
@@ -220,13 +187,6 @@ int main()
 ```Output
 sp0.get() == 0 == true
 *sp1.get() == 5
-```
-
-## <a name="get_deleter"></a> get_deleter
-
-```cpp
-template<class D, class T>
-D* get_deleter(const shared_ptr<T>& p) noexcept;
 ```
 
 ## <a name="op_bool"></a> operator bool
@@ -273,7 +233,7 @@ int main()
 Gets the designated value.
 
 ```cpp
-T& operator*() const;
+T& operator*() const noexcept;
 ```
 
 ### Remarks
@@ -319,7 +279,7 @@ template <class Other>
 shared_ptr& operator=(shared_ptr<Other>&& sp) noexcept;
 
 template <class Other>
-shared_ptr& operator=(auto_ptr<Other>&& ap);
+shared_ptr& operator=(auto_ptr<Other>&& ap);    // deprecated in C++11, removed in C++17
 
 template <class Other, class Deleter>
 shared_ptr& operator=(unique_ptr<Other, Deleter>&& up);
@@ -380,7 +340,7 @@ int main()
 Gets a pointer to the designated value.
 
 ```cpp
-T* operator->() const;
+T* operator->() const noexcept;
 ```
 
 ### Remarks
@@ -412,39 +372,16 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
-
-Inserts the pointer value into the output stream.
-
-```cpp
-template<class CharType, class Traits, class Type>
-basic_ostream<CharType, Traits>& operator<< (
-    basic_ostream<CharType, Traits>& os,
-    const shared_ptr<Type>& p);
-```
-
-### Parameters
-
-*os*\
-An output stream.
-
-*p*\
-The shared pointer to insert into the output stream *os*.
-
-### Remarks
-
-Same as `os << p.get()`.
-
 ## <a name="owner_before"></a> owner_before
 
 Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.
 
 ```cpp
 template <class Other>
-bool owner_before(const shared_ptr<Other>& ptr);
+bool owner_before(const shared_ptr<Other>& ptr) const noexcept;
 
 template <class Other>
-bool owner_before(const weak_ptr<Other>& ptr);
+bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 ```
 
 ### Parameters
@@ -456,40 +393,15 @@ An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
 The template member function returns true if `*this` is ordered before `ptr`.
 
-## <a name="reinterpret_pointer_cast"></a> reinterpret_pointer_cast
-
-Creates a new `shared_ptr` from an existing shared pointer by using a cast.
-
-```cpp
-template<class T, class U>
-shared_ptr<T> reinterpret_pointer_cast(
-    const shared_ptr<U>& p) noexcept;
-
-template<class T, class U>
-shared_ptr<T> reinterpret_pointer_cast(
-    shared_ptr<U>&& p) noexcept;
-```
-
-### Parameters
-
-*p*\
-An reference to a `shared_ptr<U>`.
-
-### Remarks
-
-If *p* is empty, the new `shared_ptr` is also empty, otherwise it shares ownership with *p*. The new shared pointer is the result of evaluating `reinterpret_cast<Y*>(p.get())`, where `Y` is `typename std::shared_ptr<T>::element_type`. The behavior is undefined if `reinterpret_cast<T*>((U*)nullptr)` is not well-formed.
-
-The template function that takes an lvalue reference is new in C++17. The template function that takes an rvalue reference is new in C++20.
-
 ## <a name="reset"></a> reset
 
 Replace owned resource.
 
 ```cpp
-void reset();
+void reset() noexcept;
 
 template <class Other>
-void reset(Other *ptr;);
+void reset(Other *ptr);
 
 template <class Other, class D>
 void reset(
@@ -578,13 +490,13 @@ int main()
 Constructs a `shared_ptr`.
 
 ```cpp
-shared_ptr();
+constexpr shared_ptr() noexcept;
 
-shared_ptr(nullptr_t);
+constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() {}
 
-shared_ptr(const shared_ptr& sp);
+shared_ptr(const shared_ptr& sp) noexcept;
 
-shared_ptr(shared_ptr&& sp);
+shared_ptr(shared_ptr&& sp) noexcept;
 
 template <class Other>
 explicit shared_ptr(Other* ptr);
@@ -613,10 +525,10 @@ shared_ptr(
 
 template <class Other>
 shared_ptr(
-    const shared_ptr<Other>& sp);
+    const shared_ptr<Other>& sp) noexcept;
 
 template <class Other>
-shared_ptr(
+explicit shared_ptr(
     const weak_ptr<Other>& wp);
 
 template <class &>
@@ -635,12 +547,16 @@ shared_ptr(
 template <class Other>
 shared_ptr(
     const shared_ptr<Other>& sp,
-    T* ptr);
+    element_type* ptr) noexcept;
+
+template <class Other>
+shared_ptr(
+    shared_ptr<Other>&& sp,
+    element_type* ptr) noexcept;
 
 template <class Other, class D>
 shared_ptr(
-    const unique_ptr<Other,
-    D>& up) = delete;
+    const unique_ptr<Other, D>& up) = delete;
 ```
 
 ### Parameters
@@ -674,7 +590,7 @@ The auto pointer to copy.
 
 ### Remarks
 
-The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [bad_weak_ptr](../standard-library/bad-weak-ptr-class.md) if `wp.expired()`.
+The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [bad_weak_ptr](bad-weak-ptr-class.md) if `wp.expired()`.
 
 ### Example
 
@@ -775,83 +691,12 @@ use count == 2
 use count == 1
 ```
 
-## <a name="static_pointer_cast"></a> static_pointer_cast
-
-```cpp
-template<class T, class U>
-shared_ptr<T> static_pointer_cast(
-    const shared_ptr<U>& r) noexcept;
-```
-
-## <a name="swap"></a> swap
-
-Swaps two `shared_ptr` objects.
-
-```cpp
-void swap(
-    shared_ptr& sp);
-```
-
-### Parameters
-
-*sp*\
-The shared pointer to swap with.
-
-### Remarks
-
-The member function leaves the resource originally owned by `*this` subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
-
-### Example
-
-```cpp
-// std__memory__shared_ptr_swap.cpp
-// compile with: /EHsc
-#include <memory>
-#include <iostream>
-
-int main()
-{
-    std::shared_ptr<int> sp1(new int(5));
-    std::shared_ptr<int> sp2(new int(10));
-    std::cout << "*sp1 == " << *sp1 << std::endl;
-
-    sp1.swap(sp2);
-    std::cout << "*sp1 == " << *sp1 << std::endl;
-
-    swap(sp1, sp2);
-    std::cout << "*sp1 == " << *sp1 << std::endl;
-    std::cout << std::endl;
-
-    std::weak_ptr<int> wp1(sp1);
-    std::weak_ptr<int> wp2(sp2);
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
-
-    wp1.swap(wp2);
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
-
-    swap(wp1, wp2);
-    std::cout << "*wp1 == " << *wp1.lock() << std::endl;
-
-    return (0);
-}
-```
-
-```Output
-*sp1 == 5
-*sp1 == 10
-*sp1 == 5
-
-*wp1 == 5
-*wp1 == 10
-*wp1 == 5
-```
-
 ## <a name="unique"></a> unique
 
-Tests if owned resource is unique.
+Tests if owned resource is unique. This function was deprecated in C++17, and removed in C++20.
 
 ```cpp
-bool unique() const;
+bool unique() const noexcept;
 ```
 
 ### Remarks
@@ -890,7 +735,7 @@ sp1.unique() == false
 Counts numbers of resource owners.
 
 ```cpp
-long use_count() const;
+long use_count() const noexcept;
 ```
 
 ### Remarks
@@ -923,3 +768,22 @@ int main()
 sp1.use_count() == 1
 sp1.use_count() == 2
 ```
+
+## <a name="weak_type"></a> weak_type
+
+The type of a weak pointer to an element.
+
+```cpp
+using weak_type = weak_ptr<T>; // C++17
+```
+
+### Remarks
+
+The `weak_type` definition was added in C++17.
+
+## See also
+
+[Header Files Reference](cpp-standard-library-header-files.md)\
+[\<memory>](memory.md)\
+[unique_ptr](unique-ptr-class.md)\
+[weak_ptr class](weak-ptr-class.md)
