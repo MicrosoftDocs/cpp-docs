@@ -269,7 +269,6 @@ Replaces the owned resource.
 ```cpp
 shared_ptr& operator=(const shared_ptr& sp) noexcept;
 
-template <class Other>
 shared_ptr& operator=(shared_ptr&& sp) noexcept;
 
 template <class Other>
