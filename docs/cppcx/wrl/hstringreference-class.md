@@ -1,8 +1,8 @@
 ---
 title: "HStringReference Class"
-ms.date: "09/25/2018"
+ms.date: "07/15/2019"
 ms.topic: "reference"
-f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::Get", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator<"]
+f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::CopyTo", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::Get", "corewrappers/Microsoft::WRL::Wrappers::GetRawBuffer", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::HStringReference", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator==", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=", "corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator<"]
 helpviewer_keywords: ["Microsoft::WRL::Wrappers::HStringReference class", "Microsoft::WRL::Wrappers::HStringReference::CopyTo method", "Microsoft::WRL::Wrappers::HStringReference::Get method", "Microsoft::WRL::Wrappers::HStringReference::HStringReference, constructor", "Microsoft::WRL::Wrappers::HStringReference::operator= operator", "Microsoft::WRL::Wrappers::HStringReference::operator== operator", "Microsoft::WRL::Wrappers::HStringReference::operator!= operator", "Microsoft::WRL::Wrappers::HStringReference::operator< operator"]
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
 ---
@@ -34,6 +34,7 @@ Member                              | Description
 ----------------------------------- | ------------------------------------------------------------------
 [HStringReference::CopyTo](#copyto) | Copies the current `HStringReference` object to an HSTRING object.
 [HStringReference::Get](#get)       | Retrieves the value of the underlying HSTRING handle.
+[HStringReference::GetRawBuffer](#getrawbuffer) | Retrieves a pointer to the underlying string data.
 
 ### Public Operators
 
@@ -84,6 +85,22 @@ HSTRING Get() const throw()
 ### Return Value
 
 The value of the underlying HSTRING handle.
+
+## <a name="getrawbuffer"></a>HStringReference::GetRawBuffer
+
+Retrieves a pointer to the underlying string data.
+
+```cpp
+const wchar_t* GetRawBuffer(unsigned int* length) const;
+```
+### Parameters
+
+*length*
+Pointer to an **int** variable that receives the length of the data.
+
+### Return Value
+
+A **const** pointer to the underlying string data.
 
 ## <a name="hstringreference"></a>HStringReference::HStringReference
 

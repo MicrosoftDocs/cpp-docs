@@ -1,1 +1,1 @@
-   int iFltr = m_myHeaderCtrl.SetFilterChangeTimeout(15);
+int iFltr = m_myHeaderCtrl.SetFilterChangeTimeout(15);

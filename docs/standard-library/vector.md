@@ -11,6 +11,9 @@ Defines the container template class vector and several supporting templates.
 
 The `vector` is a container that organizes elements of a given type in a linear sequence. It enables fast random access to any element, and dynamic additions and removals to and from the sequence. The `vector` is the preferred container for a sequence when random-access performance is at a premium.
 
+> [!NOTE]
+> The \<vector> library also uses the `#include <initializer_list>` statement.
+
 For more information about the class `vector`, see [vector Class](../standard-library/vector-class.md). For information about the specialization `vector<bool>`, see [vector\<bool> Class](../standard-library/vector-bool-class.md).
 
 ## Syntax
@@ -66,21 +69,23 @@ void swap (
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The template parameter for the type of data stored in the vector.
 
-*Allocator*<br/>
+*Allocator*\
 The template parameter for the stored allocator object responsible for memory allocation and deallocation.
 
-*left*<br/>
+*left*\
 The first (left) vector in a compare operation
 
-*right*<br/>
+*right*\
 The second (right) vector in a compare operation.
+
+## Members
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator! =](../standard-library/vector-operators.md#op_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|
 |[operator<](../standard-library/vector-operators.md#op_lt)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|
@@ -91,7 +96,7 @@ The second (right) vector in a compare operation.
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[vector Class](../standard-library/vector-class.md)|A template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 
@@ -99,6 +104,7 @@ The second (right) vector in a compare operation.
 
 |||
 |-|-|
+|[hash]()||
 |[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the template class vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|
 
 ## Requirements
@@ -109,6 +115,6 @@ The second (right) vector in a compare operation.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

@@ -93,6 +93,8 @@
           href: build/cmake-projects-in-visual-studio.md
         - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
           href: build/get-started-linux-cmake.md
+        - name: Clang/LLVM in CMake projects
+          href: build/clang-support-cmake.md
         - name: Configure a Linux CMake project
           href: build/../linux/cmake-linux-project.md
         - name: Customize CMake build settings
@@ -403,7 +405,7 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Example project file
                   href: build/reference/project-files.md
-            - name: C++ project properties reference
+            - name: C++ project property pages
               expanded: false
               items: 
                 - name: C++ project properties reference
@@ -412,42 +414,28 @@
                   href: build/reference/general-property-page-project.md
                 - name: General property page
                   href: build/reference/general-property-page-file.md
+                - name: Advanced property page
+                  href: build/reference/advanced-property-page.md
+                - name: Debugging property pages
+                  href: build/reference/debugging-prop-pages.md
                 - name: VC++ Directories property page
                   href: build/reference/vcpp-directories-property-page.md
+                - name: C/C++ property pages
+                  href: build/reference/c-cpp-prop-page.md
+                - name: Linker property pages
+                  href: build/reference/linker-property-pages.md
                 - name: Command line property pages
                   href: build/reference/command-line-property-pages.md
                 - name: NMake property page
-                  href: build/reference/nmake-property-page.md
-                - name: Linker property pages
-                  href: build/reference/linker-property-pages.md
+                  href: build/reference/nmake-property-page.md                
                 - name: Manifest Tool property pages
-                  expanded: false
-                  items: 
-                    - name: Manifest Tool property pages
-                      href: build/reference/manifest-tool-property-pages.md
-                    - name: General, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/general-manifest-tool-configuration-properties.md
-                    - name: Input and Output, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/input-and-output-manifest-tool.md
-                    - name: Isolated COM, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/isolated-com-manifest-tool.md
-                    - name: Advanced, Manifest Tool, Configuration Properties, <Projectname> property pages dialog box
-                      href: build/reference/advanced-manifest-tool.md
+                  href: build/reference/manifest-tool-property-pages.md
                 - name: Resources property pages
                   href: build/reference/resources-property-pages.md
                 - name: Managed Resources property page
                   href: build/reference/managed-resources-property-page.md
                 - name: MIDL property pages
-                  expanded: false
-                  items: 
-                    - name: MIDL property pages
-                      href: build/reference/midl-property-pages.md
-                    - name: "MIDL property pages: General"
-                      href: build/reference/midl-property-pages-general.md
-                    - name: "MIDL property pages: Output"
-                      href: build/reference/midl-property-pages-output.md
-                    - name: "MIDL property pages: Advanced"
-                      href: build/reference/midl-property-pages-advanced.md
+                  href: build/reference/midl-property-pages.md
                 - name: Web References property page
                   href: build/reference/web-references-property-page.md
                 - name: XML Data Generator Tool property page
@@ -457,16 +445,7 @@
                 - name: "Custom build step property page: General"
                   href: build/reference/custom-build-step-property-page-general.md
                 - name: HLSL property pages
-                  expanded: false
-                  items: 
-                    - name: HLSL property pages
-                      href: build/reference/hlsl-property-pages.md
-                    - name: "HLSL property pages: General"
-                      href: build/reference/hlsl-property-pages-general.md
-                    - name: "HLSL property pages: Advanced"
-                      href: build/reference/hlsl-property-pages-advanced.md
-                    - name: "HLSL property pages: Output files"
-                      href: build/reference/hlsl-property-pages-output-files.md
+                  href: build/reference/hlsl-property-pages.md
         - name: MSVC compiler reference
           expanded: false
           items: 
@@ -1608,10 +1587,10 @@
 - name: Windows desktop development
   expanded: false
   items:
-    - name: Desktop Applications in C++
-      href: windows/desktop-applications-visual-cpp.md
     - name: Overview of Windows programming in C++
       href: windows/overview-of-windows-programming-in-cpp.md
+    - name: Desktop Applications in C++
+      href: windows/desktop-applications-visual-cpp.md
     - name: "Walkthrough: Create a Standard C++ program"
       href: windows/walkthrough-creating-a-standard-cpp-program-cpp.md
     - name: "Walkthrough: Create Windows Desktop applications"
@@ -4354,6 +4333,13 @@
                   href: cpp/assertion-and-user-supplied-messages-cpp.md
                 - name: static_assert
                   href: cpp/static-assert.md
+            - name: Modules
+              expanded: false
+              items:
+                - name: Overview of modules in C++
+                  href: cpp/modules-cpp.md
+                - name: module, import, export
+                  href: cpp/import-export-module.md
             - name: Templates
               expanded: false
               items: 
@@ -8534,6 +8520,8 @@
                   href: standard-library/csetjmp.md
                 - name: <csignal>
                   href: standard-library/csignal.md
+                - name: <cstdalign>
+                  href: standard-library/cstdalign.md
                 - name: <cstdarg>
                   href: standard-library/cstdarg.md
                 - name: <cstdbool>
@@ -8552,6 +8540,8 @@
                   href: standard-library/ctgmath.md
                 - name: <ctime>
                   href: standard-library/ctime.md
+                - name: <cuchar>
+                  href: standard-library/cuchar.md
                 - name: <cvt-wbuffer>
                   href: standard-library/cvt-wbuffer.md
                 - name: <cvt-wstring>

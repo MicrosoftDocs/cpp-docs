@@ -46,7 +46,7 @@ BOOL CMyTTPropertySheet::OnInitDialog()
 // tooltip control for processing.
 BOOL CMyTTPropertySheet::PreTranslateMessage(MSG* pMsg)
 {
-   if (NULL != m_pToolTipCtrl)            
+   if (NULL != m_pToolTipCtrl)
       m_pToolTipCtrl->RelayEvent(pMsg);
 
    return CPropertySheet::PreTranslateMessage(pMsg);

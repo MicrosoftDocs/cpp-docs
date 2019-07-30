@@ -1,2 +1,2 @@
-	CMFCAcceleratorKeyAssignCtrl* accelCtrl = new CMFCAcceleratorKeyAssignCtrl();
-	accelCtrl->ResetKey();
+CMFCAcceleratorKeyAssignCtrl *accelCtrl = new CMFCAcceleratorKeyAssignCtrl();
+accelCtrl->ResetKey();

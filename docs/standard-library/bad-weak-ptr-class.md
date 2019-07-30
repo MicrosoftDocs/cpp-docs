@@ -14,7 +14,6 @@ Reports bad weak_ptr exception.
 ```cpp
 class bad_weak_ptr : public std::exception
 {
-public:
     bad_weak_ptr();
     const char *what() throw();
 };
@@ -62,12 +61,6 @@ int main()
 bad weak pointer
 ```
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
 ## See also
 
-[weak_ptr Class](../standard-library/weak-ptr-class.md)<br/>
+[weak_ptr Class](../standard-library/weak-ptr-class.md)

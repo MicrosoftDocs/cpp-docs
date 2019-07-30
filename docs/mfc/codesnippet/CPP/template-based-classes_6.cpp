@@ -1,2 +1,2 @@
-         CTypedPtrMap<CMapPtrToPtr, CString, MY_STRUCT*> myPtrMap;
-         CTypedPtrMap<CMapStringToOb, CString, CPerson*> myPersonMap;
+CTypedPtrMap<CMapPtrToPtr, CString, MY_STRUCT*> myPtrMap;
+CTypedPtrMap<CMapStringToOb, CString, CPerson*> myPersonMap;

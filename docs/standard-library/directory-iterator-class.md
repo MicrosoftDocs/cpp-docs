@@ -71,13 +71,13 @@ directory_iterator(directory_iterator&&) noexcept = default;
 
 ### Parameters
 
-*pval*<br/>
+*pval*\
 The stored file name path.
 
-*ec*<br/>
+*ec*\
 The status error code.
 
-*directory_iterator*<br/>
+*directory_iterator*\
 The stored object.
 
 ## <a name="increment"></a> directory_iterator::increment
@@ -98,7 +98,7 @@ bool operator!=(const directory_iterator& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [directory_iterator](../standard-library/directory-iterator-class.md) being compared to the `directory_iterator`.
 
 ## <a name="op_as"></a> directory_iterator::operator=
@@ -112,7 +112,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [directory_iterator](../standard-library/directory-iterator-class.md) being copied into the `directory_iterator`.
 
 ## <a name="op_eq"></a> directory_iterator::operator==
@@ -125,7 +125,7 @@ bool operator==(const directory_iterator& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [directory_iterator](../standard-library/directory-iterator-class.md) being compared to the `directory_iterator`.
 
 ## <a name="op_star"></a> directory_iterator::operator*
@@ -155,11 +155,11 @@ directory_iterator& operator++(int);
 
 ### Parameters
 
-*int*<br/>
+*int*\
 The number of increments.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
-[File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<filesystem>](../standard-library/filesystem.md)\
+[File System Navigation (C++)](../standard-library/file-system-navigation.md)

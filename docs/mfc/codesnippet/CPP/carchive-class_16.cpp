@@ -1,2 +1,2 @@
-            char pbRead[100];
-            ar.Read(pbRead, 100);
+char pbRead[100];
+ar.Read(pbRead, 100);

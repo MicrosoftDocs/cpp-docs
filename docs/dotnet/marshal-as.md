@@ -1,6 +1,6 @@
 ---
 title: "marshal_as"
-ms.date: "11/04/2016"
+ms.date: "07/12/2019"
 ms.topic: "reference"
 f1_keywords: ["marshal_as", "msclr.interop.marshal_as", "msclr::interop::marshal_as"]
 helpviewer_keywords: ["marshal_as template [C++]"]
@@ -34,6 +34,8 @@ This method is a simplified way to convert data between native and managed types
 If you try to marshal a pair of data types that are not supported, `marshal_as` will generate an error [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) at compile time. Read the message supplied with this error for more information. The `C4996` error can be generated for more than just deprecated functions. One example of this is trying to marshal a pair of data types that are not supported.
 
 The marshaling library consists of several header files. Any conversion requires only one file, but you can include additional files if you need to for other conversions. To see which conversions are associated with which files, look in the table in `Marshaling Overview`. Regardless of what conversion you want to do, the namespace requirement is always in effect.
+
+Throws `System::ArgumentNullException(_EXCEPTION_NULLPTR)` if the input parameter is null.
 
 ## Example
 

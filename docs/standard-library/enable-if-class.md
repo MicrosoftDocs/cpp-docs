@@ -18,10 +18,10 @@ struct enable_if;
 
 ### Parameters
 
-*B*<br/>
+*B*\
 The value that determines the existence of the resulting type.
 
-*T*<br/>
+*T*\
 The type to instantiate if *B* is true.
 
 ## Remarks
@@ -130,4 +130,4 @@ C++11 solved this ambiguity by using `enable_if` to make sure `pair<A, B>(const 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

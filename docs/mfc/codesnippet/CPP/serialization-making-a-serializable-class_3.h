@@ -1,4 +1,4 @@
 class CPerson : public CObject
 {
 public:
-    DECLARE_SERIAL( CPerson )
+   DECLARE_SERIAL(CPerson)

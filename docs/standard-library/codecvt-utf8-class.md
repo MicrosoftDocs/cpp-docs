@@ -16,13 +16,13 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 ## Parameters
 
-*Elem*<br/>
+*Elem*\
 The wide-character element type.
 
-*Maxcode*<br/>
+*Maxcode*\
 The maximum number of characters for the locale facet.
 
-*Mode*<br/>
+*Mode*\
 Configuration information for the locale facet.
 
 ## Remarks
@@ -31,6 +31,6 @@ The byte stream can be written to either a binary file or a text file.
 
 ## Requirements
 
-Header: \<codecvt>\
+Header: \<codecvt>
 
 Namespace: std

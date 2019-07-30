@@ -7,14 +7,7 @@ helpviewer_keywords: ["std::current_exception [C++]", "std::get_terminate [C++]"
 ---
 # &lt;exception&gt; functions
 
-||||
-|-|-|-|
-|[current_exception](#current_exception)|[get_terminate](#get_terminate)|[get_unexpected](#get_unexpected)|
-|[make_exception_ptr](#make_exception_ptr)|[rethrow_exception](#rethrow_exception)|[set_terminate](#set_terminate)|
-|[set_unexpected](#set_unexpected)|[terminate](#terminate)|[uncaught_exception](#uncaught_exception)|
-|[unexpected](#unexpected)|
-
-## <a name="current_exception"></a>  current_exception
+## <a name="current_exception"></a> current_exception
 
 Obtains a smart pointer to the current exception.
 
@@ -36,18 +29,18 @@ The destructor for the current exception is called at the end of the **catch** b
 
 Successive calls to the `current_exception` function return `exception_ptr` objects that refer to different copies of the current exception. Consequently, the objects compare as unequal because they refer to different copies, even though the copies have the same binary value.
 
-## <a name="make_exception_ptr"></a>  make_exception_ptr
+## <a name="make_exception_ptr"></a> make_exception_ptr
 
 Creates an [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) object that holds a copy of an exception.
 
 ```cpp
 template <class E>
-exception_ptr make_exception_ptr(E Except);
+    exception_ptr make_exception_ptr(E Except);
 ```
 
 ### Parameters
 
-*Except*<br/>
+*Except*\
 The class with the exception to copy. Usually, you specify an [exception class](../standard-library/exception-class.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.
 
 ### Return Value
@@ -60,7 +53,7 @@ Calling the `make_exception_ptr` function is equivalent to throwing a C++ except
 
 An application typically does not require the `make_exception_ptr` function, and we discourage its use.
 
-## <a name="rethrow_exception"></a>  rethrow_exception
+## <a name="rethrow_exception"></a> rethrow_exception
 
 Throws an exception passed as a parameter.
 
@@ -70,14 +63,14 @@ void rethrow_exception(exception_ptr P);
 
 ### Parameters
 
-*P*<br/>
+*P*\
 The caught exception to re-throw. If *P* is a null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), the function throws [std::bad_exception](../standard-library/bad-exception-class.md).
 
 ### Remarks
 
 After you store a caught exception in an `exception_ptr` object, the primary thread can process the object. In your primary thread, call the `rethrow_exception` function together with the `exception_ptr` object as its argument. The `rethrow_exception` function extracts the exception from the `exception_ptr` object and then throws the exception in the context of the primary thread.
 
-## <a name="get_terminate"></a>  get_terminate
+## <a name="get_terminate"></a> get_terminate
 
 Obtains the current `terminate_handler` function.
 
@@ -85,7 +78,7 @@ Obtains the current `terminate_handler` function.
 terminate_handler get_terminate();
 ```
 
-## <a name="set_terminate"></a>  set_terminate
+## <a name="set_terminate"></a> set_terminate
 
 Establishes a new `terminate_handler` to be called at the termination of the program.
 
@@ -95,7 +88,7 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 ### Parameters
 
-*fnew*<br/>
+*fnew*\
 The function to be called at termination.
 
 ### Return Value
@@ -134,7 +127,7 @@ int main()
 }
 ```
 
-## <a name="get_unexpected"></a>  get_unexpected
+## <a name="get_unexpected"></a> get_unexpected
 
 Obtains the current `unexpected_handler` function.
 
@@ -142,7 +135,18 @@ Obtains the current `unexpected_handler` function.
 unexpected_handler get_unexpected();
 ```
 
-## <a name="set_unexpected"></a>  set_unexpected
+## <a name="rethrow_if_nested"></a> rethrow_if_nested
+
+```cpp
+template <class E> 
+    void rethrow_if_nested(const E& e);
+```
+
+### Remarks
+
+If not a polymorphic class type, or if `nested_exception` is inaccessible or ambiguous, there is no effect. Otherwise, performs a dynamic cast.
+
+## <a name="set_unexpected"></a> set_unexpected
 
 Establishes a new `unexpected_handler` to be when an unexpected exception is encountered.
 
@@ -152,7 +156,7 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 ### Parameters
 
-*fnew*<br/>
+*fnew*\
 The function to be called when an unexpected exception is encountered.
 
 ### Return Value
@@ -190,7 +194,7 @@ int main()
 }
 ```
 
-## <a name="terminate"></a>  terminate
+## <a name="terminate"></a> terminate
 
 Calls a terminate handler.
 
@@ -208,7 +212,18 @@ A terminate handler may not return to its caller. At program startup, the termin
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `terminate`.
 
-## <a name="uncaught_exception"></a>  uncaught_exception
+## <a name="throw_with_nested"></a> throw_with_nested
+
+```cpp
+template <class T> [[noreturn]]
+    void throw_with_nested(T&& t);
+```
+
+### Remarks
+
+Throws exception with nested exceptions.
+
+## <a name="uncaught_exception"></a> uncaught_exception
 
 Returns **true** only if a thrown exception is being currently processed.
 
@@ -273,7 +288,7 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0
 ```
 
-## <a name="unexpected"></a>  unexpected
+## <a name="unexpected"></a> unexpected
 
 Calls the unexpected handler.
 
@@ -300,7 +315,3 @@ At program startup, the unexpected handler is a function that calls [terminate](
 ### Example
 
 See [set_unexpected](../standard-library/exception-functions.md#set_unexpected) for an example of the use of `unexpected`.
-
-## See also
-
-[\<exception>](../standard-library/exception.md)<br/>

@@ -86,7 +86,7 @@ Win32
 
 ## See also
 
-[Dialog Editor](../windows/dialog-editor.md)<br/>
+[Dialog Editor](../windows/dialog-editor.md)
 
 <!--
 [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>

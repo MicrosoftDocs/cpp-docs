@@ -31,8 +31,8 @@ To make the program work logically, the `cout` object must empty itself when the
 cout <<"Please wait..." <<flush;
 ```
 
-This step flushes the buffer, ensuring the message prints before the wait. You can also use the `endl` manipulator, which flushes the buffer and outputs a carriage return-linefeed, or you can use the `cin` object. This object (with the `cerr` or `clog` objects) is usually tied to the `cout` object. Thus, any use of `cin` (or of the `cerr` or `clog` objects) flushes the `cout` object.
+This step flushes the buffer, ensuring the message prints before the wait. You can also use the `endl` manipulator, which flushes the buffer and outputs a carriage return-line feed, or you can use the `cin` object. This object (with the `cerr` or `clog` objects) is usually tied to the `cout` object. Thus, any use of `cin` (or of the `cerr` or `clog` objects) flushes the `cout` object.
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+[Output Streams](../standard-library/output-streams.md)

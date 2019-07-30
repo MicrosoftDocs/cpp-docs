@@ -1,1 +1,1 @@
-        archive << m_strName << m_wAge;
+archive << m_strName << m_wAge;

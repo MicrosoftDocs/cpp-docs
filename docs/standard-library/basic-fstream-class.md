@@ -18,10 +18,10 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 The basic element of the file buffer.
 
-*Tr*<br/>
+*Tr*\
 The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
@@ -109,13 +109,13 @@ basic_fstream(basic_fstream&& right);
 
 ### Parameters
 
-*_Filename*<br/>
+*_Filename*\
 The name of the file to open.
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*<br/>
+*_Prot*\
 The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
@@ -192,13 +192,13 @@ void open(
 
 ### Parameters
 
-*_Filename*<br/>
+*_Filename*\
 The name of the file to open.
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*<br/>
+*_Prot*\
 The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
@@ -219,7 +219,7 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An lvalue reference to a `basic_fstream` object.
 
 ### Return Value
@@ -256,7 +256,7 @@ void swap(basic_fstream& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `lvalue` reference to a `basic_fstream` object.
 
 ### Remarks
@@ -265,6 +265,6 @@ The member function exchanges the contents of this object and the contents of *r
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

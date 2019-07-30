@@ -3,7 +3,7 @@ BSTR CMFCActiveXControlCtrl::GetEditControlText(void)
    AFX_MANAGE_STATE(AfxGetStaticModuleState());
 
    CString strResult;
-   strResult = EditControlText.GetPath();	
+   strResult = EditControlText.GetPath();
    return strResult.AllocSysString();
 }
 

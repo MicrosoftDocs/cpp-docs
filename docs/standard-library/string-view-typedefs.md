@@ -79,4 +79,4 @@ For a list of string constructors, see [basic_string::basic_string](../standard-
 
 ## See also
 
-[\<string_view>](../standard-library/string-view.md)<br/>
+[\<string_view>](../standard-library/string-view.md)

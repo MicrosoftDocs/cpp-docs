@@ -1,13 +1,13 @@
 ---
 title: "Set C++ compiler and build properties in Visual Studio"
 description: "Use the Visual Studio IDE to change C++ compiler and linker options and other build settings."
-ms.date: "03/27/2019"
+ms.date: "07/17/2019"
 helpviewer_keywords: ["project properties [C++], modifying", "properties [C++]", "Visual C++ projects, properties", "projects [C++], properties"]
 ms.assetid: 9b0d6f8b-7d4e-4e61-aa75-7d14944816cd
 ---
 # Set compiler and build properties
 
-In the IDE, all information that is needed to build a project is exposed as *properties*. This information includes the application name, extension (such as DLL, LIB, EXE), compiler options, linker options, debugger settings, custom build steps, and many other things. Typically, you use *property pages* ( **Project &#124; Properties**) to view and modify these properties. To access the property pages, choose **Project > \<project name> Properties** from the main menu, or right-click on the project node in **Solution Explorer** and choose **Properties**.
+In the IDE, all information that is needed to build a project is exposed as *properties*. This information includes the application name, extension (such as DLL, LIB, EXE), compiler options, linker options, debugger settings, custom build steps, and many other things. Typically, you use *property pages* to view and modify these properties. To access the property pages, choose **Project** > **_projectname_ Properties** from the main menu, or right-click on the project node in **Solution Explorer** and choose **Properties**.
 
 ## Default properties
 
@@ -32,7 +32,6 @@ The following illustration shows the same project property page, but the configu
 *Target platform* refers to the kind of device and/or operating system that the executable will run on. You can build a project for more than one platform. The available target platforms for C++ projects depend on the kind of project; they include but are not limited to Win32, x64, ARM, Android, and iOS.     The **x86** target platform that you might see in **Configuration Manager** is identical to **Win32** in native C++ projects. Win32 means 32-bit Windows and **x64** means 64-bit Windows. For more information about these two platforms, see [Running 32-bit applications](/windows/desktop/WinProg64/running-32-bit-applications).
 
 The **Any CPU** target platform value that you might see in **Configuration Manager** has no effect on native C++ projects; it is relevant for C++/CLI and other .NET project types. For more information, see [/CLRIMAGETYPE (Specify Type of CLR Image)](reference/clrimagetype-specify-type-of-clr-image.md).
-
 
 For more information about setting properties for a Debug build, see:
 
@@ -73,7 +72,7 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 #### To create a user-defined macro
 
-1. In the **Property Manager** window (on the menu bar, choose **View**, **Property Manager**), open the shortcut menu for a property sheet (its name ends in .user) and then choose Properties. The **Property Pages** dialog box for that property sheet opens.
+1. Open the **Property Manager** window. (On the menu bar, choose **View** > **Property Manager** or **View** > **Other Windows** > **Property Manager**.) Open the shortcut menu for a property sheet (its name ends in .user) and then choose **Properties**. The **Property Pages** dialog box for that property sheet opens.
 
 1. In the left pane of the dialog box, select **User Macros**. In the right pane, choose the **Add Macro** button to open the **Add User Macro** dialog box.
 
@@ -119,7 +118,7 @@ In the right pane, modify the **Environment** or **Merge Environment** project s
 ## In this section
 
 [Share or reuse Visual Studio project settings](create-reusable-property-configurations.md)<br/>
-How to create a .props file with custom build settings that can be shared or resused.
+How to create a .props file with custom build settings that can be shared or reused.
 
 [Project property inheritance](project-property-inheritance.md)<br/>
 Describes the order of evaluation for the .props, .targets, .vcxproj files and environment variables in the build process.

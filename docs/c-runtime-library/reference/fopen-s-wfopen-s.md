@@ -117,11 +117,11 @@ In addition to the above values, the following characters can be included in *mo
 |*mode* modifier|Translation mode|
 |-|-|
 | **t** | Open in text (translated) mode. |
-| **b** | Open in binary (untranslated) mode; translations involving carriage-return and linefeed characters are suppressed. |
+| **b** | Open in binary (untranslated) mode; translations involving carriage-return and line feed characters are suppressed. |
 
 In text (translated) mode, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading/writing with **"a+"**, **fopen_s** checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [fseek](fseek-fseeki64.md) and **ftell** to move within a file that ends with a CTRL+Z, may cause [fseek](fseek-fseeki64.md) to behave improperly near the end of the file.
 
-Also, in text mode, carriage return-linefeed combinations are translated into single linefeeds on input, and linefeed characters are translated to carriage return-linefeed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **mbtowc** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **wctomb** function).
+Also, in text mode, carriage return-line feed combinations are translated into single line feeds on input, and line feed characters are translated to carriage return-line feed combinations on output. When a Unicode stream-I/O function operates in text mode (the default), the source or destination stream is assumed to be a sequence of multibyte characters. Therefore, the Unicode stream-input functions convert multibyte characters to wide characters (as if by a call to the **mbtowc** function). For the same reason, the Unicode stream-output functions convert wide characters to multibyte characters (as if by a call to the **wctomb** function).
 
 If **t** or **b** is not given in *mode*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **t** or **b** is prefixed to the argument, the function fails and returns **NULL**.
 

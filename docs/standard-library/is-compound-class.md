@@ -18,7 +18,7 @@ struct is_compound;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -74,5 +74,5 @@ is_compound<int> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_class Class](../standard-library/is-class-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_class Class](../standard-library/is-class-class.md)

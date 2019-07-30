@@ -2,8 +2,8 @@ void COleContainerView::OnCreateDispatch()
 {
    COleDispatchDriver disp;
    COleException* pe = new COleException;
-   
-   try 
+
+   try
    {
       // Create instance of Microsoft System Information Control 
       // by using ProgID.
@@ -11,8 +11,8 @@ void COleContainerView::OnCreateDispatch()
       {
          //Get uiMode.     
          CString strUIMode;
-         disp.InvokeHelper(23, DISPATCH_PROPERTYGET, VT_BSTR, 
-            (void*)&strUIMode, NULL);            
+         disp.InvokeHelper(23, DISPATCH_PROPERTYGET, VT_BSTR,
+            (void*)& strUIMode, NULL);
 
          CString strMsg;
          strMsg.Format(_T("WMP uiMode is %s."), strUIMode);
@@ -24,7 +24,7 @@ void COleContainerView::OnCreateDispatch()
       }
    }
    //Catch control-specific exceptions.
-    catch (COleDispatchException* pe) 
+   catch (COleDispatchException* pe)
    {
       CString cStr;
 
@@ -35,16 +35,16 @@ void COleContainerView::OnCreateDispatch()
       else
          cStr += _T("unknown error");
 
-      AfxMessageBox(cStr, MB_OK, 
-         (pe->m_strHelpFile.IsEmpty()) ?  0 : pe->m_dwHelpContext);
+      AfxMessageBox(cStr, MB_OK,
+         (pe->m_strHelpFile.IsEmpty()) ? 0 : pe->m_dwHelpContext);
 
       pe->Delete();
    }
    //Catch all MFC exceptions, including COleExceptions.
    // OS exceptions will not be caught.
-   catch (CException* pe) 
+   catch (CException* pe)
    {
-      TRACE(_T("%s(%d): OLE Execption caught: SCODE = %x"), 
+      TRACE(_T("%s(%d): OLE Execption caught: SCODE = %x"),
          __FILE__, __LINE__, COleException::Process(pe));
       pe->Delete();
    }

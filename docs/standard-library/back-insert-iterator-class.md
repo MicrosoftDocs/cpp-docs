@@ -18,7 +18,7 @@ class back_insert_iterator;
 
 ### Parameters
 
-*Container*<br/>
+*Container*\
 The type of container into the back of which elements are to be inserted by a `back_insert_iterator`.
 
 ## Remarks
@@ -62,7 +62,7 @@ explicit back_insert_iterator(Container& _Cont);
 
 ### Parameters
 
-*_Cont*<br/>
+*_Cont*\
 The container that the `back_insert_iterator` is to insert an element into.
 
 ### Return Value
@@ -303,7 +303,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The value to be inserted into the container.
 
 ### Return Value
@@ -411,6 +411,6 @@ The last element in the vector vec is: 3.
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

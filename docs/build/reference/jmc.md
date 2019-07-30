@@ -1,7 +1,7 @@
 ---
 title: "/JMC (Just My Code debugging)"
 ms.date: "08/20/2018"
-f1_keywords: ["/JMC"]
+f1_keywords: ["VC.Project.VCCLCompilerTool.SupportJustMyCode"]
 helpviewer_keywords: ["/JMC compiler option [C++]", "Just my code [C++]", "-JMC compiler option [C++]", "User code, debugging", "JMC compiler option [C++]"]
 ---
 # /JMC (Just My Code debugging)

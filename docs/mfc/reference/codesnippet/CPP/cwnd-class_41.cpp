@@ -1,7 +1,7 @@
 void CAboutDlg::OnPaint()
 {
    // This code, normally emitted by the Application Wizard for a dialog-
-   // based project for the dialog's WM_PAINT handler, runs only if the 
+   // based project for the dialog's WM_PAINT handler, runs only if the
    // window is iconic. The window erases the icon's area, then
    // paints the icon referenced by m_hIcon.
    if (IsIconic())
@@ -23,6 +23,6 @@ void CAboutDlg::OnPaint()
    }
    else
    {
-      CDialog::OnPaint();   
+      CDialog::OnPaint();
    }
 }

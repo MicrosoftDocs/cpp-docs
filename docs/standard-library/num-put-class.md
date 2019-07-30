@@ -19,10 +19,10 @@ class num_put : public locale::facet;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters in a locale.
 
-*OutputIterator*<br/>
+*OutputIterator*\
 The type of iterator to which the numeric put functions write their output.
 
 ## Remarks
@@ -123,16 +123,16 @@ virtual iter_type do_put(
 
 ### Parameters
 
-*next*<br/>
+*next*\
 An iterator addressing the first element of the inserted string.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 Specified the stream which contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
 
-*_Fill*<br/>
+*_Fill*\
 A character that is used for spacing.
 
-*val*<br/>
+*val*\
 The number or Boolean type that is to be output.
 
 ### Return Value
@@ -292,7 +292,7 @@ explicit num_put(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -365,16 +365,16 @@ iter_type put(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 An iterator addressing the first element of the inserted string.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 Specified the stream that contains locale with the numpunct facet used to punctuate the output and flags for formatting the output.
 
-*_Fill*<br/>
+*_Fill*\
 A character that is used for spacing.
 
-*val*<br/>
+*val*\
 The number or Boolean type that is to be output.
 
 ### Return Value
@@ -423,6 +423,6 @@ num_put( ) = 1.000,67
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet Class](../standard-library/locale-class.md#facet_class)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet Class](../standard-library/locale-class.md#facet_class)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,1 +1,1 @@
-   m_pTestDlg = NULL;
+m_pTestDlg = NULL;

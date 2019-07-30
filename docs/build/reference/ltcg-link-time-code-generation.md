@@ -11,11 +11,11 @@ Use **/LTCG** to perform whole-program optimization, or to create profile-guided
 
 ## Syntax
 
-> **/LTCG**[**:**{**INCREMENTAL**|**NOSTATUS**|**STATUS**|**OFF**}]<br/>
+> **/LTCG**[**:**{**INCREMENTAL**|**NOSTATUS**|**STATUS**|**OFF**}]
 
 These options are deprecated starting in Visual Studio 2015:
 
-> **/LTCG:**{**PGINSTRUMENT**|**PGOPTIMIZE**|**PGUPDATE**}<br/>
+> **/LTCG:**{**PGINSTRUMENT**|**PGOPTIMIZE**|**PGUPDATE**}
 
 ### Arguments
 

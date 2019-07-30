@@ -17,29 +17,23 @@ class condition_variable_any;
 
 ## Members
 
-### Public Constructors
+### Constructors
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[condition_variable_any](#condition_variable_any)|Constructs a `condition_variable_any` object.|
 
-### Public Methods
+### Functions
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable_any` object.|
 |[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|
 |[wait](#wait)|Blocks a thread.|
 |[wait_for](#wait_for)|Blocks a thread, and sets a time interval after which the thread unblocks.|
 |[wait_until](#wait_until)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|
 
-## Requirements
-
-**Header:** \<condition_variable>
-
-**Namespace:** std
-
-## <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Constructor
+## <a name="condition_variable_any"></a> condition_variable_any
 
 Constructs a `condition_variable_any` object.
 
@@ -51,7 +45,7 @@ condition_variable_any();
 
 If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.
 
-## <a name="notify_all"></a>  condition_variable_any::notify_all
+## <a name="notify_all"></a> notify_all
 
 Unblocks all threads that are waiting for the `condition_variable_any` object.
 
@@ -59,7 +53,7 @@ Unblocks all threads that are waiting for the `condition_variable_any` object.
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a>  condition_variable_any::notify_one
+## <a name="notify_one"></a> notify_one
 
 Unblocks one of the threads that are waiting on the `condition_variable_any` object.
 
@@ -67,7 +61,7 @@ Unblocks one of the threads that are waiting on the `condition_variable_any` obj
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a>  condition_variable_any::wait
+## <a name="wait"></a> wait
 
 Blocks a thread.
 
@@ -81,10 +75,10 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A `mutex` object of any type.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Remarks
@@ -98,7 +92,7 @@ while (!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a>  condition_variable_any::wait_for
+## <a name="wait_for"></a> wait_for
 
 Blocks a thread, and sets a time interval after which the thread unblocks.
 
@@ -112,13 +106,13 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A `mutex` object of any type.
 
-*Rel_time*<br/>
+*Rel_time*\
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Return Value
@@ -141,7 +135,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a>  condition_variable_any::wait_until
+## <a name="wait_until"></a> wait_until
 
 Blocks a thread, and sets a maximum point in time at which the thread unblocks.
 
@@ -167,13 +161,13 @@ void wait_until(
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A mutex object.
 
-*Abs_time*<br/>
+*Abs_time*\
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Return Value
@@ -197,8 +191,3 @@ return true;
 ```
 
 The third and fourth methods use a pointer to an object of type `xtime` to replace the `chrono::time_point` object. The `xtime` object specifies the maximum amount of time to wait for a signal.
-
-## See also
-
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>

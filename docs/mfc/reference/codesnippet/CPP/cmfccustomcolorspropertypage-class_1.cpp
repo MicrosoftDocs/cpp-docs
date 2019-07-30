@@ -1,2 +1,2 @@
-    CMFCCustomColorsPropertyPage* colourSheet = new CMFCCustomColorsPropertyPage();
-	colourSheet->Setup(0,0,255);
+CMFCCustomColorsPropertyPage *colourSheet = new CMFCCustomColorsPropertyPage();
+colourSheet->Setup(0, 0, 255);

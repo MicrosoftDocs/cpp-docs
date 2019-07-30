@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::generate_canonical"]
 ---
 # &lt;random&gt; functions
 
-## <a name="generate_canonical"></a>  generate_canonical
+## <a name="generate_canonical"></a> generate_canonical
 
 Returns a floating-point value from a random sequence.
 
@@ -21,19 +21,15 @@ RealType generate_canonical(Generator& Gen);
 
 ### Parameters
 
-*RealType*<br/>
+*RealType*\
 The floating point integral type. For possible types, see [\<random>](../standard-library/random.md).
 
-*Bits*<br/>
+*Bits*\
 The random number generator.
 
-*Gen*<br/>
+*Gen*\
 The random number generator.
 
 ### Remarks
 
 The template function calls `operator()` of *Gen* repeatedly and packs the returned values into a floating-point value `x` of type *RealType* until it has gathered the specified number of mantissa bits in `x`. The specified number is the smaller of *Bits* (which must be nonzero) and the full number of mantissa bits in *RealType*. The first call supplies the lowest-order bits. The function returns `x`.
-
-## See also
-
-[\<random>](../standard-library/random.md)<br/>

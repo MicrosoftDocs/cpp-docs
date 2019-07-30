@@ -49,16 +49,16 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 A character.
 
-*Istr*<br/>
+*Istr*\
 A stream.
 
-*str*<br/>
+*str*\
 A string.
 
-*val*<br/>
+*val*\
 A type.
 
 ### Return Value
@@ -163,4 +163,4 @@ int main( )
 
 ## See also
 
-[\<istream>](../standard-library/istream.md)<br/>
+[\<istream>](../standard-library/istream.md)

@@ -46,13 +46,13 @@ basic_istream<Allocator, Traits>& getline(
 
 ### Parameters
 
-*is*<br/>
+*is*\
 The input stream from which a string is to be extracted.
 
-*str*<br/>
+*str*\
 The string into which are read the characters from the input stream.
 
-*delim*<br/>
+*delim*\
 The line delimiter.
 
 ### Return Value
@@ -389,10 +389,10 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### Parameters
 
-*left*<br/>
+*left*\
 One string whose elements are to be swapped with those of another string.
 
-*right*<br/>
+*right*\
 The other string whose elements are to be swapped with the first string.
 
 ### Remarks
@@ -532,4 +532,4 @@ The function returns `wstring(Buf)`.
 
 ## See also
 
-[\<string>](../standard-library/string.md)<br/>
+[\<string>](../standard-library/string.md)

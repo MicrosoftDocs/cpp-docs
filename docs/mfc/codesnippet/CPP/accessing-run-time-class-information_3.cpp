@@ -1,4 +1,4 @@
-IMPLEMENT_DYNAMIC( CPerson, CObject )
+IMPLEMENT_DYNAMIC(CPerson, CObject)
 
 IMPLEMENT_DYNCREATE(CMyDynCreateObj, CObject)
 
@@ -18,11 +18,11 @@ void SomeFunction(void)
 {
    CObject* pMyObject = new CPerson;
 
-   if(NULL != pMyObject &&
-     pMyObject->IsKindOf( RUNTIME_CLASS( CPerson ) ) )
+   if (NULL != pMyObject &&
+      pMyObject->IsKindOf(RUNTIME_CLASS(CPerson)))
    {
       //if IsKindOf is true, then cast is all right
-      CPerson* pmyPerson = (CPerson*) pMyObject ;
+      CPerson* pmyPerson = (CPerson*)pMyObject;
       pmyPerson->AssertValid();
       // other code goes here...
    }

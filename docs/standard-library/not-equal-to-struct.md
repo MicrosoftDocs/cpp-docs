@@ -30,13 +30,13 @@ struct not_equal_to<void>
 
 ### Parameters
 
-*Type*, *T*, *U*
+*Type*, *T*, *U*\
 Any type that supports an `operator!=` that takes operands of the specified or inferred types.
 
-*Left*<br/>
+*Left*\
 The left operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*<br/>
+*Right*\
 The right operand of the inequality operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
@@ -98,20 +98,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-/* Output:
+```
+
+```Output
 The vector v1 = ( 0 1 4 5 8 9 )
 The vector v2 = ( -0 1 -4 5 -8 9 )
 The result of the element-wise not_equal_to comparsion
 between v1 & v2 is: ( 0 0 1 0 1 0 )
-*/
 ```
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -251,7 +251,7 @@ Congratulations, you've successfully built an app project and solution. Continue
 ## Next Steps
 
 **Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
-**Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
+**Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)
 
 ## See also
 

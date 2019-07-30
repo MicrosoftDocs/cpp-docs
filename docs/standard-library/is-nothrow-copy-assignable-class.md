@@ -18,7 +18,7 @@ struct is_nothrow_copy_assignable;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -33,5 +33,5 @@ An instance of the type predicate holds true for a referenceable type *T* where 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_nothrow_assignable Class](../standard-library/is-nothrow-assignable-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_nothrow_assignable Class](../standard-library/is-nothrow-assignable-class.md)

@@ -24,4 +24,4 @@ You can use iostream classes with the Microsoft Windows operating system. String
 
 ## See also
 
-[What a Stream Is](../standard-library/what-a-stream-is.md)<br/>
+[What a Stream Is](../standard-library/what-a-stream-is.md)

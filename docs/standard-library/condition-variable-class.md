@@ -17,16 +17,16 @@ class condition_variable;
 
 ## Members
 
-### Public Constructors
+### Constructors
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[condition_variable](#condition_variable)|Constructs a `condition_variable` object.|
 
-### Public Methods
+### Functions
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[native_handle](#native_handle)|Returns the implementation-specific type representing the condition_variable handle.|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable` object.|
 |[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable` object.|
@@ -34,13 +34,7 @@ class condition_variable;
 |[wait_for](#wait_for)|Blocks a thread, and sets a time interval after which the thread unblocks.|
 |[wait_until](#wait_until)|Blocks a thread, and sets a maximum point in time at which the thread unblocks.|
 
-## Requirements
-
-**Header:** \<condition_variable>
-
-**Namespace:** std
-
-## <a name="condition_variable"></a>  condition_variable::condition_variable Constructor
+## <a name="condition_variable"></a> condition_variable
 
 Constructs a `condition_variable` object.
 
@@ -52,7 +46,7 @@ condition_variable();
 
 If not enough memory is available, the constructor throws a [system_error](../standard-library/system-error-class.md) object that has a `not_enough_memory` error code. If the object cannot be constructed because some other resource is not available, the constructor throws a `system_error` object that has a `resource_unavailable_try_again` error code.
 
-## <a name="native_handle"></a>  condition_variable::native_handle
+## <a name="native_handle"></a> native_handle
 
 Returns the implementation-specific type that represents the condition_variable handle.
 
@@ -64,7 +58,7 @@ native_handle_type native_handle();
 
 `native_handle_type` is defined as a pointer to Concurrency Runtime internal data structures.
 
-## <a name="notify_all"></a>  condition_variable::notify_all
+## <a name="notify_all"></a> notify_all
 
 Unblocks all threads that are waiting for the `condition_variable` object.
 
@@ -72,7 +66,7 @@ Unblocks all threads that are waiting for the `condition_variable` object.
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a>  condition_variable::notify_one
+## <a name="notify_one"></a> notify_one
 
 Unblocks one of the threads that are waiting on the `condition_variable` object.
 
@@ -80,7 +74,7 @@ Unblocks one of the threads that are waiting on the `condition_variable` object.
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a>  condition_variable::wait
+## <a name="wait"></a> wait
 
 Blocks a thread.
 
@@ -93,10 +87,10 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Remarks
@@ -110,7 +104,7 @@ while(!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a>  condition_variable::wait_for
+## <a name="wait_for"></a> wait_for
 
 Blocks a thread, and sets a time interval after which the thread unblocks.
 
@@ -129,13 +123,13 @@ bool wait_for(
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-*Rel_time*<br/>
+*Rel_time*\
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Return Value
@@ -158,7 +152,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a>  condition_variable::wait_until
+## <a name="wait_until"></a> wait_until
 
 Blocks a thread, and sets a maximum point in time at which the thread unblocks.
 
@@ -187,13 +181,13 @@ bool wait_until(
 
 ### Parameters
 
-*Lck*<br/>
+*Lck*\
 A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
-*Abs_time*<br/>
+*Abs_time*\
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
-*Pred*<br/>
+*Pred*\
 Any expression that returns **true** or **false**.
 
 ### Return Value
@@ -220,5 +214,5 @@ The third and fourth methods use a pointer to an object of type `xtime` to repla
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[<condition_variable>](../standard-library/condition-variable.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[<condition_variable>](../standard-library/condition-variable.md)

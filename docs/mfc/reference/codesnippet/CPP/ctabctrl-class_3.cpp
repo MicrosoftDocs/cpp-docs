@@ -6,5 +6,5 @@
 void CTabDlg::OnDeleteItem()
 {
    // Delete the first item in the tab control.
-   m_TabCtrl.DeleteItem(0);   
+   m_TabCtrl.DeleteItem(0);
 }

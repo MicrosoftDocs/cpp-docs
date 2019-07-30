@@ -1,11 +1,13 @@
 ---
 title: "Overview of Windows Programming in C++"
-ms.date: "05/06/2019"
+ms.date: "07/28/2019"
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
 
-There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them.
+There are several broad categories of Windows applications that you can create with C++. Each has its own programming model and set of Windows-specific libraries, but the C++ standard library and third-party C++ libraries can be used in any of them. 
+
+This section discusses how to use Visual Studio and the MFC/ATL wrapper libraries to create Windows programs. For documentation on the Windows platform itself, see [Windows documentation](/windows/index).
 
 ## Command line (console) applications
 
@@ -112,5 +114,5 @@ Visual Studio includes a powerful debugger for native code, static analysis tool
 |[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)|Parent topic for Visual C++ developer content.|
 [.NET Development with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)|Create wrappers for native C++ libraries that enable it to communication with .NET applications and components.|
 |[Component Extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)|Reference for syntax elements shared by C++/CX and C++/CLI.|
-|[Universal Windows Apps (C++)](universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|
+|[Universal Windows Apps (C++)](../cppcx/universal-windows-apps-cpp.md)|Write UWP applications using C++/CX or Windows Runtime Template Library (WRL).|
 |[C++ Attributes for COM and .NET](attributes/cpp-attributes-com-net.md)|Non-standard attributes for Windows-only programming using .NET or COM.|

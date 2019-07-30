@@ -1,3 +1,3 @@
-            CString s;
-            if (ar.IsLoading())
-               ar >> s;
+CString s;
+if (ar.IsLoading())
+ar >> s;

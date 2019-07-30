@@ -7,11 +7,32 @@ helpviewer_keywords: ["std::get [C++]", "std::make_tuple [C++]", "std::tie [C++]
 ---
 # &lt;tuple&gt; functions
 
-||||
-|-|-|-|
-|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|
+## <a name="apply"></a> apply
 
-## <a name="get"></a>  get
+```cpp
+template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
+```
+
+### Remarks
+
+Calls function *F* with a tuple *t*.
+
+## <a name="forward"></a> forward_as_tuple
+
+```cpp
+template <class... TTypes>
+    constexpr tuple<TTypes&&...> forward_as_tuple(TTypes&&...) noexcept;
+```
+
+### Return Value
+
+Returns `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
+
+### Remarks
+
+Constructs a tuple of references to the arguments in *t* suitable for forwarding as arguments to a function.
+
+## <a name="get"></a> get
 
 Gets an element from a `tuple` object, by index or (in C++14) by type.
 
@@ -45,17 +66,17 @@ template <class T, class... Types>
 
 ### Parameters
 
-*Index*<br/>
+*Index*\
 The index of the element to get.
 
-*Types*<br/>
+*Types*\
 The sequence of types declared in the tuple, in declaration order.
 
-*T*<br/>
+*T*\
 The type of the element to get.
 
-*Tuple*<br/>
-A std::tuple that contains any number of elements.
+*Tuple*\
+A `std::tuple` that contains any number of elements.
 
 ### Remarks
 
@@ -92,7 +113,17 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-## <a name="make_tuple"></a>  make_tuple
+## <a name="make_from_tuple"></a> make_from_tuple
+
+```cpp
+template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
+```
+
+### Remarks
+
+Same as `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
+
+## <a name="make_tuple"></a> make_tuple
 
 Makes a `tuple` from element values.
 
@@ -103,10 +134,10 @@ template <class T1, class T2, ..., class TN>
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The type of the Nth function parameter.
 
-*tN*<br/>
+*tN*\
 The value of the Nth function parameter.
 
 ### Remarks
@@ -150,7 +181,14 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="tie"></a>  tie
+## <a name="swap"></a> swap
+
+```cpp
+template <class... Types>
+    void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
+```
+
+## <a name="tie"></a> tie
 
 Makes a `tuple` from element references.
 
@@ -161,7 +199,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The base type of the Nth tuple element.
 
 ### Remarks
@@ -209,6 +247,26 @@ int main() {
 0 1 2 3
 ```
 
-## See also
+## <a name="tuple_cat"></a> tuple_cat
 
-[\<tuple>](../standard-library/tuple.md)<br/>
+```cpp
+template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
+```
+
+### Return Value
+
+A tuple object constructed by initializing the each type element.
+
+## <a name="tuple_element_t"></a> tuple_element_t
+
+```cpp
+template <size_t I, class T>
+    using tuple_element_t = typename tuple_element<I, T>::type;
+```
+
+## <a name="tuple_size_v"></a> tuple_size_v
+
+```cpp
+template <class T>
+    inline constexpr size_t tuple_size_v = tuple_size<T>::value;
+```

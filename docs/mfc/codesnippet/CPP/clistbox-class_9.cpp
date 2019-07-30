@@ -9,7 +9,7 @@
 void CMyODListBox::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
 {
    ASSERT(lpDrawItemStruct->CtlType == ODT_LISTBOX);
-   LPCTSTR lpszText = (LPCTSTR) lpDrawItemStruct->itemData;
+   LPCTSTR lpszText = (LPCTSTR)lpDrawItemStruct->itemData;
    ASSERT(lpszText != NULL);
    CDC dc;
 
@@ -27,7 +27,7 @@ void CMyODListBox::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
    {
       dc.SetTextColor(::GetSysColor(COLOR_HIGHLIGHTTEXT));
       dc.SetBkColor(::GetSysColor(COLOR_HIGHLIGHT));
-      dc.FillSolidRect(&lpDrawItemStruct->rcItem, 
+      dc.FillSolidRect(&lpDrawItemStruct->rcItem,
          ::GetSysColor(COLOR_HIGHLIGHT));
    }
    else
@@ -49,7 +49,7 @@ void CMyODListBox::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
       lpszText,
       (int)_tcslen(lpszText),
       &lpDrawItemStruct->rcItem,
-      DT_CENTER|DT_SINGLELINE|DT_VCENTER);
+      DT_CENTER | DT_SINGLELINE | DT_VCENTER);
 
    // Reset the background color and the text color back to their
    // original values.

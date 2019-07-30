@@ -74,4 +74,3 @@ For a sample of how to use **_malloc_dbg**, see [crt_dbg1](https://github.com/Mi
 [Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
 [malloc](malloc.md)<br/>
 [_calloc_dbg](calloc-dbg.md)<br/>
-[_calloc_dbg](calloc-dbg.md)<br/>

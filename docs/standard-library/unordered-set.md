@@ -9,22 +9,27 @@ ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
 
 Defines the container template classes [unordered_multiset](../standard-library/unordered-multiset-class.md) and [unordered_set](../standard-library/unordered-set-class.md) and their supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <unordered_set>
-```
+**Header:** \<unordered_set>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<unordered_set> library also uses the `#include <initializer_list>` statement.
+
+## Members
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[unordered_multiset Class](../standard-library/unordered-multiset-class.md)|Stores hash table of keys.|
 |[unordered_set Class](../standard-library/unordered-set-class.md)|Stores hash table of keys.|
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Tests if the unordered_multiset object on the left side of the operator is not equal to the unordered_multiset object on the right side.|
 |[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Tests if the unordered_multiset object on the left side of the operator is equal to the unordered_multiset object on the right side.|
@@ -35,5 +40,5 @@ Defines the container template classes [unordered_multiset](../standard-library/
 
 ## See also
 
-[unordered_map Class](../standard-library/unordered-map-class.md)<br/>
-[unordered_multimap Class](../standard-library/unordered-multimap-class.md)<br/>
+[unordered_map Class](../standard-library/unordered-map-class.md)\
+[unordered_multimap Class](../standard-library/unordered-multimap-class.md)

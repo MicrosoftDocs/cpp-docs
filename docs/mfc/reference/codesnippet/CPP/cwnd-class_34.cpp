@@ -4,7 +4,7 @@ BOOL CPenWidthsDlg::OnInitDialog()
 
    // set timer to cause dialog to flash
    SetTimer(1, 500, NULL);
-   return TRUE;  // return TRUE unless you set the focus to a control
+   return TRUE; // return TRUE unless you set the focus to a control
 }
 
 void CPenWidthsDlg::OnTimer(UINT_PTR nIDEvent)

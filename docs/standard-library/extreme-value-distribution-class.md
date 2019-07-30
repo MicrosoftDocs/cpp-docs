@@ -43,10 +43,10 @@ public:
 
 ### Parameters
 
-*RealType*<br/>
+*RealType*\
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*<br/>
+*URNG*\
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -164,13 +164,13 @@ explicit extreme_value_distribution(const param_type& parm);
 
 ### Parameters
 
-*a_value*<br/>
+*a_value*\
 The `a` distribution parameter.
 
-*b_value*<br/>
+*b_value*\
 The `b` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -199,13 +199,13 @@ struct param_type {
 
 ### Parameters
 
-*a_value*<br/>
+*a_value*\
 The `a` distribution parameter.
 
-*b_value*<br/>
+*b_value*\
 The `b` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` object to compare to this.
 
 ### Remarks
@@ -216,4 +216,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

@@ -124,4 +124,4 @@ The type is a synonym for template class [basic_filebuf](../standard-library/bas
 
 ## See also
 
-[\<fstream>](../standard-library/fstream.md)<br/>
+[\<fstream>](../standard-library/fstream.md)

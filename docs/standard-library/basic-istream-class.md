@@ -147,13 +147,13 @@ basic_istream(basic_istream&& right);
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd*<br/>
+*_Isstd*\
 **true** if this is a standard stream; otherwise, **false**.
 
-*right*<br/>
+*right*\
 A `basic_istream` object to copy.
 
 ### Remarks
@@ -230,19 +230,19 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of characters to read from `strbuf`.
 
-*Delim*<br/>
+*Delim*\
 The character that should terminate the read if it is encountered before *count*.
 
-*str*<br/>
+*str*\
 A string in which to write.
 
-*Ch*<br/>
+*Ch*\
 A character to get.
 
-*strbuf*<br/>
+*strbuf*\
 A buffer in which to write.
 
 ### Return Value
@@ -313,13 +313,13 @@ basic_istream<Elem, Tr>& getline(
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of characters to read from `strbuf`.
 
-*Delim*<br/>
+*Delim*\
 The character that should terminate the read if it is encountered before *count*.
 
-*str*<br/>
+*str*\
 A string in which to write.
 
 ### Return Value
@@ -373,10 +373,10 @@ basic_istream<Elem, Tr>& ignore(
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of elements to skip from the current read position.
 
-*Delim*<br/>
+*Delim*\
 The element that, if encountered before count, causes `ignore` to return and allowing all elements after *Delim* to be read.
 
 ### Return Value
@@ -435,13 +435,13 @@ basic_istream& operator>>(long double& val);
 
 ### Parameters
 
-*Pfn*<br/>
+*Pfn*\
 A function pointer.
 
-*strbuf*<br/>
+*strbuf*\
 An object of type `stream_buf`.
 
-*val*<br/>
+*val*\
 The value to read from the stream.
 
 ### Return Value
@@ -548,7 +548,7 @@ basic_istream& operator=(basic_istream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `rvalue` reference to a `basic_ifstream` object.
 
 ### Return Value
@@ -615,7 +615,7 @@ basic_istream<Elem, Tr>& putback(
 
 ### Parameters
 
-*Ch*<br/>
+*Ch*\
 A character to put back into the stream.
 
 ### Return Value
@@ -664,10 +664,10 @@ basic_istream<Elem, Tr>& read(
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The array in which to read the characters.
 
-*count*<br/>
+*count*\
 The number of characters to read.
 
 ### Return Value
@@ -725,10 +725,10 @@ streamsize readsome(
 
 ### Parameters
 
-*str*<br/>
+*str*\
 The array in which `readsome` stores the characters it reads.
 
-*count*<br/>
+*count*\
 The number of characters to read.
 
 ### Return Value
@@ -782,13 +782,13 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### Parameters
 
-*pos*<br/>
+*pos*\
 The absolute position in which to move the read pointer.
 
-*off*<br/>
+*off*\
 An offset to move the read pointer relative to *way*.
 
-*way*<br/>
+*way*\
 One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
 
 ### Return Value
@@ -859,7 +859,7 @@ void swap(basic_istream& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An lvalue reference to a `basic_istream` object.
 
 ### Remarks
@@ -969,6 +969,6 @@ abc
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

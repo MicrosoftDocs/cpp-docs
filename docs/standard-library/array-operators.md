@@ -26,16 +26,16 @@ bool operator!=(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -99,16 +99,16 @@ bool operator<(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -172,16 +172,16 @@ bool operator<=(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -245,16 +245,16 @@ bool operator==(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -318,16 +318,16 @@ bool operator>(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -391,16 +391,16 @@ bool operator>=(
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 Left container to compare.
 
-*right*<br/>
+*right*\
 Right container to compare.
 
 ### Remarks
@@ -453,4 +453,4 @@ false
 
 ## See also
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

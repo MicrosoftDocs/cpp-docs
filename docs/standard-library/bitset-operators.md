@@ -7,12 +7,7 @@ helpviewer_keywords: ["std::operator&amp; (bitset)", "std::operator&gt;&gt; (bit
 ---
 # &lt;bitset&gt; operators
 
-||||
-|-|-|-|
-|[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator^](#op_xor)|[operator&#124;](#op_or)| |
-
-## <a name="op_amp"></a>  operator&amp;
+## <a name="op_amp"></a> operator&amp;
 
 Performs a bitwise `AND` between two bitsets.
 
@@ -26,10 +21,10 @@ operator&(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.
 
-*right*<br/>
+*right*\
 The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.
 
 ### Return Value
@@ -64,7 +59,7 @@ bitset 2: 0011
 bitset 3: 0001
 ```
 
-## <a name="op_lt_lt"></a>  operator&lt;&lt;
+## <a name="op_lt_lt"></a> operator&lt;&lt;
 
 Inserts a text representation of the bit sequence into the output stream.
 
@@ -77,7 +72,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An object of type **bitset\<N>** that is to be inserted into the output stream as a string.
 
 ### Return Value
@@ -88,7 +83,7 @@ A text representation of the bit sequence in `ostr`.
 
 The template function overloads `operator<<`, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:
 
-**ostr** << _ *Right*. [to_string](bitset-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > ( )
+**ostr** <<_*Right*. [to_string](bitset-class.md) <**CharType**, **Traits**, **allocator**\<**CharType**>>()
 
 ### Example
 
@@ -121,7 +116,7 @@ int main( )
 }
 ```
 
-## <a name="op_gt_gt"></a>  operator&gt;&gt;
+## <a name="op_gt_gt"></a> operator&gt;&gt;
 
 Reads a string of bit characters into a bitset.
 
@@ -136,10 +131,10 @@ _Istr,
 
 ### Parameters
 
-*_Istr*<br/>
+*_Istr*\
 The string that is entered into the input stream to be inserted into the bitset.
 
-*right*<br/>
+*right*\
 The bitset that is receiving the bits from the input stream.
 
 ### Return Value
@@ -207,7 +202,7 @@ int main()
 }
 ```
 
-## <a name="op_xor"></a>  operator^
+## <a name="op_xor"></a> operator^
 
 Performs a bitwise `EXCLUSIVE-OR` between two bitsets.
 
@@ -221,10 +216,10 @@ operator^(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
-*right*<br/>
+*right*\
 The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
 ### Return Value
@@ -259,7 +254,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator&#124;
+## <a name="op_or"></a> operator&#124;
 
 Performs a bitwise `OR` between two bitsets.
 
@@ -273,10 +268,10 @@ operator|(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.
 
-*right*<br/>
+*right*\
 The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.
 
 ### Return Value
@@ -310,7 +305,3 @@ bitset 1: 0101
 bitset 2: 0011
 bitset 3: 0111
 ```
-
-## See also
-
-[\<bitset>](../standard-library/bitset.md)<br/>

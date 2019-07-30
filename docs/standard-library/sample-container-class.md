@@ -69,4 +69,4 @@ In this implementation, however, containers do not make such simplifying assumpt
 
 ## See also
 
-[\<sample container>](../standard-library/sample-container.md)<br/>
+[\<sample container>](../standard-library/sample-container.md)

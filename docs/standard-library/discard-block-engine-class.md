@@ -18,13 +18,13 @@ class discard_block_engine;
 
 ### Parameters
 
-*Engine*<br/>
+*Engine*\
 The base engine type.
 
-*P*<br/>
+*P*\
 **Block size**. The number of values in each block.
 
-*R*<br/>
+*R*\
 **Used block**. The number of values in each block that are used. The rest are discarded (`P` - `R`). **Precondition**: `0 < R ≤ P`
 
 ## Members
@@ -48,4 +48,4 @@ This template class describes an engine adaptor that produces values by discardi
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

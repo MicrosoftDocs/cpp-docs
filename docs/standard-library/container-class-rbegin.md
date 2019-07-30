@@ -21,4 +21,4 @@ reverse_iterator rbegin();
 
 ## See also
 
-[Sample Container Class](../standard-library/sample-container-class.md)<br/>
+[Sample Container Class](../standard-library/sample-container-class.md)

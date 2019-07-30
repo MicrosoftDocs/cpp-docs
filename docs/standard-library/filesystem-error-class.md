@@ -18,15 +18,17 @@ class filesystem_error    : public system_error;
 
 The class serves as the base class for all exceptions thrown to report an error in \<filesystem> functions. It stores an object of type `string`, called `mymesg` here for the purposes of exposition. It also stores two objects of type `path`, called `mypval1` and `mypval2`.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[filesystem_error](#filesystem_error)|Constructs a `filesystem_error` message.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[path1](#path1)|Returns `mypval1`|
 |[path2](#path2)|Returns `mypval2`|
@@ -38,7 +40,7 @@ The class serves as the base class for all exceptions thrown to report an error 
 
 **Namespace:** std::experimental::filesystem
 
-## <a name="filesystem_error"></a> filesystem_error::filesystem_error
+## <a name="filesystem_error"></a> filesystem_error
 
 The first constructor constructs its message from *what_arg* and *ec*. The second constructor also constructs its message from *pval1*, which it stores in `mypval1`. The third constructor also constructs its message from *pval1*, which it stores in `mypval1`, and from *pval2*, which it stores in `mypval2`.
 
@@ -58,19 +60,19 @@ filesystem_error(const string& what_arg,
 
 ### Parameters
 
-*what_arg*<br/>
+*what_arg*\
 Specified message.
 
-*ec*<br/>
+*ec*\
 Specified error code.
 
-*mypval1*<br/>
+*mypval1*\
 Further specified message parameter.
 
-*mypval2*<br/>
+*mypval2*\
 Further specified messsage parameter.
 
-## <a name="path1"></a> filesystem_error::path1
+## <a name="path1"></a> path1
 
 The member function returns `mypval1`
 
@@ -78,7 +80,7 @@ The member function returns `mypval1`
 const path& path1() const noexcept;
 ```
 
-## <a name="path2"></a> filesystem_error::path2
+## <a name="path2"></a> path2
 
 The member function returns `mypval2`
 
@@ -86,17 +88,10 @@ The member function returns `mypval2`
 const path& path2() const noexcept;
 ```
 
-## <a name="what"></a> filesystem_error::what
+## <a name="what"></a> what
 
 The member function returns a pointer to an `NTBS`, preferably composed from `runtime_error::what()`, `system_error::what()`, `mymesg`, `mypval1.native_string()`, and `mypval2.native_string()`.
 
 ```cpp
 const char *what() const noexcept;
 ```
-
-## See also
-
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[system_error Class](../standard-library/system-error-class.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
-[\<exception>](../standard-library/exception.md)<br/>

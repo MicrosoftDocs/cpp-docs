@@ -11,20 +11,20 @@ void CMyDialog::OnMenuShowAboutDialog()
    // Handle the return value from DoModal
    switch (nRet)
    {
-      case -1: 
-         AfxMessageBox(_T("Dialog box could not be created!"));
-         break;
-      case IDABORT:
-         // Do something
-         break;
-      case IDOK:
-         // Do something
-         break;
-      case IDCANCEL:
-         // Do something
-         break;
-      default:
-         // Do something
-         break;
+   case -1:
+      AfxMessageBox(_T("Dialog box could not be created!"));
+      break;
+   case IDABORT:
+      // Do something
+      break;
+   case IDOK:
+      // Do something
+      break;
+   case IDCANCEL:
+      // Do something
+      break;
+   default:
+      // Do something
+      break;
    };
 }

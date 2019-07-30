@@ -1,1 +1,1 @@
-   CDocument* pDoc = STATIC_DOWNCAST(CDocument, pMyDoc);
+CDocument* pDoc = STATIC_DOWNCAST(CDocument, pMyDoc);

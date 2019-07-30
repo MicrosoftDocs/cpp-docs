@@ -18,10 +18,10 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 A `char_type`.
 
-*Tr*<br/>
+*Tr*\
 The character `traits_type`.
 
 ## Remarks
@@ -131,13 +131,13 @@ basic_ostream(basic_ostream&& right);
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd*<br/>
+*_Isstd*\
 **true** if this is a standard stream; otherwise, **false**.
 
-*right*<br/>
+*right*\
 An rvalue reference to an object of type `basic_ostream`.
 
 ### Remarks
@@ -215,13 +215,13 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 
 ### Parameters
 
-*Pfn*<br/>
+*Pfn*\
 A function pointer.
 
-*strbuf*<br/>
+*strbuf*\
 A pointer to a `stream_buf` object.
 
-*val*<br/>
+*val*\
 An element to write to the stream.
 
 ### Return Value
@@ -336,7 +336,7 @@ basic_ostream& operator=(basic_ostream&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An `rvalue` reference to a `basic_ostream` object.
 
 ### Remarks
@@ -353,7 +353,7 @@ basic_ostream<Elem, Tr>& put(char_type _Ch);
 
 ### Parameters
 
-*_Ch*<br/>
+*_Ch*\
 A character.
 
 ### Return Value
@@ -397,13 +397,13 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 
 ### Parameters
 
-*_Pos*<br/>
+*_Pos*\
 The position in the stream.
 
-*_Off*<br/>
+*_Off*\
 The offset relative to *_Way*.
 
-*_Way*<br/>
+*_Way*\
 One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
 
 ### Return Value
@@ -471,7 +471,7 @@ void swap(basic_ostream& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 A reference to a `basic_ostream` object.
 
 ### Remarks
@@ -508,10 +508,10 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 
 ### Parameters
 
-*count*<br/>
+*count*\
 Count of characters to put into the stream.
 
-*str*<br/>
+*str*\
 Characters to put into the stream.
 
 ### Return Value
@@ -528,6 +528,6 @@ See [streamsize](../standard-library/ios-typedefs.md#streamsize) for an example 
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

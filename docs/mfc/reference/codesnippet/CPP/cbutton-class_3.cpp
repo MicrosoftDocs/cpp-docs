@@ -2,14 +2,14 @@
 // object was created as follows:
 //
 // CMyButton myButton;
-// myButton.Create(_T("My button"), 
-//      WS_CHILD|WS_VISIBLE|BS_PUSHBUTTON|BS_OWNERDRAW, 
+// myButton.Create(_T("My button"),
+//      WS_CHILD|WS_VISIBLE|BS_PUSHBUTTON|BS_OWNERDRAW,
 //      CRect(10,10,100,30), pParentWnd, 1);
 //
 
-// This example implements the DrawItem method for a CButton-derived 
+// This example implements the DrawItem method for a CButton-derived
 // class that draws the button's text using the color red.
-void CMyButton::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct) 
+void CMyButton::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
 {
    UINT uStyle = DFCS_BUTTONPUSH;
 
@@ -21,16 +21,16 @@ void CMyButton::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
       uStyle |= DFCS_PUSHED;
 
    // Draw the button frame.
-   ::DrawFrameControl(lpDrawItemStruct->hDC, &lpDrawItemStruct->rcItem, 
-      DFC_BUTTON, uStyle);
+   ::DrawFrameControl(lpDrawItemStruct->hDC, &lpDrawItemStruct->rcItem,
+                      DFC_BUTTON, uStyle);
 
    // Get the button's text.
    CString strText;
    GetWindowText(strText);
 
    // Draw the button text using the text color red.
-   COLORREF crOldColor = ::SetTextColor(lpDrawItemStruct->hDC, RGB(255,0,0));
-   ::DrawText(lpDrawItemStruct->hDC, strText, strText.GetLength(), 
-      &lpDrawItemStruct->rcItem, DT_SINGLELINE|DT_VCENTER|DT_CENTER);
+   COLORREF crOldColor = ::SetTextColor(lpDrawItemStruct->hDC, RGB(255, 0, 0));
+   ::DrawText(lpDrawItemStruct->hDC, strText, strText.GetLength(),
+              &lpDrawItemStruct->rcItem, DT_SINGLELINE | DT_VCENTER | DT_CENTER);
    ::SetTextColor(lpDrawItemStruct->hDC, crOldColor);
 }

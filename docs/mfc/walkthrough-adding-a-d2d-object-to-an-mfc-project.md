@@ -6,7 +6,7 @@ ms.assetid: dda36c33-c231-4da6-a62f-72d69a12b6dd
 ---
 # Walkthrough: Adding a D2D Object to an MFC Project
 
-This walkthrough teaches how to add a basic Direct2D (D2D) object to a Visual C++, Microsoft Foundation Class Library (MFC) project, and then build the project into an application that prints "Hello, world" on a gradient background.
+This walkthrough teaches how to add a basic Direct2D (D2D) object to a Visual C++, Microsoft Foundation Class Library (MFC) project, and then build the project into an application that prints "Hello, World!" on a gradient background.
 
 The walkthrough shows how to accomplish these tasks:
 

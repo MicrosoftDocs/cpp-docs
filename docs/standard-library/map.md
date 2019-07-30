@@ -9,11 +9,14 @@ ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
 
 Defines the container template classes map and multimap and their supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <map>
-```
+**Header:** \<map>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<map> library also uses the `#include <initializer_list>` statement.
 
 ## Members
 
@@ -36,7 +39,7 @@ Defines the container template classes map and multimap and their supporting tem
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[value_compare Class](../standard-library/value-compare-class-map.md)|Provides a function object that can compare the elements of a map by comparing the values of their keys to determine their relative order in the map.|
 |[map Class](../standard-library/map-class.md)|Used for the storage and retrieval of data from a collection in which the each of the elements has a unique key with which the data is automatically ordered.|
@@ -44,6 +47,6 @@ Defines the container template classes map and multimap and their supporting tem
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

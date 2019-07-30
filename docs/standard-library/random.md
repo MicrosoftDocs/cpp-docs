@@ -9,11 +9,14 @@ ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 
 Defines facilities for random number generation, allowing creation of uniformly distributed random numbers.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <random>
-```
+**Header**: \<random>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<random> library uses the `#include <initializer_list>' statement.
 
 ## Summary
 
@@ -498,4 +501,4 @@ By definition, `random_device` results are not reproducible, and a side-effect i
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

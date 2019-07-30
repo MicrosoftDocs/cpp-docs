@@ -1,6 +1,6 @@
 ---
 title: "Function Templates"
-ms.date: "11/04/2016"
+ms.date: "07/15/2019"
 helpviewer_keywords: ["function templates", "templates, function", "function templates, about function templates"]
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
 ---
@@ -46,7 +46,7 @@ int main(int j) {
 }
 ```
 
-When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert `char j` to type **int**.
+When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert `j` to type **char**.
 
 ## See also
 

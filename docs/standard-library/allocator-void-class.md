@@ -41,13 +41,3 @@ The class explicitly specializes template class [allocator](../standard-library/
 - [value_type](../standard-library/allocator-class.md#value_type).
 
 - [rebind](../standard-library/allocator-class.md#rebind), a nested template class.
-
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

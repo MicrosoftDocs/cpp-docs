@@ -1,1 +1,1 @@
-	GetStatusBar ().EnablePaneProgressBar (nStatusProgress, PROGRESS_MAX);
+GetStatusBar().EnablePaneProgressBar(nStatusProgress, PROGRESS_MAX);

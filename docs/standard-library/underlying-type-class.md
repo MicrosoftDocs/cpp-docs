@@ -18,7 +18,7 @@ struct underlying_type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -33,4 +33,4 @@ The `type` member typedef of the template class names the underlying integral ty
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

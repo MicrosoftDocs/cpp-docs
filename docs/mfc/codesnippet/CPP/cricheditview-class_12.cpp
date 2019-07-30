@@ -1,4 +1,4 @@
-void CMyRichEditView::AddBullets() 
+void CMyRichEditView::AddBullets()
 {
    PARAFORMAT2 pf;
 

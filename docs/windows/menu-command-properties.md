@@ -68,7 +68,7 @@ Win32
 
 ## See also
 
-[Menu Editor](../windows/menu-editor.md)<br/>
+[Menu Editor](../windows/menu-editor.md)
 
 <!--
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>-->

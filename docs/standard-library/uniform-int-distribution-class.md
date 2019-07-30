@@ -43,7 +43,7 @@ public:
 
 ### Parameters
 
-*IntType*<br/>
+*IntType*\
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -163,13 +163,13 @@ explicit uniform_int_distribution(const param_type& parm);
 
 ### Parameters
 
-*a*<br/>
+*a*\
 The lower bound for random values, inclusive.
 
-*b*<br/>
+*b*\
 The upper bound for random values, inclusive.
 
-*parm*<br/>
+*parm*\
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -199,13 +199,13 @@ struct param_type {
 
 ### Parameters
 
-*a*<br/>
+*a*\
 The lower bound for random values, inclusive.
 
-*b*<br/>
+*b*\
 The upper bound for random values, inclusive.
 
-*right*<br/>
+*right*\
 The `param_type` object to compare to this.
 
 ### Remarks
@@ -216,4 +216,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

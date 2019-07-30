@@ -6,7 +6,7 @@ BOOL CInPlaceFrame::OnCreateControlBars(CFrameWnd* pWndFrame, CFrameWnd* pWndDoc
    m_wndToolBar.SetOwner(this);
 
    // Create toolbar on client's frame window
-   if (!m_wndToolBar.CreateEx(pWndFrame, TBSTYLE_FLAT,WS_CHILD | WS_VISIBLE | CBRS_TOP
+   if (!m_wndToolBar.CreateEx(pWndFrame, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP
       | CBRS_GRIPPER | CBRS_TOOLTIPS | CBRS_FLYBY | CBRS_SIZE_DYNAMIC) ||
       !m_wndToolBar.LoadToolBar(IDR_SRVR_INPLACE))
    {

@@ -36,4 +36,4 @@ The type is a synonym for the template class [basic_streambuf](../standard-libra
 
 ## See also
 
-[\<streambuf>](../standard-library/streambuf.md)<br/>
+[\<streambuf>](../standard-library/streambuf.md)

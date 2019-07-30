@@ -25,10 +25,10 @@ bool operator>= (
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -51,10 +51,10 @@ bool operator> (
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -77,10 +77,10 @@ bool operator<= (
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -103,10 +103,10 @@ bool operator<(
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -131,10 +131,10 @@ bool operator!= (
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -157,10 +157,10 @@ bool operator== (
 
 ### Parameters
 
-*Left*<br/>
+*Left*\
 The left `thread::id` object.
 
-*Right*<br/>
+*Right*\
 The right `thread::id` object.
 
 ### Return Value
@@ -183,10 +183,10 @@ basic_ostream<Elem, Tr>& operator<<(
 
 ### Parameters
 
-*Ostr*<br/>
+*Ostr*\
 A [basic_ostream](../standard-library/basic-ostream-class.md) object.
 
-*Id*<br/>
+*Id*\
 A `thread::id` object.
 
 ### Return Value
@@ -201,4 +201,4 @@ If two `thread::id` objects compare equal, the inserted text representations of 
 
 ## See also
 
-[\<thread>](../standard-library/thread.md)<br/>
+[\<thread>](../standard-library/thread.md)

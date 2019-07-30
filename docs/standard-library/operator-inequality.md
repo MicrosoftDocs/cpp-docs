@@ -27,4 +27,4 @@ Returns `!(left == right)`.
 
 ## See also
 
-[\<sample container>](../standard-library/sample-container.md)<br/>
+[\<sample container>](../standard-library/sample-container.md)

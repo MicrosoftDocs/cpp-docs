@@ -41,7 +41,7 @@ public:
 
 ### Parameters
 
-*URNG*<br/>
+*URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -144,10 +144,10 @@ explicit bernoulli_distribution(const param_type& parm);
 
 ### Parameters
 
-*p*<br/>
+*p*\
 The stored `p` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -173,7 +173,7 @@ struct param_type {
 
 ### Parameters
 
-*p*<br/>
+*p*\
 The stored `p` distribution parameter.
 
 ### Remarks
@@ -184,4 +184,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

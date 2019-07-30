@@ -9,15 +9,20 @@ ms.assetid: 084147c1-e805-478e-8201-76846020f187
 
 Defines the container template class **array** and several supporting templates.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <array>
-```
+**Header:** \<array>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<array> library also uses the `#include <initializer_list>` statement.
+
+## Members
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[array](../standard-library/array-class-stl.md)|Stores a fixed-length sequence of elements.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Wraps the type of an array element.|
@@ -25,7 +30,7 @@ Defines the container template class **array** and several supporting templates.
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](../standard-library/array-operators.md#op_eq_eq)|array comparison, equal|
 |[operator!=](../standard-library/array-operators.md#op_neq)|array comparison, not equal|
@@ -36,12 +41,12 @@ Defines the container template class **array** and several supporting templates.
 
 ### Functions
 
-|Function|Description|
+|||
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Get specified array element.|
 |[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|
 
 ## See also
 
-[\<tuple>](../standard-library/tuple.md)<br/>
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<tuple>](../standard-library/tuple.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
