@@ -9645,7 +9645,7 @@
                     - name: <variant> functions
                       href: standard-library/variant-functions.md
                     - name: <variant> operators
-                      href: standard-libary/variant-operators.md
+                      href: standard-library/variant-operators.md
                     - name: variant class
                       href: standard-library/variant-class.md
                 - name: <vector>
