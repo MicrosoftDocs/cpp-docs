@@ -1,10 +1,10 @@
 ---
-title: "Partial Ordering of Function Templates (C++)"
+title: "Partial ordering of function templates (C++)"
 ms.date: "07/30/2019"
 helpviewer_keywords: ["partial ordering of function templates"]
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
 ---
-# Partial Ordering of Function Templates (C++)
+# Partial ordering of function templates (C++)
 
 Multiple function templates that match the argument list of a function call can be available. C++ defines a partial ordering of function templates to specify which function should be called. The ordering is partial because there can be some templates that are considered equally specialized.
 
@@ -41,28 +41,32 @@ The following sample works as specified in the standard:
 // compile with: /EHsc
 #include <iostream>
 
-template <class T> void f(T) {
-   printf_s("Less specialized function called\n");
+template <class T> void f(T)
+{
+    printf_s("Less specialized function called\n");
 }
 
-template <class T> void f(T*) {
-   printf_s("More specialized function called\n");
+template <class T> void f(T*)
+{
+    printf_s("More specialized function called\n");
 }
 
-template <class T> void f(const T*) {
-   printf_s("Even more specialized function for const T*\n");
+template <class T> void f(const T*)
+{
+    printf_s("Even more specialized function for const T*\n");
 }
 
-int main() {
-   int i =0;
-   const int j = 0;
-   int *pi = &i;
-   const int *cpi = &j;
+int main()
+{
+    int i =0;
+    const int j = 0;
+    int *pi = &i;
+    const int *cpi = &j;
 
-   f(i);   // Calls less specialized function.
-   f(pi);  // Calls more specialized function.
-   f(cpi); // Calls even more specialized function.
-   // Without partial ordering, these calls would be ambiguous.
+    f(i);   // Calls less specialized function.
+    f(pi);  // Calls more specialized function.
+    f(cpi); // Calls even more specialized function.
+    // Without partial ordering, these calls would be ambiguous.
 }
 ```
 
@@ -76,4 +80,4 @@ Even more specialized function for const T*
 
 ## See also
 
-[Function Templates](../cpp/function-templates.md)
+[Function templates](../cpp/function-templates.md)
