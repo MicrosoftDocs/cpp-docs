@@ -18,13 +18,13 @@ class shared_ptr;
 
 ## Remarks
 
-The shared_ptr class describes an object that uses reference counting to manage resources. A `shared_ptr` object effectively holds a pointer to the resource that it owns or holds a null pointer. A resource can be owned by more than one `shared_ptr` object; when the last `shared_ptr` object that owns a particular resource is destroyed, the resource is freed.
+The `shared_ptr` class describes an object that uses reference counting to manage resources. A `shared_ptr` object effectively holds a pointer to the resource that it owns or holds a null pointer. A resource can be owned by more than one `shared_ptr` object; when the last `shared_ptr` object that owns a particular resource is destroyed, the resource is freed.
 
-A `shared_ptr` stops owning a resource when it is reassigned or reset.
+A `shared_ptr` stops owning a resource when it's reassigned or reset.
 
 The template argument `T` might be an incomplete type except as noted for certain member functions.
 
-When a `shared_ptr<T>` object is constructed from a resource pointer of type `G*` or from a `shared_ptr<G>`, the pointer type `G*` must be convertible to `T*`. If it is not, the code will not compile. For example:
+When a `shared_ptr<T>` object is constructed from a resource pointer of type `G*` or from a `shared_ptr<G>`, the pointer type `G*` must be convertible to `T*`. If it's not convertible, the code will not compile. For example:
 
 ```cpp
 #include <memory>
@@ -74,11 +74,11 @@ Some functions take an argument list that defines properties of the resulting `s
 
 no arguments -- the resulting object is an empty `shared_ptr` object or an empty `weak_ptr` object.
 
-`ptr` -- a pointer of type `Other*` to the resource to be managed. `T` must be a complete type. If the function fails (because the control block cannot be allocated) it evaluates the expression `delete ptr`.
+`ptr` -- a pointer of type `Other*` to the resource to be managed. `T` must be a complete type. If the function fails (because the control block can't be allocated), it evaluates the expression `delete ptr`.
 
-`ptr, deleter` -- a pointer of type `Other*` to the resource to be managed and a deleter for that resource. If the function fails (because the control block cannot be allocated), it calls `deleter(ptr)`, which must be well defined.
+`ptr, deleter` -- a pointer of type `Other*` to the resource to be managed and a deleter for that resource. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
 
-`ptr, deleter, alloc` -- a pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well defined.
+`ptr, deleter, alloc` -- a pointer of type `Other*` to the resource to be managed, a deleter for that resource, and an allocator to manage any storage that must be allocated and freed. If the function fails (because the control block can't be allocated), it calls `deleter(ptr)`, which must be well-defined.
 
 `sp` -- a `shared_ptr<Other>` object that owns the resource to be managed.
 
@@ -402,16 +402,16 @@ void reset() noexcept;
 template <class Other>
 void reset(Other *ptr);
 
-template <class Other, class D>
+template <class Other, class Deleter>
 void reset(
     Other *ptr,
-    D deleter);
+    Deleter deleter);
 
-template <class Other, class D, class A>
+template <class Other, class Deleter, class Allocator>
 void reset(
     Other *ptr,
-    D deleter,
-    A alloc);
+    Deleter deleter,
+    Allocator alloc);
 ```
 
 ### Parameters
@@ -419,7 +419,7 @@ void reset(
 *Other*\
 The type controlled by the argument pointer.
 
-*D*\
+*Deleter*\
 The type of the deleter.
 
 *ptr*\
@@ -428,7 +428,7 @@ The pointer to copy.
 *deleter*\
 The deleter to copy.
 
-*A*\
+*Allocator*\
 The type of the allocator.
 
 *alloc*\
@@ -500,27 +500,27 @@ shared_ptr(shared_ptr&& sp) noexcept;
 template <class Other>
 explicit shared_ptr(Other* ptr);
 
-template <class Other, class D>
+template <class Other, class Deleter>
 shared_ptr(
     Other* ptr,
-    D deleter);
+    Deleter deleter);
 
-template <class D>
+template <class Deleter>
 shared_ptr(
     nullptr_t ptr,
-    D deleter);
+    Deleter deleter);
 
-template <class Other, class D, class A>
+template <class Other, class Deleter, class Allocator>
 shared_ptr(
     Other* ptr,
-    D deleter,
-    A  alloc);
+    Deleter deleter,
+    Allocator alloc);
 
-template <class D, class A>
+template <class Deleter, class Allocator>
 shared_ptr(
     nullptr_t ptr,
-    D deleter,
-    A alloc);
+    Deleter deleter,
+    Allocator alloc);
 
 template <class Other>
 shared_ptr(
@@ -538,10 +538,9 @@ template <class &>
 shared_ptr(
     std::auto_ptr<Other>&& ap);
 
-template <class Other, class D>
+template <class Other, class Deleter>
 shared_ptr(
-    unique_ptr<Other,
-    D>&& up);
+    unique_ptr<Other, Deleter>&& up);
 
 template <class Other>
 shared_ptr(
@@ -553,9 +552,9 @@ shared_ptr(
     shared_ptr<Other>&& sp,
     element_type* ptr) noexcept;
 
-template <class Other, class D>
+template <class Other, class Deleter>
 shared_ptr(
-    const unique_ptr<Other, D>& up) = delete;
+    const unique_ptr<Other, Deleter>& up) = delete;
 ```
 
 ### Parameters
@@ -566,10 +565,10 @@ The type controlled by the argument pointer.
 *ptr*\
 The pointer to copy.
 
-*D*\
+*Deleter*\
 The type of the deleter.
 
-*A*\
+*Allocator*\
 The type of the allocator.
 
 *deleter*\

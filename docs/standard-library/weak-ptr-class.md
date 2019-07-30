@@ -1,6 +1,6 @@
 ---
 title: "weak_ptr Class"
-ms.date: "07/25/2019"
+ms.date: "07/29/2019"
 f1_keywords: ["memory/std::weak_ptr", "memory/std::weak_ptr::element_type", "memory/std::weak_ptr::expired", "memory/std::weak_ptr::lock", "memory/std::weak_ptr::owner_before", "memory/std::weak_ptr::reset", "memory/std::weak_ptr::swap", "memory/std::weak_ptr::use_count", "memory/std::weak_ptr::operator="]
 helpviewer_keywords: ["std::weak_ptr [C++]", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count", "std::weak_ptr [C++], element_type", "std::weak_ptr [C++], expired", "std::weak_ptr [C++], lock", "std::weak_ptr [C++], owner_before", "std::weak_ptr [C++], reset", "std::weak_ptr [C++], swap", "std::weak_ptr [C++], use_count"]
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
@@ -12,12 +12,12 @@ Wraps a weakly linked pointer.
 ## Syntax
 
 ```cpp
-template<class Type> class weak_ptr;
+template<class T> class weak_ptr;
 ```
 
 ### Parameters
 
-*Type*\
+*T*\
 The type controlled by the weak pointer.
 
 ## Remarks
@@ -38,7 +38,7 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 |[weak_ptr](#weak_ptr)|Constructs a `weak_ptr`.|
 | **Destructors** | |
 |[~weak_ptr](#tilde-weak_ptr)|Constructs a `weak_ptr`.|
-| **Types** | |
+| **Typedefs** | |
 |[element_type](#element_type)|The type of the element.|
 | **Member functions** | |
 |[expired](#expired)|Tests if ownership has expired.|
@@ -55,13 +55,13 @@ A cycle occurs when two or more resources controlled by `shared_ptr` objects hol
 The type of the element.
 
 ```cpp
-typedef Type element_type; // through C++17
-using element_type = remove_extent_t<Type>; // C++20
+typedef T element_type; // through C++17
+using element_type = remove_extent_t<T>; // C++20
 ```
 
 ### Remarks
 
-The type is a synonym for the template parameter `Type`.
+The type is a synonym for the template parameter `T`.
 
 ### Example
 
@@ -141,12 +141,12 @@ wp.expired() == true
 Obtains a `shared_ptr` that shares ownership of a resource.
 
 ```cpp
-shared_ptr<Type> lock() const noexcept;
+shared_ptr<T> lock() const noexcept;
 ```
 
 ### Remarks
 
-The member function returns an empty [shared_ptr](shared-ptr-class.md) object if `*this` has expired; otherwise it returns a `shared_ptr<Type>` object that owns the resource that `*this` points to. Returns a value equivalent to the atomic execution of `expired() ? shared_ptr<Type>() : shared_ptr<Type>(*this)`.
+The member function returns an empty [shared_ptr](shared-ptr-class.md) object if `*this` has expired; otherwise it returns a `shared_ptr<T>` object that owns the resource that `*this` points to. Returns a value equivalent to the atomic execution of `expired() ? shared_ptr<T>() : shared_ptr<T>(*this)`.
 
 ### Example
 
@@ -190,13 +190,13 @@ wp.expired() == true
 Replaces owned resource.
 
 ```cpp
-weak_ptr& operator=(const weak_ptr& p) noexcept;
+weak_ptr& operator=(const weak_ptr& ptr) noexcept;
 
 template <class Other>
-weak_ptr& operator=(const weak_ptr<Other>& p) noexcept;
+weak_ptr& operator=(const weak_ptr<Other>& ptr) noexcept;
 
 template <class Other>
-weak_ptr& operator=(const shared_ptr<Other>& p) noexcept;
+weak_ptr& operator=(const shared_ptr<Other>& ptr) noexcept;
 ```
 
 ### Parameters
@@ -204,12 +204,12 @@ weak_ptr& operator=(const shared_ptr<Other>& p) noexcept;
 *Other*\
 The type controlled by the argument shared or weak pointer.
 
-*p*\
+*ptr*\
 The weak pointer or shared pointer to copy.
 
 ### Remarks
 
-The operators all release the resource currently pointed to by `*this` and assign ownership of the resource named by *p* to `*this`. If an operator fails, it leaves `*this` unchanged. Each operator has an effect equivalent to `weak_ptr(p).swap(*this)`.
+The operators all release the resource currently pointed to by `*this` and assign ownership of the resource named by *ptr* to `*this`. If an operator fails, it leaves `*this` unchanged. Each operator has an effect equivalent to `weak_ptr(ptr).swap(*this)`.
 
 ### Example
 
@@ -449,7 +449,7 @@ The shared pointer to copy.
 
 ### Remarks
 
-The default constructor constructs an empty `weak_ptr` object. The constructors that take an argument each construct an empty `weak_ptr` object if the argument pointer is empty. Otherwise, they construct a `weak_ptr` object that points to the resource named by the argument. The reference count of the shared object is not changed.
+The default constructor constructs an empty `weak_ptr` object. The constructors that take an argument each construct an empty `weak_ptr` object if the argument pointer is empty. Otherwise, they construct a `weak_ptr` object that points to the resource named by the argument. The reference count of the shared object isn't changed.
 
 ### Example
 
