@@ -11,8 +11,8 @@ Individual OLE DB services can be enabled or disabled by default for all applica
 |Default services enabled|DWORD value|
 |------------------------------|-------------------|
 |All services except client cursor and pooling|0xfffffffa|
-|All services except Client Cursor|0xfffffffb|
-|All services except Pooling and AutoEnlistment|0xfffffffc|
+|All services except client cursor|0xfffffffb|
+|All services except pooling and auto enlistment|0xfffffffc|
 |All services except pooling|0xfffffffe|
 |All services (default)|0xffffffff|
 |No services|0x00000000|
