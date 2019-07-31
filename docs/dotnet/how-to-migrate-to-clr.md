@@ -142,8 +142,6 @@ In some cases, the CLR can shutdown before your managed code is finished running
 
 After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
-If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).
-
 For information on .NET programming in Visual C++ see:
 
 - [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
