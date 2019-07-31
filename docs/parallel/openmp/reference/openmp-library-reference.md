@@ -1,6 +1,6 @@
 ---
 title: "OpenMP Library Reference"
-ms.date: "03/20/2019"
+ms.date: "07/30/2019"
 ms.assetid: a25188c6-edde-43d0-84b5-780e797b08fc
 ---
 # OpenMP Library Reference
@@ -12,7 +12,7 @@ The Visual C++ implementation of the OpenMP standard includes the following cons
 |Construct|Description|
 |---------------|-----------------|
 |[Directives](openmp-directives.md)|Provides links to directives used in the OpenMP API.|
-|[Clauses](openmp-directives.md)|Provides links to clauses used in the OpenMP API.|
+|[Clauses](openmp-clauses.md)|Provides links to clauses used in the OpenMP API.|
 |[Functions](openmp-functions.md)|Provides links to functions used in the OpenMP API.|
 |[Environment Variables](openmp-environment-variables.md)|Provides links to environment variables used in the OpenMP API.|
 
