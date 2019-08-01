@@ -33,12 +33,12 @@ int main() {
 }
 ```
 
-Such invocations would be expanded during preprocessing, producing the following code:
+The `stringer` macros are expanded during preprocessing, producing the following code:
 
 ```cpp
 int main() {
-   printf_s( "In quotes in the printf function call\n" "\n" );
-   printf_s( "\"In quotes when printed to the screen\"\n" "\n" );
+   printf_s( "In quotes in the printf function call" "\n" );
+   printf_s( "\"In quotes when printed to the screen\"" "\n" );
    printf_s( "\"This: \\\" prints an escaped double quote\"" "\n" );
 }
 ```
