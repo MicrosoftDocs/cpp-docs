@@ -16,8 +16,6 @@ ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
 
 [Native and .NET Interoperability](../dotnet/native-and-dotnet-interoperability.md)
 
-[C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md)
-
 [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
 
 [Regular Expressions (C++/CLI)](../dotnet/regular-expressions-cpp-cli.md)
