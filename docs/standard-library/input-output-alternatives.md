@@ -1,12 +1,12 @@
 ---
 title: "Input-Output Alternatives"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["I/O [C++], alternatives"]
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
 ---
 # Input/Output Alternatives
 
-Visual C++ provides several alternatives for I/O programming:
+The Microsoft C++ compiler provides several alternatives for I/O programming:
 
 - C run-time library direct, unbuffered I/O.
 
@@ -24,4 +24,4 @@ You can use iostream classes with the Microsoft Windows operating system. String
 
 ## See also
 
-[What a Stream Is](../standard-library/what-a-stream-is.md)<br/>
+[What a Stream Is](../standard-library/what-a-stream-is.md)

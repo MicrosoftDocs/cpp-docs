@@ -11,7 +11,7 @@ ms.assetid: a6f2b437-ca93-4dcd-b9cb-df415e10df86
 
 An accessor overrides, with or without the `virtual` keyword, a base class accessor function, but the `override` or `new` specifier was not part of the overriding function signature. Add the `new` or `override` specifier to resolve this warning.
 
-See [override](../../windows/override-cpp-component-extensions.md) and [new (new slot in vtable)](../../windows/new-new-slot-in-vtable-cpp-component-extensions.md) for more information.
+See [override](../../extensions/override-cpp-component-extensions.md) and [new (new slot in vtable)](../../extensions/new-new-slot-in-vtable-cpp-component-extensions.md) for more information.
 
 C4485 is always issued as an error. Use the [warning](../../preprocessor/warning.md) pragma to suppress C4485.
 

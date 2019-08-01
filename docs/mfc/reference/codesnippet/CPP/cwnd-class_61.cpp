@@ -9,5 +9,5 @@ void CMyApp::OnHideApplication()
 
    // put the window at the bottom of z-order, so it isn't activated
    m_pMainWnd->SetWindowPos(&CWnd::wndBottom, 0, 0, 0, 0,
-      SWP_NOMOVE|SWP_NOSIZE|SWP_NOACTIVATE);
+                            SWP_NOMOVE | SWP_NOSIZE | SWP_NOACTIVATE);
 }

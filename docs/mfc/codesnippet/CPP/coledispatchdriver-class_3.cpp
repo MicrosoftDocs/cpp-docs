@@ -1,8 +1,8 @@
 LPDISPATCH CreateLPDispatch(LPCTSTR lpszProgId)
 {
-    COleDispatchDriver disp;
+   COleDispatchDriver disp;
 
-    disp.CreateDispatch(lpszProgId);
+   disp.CreateDispatch(lpszProgId);
 
-    return disp.DetachDispatch();
+   return disp.DetachDispatch();
 }

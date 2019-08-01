@@ -28,7 +28,7 @@ The following topics explain additional details of using record views:
 
 - [Record Views: Filling a List Box from a Second Recordset](../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md)
 
-## See Also
+## See also
 
 [Record Views  (MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [Recordset (ODBC)](../data/odbc/recordset-odbc.md)<br/>

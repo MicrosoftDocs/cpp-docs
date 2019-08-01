@@ -16,7 +16,7 @@ For example:
 PATH=$(PATH);\nonesuch
 
 all:
-    echo %PATH%
+    echo %%PATH%%
 ```
 
 In this example, changing `PATH` changes the corresponding environment variable `PATH`; it appends `\nonesuch` to your path.

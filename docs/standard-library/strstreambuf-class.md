@@ -71,7 +71,7 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-*_Freezeit*<br/>
+*_Freezeit*\
 A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
@@ -159,7 +159,7 @@ virtual int overflow(int _Meta = EOF);
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or `EOF`.
 
 ### Return Value
@@ -184,7 +184,7 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or `EOF`.
 
 ### Return Value
@@ -248,13 +248,13 @@ virtual streampos seekoff(streamoff _Off,
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The position to seek for relative to *_Way*.
 
-*_Way*<br/>
+*_Way*\
 The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -287,10 +287,10 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### Parameters
 
-*_Sp*<br/>
+*_Sp*\
 The position to seek for.
 
-*_Which*<br/>
+*_Which*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -357,19 +357,19 @@ strstreambuf(const unsigned char* _Getptr,
 
 ### Parameters
 
-*_Allocfunc*<br/>
+*_Allocfunc*\
 The function used to allocate buffer memory.
 
-*count*<br/>
+*count*\
 Determines the length of the buffer pointed to by *_Getptr*. If *_Getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
 
-*_Freefunc*<br/>
+*_Freefunc*\
 The function used to free buffer memory.
 
-*_Getptr*<br/>
+*_Getptr*\
 A buffer used for input.
 
-*_Putptr*<br/>
+*_Putptr*\
 A buffer used for output.
 
 ### Remarks
@@ -462,7 +462,7 @@ The protected virtual member function endeavors to extract the current element `
 
 ## See also
 
-[streambuf](../standard-library/streambuf-typedefs.md#streambuf)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[streambuf](../standard-library/streambuf-typedefs.md#streambuf)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

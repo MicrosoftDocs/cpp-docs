@@ -1,16 +1,21 @@
 ---
 title: "ATL Property Page Wizard"
-ms.date: "10/03/2018"
+ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.overview"]
 helpviewer_keywords: ["ATL projects, adding property pages", "ATL Property Page Wizard"]
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
 ---
 # ATL Property Page Wizard
 
-This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
+::: moniker range="vs-2019"
 
-> [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+This wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+This wizard [adds a property page into an ATL project](../../atl/reference/adding-an-atl-property-page.md) or to an MFC project with ATL support. An ATL property page provides a user interface for setting the properties (or calling the methods) of one or more COM objects.
 
 ## Remarks
 
@@ -54,6 +59,8 @@ Provides information about the COM functionality for the object.
 - **ProgID**
 
    Sets the name that containers can use instead of the CLSID of the object.
+
+::: moniker-end
 
 ## See also
 

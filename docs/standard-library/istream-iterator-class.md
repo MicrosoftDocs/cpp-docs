@@ -22,16 +22,16 @@ class istream_iterator
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The type of object to be extracted from the input stream.
 
-*CharType*<br/>
+*CharType*\
 The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **char**.
 
-*Traits*<br/>
+*Traits*\
 The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char_traits`< `CharType`>.
 
-*Distance*<br/>
+*Distance*\
 A signed integral type that represents the difference type for the `istream_iterator`. This argument is optional and the default value is `ptrdiff_t`.
 
 After constructing or incrementing an object of class istream_iterator with a nonnull stored pointer, the object attempts to extract and store an object of type `Type` from the associated input stream. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
@@ -124,7 +124,7 @@ istream_iterator(istream_type& _Istr);
 
 ### Parameters
 
-*_Istr*<br/>
+*_Istr*\
 The input stream to be read use to initialize the `istream_iterator`.
 
 ### Remarks
@@ -372,8 +372,8 @@ int main( )
 
 ## See also
 
-[input_iterator_tag Struct](../standard-library/input-iterator-tag-struct.md)<br/>
-[iterator Struct](../standard-library/iterator-struct.md)<br/>
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[input_iterator_tag Struct](../standard-library/input-iterator-tag-struct.md)\
+[iterator Struct](../standard-library/iterator-struct.md)\
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

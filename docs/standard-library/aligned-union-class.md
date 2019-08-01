@@ -21,10 +21,10 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### Parameters
 
-*Len*<br/>
+*Len*\
 The alignment value for the largest type in the union.
 
-*Types*<br/>
+*Types*\
 The distinct types in the underlying union.
 
 ## Remarks
@@ -77,5 +77,5 @@ value of u->i is 1065353216
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[alignment_of Class](../standard-library/alignment-of-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[alignment_of Class](../standard-library/alignment-of-class.md)

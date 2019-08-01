@@ -18,7 +18,7 @@ struct is_trivially_default_constructible;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -47,4 +47,4 @@ A default constructor for a class *Ty* is trivial if:
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

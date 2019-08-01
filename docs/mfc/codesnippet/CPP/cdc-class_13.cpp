@@ -25,27 +25,27 @@ void CDCView::DoStartDoc()
       // if it fails, complain and exit gracefully
       if (dcPrinter.StartDoc(&docinfo) < 0)
       {
-        MessageBox(_T("Printer wouldn't initialize"));
+         MessageBox(_T("Printer wouldn't initialize"));
       }
       else
       {
-        // start a page
-        if (dcPrinter.StartPage() < 0)
-        {
-          MessageBox(_T("Could not start page"));
-          dcPrinter.AbortDoc();
-        }
-        else
-        {
-          // actually do some printing
-          CGdiObject* pOldFont = dcPrinter.SelectStockObject(SYSTEM_FONT);
+         // start a page
+         if (dcPrinter.StartPage() < 0)
+         {
+            MessageBox(_T("Could not start page"));
+            dcPrinter.AbortDoc();
+         }
+         else
+         {
+            // actually do some printing
+            CGdiObject* pOldFont = dcPrinter.SelectStockObject(SYSTEM_FONT);
 
-          dcPrinter.TextOut(50, 50, _T("Hello World!"), 12);
+            dcPrinter.TextOut(50, 50, _T("Hello World!"), 12);
 
-          dcPrinter.EndPage();
-          dcPrinter.EndDoc();
-          dcPrinter.SelectObject(pOldFont);
-        }
+            dcPrinter.EndPage();
+            dcPrinter.EndDoc();
+            dcPrinter.SelectObject(pOldFont);
+         }
       }
    }
 }

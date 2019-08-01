@@ -126,7 +126,7 @@ The type is a bitmask type that describes options to be used when matching a tex
 
 The match options are:
 
-*match_default*<br/>
+`match_default`
 
 `match_not_bol` -- do not treat the first position in the target sequence as the beginning of a line
 
@@ -206,11 +206,11 @@ The syntax modifiers are:
 
 ## See also
 
-[\<regex>](../standard-library/regex.md)<br/>
-[regex_error Class](../standard-library/regex-error-class.md)<br/>
-[\<regex> functions](../standard-library/regex-functions.md)<br/>
-[regex_iterator Class](../standard-library/regex-iterator-class.md)<br/>
-[\<regex> operators](../standard-library/regex-operators.md)<br/>
-[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)<br/>
-[regex_traits Class](../standard-library/regex-traits-class.md)<br/>
-[\<regex> typedefs](../standard-library/regex-typedefs.md)<br/>
+[\<regex>](../standard-library/regex.md)\
+[regex_error Class](../standard-library/regex-error-class.md)\
+[\<regex> functions](../standard-library/regex-functions.md)\
+[regex_iterator Class](../standard-library/regex-iterator-class.md)\
+[\<regex> operators](../standard-library/regex-operators.md)\
+[regex_token_iterator Class](../standard-library/regex-token-iterator-class.md)\
+[regex_traits Class](../standard-library/regex-traits-class.md)\
+[\<regex> typedefs](../standard-library/regex-typedefs.md)

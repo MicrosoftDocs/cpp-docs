@@ -1478,7 +1478,7 @@ long QueryStatus(long cmdID) const;
 ### Parameters
 
 *cmdID*<br/>
-The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).
+The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](https://go.microsoft.com/fwlink/p/?linkid=149220).
 
 ### Return Value
 
@@ -2343,4 +2343,4 @@ This method sends the [IDM UNORDERLIST command ID](/previous-versions/aa769987\(
 ## See also
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
-[HTMLEdit Sample](../../visual-cpp-samples.md)
+[HTMLEdit Sample](../../overview/visual-cpp-samples.md)

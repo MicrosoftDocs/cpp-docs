@@ -59,7 +59,7 @@ Internally, a `unique_lock` stores a pointer to an associated `mutex` object and
 
 ## Inheritance Hierarchy
 
-*unique_lock*<br/>
+*unique_lock*
 
 ## Requirements
 
@@ -113,7 +113,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 A `unique_lock` object.
 
 ### Return Value
@@ -164,7 +164,7 @@ void swap(unique_lock& Other) noexcept;
 
 ### Parameters
 
-*Other*<br/>
+*Other*\
 A `unique_lock` object.
 
 ## <a name="try_lock"></a>  try_lock
@@ -197,7 +197,7 @@ bool try_lock_for(
 
 ### Parameters
 
-*Rel_time*<br/>
+*Rel_time*\
 A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
 ### Return Value
@@ -223,7 +223,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 ### Parameters
 
-*Abs_time*<br/>
+*Abs_time*\
 A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
 ### Return Value
@@ -266,16 +266,16 @@ unique_lock(mutex_type& Mtx,
 
 ### Parameters
 
-*Mtx*<br/>
+*Mtx*\
 A mutex type object.
 
-*Rel_time*<br/>
+*Rel_time*\
 A [chrono::duration](../standard-library/duration-class.md) object that specifies the maximum amount of time that the method attempts to obtain ownership of the `mutex`.
 
-*Abs_time*<br/>
+*Abs_time*\
 A point in time that specifies the threshold after which the method no longer attempts to obtain ownership of the `mutex`.
 
-*Other*<br/>
+*Other*\
 A `unique_lock` object.
 
 ### Remarks
@@ -323,5 +323,5 @@ Otherwise, this method calls `unlock` on the associated `mutex` and sets the int
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<mutex>](../standard-library/mutex.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<mutex>](../standard-library/mutex.md)

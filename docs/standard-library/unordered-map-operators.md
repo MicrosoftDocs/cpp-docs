@@ -20,10 +20,10 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_map`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_map`.
 
 ### Return Value
@@ -84,10 +84,10 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_map`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_map`.
 
 ### Return Value
@@ -148,10 +148,10 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_multimap`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_multimap`.
 
 ### Return Value
@@ -213,10 +213,10 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `unordered_multimap`.
 
-*right*<br/>
+*right*\
 An object of type `unordered_multimap`.
 
 ### Return Value
@@ -270,4 +270,4 @@ int main( )
 
 ## See also
 
-[<unordered_map>](../standard-library/unordered-map.md)<br/>
+[<unordered_map>](../standard-library/unordered-map.md)

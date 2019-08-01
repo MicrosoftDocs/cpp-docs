@@ -20,4 +20,4 @@ istream& operator>> (istream& is, Date& dt)
 
 ## See also
 
-[Input Streams](../standard-library/input-streams.md)<br/>
+[Input Streams](../standard-library/input-streams.md)

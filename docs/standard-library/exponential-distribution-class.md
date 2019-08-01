@@ -42,10 +42,10 @@ public:
 
 ### Parameters
 
-*RealType*<br/>
+*RealType*\
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*<br/>
+*URNG*\
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -63,7 +63,7 @@ The property member function `param()` sets or returns the `param_type` stored d
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](http://go.microsoft.com/fwlink/p/?linkid=401098).
+For detailed information about the exponential distribution, see the Wolfram MathWorld article [Exponential Distribution](https://go.microsoft.com/fwlink/p/?linkid=401098).
 
 ## Example
 
@@ -157,10 +157,10 @@ explicit exponential_distribution(const param_type& parm);
 
 ### Parameters
 
-*lambda*<br/>
+*lambda*\
 The `lambda` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The parameter package used to construct the distribution.
 
 ### Remarks
@@ -188,10 +188,10 @@ struct param_type {
 
 ### Parameters
 
-*lambda*<br/>
+*lambda*\
 The `lambda` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` object to compare to this.
 
 ### Remarks
@@ -202,4 +202,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

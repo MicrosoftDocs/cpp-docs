@@ -18,7 +18,7 @@ By using C++/CX, you can create:
 
 - C++ Windows Runtime components that can be consumed by JavaScript-based Windows apps. For more information, see [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-- Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple UWP Game with DirectX](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game).
+- Windows DirectX games and graphics-intensive apps. For more information, see [Create a simple UWP Game with DirectX](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game).
 
 ## Related articles
 
@@ -26,7 +26,7 @@ By using C++/CX, you can create:
 |-|-|
 |[Quick Reference](../cppcx/quick-reference-c-cx.md)|Table of keywords and operators for C++/CX.|
 |[Type System](../cppcx/type-system-c-cx.md)|Describes basic C++/CX types and programming constructs, and how to utilize C++/CX to consume and create Windows Runtime types.|
-|[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries aned DLLs.|
+|[Building apps and libraries](../cppcx/building-apps-and-libraries-c-cx.md)|Discusses how to use the IDE to build apps and link to static libraries and DLLs.|
 |[Interoperating with Other Languages](../cppcx/interoperating-with-other-languages-c-cx.md)|Discusses how components that are written by using C++/CX can be used with components that are written in JavaScript, any managed language, or the Windows Runtime C++ Template Library.|
 |[Threading and Marshaling](../cppcx/threading-and-marshaling-c-cx.md)|Discusses how to specify the threading and marshaling behavior of components that you create.|
 |[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)|Reference documentation for the default namespace, the Platform namespace, Platform::Collections, and related namespaces.|

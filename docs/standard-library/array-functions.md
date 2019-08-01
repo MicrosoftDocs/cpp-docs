@@ -30,16 +30,16 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### Parameters
 
-*Index*<br/>
+*Index*\
 The element offset.
 
-*T*<br/>
+*T*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The number of elements in the array.
 
-*arr*<br/>
+*arr*\
 The array to select from.
 
 ### Example
@@ -85,16 +85,16 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type of an element.
 
-*N*<br/>
+*N*\
 The size of the array.
 
-*left*<br/>
+*left*\
 The first array to swap.
 
-*right*<br/>
+*right*\
 The second array to swap.
 
 ### Remarks
@@ -149,4 +149,4 @@ int main()
 
 ## See also
 
-[\<array>](../standard-library/array.md)<br/>
+[\<array>](../standard-library/array.md)

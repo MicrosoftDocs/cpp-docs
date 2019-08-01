@@ -11,7 +11,7 @@ function '*function*' already has a body
 
 The function has already been defined.
 
-In versions of Visual C++ before Visual Studio 2002,
+Before Visual Studio 2002,
 
 - The compiler would accept multiple template specializations that resolved to the same actual type, although the additional definitions would never be available. The compiler now detects these multiple definitions.
 

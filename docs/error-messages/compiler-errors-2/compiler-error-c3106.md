@@ -11,7 +11,7 @@ ms.assetid: 39d97a32-0905-4702-87d3-7f8ce473fb93
 
 Unnamed arguments must be passed to an attribute before named arguments.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

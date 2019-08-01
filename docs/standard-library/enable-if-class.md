@@ -18,10 +18,10 @@ struct enable_if;
 
 ### Parameters
 
-*B*<br/>
+*B*\
 The value that determines the existence of the resulting type.
 
-*T*<br/>
+*T*\
 The type to instantiate if *B* is true.
 
 ## Remarks
@@ -37,7 +37,7 @@ template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```
 
-In C++, substitution failure of template parameters is not an error in itself—this is referred to as *SFINAE* (substitution failure is not an error). Typically, `enable_if` is used to remove candidates from overload resolution—that is, it culls the overload set—so that one definition can be rejected in favor of another. This conforms to SFINAE behavior. For more information about SFINAE, see [Substitution failure is not an error](http://go.microsoft.com/fwlink/p/?linkid=394798) on Wikipedia.
+In C++, substitution failure of template parameters is not an error in itself—this is referred to as *SFINAE* (substitution failure is not an error). Typically, `enable_if` is used to remove candidates from overload resolution—that is, it culls the overload set—so that one definition can be rejected in favor of another. This conforms to SFINAE behavior. For more information about SFINAE, see [Substitution failure is not an error](https://go.microsoft.com/fwlink/p/?linkid=394798) on Wikipedia.
 
 Here are four example scenarios:
 
@@ -130,4 +130,4 @@ C++11 solved this ambiguity by using `enable_if` to make sure `pair<A, B>(const 
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

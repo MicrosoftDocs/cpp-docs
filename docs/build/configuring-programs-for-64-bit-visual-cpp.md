@@ -1,7 +1,7 @@
 ---
 title: "Configure C++ projects for 64-bit, x64 targets"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["64-bit compiler [C++], options", "64-bit compiler [C++]", "64-bit programming [C++], about 64-bit programming", "programming [C++], 64-bit", "Visual C++, 64-bit hardware"]
+helpviewer_keywords: ["64-bit compiler [C++], options", "64-bit compiler [C++]", "64-bit programming [C++], about 64-bit programming", "programming [C++], 64-bit"]
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
 ---
 # Configure C++ projects for 64-bit, x64 targets
@@ -12,7 +12,7 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 - [How to: Configure Visual C++ Projects to Target 64-Bit, x64 Platforms](how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [How to: Enable a 64-Bit Visual C++ Toolset on the Command Line](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [How to: Enable a 64-bit, x64-hosted MSVC toolset on the command line](how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [Common Visual C++ 64-bit Migration Issues](common-visual-cpp-64-bit-migration-issues.md)
 

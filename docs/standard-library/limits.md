@@ -9,15 +9,17 @@ ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 
 Defines the template class `numeric_limits` and two enumerations concerning floating-point representations and rounding.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <limits>
-```
+**Header:** \<limits>
+
+**Namespace:** std
 
 ## Remarks
 
 Explicit specializations of the `numeric_limits` class describe many properties of the fundamental types, including the character, integer, and floating-point types and **bool** that are implementation defined rather than fixed by the rules of the C++ language. Properties described in \<limits> include accuracy, minimum and maximum sized representations, rounding, and signaling type errors.
+
+## Members
 
 ### Enumerations
 
@@ -28,11 +30,11 @@ Explicit specializations of the `numeric_limits` class describe many properties 
 
 ### Classes
 
-|Class|Description|
+|||
 |-|-|
 |[numeric_limits Class](../standard-library/numeric-limits-class.md)|The template class describes arithmetic properties of built-in numerical types.|
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

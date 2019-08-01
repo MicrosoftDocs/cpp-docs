@@ -1,7 +1,6 @@
 ---
 title: "TN041: MFC-OLE1 Migration to MFC-OLE 2"
 ms.date: "10/18/2018"
-f1_keywords: ["vc.mfc.ole"]
 helpviewer_keywords: ["OLE1 [MFC]", "migrating OLE1 to OLE2", "migration [MFC], OLE1 to OLE2", "OLE2 [MFC]", "porting OLE1 to OLE2", "converting OLE1 to OLE2", "upgrading Visual C++ applications [MFC], OLE1 to OLE2", "TN041"]
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 ---
@@ -14,7 +13,7 @@ ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
 
 One of the design goals for the OLE 2 classes in MFC 2.5 (and higher) was to retain much of the same architecture put in place in MFC 2.0 for OLE 1.0 support. As a result, many of the same OLE classes in MFC 2.0 still exist in this version of MFC (`COleDocument`, `COleServerDoc`, `COleClientItem`, `COleServerItem`). In addition, many of the APIs in these classes are exactly the same. However, OLE 2 is drastically different from OLE 1.0 so you can expect that some of the details have changed. If you are familiar with MFC 2.0's OLE1 support, you'll feel at home with MFC's 2.0 support.
 
-If you are taking an existing MFC/OLE1 application and adding OLE 2 functionality to it, you should read this note first. This note covers some general issues you may encounter while porting your OLE1 functionality to MFC/OLE 2 and then discusses the problems uncovered while porting two applications included in MFC 2.0: the MFC OLE samples [OCLIENT](../visual-cpp-samples.md) and [HIERSVR](../visual-cpp-samples.md).
+If you are taking an existing MFC/OLE1 application and adding OLE 2 functionality to it, you should read this note first. This note covers some general issues you may encounter while porting your OLE1 functionality to MFC/OLE 2 and then discusses the problems uncovered while porting two applications included in MFC 2.0: the MFC OLE samples [OCLIENT](../overview/visual-cpp-samples.md) and [HIERSVR](../overview/visual-cpp-samples.md).
 
 ## MFC Document/View Architecture Is Important
 
@@ -30,19 +29,19 @@ MFC "canned implementation" classes such as `CToolBar`, `CStatusBar`, and `CScro
 
 There are a number of MFC samples that include OLE functionality. Each of these applications implements OLE from a different angle:
 
-- [HIERSVR](../visual-cpp-samples.md) Meant mostly for use as a server application. It was included in MFC 2.0 as an MFC/OLE1 application and has been ported to MFC/OLE 2 and then extended such that it implements many OLE features available in OLE 2.
+- [HIERSVR](../overview/visual-cpp-samples.md) Meant mostly for use as a server application. It was included in MFC 2.0 as an MFC/OLE1 application and has been ported to MFC/OLE 2 and then extended such that it implements many OLE features available in OLE 2.
 
-- [OCLIENT](../visual-cpp-samples.md) This is a stand-alone container application, meant to demonstrate many of the OLE features from a container standpoint. It too was ported from MFC 2.0, and then extended to support many of the more advanced OLE features, such as custom clipboard formats and links to embedded items.
+- [OCLIENT](../overview/visual-cpp-samples.md) This is a stand-alone container application, meant to demonstrate many of the OLE features from a container standpoint. It too was ported from MFC 2.0, and then extended to support many of the more advanced OLE features, such as custom clipboard formats and links to embedded items.
 
-- [DRAWCLI](../visual-cpp-samples.md) This application implements OLE container support much like OCLIENT does, except that it does so within the framework of an existing object-oriented drawing program. It shows you how you might implement OLE container support and integrate it into your existing application.
+- [DRAWCLI](../overview/visual-cpp-samples.md) This application implements OLE container support much like OCLIENT does, except that it does so within the framework of an existing object-oriented drawing program. It shows you how you might implement OLE container support and integrate it into your existing application.
 
-- [SUPERPAD](../visual-cpp-samples.md) This application, as well as being a fine stand-alone application, is also an OLE server. The server support it implements is quite minimalist. Of particular interest is how it uses OLE clipboard services to copy data to the clipboard, but uses the functionality built into the Windows "edit" control to implement clipboard paste functionality. This shows an interesting mix of traditional Windows API usage as well as integration with the new OLE APIs.
+- [SUPERPAD](../overview/visual-cpp-samples.md) This application, as well as being a fine stand-alone application, is also an OLE server. The server support it implements is quite minimalist. Of particular interest is how it uses OLE clipboard services to copy data to the clipboard, but uses the functionality built into the Windows "edit" control to implement clipboard paste functionality. This shows an interesting mix of traditional Windows API usage as well as integration with the new OLE APIs.
 
 For more information on the sample applications, see the "MFC Sample Help".
 
 ## Case Study: OCLIENT from MFC 2.0
 
-As discussed above, [OCLIENT](../visual-cpp-samples.md) was included in MFC 2.0 and implemented OLE with MFC/OLE1. The steps by which this application was initially converted to use the MFC/OLE 2 classes are described below. A number of features were added after the initial port was completed to better illustrate the MFC/OLE classes. These features will not be covered here; refer to the sample itself for more information on those advanced features.
+As discussed above, [OCLIENT](../overview/visual-cpp-samples.md) was included in MFC 2.0 and implemented OLE with MFC/OLE1. The steps by which this application was initially converted to use the MFC/OLE 2 classes are described below. A number of features were added after the initial port was completed to better illustrate the MFC/OLE classes. These features will not be covered here; refer to the sample itself for more information on those advanced features.
 
 > [!NOTE]
 > The compiler errors and step-by-step process was created with Visual C++ 2.0. Specific error messages and locations may have changed with Visual C++ 4.0, but the conceptual information remains valid.
@@ -407,7 +406,7 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 
 ## Case Study: HIERSVR from MFC 2.0
 
-[HIERSVR](../visual-cpp-samples.md) was also included in MFC 2.0 and implemented OLE with MFC/OLE1. This note briefly describes the steps by which this application was initially converted to use the MFC/OLE 2 classes. A number of features were added after the initial port was completed to better illustrate the MFC/OLE 2 classes. These features will not be covered here; refer to the sample itself for more information on those advanced features.
+[HIERSVR](../overview/visual-cpp-samples.md) was also included in MFC 2.0 and implemented OLE with MFC/OLE1. This note briefly describes the steps by which this application was initially converted to use the MFC/OLE 2 classes. A number of features were added after the initial port was completed to better illustrate the MFC/OLE 2 classes. These features will not be covered here; refer to the sample itself for more information on those advanced features.
 
 > [!NOTE]
 > The compiler errors and step-by-step process was created with Visual C++ 2.0. Specific error messages and locations may have changed with Visual C++ 4.0, but the conceptual information remains valid.
@@ -585,7 +584,7 @@ CSize CServerItem::CalcNodeSize()
 }
 ```
 
-CServerItem also overrides `COleServerItem::OnGetTextData`. This function is obsolete in MFC/OLE and is replaced by a different mechanism. The MFC 3.0 version of the MFC OLE sample [HIERSVR](../visual-cpp-samples.md) implements this functionality by overriding `COleServerItem::OnRenderFileData`. This functionality is not important for this basic port, so you can remove the OnGetTextData override.
+CServerItem also overrides `COleServerItem::OnGetTextData`. This function is obsolete in MFC/OLE and is replaced by a different mechanism. The MFC 3.0 version of the MFC OLE sample [HIERSVR](../overview/visual-cpp-samples.md) implements this functionality by overriding `COleServerItem::OnRenderFileData`. This functionality is not important for this basic port, so you can remove the OnGetTextData override.
 
 There are many more errors in svritem.cpp that have not been addressed. They are not "real" errors — just errors caused by previous errors.
 

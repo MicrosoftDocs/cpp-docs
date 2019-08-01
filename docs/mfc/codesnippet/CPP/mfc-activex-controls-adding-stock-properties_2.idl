@@ -1,1 +1,1 @@
-         [id(DISPID_CAPTION), helpstring("property Caption")] BSTR Caption;
+[id(DISPID_CAPTION), helpstring("property Caption")] BSTR Caption;

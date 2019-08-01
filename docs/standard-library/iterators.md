@@ -47,27 +47,27 @@ All iterators can be assigned or copied. They are assumed to be lightweight obje
 
 The hierarchy of iterator categories can be summarized by showing three sequences. For write-only access to a sequence, you can use any of:
 
-> output iterator<br/>
-> -> forward iterator<br/>
-> -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> output iterator\
+> -> forward iterator\
+> -> bidirectional iterator\
+> -> random-access iterator
 
 The right arrow means "can be replaced by." Any algorithm that calls for an output iterator should work nicely with a forward iterator, for example, but *not* the other way around.
 
 For read-only access to a sequence, you can use any of:
 
-> input iterator<br/>
-> -> forward iterator<br/>
-> -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> input iterator\
+> -> forward iterator\
+> -> bidirectional iterator\
+> -> random-access iterator
 
 An input iterator is the weakest of all categories, in this case.
 
 Finally, for read/write access to a sequence, you can use any of:
 
-> forward iterator<br/>
-> -> bidirectional iterator<br/>
-> -> random-access iterator<br/>
+> forward iterator\
+> -> bidirectional iterator\
+> -> random-access iterator
 
 An object pointer can always serve as a random-access iterator, so it can serve as any category of iterator if it supports the proper read/write access to the sequence it designates.
 
@@ -78,9 +78,9 @@ It is important to understand the promises and limitations of each iterator cate
 > [!NOTE]
 > You can avoid using iterators explicitly by using range-for loops. For more information, see [Range-based for statement](../cpp/range-based-for-statement-cpp.md).
 
-Visual C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
+Microsoft C++ now offers checked iterators and debug iterators to ensure that you do not overwrite the bounds of your container. For more information, see [Checked Iterators](../standard-library/checked-iterators.md) and [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

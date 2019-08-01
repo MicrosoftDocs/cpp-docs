@@ -18,7 +18,7 @@ struct is_pod;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -93,4 +93,4 @@ is_pod<throws> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

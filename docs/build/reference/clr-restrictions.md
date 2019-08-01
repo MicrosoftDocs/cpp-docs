@@ -22,7 +22,7 @@ Note the following restrictions on the use of **/clr**:
 
 - The [naked](../../cpp/naked-cpp.md) [__declspec](../../cpp/declspec.md) modifier is ignored under /clr.
 
-- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. See [Exception Handling](../../windows/exception-handling-cpp-component-extensions.md) for more information.
+- The translator function set by [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md) will affect only catches in unmanaged code. See [Exception Handling](../../extensions/exception-handling-cpp-component-extensions.md) for more information.
 
 - The comparison of function pointers is not permitted under **/clr**.
 
@@ -63,7 +63,7 @@ Note the following restrictions on the use of **/clr**:
 
 - Functions that take a variable number of arguments (varargs) will be generated as native functions. Any managed data types in the variable argument position will be marshaled to native types. Note that <xref:System.String?displayProperty=fullName> types are actually wide-character strings, but they are marshaled to single-byte character strings. So if a printf specifier is %S (wchar_t*), it will marshal to a %s string instead.
 
-- When using the va_arg macro, you may get unexpected results when compiling with **/clr:pure**. For more information, see [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017. Code that must be "pure" or "safe" should be ported to C#.
+- When using the va_arg macro, you may get unexpected results when compiling with **/clr:pure**. For more information, see [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017 and later. Code that must be "pure" or "safe" should be ported to C#.
 
 - You should not call, from managed code, any functions that walk the stack to get parameter information (function arguments); the P/Invoke layer causes that information to be further down the stack.  For example, do not compile proxy/stub with **/clr**.
 

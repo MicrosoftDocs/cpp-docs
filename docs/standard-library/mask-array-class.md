@@ -68,4 +68,4 @@ The modified operand valarray is:  (0 -1 2 -1 10 -1 10 -1 10 -1).
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

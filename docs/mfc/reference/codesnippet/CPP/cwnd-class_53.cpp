@@ -1,5 +1,5 @@
 // alter the styles of the mdi frame window
-BOOL CMdiChildFrame::PreCreateWindow(CREATESTRUCT& cs)
+BOOL CMdiChildFrame::PreCreateWindow(CREATESTRUCT &cs)
 {
    // Create a window without min/max buttons or sizable border
    cs.style |= WS_OVERLAPPED | WS_SYSMENU | WS_BORDER;

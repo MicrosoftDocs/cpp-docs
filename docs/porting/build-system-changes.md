@@ -7,7 +7,7 @@ ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
 ---
 # Build System Changes
 
-The MSBuild system is used to build Visual C++ projects. However, in Visual Studio 2008 and earlier releases, the VCBuild system was used. Certain file types and concepts that depended on VCBuild either do not exist or are represented differently in the current system. This document discusses the differences in the current build system.
+The MSBuild system is used to build Visual Studio C++ projects. However, in Visual Studio 2008 and earlier releases, the VCBuild system was used. Certain file types and concepts that depended on VCBuild either do not exist or are represented differently in the current system. This document discusses the differences in the current build system.
 
 ## .vcproj is now .vcxproj
 
@@ -23,7 +23,7 @@ In the current release, the file name extension for a project property sheet is 
 
 ## Custom Build Rules and .rules Files
 
-In earlier releases, a *rule file* is an XML-based file that has a .rules file name extension. A rule file lets you define custom build rules and incorporate them into the build process of a Visual C++ project. A custom build rule, which can be associated with one or more file name extensions, lets you pass input files to a tool that creates one or more output files.
+In earlier releases, a *rule file* is an XML-based file that has a .rules file name extension. A rule file lets you define custom build rules and incorporate them into the build process of a Visual Studio C++ project. A custom build rule, which can be associated with one or more file name extensions, lets you pass input files to a tool that creates one or more output files.
 
 In this release, custom build rules are represented by three file types, .xml, .props, and .targets, instead of a .rules file. When a .rules file that was created by using an earlier release of Visual C++ is migrated to the current release, equivalent .xml, .props, and .targets files are created and stored in your project together with the original .rules file.
 

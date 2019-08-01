@@ -11,7 +11,7 @@ Attributes cannot be applied to C++ varargs
 
 An attribute was applied incorrectly. Attributes can not be applied to an ellipsis representing variable arguments.
 
-For more information, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

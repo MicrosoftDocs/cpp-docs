@@ -248,7 +248,7 @@ The ending index of the command ID range.
 
 ### Remarks
 
-This method removes a group of message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.
+This method removes a group of message handlers, mapped to the command IDs specified by *cmdIDMin* and *cmdIDMax*, from the command source object.
 
 ##  <a name="removecommandrangeuihandler"></a>  ICommandSource::RemoveCommandRangeUIHandler
 
@@ -270,7 +270,7 @@ The ending index of the command ID range.
 
 ### Remarks
 
-This method removes a group of user interface command message handlers, mapped to the command IDs specifed by *cmdIDMin* and *cmdIDMax*, from the command source object.
+This method removes a group of user interface command message handlers, mapped to the command IDs specified by *cmdIDMin* and *cmdIDMax*, from the command source object.
 
 ##  <a name="removecommanduihandler"></a>  ICommandSource::RemoveCommandUIHandler
 
@@ -502,6 +502,6 @@ This function allows the view to update its display to reflect modifications.
 
 ## See also
 
-[MFC Sample COLLECT](../../visual-cpp-samples.md)<br/>
+[MFC Sample COLLECT](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)

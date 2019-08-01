@@ -1,1 +1,1 @@
-   PX_String(pPX, _T("MyProp"), m_strText);
+PX_String(pPX, _T("MyProp"), m_strText);

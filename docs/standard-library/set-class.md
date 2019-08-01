@@ -20,15 +20,15 @@ class set
 
 ### Parameters
 
-*Key*<br/>
+*Key*\
 The element data type to be stored in the set.
 
-*Traits*<br/>
+*Traits*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate **less** *\<Key>* is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator*<br/>
+*Allocator*\
 The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
@@ -57,13 +57,13 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[set](#set)|Constructs a set that is empty or that is a copy of all or part of some other set.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the set object.|
 |[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **const** element in the set.|
@@ -81,9 +81,9 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |[value_compare](#value_compare)|The type that provides a function object that can compare two elements to determine their relative order in the set.|
 |[value_type](#value_type)|The type describes an object stored as an element of a set in its capacity as a value.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[begin](#begin)|Returns an iterator that addresses the first element in the set.|
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the set.|
@@ -113,17 +113,11 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|Replaces the elements of a set with a copy of another set.|
 
-## Requirements
-
-**Header:** \<set>
-
-**Namespace:** std
-
-## <a name="allocator_type"></a>  set::allocator_type
+## <a name="allocator_type"></a> allocator_type
 
 A type that represents the allocator class for the set object.
 
@@ -143,7 +137,7 @@ For more information on `Allocator`, see the Remarks section of the [set Class](
 
 See the example for [get_allocator](#get_allocator) for an example that uses `allocator_type`.
 
-## <a name="begin"></a>  set::begin
+## <a name="begin"></a> begin
 
 Returns an iterator that addresses the first element in the set.
 
@@ -200,7 +194,7 @@ The first element of s1 is 1
 The first element of s1 is now 2
 ```
 
-## <a name="cbegin"></a>  set::cbegin
+## <a name="cbegin"></a> cbegin
 
 Returns a **const** iterator that addresses the first element in the range.
 
@@ -226,7 +220,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  set::cend
+## <a name="cend"></a> cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -254,7 +248,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-## <a name="clear"></a>  set::clear
+## <a name="clear"></a> clear
 
 Erases all the elements of a set.
 
@@ -292,7 +286,7 @@ The size of the set is initially 2.
 The size of the set after clearing is 0.
 ```
 
-## <a name="const_iterator"></a>  set::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 A type that provides a bidirectional iterator that can read a **const** element in the set.
 
@@ -308,7 +302,7 @@ A type `const_iterator` cannot be used to modify the value of an element.
 
 See the example for [begin](#begin) for an example that uses `const_iterator`.
 
-## <a name="const_pointer"></a>  set::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 A type that provides a pointer to a **const** element in a set.
 
@@ -322,7 +316,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a const set object.
 
-## <a name="const_reference"></a>  set::const_reference
+## <a name="const_reference"></a> const_reference
 
 A type that provides a reference to a **const** element stored in a set for reading and performing **const** operations.
 
@@ -363,7 +357,7 @@ int main( )
 The first element in the set is 10.
 ```
 
-## <a name="const_reverse_iterator"></a>  set::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
 A type that provides a bidirectional iterator that can read any **const** element in the set.
 
@@ -379,7 +373,7 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
 
-## <a name="count"></a>  set::count
+## <a name="count"></a> count
 
 Returns the number of elements in a set whose key matches a parameter-specified key.
 
@@ -389,7 +383,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key of the elements to be matched from the set.
 
 ### Return Value
@@ -437,7 +431,7 @@ The number of elements in s1 with a sort key of 1 is: 1.
 The number of elements in s1 with a sort key of 2 is: 0.
 ```
 
-## <a name="crbegin"></a>  set::crbegin
+## <a name="crbegin"></a> crbegin
 
 Returns a const iterator addressing the first element in a reversed set.
 
@@ -483,7 +477,7 @@ int main( )
 The first element in the reversed set is 30.
 ```
 
-## <a name="crend"></a>  set::crend
+## <a name="crend"></a> crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed set.
 
@@ -527,7 +521,7 @@ int main() {
 }
 ```
 
-## <a name="difference_type"></a>  set::difference_type
+## <a name="difference_type"></a> difference_type
 
 A signed integer type that can be used to represent the number of elements of a set in a range between elements pointed to by iterators.
 
@@ -600,7 +594,7 @@ The number '20' occurs 1 times in set s1.
 The number of elements in the set s1 is: 2.
 ```
 
-## <a name="emplace"></a>  set::emplace
+## <a name="emplace"></a> emplace
 
 Inserts an element constructed in place (no copy or move operations are performed).
 
@@ -681,7 +675,7 @@ int main()
 }
 ```
 
-## <a name="emplace_hint"></a>  set::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.
 
@@ -694,10 +688,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the set unless the set already contains that element or, more generally, unless it already contains an element whose value is equivalently ordered.|
-|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+*args*\
+The arguments forwarded to construct an element to be inserted into the set unless the set already contains that element or, more generally, unless it already contains an element whose value is equivalently ordered.
+
+*where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)
 
 ### Return Value
 
@@ -755,7 +750,7 @@ int main()
 }
 ```
 
-## <a name="empty"></a>  set::empty
+## <a name="empty"></a> empty
 
 Tests if a set is empty.
 
@@ -798,7 +793,7 @@ The set s1 is not empty.
 The set s2 is empty.
 ```
 
-## <a name="end"></a>  set::end
+## <a name="end"></a> end
 
 Returns the past-the-end iterator.
 
@@ -820,7 +815,7 @@ The value returned by **end** should not be dereferenced.
 
 For a code example, see [set::find](#find).
 
-## <a name="equal_range"></a>  set::equal_range
+## <a name="equal_range"></a> equal_range
 
 Returns a pair of iterators respectively to the first element in a set with a key that is greater than or equal to a specified key and to the first element in the set with a key that is greater than the key.
 
@@ -832,7 +827,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -899,7 +894,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The set s1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="erase"></a>  set::erase
+## <a name="erase"></a> erase
 
 Removes an element or a range of elements in a set from specified positions or removes elements that match a specified key.
 
@@ -917,16 +912,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*<br/>
+*Where*\
 Position of the element to be removed.
 
-*First*<br/>
+*First*\
 Position of the first element to be removed.
 
-*Last*<br/>
+*Last*\
 Position just beyond the last element to be removed.
 
-*Key*<br/>
+*Key*\
 The key value of the elements to be removed.
 
 ### Return Value
@@ -934,8 +929,6 @@ The key value of the elements to be removed.
 For the first two member functions, a bidirectional iterator that designates the first element remaining beyond any elements removed, or an element that is the end of the set if no such element exists.
 
 For the third member function, returns the number of elements that have been removed from the set.
-
-### Remarks
 
 ### Example
 
@@ -1015,7 +1008,7 @@ int main()
 }
 ```
 
-## <a name="find"></a>  set::find
+## <a name="find"></a> find
 
 Returns an iterator that refers to the location of an element in a set that has a key equivalent to a specified key.
 
@@ -1027,7 +1020,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key value to be matched by the sort key of an element from the set being searched.
 
 ### Return Value
@@ -1101,7 +1094,7 @@ int main()
 }
 ```
 
-## <a name="get_allocator"></a>  set::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Returns a copy of the allocator object used to construct the set.
 
@@ -1175,7 +1168,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>  set::insert
+## <a name="insert"></a> insert
 
 Inserts an element or a range of elements into a set.
 
@@ -1215,15 +1208,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
-|*ValTy*|Template parameter that specifies the argument type that the set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the set unless it already contains an element whose value is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)
+
+*ValTy*\
+Template parameter that specifies the argument type that the set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1345,7 +1349,7 @@ int main()
 }
 ```
 
-## <a name="iterator"></a>  set::iterator
+## <a name="iterator"></a> iterator
 
 A type that provides a constant [bidirectional iterator](../standard-library/bidirectional-iterator-tag-struct.md) that can read any element in a set.
 
@@ -1357,7 +1361,7 @@ typedef implementation-defined iterator;
 
 See the example for [begin](#begin) for an example of how to declare and use an `iterator`.
 
-## <a name="key_comp"></a>  set::key_comp
+## <a name="key_comp"></a> key_comp
 
 Retrieves a copy of the comparison object used to order keys in a set.
 
@@ -1375,7 +1379,7 @@ For more information on `Traits` see the [set Class](../standard-library/set-cla
 
 The stored object defines the member function:
 
-**bool operator()**( **const Key&**`_xVal`, **const Key&**`_yVal`);
+**bool operator()**(**const Key&**`_xVal`, **const Key&**`_yVal`);
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
@@ -1432,7 +1436,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of s1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of s2.
 ```
 
-## <a name="key_compare"></a>  set::key_compare
+## <a name="key_compare"></a> key_compare
 
 A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the set.
 
@@ -1452,7 +1456,7 @@ Note that both `key_compare` and [value_compare](#value_compare) are synonyms fo
 
 See the example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.
 
-## <a name="key_type"></a>  set::key_type
+## <a name="key_type"></a> key_type
 
 A type that describes an object stored as an element of a set in its capacity as sort key.
 
@@ -1472,7 +1476,7 @@ Note that both `key_type` and [value_type](#value_type) are synonyms for the tem
 
 See the example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-## <a name="lower_bound"></a>  set::lower_bound
+## <a name="lower_bound"></a> lower_bound
 
 Returns an iterator to the first element in a set with a key that is equal to or greater than a specified key.
 
@@ -1484,7 +1488,7 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -1540,7 +1544,7 @@ The set s1 doesn't have an element with a key of 40.
 The element of s1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="max_size"></a>  set::max_size
+## <a name="max_size"></a> max_size
 
 Returns the maximum length of the set.
 
@@ -1572,7 +1576,7 @@ int main( )
 }
 ```
 
-## <a name="op_eq"></a>  set::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the elements of this `set` using elements from another `set`.
 
@@ -1584,9 +1588,8 @@ set& operator=(set&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The `set` providing new elements to be assigned to this `set`.|
+*right*\
+The `set` providing new elements to be assigned to this `set`.
 
 ### Remarks
 
@@ -1633,7 +1636,7 @@ int main( )
    }
 ```
 
-## <a name="pointer"></a>  set::pointer
+## <a name="pointer"></a> pointer
 
 A type that provides a pointer to an element in a set.
 
@@ -1647,7 +1650,7 @@ A type **pointer** can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a set object.
 
-## <a name="rbegin"></a>  set::rbegin
+## <a name="rbegin"></a> rbegin
 
 Returns an iterator addressing the first element in a reversed set.
 
@@ -1723,7 +1726,7 @@ The reversed set is: 30 20 10
 After the erasure, the first element in the reversed set is 20.
 ```
 
-## <a name="reference"></a>  set::reference
+## <a name="reference"></a> reference
 
 A type that provides a reference to an element stored in a set.
 
@@ -1759,7 +1762,7 @@ int main( )
 The first element in the set is 10.
 ```
 
-## <a name="rend"></a>  set::rend
+## <a name="rend"></a> rend
 
 Returns an iterator that addresses the location succeeding the last element in a reversed set.
 
@@ -1830,7 +1833,7 @@ int main() {
 }
 ```
 
-## <a name="reverse_iterator"></a>  set::reverse_iterator
+## <a name="reverse_iterator"></a> reverse_iterator
 
 A type that provides a bidirectional iterator that can read or modify an element in a reversed set.
 
@@ -1846,7 +1849,7 @@ A type `reverse_iterator` is use to iterate through the set in reverse.
 
 See the example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-## <a name="set"></a>  set::set
+## <a name="set"></a> set
 
 Constructs a set that is empty or that is a copy of all or part of some other set.
 
@@ -1899,14 +1902,23 @@ set(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this set object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Traits` used to order the elements in the set, which defaults to `Compare`.|
-|*Rght*|The set of which the constructed set is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list from which to copy the elements.|
+*Al*\
+The storage allocator class to be used for this set object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Traits` used to order the elements in the set, which defaults to `Compare`.
+
+*Rght*\
+The set of which the constructed set is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Remarks
 
@@ -2038,7 +2050,7 @@ int main()
 s1 = 10 20 30 40s2 = 10 20s3 = 30s4 = 10 20 30 40s5 = 10 20s6 = 10s7 = 10 20s8 = 1 2 3 4s9 = 5 6 7 8s10 = 10 20 30 40
 ```
 
-## <a name="size"></a>  set::size
+## <a name="size"></a> size
 
 Returns the number of elements in the set.
 
@@ -2079,7 +2091,7 @@ The set length is 1.
 The set length is now 2.
 ```
 
-## <a name="size_type"></a>  set::size_type
+## <a name="size_type"></a> size_type
 
 An unsigned integer type that can represent the number of elements in a set.
 
@@ -2091,7 +2103,7 @@ typedef typename allocator_type::size_type size_type;
 
 See the example for [size](#size) for an example of how to declare and use `size_type`
 
-## <a name="swap"></a>  set::swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two sets.
 
@@ -2102,7 +2114,7 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The argument set providing the elements to be swapped with the target set.
 
 ### Remarks
@@ -2159,7 +2171,7 @@ After swapping with s2, list s1 is: 100 200.
 After swapping with s3, list s1 is: 300.
 ```
 
-## <a name="upper_bound"></a>  set::upper_bound
+## <a name="upper_bound"></a> upper_bound
 
 Returns an iterator to the first element in a set that with a key that is greater than a specified key.
 
@@ -2171,7 +2183,7 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -2227,7 +2239,7 @@ The first element of s1 with a key greater than
 that of the initial element of s1 is: 20.
 ```
 
-## <a name="value_comp"></a>  set::value_comp
+## <a name="value_comp"></a> value_comp
 
 Retrieves a copy of the comparison object used to order element values in a set.
 
@@ -2245,7 +2257,7 @@ For more information on `Traits` see the [set Class](../standard-library/set-cla
 
 The stored object defines the member function:
 
-**bool operator**( **const Key&**`_xVal`, **const Key&**`_yVal`);
+**bool operator**(**const Key&**`_xVal`, **const Key&**`_yVal`);
 
 which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
@@ -2302,7 +2314,7 @@ vc1( 2,3 ) returns value of true, where vc1 is the function object of s1.
 vc2( 2,3 ) returns value of false, where vc2 is the function object of s2.
 ```
 
-## <a name="value_compare"></a>  set::value_compare
+## <a name="value_compare"></a> value_compare
 
 A type that provides a function object that can compare two element values to determine their relative order in the set.
 
@@ -2322,7 +2334,7 @@ Note that both [key_compare](#key_compare) and `value_compare` are synonyms for 
 
 See the example for [value_comp](#value_comp) for an example of how to declare and use `value_compare`.
 
-## <a name="value_type"></a>  set::value_type
+## <a name="value_type"></a> value_type
 
 A type that describes an object stored as an element of a set in its capacity as a value.
 
@@ -2372,10 +2384,3 @@ int main( )
 ```Output
 The set has elements: 10 20.
 ```
-
-## See also
-
-[\<set>](../standard-library/set.md)<br/>
-[Containers](../cpp/containers-modern-cpp.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -236,7 +236,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 ### Parameters
 
 *pIID*<br/>
-A pointer to an interface ID (a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).
+A pointer to an interface ID (a [GUID](/previous-versions/aa373931\(v=vs.80\))).
 
 ### Return Value
 
@@ -302,7 +302,7 @@ HRESULT GetTypeInfoOfGuid(
 A locale identifier ( `LCID`).
 
 *guid*<br/>
-The [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.
+The [GUID](/previous-versions/aa373931\(v=vs.80\)) of the type description.
 
 *ppTypeInfo*<br/>
 Pointer to a pointer to the `ITypeInfo` interface.
@@ -476,7 +476,7 @@ void RestoreWaitCursor();
 
 ## See also
 
-[MFC Sample ACDUAL](../../visual-cpp-samples.md)<br/>
+[MFC Sample ACDUAL](../../overview/visual-cpp-samples.md)<br/>
 [CObject Class](../../mfc/reference/cobject-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CCmdUI Class](../../mfc/reference/ccmdui-class.md)<br/>

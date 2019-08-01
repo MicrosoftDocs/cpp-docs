@@ -6,11 +6,7 @@ ms.assetid: 1d14be53-b0b7-4f66-90cc-65bdeac563fd
 ---
 # &lt;deque&gt; functions
 
-||
-|-|
-|[swap](#swap)|
-
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two deques.
 
@@ -22,16 +18,12 @@ void swap(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `deque`.
 
-*right*<br/>
+*right*\
 An object of type `deque`.
 
 ### Example
 
 See the example for [deque::swap](../standard-library/deque-class.md#swap).
-
-## See also
-
-[\<deque>](../standard-library/deque.md)<br/>

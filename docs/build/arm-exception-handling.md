@@ -15,7 +15,7 @@ The ARM EABI (embedded application binary interface) specifies an exception unwi
 
 ### Assumptions
 
-Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [Microsoft PE and COFF Specification](http://go.microsoft.com/fwlink/p/?linkid=84140). Exception handling information is stored in the .pdata and .xdata sections of the image.
+Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [Microsoft PE and COFF Specification](https://go.microsoft.com/fwlink/p/?linkid=84140). Exception handling information is stored in the .pdata and .xdata sections of the image.
 
 The exception handling mechanism makes certain assumptions about code that follows the ABI for Windows on ARM:
 
@@ -214,7 +214,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 }
 ```
 
-Athough the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It is not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
+Although the prologue and each epilogue has an index into the unwind codes, the table is shared between them. It is not uncommon that they can all share the same unwind codes. We recommend that compiler writers optimize for this case, because the largest index that can be specified is 255, and that limits the total number of unwind codes possible for a particular function.
 
 ### Unwind Codes
 

@@ -16,7 +16,7 @@ Graphical resources are the images you define for your application. You can draw
 
 You can also use the **Image Editor** and the [Binary Editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors don't support editing embedded resources.
 
-In addition to creating new graphical resources, you can [import existing images](/windows/how-to-copy-resources#import-and-export-resources) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
+In addition to creating new graphical resources, you can [import existing images](../windows/how-to-copy-resources.md#import-and-export-resources) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
 
 For information on the **Image Editor**, see how to [Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md), [Work with Color](../windows/working-with-color-image-editor-for-icons.md), and [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md).
 
@@ -107,7 +107,7 @@ To access this dialog box, select the **Font** button in the **Text Tool** dialo
 
 Here is an example of how to add text to an icon in a Windows application and manipulate the font of your text.
 
-1. Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5). An *app.ico* file is added to your project by default.
+1. Create a C++ Windows Forms Application. For details, see [How to: Create Windows Forms Applications](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). An *app.ico* file is added to your project by default.
 
 1. In **Solution Explorer**, double-click the file *app.ico*. The **Image Editor** will open.
 
@@ -173,8 +173,7 @@ For all **Image Editor** panes with a magnification factor of 4 or greater, you 
 
 None
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
-
-<!--[Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)-->
+[Icons](/windows/desktop/menurc/icons)

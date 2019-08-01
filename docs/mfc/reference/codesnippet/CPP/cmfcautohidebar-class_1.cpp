@@ -1,2 +1,2 @@
-	CMFCAutoHideBar* pParentBar = new CMFCAutoHideBar();
-	CDockingPanesRow* pParentRow = pParentBar->GetDockSiteRow();
+CMFCAutoHideBar *pParentBar = new CMFCAutoHideBar();
+CDockingPanesRow *pParentRow = pParentBar->GetDockSiteRow();

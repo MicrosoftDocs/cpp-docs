@@ -89,7 +89,7 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
 
 - `type` = **exe**
 
@@ -151,7 +151,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

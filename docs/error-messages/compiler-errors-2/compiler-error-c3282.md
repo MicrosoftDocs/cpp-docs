@@ -9,7 +9,7 @@ ms.assetid: bac2ac89-c360-4c24-bb81-c20c62ece9ba
 
 generic parameter lists can only appear on managed or WinRTclasses, structs, or functions
 
-A generic parameter list was used incorrectly.  For more information, see [Generics](../../windows/generics-cpp-component-extensions.md).
+A generic parameter list was used incorrectly.  For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
 ## Example
 

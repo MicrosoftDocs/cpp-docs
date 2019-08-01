@@ -24,9 +24,9 @@ The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/refe
 
    - Select the dialog box at the location where you want to place the control and the control appears where you've selected.
 
-   - Drag and drop the control from the **Toolbox** window to the location on your dialog box and you can then move the controls around or change their size and shape.
+   - Drag and drop the control from the **Toolbox** window to the location on your dialog box. You can then move the control around, or change its size and shape.
 
-   - Double-click the control in the **Toolbox** window and it appears on your dialog box, then reposition the control to the location you prefer.
+   - Double-click the control in the **Toolbox** window and it appears on your dialog box. Reposition the control to the location you prefer.
 
 ### To add multiple controls
 
@@ -42,7 +42,7 @@ The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/refe
 
 1. Place your cursor that appears as cross hairs, where you want the upper-left corner of the new control to be on your dialog box.
 
-1. Select and hold down the mouse button to anchor the upper-left corner of your control on the dialog box, then drag the cursor to the right and down until the control is the size you want.
+1. Select and hold down the mouse button to anchor the upper-left corner of your control on the dialog box. Then drag the cursor to the right and down, until the control is the size you want.
 
    > [!NOTE]
    > You can anchor any of the four corners of the control you're drawing. This procedure used the upper-left corner as an example.
@@ -54,7 +54,7 @@ The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/refe
 
 ### To add a custom control
 
-You can add custom controls to the dialog box by selecting the **Custom Control** icon in the **Toolbox** and dragging it to your dialog box. To add a **Syslink** control, add a custom control, then change the control's **Class** property to **Syslink**. This action will cause the properties to refresh and show the **Syslink** control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
+You can add custom controls to the dialog box. Select the **Custom Control** icon in the **Toolbox** and drag it to your dialog box. To add a `Syslink` control, add a custom control, then change the control's **Class** property to `Syslink`. This action will cause the properties to refresh and show the `Syslink` control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).
 
 ## Edit Controls
 
@@ -94,7 +94,7 @@ You can add custom controls to the dialog box by selecting the **Custom Control*
 > [!TIP]
 > To jump from any dialog box control to its existing handler, double-click the control.
 
-You can also use the **Member Variables** tab in the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md) to add new member variables for a specified class, and view member variables that have already been defined.
+You can also use the **Member Variables** tab in the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md) to add new member variables for a specified class, and view already-defined member variables.
 
 ## Delete Controls
 
@@ -104,11 +104,11 @@ In the dialog box, select the control, then press the **Delete** key, or go to m
 
 ### Troubleshooting
 
-After adding a common control or rich edit control to a dialog box, it won't appear when you test the dialog box or the dialog itself won't appear, for example:
+After you add a common control or rich edit control to a dialog box, it won't appear when you test the dialog box. Or, the dialog itself won't appear. For example:
 
 1. Create a Win32 project, modifying the application settings so you create a Windows application (not a console app).
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), double-click on the *.rc* file.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), double-click on the *.rc* file.
 
 1. Under the dialog option, double-click the **About** box.
 
@@ -151,7 +151,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 |**Path**|Displays the file in which the ActiveX control is found.|
 
 > [!CAUTION]
-> It may not be legal to distribute all of the ActiveX controls on your system. Please refer to the license agreement for the software that installed the controls or contact the software company.
+> It may not be legal to distribute all of the ActiveX controls on your system. Refer to the license agreement for the software that installed the controls or contact the software company.
 
 #### To add an ActiveX control
 
@@ -170,7 +170,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 
 #### To edit properties for an ActiveX control
 
-ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. These properties are displayed in the **Properties** window, including any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box (to view the **Property Page** for a specific ActiveX control, select the **Property Page** button in the [Properties window](/visualstudio/ide/reference/properties-window)).
+ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. These properties are displayed in the **Properties** window. Any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box. (To view the **Property Page** for a specific ActiveX control, select the **Property Page** button in the [Properties window](/visualstudio/ide/reference/properties-window)).
 
 - Select the **ActiveX** control and go to menu **View** > **Property Page** to view the properties. Make changes as needed in the property page.
 
@@ -183,11 +183,11 @@ ActiveX controls supplied by independent vendors may come equipped with their ow
 
 Win32
 
-## See Also
+## See also
 
 [Manage Dialog Box Controls](controls-in-dialog-boxes.md)<br/>
 [How To: Layout Controls](arrangement-of-controls-on-dialog-boxes.md)<br/>
-[How to: Define Control Access and Values](defining-mnemonics-access-keys.md)<br/>
+[How to: Define Control Access and Values](defining-mnemonics-access-keys.md)
 
 <!-- excluded links
 [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>

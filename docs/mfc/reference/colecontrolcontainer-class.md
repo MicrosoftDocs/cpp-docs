@@ -399,7 +399,7 @@ The identifier of the control.
 Pointer to a Boolean variable that receives a function success/failure value (TRUE indicates success, FALSE indicates failure).
 
 *bSigned*<br/>
-Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Return Value
 
@@ -441,7 +441,7 @@ Specifies the maximum length, in characters, of the string to be copied to the b
 
 If the function succeeds, the return value specifies the number of characters copied to the buffer, not including the terminating null character.
 
-If the function fails, the return value is zero. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).
+If the function fails, the return value is zero. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus
 

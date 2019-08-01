@@ -1,13 +1,13 @@
 ---
 title: "How to: Use Existing C++ Code in a Universal Windows Platform App"
-ms.date: "08/21/2018"
+ms.date: "04/08/2019"
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
 ---
 # How to: Use Existing C++ Code in a Universal Windows Platform App
 
-Perhaps the easiest way to get your desktop program running in the UWP environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
+Perhaps the easiest way to get your desktop program running in the Universal Windows Platform (UWP) environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
-The rest of this topic discusses how to port C++ libraries (DLLs and static libraries) to the Universal Windows Platform (UWP). You might want to do this so that your core C++ logic can be used with multiple UWP apps.
+The rest of this topic discusses how to port C++ libraries (DLLs and static libraries) to the Universal Windows Platform. You might want to do this so that your core C++ logic can be used with multiple UWP apps.
 
 UWP Apps run in a protected environment, and as a result, many Win32, COM, and CRT API calls that might compromise the security of the platform are not allowed. The compiler can detect such calls and generate an error, if the `/ZW` option is used. You can use the App Certification Kit on your application to detect code that calls forbidden APIs. For more information, see [Windows App Certification Kit](/windows/uwp/debug-test-perf/windows-app-certification-kit).
 
@@ -48,11 +48,11 @@ This topic contains the following procedures:
 
 For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM APIs for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).
 
-The following procedure applies to the case where you have a native DLL that exposes functions using **__declspec(dllexport)**.
+The following procedure applies to the case where you have a native DLL that exposes functions using `__declspec(dllexport)`.
 
 ### To port a native DLL to the UWP without creating a new project
 
-1. If you have a native DLL that exports functions by using **__declspec(dllexport)**, you can call those functions from a UWP app by recompiling the DLL as a UWP project. For example, suppose we have a DLL that exports a couple of classes and their methods, with code like the following header file:
+1. If you have a native DLL that exports functions by using `__declspec(dllexport)`, you can call those functions from a UWP app by recompiling the DLL as a UWP project. For example, suppose we have a DLL that exports a couple of classes and their methods, with code like the following header file:
 
     ```cpp
     // giraffe.h
@@ -125,7 +125,7 @@ The following procedure applies to the case where you have a native DLL that exp
 
    Everything else in the project (stdafx.h, dllmain.cpp) is part of the standard Win32 project template. If you want to follow along, but don't want to use your own DLL yet with these steps, try creating a Win32 project, select DLL in the project wizard, and then add a header file giraffe.h and code file giraffe.cpp, and copy the contents from the code in this step into the appropriate files.
 
-   The code defines the macro `GIRAFFE_API` which resolves to **__declspec(dllexport)** when `_DLL` is defined (that is, when the project is built as a DLL).
+   The code defines the macro `GIRAFFE_API` which resolves to `__declspec(dllexport)` when `_DLL` is defined (that is, when the project is built as a DLL).
 
 2. Open the **Project Properties** for the DLL project, and set the **Configuration** to **All Configurations**.
 
@@ -151,7 +151,7 @@ The following procedure applies to the case where you have a native DLL that exp
 
    The issue is that the Universal Windows projects use a different naming convention for the precompiled header file.
 
-6. Build the project. You might get some errors about incompatible command line options. For example, the frequently used option **Enable Minimal Rebuild (/Gm)** is set by default in many C++ projects, and is incompatible with `/ZW`.
+6. Build the project. You might get some errors about incompatible command line options. For example, the now deprecated but frequently used option **Enable Minimal Rebuild (/Gm)** is set by default in many older C++ projects, and is incompatible with `/ZW`.
 
    Some functions are not available when you compile for the Universal Windows Platform. You will see compiler errors about any problems. Address these until you have a clean build.
 
@@ -187,9 +187,9 @@ However, you can use a static library in a UWP without recompiling it with `/ZW`
 
 ### To use a native C++ static library in a UWP project
 
-1. In the project properties for the UWP project, in the **Linker** section, add the path to the library in the **Input** property. For example, for a library in the project that places its output in *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, add the relative path `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
+1. In the project properties for the UWP project, choose **Configuration Properties** > **Linker** > **Input** in the left pane. In the right pane, add the path to the library in the **Additional Dependencies** property. For example, for a library in the project that places its output in *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib, add the relative path `Debug\MyNativeLibrary\MyNativeLibrary.lib`.
 
-2. Add an include statement to reference the header file to your pch.h in the UWP project and start adding code that uses the library.
+2. Add an include statement to reference the header file to your pch.h file (if present), or in any .cpp file as needed, and start adding code that uses the library.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"

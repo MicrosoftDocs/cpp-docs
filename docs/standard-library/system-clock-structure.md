@@ -64,7 +64,7 @@ static time_point from_time_t(time_t Tm) noexcept;
 
 ### Parameters
 
-*Tm*<br/>
+*Tm*\
 A [time_t](../c-runtime-library/standard-types.md) object.
 
 ## <a name="is_monotonic_constant"></a>  system_clock::is_monotonic Constant
@@ -121,11 +121,11 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### Parameters
 
-*Time*<br/>
+*Time*\
 A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[steady_clock struct](../standard-library/steady-clock-struct.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
+[steady_clock struct](../standard-library/steady-clock-struct.md)

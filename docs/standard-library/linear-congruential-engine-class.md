@@ -37,16 +37,16 @@ class linear_congruential_engine{
 
 ### Parameters
 
-*UIntType*<br/>
+*UIntType*\
 The unsigned integer result type. For possible types, see [\<random>](../standard-library/random.md).
 
-*A*<br/>
+*A*\
 **Multiplier**. **Precondition**: See Remarks section.
 
-*C*<br/>
+*C*\
 **Increment**. **Precondition**: See Remarks section.
 
-*M*<br/>
+*M*\
 **Modulus**. **Precondition**: See remarks.
 
 ## Members
@@ -84,7 +84,7 @@ typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_ra
 typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;
 ```
 
-For detailed information about the linear congruential engine algorithm, see the Wikipedia article [Linear congruential generator](http://go.microsoft.com/fwlink/p/?linkid=402446).
+For detailed information about the linear congruential engine algorithm, see the Wikipedia article [Linear congruential generator](https://go.microsoft.com/fwlink/p/?linkid=402446).
 
 ## Requirements
 
@@ -94,4 +94,4 @@ For detailed information about the linear congruential engine algorithm, see the
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

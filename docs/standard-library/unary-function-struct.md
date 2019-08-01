@@ -69,19 +69,9 @@ int main()
     cout << "The number of elements in v1 greater than 10 is: "
          << result1 << "." << endl;
 }
-/* Output:
-The vector v1 = ( 0 5 10 15 20 25 )
-The number of elements in v1 greater than 10 is: 3.
-*/
 ```
 
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+```Output
+The vector v1 = ( 0 5 10 15 20 25 )
+The number of elements in v1 greater than 10 is: 3.
+```

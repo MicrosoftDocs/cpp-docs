@@ -96,7 +96,7 @@ See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746(
 
 Use this method with [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) to retrieve properties from the data source object.
 
-## See Also
+## See also
 
 [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

@@ -1,2 +1,2 @@
-	// CMFCRibbonMainPanel* pMainPanel
-	pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
+// CMFCRibbonMainPanel* pMainPanel
+pMainPanel->Add(new CMFCRibbonSeparator(TRUE));

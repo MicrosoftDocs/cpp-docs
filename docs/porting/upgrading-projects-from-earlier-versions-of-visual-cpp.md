@@ -1,6 +1,7 @@
 ---
 title: "Upgrading Projects from Earlier Versions of Visual C++"
-ms.date: "11/04/2016"
+description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
+ms.date: "05/03/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---
@@ -33,10 +34,10 @@ For information about how to update the targeted Windows versions, see [Modifyin
 [Floating-point migration issues](floating-point-migration-issues.md)<br/>
 [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)<br/>
 [Visual C++ features deprecated in Visual Studio 2019 preview](features-deprecated-in-visual-studio.md)<br/>
-[Build System Changes](build-system-changes.md)<br/>
+[Build System Changes](build-system-changes.md)
 
-## See Also
+## See also
 
-[What's New for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

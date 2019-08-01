@@ -19,10 +19,10 @@ class basic_ios : public ios_base
 
 ### Parameters
 
-*Elem*<br/>
+*Elem*\
 A type.
 
-*Traits*<br/>
+*Traits*\
 A variable of type `char_traits`.
 
 ## Remarks
@@ -137,7 +137,7 @@ basic_ios();
 
 ### Parameters
 
-*sb*<br/>
+*sb*\
 Standard buffer to store input or output elements.
 
 ### Remarks
@@ -163,10 +163,10 @@ void clear(io_state state);
 
 ### Parameters
 
-*state*<br/>
+*state*\
 (Optional) The flags you want to set after clearing all flags. Defaults to `goodbit`.
 
-*reraise*<br/>
+*reraise*\
 (Optional) Specifies whether the exception should be re-raised. Defaults to **false** (will not re-raise the exception).
 
 ### Remarks
@@ -194,7 +194,7 @@ const basic_ios<Elem, Traits>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The stream whose flags you want to copy.
 
 ### Return Value
@@ -276,7 +276,7 @@ void exceptions(io_state Newexcept);
 
 ### Parameters
 
-*Newexcept*<br/>
+*Newexcept*\
 The flags that you want to throw an exception.
 
 ### Return Value
@@ -364,7 +364,7 @@ char_type fill(char_type Char);
 
 ### Parameters
 
-*Char*<br/>
+*Char*\
 The character you want as the fill character.
 
 ### Return Value
@@ -428,7 +428,7 @@ locale imbue(const locale& Loc);
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 A locale string.
 
 ### Return Value
@@ -471,10 +471,10 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### Parameters
 
-*_Sb*<br/>
+*_Sb*\
 Standard buffer to store input or output elements.
 
-*_Isstd*<br/>
+*_Isstd*\
 Specifies whether this is a standard stream.
 
 ### Remarks
@@ -519,7 +519,7 @@ void move(basic_ios&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `ios_base` object to move values from.
 
 ### Remarks
@@ -536,10 +536,10 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### Parameters
 
-*Char*<br/>
+*Char*\
 The **char** to convert.
 
-*Default*<br/>
+*Default*\
 The **char** that you want returned if no equivalent is found.
 
 ### Return Value
@@ -671,7 +671,7 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### Parameters
 
-*_Sb*<br/>
+*_Sb*\
 A stream.
 
 ### Remarks
@@ -763,7 +763,7 @@ void setstate(iostate _State);
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 Additional flags to set.
 
 ### Remarks
@@ -813,7 +813,7 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 The stream buffer to become the read buffer.
 
 ### Remarks
@@ -832,7 +832,7 @@ basic_ostream<Elem, Traits>* str);
 
 ### Parameters
 
-*str*<br/>
+*str*\
 A stream.
 
 ### Return Value
@@ -879,7 +879,7 @@ char_type widen(char Char) const;
 
 ### Parameters
 
-*Char*<br/>
+*Char*\
 The character to convert.
 
 ### Return Value
@@ -920,7 +920,7 @@ void swap(basic_ios&& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `basic_ios` object that is used to exchange values.
 
 ### Remarks
@@ -929,6 +929,6 @@ The protected member function exchanges all the values stored in *right* with `*
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

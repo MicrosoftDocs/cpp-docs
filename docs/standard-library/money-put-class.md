@@ -19,10 +19,10 @@ class money_put : public locale::facet;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters in a locale.
 
-*OutputIterator*<br/>
+*OutputIterator*\
 The type of iterator to which the monetary put functions write their output.
 
 ## Remarks
@@ -90,19 +90,19 @@ virtual iter_type do_put(
 
 ### Parameters
 
-*next*<br/>
+*next*\
 An iterator addressing the first element of the inserted string.
 
-*_Intl*<br/>
+*_Intl*\
 A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*_Fill*<br/>
+*_Fill*\
 A character which is used for spacing.
 
-*val*<br/>
+*val*\
 A string object to be converted.
 
 ### Return Value
@@ -173,7 +173,7 @@ explicit money_put(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -212,19 +212,19 @@ iter_type put(
 
 ### Parameters
 
-*next*<br/>
+*next*\
 An iterator addressing the first element of the inserted string.
 
-*_Intl*<br/>
+*_Intl*\
 A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*_Iosbase*<br/>
+*_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*_Fill*<br/>
+*_Fill*\
 A character which is used for spacing.
 
-*val*<br/>
+*val*\
 A string object to be converted.
 
 ### Return Value
@@ -277,6 +277,6 @@ The type describes a specialization of template class [basic_string](../standard
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet Class](../standard-library/locale-class.md#facet_class)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet Class](../standard-library/locale-class.md#facet_class)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

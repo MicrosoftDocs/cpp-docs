@@ -1,2 +1,2 @@
-	CSettingsStoreSP regSP;
-	CSettingsStore& reg = regSP.Create(FALSE, TRUE);
+CSettingsStoreSP regSP;
+CSettingsStore &reg = regSP.Create(FALSE, TRUE);

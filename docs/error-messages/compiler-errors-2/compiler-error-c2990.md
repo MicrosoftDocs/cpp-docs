@@ -32,7 +32,7 @@ ref struct GC;
 ref struct GC {};   // C2990
 ```
 
-C2990 can also occur due to a breaking change in the Visual C++ compiler for Visual C++ 2005; the compiler now requires that multiple declarations for the same type be identical with respect to template specification.
+C2990 can also occur due to a breaking change in the Microsoft C++ compiler for Visual Studio 2005; the compiler now requires that multiple declarations for the same type be identical with respect to template specification.
 
 The following sample generates C2990:
 

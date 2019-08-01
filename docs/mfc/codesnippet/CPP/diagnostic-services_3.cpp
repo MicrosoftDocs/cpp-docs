@@ -1,1 +1,1 @@
-   ASSERT_KINDOF(CMyDoc, pDocument);
+ASSERT_KINDOF(CMyDoc, pDocument);

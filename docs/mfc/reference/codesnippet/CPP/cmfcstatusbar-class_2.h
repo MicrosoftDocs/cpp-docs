@@ -1,6 +1,6 @@
 // in MainFrm.h
 public:
-	CMFCStatusBar& GetStatusBar ()
-	{
-		return m_wndStatusBar;
-	}
+CMFCStatusBar &GetStatusBar()
+{
+   return m_wndStatusBar;
+}

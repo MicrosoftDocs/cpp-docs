@@ -40,13 +40,13 @@ Describes the resource editors provided in Visual Studio and the types of resour
 
 ## Related Sections
 
-[Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)<br/>
 Provides links into the Visual C++ documentation.
 
 [Talk to Us](/visualstudio/ide/talk-to-us)<br/>
 Provides links to information on using the documentation set, contacting product support, and employing accessibility features.
 
-## See Also
+## See also
 
 [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)<br/>
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[Menus and Other Resources](/windows/desktop/menurc/resources)

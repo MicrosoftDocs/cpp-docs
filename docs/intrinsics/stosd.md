@@ -77,6 +77,6 @@ printf_s( "%u %u %u %u",
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,7 +1,6 @@
 ---
 title: "User-Defined Handlers"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.handlers"]
 helpviewer_keywords: ["ON_REGISTERED_MESSAGE macro [MFC]", "ON_MESSAGE macro [MFC]", "user-defined handlers [MFC]"]
 ms.assetid: 99478294-bef0-4ba7-a369-25a6abdcdb62
 ---

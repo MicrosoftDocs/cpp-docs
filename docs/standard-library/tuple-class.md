@@ -13,7 +13,6 @@ Wraps a fixed-length sequence of elements.
 
 ```
 class tuple {
-public:
    tuple();
    explicit tuple(P1, P2, ..., PN); // 0 < N
    tuple(const tuple&);
@@ -28,12 +27,12 @@ public:
       tuple& operator=(const tuple<U1, U2, ..., UN>&);
    template <class U1, class U2>
       tuple& operator=(const pair<U1, U2>&); // N == 2
-   };
+};
 ```
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The type of the Nth tuple element.
 
 ## Remarks
@@ -108,13 +107,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## Requirements
-
-**Header:** \<tuple>
-
-**Namespace:** std
-
-## <a name="op_eq"></a>  tuple::operator=
+## <a name="op_eq"></a> operator=
 
 Assigns a `tuple` object.
 
@@ -135,10 +128,10 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*<br/>
+*UN*\
 The type of the Nth copied tuple element.
 
-*right*<br/>
+*right*\
 The tuple to copy from.
 
 ### Remarks
@@ -187,7 +180,7 @@ int main()
     std::cout << std::endl;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -196,7 +189,7 @@ int main()
 x 4
 ```
 
-## <a name="tuple_swap"></a>  tuple:swap
+## <a name="tuple_swap"></a> swap
 
 Exchanges the elements of two tuples.
 
@@ -207,16 +200,17 @@ template <class... Types>
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|A tuple whose elements are to be exchanged with those of the tuple *right*.|
-|*right*|A tuple whose elements are to be exchanged with those of the tuple *left*.|
+*left*\
+A tuple whose elements are to be exchanged with those of the tuple *right*.
+
+*right*\
+A tuple whose elements are to be exchanged with those of the tuple *left*.
 
 ### Remarks
 
 The function executes `left.swap(right)`.
 
-## <a name="tuple"></a>  tuple::tuple
+## <a name="tuple"></a> tuple
 
 Constructs a `tuple` object.
 
@@ -243,10 +237,10 @@ template <class U1, class U2>
 
 ### Parameters
 
-*UN*<br/>
+*UN*\
 The type of the Nth copied tuple element.
 
-*right*<br/>
+*right*\
 The tuple to copy from.
 
 ### Remarks
@@ -329,8 +323,3 @@ x 4
 0 1 2 3
 4 5 6 7
 ```
-
-## See also
-
-[\<tuple>](../standard-library/tuple.md)<br/>
-[make_tuple](../standard-library/tuple-functions.md#make_tuple)<br/>

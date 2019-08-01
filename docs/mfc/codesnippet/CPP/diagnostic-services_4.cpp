@@ -1,1 +1,1 @@
-   ASSERT(pDocument->IsKindOf(RUNTIME_CLASS(CMyDoc)));
+ASSERT(pDocument->IsKindOf(RUNTIME_CLASS(CMyDoc)));

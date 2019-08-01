@@ -10,9 +10,9 @@
 int CMyODListBox::CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct)
 {
    ASSERT(lpCompareItemStruct->CtlType == ODT_LISTBOX);
-   LPCTSTR lpszText1 = (LPCTSTR) lpCompareItemStruct->itemData1;
+   LPCTSTR lpszText1 = (LPCTSTR)lpCompareItemStruct->itemData1;
    ASSERT(lpszText1 != NULL);
-   LPCTSTR lpszText2 = (LPCTSTR) lpCompareItemStruct->itemData2;
+   LPCTSTR lpszText2 = (LPCTSTR)lpCompareItemStruct->itemData2;
    ASSERT(lpszText2 != NULL);
 
    return _tcscmp(lpszText2, lpszText1);

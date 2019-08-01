@@ -1,13 +1,13 @@
 ---
 title: "CD2DResource Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CD2DResource", "AFXRENDERTARGET/CD2DResource", "AFXRENDERTARGET/CD2DResource::CD2DResource", "AFXRENDERTARGET/CD2DResource::Create", "AFXRENDERTARGET/CD2DResource::Destroy", "AFXRENDERTARGET/CD2DResource::IsValid", "AFXRENDERTARGET/CD2DResource::IsAutoDestroy", "AFXRENDERTARGET/CD2DResource::ReCreate", "AFXRENDERTARGET/CD2DResource::m_bIsAutoDestroy", "AFXRENDERTARGET/CD2DResource::m_pParentTarget"]
 helpviewer_keywords: ["CD2DResource [MFC], CD2DResource", "CD2DResource [MFC], Create", "CD2DResource [MFC], Destroy", "CD2DResource [MFC], IsValid", "CD2DResource [MFC], IsAutoDestroy", "CD2DResource [MFC], ReCreate", "CD2DResource [MFC], m_bIsAutoDestroy", "CD2DResource [MFC], m_pParentTarget"]
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
 ---
 # CD2DResource Class
 
-An abstract class that provides a interface for creating and managing D2D resources such as brushes, layers, and texts.
+An abstract class that provides an interface for creating and managing D2D resources such as brushes, layers, and texts.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ class CD2DResource : public CObject;
 |Name|Description|
 |----------|-----------------|
 |[CD2DResource::CD2DResource](#cd2dresource)|Constructs a CD2DResource object.|
-|[CD2DResource::~CD2DResource](#cd2dresource__~cd2dresource)|The destructor. Called when a D2D resource object is being destroyed.|
+|[CD2DResource::~CD2DResource](#_dtorcd2dresource)|The destructor. Called when a D2D resource object is being destroyed.|
 
 ### Public Methods
 
@@ -43,7 +43,7 @@ class CD2DResource : public CObject;
 
 |Name|Description|
 |----------|-----------------|
-|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Resource will be destoyed by owner (CRenderTarget)|
+|[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|Resource will be destroyed by owner (CRenderTarget)|
 |[CD2DResource::m_pParentTarget](#m_pparenttarget)|Pointer to the parent CRenderTarget)|
 
 ## Inheritance Hierarchy
@@ -133,7 +133,7 @@ TRUE if resource is valid; otherwise FALSE.
 
 ##  <a name="m_bisautodestroy"></a>  CD2DResource::m_bIsAutoDestroy
 
-Resource will be destoyed by owner (CRenderTarget)
+Resource will be destroyed by owner (CRenderTarget)
 
 ```
 BOOL m_bIsAutoDestroy;

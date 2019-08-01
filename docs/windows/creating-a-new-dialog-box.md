@@ -10,7 +10,7 @@ ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
 The location and size of a C++ dialog box, and the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
 > [!NOTE]
-> If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+> If your project doesn't already contain an .rc file, see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 ## How To
 
@@ -18,7 +18,7 @@ The **Dialog Editor** enables you:
 
 ### To create a new dialog box
 
-1. In [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), right-click your *.rc* file and select **Add Resource**.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and select **Add Resource**.
 
 1. In the **Add Resource** dialog box, select **Dialog** in the **Resource Type** list, then choose **New**.
 
@@ -86,7 +86,7 @@ When you test a dialog box, it typically displays at a location that's relative 
 
 Win32
 
-## See Also
+## See also
 
 [Dialog Editor](../windows/dialog-editor.md)<br/>
 [How to: Manage Dialog Box Controls](../windows/controls-in-dialog-boxes.md)<br/>

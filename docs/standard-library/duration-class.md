@@ -1,6 +1,6 @@
 ---
 title: "duration Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2016"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords: ["std::chrono [C++], duration"]
@@ -96,16 +96,16 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### Parameters
 
-*Rep2*<br/>
+*Rep2*\
 An arithmetic type to represent the number of ticks.
 
-*Period2*<br/>
+*Period2*\
 A `std::ratio` template specialization to represent the tick period in units of seconds.
 
-*R*<br/>
+*R*\
 The number of ticks of default period.
 
-*Dur*<br/>
+*Dur*\
 The number of ticks of period specified by *Period2*.
 
 ### Remarks
@@ -146,7 +146,7 @@ static constexpr duration min();
 
 In effect, returns `duration(duration_values<rep>::min())`.
 
-## <a name="duration__operator-"></a>  duration::operator-
+## <a name="operator-"></a>  duration::operator-
 
 Returns a copy of the `duration` object together with a negated tick count.
 
@@ -154,7 +154,7 @@ Returns a copy of the `duration` object together with a negated tick count.
 constexpr duration operator-() const;
 ```
 
-## <a name="duration__operator--"></a>  duration::operator--
+## <a name="operator--"></a>  duration::operator--
 
 Decrements the stored tick count.
 
@@ -182,7 +182,7 @@ duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
 
 ### Return Value
@@ -199,7 +199,7 @@ duration& operator*=(const rep& Mult);
 
 ### Parameters
 
-*Mult*<br/>
+*Mult*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -216,7 +216,7 @@ duration& operator/=(const rep& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -257,14 +257,14 @@ duration& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
 
 The `duration` object after the addition is performed.
 
-## <a name="duration__operator-_eq"></a>  duration::operator-=
+## <a name="operator-_eq"></a>  duration::operator-=
 
 Subtracts the tick count of a specified `duration` object from the stored tick count.
 
@@ -274,7 +274,7 @@ duration& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -299,7 +299,7 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*<br/>
+*Div*\
 The divisor, which is either a duration object or a value that represents tick counts.
 
 ### Remarks
@@ -308,6 +308,6 @@ The first member function reduces the stored tick count modulo Div and returns *
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
-[duration_values Structure](../standard-library/duration-values-structure.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)\
+[duration_values Structure](../standard-library/duration-values-structure.md)

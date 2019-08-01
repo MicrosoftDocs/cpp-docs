@@ -1,1 +1,1 @@
-         [id(1)] void ClickIn(OLE_XPOS_PIXELS xCoord, OLE_YPOS_PIXELS yCoord);
+[id(1)] void ClickIn(OLE_XPOS_PIXELS xCoord, OLE_YPOS_PIXELS yCoord);

@@ -1,12 +1,12 @@
 ---
 title: "MSVC Compiler Options"
-ms.date: "01/29/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["cl.exe compiler", "x86 MSVC compiler", "ARM MSVC compiler", "compiler options, C++", "x64 MSVC compiler"]
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
 ---
 # Compiler Options
 
-cl.exe is a tool that controls the Microsoft Visual C++ (MSVC) C and C++ compilers and linker. cl.exe can be run only on operating systems that support Microsoft Visual Studio for Windows.
+cl.exe is a tool that controls the Microsoft C++ (MSVC) C and C++ compilers and linker. cl.exe can be run only on operating systems that support Microsoft Visual Studio for Windows.
 
 > [!NOTE]
 > You can start this tool only from a Visual Studio developer command prompt. You cannot start it from a system command prompt or from File Explorer. For more information, see [Use the MSVC toolset from the command line](../building-on-the-command-line.md).

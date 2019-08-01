@@ -19,5 +19,5 @@ void CPSheetView::OnModelessPropertySheet()
    m_pdlgPropertySheet->AddPage(m_pshapePage);
 
    // Create a modeless CPropertySheet dialog.
-   m_pdlgPropertySheet->Create(); 
+   m_pdlgPropertySheet->Create();
 }

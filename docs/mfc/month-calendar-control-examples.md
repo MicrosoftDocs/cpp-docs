@@ -6,7 +6,7 @@ ms.assetid: 1af7fb59-d6fd-46e0-aaa5-b0394a0a3ed5
 ---
 # Month Calendar Control Examples
 
-The [CMNCTRL1](../visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.
+The [CMNCTRL1](../overview/visual-cpp-samples.md) sample application demonstrates the various attributes of the `CMonthCalCtrl` class. The control, found on a separate tab in the sample, demonstrates basic functionality and allows the user to dynamically modify certain attributes.
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: "time_point Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
 helpviewer_keywords: ["std::chrono [C++], time_point"]
@@ -89,14 +89,14 @@ time_point& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
 
 The `time_point` object after the addition is performed.
 
-## <a name="time_point__operator-_eq"></a>  time_point::operator-=
+## <a name="operator-_eq"></a>  time_point::operator-=
 
 Subtracts a specified value from the stored [duration](../standard-library/duration-class.md) value.
 
@@ -106,7 +106,7 @@ time_point& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A `duration` object.
 
 ### Return Value
@@ -128,10 +128,10 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### Parameters
 
-*Dur*<br/>
+*Dur*\
 A [duration](../standard-library/duration-class.md) object.
 
-*Tp*<br/>
+*Tp*\
 A `time_point` object.
 
 ### Remarks
@@ -152,5 +152,5 @@ constexpr duration time_since_epoch() const;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<chrono>](../standard-library/chrono.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)

@@ -1,2 +1,2 @@
-   SHORT GetCircleOffset(void);
-   void SetCircleOffset(SHORT newVal);
+SHORT GetCircleOffset(void);
+void SetCircleOffset(SHORT newVal);

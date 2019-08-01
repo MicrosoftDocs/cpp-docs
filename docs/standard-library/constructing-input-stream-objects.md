@@ -48,4 +48,4 @@ myString>> amt; // amt contains 123.45
 
 ## See also
 
-[Input Streams](../standard-library/input-streams.md)<br/>
+[Input Streams](../standard-library/input-streams.md)

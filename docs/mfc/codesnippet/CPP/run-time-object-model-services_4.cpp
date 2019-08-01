@@ -1,1 +1,1 @@
-IMPLEMENT_DYNAMIC( CPerson, CObject )
+IMPLEMENT_DYNAMIC(CPerson, CObject)

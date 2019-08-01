@@ -21,7 +21,7 @@ using remove_all_extents_t = typename remove_all_extents<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -58,5 +58,5 @@ int main()
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[remove_extent Class](../standard-library/remove-extent-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[remove_extent Class](../standard-library/remove-extent-class.md)

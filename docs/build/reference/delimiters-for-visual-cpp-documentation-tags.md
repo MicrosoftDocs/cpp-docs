@@ -12,7 +12,7 @@ You can use the following kinds of delimiters with the XML documentation tags:
 
 | | |
 |-|-|
-| `///` | This is the form that is shown in documentation examples and used by the Visual C++ project templates.  |
+| `///` | This is the form that is shown in documentation examples and used by the Visual Studio C++ project templates.  |
 | `/** */`  | These are multiline delimiters.  |
 
 There are some formatting rules when using the `/** */` delimiters:

@@ -91,7 +91,7 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `packaged_task` object.
 
 ### Return Value
@@ -147,13 +147,13 @@ template <class Fn, class Alloc>
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `packaged_task` object.
 
-*alloc*<br/>
+*alloc*\
 A memory allocator. For more information, see [\<allocators>](../standard-library/allocators-header.md).
 
-*fn*<br/>
+*fn*\
 A function object.
 
 ### Remarks
@@ -200,7 +200,7 @@ void swap(packaged_task& Right) noexcept;
 
 ### Parameters
 
-*Right*<br/>
+*Right*\
 A `packaged_task` object.
 
 ## <a name="valid"></a>  packaged_task::valid
@@ -217,5 +217,5 @@ bool valid() const;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<future>](../standard-library/future.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

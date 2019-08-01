@@ -42,10 +42,10 @@ public:
 
 ### Parameters
 
-*RealType*<br/>
+*RealType*\
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*<br/>
+*URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -69,7 +69,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](http://go.microsoft.com/fwlink/p/?linkid=400523).
+For detailed information about the cauchy distribution, see the Wolfram MathWorld article [Cauchy Distribution](https://go.microsoft.com/fwlink/p/?linkid=400523).
 
 ## Example
 
@@ -223,13 +223,13 @@ explicit cauchy_distribution(const param_type& parm);
 
 ### Parameters
 
-*a*<br/>
+*a*\
 The `a` distribution parameter.
 
-*b*<br/>
+*b*\
 The `b` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -258,13 +258,13 @@ struct param_type {
 
 ### Parameters
 
-*a*<br/>
+*a*\
 The `a` distribution parameter.
 
-*b*<br/>
+*b*\
 The `b` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` object to compare to this.
 
 ### Remarks
@@ -275,4 +275,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

@@ -23,18 +23,18 @@ class map;
 
 ### Parameters
 
-*Key*<br/>
+*Key*\
 The key data type to be stored in the map.
 
-*Type*<br/>
+*Type*\
 The element data type to be stored in the map.
 
-*Traits*<br/>
+*Traits*\
 The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<Key>` is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the std::less<> predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator*<br/>
+*Allocator*\
 The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
 
 ## Remarks
@@ -70,13 +70,13 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[map](#map)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other map.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the map object.|
 |[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a **const** element in the map.|
@@ -127,18 +127,12 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator&#91;&#93;](#op_at)|Inserts an element into a map with a specified key value.|
 |[operator=](#op_eq)|Replaces the elements of a map with a copy of another map.|
 
-## Requirements
-
-**Header:** \<map>
-
-**Namespace:** std
-
-## <a name="allocator_type"></a>  map::allocator_type
+## <a name="allocator_type"></a> allocator_type
 
 A type that represents the allocator class for the map object.
 
@@ -150,7 +144,7 @@ typedef Allocator allocator_type;
 
 See example for [get_allocator](#get_allocator) for an example that uses `allocator_type`.
 
-## <a name="at"></a>  map::at
+## <a name="at"></a> at
 
 Finds an element with a specified key value.
 
@@ -162,10 +156,8 @@ const Type& at(const Key& key) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*key*|The key value to find.|
+key*\
+The key value to find.
 
 ### Return Value
 
@@ -201,7 +193,7 @@ int main()
     }
 ```
 
-## <a name="begin"></a>  map::begin
+## <a name="begin"></a> begin
 
 Returns an iterator addressing the first element in the map.
 
@@ -256,7 +248,7 @@ The first element of m1 is 0
 The first element of m1 is now 1
 ```
 
-## <a name="cbegin"></a>  map::cbegin
+## <a name="cbegin"></a> cbegin
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -282,7 +274,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>  map::cend
+## <a name="cend"></a> cend
 
 Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
@@ -310,7 +302,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` should not be dereferenced.
 
-## <a name="clear"></a>  map::clear
+## <a name="clear"></a> clear
 
 Erases all the elements of a map.
 
@@ -354,7 +346,7 @@ The size of the map is initially 2.
 The size of the map after clearing is 0.
 ```
 
-## <a name="const_iterator"></a>  map::const_iterator
+## <a name="const_iterator"></a> const_iterator
 
 A type that provides a bidirectional iterator that can read a **const** element in the map.
 
@@ -378,7 +370,7 @@ To access the value of the mapped datum for the element, use `cIter` -> **second
 
 See example for [begin](#begin) for an example that uses `const_iterator`.
 
-## <a name="const_pointer"></a>  map::const_pointer
+## <a name="const_pointer"></a> const_pointer
 
 A type that provides a pointer to a **const** element in a map.
 
@@ -392,7 +384,7 @@ A type `const_pointer` cannot be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a map object.
 
-## <a name="const_reference"></a>  map::const_reference
+## <a name="const_reference"></a> const_reference
 
 A type that provides a reference to a **const** element stored in a map for reading and performing **const** operations.
 
@@ -442,7 +434,7 @@ The key of first element in the map is 1.
 The data value of first element in the map is 10.
 ```
 
-## <a name="const_reverse_iterator"></a>  map::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
 A type that provides a bidirectional iterator that can read any **const** element in the map.
 
@@ -466,7 +458,7 @@ To access the value of the mapped datum for the element, use `crIter` -> **secon
 
 See the example for [rend](#rend) for an example of how to declare and use `const_reverse_iterator`.
 
-## <a name="count"></a>  map::count
+## <a name="count"></a> count
 
 Returns the number of elements in a map whose key matches a parameter-specified key.
 
@@ -476,7 +468,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key value of the elements to be matched from the map.
 
 ### Return Value
@@ -534,7 +526,7 @@ The number of elements in m1 with a sort key of 2 is: 1.
 The number of elements in m1 with a sort key of 3 is: 0.
 ```
 
-## <a name="crbegin"></a>  map::crbegin
+## <a name="crbegin"></a> crbegin
 
 Returns a const iterator addressing the first element in a reversed map.
 
@@ -584,7 +576,7 @@ int main( )
 The first element of the reversed map m1 is 3.
 ```
 
-## <a name="crend"></a>  map::crend
+## <a name="crend"></a> crend
 
 Returns a const iterator that addresses the location succeeding the last element in a reversed map.
 
@@ -637,7 +629,7 @@ int main( )
 The last element of the reversed map m1 is 1.
 ```
 
-## <a name="difference_type"></a>  map::difference_type
+## <a name="difference_type"></a> difference_type
 
 A signed integer type that can be used to represent the number of elements of a map in a range between elements pointed to by iterators.
 
@@ -693,7 +685,7 @@ int main( )
 The number of elements in the map m1 is: 4.
 ```
 
-## <a name="emplace"></a>  map::emplace
+## <a name="emplace"></a> emplace
 
 Inserts an element constructed in place (no copy or move operations are performed) into a map.
 
@@ -706,10 +698,8 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*args*|The arguments forwarded to construct an element to be inserted into the map unless it already contains an element whose value is equivalently ordered.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the map unless it already contains an element whose value is equivalently ordered.
 
 ### Return Value
 
@@ -781,7 +771,7 @@ int main()
 }
 ```
 
-## <a name="emplace_hint"></a>  map::emplace_hint
+## <a name="emplace_hint"></a> emplace_hint
 
 Inserts an element constructed in place (no copy or move operations are performed), with a placement hint.
 
@@ -794,11 +784,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*args*|The arguments forwarded to construct an element to be inserted into the map unless the map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
-|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+*args*\
+The arguments forwarded to construct an element to be inserted into the map unless the map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.
+
+*where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)
 
 ### Return Value
 
@@ -858,7 +848,7 @@ int main()
 }
 ```
 
-## <a name="empty"></a>  map::empty
+## <a name="empty"></a> empty
 
 Tests if a map is empty.
 
@@ -903,7 +893,7 @@ The map m1 is not empty.
 The map m2 is empty.
 ```
 
-## <a name="end"></a>  map::end
+## <a name="end"></a> end
 
 Returns the past-the-end iterator.
 
@@ -925,7 +915,7 @@ The value returned by `end` should not be dereferenced.
 
 For a code example, see [map::find](#find).
 
-## <a name="equal_range"></a>  map::equal_range
+## <a name="equal_range"></a> equal_range
 
 Returns a pair of iterators that represent the [lower_bound](#lower_bound) of the key and the [upper_bound](#upper_bound) of the key.
 
@@ -937,7 +927,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
@@ -1004,7 +994,7 @@ matching the 2nd element of the pair returned by equal_range( 2 ).
 The map m1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="erase"></a>  map::erase
+## <a name="erase"></a> erase
 
 Removes an element or a range of elements in a map from specified positions or removes elements that match a specified key.
 
@@ -1022,16 +1012,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*<br/>
+*Where*\
 Position of the element to be removed.
 
-*First*<br/>
+*First*\
 Position of the first element to be removed.
 
-*Last*<br/>
+*Last*\
 Position just beyond the last element to be removed.
 
-*Key*<br/>
+*Key*\
 The key value of the elements to be removed.
 
 ### Return Value
@@ -1120,7 +1110,7 @@ int main()
 }
 ```
 
-## <a name="find"></a>  map::find
+## <a name="find"></a> find
 
 Returns an iterator that refers to the location of an element in a map that has a key equivalent to a specified key.
 
@@ -1132,7 +1122,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The key value to be matched by the sort key of an element from the map being searched.
 
 ### Return Value
@@ -1207,7 +1197,7 @@ int main()
 }
 ```
 
-## <a name="get_allocator"></a>  map::get_allocator
+## <a name="get_allocator"></a> get_allocator
 
 Returns a copy of the allocator object used to construct the map.
 
@@ -1277,7 +1267,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a>  map::insert
+## <a name="insert"></a> insert
 
 Inserts an element or a range of elements into a map.
 
@@ -1317,16 +1307,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*Val*|The value of an element to be inserted into the map unless it already contains an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
-|*ValTy*|Template parameter that specifies the argument type that the map can use to construct an element of [value_type](#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the map unless it already contains an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)
+
+*ValTy*\
+Template parameter that specifies the argument type that the map can use to construct an element of [value_type](#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1448,7 +1448,7 @@ int main()
 }
 ```
 
-## <a name="iterator"></a>  map::iterator
+## <a name="iterator"></a> iterator
 
 A type that provides a bidirectional iterator that can read or modify any element in a map.
 
@@ -1468,7 +1468,7 @@ To access the value of the key for the element, use `Iter->first`, which is equi
 
 See example for [begin](#begin) for an example of how to declare and use `iterator`.
 
-## <a name="key_comp"></a>  map::key_comp
+## <a name="key_comp"></a> key_comp
 
 Retrieves a copy of the comparison object used to order keys in a map.
 
@@ -1539,7 +1539,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of m1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.
 ```
 
-## <a name="key_compare"></a>  map::key_compare
+## <a name="key_compare"></a> key_compare
 
 A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the map.
 
@@ -1557,7 +1557,7 @@ For more information on *Traits* see the [map Class](../standard-library/map-cla
 
 See example for [key_comp](#key_comp) for an example of how to declare and use `key_compare`.
 
-## <a name="key_type"></a>  map::key_type
+## <a name="key_type"></a> key_type
 
 A type that describes the sort key stored in each element of the map.
 
@@ -1575,7 +1575,7 @@ For more information on *Key*, see the Remarks section of the [map Class](../sta
 
 See example for [value_type](#value_type) for an example of how to declare and use `key_type`.
 
-## <a name="lower_bound"></a>  map::lower_bound
+## <a name="lower_bound"></a> lower_bound
 
 Returns an iterator to the first element in a map with a key value that is equal to or greater than that of a specified key.
 
@@ -1587,7 +1587,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
@@ -1646,7 +1646,7 @@ The map m1 doesn't have an element with a key of 4.
 The element of m1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="map"></a>  map::map
+## <a name="map"></a> map
 
 Constructs a map that is empty or that is a copy of all or part of some other map.
 
@@ -1699,15 +1699,23 @@ map(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*Al*|The storage allocator class to be used for this map object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Traits` used to order the elements in the map, which defaults to `hash_compare`.|
-|*Right*|The map of which the constructed set is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list from which the elements are to be copied.|
+*Al*\
+The storage allocator class to be used for this map object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Traits` used to order the elements in the map, which defaults to `hash_compare`.
+
+*Right*\
+The map of which the constructed set is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list from which the elements are to be copied.
 
 ### Remarks
 
@@ -1843,7 +1851,7 @@ int main()
 }
 ```
 
-## <a name="mapped_type"></a>  map::mapped_type
+## <a name="mapped_type"></a> mapped_type
 
 A type that represents the data stored in a map.
 
@@ -1861,7 +1869,7 @@ For more information on *Type* see the [map Class](../standard-library/map-class
 
 See example for [value_type](#value_type) for an example of how to declare and use `mapped_type`.
 
-## <a name="max_size"></a>  map::max_size
+## <a name="max_size"></a> max_size
 
 Returns the maximum length of the map.
 
@@ -1894,7 +1902,7 @@ int main( )
 }
 ```
 
-## <a name="op_at"></a>  map::operator[]
+## <a name="op_at"></a> operator[]
 
 Inserts an element into a map with a specified key value.
 
@@ -1906,10 +1914,8 @@ Type& operator[](Key&& key);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*key*|The key value of the element that is to be inserted.|
+*key*\
+The key value of the element that is to be inserted.
 
 ### Return Value
 
@@ -1919,7 +1925,7 @@ A reference to the data value of the inserted element.
 
 If the argument key value is not found, then it is inserted along with the default value of the data type.
 
-`operator[]` may be used to insert elements into a map `m` using `m[ key] = DataValue;` where `DataValue` is the value of the `mapped_type` of the element with a key value of *key*.
+`operator[]` may be used to insert elements into a map `m` using `m[key] = DataValue;` where `DataValue` is the value of the `mapped_type` of the element with a key value of *key*.
 
 When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions [find](#find) and [insert](#insert) can be used to determine whether an element with a specified key is already present before an insertion.
 
@@ -1994,22 +2000,19 @@ c2[move(str)] == 0
 c2["abc"] == 1
 ```
 
-## <a name="op_eq"></a>  map::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the elements of a map with a copy of another map.
 
 ```cpp
 map& operator=(const map& right);
-
 map& operator=(map&& right);
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|Parameter|Description|
-|*right*|The [map](../standard-library/map-class.md) being copied into the `map`.|
+*right*\
+The [map](../standard-library/map-class.md) being copied into the `map`.
 
 ### Remarks
 
@@ -2052,7 +2055,7 @@ int main( )
    }
 ```
 
-## <a name="pointer"></a>  map::pointer
+## <a name="pointer"></a> pointer
 
 A type that provides a pointer to an element in a map.
 
@@ -2066,7 +2069,7 @@ A type `pointer` can be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a map object.
 
-## <a name="rbegin"></a>  map::rbegin
+## <a name="rbegin"></a> rbegin
 
 Returns an iterator addressing the first element in a reversed map.
 
@@ -2146,7 +2149,7 @@ The reversed map is: 3 2 1 .
 After the erasure, the first element in the reversed map is 2.
 ```
 
-## <a name="reference"></a>  map::reference
+## <a name="reference"></a> reference
 
 A type that provides a reference to an element stored in a map.
 
@@ -2203,7 +2206,7 @@ The data value of first element in the map is 10.
 The modified data value of first element is 15.
 ```
 
-## <a name="rend"></a>  map::rend
+## <a name="rend"></a> rend
 
 Returns an iterator that addresses the location succeeding the last element in a reversed map.
 
@@ -2287,7 +2290,7 @@ The reversed map is: 3 2 1 .
 After the erasure, the last element in the reversed map is 2.
 ```
 
-## <a name="reverse_iterator"></a>  map::reverse_iterator
+## <a name="reverse_iterator"></a> reverse_iterator
 
 A type that provides a bidirectional iterator that can read or modify an element in a reversed map.
 
@@ -2309,7 +2312,7 @@ To access the value of the key for the element, use `rIter` -> **first**, which 
 
 See example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-## <a name="size"></a>  map::size
+## <a name="size"></a> size
 
 Returns the number of elements in the map.
 
@@ -2353,7 +2356,7 @@ The map length is 1.
 The map length is now 2.
 ```
 
-## <a name="size_type"></a>  map::size_type
+## <a name="size_type"></a> size_type
 
 An unsigned integer type that can represent the number of elements in a map.
 
@@ -2365,7 +2368,7 @@ typedef typename allocator_type::size_type size_type;
 
 See the example for [size](#size) for an example of how to declare and use `size_type`.
 
-## <a name="swap"></a>  map::swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two maps.
 
@@ -2376,7 +2379,7 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The argument map providing the elements to be swapped with the target map.
 
 ### Remarks
@@ -2435,7 +2438,7 @@ After swapping with m2, map m1 is: 100 200.
 After swapping with m3, map m1 is: 300.
 ```
 
-## <a name="upper_bound"></a>  map::upper_bound
+## <a name="upper_bound"></a> upper_bound
 
 Returns an iterator to the first element in a map that with a key having a value that is greater than that of a specified key.
 
@@ -2447,7 +2450,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*<br/>
+*key*\
 The argument key value to be compared with the sort key value of an element from the map being searched.
 
 ### Return Value
@@ -2507,7 +2510,7 @@ The 1st element of m1 with a key greater than
 that of the initial element of m1 is: 20.
 ```
 
-## <a name="value_comp"></a>  map::value_comp
+## <a name="value_comp"></a> value_comp
 
 The member function returns a function object that determines the order of elements in a map by comparing their key values.
 
@@ -2575,7 +2578,7 @@ The element ( 1,10 ) precedes the element ( 2,5 ).
 The element ( 2,5 ) does not precede the element ( 1,10 ).
 ```
 
-## <a name="value_type"></a>  map::value_type
+## <a name="value_type"></a> value_type
 
 The type of object stored as an element in a map.
 
@@ -2637,6 +2640,6 @@ int main( )
 
 ## See also
 
-[Containers](../cpp/containers-modern-cpp.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Containers](../cpp/containers-modern-cpp.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

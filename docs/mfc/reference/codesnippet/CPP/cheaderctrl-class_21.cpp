@@ -1,6 +1,6 @@
 void CMyHeaderCtrl::OnMouseMove(UINT nFlags, CPoint point)
 {
-   SetHotDivider(point);   
+   SetHotDivider(point);
 
    CHeaderCtrl::OnMouseMove(nFlags, point);
 }

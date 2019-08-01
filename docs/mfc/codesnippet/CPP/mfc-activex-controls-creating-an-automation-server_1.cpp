@@ -1,1 +1,1 @@
-   AfxOleInit();
+AfxOleInit();

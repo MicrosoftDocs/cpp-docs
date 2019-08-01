@@ -18,10 +18,10 @@ class money_get : public locale::facet;
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type used within a program to encode characters in a locale.
 
-*InputIterator*<br/>
+*InputIterator*\
 The type of iterator from which the get functions read their input.
 
 ## Remarks
@@ -87,22 +87,22 @@ virtual iter_type do_get(iter_type first,
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Input iterator addressing the beginning of the sequence to be converted.
 
-*last*<br/>
+*last*\
 Input iterator addressing the end of the sequence to be converted.
 
-*Intl*<br/>
+*Intl*\
 A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*Iosbase*<br/>
+*Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
-*State*<br/>
+*State*\
 Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.
 
-*val*<br/>
+*val*\
 A string storing the converted sequence.
 
 ### Return Value
@@ -169,22 +169,22 @@ iter_type get(iter_type first,
 
 ### Parameters
 
-*first*<br/>
+*first*\
 Input iterator addressing the beginning of the sequence to be converted.
 
-*last*<br/>
+*last*\
 Input iterator addressing the end of the sequence to be converted.
 
-*Intl*<br/>
+*Intl*\
 A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*Iosbase*<br/>
+*Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*State*<br/>
+*State*\
 Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
-*val*<br/>
+*val*\
 A string storing the converted sequence.
 
 ### Return Value
@@ -266,7 +266,7 @@ explicit money_get(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*<br/>
+*_Refs*\
 Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -297,6 +297,6 @@ The type describes a specialization of template class [basic_string](../standard
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[facet Class](../standard-library/locale-class.md#facet_class)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[facet Class](../standard-library/locale-class.md#facet_class)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

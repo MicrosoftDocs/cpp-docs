@@ -1,6 +1,6 @@
 ---
 title: "CHttpConnection Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CHttpConnection", "AFXINET/CHttpConnection", "AFXINET/CHttpConnection::CHttpConnection", "AFXINET/CHttpConnection::OpenRequest"]
 helpviewer_keywords: ["CHttpConnection [MFC], CHttpConnection", "CHttpConnection [MFC], OpenRequest"]
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
@@ -35,7 +35,7 @@ HTTP is one of three Internet server protocols implemented by the MFC WinInet cl
 
 The class `CHttpConnection` contains a constructor and one member function, [OpenRequest](#openrequest), that manages connections to a server with an HTTP protocol.
 
-To communicate with an HTTP server, you must first create an instance of [CInternetSession](../../mfc/reference/cinternetsession-class.md), and then create a [CHttpConnection](#_mfc_chttpconnection) object. You never create a `CHttpConnection` object directly; rather, call [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection), which creates the `CHttpConnection` object and returns a pointer to it.
+To communicate with an HTTP server, you must first create an instance of [CInternetSession](../../mfc/reference/cinternetsession-class.md), and then create a [CHttpConnection](#chttpconnection) object. You never create a `CHttpConnection` object directly; rather, call [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection), which creates the `CHttpConnection` object and returns a pointer to it.
 
 To learn more about how `CHttpConnection` works with the other MFC Internet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md). For more information about connecting to servers using the other two supported Internet protocols, gopher and FTP, see the classes [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) and [CFtpConnection](../../mfc/reference/cftpconnection-class.md).
 
@@ -92,23 +92,23 @@ A handle to an Internet connection.
 A pointer to a string containing the server name.
 
 *dwContext*<br/>
-The context identifier for the `CInternetConnection` object. See **Remarks** for more information about *dwContext*.
+The context identifier for the `CInternetConnection` object. For more information about *dwContext*, see the **Remarks** section.
 
 *nPort*<br/>
 The number that identifies the Internet port for this connection.
 
 *pstrUserName*<br/>
-Pointer to a null-terminated string that specifies the name of the user to log in. If NULL, the default is anonymous.
+Pointer to a null-terminated string that specifies the name of the user to sign in. If NULL, the default is anonymous.
 
 *pstrPassword*<br/>
-A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
+A pointer to a null-terminated string that specifies the password to use to sign in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL or an empty string, but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:
 
 |*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|
 |--------------------|--------------------|---------------------------------|---------------------------------|
 |NULL or " "|NULL or " "|"anonymous"|User's email name|
-|Non- NULL String|NULL or " "|*pstrUserName*|" "|
-|NULL Non- NULL String|ERROR|ERROR||
-|Non- NULL String|Non- NULL String|*pstrUserName*|*pstrPassword*|
+|Non-NULL String|NULL or " "|*pstrUserName*|" "|
+|NULL |Non-NULL String|ERROR|ERROR|
+|Non-NULL String|Non-NULL String|*pstrUserName*|*pstrPassword*|
 
 *dwFlags*<br/>
 Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of *dwFlags* values.
@@ -147,13 +147,13 @@ CHttpFile* OpenRequest(
 A pointer to a string containing the verb to use in the request. If NULL, "GET" is used.
 
 *pstrObjectName*<br/>
-A pointer to a string containing the target object of the specified verb. This is generally a filename, an executable module, or a search specifier.
+A pointer to a string containing the target object of the specified verb. This string is generally a filename, an executable module, or a search specifier.
 
 *pstrReferer*<br/>
-A pointer to a string that specifies the address (URL) of the document from which the URL in the request ( *pstrObjectName*) was obtained. If NULL, no HTTP header is specified.
+A pointer to a string that specifies the address (URL) of the document from which the URL in the request (*pstrObjectName*) was obtained. If NULL, no HTTP header is specified.
 
 *dwContext*<br/>
-The context identifier for the `OpenRequest` operation. See the Remarks section for more information about *dwContext*.
+The context identifier for the `OpenRequest` operation. For more information about *dwContext*, see the Remarks section.
 
 *ppstrAcceptTypes*<br/>
 A pointer to a null-terminated array of LPCTSTR pointers to strings indicating content types accepted by the client. If *ppstrAcceptTypes* is NULL, the servers interpret that the client only accepts documents of type "text/*" (that is, only text documents and not pictures or other binary files). The content type is equivalent to the CGI variable CONTENT_TYPE, which identifies the type of data for queries that have attached information, such as HTTP POST and PUT.
@@ -188,12 +188,12 @@ A pointer to the [CHttpFile](../../mfc/reference/chttpfile-class.md) object requ
 |Internet flag|Description|
 |-------------------|-----------------|
 |INTERNET_FLAG_RELOAD|Forces a download of the requested file, object, or directory listing from the origin server, not from the cache.|
-|INTERNET_FLAG_DONT_CACHE|Does not add the returned entity to the cache.|
-|INTERNET_FLAG_MAKE_PERSISTENT|Adds the returned entity to the cache as a persistent entity. This means that standard cache cleanup, consistency checking, or garbage collection cannot remove this item from the cache.|
-|INTERNET_FLAG_SECURE|Uses secure transaction semantics. This translates to using SSL/PCT and is only meaningful in HTTP requests|
-|INTERNET_FLAG_NO_AUTO_REDIRECT|Used only with HTTP, specifies that redirections should not be automatically handled in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|
+|INTERNET_FLAG_DONT_CACHE|Doesn't add the returned entity to the cache.|
+|INTERNET_FLAG_MAKE_PERSISTENT|Adds the returned entity to the cache as a persistent entity. It means that standard cache cleanup, consistency checking, or garbage collection cannot remove this item from the cache.|
+|INTERNET_FLAG_SECURE|Uses secure transaction semantics. It translates to using SSL/PCT and is only meaningful in HTTP requests|
+|INTERNET_FLAG_NO_AUTO_REDIRECT|Used only with HTTP, specifies that redirections shouldn't be handled automatically in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|
 
-Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CHttpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
+Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CHttpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it's identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.
 
 Exceptions may be thrown with this function.
 

@@ -29,7 +29,7 @@ class B : public virtual A  // C4435
 {};
 ```
 
-## See Also
+## See also
 
 [vtordisp](../../preprocessor/vtordisp.md)<br/>
 [/vd (Disable Construction Displacements)](../../build/reference/vd-disable-construction-displacements.md)

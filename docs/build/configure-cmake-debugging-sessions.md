@@ -1,6 +1,6 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
-ms.date: "03/05/2019"
+ms.date: "03/21/2019"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
@@ -13,7 +13,7 @@ You can also start a debug session from the CMake menus.
 
 ## Customize debugger settings
 
-To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. When you select a CMake target in the submenu, a file called `launch.vs.json` is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a `CMakeSettings.json` file, preface it with `cmake.` in `launch.vs.json`. The following example shows a simple `launch.vs.json` file that pulls in the value of the `remoteCopySources` key in the `CMakeSettings.json` file for the currently selected configuration:
+To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. (Or select a target in **Targets View** in **Solution Explorer**.) When you select a CMake target in the submenu, a file called **launch.vs.json** is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a **CMakeSettings.json** file, preface it with `cmake.` in **launch.vs.json**. The following example shows a simple **launch.vs.json** file that pulls in the value of the `remoteCopySources` key in the **CMakeSettings.json** file for the currently selected configuration:
 
 ```json
 {
@@ -31,11 +31,11 @@ To customize the debugger settings for any executable CMake target in your proje
 }
 ```
 
-As soon as you save the  `launch.vs.json` file, an entry is created in the **Startup Item** dropdown with the new name. By editing the  `launch.vs.json` file, you can create as many debug configurations as you like for any number of CMake targets.
+As soon as you save the  **launch.vs.json** file, an entry is created in the **Startup Item** dropdown with the new name. By editing the  **launch.vs.json** file, you can create as many debug configurations as you like for any number of CMake targets.
 
 ## Support for CMakeSettings variables
 
- `Launch.vs.json` supports variables that are declared in `CMakeSettings.json` (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app:
+ **Launch.vs.json** supports variables that are declared in **CMakeSettings.json** (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app for a local project:
 
 ```json
 {
@@ -52,6 +52,13 @@ When you run the app, the value of `currentDir` is something similar to
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 ```
+
+The key 'cwd' sets the current directory of the launching app for a remote project. The default value is '${debugInfo.defaultWorkingDirectory}' which evaluates to 
+
+```cmd
+/var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
+```
+
 ## See also
 
 [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/>

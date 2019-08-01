@@ -610,9 +610,9 @@ In the version that returns an `LPTSTR`, a pointer to the buffer containing the 
 
 ### Remarks
 
-In the version of the member function with the *nMax* parameter, the buffer will hold up to a limit of *nMax* - 1 characters. Reading is stopped by a carriage return-linefeed pair. Trailing newline characters are always removed. A null character ('\0') is appended in either case.
+In the version of the member function with the *nMax* parameter, the buffer will hold up to a limit of *nMax* - 1 characters. Reading is stopped by a carriage return-line feed pair. Trailing newline characters are always removed. A null character ('\0') is appended in either case.
 
-[CArchive::Read](#read) is also available for text-mode input, but it does not terminate on a carriage return-linefeed pair.
+[CArchive::Read](#read) is also available for text-mode input, but it does not terminate on a carriage return-line feed pair.
 
 ### Example
 

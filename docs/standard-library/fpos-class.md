@@ -1,6 +1,6 @@
 ---
 title: "fpos Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["iosfwd/std::fpos", "iosfwd/std::fpos::seekpos", "iosfwd/std::fpos::state", "iosfwd/std::fpos::operator streamoff"]
 helpviewer_keywords: ["std::fpos [C++]", "std::fpos [C++], seekpos", "std::fpos [C++], state"]
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
@@ -24,7 +24,7 @@ class fpos
 
 ### Parameters
 
-*Statetype*<br/>
+*Statetype*\
 State information.
 
 ### Constructors
@@ -70,13 +70,13 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset into the stream.
 
-*_State*<br/>
+*_State*\
 The starting state of the `fpos` object.
 
-*_Filepos*<br/>
+*_Filepos*\
 The offset into the stream.
 
 ### Remarks
@@ -95,7 +95,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The file-position indicator against which to compare.
 
 ### Return Value
@@ -168,7 +168,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -193,7 +193,7 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which you want to increment the file-position indicator.
 
 ### Return Value
@@ -208,7 +208,7 @@ The member function adds *_Off* to the stored offset member object and then retu
 
 See [operator!=](#op_neq) for a sample of using `operator+=`.
 
-## <a name="fpos__operator-"></a>  fpos::operator-
+## <a name="operator-"></a>  fpos::operator-
 
 Decrements a file-position indicator.
 
@@ -220,10 +220,10 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 File position.
 
-*_Off*<br/>
+*_Off*\
 Stream offset.
 
 ### Return Value
@@ -234,7 +234,7 @@ The first member function returns `(streamoff)*this - (streamoff) right`. The se
 
 See [operator!=](#op_neq) for a sample of using `operator-`.
 
-## <a name="fpos__operator-_eq"></a>  fpos::operator-=
+## <a name="operator-_eq"></a>  fpos::operator-=
 
 Decrements a file-position indicator.
 
@@ -244,7 +244,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 Stream offset.
 
 ### Return Value
@@ -269,7 +269,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The file-position indicator against which to compare.
 
 ### Return Value
@@ -343,7 +343,7 @@ void state(Statetype _State);
 
 ### Parameters
 
-*_State*<br/>
+*_State*\
 The new conversion state.
 
 ### Return Value
@@ -381,6 +381,6 @@ int main() {
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

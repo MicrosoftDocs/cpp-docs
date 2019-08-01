@@ -1,10 +1,18 @@
 ---
 title: "Creating the Provider"
-ms.date: "10/15/2018"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, creating"]
 ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
 ---
 # Creating the Provider
+
+::: moniker range="vs-2019"
+
+The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 ## To create an OLE DB provider with the ATL OLE DB Provider Wizard
 
@@ -26,6 +34,8 @@ ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
 
 1. Click **Finish**.
 
-## See Also
+::: moniker-end
+
+## See also
 
 [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md)

@@ -76,7 +76,7 @@ The **Toolbar Editor** enables you:
 
 #### To create a new toolbar button
 
-1. In [Resource View](../windows/resource-view-window.md) expand the resource folder (for example, *Project1.rc*).
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources) expand the resource folder (for example, *Project1.rc*).
 
 1. Expand the **Toolbar** folder and select a toolbar to edit, then do one of the following:
 
@@ -86,7 +86,7 @@ The **Toolbar Editor** enables you:
 
 #### To add an image to a toolbar as a button
 
-1. In [Resource View](../windows/resource-view-window.md), open the toolbar by double-clicking it.
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), open the toolbar by double-clicking it.
 
 1. Next, open the image you'd like to add to your toolbar.
 
@@ -149,9 +149,8 @@ If you want this effect using the **Toolbar Editor**, set the **Prompt** propert
 
 MFC or ATL
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)
-<!--
-[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>-->
+[Menus and Other Resources](/windows/desktop/menurc/resources)<br/>
+[Toolbar Button Properties](../windows/toolbar-button-properties.md)<br/>

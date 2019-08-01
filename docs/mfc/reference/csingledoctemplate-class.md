@@ -107,7 +107,7 @@ Dynamically allocate a `CSingleDocTemplate` object and pass it to `CWinApp::AddD
 
 ## See also
 
-[MFC Sample DOCKTOOL](../../visual-cpp-samples.md)<br/>
+[MFC Sample DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
 [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate Class](../../mfc/reference/cdoctemplate-class.md)<br/>

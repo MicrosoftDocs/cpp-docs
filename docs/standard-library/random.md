@@ -9,11 +9,14 @@ ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 
 Defines facilities for random number generation, allowing creation of uniformly distributed random numbers.
 
-## Syntax
+## Requirements
 
-```cpp
-#include <random>
-```
+**Header**: \<random>
+
+**Namespace:** std
+
+> [!NOTE]
+> The \<random> library uses the `#include <initializer_list>' statement.
 
 ## Summary
 
@@ -41,7 +44,7 @@ Here are some tips to keep in mind when using \<random>:
 
 - The most useful pairing for most applications is the `mt19937` engine with `uniform_int_distribution`, as shown in the [code example](#code) later in this article.
 
-There are many options to choose from in the \<random> header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how \<random> addresses these shortcomings, see [this video](http://go.microsoft.com/fwlink/p/?linkid=397615).
+There are many options to choose from in the \<random> header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how \<random> addresses these shortcomings, see [this video](https://go.microsoft.com/fwlink/p/?linkid=397615).
 
 ## <a name="code"></a> Examples
 
@@ -492,10 +495,10 @@ There are two highly useful URNGs in Visual Studio—`mt19937` and `random_devic
 
 <sup>* When provided with a known seed.</sup>
 
-Although the ISO C++ Standard does not require `random_device` to be cryptographically secure, in Visual Studio it is implemented to be cryptographically secure. (The term "cryptographically secure" does not imply guarantees, but refers to a minimum level of entropy—and therefore, the level of predictability—a given randomization algorithm provides. For more information, see the Wikipedia article [Cryptographically secure pseudorandom number generator](http://go.microsoft.com/fwlink/p/?linkid=398017).) Because the ISO C++ Standard does not require this, other platforms may implement `random_device` as a simple pseudo-random number generator (not cryptographically secure) and may only be suitable as a seed source for another generator. Check the documentation for those platforms when using `random_device` in cross-platform code.
+Although the ISO C++ Standard does not require `random_device` to be cryptographically secure, in Visual Studio it is implemented to be cryptographically secure. (The term "cryptographically secure" does not imply guarantees, but refers to a minimum level of entropy—and therefore, the level of predictability—a given randomization algorithm provides. For more information, see the Wikipedia article [Cryptographically secure pseudorandom number generator](https://go.microsoft.com/fwlink/p/?linkid=398017).) Because the ISO C++ Standard does not require this, other platforms may implement `random_device` as a simple pseudo-random number generator (not cryptographically secure) and may only be suitable as a seed source for another generator. Check the documentation for those platforms when using `random_device` in cross-platform code.
 
 By definition, `random_device` results are not reproducible, and a side-effect is that it may run significantly slower than other URNGs. Most applications that are not required to be cryptographically secure use `mt19937` or a similar engine, although you may want to seed it with a call to `random_device`, as shown in the [code example](#code).
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

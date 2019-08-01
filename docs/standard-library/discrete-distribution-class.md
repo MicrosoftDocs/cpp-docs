@@ -47,7 +47,7 @@ public:
 
 ### Parameters
 
-*IntType*<br/>
+*IntType*\
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -175,28 +175,28 @@ explicit discrete_distribution(const param_type& parm);
 
 ### Parameters
 
-*firstW*<br/>
+*firstW*\
 The first iterator in the list from which to construct the distribution.
 
-*lastW*<br/>
+*lastW*\
 The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
 
-*weightlist*<br/>
+*weightlist*\
 The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
 
-*count*<br/>
+*count*\
 The number of elements in the distribution range. If `count==0`, equivalent to the default constructor (always generates zero).
 
-*low*<br/>
+*low*\
 The lowest value in the distribution range.
 
-*high*<br/>
+*high*\
 The highest value in the distribution range.
 
-*weightfunc*<br/>
+*weightfunc*\
 The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*parm*<br/>
+*parm*\
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -243,28 +243,28 @@ struct param_type {
 
 ### Parameters
 
-*firstW*<br/>
+*firstW*\
 The first iterator in the list from which to construct the distribution.
 
-*lastW*<br/>
+*lastW*\
 The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
 
-*weightlist*<br/>
+*weightlist*\
 The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
 
-*count*<br/>
+*count*\
 The number of elements in the distribution range. If *count* is 0, this is equivalent to the default constructor (always generates zero).
 
-*low*<br/>
+*low*\
 The lowest value in the distribution range.
 
-*high*<br/>
+*high*\
 The highest value in the distribution range.
 
-*weightfunc*<br/>
+*weightfunc*\
 The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*right*<br/>
+*right*\
 The `param_type` object to compare to this.
 
 ### Remarks
@@ -273,4 +273,4 @@ This parameter package can be passed to `operator()` to generate the return valu
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

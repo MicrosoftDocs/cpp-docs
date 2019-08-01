@@ -79,7 +79,7 @@ atomic( Ty Value ) noexcept;
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 Initialization value.
 
 ### Remarks
@@ -121,7 +121,7 @@ Ty operator=(
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A *Ty* object.
 
 ### Return Value
@@ -158,7 +158,7 @@ Ty atomic<Ty>::operator+=(
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 An integral or pointer value.
 
 ### Return Value
@@ -199,7 +199,7 @@ Ty atomic<Ty>::operator-=(
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 An integral or pointer value.
 
 ### Return Value
@@ -225,7 +225,7 @@ atomic<Ty>::operator&= (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
 ### Return Value
@@ -251,7 +251,7 @@ atomic<Ty>::operator|= (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
 ### Return Value
@@ -277,7 +277,7 @@ atomic<Ty>::operator^= (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
 ### Return Value
@@ -319,16 +319,16 @@ bool compare_exchange_strong(
 
 ### Parameters
 
-*Exp*<br/>
+*Exp*\
 A value of type *Ty*.
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order1*<br/>
+*Order1*\
 First `memory_order` argument.
 
-*Order2*<br/>
+*Order2*\
 Second `memory_order` argument.
 
 ### Return Value
@@ -374,16 +374,16 @@ bool compare_exchange_weak(
 
 ### Parameters
 
-*Exp*<br/>
+*Exp*\
 A value of type *Ty*.
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order1*<br/>
+*Order1*\
 First `memory_order` argument.
 
-*Order2*<br/>
+*Order2*\
 Second `memory_order` argument.
 
 ### Return Value
@@ -417,10 +417,10 @@ Ty atomic<Ty>::exchange(
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -448,10 +448,10 @@ Ty atomic<Ty>::fetch_add (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -479,10 +479,10 @@ Ty atomic<Ty>::fetch_and (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -510,10 +510,10 @@ Ty atomic<Ty>::fetch_or (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -541,10 +541,10 @@ Ty atomic<Ty>::fetch_sub (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -572,10 +572,10 @@ Ty atomic<Ty>::fetch_xor (
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A value of type *Ty*.
 
-*Order*<br/>
+*Order*\
 A `memory_order`.
 
 ### Return Value
@@ -617,7 +617,7 @@ Ty atomic::load(
 
 ### Parameters
 
-*Order*<br/>
+*Order*\
 A `memory_order`. *Order* must not be `memory_order_release` or `memory_order_acq_rel`.
 
 ### Return Value
@@ -641,10 +641,10 @@ void atomic<Ty>::store(
 
 ### Parameters
 
-*Value*<br/>
+*Value*\
 A *Ty* object.
 
-*Order*<br/>
+*Order*\
 A `memory_order` constraint.
 
 ### Remarks
@@ -653,5 +653,5 @@ This member function atomically stores *Value* in `*this`, within the memory con
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<atomic>](../standard-library/atomic.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

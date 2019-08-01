@@ -1,10 +1,13 @@
 ---
 title: "Recordset: How Recordsets Select Records (ODBC)"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["recordsets, selecting records", "record selection, ODBC recordsets", "SQL statements, recordset", "records, selecting", "recordsets, constructing SQL statements", "ODBC recordsets, selecting records"]
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
 ---
 # Recordset: How Recordsets Select Records (ODBC)
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 This topic applies to the MFC ODBC classes.
 
@@ -84,7 +87,7 @@ Besides supplying a filter, a sort order, or parameters, you can take the follow
 
 If you want to base the recordset on a complex SQL statement, you need to use some combination of these customization techniques. For example, perhaps you want to use SQL clauses and keywords not directly supported by recordsets or perhaps you are joining multiple tables.
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: How Recordsets Update Records (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>

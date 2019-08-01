@@ -1,2 +1,2 @@
-	// CMFCOutlookBar& bar
-	CMFCOutlookBarTabCtrl* pOutlookBar = (CMFCOutlookBarTabCtrl*)bar.GetUnderlyingWindow();
+// CMFCOutlookBar& bar
+CMFCOutlookBarTabCtrl *pOutlookBar = (CMFCOutlookBarTabCtrl *)bar.GetUnderlyingWindow();

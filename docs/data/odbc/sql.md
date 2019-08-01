@@ -1,6 +1,6 @@
 ---
 title: "SQL"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["database classes [C++], SQL statements", "SQL [C++]", "SQL [C++], ODBC", "ODBC [C++], SQL implementation"]
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
 ---
@@ -28,6 +28,9 @@ This topic explains:
 The database classes are implemented with ODBC, which uses SQL in a call-level interface rather than embedding SQL commands in the code. ODBC uses SQL to communicate with a [data source](../../data/odbc/data-source-odbc.md) through ODBC drivers. These drivers interpret the SQL and translate it, if necessary, for use with a particular database format, such as Microsoft Access. For more information about how ODBC uses SQL, see [ODBC](../../data/odbc/odbc-basics.md) and the ODBC SDK *Programmer's Reference* on the MSDN Library CD.
 
 ##  <a name="_core_the_database_classes"></a> Database Classes
+
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
 
 The database classes are designed to let you manipulate and update data in an existing [data source](../../data/odbc/data-source-odbc.md). The [MFC Application Wizard](../../mfc/reference/database-support-mfc-application-wizard.md), the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) (accessed through **Add Class**), and the database classes construct most of the SQL statements for you.
 
@@ -73,7 +76,7 @@ The following topics provide more information about how the database classes use
 
 - [SQL: Making Direct SQL Calls (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)
 
-## See Also
+## See also
 
 [Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
 [ODBC Basics](../../data/odbc/odbc-basics.md)

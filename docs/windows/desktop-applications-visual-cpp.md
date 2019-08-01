@@ -1,11 +1,11 @@
 ---
 title: "Desktop Applications (Visual C++)"
-ms.date: "11/04/2016"
+ms.date: "07/28/2019"
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ---
 # Desktop Applications (Visual C++)
 
-A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 10 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then).
+A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 10 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then). 
 
 A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 10, and also on XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](/windows/desktop/choose-your-technology).
 
@@ -13,7 +13,7 @@ A desktop application is distinct from a Universal Windows Platform (UWP) app, w
 
 In Windows 10 you can package your existing desktop application or COM object as a UWP app and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
 
-In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows-uwp/porting/desktop-to-uwp-root).
+In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
 ### Terminology
 
@@ -23,7 +23,7 @@ In Visual Studio 2017 version 15.4 and later, you can create a Windows Applicati
 
 - An MFC application is a Windows desktop application that use the [Microsoft Foundation Classes](../mfc/mfc-desktop-applications.md) to create the user interface. An MFC application can also use COM components as well as CRT and Standard Library APIs. MFC provides a thin C++ object-oriented wrapper over the window message loop and Windows APIs. MFC is the default choice for applications—especially enterprise-type applications—that have lots of user interface controls or custom user controls. MFC provides convenient helper classes for window management, serialization, text manipulation, printing, and modern user interface elements such as the ribbon. To be effective with MFC you should be familiar with Win32.
 
-- A C++/CLI application or component uses extensions to C++ syntax (as allowed by the C++ Specification) to enable interaction between .NET and native C++code.  A C++/CLI application can have parts that run natively and parts that run on the .NET Framework with access to the .NET Base Class Library. C++/CLI is the preferred option when you have native C++ code that needs to work with code written in C# or Visual Basic. It is primarily intended for use in .NET DLLs rather than in user interface code. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+- A C++/CLI application or component uses extensions to C++ syntax (as allowed by the C++ Standard) to enable interaction between .NET and native C++code.  A C++/CLI application can have parts that run natively and parts that run on the .NET Framework with access to the .NET Base Class Library. C++/CLI is the preferred option when you have native C++ code that needs to work with code written in C# or Visual Basic. It is intended for use in .NET DLLs rather than in user interface code. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 Any desktop application in C++ can use C Runtime (CRT) and Standard Library classes and functions, COM objects, and the public Windows functions, which collectively are known as the Windows API. For an introduction to Windows desktop applications in C++, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows).
 
@@ -48,6 +48,6 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
 |[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
-## See Also
+## See also
 
-[Visual C++](../visual-cpp-in-visual-studio.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)

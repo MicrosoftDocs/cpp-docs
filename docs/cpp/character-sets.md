@@ -1,16 +1,16 @@
 ---
 title: "Character Sets"
-ms.date: "04/12/2018"
+ms.date: "05/06/2019"
 helpviewer_keywords: ["Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
 ---
 # Character Sets
 
-The text of a C++ program is stored in source files that use a particular character encoding. The C++ standard specifies a basic source character set for source files and a basic execution character set for compiled files. Visual C++ allows an additional set of locale-specific characters to be used in source files and compiled files.
+The text of a C++ program is stored in source files that use a particular character encoding. The C++ standard specifies a basic source character set for source files and a basic execution character set for compiled files. The Microsoft C++ compiler (MSVC) allows an additional set of locale-specific characters to be used in source files and compiled files.
 
 ## Character sets
 
-The C++ standard specifies a *basic  source character set* that may be used in source files. To represent characters outside of this set, additional characters can be specified by using a *universal character name*. When compiled, the *basic execution character set* and *basic execution wide-character set* represent the characters and strings that can appear in a program. The Visual C++ implementation allows additional characters in source code and compiled code.
+The C++ standard specifies a *basic  source character set* that may be used in source files. To represent characters outside of this set, additional characters can be specified by using a *universal character name*. When compiled, the *basic execution character set* and *basic execution wide-character set* represent the characters and strings that can appear in a program. The MSVC implementation allows additional characters in source code and compiled code.
 
 ### Basic source character set
 
@@ -26,7 +26,7 @@ The *basic  source character set* consists of  96 characters that may be used in
 
 **Microsoft Specific**
 
-Visual C++ includes the `$` character as a member of the basic source character set. Visual C++ also allows an additional set of characters to be used in source files, based on the file encoding. By default, Visual Studio stores source files by using the default codepage. When source files are saved by using a locale-specific codepage or a Unicode codepage, Visual C++ allows you to use any of the characters of that code page in your source code, except for the control codes not explicitly allowed in the basic source character set. For example, you can put Japanese characters in comments, identifiers, or string literals if you save the file using a Japanese codepage. Visual C++  does not allow character sequences that cannot be translated into valid multibyte characters or Unicode code points. Depending on compiler options, not all allowed characters may appear in identifiers. For more information, see [Identifiers](../cpp/identifiers-cpp.md).
+MSVC includes the `$` character as a member of the basic source character set. MSVC also allows an additional set of characters to be used in source files, based on the file encoding. By default, Visual Studio stores source files by using the default codepage. When source files are saved by using a locale-specific codepage or a Unicode codepage, MSVC allows you to use any of the characters of that code page in your source code, except for the control codes not explicitly allowed in the basic source character set. For example, you can put Japanese characters in comments, identifiers, or string literals if you save the file using a Japanese codepage. MSVC does not allow character sequences that cannot be translated into valid multibyte characters or Unicode code points. Depending on compiler options, not all allowed characters may appear in identifiers. For more information, see [Identifiers](../cpp/identifiers-cpp.md).
 
 **END Microsoft Specific**
 
@@ -38,7 +38,7 @@ Universal character names can be used in identifiers and in string and character
 
 **Microsoft Specific**
 
-The Visual C++ compiler treats a character in universal character name form and literal form interchangeably. For example, you can declare an identifier using universal character name form, and use it in literal form:
+The Microsoft C++ compiler treats a character in universal character name form and literal form interchangeably. For example, you can declare an identifier using universal character name form, and use it in literal form:
 
 ```cpp
 auto \u30AD = 42; // \u30AD is 'キ'

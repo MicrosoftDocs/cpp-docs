@@ -1,8 +1,9 @@
 ---
 title: "if-else Statement (C++)"
-ms.date: "07/17/2017"
+ms.date: "07/20/2019"
+description: "Use if-else statements in C++ to control conditional branching."
 f1_keywords: ["else_cpp", "if_cpp"]
-helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]", "if keyword [C++], if-else"]
+helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]"]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ---
 # if-else Statement (C++)
@@ -28,7 +29,7 @@ else  // optional
    ...
 }
 
-// Visual Studio 2017 version 15.3 and later:
+// C++17 - Visual Studio 2017 version 15.3 and later:
 if ( initialization; expression )
 {
    statement1;
@@ -40,7 +41,7 @@ else  // optional
    ...
 }
 
-// Visual Studio 2017 version 15.3 and later:
+// C++17 - Visual Studio 2017 version 15.3 and later:
 if constexpr (expression)
 {
     statement1;

@@ -18,7 +18,7 @@ struct is_arithmetic;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -65,6 +65,6 @@ is_arithmetic<float> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_floating_point Class](../standard-library/is-floating-point-class.md)<br/>
-[is_integral Class](../standard-library/is-integral-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_floating_point Class](../standard-library/is-floating-point-class.md)\
+[is_integral Class](../standard-library/is-integral-class.md)

@@ -8,7 +8,7 @@ ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
 
 ATL provides the `ICollectionOnSTLImpl` interface to enable you to quickly implement C++ Standard Library-based collection interfaces on your objects. To understand how this class works, you will work through a simple example (below) that uses this class to implement a read-only collection aimed at Automation clients.
 
-The sample code is from the [ATLCollections sample](../visual-cpp-samples.md).
+The sample code is from the [ATLCollections sample](../overview/visual-cpp-samples.md).
 
 To complete this procedure, you will:
 
@@ -68,7 +68,7 @@ The typedefs you have created so far provide all the information you need to cre
 
 [!code-cpp[NVC_ATL_COM#26](../atl/codesnippet/cpp/implementing-an-stl-based-collection_3.h)]
 
-In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../visual-cpp-samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).
+In this example, you can use the custom `GenericCopy` class defined in VCUE_Copy.h and VCUE_CopyString.h from the [ATLCollections](../overview/visual-cpp-samples.md) sample. You can use this class in other code, but you may need to define further specializations of `GenericCopy` to support data types used in your own collections. For more information, see [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md).
 
 ##  <a name="vcconenumeration_and_collection"></a> Creating Typedefs for Enumeration and Collection
 
@@ -95,5 +95,5 @@ Now, you can test the code with the client of your choice.
 ## See also
 
 [Collections and Enumerators](../atl/atl-collections-and-enumerators.md)<br/>
-[ATLCollections Sample](../visual-cpp-samples.md)<br/>
+[ATLCollections Sample](../overview/visual-cpp-samples.md)<br/>
 [ATL Copy Policy Classes](../atl/atl-copy-policy-classes.md)

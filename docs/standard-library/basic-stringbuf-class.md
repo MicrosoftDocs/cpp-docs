@@ -19,13 +19,13 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### Parameters
 
-*Alloc*<br/>
+*Alloc*\
 The allocator class.
 
-*Elem*<br/>
+*Elem*\
 The type of the basic element of the string.
 
-*Tr*<br/>
+*Tr*\
 The character traits specialized on the basic element of the string.
 
 ## Remarks
@@ -96,10 +96,10 @@ basic_stringbuf(
 
 ### Parameters
 
-*_Mode*<br/>
+*_Mode*\
 One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*<br/>
+*str*\
 An object of type [basic_string](../standard-library/basic-string-class.md).
 
 ### Remarks
@@ -142,7 +142,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
@@ -167,7 +167,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*<br/>
+*_Meta*\
 The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
@@ -203,13 +203,13 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The position to seek for relative to *_Way*. For more information, see [basic_stringbuf::off_type](#off_type).
 
-*_Way*<br/>
+*_Way*\
 The starting point for offset operations. See [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Mode*<br/>
+*_Mode*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions. For more information, see [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
 ### Return Value
@@ -242,10 +242,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 
 ### Parameters
 
-*_Sp*<br/>
+*_Sp*\
 The position to seek for.
 
-*_Mode*<br/>
+*_Mode*\
 Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -270,7 +270,7 @@ void str(
 
 ### Parameters
 
-*_Newstr*<br/>
+*_Newstr*\
 The new string.
 
 ### Return Value
@@ -359,7 +359,7 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 
 ### Parameters
 
-*other*<br/>
+*other*\
 The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
 
 ### Remarks
@@ -374,13 +374,13 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 ### Parameters
 
-*other*<br/>
+*other*\
 A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
 
 ### Remarks
 
 ## See also
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

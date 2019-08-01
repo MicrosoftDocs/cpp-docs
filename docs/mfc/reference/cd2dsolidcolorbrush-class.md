@@ -1,6 +1,6 @@
 ---
 title: "CD2DSolidColorBrush Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::Attach", "AFXRENDERTARGET/CD2DSolidColorBrush::Create", "AFXRENDERTARGET/CD2DSolidColorBrush::Destroy", "AFXRENDERTARGET/CD2DSolidColorBrush::Detach", "AFXRENDERTARGET/CD2DSolidColorBrush::Get", "AFXRENDERTARGET/CD2DSolidColorBrush::GetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::SetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid", "AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush"]
 helpviewer_keywords: ["CD2DSolidColorBrush [MFC], CD2DSolidColorBrush", "CD2DSolidColorBrush [MFC], Attach", "CD2DSolidColorBrush [MFC], Create", "CD2DSolidColorBrush [MFC], Destroy", "CD2DSolidColorBrush [MFC], Detach", "CD2DSolidColorBrush [MFC], Get", "CD2DSolidColorBrush [MFC], GetColor", "CD2DSolidColorBrush [MFC], SetColor", "CD2DSolidColorBrush [MFC], m_colorSolid", "CD2DSolidColorBrush [MFC], m_pSolidColorBrush"]
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
@@ -22,7 +22,7 @@ class CD2DSolidColorBrush : public CD2DBrush;
 |Name|Description|
 |----------|-----------------|
 |[CD2DSolidColorBrush::CD2DSolidColorBrush](#cd2dsolidcolorbrush)|Overloaded. Constructs a CD2DSolidColorBrush object.|
-|[CD2DSolidColorBrush::~CD2DSolidColorBrush](#cd2dsolidcolorbrush__~cd2dsolidcolorbrush)|The destructor. Called when a D2D solid brush object is being destroyed.|
+|[CD2DSolidColorBrush::~CD2DSolidColorBrush](#_dtorcd2dsolidcolorbrush)|The destructor. Called when a D2D solid brush object is being destroyed.|
 
 ### Public Methods
 

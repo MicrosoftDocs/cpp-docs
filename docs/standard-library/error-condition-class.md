@@ -19,21 +19,23 @@ class error_condition;
 
 An object of type `error_condition` stores an error code value and a pointer to an object that represents a [category](../standard-library/error-category-class.md) of error codes used for reported user-defined errors.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[error_condition](#error_condition)|Constructs an object of type `error_condition`.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[assign](#assign)|Assigns an error code value and category to an error condition.|
 |[category](#category)|Returns the error category.|
@@ -42,7 +44,7 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator==](#op_eq_eq)|Tests for equality between `error_condition` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_condition` objects.|
@@ -50,13 +52,7 @@ An object of type `error_condition` stores an error code value and a pointer to 
 |[operator=](#op_eq)|Assigns a new enumeration value to the `error_condition` object.|
 |[operator bool](#op_bool)|Casts a variable of type `error_condition`.|
 
-## Requirements
-
-**Header:** \<system_error>
-
-**Namespace:** std
-
-## <a name="assign"></a>  error_condition::assign
+### <a name="assign"></a> assign
 
 Assigns an error code value and category to an error condition.
 
@@ -64,18 +60,19 @@ Assigns an error code value and category to an error condition.
 void assign(value_type val, const error_category& _Cat);
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*val*|The error code value to store in the `error_code`.|
-|*_Cat*|The error category to store in the `error_code`.|
+*val*\
+The error code value to store in the `error_code`.
 
-### Remarks
+*_Cat*\
+The error category to store in the `error_code`.
+
+#### Remarks
 
 The member function stores *val* as the error code value and a pointer to *_Cat*.
 
-## <a name="category"></a>  error_condition::category
+### <a name="category"></a> category
 
 Returns the error category.
 
@@ -83,13 +80,13 @@ Returns the error category.
 const error_category& category() const;
 ```
 
-### Return Value
+#### Return Value
 
 A reference to the stored error category
 
-### Remarks
+#### Remarks
 
-## <a name="clear"></a>  error_condition::clear
+### <a name="clear"></a> clear
 
 Clears the error code value and category.
 
@@ -97,11 +94,11 @@ Clears the error code value and category.
 clear();
 ```
 
-### Remarks
+#### Remarks
 
 The member function stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category) object.
 
-## <a name="error_condition"></a>  error_condition::error_condition
+### <a name="error_condition"></a> error_condition
 
 Constructs an object of type `error_condition`.
 
@@ -116,15 +113,18 @@ error_condition(_Enum _Errcode,
     error_code>::type* = 0);
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*val*|The error code value to store in the `error_condition`.|
-|*_Cat*|The error category to store in the `error_condition`.|
-|*_Errcode*|The enumeration value to store in the `error_condition`.|
+*val*\
+The error code value to store in the `error_condition`.
 
-### Remarks
+*_Cat*\
+The error category to store in the `error_condition`.
+
+*_Errcode*\
+The enumeration value to store in the `error_condition`.
+
+#### Remarks
 
 The first constructor stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
@@ -132,7 +132,7 @@ The second constructor stores *val* as the error code value and a pointer to [er
 
 The third constructor stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-## <a name="message"></a>  error_condition::message
+### <a name="message"></a> message
 
 Returns the name of the error code.
 
@@ -140,15 +140,15 @@ Returns the name of the error code.
 string message() const;
 ```
 
-### Return Value
+#### Return Value
 
 A `string` representing the name of the error code.
 
-### Remarks
+#### Remarks
 
 This member function returns `category().message(value())`.
 
-## <a name="op_eq_eq"></a>  error_condition::operator==
+### <a name="op_eq_eq"></a> operator==
 
 Tests for equality between `error_condition` objects.
 
@@ -156,21 +156,20 @@ Tests for equality between `error_condition` objects.
 bool operator==(const error_condition& right) const;
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|The ojbect to be tested for equality.|
+*right*\
+The ojbect to be tested for equality.
 
-### Return Value
+#### Return Value
 
 **true** if the objects are equal; **false** if objects are not equal.
 
-### Remarks
+#### Remarks
 
 The member operator returns `category() == right.category() && value == right.value()`.
 
-## <a name="op_neq"></a>  error_condition::operator!=
+### <a name="op_neq"></a> operator!=
 
 Tests for inequality between `error_condition` objects.
 
@@ -178,21 +177,20 @@ Tests for inequality between `error_condition` objects.
 bool operator!=(const error_condition& right) const;
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|The object to be tested for inequality.|
+*right*\
+The object to be tested for inequality.
 
-### Return Value
+#### Return Value
 
 **true** if the `error_condition` object is not equal to the `error_condition` object passed in *right*; otherwise **false**.
 
-### Remarks
+#### Remarks
 
 The member operator returns `!(*this == right)`.
 
-## <a name="op_lt"></a>  error_condition::operator&lt;
+### <a name="op_lt"></a> operator&lt;
 
 Tests if the `error_condition` object is less than the `error_code` object passed in for comparison.
 
@@ -200,21 +198,20 @@ Tests if the `error_condition` object is less than the `error_code` object passe
 bool operator<(const error_condition& right) const;
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|The `error_condition` object to be compared.|
+*right*\
+The `error_condition` object to be compared.
 
-### Return Value
+#### Return Value
 
 **true** if the `error_condition` object is less than the `error_condition` object passed in for comparison; Otherwise, **false**.
 
-### Remarks
+#### Remarks
 
 The member operator returns `category() < right.category() || category() == right.category() && value < right.value()`.
 
-## <a name="op_eq"></a>  error_condition::operator=
+### <a name="op_eq"></a> operator=
 
 Assigns a new enumeration value to the `error_condition` object.
 
@@ -226,21 +223,20 @@ error_condition(_Enum error,
     operator=(Enum _Errcode);
 ```
 
-### Parameters
+#### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Errcode*|The enumeration value to assign to the `error_condition` object.|
+*_Errcode*\
+The enumeration value to assign to the `error_condition` object.
 
-### Return Value
+#### Return Value
 
 A reference to the `error_condition` object that is being assigned the new enumeration value by the member function.
 
-### Remarks
+#### Remarks
 
 The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
 
-## <a name="op_bool"></a>  error_condition::operator bool
+### <a name="op_bool"></a> operator bool
 
 Casts a variable of type `error_condition`.
 
@@ -248,15 +244,15 @@ Casts a variable of type `error_condition`.
 explicit operator bool() const;
 ```
 
-### Return Value
+#### Return Value
 
 The Boolean value of the `error_condition` object.
 
-### Remarks
+#### Remarks
 
 The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
 
-## <a name="value"></a>  error_condition::value
+### <a name="value"></a> value
 
 Returns the stored error code value.
 
@@ -264,13 +260,13 @@ Returns the stored error code value.
 value_type value() const;
 ```
 
-### Return Value
+#### Return Value
 
 The stored error code value of type [value_type](#value_type).
 
-### Remarks
+#### Remarks
 
-## <a name="value_type"></a>  error_condition::value_type
+### <a name="value_type"></a> value_type
 
 A type that represents the stored error code value.
 
@@ -278,11 +274,6 @@ A type that represents the stored error code value.
 typedef int value_type;
 ```
 
-### Remarks
+#### Remarks
 
 The type definition is a synonym for **int**.
-
-## See also
-
-[error_category Class](../standard-library/error-category-class.md)<br/>
-[<system_error>](../standard-library/system-error.md)<br/>

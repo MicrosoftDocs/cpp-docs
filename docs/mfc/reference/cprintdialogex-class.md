@@ -140,7 +140,7 @@ virtual INT_PTR DoModal();
 
 ### Return Value
 
-The INT_PTR return value is actually an HRESULT. See the Return Values section in [PrintDlgEx](https://msdn.microsoft.com/library/windows/desktop/ms646942) in the Windows SDK.
+The INT_PTR return value is actually an HRESULT. See the Return Values section in [PrintDlgEx](/previous-versions/windows/desktop/legacy/ms646942\(v=vs.85\)) in the Windows SDK.
 
 ### Remarks
 

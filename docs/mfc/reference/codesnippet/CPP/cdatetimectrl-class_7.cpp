@@ -25,7 +25,7 @@ void CDateTimeDlg::OnBnClickedRangesbutton()
    ShowRange(&m_DateTimeCtrl);
 }
 
-void CDateTimeDlg::ShowRange(CDateTimeCtrl* pCtrl)
+void CDateTimeDlg::ShowRange(CDateTimeCtrl *pCtrl)
 {
    ASSERT(pCtrl != NULL);
    CString strMessage;

@@ -25,6 +25,3 @@ int main()
 ```
 
 Such redefinitions are invalid under ANSI compatibility ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
-
-## See Also
-

@@ -1,6 +1,6 @@
 ---
 title: "CAccessToken Class"
-ms.date: "11/04/2016"
+ms.date: "07/02/2019"
 f1_keywords: ["CAccessToken", "ATLSECURITY/ATL::CAccessToken", "ATLSECURITY/ATL::CAccessToken::Attach", "ATLSECURITY/ATL::CAccessToken::CheckTokenMembership", "ATLSECURITY/ATL::CAccessToken::CreateImpersonationToken", "ATLSECURITY/ATL::CAccessToken::CreatePrimaryToken", "ATLSECURITY/ATL::CAccessToken::CreateProcessAsUser", "ATLSECURITY/ATL::CAccessToken::CreateRestrictedToken", "ATLSECURITY/ATL::CAccessToken::Detach", "ATLSECURITY/ATL::CAccessToken::DisablePrivilege", "ATLSECURITY/ATL::CAccessToken::DisablePrivileges", "ATLSECURITY/ATL::CAccessToken::EnablePrivilege", "ATLSECURITY/ATL::CAccessToken::EnablePrivileges", "ATLSECURITY/ATL::CAccessToken::GetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::GetEffectiveToken", "ATLSECURITY/ATL::CAccessToken::GetGroups", "ATLSECURITY/ATL::CAccessToken::GetHandle", "ATLSECURITY/ATL::CAccessToken::GetImpersonationLevel", "ATLSECURITY/ATL::CAccessToken::GetLogonSessionId", "ATLSECURITY/ATL::CAccessToken::GetLogonSid", "ATLSECURITY/ATL::CAccessToken::GetOwner", "ATLSECURITY/ATL::CAccessToken::GetPrimaryGroup", "ATLSECURITY/ATL::CAccessToken::GetPrivileges", "ATLSECURITY/ATL::CAccessToken::GetProcessToken", "ATLSECURITY/ATL::CAccessToken::GetProfile", "ATLSECURITY/ATL::CAccessToken::GetSource", "ATLSECURITY/ATL::CAccessToken::GetStatistics", "ATLSECURITY/ATL::CAccessToken::GetTerminalServicesSessionId", "ATLSECURITY/ATL::CAccessToken::GetThreadToken", "ATLSECURITY/ATL::CAccessToken::GetTokenId", "ATLSECURITY/ATL::CAccessToken::GetType", "ATLSECURITY/ATL::CAccessToken::GetUser", "ATLSECURITY/ATL::CAccessToken::HKeyCurrentUser", "ATLSECURITY/ATL::CAccessToken::Impersonate", "ATLSECURITY/ATL::CAccessToken::ImpersonateLoggedOnUser", "ATLSECURITY/ATL::CAccessToken::IsTokenRestricted", "ATLSECURITY/ATL::CAccessToken::LoadUserProfile", "ATLSECURITY/ATL::CAccessToken::LogonUser", "ATLSECURITY/ATL::CAccessToken::OpenCOMClientToken", "ATLSECURITY/ATL::CAccessToken::OpenNamedPipeClientToken", "ATLSECURITY/ATL::CAccessToken::OpenRPCClientToken", "ATLSECURITY/ATL::CAccessToken::OpenThreadToken", "ATLSECURITY/ATL::CAccessToken::PrivilegeCheck", "ATLSECURITY/ATL::CAccessToken::Revert", "ATLSECURITY/ATL::CAccessToken::SetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::SetOwner", "ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup"]
 helpviewer_keywords: ["CAccessToken class"]
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
@@ -192,7 +192,7 @@ Pointer to the new `CAccessToken` object.
 Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](/windows/desktop/SecAuthZ/access-rights-and-access-masks) for more on access rights.
 
 *pTokenAttributes*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.
+Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.
 
 ### Return Value
 
@@ -229,7 +229,7 @@ Pointer to a null-terminated string that specifies the module to execute. This p
 Pointer to a null-terminated string that specifies the command line to execute.
 
 *pProcessInformation*<br/>
-Pointer to a [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_process_information) structure that receives identification information about the new process.
+Pointer to a [PROCESS_INFORMATION structure](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) that receives identification information about the new process.
 
 *pStartupInfo*<br/>
 Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) structure that specifies how the main window for the new process should appear.
@@ -241,10 +241,10 @@ Specifies additional flags that control the priority class and the creation of t
 If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
 
 *pProcessAttributes*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.
+Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.
 
 *pThreadAttributes*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *pThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited.
+Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *pThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited.
 
 *bInherit*<br/>
 Indicates whether the new process inherits handles from the calling process. If TRUE, each inheritable open handle in the calling process is inherited by the new process. Inherited handles have the same value and access privileges as the original handles.
@@ -1127,6 +1127,6 @@ The primary group is the default group for new objects created while this access
 
 ## See also
 
-[ATLSecurity Sample](../../visual-cpp-samples.md)<br/>
+[ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
 [Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

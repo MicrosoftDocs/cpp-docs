@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (Level 1) C4789"
-ms.date: "11/04/2016"
+ms.date: "03/25/2019"
 f1_keywords: ["C4789"]
 helpviewer_keywords: ["C4789"]
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
@@ -11,9 +11,11 @@ ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
 
 ## Remarks
 
-Warns about buffer overrun when specific C run-time (CRT) functions are used, parameters are passed, and assignments are performed, such that the data sizes are known at compile time. This warning is for situations that might elude typical data-size mismatch detection.
+**C4789** warns about buffer overruns when specific C run-time (CRT) functions are used. It can also report size mismatches when parameters are passed or assignments are made. The warning is possible if the data sizes are known at compile time. This warning is for situations that might elude typical data-size mismatch detection.
 
-The warning appears when data, whose length is known at compile time, is copied and put into a data block whose size is known at compile time to be too small for the data. The copy must be done by using the intrinsic form of one of the following CRT functions:
+**C4789** warns when data is copied into a data block that's known to be too small at compile time.
+
+The warning occurs if the copy uses the intrinsic form of one of these CRT functions:
 
 - [strcpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)
 
@@ -21,18 +23,18 @@ The warning appears when data, whose length is known at compile time, is copied 
 
 - [memcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md), [wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)
 
-The warning also appears when a parameter datatype is mismatched by using a cast, and then a copy assignment from an lvalue reference is attempted.
+The warning also appears when you cast a parameter to a larger data type, and then make a copy assignment from an lvalue reference.
 
-Visual C++ might generate this warning for a code path that does not ever execute. You can temporarily disable the warning by using `#pragma`, as shown in this example:
+Visual C++ might generate this warning for a code path that never executes. You can temporarily disable the warning by using `#pragma`, as shown in this example:
 
 ```cpp
-#pragma(push)
-#pragma warning ( disable : 4789 )
+#pragma warning( push )
+#pragma warning( disable : 4789 )
 // unused code that generates compiler warning C4789`
-#pragma(pop)
+#pragma warning( pop )
 ```
 
-This keeps Visual C++ from generating the warning for that specific block of code. The `#pragma(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [warning](../../preprocessor/warning.md) and [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [warning](../../preprocessor/warning.md) and [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ## Example
 

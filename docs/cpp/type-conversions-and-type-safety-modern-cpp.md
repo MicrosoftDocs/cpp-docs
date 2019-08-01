@@ -1,6 +1,6 @@
 ---
 title: "Type Conversions and Type Safety (Modern C++)"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 ms.topic: "conceptual"
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 ---
@@ -78,7 +78,7 @@ The compiler does not warn about implicit conversions between signed and unsigne
 
 ### Pointer conversions
 
-In many expressions, a C-style array is implicitly converted to a pointer to the first element in the array, and constant conversions can happen silently. Although this is convenient, it's also potentially error-prone. For example, the following badly designed code example seems nonsensical, and yet it will compile in Visual C++ and produces a result of 'p'. First, the "Help" string constant literal is converted to a `char*` that points to the first element of the array; that pointer is then incremented by three elements so that it now points to the last element 'p'.
+In many expressions, a C-style array is implicitly converted to a pointer to the first element in the array, and constant conversions can happen silently. Although this is convenient, it's also potentially error-prone. For example, the following badly designed code example seems nonsensical, and yet it will compile and produces a result of 'p'. First, the "Help" string constant literal is converted to a `char*` that points to the first element of the array; that pointer is then incremented by three elements so that it now points to the last element 'p'.
 
 ```cpp
 char* s = "Help" + 3;

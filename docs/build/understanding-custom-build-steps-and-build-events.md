@@ -55,9 +55,9 @@ The `custom build step on the project` and a `post-build event` run sequentially
 [Specify Custom Build Tools](specifying-custom-build-tools.md)<br/>
 [Specify Build Events](specifying-build-events.md)<br/>
 [Troubleshoot Build Customizations](troubleshooting-build-customizations.md)<br/>
-[Format the Output of a Custom Build Step or Build Event](formatting-the-output-of-a-custom-build-step-or-build-event.md)<br/>
+[Format the Output of a Custom Build Step or Build Event](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 
-## See Also
+## See also
 
 [Visual Studio Projects - C++](creating-and-managing-visual-cpp-projects.md)<br>
 [Common macros for build commands and properties](reference/common-macros-for-build-commands-and-properties.md)

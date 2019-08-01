@@ -1,23 +1,32 @@
 ---
 title: "Adding Functionality with Code Wizards (C++)"
-ms.date: "10/03/2018"
-f1_keywords: ["vc.codewiz.classes"]
-helpviewer_keywords: ["code wizards [C++]", "wizards [C++], code", "Visual C++ projects, adding functionality", "projects [C++], adding functionality", "class wizards [C++]"]
+ms.date: "05/14/2019"
+helpviewer_keywords: ["code wizards [C++]"]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
 ---
 # Adding Functionality with Code Wizards (C++)
 
 Once you have created a project, you will want to change or add to that project's functionality. Such tasks include creating new classes, adding new member functions and variables, and adding Automation methods and properties. The code wizards are designed to let you do all these things.
 
-> [!WARNING]
-> Several ATL and MFC code wizards are now deprecated and will be removed in a future version of Visual Studio. These wizards are rarely used. General support for ATL and MFC is not impacted by the removal of these wizards. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+> [!NOTE]
+> The following rarely-used code wizards are removed in Visual Studio 2019. General support for ATL and MFC is not impacted by the removal of these wizards. Sample code for these technologies is archived at Microsoft Docs and the VCSamples GitHub repository.
+
+- ATL COM+ 1.0 Component Wizard
+- ATL Active Server Pages Component Wizard
+- ATL OLE DB Provider Wizard
+- ATL Property Page Wizard
+- ATL OLE DB Consumer Wizard
+- MFC ODBC Consumer
+- MFC class from ActiveX control
+- MFC class from Type Lib.
+
 
 > [!NOTE]
 >  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visualstudio/ide/reference/properties-window).
 
-## Accessing Visual C++ Code Wizards
+## Accessing C++ Code Wizards
 
-There are three locations where you can access Visual C++ code wizards:
+There are three locations where you can access C++ code wizards:
 
 - On the **Project** menu, the **Add New Item** command allows you to bring up the `Add New Item` dialog box, which helps you to add new files to your project. The **Add Class** command displays the [Add Class](../ide/add-class-dialog-box.md) dialog box, which in turn open wizards for each of the class types you can add to your project. The **Add Resource** command displays the [Add Resource](../windows/add-resource-dialog-box.md) dialog box, from which you can create or select a resource to add to your project.
 
@@ -60,6 +69,6 @@ There are three locations where you can access Visual C++ code wizards:
 ## See also
 
 [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
-[Navigating the Class Structure](../ide/navigating-the-class-structure-visual-cpp.md)<br>
-[Visual C++ Project Types](../build/reference/visual-cpp-project-types.md)<br>
-[File Types Created for Visual C++ Projects](../build/reference/file-types-created-for-visual-cpp-projects.md)
+[Navigate your C++ code base in Visual Studio](../ide/navigate-code-cpp.md)<br>
+[C++ project types in Visual Studio](../build/reference/visual-cpp-project-types.md)<br>
+[File Types Created for Visual Studio C++ projects](../build/reference/file-types-created-for-visual-cpp-projects.md)

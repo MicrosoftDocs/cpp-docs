@@ -1,13 +1,12 @@
 ---
 title: "Create a COM interface"
-ms.date: "11/12/2018"
-f1_keywords: ["vc.codewiz.com.creating.interfaces", "vc.codewiz.com.editing.interfaces"]
+ms.date: "05/14/2019"
 helpviewer_keywords: ["COM interfaces, creating", "methods [C++], adding to COM interfaces", "COM interfaces, editing", "properties [C++], adding to COM interfaces"]
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
 ---
 # Create a COM interface
 
-Visual C++ provides wizards and templates to create projects that use COM defining interfaces and dispinterfaces for your COM objects and automation classes.
+Visual Studio provides wizards and templates to create projects that use COM defining interfaces and dispinterfaces for your COM objects and automation classes.
 
 You can use these wizards to do the following three common tasks:
 
@@ -62,7 +61,7 @@ In Class View and its shortcut menus, you can work with interfaces as follows:
 
 ## Edit a COM interface
 
-By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual C++ projects. From the Toolbox, you can also define events for ActiveX controls.
+By using commands from the Class View shortcut menu, you can define new methods and properties for the COM interfaces in your Visual Studio C++ projects. From the Toolbox, you can also define events for ActiveX controls.
 
 For ATL- and MFC-based COM object classes, you can edit the class implementation at the same time that you edit the interface.
 

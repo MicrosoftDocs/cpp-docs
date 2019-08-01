@@ -204,4 +204,4 @@ For more information and full code examples, see [quoted](../standard-library/io
 
 ## See also
 
-[Output Streams](../standard-library/output-streams.md)<br/>
+[Output Streams](../standard-library/output-streams.md)

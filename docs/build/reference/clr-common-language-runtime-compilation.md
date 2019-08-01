@@ -1,6 +1,6 @@
 ---
 title: "/clr (Common Language Runtime Compilation)"
-ms.date: "09/18/2018"
+ms.date: "05/16/2019"
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
@@ -24,11 +24,11 @@ One or more of the following switches, comma-separated.
 
 - **pure**
 
-   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be pure MSIL to C#.
+   **/clr:pure is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be pure MSIL to C#.
 
 - **safe**
 
-   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017. We recommend that you port code that must be safe MSIL to C#.
+   **/clr:safe is deprecated**. The option is removed in Visual Studio 2017 and later. We recommend that you port code that must be safe MSIL to C#.
 
 - **noAssembly**
 
@@ -38,7 +38,7 @@ One or more of the following switches, comma-separated.
 
    A managed program that does not have assembly metadata in the manifest is known as a *module*. The **noAssembly** option can be used only to produce a module. If you compile by using [/c](c-compile-without-linking.md) and **/clr:noAssembly**, then specify the [/NOASSEMBLY](noassembly-create-a-msil-module.md) option in the linker phase to create a module.
 
-   Before Visual C++ 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.
+   Before Visual Studio 2005, **/clr:noAssembly** required **/LD**. **/LD** is now implied when you specify **/clr:noAssembly**.
 
 - **initialAppDomain**
 
@@ -52,13 +52,13 @@ One or more of the following switches, comma-separated.
 
 Managed code is code that can be inspected and managed by the CLR. Managed code can access managed objects. For more information, see [/clr Restrictions](clr-restrictions.md).
 
-For information about how to develop applications that define and consume managed types, see [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
+For information about how to develop applications that define and consume managed types, see [Component Extensions for Runtime Platforms](../../extensions/component-extensions-for-runtime-platforms.md).
 
 An application compiled by using **/clr** may or may not contain managed data.
 
 To enable debugging on a managed application, see [/ASSEMBLYDEBUG (Add DebuggableAttribute)](assemblydebug-add-debuggableattribute.md).
 
-Only CLR types will be instantiated on the garbage-collected heap. For more information, see [Classes and Structs](../../windows/classes-and-structs-cpp-component-extensions.md). To compile a function to native code, use the `unmanaged` pragma. For more information, see [managed, unmanaged](../../preprocessor/managed-unmanaged.md).
+Only CLR types will be instantiated on the garbage-collected heap. For more information, see [Classes and Structs](../../extensions/classes-and-structs-cpp-component-extensions.md). To compile a function to native code, use the `unmanaged` pragma. For more information, see [managed, unmanaged](../../preprocessor/managed-unmanaged.md).
 
 By default, **/clr** is not in effect. When **/clr** is in effect, **/MD** is also in effect. For more information, see [/MD, /MT, /LD (Use Run-Time Library)](md-mt-ld-use-run-time-library.md). **/MD** ensures that the dynamically linked, multithreaded versions of the runtime routines are selected from the standard header (.h) files. Multithreading is required for managed programming because the CLR garbage collector runs finalizers in an auxiliary thread.
 

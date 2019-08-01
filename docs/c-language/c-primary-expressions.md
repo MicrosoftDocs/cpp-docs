@@ -14,11 +14,11 @@ The operands in expressions are called "primary expressions."
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*constant*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *expression* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *expression* **)**
 
 *expression*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
 
 ## See also
 

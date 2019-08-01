@@ -5,11 +5,13 @@ class CSubItem : public CObject
    CSubItem() : m_i(0) {};
 
 public:
-   CSubItem(CMyDocument * pDoc)
-     { m_pDoc = pDoc; }
+   CSubItem(CMyDocument* pDoc)
+   {
+      m_pDoc = pDoc;
+   }
 
    // back pointer to owning document
-   CMyDocument* m_pDoc; 
+   CMyDocument* m_pDoc;
    WORD m_i; // other item data
 
    virtual void Serialize(CArchive& ar);

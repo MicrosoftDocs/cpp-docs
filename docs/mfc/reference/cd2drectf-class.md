@@ -52,7 +52,7 @@ Constructs a CD2DRectF object from CRect object.
 ```
 CD2DRectF(const CRect& rect);
 CD2DRectF(const D2D1_RECT_F& rect);
-  CD2DRectF(const D2D1_RECT_F* rect);
+CD2DRectF(const D2D1_RECT_F* rect);
 
 CD2DRectF(
     FLOAT fLeft = 0.,

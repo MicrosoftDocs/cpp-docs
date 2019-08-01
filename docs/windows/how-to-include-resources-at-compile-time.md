@@ -23,7 +23,7 @@ If you have sections in your existing .rc files that meet any of these condition
 
 You can add resources from other files to your project at compile time by listing them in the **Compile-time directives** box in the **Resource Includes** dialog box. Use the **Resource Includes** dialog box to modify the project environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in `Resource.h`.
 
-To get started, open the **Resource Includes** dialog box by right-clicking an .rc file in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources), select **Resource Includes** and note the following properties:
+To get started, open the **Resource Includes** dialog box by right-clicking an .rc file in [Resource View](how-to-create-a-resource-script-file.md#create-resources), select **Resource Includes** and note the following properties:
 
 | Property | Description |
 |---|---|
@@ -40,7 +40,7 @@ Once changes are made to your resource file using the **Resource Includes** dial
 
 1. Place the resources in a resource script file with a unique file name. Don't use *projectname.rc*, because this is the name of the file used for the main resource script file.
 
-1. Right-click the *.rc* file in [Resource View](/windows/how-to-create-a-resource-script-file#create-resources) and select **Resource Includes**.
+1. Right-click the *.rc* file in [Resource View](how-to-create-a-resource-script-file.md#create-resources) and select **Resource Includes**.
 
 1. In the **Compile-time directives** box, add the [#include](../preprocessor/hash-include-directive-c-cpp.md) compiler directive to include the new resource file in the main resource file in the development environment.
 
@@ -70,7 +70,7 @@ The resources in files included this way are only made part of the executable at
 
 Win32
 
-## See Also
+## See also
 
 [Resource Files](../windows/resource-files-visual-studio.md)<br/>
 [How to: Create Resources](../windows/how-to-create-a-resource-script-file.md)<br/>

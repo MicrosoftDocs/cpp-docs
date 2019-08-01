@@ -19,10 +19,10 @@ class istreambuf_iterator
 
 ### Parameters
 
-*CharType*<br/>
+*CharType*\
 The type that represents the character type for the istreambuf_iterator.
 
-*Traits*<br/>
+*Traits*\
 The type that represents the character type for the istreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
@@ -122,7 +122,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The iterator for which to check for equality.
 
 ### Return Value
@@ -219,10 +219,10 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### Parameters
 
-*strbuf*<br/>
+*strbuf*\
 The input stream buffer to which the `istreambuf_iterator` is being attached.
 
-*_Istr*<br/>
+*_Istr*\
 The input stream to which the `istreambuf_iterator` is being attached.
 
 ### Remarks
@@ -421,7 +421,7 @@ int main( )
 
 ## See also
 
-[iterator Struct](../standard-library/iterator-struct.md)<br/>
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[iterator Struct](../standard-library/iterator-struct.md)\
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

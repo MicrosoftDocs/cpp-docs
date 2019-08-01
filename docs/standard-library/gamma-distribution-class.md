@@ -42,10 +42,10 @@ public:
 
 ### Parameters
 
-*RealType*<br/>
+*RealType*\
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*<br/>
+*URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -69,7 +69,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the gamma distribution, see the Wolfram MathWorld article [Gamma Distribution](http://go.microsoft.com/fwlink/p/?linkid=401111).
+For detailed information about the gamma distribution, see the Wolfram MathWorld article [Gamma Distribution](https://go.microsoft.com/fwlink/p/?linkid=401111).
 
 ## Example
 
@@ -171,13 +171,13 @@ explicit gamma_distribution(const param_type& parm);
 
 ### Parameters
 
-*alpha*<br/>
+*alpha*\
 The `alpha` distribution parameter.
 
-*beta*<br/>
+*beta*\
 The `beta` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -206,13 +206,13 @@ struct param_type {
 
 ### Parameters
 
-*alpha*<br/>
+*alpha*\
 The `alpha` distribution parameter.
 
-*beta*<br/>
+*beta*\
 The `beta` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` instance to compare this to.
 
 ### Remarks
@@ -223,4 +223,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

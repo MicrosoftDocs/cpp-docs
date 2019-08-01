@@ -18,7 +18,7 @@ struct is_default_constructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -67,4 +67,4 @@ is_default_constructible<Simple2> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

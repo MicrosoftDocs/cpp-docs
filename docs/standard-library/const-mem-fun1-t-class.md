@@ -22,13 +22,13 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 
 ### Parameters
 
-*member_ptr*<br/>
+*member_ptr*\
 A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*<br/>
+*left*\
 The **const** object that the *member_ptr* member function is called on.
 
-*right*<br/>
+*right*\
 The argument that is being given to *member_ptr*.
 
 ## Return Value
@@ -42,14 +42,3 @@ The template class stores a copy of *member_ptr*, which must be a pointer to a m
 ## Example
 
 The constructor of `const_mem_fun1_t` is rarely used directly. `mem_fn` is used to adapt member functions. See [mem_fn](../standard-library/functional-functions.md#mem_fn) for an example of how to use member function adaptors.
-
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## See also
-
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

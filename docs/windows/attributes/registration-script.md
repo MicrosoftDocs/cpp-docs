@@ -62,7 +62,7 @@ class CMyClass:public IFace {};
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## See Also
+## See also
 
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>

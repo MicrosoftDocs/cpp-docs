@@ -36,7 +36,7 @@ int main( ) {
 }
 ```
 
-The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../windows/arrays-cpp-component-extensions.md).
+The compiler implements array operations with pointer arithmetic. Therefore, native arrays are not verifiable; use a CLR array instead. For more information, see [array](../../extensions/arrays-cpp-component-extensions.md).
 
 The following sample generates C4958:
 

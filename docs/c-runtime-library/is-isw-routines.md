@@ -140,7 +140,7 @@ Printable wide character, including space wide character (L' ').
 Printable wide character that is neither space wide character (L' ') nor wide character for which `iswalnum` is nonzero.
 
 `iswspace`<br/>
-Wide character that corresponds to standard white-space character or is one of implementation-defined set of wide characters for which `iswalnum` is false. Standard white-space characters are: space (L' '), formfeed (L'\f'), newline (L'\n'), carriage return (L'\r'), horizontal tab (L'\t'), and vertical tab (L'\v').
+Wide character that corresponds to standard white-space character or is one of implementation-defined set of wide characters for which `iswalnum` is false. Standard white-space characters are: space (L' '), form feed (L'\f'), newline (L'\n'), carriage return (L'\r'), horizontal tab (L'\t'), and vertical tab (L'\v').
 
 `iswupper`<br/>
 Wide character that is uppercase or is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswupper` returns nonzero only for wide characters that correspond to uppercase characters.

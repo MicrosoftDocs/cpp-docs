@@ -1,13 +1,14 @@
 ---
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
+description: "Use the Microsoft C++ compiler from a command prompt."
 ms.custom: "conceptual"
-ms.date: "09/24/2018"
+ms.date: "04/23/2019"
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 ---
 # Walkthrough: Compiling a Native C++ Program on the Command Line
 
-Visual C++ includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.
+Visual Studio includes a command-line C++ compiler that you can use to create everything from basic console apps to Universal Windows Platform apps, Desktop apps, device drivers, and .NET components.
 
 In this walkthrough, you create a basic, "Hello, World"-style C++ program by using a text editor, and then compile it on the command line. If you'd like to try the Visual Studio IDE instead of using the command line, see [Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md) or [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
 
@@ -19,7 +20,7 @@ To complete this walkthrough, you must have installed either Visual Studio and t
 
 Visual Studio is a powerful integrated development environment (IDE) that supports a full-featured editor, resource managers, debuggers, and compilers for many languages and platforms. For information on how to download and install Visual Studio, including the free Visual Studio Community edition, and to include support for C/C++ development, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md).
 
-The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, download [Build Tools for Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=875721).
+The Build Tools for Visual Studio installs only the command-line compilers, tools, and libraries you need to build C and C++ programs. It's perfect for build labs or classroom exercises and installs relatively quickly. To install only the command-line tools, look for Build Tools for Visual Studio on the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page.
 
 Before you can build a C or C++ program on the command line, you must verify that the tools are installed, and that you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
 
@@ -28,11 +29,11 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 ### Open a developer command prompt
 
-1. If you have installed Visual Studio 2017 on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio 2017** folder (not the Visual Studio 2017 app). Choose **Developer Command Prompt for VS 2017** to open the command prompt window.
+1. If you have installed Visual Studio 2017 or later on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
 
    If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
-   If you're using a different version of Visual Studio or are running a different version of Windows, look in your Start menu or Start page for a Visual Studio tools folder that contains a developer command prompt shortcut. You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
+   You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 
 1. Next, verify that the Visual C++ developer command prompt is set up correctly. In the command prompt window, enter `cl` and verify that the output looks something like this:
 
@@ -77,7 +78,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 1. Save your work! In Notepad, on the **File** menu, choose **Save**.
 
-   Congratulations, you've created a Visual C++ source file, hello.cpp, that is ready to compile.
+   Congratulations, you've created a C++ source file, hello.cpp, that is ready to compile.
 
 1. Switch back to the developer command prompt window. Enter `dir` at the command prompt to list the contents of the c:\hello directory. You should see the source file hello.cpp in the directory listing, which looks something like:
 

@@ -16,4 +16,4 @@ Visual C++ provides the following technologies to help you create multi-threaded
 |[C++ AMP (C++ Accelerated Massive Parallelism)](amp/cpp-amp-cpp-accelerated-massive-parallelism.md)|Classes that enable the use of modern graphics processors for general purpose programming.|
 |[Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)|Older technologies that may be useful in older applications. For new apps, use the Concurrency Runtime or C++ AMP.|
 |[OpenMP](openmp/openmp-in-visual-cpp.md)|The Microsoft implementation of the OpenMP API.|
-|[Visual C++](../visual-cpp-in-visual-studio.md)|This section of the documentation contains information about most of the features of Visual C++.|
+|[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)|This section of the documentation contains information about most of the features of Visual C++.|

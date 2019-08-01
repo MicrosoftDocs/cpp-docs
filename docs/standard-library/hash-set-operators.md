@@ -1,6 +1,6 @@
 ---
 title: "&lt;hash_set&gt; operators"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
@@ -24,10 +24,10 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_set`.
 
-*right*<br/>
+*right*\
 An object of type `hash_set`.
 
 ### Return Value
@@ -92,10 +92,10 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_set`.
 
-*right*<br/>
+*right*\
 An object of type `hash_set`.
 
 ### Return Value
@@ -145,7 +145,7 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.
 ```
 
-## <a name="neq_hash_multiset"></a>  operator!= (hash_multiset)
+## <a name="op_neq_hash_multiset"></a>  operator!= (hash_multiset)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -158,10 +158,10 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `hash_multiset`.
 
 ### Return Value
@@ -211,7 +211,7 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.
 ```
 
-## <a name="eq_eq_hash_multiset"></a>  operator== (hash_multiset)
+## <a name="op_eq_eq_hash_multiset"></a>  operator== (hash_multiset)
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
@@ -224,10 +224,10 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### Parameters
 
-*left*<br/>
+*left*\
 An object of type `hash_multiset`.
 
-*right*<br/>
+*right*\
 An object of type `hash_multiset`.
 
 ### Return Value
@@ -279,4 +279,4 @@ The hash_multisets s1 and s2 are equal.
 
 ## See also
 
-[<hash_set>](../standard-library/hash-set.md)<br/>
+[<hash_set>](../standard-library/hash-set.md)

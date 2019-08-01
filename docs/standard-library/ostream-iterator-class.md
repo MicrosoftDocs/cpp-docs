@@ -18,13 +18,13 @@ class ostream_iterator
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The type of object to be inserted into the output stream.
 
-*CharType*<br/>
+*CharType*\
 The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
 
-*Traits*<br/>
+*Traits*\
 The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 The ostream_iterator class must satisfy the requirements for an output iterator. Algorithms can be written directly to output streams using an `ostream_iterator`.
@@ -215,7 +215,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### Parameters
 
-*val*<br/>
+*val*\
 The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
@@ -274,10 +274,10 @@ ostream_iterator(
 
 ### Parameters
 
-*_Ostr*<br/>
+*_Ostr*\
 The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
 
-*_Delimiter*<br/>
+*_Delimiter*\
 The delimiter that is inserted into the output stream between values.
 
 ### Remarks
@@ -401,6 +401,6 @@ by intOut are:
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

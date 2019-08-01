@@ -52,7 +52,7 @@ The following code example is a portion of a dialog that validates a network add
 
 ## Example
 
-The following code example from the dialog header file defines the [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) and [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) variables that are required by the [CNetAddressCtrl::GetAddress](#getaddress) method.
+The following code example from the dialog header file defines the [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) and [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) variables that are required by the [CNetAddressCtrl::GetAddress](#getaddress) method.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_2.h)]
 
@@ -169,7 +169,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 ### Parameters
 
 *pAddress*<br/>
-[in, out] Pointer to an [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) structure.  Set the *pAddrInfo* member of this structure to the address of a [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) structure before you call the GetAddress method.
+[in, out] Pointer to an [NC_ADDRESS](/windows/desktop/api/shellapi/ns-shellapi-tagnc_address) structure.  Set the *pAddrInfo* member of this structure to the address of a [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) structure before you call the GetAddress method.
 
 ### Return Value
 
@@ -177,7 +177,7 @@ The value S_OK if this method is successful; otherwise, a COM error code. For mo
 
 ### Remarks
 
-If this method is successful, the [NET_ADDRESS_INFO](https://msdn.microsoft.com/library/windows/desktop/bb773346) structure contains additional information about the network address.
+If this method is successful, the [NET_ADDRESS_INFO](/windows/desktop/shell/hkey-type) structure contains additional information about the network address.
 
 Use the [CNetAddressCtrl::SetAllowType](#setallowtype) method to specify the types of addresses the current network address control can support. Use the [CNetAddressCtrl::GetAddress](#getaddress) method to validate and parse the network address that the user enters. Use the [CNetAddressCtrl::DisplayErrorTip](#displayerrortip) method to display an error message infotip if the [CNetAddressCtrl::GetAddress](#getaddress) method is unsuccessful.
 
@@ -193,7 +193,7 @@ DWORD GetAllowType() const;
 
 ### Return Value
 
-A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).
+A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](/windows/desktop/shell/net-string).
 
 ### Remarks
 
@@ -211,7 +211,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*dwAddrMask*|[in] A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](https://msdn.microsoft.com/library/windows/desktop/bb762586).|
+|*dwAddrMask*|[in] A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](/windows/desktop/shell/net-string).|
 
 ### Return Value
 

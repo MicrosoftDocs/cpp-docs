@@ -6,7 +6,7 @@ int CMyWinApp::Run()
    ULONG_PTR gdiHookToken;
 
    gdiSI.SuppressBackgroundThread = TRUE;
-   GdiplusStartup(&gdiToken,&gdiSI,&gdiSO);
+   GdiplusStartup(&gdiToken, &gdiSI, &gdiSO);
    gdiSO.NotificationHook(&gdiHookToken);
    int nRet = CWinApp::Run();
 

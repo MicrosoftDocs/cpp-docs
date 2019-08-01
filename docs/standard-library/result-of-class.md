@@ -25,10 +25,10 @@ template<class T>
 
 ### Parameters
 
-*Fn*<br/>
+*Fn*\
 The callable type to query.
 
-*ArgTypes*<br/>
+*ArgTypes*\
 The types of the argument list to the callable type to query.
 
 ## Remarks
@@ -43,5 +43,5 @@ Use this template to determine at compile time the result type of `Fn`(`ArgTypes
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[invoke_result class](invoke-result-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[invoke_result class](invoke-result-class.md)

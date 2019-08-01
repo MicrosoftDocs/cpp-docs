@@ -1,7 +1,6 @@
 ---
 title: "TN023: Standard MFC Resources"
 ms.date: "11/04/2016"
-f1_keywords: ["vc.mfc.resources"]
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
 ---
@@ -13,7 +12,7 @@ This note describes the standard resources provided with and needed by the MFC l
 
 MFC offers two categories of predefined resources that you can use in your application: clip-art resources and standard framework resources.
 
-Clip-art resources are additional resources that the framework does not depend on, but which you might want to add to your application's user interface. The following clip-art resources are contained in the MFC General sample [CLIPART](../visual-cpp-samples.md):
+Clip-art resources are additional resources that the framework does not depend on, but which you might want to add to your application's user interface. The following clip-art resources are contained in the MFC General sample [CLIPART](../overview/visual-cpp-samples.md):
 
 - Common.rc: A single file of resources that contains:
 

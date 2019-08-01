@@ -1,21 +1,21 @@
 ---
 title: "Open Folder support for C++ build systems in Visual Studio"
-ms.date: "01/21/2019"
-helpviewer_keywords: ["Open Folder Projects in Visual C++"]
+ms.date: "03/21/2019"
+helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Open Folder projects for C++
 
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
-CMake is integrated in the Visual Studio IDE as CMake Tools for Visual Studio, a component of the C++ desktop workload. For more information, see [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md). For any other build system, you can use the Open Folder feature. Open Folder effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
+CMake is integrated in the Visual Studio IDE as a component of the C++ desktop workload. For more information, see [CMake projects in Visual Studio](cmake-projects-in-visual-studio.md). For any other build system, you can use the Open Folder feature. Open Folder effectively decouples the code editor, debugger and analyzers from the build system and the compiler toolset. You can use the C++ code editor with its rich IntelliSense features, the code analyzers, and the Visual Studio debugger with virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. It even works with a single file or a loose collection of files with no build system.
 
 To use Open Folder, from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**.
 Solution Explorer immediately displays all the files in the folder. You can click on any file to begin editing it. In the background, Visual Studio starts indexing the files to enable IntelliSense, navigation, and refactoring features. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. 
 
 ## QMake projects that target the Qt framework
 
-You can use CMake Tools for Visual Studio to target Qt to build Qt projects, or you can use the [Qt Visual Studio Extension](https://download.qt.io/development_releases/vsaddin/) for either Visual Studio 2015 or Visual Studio 2017.
+You can use CMake to build Qt projects, or you can use the [Qt Visual Studio Extension](https://download.qt.io/development_releases/vsaddin/) for either Visual Studio 2015 or Visual Studio 2017.
 
 ## gyp, Cons, SCons, Buck, etc
 
@@ -43,7 +43,7 @@ IntelliSense and browsing behavior partly depends on the active build configurat
       "includePath": [ "include" ],
       "defines": [ "_DEBUG" ],
       "compilerSwitches": "/std:c++17",
-      "intelliSenseMode": "msvc-x64",
+      "intelliSenseMode": "windows-msvc-x64",
       "forcedInclude": [ "pch.h" ],
       "undefines": []
     }
@@ -58,7 +58,7 @@ You can automate build scripts or any other external operations on the files you
 
 ![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
 
-This creates (or opens) the `tasks.vs.json` file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
+This creates (or opens) the **tasks.vs.json** file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (cmd.exe on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
 ```json
 {
@@ -81,7 +81,7 @@ For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing `launch.vs.json` file, or if none exists, it will create a new file prepopulated with the information about the program you have selected.
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing **launch.vs.json** file, or if none exists, it will create a new file prepopulated with the information about the program you have selected.
 
 To specify additional arguments, just add them in the `args` JSON array as shown in the following example:
 
@@ -101,7 +101,3 @@ To specify additional arguments, just add them in the `args` JSON array as shown
 ```
 
 When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press **F5** now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and their functionality are now available.
-
-## See also
-
-

@@ -18,7 +18,7 @@ struct is_integral;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -67,6 +67,6 @@ is_integral<float> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_enum Class](../standard-library/is-enum-class.md)<br/>
-[is_floating_point Class](../standard-library/is-floating-point-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_enum Class](../standard-library/is-enum-class.md)\
+[is_floating_point Class](../standard-library/is-floating-point-class.md)

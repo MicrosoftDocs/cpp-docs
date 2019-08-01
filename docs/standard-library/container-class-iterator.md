@@ -7,7 +7,7 @@ ms.assetid: f9c49d1c-17cb-4b17-8e54-09e3ea41ca26
 # Container Class::iterator
 
 > [!NOTE]
-> This topic is in the Visual C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
+> This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 Describes an object that can serve as an iterator for the controlled sequence.
 
@@ -24,4 +24,4 @@ It is described here as a synonym for the unspecified type `T5`. An object of ty
 
 ## See also
 
-[Sample Container Class](../standard-library/sample-container-class.md)<br/>
+[Sample Container Class](../standard-library/sample-container-class.md)

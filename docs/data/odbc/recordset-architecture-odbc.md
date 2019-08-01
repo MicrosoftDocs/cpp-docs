@@ -21,6 +21,9 @@ This topic describes the data members that comprise the architecture of a record
 
 ##  <a name="_core_a_sample_class"></a> Sample Class
 
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create a consumer manually.
+
 When you use the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** wizard to declare a recordset class derived from `CRecordset`, the resulting class has the general structure shown in the following simple class:
 
 ```cpp
@@ -75,7 +78,7 @@ When a wizard writes a constructor for your class, it also initializes the [m_nF
 
 For more information and examples, see [Record Field Exchange: Using RFX](../../data/odbc/record-field-exchange-using-rfx.md).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Declaring a Class for a Table (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>

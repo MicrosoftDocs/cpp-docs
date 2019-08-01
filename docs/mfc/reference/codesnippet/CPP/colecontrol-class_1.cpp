@@ -1,4 +1,4 @@
 DWORD CMyAxCtrl::GetActivationPolicy()
 {
-    return POINTERINACTIVE_ACTIVATEONDRAG;
+   return POINTERINACTIVE_ACTIVATEONDRAG;
 }

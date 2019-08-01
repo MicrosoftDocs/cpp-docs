@@ -2202,8 +2202,8 @@ This member function emulates the functionality of the [TB_SETWINDOWTHEME](/wind
 
 ## See also
 
-[MFC Sample CMNCTRL1](../../visual-cpp-samples.md)<br/>
-[MFC Sample MFCIE](../../visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CToolBar Class](../../mfc/reference/ctoolbar-class.md)

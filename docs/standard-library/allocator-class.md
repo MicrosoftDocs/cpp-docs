@@ -18,7 +18,7 @@ class allocator
 
 ### Parameters
 
-*Type*<br/>
+*Type*\
 The type of object for which storage is being allocated or deallocated.
 
 ## Remarks
@@ -47,13 +47,13 @@ These `Type`s specify the form that pointers and references must take for alloca
 
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[allocator](#allocator)|Constructors used to create `allocator` objects.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[const_pointer](#const_pointer)|A type that provides a constant pointer to the type of object managed by the allocator.|
 |[const_reference](#const_reference)|A type that provides a constant reference to type of object managed by the allocator.|
@@ -63,9 +63,9 @@ These `Type`s specify the form that pointers and references must take for alloca
 |[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of template class `allocator` can allocate.|
 |[value_type](#value_type)|A type that is managed by the allocator.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
@@ -77,17 +77,11 @@ These `Type`s specify the form that pointers and references must take for alloca
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
 |[operator=](#op_eq)|Assigns one `allocator` object to another `allocator` object.|
 
-## Requirements
-
-**Header:** \<memory>
-
-**Namespace:** std
-
-## <a name="address"></a>  allocator::address
+### <a name="address"></a> address
 
 Finds the address of an object whose value is specified.
 
@@ -96,20 +90,20 @@ pointer address(reference val) const;
 const_pointer address(const_reference val) const;
 ```
 
-### Parameters
+#### Parameters
 
-*val*<br/>
+*val*\
 The const or nonconst value of the object whose address is being searched for.
 
-### Return Value
+#### Return Value
 
 A const or nonconst pointer to the object found of, respectively, const or nonconst value.
 
-### Remarks
+#### Remarks
 
 The member functions return the address of *val*, in the form that pointers must take for allocated elements.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_address.cpp
@@ -153,7 +147,7 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
 ```
 
-## <a name="allocate"></a>  allocator::allocate
+### <a name="allocate"></a> allocate
 
 Allocates a block of memory large enough to store at least some specified number of elements.
 
@@ -161,23 +155,23 @@ Allocates a block of memory large enough to store at least some specified number
 pointer allocate(size_type count, const void* _Hint);
 ```
 
-### Parameters
+#### Parameters
 
-*count*<br/>
+*count*\
 The number of elements for which sufficient storage is to be allocated.
 
-*_Hint*<br/>
+*_Hint*\
 A const pointer that may assist the allocator object satisfy the request for storage by locating the address of an object allocated prior to the request.
 
-### Return Value
+#### Return Value
 
 A pointer to the allocated object or null if memory was not allocated.
 
-### Remarks
+#### Remarks
 
 The member function allocates storage for an array of count elements of type `Type`, by calling operator new(*count*). It returns a pointer to the allocated object. The hint argument helps some allocators in improving locality of reference; a valid choice is the address of an object earlier allocated by the same allocator object and not yet deallocated. To supply no hint, use a null pointer argument instead.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_allocate.cpp
@@ -213,7 +207,7 @@ int main( )
 0 1 2 3 4 5 6 7 8 9
 ```
 
-## <a name="allocator"></a>  allocator::allocator
+### <a name="allocator"></a> allocator
 
 Constructors used to create allocator objects.
 
@@ -221,19 +215,19 @@ Constructors used to create allocator objects.
 allocator();
 allocator(const allocator<Type>& right);
 template <class Other>
-allocator(const allocator<Other>& right);
+    allocator(const allocator<Other>& right);
 ```
 
-### Parameters
+#### Parameters
 
-*right*<br/>
+*right*\
 The allocator object to be copied.
 
-### Remarks
+#### Remarks
 
 The constructor does nothing. In general, however, an allocator object constructed from another allocator object should compare equal to it and permit intermixing of object allocation and freeing between the two allocator objects.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_allocator.cpp
@@ -296,7 +290,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-## <a name="const_pointer"></a>  allocator::const_pointer
+### <a name="const_pointer"></a> const_pointer
 
 A type that provides a constant pointer to the type of object managed by the allocator.
 
@@ -304,11 +298,11 @@ A type that provides a constant pointer to the type of object managed by the all
 typedef const value_type *const_pointer;
 ```
 
-### Remarks
+#### Remarks
 
 The pointer type describes an object `ptr` that can designate, through the expression `*ptr`, any const object that an object of template class allocator can allocate.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_const_ptr.cpp
@@ -351,7 +345,7 @@ The original vector v1 is:
 The integer's address found has a value of: 10.
 ```
 
-## <a name="const_reference"></a>  allocator::const_reference
+### <a name="const_reference"></a> const_reference
 
 A type that provides a constant reference to type of object managed by the allocator.
 
@@ -359,11 +353,11 @@ A type that provides a constant reference to type of object managed by the alloc
 typedef const value_type& const_reference;
 ```
 
-### Remarks
+#### Remarks
 
 The reference type describes an object that can designate any const object that an object of template class allocator can allocate.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_const_ref.cpp
@@ -417,7 +411,7 @@ The value of the element referred to by vcref,
 after nofication through its nonconst iterator, is: 175.
 ```
 
-## <a name="construct"></a>  allocator::construct
+### <a name="construct"></a> construct
 
 Constructs a specific type of object at a specified address that is initialized with a specified value.
 
@@ -425,22 +419,22 @@ Constructs a specific type of object at a specified address that is initialized 
 void construct(pointer ptr, const Type& val);
 void construct(pointer ptr, Type&& val);
 template <class _Other>
-void construct(pointer ptr, _Other&&...   val);
+    void construct(pointer ptr, _Other&&... val);
 ```
 
-### Parameters
+#### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the location where the object is to be constructed.
 
-*val*<br/>
+*val*\
 The value with which the object being constructed is to be initialized.
 
-### Remarks
+#### Remarks
 
-The first member function is equivalent to **new** ( ( `void` \*) `ptr` ) **Type** ( `val` ).
+The first member function is equivalent to **new** ((`void` \*) `ptr`) **Type** (`val`).
 
-### Example
+#### Example
 
 ```cpp
 // allocator_construct.cpp
@@ -489,7 +483,7 @@ The modified vector v1 is:
 ( 3 7 9 12 15 18 21 ).
 ```
 
-## <a name="deallocate"></a>  allocator::deallocate
+### <a name="deallocate"></a> deallocate
 
 Frees a specified number of objects from storage beginning at a specified position.
 
@@ -497,23 +491,23 @@ Frees a specified number of objects from storage beginning at a specified positi
 void deallocate(pointer ptr, size_type count);
 ```
 
-### Parameters
+#### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the first object to be deallocated from storage.
 
-*count*<br/>
+*count*\
 The number of objects to be deallocated from storage.
 
-### Remarks
+#### Remarks
 
 The member function frees storage for the array of count objects of type `Type` beginning at *ptr*, by calling `operator delete(ptr)`. The pointer *ptr* must have been returned earlier by a call to [allocate](#allocate) for an allocator object that compares equal to **\*this**, allocating an array object of the same size and type. `deallocate` never throws an exception.
 
-### Example
+#### Example
 
 For an example using the member function, see [allocator::allocate](#allocate).
 
-## <a name="destroy"></a>  allocator::destroy
+### <a name="destroy"></a> destroy
 
 Calls an objects destructor without deallocating the memory where the object was stored.
 
@@ -521,16 +515,16 @@ Calls an objects destructor without deallocating the memory where the object was
 void destroy(pointer ptr);
 ```
 
-### Parameters
+#### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer designating the address of the object to be destroyed.
 
-### Remarks
+#### Remarks
 
 The member function destroys the object designated by *ptr*, by calling the destructor `ptr->`**Type**::**~Type**.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_destroy.cpp
@@ -579,7 +573,7 @@ The modified vector v1 is:
 ( 2 4 6 8 10 -99 14 ).
 ```
 
-## <a name="difference_type"></a>  allocator::difference_type
+### <a name="difference_type"></a> difference_type
 
 A signed integral type that can represent the difference between values of pointers to the type of object managed by the allocator.
 
@@ -587,11 +581,11 @@ A signed integral type that can represent the difference between values of point
 typedef ptrdiff_t difference_type;
 ```
 
-### Remarks
+#### Remarks
 
 The signed integer type describes an object that can represent the difference between the addresses of any two elements in a sequence that an object of template class allocator can allocate.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_diff_type.cpp
@@ -640,7 +634,7 @@ Pointer v1PtrB addresses 12.
 The difference between the integer's addresses is: 8.
 ```
 
-## <a name="max_size"></a>  allocator::max_size
+### <a name="max_size"></a> max_size
 
 Returns the number of elements of type `Type` that could be allocated by an object of class allocator before the free memory is used up.
 
@@ -648,11 +642,11 @@ Returns the number of elements of type `Type` that could be allocated by an obje
 size_type max_size() const;
 ```
 
-### Return Value
+#### Return Value
 
 The number of elements that could be allocated.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_max_size.cpp
@@ -709,29 +703,29 @@ int main( )
 }
 ```
 
-## <a name="op_eq"></a>  allocator::operator=
+### <a name="op_eq"></a> operator=
 
 Assigns one allocator object to another allocator object.
 
 ```cpp
 template <class Other>
-allocator<Type>& operator=(const allocator<Other>& right);
+    allocator<Type>& operator=(const allocator<Other>& right);
 ```
 
-### Parameters
+#### Parameters
 
-*right*<br/>
+*right*\
 An allocator object to be assigned to another such object.
 
-### Return Value
+#### Return Value
 
 A reference to the allocator object
 
-### Remarks
+#### Remarks
 
 The template assignment operator does nothing. In general, however, an allocator object assigned to another allocator object should compare equal to it and permit intermixing of object allocation and freeing between the two allocator objects.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_op_assign.cpp
@@ -772,7 +766,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a>  allocator::pointer
+### <a name="pointer"></a> pointer
 
 A type that provides a pointer to the type of object managed by the allocator.
 
@@ -780,11 +774,11 @@ A type that provides a pointer to the type of object managed by the allocator.
 typedef value_type *pointer;
 ```
 
-### Remarks
+#### Remarks
 
 The pointer type describes an object `ptr` that can designate, through the expression **\*ptr**, any object that an object of template class allocator can allocate.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_ptr.cpp
@@ -827,19 +821,20 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
 ```
 
-## <a name="rebind"></a>  allocator::rebind
+### <a name="rebind"></a> rebind
 
 A structure that enables an allocator for objects of one type to allocate storage for objects of another type.
+
 ```cpp
-struct rebind {    typedef allocator<_Other> other ;    };
+struct rebind { typedef allocator<_Other> other; };
 ```
 
-### Parameters
+#### Parameters
 
-*other*<br/>
+*other*\
 The type of element for which memory is being allocated.
 
-### Remarks
+#### Remarks
 
 This structure is useful for allocating memory for type that differs from the element type of the container being implemented.
 
@@ -857,7 +852,7 @@ Or, you can name its pointer type by writing the type:
 A::rebind<Other>::other::pointer
 ```
 
-### Example
+#### Example
 
 ```cpp
 // allocator_rebind.cpp
@@ -882,7 +877,7 @@ int main( )
 }
 ```
 
-## <a name="reference"></a>  allocator::reference
+### <a name="reference"></a> reference
 
 A type that provides a reference to the type of object managed by the allocator.
 
@@ -890,11 +885,11 @@ A type that provides a reference to the type of object managed by the allocator.
 typedef value_type& reference;
 ```
 
-### Remarks
+#### Remarks
 
 The reference type describes an object that can designate any object that an object of template class allocator can allocate.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_reference.cpp
@@ -942,7 +937,7 @@ the first element in the vector.
 The element referred to by vref after being modified is: 150.
 ```
 
-## <a name="size_type"></a>  allocator::size_type
+### <a name="size_type"></a> size_type
 
 An unsigned integral type that can represent the length of any sequence that an object of template class allocator can allocate.
 
@@ -950,7 +945,7 @@ An unsigned integral type that can represent the length of any sequence that an 
 typedef size_t size_type;
 ```
 
-### Example
+#### Example
 
 ```cpp
 // allocator_size_type.cpp
@@ -987,7 +982,7 @@ int main( )
 }
 ```
 
-## <a name="value_type"></a>  allocator::value_type
+### <a name="value_type"></a> value_type
 
 A type that is managed by the allocator.
 
@@ -995,11 +990,11 @@ A type that is managed by the allocator.
 typedef Type value_type;
 ```
 
-### Remarks
+#### Remarks
 
 The type is a synonym for the template parameter `Type`.
 
-### Example
+#### Example
 
 ```cpp
 // allocator_value_type.cpp
@@ -1048,6 +1043,17 @@ The modified vector v is:
 ( 150 200 300 400 500 600 700 ).
 ```
 
-## See also
+## Helpers
 
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+### <a name="allocator_arg_t"></a> allocator_arg_t
+
+```cpp
+struct allocator_arg_t { explicit allocator_arg_t() = default; };
+inline constexpr allocator_arg_t allocator_arg{};
+```
+
+### <a name="uses_allocator"></a> uses_allocator
+
+```cpp
+template <class T, class Alloc> struct uses_allocator;
+```

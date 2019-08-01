@@ -2475,7 +2475,7 @@ DWORD describing which form, or aspect, of an object is to be displayed. Valid v
 - DVASPECT_TRANSPARENT Rectangle covering all transparent or irregular parts.
 
 *pRect*<br/>
-Points to the [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
+Points to the [RECTL](/previous-versions/dd162907\(v=vs.85\)) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
 
 ### Return Value
 
@@ -3873,8 +3873,8 @@ Call this function to dispatch specific messages through the control's message m
 
 ## See also
 
-[MFC Sample CIRC3](../../visual-cpp-samples.md)<br/>
-[MFC Sample TESTHELP](../../visual-cpp-samples.md)<br/>
+[MFC Sample CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample TESTHELP](../../overview/visual-cpp-samples.md)<br/>
 [COlePropertyPage Class](../../mfc/reference/colepropertypage-class.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>

@@ -11,7 +11,7 @@ illegal expression for named attribute argument 'field'
 
 When initializing a named attribute argument, the value must be a compile time constant.
 
-For more information on attributes, see [User-Defined Attributes](../../windows/user-defined-attributes-cpp-component-extensions.md).
+For more information on attributes, see [User-Defined Attributes](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
 ## Example
 

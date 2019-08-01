@@ -29,6 +29,6 @@ The compiler will process any tag that is valid XML. The following tags provide 
 
 In the current release, the MSVC compiler does not support `<paramref>`, a tag that is supported by other Visual Studio compilers. Visual C++ may support `<paramref>` in a future release.
 
-## See Also
+## See also
 
 [XML Documentation](xml-documentation-visual-cpp.md)

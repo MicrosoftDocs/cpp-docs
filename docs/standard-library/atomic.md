@@ -150,5 +150,5 @@ In the following list, the functions that do not end in `_explicit` have the sem
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

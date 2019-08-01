@@ -145,6 +145,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 |Operator|Description|
 |-|-|
+|[operator=](#op_eq)|Assigns a locale.|
 |[operator!=](#op_neq)|Tests two locales for inequality.|
 |[operator( )](#op_call)|Compares two `basic_string` objects.|
 |[operator==](#op_eq_eq)|Tests two locales for equality.|
@@ -268,7 +269,7 @@ locale combine(const locale& Loc) const;
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
@@ -337,7 +338,7 @@ static locale global(const locale& Loc);
 
 ### Parameters
 
-*Loc*<br/>
+*Loc*\
 The locale to be used as the default locale by the program.
 
 ### Return Value
@@ -394,7 +395,7 @@ The member class describes the static member object required by each unique loca
 
 ## <a name="locale"></a>  locale::locale
 
-Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale.
+Creates a locale, or a copy of a locale, or a copy of locale where a facet or a category has been replaced by a facet or category from another locale. Also includes a destructor.
 
 ```cpp
 locale();
@@ -407,23 +408,25 @@ locale(const locale& Loc, const char* Locname, category Cat);
 
 template <class Facet>
 locale(const locale& Loc, const Facet* Fac);
+
+~locale();
 ```
 
 ### Parameters
 
-*Locname*<br/>
+*Locname*\
 Name of a locale.
 
-*Loc*<br/>
+*Loc*\
 A locale that is to be copied in constructing the new locale.
 
-*Other*<br/>
+*Other*\
 A locale from which to select a category.
 
-*Cat*<br/>
+*Cat*\
 The category to be substituted into the constructed locale.
 
-*Fac*<br/>
+*Fac*\
 The facet to be substituted into the constructed locale.
 
 ### Remarks
@@ -525,6 +528,14 @@ The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
 ```
 
+## <a name="op_eq"></a>  locale::operator=
+
+Assigns a locale.
+
+```cpp
+const locale& operator=(const locale& other) noexcept;
+```
+
 ## <a name="op_neq"></a>  locale::operator!=
 
 Tests two locales for inequality.
@@ -535,7 +546,7 @@ bool operator!=(const locale& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 One of the locales to be tested for inequality.
 
 ### Return Value
@@ -599,10 +610,10 @@ bool operator()(
 
 ### Parameters
 
-*left*<br/>
+*left*\
 The left string.
 
-*right*<br/>
+*right*\
 The right string.
 
 ### Return Value
@@ -668,7 +679,7 @@ bool operator==(const locale& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 One of the locales to be tested for equality.
 
 ### Return Value
@@ -725,7 +736,7 @@ and loc3 (English_United States.1252) are not equal.
 
 ## See also
 
-[\<locale>](../standard-library/locale.md)<br/>
-[Code Pages](../c-runtime-library/code-pages.md)<br/>
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[\<locale>](../standard-library/locale.md)\
+[Code Pages](../c-runtime-library/code-pages.md)\
+[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

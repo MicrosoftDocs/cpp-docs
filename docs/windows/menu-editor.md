@@ -153,12 +153,10 @@ Normally, when you're working in the **Menu Editor**, a menu resource is display
 
 Win32
 
-## See Also
+## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
 [Menu Commands](../windows/menu-command-properties.md)<br/>
-
-<!--
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)<br/>
 [Menus](../mfc/menus-mfc.md)<br/>
-[Menus](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)-->
+[Menus](/windows/desktop/menurc/menus)

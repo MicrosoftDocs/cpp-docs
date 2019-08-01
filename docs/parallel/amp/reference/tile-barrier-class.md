@@ -1,6 +1,6 @@
 ---
 title: "tile_barrier Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["tile_barrier", "AMP/tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::tile_barrier", "AMP/Concurrency::tile_barrier::tile_barrier::wait", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence", "AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence"]
 helpviewer_keywords: ["tile_barrier class"]
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
@@ -42,7 +42,7 @@ class tile_barrier;
 
 **Namespace:** Concurrency
 
-## <a name="tile_barrier__ctor"></a>  tile_barrier Constructor
+## <a name="ctor"></a>  tile_barrier Constructor
 
 Initializes a new instance of the class by copying an existing one.
 
@@ -58,7 +58,7 @@ tile_barrier(
 *_Other*<br/>
 The `tile_barrier` object to copy.
 
-## <a name="wait"></a>  wait
+## wait
 
 Instructs all threads in the thread group (tile) to stop execution until all threads in the tile have finished waiting.
 
@@ -68,7 +68,7 @@ Instructs all threads in the thread group (tile) to stop execution until all thr
 void wait() const restrict(amp);
 ```
 
-## <a name="wait_with_all_memory_fence"></a>  wait_with_all_memory_fence
+## <a name="wait_with_all_memory_fence"></a> wait_with_all_memory_fence
 
 Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all memory accesses are visible to other threads in the thread tile, and have been executed in program order.
 
@@ -78,7 +78,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 void wait_with_all_memory_fence() const restrict(amp);
 ```
 
-## <a name="wait_with_global_memory_fence"></a>  wait_with_global_memory_fence
+## <a name="wait_with_global_memory_fence"> wait_with_global_memory_fence
 
 Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that all global memory accesses are visible to other threads in the thread tile, and have been executed in program order.
 
@@ -88,7 +88,7 @@ Blocks execution of all threads in a tile until all threads in a tile have reach
 void wait_with_global_memory_fence() const  restrict(amp);
 ```
 
-## <a name="wait_with_tile_static_memory_fence"></a>  wait_with_tile_static_memory_fence
+## <a name="wait_with_tile_static_memory_fence"> wait_with_tile_static_memory_fence
 
 Blocks execution of all threads in a tile until all threads in a tile have reached this call. This ensures that `tile_static` memory accesses are visible to other threads in the thread tile, and have been executed in program order.
 

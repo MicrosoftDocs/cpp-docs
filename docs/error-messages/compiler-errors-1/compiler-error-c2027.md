@@ -35,7 +35,7 @@ int main() {
 
 ## Example
 
-It is possible to declare a pointer to a declared but undefined type.  But Visual C++ does not allow a reference to an undefined type.
+It is possible to declare a pointer to a declared but undefined type. But C++ does not allow a reference to an undefined type.
 
 The following sample generates C2027.
 

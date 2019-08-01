@@ -1,1 +1,1 @@
-      GetMyCheckbox()->SetCheck(BST_CHECKED);
+GetMyCheckbox()->SetCheck(BST_CHECKED);

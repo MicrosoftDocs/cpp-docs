@@ -30,6 +30,6 @@ The single-quotation character cannot be used with the charizing operator.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Preprocessor Operators](../preprocessor/preprocessor-operators.md)

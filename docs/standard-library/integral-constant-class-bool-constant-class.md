@@ -24,10 +24,10 @@ struct integral_constant {
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type of the constant.
 
-*v*<br/>
+*v*\
 The value of the constant.
 
 ## Remarks
@@ -68,6 +68,6 @@ integral_constant<bool, false> == false
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[false_type](../standard-library/type-traits-typedefs.md#false_type)<br/>
-[true_type](../standard-library/type-traits-typedefs.md#true_type)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[false_type](../standard-library/type-traits-typedefs.md#false_type)\
+[true_type](../standard-library/type-traits-typedefs.md#true_type)

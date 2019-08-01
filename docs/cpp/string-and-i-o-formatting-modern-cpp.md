@@ -1,12 +1,13 @@
 ---
-title: "String and I-O Formatting (Modern C++)"
-ms.date: "11/04/2016"
+title: "String and I/O Formatting (Modern C++)"
+description: "Choices for formatted string I/O available in modern C++."
+ms.date: "05/30/2019"
 ms.topic: "conceptual"
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
 ---
 # String and I/O Formatting (Modern C++)
 
-C++ [iostreams](../standard-library/iostream.md) are capable of formatted string I/O. For example, the following code shows how to set cout to format an integer to output in hexadecimal, first saving off the current state and re-setting afterwards, because once state formatting is passed to cout, it stays that way until changed, not just for the one line of code.
+C++ [\<iostream>](../standard-library/iostream.md) classes, functions, and operators support formatted string I/O. For example, the following code shows how to set `cout` to format an integer to output in hexadecimal. First, it saves the current state to reset it afterwards, because once format state is passed to `cout`, it stays that way until changed. It doesn't just apply to the one line of code.
 
 ```cpp
 #include <iostream>
@@ -32,17 +33,21 @@ int main()
 }
 ```
 
-This can be entirely too cumbersome in many cases. As an alternative, you can use Boost.Format from the Boost C++ libraries, even though it’s nonstandard. You can download any Boost library from the [Boost](http://www.boost.org/) website.
+This approach is type-safe and extensible, but it's also complex and verbose.
 
-Some advantages of Boost.Format are:
+## Alternative format options
 
-- Safe: Type-safe, and throws an exception for errors—for example, the specification of too few or too many items.
+As an alternative, you can use `Boost.Format` from the Boost C++ libraries, even though it’s nonstandard. You can download any Boost library from the [Boost](https://www.boost.org/) website.
+
+Some advantages of `Boost.Format` are:
+
+- Safe: Type-safe, and throws an exception for errors, for example, the specification of too few or too many items.
 
 - Extensible: Works for any type that can be streamed.
 
 - Convenient: Standard Posix and similar format strings.
 
-Although Boost.Format is built on C++ [iostreams](../standard-library/iostream-programming.md), which are safe and extensible, they aren't performance-optimized. When you require performance optimization, consider C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) and [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md), which are fast and easy to use. However, they are not extensible or safe from vulnerabilities. (Safe versions exist, but they incur a slight performance penalty. For more information, see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) and [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
+Although `Boost.Format` is built on C++ [\<iostream>](../standard-library/iostream-programming.md) facilities, which are safe and extensible, they aren't performance-optimized. When you require performance optimization, consider C [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) and [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md), which are fast and easy to use. However, they aren't extensible or safe from vulnerabilities. (Safe versions exist, but they incur a slight performance penalty. For more information, see [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) and [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
 
 The following code demonstrates some of the Boost formatting features.
 

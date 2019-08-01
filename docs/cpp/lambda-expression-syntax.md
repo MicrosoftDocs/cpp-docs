@@ -1,6 +1,6 @@
 ---
 title: "Lambda Expression Syntax"
-ms.date: "11/04/2016"
+ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], syntax"]
 ms.assetid: 5d6154a4-f34d-4a15-970d-7e7de45f54e9
 ---
@@ -32,7 +32,7 @@ using namespace std;
 
 int main()
 {
-   // Create a vector object that contains 10 elements.
+   // Create a vector object that contains 9 elements.
    vector<int> v;
    for (int i = 1; i < 10; ++i) {
       v.push_back(i);
@@ -57,8 +57,6 @@ int main()
 }
 ```
 
-### Output
-
 ```Output
 1 is odd
 2 is even
@@ -78,7 +76,7 @@ In the example, the third argument to the **for_each** function is a lambda. The
 
 ## Example 2: Using a Function Object
 
-Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the **for_each** function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, **operator()**. The Visual C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.
+Sometimes a lambda would be too unwieldy to extend much further than the previous example. The next example uses a function object instead of a lambda, together with the **for_each** function, to produce the same results as Example 1. Both examples store the count of even numbers in a `vector` object. To maintain the state of the operation, the `FunctorClass` class stores the `m_evenCount` variable by reference as a member variable. To perform the operation, `FunctorClass` implements the function-call operator, **operator()**. The Microsoft C++ compiler generates code that is comparable in size and performance to the lambda code in Example 1. For a basic problem like the one in this article, the simpler lambda design is probably better than the function-object design. However, if you think that the functionality might require significant expansion in the future, then use a function object design so that code maintenance will be easier.
 
 For more information about the **operator()**, see [Function Call](../cpp/function-call-cpp.md). For more information about the **for_each** function, see [for_each](../standard-library/algorithm-functions.md#for_each).
 
@@ -122,7 +120,7 @@ private:
 
 int main()
 {
-    // Create a vector object that contains 10 elements.
+    // Create a vector object that contains 9 elements.
     vector<int> v;
     for (int i = 1; i < 10; ++i) {
         v.push_back(i);
@@ -138,8 +136,6 @@ int main()
         << " even numbers in the vector." << endl;
 }
 ```
-
-## Output
 
 ```Output
 1 is odd

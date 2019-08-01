@@ -103,7 +103,7 @@ Implements properties for a variety of OLE DB property interfaces (for example, 
 
 Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member.
 
-## See Also
+## See also
 
 [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [OLE DB Templates](../../data/oledb/ole-db-templates.md)

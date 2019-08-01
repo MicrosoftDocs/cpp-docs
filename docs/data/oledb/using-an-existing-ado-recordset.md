@@ -31,6 +31,6 @@ To mix OLE DB consumer templates and Active Data Objects (ADO), use ADO to open 
     rs.SetAccessor(accessor);
     ```
 
-## See Also
+## See also
 
 [Using Accessors](../../data/oledb/using-accessors.md)

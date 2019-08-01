@@ -22,7 +22,7 @@ These functions support text encoding and decoding.
 |[BEncodeGetRequiredLength](#bencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 |[EscapeXML](#escapexml)|Call this function to convert characters that are unsafe for use in XML to their safe equivalents.|
 |[GetExtendedChars](#getextendedchars)|Call this function to get the number of extended characters in a string.|
-|[IsExtendedChar](#isextendedchar)|Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, linefeed or carriage return)|
+|[IsExtendedChar](#isextendedchar)|Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, line feed or carriage return)|
 |[QEncode](#qencode)|Call this function to convert some data using the "Q" encoding.  |
 |[QEncodeGetRequiredLength](#qencodegetrequiredlength)|Call this function to get the size in characters of a buffer that could contain a string encoded from data of the specified size.|
 |[QPDecode](#qpdecode)|Decodes a string of data that has been encoded in quoted-printable format such as by a previous call to [QPEncode](#qpencode).|
@@ -267,7 +267,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+The "B" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="bencodegetrequiredlength"></a> BEncodeGetRequiredLength
 
@@ -291,7 +291,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 ### Remarks
 
-The "B" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+The "B" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="escapexml"></a> EscapeXML
 
@@ -364,7 +364,7 @@ Returns the number of extended characters found within the string as determined 
 
 ## <a name="isextendedchar"></a> IsExtendedChar
 
-Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, linefeed or carriage return)
+Call this function to find out if a given character is an extended character (less than 32, greater than 126, and not a tab, line feed or carriage return)
 
 ```
 inline int IsExtendedChar(char ch) throw();
@@ -419,7 +419,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+The "Q" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qencodegetrequiredlength"></a> QEncodeGetRequiredLength
 
@@ -443,7 +443,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 ### Remarks
 
-The "Q" encoding scheme is described in RFC 2047 ([http://www.ietf.org/rfc/rfc2047.txt](http://www.ietf.org/rfc/rfc2047.txt)).
+The "Q" encoding scheme is described in RFC 2047 ([https://www.ietf.org/rfc/rfc2047.txt](https://www.ietf.org/rfc/rfc2047.txt)).
 
 ## <a name="qpdecode"></a> QPDecode
 
@@ -481,7 +481,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpdecodegetrequiredlength"></a> QPDecodeGetRequiredLength
 
@@ -502,7 +502,7 @@ The number of bytes required for a buffer that could hold a decoded string of *n
 
 ### Remarks
 
-The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencode"></a> QPEncode
 
@@ -538,7 +538,7 @@ ATLSMTP_QPENCODE flags describing how the conversion is to be performed.
 
 - ATLSMTP_QPENCODE_TRAILING_SOFT Appends `=\r\n` to the encoded string.
 
-The quoted-printable encoding scheme is described in [RFC 2045](http://www.ietf.org/rfc/rfc2045.txt).
+The quoted-printable encoding scheme is described in [RFC 2045](https://www.ietf.org/rfc/rfc2045.txt).
 
 ### Return Value
 
@@ -546,7 +546,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="qpencodegetrequiredlength"></a> QPEncodeGetRequiredLength
 
@@ -567,7 +567,7 @@ The number of characters required for a buffer that could hold encoded data of *
 
 ### Remarks
 
-The quoted-printable encoding scheme is described in RFC 2045 ([http://www.ietf.org/rfc/rfc2045.txt](http://www.ietf.org/rfc/rfc2045.txt)).
+The quoted-printable encoding scheme is described in RFC 2045 ([https://www.ietf.org/rfc/rfc2045.txt](https://www.ietf.org/rfc/rfc2045.txt)).
 
 ## <a name="uudecode"></a> UUDecode
 

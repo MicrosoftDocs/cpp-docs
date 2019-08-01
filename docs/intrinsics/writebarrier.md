@@ -34,7 +34,7 @@ The `_WriteBarrier` intrinsic limits the compiler optimizations that can remove 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [_ReadBarrier](../intrinsics/readbarrier.md)<br/>
 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)<br/>

@@ -11,11 +11,11 @@ ms.assetid: b2f8b1d8-8812-49b8-a346-28e48f02ba5c
 
 A property was declared incorrectly. For more information, see
 
-- [property](../../windows/property-cpp-component-extensions.md)
+- [property](../../extensions/property-cpp-component-extensions.md)
 
-- [abstract](../../windows/abstract-cpp-component-extensions.md)
+- [abstract](../../extensions/abstract-cpp-component-extensions.md)
 
-- [sealed](../../windows/sealed-cpp-component-extensions.md)
+- [sealed](../../extensions/sealed-cpp-component-extensions.md)
 
 ## Example
 

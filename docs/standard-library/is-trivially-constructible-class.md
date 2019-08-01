@@ -18,10 +18,10 @@ struct is_trivially_constructible;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
-*Args*<br/>
+*Args*\
 The argument types to match in a constructor of *T*.
 
 ## Remarks
@@ -36,4 +36,4 @@ An instance of the type predicate holds true if the type *T* is trivially constr
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

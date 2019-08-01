@@ -101,7 +101,7 @@ recursive_directory_iterator& increment(error_code& ec) noexcept;
 
 ### Parameters
 
-*ec*<br/>
+*ec*\
 Specified error code.
 
 ### Remarks
@@ -118,7 +118,7 @@ bool operator!=(const recursive_directory_iterator& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) for comparison.
 
 ## <a name="op_as"></a> recursive_directory_iterator::operator=
@@ -132,7 +132,7 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
 
 ### Parameters
 
-*recursive_directory_iterator*<br/>
+*recursive_directory_iterator*\
 The [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) being copied into the `recursive_directory_iterator`.
 
 ## <a name="op_eq"></a> recursive_directory_iterator::operator==
@@ -145,7 +145,7 @@ bool operator==(const recursive_directory_iterator& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) for comparison.
 
 ## <a name="op_multiply"></a> recursive_directory_iterator::operator*
@@ -176,7 +176,7 @@ recursive_directory_iterator& operator++(int);
 
 ### Parameters
 
-*int*<br/>
+*int*\
 The specified increment.
 
 ### Remarks
@@ -233,16 +233,16 @@ recursive_directory_iterator(recursive_directory_iterator&&) noexcept = default;
 
 ### Parameters
 
-*pval*<br/>
+*pval*\
 The specified path.
 
-*error_code*<br/>
+*error_code*\
 The specified error code.
 
-*opts*<br/>
+*opts*\
 The specified directory options.
 
-*recursive_directory_iterator*<br/>
+*recursive_directory_iterator*\
 The `recursive_directory_iterator` of which the constructed `recursive_directory_iterator` is to be a copy.
 
 ### Remarks
@@ -253,6 +253,6 @@ The fourth and fifth constructors behave the same as the second and third, excep
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem>](../standard-library/filesystem.md)<br/>
-[File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
+[\<filesystem>](../standard-library/filesystem.md)\
+[File System Navigation (C++)](../standard-library/file-system-navigation.md)

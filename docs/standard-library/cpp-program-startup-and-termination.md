@@ -24,5 +24,5 @@ As with C, returning from `main` or calling `exit` calls all functions registere
 
 ## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)

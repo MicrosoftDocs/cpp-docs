@@ -115,7 +115,7 @@ For more information on using `CRichEditCtrl`, see:
 
 - [Using CRichEditCtrl](../../mfc/using-cricheditctrl.md)
 
-For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../visual-cpp-samples.md) sample application.
+For an example of using a rich edit control in an MFC application, see the [WORDPAD](../../overview/visual-cpp-samples.md) sample application.
 
 ## Inheritance Hierarchy
 
@@ -1200,7 +1200,7 @@ The character index of the line specified in *nLine* or -1 if the specified line
 
 The character index is the number of characters from the beginning of the rich edit control to the specified line.
 
-For more information, see [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) in the Windows SDK.
+For more information, see [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) in the Windows SDK.
 
 ### Example
 
@@ -2044,7 +2044,7 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 ## See also
 
-[MFC Sample WORDPAD](../../visual-cpp-samples.md)<br/>
+[MFC Sample WORDPAD](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CEdit Class](../../mfc/reference/cedit-class.md)<br/>

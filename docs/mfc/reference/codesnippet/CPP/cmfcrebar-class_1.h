@@ -1,1 +1,1 @@
-	CMFCReBar				m_wndReBar;
+CMFCReBar m_wndReBar;

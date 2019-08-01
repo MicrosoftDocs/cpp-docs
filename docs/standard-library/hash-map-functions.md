@@ -25,10 +25,10 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The hash_map whose elements are to be exchanged with those of the map *left*.
 
-*left*<br/>
+*left*\
 The hash_map whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
@@ -50,10 +50,10 @@ void swap(
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The hash_multimap whose elements are to be exchanged with those of the map *left*.
 
-*left*<br/>
+*left*\
 The hash_multimap whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
@@ -62,4 +62,4 @@ The template function is an algorithm specialized on the container class hash_mu
 
 ## See also
 
-[<hash_map>](../standard-library/hash-map.md)<br/>
+[<hash_map>](../standard-library/hash-map.md)

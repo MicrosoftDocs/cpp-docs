@@ -13,7 +13,7 @@ Represents a type predicate that tests for the [error_code](../standard-library/
 
 ```cpp
 template <_Enum>
-class is_error_code_enum;
+    class is_error_code_enum;
 ```
 
 ## Remarks
@@ -22,13 +22,6 @@ An instance of this [type predicate](../standard-library/type-traits.md) holds t
 
 It is permissible to add specializations to this type for user-defined types.
 
-## Requirements
-
-**Header:** \<system_error>
-
-**Namespace:** std
-
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[<system_error>](../standard-library/system-error.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)

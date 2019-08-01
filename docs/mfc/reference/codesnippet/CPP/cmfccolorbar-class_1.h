@@ -1,1 +1,1 @@
-	CMFCColorBar m_wndColorBar;
+CMFCColorBar m_wndColorBar;

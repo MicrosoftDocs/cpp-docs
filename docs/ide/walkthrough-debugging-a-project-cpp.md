@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Debugging a Project (C++)"
-ms.date: "09/14/2018"
+ms.date: "04/25/2019"
 helpviewer_keywords: ["projects [C++], debugging", "project debugging [C++]", "debugging projects"]
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
 ---
@@ -45,7 +45,7 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 ## Next Steps
 
 **Previous:** [Walkthrough: Testing a Project (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
-**Next:** [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)<br/>
+**Next:** [Walkthrough: Deploying Your Program (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
 
 ## See also
 

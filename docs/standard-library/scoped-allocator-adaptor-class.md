@@ -80,6 +80,14 @@ Three types are defined for the sake of exposition:
 |[outer_allocator](#outer_allocator)|Retrieves a reference to the stored object of type `outer_allocator_type`.|
 |[select_on_container_copy_construction](#select_on_container_copy_construction)|Creates a new `scoped_allocator_adaptor` object with each stored allocator object initialized by calling `select_on_container_copy_construction` for each corresponding allocator.|
 
+### Operators
+
+|Operator|Description|
+|-|-|
+|[operator=](#op_as)||
+|[operator==](#op_eq_eq)||
+|[operator!=](#op_noeq)||
+
 ## Requirements
 
 **Header:** \<scoped_allocator>
@@ -96,10 +104,10 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### Parameters
 
-*count*<br/>
+*count*\
 The number of elements for which sufficient storage is to be allocated.
 
-*hint*<br/>
+*hint*\
 A pointer that might assist the allocator object by locating the address of an object allocated prior to the request.
 
 ### Return Value
@@ -135,19 +143,19 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the memory location where the object is to be constructed.
 
-*args*<br/>
+*args*\
 A list of arguments.
 
-*first*<br/>
+*first*\
 An object of the first type in a pair.
 
-*second*<br/>
+*second*\
 An object of the second type in a pair.
 
-*right*<br/>
+*right*\
 An existing object to be moved or copied.
 
 ### Remarks
@@ -180,10 +188,10 @@ void deallocate(pointer ptr, size_type count);
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the starting location of the objects to be deallocated.
 
-*count*<br/>
+*count*\
 The number of objects to deallocate.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
@@ -197,7 +205,7 @@ void destroy(Ty* ptr)
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the object to be destroyed.
 
 ### Return Value
@@ -229,6 +237,29 @@ size_type max_size();
 
 `Outer_traits::max_size(outer_allocator())`
 
+## <a name="op_as">  scoped_allocator_adaptor::operator=
+
+```cpp
+scoped_allocator_adaptor& operator=(const scoped_allocator_adaptor&) = default;
+scoped_allocator_adaptor& operator=(scoped_allocator_adaptor&&) = default;
+```
+
+## <a name="op_eq_eq">  scoped_allocator_adaptor::operator==
+
+```cpp
+template <class OuterA1, class OuterA2, class... InnerAllocs>
+bool operator==(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
+const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
+```
+
+## <a name="op_noeq">  scoped_allocator_adaptor::operator!=
+
+```cpp
+template <class OuterA1, class OuterA2, class... InnerAllocs>
+bool operator!=(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
+const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
+```
+
 ## <a name="outer_allocator"></a>  scoped_allocator_adaptor::outer_allocator
 
 Retrieves a reference to the stored object of type `outer_allocator_type`.
@@ -254,7 +285,7 @@ struct rebind{
 
 ## <a name="scoped_allocator_adaptor"></a>  scoped_allocator_adaptor::scoped_allocator_adaptor Constructor
 
-Constructs a `scoped_allocator_adaptor` object.
+Constructs a `scoped_allocator_adaptor` object. Also includes a destructor.
 
 ```cpp
 scoped_allocator_adaptor();
@@ -269,17 +300,19 @@ scoped_allocator_adaptor<Outer2, Inner...>&& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(Outer2&& al,
     const Inner&... rest) noexcept;
+
+~scoped_allocator_adaptor();
 ```
 
 ### Parameters
 
-*right*<br/>
+*right*\
 An existing `scoped_allocator_adaptor`.
 
-*al*<br/>
+*al*\
 An existing allocator to be used as the outer allocator.
 
-*rest*<br/>
+*rest*\
 A list of allocators to be used as the inner allocators.
 
 ### Remarks
@@ -300,4 +333,4 @@ This method effectively returns `scoped_allocator_adaptor(Outer_traits::select_o
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

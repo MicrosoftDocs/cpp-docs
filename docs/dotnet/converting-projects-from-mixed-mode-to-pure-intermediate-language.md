@@ -11,7 +11,7 @@ All Visual C++ CLR projects link to the C run-time libraries by default. Consequ
 > [!IMPORTANT]
 > Visual Studio 2015 deprecated and Visual Studio 2017 no longer supports the creation of **/clr:pure** or **/clr:safe** code for CLR applications. If you require pure or safe assemblies, we recommend you translate your application to C#.
 
-If you are using an earlier version of the Visual C++ compiler toolset that supports **/clr:pure** or **/clr:safe**, you can use this procedure to convert your code to pure MSIL:
+If you are using an earlier version of the Microsoft C++ compiler toolset that supports **/clr:pure** or **/clr:safe**, you can use this procedure to convert your code to pure MSIL:
 
 ### To convert your mixed-mode application into pure intermediate language
 
@@ -70,7 +70,7 @@ If you are using an earlier version of the Visual C++ compiler toolset that supp
    |[Boolean](/dotnet/api/system.boolean)|Represents a Boolean value.|
    |[Byte](/dotnet/api/system.byte)|Represents an 8-bit unsigned integer.|
    |[Char](/dotnet/api/system.char)|Represents a Unicode character.|
-   |[DateTime](/dotnet/api/system.datetime.datetime.aspx)|Represents an instant in time, typically expressed as a date and time of day.|
+   |[DateTime](/dotnet/api/system.datetime)|Represents an instant in time, typically expressed as a date and time of day.|
    |[Decimal](/dotnet/api/system.decimal)|Represents a decimal number.|
    |[Double](/dotnet/api/system.double)|Represents a double-precision floating-point number.|
    |[Guid](/dotnet/api/system.guid)|Represents a globally unique identifier (GUID).|
@@ -78,8 +78,8 @@ If you are using an earlier version of the Visual C++ compiler toolset that supp
    |[Int32](/dotnet/api/system.int32)|Represents a 32-bit signed integer.|
    |[Int64](/dotnet/api/system.int64)|Represents a 64-bit signed integer.|
    |[IntPtr](/dotnet/api/system.intptr)|A platform-specific type that is used to represent a pointer or a handle.|
-   |[SByte](/dotnet/api/system.byte.aspx)|Represents an 8-bit signed integer.|
-   |[Single](/dotnet/api/system.single.aspx)|Represents a single-precision floating-point number.|
+   |[SByte](/dotnet/api/system.byte)|Represents an 8-bit signed integer.|
+   |[Single](/dotnet/api/system.single)|Represents a single-precision floating-point number.|
    |[TimeSpan](/dotnet/api/system.timespan)|Represents a time interval.|
    |[UInt16](/dotnet/api/system.uint16)|Represents a 16-bit unsigned integer.|
    |[UInt32](/dotnet/api/system.uint32)|Represents a 32-bit unsigned integer.|

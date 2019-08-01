@@ -348,7 +348,7 @@ Nonzero if any formatting occurs; otherwise 0.
 
 ### Remarks
 
-A soft line break consists of two carriage returns and a linefeed inserted at the end of a line that is broken because of word wrapping. A hard line break consists of one carriage return and a linefeed. Lines that end with a hard line break are not affected by `FmtLines`.
+A soft line break consists of two carriage returns and a line feed inserted at the end of a line that is broken because of word wrapping. A hard line break consists of one carriage return and a line feed. Lines that end with a hard line break are not affected by `FmtLines`.
 
 Windows will only respond if the `CEdit` object is a multiple-line edit control.
 
@@ -474,11 +474,11 @@ UINT GetLimitText() const;
 
 ### Return Value
 
-The current text limit, in bytes, for this `CEdit` object.
+The current text limit, in TCHARs, for this `CEdit` object.
 
 ### Remarks
 
-The text limit is the maximum amount of text, in bytes, that the edit control can accept.
+The text limit is the maximum amount of text, in TCHARs, that the edit control can accept.
 
 > [!NOTE]
 >  This member function is available beginning with Windows 95 and Windows NT 4.0.
@@ -510,14 +510,14 @@ int GetLine(
 Specifies the line number to retrieve from a multiple-line edit control. Line numbers are zero-based; a value of 0 specifies the first line. This parameter is ignored by a single-line edit control.
 
 *lpszBuffer*<br/>
-Points to the buffer that receives a copy of the line. The first word of the buffer must specify the maximum number of characters that can be copied to the buffer.
+Points to the buffer that receives a copy of the line. The first word of the buffer must specify the maximum number of TCHARs that can be copied to the buffer.
 
 *nMaxLength*<br/>
-Specifies the maximum number of bytes that can be copied to the buffer. `GetLine` places this value in the first word of *lpszBuffer* before making the call to Windows.
+Specifies the maximum number of TCHAR characters that can be copied to the buffer. `GetLine` places this value in the first word of *lpszBuffer* before making the call to Windows.
 
 ### Return Value
 
-The number of bytes actually copied. The return value is 0 if the line number specified by *nIndex* is greater than the number of lines in the edit control.
+The number of characters actually copied. The return value is 0 if the line number specified by *nIndex* is greater than the number of lines in the edit control.
 
 ### Remarks
 
@@ -612,7 +612,7 @@ Specifies the character to be displayed instead of the character that the user t
 
 ### Remarks
 
-If you create the edit control with the ES_PASSWORD style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](https://msdn.microsoft.com/library/windows/desktop/bb776779).
+If you create the edit control with the ES_PASSWORD style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](/previous-versions/windows/desktop/legacy/bb776779\(v=vs.85\)).
 
 This method sends the [EM_GETPASSWORDCHAR](/windows/desktop/Controls/em-getpasswordchar) message, which is described in the Windows SDK.
 
@@ -704,7 +704,7 @@ void LimitText(int nChars = 0);
 ### Parameters
 
 *nChars*<br/>
-Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to UINT_MAX bytes. This is the default behavior.
+Specifies the length (in TCHARs) of the text that the user can enter. If this parameter is 0, the text length is set to UINT_MAX bytes. This is the default behavior.
 
 ### Remarks
 
@@ -771,7 +771,7 @@ The character index is the number of characters from the beginning of the edit c
 
 This member function is only processed by multiple-line edit controls.
 
-For more information, see [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) in the Windows SDK.
+For more information, see [EM_LINEINDEX](/windows/desktop/controls/em-lineindex) in the Windows SDK.
 
 ### Example
 
@@ -1353,8 +1353,8 @@ For more information, see [EM_UNDO](/windows/desktop/Controls/em-undo) in the Wi
 
 ## See also
 
-[MFC Sample CALCDRIV](../../visual-cpp-samples.md)<br/>
-[MFC Sample CMNCTRL2](../../visual-cpp-samples.md)<br/>
+[MFC Sample CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC Sample CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
 [CWnd Class](../../mfc/reference/cwnd-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [CWnd Class](cwnd-class.md)<br/>

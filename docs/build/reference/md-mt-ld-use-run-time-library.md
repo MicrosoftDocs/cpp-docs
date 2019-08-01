@@ -1,6 +1,6 @@
 ---
 title: "/MD, -MT, -LD (Use Run-Time Library)"
-ms.date: "11/04/2016"
+ms.date: "07/17/2019"
 f1_keywords: ["/ld", "/mt", "VC.Project.VCCLWCECompilerTool.RuntimeLibrary", "VC.Project.VCCLCompilerTool.RuntimeLibrary", "/md", "/ml"]
 helpviewer_keywords: ["/MT compiler option [C++]", "-MD compiler option [C++]", "threading [C++], multithread compiler option", "MSVCRTD.lib", "MSVCRT.lib", "LIBCMT.lib", "MD compiler option [C++]", "/MD compiler option [C++]", "MT compiler option [C++]", "LD compiler option [C++]", "MDd compiler option [C++]", "-MDd compiler option [C++]", "LIBCD.lib", "-MTd compiler option [C++]", "MTd compiler option [C++]", "/MTd compiler option [C++]", "-LD compiler option [C++]", "/MDd compiler option [C++]", "multithread compiler option", "_STATIC_CPPLIB symbol", "LIBC.lib", "/LD compiler option [C++]", "DLLs [C++], compiler options", "LIBCMTD.lib", "-MT compiler option [C++]"]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
@@ -34,13 +34,13 @@ All modules passed to a given invocation of the linker must have been compiled w
 
 For more information about how to use the debug versions of the run-time libraries, see [C Run-Time Library Reference](../../c-runtime-library/c-run-time-library-reference.md).
 
-For more about DLLs, see [DLLs in Visual C++](../dlls-in-visual-cpp.md).
+For more about DLLs, see [Create C/C++ DLLs in Visual Studio](../dlls-in-visual-cpp.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **C/C++** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Select the **Code Generation** property page.
 

@@ -6,31 +6,22 @@ ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
 ---
 # &lt;forward_list&gt; functions
 
-||
-|-|
-|[swap](#swap)|
-
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 Exchanges the elements of two forward lists.
 
 ```cpp
-void swap(
-    forward_list <Type, Allocator>& left,
-    forward_list <Type, Allocator>& right);
+void swap(forward_list <Type, Allocator>& left, forward_list <Type, Allocator>& right);
 ```
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|An object of type `forward_list`.|
-|*right*|An object of type `forward_list`.|
+*left*\
+An object of type `forward_list`.
+
+*right*\
+An object of type `forward_list`.
 
 ### Remarks
 
 This template function executes `left.swap(right)`.
-
-## See also
-
-[<forward_list>](../standard-library/forward-list.md)<br/>

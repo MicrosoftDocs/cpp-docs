@@ -18,7 +18,7 @@ struct is_fundamental;
 
 ### Parameters
 
-*Ty*<br/>
+*Ty*\
 The type to query.
 
 ## Remarks
@@ -68,5 +68,5 @@ is_fundamental<void> == true
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[is_compound Class](../standard-library/is-compound-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[is_compound Class](../standard-library/is-compound-class.md)

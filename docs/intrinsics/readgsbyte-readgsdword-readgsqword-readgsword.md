@@ -54,7 +54,7 @@ These routines are only available as an intrinsic.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

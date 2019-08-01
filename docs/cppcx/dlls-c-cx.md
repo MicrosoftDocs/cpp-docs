@@ -5,7 +5,7 @@ ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
 ---
 # DLLs (C++/CX)
 
-You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform (UWP) apps. A standard DLL that was created by using a version of Visual Studio or the Visual C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a UWP app and may not pass the app verification test in the Microsoft Store.
+You can use Visual Studio to create either a standard Win32 DLL or a Windows Runtime component DLL that can be consumed by Universal Windows Platform (UWP) apps. A standard DLL that was created by using a version of Visual Studio or the Microsoft C++ compiler that's earlier than Visual Studio 2012 may not load correctly in a UWP app and may not pass the app verification test in the Microsoft Store.
 
 ## Windows Runtime component DLLs
 

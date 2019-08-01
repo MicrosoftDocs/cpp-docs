@@ -7,7 +7,7 @@ ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
 ---
 # Safe Libraries: C++ Standard Library
 
-Several enhancements have been made to the libraries that ship with Visual C++, including the C++ Standard Library, to make them more secure.
+Several enhancements have been made to the libraries that ship with Microsoft C++, including the C++ Standard Library, to make them more secure.
 
 Several methods in the C++ Standard Library have been identified as potentially unsafe because they could lead to a buffer overrun or other code defect. The use of these methods is discouraged, and new, more secure methods have been created to replace them. These new methods all end in `_s`.
 
@@ -36,4 +36,4 @@ If you call any one of the potentially unsafe methods above, or if you use itera
 
 ## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)

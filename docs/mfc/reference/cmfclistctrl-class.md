@@ -1,6 +1,6 @@
 ---
 title: "CMFCListCtrl Class"
-ms.date: "11/04/2016"
+ms.date: "07/30/2019"
 f1_keywords: ["CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn", "AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort", "AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl", "AFXLISTCTRL/CMFCListCtrl::IsMultipleSort", "AFXLISTCTRL/CMFCListCtrl::OnCompareItems", "AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor", "AFXLISTCTRL/CMFCListCtrl::OnGetCellFont", "AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor", "AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn", "AFXLISTCTRL/CMFCListCtrl::SetSortColumn", "AFXLISTCTRL/CMFCListCtrl::Sort"]
 helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtrl [MFC], EnableMultipleSort", "CMFCListCtrl [MFC], GetHeaderCtrl", "CMFCListCtrl [MFC], IsMultipleSort", "CMFCListCtrl [MFC], OnCompareItems", "CMFCListCtrl [MFC], OnGetCellBkColor", "CMFCListCtrl [MFC], OnGetCellFont", "CMFCListCtrl [MFC], OnGetCellTextColor", "CMFCListCtrl [MFC], RemoveSortColumn", "CMFCListCtrl [MFC], SetSortColumn", "CMFCListCtrl [MFC], Sort"]
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
@@ -39,7 +39,7 @@ class CMFCListCtrl : public CListCtrl
 
 ## Example
 
-The following example demonstrates how to use various methods in the `CMFCListCtrl` class. The example shows how to create a list control, insert columns, insert items, set the text of an item, and set the font of the list control. This code snippet is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).
+The following example demonstrates how to use various methods in the `CMFCListCtrl` class. The example shows how to create a list control, insert columns, insert items, set the text of an item, and set the font of the list control. This code snippet is part of the [Visual Studio Demo sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#25](../../mfc/codesnippet/cpp/cmfclistctrl-class_1.h)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#26](../../mfc/codesnippet/cpp/cmfclistctrl-class_2.cpp)]
@@ -113,7 +113,7 @@ A reference to the underlying [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctr
 
 ### Remarks
 
-The header control for a list control is the window that contains the titles for the columns. It is usually positioned directly above the columns.
+The header control for a list control is the window that contains the titles for the columns. It's usually positioned directly above the columns.
 
 ##  <a name="ismultiplesort"></a>  CMFCListCtrl::IsMultipleSort
 
@@ -155,11 +155,11 @@ virtual int OnCompareItems(
 
 ### Return Value
 
-An integer that indicates the relative position of the two items. A negative value indicates that the first item should precede the second, positive value indicates that the first item should follow the second, and zero means that the two items are equivalent.
+An integer that indicates the relative position of the two items. A negative value indicates the first item should precede the second, a positive value indicates the first item should follow the second, and zero means the two items are equivalent.
 
 ### Remarks
 
-The default implementation always returns 0. You must override this function to provide a sorting algorithm.
+The default implementation always returns 0. Override this function to provide your own sorting algorithm.
 
 ##  <a name="ongetcellbkcolor"></a>  CMFCListCtrl::OnGetCellBkColor
 
@@ -207,7 +207,7 @@ virtual HFONT OnGetCellFont(
 [in] The column of the cell in question.
 
 *dwData*<br/>
-[in] User-defined data. The default implementation does not use this parameter.
+[in] User-defined data. The default implementation doesn't use this parameter.
 
 ### Return Value
 
@@ -215,7 +215,7 @@ A handle to the font that is used for the current cell.
 
 ### Remarks
 
-By default, this method returns NULL. All of the cells in a list control have the same font. Override this method in order to provide different fonts for different cells.
+By default, this method returns NULL. All of the cells in a list control have the same font. Override this method to provide different fonts for different cells.
 
 ##  <a name="ongetcelltextcolor"></a>  CMFCListCtrl::OnGetCellTextColor
 

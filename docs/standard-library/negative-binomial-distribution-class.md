@@ -43,7 +43,7 @@ public:
 
 ### Parameters
 
-*IntType*<br/>
+*IntType*\
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -67,7 +67,7 @@ The `operator()` member functions return the next generated value based on the U
 
 For more information about distribution classes and their members, see [\<random>](../standard-library/random.md).
 
-For detailed information about the negative binomial distribution discrete probability function, see the Wolfram MathWorld article [Negative Binomial Distribution](http://go.microsoft.com/fwlink/p/?linkid=400516).
+For detailed information about the negative binomial distribution discrete probability function, see the Wolfram MathWorld article [Negative Binomial Distribution](https://go.microsoft.com/fwlink/p/?linkid=400516).
 
 ## Example
 
@@ -204,13 +204,13 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### Parameters
 
-*k*<br/>
+*k*\
 The `k` distribution parameter.
 
-*p*<br/>
+*p*\
 The `p` distribution parameter.
 
-*parm*<br/>
+*parm*\
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -237,13 +237,13 @@ struct param_type {
 
 ### Parameters
 
-*k*<br/>
+*k*\
 The `k` distribution parameter.
 
-*p*<br/>
+*p*\
 The `p` distribution parameter.
 
-*right*<br/>
+*right*\
 The `param_type` structure used to compare.
 
 ### Remarks
@@ -254,4 +254,4 @@ This structure can be passed to the distribution's class constructor at instanti
 
 ## See also
 
-[\<random>](../standard-library/random.md)<br/>
+[\<random>](../standard-library/random.md)

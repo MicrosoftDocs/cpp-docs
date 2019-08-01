@@ -207,5 +207,5 @@ a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 
 ## See also
 
-[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)<br/>
-[Debug Iterator Support](../standard-library/debug-iterator-support.md)<br/>
+[C++ Standard Library Overview](../standard-library/cpp-standard-library-overview.md)\
+[Debug Iterator Support](../standard-library/debug-iterator-support.md)

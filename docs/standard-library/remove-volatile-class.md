@@ -21,7 +21,7 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to modify.
 
 ## Remarks
@@ -58,5 +58,5 @@ remove_volatile_t<volatile int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[add_volatile Class](../standard-library/add-volatile-class.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[add_volatile Class](../standard-library/add-volatile-class.md)

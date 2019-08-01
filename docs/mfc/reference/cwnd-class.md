@@ -786,9 +786,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 `BindDefaultProperty` might be used in the following context:
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#2](../../mfc/reference/codesnippet/cpp/cwnd-class_7.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="bindproperty"></a>  CWnd::BindProperty
 
@@ -816,9 +814,7 @@ The `CWnd` object on which you call this function must be a data-bound control.
 
 `BindProperty` might be used in the following context:
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#4](../../mfc/reference/codesnippet/cpp/cwnd-class_9.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="bringwindowtotop"></a>  CWnd::BringWindowToTop
 
@@ -832,7 +828,7 @@ void BringWindowToTop();
 
 In addition, `BringWindowToTop` activates pop-up, top-level, and MDI child windows. The `BringWindowToTop` member function should be used to uncover any window that is partially or completely obscured by any overlapping windows.
 
-This function just calls the Win32 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) function. Call the [SetWindowPos](#setwindowpos) function to change a window's position in the Z-order. The `BringWindowToTop` function does not change the window style to make it a top-level window. For more information, see [What's the difference between HWND_TOP and HWND_TOPMOST](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+This function just calls the Win32 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) function. Call the [SetWindowPos](#setwindowpos) function to change a window's position in the Z-order. The `BringWindowToTop` function does not change the window style to make it a top-level window. For more information, see [What's the difference between HWND_TOP and HWND_TOPMOST](https://devblogs.microsoft.com/oldnewthing/?p=33263)
 
 ### Example
 
@@ -3245,9 +3241,7 @@ Use the returned pointer to set the ICursor property of a complex data-bound con
 
 ### Example
 
-[!code-cpp[NVC_MFC_AxDataBinding#1](../../mfc/reference/codesnippet/cpp/cwnd-class_6.cpp)]
 [!code-cpp[NVC_MFC_AxDataBinding#5](../../mfc/reference/codesnippet/cpp/cwnd-class_37.cpp)]
-[!code-cpp[NVC_MFC_AxDataBinding#3](../../mfc/reference/codesnippet/cpp/cwnd-class_8.cpp)]
 
 ##  <a name="getdynamiclayout"></a>  CWnd::GetDynamicLayout
 
@@ -4787,7 +4781,7 @@ Nonzero if the function is successful. It is 0 if a failure occurs or if the `Lo
 
 A locked window cannot be moved. Only one window can be locked at a time. To unlock a window locked with `LockWindowUpdate`, call [UnlockWindowUpdate](#unlockwindowupdate).
 
-If an application with a locked window (or any locked child windows) calls the [GetDC,](https://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx,](https://msdn.microsoft.com/library/windows/desktop/dd144873) or [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows function, the called function returns a device context whose visible region is empty. This will occur until the application unlocks the window by calling the `UnlockWindowUpdate` member function.
+If an application with a locked window (or any locked child windows) calls the [GetDC,](/windows/desktop/api/winuser/nf-winuser-getdc) [GetDCEx,](/windows/desktop/api/winuser/nf-winuser-getdcex) or [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows function, the called function returns a device context whose visible region is empty. This will occur until the application unlocks the window by calling the `UnlockWindowUpdate` member function.
 
 While window updates are locked, the system keeps track of the bounding rectangle of any drawing operations to device contexts associated with a locked window. When drawing is reenabled, this bounding rectangle is invalidated in the locked window and its child windows to force an eventual [WM_PAINT](/windows/desktop/gdi/wm-paint) message to update the screen. If no drawing has occurred while the window updates were locked, no area is invalidated.
 
@@ -7442,7 +7436,7 @@ Contains the x- and y-coordinates of the cursor. These coordinates are always sc
 
 ### Return Value
 
-One of the mouse hit-test enumerated values listed below.
+One of the mouse hit-test enumerated values. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 ### Remarks
 
@@ -7462,7 +7456,7 @@ afx_msg void OnNcLButtonDblClk(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7487,7 +7481,7 @@ afx_msg void OnNcLButtonDown(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -7512,7 +7506,7 @@ afx_msg void OnNcLButtonUp(
 ### Parameters
 
 *nHitTest*<br/>
-Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor.
+Specifies the [hit-test code](#onnchittest). A hit test is a test that determines the location of the cursor. See [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) for the list of values.
 
 *point*<br/>
 Specifies a `CPoint` object that contains the x and y screen coordinates of the cursor position. These coordinates are always relative to the upper-left corner of the screen.
@@ -9218,7 +9212,7 @@ afx_msg void OnUserChanged();
 
 ### Remarks
 
-This method receives the [WM_USERCHANGED](https://msdn.microsoft.com/library/windows/desktop/ms632651) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.
+This method receives the [WM_USERCHANGED](/windows/desktop/winmsg/wm-userchanged) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.

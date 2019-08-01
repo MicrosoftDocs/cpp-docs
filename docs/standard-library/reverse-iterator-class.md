@@ -1,6 +1,6 @@
 ---
 title: "reverse_iterator Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["xutility/std::reverse_iterator", "iterator/std::reverse_iterator::difference_type", "iterator/std::reverse_iterator::iterator_type", "iterator/std::reverse_iterator::pointer", "iterator/std::reverse_iterator::reference", "iterator/std::reverse_iterator::base", "iterator/std::reverse_iterator::operator_star"]
 helpviewer_keywords: ["std::reverse_iterator [C++]", "std::reverse_iterator [C++], difference_type", "std::reverse_iterator [C++], iterator_type", "std::reverse_iterator [C++], pointer", "std::reverse_iterator [C++], reference", "std::reverse_iterator [C++], base", "std::reverse_iterator [C++], operator_star"]
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
@@ -65,7 +65,7 @@ In practice, this means that in the reversed sequence the reverse_iterator will 
 |[operator-](#operator-)|Subtracts an offset from a `reverse_iterator` and returns a `reverse_iterator` addressing the element at the offset position.|
 |[operator--](#operator--)|Decrements the `reverse_iterator` to the previous element.|
 |[operator-=](#operator-_eq)|Subtracts a specified offset from a `reverse_iterator`.|
-|[operator->](#operator-_gt)|Returns a pointer to the element addressed by the `reverse_iterator`.|
+|[operator->](#op-arrow)|Returns a pointer to the element addressed by the `reverse_iterator`.|
 |[operator&#91;&#93;](#op_at)|Returns a reference to an element offset from the element addressed by a `reverse_iterator` by a specified number of positions.|
 
 ## Requirements
@@ -246,7 +246,7 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### Parameters
 
-*Off*<br/>
+*Off*\
 The offset to be added to the reverse iterator.
 
 ### Return Value
@@ -395,7 +395,7 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### Parameters
 
-*Off*<br/>
+*Off*\
 The offset by which to increment the iterator.
 
 ### Return Value
@@ -458,7 +458,7 @@ After the +2 offset, the iterator rVPOS1 now points
 to the third element in the reversed sequence: 6.
 ```
 
-## <a name="reverse_iterator__operator-"></a>  reverse_iterator::operator-
+## <a name="operator-"></a>  reverse_iterator::operator-
 
 Subtracts an offset from a `reverse_iterator` and returns a `reverse_iterator` addressing the element at the offset position.
 
@@ -468,7 +468,7 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### Parameters
 
-*Off*<br/>
+*Off*\
 The offset to be subtracted from the reverse_iterator.
 
 ### Return Value
@@ -535,7 +535,7 @@ After the -2 offset, the iterator rVPOS2 points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iterator__operator--"></a>  reverse_iterator::operator--
+## <a name="operator--"></a>  reverse_iterator::operator--
 
 Decrements the reverse_iterator to the previous element.
 
@@ -608,7 +608,7 @@ After the decrement, the iterator rVPOS1 points
 to the next-to-last element in the reversed sequence: 3.
 ```
 
-## <a name="reverse_iterator__operator-_eq"></a>  reverse_iterator::operator-=
+## <a name="operator-_eq"></a>  reverse_iterator::operator-=
 
 Subtracts a specified offset from a `reverse_iterator`.
 
@@ -618,7 +618,7 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### Parameters
 
-*Off*<br/>
+*Off*\
 The offset to be subtracted from the `reverse_iterator`.
 
 ### Remarks
@@ -683,7 +683,7 @@ After the -2 offset, the iterator rVPOS1 now points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
+## <a name="op-arrow"></a>  reverse_iterator::operator-&gt;
 
 Returns a pointer to the element addressed by the `reverse_iterator`.
 
@@ -772,7 +772,7 @@ reference operator[](difference_type Off) const;
 
 ### Parameters
 
-*Off*<br/>
+*Off*\
 The offset from the `reverse_iterator` address.
 
 ### Return Value
@@ -942,7 +942,7 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The iterator that is to be adapted to a `reverse_iterator`.
 
 ### Return Value
@@ -1002,6 +1002,6 @@ int main( )
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

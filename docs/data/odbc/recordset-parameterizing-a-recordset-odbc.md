@@ -1,6 +1,6 @@
 ---
 title: "Recordset: Parameterizing a Recordset (ODBC)"
-ms.date: "11/04/2016"
+ms.date: "05/09/2019"
 helpviewer_keywords: ["parameterizing recordsets", "ODBC recordsets, parameterizing", "recordsets, parameterizing", "passing parameters, to queries at runtime"]
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
 ---
@@ -83,6 +83,9 @@ Before you create your recordset class, determine what parameters you need, what
 
 #### To parameterize a recordset class
 
+> [!NOTE] 
+> The MFC ODBC Consumer wizard is not available in Visual Studio 2019 and later. You can still create this functionality manually.
+
 1. Run the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** to create the class.
 
 1. Specify field data members for the recordset's columns.
@@ -163,7 +166,7 @@ The recordset contains records for those students whose records meet the conditi
 > [!NOTE]
 >  If needed, you can set the value of a parameter data member to Null, using [SetParamNull](../../mfc/reference/crecordset-class.md#setparamnull). You can likewise check whether a parameter data member is Null, using [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull).
 
-## See Also
+## See also
 
 [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>

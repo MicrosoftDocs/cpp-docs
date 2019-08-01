@@ -1,6 +1,6 @@
-void CMyDialog::OnDtnFormatqueryDatetimepicker1(NMHDR *pNMHDR, LRESULT *pResult)
+void CMyDialog::OnDtnFormatqueryDatetimepicker1(NMHDR* pNMHDR, LRESULT* pResult)
 {
-   LPNMDATETIMEFORMATQUERY pDTFormatQuery = 
+   LPNMDATETIMEFORMATQUERY pDTFormatQuery =
       reinterpret_cast<LPNMDATETIMEFORMATQUERY>(pNMHDR);
    CDC* pDC = NULL;
    CFont* pFont = NULL;
@@ -14,7 +14,7 @@ void CMyDialog::OnDtnFormatqueryDatetimepicker1(NMHDR *pNMHDR, LRESULT *pResult)
    }
 
    pFont = GetFont();
-   if(NULL == pFont)
+   if (NULL == pFont)
    {
       pFont = new CFont();
       VERIFY(pFont->CreateStockObject(DEFAULT_GUI_FONT));
@@ -26,7 +26,7 @@ void CMyDialog::OnDtnFormatqueryDatetimepicker1(NMHDR *pNMHDR, LRESULT *pResult)
    // use the longest text segment to determine the maximum 
    // width of the callback field, and then place the information into 
    // the NMDATETIMEFORMATQUERY structure.
-   if(!_tcscmp(_T("X"), pDTFormatQuery->pszFormat))
+   if (!_tcscmp(_T("X"), pDTFormatQuery->pszFormat))
    {
       ::GetTextExtentPoint32(pDC->m_hDC, _T("366"), 3, &pDTFormatQuery->szMax);
    }

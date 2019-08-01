@@ -1,8 +1,8 @@
 ---
 title: "CMFCMenuButton Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult"]
-helpviewer_keywords: ["CMFCMenuButton [MFC], CMFCMenuButton", "CMFCMenuButton [MFC], PreTranslateMessage", "CMFCMenuButton [MFC], SizeToContent", "CMFCMenuButton [MFC], m_bOSMenu", "CMFCMenuButton [MFC], m_bRightArrow", "CMFCMenuButton [MFC], m_bStayPressed", "CMFCMenuButton [MFC], m_hMenu", "CMFCMenuButton [MFC], m_nMenuResult"]
+ms.date: "07/15/2019"
+f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult", "AFXMENUBUTTON/CMFCMenuButton::m_bDefaultClick"]
+helpviewer_keywords: ["CMFCMenuButton [MFC], CMFCMenuButton", "CMFCMenuButton [MFC], PreTranslateMessage", "CMFCMenuButton [MFC], SizeToContent", "CMFCMenuButton [MFC], m_bOSMenu", "CMFCMenuButton [MFC], m_bRightArrow", "CMFCMenuButton [MFC], m_bStayPressed", "CMFCMenuButton [MFC], m_hMenu", "CMFCMenuButton [MFC], m_nMenuResult", "CMFCMenuButton [MFC], m_bDefaultClick"]
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
 ---
 # CMFCMenuButton Class
@@ -39,6 +39,7 @@ class CMFCMenuButton : public CMFCButton
 |[CMFCMenuButton::m_bStayPressed](#m_bstaypressed)|Specifies whether the menu button changes its state after the user releases the button.|
 |[CMFCMenuButton::m_hMenu](#m_hmenu)|A handle to the attached Windows menu.|
 |[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|An identifier that indicates which item the user selected from the pop-up menu.|
+|[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| Allow default (on button text/image) processing.|
 
 ## Remarks
 
@@ -48,7 +49,7 @@ When you create a `CMFCMenuButton`, you must pass in a handle to the associated 
 
 ## Example
 
-The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../visual-cpp-samples.md).
+The following example demonstrates how to set the handle of the menu attached to the button, resize the button according to its text and image size, and set the pop-up menu that is displayed by the framework. This code snippet is part of the [New Controls sample](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]
@@ -140,6 +141,28 @@ int m_nMenuResult;
 ### Remarks
 
 The value of this member variable is zero if the user cancels the menu without making a selection or if an error occurs.
+
+##  <a name="m_bdefaultclick"></a>  CMFCMenuButton::m_bDefaultClick
+
+Allows default processing of text or images on the button.
+
+```
+BOOL  m_bDefaultClick;
+```
+
+### Remarks
+
+Setting m_bDefaultClick to false causes the button to show the menu when you click anywhere on the button.
+
+##  <a name="m_nmenuresult"></a>  CMFCMenuButton::m_nMenuResult
+
+An integer that indicates which item the user selects from the pop-up menu.
+
+```
+int m_nMenuResult;
+```
+
+### Remarks
 
 ##  <a name="pretranslatemessage"></a>  CMFCMenuButton::PreTranslateMessage
 

@@ -1,2 +1,2 @@
-   // Declare a button object.
-   CButton myButton;
+// Declare a button object.
+CButton myButton;

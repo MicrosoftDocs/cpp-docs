@@ -1,6 +1,6 @@
 ---
 title: "CMultiPageDHtmlDialog Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]
 helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
@@ -22,7 +22,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 |Name|Description|
 |----------|-----------------|
 |[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|Constructs a multipage (wizard-style) DHTML dialog object.|
-|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|
+|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#_dtorcmultipagedhtmldialog)|Destroys a multipage DHTML dialog object.|
 
 ## Remarks
 

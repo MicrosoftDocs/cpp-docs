@@ -62,6 +62,6 @@ FB(F B)
 FB1(F B)
 ```
 
-## See Also
+## See also
 
 [Preprocessor Operators](../preprocessor/preprocessor-operators.md)

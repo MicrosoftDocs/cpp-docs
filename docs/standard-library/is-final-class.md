@@ -18,7 +18,7 @@ struct is_final;
 
 ### Parameters
 
-*T*<br/>
+*T*\
 The type to query.
 
 ## Remarks
@@ -33,5 +33,5 @@ An instance of the type predicate holds true if the type *T* is a class type mar
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)<br/>
-[final Specifier](../cpp/final-specifier.md)<br/>
+[<type_traits>](../standard-library/type-traits.md)\
+[final Specifier](../cpp/final-specifier.md)

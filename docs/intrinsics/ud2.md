@@ -73,6 +73,6 @@ Before __ud2(). Return code = 0.
 After __ud2().  Return code = 1.
 ```
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

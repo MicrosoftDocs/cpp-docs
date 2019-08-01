@@ -103,7 +103,7 @@ To view the version and type information contained in a manifest resource, open 
 
 Win32
 
-## See Also
+## See also
 
 [Working with Resource Files](../windows/working-with-resource-files.md)<br/>
 [Resource Identifiers (Symbols)](../windows/symbols-resource-identifiers.md)<br/>

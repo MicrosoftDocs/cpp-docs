@@ -1,6 +1,6 @@
 ---
 title: "checked_array_iterator Class"
-ms.date: "11/04/2016"
+ms.date: "03/27/2019"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
 helpviewer_keywords: ["stdext::checked_array_iterator [C++], difference_type", "stdext::checked_array_iterator [C++], pointer", "stdext::checked_array_iterator [C++], reference", "stdext::checked_array_iterator [C++], base"]
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
@@ -228,13 +228,13 @@ checked_array_iterator(
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 A pointer to the array.
 
-*size*<br/>
+*size*\
 The size of the array.
 
-*index*<br/>
+*index*\
 (Optional) An element in the array, to initialize the iterator.  By default, the iterator is initialized to the first element in the array.
 
 ### Remarks
@@ -303,7 +303,7 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` against which to check for equality.
 
 ### Remarks
@@ -359,7 +359,7 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` against which to check for inequality.
 
 ### Remarks
@@ -415,7 +415,7 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` against which to check for inequality.
 
 ### Remarks
@@ -471,7 +471,7 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` to compare against.
 
 ### Remarks
@@ -480,7 +480,7 @@ See [checked_array_iterator::operator&lt;](#op_lt) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="lt_eq"></a>  checked_array_iterator::operator&lt;=
+## <a name="op_lt_eq"></a>  checked_array_iterator::operator&lt;=
 
 Tests if the `checked_array_iterator` on the left side of the operator is less than or equal to the `checked_array_iterator` on the right side.
 
@@ -490,7 +490,7 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` to compare against.
 
 ### Remarks
@@ -499,7 +499,7 @@ See [checked_array_iterator::operator&gt;=](#op_gt_eq) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## <a name="gt_eq"></a>  checked_array_iterator::operator&gt;=
+## <a name="op_gt_eq"></a>  checked_array_iterator::operator&gt;=
 
 Tests if the `checked_array_iterator` on the left side of the operator is greater than or equal to the `checked_array_iterator` on the right side.
 
@@ -509,7 +509,7 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The `checked_array_iterator` to compare against.
 
 ### Remarks
@@ -682,7 +682,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator--"></a>  checked_array_iterator::operator--
+## <a name="operator--"></a>  checked_array_iterator::operator--
 
 Decrements the `checked_array_iterator` to the previous element.
 
@@ -740,7 +740,7 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which to increment the iterator.
 
 ### Return Value
@@ -788,7 +788,7 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset to be added to the `checked_array_iterator`.
 
 ### Return Value
@@ -826,7 +826,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-_eq"></a>  checked_array_iterator::operator-=
+## <a name="operator-_eq"></a>  checked_array_iterator::operator-=
 
 Decrements a specified offset from a `checked_array_iterator`.
 
@@ -836,7 +836,7 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset by which to increment the iterator.
 
 ### Return Value
@@ -875,7 +875,7 @@ int main() {
 */
 ```
 
-## <a name="checked_array_iterator__operator-"></a>  checked_array_iterator::operator-
+## <a name="operator-"></a>  checked_array_iterator::operator-
 
 Decrements an offset from an iterator and returns the new `checked_array_iterator` addressing the inserted element at the new offset position.
 
@@ -887,7 +887,7 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset to be decremented from the `checked_array_iterator`.
 
 ### Return Value
@@ -895,8 +895,6 @@ The offset to be decremented from the `checked_array_iterator`.
 A `checked_array_iterator` addressing the offset element.
 
 ### Remarks
-
-See [checked_array_iterator::operator-](#operator-) for a code sample.
 
 For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
@@ -910,7 +908,7 @@ reference operator[](difference_type _Off) const;
 
 ### Parameters
 
-*_Off*<br/>
+*_Off*\
 The offset from the `checked_array_iterator` address.
 
 ### Return Value
@@ -980,5 +978,5 @@ For more information, see [Checked Iterators](../standard-library/checked-iterat
 
 ## See also
 
-[\<iterator>](../standard-library/iterator.md)<br/>
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>
+[\<iterator>](../standard-library/iterator.md)\
+[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

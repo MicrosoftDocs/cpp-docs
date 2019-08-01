@@ -1,4 +1,4 @@
-            long l;
-            int i;
-            if(ar.IsLoading())
-               ar >> l >> i;
+long l;
+int i;
+if (ar.IsLoading())
+ar >> l >> i;

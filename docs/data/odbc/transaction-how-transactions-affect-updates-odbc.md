@@ -41,9 +41,8 @@ The following table explains the effects of `Rollback` on transactions.
 |`Edit` (without `Update`), then `Rollback`|An unedited version of the current record is stored temporarily. Edits are made to the content of the edit buffer.|Call `Edit` again to restore the unedited version of the record to the edit buffer.|Because `Update` was not called, there were no changes made to the data source.|
 |`Delete` then `Rollback`|Content of the current record is deleted.|Call `Requery` to restore the content of the current record from the data source.|Deletion of data from data source is reversed.|
 
-## See Also
+## See also
 
-[Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)<br/>
 [Transaction: Performing a Transaction in a Recordset (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)<br/>
 [CDatabase Class](../../mfc/reference/cdatabase-class.md)<br/>

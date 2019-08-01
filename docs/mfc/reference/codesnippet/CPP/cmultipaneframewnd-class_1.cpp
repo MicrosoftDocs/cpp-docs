@@ -1,3 +1,3 @@
-	// CDockablePane* pBar
-	CMultiPaneFrameWnd* pParentMiniFrame = 
-		DYNAMIC_DOWNCAST (CMultiPaneFrameWnd, pBar->GetParentMiniFrame ()) ;
+// CDockablePane* pBar
+CMultiPaneFrameWnd *pParentMiniFrame =
+    DYNAMIC_DOWNCAST(CMultiPaneFrameWnd, pBar->GetParentMiniFrame());

@@ -40,13 +40,13 @@ inline bool atomic_compare_exchange_strong(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an *atomic* object that stores a value of type `Ty`.
 
-*Exp*<br/>
+*Exp*\
 A pointer to a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
 ### Return Value
@@ -81,19 +81,19 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Exp*<br/>
+*Exp*\
 A pointer to a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
-*Order1*<br/>
+*Order1*\
 First [memory_order](../standard-library/atomic-enums.md#memory_order_enum) argument.
 
-*Order2*<br/>
+*Order2*\
 Second `memory_order` argument. The value of *Order2* cannot be `memory_order_release` or `memory_order_acq_rel`, it cannot be stronger than the value of *Order1*.
 
 ### Return Value
@@ -124,13 +124,13 @@ inline bool atomic_compare_exchange_strong(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Exp*<br/>
+*Exp*\
 A pointer to a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
 ### Return Value
@@ -165,19 +165,19 @@ inline bool atomic_compare_exchange_weak_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Exp*<br/>
+*Exp*\
 A pointer to a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
-*Order1*<br/>
+*Order1*\
 First [memory_order](../standard-library/atomic-enums.md#memory_order_enum) argument.
 
-*Order2*<br/>
+*Order2*\
 Second `memory_order` argument. The value of *Order2* cannot be `memory_order_release` or `memory_order_acq_rel`, nor can it be stronger than the value of *Order1*.
 
 ### Return Value
@@ -202,10 +202,10 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
 ### Return Value
@@ -236,13 +236,13 @@ inline Ty atomic_exchange_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
@@ -266,10 +266,10 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a pointer to type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `ptrdiff_t`.
 
 ### Return Value
@@ -310,10 +310,10 @@ T* atomic_fetch_add_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a pointer to type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `ptrdiff_t`.
 
 ### Return Value
@@ -353,10 +353,10 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
 ### Return Value
@@ -387,13 +387,13 @@ inline T atomic_fetch_and_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
@@ -417,10 +417,10 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
 ### Return Value
@@ -451,13 +451,13 @@ inline T atomic_fetch_or_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
@@ -486,10 +486,10 @@ T* atomic_fetch_sub(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a pointer to type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `ptrdiff_t`.
 
 ### Return Value
@@ -528,10 +528,10 @@ T* atomic_fetch_sub_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a pointer to type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `ptrdiff_t`.
 
 ### Return Value
@@ -572,10 +572,10 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
 ### Return Value
@@ -606,13 +606,13 @@ inline T atomic_fetch_xor_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
-*Value*<br/>
+*Value*\
 A value of type `T`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
@@ -634,7 +634,7 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
 
 ### Parameters
 
-*Flag*<br/>
+*Flag*\
 A pointer to an `atomic_flag` object.
 
 ## <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit
@@ -648,10 +648,10 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
 
 ### Parameters
 
-*Flag*<br/>
+*Flag*\
 A pointer to an `atomic_flag` object.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set
@@ -665,7 +665,7 @@ inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 
 ### Parameters
 
-*Flag*<br/>
+*Flag*\
 A pointer to an `atomic_flag` object.
 
 ### Return Value
@@ -683,10 +683,10 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 
 ### Parameters
 
-*Flag*<br/>
+*Flag*\
 A pointer to an `atomic_flag` object.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
@@ -706,10 +706,10 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
 ### Remarks
@@ -729,7 +729,7 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that stores a value of type `T`.
 
 ### Return Value
@@ -753,7 +753,7 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that contains a value of type `Ty`.
 
 ### Return Value
@@ -777,10 +777,10 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that contains a value of type `Ty`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Do not use `memory_order_release` or `memory_order_acq_rel`.
 
 ### Return Value
@@ -797,7 +797,7 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 
 ### Parameters
 
-*Order*<br/>
+*Order*\
 A memory ordering constraint that determines fence type.
 
 ### Remarks
@@ -826,10 +826,10 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an atomic object that contains a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
 ### Remarks
@@ -856,13 +856,13 @@ inline Ty atomic_store_explicit(
 
 ### Parameters
 
-*Atom*<br/>
+*Atom*\
 A pointer to an `atomic` object that contains a value of type `Ty`.
 
-*Value*<br/>
+*Value*\
 A value of type `Ty`.
 
-*Order*<br/>
+*Order*\
 A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Do not use `memory_order_consume`, `memory_order_acquire`, or `memory_order_acq_rel`.
 
 ### Remarks
@@ -879,7 +879,7 @@ inline void atomic_thread_fence(memory_order Order) noexcept;
 
 ### Parameters
 
-*Order*<br/>
+*Order*\
 A memory ordering constraint that determines fence type.
 
 ### Remarks
@@ -906,7 +906,7 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### Parameters
 
-*Arg*<br/>
+*Arg*\
 A value of type `Ty`.
 
 ### Return Value
@@ -915,4 +915,4 @@ The return value is *Arg*. The evaluation of *Arg* does not carry a dependency t
 
 ## See also
 
-[\<atomic>](../standard-library/atomic.md)<br/>
+[\<atomic>](../standard-library/atomic.md)

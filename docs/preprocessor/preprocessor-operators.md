@@ -14,7 +14,7 @@ Four preprocessor-specific operators are used in the context of the `#define` di
 |[Token-pasting operator (##)](../preprocessor/token-pasting-operator-hash-hash.md)|Allows tokens used as actual arguments to be concatenated to form other tokens|
 |[defined operator](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|Simplifies the writing of compound expressions in certain macro directives|
 
-## See Also
+## See also
 
 [Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
 [Predefined Macros](../preprocessor/predefined-macros.md)<br/>

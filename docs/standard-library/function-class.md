@@ -59,10 +59,10 @@ public:
 
 ### Parameters
 
-*Fty*<br/>
+*Fty*\
 The function type to wrap.
 
-*Ax*<br/>
+*Ax*\
 The allocator function.
 
 ## Remarks
@@ -83,21 +83,23 @@ In all cases, `INVOKE(f, t1, t2, ..., tN)`, where `f` is the callable object and
 
 An empty `function` object does not hold a callable object or a reference to a callable object.
 
+## Members
+
 ### Constructors
 
-|Constructor|Description|
+|||
 |-|-|
 |[function](#function)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|
 
 ### Typedefs
 
-|Type name|Description|
+|||
 |-|-|
 |[result_type](#result_type)|The return type of the stored callable object.|
 
-### Member functions
+### Functions
 
-|Member function|Description|
+|||
 |-|-|
 |[assign](#assign)|Assigns a callable object to this function object.|
 |[swap](#swap)|Swap two callable objects.|
@@ -106,19 +108,13 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 ### Operators
 
-|Operator|Description|
+|||
 |-|-|
-|[function::operator unspecified](#op_unspecified)|Tests if stored callable object exists.|
-|[function::operator()](#op_call)|Calls a callable object.|
-|[function::operator=](#op_eq)|Replaces the stored callable object.|
+|[operator unspecified](#op_unspecified)|Tests if stored callable object exists.|
+|[operator()](#op_call)|Calls a callable object.|
+|[operator=](#op_eq)|Replaces the stored callable object.|
 
-## Requirements
-
-**Header:** \<functional>
-
-**Namespace:** std
-
-## <a name="assign"></a>  function::assign
+## <a name="assign"></a> assign
 
 Assigns a callable object to this function object.
 
@@ -136,20 +132,20 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-*_Func*<br/>
+*_Func*\
 A callable object.
 
-*_Fnref*<br/>
+*_Fnref*\
 A reference wrapper that contains a callable object.
 
-*Ax*<br/>
+*Ax*\
 An allocator object.
 
 ### Remarks
 
 The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
 
-## <a name="function"></a>  function::function
+## <a name="function"></a> function
 
 Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.
 
@@ -174,22 +170,22 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The function object to copy.
 
-*Fx*<br/>
+*Fx*\
 The type of the callable object.
 
-*_Func*<br/>
+*_Func*\
 The callable object to wrap.
 
-*Alloc*<br/>
+*Alloc*\
 The allocator type.
 
-*Ax*<br/>
+*Ax*\
 The allocator.
 
-*_Fnref*<br/>
+*_Fnref*\
 The callable object reference to wrap.
 
 ### Remarks
@@ -266,7 +262,7 @@ f is non-empty (correct).
 g is empty (correct).
 ```
 
-## <a name="op_unspecified"></a>  function::operator unspecified
+## <a name="op_unspecified"></a> operator unspecified
 
 Tests if stored callable object exists.
 
@@ -308,7 +304,7 @@ not empty == false
 not empty == true
 ```
 
-## <a name="op_call"></a>  function::operator()
+## <a name="op_call"></a> operator()
 
 Calls a callable object.
 
@@ -321,10 +317,10 @@ result_type operator()(
 
 ### Parameters
 
-*TN*<br/>
+*TN*\
 The type of the Nth call argument.
 
-*tN*<br/>
+*tN*\
 The Nth call argument.
 
 ### Remarks
@@ -359,7 +355,7 @@ empty == false
 val == -3
 ```
 
-## <a name="op_eq"></a>  function::operator=
+## <a name="op_eq"></a> operator=
 
 Replaces the stored callable object.
 
@@ -374,16 +370,16 @@ template <class Fty>
 
 ### Parameters
 
-*npc*<br/>
+*npc*\
 A null pointer constant.
 
-*right*<br/>
+*right*\
 The function object to copy.
 
-*fn*<br/>
+*fn*\
 The callable object to wrap.
 
-*fnref*<br/>
+*fnref*\
 The callable object reference to wrap.
 
 ### Remarks
@@ -441,7 +437,7 @@ empty == false
 val == -3
 ```
 
-## <a name="result_type"></a>  function::result_type
+## <a name="result_type"></a> result_type
 
 The return type of the stored callable object.
 
@@ -483,7 +479,7 @@ empty == false
 val == -3
 ```
 
-## <a name="swap"></a>  function::swap
+## <a name="swap"></a> swap
 
 Swap two callable objects.
 
@@ -493,7 +489,7 @@ void swap(function& right);
 
 ### Parameters
 
-*right*<br/>
+*right*\
 The function object to swap with.
 
 ### Remarks
@@ -542,7 +538,7 @@ empty == false
 val == -3
 ```
 
-## <a name="target"></a>  function::target
+## <a name="target"></a> target
 
 Tests if stored callable object is callable as specified.
 
@@ -555,7 +551,7 @@ template <class Fty2>
 
 ### Parameters
 
-*Fty2*<br/>
+*Fty2*\
 The target callable object type to test.
 
 ### Remarks
@@ -603,7 +599,7 @@ empty == true
 no target == true
 ```
 
-## <a name="target_type"></a>  function::target_type
+## <a name="target_type"></a> target_type
 
 Gets type information on the callable object.
 
@@ -648,8 +644,3 @@ type == int (__cdecl*)(int)
 empty == true
 type == void
 ```
-
-## See also
-
-[mem_fn](../standard-library/functional-functions.md#mem_fn)<br/>
-[reference_wrapper Class](../standard-library/reference-wrapper-class.md)<br/>

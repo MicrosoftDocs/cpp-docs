@@ -17,7 +17,7 @@ postfix-expression [ expression ]
 
 A postfix expression (which can also be a primary expression) followed by the subscript operator, **[ ]**, specifies array indexing.
 
-For information about managed arrays, see [Arrays](../windows/arrays-cpp-component-extensions.md).
+For information about managed arrays in C++/CLI, see [Arrays](../extensions/arrays-cpp-component-extensions.md).
 
 Usually, the value represented by *postfix-expression* is a pointer value, such as an array identifier, and *expression* is an integral value (including enumerated types). However, all that is required syntactically is that one of the expressions be of pointer type and the other be of integral type. Thus the integral value could be in the *postfix-expression* position and the pointer value could be in the brackets in the *expression* or subscript position. Consider the following code fragment:
 

@@ -55,7 +55,7 @@ Stack size for a new thread, or 0.
 Argument list to be passed to a new thread, or **NULL**.
 
 *Security*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
+Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
 
 *initflag*<br/>
 Flags that control the initial state of a new thread. Set *initflag* to 0 to run immediately, or to **CREATE_SUSPENDED** to create the thread in a suspended state; use [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *initflag* to **STACK_SIZE_PARAM_IS_A_RESERVATION** flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.

@@ -53,7 +53,7 @@ void freeze(bool _Freezeit = true);
 
 ### Parameters
 
-*_Freezeit*<br/>
+*_Freezeit*\
 A **bool** indicating whether you want the stream to be frozen.
 
 ### Remarks
@@ -78,13 +78,13 @@ ostrstream(char* ptr,
 
 ### Parameters
 
-*ptr*<br/>
+*ptr*\
 The buffer.
 
-*count*<br/>
+*count*\
 The size of the buffer in bytes.
 
-*_Mode*<br/>
+*_Mode*\
 The input and output mode of the buffer. See [ios_base::openmode](../standard-library/ios-base-class.md#openmode) for more information.
 
 ### Remarks
@@ -157,7 +157,7 @@ See [strstream::str](../standard-library/strstreambuf-class.md#str) for a sample
 
 ## See also
 
-[ostream](../standard-library/ostream-typedefs.md#ostream)<br/>
-[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
-[iostream Programming](../standard-library/iostream-programming.md)<br/>
-[iostreams Conventions](../standard-library/iostreams-conventions.md)<br/>
+[ostream](../standard-library/ostream-typedefs.md#ostream)\
+[Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream Programming](../standard-library/iostream-programming.md)\
+[iostreams Conventions](../standard-library/iostreams-conventions.md)

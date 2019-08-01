@@ -17,7 +17,7 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. Visual C++ 2017 implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
+> As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. C++ in Visual Studio 2017 (MSVC v141) implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
 This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and Posix.
 
@@ -77,10 +77,12 @@ Finally, an important feature of path objects is that you can use them wherever 
 
 For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
-## Classes
+## Members
 
-|Name|Description|
-|----------|-----------------|
+### Classes
+
+|||
+|-|-|
 |[directory_entry Class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a path.|
 |[directory_iterator Class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|
 |[filesystem_error Class](../standard-library/filesystem-error-class.md)|A base class for exceptions that are thrown to report a low-level system overflow.|
@@ -88,10 +90,10 @@ For more information and code examples, see [File System Navigation (C++)](../st
 |[recursive_directory_iterator Class](../standard-library/recursive-directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory. The iterator can also descend into subdirectories.|
 |[file_status Class](../standard-library/file-status-class.md)|Wraps a `file_type`.|
 
-## Structs
+### Structs
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[space_info Structure](../standard-library/space-info-structure.md)|Holds information about a volume.|
 
 ## Functions
@@ -104,14 +106,15 @@ For more information and code examples, see [File System Navigation (C++)](../st
 
 ## Enumerations
 
-|Name|Description|
-|----------|-----------------|
+|||
+|-|-|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|
+|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)||
 |[perms](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

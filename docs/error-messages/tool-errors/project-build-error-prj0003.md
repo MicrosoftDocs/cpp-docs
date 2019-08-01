@@ -13,7 +13,7 @@ The *command line* command formed from input in the **Property Pages** dialog bo
 
 Possible reasons for this error include:
 
-- Your project depends on ATL Server. Beginning in Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [ATL Server Library and Tools](http://go.microsoft.com/fwlink/p/?linkid=81979).
+- Your project depends on ATL Server. Beginning in Visual Studio 2008, ATL Server is no longer included as part of Visual Studio, but has been released as a shared-source project at CodePlex. To download the ATL Server source code and tools, go to [ATL Server Library and Tools](https://go.microsoft.com/fwlink/p/?linkid=81979).
 
 - Low system resources. Close some applications to resolve this.
 
@@ -23,6 +23,6 @@ Possible reasons for this error include:
 
 - For makefile projects, you are missing a command to run on either **Build Command Line** or **Rebuild Command Line**.
 
-## See Also
+## See also
 
 [Project Build Errors and Warnings (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

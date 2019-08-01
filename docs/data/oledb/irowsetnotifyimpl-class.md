@@ -118,9 +118,8 @@ See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(
 
 This method wraps the [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) method. See that method's description in the OLE DB Programmer's Reference for details.
 
-## See Also
+## See also
 
-[OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85))
 [IRowsetNotifyCP Class](../../data/oledb/irowsetnotifycp-class.md)
