@@ -133,9 +133,9 @@ You can customize any of the default configurations in `CppProperties.json`, or 
 }
 ```
 
-## System environment variables 
+## Toolset environments
 
- `CppProperties.json` supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. The following system-defined variables are also supported:
+Use the following system-defined variables to specify which toolset you are compiling with:
 
 |Variable Name|Description|
 |-----------|-----------------|
@@ -155,6 +155,29 @@ When the Linux workload is installed, the following environments are available f
 |linux_x86|Target x86 Linux remotely|
 |linux_x64|Target x64 Linux remotely|
 |linux_arm|Target ARM Linux remotely|
+              "windows-msvc-x86",
+              "windows-msvc-x64",
+              "windows-msvc-arm",
+              "windows-msvc-arm64",
+              "android-clang-x86",
+              "android-clang-x64",
+              "android-clang-arm",
+              "android-clang-arm64",
+              "ios-clang-x86",
+              "ios-clang-x64",
+              "ios-clang-arm",
+              "ios-clang-arm64",
+              "windows-clang-x86",
+              "windows-clang-x64",
+              "windows-clang-arm",
+              "windows-clang-arm64",
+              "linux-gcc-x86",
+              "linux-gcc-x64",
+              "linux-gcc-arm"
+
+## System environment variables 
+
+ `CppProperties.json` supports system environment variable expansion for include paths and other property values. The syntax is `${env.FOODIR}` to expand an environment variable `%FOODIR%`. 
 
 ## Custom environment variables
 
