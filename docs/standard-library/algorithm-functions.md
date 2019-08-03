@@ -7444,7 +7444,7 @@ A forward iterator addressing the position one past the final element in the ran
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied.
 
 *searcher*\
-The searcher that encapsulates the pattern to look for and the search algorithm to use. For more information on searchers, see [default_searcher class](default-searcher-class.md), [boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher.md), and [boyer_moore_searcher class](boyer-moore-searcher.md).
+The searcher that encapsulates the pattern to look for and the search algorithm to use. For more information on searchers, see [default_searcher class](default-searcher-class.md), [boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher-class.md), and [boyer_moore_searcher class](boyer-moore-searcher-class.md).
 
 ### Return value
 
