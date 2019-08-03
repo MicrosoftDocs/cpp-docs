@@ -100,5 +100,5 @@ This class is new in C++17.
 
 [\<functional>](functional.md)\
 [algorithm functions](algorithm-functions.md)\
-[boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher_class.md)\
+[boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher-class.md)\
 [std::search](algorithm-functions.md#search)
