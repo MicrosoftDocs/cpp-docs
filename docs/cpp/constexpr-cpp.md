@@ -1,6 +1,6 @@
 ---
 title: "constexpr (C++)"
-ms.date: "04/06/2018"
+ms.date: "08/05/2019"
 f1_keywords: ["constexpr_cpp"]
 ms.assetid: c6458ccb-51c6-4a16-aa61-f69e6f4e04f7
 ---
@@ -49,7 +49,7 @@ constexpr int k = j + 1; //Error! j not a constant expression
 
 ## <a name="constexpr_functions"></a> constexpr functions
 
-A **constexpr** function is one whose return value can be computed at compile time when consuming code requires it. Consuming code requires the return value at compile time, for example, to initialize a **constexpr** variable or provide a non-type template argument. When its arguments are **constexpr** values, a **constexpr** function produces a compile-time constant. When called with non-**constexpr** arguments, or when its value isn't required at compile-time, it produces a value at run time like a regular function. (This dual behavior saves you from having to write **constexpr** and non-**constexpr** versions of the same function.)
+A **constexpr** function is one whose return value can be computed at compile time when consuming code requires it. Consuming code requires the return value at compile time, for example, to initialize a **constexpr** variable or provide a non-type template argument. When its arguments are **constexpr** values, a **constexpr** function produces a compile-time constant. When called with non-**constexpr** arguments, or when its value isn't required at compile time, it produces a value at run time like a regular function. (This dual behavior saves you from having to write **constexpr** and non-**constexpr** versions of the same function.)
 
 A **constexpr** function or constructor is implicitly **inline**.
 
@@ -91,13 +91,15 @@ constexpr float exp(float x, int n)
 
 ## extern constexpr
 
-The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage](../c-language/external-linkage.md) to variables declared by using **extern constexpr**. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
+The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage](../c-language/external-linkage.md) to variables declared by using **extern constexpr**. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6, and is off by default. The /permissive- option does not enable **/Zc:externConstexpr**.
 
 ## Example
 
 The following example shows **constexpr** variables, functions, and a user-defined type. In the last statement in main(), the **constexpr** member function GetValue() is a run-time call because the value isn't required to be known at compile time.
 
 ```cpp
+// constexpr.cpp
+// Compile with: cl /EHsc /W4 constexpr.cpp
 #include <iostream>
 
 using namespace std;
@@ -120,7 +122,7 @@ constexpr float exp2(const float& x, const int& n)
 
 // Compile-time computation of array length
 template<typename T, int N>
-constexpr int length(const T(&ary)[N])
+constexpr int length(const T(&)[N])
 {
     return N;
 }
@@ -128,7 +130,7 @@ constexpr int length(const T(&ary)[N])
 // Recursive constexpr function
 constexpr int fac(int n)
 {
-    return n == 1 ? 1 : n*fac(n - 1);
+    return n == 1 ? 1 : n * fac(n - 1);
 }
 
 // User-defined type
@@ -136,7 +138,7 @@ class Foo
 {
 public:
     constexpr explicit Foo(int i) : _i(i) {}
-    constexpr int GetValue()
+    constexpr int GetValue() const
     {
         return _i;
     }
@@ -160,15 +162,14 @@ int main()
 
     // Run time:
     cout << "The value of foo is " << foo.GetValue() << endl;
-
 }
 ```
 
 ## Requirements
 
-Visual Studio 2015
+Visual Studio 2015 or later.
 
 ## See also
 
-[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)<br/>
+[Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)\
 [const](../cpp/const-cpp.md)
