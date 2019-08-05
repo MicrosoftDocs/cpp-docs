@@ -3798,7 +3798,7 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 - SB_VERT Retrieves the parameters for the window's standard vertical scroll bar.
 
 *lpScrollInfo*<br/>
-A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure. See the Windows SDK for more information about this structure.
+A pointer to a [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure. See the Windows SDK for more information about this structure.
 
 *nMask*<br/>
 Specifies the scroll bar parameters to retrieve. The default specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the *nMask* values.
@@ -3811,7 +3811,7 @@ If the message retrieved any values, the return is TRUE. Otherwise, it is FALSE.
 
 `GetScrollInfo` enables applications to use 32-bit scroll positions.
 
-The [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
+The [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
 
 The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHScroll](#onhscroll) and [CWnd::OnVScroll](#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll-bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll-bar position data.
 
@@ -5145,7 +5145,7 @@ afx_msg void OnAppCommand(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pWnd*|[in] Pointer to a `CWnd` object that represents the window where the user clicked the comman button or pressed the command key. This window can be a child window of the window receiving the message.|
+|*pWnd*|[in] Pointer to a `CWnd` object that represents the window where the user clicked the command button or pressed the command key. This window can be a child window of the window receiving the message.|
 |*nCmd*|[in] Indicates the application command. For a list of possible values, see the commands under the *cmd* section of the *lParam* parameter of [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
 |*nDevice*|[in] The input device that generated the input event. For a list of possible values, see the devices under the *uDevice* section of the *lParam* parameter of [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
 |*nKey*|[in] Indicates any virtual keys that are down, such as the CTRL key or the left mouse button. For a list of possible values, see the keys under the *dwKeys* section of the *lParam* parameter of [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand). For more information, see the "Message Parameters" subheading in [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).|
@@ -9024,7 +9024,7 @@ The [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) W
 
 ##  <a name="ontoolhittest"></a>  CWnd::OnToolHitTest
 
-The framework calls this member function to detemine whether a point is in the bounding rectangle of the specified tool.
+The framework calls this member function to determine whether a point is in the bounding rectangle of the specified tool.
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -10808,7 +10808,7 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 - SB_VERT Specifies that the window is a vertical scroll bar.
 
 *lpScrollInfo*<br/>
-A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure. See the Windows SDK for more information about this structure.
+A pointer to a [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure. See the Windows SDK for more information about this structure.
 
 *bRedraw*<br/>
 Specifies whether the scroll bar should be redrawn to reflect the new position. If *bRedraw* is TRUE, the scroll bar is redrawn. If it is FALSE, it is not redrawn. The scroll bar is redrawn by default.
@@ -10819,7 +10819,7 @@ If successful, the return is TRUE. Otherwise, it is FALSE.
 
 ### Remarks
 
-The [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
+The [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
 
 The MFC Windows message handlers that indicate scroll-bar position, [CWnd::OnHScroll](#onhscroll) and [CWnd::OnVScroll](#onvscroll), provide only 16 bits of position data. [GetScrollInfo](#getscrollinfo) and `SetScrollInfo` provide 32 bits of scroll-bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll-bar position data.
 
