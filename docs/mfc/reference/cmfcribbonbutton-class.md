@@ -98,7 +98,7 @@ The following example demonstrates how to use the various methods in the `CMFCRi
 
 To use a ribbon button in an application, construct the button object and add it to the appropriate ribbon [panel](../../mfc/reference/cmfcribbonpanel-class.md).
 
-```
+```cpp
 CMFCRibbonPanel* pPanel = pCategory->AddPanel (
     _T("Clipboard"), // Panel name
     m_PanelIcons.ExtractIcon (0)); // Panel icon
