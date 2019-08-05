@@ -119,7 +119,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 3) C4991|Warbird: function '*function*' marked as __forceinline not inlined because protection level of inlinee is greater than the parent|
 |Compiler warning (level 3) C4992|Warbird: function '*function*' marked as __forceinline not inlined because it contains inline assembly which cannot be protected|
 |[Compiler warning (level 3) C4995](compiler-warning-level-3-c4995.md)|'*function*': name was marked as #pragma deprecated|
-|[Compiler warning (level 3) C4996](compiler-warning-level-3-c4996.md)|'*description*': *message*|
+|[Compiler warning (level 3) C4996](compiler-warning-level-3-c4996.md)|'*deprecated-declaration*': *deprecation-message* (or "was declared deprecated")|
 |[Compiler warning (level 1) C4997](compiler-warning-level-1-c4997.md)|'*class*': coclass does not implement a COM interface or pseudo-interface|
 |Compiler warning (level 1) C4998|EXPECTATION FAILED: *expectation*(*value*)|
 |[Compiler warning C4999](compiler-warning-level-1-c4999.md)|UNKNOWN WARNING Please choose the Technical Support command on the Visual C++ Help menu, or open the Technical Support help file for more information|
