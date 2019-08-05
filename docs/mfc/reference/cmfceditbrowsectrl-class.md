@@ -151,7 +151,7 @@ Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREA
 
 When the edit browse control is in file browse mode and the user clicks the browse button, the control displays the standard file selection dialog box.
 
-For a full list of available flags, see [OPENFILENAME structure](/windows/desktop/api/commdlg/ns-commdlg-tagofna).
+For a full list of available flags, see [OPENFILENAME structure](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
 
 ##  <a name="enablefolderbrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFolderBrowseButton
 
