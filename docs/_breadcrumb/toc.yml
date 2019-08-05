@@ -18,7 +18,7 @@
         topicHref: /cpp/c-language/c-language-reference
       - name: C/C++ Preprocessor
         tocHref: /cpp/preprocessor/
-        topicHref: /cpp/c-cpp-preprocessor-reference
+        topicHref: /cpp/preprocessor/c-cpp-preprocessor-reference
       - name: Compiler Intrinsics and Assembly Language
         tocHref: /cpp/intrinsics/
         topicHref: /cpp/intrinsics/compiler-intrinsics-and-assembly-language
@@ -28,7 +28,7 @@
           topicHref: /cpp/assembler/arm/arm-assembler-reference
         - name: Inline assembler
           tocHref: /cpp/assembler/inline/
-          topicHref: /cpp/assembler/inline-assembler
+          topicHref: /cpp/assembler/inline/inline-assembler
         - name: MASM
           tocHref: /cpp/assembler/masm/
           topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
@@ -62,7 +62,7 @@
           items:
           - name: Reference
             tocHref: /cpp/atl-mfc-shared/reference/
-            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-mfc-and-atl
+            topicHref: /cpp/atl-mfc-shared/reference/classes-shared-by-mfc-and-atl
         - name: C++/CX
           tocHref: /cpp/cppcx/
           topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
@@ -77,7 +77,7 @@
         topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
       - name: Data Access
         tocHref: /cpp/data/
-        topicHref: /cpp/data/
+        topicHref: /cpp/data/data-access-in-cpp
         items:
         - name: OLEDB
           tocHref: /cpp/data/oledb/

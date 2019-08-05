@@ -1,13 +1,13 @@
 ---
 title: "Common macros for MSBuild commands and properties"
-ms.date: "03/20/2019"
+ms.date: "08/02/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]
 helpviewer_keywords: ["$(FrameworkSDKDir) macro", "ProjectName macro $(ProjectName)", "DevEnvDir macro $(DevEnvDir)", "$(DevEnvDir) macro", "TargetPath macro $(TargetPath)", "VSInstallDir macro $(VSInstallDir)", "$(InputFileName) macro", "$(SolutionFileName) macro", "macros [C++], build macros", "InputFileName macro $(InputFileName)", "$(VCInstallDir) macro", "$(IntDir) macro", "$(ConfigurationName) macro", "SolutionDir macro $(SolutionDir)", "$(TargetPath) macro", "$(Inherit) macro", "$(SolutionPath) macro", "WebDeployRoot macro $(WebDeployRoot)", "WebDeployPath macro $(WebDeployPath)", "StopEvaluating macro $(StopEvaluating)", "$(RootNamespace) macro", "$(WebDeployRoot) macro", "ProjectPath macro $(ProjectPath)", "$(ProjectPath) macro", "$(InputDir) macro", "SolutionName macro $(SolutionName)", "ProjectExt macro $(ProjectExt)", "$(TargetExt) macro", "$(ProjectFileName) macro", "TargetName macro $(TargetName)", "$(References) macro", "References macro $(References)", "TargetExt macro $(TargetExt)", "ProjectDir macro $(ProjectDir)", "$(TargetDir) macro", "SolutionExt macro $(SolutionExt)", "$(SolutionDir) macro", "ProjectFileName macro $(ProjectFileName)", "VCInstallDir macro $(VCInstallDir)", "$(InputExt) macro", "$(TargetFileName) macro", "$(SolutionExt) macro", "PlatformName macro $(PlatformName)", "IntDir macro $(IntDir)", "$(FrameworkVersion) macro", "$(ProjectDir) macro", "build macros [C++]", "InputPath macro $(InputPath)", "$(VSInstallDir) macro", "$(WebDeployPath) macro", "TargetFileName macro $(TargetFileName)", "NoInherit macro $(NoInherit)", "ConfigurationName macro $(ConfigurationName)", "$(ProjectExt) macro", "TargetDir macro $(TargetDir)", "InputName macro $(InputName)", "$(ProjectName) macro", "FrameworkSDKDir macro $(FrameworkSDKDir)", "$(ParentName) macro", "InputExt macro $(InputExt)", "$(SafeRootNamespace) macro", "InputDir macro $(InputDir)", "$(FxCopDir) macro", "$(RemoteMachine) macro", "Inherit macro $(Inherit)", "FrameworkVersion macro $(FrameworkVersion)", "$(StopEvaluating) macro", "$(OutDir) macro", "FrameworkDir macro $(FrameworkDir)", "SolutionFileName macro $(SolutionFileName)", "$(NoInherit) macro", "RemoteMachine macro $(RemoteMachine)", "properties [C++], build property macros", "$(TargetName) macro", "$(SolutionName) macro", "$(InputPath) macro", "ParentName macro $(ParentName)", "OutDir macro $(OutDir)", "SafeRootNamespace macro $(SafeRootNamespace)", "FxCopDir macro $(FxCopDir)", "$(InputName) macro", "RootNamespace macro $(RootNamespace)", "builds [C++], macros", "$(FrameworkDir) macro", "$(PlatformName) macro", "$(PlatformShortName) macro","SolutionPath macro $(SolutionPath)"]
 ms.assetid: 239bd708-2ea9-4687-b264-043f1febf98b
 ---
 # Common macros for MSBuild commands and properties
 
-Depending on your installation options, Visual Studio can make hundreds of macros available to you in a Visual Studio project (based on MSBuild). These correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros are not case sensitive.
+Depending on your installation options, Visual Studio can make hundreds of macros available to you in a Visual Studio project (based on MSBuild). They correspond to the MSBuild properties that are set by default, or in .props or .targets files, or in your project settings. You can use these macros anywhere in a project's **Property Pages** dialog box where strings are accepted. These macros aren't case-sensitive.
 
 ## View the current properties and macros
 
@@ -27,8 +27,8 @@ This table describes a commonly used subset of the available macros; there are m
 |**$(FrameworkSDKDir)**|The directory into which you installed the .NET Framework. The .NET Framework could have been installed as part of Visual Studio or separately.|
 |**$(FrameworkVersion)**|The version of the .NET Framework used by Visual Studio. Combined with **$(FrameworkDir)**, the full path to the version of the .NET Framework use by Visual Studio.|
 |**$(FxCopDir)**|The path to the fxcop.cmd file. The fxcop.cmd file is not installed with all Visual Studio editions.|
-|**$(IntDir)**|Path to the directory specified for intermediate files. If this is a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Intermediate Directory** property. Do not use **$(OutDir)** to define this property.|
-|**$(OutDir)**|Path to the output file directory. If this is a  relative path, output files go to this path appended to the project directory. This path should have a trailing slash. This resolves to the value for the **Output Directory** property. Do not use **$(IntDir)** to define this property.|
+|**$(IntDir)**|Path to the directory specified for intermediate files. If it's a relative path, intermediate files go to this path appended to the project directory. This path should have a trailing slash. It resolves to the value for the **Intermediate Directory** property. Don't use **$(OutDir)** to define this property.|
+|**$(OutDir)**|Path to the output file directory. If it's a  relative path, output files go to this path appended to the project directory. This path should have a trailing slash. It resolves to the value for the **Output Directory** property. Don't use **$(IntDir)** to define this property.|
 |**$(Platform)**|The name of current project platform, for example, "Win32".|
 |**$(PlatformShortName)**|The short name of current architecture, for example, "x86" or "x64".|
 |**$(ProjectDir)**|The directory of the project (defined as drive + path); includes the trailing backslash '\\'.|
@@ -36,6 +36,7 @@ This table describes a commonly used subset of the available macros; there are m
 |**$(ProjectFileName)**|The file name of the project (defined as base name + file extension).|
 |**$(ProjectName)**|The base name of the project.|
 |**$(ProjectPath)**|The absolute path name of the project (defined as drive + path + base name + file extension).|
+|**$(PublishDir)**|The output location for the publish target; includes the trailing backslash '\\'. Defaults to the **$(OutDir)app.publish\\** folder.|
 |**$(RemoteMachine)**|Set to the value of the **Remote Machine** property on the Debug property page. See [Changing Project Settings for a C/C++ Debug Configuration](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration) for more information.|
 |**$(RootNameSpace)**|The namespace, if any, containing the application.|
 |**$(SolutionDir)**|The directory of the solution (defined as drive + path); includes the trailing backslash '\\'. Defined only when building a solution in the IDE.|
@@ -71,6 +72,6 @@ The build system for C++ was significantly changed between Visual Studio 2008 an
 
 ## See also
 
-- [Visual Studio Projects - C++](../creating-and-managing-visual-cpp-projects.md)
-- [Visual C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md)
-- [Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)
+[Visual Studio Projects - C++](../creating-and-managing-visual-cpp-projects.md)\
+[Visual C++ porting and upgrading guide](../../porting/visual-cpp-porting-and-upgrading-guide.md)\
+[Overview of potential upgrade issues](../../porting/overview-of-potential-upgrade-issues-visual-cpp.md)
