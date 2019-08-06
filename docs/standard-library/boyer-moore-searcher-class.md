@@ -73,7 +73,7 @@ This class is new in C++17.
 
 ## <a name="operator-call"></a> operator()
 
-The call operator of the function operator. Searches within the argument sequence `[first, last)` for the sequence specified to the constructor.
+The call operator of the function object. Searches within the argument sequence `[first, last)` for the sequence specified to the constructor.
 
 ```cpp
 template <class ForwardIterator2>
