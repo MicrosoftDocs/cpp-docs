@@ -95,15 +95,14 @@ Members of a named namespace can be defined outside the namespace in which they 
 // defining_namespace_members.cpp
 // C2039 expected
 namespace V {
-        void f();
-    }
+    void f();
+}
 
-    void V::f() { }        // ok
-    void V::g() { }        // C2039, g() is not yet a member of V
+void V::f() { }        // ok
+void V::g() { }        // C2039, g() is not yet a member of V
 
-    namespace V {
-        void g();
-    }
+namespace V {
+    void g();
 }
 ```
 
