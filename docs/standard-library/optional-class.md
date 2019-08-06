@@ -37,7 +37,7 @@ template<class T> optional(T) -> optional<T>;
 |[~optional](#optional-destructor) | Destroys an object of type `optional`. |
 | **Assignment** | |
 | [operator=](#op_eq) | Replaces the `optional` with a copy of another `optional`. |
-| [emplace](#emplace) | Initializes the contained value with specified arguments. |
+| [emplace](#op_eq) | Initializes the contained value with specified arguments. |
 | **Swap** | |
 | [swap](#swap) | Swaps the contained value or the empty state with another `optional`. |
 | **Observers** | |
@@ -139,7 +139,7 @@ Replaces the contained value of an `optional` with a copy or move from another `
 ```cpp
 optional& operator=(nullopt_t) noexcept;
 optional& operator=(const optional& rhs);
-optional& operator=(optional&&) noexcept(see below);
+optional& operator=(optional&&) noexcept( /* see below */ );
 
 template <class U = T>
     optional& operator=(U&&);
@@ -154,7 +154,7 @@ template <class... Args>
 T& emplace(Args&&...);
 
 template <class U, class... Args>
-    T& emplace(initializer_list<U>, Args&&...);
+T& emplace(initializer_list<U>, Args&&...);
 ```
 
 ## <a name="op_as"></a> operator->
@@ -191,6 +191,13 @@ Effectively, calls the destructor of the contained object, if any, and sets it t
 
 ```cpp
 void reset() noexcept;
+```
+
+## <a name="swap"></a> swap
+
+```cpp
+template<class T>
+void swap(optional<T>&, optional<T>&) noexcept;
 ```
 
 ## <a name="value"></a> value
