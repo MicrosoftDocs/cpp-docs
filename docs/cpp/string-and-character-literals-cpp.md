@@ -165,7 +165,7 @@ char c6 = '\x0050'; // 'P'
 char c7 = '\x0pqr'; // C4305, C4309, truncates to 'r'
 ```
 
-If a wide character literal prefixed with `L` contains a multicharacter sequence, the value is taken from the first character, and the compiler raises warning C4066. Subsequent characters are ignored, unlike the behavior of the equivalent ordinary character literal.
+If a wide character literal prefixed with `L` contains a multicharacter sequence, the value is taken from the first character, and the compiler raises warning C4066. Subsequent characters are ignored, unlike the behavior of the equivalent ordinary multicharacter literal.
 
 ```cpp
 wchar_t w1 = L'\100';   // L'@'
