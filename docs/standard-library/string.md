@@ -52,7 +52,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 |||
 |-|-|
-|[hash]()||
+|hash|Produces a hash of a string.|
 |[swap](../standard-library/string-functions.md#swap)|Exchanges the arrays of characters of two strings.|
 |[stod](../standard-library/string-functions.md#stod)|Converts a character sequence to a **double**.|
 |[stof](../standard-library/string-functions.md#stof)|Converts a character sequence to a **float**.|
