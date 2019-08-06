@@ -106,7 +106,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 |||
 |-|-|
-|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type void, defining the only the member types that make sense in this specialized context.|
+|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type **void**, defining only the member types that make sense in this specialized context.|
 
 ## See also
 
