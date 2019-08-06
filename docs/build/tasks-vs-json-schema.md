@@ -1,3 +1,10 @@
+---
+title: "Tasks.vs.json schema reference"
+ms.date: "03/21/2019"
+helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
+
+---
+# Tasks.vs.json schema reference
 
 ## Default Properties
 
