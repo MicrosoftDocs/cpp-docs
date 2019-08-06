@@ -76,7 +76,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|Sets the current tab of a tab control as the active tab in an multiple document interface tab group.|
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|Activates a tab. (Overrides [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
 |[CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont)|Enables or disables use of a bold font on active tabs.|
-|[CMFCTabCtrl::SetDrawFrame](#setdrawframe)|Enables or disables drawinga frame rectangle around an embedded bar.|
+|[CMFCTabCtrl::SetDrawFrame](#setdrawframe)|Enables or disables drawing a frame rectangle around an embedded bar.|
 |[CMFCTabCtrl::SetFlatFrame](#setflatframe)|Specifies whether to draw a flat or a 3D frame around the tab area.|
 |[CMFCTabCtrl::SetImageList](#setimagelist)|Specifies an image list. (Overrides [CMFCBaseTabCtrl::SetImageList](../../mfc/reference/cmfcbasetabctrl-class.md#setimagelist).)|
 |[CMFCTabCtrl::SetResizeMode](#setresizemode)|Specifies how the current tab control can be resized and then redisplays the control.|
@@ -1019,7 +1019,7 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 ### Parameters
 
 *pScrollInfo*<br/>
-[out] Pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.
+[out] Pointer to a [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.
 
 ### Return Value
 

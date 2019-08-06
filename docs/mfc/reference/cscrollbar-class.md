@@ -194,7 +194,7 @@ BOOL GetScrollInfo(
 ### Parameters
 
 *lpScrollInfo*<br/>
-A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure. See the Windows SDK for more information about this structure.
+A pointer to a [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure. See the Windows SDK for more information about this structure.
 
 *nMask*<br/>
 Specifies the scroll bar parameters to retrieve. Typical usage, SIF_ALL, specifies a combination of SIF_PAGE, SIF_POS, SIF_TRACKPOS, and SIF_RANGE. See `SCROLLINFO` for more information on the nMask values.
@@ -207,9 +207,9 @@ If the message retrieved any values, the return is TRUE. Otherwise, it is FALSE.
 
 `GetScrollInfo` enables applications to use 32-bit scroll positions.
 
-The [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
+The [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the `SCROLLINFO` structure topic in the Windows SDK for more information about changing the structure defaults.
 
-The MFC Windows message handlers that indicate scroll bar position, [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) and [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll bar position data.
+The MFC Windows message handlers that indicate scroll bar position, [CWnd::OnHScroll, and [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), provide only 16 bits of position data. `GetScrollInfo` and `SetScrollInfo` provide 32 bits of scroll bar position data. Thus, an application can call `GetScrollInfo` while processing either `CWnd::OnHScroll` or `CWnd::OnVScroll` to obtain 32-bit scroll bar position data.
 
 ### Example
 
@@ -290,7 +290,7 @@ BOOL SetScrollInfo(
 ### Parameters
 
 *lpScrollInfo*<br/>
-A pointer to a [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure.
+A pointer to a [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure.
 
 *bRedraw*<br/>
 Specifies whether the scroll bar should be redrawn to reflect the new information. If *bRedraw* is TRUE, the scroll bar is redrawn. If it is FALSE, it is not redrawn. The scroll bar is redrawn by default.
@@ -303,7 +303,7 @@ If successful, the return is TRUE. Otherwise, it is FALSE.
 
 You must provide the values required by the `SCROLLINFO` structure parameters, including the flag values.
 
-The `SCROLLINFO` structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) structure topic in the Windows SDK for more information about changing the structure defaults.
+The `SCROLLINFO` structure contains information about a scroll bar, including the minimum and maximum scrolling positions, the page size, and the position of the scroll box (the thumb). See the [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure topic in the Windows SDK for more information about changing the structure defaults.
 
 ### Example
 

@@ -91,7 +91,7 @@ CMFCPropertyGridFileProperty(
 
 ### Remarks
 
-For a full list of available flags, see [OPENFILENAME structure](/windows/desktop/api/commdlg/ns-commdlg-tagofna).
+For a full list of available flags, see [OPENFILENAME structure](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
 
 ### Example
 
