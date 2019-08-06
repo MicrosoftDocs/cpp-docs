@@ -1,6 +1,6 @@
 ---
 title: "&lt;memory&gt; functions"
-ms.date: "07/30/2019"
+ms.date: "08/05/2019"
 f1_keywords: ["memory/std::addressof", "memory/std::align", "memory/std::allocate_shared", "memory/std::const_pointer_cast", "memory/std::declare_no_pointers", "memory/std::declare_reachable", "memory/std::default_delete", "memory/std::dynamic_pointer_cast", "memory/std::get_deleter", "memory/std::get_pointer_safety", "memory/std::get_temporary_buffer", "xmemory/std::get_temporary_buffer", "memory/std::make_shared", "memory/std::make_unique", "memory/std::owner_less", "memory/std::reinterpret_pointer_cast", "memory/std::return_temporary_buffer", "xmemory/std::return_temporary_buffer", "memory/std::static_pointer_cast", "memory/std::swap", "memory/std::undeclare_no_pointers", "memory/std::undeclare_reachable", "memory/std::uninitialized_copy", "memory/std::uninitialized_copy_n", "memory/std::uninitialized_fill", "memory/std::uninitialized_fill_n", "memory/std::get_temporary_buffer", "memory/std::return_temporary_buffer"]
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
 helpviewer_keywords: ["std::addressof [C++]", "std::align [C++]", "std::allocate_shared [C++]", "std::const_pointer_cast [C++]", "std::declare_no_pointers [C++]", "std::declare_reachable [C++]", "std::default_delete [C++]", "std::dynamic_pointer_cast [C++]", "std::get_deleter [C++]", "std::get_pointer_safety [C++]", "std::get_temporary_buffer [C++]", "std::make_shared [C++]", "std::make_unique [C++]", "std::owner_less [C++]", "std::return_temporary_buffer [C++]", "std::static_pointer_cast [C++]", "std::swap [C++]", "std::undeclare_no_pointers [C++]", "std::undeclare_reachable [C++]", "std::uninitialized_copy [C++]", "std::uninitialized_copy_n [C++]", "std::uninitialized_fill [C++]", "std::uninitialized_fill_n [C++]", "std::addressof [C++]", "std::align [C++]", "std::allocate_shared [C++]", "std::const_pointer_cast [C++]", "std::declare_no_pointers [C++]", "std::declare_reachable [C++]", "std::default_delete [C++]", "std::dynamic_pointer_cast [C++]", "std::get_deleter [C++]", "std::get_pointer_safety [C++]", "std::get_temporary_buffer [C++]", "std::make_shared [C++]", "std::make_unique [C++]", "std::owner_less [C++]", "std::return_temporary_buffer [C++]", "std::static_pointer_cast [C++]", "std::undeclare_no_pointers [C++]", "std::undeclare_reachable [C++]", "std::uninitialized_copy [C++]", "std::uninitialized_copy_n [C++]", "std::uninitialized_fill [C++]", "std::uninitialized_fill_n [C++]"]
@@ -699,21 +699,15 @@ Creates and returns a [unique_ptr](unique-ptr-class.md) to an object of the spec
 ```cpp
 // make_unique<T>
 template <class T, class... Args>
-unique_ptr<T> make_unique(Args&&... args)
-    {
-        return (unique_ptr<T>(new T(forward<Args>(args)...)));
-    }
+unique_ptr<T> make_unique(Args&&... args);
 
 // make_unique<T[]>
 template <class T>
-make_unique(size_t size)
-    {
-        return (unique_ptr<T>(new elements[size]()));
-    }
+unique_ptr<T> make_unique(size_t size);
 
 // make_unique<T[N]> disallowed
 template <class T, class... Args>
-typename enable_if<extent<T>::value != 0, void>::type make_unique(Args&&...) = delete;
+/* unspecified */ make_unique(Args&&...) = delete;
 ```
 
 ### Parameters

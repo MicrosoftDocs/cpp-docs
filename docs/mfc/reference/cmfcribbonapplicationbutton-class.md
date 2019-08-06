@@ -59,7 +59,7 @@ Constructs and initializes a [CMFCRibbonApplicationButton](../../mfc/reference/c
 ```
 CMFCRibbonApplicationButton();
 CMFCRibbonApplicationButton(UINT uiBmpResID);
-  CMFCRibbonApplicationButton(HBITMAP hBmp);
+CMFCRibbonApplicationButton(HBITMAP hBmp);
 ```
 
 ### Parameters

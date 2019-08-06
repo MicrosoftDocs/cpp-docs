@@ -124,15 +124,15 @@ Specifies which environment to target ([/env](/windows/win32/midl/-env) arm32|wi
 
 ### Generate Stubless Proxies
 
-Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-Oicf), [/Oif](/windows/win32/midl/-Oif) ).
+Generate fully interpreted stubs with extensions and stubless proxies for object interfaces ([/Oicf](/windows/win32/midl/-oi), [/Oif](/windows/win32/midl/-oi) ).
 
 ### Suppress Compiler Warnings
 
-Suppress compiler warning messages ([/no_warn](/windows/win32/midl/-no_warn)).
+Suppress compiler warning messages ([/no_warn](/windows/win32/midl/-no-warn)).
 
 ### Application Configuration Mode
 
-Allow selected ACF attributes in the IDL file ([/app_config](/windows/win32/midl/-app_config)).
+Allow selected ACF attributes in the IDL file ([/app_config](/windows/win32/midl/-app-config)).
 
 ### Locale ID
 
@@ -215,7 +215,7 @@ Specifies the type library file format ([/oldtlb|/newtlb]).
 
 ### C Preprocess Options
 
-Specifies switches to pass to C compiler preprocessor ([/cpp_opt](/windows/win32/midl/-cpp_opt) switches).
+Specifies switches to pass to C compiler preprocessor ([/cpp_opt](/windows/win32/midl/-cpp-opt) switches).
 
 ### Undefine Preprocessor Definitions
 
@@ -253,15 +253,15 @@ Emit additional check for server side stub data validity ([/error](/windows/win3
 
 ### Prepend with 'ABI' namespace
 
-Prepend the 'ABI' namespace to all types.  ([/ns_prefix](/windows/win32/midl/-ns_prefix)).
+Prepend the 'ABI' namespace to all types.  ([/ns_prefix](/windows/win32/midl/-ns-prefix)).
 
 ### Validate Parameters
 
-Generate additional information to validate parameters ([/robust](/windows/win32/midl/-robust) | [/robust](/windows/win32/midl/-no_robust)).
+Generate additional information to validate parameters ([/robust](/windows/win32/midl/-robust) | [/no_robust](/windows/win32/midl/-no-robust)).
 
 ### Struct Member Alignment
 
-Specifies the packing level of structures in the target system ([/ZpN](/windows/win32/midl/-zpn)).
+Specifies the packing level of structures in the target system (/ZpN).
 
 **Choices**
 
