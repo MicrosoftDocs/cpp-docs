@@ -1,12 +1,12 @@
 ---
-title: "String and character literals  (C++)"
+title: "String and character literals (C++)"
 description: "How to declare and define string and character literals in C++."
-ms.date: "07/29/2019"
+ms.date: "08/06/2019"
 f1_keywords: ["R", "L", "u", "u8", "LR", "uR", "u8R"]
 helpviewer_keywords: ["literal strings [C++]", "string literals [C++]"]
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
 ---
-# String and character literals  (C++)
+# String and character literals (C++)
 
 C++ supports various string and character types, and provides ways to express literal values of each of these types. In your source code, you express the content of your character and string literals using a character set. Universal character names and escape characters allow you to express any string using only the basic source character set. A raw string literal enables you to avoid using escape characters, and can be used to express all types of string literals. You can also create `std::string` literals without having to perform extra construction or conversion steps.
 
@@ -22,6 +22,9 @@ int main()
     auto c2 =  L'A'; // wchar_t
     auto c3 =  u'A'; // char16_t
     auto c4 =  U'A'; // char32_t
+
+    // Multicharacter literals
+    auto m0 = 'abcd'; // int, value 0x61626364
 
     // String literals
     auto s0 =   "hello"; // const char*
@@ -61,7 +64,7 @@ A *character literal* is composed of a constant character. It is represented by 
 
 - Ordinary character literals of type **char**, for example `'a'`
 
-- UTF-8 character literals of type **char**, for example `u8'a'`
+- UTF-8 character literals of type **char** (**char8_t** in C++20), for example `u8'a'`
 
 - Wide-character literals of type `wchar_t`, for example `L'a'`
 
@@ -75,9 +78,9 @@ The character used for a character literal may be any character, except for the 
 
 Character literals are encoded differently based their prefix.
 
-- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that can be represented in the execution character set has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. A multicharacter literal or an ordinary character literal that can't be represented in the execution character set is conditionally supported, has type **int**, and its value is implementation-defined.
+- A character literal without a prefix is an ordinary character literal. The value of an ordinary character literal containing a single character, escape sequence, or universal character name that can be represented in the execution character set has a value equal to the numerical value of its encoding in the execution character set. An ordinary character literal that contains more than one character, escape sequence, or universal character name is a *multicharacter literal*. A multicharacter literal or an ordinary character literal that can't be represented in the execution character set has type **int**, and its value is implementation-defined. For MSVC, see the **Microsoft specific** section below.
 
-- A character literal that begins with the `L` prefix is a wide-character literal. The value of a wide-character literal containing a single character, escape sequence, or universal character name has a value equal to the numerical value of its encoding in the execution wide-character set unless the character literal has no representation in the execution wide-character set, in which case the value is implementation-defined. The value of a wide-character literal containing multiple characters, escape sequences, or universal character names is implementation-defined.
+- A character literal that begins with the `L` prefix is a wide-character literal. The value of a wide-character literal containing a single character, escape sequence, or universal character name has a value equal to the numerical value of its encoding in the execution wide-character set unless the character literal has no representation in the execution wide-character set, in which case the value is implementation-defined. The value of a wide-character literal containing multiple characters, escape sequences, or universal character names is implementation-defined. For MSVC, see the **Microsoft specific** section below.
 
 - A character literal that begins with the `u8` prefix is a UTF-8 character literal. The value of a UTF-8 character literal containing a single character, escape sequence, or universal character name has a value equal to its ISO 10646 code point value if it can be represented by a single UTF-8 code unit (corresponding to the C0 Controls and Basic Latin Unicode block). If the value can't be represented by a single UTF-8 code unit, the program is ill-formed. A UTF-8 character literal containing more than one character, escape sequence, or universal character name is ill-formed.
 
@@ -106,6 +109,10 @@ There are three kinds of escape sequences: simple, octal, and hexadecimal. Escap
 | alert (bell) | \\a |
 | hexadecimal | \\xhhh |
 
+An octal escape sequence is a backslash followed by a sequence of one to three octal digits. An octal escape sequence terminates at the first character that's not an octal digit, if encountered sooner than the third digit. The highest possible octal value is `\377`.
+
+A hexadecimal escape sequence is a backslash followed by the character `x`, followed by a sequence of one or more hexadecimal digits. Leading zeroes are ignored. In an ordinary or u8-prefixed character literal, the highest hexadecimal value is 0xFF. In an L-prefixed or u-prefixed wide character literal, the highest hexadecimal value is 0xFFFF. In a U-prefixed wide character literal, the highest hexadecimal value is 0xFFFFFFFF.
+
 This sample code shows some examples of escaped characters using ordinary character literals. The same escape sequence syntax is valid for the other character literal types.
 
 ```cpp
@@ -128,23 +135,26 @@ int main() {
 }
 ```
 
+The backslash character (\\) is a line-continuation character when it's placed at the end of a line. If you want a backslash character to appear as a character literal, you must type two backslashes in a row (`\\`). For more information about the line continuation character, see [Phases of Translation](../preprocessor/phases-of-translation.md).
+
 **Microsoft specific**
 
-To create a value from an ordinary character literal (one without a prefix), the compiler converts the character  or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. To create a **char** value, the compiler takes the low-order byte. To create a **wchar_t** or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.
+To create a value from a narrow multicharacter literal, the compiler converts the character or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. The compiler then converts the integer to the destination type following the usual rules. For example, to create a **char** value, the compiler takes the low-order byte. To create a **wchar_t** or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.
 
 ```cpp
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'
 wchar_t w0 = 'abcd';    // C4305, C4309, truncates to '\x6364'
+int i0     = 'abcd';    // 0x61626364
 ```
 
-An octal escape sequence is a backslash followed by a sequence of up to 3 octal digits. The behavior of an octal escape sequence that appears to contain more than three digits is treated as a 3-digit octal sequence, followed by the subsequent digits as characters, which can give surprising results. For example:
+An octal escape sequence that appears to contain more than three digits is treated as a 3-digit octal sequence, followed by the subsequent digits as characters in a multicharacter literal, which can give surprising results. For example:
 
 ```cpp
 char c1 = '\100';   // '@'
 char c2 = '\1000';  // C4305, C4309, truncates to '0'
 ```
 
-Escape sequences that appear to contain non-octal characters are evaluated as an octal sequence up to the last octal character, followed by the remaining characters. For example:
+Escape sequences that appear to contain non-octal characters are evaluated as an octal sequence up to the last octal character, followed by the remaining characters as the subsequent characters in a multicharacter literal. Warning C4125 is generated if the first non-octal character is a decimal digit. For example:
 
 ```cpp
 char c3 = '\009';   // '9'
@@ -152,14 +162,16 @@ char c4 = '\089';   // C4305, C4309, truncates to '9'
 char c5 = '\qrs';   // C4129, C4305, C4309, truncates to 's'
 ```
 
-A hexadecimal escape sequence is a backslash followed by the character `x`, followed by a sequence of hexadecimal digits. An escape sequence that contains no hexadecimal digits causes compiler error C2153: "hex literals must have at least one hex digit". Leading zeroes are ignored. An escape sequence that appears to have hexadecimal and non-hexadecimal characters is evaluated as a hexadecimal escape sequence up to  the last hexadecimal character, followed by the non-hexadecimal characters. In an ordinary or u8-prefixed character literal, the highest hexadecimal value is 0xFF. In an L-prefixed or u-prefixed wide character literal, the highest hexadecimal value is 0xFFFF. In a U-prefixed wide character literal, the highest hexadecimal value is 0xFFFFFFFF.
+An octal escape sequence that has a higher value than `\377` causes error C2022: '*value-in-decimal*': too big for character.
+
+An escape sequence that appears to have hexadecimal and non-hexadecimal characters is evaluated as a multicharacter literal that contains a hexadecimal escape sequence up to the last hexadecimal character, followed by the non-hexadecimal characters. A hexadecimal escape sequence that contains no hexadecimal digits causes compiler error C2153: "hex literals must have at least one hex digit".
 
 ```cpp
 char c6 = '\x0050'; // 'P'
 char c7 = '\x0pqr'; // C4305, C4309, truncates to 'r'
 ```
 
-If a wide character literal prefixed with `L` contains more than one character, the value is taken from the first character. Subsequent characters are ignored, unlike the behavior of the equivalent ordinary character literal.
+If a wide character literal prefixed with `L` contains a multicharacter sequence, the value is taken from the first character, and the compiler raises warning C4066. Subsequent characters are ignored, unlike the behavior of the equivalent ordinary multicharacter literal.
 
 ```cpp
 wchar_t w1 = L'\100';   // L'@'
@@ -171,9 +183,7 @@ wchar_t w6 = L'\x0050'; // L'P'
 wchar_t w7 = L'\x0pqr'; // C4066 L'\0', pqr ignored
 ```
 
-**END Microsoft specific**
-
-The backslash character (\\) is a line-continuation character when it's placed at the end of a line. If you want a backslash character to appear as a character literal, you must type two backslashes in a row (`\\`). For more information about the line continuation character, see [Phases of Translation](../preprocessor/phases-of-translation.md).
+**End Microsoft specific**
 
 ###  <a name="bkmk_UCN"></a> Universal character names
 
@@ -318,7 +328,7 @@ wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
 ```
 
-You can cause the compiler to emit an error when a string literal is converted to a non_const character pointer when you set the [/Zc:strictStrings (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It is also a good practice to use the **auto** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
+You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [/Zc:strictStrings (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It is also a good practice to use the **auto** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
 
 ```cpp
 auto str = L"hello";
@@ -395,6 +405,6 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 
 ## See also
 
-[Character Sets](../cpp/character-sets.md)<br/>
-[Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)<br/>
+[Character Sets](../cpp/character-sets.md)\
+[Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)\
 [User-Defined Literals](../cpp/user-defined-literals-cpp.md)
