@@ -14,7 +14,7 @@ CMake is integrated in the Visual Studio IDE as a component of the C++ desktop w
 
 ## Other build systems
 
-To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported (for example, make, gyp, SCons, Gradle, Buck, and so on), from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, define custom tasks, or configure IntelliSense for system headers, you add three JSON files:
+To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, define custom tasks, or configure IntelliSense for system headers, you add three JSON files:
 
 | | |
 |-|-|
@@ -24,7 +24,7 @@ To use the Visual Studio IDE with a build system or compiler toolset that is not
 
 ### Configure IntelliSense and browsing hints with CppProperties.json
 
-For IntelliSense and browsing behavior such as **Go to Definition** to work correctly, Visual Studio needs to know which compiler you are using, where the system headers are, and where any additional include files are located if they are not directly in the folder you have opened (the workspace folder). To specify a configuration, you can choose **Manage Congfigurations** from the dropdown in the main toolbar:
+For IntelliSense and browsing behavior such as **Go to Definition** to work correctly, Visual Studio needs to know which compiler you are using, where the system headers are, and where any additional include files are located if they are not directly in the folder you have opened (the workspace folder). To specify a configuration, you can choose **Manage Configurations** from the dropdown in the main toolbar:
 
 ![Manage configurations dropdown](media/manage-configurations-dropdown.png)
 
@@ -58,9 +58,9 @@ If, for example, you choose **x64-Debug**, Visual Studio creates a file called `
 }
 ```
 
-This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree. The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
+This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
 
-If you are using a different compiler, you have to create a custom configuration and environment in *cppproperties.json*. The following example shows a complete *cppproperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
+If you are using a compiler other than Microsoft C++, you have to create a custom configuration and environment in *cppproperties.json*. The following example shows a complete *cppproperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
 
 ```json
 {
@@ -92,6 +92,9 @@ If you are using a different compiler, you have to create a custom configuration
 
 Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *cppproperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its INCLUDE property to specify the value for `includePath`. You can add other paths to this array property as needed. 
 
+> [!WARNING] 
+> There is currently a known issue in which the `INCLUDE` value specified in `environments` is not correctly passed to the `includePath` property. You can work around the issue by adding the complete literal include paths to the `includePath` array.
+
 The `intelliSenseMode` property is set to a value appropriate for GCC. For more information on all these properties, see [CppProperties schema reference](cppproperties-schema-reference.md).
 
 When everything is working correctly, you will see IntelliSense from the GCC headers when you hover over a type:
@@ -102,16 +105,13 @@ If you are not seeing the IntelliSense that you expect, you can troubleshoot by 
 
 ![Diagnostic logging](media/diagnostic-logging.png)
 
-Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use.
-
-> [!WARNING] 
-> There is currently a known issue in which the `INCLUDE` value specified in `environments` is not correctly passed to the `includePath` property. You can work around the issue by adding the complete literal include paths to the `includePath` array.
+Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *cppproperties.json*, try closing the folder and deleting the *.vs* subfolder which contains cached browsing data.
 
 ### Define build tasks with tasks.vs.json
 
 You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and selecting **Configure Tasks**.
 
-![Open Folder Configure Tasks](media/open-folder-config-tasks.png)
+![Open Folder Configure Tasks](media/configure-tasks.png)
 
 This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. To continue with the GCC example, the following example shows a complete *tasks.vs.json* file with as single task that invokes *g++.exe* to build a project. Assume the project contains a single file called *hello.cpp*.
 
@@ -136,7 +136,7 @@ This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual 
 
 ```
 
-You can now run this task by right-clicking on the project node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
+The file is placed in the *.vs* subfolder which you can see if you click on **Show All Files** at the top of **Solution Explorer**. You can run this task by right-clicking on the project node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
 
 You can define many kinds of tasks. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (*cmd.exe* on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
@@ -187,8 +187,7 @@ To start debugging, choose the executable in the debug dropdown, then click the 
 
 ![Launch debugger](media/launch-debugger-gdb.png)
 
-You should see the **Initializing Debugger** dialog and then an external console window that is running your program. 
-
+You should see the **Initializing Debugger** dialog and then an external console window that is running your program.
 
 You can define launch settings for any executable on your computer. The following example launches *7za* and specifies additional arguments, by adding them to the `args` JSON array:
 
