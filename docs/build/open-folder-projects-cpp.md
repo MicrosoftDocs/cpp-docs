@@ -6,6 +6,14 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Open Folder projects for C++
 
+::: moniker range="vs-2015"
+
+The Open Folder feature is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
 ## CMake and Qt
@@ -207,3 +215,5 @@ You can define launch settings for any executable on your computer. The followin
 ```
 
 When you save this file, the new configuration appears in the Debug Target dropdown and you can select it to start the debugger. You can create as many debug configurations as you like, for any number of executables. If you press **F5** now, the debugger will launch and hit any breakpoint you may have already set. All the familiar debugger windows and their functionality are now available.
+
+::: moniker-end
