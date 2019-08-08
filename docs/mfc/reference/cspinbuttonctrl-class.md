@@ -166,7 +166,7 @@ UINT GetAccel(
 Number of elements in the array specified by *pAccel*.
 
 *pAccel*<br/>
-Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures that receives acceleration information.
+Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures that receives acceleration information.
 
 ### Return Value
 
@@ -264,7 +264,7 @@ BOOL SetAccel(
 ### Parameters
 
 *nAccel*<br/>
-Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures specified by *pAccel*.
+Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures specified by *pAccel*.
 
 *pAccel*<br/>
 Pointer to an array of UDACCEL structures, which contain acceleration information. Elements should be sorted in ascending order based on the `nSec` member.

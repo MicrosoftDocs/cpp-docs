@@ -243,7 +243,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 
 ### Remarks
 
-The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) structure contains information about a service.
+The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
 
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status
 
@@ -255,7 +255,7 @@ SERVICE_STATUS m_status;
 
 ### Remarks
 
-The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) structure contains information about a service.
+The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
 
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName
 

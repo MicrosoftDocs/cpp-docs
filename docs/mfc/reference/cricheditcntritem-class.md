@@ -68,7 +68,7 @@ CRichEditCntrItem(
 ### Parameters
 
 *preo*<br/>
-Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.
+Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.
 
 *pContainer*<br/>
 Pointer to the container document that will contain this item. If *pContainer* is NULL, you must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) to add this client item to a document.
@@ -77,7 +77,7 @@ Pointer to the container document that will contain this item. If *pContainer* i
 
 This function does not perform any OLE initialization.
 
-For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure in the Windows SDK.
+For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure in the Windows SDK.
 
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject
 
@@ -90,7 +90,7 @@ void SyncToRichEditObject(REOBJECT& reo);
 ### Parameters
 
 *reo*<br/>
-Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure which describes an OLE item.
+Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item.
 
 ### Remarks
 

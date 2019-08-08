@@ -280,7 +280,7 @@ virtual HRESULT GetClipboardData(
 ### Parameters
 
 *lpchrg*<br/>
-Pointer to the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.
+Pointer to the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.
 
 *dwReco*<br/>
 Clipboard operation flag. Can be one of these values.
@@ -311,7 +311,7 @@ If the return value indicates success, `IRichEditOleCallback::GetClipboardData` 
 
 This is an advanced overridable.
 
-For more information, see [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata), and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) in the Windows SDK and see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.
+For more information, see [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata), and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) in the Windows SDK and see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.
 
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu
 
@@ -333,7 +333,7 @@ The selection type. The selection type values are described in the Remarks secti
 Pointer to a `OLEOBJECT` structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is NULL. The `OLEOBJECT` structure holds a pointer to an OLE object v-table.
 
 *lpchrg*<br/>
-Pointer to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure containing the current selection.
+Pointer to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure containing the current selection.
 
 ### Return Value
 
@@ -357,7 +357,7 @@ The selection type can be any combination of the following flags:
 
 The default implementation returns NULL. This is an advanced overridable.
 
-For more information, see [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) in the Windows SDK.
+For more information, see [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) in the Windows SDK.
 
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument
 
@@ -524,7 +524,7 @@ long GetTextLengthEx(
 ### Parameters
 
 *dwFlags*<br/>
-Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-_gettextlengthex) described in the Windows SDK.
+Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) described in the Windows SDK.
 
 *uCodePage*<br/>
 Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).
