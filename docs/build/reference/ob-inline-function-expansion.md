@@ -11,7 +11,7 @@ Controls inline expansion of functions.
 
 ## Syntax
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > **/Ob**{**0**|**1**|**2**|**3**}
 
@@ -34,7 +34,7 @@ Allows expansion only of functions marked [`inline`](../../cpp/inline-functions-
 **2**\
 The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 **3**\
 Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses. This option specifies more aggressive inlining than **/Ob2**. The **/Ob3** option is available starting in Visual Studio 2019.
@@ -62,7 +62,7 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 1. Modify the **Inline Function Expansion** property.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 The **/Ob3** option isn't available in the **Inline Function Expansion** property. To set **/Ob3**:
 
