@@ -1,104 +1,8 @@
 ---
-title: CRichEditView Class
-ms.date: 11/04/2016
-f1_keywords:
-- CRichEditView
-- AFXRICH/CRichEditView
-- AFXRICH/CRichEditView::CRichEditView
-- AFXRICH/CRichEditView::AdjustDialogPosition
-- AFXRICH/CRichEditView::CanPaste
-- AFXRICH/CRichEditView::DoPaste
-- AFXRICH/CRichEditView::FindText
-- AFXRICH/CRichEditView::FindTextSimple
-- AFXRICH/CRichEditView::GetCharFormatSelection
-- AFXRICH/CRichEditView::GetDocument
-- AFXRICH/CRichEditView::GetInPlaceActiveItem
-- AFXRICH/CRichEditView::GetMargins
-- AFXRICH/CRichEditView::GetPageRect
-- AFXRICH/CRichEditView::GetPaperSize
-- AFXRICH/CRichEditView::GetParaFormatSelection
-- AFXRICH/CRichEditView::GetPrintRect
-- AFXRICH/CRichEditView::GetPrintWidth
-- AFXRICH/CRichEditView::GetRichEditCtrl
-- AFXRICH/CRichEditView::GetSelectedItem
-- AFXRICH/CRichEditView::GetTextLength
-- AFXRICH/CRichEditView::GetTextLengthEx
-- AFXRICH/CRichEditView::InsertFileAsObject
-- AFXRICH/CRichEditView::InsertItem
-- AFXRICH/CRichEditView::IsRichEditFormat
-- AFXRICH/CRichEditView::OnCharEffect
-- AFXRICH/CRichEditView::OnParaAlign
-- AFXRICH/CRichEditView::OnUpdateCharEffect
-- AFXRICH/CRichEditView::OnUpdateParaAlign
-- AFXRICH/CRichEditView::PrintInsideRect
-- AFXRICH/CRichEditView::PrintPage
-- AFXRICH/CRichEditView::SetCharFormat
-- AFXRICH/CRichEditView::SetMargins
-- AFXRICH/CRichEditView::SetPaperSize
-- AFXRICH/CRichEditView::SetParaFormat
-- AFXRICH/CRichEditView::TextNotFound
-- AFXRICH/CRichEditView::GetClipboardData
-- AFXRICH/CRichEditView::GetContextMenu
-- AFXRICH/CRichEditView::IsSelected
-- AFXRICH/CRichEditView::OnFindNext
-- AFXRICH/CRichEditView::OnInitialUpdate
-- AFXRICH/CRichEditView::OnPasteNativeObject
-- AFXRICH/CRichEditView::OnPrinterChanged
-- AFXRICH/CRichEditView::OnReplaceAll
-- AFXRICH/CRichEditView::OnReplaceSel
-- AFXRICH/CRichEditView::OnTextNotFound
-- AFXRICH/CRichEditView::QueryAcceptData
-- AFXRICH/CRichEditView::WrapChanged
-- AFXRICH/CRichEditView::m_nBulletIndent
-- AFXRICH/CRichEditView::m_nWordWrap
-helpviewer_keywords:
-- CRichEditView [MFC], CRichEditView
-- CRichEditView [MFC], AdjustDialogPosition
-- CRichEditView [MFC], CanPaste
-- CRichEditView [MFC], DoPaste
-- CRichEditView [MFC], FindText
-- CRichEditView [MFC], FindTextSimple
-- CRichEditView [MFC], GetCharFormatSelection
-- CRichEditView [MFC], GetDocument
-- CRichEditView [MFC], GetInPlaceActiveItem
-- CRichEditView [MFC], GetMargins
-- CRichEditView [MFC], GetPageRect
-- CRichEditView [MFC], GetPaperSize
-- CRichEditView [MFC], GetParaFormatSelection
-- CRichEditView [MFC], GetPrintRect
-- CRichEditView [MFC], GetPrintWidth
-- CRichEditView [MFC], GetRichEditCtrl
-- CRichEditView [MFC], GetSelectedItem
-- CRichEditView [MFC], GetTextLength
-- CRichEditView [MFC], GetTextLengthEx
-- CRichEditView [MFC], InsertFileAsObject
-- CRichEditView [MFC], InsertItem
-- CRichEditView [MFC], IsRichEditFormat
-- CRichEditView [MFC], OnCharEffect
-- CRichEditView [MFC], OnParaAlign
-- CRichEditView [MFC], OnUpdateCharEffect
-- CRichEditView [MFC], OnUpdateParaAlign
-- CRichEditView [MFC], PrintInsideRect
-- CRichEditView [MFC], PrintPage
-- CRichEditView [MFC], SetCharFormat
-- CRichEditView [MFC], SetMargins
-- CRichEditView [MFC], SetPaperSize
-- CRichEditView [MFC], SetParaFormat
-- CRichEditView [MFC], TextNotFound
-- CRichEditView [MFC], GetClipboardData
-- CRichEditView [MFC], GetContextMenu
-- CRichEditView [MFC], IsSelected
-- CRichEditView [MFC], OnFindNext
-- CRichEditView [MFC], OnInitialUpdate
-- CRichEditView [MFC], OnPasteNativeObject
-- CRichEditView [MFC], OnPrinterChanged
-- CRichEditView [MFC], OnReplaceAll
-- CRichEditView [MFC], OnReplaceSel
-- CRichEditView [MFC], OnTextNotFound
-- CRichEditView [MFC], QueryAcceptData
-- CRichEditView [MFC], WrapChanged
-- CRichEditView [MFC], m_nBulletIndent
-- CRichEditView [MFC], m_nWordWrap
+title: "CRichEditView Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CRichEditView", "AFXRICH/CRichEditView", "AFXRICH/CRichEditView::CRichEditView", "AFXRICH/CRichEditView::AdjustDialogPosition", "AFXRICH/CRichEditView::CanPaste", "AFXRICH/CRichEditView::DoPaste", "AFXRICH/CRichEditView::FindText", "AFXRICH/CRichEditView::FindTextSimple", "AFXRICH/CRichEditView::GetCharFormatSelection", "AFXRICH/CRichEditView::GetDocument", "AFXRICH/CRichEditView::GetInPlaceActiveItem", "AFXRICH/CRichEditView::GetMargins", "AFXRICH/CRichEditView::GetPageRect", "AFXRICH/CRichEditView::GetPaperSize", "AFXRICH/CRichEditView::GetParaFormatSelection", "AFXRICH/CRichEditView::GetPrintRect", "AFXRICH/CRichEditView::GetPrintWidth", "AFXRICH/CRichEditView::GetRichEditCtrl", "AFXRICH/CRichEditView::GetSelectedItem", "AFXRICH/CRichEditView::GetTextLength", "AFXRICH/CRichEditView::GetTextLengthEx", "AFXRICH/CRichEditView::InsertFileAsObject", "AFXRICH/CRichEditView::InsertItem", "AFXRICH/CRichEditView::IsRichEditFormat", "AFXRICH/CRichEditView::OnCharEffect", "AFXRICH/CRichEditView::OnParaAlign", "AFXRICH/CRichEditView::OnUpdateCharEffect", "AFXRICH/CRichEditView::OnUpdateParaAlign", "AFXRICH/CRichEditView::PrintInsideRect", "AFXRICH/CRichEditView::PrintPage", "AFXRICH/CRichEditView::SetCharFormat", "AFXRICH/CRichEditView::SetMargins", "AFXRICH/CRichEditView::SetPaperSize", "AFXRICH/CRichEditView::SetParaFormat", "AFXRICH/CRichEditView::TextNotFound", "AFXRICH/CRichEditView::GetClipboardData", "AFXRICH/CRichEditView::GetContextMenu", "AFXRICH/CRichEditView::IsSelected", "AFXRICH/CRichEditView::OnFindNext", "AFXRICH/CRichEditView::OnInitialUpdate", "AFXRICH/CRichEditView::OnPasteNativeObject", "AFXRICH/CRichEditView::OnPrinterChanged", "AFXRICH/CRichEditView::OnReplaceAll", "AFXRICH/CRichEditView::OnReplaceSel", "AFXRICH/CRichEditView::OnTextNotFound", "AFXRICH/CRichEditView::QueryAcceptData", "AFXRICH/CRichEditView::WrapChanged", "AFXRICH/CRichEditView::m_nBulletIndent", "AFXRICH/CRichEditView::m_nWordWrap"]
+helpviewer_keywords: ["CRichEditView [MFC], CRichEditView", "CRichEditView [MFC], AdjustDialogPosition", "CRichEditView [MFC], CanPaste", "CRichEditView [MFC], DoPaste", "CRichEditView [MFC], FindText", "CRichEditView [MFC], FindTextSimple", "CRichEditView [MFC], GetCharFormatSelection", "CRichEditView [MFC], GetDocument", "CRichEditView [MFC], GetInPlaceActiveItem", "CRichEditView [MFC], GetMargins", "CRichEditView [MFC], GetPageRect", "CRichEditView [MFC], GetPaperSize", "CRichEditView [MFC], GetParaFormatSelection", "CRichEditView [MFC], GetPrintRect", "CRichEditView [MFC], GetPrintWidth", "CRichEditView [MFC], GetRichEditCtrl", "CRichEditView [MFC], GetSelectedItem", "CRichEditView [MFC], GetTextLength", "CRichEditView [MFC], GetTextLengthEx", "CRichEditView [MFC], InsertFileAsObject", "CRichEditView [MFC], InsertItem", "CRichEditView [MFC], IsRichEditFormat", "CRichEditView [MFC], OnCharEffect", "CRichEditView [MFC], OnParaAlign", "CRichEditView [MFC], OnUpdateCharEffect", "CRichEditView [MFC], OnUpdateParaAlign", "CRichEditView [MFC], PrintInsideRect", "CRichEditView [MFC], PrintPage", "CRichEditView [MFC], SetCharFormat", "CRichEditView [MFC], SetMargins", "CRichEditView [MFC], SetPaperSize", "CRichEditView [MFC], SetParaFormat", "CRichEditView [MFC], TextNotFound", "CRichEditView [MFC], GetClipboardData", "CRichEditView [MFC], GetContextMenu", "CRichEditView [MFC], IsSelected", "CRichEditView [MFC], OnFindNext", "CRichEditView [MFC], OnInitialUpdate", "CRichEditView [MFC], OnPasteNativeObject", "CRichEditView [MFC], OnPrinterChanged", "CRichEditView [MFC], OnReplaceAll", "CRichEditView [MFC], OnReplaceSel", "CRichEditView [MFC], OnTextNotFound", "CRichEditView [MFC], QueryAcceptData", "CRichEditView [MFC], WrapChanged", "CRichEditView [MFC], m_nBulletIndent", "CRichEditView [MFC], m_nWordWrap"]
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
 ---
 # CRichEditView Class
@@ -376,7 +280,7 @@ virtual HRESULT GetClipboardData(
 ### Parameters
 
 *lpchrg*<br/>
-Pointer to the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.
+Pointer to the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.
 
 *dwReco*<br/>
 Clipboard operation flag. Can be one of these values.
@@ -407,7 +311,7 @@ If the return value indicates success, `IRichEditOleCallback::GetClipboardData` 
 
 This is an advanced overridable.
 
-For more information, see [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata), and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) in the Windows SDK and see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.
+For more information, see [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata), and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) in the Windows SDK and see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.
 
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu
 
@@ -429,7 +333,7 @@ The selection type. The selection type values are described in the Remarks secti
 Pointer to a `OLEOBJECT` structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is NULL. The `OLEOBJECT` structure holds a pointer to an OLE object v-table.
 
 *lpchrg*<br/>
-Pointer to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure containing the current selection.
+Pointer to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure containing the current selection.
 
 ### Return Value
 
@@ -453,7 +357,7 @@ The selection type can be any combination of the following flags:
 
 The default implementation returns NULL. This is an advanced overridable.
 
-For more information, see [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) in the Windows SDK.
+For more information, see [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) in the Windows SDK.
 
 ##  <a name="getdocument"></a>  CRichEditView::GetDocument
 
@@ -620,7 +524,7 @@ long GetTextLengthEx(
 ### Parameters
 
 *dwFlags*<br/>
-Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) described in the Windows SDK.
+Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-_gettextlengthex) described in the Windows SDK.
 
 *uCodePage*<br/>
 Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).

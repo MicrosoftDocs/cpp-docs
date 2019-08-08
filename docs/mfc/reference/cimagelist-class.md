@@ -1,78 +1,8 @@
 ---
-title: CImageList Class
-ms.date: 11/04/2016
-f1_keywords:
-- CImageList
-- AFXCMN/CImageList
-- AFXCMN/CImageList::CImageList
-- AFXCMN/CImageList::Add
-- AFXCMN/CImageList::Attach
-- AFXCMN/CImageList::BeginDrag
-- AFXCMN/CImageList::Copy
-- AFXCMN/CImageList::Create
-- AFXCMN/CImageList::DeleteImageList
-- AFXCMN/CImageList::DeleteTempMap
-- AFXCMN/CImageList::Detach
-- AFXCMN/CImageList::DragEnter
-- AFXCMN/CImageList::DragLeave
-- AFXCMN/CImageList::DragMove
-- AFXCMN/CImageList::DragShowNolock
-- AFXCMN/CImageList::Draw
-- AFXCMN/CImageList::DrawEx
-- AFXCMN/CImageList::DrawIndirect
-- AFXCMN/CImageList::EndDrag
-- AFXCMN/CImageList::ExtractIcon
-- AFXCMN/CImageList::FromHandle
-- AFXCMN/CImageList::FromHandlePermanent
-- AFXCMN/CImageList::GetBkColor
-- AFXCMN/CImageList::GetDragImage
-- AFXCMN/CImageList::GetImageCount
-- AFXCMN/CImageList::GetImageInfo
-- AFXCMN/CImageList::GetSafeHandle
-- AFXCMN/CImageList::Read
-- AFXCMN/CImageList::Remove
-- AFXCMN/CImageList::Replace
-- AFXCMN/CImageList::SetBkColor
-- AFXCMN/CImageList::SetDragCursorImage
-- AFXCMN/CImageList::SetImageCount
-- AFXCMN/CImageList::SetOverlayImage
-- AFXCMN/CImageList::Write
-- AFXCMN/CImageList::m_hImageList
-helpviewer_keywords:
-- CImageList [MFC], CImageList
-- CImageList [MFC], Add
-- CImageList [MFC], Attach
-- CImageList [MFC], BeginDrag
-- CImageList [MFC], Copy
-- CImageList [MFC], Create
-- CImageList [MFC], DeleteImageList
-- CImageList [MFC], DeleteTempMap
-- CImageList [MFC], Detach
-- CImageList [MFC], DragEnter
-- CImageList [MFC], DragLeave
-- CImageList [MFC], DragMove
-- CImageList [MFC], DragShowNolock
-- CImageList [MFC], Draw
-- CImageList [MFC], DrawEx
-- CImageList [MFC], DrawIndirect
-- CImageList [MFC], EndDrag
-- CImageList [MFC], ExtractIcon
-- CImageList [MFC], FromHandle
-- CImageList [MFC], FromHandlePermanent
-- CImageList [MFC], GetBkColor
-- CImageList [MFC], GetDragImage
-- CImageList [MFC], GetImageCount
-- CImageList [MFC], GetImageInfo
-- CImageList [MFC], GetSafeHandle
-- CImageList [MFC], Read
-- CImageList [MFC], Remove
-- CImageList [MFC], Replace
-- CImageList [MFC], SetBkColor
-- CImageList [MFC], SetDragCursorImage
-- CImageList [MFC], SetImageCount
-- CImageList [MFC], SetOverlayImage
-- CImageList [MFC], Write
-- CImageList [MFC], m_hImageList
+title: "CImageList Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CImageList", "AFXCMN/CImageList", "AFXCMN/CImageList::CImageList", "AFXCMN/CImageList::Add", "AFXCMN/CImageList::Attach", "AFXCMN/CImageList::BeginDrag", "AFXCMN/CImageList::Copy", "AFXCMN/CImageList::Create", "AFXCMN/CImageList::DeleteImageList", "AFXCMN/CImageList::DeleteTempMap", "AFXCMN/CImageList::Detach", "AFXCMN/CImageList::DragEnter", "AFXCMN/CImageList::DragLeave", "AFXCMN/CImageList::DragMove", "AFXCMN/CImageList::DragShowNolock", "AFXCMN/CImageList::Draw", "AFXCMN/CImageList::DrawEx", "AFXCMN/CImageList::DrawIndirect", "AFXCMN/CImageList::EndDrag", "AFXCMN/CImageList::ExtractIcon", "AFXCMN/CImageList::FromHandle", "AFXCMN/CImageList::FromHandlePermanent", "AFXCMN/CImageList::GetBkColor", "AFXCMN/CImageList::GetDragImage", "AFXCMN/CImageList::GetImageCount", "AFXCMN/CImageList::GetImageInfo", "AFXCMN/CImageList::GetSafeHandle", "AFXCMN/CImageList::Read", "AFXCMN/CImageList::Remove", "AFXCMN/CImageList::Replace", "AFXCMN/CImageList::SetBkColor", "AFXCMN/CImageList::SetDragCursorImage", "AFXCMN/CImageList::SetImageCount", "AFXCMN/CImageList::SetOverlayImage", "AFXCMN/CImageList::Write", "AFXCMN/CImageList::m_hImageList"]
+helpviewer_keywords: ["CImageList [MFC], CImageList", "CImageList [MFC], Add", "CImageList [MFC], Attach", "CImageList [MFC], BeginDrag", "CImageList [MFC], Copy", "CImageList [MFC], Create", "CImageList [MFC], DeleteImageList", "CImageList [MFC], DeleteTempMap", "CImageList [MFC], Detach", "CImageList [MFC], DragEnter", "CImageList [MFC], DragLeave", "CImageList [MFC], DragMove", "CImageList [MFC], DragShowNolock", "CImageList [MFC], Draw", "CImageList [MFC], DrawEx", "CImageList [MFC], DrawIndirect", "CImageList [MFC], EndDrag", "CImageList [MFC], ExtractIcon", "CImageList [MFC], FromHandle", "CImageList [MFC], FromHandlePermanent", "CImageList [MFC], GetBkColor", "CImageList [MFC], GetDragImage", "CImageList [MFC], GetImageCount", "CImageList [MFC], GetImageInfo", "CImageList [MFC], GetSafeHandle", "CImageList [MFC], Read", "CImageList [MFC], Remove", "CImageList [MFC], Replace", "CImageList [MFC], SetBkColor", "CImageList [MFC], SetDragCursorImage", "CImageList [MFC], SetImageCount", "CImageList [MFC], SetOverlayImage", "CImageList [MFC], Write", "CImageList [MFC], m_hImageList"]
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
 ---
 # CImageList Class
@@ -676,7 +606,7 @@ BOOL DrawIndirect(
 ### Parameters
 
 *pimldp*<br/>
-A pointer to an [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure that contains information about the draw operation.
+A pointer to an [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure that contains information about the draw operation.
 
 *pDC*<br/>
 A pointer to the destination device context. You must delete this [CDC](../../mfc/reference/cdc-class.md) object when you are done with it.
@@ -696,12 +626,12 @@ A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- an
 *fStyle*<br/>
 Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, ILD_NORMAL, draws the image using the background color for the image list. If the background color is the CLR_NONE value, the image is drawn transparently using a mask.
 
-Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure.
+Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.
 
 *dwRop*<br/>
 Value specifying a raster-operation code. These codes define how the color data for the source rectangle will be combined with the color data for the destination rectangle to achieve the final color. MFC's default implementation, SRCCOPY, copies the source rectangle directly to the destination rectangle. This parameter is ignored if the *fStyle* parameter does not include the ILD_ROP flag.
 
-Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure.
+Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.
 
 *rgbBack*<br/>
 The image background color, by default CLR_DEFAULT. This parameter can be an application-defined RGB value or one of the following values:
@@ -909,7 +839,7 @@ BOOL GetImageInfo(
 Zero-based index of the image.
 
 *pImageInfo*<br/>
-Pointer to an [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-imageinfo) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.
+Pointer to an [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-_imageinfo) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.
 
 ### Return Value
 

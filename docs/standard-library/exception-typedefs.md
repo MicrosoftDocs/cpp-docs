@@ -1,10 +1,7 @@
 ---
-title: '&lt;exception&gt; typedefs'
-ms.date: 11/04/2016
-f1_keywords:
-- exception/std::exception_ptr
-- exception/std::terminate_handler
-- exception/std::unexpected_handler
+title: "&lt;exception&gt; typedefs"
+ms.date: "11/04/2016"
+f1_keywords: ["exception/std::exception_ptr", "exception/std::terminate_handler", "exception/std::unexpected_handler"]
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
 ---
 # &lt;exception&gt; typedefs
@@ -21,7 +18,7 @@ typedef unspecified exception_ptr;
 
 An unspecified internal class that is used to implement the `exception_ptr` type.
 
-Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
+Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-_exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
 
 When you declare an `exception_ptr` variable, the variable is not associated with any exception. That is, its exception reference field is NULL. Such an `exception_ptr` object is called a *null exception_ptr*.
 

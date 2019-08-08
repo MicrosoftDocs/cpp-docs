@@ -1,30 +1,8 @@
 ---
-title: CHttpFile Class
-ms.date: 11/04/2016
-f1_keywords:
-- CHttpFile
-- AFXINET/CHttpFile
-- AFXINET/CHttpFile::CHttpFile
-- AFXINET/CHttpFile::AddRequestHeaders
-- AFXINET/CHttpFile::EndRequest
-- AFXINET/CHttpFile::GetFileURL
-- AFXINET/CHttpFile::GetObject
-- AFXINET/CHttpFile::GetVerb
-- AFXINET/CHttpFile::QueryInfo
-- AFXINET/CHttpFile::QueryInfoStatusCode
-- AFXINET/CHttpFile::SendRequest
-- AFXINET/CHttpFile::SendRequestEx
-helpviewer_keywords:
-- CHttpFile [MFC], CHttpFile
-- CHttpFile [MFC], AddRequestHeaders
-- CHttpFile [MFC], EndRequest
-- CHttpFile [MFC], GetFileURL
-- CHttpFile [MFC], GetObject
-- CHttpFile [MFC], GetVerb
-- CHttpFile [MFC], QueryInfo
-- CHttpFile [MFC], QueryInfoStatusCode
-- CHttpFile [MFC], SendRequest
-- CHttpFile [MFC], SendRequestEx
+title: "CHttpFile Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CHttpFile", "AFXINET/CHttpFile", "AFXINET/CHttpFile::CHttpFile", "AFXINET/CHttpFile::AddRequestHeaders", "AFXINET/CHttpFile::EndRequest", "AFXINET/CHttpFile::GetFileURL", "AFXINET/CHttpFile::GetObject", "AFXINET/CHttpFile::GetVerb", "AFXINET/CHttpFile::QueryInfo", "AFXINET/CHttpFile::QueryInfoStatusCode", "AFXINET/CHttpFile::SendRequest", "AFXINET/CHttpFile::SendRequestEx"]
+helpviewer_keywords: ["CHttpFile [MFC], CHttpFile", "CHttpFile [MFC], AddRequestHeaders", "CHttpFile [MFC], EndRequest", "CHttpFile [MFC], GetFileURL", "CHttpFile [MFC], GetObject", "CHttpFile [MFC], GetVerb", "CHttpFile [MFC], QueryInfo", "CHttpFile [MFC], QueryInfoStatusCode", "CHttpFile [MFC], SendRequest", "CHttpFile [MFC], SendRequestEx"]
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
 ---
 # CHttpFile Class
@@ -195,7 +173,7 @@ BOOL EndRequest(
 Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) in the Windows SDK.
 
 *lpBuffIn*<br/>
-Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) that describes the input buffer used for the operation.
+Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) that describes the input buffer used for the operation.
 
 *dwContext*<br/>
 The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.
@@ -485,7 +463,7 @@ Flags describing the operation. For a list of appropriate flags, see [HttpSendRe
 The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.
 
 *lpBuffIn*<br/>
-Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) that describes the input buffer used for the operation.
+Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) that describes the input buffer used for the operation.
 
 *lpBuffOut*<br/>
 Pointer to an initialized INTERNET_BUFFERS that describes the output buffer used for the operation.

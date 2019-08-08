@@ -1,46 +1,8 @@
 ---
-title: CRegKey Class
-ms.date: 11/04/2016
-f1_keywords:
-- CRegKey
-- ATLBASE/ATL::CRegKey
-- ATLBASE/ATL::CRegKey::CRegKey
-- ATLBASE/ATL::CRegKey::Attach
-- ATLBASE/ATL::CRegKey::Close
-- ATLBASE/ATL::CRegKey::Create
-- ATLBASE/ATL::CRegKey::DeleteSubKey
-- ATLBASE/ATL::CRegKey::DeleteValue
-- ATLBASE/ATL::CRegKey::Detach
-- ATLBASE/ATL::CRegKey::EnumKey
-- ATLBASE/ATL::CRegKey::Flush
-- ATLBASE/ATL::CRegKey::GetKeySecurity
-- ATLBASE/ATL::CRegKey::NotifyChangeKeyValue
-- ATLBASE/ATL::CRegKey::Open
-- ATLBASE/ATL::CRegKey::QueryBinaryValue
-- ATLBASE/ATL::CRegKey::QueryDWORDValue
-- ATLBASE/ATL::CRegKey::QueryGUIDValue
-- ATLBASE/ATL::CRegKey::QueryMultiStringValue
-- ATLBASE/ATL::CRegKey::QueryQWORDValue
-- ATLBASE/ATL::CRegKey::QueryStringValue
-- ATLBASE/ATL::CRegKey::QueryValue
-- ATLBASE/ATL::CRegKey::RecurseDeleteKey
-- ATLBASE/ATL::CRegKey::SetBinaryValue
-- ATLBASE/ATL::CRegKey::SetDWORDValue
-- ATLBASE/ATL::CRegKey::SetGUIDValue
-- ATLBASE/ATL::CRegKey::SetKeySecurity
-- ATLBASE/ATL::CRegKey::SetKeyValue
-- ATLBASE/ATL::CRegKey::SetMultiStringValue
-- ATLBASE/ATL::CRegKey::SetQWORDValue
-- ATLBASE/ATL::CRegKey::SetStringValue
-- ATLBASE/ATL::CRegKey::SetValue
-- ATLBASE/ATL::CRegKey::m_hKey
-- ATLBASE/ATL::CRegKey::m_pTM
-helpviewer_keywords:
-- CRegKey class
-- ATL, registry
-- registry, deleting values
-- registry, writing to
-- registry, deleting keys
+title: "CRegKey Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CRegKey", "ATLBASE/ATL::CRegKey", "ATLBASE/ATL::CRegKey::CRegKey", "ATLBASE/ATL::CRegKey::Attach", "ATLBASE/ATL::CRegKey::Close", "ATLBASE/ATL::CRegKey::Create", "ATLBASE/ATL::CRegKey::DeleteSubKey", "ATLBASE/ATL::CRegKey::DeleteValue", "ATLBASE/ATL::CRegKey::Detach", "ATLBASE/ATL::CRegKey::EnumKey", "ATLBASE/ATL::CRegKey::Flush", "ATLBASE/ATL::CRegKey::GetKeySecurity", "ATLBASE/ATL::CRegKey::NotifyChangeKeyValue", "ATLBASE/ATL::CRegKey::Open", "ATLBASE/ATL::CRegKey::QueryBinaryValue", "ATLBASE/ATL::CRegKey::QueryDWORDValue", "ATLBASE/ATL::CRegKey::QueryGUIDValue", "ATLBASE/ATL::CRegKey::QueryMultiStringValue", "ATLBASE/ATL::CRegKey::QueryQWORDValue", "ATLBASE/ATL::CRegKey::QueryStringValue", "ATLBASE/ATL::CRegKey::QueryValue", "ATLBASE/ATL::CRegKey::RecurseDeleteKey", "ATLBASE/ATL::CRegKey::SetBinaryValue", "ATLBASE/ATL::CRegKey::SetDWORDValue", "ATLBASE/ATL::CRegKey::SetGUIDValue", "ATLBASE/ATL::CRegKey::SetKeySecurity", "ATLBASE/ATL::CRegKey::SetKeyValue", "ATLBASE/ATL::CRegKey::SetMultiStringValue", "ATLBASE/ATL::CRegKey::SetQWORDValue", "ATLBASE/ATL::CRegKey::SetStringValue", "ATLBASE/ATL::CRegKey::SetValue", "ATLBASE/ATL::CRegKey::m_hKey", "ATLBASE/ATL::CRegKey::m_pTM"]
+helpviewer_keywords: ["CRegKey class", "ATL, registry", "registry, deleting values", "registry, writing to", "registry, deleting keys"]
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
 ---
 # CRegKey Class
@@ -889,7 +851,7 @@ Specifies the components of the security descriptor to set. The value can be a c
 |SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](/windows/desktop/secauthz/privileges) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|
 
 *psd*<br/>
-Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure that specifies the security attributes to set for the specified key.
+Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure that specifies the security attributes to set for the specified key.
 
 ### Return Value
 

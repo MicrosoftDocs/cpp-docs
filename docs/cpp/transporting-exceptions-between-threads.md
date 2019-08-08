@@ -1,18 +1,7 @@
 ---
-title: Transporting exceptions between threads
-ms.date: 05/07/2019
-helpviewer_keywords:
-- std::current_exception
-- transporting exceptions between threads
-- std::copy_exception
-- exception_ptr
-- std::exception_ptr
-- std::rethrow_exception
-- current_exception
-- transport exceptions between threads
-- copy_exception
-- rethrow_exception
-- move exceptions between threads
+title: "Transporting exceptions between threads"
+ms.date: "05/07/2019"
+helpviewer_keywords: ["std::current_exception", "transporting exceptions between threads", "std::copy_exception", "exception_ptr", "std::exception_ptr", "std::rethrow_exception", "current_exception", "transport exceptions between threads", "copy_exception", "rethrow_exception", "move exceptions between threads"]
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
 ---
 # Transporting exceptions between threads
@@ -90,7 +79,7 @@ The following sections describe how to transport exceptions by using the `except
 
 ## exception_ptr Type
 
-Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
+Use an `exception_ptr` object to reference the current exception or an instance of a user-specified exception. In the Microsoft implementation, an exception is represented by an [EXCEPTION_RECORD](/windows/desktop/api/winnt/ns-winnt-_exception_record) structure. Each `exception_ptr` object includes an exception reference field that points to a copy of the `EXCEPTION_RECORD` structure that represents the exception.
 
 When you declare an `exception_ptr` variable, the variable is not associated with any exception. That is, its exception reference field is NULL. Such an `exception_ptr` object is called a *null exception_ptr*.
 

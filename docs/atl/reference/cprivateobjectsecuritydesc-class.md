@@ -1,16 +1,8 @@
 ---
-title: CPrivateObjectSecurityDesc Class
-ms.date: 11/04/2016
-f1_keywords:
-- CPrivateObjectSecurityDesc
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get
-- ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set
-helpviewer_keywords:
-- CPrivateObjectSecurityDesc class
+title: "CPrivateObjectSecurityDesc Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set"]
+helpviewer_keywords: ["CPrivateObjectSecurityDesc class"]
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
 ---
 # CPrivateObjectSecurityDesc Class
@@ -87,7 +79,7 @@ Pointer to a `GUID` structure that identifies the type of object associated with
 Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 ### Return Value
 
@@ -158,7 +150,7 @@ Specifies whether the new object can contain other objects. A value of true indi
 Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 *ObjectType*<br/>
 Pointer to a `GUID` structure that identifies the type of object associated with the current object. Set *ObjectType* to NULL if the object does not have a GUID.
@@ -253,7 +245,7 @@ A set of bit flags that indicate the parts of the security descriptor to set. Th
 Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object. The parts of this security descriptor indicated by the *si* parameter are applied to the object's security descriptor.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 *Token*<br/>
 Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.
@@ -271,7 +263,7 @@ The second method permits specifying the object type GUID of the object or contr
 
 ## See also
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc Class](../../atl/reference/csecuritydesc-class.md)

@@ -1,18 +1,8 @@
 ---
-title: CRichEditDoc Class
-ms.date: 11/04/2016
-f1_keywords:
-- CRichEditDoc
-- AFXRICH/CRichEditDoc
-- AFXRICH/CRichEditDoc::CreateClientItem
-- AFXRICH/CRichEditDoc::GetStreamFormat
-- AFXRICH/CRichEditDoc::GetView
-- AFXRICH/CRichEditDoc::m_bRTF
-helpviewer_keywords:
-- CRichEditDoc [MFC], CreateClientItem
-- CRichEditDoc [MFC], GetStreamFormat
-- CRichEditDoc [MFC], GetView
-- CRichEditDoc [MFC], m_bRTF
+title: "CRichEditDoc Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CRichEditDoc", "AFXRICH/CRichEditDoc", "AFXRICH/CRichEditDoc::CreateClientItem", "AFXRICH/CRichEditDoc::GetStreamFormat", "AFXRICH/CRichEditDoc::GetView", "AFXRICH/CRichEditDoc::m_bRTF"]
+helpviewer_keywords: ["CRichEditDoc [MFC], CreateClientItem", "CRichEditDoc [MFC], GetStreamFormat", "CRichEditDoc [MFC], GetView", "CRichEditDoc [MFC], m_bRTF"]
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
 ---
 # CRichEditDoc Class
@@ -82,7 +72,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Parameters
 
 *preo*<br/>
-Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.
+Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.
 
 ### Return Value
 
@@ -92,7 +82,7 @@ Pointer to a new [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class
 
 This function does not perform any OLE initialization.
 
-For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure in the Windows SDK.
+For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure in the Windows SDK.
 
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
 

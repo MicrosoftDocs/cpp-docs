@@ -1,16 +1,8 @@
 ---
-title: CSacl Class
-ms.date: 11/04/2016
-f1_keywords:
-- CSacl
-- ATLSECURITY/ATL::CSacl
-- ATLSECURITY/ATL::CSacl::CSacl
-- ATLSECURITY/ATL::CSacl::AddAuditAce
-- ATLSECURITY/ATL::CSacl::GetAceCount
-- ATLSECURITY/ATL::CSacl::RemoveAce
-- ATLSECURITY/ATL::CSacl::RemoveAllAces
-helpviewer_keywords:
-- CSacl class
+title: "CSacl Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CSacl", "ATLSECURITY/ATL::CSacl", "ATLSECURITY/ATL::CSacl::CSacl", "ATLSECURITY/ATL::CSacl::AddAuditAce", "ATLSECURITY/ATL::CSacl::GetAceCount", "ATLSECURITY/ATL::CSacl::RemoveAce", "ATLSECURITY/ATL::CSacl::RemoveAllAces"]
+helpviewer_keywords: ["CSacl class"]
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
 ---
 # CSacl Class
@@ -123,7 +115,7 @@ Returns TRUE if the ACE is added to the `CSacl` object, FALSE on failure.
 
 A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
 
 ##  <a name="csacl"></a>  CSacl::CSacl
 

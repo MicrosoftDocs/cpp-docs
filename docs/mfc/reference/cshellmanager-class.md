@@ -1,32 +1,8 @@
 ---
-title: CShellManager Class
-ms.date: 11/04/2016
-f1_keywords:
-- CShellManager
-- AFXSHELLMANAGER/CShellManager
-- AFXSHELLMANAGER/CShellManager::CShellManager
-- AFXSHELLMANAGER/CShellManager::BrowseForFolder
-- AFXSHELLMANAGER/CShellManager::ConcatenateItem
-- AFXSHELLMANAGER/CShellManager::CopyItem
-- AFXSHELLMANAGER/CShellManager::CreateItem
-- AFXSHELLMANAGER/CShellManager::FreeItem
-- AFXSHELLMANAGER/CShellManager::GetItemCount
-- AFXSHELLMANAGER/CShellManager::GetItemSize
-- AFXSHELLMANAGER/CShellManager::GetNextItem
-- AFXSHELLMANAGER/CShellManager::GetParentItem
-- AFXSHELLMANAGER/CShellManager::ItemFromPath
-helpviewer_keywords:
-- CShellManager [MFC], CShellManager
-- CShellManager [MFC], BrowseForFolder
-- CShellManager [MFC], ConcatenateItem
-- CShellManager [MFC], CopyItem
-- CShellManager [MFC], CreateItem
-- CShellManager [MFC], FreeItem
-- CShellManager [MFC], GetItemCount
-- CShellManager [MFC], GetItemSize
-- CShellManager [MFC], GetNextItem
-- CShellManager [MFC], GetParentItem
-- CShellManager [MFC], ItemFromPath
+title: "CShellManager Class"
+ms.date: "11/04/2016"
+f1_keywords: ["CShellManager", "AFXSHELLMANAGER/CShellManager", "AFXSHELLMANAGER/CShellManager::CShellManager", "AFXSHELLMANAGER/CShellManager::BrowseForFolder", "AFXSHELLMANAGER/CShellManager::ConcatenateItem", "AFXSHELLMANAGER/CShellManager::CopyItem", "AFXSHELLMANAGER/CShellManager::CreateItem", "AFXSHELLMANAGER/CShellManager::FreeItem", "AFXSHELLMANAGER/CShellManager::GetItemCount", "AFXSHELLMANAGER/CShellManager::GetItemSize", "AFXSHELLMANAGER/CShellManager::GetNextItem", "AFXSHELLMANAGER/CShellManager::GetParentItem", "AFXSHELLMANAGER/CShellManager::ItemFromPath"]
+helpviewer_keywords: ["CShellManager [MFC], CShellManager", "CShellManager [MFC], BrowseForFolder", "CShellManager [MFC], ConcatenateItem", "CShellManager [MFC], CopyItem", "CShellManager [MFC], CreateItem", "CShellManager [MFC], FreeItem", "CShellManager [MFC], GetItemCount", "CShellManager [MFC], GetItemSize", "CShellManager [MFC], GetNextItem", "CShellManager [MFC], GetParentItem", "CShellManager [MFC], ItemFromPath"]
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
 ---
 # CShellManager Class
@@ -107,7 +83,7 @@ BOOL BrowseForFolder(
 [in] The title for the dialog box.
 
 *ulFlags*<br/>
-[in] Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) for the detailed description.
+[in] Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) for the detailed description.
 
 *piFolderImage*<br/>
 [out] A pointer to the integer value where the method writes the image index of the selected folder.
@@ -150,7 +126,7 @@ A pointer to the new item list if the function succeeds, otherwise NULL.
 
 ### Remarks
 
-This method creates a new [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.
+This method creates a new [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.
 
 ##  <a name="copyitem"></a>  CShellManager::CopyItem
 

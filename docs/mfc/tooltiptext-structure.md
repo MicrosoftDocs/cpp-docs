@@ -1,11 +1,8 @@
 ---
-title: TOOLTIPTEXT Structure
-ms.date: 11/04/2016
-f1_keywords:
-- TOOLTIPTEXT
-helpviewer_keywords:
-- TOOLTIPTEXT structure [MFC]
-- tool tips [MFC], notifications
+title: "TOOLTIPTEXT Structure"
+ms.date: "11/04/2016"
+f1_keywords: ["TOOLTIPTEXT"]
+helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "tool tips [MFC], notifications"]
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
 ---
 # TOOLTIPTEXT Structure
@@ -25,7 +22,7 @@ typedef struct {
 ```
 
 *hdr*<br/>
-Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) for a discussion of members of the **NMHDR** structure.
+Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) for a discussion of members of the **NMHDR** structure.
 
 *lpszText*<br/>
 Address of a string to receive the text for a tool.

@@ -1,9 +1,7 @@
 ---
-title: Structures Used by MFC
-ms.date: 12/03/2018
-helpviewer_keywords:
-- structures
-- structures, MFC
+title: "Structures Used by MFC"
+ms.date: "12/03/2018"
+helpviewer_keywords: ["structures", "structures, MFC"]
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
 ---
 # Structures Used by MFC
@@ -12,8 +10,8 @@ The following table lists structures that are called from various member functio
 
 |||
 |-|-|
-|[ABC Structure](/windows/desktop/api/wingdi/ns-wingdi-abc)|[HSE_VERSION_INFO Structure](../../mfc/reference/hse-version-info-structure.md)|
-|[ABCFLOAT Structure](/windows/desktop/api/wingdi/ns-wingdi-abcfloat)|[LINGER Structure](/windows/desktop/api/winsock/ns-winsock-linger)|
+|[ABC Structure](/windows/desktop/api/wingdi/ns-wingdi-_abc)|[HSE_VERSION_INFO Structure](../../mfc/reference/hse-version-info-structure.md)|
+|[ABCFLOAT Structure](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat)|[LINGER Structure](/windows/desktop/api/winsock/ns-winsock-linger)|
 |[AFX_EXTENSION_MODULE Structure](../../mfc/reference/afx-extension-module-structure.md)|[LOGBRUSH Structure](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
 |[BITMAP Structure](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|[LOGPEN Structure](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
 |[BITMAPINFO Structure](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo)|[MEASUREITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct)|
@@ -23,7 +21,7 @@ The following table lists structures that are called from various member functio
 |[CDaoIndexFieldInfo Structure](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct)|
 |[CDaoIndexInfo Structure](../../mfc/reference/cdaoindexinfo-structure.md)|[POINT Structure](/windows/desktop/api/windef/ns-windef-tagpoint)|
 |[CDaoParameterInfo Structure](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT Structure](/windows/desktop/api/windef/ns-windef-tagrect)|
-|[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](/windows/desktop/api/wingdi/ns-wingdi-rgndata)|
+|[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](/windows/desktop/api/wingdi/ns-wingdi-_rgndata)|
 |[CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Structure](/windows/desktop/winsock/sockaddr-2)|
 |[CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Structure](/windows/desktop/winsock/sockaddr-2)|
 |[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
