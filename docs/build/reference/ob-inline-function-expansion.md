@@ -29,15 +29,15 @@ Controls inline expansion of functions.
 Disables inline expansions. By default, expansion occurs at the compiler's discretion on all functions, often referred to as *auto-inlining*.
 
 **1**\
-Allows expansion only of functions marked [`inline`](../../cpp/inline-functions-cpp.md), [`__inline`](../../cpp/inline-functions-cpp.md), or [`__forceinline`](../../cpp/inline-functions-cpp.md), or in a C++ member function defined in a class declaration.
+Allows expansion only of functions marked [inline](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md), or [__forceinline](../../cpp/inline-functions-cpp.md), or in a C++ member function defined in a class declaration.
 
 **2**\
-The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses.
+The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function not marked [__declspec(noinline)](../../cpp/noinline.md) that the compiler chooses.
 
 ::: moniker range=">=vs-2019"
 
 **3**\
-Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses. This option specifies more aggressive inlining than **/Ob2**. The **/Ob3** option is available starting in Visual Studio 2019.
+Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function not marked `__declspec(noinline)` that the compiler chooses. This option specifies more aggressive inlining than **/Ob2**. The **/Ob3** option is available starting in Visual Studio 2019.
 
 ::: moniker-end
 
