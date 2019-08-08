@@ -1258,7 +1258,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The PRINT.H header file is required if the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure is used.
+The PRINT.H header file is required if the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure is used.
 
 Device names follow these conventions: an ending colon (:) is recommended, but optional. Windows strips the terminating colon so that a device name ending with a colon is mapped to the same port as the same name without a colon. The driver and port names must not contain leading or trailing spaces. GDI output functions cannot be used with information contexts.
 

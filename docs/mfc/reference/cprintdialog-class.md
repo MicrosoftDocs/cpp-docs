@@ -134,7 +134,7 @@ Note that when you call the constructor with *bPrintSetupOnly* set to FALSE, the
 
 ##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC
 
-Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
+Creates a printer device context (DC) from the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -256,7 +256,7 @@ LPDEVMODE GetDevMode() const;
 
 ### Return Value
 
-The [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.
+The [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.
 
 ### Remarks
 
