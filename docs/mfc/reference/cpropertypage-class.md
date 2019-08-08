@@ -1,8 +1,44 @@
 ---
-title: "CPropertyPage Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CPropertyPage", "AFXDLGS/CPropertyPage", "AFXDLGS/CPropertyPage::CPropertyPage", "AFXDLGS/CPropertyPage::CancelToClose", "AFXDLGS/CPropertyPage::Construct", "AFXDLGS/CPropertyPage::GetPSP", "AFXDLGS/CPropertyPage::OnApply", "AFXDLGS/CPropertyPage::OnCancel", "AFXDLGS/CPropertyPage::OnKillActive", "AFXDLGS/CPropertyPage::OnOK", "AFXDLGS/CPropertyPage::OnQueryCancel", "AFXDLGS/CPropertyPage::OnReset", "AFXDLGS/CPropertyPage::OnSetActive", "AFXDLGS/CPropertyPage::OnWizardBack", "AFXDLGS/CPropertyPage::OnWizardFinish", "AFXDLGS/CPropertyPage::OnWizardNext", "AFXDLGS/CPropertyPage::QuerySiblings", "AFXDLGS/CPropertyPage::SetModified", "AFXDLGS/CPropertyPage::m_psp"]
-helpviewer_keywords: ["CPropertyPage [MFC], CPropertyPage", "CPropertyPage [MFC], CancelToClose", "CPropertyPage [MFC], Construct", "CPropertyPage [MFC], GetPSP", "CPropertyPage [MFC], OnApply", "CPropertyPage [MFC], OnCancel", "CPropertyPage [MFC], OnKillActive", "CPropertyPage [MFC], OnOK", "CPropertyPage [MFC], OnQueryCancel", "CPropertyPage [MFC], OnReset", "CPropertyPage [MFC], OnSetActive", "CPropertyPage [MFC], OnWizardBack", "CPropertyPage [MFC], OnWizardFinish", "CPropertyPage [MFC], OnWizardNext", "CPropertyPage [MFC], QuerySiblings", "CPropertyPage [MFC], SetModified", "CPropertyPage [MFC], m_psp"]
+title: CPropertyPage Class
+ms.date: 11/04/2016
+f1_keywords:
+- CPropertyPage
+- AFXDLGS/CPropertyPage
+- AFXDLGS/CPropertyPage::CPropertyPage
+- AFXDLGS/CPropertyPage::CancelToClose
+- AFXDLGS/CPropertyPage::Construct
+- AFXDLGS/CPropertyPage::GetPSP
+- AFXDLGS/CPropertyPage::OnApply
+- AFXDLGS/CPropertyPage::OnCancel
+- AFXDLGS/CPropertyPage::OnKillActive
+- AFXDLGS/CPropertyPage::OnOK
+- AFXDLGS/CPropertyPage::OnQueryCancel
+- AFXDLGS/CPropertyPage::OnReset
+- AFXDLGS/CPropertyPage::OnSetActive
+- AFXDLGS/CPropertyPage::OnWizardBack
+- AFXDLGS/CPropertyPage::OnWizardFinish
+- AFXDLGS/CPropertyPage::OnWizardNext
+- AFXDLGS/CPropertyPage::QuerySiblings
+- AFXDLGS/CPropertyPage::SetModified
+- AFXDLGS/CPropertyPage::m_psp
+helpviewer_keywords:
+- CPropertyPage [MFC], CPropertyPage
+- CPropertyPage [MFC], CancelToClose
+- CPropertyPage [MFC], Construct
+- CPropertyPage [MFC], GetPSP
+- CPropertyPage [MFC], OnApply
+- CPropertyPage [MFC], OnCancel
+- CPropertyPage [MFC], OnKillActive
+- CPropertyPage [MFC], OnOK
+- CPropertyPage [MFC], OnQueryCancel
+- CPropertyPage [MFC], OnReset
+- CPropertyPage [MFC], OnSetActive
+- CPropertyPage [MFC], OnWizardBack
+- CPropertyPage [MFC], OnWizardFinish
+- CPropertyPage [MFC], OnWizardNext
+- CPropertyPage [MFC], QuerySiblings
+- CPropertyPage [MFC], SetModified
+- CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
 ---
 # CPropertyPage Class
@@ -29,7 +65,7 @@ class CPropertyPage : public CDialog
 |----------|-----------------|
 |[CPropertyPage::CancelToClose](#canceltoclose)|Changes the OK button to read Close, and disables the Cancel button, after an unrecoverable change in the page of a modal property sheet.|
 |[CPropertyPage::Construct](#construct)|Constructs a `CPropertyPage` object. Use `Construct` if you want to specify your parameters at run time, or if you are using arrays.|
-|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure associated with the `CPropertyPage` object.|
+|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.|
 |[CPropertyPage::OnApply](#onapply)|Called by the framework when the Apply Now button is clicked.|
 |[CPropertyPage::OnCancel](#oncancel)|Called by the framework when the Cancel button is clicked.|
 |[CPropertyPage::OnKillActive](#onkillactive)|Called by the framework when the current page is no longer the active page. Perform data validation here.|
@@ -47,7 +83,7 @@ class CPropertyPage : public CDialog
 
 |Name|Description|
 |----------|-----------------|
-|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure. Provides access to basic property page parameters.|
+|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure. Provides access to basic property page parameters.|
 
 ## Remarks
 
@@ -220,7 +256,7 @@ If you have multiple parameters (for example, if you are using an array), use [C
 
 ##  <a name="getpsp"></a>  CPropertyPage::GetPSP
 
-Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure associated with the `CPropertyPage` object.
+Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.
 
 ```
 const PROPSHEETPAGE& GetPSP() const;
@@ -234,7 +270,7 @@ A reference to the `PROPSHEETPAGE` structure.
 
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp
 
-`m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2).
+`m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2).
 
 ```
 PROPSHEETPAGE m_psp;

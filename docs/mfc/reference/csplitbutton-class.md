@@ -1,8 +1,18 @@
 ---
-title: "CSplitButton Class"
-ms.date: "11/19/2018"
-f1_keywords: ["CSplitButton", "AFXCMN/CSplitButton", "AFXCMN/CSplitButton::CSplitButton", "AFXCMN/CSplitButton::Create", "AFXCMN/CSplitButton::SetDropDownMenu", "AFXCMN/CSplitButton::OnDropDown"]
-helpviewer_keywords: ["CSplitButton [MFC], CSplitButton", "CSplitButton [MFC], Create", "CSplitButton [MFC], SetDropDownMenu", "CSplitButton [MFC], OnDropDown"]
+title: CSplitButton Class
+ms.date: 11/19/2018
+f1_keywords:
+- CSplitButton
+- AFXCMN/CSplitButton
+- AFXCMN/CSplitButton::CSplitButton
+- AFXCMN/CSplitButton::Create
+- AFXCMN/CSplitButton::SetDropDownMenu
+- AFXCMN/CSplitButton::OnDropDown
+helpviewer_keywords:
+- CSplitButton [MFC], CSplitButton
+- CSplitButton [MFC], Create
+- CSplitButton [MFC], SetDropDownMenu
+- CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
 ---
 # CSplitButton Class
@@ -128,7 +138,7 @@ afx_msg void OnDropDown(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
+|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
 |*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
 
 ### Remarks

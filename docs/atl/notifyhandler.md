@@ -1,8 +1,9 @@
 ---
-title: "NotifyHandler"
-ms.date: "11/04/2016"
-ms.topic: "reference"
-helpviewer_keywords: ["NotifyHandler function"]
+title: NotifyHandler
+ms.date: 11/04/2016
+ms.topic: reference
+helpviewer_keywords:
+- NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
 ---
 # NotifyHandler
@@ -24,7 +25,7 @@ LRESULT NotifyHandler(
 The identifier of the control sending the message.
 
 *pnmh*<br/>
-Address of an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
+Address of an [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
 
 *bHandled*<br/>
 The message map sets *bHandled* to TRUE before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set *bHandled* to **FALSE** to indicate the message needs further processing.

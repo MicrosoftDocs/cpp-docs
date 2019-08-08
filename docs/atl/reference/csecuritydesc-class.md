@@ -1,8 +1,38 @@
 ---
-title: "CSecurityDesc Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::CSecurityDesc", "ATLSECURITY/ATL::CSecurityDesc::FromString", "ATLSECURITY/ATL::CSecurityDesc::GetControl", "ATLSECURITY/ATL::CSecurityDesc::GetDacl", "ATLSECURITY/ATL::CSecurityDesc::GetGroup", "ATLSECURITY/ATL::CSecurityDesc::GetOwner", "ATLSECURITY/ATL::CSecurityDesc::GetPSECURITY_DESCRIPTOR", "ATLSECURITY/ATL::CSecurityDesc::GetSacl", "ATLSECURITY/ATL::CSecurityDesc::IsDaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsDaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsDaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsDaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsGroupDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsOwnerDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclAutoInherited", "ATLSECURITY/ATL::CSecurityDesc::IsSaclDefaulted", "ATLSECURITY/ATL::CSecurityDesc::IsSaclPresent", "ATLSECURITY/ATL::CSecurityDesc::IsSaclProtected", "ATLSECURITY/ATL::CSecurityDesc::IsSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::MakeAbsolute", "ATLSECURITY/ATL::CSecurityDesc::MakeSelfRelative", "ATLSECURITY/ATL::CSecurityDesc::SetControl", "ATLSECURITY/ATL::CSecurityDesc::SetDacl", "ATLSECURITY/ATL::CSecurityDesc::SetGroup", "ATLSECURITY/ATL::CSecurityDesc::SetOwner", "ATLSECURITY/ATL::CSecurityDesc::SetSacl", "ATLSECURITY/ATL::CSecurityDesc::ToString"]
-helpviewer_keywords: ["CSecurityDesc class"]
+title: CSecurityDesc Class
+ms.date: 11/04/2016
+f1_keywords:
+- CSecurityDesc
+- ATLSECURITY/ATL::CSecurityDesc
+- ATLSECURITY/ATL::CSecurityDesc::CSecurityDesc
+- ATLSECURITY/ATL::CSecurityDesc::FromString
+- ATLSECURITY/ATL::CSecurityDesc::GetControl
+- ATLSECURITY/ATL::CSecurityDesc::GetDacl
+- ATLSECURITY/ATL::CSecurityDesc::GetGroup
+- ATLSECURITY/ATL::CSecurityDesc::GetOwner
+- ATLSECURITY/ATL::CSecurityDesc::GetPSECURITY_DESCRIPTOR
+- ATLSECURITY/ATL::CSecurityDesc::GetSacl
+- ATLSECURITY/ATL::CSecurityDesc::IsDaclAutoInherited
+- ATLSECURITY/ATL::CSecurityDesc::IsDaclDefaulted
+- ATLSECURITY/ATL::CSecurityDesc::IsDaclPresent
+- ATLSECURITY/ATL::CSecurityDesc::IsDaclProtected
+- ATLSECURITY/ATL::CSecurityDesc::IsGroupDefaulted
+- ATLSECURITY/ATL::CSecurityDesc::IsOwnerDefaulted
+- ATLSECURITY/ATL::CSecurityDesc::IsSaclAutoInherited
+- ATLSECURITY/ATL::CSecurityDesc::IsSaclDefaulted
+- ATLSECURITY/ATL::CSecurityDesc::IsSaclPresent
+- ATLSECURITY/ATL::CSecurityDesc::IsSaclProtected
+- ATLSECURITY/ATL::CSecurityDesc::IsSelfRelative
+- ATLSECURITY/ATL::CSecurityDesc::MakeAbsolute
+- ATLSECURITY/ATL::CSecurityDesc::MakeSelfRelative
+- ATLSECURITY/ATL::CSecurityDesc::SetControl
+- ATLSECURITY/ATL::CSecurityDesc::SetDacl
+- ATLSECURITY/ATL::CSecurityDesc::SetGroup
+- ATLSECURITY/ATL::CSecurityDesc::SetOwner
+- ATLSECURITY/ATL::CSecurityDesc::SetSacl
+- ATLSECURITY/ATL::CSecurityDesc::ToString
+helpviewer_keywords:
+- CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
 ---
 # CSecurityDesc Class
@@ -232,7 +262,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 
 ### Return Value
 
-Returns a pointer to the [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure.
+Returns a pointer to the [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure.
 
 ##  <a name="getsacl"></a>  CSecurityDesc::GetSacl
 
@@ -668,6 +698,6 @@ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows
 ## See also
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

@@ -1,8 +1,56 @@
 ---
-title: "CAccessToken Class"
-ms.date: "07/02/2019"
-f1_keywords: ["CAccessToken", "ATLSECURITY/ATL::CAccessToken", "ATLSECURITY/ATL::CAccessToken::Attach", "ATLSECURITY/ATL::CAccessToken::CheckTokenMembership", "ATLSECURITY/ATL::CAccessToken::CreateImpersonationToken", "ATLSECURITY/ATL::CAccessToken::CreatePrimaryToken", "ATLSECURITY/ATL::CAccessToken::CreateProcessAsUser", "ATLSECURITY/ATL::CAccessToken::CreateRestrictedToken", "ATLSECURITY/ATL::CAccessToken::Detach", "ATLSECURITY/ATL::CAccessToken::DisablePrivilege", "ATLSECURITY/ATL::CAccessToken::DisablePrivileges", "ATLSECURITY/ATL::CAccessToken::EnablePrivilege", "ATLSECURITY/ATL::CAccessToken::EnablePrivileges", "ATLSECURITY/ATL::CAccessToken::GetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::GetEffectiveToken", "ATLSECURITY/ATL::CAccessToken::GetGroups", "ATLSECURITY/ATL::CAccessToken::GetHandle", "ATLSECURITY/ATL::CAccessToken::GetImpersonationLevel", "ATLSECURITY/ATL::CAccessToken::GetLogonSessionId", "ATLSECURITY/ATL::CAccessToken::GetLogonSid", "ATLSECURITY/ATL::CAccessToken::GetOwner", "ATLSECURITY/ATL::CAccessToken::GetPrimaryGroup", "ATLSECURITY/ATL::CAccessToken::GetPrivileges", "ATLSECURITY/ATL::CAccessToken::GetProcessToken", "ATLSECURITY/ATL::CAccessToken::GetProfile", "ATLSECURITY/ATL::CAccessToken::GetSource", "ATLSECURITY/ATL::CAccessToken::GetStatistics", "ATLSECURITY/ATL::CAccessToken::GetTerminalServicesSessionId", "ATLSECURITY/ATL::CAccessToken::GetThreadToken", "ATLSECURITY/ATL::CAccessToken::GetTokenId", "ATLSECURITY/ATL::CAccessToken::GetType", "ATLSECURITY/ATL::CAccessToken::GetUser", "ATLSECURITY/ATL::CAccessToken::HKeyCurrentUser", "ATLSECURITY/ATL::CAccessToken::Impersonate", "ATLSECURITY/ATL::CAccessToken::ImpersonateLoggedOnUser", "ATLSECURITY/ATL::CAccessToken::IsTokenRestricted", "ATLSECURITY/ATL::CAccessToken::LoadUserProfile", "ATLSECURITY/ATL::CAccessToken::LogonUser", "ATLSECURITY/ATL::CAccessToken::OpenCOMClientToken", "ATLSECURITY/ATL::CAccessToken::OpenNamedPipeClientToken", "ATLSECURITY/ATL::CAccessToken::OpenRPCClientToken", "ATLSECURITY/ATL::CAccessToken::OpenThreadToken", "ATLSECURITY/ATL::CAccessToken::PrivilegeCheck", "ATLSECURITY/ATL::CAccessToken::Revert", "ATLSECURITY/ATL::CAccessToken::SetDefaultDacl", "ATLSECURITY/ATL::CAccessToken::SetOwner", "ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup"]
-helpviewer_keywords: ["CAccessToken class"]
+title: CAccessToken Class
+ms.date: 07/02/2019
+f1_keywords:
+- CAccessToken
+- ATLSECURITY/ATL::CAccessToken
+- ATLSECURITY/ATL::CAccessToken::Attach
+- ATLSECURITY/ATL::CAccessToken::CheckTokenMembership
+- ATLSECURITY/ATL::CAccessToken::CreateImpersonationToken
+- ATLSECURITY/ATL::CAccessToken::CreatePrimaryToken
+- ATLSECURITY/ATL::CAccessToken::CreateProcessAsUser
+- ATLSECURITY/ATL::CAccessToken::CreateRestrictedToken
+- ATLSECURITY/ATL::CAccessToken::Detach
+- ATLSECURITY/ATL::CAccessToken::DisablePrivilege
+- ATLSECURITY/ATL::CAccessToken::DisablePrivileges
+- ATLSECURITY/ATL::CAccessToken::EnablePrivilege
+- ATLSECURITY/ATL::CAccessToken::EnablePrivileges
+- ATLSECURITY/ATL::CAccessToken::GetDefaultDacl
+- ATLSECURITY/ATL::CAccessToken::GetEffectiveToken
+- ATLSECURITY/ATL::CAccessToken::GetGroups
+- ATLSECURITY/ATL::CAccessToken::GetHandle
+- ATLSECURITY/ATL::CAccessToken::GetImpersonationLevel
+- ATLSECURITY/ATL::CAccessToken::GetLogonSessionId
+- ATLSECURITY/ATL::CAccessToken::GetLogonSid
+- ATLSECURITY/ATL::CAccessToken::GetOwner
+- ATLSECURITY/ATL::CAccessToken::GetPrimaryGroup
+- ATLSECURITY/ATL::CAccessToken::GetPrivileges
+- ATLSECURITY/ATL::CAccessToken::GetProcessToken
+- ATLSECURITY/ATL::CAccessToken::GetProfile
+- ATLSECURITY/ATL::CAccessToken::GetSource
+- ATLSECURITY/ATL::CAccessToken::GetStatistics
+- ATLSECURITY/ATL::CAccessToken::GetTerminalServicesSessionId
+- ATLSECURITY/ATL::CAccessToken::GetThreadToken
+- ATLSECURITY/ATL::CAccessToken::GetTokenId
+- ATLSECURITY/ATL::CAccessToken::GetType
+- ATLSECURITY/ATL::CAccessToken::GetUser
+- ATLSECURITY/ATL::CAccessToken::HKeyCurrentUser
+- ATLSECURITY/ATL::CAccessToken::Impersonate
+- ATLSECURITY/ATL::CAccessToken::ImpersonateLoggedOnUser
+- ATLSECURITY/ATL::CAccessToken::IsTokenRestricted
+- ATLSECURITY/ATL::CAccessToken::LoadUserProfile
+- ATLSECURITY/ATL::CAccessToken::LogonUser
+- ATLSECURITY/ATL::CAccessToken::OpenCOMClientToken
+- ATLSECURITY/ATL::CAccessToken::OpenNamedPipeClientToken
+- ATLSECURITY/ATL::CAccessToken::OpenRPCClientToken
+- ATLSECURITY/ATL::CAccessToken::OpenThreadToken
+- ATLSECURITY/ATL::CAccessToken::PrivilegeCheck
+- ATLSECURITY/ATL::CAccessToken::Revert
+- ATLSECURITY/ATL::CAccessToken::SetDefaultDacl
+- ATLSECURITY/ATL::CAccessToken::SetOwner
+- ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup
+helpviewer_keywords:
+- CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
 ---
 # CAccessToken Class
@@ -162,7 +210,7 @@ bool CreateImpersonationToken(
 Pointer to the new `CAccessToken` object.
 
 *sil*<br/>
-Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumerated type that supplies the impersonation level of the new token.
+Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the new token.
 
 ### Return Value
 
@@ -232,7 +280,7 @@ Pointer to a null-terminated string that specifies the command line to execute.
 Pointer to a [PROCESS_INFORMATION structure](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) that receives identification information about the new process.
 
 *pStartupInfo*<br/>
-Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) structure that specifies how the main window for the new process should appear.
+Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa) structure that specifies how the main window for the new process should appear.
 
 *dwCreationFlags*<br/>
 Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) for a list of flags.
@@ -478,7 +526,7 @@ bool GetImpersonationLevel(
 ### Parameters
 
 *pImpersonationLevel*<br/>
-Pointer to a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumeration type which will receive the impersonation level information.
+Pointer to a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumeration type which will receive the impersonation level information.
 
 ### Return Value
 
@@ -495,7 +543,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 ### Parameters
 
 *pluid*<br/>
-Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) which will receive the Logon Session ID.
+Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-luid) which will receive the Logon Session ID.
 
 ### Return Value
 
@@ -632,7 +680,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 ### Parameters
 
 *pSource*<br/>
-Pointer to a [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-_token_source) structure.
+Pointer to a [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-token_source) structure.
 
 ### Return Value
 
@@ -649,7 +697,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 ### Parameters
 
 *pStatistics*<br/>
-Pointer to a [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-_token_statistics) structure.
+Pointer to a [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-token_statistics) structure.
 
 ### Return Value
 
@@ -711,7 +759,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
 ### Parameters
 
 *pluid*<br/>
-Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-_luid) which will receive the Token ID.
+Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-luid) which will receive the Token ID.
 
 ### Return Value
 
@@ -728,7 +776,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 ### Parameters
 
 *pType*<br/>
-Address of the [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-_token_type) variable that, on success, receives the type of the token.
+Address of the [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-token_type) variable that, on success, receives the type of the token.
 
 ### Return Value
 
@@ -1003,7 +1051,7 @@ Indicates whether the access check is to be made against the security context of
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
 *sil*<br/>
-Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) enumerated type that supplies the impersonation level of the token.
+Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the token.
 
 ### Return Value
 
@@ -1028,7 +1076,7 @@ bool PrivilegeCheck(
 ### Parameters
 
 *RequiredPrivileges*<br/>
-Pointer to a [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-_privilege_set) structure.
+Pointer to a [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-privilege_set) structure.
 
 *pbResult*<br/>
 Pointer to a value the method sets to indicate whether any or all of the specified privilege are enabled in the `CAccessToken` object.
@@ -1039,7 +1087,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
+When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 

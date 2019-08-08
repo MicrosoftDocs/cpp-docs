@@ -1,8 +1,18 @@
 ---
-title: "CFtpFileFind Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CFtpFileFind", "AFXINET/CFtpFileFind", "AFXINET/CFtpFileFind::CFtpFileFind", "AFXINET/CFtpFileFind::FindFile", "AFXINET/CFtpFileFind::FindNextFile", "AFXINET/CFtpFileFind::GetFileURL"]
-helpviewer_keywords: ["CFtpFileFind [MFC], CFtpFileFind", "CFtpFileFind [MFC], FindFile", "CFtpFileFind [MFC], FindNextFile", "CFtpFileFind [MFC], GetFileURL"]
+title: CFtpFileFind Class
+ms.date: 11/04/2016
+f1_keywords:
+- CFtpFileFind
+- AFXINET/CFtpFileFind
+- AFXINET/CFtpFileFind::CFtpFileFind
+- AFXINET/CFtpFileFind::FindFile
+- AFXINET/CFtpFileFind::FindNextFile
+- AFXINET/CFtpFileFind::GetFileURL
+helpviewer_keywords:
+- CFtpFileFind [MFC], CFtpFileFind
+- CFtpFileFind [MFC], FindFile
+- CFtpFileFind [MFC], FindNextFile
+- CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
 ---
 # CFtpFileFind Class
@@ -105,7 +115,7 @@ The flags describing how to handle this session. These flags can be combined wit
 
 - INTERNET_FLAG_DONT_CACHE   Do not cache the data, either locally or in any gateways.
 
-- INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structures for FTP).
+- INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structures for FTP).
 
 - INTERNET_FLAG_SECURE   Secures transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.
 

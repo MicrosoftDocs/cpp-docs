@@ -1,8 +1,26 @@
 ---
-title: "COlePropertiesDialog Class"
-ms.date: "11/04/2016"
-f1_keywords: ["COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::COlePropertiesDialog", "AFXODLGS/COlePropertiesDialog::DoModal", "AFXODLGS/COlePropertiesDialog::OnApplyScale", "AFXODLGS/COlePropertiesDialog::m_gp", "AFXODLGS/COlePropertiesDialog::m_lp", "AFXODLGS/COlePropertiesDialog::m_op", "AFXODLGS/COlePropertiesDialog::m_psh", "AFXODLGS/COlePropertiesDialog::m_vp"]
-helpviewer_keywords: ["COlePropertiesDialog [MFC], COlePropertiesDialog", "COlePropertiesDialog [MFC], DoModal", "COlePropertiesDialog [MFC], OnApplyScale", "COlePropertiesDialog [MFC], m_gp", "COlePropertiesDialog [MFC], m_lp", "COlePropertiesDialog [MFC], m_op", "COlePropertiesDialog [MFC], m_psh", "COlePropertiesDialog [MFC], m_vp"]
+title: COlePropertiesDialog Class
+ms.date: 11/04/2016
+f1_keywords:
+- COlePropertiesDialog
+- AFXODLGS/COlePropertiesDialog
+- AFXODLGS/COlePropertiesDialog::COlePropertiesDialog
+- AFXODLGS/COlePropertiesDialog::DoModal
+- AFXODLGS/COlePropertiesDialog::OnApplyScale
+- AFXODLGS/COlePropertiesDialog::m_gp
+- AFXODLGS/COlePropertiesDialog::m_lp
+- AFXODLGS/COlePropertiesDialog::m_op
+- AFXODLGS/COlePropertiesDialog::m_psh
+- AFXODLGS/COlePropertiesDialog::m_vp
+helpviewer_keywords:
+- COlePropertiesDialog [MFC], COlePropertiesDialog
+- COlePropertiesDialog [MFC], DoModal
+- COlePropertiesDialog [MFC], OnApplyScale
+- COlePropertiesDialog [MFC], m_gp
+- COlePropertiesDialog [MFC], m_lp
+- COlePropertiesDialog [MFC], m_op
+- COlePropertiesDialog [MFC], m_psh
+- COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
 ---
 # COlePropertiesDialog Class
@@ -174,7 +192,7 @@ For more information, see the OLEUIOBJECTPROPS and [OLEUILINKPROPS](/windows/des
 
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh
 
-A structure of type [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2), whose members store the characteristics of the dialog object.
+A structure of type [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2), whose members store the characteristics of the dialog object.
 
 ```
 PROPSHEETHEADER m_psh;

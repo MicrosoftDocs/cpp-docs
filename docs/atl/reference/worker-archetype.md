@@ -1,7 +1,8 @@
 ---
-title: "Worker Archetype"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["Worker archetype"]
+title: Worker Archetype
+ms.date: 11/04/2016
+helpviewer_keywords:
+- Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
 ---
 # Worker Archetype
@@ -67,7 +68,7 @@ The work item to be processed. The work item is of the same type as `RequestType
 A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `Terminate`.
 
 *pOverlapped*<br/>
-A pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure used to create the queue on which work items were queued.
+A pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) structure used to create the queue on which work items were queued.
 
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 

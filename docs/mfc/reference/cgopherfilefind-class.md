@@ -1,8 +1,30 @@
 ---
-title: "CGopherFileFind Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CGopherFileFind", "AFXINET/CGopherFileFind", "AFXINET/CGopherFileFind::CGopherFileFind", "AFXINET/CGopherFileFind::FindFile", "AFXINET/CGopherFileFind::FindNextFile", "AFXINET/CGopherFileFind::GetCreationTime", "AFXINET/CGopherFileFind::GetLastAccessTime", "AFXINET/CGopherFileFind::GetLastWriteTime", "AFXINET/CGopherFileFind::GetLength", "AFXINET/CGopherFileFind::GetLocator", "AFXINET/CGopherFileFind::GetScreenName", "AFXINET/CGopherFileFind::IsDots"]
-helpviewer_keywords: ["CGopherFileFind [MFC], CGopherFileFind", "CGopherFileFind [MFC], FindFile", "CGopherFileFind [MFC], FindNextFile", "CGopherFileFind [MFC], GetCreationTime", "CGopherFileFind [MFC], GetLastAccessTime", "CGopherFileFind [MFC], GetLastWriteTime", "CGopherFileFind [MFC], GetLength", "CGopherFileFind [MFC], GetLocator", "CGopherFileFind [MFC], GetScreenName", "CGopherFileFind [MFC], IsDots"]
+title: CGopherFileFind Class
+ms.date: 11/04/2016
+f1_keywords:
+- CGopherFileFind
+- AFXINET/CGopherFileFind
+- AFXINET/CGopherFileFind::CGopherFileFind
+- AFXINET/CGopherFileFind::FindFile
+- AFXINET/CGopherFileFind::FindNextFile
+- AFXINET/CGopherFileFind::GetCreationTime
+- AFXINET/CGopherFileFind::GetLastAccessTime
+- AFXINET/CGopherFileFind::GetLastWriteTime
+- AFXINET/CGopherFileFind::GetLength
+- AFXINET/CGopherFileFind::GetLocator
+- AFXINET/CGopherFileFind::GetScreenName
+- AFXINET/CGopherFileFind::IsDots
+helpviewer_keywords:
+- CGopherFileFind [MFC], CGopherFileFind
+- CGopherFileFind [MFC], FindFile
+- CGopherFileFind [MFC], FindNextFile
+- CGopherFileFind [MFC], GetCreationTime
+- CGopherFileFind [MFC], GetLastAccessTime
+- CGopherFileFind [MFC], GetLastWriteTime
+- CGopherFileFind [MFC], GetLength
+- CGopherFileFind [MFC], GetLocator
+- CGopherFileFind [MFC], GetScreenName
+- CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
 ---
 # CGopherFileFind Class
@@ -177,7 +199,7 @@ Nonzero if successful; 0 if unsuccessful. `GetCreationTime` returns 0 only if [F
 You must call [FindNextFile](#findnextfile) at least once before calling `GetCreationTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ##  <a name="getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime
 
@@ -205,7 +227,7 @@ Nonzero if successful; 0 if unsuccessful. `GetLastAccessTime` returns 0 only if 
 You must call [FindNextFile](#findnextfile) at least once before calling `GetLastAccessTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ##  <a name="getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime
 
@@ -233,7 +255,7 @@ Nonzero if successful; 0 if unsuccessful. `GetLastWriteTime` returns 0 only if [
 You must call [FindNextFile](#findnextfile) at least once before calling `GetLastWriteTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operating systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ##  <a name="getlength"></a>  CGopherFileFind::GetLength
 
@@ -249,7 +271,7 @@ The length, in bytes, of the found file.
 
 ### Remarks
 
-`GetLength` uses the Win32 structure [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) to get the value of the file size in bytes.
+`GetLength` uses the Win32 structure [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) to get the value of the file size in bytes.
 
 > [!NOTE]
 >  As of MFC 7.0, `GetLength` supports 64-bit integer types. Previously-existing code built with this newer version of the library may result in truncation warnings.

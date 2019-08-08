@@ -1,8 +1,198 @@
 ---
-title: "CHtmlView Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CHtmlView", "AFXHTML/CHtmlView", "AFXHTML/CHtmlView::Create", "AFXHTML/CHtmlView::CreateControlSite", "AFXHTML/CHtmlView::ExecFormsCommand", "AFXHTML/CHtmlView::ExecWB", "AFXHTML/CHtmlView::GetAddressBar", "AFXHTML/CHtmlView::GetApplication", "AFXHTML/CHtmlView::GetBusy", "AFXHTML/CHtmlView::GetContainer", "AFXHTML/CHtmlView::GetFullName", "AFXHTML/CHtmlView::GetFullScreen", "AFXHTML/CHtmlView::GetHeight", "AFXHTML/CHtmlView::GetHtmlDocument", "AFXHTML/CHtmlView::GetLeft", "AFXHTML/CHtmlView::GetLocationName", "AFXHTML/CHtmlView::GetLocationURL", "AFXHTML/CHtmlView::GetMenuBar", "AFXHTML/CHtmlView::GetOffline", "AFXHTML/CHtmlView::GetParentBrowser", "AFXHTML/CHtmlView::GetProperty", "AFXHTML/CHtmlView::GetReadyState", "AFXHTML/CHtmlView::GetRegisterAsBrowser", "AFXHTML/CHtmlView::GetRegisterAsDropTarget", "AFXHTML/CHtmlView::GetSilent", "AFXHTML/CHtmlView::GetSource", "AFXHTML/CHtmlView::GetStatusBar", "AFXHTML/CHtmlView::GetTheaterMode", "AFXHTML/CHtmlView::GetToolBar", "AFXHTML/CHtmlView::GetTop", "AFXHTML/CHtmlView::GetTopLevelContainer", "AFXHTML/CHtmlView::GetType", "AFXHTML/CHtmlView::GetVisible", "AFXHTML/CHtmlView::GetWidth", "AFXHTML/CHtmlView::GoBack", "AFXHTML/CHtmlView::GoForward", "AFXHTML/CHtmlView::GoHome", "AFXHTML/CHtmlView::GoSearch", "AFXHTML/CHtmlView::LoadFromResource", "AFXHTML/CHtmlView::Navigate", "AFXHTML/CHtmlView::Navigate2", "AFXHTML/CHtmlView::OnBeforeNavigate2", "AFXHTML/CHtmlView::OnCommandStateChange", "AFXHTML/CHtmlView::OnDocumentComplete", "AFXHTML/CHtmlView::OnDocWindowActivate", "AFXHTML/CHtmlView::OnDownloadBegin", "AFXHTML/CHtmlView::OnDownloadComplete", "AFXHTML/CHtmlView::OnEnableModeless", "AFXHTML/CHtmlView::OnFilterDataObject", "AFXHTML/CHtmlView::OnFrameWindowActivate", "AFXHTML/CHtmlView::OnFullScreen", "AFXHTML/CHtmlView::OnGetDropTarget", "AFXHTML/CHtmlView::OnGetExternal", "AFXHTML/CHtmlView::OnGetHostInfo", "AFXHTML/CHtmlView::OnGetOptionKeyPath", "AFXHTML/CHtmlView::OnHideUI", "AFXHTML/CHtmlView::OnMenuBar", "AFXHTML/CHtmlView::OnNavigateComplete2", "AFXHTML/CHtmlView::OnNavigateError", "AFXHTML/CHtmlView::OnNewWindow2", "AFXHTML/CHtmlView::OnProgressChange", "AFXHTML/CHtmlView::OnPropertyChange", "AFXHTML/CHtmlView::OnQuit", "AFXHTML/CHtmlView::OnResizeBorder", "AFXHTML/CHtmlView::OnShowContextMenu", "AFXHTML/CHtmlView::OnShowUI", "AFXHTML/CHtmlView::OnStatusBar", "AFXHTML/CHtmlView::OnStatusTextChange", "AFXHTML/CHtmlView::OnTheaterMode", "AFXHTML/CHtmlView::OnTitleChange", "AFXHTML/CHtmlView::OnToolBar", "AFXHTML/CHtmlView::OnTranslateAccelerator", "AFXHTML/CHtmlView::OnTranslateUrl", "AFXHTML/CHtmlView::OnUpdateUI", "AFXHTML/CHtmlView::OnVisible", "AFXHTML/CHtmlView::PutProperty", "AFXHTML/CHtmlView::QueryFormsCommand", "AFXHTML/CHtmlView::QueryStatusWB", "AFXHTML/CHtmlView::Refresh", "AFXHTML/CHtmlView::Refresh2", "AFXHTML/CHtmlView::SetAddressBar", "AFXHTML/CHtmlView::SetFullScreen", "AFXHTML/CHtmlView::SetHeight", "AFXHTML/CHtmlView::SetLeft", "AFXHTML/CHtmlView::SetMenuBar", "AFXHTML/CHtmlView::SetOffline", "AFXHTML/CHtmlView::SetRegisterAsBrowser", "AFXHTML/CHtmlView::SetRegisterAsDropTarget", "AFXHTML/CHtmlView::SetSilent", "AFXHTML/CHtmlView::SetStatusBar", "AFXHTML/CHtmlView::SetTheaterMode", "AFXHTML/CHtmlView::SetToolBar", "AFXHTML/CHtmlView::SetTop", "AFXHTML/CHtmlView::SetVisible", "AFXHTML/CHtmlView::SetWidth", "AFXHTML/CHtmlView::Stop"]
-helpviewer_keywords: ["CHtmlView [MFC], Create", "CHtmlView [MFC], CreateControlSite", "CHtmlView [MFC], ExecFormsCommand", "CHtmlView [MFC], ExecWB", "CHtmlView [MFC], GetAddressBar", "CHtmlView [MFC], GetApplication", "CHtmlView [MFC], GetBusy", "CHtmlView [MFC], GetContainer", "CHtmlView [MFC], GetFullName", "CHtmlView [MFC], GetFullScreen", "CHtmlView [MFC], GetHeight", "CHtmlView [MFC], GetHtmlDocument", "CHtmlView [MFC], GetLeft", "CHtmlView [MFC], GetLocationName", "CHtmlView [MFC], GetLocationURL", "CHtmlView [MFC], GetMenuBar", "CHtmlView [MFC], GetOffline", "CHtmlView [MFC], GetParentBrowser", "CHtmlView [MFC], GetProperty", "CHtmlView [MFC], GetReadyState", "CHtmlView [MFC], GetRegisterAsBrowser", "CHtmlView [MFC], GetRegisterAsDropTarget", "CHtmlView [MFC], GetSilent", "CHtmlView [MFC], GetSource", "CHtmlView [MFC], GetStatusBar", "CHtmlView [MFC], GetTheaterMode", "CHtmlView [MFC], GetToolBar", "CHtmlView [MFC], GetTop", "CHtmlView [MFC], GetTopLevelContainer", "CHtmlView [MFC], GetType", "CHtmlView [MFC], GetVisible", "CHtmlView [MFC], GetWidth", "CHtmlView [MFC], GoBack", "CHtmlView [MFC], GoForward", "CHtmlView [MFC], GoHome", "CHtmlView [MFC], GoSearch", "CHtmlView [MFC], LoadFromResource", "CHtmlView [MFC], Navigate", "CHtmlView [MFC], Navigate2", "CHtmlView [MFC], OnBeforeNavigate2", "CHtmlView [MFC], OnCommandStateChange", "CHtmlView [MFC], OnDocumentComplete", "CHtmlView [MFC], OnDocWindowActivate", "CHtmlView [MFC], OnDownloadBegin", "CHtmlView [MFC], OnDownloadComplete", "CHtmlView [MFC], OnEnableModeless", "CHtmlView [MFC], OnFilterDataObject", "CHtmlView [MFC], OnFrameWindowActivate", "CHtmlView [MFC], OnFullScreen", "CHtmlView [MFC], OnGetDropTarget", "CHtmlView [MFC], OnGetExternal", "CHtmlView [MFC], OnGetHostInfo", "CHtmlView [MFC], OnGetOptionKeyPath", "CHtmlView [MFC], OnHideUI", "CHtmlView [MFC], OnMenuBar", "CHtmlView [MFC], OnNavigateComplete2", "CHtmlView [MFC], OnNavigateError", "CHtmlView [MFC], OnNewWindow2", "CHtmlView [MFC], OnProgressChange", "CHtmlView [MFC], OnPropertyChange", "CHtmlView [MFC], OnQuit", "CHtmlView [MFC], OnResizeBorder", "CHtmlView [MFC], OnShowContextMenu", "CHtmlView [MFC], OnShowUI", "CHtmlView [MFC], OnStatusBar", "CHtmlView [MFC], OnStatusTextChange", "CHtmlView [MFC], OnTheaterMode", "CHtmlView [MFC], OnTitleChange", "CHtmlView [MFC], OnToolBar", "CHtmlView [MFC], OnTranslateAccelerator", "CHtmlView [MFC], OnTranslateUrl", "CHtmlView [MFC], OnUpdateUI", "CHtmlView [MFC], OnVisible", "CHtmlView [MFC], PutProperty", "CHtmlView [MFC], QueryFormsCommand", "CHtmlView [MFC], QueryStatusWB", "CHtmlView [MFC], Refresh", "CHtmlView [MFC], Refresh2", "CHtmlView [MFC], SetAddressBar", "CHtmlView [MFC], SetFullScreen", "CHtmlView [MFC], SetHeight", "CHtmlView [MFC], SetLeft", "CHtmlView [MFC], SetMenuBar", "CHtmlView [MFC], SetOffline", "CHtmlView [MFC], SetRegisterAsBrowser", "CHtmlView [MFC], SetRegisterAsDropTarget", "CHtmlView [MFC], SetSilent", "CHtmlView [MFC], SetStatusBar", "CHtmlView [MFC], SetTheaterMode", "CHtmlView [MFC], SetToolBar", "CHtmlView [MFC], SetTop", "CHtmlView [MFC], SetVisible", "CHtmlView [MFC], SetWidth", "CHtmlView [MFC], Stop"]
+title: CHtmlView Class
+ms.date: 11/04/2016
+f1_keywords:
+- CHtmlView
+- AFXHTML/CHtmlView
+- AFXHTML/CHtmlView::Create
+- AFXHTML/CHtmlView::CreateControlSite
+- AFXHTML/CHtmlView::ExecFormsCommand
+- AFXHTML/CHtmlView::ExecWB
+- AFXHTML/CHtmlView::GetAddressBar
+- AFXHTML/CHtmlView::GetApplication
+- AFXHTML/CHtmlView::GetBusy
+- AFXHTML/CHtmlView::GetContainer
+- AFXHTML/CHtmlView::GetFullName
+- AFXHTML/CHtmlView::GetFullScreen
+- AFXHTML/CHtmlView::GetHeight
+- AFXHTML/CHtmlView::GetHtmlDocument
+- AFXHTML/CHtmlView::GetLeft
+- AFXHTML/CHtmlView::GetLocationName
+- AFXHTML/CHtmlView::GetLocationURL
+- AFXHTML/CHtmlView::GetMenuBar
+- AFXHTML/CHtmlView::GetOffline
+- AFXHTML/CHtmlView::GetParentBrowser
+- AFXHTML/CHtmlView::GetProperty
+- AFXHTML/CHtmlView::GetReadyState
+- AFXHTML/CHtmlView::GetRegisterAsBrowser
+- AFXHTML/CHtmlView::GetRegisterAsDropTarget
+- AFXHTML/CHtmlView::GetSilent
+- AFXHTML/CHtmlView::GetSource
+- AFXHTML/CHtmlView::GetStatusBar
+- AFXHTML/CHtmlView::GetTheaterMode
+- AFXHTML/CHtmlView::GetToolBar
+- AFXHTML/CHtmlView::GetTop
+- AFXHTML/CHtmlView::GetTopLevelContainer
+- AFXHTML/CHtmlView::GetType
+- AFXHTML/CHtmlView::GetVisible
+- AFXHTML/CHtmlView::GetWidth
+- AFXHTML/CHtmlView::GoBack
+- AFXHTML/CHtmlView::GoForward
+- AFXHTML/CHtmlView::GoHome
+- AFXHTML/CHtmlView::GoSearch
+- AFXHTML/CHtmlView::LoadFromResource
+- AFXHTML/CHtmlView::Navigate
+- AFXHTML/CHtmlView::Navigate2
+- AFXHTML/CHtmlView::OnBeforeNavigate2
+- AFXHTML/CHtmlView::OnCommandStateChange
+- AFXHTML/CHtmlView::OnDocumentComplete
+- AFXHTML/CHtmlView::OnDocWindowActivate
+- AFXHTML/CHtmlView::OnDownloadBegin
+- AFXHTML/CHtmlView::OnDownloadComplete
+- AFXHTML/CHtmlView::OnEnableModeless
+- AFXHTML/CHtmlView::OnFilterDataObject
+- AFXHTML/CHtmlView::OnFrameWindowActivate
+- AFXHTML/CHtmlView::OnFullScreen
+- AFXHTML/CHtmlView::OnGetDropTarget
+- AFXHTML/CHtmlView::OnGetExternal
+- AFXHTML/CHtmlView::OnGetHostInfo
+- AFXHTML/CHtmlView::OnGetOptionKeyPath
+- AFXHTML/CHtmlView::OnHideUI
+- AFXHTML/CHtmlView::OnMenuBar
+- AFXHTML/CHtmlView::OnNavigateComplete2
+- AFXHTML/CHtmlView::OnNavigateError
+- AFXHTML/CHtmlView::OnNewWindow2
+- AFXHTML/CHtmlView::OnProgressChange
+- AFXHTML/CHtmlView::OnPropertyChange
+- AFXHTML/CHtmlView::OnQuit
+- AFXHTML/CHtmlView::OnResizeBorder
+- AFXHTML/CHtmlView::OnShowContextMenu
+- AFXHTML/CHtmlView::OnShowUI
+- AFXHTML/CHtmlView::OnStatusBar
+- AFXHTML/CHtmlView::OnStatusTextChange
+- AFXHTML/CHtmlView::OnTheaterMode
+- AFXHTML/CHtmlView::OnTitleChange
+- AFXHTML/CHtmlView::OnToolBar
+- AFXHTML/CHtmlView::OnTranslateAccelerator
+- AFXHTML/CHtmlView::OnTranslateUrl
+- AFXHTML/CHtmlView::OnUpdateUI
+- AFXHTML/CHtmlView::OnVisible
+- AFXHTML/CHtmlView::PutProperty
+- AFXHTML/CHtmlView::QueryFormsCommand
+- AFXHTML/CHtmlView::QueryStatusWB
+- AFXHTML/CHtmlView::Refresh
+- AFXHTML/CHtmlView::Refresh2
+- AFXHTML/CHtmlView::SetAddressBar
+- AFXHTML/CHtmlView::SetFullScreen
+- AFXHTML/CHtmlView::SetHeight
+- AFXHTML/CHtmlView::SetLeft
+- AFXHTML/CHtmlView::SetMenuBar
+- AFXHTML/CHtmlView::SetOffline
+- AFXHTML/CHtmlView::SetRegisterAsBrowser
+- AFXHTML/CHtmlView::SetRegisterAsDropTarget
+- AFXHTML/CHtmlView::SetSilent
+- AFXHTML/CHtmlView::SetStatusBar
+- AFXHTML/CHtmlView::SetTheaterMode
+- AFXHTML/CHtmlView::SetToolBar
+- AFXHTML/CHtmlView::SetTop
+- AFXHTML/CHtmlView::SetVisible
+- AFXHTML/CHtmlView::SetWidth
+- AFXHTML/CHtmlView::Stop
+helpviewer_keywords:
+- CHtmlView [MFC], Create
+- CHtmlView [MFC], CreateControlSite
+- CHtmlView [MFC], ExecFormsCommand
+- CHtmlView [MFC], ExecWB
+- CHtmlView [MFC], GetAddressBar
+- CHtmlView [MFC], GetApplication
+- CHtmlView [MFC], GetBusy
+- CHtmlView [MFC], GetContainer
+- CHtmlView [MFC], GetFullName
+- CHtmlView [MFC], GetFullScreen
+- CHtmlView [MFC], GetHeight
+- CHtmlView [MFC], GetHtmlDocument
+- CHtmlView [MFC], GetLeft
+- CHtmlView [MFC], GetLocationName
+- CHtmlView [MFC], GetLocationURL
+- CHtmlView [MFC], GetMenuBar
+- CHtmlView [MFC], GetOffline
+- CHtmlView [MFC], GetParentBrowser
+- CHtmlView [MFC], GetProperty
+- CHtmlView [MFC], GetReadyState
+- CHtmlView [MFC], GetRegisterAsBrowser
+- CHtmlView [MFC], GetRegisterAsDropTarget
+- CHtmlView [MFC], GetSilent
+- CHtmlView [MFC], GetSource
+- CHtmlView [MFC], GetStatusBar
+- CHtmlView [MFC], GetTheaterMode
+- CHtmlView [MFC], GetToolBar
+- CHtmlView [MFC], GetTop
+- CHtmlView [MFC], GetTopLevelContainer
+- CHtmlView [MFC], GetType
+- CHtmlView [MFC], GetVisible
+- CHtmlView [MFC], GetWidth
+- CHtmlView [MFC], GoBack
+- CHtmlView [MFC], GoForward
+- CHtmlView [MFC], GoHome
+- CHtmlView [MFC], GoSearch
+- CHtmlView [MFC], LoadFromResource
+- CHtmlView [MFC], Navigate
+- CHtmlView [MFC], Navigate2
+- CHtmlView [MFC], OnBeforeNavigate2
+- CHtmlView [MFC], OnCommandStateChange
+- CHtmlView [MFC], OnDocumentComplete
+- CHtmlView [MFC], OnDocWindowActivate
+- CHtmlView [MFC], OnDownloadBegin
+- CHtmlView [MFC], OnDownloadComplete
+- CHtmlView [MFC], OnEnableModeless
+- CHtmlView [MFC], OnFilterDataObject
+- CHtmlView [MFC], OnFrameWindowActivate
+- CHtmlView [MFC], OnFullScreen
+- CHtmlView [MFC], OnGetDropTarget
+- CHtmlView [MFC], OnGetExternal
+- CHtmlView [MFC], OnGetHostInfo
+- CHtmlView [MFC], OnGetOptionKeyPath
+- CHtmlView [MFC], OnHideUI
+- CHtmlView [MFC], OnMenuBar
+- CHtmlView [MFC], OnNavigateComplete2
+- CHtmlView [MFC], OnNavigateError
+- CHtmlView [MFC], OnNewWindow2
+- CHtmlView [MFC], OnProgressChange
+- CHtmlView [MFC], OnPropertyChange
+- CHtmlView [MFC], OnQuit
+- CHtmlView [MFC], OnResizeBorder
+- CHtmlView [MFC], OnShowContextMenu
+- CHtmlView [MFC], OnShowUI
+- CHtmlView [MFC], OnStatusBar
+- CHtmlView [MFC], OnStatusTextChange
+- CHtmlView [MFC], OnTheaterMode
+- CHtmlView [MFC], OnTitleChange
+- CHtmlView [MFC], OnToolBar
+- CHtmlView [MFC], OnTranslateAccelerator
+- CHtmlView [MFC], OnTranslateUrl
+- CHtmlView [MFC], OnUpdateUI
+- CHtmlView [MFC], OnVisible
+- CHtmlView [MFC], PutProperty
+- CHtmlView [MFC], QueryFormsCommand
+- CHtmlView [MFC], QueryStatusWB
+- CHtmlView [MFC], Refresh
+- CHtmlView [MFC], Refresh2
+- CHtmlView [MFC], SetAddressBar
+- CHtmlView [MFC], SetFullScreen
+- CHtmlView [MFC], SetHeight
+- CHtmlView [MFC], SetLeft
+- CHtmlView [MFC], SetMenuBar
+- CHtmlView [MFC], SetOffline
+- CHtmlView [MFC], SetRegisterAsBrowser
+- CHtmlView [MFC], SetRegisterAsDropTarget
+- CHtmlView [MFC], SetSilent
+- CHtmlView [MFC], SetStatusBar
+- CHtmlView [MFC], SetTheaterMode
+- CHtmlView [MFC], SetToolBar
+- CHtmlView [MFC], SetTop
+- CHtmlView [MFC], SetVisible
+- CHtmlView [MFC], SetWidth
+- CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
 ---
 # CHtmlView Class
@@ -896,7 +1086,7 @@ void Navigate2(
 ### Parameters
 
 *pIDL*<br/>
-A pointer to an [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) structure.
+A pointer to an [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) structure.
 
 *dwFlags*<br/>
 The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.

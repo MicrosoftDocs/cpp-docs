@@ -1,8 +1,36 @@
 ---
-title: "CSpinButtonCtrl Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl", "AFXCMN/CSpinButtonCtrl::Create", "AFXCMN/CSpinButtonCtrl::CreateEx", "AFXCMN/CSpinButtonCtrl::GetAccel", "AFXCMN/CSpinButtonCtrl::GetBase", "AFXCMN/CSpinButtonCtrl::GetBuddy", "AFXCMN/CSpinButtonCtrl::GetPos", "AFXCMN/CSpinButtonCtrl::GetRange", "AFXCMN/CSpinButtonCtrl::SetAccel", "AFXCMN/CSpinButtonCtrl::SetBase", "AFXCMN/CSpinButtonCtrl::SetBuddy", "AFXCMN/CSpinButtonCtrl::SetPos", "AFXCMN/CSpinButtonCtrl::SetRange"]
-helpviewer_keywords: ["CSpinButtonCtrl [MFC], CSpinButtonCtrl", "CSpinButtonCtrl [MFC], Create", "CSpinButtonCtrl [MFC], CreateEx", "CSpinButtonCtrl [MFC], GetAccel", "CSpinButtonCtrl [MFC], GetBase", "CSpinButtonCtrl [MFC], GetBuddy", "CSpinButtonCtrl [MFC], GetPos", "CSpinButtonCtrl [MFC], GetRange", "CSpinButtonCtrl [MFC], SetAccel", "CSpinButtonCtrl [MFC], SetBase", "CSpinButtonCtrl [MFC], SetBuddy", "CSpinButtonCtrl [MFC], SetPos", "CSpinButtonCtrl [MFC], SetRange"]
+title: CSpinButtonCtrl Class
+ms.date: 11/04/2016
+f1_keywords:
+- CSpinButtonCtrl
+- AFXCMN/CSpinButtonCtrl
+- AFXCMN/CSpinButtonCtrl::CSpinButtonCtrl
+- AFXCMN/CSpinButtonCtrl::Create
+- AFXCMN/CSpinButtonCtrl::CreateEx
+- AFXCMN/CSpinButtonCtrl::GetAccel
+- AFXCMN/CSpinButtonCtrl::GetBase
+- AFXCMN/CSpinButtonCtrl::GetBuddy
+- AFXCMN/CSpinButtonCtrl::GetPos
+- AFXCMN/CSpinButtonCtrl::GetRange
+- AFXCMN/CSpinButtonCtrl::SetAccel
+- AFXCMN/CSpinButtonCtrl::SetBase
+- AFXCMN/CSpinButtonCtrl::SetBuddy
+- AFXCMN/CSpinButtonCtrl::SetPos
+- AFXCMN/CSpinButtonCtrl::SetRange
+helpviewer_keywords:
+- CSpinButtonCtrl [MFC], CSpinButtonCtrl
+- CSpinButtonCtrl [MFC], Create
+- CSpinButtonCtrl [MFC], CreateEx
+- CSpinButtonCtrl [MFC], GetAccel
+- CSpinButtonCtrl [MFC], GetBase
+- CSpinButtonCtrl [MFC], GetBuddy
+- CSpinButtonCtrl [MFC], GetPos
+- CSpinButtonCtrl [MFC], GetRange
+- CSpinButtonCtrl [MFC], SetAccel
+- CSpinButtonCtrl [MFC], SetBase
+- CSpinButtonCtrl [MFC], SetBuddy
+- CSpinButtonCtrl [MFC], SetPos
+- CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
 ---
 # CSpinButtonCtrl Class
@@ -166,7 +194,7 @@ UINT GetAccel(
 Number of elements in the array specified by *pAccel*.
 
 *pAccel*<br/>
-Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures that receives acceleration information.
+Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures that receives acceleration information.
 
 ### Return Value
 
@@ -264,7 +292,7 @@ BOOL SetAccel(
 ### Parameters
 
 *nAccel*<br/>
-Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) structures specified by *pAccel*.
+Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures specified by *pAccel*.
 
 *pAccel*<br/>
 Pointer to an array of UDACCEL structures, which contain acceleration information. Elements should be sorted in ascending order based on the `nSec` member.

@@ -1,8 +1,406 @@
 ---
-title: "CDC Class"
-ms.date: "11/19/2018"
-f1_keywords: ["CDC", "AFXWIN/CDC", "AFXWIN/CDC::CDC", "AFXWIN/CDC::AbortDoc", "AFXWIN/CDC::AbortPath", "AFXWIN/CDC::AddMetaFileComment", "AFXWIN/CDC::AlphaBlend", "AFXWIN/CDC::AngleArc", "AFXWIN/CDC::Arc", "AFXWIN/CDC::ArcTo", "AFXWIN/CDC::Attach", "AFXWIN/CDC::BeginPath", "AFXWIN/CDC::BitBlt", "AFXWIN/CDC::Chord", "AFXWIN/CDC::CloseFigure", "AFXWIN/CDC::CreateCompatibleDC", "AFXWIN/CDC::CreateDC", "AFXWIN/CDC::CreateIC", "AFXWIN/CDC::DeleteDC", "AFXWIN/CDC::DeleteTempMap", "AFXWIN/CDC::Detach", "AFXWIN/CDC::DPtoHIMETRIC", "AFXWIN/CDC::DPtoLP", "AFXWIN/CDC::Draw3dRect", "AFXWIN/CDC::DrawDragRect", "AFXWIN/CDC::DrawEdge", "AFXWIN/CDC::DrawEscape", "AFXWIN/CDC::DrawFocusRect", "AFXWIN/CDC::DrawFrameControl", "AFXWIN/CDC::DrawIcon", "AFXWIN/CDC::DrawState", "AFXWIN/CDC::DrawText", "AFXWIN/CDC::DrawTextEx", "AFXWIN/CDC::Ellipse", "AFXWIN/CDC::EndDoc", "AFXWIN/CDC::EndPage", "AFXWIN/CDC::EndPath", "AFXWIN/CDC::EnumObjects", "AFXWIN/CDC::Escape", "AFXWIN/CDC::ExcludeClipRect", "AFXWIN/CDC::ExcludeUpdateRgn", "AFXWIN/CDC::ExtFloodFill", "AFXWIN/CDC::ExtTextOut", "AFXWIN/CDC::FillPath", "AFXWIN/CDC::FillRect", "AFXWIN/CDC::FillRgn", "AFXWIN/CDC::FillSolidRect", "AFXWIN/CDC::FlattenPath", "AFXWIN/CDC::FloodFill", "AFXWIN/CDC::FrameRect", "AFXWIN/CDC::FrameRgn", "AFXWIN/CDC::FromHandle", "AFXWIN/CDC::GetArcDirection", "AFXWIN/CDC::GetAspectRatioFilter", "AFXWIN/CDC::GetBkColor", "AFXWIN/CDC::GetBkMode", "AFXWIN/CDC::GetBoundsRect", "AFXWIN/CDC::GetBrushOrg", "AFXWIN/CDC::GetCharABCWidths", "AFXWIN/CDC::GetCharABCWidthsI", "AFXWIN/CDC::GetCharacterPlacement", "AFXWIN/CDC::GetCharWidth", "AFXWIN/CDC::GetCharWidthI", "AFXWIN/CDC::GetClipBox", "AFXWIN/CDC::GetColorAdjustment", "AFXWIN/CDC::GetCurrentBitmap", "AFXWIN/CDC::GetCurrentBrush", "AFXWIN/CDC::GetCurrentFont", "AFXWIN/CDC::GetCurrentPalette", "AFXWIN/CDC::GetCurrentPen", "AFXWIN/CDC::GetCurrentPosition", "AFXWIN/CDC::GetDCBrushColor", "AFXWIN/CDC::GetDCPenColor", "AFXWIN/CDC::GetDeviceCaps", "AFXWIN/CDC::GetFontData", "AFXWIN/CDC::GetFontLanguageInfo", "AFXWIN/CDC::GetGlyphOutline", "AFXWIN/CDC::GetGraphicsMode", "AFXWIN/CDC::GetHalftoneBrush", "AFXWIN/CDC::GetKerningPairs", "AFXWIN/CDC::GetLayout", "AFXWIN/CDC::GetMapMode", "AFXWIN/CDC::GetMiterLimit", "AFXWIN/CDC::GetNearestColor", "AFXWIN/CDC::GetOutlineTextMetrics", "AFXWIN/CDC::GetOutputCharWidth", "AFXWIN/CDC::GetOutputTabbedTextExtent", "AFXWIN/CDC::GetOutputTextExtent", "AFXWIN/CDC::GetOutputTextMetrics", "AFXWIN/CDC::GetPath", "AFXWIN/CDC::GetPixel", "AFXWIN/CDC::GetPolyFillMode", "AFXWIN/CDC::GetROP2", "AFXWIN/CDC::GetSafeHdc", "AFXWIN/CDC::GetStretchBltMode", "AFXWIN/CDC::GetTabbedTextExtent", "AFXWIN/CDC::GetTextAlign", "AFXWIN/CDC::GetTextCharacterExtra", "AFXWIN/CDC::GetTextColor", "AFXWIN/CDC::GetTextExtent", "AFXWIN/CDC::GetTextExtentExPointI", "AFXWIN/CDC::GetTextExtentPointI", "AFXWIN/CDC::GetTextFace", "AFXWIN/CDC::GetTextMetrics", "AFXWIN/CDC::GetViewportExt", "AFXWIN/CDC::GetViewportOrg", "AFXWIN/CDC::GetWindow", "AFXWIN/CDC::GetWindowExt", "AFXWIN/CDC::GetWindowOrg", "AFXWIN/CDC::GetWorldTransform", "AFXWIN/CDC::GradientFill", "AFXWIN/CDC::GrayString", "AFXWIN/CDC::HIMETRICtoDP", "AFXWIN/CDC::HIMETRICtoLP", "AFXWIN/CDC::IntersectClipRect", "AFXWIN/CDC::InvertRect", "AFXWIN/CDC::InvertRgn", "AFXWIN/CDC::IsPrinting", "AFXWIN/CDC::LineTo", "AFXWIN/CDC::LPtoDP", "AFXWIN/CDC::LPtoHIMETRIC", "AFXWIN/CDC::MaskBlt", "AFXWIN/CDC::ModifyWorldTransform", "AFXWIN/CDC::MoveTo", "AFXWIN/CDC::OffsetClipRgn", "AFXWIN/CDC::OffsetViewportOrg", "AFXWIN/CDC::OffsetWindowOrg", "AFXWIN/CDC::PaintRgn", "AFXWIN/CDC::PatBlt", "AFXWIN/CDC::Pie", "AFXWIN/CDC::PlayMetaFile", "AFXWIN/CDC::PlgBlt", "AFXWIN/CDC::PolyBezier", "AFXWIN/CDC::PolyBezierTo", "AFXWIN/CDC::PolyDraw", "AFXWIN/CDC::Polygon", "AFXWIN/CDC::Polyline", "AFXWIN/CDC::PolylineTo", "AFXWIN/CDC::PolyPolygon", "AFXWIN/CDC::PolyPolyline", "AFXWIN/CDC::PtVisible", "AFXWIN/CDC::RealizePalette", "AFXWIN/CDC::Rectangle", "AFXWIN/CDC::RectVisible", "AFXWIN/CDC::ReleaseAttribDC", "AFXWIN/CDC::ReleaseOutputDC", "AFXWIN/CDC::ResetDC", "AFXWIN/CDC::RestoreDC", "AFXWIN/CDC::RoundRect", "AFXWIN/CDC::SaveDC", "AFXWIN/CDC::ScaleViewportExt", "AFXWIN/CDC::ScaleWindowExt", "AFXWIN/CDC::ScrollDC", "AFXWIN/CDC::SelectClipPath", "AFXWIN/CDC::SelectClipRgn", "AFXWIN/CDC::SelectObject", "AFXWIN/CDC::SelectPalette", "AFXWIN/CDC::SelectStockObject", "AFXWIN/CDC::SetAbortProc", "AFXWIN/CDC::SetArcDirection", "AFXWIN/CDC::SetAttribDC", "AFXWIN/CDC::SetBkColor", "AFXWIN/CDC::SetBkMode", "AFXWIN/CDC::SetBoundsRect", "AFXWIN/CDC::SetBrushOrg", "AFXWIN/CDC::SetColorAdjustment", "AFXWIN/CDC::SetDCBrushColor", "AFXWIN/CDC::SetDCPenColor", "AFXWIN/CDC::SetGraphicsMode", "AFXWIN/CDC::SetLayout", "AFXWIN/CDC::SetMapMode", "AFXWIN/CDC::SetMapperFlags", "AFXWIN/CDC::SetMiterLimit", "AFXWIN/CDC::SetOutputDC", "AFXWIN/CDC::SetPixel", "AFXWIN/CDC::SetPixelV", "AFXWIN/CDC::SetPolyFillMode", "AFXWIN/CDC::SetROP2", "AFXWIN/CDC::SetStretchBltMode", "AFXWIN/CDC::SetTextAlign", "AFXWIN/CDC::SetTextCharacterExtra", "AFXWIN/CDC::SetTextColor", "AFXWIN/CDC::SetTextJustification", "AFXWIN/CDC::SetViewportExt", "AFXWIN/CDC::SetViewportOrg", "AFXWIN/CDC::SetWindowExt", "AFXWIN/CDC::SetWindowOrg", "AFXWIN/CDC::SetWorldTransform", "AFXWIN/CDC::StartDoc", "AFXWIN/CDC::StartPage", "AFXWIN/CDC::StretchBlt", "AFXWIN/CDC::StrokeAndFillPath", "AFXWIN/CDC::StrokePath", "AFXWIN/CDC::TabbedTextOut", "AFXWIN/CDC::TextOut", "AFXWIN/CDC::TransparentBlt", "AFXWIN/CDC::UpdateColors", "AFXWIN/CDC::WidenPath", "AFXWIN/CDC::m_hAttribDC", "AFXWIN/CDC::m_hDC"]
-helpviewer_keywords: ["CDC [MFC], CDC", "CDC [MFC], AbortDoc", "CDC [MFC], AbortPath", "CDC [MFC], AddMetaFileComment", "CDC [MFC], AlphaBlend", "CDC [MFC], AngleArc", "CDC [MFC], Arc", "CDC [MFC], ArcTo", "CDC [MFC], Attach", "CDC [MFC], BeginPath", "CDC [MFC], BitBlt", "CDC [MFC], Chord", "CDC [MFC], CloseFigure", "CDC [MFC], CreateCompatibleDC", "CDC [MFC], CreateDC", "CDC [MFC], CreateIC", "CDC [MFC], DeleteDC", "CDC [MFC], DeleteTempMap", "CDC [MFC], Detach", "CDC [MFC], DPtoHIMETRIC", "CDC [MFC], DPtoLP", "CDC [MFC], Draw3dRect", "CDC [MFC], DrawDragRect", "CDC [MFC], DrawEdge", "CDC [MFC], DrawEscape", "CDC [MFC], DrawFocusRect", "CDC [MFC], DrawFrameControl", "CDC [MFC], DrawIcon", "CDC [MFC], DrawState", "CDC [MFC], DrawText", "CDC [MFC], DrawTextEx", "CDC [MFC], Ellipse", "CDC [MFC], EndDoc", "CDC [MFC], EndPage", "CDC [MFC], EndPath", "CDC [MFC], EnumObjects", "CDC [MFC], Escape", "CDC [MFC], ExcludeClipRect", "CDC [MFC], ExcludeUpdateRgn", "CDC [MFC], ExtFloodFill", "CDC [MFC], ExtTextOut", "CDC [MFC], FillPath", "CDC [MFC], FillRect", "CDC [MFC], FillRgn", "CDC [MFC], FillSolidRect", "CDC [MFC], FlattenPath", "CDC [MFC], FloodFill", "CDC [MFC], FrameRect", "CDC [MFC], FrameRgn", "CDC [MFC], FromHandle", "CDC [MFC], GetArcDirection", "CDC [MFC], GetAspectRatioFilter", "CDC [MFC], GetBkColor", "CDC [MFC], GetBkMode", "CDC [MFC], GetBoundsRect", "CDC [MFC], GetBrushOrg", "CDC [MFC], GetCharABCWidths", "CDC [MFC], GetCharABCWidthsI", "CDC [MFC], GetCharacterPlacement", "CDC [MFC], GetCharWidth", "CDC [MFC], GetCharWidthI", "CDC [MFC], GetClipBox", "CDC [MFC], GetColorAdjustment", "CDC [MFC], GetCurrentBitmap", "CDC [MFC], GetCurrentBrush", "CDC [MFC], GetCurrentFont", "CDC [MFC], GetCurrentPalette", "CDC [MFC], GetCurrentPen", "CDC [MFC], GetCurrentPosition", "CDC [MFC], GetDCBrushColor", "CDC [MFC], GetDCPenColor", "CDC [MFC], GetDeviceCaps", "CDC [MFC], GetFontData", "CDC [MFC], GetFontLanguageInfo", "CDC [MFC], GetGlyphOutline", "CDC [MFC], GetGraphicsMode", "CDC [MFC], GetHalftoneBrush", "CDC [MFC], GetKerningPairs", "CDC [MFC], GetLayout", "CDC [MFC], GetMapMode", "CDC [MFC], GetMiterLimit", "CDC [MFC], GetNearestColor", "CDC [MFC], GetOutlineTextMetrics", "CDC [MFC], GetOutputCharWidth", "CDC [MFC], GetOutputTabbedTextExtent", "CDC [MFC], GetOutputTextExtent", "CDC [MFC], GetOutputTextMetrics", "CDC [MFC], GetPath", "CDC [MFC], GetPixel", "CDC [MFC], GetPolyFillMode", "CDC [MFC], GetROP2", "CDC [MFC], GetSafeHdc", "CDC [MFC], GetStretchBltMode", "CDC [MFC], GetTabbedTextExtent", "CDC [MFC], GetTextAlign", "CDC [MFC], GetTextCharacterExtra", "CDC [MFC], GetTextColor", "CDC [MFC], GetTextExtent", "CDC [MFC], GetTextExtentExPointI", "CDC [MFC], GetTextExtentPointI", "CDC [MFC], GetTextFace", "CDC [MFC], GetTextMetrics", "CDC [MFC], GetViewportExt", "CDC [MFC], GetViewportOrg", "CDC [MFC], GetWindow", "CDC [MFC], GetWindowExt", "CDC [MFC], GetWindowOrg", "CDC [MFC], GetWorldTransform", "CDC [MFC], GradientFill", "CDC [MFC], GrayString", "CDC [MFC], HIMETRICtoDP", "CDC [MFC], HIMETRICtoLP", "CDC [MFC], IntersectClipRect", "CDC [MFC], InvertRect", "CDC [MFC], InvertRgn", "CDC [MFC], IsPrinting", "CDC [MFC], LineTo", "CDC [MFC], LPtoDP", "CDC [MFC], LPtoHIMETRIC", "CDC [MFC], MaskBlt", "CDC [MFC], ModifyWorldTransform", "CDC [MFC], MoveTo", "CDC [MFC], OffsetClipRgn", "CDC [MFC], OffsetViewportOrg", "CDC [MFC], OffsetWindowOrg", "CDC [MFC], PaintRgn", "CDC [MFC], PatBlt", "CDC [MFC], Pie", "CDC [MFC], PlayMetaFile", "CDC [MFC], PlgBlt", "CDC [MFC], PolyBezier", "CDC [MFC], PolyBezierTo", "CDC [MFC], PolyDraw", "CDC [MFC], Polygon", "CDC [MFC], Polyline", "CDC [MFC], PolylineTo", "CDC [MFC], PolyPolygon", "CDC [MFC], PolyPolyline", "CDC [MFC], PtVisible", "CDC [MFC], RealizePalette", "CDC [MFC], Rectangle", "CDC [MFC], RectVisible", "CDC [MFC], ReleaseAttribDC", "CDC [MFC], ReleaseOutputDC", "CDC [MFC], ResetDC", "CDC [MFC], RestoreDC", "CDC [MFC], RoundRect", "CDC [MFC], SaveDC", "CDC [MFC], ScaleViewportExt", "CDC [MFC], ScaleWindowExt", "CDC [MFC], ScrollDC", "CDC [MFC], SelectClipPath", "CDC [MFC], SelectClipRgn", "CDC [MFC], SelectObject", "CDC [MFC], SelectPalette", "CDC [MFC], SelectStockObject", "CDC [MFC], SetAbortProc", "CDC [MFC], SetArcDirection", "CDC [MFC], SetAttribDC", "CDC [MFC], SetBkColor", "CDC [MFC], SetBkMode", "CDC [MFC], SetBoundsRect", "CDC [MFC], SetBrushOrg", "CDC [MFC], SetColorAdjustment", "CDC [MFC], SetDCBrushColor", "CDC [MFC], SetDCPenColor", "CDC [MFC], SetGraphicsMode", "CDC [MFC], SetLayout", "CDC [MFC], SetMapMode", "CDC [MFC], SetMapperFlags", "CDC [MFC], SetMiterLimit", "CDC [MFC], SetOutputDC", "CDC [MFC], SetPixel", "CDC [MFC], SetPixelV", "CDC [MFC], SetPolyFillMode", "CDC [MFC], SetROP2", "CDC [MFC], SetStretchBltMode", "CDC [MFC], SetTextAlign", "CDC [MFC], SetTextCharacterExtra", "CDC [MFC], SetTextColor", "CDC [MFC], SetTextJustification", "CDC [MFC], SetViewportExt", "CDC [MFC], SetViewportOrg", "CDC [MFC], SetWindowExt", "CDC [MFC], SetWindowOrg", "CDC [MFC], SetWorldTransform", "CDC [MFC], StartDoc", "CDC [MFC], StartPage", "CDC [MFC], StretchBlt", "CDC [MFC], StrokeAndFillPath", "CDC [MFC], StrokePath", "CDC [MFC], TabbedTextOut", "CDC [MFC], TextOut", "CDC [MFC], TransparentBlt", "CDC [MFC], UpdateColors", "CDC [MFC], WidenPath", "CDC [MFC], m_hAttribDC", "CDC [MFC], m_hDC"]
+title: CDC Class
+ms.date: 11/19/2018
+f1_keywords:
+- CDC
+- AFXWIN/CDC
+- AFXWIN/CDC::CDC
+- AFXWIN/CDC::AbortDoc
+- AFXWIN/CDC::AbortPath
+- AFXWIN/CDC::AddMetaFileComment
+- AFXWIN/CDC::AlphaBlend
+- AFXWIN/CDC::AngleArc
+- AFXWIN/CDC::Arc
+- AFXWIN/CDC::ArcTo
+- AFXWIN/CDC::Attach
+- AFXWIN/CDC::BeginPath
+- AFXWIN/CDC::BitBlt
+- AFXWIN/CDC::Chord
+- AFXWIN/CDC::CloseFigure
+- AFXWIN/CDC::CreateCompatibleDC
+- AFXWIN/CDC::CreateDC
+- AFXWIN/CDC::CreateIC
+- AFXWIN/CDC::DeleteDC
+- AFXWIN/CDC::DeleteTempMap
+- AFXWIN/CDC::Detach
+- AFXWIN/CDC::DPtoHIMETRIC
+- AFXWIN/CDC::DPtoLP
+- AFXWIN/CDC::Draw3dRect
+- AFXWIN/CDC::DrawDragRect
+- AFXWIN/CDC::DrawEdge
+- AFXWIN/CDC::DrawEscape
+- AFXWIN/CDC::DrawFocusRect
+- AFXWIN/CDC::DrawFrameControl
+- AFXWIN/CDC::DrawIcon
+- AFXWIN/CDC::DrawState
+- AFXWIN/CDC::DrawText
+- AFXWIN/CDC::DrawTextEx
+- AFXWIN/CDC::Ellipse
+- AFXWIN/CDC::EndDoc
+- AFXWIN/CDC::EndPage
+- AFXWIN/CDC::EndPath
+- AFXWIN/CDC::EnumObjects
+- AFXWIN/CDC::Escape
+- AFXWIN/CDC::ExcludeClipRect
+- AFXWIN/CDC::ExcludeUpdateRgn
+- AFXWIN/CDC::ExtFloodFill
+- AFXWIN/CDC::ExtTextOut
+- AFXWIN/CDC::FillPath
+- AFXWIN/CDC::FillRect
+- AFXWIN/CDC::FillRgn
+- AFXWIN/CDC::FillSolidRect
+- AFXWIN/CDC::FlattenPath
+- AFXWIN/CDC::FloodFill
+- AFXWIN/CDC::FrameRect
+- AFXWIN/CDC::FrameRgn
+- AFXWIN/CDC::FromHandle
+- AFXWIN/CDC::GetArcDirection
+- AFXWIN/CDC::GetAspectRatioFilter
+- AFXWIN/CDC::GetBkColor
+- AFXWIN/CDC::GetBkMode
+- AFXWIN/CDC::GetBoundsRect
+- AFXWIN/CDC::GetBrushOrg
+- AFXWIN/CDC::GetCharABCWidths
+- AFXWIN/CDC::GetCharABCWidthsI
+- AFXWIN/CDC::GetCharacterPlacement
+- AFXWIN/CDC::GetCharWidth
+- AFXWIN/CDC::GetCharWidthI
+- AFXWIN/CDC::GetClipBox
+- AFXWIN/CDC::GetColorAdjustment
+- AFXWIN/CDC::GetCurrentBitmap
+- AFXWIN/CDC::GetCurrentBrush
+- AFXWIN/CDC::GetCurrentFont
+- AFXWIN/CDC::GetCurrentPalette
+- AFXWIN/CDC::GetCurrentPen
+- AFXWIN/CDC::GetCurrentPosition
+- AFXWIN/CDC::GetDCBrushColor
+- AFXWIN/CDC::GetDCPenColor
+- AFXWIN/CDC::GetDeviceCaps
+- AFXWIN/CDC::GetFontData
+- AFXWIN/CDC::GetFontLanguageInfo
+- AFXWIN/CDC::GetGlyphOutline
+- AFXWIN/CDC::GetGraphicsMode
+- AFXWIN/CDC::GetHalftoneBrush
+- AFXWIN/CDC::GetKerningPairs
+- AFXWIN/CDC::GetLayout
+- AFXWIN/CDC::GetMapMode
+- AFXWIN/CDC::GetMiterLimit
+- AFXWIN/CDC::GetNearestColor
+- AFXWIN/CDC::GetOutlineTextMetrics
+- AFXWIN/CDC::GetOutputCharWidth
+- AFXWIN/CDC::GetOutputTabbedTextExtent
+- AFXWIN/CDC::GetOutputTextExtent
+- AFXWIN/CDC::GetOutputTextMetrics
+- AFXWIN/CDC::GetPath
+- AFXWIN/CDC::GetPixel
+- AFXWIN/CDC::GetPolyFillMode
+- AFXWIN/CDC::GetROP2
+- AFXWIN/CDC::GetSafeHdc
+- AFXWIN/CDC::GetStretchBltMode
+- AFXWIN/CDC::GetTabbedTextExtent
+- AFXWIN/CDC::GetTextAlign
+- AFXWIN/CDC::GetTextCharacterExtra
+- AFXWIN/CDC::GetTextColor
+- AFXWIN/CDC::GetTextExtent
+- AFXWIN/CDC::GetTextExtentExPointI
+- AFXWIN/CDC::GetTextExtentPointI
+- AFXWIN/CDC::GetTextFace
+- AFXWIN/CDC::GetTextMetrics
+- AFXWIN/CDC::GetViewportExt
+- AFXWIN/CDC::GetViewportOrg
+- AFXWIN/CDC::GetWindow
+- AFXWIN/CDC::GetWindowExt
+- AFXWIN/CDC::GetWindowOrg
+- AFXWIN/CDC::GetWorldTransform
+- AFXWIN/CDC::GradientFill
+- AFXWIN/CDC::GrayString
+- AFXWIN/CDC::HIMETRICtoDP
+- AFXWIN/CDC::HIMETRICtoLP
+- AFXWIN/CDC::IntersectClipRect
+- AFXWIN/CDC::InvertRect
+- AFXWIN/CDC::InvertRgn
+- AFXWIN/CDC::IsPrinting
+- AFXWIN/CDC::LineTo
+- AFXWIN/CDC::LPtoDP
+- AFXWIN/CDC::LPtoHIMETRIC
+- AFXWIN/CDC::MaskBlt
+- AFXWIN/CDC::ModifyWorldTransform
+- AFXWIN/CDC::MoveTo
+- AFXWIN/CDC::OffsetClipRgn
+- AFXWIN/CDC::OffsetViewportOrg
+- AFXWIN/CDC::OffsetWindowOrg
+- AFXWIN/CDC::PaintRgn
+- AFXWIN/CDC::PatBlt
+- AFXWIN/CDC::Pie
+- AFXWIN/CDC::PlayMetaFile
+- AFXWIN/CDC::PlgBlt
+- AFXWIN/CDC::PolyBezier
+- AFXWIN/CDC::PolyBezierTo
+- AFXWIN/CDC::PolyDraw
+- AFXWIN/CDC::Polygon
+- AFXWIN/CDC::Polyline
+- AFXWIN/CDC::PolylineTo
+- AFXWIN/CDC::PolyPolygon
+- AFXWIN/CDC::PolyPolyline
+- AFXWIN/CDC::PtVisible
+- AFXWIN/CDC::RealizePalette
+- AFXWIN/CDC::Rectangle
+- AFXWIN/CDC::RectVisible
+- AFXWIN/CDC::ReleaseAttribDC
+- AFXWIN/CDC::ReleaseOutputDC
+- AFXWIN/CDC::ResetDC
+- AFXWIN/CDC::RestoreDC
+- AFXWIN/CDC::RoundRect
+- AFXWIN/CDC::SaveDC
+- AFXWIN/CDC::ScaleViewportExt
+- AFXWIN/CDC::ScaleWindowExt
+- AFXWIN/CDC::ScrollDC
+- AFXWIN/CDC::SelectClipPath
+- AFXWIN/CDC::SelectClipRgn
+- AFXWIN/CDC::SelectObject
+- AFXWIN/CDC::SelectPalette
+- AFXWIN/CDC::SelectStockObject
+- AFXWIN/CDC::SetAbortProc
+- AFXWIN/CDC::SetArcDirection
+- AFXWIN/CDC::SetAttribDC
+- AFXWIN/CDC::SetBkColor
+- AFXWIN/CDC::SetBkMode
+- AFXWIN/CDC::SetBoundsRect
+- AFXWIN/CDC::SetBrushOrg
+- AFXWIN/CDC::SetColorAdjustment
+- AFXWIN/CDC::SetDCBrushColor
+- AFXWIN/CDC::SetDCPenColor
+- AFXWIN/CDC::SetGraphicsMode
+- AFXWIN/CDC::SetLayout
+- AFXWIN/CDC::SetMapMode
+- AFXWIN/CDC::SetMapperFlags
+- AFXWIN/CDC::SetMiterLimit
+- AFXWIN/CDC::SetOutputDC
+- AFXWIN/CDC::SetPixel
+- AFXWIN/CDC::SetPixelV
+- AFXWIN/CDC::SetPolyFillMode
+- AFXWIN/CDC::SetROP2
+- AFXWIN/CDC::SetStretchBltMode
+- AFXWIN/CDC::SetTextAlign
+- AFXWIN/CDC::SetTextCharacterExtra
+- AFXWIN/CDC::SetTextColor
+- AFXWIN/CDC::SetTextJustification
+- AFXWIN/CDC::SetViewportExt
+- AFXWIN/CDC::SetViewportOrg
+- AFXWIN/CDC::SetWindowExt
+- AFXWIN/CDC::SetWindowOrg
+- AFXWIN/CDC::SetWorldTransform
+- AFXWIN/CDC::StartDoc
+- AFXWIN/CDC::StartPage
+- AFXWIN/CDC::StretchBlt
+- AFXWIN/CDC::StrokeAndFillPath
+- AFXWIN/CDC::StrokePath
+- AFXWIN/CDC::TabbedTextOut
+- AFXWIN/CDC::TextOut
+- AFXWIN/CDC::TransparentBlt
+- AFXWIN/CDC::UpdateColors
+- AFXWIN/CDC::WidenPath
+- AFXWIN/CDC::m_hAttribDC
+- AFXWIN/CDC::m_hDC
+helpviewer_keywords:
+- CDC [MFC], CDC
+- CDC [MFC], AbortDoc
+- CDC [MFC], AbortPath
+- CDC [MFC], AddMetaFileComment
+- CDC [MFC], AlphaBlend
+- CDC [MFC], AngleArc
+- CDC [MFC], Arc
+- CDC [MFC], ArcTo
+- CDC [MFC], Attach
+- CDC [MFC], BeginPath
+- CDC [MFC], BitBlt
+- CDC [MFC], Chord
+- CDC [MFC], CloseFigure
+- CDC [MFC], CreateCompatibleDC
+- CDC [MFC], CreateDC
+- CDC [MFC], CreateIC
+- CDC [MFC], DeleteDC
+- CDC [MFC], DeleteTempMap
+- CDC [MFC], Detach
+- CDC [MFC], DPtoHIMETRIC
+- CDC [MFC], DPtoLP
+- CDC [MFC], Draw3dRect
+- CDC [MFC], DrawDragRect
+- CDC [MFC], DrawEdge
+- CDC [MFC], DrawEscape
+- CDC [MFC], DrawFocusRect
+- CDC [MFC], DrawFrameControl
+- CDC [MFC], DrawIcon
+- CDC [MFC], DrawState
+- CDC [MFC], DrawText
+- CDC [MFC], DrawTextEx
+- CDC [MFC], Ellipse
+- CDC [MFC], EndDoc
+- CDC [MFC], EndPage
+- CDC [MFC], EndPath
+- CDC [MFC], EnumObjects
+- CDC [MFC], Escape
+- CDC [MFC], ExcludeClipRect
+- CDC [MFC], ExcludeUpdateRgn
+- CDC [MFC], ExtFloodFill
+- CDC [MFC], ExtTextOut
+- CDC [MFC], FillPath
+- CDC [MFC], FillRect
+- CDC [MFC], FillRgn
+- CDC [MFC], FillSolidRect
+- CDC [MFC], FlattenPath
+- CDC [MFC], FloodFill
+- CDC [MFC], FrameRect
+- CDC [MFC], FrameRgn
+- CDC [MFC], FromHandle
+- CDC [MFC], GetArcDirection
+- CDC [MFC], GetAspectRatioFilter
+- CDC [MFC], GetBkColor
+- CDC [MFC], GetBkMode
+- CDC [MFC], GetBoundsRect
+- CDC [MFC], GetBrushOrg
+- CDC [MFC], GetCharABCWidths
+- CDC [MFC], GetCharABCWidthsI
+- CDC [MFC], GetCharacterPlacement
+- CDC [MFC], GetCharWidth
+- CDC [MFC], GetCharWidthI
+- CDC [MFC], GetClipBox
+- CDC [MFC], GetColorAdjustment
+- CDC [MFC], GetCurrentBitmap
+- CDC [MFC], GetCurrentBrush
+- CDC [MFC], GetCurrentFont
+- CDC [MFC], GetCurrentPalette
+- CDC [MFC], GetCurrentPen
+- CDC [MFC], GetCurrentPosition
+- CDC [MFC], GetDCBrushColor
+- CDC [MFC], GetDCPenColor
+- CDC [MFC], GetDeviceCaps
+- CDC [MFC], GetFontData
+- CDC [MFC], GetFontLanguageInfo
+- CDC [MFC], GetGlyphOutline
+- CDC [MFC], GetGraphicsMode
+- CDC [MFC], GetHalftoneBrush
+- CDC [MFC], GetKerningPairs
+- CDC [MFC], GetLayout
+- CDC [MFC], GetMapMode
+- CDC [MFC], GetMiterLimit
+- CDC [MFC], GetNearestColor
+- CDC [MFC], GetOutlineTextMetrics
+- CDC [MFC], GetOutputCharWidth
+- CDC [MFC], GetOutputTabbedTextExtent
+- CDC [MFC], GetOutputTextExtent
+- CDC [MFC], GetOutputTextMetrics
+- CDC [MFC], GetPath
+- CDC [MFC], GetPixel
+- CDC [MFC], GetPolyFillMode
+- CDC [MFC], GetROP2
+- CDC [MFC], GetSafeHdc
+- CDC [MFC], GetStretchBltMode
+- CDC [MFC], GetTabbedTextExtent
+- CDC [MFC], GetTextAlign
+- CDC [MFC], GetTextCharacterExtra
+- CDC [MFC], GetTextColor
+- CDC [MFC], GetTextExtent
+- CDC [MFC], GetTextExtentExPointI
+- CDC [MFC], GetTextExtentPointI
+- CDC [MFC], GetTextFace
+- CDC [MFC], GetTextMetrics
+- CDC [MFC], GetViewportExt
+- CDC [MFC], GetViewportOrg
+- CDC [MFC], GetWindow
+- CDC [MFC], GetWindowExt
+- CDC [MFC], GetWindowOrg
+- CDC [MFC], GetWorldTransform
+- CDC [MFC], GradientFill
+- CDC [MFC], GrayString
+- CDC [MFC], HIMETRICtoDP
+- CDC [MFC], HIMETRICtoLP
+- CDC [MFC], IntersectClipRect
+- CDC [MFC], InvertRect
+- CDC [MFC], InvertRgn
+- CDC [MFC], IsPrinting
+- CDC [MFC], LineTo
+- CDC [MFC], LPtoDP
+- CDC [MFC], LPtoHIMETRIC
+- CDC [MFC], MaskBlt
+- CDC [MFC], ModifyWorldTransform
+- CDC [MFC], MoveTo
+- CDC [MFC], OffsetClipRgn
+- CDC [MFC], OffsetViewportOrg
+- CDC [MFC], OffsetWindowOrg
+- CDC [MFC], PaintRgn
+- CDC [MFC], PatBlt
+- CDC [MFC], Pie
+- CDC [MFC], PlayMetaFile
+- CDC [MFC], PlgBlt
+- CDC [MFC], PolyBezier
+- CDC [MFC], PolyBezierTo
+- CDC [MFC], PolyDraw
+- CDC [MFC], Polygon
+- CDC [MFC], Polyline
+- CDC [MFC], PolylineTo
+- CDC [MFC], PolyPolygon
+- CDC [MFC], PolyPolyline
+- CDC [MFC], PtVisible
+- CDC [MFC], RealizePalette
+- CDC [MFC], Rectangle
+- CDC [MFC], RectVisible
+- CDC [MFC], ReleaseAttribDC
+- CDC [MFC], ReleaseOutputDC
+- CDC [MFC], ResetDC
+- CDC [MFC], RestoreDC
+- CDC [MFC], RoundRect
+- CDC [MFC], SaveDC
+- CDC [MFC], ScaleViewportExt
+- CDC [MFC], ScaleWindowExt
+- CDC [MFC], ScrollDC
+- CDC [MFC], SelectClipPath
+- CDC [MFC], SelectClipRgn
+- CDC [MFC], SelectObject
+- CDC [MFC], SelectPalette
+- CDC [MFC], SelectStockObject
+- CDC [MFC], SetAbortProc
+- CDC [MFC], SetArcDirection
+- CDC [MFC], SetAttribDC
+- CDC [MFC], SetBkColor
+- CDC [MFC], SetBkMode
+- CDC [MFC], SetBoundsRect
+- CDC [MFC], SetBrushOrg
+- CDC [MFC], SetColorAdjustment
+- CDC [MFC], SetDCBrushColor
+- CDC [MFC], SetDCPenColor
+- CDC [MFC], SetGraphicsMode
+- CDC [MFC], SetLayout
+- CDC [MFC], SetMapMode
+- CDC [MFC], SetMapperFlags
+- CDC [MFC], SetMiterLimit
+- CDC [MFC], SetOutputDC
+- CDC [MFC], SetPixel
+- CDC [MFC], SetPixelV
+- CDC [MFC], SetPolyFillMode
+- CDC [MFC], SetROP2
+- CDC [MFC], SetStretchBltMode
+- CDC [MFC], SetTextAlign
+- CDC [MFC], SetTextCharacterExtra
+- CDC [MFC], SetTextColor
+- CDC [MFC], SetTextJustification
+- CDC [MFC], SetViewportExt
+- CDC [MFC], SetViewportOrg
+- CDC [MFC], SetWindowExt
+- CDC [MFC], SetWindowOrg
+- CDC [MFC], SetWorldTransform
+- CDC [MFC], StartDoc
+- CDC [MFC], StartPage
+- CDC [MFC], StretchBlt
+- CDC [MFC], StrokeAndFillPath
+- CDC [MFC], StrokePath
+- CDC [MFC], TabbedTextOut
+- CDC [MFC], TextOut
+- CDC [MFC], TransparentBlt
+- CDC [MFC], UpdateColors
+- CDC [MFC], WidenPath
+- CDC [MFC], m_hAttribDC
+- CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
 ---
 # CDC Class
@@ -406,7 +804,7 @@ Specifies the width, in logical units, of the source rectangle.
 Specifies the height, in logical units, of the source rectangle.
 
 *blend*<br/>
-Specifies a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure.
+Specifies a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) structure.
 
 ### Return Value
 
@@ -2363,10 +2761,10 @@ Specifies the first character in the range of characters from the current font f
 Specifies the last character in the range of characters from the current font for which character widths are returned.
 
 *lpabc*<br/>
-Points to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) structures that receive the character widths when the function returns. This array must contain at least as many `ABC` structures as there are characters in the range specified by the *nFirstChar* and *nLastChar* parameters.
+Points to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) structures that receive the character widths when the function returns. This array must contain at least as many `ABC` structures as there are characters in the range specified by the *nFirstChar* and *nLastChar* parameters.
 
 *lpABCF*<br/>
-Points to an application-supplied buffer with an array of [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat) structures to receive the character widths when the function returns. The widths returned by this function are in the IEEE floating-point format.
+Points to an application-supplied buffer with an array of [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-abcfloat) structures to receive the character widths when the function returns. The widths returned by this function are in the IEEE floating-point format.
 
 ### Return Value
 
@@ -2410,7 +2808,7 @@ Specifies the number of glyph indices.
 A pointer to an array containing glyph indices. If the value is NULL, the *giFirst* parameter is used instead. The *cgi* parameter specifies the number of glyph indices in this array.
 
 *lpabc*<br/>
-Pointer to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.
+Pointer to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.
 
 ### Return Value
 
@@ -2731,7 +3129,7 @@ The information to retrieve is identified by specifying an offset into the font 
 
 An application can sometimes use the `GetFontData` member function to save a TrueType font with a document. To do this, the application determines whether the font can be embedded and then retrieves the entire font file, specifying 0 for the *dwTable*, *dwOffset*, and *cbData* parameters.
 
-Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
+Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
 
 If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns -1.
 
@@ -2778,7 +3176,7 @@ Specifies the format in which the function is to return information. It can be o
 |GGO_BITMAP|Returns the glyph bitmap. When the function returns, the buffer pointed to by *lpBuffer* contains a 1-bit-per-pixel bitmap whose rows start on doubleword boundaries.|
 |GGO_NATIVE|Returns the curve data points in the rasterizer's native format, using device units. When this value is specified, any transformation specified in *lpmat2* is ignored.|
 
-When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-_glyphmetrics) structure but does not return glyph-outline data.
+When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-glyphmetrics) structure but does not return glyph-outline data.
 
 *lpgm*<br/>
 Points to a GLYPHMETRICS structure that describes the placement of the glyph in the character cell.
@@ -2790,7 +3188,7 @@ Specifies the size of the buffer into which the function copies information abou
 Points to a buffer into which the function copies information about the outline character. If *nFormat* specifies the GGO_NATIVE value, the information is copied in the form of TTPOLYGONHEADER and TTPOLYCURVE structures. If this value is NULL and *nFormat* is either the GGO_BITMAP or GGO_NATIVE value, the function returns the required size of the buffer.
 
 *lpmat2*<br/>
-Points to a [MAT2](/windows/desktop/api/wingdi/ns-wingdi-_mat2) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.
+Points to a [MAT2](/windows/desktop/api/wingdi/ns-wingdi-mat2) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.
 
 ### Return Value
 
@@ -2947,7 +3345,7 @@ UINT GetOutlineTextMetrics(
 ### Parameters
 
 *lpotm*<br/>
-Points to an array of [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.
+Points to an array of [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.
 
 *cbData*<br/>
 Specifies the size, in bytes, of the buffer to which information is returned.
@@ -2961,7 +3359,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.
+The [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.
 
 ##  <a name="getoutputcharwidth"></a>  CDC::GetOutputCharWidth
 
@@ -3630,13 +4028,13 @@ BOOL GradientFill(
 ### Parameters
 
 *pVertices*<br/>
-Pointer to an array of [TRIVERTEX](/windows/desktop/api/wingdi/ns-wingdi-_trivertex) structures that each define a triangle vertex.
+Pointer to an array of [TRIVERTEX](/windows/desktop/api/wingdi/ns-wingdi-trivertex) structures that each define a triangle vertex.
 
 *nVertices*<br/>
 The number of vertices.
 
 *pMesh*<br/>
-Array of [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-_gradient_triangle) structures in triangle mode, or an array of [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-_gradient_rect) structures in rectangle mode.
+Array of [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-gradient_triangle) structures in triangle mode, or an array of [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-gradient_rect) structures in rectangle mode.
 
 *nMeshElements*<br/>
 The number of elements (triangles or rectangles) in *pMesh*.
@@ -6271,7 +6669,7 @@ int StartDoc(LPCTSTR lpszDocName);
 ### Parameters
 
 *lpDocInfo*<br/>
-Points to a [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-_docinfoa) structure containing the name of the document file and the name of the output file.
+Points to a [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) structure containing the name of the document file and the name of the output file.
 
 *lpszDocName*<br/>
 Pointer to a string containing the name of the document file.

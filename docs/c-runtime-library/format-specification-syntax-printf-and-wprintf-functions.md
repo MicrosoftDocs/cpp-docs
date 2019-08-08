@@ -1,7 +1,13 @@
 ---
-title: "Format Specification Syntax: printf and wprintf Functions"
-ms.date: "07/30/2019"
-helpviewer_keywords: ["format specification fields for printf function", "printf function format specification fields", "flag directives, printf function", "type fields, printf function", "width fields, printf function", "precision fields, printf function"]
+title: 'Format Specification Syntax: printf and wprintf Functions'
+ms.date: 07/30/2019
+helpviewer_keywords:
+- format specification fields for printf function
+- printf function format specification fields
+- flag directives, printf function
+- type fields, printf function
+- width fields, printf function
+- precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
 ---
 # Format specification syntax: printf and wprintf functions
@@ -63,7 +69,7 @@ Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` 
 |**p**|Pointer type|Displays the argument as an address in hexadecimal digits.|
 |**s**|String|When used with `printf` functions, specifies a single-byte or multi-byte character string; when used with `wprintf` functions, specifies a wide-character string. Characters are displayed up to the first null character or until the *precision* value is reached.|
 |**S**|String|When used with `printf` functions, specifies a wide-character string; when used with `wprintf` functions, specifies a single-byte or multi-byte character string. Characters are displayed up to the first null character or until the *precision* value is reached.|
-|**Z**|`ANSI_STRING` or `UNICODE_STRING` structure|When the address of an [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) or [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure is passed as the argument, displays the string contained in the buffer pointed to by the `Buffer` field of the structure. Use a *size* modifier prefix of **w** to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br /> Typically, the **Z** type character is used only in driver debugging functions that use a conversion specification, such as `dbgPrint` and `kdPrint`.|
+|**Z**|`ANSI_STRING` or `UNICODE_STRING` structure|When the address of an [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-string) or [UNICODE_STRING](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure is passed as the argument, displays the string contained in the buffer pointed to by the `Buffer` field of the structure. Use a *size* modifier prefix of **w** to specify a `UNICODE_STRING` argument—for example, `%wZ`. The `Length` field of the structure must be set to the length, in bytes, of the string. The `MaximumLength` field of the structure must be set to the length, in bytes, of the buffer.<br /><br /> Typically, the **Z** type character is used only in driver debugging functions that use a conversion specification, such as `dbgPrint` and `kdPrint`.|
 
 Starting in Visual Studio 2015, if the argument that corresponds to a floating-point conversion specifier (**a**, **A**, **e**, **E**, **f**, **F**, **g**, **G**) is infinite, indefinite, or NaN, the formatted output conforms to the C99 standard. This table lists the formatted output:
 

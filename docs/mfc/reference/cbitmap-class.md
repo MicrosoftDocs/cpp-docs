@@ -1,8 +1,38 @@
 ---
-title: "CBitmap Class"
-ms.date: "11/04/2016"
-f1_keywords: ["CBitmap", "AFXWIN/CBitmap", "AFXWIN/CBitmap::CBitmap", "AFXWIN/CBitmap::CreateBitmap", "AFXWIN/CBitmap::CreateBitmapIndirect", "AFXWIN/CBitmap::CreateCompatibleBitmap", "AFXWIN/CBitmap::CreateDiscardableBitmap", "AFXWIN/CBitmap::FromHandle", "AFXWIN/CBitmap::GetBitmap", "AFXWIN/CBitmap::GetBitmapBits", "AFXWIN/CBitmap::GetBitmapDimension", "AFXWIN/CBitmap::LoadBitmap", "AFXWIN/CBitmap::LoadMappedBitmap", "AFXWIN/CBitmap::LoadOEMBitmap", "AFXWIN/CBitmap::SetBitmapBits", "AFXWIN/CBitmap::SetBitmapDimension"]
-helpviewer_keywords: ["CBitmap [MFC], CBitmap", "CBitmap [MFC], CreateBitmap", "CBitmap [MFC], CreateBitmapIndirect", "CBitmap [MFC], CreateCompatibleBitmap", "CBitmap [MFC], CreateDiscardableBitmap", "CBitmap [MFC], FromHandle", "CBitmap [MFC], GetBitmap", "CBitmap [MFC], GetBitmapBits", "CBitmap [MFC], GetBitmapDimension", "CBitmap [MFC], LoadBitmap", "CBitmap [MFC], LoadMappedBitmap", "CBitmap [MFC], LoadOEMBitmap", "CBitmap [MFC], SetBitmapBits", "CBitmap [MFC], SetBitmapDimension"]
+title: CBitmap Class
+ms.date: 11/04/2016
+f1_keywords:
+- CBitmap
+- AFXWIN/CBitmap
+- AFXWIN/CBitmap::CBitmap
+- AFXWIN/CBitmap::CreateBitmap
+- AFXWIN/CBitmap::CreateBitmapIndirect
+- AFXWIN/CBitmap::CreateCompatibleBitmap
+- AFXWIN/CBitmap::CreateDiscardableBitmap
+- AFXWIN/CBitmap::FromHandle
+- AFXWIN/CBitmap::GetBitmap
+- AFXWIN/CBitmap::GetBitmapBits
+- AFXWIN/CBitmap::GetBitmapDimension
+- AFXWIN/CBitmap::LoadBitmap
+- AFXWIN/CBitmap::LoadMappedBitmap
+- AFXWIN/CBitmap::LoadOEMBitmap
+- AFXWIN/CBitmap::SetBitmapBits
+- AFXWIN/CBitmap::SetBitmapDimension
+helpviewer_keywords:
+- CBitmap [MFC], CBitmap
+- CBitmap [MFC], CreateBitmap
+- CBitmap [MFC], CreateBitmapIndirect
+- CBitmap [MFC], CreateCompatibleBitmap
+- CBitmap [MFC], CreateDiscardableBitmap
+- CBitmap [MFC], FromHandle
+- CBitmap [MFC], GetBitmap
+- CBitmap [MFC], GetBitmapBits
+- CBitmap [MFC], GetBitmapDimension
+- CBitmap [MFC], LoadBitmap
+- CBitmap [MFC], LoadMappedBitmap
+- CBitmap [MFC], LoadOEMBitmap
+- CBitmap [MFC], SetBitmapBits
+- CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
 ---
 # CBitmap Class
@@ -372,7 +402,7 @@ Nonzero if successful; otherwise 0.
 
 By default, `LoadMappedBitmap` will map colors commonly used in button glyphs.
 
-For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-_colormap) structure in the Windows SDK.
+For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-colormap) structure in the Windows SDK.
 
 ##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap
 

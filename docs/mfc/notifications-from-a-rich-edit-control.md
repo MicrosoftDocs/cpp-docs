@@ -1,7 +1,11 @@
 ---
-title: "Notifications from a Rich Edit Control"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["messages [MFC], notification [MFC]", "CRichEditCtrl class [MFC], notifications", "rich edit controls [MFC], notifications", "notifications [MFC], from CRichEditCtrl"]
+title: Notifications from a Rich Edit Control
+ms.date: 11/04/2016
+helpviewer_keywords:
+- messages [MFC], notification [MFC]
+- CRichEditCtrl class [MFC], notifications
+- rich edit controls [MFC], notifications
+- notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
 ---
 # Notifications from a Rich Edit Control
@@ -12,13 +16,13 @@ To set the event mask for a rich edit control, use the [SetEventMask](../mfc/ref
 
 The following paragraphs list several specific notifications and their uses:
 
-- EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](/windows/desktop/api/richedit/ns-richedit-_msgfilter) structure.
+- EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](/windows/desktop/api/richedit/ns-richedit-msgfilter) structure.
 
 - EN_PROTECTED Handle the EN_PROTECTED notification message to detect when the user attempts to modify protected text. To mark a range of text as protected, you can set the protected character effect. For more information, see [Character Formatting in Rich Edit Controls](../mfc/character-formatting-in-rich-edit-controls.md).
 
-- EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](/windows/desktop/api/richedit/ns-richedit-_endropfiles) structure contains information about the files being dropped.
+- EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](/windows/desktop/api/richedit/ns-richedit-endropfiles) structure contains information about the files being dropped.
 
-- EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-_selchange) structure containing information about the new selection.
+- EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-selchange) structure containing information about the new selection.
 
 ## See also
 

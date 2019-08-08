@@ -1,8 +1,28 @@
 ---
-title: "COleDocObjectItem Class"
-ms.date: "11/04/2016"
-f1_keywords: ["COleDocObjectItem", "AFXOLE/COleDocObjectItem", "AFXOLE/COleDocObjectItem::COleDocObjectItem", "AFXOLE/COleDocObjectItem::DoDefaultPrinting", "AFXOLE/COleDocObjectItem::ExecCommand", "AFXOLE/COleDocObjectItem::GetActiveView", "AFXOLE/COleDocObjectItem::GetPageCount", "AFXOLE/COleDocObjectItem::OnPreparePrinting", "AFXOLE/COleDocObjectItem::OnPrint", "AFXOLE/COleDocObjectItem::QueryCommand", "AFXOLE/COleDocObjectItem::Release"]
-helpviewer_keywords: ["COleDocObjectItem [MFC], COleDocObjectItem", "COleDocObjectItem [MFC], DoDefaultPrinting", "COleDocObjectItem [MFC], ExecCommand", "COleDocObjectItem [MFC], GetActiveView", "COleDocObjectItem [MFC], GetPageCount", "COleDocObjectItem [MFC], OnPreparePrinting", "COleDocObjectItem [MFC], OnPrint", "COleDocObjectItem [MFC], QueryCommand", "COleDocObjectItem [MFC], Release"]
+title: COleDocObjectItem Class
+ms.date: 11/04/2016
+f1_keywords:
+- COleDocObjectItem
+- AFXOLE/COleDocObjectItem
+- AFXOLE/COleDocObjectItem::COleDocObjectItem
+- AFXOLE/COleDocObjectItem::DoDefaultPrinting
+- AFXOLE/COleDocObjectItem::ExecCommand
+- AFXOLE/COleDocObjectItem::GetActiveView
+- AFXOLE/COleDocObjectItem::GetPageCount
+- AFXOLE/COleDocObjectItem::OnPreparePrinting
+- AFXOLE/COleDocObjectItem::OnPrint
+- AFXOLE/COleDocObjectItem::QueryCommand
+- AFXOLE/COleDocObjectItem::Release
+helpviewer_keywords:
+- COleDocObjectItem [MFC], COleDocObjectItem
+- COleDocObjectItem [MFC], DoDefaultPrinting
+- COleDocObjectItem [MFC], ExecCommand
+- COleDocObjectItem [MFC], GetActiveView
+- COleDocObjectItem [MFC], GetPageCount
+- COleDocObjectItem [MFC], OnPreparePrinting
+- COleDocObjectItem [MFC], OnPrint
+- COleDocObjectItem [MFC], QueryCommand
+- COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
 ---
 # COleDocObjectItem Class
@@ -247,7 +267,7 @@ identifier of the command being queried for.
 A pointer to the flags returned as a result of the query. For a list of possible values, see [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf).
 
 *pCmdText*<br/>
-Pointer to an [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-_tagolecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
+Pointer to an [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-olecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
 
 *pguidCmdGroup*<br/>
 Unique identifier of the command group; can be NULL to specify the standard group.

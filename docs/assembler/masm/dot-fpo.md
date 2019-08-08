@@ -1,8 +1,10 @@
 ---
-title: ".FPO"
-ms.date: "08/30/2018"
-f1_keywords: [".FPO"]
-helpviewer_keywords: [".FPO directive"]
+title: .FPO
+ms.date: 08/30/2018
+f1_keywords:
+- .FPO
+helpviewer_keywords:
+- .FPO directive
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
 ---
 # .FPO
@@ -31,7 +33,7 @@ Number registers saved.
 Indicates whether the EBP register has been allocated. either 0 or 1.
 
 *cbFrame*<br/>
-Indicates the frame type.  See [FPO_DATA](/windows/desktop/api/winnt/ns-winnt-_fpo_data) for more information.
+Indicates the frame type.  See [FPO_DATA](/windows/desktop/api/winnt/ns-winnt-fpo_data) for more information.
 
 ## See also
 
