@@ -305,7 +305,7 @@ Deletes a specified item from the list box.
 ```
 BOOL DeleteItem(int iIndex);
 BOOL DeleteItem(DWORD_PTR dwData);
-  BOOL DeleteItem(LPCTSTR lpszText);
+BOOL DeleteItem(LPCTSTR lpszText);
 ```
 
 ### Parameters
