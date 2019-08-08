@@ -51,7 +51,7 @@ class CTokenGroups
 
 An [access token](/windows/desktop/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.
 
-The `CTokenGroups` class is a wrapper for the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure, containing information about the group security identifiers (SIDs) in an access token.
+The `CTokenGroups` class is a wrapper for the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure, containing information about the group security identifiers (SIDs) in an access token.
 
 For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
 
@@ -77,7 +77,7 @@ A [CSid](../../atl/reference/csid-class.md) object.
 The attributes to associate with the `CSid` object.
 
 *rTokenGroups*<br/>
-A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.
+A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure.
 
 ### Remarks
 
@@ -96,7 +96,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ### Parameters
 
 *rhs*<br/>
-The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure with which to construct the `CTokenGroups` object.
+The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure with which to construct the `CTokenGroups` object.
 
 ### Remarks
 
@@ -173,7 +173,7 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 
 ### Return Value
 
-Retrieves a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure belonging to the `CTokenGroups` access token object.
+Retrieves a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure belonging to the `CTokenGroups` access token object.
 
 ##  <a name="getsidsandattributes"></a>  CTokenGroups::GetSidsAndAttributes
 
@@ -235,7 +235,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ### Parameters
 
 *rhs*<br/>
-The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure to assign to the `CTokenGroups` object.
+The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure to assign to the `CTokenGroups` object.
 
 ### Return Value
 
@@ -251,7 +251,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 ### Remarks
 
-Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.
+Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-token_groups) structure.
 
 ## See also
 

@@ -115,7 +115,7 @@ Returns TRUE if the ACE is added to the `CSacl` object, FALSE on failure.
 
 A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
 
 ##  <a name="csacl"></a>  CSacl::CSacl
 

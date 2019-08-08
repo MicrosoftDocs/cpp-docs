@@ -247,7 +247,7 @@ identifier of the command being queried for.
 A pointer to the flags returned as a result of the query. For a list of possible values, see [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf).
 
 *pCmdText*<br/>
-Pointer to an [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-_tagolecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
+Pointer to an [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-olecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
 
 *pguidCmdGroup*<br/>
 Unique identifier of the command group; can be NULL to specify the standard group.
