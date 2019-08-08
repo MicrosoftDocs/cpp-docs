@@ -7,7 +7,7 @@ ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
 ---
 # /Ob (Inline Function Expansion)
 
-Controls inline expansion of functions.
+Controls inline expansion of functions. By default, when optimizing, expansion occurs at the compiler's discretion on all functions, often referred to as *auto-inlining*.
 
 ## Syntax
 
@@ -26,13 +26,13 @@ Controls inline expansion of functions.
 ## Arguments
 
 **0**\
-Disables inline expansions. By default, expansion occurs at the compiler's discretion on all functions, often referred to as *auto-inlining*.
+The default value under [/Od](od-disable-debug.md). Disables inline expansions.
 
 **1**\
 Allows expansion only of functions marked [inline](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md), or [__forceinline](../../cpp/inline-functions-cpp.md), or in a C++ member function defined in a class declaration.
 
 **2**\
-The default value. Allows the compiler to expand any function not marked [__declspec(noinline)](../../cpp/noinline.md) on in a [#pragma auto_inline(off)](../../preprocessor/auto-inline.md) region.
+The default value under [/O1](o1-o2-minimize-size-maximize-speed.md) and [/O2](o1-o2-minimize-size-maximize-speed.md). Allows the compiler to expand any function not explicitly marked for no inlining.
 
 ::: moniker range=">=vs-2019"
 
@@ -45,7 +45,7 @@ This option specifies more aggressive inlining than **/Ob2**, but has the same r
 
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that any function will be expanded inline. You can disable inline expansions, but you can't force the compiler to inline a particular function, even when using the `__forceinline` keyword.
 
-You can use `__declspec(noinline)` or a region marked by `#pragma auto_inline(off)` and `#pragma auto_inline(on)` directives to exclude functions from consideration as candidates for inline expansion. For information on another way to provide inlining hints to the compiler, see the [#pragma intrinsic](../../preprocessor/intrinsic.md) directive.
+To exclude functions from consideration as candidates for inline expansion, you can use [__declspec(noinline)](../../cpp/noinline.md), or a region marked by [#pragma auto_inline(off)](../../preprocessor/auto-inline.md) and [#pragma auto_inline(on)](../../preprocessor/auto-inline.md) directives. For information on another way to provide inlining hints to the compiler, see the [#pragma intrinsic](../../preprocessor/intrinsic.md) directive.
 
 > [!NOTE]
 > Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect because you specified **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
