@@ -42,34 +42,36 @@ The gallery menu button is displayed as a pop-up menu with an arrow. When the us
 
 The following example demonstrates how to display a gallery of bullets in a menu button:
 
-```
+```cpp
 BOOL CMainFrame::OnShowPopupMenu (CMFCPopupMenu* pMenuPopup)
 {
     int nBulletIndex = pMenuBar->CommandToIndex (ID_PARA_BULLETS);
 
     if (nBulletIndex>= 0)
-{
-    CMFCToolBarButton* pExButton =
-    pMenuBar->GetButton(nBulletIndex);
-ASSERT_VALID (pExButton);
+    {
+        CMFCToolBarButton* pExButton =
+        pMenuBar->GetButton(nBulletIndex);
+        ASSERT_VALID (pExButton);
 
-    CMFCRibbonGalleryMenuButton paletteBullet (
-    pExButton->m_nID,
-    pExButton->GetImage (),
-    pExButton->m_strText);
+        CMFCRibbonGalleryMenuButton paletteBullet (
+        pExButton->m_nID,
+        pExButton->GetImage (),
+        pExButton->m_strText);
 
-InitBulletPalette (&paletteBullet.GetPalette ());
+        InitBulletPalette (&paletteBullet.GetPalette ());
 
-    pMenuBar->ReplaceButton (ID_PARA_BULLETS,
-    paletteBullet);
-
-}
+        pMenuBar->ReplaceButton (ID_PARA_BULLETS,
+        paletteBullet);
+    }
 }
 ```
 
 ## Inheritance Hierarchy
 
-[CObject](../../mfc/reference/cobject-class.md) [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) [CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└&nbsp;[CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;[CMFCRibbonGalleryMenuButton](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
 
 ## Requirements
 
