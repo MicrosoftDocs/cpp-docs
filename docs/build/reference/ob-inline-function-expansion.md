@@ -32,24 +32,20 @@ Disables inline expansions. By default, expansion occurs at the compiler's discr
 Allows expansion only of functions marked [inline](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md), or [__forceinline](../../cpp/inline-functions-cpp.md), or in a C++ member function defined in a class declaration.
 
 **2**\
-The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function not marked [__declspec(noinline)](../../cpp/noinline.md) that the compiler chooses.
+The default value. Allows the compiler to expand any function not marked [__declspec(noinline)](../../cpp/noinline.md) on in a [#pragma auto_inline(off)](../../preprocessor/auto-inline.md) region.
 
 ::: moniker range=">=vs-2019"
 
 **3**\
-Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function not marked `__declspec(noinline)` that the compiler chooses. This option specifies more aggressive inlining than **/Ob2**. The **/Ob3** option is available starting in Visual Studio 2019.
+This option specifies more aggressive inlining than **/Ob2**, but has the same restrictions. The **/Ob3** option is available starting in Visual Studio 2019.
 
 ::: moniker-end
-
-By default, **/Ob2** is in effect when [/O1, /O2](o1-o2-minimize-size-maximize-speed.md), or [/Ox](ox-full-optimization.md) is used. Use **/Ob0** to explicitly disable inlining.
-
-This option requires that you enable optimizations using **/O1**, **/O2**, **/Ox**, or **/Og**.
 
 ## Remarks
 
 The compiler treats the inline expansion options and keywords as suggestions. There's no guarantee that any function will be expanded inline. You can disable inline expansions, but you can't force the compiler to inline a particular function, even when using the `__forceinline` keyword.
 
-You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) directive to exclude functions from consideration as candidates for inline expansion. Also see the `#pragma` [intrinsic](../../preprocessor/intrinsic.md) directive.
+You can use `__declspec(noinline)` or a region marked by `#pragma auto_inline(off)` and `#pragma auto_inline(on)` directives to exclude functions from consideration as candidates for inline expansion. For information on another way to provide inlining hints to the compiler, see the [#pragma intrinsic](../../preprocessor/intrinsic.md) directive.
 
 > [!NOTE]
 > Information that is gathered from profiling test runs overrides optimizations that would otherwise be in effect because you specified **/Ob**, **/Os**, or **/Ot**. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
