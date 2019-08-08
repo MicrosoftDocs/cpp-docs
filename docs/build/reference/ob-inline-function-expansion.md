@@ -11,7 +11,17 @@ Controls inline expansion of functions.
 
 ## Syntax
 
+::: moniker range="vs-2019"
+
 > **/Ob**{**0**|**1**|**2**|**3**}
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
+> **/Ob**{**0**|**1**|**2**}
+
+::: moniker-end
 
 ## Arguments
 
@@ -24,8 +34,12 @@ Allows expansion only of functions marked [`inline`](../../cpp/inline-functions-
 **2**\
 The default value. Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses.
 
+::: moniker range="vs-2019"
+
 **3**\
 Allows expansion of functions marked as `inline`, `__inline`, or `__forceinline`, and any other function that the compiler chooses. This option specifies more aggressive inlining than **/Ob2**. The **/Ob3** option is available starting in Visual Studio 2019.
+
+::: moniker-end
 
 By default, **/Ob2** is in effect when [/O1, /O2](o1-o2-minimize-size-maximize-speed.md), or [/Ox](ox-full-optimization.md) is used. Use **/Ob0** to explicitly disable inlining.
 
@@ -48,6 +62,8 @@ You can use the `#pragma` [auto_inline](../../preprocessor/auto-inline.md) direc
 
 1. Modify the **Inline Function Expansion** property.
 
+::: moniker range="vs-2019"
+
 The **/Ob3** option isn't available in the **Inline Function Expansion** property. To set **/Ob3**:
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
@@ -55,6 +71,8 @@ The **/Ob3** option isn't available in the **Inline Function Expansion** propert
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter **/Ob3** in **Additional Options**.
+
+::: moniker-end
 
 ### To set this compiler option programmatically
 
