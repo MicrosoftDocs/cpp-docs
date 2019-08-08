@@ -1,6 +1,6 @@
 ---
 title: "Tasks.vs.json schema reference (C++)"
-ms.date: "08/07/2019"
+ms.date: "08/08/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
@@ -27,14 +27,14 @@ A *tasks.vs.json* file can be added to an Open Folder project to define any arbi
 |-|-|-|
 |**Property**|**Type**|**Description**|
 |`remoteMachineName`|string|The name of the remote machine.|
-|`command`|string|The command to send.|
-|`remoteWorkingDirectory`|string| |
-|`localCopyDirectory`|string| |
-|`remoteCopyDirectory`|string| |
-|`remoteCopyMethod`|string| Allowed values: "none", "sftp", "rsync"| |
-|`remoteCopySourcesOutputVerbosity`|string| Allowed values: "Normal","Verbose","Diagnostic".| |
-|`rsyncCommandArgs`|string|Defaults to "-t --delete"| |
-|`remoteCopyExclusionList`|array| |
+|`command`|string|The command to send to the remote machine.|
+|`remoteWorkingDirectory`|string|The current working directory on the remote machine.|
+|`localCopyDirectory`|string|The local directory from which to copy files.|
+|`remoteCopyDirectory`|string|The destination directory on the remote machine.|
+|`remoteCopyMethod`|string| Allowed values: "none", "sftp", "rsync"|The method to use for copying.|
+|`remoteCopySourcesOutputVerbosity`|string| Allowed values: "Normal","Verbose","Diagnostic".|
+|`rsyncCommandArgs`|string|Defaults to "-t --delete".|
+|`remoteCopyExclusionList`|array|Comma-separated list of files to exclude from copy operations.|
 
 ## Launch properties
 
