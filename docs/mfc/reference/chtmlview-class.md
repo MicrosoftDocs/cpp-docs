@@ -896,7 +896,7 @@ void Navigate2(
 ### Parameters
 
 *pIDL*<br/>
-A pointer to an [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) structure.
+A pointer to an [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) structure.
 
 *dwFlags*<br/>
 The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) enumeration.

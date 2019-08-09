@@ -1927,7 +1927,7 @@ void SelectPrinter(
 A handle to a [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*<br/>
-A handle to a [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure that specifies information about the device initialization and environment of a printer.
+A handle to a [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure that specifies information about the device initialization and environment of a printer.
 
 *bFreeOld*<br/>
 Frees the previously-selected printer.

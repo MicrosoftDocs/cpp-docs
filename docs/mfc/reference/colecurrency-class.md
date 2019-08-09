@@ -278,7 +278,7 @@ These overloaded assignment operators copy the source currency value into this `
 ```
 const COleCurrency& operator=(CURRENCY cySrc);
 const COleCurrency& operator=(const COleCurrency& curSrc);
-  const COleCurrency& operator=(const VARIANT& varSrc);
+const COleCurrency& operator=(const VARIANT& varSrc);
 ```
 
 ### Remarks

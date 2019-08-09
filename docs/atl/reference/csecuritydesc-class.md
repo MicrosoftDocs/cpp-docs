@@ -232,7 +232,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 
 ### Return Value
 
-Returns a pointer to the [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure.
+Returns a pointer to the [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure.
 
 ##  <a name="getsacl"></a>  CSecurityDesc::GetSacl
 
@@ -668,6 +668,6 @@ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows
 ## See also
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

@@ -478,7 +478,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pttgt*|[out] Pointer to a [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) structure points to the text of the title.|
+|*pttgt*|[out] Pointer to a [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-ttgettitle) structure points to the text of the title.|
 
 ### Remarks
 

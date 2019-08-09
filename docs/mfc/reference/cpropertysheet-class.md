@@ -53,13 +53,13 @@ class CPropertySheet : public CWnd
 
 |Name|Description|
 |----------|-----------------|
-|[CPropertySheet::m_psh](#m_psh)|The Windows [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) structure. Provides access to basic property sheet parameters.|
+|[CPropertySheet::m_psh](#m_psh)|The Windows [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) structure. Provides access to basic property sheet parameters.|
 
 ## Remarks
 
 A property sheet consists of a `CPropertySheet` object and one or more [CPropertyPage](../../mfc/reference/cpropertypage-class.md) objects. The framework displays a property sheet as a window with a set of tab indices and an area that contains the currently selected page. The user navigates to a specific page by using the appropriate tab.
 
-`CPropertySheet` provides support for the expanded [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) structure introduced in Windows 98 and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.
+`CPropertySheet` provides support for the expanded [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2) structure introduced in Windows 98 and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.
 
 To display these new images automatically in your property sheet object, pass valid values for the bitmap and palette images in the call to [CPropertySheet::Construct](#construct) or [CPropertySheet::CPropertySheet](#cpropertysheet).
 
@@ -530,7 +530,7 @@ For example, call this member function if you want to add bitmaps to each of the
 
 ##  <a name="m_psh"></a>  CPropertySheet::m_psh
 
-A structure whose members store the characteristics of [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2).
+A structure whose members store the characteristics of [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2).
 
 ### Remarks
 

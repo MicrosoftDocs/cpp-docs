@@ -91,11 +91,11 @@ Defines an OLE automation function in a dispatch map.
 
 ```cpp
 DISP_FUNCTION(
-  theClass,
-  pszName,
-  pfnMember,
-  vtRetVal,
-  vtsParams)
+    theClass,
+    pszName,
+    pfnMember,
+    vtRetVal,
+    vtsParams)
 ```
 
 ### Parameters
@@ -181,10 +181,10 @@ Defines an OLE automation property in a dispatch map.
 
 ```cpp
 DISP_PROPERTY(
-  theClass,
-  pszName,
-  memberName,
-  vtPropType)
+    theClass,
+    pszName,
+    memberName,
+    vtPropType)
 ```
 
 ### Parameters
@@ -232,11 +232,11 @@ Defines an OLE automation property and name the functions used to get and set th
 
 ```cpp
 DISP_PROPERTY_EX(
-  theClass,
-  pszName,
-  memberGet,
-  memberSet,
-  vtPropType)
+    theClass,
+    pszName,
+    memberGet,
+    memberSet,
+    vtPropType)
 ```
 
 ### Parameters
@@ -272,11 +272,11 @@ Defines an OLE automation property with notification in a dispatch map.
 
 ```cpp
 DISP_PROPERTY_NOTIFY(
-  theClass,
-  szExternalName,
-  memberName,
-  pfnAfterSet,
-  vtPropType)
+    theClass,
+    szExternalName,
+    memberName,
+    pfnAfterSet,
+    vtPropType)
 ```
 
 ### Parameters
@@ -327,12 +327,12 @@ Defines a property accessed with separate `Get` and `Set` member functions.
 
 ```cpp
 DISP_PROPERTY_PARAM(
-  theClass,
-  pszExternalName,
-  pfnGet,
-  pfnSet,
-  vtPropType,
-  vtsParams)
+    theClass,
+    pszExternalName,
+    pfnGet,
+    pfnSet,
+    vtPropType,
+    vtsParams)
 ```
 
 ### Parameters

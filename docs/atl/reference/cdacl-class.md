@@ -106,7 +106,7 @@ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.
 
 A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce
 
@@ -151,7 +151,7 @@ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.
 
 A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
 ##  <a name="cdacl"></a>  CDacl::CDacl
 
