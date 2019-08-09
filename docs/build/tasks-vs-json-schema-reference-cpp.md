@@ -8,7 +8,11 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 
 A *tasks.vs.json* file can be added to an Open Folder project to define any arbitrary task and then invoke it from the **Solution Explorer** context menu. CMake projects typically do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
+A task has a `type` property which may have one of four values: `default`, `remote`, `launch`, or `msbuild`. This value determines what other properties are valid for that task.
+
 ## Default Properties
+
+When the task type is `default`, these properties are available:
 
 ||||
 |-|-|-|
@@ -16,27 +20,57 @@ A *tasks.vs.json* file can be added to an Open Folder project to define any arbi
 |`taskName`|string| Specifies the task label used in the user interface (Deprecated: Use `taskLabel` instead).|
 |`taskLabel`|string| (Required.) Specifies the task label used in the user interface.|
 |`appliesTo`|string| (Required.) Specifies which files the command can be performed on. The use of wildcards is supported, for example: "*", "*.cpp", "/*.txt"|
-|`contextType`|string| Allowed values: "custom", "build", "clean", "rebuild". Specifies the build target invoked when running the task. Defaults to "custom".|
+|`contextType`|string| Allowed values: "custom", "build", "clean", "rebuild". Determines where in the context menu the task will appear. Defaults to "custom".|
 |`output`|string| Specifies an output tag to your task.|
 |`inheritEnvironments`|array| Specifies a set of environment variables inherited from multiple sources. You can define variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to the task context.|
 |`passEnvVars`|boolean| Specifies whether or not to include additional environment variables to the task context. These variables are different from the ones defined using the `envVars` property. Defaults to "true".|
 
 ## Remote Properties
 
+Remote tasks are enabled when you install the Linux development with C++ workload and add a connection to a remote machine by using the Visual Studio Connection Manager. A remote task runs commands on a remote system and can also copy files to it. 
+
+When the task type is `remote`, these properties are available:
+
 ||||
 |-|-|-|
 |**Property**|**Type**|**Description**|
-|`remoteMachineName`|string|The name of the remote machine.|
-|`command`|string|The command to send to the remote machine.|
+|`remoteMachineName`|string|The name of the remote machine. Must match a machine name in **Connection Manager**.|
+|`command`|string|The command to send to the remote machine. By default commands are executed in the $HOME directory on the remote system.|
 |`remoteWorkingDirectory`|string|The current working directory on the remote machine.|
-|`localCopyDirectory`|string|The local directory from which to copy files.|
-|`remoteCopyDirectory`|string|The destination directory on the remote machine.|
-|`remoteCopyMethod`|string| Allowed values: "none", "sftp", "rsync"|The method to use for copying.|
+|`localCopyDirectory`|string|The local directory to copy to the remote machine. Defaults to the current working directory.|
+|`remoteCopyDirectory`|string|The directory on the remote machine into which `localCopyDirectory` is copied.|
+|`remoteCopyMethod`|string| Allowed values: "none", "sftp", "rsync"|The method to use for copying. rsync is recommended for large projects.|
 |`remoteCopySourcesOutputVerbosity`|string| Allowed values: "Normal","Verbose","Diagnostic".|
 |`rsyncCommandArgs`|string|Defaults to "-t --delete".|
-|`remoteCopyExclusionList`|array|Comma-separated list of files to exclude from copy operations.|
+|`remoteCopyExclusionList`|array|Comma-separated list of files in `localCopyDirectory` to exclude from copy operations.|
+
+### Example
+
+The following task is visible in the middle part of the context menu when you right-click on *main.cpp* in **Solution Explorer**. It depends on a remote machine called `ubuntu` in **Connection Manager**. The task copies the current open folder in Visual Studio into the `sample` directory on the remote machine and then invokes g++ to build the program.
+
+```json
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "Build",
+      "appliesTo": "main.cpp",
+      "type": "remote",
+      "contextType": "build",
+      "command": "g++ main.cpp",
+      "remoteMachineName": "ubuntu",
+      "remoteCopyDirectory": "~/sample",
+      "remoteCopyMethod": "sftp",
+      "remoteWorkingDirectory": "~/sample/hello",
+      "remoteCopySourcesOutputVerbosity": "Verbose"
+    }
+  ]
+}
+```
 
 ## Launch properties
+
+When the task type is `launch`, these properties are available:
 
 ||||
 |-|-|-|
@@ -51,6 +85,8 @@ A *tasks.vs.json* file can be added to an Open Folder project to define any arbi
 |`commands`|array| Specifies a list of commands to invoke in order.|
 
 ## MSBuild properties
+
+When the task type is `msbuild`, these properties are available:
 
 ||||
 |-|-|-|
