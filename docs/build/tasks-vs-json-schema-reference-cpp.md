@@ -37,7 +37,7 @@ When the task type is `launch`, these properties are available:
 |`launchOption`|string| Allowed values: "None", "ContinueOnError","IgnoreError". Specifies how to proceed with the command when there are errors.|
 |`workingDirectory`|string| Specifies the directory in which the command will run. Defaults to the project's current working directory.|
 |`customLaunchCommand`|string| Specifies a global scope customization to apply before executing the command. Useful for setting environment variables like %PATH%.|
-|`customLaunchCommandArgs`|string| Specifies arguments to customLaunchCommand. (Requires `customLaunchCommand`|
+|`customLaunchCommandArgs`|string| Specifies arguments to customLaunchCommand. (Requires `customLaunchCommand`.)|
 |`envVars`|object| (Deprecated.) Use env.NAME syntax to specify environment variables.|
 |`commands`|array| Specifies a list of commands to invoke in order.|
 
@@ -78,7 +78,7 @@ These tasks can be invoked from the context menu when you right click on a *.cpp
 
 ## Remote Properties
 
-Remote tasks are enabled when you install the Linux development with C++ workload and add a connection to a remote machine by using the Visual Studio Connection Manager. A remote task runs commands on a remote system and can also copy files to it. 
+Remote tasks are enabled when you install the Linux development with C++ workload and add a connection to a remote machine by using the Visual Studio Connection Manager. A remote task runs commands on a remote system and can also copy files to it.
 
 When the task type is `remote`, these properties are available:
 

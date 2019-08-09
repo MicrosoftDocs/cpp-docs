@@ -28,8 +28,7 @@ To use the Visual Studio IDE with a build system or compiler toolset that is not
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder. (Not used in CMake projects.)|
 |tasks.vs.json|Specify custom build commands. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|
-|launch.vs.json|Specify command line arguments for the debugger. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.| 
-
+|launch.vs.json|Specify command line arguments for the debugger. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.|`
 ## Configure IntelliSense and browsing hints with CppProperties.json
 
 For IntelliSense and browsing behavior such as **Go to Definition** to work correctly, Visual Studio needs to know which compiler you are using, where the system headers are, and where any additional include files are located if they are not directly in the folder you have opened (the workspace folder). To specify a configuration, you can choose **Manage Configurations** from the dropdown in the main toolbar:
@@ -100,9 +99,9 @@ If you are using a compiler other than Microsoft C++, you have to create a custo
 }
 ```
 
-Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed. 
+Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.`
 
-> [!WARNING] 
+> [!WARNING]
 > There is currently a known issue in which the `INCLUDE` value specified in `environments` is not correctly passed to the `includePath` property. You can work around the issue by adding the complete literal include paths to the `includePath` array.
 
 The `intelliSenseMode` property is set to a value appropriate for GCC. For more information on all these properties, see [CppProperties schema reference](cppproperties-schema-reference.md).
@@ -199,7 +198,7 @@ To start debugging, choose the executable in the debug dropdown, then click the 
 
 ![Launch debugger](media/launch-debugger-gdb.png)
 
-You should see the **Initializing Debugger** dialog and then an external console window that is running your program. 
+You should see the **Initializing Debugger** dialog and then an external console window that is running your program.`
 
 For more information, see [launch.vs.json schema reference](launch-vs-schema-reference.md).
 
