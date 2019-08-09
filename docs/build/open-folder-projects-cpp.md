@@ -22,7 +22,7 @@ CMake is integrated in the Visual Studio IDE as a component of the C++ desktop w
 
 ## Other build systems
 
-To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, define custom tasks, or configure IntelliSense for system headers, you add three JSON files:
+To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, configure IntelliSense and set debugging parameters, you add three JSON files:
 
 | | |
 |-|-|
@@ -30,7 +30,7 @@ To use the Visual Studio IDE with a build system or compiler toolset that is not
 |tasks.vs.json|Specify custom build commands. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|
 |launch.vs.json|Specify command line arguments for the debugger. Accessed via the **Solution Explorer** context menu item **Debug and Launch Settings**.| 
 
-### Configure IntelliSense and browsing hints with CppProperties.json
+## Configure IntelliSense and browsing hints with CppProperties.json
 
 For IntelliSense and browsing behavior such as **Go to Definition** to work correctly, Visual Studio needs to know which compiler you are using, where the system headers are, and where any additional include files are located if they are not directly in the folder you have opened (the workspace folder). To specify a configuration, you can choose **Manage Configurations** from the dropdown in the main toolbar:
 
@@ -67,6 +67,8 @@ If, for example, you choose **x64-Debug**, Visual Studio creates a file called *
 ```
 
 This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
+
+## Example configuration for GCC
 
 If you are using a compiler other than Microsoft C++, you have to create a custom configuration and environment in *CppProperties.json*. The following example shows a complete *CppProperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
 
@@ -109,6 +111,8 @@ When everything is working correctly, you will see IntelliSense from the GCC hea
 
 ![GCC IntelliSense](media/gcc-intellisense.png)
 
+## Enable IntelliSense diagnostics
+
 If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **true**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
 
 ![Diagnostic logging](media/diagnostic-logging.png)
@@ -121,7 +125,7 @@ You can automate build scripts or any other external operations on the files you
 
 ![Open Folder Configure Tasks](media/configure-tasks.png)
 
-This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. To continue with the GCC example, the following example shows a complete *tasks.vs.json* file with as single task that invokes *g++.exe* to build a project. Assume the project contains a single file called *hello.cpp*.
+This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. To continue the GCC example, the following snippet shows a complete *tasks.vs.json* file with as single task that invokes *g++.exe* to build a project. Assume the project contains a single file called *hello.cpp*.
 
 ```json
 {
@@ -144,9 +148,9 @@ This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual 
 
 ```
 
-The file is placed in the *.vs* subfolder which you can see if you click on **Show All Files** at the top of **Solution Explorer**. You can run this task by right-clicking on the project node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
+The JSON file is placed in the *.vs* subfolder which you can see if you click on the **Show All Files** button at the top of **Solution Explorer**. You can run this task by right-clicking on the project node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
 
-You can define many kinds of tasks. The following example shows a tasks.vs.json file that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (*cmd.exe* on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
+You can define many kinds of tasks. The following example shows a *tasks.vs.json file* that defines a single task. `taskName` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (*cmd.exe* on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
 ```json
 {
@@ -163,13 +167,13 @@ You can define many kinds of tasks. The following example shows a tasks.vs.json 
 }
 ```
 
-After saving tasks.vs.json, you can right-click any .cpp file in the folder, choose **Echo filename** from the context menu, and see the file name displayed in the Output window.
+After saving *tasks.vs.json*, you can right-click any *.cpp* file in the folder, choose **Echo filename** from the context menu, and see the file name displayed in the Output window.
 
 For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-reference-cpp.md).
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing **launch.vs.json** file, or if none exists, it will create a new file with a minimal task defined. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
+To customize your program’s command line arguments and debugging instructions, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing *launch.vs.json* file, or if none exists, it will create a new file with a minimal task defined. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
 
 ```json
 {
@@ -195,7 +199,9 @@ To start debugging, choose the executable in the debug dropdown, then click the 
 
 ![Launch debugger](media/launch-debugger-gdb.png)
 
-You should see the **Initializing Debugger** dialog and then an external console window that is running your program.
+You should see the **Initializing Debugger** dialog and then an external console window that is running your program. 
+
+For more information, see [launch.vs.json schema reference](launch-vs-schema-reference.md).
 
 ## Launching other executables
 

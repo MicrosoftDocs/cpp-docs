@@ -6,7 +6,7 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Tasks.vs.json (C++)
 
-A *tasks.vs.json* file can be added to an Open Folder project to define any arbitrary task and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
+To tell Visual Studio how to build your source code in an an Open Folder project, add a *tasks.vs.json* file. You can define any arbitrary task here and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
 A task has a `type` property which may have one of four values: `default`, `launch`, `remote`, or `msbuild`. Most tasks should use `launch` unless a remote connection is required.
 
@@ -90,7 +90,7 @@ When the task type is `remote`, these properties are available:
 |`remoteWorkingDirectory`|string|The current working directory on the remote machine.|
 |`localCopyDirectory`|string|The local directory to copy to the remote machine. Defaults to the current working directory.|
 |`remoteCopyDirectory`|string|The directory on the remote machine into which `localCopyDirectory` is copied.|
-|`remoteCopyMethod`|string| Allowed values: "none", "sftp", "rsync"|The method to use for copying. rsync is recommended for large projects.|
+|`remoteCopyMethod`|string| The method to use for copying. Allowed values: "none", "sftp", "rsync". rsync is recommended for large projects.|
 |`remoteCopySourcesOutputVerbosity`|string| Allowed values: "Normal","Verbose","Diagnostic".|
 |`rsyncCommandArgs`|string|Defaults to "-t --delete".|
 |`remoteCopyExclusionList`|array|Comma-separated list of files in `localCopyDirectory` to exclude from copy operations.|

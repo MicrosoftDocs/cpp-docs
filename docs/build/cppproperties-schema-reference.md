@@ -77,7 +77,7 @@ When the Linux workload is installed, the following environments are available f
 |linux_x64|Target x64 Linux remotely|
 |linux_arm|Target ARM Linux remotely|
 
-## <a name="user_defined_enviroments"></a> User-defined environments
+## <a name="user_defined_environments"></a> User-defined environments
 
 You can optionally use the `environments` property to define sets of variables in *CppProperties.json* either globally or per-configuration. These variables behave like environment variables in the context of an Open Folder project and can be accessed with the ${env.\<VARIABLE>} syntax from *tasks.vs.json* and *launch.vs.json* after they are defined here. However, they are not necessarily set as actual environment variables in any command prompt that Visual Studio uses internally.
 
@@ -156,6 +156,6 @@ If you are not seeing the IntelliSense that you expect, you can troubleshoot by 
 
 ![Diagnostic logging](media/diagnostic-logging.png)
 
-Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* sub-folder which contains cached browsing data.
+Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log**. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* sub-folder which contains cached browsing data.
 
 To troubleshoot IntelliSense errors caused by missing include paths, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...".

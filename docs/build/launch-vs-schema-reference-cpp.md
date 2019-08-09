@@ -58,7 +58,7 @@ externalConsole|boolean|If true, a console is launched for the debuggee. If fals
 |pipeTransport|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
 
 
-## <a name="launch_setup_options"></a> Launch setup commands
+## <a name="launch_setup_commands"></a> Launch setup commands
 
 Used with the setupCommands property:
 
@@ -81,7 +81,7 @@ Used with the pipeTransport property:
 |pipeEnv|object|Environment variables passed to the pipe program.|
 |quoteArgs|boolean|If individual arguments contain characters (such as spaces or tabs), should it be quoted? If 'false', the debugger command will no longer be automatically quoted. Default is 'true'.|
 
-## <a name="source_file_map_otpions"></a> Source file map options
+## <a name="source_file_map_options"></a> Source file map options
 
 Use with the sourceFIleMap property:
 
