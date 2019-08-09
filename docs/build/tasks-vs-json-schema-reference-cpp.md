@@ -1,7 +1,7 @@
 ---
 title: "tasks.vs.json schema reference (C++)"
 ms.date: "08/09/2019"
-helpviewer_keywords: ["Open Folder Projects in Visual C++"]
+helpviewer_keywords: ["tasks.vs.json file [C++]"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # tasks.vs.json schema reference (C++)

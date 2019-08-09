@@ -1,7 +1,7 @@
 ---
 title: "launch.vs.json schema reference (C++)"
 ms.date: "08/09/2019"
-helpviewer_keywords: ["CppProperties.json file [C++]"]
+helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 
 # launch.vs.json schema reference (C++)
