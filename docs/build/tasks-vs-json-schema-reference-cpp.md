@@ -1,10 +1,10 @@
 ---
-title: "Tasks.vs.json schema reference (C++)"
+title: "tasks.vs.json schema reference (C++)"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
-# Tasks.vs.json (C++)
+# tasks.vs.json schema reference (C++)
 
 To tell Visual Studio how to build your source code in an an Open Folder project, add a *tasks.vs.json* file. You can define any arbitrary task here and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
