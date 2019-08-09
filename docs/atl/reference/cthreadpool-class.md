@@ -56,7 +56,7 @@ Threads in the pool are created and destroyed when the pool is initialized, resi
 
 Immediately after creation of a thread, *Worker*::`Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*::`Terminate` will be called. Both methods must accept a **void**<strong>\*</strong> argument. The value of this argument is passed to the thread pool through the *pvWorkerParam* parameter of [CThreadPool::Initialize](#initialize).
 
-When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure used for the IO completion port queue.
+When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) structure used for the IO completion port queue.
 
 The *Worker* class declares the type of the items that will be queued on the thread pool by providing a typedef, *Worker*:: `RequestType`. This type must be capable of being cast to and from a ULONG_PTR.
 

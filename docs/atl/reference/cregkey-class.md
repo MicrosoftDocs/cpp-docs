@@ -851,7 +851,7 @@ Specifies the components of the security descriptor to set. The value can be a c
 |SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](/windows/desktop/secauthz/privileges) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|
 
 *psd*<br/>
-Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure that specifies the security attributes to set for the specified key.
+Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor) structure that specifies the security attributes to set for the specified key.
 
 ### Return Value
 

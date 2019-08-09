@@ -128,7 +128,7 @@ afx_msg void OnDropDown(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
+|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
 |*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
 
 ### Remarks

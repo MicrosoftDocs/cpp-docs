@@ -606,7 +606,7 @@ BOOL DrawIndirect(
 ### Parameters
 
 *pimldp*<br/>
-A pointer to an [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure that contains information about the draw operation.
+A pointer to an [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure that contains information about the draw operation.
 
 *pDC*<br/>
 A pointer to the destination device context. You must delete this [CDC](../../mfc/reference/cdc-class.md) object when you are done with it.
@@ -626,12 +626,12 @@ A [POINT](/previous-versions/dd162805\(v=vs.85\)) structure containing the x- an
 *fStyle*<br/>
 Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, ILD_NORMAL, draws the image using the background color for the image list. If the background color is the CLR_NONE value, the image is drawn transparently using a mask.
 
-Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.
+Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure.
 
 *dwRop*<br/>
 Value specifying a raster-operation code. These codes define how the color data for the source rectangle will be combined with the color data for the destination rectangle to achieve the final color. MFC's default implementation, SRCCOPY, copies the source rectangle directly to the destination rectangle. This parameter is ignored if the *fStyle* parameter does not include the ILD_ROP flag.
 
-Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.
+Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-imagelistdrawparams) structure.
 
 *rgbBack*<br/>
 The image background color, by default CLR_DEFAULT. This parameter can be an application-defined RGB value or one of the following values:
@@ -839,7 +839,7 @@ BOOL GetImageInfo(
 Zero-based index of the image.
 
 *pImageInfo*<br/>
-Pointer to an [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-_imageinfo) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.
+Pointer to an [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-imageinfo) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.
 
 ### Return Value
 

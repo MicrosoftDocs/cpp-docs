@@ -1304,10 +1304,10 @@ BOOL ShowBalloonTip(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pEditBalloonTip*|[in] Pointer to an [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure that describes the balloon tip.|
+|*pEditBalloonTip*|[in] Pointer to an [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) structure that describes the balloon tip.|
 |*lpszTitle*|[in] Pointer to a Unicode string that contains the title of the balloon tip.|
 |*lpszText*|[in] Pointer to a Unicode string that contains the balloon tip text.|
-|*ttiIcon*|[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) structure.|
+|*ttiIcon*|[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-editballoontip) structure.|
 
 ### Return Value
 

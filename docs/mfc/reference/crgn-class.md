@@ -255,7 +255,7 @@ Points to an [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) data struct
 Specifies the number of bytes pointed to by *pRgnData*.
 
 *pRgnData*<br/>
-Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) data structure that contains the region data.
+Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-rgndata) data structure that contains the region data.
 
 ### Return Value
 
@@ -583,7 +583,7 @@ int GetRegionData(
 ### Parameters
 
 *lpRgnData*<br/>
-Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) data structure that receives the information. If this parameter is NULL, the return value contains the number of bytes needed for the region data.
+Points to a [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-rgndata) data structure that receives the information. If this parameter is NULL, the return value contains the number of bytes needed for the region data.
 
 *nCount*<br/>
 Specifies the size, in bytes, of the *lpRgnData* buffer.
