@@ -200,7 +200,7 @@ To start debugging, choose the executable in the debug dropdown, then click the 
 
 You should see the **Initializing Debugger** dialog and then an external console window that is running your program.`
 
-For more information, see [launch.vs.json schema reference](launch-vs-schema-reference.md).
+For more information, see [launch.vs.json schema reference](launch-vs-schema-reference-cpp.md).
 
 ## Launching other executables
 
