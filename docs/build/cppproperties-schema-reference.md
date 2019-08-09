@@ -1,12 +1,12 @@
 ---
 title: "CppProperties.json schema reference"
-ms.date: "08/07/2019"
-helpviewer_keywords: ["CMake in Visual Studio"]
+ms.date: "08/09/2019"
+helpviewer_keywords: ["CppProperties.json file [C++]"]
 ---
 
 # CppProperties.json schema reference
 
-Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a `CppProperties.json` file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project.
+Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project.
 
 ## Configuration properties
 
@@ -56,7 +56,7 @@ Note: The values `msvc-x86` and `msvc-x64` are supported for legacy reasons only
 
 ## Pre-defined Environments
 
-Visual Studio provides the following predefined environments for Microsoft C++ which map to the corresponding Developer Command Prompt. When you inherit one of these environments, you can refer to any of the environment variables by using ${env.\<VARIABLE>}.
+Visual Studio provides the following predefined environments for Microsoft C++ which map to the corresponding Developer Command Prompt. When you inherit one of these environments, you can refer to any of the environment variables by using the global property `env` with this macro syntax: ${env.\<VARIABLE>}.
 
 |Variable Name|Description|
 |-----------|-----------------|
@@ -66,7 +66,6 @@ Visual Studio provides the following predefined environments for Microsoft C++ w
 |msvc_arm|Compile for ARM using x86 tools|
 |msvc_arm64|Compile for ARM64 using x86 tools|
 |msvc_x86_x64|Compile for AMD64 using x86 tools|
-|msvc_x64_x64|Compile for AMD64 using 64-bit tools|
 |msvc_arm_x64|Compile for ARM using 64-bit tools|
 |msvc_arm64_x64|Compile for ARM64 using 64-bit tools|
 
@@ -78,9 +77,9 @@ When the Linux workload is installed, the following environments are available f
 |linux_x64|Target x64 Linux remotely|
 |linux_arm|Target ARM Linux remotely|
 
-## User-defined environments
+## <a name="user_defined_enviroments"></a> User-defined environments
 
-You can optionally use the `environments` property to define sets of variables in `CppProperties.json` either globally or per-configuration. These variables behave like environment variables in the context of an Open Folder project and can be accessed from *tasks.vs.json* and *launch.vs.json* after they are defined here. However, they are not necessarily set as actual environment variables in any command prompt that Visual Studio uses internally. 
+You can optionally use the `environments` property to define sets of variables in *CppProperties.json* either globally or per-configuration. These variables behave like environment variables in the context of an Open Folder project and can be accessed with the ${env.\<VARIABLE>} syntax from *tasks.vs.json* and *launch.vs.json* after they are defined here. However, they are not necessarily set as actual environment variables in any command prompt that Visual Studio uses internally.
 
 When you consume an environment, then you have to specify it in the `inheritsEnvironments` property even if the environment is defined as part of the same configuration; the `environment` property specifies the name of the environment. The following example shows a sample configuration for enabling IntelliSense for GCC in an MSYS2 installation. Note how the configuration both defines and inherits the `mingw_64` environment, and how the `includePath` property can access the `INCLUDE` variable.
 
@@ -116,15 +115,17 @@ When you define an **environments** property inside a configuration, it override
 
 ## Built-in macros
 
-You have access to the following built-in macros inside `CppProperties.json`:
+You have access to the following built-in macros inside *CppProperties.json*:
 
 |||
 |-|-|
 |`${workspaceRoot}`| The full path to the workspace folder|
-|`${projectRoot}`| The full path to the folder where `CppProperties.json` is placed|
+|`${projectRoot}`| The full path to the folder where *CppProperties.json* is placed|
 |`${env.vsInstallDir}`| The full path to the folder where the running instance of Visual Studio is installed|
 
-For example, if your project has an include folder and also includes windows.h and other common headers from the Windows SDK, you may want to update your `CppProperties.json` configuration file with the following includes:
+### Example
+
+If your project has an include folder and also includes *windows.h* and other common headers from the Windows SDK, you may want to update your *CppProperties.json* configuration file with the following includes:
 
 ```json
 {
@@ -155,6 +156,6 @@ If you are not seeing the IntelliSense that you expect, you can troubleshoot by 
 
 ![Diagnostic logging](media/diagnostic-logging.png)
 
-Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *cppproperties.json*, try closing the folder and deleting the *.vs* sub-folder which contains cached browsing data.
+Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* sub-folder which contains cached browsing data.
 
 To troubleshoot IntelliSense errors caused by missing include paths, open the **Error List** and filter its output to "IntelliSense only" and error code E1696 "cannot open source file ...".

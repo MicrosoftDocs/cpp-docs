@@ -1,18 +1,18 @@
 ---
 title: "Tasks.vs.json schema reference (C++)"
-ms.date: "08/08/2019"
+ms.date: "08/09/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual C++"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Tasks.vs.json (C++)
 
-A *tasks.vs.json* file can be added to an Open Folder project to define any arbitrary task and then invoke it from the **Solution Explorer** context menu. CMake projects typically do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
+A *tasks.vs.json* file can be added to an Open Folder project to define any arbitrary task and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
-A task has a `type` property which may have one of four values: `default`, `remote`, `launch`, or `msbuild`. This value determines what other properties are valid for that task.
+A task has a `type` property which may have one of four values: `default`, `launch`, `remote`, or `msbuild`. Most tasks should use `launch` unless a remote connection is required.
 
 ## Default Properties
 
-When the task type is `default`, these properties are available:
+The default properties are available on all types of tasks:
 
 ||||
 |-|-|-|
@@ -24,6 +24,57 @@ When the task type is `default`, these properties are available:
 |`output`|string| Specifies an output tag to your task.|
 |`inheritEnvironments`|array| Specifies a set of environment variables inherited from multiple sources. You can define variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to the task context.|
 |`passEnvVars`|boolean| Specifies whether or not to include additional environment variables to the task context. These variables are different from the ones defined using the `envVars` property. Defaults to "true".|
+
+## Launch properties
+
+When the task type is `launch`, these properties are available:
+
+||||
+|-|-|-|
+|**Property**|**Type**|**Description**|
+|`command`|string| Specifies the full path of the process or script to launch.|
+|`args`|array| Specifies a comma-separated list of arguments passed to the command.|
+|`launchOption`|string| Allowed values: "None", "ContinueOnError","IgnoreError". Specifies how to proceed with the command when there are errors.|
+|`workingDirectory`|string| Specifies the directory in which the command will run. Defaults to the project's current working directory.|
+|`customLaunchCommand`|string| Specifies a global scope customization to apply before executing the command. Useful for setting environment variables like %PATH%.|
+|`customLaunchCommandArgs`|string| Specifies arguments to customLaunchCommand. (Requires `customLaunchCommand`|
+|`envVars`|object| (Deprecated.) Use env.NAME syntax to specify environment variables.|
+|`commands`|array| Specifies a list of commands to invoke in order.|
+
+### Example
+
+The following tasks invoke *make.exe* when a makefile is provided in the folder and the `Mingw64` environment has been defined in *CppProperties.json*, as shown in [CppProperties.json schema reference](cppproperties-schema-reference.md#user_defined_environments):
+
+```json
+ {
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "gcc make",
+      "appliesTo": "*.cpp",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [
+        "Mingw64"
+      ],
+      "command": "make"
+    },
+    {
+      "taskLabel": "gcc clean",
+      "appliesTo": "*.cpp",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [
+        "Mingw64"
+      ],
+      "command": "make",
+      "args": ["clean"]
+    }
+  ]
+}
+```
+
+These tasks can be invoked from the context menu when you right click on a *.cpp* file in **Solution Explorer**.
 
 ## Remote Properties
 
@@ -46,7 +97,7 @@ When the task type is `remote`, these properties are available:
 
 ### Example
 
-The following task is visible in the middle part of the context menu when you right-click on *main.cpp* in **Solution Explorer**. It depends on a remote machine called `ubuntu` in **Connection Manager**. The task copies the current open folder in Visual Studio into the `sample` directory on the remote machine and then invokes g++ to build the program.
+The following task will appear in the context menu when you right-click on *main.cpp* in **Solution Explorer**. It depends on a remote machine called `ubuntu` in **Connection Manager**. The task copies the current open folder in Visual Studio into the `sample` directory on the remote machine and then invokes g++ to build the program.
 
 ```json
 {
@@ -67,22 +118,6 @@ The following task is visible in the middle part of the context menu when you ri
   ]
 }
 ```
-
-## Launch properties
-
-When the task type is `launch`, these properties are available:
-
-||||
-|-|-|-|
-|**Property**|**Type**|**Description**|
-|`command`|string| Specifies the full path of the process or script to launch.|
-|`args`|array| Specifies a comma-separated list of arguments passed to the command.|
-|`launchOption`|string| Allowed values: "None", "ContinueOnError","IgnoreError". Specifies how to proceed with the command invoke when there are errors.|
-|`workingDirectory`|string| Specifies the directory in which the command will run. Defaults to the project's current working directory.|
-|`customLaunchCommand`|string| Specifies a global scope customization to apply before executing the command. Useful for setting environment variables like %PATH%.|
-|`customLaunchCommandArgs`|string| Specifies arguments to customLaunchCommand. (Requires `customLaunchCommand`|
-|`envVars`|object| Specifies a key-value list of custom environment variables, for example "myEnv": "myVal"|
-|`commands`|array| Specifies a list of commands to invoke in order.|
 
 ## MSBuild properties
 

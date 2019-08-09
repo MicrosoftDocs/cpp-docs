@@ -40,7 +40,7 @@ Currently, Visual Studio offers four default configurations, all for the Microso
 
 ![Default configurations](media/default-configurations.png)
 
-If, for example, you choose **x64-Debug**, Visual Studio creates a file called `CppProperties.json` in your root project folder and populates it like so:
+If, for example, you choose **x64-Debug**, Visual Studio creates a file called *CppProperties.json* in your root project folder and populates it like so:
 
 ```json
 {
@@ -68,7 +68,7 @@ If, for example, you choose **x64-Debug**, Visual Studio creates a file called `
 
 This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
 
-If you are using a compiler other than Microsoft C++, you have to create a custom configuration and environment in *cppproperties.json*. The following example shows a complete *cppproperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
+If you are using a compiler other than Microsoft C++, you have to create a custom configuration and environment in *CppProperties.json*. The following example shows a complete *CppProperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
 
 ```json
 {
@@ -98,7 +98,7 @@ If you are using a compiler other than Microsoft C++, you have to create a custo
 }
 ```
 
-Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *cppproperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its INCLUDE property to specify the value for `includePath`. You can add other paths to this array property as needed. 
+Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed. 
 
 > [!WARNING] 
 > There is currently a known issue in which the `INCLUDE` value specified in `environments` is not correctly passed to the `includePath` property. You can work around the issue by adding the complete literal include paths to the `includePath` array.
@@ -113,7 +113,7 @@ If you are not seeing the IntelliSense that you expect, you can troubleshoot by 
 
 ![Diagnostic logging](media/diagnostic-logging.png)
 
-Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *cppproperties.json*, try closing the folder and deleting the *.vs* subfolder which contains cached browsing data.
+Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* subfolder which contains cached browsing data.
 
 ### Define build tasks with tasks.vs.json
 
@@ -169,7 +169,7 @@ For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing **launch.vs.json** file, or if none exists, it will create a new file that is pre-populated with the information about the program you have selected. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. Since we did not define a variable called `MINGW_PREFIX` we can just substitute the literal path:
+To customize your program’s command line arguments, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing **launch.vs.json** file, or if none exists, it will create a new file with a minimal task defined. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
 
 ```json
 {
@@ -196,6 +196,8 @@ To start debugging, choose the executable in the debug dropdown, then click the 
 ![Launch debugger](media/launch-debugger-gdb.png)
 
 You should see the **Initializing Debugger** dialog and then an external console window that is running your program.
+
+## Launching other executables
 
 You can define launch settings for any executable on your computer. The following example launches *7za* and specifies additional arguments, by adding them to the `args` JSON array:
 
