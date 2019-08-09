@@ -1,6 +1,6 @@
 ---
 title: "intrinsic"
-ms.date: "04/11/2018"
+ms.date: "08/08/2019"
 f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
 helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
@@ -11,17 +11,15 @@ Specifies that calls to functions specified in the pragma's argument list are in
 
 ## Syntax
 
-```cpp
-#pragma intrinsic( function1 [, function2, ...] )
-```
+> **#pragma intrinsic(** *function1* [**,** _function2_**,** ...] **)**
 
 ## Remarks
 
-The **intrinsic** pragma tells the compiler that a function has known behavior.  The compiler may call the function and not replace the function call with inline instructions, if it will result in better performance.
+The **intrinsic** pragma tells the compiler that a function has known behavior. The compiler may call the function and not replace the function call with inline instructions, if it will result in better performance.
 
-The library functions with intrinsic forms are listed below. Once an **intrinsic** pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of a `function` pragma specifying the same intrinsic function. The **intrinsic** pragma can be used only outside of a function definition — at the global level.
+The library functions with intrinsic forms are listed below. Once an **intrinsic** pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of a `function` pragma specifying the same intrinsic function. The **intrinsic** pragma can be used only outside of a function definition, at the global level.
 
-The following functions have intrinsic forms and the intrinsic forms are used when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md):
+The following functions have intrinsic forms, and the intrinsic forms are used when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md):
 
 |||||
 |-|-|-|-|
@@ -32,11 +30,11 @@ The following functions have intrinsic forms and the intrinsic forms are used wh
 |[_lrotl](../c-runtime-library/reference/lrotl-lrotr.md)|[_strset](../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)|[memset](../c-runtime-library/reference/memset-wmemset.md)||
 |[_lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|[strcat](../c-runtime-library/reference/strcat-wcscat-mbscat.md)||
 
-Programs that use intrinsic functions are faster because they do not have the overhead of function calls but may be larger due to the additional code generated.
+Programs that use intrinsic functions are faster because they don't have the overhead of function calls, but may be larger because of the additional code generated.
 
 **x86 Specific**
 
-The `_disable` and `_enable` intrinsics generate kernel-mode instructions to disable/enable interrupts and could be useful in kernel-mode drivers.
+The `_disable` and `_enable` intrinsics generate kernel-mode instructions to disable or enable interrupts, and could be useful in kernel-mode drivers.
 
 ### Example
 
@@ -59,14 +57,14 @@ int main() {
 
 **End x86 Specific**
 
-The floating-point functions listed below do not have true intrinsic forms. Instead they have versions that pass arguments directly to the floating-point chip rather than pushing them onto the program stack:
+The floating-point functions listed below don't have true intrinsic forms. Instead they have versions that pass arguments directly to the floating-point chip rather than pushing them onto the program stack:
 
 |||||
 |-|-|-|-|
 |[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|[cosh](../c-runtime-library/reference/cosh-coshf-coshl.md)|[pow](../c-runtime-library/reference/pow-powf-powl.md)|[tanh](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|
 |[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|[fmod](../c-runtime-library/reference/fmod-fmodf.md)|[sinh](../c-runtime-library/reference/sinh-sinhf-sinhl.md)||
 
-The floating-point functions listed below have true intrinsic forms when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), and [/fp:fast](../build/reference/fp-specify-floating-point-behavior.md) (or any option that includes /Og: [/Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md), and /O2):
+The floating-point functions listed below have true intrinsic forms when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md), [/Og](../build/reference/og-global-optimizations.md), and [/fp:fast](../build/reference/fp-specify-floating-point-behavior.md) (or any option that includes /Og: [/Ox](../build/reference/ox-full-optimization.md), [/O1](../build/reference/o1-o2-minimize-size-maximize-speed.md), and [/O2](../build/reference/o1-o2-minimize-size-maximize-speed.md)):
 
 |||||
 |-|-|-|-|

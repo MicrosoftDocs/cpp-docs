@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "05/06/2019"
+ms.date: "08/08/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---
@@ -20,7 +20,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Oi](oi-generate-intrinsic-functions.md)|Generates intrinsic functions.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|Favors small code.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|Favors fast code.|
-|[/Ox](ox-full-optimization.md)|Uses maximum optimization (/Ob2gity /Gs).|
+|[/Ox](ox-full-optimization.md)|A subset of /O2 that doesn't include /GF or /Gy.|
 |[/Oy](oy-frame-pointer-omission.md)|Omits frame pointer. (x86 only)|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specified architecture, or for a range of architectures.|
 
