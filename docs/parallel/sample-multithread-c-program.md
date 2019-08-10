@@ -96,14 +96,13 @@ HANDLE  hScreenMutex;                // "Screen update" mutex
 int     ThreadNr;                    // Number of threads started
 CONSOLE_SCREEN_BUFFER_INFO csbiInfo; // Console information
 COORD   consoleSize;
+BOOL    bTrails;
 
 int main() // Thread One
 {
     // Get display screen information & clear the screen.
-
     hConsoleOut = GetStdHandle(STD_OUTPUT_HANDLE);
     GetConsoleScreenBufferInfo(hConsoleOut, &csbiInfo);
-    // Clamp console area to 80x25
     consoleSize.X = csbiInfo.srWindow.Right;
     consoleSize.Y = csbiInfo.srWindow.Bottom;
     ClearScreen();
@@ -113,6 +112,7 @@ int main() // Thread One
     hScreenMutex = CreateMutexW(NULL, FALSE, NULL);  // Cleared
     hRunMutex = CreateMutexW(NULL, TRUE, NULL);      // Set
     ThreadNr = 0;
+    bTrails = FALSE;
 
     // Start waiting for keyboard input to dispatch threads or exit.
     KbdFunc();
@@ -120,7 +120,7 @@ int main() // Thread One
     // All threads done. Clean up handles.
     if (hScreenMutex) CloseHandle(hScreenMutex);
     if (hRunMutex) CloseHandle(hRunMutex);
-    CloseHandle(hConsoleOut);
+    if (hConsoleOut) CloseHandle(hConsoleOut);
 }
 
 void ShutDown(void) // Shut down threads
@@ -150,6 +150,10 @@ void KbdFunc(void) // Dispatch and count threads.
             ThreadNr++;
             _beginthread(BounceProc, 0, &ThreadNr);
             WriteTitle(ThreadNr);
+        }
+        if (tolower(KeyInfo) == 't')
+        {
+            bTrails = !bTrails;
         }
     } while (tolower(KeyInfo) != 'q');
 
@@ -188,14 +192,17 @@ void BounceProc(void* pMyID)
         // Wait for display to be available, then lock it.
         WaitForSingleObject(hScreenMutex, INFINITE);
 
-        // If we still occupy the old screen position, blank it out.
-        ReadConsoleOutputCharacterW(hConsoleOut, &OldCell, 1,
-            Old, &Dummy);
-        ReadConsoleOutputAttribute(hConsoleOut, &OldAttrib, 1,
-            Old, &Dummy);
-        if ((OldCell == MyCell) && (OldAttrib == MyAttrib))
-            WriteConsoleOutputCharacterW(hConsoleOut, &BlankCell, 1,
+        if (!bTrails)
+        {
+            // If we still occupy the old screen position, blank it out.
+            ReadConsoleOutputCharacterW(hConsoleOut, &OldCell, 1,
                 Old, &Dummy);
+            ReadConsoleOutputAttribute(hConsoleOut, &OldAttrib, 1,
+                Old, &Dummy);
+            if ((OldCell == MyCell) && (OldAttrib == MyAttrib))
+                WriteConsoleOutputCharacterW(hConsoleOut, &BlankCell, 1,
+                    Old, &Dummy);
+        }
 
         // Draw new character, then clear screen lock
         WriteConsoleOutputCharacterW(hConsoleOut, &MyCell, 1,
@@ -230,13 +237,14 @@ void WriteTitle(int ThreadNum)
 {
     enum
     {
-        sizeOfNThreadMsg = 80
+        sizeOfNThreadMsg = 120
     };
     wchar_t    NThreadMsg[sizeOfNThreadMsg] = { L"" };
 
     swprintf_s(NThreadMsg, sizeOfNThreadMsg,
         L"Threads running: %02d.  Press 'A' "
-        L"to start a thread, 'Q' to quit.", ThreadNum);
+        L"to start a thread, 'T' to toggle "
+        L"trails, 'Q' to quit.", ThreadNum);
     SetConsoleTitleW(NThreadMsg);
 }
 
