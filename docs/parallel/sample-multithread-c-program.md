@@ -13,7 +13,7 @@ Programs are compiled as multithreaded by default.
 
 ### To compile and link the multithread program Bounce.c from within the development environment
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=vs-2019"
 
 1. On the **File** menu, choose **New** > **Project**.
 
@@ -31,15 +31,15 @@ Programs are compiled as multithreaded by default.
 
 ::: moniker-end
 
-::: moniker range="<vs-2017"
+::: moniker range="<=vs-2017"
 
 1. On the **File** menu, choose **New** > **Project**.
 
-1. In the **Project Types** pane, choose **Win32**.
+1. In the **New Project** dialog, select **Visual C++** in the left pane, then select **Empty Project** in the center pane.
 
-1. In the **Templates** pane, choose **Win32 Console Application**, and then name the project.
+1. In the **Name** edit box, enter a name for your project, such as "Bounce". Choose **OK** to create the empty project.
 
-1. Add the file containing the C source code to the project.
+1. In the **Solution Explorer** window, open the **Source Files** folder under your project, and add the file containing the C source code to the project.
 
 1. On the **Build** menu, build the project by choosing the **Build Solution** command.
 
