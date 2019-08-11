@@ -7486,6 +7486,41 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/parallel/avoiding-problem-areas-with-multithread-programs.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/c-run-time-library-functions-for-thread-control.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/compiling-and-linking-multithread-programs.md",
+         "redirect_url": "/cpp/parallel/sample-multithread-c-program",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/include-files-for-multithreading.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/library-support-for-multithreading.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/multithread-programs.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/parallel/writing-a-multithreaded-win32-program.md",
+         "redirect_url": "/cpp/parallel/multithreading-with-c-and-win32",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/parallel/openmp/contents.md",
          "redirect_url": "/cpp/parallel/openmp/openmp-c-and-cpp-application-program-interface",
          "redirect_document_id": false

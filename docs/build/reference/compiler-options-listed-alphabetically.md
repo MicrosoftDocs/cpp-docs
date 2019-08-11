@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed Alphabetically"
-ms.date: "05/06/2019"
+ms.date: "08/08/2019"
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler Options Listed Alphabetically
@@ -93,7 +93,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/openmp](openmp-enable-openmp-2-0-support.md)|Enables the [`#pragma omp`](../../preprocessor/omp.md) directive in source code.|
 |[/Os](os-ot-favor-small-code-favor-fast-code.md)|Favors small code.|
 |[/Ot](os-ot-favor-small-code-favor-fast-code.md)|Favors fast code.|
-|[/Ox](ox-full-optimization.md)|Uses maximum optimization (/Ob2gity /Gs).|
+|[/Ox](ox-full-optimization.md)|A subset of /O2 that doesn't include /GF or /Gy.|
 |[/Oy](oy-frame-pointer-omission.md)|Omits frame pointer (x86 only).|
 |[/P](p-preprocess-to-a-file.md)|Writes preprocessor output to a file.|
 |[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
