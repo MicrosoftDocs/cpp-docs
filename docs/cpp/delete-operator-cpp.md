@@ -1,6 +1,6 @@
 ---
 title: "delete Operator (C++)"
-ms.date: "11/04/2016"
+ms.date: "08/12/2019"
 f1_keywords: ["delete_cpp"]
 helpviewer_keywords: ["delete keyword [C++], syntax", "delete keyword [C++], deallocating objects", "delete keyword [C++]"]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
@@ -11,10 +11,8 @@ Deallocates a block of memory.
 
 ## Syntax
 
-```
-[::] delete cast-expression
-[::] delete [ ] cast-expression
-```
+> [`::`] `delete` *cast-expression*
+> [`::`] `delete []` *cast-expression*
 
 ## Remarks
 
@@ -26,9 +24,9 @@ CDialog* MyDialog = new CDialog;
 delete MyDialog;
 ```
 
-Using **delete** on a pointer to an object not allocated with **new** gives unpredictable results. You can, however, use **delete** on a pointer with the value 0. This provision means that, when **new** returns 0 on failure, deleting the result of a failed **new** operation is harmless. See [The new and delete Operators](../cpp/new-and-delete-operators.md) for more information.
+Using **delete** on a pointer to an object not allocated with **new** gives unpredictable results. You can, however, use **delete** on a pointer with the value 0. This provision means that, when **new** returns 0 on failure, deleting the result of a failed **new** operation is harmless. For more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
-The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets before `pointer`:
+The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets (`[]`) before `pointer`:
 
 ```cpp
 int* set = new int[100];
@@ -40,11 +38,11 @@ Using the **delete** operator on an object deallocates its memory. A program tha
 
 When **delete** is used to deallocate memory for a C++ class object, the object's destructor is called before the object's memory is deallocated (if the object has a destructor).
 
-If the operand to the **delete** operator is a modifiable l-value, its value is undefined after the object is deleted.
+If the operand to the **delete** operator is a modifiable l-value, its value is undefined after the object is deleted. If the [/sdl (Enable additional security checks)](/cpp/build/reference/sdl-enable-additional-security-checks) compiler option is specified, the operand to the **delete** operator is set to an invalid value after the object is deleted.
 
 ## Using delete
 
-There are two syntactic variants for the [delete operator](../cpp/delete-operator-cpp.md): one for single objects and the other for arrays of objects. The following code fragment shows how these differ:
+There are two syntactic variants for the [delete operator](../cpp/delete-operator-cpp.md): one for single objects and the other for arrays of objects. The following code fragment shows how they differ:
 
 ```cpp
 // expre_Using_delete.cpp
@@ -70,7 +68,7 @@ int main()
 }
 ```
 
-The following two cases produce undefined results: using the array form of delete (delete [ ]) on an object and using the nonarray form of delete on an array.
+The following two cases produce undefined results: using the array form of delete (`delete []`) on an object, and using the nonarray form of delete on an array.
 
 ## Example
 
