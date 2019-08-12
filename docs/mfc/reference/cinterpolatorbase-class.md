@@ -147,8 +147,8 @@ Interpolates the value at a given offset
 
 ```
 IFACEMETHOD(InterpolateValue)(
-  __in UI_ANIMATION_SECONDS offset,
-  __out DOUBLE* value);
+    __in UI_ANIMATION_SECONDS offset,
+    __out DOUBLE* value);
 ```
 
 ### Parameters
@@ -169,8 +169,8 @@ Interpolates the velocity at a given offset
 
 ```
 IFACEMETHOD(InterpolateVelocity)(
-  __in UI_ANIMATION_SECONDS offset,
-  __out DOUBLE* velocity);
+    __in UI_ANIMATION_SECONDS offset,
+    __out DOUBLE* velocity);
 ```
 
 ### Parameters
@@ -221,8 +221,8 @@ Sets the interpolator's initial value and velocity.
 
 ```
 IFACEMETHOD(SetInitialValueAndVelocity)(
-  __in DOUBLE initialValue,
-  __in DOUBLE initialVelocity);
+    __in DOUBLE initialValue,
+    __in DOUBLE initialVelocity);
 ```
 
 ### Parameters

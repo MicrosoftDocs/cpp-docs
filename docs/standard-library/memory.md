@@ -1,6 +1,6 @@
 ---
 title: "&lt;memory&gt;"
-ms.date: "04/04/2019"
+ms.date: "08/04/2019"
 f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
 helpviewer_keywords: ["memory header"]
 ---
@@ -98,7 +98,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
-|[hash]()||
+|hash|Provides overloads specialized for `unique_ptr` and `shared_ptr`.|
 |[owner_less](../standard-library/memory-functions.md#owner_less)|Allows ownership-based mixed comparisons of shared and weak pointers.|
 |[uses_allocator](../standard-library/allocator-class.md#uses_allocator)||
 
@@ -106,7 +106,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 |||
 |-|-|
-|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type void, defining the only the member types that make sense in this specialized context.|
+|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the template class allocator to type **void**, defining only the member types that make sense in this specialized context.|
 
 ## See also
 

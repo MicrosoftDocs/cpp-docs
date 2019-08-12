@@ -170,10 +170,10 @@ Defines an event firing function for a custom event belonging to the dispatch ID
 
 ```cpp
 EVENT_CUSTOM_ID(
-  pszName,
-  dispid,
-  pfnFire,
-  vtsParams)
+    pszName,
+    dispid,
+    pfnFire,
+    vtsParams)
 ```
 
 ### Parameters

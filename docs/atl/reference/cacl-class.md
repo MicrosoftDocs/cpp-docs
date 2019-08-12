@@ -102,7 +102,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 
 ### Remarks
 
-This typedef specifies the array type used to define the access-control entry (ACE) type-specific control flags. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) definition for the complete list of possible flags.
+This typedef specifies the array type used to define the access-control entry (ACE) type-specific control flags. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) definition for the complete list of possible flags.
 
 ##  <a name="cacetypearray"></a>  CAcl::CAceTypeArray
 
@@ -114,7 +114,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 
 ### Remarks
 
-This typedef specifies the array type used to define the nature of the access-control entry (ACE) objects, such as ACCESS_ALLOWED_ACE_TYPE or ACCESS_DENIED_ACE_TYPE. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) definition for the complete list of possible types.
+This typedef specifies the array type used to define the nature of the access-control entry (ACE) objects, such as ACCESS_ALLOWED_ACE_TYPE or ACCESS_DENIED_ACE_TYPE. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) definition for the complete list of possible types.
 
 ##  <a name="cacl"></a>  CAcl::CAcl
 
@@ -190,7 +190,7 @@ This method fills the array parameters with the details of every ACE object cont
 
 The contents of each array correspond to each other, that is, the first element of the `CAccessMaskArray` array corresponds to the first element in the `CSidArray` array, and so on.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for more details on ACE types and flags.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
 
 ##  <a name="getaclentry"></a>  CAcl::GetAclEntry
 
@@ -234,7 +234,7 @@ The inherited object type. This will be set to GUID_NULL if the inherited object
 
 This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](#getaclentries) alone makes available.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for more details on ACE types and flags.
+See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
 
 ##  <a name="getlength"></a>  CAcl::GetLength
 

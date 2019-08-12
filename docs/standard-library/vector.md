@@ -104,7 +104,7 @@ The second (right) vector in a compare operation.
 
 |||
 |-|-|
-|[hash]()||
+|hash|Returns a hash of the vector.|
 |[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the template class vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|
 
 ## Requirements

@@ -170,9 +170,9 @@ These routines are only available as intrinsics.
 
 ## Example
 
-In the following example, `_InterlockedCompareExchange` is used for simple low-level thread synchronization. The approach has its limitations as a basis for multithreaded programming; it's presented to illustrate the typical use of the interlocked intrinsics. For best results, use the Windows API. For more information about multithreaded programming, see [Writing a Multithreaded Win32 Program](../parallel/writing-a-multithreaded-win32-program.md).
+In the following example, `_InterlockedCompareExchange` is used for simple low-level thread synchronization. The approach has its limitations as a basis for multithreaded programming; it's presented to illustrate the typical use of the interlocked intrinsics. For best results, use the Windows API. For more information about multithreaded programming, see [Writing a Multithreaded Win32 Program](../parallel/multithreading-with-c-and-win32.md#writing-a-multithreaded-win32-program).
 
-```
+```cpp
 // intrinExample.cpp
 // compile with: /EHsc /O2
 // Simple example of using _Interlocked* intrinsics to

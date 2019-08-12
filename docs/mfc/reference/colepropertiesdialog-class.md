@@ -174,7 +174,7 @@ For more information, see the OLEUIOBJECTPROPS and [OLEUILINKPROPS](/windows/des
 
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh
 
-A structure of type [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2), whose members store the characteristics of the dialog object.
+A structure of type [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-propsheetheadera_v2), whose members store the characteristics of the dialog object.
 
 ```
 PROPSHEETHEADER m_psh;

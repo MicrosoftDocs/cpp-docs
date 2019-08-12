@@ -450,7 +450,7 @@ long FindText(
 For a list of possible values, see *wParam* in [EM_FINDTEXTEXT](/windows/desktop/Controls/em-findtextex) in the Windows SDK.
 
 *pFindText*<br/>
-Pointer to the [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) structure giving the parameters for the search and returning the range where the match was found.
+Pointer to the [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-findtextexa) structure giving the parameters for the search and returning the range where the match was found.
 
 ### Return Value
 
@@ -458,9 +458,9 @@ Zero-based character position of the next match; - 1 if there are no more matche
 
 ### Remarks
 
-You can search either up or down by setting the proper range parameters in the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure within the `FINDTEXTEX` structure.
+You can search either up or down by setting the proper range parameters in the [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure within the `FINDTEXTEX` structure.
 
-For more information, see [EM_FINDTEXTEX](/windows/desktop/Controls/em-findtextex) message and [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) structure in the Windows SDK.
+For more information, see [EM_FINDTEXTEX](/windows/desktop/Controls/em-findtextex) message and [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-findtextexa) structure in the Windows SDK.
 
 ### Example
 
@@ -505,7 +505,7 @@ long FormatRange(
 ### Parameters
 
 *pfr*<br/>
-Pointer to the [FORMATRANGE](/windows/desktop/api/richedit/ns-richedit-_formatrange) structure which contains information about the output device. NULL indicates that cached information within the rich edit control can be freed.
+Pointer to the [FORMATRANGE](/windows/desktop/api/richedit/ns-richedit-formatrange) structure which contains information about the output device. NULL indicates that cached information within the rich edit control can be freed.
 
 *bDisplay*<br/>
 Indicates if the text should be rendered. If FALSE, the text is just measured.
@@ -518,7 +518,7 @@ The index of the last character that fits in the region plus one.
 
 Typically, this call is followed by a call to [DisplayBand](#displayband).
 
-For more information, see [EM_FORMATRANGE](/windows/desktop/Controls/em-formatrange) message and [FORMATRANGE](/windows/desktop/api/richedit/ns-richedit-_formatrange) structure in the Windows SDK.
+For more information, see [EM_FORMATRANGE](/windows/desktop/Controls/em-formatrange) message and [FORMATRANGE](/windows/desktop/api/richedit/ns-richedit-formatrange) structure in the Windows SDK.
 
 ### Example
 
@@ -764,7 +764,7 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
 ### Parameters
 
 *pf*<br/>
-In the first version, a pointer to a [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-_paraformat) structure to hold the paragraph formatting attributes of the current selection.
+In the first version, a pointer to a [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-paraformat) structure to hold the paragraph formatting attributes of the current selection.
 
 In the second version, a pointer to a [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) structure, which is a Rich Edit 2.0 extension to the `PARAFORMAT` structure, holding the default character formatting attributes.
 
@@ -798,7 +798,7 @@ BOOL GetPunctuation(
 The punctuation type flag, as described in the *fType* parameter of [EM_GETPUNCTUATION](/windows/desktop/Controls/em-getpunctuation) in the Windows SDK.
 
 *lpPunc*<br/>
-A pointer to a [PUNCTUATION](/windows/desktop/api/richedit/ns-richedit-_punctuation) structure, as described in the Windows SDK.
+A pointer to a [PUNCTUATION](/windows/desktop/api/richedit/ns-richedit-punctuation) structure, as described in the Windows SDK.
 
 ### Return Value
 
@@ -841,7 +841,7 @@ UNDONAMEID GetRedoName() const;
 
 ### Return Value
 
-If successful, `GetRedoName` returns the [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-_undonameid) enumeration type indicating the type of the next action in the control's redo queue. If the redo queue is empty, or if the redo action in the queue is of an unknown type, `GetRedoName` returns 0.
+If successful, `GetRedoName` returns the [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) enumeration type indicating the type of the next action in the control's redo queue. If the redo queue is empty, or if the redo action in the queue is of an unknown type, `GetRedoName` returns 0.
 
 ### Remarks
 
@@ -862,7 +862,7 @@ void GetSel(
 ### Parameters
 
 *cr*<br/>
-Reference to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure to receive the bounds of the current selection.
+Reference to a [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure to receive the bounds of the current selection.
 
 *nStartChar*<br/>
 Zero-based index of the first character in the current selection.
@@ -880,7 +880,7 @@ The two forms of this function provide alternate ways to get the bounds for the 
 
 The selection includes everything if the beginning (`cpMin` or *nStartChar*) is 0 and the end (`cpMax` or *nEndChar*) is - 1.
 
-For more information, see [EM_EXGETSEL](/windows/desktop/Controls/em-exgetsel) message and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure in the Windows SDK.
+For more information, see [EM_EXGETSEL](/windows/desktop/Controls/em-exgetsel) message and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure in the Windows SDK.
 
 ### Example
 
@@ -1009,7 +1009,7 @@ long GetTextLengthEx(
 ### Parameters
 
 *dwFlags*<br/>
-Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-_gettextlengthex) described in the Windows SDK.
+Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-gettextlengthex) described in the Windows SDK.
 
 *uCodePage*<br/>
 Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).
@@ -1076,7 +1076,7 @@ UNDONAMEID GetUndoName() const;
 
 ### Return Value
 
-If an undo action is in the control's undo queue, `GetUndoName` returns the [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-_undonameid) enumeration type indicating the type of the next action in the queue. If the undo queue is empty, or if the undo action in the queue is of an unknown type, `GetUndoName` returns 0.
+If an undo action is in the control's undo queue, `GetUndoName` returns the [UNDONAMEID](/windows/desktop/api/richedit/ne-richedit-undonameid) enumeration type indicating the type of the next action in the queue. If the undo queue is empty, or if the undo action in the queue is of an unknown type, `GetUndoName` returns 0.
 
 ### Remarks
 
@@ -1619,7 +1619,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### Parameters
 
 *pf*<br/>
-In the first version, a pointer to a [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-_paraformat) structure containing the new default paragraph formatting attributes.
+In the first version, a pointer to a [PARAFORMAT](/windows/desktop/api/richedit/ns-richedit-paraformat) structure containing the new default paragraph formatting attributes.
 
 In the second version, a pointer to a [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) structure, which is a Rich Edit 2.0 extension to the `PARAFORMAT` structure, holding the default character formatting attributes.
 
@@ -1653,7 +1653,7 @@ BOOL SetPunctuation(
 The punctuation flag. For a list of possible values, see the *fType* parameter for [EM_SETPUNCTUATION](/windows/desktop/Controls/em-setpunctuation) in the Windows SDK.
 
 *lpPunc*<br/>
-A pointer to a [PUNCTUATION](/windows/desktop/api/richedit/ns-richedit-_punctuation) structure, as described in the Windows SDK.
+A pointer to a [PUNCTUATION](/windows/desktop/api/richedit/ns-richedit-punctuation) structure, as described in the Windows SDK.
 
 ### Return Value
 
@@ -1734,7 +1734,7 @@ Zero-based index of the first character for the selection.
 Zero-based index of the last character for the selection.
 
 *cr*<br/>
-[CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure which holds the bounds of the current selection.
+[CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure which holds the bounds of the current selection.
 
 ### Remarks
 
@@ -1748,7 +1748,7 @@ The caret is placed at the end of the selection indicated by the greater of the 
 
 To select all the text in this `CRichEditCtrl` object, call `SetSel` with a start index of 0 and an end index of - 1.
 
-For more information, see [EM_EXSETSEL](/windows/desktop/Controls/em-exsetsel) message and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) structure in the Windows SDK.
+For more information, see [EM_EXSETSEL](/windows/desktop/Controls/em-exsetsel) message and [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-charrange) structure in the Windows SDK.
 
 ### Example
 
@@ -1948,7 +1948,7 @@ long StreamIn(
 Flags specifying the input data formats. See the Remarks section for more information.
 
 *es*<br/>
-[EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-_editstream) structure specifying the input stream. See the Remarks section for more information.
+[EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-editstream) structure specifying the input stream. See the Remarks section for more information.
 
 ### Return Value
 
@@ -1966,7 +1966,7 @@ Either of these values can be combined with SFF_SELECTION. If SFF_SELECTION is s
 
 In the `EDITSTREAM` parameter *es*, you specify a callback function that fills a buffer with text. This callback function is called repeatedly, until the input stream is exhausted.
 
-For more information, see [EM_STREAMIN](/windows/desktop/Controls/em-streamin) message and [EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-_editstream) structure in the Windows SDK.
+For more information, see [EM_STREAMIN](/windows/desktop/Controls/em-streamin) message and [EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-editstream) structure in the Windows SDK.
 
 ### Example
 
@@ -1990,7 +1990,7 @@ long StreamOut(
 Flags specifying the output data formats. See the Remarks section for more information.
 
 *es*<br/>
-[EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-_editstream) structure specifying the output stream. See the Remarks section for more information.
+[EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-editstream) structure specifying the output stream. See the Remarks section for more information.
 
 ### Return Value
 
@@ -2012,7 +2012,7 @@ Any of these values can be combined with SFF_SELECTION. If SFF_SELECTION is spec
 
 In the `EDITSTREAM` parameter *es*, you specify a callback function which fills a buffer with text. This callback function is called repeatedly, until the output stream is exhausted.
 
-For more information, see [EM_STREAMOUT](/windows/desktop/Controls/em-streamout) message and [EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-_editstream) structure in the Windows SDK.
+For more information, see [EM_STREAMOUT](/windows/desktop/Controls/em-streamout) message and [EDITSTREAM](/windows/desktop/api/richedit/ns-richedit-editstream) structure in the Windows SDK.
 
 ### Example
 

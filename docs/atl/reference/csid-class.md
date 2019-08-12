@@ -337,7 +337,7 @@ The account name.
 The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.
 
 *pSid*<br/>
-A pointer to a [SID](/windows/desktop/api/winnt/ns-winnt-_sid) structure.
+A pointer to a [SID](/windows/desktop/api/winnt/ns-winnt-sid) structure.
 
 ### Return Value
 

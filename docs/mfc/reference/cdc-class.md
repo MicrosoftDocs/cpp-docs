@@ -406,7 +406,7 @@ Specifies the width, in logical units, of the source rectangle.
 Specifies the height, in logical units, of the source rectangle.
 
 *blend*<br/>
-Specifies a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure.
+Specifies a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-blendfunction) structure.
 
 ### Return Value
 
@@ -860,7 +860,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The PRINT.H header file is required if the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure is used.
+The PRINT.H header file is required if the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure is used.
 
 Device names follow these conventions: an ending colon (:) is recommended, but optional. Windows strips the terminating colon so that a device name ending with a colon is mapped to the same port as the same name without a colon. The driver and port names must not contain leading or trailing spaces. GDI output functions cannot be used with information contexts.
 
@@ -2363,10 +2363,10 @@ Specifies the first character in the range of characters from the current font f
 Specifies the last character in the range of characters from the current font for which character widths are returned.
 
 *lpabc*<br/>
-Points to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) structures that receive the character widths when the function returns. This array must contain at least as many `ABC` structures as there are characters in the range specified by the *nFirstChar* and *nLastChar* parameters.
+Points to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) structures that receive the character widths when the function returns. This array must contain at least as many `ABC` structures as there are characters in the range specified by the *nFirstChar* and *nLastChar* parameters.
 
 *lpABCF*<br/>
-Points to an application-supplied buffer with an array of [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat) structures to receive the character widths when the function returns. The widths returned by this function are in the IEEE floating-point format.
+Points to an application-supplied buffer with an array of [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-abcfloat) structures to receive the character widths when the function returns. The widths returned by this function are in the IEEE floating-point format.
 
 ### Return Value
 
@@ -2410,7 +2410,7 @@ Specifies the number of glyph indices.
 A pointer to an array containing glyph indices. If the value is NULL, the *giFirst* parameter is used instead. The *cgi* parameter specifies the number of glyph indices in this array.
 
 *lpabc*<br/>
-Pointer to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.
+Pointer to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.
 
 ### Return Value
 
@@ -2731,7 +2731,7 @@ The information to retrieve is identified by specifying an offset into the font 
 
 An application can sometimes use the `GetFontData` member function to save a TrueType font with a document. To do this, the application determines whether the font can be embedded and then retrieves the entire font file, specifying 0 for the *dwTable*, *dwOffset*, and *cbData* parameters.
 
-Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
+Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.
 
 If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns -1.
 
@@ -2778,7 +2778,7 @@ Specifies the format in which the function is to return information. It can be o
 |GGO_BITMAP|Returns the glyph bitmap. When the function returns, the buffer pointed to by *lpBuffer* contains a 1-bit-per-pixel bitmap whose rows start on doubleword boundaries.|
 |GGO_NATIVE|Returns the curve data points in the rasterizer's native format, using device units. When this value is specified, any transformation specified in *lpmat2* is ignored.|
 
-When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-_glyphmetrics) structure but does not return glyph-outline data.
+When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-glyphmetrics) structure but does not return glyph-outline data.
 
 *lpgm*<br/>
 Points to a GLYPHMETRICS structure that describes the placement of the glyph in the character cell.
@@ -2790,7 +2790,7 @@ Specifies the size of the buffer into which the function copies information abou
 Points to a buffer into which the function copies information about the outline character. If *nFormat* specifies the GGO_NATIVE value, the information is copied in the form of TTPOLYGONHEADER and TTPOLYCURVE structures. If this value is NULL and *nFormat* is either the GGO_BITMAP or GGO_NATIVE value, the function returns the required size of the buffer.
 
 *lpmat2*<br/>
-Points to a [MAT2](/windows/desktop/api/wingdi/ns-wingdi-_mat2) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.
+Points to a [MAT2](/windows/desktop/api/wingdi/ns-wingdi-mat2) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.
 
 ### Return Value
 
@@ -2947,7 +2947,7 @@ UINT GetOutlineTextMetrics(
 ### Parameters
 
 *lpotm*<br/>
-Points to an array of [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.
+Points to an array of [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.
 
 *cbData*<br/>
 Specifies the size, in bytes, of the buffer to which information is returned.
@@ -2961,7 +2961,7 @@ Nonzero if the function is successful; otherwise 0.
 
 ### Remarks
 
-The [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.
+The [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-outlinetextmetrica) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.
 
 ##  <a name="getoutputcharwidth"></a>  CDC::GetOutputCharWidth
 
@@ -3630,13 +3630,13 @@ BOOL GradientFill(
 ### Parameters
 
 *pVertices*<br/>
-Pointer to an array of [TRIVERTEX](/windows/desktop/api/wingdi/ns-wingdi-_trivertex) structures that each define a triangle vertex.
+Pointer to an array of [TRIVERTEX](/windows/desktop/api/wingdi/ns-wingdi-trivertex) structures that each define a triangle vertex.
 
 *nVertices*<br/>
 The number of vertices.
 
 *pMesh*<br/>
-Array of [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-_gradient_triangle) structures in triangle mode, or an array of [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-_gradient_rect) structures in rectangle mode.
+Array of [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-gradient_triangle) structures in triangle mode, or an array of [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-gradient_rect) structures in rectangle mode.
 
 *nMeshElements*<br/>
 The number of elements (triangles or rectangles) in *pMesh*.
@@ -6271,7 +6271,7 @@ int StartDoc(LPCTSTR lpszDocName);
 ### Parameters
 
 *lpDocInfo*<br/>
-Points to a [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-_docinfoa) structure containing the name of the document file and the name of the output file.
+Points to a [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) structure containing the name of the document file and the name of the output file.
 
 *lpszDocName*<br/>
 Pointer to a string containing the name of the document file.
