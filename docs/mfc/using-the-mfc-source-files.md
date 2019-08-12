@@ -12,7 +12,7 @@ This family of articles explains the conventions that MFC uses to comment the va
 
 You might be familiar with the **public**, **protected**, and **private** C++ keywords. When looking at the MFC header files, you will find that each class may have several of each of these. For example, public member variables and functions might be under more than one **public** keyword. This is because MFC separates member variables and functions based on their use, not by the type of access allowed. MFC uses **private** sparingly; even items considered implementation details are generally protected and many times are public. Although access to the implementation details is discouraged, MFC leaves the decision to you.
 
-In both the MFC source files and the files that the MFC Application Wizard creates, you will find comments like these within class declarations (usually in this order):
+In both the MFC source files and the header files that the MFC Application Wizard creates, you will find comments like these within class declarations (usually in this order):
 
 `// Constructors`
 
