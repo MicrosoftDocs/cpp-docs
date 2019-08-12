@@ -1,6 +1,6 @@
 ---
 title: "Makefile Preprocessing Directives"
-ms.date: "06/14/2018"
+ms.date: "08/11/2019"
 f1_keywords: ["!UNDEF", "!INCLUDE", "!IFNDEF", "!MESSAGE"]
 helpviewer_keywords: ["ERROR directive", "!MESSAGE directive", "IF directive", "!UNDEF directive", "IFDEF directive", "!ELSEIF directive", "!IFDEF directive", "!IF directive", "UNDEF directive", "!CMDSWITCHES directive", "ENDIF directive", "directives, makefile preprocessing", "INCLUDE directive", "IFNDEF directive", "preprocessing directives, makefiles", "!IFNDEF directive", "ELSEIFNDEF directive", "NMAKE program, expressions", "ELSEIF directive", "!ERROR directive", "!ENDIF directive", "MESSAGE directive", "!INCLUDE directive", "!ELSEIFNDEF directive", "CMDSWITCHES directive", "!ELSEIFDEF directive", "!ELSE directive", "NMAKE program, preprocessor directives", "makefiles, preprocessing directives", "ELSE directive", "ELSEIFDEF directive"]
 ms.assetid: bcedeccb-d981-469d-b9e8-ab5d097fd8c2
