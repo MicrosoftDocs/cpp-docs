@@ -26,7 +26,7 @@ delete MyDialog;
 
 Using **delete** on a pointer to an object not allocated with **new** gives unpredictable results. You can, however, use **delete** on a pointer with the value 0. This provision means that, when **new** returns 0 on failure, deleting the result of a failed **new** operation is harmless. For more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
-The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets (`[]`) before `pointer`:
+The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets before `pointer`:
 
 ```cpp
 int* set = new int[100];
