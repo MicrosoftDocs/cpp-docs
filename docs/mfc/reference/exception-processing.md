@@ -233,7 +233,7 @@ For more information on the END_CATCH macro, see the article [Exceptions](../../
 
 ##  <a name="end_catch_all"></a>  END_CATCH_ALL
 
-Marks the end of the last <strong>CATCH_ALL88 or **AND_CATCH_ALL</strong> block.
+Marks the end of the last **CATCH_ALL88** or **AND_CATCH_ALL** block.
 
 ```
 END_CATCH_ALL
