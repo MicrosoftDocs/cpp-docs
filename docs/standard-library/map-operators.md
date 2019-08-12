@@ -532,11 +532,7 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-<<<<<<< HEAD
-## <a name="eq_multimap"></a> operator&lt;=
-=======
 ## <a name="op_lt_eq_multimap"></a>  operator&lt;=
->>>>>>> 009c7ce384664f2a62ffb0bc61d6586b585ed38a
 
 Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.
 
