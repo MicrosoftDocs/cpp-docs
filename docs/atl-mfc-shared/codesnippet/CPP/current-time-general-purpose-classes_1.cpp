@@ -1,1 +1,0 @@
-   CTime theTime;   

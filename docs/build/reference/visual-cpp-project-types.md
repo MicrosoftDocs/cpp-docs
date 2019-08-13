@@ -1,6 +1,6 @@
 ---
 title: "Visual C++ Project Types"
-ms.date: "07/02/2019"
+ms.date: "08/13/2019"
 helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "C++ projects, types"]
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
 ---
@@ -23,7 +23,7 @@ The project templates included in Visual Studio depend on the product version an
 |[Windows Desktop Application](../../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|A project for creating a Windows desktop (Win32) application.|
 |[Dynamic-Link Library](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|A project for creating a dynamic-link library (DLL).|
 |[Static Library](../../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|A project for creating a static library (LIB).|
-|Windows Desktop Wizard|A wizard for creating Windows desktop applications and libraries with additional options.|
+|[Windows Desktop Wizard](../../windows/windows-desktop-wizard.md)|A wizard for creating Windows desktop applications and libraries with additional options.|
 
 ### General
 
