@@ -9,7 +9,7 @@ This section of the documentation contains reference content for the Microsoft i
 
 You'll also find documentation for the C runtime library, the C++ standard library, and several other libraries available with the Microsoft C/C++ compiler (MSVC) here.
 
-# Language reference
+## Language reference
 
 [C language](../c-language/c-language-reference.md)\
 Reference content for the Microsoft implementation of the C language.
