@@ -347,7 +347,12 @@
       },
       {
          "source_path": "docs/build/exit-codes-from-nmake.md",
-         "redirect_url": "/cpp/build/reference/exit-codes-from-nmake",
+         "redirect_url": "/cpp/build/reference/running-nmake",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/exit-codes-from-nmake.md",
+         "redirect_url": "/cpp/build/reference/running-nmake",
          "redirect_document_id": false
       },
       {
@@ -432,7 +437,12 @@
       },
       {
          "source_path": "docs/build/nmake-options.md",
-         "redirect_url": "/cpp/build/reference/nmake-options",
+         "redirect_url": "/cpp/build/reference/running-nmake",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/nmake-options.md",
+         "redirect_url": "/cpp/build/reference/running-nmake",
          "redirect_document_id": false
       },
       {
@@ -532,7 +542,12 @@
       },
       {
          "source_path": "docs/build/tools-ini-and-nmake.md",
-         "redirect_url": "/cpp/build/reference/tools-ini-and-nmake",
+         "redirect_url": "/cpp/build/reference/running-nmake",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/tools-ini-and-nmake.md",
+         "redirect_url": "/cpp/build/reference/running-nmake",
          "redirect_document_id": false
       },
       {
