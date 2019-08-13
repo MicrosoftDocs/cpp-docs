@@ -10,9 +10,9 @@ The Microsoft Foundation Class (MFC) Library supplies full source code. Header f
 
 This family of articles explains the conventions that MFC uses to comment the various parts of each class, what these comments mean, and what you should expect to find in each section. The Visual C++ wizards use similar conventions for the classes that they create for you, and you will probably find these conventions useful for your own code.
 
-You might be familiar with the **public**, **protected**, and **private** C++ keywords. When looking at the MFC header files, you will find that each class may have several of each of these. For example, public member variables and functions might be under more than one **public** keyword. This is because MFC separates member variables and functions based on their use, not by the type of access allowed. MFC uses **private** sparingly; even items considered implementation details are generally protected and many times are public. Although access to the implementation details is discouraged, MFC leaves the decision to you.
+You might be familiar with the **public**, **protected**, and **private** C++ keywords. In the MFC header files, you'll find each class may have several of each of them. For example, public member variables and functions might be under more than one **public** keyword. It's because MFC separates member variables and functions based on their use, not by the type of access allowed. MFC uses **private** sparingly. Even items considered implementation details are often **protected**, and many times are **public**. Although access to the implementation details is discouraged, MFC leaves the decision to you.
 
-In both the MFC source files and the header files that the MFC Application Wizard creates, you will find comments like these within class declarations (usually in this order):
+In both the MFC source files and the header files that the MFC Application Wizard creates, you'll find comments like these ones within class declarations (usually in this order):
 
 `// Constructors`
 
