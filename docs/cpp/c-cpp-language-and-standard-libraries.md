@@ -49,10 +49,10 @@ Documentation for the Microsoft Foundation Classes (MFC) and Active Template Lib
 
 ### Additional libraries
 
-[C++ AMP (C++ Accelerated Massive Parallelism)](../parallelamp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
+[C++ AMP (C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)\
 Classes that enable the use of modern graphics processors for general purpose programming.
 
-[Concurrency Runtime](../paralleloncrt/concurrency-runtime.md)\
+[Concurrency Runtime](../parallel/concrt/concurrency-runtime.md)\
 Classes that simplify the writing of programs that use data parallelism or task parallelism.
 
 [OpenMP](../parallel/openmp/openmp-in-visual-cpp.md)\
