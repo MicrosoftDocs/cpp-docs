@@ -93,7 +93,7 @@ The table below briefly describes each of the Windows common controls, including
 
 - [Samples](../mfc/common-control-sample-list.md)
 
-For information about Windows common controls in the Windows SDK, see [Common Controls](/windows/desktop/Controls/common-controls-intro).
+For information about Windows common controls in the Windows SDK, see [Common Controls](/windows/win32/Controls/common-controls-intro).
 
 ## See also
 

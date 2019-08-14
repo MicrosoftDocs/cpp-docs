@@ -23,7 +23,7 @@ Returns the string message for the HRESULT recorded within the `_com_error` obje
 
 ## Remarks
 
-Retrieves the appropriate system message text for HRESULT recorded within the `_com_error` object. The system message text is obtained by calling the Win32 [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function. The string returned is allocated by the `FormatMessage` API, and it is released when the `_com_error` object is destroyed.
+Retrieves the appropriate system message text for HRESULT recorded within the `_com_error` object. The system message text is obtained by calling the Win32 [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function. The string returned is allocated by the `FormatMessage` API, and it is released when the `_com_error` object is destroyed.
 
 **END Microsoft Specific**
 

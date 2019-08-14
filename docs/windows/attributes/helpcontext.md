@@ -22,7 +22,7 @@ The context ID of the help topic. See [HTML Help: Context-Sensitive Help for You
 
 ## Remarks
 
-The **helpcontext** C++ attribute has the same functionality as the [helpcontext](/windows/desktop/Midl/helpcontext) MIDL attribute.
+The **helpcontext** C++ attribute has the same functionality as the [helpcontext](/windows/win32/Midl/helpcontext) MIDL attribute.
 
 ## Example
 

@@ -625,5 +625,5 @@ Returns S_OK on success, or an error HRESULT on failure.
 ## See also
 
 [COleCurrency Class](../../mfc/reference/colecurrency-class.md)<br/>
-[CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
+[CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

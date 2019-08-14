@@ -7,7 +7,7 @@ ms.assetid: e1fe9ea6-d38a-4527-9112-eb344771e0b7
 ---
 # IPointerInactiveImpl Class
 
-This class implements `IUnknown` and the [IPointerInactive](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) interface methods.
+This class implements `IUnknown` and the [IPointerInactive](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) interface methods.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -38,7 +38,7 @@ Your class, derived from `IPointerInactiveImpl`.
 
 An inactive object is one that is simply loaded or running. Unlike an active object, an inactive object cannot receive Windows mouse and keyboard messages. Thus, inactive objects use fewer resources and are typically more efficient.
 
-The [IPointerInactive](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) interface allows an object to support a minimal level of mouse interaction while remaining inactive. This functionality is particularly useful for controls.
+The [IPointerInactive](/windows/win32/api/ocidl/nn-ocidl-ipointerinactive) interface allows an object to support a minimal level of mouse interaction while remaining inactive. This functionality is particularly useful for controls.
 
 Class `IPointerInactiveImpl` implements the `IPointerInactive` methods by simply returning E_NOTIMPL. However, it implements `IUnknown` by sending information to the dump device in debug builds.
 
@@ -68,7 +68,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IPointerInactive::GetActivationPolicy](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) in the Windows SDK.
+See [IPointerInactive::GetActivationPolicy](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) in the Windows SDK.
 
 ##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove
 
@@ -88,7 +88,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IPointerInactive::OnInactiveMouseMove](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) in the Windows SDK.
+See [IPointerInactive::OnInactiveMouseMove](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) in the Windows SDK.
 
 ##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor
 
@@ -109,7 +109,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IPointerInactive::OnInactiveSetCursor](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) in the Windows SDK.
+See [IPointerInactive::OnInactiveSetCursor](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) in the Windows SDK.
 
 ## See also
 

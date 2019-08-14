@@ -22,7 +22,7 @@ The name of the file that contains the help topics.
 
 ## Remarks
 
-The **helpfile** C++ attribute has the same functionality as the [helpfile](/windows/desktop/Midl/helpfile) MIDL attribute.
+The **helpfile** C++ attribute has the same functionality as the [helpfile](/windows/win32/Midl/helpfile) MIDL attribute.
 
 ## Example
 

@@ -38,8 +38,8 @@ For more information on ATL projects and ATL COM classes, see [ATL COM Desktop C
    |Option|Description|
    |------------|-----------------|
    |**ISupportErrorInfo**|Creates support for the [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) interface so the object can return error information to the client.|
-   |**IObjectControl**|Provides your object access to the three [IObjectControl](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectcontrol) methods: [Activate](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-activate), [CanBePooled](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-canbepooled), and [Deactivate](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-deactivate).|
-   |**IObjectConstruct**|Creates support for the [IObjectConstruct](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectconstruct) interface to manage passing in parameters from other methods or objects.|
+   |**IObjectControl**|Provides your object access to the three [IObjectControl](/windows/win32/api/comsvcs/nn-comsvcs-iobjectcontrol) methods: [Activate](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-activate), [CanBePooled](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-canbepooled), and [Deactivate](/windows/win32/api/comsvcs/nf-comsvcs-iobjectcontrol-deactivate).|
+   |**IObjectConstruct**|Creates support for the [IObjectConstruct](/windows/win32/api/comsvcs/nn-comsvcs-iobjectconstruct) interface to manage passing in parameters from other methods or objects.|
 
 - **Transaction**
 

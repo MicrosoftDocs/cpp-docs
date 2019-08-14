@@ -116,7 +116,7 @@ HRESULT ExecCommand(
 The identifier of the command to execute. Must be in the group identified by *pguidCmdGroup*.
 
 *nCmdExecOpt*<br/>
-Specifies command-execution options. By default, set to execute the command without prompting the user. See [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) for a list of values.
+Specifies command-execution options. By default, set to execute the command without prompting the user. See [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) for a list of values.
 
 *pguidCmdGroup*<br/>
 Unique identifier of the command group. By default, NULL, which specifies the standard group. The command passed in *nCmdID* must belong to the group.
@@ -150,7 +150,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 
 ### Return Value
 
-A pointer to the [IOleDocumentView](/windows/desktop/api/docobj/nn-docobj-ioledocumentview) interface of the currently active view. If there is no current view, it returns NULL.
+A pointer to the [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) interface of the currently active view. If there is no current view, it returns NULL.
 
 ### Remarks
 
@@ -244,21 +244,21 @@ HRESULT QueryCommand(
 identifier of the command being queried for.
 
 *pdwStatus*<br/>
-A pointer to the flags returned as a result of the query. For a list of possible values, see [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf).
+A pointer to the flags returned as a result of the query. For a list of possible values, see [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf).
 
 *pCmdText*<br/>
-Pointer to an [OLECMDTEXT](/windows/desktop/api/docobj/ns-docobj-olecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
+Pointer to an [OLECMDTEXT](/windows/win32/api/docobj/ns-docobj-olecmdtext) structure in which to return name and status information for a single command. Can be NULL to indicate that the caller does not need this information.
 
 *pguidCmdGroup*<br/>
 Unique identifier of the command group; can be NULL to specify the standard group.
 
 ### Return Value
 
-For a complete listing of return values, see [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) in the Windows SDK.
+For a complete listing of return values, see [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) in the Windows SDK.
 
 ### Remarks
 
-This member function emulates the functionality of the [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) method, as described in the Windows SDK.
+This member function emulates the functionality of the [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) method, as described in the Windows SDK.
 
 ##  <a name="release"></a>  COleDocObjectItem::Release
 

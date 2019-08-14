@@ -37,7 +37,7 @@ Your class, derived from `IOleControlImpl`.
 
 ## Remarks
 
-Class `IOleControlImpl` provides a default implementation of the [IOleControl](/windows/desktop/api/ocidl/nn-ocidl-iolecontrol) interface and implements `IUnknown` by sending information to the dump device in debug builds.
+Class `IOleControlImpl` provides a default implementation of the [IOleControl](/windows/win32/api/ocidl/nn-ocidl-iolecontrol) interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -63,7 +63,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 
 `FreezeEvents` then returns S_OK.
 
-See [IOleControl::FreezeEvents](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-freezeevents) in the Windows SDK.
+See [IOleControl::FreezeEvents](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-freezeevents) in the Windows SDK.
 
 ##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo
 
@@ -75,7 +75,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 
 ### Remarks
 
-See [IOleControl:GetControlInfo](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
+See [IOleControl:GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.
 
 ### Return Value
 
@@ -95,7 +95,7 @@ Returns S_OK.
 
 ### Remarks
 
-See [IOleControl::OnAmbientPropertyChange](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) in the Windows SDK.
+See [IOleControl::OnAmbientPropertyChange](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) in the Windows SDK.
 
 ##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic
 
@@ -111,10 +111,10 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) in the Windows SDK.
+See [IOleControl::OnMnemonic](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) in the Windows SDK.
 
 ## See also
 
 [IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)<br/>
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
+[ActiveX Controls Interfaces](/windows/win32/com/activex-controls-interfaces)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

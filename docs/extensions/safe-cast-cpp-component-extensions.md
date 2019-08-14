@@ -22,7 +22,7 @@ The **safe_cast** operation returns the specified expression as the specified ty
 
 ## Windows Runtime
 
-**safe_cast** allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use **safe_cast** without a **try-catch** block to detect programming errors during development. For more information, see [Casting (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755802.aspx).
+**safe_cast** allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use **safe_cast** without a **try-catch** block to detect programming errors during development. For more information, see [Casting (C++/CX)](../cppcx/casting-c-cx.md).
 
 ### Syntax
 

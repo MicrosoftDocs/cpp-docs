@@ -17,7 +17,7 @@ Used for Visual Basic code optimization.
 
 ## Remarks
 
-The **defaultcollelem** C++ attribute has the same functionality as the [defaultcollelem](/windows/desktop/Midl/defaultcollelem) MIDL attribute.
+The **defaultcollelem** C++ attribute has the same functionality as the [defaultcollelem](/windows/win32/Midl/defaultcollelem) MIDL attribute.
 
 ## Example
 

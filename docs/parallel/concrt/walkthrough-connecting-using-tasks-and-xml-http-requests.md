@@ -6,7 +6,7 @@ ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
 ---
 # Walkthrough: Connecting Using Tasks and XML HTTP Requests
 
-This example shows how to use the [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app. By combining `IXMLHTTPRequest2` together with tasks, you can write code that composes with other tasks. For example, you can use the download task as part of a chain of tasks. The download task can also respond when work is canceled.
+This example shows how to use the [IXMLHTTPRequest2](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a Universal Windows Platform (UWP) app. By combining `IXMLHTTPRequest2` together with tasks, you can write code that composes with other tasks. For example, you can use the download task as part of a chain of tasks. The download task can also respond when work is canceled.
 
 > [!TIP]
 >  You can also use the C++ REST SDK to perform HTTP requests from a UWP app using C++ app or from a desktop C++ app. For more info, see [C++ REST SDK (Codename "Casablanca")](https://github.com/Microsoft/cpprestsdk).
@@ -60,7 +60,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 #### To Use the HttpRequest Class
 
-1. In MainPage.xaml, define the [StackPanel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.stackpanel.aspx) element as follows.
+1. In MainPage.xaml, define the [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) element as follows.
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 

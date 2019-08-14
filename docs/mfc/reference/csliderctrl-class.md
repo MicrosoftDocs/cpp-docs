@@ -130,7 +130,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
+Specifies the slider control's style. Apply any combination of [slider control styles](/windows/win32/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
 Specifies the slider control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
@@ -169,10 +169,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-Specifies the slider control's style. Apply any combination of [slider control styles](/windows/desktop/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
+Specifies the slider control's style. Apply any combination of [slider control styles](/windows/win32/Controls/trackbar-control-styles), described in the Windows SDK, to the control.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -222,7 +222,7 @@ A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the budd
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TBM_GETBUDDY](/windows/desktop/Controls/tbm-getbuddy), as described in the Windows SDK. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
+This member function implements the behavior of the Win32 message [TBM_GETBUDDY](/windows/win32/Controls/tbm-getbuddy), as described in the Windows SDK. For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
 ##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect
 
@@ -375,7 +375,7 @@ The length of the slider, in pixels.
 
 ### Remarks
 
-This method sends the [TBM_GETTHUMBLENGTH](/windows/desktop/Controls/tbm-getthumblength) message, which is described in the Windows SDK.
+This method sends the [TBM_GETTHUMBLENGTH](/windows/win32/Controls/tbm-getthumblength) message, which is described in the Windows SDK.
 
 ##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect
 
@@ -450,9 +450,9 @@ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object,
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TBM_GETTOOLTIPS](/windows/desktop/Controls/tbm-gettooltips), as described in the Windows SDK. Note that this member function returns a `CToolTipCtrl` object instead of a handle to a control.
+This member function implements the behavior of the Win32 message [TBM_GETTOOLTIPS](/windows/win32/Controls/tbm-gettooltips), as described in the Windows SDK. Note that this member function returns a `CToolTipCtrl` object instead of a handle to a control.
 
-For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
+For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
 ##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy
 
@@ -482,9 +482,9 @@ A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that was previou
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TBM_SETBUDDY](/windows/desktop/Controls/tbm-setbuddy), as described in the Windows SDK. Note that this member function uses pointers to `CWnd` objects, rather than window handles for both its return value and parameter.
+This member function implements the behavior of the Win32 message [TBM_SETBUDDY](/windows/win32/Controls/tbm-setbuddy), as described in the Windows SDK. Note that this member function uses pointers to `CWnd` objects, rather than window handles for both its return value and parameter.
 
-For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
+For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
 ##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize
 
@@ -633,9 +633,9 @@ void SetThumbLength(int nLength);
 
 ### Remarks
 
-This method requires that the trackbar control be set to [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) style.
+This method requires that the trackbar control be set to [TBS_FIXEDLENGTH](/windows/win32/Controls/trackbar-control-styles) style.
 
-This method sends the [TBM_SETTHUMBLENGTH](/windows/desktop/Controls/tbm-setthumblength) message, which is described in the Windows SDK.
+This method sends the [TBM_SETTHUMBLENGTH](/windows/win32/Controls/tbm-setthumblength) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -696,7 +696,7 @@ int SetTipSide(int nLocation);
 ### Parameters
 
 *nLocation*<br/>
-Value representing the location at which to display the tooltip control. For a list of possible values, see the Win32 message [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside), as described in the Windows SDK.
+Value representing the location at which to display the tooltip control. For a list of possible values, see the Win32 message [TBM_SETTIPSIDE](/windows/win32/Controls/tbm-settipside), as described in the Windows SDK.
 
 ### Return Value
 
@@ -704,7 +704,7 @@ A value that represents the tooltip control's previous location. The return valu
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message TBM_SETTIPSIDE, as described in the Windows SDK. Slider controls that use the TBS_TOOLTIPS style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
+This member function implements the behavior of the Win32 message TBM_SETTIPSIDE, as described in the Windows SDK. Slider controls that use the TBS_TOOLTIPS style display tooltips. For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
 ##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips
 
@@ -721,7 +721,7 @@ A pointer to a [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) object 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](/windows/desktop/Controls/trackbar-control-styles) in the Windows SDK.
+This member function implements the behavior of the Win32 message [TBM_SETTOOLTIPS](/windows/win32/Controls/tbm-settooltips), as described in the Windows SDK. When a slider control is created with the TBS_TOOLTIPS style, it creates a default tooltip control that appears next to the slider, displaying the slider's current position. For a description of the slider control styles, see [Trackbar Control Styles](/windows/win32/Controls/trackbar-control-styles) in the Windows SDK.
 
 ## See also
 

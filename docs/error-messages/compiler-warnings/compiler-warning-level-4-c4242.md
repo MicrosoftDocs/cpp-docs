@@ -13,7 +13,7 @@ The types are different. Type conversion may result in loss of data. The compile
 
 This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
 
-For additional information on C4242, see [Common Compiler Errors](/windows/desktop/WinProg64/common-compiler-errors).
+For additional information on C4242, see [Common Compiler Errors](/windows/win32/WinProg64/common-compiler-errors).
 
 The following sample generates C4242:
 

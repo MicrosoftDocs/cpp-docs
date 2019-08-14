@@ -123,7 +123,7 @@ PROPSHEETPAGE m_psp;
 
 Use this structure to initialize the appearance of a property page after it is constructed.
 
-For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v3) in the Windows SDK.
+For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v3) in the Windows SDK.
 
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply
 

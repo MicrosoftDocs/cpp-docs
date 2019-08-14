@@ -15,9 +15,9 @@ C++ console applications run from the command line in a console window and can d
 
 ## Native desktop client applications
 
-A *native desktop client application* is a C or C++ windowed application that uses the original native [Windows C APIs or Component Object Model (COM) APIs](/windows/desktop/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. There's more than one way to create a native desktop app: You can program using the Win32 APIs directly, using a C-style message loop that processes operating system events. Or, you can program using *Microsoft Foundation Classes* (MFC), a lightly object-oriented C++ library that wraps Win32. Neither approach is considered "modern" compared to the Universal Windows Platform (UWP), but both are still fully supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
+A *native desktop client application* is a C or C++ windowed application that uses the original native [Windows C APIs or Component Object Model (COM) APIs](/windows/win32/apiindex/windows-api-list) to access the operating system. Those APIs are themselves written mostly in C. There's more than one way to create a native desktop app: You can program using the Win32 APIs directly, using a C-style message loop that processes operating system events. Or, you can program using *Microsoft Foundation Classes* (MFC), a lightly object-oriented C++ library that wraps Win32. Neither approach is considered "modern" compared to the Universal Windows Platform (UWP), but both are still fully supported and have millions of lines of code running in the world today. A Win32 application that runs in a window requires the developer to work explicitly with Windows messages inside a Windows procedure function. Despite the name, a Win32 application can be compiled as a 32-bit (x86) or 64-bit (x64) binary. In the Visual Studio IDE, the terms x86 and Win32 are synonymous.
 
-To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/desktop/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
+To get started with traditional Windows C++ programming, see [Get Started with Win32 and C++](/windows/win32/LearnWin32/learn-to-program-for-windows). After you gain some understanding of Win32, it will be easier to learn about [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For an example of a traditional C++ desktop application that uses sophisticated graphics, see [Hilo: Developing C++ Applications for Windows](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx).
 
 ### C++ or .NET?
 
@@ -33,7 +33,7 @@ It's also possible to combine the power and efficiency of C++ with .NET programm
 
 ## COM Components
 
-The [Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a specification that enables programs written in different languages to communicate with one another. Many Windows components are implemented as COM objects and follow standard COM rules for object creation, interface discovery, and object destruction.  Using COM objects from C++ desktop applications is relatively straightforward, but writing your own COM object is more advanced. The [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) provides macros and helper functions that simplify COM development. For more information, see [ATL COM desktop components](../atl/atl-com-desktop-components.md).
+The [Component Object Model (COM)](/windows/win32/com/the-component-object-model) is a specification that enables programs written in different languages to communicate with one another. Many Windows components are implemented as COM objects and follow standard COM rules for object creation, interface discovery, and object destruction.  Using COM objects from C++ desktop applications is relatively straightforward, but writing your own COM object is more advanced. The [Active Template Library (ATL)](../atl/atl-com-desktop-components.md) provides macros and helper functions that simplify COM development. For more information, see [ATL COM desktop components](../atl/atl-com-desktop-components.md).
 
 ## Universal Windows Platform apps
 
@@ -49,7 +49,7 @@ Visual Studio 2017 version 15.4 and later lets you create a Windows Application 
 
 ## Games
 
-DirectX games can run on the PC or Xbox. For more information, see [DirectX Graphics and Gaming](/windows/desktop/directx).
+DirectX games can run on the PC or Xbox. For more information, see [DirectX Graphics and Gaming](/windows/win32/directx).
 
 ## SQL Server database clients
 
@@ -61,7 +61,7 @@ Drivers are low-level components that make data from hardware devices accessible
 
 ## Windows services
 
-A Windows *service* is a program that can run in the background with little or no user interaction. These programs are called *daemons* on UNIX systems. For more information, see [Services](/windows/desktop/services/services).
+A Windows *service* is a program that can run in the background with little or no user interaction. These programs are called *daemons* on UNIX systems. For more information, see [Services](/windows/win32/services/services).
 
 ## SDKs, libraries, and header files
 

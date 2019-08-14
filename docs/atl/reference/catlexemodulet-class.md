@@ -260,7 +260,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section. Defaults to SW_HIDE.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) section. Defaults to SW_HIDE.
 
 ### Return Value
 
@@ -292,7 +292,7 @@ static void UninitializeCom() throw();
 
 ### Remarks
 
-By default this method simply calls [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).
+By default this method simply calls [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).
 
 ##  <a name="unlock"></a>  CAtlExeModuleT::Unlock
 
@@ -317,7 +317,7 @@ int WinMain(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 

@@ -160,11 +160,11 @@ CLSID associated with the data and code that will be used to create the object.
 
 ### Return Value
 
-Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) and [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) for a description of these errors.
+Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) and [CLSIDFromProgID](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) for a description of these errors.
 
 ### Remarks
 
-If the first form of the method is called, [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+If the first form of the method is called, [CLSIDFromProgID](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 In debug builds, an assertion error will occur if [CComPtrBase::p](#p) is not equal to NULL.
 
@@ -359,7 +359,7 @@ Returns S_OK on success, or E_NOINTERFACE on failure.
 
 ### Remarks
 
-This method calls [IUnknown::QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).
+This method calls [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).
 
 In debug builds, an assertion error will occur if *pp* is not equal to NULL.
 

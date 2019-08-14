@@ -63,7 +63,7 @@ Another issue that affects performance is compound-file fragmentation. The size 
 
 After successfully creating an application that has a document class derived from `COleDocument`, ensure that your main document constructor calls `EnableCompoundFile`. When the application wizard creates OLE container applications, this call is inserted for you.
 
-In the *OLE Programmer's Reference*, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), and [ILockBytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).
+In the *OLE Programmer's Reference*, see [IStream](/windows/win32/api/objidl/nn-objidl-istream), [IStorage](/windows/win32/api/objidl/nn-objidl-istorage), and [ILockBytes](/windows/win32/api/objidl/nn-objidl-ilockbytes).
 
 ## See also
 

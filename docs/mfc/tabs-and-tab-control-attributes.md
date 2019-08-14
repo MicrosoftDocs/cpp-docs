@@ -14,7 +14,7 @@ The following code clears the state of all tab items and then modifies the state
 
 [!code-cpp[NVC_MFCControlLadenDialog#32](../mfc/codesnippet/cpp/tabs-and-tab-control-attributes_1.cpp)]
 
-For more information about tab attributes, see [Tabs and Tab Attributes](/windows/desktop/Controls/tab-controls) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.
+For more information about tab attributes, see [Tabs and Tab Attributes](/windows/win32/Controls/tab-controls) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.
 
 ## See also
 

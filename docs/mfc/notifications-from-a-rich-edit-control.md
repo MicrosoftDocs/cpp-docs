@@ -12,13 +12,13 @@ To set the event mask for a rich edit control, use the [SetEventMask](../mfc/ref
 
 The following paragraphs list several specific notifications and their uses:
 
-- EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](/windows/desktop/api/richedit/ns-richedit-msgfilter) structure.
+- EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](/windows/win32/api/richedit/ns-richedit-msgfilter) structure.
 
 - EN_PROTECTED Handle the EN_PROTECTED notification message to detect when the user attempts to modify protected text. To mark a range of text as protected, you can set the protected character effect. For more information, see [Character Formatting in Rich Edit Controls](../mfc/character-formatting-in-rich-edit-controls.md).
 
-- EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](/windows/desktop/api/richedit/ns-richedit-endropfiles) structure contains information about the files being dropped.
+- EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](/windows/win32/api/richedit/ns-richedit-endropfiles) structure contains information about the files being dropped.
 
-- EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-selchange) structure containing information about the new selection.
+- EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](/windows/win32/api/richedit/ns-richedit-selchange) structure containing information about the new selection.
 
 ## See also
 

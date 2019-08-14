@@ -51,13 +51,13 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] Identifies an instance of the module whose executable file contains the dialog box template.
 
 *lpTemplateName*<br/>
-[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) macro to create this value.
+[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/win32/api/winuser/nf-winuser-makeintresourcew) macro to create this value.
 
 *hWndParent*<br/>
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/win32/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -75,9 +75,9 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK: SDK Tools.
+For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/win32/menurc/common-control-parameters) under Windows SDK: SDK Tools.
 
-For more information on dialog boxes in general, refer to [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.
+For more information on dialog boxes in general, refer to [DialogBox](/windows/win32/api/winuser/nf-winuser-dialogboxw) and [CreateDialogParam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) in the Windows SDK.
 
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog
 
@@ -98,13 +98,13 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] Identifies an instance of the module whose executable file contains the dialog box template.
 
 *lpTemplateName*<br/>
-[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/desktop/api/winuser/nf-winuser-makeintresourcea) macro to create this value.
+[in] Identifies the dialog box template. This parameter is either the pointer to a null-terminated character string that specifies the name of the dialog box template or an integer value that specifies the resource identifier of the dialog box template. If the parameter specifies a resource identifier, its high-order word must be zero and its low-order word must contain the identifier. You can use the [MAKEINTRESOURCE](/windows/win32/api/winuser/nf-winuser-makeintresourcew) macro to create this value.
 
 *hWndParent*<br/>
 [in] Identifies the window that owns the dialog box.
 
 *lpDialogProc*<br/>
-[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc).
+[in] Points to the dialog box procedure. For more information about the dialog box procedure, see [DialogProc](/windows/win32/api/winuser/nc-winuser-dlgproc).
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -117,7 +117,7 @@ One of the standard HRESULT values.
 
 The resulting dialog box can contain ActiveX controls.
 
-See [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialoga) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.
+See [CreateDialog](/windows/win32/api/winuser/nf-winuser-createdialogw) and [CreateDialogParam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) in the Windows SDK.
 
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl
 
@@ -454,7 +454,7 @@ Nonzero if the initialization of the control hosting code was successful; otherw
 
 ### Remarks
 
-This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) or [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa), as described in the Windows SDK.
+This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) or [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw), as described in the Windows SDK.
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm
 
@@ -470,7 +470,7 @@ Always returns TRUE.
 
 ### Remarks
 
-This function simply calls [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) as described in the Windows SDK.
+This function simply calls [UnregisterClass](/windows/win32/api/winuser/nf-winuser-unregisterclassw) as described in the Windows SDK.
 
 Call this function to clean up after all existing host windows have been destroyed if you called [AtlAxWinInit](#atlaxwininit) and you no longer need to create host windows. If you don't call this function, the window class will be unregistered automatically when the process terminates.
 

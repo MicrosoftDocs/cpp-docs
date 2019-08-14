@@ -123,10 +123,10 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](/windows/desktop/Controls/animation-control-styles) in the Windows SDK.
+Specifies the animation control's style. Apply any combination of the windows styles described in the Remarks section below and the animation control styles described in [Animation Control Styles](/windows/win32/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
-Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure.
+Specifies the animation control's position and size. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.
 
 *pParentWnd*<br/>
 Specifies the animation control's parent window, usually a `CDialog`. It must not be NULL.
@@ -152,7 +152,7 @@ Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#wi
 
 If you want to use extended windows styles with your animation control, call [CreateEx](#createex) instead of `Create`.
 
-In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the Windows SDK for more information on [animation control styles](/windows/desktop/Controls/animation-control-styles).
+In addition to the window styles listed above, you may want to apply one or more of the animation control styles to an animation control. See the Windows SDK for more information on [animation control styles](/windows/win32/Controls/animation-control-styles).
 
 ### Example
 
@@ -174,10 +174,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](/windows/desktop/Controls/animation-control-styles) in the Windows SDK.
+Specifies the animation control's style. Apply any combination of the window and animation control styles described in [Animation Control Styles](/windows/win32/Controls/animation-control-styles) in the Windows SDK.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -210,7 +210,7 @@ TRUE if an AVI clip is playing; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [ACM_ISPLAYING](/windows/desktop/Controls/acm-isplaying) message, which is described in the Windows SDK.
+This method sends the [ACM_ISPLAYING](/windows/win32/Controls/acm-isplaying) message, which is described in the Windows SDK.
 
 ##  <a name="open"></a>  CAnimateCtrl::Open
 

@@ -41,7 +41,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 
 ## Remarks
 
-`CComObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`.
+`CComObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`.
 
 For more information about using `CComObject`, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).
 
@@ -100,7 +100,7 @@ Frees all allocated resources, calls [FinalRelease](ccomobjectrootex-class.md#fi
 
 ##  <a name="createinstance"></a>  CComObject::CreateInstance
 
-This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+This static function allows you to create a new **CComObject<**`Base`**>** object, without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 ```
 static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);

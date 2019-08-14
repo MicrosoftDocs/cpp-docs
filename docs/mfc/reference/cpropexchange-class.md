@@ -107,7 +107,7 @@ The name of the property being exchanged.
 A reference to a [CFontHolder](../../mfc/reference/cfontholder-class.md) object that contains the font property.
 
 *pFontDesc*<br/>
-A pointer to a [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc) structure containing values for initializing the default state of the font property when *pFontDispAmbient* is NULL.
+A pointer to a [FONTDESC](/windows/win32/api/olectl/ns-olectl-fontdesc) structure containing values for initializing the default state of the font property when *pFontDispAmbient* is NULL.
 
 *pFontDispAmbient*<br/>
 A pointer to the `IFontDisp` interface of a font to be used for initializing the default state of the font property.

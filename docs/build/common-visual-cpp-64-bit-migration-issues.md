@@ -28,7 +28,7 @@ For more information, see:
 
 - [MSVC Compiler Options](reference/compiler-options.md)
 
-- [Migration Tips](/windows/desktop/WinProg64/migration-tips)
+- [Migration Tips](/windows/win32/WinProg64/migration-tips)
 
 ## See also
 

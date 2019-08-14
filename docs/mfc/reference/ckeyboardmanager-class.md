@@ -141,7 +141,7 @@ static BOOL __stdcall IsKeyHandled(
 |-|-|
 |Parameter|Description|
 |*nKey*|[in] The key to check.|
-|*fVirt*|[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|
+|*fVirt*|[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/win32/api/winuser/ns-winuser-accel).|
 |*pWndFrame*|[in] A frame window. This method determines whether a shortcut key is handled in this frame.|
 |*bIsDefaultFrame*|[in] A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|
 
@@ -174,7 +174,7 @@ Nonzero if the character is printable, zero if it is not.
 
 ### Remarks
 
-This method fails if a call to [GetKeyboardState](/windows/desktop/api/winuser/nf-winuser-getkeyboardstate) fails.
+This method fails if a call to [GetKeyboardState](/windows/win32/api/winuser/nf-winuser-getkeyboardstate) fails.
 
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators
 

@@ -28,7 +28,7 @@ The Clipboard is a system service shared by the entire Windows session, so it do
 
 - [Adding other formats](../mfc/clipboard-adding-other-formats.md)
 
-- [The Windows Clipboard](/windows/desktop/dataxchg/clipboard)
+- [The Windows Clipboard](/windows/win32/dataxchg/clipboard)
 
 - [Implementing drag and drop (OLE)](../mfc/drag-and-drop-ole.md)
 

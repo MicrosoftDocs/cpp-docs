@@ -110,7 +110,7 @@ A handle to the newly created DIB bitmap if this method is successful; otherwise
 
 ### Remarks
 
-For more information about how to create a DIB bitmap, see [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap).
+For more information about how to create a DIB bitmap, see [CreateDIBSection](/windows/win32/api/wingdi/nf-wingdi-createdibitmap).
 
 ##  <a name="drawalpha"></a>  CDrawingManager::DrawAlpha
 
@@ -140,7 +140,7 @@ void DrawAlpha(
 
 ### Remarks
 
-This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) in the Windows SDK.
+This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](/windows/win32/api/wingdi/nf-wingdi-alphablend) in the Windows SDK.
 
 ##  <a name="drawellipse"></a>  CDrawingManager::DrawEllipse
 
@@ -559,7 +559,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/win32/uxguide/vis-color).
 
 This method and the `CDrawingManager::HLStoRGB_TWO` method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a percentage of the circle. In the `CDrawingManager::HLStoRGB_TWO` method, *H* is a degree value between 0 and 360, which both represent red. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -591,7 +591,7 @@ The RGB representation of the HLS color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/win32/uxguide/vis-color).
 
 This method and the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method perform the same operation, but require different values for the *H* parameter. In this method, *H* is a degree value between 0 and 360, which both represent red. In the [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) method, *H* is a percentage of the circle. For example, with `HLStoRGB_ONE`, a value of 0.25 for *H* is equivalent to a value of 90 with `HLStoRGB_TWO`.
 
@@ -621,7 +621,7 @@ The RGB representation of the HSV color provided.
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/win32/uxguide/vis-color).
 
 ##  <a name="huetorgb"></a>  CDrawingManager::HuetoRGB
 
@@ -806,7 +806,7 @@ static void __stdcall RGBtoHSL(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/win32/uxguide/vis-color).
 
 The returned value for *H* is represented as a fraction between 0 and 1 where both 0 and 1 represent red. The returned values for *S* and *L* are numbers between 0 and 1.
 
@@ -838,7 +838,7 @@ static void __stdcall RGBtoHSV(
 
 ### Remarks
 
-A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/desktop/uxguide/vis-color).
+A color can be represented as HSV (hue, saturation, and value), HSL (hue, saturation, and luminosity), or RGB (red, green, and blue). For more information about the different representations of color, see [Color](/windows/win32/uxguide/vis-color).
 
 The returned value for *H* is a number between 0 and 360 where both 0 and 360 indicate red. The return values for *S* and *V* are numbers between 0 and 1.
 

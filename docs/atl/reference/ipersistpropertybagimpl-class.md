@@ -63,7 +63,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 ### Remarks
 
-See [IPersist::GetClassID](/windows/desktop/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
+See [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
 ##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew
 

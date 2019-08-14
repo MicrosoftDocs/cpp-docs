@@ -7,7 +7,7 @@ ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
 ---
 # CComContainedObject Class
 
-This class implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`.
+This class implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -44,7 +44,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 
 ## Remarks
 
-ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.
+ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.
 
 ## Inheritance Hierarchy
 

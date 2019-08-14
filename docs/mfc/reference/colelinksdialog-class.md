@@ -42,7 +42,7 @@ Create an object of class `COleLinksDialog` when you want to call this dialog bo
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.
 
-For more information, see the [OLEUIEDITLINKS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuieditlinksa) structure in the Windows SDK.
+For more information, see the [OLEUIEDITLINKS](/windows/win32/api/oledlg/ns-oledlg-oleuieditlinksw) structure in the Windows SDK.
 
 For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).
 
@@ -82,7 +82,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if the user canceled the dialog box.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](/windows/win32/api/oledlg/nf-oledlg-oleuieditlinksw) function in the Windows SDK.
 
 ### Remarks
 
@@ -130,7 +130,7 @@ OLEUIEDITLINKS m_el;
 
 Members of this structure can be modified either directly or through member functions.
 
-For more information, see the [OLEUIEDITLINKS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuieditlinksa) structure in the Windows SDK.
+For more information, see the [OLEUIEDITLINKS](/windows/win32/api/oledlg/ns-oledlg-oleuieditlinksw) structure in the Windows SDK.
 
 ## See also
 

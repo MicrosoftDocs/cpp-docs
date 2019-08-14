@@ -83,7 +83,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/desktop/Controls/up-down-control-styles) in the Windows SDK.
+Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/win32/Controls/up-down-control-styles) in the Windows SDK.
 
 *rect*<br/>
 Specifies the spin button control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure
@@ -120,10 +120,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/desktop/Controls/up-down-control-styles) in the Windows SDK.
+Specifies the spin button control's style. Apply any combination of spin button control styles to the control. These styles are described in [Up-Down Control Styles](/windows/win32/Controls/up-down-control-styles) in the Windows SDK.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -166,7 +166,7 @@ UINT GetAccel(
 Number of elements in the array specified by *pAccel*.
 
 *pAccel*<br/>
-Pointer to an array of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures that receives acceleration information.
+Pointer to an array of [UDACCEL](/windows/win32/api/commctrl/ns-commctrl-udaccel) structures that receives acceleration information.
 
 ### Return Value
 
@@ -264,7 +264,7 @@ BOOL SetAccel(
 ### Parameters
 
 *nAccel*<br/>
-Number of [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-udaccel) structures specified by *pAccel*.
+Number of [UDACCEL](/windows/win32/api/commctrl/ns-commctrl-udaccel) structures specified by *pAccel*.
 
 *pAccel*<br/>
 Pointer to an array of UDACCEL structures, which contain acceleration information. Elements should be sorted in ascending order based on the `nSec` member.

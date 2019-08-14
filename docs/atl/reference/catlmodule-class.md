@@ -154,7 +154,7 @@ If the Global Interface Table object does not exist, it is created, and its addr
 
 In debug builds, an assertion error will occur if *ppGIT* is equal to NULL, or if the Global Interface Table pointer cannot be obtained.
 
-See [IGlobalInterfaceTable](/windows/desktop/api/objidl/nn-objidl-iglobalinterfacetable) for information on the Global Interface Table.
+See [IGlobalInterfaceTable](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable) for information on the Global Interface Table.
 
 ##  <a name="getlockcount"></a>  CAtlModule::GetLockCount
 

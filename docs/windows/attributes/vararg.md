@@ -17,7 +17,7 @@ Specifies that the function takes a variable number of arguments.
 
 ## Remarks
 
-The **vararg** C++ attribute has the same functionality as the [vararg](/windows/desktop/Midl/vararg) MIDL attribute.
+The **vararg** C++ attribute has the same functionality as the [vararg](/windows/win32/Midl/vararg) MIDL attribute.
 
 ## Example
 

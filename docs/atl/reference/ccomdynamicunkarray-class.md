@@ -149,7 +149,7 @@ The index of the element to retrieve.
 
 ### Return Value
 
-A pointer to an [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface.
+A pointer to an [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.
 
 ##  <a name="getcookie"></a>  CComDynamicUnkArray::GetCookie
 

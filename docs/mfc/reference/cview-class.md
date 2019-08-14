@@ -495,13 +495,13 @@ The default implementation is to do nothing and return a dummy value ( -1 ) to i
 
 Override this function to implement the effect of an right mouse-button drag and drop. Right mouse-button drag and drop typically displays a menu of choices when the right mouse-button is released.
 
-Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](/windows/desktop/api/winuser/nf-winuser-getkeystate) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
+Your override of `OnDropEx` should query for the right mouse-button. You can call [GetKeyState](/windows/win32/api/winuser/nf-winuser-getkeystate) or store the right mouse-button state from your [OnDragEnter](#ondragenter) handler.
 
 - If the right mouse-button is down, your override should display a popup menu which offers the drop effects support by the drop source.
 
    - Examine *dropList* to determine the drop effects supported by the drop source. Enable only these actions on the popup menu.
 
-   - Use [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem) to set the default action based on *dropDefault*.
+   - Use [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) to set the default action based on *dropDefault*.
 
    - Finally, take the action indicated by the user selection from the popup menu.
 
@@ -521,7 +521,7 @@ Drop effects describe the action associated with a drop operation. See the follo
 
 - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target.
 
-For more information on setting the default menu command, see [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.
+For more information on setting the default menu command, see [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.
 
 ##  <a name="onendprinting"></a>  CView::OnEndPrinting
 
@@ -812,7 +812,7 @@ It is also called by the default implementation of [OnInitialUpdate](#oninitialu
 
 To use *lHint*, define special hint values, typically a bitmask or an enumerated type, and have the document pass one of these values. To use *pHint*, derive a hint class from [CObject](../../mfc/reference/cobject-class.md) and have the document pass a pointer to a hint object; when overriding `OnUpdate`, use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine the run-time type of the hint object.
 
-Typically you should not perform any drawing directly from `OnUpdate`. Instead, determine the rectangle describing, in device coordinates, the area that requires updating; pass this rectangle to [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect). This causes painting to occur the next time a [WM_PAINT](/windows/desktop/gdi/wm-paint) message is received.
+Typically you should not perform any drawing directly from `OnUpdate`. Instead, determine the rectangle describing, in device coordinates, the area that requires updating; pass this rectangle to [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect). This causes painting to occur the next time a [WM_PAINT](/windows/win32/gdi/wm-paint) message is received.
 
 If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.
 

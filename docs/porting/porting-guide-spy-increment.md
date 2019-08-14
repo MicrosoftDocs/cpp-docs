@@ -59,7 +59,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
 
 Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.
 
-To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/desktop/WinProg/using-the-windows-headers).
+To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/win32/WinProg/using-the-windows-headers).
 
 The stdafx.h file contained some of these macro definitions.
 
@@ -398,7 +398,7 @@ DWORD dwWindowsVersion = GetVersion();
 
 This is followed by a lot of code that examines the dwWindowsVersion value to determine whether we're running on Windows 95, and which version of Windows NT. Since this is all outdated, we remove the code and deal with any references to those variables.
 
-The article [Operating system version changes in Windows 8.1 and Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/desktop/dn302074.aspx) explains the situation.
+The article [Operating system version changes in Windows 8.1 and Windows Server 2012 R2](/windows/win32/w8cookbook/operating-system-version-changes-in-windows-8-1) explains the situation.
 
 There are methods in the `CSpyApp` class that query the operating system version: `IsWindows9x`, `IsWindows4x`, and `IsWindows5x`. A good starting point is to assume that the versions of Windows that we intend to support (Windows 7 and later) are all close to Windows NT 5 as far the technologies used by this older application is concerned. The uses of these methods were to deal with limitations of the older operating systems. So we changed those methods to return TRUE for `IsWindows5x` and FALSE for the others.
 
@@ -514,7 +514,7 @@ Now let us actually update the old Multi-byte Character Set (MBCS) code to Unico
 
 Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether \_MBCS or \_UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining \_MBCS macro instead of \_UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a \_UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use \_UNICODE, but when one is defined, the other is always defined.
 
-A good [guide](https://msdn.microsoft.com/library/cc194801.aspx) to porting from MBCS to UTF-16 Unicode using TCHAR exists. We choose this route. First, we change the **Character Set** property to **Use Unicode Character Set** and rebuild the project.
+A good [guide](/previous-versions/cc194801(v=msdn.10)) to porting from MBCS to UTF-16 Unicode using TCHAR exists. We choose this route. First, we change the **Character Set** property to **Use Unicode Character Set** and rebuild the project.
 
 Some places in the code were already using TCHAR, apparently in anticipation of eventually supporting Unicode. Some were not. We searched for instances of CHAR, which is a **typedef** for **char**, and replaced most of them with TCHAR. Also, we looked for `sizeof(CHAR)`. Whenever we changed from CHAR to TCHAR, we usually had to change to `sizeof(TCHAR)` since this was often used to determine the number of characters in a string. Using the wrong type here does not produce a compiler error, so it's worth paying a bit of attention to this case.
 
@@ -538,7 +538,7 @@ wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 
 The \_T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with \_T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the \_T macro around some strings, this procedure will add it again, and it might also find cases where you don't want \_T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
 
-This particular function, [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
+This particular function, [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
 Another common error you’ll see in converting to Unicode is this.
 

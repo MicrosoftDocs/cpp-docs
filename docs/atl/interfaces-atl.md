@@ -19,4 +19,4 @@ Also, each interface is given a unique interface ID (IID). This uniqueness makes
 ## See also
 
 [Introduction to COM](../atl/introduction-to-com.md)<br/>
-[COM Objects and Interfaces](/windows/desktop/com/com-objects-and-interfaces)
+[COM Objects and Interfaces](/windows/win32/com/com-objects-and-interfaces)

@@ -6,9 +6,9 @@ ms.assetid: 584f5824-446b-4a1a-85f7-ef61842c8186
 ---
 # Notifications Sent by Animation Controls
 
-An animation control ([CAnimateCtrl](../mfc/reference/canimatectrl-class.md)) sends two different types of notification messages. The notifications are sent in the form of [WM_COMMAND](/windows/desktop/menurc/wm-command) messages.
+An animation control ([CAnimateCtrl](../mfc/reference/canimatectrl-class.md)) sends two different types of notification messages. The notifications are sent in the form of [WM_COMMAND](/windows/win32/menurc/wm-command) messages.
 
-The [ACN_START](/windows/desktop/Controls/acn-start) message is sent when the animation control has started playing a clip. The [ACN_STOP](/windows/desktop/Controls/acn-stop) message is sent when the animation control has finished or stopped playing a clip.
+The [ACN_START](/windows/win32/Controls/acn-start) message is sent when the animation control has started playing a clip. The [ACN_STOP](/windows/win32/Controls/acn-stop) message is sent when the animation control has finished or stopped playing a clip.
 
 ## See also
 

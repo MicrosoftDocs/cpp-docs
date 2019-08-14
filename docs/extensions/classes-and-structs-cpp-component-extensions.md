@@ -73,7 +73,7 @@ For more information on classes and structs, see
 
 ### Remarks
 
-See [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md) and [Value classes and structs](https://msdn.microsoft.com/library/windows/apps/hh699861.aspx).
+See [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md) and [Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md).
 
 ### Parameters
 

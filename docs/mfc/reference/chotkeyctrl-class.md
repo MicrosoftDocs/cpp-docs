@@ -43,7 +43,7 @@ This control (and therefore the `CHotKeyCtrl` class) is available only to progra
 
 When the user has chosen a key combination, the application can retrieve the specified key combination from the control and use the WM_SETHOTKEY message to set up the hot key in the system. Whenever the user presses the hot key thereafter, from any part of the system, the window specified in the WM_SETHOTKEY message receives a WM_SYSCOMMAND message specifying SC_HOTKEY. This message activates the window that receives it. The hot key remains valid until the application that called WM_SETHOTKEY exits.
 
-This mechanism is different from the hot key support that depends on the WM_HOTKEY message and the Windows [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) and [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) functions.
+This mechanism is different from the hot key support that depends on the WM_HOTKEY message and the Windows [RegisterHotKey](/windows/win32/api/winuser/nf-winuser-registerhotkey) and [UnregisterHotKey](/windows/win32/api/winuser/nf-winuser-unregisterhotkey) functions.
 
 For more information on using `CHotKeyCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).
 
@@ -84,10 +84,10 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK for more information.
+Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](/windows/win32/Controls/common-control-styles) in the Windows SDK for more information.
 
 *rect*<br/>
-Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
+Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](/windows/win32/api/windef/ns-windef-rect).
 
 *pParentWnd*<br/>
 Specifies the hot key control's parent window, usually a [CDialog](../../mfc/reference/cdialog-class.md). It must not be NULL.
@@ -121,10 +121,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK.
+Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](/windows/win32/Controls/common-control-styles) in the Windows SDK.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.

@@ -72,7 +72,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Parameters
 
 *preo*<br/>
-Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.
+Pointer to an [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.
 
 ### Return Value
 
@@ -82,7 +82,7 @@ Pointer to a new [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class
 
 This function does not perform any OLE initialization.
 
-For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure in the Windows SDK.
+For more information, see the [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure in the Windows SDK.
 
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat
 

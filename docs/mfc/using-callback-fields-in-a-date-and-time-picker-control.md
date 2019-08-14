@@ -35,7 +35,7 @@ When the control parses the format string and encounters a callback field, the a
 
 The DTN_FORMATQUERY notification is sent to retrieve the maximum allowable size in pixels of the string that will be displayed in the current callback field.
 
-To properly calculate this value, you must calculate the height and width of the string, to be substituted for the field, using the control's display font. The actual calculation of the string is easily achieved with a call to the [GetTextExtentPoint32](/windows/desktop/api/wingdi/nf-wingdi-gettextextentpoint32a) Win32 function. Once the size is determined, pass the value back to the application and exit the handler function.
+To properly calculate this value, you must calculate the height and width of the string, to be substituted for the field, using the control's display font. The actual calculation of the string is easily achieved with a call to the [GetTextExtentPoint32](/windows/win32/api/wingdi/nf-wingdi-gettextextentpoint32w) Win32 function. Once the size is determined, pass the value back to the application and exit the handler function.
 
 The following example is one method of supplying the size of the callback string:
 

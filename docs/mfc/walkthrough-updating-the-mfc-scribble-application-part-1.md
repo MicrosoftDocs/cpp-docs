@@ -6,7 +6,7 @@ ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ---
 # Walkthrough: Updating the MFC Scribble Application (Part 1)
 
-This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](/windows/desktop/uxguide/cmd-ribbons).
+This walkthrough demonstrates how to modify an existing MFC application to use the Ribbon user interface. Visual Studio supports both the Office 2007 Ribbon and the Windows 7 Scenic Ribbon. For more information about the Ribbon user interface, see [Ribbons](/windows/win32/uxguide/cmd-ribbons).
 
 This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use the mouse to create line drawings. This part of the walkthrough shows how to modify the Scribble sample so that it displays a ribbon bar. [Part 2](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) adds more buttons to the ribbon bar.
 

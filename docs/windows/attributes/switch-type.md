@@ -24,9 +24,9 @@ The switch type, can be an integer, character, Boolean, or enumeration type.
 
 ## Remarks
 
-The **switch_type** C++ attribute has the same functionality as the [switch_type](/windows/desktop/Midl/switch-type) MIDL attribute.
+The **switch_type** C++ attribute has the same functionality as the [switch_type](/windows/win32/Midl/switch-type) MIDL attribute.
 
-C++ attributes do not support [encapsulated unions](/windows/desktop/Midl/encapsulated-unions). [Nonencapsulated unions](/windows/desktop/Midl/nonencapsulated-unions) are supported only in the following form:
+C++ attributes do not support [encapsulated unions](/windows/win32/Midl/encapsulated-unions). [Nonencapsulated unions](/windows/win32/Midl/nonencapsulated-unions) are supported only in the following form:
 
 ```cpp
 // cpp_attr_ref_switch_type.cpp

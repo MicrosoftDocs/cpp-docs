@@ -45,7 +45,7 @@ If you don't see all of these versions of Windows listed in a copy of SDKDDKVer.
 
 You can also define this macro by using the `/D` compiler option. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).
 
-For more information about the meanings of these macros, see [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers).
+For more information about the meanings of these macros, see [Using the Windows Headers](/windows/win32/WinProg/using-the-windows-headers).
 
 ## See also
 

@@ -137,6 +137,6 @@ Win32
 ## See also
 
 [Resource Editors](../windows/resource-editors.md)
-[Strings](/windows/desktop/menurc/strings)<br/>
-[About Strings](/windows/desktop/menurc/about-strings)<br/>
+[Strings](/windows/win32/menurc/strings)<br/>
+[About Strings](/windows/win32/menurc/about-strings)<br/>
 [Customizing window layouts](/visualstudio/ide/customizing-window-layouts-in-visual-studio)

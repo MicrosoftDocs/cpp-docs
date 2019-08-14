@@ -11,7 +11,7 @@ Automation clients must have information about server objects' properties and me
 
 This type information can be made known in several ways. The recommended way is to create a type library.
 
-For information on [MkTypLib](/windows/desktop/Midl/differences-between-midl-and-mktyplib), see the Windows SDK.
+For information on [MkTypLib](/windows/win32/Midl/differences-between-midl-and-mktyplib), see the Windows SDK.
 
 Visual C++ can read a type-library file and create a dispatch class derived from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md). An object of that class has properties and operations duplicating those of the server object. Your application calls this object's properties and operations, and functionality inherited from `COleDispatchDriver` routes these calls to the OLE system, which in turn routes them to the server object.
 

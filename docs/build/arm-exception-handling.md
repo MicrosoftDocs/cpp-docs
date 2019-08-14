@@ -9,7 +9,7 @@ Windows on ARM uses the same structured exception handling mechanism for asynchr
 
 ## ARM Exception Handling
 
-Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/desktop/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
+Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/win32/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
 
 The ARM EABI (embedded application binary interface) specifies an exception unwinding model that uses unwind codes, but it's not sufficient for SEH unwinding in Windows, which must handle asynchronous cases where the processor is in the middle of the prologue or epilogue of a function. Windows also separates unwinding control into function-level unwinding and language-specific scope unwinding, which is unified in the ARM EABI. For these reasons, Windows on ARM specifies more details for the unwinding data and procedure.
 

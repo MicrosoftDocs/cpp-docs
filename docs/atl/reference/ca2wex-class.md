@@ -95,7 +95,7 @@ CA2WEX(LPCSTR psz) throw(...);
 The text string to be converted.
 
 *nCodePage*<br/>
-The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) for more details.
+The code page used to perform the conversion. See the code page parameter discussion for the Windows SDK function [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) for more details.
 
 ### Remarks
 

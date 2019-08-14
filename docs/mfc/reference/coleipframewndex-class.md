@@ -878,7 +878,7 @@ virtual void WinHelp(
 Specifies data as required for the type of help specified by *nCmd*.
 
 *nCmd*<br/>
-[in] Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.
+[in] Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/win32/api/winuser/nf-winuser-winhelpw) in the Windows SDK.
 
 ### Remarks
 

@@ -76,7 +76,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### Parameters
 
 *pSrc*<br/>
-[in] Points to the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be attached to the object.
+[in] Points to the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) to be attached to the object.
 
 ### Return Value
 
@@ -220,7 +220,7 @@ HRESULT Copy(const VARIANT* pSrc);
 ### Parameters
 
 *pSrc*<br/>
-[in] A pointer to the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be copied.
+[in] A pointer to the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) to be copied.
 
 ### Return Value
 
@@ -320,7 +320,7 @@ CComVariant& operator=(char cSrc) throw();
 ### Parameters
 
 *varSrc*<br/>
-[in] The `CComVariant` or [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
+[in] The `CComVariant` or [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) to be assigned to the `CComVariant` object. The contents of the source variant are copied to the destination without conversion.
 
 *bstrSrc*<br/>
 [in] The BSTR to be assigned to the `CComVariant` object. The type of the `CComVariant` object will be VT_BSTR.
@@ -414,7 +414,7 @@ HRESULT ReadFromStream(IStream* pStream);
 ### Parameters
 
 *pStream*<br/>
-[in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on the stream containing the data.
+[in] A pointer to the [IStream](/windows/win32/api/objidl/nn-objidl-istream) interface on the stream containing the data.
 
 ### Return Value
 
@@ -458,7 +458,7 @@ HRESULT WriteToStream(IStream* pStream);
 ### Parameters
 
 *pStream*<br/>
-[in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on a stream.
+[in] A pointer to the [IStream](/windows/win32/api/objidl/nn-objidl-istream) interface on a stream.
 
 ### Return Value
 

@@ -517,7 +517,7 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
 ### Parameters
 
 *pAccel*<br/>
-[in, out] Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](/windows/desktop/api/winuser/ns-winuser-tagaccel) struct.
+[in, out] Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](/windows/win32/api/winuser/ns-winuser-accel) struct.
 
 ### Return Value
 

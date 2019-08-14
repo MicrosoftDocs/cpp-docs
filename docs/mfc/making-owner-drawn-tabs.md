@@ -6,7 +6,7 @@ ms.assetid: 11af2926-41d7-47e3-9eec-c595283f6371
 ---
 # Making Owner-Drawn Tabs
 
-You can define individual items of a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Tabs](/windows/desktop/Controls/tab-controls) in the Windows SDK.
+You can define individual items of a tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Tabs](/windows/win32/Controls/tab-controls) in the Windows SDK.
 
 ## See also
 

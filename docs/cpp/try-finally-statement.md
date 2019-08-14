@@ -64,7 +64,7 @@ A **goto** statement can also jump out of the guarded section, but it degrades p
 
 Exiting a **try-finally** statement using the [longjmp](../c-runtime-library/reference/longjmp.md) run-time function is considered abnormal termination. It is illegal to jump into a **__try** statement, but legal to jump out of one. All **__finally** statements that are active between the point of departure (normal termination of the **__try** block) and the destination (the **__except** block that handles the exception) must be run. This is called a local unwind.
 
-If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](/windows/desktop/Debug/abnormaltermination) function returns **true** if called from within the **finally** block; otherwise, it returns **false**.
+If a **try** block is prematurely terminated for any reason, including a jump out of the block, the system executes the associated **finally** block as a part of the process of unwinding the stack. In such cases, the [AbnormalTermination](/windows/win32/Debug/abnormaltermination) function returns **true** if called from within the **finally** block; otherwise, it returns **false**.
 
 The termination handler is not called if a process is killed in the middle of executing a **try-finally** statement.
 
@@ -75,4 +75,4 @@ The termination handler is not called if a process is killed in the middle of ex
 [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)<br/>
 [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Termination-Handler Syntax](/windows/desktop/Debug/termination-handler-syntax)
+[Termination-Handler Syntax](/windows/win32/Debug/termination-handler-syntax)

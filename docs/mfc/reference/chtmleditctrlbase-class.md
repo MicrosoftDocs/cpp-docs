@@ -384,7 +384,7 @@ HRESULT ExecCommand(
 The command ID to be executed. For a list, see [MSHTML Command Identifiers](/previous-versions/aa741315\(v=vs.85\)).
 
 *cmdExecOpt*<br/>
-Values taken from the [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) enumeration, which describe how the object should execute the command.
+Values taken from the [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) enumeration, which describe how the object should execute the command.
 
 *pInVar*<br/>
 The input arguments.
@@ -401,7 +401,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-This method provides the functionality of [IOleCommandTarget::Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec).
+This method provides the functionality of [IOleCommandTarget::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec).
 
 ##  <a name="font"></a>  CHtmlEditCtrlBase::Font
 
@@ -705,7 +705,7 @@ HRESULT GetIsDirty() const;
 
 ### Remarks
 
-Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-isdirty).
+Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty).
 
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags
 
@@ -1482,7 +1482,7 @@ The command ID. Command identifiers are taken from the CGID_MSHTML command group
 
 ### Return Value
 
-Returns an [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf) indicating the status for *cmdID*, or 0 on failure.
+Returns an [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) indicating the status for *cmdID*, or 0 on failure.
 
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton
 

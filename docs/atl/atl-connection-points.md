@@ -10,7 +10,7 @@ A connectable object is one that supports outgoing interfaces. An outgoing inter
 
 ![Connection points](../atl/media/vc2zw31.gif "Connection points")
 
-Each connection point supports the [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) interface.
+Each connection point supports the [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) interface.
 
 ## In This Section
 

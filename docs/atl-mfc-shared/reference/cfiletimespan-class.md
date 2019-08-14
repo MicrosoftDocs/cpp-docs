@@ -294,7 +294,7 @@ The new value for the time span in milliseconds.
 
 ## See also
 
-[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
+[FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTime Class](../../atl-mfc-shared/reference/cfiletime-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

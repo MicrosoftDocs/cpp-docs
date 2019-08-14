@@ -7,7 +7,7 @@ ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
 ---
 # CComAggObject Class
 
-This class implements the [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface for an aggregated object. By definition, an aggregated object is contained within an outer object. The `CComAggObject` class is similar to the [CComObject Class](../../atl/reference/ccomobject-class.md), except that it exposes an interface that is directly accessible to external clients.
+This class implements the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface for an aggregated object. By definition, an aggregated object is contained within an outer object. The `CComAggObject` class is similar to the [CComObject Class](../../atl/reference/ccomobject-class.md), except that it exposes an interface that is directly accessible to external clients.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 |Name|Description|
 |----------|-----------------|
 |[CComAggObject::AddRef](#addref)|Increments the reference count on the aggregated object.|
-|[CComAggObject::CreateInstance](#createinstance)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|
+|[CComAggObject::CreateInstance](#createinstance)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).|
 |[CComAggObject::FinalConstruct](#finalconstruct)|Performs final initialization of `m_contained`.|
 |[CComAggObject::FinalRelease](#finalrelease)|Performs final destruction of `m_contained`.|
 |[CComAggObject::QueryInterface](#queryinterface)|Retrieves a pointer to the requested interface.|
@@ -50,7 +50,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 
 ## Remarks
 
-`CComAggObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for an aggregated object. `CComAggObject` has its own `IUnknown` interface, separate from the outer object's `IUnknown` interface, and maintains its own reference count.
+`CComAggObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for an aggregated object. `CComAggObject` has its own `IUnknown` interface, separate from the outer object's `IUnknown` interface, and maintains its own reference count.
 
 For more information about aggregation, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).
 
@@ -113,7 +113,7 @@ Frees all allocated resources, calls [FinalRelease](#finalrelease), and decremen
 
 ##  <a name="createinstance"></a>  CComAggObject::CreateInstance
 
-This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 ```
 static HRESULT WINAPI CreateInstance(

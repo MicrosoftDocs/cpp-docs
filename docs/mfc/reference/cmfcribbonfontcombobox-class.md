@@ -121,7 +121,7 @@ CMFCRibbonFontComboBox(
 
 For more information about possible *nFontType* parameter values, see [EnumFontFamProc](/previous-versions/dd162621\(v=vs.85\)) in the Windows SDK documentation.
 
-For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) in the Windows SDK documentation.
+For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) in the Windows SDK documentation.
 
 ##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc
 

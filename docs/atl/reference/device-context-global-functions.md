@@ -14,7 +14,7 @@ This function creates a device context for a given device.
 
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC
 
-Creates a device context for the device specified in the [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) structure.
+Creates a device context for the device specified in the [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) structure.
 
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);

@@ -22,21 +22,21 @@ In such a case, you can use a [CClientDC](../mfc/reference/cclientdc-class.md) d
 
 ### What do you want to know more about
 
-- [Device contexts (definition)](/windows/desktop/gdi/device-contexts)
+- [Device contexts (definition)](/windows/win32/gdi/device-contexts)
 
 - [Drawing in a View](../mfc/drawing-in-a-view.md)
 
 - [Interpreting User Input Through a View](../mfc/interpreting-user-input-through-a-view.md)
 
-- [Lines and curves](/windows/desktop/gdi/lines-and-curves)
+- [Lines and curves](/windows/win32/gdi/lines-and-curves)
 
-- [Filled shapes](/windows/desktop/gdi/filled-shapes)
+- [Filled shapes](/windows/win32/gdi/filled-shapes)
 
-- [Fonts and text](/windows/desktop/gdi/fonts-and-text)
+- [Fonts and text](/windows/win32/gdi/fonts-and-text)
 
-- [Colors](/windows/desktop/gdi/colors)
+- [Colors](/windows/win32/gdi/colors)
 
-- [Coordinate spaces and transformations](/windows/desktop/gdi/coordinate-spaces-and-transformations)
+- [Coordinate spaces and transformations](/windows/win32/gdi/coordinate-spaces-and-transformations)
 
 ## See also
 

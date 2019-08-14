@@ -17,7 +17,7 @@ Specifies a data type that will be used for transmission instead of an applicati
 
 ## Remarks
 
-The **wire_marshal** C++ attribute has the same functionality as the [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL attribute.
+The **wire_marshal** C++ attribute has the same functionality as the [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL attribute.
 
 ## Example
 

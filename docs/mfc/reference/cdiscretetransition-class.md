@@ -86,7 +86,7 @@ virtual BOOL Create(
 ```
 
 *pLibrary*<br/>
-A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.
+A pointer to an [IUIAnimationTransitionLibrary interface](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.
 
 ### Return Value
 

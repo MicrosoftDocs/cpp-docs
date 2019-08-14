@@ -24,7 +24,7 @@ LRESULT NotifyHandler(
 The identifier of the control sending the message.
 
 *pnmh*<br/>
-Address of an [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
+Address of an [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.
 
 *bHandled*<br/>
 The message map sets *bHandled* to TRUE before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set *bHandled* to **FALSE** to indicate the message needs further processing.
@@ -41,4 +41,4 @@ For an example of using this message handler in a message map, see [NOTIFY_HANDL
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](/windows/desktop/controls/wm-notify)
+[WM_NOTIFY](/windows/win32/controls/wm-notify)

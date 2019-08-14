@@ -19,7 +19,7 @@ Discusses, briefly, what the Active Template Library (ATL) was designed for, tem
 
 ## Related Sections
 
-[The Component Object Model](/windows/desktop/com/the-component-object-model)<br/>
+[The Component Object Model](/windows/win32/com/the-component-object-model)<br/>
 The Windows SDK material on COM.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>

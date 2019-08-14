@@ -85,7 +85,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|Called by the framework when a menu that has a tear-off bar is activated.|
 |[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|Called by the framework to update the frame menu. (Overrides `CMDIFrameWnd::OnUpdateFrameMenu`.)|
 |[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|Returns the docking pane that contains the specified point.|
-|`CMDIFrameWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions.  (Overrides `CMDIFrameWnd::PreTranslateMessage`.)|
+|`CMDIFrameWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions.  (Overrides `CMDIFrameWnd::PreTranslateMessage`.)|
 |[CMDIFrameWndEx::RecalcLayout](#recalclayout)|Called by the framework to recalculate the layout of the frame window. (Overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|
 |[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Unregisters a pane and removes it from the docking manager.|
 |[CMDIFrameWndEx::SaveMDIState](#savemdistate)|Saves the current layout of MDI Tabbed Groups and the list of previously opened documents.|
@@ -1164,7 +1164,7 @@ virtual BOOL NegotiateBorderSpace(
 - `borderSet` = 3
 
 *lpRectBorder*<br/>
-[in, out] Pointer to a [RECT Structure](/windows/desktop/api/windef/ns-windef-tagrect) or a [CRect Class](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.
+[in, out] Pointer to a [RECT Structure](/windows/win32/api/windef/ns-windef-rect) or a [CRect Class](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.
 
 ### Return Value
 
@@ -1344,7 +1344,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 [in] The toolbar button.
 
 *pTI*<br/>
-[out] Pointer to a [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) structure.
+[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure.
 
 ### Return Value
 
@@ -1860,7 +1860,7 @@ virtual void WinHelp(
 [in] Specifies data as required for the type of help specified by *nCmd*.
 
 *nCmd*<br/>
-[in] Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.
+[in] Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/win32/api/winuser/nf-winuser-winhelpw) in the Windows SDK.
 
 ### Remarks
 

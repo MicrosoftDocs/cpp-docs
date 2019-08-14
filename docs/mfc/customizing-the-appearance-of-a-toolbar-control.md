@@ -37,7 +37,7 @@ The remaining styles affect visual and nonvisual aspects of the toolbar object:
 
 - **TBSTYLE_TOOLTIPS** Creates a tool tip control that an application can use to display descriptive text for the buttons in the toolbar.
 
-For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) and [Toolbar Extended Styles](/windows/desktop/Controls/toolbar-extended-styles) in the Windows SDK.
+For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](/windows/win32/Controls/toolbar-control-and-button-styles) and [Toolbar Extended Styles](/windows/win32/Controls/toolbar-extended-styles) in the Windows SDK.
 
 ## See also
 

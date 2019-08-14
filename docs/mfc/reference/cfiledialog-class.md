@@ -124,11 +124,11 @@ To use a `CFileDialog` object, first create the object by using the `CFileDialog
 After you initialize the dialog box controls, call the [CFileDialog::DoModal](#domodal) method to display the dialog box so that the user can type the path and file name. `DoModal` returns whether the user clicked the OK (IDOK) or the Cancel (IDCANCEL) button. If `DoModal` returns IDOK, you can use one of the `CFileDialog` public member functions to retrieve the information put in by the user.
 
 > [!NOTE]
-> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return E_UNEXPECTED in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).
+> Under Windows Vista or later, multiple calls to [IFileDialog::SetFileTypes](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) causes an error. The second call to `SetFileTypes` for any instance of a `CFileDialog` will return E_UNEXPECTED in Windows Vista or later. Some `CFileDialog` method functions call `SetFileTypes`. For example, two calls to `CFileDialog::DoModal` for the same instance of a `CFileDialog` generates [ASSERT](diagnostic-services.md#assert).
 
 `CFileDialog` includes several protected members that let you do custom handling of share violations, file name validation, and list-box change notification. These protected members are callback functions that most applications do not have to use because default handling is performed automatically. Message-map entries for these functions are not required because they are standard virtual functions.
 
-You can use the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error.
+You can use the Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error.
 
 The destruction of `CFileDialog` objects is handled automatically. You do not have to call [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog).
 
@@ -470,7 +470,7 @@ virtual INT_PTR DoModal();
 
 ### Return Value
 
-IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
+IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
 
 IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.
 
@@ -693,7 +693,7 @@ The pointer to the internal COM object for the `CFileDialog`. It is your respons
 
 Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. If you use this function when *bVistaStyle* is FALSE, it will return NULL in release mode and throw an assertion in debug mode.
 
-For more information about the `IFileDialogCustomize` interface,  see [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+For more information about the `IFileDialogCustomize` interface,  see [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
 ### Example
 
@@ -717,7 +717,7 @@ The pointer to the internal COM object for the `CFileDialog`. It is your respons
 
 Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. This function returns NULL if the `CFileDialog` is not an **Open** dialog box or if *bVistaStyle* is set to FALSE. In this final case, the function only returns NULL in release mode - in debug mode it will throw an assertion.
 
-For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
+For more information about the `IFileOpenDialog` interface, see [IFileOpenDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog).
 
 ### Example
 
@@ -741,7 +741,7 @@ The pointer to the internal COM object for the `CFileDialog`. It is your respons
 
 Use this function only under Windows Vista or later with an object that has *bVistaStyle* set to TRUE. This function will return NULL if the `CFileDialog` is not a **Save** dialog box or if *bVistaStyle* is set to FALSE. In this final case, the function only returns NULL in release mode - in debug mode it will throw an assertion.
 
-For more information about the `IFileSaveDialog` interface, see [IFileSaveDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
+For more information about the `IFileSaveDialog` interface, see [IFileSaveDialog](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifilesavedialog).
 
 ### Example
 
@@ -1051,7 +1051,7 @@ virtual void OnFileNameChange();
 
 The system sends the CDN_SELCHANGE message when the user selects a new file or folder in the file list of the **Open** or **Save As** dialog box. Override this method if you want to perform any actions in response to this message.
 
-The system sends this message only if the dialog box was created with the OFN_EXPLORER flag turned on. For more information about the notification, see [CDN_SELCHANGE](/windows/desktop/dlgbox/cdn-selchange). For information about the OFN_EXPLORER flag, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+The system sends this message only if the dialog box was created with the OFN_EXPLORER flag turned on. For more information about the notification, see [CDN_SELCHANGE](/windows/win32/dlgbox/cdn-selchange). For information about the OFN_EXPLORER flag, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/win32/dlgbox/open-and-save-as-dialog-boxes).
 
 ##  <a name="onfilenameok"></a>  CFileDialog::OnFileNameOK
 
@@ -1083,7 +1083,7 @@ virtual void OnFolderChange();
 
 The notification message is sent when a new folder is opened in the Open or Save As dialog box.
 
-Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](/windows/desktop/dlgbox/cdn-folderchange). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_FOLDERCHANGE](/windows/win32/dlgbox/cdn-folderchange). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/win32/dlgbox/open-and-save-as-dialog-boxes).
 
 ##  <a name="oninitdone"></a>  CFileDialog::OnInitDone
 
@@ -1097,7 +1097,7 @@ virtual void OnInitDone();
 
 The system sends this notification message when the system has finished arranging controls in the **Open** or **Save As** dialog box to make room for the controls of the child dialog box.
 
-The system sends this only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_INITDONE](/windows/desktop/dlgbox/cdn-initdone). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+The system sends this only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_INITDONE](/windows/win32/dlgbox/cdn-initdone). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/win32/dlgbox/open-and-save-as-dialog-boxes).
 
 > [!NOTE]
 > Windows Vista or later style file dialogs do not support this function. Attempting to use this function on a Windows Vista or later style file dialog will throw [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
@@ -1197,7 +1197,7 @@ virtual void OnTypeChange();
 
 The notification message is sent when the user selects a new file type from the list of file types in the Open or Save As dialog box.
 
-Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_TYPECHANGE](/windows/desktop/dlgbox/cdn-typechange). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/desktop/dlgbox/open-and-save-as-dialog-boxes).
+Notification is sent only if the dialog box was created with the OFN_EXPLORER style. For more information about the notification, see [CDN_TYPECHANGE](/windows/win32/dlgbox/cdn-typechange). For information about the OFN_EXPLORER style, see the [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew) structure and [Open and Save As Dialog Boxes](/windows/win32/dlgbox/open-and-save-as-dialog-boxes).
 
 ##  <a name="removecontrolitem"></a>  CFileDialog::RemoveControlItem
 
@@ -1460,7 +1460,7 @@ void SetTemplate(
 The system will use only one of the specified templates. The system determines which template to use based on the presence of the OFN_EXPLORER style and the operating system that the application is running on. By specifying both a non-Explorer and Explorer-style template, it is easy to support Windows NT 3.51, Windows NT 4.0  and later versions, and Windows 95 and later versions.
 
 > [!NOTE]
-> Windows Vista or later style file dialog boxes do not support this function. Attempting to use this function on a Windows Vista or later style file dialog box will throw [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md). An alternative is to use a customized dialog. For more information about using a custom `CFileDialog`, see [IFileDialogCustomize](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
+> Windows Vista or later style file dialog boxes do not support this function. Attempting to use this function on a Windows Vista or later style file dialog box will throw [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md). An alternative is to use a customized dialog. For more information about using a custom `CFileDialog`, see [IFileDialogCustomize](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize).
 
 ##  <a name="startvisualgroup"></a>  CFileDialog::StartVisualGroup
 
@@ -1494,7 +1494,7 @@ void UpdateOFNFromShellDialog();
 
 In versions of Windows before Windows Vista, the member [OPENFILENAME](/previous-versions/windows/embedded/ms911906\(v=msdn.10\)) data structure was continuously synchronized with the state of the `CFileDialog`. Any changes to the [m_ofn](#m_ofn) member variable directly affected the state of the dialog box. Also, any changes to the state of the dialog immediately updated the m_ofn member variable.
 
-In Windows Vista or later, the `m_ofn` data structure is not automatically updated. To guarantee the accuracy of the data in the `m_ofn` member variable, you should call the `UpdateOFNFromShellDialog` function before accessing the data. Windows calls this function automatically during the processing of [IFileDialog::OnFileOK](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
+In Windows Vista or later, the `m_ofn` data structure is not automatically updated. To guarantee the accuracy of the data in the `m_ofn` member variable, you should call the `UpdateOFNFromShellDialog` function before accessing the data. Windows calls this function automatically during the processing of [IFileDialog::OnFileOK](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialogevents-onfileok).
 
 For more information about how to use the `CFileDialog` class under Windows Vista or later, see [CFileDialog Class](../../mfc/reference/cfiledialog-class.md).
 

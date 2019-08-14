@@ -105,7 +105,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 #### Parameters
 
 *pUnkOuter*<br/>
-[in] An outer [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) when aggregating, otherwise NULL.
+[in] An outer [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) when aggregating, otherwise NULL.
 
 *cRestrictions*<br/>
 [in] The count of restrictions applied to the schema rowset.

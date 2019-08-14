@@ -21,13 +21,13 @@ The way that you'll implement the event interface will depend on its type. An ev
 
 Advising the event source can be broken down into three steps:
 
-- Query the source object for [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer).
+- Query the source object for [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer).
 
-- Call [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) passing the IID of the event interface that interests you. If successful, this will return the [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) interface on a connection point object.
+- Call [IConnectionPointContainer::FindConnectionPoint](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) passing the IID of the event interface that interests you. If successful, this will return the [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) interface on a connection point object.
 
-- Call [IConnectionPoint::Advise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-advise) passing the `IUnknown` of the event sink. If successful, this will return a `DWORD` cookie representing the connection.
+- Call [IConnectionPoint::Advise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) passing the `IUnknown` of the event sink. If successful, this will return a `DWORD` cookie representing the connection.
 
-Once you have successfully registered your interest in receiving events, methods on your object's event interface will be called according to the events fired by the source object. When you no longer need to receive events, you can pass the cookie back to the connection point via [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise). This will break the connection between source and sink.
+Once you have successfully registered your interest in receiving events, methods on your object's event interface will be called according to the events fired by the source object. When you no longer need to receive events, you can pass the cookie back to the connection point via [IConnectionPoint::Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise). This will break the connection between source and sink.
 
 Be careful to avoid reference cycles when handling events.
 

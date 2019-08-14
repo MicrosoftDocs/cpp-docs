@@ -39,7 +39,7 @@ Your class, derived from `IPerPropertyBrowsingImpl`.
 
 ## Remarks
 
-The [IPerPropertyBrowsing](/windows/desktop/api/ocidl/nn-ocidl-iperpropertybrowsing) interface allows a client to access the information in an object's property pages. Class `IPerPropertyBrowsingImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IPerPropertyBrowsing](/windows/win32/api/ocidl/nn-ocidl-iperpropertybrowsing) interface allows a client to access the information in an object's property pages. Class `IPerPropertyBrowsingImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 > [!NOTE]
 >  If you are using Microsoft Access as the container application, you must derive your class from `IPerPropertyBrowsingImpl`. Otherwise, Access will not load your control.
@@ -68,7 +68,7 @@ STDMETHOD(GetDisplayString)(
 
 ### Remarks
 
-See [IPerPropertyBrowsing::GetDisplayString](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) in the Windows SDK.
+See [IPerPropertyBrowsing::GetDisplayString](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) in the Windows SDK.
 
 ##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings
 
@@ -87,7 +87,7 @@ ATL's implementation of [GetPredefinedValue](#getpredefinedvalue) returns E_NOTI
 
 ### Remarks
 
-See [IPerPropertyBrowsing::GetPredefinedStrings](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) in the Windows SDK.
+See [IPerPropertyBrowsing::GetPredefinedStrings](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) in the Windows SDK.
 
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue
 
@@ -108,7 +108,7 @@ Returns E_NOTIMPL.
 
 ATL's implementation of [GetPredefinedStrings](#getpredefinedstrings) retrieves no corresponding strings.
 
-See [IPerPropertyBrowsing::GetPredefinedValue](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) in the Windows SDK.
+See [IPerPropertyBrowsing::GetPredefinedValue](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) in the Windows SDK.
 
 ##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage
 
@@ -124,7 +124,7 @@ STDMETHOD(MapPropertyToPage)(
 
 ATL uses the object's property map to obtain this information.
 
-See [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) in the Windows SDK.
+See [IPerPropertyBrowsing::MapPropertyToPage](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) in the Windows SDK.
 
 ## See also
 

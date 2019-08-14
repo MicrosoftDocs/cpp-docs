@@ -22,7 +22,7 @@ The /DELAY option controls [delayed loading](linker-support-for-delay-loaded-dll
 
 - The NOBIND qualifier tells the linker not to include a bindable IAT in the final image. The default is to create the bindable IAT for delay-loaded DLLs. The resulting image cannot be statically bound. (Images with bindable IATs may be statically bound prior to execution.) See [/BIND](bind.md).
 
-   If the DLL is bound, the helper function will attempt to use the bound information instead of calling [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) on each of the referenced imports. If either the timestamp or the preferred address does not match those of the loaded DLL, the helper function will assume the bound IAT is out of date and will proceed as if the bound IAT does not exist.
+   If the DLL is bound, the helper function will attempt to use the bound information instead of calling [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) on each of the referenced imports. If either the timestamp or the preferred address does not match those of the loaded DLL, the helper function will assume the bound IAT is out of date and will proceed as if the bound IAT does not exist.
 
    NOBIND causes your program image to be larger but can speed load time of the DLL. If you never intend to bind the DLL, NOBIND will prevent the bound IAT from being generated.
 

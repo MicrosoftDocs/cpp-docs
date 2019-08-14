@@ -119,7 +119,7 @@ For information about these and other error codes, see [errno, _doserrno, _sys_e
 The **snprintf** function and the **_snprintf** family of functions format and store *count* or fewer characters in *buffer*. The **snprintf** function always stores a terminating null character, truncating the output if necessary. The **_snprintf** family of functions only appends a terminating null character if the formatted string length is strictly less than *count* characters. Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string. Because the **_snprintf** functions do not guarantee null termination—in particular, when the return value is *count*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> Ensure that *format* is not a user-defined string. Because the **_snprintf** functions do not guarantee null termination—in particular, when the return value is *count*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 Beginning with the UCRT in Visual Studio 2015 and Windows 10, **snprintf** is no longer identical to **_snprintf**. The **snprintf** function behavior is now C99 standard compliant.
 

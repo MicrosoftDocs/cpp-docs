@@ -27,7 +27,7 @@ class CPaintDC : public CDC
 
 |Name|Description|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) used to paint the client area.|
+|[CPaintDC::m_ps](#m_ps)|Contains the [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) used to paint the client area.|
 
 ### Protected Data Members
 
@@ -39,7 +39,7 @@ class CPaintDC : public CDC
 
 It performs a [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) at construction time and [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) at destruction time.
 
-A `CPaintDC` object can only be used when responding to a [WM_PAINT](/windows/desktop/gdi/wm-paint) message, usually in your `OnPaint` message-handler member function.
+A `CPaintDC` object can only be used when responding to a [WM_PAINT](/windows/win32/gdi/wm-paint) message, usually in your `OnPaint` message-handler member function.
 
 For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device-contexts.md).
 
@@ -57,7 +57,7 @@ For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device
 
 ##  <a name="cpaintdc"></a>  CPaintDC::CPaintDC
 
-Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) structure in the [m_ps](#m_ps) member variable.
+Constructs a `CPaintDC` object, prepares the application window for painting, and stores the [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) structure in the [m_ps](#m_ps) member variable.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -70,7 +70,7 @@ Points to the `CWnd` object to which the `CPaintDC` object belongs.
 
 ### Remarks
 
-An exception (of type `CResourceException`) is thrown if the Windows [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.
+An exception (of type `CResourceException`) is thrown if the Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.
 
 ### Example
 
@@ -94,7 +94,7 @@ HWND m_hWnd;
 
 ##  <a name="m_ps"></a>  CPaintDC::m_ps
 
-`m_ps` is a public member variable of type [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct).
+`m_ps` is a public member variable of type [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct).
 
 ```
 PAINTSTRUCT m_ps;

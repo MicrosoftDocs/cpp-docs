@@ -50,7 +50,7 @@ To set or retrieve the SACL in an object's security descriptor, the SE_SECURITY_
 
 Use the class methods provided to add, remove, create, and delete ACEs from the `SACL` object. See also [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl).
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -115,7 +115,7 @@ Returns TRUE if the ACE is added to the `CSacl` object, FALSE on failure.
 
 A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
+See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.
 
 ##  <a name="csacl"></a>  CSacl::CSacl
 
@@ -208,7 +208,7 @@ Removes every `ACE` structure (if any) in the `CSacl` object.
 ## See also
 
 [CAcl Class](../../atl/reference/cacl-class.md)<br/>
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[ACLs](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[ACEs](/windows/win32/SecAuthZ/access-control-entries)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

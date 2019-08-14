@@ -151,7 +151,7 @@ void InitializeFont(
 ### Parameters
 
 *pFontDesc*<br/>
-Pointer to a font description structure ( [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc)) that specifies the font's characteristics.
+Pointer to a font description structure ( [FONTDESC](/windows/win32/api/olectl/ns-olectl-fontdesc)) that specifies the font's characteristics.
 
 *pFontDispAmbient*<br/>
 Pointer to the container's ambient Font property.
@@ -183,7 +183,7 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
 ### Parameters
 
 *lptm*<br/>
-A pointer to a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure that will receive the information.
+A pointer to a [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) structure that will receive the information.
 
 ##  <a name="releasefont"></a>  CFontHolder::ReleaseFont
 

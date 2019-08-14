@@ -77,7 +77,7 @@ STDMETHOD(Advise)(
 
 Use [Unadvise](#unadvise) to terminate the connection call.
 
-See [IConnectionPoint::Advise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-advise) in the Windows SDK.
+See [IConnectionPoint::Advise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) in the Windows SDK.
 
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections
 
@@ -89,7 +89,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 
 ### Remarks
 
-See [IConnectionPoint::EnumConnections](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) in the Windows SDK.
+See [IConnectionPoint::EnumConnections](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) in the Windows SDK.
 
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface
 
@@ -101,7 +101,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 
 ### Remarks
 
-See [IConnectionPoint::GetConnectionInterface](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) in the Windows SDK.
+See [IConnectionPoint::GetConnectionInterface](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) in the Windows SDK.
 
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer
 
@@ -113,7 +113,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 
 ### Remarks
 
-See [IConnectionPoint::GetConnectionPointContainer](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) in the Windows SDK.
+See [IConnectionPoint::GetConnectionPointContainer](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) in the Windows SDK.
 
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec
 
@@ -137,9 +137,9 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 ### Remarks
 
-See [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) in the Windows SDK.
+See [IConnectionPoint::Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) in the Windows SDK.
 
 ## See also
 
-[IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
+[IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

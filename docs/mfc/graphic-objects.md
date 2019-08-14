@@ -10,7 +10,7 @@ ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
 Windows provides a variety of drawing tools to use in device contexts. It provides pens to draw lines, brushes to fill interiors, and fonts to draw text. MFC provides graphic-object classes equivalent to the drawing tools in Windows. The table below shows the available classes and the equivalent Windows graphics device interface (GDI) handle types.
 
 > [!NOTE]
->  For more information, see the [GDI+ SDK documentation](/windows/desktop/gdiplus/-gdiplus-gdi-start).
+>  For more information, see the [GDI+ SDK documentation](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
 This article explains the use of these graphic-object classes:
 

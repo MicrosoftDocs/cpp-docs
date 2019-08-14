@@ -6,7 +6,7 @@ ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
 ---
 # ATL COM Desktop Components
 
-The ATL Reference documents the Active Template Library (ATL), a set of template-based C++ classes that simplify the programming of Component Object Model (COM) objects. COM is a binary specification for creating and consuming software components on Windows. To fully take advantage of ATL, a working familiarity with COM is highly recommended. For more information about COM, see [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal).
+The ATL Reference documents the Active Template Library (ATL), a set of template-based C++ classes that simplify the programming of Component Object Model (COM) objects. COM is a binary specification for creating and consuming software components on Windows. To fully take advantage of ATL, a working familiarity with COM is highly recommended. For more information about COM, see [Component Object Model (COM)](/windows/win32/com/component-object-model--com--portal).
 
 ## In This Section
 

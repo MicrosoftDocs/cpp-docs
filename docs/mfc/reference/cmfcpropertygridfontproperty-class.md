@@ -71,7 +71,7 @@ CMFCPropertyGridFontProperty(
 [in] A logical font structure that specifies the attributes of the font.
 
 *dwFontDialogFlags*<br/>
-[in] Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).
+[in] Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](/windows/win32/api/commdlg/ns-commdlg-choosefontw).
 
 *lpszDescr*<br/>
 [in] Description of the font property. The default value is NULL.
@@ -116,7 +116,7 @@ LPLOGFONT GetLogFont();
 
 ### Return Value
 
-A pointer to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure that describes the selected font.
+A pointer to a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure that describes the selected font.
 
 ### Remarks
 

@@ -9,7 +9,7 @@ ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
 
 **Microsoft Specific**
 
-Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winnt/nf-winnt-interlockeddecrement) function.
+Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) function.
 
 ## Syntax
 

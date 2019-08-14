@@ -22,7 +22,7 @@ A 32-bit Help context identifier in the **Help** file.
 
 ## Remarks
 
-The **helpstringcontext** C++ attribute has the same functionality as the [helpstringcontext](/windows/desktop/Midl/helpstringcontext) ODL attribute.
+The **helpstringcontext** C++ attribute has the same functionality as the [helpstringcontext](/windows/win32/Midl/helpstringcontext) ODL attribute.
 
 ## Example
 

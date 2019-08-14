@@ -61,7 +61,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::OnCreate](#oncreate)|Called by the framework after the frame is created.|
 |[CFrameWndEx::OnDestroy](#ondestroy)|Called by the framework when the frame is destroyed.|
 |[CFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the application draws the image associated with a menu item.|
-|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](/windows/desktop/gdi/wm-paint) message.|
+|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](/windows/win32/gdi/wm-paint) message.|
 |[CFrameWndEx::OnDWMCompositionChanged](#ondwmcompositionchanged)|Called by the framework when Desktop Window Manager (DWM) composition has been enabled or disabled.|
 |[CFrameWndEx::OnExitSizeMove](#onexitsizemove)|Called by the framework when the frame stops moving or resizing.|
 |[CFrameWndEx::OnGetMinMaxInfo](#ongetminmaxinfo)|Called by the framework when the frame is resized to set window dimension limits.|
@@ -179,7 +179,7 @@ A handle to a structure that contains the positions of multiple windows. .
 
 ### Remarks
 
-The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) method.
+The hdwp structure is initialized by the [BeginDeferWindowPos](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) method.
 
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu
 
@@ -882,7 +882,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### Parameters
 
 *lpCreateStruct*<br/>
-[in] A pointer to the [CREATESTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) for the new frame.
+[in] A pointer to the [CREATESTRUCT Structure](/windows/win32/api/winuser/ns-winuser-createstructw) for the new frame.
 
 ### Return Value
 
@@ -1017,7 +1017,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ### Parameters
 
 *lpMMI*<br/>
-[in] Pointer to a [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) structure.
+[in] Pointer to a [MINMAXINFO](/windows/win32/api/winuser/ns-winuser-minmaxinfo) structure.
 
 ### Remarks
 
@@ -1058,7 +1058,7 @@ afx_msg void OnLButtonDown(
 ### Parameters
 
 *nFlags*<br/>
-[in] Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONDOWN Notification](/windows/desktop/inputdev/wm-lbuttondown).
+[in] Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONDOWN Notification](/windows/win32/inputdev/wm-lbuttondown).
 
 *point*<br/>
 [in] Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.
@@ -1078,7 +1078,7 @@ afx_msg void OnLButtonUp(
 ### Parameters
 
 *nFlags*<br/>
-[in] Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONUP Notification](/windows/desktop/inputdev/wm-lbuttonup).
+[in] Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONUP Notification](/windows/win32/inputdev/wm-lbuttonup).
 
 *point*<br/>
 [in] Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.
@@ -1156,7 +1156,7 @@ afx_msg void OnMouseMove(
 ### Parameters
 
 *nFlags*<br/>
-[in] Indicates whether a user pressed modifier keys. For possible values see the parameter *wParam* in [WM_MOUSEMOVE Notification](/windows/desktop/inputdev/wm-mousemove).
+[in] Indicates whether a user pressed modifier keys. For possible values see the parameter *wParam* in [WM_MOUSEMOVE Notification](/windows/win32/inputdev/wm-mousemove).
 
 *point*<br/>
 [in] Specifies the x and y coordinates of the pointer relative to the upper-left corner of the window.
@@ -1236,7 +1236,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### Return Value
 
-A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).
+A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/win32/inputdev/wm-nchittest).
 
 ### Remarks
 
@@ -1253,7 +1253,7 @@ afx_msg void OnNcMouseMove(
 ### Parameters
 
 *nHitTest*<br/>
-[in] A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).
+[in] A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/win32/inputdev/wm-nchittest).
 
 *point*<br/>
 [in] The location of the pointer in screen coordinates.
@@ -1326,7 +1326,7 @@ afx_msg LRESULT OnPowerBroadcast(
 ### Parameters
 
 *wp*<br/>
-[in] The power management event. For a list of possible values see [WM_POWERBROADCAST Message](/windows/desktop/Power/wm-powerbroadcast).
+[in] The power management event. For a list of possible values see [WM_POWERBROADCAST Message](/windows/win32/Power/wm-powerbroadcast).
 
 *lp*<br/>
 [in] This parameter is not used.
@@ -1408,7 +1408,7 @@ afx_msg LRESULT OnSetText(
 
 ### Return Value
 
-Return value from a call to [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
+Return value from a call to [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowprocw).
 
 ### Remarks
 
@@ -1498,7 +1498,7 @@ afx_msg void OnSize(
 ### Parameters
 
 *nType*<br/>
-[in] The type of resizing. For possible values see the parameter *wParam* in [WM_SIZE Notification](/windows/desktop/winmsg/wm-size).
+[in] The type of resizing. For possible values see the parameter *wParam* in [WM_SIZE Notification](/windows/win32/winmsg/wm-size).
 
 *cx*<br/>
 [in] New width of the frame in pixels.
@@ -1521,10 +1521,10 @@ afx_msg void OnSizing(
 ### Parameters
 
 *fwSide*<br/>
-[in] The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).
+[in] The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/win32/winmsg/wm-sizing).
 
 *pRect*<br/>
-[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure that contains the frame's coordinates.
+[in, out] Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the frame's coordinates.
 
 ### Remarks
 
@@ -1694,7 +1694,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ### Parameters
 
 *lpwndpos*<br/>
-[in] Pointer to a [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) structure that contains the new size and position.
+[in] Pointer to a [WINDOWPOS](/windows/win32/api/winuser/ns-winuser-windowpos) structure that contains the new size and position.
 
 ### Remarks
 
@@ -1754,7 +1754,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-[in] A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
+[in] A pointer to a [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that contains the message to process.
 
 ### Return Value
 
@@ -1926,10 +1926,10 @@ virtual void WinHelp(
 ### Parameters
 
 *dwData*<br/>
-Data that depends on the *nCmd* parameter. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).
+Data that depends on the *nCmd* parameter. For a list of possible values see [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw).
 
 *nCmd*<br/>
-The help command. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).
+The help command. For a list of possible values see [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw).
 
 ### Remarks
 

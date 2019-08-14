@@ -16,7 +16,7 @@ Specifies a response file for MIDL command line options
 ## Arguments
 
 *file*<br/>
-The name of the file that contains [MIDL command line options](/windows/desktop/Midl/general-midl-command-line-syntax).
+The name of the file that contains [MIDL command line options](/windows/win32/Midl/general-midl-command-line-syntax).
 
 ## Remarks
 

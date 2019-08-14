@@ -66,7 +66,7 @@ These style flags are described further in [Using CComboBoxEx](../../mfc/using-c
 
 ## Item Retention and Callback Item Attributes
 
-Item information, such as indexes for items and images, indentation values, and text strings, is stored in the Win32 structure [COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema), as described in the Windows SDK. The structure also contains members that correspond to callback flags.
+Item information, such as indexes for items and images, indentation values, and text strings, is stored in the Win32 structure [COMBOBOXEXITEM](/windows/win32/api/commctrl/ns-commctrl-comboboxexitemw), as described in the Windows SDK. The structure also contains members that correspond to callback flags.
 
 For a detailed, conceptual discussion, see [Using CComboBoxEx](../../mfc/using-ccomboboxex.md).
 
@@ -146,7 +146,7 @@ When you create the combo box, you can specify any or all of the following combo
 
 - WS_CHILD
 
-All other styles passed when you create the window are ignored. The `ComboBoxEx` control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](/windows/desktop/Controls/comboboxex-control-extended-styles), in the Windows SDK. Set these styles by calling [SetExtendedStyle](#setextendedstyle).
+All other styles passed when you create the window are ignored. The `ComboBoxEx` control also supports extended styles that provide additional features. These styles are described in [ComboBoxEx control extended styles](/windows/win32/Controls/comboboxex-control-extended-styles), in the Windows SDK. Set these styles by calling [SetExtendedStyle](#setextendedstyle).
 
 If you want to use extended windows styles with your control, call [CreateEx](#createex) instead of `Create`.
 
@@ -166,7 +166,7 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
 The combo box control's style. See [Create](#create) for a list of styles.
@@ -188,7 +188,7 @@ Nonzero if successful; otherwise 0.
 
 Use `CreateEx` instead of `Create` to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-`CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as CBES_EX_CASESENSITIVE. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](/windows/desktop/Controls/comboboxex-control-extended-styles) in the Windows SDK.
+`CreateEx` creates the control with the extended Windows styles specified by *dwExStyle*. You must set extended styles specific to an extended combo box control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as CBES_EX_CASESENSITIVE. For more information, see the styles described in the topic [ComboBoxEx Control Extended Styles](/windows/win32/Controls/comboboxex-control-extended-styles) in the Windows SDK.
 
 ##  <a name="deleteitem"></a>  CComboBoxEx::DeleteItem
 
@@ -209,7 +209,7 @@ The number of items remaining in the control. If *iIndex* is invalid, the functi
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with CBEN_DELETEITEM notification will be sent to the parent window.
+This member function implements the functionality of the message [CBEM_DELETEITEM](/windows/win32/Controls/cbem-deleteitem), as described in the Windows SDK. When you call DeleteItem, a [WM_NOTIFY](/windows/win32/controls/wm-notify) message with CBEN_DELETEITEM notification will be sent to the parent window.
 
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl
 
@@ -261,7 +261,7 @@ The DWORD value that contains the extended styles that are used for the combo bo
 
 ### Remarks
 
-See [ComboBoxEx Control Extended Styles](/windows/desktop/Controls/comboboxex-control-extended-styles) in the Windows SDK for more information about these styles.
+See [ComboBoxEx Control Extended Styles](/windows/win32/Controls/comboboxex-control-extended-styles) in the Windows SDK for more information about these styles.
 
 ##  <a name="getimagelist"></a>  CComboBoxEx::GetImageList
 
@@ -290,7 +290,7 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
 ### Parameters
 
 *pCBItem*<br/>
-A pointer to a [COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema) structure that will receive the item information.
+A pointer to a [COMBOBOXEXITEM](/windows/win32/api/commctrl/ns-commctrl-comboboxexitemw) structure that will receive the item information.
 
 ### Return Value
 
@@ -298,7 +298,7 @@ Nonzero if the operation was successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_GETITEM](/windows/desktop/Controls/cbem-getitem), as described in the Windows SDK.
+This member function implements the functionality of the message [CBEM_GETITEM](/windows/win32/Controls/cbem-getitem), as described in the Windows SDK.
 
 ##  <a name="haseditchanged"></a>  CComboBoxEx::HasEditChanged
 
@@ -314,7 +314,7 @@ Nonzero if the user has typed in the control's edit box; otherwise 0.
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_HASEDITCHANGED](/windows/desktop/Controls/cbem-haseditchanged), as described in the Windows SDK.
+This member function implements the functionality of the message [CBEM_HASEDITCHANGED](/windows/win32/Controls/cbem-haseditchanged), as described in the Windows SDK.
 
 ##  <a name="insertitem"></a>  CComboBoxEx::InsertItem
 
@@ -327,7 +327,7 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
 ### Parameters
 
 *pCBItem*<br/>
-A pointer to a [COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema) structure that will receive the item information. This structure contains callback flag values for the item.
+A pointer to a [COMBOBOXEXITEM](/windows/win32/api/commctrl/ns-commctrl-comboboxexitemw) structure that will receive the item information. This structure contains callback flag values for the item.
 
 ### Return Value
 
@@ -335,7 +335,7 @@ The index at which the new item was inserted if successful; otherwise -1.
 
 ### Remarks
 
-When you call `InsertItem`, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message with [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) notification will be sent to the parent window.
+When you call `InsertItem`, a [WM_NOTIFY](/windows/win32/controls/wm-notify) message with [CBEN_INSERTITEM](/windows/win32/Controls/cben-insertitem) notification will be sent to the parent window.
 
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle
 
@@ -361,7 +361,7 @@ A DWORD value that contains the extended styles previously used for the control.
 
 ### Remarks
 
-See [ComboBoxEx Control Extended Styles](/windows/desktop/Controls/comboboxex-control-extended-styles) in the Windows SDK for more information about these styles.
+See [ComboBoxEx Control Extended Styles](/windows/win32/Controls/comboboxex-control-extended-styles) in the Windows SDK for more information about these styles.
 
 To create a combo box extended control with extended windows styles, use [CreateEx](#createex).
 
@@ -384,7 +384,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object cont
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist), as described in the Windows SDK. If you change the height of the default edit control, call the Win32 function [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) to resize your control after you call `SetImageList`, or it will not display properly.
+This member function implements the functionality of the message [CBEM_SETIMAGELIST](/windows/win32/Controls/cbem-setimagelist), as described in the Windows SDK. If you change the height of the default edit control, call the Win32 function [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) to resize your control after you call `SetImageList`, or it will not display properly.
 
 The `CImageList` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.
 
@@ -399,7 +399,7 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
 ### Parameters
 
 *pCBItem*<br/>
-A pointer to a [COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema) structure that will receive the item information.
+A pointer to a [COMBOBOXEXITEM](/windows/win32/api/commctrl/ns-commctrl-comboboxexitemw) structure that will receive the item information.
 
 ### Return Value
 
@@ -407,7 +407,7 @@ Nonzero if the operation was successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the functionality of the message [CBEM_SETITEM](/windows/desktop/Controls/cbem-setitem), as described in the Windows SDK.
+This member function implements the functionality of the message [CBEM_SETITEM](/windows/win32/Controls/cbem-setitem), as described in the Windows SDK.
 
 ##  <a name="setwindowtheme"></a>  CComboBoxEx::SetWindowTheme
 
@@ -428,7 +428,7 @@ The return value is not used.
 
 ### Remarks
 
-This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](/windows/desktop/Controls/cbem-setwindowtheme) message, as described in the Windows SDK.
+This member function emulates the functionality of the [CBEM_SETWINDOWTHEME](/windows/win32/Controls/cbem-setwindowtheme) message, as described in the Windows SDK.
 
 ## See also
 

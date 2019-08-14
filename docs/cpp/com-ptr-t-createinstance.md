@@ -56,7 +56,7 @@ These member functions call `CoCreateInstance` to create a new COM object and th
 
 - **CreateInstance(**  *clsidString* **,**  *dwClsContext*  **)** Creates a new running instance of an object given a Unicode string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.
 
-- **CreateInstance(**  *clsidStringA* **,**  *dwClsContext*  **)** Creates a new running instance of an object given a multibyte character string that holds either a `CLSID` (starting with "**{**") or a `ProgID`. Calls [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), which assumes that the string is in the ANSI code page rather than an OEM code page.
+- **CreateInstance(**  *clsidStringA* **,**  *dwClsContext*  **)** Creates a new running instance of an object given a multibyte character string that holds either a `CLSID` (starting with "**{**") or a `ProgID`. Calls [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar), which assumes that the string is in the ANSI code page rather than an OEM code page.
 
 **END Microsoft Specific**
 

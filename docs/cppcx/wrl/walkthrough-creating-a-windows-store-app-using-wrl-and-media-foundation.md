@@ -9,7 +9,7 @@ ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
 > [!NOTE]
 > For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
 
-In this tutorial, you will learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
+In this tutorial, you will learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk).
 
 This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
 
@@ -25,7 +25,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 - In Visual Studio 2017 and later, UWP support is an optional component. To install it, open the Visual Studio Installer from the Windows Start menu and find your version of Visual Studio. Choose **Modify** and then make sure the **Universal Windows Platform Development** tile is checked. Under **Optional Components** check **C++ Tools for UWP (v141)** for Visual Studio 2017, or **C++ Tools for UWP (v142)** for Visual Studio 2019. Then check the version of the Windows SDK that you want to use. 
 
-- Experience with the [Windows Runtime](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
+- Experience with the [Windows Runtime](/uwp/api/).
 
 - Experience with COM.
 
@@ -35,13 +35,13 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 - To create a custom Media Foundation component, use a Microsoft Interface Definition Language (MIDL) definition file to define an interface, implement that interface, and then make it activatable from other components.
 
-- The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](/windows/desktop/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
+- The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](/windows/win32/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
 
 - [Microsoft::WRL::RuntimeClass](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
 
 - The [InspectableClass](inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
 
-- Use the Microsoft::WRL::[Module class](module-class.md) to implement DLL entry-point functions such as [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
+- Use the Microsoft::WRL::[Module class](module-class.md) to implement DLL entry-point functions such as [DllGetActivationFactory](/windows/win32/winrt/functions), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject).
 
 - Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
 
@@ -102,7 +102,7 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. In `Package.appxmanifest`, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.
 
-1. In `MainPage.xaml`, add this code to the root [Grid](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:
+1. In `MainPage.xaml`, add this code to the root [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) element:
 
    [!code-xml[wrl-media-capture#7](../codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -121,5 +121,5 @@ The example shows how to capture photos from the default webcam one at a time. T
 ## See also
 
 [Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
-[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)<br/>
+[Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)<br/>
 [Media extensions sample](https://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

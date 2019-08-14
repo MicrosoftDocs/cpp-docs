@@ -145,7 +145,7 @@ One of the standard HRESULT values.
 
 ### Remarks
 
-If your control class derives from [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.
+If your control class derives from [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.
 
 This method is safe to call even if your control doesn't support connection points.
 
@@ -172,7 +172,7 @@ One of the standard HRESULT values.
 
 ### Remarks
 
-If your control class derives from [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.
+If your control class derives from [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.
 
 This method is safe to call even if your control doesn't support connection points.
 
@@ -200,11 +200,11 @@ The text to be displayed in the message box.
 The dialog box title. If NULL (the default), the title "Error" is used.
 
 *nType*<br/>
-Specifies the contents and behavior of the dialog box. See the [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) entry in the Windows SDK documentation for a list of the different message boxes available. The default provides a simple **OK** button.
+Specifies the contents and behavior of the dialog box. See the [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) entry in the Windows SDK documentation for a list of the different message boxes available. The default provides a simple **OK** button.
 
 ### Return Value
 
-Returns an integer value specifying one of the menu-item values listed under [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) in the Windows SDK documentation.
+Returns an integer value specifying one of the menu-item values listed under [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) in the Windows SDK documentation.
 
 ### Remarks
 

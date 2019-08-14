@@ -17,7 +17,7 @@ Identifies an interface as an Object Description Language (ODL) interface. The M
 
 ## Remarks
 
-The **odl** C++ attribute has the same functionality as the [odl](/windows/desktop/Midl/odl) MIDL attribute.
+The **odl** C++ attribute has the same functionality as the [odl](/windows/win32/Midl/odl) MIDL attribute.
 
 ## Example
 

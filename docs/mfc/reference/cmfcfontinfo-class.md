@@ -71,16 +71,16 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ### Parameters
 
 *lpszName*<br/>
-[in] The name of the font. For more information, see the `lfFaceName` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.
+[in] The name of the font. For more information, see the `lfFaceName` member of the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
 *lpszScript*<br/>
 [in] The name of the script (character set) of the font.
 
 *nCharSet*<br/>
-[in] A value that specifies the character set (script) of the font. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.
+[in] A value that specifies the character set (script) of the font. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
 *nPitchAndFamily*<br/>
-[in] A value that specifies the pitch and family of the font. For more information, see the `lfPitchAndFamily` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.
+[in] A value that specifies the pitch and family of the font. For more information, see the `lfPitchAndFamily` member of the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
 *nType*<br/>
 [in] A value that specifies the font type. This parameter can be a bitwise combination (OR) of DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE.
@@ -92,7 +92,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 
 ### Remarks
 
-This documentation uses the terms *character set* and *script* interchangeably. A *script*, which is also known as a writing system, is a collection of characters and rules for writing those characters in one or more languages. The collection of characters includes the alphabet and punctuation used in that script. For example, Latin script is used for English as it is spoken in the United States, and its alphabet includes the characters from A through Z. The `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure specifies a character set. For example, the value ANSI_CHARSET specifies the ANSI character set, which includes the alphabet of the Latin script.
+This documentation uses the terms *character set* and *script* interchangeably. A *script*, which is also known as a writing system, is a collection of characters and rules for writing those characters in one or more languages. The collection of characters includes the alphabet and punctuation used in that script. For example, Latin script is used for English as it is spoken in the United States, and its alphabet includes the characters from A through Z. The `lfCharSet` member of the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure specifies a character set. For example, the value ANSI_CHARSET specifies the ANSI character set, which includes the alphabet of the Latin script.
 
 ##  <a name="getfullname"></a>  CMFCFontInfo::GetFullName
 

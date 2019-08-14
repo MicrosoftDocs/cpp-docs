@@ -25,7 +25,7 @@ The following list describes the various notifications sent by the date and time
 
 - DTN_USERSTRING Notifies the parent that the user has finished editing the contents of the date and time picker control. This notification is only sent when the DTS_APPCANPARSE style has been set.
 
-- DTN_WMKEYDOWN Notifies the parent when the user types in a callback field. Handle this notification to emulate the same keyboard response supported for non-callback fields in a date and time picker control. For more information on this notification, see [Supporting Callback Fields in a DTP Control](/windows/desktop/Controls/date-and-time-picker-controls) in the Windows SDK.
+- DTN_WMKEYDOWN Notifies the parent when the user types in a callback field. Handle this notification to emulate the same keyboard response supported for non-callback fields in a date and time picker control. For more information on this notification, see [Supporting Callback Fields in a DTP Control](/windows/win32/Controls/date-and-time-picker-controls) in the Windows SDK.
 
 ## See also
 

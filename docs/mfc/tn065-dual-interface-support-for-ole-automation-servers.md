@@ -82,7 +82,7 @@ BEGIN_DUAL_INTERFACE_PART(DualAClick, IDualAClick)
 END_DUAL_INTERFACE_PART(DualAClick)
 ```
 
-To connect the dual interface to MFC's [QueryInterface](/windows/desktop/com/queryinterface--navigating-in-an-object) mechanism, add an `INTERFACE_PART` entry to the interface map:
+To connect the dual interface to MFC's [QueryInterface](/windows/win32/com/queryinterface--navigating-in-an-object) mechanism, add an `INTERFACE_PART` entry to the interface map:
 
 ```cpp
 BEGIN_INTERFACE_MAP(CAutoClickDoc, CDocument)

@@ -71,7 +71,7 @@ The handles *hBlob* and *hBlobDefault* refer to a block of memory which contains
 
 - A block of memory containing the actual binary data.
 
-Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) API, when loading BLOB-type properties. You are responsible for freeing this memory. Therefore, the destructor of your control should call [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) on any BLOB-type property handles to free up any memory allocated to your control.
+Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) API, when loading BLOB-type properties. You are responsible for freeing this memory. Therefore, the destructor of your control should call [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) on any BLOB-type property handles to free up any memory allocated to your control.
 
 ##  <a name="px_bool"></a>  PX_Bool
 

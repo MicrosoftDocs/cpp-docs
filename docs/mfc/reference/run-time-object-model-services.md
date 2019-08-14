@@ -64,7 +64,7 @@ Pointer to a null-terminated string containing the function name, or specifies t
 
 ### Remarks
 
-Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress).
+Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress).
 
 ### Requirements
 
@@ -87,7 +87,7 @@ Pointer to a null-terminated string containing the function name, or specifies t
 
 ### Remarks
 
-Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.
+Use this macro to determine whether the Common Controls library the function specified by *proc* (instead of calling [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress). This macro is the Unicode version of AFX_COMCTL32_IF_EXISTS.
 
 ### Requirements
 
@@ -337,7 +337,7 @@ Contains one or more of the following flags:
    - `afxRegApartmentThreading` Sets the threading model in the registry to ThreadingModel=Apartment.
    - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.
 
-         You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
+         You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/win32/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
 *l*, *w1*, *w2*, *b1*, *b2*, *b3*, *b4*, *b5*, *b6*, *b7*, *b8*
 Components of the class's CLSID.
@@ -374,13 +374,13 @@ The name of the control class.
 The resource ID of a string containing the external name of the control.
 
 *dwOleMisc*<br/>
-An enumeration containing one or more flags. For more information on this enumeration, see [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) in the Windows SDK.
+An enumeration containing one or more flags. For more information on this enumeration, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) in the Windows SDK.
 
 ### Remarks
 
 In addition to IMPLEMENT_OLECTLTYPE, you must add the DECLARE_OLECTLTYPE macro to your control class declaration.
 
-The `GetUserTypeNameID` member function returns the resource string that identifies your control class. `GetMiscStatus` returns the OLEMISC bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the OLEMISC settings, see [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) in the Windows SDK.
+The `GetUserTypeNameID` member function returns the resource string that identifies your control class. `GetMiscStatus` returns the OLEMISC bits for your control. This enumeration specifies a collection of settings describing miscellaneous characteristics of your control. For a full description of the OLEMISC settings, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) in the Windows SDK.
 
 > [!NOTE]
 >  The default settings used by the ActiveX ControlWizard are: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE, and OLEMISC_RECOMPOSEONRESIZE.
@@ -514,4 +514,4 @@ The OLE class ID is a unique 128-bit identifier for the object. It consists of o
 
 [Macros and Globals](mfc-macros-and-globals.md)<br/>
 [Isolation of the MFC Common Controls Library](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[CLSID Key](/windows/desktop/com/clsid-key-hklm)
+[CLSID Key](/windows/win32/com/clsid-key-hklm)

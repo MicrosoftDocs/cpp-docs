@@ -29,7 +29,7 @@ class COleDateTime
 |----------|-----------------|
 |[COleDateTime::Format](#format)|Generates a formatted string representation of a `COleDateTime` object.|
 |[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Call this method to obtain the time in the `COleDateTime` object as a `DBTIMESTAMP` data structure.|
-|[COleDateTime::GetAsSystemTime](#getassystemtime)|Call this method to obtain the time in the `COleDateTime` object as a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) data structure.|
+|[COleDateTime::GetAsSystemTime](#getassystemtime)|Call this method to obtain the time in the `COleDateTime` object as a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) data structure.|
 |[COleDateTime::GetAsUDATE](#getasudate)|Call this method to obtain the time in the `COleDateTime` as a `UDATE` data structure.|
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|Creates a `COleDateTime` object that represents the current time (static member function).|
 |[COleDateTime::GetDay](#getday)|Returns the day this `COleDateTime` object represents (1 - 31).|
@@ -68,7 +68,7 @@ class COleDateTime
 
 `COleDateTime` does not have a base class.
 
-It is one of the possible types for the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.
+It is one of the possible types for the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.
 
 The `DATE` type is implemented as a floating-point value. Days are measured from December 30, 1899, at midnight. The following table shows some dates and their associated values:
 
@@ -180,7 +180,7 @@ A `time_t` or `__time64_t` value to be converted to a date/time value and copied
 A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.
 
 *filetimeSrc*<br/>
-A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. A `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.
+A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. A `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/win32/SysInfo/file-times) in the Windows SDK for more information.
 
 *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 Indicate the date and time values to be copied into the new `COleDateTime` object.
@@ -220,7 +220,7 @@ Following is a brief description of each constructor:
 
 - `COleDateTime(` *systimeSrc* **)** Constructs a `COleDateTime` object from a `SYSTEMTIME` value.
 
-- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . A `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. For more information, see [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK.
+- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . A `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. For more information, see [File Times](/windows/win32/SysInfo/file-times) in the Windows SDK.
 
 - `COleDateTime(` `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Constructs a `COleDateTime` object from the specified numerical values.
 
@@ -228,7 +228,7 @@ Following is a brief description of each constructor:
 
 For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.
 
-For more information, see the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
+For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
 
 For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
 
@@ -261,7 +261,7 @@ Indicates one of the following locale flags:
 - VAR_DATEVALUEONLY Ignore the time portion during parsing.
 
 *lcid*<br/>
-Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](/windows/desktop/Intl/language-identifiers).
+Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](/windows/win32/Intl/language-identifiers).
 
 *lpszFormat*<br/>
 A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent ( `%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. For more information, see the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md). The value and meaning of the formatting codes for `Format` are:
@@ -336,7 +336,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
 ### Parameters
 
 *sysTime*<br/>
-A reference to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the converted date/time value from the `COleDateTime` object.
+A reference to a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure to receive the converted date/time value from the `COleDateTime` object.
 
 ### Return Value
 
@@ -792,23 +792,23 @@ These overloaded assignment operators copy the source date/time value into this 
 
 - **operator =(** `dateSrc` **)** The value and status of the operand are copied into this `COleDateTime` object.
 
-- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.
+- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.
 
 - **operator =(** `dtSrc` **)** The `DATE` value is copied into this `COleDateTime` object and its status is set to valid.
 
 - **operator =(** `timeSrc` **)** The `time_t` or `__time64_t` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.
 
-- **operator =(** *systimeSrc* **)** The [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.
+- **operator =(** *systimeSrc* **)** The [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid.
 
-- **operator =(** `uDate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. For more information, see the function [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate).
+- **operator =(** `uDate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. For more information, see the function [VarDateFromUdate](/windows/win32/api/oleauto/nf-oleauto-vardatefromudate).
 
-- **operator =(** `filetimeSrc` **)** The [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. For more information, see [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK.
+- **operator =(** `filetimeSrc` **)** The [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. For more information, see [File Times](/windows/win32/SysInfo/file-times) in the Windows SDK.
 
-For more information, see the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entry in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entry in the Windows SDK.
 
 For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.
 
-For more information, see the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
+For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
 
 For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
 
@@ -1047,7 +1047,7 @@ See the following table for bounds for the parameter values:
 |*nMin*|0 - 59|
 |*nSec*|0 - 59|
 
-If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime).
+If the day of the month overflows, it is converted to the correct day of the next month and the month and/or year is incremented accordingly. A day value of zero indicates the last day of the previous month. The behavior is the same as [SystemTimeToVariantTime](/windows/win32/api/oleauto/nf-oleauto-systemtimetovarianttime).
 
 If the date or time value specified by the parameters is not valid, the status of this object is set to invalid and the value of this object is not changed.
 

@@ -7,7 +7,7 @@ ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
 ---
 # CComClassFactory2 Class
 
-This class implements the [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) interface.
+This class implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface.
 
 ## Syntax
 
@@ -43,7 +43,7 @@ A class that implements the following static functions:
 
 ## Remarks
 
-`CComClassFactory2` implements the [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) interface, which is an extension of [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.
+`CComClassFactory2` implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface, which is an extension of [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.
 
 ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactory2`, specify the [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) macro in your object's class definition. For example:
 
@@ -139,7 +139,7 @@ You can obtain a license key using [RequestLicKey](#requestlickey). In order to 
 
 ##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo
 
-Fills a [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) structure with information that describes the class factory's licensing capabilities.
+Fills a [LICINFO](/windows/win32/api/ocidl/ns-ocidl-licinfo) structure with information that describes the class factory's licensing capabilities.
 
 ```
 STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
@@ -183,7 +183,7 @@ Calling `LockServer` allows a client to hold onto a class factory so that multip
 
 ##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey
 
-Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) structure is TRUE.
+Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](/windows/win32/api/ocidl/ns-ocidl-licinfo) structure is TRUE.
 
 ```
 STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);

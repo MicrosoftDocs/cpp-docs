@@ -34,7 +34,7 @@ class CLocalHeap : public IAtlMemMgr
 `CLocalHeap` implements memory allocation functions using the Win32 local heap functions.
 
 > [!NOTE]
->  The local heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/desktop/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.
+>  The local heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/win32/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.
 
 ## Example
 
@@ -71,7 +71,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CLocalHeap::Free](#free) or [CLocalHeap::Reallocate](#reallocate) to free the memory allocated by this method.
 
-Implemented using [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc) with a flag parameter of LMEM_FIXED.
+Implemented using [LocalAlloc](/windows/win32/api/winbase/nf-winbase-localalloc) with a flag parameter of LMEM_FIXED.
 
 ##  <a name="free"></a>  CLocalHeap::Free
 
@@ -88,7 +88,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 ### Remarks
 
-Implemented using [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree).
+Implemented using [LocalFree](/windows/win32/api/winbase/nf-winbase-localfree).
 
 ##  <a name="getsize"></a>  CLocalHeap::GetSize
 
@@ -109,7 +109,7 @@ Returns the size of the allocated memory block in bytes.
 
 ### Remarks
 
-Implemented using [LocalSize](/windows/desktop/api/winbase/nf-winbase-localsize).
+Implemented using [LocalSize](/windows/win32/api/winbase/nf-winbase-localsize).
 
 ##  <a name="reallocate"></a>  CLocalHeap::Reallocate
 
@@ -135,7 +135,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CLocalHeap::Free](#free) to free the memory allocated by this method.
 
-Implemented using [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc).
+Implemented using [LocalReAlloc](/windows/win32/api/winbase/nf-winbase-localrealloc).
 
 ## See also
 
