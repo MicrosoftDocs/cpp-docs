@@ -181,7 +181,7 @@ STDMETHOD(GetIDsOfNames)(
 
 ### Remarks
 
-See [IDispatch::GetIDsOfNames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
+See [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) in the Windows SDK.
 
 ##  <a name="gettypeinfo"></a>  IDispEventSimpleImpl::GetTypeInfo
 
@@ -196,7 +196,7 @@ STDMETHOD(GetTypeInfo)(
 
 ### Remarks
 
-See [IDispatch::GetTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
+See [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) in the Windows SDK.
 
 ##  <a name="gettypeinfocount"></a>  IDispEventSimpleImpl::GetTypeInfoCount
 
@@ -208,7 +208,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 
 ### Remarks
 
-See [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
+See [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) in the Windows SDK.
 
 ##  <a name="invoke"></a>  IDispEventSimpleImpl::Invoke
 
@@ -228,7 +228,7 @@ STDMETHOD(Invoke)(
 
 ### Remarks
 
-See [IDispatch::Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke).
+See [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
 ##  <a name="unadvise"></a>  IDispEventSimpleImpl::Unadvise
 

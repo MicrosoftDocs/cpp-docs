@@ -68,7 +68,7 @@ class COleDateTime
 
 `COleDateTime` does not have a base class.
 
-It is one of the possible types for the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.
+It is one of the possible types for the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) data type of OLE automation. A `COleDateTime` value represents an absolute date and time value.
 
 The `DATE` type is implemented as a floating-point value. Days are measured from December 30, 1899, at midnight. The following table shows some dates and their associated values:
 
@@ -792,7 +792,7 @@ These overloaded assignment operators copy the source date/time value into this 
 
 - **operator =(** `dateSrc` **)** The value and status of the operand are copied into this `COleDateTime` object.
 
-- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.
+- **operator =(** *varSrc* **)** If the conversion of the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a date/time (VT_DATE) is successful, the converted value is copied into this `COleDateTime` object and its status is set to valid. If the conversion is not successful, the value of this object is set to zero (30 December 1899, midnight) and its status to invalid.
 
 - **operator =(** `dtSrc` **)** The `DATE` value is copied into this `COleDateTime` object and its status is set to valid.
 
@@ -804,7 +804,7 @@ These overloaded assignment operators copy the source date/time value into this 
 
 - **operator =(** `filetimeSrc` **)** The [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. For more information, see [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK.
 
-For more information, see the [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entry in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entry in the Windows SDK.
 
 For more information on the `time_t` data type, see the [time](../../c-runtime-library/reference/time-time32-time64.md) function in the *Run-Time Library Reference*.
 

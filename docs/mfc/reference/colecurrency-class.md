@@ -109,11 +109,11 @@ All of these constructors create new `COleCurrency` objects initialized to the s
 
 - COleCurrency(`curSrc`) Constructs a `COleCurrency` object from an existing `COleCurrency` object. The new object has the same status as the source object.
 
-- COleCurrency(`varSrc`) Constructs a `COleCurrency` object. Attempts to convert a [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) structure or `COleVariant` object to a currency (VT_CY) value. If this conversion is successful, the converted value is copied into the new `COleCurrency` object. If it is not, the value of the `COleCurrency` object is set to zero (0) and its status to invalid.
+- COleCurrency(`varSrc`) Constructs a `COleCurrency` object. Attempts to convert a [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) structure or `COleVariant` object to a currency (VT_CY) value. If this conversion is successful, the converted value is copied into the new `COleCurrency` object. If it is not, the value of the `COleCurrency` object is set to zero (0) and its status to invalid.
 
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.
 
-For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.
+For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 
 ### Example
 
@@ -291,7 +291,7 @@ A brief description of each operator follows:
 
 - **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.
 
-For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.
+For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 
 ### Example
 
