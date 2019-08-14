@@ -101,7 +101,7 @@ Note that the current form of `m_spObj` presents a breaking change from the way 
 
 ## See also
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
 [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)<br/>
 [CComClassFactoryAutoThread Class](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)<br/>

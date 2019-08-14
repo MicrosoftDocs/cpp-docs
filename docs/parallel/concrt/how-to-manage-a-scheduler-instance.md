@@ -18,7 +18,7 @@ The examples create schedulers that use the default scheduler policies. For an e
 
    If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) method when you need to associate the scheduler with the current context.
 
-1. Call the [CreateEvent](/windows/desktop/api/synchapi/nf-synchapi-createeventa) function to create a handle to a non-signaled, auto-reset event object.
+1. Call the [CreateEvent](/windows/win32/api/synchapi/nf-synchapi-createeventw) function to create a handle to a non-signaled, auto-reset event object.
 
 1. Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent) method. This registers the event to be set when the scheduler is destroyed.
 
@@ -28,9 +28,9 @@ The examples create schedulers that use the default scheduler policies. For an e
 
    If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/scheduler-class.md#release) method to decrement the reference count of the `Scheduler` object.
 
-1. Pass the handle to the event to the [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) function to wait for the scheduler to shut down.
+1. Pass the handle to the event to the [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) function to wait for the scheduler to shut down.
 
-1. Call the [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) function to close the handle to the event object.
+1. Call the [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) function to close the handle to the event object.
 
 ## Example
 

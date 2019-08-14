@@ -68,7 +68,7 @@ CRichEditCntrItem(
 ### Parameters
 
 *preo*<br/>
-Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.
+Pointer to an [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.
 
 *pContainer*<br/>
 Pointer to the container document that will contain this item. If *pContainer* is NULL, you must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) to add this client item to a document.
@@ -77,11 +77,11 @@ Pointer to the container document that will contain this item. If *pContainer* i
 
 This function does not perform any OLE initialization.
 
-For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure in the Windows SDK.
+For more information, see the [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure in the Windows SDK.
 
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject
 
-Call this function to synchronize the device aspect, [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect), of this `CRichEditCntrltem` to that specified by *reo*.
+Call this function to synchronize the device aspect, [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), of this `CRichEditCntrltem` to that specified by *reo*.
 
 ```
 void SyncToRichEditObject(REOBJECT& reo);
@@ -90,11 +90,11 @@ void SyncToRichEditObject(REOBJECT& reo);
 ### Parameters
 
 *reo*<br/>
-Reference to an [REOBJECT](/windows/desktop/api/richole/ns-richole-reobject) structure which describes an OLE item.
+Reference to an [REOBJECT](/windows/win32/api/richole/ns-richole-reobject) structure which describes an OLE item.
 
 ### Remarks
 
-For more information, see [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) in the Windows SDK.
+For more information, see [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect) in the Windows SDK.
 
 ## See also
 

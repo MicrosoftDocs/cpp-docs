@@ -84,6 +84,6 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [COM Attributes](com-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Aggregation](/windows/desktop/com/aggregation)<br/>
-[Aggregatable](/windows/desktop/Midl/aggregatable)<br/>
+[Aggregation](/windows/win32/com/aggregation)<br/>
+[Aggregatable](/windows/win32/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

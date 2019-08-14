@@ -12,7 +12,7 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 
 |Interface|Required?|Implemented by OLE DB templates?|
 |---------------|---------------|--------------------------------------|
-|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|
+|[IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|
 |[ITransaction](/previous-versions/windows/desktop/ms723053(v=vs.85))|Mandatory|No|
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816(v=vs.85))|Optional|No|
 

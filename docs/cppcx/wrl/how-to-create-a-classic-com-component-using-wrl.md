@@ -22,7 +22,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
 
    [!code-cpp[wrl-classic-com-component#1](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
 
-5. In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) and not [IInspectable](/windows/desktop/api/inspectable/nn-inspectable-iinspectable). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+5. In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) and not [IInspectable](/windows/win32/api/inspectable/nn-inspectable-iinspectable). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
    [!code-cpp[wrl-classic-com-component#2](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
 

@@ -27,7 +27,7 @@ int main() {
 
 When an exception is raised during the processing of an [exception filter](../cpp/writing-an-exception-filter.md) within managed code, the exception is caught and treated as if the filter returns 0.
 
-This is in contrast to the behavior in native code where a nested exception is raised, the **ExceptionRecord** field in the **EXCEPTION_RECORD** structure (as returned by [GetExceptionInformation](/windows/desktop/Debug/getexceptioninformation)) is set, and the **ExceptionFlags** field sets the 0x10 bit. The following example illustrates this difference in behavior:
+This is in contrast to the behavior in native code where a nested exception is raised, the **ExceptionRecord** field in the **EXCEPTION_RECORD** structure (as returned by [GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)) is set, and the **ExceptionFlags** field sets the 0x10 bit. The following example illustrates this difference in behavior:
 
 ```cpp
 // clr_exception_handling_5.cpp

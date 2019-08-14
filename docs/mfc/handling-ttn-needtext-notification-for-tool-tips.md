@@ -26,7 +26,7 @@ where the italicized parameters are:
 Identifier of the control that sent the notification. Not used. The control id is taken from the **NMHDR** structure.
 
 *pNMHDR*<br/>
-A pointer to the [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).
+A pointer to the [NMTTDISPINFO](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfow) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).
 
 *pResult*<br/>
 A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the *pResult* parameter.

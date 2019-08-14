@@ -110,7 +110,7 @@ One or more flags you can use to customize the settings of the dialog box. The v
 
 - PSD_DISABLEORIENTATION Disables the page orientation dialog control.
 
-- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.
+- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.
 
 - PSD_DISABLEPAPER Disables the paper selection control.
 
@@ -139,7 +139,7 @@ Use the [DoModal](../../mfc/reference/cdialog-class.md#domodal) function to disp
 
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC
 
-Creates a printer device context from the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structures.
+Creates a printer device context from the [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) and [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) structures.
 
 ```
 HDC CreatePrinterDC();
@@ -159,7 +159,7 @@ virtual INT_PTR DoModal();
 
 ### Return Value
 
-IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
+IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
 
 IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.
 
@@ -199,7 +199,7 @@ LPDEVMODE GetDevMode() const;
 
 ### Return Value
 
-The [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.
+The [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/win32/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.
 
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName
 
@@ -230,7 +230,7 @@ void GetMargins(
 ### Parameters
 
 *lpRectMargins*<br/>
-Pointer to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
+Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
 
 *lpRectMinMargins*<br/>
 Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.
@@ -273,7 +273,7 @@ After constructing a `CPageSetupDialog` object, you can use `m_psd` to set vario
 
 If you modify the `m_psd` data member directly, you will override any default behavior.
 
-For more information on the [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda) structure, see the Windows SDK.
+For more information on the [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-psdw) structure, see the Windows SDK.
 
 See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).
 
@@ -309,7 +309,7 @@ Specifies a message, indicating the area of the page currently being drawn. Can 
 - WM_PSD_YAFULLPAGERECT Area for a return address representation. This area extends to the edges of the sample page area.
 
 *lpRect*<br/>
-Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/desktop/api/windef/ns-windef-tagrect) object containing the coordinates of the drawing area.
+Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](/windows/win32/api/windef/ns-windef-rect) object containing the coordinates of the drawing area.
 
 ### Return Value
 
@@ -361,7 +361,7 @@ Indicates the orientation of the paper or envelope, and whether the printer is a
 - 0x01f   Envelope in portrait mode (dot matrix)
 
 *pPSD*<br/>
-Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda), see the Windows SDK.
+Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-psdw), see the Windows SDK.
 
 ### Return Value
 

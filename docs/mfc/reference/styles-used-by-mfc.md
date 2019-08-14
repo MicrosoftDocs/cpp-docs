@@ -10,7 +10,7 @@ Use the following style flags to specify window or control appearance and behavi
 
 ## <a name="button-styles"></a> Button styles
 
-Button styles apply to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *dwStyle* parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/desktop/Controls/button-styles).
+Button styles apply to [CButton Class](../../mfc/reference/cbutton-class.md) objects, such as radio buttons, check boxes and pushbuttons. Specify a combination of styles in the *dwStyle* parameter of [CButton::Create](../../mfc/reference/cbutton-class.md#create). For more information on button styles in Windows, see [Button Styles (Windows)](/windows/win32/Controls/button-styles).
 
 ### Button types
 
@@ -79,7 +79,7 @@ The following table lists additional options that you can use with any button ty
 
 ## <a name="combo-box-styles"></a>  Combo-box styles
 
-The following combo-box styles are available in MFC. For more information about combo-box styles in Windows, see [Combo Box Styles (Windows)](/windows/desktop/Controls/combo-box-styles).
+The following combo-box styles are available in MFC. For more information about combo-box styles in Windows, see [Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -99,7 +99,7 @@ The following combo-box styles are available in MFC. For more information about 
 
 ## <a name="edit-styles"></a>  Edit styles
 
-Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/desktop/Controls/edit-control-styles).
+Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -130,7 +130,7 @@ Frame-window styles apply to [CFrameWnd Class](../../mfc/reference/cframewnd-cla
 
 ## <a name="list-box-styles"></a> List-box styles
 
-List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/desktop/Controls/list-box-styles).
+List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CListBox::Create](../../mfc/reference/clistbox-class.md#create). For more information about list box styles in Windows, see [List Box Styles (Windows)](/windows/win32/Controls/list-box-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -153,7 +153,7 @@ List-box styles apply to [CListBox Class](../../mfc/reference/clistbox-class.md)
 
 ## <a name="message-box-styles"></a>  Message-box styles
 
-Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *nType* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox).
+Message-box styles apply to [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) items. Specify a combination of styles in the *nType* parameter of `AfxMessageBox`. For more information about message box styles in Windows, see [MessageBox Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox).
 
 The following message-box styles are available.
 
@@ -195,7 +195,7 @@ The following message-box styles are available.
 
 ## <a name="scroll-bar-styles"></a> Scroll-bar styles
 
-Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles).
+Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -212,7 +212,7 @@ Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-cla
 
 ## <a name="static-styles"></a> Static styles
 
-Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles).
+Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -246,7 +246,7 @@ Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) obj
 
 ## <a name="window-styles"></a> Window styles
 
-Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/desktop/winmsg/window-styles).
+Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CWnd::Create](../../mfc/reference/cwnd-class.md#create) or [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about window styles in Windows, see [Window Styles (Windows)](/windows/win32/winmsg/window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -280,7 +280,7 @@ Window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. 
 
 ## <a name="extended-window-styles"></a> Extended window styles
 
-Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwExStyle* parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles).
+Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) objects. Specify a combination of styles in the *dwExStyle* parameter of [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex). For more information about extended window styles in Windows, see [Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles).
 
 |Style|Description|
 |-----------|-----------------|
@@ -290,7 +290,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_CONTEXTHELP|Includes a question mark in the title bar of the window. When the user clicks the question mark, the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message.|
 |WS_EX_CONTROLPARENT|Allows the user to navigate among the child windows of the window by using the TAB key.|
 |WS_EX_DLGMODALFRAME|Designates a window with a double border that may (optionally) be created with a title bar when you specify the WS_CAPTION style flag in the *dwStyle* parameter.|
-|WS_EX_LAYERED|The window is a [layered window](/windows/desktop/winmsg/window-features). This style cannot be used if the window has a [class style](/windows/desktop/winmsg/about-window-classes) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|
+|WS_EX_LAYERED|The window is a [layered window](/windows/win32/winmsg/window-features). This style cannot be used if the window has a [class style](/windows/win32/winmsg/about-window-classes) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|
 |WS_EX_LEFT|Gives window generic left-aligned properties. This is the default.|
 |WS_EX_LEFTSCROLLBAR|Places a vertical scroll bar to the left of the client area.|
 |WS_EX_LTRREADING|Displays the window text using left-to-right reading order properties. This is the default.|
@@ -316,14 +316,14 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)<br/>
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)<br/>
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
-[CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)<br/>
-[CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)<br/>
-[Button Styles (Windows)](/windows/desktop/Controls/button-styles)<br/>
-[Combo Box Styles (Windows)](/windows/desktop/Controls/combo-box-styles)<br/>
-[Edit Control Styles (Windows)](/windows/desktop/Controls/edit-control-styles)<br/>
-[List Box Styles (Windows)](/windows/desktop/Controls/list-box-styles)<br/>
-[MessageBox Function (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)<br/>
-[Scroll Bar Control Styles (Windows)](/windows/desktop/Controls/scroll-bar-control-styles)<br/>
-[Static Control Styles (Windows)](/windows/desktop/Controls/static-control-styles)<br/>
-[Window Styles (Windows)](/windows/desktop/winmsg/window-styles)<br/>
-[Extended Window Styles (Windows)](/windows/desktop/winmsg/extended-window-styles)
+[CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww)<br/>
+[CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw)<br/>
+[Button Styles (Windows)](/windows/win32/Controls/button-styles)<br/>
+[Combo Box Styles (Windows)](/windows/win32/Controls/combo-box-styles)<br/>
+[Edit Control Styles (Windows)](/windows/win32/Controls/edit-control-styles)<br/>
+[List Box Styles (Windows)](/windows/win32/Controls/list-box-styles)<br/>
+[MessageBox Function (Windows)](/windows/win32/api/winuser/nf-winuser-messagebox)<br/>
+[Scroll Bar Control Styles (Windows)](/windows/win32/Controls/scroll-bar-control-styles)<br/>
+[Static Control Styles (Windows)](/windows/win32/Controls/static-control-styles)<br/>
+[Window Styles (Windows)](/windows/win32/winmsg/window-styles)<br/>
+[Extended Window Styles (Windows)](/windows/win32/winmsg/extended-window-styles)

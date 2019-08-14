@@ -118,7 +118,7 @@ virtual BOOL Create(
 ### Parameters
 
 *lpszClassName*<br/>
-Points to a null-terminated character string that names the Windows class (a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
+Points to a null-terminated character string that names the Windows class (a [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.
 
 *lpszWindowName*<br/>
 Points to a null-terminated character string that represents the window name. Used as text for the title bar.

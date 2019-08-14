@@ -220,7 +220,7 @@ A standard HRESULT.
 
 ### Remarks
 
-The method overload that uses the *hWnd* parameter opens a data source object with the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+The method overload that uses the *hWnd* parameter opens a data source object with the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see the OLE DB reference in the [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
 The method overloads that do not use the *hWnd* parameter open a data source object without using the service components in oledb32.dll. A [CDataSource](../../data/oledb/cdatasource-class.md) object opened with these function overloads will be unable to utilize any of the functionality of Service Components.
 
@@ -253,7 +253,7 @@ A standard HRESULT.
 
 ### Remarks
 
-This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see the OLE DB reference in the [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
 ## <a name="openfrominitializationstring"></a> CDataSource::OpenFromInitializationString
 
@@ -313,7 +313,7 @@ A standard HRESULT.
 
 ### Remarks
 
-This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see the OLE DB reference in the [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
 ## <a name="openwithservicecomponents"></a> CDataSource::OpenWithServiceComponents
 
@@ -351,7 +351,7 @@ A standard HRESULT.
 
 ### Remarks
 
-This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see "OLE DB Services" in the OLE DB Programmer's Reference at [https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+This method opens a data source object using the service components in oledb32.dll; this DLL contains the implementation of Service Components features such as Resource Pooling, Automatic Transaction Enlistment, and so on. For more information, see the OLE DB reference in the [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
 ## See also
 

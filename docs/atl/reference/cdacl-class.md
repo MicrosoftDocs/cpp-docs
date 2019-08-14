@@ -51,7 +51,7 @@ To retrieve an object's DACL, you must be the object's owner or have READ_CONTRO
 
 Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](security-global-functions.md#atlgetdacl) and [AtlSetDacl](security-global-functions.md#atlsetdacl).
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -106,7 +106,7 @@ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.
 
 A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
+See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce
 
@@ -151,7 +151,7 @@ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.
 
 A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
+See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.
 
 ##  <a name="cdacl"></a>  CDacl::CDacl
 
@@ -249,7 +249,7 @@ Removes every `ACE` (access-control entry) structure (if any) in the `CDacl` obj
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [CAcl Class](../../atl/reference/cacl-class.md)<br/>
-[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[ACLs](/windows/win32/SecAuthZ/access-control-lists)<br/>
+[ACEs](/windows/win32/SecAuthZ/access-control-entries)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

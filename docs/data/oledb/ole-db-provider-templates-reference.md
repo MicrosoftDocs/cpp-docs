@@ -47,7 +47,7 @@ Opens and returns a rowset that includes all rows from a single base table or in
 Implements the OLE DB [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) interface, which enables updating of the values of columns in existing rows, deleting rows, and inserting new rows.
 
 [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)<br/>
-This class inherits from [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). `IRowsetCreatorImpl` performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS` and `DBPROPCANFETCHBACKWARDS`.
+This class inherits from [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite). `IRowsetCreatorImpl` performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS` and `DBPROPCANFETCHBACKWARDS`.
 
 [IRowsetIdentityImpl](../../data/oledb/irowsetidentityimpl-class.md)<br/>
 Implements the `IRowsetIdentity` interface, which allows you to compare whether two rows of data are identical or not.

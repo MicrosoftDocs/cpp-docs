@@ -22,7 +22,7 @@ A value that describes the pointer type: **ptr**, **ref**, or **unique**.
 
 ## Remarks
 
-The **pointer_default** C++ attribute has the same functionality as the [pointer_default](/windows/desktop/Midl/pointer-default) MIDL attribute.
+The **pointer_default** C++ attribute has the same functionality as the [pointer_default](/windows/win32/Midl/pointer-default) MIDL attribute.
 
 ## Example
 

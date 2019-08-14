@@ -6,7 +6,7 @@ ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
 ---
 # ClickOnce Deployment for Visual C++ Applications
 
-Visual Studio provides two different technologies for deploying Windows applications: ClickOnce deployment or [Windows Installer](/windows/desktop/Msi/windows-installer-portal) deployment.
+Visual Studio provides two different technologies for deploying Windows applications: ClickOnce deployment or [Windows Installer](/windows/win32/Msi/windows-installer-portal) deployment.
 
 ## ClickOnce Deployment in C++
 
@@ -33,7 +33,7 @@ For a more detailed description of the technology, see [ClickOnce Security and D
 
 [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
-[Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)<br>
+[Makecert.exe (Certificate Creation Tool)](/windows/win32/SecCrypto/makecert)<br>
 [Deploying Desktop Applications](deploying-native-desktop-applications-visual-cpp.md)<br>
 [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)<br>
 [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)<br>

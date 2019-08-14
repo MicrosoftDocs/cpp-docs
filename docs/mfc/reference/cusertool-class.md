@@ -132,7 +132,7 @@ Nonzero if the command was executed successfully; otherwise 0.
 
 ### Remarks
 
-Calls [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) fails.
+Calls [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) fails.
 
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon
 

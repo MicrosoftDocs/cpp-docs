@@ -329,7 +329,7 @@ This example illustrates the following:
 
 ##  <a name="command_code_handler"></a>  COMMAND_CODE_HANDLER
 
-Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](/windows/desktop/menurc/wm-command) message based only on the notification code.
+Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](/windows/win32/menurc/wm-command) message based only on the notification code.
 
 ```
 COMMAND_CODE_HANDLER(code, func)
@@ -368,7 +368,7 @@ COMMAND_HANDLER(id, code, func)
 
 ### Remarks
 
-COMMAND_HANDLER maps a [WM_COMMAND](/windows/desktop/menurc/wm-command) message to the specified handler function, based on the notification code and the control identifier. For example:
+COMMAND_HANDLER maps a [WM_COMMAND](/windows/win32/menurc/wm-command) message to the specified handler function, based on the notification code and the control identifier. For example:
 
 [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]
 
@@ -391,7 +391,7 @@ For more information about using message maps in ATL, see [Message Maps](../../a
 
 ##  <a name="command_id_handler"></a>  COMMAND_ID_HANDLER
 
-Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](/windows/desktop/menurc/wm-command) message based only on the identifier of the menu item, control, or accelerator.
+Similar to [COMMAND_HANDLER](#command_handler), but maps a [WM_COMMAND](/windows/win32/menurc/wm-command) message based only on the identifier of the menu item, control, or accelerator.
 
 ```
 COMMAND_ID_HANDLER(id, func)
@@ -411,7 +411,7 @@ COMMAND_ID_HANDLER(id, func)
 
 ##  <a name="command_range_code_handler"></a>  COMMAND_RANGE_CODE_HANDLER
 
-Similar to [COMMAND_RANGE_HANDLER](#command_range_handler), but maps [WM_COMMAND](/windows/desktop/menurc/wm-command) messages with a specific notification code from a range of controls to a single handler function.
+Similar to [COMMAND_RANGE_HANDLER](#command_range_handler), but maps [WM_COMMAND](/windows/win32/menurc/wm-command) messages with a specific notification code from a range of controls to a single handler function.
 
 ```
 COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
@@ -441,7 +441,7 @@ This range is based on the identifier of the menu item, control, or accelerator 
 
 ##  <a name="command_range_handler"></a>  COMMAND_RANGE_HANDLER
 
-Similar to [COMMAND_HANDLER](#command_handler), but maps [WM_COMMAND](/windows/desktop/menurc/wm-command) messages from a range of controls to a single handler function.
+Similar to [COMMAND_HANDLER](#command_handler), but maps [WM_COMMAND](/windows/win32/menurc/wm-command) messages from a range of controls to a single handler function.
 
 ```
 COMMAND_RANGE_HANDLER( idFirst, idLast, func)
@@ -567,7 +567,7 @@ The message map sets `bHandled` to TRUE before `MessageHandler` is called. If `M
 > [!NOTE]
 >  Always begin a message map with [BEGIN_MSG_MAP](#begin_msg_map). You can then declare subsequent alternate message maps with [ALT_MSG_MAP](#alt_msg_map). The [END_MSG_MAP](#end_msg_map) macro marks the end of the message map. Every message map must have exactly one instance of BEGIN_MSG_MAP and END_MSG_MAP.
 
-In addition to MESSAGE_HANDLER, you can use [COMMAND_HANDLER](#command_handler) and [NOTIFY_HANDLER](#notify_handler) to map [WM_COMMAND](/windows/desktop/menurc/wm-command) and [WM_NOTIFY](/windows/desktop/controls/wm-notify) messages, respectively.
+In addition to MESSAGE_HANDLER, you can use [COMMAND_HANDLER](#command_handler) and [NOTIFY_HANDLER](#notify_handler) to map [WM_COMMAND](/windows/win32/menurc/wm-command) and [WM_NOTIFY](/windows/win32/controls/wm-notify) messages, respectively.
 
 For more information about using message maps in ATL, see [Message Maps](../../atl/message-maps-atl.md).
 
@@ -604,7 +604,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER
 
-Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message based only on the notification code.
+Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](/windows/win32/controls/wm-notify) message based only on the notification code.
 
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -643,7 +643,7 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### Remarks
 
-NOTIFY_HANDLER maps a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message to the specified handler function, based on the notification code and the control identifier.
+NOTIFY_HANDLER maps a [WM_NOTIFY](/windows/win32/controls/wm-notify) message to the specified handler function, based on the notification code and the control identifier.
 
 Any function specified in a NOTIFY_HANDLER macro must be defined as follows:
 
@@ -668,7 +668,7 @@ For more information about using message maps in ATL, see [Message Maps](../../a
 
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER
 
-Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](/windows/desktop/controls/wm-notify) message based only on the control identifier.
+Similar to [NOTIFY_HANDLER](#notify_handler), but maps a [WM_NOTIFY](/windows/win32/controls/wm-notify) message based only on the control identifier.
 
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -688,7 +688,7 @@ NOTIFY_ID_HANDLER( id, func )
 
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER
 
-Similar to [NOTIFY_RANGE_HANDLER](#notify_range_handler), but maps [WM_NOTIFY](/windows/desktop/controls/wm-notify) messages with a specific notification code from a range of controls to a single handler function.
+Similar to [NOTIFY_RANGE_HANDLER](#notify_range_handler), but maps [WM_NOTIFY](/windows/win32/controls/wm-notify) messages with a specific notification code from a range of controls to a single handler function.
 
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -718,7 +718,7 @@ This range is based on the identifier of the control sending the message.
 
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER
 
-Similar to [NOTIFY_HANDLER](#notify_handler), but maps [WM_NOTIFY](/windows/desktop/controls/wm-notify) messages from a range of controls to a single handler function.
+Similar to [NOTIFY_HANDLER](#notify_handler), but maps [WM_NOTIFY](/windows/win32/controls/wm-notify) messages from a range of controls to a single handler function.
 
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )

@@ -22,7 +22,7 @@ The pragma that you want to go into the generated .idl file.
 
 ## Remarks
 
-The **pragma** C++ attribute has the same functionality as the [pragma](/windows/desktop/Midl/pragma) MIDL attribute.
+The **pragma** C++ attribute has the same functionality as the [pragma](/windows/win32/Midl/pragma) MIDL attribute.
 
 ## Example
 

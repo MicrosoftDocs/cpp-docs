@@ -43,7 +43,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 
 This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -79,7 +79,7 @@ Pointer to a `GUID` structure that identifies the type of object associated with
 Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 ### Return Value
 
@@ -87,7 +87,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) function.
+This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) function.
 
 ##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc
 
@@ -150,7 +150,7 @@ Specifies whether the new object can contain other objects. A value of true indi
 Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 *ObjectType*<br/>
 Pointer to a `GUID` structure that identifies the type of object associated with the current object. Set *ObjectType* to NULL if the object does not have a GUID.
@@ -159,7 +159,7 @@ Pointer to a `GUID` structure that identifies the type of object associated with
 Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.
 
 *AutoInheritFlags*<br/>
-A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) for more details.
+A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) for more details.
 
 ### Return Value
 
@@ -167,7 +167,7 @@ Returns true on success, false on failure.
 
 ### Remarks
 
-This method calls [CreatePrivateObjectSercurity](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) or [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex).
+This method calls [CreatePrivateObjectSercurity](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) or [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex).
 
 The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.
 
@@ -187,7 +187,7 @@ bool Get(
 ### Parameters
 
 *si*<br/>
-A set of bit flags that indicate the parts of the security descriptor to retrieve. This value can be a combination of the [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit flags.
+A set of bit flags that indicate the parts of the security descriptor to retrieve. This value can be a combination of the [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) bit flags.
 
 *pResult*<br/>
 Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object that receives a copy of the requested information from the specified security descriptor.
@@ -239,19 +239,19 @@ bool Set(
 ### Parameters
 
 *si*<br/>
-A set of bit flags that indicate the parts of the security descriptor to set. This value can be a combination of the [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit flags.
+A set of bit flags that indicate the parts of the security descriptor to set. This value can be a combination of the [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) bit flags.
 
 *Modification*<br/>
 Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object. The parts of this security descriptor indicated by the *si* parameter are applied to the object's security descriptor.
 
 *GenericMapping*<br/>
-Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
+Pointer to a [GENERIC_MAPPING](/windows/win32/api/winnt/ns-winnt-generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.
 
 *Token*<br/>
 Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.
 
 *AutoInheritFlags*<br/>
-A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) for more details.
+A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex) for more details.
 
 ### Return Value
 
@@ -263,7 +263,7 @@ The second method permits specifying the object type GUID of the object or contr
 
 ## See also
 
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[SECURITY_DESCRIPTOR](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)<br/>
 [CSecurityDesc Class](../../atl/reference/csecuritydesc-class.md)

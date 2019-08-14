@@ -67,7 +67,7 @@ DECLARE_CLASSFACTORY()
 
 ##  <a name="ccomclassfactory_class"></a>  CComClassFactory Class
 
-This class implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
+This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
 
 ```
 class CComClassFactory : public IClassFactory,
@@ -76,7 +76,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 
 ### Remarks
 
-`CComClassFactory` implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.
+`CComClassFactory` implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.
 
 ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](#declare_classfactory), which declares `CComClassFactory` as the default class factory. To override this default, specify one of the DECLARE_CLASSFACTORY*XXX* macros in your class definition. For example, the [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) macro uses the specified class for the class factory:
 
@@ -138,7 +138,7 @@ DECLARE_CLASSFACTORY2( lic )
 
 ##  <a name="ccomclassfactory2_class"></a>  CComClassFactory2 Class
 
-This class implements the [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) interface.
+This class implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface.
 
 ```
 template <class license>
@@ -160,7 +160,7 @@ A class that implements the following static functions:
 
 ### Remarks
 
-`CComClassFactory2` implements the [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) interface, which is an extension of [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.
+`CComClassFactory2` implements the [IClassFactory2](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) interface, which is an extension of [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.
 
 ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](#declare_classfactory), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactory2`, specify the [DECLARE_CLASSFACTORY2](#declare_classfactory2) macro in your object's class definition. For example:
 
@@ -192,7 +192,7 @@ When you create objects in multiple apartments (in an out-of-proc server), add D
 
 ##  <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread Class
 
-This class implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, and allows objects to be created in multiple apartments.
+This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, and allows objects to be created in multiple apartments.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -354,7 +354,7 @@ DECLARE_VIEW_STATUS( statusFlags )
 ### Parameters
 
 *statusFlags*<br/>
-[in] The VIEWSTATUS flags. See [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) for a list of flags.
+[in] The VIEWSTATUS flags. See [VIEWSTATUS](/windows/win32/api/ocidl/ne-ocidl-viewstatus) for a list of flags.
 
 ### Example
 

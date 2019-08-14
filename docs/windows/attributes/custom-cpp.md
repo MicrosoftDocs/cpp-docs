@@ -30,7 +30,7 @@ A value that can be put into a variant.
 
 The **custom** C++ attribute will cause information to be placed into the type library. You will need a tool that reads the custom value from type library.
 
-The **custom** attribute has the same functionality as the [custom](/windows/desktop/Midl/custom) MIDL attribute.
+The **custom** attribute has the same functionality as the [custom](/windows/win32/Midl/custom) MIDL attribute.
 
 ## Requirements
 

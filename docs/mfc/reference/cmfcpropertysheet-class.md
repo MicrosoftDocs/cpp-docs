@@ -40,9 +40,9 @@ class CMFCPropertySheet : public CPropertySheet
 |[CMFCPropertySheet::InitNavigationControl](#initnavigationcontrol)|Initializes the appearance of the current property sheet control.|
 |[CMFCPropertySheet::OnActivatePage](#onactivatepage)|Called by the framework when a property page is enabled.|
 |[CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader)|Called by the framework to draw a custom property page header.|
-|`CMFCPropertySheet::OnInitDialog`|Handles the [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) message. (Overrides [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|
+|`CMFCPropertySheet::OnInitDialog`|Handles the [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) message. (Overrides [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|
 |[CMFCPropertySheet::OnRemoveTreePage](#onremovetreepage)|Called by the framework to remove a property page from a tree control.|
-|`CMFCPropertySheet::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides `CPropertySheet::PreTranslateMessage`.)|
+|`CMFCPropertySheet::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides `CPropertySheet::PreTranslateMessage`.)|
 |[CMFCPropertySheet::RemoveCategory](#removecategory)|Removes a node from the tree control.|
 |[CMFCPropertySheet::RemovePage](#removepage)|Removes a property page from the property sheet.|
 |[CMFCPropertySheet::SetIconsList](#seticonslist)|Specifies the list of images that are used in the navigation control of the Outlook pane.|

@@ -127,7 +127,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### Parameters
 
 *cs*<br/>
-A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
+A [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) structure.
 
 ### Return Value
 

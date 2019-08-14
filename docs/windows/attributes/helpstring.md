@@ -22,7 +22,7 @@ The text of the help string.
 
 ## Remarks
 
-The **helpstring** C++ attribute has the same functionality as the [helpstring](/windows/desktop/Midl/helpstring) MIDL attribute.
+The **helpstring** C++ attribute has the same functionality as the [helpstring](/windows/win32/Midl/helpstring) MIDL attribute.
 
 ## Example
 

@@ -709,7 +709,7 @@ The default implementation returns S_OK.
 
 ### Remarks
 
-This method calls [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) before it returns S_OK.
+This method calls [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) before it returns S_OK.
 
 Override this method in a derived class to implement custom behavior.
 
@@ -1491,7 +1491,7 @@ The values for *wParam* and *lParam* depend on the specific generated message. I
 |TDN_CREATED|Not used.|Not used.|
 |TDN_NAVIGATED|Not used.|Not used.|
 |TDN_BUTTON_CLICKED|The command button control ID.|Not used.|
-|TDN_HYPERLINK_CLICKED|Not used.|A [LPCWSTR](/windows/desktop/WinProg/windows-data-types) structure that contains the link.|
+|TDN_HYPERLINK_CLICKED|Not used.|A [LPCWSTR](/windows/win32/WinProg/windows-data-types) structure that contains the link.|
 |TDN_TIMER|Time in milliseconds since the `CTaskDialog` was created or the timer was reset.|Not used.|
 |TDN_DESTROYED|Not used.|Not used.|
 |TDN_RADIO_BUTTON_CLICKED|The radio button ID.|Not used.|

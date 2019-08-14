@@ -104,7 +104,7 @@ virtual void OnDoVerb(LONG iVerb);
 ### Parameters
 
 *iVerb*<br/>
-Specifies the verb to execute. For possible values, see [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
+Specifies the verb to execute. For possible values, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
 ### Remarks
 

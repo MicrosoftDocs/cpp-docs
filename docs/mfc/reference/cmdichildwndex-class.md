@@ -68,7 +68,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::OnTaskbarTabThumbnailStretch](#ontaskbartabthumbnailstretch)|Called by the framework when it needs to stretch a bitmap for Windows 7 taskbar tab thumbnail preview of MDI child.|
 |[CMDIChildWndEx::OnUpdateFrameTitle](#onupdateframetitle)|Called by the framework to update the frame title. (Overrides `CMDIChildWnd::OnUpdateFrameTitle`.)|
 |[CMDIChildWndEx::PaneFromPoint](#panefrompoint)|Returns the pane that contains the given point.|
-|`CMDIChildWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|`CMDIChildWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 |[CMDIChildWndEx::RecalcLayout](#recalclayout)|Recalculates the layout of the window.|
 |[CMDIChildWndEx::RegisterTaskbarTab](#registertaskbartab)|Registers MDI child with Windows 7 taskbar tabs.|
 |[CMDIChildWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Removes a pane from the docking manager.|
@@ -734,7 +734,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
 ### Parameters
 
 *dwFlags*<br/>
-A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist4-settabproperties).
+A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](/windows/win32/api/shobjidl_core/nf-shobjidl_core-itaskbarlist4-settabproperties).
 
 ### Remarks
 

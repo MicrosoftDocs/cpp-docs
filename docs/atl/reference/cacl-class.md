@@ -60,7 +60,7 @@ class CAcl
 
 ## Remarks
 
-The `ACL` structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](/windows/desktop/SecAuthZ/access-control-entries) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.
+The `ACL` structure is the header of an ACL (access-control list). An ACL includes a sequential list of zero or more [ACEs](/windows/win32/SecAuthZ/access-control-entries) (access-control entries). The individual ACEs in an ACL are numbered from 0 to *n-1*, where *n* is the number of ACEs in the ACL. When editing an ACL, an application refers to an access-control entry (ACE) within the ACL by its index.
 
 There are two ACL types:
 
@@ -72,9 +72,9 @@ A discretionary ACL is controlled by the owner of an object or anyone granted WR
 
 An object can also have system-level security information associated with it, in the form of a system ACL controlled by a system administrator. A system ACL can allow the system administrator to audit any attempts to gain access to an object.
 
-For more details, see the [ACL](/windows/desktop/SecAuthZ/access-control-lists) discussion in the Windows SDK.
+For more details, see the [ACL](/windows/win32/SecAuthZ/access-control-lists) discussion in the Windows SDK.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Requirements
 
@@ -102,7 +102,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 
 ### Remarks
 
-This typedef specifies the array type used to define the access-control entry (ACE) type-specific control flags. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) definition for the complete list of possible flags.
+This typedef specifies the array type used to define the access-control entry (ACE) type-specific control flags. See the [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) definition for the complete list of possible flags.
 
 ##  <a name="cacetypearray"></a>  CAcl::CAceTypeArray
 
@@ -114,7 +114,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 
 ### Remarks
 
-This typedef specifies the array type used to define the nature of the access-control entry (ACE) objects, such as ACCESS_ALLOWED_ACE_TYPE or ACCESS_DENIED_ACE_TYPE. See the [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) definition for the complete list of possible types.
+This typedef specifies the array type used to define the nature of the access-control entry (ACE) objects, such as ACCESS_ALLOWED_ACE_TYPE or ACCESS_DENIED_ACE_TYPE. See the [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) definition for the complete list of possible types.
 
 ##  <a name="cacl"></a>  CAcl::CAcl
 
@@ -190,7 +190,7 @@ This method fills the array parameters with the details of every ACE object cont
 
 The contents of each array correspond to each other, that is, the first element of the `CAccessMaskArray` array corresponds to the first element in the `CSidArray` array, and so on.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
+See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
 
 ##  <a name="getaclentry"></a>  CAcl::GetAclEntry
 
@@ -234,7 +234,7 @@ The inherited object type. This will be set to GUID_NULL if the inherited object
 
 This method will retrieve all of the information about an individual ACE, providing more information than [CAcl::GetAclEntries](#getaclentries) alone makes available.
 
-See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
+See [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) for more details on ACE types and flags.
 
 ##  <a name="getlength"></a>  CAcl::GetLength
 

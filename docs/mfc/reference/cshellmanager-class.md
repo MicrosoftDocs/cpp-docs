@@ -83,7 +83,7 @@ BOOL BrowseForFolder(
 [in] The title for the dialog box.
 
 *ulFlags*<br/>
-[in] Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) for the detailed description.
+[in] Flags specifying options for the dialog box. See [BROWSEINFO](/windows/win32/api/shlobj_core/ns-shlobj_core-browseinfow) for the detailed description.
 
 *piFolderImage*<br/>
 [out] A pointer to the integer value where the method writes the image index of the selected folder.
@@ -126,7 +126,7 @@ A pointer to the new item list if the function succeeds, otherwise NULL.
 
 ### Remarks
 
-This method creates a new [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.
+This method creates a new [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.
 
 ##  <a name="copyitem"></a>  CShellManager::CopyItem
 

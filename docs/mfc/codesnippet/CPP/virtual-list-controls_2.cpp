@@ -1,5 +1,5 @@
 NMLVDISPINFO* pDispInfo = reinterpret_cast<NMLVDISPINFO*>(pNMHDR);
-LV_ITEM* pItem = &(pDispInfo)->item;
+LVITEM* pItem = &(pDispInfo)->item;
 
 int iItem = pItem->iItem;
 

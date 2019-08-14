@@ -21,7 +21,7 @@ When the **dispinterface** C++ attribute precedes an interface, it causes the in
 
 Unless you specify a base class, a dispatch interface will derive from `IDispatch`. You must specify an [id](id.md) for the members of a dispatch interface.
 
-The usage example for [dispinterface](/windows/desktop/Midl/dispinterface) in the MIDL documentation:
+The usage example for [dispinterface](/windows/win32/Midl/dispinterface) in the MIDL documentation:
 
 ```cpp
 dispinterface helloPro

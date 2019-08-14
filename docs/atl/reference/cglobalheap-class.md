@@ -34,7 +34,7 @@ class CGlobalHeap : public IAtlMemMgr
 `CGlobalHeap` implements memory allocation functions using the Win32 global heap functions.
 
 > [!NOTE]
->  The global heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/desktop/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class. Global functions are still used by DDE and the clipboard functions.
+>  The global heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/win32/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class. Global functions are still used by DDE and the clipboard functions.
 
 ## Example
 
@@ -71,7 +71,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CGlobalHeap::Free](#free) or [CGlobalHeap::Reallocate](#reallocate) to free the memory allocated by this method.
 
-Implemented using [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) with a flag parameter of GMEM_FIXED.
+Implemented using [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) with a flag parameter of GMEM_FIXED.
 
 ##  <a name="free"></a>  CGlobalHeap::Free
 
@@ -88,7 +88,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 ### Remarks
 
-Implemented using [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree).
+Implemented using [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree).
 
 ##  <a name="getsize"></a>  CGlobalHeap::GetSize
 
@@ -109,7 +109,7 @@ Returns the size of the allocated memory block in bytes.
 
 ### Remarks
 
-Implemented using [GlobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize).
+Implemented using [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize).
 
 ##  <a name="reallocate"></a>  CGlobalHeap::Reallocate
 
@@ -135,7 +135,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CGlobalHeap::Free](#free) to free the memory allocated by this method.
 
-Implemented using [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
+Implemented using [GlobalReAlloc](/windows/win32/api/winbase/nf-winbase-globalrealloc).
 
 ## See also
 

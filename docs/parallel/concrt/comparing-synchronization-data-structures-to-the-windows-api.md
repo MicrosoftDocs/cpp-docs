@@ -12,7 +12,7 @@ The synchronization data structures that are provided by the Concurrency Runtime
 
 ## critical_section
 
-The [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) class resembles the Windows `CRITICAL_SECTION` structure because it can be used only by the threads of one process. For more information about critical sections in the Windows API, see [Critical Section Objects](/windows/desktop/Sync/critical-section-objects).
+The [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) class resembles the Windows `CRITICAL_SECTION` structure because it can be used only by the threads of one process. For more information about critical sections in the Windows API, see [Critical Section Objects](/windows/win32/Sync/critical-section-objects).
 
 ## reader_writer_lock
 
@@ -26,11 +26,11 @@ The [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-wri
 |Write-preference lock|Yes|No|
 |FIFO access to writers|Yes|No|
 
-For more information about SRW locks, see [Slim Reader/Writer (SRW) Locks](https://msdn.microsoft.com/library/windows/desktop/aa904937) in the Platform SDK.
+For more information about SRW locks, see [Slim Reader/Writer (SRW) Locks](/windows/win32/sync/slim-reader-writer--srw--locks) in the Platform SDK.
 
 ## event
 
-The [concurrency::event](../../parallel/concrt/reference/event-class.md) class resembles an unnamed, Windows manual-reset event. However, an `event` object behaves cooperatively, whereas a Windows event behaves preemptively. For more information about Windows events, see [Event Objects](/windows/desktop/Sync/event-objects).
+The [concurrency::event](../../parallel/concrt/reference/event-class.md) class resembles an unnamed, Windows manual-reset event. However, an `event` object behaves cooperatively, whereas a Windows event behaves preemptively. For more information about Windows events, see [Event Objects](/windows/win32/Sync/event-objects).
 
 ## Example
 

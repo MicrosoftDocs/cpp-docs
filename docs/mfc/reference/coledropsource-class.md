@@ -39,7 +39,7 @@ To use a `COleDropSource` object, just call the constructor. This simplifies the
 
 For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
 
-For more information, see [IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource) in the Windows SDK.
+For more information, see [IDropSource](/windows/win32/api/oleidl/nn-oleidl-idropsource) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -92,7 +92,7 @@ Returns DRAGDROP_S_USEDEFAULTCURSORS if dragging is in progress, NOERROR if it i
 
 Override this function to provide feedback to the user about what would happen if a drop occurred at this point. The default implementation uses the OLE default cursors. For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).
 
-For more information, see [IDropSource::GiveFeedback](/windows/desktop/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover), and [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
+For more information, see [IDropSource::GiveFeedback](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover), and [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
 
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag
 

@@ -98,7 +98,7 @@ A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) obj
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -170,10 +170,10 @@ BOOL EndRequest(
 ### Parameters
 
 *dwFlags*<br/>
-Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) in the Windows SDK.
+Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](/windows/win32/api/wininet/nf-wininet-httpendrequestw) in the Windows SDK.
 
 *lpBuffIn*<br/>
-Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) that describes the input buffer used for the operation.
+Pointer to an initialized [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) that describes the input buffer used for the operation.
 
 *dwContext*<br/>
 The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.
@@ -265,7 +265,7 @@ A combination of the attribute to query and the following flags that specify the
 
 - HTTP_QUERY_FLAG_REQUEST_HEADERS Typically, the application queries the response headers, but an application can also query request headers by using this flag.
 
-- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
+- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.
 
 - HTTP_QUERY_FLAG_NUMBER For those headers whose value is a number, such as the status code, this flag returns the data as a 32-bit number.
 
@@ -287,11 +287,11 @@ A reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) o
 An index value. See *lpdwIndex*.
 
 *pSysTime*<br/>
-A pointer to a Win32 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.
+A pointer to a Win32 [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -370,7 +370,7 @@ A reference to a status code. Status codes indicate the success or failure of th
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -457,13 +457,13 @@ BOOL SendRequestEx(
 Number of bytes to be sent in the request.
 
 *dwFlags*<br/>
-Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) in the Windows SDK.
+Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](/windows/win32/api/wininet/nf-wininet-httpsendrequestexw) in the Windows SDK.
 
 *dwContext*<br/>
 The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.
 
 *lpBuffIn*<br/>
-Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-internet_buffersa) that describes the input buffer used for the operation.
+Pointer to an initialized [INTERNET_BUFFERS](/windows/win32/api/wininet/ns-wininet-internet_buffersw) that describes the input buffer used for the operation.
 
 *lpBuffOut*<br/>
 Pointer to an initialized INTERNET_BUFFERS that describes the output buffer used for the operation.

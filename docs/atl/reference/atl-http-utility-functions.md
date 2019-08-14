@@ -15,7 +15,7 @@ These functions support manipulation of URLs.
 |[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|Gets the default port number associated with a particular Internet protocol or scheme.|
 |[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|Determines whether a character is safe for use in a URL.|
 |[AtlUnescapeUrl](#atlunescapeurl)|Converts escaped characters back to their original values.|
-|[RGBToHtml](#rgbtohtml)|Converts a [COLORREF](/windows/desktop/gdi/colorref) value to the HTML text corresponding to that color value.|
+|[RGBToHtml](#rgbtohtml)|Converts a [COLORREF](/windows/win32/gdi/colorref) value to the HTML text corresponding to that color value.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|
 
 ## Requirements
@@ -68,7 +68,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Behaves like the current version of [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) but does not require WinInet or Internet Explorer to be installed.
+Behaves like the current version of [InternetCanonicalizeUrl](/windows/win32/api/wininet/nf-wininet-internetcanonicalizeurlw) but does not require WinInet or Internet Explorer to be installed.
 
 ## <a name="atlcombineurl"></a> AtlCombineUrl
 
@@ -106,7 +106,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Behaves like the current version of [InternetCombineUrl](/windows/desktop/api/wininet/nf-wininet-internetcombineurla) but does not require WinInet or Internet Explorer to be installed.
+Behaves like the current version of [InternetCombineUrl](/windows/win32/api/wininet/nf-wininet-internetcombineurlw) but does not require WinInet or Internet Explorer to be installed.
 
 ## <a name="atlescapeurl"></a> AtlEscapeUrl
 
@@ -229,7 +229,7 @@ Reverses the conversion process applied by [AtlEscapeUrl](#atlescapeurl).
 
 ## <a name="rgbtohtml"></a> RGBToHtml
 
-Converts a [COLORREF](/windows/desktop/gdi/colorref) value to the HTML text corresponding to that color value.
+Converts a [COLORREF](/windows/win32/gdi/colorref) value to the HTML text corresponding to that color value.
 
 ```cpp
 bool inline RGBToHtml(
@@ -279,4 +279,4 @@ A reference to a string variable to receive the HTTP date time as defined in RFC
 
 [Concepts](../active-template-library-atl-concepts.md)<br/>
 [ATL COM Desktop Components](../atl-com-desktop-components.md)<br/>
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
+[InternetCanonicalizeUrl](/windows/win32/api/wininet/nf-wininet-internetcanonicalizeurlw)

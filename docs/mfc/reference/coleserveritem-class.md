@@ -193,7 +193,7 @@ The delay time is specified by a registry key setting. You can change the delay 
 
 - Windows 95/98   Drag delay time is stored in a cached version of WIN.INI.
 
-For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) in the Windows SDK.
+For more information about how drag delay information is stored in either the registry or the .INI file, see [WriteProfileString](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) in the Windows SDK.
 
 ##  <a name="getclipboarddata"></a>  COleServerItem::GetClipboardData
 
@@ -270,7 +270,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ### Parameters
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure that will receive the CF_EMBEDSOURCE data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_EMBEDSOURCE data for the OLE item.
 
 ### Remarks
 
@@ -278,7 +278,7 @@ This format includes the item's native data. You must have implemented the `Seri
 
 The result can then be added to a data source by using [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). This function is called automatically by [COleServerItem::OnGetClipboardData](#ongetclipboarddata).
 
-For more information, see [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
 
 ##  <a name="getitemname"></a>  COleServerItem::GetItemName
 
@@ -307,7 +307,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 ### Parameters
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure that will receive the CF_LINKSOURCE data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_LINKSOURCE data for the OLE item.
 
 ### Return Value
 
@@ -319,7 +319,7 @@ This format includes the CLSID describing the type of the OLE item and the infor
 
 The result can then be added to a data source with [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). This function is called automatically by [OnGetClipboardData](#ongetclipboarddata).
 
-For more information, see [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
 
 ##  <a name="getobjectdescriptordata"></a>  COleServerItem::GetObjectDescriptorData
 
@@ -341,13 +341,13 @@ Offset of the mouse click from the upper-left corner of the OLE item. Can be NUL
 Size of the OLE item. Can be NULL.
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure that will receive the CF_OBJECTDESCRIPTOR data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_OBJECTDESCRIPTOR data for the OLE item.
 
 ### Remarks
 
 The information is copied into the `STGMEDIUM` structure pointed to by *lpStgMedium*. This format includes the information needed for the Paste Special dialog.
 
-For more information, see [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
 
 ##  <a name="isconnected"></a>  COleServerItem::IsConnected
 
@@ -441,7 +441,7 @@ Specifies the verb to execute. It can be any one of the following:
 |- 2|Edit item in separate window|OLEIVERB_OPEN|
 |- 3|Hide item|OLEIVERB_HIDE|
 
-The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
+The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
 ### Remarks
 
@@ -449,7 +449,7 @@ If the container application was written with the Microsoft Foundation Class Lib
 
 Override this function if your primary verb does not show the item. For example, if the item is a sound recording and its primary verb is Play, you would not have to display the server application to play the item.
 
-For more information, see [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
+For more information, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
 ##  <a name="ondraw"></a>  COleServerItem::OnDraw
 
@@ -619,7 +619,7 @@ Nonzero if successful; otherwise 0.
 
 If *bCreation* is TRUE, this function is called if a container implements Insert New Object based on the current selection. The data selected is used when creating the new OLE item. For example, when selecting a range of cells in a spreadsheet program and then using the Insert New Object to create a chart based on the values in the selected range. The default implementation does nothing. Override this function to choose an acceptable format from those offered by *pDataObject* and initialize the OLE item based on the data provided. This is an advanced overridable.
 
-For more information, see [IOleObject::InitFromData](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-initfromdata) in the Windows SDK.
+For more information, see [IOleObject::InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) in the Windows SDK.
 
 ##  <a name="onopen"></a>  COleServerItem::OnOpen
 
@@ -635,7 +635,7 @@ The default implementation activates the first frame window displaying the docum
 
 Override this function if you want to perform special processing when opening an OLE item. This is especially common with linked items where you want to set the selection to the link when it is opened.
 
-For more information, see [IOleClientSite::OnShowWindow](/windows/desktop/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) in the Windows SDK.
+For more information, see [IOleClientSite::OnShowWindow](/windows/win32/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) in the Windows SDK.
 
 ##  <a name="onqueryupdateitems"></a>  COleServerItem::OnQueryUpdateItems
 
@@ -666,10 +666,10 @@ virtual BOOL OnRenderData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -683,7 +683,7 @@ If *lpStgMedium*-> *tymed* is TYMED_NULL, the STGMEDIUM should allocated and fil
 
 This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.
 
-For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), and [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) in the Windows SDK.
 
 ##  <a name="onrenderfiledata"></a>  COleServerItem::OnRenderFileData
 
@@ -698,7 +698,7 @@ virtual BOOL OnRenderFileData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *pFile*<br/>
 Points to a `CFile` object in which the data is to be rendered.
@@ -713,7 +713,7 @@ The specified format is one previously placed in the `COleDataSource` object usi
 
 This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).
 
-For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
 ##  <a name="onrenderglobaldata"></a>  COleServerItem::OnRenderGlobalData
 
@@ -728,7 +728,7 @@ virtual BOOL OnRenderGlobalData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *phGlobal*<br/>
 Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be NULL.
@@ -745,7 +745,7 @@ If *phGlobal* is NULL, then a new HGLOBAL should be allocated and returned in *p
 
 This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).
 
-For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
 ##  <a name="onsetcolorscheme"></a>  COleServerItem::OnSetColorScheme
 
@@ -758,7 +758,7 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
 ### Parameters
 
 *lpLogPalette*<br/>
-Pointer to a Windows [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) structure.
+Pointer to a Windows [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) structure.
 
 ### Return Value
 
@@ -766,9 +766,9 @@ Nonzero if the color palette is used; otherwise 0.
 
 ### Remarks
 
-If the container application was written using the Microsoft Foundation Class Library, this function is called when the [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) function of the corresponding `COleClientItem` object is called. The default implementation returns FALSE. Override this function if you want to use the recommended palette. The server application is not required to use the suggested palette.
+If the container application was written using the Microsoft Foundation Class Library, this function is called when the [IOleObject::SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) function of the corresponding `COleClientItem` object is called. The default implementation returns FALSE. Override this function if you want to use the recommended palette. The server application is not required to use the suggested palette.
 
-For more information, see [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) in the Windows SDK.
+For more information, see [IOleObject::SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) in the Windows SDK.
 
 ##  <a name="onsetdata"></a>  COleServerItem::OnSetData
 
@@ -784,10 +784,10 @@ virtual BOOL OnSetData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Pointer to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format of the data.
+Pointer to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data resides.
 
 *bRelease*<br/>
 Indicates who has ownership of the storage medium after completing the function call. The caller decides who is responsible for releasing the resources allocated on behalf of the storage medium. The caller does this by setting *bRelease*. If *bRelease* is nonzero, the server item takes ownership, freeing the medium when it has finished using it. When *bRelease* is 0, the caller retains ownership and the server item can use the storage medium only for the duration of the call.
@@ -798,11 +798,11 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-The server item does not take ownership of the data until it has successfully obtained it. That is, it does not take ownership if it returns 0. If the data source takes ownership, it frees the storage medium by calling the [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) function.
+The server item does not take ownership of the data until it has successfully obtained it. That is, it does not take ownership if it returns 0. If the data source takes ownership, it frees the storage medium by calling the [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) function.
 
 The default implementation does nothing. Override this function to replace the OLE item's data with the specified data. This is an advanced overridable.
 
-For more information, see [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), and [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) in the Windows SDK.
 
 ##  <a name="onsetextent"></a>  COleServerItem::OnSetExtent
 

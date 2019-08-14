@@ -17,7 +17,7 @@ Designates the parameter that receives the return value of the member.
 
 ## Remarks
 
-The **retval** C++ attribute has the same functionality as the [retval](/windows/desktop/Midl/retval) MIDL attribute.
+The **retval** C++ attribute has the same functionality as the [retval](/windows/win32/Midl/retval) MIDL attribute.
 
 **retval** must appear on the last argument in a function's declaration.
 

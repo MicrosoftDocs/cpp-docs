@@ -35,7 +35,7 @@ For more information, see:
 
 - [Active Documents](../mfc/active-documents.md)
 
-- [Understanding ActiveX Controls](/windows/desktop/com/activex-controls)
+- [Understanding ActiveX Controls](/windows/win32/com/activex-controls)
 
 - [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)
 

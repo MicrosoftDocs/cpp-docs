@@ -47,7 +47,7 @@ class CAsyncMonikerFile : public CMonikerFile
 
 ## Remarks
 
-Derived from [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), which in turn is derived from [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` uses the [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) interface to access any data stream asynchronously, including loading files asynchronously from a URL. The files can be datapath properties of ActiveX controls.
+Derived from [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), which in turn is derived from [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` uses the [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) interface to access any data stream asynchronously, including loading files asynchronously from a URL. The files can be datapath properties of ActiveX controls.
 
 Asynchronous monikers are used primarily in Internet-enabled applications and ActiveX controls to provide a responsive user-interface during file transfers. A prime example of this is the use of [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) to provide asynchronous properties for ActiveX controls. The `CDataPathProperty` object will repeatedly get a callback to indicate availability of new data during a lengthy property exchange process.
 
@@ -124,7 +124,7 @@ Alternately, your COM object can delegate to MFC's implementation by calling `Cr
 
 [CAsyncMonikerFile::Open](#open) calls `CreateBindStatusCallback`.
 
-For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) interface and [How Asynchronous Binding and Storage Work](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/desktop/com/aggregation). All three topics are in the Windows SDK.
+For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) interface and [How Asynchronous Binding and Storage Work](/windows/win32/Stg/how-asynchronous-binding-and-storage-work). For a discussion of aggregation, see [Aggregation](/windows/win32/com/aggregation). All three topics are in the Windows SDK.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 
@@ -172,7 +172,7 @@ FORMATETC* GetFormatEtc() const;
 
 ### Return Value
 
-A pointer to the Windows structure [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) for the currently opened stream. Returns NULL if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.
+A pointer to the Windows structure [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) for the currently opened stream. Returns NULL if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.
 
 ##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority
 
@@ -184,7 +184,7 @@ virtual LONG GetPriority() const;
 
 ### Return Value
 
-The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, and THREAD_PRIORITY_TIME_CRITICAL. See the Windows function [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) for a description of these values.
+The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, and THREAD_PRIORITY_TIME_CRITICAL. See the Windows function [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) for a description of these values.
 
 ### Remarks
 

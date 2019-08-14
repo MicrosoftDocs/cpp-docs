@@ -8,7 +8,7 @@ ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
 
 **Microsoft Specific**
 
-Thread Local Storage (TLS) is the mechanism by which each thread in a given multithreaded process allocates storage for thread-specific data. In standard multithreaded programs, data is shared among all threads of a given process, whereas thread local storage is the mechanism for allocating per-thread data. For a complete discussion of threads, see [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads) in the Windows SDK.
+Thread Local Storage (TLS) is the mechanism by which each thread in a given multithreaded process allocates storage for thread-specific data. In standard multithreaded programs, data is shared among all threads of a given process, whereas thread local storage is the mechanism for allocating per-thread data. For a complete discussion of threads, see [Processes and Threads](/windows/win32/ProcThread/processes-and-threads) in the Windows SDK.
 
 The Microsoft C language includes the extended storage-class attribute, thread, which is used with the __declspec keyword to declare a thread local variable. For example, the following code declares an integer thread local variable and initializes it with a value:
 

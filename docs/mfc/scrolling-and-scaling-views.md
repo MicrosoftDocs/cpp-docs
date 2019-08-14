@@ -16,7 +16,7 @@ For more information about scrolling and scaling, see class [CScrollView](../mfc
 
 - Scaling a view
 
-- [View coordinates](/windows/desktop/gdi/window-coordinate-system)
+- [View coordinates](/windows/win32/gdi/window-coordinate-system)
 
 ##  <a name="_core_scrolling_a_view"></a> Scrolling a View
 

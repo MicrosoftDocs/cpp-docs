@@ -343,10 +343,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 ### Parameters
 
 *dwClsContext*<br/>
-[in] Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. For a description of these values, see [CLSCTX](/windows/desktop/api/wtypesbase/ne-wtypesbase-tagclsctx) in the Windows SDK.
+[in] Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. For a description of these values, see [CLSCTX](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx) in the Windows SDK.
 
 *dwFlags*<br/>
-[in] Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. For a description of these values, see [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) in the Windows SDK.
+[in] Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. For a description of these values, see [REGCLS](/windows/win32/api/combaseapi/ne-combaseapi-regcls) in the Windows SDK.
 
 ### Return Value
 

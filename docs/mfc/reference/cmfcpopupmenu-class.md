@@ -361,7 +361,7 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
 
 ### Remarks
 
-If you enable sound, the framework calls the [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.
+If you enable sound, the framework calls the [PlaySound](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.
 
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize
 

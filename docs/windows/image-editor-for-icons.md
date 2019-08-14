@@ -176,4 +176,4 @@ None
 ## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
-[Icons](/windows/desktop/menurc/icons)
+[Icons](/windows/win32/menurc/icons)

@@ -9,4 +9,4 @@ ms.assetid: 79a8bf0d-8cc7-4159-a6a2-d0e543749069
 
 Codepage not valid : ignored
 
-The .rc file contained a codepage argument and the codepage specified is invalid. See [IsValidCodePage](/windows/desktop/api/winnls/nf-winnls-isvalidcodepage) for more information.
+The .rc file contained a codepage argument and the codepage specified is invalid. See [IsValidCodePage](/windows/win32/api/winnls/nf-winnls-isvalidcodepage) for more information.

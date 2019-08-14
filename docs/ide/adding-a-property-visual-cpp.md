@@ -135,15 +135,15 @@ Use this page of the Add Property Wizard to specify any interface definition lan
 
 - `id`
 
-  Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. See [id](/windows/desktop/Midl/id) in the *MIDL Reference*.
+  Sets the numerical ID that identifies the property. This option isn't available for properties of custom interfaces. See [id](/windows/win32/Midl/id) in the *MIDL Reference*.
 
 - `helpcontext`
 
-  Specifies a context ID that lets the user view information about this property in the Help file. See [helpcontext](/windows/desktop/Midl/helpcontext) in the *MIDL Reference*.
+  Specifies a context ID that lets the user view information about this property in the Help file. See [helpcontext](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
 
 - `helpstring`
 
-  Specifies a character string that's used to describe the element to which it applies. By default, it's set to `property`&nbsp;*Property&nbsp;name*. See [helpstring](/windows/desktop/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that's used to describe the element to which it applies. By default, it's set to `property`&nbsp;*Property&nbsp;name*. See [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Other options
 
@@ -151,17 +151,17 @@ Not all options are available to all property types.
 
 |Option|Description|
 |------------|-----------------|
-|`bindable`|Indicates that the property supports data binding. See [bindable](/windows/desktop/Midl/bindable) in the *MIDL Reference*. For the stock implementation of the property, this option is set by default and is unchangeable.|
-|`defaultbind`|Indicates that this single, bindable property best represents the object. See [defaultbind](/windows/desktop/Midl/defaultbind) in the *MIDL Reference*.|
-|`displaybind`|Indicates that this property should be displayed to the user as bindable. See [displaybind](/windows/desktop/Midl/displaybind) in the *MIDL Reference*.|
-|`immediatebind`|Indicates that the database will be notified immediately of all changes to this property of a data-bound object. See [immediatebind](/windows/desktop/Midl/immediatebind) in the *MIDL Reference*.|
-|`defaultcollelem`|Indicates that the property is an accessor function for an element of the default collection. See [defaultcollelem](/windows/desktop/Midl/defaultcollelem) in the *MIDL Reference*.|
-|`nonbrowsable`|Tags an interface or dispinterface member that shouldn't be displayed in a properties browser. See [nonbrowsable](/windows/desktop/Midl/nonbrowsable) in the *MIDL Reference*.|
-|`requestedit`|Indicates that the property supports the `OnRequestEdit` notification. See [requestedit](/windows/desktop/Midl/requestedit) in the *MIDL Reference*. For the stock implementation of the property, this option is set by default and is unchangeable.|
-|`source`|Indicates that a member of the property is a source of events. See [source](/windows/desktop/Midl/source) in the *MIDL Reference*.|
-|`hidden`|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. See [hidden](/windows/desktop/Midl/hidden) in the *MIDL Reference*.|
-|`restricted`|Specifies that the property can't be called arbitrarily. See [restricted](/windows/desktop/Midl/restricted) in the *MIDL Reference*.|
-|`local`|Specifies to the MIDL compiler that the property isn't remote. See [local](/windows/desktop/Midl/local) in the *MIDL Reference*.|
+|`bindable`|Indicates that the property supports data binding. See [bindable](/windows/win32/Midl/bindable) in the *MIDL Reference*. For the stock implementation of the property, this option is set by default and is unchangeable.|
+|`defaultbind`|Indicates that this single, bindable property best represents the object. See [defaultbind](/windows/win32/Midl/defaultbind) in the *MIDL Reference*.|
+|`displaybind`|Indicates that this property should be displayed to the user as bindable. See [displaybind](/windows/win32/Midl/displaybind) in the *MIDL Reference*.|
+|`immediatebind`|Indicates that the database will be notified immediately of all changes to this property of a data-bound object. See [immediatebind](/windows/win32/Midl/immediatebind) in the *MIDL Reference*.|
+|`defaultcollelem`|Indicates that the property is an accessor function for an element of the default collection. See [defaultcollelem](/windows/win32/Midl/defaultcollelem) in the *MIDL Reference*.|
+|`nonbrowsable`|Tags an interface or dispinterface member that shouldn't be displayed in a properties browser. See [nonbrowsable](/windows/win32/Midl/nonbrowsable) in the *MIDL Reference*.|
+|`requestedit`|Indicates that the property supports the `OnRequestEdit` notification. See [requestedit](/windows/win32/Midl/requestedit) in the *MIDL Reference*. For the stock implementation of the property, this option is set by default and is unchangeable.|
+|`source`|Indicates that a member of the property is a source of events. See [source](/windows/win32/Midl/source) in the *MIDL Reference*.|
+|`hidden`|Indicates that the property exists but shouldn't be displayed in a user-oriented browser. See [hidden](/windows/win32/Midl/hidden) in the *MIDL Reference*.|
+|`restricted`|Specifies that the property can't be called arbitrarily. See [restricted](/windows/win32/Midl/restricted) in the *MIDL Reference*.|
+|`local`|Specifies to the MIDL compiler that the property isn't remote. See [local](/windows/win32/Midl/local) in the *MIDL Reference*.|
 
 ## Stock properties
 

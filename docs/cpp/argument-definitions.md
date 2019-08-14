@@ -24,7 +24,7 @@ An array of null-terminated strings representing command-line arguments entered 
 The first command-line argument is always `argv[1]` and the last one is `argv[argc - 1]`.
 
 > [!NOTE]
-> By convention, `argv[0]` is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv[0]` may not be the executable name; use [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea) to retrieve the executable name, and its fully-qualified path.
+> By convention, `argv[0]` is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv[0]` may not be the executable name; use [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
 
 ## Microsoft Specific
 

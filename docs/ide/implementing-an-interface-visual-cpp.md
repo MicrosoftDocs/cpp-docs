@@ -41,7 +41,7 @@ If you're adding a new interface, you must add it manually to the project's .idl
 
 This wizard implements an interface for a COM object. Implementations of many interfaces are included in the COM libraries available with Visual Studio and Windows. An interface implementation is associated with an object when an instance of that object is created. It also provides the services that the object offers.
 
-For a discussion of interfaces and implementations, see [Interfaces and interface implementations](/windows/desktop/com/interfaces-and-interface-implementations) in the Windows SDK.
+For a discussion of interfaces and implementations, see [Interfaces and interface implementations](/windows/win32/com/interfaces-and-interface-implementations) in the Windows SDK.
 
 - **Implement interface from**
 

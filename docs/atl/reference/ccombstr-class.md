@@ -428,7 +428,7 @@ bool LoadString(UINT nID) throw();
 
 ### Parameters
 
-See [LoadString](/windows/desktop/api/winuser/nf-winuser-loadstringa) in the Windows SDK.
+See [LoadString](/windows/win32/api/winuser/nf-winuser-loadstringw) in the Windows SDK.
 
 ### Return Value
 
@@ -659,7 +659,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 ### Parameters
 
 *pStream*<br/>
-[in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on the stream containing the data.
+[in] A pointer to the [IStream](/windows/win32/api/objidl/nn-objidl-istream) interface on the stream containing the data.
 
 ### Return Value
 
@@ -716,7 +716,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 ### Parameters
 
 *pStream*<br/>
-[in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on a stream.
+[in] A pointer to the [IStream](/windows/win32/api/objidl/nn-objidl-istream) interface on a stream.
 
 ### Return Value
 

@@ -37,7 +37,7 @@ The **rand_s** function requires that constant **_CRT_RAND_S** be defined prior 
 #include <stdlib.h>
 ```
 
-**rand_s** depends on the [RtlGenRandom](/windows/desktop/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API, which is only available in Windows XP and later.
+**rand_s** depends on the [RtlGenRandom](/windows/win32/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API, which is only available in Windows XP and later.
 
 ## Requirements
 

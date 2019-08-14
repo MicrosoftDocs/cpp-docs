@@ -26,7 +26,7 @@ The Visual C++ samples listed below demonstrate different functionalities across
 
 [CodePlex samples](https://archive.codeplex.com/)
 
-[ADO code samples](https://msdn.microsoft.com/library/jj249212.aspx)
+[ADO code samples](/office/client-developer/access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c)
 
 [Windows Hardware development samples](https://code.msdn.microsoft.com/windowshardware/)
 

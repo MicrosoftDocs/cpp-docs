@@ -27,6 +27,6 @@ After Visual C++ DLLs are installed, you can run a remote debugger on a network 
 ## See also
 
 [Deployment in Visual C++](deployment-in-visual-cpp.md)<br>
-[Windows Installer Command line options](/windows/desktop/Msi/command-line-options)<br>
+[Windows Installer Command line options](/windows/win32/Msi/command-line-options)<br>
 [Deployment Examples](deployment-examples.md)<br>
 [Remote Debugging](/visualstudio/debugger/remote-debugging)

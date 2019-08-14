@@ -24,7 +24,7 @@ Returns the handle to the Win32 heap used by the C run-time system.
 
 ## Remarks
 
-Use this function if you want to call [HeapSetInformation](/windows/desktop/api/heapapi/nf-heapapi-heapsetinformation) and enable the Low Fragmentation Heap on the CRT heap.
+Use this function if you want to call [HeapSetInformation](/windows/win32/api/heapapi/nf-heapapi-heapsetinformation) and enable the Low Fragmentation Heap on the CRT heap.
 
 ## Requirements
 

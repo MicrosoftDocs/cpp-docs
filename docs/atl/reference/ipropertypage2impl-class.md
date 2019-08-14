@@ -34,7 +34,7 @@ Your class, derived from `IPropertyPage2Impl`.
 
 ## Remarks
 
-The [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) interface extends [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.
+The [IPropertyPage2](/windows/win32/api/ocidl/nn-ocidl-ipropertypage2) interface extends [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.
 
 Class `IPropertyPage2Impl` simply returns E_NOTIMPL for `IPropertyPage2::EditProperty`. However, it inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) and implements `IUnknown` by sending information to the dump device in debug builds.
 
@@ -68,7 +68,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IPropertyPage2::EditProperty](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage2-editproperty) in the Windows SDK.
+See [IPropertyPage2::EditProperty](/windows/win32/api/ocidl/nf-ocidl-ipropertypage2-editproperty) in the Windows SDK.
 
 ## See also
 

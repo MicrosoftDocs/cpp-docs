@@ -22,7 +22,7 @@ The size of memory allocated for sized pointers.
 
 ## Remarks
 
-The **size_is** C++ attribute has the same functionality as the [size_is](/windows/desktop/Midl/size-is) MIDL attribute.
+The **size_is** C++ attribute has the same functionality as the [size_is](/windows/win32/Midl/size-is) MIDL attribute.
 
 ## Example
 

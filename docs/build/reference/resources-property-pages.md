@@ -7,7 +7,7 @@ ms.assetid: dade2f6b-c51f-4c33-9023-41956ae4b5f6
 ---
 # Resources Property Pages
 
-For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-).
+For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-).
 
 For information on how to access the **Resources** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 

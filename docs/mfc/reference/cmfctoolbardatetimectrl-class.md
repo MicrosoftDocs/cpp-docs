@@ -37,10 +37,10 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 |[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|Returns a pointer to the date and time picker control.|
 |[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|Retrieves the window handle that is associated with the toolbar button. (Overrides [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|
 |`CMFCToolBarDateTimeCtrl::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
-|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Gets the selected time from a date and time picker control and puts it in a specified [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.|
+|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Gets the selected time from a date and time picker control and puts it in a specified [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure.|
 |[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|Returns the selected time from the time picker control button that has a specified command ID.|
 |[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|Determines whether a border of the button is displayed when a user selects the button. (Overrides [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
-|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Specifies whether the button processes the [WM_COMMAND](/windows/desktop/menurc/wm-command) message. (Overrides [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
+|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Specifies whether the button processes the [WM_COMMAND](/windows/win32/menurc/wm-command) message. (Overrides [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
 |[CMFCToolBarDateTimeCtrl::OnAddToCustomizePage](#onaddtocustomizepage)|Called by the framework when the button is added to a **Customize** dialog box. (Overrides [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|
 |`CMFCToolBarDateTimeCtrl::OnCalculateSize`|Called by the framework to calculate the size of the button for the specified device context and docking state. (Overrides [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
 |[CMFCToolBarDateTimeCtrl::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar. (Overrides [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|
@@ -219,7 +219,7 @@ This method overrides the [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfct
 
 ##  <a name="gettime"></a>  CMFCToolBarDateTimeCtrl::GetTime
 
-Gets the selected time from the associated date and time picker control and puts it in a specified [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure
+Gets the selected time from the associated date and time picker control and puts it in a specified [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure
 
 ```
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -233,15 +233,15 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 [out] In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-[out] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
+[out] A pointer to the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
-In the first overload, nonzero if the time is successfully written to the [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object; otherwise 0. In the second and third overloads, the return value is a DWORD that is equal to the dwFlag member that was set in the [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) structure.
+In the first overload, nonzero if the time is successfully written to the [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object; otherwise 0. In the second and third overloads, the return value is a DWORD that is equal to the dwFlag member that was set in the [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure.
 
 ### Remarks
 
-The method sets the [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) structure member dwFlags to indicate whether the date and time picker is set to a date and time. If the value equals GDT_NONE, the control is set to `no date` status, and uses the DTS_SHOWNONE style. If the value returned equals GDT_VALID, the system time is successfully stored in the destination location.
+The method sets the [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure member dwFlags to indicate whether the date and time picker is set to a date and time. If the value equals GDT_NONE, the control is set to `no date` status, and uses the DTS_SHOWNONE style. If the value returned equals GDT_VALID, the system time is successfully stored in the destination location.
 
 ##  <a name="gettimeall"></a>  CMFCToolBarDateTimeCtrl::GetTimeAll
 
@@ -270,7 +270,7 @@ static DWORD GetTimeAll(
 [out] In the first overload, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second overload, a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-[out] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
+[out] A pointer to the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
@@ -298,7 +298,7 @@ This method returns a nonzero value if the control is visible.
 
 ##  <a name="notifycommand"></a>  CMFCToolBarDateTimeCtrl::NotifyCommand
 
-Specifies whether the button processes the [WM_COMMAND](/windows/desktop/menurc/wm-command) message.
+Specifies whether the button processes the [WM_COMMAND](/windows/win32/menurc/wm-command) message.
 
 ```
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -315,9 +315,9 @@ TRUE if the button processes the WM_COMMAND message, or FALSE to indicate that t
 
 ### Remarks
 
-The framework calls this method when it is about to send a [WM_COMMAND](/windows/desktop/menurc/wm-command) message to the parent window.
+The framework calls this method when it is about to send a [WM_COMMAND](/windows/win32/menurc/wm-command) message to the parent window.
 
-This method extends the base class implementation ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) by processing the [DTN_DATETIMECHANGE](/windows/desktop/Controls/dtn-datetimechange) notification. It updates the internal time status and updates the time property of all `CMFCToolBarDateTimeCtrl` objects with the same command ID.
+This method extends the base class implementation ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) by processing the [DTN_DATETIMECHANGE](/windows/win32/Controls/dtn-datetimechange) notification. It updates the internal time status and updates the time property of all `CMFCToolBarDateTimeCtrl` objects with the same command ID.
 
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarDateTimeCtrl::OnAddToCustomizePage
 
@@ -514,7 +514,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 [in] In the first version, a reference to a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.
 
 *pTimeNew*<br/>
-[in] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
+[in] A pointer to the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
 
 ### Return Value
 
@@ -551,7 +551,7 @@ static BOOL SetTimeAll(
 [in] In the first version, a [COleDateTime Class](../../atl-mfc-shared/reference/coledatetime-class.md) object that contains the time to which the control will be set. In the second version, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that contains the time to which the control will be set.
 
 *pTimeNew*<br/>
-[in] A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
+[in] A pointer to the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure that contains the time to which the control will be set.
 
 ### Return Value
 

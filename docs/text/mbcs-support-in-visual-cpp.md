@@ -20,7 +20,7 @@ Japanese keyboards do not directly support Kanji characters. The IME converts a 
 
 The IME, activated by the ALT+\` key combination, appears as a set of buttons (an indicator) and a conversion window. The application positions the window at the text insertion point. The application must handle `WM_MOVE` and `WM_SIZE` messages by repositioning the conversion window to conform to the new location or size of the target window.
 
-If you want users of your application to have the ability to enter Kanji characters, the application must handle Windows IME messages. For more information about IME programming, see [Input Method Manager](/windows/desktop/intl/input-method-manager).
+If you want users of your application to have the ability to enter Kanji characters, the application must handle Windows IME messages. For more information about IME programming, see [Input Method Manager](/windows/win32/intl/input-method-manager).
 
 ## Visual C++ Debugger
 

@@ -115,7 +115,7 @@ BOOL DoOleVerb(
 Numerical identifier of the verb.
 
 *lpMsg*<br/>
-Pointer to the [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure describing the event (such as a double-click) that invoked the verb.
+Pointer to the [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure describing the event (such as a double-click) that invoked the verb.
 
 *hWndParent*<br/>
 Handle of the document window containing the object.
@@ -129,7 +129,7 @@ TRUE if successful, otherwise FALSE.
 
 ### Remarks
 
-This member function is basically an implementation of [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).
+This member function is basically an implementation of [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).
 
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation
 
@@ -194,7 +194,7 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ### Parameters
 
 *ppenumOleVerb*<br/>
-A pointer to a pointer to an [IEnumOLEVERB](/windows/desktop/api/oleidl/nn-oleidl-ienumoleverb) interface.
+A pointer to a pointer to an [IEnumOLEVERB](/windows/win32/api/oleidl/nn-oleidl-ienumoleverb) interface.
 
 ### Return Value
 
@@ -202,7 +202,7 @@ TRUE if the object supports at least one OLE verb (in which case \* *ppenumOleVe
 
 ### Remarks
 
-This member function is basically an implementation of [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs).
+This member function is basically an implementation of [IOleObject::EnumVerbs](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumverbs).
 
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch
 
@@ -265,7 +265,7 @@ The `IDispatch` pointer associated with the object.
 
 ### Remarks
 
-For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref).
+For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref).
 
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount
 

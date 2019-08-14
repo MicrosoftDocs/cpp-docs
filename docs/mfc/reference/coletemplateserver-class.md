@@ -89,7 +89,7 @@ Indicates whether a single instance of the application can support multiple inst
 
 ### Remarks
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister
 

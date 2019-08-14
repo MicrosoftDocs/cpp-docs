@@ -7,7 +7,7 @@ ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
 ---
 # IRunnableObjectImpl Class
 
-This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) interface.
+This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](/windows/win32/api/objidl/nn-objidl-irunnableobject) interface.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -38,7 +38,7 @@ Your class, derived from `IRunnableObjectImpl`.
 
 ## Remarks
 
-The [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IRunnableObject](/windows/win32/api/objidl/nn-objidl-irunnableobject) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -66,7 +66,7 @@ The ATL implementation sets \* *lpClsid* to GUID_NULL and returns E_UNEXPECTED.
 
 ### Remarks
 
-See [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) in the Windows SDK.
+See [IRunnableObject::GetRunningClass](/windows/win32/api/objidl/nf-objidl-irunnableobject-getrunningclass) in the Windows SDK.
 
 ##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning
 
@@ -82,7 +82,7 @@ The ATL implementation returns TRUE.
 
 ### Remarks
 
-See [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) in the Windows SDK.
+See [IRunnableObject::IsRunning](/windows/win32/api/objidl/nf-objidl-irunnableobject-isrunning) in the Windows SDK.
 
 ##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning
 
@@ -98,7 +98,7 @@ The ATL implementation returns S_OK.
 
 ### Remarks
 
-See [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) in the Windows SDK.
+See [IRunnableObject::LockRunning](/windows/win32/api/objidl/nf-objidl-irunnableobject-lockrunning) in the Windows SDK.
 
 ##  <a name="run"></a>  IRunnableObjectImpl::Run
 
@@ -114,7 +114,7 @@ The ATL implementation returns S_OK.
 
 ### Remarks
 
-See [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) in the Windows SDK.
+See [IRunnableObject::Run](/windows/win32/api/objidl/nf-objidl-irunnableobject-run) in the Windows SDK.
 
 ##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject
 
@@ -130,7 +130,7 @@ The ATL implementation returns S_OK.
 
 ### Remarks
 
-See [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) in the Windows SDK.
+See [IRunnableObject::SetContainedObject](/windows/win32/api/objidl/nf-objidl-irunnableobject-setcontainedobject) in the Windows SDK.
 
 ## See also
 

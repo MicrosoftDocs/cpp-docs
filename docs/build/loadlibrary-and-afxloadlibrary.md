@@ -7,7 +7,7 @@ ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
 ---
 # LoadLibrary and AfxLoadLibrary
 
-Processes call [LoadLibraryExA](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) or [LoadLibraryExW](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw)(or [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.
+Processes call [LoadLibraryExA](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) or [LoadLibraryExW](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) (or [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) to explicitly link to a DLL. If the function succeeds, it maps the specified DLL into the address space of the calling process and returns a handle to the DLL that can be used with other functions in explicit linking—for example, `GetProcAddress` and `FreeLibrary`.
 
 `LoadLibrary` attempts to locate the DLL by using the same search sequence that is used for implicit linking. If the system cannot find the DLL or if the entry-point function returns FALSE, `LoadLibrary` returns NULL. If the call to `LoadLibrary` specifies a DLL module that is already mapped into the address space of the calling process, the function returns a handle of the DLL and increments the reference count of the module.
 
@@ -28,7 +28,7 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## What do you want to know more about?
 
-- [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
+- [Dynamic-Link Library Search Order](/windows/win32/Dlls/dynamic-link-library-search-order)
 
 - [FreeLibrary and AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)
 

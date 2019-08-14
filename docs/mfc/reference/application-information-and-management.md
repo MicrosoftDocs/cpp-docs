@@ -78,7 +78,7 @@ The RUNTIME_CLASS of an object derived from [CWinThread](../../mfc/reference/cwi
 Parameter to be passed to the controlling function as shown in the parameter to the function declaration in *pfnThreadProc*.
 
 *nPriority*<br/>
-The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
+The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
 
 *nStackSize*<br/>
 Specifies the size in bytes of the stack for the new thread. If 0, the stack size defaults to the same size stack as the creating thread.
@@ -171,7 +171,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 *lpszName*<br/>
 A pointer to a string containing the resource ID.
 *lpszType*<br/>
-A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) in the Windows SDK.
+A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) in the Windows SDK.
 
 ### Return Value
 
@@ -549,7 +549,7 @@ If the function succeeds, the return value is a handle to the module. If the fun
 
 ### Remarks
 
-It returns a handle that can be used in [GetProcAddress](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.
+It returns a handle that can be used in [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.
 
 Each process maintains a reference count for each loaded library module. This reference count is incremented each time `AfxLoadLibrary` is called and is decremented each time `AfxFreeLibrary` is called. When the reference count reaches zero, the module is unmapped from the address space of the calling process and the handle is no longer valid.
 
@@ -606,7 +606,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### Parameters
 
 *lpWndClass*<br/>
-Pointer to a [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
+Pointer to a [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.
 
 ### Return Value
 
@@ -641,7 +641,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### Parameters
 
 *nClassStyle*<br/>
-Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure in the Windows SDK. If NULL, the defaults will be set as follows:
+Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) structure in the Windows SDK. If NULL, the defaults will be set as follows:
 
 - Sets the mouse style to CS_DBLCLKS, which sends double-click messages to the window procedure when the user double-clicks the mouse.
 
@@ -655,7 +655,7 @@ Specifies the Windows class style or combination of styles, created by using the
 Specifies a handle to the cursor resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard IDC_ARROW cursor.
 
 *hbrBackground*<br/>
-Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd).
+Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd).
 
 *hIcon*<br/>
 Specifies a handle to the icon resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard, waving-flag Windows logo icon.
@@ -758,7 +758,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### Parameters
 
 *lpwsaData*<br/>
-A pointer to a [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
+A pointer to a [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) structure. If *lpwsaData* is not equal to NULL, then the address of the `WSADATA` structure is filled by the call to `WSAStartup`. This function also ensures that `WSACleanup` is called for you before the application terminates.
 
 ### Return Value
 

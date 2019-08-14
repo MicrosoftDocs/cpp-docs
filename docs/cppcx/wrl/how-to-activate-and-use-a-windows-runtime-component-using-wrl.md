@@ -30,7 +30,7 @@ The following steps use the `Windows::Foundation::IUriRuntimeClass` interface to
 
    We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.
 
-2. Initialize the thread in which the app executes. Every app must initialize its thread and threading model. This example uses the [Microsoft::WRL::Wrappers::RoInitializeWrapper](roinitializewrapper-class.md) class to initialize the Windows Runtime and specifies [RO_INIT_MULTITHREADED](/windows/desktop/api/roapi/ne-roapi-ro_init_type) as the threading model. The `RoInitializeWrapper` class calls `Windows::Foundation::Initialize` at construction, and `Windows::Foundation::Uninitialize` when it is destroyed.
+2. Initialize the thread in which the app executes. Every app must initialize its thread and threading model. This example uses the [Microsoft::WRL::Wrappers::RoInitializeWrapper](roinitializewrapper-class.md) class to initialize the Windows Runtime and specifies [RO_INIT_MULTITHREADED](/windows/win32/api/roapi/ne-roapi-ro_init_type) as the threading model. The `RoInitializeWrapper` class calls `Windows::Foundation::Initialize` at construction, and `Windows::Foundation::Uninitialize` when it is destroyed.
 
    [!code-cpp[wrl-consume-component#3](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_2.cpp)]
 
@@ -60,7 +60,7 @@ The following steps use the `Windows::Foundation::IUriRuntimeClass` interface to
 
    [!code-cpp[wrl-consume-component#9](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_7.cpp)]
 
-   The [WindowsGetStringRawBuffer](/windows/desktop/api/winstring/nf-winstring-windowsgetstringrawbuffer) function retrieves the underlying Unicode form of the URI string.
+   The [WindowsGetStringRawBuffer](/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer) function retrieves the underlying Unicode form of the URI string.
 
 Here's the complete example:
 

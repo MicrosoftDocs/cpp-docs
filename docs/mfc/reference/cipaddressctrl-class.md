@@ -42,7 +42,7 @@ An IP Address control, a control similar to an edit control, allows you to enter
 
 This control (and therefore the `CIPAddressCtrl` class) is available only to programs running under Microsoft Internet Explorer 4.0 and later. They will also be available under future versions of Windows and Windows NT.
 
-For more general information about the IP Address Control, see [IP Address Controls](/windows/desktop/Controls/ip-address-controls) in the Windows SDK.
+For more general information about the IP Address Control, see [IP Address Controls](/windows/win32/Controls/ip-address-controls) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -76,7 +76,7 @@ void ClearAddress();
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_CLEARADDRESS](/windows/desktop/Controls/ipm-clearaddress), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [IPM_CLEARADDRESS](/windows/win32/Controls/ipm-clearaddress), as described in the Windows SDK.
 
 ##  <a name="create"></a>  CIPAddressCtrl::Create
 
@@ -93,7 +93,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.
+The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK for a list of windows styles.
 
 *rect*<br/>
 A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
@@ -134,10 +134,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.
+The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK for a list of windows styles.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -193,7 +193,7 @@ The number of non-blank fields in the IP Address Control.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.
+This member function implements the behavior of the Win32 message [IPM_GETADDRESS](/windows/win32/Controls/ipm-getaddress), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.
 
 |Field|Bits containing the field value|
 |-----------|-------------------------------------|
@@ -216,7 +216,7 @@ Nonzero if all of the IP Address Control fields are empty; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_ISBLANK](/windows/desktop/Controls/ipm-isblank), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [IPM_ISBLANK](/windows/win32/Controls/ipm-isblank), as described in the Windows SDK.
 
 ##  <a name="setaddress"></a>  CIPAddressCtrl::SetAddress
 
@@ -251,7 +251,7 @@ A DWORD value that contains the new IP address. See **Remarks** for a table that
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.
+This member function implements the behavior of the Win32 message [IPM_SETADDRESS](/windows/win32/Controls/ipm-setaddress), as described in the Windows SDK. In the first prototype above, the numbers in fields 0 through 3 of the control, read left to right respectively, populate the four parameters. In the second prototype above, *dwAddress* is populated as follows.
 
 |Field|Bits containing the field value|
 |-----------|-------------------------------------|
@@ -275,7 +275,7 @@ Zero-based field index to which the focus should be set. If this value is greate
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_SETFOCUS](/windows/desktop/Controls/ipm-setfocus), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [IPM_SETFOCUS](/windows/win32/Controls/ipm-setfocus), as described in the Windows SDK.
 
 ##  <a name="setfieldrange"></a>  CIPAddressCtrl::SetFieldRange
 
@@ -301,7 +301,7 @@ A reference to an integer receiving the upper limit of the specified field in th
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange), as described in the Windows SDK. Use the two parameters, *nLower* and *nUpper*, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.
+This member function implements the behavior of the Win32 message [IPM_SETRANGE](/windows/win32/Controls/ipm-setrange), as described in the Windows SDK. Use the two parameters, *nLower* and *nUpper*, to indicate the lower and upper limits of the field, instead of the *wRange* parameter used with the Win32 message.
 
 ## See also
 

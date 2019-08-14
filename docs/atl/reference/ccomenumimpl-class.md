@@ -20,7 +20,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 #### Parameters
 
 *Base*<br/>
-A COM enumerator interface. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
+A COM enumerator interface. See [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) for an example.
 
 *piid*<br/>
 A pointer to the interface ID of the enumerator interface.
@@ -62,7 +62,7 @@ A homogeneous [copy policy class](../../atl/atl-copy-policy-classes.md).
 
 ## Remarks
 
-See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example of method implementations. `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.
+See [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) for an example of method implementations. `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.
 
 > [!NOTE]
 >  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](#init).

@@ -22,7 +22,7 @@ The default value for the parameter.
 
 ## Remarks
 
-The **defaultvalue** C++ attribute has the same functionality as the [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL attribute.
+The **defaultvalue** C++ attribute has the same functionality as the [defaultvalue](/windows/win32/Midl/defaultvalue) MIDL attribute.
 
 ## Example
 

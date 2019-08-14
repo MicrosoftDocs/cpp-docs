@@ -488,7 +488,7 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 The name of the file or directory.
 
 *dwAttributes*<br/>
-The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](/windows/desktop/api/winbase/nf-winbase-setfileattributestransacteda).
+The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](/windows/win32/api/winbase/nf-winbase-setfileattributestransactedw).
 
 ### Remarks
 

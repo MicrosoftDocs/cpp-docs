@@ -7,7 +7,7 @@ ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
 ---
 # IPropertyPageImpl Class
 
-This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) interface.
+This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) interface.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -65,7 +65,7 @@ Your class, derived from `IPropertyPageImpl`.
 
 ## Remarks
 
-The [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -94,7 +94,7 @@ HRESULT Activate(
 
 By default, the dialog box is always modeless, regardless of the value of the *bModal* parameter.
 
-See [IPropertyPage::Activate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-activate) in the Windows SDK.
+See [IPropertyPage::Activate](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-activate) in the Windows SDK.
 
 ##  <a name="apply"></a>  IPropertyPageImpl::Apply
 
@@ -110,7 +110,7 @@ Returns S_OK.
 
 ### Remarks
 
-See [IPropertyPage::Apply](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-apply) in the Windows SDK.
+See [IPropertyPage::Apply](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-apply) in the Windows SDK.
 
 ##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate
 
@@ -122,7 +122,7 @@ HRESULT Deactivate();
 
 ### Remarks
 
-See [IPropertyPage::Deactivate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-deactivate) in the Windows SDK.
+See [IPropertyPage::Deactivate](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-deactivate) in the Windows SDK.
 
 ##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo
 
@@ -136,7 +136,7 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 
 `GetPageInfo` loads the string resources associated with [m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile), and [m_dwTitle](#m_dwtitle).
 
-See [IPropertyPage::GetPageInfo](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) in the Windows SDK.
+See [IPropertyPage::GetPageInfo](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) in the Windows SDK.
 
 ##  <a name="help"></a>  IPropertyPageImpl::Help
 
@@ -148,7 +148,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 
 ### Remarks
 
-See [IPropertyPage::Help](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-help) in the Windows SDK.
+See [IPropertyPage::Help](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-help) in the Windows SDK.
 
 ##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl
 
@@ -224,7 +224,7 @@ UINT m_dwTitle;
 
 ##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite
 
-Points to the [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) interface through which the property page communicates with the property frame.
+Points to the [IPropertyPageSite](/windows/win32/api/ocidl/nn-ocidl-ipropertypagesite) interface through which the property page communicates with the property frame.
 
 ```
 IPropertyPageSite* m_pPageSite;
@@ -256,7 +256,7 @@ HRESULT Move(LPCRECT pRect);
 
 ### Remarks
 
-See [IPropertyPage::Move](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-move) in the Windows SDK.
+See [IPropertyPage::Move](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-move) in the Windows SDK.
 
 ##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty
 
@@ -285,11 +285,11 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 
 ### Remarks
 
-See [IPropertyPage::SetObjects](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setobjects) in the Windows SDK.
+See [IPropertyPage::SetObjects](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setobjects) in the Windows SDK.
 
 ##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite
 
-Provides the property page with an [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) pointer, through which the property page communicates with the property frame.
+Provides the property page with an [IPropertyPageSite](/windows/win32/api/ocidl/nn-ocidl-ipropertypagesite) pointer, through which the property page communicates with the property frame.
 
 ```
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
@@ -297,7 +297,7 @@ HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 
 ### Remarks
 
-See [IPropertyPage::SetPageSite](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setpagesite) in the Windows SDK.
+See [IPropertyPage::SetPageSite](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setpagesite) in the Windows SDK.
 
 ##  <a name="show"></a>  IPropertyPageImpl::Show
 
@@ -309,7 +309,7 @@ HRESULT Show(UINT nCmdShow);
 
 ### Remarks
 
-See [IPropertyPage::Show](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-show) in the Windows SDK.
+See [IPropertyPage::Show](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-show) in the Windows SDK.
 
 ##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator
 
@@ -321,7 +321,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 
 ### Remarks
 
-See [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) in the Windows SDK.
+See [IPropertyPage::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) in the Windows SDK.
 
 ## See also
 

@@ -67,7 +67,7 @@ The following table shows the predefined exceptions provided by MFC.
 |[CUserException Class](../mfc/reference/cuserexception-class.md)|Exception that alerts the user with a message box, then throws a generic [CException Class](../mfc/reference/cexception-class.md)|
 
 > [!NOTE]
->  MFC supports both C++ exceptions and the MFC exception macros. MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/desktop/debug/structured-exception-handling).
+>  MFC supports both C++ exceptions and the MFC exception macros. MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/win32/debug/structured-exception-handling).
 
 ##  <a name="_core_further_reading_about_exceptions"></a> Further Reading About Exceptions
 

@@ -119,7 +119,7 @@ Implements an OLE control property transferred asynchronously and cached in a me
 Provides the functionality of a Windows checklist box.
 
 [CClientDC Class](../../mfc/reference/cclientdc-class.md)<br/>
-Handles the calling of the Windows functions [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) at destruction time.
+Handles the calling of the Windows functions [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) at destruction time.
 
 [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)<br/>
 Base class for the Microsoft Foundation Class Library message-map architecture.
@@ -845,7 +845,7 @@ Enables a user to manage MDI child windows in a MDI application.
 Represents a half-height frame window typically seen around floating toolbars.
 
 [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)<br/>
-Represents a stream of data ([IStream](/windows/desktop/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).
+Represents a stream of data ([IStream](/windows/win32/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker).
 
 [CMonthCalCtrl Class](../../mfc/reference/cmonthcalctrl-class.md)<br/>
 Encapsulates the functionality of a month calendar control.
@@ -914,7 +914,7 @@ The base class from which you derive an OLE control module object.
 Provides support for custom client-side control interfaces.
 
 [COleConvertDialog Class](../../mfc/reference/coleconvertdialog-class.md)<br/>
-For more information, see the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure in the Windows SDK.
+For more information, see the [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) structure in the Windows SDK.
 
 [COleCurrency Class](../../mfc/reference/colecurrency-class.md)<br/>
 Encapsulates the `CURRENCY` data type of OLE automation.
@@ -1091,7 +1091,7 @@ Represents a set of records selected from a data source.
 A view that displays database records in controls.
 
 [CRect Class](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Similar to a Windows [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect).
+Similar to a Windows [RECT structure](/windows/win32/api/windef/ns-windef-rect).
 
 [CRectTracker Class](../../mfc/reference/crecttracker-class.md)<br/>
 Enables an item to be displayed, moved, and resized in different fashions.
@@ -1157,7 +1157,7 @@ Encapsulates a sinusoidal-range transition that has a given range of oscillation
 Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.
 
 [CSize Class](../../atl-mfc-shared/reference/csize-class.md)<br/>
-Similar to the Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure, which implements a relative coordinate or position.
+Similar to the Windows [SIZE](/windows/win32/api/windef/ns-windef-size) structure, which implements a relative coordinate or position.
 
 [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)<br/>
 Provides the functionality of the Windows common slider control.

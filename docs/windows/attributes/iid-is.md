@@ -22,7 +22,7 @@ A C language expression that specifies an IID of a COM interface pointed to by a
 
 ## Remarks
 
-The **iid_is** C++ attribute has the same functionality as the [iid_is](/windows/desktop/Midl/iid-is) MIDL attribute.
+The **iid_is** C++ attribute has the same functionality as the [iid_is](/windows/win32/Midl/iid-is) MIDL attribute.
 
 ## Example
 

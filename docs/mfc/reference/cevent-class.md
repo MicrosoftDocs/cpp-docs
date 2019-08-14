@@ -101,7 +101,7 @@ To access or release a `CEvent` object, create a [CMultiLock](../../mfc/referenc
 To change the state of a `CEvent` object to signaled (threads do not have to wait), call [SetEvent](#setevent) or [PulseEvent](#pulseevent). To set the state of a `CEvent` object to nonsignaled (threads must wait), call [ResetEvent](#resetevent).
 
 > [!IMPORTANT]
->  After creating the `CEvent` object, use [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to ensure that the mutex didn't already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
+>  After creating the `CEvent` object, use [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) to ensure that the mutex didn't already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.
 
 ##  <a name="pulseevent"></a>  CEvent::PulseEvent
 
@@ -121,7 +121,7 @@ If the event is manual, all waiting threads are released, the event is set to no
 
 If no threads are waiting, or no threads can be released immediately, `PulseEvent` sets the state of the event to nonsignaled and returns.
 
-`PulseEvent` uses the underlying Win32 `PulseEvent` function, which can be momentarily removed from the wait state by a kernel-mode asynchronous procedure call. Therefore, `PulseEvent` is unreliable and should not be used by new applications. For more information, see the [PulseEvent function](/windows/desktop/api/winbase/nf-winbase-pulseevent).
+`PulseEvent` uses the underlying Win32 `PulseEvent` function, which can be momentarily removed from the wait state by a kernel-mode asynchronous procedure call. Therefore, `PulseEvent` is unreliable and should not be used by new applications. For more information, see the [PulseEvent function](/windows/win32/api/winbase/nf-winbase-pulseevent).
 
 ##  <a name="resetevent"></a>  CEvent::ResetEvent
 

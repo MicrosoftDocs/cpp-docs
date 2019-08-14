@@ -26,7 +26,7 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
 
 - The [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) of the class you derived from `CWinThread`.
 
-- (Optional) The desired priority level. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
+- (Optional) The desired priority level. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
 
 - (Optional) The desired stack size for the thread. The default is the same size stack as the creating thread.
 
@@ -42,7 +42,7 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
 
 - [Multithreading: Creating Worker Threads](multithreading-creating-worker-threads.md)
 
-- [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads)
+- [Processes and Threads](/windows/win32/ProcThread/processes-and-threads)
 
 ## See also
 

@@ -43,7 +43,7 @@ Create an object of class `COleBusyDialog` when you want to call these dialog bo
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.
 
-For more information, see the [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) structure in the Windows SDK.
+For more information, see the [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) structure in the Windows SDK.
 
 For more information on OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).
 
@@ -103,7 +103,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 To display the dialog box, call [DoModal](#domodal).
 
-For more information, see the [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) structure in the Windows SDK.
+For more information, see the [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) structure in the Windows SDK.
 
 ##  <a name="domodal"></a>  COleBusyDialog::DoModal
 
@@ -121,7 +121,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if the user canceled the dialog box.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](/windows/desktop/api/oledlg/nf-oledlg-oleuibusya) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](/windows/win32/api/oledlg/nf-oledlg-oleuibusyw) function in the Windows SDK.
 
 ### Remarks
 
@@ -173,7 +173,7 @@ OLEUIBUSY m_bz;
 
 Members of this structure can be modified directly or through member functions.
 
-For more information, see the [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) structure in the Windows SDK.
+For more information, see the [OLEUIBUSY](/windows/win32/api/oledlg/ns-oledlg-oleuibusyw) structure in the Windows SDK.
 
 ## See also
 

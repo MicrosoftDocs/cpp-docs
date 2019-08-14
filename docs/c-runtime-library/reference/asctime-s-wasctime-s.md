@@ -106,7 +106,7 @@ In C++, using these functions is simplified by template overloads; the overloads
 
 If the buffer pointer is not **NULL** and the pointer does not point to a valid buffer, the function will overwrite whatever is at the location. This can also result in an access violation.
 
-A [buffer overrun](/windows/desktop/SecBP/avoiding-buffer-overruns) can occur if the size argument passed in is greater than the actual size of the buffer.
+A [buffer overrun](/windows/win32/SecBP/avoiding-buffer-overruns) can occur if the size argument passed in is greater than the actual size of the buffer.
 
 ## Example
 

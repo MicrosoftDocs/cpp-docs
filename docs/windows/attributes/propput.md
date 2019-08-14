@@ -17,7 +17,7 @@ Specifies a property setting function.
 
 ## Remarks
 
-The **propput** C++ attribute has the same functionality as the [propput](/windows/desktop/Midl/propput) MIDL attribute.
+The **propput** C++ attribute has the same functionality as the [propput](/windows/win32/Midl/propput) MIDL attribute.
 
 ## Example
 

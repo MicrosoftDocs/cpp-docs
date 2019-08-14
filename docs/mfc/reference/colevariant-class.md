@@ -53,7 +53,7 @@ This data type is used in OLE automation. Specifically, the [DISPPARAMS](/window
 
 The two related MFC classes [COleCurrency](../../mfc/reference/colecurrency-class.md) and [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) encapsulate the variant data types CURRENCY ( `VT_CY`) and DATE ( `VT_DATE`). The `COleVariant` class is used extensively in the DAO classes; see these classes for typical usage of this class, for example [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy), [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-tagdispparams), and [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy), [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-tagdispparams), and [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) entries in the Windows SDK.
 
 For more information on the `COleVariant` class and its use in OLE automation, see "Passing Parameters in OLE Automation" in the article [Automation](../../mfc/automation.md).
 
@@ -84,7 +84,7 @@ An existing `VARIANT` object to be attached to the current `COleVariant` object.
 
 This function sets the VARTYPE of *varSrc* to VT_EMPTY.
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
 
 ##  <a name="colevariant"></a>  COleVariant::COleVariant
 
@@ -149,7 +149,7 @@ A [CByteArray](../../mfc/reference/cbytearray-class.md) object to be copied into
 A [CLongBinary](../../mfc/reference/clongbinary-class.md) object to be copied into the new `COleVariant` object.
 
 *pidl*<br/>
-A pointer to a [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
+A pointer to a [ITEMIDLIST](/windows/win32/api/shtypes/ns-shtypes-itemidlist) structure to be copied into the new `COleVariant` object.
 
 ### Remarks
 
@@ -185,7 +185,7 @@ All these constructors create new `COleVariant` objects initialized to the speci
 
 - **COleVariant(** *lbSrc* **)** Copies a `CLongBinary` object into the new object, VT_EMPTY.
 
-For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
+For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 
 ##  <a name="changetype"></a>  COleVariant::ChangeType
 
@@ -205,7 +205,7 @@ A pointer to the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) object to 
 
 ### Remarks
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), and [VariantChangeType](/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum), and [VariantChangeType](/windows/win32/api/oleauto/nf-oleauto-variantchangetype) entries in the Windows SDK.
 
 ##  <a name="clear"></a>  COleVariant::Clear
 
@@ -236,7 +236,7 @@ This function sets the VARTYPE for this `COleVariant` object to VT_EMPTY.
 > [!NOTE]
 >  After calling `Detach`, it is the caller's responsibility to call `VariantClear` on the resulting `VARIANT` structure.
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), and [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum), and [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) entries in the Windows SDK.
 
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray
 
@@ -323,7 +323,7 @@ A brief description of each operator follows:
 
 - **operator =(** *lbSrc* **)** Copies a [CLongBinary](../../mfc/reference/clongbinary-class.md) object into this `COleVariant` object.
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) and [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) entries in the Windows SDK.
 
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator ==
 

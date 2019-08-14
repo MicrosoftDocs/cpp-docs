@@ -7,7 +7,7 @@ ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
 ---
 # TN001: Window Class Registration
 
-This note describes the MFC routines that register the special [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
+This note describes the MFC routines that register the special [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw)es needed by Microsoft Windows. Specific `WNDCLASS` attributes used by MFC and Windows are discussed.
 
 ## The Problem
 
@@ -21,7 +21,7 @@ This `WNDCLASS` must be registered through one of four means:
 
 - Explicitly by calling the MFC [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) or [AfxRegisterClass](../mfc/reference/application-information-and-management.md#afxregisterclass).
 
-- Explicitly by calling the Windows routine [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa).
+- Explicitly by calling the Windows routine [RegisterClass](/windows/win32/api/winuser/nf-winuser-registerclassw).
 
 ## WNDCLASS Fields
 
@@ -94,7 +94,7 @@ pWnd->Create(strWndClass, ...);
 
 If you want to do anything more sophisticated than what `AfxRegisterWndClass` provides, you can call the Windows API `RegisterClass` or the MFC function `AfxRegisterClass`. The `CWnd`, [CFrameWnd](../mfc/reference/cframewnd-class.md) and [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) `Create` functions take a *lpszClassName* string name for the window class as the first parameter. You can use any registered window class name, regardless of the method you used to register it.
 
-It is important to use `AfxRegisterClass` (or `AfxRegisterWndClass`) in a DLL on Win32. Win32 does not automatically unregister classes registered by a DLL, so you must explicitly unregister classes when the DLL is terminated. By using `AfxRegisterClass` instead of `RegisterClass` this is handled automatically for you. `AfxRegisterClass` maintains a list of unique classes registered by your DLL and will automatically unregister them when the DLL terminates. When you use `RegisterClass` in a DLL, you must ensure that all classes are unregistered when the DLL is terminated (in your [DllMain](/windows/desktop/Dlls/dllmain) function). Failure to do so might cause `RegisterClass` to fail unexpectedly when another client application tries to use your DLL.
+It is important to use `AfxRegisterClass` (or `AfxRegisterWndClass`) in a DLL on Win32. Win32 does not automatically unregister classes registered by a DLL, so you must explicitly unregister classes when the DLL is terminated. By using `AfxRegisterClass` instead of `RegisterClass` this is handled automatically for you. `AfxRegisterClass` maintains a list of unique classes registered by your DLL and will automatically unregister them when the DLL terminates. When you use `RegisterClass` in a DLL, you must ensure that all classes are unregistered when the DLL is terminated (in your [DllMain](/windows/win32/Dlls/dllmain) function). Failure to do so might cause `RegisterClass` to fail unexpectedly when another client application tries to use your DLL.
 
 ## See also
 

@@ -74,7 +74,7 @@ The `SID` structure is a variable-length structure used to uniquely identify use
 
 Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), and [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Requirements
 
@@ -94,7 +94,7 @@ Returns the LPCTSTR pointing to the name of the account.
 
 ### Remarks
 
-This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
+This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
 If no account name for the `SID` can be found, `AccountName` returns an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as an `SID` that identifies a sign-in session.
 
@@ -185,7 +185,7 @@ Returns the `LPCTSTR` pointing to the domain.
 
 ### Remarks
 
-This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).
+This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
 If no account name for the `SID` can be found, `Domain` returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as an `SID` that identifies a sign-in session.
 
@@ -209,7 +209,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-See [EqualPrefixSid](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) in the Windows SDK for more details.
+See [EqualPrefixSid](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) in the Windows SDK for more details.
 
 ##  <a name="getlength"></a>  CSid::GetLength
 
@@ -337,7 +337,7 @@ The account name.
 The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.
 
 *pSid*<br/>
-A pointer to a [SID](/windows/desktop/api/winnt/ns-winnt-sid) structure.
+A pointer to a [SID](/windows/win32/api/winnt/ns-winnt-sid) structure.
 
 ### Return Value
 
@@ -345,7 +345,7 @@ Returns TRUE on success, FALSE on failure. To get extended error information, ca
 
 ### Remarks
 
-`LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) for more details.
+`LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) for more details.
 
 ##  <a name="operator_eq"></a>  CSid::operator =
 
@@ -519,7 +519,7 @@ LPCTSTR Sid() const throw(...);
 
 ### Return Value
 
-Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida).
+Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](/windows/win32/api/sddl/nf-sddl-convertsidtostringsidw).
 
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse
 

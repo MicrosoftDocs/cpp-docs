@@ -1343,7 +1343,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Deprecation of attributed ATL code support** (Level 1 (`/W1`) on-by-default)
 
-   Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
+   Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](#whats-new-for-c-in-visual-studio-2008), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
 
    ```Output
     warning C4467: Usage of ATL attributes is deprecated

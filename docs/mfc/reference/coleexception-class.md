@@ -61,7 +61,7 @@ SCODE m_sc;
 
 This variable's value is set by [AfxThrowOleException](exception-processing.md#afxthrowoleexception).
 
-For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
+For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 
 ### Example
 
@@ -89,7 +89,7 @@ An OLE status code.
 > [!NOTE]
 >  This function is **static**.
 
-For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
+For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 
 ### Example
 

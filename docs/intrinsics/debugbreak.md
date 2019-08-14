@@ -25,7 +25,7 @@ void __debugbreak();
 
 ## Remarks
 
-The `__debugbreak` compiler intrinsic, similar to [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), is a portable Win32 way to cause a breakpoint.
+The `__debugbreak` compiler intrinsic, similar to [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak), is a portable Win32 way to cause a breakpoint.
 
 > [!NOTE]
 >  When compiling with **/clr**, a function containing `__debugbreak` will be compiled to MSIL. `asm int 3` causes a function to be compiled to native. For more information, see [__asm](../assembler/inline/asm.md).

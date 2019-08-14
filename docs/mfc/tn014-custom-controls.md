@@ -79,7 +79,7 @@ By using self-draw controls you can build reusable control classes that use owne
     // insert code to delete an item from this combo box
     ```
 
-For details on the owner-draw structures ([DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct), [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct), [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct), and [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct)) see the MFC documentation for `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`, `CWnd::OnCompareItem`, and `CWnd::OnDeleteItem` respectively.
+For details on the owner-draw structures ([DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct), [MEASUREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-measureitemstruct), [COMPAREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-compareitemstruct), and [DELETEITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-deleteitemstruct)) see the MFC documentation for `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`, `CWnd::OnCompareItem`, and `CWnd::OnDeleteItem` respectively.
 
 ## Using self-draw controls and menus
 

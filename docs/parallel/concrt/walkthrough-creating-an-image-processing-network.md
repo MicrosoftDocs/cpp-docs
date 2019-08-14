@@ -42,7 +42,7 @@ The following functions, `GetRGB` and `MakeColor`, extract and combine the indiv
 
 [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_1.cpp)]
 
-The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a GDI+ [Bitmap](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.
+The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a GDI+ [Bitmap](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.
 
 [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_2.cpp)]
 

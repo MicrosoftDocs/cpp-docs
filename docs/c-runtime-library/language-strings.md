@@ -7,7 +7,7 @@ ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
 ---
 # Language Strings
 
-The [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [Appendix A: Product Behavior](https://msdn.microsoft.com/library/cc233982.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference. The language string can be any of the values in the **Language** and **Language tag** columns of the list of supported languages. For an example of code that enumerates available locale names and related values, see [NLS: Name-based APIs Sample](/windows/desktop/intl/nls--name-based-apis-sample).
+The [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) and [_create_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md) functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [Appendix A: Product Behavior](https://msdn.microsoft.com/library/cc233982.aspx) in [MS-LCID]: Windows Language Code Identifier (LCID) Reference. The language string can be any of the values in the **Language** and **Language tag** columns of the list of supported languages. For an example of code that enumerates available locale names and related values, see [NLS: Name-based APIs Sample](/windows/win32/intl/nls--name-based-apis-sample).
 
 ## Additional supported language strings
 

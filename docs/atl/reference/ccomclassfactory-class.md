@@ -7,7 +7,7 @@ ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
 ---
 # CComClassFactory Class
 
-This class implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
+This class implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ class CComClassFactory
 
 ## Remarks
 
-`CComClassFactory` implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.
+`CComClassFactory` implements the [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.
 
 ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares `CComClassFactory` as the default class factory. To override this default, specify one of the `DECLARE_CLASSFACTORY`*XXX* macros in your class definition. For example, the [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) macro uses the specified class for the class factory:
 

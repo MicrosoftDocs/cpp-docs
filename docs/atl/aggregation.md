@@ -15,4 +15,4 @@ Primarily, all `IUnknown` method calls on the contained object must delegate to 
 ## See also
 
 [Introduction to COM](../atl/introduction-to-com.md)<br/>
-[Reusing Objects](/windows/desktop/com/reusing-objects)
+[Reusing Objects](/windows/win32/com/reusing-objects)

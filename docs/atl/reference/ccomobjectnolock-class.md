@@ -40,7 +40,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 
 ## Remarks
 
-`CComObjectNoLock` is similar to [CComObject](../../atl/reference/ccomobject-class.md) in that it implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object; however, `CComObjectNoLock` does not increment the module lock count in the constructor.
+`CComObjectNoLock` is similar to [CComObject](../../atl/reference/ccomobject-class.md) in that it implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object; however, `CComObjectNoLock` does not increment the module lock count in the constructor.
 
 ATL uses `CComObjectNoLock` internally for class factories. In general, you will not use this class directly.
 

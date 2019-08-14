@@ -108,7 +108,7 @@ class CMFCBaseTabCtrl : public CWnd
 |[CMFCBaseTabCtrl::OnDragOver](#ondragover)||
 |[CMFCBaseTabCtrl::OnDrop](#ondrop)||
 |[CMFCBaseTabCtrl::OnRenameTab](#onrenametab)||
-|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 |[CMFCBaseTabCtrl::RecalcLayout](#recalclayout)|Recalculates the internal layout of a tabbed window.|
 |[CMFCBaseTabCtrl::RemoveAllTabs](#removealltabs)|Removes all tabs from the tabbed window.|
 |[CMFCBaseTabCtrl::RemoveTab](#removetab)|Removes a tab from a tabbed window.|
@@ -568,7 +568,7 @@ virtual COLORREF GetActiveTabColor() const;
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) value that specifies the background color of the active tab.
+A [COLORREF](/windows/win32/gdi/colorref) value that specifies the background color of the active tab.
 
 ### Remarks
 
@@ -584,7 +584,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) value that specifies the text color of the active tab.
+A [COLORREF](/windows/win32/gdi/colorref) value that specifies the text color of the active tab.
 
 ### Remarks
 
@@ -612,7 +612,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 
 ### Return Value
 
-A reference to an array of [COLORREF](/windows/desktop/gdi/colorref) values that the [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object uses for automatic tab coloring.
+A reference to an array of [COLORREF](/windows/win32/gdi/colorref) values that the [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object uses for automatic tab coloring.
 
 ### Remarks
 
@@ -769,7 +769,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) value that indicates the background color of the specified tab; -1 if *iTab* is out of range.
+A [COLORREF](/windows/win32/gdi/colorref) value that indicates the background color of the specified tab; -1 if *iTab* is out of range.
 
 ##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize
 
@@ -1020,7 +1020,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the specified tab; -1 if *iTab* is out of range.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the text color of the specified tab; -1 if *iTab* is out of range.
 
 ##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd
 
@@ -1756,7 +1756,7 @@ virtual void SetActiveTabColor(COLORREF clr);
 
 ### Remarks
 
-The framework obtains the default background color for active tabs from the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)method.
+The framework obtains the default background color for active tabs from the [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor)method.
 
 ##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor
 
@@ -1769,11 +1769,11 @@ virtual void SetActiveTabTextColor(COLORREF clr);
 ### Parameters
 
 *clr*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) parameter that specifies the new text color.
+[in] A [COLORREF](/windows/win32/gdi/colorref) parameter that specifies the new text color.
 
 ### Remarks
 
-By default, the framework obtains the text color from [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor). Override this default color by using the `SetActiveTabTextColor` method.
+By default, the framework obtains the text color from [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor). Override this default color by using the `SetActiveTabTextColor` method.
 
 ##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors
 
@@ -1855,7 +1855,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 [in] The width of each image in pixels.
 
 *clrTransp*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the transparent color of the image.
+[in] A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the transparent color of the image.
 
 *hImageList*<br/>
 [in] A handle to a preloaded image list.
@@ -2065,7 +2065,7 @@ virtual BOOL SetTabTextColor(
 [in] The zero-based index of the tab.
 
 *color*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the new text color.
+[in] A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the new text color.
 
 ### Return Value
 

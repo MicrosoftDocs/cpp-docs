@@ -9,7 +9,7 @@ ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
 This article explains how to allocate and deallocate the Windows graphics device interface (GDI) objects needed for printing.
 
 > [!NOTE]
->  For more information, see the [GDI+ SDK documentation](/windows/desktop/gdiplus/-gdiplus-gdi-start).
+>  For more information, see the [GDI+ SDK documentation](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
 Suppose you need to use certain fonts, pens, or other GDI objects for printing, but not for screen display. Because of the memory they require, it's inefficient to allocate these objects when the application starts up. When the application isn't printing a document, that memory might be needed for other purposes. It's better to allocate them when printing begins, and then delete them when printing ends.
 

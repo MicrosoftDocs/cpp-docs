@@ -105,7 +105,7 @@ The flags describing how to handle this session. These flags can be combined wit
 
 - INTERNET_FLAG_DONT_CACHE   Do not cache the data, either locally or in any gateways.
 
-- INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structures for FTP).
+- INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structures for FTP).
 
 - INTERNET_FLAG_SECURE   Secures transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.
 
@@ -113,7 +113,7 @@ The flags describing how to handle this session. These flags can be combined wit
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -133,13 +133,13 @@ virtual BOOL FindNextFile();
 
 ### Return Value
 
-Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
+Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
 
 ### Remarks
 
 You must call this function at least once before calling any attribute function (see [CFileFind::FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).
 
-`FindNextFile` wraps the Win32 function [FindNextFile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea).
+`FindNextFile` wraps the Win32 function [FindNextFile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew).
 
 ### Example
 

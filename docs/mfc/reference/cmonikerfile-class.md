@@ -7,7 +7,7 @@ ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
 ---
 # CMonikerFile Class
 
-Represents a stream of data ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).
+Represents a stream of data ( [IStream](/windows/win32/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker).
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Derived from `COleStreamFile`, `CMonikerFile` takes a moniker or a string repres
 
 `CMonikerFile` cannot be used to bind to anything other than a stream. If you want to bind to storage or an object, you must use the `IMoniker` interface directly.
 
-For more information on streams and monikers, see [COleStreamFile](../../mfc/reference/colestreamfile-class.md) in the *MFC Reference* and [IStream](/windows/desktop/api/objidl/nn-objidl-istream) and [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) in the Windows SDK.
+For more information on streams and monikers, see [COleStreamFile](../../mfc/reference/colestreamfile-class.md) in the *MFC Reference* and [IStream](/windows/win32/api/objidl/nn-objidl-istream) and [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -97,7 +97,7 @@ A pointer to a file exception. In the event of an error, it will be set to the c
 
 ### Return Value
 
-A pointer to the bind context [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) interface, see the Windows SDK.
+A pointer to the bind context [IBindCtx](/windows/win32/api/objidl/nn-objidl-ibindctx) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) interface, see the Windows SDK.
 
 ### Remarks
 
@@ -130,11 +130,11 @@ IMoniker* GetMoniker() const;
 
 ### Return Value
 
-A pointer to the current moniker interface ( [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)).
+A pointer to the current moniker interface ( [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)).
 
 ### Remarks
 
-Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.
+Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.
 
 ##  <a name="open"></a>  CMonikerFile::Open
 

@@ -34,9 +34,9 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ## Remarks
 
-The `SECURITY_ATTRIBUTES` structure contains a [security descriptor](/windows/desktop/api/winnt/ns-winnt-security_descriptor) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.
+The `SECURITY_ATTRIBUTES` structure contains a [security descriptor](/windows/win32/api/winnt/ns-winnt-security_descriptor) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -89,6 +89,6 @@ This method is used by the constructor to initialize the `CSecurityAttributes` o
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
-[security descriptor](/windows/desktop/api/winnt/ns-winnt-security_descriptor)<br/>
+[security descriptor](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

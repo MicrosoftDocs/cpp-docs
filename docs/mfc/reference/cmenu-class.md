@@ -465,7 +465,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -579,7 +579,7 @@ If the function succeeds, the return value is the identifier or position of the 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 function [GetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-getmenudefaultitem), as described in the Windows SDK.
+This member function implements the behavior of the Win32 function [GetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-getmenudefaultitem), as described in the Windows SDK.
 
 ### Example
 
@@ -612,7 +612,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
 ### Parameters
 
 *lpcmi*<br/>
-A pointer to a [MENUINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuinfo) structure containing information for the menu.
+A pointer to a [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) structure containing information for the menu.
 
 ### Return Value
 
@@ -676,18 +676,18 @@ BOOL GetMenuItemInfo(
 Identifier or position of the menu item to get information about. The meaning of this parameter depends on the value of `ByPos`.
 
 *lpMenuItemInfo*<br/>
-A pointer to a [MENUITEMINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuiteminfoa), as described in the Windows SDK, that contains information about the menu.
+A pointer to a [MENUITEMINFO](/windows/win32/api/winuser/ns-winuser-menuiteminfow), as described in the Windows SDK, that contains information about the menu.
 
 *fByPos*<br/>
 Value specifying the meaning of `nIDItem`. By default, `ByPos` is FALSE, which indicates that uItem is a menu item identifier. If `ByPos` is not set to FALSE, it indicates a menu item position.
 
 ### Return Value
 
-If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
+If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
 
 ### Remarks
 
-This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-getmenuiteminfoa), as described in the Windows SDK. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.
+This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-getmenuiteminfow), as described in the Windows SDK. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.
 
 ### Example
 
@@ -862,7 +862,7 @@ Specifies the content of the new menu item. *nFlags* can be used to interpret *l
 
 |nFlags|Interpretation of lpszNewItem|
 |------------|-----------------------------------|
-|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the `itemData` member of the structure supplied by the [WM_MEASUREITEM](/windows/desktop/Controls/wm-measureitem) and [WM_DRAWITEM](/windows/desktop/Controls/wm-drawitem) messages. These messages are sent when the menu item is initially displayed or is changed.|
+|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the `itemData` member of the structure supplied by the [WM_MEASUREITEM](/windows/win32/Controls/wm-measureitem) and [WM_DRAWITEM](/windows/win32/Controls/wm-drawitem) messages. These messages are sent when the menu item is initially displayed or is changed.|
 |MF_STRING|Contains a long pointer to a null-terminated string. This is the default interpretation.|
 |MF_SEPARATOR|The *lpszNewItem* parameter is ignored (not needed).|
 
@@ -901,7 +901,7 @@ BOOL InsertMenuItem(
 ### Parameters
 
 *uItem*<br/>
-See description of *uItem* in [InsertMenuItem](/windows/desktop/api/winuser/nf-winuser-insertmenuitema) in the Windows SDK.
+See description of *uItem* in [InsertMenuItem](/windows/win32/api/winuser/nf-winuser-insertmenuitemw) in the Windows SDK.
 
 *lpMenuItemInfo*<br/>
 See description of *lpmii* in `InsertMenuItem` in the Windows SDK.
@@ -911,7 +911,7 @@ See description of *fByPosition* in `InsertMenuItem` in the Windows SDK.
 
 ### Remarks
 
-This function wraps [InsertMenuItem](/windows/desktop/api/winuser/nf-winuser-insertmenuitema), described in the Windows SDK.
+This function wraps [InsertMenuItem](/windows/win32/api/winuser/nf-winuser-insertmenuitemw), described in the Windows SDK.
 
 ##  <a name="loadmenu"></a>  CMenu::LoadMenu
 
@@ -953,7 +953,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
 ### Parameters
 
 *lpMenuTemplate*<br/>
-Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](/windows/desktop/api/winuser/ns-winuser-menuitemtemplateheader) structure and a collection of one or more [MENUITEMTEMPLATE](/windows/desktop/api/winuser/ns-winuser-menuitemtemplate) structures). For more information on these two structures, see the Windows SDK.
+Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](/windows/win32/api/winuser/ns-winuser-menuitemtemplateheader) structure and a collection of one or more [MENUITEMTEMPLATE](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) structures). For more information on these two structures, see the Windows SDK.
 
 ### Return Value
 
@@ -961,7 +961,7 @@ Nonzero if the menu resource was loaded successfully; otherwise 0.
 
 ### Remarks
 
-A menu template is a header followed by a collection of one or more [MENUITEMTEMPLATE](/windows/desktop/api/winuser/ns-winuser-menuitemtemplate) structures, each of which may contain one or more menu items and pop-up menus.
+A menu template is a header followed by a collection of one or more [MENUITEMTEMPLATE](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) structures, each of which may contain one or more menu items and pop-up menus.
 
 The version number should be 0.
 
@@ -1181,11 +1181,11 @@ Value specifying the meaning of *uItem*. If this parameter is FALSE, *uItem* is 
 
 ### Return Value
 
-If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
+If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), as described in the Windows SDK.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 function [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem), as described in the Windows SDK.
+This member function implements the behavior of the Win32 function [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem), as described in the Windows SDK.
 
 ### Example
 
@@ -1227,7 +1227,7 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
 ### Parameters
 
 *lpcmi*<br/>
-A pointer to a [MENUINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuinfo) structure containing information for the menu.
+A pointer to a [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) structure containing information for the menu.
 
 ### Return Value
 
@@ -1302,7 +1302,7 @@ BOOL SetMenuItemInfo(
 ### Parameters
 
 *uItem*<br/>
-See description of *uItem* in [SetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-setmenuiteminfoa) in the Windows SDK.
+See description of *uItem* in [SetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow) in the Windows SDK.
 
 *lpMenuItemInfo*<br/>
 See description of *lpmii* in `SetMenuItemInfo` in the Windows SDK.
@@ -1312,7 +1312,7 @@ See description of *fByPosition* in `SetMenuItemInfo` in the Windows SDK.
 
 ### Remarks
 
-This function wraps [SetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-setmenuiteminfoa), described in the Windows SDK.
+This function wraps [SetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow), described in the Windows SDK.
 
 ##  <a name="trackpopupmenu"></a>  CMenu::TrackPopupMenu
 
@@ -1330,7 +1330,7 @@ BOOL TrackPopupMenu(
 ### Parameters
 
 *nFlags*<br/>
-Specifies screen-position and mouse-position flags. See [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) for a list of available flags.
+Specifies screen-position and mouse-position flags. See [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) for a list of available flags.
 
 *x*<br/>
 Specifies the horizontal position in screen coordinates of the pop-up menu. Depending on the value of the *nFlags* parameter, the menu can be left-aligned, right-aligned, or centered relative to this position.
@@ -1346,7 +1346,7 @@ Ignored.
 
 ### Return Value
 
-This method returns the result of calling [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) in the Windows SDK.
+This method returns the result of calling [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) in the Windows SDK.
 
 ### Remarks
 
@@ -1372,7 +1372,7 @@ BOOL TrackPopupMenuEx(
 ### Parameters
 
 *fuFlags*<br/>
-Specifies various functions for the extended menu. For a listing of all values and their meaning, see [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
+Specifies various functions for the extended menu. For a listing of all values and their meaning, see [TrackPopupMenuEx](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex).
 
 *x*<br/>
 Specifies the horizontal position in screen coordinates of the pop-up menu.
@@ -1384,17 +1384,17 @@ Specifies the vertical position in screen coordinates of the top of the menu on 
 A pointer to the window owning the pop-up menu and receiving the messages from the created menu. This window can be any window from the current application but cannot be NULL. If you specify TPM_NONOTIFY in the *fuFlags* parameter, the function does not send any messages to *pWnd*. The function must return for the window pointed to by *pWnd* to receive the WM_COMMAND message.
 
 *lptpm*<br/>
-Pointer to a [TPMPARAMS](/windows/desktop/api/winuser/ns-winuser-tagtpmparams) structure that specifies an area of the screen the menu should not overlap. This parameter can be NULL.
+Pointer to a [TPMPARAMS](/windows/win32/api/winuser/ns-winuser-tpmparams) structure that specifies an area of the screen the menu should not overlap. This parameter can be NULL.
 
 ### Return Value
 
 If you specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is the menu-item identifier of the item that the user selected. If the user cancels the menu without making a selection, or if an error occurs, then the return value is 0.
 
-If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
-A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).
+A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex).
 
 ## See also
 

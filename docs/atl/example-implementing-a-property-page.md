@@ -64,7 +64,7 @@ Now that your property page has been generated, you'll need to add a few control
 These controls will be used to display the file name of the document and its read-only status.
 
 > [!NOTE]
->  The dialog resource does not include a frame or command buttons, nor does it have the tabbed look that you might have expected. These features are provided by a property page frame such as the one created by calling [OleCreatePropertyFrame](/windows/desktop/api/olectl/nf-olectl-olecreatepropertyframe).
+>  The dialog resource does not include a frame or command buttons, nor does it have the tabbed look that you might have expected. These features are provided by a property page frame such as the one created by calling [OleCreatePropertyFrame](/windows/win32/api/olectl/nf-olectl-olecreatepropertyframe).
 
 ##  <a name="vcconadding_message_handlers"></a> Adding Message Handlers
 

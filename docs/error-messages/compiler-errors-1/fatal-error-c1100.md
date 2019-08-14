@@ -9,4 +9,4 @@ ms.assetid: d4d877ea-acd6-4ec7-961e-55e460d98820
 
 unable to initialize OLE : system error message
 
-The compiler cannot initialize the Component Object Model (COM) library. See [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize).
+The compiler cannot initialize the Component Object Model (COM) library. See [CoInitialize](/windows/win32/api/objbase/nf-objbase-coinitialize).

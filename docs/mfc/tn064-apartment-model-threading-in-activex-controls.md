@@ -18,7 +18,7 @@ The apartment model is an approach to supporting embedded objects, such as Activ
 
 However, different instances of the same type of control may be assigned to different apartments. So, if multiple instances of a control share any data in common (for example, static or global data), then access to this shared data will need to be protected by a synchronization object, such as a critical section.
 
-For complete details on the apartment threading model, please see [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads) in the *OLE Programmer's Reference*.
+For complete details on the apartment threading model, please see [Processes and Threads](/windows/win32/ProcThread/processes-and-threads) in the *OLE Programmer's Reference*.
 
 ## Why Support Apartment-Model Threading
 
