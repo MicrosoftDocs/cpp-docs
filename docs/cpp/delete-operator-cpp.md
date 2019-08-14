@@ -11,7 +11,7 @@ Deallocates a block of memory.
 
 ## Syntax
 
-> [`::`] `delete` *cast-expression*
+> [`::`] `delete` *cast-expression*\
 > [`::`] `delete []` *cast-expression*
 
 ## Remarks
@@ -26,7 +26,7 @@ delete MyDialog;
 
 Using **delete** on a pointer to an object not allocated with **new** gives unpredictable results. You can, however, use **delete** on a pointer with the value 0. This provision means that, when **new** returns 0 on failure, deleting the result of a failed **new** operation is harmless. For more information, see [The new and delete Operators](../cpp/new-and-delete-operators.md).
 
-The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets before `pointer`:
+The **new** and **delete** operators can also be used for built-in types, including arrays. If `pointer` refers to an array, place empty brackets (`[]`) before `pointer`:
 
 ```cpp
 int* set = new int[100];
@@ -80,10 +80,10 @@ For examples of using **delete**, see [new operator](../cpp/new-operator-cpp.md)
 
 The delete operator invokes the function **operator delete**.
 
-For objects not of class type ([class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md), or [union](../cpp/unions.md)), the global delete operator is invoked. For objects of class type, the name of the deallocation function is resolved in global scope if the delete expression begins with the unary scope resolution operator (::). Otherwise, the delete operator invokes the destructor for an object prior to deallocating memory (if the pointer is not null). The delete operator can be defined on a per-class basis; if there is no such definition for a given class, the global operator delete is invoked. If the delete expression is used to deallocate a class object whose static type has a virtual destructor, the deallocation function is resolved through the virtual destructor of the dynamic type of the object.
+For objects not of class type ([class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md), or [union](../cpp/unions.md)), the global delete operator is invoked. For objects of class type, the name of the deallocation function is resolved in global scope if the delete expression begins with the unary scope resolution operator (`::`). Otherwise, the delete operator invokes the destructor for an object prior to deallocating memory (if the pointer is not null). The delete operator can be defined on a per-class basis; if there is no such definition for a given class, the global operator delete is invoked. If the delete expression is used to deallocate a class object whose static type has a virtual destructor, the deallocation function is resolved through the virtual destructor of the dynamic type of the object.
 
 ## See also
 
-[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)\
+[Keywords](../cpp/keywords-cpp.md)\
 [new and delete Operators](../cpp/new-and-delete-operators.md)
