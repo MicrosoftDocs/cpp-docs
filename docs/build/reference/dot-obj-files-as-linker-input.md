@@ -9,7 +9,7 @@ The linker tool (LINK.EXE) accepts .obj files that are in Common Object File For
 
 ## Remarks
 
-Microsoft provides a complete description of the common object file format. For more information, see [PE Format](/windows/desktop/Debug/pe-format).
+Microsoft provides a complete description of the common object file format. For more information, see [PE Format](/windows/win32/Debug/pe-format).
 
 ## Unicode support
 
@@ -24,4 +24,4 @@ For more information about the compiler and linker, see [Unicode Support in the 
 [Support for Unicode](../../text/support-for-unicode.md)<br/>
 [Unicode Support in the Compiler and Linker](unicode-support-in-the-compiler-and-linker.md)<br/>
 [Unicode standard](https://www.unicode.org/)<br/>
-[PE Format](/windows/desktop/Debug/pe-format)
+[PE Format](/windows/win32/Debug/pe-format)

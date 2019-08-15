@@ -14,7 +14,7 @@ To paste a specific Clipboard format, you can use the [PasteSpecial](../mfc/refe
 
 You can also use `CanPaste` to determine whether any available Clipboard format is recognized by a rich edit control. This function is useful in the `OnInitMenuPopup` handler. An application might enable or gray its Paste command depending on whether the control can paste any available format.
 
-Rich edit controls register two Clipboard formats: rich-text format and a format called RichEdit Text and Objects. An application can register these formats by using the [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function, specifying the **CF_RTF** and **CF_RETEXTOBJ** values.
+Rich edit controls register two Clipboard formats: rich-text format and a format called RichEdit Text and Objects. An application can register these formats by using the [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function, specifying the **CF_RTF** and **CF_RETEXTOBJ** values.
 
 ## See also
 

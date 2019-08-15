@@ -89,7 +89,7 @@ class COleControlSite : public CCmdTarget
 
 ## Remarks
 
-This support is the primary means by which an embedded ActiveX control obtains information about the location and extent of its display site, its moniker, its user interface, its ambient properties, and other resources provided by its container. `COleControlSite` fully implements the [IOleControlSite](/windows/desktop/api/ocidl/nn-ocidl-iolecontrolsite), [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite), [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite`, `INotifyDBEvents`, [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md)       interfaces. In addition, the IDispatch interface (providing support for ambient properties and event sinks) is also implemented.
+This support is the primary means by which an embedded ActiveX control obtains information about the location and extent of its display site, its moniker, its user interface, its ambient properties, and other resources provided by its container. `COleControlSite` fully implements the [IOleControlSite](/windows/win32/api/ocidl/nn-ocidl-iolecontrolsite), [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite), [IOleClientSite](/windows/win32/api/oleidl/nn-oleidl-ioleclientsite), [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite`, `INotifyDBEvents`, [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md)       interfaces. In addition, the IDispatch interface (providing support for ambient properties and event sinks) is also implemented.
 
 To create an ActiveX control site using `COleControlSite`, derive a class from `COleControlSite`. In your `CWnd`-derived class for the container (for instance, your dialog box) override the `CWnd::CreateControlSite` function.
 
@@ -311,7 +311,7 @@ A standard HRESULT value.
 
 This function directly calls through the control's `IOleObject` interface to execute the specified verb. If an exception is thrown as a result of this function call, an HRESULT error code is returned.
 
-For more information, see [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
+For more information, see [IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) in the Windows SDK.
 
 ##  <a name="enabledsc"></a>  COleControlSite::EnableDSC
 
@@ -625,7 +625,7 @@ CONTROLINFO m_ctlInfo;
 
 ### Remarks
 
-This information is stored in a [CONTROLINFO](/windows/desktop/api/ocidl/ns-ocidl-tagcontrolinfo) structure.
+This information is stored in a [CONTROLINFO](/windows/win32/api/ocidl/ns-ocidl-controlinfo) structure.
 
 ##  <a name="m_dweventsink"></a>  COleControlSite::m_dwEventSink
 
@@ -645,11 +645,11 @@ DWORD m_dwMiscStatus;
 
 ### Remarks
 
-For more information, see [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc)in the Windows SDK.
+For more information, see [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc)in the Windows SDK.
 
 ##  <a name="m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink
 
-Contains the [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) cookie.
+Contains the [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) cookie.
 
 ```
 DWORD m_dwPropNotifySink;
@@ -689,7 +689,7 @@ UINT m_nID;
 
 ##  <a name="m_pactiveobject"></a>  COleControlSite::m_pActiveObject
 
-Contains the [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) interface of the control.
+Contains the [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) interface of the control.
 
 ```
 LPOLEINPLACEACTIVEOBJECT m_pActiveObject;
@@ -705,7 +705,7 @@ COleControlContainer* m_pCtrlCont;
 
 ##  <a name="m_pinplaceobject"></a>  COleControlSite::m_pInPlaceObject
 
-Contains the `IOleInPlaceObject` [IOleInPlaceObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) interface of the control.
+Contains the `IOleInPlaceObject` [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) interface of the control.
 
 ```
 LPOLEINPLACEOBJECT m_pInPlaceObject;
@@ -721,7 +721,7 @@ LPOLEOBJECT m_pObject;
 
 ##  <a name="m_pwindowlessobject"></a>  COleControlSite::m_pWindowlessObject
 
-Contains the `IOleInPlaceObjectWindowless`[IOleInPlaceObjectWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
+Contains the `IOleInPlaceObjectWindowless`[IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) interface of the control.
 
 ```
 IOleInPlaceObjectWindowless* m_pWindowlessObject;
@@ -763,7 +763,7 @@ The styles to be removed from the current window styles.
 The styles to be added from the current window styles.
 
 *nFlags*<br/>
-Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
+Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
 
@@ -773,7 +773,7 @@ Nonzero if the styles are changed, otherwise zero.
 
 The control's stock Enabled property will be modified to match the setting for WS_DISABLED. The control's stock Border Style property will be modified to match the requested setting for WS_BORDER. All other styles are applied directly to the control's window handle, if one is present.
 
-Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) function in the Windows SDK for information about the available window styles.
+Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function in the Windows SDK for information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
@@ -807,7 +807,7 @@ The extended styles to be removed from the current window styles.
 The extended styles to be added from the current window styles.
 
 *nFlags*<br/>
-Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
+Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
 
@@ -817,7 +817,7 @@ Nonzero if the styles are changed, otherwise zero.
 
 The control's stock Appearance property will be modified to match the setting for WS_EX_CLIENTEDGE. All other extended window styles are applied directly to the control's window handle, if one is present.
 
-Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function in the Windows SDK for information about the available window styles.
+Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function in the Windows SDK for information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
@@ -954,7 +954,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### Parameters
 
 *lpmsg*<br/>
-A pointer to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
+A pointer to a [MSG structure](/windows/win32/api/winuser/ns-winuser-msg). This structure contains the Windows message triggering the `SetFocus` request for the control contained in the current control site.
 
 ### Return Value
 
@@ -1047,7 +1047,7 @@ The new width of the window
 The new height of the window.
 
 *nFlags*<br/>
-Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.
+Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.
 
 ### Return Value
 

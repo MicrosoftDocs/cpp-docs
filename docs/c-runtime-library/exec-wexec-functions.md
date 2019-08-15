@@ -29,7 +29,7 @@ The letter at the end of the function name determines the variation.
 
 ## Remarks
 
-Each `_exec` function loads and executes a new process. All `_exec` functions use the same operating-system function ([CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)). The `_exec` functions automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. The `_wexec` functions are wide-character versions of the `_exec` functions. The `_wexec` functions behave identically to their `_exec` family counterparts except that they do not handle multibyte-character strings.
+Each `_exec` function loads and executes a new process. All `_exec` functions use the same operating-system function ([CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw)). The `_exec` functions automatically handle multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use. The `_wexec` functions are wide-character versions of the `_exec` functions. The `_wexec` functions behave identically to their `_exec` family counterparts except that they do not handle multibyte-character strings.
 
 ### Generic-Text Routine Mappings
 
@@ -52,7 +52,7 @@ Parameters are passed to the new process by giving one or more pointers to chara
 >  Spaces embedded in strings may cause unexpected behavior; for example, passing `_exec` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.
 
 > [!IMPORTANT]
->  Do not pass user input to `_exec` without explicitly checking its content. `_exec` will result in a call to [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
+>  Do not pass user input to `_exec` without explicitly checking its content. `_exec` will result in a call to [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw) so keep in mind that unqualified path names could lead to potential security vulnerabilities.
 
 The `_exec` functions validate their parameters. If expected parameters are null pointers, empty strings, or omitted, the `_exec` functions invoke the invalid parameter handler as described in [Parameter Validation](../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return -1. No new process is executed.
 

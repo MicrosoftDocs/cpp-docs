@@ -11,7 +11,7 @@ ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
 Verifies that the type of the specified argument derives from the `IUnknown` interface.
 
 > [!IMPORTANT]
-> This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](/windows/desktop/api/combaseapi/nf-combaseapi-iid_ppv_args) instead.
+> This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args) instead.
 
 ## Syntax
 

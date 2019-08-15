@@ -17,7 +17,7 @@ Specifies a property setting function that uses a reference instead of a value.
 
 ## Remarks
 
-The **propputref** C++ attribute has the same functionality as the [propputref](/windows/desktop/Midl/propputref) MIDL attribute.
+The **propputref** C++ attribute has the same functionality as the [propputref](/windows/win32/Midl/propputref) MIDL attribute.
 
 ## Example
 

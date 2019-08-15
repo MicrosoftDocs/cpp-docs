@@ -49,7 +49,7 @@ To add a font combo box button to a toolbar, follow these steps:
 
 To synchronize the document's font with the font selected in the combo box, use the [CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc) method to retrieve the attributes of the selected font, and use those attributes to create a [CFont Class](../../mfc/reference/cfont-class.md) object.
 
-The font combo box button calls the Win32 function [EnumFontFamiliesEx](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesexa) to determine the screen and printer fonts available to the system.
+The font combo box button calls the Win32 function [EnumFontFamiliesEx](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesexw) to determine the screen and printer fonts available to the system.
 
 ## Inheritance Hierarchy
 
@@ -108,7 +108,7 @@ RASTER_FONTTYPE
 TRUETYPE_FONTTYPE
 
 *nCharSet*<br/>
-[in] If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) for a listing of possible character sets.
+[in] If set to DEFAULT_CHARSET, the combo box contains all uniquely-named fonts in all character sets. (If there are two fonts with the same name, the combo box contains one of them.) If set to a valid character set value, the combo box contains only fonts in the specified character set. See [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) for a listing of possible character sets.
 
 *dwStyle*<br/>
 [in] The style of the combo box. (see [Combo-Box Styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))

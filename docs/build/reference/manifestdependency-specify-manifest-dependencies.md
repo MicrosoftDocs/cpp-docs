@@ -17,7 +17,7 @@ ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
 
 See [/MANIFEST (Create Side-by-Side Assembly Manifest)](manifest-create-side-by-side-assembly-manifest.md) for information on how to create a manifest file.
 
-For more information on the \<dependency> section of the manifest file, see [Publisher Configuration Files](/windows/desktop/SbsCs/publisher-configuration-files).
+For more information on the \<dependency> section of the manifest file, see [Publisher Configuration Files](/windows/win32/SbsCs/publisher-configuration-files).
 
 /MANIFESTDEPENDENCY information can be passed to the linker in one of two ways:
 

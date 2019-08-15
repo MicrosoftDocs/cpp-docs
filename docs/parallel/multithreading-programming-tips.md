@@ -18,7 +18,7 @@ Multithreaded applications require stricter care than single-threaded applicatio
 
 ##  <a name="_core_accessing_objects_from_multiple_threads"></a> Accessing Objects from Multiple Threads
 
-MFC objects are not thread-safe by themselves. Two separate threads cannot manipulate the same object unless you use the MFC synchronization classes and/or the appropriate Win32 synchronization objects, such as critical sections. For more information about critical sections and other related objects, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK.
+MFC objects are not thread-safe by themselves. Two separate threads cannot manipulate the same object unless you use the MFC synchronization classes and/or the appropriate Win32 synchronization objects, such as critical sections. For more information about critical sections and other related objects, see [Synchronization](/windows/win32/Sync/synchronization) in the Windows SDK.
 
 The class library uses critical sections internally to protect global data structures, such as those used by the debug memory allocation.
 
@@ -34,11 +34,11 @@ There are several ways around this problem. The first is to pass individual hand
 
 Another method is to create new user-defined messages corresponding to the different tasks your worker threads will be performing and post these messages to the application's main window using `::PostMessage`. This method of communication is similar to two different applications conversing except that both threads are executing in the same address space.
 
-For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). For more information about thread local storage, see [Thread Local Storage](/windows/desktop/ProcThread/thread-local-storage) and [Using Thread Local Storage](/windows/desktop/ProcThread/using-thread-local-storage) in the Windows SDK.
+For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). For more information about thread local storage, see [Thread Local Storage](/windows/win32/ProcThread/thread-local-storage) and [Using Thread Local Storage](/windows/win32/ProcThread/using-thread-local-storage) in the Windows SDK.
 
 ##  <a name="_core_communicating_between_threads"></a> Communicating Between Threads
 
-MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK.
+MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](/windows/win32/Sync/synchronization) in the Windows SDK.
 
 ## See also
 

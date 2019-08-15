@@ -31,7 +31,7 @@ class CComHeap : public IAtlMemMgr
 
 ## Remarks
 
-`CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree), [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize), and [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc). The maximum amount of memory that can be allocated is equal to INT_MAX (2147483647) bytes.
+`CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree), [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize), and [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc). The maximum amount of memory that can be allocated is equal to INT_MAX (2147483647) bytes.
 
 ## Example
 
@@ -68,7 +68,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CComHeap::Free](#free) or [CComHeap::Reallocate](#reallocate) to free the memory allocated by this method.
 
-Implemented using [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc).
+Implemented using [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc).
 
 ##  <a name="free"></a>  CComHeap::Free
 
@@ -85,7 +85,7 @@ Pointer to memory previously allocated by this memory manager. NULL is a valid v
 
 ### Remarks
 
-Implemented using [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Implemented using [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 ##  <a name="getsize"></a>  CComHeap::GetSize
 
@@ -106,7 +106,7 @@ Returns the size of the allocated memory block in bytes.
 
 ### Remarks
 
-Implemented using [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize).
+Implemented using [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize).
 
 ##  <a name="reallocate"></a>  CComHeap::Reallocate
 
@@ -132,7 +132,7 @@ Returns a pointer to the start of the newly allocated memory block.
 
 Call [CComHeap::Free](#free) to free the memory allocated by this method.
 
-Implemented using [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc).
+Implemented using [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc).
 
 ## See also
 

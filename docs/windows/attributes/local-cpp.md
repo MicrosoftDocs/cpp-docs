@@ -17,7 +17,7 @@ When used in the interface header, allows you to use the MIDL compiler as a head
 
 ## Remarks
 
-The **local** C++ attribute has the same functionality as the [local](/windows/desktop/Midl/local) MIDL attribute.
+The **local** C++ attribute has the same functionality as the [local](/windows/win32/Midl/local) MIDL attribute.
 
 ## Example
 

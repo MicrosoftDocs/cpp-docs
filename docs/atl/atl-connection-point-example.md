@@ -6,7 +6,7 @@ ms.assetid: a49721b7-f308-43de-8868-f662a94bc81a
 ---
 # ATL Connection Point Example
 
-This example shows an object that supports [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) as an outgoing interface:
+This example shows an object that supports [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) as an outgoing interface:
 
 [!code-cpp[NVC_ATL_Windowing#84](../atl/codesnippet/cpp/atl-connection-point-example_1.h)]
 

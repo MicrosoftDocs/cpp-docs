@@ -182,7 +182,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 ### Return Value
 
-A pointer to the [IShellFolder Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder) for the selected object.
+A pointer to the [IShellFolder Interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) for the selected object.
 
 ### Remarks
 
@@ -224,7 +224,7 @@ SHCONTF GetItemTypes() const;
 
 ### Return Value
 
-A [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf) value that contains the type of items listed in the `CMFCShellListCtrl`.
+A [SHCONTF](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf) value that contains the type of items listed in the `CMFCShellListCtrl`.
 
 ### Remarks
 
@@ -410,7 +410,7 @@ void SetItemTypes(SHCONTF nTypes);
 
 ### Remarks
 
-For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).
+For more information about the list of item types, see [SHCONTF](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf).
 
 ## See also
 

@@ -154,7 +154,7 @@ Reserved to make `FindFile` polymorphic with derived classes. Must be 0.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 
@@ -212,7 +212,7 @@ virtual BOOL FindNextFile();
 
 ### Return Value
 
-Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
+Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.
 
 ### Remarks
 
@@ -256,7 +256,7 @@ You must call `FindNextFile` at least once before calling any of the following a
 
 - [MatchesMask](#matchesmask)
 
-`FindNextFile` wraps the Win32 function [FindNextFile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea).
+`FindNextFile` wraps the Win32 function [FindNextFile](/windows/win32/api/fileapi/nf-fileapi-findnextfilew).
 
 ### Example
 
@@ -274,7 +274,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was created.
+A pointer to a [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was created.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -288,7 +288,7 @@ Nonzero if successful; 0 if unsuccessful. `GetCreationTime` returns 0 only if [F
 You must call [FindNextFile](#findnextfile) at least once before calling `GetCreationTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ### Example
 
@@ -415,7 +415,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last accessed.
+A pointer to a [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last accessed.
 
 ### Return Value
 
@@ -426,7 +426,7 @@ Nonzero if successful; 0 if unsuccessful. `GetLastAccessTime` returns 0 only if 
 You must call [FindNextFile](#findnextfile) at least once before calling `GetLastAccessTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ### Example
 
@@ -444,7 +444,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### Parameters
 
 *pTimeStamp*<br/>
-A pointer to a [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last written to.
+A pointer to a [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure containing the time the file was last written to.
 
 *refTime*<br/>
 A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.
@@ -458,7 +458,7 @@ Nonzero if successful; 0 if unsuccessful. `GetLastWriteTime` returns 0 only if [
 You must call [FindNextFile](#findnextfile) at least once before calling `GetLastWriteTime`.
 
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_Find_Data](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/win32/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.
 
 ### Example
 
@@ -480,7 +480,7 @@ The length of the found file, in bytes.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `GetLength`.
 
-`GetLength` uses the Win32 structure [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) to get and return the value of the file size, in bytes.
+`GetLength` uses the Win32 structure [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) to get and return the value of the file size, in bytes.
 
 > [!NOTE]
 >  As of MFC 7.0, `GetLength` supports 64-bit integer types. Previously existing code built with this newer version of the library may result in truncation warnings.
@@ -525,7 +525,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-Applications mark an archive file, which is to be backed up or removed, with FILE_ATTRIBUTE_ARCHIVE, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure.
+Applications mark an archive file, which is to be backed up or removed, with FILE_ATTRIBUTE_ARCHIVE, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsArchived`.
 
@@ -549,7 +549,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-A compressed file is marked with FILE_ATTRIBUTE_COMPRESSED, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. For a file, this attribute indicates that all of the data in the file is compressed. For a directory, this attribute indicates that compression is the default for newly created files and subdirectories.
+A compressed file is marked with FILE_ATTRIBUTE_COMPRESSED, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. For a file, this attribute indicates that all of the data in the file is compressed. For a directory, this attribute indicates that compression is the default for newly created files and subdirectories.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsCompressed`.
 
@@ -573,7 +573,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-A file that is a directory is marked with FILE_ATTRIBUTE_DIRECTORY a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure.
+A file that is a directory is marked with FILE_ATTRIBUTE_DIRECTORY a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsDirectory`.
 
@@ -619,7 +619,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-Hidden files, which are marked with FILE_ATTRIBUTE_HIDDEN, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. A hidden file is not included in an ordinary directory listing.
+Hidden files, which are marked with FILE_ATTRIBUTE_HIDDEN, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. A hidden file is not included in an ordinary directory listing.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsHidden`.
 
@@ -643,7 +643,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-Files marked with FILE_ATTRIBUTE_NORMAL, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. A normal file has no other attributes set. All other file attributes override this attribute.
+Files marked with FILE_ATTRIBUTE_NORMAL, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. A normal file has no other attributes set. All other file attributes override this attribute.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsNormal`.
 
@@ -667,7 +667,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-A read-only file is marked with FILE_ATTRIBUTE_READONLY, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. Applications can read such a file, but they cannot write to it or delete it.
+A read-only file is marked with FILE_ATTRIBUTE_READONLY, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. Applications can read such a file, but they cannot write to it or delete it.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsReadOnly`.
 
@@ -691,7 +691,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-A system file is marked with FILE_ATTRIBUTE_SYSTEM, , a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. A system file is part of, or is used exclusively by, the operating system.
+A system file is marked with FILE_ATTRIBUTE_SYSTEM, , a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. A system file is part of, or is used exclusively by, the operating system.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsSystem`.
 
@@ -715,7 +715,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-A temporary file is marked with FILE_ATTRIBUTE_TEMPORARY, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure. A temporary file is used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.
+A temporary file is marked with FILE_ATTRIBUTE_TEMPORARY, a file attribute identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure. A temporary file is used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.
 
 You must call [FindNextFile](#findnextfile) at least once before calling `IsTemporary`.
 
@@ -746,7 +746,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ### Parameters
 
 *dwMask*<br/>
-Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) structure, for the found file. To search for multiple attributes, use the bitwise OR (&#124;) operator. Any combination of the following attributes is acceptable:
+Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure, for the found file. To search for multiple attributes, use the bitwise OR (&#124;) operator. Any combination of the following attributes is acceptable:
 
 - FILE_ATTRIBUTE_ARCHIVE   The file is an archive file. Applications use this attribute to mark files for backup or removal.
 
@@ -766,7 +766,7 @@ Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](/wind
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Remarks
 

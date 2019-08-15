@@ -42,7 +42,7 @@ An `IStorage` object must exist before the stream can be opened or created unles
 
 For more information about manipulating streams and storages, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..
 
-For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) and [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) in the Windows SDK.
+For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream) and [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -73,7 +73,7 @@ Points to the OLE stream (`IStream`) to be associated with the object. Cannot be
 
 The object must not already be associated with an OLE stream.
 
-For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.
+For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream) in the Windows SDK.
 
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile
 
@@ -92,7 +92,7 @@ Pointer to the OLE stream to be associated with the object.
 
 If *lpStream* is NULL, the object is not associated with an OLE stream, otherwise, the object is associated with the supplied OLE stream.
 
-For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.
+For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream) in the Windows SDK.
 
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream
 
@@ -115,7 +115,7 @@ Nonzero if the stream is created successfully; otherwise 0.
 
 The memory is allocated by the OLE subsystem.
 
-For more information, see [CreateStreamOnHGlobal](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal) in the Windows SDK.
+For more information, see [CreateStreamOnHGlobal](/windows/win32/api/combaseapi/nf-combaseapi-createstreamonhglobal) in the Windows SDK.
 
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream
 
@@ -151,7 +151,7 @@ Nonzero if the stream is created successfully; otherwise 0.
 
 A file exception will be thrown if the open fails and *pError* is not NULL.
 
-For more information, see [IStorage::CreateStream](/windows/desktop/api/objidl/nf-objidl-istorage-createstream) in the Windows SDK.
+For more information, see [IStorage::CreateStream](/windows/win32/api/objidl/nf-objidl-istorage-createstream) in the Windows SDK.
 
 ##  <a name="detach"></a>  COleStreamFile::Detach
 
@@ -169,7 +169,7 @@ A pointer to the stream (`IStream`) that was associated with the object.
 
 The stream must be closed in some other fashion before the program terminates.
 
-For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.
+For more information, see [IStream](/windows/win32/api/objidl/nn-objidl-istream) in the Windows SDK.
 
 ##  <a name="getstream"></a>  COleStreamFile::GetStream
 
@@ -181,7 +181,7 @@ IStream* GetStream() const;
 
 ### Return Value
 
-A pointer to the current stream interface ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)).
+A pointer to the current stream interface ( [IStream](/windows/win32/api/objidl/nn-objidl-istream)).
 
 ##  <a name="openstream"></a>  COleStreamFile::OpenStream
 
@@ -217,7 +217,7 @@ Nonzero if the stream is opened successfully; otherwise 0.
 
 A file exception will be thrown if the open fails and *pError* is not NULL.
 
-For more information, see [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) in the Windows SDK.
+For more information, see [IStorage::OpenStream](/windows/win32/api/objidl/nf-objidl-istorage-openstream) in the Windows SDK.
 
 ## See also
 

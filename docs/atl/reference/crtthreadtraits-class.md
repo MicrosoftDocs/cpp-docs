@@ -28,7 +28,7 @@ class CRTThreadTraits
 
 ## Remarks
 
-Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) function.
+Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) function.
 
 Thread traits are used by the following classes:
 
@@ -78,11 +78,11 @@ The creation flags (0 or CREATE_SUSPENDED).
 
 ### Return Value
 
-Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to get extended error information.
+Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) to get extended error information.
 
 ### Remarks
 
-See [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) for further information on the parameters to this function.
+See [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) for further information on the parameters to this function.
 
 This function calls [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) to create the thread.
 

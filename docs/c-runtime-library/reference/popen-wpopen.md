@@ -54,7 +54,7 @@ The **_popen** function creates a pipe and asynchronously executes a spawned cop
 |**"t"**|Open in text mode.|
 
 > [!NOTE]
-> If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/desktop/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
+> If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
 
 **_wpopen** is a wide-character version of **_popen**; the *path* argument to **_wpopen** is a wide-character string. **_wpopen** and **_popen** behave identically otherwise.
 

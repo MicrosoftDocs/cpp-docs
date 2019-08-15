@@ -121,25 +121,25 @@ Use this page of the Add Method Wizard to specify any interface definition langu
 
 - `id`
 
-  Sets the numerical ID that identifies the method. For more information, see [id](/windows/desktop/Midl/id) in the *MIDL Reference*.
+  Sets the numerical ID that identifies the method. For more information, see [id](/windows/win32/Midl/id) in the *MIDL Reference*.
 
   This box is unavailable for custom interfaces and isn't available for MFC dispinterfaces.
 
 - `call_as`
 
-  Specifies the name of a remote method to which this local method can be mapped. For more information, see [call_as](/windows/desktop/Midl/call-as) in the *MIDL Reference*.
+  Specifies the name of a remote method to which this local method can be mapped. For more information, see [call_as](/windows/win32/Midl/call-as) in the *MIDL Reference*.
 
   Not available for MFC dispinterfaces.
 
 - `helpcontext`
 
-  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [helpcontext](/windows/desktop/Midl/helpcontext) in the *MIDL Reference*.
+  Specifies a context ID that lets the user view information about this method in the Help file. For more information, see [helpcontext](/windows/win32/Midl/helpcontext) in the *MIDL Reference*.
 
   Not available for MFC dispinterfaces.
 
 - `helpstring`
 
-  Specifies a character string that's used to describe the element to which it applies. It's set by default to "method *Method name*." For more information, see [helpstring](/windows/desktop/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that's used to describe the element to which it applies. It's set by default to "method *Method name*." For more information, see [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
   Not available for MFC dispinterfaces.
 
@@ -149,8 +149,8 @@ Use this page of the Add Method Wizard to specify any interface definition langu
 
   |Attribute|Description|
   |---------------|-----------------|
-  |`hidden`|Indicates that the method exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/desktop/Midl/hidden) in the *MIDL Reference*.|
-  |`source`|Indicates that a member of the method is a source of events. For more information, see [source](/windows/desktop/Midl/source) in the *MIDL Reference*.|
-  |`local`|Specifies to the MIDL compiler that the method isn't remote. For more information, see [local](/windows/desktop/Midl/local) in the *MIDL Reference*.|
-  |`restricted`|Specifies that the method can't be called arbitrarily. For more information, see [restricted](/windows/desktop/Midl/restricted) in the *MIDL Reference*.|
-  |`vararg`|Specifies that the method takes a variable number of arguments. To accomplish this, the last argument must be a safe array of `VARIANT` type that contains the rest of the arguments. For more information, see [vararg](/windows/desktop/Midl/vararg) in the *MIDL Reference*.|
+  |`hidden`|Indicates that the method exists but shouldn't be displayed in a user-oriented browser. For more information, see [hidden](/windows/win32/Midl/hidden) in the *MIDL Reference*.|
+  |`source`|Indicates that a member of the method is a source of events. For more information, see [source](/windows/win32/Midl/source) in the *MIDL Reference*.|
+  |`local`|Specifies to the MIDL compiler that the method isn't remote. For more information, see [local](/windows/win32/Midl/local) in the *MIDL Reference*.|
+  |`restricted`|Specifies that the method can't be called arbitrarily. For more information, see [restricted](/windows/win32/Midl/restricted) in the *MIDL Reference*.|
+  |`vararg`|Specifies that the method takes a variable number of arguments. To accomplish this, the last argument must be a safe array of `VARIANT` type that contains the rest of the arguments. For more information, see [vararg](/windows/win32/Midl/vararg) in the *MIDL Reference*.|

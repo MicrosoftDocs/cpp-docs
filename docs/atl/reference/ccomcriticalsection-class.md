@@ -64,7 +64,7 @@ Sets the [m_sec](#m_sec) data member to NULL.
 
 ##  <a name="init"></a>  CComCriticalSection::Init
 
-Calls the Win32 function [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object contained in the [m_sec](#m_sec) data member.
+Calls the Win32 function [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object contained in the [m_sec](#m_sec) data member.
 
 ```
 HRESULT Init() throw();
@@ -76,7 +76,7 @@ Returns S_OK on success, E_OUTOFMEMORY or E_FAIL on failure.
 
 ##  <a name="lock"></a>  CComCriticalSection::Lock
 
-Calls the Win32 function [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object contained in the [m_sec](#m_sec) data member.
+Calls the Win32 function [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object contained in the [m_sec](#m_sec) data member.
 
 ```
 HRESULT Lock() throw();
@@ -100,7 +100,7 @@ CRITICAL_SECTION m_sec;
 
 ##  <a name="term"></a>  CComCriticalSection::Term
 
-Calls the Win32 function [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), which releases all resources used by the critical section object contained in the [m_sec](#m_sec) data member.
+Calls the Win32 function [DeleteCriticalSection](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection), which releases all resources used by the critical section object contained in the [m_sec](#m_sec) data member.
 
 ```
 HRESULT Term() throw();
@@ -116,7 +116,7 @@ Once `Term` has been called, the critical section can no longer be used for sync
 
 ##  <a name="unlock"></a>  CComCriticalSection::Unlock
 
-Calls the Win32 function [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object contained in the [m_sec](#m_sec) data member.
+Calls the Win32 function [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object contained in the [m_sec](#m_sec) data member.
 
 ```
 HRESULT Unlock() throw();

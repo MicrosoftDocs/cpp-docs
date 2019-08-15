@@ -16,7 +16,7 @@ Visual Studio provides a default namespace for your project when you create the 
 
 ## Windows Runtime
 
-For more information, see [Namespaces and type visibility (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh969551.aspx).
+For more information, see [Namespaces and type visibility (C++/CX)](../cppcx/namespaces-and-type-visibility-c-cx.md).
 
 ### Requirements
 

@@ -73,7 +73,7 @@ Tools to create cabinet files are now part of the [Windows 10 SDK](https://dev.w
 
 The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.
 
-For details on how to create a CAB file, see [Creating a CAB File](/windows/desktop/devnotes/cabinet-api-functions).
+For details on how to create a CAB file, see [Creating a CAB File](/windows/win32/devnotes/cabinet-api-functions).
 
 ### The INF File
 
@@ -211,7 +211,7 @@ For more information about control licensing, see [ActiveX Controls: Licensing a
 
 Code signing is designed to identify the source of code, and to guarantee that the code has not changed since it was signed. Depending on browser safety settings, users may be warned before the code is downloaded. Users may choose to trust certain certificate owners or companies, in which case code signed by those trusted will be downloaded without warning. Code is digitally signed to avoid tampering.
 
-Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](/windows/desktop/devnotes/cabinet-api-functions).
+Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](/windows/win32/devnotes/cabinet-api-functions).
 
 Depending on trust and browser safety level settings, a certificate may be displayed to identify the signing person or company. If the safety level is none, or if the signed control's certificate owner is trusted, a certificate will not be displayed. See [Internet Explorer Browser Safety Levels and Control Behavior](#_core_internet_explorer_browser_safety_levels_and_control_behavior) for details on how the browser safety setting will determine whether your control is downloaded and a certificate displayed.
 

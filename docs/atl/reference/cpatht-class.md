@@ -121,7 +121,7 @@ void AddBackslash();
 
 ### Remarks
 
-For more information, see [PathAddBackSlash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha).
+For more information, see [PathAddBackSlash](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw).
 
 ##  <a name="addextension"></a>  CPathT::AddExtension
 
@@ -142,7 +142,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona).
+For more information, see [PathAddExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw).
 
 ##  <a name="append"></a>  CPathT::Append
 
@@ -163,7 +163,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda).
+For more information, see [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw).
 
 ##  <a name="buildroot"></a>  CPathT::BuildRoot
 
@@ -180,7 +180,7 @@ The drive number (0 is A:, 1 is B:, and so on).
 
 ### Remarks
 
-For more information, see [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota).
+For more information, see [PathBuildRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw).
 
 ##  <a name="canonicalize"></a>  CPathT::Canonicalize
 
@@ -192,7 +192,7 @@ void Canonicalize();
 
 ### Remarks
 
-For more information, see [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea).
+For more information, see [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew).
 
 ##  <a name="combine"></a>  CPathT::Combine
 
@@ -212,7 +212,7 @@ The file path.
 
 ### Remarks
 
-For more information, see [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea).
+For more information, see [PathCombine](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew).
 
 ##  <a name="commonprefix"></a>  CPathT::CommonPrefix
 
@@ -233,7 +233,7 @@ Returns the common prefix.
 
 ### Remarks
 
-A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\". For more information, see [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa).
+A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\". For more information, see [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw).
 
 ##  <a name="compactpath"></a>  CPathT::CompactPath
 
@@ -257,7 +257,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha).
+For more information, see [PathCompactPath](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw).
 
 ##  <a name="compactpathex"></a>  CPathT::CompactPathEx
 
@@ -281,7 +281,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa).
+For more information, see [PathCompactPathEx](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw).
 
 ##  <a name="cpatht"></a>  CPathT::CPathT
 
@@ -315,7 +315,7 @@ Returns TRUE if the file exists, FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa).
+For more information, see [PathFileExists](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw).
 
 ##  <a name="findextension"></a>  CPathT::FindExtension
 
@@ -331,7 +331,7 @@ Returns the position of the "." preceding the extension. If no extension is foun
 
 ### Remarks
 
-For more information, see [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona).
+For more information, see [PathFindExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw).
 
 ##  <a name="findfilename"></a>  CPathT::FindFileName
 
@@ -347,7 +347,7 @@ Returns the position of the file name. If no file name is found, returns -1.
 
 ### Remarks
 
-For more information, see [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea).
+For more information, see [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew).
 
 ##  <a name="getdrivenumber"></a>  CPathT::GetDriveNumber
 
@@ -363,7 +363,7 @@ Returns the drive number as an integer from 0 through 25 (corresponding to 'A' t
 
 ### Remarks
 
-For more information, see [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera).
+For more information, see [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw).
 
 ##  <a name="getextension"></a>  CPathT::GetExtension
 
@@ -391,7 +391,7 @@ Returns a non-zero value (16) if the path is a directory, FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathIsDirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya).
+For more information, see [PathIsDirectory](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw).
 
 ##  <a name="isfilespec"></a>  CPathT::IsFileSpec
 
@@ -407,7 +407,7 @@ Returns TRUE if there are no path-delimiting characters within the path, or FALS
 
 ### Remarks
 
-For more information, see [PathIsFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca).
+For more information, see [PathIsFileSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw).
 
 ##  <a name="isprefix"></a>  CPathT::IsPrefix
 
@@ -428,7 +428,7 @@ Returns TRUE if the path contains the prefix, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathIsPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa).
+For more information, see [PathIsPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw).
 
 ##  <a name="isrelative"></a>  CPathT::IsRelative
 
@@ -444,7 +444,7 @@ Returns TRUE if the path is relative, or FALSE if it is absolute.
 
 ### Remarks
 
-For more information, see [PathIsRelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea).
+For more information, see [PathIsRelative](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew).
 
 ##  <a name="isroot"></a>  CPathT::IsRoot
 
@@ -460,7 +460,7 @@ Returns TRUE if the path is a root, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathIsRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota).
+For more information, see [PathIsRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw).
 
 ##  <a name="issameroot"></a>  CPathT::IsSameRoot
 
@@ -481,7 +481,7 @@ Returns TRUE if both strings have the same root component, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathIsSameRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota).
+For more information, see [PathIsSameRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw).
 
 ##  <a name="isunc"></a>  CPathT::IsUNC
 
@@ -497,7 +497,7 @@ Returns TRUE if the path is a valid UNC path, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathIsUNC](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca).
+For more information, see [PathIsUNC](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw).
 
 ##  <a name="isuncserver"></a>  CPathT::IsUNCServer
 
@@ -513,7 +513,7 @@ Returns TRUE if the string is a valid UNC path for a server only (no share name)
 
 ### Remarks
 
-For more information, see [PathIsUNCServer](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera).
+For more information, see [PathIsUNCServer](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw).
 
 ##  <a name="isuncservershare"></a>  CPathT::IsUNCServerShare
 
@@ -529,7 +529,7 @@ Returns TRUE if the path is in the form \\\ *server*\ *share*, or FALSE otherwis
 
 ### Remarks
 
-For more information, see [PathIsUNCServerShare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea).
+For more information, see [PathIsUNCServerShare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew).
 
 ##  <a name="m_strpath"></a>  CPathT::m_strPath
 
@@ -557,7 +557,7 @@ Returns TRUE if the path has been converted, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya).
+For more information, see [PathMakePretty](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw).
 
 ##  <a name="matchspec"></a>  CPathT::MatchSpec
 
@@ -578,7 +578,7 @@ Returns TRUE if the string matches, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca).
+For more information, see [PathMatchSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw).
 
 ##  <a name="operator_add_eq"></a>  CPathT::operator +=
 
@@ -667,7 +667,7 @@ void QuoteSpaces();
 
 ### Remarks
 
-For more information, see [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa).
+For more information, see [PathQuoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw).
 
 ##  <a name="relativepathto"></a>  CPathT::RelativePathTo
 
@@ -701,7 +701,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa).
+For more information, see [PathRelativePathTo](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow).
 
 ##  <a name="removeargs"></a>  CPathT::RemoveArgs
 
@@ -713,7 +713,7 @@ void RemoveArgs();
 
 ### Remarks
 
-For more information, see [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa).
+For more information, see [PathRemoveArgs](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw).
 
 ##  <a name="removebackslash"></a>  CPathT::RemoveBackslash
 
@@ -725,7 +725,7 @@ void RemoveBackslash();
 
 ### Remarks
 
-For more information, see [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha).
+For more information, see [PathRemoveBackslash](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw).
 
 ##  <a name="removeblanks"></a>  CPathT::RemoveBlanks
 
@@ -737,7 +737,7 @@ void RemoveBlanks();
 
 ### Remarks
 
-For more information, see [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa).
+For more information, see [PathRemoveBlanks](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw).
 
 ##  <a name="removeextension"></a>  CPathT::RemoveExtension
 
@@ -749,7 +749,7 @@ void RemoveExtension();
 
 ### Remarks
 
-For more information, see [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona).
+For more information, see [PathRemoveExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw).
 
 ##  <a name="removefilespec"></a>  CPathT::RemoveFileSpec
 
@@ -765,7 +765,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca).
+For more information, see [PathRemoveFileSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw).
 
 ##  <a name="renameextension"></a>  CPathT::RenameExtension
 
@@ -786,7 +786,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-For more information, see [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona).
+For more information, see [PathRenameExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw).
 
 ##  <a name="skiproot"></a>  CPathT::SkipRoot
 
@@ -802,7 +802,7 @@ Returns the position of the beginning of the subpath that follows the root (driv
 
 ### Remarks
 
-For more information, see [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota).
+For more information, see [PathSkipRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw).
 
 ##  <a name="strippath"></a>  CPathT::StripPath
 
@@ -814,7 +814,7 @@ void StripPath();
 
 ### Remarks
 
-For more information, see [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha).
+For more information, see [PathStripPath](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw).
 
 ##  <a name="striptoroot"></a>  CPathT::StripToRoot
 
@@ -830,7 +830,7 @@ Returns TRUE if a valid drive letter was found in the path, or FALSE otherwise.
 
 ### Remarks
 
-For more information, see [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota).
+For more information, see [PathStripToRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw).
 
 ##  <a name="unquotespaces"></a>  CPathT::UnquoteSpaces
 
@@ -842,7 +842,7 @@ void UnquoteSpaces();
 
 ### Remarks
 
-For more information, see [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa).
+For more information, see [PathUnquoteSpaces](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw).
 
 ##  <a name="xchar"></a>  CPathT::XCHAR
 

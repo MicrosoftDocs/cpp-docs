@@ -37,10 +37,10 @@ A user-defined name for the code block that will appear in the .idl file.
 (Optional) The Help ID for this type library.
 
 *hidden*<br/>
-(Optional) A parameter that prevents the library from being displayed. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
+(Optional) A parameter that prevents the library from being displayed. See the [hidden](/windows/win32/Midl/hidden) MIDL attribute for more information.
 
 *restricted*<br/>
-(Optional) Members of the library cannot be arbitrarily called. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
+(Optional) Members of the library cannot be arbitrarily called. See the [restricted](/windows/win32/Midl/restricted) MIDL attribute for more information.
 
 *function declaration*<br/>
 The function that you will define.
@@ -49,7 +49,7 @@ The function that you will define.
 
 The **idl_module** C++ attribute lets you specify the entry point in a .dll file, which allows you to import from a .dll file.
 
-The **idl_module** attribute has functionality similar to the [module](/windows/desktop/Midl/module) MIDL attribute.
+The **idl_module** attribute has functionality similar to the [module](/windows/win32/Midl/module) MIDL attribute.
 
 You can export anything from a COM object that you can export from a .dll file by putting a DLL entry point in the library block of an .idl file.
 

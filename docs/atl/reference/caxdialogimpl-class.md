@@ -158,7 +158,7 @@ INT_PTR DoModal(
 ### Parameters
 
 *hWndParent*<br/>
-[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 function.
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](/windows/win32/api/winuser/nf-winuser-getactivewindow) Win32 function.
 
 *dwInitParam*<br/>
 [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.
@@ -236,7 +236,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-msg) structure that contains the message to be checked.
+Pointer to a [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that contains the message to be checked.
 
 ### Return Value
 

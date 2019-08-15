@@ -77,7 +77,7 @@ Discusses using **GetProcAddress** to obtain the address of an exported function
 [FreeLibrary and AfxFreeLibrary](freelibrary-and-afxfreelibrary.md)<br/>
 Discusses using **FreeLibrary** and `AfxFreeLibrary` when the DLL module is no longer needed.
 
-[Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)<br/>
+[Dynamic-Link Library Search Order](/windows/win32/Dlls/dynamic-link-library-search-order)<br/>
 Describes the search path that the Windows operating system uses to locate a DLL on the system.
 
 [Module States of a Regular MFC DLL Dynamically Linked to MFC](module-states-of-a-regular-dll-dynamically-linked-to-mfc.md)<br/>

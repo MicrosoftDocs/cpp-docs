@@ -21,7 +21,7 @@ class CComTearOffObject : public Base
 *Base*<br/>
 Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you want your tear-off object to support.
 
-ATL implements its tear-off interfaces in two phases — the `CComTearOffObjectBase` methods handle the reference count and `QueryInterface`, while `CComTearOffObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown).
+ATL implements its tear-off interfaces in two phases — the `CComTearOffObjectBase` methods handle the reference count and `QueryInterface`, while `CComTearOffObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown).
 
 ## Members
 

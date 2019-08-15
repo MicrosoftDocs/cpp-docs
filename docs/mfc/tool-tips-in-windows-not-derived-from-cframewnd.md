@@ -16,7 +16,7 @@ Topics covered in this article family include:
 
 - [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md)
 
-Tool tips are automatically displayed for buttons and other controls contained in a parent window derived from `CFrameWnd`. This is because `CFrameWnd` has a default handler for the [TTN_GETDISPINFO](/windows/desktop/Controls/ttn-getdispinfo) notification, which handles **TTN_NEEDTEXT** notifications from tool tip controls associated with controls.
+Tool tips are automatically displayed for buttons and other controls contained in a parent window derived from `CFrameWnd`. This is because `CFrameWnd` has a default handler for the [TTN_GETDISPINFO](/windows/win32/Controls/ttn-getdispinfo) notification, which handles **TTN_NEEDTEXT** notifications from tool tip controls associated with controls.
 
 However, this default handler is not called when the **TTN_NEEDTEXT** notification is sent from a tool tip control associated with a control in a window that is not a `CFrameWnd`, such as a control on a dialog box or a form view. Therefore, it is necessary for you to provide a handler function for the **TTN_NEEDTEXT** notification message in order to display tool tips for child controls.
 

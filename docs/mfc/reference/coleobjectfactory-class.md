@@ -114,7 +114,7 @@ Contains one or more of the following flags:
 
 - `afxRegFreeThreading` Sets the threading model in the registry to ThreadingModel=Free.
 
-   You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/desktop/com/inprocserver32) in the Windows SDK for more information on threading model registration.
+   You can combine the two flags `afxRegApartmentThreading` and `afxRegFreeThreading` to set ThreadingModel=Both. See [InprocServer32](/windows/win32/com/inprocserver32) in the Windows SDK for more information on threading model registration.
 
 *lpszProgID*<br/>
 Pointer to a string containing a verbal program identifier, such as "Microsoft Excel."
@@ -123,7 +123,7 @@ Pointer to a string containing a verbal program identifier, such as "Microsoft E
 
 To use the object, however, you must register it.
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
 ##  <a name="getclassid"></a>  COleObjectFactory::GetClassID
 
@@ -139,7 +139,7 @@ Reference to the OLE class ID this factory represents.
 
 ### Remarks
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey
 

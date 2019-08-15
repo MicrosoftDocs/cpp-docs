@@ -303,7 +303,7 @@ The desired buffer size in bytes.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -328,7 +328,7 @@ The size of the buffer in bytes.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 

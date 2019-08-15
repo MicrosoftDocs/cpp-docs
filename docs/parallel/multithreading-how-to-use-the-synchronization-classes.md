@@ -38,7 +38,7 @@ singleLock.Unlock();
 
 The drawbacks to this approach are that the class will be slightly slower than the same class without the synchronization objects added. Also, if there is a chance that more than one thread might delete the object, the merged approach might not always work. In this situation, it is better to maintain separate synchronization objects.
 
-For information about determining which synchronization class to use in different situations, see [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about synchronization, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK. For more information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).
+For information about determining which synchronization class to use in different situations, see [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about synchronization, see [Synchronization](/windows/win32/Sync/synchronization) in the Windows SDK. For more information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).
 
 ## See also
 

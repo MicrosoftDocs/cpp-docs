@@ -82,7 +82,7 @@ In C++ desktop projects, manifest resources are XML files that describe the depe
 </dependency>
 ```
 
-For a Windows XP or Windows Vista application, the manifest resource should specify the most current version of the Windows common controls for the application to use. The example above uses version `6.0.0.0`, which supports the [Syslink control](/windows/desktop/Controls/syslink-overview).
+For a Windows XP or Windows Vista application, the manifest resource should specify the most current version of the Windows common controls for the application to use. The example above uses version `6.0.0.0`, which supports the [Syslink control](/windows/win32/Controls/syslink-overview).
 
 > [!NOTE]
 > You can only have one manifest resource per module.

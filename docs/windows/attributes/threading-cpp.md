@@ -63,4 +63,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md)<br/>
-[Neutral Apartments](/windows/desktop/cossdk/neutral-apartments)
+[Neutral Apartments](/windows/win32/cossdk/neutral-apartments)

@@ -238,5 +238,5 @@ None
 <!--
 [Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
-[Icons](/windows/desktop/menurc/icons)<br/>
-[Cursors](/windows/desktop/menurc/cursors)<br/>-->
+[Icons](/windows/win32/menurc/icons)<br/>
+[Cursors](/windows/win32/menurc/cursors)<br/>-->

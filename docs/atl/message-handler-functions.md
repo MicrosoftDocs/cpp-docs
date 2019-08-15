@@ -19,4 +19,4 @@ ATL provides three types of message handler functions:
 
 [Implementing a Window](../atl/implementing-a-window.md)<br/>
 [Message Maps](../atl/message-maps-atl.md)<br/>
-[WM_NOTIFY](/windows/desktop/controls/wm-notify)
+[WM_NOTIFY](/windows/win32/controls/wm-notify)

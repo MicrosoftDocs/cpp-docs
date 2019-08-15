@@ -22,7 +22,7 @@ A UUID that identifies the version of the interface.
 
 ## Remarks
 
-The **async_uuid** C++ attribute has the same functionality as the [async_uuid](/windows/desktop/Midl/async-uuid) MIDL attribute.
+The **async_uuid** C++ attribute has the same functionality as the [async_uuid](/windows/win32/Midl/async-uuid) MIDL attribute.
 
 ## Example
 

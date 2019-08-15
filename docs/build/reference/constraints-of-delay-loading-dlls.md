@@ -25,10 +25,10 @@ There are constraints regarding the delay loading of imports.
 ## See also
 
 [Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)<br/>
-[LoadLibrary function](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>
-[GetModuleHandle function](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)<br/>
-[GetProcAddress function](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
-[TlsAlloc function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
-[TlsFree function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
-[TlsGetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
-[TlsSetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)
+[LoadLibrary function](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)<br/>
+[GetModuleHandle function](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew)<br/>
+[GetProcAddress function](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>
+[TlsAlloc function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)<br/>
+[TlsFree function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree)<br/>
+[TlsGetValue function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)<br/>
+[TlsSetValue function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue)

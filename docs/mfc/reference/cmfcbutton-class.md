@@ -46,7 +46,7 @@ class CMFCButton : public CButton
 |[CMFCButton::IsRadioButton](#isradiobutton)|Indicates whether a button is a radio button.|
 |[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|Indicates whether the style of the button border corresponds to the current Windows theme.|
 |`CMFCButton::OnDrawParentBackground`|Draws the background of a button's parent in the specified area. (Overrides [AFX_GLOBAL_DATA::DrawParentBackground](../../mfc/reference/afx-global-data-structure.md)|
-|`CMFCButton::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
+|`CMFCButton::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 |[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|Sets a button to auto-repeat mode.|
 |[CMFCButton::SetCheckedImage](#setcheckedimage)|Sets the image for a checked button.|
 |[CMFCButton::SetFaceColor](#setfacecolor)|Sets the background color for the button text.|
@@ -485,7 +485,7 @@ virtual void OnDraw(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-drawitemstruct) topic.
 
 ### Remarks
 
@@ -511,7 +511,7 @@ virtual void OnDrawBorder(
 [in] A reference to a rectangle that bounds the button.
 
 *uiState*<br/>
-[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) topic.
+[in] The current button state. For more information, see the `itemState` member of the [DRAWITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-drawitemstruct) topic.
 
 ### Remarks
 

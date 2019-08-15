@@ -89,7 +89,7 @@ DWORD m_dwError;
 
 This error value may be a system error code, found in WINERROR.H, or an error value from WININET.H.
 
-For a list of Win32 error codes, see [Error Codes](/windows/desktop/Debug/system-error-codes). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.
+For a list of Win32 error codes, see [Error Codes](/windows/win32/Debug/system-error-codes). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.
 
 ## See also
 

@@ -48,7 +48,7 @@ class CDateTimeCtrl : public CWnd
 
 The date and time picker control (DTP control) provides a simple interface to exchange date and time information with a user. This interface contains fields, each of which displays a part of the date and time information stored in the control. The user can change the information stored in the control by changing the content of the string in a given field. The user can move from field to field using the mouse or the keyboard.
 
-You can customize the date and time picker control by applying a variety of styles to the object when you create it. See [Date and Time Picker Control Styles](/windows/desktop/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about styles specific to the date and time picker control. You can set the display format of the DTP control using format styles. These format styles are described under "Format Styles" in the Windows SDK topic [Date and Time Picker Control Styles](/windows/desktop/Controls/date-and-time-picker-control-styles).
+You can customize the date and time picker control by applying a variety of styles to the object when you create it. See [Date and Time Picker Control Styles](/windows/win32/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about styles specific to the date and time picker control. You can set the display format of the DTP control using format styles. These format styles are described under "Format Styles" in the Windows SDK topic [Date and Time Picker Control Styles](/windows/win32/Controls/date-and-time-picker-control-styles).
 
 The date and time picker control also uses notifications and callbacks, which are described in [Using CDateTimeCtrl](../../mfc/using-cdatetimectrl.md).
 
@@ -84,7 +84,7 @@ void CloseMonthCal() const;
 
 ### Remarks
 
-This method sends the [DTM_CLOSEMONTHCAL](/windows/desktop/Controls/dtm-closemonthcal) message, which is described in the Windows SDK.
+This method sends the [DTM_CLOSEMONTHCAL](/windows/win32/Controls/dtm-closemonthcal) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -113,7 +113,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the combination of date time control styles. See [Date and Time Picker Control Styles](/windows/desktop/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about date and time picker styles.
+Specifies the combination of date time control styles. See [Date and Time Picker Control Styles](/windows/win32/Controls/date-and-time-picker-control-styles) in the Windows SDK for more information about date and time picker styles.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure, which is the position and size of the date and time picker control.
@@ -154,7 +154,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pDateTimePickerInfo*|[out] A pointer to a [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|
+|*pDateTimePickerInfo*|[out] A pointer to a [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|
 
 ### Return Value
 
@@ -162,7 +162,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [DTM_GETDATETIMEPICKERINFO](/windows/desktop/Controls/dtm-getdatetimepickerinfo) message, which is described in the Windows SDK.
+This method sends the [DTM_GETDATETIMEPICKERINFO](/windows/win32/Controls/dtm-getdatetimepickerinfo) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -195,7 +195,7 @@ A COLORREF value that represents the color setting for the specified portion of 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_GETMCCOLOR](/windows/desktop/Controls/dtm-getmccolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [DTM_GETMCCOLOR](/windows/win32/Controls/dtm-getmccolor), as described in the Windows SDK.
 
 ### Example
 
@@ -247,11 +247,11 @@ DWORD GetMonthCalStyle() const;
 
 ### Return Value
 
-The style of the drop-down month calendar control, which is a bitwise combination (OR) of date and time picker control styles. For more information, see [Month Calendar Control Styles](/windows/desktop/Controls/month-calendar-control-styles).
+The style of the drop-down month calendar control, which is a bitwise combination (OR) of date and time picker control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).
 
 ### Remarks
 
-This method sends the [DTM_GETMCSTYLE](/windows/desktop/Controls/dtm-getmcstyle) message, which is described in the Windows SDK.
+This method sends the [DTM_GETMCSTYLE](/windows/win32/Controls/dtm-getmcstyle) message, which is described in the Windows SDK.
 
 ##  <a name="getrange"></a>  CDateTimeCtrl::GetRange
 
@@ -289,7 +289,7 @@ then the first parameter is valid.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_GETRANGE](/windows/desktop/Controls/dtm-getrange), as described in the Windows SDK. In MFC's implementation, you can specify either `COleDateTime` or `CTime` usages.
+This member function implements the behavior of the Win32 message [DTM_GETRANGE](/windows/win32/Controls/dtm-getrange), as described in the Windows SDK. In MFC's implementation, you can specify either `COleDateTime` or `CTime` usages.
 
 ### Example
 
@@ -311,17 +311,17 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 In the first version, a reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object that will receive the system time information. In the second version, a reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object that will receive the system time information.
 
 *pTimeDest*<br/>
-A pointer to the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
+A pointer to the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure to receive the system time information. Must not be NULL.
 
 ### Return Value
 
-In the first version, nonzero if the time is successfully written to the `COleDateTime` object; otherwise 0. In the second and third versions, a DWORD value equal to the *dwFlag* member set in the [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) structure. See the **Remarks** section below for more information.
+In the first version, nonzero if the time is successfully written to the `COleDateTime` object; otherwise 0. In the second and third versions, a DWORD value equal to the *dwFlag* member set in the [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure. See the **Remarks** section below for more information.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_GETSYSTEMTIME](/windows/desktop/Controls/dtm-getsystemtime), as described in the Windows SDK. In the MFC implementation of `GetTime`, you can use `COleDateTime` or `CTime` classes, or you can use a `SYSTEMTIME` structure, to store the time information.
+This member function implements the behavior of the Win32 message [DTM_GETSYSTEMTIME](/windows/win32/Controls/dtm-getsystemtime), as described in the Windows SDK. In the MFC implementation of `GetTime`, you can use `COleDateTime` or `CTime` classes, or you can use a `SYSTEMTIME` structure, to store the time information.
 
-The return value DWORD in the second and third versions, above, indicates whether or not the date and time picker control is set to the "no date" status, as indicated in the [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) structure member *dwFlags*. If the value returned equals GDT_NONE, the control is set to "no date" status, and uses the DTS_SHOWNONE style. If the value returned equals GDT_VALID, the system time is successfully stored in the destination location.
+The return value DWORD in the second and third versions, above, indicates whether or not the date and time picker control is set to the "no date" status, as indicated in the [NMDATETIMECHANGE](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) structure member *dwFlags*. If the value returned equals GDT_NONE, the control is set to "no date" status, and uses the DTS_SHOWNONE style. If the value returned equals GDT_VALID, the system time is successfully stored in the destination location.
 
 ### Example
 
@@ -339,7 +339,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*psize*|[out] Pointer to a [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) structure that contains the ideal size for the control.|
+|*psize*|[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that contains the ideal size for the control.|
 
 ### Return Value
 
@@ -347,7 +347,7 @@ The return value is always TRUE.
 
 ### Remarks
 
-This method sends the [DTM_GETIDEALSIZE](/windows/desktop/Controls/dtm-getidealsize) message, which is described in the Windows SDK.
+This method sends the [DTM_GETIDEALSIZE](/windows/win32/Controls/dtm-getidealsize) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -383,7 +383,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_SETFORMAT](/windows/desktop/Controls/dtm-setformat), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [DTM_SETFORMAT](/windows/win32/Controls/dtm-setformat), as described in the Windows SDK.
 
 ### Example
 
@@ -422,7 +422,7 @@ A COLORREF value that represents the previous color setting for the specified po
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_SETMCCOLOR](/windows/desktop/Controls/dtm-setmccolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [DTM_SETMCCOLOR](/windows/win32/Controls/dtm-setmccolor), as described in the Windows SDK.
 
 ### Example
 
@@ -448,7 +448,7 @@ Specifies whether the control should be redrawn immediately upon setting the fon
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_SETMCFONT](/windows/desktop/Controls/dtm-setmcfont), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [DTM_SETMCFONT](/windows/win32/Controls/dtm-setmcfont), as described in the Windows SDK.
 
 ### Example
 
@@ -469,7 +469,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*dwStyle*|[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/desktop/Controls/month-calendar-control-styles).|
+|*dwStyle*|[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).|
 
 ### Return Value
 
@@ -477,7 +477,7 @@ The previous style of the drop-down month calendar control.
 
 ### Remarks
 
-This method sends the [DTM_SETMCSTYLE](/windows/desktop/Controls/dtm-setmcstyle) message, which is described in the Windows SDK.
+This method sends the [DTM_SETMCSTYLE](/windows/win32/Controls/dtm-setmcstyle) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -519,7 +519,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_SETRANGE](/windows/desktop/Controls/dtm-setrange), as described in the Windows SDK. In MFC's implementation, you can specify either `COleDateTime` or `CTime` usages. If the `COleDateTime` object has a NULL status, the range will be removed. If the `CTime` pointer or the `COleDateTime` pointer is NULL, the range will be removed.
+This member function implements the behavior of the Win32 message [DTM_SETRANGE](/windows/win32/Controls/dtm-setrange), as described in the Windows SDK. In MFC's implementation, you can specify either `COleDateTime` or `CTime` usages. If the `COleDateTime` object has a NULL status, the range will be removed. If the `CTime` pointer or the `COleDateTime` pointer is NULL, the range will be removed.
 
 ### Example
 
@@ -541,7 +541,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 A reference to a [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) object containing the to which the control will be set.
 
 *pTimeNew*<br/>
-In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure containing the time to which the control will be set.
+In the second version above, a pointer to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object containing the time to which the control will be set. In the third version above, a pointer to a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure containing the time to which the control will be set.
 
 ### Return Value
 
@@ -549,7 +549,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [DTM_SETSYSTEMTIME](/windows/desktop/Controls/dtm-setsystemtime), as described in the Windows SDK. In the MFC implementation of `SetTime`, you can use the `COleDateTime` or `CTime` classes, or you can use a `SYSTEMTIME` structure, to set the time information.
+This member function implements the behavior of the Win32 message [DTM_SETSYSTEMTIME](/windows/win32/Controls/dtm-setsystemtime), as described in the Windows SDK. In the MFC implementation of `SetTime`, you can use the `COleDateTime` or `CTime` classes, or you can use a `SYSTEMTIME` structure, to set the time information.
 
 ### Example
 

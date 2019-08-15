@@ -152,7 +152,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 [in] A pointer to the parent window of the `CMFCRibbonEdit` object.
 
 *dwEditStyle*<br/>
-[in] Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](/windows/desktop/Controls/edit-control-styles) that are described in the Windows SDK.
+[in] Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](/windows/win32/Controls/edit-control-styles) that are described in the Windows SDK.
 
 ### Return Value
 
@@ -292,7 +292,7 @@ The returned value is one of the following edit control styles:
 
 - **ES_RIGHT** for right alignment
 
-For more information about these styles, see [Edit Control Styles](/windows/desktop/Controls/edit-control-styles).
+For more information about these styles, see [Edit Control Styles](/windows/win32/Controls/edit-control-styles).
 
 ##  <a name="getwidth"></a>  CMFCRibbonEdit::GetWidth
 
@@ -589,7 +589,7 @@ virtual void Redraw();
 
 ### Remarks
 
-This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.
+This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.
 
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData
 
@@ -651,7 +651,7 @@ The parameter *nAlign* is one of the following edit control styles:
 
 - ES_RIGHT for right alignment
 
-For more information about these styles, see [Edit Control Styles](/windows/desktop/Controls/edit-control-styles).
+For more information about these styles, see [Edit Control Styles](/windows/win32/Controls/edit-control-styles).
 
 ##  <a name="setwidth"></a>  CMFCRibbonEdit::SetWidth
 

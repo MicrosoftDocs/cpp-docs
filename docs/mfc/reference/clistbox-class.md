@@ -235,7 +235,7 @@ A long pointer to a `COMPAREITEMSTRUCT` structure.
 
 ### Return Value
 
-Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure. It may be any of the following values:
+Indicates the relative position of the two items described in the [COMPAREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-compareitemstruct) structure. It may be any of the following values:
 
 |Value|Meaning|
 |-----------|-------------|
@@ -322,7 +322,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-deleteitemstruct) structure that contains information about the deleted item.
 
 ### Remarks
 
@@ -407,7 +407,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
+A long pointer to a [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -666,7 +666,7 @@ int GetItemRect(
 Specifies the zero-based index of the item.
 
 *lpRect*<br/>
-Specifies a long pointer to a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that receives the list-box client coordinates of the item.
+Specifies a long pointer to a [RECT structure](/windows/win32/api/windef/ns-windef-rect) that receives the list-box client coordinates of the item.
 
 ### Return Value
 
@@ -690,7 +690,7 @@ Number of items per column of the `CListBox` object.
 
 ### Remarks
 
-This member function emulates the functionality of the [LB_GETLISTBOXINFO](/windows/desktop/Controls/lb-getlistboxinfo) message, as described in the Windows SDK.
+This member function emulates the functionality of the [LB_GETLISTBOXINFO](/windows/win32/Controls/lb-getlistboxinfo) message, as described in the Windows SDK.
 
 ##  <a name="getlocale"></a>  CListBox::GetLocale
 
@@ -964,7 +964,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-measureitemstruct) structure.
 
 ### Remarks
 

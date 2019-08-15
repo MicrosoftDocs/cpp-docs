@@ -9,7 +9,7 @@ ms.assetid: 37700615-f372-438b-bcef-d76e11839482
 
 **Microsoft Specific**
 
-Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/desktop/api/winnt/nf-winnt-interlockedincrement) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) function.
 
 ## Syntax
 

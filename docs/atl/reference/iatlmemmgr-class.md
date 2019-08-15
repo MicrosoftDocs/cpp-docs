@@ -31,7 +31,7 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
 This interface is implemented by [CComHeap](../../atl/reference/ccomheap-class.md), [CCRTHeap](../../atl/reference/ccrtheap-class.md), [CLocalHeap](../../atl/reference/clocalheap-class.md), [CGlobalHeap](../../atl/reference/cglobalheap-class.md), or [CWin32Heap](../../atl/reference/cwin32heap-class.md).
 
 > [!NOTE]
->  The local and global heap functions are slower than other memory management functions, and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/desktop/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.
+>  The local and global heap functions are slower than other memory management functions, and do not provide as many features. Therefore, new applications should use the [heap functions](/windows/win32/Memory/heap-functions). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.
 
 ## Example
 

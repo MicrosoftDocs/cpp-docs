@@ -17,7 +17,7 @@ Directs that the specified enumerated type be transmitted as a 32-bit entity rat
 
 ## Remarks
 
-The **v1_enum** C++ attribute has the same functionality as the [v1_enum](/windows/desktop/Midl/v1-enum) MIDL attribute.
+The **v1_enum** C++ attribute has the same functionality as the [v1_enum](/windows/win32/Midl/v1-enum) MIDL attribute.
 
 ## Example
 

@@ -28,7 +28,7 @@ Indicates that the class supports aggregation.
 
 ## Remarks
 
-The **aggregatable** C++ attribute has the same functionality as the [aggregatable](/windows/desktop/Midl/aggregatable) MIDL attribute. This means that the compiler will pass the **aggregatable** attribute through to the generated .idl file.
+The **aggregatable** C++ attribute has the same functionality as the [aggregatable](/windows/win32/Midl/aggregatable) MIDL attribute. This means that the compiler will pass the **aggregatable** attribute through to the generated .idl file.
 
 This attribute requires that the [coclass](coclass.md), [progid](progid.md), or [vi_progid](vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.
 
@@ -76,4 +76,4 @@ For more information about the attribute contexts, see [Attribute Contexts](cpp-
 [IDL Attributes](idl-attributes.md)<br/>
 [Class Attributes](class-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
-[Aggregation](/windows/desktop/com/aggregation)
+[Aggregation](/windows/win32/com/aggregation)

@@ -152,7 +152,7 @@ Context for running executable code.
 A multibyte string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.
 
 *pOuter*<br/>
-The outer unknown for [aggregation](/windows/desktop/com/aggregation).
+The outer unknown for [aggregation](/windows/win32/com/aggregation).
 
 ## See also
 

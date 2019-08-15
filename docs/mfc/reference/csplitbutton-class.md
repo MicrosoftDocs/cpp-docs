@@ -38,7 +38,7 @@ class CSplitButton : public CButton
 
 ## Remarks
 
-The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutton-class.md) class. The split button control is a button control whose style is BS_SPLITBUTTON. It displays a custom menu when a user clicks the drop-down arrow. For more information, see the BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button Styles](/windows/desktop/Controls/button-styles).
+The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutton-class.md) class. The split button control is a button control whose style is BS_SPLITBUTTON. It displays a custom menu when a user clicks the drop-down arrow. For more information, see the BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button Styles](/windows/win32/Controls/button-styles).
 
 The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.
 
@@ -128,8 +128,8 @@ afx_msg void OnDropDown(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
-|*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|
+|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.|
+|*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.|
 
 ### Remarks
 

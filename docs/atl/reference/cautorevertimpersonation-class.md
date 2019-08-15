@@ -34,11 +34,11 @@ class CAutoRevertImpersonation
 
 ## Remarks
 
-An [access token](/windows/desktop/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system. These access tokens can be represented with the `CAccessToken` class.
+An [access token](/windows/win32/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows NT or Windows 2000 system. These access tokens can be represented with the `CAccessToken` class.
 
 It is sometimes necessary to impersonate access tokens. This class is provided as a convenience, but it does not perform the impersonation of access tokens; it only performs the automatic reversion to a nonimpersonated state. This is because token access impersonation can be performed several different ways.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Requirements
 
@@ -125,5 +125,5 @@ If this method is called for the purposes that include the reversion of an imper
 ## See also
 
 [ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
-[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
+[Access Tokens](/windows/win32/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

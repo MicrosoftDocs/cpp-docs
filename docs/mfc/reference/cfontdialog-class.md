@@ -52,13 +52,13 @@ A `CFontDialog` object is a dialog box with a list of fonts that are currently i
 
 To construct a `CFontDialog` object, use the provided constructor or derive a new subclass and use your own custom constructor.
 
-Once a `CFontDialog` object has been constructed, you can use the `m_cf` structure to initialize the values or states of controls in the dialog box. The [m_cf](#m_cf) structure is of type [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta). For more information on this structure, see the Windows SDK.
+Once a `CFontDialog` object has been constructed, you can use the `m_cf` structure to initialize the values or states of controls in the dialog box. The [m_cf](#m_cf) structure is of type [CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefontw). For more information on this structure, see the Windows SDK.
 
 After initializing the dialog object's controls, call the `DoModal` member function to display the dialog box and allow the user to select a font. `DoModal` returns whether the user selected the OK (IDOK) or Cancel (IDCANCEL) button.
 
 If `DoModal` returns IDOK, you can use one of `CFontDialog`'s member functions to retrieve the information input by the user.
 
-You can use the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.
+You can use the Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.
 
 `CFontDialog` relies on the COMMDLG.DLL file that ships with Windows versions 3.1 and later.
 
@@ -107,13 +107,13 @@ CFontDialog(
 ### Parameters
 
 *plfInitial*<br/>
-A pointer to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) data structure that allows you to set some of the font's characteristics.
+A pointer to a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) data structure that allows you to set some of the font's characteristics.
 
 *charFormat*<br/>
-A pointer to a [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) data structure that allows you to set some of the font's characteristics in a rich edit control.
+A pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) data structure that allows you to set some of the font's characteristics in a rich edit control.
 
 *dwFlags*<br/>
-Specifies one or more choose-font flags. One or more preset values can be combined using the bitwise OR operator. If you modify the `m_cf.Flag`s structure member, be sure to use a bitwise OR operator in your changes to keep the default behavior intact. For details on each of these flags, see the description of the [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) structure in the Windows SDK.
+Specifies one or more choose-font flags. One or more preset values can be combined using the bitwise OR operator. If you modify the `m_cf.Flag`s structure member, be sure to use a bitwise OR operator in your changes to keep the default behavior intact. For details on each of these flags, see the description of the [CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefontw) structure in the Windows SDK.
 
 *pdcPrinter*<br/>
 A pointer to a printer-device context. If supplied, this parameter points to a printer-device context for the printer on which the fonts are to be selected.
@@ -142,7 +142,7 @@ virtual INT_PTR DoModal();
 
 ### Return Value
 
-IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
+IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.
 
 IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.
 
@@ -167,7 +167,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 ### Parameters
 
 *cf*<br/>
-A [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) structure containing information about the character formatting of the selected font.
+A [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure containing information about the character formatting of the selected font.
 
 ##  <a name="getcolor"></a>  CFontDialog::GetColor
 
@@ -187,7 +187,7 @@ The color of the selected font.
 
 ##  <a name="getcurrentfont"></a>  CFontDialog::GetCurrentFont
 
-Call this function to assign the characteristics of the currently selected font to the members of a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.
+Call this function to assign the characteristics of the currently selected font to the members of a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure.
 
 ```
 void GetCurrentFont(LPLOGFONT lplf);
@@ -350,7 +350,7 @@ CHOOSEFONT m_cf;
 
 ### Remarks
 
-After constructing a `CFontDialog` object, you can use `m_cf` to modify various aspects of the dialog box before calling the `DoModal` member function. For more information on this structure, see [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) in the Windows SDK.
+After constructing a `CFontDialog` object, you can use `m_cf` to modify various aspects of the dialog box before calling the `DoModal` member function. For more information on this structure, see [CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefontw) in the Windows SDK.
 
 ### Example
 

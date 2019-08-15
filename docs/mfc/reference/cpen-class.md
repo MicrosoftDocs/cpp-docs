@@ -28,10 +28,10 @@ class CPen : public CGdiObject
 |Name|Description|
 |----------|-----------------|
 |[CPen::CreatePen](#createpen)|Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.|
-|[CPen::CreatePenIndirect](#createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) structure, and attaches it to the `CPen` object.|
+|[CPen::CreatePenIndirect](#createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](/windows/win32/api/wingdi/ns-wingdi-logpen) structure, and attaches it to the `CPen` object.|
 |[CPen::FromHandle](#fromhandle)|Returns a pointer to a `CPen` object when given a Windows HPEN.|
-|[CPen::GetExtLogPen](#getextlogpen)|Gets an [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) underlying structure.|
-|[CPen::GetLogPen](#getlogpen)|Gets a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) underlying structure.|
+|[CPen::GetExtLogPen](#getextlogpen)|Gets an [EXTLOGPEN](/windows/win32/api/wingdi/ns-wingdi-extlogpen) underlying structure.|
+|[CPen::GetLogPen](#getlogpen)|Gets a [LOGPEN](/windows/win32/api/wingdi/ns-wingdi-logpen) underlying structure.|
 
 ### Public Operators
 
@@ -118,7 +118,7 @@ The second version of the `CPen` constructor specifies a combination of type, st
 
 - PS_JOIN_BEVEL Joins are beveled.
 
-- PS_JOIN_MITER Joins are mitered when they are within the current limit set by the [SetMiterLimit](/windows/desktop/api/wingdi/nf-wingdi-setmiterlimit) function. If the join exceeds this limit, it is beveled.
+- PS_JOIN_MITER Joins are mitered when they are within the current limit set by the [SetMiterLimit](/windows/win32/api/wingdi/nf-wingdi-setmiterlimit) function. If the join exceeds this limit, it is beveled.
 
 - PS_JOIN_ROUND Joins are round.
 
@@ -185,7 +185,7 @@ Specifies the width of the pen.
 Contains an RGB color for the pen.
 
 *pLogBrush*<br/>
-Points to a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure. If *nPenStyle* is PS_COSMETIC, the `lbColor` member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to BS_SOLID. If nPenStyle is PS_GEOMETRIC, all members must be used to specify the brush attributes of the pen.
+Points to a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure. If *nPenStyle* is PS_COSMETIC, the `lbColor` member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to BS_SOLID. If nPenStyle is PS_GEOMETRIC, all members must be used to specify the brush attributes of the pen.
 
 *nStyleCount*<br/>
 Specifies the length, in doubleword units, of the *lpStyle* array. This value must be zero if *nPenStyle* is not PS_USERSTYLE.
@@ -230,7 +230,7 @@ BOOL CreatePenIndirect(LPLOGPEN lpLogPen);
 ### Parameters
 
 *lpLogPen*<br/>
-Points to the Windows [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) structure that contains information about the pen.
+Points to the Windows [LOGPEN](/windows/win32/api/Wingdi/ns-wingdi-logpen) structure that contains information about the pen.
 
 ### Return Value
 
@@ -282,7 +282,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
 ### Parameters
 
 *pLogPen*<br/>
-Points to an [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) structure that contains information about the pen.
+Points to an [EXTLOGPEN](/windows/win32/api/wingdi/ns-wingdi-extlogpen) structure that contains information about the pen.
 
 ### Return Value
 
@@ -294,13 +294,13 @@ The `EXTLOGPEN` structure defines the style, width, and brush attributes of a pe
 
 See the following topics in the Windows SDK for information about pen attributes:
 
-- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)
+- [GetObject](/windows/win32/api/wingdi/nf-wingdi-getobject)
 
-- [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen)
+- [EXTLOGPEN](/windows/win32/api/wingdi/ns-wingdi-extlogpen)
 
-- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)
+- [LOGPEN](/windows/win32/api/wingdi/ns-wingdi-logpen)
 
-- [ExtCreatePen](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen)
+- [ExtCreatePen](/windows/win32/api/wingdi/nf-wingdi-extcreatepen)
 
 ### Example
 
@@ -319,7 +319,7 @@ int GetLogPen(LOGPEN* pLogPen);
 ### Parameters
 
 *pLogPen*<br/>
-Points to a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) structure to contain information about the pen.
+Points to a [LOGPEN](/windows/win32/api/wingdi/ns-wingdi-logpen) structure to contain information about the pen.
 
 ### Return Value
 
@@ -333,9 +333,9 @@ For example, call `GetLogPen` to match the particular style of pen.
 
 See the following topics in the Windows SDK for information about pen attributes:
 
-- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)
+- [GetObject](/windows/win32/api/wingdi/nf-wingdi-getobject)
 
-- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)
+- [LOGPEN](/windows/win32/api/wingdi/ns-wingdi-logpen)
 
 ### Example
 
@@ -359,7 +359,7 @@ If successful, a handle to the Windows GDI object represented by the `CPen` obje
 
 This operator is a casting operator, which supports direct use of an HPEN object.
 
-For more information about using graphic objects, see the article [Graphic Objects](/windows/desktop/gdi/graphic-objects) in Windows SDK.
+For more information about using graphic objects, see the article [Graphic Objects](/windows/win32/gdi/graphic-objects) in Windows SDK.
 
 ### Example
 

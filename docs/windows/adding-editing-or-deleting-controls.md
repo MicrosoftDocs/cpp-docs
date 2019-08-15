@@ -130,9 +130,9 @@ Currently, the **Dialog Editor** doesn't automatically add code to your project 
 |Hot Key|Rich Edit Control|Extended Combo Box|
 |List Control|Rich Edit 2.0 Control|Custom Control|
 
-To use common controls on a dialog box, you need to call [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) or `AFXInitCommonControls` before you create the dialog box.
+To use common controls on a dialog box, you need to call [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) or `AFXInitCommonControls` before you create the dialog box.
 
-To use RichEdit controls, you must call `LoadLibrary`. For more information, see [About Rich Edit Controls](/windows/desktop/Controls/about-rich-edit-controls) in the Windows SDK and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).
+To use RichEdit controls, you must call `LoadLibrary`. For more information, see [About Rich Edit Controls](/windows/win32/Controls/about-rich-edit-controls) in the Windows SDK and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).
 
 > [!NOTE]
 > To use a RichEdit control with MFC, you must first call [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) to load the RichEdit 2.0 Control (RICHED20.DLL), or call [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) to load the older RichEdit 1.0 Control (RICHED32.DLL).

@@ -25,7 +25,7 @@ The high range value.
 
 ## Remarks
 
-The **range** C++ attribute has the same functionality as the [range](/windows/desktop/Midl/range) MIDL attribute.
+The **range** C++ attribute has the same functionality as the [range](/windows/win32/Midl/range) MIDL attribute.
 
 ## Example
 

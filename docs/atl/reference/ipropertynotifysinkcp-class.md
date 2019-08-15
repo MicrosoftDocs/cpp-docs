@@ -7,7 +7,7 @@ ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
 ---
 # IPropertyNotifySinkCP Class
 
-This class exposes [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) interface as an outgoing interface on a connectable object.
+This class exposes [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interface as an outgoing interface on a connectable object.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -32,7 +32,7 @@ A class that manages the connections between a connection point and its sinks. T
 
 `IPropertyNotifySinkCP` inherits all methods through its base class, [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md).
 
-The [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) interface allows a sink object to receive notifications about property changes. Class `IPropertyNotifySinkCP` exposes this interface as an outgoing interface on a connectable object. The client must implement the `IPropertyNotifySink` methods on the sink.
+The [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interface allows a sink object to receive notifications about property changes. Class `IPropertyNotifySinkCP` exposes this interface as an outgoing interface on a connectable object. The client must implement the `IPropertyNotifySink` methods on the sink.
 
 Derive your class from `IPropertyNotifySinkCP` when you want to create a connection point that represents the `IPropertyNotifySink` interface.
 

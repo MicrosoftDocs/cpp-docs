@@ -7,7 +7,7 @@ ms.assetid: d74956e8-9c69-4cba-b99d-ca1ac031bb9d
 ---
 # IProvideClassInfo2Impl Class
 
-This class provides a default implementation of the [IProvideClassInfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) and [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) methods.
+This class provides a default implementation of the [IProvideClassInfo](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo) and [IProvideClassInfo2](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo2) methods.
 
 ## Syntax
 
@@ -63,7 +63,7 @@ The class used to manage the coclass' type information. The default value is `CC
 
 ## Remarks
 
-The [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) interface extends [IProvideClassInfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the `IProvideClassInfo` and `IProvideClassInfo2` methods.
+The [IProvideClassInfo2](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo2) interface extends [IProvideClassInfo](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the `IProvideClassInfo` and `IProvideClassInfo2` methods.
 
 `IProvideClassInfo2Impl` contains a static member of type `CComTypeInfoHolder` that manages the type information for the coclass.
 
@@ -87,7 +87,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 
 ### Remarks
 
-See [IProvideClassInfo::GetClassInfo](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) in the Windows SDK.
+See [IProvideClassInfo::GetClassInfo](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) in the Windows SDK.
 
 ##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID
 
@@ -101,7 +101,7 @@ STDMETHOD(GetGUID)(
 
 ### Remarks
 
-See [IProvideClassInfo2::GetGUID](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) in the Windows SDK.
+See [IProvideClassInfo2::GetGUID](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) in the Windows SDK.
 
 ##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl
 

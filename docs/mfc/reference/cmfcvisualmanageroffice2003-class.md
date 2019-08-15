@@ -103,7 +103,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|The framework calls this method when it draws a highlighted quick-customize menu button. (Overrides `CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`.)|
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|The framework calls this method when it draws a highlighted menu command. (Overrides `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|The framework calls this function when the system colors change. (Overrides `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).|
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor).|
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Specifies that the Windows XP global theme should be used.|
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|Specifies whether the visual manager uses a global theme.|
 
@@ -380,10 +380,10 @@ virtual void GetSmartDockingBaseGuideColors(
 ### Parameters
 
 *clrBaseGroupBackground*<br/>
-[in] Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the background color.
+[in] Reference to a [COLORREF](/windows/win32/gdi/colorref) to set to the background color.
 
 *clrBaseGroupBorder*<br/>
-[in] Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the border color.
+[in] Reference to a [COLORREF](/windows/win32/gdi/colorref) to set to the border color.
 
 ### Remarks
 
@@ -397,7 +397,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 
 ### Return Value
 
-Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the highlight tone color.
+Returns a [COLORREF](/windows/win32/gdi/colorref) that contains the highlight tone color.
 
 ### Remarks
 
@@ -424,7 +424,7 @@ virtual void GetTabFrameColors(
 [in] A pointer to the tabbed window where the frame is drawing a tab.
 
 *clrDark*<br/>
-[out] A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.
+[out] A reference to a [COLORREF](/windows/win32/gdi/colorref) parameter where this method stores the color for the dark border of a tab.
 
 *clrBlack*<br/>
 [out] A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.
@@ -473,7 +473,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 
 ### Return Value
 
-Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the disabled color.
+Returns a [COLORREF](/windows/win32/gdi/colorref) that contains the disabled color.
 
 ### Remarks
 
@@ -1098,7 +1098,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the text color of the caption.
 
 ### Remarks
 
@@ -1226,7 +1226,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the color of the text on the caption bar.
 
 ### Remarks
 
@@ -2363,7 +2363,7 @@ The framework calls this method as a part of processing the WM_SYSCOLORCHANGE me
 
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors
 
-Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).
+Specifies whether the visual manager should use native Windows XP theme colors or colors obtained from [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor).
 
 ```
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

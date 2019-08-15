@@ -34,5 +34,5 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
 [Forced Integrity Signing of Portable Executable (PE) files](https://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)<br/>
-[Kernel-Mode Code Signing Walkthrough](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)<br/>
-[AppInit DLLs in Windows 7 and Windows Server 2008](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)
+[Kernel-Mode Code Signing Requirements](/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)<br/>
+[AppInit DLLs and Secure Boot](/windows/win32/dlls/secure-boot-and-appinit-dlls)

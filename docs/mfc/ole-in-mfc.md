@@ -60,7 +60,7 @@ Explains how to implement connection points (formerly known as OLE connection po
 [Container/Server COM Components](../mfc/containers-advanced-features.md)<br/>
 Describes the steps necessary to incorporate optional advanced features into existing container applications.
 
-[The Component Object Model](/windows/desktop/com/the-component-object-model)<br/>
+[The Component Object Model](/windows/win32/com/the-component-object-model)<br/>
 Describes using OLE without MFC.
 
 ## See also

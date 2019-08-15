@@ -52,7 +52,7 @@ CComAutoCriticalSection();
 
 ### Remarks
 
-Calls the Win32 function [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object.
+Calls the Win32 function [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection), which initializes the critical section object.
 
 ##  <a name="dtor"></a>  CComAutoCriticalSection::~CComAutoCriticalSection
 
@@ -64,7 +64,7 @@ The destructor.
 
 ### Remarks
 
-The destructor calls [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), which releases all system resources used by the critical section object.
+The destructor calls [DeleteCriticalSection](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection), which releases all system resources used by the critical section object.
 
 ## See also
 

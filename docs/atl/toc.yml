@@ -240,7 +240,7 @@
             - name: Creating Registrar scripts
               href: creating-registrar-scripts.md
             - name: Understanding Backus-Naur form (BNF) syntax
-              href: understanding-backus-nauer-form-bnf-syntax.md
+              href: understanding-backus-naur-form-bnf-syntax.md
             - name: Understanding parse trees
               href: understanding-parse-trees.md
             - name: Registry scripting examples

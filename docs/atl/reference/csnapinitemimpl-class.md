@@ -77,7 +77,7 @@ TRUE if the object is a snap-in extension; otherwise FALSE.
 
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems
 
-This method implements the Win32 function [IExtendContextMenu::AddMenuItems](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems).
+This method implements the Win32 function [IExtendContextMenu::AddMenuItems](/windows/win32/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems).
 
 ```
 AddMenuItems(
@@ -115,7 +115,7 @@ AddMenuItems(
 
 ##  <a name="command"></a>  CSnapInItemImpl::Command
 
-This method implements the Win32 function [IExtendContextMenu::Command](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-command).
+This method implements the Win32 function [IExtendContextMenu::Command](/windows/win32/api/mmc/nf-mmc-iextendcontextmenu-command).
 
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -139,7 +139,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages
 
-This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](/windows/desktop/api/mmc/nn-mmc-iextendpropertysheet2).
+This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](/windows/win32/api/mmc/nn-mmc-iextendpropertysheet2).
 
 ```
 CreatePropertyPages(
@@ -265,7 +265,7 @@ SCOPEDATAITEM m_scopeDataItem;
 
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem
 
-The [RESULTDATAITEM](/windows/desktop/api/mmc/ns-mmc-resultdataitem) structure of the snap-in data object.
+The [RESULTDATAITEM](/windows/win32/api/mmc/ns-mmc-resultdataitem) structure of the snap-in data object.
 
 ```
 RESULTDATAITEM m_resultDataItem;

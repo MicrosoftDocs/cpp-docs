@@ -11,4 +11,4 @@ System resource could be critically low. Unable to create a pipe required to lau
 
 This error indicates that system resources are low. To resolve this error, decrease system resource usage by other processes/applications.
 
-This error can also occur if your security level is insufficient to create pipes (see [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)).
+This error can also occur if your security level is insufficient to create pipes (see [CreatePipe](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe)).

@@ -17,7 +17,7 @@ Specifies an optional parameter for a member function.
 
 ## Remarks
 
-The **optional** C++ attribute has the same functionality as the [optional](/windows/desktop/Midl/optional) MIDL attribute.
+The **optional** C++ attribute has the same functionality as the [optional](/windows/win32/Midl/optional) MIDL attribute.
 
 ## Example
 

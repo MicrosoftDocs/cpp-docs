@@ -31,7 +31,7 @@ Number registers saved.
 Indicates whether the EBP register has been allocated. either 0 or 1.
 
 *cbFrame*<br/>
-Indicates the frame type.  See [FPO_DATA](/windows/desktop/api/winnt/ns-winnt-fpo_data) for more information.
+Indicates the frame type.  See [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) for more information.
 
 ## See also
 

@@ -28,7 +28,7 @@ This section contains topics about targeting 64-bit x64 hardware with the Visual
 
 [/favor (Optimize for Architecture Specifics)](reference/favor-optimize-for-architecture-specifics.md)
 
-[Programming Guide for 64-bit Windows](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
+[Programming Guide for 64-bit Windows](/windows/win32/WinProg64/programming-guide-for-64-bit-windows)
 
 [MASM for x64 (ml64.exe)](../assembler/masm/masm-for-x64-ml64-exe.md)
 

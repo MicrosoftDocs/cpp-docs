@@ -7,7 +7,7 @@ ms.assetid: 1f3c476a-9c68-49fe-9a25-d22971a334d0
 # Windows Sockets in MFC
 
 > [!NOTE]
->  MFC supports Windows Sockets 1 but does not support [Windows Sockets 2](/windows/desktop/WinSock/windows-sockets-start-page-2). Windows Sockets 2 first shipped with Windows 98 and is the version included with Windows 2000.
+>  MFC supports Windows Sockets 1 but does not support [Windows Sockets 2](/windows/win32/WinSock/windows-sockets-start-page-2). Windows Sockets 2 first shipped with Windows 98 and is the version included with Windows 2000.
 
 MFC supplies two models for writing network communications programs with Windows Sockets, embodied in two MFC classes. This article describes these models and further details MFC sockets support. A "socket" is an endpoint of communication: an object through which your application communicates with other Windows Sockets applications across a network.
 

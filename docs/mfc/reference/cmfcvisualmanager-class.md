@@ -444,7 +444,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that specifies the text color of *pButton*.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that specifies the text color of *pButton*.
 
 ### Remarks
 
@@ -481,7 +481,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text in *pBar*.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the color of the text in *pBar*.
 
 ### Remarks
 
@@ -678,7 +678,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the background color of *pPropList*.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the background color of *pPropList*.
 
 ### Remarks
 
@@ -699,7 +699,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the property list.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the text color of the property list.
 
 ### Remarks
 
@@ -900,7 +900,7 @@ virtual void GetTabFrameColors(
 [in] A pointer to the tabbed window where the frame is drawing a tab.
 
 *clrDark*<br/>
-[out] A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.
+[out] A reference to a [COLORREF](/windows/win32/gdi/colorref) parameter where this method stores the color for the dark border of a tab.
 
 *clrBlack*<br/>
 [out] A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.
@@ -1480,7 +1480,7 @@ virtual BOOL OnDrawBrowseButton(
 [in] An enumerated value that specifies the state of the button.
 
 *clrText*<br/>
-[out] A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This is a reserved value and is currently unused.
+[out] A reference to a [COLORREF](/windows/win32/gdi/colorref) parameter. This is a reserved value and is currently unused.
 
 ### Return Value
 
@@ -2333,7 +2333,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the text color of the caption.
 
 ### Remarks
 
@@ -2583,7 +2583,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.
+A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the color of the text on the caption bar.
 
 ### Remarks
 
@@ -3435,7 +3435,7 @@ virtual void OnDrawStatusBarProgress(
 [in] The current progress for the progress bar.
 
 *clrBar*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.
+[in] A [COLORREF](/windows/win32/gdi/colorref) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.
 
 *clrProgressBarDest*<br/>
 [in] A COLORREF parameter that indicates the end of a color gradient for the progress bar. If *clrProgressBarDest* is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by *clrBar*.
@@ -4160,7 +4160,7 @@ virtual void OnFillOutlookBarCaption(
 [in] A rectangle that specifies the boundaries of the caption bar.
 
 *clrText*<br/>
-[out] A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. The method writes the color of text on the caption bar to this parameter.
+[out] A reference to a [COLORREF](/windows/win32/gdi/colorref) parameter. The method writes the color of text on the caption bar to this parameter.
 
 ### Remarks
 
@@ -4194,7 +4194,7 @@ virtual void OnFillOutlookPageButton(
 [in] A Boolean parameter that specifies whether the button is pressed.
 
 *clrText*<br/>
-[out] A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This method stores the text color of the outlook page button in this parameter.
+[out] A reference to a [COLORREF](/windows/win32/gdi/colorref) parameter. This method stores the text color of the outlook page button in this parameter.
 
 ### Remarks
 

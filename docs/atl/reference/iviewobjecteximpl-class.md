@@ -7,7 +7,7 @@ ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
 ---
 # IViewObjectExImpl Class
 
-This class implements `IUnknown` and provides default implementations of the [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), and [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) interfaces.
+This class implements `IUnknown` and provides default implementations of the [IViewObject](/windows/win32/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2), and [IViewObjectEx](/windows/win32/api/ocidl/nn-ocidl-iviewobjectex) interfaces.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -39,14 +39,14 @@ Your class, derived from `IViewObjectExImpl`.
 |[IViewObjectExImpl::GetNaturalExtent](#getnaturalextent)|Provides sizing hints from the container for the object to use as the user resizes it.|
 |[IViewObjectExImpl::GetRect](#getrect)|Returns a rectangle describing a requested drawing aspect. The ATL implementation returns E_NOTIMPL.|
 |[IViewObjectExImpl::GetViewStatus](#getviewstatus)|Returns information about the opacity of the object and what drawing aspects are supported.|
-|[IViewObjectExImpl::QueryHitPoint](#queryhitpoint)|Checks if the specified point is in the specified rectangle and returns a [HITRESULT](/windows/desktop/api/ocidl/ne-ocidl-taghitresult) value in `pHitResult`.|
+|[IViewObjectExImpl::QueryHitPoint](#queryhitpoint)|Checks if the specified point is in the specified rectangle and returns a [HITRESULT](/windows/win32/api/ocidl/ne-ocidl-hitresult) value in `pHitResult`.|
 |[IViewObjectExImpl::QueryHitRect](#queryhitrect)|Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a HITRESULT value in `pHitResult`.|
 |[IViewObjectExImpl::SetAdvise](#setadvise)|Sets up a connection between the control and an advise sink so the sink can be notified about changes in the control's view.|
 |[IViewObjectExImpl::Unfreeze](#unfreeze)|Unfreezes the drawn representation of the control. The ATL implementation returns E_NOTIMPL.|
 
 ## Remarks
 
-The [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), and [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) interfaces enable a control to display itself directly, and to create and manage an advise sink to notify the container of changes in the control display. The `IViewObjectEx` interface provides support for extended control features such as flicker-free drawing, non-rectangular and transparent controls, and hit-testing (for example, how close a mouse click must be to be considered on the control). Class `IViewObjectExImpl` provides a default implementation of these interfaces and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IViewObject](/windows/win32/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2), and [IViewObjectEx](/windows/win32/api/ocidl/nn-ocidl-iviewobjectex) interfaces enable a control to display itself directly, and to create and manage an advise sink to notify the container of changes in the control display. The `IViewObjectEx` interface provides support for extended control features such as flicker-free drawing, non-rectangular and transparent controls, and hit-testing (for example, how close a mouse click must be to be considered on the control). Class `IViewObjectExImpl` provides a default implementation of these interfaces and implements `IUnknown` by sending information to the dump device in debug builds.
 
 ## Inheritance Hierarchy
 
@@ -79,7 +79,7 @@ STDMETHOD(Draw)(
 
 This method calls `CComControl::OnDrawAdvanced` which in turn calls your control class's `OnDraw` method. An `OnDraw` method is automatically added to your control class when you create your control with the ATL Control Wizard. The Wizard's default `OnDraw` draws a rectangle with the label "ATL 3.0".
 
-See [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw) in the Windows SDK.
+See [IViewObject::Draw](/windows/win32/api/oleidl/nf-oleidl-iviewobject-draw) in the Windows SDK.
 
 ##  <a name="freeze"></a>  IViewObjectExImpl::Freeze
 
@@ -95,7 +95,7 @@ STDMETHOD(Freeze)(
 
 ### Remarks
 
-See [IViewObject::Freeze](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-freeze) in the Windows SDK.
+See [IViewObject::Freeze](/windows/win32/api/oleidl/nf-oleidl-iviewobject-freeze) in the Windows SDK.
 
 ##  <a name="getadvise"></a>  IViewObjectExImpl::GetAdvise
 
@@ -112,7 +112,7 @@ STDMETHOD(GetAdvise)(
 
 The advisory sink is stored in the control class data member [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink).
 
-See [IViewObject::GetAdvise](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-getadvise) in the Windows SDK.
+See [IViewObject::GetAdvise](/windows/win32/api/oleidl/nf-oleidl-iviewobject-getadvise) in the Windows SDK.
 
 ##  <a name="getcolorset"></a>  IViewObjectExImpl::GetColorSet
 
@@ -130,7 +130,7 @@ STDMETHOD(GetColorSet)(
 
 ### Remarks
 
-See [IViewObject::GetColorSet](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-getcolorset) in the Windows SDK.
+See [IViewObject::GetColorSet](/windows/win32/api/oleidl/nf-oleidl-iviewobject-getcolorset) in the Windows SDK.
 
 ##  <a name="getextent"></a>  IViewObjectExImpl::GetExtent
 
@@ -146,7 +146,7 @@ STDMETHOD(GetExtent)(
 
 ### Remarks
 
-See [IViewObject2::GetExtent](/windows/desktop/api/oleidl/nf-oleidl-iviewobject2-getextent) in the Windows SDK.
+See [IViewObject2::GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) in the Windows SDK.
 
 ##  <a name="getnaturalextent"></a>  IViewObjectExImpl::GetNaturalExtent
 
@@ -166,7 +166,7 @@ STDMETHOD(GetNaturalExtent)(
 
 If `dwAspect` is DVASPECT_CONTENT and *pExtentInfo->dwExtentMode* is DVEXTENT_CONTENT, sets * `psizel` to the control class's data member [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). Otherwise, returns an error HRESULT.
 
-See [IViewObjectEx::GetNaturalExtent](/windows/desktop/api/ocidl/nf-ocidl-iviewobjectex-getnaturalextent) in the Windows SDK.
+See [IViewObjectEx::GetNaturalExtent](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getnaturalextent) in the Windows SDK.
 
 ##  <a name="getrect"></a>  IViewObjectExImpl::GetRect
 
@@ -178,7 +178,7 @@ STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 
 ### Remarks
 
-See [IViewObjectEx::GetRect](/windows/desktop/api/ocidl/nf-ocidl-iviewobjectex-getrect) in the Windows SDK.
+See [IViewObjectEx::GetRect](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getrect) in the Windows SDK.
 
 ##  <a name="getviewstatus"></a>  IViewObjectExImpl::GetViewStatus
 
@@ -190,13 +190,13 @@ STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
 
 ### Remarks
 
-By default, ATL sets `pdwStatus` to indicate that the control supports VIEWSTATUS_OPAQUE (possible values are in the [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) enumeration).
+By default, ATL sets `pdwStatus` to indicate that the control supports VIEWSTATUS_OPAQUE (possible values are in the [VIEWSTATUS](/windows/win32/api/ocidl/ne-ocidl-viewstatus) enumeration).
 
-See [IViewObjectEx::GetViewStatus](/windows/desktop/api/ocidl/nf-ocidl-iviewobjectex-getviewstatus) in the Windows SDK.
+See [IViewObjectEx::GetViewStatus](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getviewstatus) in the Windows SDK.
 
 ##  <a name="queryhitpoint"></a>  IViewObjectExImpl::QueryHitPoint
 
-Checks if the specified point is in the specified rectangle and returns a [HITRESULT](/windows/desktop/api/ocidl/ne-ocidl-taghitresult) value in `pHitResult`.
+Checks if the specified point is in the specified rectangle and returns a [HITRESULT](/windows/win32/api/ocidl/ne-ocidl-hitresult) value in `pHitResult`.
 
 ```
 STDMETHOD(QueryHitPoint)(
@@ -211,13 +211,13 @@ STDMETHOD(QueryHitPoint)(
 
 The value can be either HITRESULT_HIT or HITRESULT_OUTSIDE.
 
-If `dwAspect` equals [DVASPECT_CONTENT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect), the method returns S_OK. Otherwise, the method returns E_FAIL.
+If `dwAspect` equals [DVASPECT_CONTENT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), the method returns S_OK. Otherwise, the method returns E_FAIL.
 
-See [IViewObjectEx::QueryHitPoint](/windows/desktop/api/ocidl/nf-ocidl-iviewobjectex-queryhitpoint) in the Windows SDK.
+See [IViewObjectEx::QueryHitPoint](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-queryhitpoint) in the Windows SDK.
 
 ##  <a name="queryhitrect"></a>  IViewObjectExImpl::QueryHitRect
 
-Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a [HITRESULT](/windows/desktop/api/ocidl/ne-ocidl-taghitresult) value in `pHitResult`.
+Checks whether the control's display rectangle overlaps any point in the specified location rectangle and returns a [HITRESULT](/windows/win32/api/ocidl/ne-ocidl-hitresult) value in `pHitResult`.
 
 ```
 STDMETHOD(QueryHitRect)(
@@ -232,9 +232,9 @@ STDMETHOD(QueryHitRect)(
 
 The value can be either HITRESULT_HIT or HITRESULT_OUTSIDE.
 
-If `dwAspect` equals [DVASPECT_CONTENT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect), the method returns S_OK. Otherwise, the method returns E_FAIL.
+If `dwAspect` equals [DVASPECT_CONTENT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), the method returns S_OK. Otherwise, the method returns E_FAIL.
 
-See [IViewObjectEx::QueryHitRect](/windows/desktop/api/ocidl/nf-ocidl-iviewobjectex-queryhitrect) in the Windows SDK.
+See [IViewObjectEx::QueryHitRect](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-queryhitrect) in the Windows SDK.
 
 ##  <a name="setadvise"></a>  IViewObjectExImpl::SetAdvise
 
@@ -249,9 +249,9 @@ STDMETHOD(SetAdvise)(
 
 ### Remarks
 
-The pointer to the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).
+The pointer to the [IAdviseSink](/windows/win32/api/objidl/nn-objidl-iadvisesink) interface on the advise sink is stored in the control class data member [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).
 
-See [IViewObject::SetAdvise](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-setadvise) in the Windows SDK.
+See [IViewObject::SetAdvise](/windows/win32/api/oleidl/nf-oleidl-iviewobject-setadvise) in the Windows SDK.
 
 ##  <a name="unfreeze"></a>  IViewObjectExImpl::Unfreeze
 
@@ -263,7 +263,7 @@ STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
 
 ### Remarks
 
-See [IViewObject::Unfreeze](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-unfreeze) in the Windows SDK.
+See [IViewObject::Unfreeze](/windows/win32/api/oleidl/nf-oleidl-iviewobject-unfreeze) in the Windows SDK.
 
 ##  <a name="closehandle"></a>  IWorkerThreadClient::CloseHandle
 
@@ -325,7 +325,7 @@ The following code shows a simple implementation of `IWorkerThreadClient::Execut
 ## See also
 
 [CComControl Class](../../atl/reference/ccomcontrol-class.md)<br/>
-[ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)<br/>
+[ActiveX Controls Interfaces](/windows/win32/com/activex-controls-interfaces)<br/>
 [Tutorial](../../atl/active-template-library-atl-tutorial.md)<br/>
 [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

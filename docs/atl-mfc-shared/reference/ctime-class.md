@@ -30,7 +30,7 @@ class CTime
 |[CTime::Format](#format)|Converts a `CTime` object into a formatted string — based on the local time zone.|
 |[CTime::FormatGmt](#formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.|
-|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.|
+|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure.|
 |[CTime::GetCurrentTime](#getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|
 |[CTime::GetDay](#getday)|Returns the day represent by the `CTime` object.|
 |[CTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week represented by the `CTime` object.|
@@ -142,10 +142,10 @@ Indicates whether daylight savings time is in effect. Can have one of three valu
 MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.
 
 *st*<br/>
-A [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 *ft*<br/>
-A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure to be converted to a date/time value and copied into the new `CTime` object.
+A [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure to be converted to a date/time value and copied into the new `CTime` object.
 
 *dbts*<br/>
 A reference to a DBTIMESTAMP structure containing the current local time.
@@ -182,7 +182,7 @@ Each constructor is described below:
    > [!NOTE]
    > The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.
 
-For more information, see the [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure in the Windows SDK. Also see the [MS-DOS Date and Time](/windows/desktop/SysInfo/ms-dos-date-and-time) entry in the Windows SDK.
+For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure in the Windows SDK. Also see the [MS-DOS Date and Time](/windows/win32/SysInfo/ms-dos-date-and-time) entry in the Windows SDK.
 
 ### Example
 
@@ -277,7 +277,7 @@ Stores the resulting time in the referenced *dbts* structure. The `DBTIMESTAMP` 
 
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime
 
-Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure.
+Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure.
 
 ```
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -286,7 +286,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ### Parameters
 
 *timeDest*<br/>
-A reference to a [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) structure that will hold the converted date/time value of the `CTime` object.
+A reference to a [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) structure that will hold the converted date/time value of the `CTime` object.
 
 ### Return Value
 

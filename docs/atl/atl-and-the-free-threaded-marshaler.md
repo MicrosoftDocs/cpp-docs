@@ -8,7 +8,7 @@ ms.assetid: 2db88a13-2217-4ebc-aa7e-432d5da902eb
 
 The ATL Simple Object Wizard's Attributes page provides an option that allows your class to aggregate the free threaded marshaler (FTM).
 
-The wizard generates code to create an instance of the free threaded marshaler in `FinalConstruct` and release that instance in `FinalRelease`. A COM_INTERFACE_ENTRY_AGGREGATE macro is automatically added to the COM map to ensure that `QueryInterface` requests for [IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal) are handled by the free threaded marshaler.
+The wizard generates code to create an instance of the free threaded marshaler in `FinalConstruct` and release that instance in `FinalRelease`. A COM_INTERFACE_ENTRY_AGGREGATE macro is automatically added to the COM map to ensure that `QueryInterface` requests for [IMarshal](/windows/win32/api/objidlbase/nn-objidlbase-imarshal) are handled by the free threaded marshaler.
 
 The free threaded marshaler allows direct access to interfaces on your object from any thread in the same process, speeding up cross-apartment calls. This option is intended for classes that use the Both threading model.
 
@@ -17,7 +17,7 @@ When using this option, classes must take responsibility for the thread-safety o
 ## See also
 
 [Concepts](../atl/active-template-library-atl-concepts.md)<br/>
-[CoCreateFreeThreadedMarshaler](/windows/desktop/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
-[IMarshal](/windows/desktop/api/objidlbase/nn-objidlbase-imarshal)<br/>
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
-[In-Process Server Threading Issues](/windows/desktop/com/in-process-server-threading-issues)
+[CoCreateFreeThreadedMarshaler](/windows/win32/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler)<br/>
+[IMarshal](/windows/win32/api/objidlbase/nn-objidlbase-imarshal)<br/>
+[When to Use the Global Interface Table](/windows/win32/com/when-to-use-the-global-interface-table)<br/>
+[In-Process Server Threading Issues](/windows/win32/com/in-process-server-threading-issues)

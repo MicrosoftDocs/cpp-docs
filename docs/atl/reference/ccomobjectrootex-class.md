@@ -69,7 +69,7 @@ If your class does not specify the DECLARE_POLY_AGGREGATABLE macro, ATL creates 
 
 The advantage of using `CComPolyObject` is that you avoid having both `CComAggObject` and `CComObject` in your module to handle the aggregated and nonaggregated cases. A single `CComPolyObject` object handles both cases. Therefore, only one copy of the vtable and one copy of the functions exist in your module. If your vtable is large, this can substantially decrease your module size. However, if your vtable is small, using `CComPolyObject` can result in a slightly larger module size because it is not optimized for an aggregated or nonaggregated object, as are `CComAggObject` and `CComObject`.
 
-If your object is aggregated, [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) is implemented by `CComAggObject` or `CComPolyObject`. These classes delegate `QueryInterface`, `AddRef`, and `Release` calls to `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease` to forward to the outer unknown. Typically, you override `CComObjectRootEx::FinalConstruct` in your class to create any aggregated objects, and override `CComObjectRootEx::FinalRelease` to free any aggregated objects.
+If your object is aggregated, [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) is implemented by `CComAggObject` or `CComPolyObject`. These classes delegate `QueryInterface`, `AddRef`, and `Release` calls to `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease` to forward to the outer unknown. Typically, you override `CComObjectRootEx::FinalConstruct` in your class to create any aggregated objects, and override `CComObjectRootEx::FinalRelease` to free any aggregated objects.
 
 If your object is not aggregated, `IUnknown` is implemented by `CComObject` or `CComPolyObject`. In this case, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`'s `InternalQueryInterface`, `InternalAddRef`, and `InternalRelease` to perform the actual operations.
 
@@ -211,7 +211,7 @@ If the thread model is multithreaded, `InterlockedDecrement` is used to prevent 
 
 ##  <a name="lock"></a>  CComObjectRootEx::Lock
 
-If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object obtained through a private data member.
+If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection), which waits until the thread can take ownership of the critical section object obtained through a private data member.
 
 ```
 void Lock();
@@ -283,7 +283,7 @@ static void WINAPI ObjectMain(bool bStarting);
 
 The value of the *bStarting* parameter indicates whether the module is being initialized or terminated. The default implementation of `ObjectMain` does nothing, but you can override this function in your class to initialize or clean up resources that you want to allocate for the class. Note that `ObjectMain` is called before any instances of the class are requested.
 
-`ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) and [DllMain](/windows/desktop/Dlls/dllmain).
+`ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) and [DllMain](/windows/win32/Dlls/dllmain).
 
 ### Example
 
@@ -335,7 +335,7 @@ In non-debug builds, always returns 0. In debug builds, returns a value that may
 
 ##  <a name="unlock"></a>  CComObjectRootEx::Unlock
 
-If the thread model is multithreaded, this method calls the Win32 API function [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object obtained through a private data member.
+If the thread model is multithreaded, this method calls the Win32 API function [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection), which releases ownership of the critical section object obtained through a private data member.
 
 ```
 void Unlock();

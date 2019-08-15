@@ -27,14 +27,14 @@ class CBrush : public CGdiObject
 
 |Name|Description|
 |----------|-----------------|
-|[CBrush::CreateBrushIndirect](#createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure.|
+|[CBrush::CreateBrushIndirect](#createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure.|
 |[CBrush::CreateDIBPatternBrush](#createdibpatternbrush)|Initializes a brush with a pattern specified by a device-independent bitmap (DIB).|
 |[CBrush::CreateHatchBrush](#createhatchbrush)|Initializes a brush with the specified hatched pattern and color.|
 |[CBrush::CreatePatternBrush](#createpatternbrush)|Initializes a brush with a pattern specified by a bitmap.|
 |[CBrush::CreateSolidBrush](#createsolidbrush)|Initializes a brush with the specified solid color.|
 |[CBrush::CreateSysColorBrush](#createsyscolorbrush)|Creates a brush that is the default system color.|
 |[CBrush::FromHandle](#fromhandle)|Returns a pointer to a `CBrush` object when given a handle to a Windows `HBRUSH` object.|
-|[CBrush::GetLogBrush](#getlogbrush)|Gets a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure.|
+|[CBrush::GetLogBrush](#getlogbrush)|Gets a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure.|
 
 ### Public Operators
 
@@ -102,7 +102,7 @@ Points to a `CBitmap` object that specifies a bitmap with which the brush paints
 
 If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), or [CreateDIBPatternBrush](#createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.
 
-The constructor with a single [COLORREF](/windows/desktop/gdi/colorref) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.
+The constructor with a single [COLORREF](/windows/win32/gdi/colorref) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.
 
 The constructor with two parameters constructs a hatch brush. The *nIndex* parameter specifies the index of a hatched pattern. The *crColor* parameter specifies the color.
 
@@ -114,7 +114,7 @@ The constructor with a `CBitmap` parameter constructs a patterned brush. The par
 
 ##  <a name="createbrushindirect"></a>  CBrush::CreateBrushIndirect
 
-Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure.
+Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure.
 
 ```
 BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
@@ -123,7 +123,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
 ### Parameters
 
 *lpLogBrush*<br/>
-Points to a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure that contains information about the brush.
+Points to a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure that contains information about the brush.
 
 ### Return Value
 
@@ -159,7 +159,7 @@ BOOL CreateDIBPatternBrush(
 Identifies a global-memory object containing a packed device-independent bitmap (DIB).
 
 *nUsage*<br/>
-Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
+Specifies whether the `bmiColors[]` fields of the [BITMAPINFO](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) data structure (a part of the "packed DIB") contain explicit RGB values or indices into the currently realized logical palette. The parameter must be one of the following values:
 
 - DIB_PAL_COLORS The color table consists of an array of 16-bit indexes.
 
@@ -188,11 +188,11 @@ When an application selects a two-color DIB pattern brush into a monochrome devi
 
 For information about using the following Windows functions, see the Windows SDK:
 
-- [CreateDIBPatternBrush](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrush) (This function is provided only for compatibility with applications written for versions of Windows earlier than 3.0; use the `CreateDIBPatternBrushPt` function.)
+- [CreateDIBPatternBrush](/windows/win32/api/wingdi/nf-wingdi-createdibpatternbrush) (This function is provided only for compatibility with applications written for versions of Windows earlier than 3.0; use the `CreateDIBPatternBrushPt` function.)
 
-- [CreateDIBPatternBrushPt](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrushpt) (This function should be used for Win32-based applications.)
+- [CreateDIBPatternBrushPt](/windows/win32/api/wingdi/nf-wingdi-createdibpatternbrushpt) (This function should be used for Win32-based applications.)
 
-- [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc)
+- [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc)
 
 ### Example
 
@@ -226,7 +226,7 @@ Specifies the hatch style of the brush. It can be any one of the following value
 - HS_VERTICAL Vertical hatch
 
 *crColor*<br/>
-Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](/windows/desktop/gdi/colorref) in the Windows SDK for more information.
+Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](/windows/win32/gdi/colorref) in the Windows SDK for more information.
 
 ### Return Value
 
@@ -267,7 +267,7 @@ A pattern brush can be deleted without affecting the associated bitmap. This mea
 
 A brush created using a monochrome bitmap (1 color plane, 1 bit per pixel) is drawn using the current text and background colors. Pixels represented by a bit set to 0 are drawn with the current text color. Pixels represented by a bit set to 1 are drawn with the current background color.
 
-For information about using [CreatePatternBrush](/windows/desktop/api/wingdi/nf-wingdi-createpatternbrush), a Windows function, see the Windows SDK.
+For information about using [CreatePatternBrush](/windows/win32/api/wingdi/nf-wingdi-createpatternbrush), a Windows function, see the Windows SDK.
 
 ### Example
 
@@ -284,7 +284,7 @@ BOOL CreateSolidBrush(COLORREF crColor);
 ### Parameters
 
 *crColor*<br/>
-A [COLORREF](/windows/desktop/gdi/colorref) structure that specifies the color of the brush. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.
+A [COLORREF](/windows/win32/gdi/colorref) structure that specifies the color of the brush. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.
 
 ### Return Value
 
@@ -311,7 +311,7 @@ BOOL CreateSysColorBrush(int nIndex);
 ### Parameters
 
 *nIndex*<br/>
-Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) in the Windows SDK for a list of values.
+Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) in the Windows SDK for a list of values.
 
 ### Return Value
 
@@ -348,7 +348,7 @@ A pointer to a `CBrush` object if successful; otherwise NULL.
 
 If a `CBrush` object is not already attached to the handle, a temporary `CBrush` object is created and attached. This temporary `CBrush` object is valid only until the next time the application has idle time in its event loop. At this time, all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.
 
-For more information about using graphic objects, see [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.
+For more information about using graphic objects, see [Graphic Objects](/windows/win32/gdi/graphic-objects) in the Windows SDK.
 
 ### Example
 
@@ -365,7 +365,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
 ### Parameters
 
 *pLogBrush*<br/>
-Points to a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure that contains information about the brush.
+Points to a [LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush) structure that contains information about the brush.
 
 ### Return Value
 
@@ -401,7 +401,7 @@ If successful, a handle to the Windows GDI object represented by the `CBrush` ob
 
 This operator is a casting operator, which supports direct use of an HBRUSH object.
 
-For more information about using graphic objects, see [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.
+For more information about using graphic objects, see [Graphic Objects](/windows/win32/gdi/graphic-objects) in the Windows SDK.
 
 ### Example
 

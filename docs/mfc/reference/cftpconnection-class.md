@@ -146,7 +146,7 @@ Determines whether a response is expected from the FTP server. Can be one of the
 - `CmdRespRead` A response is expected.
 
 *dwFlags*<br/>
-A value containing the flags that control this function. For a complete list, see [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda).
+A value containing the flags that control this function. For a complete list, see [FTPCommand](/windows/win32/api/wininet/nf-wininet-ftpcommandw).
 
 *dwContext*<br/>
 A pointer to a value containing an application-defined value used to identify the application context in callbacks.
@@ -157,7 +157,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda) function, as described in the Windows SDK.
+This member function emulates the functionality of the [FTPCommand](/windows/win32/api/wininet/nf-wininet-ftpcommandw) function, as described in the Windows SDK.
 
 If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).
 
@@ -176,7 +176,7 @@ A pointer to a string containing the name of the directory to create.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -214,7 +214,7 @@ A pointer to a DWORD that contains the following information:
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -252,7 +252,7 @@ A pointer to a DWORD that contains the following information:
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -305,14 +305,14 @@ Indicates the attributes of the file. This can be any combination of the followi
 - FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.
 
 *dwFlags*<br/>
-Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](/windows/desktop/api/wininet/nf-wininet-ftpgetfilea) in the Windows SDK.
+Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](/windows/win32/api/wininet/nf-wininet-ftpgetfilew) in the Windows SDK.
 
 *dwContext*<br/>
 The context identifier for the file retrieval. See **Remarks** for more information about *dwContext*.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -402,7 +402,7 @@ The context identifier for placing the file. See **Remarks** for more informatio
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -425,7 +425,7 @@ A pointer to a string containing the file name to remove.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -446,7 +446,7 @@ A pointer to a string containing the directory to be removed.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -474,7 +474,7 @@ A pointer to a string containing the file's new name.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 
@@ -495,7 +495,7 @@ A pointer to a string containing the name of the directory.
 
 ### Return Value
 
-Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ### Remarks
 

@@ -19,9 +19,9 @@ By default, the MFC Application Wizard makes it possible for the user to open da
 
 This automatic registration support in `CWinApp` eliminates the need to ship a .reg file with your application or to do special installation work.
 
-If you want to initialize GDI+ for your application (by calling [GdiplusStartup](/windows/desktop/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.
+If you want to initialize GDI+ for your application (by calling [GdiplusStartup](/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.
 
-You can do this by setting the `SuppressBackgroundThread` member of the [GdiplusStartupInput](/windows/desktop/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) structure to **TRUE**. When suppressing the GDI+ background thread, the `NotificationHook` and `NotificationUnhook` calls should be made just prior to entering and exiting the application's message loop. For more information on these calls, see [GdiplusStartupOutput](/windows/desktop/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput). Therefore, a good place to call `GdiplusStartup` and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:
+You can do this by setting the `SuppressBackgroundThread` member of the [GdiplusStartupInput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupinput) structure to **TRUE**. When suppressing the GDI+ background thread, the `NotificationHook` and `NotificationUnhook` calls should be made just prior to entering and exiting the application's message loop. For more information on these calls, see [GdiplusStartupOutput](/windows/win32/api/gdiplusinit/ns-gdiplusinit-gdiplusstartupoutput). Therefore, a good place to call `GdiplusStartup` and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:
 
 [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]
 

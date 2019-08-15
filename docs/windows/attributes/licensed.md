@@ -17,7 +17,7 @@ Indicates that the COM object to which it applies is licensed, and must be insta
 
 ## Remarks
 
-The **licensed** C++ attribute has the same functionality as the [licensed](/windows/desktop/Midl/licensed) MIDL attribute.
+The **licensed** C++ attribute has the same functionality as the [licensed](/windows/win32/Midl/licensed) MIDL attribute.
 
 ## Example
 

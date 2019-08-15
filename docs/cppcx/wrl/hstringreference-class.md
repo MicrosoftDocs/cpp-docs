@@ -18,7 +18,7 @@ class HStringReference;
 
 ## Remarks
 
-The lifetime of the backing buffer in the new HSTRING is not managed by the Windows Runtime. The caller allocates a source string on the stack frame to avoid a heap allocation and to eliminate the risk of a memory leak. Also, the caller must ensure that source string remains unchanged during the lifetime of the attached HSTRING. For more information, see [WindowsCreateStringReference function](/windows/desktop/api/winstring/nf-winstring-windowscreatestringreference).
+The lifetime of the backing buffer in the new HSTRING is not managed by the Windows Runtime. The caller allocates a source string on the stack frame to avoid a heap allocation and to eliminate the risk of a memory leak. Also, the caller must ensure that source string remains unchanged during the lifetime of the attached HSTRING. For more information, see [WindowsCreateStringReference function](/windows/win32/api/winstring/nf-winstring-windowscreatestringreference).
 
 ## Members
 
@@ -72,7 +72,7 @@ The HSTRING that receives the copy.
 
 ### Remarks
 
-This method calls the [WindowsDuplicateString](/windows/desktop/api/winstring/nf-winstring-windowsduplicatestring) function.
+This method calls the [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) function.
 
 ## <a name="get"></a>HStringReference::Get
 

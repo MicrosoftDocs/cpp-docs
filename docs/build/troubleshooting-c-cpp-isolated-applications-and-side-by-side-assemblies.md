@@ -28,14 +28,14 @@ If your application is deployed on a computer that doesn't have Visual Studio, a
 
 1. If your application depends on side-by-side assemblies and a manifest is not present, you have to ensure that the linker generates a manifest for your project. Check the linker option **Generate manifest** in the **Project Properties** dialog box for the project.
 
-1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](/windows/desktop/sbscs/manifests).
+1. If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/win32/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](/windows/win32/sbscs/manifests).
 
    > [!NOTE]
    > If both an embedded manifest and a separate manifest file are present, the operating system loader uses the embedded manifest and ignores the separate file. However, on Windows XP, the opposite is true—the separate manifest file is used and the embedded manifest is ignored.
 
-1. We recommend that you embed a manifest in every DLL because external manifests are ignored when a DLL is loaded though a `LoadLibrary` call. For more information, see [Assembly manifests](/windows/desktop/SbsCs/assembly-manifests).
+1. We recommend that you embed a manifest in every DLL because external manifests are ignored when a DLL is loaded though a `LoadLibrary` call. For more information, see [Assembly manifests](/windows/win32/SbsCs/assembly-manifests).
 
-1. Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.
+1. Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](/windows/win32/SbsCs/assembly-searching-sequence). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.
 
 ## Example
 
@@ -65,7 +65,7 @@ The assembly manifest for a shared assembly is installed in the %WINDIR%\WinSxS\
 </assembly>
 ```
 
-Side-by-side assemblies can also use [publisher configuration files](/windows/desktop/SbsCs/publisher-configuration-files)—also known as policy files—to globally redirect applications and assemblies to use one version of a side-by-side assembly instead of another version of the same assembly. You can check the policies for a shared assembly in the %WINDIR%\WinSxS\Policies\ folder. Here is an example policy file:
+Side-by-side assemblies can also use [publisher configuration files](/windows/win32/SbsCs/publisher-configuration-files)—also known as policy files—to globally redirect applications and assemblies to use one version of a side-by-side assembly instead of another version of the same assembly. You can check the policies for a shared assembly in the %WINDIR%\WinSxS\Policies\ folder. Here is an example policy file:
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -89,7 +89,7 @@ However, the assembly can also be installed as a private side-by-side assembly i
 
 1. Try to open the \\<assemblyName\>\ folder in the folder that contains appl.exe, and if \\<assemblyName\>\ exists, try to load a manifest file that has the name \<assemblyName>.manifest from this folder. If the manifest is found, the loader loads the assembly from the \\<assemblyName\>\ folder. If the assembly is not found, load fails.
 
-For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.
+For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](/windows/win32/SbsCs/assembly-searching-sequence). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.
 
 ## See also
 

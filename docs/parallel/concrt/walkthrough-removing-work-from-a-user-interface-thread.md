@@ -24,7 +24,7 @@ Read the following topics before you start this walkthrough:
 
 - [Cancellation in the PPL](cancellation-in-the-ppl.md)
 
-We also recommend that you understand the basics of MFC application development and GDI+ before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about GDI+, see [GDI+](https://msdn.microsoft.com/library/windows/desktop/ms533798).
+We also recommend that you understand the basics of MFC application development and GDI+ before you start this walkthrough. For more information about MFC, see [MFC Desktop Applications](../../mfc/mfc-desktop-applications.md). For more information about GDI+, see [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
 ##  <a name="top"></a> Sections
 
@@ -58,7 +58,7 @@ This section describes how to create the basic MFC application.
 
 ##  <a name="serial"></a> Implementing the Serial Version of the Mandelbrot Application
 
-This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a GDI+ [Bitmap](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object and then copies the contents of that bitmap to the client window.
+This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a GDI+ [Bitmap](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object and then copies the contents of that bitmap to the client window.
 
 #### To implement the serial version of the Mandelbrot application
 

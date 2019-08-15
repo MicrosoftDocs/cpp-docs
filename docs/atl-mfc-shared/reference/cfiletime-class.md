@@ -77,7 +77,7 @@ The following static const member variables are provided to simplify calculation
 |Day|Hour \* 24|
 |Week|Day \* 7|
 
-**Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](/windows/desktop/SysInfo/file-times).
+**Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](/windows/win32/SysInfo/file-times).
 
 ## Inheritance Hierarchy
 
@@ -102,7 +102,7 @@ CFileTime(ULONGLONG nTime) throw();
 ### Parameters
 
 *ft*<br/>
-A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) structure.
+A [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structure.
 
 *nTime*<br/>
 The date and time expressed as a 64-bit value.
@@ -453,7 +453,7 @@ See the example for [CFileTime::Millisecond](#millisecond).
 
 ## See also
 
-[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
+[FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

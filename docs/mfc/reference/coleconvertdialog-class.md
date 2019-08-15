@@ -7,7 +7,7 @@ ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
 ---
 # COleConvertDialog Class
 
-For more information, see the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure in the Windows SDK.
+For more information, see the [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) structure in the Windows SDK.
 
 ## Syntax
 
@@ -107,7 +107,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 To display the dialog box, call the [DoModal](#domodal) function.
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) and the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) and the [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) structure.
 
 ##  <a name="doconvert"></a>  COleConvertDialog::DoConvert
 
@@ -146,7 +146,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if the user canceled the dialog box.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIConvert](/windows/desktop/api/oledlg/nf-oledlg-oleuiconverta) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIConvert](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) function in the Windows SDK.
 
 ### Remarks
 
@@ -170,7 +170,7 @@ The CLSID associated with the item that was selected in the Convert dialog box.
 
 Call this function only after [DoModal](#domodal) returns IDOK.
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
 ##  <a name="getdrawaspect"></a>  COleConvertDialog::GetDrawAspect
 
@@ -192,7 +192,7 @@ The method needed to render the object.
 
 Call this function only after [DoModal](#domodal) returns IDOK.
 
-For more information on drawing aspect, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) data structure in the Windows SDK.
+For more information on drawing aspect, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) data structure in the Windows SDK.
 
 ##  <a name="geticonicmetafile"></a>  COleConvertDialog::GetIconicMetafile
 
@@ -250,7 +250,7 @@ OLEUICONVERT m_cv;
 
 Members of this structure can be modified either directly or through member functions.
 
-For more information, see the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure in the Windows SDK.
+For more information, see the [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) structure in the Windows SDK.
 
 ## See also
 

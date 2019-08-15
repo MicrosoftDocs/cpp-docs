@@ -29,7 +29,7 @@ class CPropertyPage : public CDialog
 |----------|-----------------|
 |[CPropertyPage::CancelToClose](#canceltoclose)|Changes the OK button to read Close, and disables the Cancel button, after an unrecoverable change in the page of a modal property sheet.|
 |[CPropertyPage::Construct](#construct)|Constructs a `CPropertyPage` object. Use `Construct` if you want to specify your parameters at run time, or if you are using arrays.|
-|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.|
+|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.|
 |[CPropertyPage::OnApply](#onapply)|Called by the framework when the Apply Now button is clicked.|
 |[CPropertyPage::OnCancel](#oncancel)|Called by the framework when the Cancel button is clicked.|
 |[CPropertyPage::OnKillActive](#onkillactive)|Called by the framework when the current page is no longer the active page. Perform data validation here.|
@@ -47,7 +47,7 @@ class CPropertyPage : public CDialog
 
 |Name|Description|
 |----------|-----------------|
-|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure. Provides access to basic property page parameters.|
+|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) structure. Provides access to basic property page parameters.|
 
 ## Remarks
 
@@ -220,7 +220,7 @@ If you have multiple parameters (for example, if you are using an array), use [C
 
 ##  <a name="getpsp"></a>  CPropertyPage::GetPSP
 
-Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.
+Retrieves the Windows [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2) structure associated with the `CPropertyPage` object.
 
 ```
 const PROPSHEETPAGE& GetPSP() const;
@@ -234,7 +234,7 @@ A reference to the `PROPSHEETPAGE` structure.
 
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp
 
-`m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-propsheetpagea_v2).
+`m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](/windows/win32/api/prsht/ns-prsht-propsheetpagea_v2).
 
 ```
 PROPSHEETPAGE m_psp;
@@ -270,7 +270,7 @@ Override this member function to specify what action your program takes when the
 
 The default implementation of `OnApply` calls `OnOK`.
 
-For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](/windows/desktop/Controls/psn-apply) in the Windows SDK.
+For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](/windows/win32/Controls/psn-apply) in the Windows SDK.
 
 ### Example
 
@@ -326,7 +326,7 @@ virtual void OnOK();
 
 ### Remarks
 
-When the user chooses either the OK or the Apply Now button, the framework receives the [PSN_APPLY](/windows/desktop/Controls/psn-apply) notification from the property page. The call to `OnOK` won't be made if you call [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) because the property page does not send the notification in that case.
+When the user chooses either the OK or the Apply Now button, the framework receives the [PSN_APPLY](/windows/win32/Controls/psn-apply) notification from the property page. The call to `OnOK` won't be made if you call [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) because the property page does not send the notification in that case.
 
 Override this member function to implement additional behavior specific to the currently active page when user dismisses the entire property sheet.
 
@@ -440,7 +440,7 @@ When a user clicks the **Finish** button in a wizard, the framework calls this f
 
 You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return FALSE to prevent the property sheet from being destroyed.
 
-For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](/windows/desktop/Controls/psn-wizfinish) in the Windows SDK.
+For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](/windows/win32/Controls/psn-wizfinish) in the Windows SDK.
 
 For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).
 

@@ -660,7 +660,7 @@ virtual BOOL Create(
 [in] A pointer to the parent window of the toolbar.
 
 *dwStyle*<br/>
-[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.
+[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/win32/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.
 
 *nID*<br/>
 [in] The ID of the child window of the toolbar.
@@ -698,7 +698,7 @@ virtual BOOL CreateEx(
 [in] Additional styles for creating the embedded control bar object.
 
 *dwStyle*<br/>
-[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.
+[in] The toolbar style. See [Toolbar Control and Button Styles](/windows/win32/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.
 
 *rcBorders*<br/>
 [in] A `CRect` object that specifies the widths of the toolbar window borders.
@@ -1339,7 +1339,7 @@ static COLORREF GetHotTextColor();
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) value that represent the current highlighted text color.
+A [COLORREF](/windows/win32/gdi/colorref) value that represent the current highlighted text color.
 
 ### Remarks
 
@@ -2178,7 +2178,7 @@ TRUE if the last command was sent from the button that *pButton* specifies; othe
 
 ### Remarks
 
-This method obtains a pointer to a [MSG Structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) by calling `CWnd::GetCurrentMessage`. It then compares the HWND of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.
+This method obtains a pointer to a [MSG Structure](/windows/win32/api/winuser/ns-winuser-msg) by calling `CWnd::GetCurrentMessage`. It then compares the HWND of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.
 
 ##  <a name="islocked"></a>  CMFCToolBar::IsLocked
 

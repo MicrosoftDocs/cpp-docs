@@ -37,7 +37,7 @@ class CSocketAddr
 
 This class provides an IP version agnostic approach for looking up network addresses for use with Windows sockets API functions and socket wrappers in libraries.
 
-The members of this class that are used to look up network addresses use the Win32 API function [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo). The ANSI or UNICODE version of the function is called depending on whether your code is compiled for ANSI or UNICODE.
+The members of this class that are used to look up network addresses use the Win32 API function [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo). The ANSI or UNICODE version of the function is called depending on whether your code is compiled for ANSI or UNICODE.
 
 This class supports both IPv4 andIPv6 network addresses.
 
@@ -108,7 +108,7 @@ Returns zero if the address is calculated successfully. Returns a nonzero Window
 
 ### Remarks
 
-The host name parameter may be in either IPv4 or IPv6 format. This method calls the Win32 API function [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
+The host name parameter may be in either IPv4 or IPv6 format. This method calls the Win32 API function [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
 
 ##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr
 
@@ -142,7 +142,7 @@ Returns zero if the address is calculated successfully. Returns a nonzero Window
 
 ### Remarks
 
-This method calls the Win32 API function [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
+This method calls the Win32 API function [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
 
 ##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr
 
@@ -176,7 +176,7 @@ Returns zero if the address is calculated successfully. Returns a nonzero Window
 
 ### Remarks
 
-This method calls the Win32 API function [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
+This method calls the Win32 API function [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) to perform the conversion.
 
 ##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo
 
@@ -189,7 +189,7 @@ addrinfo* const GetAddrInfo(int nIndex = 0) const;
 ### Parameters
 
 *nIndex*<br/>
-A reference to a specific element in the [addrinfo](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa) list.
+A reference to a specific element in the [addrinfo](/windows/win32/api/ws2def/ns-ws2def-addrinfow) list.
 
 ### Return Value
 
@@ -205,7 +205,7 @@ addrinfo* const GetAddrInfoList() const;
 
 ### Return Value
 
-Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa).
+Pointer to a linked list of one or more `addrinfo` structures containing response information about the host. For more information, see [addrinfo structure](/windows/win32/api/ws2def/ns-ws2def-addrinfow).
 
 ## See also
 

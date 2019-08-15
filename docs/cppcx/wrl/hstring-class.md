@@ -8,7 +8,7 @@ ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
 ---
 # HString Class
 
-A helper class for managing the lifetime of an [HSTRING](/windows/desktop/WinRT/hstring) using the RAII pattern.
+A helper class for managing the lifetime of an [HSTRING](/windows/win32/WinRT/hstring) using the RAII pattern.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ class HString;
 
 ## Remarks
 
-The Windows Runtime provides access to strings through [HSTRING](/windows/desktop/WinRT/hstring) handles. The `HString` class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
+The Windows Runtime provides access to strings through [HSTRING](/windows/win32/WinRT/hstring) handles. The `HString` class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern.
 
 ## Members
 
@@ -103,7 +103,7 @@ The HSTRING that receives the copy.
 
 ### Remarks
 
-This method calls the [WindowsDuplicateString](/windows/desktop/api/winstring/nf-winstring-windowsduplicatestring) function.
+This method calls the [WindowsDuplicateString](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) function.
 
 ## <a name="detach"></a>HString::Detach
 

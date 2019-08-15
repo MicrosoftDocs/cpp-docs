@@ -1682,7 +1682,7 @@ virtual void Redraw();
 
 ### Remarks
 
-This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.
+This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.
 
 ##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData
 

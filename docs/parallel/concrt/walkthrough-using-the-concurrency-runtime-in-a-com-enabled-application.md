@@ -20,17 +20,17 @@ Read the following documents before you start this walkthrough:
 
 - [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)
 
-For more information about COM, see [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal).
+For more information about COM, see [Component Object Model (COM)](/windows/win32/com/component-object-model--com--portal).
 
 ## Managing the Lifetime of the COM Library
 
 Although the use of COM with the Concurrency Runtime follows the same principles as any other concurrency mechanism, the following guidelines can help you use these libraries together effectively.
 
-- A thread must call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) before it uses the COM library.
+- A thread must call [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) before it uses the COM library.
 
 - A thread can call `CoInitializeEx` multiple times as long as it provides the same arguments to every call.
 
-- For each call to `CoInitializeEx`, a thread must also call [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize). In other words, calls to `CoInitializeEx` and `CoUninitialize` must be balanced.
+- For each call to `CoInitializeEx`, a thread must also call [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize). In other words, calls to `CoInitializeEx` and `CoUninitialize` must be balanced.
 
 - To switch from one thread apartment to another, a thread must completely free the COM library before it calls `CoInitializeEx` with the new threading specification.
 

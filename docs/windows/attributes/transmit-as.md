@@ -22,7 +22,7 @@ Specifies the data type that is transmitted between client and server.
 
 ## Remarks
 
-The **transmit_as** C++ attribute has the same functionality as the [transmit_as](/windows/desktop/Midl/transmit-as) MIDL attribute.
+The **transmit_as** C++ attribute has the same functionality as the [transmit_as](/windows/win32/Midl/transmit-as) MIDL attribute.
 
 ## Example
 

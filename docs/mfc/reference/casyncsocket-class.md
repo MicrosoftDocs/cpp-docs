@@ -89,7 +89,7 @@ To use a `CAsyncSocket` object, call its constructor, then call the [Create](#cr
 > [!NOTE]
 >  When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.
 
-For more information, see [Windows Sockets: Using Class CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) and related articles., as well as [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
+For more information, see [Windows Sockets: Using Class CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) and related articles., as well as [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
 ## Inheritance Hierarchy
 
@@ -118,7 +118,7 @@ virtual BOOL Accept(
 A reference identifying a new socket that is available for connection.
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that receives the address of the connecting socket, as known on the network. The exact format of the *lpSockAddr* argument is determined by the address family established when the socket was created. If *lpSockAddr* and/or *lpSockAddrLen* are equal to NULL, then no information about the remote address of the accepted socket is returned.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that receives the address of the connecting socket, as known on the network. The exact format of the *lpSockAddr* argument is determined by the address family established when the socket was created. If *lpSockAddr* and/or *lpSockAddrLen* are equal to NULL, then no information about the remote address of the accepted socket is returned.
 
 *lpSockAddrLen*<br/>
 A pointer to the length of the address in *lpSockAddr* in bytes. The *lpSockAddrLen* is a value-result parameter: it should initially contain the amount of space pointed to by *lpSockAddr*; on return it will contain the actual length (in bytes) of the address returned.
@@ -131,7 +131,7 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 
 - WSAENETDOWN The Windows Sockets implementation detected that the network subsystem failed.
 
-- WSAEFAULT The *lpSockAddrLen* argument is too small (less than the size of a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure).
+- WSAEFAULT The *lpSockAddrLen* argument is too small (less than the size of a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure).
 
 - WSAEINPROGRESS A blocking Windows Sockets call is in progress.
 
@@ -254,7 +254,7 @@ The port identifying the socket application.
 The network address, a dotted number such as "128.56.22.8". Passing the NULL string for this parameter indicates the `CAsyncSocket` instance should listen for client activity on all network interfaces.
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that contains the address to assign to this socket.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that contains the address to assign to this socket.
 
 *nSockAddrLen*<br/>
 The length of the address in *lpSockAddr* in bytes.
@@ -269,7 +269,7 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 
 - WSAEADDRINUSE The specified address is already in use. (See the SO_REUSEADDR socket option under [SetSockOpt](#setsockopt).)
 
-- WSAEFAULT The *nSockAddrLen* argument is too small (less than the size of a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure).
+- WSAEFAULT The *nSockAddrLen* argument is too small (less than the size of a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure).
 
 - WSAEINPROGRESS A blocking Windows Sockets call is in progress.
 
@@ -334,7 +334,7 @@ The network address of the socket to which this object is connected: a machine n
 The port identifying the socket application.
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that contains the address of the connected socket.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that contains the address of the connected socket.
 
 *nSockAddrLen*<br/>
 The length of the address in *lpSockAddr* in bytes.
@@ -459,7 +459,7 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 > [!IMPORTANT]
 > `Create` is **not** thread-safe.  If you are calling it in a multi-threaded environment where it could be invoked simultaneously by different threads, be sure to protect each call with a mutex or other synchronization lock.
 
-For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md) and [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md) and [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
+For more information about stream and datagram sockets, see the articles [Windows Sockets: Background](../../mfc/windows-sockets-background.md) and [Windows Sockets: Ports and Socket Addresses](../../mfc/windows-sockets-ports-and-socket-addresses.md) and [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
 ##  <a name="detach"></a>  CAsyncSocket::Detach
 
@@ -506,7 +506,7 @@ The return value indicates the error code for the last Windows Sockets API routi
 
 When a particular member function indicates that an error has occurred, `GetLastError` should be called to retrieve the appropriate error code. See the individual member function descriptions for a list of applicable error codes.
 
-For more information about the error codes, see [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
+For more information about the error codes, see [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
 ##  <a name="getpeername"></a>  CAsyncSocket::GetPeerName
 
@@ -531,7 +531,7 @@ Reference to a `CString` object that receives a dotted number IP address.
 Reference to a UINT that stores a port.
 
 *lpSockAddr*<br/>
-A pointer to the [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that receives the name of the peer socket.
+A pointer to the [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that receives the name of the peer socket.
 
 *lpSockAddrLen*<br/>
 A pointer to the length of the address in *lpSockAddr* in bytes. On return, the *lpSockAddrLen* argument contains the actual size of *lpSockAddr* returned in bytes.
@@ -617,7 +617,7 @@ Reference to a `CString` object that receives a dotted number IP address.
 Reference to a UINT that stores a port.
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that receives the address of the socket.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that receives the address of the socket.
 
 *lpSockAddrLen*<br/>
 A pointer to the length of the address in *lpSockAddr* in bytes.
@@ -1137,7 +1137,7 @@ If the socket is of type SOCK_STREAM and the remote side has shut down the conne
 
 ##  <a name="receivefrom"></a>  CAsyncSocket::ReceiveFrom
 
-Call this member function to receive a datagram and store the source address in the [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure or in *rSocketAddress*.
+Call this member function to receive a datagram and store the source address in the [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure or in *rSocketAddress*.
 
 ```
 int ReceiveFrom(
@@ -1170,7 +1170,7 @@ Reference to a `CString` object that receives a dotted number IP address.
 Reference to a UINT that stores a port.
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that holds the source address upon return.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that holds the source address upon return.
 
 *lpSockAddrLen*<br/>
 A pointer to the length of the source address in *lpSockAddr* in bytes.
@@ -1222,13 +1222,13 @@ For sockets of type SOCK_STREAM, as much information as is currently available u
 
 For datagram sockets, data is extracted from the first enqueued datagram, up to the size of the buffer supplied. If the datagram is larger than the buffer supplied, the buffer is filled with the first part of the message, the excess data is lost, and `ReceiveFrom` returns a value of SOCKET_ERROR with the error code set to WSAEMSGSIZE.
 
-If *lpSockAddr* is nonzero, and the socket is of type SOCK_DGRAM, the network address of the socket which sent the data is copied to the corresponding [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure. The value pointed to by *lpSockAddrLen* is initialized to the size of this structure, and is modified on return to indicate the actual size of the address stored there. If no incoming data is available at the socket, the `ReceiveFrom` call waits for data to arrive unless the socket is nonblocking. In this case, a value of SOCKET_ERROR is returned with the error code set to WSAEWOULDBLOCK. The `OnReceive` callback can be used to determine when more data arrives.
+If *lpSockAddr* is nonzero, and the socket is of type SOCK_DGRAM, the network address of the socket which sent the data is copied to the corresponding [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure. The value pointed to by *lpSockAddrLen* is initialized to the size of this structure, and is modified on return to indicate the actual size of the address stored there. If no incoming data is available at the socket, the `ReceiveFrom` call waits for data to arrive unless the socket is nonblocking. In this case, a value of SOCKET_ERROR is returned with the error code set to WSAEWOULDBLOCK. The `OnReceive` callback can be used to determine when more data arrives.
 
 If the socket is of type SOCK_STREAM and the remote side has shut down the connection gracefully, a `ReceiveFrom` will complete immediately with 0 bytes received.
 
 ##  <a name="receivefromex"></a>  CAsyncSocket::ReceiveFromEx
 
-Call this member function to receive a datagram and store the source address in the [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure or in *rSocketAddress* (handles IPv6 addresses).
+Call this member function to receive a datagram and store the source address in the [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure or in *rSocketAddress* (handles IPv6 addresses).
 
 ```
 int ReceiveFromEx(
@@ -1300,7 +1300,7 @@ For sockets of type SOCK_STREAM, as much information as is currently available u
 
 For datagram sockets, data is extracted from the first enqueued datagram, up to the size of the buffer supplied. If the datagram is larger than the buffer supplied, the buffer is filled with the first part of the message, the excess data is lost, and `ReceiveFromEx` returns a value of SOCKET_ERROR with the error code set to WSAEMSGSIZE.
 
-If *lpSockAddr* is nonzero, and the socket is of type SOCK_DGRAM, the network address of the socket which sent the data is copied to the corresponding [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure. The value pointed to by *lpSockAddrLen* is initialized to the size of this structure, and is modified on return to indicate the actual size of the address stored there. If no incoming data is available at the socket, the `ReceiveFromEx` call waits for data to arrive unless the socket is nonblocking. In this case, a value of SOCKET_ERROR is returned with the error code set to WSAEWOULDBLOCK. The `OnReceive` callback can be used to determine when more data arrives.
+If *lpSockAddr* is nonzero, and the socket is of type SOCK_DGRAM, the network address of the socket which sent the data is copied to the corresponding [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure. The value pointed to by *lpSockAddrLen* is initialized to the size of this structure, and is modified on return to indicate the actual size of the address stored there. If no incoming data is available at the socket, the `ReceiveFromEx` call waits for data to arrive unless the socket is nonblocking. In this case, a value of SOCKET_ERROR is returned with the error code set to WSAEWOULDBLOCK. The `OnReceive` callback can be used to determine when more data arrives.
 
 If the socket is of type SOCK_STREAM and the remote side has shut down the connection gracefully, a `ReceiveFromEx` will complete immediately with 0 bytes received.
 
@@ -1368,7 +1368,7 @@ If no error occurs, `Send` returns the total number of characters sent. (Note th
 
 ### Remarks
 
-`Send` is used to write outgoing data on connected stream or datagram sockets. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure returned by `AfxSocketInit`. If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned via `GetLastError`, and no data is transmitted.
+`Send` is used to write outgoing data on connected stream or datagram sockets. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) structure returned by `AfxSocketInit`. If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned via `GetLastError`, and no data is transmitted.
 
 Note that for a datagram socket the successful completion of a `Send` does not indicate that the data was successfully delivered.
 
@@ -1420,7 +1420,7 @@ Specifies the way in which the call is made. The semantics of this function are 
 - MSG_OOB Send out-of-band data (SOCK_STREAM only).
 
 *lpSockAddr*<br/>
-A pointer to a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure that contains the address of the target socket.
+A pointer to a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure that contains the address of the target socket.
 
 *nSockAddrLen*<br/>
 The length of the address in *lpSockAddr* in bytes.
@@ -1437,7 +1437,7 @@ If no error occurs, `SendTo` returns the total number of characters sent. (Note 
 
 - WSAEINPROGRESS A blocking Windows Sockets operation is in progress.
 
-- WSAEFAULT The *lpBuf* or *lpSockAddr* parameters are not part of the user address space, or the *lpSockAddr* argument is too small (less than the size of a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure).
+- WSAEFAULT The *lpBuf* or *lpSockAddr* parameters are not part of the user address space, or the *lpSockAddr* argument is too small (less than the size of a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure).
 
 - WSAEINVAL The host name is invalid.
 
@@ -1471,7 +1471,7 @@ If no error occurs, `SendTo` returns the total number of characters sent. (Note 
 
 ### Remarks
 
-`SendTo` is used on datagram or stream sockets and is used to write outgoing data on a socket. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure filled out by [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned, and no data is transmitted.
+`SendTo` is used on datagram or stream sockets and is used to write outgoing data on a socket. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) structure filled out by [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned, and no data is transmitted.
 
 Note that the successful completion of a `SendTo` does not indicate that the data was successfully delivered.
 
@@ -1527,7 +1527,7 @@ If no error occurs, `SendToEx` returns the total number of characters sent. (Not
 
 - WSAEINPROGRESS A blocking Windows Sockets operation is in progress.
 
-- WSAEFAULT The *lpBuf* or *lpSockAddr* parameters are not part of the user address space, or the *lpSockAddr* argument is too small (less than the size of a [SOCKADDR](/windows/desktop/winsock/sockaddr-2) structure).
+- WSAEFAULT The *lpBuf* or *lpSockAddr* parameters are not part of the user address space, or the *lpSockAddr* argument is too small (less than the size of a [SOCKADDR](/windows/win32/winsock/sockaddr-2) structure).
 
 - WSAEINVAL The host name is invalid.
 
@@ -1563,7 +1563,7 @@ If no error occurs, `SendToEx` returns the total number of characters sent. (Not
 
 This method is the same as [CAsyncSocket::SendTo](#sendto) except that it handles IPv6 addresses as well as older protocols.
 
-`SendToEx` is used on datagram or stream sockets and is used to write outgoing data on a socket. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) structure filled out by [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned, and no data is transmitted.
+`SendToEx` is used on datagram or stream sockets and is used to write outgoing data on a socket. For datagram sockets, care must be taken not to exceed the maximum IP packet size of the underlying subnets, which is given by the `iMaxUdpDg` element in the [WSADATA](/windows/win32/api/winsock2/ns-winsock2-wsadata) structure filled out by [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). If the data is too long to pass atomically through the underlying protocol, the error WSAEMSGSIZE is returned, and no data is transmitted.
 
 Note that the successful completion of a `SendToEx` does not indicate that the data was successfully delivered.
 

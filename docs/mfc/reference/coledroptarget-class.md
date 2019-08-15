@@ -112,7 +112,7 @@ The effect that would result if a drop were attempted at the location specified 
 
 Override this function to allow drop operations to occur in the window. The default implementation calls [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), which simply returns DROPEFFECT_NONE by default.
 
-For more information, see [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
+For more information, see [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.
 
 ##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave
 
@@ -131,7 +131,7 @@ Points to the window the cursor is leaving.
 
 Override this function if you want special behavior when the drag operation leaves the specified window. The default implementation of this function calls [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave).
 
-For more information, see [IDropTarget::DragLeave](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragleave) in the Windows SDK.
+For more information, see [IDropTarget::DragLeave](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragleave) in the Windows SDK.
 
 ##  <a name="ondragover"></a>  COleDropTarget::OnDragOver
 
@@ -177,7 +177,7 @@ The effect that would result if a drop were attempted at the location specified 
 
 This function should be overridden to allow drop operations to occur in the window. The default implementation of this function calls [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), which returns DROPEFFECT_NONE by default. Because this function is called frequently during a drag-and-drop operation, it should be optimized as much as possible.
 
-For more information, see [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover) in the Windows SDK.
+For more information, see [IDropTarget::DragOver](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover) in the Windows SDK.
 
 ### Example
 
@@ -265,7 +265,7 @@ The framework first calls [OnDropEx](#ondropex). If the `OnDropEx` function does
 
 The default implementation of `COleDropTarget::OnDrop` calls [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), which simply returns FALSE by default.
 
-For more information, see [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
+For more information, see [IDropTarget::Drop](/windows/win32/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
 
 ##  <a name="ondropex"></a>  COleDropTarget::OnDropEx
 
@@ -319,7 +319,7 @@ Drop effects describe the action associated with a drop operation. See the follo
 
 - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target.
 
-For more information, see [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
+For more information, see [IDropTarget::Drop](/windows/win32/api/oleidl/nf-oleidl-idroptarget-drop) in the Windows SDK.
 
 ##  <a name="register"></a>  COleDropTarget::Register
 
@@ -342,7 +342,7 @@ Nonzero if registration is successful; otherwise 0.
 
 This function must be called for drop operations to be accepted.
 
-For more information, see [RegisterDragDrop](/windows/desktop/api/ole2/nf-ole2-registerdragdrop) in the Windows SDK.
+For more information, see [RegisterDragDrop](/windows/win32/api/ole2/nf-ole2-registerdragdrop) in the Windows SDK.
 
 ##  <a name="revoke"></a>  COleDropTarget::Revoke
 
@@ -356,7 +356,7 @@ virtual void Revoke();
 
 This function is called automatically from the [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) handler for the window that was registered, so it is usually not necessary to call this function explicitly.
 
-For more information, see [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) in the Windows SDK.
+For more information, see [RevokeDragDrop](/windows/win32/api/ole2/nf-ole2-revokedragdrop) in the Windows SDK.
 
 ## See also
 
