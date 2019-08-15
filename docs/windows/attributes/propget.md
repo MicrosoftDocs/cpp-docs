@@ -17,7 +17,7 @@ Specifies a property accessor function.
 
 ## Remarks
 
-The **propget** C++ attribute has the same functionality as the [propget](/windows/desktop/Midl/propget) MIDL attribute.
+The **propget** C++ attribute has the same functionality as the [propget](/windows/win32/Midl/propget) MIDL attribute.
 
 ## Example
 

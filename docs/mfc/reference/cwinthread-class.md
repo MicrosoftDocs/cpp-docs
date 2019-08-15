@@ -35,7 +35,7 @@ class CWinThread : public CCmdTarget
 |[CWinThread::IsIdleMessage](#isidlemessage)|Checks for special messages.|
 |[CWinThread::OnIdle](#onidle)|Override to perform thread-specific idle-time processing.|
 |[CWinThread::PostThreadMessage](#postthreadmessage)|Posts a message to another `CWinThread` object.|
-|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|
+|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage).|
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the thread's message and command handlers.|
 |[CWinThread::PumpMessage](#pumpmessage)|Contains the thread's message loop.|
@@ -144,7 +144,7 @@ virtual int ExitInstance();
 
 ### Return Value
 
-The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
+The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
 
 ### Remarks
 
@@ -200,7 +200,7 @@ The current thread priority level within its priority class. The value returned 
 
 - THREAD_PRIORITY_IDLE
 
-For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
+For more information on these priorities, see [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
 
 ##  <a name="initinstance"></a>  CWinThread::InitInstance
 
@@ -396,11 +396,11 @@ Nonzero if successful; otherwise 0.
 The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.
 
 > [!NOTE]
-> When you call [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
+> When you call [PostThreadMessage](/windows/win32/api/winuser/nf-winuser-postthreadmessagew), the message is placed in the thread's message queue. However, because messages posted this way are not associated with a window, MFC will not dispatch them to message or command handlers. In order to handle these messages, override the `PreTranslateMessage()` function of your CWinApp-derived class, and handle the messages manually.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 
-Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage).
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -409,7 +409,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing the message to process.
+Points to a [MSG structure](/windows/win32/api/winuser/ns-winuser-msg) containing the message to process.
 
 ### Return Value
 
@@ -435,7 +435,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg).
+A pointer to a Windows [MSG structure](/windows/win32/api/winuser/ns-winuser-msg).
 
 ### Return Value
 
@@ -463,7 +463,7 @@ virtual LRESULT ProcessWndProcException(
 Points to an unhandled exception.
 
 *pMsg*<br/>
-Points to a [MSG structure](/windows/desktop/api/winuser/ns-winuser-tagmsg) containing information about the windows message that caused the framework to throw an exception.
+Points to a [MSG structure](/windows/win32/api/winuser/ns-winuser-msg) containing information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -524,11 +524,11 @@ virtual int Run();
 
 ### Return Value
 
-An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
+An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).
 
 ### Remarks
 
-`Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/desktop/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) for standard keyboard translation. Finally, the [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows function is called.
+`Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/win32/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) for standard keyboard translation. Finally, the [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows function is called.
 
 `Run` is rarely overridden, but you can override it to implement special behavior.
 
@@ -561,7 +561,7 @@ Specifies the new thread priority level within its priority class. This paramete
 
 - THREAD_PRIORITY_IDLE
 
-For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
+For more information on these priorities, see [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.
 
 ### Return Value
 

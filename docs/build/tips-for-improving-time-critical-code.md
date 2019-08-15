@@ -118,9 +118,9 @@ For more information, see [Idle Loop Processing](../mfc/idle-loop-processing.md)
 
 Smaller working sets mean better locality of reference, fewer page faults, and more cache hits. The process working set is the closest metric the operating system directly provides for measuring locality of reference.
 
-- To set the upper and lower limits of the working set, use [SetProcessWorkingSetSize](/windows/desktop/api/winbase/nf-winbase-getprocessworkingsetsize).
+- To set the upper and lower limits of the working set, use [SetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-getprocessworkingsetsize).
 
-- To get the upper and lower limits of the working set, use [GetProcessWorkingSetSize](/windows/desktop/api/winbase/nf-winbase-setprocessworkingsetsize).
+- To get the upper and lower limits of the working set, use [GetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-setprocessworkingsetsize).
 
 - To view the size of the working set, use Spy++.
 

@@ -7,7 +7,7 @@ ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
 ---
 # IPersistStorageImpl Class
 
-This class implements the [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) interface.
+This class implements the [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) interface.
 
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.
@@ -40,7 +40,7 @@ Your class, derived from `IPersistStorageImpl`.
 
 ## Remarks
 
-`IPersistStorageImpl` implements the [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) interface, which allows a client to request that your object load and save its persistent data using a storage.
+`IPersistStorageImpl` implements the [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) interface, which allows a client to request that your object load and save its persistent data using a storage.
 
 The implementation of this class requires class `T` to make an implementation of the `IPersistStreamInit` interface available via `QueryInterface`. Typically this means that class `T` should derive from [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), provide an entry for `IPersistStreamInit` in the [COM map](com-map-macros.md), and use a [property map](property-map-macros.md) to describe the class's persistent data.
 
@@ -66,7 +66,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 ### Remarks
 
-See [IPersist::GetClassID](/windows/desktop/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
+See [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.
 
 ##  <a name="handsoffstorage"></a>  IPersistStorageImpl::HandsOffStorage
 
@@ -82,7 +82,7 @@ Returns S_OK.
 
 ### Remarks
 
-See [IPersistStorage::HandsOffStorage](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) in the Windows SDK.
+See [IPersistStorage::HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) in the Windows SDK.
 
 ##  <a name="initnew"></a>  IPersistStorageImpl::InitNew
 
@@ -94,9 +94,9 @@ STDMETHOD(InitNew)(IStorage*);
 
 ### Remarks
 
-The ATL implementation delegates to the [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
+The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
 
-See [IPersistStorage:InitNew](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
+See [IPersistStorage:InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
 
 ##  <a name="isdirty"></a>  IPersistStorageImpl::IsDirty
 
@@ -108,9 +108,9 @@ STDMETHOD(IsDirty)(void);
 
 ### Remarks
 
-The ATL implementation delegates to the [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
+The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface.
 
-See [IPersistStorage:IsDirty](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
+See [IPersistStorage:IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) in the Windows SDK.
 
 ##  <a name="load"></a>  IPersistStorageImpl::Load
 
@@ -122,9 +122,9 @@ STDMETHOD(Load)(IStorage* pStorage);
 
 ### Remarks
 
-The ATL implementation delegates to the [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface. `Load` uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.
+The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface. `Load` uses a stream named "Contents" to retrieve the object's data. The [Save](#save) method originally creates this stream.
 
-See [IPersistStorage:Load](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-load) in the Windows SDK.
+See [IPersistStorage:Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) in the Windows SDK.
 
 ##  <a name="save"></a>  IPersistStorageImpl::Save
 
@@ -136,9 +136,9 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 
 ### Remarks
 
-The ATL implementation delegates to the [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface. When `Save` is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to `Save` and in calls to [Load](#load).
+The ATL implementation delegates to the [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) interface. When `Save` is first called, it creates a stream named "Contents" on the specified storage. This stream is then used in later calls to `Save` and in calls to [Load](#load).
 
-See [IPersistStorage:Save](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-save) in the Windows SDK.
+See [IPersistStorage:Save](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) in the Windows SDK.
 
 ##  <a name="savecompleted"></a>  IPersistStorageImpl::SaveCompleted
 
@@ -154,11 +154,11 @@ Returns S_OK.
 
 ### Remarks
 
-See [IPersistStorage:SaveCompleted](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted) in the Windows SDK.
+See [IPersistStorage:SaveCompleted](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) in the Windows SDK.
 
 ## See also
 
-[Storages and Streams](/windows/desktop/Stg/storages-and-streams)<br/>
+[Storages and Streams](/windows/win32/Stg/storages-and-streams)<br/>
 [IPersistStreamInitImpl Class](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
 [IPersistPropertyBagImpl Class](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

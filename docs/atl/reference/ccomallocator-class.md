@@ -52,7 +52,7 @@ Returns a void pointer to the allocated space, or NULL if there is insufficient 
 
 ### Remarks
 
-Allocates memory. See [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) for more details.
+Allocates memory. See [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) for more details.
 
 ##  <a name="free"></a>  CComAllocator::Free
 
@@ -69,7 +69,7 @@ Pointer to the allocated memory.
 
 ### Remarks
 
-Frees the allocated memory. See [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) for more details.
+Frees the allocated memory. See [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) for more details.
 
 ##  <a name="reallocate"></a>  CComAllocator::Reallocate
 
@@ -93,7 +93,7 @@ Returns a void pointer to the allocated space, or NULL if there is insufficient 
 
 ### Remarks
 
-Resizes the amount of allocated memory. See [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) for more details.
+Resizes the amount of allocated memory. See [CoTaskMemRealloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc) for more details.
 
 ## See also
 

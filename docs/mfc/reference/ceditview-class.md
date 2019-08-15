@@ -70,7 +70,7 @@ Create objects of type `CEditView` if you want an edit window with the added fun
 
 The default implementation of class `CEditView` handles the following commands: ID_EDIT_SELECT_ALL, ID_EDIT_FIND, ID_EDIT_REPLACE, ID_EDIT_REPEAT, and ID_FILE_PRINT.
 
-The default character limit for `CEditView` is (1024 \* 1024 - 1 = 1048575). This can be changed by calling the EM_LIMITTEXT function of the underlying edit control. However, the limits are different depending on the operating system and the type of edit control (single or multiline). For more information on these limits, see [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext).
+The default character limit for `CEditView` is (1024 \* 1024 - 1 = 1048575). This can be changed by calling the EM_LIMITTEXT function of the underlying edit control. However, the limits are different depending on the operating system and the type of edit control (single or multiline). For more information on these limits, see [EM_LIMITTEXT](/windows/win32/Controls/em-limittext).
 
 To change this limit in your control, override the `OnCreate()` function for your `CEditView` class and insert the following line of code:
 
@@ -359,7 +359,7 @@ UINT PrintInsideRect(
 Pointer to the printer device context.
 
 *rectLayout*<br/>
-Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) specifying the rectangle in which the text is to be rendered.
+Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT structure](/windows/win32/api/windef/ns-windef-rect) specifying the rectangle in which the text is to be rendered.
 
 *nIndexStart*<br/>
 Index within the buffer of the first character to be rendered.

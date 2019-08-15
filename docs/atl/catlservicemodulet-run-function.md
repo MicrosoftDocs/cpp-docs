@@ -6,9 +6,9 @@ ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
 ---
 # CAtlServiceModuleT::Run Function
 
-`Run` contains calls to `PreMessageLoop`, `RunMessageLoop`, and `PostMessageLoop`. After being called, `PreMessageLoop` first stores the service's thread ID. The service will use this ID to close itself by sending a WM_QUIT message using the Win32 API function, [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea).
+`Run` contains calls to `PreMessageLoop`, `RunMessageLoop`, and `PostMessageLoop`. After being called, `PreMessageLoop` first stores the service's thread ID. The service will use this ID to close itself by sending a WM_QUIT message using the Win32 API function, [PostThreadMessage](/windows/win32/api/winuser/nf-winuser-postthreadmessagew).
 
-`PreMessageLoop` then calls `InitializeSecurity`. By default, `InitializeSecurity` calls [CoInitializeSecurity](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) with the security descriptor set to NULL, which means that any user has access to your object.
+`PreMessageLoop` then calls `InitializeSecurity`. By default, `InitializeSecurity` calls [CoInitializeSecurity](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) with the security descriptor set to NULL, which means that any user has access to your object.
 
 If you do not want the service to specify its own security, override `PreMessageLoop` and don't call `InitializeSecurity`, and COM will then determine the security settings from the registry. A convenient way to configure registry settings is with the [DCOMCNFG](../atl/dcomcnfg.md) utility discussed later in this section.
 

@@ -118,7 +118,7 @@ Right-click the menu name or command and choose **Delete**.
 
 [Pop-up menus](../mfc/menus-mfc.md) display frequently used commands. They can be context sensitive to the location of the pointer. Using pop-up menus in your application requires building the menu itself and then connecting it to application code.
 
-Once you've created the menu resource, your application code needs to load the menu resource and use [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) to cause the menu to appear. Once the user has dismissed the pop-up menu by selecting outside it, or has selected a command, that function will return. If the user chooses a command, that command message will be sent to the window whose handle was passed.
+Once you've created the menu resource, your application code needs to load the menu resource and use [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) to cause the menu to appear. Once the user has dismissed the pop-up menu by selecting outside it, or has selected a command, that function will return. If the user chooses a command, that command message will be sent to the window whose handle was passed.
 
 > [!NOTE]
 > For Microsoft Foundation Class (MFC) library programs and ATL programs, use **Code Wizards** to hook menu commands to code. For more information, see [Adding an Event](../ide/adding-an-event-visual-cpp.md) and [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md).
@@ -159,4 +159,4 @@ Win32
 [Menu Commands](../windows/menu-command-properties.md)<br/>
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)<br/>
 [Menus](../mfc/menus-mfc.md)<br/>
-[Menus](/windows/desktop/menurc/menus)
+[Menus](/windows/win32/menurc/menus)

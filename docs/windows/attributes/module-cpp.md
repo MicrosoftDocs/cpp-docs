@@ -38,7 +38,7 @@ Defines the library block in the .idl file.
 The unique ID for the library. If you omit this parameter, an ID will be automatically generated for the library. You may need to retrieve the *uuid* of your library block, which you can do by using the identifier **__uuidof(** *libraryname* **)**.
 
 *lcid*<br/>
-The localization parameter. See [lcid](/windows/desktop/Midl/lcid) for more information.
+The localization parameter. See [lcid](/windows/win32/Midl/lcid) for more information.
 
 *control*<br/>
 (Optional) Specifies that all coclasses in the library are controls.
@@ -47,7 +47,7 @@ The localization parameter. See [lcid](/windows/desktop/Midl/lcid) for more info
 Specifies the type library.
 
 *helpstringdll*<br/>
-(Optional) Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](/windows/desktop/Midl/helpstringdll) for more information.
+(Optional) Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](/windows/win32/Midl/helpstringdll) for more information.
 
 *helpfile*<br/>
 (Optional) The name of the **Help** file for the type library.
@@ -59,10 +59,10 @@ Specifies the type library.
 (Optional) See [helpstringcontext](helpstringcontext.md) for more information.
 
 *hidden*<br/>
-(Optional) Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
+(Optional) Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](/windows/win32/Midl/hidden) MIDL attribute for more information.
 
 *restricted*<br/>
-(Optional) Members of the library cannot be called arbitrarily. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
+(Optional) Members of the library cannot be called arbitrarily. See the [restricted](/windows/win32/Midl/restricted) MIDL attribute for more information.
 
 *custom*<br/>
 (Optional) One or more attributes; this is similar to the [custom](custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:
@@ -89,15 +89,15 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
+   [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](/windows/win32/Dlls/dllmain), [DllRegisterServer](/windows/win32/api/olectl/nf-olectl-dllregisterserver), [DllUnRegisterServer](/windows/win32/api/olectl/nf-olectl-dllunregisterserver), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/previous-versions//dd797891\(v=vs.85\)).
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
+   [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/win32/api/winbase/nf-winbase-winmain).
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain).
+   [CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](/windows/win32/api/winbase/nf-winbase-winmain).
 
 - `type` = **unspecified**
 
@@ -158,7 +158,7 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 [Stand-Alone Attributes](stand-alone-attributes.md)<br/>
 [Typedef, Enum, Union, and Struct Attributes](typedef-enum-union-and-struct-attributes.md)<br/>
 [usesgetlasterror](usesgetlasterror.md)<br/>
-[library](/windows/desktop/Midl/library)<br/>
+[library](/windows/win32/Midl/library)<br/>
 [helpcontext](helpcontext.md)<br/>
 [helpstring](helpstring.md)<br/>
 [helpfile](helpfile.md)<br/>

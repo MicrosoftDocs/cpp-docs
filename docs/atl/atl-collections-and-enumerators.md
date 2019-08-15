@@ -12,7 +12,7 @@ At a minimum, collection interfaces must provide a `Count` property that returns
 
 An `enumerator` is a COM object that provides an interface for iterating through items in a collection. Enumerator interfaces provide serial access to the elements of a collection via four required methods: `Next`, `Skip`, `Reset`, and `Clone`.
 
-You can learn more about enumerator interfaces by reading reference content such as [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) interface.
+You can learn more about enumerator interfaces by reading reference content such as [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) interface.
 
 ## In This Section
 

@@ -224,7 +224,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ### Parameters
 
 *hdwp*<br/>
-[in] Specifies the deferred window position structure. For more information, see [Windows Data Types](/windows/desktop/WinProg/windows-data-types).
+[in] Specifies the deferred window position structure. For more information, see [Windows Data Types](/windows/win32/WinProg/windows-data-types).
 
 ### Remarks
 

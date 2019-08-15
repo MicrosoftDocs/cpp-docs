@@ -78,9 +78,9 @@ class CAccessToken
 
 ## Remarks
 
-An [access token](/windows/desktop/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.
+An [access token](/windows/win32/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Requirements
 
@@ -162,7 +162,7 @@ bool CreateImpersonationToken(
 Pointer to the new `CAccessToken` object.
 
 *sil*<br/>
-Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the new token.
+Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/win32/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the new token.
 
 ### Return Value
 
@@ -170,7 +170,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateImpersonationToken` calls [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) to create a new impersonation token.
+`CreateImpersonationToken` calls [DuplicateToken](/windows/win32/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) to create a new impersonation token.
 
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
 
@@ -189,7 +189,7 @@ bool CreatePrimaryToken(
 Pointer to the new `CAccessToken` object.
 
 *dwDesiredAccess*<br/>
-Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](/windows/desktop/SecAuthZ/access-rights-and-access-masks) for more on access rights.
+Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](/windows/win32/SecAuthZ/access-rights-and-access-masks) for more on access rights.
 
 *pTokenAttributes*<br/>
 Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.
@@ -200,7 +200,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreatePrimaryToken` calls [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) to create a new primary token.
+`CreatePrimaryToken` calls [DuplicateTokenEx](/windows/win32/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) to create a new primary token.
 
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
 
@@ -232,13 +232,13 @@ Pointer to a null-terminated string that specifies the command line to execute.
 Pointer to a [PROCESS_INFORMATION structure](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) that receives identification information about the new process.
 
 *pStartupInfo*<br/>
-Pointer to a [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-startupinfoa) structure that specifies how the main window for the new process should appear.
+Pointer to a [STARTUPINFO](/windows/win32/api/processthreadsapi/ns-processthreadsapi-startupinfow) structure that specifies how the main window for the new process should appear.
 
 *dwCreationFlags*<br/>
-Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) for a list of flags.
+Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasuserw) for a list of flags.
 
 *bLoadProfile*<br/>
-If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).
+If TRUE, the user's profile is loaded with [LoadUserProfile](/windows/win32/api/userenv/nf-userenv-loaduserprofilew).
 
 *pProcessAttributes*<br/>
 Pointer to a [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.
@@ -258,7 +258,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) function for a full discussion of the parameters required.
+`CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasuserw) function for a full discussion of the parameters required.
 
 For this method to succeed, the `CAccessToken` object must hold AssignPrimaryToken (unless it is a restricted token) and IncreaseQuota privileges.
 
@@ -294,7 +294,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-`CreateRestrictedToken` uses the [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 function to create a new `CAccessToken` object, with restrictions.
+`CreateRestrictedToken` uses the [CreateRestrictedToken](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 function to create a new `CAccessToken` object, with restrictions.
 
 > [!IMPORTANT]
 >  When using `CreateRestrictedToken`, ensure the following: the existing token is valid (and not entered by the user) and *SidsToDisable* and *PrivilegesToDelete* are both valid (and not entered by the user). If the method returns FALSE, deny functionality.
@@ -478,7 +478,7 @@ bool GetImpersonationLevel(
 ### Parameters
 
 *pImpersonationLevel*<br/>
-Pointer to a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumeration type which will receive the impersonation level information.
+Pointer to a [SECURITY_IMPERSONATION_LEVEL](/windows/win32/api/winnt/ne-winnt-security_impersonation_level) enumeration type which will receive the impersonation level information.
 
 ### Return Value
 
@@ -495,7 +495,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 ### Parameters
 
 *pluid*<br/>
-Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-luid) which will receive the Logon Session ID.
+Pointer to a [LUID](/windows/win32/api/winnt/ns-winnt-luid) which will receive the Logon Session ID.
 
 ### Return Value
 
@@ -607,7 +607,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-Calls the [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 function.
+Calls the [OpenProcessToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 function.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 
@@ -632,7 +632,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 ### Parameters
 
 *pSource*<br/>
-Pointer to a [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-token_source) structure.
+Pointer to a [TOKEN_SOURCE](/windows/win32/api/winnt/ns-winnt-token_source) structure.
 
 ### Return Value
 
@@ -649,7 +649,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
 ### Parameters
 
 *pStatistics*<br/>
-Pointer to a [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-token_statistics) structure.
+Pointer to a [TOKEN_STATISTICS](/windows/win32/api/winnt/ns-winnt-token_statistics) structure.
 
 ### Return Value
 
@@ -711,7 +711,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
 ### Parameters
 
 *pluid*<br/>
-Pointer to a [LUID](/windows/desktop/api/winnt/ns-winnt-luid) which will receive the Token ID.
+Pointer to a [LUID](/windows/win32/api/winnt/ns-winnt-luid) which will receive the Token ID.
 
 ### Return Value
 
@@ -728,7 +728,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 ### Parameters
 
 *pType*<br/>
-Address of the [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-token_type) variable that, on success, receives the type of the token.
+Address of the [TOKEN_TYPE](/windows/win32/api/winnt/ne-winnt-token_type) variable that, on success, receives the type of the token.
 
 ### Return Value
 
@@ -860,10 +860,10 @@ Pointer to a null-terminated string that specifies the name of the domain or ser
 Pointer to a null-terminated string that specifies the clear-text password for the user account specified by *pszUserName*.
 
 *dwLogonType*<br/>
-Specifies the type of logon operation to perform. See [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) for more details.
+Specifies the type of logon operation to perform. See [LogonUser](/windows/win32/api/winbase/nf-winbase-logonuserw) for more details.
 
 *dwLogonProvider*<br/>
-Specifies the logon provider. See [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) for more details.
+Specifies the logon provider. See [LogonUser](/windows/win32/api/winbase/nf-winbase-logonuserw) for more details.
 
 ### Return Value
 
@@ -871,7 +871,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-The access token resulting from the logon will be associated with the `CAccessToken`. For this method to succeed, the `CAccessToken` object must hold SE_TCB_NAME privileges, identifying the holder as part of the trusted computer base. See [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) for more information regarding the privileges required.
+The access token resulting from the logon will be associated with the `CAccessToken`. For this method to succeed, the `CAccessToken` object must hold SE_TCB_NAME privileges, identifying the holder as part of the trusted computer base. See [LogonUser](/windows/win32/api/winbase/nf-winbase-logonuserw) for more information regarding the privileges required.
 
 ##  <a name="opencomclienttoken"></a>  CAccessToken::OpenCOMClientToken
 
@@ -893,7 +893,7 @@ Specifies an access mask that specifies the requested types of access to the acc
 If TRUE, the current thread will impersonate the calling COM client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
 *bOpenAsSelf*<br/>
-Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
+Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
@@ -929,7 +929,7 @@ Specifies an access mask that specifies the requested types of access to the acc
 If TRUE, the current thread will impersonate the calling pipe client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
 *bOpenAsSelf*<br/>
-Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
+Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
@@ -965,7 +965,7 @@ Specifies an access mask that specifies the requested types of access to the acc
 If TRUE, the current thread will impersonate the calling RPC client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.
 
 *bOpenAsSelf*<br/>
-Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
+Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
@@ -998,12 +998,12 @@ Specifies an access mask that specifies the requested types of access to the acc
 If TRUE, the thread will be left at the requested impersonation level after this method completes. If FALSE, the thread will revert to its original impersonation level.
 
 *bOpenAsSelf*<br/>
-Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
+Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) method or against the security context of the process for the calling thread.
 
 If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.
 
 *sil*<br/>
-Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the token.
+Specifies a [SECURITY_IMPERSONATION_LEVEL](/windows/win32/api/winnt/ne-winnt-security_impersonation_level) enumerated type that supplies the impersonation level of the token.
 
 ### Return Value
 
@@ -1028,7 +1028,7 @@ bool PrivilegeCheck(
 ### Parameters
 
 *RequiredPrivileges*<br/>
-Pointer to a [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-privilege_set) structure.
+Pointer to a [PRIVILEGE_SET](/windows/win32/api/winnt/ns-winnt-privilege_set) structure.
 
 *pbResult*<br/>
 Pointer to a value the method sets to indicate whether any or all of the specified privilege are enabled in the `CAccessToken` object.
@@ -1039,7 +1039,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
+When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](/windows/win32/api/winnt/ns-winnt-luid_and_attributes) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](/windows/win32/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 function.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 
@@ -1128,5 +1128,5 @@ The primary group is the default group for new objects created while this access
 ## See also
 
 [ATLSecurity Sample](../../overview/visual-cpp-samples.md)<br/>
-[Access Tokens](/windows/desktop/SecAuthZ/access-tokens)<br/>
+[Access Tokens](/windows/win32/SecAuthZ/access-tokens)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

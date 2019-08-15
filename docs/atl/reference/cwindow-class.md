@@ -217,7 +217,7 @@ class CWindow
 
 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) Allows you to create a modal or modeless dialog box.
 
-For more information about windows, see [Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
+For more information about windows, see [Windows](/windows/win32/winmsg/windows) and subsequent topics in the Windows SDK. For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
 ## Requirements
 
@@ -233,7 +233,7 @@ UINT ArrangeIconicWindows() throw();
 
 ### Remarks
 
-See [ArrangeIconicWindows](/windows/desktop/api/winuser/nf-winuser-arrangeiconicwindows) in the Windows SDK.
+See [ArrangeIconicWindows](/windows/win32/api/winuser/nf-winuser-arrangeiconicwindows) in the Windows SDK.
 
 ##  <a name="attach"></a>  CWindow::Attach
 
@@ -262,7 +262,7 @@ HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
 
 ### Remarks
 
-See [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) in the Windows SDK.
+See [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) in the Windows SDK.
 
 ### Example
 
@@ -278,7 +278,7 @@ BOOL BringWindowToTop() throw();
 
 ### Remarks
 
-See [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) in the Windows SDK.
+See [BringWindowToTop](/windows/win32/api/winuser/nf-winuser-bringwindowtotop) in the Windows SDK.
 
 ### Example
 
@@ -315,7 +315,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 
 ### Remarks
 
-See [ChangeClipboardChain](/windows/desktop/api/winuser/nf-winuser-changeclipboardchain) in the Windows SDK.
+See [ChangeClipboardChain](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) in the Windows SDK.
 
 ##  <a name="checkdlgbutton"></a>  CWindow::CheckDlgButton
 
@@ -327,7 +327,7 @@ BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 
 ### Remarks
 
-See [CheckDlgButton](/windows/desktop/api/winuser/nf-winuser-checkdlgbutton) in the Windows SDK.
+See [CheckDlgButton](/windows/win32/api/winuser/nf-winuser-checkdlgbutton) in the Windows SDK.
 
 ##  <a name="checkradiobutton"></a>  CWindow::CheckRadioButton
 
@@ -342,7 +342,7 @@ BOOL CheckRadioButton(
 
 ### Remarks
 
-See [CheckRadioButton](/windows/desktop/api/winuser/nf-winuser-checkradiobutton) in the Windows SDK.
+See [CheckRadioButton](/windows/win32/api/winuser/nf-winuser-checkradiobutton) in the Windows SDK.
 
 ##  <a name="childwindowfrompoint"></a>  CWindow::ChildWindowFromPoint
 
@@ -354,7 +354,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 
 ### Remarks
 
-See [ChildWindowFromPoint](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) in the Windows SDK.
+See [ChildWindowFromPoint](/windows/win32/api/winuser/nf-winuser-childwindowfrompoint) in the Windows SDK.
 
 ##  <a name="childwindowfrompointex"></a>  CWindow::ChildWindowFromPointEx
 
@@ -366,7 +366,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 
 ### Remarks
 
-See [ChildWindowFromPointEx](/windows/desktop/api/winuser/nf-winuser-childwindowfrompointex) in the Windows SDK.
+See [ChildWindowFromPointEx](/windows/win32/api/winuser/nf-winuser-childwindowfrompointex) in the Windows SDK.
 
 ##  <a name="clienttoscreen"></a>  CWindow::ClientToScreen
 
@@ -379,7 +379,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 
 ### Remarks
 
-See [ClientToScreen](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) in the Windows SDK.
+See [ClientToScreen](/windows/win32/api/winuser/nf-winuser-clienttoscreen) in the Windows SDK.
 
 The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
@@ -414,16 +414,16 @@ HWND Create(
 [in] Specifies the name of the window. The default value is NULL.
 
 *dwStyle*<br/>
-[in] The style of the window. The default value is 0, meaning no style is specified. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
+[in] The style of the window. The default value is 0, meaning no style is specified. For a list of possible values, see [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
 
 *dwExStyle*<br/>
-[in] The extended window style. The default value is 0, meaning no extended style is specified. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+[in] The extended window style. The default value is 0, meaning no extended style is specified. For a list of possible values, see [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *MenuOrID*<br/>
 [in] A variable of type [_U_MENUorID](../../atl/reference/u-menuorid-class.md) specifying a handle to a menu or a window identifier. The default value is 0U.
 
 *lpCreateParam*<br/>
-A pointer to the window-creation data contained in a [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) structure.
+A pointer to the window-creation data contained in a [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) structure.
 
 ### Return Value
 
@@ -433,7 +433,7 @@ If successful, the handle to the newly created window, specified by [m_hWnd](#m_
 
 `CWindow::rcDefault` is defined as `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.
 
-See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for more information.
+See [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK for more information.
 
 **Note** If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.
 
@@ -447,7 +447,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
 
 ### Remarks
 
-See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.
+See [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcaret) in the Windows SDK.
 
 ##  <a name="creategraycaret"></a>  CWindow::CreateGrayCaret
 
@@ -459,7 +459,7 @@ BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
 
 ### Remarks
 
-See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.
+See [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcaret) in the Windows SDK.
 
 Passes (HBITMAP) 1 for the bitmap handle parameter to the Win32 function.
 
@@ -473,7 +473,7 @@ BOOL CreateSolidCaret(int nWidth, int nHeight) throw();
 
 ### Remarks
 
-See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.
+See [CreateCaret](/windows/win32/api/winuser/nf-winuser-createcaret) in the Windows SDK.
 
 Passes (HBITMAP) 0 for the bitmap handle parameter to the Win32 function.
 
@@ -495,7 +495,7 @@ CWindow(HWND hWnd = NULL) throw();
 Initializes the [m_hWnd](#m_hwnd) member to *hWnd*, which by default is NULL.
 
 > [!NOTE]
-> `CWindow::CWindow` does not create a window. Classes [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), and [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (all of which derive from `CWindow`) provide a method to create a window or dialog box, which is then assigned to `CWindow::m_hWnd`. You can also use the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Win32 function.
+> `CWindow::CWindow` does not create a window. Classes [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), and [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (all of which derive from `CWindow`) provide a method to create a window or dialog box, which is then assigned to `CWindow::m_hWnd`. You can also use the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) Win32 function.
 
 ##  <a name="deferwindowpos"></a>  CWindow::DeferWindowPos
 
@@ -514,7 +514,7 @@ HDWP DeferWindowPos(
 
 ### Remarks
 
-See [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) in the Windows SDK.
+See [DeferWindowPos](/windows/win32/api/winuser/nf-winuser-deferwindowpos) in the Windows SDK.
 
 ##  <a name="destroywindow"></a>  CWindow::DestroyWindow
 
@@ -526,7 +526,7 @@ BOOL DestroyWindow() throw();
 
 ### Remarks
 
-See [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) in the Windows SDK.
+See [DestroyWindow](/windows/win32/api/winuser/nf-winuser-destroywindow) in the Windows SDK.
 
 It does not destroy the `CWindow` object itself.
 
@@ -564,7 +564,7 @@ int DlgDirList(
 
 ### Remarks
 
-See [DlgDirList](/windows/desktop/api/winuser/nf-winuser-dlgdirlista) in the Windows SDK.
+See [DlgDirList](/windows/win32/api/winuser/nf-winuser-dlgdirlistw) in the Windows SDK.
 
 ##  <a name="dlgdirlistcombobox"></a>  CWindow::DlgDirListComboBox
 
@@ -580,7 +580,7 @@ int DlgDirListComboBox(
 
 ### Remarks
 
-See [DlgDirListComboBox](/windows/desktop/api/winuser/nf-winuser-dlgdirlistcomboboxa) in the Windows SDK.
+See [DlgDirListComboBox](/windows/win32/api/winuser/nf-winuser-dlgdirlistcomboboxw) in the Windows SDK.
 
 ##  <a name="dlgdirselect"></a>  CWindow::DlgDirSelect
 
@@ -595,7 +595,7 @@ BOOL DlgDirSelect(
 
 ### Remarks
 
-See [DlgDirSelectEx](/windows/desktop/api/winuser/nf-winuser-dlgdirselectexa) in the Windows SDK.
+See [DlgDirSelectEx](/windows/win32/api/winuser/nf-winuser-dlgdirselectexw) in the Windows SDK.
 
 ##  <a name="dlgdirselectcombobox"></a>  CWindow::DlgDirSelectComboBox
 
@@ -610,7 +610,7 @@ BOOL DlgDirSelectComboBox(
 
 ### Remarks
 
-See [DlgDirSelectComboBoxEx](/windows/desktop/api/winuser/nf-winuser-dlgdirselectcomboboxexa) in the Windows SDK.
+See [DlgDirSelectComboBoxEx](/windows/win32/api/winuser/nf-winuser-dlgdirselectcomboboxexw) in the Windows SDK.
 
 ##  <a name="dragacceptfiles"></a>  CWindow::DragAcceptFiles
 
@@ -622,7 +622,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 
 ### Remarks
 
-See [DragAcceptFiles](/windows/desktop/api/shellapi/nf-shellapi-dragacceptfiles) in the Windows SDK.
+See [DragAcceptFiles](/windows/win32/api/shellapi/nf-shellapi-dragacceptfiles) in the Windows SDK.
 
 ##  <a name="drawmenubar"></a>  CWindow::DrawMenuBar
 
@@ -634,7 +634,7 @@ BOOL DrawMenuBar() throw();
 
 ### Remarks
 
-See [DrawMenuBar](/windows/desktop/api/winuser/nf-winuser-drawmenubar) in the Windows SDK.
+See [DrawMenuBar](/windows/win32/api/winuser/nf-winuser-drawmenubar) in the Windows SDK.
 
 ##  <a name="enablescrollbar"></a>  CWindow::EnableScrollBar
 
@@ -646,7 +646,7 @@ BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 
 ### Remarks
 
-See [EnableScrollBar](/windows/desktop/api/winuser/nf-winuser-enablescrollbar) in the Windows SDK.
+See [EnableScrollBar](/windows/win32/api/winuser/nf-winuser-enablescrollbar) in the Windows SDK.
 
 ##  <a name="enablewindow"></a>  CWindow::EnableWindow
 
@@ -658,7 +658,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 
 ### Remarks
 
-See [EnableWindow](/windows/desktop/api/winuser/nf-winuser-enablewindow) in the Windows SDK.
+See [EnableWindow](/windows/win32/api/winuser/nf-winuser-enablewindow) in the Windows SDK.
 
 ### Example
 
@@ -674,7 +674,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 
 ### Remarks
 
-See [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint) in the Windows SDK.
+See [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint) in the Windows SDK.
 
 ### Example
 
@@ -690,7 +690,7 @@ BOOL FlashWindow(BOOL bInvert) throw();
 
 ### Remarks
 
-See [FlashWindow](/windows/desktop/api/winuser/nf-winuser-flashwindow) in the Windows SDK.
+See [FlashWindow](/windows/win32/api/winuser/nf-winuser-flashwindow) in the Windows SDK.
 
 ##  <a name="getclientrect"></a>  CWindow::GetClientRect
 
@@ -702,7 +702,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
 
 ### Remarks
 
-See [GetClientRect](/windows/desktop/api/winuser/nf-winuser-getclientrect) in the Windows SDK.
+See [GetClientRect](/windows/win32/api/winuser/nf-winuser-getclientrect) in the Windows SDK.
 
 ### Example
 
@@ -718,7 +718,7 @@ HDC GetDC() throw();
 
 ### Remarks
 
-See [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) in the Windows SDK.
+See [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) in the Windows SDK.
 
 ### Example
 
@@ -734,7 +734,7 @@ HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 
 ### Remarks
 
-See [GetDCEx](/windows/desktop/api/winuser/nf-winuser-getdcex) in the Windows SDK.
+See [GetDCEx](/windows/win32/api/winuser/nf-winuser-getdcex) in the Windows SDK.
 
 ##  <a name="getdescendantwindow"></a>  CWindow::GetDescendantWindow
 
@@ -797,7 +797,7 @@ int GetDlgCtrlID() const throw();
 
 ### Remarks
 
-See [GetDlgCtrlID](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) in the Windows SDK.
+See [GetDlgCtrlID](/windows/win32/api/winuser/nf-winuser-getdlgctrlid) in the Windows SDK.
 
 ##  <a name="getdlghost"></a>  CWindow::GetDlgHost
 
@@ -839,7 +839,7 @@ HWND GetDlgItem(int nID) const throw();
 
 ### Remarks
 
-See [GetDlgItem](/windows/desktop/api/winuser/nf-winuser-getdlgitem) in the Windows SDK.
+See [GetDlgItem](/windows/win32/api/winuser/nf-winuser-getdlgitem) in the Windows SDK.
 
 ##  <a name="getdlgitemint"></a>  CWindow::GetDlgItemInt
 
@@ -854,7 +854,7 @@ UINT GetDlgItemInt(
 
 ### Remarks
 
-See [GetDlgItemInt](/windows/desktop/api/winuser/nf-winuser-getdlgitemint) in the Windows SDK.
+See [GetDlgItemInt](/windows/win32/api/winuser/nf-winuser-getdlgitemint) in the Windows SDK.
 
 ##  <a name="getdlgitemtext"></a>  CWindow::GetDlgItemText
 
@@ -873,7 +873,7 @@ BOOL GetDlgItemText(
 
 ### Remarks
 
-See [GetDlgItemText](/windows/desktop/api/winuser/nf-winuser-getdlgitemtexta) in the Windows SDK.
+See [GetDlgItemText](/windows/win32/api/winuser/nf-winuser-getdlgitemtextw) in the Windows SDK.
 
 ### Remarks
 
@@ -901,7 +901,7 @@ To retrieve the regular window styles, call [GetStyle](#getstyle).
 
 ##  <a name="getfont"></a>  CWindow::GetFont
 
-Retrieves the window's current font by sending a [WM_GETFONT](/windows/desktop/winmsg/wm-getfont) message to the window.
+Retrieves the window's current font by sending a [WM_GETFONT](/windows/win32/winmsg/wm-getfont) message to the window.
 
 ```
 HFONT GetFont() const throw();
@@ -921,7 +921,7 @@ DWORD GetHotKey() const throw();
 
 ### Return Value
 
-The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](/windows/desktop/inputdev/wm-gethotkey) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.
+The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](/windows/win32/inputdev/wm-gethotkey) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.
 
 ##  <a name="geticon"></a>  CWindow::GetIcon
 
@@ -942,7 +942,7 @@ An icon handle.
 
 ### Remarks
 
-`GetIcon` sends a [WM_GETICON](/windows/desktop/winmsg/wm-geticon) message to the window.
+`GetIcon` sends a [WM_GETICON](/windows/win32/winmsg/wm-geticon) message to the window.
 
 ##  <a name="getlastactivepopup"></a>  CWindow::GetLastActivePopup
 
@@ -954,7 +954,7 @@ HWND GetLastActivePopup() const throw();
 
 ### Remarks
 
-See [GetLastActivePopup](/windows/desktop/api/winuser/nf-winuser-getlastactivepopup) in the Windows SDK.
+See [GetLastActivePopup](/windows/win32/api/winuser/nf-winuser-getlastactivepopup) in the Windows SDK.
 
 ##  <a name="getmenu"></a>  CWindow::GetMenu
 
@@ -966,7 +966,7 @@ HMENU GetMenu() const throw();
 
 ### Remarks
 
-See [GetMenu](/windows/desktop/api/winuser/nf-winuser-getmenu) in the Windows SDK.
+See [GetMenu](/windows/win32/api/winuser/nf-winuser-getmenu) in the Windows SDK.
 
 ##  <a name="getnextdlggroupitem"></a>  CWindow::GetNextDlgGroupItem
 
@@ -978,7 +978,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 
 ### Remarks
 
-See [GetNextDlgGroupItem](/windows/desktop/api/winuser/nf-winuser-getnextdlggroupitem) in the Windows SDK.
+See [GetNextDlgGroupItem](/windows/win32/api/winuser/nf-winuser-getnextdlggroupitem) in the Windows SDK.
 
 ##  <a name="getnextdlgtabitem"></a>  CWindow::GetNextDlgTabItem
 
@@ -990,7 +990,7 @@ HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 
 ### Remarks
 
-See [GetNextDlgTabItem](/windows/desktop/api/winuser/nf-winuser-getnextdlgtabitem) in the Windows SDK.
+See [GetNextDlgTabItem](/windows/win32/api/winuser/nf-winuser-getnextdlgtabitem) in the Windows SDK.
 
 ##  <a name="getparent"></a>  CWindow::GetParent
 
@@ -1002,7 +1002,7 @@ HWND GetParent() const throw();
 
 ### Remarks
 
-See [GetParent](/windows/desktop/api/winuser/nf-winuser-getparent) in the Windows SDK.
+See [GetParent](/windows/win32/api/winuser/nf-winuser-getparent) in the Windows SDK.
 
 ### Example
 
@@ -1018,7 +1018,7 @@ BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 
 ### Remarks
 
-See [GetScrollInfo](/windows/desktop/api/winuser/nf-winuser-getscrollinfo) in the Windows SDK.
+See [GetScrollInfo](/windows/win32/api/winuser/nf-winuser-getscrollinfo) in the Windows SDK.
 
 ##  <a name="getscrollpos"></a>  CWindow::GetScrollPos
 
@@ -1030,7 +1030,7 @@ int GetScrollPos(int nBar) const throw();
 
 ### Remarks
 
-See [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) in the Windows SDK.
+See [GetScrollPos](/windows/win32/api/winuser/nf-winuser-getscrollpos) in the Windows SDK.
 
 ##  <a name="getscrollrange"></a>  CWindow::GetScrollRange
 
@@ -1045,7 +1045,7 @@ BOOL GetScrollRange(
 
 ### Remarks
 
-See [GetScrollRange](/windows/desktop/api/winuser/nf-winuser-getscrollrange) in the Windows SDK.
+See [GetScrollRange](/windows/win32/api/winuser/nf-winuser-getscrollrange) in the Windows SDK.
 
 ##  <a name="getstyle"></a>  CWindow::GetStyle
 
@@ -1077,7 +1077,7 @@ HMENU GetSystemMenu(BOOL bRevert) const throw();
 
 ### Remarks
 
-See [GetSystemMenu](/windows/desktop/api/winuser/nf-winuser-getsystemmenu) in the Windows SDK.
+See [GetSystemMenu](/windows/win32/api/winuser/nf-winuser-getsystemmenu) in the Windows SDK.
 
 ##  <a name="gettoplevelparent"></a>  CWindow::GetTopLevelParent
 
@@ -1113,7 +1113,7 @@ HWND GetTopWindow() const throw();
 
 ### Remarks
 
-See [GetTopWindow](/windows/desktop/api/winuser/nf-winuser-gettopwindow) in the Windows SDK.
+See [GetTopWindow](/windows/win32/api/winuser/nf-winuser-gettopwindow) in the Windows SDK.
 
 ### Example
 
@@ -1129,7 +1129,7 @@ BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 
 ### Remarks
 
-See [GetUpdateRect](/windows/desktop/api/winuser/nf-winuser-getupdaterect) in the Windows SDK.
+See [GetUpdateRect](/windows/win32/api/winuser/nf-winuser-getupdaterect) in the Windows SDK.
 
 ##  <a name="getupdatergn"></a>  CWindow::GetUpdateRgn
 
@@ -1141,7 +1141,7 @@ int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 
 ### Remarks
 
-See [GetUpdateRgn](/windows/desktop/api/winuser/nf-winuser-getupdatergn) in the Windows SDK.
+See [GetUpdateRgn](/windows/win32/api/winuser/nf-winuser-getupdatergn) in the Windows SDK.
 
 ##  <a name="getwindow"></a>  CWindow::GetWindow
 
@@ -1165,7 +1165,7 @@ DWORD GetWindowContextHelpId() const throw();
 
 ### Remarks
 
-See [GetWindowContextHelpId](/windows/desktop/api/winuser/nf-winuser-getwindowcontexthelpid) in the Windows SDK.
+See [GetWindowContextHelpId](/windows/win32/api/winuser/nf-winuser-getwindowcontexthelpid) in the Windows SDK.
 
 ##  <a name="getwindowdc"></a>  CWindow::GetWindowDC
 
@@ -1177,7 +1177,7 @@ HDC GetWindowDC() throw();
 
 ### Remarks
 
-See [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc) in the Windows SDK.
+See [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc) in the Windows SDK.
 
 ### Example
 
@@ -1193,7 +1193,7 @@ LONG GetWindowLong(int nIndex) const throw();
 
 ### Remarks
 
-See [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) in the Windows SDK.
+See [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) in the Windows SDK.
 
 > [!NOTE]
 >  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::GetWindowLongPtr](#getwindowlongptr).
@@ -1208,7 +1208,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 
 ### Remarks
 
-See [GetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-getwindowlongptra) in the Windows SDK.
+See [GetWindowLongPtr](/windows/win32/api/winuser/nf-winuser-getwindowlongptrw) in the Windows SDK.
 
 ### Remarks
 
@@ -1229,7 +1229,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 
 ### Remarks
 
-See [GetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-getwindowplacement) in the Windows SDK.
+See [GetWindowPlacement](/windows/win32/api/winuser/nf-winuser-getwindowplacement) in the Windows SDK.
 
 ##  <a name="getwindowprocessid"></a>  CWindow::GetWindowProcessID
 
@@ -1241,7 +1241,7 @@ DWORD GetWindowProcessID() throw();
 
 ### Remarks
 
-See [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) in the Windows SDK.
+See [GetWindowThreadProcessID](/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid) in the Windows SDK.
 
 ### Example
 
@@ -1257,7 +1257,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 
 ### Remarks
 
-See [GetWindowRect](/windows/desktop/api/winuser/nf-winuser-getwindowrect) in the Windows SDK.
+See [GetWindowRect](/windows/win32/api/winuser/nf-winuser-getwindowrect) in the Windows SDK.
 
 ##  <a name="getwindowrgn"></a>  CWindow::GetWindowRgn
 
@@ -1269,7 +1269,7 @@ int GetWindowRgn(HRGN hRgn) throw();
 
 ### Remarks
 
-See [GetWindowRgn](/windows/desktop/api/winuser/nf-winuser-getwindowrgn) in the Windows SDK.
+See [GetWindowRgn](/windows/win32/api/winuser/nf-winuser-getwindowrgn) in the Windows SDK.
 
 ##  <a name="getwindowtext"></a>  CWindow::GetWindowText
 
@@ -1301,7 +1301,7 @@ If the text is successfully copied, the return value is TRUE; otherwise, the ret
 
 ### Remarks
 
-See [GetWindowText](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) in the Windows SDK.
+See [GetWindowText](/windows/win32/api/winuser/nf-winuser-getwindowtextw) in the Windows SDK.
 
 The second version of this method allows you to store the text in a BSTR; the third version allows you to store the result in a [CString](../../atl-mfc-shared/reference/cstringt-class.md), since `CSimpleString` is the base class of `CString`.
 
@@ -1315,7 +1315,7 @@ int GetWindowTextLength() const throw();
 
 ### Remarks
 
-See [GetWindowTextLength](/windows/desktop/api/winuser/nf-winuser-getwindowtextlengtha) in the Windows SDK.
+See [GetWindowTextLength](/windows/win32/api/winuser/nf-winuser-getwindowtextlengthw) in the Windows SDK.
 
 ##  <a name="getwindowthreadid"></a>  CWindow::GetWindowThreadID
 
@@ -1327,7 +1327,7 @@ DWORD GetWindowThreadID() throw();
 
 ### Remarks
 
-See [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) in the Windows SDK.
+See [GetWindowThreadProcessID](/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid) in the Windows SDK.
 
 ### Example
 
@@ -1343,7 +1343,7 @@ WORD GetWindowWord(int nIndex) const throw();
 
 ### Remarks
 
-See [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) in the Windows SDK.
+See [GetWindowLong](/windows/win32/api/winuser/nf-winuser-getwindowlongw) in the Windows SDK.
 
 ##  <a name="gotodlgctrl"></a>  CWindow::GotoDlgCtrl
 
@@ -1355,7 +1355,7 @@ void GotoDlgCtrl(HWND hWndCtrl) const throw();
 
 ### Remarks
 
-See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.
+See [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) in the Windows SDK.
 
 ##  <a name="hidecaret"></a>  CWindow::HideCaret
 
@@ -1367,7 +1367,7 @@ BOOL HideCaret() throw();
 
 ### Remarks
 
-See [HideCaret](/windows/desktop/api/winuser/nf-winuser-hidecaret) in the Windows SDK.
+See [HideCaret](/windows/win32/api/winuser/nf-winuser-hidecaret) in the Windows SDK.
 
 ### Example
 
@@ -1386,7 +1386,7 @@ BOOL HiliteMenuItem(
 
 ### Remarks
 
-See [HiliteMenuItem](/windows/desktop/api/winuser/nf-winuser-hilitemenuitem) in the Windows SDK.
+See [HiliteMenuItem](/windows/win32/api/winuser/nf-winuser-hilitemenuitem) in the Windows SDK.
 
 ##  <a name="invalidate"></a>  CWindow::Invalidate
 
@@ -1398,7 +1398,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
 
 ### Remarks
 
-See [InvalidateRect](/windows/desktop/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.
+See [InvalidateRect](/windows/win32/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.
 
 Passes NULL for the `RECT` parameter to the `InvalidateRect` Win32 function.
 
@@ -1416,7 +1416,7 @@ BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 
 ### Remarks
 
-See [InvalidateRect](/windows/desktop/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.
+See [InvalidateRect](/windows/win32/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.
 
 ##  <a name="invalidatergn"></a>  CWindow::InvalidateRgn
 
@@ -1428,7 +1428,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 
 ### Remarks
 
-See [InvalidateRgn](/windows/desktop/api/winuser/nf-winuser-invalidatergn) in the Windows SDK.
+See [InvalidateRgn](/windows/win32/api/winuser/nf-winuser-invalidatergn) in the Windows SDK.
 
 ### Remarks
 
@@ -1444,7 +1444,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 
 ### Remarks
 
-See [IsChild](/windows/desktop/api/winuser/nf-winuser-ischild) in the Windows SDK.
+See [IsChild](/windows/win32/api/winuser/nf-winuser-ischild) in the Windows SDK.
 
 ##  <a name="isdialogmessage"></a>  CWindow::IsDialogMessage
 
@@ -1456,7 +1456,7 @@ BOOL IsDialogMessage(LPMSG lpMsg) throw();
 
 ### Remarks
 
-See [IsDialogMessage](/windows/desktop/api/winuser/nf-winuser-isdialogmessagea) in the Windows SDK.
+See [IsDialogMessage](/windows/win32/api/winuser/nf-winuser-isdialogmessagew) in the Windows SDK.
 
 ##  <a name="isdlgbuttonchecked"></a>  CWindow::IsDlgButtonChecked
 
@@ -1468,7 +1468,7 @@ UINT IsDlgButtonChecked(int nIDButton) const throw();
 
 ### Remarks
 
-See [IsDlgButtonChecked](/windows/desktop/api/winuser/nf-winuser-isdlgbuttonchecked) in the Windows SDK.
+See [IsDlgButtonChecked](/windows/win32/api/winuser/nf-winuser-isdlgbuttonchecked) in the Windows SDK.
 
 ##  <a name="isiconic"></a>  CWindow::IsIconic
 
@@ -1480,7 +1480,7 @@ BOOL IsIconic() const throw();
 
 ### Remarks
 
-See [IsIconic](/windows/desktop/api/winuser/nf-winuser-isiconic) in the Windows SDK.
+See [IsIconic](/windows/win32/api/winuser/nf-winuser-isiconic) in the Windows SDK.
 
 ### Example
 
@@ -1508,7 +1508,7 @@ BOOL IsWindow() throw();
 
 ### Remarks
 
-See [IsWindow](/windows/desktop/api/winuser/nf-winuser-iswindow) in the Windows SDK.
+See [IsWindow](/windows/win32/api/winuser/nf-winuser-iswindow) in the Windows SDK.
 
 ### Example
 
@@ -1524,7 +1524,7 @@ BOOL IsWindowEnabled() const throw();
 
 ### Remarks
 
-See [IsWindowEnabled](/windows/desktop/api/winuser/nf-winuser-iswindowenabled) in the Windows SDK.
+See [IsWindowEnabled](/windows/win32/api/winuser/nf-winuser-iswindowenabled) in the Windows SDK.
 
 ### Example
 
@@ -1540,7 +1540,7 @@ BOOL IsWindowVisible() const throw();
 
 ### Remarks
 
-See [IsWindowVisible](/windows/desktop/api/winuser/nf-winuser-iswindowvisible) in the Windows SDK.
+See [IsWindowVisible](/windows/win32/api/winuser/nf-winuser-iswindowvisible) in the Windows SDK.
 
 ### Example
 
@@ -1556,7 +1556,7 @@ BOOL IsWindowUnicode() throw();
 
 ### Remarks
 
-See [IsWindowUnicode](/windows/desktop/api/winuser/nf-winuser-iswindowunicode) in the Windows SDK.
+See [IsWindowUnicode](/windows/win32/api/winuser/nf-winuser-iswindowunicode) in the Windows SDK.
 
 ### Example
 
@@ -1572,7 +1572,7 @@ BOOL IsZoomed() const throw();
 
 ### Remarks
 
-See [IsZoomed](/windows/desktop/api/winuser/nf-winuser-iszoomed) in the Windows SDK.
+See [IsZoomed](/windows/win32/api/winuser/nf-winuser-iszoomed) in the Windows SDK.
 
 ##  <a name="killtimer"></a>  CWindow::KillTimer
 
@@ -1584,11 +1584,11 @@ BOOL KillTimer(UINT nIDEvent) throw();
 
 ### Remarks
 
-See [KillTimer](/windows/desktop/api/winuser/nf-winuser-killtimer) in the Windows SDK.
+See [KillTimer](/windows/win32/api/winuser/nf-winuser-killtimer) in the Windows SDK.
 
 ##  <a name="lockwindowupdate"></a>  CWindow::LockWindowUpdate
 
-Disables or enables drawing in the window by calling the [LockWindowUpdate](/windows/desktop/api/winuser/nf-winuser-lockwindowupdate) Win32 function.
+Disables or enables drawing in the window by calling the [LockWindowUpdate](/windows/win32/api/winuser/nf-winuser-lockwindowupdate) Win32 function.
 
 ```
 BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
@@ -1632,7 +1632,7 @@ int MapWindowPoints(
 
 ### Remarks
 
-See [MapWindowPoints](/windows/desktop/api/winuser/nf-winuser-mapwindowpoints) in the Windows SDK.
+See [MapWindowPoints](/windows/win32/api/winuser/nf-winuser-mapwindowpoints) in the Windows SDK.
 
 The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
@@ -1649,7 +1649,7 @@ int MessageBox(
 
 ### Remarks
 
-See [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) in the Windows SDK.
+See [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) in the Windows SDK.
 
 ### Example
 
@@ -1675,7 +1675,7 @@ BOOL ModifyStyle(
 [in] Specifies the window styles to be added during style modification.
 
 *nFlags*<br/>
-[in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
+[in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
 
@@ -1683,7 +1683,7 @@ TRUE if the window styles are modified; otherwise, FALSE.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) function in the Windows SDKfor information about the available window styles.
+Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function in the Windows SDKfor information about the available window styles.
 
 If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
@@ -1721,7 +1721,7 @@ BOOL ModifyStyleEx(
 [in] Specifies the extended styles to be added during style modification.
 
 *nFlags*<br/>
-[in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
+[in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.
 
 ### Return Value
 
@@ -1729,7 +1729,7 @@ TRUE if the extended window styles are modified; otherwise, FALSE.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function in the Windows SDKfor information about the available extended styles.
+Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function in the Windows SDKfor information about the available extended styles.
 
 If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:
 
@@ -1780,7 +1780,7 @@ void NextDlgCtrl() const throw();
 
 ### Remarks
 
-See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.
+See [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) in the Windows SDK.
 
 ##  <a name="openclipboard"></a>  CWindow::OpenClipboard
 
@@ -1792,7 +1792,7 @@ BOOL OpenClipboard() throw();
 
 ### Remarks
 
-See [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) in the Windows SDK.
+See [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) in the Windows SDK.
 
 ##  <a name="operator_hwnd"></a>  CWindow::operator HWND
 
@@ -1823,7 +1823,7 @@ BOOL PostMessage(
 
 ### Remarks
 
-See [PostMessage](/windows/desktop/api/winuser/nf-winuser-postmessagea) in the Windows SDK.
+See [PostMessage](/windows/win32/api/winuser/nf-winuser-postmessagew) in the Windows SDK.
 
 Returns without waiting for the thread to process the message.
 
@@ -1841,11 +1841,11 @@ void PrevDlgCtrl() const throw();
 
 ### Remarks
 
-See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.
+See [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) in the Windows SDK.
 
 ##  <a name="print"></a>  CWindow::Print
 
-Sends a [WM_PRINT](/windows/desktop/gdi/wm-print) message to the window to request that it draw itself in the specified device context.
+Sends a [WM_PRINT](/windows/win32/gdi/wm-print) message to the window to request that it draw itself in the specified device context.
 
 ```
 void Print(HDC hDC, DWORD dwFlags) const throw();
@@ -1873,7 +1873,7 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 
 ##  <a name="printclient"></a>  CWindow::PrintClient
 
-Sends a [WM_PRINTCLIENT](/windows/desktop/gdi/wm-printclient) message to the window to request that it draw its client area in the specified device context.
+Sends a [WM_PRINTCLIENT](/windows/win32/gdi/wm-printclient) message to the window to request that it draw its client area in the specified device context.
 
 ```
 void PrintClient(HDC hDC, DWORD dwFlags) const throw();
@@ -1922,7 +1922,7 @@ throw()
 
 ### Remarks
 
-See [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) in the Windows SDK.
+See [RedrawWindow](/windows/win32/api/winuser/nf-winuser-redrawwindow) in the Windows SDK.
 
 ### Example
 
@@ -1938,7 +1938,7 @@ int ReleaseDC(HDC hDC);
 
 ### Remarks
 
-See [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) in the Windows SDK.
+See [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) in the Windows SDK.
 
 ### Example
 
@@ -1977,7 +1977,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 
 ### Remarks
 
-See [ScreenToClient](/windows/desktop/api/winuser/nf-winuser-screentoclient) in the Windows SDK.
+See [ScreenToClient](/windows/win32/api/winuser/nf-winuser-screentoclient) in the Windows SDK.
 
 The second version of this method allows you to convert the coordinates of a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
 
@@ -1995,7 +1995,7 @@ BOOL ScrollWindow(
 
 ### Remarks
 
-See [ScrollWindow](/windows/desktop/api/winuser/nf-winuser-scrollwindow) in the Windows SDK.
+See [ScrollWindow](/windows/win32/api/winuser/nf-winuser-scrollwindow) in the Windows SDK.
 
 ##  <a name="scrollwindowex"></a>  CWindow::ScrollWindowEx
 
@@ -2014,7 +2014,7 @@ int ScrollWindowEx(
 
 ### Remarks
 
-See [ScrollWindowEx](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) in the Windows SDK.
+See [ScrollWindowEx](/windows/win32/api/winuser/nf-winuser-scrollwindowex) in the Windows SDK.
 
 ##  <a name="senddlgitemmessage"></a>  CWindow::SendDlgItemMessage
 
@@ -2030,7 +2030,7 @@ LRESULT SendDlgItemMessage(
 
 ### Remarks
 
-See [SendDlgItemMessage](/windows/desktop/api/winuser/nf-winuser-senddlgitemmessagea) in the Windows SDK.
+See [SendDlgItemMessage](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagew) in the Windows SDK.
 
 ##  <a name="sendmessage"></a>  CWindow::SendMessage
 
@@ -2051,7 +2051,7 @@ static LRESULT SendMessage(
 
 ### Remarks
 
-See [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) in the Windows SDK.
+See [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) in the Windows SDK.
 
 ### Example
 
@@ -2100,7 +2100,7 @@ BOOL SendNotifyMessage(
 
 ### Remarks
 
-See [SendNotifyMessage](/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea) in the Windows SDK.
+See [SendNotifyMessage](/windows/win32/api/winuser/nf-winuser-sendnotifymessagew) in the Windows SDK.
 
 If the window was created by the calling thread, `SendNotifyMessage` does not return until the window procedure has processed the message. Otherwise, it returns immediately.
 
@@ -2114,7 +2114,7 @@ HWND SetActiveWindow() throw();
 
 ### Remarks
 
-See [SetActiveWindow](/windows/desktop/api/winuser/nf-winuser-setactivewindow) in the Windows SDK.
+See [SetActiveWindow](/windows/win32/api/winuser/nf-winuser-setactivewindow) in the Windows SDK.
 
 ### Example
 
@@ -2130,7 +2130,7 @@ HWND SetCapture() throw();
 
 ### Remarks
 
-See [SetCapture](/windows/desktop/api/winuser/nf-winuser-setcapture) in the Windows SDK.
+See [SetCapture](/windows/win32/api/winuser/nf-winuser-setcapture) in the Windows SDK.
 
 ##  <a name="setclipboardviewer"></a>  CWindow::SetClipboardViewer
 
@@ -2142,7 +2142,7 @@ HWND SetClipboardViewer() throw();
 
 ### Remarks
 
-See [SetClipboardViewer](/windows/desktop/api/winuser/nf-winuser-setclipboardviewer) in the Windows SDK.
+See [SetClipboardViewer](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) in the Windows SDK.
 
 ##  <a name="setdlgctrlid"></a>  CWindow::SetDlgCtrlID
 
@@ -2174,7 +2174,7 @@ BOOL SetDlgItemInt(
 
 ### Remarks
 
-See [SetDlgItemInt](/windows/desktop/api/winuser/nf-winuser-setdlgitemint) in the Windows SDK.
+See [SetDlgItemInt](/windows/win32/api/winuser/nf-winuser-setdlgitemint) in the Windows SDK.
 
 ##  <a name="setdlgitemtext"></a>  CWindow::SetDlgItemText
 
@@ -2186,7 +2186,7 @@ BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 
 ### Remarks
 
-See [SetDlgItemText](/windows/desktop/api/winuser/nf-winuser-setdlgitemtexta) in the Windows SDK.
+See [SetDlgItemText](/windows/win32/api/winuser/nf-winuser-setdlgitemtextw) in the Windows SDK.
 
 ##  <a name="setfocus"></a>  CWindow::SetFocus
 
@@ -2198,7 +2198,7 @@ HWND SetFocus() throw();
 
 ### Remarks
 
-See [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) in the Windows SDK.
+See [SetFocus](/windows/win32/api/winuser/nf-winuser-setfocus) in the Windows SDK.
 
 ### Example
 
@@ -2206,7 +2206,7 @@ See [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) in the Windows 
 
 ##  <a name="setfont"></a>  CWindow::SetFont
 
-Changes the window's current font by sending a [WM_SETFONT](/windows/desktop/winmsg/wm-setfont) message to the window.
+Changes the window's current font by sending a [WM_SETFONT](/windows/win32/winmsg/wm-setfont) message to the window.
 
 ```
 void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
@@ -2238,7 +2238,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 
 ### Return Value
 
-For a list of possible return values, see [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) in the Windows SDK.
+For a list of possible return values, see [WM_SETHOTKEY](/windows/win32/inputdev/wm-sethotkey) in the Windows SDK.
 
 ##  <a name="seticon"></a>  CWindow::SetIcon
 
@@ -2262,7 +2262,7 @@ The handle to the previous icon.
 
 ### Remarks
 
-`SetIcon` sends a [WM_SETICON](/windows/desktop/winmsg/wm-seticon) message to the window.
+`SetIcon` sends a [WM_SETICON](/windows/win32/winmsg/wm-seticon) message to the window.
 
 ##  <a name="setmenu"></a>  CWindow::SetMenu
 
@@ -2274,7 +2274,7 @@ BOOL SetMenu(HMENU hMenu) throw();
 
 ### Remarks
 
-See [SetMenu](/windows/desktop/api/winuser/nf-winuser-setmenu) in the Windows SDK.
+See [SetMenu](/windows/win32/api/winuser/nf-winuser-setmenu) in the Windows SDK.
 
 ##  <a name="setparent"></a>  CWindow::SetParent
 
@@ -2286,7 +2286,7 @@ HWND SetParent(HWND hWndNewParent) throw();
 
 ### Remarks
 
-See [SetParent](/windows/desktop/api/winuser/nf-winuser-setparent) in the Windows SDK.
+See [SetParent](/windows/win32/api/winuser/nf-winuser-setparent) in the Windows SDK.
 
 ### Example
 
@@ -2294,7 +2294,7 @@ See [SetParent](/windows/desktop/api/winuser/nf-winuser-setparent) in the Window
 
 ##  <a name="setredraw"></a>  CWindow::SetRedraw
 
-Sets or clears the redraw flag by sending a [WM_SETREDRAW](/windows/desktop/gdi/wm-setredraw) message to the window.
+Sets or clears the redraw flag by sending a [WM_SETREDRAW](/windows/win32/gdi/wm-setredraw) message to the window.
 
 ```
 void SetRedraw(BOOL bRedraw = TRUE) throw();
@@ -2326,7 +2326,7 @@ int SetScrollInfo(
 
 ### Remarks
 
-See [SetScrollInfo](/windows/desktop/api/winuser/nf-winuser-setscrollinfo) in the Windows SDK.
+See [SetScrollInfo](/windows/win32/api/winuser/nf-winuser-setscrollinfo) in the Windows SDK.
 
 ##  <a name="setscrollpos"></a>  CWindow::SetScrollPos
 
@@ -2341,7 +2341,7 @@ int SetScrollPos(
 
 ### Remarks
 
-See [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos) in the Windows SDK.
+See [SetScrollPos](/windows/win32/api/winuser/nf-winuser-setscrollpos) in the Windows SDK.
 
 ##  <a name="setscrollrange"></a>  CWindow::SetScrollRange
 
@@ -2357,7 +2357,7 @@ BOOL SetScrollRange(
 
 ### Remarks
 
-See [SetScrollRange](/windows/desktop/api/winuser/nf-winuser-setscrollrange) in the Windows SDK.
+See [SetScrollRange](/windows/win32/api/winuser/nf-winuser-setscrollrange) in the Windows SDK.
 
 ##  <a name="settimer"></a>  CWindow::SetTimer
 
@@ -2372,7 +2372,7 @@ UINT SetTimer(
 
 ### Remarks
 
-See [SetTimer](/windows/desktop/api/winuser/nf-winuser-settimer) in the Windows SDK.
+See [SetTimer](/windows/win32/api/winuser/nf-winuser-settimer) in the Windows SDK.
 
 ##  <a name="setwindowcontexthelpid"></a>  CWindow::SetWindowContextHelpId
 
@@ -2384,7 +2384,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 
 ### Remarks
 
-See [SetWindowContextHelpId](/windows/desktop/api/winuser/nf-winuser-setwindowcontexthelpid) in the Windows SDK.
+See [SetWindowContextHelpId](/windows/win32/api/winuser/nf-winuser-setwindowcontexthelpid) in the Windows SDK.
 
 ##  <a name="setwindowlong"></a>  CWindow::SetWindowLong
 
@@ -2396,7 +2396,7 @@ LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 
 ### Remarks
 
-See [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) in the Windows SDK.
+See [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) in the Windows SDK.
 
 > [!NOTE]
 >  To write code that is compatible with both 32-bit and 64-bit versions of Windows, use [CWindow::SetWindowLongPtr](#setwindowlongptr).
@@ -2411,7 +2411,7 @@ LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 
 ### Remarks
 
-See [SetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-setwindowlongptra) in the Windows SDK.
+See [SetWindowLongPtr](/windows/win32/api/winuser/nf-winuser-setwindowlongptrw) in the Windows SDK.
 
 This function supersedes the `CWindow::SetWindowLong` method. To write code that is compatible with both 32-bit and 64-bit versions of Windows, use `CWindow::SetWindowLongPtr`.
 
@@ -2425,7 +2425,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 
 ### Remarks
 
-See [SetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-setwindowplacement) in the Windows SDK.
+See [SetWindowPlacement](/windows/win32/api/winuser/nf-winuser-setwindowplacement) in the Windows SDK.
 
 ##  <a name="setwindowpos"></a>  CWindow::SetWindowPos
 
@@ -2448,7 +2448,7 @@ BOOL SetWindowPos(
 
 ### Remarks
 
-See [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.
+See [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.
 
 The second version of this method uses a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to set the window's new position, width, and height.
 
@@ -2462,7 +2462,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 
 ### Remarks
 
-See [SetWindowRgn](/windows/desktop/api/winuser/nf-winuser-setwindowrgn) in the Windows SDK.
+See [SetWindowRgn](/windows/win32/api/winuser/nf-winuser-setwindowrgn) in the Windows SDK.
 
 ##  <a name="setwindowtext"></a>  CWindow::SetWindowText
 
@@ -2474,7 +2474,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 
 ### Remarks
 
-See [SetWindowText](/windows/desktop/api/winuser/nf-winuser-setwindowtexta) in the Windows SDK.
+See [SetWindowText](/windows/win32/api/winuser/nf-winuser-setwindowtextw) in the Windows SDK.
 
 ### Example
 
@@ -2490,7 +2490,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 
 ### Remarks
 
-See [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) in the Windows SDK.
+See [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) in the Windows SDK.
 
 ##  <a name="showcaret"></a>  CWindow::ShowCaret
 
@@ -2502,7 +2502,7 @@ BOOL ShowCaret() throw();
 
 ### Remarks
 
-See [ShowCaret](/windows/desktop/api/winuser/nf-winuser-showcaret) in the Windows SDK.
+See [ShowCaret](/windows/win32/api/winuser/nf-winuser-showcaret) in the Windows SDK.
 
 ### Example
 
@@ -2518,7 +2518,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 
 ### Remarks
 
-See [ShowOwnedPopups](/windows/desktop/api/winuser/nf-winuser-showownedpopups) in the Windows SDK.
+See [ShowOwnedPopups](/windows/win32/api/winuser/nf-winuser-showownedpopups) in the Windows SDK.
 
 ##  <a name="showscrollbar"></a>  CWindow::ShowScrollBar
 
@@ -2530,7 +2530,7 @@ BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 
 ### Remarks
 
-See [ShowScrollBar](/windows/desktop/api/winuser/nf-winuser-showscrollbar) in the Windows SDK.
+See [ShowScrollBar](/windows/win32/api/winuser/nf-winuser-showscrollbar) in the Windows SDK.
 
 ##  <a name="showwindow"></a>  CWindow::ShowWindow
 
@@ -2542,7 +2542,7 @@ BOOL ShowWindow(int nCmdShow) throw();
 
 ### Remarks
 
-See [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) in the Windows SDK.
+See [ShowWindow](/windows/win32/api/winuser/nf-winuser-showwindow) in the Windows SDK.
 
 ### Example
 
@@ -2558,7 +2558,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 
 ### Remarks
 
-See [ShowWindowAsync](/windows/desktop/api/winuser/nf-winuser-showwindowasync) in the Windows SDK.
+See [ShowWindowAsync](/windows/win32/api/winuser/nf-winuser-showwindowasync) in the Windows SDK.
 
 ##  <a name="updatewindow"></a>  CWindow::UpdateWindow
 
@@ -2570,7 +2570,7 @@ BOOL UpdateWindow() throw();
 
 ### Remarks
 
-See [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) in the Windows SDK.
+See [UpdateWindow](/windows/win32/api/winuser/nf-winuser-updatewindow) in the Windows SDK.
 
 ### Example
 
@@ -2586,7 +2586,7 @@ BOOL ValidateRect(LPCRECT lpRect) throw();
 
 ### Remarks
 
-See [ValidateRect](/windows/desktop/api/winuser/nf-winuser-validaterect) in the Windows SDK.
+See [ValidateRect](/windows/win32/api/winuser/nf-winuser-validaterect) in the Windows SDK.
 
 ##  <a name="validatergn"></a>  CWindow::ValidateRgn
 
@@ -2598,7 +2598,7 @@ BOOL ValidateRgn(HRGN hRgn) throw();
 
 ### Remarks
 
-See [ValidateRgn](/windows/desktop/api/winuser/nf-winuser-validatergn) in the Windows SDK.
+See [ValidateRgn](/windows/win32/api/winuser/nf-winuser-validatergn) in the Windows SDK.
 
 ##  <a name="winhelp"></a>  CWindow::WinHelp
 
@@ -2613,7 +2613,7 @@ BOOL WinHelp(
 
 ### Remarks
 
-See [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.
+See [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw) in the Windows SDK.
 
 ## See also
 

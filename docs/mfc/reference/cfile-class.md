@@ -320,7 +320,7 @@ The title of the underlying file.
 
 ### Remarks
 
-This method calls [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) to retrieve the file name (including the file extension) of the underlying file. That means the file extension isn't always included in the returned file title string. For more information, see [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) and [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) in the Windows SDK.
+This method calls [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) to retrieve the title of the file. If successful, the method returns the string that the system would use to display the file name to the user. Otherwise, the method calls [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) to retrieve the file name (including the file extension) of the underlying file. That means the file extension isn't always included in the returned file title string. For more information, see [GetFileTitle](/windows/win32/api/commdlg/nf-commdlg-getfiletitlew) and [PathFindFileName](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) in the Windows SDK.
 
 To return the entire path of the file, including the name, call [GetFilePath](#getfilepath). To return just the name of the file, call [GetFileName](#getfilename).
 
@@ -551,7 +551,7 @@ The following table describes the possible results of `Open`.
 
 ##  <a name="operator_handle"></a>  CFile::operator HANDLE
 
-Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) and [GetFileTime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) that expect a `HANDLE`.
+Use this operator to pass a handle to a `CFile` object to functions such as [ReadFileEx](/windows/win32/api/fileapi/nf-fileapi-readfileex) and [GetFileTime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) that expect a `HANDLE`.
 
 ```
 operator HANDLE() const;

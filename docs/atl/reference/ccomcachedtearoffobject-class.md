@@ -7,7 +7,7 @@ ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
 ---
 # CComCachedTearOffObject Class
 
-This class implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a tear-off interface.
+This class implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for a tear-off interface.
 
 ## Syntax
 
@@ -52,7 +52,7 @@ Your tear-off class, derived from `CComTearOffObjectBase` and the interfaces you
 
 ## Remarks
 
-`CComCachedTearOffObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a tear-off interface. This class differs from `CComTearOffObject` in that `CComCachedTearOffObject` has its own `IUnknown`, separate from the owner object's `IUnknown` (the owner is the object for which the tear-off is being created). `CComCachedTearOffObject` maintains its own reference count on its `IUnknown` and deletes itself once its reference count is zero. However, if you query for any of its tear-off interfaces, the reference count of the owner object's `IUnknown` will be incremented.
+`CComCachedTearOffObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for a tear-off interface. This class differs from `CComTearOffObject` in that `CComCachedTearOffObject` has its own `IUnknown`, separate from the owner object's `IUnknown` (the owner is the object for which the tear-off is being created). `CComCachedTearOffObject` maintains its own reference count on its `IUnknown` and deletes itself once its reference count is zero. However, if you query for any of its tear-off interfaces, the reference count of the owner object's `IUnknown` will be incremented.
 
 If the `CComCachedTearOffObject` object implementing the tear-off is already instantiated, and the tear-off interface is queried for again, the same `CComCachedTearOffObject` object is reused. In contrast, if a tear-off interface implemented by a `CComTearOffObject` is again queried for through the owner object, another `CComTearOffObject` will be instantiated.
 

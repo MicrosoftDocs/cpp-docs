@@ -66,7 +66,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|Override to perform application-specific idle-time processing.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|Called by the framework to open a document from a file.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|Parses individual parameters and flags in the command line.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage).|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Handles command-line arguments and flags.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the application's message and command handlers.|
@@ -656,7 +656,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### Parameters
 
 *pPrintDlg*<br/>
-A pointer to a [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) structure.
+A pointer to a [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) structure.
 
 ### Return Value
 
@@ -708,7 +708,7 @@ This member function is not case sensitive, so the strings in the *lpszSection* 
 > `GetProfileBinary` allocates a buffer and returns its address in \* *ppData*. The caller is responsible for freeing the buffer using **delete []**.
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -749,7 +749,7 @@ This member function supports hexadecimal notation for the value in the .INI fil
 This member function is not case sensitive, so the strings in the *lpszSection* and *lpszEntry* parameters may differ in case.
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -786,7 +786,7 @@ The return value is the string from the application's .INI file or *lpszDefault*
 ### Remarks
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -842,7 +842,7 @@ virtual void HtmlHelp(
 Specifies additional data. The value used depends on the value of the *nCmd* parameter. Defaults to `0x000F` which means [HH_HELP_CONTEXT](/previous-versions/windows/desktop/htmlhelp/hh-help-context-command).
 
 *nCmd*<br/>
-Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in the [HtmlHelpW](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpw) or [HtmlHelpA](/windows/desktop/api/htmlhelp/nf-htmlhelp-htmlhelpa) API functions in the Windows SDK.  
+Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the *uCommand* parameter described in the [HtmlHelpW](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpw) or [HtmlHelpA](/windows/win32/api/htmlhelp/nf-htmlhelp-htmlhelpa) API functions in the Windows SDK.  
 
 ### Remarks
 
@@ -869,7 +869,7 @@ Application initialization is conceptually divided into two sections: one-time a
 Override `InitInstance` to initialize each new instance of your application running under Windows. Typically, you override `InitInstance` to construct your main window object and set the `CWinThread::m_pMainWnd` data member to point to that window. For more information on overriding this member function, see [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
-> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
+> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED).
 
 ### Example
 
@@ -905,7 +905,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 Points to a null-terminated string that contains the name of the cursor resource. You can use a `CString` for this argument.
 
 *nIDResource*<br/>
-ID of the cursor resource. For a list of resources, see [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) in the Windows SDK.
+ID of the cursor resource. For a list of resources, see [LoadCursor](/windows/win32/api/winuser/nf-winuser-loadcursorw) in the Windows SDK.
 
 ### Return Value
 
@@ -948,7 +948,7 @@ A handle to an icon if successful; otherwise NULL.
 You can use the [LoadStandardIcon](#loadstandardicon) or [LoadOEMIcon](#loadoemicon) member function to access the predefined Windows icons.
 
 > [!NOTE]
-> This member function calls the Win32 API function [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
+> This member function calls the Win32 API function [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1058,7 +1058,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### Parameters
 
 *lpszIconName*<br/>
-A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) in the Windows SDK.
+A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw) in the Windows SDK.
 
 ### Return Value
 
@@ -1590,7 +1590,7 @@ For a description of the command-line flags, see [CCommandLineInfo::m_nShellComm
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
+Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1599,7 +1599,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-A pointer to a [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
+A pointer to a [MSG](/windows/win32/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
 
 ### Return Value
 
@@ -1621,7 +1621,7 @@ virtual BOOL ProcessMessageFilter(
 Specifies a hook code. This member function uses the code to determine how to process *lpMsg.*
 
 *lpMsg*<br/>
-A pointer to a Windows [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure.
+A pointer to a Windows [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure.
 
 ### Return Value
 
@@ -1692,7 +1692,7 @@ virtual LRESULT ProcessWndProcException(
 A pointer to an uncaught exception.
 
 *pMsg*<br/>
-A [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) structure that contains information about the windows message that caused the framework to throw an exception.
+A [MSG](/windows/win32/api/winuser/ns-winuser-msg)tructure that contains information about the windows message that caused the framework to throw an exception.
 
 ### Return Value
 
@@ -1924,7 +1924,7 @@ void SelectPrinter(
 ### Parameters
 
 *hDevNames*<br/>
-A handle to a [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) structure that identifies the driver, device, and output port names of a specific printer.
+A handle to a [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames)tructure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*<br/>
 A handle to a [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) structure that specifies information about the device initialization and environment of a printer.
@@ -2066,7 +2066,7 @@ virtual void WinHelp(
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
 *nCmd*<br/>
-Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows function.
+Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw) Windows function.
 
 ### Remarks
 

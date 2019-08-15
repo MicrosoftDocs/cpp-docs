@@ -9,7 +9,7 @@ ms.assetid: f08d2b81-4bfc-49bc-986c-bfb2face8138
 
 A file specification can include an optional drive letter (always followed by a colon), a series of optional directory names (separated by backslashes), and a filename.
 
-For more information, see [Naming a File](/windows/desktop/FileIO/naming-a-file) for more information.
+For more information, see [Naming a File](/windows/win32/FileIO/naming-a-file) for more information.
 
 ## See also
 

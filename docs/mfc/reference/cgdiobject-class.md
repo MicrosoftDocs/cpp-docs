@@ -108,7 +108,7 @@ BOOL CreateStockObject(int nIndex);
 ### Parameters
 
 *nIndex*<br/>
-A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) in the Windows SDK for a description of appropriate values.
+A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](/windows/win32/api/wingdi/nf-wingdi-getstockobject) in the Windows SDK for a description of appropriate values.
 
 ### Return Value
 
@@ -215,16 +215,16 @@ The function retrieves a data structure whose type depends on the type of graphi
 
 |Object|Buffer type|
 |------------|-----------------|
-|`CPen`|[LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
-|`CBrush`|[LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
-|`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|
-|`CBitmap`|[BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
+|`CPen`|[LOGPEN](/windows/win32/api/Wingdi/ns-wingdi-logpen)|
+|`CBrush`|[LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush)|
+|`CFont`|[LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)|
+|`CBitmap`|[BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap)|
 |`CPalette`|WORD|
 |`CRgn`|Not supported|
 
 If the object is a `CBitmap` object, `GetObject` returns only the width, height, and color format information of the bitmap. The actual bits can be retrieved by using [CBitmap::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits).
 
-If the object is a `CPalette` object, `GetObject` retrieves a WORD that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).
+If the object is a `CPalette` object, `GetObject` retrieves a WORD that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).
 
 ##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType
 

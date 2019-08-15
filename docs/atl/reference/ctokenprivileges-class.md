@@ -51,13 +51,13 @@ class CTokenPrivileges
 
 ## Remarks
 
-An [access token](/windows/desktop/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.
+An [access token](/windows/win32/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.
 
-The access token is used to describe the various security privileges granted to each user. A privilege consists of a 64-bit number called a locally unique identifier ( [LUID](/windows/desktop/api/winnt/ns-winnt-luid)) and a descriptor string.
+The access token is used to describe the various security privileges granted to each user. A privilege consists of a 64-bit number called a locally unique identifier ( [LUID](/windows/win32/api/winnt/ns-winnt-luid)) and a descriptor string.
 
-The `CTokenPrivileges` class is a wrapper for the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure and contains 0 or more privileges. Privileges can be added, deleted, or queried using the supplied class methods.
+The `CTokenPrivileges` class is a wrapper for the [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure and contains 0 or more privileges. Privileges can be added, deleted, or queried using the supplied class methods.
 
-For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.
+For an introduction to the access control model in Windows, see [Access Control](/windows/win32/SecAuthZ/access-control) in the Windows SDK.
 
 ## Requirements
 
@@ -81,7 +81,7 @@ Pointer to a null-terminated string that specifies the name of the privilege, as
 If true, the privilege is enabled. If false, the privilege is disabled.
 
 *rPrivileges*<br/>
-Reference to a [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure. The privileges and attributes are copied from this structure and added to the `CTokenPrivileges` object.
+Reference to a [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure. The privileges and attributes are copied from this structure and added to the `CTokenPrivileges` object.
 
 ### Return Value
 
@@ -103,7 +103,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 The `CTokenPrivileges` object to assign to the new object.
 
 *rPrivileges*<br/>
-The [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure to assign to the new `CTokenPrivileges` object.
+The [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure to assign to the new `CTokenPrivileges` object.
 
 ### Remarks
 
@@ -210,7 +210,7 @@ void GetLuidsAndAttributes(
 ### Parameters
 
 *pPrivileges*<br/>
-Pointer to an array of [LUID](/windows/desktop/api/winnt/ns-winnt-luid) objects. `CLUIDArray` is a typedef defined as `CAtlArray<LUID> CLUIDArray`.
+Pointer to an array of [LUID](/windows/win32/api/winnt/ns-winnt-luid) objects. `CLUIDArray` is a typedef defined as `CAtlArray<LUID> CLUIDArray`.
 
 *pAttributes*<br/>
 Pointer to an array of DWORD objects. If this parameter is omitted or NULL, the attributes are not retrieved. `CAttributes` is a typedef defined as `CAtlArray <DWORD> CAttributes`.
@@ -253,7 +253,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 
 ### Return Value
 
-Returns a pointer to the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure.
+Returns a pointer to the [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure.
 
 ##  <a name="lookupprivilege"></a>  CTokenPrivileges::LookupPrivilege
 
@@ -289,7 +289,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ### Parameters
 
 *rPrivileges*<br/>
-The [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure to assign to the `CTokenPrivileges` object.
+The [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure to assign to the `CTokenPrivileges` object.
 
 *rhs*<br/>
 The `CTokenPrivileges` object to assign to the object.
@@ -308,13 +308,13 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 
 ### Remarks
 
-Casts a value to a pointer to the [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges) structure.
+Casts a value to a pointer to the [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) structure.
 
 ## See also
 
 [Security Sample](../../overview/visual-cpp-samples.md)<br/>
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-token_privileges)<br/>
-[LUID](/windows/desktop/api/winnt/ns-winnt-luid)<br/>
-[LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-luid_and_attributes)<br/>
+[TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges)<br/>
+[LUID](/windows/win32/api/winnt/ns-winnt-luid)<br/>
+[LUID_AND_ATTRIBUTES](/windows/win32/api/winnt/ns-winnt-luid_and_attributes)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
 [Security Global Functions](../../atl/reference/security-global-functions.md)

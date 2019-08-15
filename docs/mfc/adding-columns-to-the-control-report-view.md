@@ -15,7 +15,7 @@ Even though columns can be added to a list control at any time, the columns are 
 
 Each column has an associated header item (see [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) object that labels the column and allows users to resize the column.
 
-If your list control supports a report view, you need to add a column for each possible subitem in a list control item. Add a column by preparing an [LV_COLUMN](/windows/desktop/api/commctrl/ns-commctrl-taglvcolumna) structure and then making a call to [InsertColumn](../mfc/reference/clistctrl-class.md#insertcolumn). After adding the necessary columns (sometimes referred to as header items), you can reorder them using member functions and styles belonging to the embedded header control. For more information, see [Ordering Items in the Header Control](../mfc/ordering-items-in-the-header-control.md).
+If your list control supports a report view, you need to add a column for each possible subitem in a list control item. Add a column by preparing an [LVCOLUMN](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) structure and then making a call to [InsertColumn](../mfc/reference/clistctrl-class.md#insertcolumn). After adding the necessary columns (sometimes referred to as header items), you can reorder them using member functions and styles belonging to the embedded header control. For more information, see [Ordering Items in the Header Control](../mfc/ordering-items-in-the-header-control.md).
 
 > [!NOTE]
 >  If the list control is created with the **LVS_NOCOLUMNHEADER** style, any attempt to insert columns will be ignored.

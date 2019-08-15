@@ -30,4 +30,4 @@ When isolation is disabled for an executable, the Windows loader doesn't try to 
 
 [EDITBIN Options](editbin-options.md)<br/>
 [/ALLOWISOLATION (Manifest Lookup)](allowisolation-manifest-lookup.md)<br/>
-[Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference)
+[Manifest Files Reference](/windows/win32/SbsCs/manifest-files-reference)

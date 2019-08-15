@@ -67,7 +67,7 @@ class CPaneFrameWnd : public CWnd
 |[CPaneFrameWnd::OnShowPane](#onshowpane)|Called by the framework when a pane in the mini-frame window is hidden or displayed.|
 |[CPaneFrameWnd::PaneFromPoint](#panefrompoint)|Returns a pane if it contains a user-supplied point inside a mini-frame window.|
 |[CPaneFrameWnd::Pin](#pin)||
-|`CPaneFrameWnd::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions.|
+|`CPaneFrameWnd::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions.|
 |[CPaneFrameWnd::RedrawAll](#redrawall)|Redraws all mini-frame windows.|
 |[CPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Called by the framework to remove non-valid panes.|
 |[CPaneFrameWnd::RemovePane](#removepane)|Removes a pane from the mini-frame window.|
@@ -428,7 +428,7 @@ The height, in pixels, of the mini-frame window.
 
 ### Remarks
 
-Call this method to determine the height of a mini-frame window. By default, the height is set to SM_CYSMCAPTION. For more information, see [GetSystemMetrics Function](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics).
+Call this method to determine the height of a mini-frame window. By default, the height is set to SM_CYSMCAPTION. For more information, see [GetSystemMetrics Function](/windows/win32/api/winuser/nf-winuser-getsystemmetrics).
 
 ##  <a name="getcaptionrect"></a>  CPaneFrameWnd::GetCaptionRect
 

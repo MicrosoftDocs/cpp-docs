@@ -174,7 +174,7 @@ If the return value is greater than or equal to 0, it is the zero-based index to
 If the list box was not created with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 To insert a string into a specific location within the list, use the [InsertString](#insertstring) member function.
 
@@ -221,7 +221,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### Parameters
 
 *lpCompareItemStruct*<br/>
-A long pointer to a [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) structure.
+A long pointer to a [COMPAREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-compareitemstruct) structure.
 
 ### Return Value
 
@@ -273,7 +273,7 @@ virtual BOOL Create(
 Specifies the style of the combo box. Apply any combination of [combo-box styles](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) to the box.
 
 *rect*<br/>
-Points to the position and size of the combo box. Can be a [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) or a `CRect` object.
+Points to the position and size of the combo box. Can be a [RECT structure](/windows/win32/api/windef/ns-windef-rect) or a `CRect` object.
 
 *pParentWnd*<br/>
 Specifies the combo box's parent window (usually a `CDialog`). It must not be NULL.
@@ -340,7 +340,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### Parameters
 
 *lpDeleteItemStruct*<br/>
-A long pointer to a Windows [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
+A long pointer to a Windows [DELETEITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-deleteitemstruct) structure that contains information about the deleted item. See [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) for a description of this structure.
 
 ### Remarks
 
@@ -415,7 +415,7 @@ If the return value is greater than or equal to 0, it is the zero-based index of
 
 ### Remarks
 
-This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.
+This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
@@ -432,7 +432,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.
+A pointer to a [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) structure that contains information about the type of drawing required.
 
 ### Remarks
 
@@ -468,7 +468,7 @@ If the return value is greater than or equal to 0, it is the zero-based index of
 
 ### Remarks
 
-This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.
+This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
@@ -515,7 +515,7 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
 ### Parameters
 
 *pcbi*<br/>
-A pointer to the [COMBOBOXINFO](/windows/desktop/api/winuser/ns-winuser-tagcomboboxinfo) structure.
+A pointer to the [COMBOBOXINFO](/windows/win32/api/winuser/ns-winuser-comboboxinfo) structure.
 
 ### Return Value
 
@@ -523,7 +523,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](/windows/desktop/Controls/cb-getcomboboxinfo) message, as described in the Windows SDK.
+This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](/windows/win32/Controls/cb-getcomboboxinfo) message, as described in the Windows SDK.
 
 ##  <a name="getcount"></a>  CComboBox::GetCount
 
@@ -572,7 +572,7 @@ In the second overload, TRUE if this method is successful; otherwise, FALSE.
 
 Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.
 
-This method sends the [CB_GETCUEBANNER](/windows/desktop/Controls/cb-getcuebanner) message, which is described in the Windows SDK.
+This method sends the [CB_GETCUEBANNER](/windows/win32/Controls/cb-getcuebanner) message, which is described in the Windows SDK.
 
 ##  <a name="getcursel"></a>  CComboBox::GetCurSel
 
@@ -605,7 +605,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 ### Parameters
 
 *lprect*<br/>
-Points to the [RECT structure](/windows/desktop/api/windef/ns-windef-tagrect) that is to receive the coordinates.
+Points to the [RECT structure](/windows/win32/api/windef/ns-windef-rect) that is to receive the coordinates.
 
 ### Example
 
@@ -870,7 +870,7 @@ The minimum number of visible items in the current drop-down list.
 
 ### Remarks
 
-This method sends the [CB_GETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) message, which is described in the Windows SDK.
+This method sends the [CB_GETMINVISIBLE](/windows/win32/Controls/cb-setminvisible) message, which is described in the Windows SDK.
 
 ##  <a name="gettopindex"></a>  CComboBox::GetTopIndex
 
@@ -953,7 +953,7 @@ The zero-based index of the position at which the string was inserted. The retur
 Unlike the [AddString](#addstring) member function, the `InsertString` member function does not cause a list with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style to be sorted.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
@@ -997,7 +997,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### Parameters
 
 *lpMeasureItemStruct*<br/>
-A long pointer to a [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) structure.
+A long pointer to a [MEASUREITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-measureitemstruct) structure.
 
 ### Remarks
 
@@ -1093,7 +1093,7 @@ TRUE if the method is successful; otherwise, FALSE.
 
 Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.
 
-This method sends the [CB_SETCUEBANNER](/windows/desktop/Controls/cb-setcuebanner) message, which is described in the Windows SDK.
+This method sends the [CB_SETCUEBANNER](/windows/win32/Controls/cb-setcuebanner) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -1186,7 +1186,7 @@ Nonzero if the member function is successful; otherwise 0. It is CB_ERR if `CCom
 The positions are zero-based. To select the first character of the edit control, you specify a starting position of 0. The ending position is for the character just after the last character to select. For example, to select the first four characters of the edit control, you would use a starting position of 0 and an ending position of 4.
 
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/win32/Controls/comboboxex-controls) in the Windows SDK.
 
 ### Example
 
@@ -1383,7 +1383,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [CB_SETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) message, which is described in the Windows SDK.
+This method sends the [CB_SETMINVISIBLE](/windows/win32/Controls/cb-setminvisible) message, which is described in the Windows SDK.
 
 ### Example
 

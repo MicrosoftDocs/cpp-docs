@@ -283,7 +283,7 @@ Nonzero if the method is successful; otherwise 0.
 
 You should use this function instead of [CMFCMenuBar::Create](#create) when you want to specify styles in addition to the toolbar style. Some frequently used additional styles are TBSTYLE_TRANSPARENT and CBRS_TOP.
 
-For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](/windows/desktop/winmsg/window-styles).
+For lists of additional styles, see [Toolbar Control and Button Styles](/windows/win32/Controls/toolbar-control-and-button-styles), [common control styles](/windows/win32/Controls/common-control-styles), and [common window styles](/windows/win32/winmsg/window-styles).
 
 ### Example
 
@@ -929,7 +929,7 @@ static BOOL SetMenuFont(
 ### Parameters
 
 *lpLogFont*<br/>
-[in] A pointer to a [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) structure that defines the font to set.
+[in] A pointer to a [LOGFONT](/windows/win32/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) structure that defines the font to set.
 
 *bHorz*<br/>
 [in] TRUE if you want the *lpLogFont* parameter to be used for the vertical font, FALSE if you want it to be used for horizontal font.

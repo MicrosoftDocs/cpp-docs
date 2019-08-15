@@ -210,9 +210,9 @@ The newly allocated string.
 
 In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [CAtlException](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.
 
-Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
+Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-For more information about OLE allocation functions in Windows, see [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
+For more information about OLE allocation functions in Windows, see [SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
 
 ### Example
 
@@ -671,7 +671,7 @@ The function requires a message definition as input. The message definition is d
 > [!NOTE]
 > `FormatMessage` attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.
 
-Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
+Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
 
 ### Example
 
@@ -700,7 +700,7 @@ The function requires a message definition as input, determined by *pszFormat*. 
 > [!NOTE]
 > `FormatMessageV` calls [CStringT::FormatMessage](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.
 
-For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
+For more information, see the Windows [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
 
 ##  <a name="formatv"></a>  CStringT::FormatV
 

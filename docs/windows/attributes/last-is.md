@@ -22,7 +22,7 @@ One or more C-language expressions. Empty argument slots are allowed.
 
 ## Remarks
 
-The **last_is** C++ attribute has the same functionality as the [last_is](/windows/desktop/Midl/last-is) MIDL attribute.
+The **last_is** C++ attribute has the same functionality as the [last_is](/windows/win32/Midl/last-is) MIDL attribute.
 
 ## Example
 

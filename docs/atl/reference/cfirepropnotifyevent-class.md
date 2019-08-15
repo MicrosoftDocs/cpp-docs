@@ -41,7 +41,7 @@ For more information about creating controls, see the [ATL Tutorial](../../atl/a
 
 ##  <a name="fireonchanged"></a>  CFirePropNotifyEvent::FireOnChanged
 
-Notifies all connected [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property has changed.
+Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property has changed.
 
 ```
 static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
@@ -65,7 +65,7 @@ This function is safe to call even if your control does not support connection p
 
 ##  <a name="fireonrequestedit"></a>  CFirePropNotifyEvent::FireOnRequestEdit
 
-Notifies all connected [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property is about to change.
+Notifies all connected [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) interfaces (on every connection point of the object) that the specified object property is about to change.
 
 ```
 static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);

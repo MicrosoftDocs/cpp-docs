@@ -13,7 +13,7 @@ ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
 
 ## Remarks
 
-/MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).
+/MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](/windows/win32/SbsCs/manifest-files-reference).
 
 The default is /MANIFEST.
 

@@ -62,7 +62,7 @@
       },
       {
          "source_path": "docs/windows/universal-windows-apps-cpp.md",
-         "redirect_url": "/cpp/cppcx/universal-windows-apps-cppwrl",
+         "redirect_url": "/cpp/cppcx/universal-windows-apps-cpp",
          "redirect_document_id": true
       },
       {
@@ -251,7 +251,52 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/atl-mfc-shared/current-time-automation-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/current-time-general-purpose-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/date-and-time-automation-support.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/date-and-time-database-support.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/atl-mfc-shared/date-and-time-general-purpose-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/date-and-time-systemtime-support.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/elapsed-time-automation-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/elapsed-time-general-purpose-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/formatting-time-automation-classes.md",
+         "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/atl-mfc-shared/formatting-time-values-general-purpose-classes.md",
          "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
          "redirect_document_id": false
       },
@@ -673,6 +718,11 @@
       {
          "source_path": "docs/cppcx/operator-subtractwindows-ui-xaml-interop-typename.md",
          "redirect_url": "/cpp/cppcx/operator-windows-ui-xaml-interop-typename",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cppcx/uwp-development.md",
+         "redirect_url": "/cpp/cppcx/universal-windows-apps-cpp",
          "redirect_document_id": false
       },
       {
@@ -7912,7 +7962,7 @@
       },
       {
          "source_path": "docs/top/index.md",
-         "redirect_url": "/cpp/visual-cpp-in-visual-studio",
+         "redirect_url": "/cpp/overview/visual-cpp-in-visual-studio",
          "redirect_document_id": false
       },
       {

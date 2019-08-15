@@ -53,7 +53,7 @@ You can sort the information sequence of the string block by selecting either th
 
 ### To access version information from within your program
 
-If you want to access the version information from within your program, use the [GetFileVersionInfo](/windows/desktop/api/winver/nf-winver-getfileversioninfoa) function and the [VerQueryValue](/windows/desktop/api/winver/nf-winver-verqueryvaluea) function.
+If you want to access the version information from within your program, use the [GetFileVersionInfo](/windows/win32/api/winver/nf-winver-getfileversioninfow) function and the [VerQueryValue](/windows/win32/api/winver/nf-winver-verqueryvaluew) function.
 
 ## Requirements
 
@@ -62,5 +62,5 @@ Win32
 ## See also
 
 [Resource Editors](../windows/resource-editors.md)<br/>
-[Menus and Other Resources](/windows/desktop/menurc/resources)<br/>
-[Version Information (Windows)](/windows/desktop/menurc/version-information)
+[Menus and Other Resources](/windows/win32/menurc/resources)<br/>
+[Version Information (Windows)](/windows/win32/menurc/version-information)

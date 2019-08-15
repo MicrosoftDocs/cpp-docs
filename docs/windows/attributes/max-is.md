@@ -22,7 +22,7 @@ One or more C-language expressions. Empty argument slots are allowed.
 
 ## Remarks
 
-The **max_is** C++ attribute has the same functionality as the [max_is](/windows/desktop/Midl/max-is) MIDL attribute.
+The **max_is** C++ attribute has the same functionality as the [max_is](/windows/win32/Midl/max-is) MIDL attribute.
 
 ## Requirements
 

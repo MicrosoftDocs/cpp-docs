@@ -49,7 +49,7 @@ The name of the .winmd file to parse. If the path contains spaces, use quotation
 
 ## Midlrt command-line arguments
 
-See [MIDLRT and Windows Runtime components](/windows/desktop/Midl/midlrt-and-windows-runtime-components).
+See [MIDLRT and Windows Runtime components](/windows/win32/Midl/midlrt-and-windows-runtime-components).
 
 ## Examples
 

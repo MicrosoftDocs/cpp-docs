@@ -6,7 +6,7 @@ ms.assetid: 455c113b-e8d0-400c-8690-dbb92cba0d05
 ---
 # Making Owner-Drawn Header Controls
 
-You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](/windows/desktop/Controls/header-controls) in the Windows SDK.
+You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](/windows/win32/Controls/header-controls) in the Windows SDK.
 
 ## See also
 

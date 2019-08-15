@@ -263,6 +263,6 @@ Removes the interface from the GIT.
 ## See also
 
 [Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
-[Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
-[When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
+[Accessing Interfaces Across Apartments](/windows/win32/com/accessing-interfaces-across-apartments)<br/>
+[When to Use the Global Interface Table](/windows/win32/com/when-to-use-the-global-interface-table)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

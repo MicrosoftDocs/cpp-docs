@@ -32,7 +32,7 @@ A class to which the current `ComPtr` is a friend. (The template that uses this 
 
 `ComPtr<>` declares a type that represents the underlying interface pointer. Use `ComPtr<>` to declare a variable and then use the arrow member-access operator (`->`) to access an interface member function.
 
-For more information about smart pointers, see the "COM Smart Pointers" subsection of the [COM Coding Practices](/windows/desktop/LearnWin32/com-coding-practices) topic in the MSDN Library.
+For more information about smart pointers, see the "COM Smart Pointers" subsection of the [COM Coding Practices](/windows/win32/LearnWin32/com-coding-practices) topic in the MSDN Library.
 
 ## Members
 

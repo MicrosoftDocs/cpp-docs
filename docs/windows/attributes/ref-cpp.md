@@ -17,7 +17,7 @@ Identifies a reference pointer.
 
 ## Remarks
 
-The **ref** C++ attribute has the same functionality as the [ref](/windows/desktop/Midl/ref) MIDL attribute.
+The **ref** C++ attribute has the same functionality as the [ref](/windows/win32/Midl/ref) MIDL attribute.
 
 ## Example
 

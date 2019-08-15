@@ -36,7 +36,7 @@ Zero (0) if the current working drive was changed successfully; otherwise, -1.
 
 If *drive* is not in the range from 1 through 26, the invalid-parameter handler is invoked as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the **_chdrive** function returns -1, **errno** is set to **EACCES**, and **_doserrno** is set to **ERROR_INVALID_DRIVE**.
 
-The **_chdrive** function is not thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, see [SetCurrentDirectory](/windows/desktop/api/winbase/nf-winbase-setcurrentdirectory).
+The **_chdrive** function is not thread-safe because it depends on the **SetCurrentDirectory** function, which is itself not thread-safe. To use **_chdrive** safely in a multi-threaded application, you must provide your own thread synchronization. For more information, see [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory).
 
 The **_chdrive** function changes only the current working drive;  **_chdir** changes the current working directory.
 

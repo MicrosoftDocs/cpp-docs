@@ -193,7 +193,7 @@ For more information about asynchronous operations, see the article [Internet Fi
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
-This member function implements the behavior of the Win32 function [InternetGetCookie](/windows/desktop/api/wininet/nf-wininet-internetgetcookiea), as described in the Windows SDK.
+This member function implements the behavior of the Win32 function [InternetGetCookie](/windows/win32/api/wininet/nf-wininet-internetgetcookiew), as described in the Windows SDK.
 
 ```cpp
 static BOOL GetCookie(
@@ -224,7 +224,7 @@ The variable specifying the size of the *pstrCookieData* buffer. If the function
 
 ### Return Value
 
-Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to determine the cause of the error. The following error values apply:
+Returns TRUE if successful, or FALSE otherwise. If the call fails, call the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) to determine the cause of the error. The following error values apply:
 
 - ERROR_NO_MORE_ITEMS There is no cookie for the specified URL and all its parents.
 
@@ -423,7 +423,7 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 |-----------|-------------|
 |INTERNET_STATUS_RESOLVING_NAME|Looking up the IP address of the name contained in *lpvStatusInformation*.|
 |INTERNET_STATUS_NAME_RESOLVED|Successfully found the IP address of the name contained in *lpvStatusInformation*.|
-|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](/windows/desktop/winsock/sockaddr-2)) pointed to by *lpvStatusInformation*.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|Connecting to the socket address ([SOCKADDR](/windows/win32/winsock/sockaddr-2)) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_CONNECTED_TO_SERVER|Successfully connected to the socket address (SOCKADDR) pointed to by *lpvStatusInformation*.|
 |INTERNET_STATUS_SENDING_REQUEST|Sending the information request to the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_ REQUEST_SENT|Successfully sent the information request to the server. The *lpvStatusInformation* parameter is NULL.|
@@ -431,7 +431,7 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 |INTERNET_STATUS_RESPONSE_RECEIVED|Successfully received a response from the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_CLOSING_CONNECTION|Closing the connection to the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_CONNECTION_CLOSED|Successfully closed the connection to the server. The *lpvStatusInformation* parameter is NULL.|
-|INTERNET_STATUS_HANDLE_CREATED|Used by the Win32 API function [InternetConnect](/windows/desktop/api/wininet/nf-wininet-internetconnecta) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](/windows/desktop/api/wininet/nf-wininet-internetclosehandle) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
+|INTERNET_STATUS_HANDLE_CREATED|Used by the Win32 API function [InternetConnect](/windows/win32/api/wininet/nf-wininet-internetconnectw) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](/windows/win32/api/wininet/nf-wininet-internetclosehandle) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
 |INTERNET_STATUS_HANDLE_CLOSING|Successfully terminated this handle value.|
 
 Override this member function to require some action before a status callback routine is performed.
@@ -544,7 +544,7 @@ Returns TRUE if successful, or FALSE otherwise. To get the specific error code, 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [InternetSetCookie](/windows/desktop/api/wininet/nf-wininet-internetsetcookiea), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [InternetSetCookie](/windows/win32/api/wininet/nf-wininet-internetsetcookiew), as described in the Windows SDK.
 
 ## <a name="setoption"></a>  CInternetSession::SetOption
 
@@ -566,7 +566,7 @@ BOOL SetOption(
 ### Parameters
 
 *dwOption*<br/>
-The Internet option to set. See [Option Flags](/windows/desktop/WinInet/option-flags) in the Windows SDKfor a list of the possible options.
+The Internet option to set. See [Option Flags](/windows/win32/WinInet/option-flags) in the Windows SDKfor a list of the possible options.
 
 *lpBuffer*<br/>
 A buffer that contains the option setting.
@@ -586,7 +586,7 @@ Indicates various caching options. The default is set to 0. The possible values 
 
 ### Return Value
 
-If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
+If the operation was successful, a value of TRUE is returned. If an error occurred, a value of FALSE is returned. If the call fails, the Win32 function [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) may be called to determine the cause of the error.
 
 ## See also
 

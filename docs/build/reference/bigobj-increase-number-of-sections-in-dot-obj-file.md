@@ -19,7 +19,7 @@ By default, an object file can hold up to 65,279 (almost 2^16) addressable secti
 
 Most modules never generate an .obj file that contains more than 65,279 sections. However, machine-generated code, or code that makes heavy use of template libraries, may require .obj files that can hold more sections. **/bigobj** is enabled by default on Universal Windows Platform (UWP) projects because the machine-generated XAML code includes a large number of headers. If you disable this option on a UWP app project, your code may generate compiler error C1128.
 
-For information on the PE-COFF object file format, see [PE Format](/windows/desktop/debug/pe-format) in the Windows documentation.
+For information on the PE-COFF object file format, see [PE Format](/windows/win32/debug/pe-format) in the Windows documentation.
 
 ### To set this compiler option in the Visual Studio development environment
 

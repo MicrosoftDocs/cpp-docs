@@ -40,7 +40,7 @@ Your class, derived from `IObjectWithSiteImpl`.
 
 ## Remarks
 
-The [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.
 
 `IObjectWithSiteImpl` specifies two methods. The client first calls `SetSite`, passing the site's `IUnknown` pointer. This pointer is stored within the object, and can later be retrieved through a call to `GetSite`.
 
@@ -70,7 +70,7 @@ STDMETHOD(GetSite)(
 
 If the site supports this interface, the pointer is returned via `ppvSite`. Otherwise, `ppvSite` is set to NULL.
 
-See [IObjectWithSite::GetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-getsite) in the Windows SDK.
+See [IObjectWithSite::GetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) in the Windows SDK.
 
 ##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite
 
@@ -111,7 +111,7 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 
 ### Remarks
 
-See [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite) in the Windows SDK.
+See [IObjectWithSite::SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) in the Windows SDK.
 
 ## See also
 

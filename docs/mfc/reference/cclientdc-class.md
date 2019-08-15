@@ -7,7 +7,7 @@ ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
 ---
 # CClientDC Class
 
-Takes care of calling the Windows functions [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) at destruction time.
+Takes care of calling the Windows functions [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) at destruction time.
 
 ## Syntax
 
@@ -62,7 +62,7 @@ The window whose client area the device context object will access.
 
 ### Remarks
 
-The constructor calls the Windows function [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc).
+The constructor calls the Windows function [GetDC](/windows/win32/api/winuser/nf-winuser-getdc).
 
 An exception (of type `CResourceException`) is thrown if the Windows `GetDC` call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.
 

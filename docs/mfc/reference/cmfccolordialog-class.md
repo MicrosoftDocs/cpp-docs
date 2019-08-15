@@ -30,7 +30,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|
 |[CMFCColorDialog::GetColor](#getcolor)|Returns the current selected color.|
 |[CMFCColorDialog::GetPalette](#getpalette)|Returns the color's palette.|
-|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|
+|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Derives a palette from the system palette.|
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Sets the current selected color.|
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|Sets the color most equivalent to a specified RGB value.|
@@ -124,7 +124,7 @@ COLORREF GetColor() const;
 
 ### Return Value
 
-A [COLORREF](/windows/desktop/gdi/colorref) value that contains the RGB information for the color selected in the color dialog box.
+A [COLORREF](/windows/win32/gdi/colorref) value that contains the RGB information for the color selected in the color dialog box.
 
 ### Remarks
 
@@ -180,7 +180,7 @@ void SetNewColor(COLORREF rgb);
 ### Parameters
 
 *rgb*<br/>
-[in] A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.
+[in] A [COLORREF](/windows/win32/gdi/colorref) that specifies an RGB color.
 
 ### Remarks
 

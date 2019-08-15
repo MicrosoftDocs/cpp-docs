@@ -59,7 +59,7 @@ If *str* is **NULL** or *count* is zero, this function generates an invalid para
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The **_mbsnbset** version of this function uses the current locale for this locale-dependent behavior; the **_mbsnbset_l** version is identical except that it use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
-**Security Note** This API incurs a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
+**Security Note** This API incurs a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### Generic-Text Routine Mappings
 

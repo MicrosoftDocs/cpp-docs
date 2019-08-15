@@ -101,7 +101,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if none of the linked or embedded items in the current document need updating.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](/windows/win32/api/oledlg/nf-oledlg-oleuieditlinksw) function in the Windows SDK.
 
 ### Remarks
 

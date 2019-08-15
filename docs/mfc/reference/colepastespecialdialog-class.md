@@ -47,7 +47,7 @@ class COlePasteSpecialDialog : public COleDialog
 
 Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#addformat) and [AddStandardFormats](#addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type OLEUIPASTESPECIAL.
 
-For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.
+For more information, see the [OLEUIPASTESPECIAL](/windows/win32/api/oledlg/ns-oledlg-oleuipastespecialw) structure in the Windows SDK.
 
 For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).
 
@@ -123,9 +123,9 @@ Flag that determines whether the Paste Link radio button is enabled when this fo
 
 This function can be called to add either standard formats such as CF_TEXT or CF_TIFF or custom formats that your application has registered with the system. For more information about pasting data objects into your application, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).
 
-For more information, see the [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) enumeration type and the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure in the Windows SDK.
+For more information, see the [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) enumeration type and the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure in the Windows SDK.
 
-For more information, see the [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) enumerated type in the Windows SDK.
+For more information, see the [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) enumerated type in the Windows SDK.
 
 ##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry
 
@@ -142,7 +142,7 @@ The clipboard format to add.
 
 ### Return Value
 
-An [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) structure containing the information for the new link entry.
+An [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) structure containing the information for the new link entry.
 
 ##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats
 
@@ -205,7 +205,7 @@ Points to the parent or owner window object (of type `CWnd`) to which the dialog
 
 This function only constructs a `COlePasteSpecialDialog` object. To display the dialog box, call the [DoModal](#domodal) function.
 
-For more information, see the [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) enumerated type in the Windows SDK.
+For more information, see the [OLEUIPASTEFLAG](/windows/win32/api/oledlg/ne-oledlg-oleuipasteflag) enumerated type in the Windows SDK.
 
 ##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem
 
@@ -244,7 +244,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if the user canceled the dialog box.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](/windows/desktop/api/oledlg/nf-oledlg-oleuipastespeciala) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](/windows/win32/api/oledlg/nf-oledlg-oleuipastespecialw) function in the Windows SDK.
 
 ### Remarks
 
@@ -272,7 +272,7 @@ The method needed to render the object.
 
 Only call this function after [DoModal](#domodal) returns IDOK.
 
-For more information on drawing aspect, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure in the Windows SDK.
+For more information on drawing aspect, see the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure in the Windows SDK.
 
 ##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile
 
@@ -300,7 +300,7 @@ The index into the array of `OLEUIPASTEENTRY` structures that was selected by th
 
 ### Remarks
 
-For more information, see the [OLEUIPASTEENTRY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipasteentrya) structure in the Windows SDK.
+For more information, see the [OLEUIPASTEENTRY](/windows/win32/api/oledlg/ns-oledlg-oleuipasteentryw) structure in the Windows SDK.
 
 ##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType
 
@@ -349,7 +349,7 @@ OLEUIPASTESPECIAL m_ps;
 
 Members of this structure can be modified directly or through member functions.
 
-For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.
+For more information, see the [OLEUIPASTESPECIAL](/windows/win32/api/oledlg/ns-oledlg-oleuipastespecialw) structure in the Windows SDK.
 
 ## See also
 

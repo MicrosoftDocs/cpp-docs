@@ -683,7 +683,7 @@ The `threadprivate` directive supports no clauses.
 
 The `threadprivate` directive is based on the [thread](../../../cpp/thread.md) attribute using the [__declspec](../../../cpp/declspec.md) keyword; limits on `__declspec(thread)` apply to `threadprivate`. For example, a `threadprivate` variable will exist in any thread started in the process, not just those threads that are part of a thread team spawned by a parallel region. Be aware of this implementation detail; you may notice that constructors for a `threadprivate` user-defined type are called more often then expected.
 
-You can use `threadprivate` in a DLL that is statically loaded at process startup, however you can't use `threadprivate` in any DLL that will be loaded via [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) such as DLLs that are loaded with [/DELAYLOAD (delay load import)](../../../build/reference/delayload-delay-load-import.md), which also uses `LoadLibrary`.
+You can use `threadprivate` in a DLL that is statically loaded at process startup, however you can't use `threadprivate` in any DLL that will be loaded via [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) such as DLLs that are loaded with [/DELAYLOAD (delay load import)](../../../build/reference/delayload-delay-load-import.md), which also uses `LoadLibrary`.
 
 A `threadprivate` variable of a *destructible* type isn't guaranteed to have its destructor called. For example:
 

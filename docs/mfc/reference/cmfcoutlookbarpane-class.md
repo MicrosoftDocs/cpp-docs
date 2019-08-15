@@ -292,7 +292,7 @@ The current text color as an RGB color value.
 
 ### Remarks
 
-Use [CMFCOutlookBarPane::SetTextColor](#settextcolor) to set the current (regular and selected) text color of the Outlook bar. You can obtain the default text color by calling the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) function with the COLOR_WINDOW index.
+Use [CMFCOutlookBarPane::SetTextColor](#settextcolor) to set the current (regular and selected) text color of the Outlook bar. You can obtain the default text color by calling the [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) function with the COLOR_WINDOW index.
 
 ##  <a name="isbackgroundtexture"></a>  CMFCOutlookBarPane::IsBackgroundTexture
 

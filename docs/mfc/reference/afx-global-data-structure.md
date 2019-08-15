@@ -46,13 +46,13 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Initializes `D2D`, `DirectWrite`, and `WIC` factories. Call this method before the main window is initialized.|
 |[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|Indicates whether predefined 32-bit icons are supported.|
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Determines whether the `D2D` was initialized.|
-|[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.|
+|[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.|
 |[AFX_GLOBAL_DATA::IsHighContrastMode](#ishighcontrastmode)|Indicates whether images are currently displayed in high contrast.|
 |[AFX_GLOBAL_DATA::OnSettingChange](#onsettingchange)|Detects the current state of the desktop's menu animation and taskbar autohide features.|
 |[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Registers the specified MFC window class.|
 |[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Releases interfaces obtained through GetITaskbarList and GetITaskbarList3 methods.|
-|[AFX_GLOBAL_DATA::Resume](#resume)|Reinitializes internal function pointers that access methods that support Windows [themes and visual styles](/windows/desktop/Controls/visual-styles-overview).|
-|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) method.|
+|[AFX_GLOBAL_DATA::Resume](#resume)|Reinitializes internal function pointers that access methods that support Windows [themes and visual styles](/windows/win32/Controls/visual-styles-overview).|
+|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) method.|
 |[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Creates the specified logical font.|
 |[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Creates and initializes a Shell item object from a parsing name.|
 |[AFX_GLOBAL_DATA::UpdateFonts](#updatefonts)|Reintializes the logical fonts that are used by the framework.|
@@ -191,16 +191,16 @@ BOOL DrawTextOnGlass(
 *hTheme*<br/>
 [in] Handle to the theme data of a window, or NULL. The framework uses the specified theme to draw the text if this parameter is not NULL and themes are supported. Otherwise, the framework does not use a theme to draw the text.
 
-Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) method to create an HTHEME.
+Use the [OpenThemeData](/windows/win32/api/uxtheme/nf-uxtheme-openthemedata) method to create an HTHEME.
 
 *pDC*<br/>
 [in] Pointer to a device context.
 
 *iPartId*<br/>
-[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](/windows/desktop/controls/parts-and-states). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
+[in] The control part that has the desired text appearance. For more information, see the Parts column of the table in [Parts and States](/windows/win32/controls/parts-and-states). If this value is 0, the text is drawn in the default font, or a font selected into the device context.
 
 *iStateId*<br/>
-[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](/windows/desktop/controls/parts-and-states).
+[in] The control state that has the desired text appearance. For more information, see the States column of the table in [Parts and States](/windows/win32/controls/parts-and-states).
 
 *strText*<br/>
 [in] The text to draw.
@@ -211,7 +211,7 @@ Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) m
 *dwFlags*<br/>
 [in] A bitwise combination (OR) of flags that specify how the specified text is drawn.
 
-If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method describes the valid flags.
+If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) method describes the valid flags.
 
 *nGlowSize*<br/>
 [in] The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.
@@ -225,7 +225,7 @@ TRUE if a theme is used to draw the specified text; otherwise, FALSE.
 
 ### Remarks
 
-A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method is not supported, or if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is disabled.
+A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) method is not supported, or if [Desktop Window Manager](/windows/win32/dwm/dwm-overview) (DWM) composition is disabled.
 
 ## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
 
@@ -303,7 +303,7 @@ COLORREF GetColor(int nColor);
 ### Parameters
 
 *nColor*<br/>
-[in] A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) method.
+[in] A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) method.
 
 ### Return Value
 
@@ -311,7 +311,7 @@ The RGB color value of the specified user interface element. For more informatio
 
 ### Remarks
 
-If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) method, which returns NULL if the color is not supported.
+If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](/windows/win32/api/winuser/nf-winuser-getsyscolorbrush) method, which returns NULL if the color is not supported.
 
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
 
@@ -348,7 +348,7 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ### Parameters
 
 *info*<br/>
-[in, out] A [NONCLIENTMETRICS](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
+[in, out] A [NONCLIENTMETRICS](/windows/win32/api/winuser/ns-winuser-nonclientmetricsw) structure that contains the scalable metrics associated with the nonclient area of a nonminimized window.
 
 ### Return Value
 
@@ -465,7 +465,7 @@ TRUE if D2D was initialized; otherwise FALSE.
 
 ## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
 
-Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.
+Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/win32/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.
 
 ```
 BOOL IsDwmCompositionEnabled();
@@ -473,7 +473,7 @@ BOOL IsDwmCompositionEnabled();
 
 ### Return Value
 
-TRUE if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is enabled; otherwise, FALSE.
+TRUE if [Desktop Window Manager](/windows/win32/dwm/dwm-overview) (DWM) composition is enabled; otherwise, FALSE.
 
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
 
@@ -661,11 +661,11 @@ TRUE if this method succeeds; otherwise, FALSE. In debug mode, this method asser
 
 ### Remarks
 
-This method is called when the framework receives the [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) message.
+This method is called when the framework receives the [WM_POWERBROADCAST](/windows/win32/Power/wm-powerbroadcast) message.
 
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
 
-Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) method.
+Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes) method.
 
 ```
 BOOL SetLayeredAttrib(
@@ -681,7 +681,7 @@ BOOL SetLayeredAttrib(
 [in] Handle to the layered window.
 
 *crKey*<br/>
-[in] The transparency color key that the [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) uses to compose the layered window.
+[in] The transparency color key that the [Desktop Window Manager](/windows/win32/dwm/dwm-overview) uses to compose the layered window.
 
 *bAlpha*<br/>
 [in] The alpha value that is used to describe the opacity of the layered window.
@@ -841,16 +841,16 @@ Returns S_OK if successful; an error value otherwise.
 
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
 [Structures, Styles, Callbacks, and Message Maps](structures-styles-callbacks-and-message-maps.md)<br/>
-[COLORREF](/windows/desktop/gdi/colorref)<br/>
-[Parts and States](/windows/desktop/controls/parts-and-states)<br/>
+[COLORREF](/windows/win32/gdi/colorref)<br/>
+[Parts and States](/windows/win32/controls/parts-and-states)<br/>
 [CDC::DrawText](cdc-class.md#drawtext)<br/>
-[DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
-[Desktop Window Manager](/windows/desktop/dwm/dwm-overview)<br/>
-[Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)<br/>
+[DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex)<br/>
+[Desktop Window Manager](/windows/win32/dwm/dwm-overview)<br/>
+[Enable and Control DWM Composition](/windows/win32/dwm/composition-ovw)<br/>
 [UI Automation and Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility)<br/>
-[GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)<br/>
-[GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)<br/>
-[NONCLIENTMETRICS Structure](/windows/desktop/api/winuser/ns-winuser-tagnonclientmetricsa)<br/>
+[GetSysColor Function](/windows/win32/api/winuser/nf-winuser-getsyscolor)<br/>
+[GetSysColorBrush](/windows/win32/api/winuser/nf-winuser-getsyscolorbrush)<br/>
+[NONCLIENTMETRICS Structure](/windows/win32/api/winuser/ns-winuser-nonclientmetricsw)<br/>
 [AfxRegisterClass](application-information-and-management.md#afxregisterclass)<br/>
 [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)<br/>
-[SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
+[SetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-setlayeredwindowattributes)

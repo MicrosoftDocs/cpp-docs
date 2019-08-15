@@ -228,7 +228,7 @@ LPOLECLIENTSITE GetClientSite() const;
 
 ### Return Value
 
-Retrieves a pointer to the underlying [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite) interface.
+Retrieves a pointer to the underlying [IOleClientSite](/windows/win32/api/oleidl/nn-oleidl-ioleclientsite) interface.
 
 ##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer
 
@@ -460,7 +460,7 @@ A value from the enumeration OLECLOSE. This parameter can have one of the follow
 
 The default implementation calls `CDocument::OnCloseDocument`.
 
-For more information and additional values, see [OLECLOSE](/windows/desktop/api/oleidl/ne-oleidl-tagoleclose) in the Windows SDK.
+For more information and additional values, see [OLECLOSE](/windows/win32/api/oleidl/ne-oleidl-oleclose) in the Windows SDK.
 
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate
 
@@ -660,7 +660,7 @@ TRUE if *lpUIWindow* points to the container application's top-level frame windo
 
 This function resizes and adjusts toolbars and other user-interface elements in accordance with the new window size.
 
-For more information, see [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) in the Windows SDK.
+For more information, see [IOleInPlaceUIWindow](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceuiwindow) in the Windows SDK.
 
 This is an advanced overridable.
 

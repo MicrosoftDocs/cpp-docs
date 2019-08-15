@@ -71,7 +71,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|Called by the framework when the cursor is first dragged into the tab control window.|
 |[CMFCTabCtrl::OnDragOver](#ondragover)|Called by the framework during a drag operation when the mouse is moved over the drop target window. (Overrides [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|Displays a popup menu of tabbed windows, waits until the user selects a tab, and makes the selected tab the active tab.|
-|`CMFCTabCtrl::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|
+|`CMFCTabCtrl::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|
 |`CMFCTabCtrl::RecalcLayout`|Recalculates the internal layout of the tab control. (Overrides [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|Sets the current tab of a tab control as the active tab in an multiple document interface tab group.|
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|Activates a tab. (Overrides [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
@@ -768,7 +768,7 @@ virtual DROPEFFECT OnDragEnter(
 [in] Points to a data object that contains data that the user drags.
 
 *dwKeyState*<br/>
-[in] Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).
+[in] Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](/windows/win32/inputdev/about-mouse-input).
 
 *point*<br/>
 [in] Contains the current location of the cursor in client coordinates.
@@ -800,7 +800,7 @@ virtual DROPEFFECT OnDragOver(
 [in] Pointer to a [COleDataObject](../../mfc/reference/coledataobject-class.md) object that is being dragged over the drop target.
 
 *dwKeyState*<br/>
-[in] The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](/windows/desktop/inputdev/about-mouse-input).
+[in] The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](/windows/win32/inputdev/about-mouse-input).
 
 *point*<br/>
 [in] The current mouse position.

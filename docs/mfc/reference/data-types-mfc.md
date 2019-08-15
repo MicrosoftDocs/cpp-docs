@@ -9,7 +9,7 @@ ms.assetid: 8954848b-2c01-4a4f-abf5-ee55f6a05eeb
 
 This topic lists the data types most commonly used in the Microsoft Foundation Class Library. Most of the data types are the same as those in the Platform Software Development Kit (SDK), while others are unique to MFC.
 
-For information about the data types used in both the             Windows SDK and MFC, see             [Windows Data Types](/windows/desktop/WinProg/windows-data-types).
+For information about the data types used in both the             Windows SDK and MFC, see             [Windows Data Types](/windows/win32/WinProg/windows-data-types).
 
 Data types unique to the Microsoft Foundation Class Library include the following:
 

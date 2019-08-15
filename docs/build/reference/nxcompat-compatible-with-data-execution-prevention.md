@@ -22,7 +22,7 @@ For more information about Data Execution Prevention, see these articles:
 
 - [A detailed description of the Data Execution Prevention (DEP) feature](https://support.microsoft.com/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
 
-- [Data Execution Prevention](/windows/desktop/Memory/data-execution-prevention)
+- [Data Execution Prevention](/windows/win32/Memory/data-execution-prevention)
 
 - [Data Execution Prevention (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
 

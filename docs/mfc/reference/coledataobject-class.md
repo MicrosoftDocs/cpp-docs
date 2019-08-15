@@ -46,7 +46,7 @@ These kinds of data transfers include a source and a destination. The data sourc
 
 This class enables you to determine whether the data exists in a specified format. You can also enumerate the available data formats or check whether a given format is available and then retrieve the data in the preferred format. Object retrieval can be accomplished in several different ways, including the use of a [CFile](../../mfc/reference/cfile-class.md), an HGLOBAL, or an `STGMEDIUM` structure.
 
-For more information, see the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure in the Windows SDK.
+For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in the Windows SDK.
 
 For more information about using data objects in your application, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
@@ -78,7 +78,7 @@ TRUE if the OLE data object should be released when the `COleDataObject` object 
 
 ### Remarks
 
-For more information, see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.
+For more information, see [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) in the Windows SDK.
 
 ##  <a name="attachclipboard"></a>  COleDataObject::AttachClipboard
 
@@ -95,7 +95,7 @@ Nonzero if successful; otherwise 0.
 ### Remarks
 
 > [!NOTE]
->  Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) in the Win32 documention.
+>  Calling this function locks the Clipboard until this data object is released. The data object is released in the destructor for the `COleDataObject`. For more information, see [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) and [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) in the Win32 documention.
 
 ##  <a name="beginenumformats"></a>  COleDataObject::BeginEnumFormats
 
@@ -111,7 +111,7 @@ After a call to `BeginEnumFormats`, the position of the first format supported b
 
 To check on the availability of data in a given format, use [COleDataObject::IsDataAvailable](#isdataavailable).
 
-For more information, see [IDataObject::EnumFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.
+For more information, see [IDataObject::EnumFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.
 
 ##  <a name="coledataobject"></a>  COleDataObject::COleDataObject
 
@@ -156,13 +156,13 @@ BOOL GetData(
 ### Parameters
 
 *cfFormat*<br/>
-The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.
+The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure that will receive data.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive data.
 
 *lpFormatEtc*<br/>
-Points to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
+Points to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
 
 ### Return Value
 
@@ -170,9 +170,9 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.
+For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
 ##  <a name="getfiledata"></a>  COleDataObject::GetFileData
 
@@ -187,10 +187,10 @@ CFile* GetFileData(
 ### Parameters
 
 *cfFormat*<br/>
-The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.
+The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function.
 
 *lpFormatEtc*<br/>
-Points to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
+Points to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
 
 ### Return Value
 
@@ -203,9 +203,9 @@ Depending on the medium the data is stored in, the actual type pointed to by the
 > [!NOTE]
 >  The `CFile` object accessed by the return value of this function is owned by the caller. It is the responsibility of the caller to **delete** the `CFile` object, thereby closing the file.
 
-For more information, see [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.
+For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
 ##  <a name="getglobaldata"></a>  COleDataObject::GetGlobalData
 
@@ -220,10 +220,10 @@ HGLOBAL GetGlobalData(
 ### Parameters
 
 *cfFormat*<br/>
-The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.
+The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function.
 
 *lpFormatEtc*<br/>
-Points to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
+Points to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
 
 ### Return Value
 
@@ -231,9 +231,9 @@ The handle of the global memory block containing the data if successful; otherwi
 
 ### Remarks
 
-For more information, see [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.
+For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
 ##  <a name="getnextformat"></a>  COleDataObject::GetNextFormat
 
@@ -246,7 +246,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure that receives the format information when the function call returns.
+Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure that receives the format information when the function call returns.
 
 ### Return Value
 
@@ -273,10 +273,10 @@ BOOL IsDataAvailable(
 ### Parameters
 
 *cfFormat*<br/>
-The Clipboard data format to be used in the structure pointed to by *lpFormatEtc*. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.
+The Clipboard data format to be used in the structure pointed to by *lpFormatEtc*. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function.
 
 *lpFormatEtc*<br/>
-Points to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
+Points to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure describing the format desired. Provide a value for this parameter only if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
 
 ### Return Value
 
@@ -286,9 +286,9 @@ Nonzero if data is available in the specified format; otherwise 0.
 
 This function is useful before calling `GetData`, `GetFileData`, or `GetGlobalData`.
 
-For more information, see [IDataObject::QueryGetData](/windows/desktop/api/objidl/nf-objidl-idataobject-querygetdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.
+For more information, see [IDataObject::QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
-For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.
+For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 
 ### Example
 
@@ -296,7 +296,7 @@ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser
 
 ##  <a name="release"></a>  COleDataObject::Release
 
-Call this function to release ownership of the [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) object that was previously associated with the `COleDataObject` object.
+Call this function to release ownership of the [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) object that was previously associated with the `COleDataObject` object.
 
 ```
 void Release();
@@ -304,7 +304,7 @@ void Release();
 
 ### Remarks
 
-The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the *bAutoRelease* parameter of `Attach` is FALSE, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release).
+The `IDataObject` was associated with the `COleDataObject` by calling `Attach` or `AttachClipboard` explicitly or by the framework. If the *bAutoRelease* parameter of `Attach` is FALSE, the `IDataObject` object will not be released. In this case, the caller is responsible for releasing the `IDataObject` by calling [IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
 
 ## See also
 

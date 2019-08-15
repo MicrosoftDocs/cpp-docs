@@ -207,7 +207,7 @@ Optional extra strings to be written to the event log.
 
 ### Remarks
 
-This method writes details out to an event log, using the function [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa). If no service is running, the string is sent to the console.
+This method writes details out to an event log, using the function [ReportEvent](/windows/win32/api/winbase/nf-winbase-reporteventw). If no service is running, the string is sent to the console.
 
 ##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService
 
@@ -243,7 +243,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 
 ### Remarks
 
-The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
+The [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
 
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status
 
@@ -255,7 +255,7 @@ SERVICE_STATUS m_status;
 
 ### Remarks
 
-The [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
+The [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) structure contains information about a service.
 
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName
 
@@ -395,7 +395,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section. The default value is SW_HIDE.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) section. The default value is SW_HIDE.
 
 ### Return Value
 
@@ -438,7 +438,7 @@ void SetServiceStatus(DWORD dwState) throw();
 ### Parameters
 
 *dwState*<br/>
-The new status. See [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) for possible values.
+The new status. See [SetServiceStatus](/windows/win32/api/winsvc/nf-winsvc-setservicestatus) for possible values.
 
 ### Remarks
 
@@ -455,7 +455,7 @@ HRESULT Start(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 
@@ -516,7 +516,7 @@ int WinMain(int nShowCmd) throw();
 ### Parameters
 
 *nShowCmd*<br/>
-Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) section.
+Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) section.
 
 ### Return Value
 

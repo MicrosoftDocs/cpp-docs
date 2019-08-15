@@ -1587,7 +1587,7 @@
     - name: "Walkthrough: Create Windows Desktop applications"
       href: windows/walkthrough-creating-windows-desktop-applications-cpp.md
     - name: Windows Desktop wizard
-      href: windows/win32-application-wizard.md
+      href: windows/windows-desktop-wizard.md
     - name: Active Template Library (ATL)
       href: atl/
     - name: Microsoft Foundation Classes (MFC)
@@ -1607,10 +1607,6 @@
               items: 
                 - name: Date and Time overview
                   href: atl-mfc-shared/date-and-time.md
-                - name: "Date and time: automation support"
-                  href: atl-mfc-shared/date-and-time-automation-support.md
-                - name: "Date and time: database support"
-                  href: atl-mfc-shared/date-and-time-database-support.md
                 - name: DATE type
                   href: atl-mfc-shared/date-type.md
             - name: Strings (ATL-MFC)
@@ -2888,6 +2884,8 @@
 - name: Reference
   expanded: false
   items: 
+    - name: C/C++ language and standard libraries
+      href: cpp/c-cpp-language-and-standard-libraries.md
     - name: Languages reference
       expanded: false
       items: 

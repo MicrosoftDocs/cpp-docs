@@ -171,7 +171,7 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 ### Parameters
 
 *pScrollInfo*<br/>
-A pointer to the [SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) structure.
+A pointer to the [SCROLLBARINFO](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) structure.
 
 ### Return Value
 
@@ -179,7 +179,7 @@ Returns TRUE on success, FALSE on failure.
 
 ### Remarks
 
-This member function emulates the functionality of the [SBM_SCROLLBARINFO](/windows/desktop/Controls/sbm-getscrollbarinfo) message, as described in the Windows SDK.
+This member function emulates the functionality of the [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) message, as described in the Windows SDK.
 
 ##  <a name="getscrollinfo"></a>  CScrollBar::GetScrollInfo
 

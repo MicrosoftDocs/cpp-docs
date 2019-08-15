@@ -54,7 +54,7 @@ If you want to create a window based on an existing window class, derive your cl
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]
 
-For more information about window classes, see [Window Classes](/windows/desktop/winmsg/window-classes) in the Windows SDK.
+For more information about window classes, see [Window Classes](/windows/win32/winmsg/window-classes) in the Windows SDK.
 
 For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).
 
@@ -124,7 +124,7 @@ TCHAR m_szAutoName[13];
 
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc
 
-Maintains the window class information in a [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa) structure.
+Maintains the window class information in a [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw) structure.
 
 ```
 WNDCLASSEX m_wc;

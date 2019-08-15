@@ -18,7 +18,7 @@ Before you start this walkthrough, read the topic [Task Scheduler](../../paralle
 
 ### Description
 
-The following example illustrates typical usage of the Windows API to create and execute a thread. This example uses the [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) function to call the `MyThreadFunction` on a separate thread.
+The following example illustrates typical usage of the Windows API to create and execute a thread. This example uses the [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) function to call the `MyThreadFunction` on a separate thread.
 
 ### Code
 

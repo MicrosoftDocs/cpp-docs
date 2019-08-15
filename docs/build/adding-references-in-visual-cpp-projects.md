@@ -32,7 +32,7 @@ If the DLL is being built as part of the same solution as the application, follo
 
 If the DLL is not part of the application solution, you need the DLL file, the header(s) with prototypes for the exported functions and classes, and a .lib file that provides the necessary linking information.
 
-1. Copy the DLL to the output folder of your project, or to another folder in the standard Windows search path for DLLs. See [Dynamic-Link Library Search Order](/windows/desktop/dlls/dynamic-link-library-search-order).
+1. Copy the DLL to the output folder of your project, or to another folder in the standard Windows search path for DLLs. See [Dynamic-Link Library Search Order](/windows/win32/dlls/dynamic-link-library-search-order).
 2. Follow steps 1-3 for static libraries to provide the paths to the headers and .lib file.
 
 ## COM objects

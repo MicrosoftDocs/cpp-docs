@@ -6,7 +6,7 @@ ms.assetid: bde83db8-23a7-4e35-837a-c86447d2c0af
 ---
 # Setting the Images for an Individual Item
 
-The different types of images used by the extended combo box item are determined by the values in the *iImage*, *iSelectedImage*, and *iOverlay* members of the [COMBOBOXEXITEM](/windows/desktop/api/commctrl/ns-commctrl-tagcomboboxexitema) structure. Each value is the index of an image in the associated image list of the control. By default, these members are set to 0, causing the control to display no image for the item. If you want to use images for a specific item, you can modify the structure accordingly, either when inserting the combo box item or by modifying an existing combo box item.
+The different types of images used by the extended combo box item are determined by the values in the *iImage*, *iSelectedImage*, and *iOverlay* members of the [COMBOBOXEXITEM](/windows/win32/api/commctrl/ns-commctrl-comboboxexitemw) structure. Each value is the index of an image in the associated image list of the control. By default, these members are set to 0, causing the control to display no image for the item. If you want to use images for a specific item, you can modify the structure accordingly, either when inserting the combo box item or by modifying an existing combo box item.
 
 ## Setting the Image for a New Item
 

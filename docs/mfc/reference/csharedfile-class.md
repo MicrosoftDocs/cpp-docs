@@ -34,7 +34,7 @@ class CSharedFile : public CMemFile
 
 Memory files behave like disk files. The difference is, a memory file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage, or for transferring raw bytes or serialized objects between independent processes.
 
-Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using `GlobalAlloc`), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.
+Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using `GlobalAlloc`), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.
 
 `GlobalAlloc` returns an HGLOBAL handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The HGLOBAL handle is needed in certain applications. For example, to put data on the Clipboard you need an HGLOBAL handle.
 
@@ -71,7 +71,7 @@ CSharedFile(
 ### Parameters
 
 *nAllocFlags*<br/>
-Flags indicating how memory is to be allocated. See [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) for a list of valid flag values.
+Flags indicating how memory is to be allocated. See [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) for a list of valid flag values.
 
 *nGrowBytes*<br/>
 The memory allocation increment in bytes.

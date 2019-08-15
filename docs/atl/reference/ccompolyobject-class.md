@@ -36,7 +36,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 |Name|Description|
 |----------|-----------------|
 |[CComPolyObject::AddRef](#addref)|Increments the object's reference count.|
-|[CComPolyObject::CreateInstance](#createinstance)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|
+|[CComPolyObject::CreateInstance](#createinstance)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).|
 |[CComPolyObject::FinalConstruct](#finalconstruct)|Performs final initialization of `m_contained`.|
 |[CComPolyObject::FinalRelease](#finalrelease)|Performs final destruction of `m_contained`.|
 |[CComPolyObject::QueryInterface](#queryinterface)|Retrieves a pointer to the requested interface.|
@@ -50,7 +50,7 @@ Your class, derived from [CComObjectRoot](../../atl/reference/ccomobjectroot-cla
 
 ## Remarks
 
-`CComPolyObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for an aggregated or nonaggregated object.
+`CComPolyObject` implements [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) for an aggregated or nonaggregated object.
 
 When an instance of `CComPolyObject` is created, the value of the outer unknown is checked. If it is NULL, `IUnknown` is implemented for a nonaggregated object. If the outer unknown is not NULL, `IUnknown` is implemented for an aggregated object.
 
@@ -121,7 +121,7 @@ Frees all allocated resources, calls [FinalRelease](#finalrelease), and decremen
 
 ##  <a name="createinstance"></a>  CComPolyObject::CreateInstance
 
-Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
+Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 ```
 static HRESULT WINAPI CreateInstance(

@@ -10,7 +10,7 @@ Every image list ([CImageList](../mfc/reference/cimagelist-class.md)) includes a
 
 You add the index of an image to the list of overlay masks by using the [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) member function, the index of an image, and the index of an overlay mask. Note that the indices for the overlay masks are one-based rather than zero-based.
 
-You draw an overlay mask over an image using a single call to `Draw`. The parameters include the index of the image to draw and the index of an overlay mask. You must use the [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) macro to specify the index of the overlay mask. You can also specify an overlay image when calling the [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) member function.
+You draw an overlay mask over an image using a single call to `Draw`. The parameters include the index of the image to draw and the index of an overlay mask. You must use the [INDEXTOOVERLAYMASK](/windows/win32/api/commctrl/nf-commctrl-indextooverlaymask) macro to specify the index of the overlay mask. You can also specify an overlay image when calling the [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) member function.
 
 ## See also
 

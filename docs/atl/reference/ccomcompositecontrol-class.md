@@ -153,7 +153,7 @@ A handle to the parent window of the control.
 Reserved.
 
 *dwInitParam*<br/>
-Data to be passed to the control during control creation. The data passed as *dwInitParam* will show up as the LPARAM parameter of the [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) message, which will be sent to the composite control when it gets created.
+Data to be passed to the control during control creation. The data passed as *dwInitParam* will show up as the LPARAM parameter of the [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) message, which will be sent to the composite control when it gets created.
 
 ### Return Value
 

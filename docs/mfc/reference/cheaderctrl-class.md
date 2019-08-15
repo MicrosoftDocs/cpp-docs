@@ -58,7 +58,7 @@ class CHeaderCtrl : public CWnd
 
 ## Remarks
 
-A header control is a window that is usually positioned above a set of columns of text or numbers. It contains a title for each column, and it can be divided into parts. The user can drag the dividers that separate the parts to set the width of each column. For an illustration of a header control, see [Header Controls](/windows/desktop/Controls/header-controls).
+A header control is a window that is usually positioned above a set of columns of text or numbers. It contains a title for each column, and it can be divided into parts. The user can drag the dividers that separate the parts to set the width of each column. For an illustration of a header control, see [Header Controls](/windows/win32/Controls/header-controls).
 
 This control (and therefore the `CHeaderCtrl` class) is available only to programs that run under Windows 95/98 and Windows NT version 3.51 and later.
 
@@ -116,7 +116,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/windows/desktop/Controls/hdm-clearfilter) with a column value of -1, as described in the Windows SDK.
+This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter) with a column value of -1, as described in the Windows SDK.
 
 ### Example
 
@@ -141,7 +141,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/windows/desktop/Controls/hdm-clearfilter), as described in the Windows SDK.
+This method implements the behavior of the Win32 message [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter), as described in the Windows SDK.
 
 ### Example
 
@@ -162,7 +162,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the header control's style. For a description of header control styles, see [Header Control Styles](/windows/desktop/Controls/header-control-styles) in the Windows SDK.
+Specifies the header control's style. For a description of header control styles, see [Header Control Styles](/windows/win32/Controls/header-control-styles) in the Windows SDK.
 
 *rect*<br/>
 Specifies the header control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
@@ -181,7 +181,7 @@ Nonzero if initialization was successful; otherwise zero.
 
 You construct a `CHeaderCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the header control and attaches it to the `CHeaderCtrl` object.
 
-In addition to the header control styles, you can use the following common control styles to determine how the header control positions and resizes itself (see [Common Control Styles](/windows/desktop/Controls/common-control-styles) for more information):
+In addition to the header control styles, you can use the following common control styles to determine how the header control positions and resizes itself (see [Common Control Styles](/windows/win32/Controls/common-control-styles) for more information):
 
 - CCS_BOTTOM Causes the control to position itself at the bottom of the parent window's client area and sets the width to be the same as the parent window's width.
 
@@ -229,10 +229,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-The header control's style. For a description of header control styles, see [Header Control Styles](/windows/desktop/Controls/header-control-styles) in the Windows SDK. See [Create](#create) for a list of additional styles.
+The header control's style. For a description of header control styles, see [Header Control Styles](/windows/win32/Controls/header-control-styles) in the Windows SDK. See [Create](#create) for a list of additional styles.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -270,7 +270,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object if s
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_CREATEDRAGIMAGE](/windows/desktop/Controls/hdm-createdragimage), as described in the Windows SDK. It is provided to support header item drag and drop.
+This member function implements the behavior of the Win32 message [HDM_CREATEDRAGIMAGE](/windows/win32/Controls/hdm-createdragimage), as described in the Windows SDK. It is provided to support header item drag and drop.
 
 The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
 
@@ -306,7 +306,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### Parameters
 
 *lpDrawItemStruct*<br/>
-A pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure describing the item to be painted.
+A pointer to a [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) structure describing the item to be painted.
 
 ### Remarks
 
@@ -336,7 +336,7 @@ BOOL EditFilter(
 The column to edit.
 
 *bDiscardChanges*<br/>
-A value that specifies how to handle the user's editing changes if the user is in the process of editing the filter when the [HDM_EDITFILTER](/windows/desktop/Controls/hdm-editfilter) message is sent.
+A value that specifies how to handle the user's editing changes if the user is in the process of editing the filter when the [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter) message is sent.
 
 Specify TRUE to discard the changes made by the user, or FALSE to accept the changes made by the user.
 
@@ -346,7 +346,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method implements the behavior of the Win32 message [HDM_EDITFILTER](/windows/desktop/Controls/hdm-editfilter), as described in the Windows SDK.
+This method implements the behavior of the Win32 message [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter), as described in the Windows SDK.
 
 ### Example
 
@@ -366,7 +366,7 @@ The width of the bitmap margin in pixels.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_GETBITMAPMARGIN](/windows/desktop/Controls/hdm-getbitmapmargin), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [HDM_GETBITMAPMARGIN](/windows/win32/Controls/hdm-getbitmapmargin), as described in the Windows SDK.
 
 ### Example
 
@@ -386,7 +386,7 @@ The zero-based index of the header item that has the focus.
 
 ### Remarks
 
-This method sends the [HDM_GETFOCUSEDITEM](/windows/desktop/Controls/hdm-getfocuseditem) message, which is described in the Windows SDK.
+This method sends the [HDM_GETFOCUSEDITEM](/windows/win32/Controls/hdm-getfocuseditem) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -414,7 +414,7 @@ A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_GETIMAGELIST](/windows/desktop/Controls/hdm-getimagelist), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
+This member function implements the behavior of the Win32 message [HDM_GETIMAGELIST](/windows/win32/Controls/hdm-getimagelist), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
 
 ### Example
 
@@ -436,7 +436,7 @@ BOOL GetItem(
 Specifies the zero-based index of the item to retrieve.
 
 *pHeaderItem*<br/>
-Pointer to an [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the `mask` element ensure that values in the corresponding elements are properly filled in upon return. If the `mask` element is set to zero, values in the other structure elements are meaningless.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the `mask` element ensure that values in the corresponding elements are properly filled in upon return. If the `mask` element is set to zero, values in the other structure elements are meaningless.
 
 ### Return Value
 
@@ -476,7 +476,7 @@ BOOL GetItemDropDownRect(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure.|
+|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure.|
 |*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.|
 
 ### Return Value
@@ -485,7 +485,7 @@ TRUE if this function is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [HDM_GETITEMDROPDOWNRECT](/windows/desktop/Controls/hdm-getitemdropdownrect) message, which is described in the Windows SDK.
+This method sends the [HDM_GETITEMDROPDOWNRECT](/windows/win32/Controls/hdm-getitemdropdownrect) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -523,7 +523,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This method implements the behavior of the Win32 message [HDM_GETITEMRECT](/windows/desktop/Controls/hdm-getitemrect), as described in the Windows SDK.
+This method implements the behavior of the Win32 message [HDM_GETITEMRECT](/windows/win32/Controls/hdm-getitemrect), as described in the Windows SDK.
 
 ##  <a name="getorderarray"></a>  CHeaderCtrl::GetOrderArray
 
@@ -549,7 +549,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_GETORDERARRAY](/windows/desktop/Controls/hdm-getorderarray), as described in the Windows SDK. It is provided to support header item ordering.
+This member function implements the behavior of the Win32 message [HDM_GETORDERARRAY](/windows/win32/Controls/hdm-getorderarray), as described in the Windows SDK. It is provided to support header item ordering.
 
 ### Example
 
@@ -575,9 +575,9 @@ TRUE if this function is successful; otherwise, FALSE.
 
 ### Remarks
 
-If the header control contains more items than can be simultaneously displayed, the control can display an overflow button that scrolls to items that are not visible. The header control must have the HDS_OVERFLOW and HDF_SPLITBUTTON styles to display the overflow button. The bounding rectangle encloses the overflow button and exists only when the overflow button is displayed. For more information, see [Header Control Styles](/windows/desktop/Controls/header-control-styles).
+If the header control contains more items than can be simultaneously displayed, the control can display an overflow button that scrolls to items that are not visible. The header control must have the HDS_OVERFLOW and HDF_SPLITBUTTON styles to display the overflow button. The bounding rectangle encloses the overflow button and exists only when the overflow button is displayed. For more information, see [Header Control Styles](/windows/win32/Controls/header-control-styles).
 
-This method sends the [HDM_GETOVERFLOWRECT](/windows/desktop/Controls/hdm-getoverflowrect) message, which is described in the Windows SDK.
+This method sends the [HDM_GETOVERFLOWRECT](/windows/win32/Controls/hdm-getoverflowrect) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -603,7 +603,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) structure that specifies the point to test and receives the results of the test.|
+|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-_hd_hittestinfo) structure that specifies the point to test and receives the results of the test.|
 
 ### Return Value
 
@@ -611,7 +611,7 @@ The zero-based index of the header item, if any, at the specified position; othe
 
 ### Remarks
 
-This method sends the [HDM_HITTEST](/windows/desktop/Controls/hdm-hittest) message, which is described in the Windows SDK.
+This method sends the [HDM_HITTEST](/windows/win32/Controls/hdm-hittest) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -641,7 +641,7 @@ int InsertItem(
 The zero-based index of the item to be inserted. If the value is zero, the item is inserted at the beginning of the header control. If the value is greater than the maximum value, the item is inserted at the end of the header control.
 
 *phdi*<br/>
-Pointer to an [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure that contains information about the item to be inserted.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that contains information about the item to be inserted.
 
 ### Return Value
 
@@ -662,7 +662,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 ### Parameters
 
 *pHeaderLayout*<br/>
-Pointer to an [HDLAYOUT](/windows/desktop/api/commctrl/ns-commctrl-_hd_layout) structure, which contains information used to set the size and position of a header control.
+Pointer to an [HDLAYOUT](/windows/win32/api/commctrl/ns-commctrl-_hd_layout) structure, which contains information used to set the size and position of a header control.
 
 ### Return Value
 
@@ -695,7 +695,7 @@ The index of the item, based on its order in the header control. The index count
 
 ### Remarks
 
-This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](/windows/desktop/controls/hdm-ordertoindex), as described in the Windows SDK. It is provided to support header item ordering.
+This member function implements the behavior of the Win32 macro [HDM_ORDERTOINDEX](/windows/win32/controls/hdm-ordertoindex), as described in the Windows SDK. It is provided to support header item ordering.
 
 ##  <a name="setbitmapmargin"></a>  CHeaderCtrl::SetBitmapMargin
 
@@ -716,7 +716,7 @@ The width of the bitmap margin in pixels.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_SETBITMAPMARGIN](/windows/desktop/Controls/hdm-setbitmapmargin), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [HDM_SETBITMAPMARGIN](/windows/win32/Controls/hdm-setbitmapmargin), as described in the Windows SDK.
 
 ### Example
 
@@ -724,7 +724,7 @@ This member function implements the behavior of the Win32 message [HDM_SETBITMAP
 
 ##  <a name="setfilterchangetimeout"></a>  CHeaderCtrl::SetFilterChangeTimeout
 
-Sets the timeout interval between the time a change takes place in the filter attributes and the posting of an [HDN_FILTERCHANGE](/windows/desktop/Controls/hdn-filterchange) notification.
+Sets the timeout interval between the time a change takes place in the filter attributes and the posting of an [HDN_FILTERCHANGE](/windows/win32/Controls/hdn-filterchange) notification.
 
 ```
 int SetFilterChangeTimeout(DWORD dwTimeOut);
@@ -741,7 +741,7 @@ The index of the filter control being modified.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_SETFILTERCHANGETIMEOUT](/windows/desktop/Controls/hdm-setfilterchangetimeout), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [HDM_SETFILTERCHANGETIMEOUT](/windows/win32/Controls/hdm-setfilterchangetimeout), as described in the Windows SDK.
 
 ### Example
 
@@ -767,7 +767,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [HDM_SETFOCUSEDITEM](/windows/desktop/Controls/hdm-setfocuseditem) message, which is described in the Windows SDK.
+This method sends the [HDM_SETFOCUSEDITEM](/windows/win32/Controls/hdm-setfocuseditem) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -804,7 +804,7 @@ The index of the highlighted divider.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_SETHOTDIVIDER](/windows/desktop/Controls/hdm-sethotdivider), as described in the Windows SDK. It is provided to support header item drag and drop.
+This member function implements the behavior of the Win32 message [HDM_SETHOTDIVIDER](/windows/win32/Controls/hdm-sethotdivider), as described in the Windows SDK. It is provided to support header item drag and drop.
 
 ### Example
 
@@ -829,7 +829,7 @@ A pointer to the [CImageList](../../mfc/reference/cimagelist-class.md) object pr
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [HDM_SETIMAGELIST](/windows/desktop/Controls/hdm-setimagelist), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
+This member function implements the behavior of the Win32 message [HDM_SETIMAGELIST](/windows/win32/Controls/hdm-setimagelist), as described in the Windows SDK. The `CImageList` object to which the returned pointer points is a temporary object and is deleted in the next idle-time processing.
 
 ### Example
 
@@ -851,7 +851,7 @@ BOOL SetItem(
 The zero-based index of the item to be manipulated.
 
 *pHeaderItem*<br/>
-Pointer to an [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure that contains information about the new item.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that contains information about the new item.
 
 ### Return Value
 
@@ -885,7 +885,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-This member function implements the behavior of the Win32 macro [HDM_SETORDERARRAY](/windows/desktop/Controls/hdm-setorderarray), as described in the Windows SDK. It is provided to support header item ordering.
+This member function implements the behavior of the Win32 macro [HDM_SETORDERARRAY](/windows/win32/Controls/hdm-setorderarray), as described in the Windows SDK. It is provided to support header item ordering.
 
 ### Example
 

@@ -17,7 +17,7 @@ Indicates that an interface is compatible with Automation.
 
 ## Remarks
 
-The **oleautomation** C++ attribute has the same functionality as the [oleautomation](/windows/desktop/Midl/oleautomation) MIDL attribute.
+The **oleautomation** C++ attribute has the same functionality as the [oleautomation](/windows/win32/Midl/oleautomation) MIDL attribute.
 
 ## Example
 

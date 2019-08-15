@@ -117,7 +117,7 @@ For more information on using `CTreeCtrl`, see:
 
 - [Using CTreeCtrl](../../mfc/using-ctreectrl.md)
 
-- [Tree View Control Reference](/windows/desktop/Controls/tree-view-control-reference) in the Windows SDK.
+- [Tree View Control Reference](/windows/win32/Controls/tree-view-control-reference) in the Windows SDK.
 
 ## Inheritance Hierarchy
 
@@ -148,7 +148,7 @@ virtual BOOL Create(
 ### Parameters
 
 *dwStyle*<br/>
-Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
+Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww), and any combination of [tree view control styles](/windows/win32/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
 Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure.
@@ -191,10 +191,10 @@ virtual BOOL CreateEx(
 ### Parameters
 
 *dwExStyle*<br/>
-Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *dwStyle*<br/>
-Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.
+Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww), and any combination of [tree view control styles](/windows/win32/Controls/tree-view-control-window-styles) as described in the Windows SDK.
 
 *rect*<br/>
 A reference to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.
@@ -328,7 +328,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [TVM_ENDEDITLABELNOW](/windows/desktop/Controls/tvm-endeditlabelnow) message, which is described in the Windows SDK.
+This method sends the [TVM_ENDEDITLABELNOW](/windows/win32/Controls/tvm-endeditlabelnow) message, which is described in the Windows SDK.
 
 ##  <a name="ensurevisible"></a>  CTreeCtrl::EnsureVisible
 
@@ -391,7 +391,7 @@ Nonzero if successful; otherwise 0.
 
 ##  <a name="getbkcolor"></a>  CTreeCtrl::GetBkColor
 
-This member function implements the behavior of the Win32 message [TVM_GETBKCOLOR](/windows/desktop/Controls/tvm-getbkcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETBKCOLOR](/windows/win32/Controls/tvm-getbkcolor), as described in the Windows SDK.
 
 ```
 COLORREF GetBkColor() const;
@@ -505,11 +505,11 @@ DWORD GetExtendedStyle() const;
 
 ### Return Value
 
-A value that contains a bitwise combination (OR) of the current tree-view control's extended styles. For more information, see [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles).
+A value that contains a bitwise combination (OR) of the current tree-view control's extended styles. For more information, see [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles).
 
 ### Remarks
 
-This method sends the [TVM_GETEXTENDEDSTYLE](/windows/desktop/Controls/tvm-getextendedstyle) message, which is described in the Windows SDK.
+This method sends the [TVM_GETEXTENDEDSTYLE](/windows/win32/Controls/tvm-getextendedstyle) message, which is described in the Windows SDK.
 
 ##  <a name="getfirstvisibleitem"></a>  CTreeCtrl::GetFirstVisibleItem
 
@@ -576,7 +576,7 @@ The amount of indentation measured in pixels.
 
 ##  <a name="getinsertmarkcolor"></a>  CTreeCtrl::GetInsertMarkColor
 
-This member function implements the behavior of the Win32 message [TVM_GETINSERTMARKCOLOR](/windows/desktop/Controls/tvm-getinsertmarkcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETINSERTMARKCOLOR](/windows/win32/Controls/tvm-getinsertmarkcolor), as described in the Windows SDK.
 
 ```
 COLORREF GetInsertMarkColor() const;
@@ -601,7 +601,7 @@ BOOL GetItem(TVITEM* pItem) const;
 ### Parameters
 
 *pItem*<br/>
-A pointer to a [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) structure, as described in the Windows SDK.
+A pointer to a [TVITEM](/windows/win32/api/commctrl/ns-commctrl-tvitemw) structure, as described in the Windows SDK.
 
 ### Return Value
 
@@ -652,11 +652,11 @@ The index of the image to display when the specified item is in the expanded sta
 
 ### Remarks
 
-This method sends the [TVM_GETITEM](/windows/desktop/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure that describes the tree-view control item, and then this method retrieves the `iExpandedImage` member from that structure.
+This method sends the [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure that describes the tree-view control item, and then this method retrieves the `iExpandedImage` member from that structure.
 
 ##  <a name="getitemheight"></a>  CTreeCtrl::GetItemHeight
 
-This member function implements the behavior of the Win32 message [TVM_GETITEMHEIGHT](/windows/desktop/Controls/tvm-getitemheight), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETITEMHEIGHT](/windows/win32/Controls/tvm-getitemheight), as described in the Windows SDK.
 
 ```
 SHORT GetItemHeight() const;
@@ -733,7 +733,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 Each tree control item is bounded by a graphics rectangle. Whenever a point in that rectangle is clicked, the item is said to be *hit*. This method returns the largest rectangle such that when a point in the rectangle is clicked, the item identified by the *hItem* parameter is hit.
 
-This method sends the TVM_GETITEMPARTRECT message, which is described in the Windows SDK. For more information, see the [TreeView_GetItemPartRect](/windows/desktop/api/commctrl/nf-commctrl-treeview_getitempartrect) macro.
+This method sends the TVM_GETITEMPARTRECT message, which is described in the Windows SDK. For more information, see the [TreeView_GetItemPartRect](/windows/win32/api/commctrl/nf-commctrl-treeview_getitempartrect) macro.
 
 ### Example
 
@@ -793,7 +793,7 @@ UINT GetItemState(
 Handle of the item whose state is to be retrieved.
 
 *nStateMask*<br/>
-Mask indicating one or more states to be retrieved. For more information on possible values for *nStateMask*, see the discussion of the `state` and `stateMask` members of the [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) structure in the Windows SDK.
+Mask indicating one or more states to be retrieved. For more information on possible values for *nStateMask*, see the discussion of the `state` and `stateMask` members of the [TVITEM](/windows/win32/api/commctrl/ns-commctrl-tvitemw) structure in the Windows SDK.
 
 ### Return Value
 
@@ -819,11 +819,11 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
 
 ### Return Value
 
-The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.
+The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.
 
 ### Remarks
 
-This method sends the [TVM_GETITEM](/windows/desktop/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure that describes the tree-view control item, and this method retrieves the `uStateEx` member from that structure.
+This method sends the [TVM_GETITEM](/windows/win32/Controls/tvm-getitem) message, which is described in the Windows SDK. That message returns the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure that describes the tree-view control item, and this method retrieves the `uStateEx` member from that structure.
 
 ##  <a name="getitemtext"></a>  CTreeCtrl::GetItemText
 
@@ -860,7 +860,7 @@ The handle to the last unexpanded node item if the method is successful; otherwi
 
 ### Remarks
 
-This method sends the [TVM_GETNEXTITEM](/windows/desktop/Controls/tvm-getnextitem) message, which is described in the Windows SDK. For more information, see the TVGN_LASTVISIBLE flag in the *flag* parameter of that message.
+This method sends the [TVM_GETNEXTITEM](/windows/win32/Controls/tvm-getnextitem) message, which is described in the Windows SDK. For more information, see the TVGN_LASTVISIBLE flag in the *flag* parameter of that message.
 
 ### Example
 
@@ -876,7 +876,7 @@ The following code example retrieves a handle to the last unexpanded tree-view n
 
 ##  <a name="getlinecolor"></a>  CTreeCtrl::GetLineColor
 
-This member function implements the behavior of the win32 message [TVM_GETLINECOLOR](/windows/desktop/Controls/tvm-getlinecolor), as described in the Windows SDK.
+This member function implements the behavior of the win32 message [TVM_GETLINECOLOR](/windows/win32/Controls/tvm-getlinecolor), as described in the Windows SDK.
 
 ```
 COLORREF GetLineColor() const;
@@ -1083,7 +1083,7 @@ The maximum scroll time, in milliseconds.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_GETSCROLLTIME](/windows/desktop/Controls/tvm-getscrolltime), as described in the Windows SDK.
+This member function implements the behavior of the win32 message [TVM_GETSCROLLTIME](/windows/win32/Controls/tvm-getscrolltime), as described in the Windows SDK.
 
 ##  <a name="getselectedcount"></a>  CTreeCtrl::GetSelectedCount
 
@@ -1099,7 +1099,7 @@ The number of selected items.
 
 ### Remarks
 
-This method sends the [TVM_GETSELECTEDCOUNT](/windows/desktop/Controls/tvm-getselectedcount) message, which is described in the Windows SDK.
+This method sends the [TVM_GETSELECTEDCOUNT](/windows/win32/Controls/tvm-getselectedcount) message, which is described in the Windows SDK.
 
 ##  <a name="getselecteditem"></a>  CTreeCtrl::GetSelectedItem
 
@@ -1119,7 +1119,7 @@ The handle of the selected item; otherwise NULL.
 
 ##  <a name="gettextcolor"></a>  CTreeCtrl::GetTextColor
 
-This member function implements the behavior of the Win32 message [TVM_GETTEXTCOLOR](/windows/desktop/Controls/tvm-gettextcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETTEXTCOLOR](/windows/win32/Controls/tvm-gettextcolor), as described in the Windows SDK.
 
 ```
 COLORREF GetTextColor() const;
@@ -1135,7 +1135,7 @@ A COLORREF value that represents the current text color. If this value is -1, th
 
 ##  <a name="gettooltips"></a>  CTreeCtrl::GetToolTips
 
-This member function implements the behavior of the Win32 message [TVM_GETTOOLTIPS](/windows/desktop/Controls/tvm-gettooltips), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETTOOLTIPS](/windows/win32/Controls/tvm-gettooltips), as described in the Windows SDK.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -1190,7 +1190,7 @@ Client coordinates of the point to test.
 Pointer to an integer that receives information about the results of the hit test. It can be one or more of the values listed under the `flags` member in the Remarks section.
 
 *pHitTestInfo*<br/>
-Address of a [TVHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvhittestinfo) structure that contains the position to hit test and that receives information about the results of the hit test.
+Address of a [TVHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-tvhittestinfo) structure that contains the position to hit test and that receives information about the results of the hit test.
 
 ### Return Value
 
@@ -1337,13 +1337,13 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### Return Value
 
-The handle to a tree-view item ( `HTREEITEM`) that corresponds to the *uAccId* parameter. For more information, see the *hItem* member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.
+The handle to a tree-view item ( `HTREEITEM`) that corresponds to the *uAccId* parameter. For more information, see the *hItem* member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.
 
 ### Remarks
 
 Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
-This method sends the [TVM_MAPACCIDTOHTREEITEM](/windows/desktop/Controls/tvm-mapaccidtohtreeitem) message, which is described in the Windows SDK.
+This method sends the [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -1369,7 +1369,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*hItem*|[in] A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|
+|*hItem*|[in] A handle of a tree-view item in the control. For more information, see the *hItem* member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
 
 ### Return Value
 
@@ -1379,7 +1379,7 @@ The accessibility identifier that corresponds to the *hItem* parameter.
 
 Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
-This method sends the [TVM_MAPHTREEITEMTOACCID](/windows/desktop/Controls/tvm-maphtreeitemtoaccid) message, which is described in the Windows SDK.
+This method sends the [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -1523,9 +1523,9 @@ Always returns TRUE.
 
 ### Remarks
 
-The autoscroll parameters are used to scroll into view an item that is currently not visible. The tree-view control must have the TVS_EX_AUTOHSCROLL extended style, which is described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles).
+The autoscroll parameters are used to scroll into view an item that is currently not visible. The tree-view control must have the TVS_EX_AUTOHSCROLL extended style, which is described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles).
 
-This method sends the [TVM_SETAUTOSCROLLINFO](/windows/desktop/Controls/tvm-setautoscrollinfo) message, which is described in the Windows SDK.
+This method sends the [TVM_SETAUTOSCROLLINFO](/windows/win32/Controls/tvm-setautoscrollinfo) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -1541,7 +1541,7 @@ The following code example sets the autoscroll behavior of the current tree-view
 
 ##  <a name="setbkcolor"></a>  CTreeCtrl::SetBkColor
 
-This member function implements the behavior of the Win32 message [TVM_SETBKCOLOR](/windows/desktop/Controls/tvm-setbkcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETBKCOLOR](/windows/win32/Controls/tvm-setbkcolor), as described in the Windows SDK.
 
 ```
 COLORREF SetBkColor(COLORREF clr);
@@ -1610,8 +1610,8 @@ DWORD SetExtendedStyle(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*dwExMask*|[in] A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control.<br /><br /> Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles).|
-|*dwExStyles*|[in] A bitmask that specifies which styles in the current tree-view control to set or clear.<br /><br /> To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/desktop/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.|
+|*dwExMask*|[in] A bitmask that specifies which styles in the current tree-view control are affected by this method. If this parameter is zero, it is ignored and the value of the *dwExStyles* parameter is assigned to the tree-view control.<br /><br /> Specify zero or a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles).|
+|*dwExStyles*|[in] A bitmask that specifies which styles in the current tree-view control to set or clear.<br /><br /> To set a combination of styles, specify a bitwise combination (OR) of styles described in [Tree-View Control Extended Styles](/windows/win32/Controls/tree-view-control-window-extended-styles). To clear a set of styles, specify zero.|
 
 ### Return Value
 
@@ -1621,7 +1621,7 @@ A value that contains the previous extended control styles.
 
 This method clears the styles specified in the *dwExMask* parameter, then sets the styles specified in the *dwExStyles* parameter. Only the extended styles that correspond to the bits in *dwExMask* change.
 
-This method sends the [TVM_SETEXTENDEDSTYLE](/windows/desktop/Controls/tvm-setextendedstyle) message, which is described in the Windows SDK.
+This method sends the [TVM_SETEXTENDEDSTYLE](/windows/win32/Controls/tvm-setextendedstyle) message, which is described in the Windows SDK.
 
 ### Example
 
@@ -1684,7 +1684,7 @@ Width, in pixels, of the indentation. If *nIndent* is less than the system-defin
 
 ##  <a name="setinsertmark"></a>  CTreeCtrl::SetInsertMark
 
-This member function implements the behavior of the Win32 message [TVM_SETINSERTMARK](/windows/desktop/Controls/tvm-setinsertmark), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETINSERTMARK](/windows/win32/Controls/tvm-setinsertmark), as described in the Windows SDK.
 
 ```
 BOOL SetInsertMark(
@@ -1710,7 +1710,7 @@ Nonzero if successful; otherwise 0.
 
 ##  <a name="setinsertmarkcolor"></a>  CTreeCtrl::SetInsertMarkColor
 
-This member function implements the behavior of the Win32 message [TVM_SETINSERTMARKCOLOR](/windows/desktop/Controls/tvm-setinsertmarkcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETINSERTMARKCOLOR](/windows/win32/Controls/tvm-setinsertmarkcolor), as described in the Windows SDK.
 
 ```
 COLORREF SetInsertMarkColor(COLORREF clrNew);
@@ -1750,7 +1750,7 @@ BOOL SetItem(
 ### Parameters
 
 *pItem*<br/>
-A pointer to a [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) structure that contains the new item attributes, as described in the Windows SDK.
+A pointer to a [TVITEM](/windows/win32/api/commctrl/ns-commctrl-tvitemw) structure that contains the new item attributes, as described in the Windows SDK.
 
 *hItem*<br/>
 Handle of the item whose attributes are to be set. See the `hItem` member of the `TVITEM` structure in the Windows SDK.
@@ -1839,7 +1839,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [TVM_SETITEM](/windows/desktop/Controls/tvm-setitem) message, which is described in the Windows SDK. This method assigns the *iExpandedImage* parameter to the `iExpandedImage` member of a [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure, and then uses that structure in the message.
+This method sends the [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) message, which is described in the Windows SDK. This method assigns the *iExpandedImage* parameter to the `iExpandedImage` member of a [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure, and then uses that structure in the message.
 
 ### Example
 
@@ -1855,7 +1855,7 @@ The following code example is a trivial test to determine whether the [CTreeCtrl
 
 ##  <a name="setitemheight"></a>  CTreeCtrl::SetItemHeight
 
-This member function implements the behavior of the Win32 message [TVM_SETITEMHEIGHT](/windows/desktop/Controls/tvm-setitemheight), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETITEMHEIGHT](/windows/win32/Controls/tvm-setitemheight), as described in the Windows SDK.
 
 ```
 SHORT SetItemHeight(SHORT cyHeight);
@@ -1961,7 +1961,7 @@ BOOL SetItemStateEx(
 |Parameter|Description|
 |---------------|-----------------|
 |*hItem*|[in] Handle to a tree-view control item.|
-|*uStateEx*|[in] The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|
+|*uStateEx*|[in] The extended state of the item. For more information, see the `uStateEx` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
 
 ### Return Value
 
@@ -1969,7 +1969,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-This method sends the [TVM_SETITEM](/windows/desktop/Controls/tvm-setitem) message, which is described in the Windows SDK. This method assigns the *uStateEx* parameter to the `uStateEx` member of a [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure, and then uses that structure in the message.
+This method sends the [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) message, which is described in the Windows SDK. This method assigns the *uStateEx* parameter to the `uStateEx` member of a [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure, and then uses that structure in the message.
 
 ### Example
 
@@ -2028,7 +2028,7 @@ The previous line color.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_SETLINECOLOR](/windows/desktop/Controls/tvm-setlinecolor), as described in the Windows SDK.
+This member function implements the behavior of the win32 message [TVM_SETLINECOLOR](/windows/win32/Controls/tvm-setlinecolor), as described in the Windows SDK.
 
 ### Example
 
@@ -2053,11 +2053,11 @@ The previous maximum scroll time, in milliseconds.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_SETSCROLLTIME](/windows/desktop/Controls/tvm-setscrolltime), as described in the Windows SDK.
+This member function implements the behavior of the win32 message [TVM_SETSCROLLTIME](/windows/win32/Controls/tvm-setscrolltime), as described in the Windows SDK.
 
 ##  <a name="settextcolor"></a>  CTreeCtrl::SetTextColor
 
-This member function implements the behavior of the Win32 message [TVM_SETTEXTCOLOR](/windows/desktop/Controls/tvm-settextcolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETTEXTCOLOR](/windows/win32/Controls/tvm-settextcolor), as described in the Windows SDK.
 
 ```
 COLORREF SetTextColor(COLORREF clr);
@@ -2078,7 +2078,7 @@ A COLORREF value that represents the previous text color. If this value is -1, t
 
 ##  <a name="settooltips"></a>  CTreeCtrl::SetToolTips
 
-This member function implements the behavior of the Win32 message [TVM_SETTOOLTIPS](/windows/desktop/Controls/tvm-settooltips), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETTOOLTIPS](/windows/win32/Controls/tvm-settooltips), as described in the Windows SDK.
 
 ```
 CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
@@ -2113,13 +2113,13 @@ void ShowInfoTip(HTREEITEM hItem);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*hItem*|[in] A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) structure.|
+|*hItem*|[in] A handle to a tree-view item in the control. For more information, see the `hItem` member of the [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) structure.|
 
 ### Remarks
 
 For more information about the difference between tooltips and infotips, search for the "Tooltips and Infotips" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
 
-This method sends the [TVM_SHOWINFOTIP](/windows/desktop/Controls/tvm-showinfotip) message, which is described in the Windows SDK.
+This method sends the [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) message, which is described in the Windows SDK.
 
 ##  <a name="sortchildren"></a>  CTreeCtrl::SortChildren
 
@@ -2157,7 +2157,7 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 ### Parameters
 
 *pSort*<br/>
-Pointer to a [TVSORTCB](/windows/desktop/api/commctrl/ns-commctrl-tagtvsortcb) structure.
+Pointer to a [TVSORTCB](/windows/win32/api/commctrl/ns-commctrl-tvsortcb) structure.
 
 ### Return Value
 
@@ -2167,7 +2167,7 @@ Nonzero if successful; otherwise 0.
 
 The structure's comparison function, `lpfnCompare`, must return a negative value if the first item should precede the second, a positive value if the first item should follow the second, or zero if the two items are equivalent.
 
-The *lParam1* and *lParam2* parameters correspond to the `lParam` member of the [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) structure for the two items being compared. The *lParamSort* parameter corresponds to the `lParam` member of the `TV_SORTCB` structure.
+The *lParam1* and *lParam2* parameters correspond to the `lParam` member of the [TVITEM](/windows/win32/api/commctrl/ns-commctrl-tvitemw) structure for the two items being compared. The *lParamSort* parameter corresponds to the `lParam` member of the `TV_SORTCB` structure.
 
 ### Example
 

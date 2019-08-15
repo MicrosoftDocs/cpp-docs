@@ -32,5 +32,5 @@ Isolated applications are applications that have manifests built into the progra
 
 ## See also
 
-[Isolated Applications](/windows/desktop/SbsCs/isolated-applications)<br/>
-[About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)
+[Isolated Applications](/windows/win32/SbsCs/isolated-applications)<br/>
+[About Side-by-Side Assemblies](/windows/win32/SbsCs/about-side-by-side-assemblies-)

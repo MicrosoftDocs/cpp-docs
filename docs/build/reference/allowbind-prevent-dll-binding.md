@@ -33,5 +33,5 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
-[BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)<br/>
-[BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)
+[BindImage function](/windows/win32/api/imagehlp/nf-imagehlp-bindimage)<br/>
+[BindImageEx function](/windows/win32/api/imagehlp/nf-imagehlp-bindimageex)

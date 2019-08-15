@@ -24,7 +24,7 @@ CollType>,
 #### Parameters
 
 *Base*<br/>
-A COM enumerator. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
+A COM enumerator. See [IEnumString](/windows/win32/api/objidl/nn-objidl-ienumstring) for an example.
 
 *piid*<br/>
 A pointer to the interface ID of the enumerator interface.

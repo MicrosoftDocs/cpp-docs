@@ -36,7 +36,7 @@ Your class, derived from `IQuickActivateImpl`.
 
 ## Remarks
 
-The [IQuickActivate](/windows/desktop/api/ocidl/nn-ocidl-iquickactivate) interface helps containers avoid delays when loading controls by combining initialization in a single call. The `QuickActivate` method allows the container to pass a pointer to a [QACONTAINER](/windows/desktop/api/ocidl/ns-ocidl-tagqacontainer) structure that holds pointers to all the interfaces the control needs. On return, the control passes back a pointer to a [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) structure that holds pointers to its own interfaces, which are used by the container. Class `IQuickActivateImpl` provides a default implementation of `IQuickActivate` and implements `IUnknown` by sending information to the dump device in debug builds.
+The [IQuickActivate](/windows/win32/api/ocidl/nn-ocidl-iquickactivate) interface helps containers avoid delays when loading controls by combining initialization in a single call. The `QuickActivate` method allows the container to pass a pointer to a [QACONTAINER](/windows/win32/api/ocidl/ns-ocidl-qacontainer) structure that holds pointers to all the interfaces the control needs. On return, the control passes back a pointer to a [QACONTROL](/windows/win32/api/ocidl/ns-ocidl-qacontrol) structure that holds pointers to its own interfaces, which are used by the container. Class `IQuickActivateImpl` provides a default implementation of `IQuickActivate` and implements `IUnknown` by sending information to the dump device in debug builds.
 
 **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)
 
@@ -62,7 +62,7 @@ STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 
 The size is for a full rendering of the control and is specified in HIMETRIC units.
 
-See [IQuickActivate::GetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) in the Windows SDK.
+See [IQuickActivate::GetContentExtent](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) in the Windows SDK.
 
 ##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate
 
@@ -76,9 +76,9 @@ STDMETHOD(QuickActivate)(
 
 ### Remarks
 
-The structure contains pointers to interfaces needed by the control and the values of some ambient properties. Upon return, the control passes a pointer to a [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) structure that contains pointers to its own interfaces that the container requires, and additional status information.
+The structure contains pointers to interfaces needed by the control and the values of some ambient properties. Upon return, the control passes a pointer to a [QACONTROL](/windows/win32/api/ocidl/ns-ocidl-qacontrol) structure that contains pointers to its own interfaces that the container requires, and additional status information.
 
-See [IQuickActivate::QuickActivate](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-quickactivate) in the Windows SDK.
+See [IQuickActivate::QuickActivate](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-quickactivate) in the Windows SDK.
 
 ##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent
 
@@ -92,7 +92,7 @@ STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 
 The size is specified in HIMETRIC units.
 
-See [IQuickActivate::SetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) in the Windows SDK.
+See [IQuickActivate::SetContentExtent](/windows/win32/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) in the Windows SDK.
 
 ## See also
 

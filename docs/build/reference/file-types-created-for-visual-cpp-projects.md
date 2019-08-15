@@ -47,7 +47,7 @@ The following table shows common files in a Visual Studio project, and identifie
 |.HxC|Project|Help project file.|
 |.ico|Resource|Icon bitmap graphic file.|
 |.idb|Compiling|The state file, containing dependency information between source files and class definitions. It can be used by the compiler during incremental compilation. Use the [/Fd](fd-program-database-file-name.md) compiler option to specify the name of the .idb file.|
-|.idl|Compiling|An interface definition language file. For more information, see [Interface Definition (IDL) File](/windows/desktop/Rpc/the-interface-definition-language-idl-file) in the Windows SDK.|
+|.idl|Compiling|An interface definition language file. For more information, see [Interface Definition (IDL) File](/windows/win32/Rpc/the-interface-definition-language-idl-file) in the Windows SDK.|
 |.ilk|Linking|Incremental link file. For more information, see [/INCREMENTAL](incremental-link-incrementally.md).|
 |.map|Linking|A text file containing linker information. Use the [/Fm](fm-name-mapfile.md) compiler option to name the map file. For more information, see [/MAP](map-generate-mapfile.md).|
 |.mfcribbon-ms|Resource|A resource file that contains the XML code that defines the MFC buttons, controls, and attributes in the ribbon. For more information, see [Ribbon Designer](../../mfc/ribbon-designer-mfc.md).|

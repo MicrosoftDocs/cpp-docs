@@ -22,7 +22,7 @@ The ID of the entry point.
 
 ## Remarks
 
-The **entry** C++ attribute has the same functionality as the [entry](/windows/desktop/Midl/entry) MIDL attribute.
+The **entry** C++ attribute has the same functionality as the [entry](/windows/win32/Midl/entry) MIDL attribute.
 
 ## Example
 

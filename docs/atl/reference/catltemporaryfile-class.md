@@ -124,10 +124,10 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 ### Parameters
 
 *pszDir*<br/>
-The path for the temporary file. If this is NULL, [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) will be called to assign a path.
+The path for the temporary file. If this is NULL, [GetTempPath](/windows/win32/api/fileapi/nf-fileapi-gettemppathw) will be called to assign a path.
 
 *dwDesiredAccess*<br/>
-The desired access. See *dwDesiredAccess* in [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) in the Windows SDK.
+The desired access. See *dwDesiredAccess* in [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) in the Windows SDK.
 
 ### Return Value
 
@@ -356,7 +356,7 @@ Returns the LPCTSTR pointing to the file name.
 
 ### Remarks
 
-The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/desktop/api/fileapi/nf-fileapi-gettempfilenamea)Windows SDK function. The file extension will always be "TFR" for the temporary file.
+The file name is generated in [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) with a call to the [GetTempFile](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew)Windows SDK function. The file extension will always be "TFR" for the temporary file.
 
 ##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange
 

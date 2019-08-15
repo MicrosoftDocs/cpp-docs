@@ -84,7 +84,7 @@ When you use the **Add control based on** option in the ATL Project Wizard, the 
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|
 |Using windows in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|
-|Windows|[Windows](/windows/desktop/winmsg/windows) and subsequent topics in the Windows SDK|
+|Windows|[Windows](/windows/win32/winmsg/windows) and subsequent topics in the Windows SDK|
 
 ## Inheritance Hierarchy
 
@@ -196,16 +196,16 @@ HWND Create(
 [in] Specifies the name of the window. The default value is NULL.
 
 *dwStyle*<br/>
-[in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
+[in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
 
 *dwExStyle*<br/>
-[in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+[in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *MenuOrID*<br/>
 [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.
 
 *lpCreateParam*<br/>
-[in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
+[in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw).
 
 ### Return Value
 
@@ -250,7 +250,7 @@ The result of the message processing.
 
 ### Remarks
 
-By default, `DefWindowProc` calls the [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
+By default, `DefWindowProc` calls the [CallWindowProc](/windows/win32/api/winuser/nf-winuser-callwindowprocw) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage
 

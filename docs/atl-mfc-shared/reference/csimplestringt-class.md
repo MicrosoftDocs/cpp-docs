@@ -478,11 +478,11 @@ If you keep track of the string length yourself, do not append the terminating n
 
 For more information about reference counting, see the following articles:
 
-- [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK.
+- [Managing Object Lifetimes through Reference Counting](/windows/win32/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK.
 
-- [Implementing Reference Counting](/windows/desktop/com/implementing-reference-counting) in the Windows SDK.
+- [Implementing Reference Counting](/windows/win32/com/implementing-reference-counting) in the Windows SDK.
 
-- [Rules for Managing Reference Counts](/windows/desktop/com/rules-for-managing-reference-counts) in the Windows SDK.
+- [Rules for Managing Reference Counts](/windows/win32/com/rules-for-managing-reference-counts) in the Windows SDK.
 
 ### Example
 
@@ -629,11 +629,11 @@ After you have finished with `LockBuffer`, call [UnlockBuffer](#unlockbuffer) to
 
 For more information about reference counting, see the following articles:
 
-- [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK
+- [Managing Object Lifetimes through Reference Counting](/windows/win32/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK
 
-- [Implementing Reference Counting](/windows/desktop/com/implementing-reference-counting) in the Windows SDK
+- [Implementing Reference Counting](/windows/win32/com/implementing-reference-counting) in the Windows SDK
 
-- [Rules for Managing Reference Counts](/windows/desktop/com/rules-for-managing-reference-counts) in the Windows SDK
+- [Rules for Managing Reference Counts](/windows/win32/com/rules-for-managing-reference-counts) in the Windows SDK
 
 ### Example
 

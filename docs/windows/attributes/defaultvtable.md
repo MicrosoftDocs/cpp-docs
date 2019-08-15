@@ -22,7 +22,7 @@ The designated interface that you want to have the default vtable for the COM ob
 
 ## Remarks
 
-The **defaultvtable** C++ attribute has the same functionality as the [defaultvtable](/windows/desktop/Midl/defaultvtable) MIDL attribute.
+The **defaultvtable** C++ attribute has the same functionality as the [defaultvtable](/windows/win32/Midl/defaultvtable) MIDL attribute.
 
 ## Example
 

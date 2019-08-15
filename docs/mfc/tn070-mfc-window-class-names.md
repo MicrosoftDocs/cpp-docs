@@ -18,7 +18,7 @@ Afx:%x:%x
 Afx:%x:%x:%x:%x:%x
 ```
 
-The hex digits that replace the `%x` characters are filled in from data from the [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) structure. MFC uses this technique so that multiple C++ classes requiring identical **WNDCLASS** structures can share the same registered window class. Unlike most simple Win32 applications, MFC applications have only one **WNDPROC**, so you can easily share **WNDCLASS** structures to save time and memory. The replaceable values for the `%x` characters shown above are as follows:
+The hex digits that replace the `%x` characters are filled in from data from the [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) structure. MFC uses this technique so that multiple C++ classes requiring identical **WNDCLASS** structures can share the same registered window class. Unlike most simple Win32 applications, MFC applications have only one **WNDPROC**, so you can easily share **WNDCLASS** structures to save time and memory. The replaceable values for the `%x` characters shown above are as follows:
 
 - **WNDCLASS.hInstance**
 

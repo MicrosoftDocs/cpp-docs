@@ -28,7 +28,7 @@ ms.assetid: f33499c4-7733-42d9-80e3-8a5018786965
 
 # Manifest Tool Property Pages
 
-Use these pages to specify general options for [Mt.exe](https://msdn.microsoft.com/library/aa375649). These pages are found under **Project** > **Properties** > **Configuration Properties** > **Manifest Tool**.
+Use these pages to specify general options for [Mt.exe](/windows/win32/sbscs/mt-exe). These pages are found under **Project** > **Properties** > **Configuration Properties** > **Manifest Tool**.
 
 ## General Property Page
 
@@ -100,7 +100,7 @@ Specifies whether the application is DPI-aware. By default, the setting is **Yes
 
 ## Isolated COM Property Page
 
-For more information about isolated COM, see [Isolated Applications](/windows/desktop/SbsCs/isolated-applications) and [How to: Build Isolated Applications to Consume COM Components](../how-to-build-isolated-applications-to-consume-com-components.md).
+For more information about isolated COM, see [Isolated Applications](/windows/win32/SbsCs/isolated-applications) and [How to: Build Isolated Applications to Consume COM Components](../how-to-build-isolated-applications-to-consume-com-components.md).
 
 ###  Type Library File
 

@@ -103,7 +103,7 @@ An HRESULT value that specifies the error.
 
 ### Remarks
 
-For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).
+For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes).
 
 ## <a name="message"></a> COMException::Message Property
 

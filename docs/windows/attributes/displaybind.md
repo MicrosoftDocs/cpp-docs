@@ -17,7 +17,7 @@ Indicates a property that should be displayed to the user as bindable.
 
 ## Remarks
 
-The **displaybind** C++ attribute has the same functionality as the [displaybind](/windows/desktop/Midl/displaybind) MIDL attribute.
+The **displaybind** C++ attribute has the same functionality as the [displaybind](/windows/win32/Midl/displaybind) MIDL attribute.
 
 ## Example
 

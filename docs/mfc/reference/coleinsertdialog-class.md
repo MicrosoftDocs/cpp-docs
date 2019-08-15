@@ -48,7 +48,7 @@ Create an object of class `COleInsertDialog` when you want to call this dialog b
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.
 
-For more information, see the [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) structure in the Windows SDK.
+For more information, see the [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) structure in the Windows SDK.
 
 For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).
 
@@ -160,7 +160,7 @@ Completion status for the dialog box. One of the following values:
 
 - IDCANCEL if the user canceled the dialog box.
 
-- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](/windows/desktop/api/oledlg/nf-oledlg-oleuiinsertobjecta) function in the Windows SDK.
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIInsertObject](/windows/win32/api/oledlg/nf-oledlg-oleuiinsertobjectw) function in the Windows SDK.
 
 ### Remarks
 
@@ -182,7 +182,7 @@ Returns the CLSID associated with the selected item.
 
 ### Remarks
 
-For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.
+For more information, see [CLSID Key](/windows/win32/com/clsid-key-hklm) in the Windows SDK.
 
 ##  <a name="getdrawaspect"></a>  COleInsertDialog::GetDrawAspect
 
@@ -204,7 +204,7 @@ The method needed to render the object.
 
 Call this function only if [DoModal](#domodal) returns IDOK.
 
-For more information on drawing aspect, see [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) data structure in the Windows SDK.
+For more information on drawing aspect, see [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) data structure in the Windows SDK.
 
 ##  <a name="geticonicmetafile"></a>  COleInsertDialog::GetIconicMetafile
 
@@ -274,7 +274,7 @@ OLEUIINSERTOBJECT m_io;
 
 Members of this structure can be modified either directly or through member functions.
 
-For more information, see the [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) structure in the Windows SDK.
+For more information, see the [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) structure in the Windows SDK.
 
 ## See also
 

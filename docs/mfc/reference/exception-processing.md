@@ -366,7 +366,7 @@ void AfxThrowMemoryException();
 
 ### Remarks
 
-Call this function if calls to underlying system memory allocators (such as **malloc** and the [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.
+Call this function if calls to underlying system memory allocators (such as **malloc** and the [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) Windows function) fail. You do not need to call it for **new** because **new** will throw a memory exception automatically if the memory allocation fails.
 
 ### Requirements
 
@@ -477,7 +477,7 @@ Handle to a result code that indicates the reason for the exception.
 
 ### Remarks
 
-The version that takes an HRESULT as an argument converts that result code into the corresponding SCODE. For more information on HRESULT and SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.
+The version that takes an HRESULT as an argument converts that result code into the corresponding SCODE. For more information on HRESULT and SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 
 ### Requirements
 

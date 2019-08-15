@@ -8,7 +8,7 @@ ms.assetid: 0d001870-253e-4989-b689-f78035953799
 
 User Account Control (UAC) is a feature of Windows Vista in which user accounts have limited privileges. You can find detailed information about UAC at these sites:
 
-- [Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](/windows/desktop/uxguide/winenv-uac)
+- [Developer Best Practices and Guidelines for Applications in a Least Privileged Environment](/windows/win32/uxguide/winenv-uac)
 
 ## Building Projects after Enabling UAC
 

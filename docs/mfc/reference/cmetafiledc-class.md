@@ -40,9 +40,9 @@ Next send the `CMetaFileDC` object the sequence of CDC GDI commands that you int
 
 After you have sent the desired commands to the metafile, call the `Close` member function, which closes the metafile device contexts and returns a metafile handle. Then dispose of the `CMetaFileDC` object.
 
-[CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea), which copies a metafile to disk.
+[CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](/windows/win32/api/wingdi/nf-wingdi-copymetafilew), which copies a metafile to disk.
 
-When the metafile is no longer needed, delete it from memory with the [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) Windows function.
+When the metafile is no longer needed, delete it from memory with the [DeleteMetaFile](/windows/win32/api/wingdi/nf-wingdi-deletemetafile) Windows function.
 
 You can also implement the `CMetaFileDC` object so that it can handle both output calls and attribute GDI calls such as `GetTextExtent`. Such a metafile is more flexible and can more easily reuse general GDI code, which often consists of a mix of output and attribute calls. The `CMetaFileDC` class inherits two device contexts, `m_hDC` and `m_hAttribDC`, from CDC. The `m_hDC` device context handles all [CDC](../../mfc/reference/cdc-class.md) GDI output calls and the `m_hAttribDC` device context handles all CDC GDI attribute calls. Normally, these two device contexts refer to the same device. In the case of `CMetaFileDC`, the attribute DC is set to NULL by default.
 
@@ -76,9 +76,9 @@ A valid HMETAFILE if the function is successful; otherwise NULL.
 
 ### Remarks
 
-The Windows metafile handle can also be used to manipulate the metafile with Windows functions such as [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea).
+The Windows metafile handle can also be used to manipulate the metafile with Windows functions such as [CopyMetaFile](/windows/win32/api/wingdi/nf-wingdi-copymetafilew).
 
-Delete the metafile after use by calling the Windows [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) function.
+Delete the metafile after use by calling the Windows [DeleteMetaFile](/windows/win32/api/wingdi/nf-wingdi-deletemetafile) function.
 
 ##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced
 
@@ -168,7 +168,7 @@ Identifies a reference device for the enhanced metafile.
 Points to a null-terminated character string. Specifies the filename for the enhanced metafile to be created. If this parameter is NULL, the enhanced metafile is memory based and its contents lost when the object is destroyed or when the Win32 `DeleteEnhMetaFile` function is called.
 
 *lpBounds*<br/>
-Points to a [RECT](/windows/desktop/api/windef/ns-windef-tagrect) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
+Points to a [RECT](/windows/win32/api/windef/ns-windef-rect) data structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the dimensions in HIMETRIC units (in .01-millimeter increments) of the picture to be stored in the enhanced metafile.
 
 *lpszDescription*<br/>
 Points to a zero-terminated string that specifies the name of the application that created the picture, as well as the picture's title.

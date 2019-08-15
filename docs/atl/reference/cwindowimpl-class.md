@@ -133,16 +133,16 @@ HWND Create(
 [in] Specifies the name of the window. The default value is NULL.
 
 *dwStyle*<br/>
-[in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.
+[in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) in the Windows SDK.
 
 *dwExStyle*<br/>
-[in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.
+[in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) in the Windows SDK.
 
 *MenuOrID*<br/>
 [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.
 
 *lpCreateParam*<br/>
-[in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
+[in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw).
 
 ### Return Value
 
@@ -190,7 +190,7 @@ The result of the message processing.
 
 ### Remarks
 
-By default, `DefWindowProc` calls the [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
+By default, `DefWindowProc` calls the [CallWindowProc](/windows/win32/api/winuser/nf-winuser-callwindowprocw) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
 The function with no parameters automatically retrieves the needed parameters from the current message.
 
@@ -254,7 +254,7 @@ WNDPROC m_pfnSuperWindowProc;
 
 |Type of window|Window procedure|
 |--------------------|----------------------|
-|A window based on a new window class, specified through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro.|The [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Win32 function.|
+|A window based on a new window class, specified through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro.|The [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowprocw) Win32 function.|
 |A window based on a window class that modifies an existing class, specified through the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro.|The existing window class's window procedure.|
 |A subclassed window.|The subclassed window's original window procedure.|
 

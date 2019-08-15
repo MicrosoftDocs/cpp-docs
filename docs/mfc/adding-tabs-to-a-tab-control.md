@@ -10,13 +10,13 @@ After creating the tab control ([CTabCtrl](../mfc/reference/ctabctrl-class.md)),
 
 ### To add a tab item
 
-1. Prepare a [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) structure.
+1. Prepare a [TCITEM](/windows/win32/api/commctrl/ns-commctrl-tcitemw) structure.
 
 1. Call [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), passing the structure.
 
 1. Repeat steps 1 and 2 for additional tab items.
 
-For more information, see [Creating a Tab Control](/windows/desktop/Controls/tab-controls) in the Windows SDK.
+For more information, see [Creating a Tab Control](/windows/win32/Controls/tab-controls) in the Windows SDK.
 
 ## See also
 

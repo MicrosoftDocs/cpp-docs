@@ -101,7 +101,7 @@ BOOL CreateFont(
 ### Parameters
 
 *nHeight*<br/>
-Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)structure in the Windows SDK for a description. The absolute value of *nHeight* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.
+Specifies the desired height (in logical units) of the font. See the `lfHeight` member of the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)structure in the Windows SDK for a description. The absolute value of *nHeight* must not exceed 16,384 device units after it is converted. For all height comparisons, the font mapper looks for the largest font that does not exceed the requested size or the smallest font if all the fonts exceed the requested size.
 
 *nWidth*<br/>
 Specifies the average width (in logical units) of characters in the font. If *nWidth* is 0, the aspect ratio of the device will be matched against the digitization aspect ratio of the available fonts to find the closest match, which is determined by the absolute value of the difference.
@@ -150,7 +150,7 @@ Specifies the font's output quality, which defines how carefully the GDI must at
 Specifies the pitch and family of the font. See the `lfPitchAndFamily` member in the `LOGFONT` structure in the Windows SDK for a list of values and more information.
 
 *lpszFacename*<br/>
-A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) function can be used to enumerate all currently available fonts. If *lpszFacename* is NULL, the GDI uses a device-independent typeface.
+A `CString` or pointer to a null-terminated string that specifies the typeface name of the font. The length of this string must not exceed 30 characters. The Windows [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) function can be used to enumerate all currently available fonts. If *lpszFacename* is NULL, the GDI uses a device-independent typeface.
 
 ### Return Value
 
@@ -172,7 +172,7 @@ When you finish with the `CFont` object created by the `CreateFont` function, us
 
 ##  <a name="createfontindirect"></a>  CFont::CreateFontIndirect
 
-Initializes a `CFont` object with the characteristics given in a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)structure.
+Initializes a `CFont` object with the characteristics given in a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)structure.
 
 ```
 BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
@@ -191,7 +191,7 @@ Nonzero if successful; otherwise 0.
 
 The font can subsequently be selected as the current font for any device.
 
-This font has the characteristics specified in the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.
+This font has the characteristics specified in the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure. When the font is selected by using the [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) member function, the GDI font mapper attempts to match the logical font with an existing physical font. If the font mapper fails to find an exact match for the logical font, it provides an alternative font whose characteristics match as many of the requested characteristics as possible.
 
 When you no longer need the `CFont` object created by the `CreateFontIndirect` function, use `CDC::SelectObject` to select a different font into the device context, then delete the `CFont` object that is no longer needed.
 
@@ -248,7 +248,7 @@ BOOL CreatePointFontIndirect(
 ### Parameters
 
 *lpLogFont*<br/>
-Points to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure that defines the characteristics of the logical font. The `lfHeight` member of the `LOGFONT` structure is measured in tenths of a point rather than logical units. (For instance, set `lfHeight` to 120 to request a 12-point font.)
+Points to a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure that defines the characteristics of the logical font. The `lfHeight` member of the `LOGFONT` structure is measured in tenths of a point rather than logical units. (For instance, set `lfHeight` to 120 to request a 12-point font.)
 
 *pDC*<br/>
 Pointer to the [CDC](../../mfc/reference/cdc-class.md) object to be used to convert the height in `lfHeight` to logical units. If NULL, a screen device context is used for the conversion.
@@ -303,7 +303,7 @@ int GetLogFont(LOGFONT* pLogFont);
 ### Parameters
 
 *pLogFont*<br/>
-Pointer to the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure to receive the font information.
+Pointer to the [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) structure to receive the font information.
 
 ### Return Value
 
@@ -327,9 +327,9 @@ The handle of the Windows GDI font object attached to `CFont` if successful; oth
 
 ### Remarks
 
-Since this operator is automatically used for conversions from `CFont` to [Fonts and Text](/windows/desktop/gdi/fonts-and-text), you can pass `CFont` objects to functions that expect HFONTs.
+Since this operator is automatically used for conversions from `CFont` to [Fonts and Text](/windows/win32/gdi/fonts-and-text), you can pass `CFont` objects to functions that expect HFONTs.
 
-For more information about using graphic objects, see [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.
+For more information about using graphic objects, see [Graphic Objects](/windows/win32/gdi/graphic-objects) in the Windows SDK.
 
 ### Example
 

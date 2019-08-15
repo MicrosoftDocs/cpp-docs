@@ -78,7 +78,7 @@ The return value is the initial value of the destination.
 
 `_InterlockedCompareExchangePointer` performs an atomic comparison of the `Destination` address with the `Comparand` address. If the `Destination` address is equal to the `Comparand` address, the `Exchange` address is stored in the address specified by `Destination`. Otherwise, no operation is performed.
 
-`_InterlockedCompareExchangePointer` provides compiler intrinsic support for the Win32 Windows SDK [_InterlockedCompareExchangePointer](https://msdn.microsoft.com/library/ff547863.aspx) function.
+`_InterlockedCompareExchangePointer` provides compiler intrinsic support for the Win32 Windows SDK [InterlockedCompareExchangePointer](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchangepointer) function.
 
 For a example of how to use `_InterlockedCompareExchangePointer`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 

@@ -43,9 +43,9 @@ Your class, derived from `IDataObjectImpl`.
 
 ## Remarks
 
-The [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) and [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) to retrieve and store data.
+The [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) and [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) to retrieve and store data.
 
-`IDataObject` also manages connections to advise sinks to handle data change notifications. In order for the client to receive data change notifications from the data object, the client must implement the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface on an object called an advise sink. When the client then calls `IDataObject::DAdvise`, a connection is established between the data object and the advise sink.
+`IDataObject` also manages connections to advise sinks to handle data change notifications. In order for the client to receive data change notifications from the data object, the client must implement the [IAdviseSink](/windows/win32/api/objidl/nn-objidl-iadvisesink) interface on an object called an advise sink. When the client then calls `IDataObject::DAdvise`, a connection is established between the data object and the advise sink.
 
 Class `IDataObjectImpl` provides a default implementation of `IDataObject` and implements `IUnknown` by sending information to the dump device in debug builds.
 
@@ -79,7 +79,7 @@ This enables the advise sink to receive notifications of changes in the object.
 
 To terminate the connection, call [DUnadvise](#dunadvise).
 
-See [IDataObject::DAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dadvise) in the Windows SDK.
+See [IDataObject::DAdvise](/windows/win32/api/objidl/nf-objidl-idataobject-dadvise) in the Windows SDK.
 
 ##  <a name="dunadvise"></a>  IDataObjectImpl::DUnadvise
 
@@ -91,7 +91,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 
 ### Remarks
 
-See [IDataObject::DUnadvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dunadvise) in the Windows SDK.
+See [IDataObject::DUnadvise](/windows/win32/api/objidl/nf-objidl-idataobject-dunadvise) in the Windows SDK.
 
 ##  <a name="enumdadvise"></a>  IDataObjectImpl::EnumDAdvise
 
@@ -107,7 +107,7 @@ HRESULT DAdvise(
 
 ### Remarks
 
-See [IDataObject::EnumDAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-enumdadvise) in the Windows SDK.
+See [IDataObject::EnumDAdvise](/windows/win32/api/objidl/nf-objidl-idataobject-enumdadvise) in the Windows SDK.
 
 ##  <a name="enumformatetc"></a>  IDataObjectImpl::EnumFormatEtc
 
@@ -121,7 +121,7 @@ HRESULT EnumFormatEtc(
 
 ### Remarks
 
-See [IDataObject::EnumFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.
+See [IDataObject::EnumFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.
 
 ### Return Value
 
@@ -153,7 +153,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IDataObject::GetCanonicalFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-getcanonicalformatetc) in the Windows SDK.
+See [IDataObject::GetCanonicalFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-getcanonicalformatetc) in the Windows SDK.
 
 ##  <a name="getdata"></a>  IDataObjectImpl::GetData
 
@@ -169,7 +169,7 @@ HRESULT GetData(
 
 The *pformatetcIn* parameter must specify a storage medium type of TYMED_MFPICT.
 
-See [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
+See [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.
 
 ##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere
 
@@ -187,7 +187,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IDataObject::GetDataHere](/windows/desktop/api/objidl/nf-objidl-idataobject-getdatahere) in the Windows SDK.
+See [IDataObject::GetDataHere](/windows/win32/api/objidl/nf-objidl-idataobject-getdatahere) in the Windows SDK.
 
 ##  <a name="querygetdata"></a>  IDataObjectImpl::QueryGetData
 
@@ -203,7 +203,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IDataObject::QueryGetData](/windows/desktop/api/objidl/nf-objidl-idataobject-querygetdata) in the Windows SDK.
+See [IDataObject::QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) in the Windows SDK.
 
 ##  <a name="setdata"></a>  IDataObjectImpl::SetData
 
@@ -222,7 +222,7 @@ Returns E_NOTIMPL.
 
 ### Remarks
 
-See [IDataObject::SetData](/windows/desktop/api/objidl/nf-objidl-idataobject-setdata) in the Windows SDK.
+See [IDataObject::SetData](/windows/win32/api/objidl/nf-objidl-idataobject-setdata) in the Windows SDK.
 
 ## See also
 

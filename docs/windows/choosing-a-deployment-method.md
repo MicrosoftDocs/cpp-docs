@@ -27,7 +27,7 @@ In your deployments, you can redistribute any version of a Visual C++ library th
 
 If a deployment uses redistributable merge modules and an installation is run by a user who does not have administrative rights, the Visual C++ DLLs are not installed and the application will not run. Also, application installers built with merge modules that allow installation on a per-user basis install the libraries in a shared location that impacts all users of the system. You can use local deployment to install the required Visual C++ DLLs in the directory of a particular user's application without affecting other users or requiring administrator rights. Because this can create serviceability issues, we do not recommend local deployment of Visual C++ redistributable DLLs.
 
-Incorrect deployment of Visual C++ libraries may cause run-time errors during execution of an application that depends on them. When the operating system loads the application, it uses the search order described in [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw).
+Incorrect deployment of Visual C++ libraries may cause run-time errors during execution of an application that depends on them. When the operating system loads the application, it uses the search order described in [LoadLibraryEx](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw).
 
 ## Dynamic Linking Is Better than Static Linking
 

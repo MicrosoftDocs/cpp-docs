@@ -270,7 +270,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
 - **clock**
 
-   In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and is now monotonic.
+   In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemtimeasfiletime). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and is now monotonic.
 
 - **fstat and _utime**
 
@@ -306,7 +306,7 @@ To enable new optimizations and debugging checks, the Visual Studio implementati
 
 - **steady_clock**
 
-   The \<chrono> implementation of [steady_clock](../standard-library/steady-clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual Studio `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this isn't necessarily the case for other implementations.
+   The \<chrono> implementation of [steady_clock](../standard-library/steady-clock-struct.md) has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on [QueryPerformanceCounter](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in Visual Studio `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this isn't necessarily the case for other implementations.
 
 - **allocators and const**
 
@@ -2534,7 +2534,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Deprecation of attributed ATL code support** (Level 1 (`/W1`) on-by-default)
 
-   Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual Studio 2008](https://msdn.microsoft.com/library/bb384632), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
+   Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual Studio 2008](../porting/visual-cpp-what-s-new-2003-through-2015.md#whats-new-for-c-in-visual-studio-2008), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
 
     ```Output
     warning C4467: Usage of ATL attributes is deprecated
@@ -3231,7 +3231,7 @@ The `SchedulerType` enumeration of `UmsThreadDefault` is deprecated. Specificati
 
 - Support for the new lambda notation excludes support for coding an unquoted GUID in an IDL uuid attribute.
 
-- The .NET Framework 4 introduces the concept of corrupted state exceptions, which are exceptions that leave a process in an unrecoverable                 corrupted state. By default, you can't catch a corrupted state exception, even with the /EHa compiler option that catches all other exceptions.                 To explicitly catch a corrupted state exception, use __try-\__except statements. Or, apply the [HandledProcessCorruptedStateExceptions]attribute                 to enable a function to catch corrupted state exceptions.  This change affects primarily system programmers who might have to catch a corrupted                 state exception. The eight exceptions are STATUS_ACCESS_VIOLATION, STATUS_STACK_OVERFLOW, EXCEPTION_ILLEGAL_INSTRUCTION,                 EXCEPTION_IN_PAGE_ERROR, EXCEPTION_INVALID_DISPOSITION, EXCEPTION_NONCONTINUABLE_EXCEPTION, EXCEPTION_PRIV_INSTRUCTION, STATUS_UNWIND_CONSOLIDATE.                 For more information about these exceptions, see the [GetExceptionCode](/windows/desktop/Debug/getexceptioncode) macro.
+- The .NET Framework 4 introduces the concept of corrupted state exceptions, which are exceptions that leave a process in an unrecoverable                 corrupted state. By default, you can't catch a corrupted state exception, even with the /EHa compiler option that catches all other exceptions.                 To explicitly catch a corrupted state exception, use __try-\__except statements. Or, apply the [HandledProcessCorruptedStateExceptions]attribute                 to enable a function to catch corrupted state exceptions.  This change affects primarily system programmers who might have to catch a corrupted                 state exception. The eight exceptions are STATUS_ACCESS_VIOLATION, STATUS_STACK_OVERFLOW, EXCEPTION_ILLEGAL_INSTRUCTION,                 EXCEPTION_IN_PAGE_ERROR, EXCEPTION_INVALID_DISPOSITION, EXCEPTION_NONCONTINUABLE_EXCEPTION, EXCEPTION_PRIV_INSTRUCTION, STATUS_UNWIND_CONSOLIDATE.                 For more information about these exceptions, see the [GetExceptionCode](/windows/win32/Debug/getexceptioncode) macro.
 
 - The revised `/GS` compiler option guards against buffer overruns more comprehensively than in earlier versions. This version might insert additional security checks in the stack that might decrease performance. Use the new `__declspec(safebuffers)` keyword to instruct the compiler to not insert security checks for a particular function.
 

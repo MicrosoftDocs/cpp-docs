@@ -8,7 +8,7 @@ helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop appl
 
 This walkthrough shows how to create a traditional Windows desktop application in Visual Studio. The example application you'll create uses the Windows API to display "Hello, Windows desktop!" in a window. You can use the code that you develop in this walkthrough as a pattern to create other Windows desktop applications.
 
-The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API, such as MFC, ATL, and the .NET frameworks. Even the most modern code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/desktop/apiindex/windows-api-list). There are many ways to create Windows applications, but the process above was the first.
+The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API, such as MFC, ATL, and the .NET frameworks. Even the most modern code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list). There are many ways to create Windows applications, but the process above was the first.
 
 > [!IMPORTANT]
 > For the sake of brevity, some code statements are omitted in the text. The [Build the code](#build-the-code) section at the end of this document shows the complete code.
@@ -132,7 +132,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    );
    ```
 
-   For information about the parameters and return value of this function, see [WinMain entry point](/windows/desktop/api/winbase/nf-winbase-winmain).
+   For information about the parameters and return value of this function, see [WinMain entry point](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
    > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **__declspec** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
@@ -157,11 +157,11 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    In this function, you write code to handle *messages* that the application receives from Windows when *events* occur. For example, if a user chooses an OK button in your application, Windows will send a message to you and you can write code inside your `WndProc` function that does whatever work is appropriate. It's called *handling* an event. You only handle the events that are relevant for your application.
 
-   For more information, see [Window Procedures](/windows/desktop/winmsg/window-procedures).
+   For more information, see [Window Procedures](/windows/win32/winmsg/window-procedures).
 
 ### To add functionality to the WinMain function
 
-1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
+1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -180,9 +180,9 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   For information about the fields of the structure above, see [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa).
+   For information about the fields of the structure above, see [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw).
 
-1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
+1. Register the `WNDCLASSEX` with Windows so that it knows about your window and how to send messages to it. Use the [RegisterClassEx](/windows/win32/api/winuser/nf-winuser-registerclassexw) function and pass the window class structure as an argument. The `_T` macro is used because we use the `TCHAR` type.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -196,7 +196,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-1. Now you can create a window. Use the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) function.
+1. Now you can create a window. Use the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -234,7 +234,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-   This function returns an `HWND`, which is a handle to a window. A handle is somewhat like a pointer that Windows uses to keep track of open windows. For more information, see [Windows Data Types](/windows/desktop/WinProg/windows-data-types).
+   This function returns an `HWND`, which is a handle to a window. A handle is somewhat like a pointer that Windows uses to keep track of open windows. For more information, see [Windows Data Types](/windows/win32/WinProg/windows-data-types).
 
 1. At this point, the window has been created, but we still need to tell Windows to make it visible. That's what this code does:
 
@@ -262,7 +262,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    return (int) msg.wParam;
    ```
 
-   For more information about the structures and functions in the message loop, see [MSG](/windows/desktop/api/winuser/ns-winuser-msg), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
+   For more information about the structures and functions in the message loop, see [MSG](/windows/win32/api/winuser/ns-winuser-msg), [GetMessage](/windows/win32/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage).
 
    At this point, the `WinMain` function should resemble the following code.
 
@@ -355,9 +355,9 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
 1. To enable the `WndProc` function to handle the messages that the application receives, implement a switch statement.
 
-   One important message to handle is the [WM_PAINT](/windows/desktop/gdi/wm-paint) message. The application receives the `WM_PAINT` message when part of its displayed window must be updated. The event can occur when a user moves a window in front of your window, then moves it away again, and your application doesn't know when these events occur. Only Windows knows, so it notifies you with `WM_PAINT`. When the window is first displayed, all of it must be updated.
+   One important message to handle is the [WM_PAINT](/windows/win32/gdi/wm-paint) message. The application receives the `WM_PAINT` message when part of its displayed window must be updated. The event can occur when a user moves a window in front of your window, then moves it away again, and your application doesn't know when these events occur. Only Windows knows, so it notifies you with `WM_PAINT`. When the window is first displayed, all of it must be updated.
 
-   To handle a `WM_PAINT` message, first call [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint). For the application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) function is used to display the string.
+   To handle a `WM_PAINT` message, first call [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint). For the application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) function is used to display the string.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -384,7 +384,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    `HDC` in the code is a handle to a device context, which is a data structure that Windows uses to enable your application to communicate with the graphics subsystem. The `BeginPaint` and `EndPaint` functions make your application behave like a good citizen and doesn't use the device context for longer than it needs to. The functions help make the graphics subsystem is available for use by other applications.
 
-1. An application typically handles many other messages, for example, [WM_CREATE](/windows/desktop/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
+1. An application typically handles many other messages, for example, [WM_CREATE](/windows/win32/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/win32/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
