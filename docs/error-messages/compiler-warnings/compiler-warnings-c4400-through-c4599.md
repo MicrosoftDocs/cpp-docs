@@ -185,7 +185,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4593|'*function*': 'constexpr' call evaluation step limit of '*limit*' exceeded; use /constexpr:steps\<NUMBER> to increase the limit|
 |Compiler warning (level 3) C4594|'*type*': destructor will not be implicitly called if an exception is thrown|
 |Compiler warning (level 1) C4595|'*type*': behavior change: destructor will no longer be implicitly called if an exception is thrown|
-|Compiler warning (level 4) C4596|'*identifier*': illegal qualified name in member declaration|
+|[Compiler warning (level 4) C4596](../../error-messages/compiler-warnings/c4596.md)|'*identifier*': illegal qualified name in member declaration|
 |Compiler warning (error) C4597|undefined behavior: offsetof applied to a member of a virtual base|
 |Compiler warning (level 1 and level 3) C4598|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position|
 |Compiler warning (level 3) C4599|'*flag* *path*': command line argument number *number* does not match precompiled header|
