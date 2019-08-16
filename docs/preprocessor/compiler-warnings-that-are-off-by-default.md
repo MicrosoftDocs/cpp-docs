@@ -80,7 +80,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4583 (level 4)|'*type*': destructor is not implicitly called|
 |C4587 (level 1)|'*anonymous_structure*': behavior change: constructor is no longer implicitly called|
 |C4588 (level 1)|'*anonymous_structure*': behavior change: destructor is no longer implicitly called|
-|C4596 (level 4)|'*identifier*': illegal qualified name in member declaration <sup>14.3</sup> <sup>Perm</sup>|
+|[C4596](../error-messages/compiler-warnings/c4596.md) (level 4)|'*identifier*': illegal qualified name in member declaration <sup>14.3</sup> <sup>Perm</sup>|
 |C4598 (level 1 and level 3)|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position <sup>14.3</sup>|
 |C4599 (level 3)|'*option* *path*': command-line argument number *number* does not match pre-compiled header <sup>14.3</sup>|
 |C4605 (level 1)|'/D*macro*' specified on current command line, but was not specified when precompiled header was built|
