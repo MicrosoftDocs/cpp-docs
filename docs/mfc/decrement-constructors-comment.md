@@ -8,7 +8,7 @@ ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
 
 The `// Constructors` section of an MFC class declaration declares constructors (in the C++ sense) as well as any initialization functions required to really use the object. For example, `CWnd::Create` is in the constructors section because before you use the `CWnd` object, it must be "fully constructed" by first calling the C++ constructor and then calling the `Create` function. Typically, these members are public.
 
-For example, class `CStdioFile` has three constructors, one of which is shown in the listing under [An Example of the Comments](../mfc/an-example-of-the-comments.md).
+For example, class `CChildFrame` has three constructors, one of which is shown in the listing under [An Example of the Comments](../mfc/an-example-of-the-comments.md).
 
 ## See also
 
