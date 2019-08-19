@@ -32,7 +32,7 @@ You would do the following instead:
 
 ::: moniker range=">=vs-2019"
 
-**cl /clr /GL a.cpp b.cpp c.cpp /Ycpcg.h**
+**cl /clr /GL a.cpp b.cpp c.cpp /Ycpch.h**
 
 You would do the following instead:
 
