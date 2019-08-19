@@ -1,7 +1,7 @@
 ---
 title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
-ms.date: "05/06/2019"
+ms.date: "08/19/2019"
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
 ---
 # Creating the Project (ATL Tutorial, Part 1)
@@ -13,7 +13,7 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 
 > [!NOTE]
 > This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.
-> To compile, open stdafx.h and replace:
+> To compile, open *stdafx.h* (pch.h in Visual Studio 2019) and replace:
 > ```
 > #ifndef WINVER
 > #define WINVER 0x0400
@@ -43,6 +43,8 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 
 Visual Studio will create the project by generating several files. You can view these files in **Solution Explorer** by expanding the `Polygon` object. The files are listed below.
 
+::: moniker range="<=vs-2017"
+
 |File|Description|
 |----------|-----------------|
 |Polygon.cpp|Contains the implementation of `DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`, and `DllUnregisterServer`. Also contains the object map, which is a list of the ATL objects in your project. This is initially blank.|
@@ -52,8 +54,26 @@ Visual Studio will create the project by generating several files. You can view 
 |Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|
 |Resource.h|The header file for the resource file.|
 |Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|
-|stdafx.cpp|The file that will `#include` the ATL implementation files.|
-|stdafx.h|The file that will `#include` the ATL header files.|
+|stdafx.cpp|The file that will `#include` *stfafx.h**.|
+|stdafx.h|The file that will `#include` and precompile the ATL header files.|
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+|File|Description|
+|----------|-----------------|
+|Polygon.cpp|Contains the implementation of `DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`, and `DllUnregisterServer`. Also contains the object map, which is a list of the ATL objects in your project. This is initially blank.|
+|Polygon.def|This module-definition file provides the linker with information about the exports required by your DLL.|
+|Polygon.idl|The interface definition language file, which describes the interfaces specific to your objects.|
+|Polygon.rgs|This registry script contains information for registering your program's DLL.|
+|Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|
+|Resource.h|The header file for the resource file.|
+|Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|
+|pch.cpp|The file that will `#include` ^pch.h*.|
+|pch.h|The file that will `#include` and precompile the ATL header files.|
+
+::: moniker-end
 
 1. In **Solution Explorer**, right-click the `Polygon` project.
 

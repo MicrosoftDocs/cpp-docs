@@ -85,7 +85,7 @@ _AFX_SECURE_NO_WARNINGS
 This code sample would cause a compiler warning if _AFX_SECURE_NO_WARNINGS were not defined.
 
 ```cpp
-// define this before including any afx files in stdafx.h
+// define this before including any afx files in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier)
 #define _AFX_SECURE_NO_WARNINGS
 ```
 ```cpp

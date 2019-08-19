@@ -1,6 +1,6 @@
 ---
 title: "Using IDispEventImpl (ATL)"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 helpviewer_keywords: ["IDispEventImpl class, using"]
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
 ---
@@ -40,7 +40,7 @@ methods:
 };
 ```
 
-The example uses `#import` to generate the required header files from Word's type library. If you want to use this example with other versions of Word, you must specify the correct mso dll file. For example, Office 2000 provides mso9.dll and OfficeXP provides mso.dll. This code is simplified from stdafx.h:
+The example uses `#import` to generate the required header files from Word's type library. If you want to use this example with other versions of Word, you must specify the correct mso dll file. For example, Office 2000 provides mso9.dll and OfficeXP provides mso.dll. This code is simplified from *stdafx.h* (pch.h in Visual Studio 2019 and later):
 
 [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventimpl_1.h)]
 

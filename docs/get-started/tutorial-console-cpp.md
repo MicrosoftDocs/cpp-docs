@@ -2,7 +2,7 @@
 title: Create a C++ console app project
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "mvc"
-ms.date: 05/28/2019
+ms.date: 08/19/2019
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -480,7 +480,7 @@ Now let's turn the code in this template into a calculator app.
    > Understanding the code:
    >
    > - The `#include` statements allow you to reference code located in other files. Sometimes, you may see a filename surrounded by angle brackets (**\<\>**); other times, it's surrounded by quotes (**" "**). In general, angle brackets are used when referencing the C++ Standard Library, while quotes are used for other files.
-   > - The `#include "pch.h"` (or in older versions of Visual Studio, `#include "stdafx.h"`) line references something known as a precompiled header. These are often used by professional programmers to improve compilation times, but they are beyond the scope of this tutorial.
+   > - The `#include "pch.h"` (or Visual Studio 2017 and earlier, `#include "stdafx.h"`) line references something known as a precompiled header. These are often used by professional programmers to improve compilation times, but they are beyond the scope of this tutorial.
    > - The `using namespace std;` line tells the compiler to expect stuff from the C++ Standard Library to be used in this file. Without this line, each keyword from the library would have to be preceded with a `std::`, to denote its scope. For instance, without that line, each reference to `cout` would have to be written as `std::cout`. The `using` statement is added to make the code look more clean.
    > - The `cout` keyword is used to print to standard output in C++. The **\<\<** operator tells the compiler to send whatever is to the right of it to the standard output.
    > - The **endl** keyword is like the Enter key; it ends the line and moves the cursor to the next line. It is a better practice to put a `\n` inside the string (contained by "") to do the same thing, as `endl` always flushes the buffer and can hurt the performance of the program, but since this is a very small app, `endl` is used instead for better readability.

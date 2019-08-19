@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Removing Work from a User-Interface Thread"
-ms.date: "04/25/2019"
+ms.date: "08/19/2019"
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
 ---
@@ -62,7 +62,7 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
 #### To implement the serial version of the Mandelbrot application
 
-1. In stdafx.h, add the following `#include` directive:
+1. In *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), add the following `#include` directive:
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
@@ -116,7 +116,7 @@ This example also uses a [concurrency::unbounded_buffer](reference/unbounded-buf
 
 #### To remove the drawing work from the UI thread
 
-1. In stdafx.h, add the following `#include` directives:
+1. In *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), add the following `#include` directives:
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 

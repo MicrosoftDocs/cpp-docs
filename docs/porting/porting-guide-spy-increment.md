@@ -61,7 +61,7 @@ Windows XP is no longer supported by Microsoft, so even though targeting it is a
 
 To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/win32/WinProg/using-the-windows-headers).
 
-The stdafx.h file contained some of these macro definitions.
+The *stdafx.h* file contained some of these macro definitions.
 
 ```cpp
 #define WINVER       0x0500  // these defines are set so that we get the
@@ -496,7 +496,7 @@ The problem occurs when a variable was first declared **extern**, then later dec
 
 ##  <a name="porting_to_unicode"></a> Step 11. Porting from MBCS to Unicode
 
-Note that in the Windows world, when we say Unicode, we usually mean UTF-16. Other operating systems such as Linux use UTF-8, but Windows generally does not. The MBCS version of MFC was deprecated in Visual Studio 2013 and 2015, but it is no longer deprecated in Visual Studio 2017. If using Visual Studio 2013 or 2015, before taking the step to actually port MBCS code to UTF-16 Unicode, we might want to temporarily eliminate the warnings that MBCS is deprecated, in order to do other work or postpone the porting until a convenient time. The current code uses MBCS and to continue with that we need to install the ANSI/MBCS version of MFC. The rather large MFC library is not part of the default Visual Studio **Desktop development with C++** installation, so it must be selected from the optional components in the installer. See [MFC MBCS DLL Add-on](../mfc/mfc-mbcs-dll-add-on.md). Once you download this and restart Visual Studio, you can compile and link with the MBCS version of MFC, but to get rid of the warnings about MBCS if you are using Visual Studio 2013 or 2015, you should also add NO_WARN_MBCS_MFC_DEPRECATION to your list of predefined macros in the **Preprocessor** section of project properties, or at the beginning of your stdafx.h header file or other common header file.
+Note that in the Windows world, when we say Unicode, we usually mean UTF-16. Other operating systems such as Linux use UTF-8, but Windows generally does not. The MBCS version of MFC was deprecated in Visual Studio 2013 and 2015, but it is no longer deprecated in Visual Studio 2017. If using Visual Studio 2013 or 2015, before taking the step to actually port MBCS code to UTF-16 Unicode, we might want to temporarily eliminate the warnings that MBCS is deprecated, in order to do other work or postpone the porting until a convenient time. The current code uses MBCS and to continue with that we need to install the ANSI/MBCS version of MFC. The rather large MFC library is not part of the default Visual Studio **Desktop development with C++** installation, so it must be selected from the optional components in the installer. See [MFC MBCS DLL Add-on](../mfc/mfc-mbcs-dll-add-on.md). Once you download this and restart Visual Studio, you can compile and link with the MBCS version of MFC, but to get rid of the warnings about MBCS if you are using Visual Studio 2013 or 2015, you should also add NO_WARN_MBCS_MFC_DEPRECATION to your list of predefined macros in the **Preprocessor** section of project properties, or at the beginning of your *stdafx.h* header file or other common header file.
 
 We now have some linker errors.
 

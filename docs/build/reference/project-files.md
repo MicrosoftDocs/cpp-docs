@@ -1,6 +1,6 @@
 ---
 title: "Example Project File"
-ms.date: "10/09/2018"
+ms.date: "08/19/2019"
 helpviewer_keywords: [".vcxproj files", "C++ projects, project file format"]
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
 ---
@@ -11,6 +11,9 @@ A C++ project file in Visual Studio is an XML-based file that has the .vcxproj f
 ## Example
 
 The following sample .vcxproj file was produced by specifying a **Win32 Console Application** in the **New Project** dialog box. To process a project file use either the msbuild.exe tool at the command line, or the **Build** command in the IDE. (This sample cannot be processed because the required source and header files are not provided.) For more information about the XML elements in a project file, see [Project File Schema Reference](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
+>[!NOTE]
+> For projects in Visual Studio 2017 and earlier, change `pch.h` to `stdafx.h` and `pch.cpp` to `stdafx.cpp`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -94,12 +97,12 @@ The following sample .vcxproj file was produced by specifying a **Win32 Console 
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SomeProjName.cpp" />
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>

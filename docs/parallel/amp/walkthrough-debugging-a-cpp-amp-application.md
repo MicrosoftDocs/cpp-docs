@@ -68,7 +68,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 6. Clear the **Precompiled header** check box, and then choose the **Finish** button.
 
-7. In **Solution Explorer**, delete stdafx.h, targetver.h, and stdafx.cpp from the project.
+7. In **Solution Explorer**, delete stdafx.h, targetver.h, and *stdafx.cpp* from the project.
 
 ::: moniker-end
 

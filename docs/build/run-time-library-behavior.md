@@ -1,6 +1,6 @@
 ---
 title: "DLLs and Visual C++ run-time library behavior"
-ms.date: "05/06/2019"
+ms.date: "08/19/2019"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
 helpviewer_keywords: ["DLLs [C++], entry point function", "process detach [C++]", "process attach [C++]", "DLLs [C++], run-time library behavior", "DllMain function", "_CRT_INIT macro", "_DllMainCRTStartup method", "run-time [C++], DLL startup sequence", "DLLs [C++], startup sequence"]
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
@@ -108,7 +108,7 @@ Because MFC extension DLLs do not have a `CWinApp`-derived object (as do regular
 The wizard provides the following code for MFC extension DLLs. In the code, `PROJNAME` is a placeholder for the name of your project.
 
 ```cpp
-#include "stdafx.h"
+#include "pch.h" // For Visual Studio 2017 and earlier, use "stdafx.h"
 #include <afxdllx.h>
 
 #ifdef _DEBUG
@@ -157,7 +157,7 @@ Extension DLLs can take care of multithreading by handling the `DLL_THREAD_ATTAC
 Note that the header file Afxdllx.h contains special definitions for structures used in MFC extension DLLs, such as the definition for `AFX_EXTENSION_MODULE` and `CDynLinkLibrary`. You should include this header file in your MFC extension DLL.
 
 > [!NOTE]
->  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in Stdafx.h. These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.
+>  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier). These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.
 
 A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.
 

@@ -62,7 +62,7 @@ This section shows how to create a C++ console application that references the h
 
 ::: moniker-end
 
-1. In stdafx.h (or pch.h depending on your version of Visual Studio), add the following code.
+1. In *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), add the following code:
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 

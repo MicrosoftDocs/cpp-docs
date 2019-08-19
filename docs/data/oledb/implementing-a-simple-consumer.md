@@ -1,6 +1,6 @@
 ---
 title: "Implementing a Simple Consumer"
-ms.date: "05/09/2019"
+ms.date: "08/19/2019"
 helpviewer_keywords: ["OLE DB consumers, implementing"]
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
 ---
@@ -35,7 +35,7 @@ The following topics show how to edit the files created by the **MFC Application
     ```cpp
     // MyCons.cpp : Defines the entry point for the console application.
     //
-    #include "stdafx.h"
+    #include "pch.h" // *stdafx.h* in Visual Studio 2017 and earlier
     #include "Products.h"
     ...
     int main(int argc, char* argv[])

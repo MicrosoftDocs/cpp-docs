@@ -1,6 +1,6 @@
 ---
 title: "CImage Class"
-ms.date: "02/01/2018"
+ms.date: "08/19/2019"
 f1_keywords: ["CImage", "ATLIMAGE/ATL::CImage", "ATLIMAGE/ATL::CImage::CImage", "ATLIMAGE/ATL::CImage::AlphaBlend", "ATLIMAGE/ATL::CImage::Attach", "ATLIMAGE/ATL::CImage::BitBlt", "ATLIMAGE/ATL::CImage::Create", "ATLIMAGE/ATL::CImage::CreateEx", "ATLIMAGE/ATL::CImage::Destroy", "ATLIMAGE/ATL::CImage::Detach", "ATLIMAGE/ATL::CImage::Draw", "ATLIMAGE/ATL::CImage::GetBits", "ATLIMAGE/ATL::CImage::GetBPP", "ATLIMAGE/ATL::CImage::GetColorTable", "ATLIMAGE/ATL::CImage::GetDC", "ATLIMAGE/ATL::CImage::GetExporterFilterString", "ATLIMAGE/ATL::CImage::GetHeight", "ATLIMAGE/ATL::CImage::GetImporterFilterString", "ATLIMAGE/ATL::CImage::GetMaxColorTableEntries", "ATLIMAGE/ATL::CImage::GetPitch", "ATLIMAGE/ATL::CImage::GetPixel", "ATLIMAGE/ATL::CImage::GetPixelAddress", "ATLIMAGE/ATL::CImage::GetTransparentColor", "ATLIMAGE/ATL::CImage::GetWidth", "ATLIMAGE/ATL::CImage::IsDIBSection", "ATLIMAGE/ATL::CImage::IsIndexed", "ATLIMAGE/ATL::CImage::IsNull", "ATLIMAGE/ATL::CImage::IsTransparencySupported", "ATLIMAGE/ATL::CImage::Load", "ATLIMAGE/ATL::CImage::LoadFromResource", "ATLIMAGE/ATL::CImage::MaskBlt", "ATLIMAGE/ATL::CImage::PlgBlt", "ATLIMAGE/ATL::CImage::ReleaseDC", "ATLIMAGE/ATL::CImage::ReleaseGDIPlus", "ATLIMAGE/ATL::CImage::Save", "ATLIMAGE/ATL::CImage::SetColorTable", "ATLIMAGE/ATL::CImage::SetPixel", "ATLIMAGE/ATL::CImage::SetPixelIndexed", "ATLIMAGE/ATL::CImage::SetPixelRGB", "ATLIMAGE/ATL::CImage::SetTransparentColor", "ATLIMAGE/ATL::CImage::StretchBlt", "ATLIMAGE/ATL::CImage::TransparentBlt"]
 helpviewer_keywords: ["jpeg files", "bitmaps [C++], ATL and MFC support for", "images [C++], ATL and MFC support for", "gif files, ATL and MFC support", ".gif files, ATL and MFC support", "PNG files, ATL and MFC support", "CImage class", "transparent color"]
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
@@ -137,9 +137,9 @@ Through `CImage`, you have access to the actual bits of a DIB section. You can u
 You can use `CImage` from either MFC or ATL.
 
 > [!NOTE]
-> When you create a project using `CImage`, you must define `CString` before you include `atlimage.h`. If your project uses ATL without MFC, include `atlstr.h` before you include `atlimage.h`. If your project uses MFC (or if it is an ATL project with MFC support), include `afxstr.h` before you include `atlimage.h`.<br/>
+> When you create a project using `CImage`, you must define `CString` before you include *atlimage.h*. If your project uses ATL without MFC, include *atlstr.h* before you include *atlimage.h*. If your project uses MFC (or if it is an ATL project with MFC support), include *afxstr.h* before you include *atlimage.h*.<br/>
 > <br/>
-> Likewise, you must include `atlimage.h` before you include `atlimpl.cpp`. To accomplish this easily, include `atlimage.h` in your `stdafx.h`.
+> Likewise, you must include *atlimage.h* before you include `atlimpl.cpp`. To accomplish this easily, include *atlimage.h* in your *stdafx.h* (*pch.h* in Visual Studio 2019 and later).
 
 ## Requirements
 
