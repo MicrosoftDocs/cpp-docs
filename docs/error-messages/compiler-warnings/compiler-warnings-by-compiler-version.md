@@ -120,6 +120,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C4841 | `non-standard extension used: extension` |
 | C4842 | `the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases` |
 | C4869 | `'nodiscard' may only be applied to classes, enumerations, and functions with non-void return type` |
+| C4984 | `'if constexpr' is a C++17 language extension` |
 | C5033 | `'*storage-class*' is no longer a supported storage class` |
 | C5034 | `use of intrinsic 'intrinsic' causes function function to be compiled as guest code` |
 | C5035 | `use of feature 'feature' causes function function to be compiled as guest code` |
