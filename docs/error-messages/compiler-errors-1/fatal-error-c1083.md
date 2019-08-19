@@ -79,7 +79,7 @@ A C1083 error can also indicate that the wrong version of a file is included. Fo
 
 ## The precompiled headers are not yet precompiled
 
-When a project is configured to use precompiled headers, the relevant .pch files have to be created so that files that use the header contents can be compiled. For example, the *stdafx.cpp* file is automatically created in the project directory for new projects. Compile that file first to create the precompiled header files. In the typical build process design, this is done automatically. For more information, see [Creating Precompiled Header Files](../../build/creating-precompiled-header-files.md).
+When a project is configured to use precompiled headers, the relevant .pch files have to be created so that files that use the header contents can be compiled. For example, the *pch.cpp* file (*stdafx.cpp* in Visual Studio 2017 and earlier) is automatically created in the project directory for new projects. Compile that file first to create the precompiled header files. In the typical build process design, this is done automatically. For more information, see [Creating Precompiled Header Files](../../build/creating-precompiled-header-files.md).
 
 ## Additional causes
 

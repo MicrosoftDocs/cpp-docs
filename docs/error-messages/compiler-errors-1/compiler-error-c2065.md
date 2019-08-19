@@ -70,12 +70,12 @@ This error can occur if you put any preprocessor directives, such as #include, #
 This example fails to compile because `cout` and `endl` are defined in the \<iostream> header, which is ignored because it is included before the precompiled header file. To build this example, create all three files, then compile stdafx.cpp, then compile C2065_pch.cpp.
 
 ```cpp
-// *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier)
+// pch.h (stdafx.h in Visual Studio 2017 and earlier)
 #include <stdio.h>
 ```
 
 ```cpp
-// *pch.cpp* (stdafx.cpp in Visual Studio 2017 and earlier)
+// pch.cpp (stdafx.cpp in Visual Studio 2017 and earlier)
 // Compile by using: cl /EHsc /W4 /c /Ycstdafx.h stdafx.cpp
 #include "pch.h"
 ```

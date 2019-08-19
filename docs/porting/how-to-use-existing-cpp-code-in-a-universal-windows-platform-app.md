@@ -145,7 +145,7 @@ The following procedure applies to the case where you have a native DLL that exp
 
    **Solution Explorer** now identifies the project as a Universal Windows project.
 
-5. Make sure your precompiled header file name is correct. In the **Precompiled Headers** section, change **Precompiled Header File** from *pch.h* to stdafx.h. If you don't do this, you see the following error.
+5. Make sure your precompiled header file name is correct. In the **Precompiled Headers** section, change **Precompiled Header File** from *pch.h* to*stdafx.h*. If you don't do this, you see the following error.
 
    > error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
 
@@ -213,7 +213,7 @@ If you want to consume native APIs in a static library from a UWP app, and you h
 
 5. Select all the files to add from your original project, and choose **OK**. Repeat if necessary for subfolders.
 
-6. You might now have some duplicated code. If you have more than one precompiled header (say *stdafx.h* and pch.h), choose one to keep. Copy any required code, such as include statements, into the one you're keeping. Then, delete the other, and in the project properties, under **Precompiled Headers**, make sure that the name of the header file is correct.
+6. You might now have some duplicated code. If you have more than one precompiled header (say *stdafx.h* and*pch.h*), choose one to keep. Copy any required code, such as include statements, into the one you're keeping. Then, delete the other, and in the project properties, under **Precompiled Headers**, make sure that the name of the header file is correct.
 
    If you changed the file to use as the precompiled header, make sure that the precompiled header options are correct for each file. Select each .cpp file in turn, open its properties window, and make sure that all are set to **Use (/Yu)**, except for the desired precompiled header, which should be set to **Create (/Yc)**.
 

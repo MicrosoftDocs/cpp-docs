@@ -145,7 +145,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro, which is similar to DECLARE_REGISTRY_RESOURCE, to your files.
 
-You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your *stdafx.h* file (*pch.h* in Visual Studio 2019 and later):
+You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your *pch.h* file (*stdafx.h* in Visual Studio 2017 and earlier):
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 

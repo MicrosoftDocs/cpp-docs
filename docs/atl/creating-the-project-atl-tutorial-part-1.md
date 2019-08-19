@@ -13,7 +13,7 @@ This tutorial walks you step-by-step through a nonattributed ATL project that cr
 
 > [!NOTE]
 > This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.
-> To compile, open *stdafx.h* (*pch.h* in Visual Studio 2019) and replace:
+> To compile, open *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) and replace:
 > ```
 > #ifndef WINVER
 > #define WINVER 0x0400
@@ -70,7 +70,7 @@ Visual Studio will create the project by generating several files. You can view 
 |Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|
 |Resource.h|The header file for the resource file.|
 |Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|
-|pch.cpp|The file that will `#include` ^pch.h*.|
+|pch.cpp|The file that will `#include` *pch.h*.|
 |pch.h|The file that will `#include` and precompile the ATL header files.|
 
 ::: moniker-end
