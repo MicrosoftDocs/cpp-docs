@@ -38,7 +38,7 @@ If you are unsure whether you should use the `declspec(novtable)` modifier, you 
 #define _ATL_DISABLE_NO_VTABLE
 ```
 
-in *stdafx.h* (pch.h in Visual Studio 2019 and later), before all other ATL header files are included.
+in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), before all other ATL header files are included.
 
 ## See also
 

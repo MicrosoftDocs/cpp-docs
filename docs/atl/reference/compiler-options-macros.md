@@ -51,13 +51,13 @@ Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabl
 
 In projects converted from previous versions, these warnings are still disabled by the libraries headers.
 
-By adding the following line to the *stdafx.h* (pch.h in Visual Studio 2019 and later) file before including libraries headers, this behavior can be changed.
+By adding the following line to the *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) file before including libraries headers, this behavior can be changed.
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
 If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
 
-New projects have this `#define` set in *stdafx.h* (pch.h in Visual Studio 2019 and later) by default.
+New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) by default.
 
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED
 

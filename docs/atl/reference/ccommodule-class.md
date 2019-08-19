@@ -648,7 +648,7 @@ A standard HRESULT value.
 
 Similar to [UpdateRegistryFromResourceD](#updateregistryfromresourced) except `UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).
 
-`UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your *stdafx.h* (pch.h in Visual Studio 2019 and later).
+`UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier).
 
 > [!NOTE]
 >  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the *pMapEntries* parameter. This adds all the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.
