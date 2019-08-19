@@ -35,7 +35,7 @@ The following topics show how to edit the files created by the **MFC Application
     ```cpp
     // MyCons.cpp : Defines the entry point for the console application.
     //
-    #include "pch.h" // *stdafx.h* in Visual Studio 2017 and earlier
+    #include "pch.h" // "stdafx.h" in Visual Studio 2017 and earlier
     #include "Products.h"
     ...
     int main(int argc, char* argv[])
