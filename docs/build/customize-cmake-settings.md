@@ -17,7 +17,7 @@ Now you see the **Settings Editor** with the installed configurations on the lef
 
 ![CMake settings editor](media/cmake-settings-editor.png)
 
-Visual Studio provides two configurations by default: `x64-Debug` and `x86-Debug`. You can add additional configurations by clicking the green plus sign.The settings that you see in the editor might vary depending on which configuration is selected.
+Visual Studio provides one `x64-Debug` configuration by default. You can add additional configurations by clicking the green plus sign.The settings that you see in the editor might vary depending on which configuration is selected.
 
 The options that you choose in the editor are written to a file called CMakeSettings.json. This file provides command-line arguments and environment variables that are passed to CMake when you build the projects. Visual Studio never modifies CMakeLists.txt automatically; by using CMakeSettings.json you can customize the build through Visual Studio while leaving the CMake project files untouched so that others on your team can consume them with whatever tools they are using.
 
@@ -32,7 +32,7 @@ Corresponds to the **name** setting. This is the name that appears in the C++ co
 
 ### Configuration type
 
-Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo".
+Corresponds to the **configurationType** setting. Defines the build configuration type for the selected generator. Currently supported values are "Debug", "MinSizeRel", "Release", and "RelWithDebInfo". This maps to [CMAKE_BUILD_TYPE](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
 
 ### Toolset
 
@@ -40,11 +40,11 @@ Corresponds to the **inheritedEnvironments** setting. Defines the compiler envir
 
 ### CMake toolchain file
 
-Path to the CMake toolchain file. Will be passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>".
+Path to the [CMake toolchain file](https://cmake.org/cmake/help/latest/variable/CMAKE_TOOLCHAIN_FILE.html). Will be passed to CMake as "-DCMAKE_TOOLCHAIN_FILE = \<filepath>". Toolchain files specify locations of compilers and toolchain utilities, and other target platform and compiler related information. By default, Visual Studio will try and use the [vcpkg toolchain file](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md#cmake) if this setting is unspecified. 
 
 ### Build root
 
-Corresponds to **buildRoot**. Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created.
+Corresponds to **buildRoot**. Maps to [CMAKE_BINARY_DIR](https://cmake.org/cmake/help/v3.15/variable/CMAKE_BINARY_DIR.html) and specifies where the CMake cache will be created. The specified folder will be created if it does not exist.
 
 ## Command arguments
 
@@ -52,7 +52,7 @@ The following settings are available under the **Command arguments** heading:
 
 ### CMake command arguments
 
-Corresponds to **cmakeCommandArgs**. Specifies any additional switches you want to pass to CMake.exe.
+Corresponds to **cmakeCommandArgs**. Specifies any additional [command line options](https://cmake.org/cmake/help/latest/manual/cmake.1.html) passed to CMake.exe.
 
 ### Build command arguments
 
@@ -61,7 +61,7 @@ Corresponds to **buildCommandArgs**: specifies additional switches to pass to th
 
 ### CTest command arguments
 
-Corresponds to**ctestCommandArgs**: specifies additional switches to pass to CTest when running tests.
+Corresponds to **ctestCommandArgs**: specifies additional [command line options](https://cmake.org/cmake/help/v3.15/manual/ctest.1.html) to pass to CTest when running tests.
 
 ## General settings for remote builds
 
@@ -69,7 +69,7 @@ For configurations such as Linux that use remote builds, the following settings 
 
 ### rsync command arguments
 
-Provide any command arguments to be passed to rsync. 
+Additional command line options passed to [rsync](https://download.samba.org/pub/rsync/rsync.html), a fast and versatile file-copying tool. 
 
 ## CMake variables and cache
 
@@ -81,7 +81,7 @@ Corresponds to **variables**: contains a name-value pair of CMake variables that
 
 ### CMake generator
 
-Corresponds to **generator**: maps to the CMake **-G** switch and specifies the generator to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
+Corresponds to **generator**: maps to the CMake **-G** switch and specifies the [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to be used. This property can also be used as a macro, `${generator}`, when composing other property values. Visual Studio currently supports the following CMake generators:
 
   - "Ninja"
   - "Unix Makefiles"
@@ -95,19 +95,19 @@ Corresponds to **generator**: maps to the CMake **-G** switch and specifies the 
   - "Visual Studio 14 2015 Win64"
   - "Visual Studio 14 2015 ARM"
   
-  Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
+Because Ninja is designed for fast build speeds instead of flexibility and function, it is set as the default. However, some CMake projects may be unable to correctly build using Ninja. If this occurs, you can instruct CMake to generate a Visual Studio project instead.
 
 ### IntelliSense mode
 
-For accurate IntelliSense, set this to the appropriate value for your project.
+The IntelliSense mode used by the IntelliSense engine. If no mode is selected then Visual Studio will inherit from the specified toolset.  
 
 ### Install directory
 
-The directory in which CMake installs the targets that it builds.
+The directory in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html). 
 
 ### CMake executable
 
-The full path to the CMake executable, including file name and extension. For remote builds, specify the CMake location on the remote machine.
+The full path to the CMake program executable, including the file name and extension. This allows you to use a custom version of CMake with Visual Studio. For remote builds, specify the CMake location on the remote machine.
 
 For configurations such as Linux that use remote builds, the following settings are also available:
 
@@ -117,7 +117,7 @@ The directory on the remote machine that contains the root CMakeLists.txt file.
 
 ### Remote install root
 
-The directory on the remote machine in which CMake installs targets.
+The directory on the remote machine in which CMake installs targets. Maps to [CMAKE_INSTALL_PREFIX](https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html). 
 
 ### Remote copy sources
 
