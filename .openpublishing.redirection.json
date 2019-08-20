@@ -7291,6 +7291,36 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/mfc/an-example-of-the-comments.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/decrement-implementation-comment.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/decrement-constructors-comment.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/decrement-attributes-comment.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/decrement-operations-comment.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/decrement-overridables-comment.md",
+         "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/mfc/automatic-linking-of-mfc-library-version.md",
          "redirect_url": "/cpp/mfc/mfc-library-versions",
          "redirect_document_id": false
