@@ -1,6 +1,6 @@
 ---
 title: "Compiler Error C2065"
-ms.date: "09/01/2017"
+ms.date: "08/19/2019"
 f1_keywords: ["C2065"]
 helpviewer_keywords: ["C2065"]
 ms.assetid: 78093376-acb7-45f5-9323-5ed7e0aab1dc
@@ -70,14 +70,14 @@ This error can occur if you put any preprocessor directives, such as #include, #
 This example fails to compile because `cout` and `endl` are defined in the \<iostream> header, which is ignored because it is included before the precompiled header file. To build this example, create all three files, then compile stdafx.cpp, then compile C2065_pch.cpp.
 
 ```cpp
-// stdafx.h
+// pch.h (stdafx.h in Visual Studio 2017 and earlier)
 #include <stdio.h>
 ```
 
 ```cpp
-// stdafx.cpp
+// pch.cpp (stdafx.cpp in Visual Studio 2017 and earlier)
 // Compile by using: cl /EHsc /W4 /c /Ycstdafx.h stdafx.cpp
-#include <stdafx.h>
+#include "pch.h"
 ```
 
 ```cpp

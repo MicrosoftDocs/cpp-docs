@@ -1,6 +1,6 @@
 ---
 title: "Registry Macros"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 f1_keywords: ["atlcom/ATL::_ATL_STATIC_REGISTRY", "atlcom/ATL::DECLARE_LIBID", "atlcom/ATL::DECLARE_NO_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY_APPID_RESOURCEID", "atlcom/ATL::DECLARE_REGISTRY_RESOURCE", "atlcom/ATL::DECLARE_REGISTRY_RESOURCEID"]
 helpviewer_keywords: ["registry, ATL macros"]
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
@@ -145,7 +145,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) macro, which is similar to DECLARE_REGISTRY_RESOURCE, to your files.
 
-You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your stdafx.h file:
+You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your *pch.h* file (*stdafx.h* in Visual Studio 2017 and earlier):
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
@@ -170,7 +170,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 
 When you create an object or control using the ATL Project Wizard, the wizard will automatically implement script-based registry support and add the DECLARE_REGISTRY_RESOURCEID macro to your files.
 
-You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your stdafx.h file:
+You can statically link with the ATL Registry Component (Registrar) for optimized registry access. To statically link to the Registrar code, add the following line to your *stdafx.h* file (*pch.h* in Visual Studio 2019 and later):
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 

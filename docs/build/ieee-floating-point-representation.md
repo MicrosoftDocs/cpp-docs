@@ -62,7 +62,7 @@ It's possible to represent numbers of smaller magnitude than the smallest normal
 
 ### NaN - Not a Number
 
-It's possible to represent values that are not a real number, such as 0 / 0, in the IEEE floating-point format. A value of this kind is called a *NaN*. A NaN is represented by an exponent of all ones and a non-zero significand. There are two kinds of NaNs, *quiet* NaNs, or QNaNs, and *signalling* NaNs, or SNaNs. Quiet NaNs have a leading one in the significand, and are generally propagated through an expression. They represent an indeterminate value, such as the result of dividing by infinity, or multiplying an infinity by zero. Signalling NaNs have a leading zero in the significand. These are used for operations that are not valid, to signal a floating-point hardware exception.
+It's possible to represent values that are not a real number, such as 0 / 0, in the IEEE floating-point format. A value of this kind is called a *NaN*. A NaN is represented by an exponent of all ones and a non-zero significand. There are two kinds of NaNs, *quiet* NaNs, or QNaNs, and *signaling* NaNs, or SNaNs. Quiet NaNs have a leading one in the significand, and are generally propagated through an expression. They represent an indeterminate value, such as the result of dividing by infinity, or multiplying an infinity by zero. signaling NaNs have a leading zero in the significand. These are used for operations that are not valid, to signal a floating-point hardware exception.
 
 ## Examples
 

@@ -342,7 +342,7 @@ The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) 
 
 <a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior. We are overhauling the preprocessor, and will experimentally ship those changes under the [/permissive-](../build/reference/permissive-standards-conformance.md) mode soon.
 
-<a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, C4984.
+<a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
 <a name="note_E"></a>__E__ This is a completely new implementation, incompatible with the
 previous `std::experimental` version, necessitated by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new `std::filesystem` and the previous `std::experimental::filesystem`, and including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be REMOVED in the next ABI-breaking release of the libraries.

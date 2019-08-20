@@ -110,7 +110,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4973|'*symbol*': marked as deprecated|
 |Compiler warning (level 1) C4974|'*symbol*': marked as deprecated|
 |Compiler warning (level 3) C4981|Warbird: function '*function*' marked as __forceinline not inlined because it contains exception semantics|
-|Compiler warning (level 3) C4985|symbol name': attributes not present on previous declaration.|
+|[Compiler warning C4984](compiler-warning-c4984.md)|'if constexpr' is a C++17 language extension|
+|Compiler warning (level 3) C4985|'*symbol_name*': attributes not present on previous declaration.|
 |[Compiler warning C4986](compiler-warning-c4986.md)|'*declaration*': exception specification does not match previous declaration|
 |Compiler warning (level 4) C4987|nonstandard extension used: 'throw (...)'|
 |Compiler warning (level 4) C4988|'*variable*': variable declared outside class/function scope|

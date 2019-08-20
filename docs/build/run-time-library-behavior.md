@@ -1,6 +1,6 @@
 ---
 title: "DLLs and Visual C++ run-time library behavior"
-ms.date: "05/06/2019"
+ms.date: "08/19/2019"
 f1_keywords: ["_DllMainCRTStartup", "CRT_INIT"]
 helpviewer_keywords: ["DLLs [C++], entry point function", "process detach [C++]", "process attach [C++]", "DLLs [C++], run-time library behavior", "DllMain function", "_CRT_INIT macro", "_DllMainCRTStartup method", "run-time [C++], DLL startup sequence", "DLLs [C++], startup sequence"]
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
@@ -13,7 +13,7 @@ When you build a Dynamic-link Library (DLL) by using Visual Studio, by default, 
 
 In Windows, all DLLs can contain an optional entry-point function, usually called `DllMain`, that is called for both initialization and termination. This gives you an opportunity to allocate or release additional resources as needed. Windows calls the entry-point function in four situations: process attach, process detach, thread attach, and thread detach. When a DLL is loaded into a process address space, either when an application that uses it is loaded, or when the application requests the DLL at runtime, the operating system creates a separate copy of the DLL data. This is called *process attach*. *Thread attach* occurs when the process the DLL is loaded in creates a new thread. *Thread detach* occurs when the thread terminates, and *process detach* is when the DLL is no longer required and is released by an application. The operating system makes a separate call to the DLL entry point for each of these events, passing a *reason* argument for each event type. For example, the OS sends `DLL_PROCESS_ATTACH` as the *reason* argument to signal process attach.
 
-The VCRuntime library provides an entry-point function called `_DllMainCRTStartup` to handle default initialization and termination operations. On process attach, the `_DllMainCRTStartup` function sets up buffer security checks, initializes the CRT and other libraries, initializes run-time type information, initializes and calls constructors for static and non-local data, initializes thread-local storage, increments an internal static counter for each attach, and then calls a user- or library-supplied `DllMain`. On process detach, the function goes through these steps in reverse. It calls `DllMain`, decrements the internal counter, calls destructors, calls CRT termination functions and registered `atexit` functions, and notifies any other libraries of termination. When the attachment counter goes to zero, the function returns `FALSE` to indicate to Windows that the DLL can be unloaded. The `_DllMainCRTStartup` function is also called during thread attach and thread detach. In these cases, the VCRuntime code does no additional initialization or termination on its own, and just calls `DllMain` to pass the message along. If `DllMain` returns `FALSE` from process attach, signalling failure, `_DllMainCRTStartup` calls `DllMain` again and passes `DLL_PROCESS_DETACH` as the *reason* argument, then goes through the rest of the termination process.
+The VCRuntime library provides an entry-point function called `_DllMainCRTStartup` to handle default initialization and termination operations. On process attach, the `_DllMainCRTStartup` function sets up buffer security checks, initializes the CRT and other libraries, initializes run-time type information, initializes and calls constructors for static and non-local data, initializes thread-local storage, increments an internal static counter for each attach, and then calls a user- or library-supplied `DllMain`. On process detach, the function goes through these steps in reverse. It calls `DllMain`, decrements the internal counter, calls destructors, calls CRT termination functions and registered `atexit` functions, and notifies any other libraries of termination. When the attachment counter goes to zero, the function returns `FALSE` to indicate to Windows that the DLL can be unloaded. The `_DllMainCRTStartup` function is also called during thread attach and thread detach. In these cases, the VCRuntime code does no additional initialization or termination on its own, and just calls `DllMain` to pass the message along. If `DllMain` returns `FALSE` from process attach, signaling failure, `_DllMainCRTStartup` calls `DllMain` again and passes `DLL_PROCESS_DETACH` as the *reason* argument, then goes through the rest of the termination process.
 
 When building DLLs in Visual Studio, the default entry point  `_DllMainCRTStartup` supplied by VCRuntime is linked in automatically. You do not need to specify an entry-point function for your DLL by using the [/ENTRY (Entry point symbol)](reference/entry-entry-point-symbol.md) linker option.
 
@@ -108,7 +108,7 @@ Because MFC extension DLLs do not have a `CWinApp`-derived object (as do regular
 The wizard provides the following code for MFC extension DLLs. In the code, `PROJNAME` is a placeholder for the name of your project.
 
 ```cpp
-#include "stdafx.h"
+#include "pch.h" // For Visual Studio 2017 and earlier, use "stdafx.h"
 #include <afxdllx.h>
 
 #ifdef _DEBUG
@@ -157,7 +157,7 @@ Extension DLLs can take care of multithreading by handling the `DLL_THREAD_ATTAC
 Note that the header file Afxdllx.h contains special definitions for structures used in MFC extension DLLs, such as the definition for `AFX_EXTENSION_MODULE` and `CDynLinkLibrary`. You should include this header file in your MFC extension DLL.
 
 > [!NOTE]
->  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in Stdafx.h. These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.
+>  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier). These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.
 
 A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](/windows/win32/Dlls/using-thread-local-storage-in-a-dynamic-link-library) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.
 

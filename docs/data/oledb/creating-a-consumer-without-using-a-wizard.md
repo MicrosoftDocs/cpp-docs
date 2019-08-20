@@ -10,7 +10,7 @@ The following example assumes that you're adding OLE DB consumer support to an e
 
 To add OLE DB consumer support without using the **ATL OLE DB Consumer Wizard**:
 
-- In your pch.h file, append the following `#include` statements:
+- In your *pch.h* file, append the following `#include` statements:
 
     ```cpp
     #include <atlbase.h>
