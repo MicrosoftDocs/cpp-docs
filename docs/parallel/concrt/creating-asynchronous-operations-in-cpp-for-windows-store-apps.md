@@ -153,7 +153,7 @@ Update the `Grid` element in MainPage.xaml to include a `ProgressRing` element a
 
 [!code-xml[concrt-windowsstore-commonwords#1](../../parallel/concrt/codesnippet/xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_6.xaml)]
 
-Add the following `#include` statements to*pch.h*.
+Add the following `#include` statements to *pch.h*.
 
 [!code-cpp[concrt-windowsstore-commonwords#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_7.h)]
 

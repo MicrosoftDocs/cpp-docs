@@ -54,7 +54,7 @@ Visual Studio will create the project by generating several files. You can view 
 |Polygon.rc|The resource file, which initially contains the version information and a string containing the project name.|
 |Resource.h|The header file for the resource file.|
 |Polygonps.def|This module definition file provides the linker with information about the exports required by the proxy and stub code that support calls across apartments.|
-|stdafx.cpp|The file that will `#include` *stfafx.h**.|
+|stdafx.cpp|The file that will `#include` *stdafx.h*.|
 |stdafx.h|The file that will `#include` and precompile the ATL header files.|
 
 ::: moniker-end
