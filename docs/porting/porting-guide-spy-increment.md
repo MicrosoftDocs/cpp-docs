@@ -367,7 +367,7 @@ Heavy use of macros as in this code tends to make code harder to maintain. In th
 #define PARM(var, type, src)type var = (type)src
 ```
 
-Therefore the `lpszBuffer` variable gets declared twice in the same function. It's not that straightfoward to fix this as it would be if the code were not using macros (simply remove the second type declaration). As it is, we have the unfortunate choice of having to decide whether to rewrite the macro code as ordinary code (a tedious and possibly error-prone task) or disable the warning.
+Therefore the `lpszBuffer` variable gets declared twice in the same function. It's not that straightforward to fix this as it would be if the code were not using macros (simply remove the second type declaration). As it is, we have the unfortunate choice of having to decide whether to rewrite the macro code as ordinary code (a tedious and possibly error-prone task) or disable the warning.
 
 In this case, we opt to disable the warning. We can do that by adding a pragma as follows:
 
