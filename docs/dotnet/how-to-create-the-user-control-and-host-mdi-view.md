@@ -38,7 +38,7 @@ This procedure assumes that you created a Windows Forms Controls Library project
 
    Click **OK** to apply your changes.
 
-1. In stdafx.h, add the following line:
+1. In *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), add the following line:
 
     ```
     #using <System.Windows.Forms.dll>

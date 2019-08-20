@@ -38,7 +38,7 @@ To convert an application that supports a menu to an application that supports a
 
 1. In scribble.cpp, verify that `CScribbleApp::InitInstance` includes a call to [AfxOleInit](../mfc/reference/ole-initialization.md#afxoleinit).
 
-1. Add the following code to the stdafx.h file.
+1. Add the following code to the *pch.h* file (*stdafx.h* in Visual Studio 2017 and earlier):
 
     ```cpp
     #include <afxcontrolbars.h>
