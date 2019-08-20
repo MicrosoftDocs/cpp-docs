@@ -33,7 +33,7 @@ A symbol that enables errors in projects converted from previous versions of ATL
 
 ### Remarks
 
-Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabled so that they never showed up in user code. Specifically:
+Before Visual C++ .NET 2002, ATL disabled many warnings and left them disabled so that they never showed up in user code. Specifically:
 
 - C4127 conditional expression is constant
 
@@ -81,7 +81,7 @@ _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 ### Remarks
 
-When this is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means for example, that when _UNICODE is defined, if you attempt use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.
+When this is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means for example, that when _UNICODE is defined, if you attempt to use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.
 
 By using the _T macro on all constructor string arguments, you can define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS and avoid compile errors regardless of whether _UNICODE is defined.
 
@@ -107,7 +107,7 @@ Should be changed to:
 
 [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]
 
-Note that for map macros that add the '&' character, you should not add it again in your code.
+For map macros, add the ampersand '&' character. You shouldn't add the character again in your code.
 
 ##  <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED
 
@@ -171,7 +171,7 @@ If the vtable pointer is prevented from being initialized in the class's constru
 
 ##  <a name="atl_noinline"></a>  ATL_NOINLINE
 
-A symbol that indicates a function should not be inlined.
+A symbol that indicates a function shouldn't be inlined.
 
 ```
     ATL_NOINLINE inline
