@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h" // Use stdafx.h in Visual Studio 2017 and earlier
 #include <wrl\module.h>
 
 using namespace Microsoft::WRL;

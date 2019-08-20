@@ -1,7 +1,7 @@
 ---
 title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
-ms.date: "09/26/2018"
+ms.date: "08/19/2019"
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
 ---
 # Adding a Control (ATL Tutorial, Part 2)
@@ -84,7 +84,7 @@ As the wizard creates the control, several code changes and file additions occur
 
 The wizard also makes the following code changes:
 
-- Adds an `#include` statement to the stdafx.h and stdafx.cpp files to include the ATL files necessary for supporting controls.
+- Adds an `#include` statement to the precompiled header files to include the ATL files necessary for supporting controls.
 
 - Changes Polygon.idl to include details of the new control.
 

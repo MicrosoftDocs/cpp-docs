@@ -1,6 +1,6 @@
 ---
 title: "_itoa, _itow functions"
-ms.date: "03/21/2018"
+ms.date: "08/19/2019"
 apiname: ["itoa", "_itoa", "ltoa", "_ltoa", "ultoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
@@ -92,7 +92,7 @@ The **_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, and **_ui64toa** functions co
 
 Because of their potential for security issues, by default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **This function or variable may be unsafe. Consider using** *safe_function* **instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS.** We recommend you change your source code to use the *safe_function* suggested by the warning message. The more secure functions do not write more characters than the specified buffer size. For more information, see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
 
-To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, typically stdafx.h. To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
+To use these functions without the deprecation warning, define the **_CRT_SECURE_NO_WARNINGS** preprocessor macro before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** compiler option to the **cl** command. Otherwise, define the macro in your source files. If you use precompiled headers, define the macro at the top of the precompiled header include file, *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier). To define the macro in your source code, use a **#define** directive before you include any CRT header, as in this example:
 
 ```C
 #define _CRT_SECURE_NO_WARNINGS 1
@@ -103,7 +103,7 @@ In C++, these functions have template overloads that invoke their safer counterp
 
 The Posix names **itoa**, **ltoa**, and **ultoa** exist as aliases for the **_itoa**, **_ltoa**, and **_ultoa** functions. The Posix names are deprecated because they do not follow the implementation-specific function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *new_name*. We recommend you change your source code to use the safer versions of these functions, **_itoa_s**, **_ltoa_s**, or **_ultoa_s**. For more information, see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
 
-For source code portability, you may prefer to retain the Posix names in your code. To use these functions without the deprecation warning, define both the **_CRT_NONSTDC_NO_WARNINGS** and **_CRT_SECURE_NO_WARNINGS** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** and **/D_CRT_NONSTDC_NO_WARNINGS** compiler options to the **cl** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file, typically stdafx.h. To define the macros in your source code, use **#define** directives before you include any CRT header, as in this example:
+For source code portability, you may prefer to retain the Posix names in your code. To use these functions without the deprecation warning, define both the **_CRT_NONSTDC_NO_WARNINGS** and **_CRT_SECURE_NO_WARNINGS** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** and **/D_CRT_NONSTDC_NO_WARNINGS** compiler options to the **cl** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file. To define the macros in your source code, use **#define** directives before you include any CRT header, as in this example:
 
 ```C
 #define _CRT_NONSTDC_NO_WARNINGS 1

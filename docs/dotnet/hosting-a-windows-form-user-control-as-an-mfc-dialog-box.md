@@ -32,7 +32,7 @@ For a sample application that shows Windows Forms used with MFC, see [MFC and Wi
 
    In **Solution Explorer**, right-click the **MFC03** project node and choose **Add**, **References**. In the **Property Page**, click **Add New Reference**, select WindowsControlLibrary1 (under the **Projects** tab), and click **OK**. This adds a reference in the form of a [/FU](../build/reference/fu-name-forced-hash-using-file.md) compiler option so that the program will compile; it also copies WindowsControlLibrary1.dll into the `MFC03` project directory so that the program will run.
 
-1. Add `#include <afxwinforms.h>` to stdafx.h, at the end of the existing `#include` statements.
+1. Add `#include <afxwinforms.h>` to *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), at the end of the existing `#include` statements.
 
 1. Add a new class that subclasses `CDialog`.
 

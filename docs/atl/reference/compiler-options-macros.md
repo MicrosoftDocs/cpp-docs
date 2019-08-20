@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Macros"
-ms.date: "05/06/2019"
+ms.date: "08/19/2019"
 f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
 helpviewer_keywords: ["compiler options, macros"]
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
@@ -33,7 +33,7 @@ A symbol that enables errors in projects converted from previous versions of ATL
 
 ### Remarks
 
-Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabled so that they never showed up in user code. Specifically:
+Before Visual C++ .NET 2002, ATL disabled many warnings and left them disabled so that they never showed up in user code. Specifically:
 
 - C4127 conditional expression is constant
 
@@ -51,13 +51,13 @@ Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabl
 
 In projects converted from previous versions, these warnings are still disabled by the libraries headers.
 
-By adding the following line to the stdafx.h file before including libraries headers, this behavior can be changed.
+By adding the following line to the *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) file before including libraries headers, this behavior can be changed.
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
 If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
 
-New projects have this `#define` set in stdafx.h by default.
+New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) by default.
 
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED
 
@@ -81,7 +81,7 @@ _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 ### Remarks
 
-When this is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means for example, that when _UNICODE is defined, if you attempt use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.
+When this constructor is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means, for example, that when _UNICODE is defined, if you attempt to use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.
 
 By using the _T macro on all constructor string arguments, you can define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS and avoid compile errors regardless of whether _UNICODE is defined.
 
@@ -99,7 +99,7 @@ The ATL and MFC libraries have been changed to match the Microsoft C++ compiler'
 
 When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.
 
-However, the non-standard form has been deprecated, so you need to move existing code to C++ standard compliant syntax. For example, the following:
+However, the non-standard form has been deprecated. You need to move existing code to C++ standard compliant syntax. For example, the following code:
 
 [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]
 
@@ -107,7 +107,7 @@ Should be changed to:
 
 [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]
 
-Note that for map macros that add the '&' character, you should not add it again in your code.
+For map macros, add the ampersand '&' character. You shouldn't add the character again in your code.
 
 ##  <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED
 
@@ -171,7 +171,7 @@ If the vtable pointer is prevented from being initialized in the class's constru
 
 ##  <a name="atl_noinline"></a>  ATL_NOINLINE
 
-A symbol that indicates a function should not be inlined.
+A symbol that indicates a function shouldn't be inlined.
 
 ```
     ATL_NOINLINE inline
