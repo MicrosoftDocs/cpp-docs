@@ -256,7 +256,7 @@ To modify a project's build settings so that a header file containing **UUID** d
 
 To add the **UUID** definitions from the MkTypLib-generated header file to your project:
 
-1. Include the MkTypLib-generated header file in your standard includes header file, STDAFX.H.
+1. Include the MkTypLib-generated header file in your standard includes header file, *stdafx.h*.
 
 2. Create a new file, INITIIDS.CPP, and add it to your project. In this file, include your MkTypLib-generated header file after including OLE2.H and INITGUID.H:
 

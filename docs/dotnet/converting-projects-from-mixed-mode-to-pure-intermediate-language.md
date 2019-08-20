@@ -1,6 +1,6 @@
 ---
 title: "Converting Projects from Mixed Mode to Pure Intermediate Language"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 helpviewer_keywords: ["intermediate language, mixed-mode applications", "mixed-mode applications", "mixed-mode applications, intermediate language", "projects [C++], converting to intermediate language"]
 ms.assetid: 855f9e3c-4f09-4bfe-8eab-a45f68292be9
 ---
@@ -28,7 +28,7 @@ If you are using an earlier version of the Microsoft C++ compiler toolset that s
       > [!NOTE]
       > You do not have to set this property for Windows Forms applications because the **SubSystem** field is set to **Windows (/SUBSYSTEM:WINDOWS)** by default.
 
-   5. In stdafx.h, comment out all the `#include` statements. For example, in console applications:
+   5. In *stdafx.h*, comment out all the `#include` statements. For example, in console applications:
 
       ```cpp
       // #include <iostream>
@@ -52,7 +52,7 @@ If you are using an earlier version of the Microsoft C++ compiler toolset that s
       // #include <windows.h>
       ```
 
-2. Add the following code to stdafx.h:
+2. Add the following code to *stdafx.h*:
 
    ```cpp
    #ifndef __FLTUSED__

@@ -112,7 +112,7 @@ The following section describes each major elements and some of the metadata tha
       </ItemDefinitionGroup>
       ```
 
-      If this value were set in the property page for a specific file, such as stdafx.cpp, then the property value would be written under the stdafx.cpp item in the project file as shown below. Notice how the configuration condition is directly attached to the metadata itself.
+      If this value were set in the property page for a specific file, such as stdafx.cpp, then the property value would be written under the *stdafx.cpp* item in the project file as shown below. Notice how the configuration condition is directly attached to the metadata itself.
 
       ```xml
       <ItemGroup>

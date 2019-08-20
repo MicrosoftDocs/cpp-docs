@@ -1,6 +1,6 @@
 ---
 title: "Specifying Compiler Optimization for an ATL Project"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]
 helpviewer_keywords: ["ATL_DISABLE_NO_VTABLE macro", "ATL projects, compiler optimization", "ATL_NO_VTABLE macro"]
 ms.assetid: 7f379318-66d5-43dd-a53d-530758d3a228
@@ -38,7 +38,7 @@ If you are unsure whether you should use the `declspec(novtable)` modifier, you 
 #define _ATL_DISABLE_NO_VTABLE
 ```
 
-in stdafx.h, before all other ATL header files are included.
+in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier), before all other ATL header files are included.
 
 ## See also
 

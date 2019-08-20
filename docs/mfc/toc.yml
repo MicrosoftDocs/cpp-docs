@@ -11,22 +11,7 @@
         - name: General MFC topics
           href: general-mfc-topics.md
         - name: Using the MFC source files
-          expanded: false
-          items: 
-            - name: Using the MFC source files
-              href: using-the-mfc-source-files.md
-            - name: An example of the comments
-              href: an-example-of-the-comments.md
-            - name: -- Implementation comment
-              href: decrement-implementation-comment.md
-            - name: -- Constructors comment
-              href: decrement-constructors-comment.md
-            - name: -- Attributes comment
-              href: decrement-attributes-comment.md
-            - name: -- Operations comment
-              href: decrement-operations-comment.md
-            - name: -- Overridables comment
-              href: decrement-overridables-comment.md
+          href: using-the-mfc-source-files.md
         - name: MFC library versions
           expanded: false
           items: 

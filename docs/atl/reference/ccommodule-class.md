@@ -1,6 +1,6 @@
 ---
 title: "CComModule Class"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 f1_keywords: ["CComModule", "ATLBASE/ATL::CComModule", "ATLBASE/ATL::CComModule::GetClassObject", "ATLBASE/ATL::CComModule::GetModuleInstance", "ATLBASE/ATL::CComModule::GetResourceInstance", "ATLBASE/ATL::CComModule::GetTypeLibInstance", "ATLBASE/ATL::CComModule::Init", "ATLBASE/ATL::CComModule::RegisterClassHelper", "ATLBASE/ATL::CComModule::RegisterClassObjects", "ATLBASE/ATL::CComModule::RegisterServer", "ATLBASE/ATL::CComModule::RegisterTypeLib", "ATLBASE/ATL::CComModule::RevokeClassObjects", "ATLBASE/ATL::CComModule::Term", "ATLBASE/ATL::CComModule::UnregisterClassHelper", "ATLBASE/ATL::CComModule::UnregisterServer", "ATLBASE/ATL::CComModule::UpdateRegistryClass", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceD", "ATLBASE/ATL::CComModule::UpdateRegistryFromResourceS", "ATLBASE/ATL::CComModule::m_csObjMap", "ATLBASE/ATL::CComModule::m_csTypeInfoHolder", "ATLBASE/ATL::CComModule::m_csWindowCreate", "ATLBASE/ATL::CComModule::m_hInst", "ATLBASE/ATL::CComModule::m_hInstResource", "ATLBASE/ATL::CComModule::m_hInstTypeLib", "ATLBASE/ATL::CComModule::m_pObjMap"]
 helpviewer_keywords: ["CComModule class", "DLL modules [C++], ATL"]
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
@@ -648,7 +648,7 @@ A standard HRESULT value.
 
 Similar to [UpdateRegistryFromResourceD](#updateregistryfromresourced) except `UpdateRegistryFromResourceS` creates a static link to the ATL Registry Component (Registrar).
 
-`UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your stdafx.h.
+`UpdateRegistryFromResourceS` will be invoked automatically when your object map is processed, provided you add `#define _ATL_STATIC_REGISTRY` to your *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier).
 
 > [!NOTE]
 >  To substitute replacement values at run time, do not specify the [DECLARE_REGISTRY_RESOURCE](registry-macros.md#declare_registry_resource) or [DECLARE_REGISTRY_RESOURCEID](registry-macros.md#declare_registry_resourceid) macro. Instead, create an array of `_ATL_REGMAP_ENTRIES` structures, where each entry contains a variable placeholder paired with a value to replace the placeholder at run time. Then call `UpdateRegistryFromResourceS`, passing the array for the *pMapEntries* parameter. This adds all the replacement values in the `_ATL_REGMAP_ENTRIES` structures to the Registrar's replacement map.

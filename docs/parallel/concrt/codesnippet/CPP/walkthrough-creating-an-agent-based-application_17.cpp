@@ -1,7 +1,7 @@
 // BasicAgent.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+#include "pch.h" // Use stdafx.h in Visual Studio 2017 and earlier
 #include "file_reader.h"
 
 using namespace concurrency;

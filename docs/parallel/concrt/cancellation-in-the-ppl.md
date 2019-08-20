@@ -19,7 +19,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 - When you use cancellation tokens, use the [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) method to initiate cancellation and the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function to respond to cancellation. Use the [concurrency::cancellation_token::is_canceled](reference/cancellation-token-class.md#is_canceled) method to check whether any other task has requested cancellation.
 
-- Cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.
+- Cancellation does not occur immediately. Although new work is not started if a task or task group is canceled, active work must check for and respond to cancellation.
 
 - A value-based continuation inherits the cancellation token of its antecedent task. A task-based continuation never inherits the token of its antecedent task.
 
@@ -57,7 +57,7 @@ You can also use the [concurrency::task_group](reference/task-group-class.md) cl
 
 ##  <a name="tasks"></a> Canceling Parallel Tasks
 
-There are multiple ways to cancel parallel work. The preferred way is to use a cancellation token. Task groups also support the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) method and the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) method. The final way is to throw an exception in the body of a task work function. No matter which method you choose, understand that cancellation does not occur immediately. Although new work is not started if a task or task group is cancelled, active work must check for and respond to cancellation.
+There are multiple ways to cancel parallel work. The preferred way is to use a cancellation token. Task groups also support the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) method and the [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) method. The final way is to throw an exception in the body of a task work function. No matter which method you choose, understand that cancellation does not occur immediately. Although new work is not started if a task or task group is canceled, active work must check for and respond to cancellation.
 
 For more examples that cancel parallel tasks, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [How to: Use Cancellation to Break from a Parallel Loop](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), and [How to: Use Exception Handling to Break from a Parallel Loop](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
@@ -106,7 +106,7 @@ The document [Task Parallelism](../../parallel/concrt/task-parallelism-concurren
 
 - A task-based continuation never inherits the cancellation token of the antecedent task. The only way to make a task-based continuation cancelable is to explicitly pass a cancellation token.
 
-These behaviors are not affected by a faulted task (that is, one that throws an exception). In this case, a value-based continuation is cancelled; a task-based continuation is not cancelled.
+These behaviors are not affected by a faulted task (that is, one that throws an exception). In this case, a value-based continuation is canceled; a task-based continuation is not canceled.
 
 > [!CAUTION]
 > A task that is created in another task (in other words, a nested task) does not inherit the cancellation token of the parent task. Only a value-based continuation inherits the cancellation token of its antecedent task.
@@ -122,9 +122,9 @@ You can also provide a cancellation token to the constructor of a `task_group` o
 
 The [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.
 
-When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is cancelled or when one of the participant tasks ends in a canceled state or throws an exception.
+When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is canceled or when one of the participant tasks ends in a canceled state or throws an exception.
 
-The `when_all` function inherits the cancellation token from each task that composes the overall operation when you do not provide a cancellation token to it. The task that is returned from `when_all` is canceled when any of these tokens are cancelled and at least one of the participant tasks has not yet started or is running. A similar behavior occurs when one of the tasks throws an exception - the task that is returned from `when_all` is immediately canceled with that exception.
+The `when_all` function inherits the cancellation token from each task that composes the overall operation when you do not provide a cancellation token to it. The task that is returned from `when_all` is canceled when any of these tokens are canceled and at least one of the participant tasks has not yet started or is running. A similar behavior occurs when one of the tasks throws an exception - the task that is returned from `when_all` is immediately canceled with that exception.
 
 The runtime chooses the cancellation token for the task that is returned from `when_any` function when that task completes. If none of the participant tasks finish in a completed state and one or more of the tasks throws an exception, one of the tasks that threw is chosen to complete the `when_any` and its token is chosen as the token for the final task. If more than one task finishes in the completed state, the task that is returned from `when_any` task ends in a completed state. The runtime tries to pick a completed task whose token is not canceled at the time of completion so that the task that is returned from `when_any` is not immediately canceled even though other executing tasks might complete at a later point.
 
