@@ -26,7 +26,7 @@ To create a project, first choose a project-type template. For each project type
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter *Game* as the name for the project.
 
