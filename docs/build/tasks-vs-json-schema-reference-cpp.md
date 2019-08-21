@@ -1,12 +1,12 @@
 ---
 title: "tasks.vs.json schema reference (C++)"
-ms.date: "08/09/2019"
+ms.date: "08/20/2019"
 helpviewer_keywords: ["tasks.vs.json file [C++]"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # tasks.vs.json schema reference (C++)
 
-To tell Visual Studio how to build your source code in an an Open Folder project, add a *tasks.vs.json* file. You can define any arbitrary task here and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
+To tell Visual Studio how to build your source code in an Open Folder project, add a *tasks.vs.json* file. You can define any arbitrary task here and then invoke it from the **Solution Explorer** context menu. CMake projects do not use this file because all the build commands are specified in *CMakeLists.txt*. For build systems other than CMake, *tasks.vs.json* is where you can specify build commands and invoke build scripts. For general information about using *tasks.vs.json*, see [Customize build and debug tasks for "Open Folder" development](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
 A task has a `type` property which may have one of four values: `default`, `launch`, `remote`, or `msbuild`. Most tasks should use `launch` unless a remote connection is required.
 
@@ -17,7 +17,6 @@ The default properties are available on all types of tasks:
 ||||
 |-|-|-|
 |**Property**|**Type**|**Description**|
-|`taskName`|string| Specifies the task label used in the user interface (Deprecated: Use `taskLabel` instead).|
 |`taskLabel`|string| (Required.) Specifies the task label used in the user interface.|
 |`appliesTo`|string| (Required.) Specifies which files the command can be performed on. The use of wildcards is supported, for example: "*", "*.cpp", "/*.txt"|
 |`contextType`|string| Allowed values: "custom", "build", "clean", "rebuild". Determines where in the context menu the task will appear. Defaults to "custom".|
@@ -38,7 +37,7 @@ When the task type is `launch`, these properties are available:
 |`workingDirectory`|string| Specifies the directory in which the command will run. Defaults to the project's current working directory.|
 |`customLaunchCommand`|string| Specifies a global scope customization to apply before executing the command. Useful for setting environment variables like %PATH%.|
 |`customLaunchCommandArgs`|string| Specifies arguments to customLaunchCommand. (Requires `customLaunchCommand`.)|
-|`envVars`|object| (Deprecated.) Use env.NAME syntax to specify environment variables.|
+ `env`| Specifies a key-value list of custom environment variables. For example, "myEnv": "myVal"|
 |`commands`|array| Specifies a list of commands to invoke in order.|
 
 ### Example
@@ -104,7 +103,7 @@ The following task will appear in the context menu when you right-click on *main
   "version": "0.2.1",
   "tasks": [
     {
-      "taskName": "Build",
+      "taskLabel": "Build",
       "appliesTo": "main.cpp",
       "type": "remote",
       "contextType": "build",

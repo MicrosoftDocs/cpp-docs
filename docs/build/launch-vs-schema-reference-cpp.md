@@ -1,6 +1,6 @@
 ---
 title: "launch.vs.json schema reference (C++)"
-ms.date: "08/09/2019"
+ms.date: "08/20/2019"
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 
@@ -24,7 +24,7 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |noDebug|boolean|Specifies whether or not to debug the launched program. The default value for this parameter is false if not specified.|
 |stopOnEntry|boolean|Specifies whether or not to break a soon as the process is launched and the debugger attaches. The default value for this parameter is false.|
 |remoteMachine|string|Specifies the name of the remote machine where the program is launched.|
-|env|array|(Deprecated. Use the `env.NAME` syntax instead.) Specifies a key-value list of custom environment variables. env":{"myEnv":"myVal"}.|
+|env|array| Specifies a key-value list of custom environment variables. env:{"myEnv":"myVal"}.|
 |portName|string|Specifies the name of port when attaching to a running process.|
 |buildConfigurations|array| A key-value pair that specifies the name of the build mode to apply the configurations. For example `Debug` or `Release` and the configurations to use according to the selected build mode. See example below.
 
