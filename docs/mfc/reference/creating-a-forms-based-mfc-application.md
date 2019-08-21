@@ -1,4 +1,3 @@
-
 ---
 title: "Creating a Forms-Based MFC Application"
 ms.date: "08/19/2019"
