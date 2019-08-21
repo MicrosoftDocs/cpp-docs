@@ -6,10 +6,7 @@ ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
 ---
 # Creating the Project (ATL Tutorial, Part 1)
 
-This tutorial walks you step-by-step through a nonattributed ATL project that creates an ActiveX object that displays a polygon. The object includes options for allowing the user to change the number of sides making up the polygon, and code to refresh the display.
-
-> [!NOTE]
-> ATL and MFC are not generally supported in the Express editions of Visual Studio.
+This tutorial walks you step-by-step through a non-attributed ATL project that creates an ActiveX object that displays a polygon. The object includes options for allowing the user to change the number of sides making up the polygon, and code to refresh the display.
 
 > [!NOTE]
 > This tutorial creates the same source code as the Polygon sample. If you want to avoid entering the source code manually, you can download it from the [Polygon sample abstract](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon). You can then refer to the Polygon source code as you work through the tutorial, or use it to check for errors in your own project.

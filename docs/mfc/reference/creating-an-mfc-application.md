@@ -25,12 +25,14 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 ::: moniker range=">=vs-2019"
 
-### To create an MFC windowed or dialog-based application
+### To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Enter "MFC" into the search box and then choose **MFC App** from the result list.
 1. Modify the defaults as needed, then press **Create** to open the **MFC Application Wizard**.
 1. Modify the configuration values as needed, then press **Finish**.
+
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
 ![MFC Application Wizard](media/mfc-app-wizard.png)
 
@@ -49,12 +51,14 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 ::: moniker range="=vs-2017"
 
-### To create an MFC windowed or dialog-based application
+### To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add them.
 1. Choose **MFC Application** from the center pane.
 1. Modify the configuration values as needed, then press **Finish**.
+
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
 ![MFC Application Wizard](media/mfc-app-wizard.png)
 
@@ -74,12 +78,14 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 ::: moniker range="=vs-2015"
 
-### To create an MFC windowed or dialog-based application
+### To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Under the **Installed** templates, choose **Visual C++** > **MFC**.
 1. Choose **MFC Application** from the center pane.
 1. Click **Next** to start the **MFC Application Wizard**.
+
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
 ![MFC Application Wizard](media/mfc-app-wizard-2015.png)
 
@@ -101,4 +107,3 @@ Once your project is created, you can view the files created in **Solution Explo
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)
-

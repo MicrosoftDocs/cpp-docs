@@ -1,7 +1,7 @@
 
 ---
 title: "Creating a Forms-Based MFC Application"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.mfcforms.project"]
 helpviewer_keywords: ["applications [MFC], forms-based", "forms-based applications [MFC]"]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
@@ -20,22 +20,22 @@ SDI, MDI, and multiple top-level document applications are all forms based and u
 
 Any dialog-based application, by definition, is forms based. A dialog-based application does not use the document/view architecture, so you must manage the creation and access methods for your own additional forms.
 
-The base class for form-based applications is [CFormView](../../mfc/reference/cformview-class.md). If your application has database support, then you can also select any class that derives from `CFormView`. A form is any window derived from `CFormView` or from any class that inherits from `CFormView`.
+The base class for form-based applications is [CFormView](cformview-class.md). If your application has database support, then you can also select any class that derives from `CFormView`. A form is any window derived from `CFormView` or from any class that inherits from `CFormView`.
 
-Even if you use a base class such as [CView](../../mfc/reference/cview-class.md), you can later make your applications forms-based by [adding an MFC class](../../mfc/reference/adding-an-mfc-class.md) derived from `CFormView` and checking the **Generate DocTemplate resources** checkbox in the [MFC Class Wizard](../../mfc/reference/document-template-strings-mfc-add-class-wizard.md).
+Even if you use a base class such as [CView](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView` and checking the **Generate DocTemplate resources** checkbox in the [MFC Class Wizard](document-template-strings-mfc-add-class-wizard.md).
 
 Once you finish with the wizard, your project opens, and if you selected `CFormView` (or a class that inherits from `CFormView`) as your base class or if you created a dialog-based application, Visual C++ opens the dialog editor. At this point, you are ready to design your first form.
 
 ### To begin creating a forms-based MFC executable
 
-1. Follow the directions in [Creating an MFC Application](../../mfc/reference/creating-an-mfc-application.md).
+1. Follow the directions in [Creating an MFC Application](creating-an-mfc-application.md) for a forms-based MFC application.
 
-1. In the MFC Application Wizard [Application Type](../../mfc/reference/application-type-mfc-application-wizard.md) page, select the **Document/view architecture support** check box.
+1. In the MFC Application Wizard [Application Type](application-type-mfc-application-wizard.md) page, select the **Document/view architecture support** check box.
 
 1. Select **Single document**, **Multiple documents**, or **Multiple top-level documents**.
 
     > [!NOTE]
-    >  If you chose a SDI, MDI, or multiple top-level document interface application, by default, `CView` is set as the base class for your application's view in the [Generated Classes](../../mfc/reference/generated-classes-mfc-application-wizard.md) page of the wizard. To create a forms-based application, you must select `CFormView` as the base class for the application's view. Note that the wizard provides no printing support for a forms-based application.
+    >  If you chose a SDI, MDI, or multiple top-level document interface application, by default, `CView` is set as the base class for your application's view in the [Generated Classes](generated-classes-mfc-application-wizard.md) page of the wizard. To create a forms-based application, you must select `CFormView` as the base class for the application's view. Note that the wizard provides no printing support for a forms-based application.
 
 1. Set any other project options you want on the other pages of the wizard.
 
@@ -43,15 +43,15 @@ Once you finish with the wizard, your project opens, and if you selected `CFormV
 
 For more information, see:
 
-- [Derived View Classes](../../mfc/derived-view-classes-available-in-mfc.md)
+- [Derived View Classes](../derived-view-classes-available-in-mfc.md)
 
-- [Alternatives to the Document/View Architecture](../../mfc/alternatives-to-the-document-view-architecture.md)
+- [Alternatives to the Document/View Architecture](../alternatives-to-the-document-view-architecture.md)
 
-- [Application Design Choices](../../mfc/application-design-choices.md)
+- [Application Design Choices](../application-design-choices.md)
 
 ## See also
 
-[MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md)<br/>
-[Form Views](../../mfc/form-views-mfc.md)<br/>
-[Creating a File Explorer-Style MFC Application](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)<br/>
-[Creating a Web Browser-Style MFC Application](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
+[MFC Application Wizard](mfc-application-wizard.md)<br/>
+[Form Views](../form-views-mfc.md)<br/>
+[Creating a File Explorer-Style MFC Application](creating-a-file-explorer-style-mfc-application.md)<br/>
+[Creating a Web Browser-Style MFC Application](creating-a-web-browser-style-mfc-application.md)
