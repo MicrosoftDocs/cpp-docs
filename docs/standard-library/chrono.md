@@ -64,7 +64,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 For more information about ratio types that are used in the following typedefs, see [\<ratio>](../standard-library/ratio.md).
 
 |||
-|||
+|-|-|
 |`typedef duration<long long, nano> nanoseconds;`|Synonym for a `duration` type that has a tick period of 1 nanosecond.|
 |`typedef duration<long long, micro> microseconds;`|Synonym for a `duration` type that has a tick period of 1 microsecond.|
 |`typedef duration<long long, milli> milliseconds;`|Synonym for a `duration` type that has a tick period of 1 millisecond.|
