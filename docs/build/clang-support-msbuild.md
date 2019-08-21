@@ -1,6 +1,6 @@
 ---
 title: "Clang/LLVM support in Visual Studio Visual Studio projects"
-ms.date: "08/19/2019"
+ms.date: "08/20/2019"
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -62,6 +62,6 @@ After you have set up a Clang configuration, right-click again on the project no
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
-![Clang debugging](media/clang-debug-visualize.png)
+![Clang debugging](media/clang-debug-msbuild.png)
 
 ::: moniker-end
