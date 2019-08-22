@@ -32,18 +32,18 @@ The following table lists each *use-in-build* element:
 
 The following example can be added inside of the Project element of the myproject.vcxproj file created in [Walkthrough: Using MSBuild to Create a C++ Project](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *pre-build* event makes a copy of main.cpp; a *pre-link* event makes a copy of main.obj; and a *post-build* event makes a copy of myproject.exe. If the project is built using a release configuration, the build events are executed. If the project is built using a debug configuration, the build events are not executed.
 
-```
+``` xml
 <ItemDefinitionGroup>
   <PreBuildEvent>
     <Command>copy $(ProjectDir)main.cpp $(ProjectDir)copyOfMain.cpp</Command>
     <Message>Making a copy of main.cpp </Message>
   </PreBuildEvent>
   <PreLinkEvent>
-<Command>copy $(ProjectDir)$(Configuration)\main.obj $(ProjectDir)$(Configuration)\copyOfMain.obj</Command>
+    <Command>copy $(ProjectDir)$(Configuration)\main.obj $(ProjectDir)$(Configuration)\copyOfMain.obj</Command>
     <Message>Making a copy of main.obj</Message>
   </PreLinkEvent>
   <PostBuildEvent>
-<Command>copy $(ProjectDir)$(Configuration)\$(TargetFileName) $(ProjectDir)$(Configuration)\copyOfMyproject.exe</Command>
+    <Command>copy $(ProjectDir)$(Configuration)\$(TargetFileName) $(ProjectDir)$(Configuration)\copyOfMyproject.exe</Command>
     <Message>Making a copy of myproject.exe</Message>
   </PostBuildEvent>
 </ItemDefinitionGroup>
