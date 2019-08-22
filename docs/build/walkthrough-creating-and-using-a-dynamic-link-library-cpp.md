@@ -196,13 +196,9 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
 1. In **Solution Explorer**, right-click on the **Source Files** node and choose **Add** > **New Item**. Create a new .cpp file called *MathLibrary.cpp*, in the same way that you added a new header file in the previous step.
 
-::: moniker-end
-
 1. In the editor window, select the tab for **MathLibrary.cpp** if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
 
 1. In the editor, replace the contents of the MathLibrary.cpp file with the following code:
-
-::: moniker range=">=vs-2019"
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
@@ -266,6 +262,10 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
+
+1. In the editor window, select the tab for **MathLibrary.cpp** if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
+
+1. In the editor, replace the contents of the MathLibrary.cpp file with the following code:
 
    ```cpp
    // MathLibrary.cpp : Defines the exported functions for the DLL.
