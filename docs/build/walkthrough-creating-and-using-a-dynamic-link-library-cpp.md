@@ -467,7 +467,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
    `..\MathLibrary`
 
-When the DLL and client projects are in other folders, adjust the relative path to match. Or, use the ellipsis control to browse for the folder.
+   When the DLL and client projects are in other folders, adjust the relative path to match. Or, use the ellipsis control to browse for the folder.
 
    ![Add the header location to the Additional Include Directories property](media/mathclient-additional-include-directories.png "Add the header location to the Additional Include Directories property")
 
