@@ -1,6 +1,6 @@
 ---
 title: "Clang/LLVM support in Visual Studio Visual Studio projects"
-ms.date: "08/20/2019"
+ms.date: "08/25/2019"
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -35,11 +35,11 @@ If you are using a custom Clang installation, then you must manually edit the pr
 
 1. Right-click on the project node, and choose **Unload project**. 
 1. Save any changes you have made, and then right-click again on the project node and choose **Edit \<project name>.vcxproj**.
-1. In the `<ItemGroup Label="ProjectConfigurations">` node, add the following line to each `ProjectConfiguration`: `<LLVMInstallDir>PATH_TO_LLVM</LLVMInstallDir>` but substitute the actual path to LLVM.
+1. In the `<PropertyGroup Label="Global">` node, add `<LLVMInstallDir>PATH_TO_LLVM</LLVMInstallDir>` (substitute the actual path to LLVM). 
 
 ## Configure a Linux project to use Clang tools
 
-For Linux projects, Visual Studio uses the Clang GCC-compatible frontend. The project properties and nearly all compiler flags are identical.
+For Linux projects, Visual Studio uses the Clang GCC-compatible frontend. The project properties and nearly all compiler flags are identical
 
 To configure a Visual Studio Linux project to use Clang:
 
@@ -54,11 +54,11 @@ On Linux, Visual Studio by default uses the first Clang location that it encount
 
 1. Right-click on the project node, and choose **Unload project**. 
 1. Save any changes you have made, and then right-click again on the project node and choose **Edit \<project name>.vcxproj**.
-1. In the `<ItemGroup Label="ProjectConfigurations">` node, add the following line to each `ProjectConfiguration`: `<LLVMInstallDir>PATH_TO_LLVM</LLVMInstallDir>` but substitute the actual path to LLVM.
+1. In the `<PropertyGroup Label="Global">` node, add `<LLVMInstallDir>PATH_TO_LLVM</LLVMInstallDir>` (substitute the actual path to LLVM).
 
 ## Set additional properties, edit, build, and debug
 
-After you have set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you are using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are very similar to those for MSVC, although some compiler-dependent features such as Edit and Continue are not available for Clang configurations. To set a Clang compiler or linker option that is not available in the property pages, you can add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line**.
+After you have set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you are using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are very similar to those for MSVC, although some compiler-dependent features such as Edit and Continue are not available for Clang configurations. To set a Clang compiler or linker option that is not available in the property pages, you can add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line** > **Additional Options**.
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
