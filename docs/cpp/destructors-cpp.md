@@ -217,7 +217,7 @@ ps->~String();     // Virtual call
 
 The notation for explicit calls to destructors, shown in the preceding, can be used regardless of whether the type defines a destructor. This allows you to make such explicit calls without knowing if a destructor is defined for the type. An explicit call to a destructor where none is defined has no effect.
 
-## Robust Programming
+## Robust programming
 
 A class needs a destructor if it acquires a resource, and to manage the resource safely it probably has to implement a copy constructor and a copy assignment.
 
