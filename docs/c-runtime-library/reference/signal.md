@@ -104,7 +104,6 @@ The following example shows how to use **signal** to add some custom behavior to
 // Use signal to attach a signal handler to the abort routine
 #include <stdlib.h>
 #include <signal.h>
-#include <tchar.h>
 
 void SignalHandler(int signal)
 {
@@ -127,8 +126,13 @@ int main()
 ```
 
 ```Output
-This application has requested the Runtime to terminate it in an unusual way.
-Please contact the application's support team for more information.
+Debug Error!
+
+Program: c:\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+
+R6010
+
+- abort() has been called
 ```
 
 ## See also
