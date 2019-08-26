@@ -1,6 +1,6 @@
 ---
 title: "Destructors (C++)"
-ms.date: "05/06/2019"
+ms.date: "07/20/2019"
 helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
 ---
@@ -216,3 +216,27 @@ ps->~String();     // Virtual call
 ```
 
 The notation for explicit calls to destructors, shown in the preceding, can be used regardless of whether the type defines a destructor. This allows you to make such explicit calls without knowing if a destructor is defined for the type. An explicit call to a destructor where none is defined has no effect.
+
+## Robust programming
+
+A class needs a destructor if it acquires a resource, and to manage the resource safely it probably has to implement a copy constructor and a copy assignment.
+
+If these special functions are not defined by the user, they are implicitly defined by the compiler. The implicitly generated constructors and assignment operators perform shallow, memberwise copy, which is almost certainly wrong if an object is managing a resource.
+
+In the next example, the implicitly generated copy constructor will make the pointers `str1.text` and `str2.text` refer to the same memory, and when we return from `copy_strings()`, that memory will be deleted twice, which is undefined behavior:
+
+```cpp
+void copy_strings()
+{
+   String str1("I have a sense of impending disaster...");
+   String str2 = str1; // str1.text and str2.text now refer to the same object
+} // delete[] _text; deallocates the same memory twice
+  // undefined behavior
+```
+
+Explicitly defining a destructor, copy constructor, or copy assignment operator prevents implicit definition of the move constructor and the move assignment operator. In this case, failing to provide move operations is usually, if copying is expensive, a missed optimization opportunity.
+
+## See also
+
+[Copy Constructors and Copy Assignment Operators](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
+[Move Constructors and Move Assignment Operators](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
