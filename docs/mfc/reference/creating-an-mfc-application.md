@@ -1,6 +1,6 @@
 ---
 title: "Creating an MFC Application"
-ms.date: "07/28/2019"
+ms.date: "08/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
 ---
@@ -25,7 +25,7 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 ::: moniker range=">=vs-2019"
 
-### To create an MFC forms or dialog-based application
+## To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Enter "MFC" into the search box and then choose **MFC App** from the result list.
@@ -36,7 +36,7 @@ For more information, see [Creating a Forms-Based MFC Application](creating-a-fo
 
 ![MFC Application Wizard](media/mfc-app-wizard.png)
 
-### To create an MFC console application
+## To create an MFC console application
 
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
@@ -51,7 +51,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 ::: moniker range="=vs-2017"
 
-### To create an MFC forms or dialog-based application
+## To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add them.
@@ -62,7 +62,7 @@ For more information, see [Creating a Forms-Based MFC Application](creating-a-fo
 
 ![MFC Application Wizard](media/mfc-app-wizard.png)
 
-### To create an MFC console application
+## To create an MFC console application
 
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
@@ -78,7 +78,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 ::: moniker range="=vs-2015"
 
-### To create an MFC forms or dialog-based application
+## To create an MFC forms or dialog-based application
 
 1. From the main menu, choose **File** > **New** > **Project**.
 1. Under the **Installed** templates, choose **Visual C++** > **MFC**.
@@ -89,7 +89,7 @@ For more information, see [Creating a Forms-Based MFC Application](creating-a-fo
 
 ![MFC Application Wizard](media/mfc-app-wizard-2015.png)
 
-### To create an MFC console application
+## To create an MFC console application
 
 An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
 
