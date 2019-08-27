@@ -7,9 +7,9 @@ ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
 ---
 # Managed Resources Property Page
 
-Enables settings for the resource compiler.
+Enables settings for .
 
-The **Managed Resources** property page exposes .NET resources in C++/CLI programs. The property page contains the following properties:
+The **Managed Resources** property page exposes the following properties for the managed resource compiler (resgen.exe) when using .NET resources in C++/CLI programs:
 
 - **Resource Logical Name**
 
