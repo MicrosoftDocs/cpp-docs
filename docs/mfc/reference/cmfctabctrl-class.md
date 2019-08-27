@@ -864,7 +864,7 @@ TRUE if the specified tab was made active; FALSE if the specified *iTab* paramet
 
 ### Remarks
 
-This method does not send the AFX_WM_CHANGE_ACTIVE_TAB notification to the parent window of the tab control.
+This sends the `AFX_WM_CHANGE_ACTIVE_TAB` notification to the parent window and the parent's frame of the tab control.
 
 The `SetActiveTab` method automatically calls the [CMFCTabCtrl::HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar) method to prevent the screen from blinking.
 
