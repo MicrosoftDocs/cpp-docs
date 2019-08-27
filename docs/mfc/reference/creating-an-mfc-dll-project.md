@@ -1,6 +1,6 @@
 ---
 title: "Creating an MFC DLL Project"
-ms.date: "11/04/2016"
+ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.mfcdll.project"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating projects", "DLLs [MFC], MFC", "projects [MFC], creating", "DLLs [MFC], creating"]
 ms.assetid: 05540b93-4781-4a90-aadf-55158313f5b2
@@ -14,9 +14,7 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
 
 ### To create an MFC DLL Project using the MFC DLL Wizard
 
-1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
-
-**Note** In the **New Project** dialog box, select the `MFC DLL` icon in the Templates pane to open the MFC DLL Wizard.
+1. Follow the instructions in the help topic [Creating an MFC Application](creating-an-mfc-application.md) but choose **MFC Dynamic Link Library** or **MFC DLL** from the list of available templates.
 
 1. Define your application settings using the [application settings](../../mfc/reference/application-settings-mfc-dll-wizard.md) page of the [MFC DLL Wizard](../../mfc/reference/mfc-dll-wizard.md).
 

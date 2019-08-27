@@ -1,17 +1,12 @@
 ---
 title: "Creating an MFC Application"
-ms.date: "07/28/2019"
+ms.date: "08/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
 ---
 # Creating an MFC Application
 
-An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. The easiest way to create an MFC application is to use the MFC Application Wizard (**MFC App project** in Visual Studio 2019). To create an MFC console application, use the Windows Desktop Wizard and choose the **Console Application** and **MFC Headers** options.
-
-> [!IMPORTANT]
->  MFC projects are not supported in Visual Studio Express editions.
-
-MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser-style applications. For more information, see:
+An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser-style applications. For more information, see:
 
 - [Using the Classes to Write Windows Applications](../../mfc/using-the-classes-to-write-applications-for-windows.md)
 
@@ -25,18 +20,86 @@ MFC executables generally fall into five types: standard Windows applications, d
 
 The MFC Application Wizard generates the appropriate classes and files for any of these types of applications, depending on the options you select in the wizard.
 
-### To create an MFC application using the MFC Application Wizard
 
-1. Follow the instructions in the help topic [Create a C++ console app project](../../get-started/tutorial-console-cpp.md).
+The easiest way to create an MFC application is to use the MFC Application Wizard (**MFC App project** in Visual Studio 2019). To create an MFC console application (a command-line program that uses MFC libraries but runs in the console window), use the Windows Desktop Wizard and choose the **Console Application** and **MFC Headers** options.
 
-1. In the **New Project** dialog box, select **MFC Application** in the Templates pane to open the wizard.
+::: moniker range=">=vs-2019"
 
-1. Define your application settings using the [MFC Application Wizard](../../mfc/reference/mfc-application-wizard.md).
+## To create an MFC forms or dialog-based application
 
-    > [!NOTE]
-    >  Skip this step to keep the wizard default settings.
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Enter "MFC" into the search box and then choose **MFC App** from the result list.
+1. Modify the defaults as needed, then press **Create** to open the **MFC Application Wizard**.
+1. Modify the configuration values as needed, then press **Finish**.
 
-1. Click **Finish** to close the wizard and open your new project in the development environment.
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
+
+![MFC Application Wizard](media/mfc-app-wizard.png)
+
+## To create an MFC console application
+
+An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
+
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Enter "Desktop" into the search box and then choose **Windows Desktop Wizard** from the result list.
+1. Modify the project name as needed, then press **Next** to open the **Windows Desktop Wizard**.
+1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
+
+![MFC Application Wizard](media/windows-desktop-wizard.png)
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+## To create an MFC forms or dialog-based application
+
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Under the **Installed** templates, choose **Visual C++** > **MFC/ATL**. If you don't see these, use the Visual Studio Installer to add them.
+1. Choose **MFC Application** from the center pane.
+1. Modify the configuration values as needed, then press **Finish**.
+
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
+
+![MFC Application Wizard](media/mfc-app-wizard.png)
+
+## To create an MFC console application
+
+An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
+
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Under the **Installed** templates, choose **Visual C++** > **Windows Desktop**.
+1. Choose **Windows Desktop Wizard** from the center pane.
+1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
+1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
+
+![MFC Application Wizard](media/windows-desktop-wizard-2017.png)
+
+::: moniker-end
+
+::: moniker range="=vs-2015"
+
+## To create an MFC forms or dialog-based application
+
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Under the **Installed** templates, choose **Visual C++** > **MFC**.
+1. Choose **MFC Application** from the center pane.
+1. Click **Next** to start the **MFC Application Wizard**.
+
+For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
+
+![MFC Application Wizard](media/mfc-app-wizard-2015.png)
+
+## To create an MFC console application
+
+An MFC console application is a command-line program that uses MFC libraries but runs in the console window.
+
+1. From the main menu, choose **File** > **New** > **Project**.
+1. Under the **Installed** templates, choose **Visual C++** > **Win32**.
+1. Choose **Win32 Console Application** from the center pane.
+1. Modify the project name as needed, then press **OK**.
+1. On the second page of the wizard, check the **Add common headers for MFC** box and set other values as needed, then press **Finish**.
+
+::: moniker-end
 
 Once your project is created, you can view the files created in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, see [File Types Created for Visual Studio C++ projects](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
@@ -44,4 +107,3 @@ Once your project is created, you can view the files created in **Solution Explo
 
 [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Property Pages](../../build/reference/property-pages-visual-cpp.md)
-
