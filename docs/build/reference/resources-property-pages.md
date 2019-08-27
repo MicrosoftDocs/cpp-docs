@@ -18,7 +18,9 @@ f1_keywords:
 
 # Resources property page
 
-For Windows programs, the build invokes the Resource Compiler (rc.exe) to add images, string tables, .res files to the binary. The properties exposed in this property page apply only to the Resource Compiler, not to cl.exe or the linker. For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-). For information on how to access the **Resources** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md). To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
+For native Windows desktop programs, the build invokes the Resource Compiler (rc.exe) to add images, string tables, .res files to the binary. The properties exposed in this property page apply only to the Resource Compiler, not to cl.exe or the linker. For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-). For information on how to access the **Resources** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md). To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
+
+Properties for managed resources in C++/CLI applications are exposed in the [Managed Resources Property Page](managed-resources-property-page.md).
 
 ## Preprocessor Definitions
 
