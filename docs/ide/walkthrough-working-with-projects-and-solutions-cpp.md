@@ -248,7 +248,7 @@ Next, build the project and run the app.
 
 Congratulations, you've successfully built an app project and solution. Continue the walkthrough to learn more about how to build C++ code projects in Visual Studio.
 
-## Next Steps
+## Next steps
 
 **Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
 **Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)
