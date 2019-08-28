@@ -26,7 +26,7 @@ To create a project, first choose a project-type template. For each project type
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**. 
+1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Console**.
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter *Game* as the name for the project.
 
@@ -248,7 +248,7 @@ Next, build the project and run the app.
 
 Congratulations, you've successfully built an app project and solution. Continue the walkthrough to learn more about how to build C++ code projects in Visual Studio.
 
-## Next Steps
+## Next steps
 
 **Previous:** [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)<br/>
 **Next:** [Walkthrough: Building a Project (C++)](../ide/walkthrough-building-a-project-cpp.md)
