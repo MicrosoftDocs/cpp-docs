@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "06/14/2019"
+ms.date: "08/28/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -235,7 +235,32 @@ void f() {
 - `remove()`, `remove_if()`, and `unique()` for `list` and `forward_list` now return `size_type`.
 - `shift_left()` and `shift_right()` added to \<algorithm>.
 
-## Bug fixes and behavior changes in Visual Studio 2019
+
+## <a name="improvements_162"></a> Improvements in Visual Studio 2019 version 16.2
+
+### noexcept constexpr functions
+
+Constexpr functions are no longer considered `noexcept` by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#1351) and is enabled in [/permissive-](permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+
+```cpp
+constexpr int f() { return 0; }
+
+int main() {
+    static_assert(noexcept(f(true)), "f should be noexcept"); // C2338 in 16.2
+}
+```
+
+To fix the error, add the `noexcept` expression to the function declaration:
+
+```cpp
+constexpr int f() noexcept { return 0; }
+
+int main() {
+    static_assert(noexcept(f(true)), "f should be noexcept");
+}
+```
+
+## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
 ### Correct diagnostics for basic_string range constructor
 
@@ -514,6 +539,118 @@ Fixed a regression in `std::pair`'s assignment operator introduced when implemen
 ### Non-deduced contexts for `add_const_t`
 
 Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
+
+## <a name="update_162"></a> Bug fixes and behavior changes in Visual Studio 2019 version 16.2
+
+### Const comparators for associative containers
+
+Code for search and insertion in [set](), [map](), [multiset](), and [multmap]() has been merged for reduced code size and now calls the less-than comparison on a const comparison functor.
+
+### Binary expressions with difference enum types
+
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+
+```cpp
+enum E1 { a };
+enum E2 { b };
+int main() {
+    int i = a | b; // warning C5054: operator '|': deprecated between enumerations of different types
+}
+```
+
+To avoid the warning, use [static_cast](static-cast-operator.md) to convert the second operand:
+
+```cpp
+enum E1 { a };
+enum E2 { b };
+int main() {
+  int i = a | static_cast<int>(b);
+}
+```
+
+### Binary expressions with enumeration and floating point types
+
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+.
+
+```cpp
+enum E1 { a };
+int main() {
+  double i = a * 1.1;
+}
+```
+
+To avoid the warning, use [static_cast](static-cast-operator.md) to convert the second operand:
+
+```cpp
+enum E1 { a };
+int main() {
+   double i = static_cast<int>(a) * 1.1;
+}
+```
+
+### 
+
+Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+
+```cpp
+int main() {
+    int a[] = { 1, 2, 3 };
+    int b[] = { 1, 2, 3 };
+    if (a == b) { return 1; }
+}
+```
+
+To avoid the warning, perform the operation on the addresses of the first elements:
+
+```cpp
+int main() {
+    int a[] = { 1, 2, 3 };
+    int b[] = { 1, 2, 3 };
+    if (&a[0] == &b[0]) { return 1; }
+}
+```
+
+### Effect of defining spaceship operator on == and !=
+
+A definition of the spaceship operator (**<=>**) alone will no longer rewrite expressions involving **==** or **!=** unless the spaceship operator is marked as `= default`. The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2678 in Visual Studio 2019 version 16.2:
+
+```cpp
+#include <compare>
+
+struct S {
+  int a;
+  auto operator<=>(const S& rhs) const {
+    return a <=> rhs.a;
+  }
+};
+bool eq(const S& lhs, const S& rhs) {
+  return lhs == rhs;
+}
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
+
+To avoid the error, define the operator== or declared it as defaulted:
+
+```cpp
+#include <compare>
+
+struct S {
+  int a;
+  auto operator<=>(const S& rhs) const {
+    return a <=> rhs.a;
+  }
+  bool operator==(const S&) const = default;
+};
+bool eq(const S& lhs, const S& rhs) {
+  return lhs == rhs;
+}
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
 
 ::: moniker-end
 
