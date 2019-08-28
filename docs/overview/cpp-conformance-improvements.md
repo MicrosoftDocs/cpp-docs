@@ -592,7 +592,7 @@ struct Comparer  {
 
 ### Binary expressions with difference enum types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 enum E1 { a };
@@ -614,8 +614,7 @@ int main() {
 
 ### Binary expressions with enumeration and floating point types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
-.
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 enum E1 { a };
@@ -633,9 +632,9 @@ int main() {
 }
 ```
 
-### 
+### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
+Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 int main() {
@@ -676,7 +675,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-To avoid the error, define the operator== or declared it as defaulted:
+To avoid the error, define the operator== or declare it as defaulted:
 
 ```cpp
 #include <compare>
