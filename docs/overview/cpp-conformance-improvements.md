@@ -240,7 +240,7 @@ void f() {
 
 ### noexcept constexpr functions
 
-Constexpr functions are no longer considered `noexcept` by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#1351) and is enabled in [/permissive-](permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
+Constexpr functions are no longer considered `noexcept` by default when used in a constant expression. This behavior change comes from the resolution of [CWG 1351](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#1351) and is enabled in [/permissive-](../build/reference/permissive-standards-conformance.md). The following example compiles in Visual Studio 2019 version 16.1 and earlier, but produces C2338 in Visual Studio 2019 version 16.2:
 
 ```cpp
 constexpr int f() { return 0; }
@@ -592,7 +592,7 @@ struct Comparer  {
 
 ### Binary expressions with difference enum types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
 
 ```cpp
 enum E1 { a };
@@ -602,7 +602,7 @@ int main() {
 }
 ```
 
-To avoid the warning, use [static_cast](static-cast-operator.md) to convert the second operand:
+To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
 
 ```cpp
 enum E1 { a };
@@ -614,7 +614,7 @@ int main() {
 
 ### Binary expressions with enumeration and floating point types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
 .
 
 ```cpp
@@ -624,7 +624,7 @@ int main() {
 }
 ```
 
-To avoid the warning, use [static_cast](static-cast-operator.md) to convert the second operand:
+To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
 
 ```cpp
 enum E1 { a };
@@ -635,7 +635,7 @@ int main() {
 
 ### 
 
-Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](std-specify-language-standard-version.md) compiler option enabled:
+Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option enabled:
 
 ```cpp
 int main() {
