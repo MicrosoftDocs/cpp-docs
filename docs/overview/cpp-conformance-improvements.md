@@ -544,7 +544,51 @@ Fixed a minor type traits bug, where `add_const_t` and related functions are sup
 
 ### Const comparators for associative containers
 
-Code for search and insertion in [set](), [map](), [multiset](), and [multmap]() has been merged for reduced code size and now calls the less-than comparison on a const comparison functor.
+Code for search and insertion in [set](), [map](), [multiset](), and [multmap]() has been merged for reduced code size. Insertion operations now call the less-than comparison on a `const` comparison functor, in the same way that search operations have done previously. The following code compiles in Visual Studio 2019 version 16.1 and earlier, but raises C3848 in Visual Studio 2019 version 16.2:
+
+```cpp
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+struct K
+{
+   int a;
+   string b = "label";
+};
+
+struct Comparer  {
+   bool operator() (K a, K b) {
+      return a.a < b.a;
+   }
+};
+
+map<K, double, Comparer> m;
+
+K const s1{1};
+K const s2{2};
+K const s3{3};
+
+int main() {
+
+   m.emplace(s1, 1.08);
+   m.emplace(s2, 3.14);
+   m.emplace(s3, 5.21);
+
+}
+```
+
+To avoid the error, make the comparison operator `const`:
+
+```cpp
+struct Comparer  {
+   bool operator() (K a, K b) const {
+      return a.a < b.a;
+   }
+};
+
+```
 
 ### Binary expressions with difference enum types
 
