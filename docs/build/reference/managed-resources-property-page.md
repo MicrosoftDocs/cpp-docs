@@ -1,15 +1,13 @@
 ---
 title: "Managed Resources Property Page"
-ms.date: "11/04/2016"
+ms.date: "08/28/2019"
 f1_keywords: ["VC.Project.VCManagedResourceCompilerTool.ResourceFileName", "VC.Project.VCManagedResourceCompilerTool.OutputFileName", "VC.Project.VCManagedResourceCompilerTool.DefaultLocalizedResources"]
 helpviewer_keywords: ["Managed Resources property page"]
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
 ---
 # Managed Resources Property Page
 
-Enables settings for the resource compiler.
-
-The **Managed Resources** property page contains the following properties:
+The **Managed Resources** property page exposes the following properties for the managed resource compiler [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) when using .NET resources in C++/CLI programs:
 
 - **Resource Logical Name**
 
