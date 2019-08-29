@@ -101,7 +101,7 @@ For the **_MCW_EM** mask, clearing the mask sets the exception, which allows the
 |----------|---------------|--------------|---------------|
 |**_MCW_DN** (Denormal control)|0x03000000|**_DN_SAVE**<br /><br /> **_DN_FLUSH**|0x00000000<br /><br /> 0x01000000|
 |**_MCW_EM** (Interrupt exception mask)|0x0008001F|**_EM_INVALID**<br /><br /> **_EM_DENORMAL**<br /><br /> **_EM_ZERODIVIDE**<br /><br /> **_EM_OVERFLOW**<br /><br /> **_EM_UNDERFLOW**<br /><br /> **_EM_INEXACT**|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|
-|**_MCW_IC** (Infinity control)<br /><br /> (Not supported on ARM or x64] platforms.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
+|**_MCW_IC** (Infinity control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00040000|**_IC_AFFINE**<br /><br /> **_IC_PROJECTIVE**|0x00040000<br /><br /> 0x00000000|
 |**_MCW_RC** (Rounding control)|0x00000300|**_RC_CHOP**<br /><br /> **_RC_UP**<br /><br /> **_RC_DOWN**<br /><br /> **_RC_NEAR**|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|
 |**_MCW_PC** (Precision control)<br /><br /> (Not supported on ARM or x64 platforms.)|0x00030000|**_PC_24** (24 bits)<br /><br /> **_PC_53** (53 bits)<br /><br /> **_PC_64** (64 bits)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|
 
@@ -118,7 +118,7 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ```C
 // crt_cntrl87.c
 // processor: x86
-// compile by using: cl /W4 /arch:IA32 crt_cntro87.c
+// compile by using: cl /W4 /arch:IA32 crt_cntrl87.c
 // This program uses __control87_2 to output the x87 control
 // word, set the precision to 24 bits, and reset the status to
 // the default.
