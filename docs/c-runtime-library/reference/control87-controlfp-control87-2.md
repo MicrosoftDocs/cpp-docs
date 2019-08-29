@@ -45,7 +45,7 @@ Filled in with the control word for the x87 floating-point unit. Pass in 0 (**NU
 *sse2_cw*\
 Control word for the SSE floating-point unit. Pass in 0 (**NULL**) to set only the x87 control word.
 
-## Return Value
+## Return value
 
 For **_control87** and **_controlfp**, the bits in the value returned indicate the floating-point control state. For a complete definition of the bits that are returned by **_control87**, see FLOAT.H.
 
@@ -67,7 +67,7 @@ _controlfp( _EM_INVALID, _MCW_EM );
 // DENORMAL exception mask remains unchanged
 ```
 
-The possible values for the mask constant (*mask*) and new control values (*new*) are shown in the following Hexadecimal values table. Use the portable constants listed below (**_MCW_EM**, **_EM_INVALID**, and so forth) as arguments to these functions, rather than supplying the hexadecimal values explicitly.
+The possible values for the mask constant (*mask*) and new control values (*new*) are shown in the Control word masks and values table. Use the portable constants listed below (**_MCW_EM**, **_EM_INVALID**, and so forth) as arguments to these functions, rather than supplying the hexadecimal values explicitly.
 
 Intel x86-derived platforms support the DENORMAL input and output values in hardware. The x86 behavior is to preserve DENORMAL values. The ARM and ARM64 platforms and the x64 platforms that have SSE2 support enable DENORMAL operands and results to be flushed, or forced to zero. The **_controlfp** and **_control87** functions provide a mask to change this behavior. The following example demonstrates the use of this mask.
 
@@ -93,7 +93,7 @@ On the ARM, ARM64, and x64 platforms, changing the infinity mode or the floating
 
 These functions are ignored when you use [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) to compile. The common language runtime (CLR) only supports the default floating-point precision.
 
-### Hexadecimal Values
+### Control word masks and values
 
 For the **_MCW_EM** mask, clearing the mask sets the exception, which allows the hardware exception; setting the mask hides the exception. If a **_EM_UNDERFLOW** or **_EM_OVERFLOW** occurs, no hardware exception is thrown until the next floating-point instruction is executed. To generate a hardware exception immediately after **_EM_UNDERFLOW** or **_EM_OVERFLOW**, call the **FWAIT** MASM instruction.
 
