@@ -306,7 +306,7 @@ If the animation control has `ACS_TRANSPARENT` style, the AVI clip will be drawn
 
 ### Example
 
-  See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
+See the example for [CAnimateCtrl::CAnimateCtrl](#canimatectrl).
 
 ##  <a name="stop"></a>  CAnimateCtrl::Stop
 
