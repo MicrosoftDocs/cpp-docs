@@ -1,6 +1,6 @@
 ---
 title: "sscanf, _sscanf_l, swscanf, _swscanf_l"
-ms.date: "11/04/2016"
+ms.date: "08/29/2019"
 apiname: ["swscanf", "sscanf", "_sscanf_l", "_swscanf_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 apitype: "DLLExport"
@@ -64,6 +64,8 @@ For information on these and other error codes, see [_doserrno, errno, _sys_errl
 ## Remarks
 
 The **sscanf** function reads data from *buffer* into the location given by each *argument*. Every *argument* must be a pointer to a variable with a type that corresponds to a type specifier in *format*. The *format* argument controls the interpretation of the input fields and has the same form and function as the *format* argument for the **scanf** function. If copying takes place between strings that overlap, the behavior is undefined.
+
+For information about scanf type field characters, see [scanf Type Field Characters](../scanf-type-field-characters.md). For information about scanf format specification fields, see [Format Specification Fields](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 > [!IMPORTANT]
 > When reading a string with **sscanf**, always specify a width for the **%s** format (for example, **"%32s"** instead of **"%s"**); otherwise, improperly formatted input can easily cause a buffer overrun.
