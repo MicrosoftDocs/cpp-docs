@@ -19,7 +19,7 @@ Visual Studio provides the following command-line utilities for viewing or manip
 
 - [ERRLOOK](value-edit-control.md), the Error Lookup utility, retrieves a system error message or module error message based on the value entered.
 
-- [XDCMake](xdcmake-reference.md). A toolfor processing source code files that contain documentation comments marked up with XML tags.
+- [XDCMake](xdcmake-reference.md). A tool for processing source code files that contain documentation comments marked up with XML tags.
 
 - [BSCMAKE.EXE](bscmake-reference.md) (provided for backward compatibility only) builds a browse information file (.bsc) that contains information about the symbols (classes, functions, data, macros, and types) in your program. You view this information in browse windows within the development environment. (A .bsc file can also be built in the development environment.)
 
