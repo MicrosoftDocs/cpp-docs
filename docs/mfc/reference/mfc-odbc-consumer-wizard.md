@@ -1,6 +1,6 @@
 ---
 title: "MFC ODBC Consumer Wizard"
-ms.date: "05/09/2019"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["wizards [MFC]"]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
 ---

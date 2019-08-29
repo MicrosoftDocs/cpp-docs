@@ -1,3 +1,4 @@
+// CMainFrame is application-defined object of type CFrameWndEx
 BOOL CMainFrame::OnShowPopupMenu(CMFCPopupMenu *pMenuPopup)
 {
    BOOL bRes = CFrameWndEx::OnShowPopupMenu(pMenuPopup);
