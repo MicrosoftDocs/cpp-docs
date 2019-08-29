@@ -18,9 +18,9 @@ f1_keywords:
 
 # Resources property page
 
-For native Windows desktop programs, the build invokes the Resource Compiler (rc.exe) to add images, string tables, .res files to the binary. The properties exposed in this property page apply only to the Resource Compiler, not to cl.exe or the linker. For more information on using the resource compiler, see [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-). For information on how to access the **Resources** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md). To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
+For native Windows desktop programs, the build invokes the [Resource Compiler (rc.exe)](/windows/win32/menurc/resource-compiler) to add images, string tables, and *.res* files to the binary. The properties exposed in this property page are passed to the Resource Compiler, not to the C++ compiler or the linker. For more information on the properties listed here and how they map to RC command-line options, see [Using RC (The RC Command Line)](/windows/win32/menurc/using-rc-the-rc-command-line-). For information on how to access the **Resources** property pages, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md). To programmatically access these properties, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>.
 
-Properties for managed resources in C++/CLI applications are exposed in the [Managed Resources Property Page](managed-resources-property-page.md).
+Properties for .NET resources in C++/CLI applications are exposed in the [Managed Resources Property Page](managed-resources-property-page.md).
 
 ## Preprocessor Definitions
 
@@ -54,11 +54,10 @@ Suppress the display of the startup banner and information message (/nologo)
 
 Specifies the name of the resource file (/fo[file])
 
-## Null Terminate Strings
+## Null Terminate Strings 
 
 Append null's to all strings in the string tables. (/n)
 
 ## See also
 
 [C++ project property page reference](property-pages-visual-cpp.md)
-
