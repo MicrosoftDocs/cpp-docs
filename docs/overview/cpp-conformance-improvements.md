@@ -10,11 +10,11 @@ ms.author: "mblome"
 
 Microsoft C++ makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. It also lists major bug fixes by version. To jump directly to the changes for a specific version, use the **In this article** list.
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 ## <a name="improvements_160"></a> Improvements in Visual Studio 2019 RTW (version 16.0)
 
-Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler (MSVC).
+Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler (MSVC)
 
 **Note:** C++20 features will be made available in `/std:c++latest` mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, the `/std:c++20` compiler mode will be introduced.
 
@@ -715,7 +715,7 @@ bool neq(const S& lhs, const S& rhs) {
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range="vs-2017"
 
 ## <a name="improvements_150"></a> Improvements in Visual Studio 2017 RTW (version 15.0)
 
