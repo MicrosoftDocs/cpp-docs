@@ -58,6 +58,8 @@
               href: build/project-property-inheritance.md
             - name: Modify properties and targets without changing the project file
               href: build/modify-project-properties-without-changing-project-file.md
+        - name: Clang/LLVM in Visual Studio projects (MSBuild)
+          href: build/clang-support-msbuild.md
         - name: Reference libraries and components at build time
           href: build/adding-references-in-visual-cpp-projects.md
         - name: Organize project output files
