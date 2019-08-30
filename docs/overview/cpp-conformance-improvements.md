@@ -260,6 +260,18 @@ int main() {
 }
 ```
 
+### Standard Library improvements
+
+- \<charconv> `to_chars()` with fixed/scientific precision. (General precision is currently planned for 16.4.)
+- [P0020R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html): atomic\<float>, atomic\<double>, atomic\<long double>
+- [P0463R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html): endian
+- [P0482R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html): Library Support For char8_t
+- [P0600R1](www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf): [\[nodiscard]] For The STL, Part 1
+- [P0653R2](www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html): to_address()
+- [P0754R2](open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<version>
+- [P0771R1](open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept For std::function's move constructor
+
+
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
 ### Correct diagnostics for basic_string range constructor
@@ -544,7 +556,7 @@ Fixed a minor type traits bug, where `add_const_t` and related functions are sup
 
 ### Const comparators for associative containers
 
-Code for search and insertion in [set](), [map](), [multiset](), and [multmap]() has been merged for reduced code size. Insertion operations now call the less-than comparison on a `const` comparison functor, in the same way that search operations have done previously. The following code compiles in Visual Studio 2019 version 16.1 and earlier, but raises C3848 in Visual Studio 2019 version 16.2:
+Code for search and insertion in [set](../standard-library/set-class.md), [map](../standard-library/map-class.md), [multiset](../standard-library/multiset-class.md), and [multimap](../standard-library/multimap-class.md) has been merged for reduced code size. Insertion operations now call the less-than comparison on a `const` comparison functor, in the same way that search operations have done previously. The following code compiles in Visual Studio 2019 version 16.1 and earlier, but raises C3848 in Visual Studio 2019 version 16.2:
 
 ```cpp
 #include <iostream>
@@ -590,9 +602,9 @@ struct Comparer  {
 
 ```
 
-### Binary expressions with difference enum types
+### Binary expressions with different enum types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 enum E1 { a };
@@ -614,7 +626,7 @@ int main() {
 
 ### Binary expressions with enumeration and floating point types
 
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 enum E1 { a };
@@ -634,7 +646,7 @@ int main() {
 
 ### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
 
 ```cpp
 int main() {
@@ -644,7 +656,7 @@ int main() {
 }
 ```
 
-To avoid the warning, perform the operation on the addresses of the first elements:
+To avoid the warning, you can compare the addresses of the first elements:
 
 ```cpp
 int main() {
@@ -652,6 +664,12 @@ int main() {
     int b[] = { 1, 2, 3 };
     if (&a[0] == &b[0]) { return 1; }
 }
+```
+
+To determine whether the contents of two arrays are equal, use the [std::equal](../standard-library/algorithm-functions.md#equal) function:
+
+```cpp
+std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 ```
 
 ### Effect of defining spaceship operator on == and !=
