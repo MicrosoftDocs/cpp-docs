@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "08/28/2019"
+ms.date: "08/30/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -12,7 +12,7 @@ Microsoft C++ makes conformance improvements and bug fixes in every release. Thi
 
 ::: moniker range="vs-2019"
 
-## <a name="improvements_160"></a> Improvements in Visual Studio 2019 RTW (version 16.0)
+## <a name="improvements_160"></a> Conformance improvements in Visual Studio 2019 RTW (version 16.0)
 
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler (MSVC)
 
@@ -156,7 +156,7 @@ Implemented the `remove_cvref` and `remove_cvref_t` type traits from [P0550](htt
 
 [C++20 P1008R1 - prohibiting aggregates with user-declared constructors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1008r1.pdf) is complete.
 
-## <a name="improvements_161"></a> Improvements in Visual Studio 2019 version 16.1
+## <a name="improvements_161"></a> Conformance improvements in 16.1
 
 ### char8_t
 
@@ -236,7 +236,7 @@ void f() {
 - `shift_left()` and `shift_right()` added to \<algorithm>.
 
 
-## <a name="improvements_162"></a> Improvements in Visual Studio 2019 version 16.2
+## <a name="improvements_162"></a> Conformance improvements in 16.2
 
 ### noexcept constexpr functions
 
@@ -246,7 +246,7 @@ Constexpr functions are no longer considered `noexcept` by default when used in 
 constexpr int f() { return 0; }
 
 int main() {
-    static_assert(noexcept(f(true)), "f should be noexcept"); // C2338 in 16.2
+    static_assert(noexcept(f()), "f should be noexcept"); // C2338 in 16.2
 }
 ```
 
@@ -256,7 +256,118 @@ To fix the error, add the `noexcept` expression to the function declaration:
 constexpr int f() noexcept { return 0; }
 
 int main() {
-    static_assert(noexcept(f(true)), "f should be noexcept");
+    static_assert(noexcept(f()), "f should be noexcept");
+}
+```
+
+### Binary expressions with different enum types
+
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated in C++20 ([P1120R0](http://wg21.link/p1120r0)). In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+
+```cpp
+enum E1 { a };
+enum E2 { b };
+int main() {
+    int i = a | b; // warning C5054: operator '|': deprecated between enumerations of different types
+}
+```
+
+To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
+
+```cpp
+enum E1 { a };
+enum E2 { b };
+int main() {
+  int i = a | static_cast<int>(b);
+}
+```
+
+### Binary expressions with enumeration and floating point types
+
+The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated in C++20 ([P1120R0](http://wg21.link/p1120r0)). In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+
+```cpp
+enum E1 { a };
+int main() {
+  double i = a * 1.1;
+}
+```
+
+To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
+
+```cpp
+enum E1 { a };
+int main() {
+   double i = static_cast<int>(a) * 1.1;
+}
+```
+
+### Equality and relational comparisons of arrays
+
+Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](http://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+
+```cpp
+int main() {
+    int a[] = { 1, 2, 3 };
+    int b[] = { 1, 2, 3 };
+    if (a == b) { return 1; }
+}
+```
+
+To avoid the warning, you can compare the addresses of the first elements:
+
+```cpp
+int main() {
+    int a[] = { 1, 2, 3 };
+    int b[] = { 1, 2, 3 };
+    if (&a[0] == &b[0]) { return 1; }
+}
+```
+
+To determine whether the contents of two arrays are equal, use the [std::equal](../standard-library/algorithm-functions.md#equal) function:
+
+```cpp
+std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
+```
+
+### Effect of defining spaceship operator on == and !=
+
+A definition of the spaceship operator (**<=>**) alone will no longer rewrite expressions involving **==** or **!=** unless the spaceship operator is marked as `= default` ([P1185R2](https://wg21.link/p1185r2)). The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2678 in Visual Studio 2019 version 16.2:
+
+```cpp
+#include <compare>
+
+struct S {
+  int a;
+  auto operator<=>(const S& rhs) const {
+    return a <=> rhs.a;
+  }
+};
+bool eq(const S& lhs, const S& rhs) {
+  return lhs == rhs;
+}
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
+
+To avoid the error, define the operator== or declare it as defaulted:
+
+```cpp
+#include <compare>
+
+struct S {
+  int a;
+  auto operator<=>(const S& rhs) const {
+    return a <=> rhs.a;
+  }
+  bool operator==(const S&) const = default;
+};
+bool eq(const S& lhs, const S& rhs) {
+  return lhs == rhs;
+}
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
 }
 ```
 
@@ -551,7 +662,7 @@ Fixed a regression in `std::pair`'s assignment operator introduced when implemen
 
 Fixed a minor type traits bug, where `add_const_t` and related functions are supposed to be a non-deduced context. In other words, `add_const_t` should be an alias for `typename add_const<T>::type`, not `const T`.
 
-## <a name="update_162"></a> Bug fixes and behavior changes in Visual Studio 2019 version 16.2
+## <a name="update_162"></a> Bug fixes and behavior changes in 16.2
 
 ### Const comparators for associative containers
 
@@ -601,122 +712,11 @@ struct Comparer  {
 
 ```
 
-### Binary expressions with different enum types
-
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
-
-```cpp
-enum E1 { a };
-enum E2 { b };
-int main() {
-    int i = a | b; // warning C5054: operator '|': deprecated between enumerations of different types
-}
-```
-
-To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
-
-```cpp
-enum E1 { a };
-enum E2 { b };
-int main() {
-  int i = a | static_cast<int>(b);
-}
-```
-
-### Binary expressions with enumeration and floating point types
-
-The ability to apply the usual arithmetic conversions on operands where one is of enumeration type and the other is of a different enumeration type or a floating-point type is deprecated. In other words, using a binary operation between an enumeration and a floating-point type is now a warning when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
-
-```cpp
-enum E1 { a };
-int main() {
-  double i = a * 1.1;
-}
-```
-
-To avoid the warning, use [static_cast](../cpp/static-cast-operator.md) to convert the second operand:
-
-```cpp
-enum E1 { a };
-int main() {
-   double i = static_cast<int>(a) * 1.1;
-}
-```
-
-### Equality and relational comparisons of arrays
-
-Equality and relational comparisons between two operands of array type are deprecated. In other words, a comparison operation between two arrays (regardless of rank and extent similarities) is a now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces *C5056: operator '==': deprecated for array types* when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
-
-```cpp
-int main() {
-    int a[] = { 1, 2, 3 };
-    int b[] = { 1, 2, 3 };
-    if (a == b) { return 1; }
-}
-```
-
-To avoid the warning, you can compare the addresses of the first elements:
-
-```cpp
-int main() {
-    int a[] = { 1, 2, 3 };
-    int b[] = { 1, 2, 3 };
-    if (&a[0] == &b[0]) { return 1; }
-}
-```
-
-To determine whether the contents of two arrays are equal, use the [std::equal](../standard-library/algorithm-functions.md#equal) function:
-
-```cpp
-std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
-```
-
-### Effect of defining spaceship operator on == and !=
-
-A definition of the spaceship operator (**<=>**) alone will no longer rewrite expressions involving **==** or **!=** unless the spaceship operator is marked as `= default`. The following example compiles in Visual Studio 2019 RTW and version 16.1, but produces C2678 in Visual Studio 2019 version 16.2:
-
-```cpp
-#include <compare>
-
-struct S {
-  int a;
-  auto operator<=>(const S& rhs) const {
-    return a <=> rhs.a;
-  }
-};
-bool eq(const S& lhs, const S& rhs) {
-  return lhs == rhs;
-}
-bool neq(const S& lhs, const S& rhs) {
-    return lhs != rhs;
-}
-```
-
-To avoid the error, define the operator== or declare it as defaulted:
-
-```cpp
-#include <compare>
-
-struct S {
-  int a;
-  auto operator<=>(const S& rhs) const {
-    return a <=> rhs.a;
-  }
-  bool operator==(const S&) const = default;
-};
-bool eq(const S& lhs, const S& rhs) {
-  return lhs == rhs;
-}
-bool neq(const S& lhs, const S& rhs) {
-    return lhs != rhs;
-}
-```
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-## <a name="improvements_150"></a> Improvements in Visual Studio 2017 RTW (version 15.0)
+## <a name="improvements_150"></a> Conformance improvements in Visual Studio 2017 RTW (version 15.0)
 
 With support for generalized `constexpr` and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -744,7 +744,7 @@ In **/std:c++17** mode, the `[[fallthrough]]` attribute can be used in the conte
 
 Range-based for loops no longer require that `begin()` and `end()` return objects of the same type. This change enables `end()` to return a sentinel as used by ranges in [range-v3](https://github.com/ericniebler/range-v3) and the completed-but-not-quite-published Ranges Technical Specification. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
 
-## <a name="improvements_153"></a> Improvements in Visual Studio 2017 version 15.3
+## <a name="improvements_153"></a> Conformance improvements in 15.3
 
 ### constexpr lambdas
 
@@ -786,7 +786,7 @@ The `*this` object in a lambda expression may now be captured by value. This cha
 
 The `register` keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
-## <a name="improvements_155"></a> Improvements in Visual Studio 2017 version 15.5
+## <a name="improvements_155"></a> Conformance improvements in 15.5
 
 Features marked with \[14] are available unconditionally even in **/std:c++14** mode.
 
@@ -850,7 +850,7 @@ The standard library now uses variable templates internally.
 
 The standard library has been updated in response to C++17 compiler changes, including the addition of `noexcept` in the type system and the removal of dynamic-exception-specifications.
 
-## <a name="improvements_156"></a> Improvements in Visual Studio 2017 version 15.6
+## <a name="improvements_156"></a> Conformance improvements in 15.6
 
 ### C++17 Library Fundamentals V1
 
@@ -860,7 +860,7 @@ The standard library has been updated in response to C++17 compiler changes, inc
 
 [P0739R0](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0739r0.html) Move `adopt_lock_t` to front of parameter list for `scoped_lock` to enable consistent use of `scoped_lock`. Allow `std::variant` constructor to participate in overload resolution in more cases, to enable copy assignment.
 
-## <a name="improvements_157"></a> Improvements in Visual Studio 2017 version 15.7
+## <a name="improvements_157"></a> Conformance improvements in 15.7
 
 ### C++17: Rewording inheriting constructors
 
@@ -1032,7 +1032,7 @@ void sample(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
-## <a name="improvements_159"></a> Improvements in Visual Studio 2017 version 15.9
+## <a name="improvements_159"></a> Conformance improvements in 15.9
 
 ### Left-to-right evaluation order for operators `->*`, `[]`, `>>`, and `<<`
 
@@ -1389,7 +1389,7 @@ void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)
 }
 ```
 
-## <a name="update_153"></a> Bug fixes in Visual Studio 2017 version 15.3
+## <a name="update_153"></a> Bug fixes in 15.3
 
 ### Calls to deleted member templates
 
@@ -1761,7 +1761,7 @@ To fix the problem, arrange the initializer list to have the same order as the d
 
 This warning is off-by-default, and only affects code compiled with **/Wall**.
 
-## <a name="update_155"></a> Bug fixes and other behavior changes in Visual Studio 2017 version 15.5
+## <a name="update_155"></a> Bug fixes and other behavior changes in 15.5
 
 ### Partial ordering change
 
@@ -2220,7 +2220,7 @@ int main()
 }
 ```
 
-## <a name="update_157"></a> Bug fixes and other behavior changes in Visual Studio 2017 version 15.7
+## <a name="update_157"></a> Bug fixes and other behavior changes in 15.7
 
 ### C++17: Default argument in the primary class template
 
@@ -2356,7 +2356,7 @@ int main() {
 }
 ```
 
-## <a name="update_158"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.8
+## <a name="update_158"></a> Bug fixes and behavior changes in 15.8
 
 The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
@@ -2563,7 +2563,7 @@ struct X : Base<T>
 };
 ```
 
-## <a name="update_159"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.9
+## <a name="update_159"></a> Bug fixes and behavior changes in 15.9
 
 ### Identifiers in member alias templates
 
