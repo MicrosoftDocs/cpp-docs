@@ -1,6 +1,6 @@
 ---
 title: "COleCurrency Class"
-ms.date: "11/04/2016"
+ms.date: "08/29/2019"
 f1_keywords: ["COleCurrency", "AFXDISP/COleCurrency", "AFXDISP/COleCurrency::COleCurrency", "AFXDISP/COleCurrency::Format", "AFXDISP/COleCurrency::GetStatus", "AFXDISP/COleCurrency::ParseCurrency", "AFXDISP/COleCurrency::SetCurrency", "AFXDISP/COleCurrency::SetStatus", "AFXDISP/COleCurrency::m_cur", "AFXDISP/COleCurrency::m_status"]
 helpviewer_keywords: ["COleCurrency [MFC], COleCurrency", "COleCurrency [MFC], Format", "COleCurrency [MFC], GetStatus", "COleCurrency [MFC], ParseCurrency", "COleCurrency [MFC], SetCurrency", "COleCurrency [MFC], SetStatus", "COleCurrency [MFC], m_cur", "COleCurrency [MFC], m_status"]
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
@@ -77,7 +77,7 @@ Constructs a `COleCurrency` object.
 ```
 COleCurrency();
 COleCurrency(CURRENCY cySrc);
-  COleCurrency(const COleCurrency& curSrc);
+COleCurrency(const COleCurrency& curSrc);
 COleCurrency(const VARIANT& varSrc);
 
 COleCurrency(

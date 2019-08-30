@@ -1,6 +1,6 @@
 ---
 title: "CMFCDynamicLayout Class"
-ms.date: "11/04/2016"
+ms.date: "08/29/2019"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
 ---
@@ -332,7 +332,7 @@ TRUE if the `MoveSettings` object specifies no movement.
 
 ## CMFCDynamicLayout::MoveSettings::IsVertical
 
-  Check if the move data specifies a nonzero vertical movement.
+Check if the move data specifies a nonzero vertical movement.
 
 ```
 BOOL IsVertical() const

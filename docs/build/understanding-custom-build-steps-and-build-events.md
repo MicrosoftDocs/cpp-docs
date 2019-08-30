@@ -1,6 +1,6 @@
 ---
 title: "Understanding Custom Build Steps and Build Events"
-ms.date: "11/04/2016"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["builds [C++], events", "custom build steps [C++], customizing builds", "events [C++], build", "custom build steps [C++]", "build steps [C++]", "build events [C++], order of events and build steps", "build steps [C++], build events", "builds [C++], custom build steps"]
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
 ---
@@ -24,7 +24,7 @@ From within the Visual C++ development environment, there are three basic ways t
 
 The output format of a custom build step or build event can also enhance the usability of the tool. For more information, see [Formatting the Output of a Custom Build Step or Build Event](formatting-the-output-of-a-custom-build-step-or-build-event.md).
 
-Build events and custom build steps run in the following order along with other build steps:
+For each project in a solution, build events and custom build steps run in the following order along with other build steps:
 
 1. Pre-Build event
 
