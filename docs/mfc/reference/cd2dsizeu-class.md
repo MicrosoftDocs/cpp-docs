@@ -1,6 +1,6 @@
 ---
 title: "CD2DSizeU Class"
-ms.date: "11/04/2016"
+ms.date: "08/29/2019"
 f1_keywords: ["CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::CD2DSizeU", "AFXRENDERTARGET/CD2DSizeU::IsNull"]
 helpviewer_keywords: ["CD2DSizeU [MFC], CD2DSizeU", "CD2DSizeU [MFC], IsNull"]
 ms.assetid: 6e679ba8-2112-43c3-8275-70b660856f02
@@ -52,7 +52,7 @@ Constructs a CD2DSizeU object from CSize object.
 ```
 CD2DSizeU(const CSize& size);
 CD2DSizeU(const D2D1_SIZE_U& size);
-  CD2DSizeU(const D2D1_SIZE_U* size);
+CD2DSizeU(const D2D1_SIZE_U* size);
 
 CD2DSizeU(
     UINT32 cx = 0,
