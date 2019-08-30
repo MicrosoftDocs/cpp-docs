@@ -1,3 +1,4 @@
+// CMainFrame is application-defined object of type CFrameWnd
 CMainFrame::CMainFrame()
     : m_hDrawMenu(NULL), m_hDrawAccel(NULL), m_bCheck(false), m_nWindowTimer(0), m_nCallbackTimer(0)
 {
