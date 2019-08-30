@@ -266,11 +266,10 @@ int main() {
 - [P0020R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html): atomic\<float>, atomic\<double>, atomic\<long double>
 - [P0463R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html): endian
 - [P0482R6](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0482r6.html): Library Support For char8_t
-- [P0600R1](www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf): [\[nodiscard]] For The STL, Part 1
-- [P0653R2](www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html): to_address()
-- [P0754R2](open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<version>
-- [P0771R1](open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept For std::function's move constructor
-
+- [P0600R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf): [\[nodiscard]] For The STL, Part 1
+- [P0653R2](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html): to_address()
+- [P0754R2](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<version>
+- [P0771R1](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept For std::function's move constructor
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
@@ -2749,9 +2748,13 @@ To avoid the error, remove the `constexpr` qualifier from the explicit instantia
 
 ::: moniker-end
 
+::: moniker range="vs-2015"
+
 ## C++ conformance improvements in Visual Studio 2015
 
 For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+
+::: moniker-end
 
 ## See also
 
