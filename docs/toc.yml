@@ -4729,10 +4729,10 @@
                       href: preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md
                     - name: "#import directive (C++)"
                       href: preprocessor/hash-import-directive-cpp.md
-                    - name: "#import Attributes (C++)"
+                    - name: "#import attributes (C++)"
                       expanded: false
                       items: 
-                        - name: "#import Attributes (C++)"
+                        - name: "#import attributes (C++)"
                           href: preprocessor/hash-import-attributes-cpp.md
                         - name: auto_rename
                           href: preprocessor/auto-rename.md
@@ -4794,7 +4794,7 @@
                       href: preprocessor/null-directive.md
                     - name: "#undef directive (C/C++)"
                       href: preprocessor/hash-undef-directive-c-cpp.md
-                    - name: "#using directive (C++)"
+                    - name: "#using directive (C++/CLI)"
                       href: preprocessor/hash-using-directive-cpp.md
                 - name: Preprocessor operators
                   expanded: false
@@ -4805,7 +4805,7 @@
                       href: preprocessor/stringizing-operator-hash.md
                     - name: Charizing operator (#@)
                       href: preprocessor/charizing-operator-hash-at.md
-                    - name: Token-Pasting operator (##)
+                    - name: Token-pasting operator (##)
                       href: preprocessor/token-pasting-operator-hash-hash.md
                 - name: Preprocessor macros (C/C++)
                   expanded: false
@@ -4829,10 +4829,10 @@
                   href: preprocessor/conventions.md
                 - name: Preprocessor grammar
                   href: preprocessor/preprocessor-grammar.md
-            - name: Pragma directives and the __Pragma keyword
+            - name: Pragma directives and the __pragma keyword
               expanded: false
               items: 
-                - name: Pragma directives and the __Pragma keyword
+                - name: Pragma directives and the __pragma keyword
                   href: preprocessor/pragma-directives-and-the-pragma-keyword.md
                 - name: alloc_text pragma
                   href: preprocessor/alloc-text.md

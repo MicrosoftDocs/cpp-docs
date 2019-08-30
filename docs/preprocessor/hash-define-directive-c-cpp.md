@@ -1,19 +1,18 @@
 ---
-title: "#define Directive (C/C++)"
-ms.date: "11/04/2016"
+title: "#define directive (C/C++)"
+ms.date: "08/29/2019"
 f1_keywords: ["#define"]
 helpviewer_keywords: ["define directive (#define), syntax", "preprocessor, directives", "define directive (#define)", "#define directive, syntax", "#define directive"]
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
 ---
-# #define Directive (C/C++)
+# #define directive (C/C++)
 
 The **#define** creates a *macro*, which is the association of an identifier or parameterized identifier with a token string. After the macro is defined, the compiler can substitute the token string for each occurrence of the identifier in the source file.
 
 ## Syntax
 
-`#define` *identifier* *token-string*<sub>opt</sub>
-
-`#define` *identifier* `(` *identifier*<sub>opt</sub>`,` *...* `,` *identifier*<sub>opt</sub>`)` *token-string*<sub>opt</sub>
+> **#define** *identifier* *token-string*<sub>opt</sub>\
+> **#define** *identifier* **(** *identifier*<sub>opt</sub>**,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub>
 
 ## Remarks
 
@@ -29,7 +28,7 @@ Formal parameter names appear in *token-string* to mark the locations where actu
 
 The formal parameters in the list are separated by commas. Each name in the list must be unique, and the list must be enclosed in parentheses. No spaces can separate *identifier* and the opening parenthesis. Use line concatenation — place a backslash (`\`) immediately before the newline character — for long directives on multiple source lines. The scope of a formal parameter name extends to the new line that ends *token-string*.
 
-When a macro has been defined in the second syntax form, subsequent textual instances followed by an argument list indicate a macro call. The actual arguments that follows an instance of *identifier* in the source file are matched to the corresponding formal parameters in the macro definition. Each formal parameter in *token-string* that is not preceded by a stringizing (`#`), charizing (`#@`), or token-pasting (`##`) operator, or not followed by a `##` operator, is replaced by the corresponding actual argument. Any macros in the actual argument are expanded before the directive replaces the formal parameter. (The operators are described in [Preprocessor Operators](../preprocessor/preprocessor-operators.md).)
+When a macro has been defined in the second syntax form, subsequent textual instances followed by an argument list indicate a macro call. The actual arguments that follows an instance of *identifier* in the source file are matched to the corresponding formal parameters in the macro definition. Each formal parameter in *token-string* that is not preceded by a stringizing (`#`), charizing (`#@`), or token-pasting (`##`) operator, or not followed by a `##` operator, is replaced by the corresponding actual argument. Any macros in the actual argument are expanded before the directive replaces the formal parameter. (The operators are described in [Preprocessor operators](../preprocessor/preprocessor-operators.md).)
 
 The following examples of macros with arguments illustrate the second form of the **#define** syntax:
 
@@ -105,4 +104,4 @@ Defining macros and constants with the [/D](../build/reference/d-preprocessor-de
 
 ## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)

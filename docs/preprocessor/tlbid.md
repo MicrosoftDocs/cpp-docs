@@ -1,11 +1,11 @@
 ---
-title: "tlbid"
-ms.date: "10/18/2018"
+title: "tlbid import attribute"
+ms.date: "08/29/2019"
 f1_keywords: ["tlbid"]
 helpviewer_keywords: ["tlbid attribute"]
 ms.assetid: 54b06785-191b-4e77-a9a5-485f2b4acb09
 ---
-# tlbid
+# tlbid import attribute
 
 **C++ Specific**
 
@@ -13,18 +13,16 @@ Allows for loading libraries other than the primary type library.
 
 ## Syntax
 
-```
-tlbid(number)
-```
+> **#import** *type-library-dll* **tlbid(** *number* **)**
 
 ### Parameters
 
-*number*<br/>
-The number of the type library in `filename`.
+*number*\
+The number of the type library in *type-library-dll*.
 
 ## Remarks
 
-If multiple type libraries are built into a single DLL, it possible to load libraries other than the primary type library by using **tlbid**.
+If multiple type libraries are built into a single DLL, it's possible to load libraries other than the primary type library by using **tlbid**.
 
 For example:
 
@@ -42,5 +40,5 @@ LoadTypeLib("MyResource.dll\\2");
 
 ## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import attributes](../preprocessor/hash-import-attributes-cpp.md)\
+[#import directive](../preprocessor/hash-import-directive-cpp.md)
