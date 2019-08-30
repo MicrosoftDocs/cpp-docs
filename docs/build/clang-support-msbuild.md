@@ -1,6 +1,6 @@
 ---
 title: "Clang/LLVM support in Visual Studio Visual Studio projects"
-ms.date: "08/27/2019"
+ms.date: "08/30/2019"
 ms.description: "Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain."
 helpviewer_keywords: ["Clang support for C++ MSBuild projects"]
 ---
@@ -31,7 +31,7 @@ To configure a Visual Studio project to use clang, right-click on the project no
 
 If you are using the Clang tools that are bundled with Visual Studio, no additional steps are required. For Windows projects, Visual Studio by default invokes Clang in [clang-cl](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) mode and links with the Microsoft implementation of the Standard Library. By default, **clang-cl.exe** is located in `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin`.
 
-If you are using a custom Clang installation, then you can either substitute a hard-coded path under **Project** > **Properties** > **VC++ DIrectories** > **Configuration Properties** > **Executable Directories**, or else change the value of the `LLVMInstallDir` variable. See [Set a custom LLVM location](#custom_llvm_location) for more information.
+If you are using a custom Clang installation, you can either modify **Project** > **Properties** > **VC++ DIrectories** > **Configuration Properties** > **Executable Directories** by adding the custom Clang installation root as the first directory there, or change the value of the `LLVMInstallDir` property. See [Set a custom LLVM location](#custom_llvm_location) for more information.
 
 ## Configure a Linux project to use Clang tools
 
@@ -46,17 +46,11 @@ To configure a Visual Studio Linux project to use Clang:
 
 ![Clang component installation](media/clang-msbuild-prop-page.png)
 
-On Linux, Visual Studio by default uses the first Clang location that it encounters in the PATH environment variable. If you are using a custom Clang installation, then you must change the value of the `LLVMInstallDir` variable or else substitute a hard-coded path under **Project** > **Properties** > **VC++ DIrectories** > **Configuration Properties** > **Executable Directories**. See [Set a custom LLVM location](#custom_llvm_location) for more information.
+On Linux, Visual Studio by default uses the first Clang location that it encounters in the PATH environment property. If you are using a custom Clang installation, then you must change the value of the `LLVMInstallDir` property or else substitute a path under **Project** > **Properties** > **VC++ DIrectories** > **Configuration Properties** > **Executable Directories**. See [Set a custom LLVM location](#custom_llvm_location) for more information.
 
 ## <a name="custom_llvm_location"></a> Set a custom LLVM location
 
-You can change the value of the  `LLVMInstallDir`variable for a single project by manually editing the project file. To do this:
-
-1. Right-click on the project node, and choose **Unload project**.
-1. Save any changes you have made, and then right-click again on the project node and choose **Edit \<project name>.vcxproj**.
-1. In the `<PropertyGroup Label="Global">` node, add `<LLVMInstallDir>PATH_TO_LLVM</LLVMInstallDir>` (substitute the actual path to LLVM).
-
-You can set a custom path for LLVM for multiple projects by creating a *Directory.build.props* file and adding that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but substitute your actual path):
+You can set a custom path for LLVM for one or more projects by creating a *Directory.build.props* file and adding that file to the root folder of any project. You can add it to the root solution folder to apply it to all projects in the solution. The file should look like this (but substitute your actual path):
 
 ```xml
 <Project>
