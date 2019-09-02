@@ -1,31 +1,33 @@
 ---
-title: "float_control"
-ms.date: "11/04/2016"
+title: "float_control pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
 helpviewer_keywords: ["float_control pragma", "pragmas, float_control"]
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
 ---
-# float_control
+# float_control pragma
 
 Specifies floating-point behavior for a function.
 
 ## Syntax
 
-> **#pragma float_control** [ **(** [ *value* **,** *setting* [ **, push** ] ] | [ **push** | **pop** ] **)** ]
+> **#pragma float_control**\
+> **#pragma float_control(** { **precise** | **strict** | **except** } **,** { **on** | **off** } [ **, push** ] **)**\
+> **#pragma float_control(** { **push** | **pop** } **)**
 
 ## Options
 
-*value*, *setting* [, **push**]<br/>
-Specifies floating-point behavior. *value* can be **precise**, **strict**, or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). The *setting* can either be **on** or **off**.
+**precise** | **strict** | **except**, **on** | **off**, **push**\
+Specifies floating-point behavior, which can be **precise**, **strict**, or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). The setting can either be **on** or **off**.
 
-If *value* is **strict**, the settings for both **strict** and **except** are specified by *setting*. **except** can only be set to **on** when **precise** or **strict** is also set to **on**.
+When **strict**, the settings for both **strict** and **except** are specified by the **on** or **off** setting. **except** can only be set to **on** when **precise** or **strict** is also set to **on**.
 
-If the optional **push** token is added, the current setting for *value* is pushed on to the internal compiler stack.
+If the optional **push** token is added, the current setting for **float_control** is pushed on to the internal compiler stack.
 
-**push**<br/>
+**push**\
 Push the current **float_control** setting on to the internal compiler stack
 
-**pop**<br/>
+**pop**\
 Removes the **float_control** setting from the top of the internal compiler stack and makes that the new **float_control** setting.
 
 ## Remarks
@@ -98,4 +100,4 @@ Pass
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

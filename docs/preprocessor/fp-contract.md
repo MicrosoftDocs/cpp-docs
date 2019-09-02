@@ -1,11 +1,11 @@
 ---
-title: "fp_contract"
-ms.date: "03/12/2018"
+title: "fp_contract pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.fp_contract", "fp_contract_CPP"]
 helpviewer_keywords: ["pragmas, fp_contract", "fp_contract pragma"]
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
 ---
-# fp_contract
+# fp_contract pragma
 
 Determines whether floating-point contraction takes place. A floating-point contraction is an instruction such as FMA (Fused-Multiply-Add) that combines two separate floating point operations into a single instruction. Use of these instructions can affect floating-point precision, because instead of rounding after each operation, the processor may round only once after both operations.
 
@@ -67,4 +67,4 @@ out = 4.587525000000000e+03
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

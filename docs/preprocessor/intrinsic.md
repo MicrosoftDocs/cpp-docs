@@ -1,17 +1,17 @@
 ---
-title: "intrinsic"
-ms.date: "08/08/2019"
+title: "intrinsic pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
 helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
 ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
 ---
-# intrinsic
+# intrinsic pragma
 
 Specifies that calls to functions specified in the pragma's argument list are intrinsic.
 
 ## Syntax
 
-> **#pragma intrinsic(** *function1* [**,** _function2_**,** ...] **)**
+> **#pragma intrinsic(** *function1* [**,** _function2_ ... ] **)**
 
 ## Remarks
 
@@ -78,5 +78,5 @@ See [#pragma function](../preprocessor/function-c-cpp.md) for information and an
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
