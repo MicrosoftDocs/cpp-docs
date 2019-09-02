@@ -45,7 +45,7 @@ If a set bit is found, the bit position of the first set bit found is returned i
 |Intrinsic|Architecture|
 |---------------|------------------|
 |`_BitScanForward`|x86, ARM, x64|
-|`_BitScanForward64`|ARM, x64|
+|`_BitScanForward64`|ARM64, x64|
 
 **Header file** \<intrin.h>
 
