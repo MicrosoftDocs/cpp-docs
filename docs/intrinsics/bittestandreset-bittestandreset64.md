@@ -1,6 +1,6 @@
 ---
 title: "_bittestandreset, _bittestandreset64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittestandreset64_cpp", "_bittestandreset", "_bittestandreset_cpp", "_bittestandreset64"]
 helpviewer_keywords: ["btr instruction", "_bittestandreset intrinsic", "_bittestandreset64 intrinsic"]
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf

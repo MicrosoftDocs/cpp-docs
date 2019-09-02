@@ -1,6 +1,6 @@
 ---
 title: "__vmx_vmptrst"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmptrst"]
 helpviewer_keywords: ["__vmx_vmptrst intrinsic", "VMPTRST instruction"]
 ms.assetid: 8dc66e47-03a0-41b0-8e25-c1485f42817a
@@ -13,7 +13,7 @@ Stores the pointer to the current virtual-machine control structure (VMCS) at th
 
 ## Syntax
 
-```
+```C
 void __vmx_vmptrst(
    unsigned __int64 *VmcsPhysicalAddress
 );
@@ -21,7 +21,7 @@ void __vmx_vmptrst(
 
 ### Parameters
 
-*VmcsPhysicalAddress*<br/>
+*VmcsPhysicalAddress*\
 [in] The address where the current VMCS pointer is stored.
 
 ## Remarks
@@ -42,5 +42,5 @@ The `__vmx_vmptrst` function is equivalent to the `VMPTRST` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrld](../intrinsics/vmx-vmptrld.md)

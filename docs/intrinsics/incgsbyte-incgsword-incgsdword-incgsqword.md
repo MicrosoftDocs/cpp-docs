@@ -1,6 +1,6 @@
 ---
 title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__incgsdword", "__incgsqword_cpp", "__incgsword_cpp", "__incgsword", "__incgsbyte", "__incgsbyte_cpp", "__incgsqword", "__incgsdword_cpp"]
 helpviewer_keywords: ["__incgsbyte intrinsic", "__incgsword intrinsic", "__incgsqword intrinsic", "__incgsdword intrinsic"]
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e

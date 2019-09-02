@@ -1,6 +1,6 @@
 ---
 title: "__invlpg"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__invlpg", "__invlpg_cpp"]
 helpviewer_keywords: ["invlpg instruction", "__invlpg intrinsic"]
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794

@@ -1,6 +1,6 @@
 ---
 title: "__emul, __emulu"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__emulu_cpp", "__emul", "__emul_cpp", "__emulu"]
 helpviewer_keywords: ["__emul intrinsic", "__emulu intrinsic"]
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311

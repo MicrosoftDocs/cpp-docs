@@ -1,6 +1,6 @@
 ---
 title: "__outdwordstring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outdwordstring"]
 helpviewer_keywords: ["outsd instruction", "__outdwordstring intrinsic", "rep outsd instruction"]
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a

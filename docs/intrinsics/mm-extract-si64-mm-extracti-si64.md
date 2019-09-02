@@ -1,6 +1,6 @@
 ---
 title: "_mm_extract_si64, _mm_extracti_si64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_extracti_si64", "_mm_extract_si64"]
 helpviewer_keywords: ["extrq instruction", "_mm_extracti_si64 intrinsic", "_mm_extract_si64 intrinsic"]
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7

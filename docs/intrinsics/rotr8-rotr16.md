@@ -1,6 +1,6 @@
 ---
 title: "_rotr8, _rotr16"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_rotr16", "_rotr8"]
 helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff

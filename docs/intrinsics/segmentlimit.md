@@ -1,6 +1,6 @@
 ---
 title: "__segmentlimit"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__segmentlimit"]
 helpviewer_keywords: ["__segmentlimit intrinsic", "lsl instruction"]
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4

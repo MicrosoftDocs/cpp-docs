@@ -1,6 +1,6 @@
 ---
 title: "_mm_cvtsi64x_ss"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_cvtsi64x_ss"]
 helpviewer_keywords: ["cvtsi2ss instruction", "_mm_cvtsi64x_ss intrinsic"]
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f

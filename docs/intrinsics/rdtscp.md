@@ -1,6 +1,6 @@
 ---
 title: "__rdtscp"
-ms.date: "07/11/2019"
+ms.date: "09/02/2019"
 f1_keywords: ["__rdtscp"]
 helpviewer_keywords: ["rdtscp intrinsic", "__rdtscp intrinsic", "rdtscp instruction"]
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee

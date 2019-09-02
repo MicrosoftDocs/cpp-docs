@@ -1,6 +1,6 @@
 ---
 title: "_ReturnAddress"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_ReturnAddress"]
 helpviewer_keywords: ["_ReturnAddress intrinsic", "ReturnAddress intrinsic"]
 ms.assetid: 7f4a5811-35e6-4f64-ba7c-21203380eeda

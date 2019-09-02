@@ -1,6 +1,6 @@
 ---
 title: "__readdr"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readdr"]
 helpviewer_keywords: ["__readdr intrinsic"]
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1

@@ -1,6 +1,6 @@
 ---
 title: "__incfsbyte, __incfsword, __incfsdword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__incfsword", "__incfsbyte_cpp", "__incfsbyte", "__incfsdword", "__incfsword_cpp", "__incfsdword_cpp"]
 helpviewer_keywords: ["__incfsword intrinsic", "__incfsdword intrinsic", "__incfsbyte intrinsic"]
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64

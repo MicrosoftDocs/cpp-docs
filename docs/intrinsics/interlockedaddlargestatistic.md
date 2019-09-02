@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedAddLargeStatistic"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAddLargeStatistic", "_InterlockedAddLargeStatistic_cpp"]
 helpviewer_keywords: ["_InterlockedAddLargeStatistic intrinsic", "InterlockedAddLargeStatistic intrinsic"]
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409

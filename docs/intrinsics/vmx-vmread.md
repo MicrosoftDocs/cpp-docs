@@ -1,6 +1,6 @@
 ---
 title: "__vmx_vmread"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmread"]
 helpviewer_keywords: ["VMREAD instruction", "__vmx_vmread intrinsic"]
 ms.assetid: 08bdd7a0-6435-4ea6-b9a0-f592d870e5aa
@@ -13,19 +13,20 @@ Reads a specified field from the current virtual machine control structure (VMCS
 
 ## Syntax
 
-```
+```C
 unsigned char __vmx_vmread(
    size_t Field,
    size_t *FieldValue
 );
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Field*|[in] The VMCS field to read.|
-|*FieldValue*|[in] A pointer to the location to store the value read from the VMCS field specified by the `Field` parameter.|
+*Field*\
+[in] The VMCS field to read.
+
+*FieldValue*\
+[in] A pointer to the location to store the value read from the VMCS field specified by the `Field` parameter.
 
 ## Return Value
 
@@ -37,7 +38,7 @@ unsigned char __vmx_vmread(
 
 ## Remarks
 
-The `__vmx_vmread` function is equivalent to the `VMREAD` machine instruction. The value of the `Field` parameter is an encoded field index that is described in Intel documentation. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site, then consult Appendix C of that document.
+The `__vmx_vmread` function is equivalent to the `VMREAD` machine instruction. The value of the `Field` parameter is an encoded field index that is described in Intel documentation. For more information, search for Appendix C of "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
 
 ## Requirements
 
@@ -51,5 +52,5 @@ The `__vmx_vmread` function is equivalent to the `VMREAD` machine instruction. T
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

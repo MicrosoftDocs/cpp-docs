@@ -1,6 +1,6 @@
 ---
 title: "__svm_vmsave"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__svm_vmsave"]
 helpviewer_keywords: ["VMSAVE instruction", "__svm_vmsave intrinsic"]
 ms.assetid: 617a60bd-8514-4ba1-8066-bcf4dd481030
@@ -13,17 +13,16 @@ Stores a subset of processor state in the specified virtual machine control bloc
 
 ## Syntax
 
-```
+```C
 void __svm_vmsave(
    size_t VmcbPhysicalAddress
 );
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*VmcbPhysicalAddress*|[in] The physical address of the VMCB.|
+*VmcbPhysicalAddress*\
+[in] The physical address of the VMCB.
 
 ## Remarks
 
@@ -41,6 +40,6 @@ The `__svm_vmsave` function is equivalent to the `VMSAVE` machine instruction. T
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__svm_vmrun](../intrinsics/svm-vmrun.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[__svm_vmrun](../intrinsics/svm-vmrun.md)\
 [__svm_vmload](../intrinsics/svm-vmload.md)

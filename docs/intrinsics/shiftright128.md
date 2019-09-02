@@ -1,6 +1,6 @@
 ---
 title: "__shiftright128"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__shiftright128"]
 helpviewer_keywords: ["__shiftright128 intrinsic"]
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f

@@ -1,6 +1,6 @@
 ---
 title: "__umulh"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__umulh"]
 helpviewer_keywords: ["__umulh intrinsic"]
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
@@ -13,19 +13,19 @@ Return the high 64 bits of the product of two 64-bit unsigned integers.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __umulh(
    unsigned __int64 a,
    unsigned __int64 b
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] The first number to multiply.
 
-*b*<br/>
+*b*\
 [in] The second number to multiply.
 
 ## Return Value
@@ -46,7 +46,7 @@ These routines are only available as intrinsics.
 
 ## Example
 
-```
+```cpp
 // umulh.cpp
 // processor: X64
 #include <cstdio>

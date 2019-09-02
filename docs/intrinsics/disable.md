@@ -1,6 +1,6 @@
 ---
 title: "_disable"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_disable_cpp", "_disable"]
 helpviewer_keywords: ["_disable intrinsic", "rsm instruction", "disable intrinsic"]
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6

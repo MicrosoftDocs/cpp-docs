@@ -1,6 +1,6 @@
 ---
 title: "_BitScanReverse, _BitScanReverse64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_BitScanReverse64", "_BitScanReverse_cpp", "_BitScanReverse", "_BitScanReverse64_cpp"]
 helpviewer_keywords: ["bsr instruction", "_BitScanReverse intrinsic", "BitScanReverse intrinsic"]
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376

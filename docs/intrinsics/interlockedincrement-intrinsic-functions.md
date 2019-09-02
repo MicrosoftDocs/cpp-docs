@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedIncrement Intrinsic Functions"
-ms.date: "12/17/2018" 
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedIncrement_acq", "_InterlockedIncrement16_rel_cpp", "_InterlockedIncrement16_cpp", "_InterlockedIncrement64_rel", "_InterlockedIncrement_rel", "_InterlockedIncrement64_nf", "_InterlockedIncrement16_acq_cpp", "_InterlockedIncrement_rel_cpp", "_InterlockedIncrement64", "_InterlockedIncrement64_rel_cpp", "_InterlockedIncrement16_nf", "_InterlockedIncrement16_rel", "_InterlockedIncrement16_acq", "_InterlockedIncrement_nf", "_InterlockedIncrement_acq_cpp", "_InterlockedIncrement64_cpp", "_InterlockedIncrement64_acq_cpp", "_InterlockedIncrement", "_InterlockedIncrement_cpp", "_InterlockedIncrement64_acq", "_InterlockedIncrement16"]
 helpviewer_keywords: ["_InterlockedIncrement64_rel intrinsic", "_InterlockedIncrement16_rel intrinsic", "InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16 intrinsic", "_InterlockedIncrement16_acq intrinsic", "_InterlockedIncrement_nf intrinsic", "_InterlockedIncrement_rel intrinsic", "_InterlockedIncrement64_nf intrinsic", "InterlockedIncrement_rel intrinsic", "InterlockedIncrement_acq intrinsic", "_InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16_nf intrinsic", "_InterlockedIncrement intrinsic", "_InterlockedIncrement64 intrinsic", "InterlockedIncrement64_rel intrinsic", "InterlockedIncrement64 intrinsic", "InterlockedIncrement16 intrinsic", "_InterlockedIncrement_acq intrinsic", "InterlockedIncrement intrinsic"]
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482

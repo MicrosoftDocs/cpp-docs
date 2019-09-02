@@ -1,6 +1,6 @@
 ---
 title: "__ll_lshift"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__ll_lshift_cpp", "__ll_lshift"]
 helpviewer_keywords: ["ll_lshift intrinsic", "__ll_lshift intrinsic"]
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94

@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedExchange Intrinsic Functions"
-ms.date: "12/17/2018" 
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchange_rel", "_InterlockedExchange8_nf", "_InterlockedExchange_acq_cpp", "_InterlockedExchange_nf", "_InterlockedExchange64_nf", "_InterlockedExchange_HLEAcquire", "_InterlockedExchange_cpp", "_InterlockedExchange64_acq_cpp", "_InterlockedExchange64_acq", "_InterlockedExchange64_HLERelease", "_InterlockedExchange8_acq", "_InterlockedExchange16_acq", "_InterlockedExchange", "_InterlockedExchange64_HLEAcquire", "_InterlockedExchange8", "_InterlockedExchange64_rel", "_InterlockedExchange_acq", "_InterlockedExchange16", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange64", "_InterlockedExchange_HLERelease", "_InterlockedExchange64_cpp", "_InterlockedExchange8_rel"]
 helpviewer_keywords: ["_InterlockedExchange8", "_InterlockedExchange64 intrinsic", "_InterlockedExchange_acq intrinsic", "InterlockedExchange64 intrinsic", "_InterlockedExchange64_acq intrinsic", "InterlockedExchange64_acq intrinsic", "_InterlockedExchange16_acq", "_InterlockedExchange8_acq", "_InterlockedExchange16", "_InterlockedExchange8_rel", "InterlockedExchange_acq intrinsic", "InterlockedExchange intrinsic", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange intrinsic", "_InterlockedExchange8_nf"]
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209

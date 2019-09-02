@@ -1,6 +1,6 @@
 ---
 title: "_mm_stream_si64x"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_si64x"]
 helpviewer_keywords: ["movnti instruction", "_mm_stream_si64x intrinsic"]
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7

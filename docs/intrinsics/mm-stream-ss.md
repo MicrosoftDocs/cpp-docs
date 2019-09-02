@@ -1,6 +1,6 @@
 ---
 title: "_mm_stream_ss"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_ss"]
 helpviewer_keywords: ["movntss instruction", "_mm_stream_ss intrinsic"]
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce

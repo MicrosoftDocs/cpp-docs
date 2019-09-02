@@ -1,6 +1,6 @@
 ---
 title: "__readmsr"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readmsr"]
 helpviewer_keywords: ["Read Model Specific Register", "rdmsr instruction", "__readmsr intrinsic"]
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716

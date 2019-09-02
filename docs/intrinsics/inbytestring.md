@@ -1,6 +1,6 @@
 ---
 title: "__inbytestring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__inbytestring", "__inbytestring_cpp"]
 helpviewer_keywords: ["rep insb instruction", "__inbytestring intrinsic"]
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b

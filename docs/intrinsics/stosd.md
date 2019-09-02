@@ -1,6 +1,6 @@
 ---
 title: "__stosd"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosd"]
 helpviewer_keywords: ["stosd instruction", "rep stosd instruction", "__stosd intrinsic"]
 ms.assetid: 03104247-1cea-49f6-b6f8-287917bf5680

@@ -1,6 +1,6 @@
 ---
 title: "__assume"
-ms.date: "10/09/2018"
+ms.date: "09/02/2019"
 f1_keywords: ["__assume", "_assume", "__assume_cpp"]
 helpviewer_keywords: ["__assume keyword [C++]"]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7

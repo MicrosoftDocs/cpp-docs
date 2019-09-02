@@ -1,6 +1,6 @@
 ---
 title: "__indword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__indword_cpp", "__indword"]
 helpviewer_keywords: ["in instruction", "__indword intrinsic"]
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260

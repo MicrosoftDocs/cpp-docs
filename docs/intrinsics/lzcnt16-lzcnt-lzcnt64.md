@@ -1,6 +1,6 @@
 ---
 title: "__lzcnt16, __lzcnt, __lzcnt64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__lzcnt64", "__lzcnt16", "__lzcnt"]
 helpviewer_keywords: ["__lzcnt intrinsic", "lzcnt instruction", "lzcnt16 intrinsic", "lzcnt intrinsic", "__lzcnt16 intrinsic", "lzcnt64 intrinsic", "__lzcnt64 intrinsic"]
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e

@@ -1,6 +1,6 @@
 ---
 title: "__readeflags"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readeflags"]
 helpviewer_keywords: ["__readeflags intrinsic"]
 ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b

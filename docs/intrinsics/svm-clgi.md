@@ -1,6 +1,6 @@
 ---
 title: "__svm_clgi"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__svm_clgi"]
 helpviewer_keywords: ["CLGI instruction", "__svm_clgi intrinsic"]
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858

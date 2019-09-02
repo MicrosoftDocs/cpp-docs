@@ -1,6 +1,6 @@
 ---
 title: "__shiftleft128"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__shiftleft128"]
 helpviewer_keywords: ["__shiftleft128 intrinsic"]
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a

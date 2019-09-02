@@ -1,6 +1,6 @@
 ---
 title: "_bittest, _bittest64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]
 helpviewer_keywords: ["_bittest intrinsic", "_bittest64 intrinsic", "bt instruction"]
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937

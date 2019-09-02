@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedCompareExchange128 intrinsic functions"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128", "_InterlockedCompareExchange128_acq", "_InterlockedCompareExchange128_nf", "_InterlockedCompareExchange128_np", "_InterlockedCompareExchange128_rel"]
 helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56

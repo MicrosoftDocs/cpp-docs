@@ -1,6 +1,6 @@
 ---
 title: "_InterlockedExchangePointer Intrinsic Functions"
-ms.date: "12/17/2018" 
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchangePointer_cpp", "_InterlockedExchangePointer_rel", "_InterlockedExchangePointer_nf", "_InterlockedExchangePointer_HLERelease", "_InterlockedExchangePointer_acq", "_InterlockedExchangePointer", "_InterlockedExchangePointer_acq_cpp", "_InterlockedExchangePointer_HLEAcquire"]
 helpviewer_keywords: ["_InterlockedExchangePointer_rel intrinsic", "_InterlockedExchangePointer_HLERelease intrinsic", "_InterlockedExchangePointer intrinsic", "_InterlockedExchangePointer_nf intrinsic", "_InterlockedExchangePointer_acq intrinsic", "_InterlockedExchangePointer_HLEAcquire intrinsic", "InterlockedExchangePointer_acq intrinsic", "InterlockedExchangePointer intrinsic"]
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb

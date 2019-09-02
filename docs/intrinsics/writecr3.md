@@ -1,6 +1,6 @@
 ---
 title: "__writecr3"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_writecr3"]
 helpviewer_keywords: ["_writecr3 intrinsic"]
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
@@ -13,15 +13,15 @@ Writes the value `Data` to the CR3 register.
 
 ## Syntax
 
-```
+```C
 void writecr3(
    unsigned __int64 Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Data*<br/>
+*Data*\
 [in] The value to write to the CR3 register.
 
 ## Requirements

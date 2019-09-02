@@ -1,6 +1,6 @@
 ---
 title: "_bittestandset, _bittestandset64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittestandset_cpp", "_bittestandset64_cpp", "_bittestandset64", "_bittestandset"]
 helpviewer_keywords: ["bts instruction", "_bittestandset intrinsic", "_bittestandset64 intrinsic"]
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203

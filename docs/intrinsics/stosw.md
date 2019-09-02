@@ -1,6 +1,6 @@
 ---
 title: "__stosw"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosw"]
 helpviewer_keywords: ["stosw instruction", "__stosw intrinsic", "rep stosw instruction"]
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133

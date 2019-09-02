@@ -1,6 +1,6 @@
 ---
 title: "Intrinsics available on all architectures"
-ms.date: "04/11/2018"
+ms.date: "09/02/2019"
 helpviewer_keywords: ["cl.exe compiler, intrinsics"]
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
 ---
@@ -52,8 +52,6 @@ __code_seg
 |[_InterlockedXor](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedXor16](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
 |[_InterlockedXor8](../intrinsics/interlockedxor-intrinsic-functions.md)|intrin.h|
-|[_mul128](../intrinsics/mul128.md)|intrin.h|
-|[__mulh](../intrinsics/mulh.md)|intrin.h|
 |[__nop](../intrinsics/nop.md)|intrin.h|
 |[_ReadBarrier](../intrinsics/readbarrier.md)|intrin.h|
 |[_ReadWriteBarrier](../intrinsics/readwritebarrier.md)|intrin.h|
@@ -62,10 +60,6 @@ __code_seg
 |[_rotl8](../intrinsics/rotl8-rotl16.md)|intrin.h|
 |[_rotr16](../intrinsics/rotr8-rotr16.md)|intrin.h|
 |[_rotr8](../intrinsics/rotr8-rotr16.md)|intrin.h|
-|[__shiftleft128](../intrinsics/shiftleft128.md)|intrin.h|
-|[__shiftright128](../intrinsics/shiftright128.md)|intrin.h|
-|[_umul128](../intrinsics/umul128.md)|intrin.h|
-|[__umulh](../intrinsics/umulh.md)|intrin.h|
 |[_WriteBarrier](../intrinsics/writebarrier.md)|intrin.h|
 
 ## UCRT intrinsics

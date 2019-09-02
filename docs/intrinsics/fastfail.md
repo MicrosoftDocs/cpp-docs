@@ -1,6 +1,6 @@
 ---
 title: "__fastfail"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
 ---
 # __fastfail

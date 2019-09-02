@@ -1,6 +1,6 @@
 ---
 title: "__nop"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__nop"]
 helpviewer_keywords: ["nop instruction", "__nop intrinsic"]
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9

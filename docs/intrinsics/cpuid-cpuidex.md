@@ -1,6 +1,6 @@
 ---
 title: "__cpuid, __cpuidex"
-ms.date: "03/22/2018"
+ms.date: "09/02/2019"
 f1_keywords: ["__cpuid_cpp", "__cpuid"]
 helpviewer_keywords: ["__cpuid intrinsic", "cpuid instruction", "cpuid intrinsic"]
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc

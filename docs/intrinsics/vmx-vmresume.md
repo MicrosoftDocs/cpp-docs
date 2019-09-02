@@ -1,6 +1,6 @@
 ---
 title: "__vmx_vmresume"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmresume"]
 helpviewer_keywords: ["__vmx_vmresume intrinsic", "VMRESUME instruction"]
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
@@ -13,7 +13,7 @@ Resumes VMX non-root operation by using the current virtual machine control stru
 
 ## Syntax
 
-```
+```C
 unsigned char __vmx_vmresume(
    void);
 ```
@@ -44,6 +44,6 @@ The `__vmx_vmresume` function is equivalent to the `VMRESUME` machine instructio
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

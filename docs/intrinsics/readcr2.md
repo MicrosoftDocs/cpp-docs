@@ -1,6 +1,6 @@
 ---
 title: "__readcr2"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr2"]
 helpviewer_keywords: ["__readcr2 intrinsic"]
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27

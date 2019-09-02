@@ -1,6 +1,6 @@
 ---
 title: "__movsw"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__movsw"]
 helpviewer_keywords: ["movsw instruction", "rep movsw instruction", "__movsw intrinsic"]
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435

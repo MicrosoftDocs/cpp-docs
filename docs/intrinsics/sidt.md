@@ -1,6 +1,6 @@
 ---
 title: "__sidt"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__sidt"]
 helpviewer_keywords: ["sidt instruction", "__sidt intrinsic"]
 ms.assetid: 01e83d14-6e63-4dea-8f64-5a0339d69641

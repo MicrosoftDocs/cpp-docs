@@ -1,6 +1,6 @@
 ---
 title: "__vmx_on"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_on"]
 helpviewer_keywords: ["VMXON instruction", "__vmx_on intrinsic"]
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
@@ -13,15 +13,15 @@ Activates virtual machine extensions (VMX) operation in the processor.
 
 ## Syntax
 
-```
+```C
 unsigned char __vmx_on(
    unsigned __int64 *VmsSupportPhysicalAddress
 );
 ```
 
-#### Parameters
+### Parameters
 
-*VmsSupportPhysicalAddress*<br/>
+*VmsSupportPhysicalAddress*\
 [in] A pointer to a 64-bit physical address that points to a virtual-machine control structure (VMCS).
 
 ## Return Value

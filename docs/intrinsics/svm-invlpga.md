@@ -1,6 +1,6 @@
 ---
 title: "__svm_invlpga"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__svm_invlpga"]
 helpviewer_keywords: ["__svm_invlpga intrinsic", "INVLPGA instruction"]
 ms.assetid: aa6578ce-8278-464b-8815-a0fc45330915

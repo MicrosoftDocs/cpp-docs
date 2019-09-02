@@ -1,6 +1,6 @@
 ---
 title: "__addfsbyte, __addfsword, __addfsdword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__addfsbyte_cpp", "__addfsdword", "__addfsword_cpp", "__addfsbyte", "__addfsword", "__addfsdword_cpp"]
 helpviewer_keywords: ["__addfsdword intrinsic", "__addfsword intrinsic", "__addfsbyte intrinsic"]
 ms.assetid: 706c70df-6b52-4401-9268-2977ed8ad715

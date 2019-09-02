@@ -1,6 +1,6 @@
 ---
 title: "_ReadWriteBarrier"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_ReadWriteBarrier"]
 helpviewer_keywords: ["ReadWriteBarrier intrinsic", "_ReadWriteBarrier intrinsic"]
 ms.assetid: dd9f58b5-8bb6-494e-bb0f-9fe184f3908d

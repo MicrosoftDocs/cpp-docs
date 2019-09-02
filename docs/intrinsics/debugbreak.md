@@ -1,6 +1,6 @@
 ---
 title: "__debugbreak"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__debugbreak_cpp", "__debugbreak"]
 helpviewer_keywords: ["breakpoints, __debugbreak intrinsic", "__debugbreak intrinsic"]
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830

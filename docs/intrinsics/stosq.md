@@ -1,6 +1,6 @@
 ---
 title: "__stosq"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosq"]
 helpviewer_keywords: ["rep stosq instruction", "stosq instruction", "__stosq intrinsic"]
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209

@@ -1,6 +1,6 @@
 ---
 title: "__noop"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__noop_cpp", "__noop"]
 helpviewer_keywords: ["__noop keyword [C++]"]
 ms.assetid: 81ac6e97-7bf8-496b-b3c4-fd02837573e5

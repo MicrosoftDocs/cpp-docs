@@ -1,6 +1,6 @@
 ---
 title: "_interlockedbittestandset Intrinsic Functions"
-ms.date: "12/17/2018" 
+ms.date: "09/02/2019"
 f1_keywords: ["_interlockedbittestandset_cpp", "_interlockedbittestandset_HLEAcquire", "_interlockedbittestandset64", "_interlockedbittestandset64_acq", "_interlockedbittestandset64_nf", "_interlockedbittestandset64_rel", "_interlockedbittestandset", "_interlockedbittestandset_rel", "_interlockedbittestandset64_HLEAcquire", "_interlockedbittestandset_HLERelease", "_interlockedbittestandset_acq", "_interlockedbittestandset_nf", "_interlockedbittestandset64_cpp", "_interlockedbittestandset64_HLERelease"]
 helpviewer_keywords: ["_interlockedbittestandset intrinsic", "_interlockedbittestandset64 intrinsic", "lock_bts instruction"]
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc

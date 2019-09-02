@@ -1,6 +1,6 @@
 ---
 title: "__stosb"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosb"]
 helpviewer_keywords: ["rep stosb instruction", "__stosb intrinsic", "stosb instruction"]
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c

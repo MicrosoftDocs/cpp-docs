@@ -1,6 +1,6 @@
 ---
 title: "_interlockedbittestandreset Intrinsic Functions"
-ms.date: "12/17/2018" 
+ms.date: "09/02/2019"
 f1_keywords: ["_interlockedbittestandreset_rel", "_interlockedbittestandreset64", "_interlockedbittestandreset64_acq", "_interlockedbittestandreset64_nf", "_interlockedbittestandreset64_rel", "_interlockedbittestandreset64_HLERelease", "_interlockedbittestandreset_HLERelease", "_interlockedbittestandreset_HLEAcquire", "_interlockedbittestandreset_acq", "_interlockedbittestandreset_cpp", "_interlockedbittestandreset_nf", "_interlockedbittestandreset64_cpp", "_interlockedbittestandreset64_HLEAcquire", "_interlockedbittestandreset"]
 helpviewer_keywords: ["lock_btr instruction", "_interlockedbittestandreset64 intrinsic", "_interlockedbittestandreset intrinsic"]
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9

@@ -1,6 +1,6 @@
 ---
 title: "__movsq"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__movsq"]
 helpviewer_keywords: ["__movsq intrinsic", "rep movsq instruction", "movsq instruction"]
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835

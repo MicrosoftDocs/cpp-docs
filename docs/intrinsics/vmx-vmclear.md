@@ -1,6 +1,6 @@
 ---
 title: "__vmx_vmclear"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmclear"]
 helpviewer_keywords: ["VMCLEAR instruction", "__vmx_vmclear intrinsic"]
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
@@ -13,17 +13,16 @@ Initializes the specified virtual machine control structure (VMCS) and sets its 
 
 ## Syntax
 
-```
+```C
 unsigned char __vmx_vmclear(
    unsigned __int64 *VmcsPhysicalAddress
 );
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*VmcsPhysicalAddress*|[in] A pointer to a 64-bit memory location that contains the physical address of the VMCS to clear.|
+*VmcsPhysicalAddress*\
+[in] A pointer to a 64-bit memory location that contains the physical address of the VMCS to clear.
 
 ## Return Value
 
@@ -51,6 +50,6 @@ The `__vmx_vmclear` function is equivalent to the `VMCLEAR` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)

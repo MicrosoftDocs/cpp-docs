@@ -1,6 +1,6 @@
 ---
 title: "__outbyte"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outbyte"]
 helpviewer_keywords: ["out instruction", "__outbyte intrinsic"]
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a

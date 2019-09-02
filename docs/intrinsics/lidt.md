@@ -1,6 +1,6 @@
 ---
 title: "__lidt"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__lidt", "__lidt_cpp"]
 helpviewer_keywords: ["LIDT instruction", "__lidt intrinsic"]
 ms.assetid: 8298d25d-a19e-4900-828d-6b3b09841882

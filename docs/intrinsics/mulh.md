@@ -1,6 +1,6 @@
 ---
 title: "__mulh"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__mulh"]
 helpviewer_keywords: ["__mulh intrinsic"]
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3

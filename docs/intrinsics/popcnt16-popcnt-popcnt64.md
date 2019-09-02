@@ -1,6 +1,6 @@
 ---
 title: "__popcnt16, __popcnt, __popcnt64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
 helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b

@@ -1,6 +1,6 @@
 ---
 title: "_bittestandcomplement, _bittestandcomplement64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittestandcomplement64", "_bittestandcomplement64_cpp", "_bittestandcomplement_cpp", "_bittestandcomplement"]
 helpviewer_keywords: ["btc instruction", "_bittestandcomplement intrinsic", "_bittestandcomplement64 intrinsic"]
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806

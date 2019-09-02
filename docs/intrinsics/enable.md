@@ -1,6 +1,6 @@
 ---
 title: "_enable"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_enable", "_enable_cpp"]
 helpviewer_keywords: ["enable intrinsic", "_enable intrinsic", "ssm instruction"]
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d

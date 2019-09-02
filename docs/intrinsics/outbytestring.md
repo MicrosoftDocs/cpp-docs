@@ -1,6 +1,6 @@
 ---
 title: "__outbytestring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outbytestring"]
 helpviewer_keywords: ["rep outsb instruction", "__outbytestring intrinsic", "outsb instruction"]
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c

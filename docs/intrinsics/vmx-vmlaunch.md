@@ -1,6 +1,6 @@
 ---
 title: "__vmx_vmlaunch"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmlaunch"]
 helpviewer_keywords: ["VMLAUNCH instruction", "__vmx_vmlaunch intrinsic"]
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
@@ -13,9 +13,8 @@ Places the calling application in VMX non-root operation state (VM enter) by usi
 
 ## Syntax
 
-```
-unsigned char __vmx_vmlaunch(
-   void);
+```C
+unsigned char __vmx_vmlaunch(void);
 ```
 
 ## Return Value
@@ -44,6 +43,6 @@ The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instructio
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__vmx_vmresume](../intrinsics/vmx-vmresume.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[__vmx_vmresume](../intrinsics/vmx-vmresume.md)\
 [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

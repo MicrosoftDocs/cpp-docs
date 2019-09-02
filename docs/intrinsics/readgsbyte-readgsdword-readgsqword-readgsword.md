@@ -1,6 +1,6 @@
 ---
 title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readgsbyte", "__readgsdword", "__readgsqword", "__readgsword"]
 helpviewer_keywords: ["__readgsword intrinsic", "__readgsdword intrinsic", "__readgsqword intrinsic", "__readgsbyte intrinsic"]
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236

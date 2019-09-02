@@ -1,6 +1,6 @@
 ---
 title: "__inwordstring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__inwordstring", "__inwordstring_cpp"]
 helpviewer_keywords: ["__inwordstring intrinsic", "rep insw instruction"]
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
