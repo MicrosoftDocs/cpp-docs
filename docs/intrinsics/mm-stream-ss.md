@@ -13,20 +13,20 @@ Writes 32-bit data to a memory location without polluting the caches.
 
 ## Syntax
 
-```
+```C
 void _mm_stream_ss(
-   float * Dest,
+   float * Destination,
    __m128 Source
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] A pointer to the location where the source data is written.
 
-*Source*<br/>
-[in] A 128-bit number that contains the `float` value to be written in its bottom 32 bits..
+*Source*\
+[in] A 128-bit number that contains the `float` value to be written in its bottom 32 bits.
 
 ## Return Value
 
@@ -42,9 +42,9 @@ None.
 
 ## Remarks
 
-This intrinsic generates the `movntss` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit is 1 when the instruction is supported, and 0 otherwise.
+The intrinsic generates the `movntss` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit is 1 when the instruction is supported, and 0 otherwise.
 
-If you run code that uses the `_mm_stream_ss` intrinsic on hardware that does not support the `movntss` instruction, the results are unpredictable.
+If you run code that uses the `_mm_stream_ss` intrinsic on hardware that doesn't support the `movntss` instruction, the results are unpredictable.
 
 ## Example
 
@@ -80,12 +80,12 @@ f[2] = -3, f[3] = 3
 
 **END Microsoft Specific**
 
-Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
+Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
 ## See also
 
-[_mm_stream_sd](../intrinsics/mm-stream-sd.md)<br/>
-[_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)<br/>
-[_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)<br/>
-[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)<br/>
+[_mm_stream_sd](../intrinsics/mm-stream-sd.md)\
+[_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)\
+[_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)\
+[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

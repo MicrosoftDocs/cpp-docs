@@ -13,7 +13,7 @@ Reads the CR8 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr8(void);
 ```
 
@@ -31,7 +31,7 @@ The value in the CR8 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 

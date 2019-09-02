@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosq`).
 
 ## Syntax
 
-```
+```C
 void __stosb(
-   unsigned __int64* Dest,
+   unsigned __int64* Destination,
    unsigned __int64 Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of quadwords to write.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __stosb(
 
 ## Remarks
 
-The result is that the quadword `Data` is written into a block of `Count` quadwords in the `Dest` string.
+The result is that the quadword *Data* is written into a block of *Count* quadwords in the *Destination* string.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```C
 // stosq.c
 // processor: x64
 #include <stdio.h>
@@ -66,9 +66,7 @@ int main()
 }
 ```
 
-## Output
-
-```
+```Output
 0 ffffffffffff ffffffffffff 0
 ```
 

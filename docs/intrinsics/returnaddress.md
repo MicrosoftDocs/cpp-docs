@@ -23,7 +23,7 @@ When `_ReturnAddress` is used in a program compiled with [/clr](../build/referen
 
 ## Example
 
-```
+```cpp
 // compiler_intrinsics__ReturnAddress.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -56,6 +56,6 @@ int main(void)
 
 ## See also
 
-[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)\
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

@@ -13,7 +13,7 @@ Provides the address of the memory location that holds the return address of the
 
 ## Syntax
 
-```
+```C
 void * _AddressOfReturnAddress();
 ```
 
@@ -21,7 +21,7 @@ void * _AddressOfReturnAddress();
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_AddressOfReturnAddress`|x86, x64|
+|`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -33,7 +33,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // compiler_intrinsics_AddressOfReturnAddress.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -67,5 +67,5 @@ int main() {
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

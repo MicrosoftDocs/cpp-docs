@@ -13,7 +13,7 @@ Generates the `cpuid` instruction that is available on x86 and x64. This instruc
 
 ## Syntax
 
-```cpp
+```C
 void __cpuid(
    int cpuInfo[4],
    int function_id
@@ -28,14 +28,14 @@ void __cpuidex(
 
 ### Parameters
 
-[out] *cpuInfo*<br/>
-An array of four integers that contains the information returned in EAX, EBX, ECX, and EDX about supported features of the CPU.
+*cpuInfo*\
+[out] An array of four integers that contains the information returned in EAX, EBX, ECX, and EDX about supported features of the CPU.
 
-[in] *function_id*<br/>
-A code that specifies the information to retrieve, passed in EAX.
+*function_id*\
+[in] A code that specifies the information to retrieve, passed in EAX.
 
-[in] *subfunction_id*<br/>
-An additional code that specifies information to retrieve, passed in ECX.
+*subfunction_id*\
+[in] An additional code that specifies information to retrieve, passed in ECX.
 
 ## Requirements
 
@@ -48,9 +48,9 @@ An additional code that specifies information to retrieve, passed in ECX.
 
 ## Remarks
 
-This intrinsic stores the supported features and CPU information returned by the `cpuid` instruction in *cpuInfo*, an array of four 32-bit integers that is filled with the values of the EAX, EBX, ECX, and EDX registers (in that order). The information returned has a different meaning depending on the value passed as the *function_id* parameter. The information returned with various values of *function_id* is processor-dependent.
+This intrinsic stores the supported features and CPU information returned by the `cpuid` instruction in *cpuInfo*, an array of four 32-bit integers that's filled with the values of the EAX, EBX, ECX, and EDX registers (in that order). The information returned has a different meaning depending on the value passed as the *function_id* parameter. The information returned with various values of *function_id* is processor-dependent.
 
-The `__cpuid` intrinsic clears the ECX register before calling the `cpuid` instruction. The `__cpuidex` intrinsic sets the value of the ECX register to *subfunction_id* before it generates the `cpuid` instruction. This enables you to gather additional information about the processor.
+The `__cpuid` intrinsic clears the ECX register before calling the `cpuid` instruction. The `__cpuidex` intrinsic sets the value of the ECX register to *subfunction_id* before it generates the `cpuid` instruction. It enables you to gather additional information about the processor.
 
 For more information about the specific parameters to use and the values returned by these intrinsics on Intel processors, see the documentation for the `cpuid` instruction in [Intel 64 and IA-32 Architectures Software Developers Manual Volume 2: Instruction Set Reference](https://go.microsoft.com/fwlink/p/?LinkID=510021) and [Intel Architecture Instruction Set Extensions Programming Reference](https://go.microsoft.com/fwlink/p/?LinkID=506627). Intel documentation uses the terms "leaf" and "subleaf" for the *function_id* and *subfunction_id* parameters passed in EAX and ECX.
 
@@ -60,7 +60,7 @@ When the *function_id* argument is 0, *cpuInfo*[0] returns the highest available
 
 Support for specific instruction set extensions and CPU features is encoded in the *cpuInfo* results returned for higher *function_id* values. For more information, see the manuals linked above, and the following example code.
 
-Some processors support Extended Function CPUID information. If this is supported, *function_id* values from 0x80000000 might be used to return information. To determine the maximum meaningful value allowed, set *function_id* to 0x80000000. The maximum value of *function_id* supported for extended functions will be written to *cpuInfo*[0].
+Some processors support Extended Function CPUID information. When it's supported, *function_id* values from 0x80000000 might be used to return information. To determine the maximum meaningful value allowed, set *function_id* to 0x80000000. The maximum value of *function_id* supported for extended functions will be written to *cpuInfo*[0].
 
 ## Example
 

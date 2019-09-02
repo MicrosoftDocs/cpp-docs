@@ -13,23 +13,23 @@ Generates a repeated Move String (`rep movsq`) instruction.
 
 ## Syntax
 
-```
+```C
 void __movsq(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char* Source,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Source*<br/>
+*Source*\
 [in] The source of the operation.
 
-*Count*<br/>
+*Count*\
 [in] The number of quadwords to copy.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __movsq(
 
 ## Remarks
 
-The result is that the first `Count` quadwords pointed to by `Source` are copied to the `Dest` string.
+The result is that the first *Count* quadwords pointed to by *Source* are copied to the *Destination* string.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // movsq.cpp
 // processor: x64
 #include <stdio.h>

@@ -13,15 +13,15 @@ Reads data from the specified port using the `in` instruction.
 
 ## Syntax
 
-```
+```C
 unsigned short __inword(
    unsigned short Port
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
 ## Return Value

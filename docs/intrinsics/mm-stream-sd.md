@@ -13,20 +13,20 @@ Writes 64-bit data to a memory location without polluting the caches.
 
 ## Syntax
 
-```
+```C
 void _mm_stream_sd(
    double * Dest,
    __m128d Source
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Dest*\
 [out] A pointer to the location where the source data will be written.
 
-*Source*<br/>
-[in] A 128-bit value containing the `double` value to be written in its bottom 64 bits..
+*Source*\
+[in] A 128-bit value containing the `double` value to be written in its bottom 64 bits.
 
 ## Return Value
 
@@ -42,13 +42,13 @@ None.
 
 ## Remarks
 
-This intrinsic generates the `movntsd` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit is 1 if the hardware supports this instruction, and 0 otherwise.
+The intrinsic generates the `movntsd` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 6 of `CPUInfo[2] (ECX)`. This bit is 1 if the hardware supports this instruction, and 0 otherwise.
 
-If you run code that uses the `_mm_stream_sd` intrinsic on hardware that does not support the `movntsd` instruction, the results are unpredictable.
+If you run code that uses the `_mm_stream_sd` intrinsic on hardware that doesn't support the `movntsd` instruction, the results are unpredictable.
 
 ## Example
 
-```
+```cpp
 // Compile this sample with: /EHsc
 #include <iostream>
 #include <intrin.h>
@@ -74,11 +74,11 @@ d[0] = -1, d[1] = 1
 
 **END Microsoft Specific**
 
-Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
+Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
 ## See also
 
-[_mm_stream_ss](../intrinsics/mm-stream-ss.md)<br/>
-[_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)<br/>
-[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)<br/>
+[_mm_stream_ss](../intrinsics/mm-stream-ss.md)\
+[_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)\
+[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

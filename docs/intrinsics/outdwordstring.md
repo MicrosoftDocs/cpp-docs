@@ -13,7 +13,7 @@ Generates the `rep outsd` instruction, which sends `Count` doublewords starting 
 
 ## Syntax
 
-```
+```C
 void __outdwordstring(
    unsigned short Port,
    unsigned long* Buffer,
@@ -21,15 +21,15 @@ void __outdwordstring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Buffer*<br/>
+*Buffer*\
 [in] A pointer to the data to be sent out the specified port.
 
-*Count*<br/>
+*Count*\
 [in] The number of doublewords to send.
 
 ## Requirements

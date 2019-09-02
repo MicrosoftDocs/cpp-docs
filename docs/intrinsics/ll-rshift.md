@@ -9,23 +9,23 @@ ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
 
 **Microsoft Specific**
 
-Shifts a 64-bit value specified by the first parameter to the right by a number of bits specified by the second parameter.
+Shifts a 64-bit value specified by the first parameter to the right, by a number of bits specified by the second parameter.
 
 ## Syntax
 
-```
+```C
 __int64 __ll_rshift(
    __int64 Mask,
    int nBit
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Mask*<br/>
+*Mask*\
 [in] The 64-bit integer value to shift right.
 
-*nBit*<br/>
+*nBit*\
 [in] The number of bits to shift, modulo 64 on x64, and modulo 32 on x86.
 
 ## Return Value
@@ -42,11 +42,11 @@ The mask shifted by `nBit` bits.
 
 ## Remarks
 
-If the second parameter is greater than 64 on x64 (32 on x86), that number is taken modulo 64 (32 on x86) to determine the number of bits to shift. The `ll` prefix indicates that this is an operation on `long long`, another name for `__int64`, the 64-bit signed integral type.
+If the second parameter is greater than 64 on x64 (32 on x86), that number is taken modulo 64 (32 on x86) to determine the number of bits to shift. The `ll` prefix indicates that it's an operation on `long long`, another name for `__int64`, the 64-bit signed integral type.
 
 ## Example
 
-```
+```cpp
 // ll_rshift.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -70,19 +70,19 @@ int main()
 
 ## Output
 
-```
+```Output
 ffffffffffffff00
 - 100
 fffffffffffffff0
 - 10
 ```
 
-**Note** If `_ull_rshift` has been used, the MSB of the right-shifted value would have been zero, so the desired result would not have been obtained in the case of a negative value.
+> [!NOTE] If `_ull_rshift` has been used, the MSB of the right-shifted value would have been zero, so the desired result would not have been obtained in the case of a negative value.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[__ll_lshift](../intrinsics/ll-lshift.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[__ll_lshift](../intrinsics/ll-lshift.md)\
 [__ull_rshift](../intrinsics/ull-rshift.md)

@@ -12,11 +12,11 @@ ms.assetid: dd9f58b5-8bb6-494e-bb0f-9fe184f3908d
 Limits the compiler optimizations that can reorder memory accesses across the point of the call.
 
 > [!CAUTION]
->  The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence) and [std::atomic\<T>](../standard-library/atomic.md), which are defined in the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md). For hardware access, use the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option together with the [volatile](../cpp/volatile-cpp.md) keyword.
+> The `_ReadBarrier`, `_WriteBarrier`, and `_ReadWriteBarrier` compiler intrinsics and the `MemoryBarrier` macro are all deprecated and should not be used. For inter-thread communication, use mechanisms such as [atomic_thread_fence](../standard-library/atomic-functions.md#atomic_thread_fence) and [std::atomic\<T>](../standard-library/atomic.md), which are defined in the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md). For hardware access, use the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option together with the [volatile](../cpp/volatile-cpp.md) keyword.
 
 ## Syntax
 
-```
+```C
 void _ReadWriteBarrier(void);
 ```
 
@@ -36,7 +36,7 @@ The `_ReadWriteBarrier` intrinsic limits the compiler optimizations that can rem
 
 ## See also
 
-[_ReadBarrier](../intrinsics/readbarrier.md)<br/>
-[_WriteBarrier](../intrinsics/writebarrier.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[_ReadBarrier](../intrinsics/readbarrier.md)\
+[_WriteBarrier](../intrinsics/writebarrier.md)\
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

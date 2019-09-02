@@ -13,7 +13,7 @@ Generates a Move String (`rep movsb`) instruction.
 
 ## Syntax
 
-```
+```C
 void __movsb(
    unsigned char* Destination,
    unsigned const char* Source,
@@ -21,15 +21,15 @@ void __movsb(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Destination*<br/>
+*Destination*\
 [out] A pointer to the destination of the copy.
 
-*Source*<br/>
+*Source*\
 [in] A pointer to the source of the copy.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes to copy.
 
 ## Requirements
@@ -48,7 +48,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // movsb.cpp
 // processor: x86, x64
 #include <stdio.h>

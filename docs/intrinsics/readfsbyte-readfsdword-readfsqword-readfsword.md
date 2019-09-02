@@ -13,7 +13,7 @@ Read memory from a location specified by an offset relative to the beginning of 
 
 ## Syntax
 
-```
+```C
 unsigned char __readfsbyte(
    unsigned long Offset
 );
@@ -28,9 +28,9 @@ unsigned __int64 __readfsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of `FS` to read from.
 
 ## Return Value
@@ -56,5 +56,5 @@ These routines are available only as intrinsics.
 
 ## See also
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)<br/>
+[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

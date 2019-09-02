@@ -13,7 +13,7 @@ Does an interlocked compare and exchange.
 
 ## Syntax
 
-```
+```C
 long _InterlockedCompareExchange(
    long volatile * Destination,
    long Exchange,
@@ -126,15 +126,15 @@ __int64 _InterlockedCompareExchange64_rel(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Destination*<br/>
+*Destination*\
 [in, out] Pointer to the destination value. The sign is ignored.
 
-*Exchange*<br/>
+*Exchange*\
 [in] Exchange value. The sign is ignored.
 
-*Comparand*<br/>
+*Comparand*\
 [in] Value to compare to destination. The sign is ignored.
 
 ## Return Value
@@ -145,8 +145,8 @@ The return value is the initial value of the `Destination` pointer.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM|\<intrin.h>|
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<intrin.h>|
 |`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|x64|\<intrin.h>|
 |`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|
 
@@ -246,7 +246,6 @@ namespace MyInterlockedIntrinsicLock
 }
 
 // ------------------------------------------------------------------
-
 // Data shared by threads
 
 queue<int> SharedQueue;
@@ -385,8 +384,8 @@ int main(
 
 ## See also
 
-[_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)<br/>
-[_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
+[_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Keywords](../cpp/keywords-cpp.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -13,7 +13,7 @@ Generates platform-specific machine code that performs no operation.
 
 ## Syntax
 
-```
+```C
 void __nop();
 ```
 
@@ -33,5 +33,5 @@ The `__nop` function is equivalent to the `NOP` machine instruction. For more in
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__noop](../intrinsics/noop.md)

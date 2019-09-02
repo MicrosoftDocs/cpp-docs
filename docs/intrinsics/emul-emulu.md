@@ -13,7 +13,7 @@ Performs multiplications that overflow what a 32-bit integer can hold.
 
 ## Syntax
 
-```
+```C
 __int64 __emul(
    int a,
    int b
@@ -24,12 +24,12 @@ unsigned __int64 __emulu(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] The first integer operand of the multiplication.
 
-*b*<br/>
+*b*\
 [in] The second integer operand of the multiplication.
 
 ## Return Value
@@ -53,7 +53,7 @@ The result of the multiplication.
 
 ## Example
 
-```
+```cpp
 // emul.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -85,7 +85,7 @@ int main()
 
 ## Output
 
-```
+```Output
 -268435456 * 2 = -536870912
 4294967295 * 251658240 = 1080863910317260800
 ```

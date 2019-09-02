@@ -13,7 +13,7 @@ Reads data from the specified port using the `rep insw` instruction.
 
 ## Syntax
 
-```
+```C
 void __inwordstring(
    unsigned short Port,
    unsigned short* Buffer,
@@ -21,15 +21,15 @@ void __inwordstring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-*Buffer*<br/>
+*Buffer*\
 [out] The data read from the port is written here.
 
-*Count*<br/>
+*Count*\
 [in] The number of words of data to read.
 
 ## Requirements

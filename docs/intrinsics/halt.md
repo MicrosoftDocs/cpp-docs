@@ -13,7 +13,7 @@ Halts the microprocessor until an enabled interrupt, a nonmaskable interrupt (NM
 
 ## Syntax
 
-```
+```C
 void __halt( void );
 ```
 

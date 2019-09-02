@@ -13,7 +13,7 @@ Rotate the input values to the left to the most significant bit (MSB) by a speci
 
 ## Syntax
 
-```
+```C
 unsigned char _rotl8(
    unsigned char value,
    unsigned char shift
@@ -24,12 +24,12 @@ unsigned short _rotl16(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*value*<br/>
+*value*\
 [in] The value to rotate.
 
-*shift*<br/>
+*shift*\
 [in] The number of bits to rotate.
 
 ## Return Value
@@ -40,18 +40,18 @@ The rotated value.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_rotl8`|x86, ARM, x64|
-|`_rotl16`|x86, ARM, x64|
+|`_rotl8`|x86, ARM, x64, ARM64|
+|`_rotl16`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
 ## Remarks
 
-Unlike a left-shift operation, when executing a left rotation, the high order bits that fall off the high end are moved into the least significant bit positions.
+Unlike a left-shift operation, when executing a left rotation, the high-order bits that fall off the high end are moved into the least significant bit positions.
 
 ## Example
 
-```
+```cpp
 // rotl.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -92,5 +92,5 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 
 ## See also
 
-[_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)<br/>
+[_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

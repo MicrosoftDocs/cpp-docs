@@ -9,23 +9,23 @@ ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
 
 **Microsoft Specific**
 
-Generates the `out` instruction, which sends the word `Data` out the I/O port specified by `Port`.
+Generates the `out` instruction, which sends the word *Data* out the I/O port specified by *Port*.
 
 ## Syntax
 
-```
+```C
 void __outword(
    unsigned short Port,
    unsigned short Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Data*<br/>
+*Data*\
 [in] The data to be sent.
 
 ## Requirements

@@ -13,16 +13,16 @@ Generates the `rdmsr` instruction, which reads the model-specific register speci
 
 ## Syntax
 
-```
+```C
 __int64 __readmsr(
    int register
 );
 ```
 
-#### Parameters
+### Parameters
 
-*register*<br/>
-[in] The model specific register to read.
+*register*\
+[in] The model-specific register to read.
 
 ## Return Value
 

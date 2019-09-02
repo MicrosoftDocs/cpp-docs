@@ -13,7 +13,7 @@ These functions perform an atomic addition, which makes sure that the operation 
 
 ## Syntax
 
-```
+```C
 long _InterlockedAdd(
    long volatile * Addend,
    long Value
@@ -48,12 +48,12 @@ __int64 _InterlockedAdd64_rel(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Addend*<br/>
+*Addend*\
 [in, out] Pointer to the integer to be added to; replaced by the result of the addition.
 
-*Value*<br/>
+*Value*\
 [in] The value to add.
 
 ## Return Value
@@ -64,14 +64,14 @@ Both functions return the result of the addition.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_InterlockedAdd`|ARM|
-|`_InterlockedAdd_acq`|ARM|
-|`_InterlockedAdd_nf`|ARM|
-|`_InterlockedAdd_rel`|ARM|
-|`_InterlockedAdd64`|ARM|
-|`_InterlockedAdd64_acq`|ARM|
-|`_InterlockedAdd64_nf`|ARM|
-|`_InterlockedAdd64_rel`|ARM|
+|`_InterlockedAdd`|ARM, ARM64|
+|`_InterlockedAdd_acq`|ARM, ARM64|
+|`_InterlockedAdd_nf`|ARM, ARM64|
+|`_InterlockedAdd_rel`|ARM, ARM64|
+|`_InterlockedAdd64`|ARM, ARM64|
+|`_InterlockedAdd64_acq`|ARM, ARM64|
+|`_InterlockedAdd64_nf`|ARM, ARM64|
+|`_InterlockedAdd64_rel`|ARM, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -143,5 +143,5 @@ Return value: ffff00ffffffff
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

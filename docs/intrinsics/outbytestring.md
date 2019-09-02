@@ -9,11 +9,11 @@ ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
 
 **Microsoft Specific**
 
-Generates the `rep outsb` instruction,which sends the first `Count` bytes of data pointed to by `Buffer` to the port specified by `Port`.
+Generates the `rep outsb` instruction, which sends the first `Count` bytes of data pointed to by `Buffer` to the port specified by `Port`.
 
 ## Syntax
 
-```
+```C
 void __outbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -21,15 +21,15 @@ void __outbytestring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Buffer*<br/>
+*Buffer*\
 [in] The data to be sent out the specified port.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes of data to be sent.
 
 ## Requirements

@@ -13,7 +13,7 @@ Returns the EFLAGS value from the caller's context.
 
 ## Syntax
 
-```
+```C
 unsigned int __getcallerseflags(void);
 ```
 
@@ -35,7 +35,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // getcallerseflags.cpp
 // processor: x86, x64
 

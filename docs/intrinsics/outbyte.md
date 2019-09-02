@@ -13,19 +13,19 @@ Generates the `out` instruction, which sends 1 byte specified by `Data` out the 
 
 ## Syntax
 
-```
+```C
 void __outbyte(
    unsigned short Port,
    unsigned char Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Data*<br/>
+*Data*\
 [in] The byte to be sent out the specified port.
 
 ## Requirements

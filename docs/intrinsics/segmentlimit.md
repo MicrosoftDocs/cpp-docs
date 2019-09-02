@@ -13,20 +13,20 @@ Generates the `lsl` (Load Segment Limit) instruction.
 
 ## Syntax
 
-```
+```C
 unsigned long __segmentlimit(
    unsigned long a
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] A constant that specifies the segment selector.
 
 ## Return Value
 
-The segment limit of the segment selector specified by `a`, provided that the selector is valid and visible at the current permission level.
+The segment limit of the segment selector specified by *a*, if the selector is valid and visible at the current permission level.
 
 ## Requirements
 
@@ -38,13 +38,13 @@ The segment limit of the segment selector specified by `a`, provided that the se
 
 ## Remarks
 
-If the segment limit cannot be retrieved, this instruction fails. On failure, this instruction clears the ZF flag and the return value is undefined.
+If the segment limit can't be retrieved, this instruction fails. On failure, this instruction clears the ZF flag and the return value is undefined.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 #include <stdio.h>
 
 #ifdef _M_IX86

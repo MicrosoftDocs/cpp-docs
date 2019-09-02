@@ -13,7 +13,7 @@ Generates the `bt` instruction, which examines the bit in position `b` of addres
 
 ## Syntax
 
-```
+```C
 unsigned char _bittest(
    long const *a,
    long b
@@ -26,10 +26,10 @@ unsigned char _bittest64(
 
 ### Parameters
 
-*a*<br/>
+*a*\
 [in] A pointer to the memory to examine.
 
-*b*<br/>
+*b*\
 [in] The bit position to test.
 
 ### Return Value
@@ -40,8 +40,8 @@ The bit at the position specified.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_bittest`|x86, ARM, x64|\<intrin.h>|
-|`_bittest64`|ARM, x64|\<intrin.h>|
+|`_bittest`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_bittest64`|ARM64, x64|\<intrin.h>|
 
 ## Remarks
 

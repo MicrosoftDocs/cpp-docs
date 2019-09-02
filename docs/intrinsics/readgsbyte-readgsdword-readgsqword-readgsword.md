@@ -13,7 +13,7 @@ Read memory from a location specified by an offset relative to the beginning of 
 
 ## Syntax
 
-```
+```C
 unsigned char __readgsbyte(
    unsigned long Offset
 );
@@ -28,9 +28,9 @@ unsigned __int64 __readgsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of `GS` to read from.
 
 ## Return Value
@@ -56,5 +56,5 @@ These routines are only available as an intrinsic.
 
 ## See also
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

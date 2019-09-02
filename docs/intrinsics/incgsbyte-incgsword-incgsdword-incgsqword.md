@@ -13,7 +13,7 @@ Add one to the value at a memory location specified by an offset relative to the
 
 ## Syntax
 
-```
+```C
 void __incgsbyte(
    unsigned long Offset
 );
@@ -28,9 +28,9 @@ void __incgsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of `GS`.
 
 ## Requirements
@@ -42,6 +42,8 @@ void __incgsqword(
 |`__incgsdword`|x64|
 |`__incgsqword`|x64|
 
+**Header file** \<intrin.h>
+
 ## Remarks
 
 These routines are only available as an intrinsic.
@@ -50,7 +52,7 @@ These routines are only available as an intrinsic.
 
 ## See also
 
-[__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)<br/>
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
+[\__addgsbyte, \__addgsword, \__addgsdword, \__addgsqword](../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md)\
+[\__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[\__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

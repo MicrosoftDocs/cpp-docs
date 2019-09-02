@@ -13,15 +13,15 @@ Emits the x64 extended version of the Convert with Truncation Single-Precision F
 
 ## Syntax
 
-```
+```C
 __int64 _mm_cvttss_si64x(
    __m128 value
 );
 ```
 
-#### Parameters
+### Parameters
 
-*value*<br/>
+*value*\
 [in] An `__m128` structure containing single-precision floating-point values.
 
 ## Return Value
@@ -44,7 +44,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // _mm_cvttss_si64x.cpp
 // processor: x64
 #include <intrin.h>
@@ -80,5 +80,5 @@ int main()
 
 ## See also
 
-[__m128](../cpp/m128.md)<br/>
+[__m128](../cpp/m128.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

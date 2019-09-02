@@ -13,15 +13,14 @@ Stores the value of the interrupt descriptor table register (IDTR) in the specif
 
 ## Syntax
 
-```
+```C
 void __sidt(void * Destination);
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Destination*|[in] A pointer to the memory location where the IDTR is stored.|
+*Destination*\
+[in] A pointer to the memory location where the IDTR is stored.
 
 ## Requirements
 
@@ -39,5 +38,5 @@ The `__sidt` function is equivalent to the `SIDT` machine instruction. For more 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__lidt](../intrinsics/lidt.md)

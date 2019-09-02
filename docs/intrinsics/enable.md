@@ -13,7 +13,7 @@ Enables interrupts.
 
 ## Syntax
 
-```
+```C
 void _enable(void);
 ```
 
@@ -21,7 +21,7 @@ void _enable(void);
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_enable`|x86, ARM, x64|
+|`_enable`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 

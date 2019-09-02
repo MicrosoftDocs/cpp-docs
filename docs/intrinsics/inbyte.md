@@ -9,11 +9,11 @@ ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
 
 **Microsoft Specific**
 
-Generates the `in` instruction, returning one byte read from the port specified by `Port`.
+Generates the `in` instruction, returning a single byte read from the port specified by `Port`.
 
 ## Syntax
 
-```
+```C
 unsigned char __inbyte(
    unsigned short Port
 );
@@ -21,7 +21,7 @@ unsigned char __inbyte(
 
 #### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
 ## Return Value

@@ -24,12 +24,12 @@ unsigned char _bittestandcomplement64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in, out] A pointer to the memory to examine.
 
-*b*<br/>
+*b*\
 [in] The bit position to test.
 
 ## Return Value
@@ -40,8 +40,8 @@ The bit at the position specified.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_bittestandcomplement`|x86, ARM, x64|
-|`_bittestandcomplement64`|x64|
+|`_bittestandcomplement`|x86, ARM, x64, ARM64|
+|`_bittestandcomplement64`|x64, ARM64|
 
 **Header file** \<intrin.h>
 

@@ -13,7 +13,7 @@ Disables interrupts.
 
 ## Syntax
 
-```
+```C
 void _disable(void);
 ```
 
@@ -21,7 +21,7 @@ void _disable(void);
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_disable`|x86, ARM, x64|
+|`_disable`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -31,7 +31,7 @@ void _disable(void);
 
 This function is only available in kernel mode. If used in user mode, a Privileged Instruction exception is thrown at run time.
 
-On ARM platforms, this routine is only available as an intrinsic.
+On ARM and ARM64 platforms, this routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 

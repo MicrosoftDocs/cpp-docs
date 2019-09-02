@@ -13,7 +13,7 @@ Shifts a 128-bit quantity, represented as two 64-bit quantities `LowPart` and `H
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __shiftright128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -21,15 +21,15 @@ unsigned __int64 __shiftright128(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*LowPart*<br/>
+*LowPart*\
 [in] The low 64 bits of the 128-bit quantity to shift.
 
-*HighPart*<br/>
+*HighPart*\
 [in] The high 64 bits of the 128-bit quantity to shift.
 
-*Shift*<br/>
+*Shift*\
 [in] The number of bits to shift.
 
 ## Return Value
@@ -56,5 +56,5 @@ For an example, see [__shiftleft128](../intrinsics/shiftleft128.md).
 
 ## See also
 
-[__shiftleft128](../intrinsics/shiftleft128.md)<br/>
+[__shiftleft128](../intrinsics/shiftleft128.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

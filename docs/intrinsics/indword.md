@@ -13,15 +13,15 @@ Reads one double word of data from the specified port using the `in` instruction
 
 ## Syntax
 
-```
+```C
 unsigned long __indword(
    unsigned short Port
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
 ## Return Value

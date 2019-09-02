@@ -9,11 +9,11 @@ ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
 
 **Microsoft Specific**
 
-Generate the instruction which examines bit `b` of the address `a`, returns its current value, and resets the bit to 0.
+Generate the instruction to examine bit `b` of the address `a`, return its current value, and reset the bit to 0.
 
 ## Syntax
 
-```
+```C
 unsigned char _bittestandreset(
    long *a,
    long b
@@ -24,12 +24,12 @@ unsigned char _bittestandreset64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in, out] A pointer to the memory to examine.
 
-*b*<br/>
+*b*\
 [in] The bit position to test.
 
 ## Return Value
@@ -40,8 +40,8 @@ The bit at the position specified.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_bittestandreset`|x86, ARM, x64|
-|`_bittestandreset64`|x64|
+|`_bittestandreset`|x86, ARM, x64, ARM64|
+|`_bittestandreset64`|x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -51,7 +51,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // bittestandreset.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>

@@ -9,23 +9,23 @@ ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
 
 **Microsoft Specific**
 
-Generates the `out` instruction to send a doubleword `Data` out the port `Port`.
+Generates the `out` instruction to send a doubleword *Data* out the port *Port*.
 
 ## Syntax
 
-```
+```C
 void __outdword(
    unsigned short Port,
    unsigned long Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Data*<br/>
+*Data*\
 [in] The doubleword to be sent.
 
 ## Requirements

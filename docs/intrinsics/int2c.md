@@ -13,7 +13,7 @@ Generates the `int 2c` instruction, which triggers the `2c` interrupt.
 
 ## Syntax
 
-```
+```C
 void __int2c(void);
 ```
 

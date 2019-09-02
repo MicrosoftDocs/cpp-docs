@@ -13,19 +13,19 @@ Returns the high 64 bits of the product of two 64-bit signed integers.
 
 ## Syntax
 
-```
+```C
 __int64 __mulh(
    __int64 a,
    __int64 b
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] The first number to multiply.
 
-*b*<br/>
+*b*\
 [in] The second number to multiply.
 
 ## Return Value
@@ -46,7 +46,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // mulh.cpp
 // processor: x64
 #include <stdio.h>

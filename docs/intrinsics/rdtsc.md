@@ -13,7 +13,7 @@ Generates the `rdtsc` instruction, which returns the processor time stamp. The p
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __rdtsc();
 ```
 
@@ -33,11 +33,11 @@ A 64-bit unsigned integer representing a tick count.
 
 This routine is available only as an intrinsic.
 
-The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of x64. See hardware manuals for more information.
+The interpretation of the TSC value in later generations of hardware differs from that in earlier versions of x64. For more information, see the hardware manuals.
 
 ## Example
 
-```
+```cpp
 // rdtsc.cpp
 // processor: x86, x64
 #include <stdio.h>

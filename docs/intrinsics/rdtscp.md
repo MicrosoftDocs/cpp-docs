@@ -13,15 +13,15 @@ Generates the `rdtscp` instruction, writes `TSC_AUX[31:0`] to memory, and return
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __rdtscp(
-   unsigned int * Aux
+   unsigned int * AUX
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Aux*<br/>
+*AUX*\
 [out] Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.
 
 ## Return Value
@@ -38,9 +38,9 @@ A 64-bit unsigned integer tick count.
 
 ## Remarks
 
-This intrinsic generates the `rdtscp` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 27 of `CPUInfo[3] (EDX)`. This bit is 1 if the instruction is supported, and 0 otherwise.  If you run code that uses this intrinsic on hardware that does not support the `rdtscp` instruction, the results are unpredictable.
+The `__rdtscp` intrinsic generates the `rdtscp` instruction. To determine hardware support for this instruction, call the `__cpuid` intrinsic with `InfoType=0x80000001` and check bit 27 of `CPUInfo[3] (EDX)`. This bit is 1 if the instruction is supported, and 0 otherwise.  If you run code that uses the intrinsic on hardware that doesn't support the `rdtscp` instruction, the results are unpredictable.
 
-This instruction waits until all previous instructions have executed and all previous loads are globally visible. However, it is not a serializing instruction. See the Intel and AMD manuals for more information.
+This instruction waits until all previous instructions have executed and all previous loads are globally visible. However, it isn't a serializing instruction. For more information, see the Intel and AMD manuals.
 
 The meaning of the value in `TSC_AUX[31:0]` depends on the operating system.
 
@@ -66,8 +66,7 @@ TSC_AUX was 0
 
 **END Microsoft Specific**
 
-
 ## See also
 
-[__rdtsc](../intrinsics/rdtsc.md)<br/>
+[__rdtsc](../intrinsics/rdtsc.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -9,11 +9,11 @@ ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
 
 **Microsoft Specific**
 
-Generates the `rep outsw` instruction, which sends `Count` words starting at `Buffer` out the I/O port specified by `Port`.
+Generates the `rep outsw` instruction, which sends *Count* words starting at *Buffer* out the I/O port specified by *Port*.
 
 ## Syntax
 
-```
+```C
 void __outwordstring(
    unsigned short Port,
    unsigned short* Buffer,
@@ -21,15 +21,15 @@ void __outwordstring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Buffer*<br/>
+*Buffer*\
 [in] A pointer to the data to be sent out the specified port.
 
-*Count*<br/>
+*Count*\
 [in] The number of words to send.
 
 ## Requirements

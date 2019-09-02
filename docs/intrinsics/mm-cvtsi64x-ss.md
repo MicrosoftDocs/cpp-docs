@@ -13,24 +13,24 @@ Generates the x64 extended version of the Convert 64-Bit Integer to Scalar Singl
 
 ## Syntax
 
-```
+```C
 __m128 _mm_cvtsi64x_ss(
    __m128 a,
    __int64 b
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] An `__m128` structure containing four single-precision floating-point values.
 
-*b*<br/>
+*b*\
 [in] A 64-bit integer to be converted into a floating-point value.
 
 ## Return Value
 
-An `__m128` structure whose first floating-point value is the result of the conversion. The other three values are copied unchanged from `a`.
+An `__m128` structure whose first floating-point value is the result of the conversion. The other three values are copied unchanged from *a*.
 
 ## Requirements
 
@@ -42,13 +42,13 @@ An `__m128` structure whose first floating-point value is the result of the conv
 
 ## Remarks
 
-The `__m128` structure represents an XMM register, so this intrinsic allows the value `b` from system memory to be moved into an XMM register.
+The `__m128` structure represents an XMM register, so the intrinsic allows the value *b* from system memory to be moved into an XMM register.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // _mm_cvtsi64x_ss.cpp
 // processor: x64
 
@@ -82,5 +82,5 @@ int main()
 
 ## See also
 
-[__m128](../cpp/m128.md)<br/>
+[__m128](../cpp/m128.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)

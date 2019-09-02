@@ -13,7 +13,7 @@ Reads the CR2 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr2(void);
 ```
 
@@ -31,7 +31,7 @@ The value in the CR2 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 

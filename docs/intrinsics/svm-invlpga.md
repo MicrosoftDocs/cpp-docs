@@ -13,16 +13,17 @@ Invalidates the address mapping entry in the computer's translation look-aside b
 
 ## Syntax
 
-```
-void __svm_invlpga(void *Va, int ASID);
+```C
+void __svm_invlpga(void *Vaddr, int as_id);
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Va*|[in] The virtual address of the page to invalidate.|
-|*ASID*|[in] The address space identifier (ASID) of the page to invalidate.|
+*Vaddr*\
+[in] The virtual address of the page to invalidate.
+
+*as_id*\
+[in] The address space identifier (ASID) of the page to invalidate.
 
 ## Remarks
 

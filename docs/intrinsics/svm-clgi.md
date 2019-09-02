@@ -13,15 +13,15 @@ Clears the global interrupt flag.
 
 ## Syntax
 
-```
+```C
 void __svm_clgi( void );
 ```
 
 ## Remarks
 
-The `__svm_clgi` function is equivalent to the `CLGI` machine instruction. The global interrupt flag determines whether the microprocessor ignores, postpones, or handles interrupts due to events such as an I/O completion, a hardware temperature alert, or a debug exception.
+The `__svm_clgi` function is equivalent to the `CLGI` machine instruction. The global interrupt flag determines whether the microprocessor ignores, postpones, or handles interrupts, due to events such as an I/O completion, a hardware temperature alert, or a debug exception.
 
-This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11, at the [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
+This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for "AMD64 Architecture Programmer's Manual Volume 2: System Programming," at the [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.
 
 ## Requirements
 
@@ -35,5 +35,5 @@ This function supports the interaction of a host's virtual machine monitor with 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__svm_stgi](../intrinsics/svm-stgi.md)

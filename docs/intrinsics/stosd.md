@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosd`).
 
 ## Syntax
 
-```
+```C
 void __stosd(
-   unsigned long* Dest,
+   unsigned long* Destination,
    unsigned long Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of doublewords to write.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __stosd(
 
 ## Remarks
 
-The result is that the doubleword `Data` is written into a block of `Count` doublewords at the memory location pointed to by `Dest`.
+The result is that the doubleword *Data* is written into a block of *Count* doublewords at the memory location pointed to by *Destination*.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```C
 // stosd.c
 // processor: x86, x64
 

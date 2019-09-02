@@ -13,7 +13,7 @@ Reads data from the specified port using the `rep insb` instruction.
 
 ## Syntax
 
-```
+```C
 void __inbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -21,15 +21,15 @@ void __inbytestring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-*Buffer*<br/>
+*Buffer*\
 [out] The data read from the port is written here.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes of data to read.
 
 ## Requirements

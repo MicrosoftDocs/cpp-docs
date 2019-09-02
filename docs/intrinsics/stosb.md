@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosb`).
 
 ## Syntax
 
-```
+```C
 void __stosb(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of bytes to write.
 
 ## Requirements
@@ -42,7 +42,7 @@ void __stosb(
 
 ## Remarks
 
-The result is that the character `Data` is written into a block of `Count` bytes in the `Dest` string.
+The result is that the character *Data* is written into a block of *Count* bytes in the *Destination* string.
 
 This routine is only available as an intrinsic.
 

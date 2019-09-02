@@ -13,7 +13,7 @@ Add a value to a memory location specified by an offset relative to the beginnin
 
 ## Syntax
 
-```
+```C
 void __addfsbyte(
    unsigned long Offset,
    unsigned char Data
@@ -28,12 +28,12 @@ void __addfsdword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of `FS`.
 
-*Data*<br/>
+*Data*\
 [in] The value to add to the memory location.
 
 ## Requirements
@@ -44,6 +44,8 @@ void __addfsdword(
 |`__addfsword`|x86|
 |`__addfsdword`|x86|
 
+**Header file** \<intrin.h>
+
 ## Remarks
 
 These routines are available only as intrinsics.
@@ -52,7 +54,7 @@ These routines are available only as intrinsics.
 
 ## See also
 
-[__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)<br/>
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)<br/>
+[__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)\
+[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
