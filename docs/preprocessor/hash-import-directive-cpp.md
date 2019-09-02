@@ -64,7 +64,7 @@ One or more [#import attributes](#_predir_the_23import_directive_import_attribut
 
 ## Remarks
 
-## <a name="_predir_the_23import_directive_searchorderforfilename"></a> Search order for filename
+### <a name="_predir_the_23import_directive_searchorderforfilename"></a> Search order for filename
 
 *filename* is optionally preceded by a directory specification. The file name must name an existing file. The difference between the two syntax forms is the order in which the preprocessor searches for the type library files when the path is incompletely specified.
 
@@ -73,7 +73,7 @@ One or more [#import attributes](#_predir_the_23import_directive_import_attribut
 |Quoted form|Instructs the preprocessor to look for type library files first in the directory of the file that contains the **#import** statement, and then in the directories of whatever files include (`#include`) that file. The preprocessor then searches along the paths shown below.|
 |Angle-bracket form|Instructs the preprocessor to search for type library files along the following paths:<br /><br /> 1.  The `PATH` environment variable path list<br />2.  The `LIB` environment variable path list<br />3.  The path specified by the [/I](../build/reference/i-additional-include-directories.md) compiler option, except it the compiler is searching for a type library that was referenced from another type library with the [no_registry](../preprocessor/no-registry.md) attribute.|
 
-## <a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a> Specify the localization ID and version number
+### <a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a> Specify the localization ID and version number
 
 When you specify a progid, you can also specify the localization ID and version number of the progid. For example:
 
@@ -91,7 +91,7 @@ If you don't specify a localization ID, a progid is chosen according to the foll
 
 - If you don't specify a version number, the most recent version is used.
 
-##  <a name="_predir_the_23import_directive_header_files_created_by_import"></a> Header files created by import
+###  <a name="_predir_the_23import_directive_header_files_created_by_import"></a> Header files created by import
 
 **#import** creates two header files that reconstruct the type library contents in C++ source code. The primary header file is similar to the one produced by the Microsoft Interface Definition Language (MIDL) compiler, but with additional compiler-generated code and data. The [primary header file](#_predir_the_primary_type_library_header_file) has the same base name as the type library, plus a .TLH extension. The secondary header file has the same base name as the type library, with a .TLI extension. It contains the implementations for compiler-generated member functions, and is included (`#include`) in the primary header file.
 
@@ -163,7 +163,7 @@ The actual filename in the **#import** comment is the full path of the cross-ref
 
 To resolve dependency errors, determine which of the dependency comments aren't otherwise provided for by system headers, and then provide an **#import** directive at some point before the **#import** directive of the dependent type library.
 
-## <a name="_predir_the_23import_directive_import_attributes"></a> #import attributes
+### <a name="_predir_the_23import_directive_import_attributes"></a> #import attributes
 
 **#import** can optionally include one or more attributes. These attributes tell the compiler to modify the contents of the type-library headers. A backslash (**\\**) symbol can be used to include additional lines in a single **#import** statement. For example:
 

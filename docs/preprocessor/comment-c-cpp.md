@@ -21,12 +21,6 @@ The *comment-type* is one of the predefined identifiers, described below, that s
 
 Places the name and version number of the compiler in the object file. This comment record is ignored by the linker. If you supply a *comment-string* parameter for this record type, the compiler generates a warning.
 
-### exestr
-
-Places *comment-string* in the object file. At link time this string is placed in the executable file. The string is not loaded into memory when the executable file is loaded; however, it can be found with a program that finds printable strings in files. One use for this comment-record type is to embed a version number or similar information in an executable file.
-
-`exestr` is deprecated and will be removed in a future release; the linker does not process the comment record.
-
 ### lib
 
 Places a library-search record in the object file. This comment type must be accompanied by a *comment-string* parameter containing the name (and possibly the path) of the library that you want the linker to search. The library name follows the default library-search records in the object file; the linker searches for this library just as if you had named it on the command line provided that the library is not specified with [/nodefaultlib](../build/reference/nodefaultlib-ignore-libraries.md). You can place multiple library-search records in the same source file; each record appears in the object file in the same order in which it is encountered in the source file.

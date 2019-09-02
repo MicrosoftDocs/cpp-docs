@@ -33,8 +33,6 @@ Type information imported from *type-library* isn't present in the IDL generated
 #import "\school\bin\importlib.tlb" embedded_idl("no_emitidl")
 ```
 
-## Remarks
-
 **END C++ Specific**
 
 ## See also

@@ -60,11 +60,11 @@ To prevent the preprocessor from expanding *name* (such as expanding NULL to 0),
 #pragma component(browser, off, references, "NULL")
 ```
 
-### Minimal Rebuild
+### Minimal rebuild
 
 The deprecated [/Gm (Enable Minimal Rebuild)](../build/reference/gm-enable-minimal-rebuild.md) feature requires the compiler to create and store C++ class dependency information, which takes disk space. To save disk space, you can use `#pragma component( minrebuild, off )` whenever you don't need to collect dependency information, for instance, in unchanging header files. Insert `#pragma component( minrebuild, on )` after unchanging classes to turn dependency collection back on.
 
-### Reduce Type Information
+### Reduce type information
 
 The `mintypeinfo` option reduces the debugging information for the region specified. The volume of this information is considerable, impacting .pdb and .obj files. You cannot debug classes and structures in the mintypeinfo region. Use of the mintypeinfo option can be helpful to avoid the following warning:
 

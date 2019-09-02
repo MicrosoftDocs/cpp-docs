@@ -1,5 +1,5 @@
 ---
-title: "Compiler Warnings That Are Off by Default"
+title: "Compiler warnings that are off by default"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
