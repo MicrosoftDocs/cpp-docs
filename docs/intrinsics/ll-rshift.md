@@ -77,7 +77,8 @@ fffffffffffffff0
 - 10
 ```
 
-> [!NOTE] If `_ull_rshift` has been used, the MSB of the right-shifted value would have been zero, so the desired result would not have been obtained in the case of a negative value.
+> [!NOTE]
+> If `_ull_rshift` has been used, the MSB of the right-shifted value would have been zero, so the desired result would not have been obtained in the case of a negative value.
 
 **END Microsoft Specific**
 
