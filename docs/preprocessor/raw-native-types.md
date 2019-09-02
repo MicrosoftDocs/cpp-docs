@@ -1,20 +1,19 @@
 ---
-title: "raw_native_types"
-ms.date: "11/04/2016"
+title: "raw_native_types import attribute"
+ms.date: "08/29/2019"
 f1_keywords: ["raw_native_types"]
 helpviewer_keywords: ["raw_native_types attribute"]
 ms.assetid: 9f38daa8-8dc0-46a5-aff9-f1ff9c1e6f48
 ---
-# raw_native_types
+# raw_native_types import attribute
+
 **C++ Specific**
 
-Disables the use of COM support classes in the high-level wrapper functions and forces the use of low-level data types instead.
+Disables the use of COM support classes in the high-level wrapper functions, and forces the use of low-level data types instead.
 
 ## Syntax
 
-```
-raw_native_types
-```
+> **#import** *type-library* **raw_native_types**
 
 ## Remarks
 
@@ -24,5 +23,5 @@ By default, the high-level error-handling methods use the COM support classes [_
 
 ## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import attributes](../preprocessor/hash-import-attributes-cpp.md)\
+[#import directive](../preprocessor/hash-import-directive-cpp.md)

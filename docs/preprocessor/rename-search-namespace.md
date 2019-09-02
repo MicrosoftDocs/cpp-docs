@@ -1,25 +1,23 @@
 ---
-title: "rename_search_namespace"
-ms.date: "10/18/2018"
+title: "rename_search_namespace import attribute"
+ms.date: "08/29/2019"
 f1_keywords: ["rename_search_namespace"]
 helpviewer_keywords: ["rename_search_namespace attribute"]
 ms.assetid: 47c9d7fd-59dc-4c62-87a1-9011a0040167
 ---
-# rename_search_namespace
+# rename_search_namespace import attribute
 
 **C++ Specific**
 
-Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute but is used on type libraries that you use the `#import` directive with the [auto_search](../preprocessor/auto-search.md) attribute.
+Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute, but is used on type libraries where you use the `#import` directive along with the [auto_search](../preprocessor/auto-search.md) attribute.
 
 ## Syntax
 
-```
-rename_search_namespace("NewName")
-```
+> **#import** *type-library* **rename_search_namespace(** "*NewName*" **)**
 
 ### Parameters
 
-*NewName*<br/>
+*NewName*\
 The new name of the namespace.
 
 ## Remarks
@@ -28,5 +26,5 @@ The new name of the namespace.
 
 ## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import attributes](../preprocessor/hash-import-attributes-cpp.md)\
+[#import directive](../preprocessor/hash-import-directive-cpp.md)

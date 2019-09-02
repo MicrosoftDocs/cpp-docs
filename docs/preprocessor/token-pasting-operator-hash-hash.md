@@ -1,13 +1,13 @@
 ---
-title: "Token-Pasting Operator (##)"
-ms.date: "11/04/2016"
+title: "Token-pasting operator (##)"
+ms.date: "08/29/2019"
 f1_keywords: ["##"]
 helpviewer_keywords: ["preprocessor, operators", "## preprocessor operator"]
 ms.assetid: 4f173503-990f-4bff-aef3-ec4d1f1458ef
 ---
-# Token-Pasting Operator (##)
+# Token-pasting operator (##)
 
-The double-number-sign or "token-pasting" operator (**##**), which is sometimes called the "merging" operator, is used in both object-like and function-like macros. It permits separate tokens to be joined into a single token and therefore cannot be the first or last token in the macro definition.
+The double-number-sign or *token-pasting* operator (**##**), which is sometimes called the *merging* or *combining* operator, is used in both object-like and function-like macros. It permits separate tokens to be joined into a single token, and therefore, can't be the first or last token in the macro definition.
 
 If a formal parameter in a macro definition is preceded or followed by the token-pasting operator, the formal parameter is immediately replaced by the unexpanded actual argument. Macro expansion is not performed on the argument prior to replacement.
 
@@ -58,4 +58,4 @@ token9 = 9
 
 ## See also
 
-[Preprocessor Operators](../preprocessor/preprocessor-operators.md)
+[Preprocessor operators](../preprocessor/preprocessor-operators.md)

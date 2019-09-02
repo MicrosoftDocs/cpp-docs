@@ -2,7 +2,7 @@
 title: "Clang/LLVM support in Visual Studio CMake projects"
 ms.date: "07/01/2019"
 ms.description: "Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain."
-helpviewer_keywords: ["Clang support for C++"]
+helpviewer_keywords: ["Clang support for C++ CMake projects"]
 ---
 
 # Clang/LLVM support in Visual Studio CMake projects
@@ -23,7 +23,7 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 
 ## Install
 
-For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **Clang compiler for Windows** under **Desktop development with C++** optional components.
+For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v142 build tools** component.
 
 ![Clang component installation](media/clang-install-vs2019.png)
 

@@ -1,28 +1,26 @@
 ---
-title: "#using Directive (C++/CLI)"
-ms.date: "10/18/2018"
+title: "#using directive (C++/CLI)"
+ms.date: "08/29/2019"
 f1_keywords: ["friend_as_cpp", "#using", "friend_as", "#using_cpp"]
 helpviewer_keywords: ["using directive (#using)", "#using directive", "LIBPATH environment variable", "preprocessor, directives"]
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
 ---
-# #using Directive (C++/CLI)
+# #using directive (C++/CLI)
 
 Imports metadata into a program compiled with [/clr](../build/reference/clr-common-language-runtime-compilation.md).
 
 ## Syntax
 
-```
-#using file [as_friend]
-```
+> **#using** *file* [**as_friend**]
 
 ### Parameters
 
-*file*<br/>
+*file*\
 An MSIL .dll, .exe, .netmodule, or .obj. For example,
 
 `#using <MyComponent.dll>`
 
-*as_friend*<br/>
+**as_friend**\
 Specifies that all types in *file* are accessible. For more information, see [Friend Assemblies (C++)](../dotnet/friend-assemblies-cpp.md).
 
 ## Remarks
@@ -38,17 +36,17 @@ An alternative to use **#using** is the [/FU](../build/reference/fu-name-forced-
 > [!NOTE]
 > A component that is referenced with **#using** can be run with a different version of the file imported at compile time, causing a client application to give unexpected results.
 
-In order for the compiler to recognize a type in an assembly (not a module), it needs to be forced to resolve the type, which you can do, for example, by defining an instance of the type. There are other ways to resolve type names in an assembly for the compiler, for example, if you inherit from a type in an assembly, the type name will then become known to the compiler.
+In order for the compiler to recognize a type in an assembly (not a module), it needs to be forced to resolve the type. You can force it, for example, by defining an instance of the type. There are other ways to resolve type names in an assembly for the compiler. For example, if you inherit from a type in an assembly, the type name becomes known to the compiler.
 
-When importing metadata built from source code that used [__declspec(thread)](../cpp/thread.md), the thread semantics are not persisted in metadata. For example, a variable declared with **__declspec(thread)**, compiled in a program that is build for the .NET Framework common language runtime, and then imported via **#using**, will no longer have **__declspec(thread)** semantics on the variable.
+When importing metadata built from source code that used [__declspec(thread)](../cpp/thread.md), the thread semantics aren't persisted in metadata. For example, a variable declared with **__declspec(thread)**, compiled in a program that is built for the .NET Framework common language runtime, and then imported via **#using**, won't have **__declspec(thread)** semantics on the variable.
 
-All imported types (both managed and native) in a file referenced by **#using** are available, but the compiler treats native types as declarations not definitions.
+All imported types (both managed and native) in a file referenced by **#using** are available, but the compiler treats native types as declarations, not definitions.
 
 mscorlib.dll is automatically referenced when compiling with `/clr`.
 
-The LIBPATH environment variable specifies the directories that will be searched when the compiler tries to resolve file names passed to **#using**.
+The LIBPATH environment variable specifies the directories to search when the compiler resolves file names passed to **#using**.
 
-The compiler will search for references along the following path:
+The compiler searches for references along the following path:
 
 - A path specified in the **#using** statement.
 
@@ -62,7 +60,7 @@ The compiler will search for references along the following path:
 
 ## Example
 
-If you build an assembly (C) and reference an assembly (B) that itself references another assembly (A), you will not have to explicitly reference assembly A unless you explicitly use one of A's types in C.
+If you build an assembly (C) and reference an assembly (B) that itself references another assembly (A), you won't have to explicitly reference assembly A unless you explicitly use one of A's types in C.
 
 ```cpp
 // using_assembly_A.cpp
@@ -85,7 +83,7 @@ public:
 
 ## Example
 
-In the following sample, there is no compiler error for not referencing using_assembly_A.dll because the program does not use any of the types defined in using_assembly_A.cpp.
+In the following sample, there's no compiler error for not referencing *using_assembly_A.dll*, because the program doesn't use any of the types defined in *using_assembly_A.cpp*.
 
 ```cpp
 // using_assembly_C.cpp
@@ -99,4 +97,4 @@ int main() {
 
 ## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)

@@ -1,11 +1,12 @@
 ---
-title: "Preprocessor Operators"
-ms.date: "11/04/2016"
+title: "Preprocessor operators"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["preprocessor operators", "operators [C++], preprocessor"]
 ms.assetid: 884126d1-0ce2-48b6-9e06-8a2d7c4a9656
 ---
-# Preprocessor Operators
-Four preprocessor-specific operators are used in the context of the `#define` directive (see the following list for a summary of each). The stringizing, charizing, and token-pasting operators are discussed in the next three sections. For information on the `defined` operator, see [The #if, #elif, #else, and #endif Directives](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
+# Preprocessor operators
+
+Four preprocessor-specific operators are used in the context of the `#define` directive. See the following table for a summary of each. The stringizing, charizing, and token-pasting operators are discussed in the next three sections. For information on the `defined` operator, see [The #if, #elif, #else, and #endif directives](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
 
 |Operator|Action|
 |--------------|------------|
@@ -16,6 +17,6 @@ Four preprocessor-specific operators are used in the context of the `#define` di
 
 ## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)<br/>
-[Predefined Macros](../preprocessor/predefined-macros.md)<br/>
-[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)\
+[Predefined macros](../preprocessor/predefined-macros.md)\
+[c/c++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)

@@ -1,11 +1,12 @@
 ---
-title: "fenv_access"
-ms.date: "03/12/2018"
+title: "fenv_access pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.fenv_access", "fenv_access_CPP"]
 helpviewer_keywords: ["pragmas, fenv_access", "fenv_access pragma"]
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
 ---
-# fenv_access
+# fenv_access pragma
+
 Disables (**on**) or enables (**off**) optimizations that could change floating-point environment flag tests and mode changes.
 
 ## Syntax
@@ -38,7 +39,7 @@ This example sets **fenv_access** to **on** to set the floating-point control re
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
-// compile with: /O2
+// compile with: /O2 /arch:IA32
 // processor: x86
 #include <stdio.h>
 #include <float.h>
@@ -61,14 +62,14 @@ int main() {
 ```
 
 ```Output
-out=9.999999776482582e-003
+out=9.999999776482582e-03
 ```
 
 If you comment out `#pragma fenv_access (on)` from the previous sample, note that the output is different because the compiler does compile-time evaluation, which does not use the control mode.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp
-// compile with: /O2
+// compile with: /O2 /arch:IA32
 #include <stdio.h>
 #include <float.h>
 
@@ -88,9 +89,9 @@ int main() {
 ```
 
 ```Output
-out=1.000000000000000e-002
+out=1.000000000000000e-02
 ```
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

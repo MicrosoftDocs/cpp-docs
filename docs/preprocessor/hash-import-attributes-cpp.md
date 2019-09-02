@@ -1,10 +1,11 @@
 ---
-title: "#import Attributes (C++)"
-ms.date: "11/04/2016"
+title: "#import attributes (C++)"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["#import directive, attributes"]
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
 ---
-# #import Attributes (C++)
+# #import attributes (C++)
+
 Provides links to attributes used with the `#import` directive.
 
 **Microsoft Specific**
@@ -44,4 +45,4 @@ The following attributes are available to the `#import` directive.
 
 ## See also
 
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import directive](../preprocessor/hash-import-directive-cpp.md)
