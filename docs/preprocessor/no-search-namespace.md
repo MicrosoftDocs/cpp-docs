@@ -15,8 +15,6 @@ Has the same functionality as the [no_namespace](../preprocessor/no-namespace.md
 
 > **#import** *type-library* **no_search_namespace**
 
-## Remarks
-
 **END C++ Specific**
 
 ## See also

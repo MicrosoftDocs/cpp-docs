@@ -44,7 +44,7 @@ The *most-general-representation* argument specifies the smallest pointer repres
 #pragma pointers_to_members( full_generality, single_inheritance )
 ```
 
-## END C++ Specific
+**END C++ Specific**
 
 ## See also
 

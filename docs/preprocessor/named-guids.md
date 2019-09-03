@@ -15,8 +15,6 @@ Tells the compiler to define and initialize GUID variables in the old style, of 
 
 > **#import** *type-library* **named_guids**
 
-## Remarks
-
 **END C++ Specific**
 
 ## See also
