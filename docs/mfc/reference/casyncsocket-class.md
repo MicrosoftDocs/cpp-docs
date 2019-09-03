@@ -261,7 +261,7 @@ The length of the address in *lpSockAddr* in bytes.
 
 ### Return Value
 
-Nonzero if the function is successful; otherwise 0, and a specific error code can be retrieved by calling [GetLastError](#getlasterror). The following list covers a few of the errors that might be returned. For a complete list, see [Windows Sockets Error Codes](windows/win32/winsock/windows-sockets-error-codes-2).
+Nonzero if the function is successful; otherwise 0, and a specific error code can be retrieved by calling [GetLastError](#getlasterror). The following list covers a few of the errors that might be returned. For a complete list, see [Windows Sockets Error Codes](/windows/win32/winsock/windows-sockets-error-codes-2).
 
 - WSANOTINITIALISED A successful [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) must occur before using this API.
 
