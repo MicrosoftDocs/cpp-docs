@@ -38,5 +38,5 @@ The `__sidt` function is equivalent to the `SIDT` machine instruction. For more 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__lidt](../intrinsics/lidt.md)

@@ -18,7 +18,7 @@ unsigned char __vmx_vmresume(
    void);
 ```
 
-## Return Value
+## Return value
 
 |Value|Meaning|
 |-----------|-------------|
@@ -44,6 +44,6 @@ The `__vmx_vmresume` function is equivalent to the `VMRESUME` machine instructio
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

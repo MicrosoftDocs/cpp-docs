@@ -33,4 +33,4 @@ This function is only available in kernel mode with a privilege level (CPL) of 0
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

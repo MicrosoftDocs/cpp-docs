@@ -32,7 +32,7 @@ unsigned __int64 _umul128(
 *HighProduct*\
 [out] The high 64 bits of the product.
 
-## Return Value
+## Return value
 
 The low 64 bits of the product.
 
@@ -73,4 +73,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

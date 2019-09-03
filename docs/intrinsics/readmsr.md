@@ -24,7 +24,7 @@ __int64 __readmsr(
 *register*\
 [in] The model-specific register to read.
 
-## Return Value
+## Return value
 
 The value in the specified register.
 
@@ -46,4 +46,4 @@ For more information, see the AMD documentation.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -108,5 +108,5 @@ Unfortunately, this use of `assert` prevents the compiler from performing the de
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

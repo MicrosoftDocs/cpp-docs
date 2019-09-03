@@ -32,7 +32,7 @@ unsigned char _bittest64(
 *b*\
 [in] The bit position to test.
 
-### Return Value
+### Return value
 
 The bit at the position specified.
 
@@ -91,4 +91,4 @@ Binary representation:
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

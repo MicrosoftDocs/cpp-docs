@@ -42,6 +42,6 @@ The `__svm_vmrun` function is equivalent to the `VMRUN` machine instruction. Thi
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__svm_vmsave](../intrinsics/svm-vmsave.md)\
 [__svm_vmload](../intrinsics/svm-vmload.md)

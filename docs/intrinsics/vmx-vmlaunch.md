@@ -17,7 +17,7 @@ Places the calling application in VMX non-root operation state (VM enter) by usi
 unsigned char __vmx_vmlaunch(void);
 ```
 
-## Return Value
+## Return value
 
 |Value|Meaning|
 |-----------|-------------|
@@ -43,6 +43,6 @@ The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instructio
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)\
 [__vmx_vmclear](../intrinsics/vmx-vmclear.md)

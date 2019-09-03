@@ -30,7 +30,7 @@ unsigned __int64 __popcnt64(
 *value*\
 [in] The 16-, 32-, or 64-bit unsigned integer for which we want the population count.
 
-## Return Value
+## Return value
 
 The number of `1` bits in the *value* parameter.
 
@@ -92,4 +92,4 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -24,7 +24,7 @@ unsigned long __indword(
 *Port*\
 [in] The port to read from.
 
-## Return Value
+## Return value
 
 The word read from the port.
 
@@ -44,4 +44,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

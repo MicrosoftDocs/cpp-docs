@@ -40,6 +40,6 @@ The `__svm_vmload` function is equivalent to the `VMLOAD` machine instruction. T
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__svm_vmrun](../intrinsics/svm-vmrun.md)\
 [__svm_vmsave](../intrinsics/svm-vmsave.md)

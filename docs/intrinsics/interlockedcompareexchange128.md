@@ -60,7 +60,7 @@ unsigned char _InterlockedCompareExchange128_rel(
 *ComparandResult*\
 [in, out] Pointer to an array of two 64-bit integers (considered as a 128-bit field) to compare with the destination.  On output, this array is overwritten with the original value of the destination.
 
-## Return Value
+## Return value
 
 1 if the 128-bit comparand equals the original value of the destination. `ExchangeHigh` and `ExchangeLow` overwrite the 128-bit destination.
 
@@ -148,6 +148,6 @@ BigInt.Int[1] = 34, BigInt.Int[0] = 12
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
-[_InterlockedCompareExchange Intrinsic Functions](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
+[_InterlockedCompareExchange intrinsic functions](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

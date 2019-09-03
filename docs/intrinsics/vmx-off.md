@@ -33,4 +33,4 @@ The `__vmx_off` function is equivalent to the `VMXOFF` machine instruction. This
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -40,4 +40,4 @@ The `__writecr8` intrinsic is only available in kernel mode, and the routine is 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

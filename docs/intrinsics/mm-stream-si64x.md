@@ -20,7 +20,7 @@ void _mm_stream_si64x(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *Destination*\
 [out] A pointer to the location to write the source data to.
@@ -70,4 +70,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -28,7 +28,7 @@ __int64 __mulh(
 *b*\
 [in] The second number to multiply.
 
-## Return Value
+## Return value
 
 The high 64 bits of the 128-bit result of the multiplication.
 
@@ -75,4 +75,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

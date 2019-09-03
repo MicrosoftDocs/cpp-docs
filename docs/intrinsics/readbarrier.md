@@ -36,5 +36,5 @@ The `_ReadBarrier` intrinsic limits the compiler optimizations that can remove o
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

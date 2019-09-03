@@ -40,4 +40,4 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

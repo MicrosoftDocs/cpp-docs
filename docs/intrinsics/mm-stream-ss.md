@@ -28,7 +28,7 @@ void _mm_stream_ss(
 *Source*\
 [in] A 128-bit number that contains the `float` value to be written in its bottom 32 bits.
 
-## Return Value
+## Return value
 
 None.
 
@@ -88,4 +88,4 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 [_mm_stream_ps](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_stream_ps)\
 [_mm_store_ss](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_ss)\
 [_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

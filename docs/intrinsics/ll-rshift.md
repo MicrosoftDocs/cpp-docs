@@ -28,7 +28,7 @@ __int64 __ll_rshift(
 *nBit*\
 [in] The number of bits to shift, modulo 64 on x64, and modulo 32 on x86.
 
-## Return Value
+## Return value
 
 The mask shifted by `nBit` bits.
 
@@ -84,6 +84,6 @@ fffffffffffffff0
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__ll_lshift](../intrinsics/ll-lshift.md)\
 [__ull_rshift](../intrinsics/ull-rshift.md)

@@ -1,11 +1,11 @@
 ---
-title: "_interlockedbittestandset Intrinsic Functions"
+title: "_interlockedbittestandset intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_interlockedbittestandset_cpp", "_interlockedbittestandset_HLEAcquire", "_interlockedbittestandset64", "_interlockedbittestandset64_acq", "_interlockedbittestandset64_nf", "_interlockedbittestandset64_rel", "_interlockedbittestandset", "_interlockedbittestandset_rel", "_interlockedbittestandset64_HLEAcquire", "_interlockedbittestandset_HLERelease", "_interlockedbittestandset_acq", "_interlockedbittestandset_nf", "_interlockedbittestandset64_cpp", "_interlockedbittestandset64_HLERelease"]
 helpviewer_keywords: ["_interlockedbittestandset intrinsic", "_interlockedbittestandset64 intrinsic", "lock_bts instruction"]
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
 ---
-# _interlockedbittestandset Intrinsic Functions
+# _interlockedbittestandset intrinsic functions
 
 **Microsoft Specific**
 
@@ -72,7 +72,7 @@ unsigned char _interlockedbittestandset64_HLERelease(
 *b*\
 [in] The bit position to test.
 
-## Return Value
+## Return value
 
 The value of the bit at position `b` before it's set.
 
@@ -101,5 +101,5 @@ These routines are only available as intrinsics.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

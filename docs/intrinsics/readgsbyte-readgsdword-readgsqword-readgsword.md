@@ -33,7 +33,7 @@ unsigned __int64 __readgsqword(
 *Offset*\
 [in] The offset from the beginning of `GS` to read from.
 
-## Return Value
+## Return value
 
 The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[Offset]`.
 
@@ -57,4 +57,4 @@ These routines are only available as an intrinsic.
 ## See also
 
 [__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -24,7 +24,7 @@ __int64 _mm_cvttss_si64x(
 *value*\
 [in] An `__m128` structure containing single-precision floating-point values.
 
-## Return Value
+## Return value
 
 The result of the conversion of the first floating-point value to a 64-bit integer.
 
@@ -81,4 +81,4 @@ int main()
 ## See also
 
 [__m128](../cpp/m128.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

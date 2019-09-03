@@ -40,6 +40,6 @@ The `__svm_vmsave` function is equivalent to the `VMSAVE` machine instruction. T
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__svm_vmrun](../intrinsics/svm-vmrun.md)\
 [__svm_vmload](../intrinsics/svm-vmload.md)

@@ -15,12 +15,12 @@ Immediately terminates the calling process with minimum overhead.
 void __fastfail(unsigned int code);
 ```
 
-#### Parameters
+### Parameters
 
 *code*\
 [in] A `FAST_FAIL_<description>` symbolic constant from winnt.h or wdm.h that indicates the reason for process termination.
 
-## Return Value
+## Return value
 
 The `__fastfail` intrinsic does not return.
 
@@ -59,4 +59,4 @@ Support for the native fast fail mechanism began in Windows 8. Windows operating
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

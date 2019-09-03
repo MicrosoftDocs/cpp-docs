@@ -28,7 +28,7 @@ __m128 _mm_cvtsi64x_ss(
 *b*\
 [in] A 64-bit integer to be converted into a floating-point value.
 
-## Return Value
+## Return value
 
 An `__m128` structure whose first floating-point value is the result of the conversion. The other three values are copied unchanged from *a*.
 
@@ -83,4 +83,4 @@ int main()
 ## See also
 
 [__m128](../cpp/m128.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -32,7 +32,7 @@ unsigned char _bittestandreset64(
 *b*\
 [in] The bit position to test.
 
-## Return Value
+## Return value
 
 The bit at the position specified.
 
@@ -90,4 +90,4 @@ The number was negative.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

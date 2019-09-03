@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedAnd Intrinsic Functions"
+title: "_InterlockedAnd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAnd_rel", "_InterlockedAnd_cpp", "_InterlockedAnd8_nf", "_InterlockedAnd", "_InterlockedAnd_HLERelease", "_InterlockedAnd8_np", "_InterlockedAnd16_rel", "_InterlockedAnd64_np", "_InterlockedAnd_np", "_InterlockedAnd64_HLERelease", "_InterlockedAnd64", "_InterlockedAnd64_nf", "_InterlockedAnd64_HLEAcquire", "_InterlockedAnd16", "_InterlockedAnd16_nf", "_InterlockedAnd8", "_InterlockedAnd_HLEAcquire", "_InterlockedAnd_acq", "_InterlockedAnd16_np", "_InterlockedAnd64_cpp", "_InterlockedAnd64_acq", "_InterlockedAnd16_acq", "_InterlockedAnd8_acq", "_InterlockedAnd64_rel", "_InterlockedAnd_nf", "_InterlockedAnd8_rel"]
 helpviewer_keywords: ["_InterlockedAnd64_np intrinsic", "_InterlockedAnd intrinsic", "_InterlockedAnd64 intrinsic", "_InterlockedAnd8_rel intrinsic", "InterlockedAnd64 intrinsic", "_InterlockedAnd16_np intrinsic", "_InterlockedAnd64_nf intrinsic", "_InterlockedAnd_nf intrinsic", "_InterlockedAnd_np intrinsic", "_InterlockedAnd64_HLERelease intrinsic", "_InterlockedAnd16_rel intrinsic", "_InterlockedAnd_HLERelease intrinsic", "_InterlockedAnd64_acq intrinsic", "_InterlockedAnd16 intrinsic", "_InterlockedAnd8_nf intrinsic", "_InterlockedAnd64_rel intrinsic", "_InterlockedAnd8_np intrinsic", "_InterlockedAnd_rel intrinsic", "InterlockedAnd intrinsic", "_InterlockedAnd8_acq intrinsic", "_InterlockedAnd_acq intrinsic", "_InterlockedAnd64_HLEAcquire intrinsic", "_InterlockedAnd16_acq intrinsic", "_InterlockedAnd16_nf intrinsic", "_InterlockedAnd8 intrinsic", "_InterlockedAnd_HLEAcquire intrinsic"]
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
 ---
-# _InterlockedAnd Intrinsic Functions
+# _InterlockedAnd intrinsic functions
 
 **Microsoft Specific**
 
@@ -120,7 +120,7 @@ __int64 _InterlockedAnd64_rel(
 *mask*\
 [in] The second operand.
 
-## Return Value
+## Return value
 
 The original value of the first operand.
 
@@ -172,5 +172,5 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

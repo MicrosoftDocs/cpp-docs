@@ -17,7 +17,7 @@ Reads the CR3 register and returns its value.
 unsigned __int64 __readcr3(void);
 ```
 
-## Return Value
+## Return value
 
 The value in the CR3 register.
 
@@ -37,4 +37,4 @@ The intrinsic is only available in kernel mode, and the routine is only availabl
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -7,7 +7,7 @@ ms.assetid: 7f4a5811-35e6-4f64-ba7c-21203380eeda
 ---
 # _ReturnAddress
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The `_ReturnAddress` intrinsic provides the address of the instruction in the calling function that will be executed after control returns to the caller.
 
@@ -57,5 +57,5 @@ int main(void)
 ## See also
 
 [_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

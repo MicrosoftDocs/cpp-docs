@@ -24,7 +24,7 @@ unsigned __int64 __rdtscp(
 *AUX*\
 [out] Pointer to a location that will contain the contents of the machine-specific register `TSC_AUX[31:0]`.
 
-## Return Value
+## Return value
 
 A 64-bit unsigned integer tick count.
 
@@ -69,4 +69,4 @@ TSC_AUX was 0
 ## See also
 
 [__rdtsc](../intrinsics/rdtsc.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

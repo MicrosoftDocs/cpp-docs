@@ -24,7 +24,7 @@ unsigned __int64 __readpmc(
 *counter*\
 [in] The performance counter to read.
 
-## Return Value
+## Return value
 
 The value of the specified performance counter.
 
@@ -44,4 +44,4 @@ The intrinsic is available in kernel mode only, and the routine is only availabl
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

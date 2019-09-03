@@ -16,12 +16,12 @@ unsigned         __readdr(unsigned int DebugRegister); /* x86 */
 unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 ```
 
-#### Parameters
+### Parameters
 
 *DebugRegister*\
 [in] A constant from 0 through 7 that identifies the debug register.
 
-## Return Value
+## Return value
 
 The value of the specified debug register.
 
@@ -41,5 +41,5 @@ These intrinsics are available only in kernel mode, and the routines are availab
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

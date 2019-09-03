@@ -28,7 +28,7 @@ long _InterlockedAddLargeStatistic(
 *Value*\
 [in] The second operand; value to add to the first operand.
 
-## Return Value
+## Return value
 
 The value of the second operand.
 
@@ -50,5 +50,5 @@ The `_InterlockedAddLargeStatistic` intrinsic isn't atomic, because it's impleme
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

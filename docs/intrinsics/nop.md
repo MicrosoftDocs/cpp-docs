@@ -33,5 +33,5 @@ The `__nop` function is equivalent to the `NOP` machine instruction. For more in
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__noop](../intrinsics/noop.md)

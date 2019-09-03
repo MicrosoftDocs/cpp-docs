@@ -41,4 +41,4 @@ The `__svm_invlpga` function is equivalent to the `INVLPGA` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

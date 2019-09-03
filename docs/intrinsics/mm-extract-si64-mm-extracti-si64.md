@@ -39,7 +39,7 @@ __m128i _mm_extracti_si64(
 *Index*\
 [in] An integer that specifies the index of the field to extract
 
-## Return Value
+## Return value
 
 A 128-bit field with the extracted field in its least significant bits.
 
@@ -104,4 +104,4 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 ## See also
 
 [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

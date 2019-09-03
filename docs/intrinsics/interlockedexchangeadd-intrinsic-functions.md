@@ -1,15 +1,15 @@
 ---
-title: "_InterlockedExchangeAdd Intrinsic Functions"
+title: "_InterlockedExchangeAdd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchangeAdd64_nf", "_InterlockedExchangeAdd64_rel", "_InterlockedExchangeAdd16_rel", "_InterlockedExchangeAdd_acq", "_InterlockedExchangeAdd_nf", "_InterlockedExchangeAdd_rel", "_InterlockedExchangeAdd8_acq", "_InterlockedExchangeAdd16_nf", "_InterlockedExchangeAdd_acq_cpp", "_InterlockedExchangeAdd64_acq_cpp", "_InterlockedExchangeAdd16_acq", "_InterlockedExchangeAdd_HLERelease", "_InterlockedExchangeAdd64_cpp", "_InterlockedExchangeAdd64_HLERelease", "_InterlockedExchangeAdd64_acq", "_InterlockedExchangeAdd8", "_InterlockedExchangeAdd64", "_InterlockedExchangeAdd8_nf", "_InterlockedExchangeAdd16", "_InterlockedExchangeAdd64_rel_cpp", "_InterlockedExchangeAdd_cpp", "_InterlockedExchangeAdd8_rel", "_InterlockedExchangeAdd_HLEAcquire", "_InterlockedExchangeAdd64_HLEAcquire", "_InterlockedExchangeAdd"]
 helpviewer_keywords: ["_InterlockedExchangeAdd8_nf intrinsic", "InterlockedExchangeAdd64_acq intrinsic", "_InterlockedExchangeAdd8_acq intrinsic", "_InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd8_rel intrinsic", "_InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd_HLEAcquire intrinsic", "_InterlockedExchangeAdd8 intrinsic", "_InterlockedExchangeAdd_rel intrinsic", "_InterlockedExchangeAdd64_HLERelease intrinsic", "_InterlockedExchangeAdd64_nf intrinsic", "InterlockedExchangeAdd_rel intrinsic", "InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd_nf intrinsic", "_InterlockedExchangeAdd16_rel intrinsic", "InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd64_HLEAcquire intrinsic", "_InterlockedExchangeAdd16 intrinsic", "_InterlockedExchangeAdd64_acq intrinsic", "InterlockedExchangeAdd64_rel intrinsic", "_InterlockedExchangeAdd16_acq intrinsic", "InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd_HLERelease intrinsic", "_InterlockedExchangeAdd16_nf intrinsic", "_InterlockedExchangeAdd64_rel intrinsic"]
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
 ---
-# _InterlockedExchangeAdd Intrinsic Functions
+# _InterlockedExchangeAdd intrinsic functions
 
 **Microsoft Specific**
 
-Provide compiler intrinsic support for the Win32 Windows SDK [_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [_InterlockedExchangeAdd intrinsic functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.
 
 ## Syntax
 
@@ -104,7 +104,7 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 *Value*\
 [in] The value to add.
 
-## Return Value
+## Return value
 
 The return value is the initial value of the variable pointed to by the `Addend` parameter.
 
@@ -138,6 +138,6 @@ For a sample of how to use `_InterlockedExchangeAdd`, see [_InterlockedDecrement
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

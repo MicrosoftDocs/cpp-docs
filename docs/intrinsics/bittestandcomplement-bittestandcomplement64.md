@@ -13,7 +13,7 @@ Generate an instruction which examines bit `b` of the address `a`, returns its c
 
 ## Syntax
 
-```
+```C
 unsigned char _bittestandcomplement(
    long *a,
    long b
@@ -32,7 +32,7 @@ unsigned char _bittestandcomplement64(
 *b*\
 [in] The bit position to test.
 
-## Return Value
+## Return value
 
 The bit at the position specified.
 
@@ -51,7 +51,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // bittestandcomplement.cpp
 // processor: x86, IPF, x64
 #include <stdio.h>
@@ -79,9 +79,7 @@ int main()
 }
 ```
 
-## Sample Output
-
-```
+```Output
 Initial value: 1
 Testing bit 1
 Value changed to 3, Result: 0
@@ -93,4 +91,4 @@ Value changed to 0, Result: 1
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

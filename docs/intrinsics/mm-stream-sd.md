@@ -28,7 +28,7 @@ void _mm_stream_sd(
 *Source*\
 [in] A 128-bit value containing the `double` value to be written in its bottom 64 bits.
 
-## Return Value
+## Return value
 
 None.
 
@@ -81,4 +81,4 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 [_mm_stream_ss](../intrinsics/mm-stream-ss.md)\
 [_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)\
 [_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

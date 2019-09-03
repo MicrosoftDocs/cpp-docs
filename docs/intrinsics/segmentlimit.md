@@ -24,7 +24,7 @@ unsigned long __segmentlimit(
 *a*\
 [in] A constant that specifies the segment selector.
 
-## Return Value
+## Return value
 
 The segment limit of the segment selector specified by *a*, if the selector is valid and visible at the current permission level.
 
@@ -100,4 +100,4 @@ sl was changed
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -32,7 +32,7 @@ unsigned __int64 __shiftright128(
 *Shift*\
 [in] The number of bits to shift.
 
-## Return Value
+## Return value
 
 The low 64 bits of the result.
 
@@ -57,4 +57,4 @@ For an example, see [__shiftleft128](../intrinsics/shiftleft128.md).
 ## See also
 
 [__shiftleft128](../intrinsics/shiftleft128.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

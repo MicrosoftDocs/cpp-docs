@@ -32,7 +32,7 @@ unsigned char _BitScanForward64(
 *Mask*\
 [in] The 32-bit or 64-bit value to search.
 
-## Return Value
+## Return value
 
 0 if the mask is zero; nonzero otherwise.
 
@@ -80,13 +80,9 @@ int main()
 }
 ```
 
-## Input
-
 ```Input
 12
 ```
-
-## Sample Output
 
 ```Output
 Enter a positive integer as the mask:
@@ -97,4 +93,4 @@ Mask: 12 Index: 2
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

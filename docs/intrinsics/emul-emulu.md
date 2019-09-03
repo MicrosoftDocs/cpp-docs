@@ -32,7 +32,7 @@ unsigned __int64 __emulu(
 *b*\
 [in] The second integer operand of the multiplication.
 
-## Return Value
+## Return value
 
 The result of the multiplication.
 
@@ -94,4 +94,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

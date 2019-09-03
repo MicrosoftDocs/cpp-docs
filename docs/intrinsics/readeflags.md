@@ -16,7 +16,7 @@ unsigned     int __readeflags(void); /* x86 */
 unsigned __int64 __readeflags(void); /* x64 */
 ```
 
-## Return Value
+## Return value
 
 The value of the EFLAGS register. The return value is 32 bits long on a 32-bit platform, and 64 bits long on a 64-bit platform.
 
@@ -36,5 +36,5 @@ These routines are available only as intrinsics.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__writeeflags](../intrinsics/writeeflags.md)

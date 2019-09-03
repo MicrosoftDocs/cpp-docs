@@ -35,5 +35,5 @@ This function supports the interaction of a host's virtual machine monitor with 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__svm_clgi](../intrinsics/svm-clgi.md)

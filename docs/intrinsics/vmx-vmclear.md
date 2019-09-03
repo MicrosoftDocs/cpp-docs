@@ -24,7 +24,7 @@ unsigned char __vmx_vmclear(
 *VmcsPhysicalAddress*\
 [in] A pointer to a 64-bit memory location that contains the physical address of the VMCS to clear.
 
-## Return Value
+## Return value
 
 |Value|Meaning|
 |-----------|-------------|
@@ -50,6 +50,6 @@ The `__vmx_vmclear` function is equivalent to the `VMCLEAR` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md)\
 [__vmx_vmresume](../intrinsics/vmx-vmresume.md)

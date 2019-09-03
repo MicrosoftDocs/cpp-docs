@@ -25,12 +25,12 @@ unsigned __int64 __lzcnt64(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *value*\
 [in] The 16-, 32-, or 64-bit unsigned integer to scan for leading zeros.
 
-## Return Value
+## Return value
 
 The number of leading zero bits in the `value` parameter. If `value` is zero, the return value is the size of the input operand (16, 32, or 64). If the most significant bit of `value` is one, the return value is zero.
 
@@ -95,4 +95,4 @@ Portions of this content are Copyright 2007 by Advanced Micro Devices, Inc. All 
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

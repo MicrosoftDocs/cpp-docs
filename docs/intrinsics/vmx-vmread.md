@@ -28,7 +28,7 @@ unsigned char __vmx_vmread(
 *FieldValue*\
 [in] A pointer to the location to store the value read from the VMCS field specified by the `Field` parameter.
 
-## Return Value
+## Return value
 
 |Value|Meaning|
 |-----------|-------------|
@@ -52,5 +52,5 @@ The `__vmx_vmread` function is equivalent to the `VMREAD` machine instruction. T
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmwrite](../intrinsics/vmx-vmwrite.md)

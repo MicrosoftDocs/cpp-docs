@@ -44,4 +44,4 @@ This function may only be used in kernel mode, and this routine is only availabl
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

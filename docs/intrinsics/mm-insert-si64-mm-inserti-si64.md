@@ -40,7 +40,7 @@ __m128i _mm_inserti_si64(
 *Index*\
 [in] An integer constant that specifies the index of the least significant bit of the field into which data will be inserted.
 
-## Return Value
+## Return value
 
 A 128-bit field, whose lower 64 bits contain the original low 64 bits of *Source1*, with the specified bit field replaced by the low bits of *Source2*. The upper 64 bits of the return value are undefined.
 
@@ -114,4 +114,4 @@ Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Rep
 ## See also
 
 [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

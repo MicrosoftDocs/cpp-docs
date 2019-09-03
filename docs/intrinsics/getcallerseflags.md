@@ -17,7 +17,7 @@ Returns the EFLAGS value from the caller's context.
 unsigned int __getcallerseflags(void);
 ```
 
-## Return Value
+## Return value
 
 EFLAGS value from the caller's context.
 
@@ -73,4 +73,4 @@ EFLAGS 0x206
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

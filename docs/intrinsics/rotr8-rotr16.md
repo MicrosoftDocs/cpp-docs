@@ -32,7 +32,7 @@ unsigned short _rotr16(
 *shift*\
 [in] The number of bits to rotate.
 
-## Return Value
+## Return value
 
 The rotated value.
 
@@ -94,4 +94,4 @@ Rotating unsigned short 0x12 right by 10 bits gives 0x480
 ## See also
 
 [_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

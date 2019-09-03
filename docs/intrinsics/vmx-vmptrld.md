@@ -24,7 +24,7 @@ int __vmx_vmptrld(
 *VmcsPhysicalAddress*\
 [in] The address where the VMCS pointer is stored.
 
-## Return Value
+## Return value
 
 0\
 The operation succeeded.
@@ -53,5 +53,5 @@ The `__vmx_vmptrld` function is equivalent to the `VMPTRLD` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmptrst](../intrinsics/vmx-vmptrst.md)

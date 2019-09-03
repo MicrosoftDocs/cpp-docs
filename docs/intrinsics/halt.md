@@ -33,4 +33,4 @@ The `__halt` function is equivalent to the `HLT` machine instruction, and is ava
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

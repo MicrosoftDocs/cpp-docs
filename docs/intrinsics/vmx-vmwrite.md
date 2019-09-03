@@ -28,7 +28,7 @@ unsigned char __vmx_vmwrite(
 *FieldValue*\
 [in] The value to write to the VMCS field.
 
-## Return Value
+## Return value
 
 0\
 The operation succeeded.
@@ -55,5 +55,5 @@ The `__vmx_vmwrite` function is equivalent to the `VMWRITE` machine instruction.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__vmx_vmread](../intrinsics/vmx-vmread.md)

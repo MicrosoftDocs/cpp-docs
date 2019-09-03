@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedCompareExchangePointer Intrinsic Functions"
+title: "_InterlockedCompareExchangePointer intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedCompareExchangePointer_HLERelease", "_InterlockedCompareExchangePointer_rel", "_InterlockedCompareExchangePointer_acq_cpp", "_InterlockedCompareExchangePointer", "_InterlockedCompareExchangePointer_cpp", "_InterlockedCompareExchangePointer_np", "_InterlockedCompareExchangePointer_rel_cpp", "_InterlockedCompareExchangePointer_HLEAcquire", "_InterlockedCompareExchangePointer_acq", "_InterlockedCompareExchangePointer_nf"]
 helpviewer_keywords: ["InterlockedCompareExchangePointer_acq intrinsic", "_InterlockedCompareExchangePointer_rel intrinsic", "_InterlockedCompareExchangePointer_acq intrinsic", "InterlockedCompareExchangePointer_rel intrinsic", "InterlockedCompareExchangePointer intrinsic", "_InterlockedCompareExchangePointer_HLERelease intrinsic", "_InterlockedCompareExchangePointer_HLEAcquire intrinsic", "_InterlockedCompareExchangePointer intrinsic", "_InterlockedCompareExchangePointer_nf intrinsic", "_InterlockedCompareExchangePointer_np intrinsic"]
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
 ---
-# _InterlockedCompareExchangePointer Intrinsic Functions
+# _InterlockedCompareExchangePointer intrinsic functions
 
 **Microsoft Specific**
 
@@ -62,7 +62,7 @@ long _InterlockedCompareExchangePointer_rel (
 *Comparand*\
 [in] Pointer to compare to destination. The sign is ignored.
 
-## Return Value
+## Return value
 
 The return value is the initial value of the destination.
 
@@ -94,5 +94,5 @@ These routines are only available as intrinsics.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

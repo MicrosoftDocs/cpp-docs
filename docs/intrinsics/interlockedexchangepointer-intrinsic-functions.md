@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedExchangePointer Intrinsic Functions"
+title: "_InterlockedExchangePointer intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchangePointer_cpp", "_InterlockedExchangePointer_rel", "_InterlockedExchangePointer_nf", "_InterlockedExchangePointer_HLERelease", "_InterlockedExchangePointer_acq", "_InterlockedExchangePointer", "_InterlockedExchangePointer_acq_cpp", "_InterlockedExchangePointer_HLEAcquire"]
 helpviewer_keywords: ["_InterlockedExchangePointer_rel intrinsic", "_InterlockedExchangePointer_HLERelease intrinsic", "_InterlockedExchangePointer intrinsic", "_InterlockedExchangePointer_nf intrinsic", "_InterlockedExchangePointer_acq intrinsic", "_InterlockedExchangePointer_HLEAcquire intrinsic", "InterlockedExchangePointer_acq intrinsic", "InterlockedExchangePointer intrinsic"]
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
 ---
-# _InterlockedExchangePointer Intrinsic Functions
+# _InterlockedExchangePointer intrinsic functions
 
 **Microsoft Specific**
 
@@ -48,7 +48,7 @@ void * _InterlockedExchangePointer_HLERelease(
 *Value*\
 [in] Value to be exchanged with the value pointed to by *Target*.
 
-## Return Value
+## Return value
 
 The function returns the initial value pointed to by *Target*.
 
@@ -76,5 +76,5 @@ These routines are only available as intrinsics.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

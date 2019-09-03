@@ -24,7 +24,7 @@ unsigned char __vmx_on(
 *VmsSupportPhysicalAddress*\
 [in] A pointer to a 64-bit physical address that points to a virtual-machine control structure (VMCS).
 
-## Return Value
+## Return value
 
 |Value|Meaning|
 |-----------|-------------|
@@ -48,4 +48,4 @@ The `__vmx_on` function corresponds to the `VMXON` machine instruction. This fun
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

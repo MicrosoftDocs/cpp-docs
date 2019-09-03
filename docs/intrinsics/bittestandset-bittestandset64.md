@@ -32,7 +32,7 @@ unsigned char _bittestandset64(
 *b*\
 [in] The bit position to test.
 
-## Return Value
+## Return value
 
 The bit at the position specified.
 
@@ -138,4 +138,4 @@ Flags: 0x0
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

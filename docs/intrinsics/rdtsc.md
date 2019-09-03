@@ -17,7 +17,7 @@ Generates the `rdtsc` instruction, which returns the processor time stamp. The p
 unsigned __int64 __rdtsc();
 ```
 
-## Return Value
+## Return value
 
 A 64-bit unsigned integer representing a tick count.
 
@@ -61,4 +61,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

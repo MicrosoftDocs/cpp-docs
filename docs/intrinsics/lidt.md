@@ -39,5 +39,5 @@ The `__lidt` function is equivalent to the `LIDT` machine instruction, and is av
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__sidt](../intrinsics/sidt.md)

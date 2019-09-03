@@ -38,5 +38,5 @@ The `_WriteBarrier` intrinsic limits the compiler optimizations that can remove 
 
 [_ReadBarrier](../intrinsics/readbarrier.md)\
 [_ReadWriteBarrier](../intrinsics/readwritebarrier.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

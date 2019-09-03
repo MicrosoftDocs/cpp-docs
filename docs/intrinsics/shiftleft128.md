@@ -21,7 +21,7 @@ unsigned __int64 __shiftleft128(
 );
 ```
 
-#### Parameters
+### Parameters
 
 *LowPart*\
 [in] The low 64 bits of the 128-bit quantity to shift.
@@ -32,7 +32,7 @@ unsigned __int64 __shiftleft128(
 *Shift*\
 [in] The number of bits to shift.
 
-## Return Value
+## Return value
 
 The high 64 bits of the result.
 
@@ -91,4 +91,4 @@ int main()
 ## See also
 
 [__shiftright128](../intrinsics/shiftright128.md)\
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
