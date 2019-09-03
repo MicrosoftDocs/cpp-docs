@@ -1,6 +1,6 @@
 ---
 title: "CAsyncSocket Class"
-ms.date: "11/04/2016"
+ms.date: "09/03/2019"
 f1_keywords: ["CAsyncSocket", "AFXSOCK/CAsyncSocket", "AFXSOCK/CAsyncSocket::CAsyncSocket", "AFXSOCK/CAsyncSocket::Accept", "AFXSOCK/CAsyncSocket::AsyncSelect", "AFXSOCK/CAsyncSocket::Attach", "AFXSOCK/CAsyncSocket::Bind", "AFXSOCK/CAsyncSocket::Close", "AFXSOCK/CAsyncSocket::Connect", "AFXSOCK/CAsyncSocket::Create", "AFXSOCK/CAsyncSocket::Detach", "AFXSOCK/CAsyncSocket::FromHandle", "AFXSOCK/CAsyncSocket::GetLastError", "AFXSOCK/CAsyncSocket::GetPeerName", "AFXSOCK/CAsyncSocket::GetPeerNameEx", "AFXSOCK/CAsyncSocket::GetSockName", "AFXSOCK/CAsyncSocket::GetSockNameEx", "AFXSOCK/CAsyncSocket::GetSockOpt", "AFXSOCK/CAsyncSocket::IOCtl", "AFXSOCK/CAsyncSocket::Listen", "AFXSOCK/CAsyncSocket::Receive", "AFXSOCK/CAsyncSocket::ReceiveFrom", "AFXSOCK/CAsyncSocket::ReceiveFromEx", "AFXSOCK/CAsyncSocket::Send", "AFXSOCK/CAsyncSocket::SendTo", "AFXSOCK/CAsyncSocket::SendToEx", "AFXSOCK/CAsyncSocket::SetSockOpt", "AFXSOCK/CAsyncSocket::ShutDown", "AFXSOCK/CASyncSocket::Socket", "AFXSOCK/CAsyncSocket::OnAccept", "AFXSOCK/CAsyncSocket::OnClose", "AFXSOCK/CAsyncSocket::OnConnect", "AFXSOCK/CAsyncSocket::OnOutOfBandData", "AFXSOCK/CAsyncSocket::OnReceive", "AFXSOCK/CAsyncSocket::OnSend", "AFXSOCK/CAsyncSocket::m_hSocket"]
 helpviewer_keywords: ["CAsyncSocket [MFC], CAsyncSocket", "CAsyncSocket [MFC], Accept", "CAsyncSocket [MFC], AsyncSelect", "CAsyncSocket [MFC], Attach", "CAsyncSocket [MFC], Bind", "CAsyncSocket [MFC], Close", "CAsyncSocket [MFC], Connect", "CAsyncSocket [MFC], Create", "CAsyncSocket [MFC], Detach", "CAsyncSocket [MFC], FromHandle", "CAsyncSocket [MFC], GetLastError", "CAsyncSocket [MFC], GetPeerName", "CAsyncSocket [MFC], GetPeerNameEx", "CAsyncSocket [MFC], GetSockName", "CAsyncSocket [MFC], GetSockNameEx", "CAsyncSocket [MFC], GetSockOpt", "CAsyncSocket [MFC], IOCtl", "CAsyncSocket [MFC], Listen", "CAsyncSocket [MFC], Receive", "CAsyncSocket [MFC], ReceiveFrom", "CAsyncSocket [MFC], ReceiveFromEx", "CAsyncSocket [MFC], Send", "CAsyncSocket [MFC], SendTo", "CAsyncSocket [MFC], SendToEx", "CAsyncSocket [MFC], SetSockOpt", "CAsyncSocket [MFC], ShutDown", "CASyncSocket [MFC], Socket", "CAsyncSocket [MFC], OnAccept", "CAsyncSocket [MFC], OnClose", "CAsyncSocket [MFC], OnConnect", "CAsyncSocket [MFC], OnOutOfBandData", "CAsyncSocket [MFC], OnReceive", "CAsyncSocket [MFC], OnSend", "CAsyncSocket [MFC], m_hSocket"]
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
@@ -261,7 +261,7 @@ The length of the address in *lpSockAddr* in bytes.
 
 ### Return Value
 
-Nonzero if the function is successful; otherwise 0, and a specific error code can be retrieved by calling [GetLastError](#getlasterror). The following errors apply to this member function:
+Nonzero if the function is successful; otherwise 0, and a specific error code can be retrieved by calling [GetLastError](#getlasterror). The following list covers a few of the errors that might be returned. For a complete list, see [Windows Sockets Error Codes](windows/win32/winsock/windows-sockets-error-codes-2).
 
 - WSANOTINITIALISED A successful [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit) must occur before using this API.
 
