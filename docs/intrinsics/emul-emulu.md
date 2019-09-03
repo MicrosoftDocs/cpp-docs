@@ -1,6 +1,6 @@
 ---
 title: "__emul, __emulu"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__emulu_cpp", "__emul", "__emul_cpp", "__emulu"]
 helpviewer_keywords: ["__emul intrinsic", "__emulu intrinsic"]
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
@@ -13,7 +13,7 @@ Performs multiplications that overflow what a 32-bit integer can hold.
 
 ## Syntax
 
-```
+```C
 __int64 __emul(
    int a,
    int b
@@ -24,15 +24,15 @@ unsigned __int64 __emulu(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] The first integer operand of the multiplication.
 
-*b*<br/>
+*b*\
 [in] The second integer operand of the multiplication.
 
-## Return Value
+## Return value
 
 The result of the multiplication.
 
@@ -53,7 +53,7 @@ The result of the multiplication.
 
 ## Example
 
-```
+```cpp
 // emul.cpp
 // compile with: /EHsc
 // processor: x86, x64
@@ -85,7 +85,7 @@ int main()
 
 ## Output
 
-```
+```Output
 -268435456 * 2 = -536870912
 4294967295 * 251658240 = 1080863910317260800
 ```
@@ -94,4 +94,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

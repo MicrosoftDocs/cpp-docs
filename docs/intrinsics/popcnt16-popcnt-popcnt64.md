@@ -1,6 +1,6 @@
 ---
 title: "__popcnt16, __popcnt, __popcnt64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]
 helpviewer_keywords: ["popcnt instruction", "__popcnt16", "__popcnt64", "__popcnt"]
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
@@ -9,11 +9,11 @@ ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
 
 **Microsoft Specific**
 
-Counts the number of one bits (population count) in a 16-, 32-, or 64-bit unsigned integer.
+Counts the number of `1` bits (population count) in a 16-, 32-, or 64-bit unsigned integer.
 
 ## Syntax
 
-```
+```C
 unsigned short __popcnt16(
    unsigned short value
 );
@@ -25,14 +25,14 @@ unsigned __int64 __popcnt64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*value*<br/>
+*value*\
 [in] The 16-, 32-, or 64-bit unsigned integer for which we want the population count.
 
-## Return Value
+## Return value
 
-The number of one bits in the `value` parameter.
+The number of `1` bits in the *value* parameter.
 
 ## Requirements
 
@@ -46,13 +46,13 @@ The number of one bits in the `value` parameter.
 
 ## Remarks
 
-Each of these intrinsics generates the `popcnt` instruction. In 32-bit mode there are no 64-bit general-purpose registers, hence no 64-bit `popcnt`.
+Each of the intrinsics generates the `popcnt` instruction. In 32-bit mode, there are no 64-bit general-purpose registers, so 64-bit `popcnt` isn't supported.
 
-To determine hardware support for the `popcnt` instruction, call the `__cpuid` intrinsic with `InfoType=0x00000001` and check bit 23 of `CPUInfo[2] (ECX)`. This bit is 1 if the instruction is supported, and 0 otherwise. If you run code that uses this intrinsic on hardware that does not support the `popcnt` instruction, the results are unpredictable.
+To determine hardware support for the `popcnt` instruction, call the `__cpuid` intrinsic with `InfoType=0x00000001` and check bit 23 of `CPUInfo[2] (ECX)`. This bit is 1 if the instruction is supported, and 0 otherwise. If you run code that uses these intrinsics on hardware that doesn't support the `popcnt` instruction, the results are unpredictable.
 
 ## Example
 
-```
+```cpp
 #include <iostream>
 #include <intrin.h>
 using namespace std;
@@ -88,8 +88,8 @@ __popcnt(0xffffffff) = 32
 
 **END Microsoft Specific**
 
-Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
+Portions Copyright 2007 by Advanced Micro Devices, Inc. All rights reserved. Reproduced with permission from Advanced Micro Devices, Inc.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

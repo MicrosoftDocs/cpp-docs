@@ -1,6 +1,6 @@
 ---
 title: "__writecr0"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_writecr0"]
 helpviewer_keywords: ["_writecr0 intrinsic"]
 ms.assetid: a143d08d-0333-4e1b-91b4-4acb2ae91b5a
@@ -13,15 +13,15 @@ Writes the value `Data` to the CR0 register.
 
 ## Syntax
 
-```
+```C
 void writecr0(
    unsigned __int64 Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Data*<br/>
+*Data*\
 [in] The value to write to the CR0 register.
 
 ## Requirements
@@ -40,4 +40,4 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

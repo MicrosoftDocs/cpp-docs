@@ -1,6 +1,6 @@
 ---
 title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readgsbyte", "__readgsdword", "__readgsqword", "__readgsword"]
 helpviewer_keywords: ["__readgsword intrinsic", "__readgsdword intrinsic", "__readgsqword intrinsic", "__readgsbyte intrinsic"]
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
@@ -13,7 +13,7 @@ Read memory from a location specified by an offset relative to the beginning of 
 
 ## Syntax
 
-```
+```C
 unsigned char __readgsbyte(
    unsigned long Offset
 );
@@ -28,12 +28,12 @@ unsigned __int64 __readgsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of `GS` to read from.
 
-## Return Value
+## Return value
 
 The memory contents of the byte, word, double word, or quadword (as indicated by the name of the function called) at the location `GS:[Offset]`.
 
@@ -56,5 +56,5 @@ These routines are only available as an intrinsic.
 
 ## See also
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

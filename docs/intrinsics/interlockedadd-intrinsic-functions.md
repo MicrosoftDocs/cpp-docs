@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedAdd Intrinsic Functions"
-ms.date: "12/17/2018" 
+title: "_InterlockedAdd intrinsic functions"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]
 helpviewer_keywords: ["_InterlockedAdd_nf intrinsic", "_InterlockedAdd_rel intrinsic", "_InterlockedAdd intrinsic", "_InterlockedAdd64 intrinsic", "_InterlockedAdd64_acq intrinsic", "_InterlockedAdd64_nf intrinsic", "_InterlockedAdd_acq intrinsic", "_InterlockedAdd64_rel intrinsic"]
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
 ---
-# _InterlockedAdd Intrinsic Functions
+# _InterlockedAdd intrinsic functions
 
 **Microsoft Specific**
 
@@ -13,7 +13,7 @@ These functions perform an atomic addition, which makes sure that the operation 
 
 ## Syntax
 
-```
+```C
 long _InterlockedAdd(
    long volatile * Addend,
    long Value
@@ -48,15 +48,15 @@ __int64 _InterlockedAdd64_rel(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Addend*<br/>
+*Addend*\
 [in, out] Pointer to the integer to be added to; replaced by the result of the addition.
 
-*Value*<br/>
+*Value*\
 [in] The value to add.
 
-## Return Value
+## Return value
 
 Both functions return the result of the addition.
 
@@ -64,14 +64,14 @@ Both functions return the result of the addition.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_InterlockedAdd`|ARM|
-|`_InterlockedAdd_acq`|ARM|
-|`_InterlockedAdd_nf`|ARM|
-|`_InterlockedAdd_rel`|ARM|
-|`_InterlockedAdd64`|ARM|
-|`_InterlockedAdd64_acq`|ARM|
-|`_InterlockedAdd64_nf`|ARM|
-|`_InterlockedAdd64_rel`|ARM|
+|`_InterlockedAdd`|ARM, ARM64|
+|`_InterlockedAdd_acq`|ARM, ARM64|
+|`_InterlockedAdd_nf`|ARM, ARM64|
+|`_InterlockedAdd_rel`|ARM, ARM64|
+|`_InterlockedAdd64`|ARM, ARM64|
+|`_InterlockedAdd64_acq`|ARM, ARM64|
+|`_InterlockedAdd64_nf`|ARM, ARM64|
+|`_InterlockedAdd64_rel`|ARM, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -143,5 +143,5 @@ Return value: ffff00ffffffff
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

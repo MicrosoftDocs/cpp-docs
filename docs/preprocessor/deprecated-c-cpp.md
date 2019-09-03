@@ -1,22 +1,20 @@
 ---
-title: "deprecated (C/C++)"
-ms.date: "11/04/2016"
+title: "deprecated pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.deprecated", "deprecated_CPP"]
 helpviewer_keywords: ["deprecated pragma", "pragmas, deprecated"]
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
 ---
-# deprecated (C/C++)
+# deprecated pragma
 
 The **deprecated** pragma lets you indicate that a function, type, or any other identifier may no longer be supported in a future release or should no longer be used.
 
 > [!NOTE]
-> For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs the Microsoft declspec or pragma, see [C++ Standard Attributes](../cpp/attributes.md) attribute.
+> For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute instead of the Microsoft `__declspec(deprecated)` modifier or the **deprecated** pragma, see [Attributes in C++](../cpp/attributes.md).
 
 ## Syntax
 
-```
-#pragma deprecated( identifier1 [,identifier2, ...] )
-```
+> **#pragma deprecated(** *identifier1* [ **,** *identifier2* ... ] **)**
 
 ## Remarks
 
@@ -67,4 +65,4 @@ int main() {
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

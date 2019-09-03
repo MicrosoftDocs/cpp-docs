@@ -1,23 +1,21 @@
 ---
-title: "execution_character_set"
-ms.date: "10/18/2018"
+title: "execution_character_set pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
 helpviewer_keywords: ["pragma execution_character_set"]
 ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
 ---
-# execution_character_set
+# execution_character_set pragma
 
-Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the u8 prefix.
+Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the `u8` prefix.
 
 ## Syntax
 
-```
-#pragma execution_character_set("target")
-```
+> **#pragma execution_character_set(** "*target*" **)**
 
 ### Parameters
 
-*target*<br/>
+*target*\
 Specifies the target execution character set. Currently the only target execution set supported is "utf-8".
 
 ## Remarks
@@ -32,6 +30,6 @@ By default, Visual Studio uses the current code page as the source character set
 
 ## See also
 
-[Pragma Directives and the \_\_Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md)<br/>
+[Pragma Directives and the \_\_Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md)\
 [/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)

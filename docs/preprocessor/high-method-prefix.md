@@ -1,11 +1,11 @@
 ---
-title: "high_method_prefix"
-ms.date: "10/18/2018"
+title: "high_method_prefix import attribute"
+ms.date: "08/29/2019"
 f1_keywords: ["high_method_prefix"]
 helpviewer_keywords: ["high_method_prefix attribute"]
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c
 ---
-# high_method_prefix
+# high_method_prefix import attribute
 
 **C++ Specific**
 
@@ -13,13 +13,11 @@ Specifies a prefix to be used in naming high-level properties and methods.
 
 ## Syntax
 
-```
-high_method_prefix("Prefix")
-```
+> **#import** *type-library* **high_method_prefix(** "*Prefix*" **)**
 
 ### Parameters
 
-*Prefix*<br/>
+*Prefix*\
 Prefix to be used.
 
 ## Remarks
@@ -30,5 +28,5 @@ By default, high-level error-handling properties and methods are exposed by memb
 
 ## See also
 
-[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)<br/>
-[#import Directive](../preprocessor/hash-import-directive-cpp.md)
+[#import attributes](../preprocessor/hash-import-attributes-cpp.md)\
+[#import directive](../preprocessor/hash-import-directive-cpp.md)

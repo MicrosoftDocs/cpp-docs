@@ -1,10 +1,10 @@
 ---
-title: "Compiler Intrinsics"
-ms.date: "11/04/2016"
+title: "Compiler intrinsics"
+ms.date: "09/02/2019"
 helpviewer_keywords: ["intrinsics, compiler", "compiler intrinsics", "cl.exe compiler, performance", "cl.exe compiler, intrinsics"]
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
 ---
-# Compiler Intrinsics
+# Compiler intrinsics
 
 Most functions are contained in libraries, but some functions are built in (that is, intrinsic) to the compiler. These are referred to as intrinsic functions or intrinsics.
 
@@ -16,7 +16,7 @@ The use of intrinsics affects the portability of code, because intrinsics that a
 
 Some intrinsics, such as `__assume` and `__ReadWriteBarrier`, provide information to the compiler, which affects the behavior of the optimizer.
 
-Some intrinsics are available only as intrinsics, and some are available both in function and intrinsic implementations. You can instruct the compiler to use the intrinsic implementation in one of two ways, depending on whether you want to enable only specific functions or you want to enable all intrinsics. The first way is to use `#pragma intrinsic(`*intrinsic-function-name-list*`)`. The pragma can be used to specify a single intrinsic or multiple intrinsics separated by commas. The second is to use the [/Oi (Generate Intrinsic Functions)](../build/reference/oi-generate-intrinsic-functions.md) compiler option, which makes all intrinsics on a given platform available. Under **/Oi**, use `#pragma function(`*intrinsic-function-name-list*`)` to force a function call to be used instead of an intrinsic. If the documentation for a specific intrinsic notes that the routine is only available as an intrinsic, then the intrinsic implementation is used regardless of whether **/Oi** or `#pragma intrinsic` is specified. In all cases, **/Oi** or `#pragma intrinsic` allows, but does not force, the optimizer to use the intrinsic. The optimizer can still call the function.
+Some intrinsics are available only as intrinsics, and some are available both in function and intrinsic implementations. You can instruct the compiler to use the intrinsic implementation in one of two ways, depending on whether you want to enable only specific functions or you want to enable all intrinsics. The first way is to use `#pragma intrinsic(`*intrinsic-function-name-list*`)`. The pragma can be used to specify a single intrinsic or multiple intrinsics separated by commas. The second is to use the [/Oi (Generate intrinsic functions)](../build/reference/oi-generate-intrinsic-functions.md) compiler option, which makes all intrinsics on a given platform available. Under **/Oi**, use `#pragma function(`*intrinsic-function-name-list*`)` to force a function call to be used instead of an intrinsic. If the documentation for a specific intrinsic notes that the routine is only available as an intrinsic, then the intrinsic implementation is used regardless of whether **/Oi** or `#pragma intrinsic` is specified. In all cases, **/Oi** or `#pragma intrinsic` allows, but does not force, the optimizer to use the intrinsic. The optimizer can still call the function.
 
 Some standard C/C++ library functions are available in intrinsic implementations on some architectures. When calling a CRT function, the intrinsic implementation is used if **/Oi** is specified on the command line.
 
@@ -24,19 +24,19 @@ A header file, \<intrin.h>, is available that declares prototypes for the common
 
 The following sections list all intrinsics that are available on various architectures. For more information on how the intrinsics work on your particular target processor, refer to the manufacturer's reference documentation.
 
-- [ARM Intrinsics](../intrinsics/arm-intrinsics.md)
+- [ARM intrinsics](../intrinsics/arm-intrinsics.md)
 
-- [x86 Intrinsics List](../intrinsics/x86-intrinsics-list.md)
+- [x86 intrinsics list](../intrinsics/x86-intrinsics-list.md)
 
 - [x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)
 
-- [Intrinsics Available on All Architectures](../intrinsics/intrinsics-available-on-all-architectures.md)
+- [Intrinsics available on all architectures](../intrinsics/intrinsics-available-on-all-architectures.md)
 
-- [Alphabetical Listing of Intrinsic Functions](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
+- [Alphabetical listing of intrinsic functions](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)
 
 ## See also
 
-[ARM Assembler Reference](../assembler/arm/arm-assembler-reference.md)<br/>
-[Microsoft Macro Assembler Reference](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[ARM assembler reference](../assembler/arm/arm-assembler-reference.md)<br/>
+[Microsoft Macro Assembler reference](../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+[C run-time library reference](../c-runtime-library/c-run-time-library-reference.md)

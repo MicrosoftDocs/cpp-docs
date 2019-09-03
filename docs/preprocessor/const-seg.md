@@ -1,47 +1,49 @@
 ---
-title: "const_seg"
-ms.date: "09/17/2018"
+title: "const_seg pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.const_seg", "const_seg_CPP"]
 helpviewer_keywords: ["pragmas, const_seg", "const_seg pragma"]
 ms.assetid: 1eb58ee2-fb0e-4a39-9621-699c8f5ef957
 ---
-# const_seg
-Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in the .obj file.
+# const_seg pragma
+
+Specifies the section (segment) where [const](../cpp/const-cpp.md) variables are stored in the object (.obj) file.
 
 ## Syntax
 
-```
-#pragma const_seg ( [ [ { push | pop}, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
-```
+> **#pragma const_seg(** [ "*section-name*" [ **,** "*section-class*" ] ] **)**\
+> **#pragma const_seg(** { **push** | **pop** } [ **,** *identifier* ] [ **,** "*section-name*" [ **,** "*section-class*" ] ] **)**
 
 ### Parameters
 
-**push**<br/>
-(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *segment-name*.
+**push**\
+(Optional) Puts a record on the internal compiler stack. A **push** can have an *identifier* and *section-name*.
 
-**pop**<br/>
-(Optional) Removes a record from the top of the internal compiler stack.
+**pop**\
+(Optional) Removes a record from the top of the internal compiler stack. A **pop** can have an *identifier* and *section-name*. You can pop multiple records using just one **pop** command by using the *identifier*. The *section-name* becomes the active const section name after the pop.
 
-*identifier*<br/>
-(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.
+*identifier*\
+(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, the directive pops records off the internal stack until *identifier* is removed. If *identifier* isn't found on the internal stack, nothing is popped.
 
-Using *identifier* enables multiple records to be popped with a single **pop** command.
+"*section-name*"\
+(Optional) The name of a section. When used with **pop**, the stack is popped and *section-name* becomes the active const section name.
 
-"*segment-name*"<br/>
-(Optional) The name of a segment. When used with **pop**, the stack is popped and *segment-name* becomes the active segment name.
-
-"*segment-class*"<br/>
-(Optional) Included for compatibility with C++ prior to version 2.0. It is ignored.
+"*section-class*"\
+(Optional) Ignored, but included for compatibility with versions of Microsoft C++ earlier than version 2.0.
 
 ## Remarks
 
-The meaning of the terms *segment* and *section* are interchangeable in this topic.
+A *section* in an object file is a named block of data that's loaded into memory as a unit. A *const section* is a section that contains constant data. In this article, the terms *segment* and *section* have the same meaning.
 
-OBJ files can be viewed with the [dumpbin](../build/reference/dumpbin-command-line.md) application. The default segment in the .obj file for `const` variables is .rdata. Some `const` variables, such as scalars, are automatically inlined into the code stream. Inlined code will not appear in .rdata.
+The **const_seg** pragma directive tells the compiler to put all constant data items from the translation unit into a const section named *section-name*. The default section in the object file for **const** variables is `.rdata`. Some **const** variables, such as scalars, are automatically inlined into the code stream. Inlined code doesn't appear in `.rdata`. A **const_seg** pragma directive without a *section-name* parameter resets the section name for the subsequent **const** data items to `.rdata`.
 
-Defining an object requiring dynamic initialization in a `const_seg` results in undefined behavior.
+If you define an object that requires dynamic initialization in a `const_seg`, the result is undefined behavior.
 
-`#pragma const_seg` with no parameters resets the segment to .rdata.
+For a list of names that shouldn't be used to create a section, see [/SECTION](../build/reference/section-specify-section-attributes.md).
+
+You can also specify sections for initialized data ([data_seg](../preprocessor/data-seg.md)), uninitialized data ([bss_seg](../preprocessor/bss-seg.md)), and functions ([code_seg](../preprocessor/code-seg.md)).
+
+You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view object files. Versions of DUMPBIN for each supported target architecture are included with Visual Studio.
 
 ## Example
 
@@ -79,12 +81,6 @@ test3
 test4
 ```
 
-## Comments
-
-See [/SECTION](../build/reference/section-specify-section-attributes.md) for a list of names you should not use when creating a section.
-
-You can also specify sections for initialized data ([data_seg](../preprocessor/data-seg.md)), uninitialized data ([bss_seg](../preprocessor/bss-seg.md)), and functions ([code_seg](../preprocessor/code-seg.md)).
-
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

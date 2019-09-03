@@ -1,6 +1,6 @@
 ---
 title: "__readcr2"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr2"]
 helpviewer_keywords: ["__readcr2 intrinsic"]
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
@@ -13,11 +13,11 @@ Reads the CR2 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr2(void);
 ```
 
-## Return Value
+## Return value
 
 The value in the CR2 register.
 
@@ -31,10 +31,10 @@ The value in the CR2 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

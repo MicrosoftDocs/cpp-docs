@@ -1,6 +1,6 @@
 ---
 title: "__shiftleft128"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__shiftleft128"]
 helpviewer_keywords: ["__shiftleft128 intrinsic"]
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
@@ -13,7 +13,7 @@ Shifts a 128-bit quantity, represented as two 64-bit quantities `LowPart` and `H
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __shiftleft128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -21,18 +21,18 @@ unsigned __int64 __shiftleft128(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*LowPart*<br/>
+*LowPart*\
 [in] The low 64 bits of the 128-bit quantity to shift.
 
-*HighPart*<br/>
+*HighPart*\
 [in] The high 64 bits of the 128-bit quantity to shift.
 
-*Shift*<br/>
+*Shift*\
 [in] The number of bits to shift.
 
-## Return Value
+## Return value
 
 The high 64 bits of the result.
 
@@ -46,11 +46,11 @@ The high 64 bits of the result.
 
 ## Remarks
 
-The `Shift` value is always modulo 64 so that, for example, if you call `__shiftleft128(1, 0, 64)`, the function will shift the low part `0` bits left and return a high part of `0` and not `1` as might otherwise be expected.
+The *Shift* value is always modulo 64 so that, for example, if you call `__shiftleft128(1, 0, 64)`, the function will shift the low part `0` bits left and return a high part of `0` and not `1` as might otherwise be expected.
 
 ## Example
 
-```
+```C
 // shiftleft128.c
 // processor: IPF, x64
 #include <stdio.h>
@@ -90,5 +90,5 @@ int main()
 
 ## See also
 
-[__shiftright128](../intrinsics/shiftright128.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__shiftright128](../intrinsics/shiftright128.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

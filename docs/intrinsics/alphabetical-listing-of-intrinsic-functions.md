@@ -1,10 +1,10 @@
 ---
-title: "Alphabetical Listing of Intrinsic Functions"
+title: "Alphabetical listing of intrinsic functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]
 ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ---
-# Alphabetical Listing of Intrinsic Functions
+# Alphabetical listing of intrinsic functions
 
 The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Other supported intrinsics are documented by processor manufacturers, either in the header files or on their websites. See the [ARM intrinsics](../intrinsics/arm-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md) sections for links to manufacturer documentation. C Run-time Library (CRT) functions that have intrinsics implemented for them are not documented here; these functions are documented in the [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md).
 
@@ -60,35 +60,35 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 [__int2c](../intrinsics/int2c.md)
 
-[_InterlockedAdd Intrinsic Functions](../intrinsics/interlockedadd-intrinsic-functions.md)
+[_InterlockedAdd intrinsic functions](../intrinsics/interlockedadd-intrinsic-functions.md)
 
 [_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)
 
-[_InterlockedAnd Intrinsic Functions](../intrinsics/interlockedand-intrinsic-functions.md)
+[_InterlockedAnd intrinsic functions](../intrinsics/interlockedand-intrinsic-functions.md)
 
-[_interlockedbittestandreset Intrinsic Functions](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
+[_interlockedbittestandreset intrinsic functions](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)
 
-[_interlockedbittestandset Intrinsic Functions](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
+[_interlockedbittestandset intrinsic functions](../intrinsics/interlockedbittestandset-intrinsic-functions.md)
 
-[_InterlockedCompareExchange Intrinsic Functions](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
+[_InterlockedCompareExchange intrinsic functions](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)
 
-[_InterlockedCompareExchangePointer Intrinsic Functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
+[_InterlockedCompareExchangePointer intrinsic functions](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)
 
-[_InterlockedDecrement Intrinsic Functions](../intrinsics/interlockeddecrement-intrinsic-functions.md)
+[_InterlockedDecrement intrinsic functions](../intrinsics/interlockeddecrement-intrinsic-functions.md)
 
-[_InterlockedExchange Intrinsic Functions](../intrinsics/interlockedexchange-intrinsic-functions.md)
+[_InterlockedExchange intrinsic functions](../intrinsics/interlockedexchange-intrinsic-functions.md)
 
-[_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
+[_InterlockedExchangeAdd intrinsic functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)
 
-[_InterlockedExchangePointer Intrinsic Functions](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
+[_InterlockedExchangePointer intrinsic functions](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)
 
-[_InterlockedIncrement Intrinsic Functions](../intrinsics/interlockedincrement-intrinsic-functions.md)
+[_InterlockedIncrement intrinsic functions](../intrinsics/interlockedincrement-intrinsic-functions.md)
 
-[_InterlockedOr Intrinsic Functions](../intrinsics/interlockedor-intrinsic-functions.md)
+[_InterlockedOr intrinsic functions](../intrinsics/interlockedor-intrinsic-functions.md)
 
-[_InterlockedXor Intrinsic Functions](../intrinsics/interlockedxor-intrinsic-functions.md)
+[_InterlockedXor intrinsic functions](../intrinsics/interlockedxor-intrinsic-functions.md)
 
 [__invlpg](../intrinsics/invlpg.md)
 
@@ -266,4 +266,4 @@ The following sections describe the Microsoft-specific intrinsic functions avail
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

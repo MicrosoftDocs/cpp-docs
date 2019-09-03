@@ -1,11 +1,11 @@
 ---
-title: "#line Directive (C/C++)"
-ms.date: "10/18/2017"
+title: "#line directive (C/C++)"
+ms.date: "08/29/2019"
 f1_keywords: ["#line"]
 helpviewer_keywords: ["preprocessor, directives", "line directive (#line)", "#line directive"]
 ms.assetid: 585c1dc4-5184-4f01-98f4-80c1909744d7
 ---
-# #line Directive (C/C++)
+# #line directive (C/C++)
 
 The **#line** directive tells the preprocessor to change the compiler's internally stored line number and filename to a given line number and filename.
 
@@ -17,11 +17,11 @@ The **#line** directive tells the preprocessor to change the compiler's internal
 
 The compiler uses the line number and optional filename to refer to errors that it finds during compilation. The line number usually refers to the current input line, and the filename refers to the current input file. The line number is incremented after each line is processed.
 
-The *digit-sequence* value can be any integer constant. Macro replacement can be performed on the preprocessing tokens, but the result must evaluate to the correct syntax. The *filename* can be any combination of characters and must be enclosed in double quotation marks (**" "**). If *filename* is omitted, the previous filename remains unchanged.
+The *digit-sequence* value can be any integer constant. Macro replacement can be performed on the preprocessing tokens, but the result must evaluate to the correct syntax. The *filename* can be any combination of characters and must be enclosed in double quotation marks (`" "`). If *filename* is omitted, the previous filename remains unchanged.
 
-You can alter the source line number and filename by writing a **#line** directive. The translator uses the line number and filename to determine the values of the predefined macros `__FILE__` and `__LINE__`. You can use these macros to insert self-descriptive error messages into the program text. For more information on these predefined macros, see [Predefined Macros](../preprocessor/predefined-macros.md).
+You can alter the source line number and filename by writing a **#line** directive. The translator uses the line number and filename to determine the values of the predefined macros `__FILE__` and `__LINE__`. You can use these macros to insert self-descriptive error messages into the program text. For more information on these predefined macros, see [Predefined macros](../preprocessor/predefined-macros.md).
 
-The `__FILE__` macro expands to a string whose contents are the filename, surrounded by double quotation marks (**" "**).
+The `__FILE__` macro expands to a string whose contents are the filename, surrounded by double quotation marks (`" "`).
 
 If you change the line number and filename, the compiler ignores the previous values and continues processing with the new values. The **#line** directive is typically used by program generators to cause error messages to refer to the original source file instead of to the generated program.
 
@@ -29,13 +29,13 @@ The following examples illustrate **#line** and the `__LINE__` and `__FILE__` ma
 
 In this statement, the internally stored line number is set to 151 and the filename is changed to copy.c.
 
-```cpp
+```C
 #line 151 "copy.c"
 ```
 
 In this example, the macro `ASSERT` uses the predefined macros `__LINE__` and `__FILE__` to print an error message about the source file if a given assertion is not true.
 
-```cpp
+```C
 #define ASSERT(cond) if( !(cond) )\
 {printf( "assertion error line %d, file(%s)\n", \
 __LINE__, __FILE__ );}
@@ -43,4 +43,4 @@ __LINE__, __FILE__ );}
 
 ## See also
 
-[Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+[Preprocessor directives](../preprocessor/preprocessor-directives.md)

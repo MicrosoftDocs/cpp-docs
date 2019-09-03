@@ -3,6 +3,7 @@ title: "Deploying Native Desktop Applications (Visual C++)"
 ms.date: "05/11/2018"
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]", "Visual C++, application deployment", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "distributing applications [C++]"]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
+ms.topic: "landing-page"
 ---
 # Deploying Native Desktop Applications (Visual C++)
 

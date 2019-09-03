@@ -1,7 +1,7 @@
 ---
 title: "Component Extensions for .NET and UWP"
 ms.date: "10/12/2018"
-ms.topic: "reference"
+ms.topic: "landing-page"
 helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
 ---

@@ -3,6 +3,7 @@ title: "Edit and refactor C++ code in Visual Studio"
 description: "Use the C++ code editor in Visual Studio to format, navigate, understand and refactor your code."
 ms.date: "05/31/2019"
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
+ms.topic: "landing-page"
 ---
 # Edit and refactor C++ code in Visual Studio
 

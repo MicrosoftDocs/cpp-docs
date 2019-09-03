@@ -1,6 +1,6 @@
 ---
-title: "Compiler Warnings That Are Off by Default"
-ms.date: "05/30/2018"
+title: "Compiler warnings that are off by default"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -142,15 +142,13 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C5042 (level 3)|'*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup>|
 
-<sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.<br/>
-<sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.<br/>
-<sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.<br/>
-<sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.<br/>
-<sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.<br/>
-<sup>15.8</sup> This warning is available starting in Visual Studio 2017 version 15.8.<br/>
-::: moniker range=">= vs-2019"
-<sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.<br/>
-::: moniker-end
+<sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
+<sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
+<sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.\
+<sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.\
+<sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.\
+<sup>15.8</sup> This warning is available starting in Visual Studio 2017 version 15.8.\
+<sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.\
 <sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions

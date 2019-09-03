@@ -1,26 +1,25 @@
 ---
-title: "message"
-ms.date: "11/04/2016"
+title: "message pragma"
+ms.date: "08/29/2019"
 f1_keywords: ["message_CPP", "vc-pragma.message"]
 helpviewer_keywords: ["message pragma", "pragmas, message"]
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
 ---
-# message
+# message pragma
+
 Sends a string literal to the standard output without terminating the compilation.
 
 ## Syntax
 
-```
-#pragma message( messagestring )
-```
+> **#pragma message(** *message-string* **)**
 
 ## Remarks
 
 A typical use of the **message** pragma is to display informational messages at compile time.
 
-The *messagestring* parameter can be a macro that expands to a string literal, and you can concatenate such macros with string literals in any combination.
+The *message-string* parameter can be a macro that expands to a string literal, and you can concatenate such macros with string literals in any combination.
 
-If you use a predefined macro in the **message** pragma, the macro should return a string, else you will have to convert the output of the macro to a string.
+If you use a predefined macro in the **message** pragma, the macro should return a string. Otherwise, you'll have to convert the output of the macro to a string.
 
 The following code fragment uses the **message** pragma to display messages during compilation:
 
@@ -49,4 +48,4 @@ The following code fragment uses the **message** pragma to display messages duri
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

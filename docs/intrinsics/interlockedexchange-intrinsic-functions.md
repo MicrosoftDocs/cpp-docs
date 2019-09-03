@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedExchange Intrinsic Functions"
-ms.date: "12/17/2018" 
+title: "_InterlockedExchange intrinsic functions"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchange_rel", "_InterlockedExchange8_nf", "_InterlockedExchange_acq_cpp", "_InterlockedExchange_nf", "_InterlockedExchange64_nf", "_InterlockedExchange_HLEAcquire", "_InterlockedExchange_cpp", "_InterlockedExchange64_acq_cpp", "_InterlockedExchange64_acq", "_InterlockedExchange64_HLERelease", "_InterlockedExchange8_acq", "_InterlockedExchange16_acq", "_InterlockedExchange", "_InterlockedExchange64_HLEAcquire", "_InterlockedExchange8", "_InterlockedExchange64_rel", "_InterlockedExchange_acq", "_InterlockedExchange16", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange64", "_InterlockedExchange_HLERelease", "_InterlockedExchange64_cpp", "_InterlockedExchange8_rel"]
 helpviewer_keywords: ["_InterlockedExchange8", "_InterlockedExchange64 intrinsic", "_InterlockedExchange_acq intrinsic", "InterlockedExchange64 intrinsic", "_InterlockedExchange64_acq intrinsic", "InterlockedExchange64_acq intrinsic", "_InterlockedExchange16_acq", "_InterlockedExchange8_acq", "_InterlockedExchange16", "_InterlockedExchange8_rel", "InterlockedExchange_acq intrinsic", "InterlockedExchange intrinsic", "_InterlockedExchange16_rel", "_InterlockedExchange16_nf", "_InterlockedExchange intrinsic", "_InterlockedExchange8_nf"]
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
 ---
-# _InterlockedExchange Intrinsic Functions
+# _InterlockedExchange intrinsic functions
 
 **Microsoft Specific**
 
@@ -13,7 +13,7 @@ Generates an atomic instruction to set a specified value.
 
 ## Syntax
 
-```
+```C
 long _InterlockedExchange(
    long volatile * Target,
    long Value
@@ -96,15 +96,15 @@ __int64 _InterlockedExchange64_rel(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Target*<br/>
+*Target*\
 [in, out] Pointer to the value to be exchanged. The function sets this variable to `Value` and returns its prior value.
 
-*Value*<br/>
+*Value*\
 [in] Value to be exchanged with the value pointed to by `Target`.
 
-## Return Value
+## Return value
 
 Returns the initial value pointed to by `Target`.
 
@@ -112,9 +112,11 @@ Returns the initial value pointed to by `Target`.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`, `_InterlockedExchange64`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM|\<intrin.h>|
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x64|\<immintrin.h>|
 
 ## Remarks
 
@@ -124,7 +126,7 @@ There are several variations on `_InterlockedExchange` that vary based on the da
 
 While the `_InterlockedExchange` function operates on 32-bit integer values, `_InterlockedExchange8` operates on 8-bit integer values, `_InterlockedExchange16` operates on 16-bit integer values, and `_InterlockedExchange64` operates on 64-bit integer values.
 
-On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
+On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix don't act as a memory barrier.
 
 On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that do not support HLE, the hint is ignored.
 
@@ -138,6 +140,6 @@ For a sample of how to use `_InterlockedExchange`, see [_InterlockedDecrement](.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Keywords](../cpp/keywords-cpp.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

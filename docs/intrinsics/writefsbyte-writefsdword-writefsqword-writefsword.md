@@ -1,6 +1,6 @@
 ---
 title: "__writefsbyte, __writefsdword, __writefsqword, __writefsword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__writefsword", "__writefsbyte", "__writefsqword", "__writefsdword"]
 helpviewer_keywords: ["writefsbyte intrinsic", "__writefsword intrinsic", "writefsqword intrinsic", "writefsdword intrinsic", "__writefsdword intrinsic", "__writefsqword intrinsic", "__writefsbyte intrinsic", "writefsword intrinsic"]
 ms.assetid: 23ac6e8e-bc91-4e90-a4c6-da02993637ad
@@ -13,7 +13,7 @@ Write memory to a location specified by an offset relative to the beginning of t
 
 ## Syntax
 
-```
+```C
 void __writefsbyte(
    unsigned long Offset,
    unsigned char Data
@@ -32,12 +32,12 @@ void __writefsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of FS to write to.
 
-*Data*<br/>
+*Data*\
 [in] The value to write.
 
 ## Requirements
@@ -59,5 +59,5 @@ These routines are available only as intrinsics.
 
 ## See also
 
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

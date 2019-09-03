@@ -1,6 +1,6 @@
 ---
 title: "_mm_cvtss_si64x"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_cvtss_si64x"]
 helpviewer_keywords: ["cvtss2si intrinsic", "_mm_cvtss_si64x intrinsic"]
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
@@ -13,18 +13,18 @@ Generates the x64 extended version of the Convert Scalar Single Precision Floati
 
 ## Syntax
 
-```
+```C
 __int64 _mm_cvtss_si64x(
    __m128 value
 );
 ```
 
-#### Parameters
+### Parameters
 
-*value*<br/>
+*value*\
 [in] An `__m128` structure containing floating point-values.
 
-## Return Value
+## Return value
 
 A 64-bit integer, the result of the conversion of the first floating-point value to an integer.
 
@@ -38,13 +38,13 @@ A 64-bit integer, the result of the conversion of the first floating-point value
 
 ## Remarks
 
-The first element of the structure value is converted to an integer and returned. The rounding control bits in MXCSR are used to determine the rounding behavior. The default rounding mode is round to nearest, rounding to the even number if the decimal part is 0.5. Because the `__m128` structure represents an XMM register, this intrinsic takes a value from the XMM register and writes it to system memory.
+The first element of the structure value is converted to an integer and returned. The rounding control bits in MXCSR are used to determine the rounding behavior. The default rounding mode is round to nearest, rounding to the even number if the decimal part is 0.5. Because the `__m128` structure represents an XMM register, the intrinsic takes a value from the XMM register and writes it to system memory.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // _mm_cvtss_si64x.cpp
 // processor: x64
 #include <intrin.h>
@@ -80,5 +80,5 @@ int main()
 
 ## See also
 
-[__m128d](../cpp/m128d.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__m128d](../cpp/m128d.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,6 +1,6 @@
 ---
 title: "_bittest, _bittest64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]
 helpviewer_keywords: ["_bittest intrinsic", "_bittest64 intrinsic", "bt instruction"]
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
@@ -13,7 +13,7 @@ Generates the `bt` instruction, which examines the bit in position `b` of addres
 
 ## Syntax
 
-```
+```C
 unsigned char _bittest(
    long const *a,
    long b
@@ -26,13 +26,13 @@ unsigned char _bittest64(
 
 ### Parameters
 
-*a*<br/>
+*a*\
 [in] A pointer to the memory to examine.
 
-*b*<br/>
+*b*\
 [in] The bit position to test.
 
-### Return Value
+### Return value
 
 The bit at the position specified.
 
@@ -40,8 +40,8 @@ The bit at the position specified.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_bittest`|x86, ARM, x64|\<intrin.h>|
-|`_bittest64`|ARM, x64|\<intrin.h>|
+|`_bittest`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_bittest64`|ARM64, x64|\<intrin.h>|
 
 ## Remarks
 
@@ -91,4 +91,4 @@ Binary representation:
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

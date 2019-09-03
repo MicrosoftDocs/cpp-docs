@@ -1,6 +1,6 @@
 ---
 title: "__outdwordstring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outdwordstring"]
 helpviewer_keywords: ["outsd instruction", "__outdwordstring intrinsic", "rep outsd instruction"]
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
@@ -13,7 +13,7 @@ Generates the `rep outsd` instruction, which sends `Count` doublewords starting 
 
 ## Syntax
 
-```
+```C
 void __outdwordstring(
    unsigned short Port,
    unsigned long* Buffer,
@@ -21,15 +21,15 @@ void __outdwordstring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Buffer*<br/>
+*Buffer*\
 [in] A pointer to the data to be sent out the specified port.
 
-*Count*<br/>
+*Count*\
 [in] The number of doublewords to send.
 
 ## Requirements
@@ -48,4 +48,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
