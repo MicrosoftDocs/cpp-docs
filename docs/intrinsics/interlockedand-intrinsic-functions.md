@@ -1,11 +1,11 @@
 ---
-title: "_InterlockedAnd Intrinsic Functions"
-ms.date: "11/04/2016"
+title: "_InterlockedAnd intrinsic functions"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAnd_rel", "_InterlockedAnd_cpp", "_InterlockedAnd8_nf", "_InterlockedAnd", "_InterlockedAnd_HLERelease", "_InterlockedAnd8_np", "_InterlockedAnd16_rel", "_InterlockedAnd64_np", "_InterlockedAnd_np", "_InterlockedAnd64_HLERelease", "_InterlockedAnd64", "_InterlockedAnd64_nf", "_InterlockedAnd64_HLEAcquire", "_InterlockedAnd16", "_InterlockedAnd16_nf", "_InterlockedAnd8", "_InterlockedAnd_HLEAcquire", "_InterlockedAnd_acq", "_InterlockedAnd16_np", "_InterlockedAnd64_cpp", "_InterlockedAnd64_acq", "_InterlockedAnd16_acq", "_InterlockedAnd8_acq", "_InterlockedAnd64_rel", "_InterlockedAnd_nf", "_InterlockedAnd8_rel"]
 helpviewer_keywords: ["_InterlockedAnd64_np intrinsic", "_InterlockedAnd intrinsic", "_InterlockedAnd64 intrinsic", "_InterlockedAnd8_rel intrinsic", "InterlockedAnd64 intrinsic", "_InterlockedAnd16_np intrinsic", "_InterlockedAnd64_nf intrinsic", "_InterlockedAnd_nf intrinsic", "_InterlockedAnd_np intrinsic", "_InterlockedAnd64_HLERelease intrinsic", "_InterlockedAnd16_rel intrinsic", "_InterlockedAnd_HLERelease intrinsic", "_InterlockedAnd64_acq intrinsic", "_InterlockedAnd16 intrinsic", "_InterlockedAnd8_nf intrinsic", "_InterlockedAnd64_rel intrinsic", "_InterlockedAnd8_np intrinsic", "_InterlockedAnd_rel intrinsic", "InterlockedAnd intrinsic", "_InterlockedAnd8_acq intrinsic", "_InterlockedAnd_acq intrinsic", "_InterlockedAnd64_HLEAcquire intrinsic", "_InterlockedAnd16_acq intrinsic", "_InterlockedAnd16_nf intrinsic", "_InterlockedAnd8 intrinsic", "_InterlockedAnd_HLEAcquire intrinsic"]
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
 ---
-# _InterlockedAnd Intrinsic Functions
+# _InterlockedAnd intrinsic functions
 
 **Microsoft Specific**
 
@@ -13,7 +13,7 @@ Used to perform an atomic bitwise AND operation on a variable shared by multiple
 
 ## Syntax
 
-```
+```C
 long _InterlockedAnd(
    long volatile * value,
    long mask
@@ -112,15 +112,15 @@ __int64 _InterlockedAnd64_rel(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*value*<br/>
+*value*\
 [in, out] A pointer to the first operand, to be replaced by the result.
 
-*mask*<br/>
+*mask*\
 [in] The second operand.
 
-## Return Value
+## Return value
 
 The original value of the first operand.
 
@@ -128,8 +128,9 @@ The original value of the first operand.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`, `_InterlockedAnd64`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM|\<intrin.h>|
+|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM, ARM64|\<intrin.h>|
 |`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|x64|\<intrin.h>|
 |`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<immintrin.h>|
 
@@ -137,7 +138,7 @@ The original value of the first operand.
 
 The number in the name of each function specifies the bit size of the arguments.
 
-On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
+On ARM and ARM64 platforms, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
 
 The intrinsics with an `_np` ("no prefetch") suffix prevent a possible prefetch operation from being inserted by the compiler.
 
@@ -145,7 +146,7 @@ On Intel platforms that support Hardware Lock Elision (HLE) instructions, the in
 
 ## Example
 
-```
+```cpp
 // InterlockedAnd.cpp
 // Compile with: /Oi
 #include <stdio.h>
@@ -171,5 +172,5 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

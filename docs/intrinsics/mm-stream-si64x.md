@@ -1,6 +1,6 @@
 ---
 title: "_mm_stream_si64x"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_si64x"]
 helpviewer_keywords: ["movnti instruction", "_mm_stream_si64x intrinsic"]
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
@@ -9,23 +9,23 @@ ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
 
 **Microsoft Specific**
 
-Generates the MOVNTI instruction. Writes the data in `Source` to a memory location specified by `Dest`, without polluting the caches.
+Generates the MOVNTI instruction. Writes the data in *Source* to a memory location specified by *Destination*, without polluting the caches.
 
 ## Syntax
 
-```
+```C
 void _mm_stream_si64x(
-   __int64 * Dest,
+   __int64 * Destination,
    __int64 Source
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] A pointer to the location to write the source data to.
 
-*Source*<br/>
+*Source*\
 [in] The data to write.
 
 ## Requirements
@@ -70,4 +70,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

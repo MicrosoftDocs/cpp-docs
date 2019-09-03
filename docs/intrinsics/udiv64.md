@@ -1,6 +1,6 @@
 ---
 title: "_udiv64"
-ms.date: "04/17/2019"
+ms.date: "09/02/2019"
 f1_keywords: ["_udiv64"]
 helpviewer_keywords: ["_udiv64 intrinsic"]
 ---
@@ -20,13 +20,13 @@ unsigned int _udiv64(
 
 ### Parameters
 
-*dividend*<br/>
+*dividend*\
 [in] The 64-bit unsigned integer to divide.
 
-*divisor*<br/>
+*divisor*\
 [in] The 32-bit unsigned integer to divide by.
 
-*remainder*<br/>
+*remainder*\
 [out] The 32-bit unsigned integer remainder.
 
 ## Return value

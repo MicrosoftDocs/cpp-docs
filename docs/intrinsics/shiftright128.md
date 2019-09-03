@@ -1,6 +1,6 @@
 ---
 title: "__shiftright128"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__shiftright128"]
 helpviewer_keywords: ["__shiftright128 intrinsic"]
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f
@@ -13,7 +13,7 @@ Shifts a 128-bit quantity, represented as two 64-bit quantities `LowPart` and `H
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __shiftright128(
    unsigned __int64 LowPart,
    unsigned __int64 HighPart,
@@ -21,18 +21,18 @@ unsigned __int64 __shiftright128(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*LowPart*<br/>
+*LowPart*\
 [in] The low 64 bits of the 128-bit quantity to shift.
 
-*HighPart*<br/>
+*HighPart*\
 [in] The high 64 bits of the 128-bit quantity to shift.
 
-*Shift*<br/>
+*Shift*\
 [in] The number of bits to shift.
 
-## Return Value
+## Return value
 
 The low 64 bits of the result.
 
@@ -56,5 +56,5 @@ For an example, see [__shiftleft128](../intrinsics/shiftleft128.md).
 
 ## See also
 
-[__shiftleft128](../intrinsics/shiftleft128.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__shiftleft128](../intrinsics/shiftleft128.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

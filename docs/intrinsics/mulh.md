@@ -1,6 +1,6 @@
 ---
 title: "__mulh"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__mulh"]
 helpviewer_keywords: ["__mulh intrinsic"]
 ms.assetid: cd2ab093-9ef6-404d-ac34-0bee033882f3
@@ -13,22 +13,22 @@ Returns the high 64 bits of the product of two 64-bit signed integers.
 
 ## Syntax
 
-```
+```C
 __int64 __mulh(
    __int64 a,
    __int64 b
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in] The first number to multiply.
 
-*b*<br/>
+*b*\
 [in] The second number to multiply.
 
-## Return Value
+## Return value
 
 The high 64 bits of the 128-bit result of the multiplication.
 
@@ -46,7 +46,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // mulh.cpp
 // processor: x64
 #include <stdio.h>
@@ -75,4 +75,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

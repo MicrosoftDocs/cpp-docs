@@ -1,6 +1,6 @@
 ---
 title: "__assume"
-ms.date: "10/09/2018"
+ms.date: "09/02/2019"
 f1_keywords: ["__assume", "_assume", "__assume_cpp"]
 helpviewer_keywords: ["__assume keyword [C++]"]
 ms.assetid: d8565123-b132-44b1-8235-5a8c8bff85a7
@@ -13,15 +13,15 @@ Passes a hint to the optimizer.
 
 ## Syntax
 
-```
+```C
 __assume(
    expression
 )
 ```
 
-#### Parameters
+### Parameters
 
-*expression*<br/>
+*expression*\
 Any expression that is assumed to evaluate to true.
 
 ## Remarks
@@ -45,11 +45,11 @@ For compatibility with previous versions, **_assume** is a synonym for **__assum
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`__assume`|x86, ARM, x64|
+|`__assume`|x86, ARM, x64, ARM64|
 
 ## Example
 
-```
+```cpp
 // compiler_intrinsics__assume.cpp
 #ifdef DEBUG
 # define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__) )
@@ -87,13 +87,13 @@ As a result of the `__assume(0)` statement, the compiler does not generate code 
 
 Because the compiler generates code based on `__assume`, that code might not run correctly if the expression inside the `__assume` statement is false at run time. If you are not sure that the expression will always be true at run time, you can use the `assert` function to protect the code.
 
-```
+```C
 #define ASSERT(e)    ( ((e) || assert(__FILE__, __LINE__)), __assume(e) )
 ```
 
 Unfortunately, this use of `assert` prevents the compiler from performing the default-case optimization that was described earlier in this document. As an alternative, you can use a separate macro, as follows.
 
-```
+```C
 #ifdef DEBUG
 # define NODEFAULT   ASSERT(0)
 #else
@@ -108,5 +108,5 @@ Unfortunately, this use of `assert` prevents the compiler from performing the de
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

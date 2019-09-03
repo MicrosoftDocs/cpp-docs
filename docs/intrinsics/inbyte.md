@@ -1,6 +1,6 @@
 ---
 title: "__inbyte"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__inbyte", "__inbyte_cpp"]
 helpviewer_keywords: ["in instruction", "__inbyte intrinsic"]
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
@@ -9,22 +9,22 @@ ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
 
 **Microsoft Specific**
 
-Generates the `in` instruction, returning one byte read from the port specified by `Port`.
+Generates the `in` instruction, returning a single byte read from the port specified by `Port`.
 
 ## Syntax
 
-```
+```C
 unsigned char __inbyte(
    unsigned short Port
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-## Return Value
+## Return value
 
 The byte read from the specified port.
 
@@ -44,4 +44,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,6 +1,6 @@
 ---
 title: "__vmx_off"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__vmx_off"]
 helpviewer_keywords: ["VMXOFF instruction", "__vmx_off intrinsic"]
 ms.assetid: 78a32d46-9291-406c-b982-a550855aff18
@@ -13,7 +13,7 @@ Deactivates virtual machine extensions (VMX) operation in the processor.
 
 ## Syntax
 
-```
+```C
 void __vmx_off();
 ```
 
@@ -33,4 +33,4 @@ The `__vmx_off` function is equivalent to the `VMXOFF` machine instruction. This
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

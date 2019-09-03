@@ -1,6 +1,6 @@
 ---
 title: "__inbytestring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__inbytestring", "__inbytestring_cpp"]
 helpviewer_keywords: ["rep insb instruction", "__inbytestring intrinsic"]
 ms.assetid: fe549556-e7a3-4af3-8ebf-8a7dc3cb233b
@@ -13,7 +13,7 @@ Reads data from the specified port using the `rep insb` instruction.
 
 ## Syntax
 
-```
+```C
 void __inbytestring(
    unsigned short Port,
    unsigned char* Buffer,
@@ -21,15 +21,15 @@ void __inbytestring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-*Buffer*<br/>
+*Buffer*\
 [out] The data read from the port is written here.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes of data to read.
 
 ## Requirements
@@ -48,4 +48,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

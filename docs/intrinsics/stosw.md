@@ -1,6 +1,6 @@
 ---
 title: "__stosw"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosw"]
 helpviewer_keywords: ["stosw instruction", "__stosw intrinsic", "rep stosw instruction"]
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosw`).
 
 ## Syntax
 
-```
+```C
 void __stosw(
-   unsigned short* Dest,
+   unsigned short* Destination,
    unsigned short Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of words to write.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __stosw(
 
 ## Remarks
 
-The result is that the word `Data` is written into a block of `Count` words in the `Dest` string.
+The result is that the word *Data* is written into a block of *Count* words in the *Destination* string.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```C
 // stosw.c
 // processor: x86, x64
 #include <stdio.h>
@@ -74,4 +74,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

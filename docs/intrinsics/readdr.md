@@ -1,6 +1,6 @@
 ---
 title: "__readdr"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readdr"]
 helpviewer_keywords: ["__readdr intrinsic"]
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
@@ -11,17 +11,17 @@ Reads the value of the specified debug register.
 
 ## Syntax
 
-```
-unsigned         __readdr(unsigned int DebugRegister);
-unsigned __int64 __readdr(unsigned int DebugRegister);
+```C
+unsigned         __readdr(unsigned int DebugRegister); /* x86 */
+unsigned __int64 __readdr(unsigned int DebugRegister); /* x64 */
 ```
 
-#### Parameters
+### Parameters
 
-*DebugRegister*<br/>
+*DebugRegister*\
 [in] A constant from 0 through 7 that identifies the debug register.
 
-## Return Value
+## Return value
 
 The value of the specified debug register.
 
@@ -41,5 +41,5 @@ These intrinsics are available only in kernel mode, and the routines are availab
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

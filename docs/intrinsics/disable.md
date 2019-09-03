@@ -1,6 +1,6 @@
 ---
 title: "_disable"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_disable_cpp", "_disable"]
 helpviewer_keywords: ["_disable intrinsic", "rsm instruction", "disable intrinsic"]
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
@@ -13,7 +13,7 @@ Disables interrupts.
 
 ## Syntax
 
-```
+```C
 void _disable(void);
 ```
 
@@ -21,7 +21,7 @@ void _disable(void);
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_disable`|x86, ARM, x64|
+|`_disable`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -31,10 +31,10 @@ void _disable(void);
 
 This function is only available in kernel mode. If used in user mode, a Privileged Instruction exception is thrown at run time.
 
-On ARM platforms, this routine is only available as an intrinsic.
+On ARM and ARM64 platforms, this routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

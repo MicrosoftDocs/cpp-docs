@@ -1,6 +1,6 @@
 ---
 title: "__rdtsc"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__rdtsc"]
 helpviewer_keywords: ["__rdtsc intrinsic", "rdtsc instruction", "Read Time Stamp Counter instruction"]
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
@@ -13,11 +13,11 @@ Generates the `rdtsc` instruction, which returns the processor time stamp. The p
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __rdtsc();
 ```
 
-## Return Value
+## Return value
 
 A 64-bit unsigned integer representing a tick count.
 
@@ -33,11 +33,11 @@ A 64-bit unsigned integer representing a tick count.
 
 This routine is available only as an intrinsic.
 
-The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of x64. See hardware manuals for more information.
+The interpretation of the TSC value in later generations of hardware differs from that in earlier versions of x64. For more information, see the hardware manuals.
 
 ## Example
 
-```
+```cpp
 // rdtsc.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -61,4 +61,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

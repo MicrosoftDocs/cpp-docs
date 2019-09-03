@@ -1,6 +1,6 @@
 ---
 title: "__invlpg"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__invlpg", "__invlpg_cpp"]
 helpviewer_keywords: ["invlpg instruction", "__invlpg intrinsic"]
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
@@ -9,19 +9,19 @@ ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
 
 **Microsoft Specific**
 
-Generates the x86 `invlpg` instruction, which invalidates the translation lookaside buffer (TLB) for the page associated with memory pointed to by `Address`.
+Generates the x86 `invlpg` instruction, which invalidates the translation lookaside buffer (TLB) for the page associated with memory pointed to by *Address*.
 
 ## Syntax
 
-```
+```C
 void __invlpg(
    void* Address
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Address*<br/>
+*Address*\
 [in] A 64-bit address.
 
 ## Requirements
@@ -34,7 +34,7 @@ void __invlpg(
 
 ## Remarks
 
-The intrinsic `__invlpg` emits a privileged instruction and is only available in kernel mode with a privilege level (CPL) of 0.
+The intrinsic `__invlpg` emits a privileged instruction, and is only available in kernel mode with a privilege level (CPL) of 0.
 
 This routine is only available as an intrinsic.
 
@@ -42,4 +42,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

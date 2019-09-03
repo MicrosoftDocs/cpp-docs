@@ -1,6 +1,6 @@
 ---
 title: "_div64"
-ms.date: "04/17/2019"
+ms.date: "09/02/2019"
 f1_keywords: ["_div64"]
 helpviewer_keywords: ["_div64 intrinsic"]
 ---

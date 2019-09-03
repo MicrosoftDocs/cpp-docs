@@ -1,13 +1,13 @@
 ---
 title: "_ReturnAddress"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_ReturnAddress"]
 helpviewer_keywords: ["_ReturnAddress intrinsic", "ReturnAddress intrinsic"]
 ms.assetid: 7f4a5811-35e6-4f64-ba7c-21203380eeda
 ---
 # _ReturnAddress
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The `_ReturnAddress` intrinsic provides the address of the instruction in the calling function that will be executed after control returns to the caller.
 
@@ -23,7 +23,7 @@ When `_ReturnAddress` is used in a program compiled with [/clr](../build/referen
 
 ## Example
 
-```
+```cpp
 // compiler_intrinsics__ReturnAddress.cpp
 #include <stdio.h>
 #include <intrin.h>
@@ -56,6 +56,6 @@ int main(void)
 
 ## See also
 
-[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

@@ -1,6 +1,6 @@
 ---
 title: "__writecr4"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_writecr4"]
 helpviewer_keywords: ["_writecr4 intrinsic"]
 ms.assetid: ab7651d7-b86b-4be7-a0a0-7263099c70fc
@@ -13,15 +13,15 @@ Writes the value `Data` to the CR4 register.
 
 ## Syntax
 
-```
+```C
 void writecr4(
    unsigned __int64 Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Data*<br/>
+*Data*\
 [in] The value to write to the CR4 register.
 
 ## Requirements
@@ -40,4 +40,4 @@ This intrinsic is only available in kernel mode, and the routine is only availab
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
