@@ -107,7 +107,18 @@ To provide IntelliSense support for headers on remote Linux systems, Visual Stud
 
 To debug your code on the specified debug target system, set a breakpoint, select the CMake target as the startup item in the toolbar menu next to the project setting, and choose **&#x23f5; Start** on the toolbar, or press F5.
 
-To customize your program’s command line arguments, press the **Switch Targets** button at the top of **Solution Explorer** and then choose **Targets View**. Then right-click on the target and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
+To customize your program’s command line arguments, press the **Switch Targets** button at the top of **Solution Explorer** and then choose **Targets View**. Then right-click on the target and select **Debug and Launch Settings**. This opens or creates a launch.vs.json configuration file that contains information about your program. To specify the location for source files, add a **sourceFileMap** property to the file, as shown in this example:
+
+```json
+"MIMode": "gdb",
+"externalConsole": true,
+"sourceFileMap": {
+"c/Users/USER/source/repos/CMAKEPROJECTNAME": "C:\Users\USER\source\repos\CMAKEPROJECTNAME"
+},
+"remoteMachineName": "${debugInfo.remoteMachineName}",
+```
+
+To specify additional arguments, add them in the `args` JSON array. For more information, see [Open Folder projects for C++](../build/open-folder-projects-cpp.md) and [Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md).
 
 ## <a name="configure_cmake_linux"></a> Configure CMake settings for Linux
 

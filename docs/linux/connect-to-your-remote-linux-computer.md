@@ -1,7 +1,7 @@
 ---
 title: "Connect to your target Linux system in Visual Studio"
 description: "How to connect to a remote Linux machine or WSL from inside a Visual Studio C++ project."
-ms.date: "06/19/2019"
+ms.date: "09/03/2019"
 ms.assetid: 5eeaa683-4e63-4c46-99ef-2d5f294040d4
 ---
 
@@ -104,7 +104,4 @@ To configure your project for WSL, see [Configure a Linux project](configure-a-l
 [Configure a Linux project](configure-a-linux-project.md)<br />
 [Configure a Linux CMake project](cmake-linux-project.md)<br />
 [Deploy, run and debug your Linux project](deploy-run-and-debug-your-linux-project.md)<br />
-
-
-
-
+[Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)
