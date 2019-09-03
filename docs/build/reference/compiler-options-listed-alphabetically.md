@@ -102,6 +102,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
 |[/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
+|[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|
 |[/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/sdl](sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|
