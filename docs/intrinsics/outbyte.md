@@ -1,6 +1,6 @@
 ---
 title: "__outbyte"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outbyte"]
 helpviewer_keywords: ["out instruction", "__outbyte intrinsic"]
 ms.assetid: c4cd1a34-8a02-4e37-993d-3201bc17901a
@@ -13,19 +13,19 @@ Generates the `out` instruction, which sends 1 byte specified by `Data` out the 
 
 ## Syntax
 
-```
+```C
 void __outbyte(
    unsigned short Port,
    unsigned char Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Data*<br/>
+*Data*\
 [in] The byte to be sent out the specified port.
 
 ## Requirements
@@ -44,4 +44,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

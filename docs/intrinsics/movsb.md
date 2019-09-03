@@ -1,6 +1,6 @@
 ---
 title: "__movsb"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__movsb"]
 helpviewer_keywords: ["movsb instruction", "rep movsb instruction", "__movsb intrinsic"]
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
@@ -13,7 +13,7 @@ Generates a Move String (`rep movsb`) instruction.
 
 ## Syntax
 
-```
+```C
 void __movsb(
    unsigned char* Destination,
    unsigned const char* Source,
@@ -21,15 +21,15 @@ void __movsb(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Destination*<br/>
+*Destination*\
 [out] A pointer to the destination of the copy.
 
-*Source*<br/>
+*Source*\
 [in] A pointer to the source of the copy.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes to copy.
 
 ## Requirements
@@ -48,7 +48,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // movsb.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -74,4 +74,4 @@ A big black dog. A big black dog.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

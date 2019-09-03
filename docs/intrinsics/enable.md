@@ -1,6 +1,6 @@
 ---
 title: "_enable"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_enable", "_enable_cpp"]
 helpviewer_keywords: ["enable intrinsic", "_enable intrinsic", "ssm instruction"]
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
@@ -13,7 +13,7 @@ Enables interrupts.
 
 ## Syntax
 
-```
+```C
 void _enable(void);
 ```
 
@@ -21,7 +21,7 @@ void _enable(void);
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_enable`|x86, ARM, x64|
+|`_enable`|x86, ARM, x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -35,4 +35,4 @@ This function is only available in kernel mode. If used in user mode, a Privileg
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

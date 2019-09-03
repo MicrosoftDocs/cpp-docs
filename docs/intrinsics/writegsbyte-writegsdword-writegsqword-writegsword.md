@@ -1,6 +1,6 @@
 ---
 title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
 helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
@@ -13,7 +13,7 @@ Write memory to a location specified by an offset relative to the beginning of t
 
 ## Syntax
 
-```
+```C
 void __writegsbyte(
    unsigned long Offset,
    unsigned char Data
@@ -32,12 +32,12 @@ void __writegsqword(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Offset*<br/>
+*Offset*\
 [in] The offset from the beginning of GS to write to.
 
-*Data*<br/>
+*Data*\
 [in] The value to write.
 
 ## Requirements
@@ -59,5 +59,5 @@ These routines are only available as an intrinsic.
 
 ## See also
 
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -2,6 +2,7 @@
 layout: LandingPage
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
+ms.topic: "landing-page"
 ---
 
 # Linux Development with C++ Documentation

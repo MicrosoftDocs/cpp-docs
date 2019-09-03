@@ -1,6 +1,6 @@
 ---
 title: "__movsw"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__movsw"]
 helpviewer_keywords: ["movsw instruction", "rep movsw instruction", "__movsw intrinsic"]
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
@@ -13,23 +13,23 @@ Generates a Move String (`rep movsw`) instruction.
 
 ## Syntax
 
-```
+```C
 void __movsw(
-   unsigned short* Dest,
+   unsigned short* Destination,
    unsigned short* Source,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Source*<br/>
+*Source*\
 [in] The source of the operation.
 
-*Count*<br/>
+*Count*\
 [in] The number of words to copy.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __movsw(
 
 ## Remarks
 
-The result is that the first `Count` words pointed to by `Source` are copied to the `Dest` string.
+The result is that the first *Count* words pointed to by *Source* are copied to the *Destination* string.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // movsw.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -76,4 +76,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

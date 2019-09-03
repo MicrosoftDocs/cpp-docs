@@ -1,6 +1,6 @@
 ---
 title: "_bittestandset, _bittestandset64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_bittestandset_cpp", "_bittestandset64_cpp", "_bittestandset64", "_bittestandset"]
 helpviewer_keywords: ["bts instruction", "_bittestandset intrinsic", "_bittestandset64 intrinsic"]
 ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
@@ -9,11 +9,11 @@ ms.assetid: 6d6c8670-fea0-4c1c-9aad-2bb842715203
 
 **Microsoft Specific**
 
-Generate an instruction which examines bit `b` of the address `a`, returns its current value, and sets the bit to 1.
+Generate an instruction to examine bit `b` of the address `a`, return its current value, and set the bit to 1.
 
 ## Syntax
 
-```
+```C
 unsigned char _bittestandset(
    long *a,
    long b
@@ -24,15 +24,15 @@ unsigned char _bittestandset64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*a*<br/>
+*a*\
 [in, out] A pointer to the memory to examine.
 
-*b*<br/>
+*b*\
 [in] The bit position to test.
 
-## Return Value
+## Return value
 
 The bit at the position specified.
 
@@ -40,8 +40,8 @@ The bit at the position specified.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_bittestandset`|x86, ARM, x64|
-|`_bittestandset64`|x64|
+|`_bittestandset`|x86, ARM, x64, ARM64|
+|`_bittestandset64`|x64, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -51,7 +51,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // bittestandset.cpp
 // processor: x86, ARM, x64
 // This example uses several of the _bittest family of intrinsics
@@ -138,4 +138,4 @@ Flags: 0x0
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

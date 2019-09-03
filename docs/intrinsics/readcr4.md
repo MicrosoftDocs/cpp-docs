@@ -1,6 +1,6 @@
 ---
 title: "__readcr4"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr4"]
 helpviewer_keywords: ["__readcr4 intrinsic"]
 ms.assetid: b841a27b-fe0d-4ee9-b76b-f91d3eb061fa
@@ -13,11 +13,11 @@ Reads the CR4 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr4(void);
 ```
 
-## Return Value
+## Return value
 
 The value in the CR4 register.
 
@@ -31,10 +31,10 @@ The value in the CR4 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

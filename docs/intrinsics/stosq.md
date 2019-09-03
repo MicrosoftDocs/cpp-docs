@@ -1,6 +1,6 @@
 ---
 title: "__stosq"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosq"]
 helpviewer_keywords: ["rep stosq instruction", "stosq instruction", "__stosq intrinsic"]
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosq`).
 
 ## Syntax
 
-```
+```C
 void __stosb(
-   unsigned __int64* Dest,
+   unsigned __int64* Destination,
    unsigned __int64 Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of quadwords to write.
 
 ## Requirements
@@ -42,13 +42,13 @@ void __stosb(
 
 ## Remarks
 
-The result is that the quadword `Data` is written into a block of `Count` quadwords in the `Dest` string.
+The result is that the quadword *Data* is written into a block of *Count* quadwords in the *Destination* string.
 
 This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```C
 // stosq.c
 // processor: x64
 #include <stdio.h>
@@ -66,9 +66,7 @@ int main()
 }
 ```
 
-## Output
-
-```
+```Output
 0 ffffffffffff ffffffffffff 0
 ```
 
@@ -76,4 +74,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

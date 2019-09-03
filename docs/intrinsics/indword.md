@@ -1,6 +1,6 @@
 ---
 title: "__indword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__indword_cpp", "__indword"]
 helpviewer_keywords: ["in instruction", "__indword intrinsic"]
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
@@ -13,18 +13,18 @@ Reads one double word of data from the specified port using the `in` instruction
 
 ## Syntax
 
-```
+```C
 unsigned long __indword(
    unsigned short Port
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-## Return Value
+## Return value
 
 The word read from the port.
 
@@ -44,4 +44,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

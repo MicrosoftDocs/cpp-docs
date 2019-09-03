@@ -1,6 +1,6 @@
 ---
 title: "__debugbreak"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__debugbreak_cpp", "__debugbreak"]
 helpviewer_keywords: ["breakpoints, __debugbreak intrinsic", "__debugbreak intrinsic"]
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
@@ -13,7 +13,7 @@ Causes a breakpoint in your code, where the user will be prompted to run the deb
 
 ## Syntax
 
-```
+```C
 void __debugbreak();
 ```
 
@@ -28,11 +28,11 @@ void __debugbreak();
 The `__debugbreak` compiler intrinsic, similar to [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak), is a portable Win32 way to cause a breakpoint.
 
 > [!NOTE]
->  When compiling with **/clr**, a function containing `__debugbreak` will be compiled to MSIL. `asm int 3` causes a function to be compiled to native. For more information, see [__asm](../assembler/inline/asm.md).
+> When compiling with **/clr**, a function containing `__debugbreak` will be compiled to MSIL. `asm int 3` causes a function to be compiled to native. For more information, see [__asm](../assembler/inline/asm.md).
 
 For example:
 
-```
+```C
 main() {
    __debugbreak();
 }
@@ -40,7 +40,7 @@ main() {
 
 is similar to:
 
-```
+```C
 main() {
    __asm {
       int 3
@@ -58,5 +58,5 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

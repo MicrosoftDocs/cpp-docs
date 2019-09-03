@@ -1,6 +1,6 @@
 ---
 title: "__nop"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__nop"]
 helpviewer_keywords: ["nop instruction", "__nop intrinsic"]
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
@@ -13,7 +13,7 @@ Generates platform-specific machine code that performs no operation.
 
 ## Syntax
 
-```
+```C
 void __nop();
 ```
 
@@ -33,5 +33,5 @@ The `__nop` function is equivalent to the `NOP` machine instruction. For more in
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [__noop](../intrinsics/noop.md)

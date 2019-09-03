@@ -1,6 +1,6 @@
 ---
 title: "_BitScanReverse, _BitScanReverse64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_BitScanReverse64", "_BitScanReverse_cpp", "_BitScanReverse", "_BitScanReverse64_cpp"]
 helpviewer_keywords: ["bsr instruction", "_BitScanReverse intrinsic", "BitScanReverse intrinsic"]
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
@@ -13,7 +13,7 @@ Search the mask data from most significant bit (MSB) to least significant bit (L
 
 ## Syntax
 
-```
+```C
 unsigned char _BitScanReverse(
    unsigned long * Index,
    unsigned long Mask
@@ -24,15 +24,15 @@ unsigned char _BitScanReverse64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Index*<br/>
+*Index*\
 [out] Loaded with the bit position of the first set bit (1) found.
 
-*Mask*<br/>
+*Mask*\
 [in] The 32-bit or 64-bit value to search.
 
-## Return Value
+## Return value
 
 Nonzero if `Index` was set, or 0 if no set bits were found.
 
@@ -40,12 +40,12 @@ Nonzero if `Index` was set, or 0 if no set bits were found.
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_BitScanReverse`|x86, ARM, x64|\<intrin.h>|
-|`_BitScanReverse64`|ARM, x64||
+|`_BitScanReverse`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_BitScanReverse64`|ARM64, x64|\<intrin.h>|
 
 ## Example
 
-```
+```cpp
 // BitScanReverse.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -74,15 +74,11 @@ int main()
 }
 ```
 
-## Input
-
-```
+```Input
 12
 ```
 
-## Sample Output
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 3
 ```
@@ -91,4 +87,4 @@ Mask: 12 Index: 3
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,6 +1,6 @@
 ---
 title: "__readcr8"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr8"]
 helpviewer_keywords: ["__readcr8 intrinsic"]
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
@@ -13,11 +13,11 @@ Reads the CR8 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr8(void);
 ```
 
-## Return Value
+## Return value
 
 The value in the CR8 register.
 
@@ -31,10 +31,10 @@ The value in the CR8 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

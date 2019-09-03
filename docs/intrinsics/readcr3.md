@@ -1,6 +1,6 @@
 ---
 title: "__readcr3"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr3"]
 helpviewer_keywords: ["__readcr3 intrinsic"]
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
@@ -13,11 +13,11 @@ Reads the CR3 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned __int64 __readcr3(void);
 ```
 
-## Return Value
+## Return value
 
 The value in the CR3 register.
 
@@ -31,10 +31,10 @@ The value in the CR3 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

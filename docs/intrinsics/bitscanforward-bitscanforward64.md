@@ -1,6 +1,6 @@
 ---
 title: "_BitScanForward, _BitScanForward64"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_BitScanForward", "_BitScanForward_cpp", "_BitScanForward64_cpp", "_BitScanForward64"]
 helpviewer_keywords: ["_BitScanForward intrinsic", "bsf instruction", "BitScanForward intrinsic"]
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
@@ -13,7 +13,7 @@ Search the mask data from least significant bit (LSB) to the most significant bi
 
 ## Syntax
 
-```
+```C
 unsigned char _BitScanForward(
    unsigned long * Index,
    unsigned long Mask
@@ -24,15 +24,15 @@ unsigned char _BitScanForward64(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Index*<br/>
+*Index*\
 [out] Loaded with the bit position of the first set bit (1) found.
 
-*Mask*<br/>
+*Mask*\
 [in] The 32-bit or 64-bit value to search.
 
-## Return Value
+## Return value
 
 0 if the mask is zero; nonzero otherwise.
 
@@ -44,14 +44,14 @@ If a set bit is found, the bit position of the first set bit found is returned i
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_BitScanForward`|x86, ARM, x64|
-|`_BitScanForward64`|ARM, x64|
+|`_BitScanForward`|x86, ARM, x64, ARM64|
+|`_BitScanForward64`|ARM64, x64|
 
 **Header file** \<intrin.h>
 
 ## Example
 
-```
+```cpp
 // BitScanForward.cpp
 // compile with: /EHsc
 #include <iostream>
@@ -80,15 +80,11 @@ int main()
 }
 ```
 
-## Input
-
-```
+```Input
 12
 ```
 
-## Sample Output
-
-```
+```Output
 Enter a positive integer as the mask:
 Mask: 12 Index: 2
 ```
@@ -97,4 +93,4 @@ Mask: 12 Index: 2
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

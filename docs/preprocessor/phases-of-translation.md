@@ -1,14 +1,14 @@
 ---
-title: "Phases of Translation"
-ms.date: "10/18/2018"
+title: "Phases of translation"
+ms.date: "08/29/2019"
 helpviewer_keywords: ["translation phases", "preprocessor, translation", "translation, compiler process", "preprocessor", "file translation [C++], compiler process", "files [C++], translation"]
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
 ---
-# Phases of Translation
+# Phases of translation
 
-C and C++ programs consist of one or more source files, each of which contains some of the text of the program. A source file, together with its include files (files that are included using the `#include` preprocessor directive) but not including sections of code removed by conditional-compilation directives such as `#if`, is called a "translation unit."
+C and C++ programs consist of one or more source files, each of which contains some of the text of the program. A source file, together with its *include files*, files that are included using the `#include` preprocessor directive, but not including sections of code removed by conditional-compilation directives such as `#if`, is called a *translation unit*.
 
-Source files can be translated at different times — in fact, it is common to translate only out-of-date files. The translated translation units can be processed into separate object files or object-code libraries. These separate, translated translation units are then linked to form an executable program or a dynamic-link library (DLL).  For more information about files that can be used as input to the linker, see [LINK Input Files](../build/reference/link-input-files.md).
+Source files can be translated at different times. In fact, it's common to translate only out-of-date files. The translated translation units can be processed into separate object files or object-code libraries. These separate, translated translation units are then linked to form an executable program or a dynamic-link library (DLL). For more information about files that can be used as input to the linker, see [LINK input files](../build/reference/link-input-files.md).
 
 Translation units can communicate using:
 
@@ -24,28 +24,28 @@ Translation units can communicate using:
 
 The following list describes the phases in which the compiler translates files:
 
-*Character mapping*<br/>
+*Character mapping*\
 Characters in the source file are mapped to the internal source representation. Trigraph sequences are converted to single-character internal representation in this phase.
 
-*Line splicing*<br/>
-All lines ending in a backslash (**\\**) and immediately followed by a newline character are joined with the next line in the source file forming logical lines from the physical lines. Unless it is empty, a source file must end in a newline character that is not preceded by a backslash.
+*Line splicing*\
+All lines ending in a backslash (**\\**) immediately followed by a newline character are joined with the next line in the source file, forming logical lines from the physical lines. Unless it's empty, a source file must end in a newline character that's not preceded by a backslash.
 
-*Tokenization*<br/>
+*Tokenization*\
 The source file is broken into preprocessing tokens and white-space characters. Comments in the source file are replaced with one space character each. Newline characters are retained.
 
-*Preprocessing*<br/>
+*Preprocessing*\
 Preprocessing directives are executed and macros are expanded into the source file. The `#include` statement invokes translation starting with the preceding three translation steps on any included text.
 
-*Character-set mapping*<br/>
+*Character-set mapping*\
 All source character set members and escape sequences are converted to their equivalents in the execution character set. For Microsoft C and C++, both the source and the execution character sets are ASCII.
 
-*String concatenation*<br/>
+*String concatenation*\
 All adjacent string and wide-string literals are concatenated. For example, `"String " "concatenation"` becomes `"String concatenation"`.
 
-*Translation*<br/>
+*Translation*\
 All tokens are analyzed syntactically and semantically; these tokens are converted into object code.
 
-*Linkage*<br/>
+*Linkage*\
 All external references are resolved to create an executable program or a dynamic-link library.
 
 The compiler issues warnings or errors during phases of translation in which it encounters syntax errors.

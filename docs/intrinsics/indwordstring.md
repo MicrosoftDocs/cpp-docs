@@ -1,6 +1,6 @@
 ---
 title: "__indwordstring"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__indwordstring", "__indwordstring_cpp"]
 helpviewer_keywords: ["__indwordstring intrinsic", "rep insd instruction"]
 ms.assetid: 96a1cf33-f691-4916-99e4-fa849b61e3a9
@@ -13,7 +13,7 @@ Reads data from the specified port using the `rep insd` instruction.
 
 ## Syntax
 
-```
+```C
 void __indwordstring(
    unsigned short Port,
    unsigned long* Buffer,
@@ -21,15 +21,15 @@ void __indwordstring(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to read from.
 
-*Buffer*<br/>
+*Buffer*\
 [out] The data read from the port is written here.
 
-*Count*<br/>
+*Count*\
 [in] The number of bytes of data to read.
 
 ## Requirements
@@ -48,4 +48,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

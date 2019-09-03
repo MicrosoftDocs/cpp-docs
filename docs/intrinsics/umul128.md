@@ -1,6 +1,6 @@
 ---
 title: "_umul128"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__umul128"]
 helpviewer_keywords: ["__umul128 intrinsic"]
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
@@ -13,7 +13,7 @@ Multiplies two 64-bit unsigned integers passed in as the first two arguments and
 
 ## Syntax
 
-```
+```C
 unsigned __int64 _umul128(
    unsigned __int64 Multiplier,
    unsigned __int64 Multiplicand,
@@ -21,18 +21,18 @@ unsigned __int64 _umul128(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Multiplier*<br/>
+*Multiplier*\
 [in] The first 64-bit integer to multiply.
 
-*Multiplicand*<br/>
+*Multiplicand*\
 [in] The second 64-bit integer to multiply.
 
-*HighProduct*<br/>
+*HighProduct*\
 [out] The high 64 bits of the product.
 
-## Return Value
+## Return value
 
 The low 64 bits of the product.
 
@@ -44,7 +44,7 @@ The low 64 bits of the product.
 
 ## Example
 
-```
+```C
 // umul128.c
 // processor: x64
 
@@ -73,4 +73,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

@@ -1,6 +1,6 @@
 ---
 title: "__outdword"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__outdword"]
 helpviewer_keywords: ["out instruction", "outdword instruction", "__outdword intrinsic"]
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
@@ -9,23 +9,23 @@ ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
 
 **Microsoft Specific**
 
-Generates the `out` instruction to send a doubleword `Data` out the port `Port`.
+Generates the `out` instruction to send a doubleword *Data* out the port *Port*.
 
 ## Syntax
 
-```
+```C
 void __outdword(
    unsigned short Port,
    unsigned long Data
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Port*<br/>
+*Port*\
 [in] The port to send the data to.
 
-*Data*<br/>
+*Data*\
 [in] The doubleword to be sent.
 
 ## Requirements
@@ -44,4 +44,4 @@ This routine is only available as an intrinsic.
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

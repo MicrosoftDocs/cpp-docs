@@ -1,19 +1,19 @@
 ---
-title: "_InterlockedExchangeAdd Intrinsic Functions"
-ms.date: "12/17/2018" 
+title: "_InterlockedExchangeAdd intrinsic functions"
+ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchangeAdd64_nf", "_InterlockedExchangeAdd64_rel", "_InterlockedExchangeAdd16_rel", "_InterlockedExchangeAdd_acq", "_InterlockedExchangeAdd_nf", "_InterlockedExchangeAdd_rel", "_InterlockedExchangeAdd8_acq", "_InterlockedExchangeAdd16_nf", "_InterlockedExchangeAdd_acq_cpp", "_InterlockedExchangeAdd64_acq_cpp", "_InterlockedExchangeAdd16_acq", "_InterlockedExchangeAdd_HLERelease", "_InterlockedExchangeAdd64_cpp", "_InterlockedExchangeAdd64_HLERelease", "_InterlockedExchangeAdd64_acq", "_InterlockedExchangeAdd8", "_InterlockedExchangeAdd64", "_InterlockedExchangeAdd8_nf", "_InterlockedExchangeAdd16", "_InterlockedExchangeAdd64_rel_cpp", "_InterlockedExchangeAdd_cpp", "_InterlockedExchangeAdd8_rel", "_InterlockedExchangeAdd_HLEAcquire", "_InterlockedExchangeAdd64_HLEAcquire", "_InterlockedExchangeAdd"]
 helpviewer_keywords: ["_InterlockedExchangeAdd8_nf intrinsic", "InterlockedExchangeAdd64_acq intrinsic", "_InterlockedExchangeAdd8_acq intrinsic", "_InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd8_rel intrinsic", "_InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd_HLEAcquire intrinsic", "_InterlockedExchangeAdd8 intrinsic", "_InterlockedExchangeAdd_rel intrinsic", "_InterlockedExchangeAdd64_HLERelease intrinsic", "_InterlockedExchangeAdd64_nf intrinsic", "InterlockedExchangeAdd_rel intrinsic", "InterlockedExchangeAdd intrinsic", "_InterlockedExchangeAdd_nf intrinsic", "_InterlockedExchangeAdd16_rel intrinsic", "InterlockedExchangeAdd_acq intrinsic", "_InterlockedExchangeAdd64_HLEAcquire intrinsic", "_InterlockedExchangeAdd16 intrinsic", "_InterlockedExchangeAdd64_acq intrinsic", "InterlockedExchangeAdd64_rel intrinsic", "_InterlockedExchangeAdd16_acq intrinsic", "InterlockedExchangeAdd64 intrinsic", "_InterlockedExchangeAdd_HLERelease intrinsic", "_InterlockedExchangeAdd16_nf intrinsic", "_InterlockedExchangeAdd64_rel intrinsic"]
 ms.assetid: 25809e1f-9c60-4492-9f7c-0fb59c8d13d2
 ---
-# _InterlockedExchangeAdd Intrinsic Functions
+# _InterlockedExchangeAdd intrinsic functions
 
 **Microsoft Specific**
 
-Provide compiler intrinsic support for the Win32 Windows SDK [_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [_InterlockedExchangeAdd intrinsic functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.
 
 ## Syntax
 
-```
+```C
 long _InterlockedExchangeAdd(
    long volatile * Addend,
    long Value
@@ -96,15 +96,15 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Addend*<br/>
+*Addend*\
 [in, out] The value to be added to; replaced by the result of the addition.
 
-*Value*<br/>
+*Value*\
 [in] The value to add.
 
-## Return Value
+## Return value
 
 The return value is the initial value of the variable pointed to by the `Addend` parameter.
 
@@ -112,9 +112,11 @@ The return value is the initial value of the variable pointed to by the `Addend`
 
 |Intrinsic|Architecture|Header|
 |---------------|------------------|------------|
-|`_InterlockedExchangeAdd`, `_InterlockedExchangeAdd8`, `_InterlockedExchangeAdd16`, `_InterlockedExchangeAdd64`|x86, ARM, x64|\<intrin.h>|
-|`_InterlockedExchangeAdd_acq`, `_InterlockedExchangeAdd_rel`, `_InterlockedExchangeAdd_nf`, `_InterlockedExchangeAdd8_acq`, `_InterlockedExchangeAdd8_rel`, `_InterlockedExchangeAdd8_nf`,`_InterlockedExchangeAdd16_acq`, `_InterlockedExchangeAdd16_rel`, `_InterlockedExchangeAdd16_nf`, `_InterlockedExchangeAdd64_acq`, `_InterlockedExchangeAdd64_rel`, `_InterlockedExchangeAdd64_nf`|ARM|\<intrin.h>|
-|`_InterlockedExchangeAdd_HLEAcquire`, `_InterlockedExchangeAdd_HLERelease`, `_InterlockedExchangeAdd64_HLEAcquire`, `_InterlockedExchangeAdd64_HLErelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchangeAdd`, `_InterlockedExchangeAdd8`, `_InterlockedExchangeAdd16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchangeAdd64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchangeAdd_acq`, `_InterlockedExchangeAdd_rel`, `_InterlockedExchangeAdd_nf`, `_InterlockedExchangeAdd8_acq`, `_InterlockedExchangeAdd8_rel`, `_InterlockedExchangeAdd8_nf`,`_InterlockedExchangeAdd16_acq`, `_InterlockedExchangeAdd16_rel`, `_InterlockedExchangeAdd16_nf`, `_InterlockedExchangeAdd64_acq`, `_InterlockedExchangeAdd64_rel`, `_InterlockedExchangeAdd64_nf`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedExchangeAdd_HLEAcquire`, `_InterlockedExchangeAdd_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchangeAdd64_HLEAcquire`, `_InterlockedExchangeAdd64_HLErelease`|x64|\<immintrin.h>|
 
 ## Remarks
 
@@ -122,11 +124,11 @@ There are several variations on `_InterlockedExchangeAdd` that vary based on the
 
 While the `_InterlockedExchangeAdd` function operates on 32-bit integer values, `_InterlockedExchangeAdd8` operates on 8-bit integer values, `_InterlockedExchangeAdd16` operates on 16-bit integer values, and `_InterlockedExchangeAdd64` operates on 64-bit integer values.
 
-On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes if you need acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.
+On ARM platforms, use the intrinsics with `_acq` and `_rel` suffixes if you need acquire and release semantics, such as at the beginning and end of a critical section. The intrinsics with an `_nf` ("no fence") suffix don't act as a memory barrier.
 
-On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that do not support HLE, the hint is ignored.
+On Intel platforms that support Hardware Lock Elision (HLE) instructions, the intrinsics with `_HLEAcquire` and `_HLERelease` suffixes include a hint to the processor that can accelerate performance by eliminating a lock write step in hardware. If these intrinsics are called on platforms that don't support HLE, the hint is ignored.
 
-These routines are only available as intrinsics. Thus, they are intrinsic whether or not [/Oi](../build/reference/oi-generate-intrinsic-functions.md) or [#pragma intrinsic](../preprocessor/intrinsic.md) is used. It is not possible to use [#pragma function](../preprocessor/function-c-cpp.md) on these intrinsics.
+These routines are only available as intrinsics. They're intrinsic even when [/Oi](../build/reference/oi-generate-intrinsic-functions.md) or [#pragma intrinsic](../preprocessor/intrinsic.md) is used. It isn't possible to use [#pragma function](../preprocessor/function-c-cpp.md) on these intrinsics.
 
 ## Example
 
@@ -136,6 +138,6 @@ For a sample of how to use `_InterlockedExchangeAdd`, see [_InterlockedDecrement
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
+[Keywords](../cpp/keywords-cpp.md)\
 [Conflicts with the x86 Compiler](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

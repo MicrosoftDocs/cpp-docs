@@ -1,6 +1,6 @@
 ---
 title: "_AddressOfReturnAddress"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]
 helpviewer_keywords: ["_AddressOfReturnAddress intrinsic", "AddressOfReturnAddress intrinsic"]
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
@@ -13,7 +13,7 @@ Provides the address of the memory location that holds the return address of the
 
 ## Syntax
 
-```
+```C
 void * _AddressOfReturnAddress();
 ```
 
@@ -21,7 +21,7 @@ void * _AddressOfReturnAddress();
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`_AddressOfReturnAddress`|x86, x64|
+|`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
 **Header file** \<intrin.h>
 
@@ -33,7 +33,7 @@ This routine is only available as an intrinsic.
 
 ## Example
 
-```
+```cpp
 // compiler_intrinsics_AddressOfReturnAddress.cpp
 // processor: x86, x64
 #include <stdio.h>
@@ -67,5 +67,5 @@ int main() {
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
 [Keywords](../cpp/keywords-cpp.md)

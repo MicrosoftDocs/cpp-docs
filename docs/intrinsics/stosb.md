@@ -1,6 +1,6 @@
 ---
 title: "__stosb"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__stosb"]
 helpviewer_keywords: ["rep stosb instruction", "__stosb intrinsic", "stosb instruction"]
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
@@ -13,23 +13,23 @@ Generates a store string instruction (`rep stosb`).
 
 ## Syntax
 
-```
+```C
 void __stosb(
-   unsigned char* Dest,
+   unsigned char* Destination,
    unsigned char Data,
    size_t Count
 );
 ```
 
-#### Parameters
+### Parameters
 
-*Dest*<br/>
+*Destination*\
 [out] The destination of the operation.
 
-*Data*<br/>
+*Data*\
 [in] The data to store.
 
-*Count*<br/>
+*Count*\
 [in] The length of the block of bytes to write.
 
 ## Requirements
@@ -42,7 +42,7 @@ void __stosb(
 
 ## Remarks
 
-The result is that the character `Data` is written into a block of `Count` bytes in the `Dest` string.
+The result is that the character *Data* is written into a block of *Count* bytes in the *Destination* string.
 
 This routine is only available as an intrinsic.
 
@@ -77,4 +77,4 @@ int main()
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

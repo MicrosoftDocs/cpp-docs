@@ -1,6 +1,6 @@
 ---
 title: "__readcr0"
-ms.date: "11/04/2016"
+ms.date: "09/02/2019"
 f1_keywords: ["__readcr0"]
 helpviewer_keywords: ["__readcr0 intrinsic"]
 ms.assetid: 25bdb093-d83c-48d7-9c0f-224de8e2c61c
@@ -13,12 +13,12 @@ Reads the CR0 register and returns its value.
 
 ## Syntax
 
-```
+```C
 unsigned long __readcr0(void);  /* X86 */
 unsigned __int64 __readcr0(void);  /* X64 */
 ```
 
-## Return Value
+## Return value
 
 The value in the CR0 register.
 
@@ -32,10 +32,10 @@ The value in the CR0 register.
 
 ## Remarks
 
-This intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
+The intrinsic is only available in kernel mode, and the routine is only available as an intrinsic.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)
+[Compiler intrinsics](../intrinsics/compiler-intrinsics.md)
