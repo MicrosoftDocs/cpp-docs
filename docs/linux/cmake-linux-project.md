@@ -113,7 +113,7 @@ To customize your program’s command line arguments, press the **Switch Targets
 "MIMode": "gdb",
 "externalConsole": true,
 "sourceFileMap": {
-"c/Users/USER/source/repos/CMAKEPROJECTNAME": "C:\Users\USER\source\repos\CMAKEPROJECTNAME"
+"c/Users/USER/source/repos/CMAKEPROJECTNAME": "C:\\Users\\USER\\source\\repos\\CMAKEPROJECTNAME"
 },
 "remoteMachineName": "${debugInfo.remoteMachineName}",
 ```
