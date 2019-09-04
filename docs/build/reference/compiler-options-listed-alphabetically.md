@@ -29,6 +29,8 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|
 |[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
 |[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
+|[/experimental:module](experimental-module.md)|Enables experimental module support.|
+|[/experimental:preprocessor](experimental-preprocessor.md)|Enables experimental conforming preprocessor support.|
 |[/F](f-set-stack-size.md)|Sets stack size.|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific x64 architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
 |[/FA](fa-fa-listing-file.md)|Creates a listing file.|

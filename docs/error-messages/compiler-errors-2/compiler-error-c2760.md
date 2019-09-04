@@ -7,13 +7,17 @@ ms.assetid: 585757fd-d519-43f3-94e5-50316ac8b90b
 ---
 # Compiler Error C2760
 
-syntax error : expected 'name1' not 'name2'
+> syntax error : expected '*name1*' not '*name2*'
 
-A casting operator is used with an invalid operator.
+## Remarks
 
-The following sample generates C2760:
+There are several ways to cause this error. Usually, it's caused by a token sequence that the compiler can't make sense of.
 
-```
+## Example
+
+In this sample, a casting operator is used with an invalid operator.
+
+```cpp
 // C2760.cpp
 class B {};
 class D : public B {};

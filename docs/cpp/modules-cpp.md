@@ -13,7 +13,7 @@ Modules can be used side by side with header files. A C++ source file can import
 
 ## Enable modules in the Microsoft C++ compiler
 
-As of Visual Studio 2019 version 16.2, modules are not fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for modules, compile with `/experimental:modules` and `/std:c++latest`. In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
+As of Visual Studio 2019 version 16.2, modules are not fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. To enable support for modules, compile with [/experimental:module](../build/reference/experimental-module.md) and [/std:c++latest](../build/reference/std-specify-language-standard-version.md). In a Visual Studio project, right-click the project node in **Solution Explorer** and choose **Properties**. Set the **Configuration** drop-down to **All Configurations**, then choose **Configuration Properties** > **C/C++** > **Language** > **Enable C++ Modules (experimental)**.
 
 A module and the code that consumes it must be compiled with the same compiler options.
 
