@@ -1,3 +1,3 @@
-      #if _DEBUG
-         afxDump.DumpAsHex(115);      
-      #endif
+#if _DEBUG
+afxDump.DumpAsHex(115);
+#endif

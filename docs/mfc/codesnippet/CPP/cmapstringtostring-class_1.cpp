@@ -1,6 +1,6 @@
 CMapStringToString myMap;
-CString myStr[4] = { _T("One"), _T("Two"), _T("Three"), _T("Four") };
-CMapStringToString::CPair* pCurVal;
+CString myStr[4] = {_T("One"), _T("Two"), _T("Three"), _T("Four")};
+CMapStringToString::CPair *pCurVal;
 
 myMap.InitHashTable(257);
 
@@ -14,6 +14,6 @@ pCurVal = myMap.PGetFirstAssoc();
 while (pCurVal != NULL)
 {
    _tprintf_s(_T("Current key value at %s: %s\n"),
-      pCurVal->key, pCurVal->value);
+              pCurVal->key, pCurVal->value);
    pCurVal = myMap.PGetNextAssoc(pCurVal);
 }

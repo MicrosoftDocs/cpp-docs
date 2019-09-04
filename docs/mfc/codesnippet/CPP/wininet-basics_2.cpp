@@ -4,8 +4,8 @@
 void DisplayHttpPage(LPCTSTR pszServerName, LPCTSTR pszFileName)
 {
    CInternetSession session(_T("My Session"));
-   CHttpConnection* pServer = NULL;
-   CHttpFile* pFile = NULL;
+   CHttpConnection *pServer = NULL;
+   CHttpFile *pFile = NULL;
    try
    {
       CString strServerName;
@@ -28,7 +28,7 @@ void DisplayHttpPage(LPCTSTR pszServerName, LPCTSTR pszFileName)
       delete pFile;
       delete pServer;
    }
-   catch (CInternetException* pEx)
+   catch (CInternetException *pEx)
    {
       //catch errors from WinInet
       TCHAR pszError[64];

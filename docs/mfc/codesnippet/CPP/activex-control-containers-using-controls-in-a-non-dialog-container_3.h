@@ -1,5 +1,7 @@
 protected:
-   CCirc m_myCtl;
+CCirc m_myCtl;
+
 public:
-   afx_msg void OnViewCircdlg();
-};
+afx_msg void OnViewCircdlg();
+}
+;

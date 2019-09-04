@@ -1,6 +1,6 @@
 ---
 title: "vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l"
-ms.date: "11/04/2016"
+ms.date: "09/03/2019"
 apiname: ["_vswprintf_l", "_vsprintf_l", "vsprintf", "vswprintf", "__vswprintf_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
@@ -75,19 +75,19 @@ int _vswprintf_l(
 
 ### Parameters
 
-*buffer*<br/>
+*buffer*\
 Storage location for output.
 
-*count*<br/>
+*count*\
 Maximum number of characters to store, in the wide string versions of this function.
 
-*format*<br/>
+*format*\
 Format specification.
 
-*argptr*<br/>
+*argptr*\
 Pointer to list of arguments.
 
-*locale*<br/>
+*locale*\
 The locale to use.
 
 ## Return Value
@@ -131,15 +131,16 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ```C
 // crt_vsprintf.c
-// compile with: /W3
+// compile with: cl /W4 crt_vsprintf.c
 // This program uses vsprintf to write to a buffer.
 // The size of the buffer is determined by _vscprintf.
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 
-void test( char * format, ... )
+void test( char const * const format, ... )
 {
     va_list args;
     int     len;
@@ -152,12 +153,14 @@ void test( char * format, ... )
                                 + 1; // terminating '\0'
 
     buffer = (char*)malloc( len * sizeof(char) );
+    if ( 0 != buffer )
+    {
+        vsprintf( buffer, format, args ); // C4996
+        // Note: vsprintf is deprecated; consider using vsprintf_s instead
+        puts( buffer );
 
-    vsprintf( buffer, format, args ); // C4996
-    // Note: vsprintf is deprecated; consider using vsprintf_s instead
-    puts( buffer );
-
-    free( buffer );
+        free( buffer );
+    }
     va_end( args );
 }
 
@@ -175,10 +178,10 @@ This is a string
 
 ## See also
 
-[Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
-[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
+[Stream I/O](../../c-runtime-library/stream-i-o.md)\
+[vprintf Functions](../../c-runtime-library/vprintf-functions.md)\
+[Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)\
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

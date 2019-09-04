@@ -2,7 +2,7 @@
 // some text in a TrueType font. The path is used to record the way
 // the TrueType font would be drawn. Then, the function uses the data
 // returned from CDC::GetPath() to draw the font--without filling it.
-void CDCView::DrawPath(CDC* pDC)
+void CDCView::DrawPath(CDC *pDC)
 {
    // Describe a 24-point truetype font of normal weight
    LOGFONT lf;
@@ -15,7 +15,7 @@ void CDCView::DrawPath(CDC* pDC)
    CFont newFont;
    if (!newFont.CreateFontIndirect(&lf))
       return;
-   CFont* pOldFont = pDC->SelectObject(&newFont);
+   CFont *pOldFont = pDC->SelectObject(&newFont);
 
    // use a path to record how the text was drawn
    pDC->BeginPath();
@@ -38,7 +38,7 @@ void CDCView::DrawPath(CDC* pDC)
       lpPoints = new POINT[nNumPts];
       lpTypes = new BYTE[nNumPts];
    }
-   catch (CException* pe)
+   catch (CException *pe)
    {
       delete[] lpPoints;
       lpPoints = NULL;
@@ -54,8 +54,8 @@ void CDCView::DrawPath(CDC* pDC)
 
    // If it worked, draw the lines. Windows 98 doesn't support
    // the PolyDraw API, so we use our own member function to do
-   // similar work. If you're targeting only later versions of 
-   // Windows, you can use the PolyDraw() API and avoid the 
+   // similar work. If you're targeting only later versions of
+   // Windows, you can use the PolyDraw() API and avoid the
    // COutlineView::PolyDraw() member function.
 
    if (nNumPts != -1)

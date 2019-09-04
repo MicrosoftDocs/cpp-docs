@@ -7,7 +7,7 @@ void CMyDialog::OnMenuShowSimpleDialog()
    {
       BOOL ret = m_pSimpleDlg->Create(IDD_SIMPLEDIALOG, this);
 
-      if (!ret)   //Create failed.
+      if (!ret) //Create failed.
       {
          AfxMessageBox(_T("Error creating Dialog"));
       }

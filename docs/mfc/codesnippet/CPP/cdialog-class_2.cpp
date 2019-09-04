@@ -1,6 +1,6 @@
 void CMyDialog::OnMenuShowAboutDialog()
 {
-   // Construct the dialog box passing the 
+   // Construct the dialog box passing the
    // ID of the dialog template resource
    CDialog aboutDlg(IDD_ABOUTBOX);
 

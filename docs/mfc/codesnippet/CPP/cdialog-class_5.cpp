@@ -7,7 +7,7 @@ void CSimpleDlg::OnCancel()
    // when the user doesn't want to save the changes.
 
    if (AfxMessageBox(_T("Are you sure you want to abort the changes?"),
-      MB_YESNO) == IDNO)
+                     MB_YESNO) == IDNO)
    {
       // Give the user a chance if he has unknowingly hit the
       // Cancel button. If he says No, return. Don't reset. If

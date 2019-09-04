@@ -1,1 +1,1 @@
-   CFont font;
+CFont font;

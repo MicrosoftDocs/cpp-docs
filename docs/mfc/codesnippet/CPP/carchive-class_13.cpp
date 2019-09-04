@@ -1,2 +1,2 @@
 CString s("abc");
-ar << s;  // Prints the value (abc)
+ar << s; // Prints the value (abc)

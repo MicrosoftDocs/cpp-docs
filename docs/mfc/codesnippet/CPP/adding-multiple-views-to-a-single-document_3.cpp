@@ -1,10 +1,10 @@
-CView* pActiveView = ((CFrameWnd*)m_pMainWnd)->GetActiveView();
+CView *pActiveView = ((CFrameWnd *)m_pMainWnd)->GetActiveView();
 m_pOldView = pActiveView;
-m_pNewView = (CView*) new CNewView;
+m_pNewView = (CView *)new CNewView;
 if (NULL == m_pNewView)
-return FALSE;
+   return FALSE;
 
-CDocument* pCurrentDoc = ((CFrameWnd*)m_pMainWnd)->GetActiveDocument();
+CDocument *pCurrentDoc = ((CFrameWnd *)m_pMainWnd)->GetActiveDocument();
 
 // Initialize a CCreateContext to point to the active document.
 // With this context, the new view is added to the document

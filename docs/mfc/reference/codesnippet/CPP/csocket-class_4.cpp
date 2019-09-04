@@ -10,7 +10,7 @@ void CListeningSocket::OnAccept(int nErrorCode)
    Accept(sConnected);
 
    // Start the other thread.
-   CSockThread *pSockThread = (CSockThread *)AfxBeginThread(
+   CSockThread *pSockThread = (CSockThread*)AfxBeginThread(
        RUNTIME_CLASS(CSockThread), THREAD_PRIORITY_NORMAL, 0, CREATE_SUSPENDED);
    if (NULL != pSockThread)
    {

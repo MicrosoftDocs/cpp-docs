@@ -1,5 +1,5 @@
 // Define myList.
-CList<CString, CString&> myList;
+CList<CString, CString &> myList;
 
 // Add an element to the front of the list.
 myList.AddHead(CString(_T("ABC")));

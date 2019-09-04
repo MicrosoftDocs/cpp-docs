@@ -1,5 +1,5 @@
-COMBOBOXEXITEM     cbi = { 0 };
-int				   iImageTemp;
+COMBOBOXEXITEM cbi = {0};
+int iImageTemp;
 
 cbi.mask = CBEIF_IMAGE | CBEIF_SELECTEDIMAGE;
 cbi.iItem = 0;

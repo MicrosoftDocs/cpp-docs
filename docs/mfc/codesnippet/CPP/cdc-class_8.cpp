@@ -1,4 +1,4 @@
-void CDCView::DoInvertRect(CDC* pDC)
+void CDCView::DoInvertRect(CDC *pDC)
 {
    // invert rect from 20,20 to 50,50
    CRect rect(20, 20, 50, 50);

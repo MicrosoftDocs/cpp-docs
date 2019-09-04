@@ -11,7 +11,7 @@ BOOL CCMFCAutomationApp::InitInstance()
       return FALSE;
    }
 
-   CWinThread* pThread = AfxGetThread();
+   CWinThread *pThread = AfxGetThread();
    if (pThread != NULL)
    {
       // Destroy message filter, thereby unregistering it.

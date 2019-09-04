@@ -1,6 +1,6 @@
-// CMyODListBox is my owner-drawn list box derived from CListBox. This 
-// example compares two items using _tcscmp to sort items in reverse 
-// alphabetical order. The list box control was created with the 
+// CMyODListBox is my owner-drawn list box derived from CListBox. This
+// example compares two items using _tcscmp to sort items in reverse
+// alphabetical order. The list box control was created with the
 // following code:
 //   m_myODListBox.Create(
 //      WS_CHILD|WS_VISIBLE|WS_BORDER|WS_HSCROLL|WS_VSCROLL|

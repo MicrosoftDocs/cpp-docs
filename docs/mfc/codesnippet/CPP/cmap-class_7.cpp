@@ -6,7 +6,7 @@ for (int i = 0; i < 10; i++)
 
 // Remove the elements with even key values.
 POSITION pos = myMap.GetStartPosition();
-int    nKey;
+int nKey;
 CPoint pt;
 while (pos != NULL)
 {
@@ -22,5 +22,5 @@ while (pos != NULL)
 {
    myMap.GetNextAssoc(pos, nKey, pt);
    _tprintf_s(_T("Current key value at %d: %d,%d\n"),
-      nKey, pt.x, pt.y);
+              nKey, pt.x, pt.y);
 }

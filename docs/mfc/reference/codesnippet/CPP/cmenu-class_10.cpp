@@ -11,7 +11,7 @@ void CMainFrame::OnLoadMenuIndirect()
    int bytes_left = sizeof(milist);
 
    // Fill up the MENUITEMTEMPLATEHEADER structure.
-   MENUITEMTEMPLATEHEADER *mheader = (MENUITEMTEMPLATEHEADER *)milist;
+   MENUITEMTEMPLATEHEADER *mheader = (MENUITEMTEMPLATEHEADER*)milist;
    mheader->versionNumber = 0;
    mheader->offset = 0;
 
@@ -67,7 +67,7 @@ void CMainFrame::OnLoadMenuIndirect()
 UINT AddMenuItem(LPVOID MenuTemplate, int TemplateBytes, WCHAR *MenuString,
                  WORD MenuID, BOOL IsPopup, BOOL LastItem)
 {
-   MENUITEMTEMPLATE *mitem = (MENUITEMTEMPLATE *)MenuTemplate;
+   MENUITEMTEMPLATE *mitem = (MENUITEMTEMPLATE*)MenuTemplate;
 
    UINT bytes_used = 0;
    if (IsPopup) // for popup menu
@@ -78,11 +78,11 @@ UINT AddMenuItem(LPVOID MenuTemplate, int TemplateBytes, WCHAR *MenuString,
          mitem->mtOption = MF_POPUP;
       bytes_used += sizeof(mitem->mtOption);
 
-      mitem = (MENUITEMTEMPLATE *)((BYTE *)MenuTemplate + bytes_used);
+      mitem = (MENUITEMTEMPLATE*)((BYTE*)MenuTemplate + bytes_used);
       // a popup doesn't have mtID!!!
 
       TemplateBytes -= bytes_used;
-      wcscpy_s((WCHAR *)mitem, TemplateBytes / sizeof(WCHAR), MenuString);
+      wcscpy_s((WCHAR*)mitem, TemplateBytes / sizeof(WCHAR), MenuString);
       bytes_used += (UINT)(sizeof(WCHAR) * (wcslen(MenuString) + 1)); // include '\0'
    }
    else // for command item

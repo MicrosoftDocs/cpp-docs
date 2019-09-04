@@ -1,4 +1,4 @@
-void CDCView::DrawPolygon(CDC* pDC)
+void CDCView::DrawPolygon(CDC *pDC)
 {
    // find the client area
    CRect rect;
@@ -6,11 +6,11 @@ void CDCView::DrawPolygon(CDC* pDC)
 
    // draw with a thick blue pen
    CPen penBlue(PS_SOLID, 5, RGB(0, 0, 255));
-   CPen* pOldPen = pDC->SelectObject(&penBlue);
+   CPen *pOldPen = pDC->SelectObject(&penBlue);
 
    // and a solid red brush
    CBrush brushRed(RGB(255, 0, 0));
-   CBrush* pOldBrush = pDC->SelectObject(&brushRed);
+   CBrush *pOldBrush = pDC->SelectObject(&brushRed);
 
    // Find the midpoints of the top, right, left, and bottom
    // of the client area. They will be the vertices of our polygon.

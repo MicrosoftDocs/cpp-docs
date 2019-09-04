@@ -7,7 +7,7 @@ void CMdiView::OnReplaceMenu()
    // Load a new menu resource named IDR_SHORT_MENU. m_hDefaultMenu is
    // a member variable of CMdiDoc class (a CDocument-derived class).
    // Its type is HMENU.
-   CMdiDoc *pdoc = (CMdiDoc *)GetDocument();
+   CMdiDoc *pdoc = (CMdiDoc*)GetDocument();
    pdoc->m_hDefaultMenu =
        ::LoadMenu(AfxGetResourceHandle(), MAKEINTRESOURCE(IDR_SHORT_MENU));
    if (pdoc->m_hDefaultMenu == NULL)
@@ -17,7 +17,7 @@ void CMdiView::OnReplaceMenu()
    // a CMDIChildWnd-derived class. We can then obtain the MDI parent
    // frame window using the CMDIChildWnd*. Then, replace the current
    // menu bar with the new loaded menu resource.
-   CMDIFrameWnd *frame = ((CMDIChildWnd *)GetParent())->GetMDIFrame();
+   CMDIFrameWnd *frame = ((CMDIChildWnd*)GetParent())->GetMDIFrame();
    frame->MDISetMenu(CMenu::FromHandle(pdoc->m_hDefaultMenu), NULL);
    frame->DrawMenuBar();
 }

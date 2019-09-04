@@ -1,4 +1,4 @@
-HDITEM curItem = { 0 };
+HDITEM curItem = {0};
 
 pHeaderCtrl->SetImageList(&m_ListImageList);
 

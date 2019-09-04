@@ -1,4 +1,4 @@
-void CDCView::DrawFC(CDC* pDC)
+void CDCView::DrawFC(CDC *pDC)
 {
    CRect rc;
    GetClientRect(&rc);

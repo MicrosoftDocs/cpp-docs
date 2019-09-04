@@ -1,4 +1,4 @@
-// The code fragment creates a font based on the information 
+// The code fragment creates a font based on the information
 // we got from CFontDialog::m_cf variable.
 
 CFontDialog dlg;
@@ -13,7 +13,7 @@ if (dlg.DoModal() == IDOK)
 
    // Do something with the font just created...
    CClientDC dc(this);
-   CFont* def_font = dc.SelectObject(&font);
+   CFont *def_font = dc.SelectObject(&font);
    dc.TextOut(5, 5, _T("Hello"), 5);
    dc.SelectObject(def_font);
 

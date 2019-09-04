@@ -3,7 +3,7 @@
 void DisplayPage(LPCTSTR pszURL)
 {
    CInternetSession session(_T("My Session"));
-   CStdioFile* pFile = NULL;
+   CStdioFile *pFile = NULL;
    CHAR szBuff[1024];
    //use a URL and print a Web page to the console
    pFile = session.OpenURL(pszURL);

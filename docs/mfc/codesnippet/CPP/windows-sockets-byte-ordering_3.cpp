@@ -1,4 +1,4 @@
-void Message::Serialize(CArchive& ar)
+void Message::Serialize(CArchive &ar)
 {
    if (ar.IsStoring())
    {

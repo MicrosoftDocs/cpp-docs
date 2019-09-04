@@ -1,6 +1,6 @@
 CFile myFile(_T("My__test__file.dat"),
-   CFile::modeCreate | CFile::modeReadWrite);
-CAge age(21), * pAge;
+             CFile::modeCreate | CFile::modeReadWrite);
+CAge age(21), *pAge;
 
 // Create a storing archive.
 CArchive arStore(&myFile, CArchive::store);
@@ -16,5 +16,5 @@ myFile.SeekToBegin();
 CArchive arLoad(&myFile, CArchive::load);
 
 // Verify the object is in the archive.
-pAge = (CAge*)arLoad.ReadObject(RUNTIME_CLASS(CAge));
+pAge = (CAge *)arLoad.ReadObject(RUNTIME_CLASS(CAge));
 ASSERT(age == *pAge);

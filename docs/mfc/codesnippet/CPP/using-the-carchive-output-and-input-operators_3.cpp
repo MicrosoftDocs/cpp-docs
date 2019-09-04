@@ -1,4 +1,4 @@
-void CSerializableObj::Serialize(CArchive& archive)
+void CSerializableObj::Serialize(CArchive &archive)
 {
    // call base class function first
    // base class is CObject in this case
