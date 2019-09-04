@@ -1,5 +1,5 @@
 int i = 0;
 if (ar.IsStoring())
-ar << i;
+   ar << i;
 else
-ar >> i;
+   ar >> i;

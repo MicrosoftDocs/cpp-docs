@@ -3,7 +3,7 @@ void CMyEditView::OnInitialUpdate()
    CEditView::OnInitialUpdate();
 
    // get the edit control and set some initial properties for it
-   CEdit& theEdit = GetEditCtrl();
+   CEdit &theEdit = GetEditCtrl();
 
    // adjust the left margin without changing the right margin
    DWORD dwMargins = theEdit.GetMargins();

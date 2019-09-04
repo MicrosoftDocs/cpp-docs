@@ -3,7 +3,7 @@
 void GetFtpFile(LPCTSTR pszServerName, LPCTSTR pszRemoteFile, LPCTSTR pszLocalFile)
 {
    CInternetSession session(_T("My FTP Session"));
-   CFtpConnection* pConn = NULL;
+   CFtpConnection *pConn = NULL;
 
    pConn = session.GetFtpConnection(pszServerName);
    //get the file

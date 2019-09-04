@@ -1,4 +1,4 @@
-void CCustSet::DoFieldExchange(CDaoFieldExchange* pFX)
+void CCustSet::DoFieldExchange(CDaoFieldExchange *pFX)
 {
    pFX->SetFieldType(CDaoFieldExchange::param);
    DFX_Text(pFX, _T("Param"), m_strParam);

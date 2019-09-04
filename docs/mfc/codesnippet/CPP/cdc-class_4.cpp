@@ -1,7 +1,7 @@
 // This handler loads a bitmap from system resources,
 // centers it in the view, and uses BitBlt() to paint the bitmap
 // bits.
-void CDCView::DrawBitmap(CDC* pDC)
+void CDCView::DrawBitmap(CDC *pDC)
 {
    // load IDB_BITMAP1 from our resources
    CBitmap bmp;
@@ -17,7 +17,7 @@ void CDCView::DrawBitmap(CDC* pDC)
       dcMemory.CreateCompatibleDC(pDC);
 
       // Select the bitmap into the in-memory DC
-      CBitmap* pOldBitmap = dcMemory.SelectObject(&bmp);
+      CBitmap *pOldBitmap = dcMemory.SelectObject(&bmp);
 
       // Find a centerpoint for the bitmap in the client area
       CRect rect;
@@ -29,7 +29,7 @@ void CDCView::DrawBitmap(CDC* pDC)
       // screen DC to actually do the painting. Use the centerpoint
       // we computed for the target offset.
       pDC->BitBlt(nX, nY, bmpInfo.bmWidth, bmpInfo.bmHeight, &dcMemory,
-         0, 0, SRCCOPY);
+                  0, 0, SRCCOPY);
 
       dcMemory.SelectObject(pOldBitmap);
    }

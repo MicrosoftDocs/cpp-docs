@@ -1,4 +1,4 @@
-LPCTSTR CChildFrame::GetDocumentName(CObject** pObj)
+LPCTSTR CChildFrame::GetDocumentName(CObject **pObj)
 {
    if (DYNAMIC_DOWNCAST(CStartView, GetActiveView()) != NULL)
    {

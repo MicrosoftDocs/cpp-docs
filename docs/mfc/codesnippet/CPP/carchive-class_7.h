@@ -6,5 +6,5 @@ public:
 
    CObList m_listOfSubItems;
 
-   virtual void Serialize(CArchive& ar);
+   virtual void Serialize(CArchive &ar);
 };

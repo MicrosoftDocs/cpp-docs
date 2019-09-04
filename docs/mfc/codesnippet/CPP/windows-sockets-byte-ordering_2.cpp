@@ -5,5 +5,5 @@ struct Message
    short m_nParam1;
    long m_lParam2;
 
-   void Serialize(CArchive& ar);
+   void Serialize(CArchive &ar);
 };

@@ -7,6 +7,6 @@ int i = 7;
 long lo = 1000000000L;
 LONGLONG lolo = 12345678901234i64;
 afxDump << _T("list=") << &li << _T("string=")
-<< s << _T("int=") << i << _T("long=") << lo
-<< _T("LONGLONG=") << lolo << _T("\n");
+        << s << _T("int=") << i << _T("long=") << lo
+        << _T("LONGLONG=") << lolo << _T("\n");
 #endif

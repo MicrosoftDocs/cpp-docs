@@ -10,6 +10,6 @@ LPUNKNOWN pUnk = pWndCal->GetControlUnknown();
 
 // From there get the IDispatch interface of control
 LPDISPATCH pDisp = NULL;
-pUnk->QueryInterface(IID_IDispatch, (LPVOID *)&pDisp);
+pUnk->QueryInterface(IID_IDispatch, (LPVOID*)&pDisp);
 
 // use IDispatch method to invoke the control's functionality

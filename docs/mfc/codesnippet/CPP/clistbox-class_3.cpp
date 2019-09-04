@@ -2,4 +2,4 @@
 CListBox myListBox;
 
 // Declare a dynamic CListBox object.
-CListBox* pmyListBox = new CListBox;
+CListBox *pmyListBox = new CListBox;

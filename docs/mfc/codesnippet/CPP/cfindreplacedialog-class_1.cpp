@@ -1,12 +1,12 @@
-// m_pFRDlg is a pointer to a class derived from CFindReplaceDialog 
-// which defines variables used by the FINDREPLACE structure. 
+// m_pFRDlg is a pointer to a class derived from CFindReplaceDialog
+// which defines variables used by the FINDREPLACE structure.
 // InitFindReplaceDlg creates a CFindReplaceDialog and initializes
 // the m_fr with the data members from the derived class
 void CMyRichEditView::InitFindReplaceDlg()
 {
    if (NULL == m_pFRDlg)
    {
-      m_pFRDlg = new CMyFindReplaceDialog();  // Must be created on the heap
+      m_pFRDlg = new CMyFindReplaceDialog(); // Must be created on the heap
 
       m_pFRDlg->Create(TRUE, _T(""), _T(""), FR_DOWN, this);
 

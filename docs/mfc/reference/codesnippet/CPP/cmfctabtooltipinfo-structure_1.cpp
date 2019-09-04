@@ -1,6 +1,6 @@
 LRESULT CMainFrame::OnGetTabToolTip(WPARAM /*wp*/, LPARAM lp)
 {
-   CMFCTabToolTipInfo *pInfo = (CMFCTabToolTipInfo *)lp;
+   CMFCTabToolTipInfo *pInfo = (CMFCTabToolTipInfo*)lp;
    ASSERT(pInfo != NULL);
 
    if (pInfo)

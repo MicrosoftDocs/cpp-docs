@@ -1,4 +1,4 @@
-void CEmployee::Serialize(CArchive& archive)
+void CEmployee::Serialize(CArchive &archive)
 {
    // call base class function first
    // base class is CObject in this case

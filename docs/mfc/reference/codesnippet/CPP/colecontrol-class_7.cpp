@@ -11,7 +11,7 @@ void CMyAxCtrl::OnFontChanged()
       pFontDisp = AmbientFont();
       if (pFontDisp)
       {
-         hr = pFontDisp->QueryInterface(IID_IFont, (LPVOID *)&pFont);
+         hr = pFontDisp->QueryInterface(IID_IFont, (LPVOID*)&pFont);
          if (FAILED(hr))
          {
             pFontDisp->Release();

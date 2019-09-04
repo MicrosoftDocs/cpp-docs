@@ -1,6 +1,6 @@
 IMPLEMENT_SERIAL(CSchemaObject, CObject, VERSIONABLE_SCHEMA | 1)
 
-void CSchemaObject::Serialize(CArchive& ar)
+void CSchemaObject::Serialize(CArchive &ar)
 {
    CObject::Serialize(ar);
 
@@ -11,7 +11,7 @@ void CSchemaObject::Serialize(CArchive& ar)
       switch (nVersion)
       {
       case 0:
-         // read in previous version of 
+         // read in previous version of
          // this object
          break;
       case 1:
@@ -19,7 +19,7 @@ void CSchemaObject::Serialize(CArchive& ar)
          // this object
          break;
       default:
-         // report unknown version of 
+         // report unknown version of
          // this object
          break;
       }

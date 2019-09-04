@@ -5,4 +5,4 @@ map[_T("Lisa")] = new CAge(11);
 #ifdef _DEBUG
 afxDump.SetDepth(1);
 afxDump << _T("Operator [] example: ") << &map << _T("\n");
-#endif         
+#endif

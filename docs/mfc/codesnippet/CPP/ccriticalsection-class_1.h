@@ -3,6 +3,7 @@ class CMyCritSectClass
 {
    static CString _strShared; //shared resource
    static CCriticalSection _critSect;
+
 public:
    CMyCritSectClass(void) {}
    ~CMyCritSectClass(void) {}

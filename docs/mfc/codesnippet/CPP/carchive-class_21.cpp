@@ -1,5 +1,5 @@
 CFile myFile(_T("My__test__file.dat"),
-   CFile::modeCreate | CFile::modeReadWrite);
+             CFile::modeCreate | CFile::modeReadWrite);
 
 // Create a storing archive.
 CArchive arStore(&myFile, CArchive::store);
@@ -15,7 +15,7 @@ myFile.SeekToBegin();
 CArchive arLoad(&myFile, CArchive::load);
 
 // Load a class from the archive.
-CRuntimeClass* pClass = arLoad.ReadClass();
+CRuntimeClass *pClass = arLoad.ReadClass();
 if (!pClass->IsDerivedFrom(RUNTIME_CLASS(CAge)))
 {
    arLoad.Abort();

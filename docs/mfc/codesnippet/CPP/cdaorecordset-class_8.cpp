@@ -1,1 +1,1 @@
-   SetFieldNull(NULL);      
+SetFieldNull(NULL);

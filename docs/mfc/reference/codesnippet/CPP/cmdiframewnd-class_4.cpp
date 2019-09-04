@@ -37,6 +37,6 @@ void CMainFrame::OnActivateFirstMDIChild()
          break;
       }
 
-      child = (CMDIChildWnd *)child->GetWindow(GW_HWNDNEXT);
+      child = (CMDIChildWnd*)child->GetWindow(GW_HWNDNEXT);
    } while (child);
 }

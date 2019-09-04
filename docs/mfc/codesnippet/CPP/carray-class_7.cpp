@@ -4,7 +4,7 @@ CArray<CPoint, CPoint> myArray;
 myArray.SetSize(32, 128);
 
 // Add elements to the array.
-CPoint* pPt = (CPoint*)myArray.GetData();
+CPoint *pPt = (CPoint *)myArray.GetData();
 for (int i = 0; i < 32; i++, pPt++)
 {
    *pPt = CPoint(i, 2 * i);

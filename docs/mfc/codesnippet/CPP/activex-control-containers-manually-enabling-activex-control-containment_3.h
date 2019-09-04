@@ -1,1 +1,1 @@
-#include <afxdisp.h>        // MFC Automation classes
+#include <afxdisp.h> // MFC Automation classes

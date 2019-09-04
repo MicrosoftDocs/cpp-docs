@@ -38,7 +38,7 @@ void CDCView::DoStartDoc()
          else
          {
             // actually do some printing
-            CGdiObject* pOldFont = dcPrinter.SelectStockObject(SYSTEM_FONT);
+            CGdiObject *pOldFont = dcPrinter.SelectStockObject(SYSTEM_FONT);
 
             dcPrinter.TextOut(50, 50, _T("Hello World!"), 12);
 

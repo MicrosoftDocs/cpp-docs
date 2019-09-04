@@ -16,4 +16,4 @@ lstCmds.AddTail(ID_PARA_DECREASEINDENT);
 lstCmds.AddTail(ID_PARA_INCREASEINDENT);
 lstCmds.AddTail(ID_PARA_BULLETS);
 
-pFloaty->SetCommands(((CMainFrame *)GetTopLevelFrame())->GetRibbonBar(), lstCmds);
+pFloaty->SetCommands(((CMainFrame*)GetTopLevelFrame())->GetRibbonBar(), lstCmds);

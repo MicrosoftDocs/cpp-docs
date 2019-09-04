@@ -6,7 +6,7 @@ void CMyApp::SetLandscapeMode()
    if (bRet)
    {
       // protect memory handle with ::GlobalLock and ::GlobalUnlock
-      DEVMODE FAR *pDevMode = (DEVMODE FAR *)::GlobalLock(pd.hDevMode);
+      DEVMODE FAR *pDevMode = (DEVMODE FAR*)::GlobalLock(pd.hDevMode);
       // set orientation to landscape
       pDevMode->dmOrientation = DMORIENT_LANDSCAPE;
       ::GlobalUnlock(pd.hDevMode);
