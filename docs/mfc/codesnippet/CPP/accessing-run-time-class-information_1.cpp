@@ -1,1 +1,1 @@
-CRuntimeClass* pClass = RUNTIME_CLASS(CObject);
+CRuntimeClass *pClass = RUNTIME_CLASS(CObject);

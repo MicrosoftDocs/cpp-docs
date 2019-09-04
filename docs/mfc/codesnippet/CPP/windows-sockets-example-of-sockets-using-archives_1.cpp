@@ -1,4 +1,4 @@
-void PacketSerialize(long nPackets, CArchive& arData, CArchive& arAck)
+void PacketSerialize(long nPackets, CArchive &arData, CArchive &arAck)
 {
    BYTE bValue = 0;
    WORD nCopies = 0;
@@ -28,7 +28,7 @@ void PacketSerialize(long nPackets, CArchive& arData, CArchive& arAck)
          }
 
          strText.Format(_T("Sender sent packet %d of %d (Value = %d, Copies = %d)"),
-            p + 1, nPackets, (int)bValue, nCopies);
+                        p + 1, nPackets, (int)bValue, nCopies);
 
          // Send receipt string
          arData << strText;
@@ -64,7 +64,7 @@ void PacketSerialize(long nPackets, CArchive& arData, CArchive& arAck)
          DisplayMessage(strText);
 
          strText.Format(_T("Recipient received packet %d of %d (Value = %d, Copies = %d)"),
-            p + 1, nPackets, (int)bValue, nCopies);
+                        p + 1, nPackets, (int)bValue, nCopies);
 
          // Send acknowledgment
          arAck << strText;

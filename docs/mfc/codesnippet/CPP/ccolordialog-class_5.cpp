@@ -11,7 +11,7 @@ BOOL CMyColorDlg::OnColorOK()
    if (RGB(0, 0, 0) == clrref)
    {
       AfxMessageBox(_T("BLACK is not an acceptable color. ")
-         _T("Please enter a color again"));
+                    _T("Please enter a color again"));
 
       // GetColor() returns initially selected color.
       SetCurrentColor(GetColor());

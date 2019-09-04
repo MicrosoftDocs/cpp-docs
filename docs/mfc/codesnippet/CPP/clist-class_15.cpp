@@ -1,5 +1,5 @@
 // Define myList.
-CList<CString, CString&> myList;
+CList<CString, CString &> myList;
 
 // Add three elements to the list.
 POSITION pos = myList.AddHead(CString(_T("XYZ")));

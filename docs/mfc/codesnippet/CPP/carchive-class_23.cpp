@@ -1,5 +1,5 @@
 CFile myFile(_T("My__test__file.dat"),
-   CFile::modeCreate | CFile::modeReadWrite);
+             CFile::modeCreate | CFile::modeReadWrite);
 CString str1("String1"), str2("String2"), str;
 
 // Create a storing archive.

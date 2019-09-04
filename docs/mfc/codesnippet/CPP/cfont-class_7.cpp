@@ -1,7 +1,7 @@
-// The code fragment shows how to retrieve a copy of the 
+// The code fragment shows how to retrieve a copy of the
 // LOGFONT structure for a currently selected font of a window.
 
-CFont* pFont = pWnd->GetFont();
+CFont *pFont = pWnd->GetFont();
 if (NULL != pFont)
 {
    LOGFONT lf;

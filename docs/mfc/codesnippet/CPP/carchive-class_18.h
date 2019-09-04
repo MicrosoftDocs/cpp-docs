@@ -1,12 +1,12 @@
 class CMyLargeDocument : public CDocument
 {
 public:
-   virtual void Serialize(CArchive& ar);
+   virtual void Serialize(CArchive &ar);
 };
-void CMyLargeDocument::Serialize(CArchive& ar)
+void CMyLargeDocument::Serialize(CArchive &ar)
 {
    if (ar.IsStoring())
-      ar.SetStoreParams();  // use large defaults
+      ar.SetStoreParams(); // use large defaults
    else
       ar.SetLoadParams();
 

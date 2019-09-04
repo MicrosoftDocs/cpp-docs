@@ -32,10 +32,10 @@ void CMyView::OnBeginDlgRestore()
 
 // In the above example, the dialog was clearly invoked between
 // the pair of calls to BeginWaitCursor and EndWaitCursor.
-// Sometimes it may not be clear whether the dialog is invoked 
+// Sometimes it may not be clear whether the dialog is invoked
 // in between a pair of calls to BeginWaitCursor and EndWaitCursor.
-// It is permissable to call RestoreWaitCursor, even if 
-// BeginWaitCursor was not previously called.  This case is 
+// It is permissable to call RestoreWaitCursor, even if
+// BeginWaitCursor was not previously called.  This case is
 // illustrated below, where CMyView::AnotherFunction does not
 // need to know whether it was called in the context of an
 // hourglass cursor.
@@ -56,5 +56,5 @@ void CMyObject::OnDlgDoWait()
 {
    CFileDialog dlg(TRUE);
    dlg.DoModal();
-   AfxGetApp()->DoWaitCursor(0); // same as CCmdTarget::RestoreWaitCursor   
+   AfxGetApp()->DoWaitCursor(0); // same as CCmdTarget::RestoreWaitCursor
 }

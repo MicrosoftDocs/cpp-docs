@@ -14,8 +14,8 @@ BOOL CMdiView::OnToolTipNotify(UINT id, NMHDR *pNMHDR, LRESULT *pResult)
    UNREFERENCED_PARAMETER(pResult);
 
    // need to handle both ANSI and UNICODE versions of the message
-   TOOLTIPTEXTA *pTTTA = (TOOLTIPTEXTA *)pNMHDR;
-   TOOLTIPTEXTW *pTTTW = (TOOLTIPTEXTW *)pNMHDR;
+   TOOLTIPTEXTA *pTTTA = (TOOLTIPTEXTA*)pNMHDR;
+   TOOLTIPTEXTW *pTTTW = (TOOLTIPTEXTW*)pNMHDR;
    CStringA strTipText;
    UINT_PTR nID = pNMHDR->idFrom;
    if (pNMHDR->code == TTN_NEEDTEXTA && (pTTTA->uFlags & TTF_IDISHWND) ||

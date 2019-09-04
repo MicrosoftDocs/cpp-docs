@@ -12,7 +12,7 @@ void CExampleDoc::OnRepaintAllViews()
    POSITION pos = GetFirstViewPosition();
    while (pos != NULL)
    {
-      CView* pView = GetNextView(pos);
+      CView *pView = GetNextView(pos);
       pView->UpdateWindow();
    }
 }

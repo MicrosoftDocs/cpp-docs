@@ -18,7 +18,7 @@ CFont font;
 VERIFY(font.CreatePointFontIndirect(&lf, &dc));
 
 // Do something with the font just created...
-CFont* def_font = dc.SelectObject(&font);
+CFont *def_font = dc.SelectObject(&font);
 dc.TextOut(5, 5, _T("Hello"), 5);
 dc.SelectObject(def_font);
 

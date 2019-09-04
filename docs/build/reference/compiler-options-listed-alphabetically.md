@@ -29,6 +29,8 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Copies preprocessor output to standard output.|
 |[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Microsoft C++ team.|
 |[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
+|[/experimental:module](experimental-module.md)|Enables experimental module support.|
+|[/experimental:preprocessor](experimental-preprocessor.md)|Enables experimental conforming preprocessor support.|
 |[/F](f-set-stack-size.md)|Sets stack size.|
 |[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific x64 architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
 |[/FA](fa-fa-listing-file.md)|Creates a listing file.|
@@ -102,6 +104,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
 |[/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
+|[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|
 |[/Qvec-report (Auto-Vectorizer Reporting Level)](qvec-report-auto-vectorizer-reporting-level.md)|Enables reporting levels for automatic vectorization.|
 |[/RTC](rtc-run-time-error-checks.md)|Enables run-time error checking.|
 |[/sdl](sdl-enable-additional-security-checks.md)|Enables additional security features and warnings.|

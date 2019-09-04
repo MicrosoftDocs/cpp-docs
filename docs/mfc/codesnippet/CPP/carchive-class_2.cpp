@@ -1,5 +1,5 @@
 CFile myFile(_T("CArchive__test__file.txt"),
-   CFile::modeCreate | CFile::modeWrite);
+             CFile::modeCreate | CFile::modeWrite);
 CArchive ar(&myFile, CArchive::store);
 
 // Write a string to the archive.

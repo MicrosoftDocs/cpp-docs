@@ -9,4 +9,4 @@ map.RemoveKey(_T("Lisa")); // Memory leak: CAge object not
 #ifdef _DEBUG
 afxDump.SetDepth(1);
 afxDump << _T("RemoveKey example: ") << &map << _T("\n");
-#endif         
+#endif

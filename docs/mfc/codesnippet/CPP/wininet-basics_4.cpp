@@ -3,8 +3,8 @@
 void RetrieveGopherFile(LPCTSTR pszGopherSite, LPCTSTR pszFile)
 {
    CInternetSession session(_T("My Gopher Session"));
-   CGopherConnection* pConn = NULL;
-   CGopherFileFind* pFile;
+   CGopherConnection *pConn = NULL;
+   CGopherFileFind *pFile;
 
    pConn = session.GetGopherConnection(pszGopherSite);
    pFile = new CGopherFileFind(pConn);

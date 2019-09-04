@@ -1,5 +1,5 @@
 //modify the third item to be highlighted
-TCITEM curItem = { 0 };
+TCITEM curItem = {0};
 
 m_TabCtrl.DeselectAll(FALSE); //reset all tab items
 curItem.mask = TCIF_STATE;

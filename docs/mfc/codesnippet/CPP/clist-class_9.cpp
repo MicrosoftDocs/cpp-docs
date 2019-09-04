@@ -1,6 +1,6 @@
 // Define myList.
 // Define myList.
-CList<CString, CString&> myList;
+CList<CString, CString &> myList;
 
 // Add two elements to the list.
 myList.AddHead(CString(_T("ABC")));

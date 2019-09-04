@@ -2,7 +2,7 @@
 void CExampleDoc::OnEditClearAll()
 {
    DeleteContents();
-   UpdateAllViews(NULL);   
+   UpdateAllViews(NULL);
 }
 
 void CExampleDoc::DeleteContents()

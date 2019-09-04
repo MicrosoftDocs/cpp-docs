@@ -1,4 +1,4 @@
-void CDCView::Draw3dRect(CDC* pDC)
+void CDCView::Draw3dRect(CDC *pDC)
 {
    // get the client area
    CRect rect;

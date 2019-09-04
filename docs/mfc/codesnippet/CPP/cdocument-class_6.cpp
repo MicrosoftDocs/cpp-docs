@@ -1,4 +1,4 @@
-// Method 2: In an SDI or MDI application, do all initialization 
+// Method 2: In an SDI or MDI application, do all initialization
 // in an override of OnNewDocument, if you are certain that
 // the initialization is effectively saved upon File Save
 // and fully restored upon File Open, via serialization.

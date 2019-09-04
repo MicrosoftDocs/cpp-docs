@@ -4,7 +4,7 @@ void CSimpleDlg::OnRButtonUp(UINT nFlags, CPoint point)
    // Do something
 
    int nRet = point.x; // Just any value would do!
-   EndDialog(nRet); // This value is returned by DoModal!
+   EndDialog(nRet);    // This value is returned by DoModal!
 
    // Do something
 

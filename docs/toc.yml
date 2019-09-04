@@ -536,6 +536,10 @@
                       href: build/reference/errorreport-report-internal-compiler-errors.md
                     - name: /execution/charset (Set execution character set)
                       href: build/reference/execution-charset-set-execution-character-set.md
+                    - name: /experimental:module
+                      href: build/reference/experimental-module.md
+                    - name: /experimental:preprocessor
+                      href: build/reference/experimental-preprocessor.md
                     - name: /F (Set stack size)
                       href: build/reference/f-set-stack-size.md
                     - name: Output-file (/F) options

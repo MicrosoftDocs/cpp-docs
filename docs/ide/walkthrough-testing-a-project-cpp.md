@@ -22,7 +22,7 @@ In this walkthrough, you watch the value of a variable as the program runs and d
 
 1. Select this line of code:
 
-   `Cardgame.solitaire(1);`
+   `Cardgame solitaire(1);`
 
 1. To set a breakpoint on that line, on the menu bar, choose **Debug** > **Toggle Breakpoint**, or choose the **F9** key. A red circle appears to the left of the line; it indicates that a breakpoint is set. To remove a breakpoint, you can choose the menu command or the **F9** key again.
 

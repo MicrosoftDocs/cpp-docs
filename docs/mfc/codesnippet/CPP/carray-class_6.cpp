@@ -7,6 +7,6 @@ for (int i = 0; i < 10; i++)
 // Modify all the points in the array.
 for (int i = 0; i < myArray.GetCount(); i++)
 {
-   CPoint& pt = myArray.ElementAt(i);
+   CPoint &pt = myArray.ElementAt(i);
    pt.x = 0;
 }

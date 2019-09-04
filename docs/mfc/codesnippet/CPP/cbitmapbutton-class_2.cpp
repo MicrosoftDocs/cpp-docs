@@ -2,4 +2,4 @@
 CBitmapButton myButton;
 
 // Declare a bitmap button object on the heap.
-CBitmapButton* pmyButton = new CBitmapButton;
+CBitmapButton *pmyButton = new CBitmapButton;

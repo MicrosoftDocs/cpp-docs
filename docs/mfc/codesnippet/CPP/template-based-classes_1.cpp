@@ -1,2 +1,2 @@
 CArray<int, int> myArray;
-CList<CPerson, CPerson&> myList;
+CList<CPerson, CPerson &> myList;

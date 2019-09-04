@@ -1,6 +1,6 @@
 // Define myList and myList2.
-CList<CString, CString&> myList;
-CList<CString, CString&> myList2;
+CList<CString, CString &> myList;
+CList<CString, CString &> myList2;
 
 // Add elements to the end of myList and myList2.
 myList.AddTail(CString(_T("A")));
@@ -10,7 +10,7 @@ myList2.AddTail(CString(_T("D")));
 
 // There are two versions of CList::AddTail: one adds a single
 // element to the end of the list, the second adds another list
-// to the end. 
+// to the end.
 
 // This adds the string "ABC" to the end of myList.
 // myList is a list of CStrings (ie defined as CList<CString,CString&>).

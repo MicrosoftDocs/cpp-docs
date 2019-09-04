@@ -14,7 +14,7 @@ CMFCColorMenuButton *CFormatBar::CreateColorButton()
          PALETTEENTRY PalEntry[MAX_COLOURS];
       } pal;
 
-      LOGPALETTE *pLogPalette = (LOGPALETTE *)&pal;
+      LOGPALETTE *pLogPalette = (LOGPALETTE*)&pal;
       pLogPalette->palVersion = 0x300;
       pLogPalette->palNumEntries = (WORD)m_nNumColours;
 

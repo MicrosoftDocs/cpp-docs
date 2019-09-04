@@ -188,6 +188,15 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/permissive-](permissive-standards-conformance.md)|Set standard-conformance mode.|
 |[/std](std-specify-language-standard-version.md)|C++ standard version compatibility selector.|
 
+## Experimental options
+
+Experimental options may only be supported by certain versions of the compiler, and may behave differently in different compiler versions. Often the best, or only, documentation for experimental options is in the [Microsoft C++ Team Blog](https://devblogs.microsoft.com/cppblog/).
+
+|Option|Purpose|
+|------------|-------------|
+|[/experimental:module](experimental-module.md)|Enables experimental module support.|
+|[/experimental:preprocessor](experimental-preprocessor.md)|Enables experimental conforming preprocessor support.|
+
 ## Deprecated and removed compiler options
 
 |Option|Purpose|

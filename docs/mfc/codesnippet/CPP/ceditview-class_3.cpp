@@ -1,17 +1,17 @@
 // gain a reference to the edit control
-CEdit& theEdit = GetEditCtrl();
+CEdit &theEdit = GetEditCtrl();
 
 // get the font the control is using
-CFont* pFont = theEdit.GetFont();
+CFont *pFont = theEdit.GetFont();
 TEXTMETRIC tm;
 
 // get the control's DC, too
-CDC* pDC = theEdit.GetDC();
+CDC *pDC = theEdit.GetDC();
 
 // Select the font that the control uses by default into the DC.
 // We must do this because the control may or may not be using
 // that font at this exact moment
-CFont* pOldFont = pDC->SelectObject(pFont);
+CFont *pOldFont = pDC->SelectObject(pFont);
 
 // Retrieve text metrics for that font and return the previously
 // selected font.
