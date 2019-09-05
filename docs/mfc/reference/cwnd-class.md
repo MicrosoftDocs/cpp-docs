@@ -2044,12 +2044,12 @@ TRUE if tool tips are enabled; otherwise FALSE.
 
 ### Remarks
 
-Override [OnToolHitTest](#ontoolhittest) to provide the [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) struct or structs for the window.
+Override [OnToolHitTest](#ontoolhittest) to provide the [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) struct or structs for the window.
 
 > [!NOTE]
 > Some windows, such as [CToolBar](../../mfc/reference/ctoolbar-class.md), provide a built-in implementation of [OnToolHitTest](#ontoolhittest).
 
-See [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) in the Windows SDK for more information on this structure.
+See [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) in the Windows SDK for more information on this structure.
 
 Simply calling `EnableToolTips` is not enough to display tool tips for your child controls unless the parent window is derived from `CFrameWnd`. This is because `CFrameWnd` provides a default handler for the TTN_NEEDTEXT notification. If your parent window is not derived from `CFrameWnd`, that is, if it is a dialog box or a form view, tool tips for your child controls will not display correctly unless you provide a handler for the TTN_NEEDTEXT tool tip notification. See [Tool Tips](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
@@ -9038,7 +9038,7 @@ virtual INT_PTR OnToolHitTest(
 Specifies the x- and y-coordinate of the cursor. These coordinates are always relative to the upper-left corner of the window
 
 *pTI*<br/>
-A pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure. The following structure values are set by default:
+A pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure. The following structure values are set by default:
 
 - *hwnd* = `m_hWnd` Handle to a window
 
@@ -9060,7 +9060,7 @@ If the area with which the tooltip is associated is not a button, `OnToolHitTest
 
 Override `OnToolHitTest` to provide different information than the default provides.
 
-See [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow), in the Windows SDK, for more information about the structure.
+See [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa), in the Windows SDK, for more information about the structure.
 
 ##  <a name="ontouchinput"></a>  CWnd::OnTouchInput
 

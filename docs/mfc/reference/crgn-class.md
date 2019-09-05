@@ -30,7 +30,7 @@ class CRgn : public CGdiObject
 |[CRgn::CombineRgn](#combinergn)|Sets a `CRgn` object so that it is equivalent to the union of two specified `CRgn` objects.|
 |[CRgn::CopyRgn](#copyrgn)|Sets a `CRgn` object so that it is a copy of a specified `CRgn` object.|
 |[CRgn::CreateEllipticRgn](#createellipticrgn)|Initializes a `CRgn` object with an elliptical region.|
-|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Initializes a `CRgn` object with an elliptical region defined by a [RECT](/windows/win32/api/windef/ns-windef-tagrect) structure.|
+|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|Initializes a `CRgn` object with an elliptical region defined by a [RECT](/windows/win32/api/windef/ns-windef-rect) structure.|
 |[CRgn::CreateFromData](#createfromdata)|Creates a region from the given region and transformation data.|
 |[CRgn::CreateFromPath](#createfrompath)|Creates a region from the path that is selected into the given device context.|
 |[CRgn::CreatePolygonRgn](#createpolygonrgn)|Initializes a `CRgn` object with a polygonal region. The system closes the polygon automatically, if necessary, by drawing a line from the last vertex to the first.|

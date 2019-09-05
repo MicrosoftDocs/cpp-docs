@@ -110,7 +110,7 @@ CFontDialog(
 A pointer to a [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) data structure that allows you to set some of the font's characteristics.
 
 *charFormat*<br/>
-A pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) data structure that allows you to set some of the font's characteristics in a rich edit control.
+A pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) data structure that allows you to set some of the font's characteristics in a rich edit control.
 
 *dwFlags*<br/>
 Specifies one or more choose-font flags. One or more preset values can be combined using the bitwise OR operator. If you modify the `m_cf.Flag`s structure member, be sure to use a bitwise OR operator in your changes to keep the default behavior intact. For details on each of these flags, see the description of the [CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefontw) structure in the Windows SDK.
@@ -167,7 +167,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
 ### Parameters
 
 *cf*<br/>
-A [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure containing information about the character formatting of the selected font.
+A [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure containing information about the character formatting of the selected font.
 
 ##  <a name="getcolor"></a>  CFontDialog::GetColor
 

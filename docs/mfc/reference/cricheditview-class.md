@@ -661,7 +661,7 @@ The desired list of character formatting effects to toggle.
 
 Each call to this function toggles the specified formatting effects for the current selection.
 
-For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) in the Windows SDK.
+For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) in the Windows SDK.
 
 ### Example
 
@@ -895,7 +895,7 @@ Indicates the character formatting effect.
 
 The mask *dwMask* specifies which character formatting attributes to check. The flags *dwEffect* list the character formatting attributes to set/clear.
 
-For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) in the Windows SDK.
+For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) in the Windows SDK.
 
 ### Example
 
