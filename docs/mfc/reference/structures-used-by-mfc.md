@@ -21,7 +21,7 @@ The following table lists structures that are called from various member functio
 |[CDaoIndexFieldInfo Structure](../../mfc/reference/cdaoindexfieldinfo-structure.md)|[PAINTSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-paintstruct)|
 |[CDaoIndexInfo Structure](../../mfc/reference/cdaoindexinfo-structure.md)|[POINT Structure](/windows/win32/api/windef/ns-windef-point)|
 |[CDaoParameterInfo Structure](../../mfc/reference/cdaoparameterinfo-structure.md)|[RECT Structure](/windows/win32/api/windef/ns-windef-rect)|
-|[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](/windows/win32/api/wingdi/ns-wingdi-rgndatw)|
+|[CDaoQueryDefInfo Structure](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA Structure](/windows/win32/api/wingdi/ns-wingdi-rgndata)|
 |[CDaoRelationFieldInfo Structure](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR Structure](/windows/win32/winsock/sockaddr-2)|
 |[CDaoRelationInfo Structure](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN Structure](/windows/win32/winsock/sockaddr-2)|
 |[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)

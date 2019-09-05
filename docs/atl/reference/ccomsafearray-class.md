@@ -70,7 +70,7 @@ The type of data to be stored in the array.
 
 ## Remarks
 
-`CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-tagsafearray) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.
+`CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-safearray) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.
 
 `CComSafeArray` simplifies passing arrays between processes, and in addition provides extra security by checking array index values against upper and lower bounds.
 
@@ -632,7 +632,7 @@ The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are
 
 ## See also
 
-[SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-safearray)<br/>
 [CComSafeArray::Create](#create)<br/>
 [CComSafeArray::Destroy](#destroy)<br/>
 [Class Overview](../../atl/atl-class-overview.md)

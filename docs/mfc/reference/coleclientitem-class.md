@@ -1582,7 +1582,7 @@ Pointer to a pointer to the main frame window.
 Pointer to a pointer to the document frame window.
 
 *lpFrameInfo*<br/>
-Pointer to an [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) structure that will receive frame window information.
+Pointer to an [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) structure that will receive frame window information.
 
 ### Return Value
 
@@ -1596,7 +1596,7 @@ If the container is an MDI application, the default implementation returns a poi
 
 Override this function only if the default implementation does not suit your application; for example, if your application has a user-interface paradigm that differs from SDI or MDI. This is an advanced overridable.
 
-For more information, see [IOleInPlaceSite::GetWindowContext](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-getwindowcontext) and the [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) structure in the Windows SDK.
+For more information, see [IOleInPlaceSite::GetWindowContext](/windows/win32/api/oleidl/nf-oleidl-ioleinplacesite-getwindowcontext) and the [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) structure in the Windows SDK.
 
 ##  <a name="oninsertmenus"></a>  COleClientItem::OnInsertMenus
 
@@ -1985,7 +1985,7 @@ BOOL SetPrintDevice(const PRINTDLG* ppd);
 Pointer to a [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) data structure, which contains information about the new print-target device. Can be NULL.
 
 *ppd*<br/>
-Pointer to a [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) data structure, which contains information about the new print-target device. Can be NULL.
+Pointer to a [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga) data structure, which contains information about the new print-target device. Can be NULL.
 
 ### Return Value
 
@@ -1997,7 +1997,7 @@ This function updates the print-target device for the item but does not refresh 
 
 The arguments to this function contain information that the OLE system uses to identify the target device. The `PRINTDLG` structure contains information that Windows uses to initialize the common Print dialog box. After the user closes the dialog box, Windows returns information about the user's selections in this structure. The `m_pd` member of a [CPrintDialog](../../mfc/reference/cprintdialog-class.md) object is a `PRINTDLG` structure.
 
-For more information about this structure, see [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) in the Windows SDK.
+For more information about this structure, see [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga) in the Windows SDK.
 
 For more information, see [DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) in the Windows SDK.
 

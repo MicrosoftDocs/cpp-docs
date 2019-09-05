@@ -570,7 +570,7 @@ int HitTest(RBHITTESTINFO* prbht);
 ### Parameters
 
 *prbht*<br/>
-A pointer to a [RBHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-_rb_hittestinfo) structure. Before sending the message, the `pt` member of this structure must be initialized to the point that will be tested, in client coordinates.
+A pointer to a [RBHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-rbhittestinfo) structure. Before sending the message, the `pt` member of this structure must be initialized to the point that will be tested, in client coordinates.
 
 ### Return Value
 

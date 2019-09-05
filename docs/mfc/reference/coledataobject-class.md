@@ -46,7 +46,7 @@ These kinds of data transfers include a source and a destination. The data sourc
 
 This class enables you to determine whether the data exists in a specified format. You can also enumerate the available data formats or check whether a given format is available and then retrieve the data in the preferred format. Object retrieval can be accomplished in several different ways, including the use of a [CFile](../../mfc/reference/cfile-class.md), an HGLOBAL, or an `STGMEDIUM` structure.
 
-For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in the Windows SDK.
+For more information, see the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in the Windows SDK.
 
 For more information about using data objects in your application, see the article [Data Objects and Data Sources (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
@@ -159,7 +159,7 @@ BOOL GetData(
 The format in which data is to be returned. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) function.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive data.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure that will receive data.
 
 *lpFormatEtc*<br/>
 Points to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure describing the format in which data is to be returned. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, the default values are used for the other fields in the `FORMATETC` structure.
@@ -170,7 +170,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), and [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) in the Windows SDK.
 
 For more information, see [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) in the Windows SDK.
 

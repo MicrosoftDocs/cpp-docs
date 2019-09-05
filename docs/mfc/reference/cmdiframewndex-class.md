@@ -1344,7 +1344,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 [in] The toolbar button.
 
 *pTI*<br/>
-[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure.
+[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure.
 
 ### Return Value
 
