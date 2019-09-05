@@ -16,5 +16,5 @@ The following example shows how to declare a private ref class as a template, an
 ## See also
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

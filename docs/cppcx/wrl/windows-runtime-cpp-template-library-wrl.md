@@ -141,5 +141,5 @@ A `WeakRef` object typically represents an object whose existence is controlled 
 |-|-|
 |[Key APIs by Category](key-wrl-apis-by-category.md)|Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.|
 |[Reference](wrl-reference.md)|Contains reference information for the Windows Runtime C++ Template Library.|
-|[Quick Reference (Windows Runtime and Visual C++)](../../cppcx/quick-reference-c-cx.md)|Briefly describes the C++/CX features that support the Windows Runtime.|
+|[Quick Reference C++/CX)](../../cppcx/quick-reference-c-cx.md)|Briefly describes the C++/CX features that support the Windows Runtime.|
 |[Using Windows Runtime Components in Visual C++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Shows how to use C++/CX to create a basic Windows Runtime component.|

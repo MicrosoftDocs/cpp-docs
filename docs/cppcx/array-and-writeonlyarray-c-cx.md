@@ -87,5 +87,5 @@ In general, you should avoid exposing a `Platform::Array` type as a property in 
 ## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
