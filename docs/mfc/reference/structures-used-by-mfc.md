@@ -27,7 +27,7 @@ The following table lists structures that are called from various member functio
 |[CDaoTableDefInfo Structure](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME Structure](/windows/win32/api/minwinbase/ns-minwinbase-systemtime)
 |[CDaoWorkspaceInfo Structure](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT Structure](/windows/win32/api/winuser/ns-winuser-windowplacement)|
 |[CODBCFieldInfo Structure](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS Structure](/windows/win32/api/winuser/ns-winuser-windowpos)
-|[COLORADJUSTMENT Structure](/windows/win32/api/wingdi/ns-wingdi-coloradjustment)|[WSADATA Structure](/windows/win32/api/winsock2/ns-winsock2-wsadatw)|
+|[COLORADJUSTMENT Structure](/windows/win32/api/wingdi/ns-wingdi-coloradjustment)|[WSADATA Structure](/windows/win32/api/winsock2/ns-winsock2-wsadata)|
 |[COMPAREITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-compareitemstruct)|[XFORM Structure](/windows/win32/api/wingdi/ns-wingdi-xform)|
 |[CREATESTRUCT Structure](/windows/win32/api/winuser/ns-winuser-createstructw)||
 |[DELETEITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-deleteitemstruct)||
