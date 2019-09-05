@@ -34,5 +34,5 @@ In a C# XAML client, you can consume it like this:
 
 [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Casting (C++/CX)](../cppcx/casting-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

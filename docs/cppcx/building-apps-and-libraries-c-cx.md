@@ -15,4 +15,4 @@ The topics in this section provide a few details about using the build system to
 
 - [DLLs](../cppcx/dlls-c-cx.md)
 
-Note: Visual C++ does not support profile guided optimizations for Universal Windows Platform. If you attempt to build a project with these options set in the IDE, a build error will result. Console applications are also not supported.
+Note: Visual Studio does not support profile guided optimizations for Universal Windows Platform. If you attempt to build a project with these options set in the IDE, a build error will result. Console applications are also not supported.

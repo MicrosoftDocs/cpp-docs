@@ -125,5 +125,5 @@ The following example shows how to expose a public ref class that derives from o
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
 [Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
