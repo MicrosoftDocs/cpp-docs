@@ -1,6 +1,6 @@
 ---
 title: "/Qspectre"
-ms.date: "10/12/2018"
+ms.date: "09/06/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
@@ -63,11 +63,25 @@ For more information, see the official [Microsoft Security Advisory ADV180002, G
 
 ### To set this compiler option in the Visual Studio development environment
 
+::: moniker range="vs-2019"
+
+#1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
+
+1. Select a new value for the **Spectre Mitigation** property. Choose **OK** to apply the change.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
+
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter the **/Qspectre** compiler option in the **Additional Options** box. Choose **OK** to apply the change.
+
+::: moniker-end
 
 ### To set this compiler option programmatically
 
