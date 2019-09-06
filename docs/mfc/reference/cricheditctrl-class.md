@@ -897,7 +897,7 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
 ### Parameters
 
 *cf*<br/>
-In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure to receive the character formatting attributes of the current selection.
+In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure to receive the character formatting attributes of the current selection.
 
 In the second version, a pointer to a [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure to receive the character formatting attributes of the current selection.
 
@@ -1464,7 +1464,7 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
 ### Parameters
 
 *cf*<br/>
-In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure containing the new default character formatting attributes.
+In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure containing the new default character formatting attributes.
 
 In the second version, a pointer to a [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the default character formatting attributes.
 
@@ -1766,7 +1766,7 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
 ### Parameters
 
 *cf*<br/>
-In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure containing the new character formatting attributes for the current selection.
+In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure containing the new character formatting attributes for the current selection.
 
 In the second version, a pointer to a [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the new character formatting attributes for the current selection.
 
@@ -1879,7 +1879,7 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
 ### Parameters
 
 *cf*<br/>
-In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-_charformat) structure containing the new character formatting attributes for the currently selected word.
+In the first version, a pointer to a [CHARFORMAT](/windows/win32/api/richedit/ns-richedit-charformata) structure containing the new character formatting attributes for the currently selected word.
 
 In the second version, a pointer to a [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the new character formatting attributes for the currently selected word.
 

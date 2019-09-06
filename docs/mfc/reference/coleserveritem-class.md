@@ -270,7 +270,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 ### Parameters
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_EMBEDSOURCE data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure that will receive the CF_EMBEDSOURCE data for the OLE item.
 
 ### Remarks
 
@@ -278,7 +278,7 @@ This format includes the item's native data. You must have implemented the `Seri
 
 The result can then be added to a data source by using [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). This function is called automatically by [COleServerItem::OnGetClipboardData](#ongetclipboarddata).
 
-For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) in the Windows SDK.
 
 ##  <a name="getitemname"></a>  COleServerItem::GetItemName
 
@@ -307,7 +307,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 ### Parameters
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_LINKSOURCE data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure that will receive the CF_LINKSOURCE data for the OLE item.
 
 ### Return Value
 
@@ -319,7 +319,7 @@ This format includes the CLSID describing the type of the OLE item and the infor
 
 The result can then be added to a data source with [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). This function is called automatically by [OnGetClipboardData](#ongetclipboarddata).
 
-For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) in the Windows SDK.
 
 ##  <a name="getobjectdescriptordata"></a>  COleServerItem::GetObjectDescriptorData
 
@@ -341,13 +341,13 @@ Offset of the mouse click from the upper-left corner of the OLE item. Can be NUL
 Size of the OLE item. Can be NULL.
 
 *lpStgMedium*<br/>
-Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure that will receive the CF_OBJECTDESCRIPTOR data for the OLE item.
+Pointer to the [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure that will receive the CF_OBJECTDESCRIPTOR data for the OLE item.
 
 ### Remarks
 
 The information is copied into the `STGMEDIUM` structure pointed to by *lpStgMedium*. This format includes the information needed for the Paste Special dialog.
 
-For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) in the Windows SDK.
 
 ##  <a name="isconnected"></a>  COleServerItem::IsConnected
 
@@ -669,7 +669,7 @@ virtual BOOL OnRenderData(
 Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -683,7 +683,7 @@ If *lpStgMedium*-> *tymed* is TYMED_NULL, the STGMEDIUM should allocated and fil
 
 This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.
 
-For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) in the Windows SDK.
+For more information, see [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) in the Windows SDK.
 
 ##  <a name="onrenderfiledata"></a>  COleServerItem::OnRenderFileData
 
@@ -787,7 +787,7 @@ virtual BOOL OnSetData(
 Pointer to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data resides.
 
 *bRelease*<br/>
 Indicates who has ownership of the storage medium after completing the function call. The caller decides who is responsible for releasing the resources allocated on behalf of the storage medium. The caller does this by setting *bRelease*. If *bRelease* is nonzero, the server item takes ownership, freeing the medium when it has finished using it. When *bRelease* is 0, the caller retains ownership and the server item can use the storage medium only for the duration of the call.
@@ -802,7 +802,7 @@ The server item does not take ownership of the data until it has successfully ob
 
 The default implementation does nothing. Override this function to replace the OLE item's data with the specified data. This is an advanced overridable.
 
-For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) in the Windows SDK.
+For more information, see [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1), [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc), and [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) in the Windows SDK.
 
 ##  <a name="onsetextent"></a>  COleServerItem::OnSetExtent
 

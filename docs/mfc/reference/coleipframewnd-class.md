@@ -62,7 +62,7 @@ COleIPFrameWnd();
 
 ### Remarks
 
-For more information, see [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oifi) in the Windows SDK.
+For more information, see [OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) in the Windows SDK.
 
 ##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars
 

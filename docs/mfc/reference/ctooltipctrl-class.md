@@ -303,7 +303,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 ### Parameters
 
 *lpToolInfo*<br/>
-A pointer to the tool tip's [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure.
+A pointer to the tool tip's [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure.
 
 ### Return Value
 
@@ -325,7 +325,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|*lpToolInfo*|[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure that receives information about the current tooltip window.|
+|*lpToolInfo*|[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that receives information about the current tooltip window.|
 
 ### Return Value
 
@@ -524,7 +524,7 @@ Nonzero if successful; otherwise 0.
 
 ### Remarks
 
-The `hwnd` and `uId` members of the [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure referenced by *CToolInfo* identify the tool. If that tool has been registered with the tool tip control through a previous call to `AddTool`, the `TOOLINFO` structure is filled with information about the tool.
+The `hwnd` and `uId` members of the [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure referenced by *CToolInfo* identify the tool. If that tool has been registered with the tool tip control through a previous call to `AddTool`, the `TOOLINFO` structure is filled with information about the tool.
 
 ##  <a name="hittest"></a>  CToolTipCtrl::HitTest
 
@@ -546,7 +546,7 @@ Pointer to the window that contains the tool.
 Pointer to a `CPoint` object containing the coordinates of the point to be tested.
 
 *lpToolInfo*<br/>
-Pointer to [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure that contains information about the tool.
+Pointer to [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that contains information about the tool.
 
 ### Return Value
 
@@ -771,7 +771,7 @@ void SetToolInfo(LPTOOLINFO lpToolInfo);
 ### Parameters
 
 *lpToolInfo*<br/>
-A pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-toolinfow) structure that specifies the information to set.
+A pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that specifies the information to set.
 
 ##  <a name="settoolrect"></a>  CToolTipCtrl::SetToolRect
 

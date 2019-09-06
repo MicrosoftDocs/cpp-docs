@@ -172,7 +172,7 @@ The mapping size. If 0, the maximum size of the file-mapping object is equal to 
 The file offset where mapping is to begin. The offset value must be a multiple of the system's memory allocation granularity.
 
 *dwMappingProtection*<br/>
-The protection desired for the file view when the file is mapped. See *flProtect* in [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) in the Windows SDK.
+The protection desired for the file view when the file is mapped. See *flProtect* in [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) in the Windows SDK.
 
 *dwViewDesiredAccess*<br/>
 Specifies the type of access to the file view and, therefore, the protection of the pages mapped by the file. See *dwDesiredAccess* in [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
@@ -183,7 +183,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) and [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
+After a file-mapping object has been created, the size of the file must not exceed the size of the file-mapping object; if it does, not all of the file's contents will be available for sharing. For more details, see [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) and [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) in the Windows SDK.
 
 ### Example
 
@@ -215,7 +215,7 @@ The name of the mapping object.
 Points to a BOOL value that is set to TRUE if the mapping object already existed.
 
 *lpsa*<br/>
-The pointer to a `SECURITY_ATTRIBUTES` structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw) in the Windows SDK.
+The pointer to a `SECURITY_ATTRIBUTES` structure that determines whether the returned handle can be inherited by child processes. See *lpAttributes* in [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) in the Windows SDK.
 
 *dwMappingProtection*<br/>
 The protection desired for the file view, when the file is mapped. See *flProtect* in `CreateFileMapping` in the Windows SDK.
@@ -229,7 +229,7 @@ Returns S_OK on success, or an error HRESULT on failure.
 
 ### Remarks
 
-`MapShareMem` allows an existing file-mapping object, created by [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappingw), to be shared between processes.
+`MapShareMem` allows an existing file-mapping object, created by [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga), to be shared between processes.
 
 ##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping
 

@@ -10,7 +10,7 @@ The articles in this section of the documentation describe namespaces that suppo
 
 ## Compiler-supplied namespaces
 
-To simplify the coding of programs that target the Windows Runtime, the C++/CX compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; Visual C++ exceptions that represent Windows Runtime errors; and language-specific enhancements to standard Windows Runtime types.
+To simplify the coding of programs that target the Windows Runtime, the C++/CX compiler and its supporting header files provide namespaces that define a wide range of types. The namespaces define the built-in numeric types; strings, arrays, and collections; C++ exceptions that represent Windows Runtime errors; and language-specific enhancements to standard Windows Runtime types.
 
 ## Related topics
 
@@ -22,4 +22,4 @@ To simplify the coding of programs that target the Windows Runtime, the C++/CX c
 
 ## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

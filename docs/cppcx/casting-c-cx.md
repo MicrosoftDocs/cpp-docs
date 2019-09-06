@@ -86,7 +86,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-If you use **reinterpret_cast** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-Visual C++ component extensions interface.
+If you use **reinterpret_cast** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-C++ component extensions interface.
 
 ## ABI types
 
@@ -116,5 +116,5 @@ The following table summarizes the cases in which it is safe to use **reinterpre
 ## See also
 
 - [Type System](../cppcx/type-system-c-cx.md)
-- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
 - [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

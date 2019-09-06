@@ -175,4 +175,4 @@ For more information, see [Deprecating types and members](../cppcx/deprecating-t
 
 ## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
