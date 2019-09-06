@@ -24,7 +24,7 @@ Microsoft Visual C++ libraries are also available in versions with Spectre mitig
 
 You can also install Spectre-mitigated libraries for MFC and ATL. They're found in the **Individual Components** tab under **SDKs, libraries, and frameworks**.
 
-> ![NOTE]
+> [!NOTE]
 > There are no versions of Spectre-mitigated libraries for Universal Windows (UWP) apps or components. App-local deployment of such libraries isn't possible.
 
 ### Applicability
