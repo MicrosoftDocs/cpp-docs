@@ -24,6 +24,9 @@ Microsoft Visual C++ libraries are also available in versions with Spectre mitig
 
 You can also install Spectre-mitigated libraries for MFC and ATL. They're found in the **Individual Components** tab under **SDKs, libraries, and frameworks**.
 
+> ![NOTE]
+> There are no versions of Spectre-mitigated libraries for Universal Windows (UWP) apps or components. App-local deployment of such libraries isn't possible.
+
 ### Applicability
 
 If your code operates on data that crosses a trust boundary, then we recommend you use the **/Qspectre** option to rebuild and redeploy your code to mitigate this issue as soon as possible. An example of such code is code that loads untrusted input that can affect execution. For example, code that makes remote procedure calls, parses untrusted input or files, or uses other local inter-process communication (IPC) interfaces. Standard sandboxing techniques may not be sufficient. Investigate your sandboxes carefully before you decide your code doesn't cross a trust boundary.
