@@ -65,7 +65,7 @@ For more information, see the official [Microsoft Security Advisory ADV180002, G
 
 ::: moniker range="vs-2019"
 
-#1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
