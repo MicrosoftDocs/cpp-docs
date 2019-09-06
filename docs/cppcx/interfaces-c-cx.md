@@ -92,5 +92,5 @@ Here's how Windows Runtime types can be used to author a generic interface:
 ## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

@@ -54,7 +54,7 @@ You can rely on the framework to handle many aspects of the printing process for
 
 If you want your application to handle printing without the framework's involvement, you can use the `CPrintDialogEx` class "as is" with the constructor provided, or you can derive your own dialog class from `CPrintDialogEx` and write a constructor to suit your needs. In either case, these dialog boxes will behave like standard MFC dialog boxes because they are derived from class `CCommonDialog`.
 
-To use a `CPrintDialogEx` object, first create the object using the `CPrintDialogEx` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pdex](#m_pdex) structure to initialize the values of the dialog box's controls. The `m_pdex` structure is of type [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw). For more information on this structure, see the Windows SDK.
+To use a `CPrintDialogEx` object, first create the object using the `CPrintDialogEx` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pdex](#m_pdex) structure to initialize the values of the dialog box's controls. The `m_pdex` structure is of type [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw). For more information on this structure, see the Windows SDK.
 
 If you do not supply your own handles in `m_pdex` for the `hDevMode` and `hDevNames` members, be sure to call the Windows function `GlobalFree` for these handles when you are done with the dialog box.
 
@@ -103,7 +103,7 @@ CPrintDialogEx(
 ### Parameters
 
 *dwFlags*<br/>
-One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the PD_ALLPAGES flag sets the default print range to all pages of the document. See the [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) structure in the Windows SDK for more information on these flags.
+One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the PD_ALLPAGES flag sets the default print range to all pages of the document. See the [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) structure in the Windows SDK for more information on these flags.
 
 *pParentWnd*<br/>
 A pointer to the dialog box's parent or owner window.
@@ -264,7 +264,7 @@ PRINTDLGEX m_pdex;
 
 ### Remarks
 
-After constructing a `CPrintDialogEx` object, you can use `m_pdex` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pdex` structure, see [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) in the Windows SDK.
+After constructing a `CPrintDialogEx` object, you can use `m_pdex` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pdex` structure, see [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) in the Windows SDK.
 
 If you modify the `m_pdex` data member directly, you will override any default behavior.
 
@@ -318,7 +318,7 @@ TRUE if only a range of pages in the document are to be printed; otherwise FALSE
 
 ### Remarks
 
-The specified page ranges can be determined from [m_pdex](#m_pdex) (see `nPageRanges`, `nMaxPageRanges`, and `lpPageRanges` in the [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-pdexw) structure in the Windows SDK).
+The specified page ranges can be determined from [m_pdex](#m_pdex) (see `nPageRanges`, `nMaxPageRanges`, and `lpPageRanges` in the [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) structure in the Windows SDK).
 
 ##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection
 

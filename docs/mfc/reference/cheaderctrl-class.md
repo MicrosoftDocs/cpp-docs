@@ -436,7 +436,7 @@ BOOL GetItem(
 Specifies the zero-based index of the item to retrieve.
 
 *pHeaderItem*<br/>
-Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the `mask` element ensure that values in the corresponding elements are properly filled in upon return. If the `mask` element is set to zero, values in the other structure elements are meaningless.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure that receives the new item. This structure is used with the `InsertItem` and `SetItem` member functions. Any flags set in the `mask` element ensure that values in the corresponding elements are properly filled in upon return. If the `mask` element is set to zero, values in the other structure elements are meaningless.
 
 ### Return Value
 
@@ -476,7 +476,7 @@ BOOL GetItemDropDownRect(
 
 |Parameter|Description|
 |---------------|-----------------|
-|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure.|
+|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure.|
 |*lpRect*|[out] Pointer to a [RECT](/previous-versions/dd162897\(v=vs.85\)) structure to receive the bounding rectangle information.|
 
 ### Return Value
@@ -603,7 +603,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 |Parameter|Description|
 |---------------|-----------------|
-|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-_hd_hittestinfo) structure that specifies the point to test and receives the results of the test.|
+|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) structure that specifies the point to test and receives the results of the test.|
 
 ### Return Value
 
@@ -641,7 +641,7 @@ int InsertItem(
 The zero-based index of the item to be inserted. If the value is zero, the item is inserted at the beginning of the header control. If the value is greater than the maximum value, the item is inserted at the end of the header control.
 
 *phdi*<br/>
-Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that contains information about the item to be inserted.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure that contains information about the item to be inserted.
 
 ### Return Value
 
@@ -662,7 +662,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 ### Parameters
 
 *pHeaderLayout*<br/>
-Pointer to an [HDLAYOUT](/windows/win32/api/commctrl/ns-commctrl-_hd_layout) structure, which contains information used to set the size and position of a header control.
+Pointer to an [HDLAYOUT](/windows/win32/api/commctrl/ns-commctrl-hdlayout) structure, which contains information used to set the size and position of a header control.
 
 ### Return Value
 
@@ -851,7 +851,7 @@ BOOL SetItem(
 The zero-based index of the item to be manipulated.
 
 *pHeaderItem*<br/>
-Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure that contains information about the new item.
+Pointer to an [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure that contains information about the new item.
 
 ### Return Value
 

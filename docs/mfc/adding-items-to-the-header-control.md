@@ -10,7 +10,7 @@ After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-c
 
 ### To add a header item
 
-1. Prepare an [HD_ITEM](/windows/win32/api/commctrl/ns-commctrl-_hd_itemw) structure.
+1. Prepare an [HD_ITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure.
 
 1. Call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), passing the structure.
 

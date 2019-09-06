@@ -62,7 +62,7 @@ You can rely on the framework to handle many aspects of the printing process for
 
 If you want your application to handle printing without the framework's involvement, you can use the `CPrintDialog` class "as is" with the constructor provided, or you can derive your own dialog class from `CPrintDialog` and write a constructor to suit your needs. In either case, these dialog boxes will behave like standard MFC dialog boxes because they are derived from class `CCommonDialog`.
 
-To use a `CPrintDialog` object, first create the object using the `CPrintDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pd](#m_pd) structure to initialize the values of the dialog box's controls. The `m_pd` structure is of type [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw). For more information on this structure, see the Windows SDK.
+To use a `CPrintDialog` object, first create the object using the `CPrintDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pd](#m_pd) structure to initialize the values of the dialog box's controls. The `m_pd` structure is of type [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga). For more information on this structure, see the Windows SDK.
 
 If you do not supply your own handles in `m_pd` for the `hDevMode` and `hDevNames` members, be sure to call the Windows function `GlobalFree` for these handles when you are done with the dialog box. When using the framework's Print Setup implementation provided by `CWinApp::OnFilePrintSetup`, you do not have to free these handles. The handles are maintained by `CWinApp` and are freed in `CWinApp`'s destructor. It is only necessary to free these handles when using `CPrintDialog` stand-alone.
 
@@ -117,7 +117,7 @@ CPrintDialog(
 Specifies whether the standard Windows Print dialog box or Print Setup dialog box is displayed. Set this parameter to TRUE to display the standard Windows Print Setup dialog box. Set it to FALSE to display the Windows Print dialog box. If *bPrintSetupOnly* is FALSE, a Print Setup option button is still displayed in the Print dialog box.
 
 *dwFlags*<br/>
-One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the PD_ALLPAGES flag sets the default print range to all pages of the document. See the [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) structure in the Windows SDK for more information on these flags.
+One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the PD_ALLPAGES flag sets the default print range to all pages of the document. See the [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga) structure in the Windows SDK for more information on these flags.
 
 *pParentWnd*<br/>
 A pointer to the dialog box's parent or owner window.
@@ -376,7 +376,7 @@ PRINTDLG& m_pd;
 
 ### Remarks
 
-After constructing a `CPrintDialog` object, you can use `m_pd` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pd` structure, see [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) in the Windows SDK.
+After constructing a `CPrintDialog` object, you can use `m_pd` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pd` structure, see [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga) in the Windows SDK.
 
 If you modify the `m_pd` data member directly, you will override any default behavior.
 

@@ -72,7 +72,7 @@ The following Win32 functions also open files and pipes:
 
 - [CreatePipe](/windows/win32/api/namedpipeapi/nf-namedpipeapi-createpipe)
 
-- [CreateNamedPipe](/windows/win32/api/winbase/nf-winbase-createnamedpipew)
+- [CreateNamedPipe](/windows/win32/api/winbase/nf-winbase-createnamedpipea)
 
 ## See also
 

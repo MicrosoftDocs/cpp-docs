@@ -43,7 +43,7 @@ Your class, derived from `IDataObjectImpl`.
 
 ## Remarks
 
-The [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) and [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) to retrieve and store data.
+The [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) and [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) to retrieve and store data.
 
 `IDataObject` also manages connections to advise sinks to handle data change notifications. In order for the client to receive data change notifications from the data object, the client must implement the [IAdviseSink](/windows/win32/api/objidl/nn-objidl-iadvisesink) interface on an object called an advise sink. When the client then calls `IDataObject::DAdvise`, a connection is established between the data object and the advise sink.
 

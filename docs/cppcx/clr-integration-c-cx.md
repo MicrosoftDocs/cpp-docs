@@ -59,7 +59,7 @@ The following lists show value structs that support new constructors and helper 
 
 ## Mapping the CLR to C++/CX
 
-When the Visual C++ or C# compilers read a .winmd file, they automatically map certain types in the metadata file to appropriate C++/CX or CLR types. For example, in the CLR, the IVector\<T> interface is mapped to IList\<T>. But in C++/CX, the IVector\<T> interface is not mapped to another type.
+When the Microsoft C++ or C# compilers read a .winmd file, they automatically map certain types in the metadata file to appropriate C++/CX or CLR types. For example, in the CLR, the IVector\<T> interface is mapped to IList\<T>. But in C++/CX, the IVector\<T> interface is not mapped to another type.
 
 IReference\<T> in the Windows Runtime maps to Nullable\<T> in .NET.
 
