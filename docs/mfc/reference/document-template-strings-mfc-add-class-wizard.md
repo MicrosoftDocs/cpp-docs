@@ -1,6 +1,6 @@
 ---
 title: "Document Template Strings, MFC Add Class Wizard"
-ms.date: "11/04/2016"
+ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.class.mfc.simple.doctemp"]
 helpviewer_keywords: ["MFC Add Class Wizard, document control strings"]
 ms.assetid: 14e1c834-5e79-4dbd-811f-ec8f0a9cdcb2

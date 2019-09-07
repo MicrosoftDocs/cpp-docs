@@ -68,7 +68,7 @@ The following illustration shows the various components in the ribbon designer.
 
 - **Designer Surface:** Contains the visual representation of the ribbon resource.
 
-- **Properties window:** Lists the attributes of the item that is selected on the designer surface.
+- **[Class Wizard](reference/mfc-class-wizard.md):** Lists the attributes of the item that is selected on the designer surface.
 
 - **Resource View window:** Displays the resources that include ribbon resources, in your project.
 

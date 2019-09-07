@@ -20,7 +20,7 @@ For example, suppose one pane has `ID_INDICATOR_PAGE` as its command identifier 
 
 1. Define a default string to display in the pane.
 
-   With Resource View open, double-click **String Table** in the window that lists resource types for your application. With the **String Table** editor open, choose **New String** from the **Insert** menu. In the String Properties window, select your pane's command ID (for example, `ID_INDICATOR_PAGE`) and type a default string value, such as "Page   ". Close the string editor. (You need a default string to avoid a compiler error.)
+   With Resource View open, double-click **String Table** in the window that lists resource types for your application. With the **String Table** editor open, choose **New String** from the **Insert** menu. In the String [Class Wizard](reference/mfc-class-wizard.md), select your pane's command ID (for example, `ID_INDICATOR_PAGE`) and type a default string value, such as "Page   ". Close the string editor. (You need a default string to avoid a compiler error.)
 
 1. Add the pane to the *indicators* array.
 

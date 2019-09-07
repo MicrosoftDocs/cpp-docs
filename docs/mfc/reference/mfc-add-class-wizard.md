@@ -1,13 +1,15 @@
 ---
 title: "MFC Add Class Wizard"
-ms.date: "11/04/2016"
+ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.class.mfc.simple.overview"]
 helpviewer_keywords: ["MFC Add Class Wizard", "wizards [MFC]"]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
 ---
 # MFC Add Class Wizard
 
-Use this code wizard to add a class to an existing MFC project, or to add a class to an ATL project that supports MFC. You can also add MFC classes to Win32 projects that have MFC support. The features you specified when you created your project determine the options available in this dialog box.
+Use this code wizard to add a class to an existing MFC project, or to add a class to an ATL project that supports MFC. You can also add MFC classes to Win32 projects that have MFC support. The features you specified when you created your project determine the options available in this dialog box. To access the wizard, click on **Add Class** in [Class Wizard](mfc-class-wizard.md).
+
+![Add MFC Class Wizard](../media/add-mfc-class-wizard.png "Add MFC Class Wizard")
 
 ## Names
 
@@ -56,25 +58,11 @@ In this page, specify the class name, the base class, and file names for the new
 
   Enables MFC's support for Active Accessibility by calling [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#enableactiveaccessibility) in the constructor. This option is available for classes derived from [CWnd](../../mfc/reference/cwnd-class.md).
 
-- **DHTML resource ID**
-
-  Applies to classes derived from `CDHtmlDialog` only. Specifies the resource ID of the DHTML dialog box. The resource ID appears in the HTML section of the project's .rc file, along with the HTML dialog box file name. The DHTML resource, identified by this ID, is hosted by the dialog box, identified by **Dialog ID**.
-
-- **.HTM file**
-
-  Applies to classes derived from `CDHtmlDialog` only. Sets the name of the HTML file for the DHTML dialog box. By default, this file name is based on the class name. The file name appears in the HTML section of the project's .rc file, along with the DHTML dialog box resource ID.
-
 - **Automation**
 
   Sets the class level of support for [Automation](../../mfc/automation.md). Automation at the class level is available for all classes that support Automation. It is also available for projects created with support for Automation. That is, either an MFC project that [supports ATL](../../atl/reference/mfc-support-in-atl-projects.md), or an MFC project for which you selected the **Automation** check box in the [Advanced Features](../../mfc/reference/advanced-features-mfc-application-wizard.md) page of the MFC Application Wizard.
 
-  |Option|Description|
-  |------------|-----------------|
-  |**None**|Indicates that the class has no Automation support.|
-  |**Automation**|Indicates that the class supports Automation. If you select this option, the newly created class is available as a programmable object by Automation client applications, such as Microsoft Visual Basic and Microsoft Excel. This option is not available for the base classes listed after this table.|
-  |**Creatable by type ID**|Indicates that both the class and project support other applications creating objects of this class using Automation. With this option, automation clients can directly create an Automation object. The type ID in the text box is used by the client application to specify the object to be created; it is systemwide and must be unique. This option is not available for the base classes listed after this table.|
-
-  Automation support is not available for the following base classes:
+   Automation support is not available for the following base classes:
 
   - `CAsyncMonitorFile`
 
@@ -97,16 +85,6 @@ In this page, specify the class name, the base class, and file names for the new
   - `CObject`
 
   - `CSocket`
-
-- **Type ID**
-
-  Sets the type ID of the class. The **Type ID** box concatenates the project name and the new class name as follows: *MFCProj.MFCClass*. This ID is changeable only if you selected the **Automation** option **Creatable by type ID**.
-
-- **Generate DocTemplate resources**
-
-  Indicates that the documents created by the application have document template resources. To activate this check box, the project must support the MFC document/view architecture, and the base class of this class must be [CFormView](../../mfc/reference/cformview-class.md).
-
-  See [Document Templates and the Document/View Creation Process](../../mfc/document-templates-and-the-document-view-creation-process.md) for more information.
 
 ## See also
 

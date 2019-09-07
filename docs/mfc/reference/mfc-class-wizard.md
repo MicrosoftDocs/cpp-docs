@@ -1,15 +1,21 @@
 ---
 title: "MFC Class Wizard"
-ms.date: "11/04/2016"
+ms.date: "09/06/2019"
 f1_keywords: ["vc.wizards.classwizard"]
-helpviewer_keywords: ["wizards (MFC)", "MFC Class Wizard"]
+helpviewer_keywords: ["MFC Class Wizard"]
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
 ---
 # MFC Class Wizard
 
-Lets you add messages and message handlers to classes in your project. You can also start other wizards or add a class to your project.
+Use the **Class Wizard** to create new MFC classes, or add messages and message handlers to existing classes in your project.
 
-To open the **MFC Class Wizard**, on the **Project** menu, click **Class Wizard**. To open the wizard with a keyboard shortcut, type CTRL+SHIFT+X.
+There are three ways to open the **Class Wizard**:
+
+- On the **Project** menu, choose **Class Wizard**.
+- Type **Ctrl** > **Shift** >> **X**.
+- In **Class View**, right click on a class and choose **Class Wizard**.
+
+![Class Wizard](../media/class-wizard.png "MFC Class Wizard")
 
 ## UIElement List
 
@@ -27,9 +33,7 @@ To open the **MFC Class Wizard**, on the **Project** menu, click **Class Wizard*
 
 - **Add Class**
 
-   Lets you add a class from one of several sources.
-
-   Depending on your selection, the **MFC Add Class Wizard**, **Add Class From Typelib Wizard**, **Add Class From ActiveX Control Wizard**, or **MFC ODBC Consumer Wizard** is started.
+   Enables you add a new class to your MFC project.
 
 - **Base class**
 

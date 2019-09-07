@@ -12,7 +12,7 @@ When you click the Application button, a menu of commands is displayed. Typicall
 
 To customize the Application button, open it in the **Properties** window, modify its properties, and then preview the ribbon control.
 
-### To open the Application button in the Properties window
+### To open the Application button in the [Class Wizard](reference/mfc-class-wizard.md)
 
 1. In Visual Studio, on the **View** menu, click **Resource View**.
 

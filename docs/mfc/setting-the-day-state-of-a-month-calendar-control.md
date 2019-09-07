@@ -27,7 +27,7 @@ To properly handle this message, you must determine how many months day state in
 
 #### To handle the MCN_GETDAYSTATE notification message
 
-1. Using the Properties window, add a notification handler for the MCN_GETDAYSTATE message to the *m_monthcal* object (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
+1. Using the [Class Wizard](reference/mfc-class-wizard.md), add a notification handler for the MCN_GETDAYSTATE message to the *m_monthcal* object (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
 
 1. In the body of the handler, add the following code:
 

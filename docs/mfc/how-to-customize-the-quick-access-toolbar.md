@@ -12,7 +12,7 @@ The Quick Access Toolbar (QAT) is a customizable toolbar that contains a set of 
 
 To customize the Quick Access Toolbar, open it in the **Properties** window, modify its commands, and then preview the ribbon control.
 
-### To open the Quick Access Toolbar in the Properties window
+### To open the Quick Access Toolbar in the [Class Wizard](reference/mfc-class-wizard.md)
 
 1. In Visual Studio, on the **View** menu, click **Resource View**.
 
