@@ -1,6 +1,6 @@
 ---
 title: "Linker Tools Error LNK1104"
-ms.date: "05/17/2017"
+ms.date: "09/06/2019"
 f1_keywords: ["LNK1104"]
 helpviewer_keywords: ["LNK1104"]
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
@@ -9,21 +9,23 @@ ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
 
 > cannot open file '*filename*'
 
-The linker could not open the specified file. The most common causes of this problem are that the file is in use or locked by another process, does not exist, can't be found in one of the directories the linker searches, or you may not have sufficient permission to access the file. Less commonly, you may have run out of disk space, the file may be too large, or the path to the file may be too long.
+The linker couldn't open the specified file. The most common causes of this problem are that the file is in use or locked by another process. It's also possible the file doesn't exist, or can't be found in one of the directories the linker searches. Or, you may not have sufficient permission to access the file. Less commonly, you may have run out of disk space, the file may be too large, or the path to the file may be too long.
 
 ## Possible causes and solutions
 
-This error can occur when the linker attempts to open a file either for reading or for writing. To narrow down the possible causes, first check what kind of file it is, and use the following sections to help identify and fix the specific issue.
+This error can occur when the linker attempts to open a file either for reading or for writing. To narrow down the possible causes, first check what kind of file it is. Then, use the following sections to help identify and fix the specific issue.
 
-### Cannot open your app or its .pdb file
+### Can't open your app or its .pdb file
 
-If the filename is the executable your project builds, or an associated .pdb file, the most common cause is that your application is already running when you try to rebuild it, or it is loaded in a debugger. To fix this issue, stop the program and unload it from the debugger before building it again. If the app is open in another program, such as a resource editor, close it. In extreme cases, you may need to use Task Manager to terminate the process, or stop and restart Visual Studio.
+If the filename is the executable your project builds, or an associated .pdb file, the most common cause is that your application is already running when you try to rebuild it, or it's loaded in a debugger. To fix this issue, stop the program and unload it from the debugger before building it again. If the app is open in another program, such as a resource editor, close it. In extreme cases, you may need to use Task Manager to terminate the process, or stop and restart Visual Studio.
 
 Antivirus programs often temporarily block access to newly created files, especially .exe and .dll executable files. To fix this issue, try excluding your project build directories from the antivirus scanner.
 
-### Cannot open a Microsoft Library file
+### Can't open a Microsoft Library file
 
 If the file that can't be opened is one of the standard library files provided by Microsoft, such as kernel32.lib, you may have a project configuration error or an installation error. Verify that the Windows SDK has been installed, and if your project requires other Microsoft libraries such as MFC, make sure that the MFC components were also installed by the Visual Studio installer. You can run the installer again to add optional components at any time. For more information, see [Modify Visual Studio](/visualstudio/install/modify-visual-studio). Use the Individual components tab in the installer to choose specific libraries and SDKs.
+
+There are no Spectre-mitigated libraries for Universal Windows (UWP) apps or components. If the error report mentions the *vccorlib.lib* file, you may have enabled [/Qspectre](../../build/reference/qspectre.md) in a UWP project. Disable the **/Qspectre** compiler option to fix this issue. In Visual Studio, change the **Spectre Mitigation** property, found in the **C/C++** > **Code Generation** page of the project **Property Pages** dialog.
 
 If you're building a project that was created using an older version of Visual Studio, the platform toolset and libraries for that version may not be installed. If the error message occurs for a versioned library name, such as msvcr100.lib, this is probably the cause. To fix this issue, you have two options: you can upgrade the project to use the current platform toolset you have installed, or you can install the older toolset and build the project unchanged. For more information, see [Upgrading Projects from Earlier Versions of Visual C++](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) and [Use native multi-targeting in Visual Studio to build old projects](../../porting/use-native-multi-targeting.md).
 
