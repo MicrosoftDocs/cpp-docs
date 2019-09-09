@@ -187,6 +187,7 @@ A ribbon consists of the **Application** button, which is the large button on th
 
 1. The following modification creates an exit button that appears at the bottom of the **Application** button menu.
 
+   1. Choose the **Resource View** tab in **Solution Explorer**.
    1. In the **Properties** window, click the ellipsis (**...**) next to **Button** to open the **Items Editor**.
 
    1. With the **Item** type **Button** selected, click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.

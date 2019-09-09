@@ -1,4 +1,4 @@
----
+q---
 title: "ActiveX Control Containers: Viewing and Modifying Control Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["properties [MFC], viewing and modifying", "ActiveX control containers [MFC], viewing and modifying properties", "resource editors, viewing and modifying ActiveX controls", "ActiveX controls [MFC], properties", "controls [MFC], properties"]

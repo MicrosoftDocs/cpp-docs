@@ -10,9 +10,9 @@ When you click the Application button, a menu of commands is displayed. Typicall
 
 ![MFC Ribbon Application Button](../mfc/media/application_button.png "MFC Ribbon Application Button")
 
-To customize the Application button, open it in the [Class Wizard](reference/mfc-class-wizard.md), modify its properties, and then preview the ribbon control.
+To customize the Application button, open it in the **Properties** window (in **Resource View**), modify its properties, and then preview the ribbon control.
 
-### To open the Application button in the [Class Wizard](reference/mfc-class-wizard.md)
+### To open the Application button in the Properties window
 
 1. In Visual Studio, on the **View** menu, click **Resource View**.
 

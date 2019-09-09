@@ -6,7 +6,7 @@ ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
 ---
 # ActiveX Control Containers: Handling Events from an ActiveX Control
 
-This article discusses using the **Properties** window to install event handlers for ActiveX controls in an ActiveX control container. The event handlers are used to receive notifications (from the control) of certain events and perform some action in response. This notification is called "firing" the event.
+This article discusses using the **Properties** window (in **Class View**) to install event handlers for ActiveX controls in an ActiveX control container. The event handlers are used to receive notifications (from the control) of certain events and perform some action in response. This notification is called "firing" the event.
 
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supersede ActiveX, see [ActiveX Controls](activex-controls.md).
@@ -14,7 +14,7 @@ This article discusses using the **Properties** window to install event handlers
 > [!NOTE]
 >  This article uses a dialog-based ActiveX control container project named Container and an embedded control named Circ as examples in the procedures and code.
 
-Using the Events button in the **Properties** window, you can create a map of events that can occur in your ActiveX control container application. This map, called an "event sink map,'' is created and maintained by Visual C++ when you add event handlers to the control container class. Each event handler, implemented with an event map entry, maps a specific event to a container event handler member function. This event handler function is called when the specified event is fired by the ActiveX control object.
+Using the Events button in the **Properties** window (in **Class View**), you can create a map of events that can occur in your ActiveX control container application. This map, called an "event sink map,'' is created and maintained by Visual C++ when you add event handlers to the control container class. Each event handler, implemented with an event map entry, maps a specific event to a container event handler member function. This event handler function is called when the specified event is fired by the ActiveX control object.
 
 For more information on event sink maps, see [Event Sink Maps](../mfc/reference/event-sink-maps.md) in the *Class Library Reference*.
 

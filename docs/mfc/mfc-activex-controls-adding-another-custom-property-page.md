@@ -31,7 +31,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 1. Click **New** to add the resource to your project.
 
-1. Select the new property page template to refresh the [Class Wizard](reference/mfc-class-wizard.md).
+1. Select the new property page template to refresh the **Properties** window (in **Resource View**).
 
 1. Enter a new value for the **ID** property. This example uses **IDD_PROPPAGE_NEWPAGE**.
 

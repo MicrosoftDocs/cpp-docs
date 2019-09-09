@@ -64,11 +64,9 @@ Now that you have added the ClickIn custom event using the Add Event Wizard, you
 
 1. In **Class View**, select your ActiveX control class.
 
-1. In [Class Wizard](reference/mfc-class-wizard.md), click the **Messages** tab.
+1. In the **Properties** window, you see a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
 
-   The [Class Wizard](reference/mfc-class-wizard.md) displays a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
-
-1. From the [Class Wizard](reference/mfc-class-wizard.md), select the message you want to handle. For this example, select `WM_LBUTTONDOWN`.
+1. Select the message you want to handle. For this example, select `WM_LBUTTONDOWN`.
 
 1. From the drop-down list box on the right, select **\<Add> OnLButtonDown**.
 

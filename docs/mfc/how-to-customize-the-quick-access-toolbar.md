@@ -10,9 +10,9 @@ The Quick Access Toolbar (QAT) is a customizable toolbar that contains a set of 
 
 ![MFC Ribbon Quick Access Toolbar](../mfc/media/quick_access_toolbar.png "MFC Ribbon Quick Access Toolbar")
 
-To customize the Quick Access Toolbar, open it in the [Class Wizard](reference/mfc-class-wizard.md), modify its commands, and then preview the ribbon control.
+To customize the Quick Access Toolbar, open it in the **Properties** window, modify its commands, and then preview the ribbon control.
 
-### To open the Quick Access Toolbar in the [Class Wizard](reference/mfc-class-wizard.md)
+### To open the Quick Access Toolbar in the Properties window
 
 1. In Visual Studio, on the **View** menu, click **Resource View**.
 
@@ -31,7 +31,7 @@ The following table defines the properties of the Quick Access Toolbar.
 
 #### To add or remove commands on the Quick Access Toolbar
 
-1. In the [Class Wizard](reference/mfc-class-wizard.md), click **QAT Items**, and then click the ellipsis button **(...)**.
+1. In the **Properties** window, click **QAT Items**, and then click the ellipsis button **(...)**.
 
 1. In the **QAT Items Editor** dialog box, use the **Add** and **Remove** buttons to modify the list of commands on the Quick Access Toolbar.
 
