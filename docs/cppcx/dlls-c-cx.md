@@ -17,7 +17,7 @@ For more information, see [Creating Windows Runtime Components in C++](/windows/
 
 1. Open the shortcut menu for the project that will use the DLL and then choose **Properties**. On the **Common Properties** page, choose the **Add New Reference** button.
 
-1. A Windows Runtime component consists of a DLL file and a .winmd file that contains the metadata. Typically, these files are located in the same folder. In the left pane of the **Add Reference** dialog box, choose the **Browse** button and then navigate to the location of the DLL and its .winmd file. For more information, see [Extension SDKs](/visualstudio/extensibility/creating-a-software-development-kit#ExtensionSDKs).
+1. A Windows Runtime component consists of a DLL file and a .winmd file that contains the metadata. Typically, these files are located in the same folder. In the left pane of the **Add Reference** dialog box, choose the **Browse** button and then navigate to the location of the DLL and its .winmd file. For more information, see [Extension SDKs](/visualstudio/extensibility/creating-a-software-development-kit#extension-sdks).
 
 ## Standard DLLs
 

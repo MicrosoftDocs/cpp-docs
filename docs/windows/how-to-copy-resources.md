@@ -44,7 +44,7 @@ You can't drag and drop, copy, cut, or paste between resource files in the proje
 
 While copying in a resource, you can change its language property or condition property, or both.
 
-- The language of a resource specifies the language used by [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) to help identify the resource for which you're looking. Resources can have differences for each language that aren't related to text, for example, accelerators that might only work on a Japanese keyboard or a bitmap that would only be appropriate for Chinese localized builds.
+- The language of a resource specifies the language used by [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea) to help identify the resource for which you're looking. Resources can have differences for each language that aren't related to text, for example, accelerators that might only work on a Japanese keyboard or a bitmap that would only be appropriate for Chinese localized builds.
 
 - The condition of a resource is a defined symbol that identifies a condition under which this particular copy of the resource is to be used.
 

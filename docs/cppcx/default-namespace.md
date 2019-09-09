@@ -46,4 +46,4 @@ All built-in types inherit the following members.
 
 ## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

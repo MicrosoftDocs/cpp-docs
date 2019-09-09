@@ -171,7 +171,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 *lpszName*<br/>
 A pointer to a string containing the resource ID.
 *lpszType*<br/>
-A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew) in the Windows SDK.
+A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea) in the Windows SDK.
 
 ### Return Value
 

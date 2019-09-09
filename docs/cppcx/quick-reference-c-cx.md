@@ -42,4 +42,4 @@ When you build on the command line, use the **/ZW** compiler option to build a U
 
 ## See also
 
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

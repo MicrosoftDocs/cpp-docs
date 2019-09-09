@@ -46,14 +46,14 @@ class COleVariant : public tagVARIANT
 
 ## Remarks
 
-This data type is used in OLE automation. Specifically, the [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-tagdispparams) structure contains a pointer to an array of VARIANT structures. A `DISPPARAMS` structure is used to pass parameters to [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
+This data type is used in OLE automation. Specifically, the [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-dispparams) structure contains a pointer to an array of VARIANT structures. A `DISPPARAMS` structure is used to pass parameters to [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
 > [!NOTE]
 > This class is derived from the `VARIANT` structure. This means you can pass a `COleVariant` in a parameter that calls for a `VARIANT` and that the data members of the `VARIANT` structure are accessible data members of `COleVariant`.
 
 The two related MFC classes [COleCurrency](../../mfc/reference/colecurrency-class.md) and [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) encapsulate the variant data types CURRENCY ( `VT_CY`) and DATE ( `VT_DATE`). The `COleVariant` class is used extensively in the DAO classes; see these classes for typical usage of this class, for example [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) and [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).
 
-For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy), [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-tagdispparams), and [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) entries in the Windows SDK.
+For more information, see the [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant), [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1), [DISPPARAMS](/windows/win32/api/oaidl/ns-oaidl-dispparams), and [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) entries in the Windows SDK.
 
 For more information on the `COleVariant` class and its use in OLE automation, see "Passing Parameters in OLE Automation" in the article [Automation](../../mfc/automation.md).
 
