@@ -1,6 +1,6 @@
 ---
 title: "Example: Displaying a Dialog Box via a Menu Command"
-ms.date: "11/04/2016"
+ms.date: "09/07/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
 ---
@@ -31,7 +31,7 @@ The procedures use the following names and values:
 
 1. Add a class for your dialog box. See [Adding a Class](../ide/adding-a-class-visual-cpp.md) for more information.
 
-1. In **Class View**, select the document class (CDisplayDialogDoc). In the **Properties** window, click the **Events** button. Double-click the ID of the menu command (ID_VIEW_TEST) in the left pane of the **Properties** window and select **Command**. In the right pane, click the down arrow and select **\<Add> OnViewTest**.
+1. In **Class View**, select the document class (CDisplayDialogDoc). In the [Class Wizard](reference/mfc-class-wizard.md), click the **Events** button. Double-click the ID of the menu command (ID_VIEW_TEST) in the left pane of the [Class Wizard](reference/mfc-class-wizard.md) and select **Command**. In the right pane, click the down arrow and select **\<Add> OnViewTest**.
 
    If you added the menu command to the mainframe of an MDI application, select the application class (CDisplayDialogApp) instead.
 

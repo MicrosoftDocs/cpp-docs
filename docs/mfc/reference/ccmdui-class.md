@@ -41,7 +41,7 @@ class CCmdUI
 
 `CCmdUI` does not have a base class.
 
-When a user of your application pulls down a menu, each menu item needs to know whether it should be displayed as enabled or disabled. The target of a menu command provides this information by implementing an ON_UPDATE_COMMAND_UI handler. For each of the command user-interface objects in your application, use the [Class Wizard](mfc-class-wizard.md) to create a message-map entry and function prototype for each handler.
+When a user of your application pulls down a menu, each menu item needs to know whether it should be displayed as enabled or disabled. The target of a menu command provides this information by implementing an ON_UPDATE_COMMAND_UI handler. For each of the command user-interface objects in your application, use the [Class Wizard](mfc-class-wizard.md) or Properties window in Class View to create a message-map entry and function prototype for each handler.
 
 When the menu is pulled down, the framework searches for and calls each ON_UPDATE_COMMAND_UI handler, each handler calls `CCmdUI` member functions such as `Enable` and `Check`, and the framework then appropriately displays each menu item.
 

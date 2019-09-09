@@ -31,7 +31,7 @@ In this page, specify the class name, the base class, and file names for the new
 
   - The class [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md), which requires a dialog ID, a DHTML resource ID, and an HTML file name.
 
-  For classes requiring a dialog ID, you might find it more efficient to use the [Resource editor](../../windows/resource-editors.md) to create the dialog resource, assign its ID in the [Properties window](/visualstudio/ide/reference/properties-window), and then create a class associated with that resource ID. See [Creating a New Dialog Box](../../windows/creating-a-new-dialog-box.md) for more information on creating a standard Windows dialog box.
+  For classes requiring a dialog ID, you might find it more efficient to use the [Resource editor](../../windows/resource-editors.md) to create the dialog resource, assign its ID in the [Class Wizard](mfc-class-wizard.md), and then create a class associated with that resource ID. See [Creating a New Dialog Box](../../windows/creating-a-new-dialog-box.md) for more information on creating a standard Windows dialog box.
 
   > [!NOTE]
   > If you create a dialog resource first and derive its new class from `CDHtmlDialog`, delete the standard Windows **OK** and **Cancel** buttons that appear on the default dialog box. The standard Windows dialog box hosts the DHTML form, which contains its own **OK** and **Cancel** buttons.

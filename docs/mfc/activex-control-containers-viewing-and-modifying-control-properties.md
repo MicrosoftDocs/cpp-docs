@@ -24,7 +24,7 @@ The first step in viewing the control's properties is to add an instance of the 
 
 1. Select the ActiveX control in the dialog box.
 
-1. From the [Class Wizard](reference/mfc-class-wizard.md), click the **Properties** button.
+1. From the **Properties** window, click the **Properties** button.
 
 Use the **Properties** dialog box to modify and test new properties immediately.
 

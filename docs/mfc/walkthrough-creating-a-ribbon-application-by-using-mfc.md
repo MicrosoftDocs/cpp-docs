@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Creating a Ribbon Application By Using MFC"
-ms.date: "04/25/2019"
+ms.date: "09/09/2019"
 helpviewer_keywords: ["ribbon application, creating (MFC)", "creating a ribbon aplication (MFC)"]
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
 ---
@@ -44,14 +44,14 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
     A category that has the caption **Category1** is created. By default, the category contains one panel.
 
-    Right-click **Category1** and then click **Properties**. In the **Properties** window, change **Caption** to *Custom*.
+    Right-click **Category1** and then click **Properties**. In [Class Wizard](reference/mfc-class-wizard.md), change **Caption** to *Custom*.
 
     The **Large Images** and **Small Images** properties specify the bitmaps that are used as icons for the ribbon elements in this category. Because creating custom bitmaps is beyond the scope of this walkthrough, just reuse the bitmaps that were created by the wizard. Small bitmaps are 16 pixels by 16 pixels. For small images, use the bitmaps that are accessed by the `IDB_FILESMALL` resource ID. Large bitmaps are 32 pixels by 32 pixels. For large images, use the bitmaps that are accessed by the `IDB_FILELARGE` resource ID.
 
     > [!NOTE]
     > On high dots per inch (HDPI) displays, the HDPI versions of the images are automatically used.
 
-1. Next, customize the panel. Panels are used to group items that are logically related to one another. For example, on the **Home** tab of this application, the **Cut**, **Copy**, and **Paste** commands are all located on the **Clipboard** panel. To customize the panel, right-click **Panel1** and then click **Properties**. In the **Properties** window, change **Caption** to *Favorites*.
+1. Next, customize the panel. Panels are used to group items that are logically related to one another. For example, on the **Home** tab of this application, the **Cut**, **Copy**, and **Paste** commands are all located on the **Clipboard** panel. To customize the panel, right-click **Panel1** and then click **Properties**. In [Class Wizard](reference/mfc-class-wizard.md), change **Caption** to *Favorites*.
 
     You can specify the **Image Index** for the panel. This number specifies the icon that is displayed if the ribbon panel is added to the **Quick Access Toolbar**. The icon isn't displayed on the ribbon panel itself.
 
@@ -65,9 +65,9 @@ This walkthrough assumes that you have set Visual Studio to use **General Develo
 
     To create the **Print** button, drag a Button tool to the panel.
 
-    In the **Properties** window, change the **ID** property to **ID_FILE_PRINT**, which should already be defined. Change **Caption** to *Print*. Change **Image Index** to *4*.
+    In [Class Wizard](reference/mfc-class-wizard.md), change the **ID** property to **ID_FILE_PRINT**, which should already be defined. Change **Caption** to *Print*. Change **Image Index** to *4*.
 
-    To create the **Quick Print** button, click the property value column next to **Menu Items**, and then click the ellipsis (**...**). In the **Items Editor**, click the unlabeled **Add** button to create a menu item. In the **Properties** window, change **Caption** to *Quick Print*, **ID** to *ID_FILE_PRINT_DIRECT*, and **Image** to *5*. The image property specifies the **Quick Print** icon in the `IDB_FILESMALL` bitmap resource.
+    To create the **Quick Print** button, click the property value column next to **Menu Items**, and then click the ellipsis (**...**). In the **Items Editor**, click the unlabeled **Add** button to create a menu item. In the [Class Wizard](reference/mfc-class-wizard.md), change **Caption** to *Quick Print*, **ID** to *ID_FILE_PRINT_DIRECT*, and **Image** to *5*. The image property specifies the **Quick Print** icon in the `IDB_FILESMALL` bitmap resource.
 
 1. To verify that the buttons were added to the ribbon panel, build the application and run it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu. The **Print** button and the combo box on the **Favorites** panel on the **Custom** tab on the ribbon should be displayed.
 
