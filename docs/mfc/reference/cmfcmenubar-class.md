@@ -929,7 +929,7 @@ static BOOL SetMenuFont(
 ### Parameters
 
 *lpLogFont*<br/>
-[in] A pointer to a [LOGFONT](/windows/win32/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) structure that defines the font to set.
+[in] A pointer to a [LOGFONT](/windows/win32/api/dimm/ns-dimm-logfonta) structure that defines the font to set.
 
 *bHorz*<br/>
 [in] TRUE if you want the *lpLogFont* parameter to be used for the vertical font, FALSE if you want it to be used for horizontal font.

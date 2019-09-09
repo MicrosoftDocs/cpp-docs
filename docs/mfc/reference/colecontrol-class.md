@@ -2842,7 +2842,7 @@ virtual BOOL OnRenderData(
 Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -2965,7 +2965,7 @@ virtual BOOL OnSetData(
 Pointer to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-stgmedium) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data resides.
 
 *bRelease*<br/>
 TRUE if the control should free the storage medium; FALSE if the control should not free the storage medium.

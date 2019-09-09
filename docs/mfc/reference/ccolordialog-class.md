@@ -50,7 +50,7 @@ A `CColorDialog` object is a dialog box with a list of colors that are defined f
 
 To construct a `CColorDialog` object, use the provided constructor or derive a new class and use your own custom constructor.
 
-Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolorw).
+Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1).
 
 After initializing the dialog box's controls, call the `DoModal` member function to display the dialog box and allow the user to select a color. `DoModal` returns the user's selection of either the dialog box's OK (IDOK) or Cancel (IDCANCEL) button.
 
@@ -104,7 +104,7 @@ CColorDialog(
 The default color selection. If no value is specified, the default is RGB(0,0,0) (black).
 
 *dwFlags*<br/>
-A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolorw) structure in the Windows SDK.
+A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1) structure in the Windows SDK.
 
 *pParentWnd*<br/>
 A pointer to the dialog box's parent or owner window.
@@ -177,7 +177,7 @@ Each of the 16 RGB values in the returned array is initialized to RGB(255,255,25
 
 ##  <a name="m_cc"></a>  CColorDialog::m_cc
 
-A structure of type [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolorw), whose members store the characteristics and values of the dialog box.
+A structure of type [CHOOSECOLOR](/windows/win32/api/commdlg/ns-commdlg-choosecolora~r1), whose members store the characteristics and values of the dialog box.
 
 ```
 CHOOSECOLOR m_cc;

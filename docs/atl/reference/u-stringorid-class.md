@@ -34,7 +34,7 @@ class _U_STRINGorID
 
 ## Remarks
 
-This class is designed for implementing wrappers to the Windows resource management API such as the [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcew), [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw), and [LoadMenu](/windows/win32/api/winuser/nf-winuser-loadmenuw) functions, which accept an LPCTSTR argument that may be either the name of a resource or its ID.
+This class is designed for implementing wrappers to the Windows resource management API such as the [FindResource](/windows/win32/api/winbase/nf-winbase-findresourcea), [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw), and [LoadMenu](/windows/win32/api/winuser/nf-winuser-loadmenuw) functions, which accept an LPCTSTR argument that may be either the name of a resource or its ID.
 
 The class defines two constructor overloads: one accepts a LPCTSTR argument and the other accepts a UINT argument. The UINT argument is converted to a resource type compatible with Windows resource-management functions using the MAKEINTRESOURCE macro and the result stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr). The argument to the LPCTSTR constructor is stored directly without conversion.
 

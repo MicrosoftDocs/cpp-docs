@@ -83,7 +83,7 @@ ref class MyOptions
 
 Notice that `Agile` cannot be passed as a return value or parameter in a ref class. The `Agile<T>::Get()` method returns a handle-to-object (^) that you can pass across the application binary interface (ABI) in a public method or property.
 
-In Visual C++, when you create a reference to an in-proc Windows Runtime class that has a marshaling behavior of "None", the compiler issues warning C4451 but doesn't suggest that you consider using `Platform::Agile<T>`.  The compiler can't offer any help beyond this warning, so it's your responsibility to use the class correctly and ensure that your code calls STA components only from the user-interface thread, and MTA components only from a background thread.
+When you create a reference to an in-proc Windows Runtime class that has a marshaling behavior of "None", the compiler issues warning C4451 but doesn't suggest that you consider using `Platform::Agile<T>`.  The compiler can't offer any help beyond this warning, so it's your responsibility to use the class correctly and ensure that your code calls STA components only from the user-interface thread, and MTA components only from a background thread.
 
 ## Authoring agile Windows Runtime components
 

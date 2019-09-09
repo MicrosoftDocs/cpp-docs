@@ -273,7 +273,7 @@ After constructing a `CPageSetupDialog` object, you can use `m_psd` to set vario
 
 If you modify the `m_psd` data member directly, you will override any default behavior.
 
-For more information on the [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-psdw) structure, see the Windows SDK.
+For more information on the [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlgw) structure, see the Windows SDK.
 
 See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).
 
@@ -361,7 +361,7 @@ Indicates the orientation of the paper or envelope, and whether the printer is a
 - 0x01f   Envelope in portrait mode (dot matrix)
 
 *pPSD*<br/>
-Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-psdw), see the Windows SDK.
+Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](/windows/win32/api/commdlg/ns-commdlg-pagesetupdlgw), see the Windows SDK.
 
 ### Return Value
 

@@ -656,7 +656,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### Parameters
 
 *pPrintDlg*<br/>
-A pointer to a [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-pdw) structure.
+A pointer to a [PRINTDLG](/windows/win32/api/commdlg/ns-commdlg-printdlga) structure.
 
 ### Return Value
 
@@ -1599,7 +1599,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### Parameters
 
 *pMsg*<br/>
-A pointer to a [MSG](/windows/win32/api/winuser/ns-winuser-tagmsg) structure that contains the message to process.
+A pointer to a [MSG](/windows/win32/api/winuser/ns-winuser-msg) structure that contains the message to process.
 
 ### Return Value
 
