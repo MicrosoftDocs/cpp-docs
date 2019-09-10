@@ -6,7 +6,7 @@ ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
 ---
 # Handlers for Commands and Control Notifications
 
-There are no default handlers for commands or control-notification messages. Therefore, you are bound only by convention in naming your handlers for these categories of messages. When you map the command or control notification to a handler, the [Class Wizard](reference/mfc-class-wizard.md)s proposes a name based on the command ID or control-notification code. You can accept the proposed name, change it, or replace it.
+There are no default handlers for commands or control-notification messages. Therefore, you are bound only by convention in naming your handlers for these categories of messages. When you map the command or control notification to a handler, the [Class Wizard](reference/mfc-class-wizard.md) proposes a name based on the command ID or control-notification code. You can accept the proposed name, change it, or replace it.
 
 Convention suggests that you name handlers in both categories for the user-interface object they represent. Thus a handler for the Cut command on the Edit menu might be named
 

@@ -14,7 +14,7 @@ To add classes derived from Microsoft Foundation Class (MFC) library classes to 
 
 ### To add an MFC class to your project
 
-1. From Class View, right-click the project name. Click **Class Wizard** and then click **Add Class** to open the [Add MFC Class](mfc-add-class-wizard.md) dialog box. Use **Class Wizard** to add message handlers or new methods.
+From Class View, right-click the project name. Click **Class Wizard** and then click **Add Class** to open the [Add MFC Class](mfc-add-class-wizard.md) dialog box. Use **Class Wizard** to add message handlers or new methods.
 
 ## See also
 

@@ -12,8 +12,8 @@ Use the **Class Wizard** to create new MFC classes, or add messages and message 
 There are three ways to open the **Class Wizard**:
 
 - On the **Project** menu, choose **Class Wizard**.
-- Type **Ctrl** > **Shift** >> **X**.
-- In **Class View**, right click on a class and choose **Class Wizard**.
+- Type **Ctrl** > **Shift** > **X**.
+- In **Class View**, right click on a class or the project node and choose **Class Wizard**.
 
 ![Class Wizard](media/class-wizard.png "MFC Class Wizard")
 

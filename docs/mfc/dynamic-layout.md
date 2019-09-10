@@ -79,7 +79,7 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 1. Repeat for each control that needs to be moved or resized.
 
-1. If necessary, can use the [CMFCDynamicLayout::HasItem](../mfc/reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dyamic layout changes, or the [CMFCDynamicLayout::IsEmpty](../mfc/reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
+1. If necessary, can use the [CMFCDynamicLayout::HasItem](../mfc/reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dynamic layout changes, or the [CMFCDynamicLayout::IsEmpty](../mfc/reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
 
 1. To enable dialog layout, call the [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) method.
 
