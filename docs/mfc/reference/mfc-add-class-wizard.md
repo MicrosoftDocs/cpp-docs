@@ -9,7 +9,7 @@ ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
 
 Use this code wizard to add a class to an existing MFC project, or to add a class to an ATL project that supports MFC. You can also add MFC classes to Win32 projects that have MFC support. The features you specified when you created your project determine the options available in this dialog box. To access the wizard, click on **Add Class** in [Class Wizard](mfc-class-wizard.md).
 
-![Add MFC Class Wizard](../media/add-mfc-class-wizard.png "Add MFC Class Wizard")
+![Add MFC Class Wizard](media/add-mfc-class-wizard.png "Add MFC Class Wizard")
 
 ## Names
 
