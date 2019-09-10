@@ -2883,8 +2883,6 @@
           items: 
             - name: MFC Add class wizard
               href: reference/mfc-add-class-wizard.md
-            - name: Document template strings, MFC Add class wizard
-              href: reference/document-template-strings-mfc-add-class-wizard.md
     - name: Adding an MFC class from a type library
       expanded: false
       items: 
