@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
-ms.date: "04/25/2019"
+ms.date: "09/09/2019"
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
 ---
@@ -187,6 +187,7 @@ A ribbon consists of the **Application** button, which is the large button on th
 
 1. The following modification creates an exit button that appears at the bottom of the **Application** button menu.
 
+   1. Choose the **Resource View** tab in **Solution Explorer**.
    1. In the **Properties** window, click the ellipsis (**...**) next to **Button** to open the **Items Editor**.
 
    1. With the **Item** type **Button** selected, click **Add** to add a button. Change **Caption** to `E&xit`, **ID** to `ID_APP_EXIT`, **Image** to `8`.

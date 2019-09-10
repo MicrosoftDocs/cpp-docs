@@ -8,7 +8,7 @@ ms.assetid: bf59fbc8-b222-42d3-b5d3-0a79aa3cb923
 
 When you create a new skeleton application with the Application Wizard, the Application Wizard writes a message map for each command-target class it creates for you. This includes your derived application, document, view, and frame-window classes. Some of these message maps already have the entries supplied by the Application Wizard for certain messages and predefined commands, and some are just placeholders for handlers that you will add.
 
-A class's message map is located in the .CPP file for the class. Working with the basic message maps that the Application Wizard creates, you use the Properties window to add entries for the messages and commands that each class will handle. A typical message map might look like the following after you add some entries:
+A class's message map is located in the .CPP file for the class. Working with the basic message maps that the Application Wizard creates, you use the [Class Wizard](reference/mfc-class-wizard.md) to add entries for the messages and commands that each class will handle. A typical message map might look like the following after you add some entries:
 
 [!code-cpp[NVC_MFCMessageHandling#1](../mfc/codesnippet/cpp/where-to-find-message-maps_1.cpp)]
 

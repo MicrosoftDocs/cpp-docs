@@ -123,7 +123,7 @@ The wizard automatically creates an application that has a standard menu bar, a 
 
 1. Now we update the `CMFCShellControlsView` class to handle the `WM_CREATE` windows message. Open the **Class View** window and select the `CMFCShellControlsView` class. Right-click and select **Properties**.
 
-   Next, in the **Properties** window, click the **Messages** icon. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
+   Next, in [Class Wizard](reference/mfc-class-wizard.md), click the **Messages** tab. Scroll down until you find the `WM_CREATE` message. From the drop-down list next to `WM_CREATE`, select **\<Add> OnCreate**. The command creates a message handler for us and automatically updates the MFC message map.
 
    In the `OnCreate` method, we'll now create our `CMFCShellListCtrl` object. Find the `OnCreate` method definition in the MFCShellControlsView.cpp source file, and replace its implementation with the following code:
 

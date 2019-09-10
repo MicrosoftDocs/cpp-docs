@@ -16,7 +16,7 @@ How the extended combo box control is created depends on whether you are using t
 
 1. Use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md) to add a member variable of type [CComboBoxEx](../mfc/reference/ccomboboxex-class.md) with the Control property. You can use this member to call `CComboBoxEx` member functions.
 
-1. Use the Properties window to map handler functions in the dialog class for any extended combo box control notification messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
+1. Use the [Class Wizard](reference/mfc-class-wizard.md) to map handler functions in the dialog class for any extended combo box control notification messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
 
 1. In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set any additional styles for the `CComboBoxEx` object.
 
