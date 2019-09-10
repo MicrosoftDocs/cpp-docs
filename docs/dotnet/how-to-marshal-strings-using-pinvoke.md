@@ -15,7 +15,7 @@ As with functions that use only intrinsic data types, <xref:System.Runtime.Inter
 
 The marshaler wraps the call to the unmanaged function in a hidden wrapper routine that pins and copies the managed string into a locally allocated string in the unmanaged context, which then is passed to the unmanaged function. When the unmanaged function returns, the wrapper either deletes the resource, or if it was on the stack, it is reclaimed when the wrapper goes out of scope. The unmanaged function is not responsible for this memory. The unmanaged code only creates and deletes memory in the heap set up by its own CRT, so there is never an issue with the marshaller using a different CRT version.
 
-If your unmanaged function returns a string, either as a return value or an out parameter, the marshaler copies the memory into a new managed string, and then releases it. For more information, see [Default Marshaling Behavior](/dotnet/framework/interop/default-marshaling-behavior) and [Marshaling Data with Platform Invoke](/dotnet/framework/interop/marshaling-data-with-platform-invoke).
+If your unmanaged function returns a string, either as a return value or an out parameter, the marshaler copies it into a new managed string, and then releases the memory. For more information, see [Default Marshaling Behavior](/dotnet/framework/interop/default-marshaling-behavior) and [Marshaling Data with Platform Invoke](/dotnet/framework/interop/marshaling-data-with-platform-invoke).
 
 ## Example
 
