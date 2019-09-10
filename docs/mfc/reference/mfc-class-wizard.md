@@ -15,7 +15,7 @@ There are three ways to open the **Class Wizard**:
 - Type **Ctrl** > **Shift** >> **X**.
 - In **Class View**, right click on a class and choose **Class Wizard**.
 
-![Class Wizard](../media/class-wizard.png "MFC Class Wizard")
+![Class Wizard](media/mfc-class-wizard.png "MFC Class Wizard")
 
 ## UIElement List
 
