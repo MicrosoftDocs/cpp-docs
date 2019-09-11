@@ -1,6 +1,6 @@
 ---
 title: "_set_abort_behavior"
-ms.date: "1/02/2018"
+ms.date: "01/02/2018"
 apiname: ["_set_abort_behavior"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 apitype: "DLLExport"

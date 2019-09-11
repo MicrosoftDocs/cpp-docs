@@ -1,6 +1,6 @@
 ---
 title: "/Zc:ternary (Enforce conditional operator rules)"
-ms.date: "3/06/2018"
+ms.date: "03/06/2018"
 f1_keywords: ["/Zc:ternary"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
 ---
