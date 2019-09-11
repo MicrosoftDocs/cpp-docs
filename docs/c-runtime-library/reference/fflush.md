@@ -55,45 +55,46 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ## Example
 
 ```C
-// crt_fflush.c
+// This sample gets a number from the user, then writes it to a file.
+// It ensures the write isn't lost on crash by calling fflush.
 #include <stdio.h>
-#include <conio.h>
 
-int main( void )
+int * crash_the_program = nullptr;
+
+int main()
 {
-   int integer;
-   char string[81];
+    FILE * my_file{};
+    fopen_s(&my_file, "myfile.txt", "w");
 
-   // Read each word as a string.
-   printf( "Enter a sentence of four words with scanf: " );
-   for( integer = 0; integer < 4; integer++ )
-   {
-      scanf_s( "%s", string, sizeof(string) );
-      printf( "%s\n", string );
-   }
+    printf("Write a number: ");
 
-   // You must flush the input buffer before using gets.
-   // fflush on input stream is an extension to the C standard
-   fflush( stdin );
-   printf( "Enter the same sentence with gets: " );
-   gets_s( string, sizeof(string) );
-   printf( "%s\n", string );
+    int my_number{};
+    scanf_s("%d", &my_number);
+
+    fprintf(my_file, "User selected %d\n", my_number);
+
+    // Write data to a file immediately instead of buffering.
+    fflush(my_file);
+    
+    if (my_number == 5) {
+        // Without using fflush, no data was written to the file 
+        // prior to the crash, so the data is lost.
+        *crash_the_program = 5;
+    }
+
+    // Normally, fflush is not needed as closing the file will write the buffer.
+    // Note that files are automatically closed and flushed during normal termination.
+    fclose(my_file);
+
+    return 0;
 }
 ```
 
 ```Input
-This is a test
-This is a test
+5
 ```
-
-```Output
-Enter a sentence of four words with scanf: This is a test
-This
-is
-a
-test
-Enter the same sentence with gets: This is a test
-This is a test
+```myfile.txt
+User selected 5
 ```
 
 ## See also
