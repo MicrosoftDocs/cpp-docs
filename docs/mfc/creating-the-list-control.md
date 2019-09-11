@@ -14,7 +14,7 @@ How the list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) is creat
 
 1. Use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md) to add a member variable of type `CListCtrl` with the Control property. You can use this member to call `CListCtrl` member functions.
 
-1. Use the Properties window to map handler functions in the dialog class for any list control notification messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
+1. Use the [Class Wizard](reference/mfc-class-wizard.md) to map handler functions in the dialog class for any list control notification messages you need to handle (see [Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)).
 
 1. In [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog), set the styles for the `CListCtrl`. See [Changing List Control Styles](../mfc/changing-list-control-styles.md). This determines the kind of "view" you get in the control, although you can change the view later.
 

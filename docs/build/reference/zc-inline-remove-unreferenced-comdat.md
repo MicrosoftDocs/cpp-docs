@@ -1,6 +1,6 @@
 ---
 title: "/Zc:inline (Remove unreferenced COMDAT)"
-ms.date: "03/01/2018"
+ms.date: "09/05/2019"
 f1_keywords: ["/Zc:inline", "VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData"]
 helpviewer_keywords: ["-Zc compiler options (C++)", "/Zc compiler options (C++)", "Zc compiler options (C++)", "/Zc:inline"]
 ms.assetid: a4c94224-1d73-4bea-a9d5-4fa73dc924df
@@ -17,7 +17,7 @@ Removes unreferenced functions or data that are COMDATs or only have internal li
 
 When **/Zc:inline** is specified, the compiler does not emit symbol information for unreferenced COMDAT functions or data, or for functions or data that have internal linkage only. This optimization simplifies some of the work performed by the linker in release builds or when the linker option [/OPT:REF](opt-optimizations.md) is specified. When the compiler performs this optimization, it can significantly reduce .obj file size and improve linker speeds. This compiler option is not enabled when optimizations are disabled ([/Od](od-disable-debug.md)) or when [/GL (Whole Program Optimization)](gl-whole-program-optimization.md) is specified.
 
-By default, this option is off (**/Zc:inline-**). The [/permissive-](permissive-standards-conformance.md) option does not enable **/Zc:inline**.
+By default, this option is off (**/Zc:inline-**) in command-line builds. The [/permissive-](permissive-standards-conformance.md) option does not enable **/Zc:inline**. In MSBuild projects, the option is set by the **Configuration Properties** > **C/C++** > **Language** > **Remove unreferenced code and data** property, which is set to **Yes** by default.
 
 If **/Zc:inline** is specified, the compiler enforces the C++11 requirement that all functions declared `inline` must have a definition available in the same translation unit if they are used. When the option is not specified, the Microsoft compiler allows non-conformant code that invokes functions declared `inline` even if no definition is visible. For more information, see the C++11 standard, in section 3.2 and section 7.1.2. This compiler option was introduced in Visual Studio 2013 Update 2.
 

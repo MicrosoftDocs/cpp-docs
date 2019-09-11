@@ -1,7 +1,7 @@
 ---
 title: "How to: Marshal Strings Using PInvoke"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "09/09/2016"
 helpviewer_keywords: ["interop [C++], strings", "marshaling [C++], strings", "data marshaling [C++], strings", "platform invoke [C++], strings"]
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
 ---
@@ -12,6 +12,10 @@ This topic explains how native functions that accept C-style strings can be call
 Managed and unmanaged strings are laid out differently in memory, so passing strings from managed to unmanaged functions requires the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to instruct the compiler to insert the required conversion mechanisms for marshaling the string data correctly and safely.
 
 As with functions that use only intrinsic data types, <xref:System.Runtime.InteropServices.DllImportAttribute> is used to declare managed entry points into the native functions, but--for passing strings--instead of defining these entry points as taking C-style strings, a handle to the <xref:System.String> type can be used instead. This prompts the compiler to insert code that performs the required conversion. For each function argument in an unmanaged function that takes a string, the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute should be used to indicate that the String object should be marshaled to the native function as a C-style string.
+
+The marshaler wraps the call to the unmanaged function in a hidden wrapper routine that pins and copies the managed string into a locally allocated string in the unmanaged context, which then is passed to the unmanaged function. When the unmanaged function returns, the wrapper either deletes the resource, or if it was on the stack, it is reclaimed when the wrapper goes out of scope. The unmanaged function is not responsible for this memory. The unmanaged code only creates and deletes memory in the heap set up by its own CRT, so there is never an issue with the marshaller using a different CRT version.
+
+If your unmanaged function returns a string, either as a return value or an out parameter, the marshaler copies it into a new managed string, and then releases the memory. For more information, see [Default Marshaling Behavior](/dotnet/framework/interop/default-marshaling-behavior) and [Marshaling Data with Platform Invoke](/dotnet/framework/interop/marshaling-data-with-platform-invoke).
 
 ## Example
 

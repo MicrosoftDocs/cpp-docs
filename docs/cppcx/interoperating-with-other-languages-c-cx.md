@@ -15,4 +15,4 @@ This part of the documentation describes how to use C++/CX to author Windows Run
 
 - [WRL integration](../cppcx/wrl-integration-c-cx.md)
 
-- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)
+- [C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)

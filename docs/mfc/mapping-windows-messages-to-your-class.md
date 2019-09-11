@@ -1,12 +1,12 @@
 ---
 title: "Mapping Windows Messages to Your Class"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "message maps [MFC], in dialog class", "Windows messages [MFC], mapping in dialog classes", "messages to dialog class [MFC]", "mappings [MFC], messages to dialog class [MFC]", "message maps [MFC], mapping Windows messages to classes", "messages to dialog class [MFC], mapping"]
+ms.date: "09/06/2019"
+helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "message maps [MFC], in dialog class", "Windows messages [MFC], mapping in dialog classes", "messages to dialog class [MFC]", "mappings [MFC], messages to dialog class [MFC]", "message maps [MFC], mapping Windows messages to classes", "messages to dialog class [MFC], mapping", "Class Wizard [MFC]"]
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
 ---
 # Mapping Windows Messages to Your Class
 
-If you need your dialog box to handle Windows messages, override the appropriate handler functions. To do so, use the Properties window to [map the messages](../mfc/reference/mapping-messages-to-functions.md) to the dialog class. This writes a message-map entry for each message and adds the message-handler member functions to the class. Use the Visual C++ source code editor to write code in the message handlers.
+If you need your dialog box to handle Windows messages, override the appropriate handler functions. To do so, choose the **Class View** tab in **Solution Explorer**, right click on the class that represents the dialog box, and choose [Class Wizard](reference/mfc-class-wizard.md). Use the wizard to [map the messages](../mfc/reference/mapping-messages-to-functions.md) to the dialog class. This writes a message-map entry for each message and adds the message-handler member functions to the class. Use the code editor to write code in the message handlers.
 
 You can also override member functions of [CDialog](../mfc/reference/cdialog-class.md) and its base classes, especially [CWnd](../mfc/reference/cwnd-class.md).
 

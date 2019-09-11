@@ -34,5 +34,5 @@ The next example shows how to cast to numeric equivalents, and perform compariso
 ## See also
 
 [Type System](../cppcx/type-system-c-cx.md)<br/>
-[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[C++/CX Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
 [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

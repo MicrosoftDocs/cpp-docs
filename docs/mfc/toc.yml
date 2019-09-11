@@ -2841,8 +2841,6 @@
               href: reference/application-type-mfc-application-wizard.md
             - name: Compound document support, MFC application wizard
               href: reference/compound-document-support-mfc-application-wizard.md
-            - name: Document template strings, MFC application wizard
-              href: reference/document-template-strings-mfc-application-wizard.md
             - name: Database support, MFC application wizard
               href: reference/database-support-mfc-application-wizard.md
             - name: User interface features, MFC application wizard
@@ -2885,8 +2883,6 @@
           items: 
             - name: MFC Add class wizard
               href: reference/mfc-add-class-wizard.md
-            - name: Document template strings, MFC Add class wizard
-              href: reference/document-template-strings-mfc-add-class-wizard.md
     - name: Adding an MFC class from a type library
       expanded: false
       items: 
