@@ -1,6 +1,6 @@
 ---
 title: "Event Maps"
-ms.date: "06/20/2018"
+ms.date: "09/07/2019"
 helpviewer_keywords: ["event maps [MFC]"]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
 ---
@@ -14,7 +14,7 @@ The Microsoft Foundation Class Library offers a programming model optimized for 
 
 The `EVENT_STOCK_CLICK` macro indicates that the control will fire a stock Click event every time it detects a mouse click. For a more detailed listing of other stock events, see the article [ActiveX Controls: Events](../../mfc/mfc-activex-controls-events.md). Macros are also available to indicate custom events.
 
-Although event-map macros are important, you generally do not insert them directly. This is because the Properties window automatically creates event-map entries in your source files when you use it to associate event-firing functions with events. Any time you want to edit or add an event-map entry, you can use the Properties window.
+Although event-map macros are important, you generally do not insert them directly. This is because the **Properties** window (in **Class View**) automatically creates event-map entries in your source files when you use it to associate event-firing functions with events. Any time you want to edit or add an event-map entry, you can use the **Properties** window.
 
 To support event maps, MFC provides the following macros:
 

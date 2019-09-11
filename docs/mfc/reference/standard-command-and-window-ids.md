@@ -6,7 +6,7 @@ ms.assetid: 0424805c-fff8-4531-8f0c-15cfb13aa612
 ---
 # Standard Command and Window IDs
 
-The Microsoft Foundation Class Library defines a number of standard command and window IDs in Afxres.h. These IDs are most commonly used within the resource editors and the Properties window to map messages to your handler functions. All standard commands have an **ID_** prefix. For example, when you use the menu editor, you normally bind the File Open menu item to the standard ID_FILE_OPEN command ID.
+The Microsoft Foundation Class Library defines a number of standard command and window IDs in Afxres.h. These IDs are most commonly used within the resource editors and the [Class Wizard](mfc-class-wizard.md) to map messages to your handler functions. All standard commands have an **ID_** prefix. For example, when you use the menu editor, you normally bind the File Open menu item to the standard ID_FILE_OPEN command ID.
 
 For most standard commands, application code does not need to refer to the command ID, because the framework itself handles the commands through message maps in its primary framework classes (`CWinThread`, `CWinApp`, `CView`, `CDocument`, and so on).
 
