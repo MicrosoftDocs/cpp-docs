@@ -42,7 +42,7 @@ The following steps use the `Windows::Foundation::IUriRuntimeClass` interface to
 
    The Windows Runtime uses fully-qualified names to identify types. The `RuntimeClass_Windows_Foundation_Uri` parameter is a string that's provided by the Windows Runtime and contains the required runtime class name.
 
-4. Initialize a [Microsoft::WRL::Wrappers::HString](hstring-class.md) variable that represents the URI `"http://www.microsoft.com"`.
+4. Initialize a [Microsoft::WRL::Wrappers::HString](hstring-class.md) variable that represents the URI `"https://www.microsoft.com"`.
 
    [!code-cpp[wrl-consume-component#6](../codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]
 

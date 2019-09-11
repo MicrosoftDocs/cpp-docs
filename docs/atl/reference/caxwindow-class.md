@@ -114,18 +114,18 @@ HRESULT CreateControl(
 *lpszName*<br/>
 A pointer to a string to create the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
 
 *pStream*<br/>
 [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.
@@ -181,18 +181,18 @@ HRESULT CreateControlEx(
 *lpszName*<br/>
 A pointer to a string to create the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream. Only the ProgID and CLSID are supported in Windows Mobile platforms. Windows CE embedded platforms, other than Windows Mobile with support for CE IE support all types including ProgID, CLSID, URL, reference to active document, and fragment of HTML.
 
 *pStream*<br/>
 [in] A pointer to a stream that is used to initialize the properties of the control. Can be NULL.

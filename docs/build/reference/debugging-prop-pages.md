@@ -1,6 +1,6 @@
 ---
 title: "C++ Debugging Property Pages"
-ms.date: "7/24/2019"
+ms.date: "07/24/2019"
 ms.topic: "article"
 ms.assetid: 78115a6b-3799-4515-814e-8566b5bdc55d
 f1_keywords:
