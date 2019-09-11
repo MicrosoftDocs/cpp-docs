@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Layout"
-ms.date: "11/19/2018"
+ms.date: "09/09/2019"
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
 ---
 # Dynamic Layout
@@ -29,7 +29,7 @@ You can set the dynamic layout behavior for a dialog box without having to write
 
    ![Open the dialog in the resource editor.](../mfc/media/mfcdynamiclayout3.png "Open the dialog in the resource editor.")
 
-1. Select a control and in the properties window, set its dynamic layout properties. The **Dynamic Layout** section in the properties window contains the properties **Moving Type**, **Sizing Type**, and, depending on the values selected for those properties, specific properties that define how much controls move or change size. **Moving Type** determines how a control is moved as the size of the dialog is changed; **Sizing Type** determines how a control is resized as the size of the dialog is changed. **Moving Type** and **Sizing Type** may be **Horizontal**, **Vertical**, **Both**, or **None** depending on the dimensions that you want to change dynamically. Horizontal is the X dimension; Vertical is the Y direction.
+1. Select a control and in the **Properties** window (in **Class View**), set its dynamic layout properties. The **Dynamic Layout** section in the **Properties** window contains the properties **Moving Type**, **Sizing Type**, and, depending on the values selected for those properties, specific properties that define how much controls move or change size. **Moving Type** determines how a control is moved as the size of the dialog is changed; **Sizing Type** determines how a control is resized as the size of the dialog is changed. **Moving Type** and **Sizing Type** may be **Horizontal**, **Vertical**, **Both**, or **None** depending on the dimensions that you want to change dynamically. Horizontal is the X dimension; Vertical is the Y direction.
 
 1. If you want a control such as a button to be at a fixed size and stay in place at the bottom right, as is common for the **OK** or **Cancel** buttons, set the **Sizing Type** to **None**, and set the **Moving Type** to **Both**. For the **Moving X** and **Moving Y** values under **Moving Type**, set 100% to cause the control to stay a fixed distance from the bottom right corner.
 
@@ -79,7 +79,7 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 
 1. Repeat for each control that needs to be moved or resized.
 
-1. If necessary, can use the [CMFCDynamicLayout::HasItem](../mfc/reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dyamic layout changes, or the [CMFCDynamicLayout::IsEmpty](../mfc/reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
+1. If necessary, can use the [CMFCDynamicLayout::HasItem](../mfc/reference/cmfcdynamiclayout-class.md#hasitem) method to determine if a control is already on the list of controls subjected to dynamic layout changes, or the [CMFCDynamicLayout::IsEmpty](../mfc/reference/cmfcdynamiclayout-class.md#isempty) method to determine if there are any controls that are subject to changes.
 
 1. To enable dialog layout, call the [CWnd::EnableDynamicLayout](../mfc/reference/cwnd-class.md#enabledynamiclayout) method.
 

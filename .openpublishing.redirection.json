@@ -624,7 +624,7 @@
          "source_path": "docs/build/reference/input-and-output-manifest-tool.md",
          "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
          "redirect_document_id": false
-      },       
+      },
       {
          "source_path": "docs/build/reference/isolated-com-manifest-tool.md",
          "redirect_url": "/cpp/build/reference/manifest-tool-property-pages",
@@ -7318,6 +7318,11 @@
       {
          "source_path": "docs/mfc/decrement-overridables-comment.md",
          "redirect_url": "/cpp/mfc/using-the-mfc-source-files",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/mfc/document-template-strings-mfc-add-class-wizard.md",
+         "redirect_url": "/cpp/mfc/reference/mfc-add-class-wizard",
          "redirect_document_id": false
       },
       {

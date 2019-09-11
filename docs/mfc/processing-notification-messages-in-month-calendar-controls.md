@@ -8,7 +8,7 @@ ms.assetid: 607c3e90-0756-493b-9503-ce835a50c7ab
 
 As users interact with the month calendar control (selecting dates and/or viewing a different month), the control (`CMonthCalCtrl`) sends notification messages to its parent window, usually a view or dialog object. Handle these messages if you want to do something in response. For example, when the user selects a new month to view, you could provide a set of dates that should be emphasized.
 
-Use the Properties window to add notification handlers to the parent class for those messages you want to implement.
+Use the [Class Wizard](reference/mfc-class-wizard.md) to add notification handlers to the parent class for those messages you want to implement.
 
 The following list describes the various notifications sent by the month calendar control.
 

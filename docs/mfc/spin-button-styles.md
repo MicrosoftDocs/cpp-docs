@@ -1,12 +1,12 @@
 ---
 title: "Spin Button Styles"
-ms.date: "11/04/2016"
+ms.date: "09/09/2019"
 helpviewer_keywords: ["styles [MFC], CSpinButtonCtrl", "CSpinButtonCtrl class [MFC], styles", "styles [MFC], spin button control", "spin button control, styles"]
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
 ---
 # Spin Button Styles
 
-Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) are controlled by styles. You can set the following styles using the **Properties** window in the dialog editor.
+Many of the settings for a spin button ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)) are controlled by styles. You can set the following styles using the [Class Wizard](reference/mfc-class-wizard.md).
 
 - **Orientation** Either Vertical or Horizontal. Controls the orientation of the arrow buttons. Associated with the UDS_HORZ style.
 

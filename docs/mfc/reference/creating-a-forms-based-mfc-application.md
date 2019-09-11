@@ -1,6 +1,6 @@
 ---
 title: "Creating a Forms-Based MFC Application"
-ms.date: "08/19/2019"
+ms.date: "09/09/2019"
 f1_keywords: ["vc.appwiz.mfcforms.project"]
 helpviewer_keywords: ["applications [MFC], forms-based", "forms-based applications [MFC]"]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
@@ -21,7 +21,7 @@ Any dialog-based application, by definition, is forms based. A dialog-based appl
 
 The base class for form-based applications is [CFormView](cformview-class.md). If your application has database support, then you can also select any class that derives from `CFormView`. A form is any window derived from `CFormView` or from any class that inherits from `CFormView`.
 
-Even if you use a base class such as [CView](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView` and checking the **Generate DocTemplate resources** checkbox in the [MFC Class Wizard](document-template-strings-mfc-add-class-wizard.md).
+Even if you use a base class such as [CView](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView`.
 
 Once you finish with the wizard, your project opens, and if you selected `CFormView` (or a class that inherits from `CFormView`) as your base class or if you created a dialog-based application, Visual C++ opens the dialog editor. At this point, you are ready to design your first form.
 

@@ -16,7 +16,7 @@ The following procedure adds a specific custom event, ClickIn. You can use this 
 
 1. Load your control's project.
 
-1. In Class View, right-click your ActiveX control class to open the shortcut menu.
+1. In **Class View**, right-click your ActiveX control class to open the shortcut menu.
 
 1. From the shortcut menu, click **Add** and then click **Add Event**.
 
@@ -56,25 +56,23 @@ This line assigns the ClickIn event a specific ID number, taken from the event's
 
 ##  <a name="_core_calling_fireclickin"></a> Calling FireClickIn
 
-Now that you have added the ClickIn custom event using the Add Event Wizard, you must decide when this event is to be fired. You do this by calling `FireClickIn` when the appropriate action occurs. For this discussion, the control uses the `InCircle` function inside a WM_LBUTTONDOWN message handler to fire the ClickIn event when a user clicks inside a circular or elliptical region. The following procedure adds the WM_LBUTTONDOWN handler.
+Now that you have added the ClickIn custom event using the Add Event Wizard, you must decide when this event is to be fired. You do this by calling `FireClickIn` when the appropriate action occurs. For this discussion, the control uses the `InCircle` function inside a `WM_LBUTTONDOWN` message handler to fire the ClickIn event when a user clicks inside a circular or elliptical region. The following procedure adds the `WM_LBUTTONDOWN` handler.
 
 #### To add a message handler with the Add Event Wizard
 
 1. Load your control's project.
 
-1. In Class View, select your ActiveX control class.
+1. In **Class View**, select your ActiveX control class.
 
-1. In the Properties window, click the **Messages** button.
+1. In the **Properties** window, you see a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
 
-   The Properties window displays a list of messages that can be handled by the ActiveX control. Any message shown in bold already has a handler function assigned to it.
-
-1. From the Properties window, select the message you want to handle. For this example, select WM_LBUTTONDOWN.
+1. Select the message you want to handle. For this example, select `WM_LBUTTONDOWN`.
 
 1. From the drop-down list box on the right, select **\<Add> OnLButtonDown**.
 
-1. Double-click the new handler function in Class View to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.
+1. Double-click the new handler function in **Class View** to jump to the message handler code in the implementation (.CPP) file of your ActiveX control.
 
-The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the WM_LBUTTONDOWN handler function, `OnLButtonDown`, in the [Circ sample](../overview/visual-cpp-samples.md) abstract.
+The following code sample calls the `InCircle` function every time the left mouse button is clicked within the control window. This sample can be found in the `WM_LBUTTONDOWN` handler function, `OnLButtonDown`, in the [Circ sample](../overview/visual-cpp-samples.md) abstract.
 
 [!code-cpp[NVC_MFC_AxUI#10](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-events_4.cpp)]
 
@@ -99,7 +97,7 @@ The following procedure adds a custom Click event.
 
 1. Load your control's project.
 
-1. In Class View, right-click your ActiveX control class to open the shortcut menu.
+1. In **Class View**, right-click your ActiveX control class to open the shortcut menu.
 
 1. From the shortcut menu, click **Add** and then click **Add Event**.
 

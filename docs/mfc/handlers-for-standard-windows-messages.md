@@ -20,7 +20,7 @@ In some cases, your handler should call the overridden handler in the base class
 > [!CAUTION]
 >  It is not safe to modify the arguments passed into a handler if you intend to pass them to a base-class handler. For example, you might be tempted to modify the *nChar* argument of the `OnChar` handler (to convert to uppercase, for example). This behavior is fairly obscure, but if you need to accomplish this effect, use the `CWnd` member function `SendMessage` instead.
 
-How do you determine the proper way to override a given message When the Properties window writes the skeleton of the handler function for a given message — an `OnCreate` handler for **WM_CREATE**, for example — it sketches in the form of the recommended overridden member function. The following example recommends that the handler first call the base-class handler and proceed only on condition that it does not return -1.
+How do you determine the proper way to override a given message When the [Class Wizard](reference/mfc-class-wizard.md) writes the skeleton of the handler function for a given message — an `OnCreate` handler for **WM_CREATE**, for example — it sketches in the form of the recommended overridden member function. The following example recommends that the handler first call the base-class handler and proceed only on condition that it does not return -1.
 
 [!code-cpp[NVC_MFCMessageHandling#3](../mfc/codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
 

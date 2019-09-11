@@ -1,6 +1,6 @@
 ---
 title: "How to: Customize the Quick Access Toolbar"
-ms.date: "11/19/2018"
+ms.date: "09/07/2019"
 helpviewer_keywords: ["quick access toolbar [MFC], customization"]
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
 ---
