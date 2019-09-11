@@ -1,6 +1,6 @@
 ---
 title: "How to: Customize the Application Button"
-ms.date: "11/19/2018"
+ms.date: "09/07/2019"
 helpviewer_keywords: ["application button [MFC], customizing"]
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
 ---
@@ -10,7 +10,7 @@ When you click the Application button, a menu of commands is displayed. Typicall
 
 ![MFC Ribbon Application Button](../mfc/media/application_button.png "MFC Ribbon Application Button")
 
-To customize the Application button, open it in the **Properties** window, modify its properties, and then preview the ribbon control.
+To customize the Application button, open it in the **Properties** window (in **Resource View**), modify its properties, and then preview the ribbon control.
 
 ### To open the Application button in the Properties window
 

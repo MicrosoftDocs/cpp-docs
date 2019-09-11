@@ -1,6 +1,6 @@
 ---
 title: "Servers: Implementing In-Place Frame Windows"
-ms.date: "11/04/2016"
+ms.date: "09/09/2019"
 helpviewer_keywords: ["frame windows [MFC], implementing", "OLE server applications [MFC], frame windows", "servers, in-place frame windows", "frame windows [MFC], in-place", "in-place frame windows"]
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
 ---
@@ -18,7 +18,7 @@ This article explains what you must do to implement in-place frame windows in yo
 
 1. Declare a `COleResizeBar` member in the frame-window class. This is needed if you want to support in-place resizing in server applications.
 
-   Declare an `OnCreate` message handler (using the **Properties** window), and call `Create` for your `COleResizeBar` member, if you've defined it.
+   Declare an `OnCreate` message handler (using the [Class Wizard](reference/mfc-class-wizard.md)), and call `Create` for your `COleResizeBar` member, if you've defined it.
 
 1. If you have a toolbar, declare a `CToolBar` member in the frame-window class.
 

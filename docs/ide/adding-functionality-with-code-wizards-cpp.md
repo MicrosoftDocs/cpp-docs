@@ -22,13 +22,13 @@ Once you have created a project, you will want to change or add to that project'
 
 
 > [!NOTE]
->  You can now add message handlers and map messages to them and override MFC virtual functions using the [Properties window](/visualstudio/ide/reference/properties-window).
+>  You can add message handlers and map messages to them and override MFC virtual functions using the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md).
 
 ## Accessing C++ Code Wizards
 
 There are three locations where you can access C++ code wizards:
 
-- On the **Project** menu, the **Add New Item** command allows you to bring up the `Add New Item` dialog box, which helps you to add new files to your project. The **Add Class** command displays the [Add Class](../ide/add-class-dialog-box.md) dialog box, which in turn open wizards for each of the class types you can add to your project. The **Add Resource** command displays the [Add Resource](../windows/add-resource-dialog-box.md) dialog box, from which you can create or select a resource to add to your project.
+- On the **Project** menu, the **Add New Item** command allows you to bring up the `Add New Item` dialog box, which helps you to add new files to your project. The **Add Class** command displays the [Add Class](../ide/add-class-dialog-box.md) dialog box, which in turn open wizards for each of the class types you can add to your project. For MFC classes, use the [MFC Class Wizard](../mfc/reference/mfc-class-wizard.md). The **Add Resource** command displays the [Add Resource](../windows/add-resource-dialog-box.md) dialog box, from which you can create or select a resource to add to your project.
 
    If you highlight a class or an interface in your project in Class View, the **Project** menu also displays the following commands:
 

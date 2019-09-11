@@ -9,7 +9,7 @@ ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
 
 As users interact with the date and time picker control, the control (`CDateTimeCtrl`) sends notification messages to its parent window, usually a view or dialog object. Handle these messages if you want to do something in response. For example, when the user opens the date and time picker to display the embedded month calendar control, the DTN_DROPDOWN notification is sent.
 
-Use the Properties window to add notification handlers to the parent class for those messages you want to implement.
+Use the [Class Wizard](reference/mfc-class-wizard.md) to add notification handlers to the parent class for those messages you want to implement.
 
 The following list describes the various notifications sent by the date and time picker control.
 
