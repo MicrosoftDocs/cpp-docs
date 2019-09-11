@@ -1,6 +1,6 @@
 ---
 title: "spectre"
-ms.date: "1/23/2018"
+ms.date: "01/23/2018"
 f1_keywords: ["spectre_cpp", "spectre", "nomitigation"]
 helpviewer_keywords: ["__declspec keyword (C++), spectre", "spectre __declspec keyword"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Manifest Tool Property Pages"
-ms.date: "7/24/2019"
+ms.date: "07/24/2019"
 ms.topic: "article"
 f1_keywords:
   - VC.Project.VCManifestTool.SuppressStartupBanner
