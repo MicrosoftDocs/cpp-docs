@@ -1,6 +1,6 @@
 ---
 title: "MIDL Compiler Property Pages"
-ms.date: "7/24/2019"
+ms.date: "07/24/2019"
 ms.topic: "article"
 ms.assetid: 57498a01-fccc-4a0e-a036-6ff702f83126
 f1_keywords:
