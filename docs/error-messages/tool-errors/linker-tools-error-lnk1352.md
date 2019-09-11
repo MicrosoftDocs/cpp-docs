@@ -11,7 +11,7 @@ helpviewer_keywords: ["LNK1352"]
 
 ## Remarks
 
-This error occurs if the linker detects an attempt to merge the `.stls` section into a different section than the `.tls` section.
+The linker detected a section merge that's not allowed, because *section_name_1* and *section_name_2* must be merged into the same section. For example, this error occurs if the linker detects an attempt to merge the `.stls` section and the `.tls` section into different sections.
 
 ### To correct this error
 
