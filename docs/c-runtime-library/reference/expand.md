@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_expand"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_bexpand", "fexpand", "expand", "nexpand", "_fexpand", "_nexpand", "bexpand", "_expand"]
 helpviewer_keywords: ["memory blocks, changing size", "_expand function", "expand function"]
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3

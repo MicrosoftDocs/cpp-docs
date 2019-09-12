@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["rintf", "rintl", "rint"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["rintf", "rintl", "rint"]
 helpviewer_keywords: ["rintf function", "rint function", "rintl function"]
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184

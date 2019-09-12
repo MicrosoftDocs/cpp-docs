@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["putenv"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["putenv"]
 helpviewer_keywords: ["putenv function"]
 ms.assetid: 1dc49ef3-6b12-484c-8e60-7048bcc999f1

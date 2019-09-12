@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_isctype_l", "iswctype", "_iswctype_l", "_isctype"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["iswctype", "_isctype", "_isctype_l", "_iswctype", "isctype", "iswctype_l", "isctype_l", "_iswctype_l"]
 helpviewer_keywords: ["isctype_l function", "iswctype_l function", "iswctype function", "_isctype function", "_isctype_l function", "_iswctype_l function", "isctype function", "_iswctype function"]
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3

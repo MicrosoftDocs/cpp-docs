@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["___lc_collate_cp_func"]
 api_location: ["msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["___lc_collate_cp_func"]
 helpviewer_keywords: ["___lc_collate_cp_func"]
 ms.assetid: 46ccc084-7ac9-4e5d-9138-e12cb5845615

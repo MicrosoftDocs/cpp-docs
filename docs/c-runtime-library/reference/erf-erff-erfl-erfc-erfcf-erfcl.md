@@ -4,6 +4,7 @@ ms.date: "01/31/2019"
 api_name: ["erff", "erfl", "erf", "erfc", "erfcf", "erfcl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["erfl", "erf", "erff", "erfc", "erfcf", "erfcl"]
 helpviewer_keywords: ["erfl function", "erff function", "erf function", "erfcl function", "erfcf function", "erfc function"]
 ms.assetid: 144d90d3-e437-41c2-a659-cd57596023b5

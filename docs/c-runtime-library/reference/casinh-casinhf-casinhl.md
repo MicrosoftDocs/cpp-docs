@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["casinh", "casinhl", "casinhf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["casinh", "casinhf", "casinhl", "complex/casinh", "complex/casinhf", "complex/casinhl"]
 helpviewer_keywords: ["casinh function", "casinhf function", "casinhl function"]
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b

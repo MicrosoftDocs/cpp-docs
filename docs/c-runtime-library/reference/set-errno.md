@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_set_errno"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["set_errno", "_set_errno"]
 helpviewer_keywords: ["errno global variable", "set_errno function", "_set_errno function"]
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b

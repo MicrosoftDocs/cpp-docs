@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_purecall"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["purecall", "_purecall"]
 helpviewer_keywords: ["_purecall function", "purecall function"]
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["va_arg", "va_end", "va_copy", "va_start"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["va_arg", "va_start", "va_list", "va_alist", "va_dcl", "va_copy", "va_end"]
 helpviewer_keywords: ["variable argument lists, accessing", "va_start macro", "va_arg macro", "va_end macro", "arguments [C++], argument lists", "va_list macro", "va_dcl macro", "va_alist macro", "va_copy macro"]
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907

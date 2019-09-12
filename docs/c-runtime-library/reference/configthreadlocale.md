@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_configthreadlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_configthreadlocale", "configthreadlocale"]
 helpviewer_keywords: ["configthreadlocale function", "locales, per-thread", "_configthreadlocale function", "per-thread locale", "thread locale"]
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770

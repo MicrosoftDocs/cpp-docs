@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_get_pgmptr"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["get_pgmptr", "_get_pgmptr"]
 helpviewer_keywords: ["get_pgmptr function", "_get_pgmptr function", "pgmptr global variable", "_pgmptr global variable"]
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["getchar", "getwchar"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["getwchar", "GetChar"]
 helpviewer_keywords: ["gettchar function", "characters, reading", "getwchar function", "_gettchar function", "standard input, reading from"]
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_set_new_mode"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["set_new_mode", "_set_new_mode"]
 helpviewer_keywords: ["handler modes", "_set_new_mode function", "set_new_mode function"]
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768

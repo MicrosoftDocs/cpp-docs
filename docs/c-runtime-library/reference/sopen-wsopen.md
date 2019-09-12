@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_sopen", "_wsopen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_wsopen", "wsopen", "_sopen", "_tsopen"]
 helpviewer_keywords: ["sopen function", "sharing files", "opening files, for sharing", "_sopen function", "wsopen function", "files [C++], opening", "files [C++], sharing", "_wsopen function"]
 ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f

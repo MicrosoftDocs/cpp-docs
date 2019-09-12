@@ -3,6 +3,7 @@ title: "is, isw Routines"
 ms.date: "11/04/2016"
 api_location: ["msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll", "msvcr120.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["isw", "is"]
 helpviewer_keywords: ["is routines", "isw routines"]
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5

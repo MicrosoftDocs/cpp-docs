@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["_statusfp2", "_statusfp", "_status87"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_statusfp2", "_statusfp", "statusfp2", "_status87", "status87", "statusfp"]
 helpviewer_keywords: ["floating-point functions, getting status word", "floating-point numbers, status word", "status87 function", "status word, getting floating point", "statusfp function", "_statusfp function", "_statusfp2 function", "statusfp2 function", "_status87 function", "floating-point functions", "status word"]
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432

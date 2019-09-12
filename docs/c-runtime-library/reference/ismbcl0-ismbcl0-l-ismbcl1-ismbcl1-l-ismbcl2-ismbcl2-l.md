@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_ismbcl2", "_ismbcl1", "_ismbcl0", "_ismbcl2_l", "_ismbcl1_l", "_ismbcl0_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["ismbcl0", "_ismbcl1_l", "_ismbcl0", "ismbcl1", "ismbcl0_l", "_ismbcl2_l", "ismbcl2", "ismbcl1_l", "_ismbcl1", "_ismbcl0_l", "_ismbcl2", "ismbcl2_l"]
 helpviewer_keywords: ["_ismbcl0_l function", "_ismbcl2 function", "_ismbcl1_l function", "ismbcl2 function", "_ismbcl1 function", "ismbcl0_l function", "ismbcl2_l function", "ismbcl1_l function", "ismbcl0 function", "ismbcl1 function", "_ismbcl2_l function", "_ismbcl0 function"]
 ms.assetid: ee15ebd1-462c-4a43-95f3-6735836d626a

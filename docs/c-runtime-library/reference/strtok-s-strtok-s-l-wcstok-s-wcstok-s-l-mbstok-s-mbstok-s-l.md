@@ -4,6 +4,7 @@ ms.date: "03/25/2019"
 api_name: ["_wcstok_s_l", "_mbstok_s_l", "_mbstok_s", "strtok_s", "wcstok_s", "_strtok_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_tcstok_s_l", "_wcstok_s_l", "_tcstok_s", "_mbstok_s_l", "strtok_s", "wcstok_s", "_mbstok_s", "_strtok_s_l"]
 helpviewer_keywords: ["_strtok_s_l function", "_mbstok_s_l function", "strings [C++], searching", "mbstok_s_l function", "wcstok_s_l function", "_wcstok_s_l function", "_tcstok_s function", "_tcstok_s_l function", "strtok_s_l function", "wcstok_s function", "tokens, finding in strings", "mbstok_s function", "_mbstok_s function", "strtok_s function"]
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46

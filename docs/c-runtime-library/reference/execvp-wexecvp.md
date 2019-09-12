@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_execvp", "_wexecvp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_execvp", "wexecvp", "_wexecvp"]
 helpviewer_keywords: ["_execvp function", "_wexecvp function", "wexecvp function", "execvp function"]
 ms.assetid: a4db15df-b204-4987-be7c-de84c3414380

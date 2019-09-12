@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_fstat32", "_fstat64", "_fstati64", "_fstat", "_fstat64i32", "_fstat32i64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_fstat32i64", "fstat", "fstat64i32", "_fstat64", "_fstati64", "fstat64", "_fstat32", "fstat32i64", "fstati64", "_fstat", "fstat32", "_fstat64i32"]
 helpviewer_keywords: ["_fstat64 function", "fstati64 function", "_fstat64i32 function", "_fstat32i64 function", "_fstat32 function", "file information", "fstat64i32 function", "fstat32 function", "fstat function", "fstat64 function", "_fstat function", "_fstati64 function", "fstat32i64 function"]
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a

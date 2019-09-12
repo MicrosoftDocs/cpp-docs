@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["div"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["div"]
 helpviewer_keywords: ["div function", "quotients, computing", "quotients", "dividing integers", "remainder computing"]
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119

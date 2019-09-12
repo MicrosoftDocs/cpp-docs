@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_CIlog"]
 api_location: ["msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_CIlog", "CIlog"]
 helpviewer_keywords: ["_CIlog intrinsic", "CIlog intrinsic"]
 ms.assetid: 23503854-ddaa-4fe0-a4a3-7fbb3a43bdec

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_wspawnvp", "_spawnvp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_wspawnvp", "_spawnvp", "wspawnvp"]
 helpviewer_keywords: ["wspawnvp function", "processes, creating", "_wspawnvp function", "processes, executing new", "spawnvp function", "process creation", "_spawnvp function"]
 ms.assetid: 8d8774ec-6ad4-4680-a5aa-440cde1e0249

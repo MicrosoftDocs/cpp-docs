@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_pctype", "_pwctype", "_wctype", "_mbctype", "_mbcasemap"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["pwctype", "pctype", "mbctype", "mbcasemap", "_mbcasemap", "_mbctype", "_pctype", "_wctype", "_pcwtype"]
 helpviewer_keywords: ["_wctype function", "_pwctype function", "_pctype function", "_mbctype function", "wctype function", "pwctype function", "pctype function", "mbcasemap function", "mbctype function", "_mbcasemap function"]
 ms.assetid: 7f5e1107-c43b-4b9b-b387-781e6d2373cb

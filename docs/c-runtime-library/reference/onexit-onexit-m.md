@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_onexit", "_onexit_m"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_onexit", "onexit_m", "onexit", "_onexit_m"]
 helpviewer_keywords: ["onexit function", "registry, registering exit routines", "_onexit_m function", "onexit_m function", "_onexit function", "registering exit routines", "registering to be called on exit"]
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443

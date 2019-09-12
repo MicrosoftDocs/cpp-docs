@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["fputs", "fputws"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["fputs", "fputws", "_fputts"]
 helpviewer_keywords: ["streams, writing strings to", "fputws function", "_fputts function", "fputs function", "fputts function"]
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326

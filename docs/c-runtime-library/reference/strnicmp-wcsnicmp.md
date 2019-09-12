@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["wcsnicmp", "strnicmp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["wcsnicmp", "strnicmp"]
 helpviewer_keywords: ["strnicmp function", "wcsnicmp function"]
 ms.assetid: 01324ee4-0bd9-43e9-b2a3-53d180270a64

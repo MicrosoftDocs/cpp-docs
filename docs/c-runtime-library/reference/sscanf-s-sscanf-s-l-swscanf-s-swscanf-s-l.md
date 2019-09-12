@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_sscanf_s_l", "sscanf_s", "_swscanf_s_l", "swscanf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_stscanf_s", "sscanf_s", "swscanf_s", "_swscanf_s_l", "_stscanf_s_l", "_sscanf_s_l"]
 helpviewer_keywords: ["stscanf_s_l function", "stscanf_s function", "swscanf_s function", "swscanf_s_l function", "sscanf_s_l function", "_stscanf_s_l function", "strings [C++], reading data from", "sscanf_s function", "_swscanf_s_l function", "_stscanf_s function", "reading data, strings", "strings [C++], reading", "_sscanf_s_l function"]
 ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c

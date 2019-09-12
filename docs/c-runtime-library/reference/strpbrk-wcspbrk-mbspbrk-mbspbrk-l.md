@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_mbspbrk", "wcspbrk", "_mbspbrk_l", "strpbrk"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_fstrpbrk", "_mbspbrk", "strpbrk", "_tcspbrk", "_ftcspbrk", "wcspbrk"]
 helpviewer_keywords: ["fstrpbrk function", "_ftcspbrk function", "_mbspbrk_l function", "strpbrk function", "_fstrpbrk function", "mbspbrk function", "characters [C++], scanning strings", "_tcspbrk function", "wcspbrk function", "ftcspbrk function", "character sets [C++], scanning strings for characters", "strings [C++], scanning", "tcspbrk function", "_mbspbrk function", "mbspbrk_l function"]
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810

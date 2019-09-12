@@ -4,6 +4,7 @@ ms.date: "03/29/2018"
 api_name: ["_chsize"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_chsize"]
 helpviewer_keywords: ["size", "_chsize function", "size, changing file", "files [C++], changing size", "chsize function"]
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff

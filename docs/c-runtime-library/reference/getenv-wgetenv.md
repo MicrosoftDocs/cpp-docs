@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["getenv", "_wgetenv"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_wgetenv", "getenv", "_tgetenv"]
 helpviewer_keywords: ["getenv function", "tgetenv function", "wgetenv function", "environment values", "environment variables", "_tgetenv function", "_wgetenv function"]
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4

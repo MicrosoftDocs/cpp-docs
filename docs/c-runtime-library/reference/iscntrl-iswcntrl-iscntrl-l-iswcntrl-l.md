@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["iscntrl", "_iswcntrl_l", "_iscntrl_l", "iswcntrl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_istcntrl_l", "_iswcntrl_l", "iswcntrl", "_iscntrl_l", "iscntrl", "_istcntrl"]
 helpviewer_keywords: ["iscntrl function", "_iscntrl_l function", "_iswcntrl_l function", "_istcntrl function", "istcntrl function", "iswcntrl function", "_istcntrl_l function"]
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5

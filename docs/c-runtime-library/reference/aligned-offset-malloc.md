@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_aligned_offset_malloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_aligned_offset_malloc", "aligned_offset_malloc"]
 helpviewer_keywords: ["_aligned_offset_malloc function", "aligned_offset_malloc function"]
 ms.assetid: 447681a3-7c95-4655-86ba-fa3a4ca4c521

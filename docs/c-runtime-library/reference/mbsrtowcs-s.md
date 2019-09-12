@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["mbsrtowcs_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["mbsrtowcs_s"]
 helpviewer_keywords: ["mbsrtowcs_s function"]
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60

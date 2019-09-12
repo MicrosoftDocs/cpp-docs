@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_kbhit"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_kbhit", "kbhit", "conio/_kbhit"]
 helpviewer_keywords: ["keyboard input", "user input, checking for keyboard", "kbhit function", "console", "console, checking", "keyboards, keyboard input", "_kbhit function", "keyboards, checking input"]
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["mbsinit"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["mbsinit"]
 helpviewer_keywords: ["mbsinit function"]
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034

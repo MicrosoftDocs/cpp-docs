@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["_rotr64", "_rotl", "_rotr", "_rotl64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_rotr64", "rotl64", "_rotl64", "rotr64", "rotr", "_rotr", "_rotl", "rotl"]
 helpviewer_keywords: ["rotl64 function", "_rotl function", "rotr function", "rotr64 function", "_rotr function", "rotl function", "_rotl64 function", "rotating bits", "_rotr64 function", "bits, rotating"]
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6

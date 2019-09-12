@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["_scalb", "_scalbf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["scalb", "_scalb", "_scalbf"]
 helpviewer_keywords: ["exponential calculations", "_scalb function", "_scalbf function", "scalb function"]
 ms.assetid: 148cf5a8-b405-44bf-a1f0-7487adba2421

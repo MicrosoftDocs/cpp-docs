@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["fwscanf_s", "_fscanf_s_l", "_fwscanf_s_l", "fscanf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_fwscanf_s_l", "_fscanf_s_l", "fscanf_s", "_ftscanf_s_l", "_ftscanf_s", "fwscanf_s"]
 helpviewer_keywords: ["formatted data [C++], reading from streams", "_ftscanf_s_l function", "_fscanf_s_l function", "ftscanf_s function", "fwscanf_s function", "_ftscanf_s function", "data [CRT], reading from streams", "_fwscanf_s_l function", "fscanf_s function", "fwscanf_s_l function", "ftscanf_s_l function", "streams [C++], reading formatted data from", "fscanf_s_l function"]
 ms.assetid: b6e88194-714b-4322-be82-1cc0b343fe01

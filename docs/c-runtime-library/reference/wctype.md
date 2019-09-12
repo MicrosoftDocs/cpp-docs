@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["wctype"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["wctype"]
 helpviewer_keywords: ["wctype function", "wide characters"]
 ms.assetid: 14aded12-4087-4123-bc48-db4e10999223

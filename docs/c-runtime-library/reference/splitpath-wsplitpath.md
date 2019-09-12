@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_wsplitpath", "_splitpath"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["wsplitpath", "_splitpath", "splitpath", "_wsplitpath", "_tsplitpath"]
 helpviewer_keywords: ["_splitpath function", "pathnames", "wsplitpath function", "splitpath function", "_wsplitpath function", "tsplitpath function", "path names", "_tsplitpath function"]
 ms.assetid: 32bd76b5-1385-4ee8-a64c-abcb541cd2e4

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_CrtSetBreakAlloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["CrtSetBreakAlloc", "_CrtSetBreakAlloc"]
 helpviewer_keywords: ["CrtSetBreakAlloc function", "_CrtSetBreakAlloc function"]
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1

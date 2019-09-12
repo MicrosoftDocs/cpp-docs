@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_ismbbkprint", "_ismbbkprint_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_ismbbkprint_l", "ismbbkprint", "_ismbbkprint", "ismbbkprint_l"]
 helpviewer_keywords: ["_ismbbkprint function", "ismbbkprint_l function", "ismbbkprint function", "_ismbbkprint_l function"]
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475

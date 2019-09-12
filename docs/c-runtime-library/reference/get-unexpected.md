@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_get_unexpected"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["__get_unexpected", "_get_unexpected", "get_unexpected"]
 helpviewer_keywords: ["__get_unexpected function", "get_unexpected function", "_get_unexpected function"]
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8

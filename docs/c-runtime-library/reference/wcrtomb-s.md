@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["wcrtomb_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["wcrtomb_s"]
 helpviewer_keywords: ["wide characters, converting", "wcrtomb_s function", "multibyte characters", "characters, converting"]
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656

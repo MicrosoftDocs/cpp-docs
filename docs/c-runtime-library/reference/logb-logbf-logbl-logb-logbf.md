@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["logb", "_logb", "_logbl", "logbf", "logbl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["logb", "logbl", "_logb", "_logbf", "logbf"]
 helpviewer_keywords: ["_logbf function", "mantissas, floating-point variables", "logbf function", "_logb function", "exponent, floating-point numbers", "logbl function", "logb function", "floating-point functions", "floating-point functions, mantissa and exponent", "exponents and mantissas"]
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f

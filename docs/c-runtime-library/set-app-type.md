@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_set_app_type"]
 api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
 ---

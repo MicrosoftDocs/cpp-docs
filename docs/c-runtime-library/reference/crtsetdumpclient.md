@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_CrtSetDumpClient"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_CrtSetDumpClient", "CrtSetDumpClient"]
 helpviewer_keywords: ["_CrtSetDumpClient function", "CrtSetDumpClient function"]
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["__dllonexit"]
 api_location: ["msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcr120_clr0400.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["__dllonexit"]
 helpviewer_keywords: ["__dllonexit"]
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12

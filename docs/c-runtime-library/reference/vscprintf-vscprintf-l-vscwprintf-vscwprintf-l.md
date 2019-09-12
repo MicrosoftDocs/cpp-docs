@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_vscprintf", "_vscprintf_l", "_vscwprintf_l", "_vscwprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["vscprintf_l", "vscwpeintf", "_vscwprintf", "_vsctprintf", "_vscprintf", "vscwprintf_l", "vscprintf", "_vscwprintf_l"]
 helpviewer_keywords: ["vsctprintf function", "_vscprintf_l function", "_vsctprintf_l function", "_vsctprintf function", "_vscwprintf_l function", "vscwprintf_l function", "_vscprintf function", "_vscwprintf function", "vscwprintf function", "vsctprintf_l function", "formatted text [C++]", "vscprintf function", "vscprintf_l function"]
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3

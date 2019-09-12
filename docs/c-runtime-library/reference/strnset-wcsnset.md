@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["strnset", "wcsnset"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["wcsnset", "strnset"]
 helpviewer_keywords: ["strnset function", "wcsnset function"]
 ms.assetid: e7868ac9-dc34-4606-bd3c-0fb2e7c51631

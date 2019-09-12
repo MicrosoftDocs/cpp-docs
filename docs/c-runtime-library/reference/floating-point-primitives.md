@@ -4,6 +4,7 @@ ms.date: "01/31/2019"
 api_name: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin"]
 helpviewer_keywords: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin"]
 ---

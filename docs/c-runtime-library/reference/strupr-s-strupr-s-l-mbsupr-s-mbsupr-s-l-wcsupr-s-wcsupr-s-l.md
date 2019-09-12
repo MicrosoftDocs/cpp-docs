@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_strupr_s", "_strupr_s_l", "_mbsupr_s", "_wcsupr_s_l", "_mbsupr_s_l", "_wcsupr_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["strupr_s", "mbsupr_s", "wcsupr_s", "_mbsupr_s_l", "mbsupr_s_l", "wcsupr_s_l", "_wcsupr_s", "_tcsupr_s_l", "_mbsupr_s", "_tcsupr_s", "strupr_s_l", "_wcsupr_s_l", "_strupr_s", "_strupr_s_l"]
 helpviewer_keywords: ["mbsupr_s_l function", "strupr_s_l function", "_wcsupr_s_l function", "_tcsupr_s_l function", "mbsupr_s function", "_wcsupr_s function", "uppercase, converting strings to", "tcsupr_s function", "string conversion [C++], case", "strupr_s function", "wcsupr_s_l function", "_mbsupr_s function", "_mbsupr_s_l function", "_strupr_s_l function", "tcsupr_s_l function", "strings [C++], case", "converting case, CRT functions", "_tcsupr_s function", "strings [C++], converting case", "_strupr_s function", "wcsupr_s function"]
 ms.assetid: 82d3a273-9f6f-4a26-9560-919d891e4581

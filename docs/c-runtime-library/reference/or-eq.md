@@ -3,6 +3,7 @@ title: "or_eq"
 ms.date: "11/04/2016"
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["std::or_eq", "or_eq", "std.or_eq"]
 helpviewer_keywords: ["or_eq function"]
 ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318

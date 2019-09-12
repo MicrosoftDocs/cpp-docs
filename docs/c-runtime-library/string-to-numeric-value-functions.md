@@ -3,6 +3,7 @@ title: "String to Numeric Value Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_tcstoui64", "_tcstoi64"]
 helpviewer_keywords: ["parsing, numeric strings", "string conversion, to numeric values"]
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["iswlower", "_islower_l", "islower", "_iswlower_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_istlower", "islower", "_ismbclower_l", "_liswlower_l", "_istlower_l", "_iswlower_l", "_islower _l", "_islower_l", "iswlower"]
 helpviewer_keywords: ["_islower _l function", "_ismbclower_l function", "islower function", "_iswlower_l function", "_liswlower_l function", "_istlower_l function", "istlower function", "_istlower function", "iswlower function", "_islower_l function"]
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457

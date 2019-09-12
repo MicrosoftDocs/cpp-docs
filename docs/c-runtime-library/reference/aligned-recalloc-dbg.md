@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_aligned_recalloc_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_aligned_recalloc_dbg", "aligned_recalloc_dbg"]
 helpviewer_keywords: ["aligned_recalloc_dbg function", "_aligned_recalloc_dbg function"]
 ms.assetid: 55c3c27e-561c-4d6b-9bf9-1e34cc556e4b

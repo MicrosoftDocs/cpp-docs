@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["execle"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["execle"]
 helpviewer_keywords: ["execle function"]
 ms.assetid: 5985b615-fe90-4d1c-9c1d-13ec87c8e306

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_atoi64_l", "_wtoi64", "_atoi64", "_wtoi64_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_atoi64", "_tstoi64", "_ttoi64", "wtoi64", "_tstoi64_l", "atoi64", "_wtoi64_l", "_wtoi64", "wtoi64_l", "_atoi64_l", "atoi64_l"]
 helpviewer_keywords: ["tstoi64 function", "wtoi64 function", "atoi64_l function", "_ttoi64 function", "string conversion, to integers", "wtoi64_l function", "atoi64 function", "_tstoi64 function", "_atoi64_l function", "_wtoi64_l function", "ttoi64 function", "_wtoi64 function", "_atoi64 function"]
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526

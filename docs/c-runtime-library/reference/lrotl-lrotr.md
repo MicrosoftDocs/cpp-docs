@@ -4,6 +4,7 @@ ms.date: "04/04/2018"
 api_name: ["_lrotl", "_lrotr"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["lrotr", "lrotl", "_lrotr", "_lrotl"]
 helpviewer_keywords: ["lrotl function", "bits", "_lrotr function", "lrotr function", "rotating bits", "_lrotl function", "bits, rotating"]
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e

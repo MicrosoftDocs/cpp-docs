@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["__min"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["__min", "min", "_min"]
 helpviewer_keywords: ["__min macro", "min macro", "minimum macro", "_min macro"]
 ms.assetid: 2037f26c-b48a-4a69-8870-22519f052a3c

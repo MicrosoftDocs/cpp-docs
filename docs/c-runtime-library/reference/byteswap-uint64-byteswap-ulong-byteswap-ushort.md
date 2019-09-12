@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_byteswap_uint64", "_byteswap_ulong", "_byteswap_ushort"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["byteswap_ulong", "_byteswap_ulong", "byteswap_uint64", "_byteswap_ushort", "_byteswap_uint64", "byteswap_ushort"]
 helpviewer_keywords: ["_byteswap_uint64 function", "byteswap_uint64 function", "swapping bytes", "byte swapping", "byteswap_ushort function", "_byteswap_ushort function", "bytes, swapping", "byteswap_ulong function", "_byteswap_ulong function"]
 ms.assetid: 83bda211-f02f-4cf0-8a78-d6de1f175970

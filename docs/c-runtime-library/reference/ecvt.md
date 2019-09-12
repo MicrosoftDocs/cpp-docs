@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["_ecvt"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_ecvt"]
 helpviewer_keywords: ["_ecvt function", "numbers, converting", "converting double numbers", "ecvt function"]
 ms.assetid: a916eb05-92d1-4b5c-8563-093acdb49dc8

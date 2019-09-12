@@ -4,6 +4,7 @@ ms.date: "02/27/2018"
 api_name: ["_beginthread", "_beginthreadex"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["beginthread", "_beginthread", "beginthreadex", "_beginthreadex"]
 helpviewer_keywords: ["_beginthread function", "threading [C++], creating threads", "beginthreadex function", "_beginthreadex function", "beginthread function"]
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091

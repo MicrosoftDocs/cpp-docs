@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_sprintf_p", "_swprintf_p_l", "_swprintf_p", "_sprintf_p_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_sprintf_p", "_swprintf_p_l", "_sprintf_p_l", "_swprintf_p", "sprintf_p", "swprint_p_l", "swprintf_p", "swprintf_p_l"]
 helpviewer_keywords: ["sprintf_p_l function", "swprintf_p function", "swprintf_p_l function", "_sprintf_p function", "_sprintf_p_l function", "_swprintf_p function", "sprintf_p function", "_stprintf_p function", "stprintf_p function", "_swprintf_p_l function", "stprintf_p_l function", "formatted text [C++]", "_stprintf_p_l function"]
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d

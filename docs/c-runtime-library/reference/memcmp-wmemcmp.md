@@ -4,7 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["memcmp", "wmemcmp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
-topictype: "APIRef"
+topic_type: ["apiref"]
 f1_keywords: ["memcmp", "wmemcmp"]
 helpviewer_keywords: ["wmemcmp function", "memcmp function"]
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d

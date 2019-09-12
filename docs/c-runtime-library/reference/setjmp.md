@@ -4,6 +4,7 @@ ms.date: "08/14/2018"
 api_name: ["setjmp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["setjmp"]
 helpviewer_keywords: ["programs [C++], saving states", "current state", "setjmp function"]
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2

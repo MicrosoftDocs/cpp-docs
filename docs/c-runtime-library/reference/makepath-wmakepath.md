@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_makepath", "_wmakepath"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_wmakepath", "_tmakepath", "makepath", "tmakepath", "wmakepath", "_makepath"]
 helpviewer_keywords: ["_makepath function", "wmakepath function", "makepath function", "_tmakepath function", "paths", "_wmakepath function", "tmakepath function"]
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026

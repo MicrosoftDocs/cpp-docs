@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_filelengthi64", "_filelength"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_filelength", "_filelengthi64", "filelengthi64"]
 helpviewer_keywords: ["filelengthi64 function", "lengths, file", "filelength function", "_filelength function", "files [C++], length", "_filelengthi64 function"]
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275

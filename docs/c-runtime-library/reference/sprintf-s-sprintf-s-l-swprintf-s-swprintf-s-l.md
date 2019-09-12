@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_swprintf_s_l", "_sprintf_s_l", "swprintf_s", "sprintf_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["swprintf_s", "sprintf_s", "stdio/sprintf_s", "stdio/swprintf_s", "stdio/_sprintf_s_l", "stdio/_swprintf_s_l", "_sprintf_s_l", "_swprintf_s_l"]
 helpviewer_keywords: ["stprintf_s function", "stprintf_s_l function", "swprintf_s_l function", "sprintf_s function", "swprintf_s function", "_swprintf_s_l function", "sprintf_s_l function", "_stprintf_s_l function", "_stprintf_s function", "_sprintf_s_l function", "formatted text [C++]"]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f

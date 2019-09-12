@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_ismbbalpha", "_ismbbalpha_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["ismbbalpha", "ismbbalpha_l", "_ismbbalpha", "_ismbbalpha_l"]
 helpviewer_keywords: ["ismbbalpha function", "ismbbalpha_l function", "_ismbbalpha function", "_ismbbalpha_l function"]
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0

@@ -3,6 +3,7 @@ title: "_ismbc Routines"
 ms.date: "11/04/2016"
 api_location: ["msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_ismbc"]
 helpviewer_keywords: ["ismbc routines", "_ismbc routines"]
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d

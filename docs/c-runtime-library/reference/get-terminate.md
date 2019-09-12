@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_get_terminate"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["get_terminate", "_get_terminate", "__get_terminate"]
 helpviewer_keywords: ["__get_terminate function", "get_terminate function", "_get_terminate function"]
 ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208

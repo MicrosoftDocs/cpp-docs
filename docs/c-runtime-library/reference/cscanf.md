@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["cscanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["cscanf"]
 helpviewer_keywords: ["cscanf function"]
 ms.assetid: 51aa2da2-0d53-4272-b510-f3eabf049ea7

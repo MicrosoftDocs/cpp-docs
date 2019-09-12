@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["__security_init_cookie"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["security_init_cookie", "__security_init_cookie"]
 helpviewer_keywords: ["security cookie [C++]", "__security_init_cookie function", "security_init_cookie function", "global security cookie"]
 ms.assetid: 32119905-0897-4a1c-84ca-bffd16c9b2af

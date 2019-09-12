@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["mbrtoc16", "mbrtoc32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["mbrtoc16", "mbrtoc32", "uchar/mbrtoc16", "uchar/mbrtoc32"]
 helpviewer_keywords: ["mbrtoc16 function", "mbrtoc32 function"]
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd

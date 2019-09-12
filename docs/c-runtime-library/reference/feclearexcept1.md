@@ -4,6 +4,7 @@ ms.date: "04/05/2018"
 api_name: ["feclearexcept"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["feclearexcept", "fenv/feclearexcept"]
 helpviewer_keywords: ["feclearexcept function"]
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533

@@ -4,6 +4,7 @@ ms.date: "11/04/2016"
 api_name: ["_getpid"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
 api_type: "DLLExport"
+topic_type: ["apiref"]
 f1_keywords: ["_getpid"]
 helpviewer_keywords: ["getpid function", "_getpid function", "process identification numbers"]
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
