@@ -3,7 +3,7 @@ title: "fpclassify"
 ms.date: "04/05/2018"
 api_name: ["fpclassify"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "HeaderDef"
+api_type: ["HeaderDef"]
 f1_keywords: ["fpclassify", "math/fpclassify"]
 helpviewer_keywords: ["fpclassify macro", "fpclassify function"]
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
