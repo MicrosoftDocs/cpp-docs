@@ -1,9 +1,10 @@
 ---
 title: "_ismbblead, _ismbblead_l"
 ms.date: "11/04/2016"
-apiname: ["_ismbblead_l", "_ismbblead"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_ismbblead_l", "_ismbblead"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["ismbblead_l", "istlead", "_ismbblead", "_ismbblead_l", "ismbblead", "_istlead"]
 helpviewer_keywords: ["_ismbblead_l function", "ismbblead function", "_ismbblead function", "istlead function", "ismbblead_l function", "_istlead function"]
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf

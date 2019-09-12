@@ -1,8 +1,9 @@
 ---
 title: "xor_eq"
 ms.date: "11/04/2016"
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["std.xor_eq", "xor_eq", "std::xor_eq"]
 helpviewer_keywords: ["xor_eq function"]
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c

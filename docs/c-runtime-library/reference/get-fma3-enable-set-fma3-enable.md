@@ -1,9 +1,10 @@
 ---
 title: "_get_FMA3_enable, _set_FMA3_enable"
 ms.date: "04/05/2018"
-apiname: ["_get_FMA3_enable", "_set_FMA3_enable"]
-apilocation: ["msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_get_FMA3_enable", "_set_FMA3_enable"]
+api_location: ["msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_get_FMA3_enable", "_set_FMA3_enable", "math/_get_FMA3_enable", "math/_set_FMA3_enable"]
 helpviewer_keywords: ["_get_FMA3_enable", "_set_FMA3_enable"]
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4

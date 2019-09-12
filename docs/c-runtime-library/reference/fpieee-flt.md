@@ -1,9 +1,10 @@
 ---
 title: "_fpieee_flt"
 ms.date: "04/05/2018"
-apiname: ["_fpieee_flt"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_fpieee_flt"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["fpieee_flt", "_fpieee_flt"]
 helpviewer_keywords: ["_fpieee_flt function", "exception handling, floating-point", "floating-point exception handling", "fpieee_flt function"]
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740

@@ -1,9 +1,10 @@
 ---
 title: "_getchar_nolock, _getwchar_nolock"
 ms.date: "11/04/2016"
-apiname: ["_getchar_nolock", "_getwchar_nolock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_getchar_nolock", "_getwchar_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["getwchar_nolock", "_getwchar_nolock", "_getchar_nolock", "getchar_nolock"]
 helpviewer_keywords: ["_getwchar_nolock function", "getwchar_nolock function", "characters, reading", "_getchar_nolock function", "getchar_nolock function", "standard input, reading from"]
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de

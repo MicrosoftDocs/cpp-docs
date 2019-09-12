@@ -1,9 +1,10 @@
 ---
 title: "_CrtGetAllocHook"
 ms.date: "11/04/2016"
-apiname: ["_CrtGetAllocHook"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtGetAllocHook"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["CrtGetAllocHook", "_CrtGetAllocHook"]
 helpviewer_keywords: ["_CrtGetAllocHook function", "CrtGetAllocHook function"]
 ms.assetid: 036acf7c-547a-4b3f-a636-80451070d7ed

@@ -1,9 +1,10 @@
 ---
 title: "_spawnlpe, _wspawnlpe"
 ms.date: "11/04/2016"
-apiname: ["_spawnlpe", "_wspawnlpe"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_spawnlpe", "_wspawnlpe"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["spawnlpe", "_wspawnlpe", "_spawnlpe", "wspawnlpe"]
 helpviewer_keywords: ["_wspawnlpe function", "wspawnlpe function", "processes, creating", "spawnlpe function", "_spawnlpe function", "processes, executing new", "process creation"]
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6

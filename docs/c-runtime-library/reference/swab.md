@@ -1,9 +1,10 @@
 ---
 title: "_swab"
 ms.date: "11/04/2016"
-apiname: ["_swab", "stdlib/_swab"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_swab", "stdlib/_swab"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_swab", "stdlib/_swab"]
 helpviewer_keywords: ["_swab function", "swapping bytes", "swab function", "bytes, swapping"]
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94

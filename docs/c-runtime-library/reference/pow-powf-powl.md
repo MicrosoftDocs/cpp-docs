@@ -1,9 +1,10 @@
 ---
 title: "pow, powf, powl"
 ms.date: "04/05/2018"
-apiname: ["powl", "pow", "powf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["powl", "pow", "powf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["powl", "pow", "_powl", "powf"]
 helpviewer_keywords: ["exponential calculations", "powl function", "_powl function", "exponentiation", "powers, calculating", "calculating exponentials", "powf function", "pow function"]
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1

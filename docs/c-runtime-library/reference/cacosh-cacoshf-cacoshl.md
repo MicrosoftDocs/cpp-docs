@@ -1,9 +1,10 @@
 ---
 title: "cacosh, cacoshf, cacoshl"
 ms.date: "11/04/2016"
-apiname: ["cacosh", "cacoshf", "cacoshl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["cacosh", "cacoshf", "cacoshl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["cacosh", "cacoshf", "cacoshl", "complex/cacosh", "complex/cacoshf", "complex/cacoshl"]
 helpviewer_keywords: ["cacosh function", "cacoshf function", "cacoshl function"]
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703

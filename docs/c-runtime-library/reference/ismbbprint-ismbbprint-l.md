@@ -1,9 +1,10 @@
 ---
 title: "_ismbbprint, _ismbbprint_l"
 ms.date: "11/04/2016"
-apiname: ["_ismbbprint_l", "_ismbbprint"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_ismbbprint_l", "_ismbbprint"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_ismbbprint_l", "_ismbbprint", "ismbbprint", "ismbbprint_l"]
 helpviewer_keywords: ["ismbbprint_l function", "ismbbprint function", "_ismbbprint function", "_ismbbprint_l function"]
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d

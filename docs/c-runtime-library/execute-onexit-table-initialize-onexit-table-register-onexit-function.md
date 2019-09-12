@@ -1,9 +1,10 @@
 ---
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 ms.date: "11/04/2016"
-apiname: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function"]
-apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initialize_onexit_table", "process/_initialize_onexit_table", "_register_onexit_function", "process/_register_onexit_function"]
 helpviewer_keywords: ["_execute_onexit_table function", "_initialize_onexit_table function", "_register_onexit_function function"]
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473

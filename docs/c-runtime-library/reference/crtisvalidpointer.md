@@ -1,9 +1,10 @@
 ---
 title: "_CrtIsValidPointer"
 ms.date: "11/04/2016"
-apiname: ["_CrtIsValidPointer"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtIsValidPointer"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["CrtlsValidPointer", "_CrtIsValidPointer"]
 helpviewer_keywords: ["CrtIsValidPointer function", "_CrtIsValidPointer function"]
 ms.assetid: 91c35590-ea5e-450f-a15d-ad8d62ade1fa

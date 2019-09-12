@@ -1,9 +1,10 @@
 ---
 title: "_execv, _wexecv"
 ms.date: "11/04/2016"
-apiname: ["_wexecv", "_execv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wexecv", "_execv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_execv", "_wexecv", "wexecv"]
 helpviewer_keywords: ["_wexecv function", "_execv function", "wexecv function", "execv function"]
 ms.assetid: 8dbaf7bc-9040-4316-a0c1-db7e866b52af

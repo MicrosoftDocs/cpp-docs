@@ -1,9 +1,10 @@
 ---
 title: "_set_se_translator"
 ms.date: "02/21/2018"
-apiname: ["_set_se_translator"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_set_se_translator"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_set_se_translator", "set_se_translator"]
 helpviewer_keywords: ["set_se_translator function", "exception handling, changing", "_set_se_translator function"]
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f

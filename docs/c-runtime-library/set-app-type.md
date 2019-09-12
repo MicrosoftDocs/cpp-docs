@@ -1,9 +1,10 @@
 ---
 title: "_set_app_type"
 ms.date: "11/04/2016"
-apiname: ["_set_app_type"]
-apilocation: ["api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_set_app_type"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_set_app_type", "corecrt_startup/_set_app_type"]
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
 ---

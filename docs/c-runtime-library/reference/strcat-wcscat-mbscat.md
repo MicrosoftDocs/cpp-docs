@@ -1,9 +1,10 @@
 ---
 title: "strcat, wcscat, _mbscat"
 ms.date: "11/04/2016"
-apiname: ["_mbscat", "wcscat", "strcat"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_mbscat", "wcscat", "strcat"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_mbscat", "_ftcscat", "_tcscat", "strcat", "wcscat"]
 helpviewer_keywords: ["concatenating strings", "mbscat function", "_ftcscat function", "_tcscat function", "ftcscat function", "strcat function", "strings [C++], appending", "_mbscat function", "tcscat function", "strings [C++], concatenating", "appending strings", "wcscat function"]
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a

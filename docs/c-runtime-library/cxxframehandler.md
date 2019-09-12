@@ -1,9 +1,10 @@
 ---
 title: "__CxxFrameHandler"
 ms.date: "11/04/2016"
-apiname: ["__CxxFrameHandler"]
-apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr120.dll"]
-apitype: "DLLExport"
+api_name: ["__CxxFrameHandler"]
+api_location: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr120.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["__CxxFrameHandler"]
 helpviewer_keywords: ["__CxxFrameHandler"]
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333

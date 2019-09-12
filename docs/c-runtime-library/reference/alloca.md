@@ -1,9 +1,10 @@
 ---
 title: "_alloca"
 ms.date: "11/04/2016"
-apiname: ["_alloca"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_alloca"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_alloca", "alloca"]
 helpviewer_keywords: ["memory allocation, stack", "alloca function", "_alloca function"]
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
