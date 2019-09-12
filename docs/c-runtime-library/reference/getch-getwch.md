@@ -1,9 +1,10 @@
 ---
 title: "_getch, _getwch"
 ms.date: "11/04/2016"
-apiname: ["_getch", "_getwch"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_getch", "_getwch"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["getwch", "_getch", "_getwch"]
 helpviewer_keywords: ["characters, getting from console", "getch function", "_getwch function", "console, reading from", "_getch function", "getwch function"]
 ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c

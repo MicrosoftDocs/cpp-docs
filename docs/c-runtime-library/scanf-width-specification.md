@@ -1,8 +1,9 @@
 ---
 title: "scanf Width Specification"
 ms.date: "11/04/2016"
-apilocation: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
-apitype: "DLLExport"
+api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["scanf"]
 helpviewer_keywords: ["scanf function, width specification"]
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c

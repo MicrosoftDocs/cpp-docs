@@ -1,9 +1,10 @@
 ---
 title: "_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l"
 ms.date: "11/04/2016"
-apiname: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["ismbckata_l", "_ismbckata_l", "ismbckata", "ismbchira", "_ismbckata", "ismbchira_l", "_ismbchira_l", "_ismbchira"]
 helpviewer_keywords: ["_ismbckata function", "_ismbchira function", "_ismbckata_l function", "Katakana", "ismbchira function", "_ismbchira_l function", "ismbchira_l function", "ismbdkata_l function", "Hiragana", "ismbckata function"]
 ms.assetid: 2db388a2-be31-489b-81c8-f6bf3f0582d3

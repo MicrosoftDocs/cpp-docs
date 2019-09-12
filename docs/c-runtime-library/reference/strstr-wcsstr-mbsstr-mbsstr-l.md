@@ -1,9 +1,10 @@
 ---
 title: "strstr, wcsstr, _mbsstr, _mbsstr_l"
 ms.date: "11/04/2016"
-apiname: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_fstrstr", "_ftcsstr", "strstr", "wcsstr", "_mbsstr", "_tcsstr"]
 helpviewer_keywords: ["strings [C++], searching", "mbsstr function", "_ftcsstr function", "ftcsstr function", "fstrstr function", "_tcsstr function", "substrings, finding", "mbsstr_l function", "tcsstr function", "_mbsstr function", "wcsstr function", "_fstrstr function", "_mbsstr_l function", "strstr function"]
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a

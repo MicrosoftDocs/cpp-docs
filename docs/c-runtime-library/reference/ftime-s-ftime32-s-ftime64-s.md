@@ -1,9 +1,10 @@
 ---
 title: "_ftime_s, _ftime32_s, _ftime64_s"
 ms.date: "11/04/2016"
-apiname: ["_ftime_s", "_ftime64_s", "_ftime32_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_ftime_s", "_ftime64_s", "_ftime32_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_ftime_s", "_ftime64_s", "ftime_s", "_ftime32_s", "ftime32_s", "ftime64_s"]
 helpviewer_keywords: ["ftime32_s function", "ftime_s function", "_ftime64_s function", "current time", "ftime64_s function", "time, getting current", "_ftime_s function", "_ftime32_s function"]
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b

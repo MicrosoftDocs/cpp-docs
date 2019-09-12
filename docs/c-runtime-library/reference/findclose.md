@@ -1,9 +1,10 @@
 ---
 title: "_findclose"
 ms.date: "11/04/2016"
-apiname: ["_findclose"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_findclose"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_findclose", "findclose"]
 helpviewer_keywords: ["_findclose function", "findclose function"]
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163

@@ -1,9 +1,10 @@
 ---
 title: "___lc_codepage_func"
 ms.date: "11/04/2016"
-apiname: ["___lc_codepage_func"]
-apilocation: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110.dll", "msvcrt.dll"]
-apitype: "DLLExport"
+api_name: ["___lc_codepage_func"]
+api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110.dll", "msvcrt.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["lc_codepage_func", "___lc_codepage_func"]
 helpviewer_keywords: ["___lc_codepage_func"]
 ms.assetid: 6a663bd0-5a63-4a2f-9507-872ec1582aae

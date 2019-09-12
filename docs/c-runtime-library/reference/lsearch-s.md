@@ -1,9 +1,10 @@
 ---
 title: "_lsearch_s"
 ms.date: "11/04/2016"
-apiname: ["_lsearch_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_lsearch_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_lsearch_s", "lsearch_s"]
 helpviewer_keywords: ["linear searching", "values, searching for", "keys, finding in arrays", "arrays [CRT], searching", "searching, linear", "_lsearch_s function", "lsearch_s function"]
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882

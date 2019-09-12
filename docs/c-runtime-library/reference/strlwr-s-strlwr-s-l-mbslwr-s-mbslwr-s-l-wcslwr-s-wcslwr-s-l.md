@@ -1,9 +1,10 @@
 ---
 title: "_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l"
 ms.date: "11/04/2016"
-apiname: ["_strlwr_s_l", "_mbslwr_s_l", "_mbslwr_s", "_wcslwr_s", "_strlwr_s", "_wcslwr_s_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_strlwr_s_l", "_mbslwr_s_l", "_mbslwr_s", "_wcslwr_s", "_strlwr_s", "_wcslwr_s_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_strlwr_s_l", "_strlwr_s", "mbslwr_s_l", "strlwr_s_l", "_wcslwr_s", "strlwr_s", "mbslwr_s", "_wcslwr_s_l", "wcslwr_s_l", "_tcslwr_s", "_tcslwr_s_l", "_mbslwr_s_l", "wcslwr_s", "_mbslwr_s"]
 helpviewer_keywords: ["_tcslwr_s function", "wcslwr_s function", "_mbslwr_s function", "_wcslwr_s function", "strlwr_s_l function", "mbslwr_s_l function", "_strlwr_s function", "string conversion [C++], case", "strlwr_s function", "wcslwr_s_l function", "_tcslwr_s_l function", "mbslwr_s function", "strings [C++], case", "_wcslwr_s_l function", "converting case, CRT functions", "_strlwr_s_l function", "_mbslwr_s_l function", "case, converting", "tcslwr_s function", "tcslwr_s_l function", "strings [C++], converting case"]
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79

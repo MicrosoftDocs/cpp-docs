@@ -1,9 +1,10 @@
 ---
 title: "puts, _putws"
 ms.date: "11/04/2016"
-apiname: ["_putws", "puts"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_putws", "puts"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_putts", "_putws", "puts"]
 helpviewer_keywords: ["strings [C++], writing", "_putts function", "standard output, writing to", "putws function", "puts function", "putts function", "_putws function"]
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6

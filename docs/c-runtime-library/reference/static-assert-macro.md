@@ -1,8 +1,9 @@
 ---
 title: "_STATIC_ASSERT Macro"
 ms.date: "11/04/2016"
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_STATIC_ASSERT"]
 helpviewer_keywords: ["_STATIC_ASSERT macro"]
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da

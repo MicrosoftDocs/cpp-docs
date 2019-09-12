@@ -1,9 +1,10 @@
 ---
 title: "_aligned_recalloc"
 ms.date: "11/04/2016"
-apiname: ["_aligned_recalloc"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_aligned_recalloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["aligned_recalloc", "_aligned_recalloc"]
 helpviewer_keywords: ["aligned_recalloc function", "_aligned_recalloc function"]
 ms.assetid: d3da3dcc-79ef-4273-8af5-ac7469420142
