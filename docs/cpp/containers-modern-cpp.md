@@ -1,6 +1,6 @@
 ---
 title: "Containers (Modern C++)"
-ms.date: "1/18/2018"
+ms.date: "01/18/2018"
 ms.topic: "conceptual"
 ---
 # Containers (Modern C++)

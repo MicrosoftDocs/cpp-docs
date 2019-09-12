@@ -30,13 +30,13 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 
 |Name|Description|
 |----------|-----------------|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::AddButton](#addbutton)|Inserts a toolbar button into the list of commands on the **Commands** page|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu)|Loads a menu from the resources and calls [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands) to add that menu to the list of commands on the **Commands** page.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands)|Loads a menu from the resources and calls [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands) to add that menu to the list of commands on the **Commands** page.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar)|Loads a toolbar from the resources. Then, for each command in the menu calls the [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method to insert a button in the list of commands on the **Commands** page under the specified category.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::Create](#create)|Displays the **Customization** dialog box.|
+|[CMFCToolBarsCustomizeDialog::AddButton](#addbutton)|Inserts a toolbar button into the list of commands on the **Commands** page|
+|[CMFCToolBarsCustomizeDialog::AddMenu](#addmenu)|Loads a menu from the resources and calls [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands) to add that menu to the list of commands on the **Commands** page.|
+|[CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands)|Loads a menu from the resources and calls [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands) to add that menu to the list of commands on the **Commands** page.|
+|[CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar)|Loads a toolbar from the resources. Then, for each command in the menu calls the [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) method to insert a button in the list of commands on the **Commands** page under the specified category.|
+|[CMFCToolBarsCustomizeDialog::Create](#create)|Displays the **Customization** dialog box.|
 |`CMFCToolBarsCustomizeDialog::EnableTools`|Reserved for future use.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::EnableUserDefinedToolbars](#enableuserdefinedtoolbars)|Enables or disables creating new toolbars by using the **Customize** dialog box.|
+|[CMFCToolBarsCustomizeDialog::EnableUserDefinedToolbars](#enableuserdefinedtoolbars)|Enables or disables creating new toolbars by using the **Customize** dialog box.|
 |[CMFCToolBarsCustomizeDialog::FillAllCommandsList](#fillallcommandslist)|Populates the provided `CListBox` object with the commands in the **All Commands** category.|
 |[CMFCToolBarsCustomizeDialog::FillCategoriesComboBox](#fillcategoriescombobox)|Populates the provided `CComboBox` object with the name of each command category in the **Customize** dialog box.|
 |[CMFCToolBarsCustomizeDialog::FillCategoriesListBox](#fillcategorieslistbox)|Populates the provided `CListBox` object with the name of each command category in the **Customize** dialog box.|
@@ -44,23 +44,23 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 |[CMFCToolBarsCustomizeDialog::GetCountInCategory](#getcountincategory)|Retrieves the number of items in the provided list that have a given text label.|
 |[CMFCToolBarsCustomizeDialog::GetFlags](#getflags)|Retrieves the set of flags that affect the behavior of the dialog box.|
 |`CMFCToolBarsCustomizeDialog::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnEditToolbarMenuImage](#onedittoolbarmenuimage)|Starts an image editor so that a user can customize a toolbar button or menu item icon.|
+|[CMFCToolBarsCustomizeDialog::OnEditToolbarMenuImage](#onedittoolbarmenuimage)|Starts an image editor so that a user can customize a toolbar button or menu item icon.|
 |[CMFCToolBarsCustomizeDialog::OnInitDialog](#oninitdialog)|Overrides to augment property sheet initialization. (Overrides [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|
 |[CMFCToolBarsCustomizeDialog::PostNcDestroy](#postncdestroy)|Called by the framework after the window has been destroyed. (Overrides `CPropertySheet::PostNcDestroy`.)|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::RemoveButton](#removebutton)|Removes the button with the specified command ID from the specified category, or from all categories.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::RenameCategory](#renamecategory)|Renames a category in the list box of categories on the **Commands** tab.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::ReplaceButton](#replacebutton)|Replaces a button in the list of commands on the **Commands** tab with a new toolbar button object.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::SetUserCategory](#setusercategory)|Adds a category to the list of categories that will be displayed on the **Commands** tab.|
+|[CMFCToolBarsCustomizeDialog::RemoveButton](#removebutton)|Removes the button with the specified command ID from the specified category, or from all categories.|
+|[CMFCToolBarsCustomizeDialog::RenameCategory](#renamecategory)|Renames a category in the list box of categories on the **Commands** tab.|
+|[CMFCToolBarsCustomizeDialog::ReplaceButton](#replacebutton)|Replaces a button in the list of commands on the **Commands** tab with a new toolbar button object.|
+|[CMFCToolBarsCustomizeDialog::SetUserCategory](#setusercategory)|Adds a category to the list of categories that will be displayed on the **Commands** tab.|
 
 ### Protected Methods
 
 |Name|Description|
 |----------|-----------------|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::CheckToolsValidity](#checktoolsvalidity)|Called by the framework to determine whether the list of user-defined tools is valid.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnAfterChangeTool](#onafterchangetool)|Called by the framework when the properties of a user-defined tool change.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnAssignKey](#onassignkey)|Determines whether a specified keyboard shortcut can be assigned to an action.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnBeforeChangeTool](#onbeforechangetool)|Determines whether a user-defined tool can be changed.|
-|`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::OnInitToolsPage](#oninittoolspage)|Called by the framework when the user chooses the **Tools** tab is requested.|
+|[CMFCToolBarsCustomizeDialog::CheckToolsValidity](#checktoolsvalidity)|Called by the framework to determine whether the list of user-defined tools is valid.|
+|[CMFCToolBarsCustomizeDialog::OnAfterChangeTool](#onafterchangetool)|Called by the framework when the properties of a user-defined tool change.|
+|[CMFCToolBarsCustomizeDialog::OnAssignKey](#onassignkey)|Determines whether a specified keyboard shortcut can be assigned to an action.|
+|[CMFCToolBarsCustomizeDialog::OnBeforeChangeTool](#onbeforechangetool)|Determines whether a user-defined tool can be changed.|
+|[CMFCToolBarsCustomizeDialog::OnInitToolsPage](#oninittoolspage)|Called by the framework when the user chooses the **Tools** tab is requested.|
 
 ## Remarks
 

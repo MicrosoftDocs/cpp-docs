@@ -1,6 +1,6 @@
 ---
 title: "Linker Property Pages"
-ms.date: "7/24/2019"
+ms.date: "07/24/2019"
 ms.topic: "article"
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
 ---
@@ -43,7 +43,7 @@ The [/NOLOGO](nologo-suppress-startup-banner-linker.md) option prevents display 
 
 ### Ignore Import Library
 
-This property tells the linker not to link any .lib output generated from this build into any dependent project. This allows the project system to handle .dll files that do not produce a .lib file when built. If a project depends on another project that produces a DLL, the project system automatically links the .lib file produced by that child project. This may not be needed by projects that are producing COM DLLs or resource-only DLLs; these DLLs do not have any meaningful exports. If a DLL has no exports, the linker does not generate a .lib file. If no export .lib file is present on the disk, and the project system tells the linker to link with this (missing) DLL, the link fails. Use the **Ignore Import Library** property to resolve this problem. When set to **Yes**, the project system ignores the presence or absence of that .lib file and causes any project that depends on this project to not link with the nonexistent .lib file.
+This property tells the linker not to link any .lib output generated from this build into any dependent project. It allows the project system to handle .dll files that don't produce a .lib file when built. If a project depends on another project that produces a DLL, the project system automatically links the .lib file produced by that child project. This property may be unnecessary in projects that produce COM DLLs or resource-only DLLs, because these DLLs don't have any meaningful exports. If a DLL has no exports, the linker doesn't generate a .lib file. If no export .lib file is present, and the project system tells the linker to link with the missing DLL, the link fails. Use the **Ignore Import Library** property to resolve this problem. When set to **Yes**, the project system ignores the presence or absence of the .lib file, and causes any project that depends on this project to not link with the nonexistent .lib file.
 
 To programmatically access this property, see <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>.
 
@@ -55,7 +55,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### Per-user Redirection
 
-Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With Windows Vista and later operating systems, to access HKCR you must run Visual Studio in elevated mode. Developers do not always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in this mode.
+Registration in Visual Studio has traditionally been done in HKEY_CLASSES_ROOT (HKCR). With Windows Vista and later operating systems, to access HKCR you must run Visual Studio in elevated mode. Developers don't always want to run in elevated mode but still must work with registration. Per-user redirection allows you to register without having to run in elevated mode.
 
 Per-user redirection forces any writes to HKCR to be redirected to HKEY\_CURRENT\_USER (HKCU). If per-user redirection is turned off, it can cause [Project Build Error PRJ0050](../../error-messages/tool-errors/project-build-error-prj0050.md) when the program tries to write to HKCR.
 
@@ -65,13 +65,13 @@ Allows the user to override the environmental library path. ([/LIBPATH](libpath-
 
 ### Link Library Dependencies
 
-Specifies whether to link the .lib files that are produced by dependent projects. Typically, you want to link in the .lib files, but this may not be the case for certain DLLs.
+Specifies whether to link the .lib files that are produced by dependent projects. Typically, you want to link in the .lib files, but it may not be the case for certain DLLs.
 
-You can also specify a .obj file by providing the file name and relative path, for example "..\\..\MyLibProject\MyObjFile.obj". If the source code for the .obj file #includes a precompiled header, for example pch.h, then the pch.obj file is located in the same folder as MyObjFile.obj, and you must also add pch.obj as an additional dependency.
+You can also specify a .obj file by providing the file name and relative path, for example "..\\..\MyLibProject\MyObjFile.obj". If the source code for the .obj file #includes a precompiled header, for example pch.h, then the pch.obj file is located in the same folder as MyObjFile.obj. You must also add pch.obj as an additional dependency.
 
 ### Use Library Dependency Inputs
 
-Specifies whether or not the inputs to the librarian tool are used rather than the library file itself when linking in library outputs of project dependencies. In a large project, when a dependent project produces a .lib file, incremental linking is disabled. If there are many dependent projects that produce .lib files, building the application can take a long time. When this property is set to **Yes**, the project system links in the .obj files for .libs produced by dependent projects, thus enabling incremental linking.
+Specifies whether to use the inputs to the librarian tool, rather than the library file itself, when linking in library outputs of project dependencies. In a large project, when a dependent project produces a .lib file, incremental linking is disabled. If there are many dependent projects that produce .lib files, building the application can take a long time. When this property is set to **Yes**, the project system links in the .obj files for .libs produced by dependent projects, enabling incremental linking.
 
 For information about how to access the **General** linker property page, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
@@ -79,9 +79,9 @@ For information about how to access the **General** linker property page, see [S
 
 Specifies whether the linker should display a progress indicator showing what percentage of the link is complete. The default is to not display this status information. ([/LTCG](ltcg-link-time-code-generation.md):STATUS|LTCG:NOSTATUS)
 
-### Prevent Dll Binding
+### Prevent DLL Binding
 
-[/ALLOWBIND](allowbind-prevent-dll-binding.md):NO sets a bit in a DLL's header that indicates to Bind.exe that the image is not allowed to be bound. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature).
+[/ALLOWBIND](allowbind-prevent-dll-binding.md):NO sets a bit in a DLL's header that indicates to Bind.exe that the image isn't allowed to be bound. You may not want a DLL to be bound if it has been digitally signed (binding invalidates the signature).
 
 ### Treat Linker Warning As Errors
 
@@ -89,12 +89,12 @@ Specifies whether the linker should display a progress indicator showing what pe
 
 ### Force File Output
 
-The [/FORCE](force-force-file-output.md) option tells the linker to create an .exe file or DLL even if a symbol is referenced but not defined or is multiply defined. It may create invalid .exe file.
+The [/FORCE](force-force-file-output.md) option tells the linker to create an .exe file or DLL even if a symbol is referenced but not defined, or is multiply defined. It may create invalid .exe file.
 
 **Choices**
 
 - **Enabled** - /FORCE with no arguments implies both multiple and unresolved.
-- **Multiply Defined Symbol Only** - Use /FORCE:MULTIPLE to create an output file whether or not LINK finds more than one definition for a symbol.
+- **Multiply Defined Symbol Only** - Use /FORCE:MULTIPLE to create an output file, even if LINK finds more than one definition for a symbol.
 - **Undefined Symbol Only** - Use /FORCE:UNRESOLVED to create an output file whether or not LINK finds an undefined symbol. /FORCE:UNRESOLVED is ignored if the entry point symbol is unresolved.
 
 ### Create Hot Patchable Image
@@ -124,7 +124,7 @@ The [/NODEFAULTLIB](nodefaultlib-ignore-libraries.md) option tells the linker to
 
 ### Ignore Specific Default Libraries
 
-Specifies one or more names of default libraries to ignore; separate multiple libraries with semi-colons. (/NODEFAULTLIB:[name, name, ...])
+Specifies one or more names of default libraries to ignore. Separate multiple libraries with semi-colons. (/NODEFAULTLIB:[name, name, ...])
 
 ### Module Definition File
 
@@ -142,7 +142,7 @@ The [/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md) optio
 
 The [/INCLUDE](include-force-symbol-references.md) option tells the linker to add a specified symbol to the symbol table.
 
-### Delay Loaded Dlls
+### Delay Loaded DLLs
 
 The [/DELAYLOAD](delayload-delay-load-import.md) option causes delayed loading of DLLs. The dll name specifies a DLL to delay load. 
 
@@ -227,7 +227,7 @@ The [/MAPINFO](mapinfo-include-information-in-mapfile.md) option tells the linke
 
 ### SubSystem
 
-The [/SUBSYSTEM](subsystem-specify-subsystem.md) option tells the operating system how to run the .exe file.The choice of subsystem affects the entry point symbol (or entry point function) that the linker will choose.
+The [/SUBSYSTEM](subsystem-specify-subsystem.md) option tells the operating system how to run the .exe file. The choice of subsystem affects the entry point symbol (or entry point function) that the linker will choose.
 
 **Choices**
 
@@ -271,11 +271,11 @@ The [/TSAWARE](tsaware-create-terminal-server-aware-application.md) option sets 
 
 ### Swap Run From CD
 
-The [/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This is a Windows NT 4.0 (and later) feature. When **CD** is specified, the operating system will copy the image on a removable disk to a page file and then load it.
+The [/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This option is a Windows NT 4.0 (and later) feature. When **CD** is specified, the operating system will copy the image on a removable disk to a page file and then load it.
 
 ### Swap Run From Network
 
-The [/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This is a Windows NT 4.0 (and later) feature. If **NET** is specified, the operating system will first copy the binary image from the network to a swap file and load it from there. This option is useful for running applications over the network.
+The [/SWAPRUN](swaprun-load-linker-output-to-swap-file.md) option tells the operating system to first copy the linker output to a swap file, and then run the image from there. This option is a Windows NT 4.0 (and later) feature. If **NET** is specified, the operating system will first copy the binary image from the network to a swap file and load it from there. This option is useful for running applications over the network.
 
 ### Driver
 
@@ -292,11 +292,11 @@ Use the [/DRIVER](driver-windows-nt-kernel-mode-driver.md) linker option to buil
 
 ### References
 
-[/OPT](opt-optimizations.md):REF eliminates functions and/or data that are never referenced while /OPT:NOREF keeps functions and/or data that are never referenced. 
+[/OPT](opt-optimizations.md):REF eliminates functions and/or data that's never referenced while /OPT:NOREF keeps functions and/or data that's never referenced.
 
 ### Enable COMDAT Folding
 
-Use [/OPT](opt-optimizations.md):ICF\[=iterations] to perform identical COMDAT folding. 
+Use [/OPT](opt-optimizations.md):ICF\[=iterations] to perform identical COMDAT folding.
 
 ### Function Order
 

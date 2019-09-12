@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (level 1) C4305"
-ms.date: "1/17/2018"
+ms.date: "01/17/2018"
 f1_keywords: ["C4305"]
 helpviewer_keywords: ["C4305"]
 ---

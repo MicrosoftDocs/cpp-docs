@@ -737,7 +737,7 @@ This method implements the behavior of the Win32 macro, [ListView_GetBkImage](/w
         if (m_myListCtrl.GetBkImage(&bki) && (bki.ulFlags == LVBKIF_SOURCE_NONE))
         {
             m_myListCtrl.SetBkImage(
-                _T("http://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
+                _T("https://www.microsoft.com/library/images/gifs/homepage/microsoft.gif"),
                 TRUE);
         }
 ```
