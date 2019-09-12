@@ -1,6 +1,6 @@
 ---
 title: "Application Design Choices"
-ms.date: "11/04/2016"
+ms.date: "09/12/2019"
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
 ---
@@ -14,7 +14,7 @@ Topics covered in this article include:
 
 - [Client or Server Application](#_core_client_or_server_application)
 
-- [](#_core_the_web_page)
+- [The Web Page](#_core_the_web_page)
 
 - [Browser or Stand-Alone Application](#_core_browser_or_standalone)
 
@@ -54,7 +54,7 @@ You can write ActiveX controls that are embedded in an HTML page and Active docu
 
 ActiveX controls, Active documents, and asynchronous monikers all use COM (Component Object Model) technologies.
 
-ActiveX controls provide dynamic content to documents and pages on Internet sites. With COM you can build ActiveX controls and full-frame documents using Active documents.
+ActiveX controls provide dynamic content to documents and pages on Internet sites. With COM, you can build ActiveX controls and full-frame documents using Active documents.
 
 Asynchronous monikers provide features to enable a control to perform well in an Internet environment, including an incremental or progressive means to download data. Controls must also work well with other controls that may also be retrieving their data asynchronously at the same time.
 
