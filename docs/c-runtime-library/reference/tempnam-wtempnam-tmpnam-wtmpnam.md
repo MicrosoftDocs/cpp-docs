@@ -1,9 +1,10 @@
 ---
 title: "_tempnam, _wtempnam, tmpnam, _wtmpnam"
 ms.date: "11/04/2016"
-apiname: ["_wtempnam", "_wtmpnam", "tmpnam", "_tempnam"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wtempnam", "_wtmpnam", "tmpnam", "_tempnam"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["wtempnam", "_wtmpnam", "wtmpnam", "tmpnam", "_wtempnam", "_tempnam"]
 helpviewer_keywords: ["wtempnam function", "file names [C++], creating temporary", "_tempnam function", "ttmpnam function", "tmpnam function", "tempnam function", "wtmpnam function", "temporary files, creating", "file names [C++], temporary", "_ttmpnam function", "_wtmpnam function", "_wtempnam function"]
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca

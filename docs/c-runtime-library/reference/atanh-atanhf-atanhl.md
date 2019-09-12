@@ -1,9 +1,10 @@
 ---
 title: "atanh, atanhf, atanhl"
 ms.date: "04/05/2018"
-apiname: ["atanhl", "atanhf", "atanh"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["atanhl", "atanhf", "atanh"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["atanhl", "atanhf", "atanh"]
 helpviewer_keywords: ["atanhf function", "atanhl function", "atanh funciton"]
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32

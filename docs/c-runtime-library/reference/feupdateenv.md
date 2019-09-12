@@ -1,9 +1,9 @@
 ---
 title: "feupdateenv"
 ms.date: "04/05/2018"
-apiname: ["feupdateenv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "HeaderDef"
+api_name: ["feupdateenv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["HeaderDef"]
 f1_keywords: ["feupdateenv", "fenv/feupdateenv"]
 helpviewer_keywords: ["feupdateenv function"]
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9

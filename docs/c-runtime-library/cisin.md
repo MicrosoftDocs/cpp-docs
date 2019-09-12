@@ -1,9 +1,10 @@
 ---
 title: "_CIsin"
 ms.date: "04/10/2018"
-apiname: ["_CIsin"]
-apilocation: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_CIsin"]
+api_location: ["msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["CIsin", "_CIsin"]
 helpviewer_keywords: ["_CIsin intrinsic", "CIsin intrinsic"]
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2

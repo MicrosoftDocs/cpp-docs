@@ -1,9 +1,10 @@
 ---
 title: "_heapset"
 ms.date: "11/04/2016"
-apiname: ["_heapset"]
-apilocation: ["msvcr90.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll"]
-apitype: "DLLExport"
+api_name: ["_heapset"]
+api_location: ["msvcr90.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_heapset", "heapset"]
 helpviewer_keywords: ["checking heap", "heapset function", "heaps, checking", "debugging [CRT], heap-related problems", "_heapset function"]
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c

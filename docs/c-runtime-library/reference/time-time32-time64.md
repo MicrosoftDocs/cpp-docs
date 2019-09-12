@@ -1,9 +1,10 @@
 ---
 title: "time, _time32, _time64"
 ms.date: "11/06/2018"
-apiname: ["time", "_time64", "_time32"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["time", "_time64", "_time32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["time", "_time64", "time/time", "time/_time32", "time/_time64", "_time32"]
 helpviewer_keywords: ["time32 function", "_time32 function", "_time64 function", "time functions", "system time", "time64 function"]
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7

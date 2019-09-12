@@ -1,8 +1,9 @@
 ---
 title: "printf_p Positional Parameters"
 ms.date: "11/04/2016"
-apilocation: ["msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll"]
-apitype: "DLLExport"
+api_location: ["msvcr120.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 helpviewer_keywords: ["_printf_p function, positional parameters", "printf_p function, positional parameters"]
 ms.assetid: beb4fd85-a7aa-4665-9085-2c907a5b9ab0
 ---

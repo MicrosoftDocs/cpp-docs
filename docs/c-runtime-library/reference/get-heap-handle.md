@@ -1,9 +1,10 @@
 ---
 title: "_get_heap_handle"
 ms.date: "11/04/2016"
-apiname: ["_get_heap_handle"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_get_heap_handle"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_get_heap_handle", "get_heap_handle"]
 helpviewer_keywords: ["heap functions", "memory allocation, heap memory", "_get_heap_handle function", "get_heap_handle function"]
 ms.assetid: a4d05049-8528-494a-8281-a470d1e1115c

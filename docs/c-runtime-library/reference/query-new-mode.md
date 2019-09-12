@@ -1,9 +1,10 @@
 ---
 title: "_query_new_mode"
 ms.date: "11/04/2016"
-apiname: ["_query_new_mode"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_query_new_mode"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["query_new_mode", "_query_new_mode"]
 helpviewer_keywords: ["query_new_mode function", "handler modes", "_query_new_mode function"]
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768

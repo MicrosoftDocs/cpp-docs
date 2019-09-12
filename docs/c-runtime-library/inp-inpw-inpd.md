@@ -1,9 +1,10 @@
 ---
 title: "_inp, _inpw, _inpd"
 ms.date: "11/04/2016"
-apiname: ["_inp", "_inpw", "_inpd"]
-apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll"]
-apitype: "DLLExport"
+api_name: ["_inp", "_inpw", "_inpd"]
+api_location: ["msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["inpd", "_inp", "_inpw", "_inpd"]
 helpviewer_keywords: ["inp function", "inpw function", "ports, I/O routines", "inpd function", "_inp function", "_inpd function", "I/O [CRT], port", "_inpw function"]
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3

@@ -1,9 +1,10 @@
 ---
 title: "_realloc_dbg"
 ms.date: "11/04/2016"
-apiname: ["_realloc_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_realloc_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_realloc_dbg", "realloc_dbg"]
 helpviewer_keywords: ["reallocating memory blocks", "realloc_dbg function", "memory blocks, reallocating", "memory, reallocating", "_realloc_dbg function"]
 ms.assetid: 7c3cb780-51ed-4d9c-9929-cdde606d846a
