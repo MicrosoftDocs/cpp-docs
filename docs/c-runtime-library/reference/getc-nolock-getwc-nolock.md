@@ -1,9 +1,9 @@
 ---
 title: "_getc_nolock, _getwc_nolock"
 ms.date: "11/04/2016"
-apiname: ["_getc_nolock", "_getwc_nolock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_getc_nolock", "_getwc_nolock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["getc_nolock", "_gettc_nolock", "_getc_nolock", "getwc_nolock", "gettc_nolock", "_getwc_nolock"]
 helpviewer_keywords: ["characters, reading", "_getc_nolock function", "_getwc_nolock function", "getwc_nolock function", "streams, reading characters from", "reading characters from streams", "getc_nolock function", "gettc_nolock function", "_gettc_nolock function"]
 ms.assetid: eb37b272-e177-41c9-b077-12ce7ffd3b88

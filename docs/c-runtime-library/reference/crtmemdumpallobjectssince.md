@@ -1,9 +1,9 @@
 ---
 title: "_CrtMemDumpAllObjectsSince"
 ms.date: "11/04/2016"
-apiname: ["_CrtMemDumpAllObjectsSince"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtMemDumpAllObjectsSince"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["CrtMemDumpAllObjectsSince", "_CrtMemDumpAllObjectsSince"]
 helpviewer_keywords: ["_CrtMemDumpAllObjectsSince function", "CrtMemDumpAllObjectsSince function"]
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc

@@ -1,8 +1,8 @@
 ---
 title: "_ismbb Routines"
 ms.date: "11/04/2016"
-apilocation: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]
-apitype: "DLLExport"
+api_location: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_ismbb", "ismbb"]
 helpviewer_keywords: ["ismbb routines", "_ismbb routines"]
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b

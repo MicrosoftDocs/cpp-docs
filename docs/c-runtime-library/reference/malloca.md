@@ -1,9 +1,9 @@
 ---
 title: "_malloca"
 ms.date: "11/04/2016"
-apiname: ["_malloca"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_malloca"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["malloca", "_malloca"]
 helpviewer_keywords: ["memory allocation, stack", "malloca function", "_malloca function"]
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936

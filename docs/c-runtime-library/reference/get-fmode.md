@@ -1,9 +1,9 @@
 ---
 title: "_get_fmode"
 ms.date: "11/04/2016"
-apiname: ["_get_fmode"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_get_fmode"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["get_fmode", "_get_fmode"]
 helpviewer_keywords: ["_get_fmode function", "file translation [C++], default mode", "get_fmode function"]
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c

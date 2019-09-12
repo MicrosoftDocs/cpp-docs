@@ -1,9 +1,9 @@
 ---
 title: "_ftime, _ftime32, _ftime64"
 ms.date: "11/04/2016"
-apiname: ["_ftime64", "_ftime", "_ftime32"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_ftime64", "_ftime", "_ftime32"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_ftime32", "_ftime", "_ftime64", "ftime64", "ftime", "ftime32"]
 helpviewer_keywords: ["ftime64 function", "_ftime64 function", "current time", "_ftime function", "ftime function", "_ftime32 function", "ftime32 function", "time, getting current"]
 ms.assetid: 96bc464c-3bcd-41d5-a212-8bbd836b814a

@@ -1,9 +1,9 @@
 ---
 title: "_getcwd, _wgetcwd"
 ms.date: "11/04/2016"
-apiname: ["_wgetcwd", "_getcwd"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wgetcwd", "_getcwd"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_getcwd", "wgetcwd", "_wgetcwd", "tgetcwd", "_tgetcwd"]
 helpviewer_keywords: ["getcwd function", "working directory", "_wgetcwd function", "_getcwd function", "current working directory", "wgetcwd function", "directories [C++], current working"]
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739

@@ -1,9 +1,9 @@
 ---
 title: "_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l"
 ms.date: "11/04/2016"
-apiname: ["_vwprintf_p", "_vprintf_p", "_vprintf_p_l", "_vwprintf_p_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_vwprintf_p", "_vprintf_p", "_vprintf_p_l", "_vwprintf_p_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_vwprintf_p_l", "vprintf_p", "_vprintf_p_l", "_vwprintf_p", "vprintf_p_l", "vwprintf_p_l", "vwprintf_p", "vtprintf_p", "_vtprintf_p", "_vprintf_p"]
 helpviewer_keywords: ["_vtprintf_p_l function", "_vtprintf_p function", "vtprintf_p function", "_vwprintf_p function", "_vwprintf_p_l function", "_vprintf_p function", "_vprintf_p_l function", "vprintf_p_l function", "vwprintf_p function", "vprintf_p function", "vtprintf_p_l function", "vwprintf_p_l function", "formatted text [C++]"]
 ms.assetid: 3f99bde3-c891-493d-908f-30559c421058

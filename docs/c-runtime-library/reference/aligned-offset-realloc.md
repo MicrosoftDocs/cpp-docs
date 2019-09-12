@@ -1,9 +1,9 @@
 ---
 title: "_aligned_offset_realloc"
 ms.date: "11/04/2016"
-apiname: ["_aligned_offset_realloc"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_aligned_offset_realloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["aligned_offset_realloc", "_aligned_offset_realloc"]
 helpviewer_keywords: ["aligned_offset_realloc function", "_aligned_offset_realloc function"]
 ms.assetid: e0263533-991e-41b0-acc9-1b8a51ab9ecd

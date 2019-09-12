@@ -1,9 +1,9 @@
 ---
 title: "memcpy, wmemcpy"
 ms.date: "11/04/2016"
-apiname: ["memcpy", "wmemcpy"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["memcpy", "wmemcpy"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
+api_type: "DLLExport"
 f1_keywords: ["wmemcpy", "memcpy"]
 helpviewer_keywords: ["wmemcpy function", "memcpy function"]
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6

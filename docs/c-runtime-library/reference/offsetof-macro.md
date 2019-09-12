@@ -1,8 +1,8 @@
 ---
 title: "offsetof Macro"
 ms.date: "11/04/2016"
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["offsetof"]
 helpviewer_keywords: ["structure members, offset", "offsetof macro"]
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352

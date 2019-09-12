@@ -1,9 +1,9 @@
 ---
 title: "atof, _atof_l, _wtof, _wtof_l"
 ms.date: "04/05/2018"
-apiname: ["_wtof_l", "atof", "_atof_l", "_wtof"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wtof_l", "atof", "_atof_l", "_wtof"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_tstof", "_ttof", "atof", "stdlib/atof", "math/atof", "_atof_l", "stdlib/_atof_l", "math/_atof_l", "_wtof", "corecrt_wstdlib/_wtof", "_wtof_l", "corecrt_wstdlib/_wtof_l"]
 helpviewer_keywords: ["tstof function", "atof_l function", "_atof_l function", "atof function", "_tstof function", "_ttof function", "wtof function", "_wtof_l function", "ttof function", "wtof_l function", "_wtof function", "string conversion, to floating point values"]
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75

@@ -1,9 +1,9 @@
 ---
 title: "memchr, wmemchr"
 ms.date: "03/31/2019"
-apiname: ["wmemchr", "memchr"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["wmemchr", "memchr"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
+api_type: "DLLExport"
 f1_keywords: ["memchr", "wmemchr"]
 helpviewer_keywords: ["memchr function", "wmemchr function"]
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f

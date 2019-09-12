@@ -1,9 +1,9 @@
 ---
 title: "clock"
 ms.date: "11/04/2016"
-apiname: ["clock"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["clock"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["clock"]
 helpviewer_keywords: ["processor time used, calculating", "time, calculating processor", "clock function", "processor time used", "calculating processor time used"]
 ms.assetid: 3e1853dd-498f-49ba-b06a-f2315f20904e

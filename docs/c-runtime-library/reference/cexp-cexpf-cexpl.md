@@ -1,9 +1,9 @@
 ---
 title: "cexp, cexpf, cexpl"
 ms.date: "11/04/2016"
-apiname: ["cexp", "cexpf", "cexpl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["cexp", "cexpf", "cexpl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["cexp", "cexpf", "cexpl", "complex/cepx", "complex/cexpf", "complex/cexpl"]
 helpviewer_keywords: ["cexp function", "cexpl function", "cexpf function"]
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da

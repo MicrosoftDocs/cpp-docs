@@ -1,9 +1,9 @@
 ---
 title: "cos, cosf, cosl"
 ms.date: "04/05/2018"
-apiname: ["cos", "cosf", "cosl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["cos", "cosf", "cosl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["cos", "cosf", "cosl"]
 helpviewer_keywords: ["cosines", "cosl function", "calculating cosine", "cosf function", "cos function", "trigonometric functions", "cosines, calculating"]
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16

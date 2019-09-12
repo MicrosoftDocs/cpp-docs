@@ -1,9 +1,9 @@
 ---
 title: "freopen_s, _wfreopen_s"
 ms.date: "11/04/2016"
-apiname: ["_wfreopen_s", "freopen_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wfreopen_s", "freopen_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["freopen_s", "_tfreopen_s", "_wfreopen_s"]
 helpviewer_keywords: ["_tfreopen_s function", "_wfreopen_s function", "file pointers [C++], reassigning", "tfreopen_s function", "wfreopen_s function", "freopen_s function"]
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d

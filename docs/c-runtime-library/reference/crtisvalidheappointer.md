@@ -1,9 +1,9 @@
 ---
 title: "_CrtIsValidHeapPointer"
 ms.date: "11/04/2016"
-apiname: ["_CrtIsValidHeapPointer"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtIsValidHeapPointer"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["CrtlsValidHeapPointer", "_CrtIsValidHeapPointer"]
 helpviewer_keywords: ["_CrtIsValidHeapPointer function", "CrtIsValidHeapPointer function"]
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5

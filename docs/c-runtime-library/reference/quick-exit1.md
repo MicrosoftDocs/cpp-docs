@@ -1,9 +1,9 @@
 ---
 title: "quick_exit1"
 ms.date: "11/04/2016"
-apiname: ["quick_exit"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["quick_exit"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["quick_exit", "process/quick_exit", "stdlib/quick_exit"]
 helpviewer_keywords: ["quick_exit function"]
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c

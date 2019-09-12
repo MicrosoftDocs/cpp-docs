@@ -1,9 +1,9 @@
 ---
 title: "_tempnam_dbg, _wtempnam_dbg"
 ms.date: "11/04/2016"
-apiname: ["_wtempnam_dbg", "_tempnam_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_wtempnam_dbg", "_tempnam_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["wtempnam_dbg", "tempnam_dbg", "_tempnam_dbg", "_wtempnam_dbg"]
 helpviewer_keywords: ["file names [C++], creating temporary", "tempnam_dbg function", "temporary files, creating", "file names [C++], temporary", "wtempnam_dbg function", "_tempnam_dbg function", "_wtempnam_dbg function"]
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170

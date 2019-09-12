@@ -1,9 +1,9 @@
 ---
 title: "_heapwalk"
 ms.date: "11/04/2016"
-apiname: ["_heapwalk"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_heapwalk"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["heapwalk", "_heapwalk"]
 helpviewer_keywords: ["debugging [CRT], heap-related problems", "heapwalk function", "_heapwalk function"]
 ms.assetid: 2df67649-fb00-4570-a8b1-a4eca5738744

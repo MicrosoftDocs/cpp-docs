@@ -1,9 +1,9 @@
 ---
 title: "fdim, fdimf, fdiml"
 ms.date: "04/05/2018"
-apiname: ["fdim", "fdimf", "fdiml"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["fdim", "fdimf", "fdiml"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["fdim", "fdimf", "fdiml", "math/fdim", "math/fdimf", "math/fdiml"]
 helpviewer_keywords: ["fdim function", "fdimf function", "fdiml function"]
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0

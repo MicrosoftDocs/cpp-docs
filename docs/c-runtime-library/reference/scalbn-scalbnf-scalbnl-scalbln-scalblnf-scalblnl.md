@@ -1,9 +1,9 @@
 ---
 title: "scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl"
 ms.date: "04/05/2018"
-apiname: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
 helpviewer_keywords: ["scalbn function", "scalbln function", "scalblnl function", "scalbnl function", "scalbnf function", "scalblnf function"]
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d

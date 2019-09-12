@@ -1,9 +1,9 @@
 ---
 title: "_strdec, _wcsdec, _mbsdec, _mbsdec_l"
 ms.date: "11/04/2016"
-apiname: ["_wcsdec", "_strdec", "_mbsdec", "_mbsdec_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wcsdec", "_strdec", "_mbsdec", "_mbsdec_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_strdec", "mbsdec_l", "strdec", "_mbsdec", "_mbsdec_l", "mbsdec", "wcsdec", "_wcsdec"]
 helpviewer_keywords: ["mbsdec_l function", "mbsdec function", "tcsdec function", "_tcsdec function", "_strdec function", "_wcsdec function", "_mbsdec_l function", "strdec function", "wcsdec function", "_mbsdec function"]
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd

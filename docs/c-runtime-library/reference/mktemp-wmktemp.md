@@ -1,9 +1,9 @@
 ---
 title: "_mktemp, _wmktemp"
 ms.date: "11/04/2016"
-apiname: ["_wmktemp", "_mktemp"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wmktemp", "_mktemp"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_tmktemp", "wmktemp", "tmktemp", "_wmktemp", "_mktemp"]
 helpviewer_keywords: ["_wmktemp function", "_mktemp function", "files [C++], temporary", "tmktemp function", "_tmktemp function", "wmktemp function", "mktemp function", "temporary files [C++]"]
 ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85

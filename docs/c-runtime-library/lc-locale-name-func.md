@@ -1,9 +1,9 @@
 ---
 title: "___lc_locale_name_func"
 ms.date: "11/04/2016"
-apiname: ["___lc_locale_name_func"]
-apilocation: ["msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
-apitype: "DLLExport"
+api_name: ["___lc_locale_name_func"]
+api_location: ["msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
+api_type: "DLLExport"
 f1_keywords: ["___lc_locale_name_func"]
 helpviewer_keywords: ["___lc_locale_name_func"]
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e

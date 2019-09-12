@@ -1,9 +1,9 @@
 ---
 title: "_callnewh"
 ms.date: "11/04/2016"
-apiname: ["_callnewh"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_callnewh"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_callnewh"]
 helpviewer_keywords: ["_callnewh"]
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8

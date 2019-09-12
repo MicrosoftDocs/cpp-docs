@@ -1,9 +1,9 @@
 ---
 title: "cbrt, cbrtf, cbrtl"
 ms.date: "04/05/2018"
-apiname: ["cbrt", "cbrtf", "cbrtl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["cbrt", "cbrtf", "cbrtl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["cbrtl", "cbrt", "cbrtf"]
 helpviewer_keywords: ["cbrtl function", "cbrtf function", "cbrt function"]
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f

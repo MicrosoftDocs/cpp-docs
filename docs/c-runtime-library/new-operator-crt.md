@@ -1,8 +1,8 @@
 ---
 title: "operator new(CRT)"
 ms.date: "11/04/2016"
-apilocation: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll", "msvcr90.dll"]
-apitype: "DLLExport"
+api_location: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll", "msvcr90.dll"]
+api_type: "DLLExport"
 f1_keywords: ["new[]"]
 helpviewer_keywords: ["operator new[]", "vector new"]
 ms.assetid: 79682f85-6889-40f6-b8f7-9eed5176ea35

@@ -1,9 +1,9 @@
 ---
 title: "feraiseexcept"
 ms.date: "04/05/2018"
-apiname: ["feraiseexcept"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "HeaderDef"
+api_name: ["feraiseexcept"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "HeaderDef"
 f1_keywords: ["feraiseexcept", "fenv/feraiseexcept"]
 helpviewer_keywords: ["feraiseexcept function"]
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437

@@ -1,9 +1,9 @@
 ---
 title: "_cabs"
 ms.date: "11/04/2016"
-apiname: ["_cabs"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_cabs"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["cabsl", "_cabs", "_cabsl"]
 helpviewer_keywords: ["cabs function", "cabsl function", "absolute values", "_cabsl function", "_cabs function", "calculating absolute values"]
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26

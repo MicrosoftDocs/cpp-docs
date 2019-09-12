@@ -1,9 +1,9 @@
 ---
 title: "_mbccpy, _mbccpy_l"
 ms.date: "11/04/2016"
-apiname: ["_mbccpy", "_mbccpy_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbccpy", "_mbccpy_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_mbccpy", "tccpy", "ftccpy", "mbccpy", "_tccpy", "_ftccpy"]
 helpviewer_keywords: ["_tccpy function", "_tccpy_l function", "tccpy_l function", "tccpy function", "mbccpy function", "_mbccpy_l function", "_mbccpy function", "mbccpy_l function"]
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa

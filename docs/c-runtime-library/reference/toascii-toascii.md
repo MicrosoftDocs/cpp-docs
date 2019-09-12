@@ -1,9 +1,9 @@
 ---
 title: "toascii, __toascii"
 ms.date: "11/04/2016"
-apiname: ["__toascii"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["__toascii"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__toascii", "toascii", "ctype/toascii", "ctype/__toascii"]
 helpviewer_keywords: ["toascii function", "string conversion, to ASCII characters", "__toascii function", "ASCII characters, converting to"]
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c

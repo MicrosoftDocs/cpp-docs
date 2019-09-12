@@ -1,9 +1,9 @@
 ---
 title: "sinh, sinhf, sinhl"
 ms.date: "04/10/2018"
-apiname: ["sinhl", "sinhf", "sinhl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["sinhl", "sinhf", "sinhl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["sinh", "sinhf", "sinhl"]
 helpviewer_keywords: ["sinh function", "sinhl function", "sinhf function", "calculating hyperbolic sines", "trigonometric functions", "sinhf function", "sinhl function", "hyperbolic functions"]
 ---

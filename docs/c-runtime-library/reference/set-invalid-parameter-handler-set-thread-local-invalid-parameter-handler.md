@@ -1,9 +1,9 @@
 ---
 title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler"
 ms.date: "11/04/2016"
-apiname: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["set_invalid_parameter_handler", "_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
 helpviewer_keywords: ["invalid parameter handler", "set_invalid_parameter_handler function", "_set_invalid_parameter_handler function", "_set_thread_local_invalid_parameter_handler function"]
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11

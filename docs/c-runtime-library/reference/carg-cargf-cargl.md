@@ -1,9 +1,9 @@
 ---
 title: "carg, cargf, cargl"
 ms.date: "11/04/2016"
-apiname: ["carg", "cargf", "cargl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["carg", "cargf", "cargl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["carg", "cargf", "cargl", "complex/carg", "complex/cargf", "complex/cargl"]
 helpviewer_keywords: ["carg function", "cargf function", "cargl function"]
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be

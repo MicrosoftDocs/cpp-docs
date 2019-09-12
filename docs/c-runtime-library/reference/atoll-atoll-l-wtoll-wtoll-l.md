@@ -1,9 +1,9 @@
 ---
 title: "atoll, _atoll_l, _wtoll, _wtoll_l"
 ms.date: "11/04/2016"
-apiname: ["_wtoll", "_atoll_l", "_wtoll_l", "atoll"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wtoll", "_atoll_l", "_wtoll_l", "atoll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_tstoll_l", "_wtoll", "_atoll_l", "_ttoll", "_tstoll", "_wtoll_l", "atoll"]
 helpviewer_keywords: ["atoll function", "_wtoll_l function", "_wtoll function", "_atoll_l function"]
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8

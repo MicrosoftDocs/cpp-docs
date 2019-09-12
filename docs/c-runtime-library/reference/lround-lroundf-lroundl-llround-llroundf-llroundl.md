@@ -1,9 +1,9 @@
 ---
 title: "lround, lroundf, lroundl, llround, llroundf, llroundl"
 ms.date: "04/05/2018"
-apiname: ["llround", "llroundf", "llroundl", "lroundf", "lround", "lroundl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["llround", "llroundf", "llroundl", "lroundf", "lround", "lroundl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["lround", "lroundl", "llroundl", "llround", "lroundf", "llroundf"]
 helpviewer_keywords: ["lround function", "llroundl function", "llround function", "lroundf function", "llroundf function", "lroundl function"]
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8

@@ -1,9 +1,9 @@
 ---
 title: "_CIatan"
 ms.date: "11/04/2016"
-apiname: ["_CIatan"]
-apilocation: ["msvcr120.dll", "msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_CIatan"]
+api_location: ["msvcr120.dll", "msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_CIatan", "CIatan"]
 helpviewer_keywords: ["CIatan intrinsic", "_CIatan intrinsic"]
 ms.assetid: 3baa0429-fe46-4bab-8b00-868e2186dc8c

@@ -1,9 +1,9 @@
 ---
 title: "strrev, wcsrev"
 ms.date: "11/04/2016"
-apiname: ["strrev", "wcsrev"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["strrev", "wcsrev"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["strrev", "wcsrev"]
 helpviewer_keywords: ["strrev function", "wcsrev function"]
 ms.assetid: 89e05854-a9ce-4fb7-993d-a9831cd7edf2

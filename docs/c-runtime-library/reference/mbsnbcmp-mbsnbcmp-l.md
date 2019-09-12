@@ -1,9 +1,9 @@
 ---
 title: "_mbsnbcmp, _mbsnbcmp_l"
 ms.date: "11/04/2016"
-apiname: ["_mbsnbcmp", "_mbsnbcmp_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbsnbcmp", "_mbsnbcmp_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["mbsnbcmp", "tcsnbmp", "_mbsnbcmp_l", "mbsnbcmp_l", "_mbsnbcmp"]
 helpviewer_keywords: ["mbsnbcmp_l function", "mbsnbcmp function", "tcsncmp function", "_mbsnbcmp_l function", "_tcsncmp function", "_mbsnbcmp function"]
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8

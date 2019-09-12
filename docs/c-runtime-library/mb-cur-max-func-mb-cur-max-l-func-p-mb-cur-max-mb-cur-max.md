@@ -1,9 +1,9 @@
 ---
 title: "___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max"
 ms.date: "11/04/2016"
-apiname: ["___mb_cur_max_l_func", "__p___mb_cur_max", "___mb_cur_max_func", "__mb_cur_max"]
-apilocation: ["msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["___mb_cur_max_l_func", "__p___mb_cur_max", "___mb_cur_max_func", "__mb_cur_max"]
+api_location: ["msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max", "__mb_cur_max"]
 helpviewer_keywords: ["__mb_cur_max", "___mb_cur_max_func", "___mb_cur_max_l_func", "__p___mb_cur_max"]
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1

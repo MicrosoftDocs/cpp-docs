@@ -1,9 +1,9 @@
 ---
 title: "tolower, _tolower, towlower, _tolower_l, _towlower_l"
 ms.date: "11/04/2016"
-apiname: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: "DLLExport"
 f1_keywords: ["_totlower", "tolower", "_tolower", "towlower"]
 helpviewer_keywords: ["tolower_l function", "_tolower_l function", "totlower function", "string conversion, to different characters", "lowercase, converting to", "tolower function", "string conversion, case", "towlower function", "_tolower function", "_totlower function", "towlower_l function", "case, converting", "characters, converting", "_towlower_l function"]
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92

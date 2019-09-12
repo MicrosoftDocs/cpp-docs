@@ -1,9 +1,9 @@
 ---
 title: "perror, _wperror"
 ms.date: "11/04/2016"
-apiname: ["_wperror", "perror"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wperror", "perror"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_wperror", "_tperror", "perror"]
 helpviewer_keywords: ["_tperror function", "tperror function", "wperror function", "error messages, printing", "printing error messages", "_wperror function", "perror function"]
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5

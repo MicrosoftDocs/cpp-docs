@@ -1,9 +1,9 @@
 ---
 title: "_chgsign, _chgsignf, _chgsignl"
 ms.date: "04/05/2018"
-apiname: ["_chgsignl", "_chgsign", "_chgsignf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_chgsignl", "_chgsign", "_chgsignf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_chgsignf", "chgsign", "_chgsignl", "_chgsign"]
 helpviewer_keywords: ["_chgsignl function", "_chgsignf function", "chgsign function", "_chgsign function"]
 ms.assetid: a6646f8e-213d-4564-8617-f43bc66f989f

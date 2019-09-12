@@ -1,9 +1,9 @@
 ---
 title: "catanh, catanhf, catanhl"
 ms.date: "11/04/2016"
-apiname: ["catanh", "catanhf", "catanhl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["catanh", "catanhf", "catanhl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["catanh", "catanhf", "catanhl", "complex/catanh", "complex/catanhf", "complex/catanhl"]
 helpviewer_keywords: ["catanh function", "catanhf function", "catanhl function"]
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86

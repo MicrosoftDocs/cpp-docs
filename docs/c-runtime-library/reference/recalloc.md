@@ -1,9 +1,9 @@
 ---
 title: "_recalloc"
 ms.date: "11/04/2016"
-apiname: ["_recalloc"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_recalloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_recalloc", "recalloc"]
 helpviewer_keywords: ["_recalloc function", "recalloc function"]
 ms.assetid: 1db8305a-3f03-418c-8844-bf9149f63046

@@ -1,9 +1,9 @@
 ---
 title: "_get_timezone"
 ms.date: "11/04/2016"
-apiname: ["_get_timezone"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_get_timezone"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_get_timezone", "get_timezone"]
 helpviewer_keywords: ["time zones", "get_timezone function", "_get_timezone function"]
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e

@@ -1,9 +1,9 @@
 ---
 title: "unexpected (CRT)"
 ms.date: "11/04/2016"
-apiname: ["unexpected"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["unexpected"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["unexpected"]
 helpviewer_keywords: ["unexpected function"]
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4

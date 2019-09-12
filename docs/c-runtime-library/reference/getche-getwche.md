@@ -1,9 +1,9 @@
 ---
 title: "_getche, _getwche"
 ms.date: "11/04/2016"
-apiname: ["_getwche", "_getche"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_getwche", "_getche"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["getwche", "_getche", "_getwche"]
 helpviewer_keywords: ["characters, getting from console", "_getwche function", "getche function", "console, reading from", "getwche function", "_getche function"]
 ms.assetid: eac978a8-c43a-4130-938f-54f12e2a0fda

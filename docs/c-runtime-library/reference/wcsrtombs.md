@@ -1,9 +1,9 @@
 ---
 title: "wcsrtombs"
 ms.date: "11/04/2016"
-apiname: ["wcsrtombs"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["wcsrtombs"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["wcsrtombs"]
 helpviewer_keywords: ["wcsrtombs function", "string conversion, wide characters", "wide characters, strings"]
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d

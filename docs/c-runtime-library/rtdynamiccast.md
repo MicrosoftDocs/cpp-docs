@@ -1,9 +1,9 @@
 ---
 title: "__RTDynamicCast"
 ms.date: "11/04/2016"
-apiname: ["__RTDynamicCast"]
-apilocation: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
-apitype: "DLLExport"
+api_name: ["__RTDynamicCast"]
+api_location: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__RTDynamicCast"]
 helpviewer_keywords: ["__RTDynamicCast"]
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239

@@ -1,9 +1,9 @@
 ---
 title: "isalnum, iswalnum, _isalnum_l, _iswalnum_l"
 ms.date: "11/04/2016"
-apiname: ["_iswalnum_l", "_isalnum_l", "iswalnum", "isalnum"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_iswalnum_l", "_isalnum_l", "iswalnum", "isalnum"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: "DLLExport"
 f1_keywords: ["_istalnum_l", "_iswalnum_l", "iswalnum", "_isalnum_l", "isalnum", "_istalnum"]
 helpviewer_keywords: ["_istalnum function", "_ismbcalnum_l function", "iswalnum function", "isalnum function", "istalnum function", "_isalnum_l function", "_istalnum_l function", "_iswalnum_l function"]
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093

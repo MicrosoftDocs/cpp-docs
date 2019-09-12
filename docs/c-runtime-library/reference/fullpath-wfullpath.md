@@ -1,9 +1,9 @@
 ---
 title: "_fullpath, _wfullpath"
 ms.date: "11/04/2016"
-apiname: ["_fullpath", "_wfullpath"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_fullpath", "_wfullpath"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["wfullpath", "fullpath", "_wfullpath", "_fullpath"]
 helpviewer_keywords: ["_wfullpath function", "relative file paths", "absolute paths", "wfullpath function", "_fullpath function", "fullpath function"]
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9

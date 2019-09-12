@@ -1,9 +1,9 @@
 ---
 title: "localeconv"
 ms.date: "11/04/2016"
-apiname: ["localeconv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["localeconv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["localeconv"]
 helpviewer_keywords: ["lconv type", "localeconv function", "locales, getting information on"]
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660

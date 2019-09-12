@@ -1,9 +1,9 @@
 ---
 title: "strftime, wcsftime, _strftime_l, _wcsftime_l"
 ms.date: "03/22/2018"
-apiname: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_tcsftime", "strftime", "wcsftime", "_strftime_l", "_wcsftime_l"]
 helpviewer_keywords: ["_strftime_l function", "strftime function", "tcsftime function", "_wcsftime_l function", "wcsftime function", "_tcsftime function", "time strings"]
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea

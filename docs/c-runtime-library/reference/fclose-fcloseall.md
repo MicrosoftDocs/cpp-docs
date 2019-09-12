@@ -1,9 +1,9 @@
 ---
 title: "fclose, _fcloseall"
 ms.date: "11/04/2016"
-apiname: ["fclose", "_fcloseall"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["fclose", "_fcloseall"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["fclose", "_fcloseall"]
 helpviewer_keywords: ["fclose function", "streams, closing", "_fcloseall function"]
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4

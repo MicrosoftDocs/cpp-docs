@@ -1,9 +1,9 @@
 ---
 title: "_expand_dbg"
 ms.date: "11/04/2016"
-apiname: ["_expand_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_expand_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["expand_dbg", "_expand_dbg"]
 helpviewer_keywords: ["memory blocks, changing size", "expand_dbg function", "_expand_dbg function"]
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd

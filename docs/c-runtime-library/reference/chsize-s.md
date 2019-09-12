@@ -1,9 +1,9 @@
 ---
 title: "_chsize_s"
 ms.date: "11/04/2016"
-apiname: ["_chsize_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_chsize_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["chsize_s", "_chsize_s"]
 helpviewer_keywords: ["files [C++], changing size", "chsize_s function", "_chsize_s function"]
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38

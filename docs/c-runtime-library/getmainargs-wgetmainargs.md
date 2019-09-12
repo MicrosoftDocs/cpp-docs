@@ -1,9 +1,9 @@
 ---
 title: "__getmainargs, __wgetmainargs"
 ms.date: "11/04/2016"
-apiname: ["__wgetmainargs", "__getmainargs"]
-apilocation: ["msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
-apitype: "DLLExport"
+api_name: ["__wgetmainargs", "__getmainargs"]
+api_location: ["msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr90.dll", "msvcr120.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__wgetmainargs", "__getmainargs"]
 helpviewer_keywords: ["__wgetmainargs", "__getmainargs"]
 ms.assetid: f72f54eb-9509-4bdf-8752-40fc49055439

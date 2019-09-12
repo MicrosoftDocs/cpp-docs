@@ -1,9 +1,9 @@
 ---
 title: "strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l"
 ms.date: "11/04/2016"
-apiname: ["_mbslen", "_mbslen_l", "_mbstrlen", "wcslen", "_mbstrlen_l", "strlen"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["_mbslen", "_mbslen_l", "_mbstrlen", "wcslen", "_mbstrlen_l", "strlen"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: "DLLExport"
 f1_keywords: ["_mbstrlen", "wcslen", "_tcslen", "_ftcslen", "strlen", "_mbslen"]
 helpviewer_keywords: ["wcslen function", "string length, getting", "ftcslen function", "lengths, strings", "mbstrlen_l function", "_mbslen_l function", "_tcslen function", "mbslen_l function", "mbslen function", "_mbstrlen function", "strings [C++], getting length", "mbstrlen function", "_mbstrlen_l function", "_ftcslen function", "tcslen function", "strlen function", "_mbslen function"]
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2

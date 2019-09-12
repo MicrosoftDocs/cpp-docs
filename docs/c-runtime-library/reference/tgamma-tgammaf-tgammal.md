@@ -1,9 +1,9 @@
 ---
 title: "tgamma, tgammaf, tgammal"
 ms.date: "04/05/2018"
-apiname: ["tgamma", "tgammaf", "tgammal"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["tgamma", "tgammaf", "tgammal"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["tgamma", "tgammaf", "tgammal", "math/tgamma", "math/tgammaf", "math/tgammal"]
 helpviewer_keywords: ["tgamma function", "tgammaf function", "tgammal function"]
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd

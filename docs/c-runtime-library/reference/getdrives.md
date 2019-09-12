@@ -1,9 +1,9 @@
 ---
 title: "_getdrives"
 ms.date: "11/04/2016"
-apiname: ["_getdrives"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_getdrives"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["getdrives", "_getdrives"]
 helpviewer_keywords: ["_getdrives function", "getdrives function", "disk drives"]
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c

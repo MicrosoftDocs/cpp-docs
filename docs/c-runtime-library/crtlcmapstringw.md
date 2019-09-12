@@ -1,9 +1,9 @@
 ---
 title: "__crtLCMapStringW"
 ms.date: "11/04/2016"
-apiname: ["__crtLCMapStringW"]
-apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll"]
-apitype: "DLLExport"
+api_name: ["__crtLCMapStringW"]
+api_location: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcrt.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__crtLCMapStringW"]
 helpviewer_keywords: ["__crtLCMapStringW"]
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9

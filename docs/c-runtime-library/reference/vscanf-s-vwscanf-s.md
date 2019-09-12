@@ -1,9 +1,9 @@
 ---
 title: "vscanf_s, vwscanf_s"
 ms.date: "11/04/2016"
-apiname: ["vscanf_s", "vwscanf_s"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["vscanf_s", "vwscanf_s"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_vtscanf_s", "vscanf_s", "vwscanf_s"]
 ms.assetid: 23a1c383-5b01-4887-93ce-534a1e38ed93
 ---

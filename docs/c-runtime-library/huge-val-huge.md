@@ -1,9 +1,9 @@
 ---
 title: "HUGE_VAL, _HUGE"
 ms.date: "11/04/2016"
-apiname: ["_HUGE"]
-apilocation: ["msvcrt.dll"]
-apitype: "DLLExport"
+api_name: ["_HUGE"]
+api_location: ["msvcrt.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_HUGE", "HUGE_VAL"]
 helpviewer_keywords: ["_HUGE constant", "HUGE_VAL constant", "double value"]
 ms.assetid: 3f044b45-02cd-46b2-b1de-87fd0441dd6a

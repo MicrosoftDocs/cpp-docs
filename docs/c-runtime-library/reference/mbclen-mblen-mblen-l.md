@@ -1,9 +1,9 @@
 ---
 title: "_mbclen, mblen, _mblen_l, _mbclen_l"
 ms.date: "01/22/2019"
-apiname: ["_mbclen", "mblen", "_mblen_l", "_mbclen_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbclen", "mblen", "_mblen_l", "_mbclen_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["mblen", "ftclen", "_mbclen", "_mbclen_l", "tclen", "_ftclen", "_tclen", "mbclen"]
 helpviewer_keywords: ["tclen function", "_mblen_l function", "_tclen function", "mblen_l function", "_mbclen function", "_mbclen_l function", "mbclen function", "mblen function"]
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70

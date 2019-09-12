@@ -1,9 +1,9 @@
 ---
 title: "_stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l"
 ms.date: "11/04/2016"
-apiname: ["_mbsicoll_l", "_stricoll_l", "_mbsicoll", "_wcsicoll_l", "_wcsicoll", "_stricoll"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbsicoll_l", "_stricoll_l", "_mbsicoll", "_wcsicoll_l", "_wcsicoll", "_stricoll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["stricoll", "_stricoll", "_wcsicoll", "mbsicoll_l", "_mbsicoll", "_ftcsicoll", "wcsicoll_l", "_tcsicoll", "mbsicoll", "stricoll_l"]
 helpviewer_keywords: ["code pages, using for string comparisons", "_ftcsicoll function", "_mbsicoll_l function", "_mbsicoll function", "mbsicoll function", "stricoll function", "tcsicoll function", "string comparison [C++], culture-specific", "_tcsicoll function", "_stricoll function", "_stricoll_l function", "_wcsicoll function", "mbsicoll_l function", "stricoll_l function", "strings [C++], comparing by code page", "ftcsicoll function"]
 ms.assetid: 8ec93016-5a49-49d2-930f-721566661d82

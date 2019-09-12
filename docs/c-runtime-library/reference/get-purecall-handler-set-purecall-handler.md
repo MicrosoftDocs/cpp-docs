@@ -1,9 +1,9 @@
 ---
 title: "_get_purecall_handler, _set_purecall_handler"
 ms.date: "11/04/2016"
-apiname: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_set_purecall_handler", "_set_purecall_handler_m", "set_purecall_handler_m", "set_purecall_handler", "stdlib/_set_purecall_handler", "stdlib/_get_purecall_handler", "_get_purecall_handler"]
 helpviewer_keywords: ["_set_purecall_handler function", "set_purecall_handler function", "purecall_handler", "set_purecall_handler_m function", "_purecall_handler", "_set_purecall_handler_m function", "_get_purecall_handler function"]
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c

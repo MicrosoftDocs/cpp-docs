@@ -1,9 +1,9 @@
 ---
 title: "_CrtSetReportHook2, _CrtSetReportHookW2"
 ms.date: "11/04/2016"
-apiname: ["_CrtSetReportHook2", "_CrtSetReportHookW2"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtSetReportHook2", "_CrtSetReportHookW2"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["CrtSetReportHookW2", "CrtSetReportHook2", "_CrtSetReportHookW2", "_CrtSetReportHook2"]
 helpviewer_keywords: ["CrtSetReportHook2 function", "_CrtSetReportHook2 function", "_CrtSetReportHookW2 function", "CrtSetReportHookW2 function"]
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0

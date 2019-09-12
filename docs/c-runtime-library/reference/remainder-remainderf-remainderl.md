@@ -1,9 +1,9 @@
 ---
 title: "remainder, remainderf, remainderl"
 ms.date: "04/05/2018"
-apiname: ["remainderl", "remainder", "remainderf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["remainderl", "remainder", "remainderf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["remainderf", "remainder", "remainderl"]
 helpviewer_keywords: ["remainderf", "remainderl", "remainder"]
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e

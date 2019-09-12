@@ -1,8 +1,8 @@
 ---
 title: "_ASSERT, _ASSERTE, _ASSERT_EXPR Macros"
 ms.date: "11/04/2016"
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_ASSERTE", "ASSERTE", "_ASSERT", "_ASSERT_EXPR"]
 helpviewer_keywords: ["debugging [CRT], using macros", "_ASSERTE macro", "macros, debugging with", "debug reporting macros", "_ASSERT macro", "_ASSERT_EXPR macro"]
 ms.assetid: e98fd2a6-7f5e-4aa8-8fe8-e93490deba36

@@ -1,9 +1,9 @@
 ---
 title: "_strdup_dbg, _wcsdup_dbg"
 ms.date: "11/04/2016"
-apiname: ["_strdup_dbg", "_wcsdup_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_strdup_dbg", "_wcsdup_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_wcsdup_dbg", "strdup_dbg", "_strdup_dbg", "wcsdup_dbg"]
 helpviewer_keywords: ["_wcsdup_dbg function", "stdup_dbg function", "copying strings", "duplicating strings", "strings [C++], copying", "strings [C++], duplicating", "_strdup_dbg function", "wcsdup_dbg function"]
 ms.assetid: 681db70c-d124-43ab-b83e-5eeea9035097

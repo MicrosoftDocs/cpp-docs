@@ -1,9 +1,9 @@
 ---
 title: "_spawnv, _wspawnv"
 ms.date: "11/04/2016"
-apiname: ["_wspawnv", "_spawnv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wspawnv", "_spawnv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["wspawnv", "_spawnv", "_wspawnv"]
 helpviewer_keywords: ["wspawnv function", "processes, creating", "_spawnv function", "processes, executing new", "process creation", "_wspawnv function", "spawnv function"]
 ms.assetid: 72360ef4-dfa9-44c1-88c1-b3ecb660aa7d

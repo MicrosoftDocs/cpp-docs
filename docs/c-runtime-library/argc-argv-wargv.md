@@ -1,9 +1,9 @@
 ---
 title: "__argc, __argv, __wargv"
 ms.date: "11/04/2016"
-apiname: ["__wargv", "__argv", "__argc"]
-apilocation: ["msvcrt120.dll"]
-apitype: "DLLExport"
+api_name: ["__wargv", "__argv", "__argc"]
+api_location: ["msvcrt120.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__argv", "__argc", "__wargv"]
 helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c

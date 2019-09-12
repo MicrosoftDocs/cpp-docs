@@ -1,9 +1,9 @@
 ---
 title: "_aligned_malloc"
 ms.date: "11/04/2016"
-apiname: ["_aligned_malloc"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_aligned_malloc"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["_aligned_malloc", "alligned_malloc"]
 helpviewer_keywords: ["aligned_malloc function", "_aligned_malloc function"]
 ms.assetid: fb788d40-ee94-4039-aa4d-97d73dab1ca0

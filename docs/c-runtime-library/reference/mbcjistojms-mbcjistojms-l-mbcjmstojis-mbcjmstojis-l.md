@@ -1,9 +1,9 @@
 ---
 title: "_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
 ms.date: "11/04/2016"
-apiname: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["mbcjistojms", "_mbcjistojms", "_mbcjistojms_l", "_mbcjmstojis_l", "_mbcjmstojis", "mbcjmstojis_l", "mbcjistojms_l", "mbcjmstojis"]
 helpviewer_keywords: ["_mbcjmstojis_l function", "_mbcjistojms function", "mbcjmstojis function", "_mbcjistojms_l function", "_mbcjmstojis function", "mbcjistojms function", "mbcjmstojis_l function", "mbcjistojms_l function"]
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432

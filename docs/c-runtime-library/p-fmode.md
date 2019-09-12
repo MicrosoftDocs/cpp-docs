@@ -1,9 +1,9 @@
 ---
 title: "__p__fmode"
 ms.date: "11/04/2016"
-apiname: ["__p__fmode"]
-apilocation: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["__p__fmode"]
+api_location: ["msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["__p__fmode"]
 helpviewer_keywords: ["__p__fmode"]
 ms.assetid: 1daa1394-81eb-43aa-a71b-4cc6acf3207b

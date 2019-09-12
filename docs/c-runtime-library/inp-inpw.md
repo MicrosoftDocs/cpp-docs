@@ -1,9 +1,9 @@
 ---
 title: "inp, inpw"
 ms.date: "11/04/2016"
-apiname: ["inp", "inpw"]
-apilocation: ["msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll", "msvcrt.dll"]
-apitype: "DLLExport"
+api_name: ["inp", "inpw"]
+api_location: ["msvcr110_clr0400.dll", "msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll", "msvcrt.dll"]
+api_type: "DLLExport"
 f1_keywords: ["inpw", "inp"]
 helpviewer_keywords: ["inp function", "inpw function"]
 ms.assetid: c7e1eeac-77cd-47ff-b843-4095b4c31d3b

@@ -1,9 +1,9 @@
 ---
 title: "putchar, putwchar"
 ms.date: "11/04/2016"
-apiname: ["putchar", "putwchar"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["putchar", "putwchar"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["putchar", "putwchar", "_puttchar"]
 helpviewer_keywords: ["putchar function", "_puttchar function", "characters, writing", "standard output, writing to", "putwchar function"]
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748

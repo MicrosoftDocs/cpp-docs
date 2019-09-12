@@ -1,9 +1,9 @@
 ---
 title: "ctanh, ctanhf, ctanhl"
 ms.date: "11/04/2016"
-apiname: ["ctanh", "ctanhf", "ctanhl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["ctanh", "ctanhf", "ctanhl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["ctanh", "ctanhf", "ctanhl", "complex/ctanh", "complex/ctanhf", "complex/ctanhl"]
 helpviewer_keywords: ["ctanh function", "ctanhl function", "ctanhf function"]
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b

@@ -1,9 +1,9 @@
 ---
 title: "fmax, fmaxf, fmaxl"
 ms.date: "04/05/2018"
-apiname: ["fmax", "fmaxf", "fmaxl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["fmax", "fmaxf", "fmaxl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["fmax", "fmaxf", "fmaxl", "math/fmax", "math/fmaxf", "math/fmaxl"]
 helpviewer_keywords: ["fmax function", "fmaxf function", "fmaxl function"]
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35

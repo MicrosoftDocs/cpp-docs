@@ -1,9 +1,9 @@
 ---
 title: "_fullpath_dbg, _wfullpath_dbg"
 ms.date: "11/04/2016"
-apiname: ["_wfullpath_dbg", "_fullpath_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_wfullpath_dbg", "_fullpath_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["wfullpath_dbg", "_wfullpath_dbg", "_fullpath_dbg", "fullpath_dbg"]
 helpviewer_keywords: ["_fullpath_dbg function", "relative file paths", "absolute paths", "fullpath_dbg function", "_wfullpath_dbg function", "wfullpath_dbg function"]
 ms.assetid: 81f72f85-07da-4f5c-866a-598e0fb03f6b

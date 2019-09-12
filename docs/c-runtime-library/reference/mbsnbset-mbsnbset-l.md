@@ -1,9 +1,9 @@
 ---
 title: "_mbsnbset, _mbsnbset_l"
 ms.date: "11/04/2016"
-apiname: ["_mbsnbset", "_mbsnbset_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbsnbset", "_mbsnbset_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["mbsnbset", "mbsnbset_l", "_mbsnbset", "_mbsnbset_l"]
 helpviewer_keywords: ["tcsnset function", "_tcsnset_l function", "_mbsnbset function", "_tcsnset function", "_mbsnbset_l function", "mbsnbset_l function", "tcsnset_l function", "mbsnbset function"]
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19

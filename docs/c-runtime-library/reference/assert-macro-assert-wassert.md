@@ -1,9 +1,9 @@
 ---
 title: "assert Macro, _assert, _wassert"
 ms.date: "11/04/2016"
-apiname: ["assert", "_assert", "_wassert"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["assert", "_assert", "_wassert"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["assert", "_assert", "_wassert", "assert/_wassert"]
 helpviewer_keywords: ["aborting programs", "assert function", "assert macro"]
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40

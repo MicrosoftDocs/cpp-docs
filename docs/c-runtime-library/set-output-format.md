@@ -1,9 +1,9 @@
 ---
 title: "_set_output_format"
 ms.date: "11/04/2016"
-apiname: ["_set_output_format"]
-apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll"]
-apitype: "DLLExport"
+api_name: ["_set_output_format"]
+api_location: ["msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll"]
+api_type: "DLLExport"
 f1_keywords: ["set_output_format", "_set_output_format"]
 helpviewer_keywords: ["_TWO_DIGIT_EXPONENT constant", "output formatting", "TWO_DIGIT_EXPONENT constant", "_set_output_format function", "set_output_format function"]
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff

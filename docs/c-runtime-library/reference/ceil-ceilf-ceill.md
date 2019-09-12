@@ -1,9 +1,9 @@
 ---
 title: "ceil, ceilf, ceill"
 ms.date: "04/05/2018"
-apiname: ["ceilf", "ceil", "ceill"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntdll.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["ceilf", "ceil", "ceill"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntdll.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["ceil", "ceilf", "ceill"]
 helpviewer_keywords: ["calculating value ceilings", "ceill function", "ceil function", "ceilf function"]
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718

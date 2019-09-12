@@ -1,9 +1,9 @@
 ---
 title: "_CrtGetDumpClient"
 ms.date: "11/04/2016"
-apiname: ["_CrtGetDumpClient"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_CrtGetDumpClient"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: "DLLExport"
 f1_keywords: ["CrtGetDumpClient", "_CrtGetDumpClient"]
 helpviewer_keywords: ["_CrtGetDumpClient function", "CrtGetDumpClient function"]
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad

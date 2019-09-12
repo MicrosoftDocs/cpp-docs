@@ -1,9 +1,9 @@
 ---
 title: "remquo, remquof, remquol"
 ms.date: "04/05/2018"
-apiname: ["remquof", "remquo", "remquol"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["remquof", "remquo", "remquol"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: "DLLExport"
 f1_keywords: ["remquof", "remquol", "remquo"]
 helpviewer_keywords: ["remquol function", "remquof function", "remquo function"]
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
