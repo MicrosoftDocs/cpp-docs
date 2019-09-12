@@ -1,9 +1,10 @@
 ---
 title: "isspace, iswspace, _isspace_l, _iswspace_l"
 ms.date: "11/04/2016"
-apiname: ["iswspace", "_isspace_l", "_iswspace_l", "isspace"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-apitype: "DLLExport"
+api_name: ["iswspace", "_isspace_l", "_iswspace_l", "isspace"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["iswspace", "_istspace", "isspace"]
 helpviewer_keywords: ["iswspace function", "isspace function", "_iswspace_l function", "_isspace_l function", "iswspace_l function", "isspace_l function", "_istspace function", "istspace function"]
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035

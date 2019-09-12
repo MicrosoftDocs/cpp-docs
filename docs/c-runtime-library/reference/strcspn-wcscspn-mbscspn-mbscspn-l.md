@@ -1,9 +1,10 @@
 ---
 title: "strcspn, wcscspn, _mbscspn, _mbscspn_l"
 ms.date: "11/04/2016"
-apiname: ["_mbscspn_l", "wcscspn", "_mbscspn", "strcspn"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbscspn_l", "wcscspn", "_mbscspn", "strcspn"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["strcspn", "_mbscspn", "wcscspn", "_ftcscspn", "_tcscspn"]
 helpviewer_keywords: ["strings [C++], searching", "ftcscspn function", "strcspn function", "_mbscspn function", "mbscspn_l function", "wcscspn function", "tcscspn function", "_ftcscspn function", "_mbscspn_l function", "mbscspn function", "_tcscspn function"]
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6

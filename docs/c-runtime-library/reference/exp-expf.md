@@ -1,9 +1,10 @@
 ---
 title: "exp, expf, expl"
 ms.date: "04/05/2018"
-apiname: ["expf", "expl", "exp"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["expf", "expl", "exp"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_expl", "expf", "expl", "exp"]
 helpviewer_keywords: ["exponential calculations", "expf function", "expl function", "calculating exponentials", "exp function"]
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867

@@ -1,9 +1,10 @@
 ---
 title: "_tell, _telli64"
 ms.date: "11/04/2016"
-apiname: ["_telli64", "_tell"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_telli64", "_tell"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["tell", "telli64", "_telli64", "_tell"]
 helpviewer_keywords: ["tell function", "file pointers [C++], getting", "_tell function", "file pointers [C++]", "telli64 function", "_telli64 function"]
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b

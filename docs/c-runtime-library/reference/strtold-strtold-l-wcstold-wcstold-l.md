@@ -1,9 +1,10 @@
 ---
 title: "strtold, _strtold_l, wcstold, _wcstold_l"
 ms.date: "04/05/2018"
-apiname: ["wcstold", "strtold", "_strtold_l", "_wcstold_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["wcstold", "strtold", "_strtold_l", "_wcstold_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_tcstold_l", "_wcstold_l", "_tcstold", "strtold", "_strtold_l", "wcstold"]
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
 ---

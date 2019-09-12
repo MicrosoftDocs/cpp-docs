@@ -1,9 +1,10 @@
 ---
 title: "_chdir, _wchdir"
 ms.date: "11/04/2016"
-apiname: ["_wchdir", "_chdir"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_wchdir", "_chdir"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["tchdir", "_chdir", "_wchdir", "_tchdir", "wchdir"]
 helpviewer_keywords: ["_tchdir function", "_chdir function", "_wchdir function", "tchdir function", "wchdir function", "chdir function", "directories [C++], changing"]
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e

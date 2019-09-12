@@ -1,9 +1,10 @@
 ---
 title: "conj, conjf, conjl"
 ms.date: "11/04/2016"
-apiname: ["conj", "conjf", "conjl"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["conj", "conjf", "conjl"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["conj", "conjf", "conjl", "complex/conj", "complex/conjf", "complex/conjl"]
 helpviewer_keywords: ["conj function", "conjf function", "conjl function"]
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6

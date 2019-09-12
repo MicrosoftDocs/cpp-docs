@@ -1,9 +1,10 @@
 ---
 title: "_resetstkoflw"
 ms.date: "11/04/2016"
-apiname: ["_resetstkoflw"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_resetstkoflw"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["resetstkoflw", "_resetstkoflw"]
 helpviewer_keywords: ["resetstkoflw function", "stack overflow", "stack, recovering", "_resetstkoflw function"]
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14

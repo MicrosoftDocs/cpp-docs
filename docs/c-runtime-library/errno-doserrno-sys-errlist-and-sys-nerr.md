@@ -1,9 +1,10 @@
 ---
 title: "errno, _doserrno, _sys_errlist, and _sys_nerr"
 ms.date: "11/04/2016"
-apiname: ["_errno"]
-apilocation: ["msvcrt.dll"]
-apitype: "DLLExport"
+api_name: ["_errno"]
+api_location: ["msvcrt.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_sys_errlist", "errno", "_sys_nerr", "_doserrno"]
 helpviewer_keywords: ["error codes, printing", "sys_errlist global variable", "doserrno global variable", "errno global variable", "_doserrno global variable", "_sys_errlist global variable", "_sys_nerr global variable", "sys_nerr global variable"]
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369

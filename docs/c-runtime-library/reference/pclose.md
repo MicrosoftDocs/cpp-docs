@@ -1,9 +1,10 @@
 ---
 title: "_pclose"
 ms.date: "11/04/2016"
-apiname: ["_pclose"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_pclose"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_pclose", "pclose"]
 helpviewer_keywords: ["_pclose function", "pclose function", "pipes, closing"]
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
