@@ -3,7 +3,7 @@ title: "_getche_nolock, _getwche_nolock"
 ms.date: "11/04/2016"
 api_name: ["_getche_nolock", "_getwche_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getche_nolock", "_gettche_nolock", "_getwche_nolock", "getche_nolock", "getwche_nolock", "gettche_nolock"]
 helpviewer_keywords: ["characters, getting from console", "_gettche_nolock function", "getwche_nolock function", "_getche_nolock function", "getche_nolock function", "console, reading from", "_getwche_nolock function", "gettche_nolock function"]

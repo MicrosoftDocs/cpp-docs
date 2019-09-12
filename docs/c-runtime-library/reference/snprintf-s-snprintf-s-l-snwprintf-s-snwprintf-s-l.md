@@ -3,7 +3,7 @@ title: "_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
 ms.date: "11/04/2016"
 api_name: ["_snprintf_s", "_snprintf_s_l", "_snwprintf_s", "_snwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_snwprintf_s_l", "_sntprintf_s_l", "snprintf_s_l", "_snprintf_s_l", "_sntprintf_s", "_snprintf_s", "snprintf_s", "_snwprintf_s", "snwprintf_s_l", "snwprintf_s", "sntprintf_s", "sntprintf_s_l"]
 helpviewer_keywords: ["_snprintf_s_l function", "_snwprintf_s_l function", "_sntprintf_s_l function", "snwprintf_s_l function", "snprintf_s function", "_snprintf_s function", "snprintf_s_l function", "_sntprintf_s function", "sntprintf_s_l function", "sntprintf_s function", "snwprintf_s function", "_snwprintf_s function", "formatted text [C++]"]

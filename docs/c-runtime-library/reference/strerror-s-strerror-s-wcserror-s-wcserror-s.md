@@ -3,7 +3,7 @@ title: "strerror_s, _strerror_s, _wcserror_s, __wcserror_s"
 ms.date: "11/04/2016"
 api_name: ["__wcserror_s", "_strerror_s", "_wcserror_s", "strerror_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcserror_s", "__wcserror_s", "_tcserror_s", "_wcserror_s", "tcserror_s", "strerror_s", "_strerror_s"]
 helpviewer_keywords: ["__wcserror_s function", "error messages, printing", "tcserror_s function", "printing error messages", "strerror_s function", "_wcserror_s function", "_tcserror_s function", "_strerror_s function", "wcserror_s function", "error messages, getting"]

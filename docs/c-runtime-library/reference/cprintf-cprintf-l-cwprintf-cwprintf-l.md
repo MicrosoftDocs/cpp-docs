@@ -3,7 +3,7 @@ title: "_cprintf, _cprintf_l, _cwprintf, _cwprintf_l"
 ms.date: "11/04/2016"
 api_name: ["_cwprintf_l", "_cprintf_l", "_cwprintf", "_cprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_cwprintf", "cwprintf", "tcprintf", "_tcprintf", "_cprintf", "cwprintf_l", "tcprintf_l", "_tcprintf_l", "cprintf_l", "_cprintf_l", "_cwprintf_l"]
 helpviewer_keywords: ["_cprintf_l function", "_cwprintf_l function", "cwprintf function", "cprintf_l function", "characters, printing to console", "printing characters to console", "_tcprintf_l function", "tcprintf function", "_tcprintf function", "tcprintf_l function", "_cwprintf function", "cwprintf_l function", "_cprintf function"]

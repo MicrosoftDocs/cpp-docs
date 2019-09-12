@@ -3,7 +3,7 @@ title: "_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
 ms.date: "11/04/2016"
 api_name: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbcsymbol_l", "_ismbcsymbol_l", "_ismbcsymbol", "_ismbclegal_l", "_ismbclegal", "ismbclegal_l", "ismbcsymbol", "ismbclegal"]
 helpviewer_keywords: ["ismbcsymbol function", "ismbclegal_l function", "_istlegal_l function", "istlegal function", "_istlegal function", "_ismbcsymbol function", "_ismbclegal_l function", "ismbclegal function", "ismbcsymbol_l function", "_ismbclegal function", "_ismbcsymbol_l function", "istlegal_l function"]

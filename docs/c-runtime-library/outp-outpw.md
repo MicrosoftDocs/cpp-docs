@@ -3,7 +3,7 @@ title: "outp, outpw"
 ms.date: "11/04/2016"
 api_name: ["outpw", "outp"]
 api_location: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcr80.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["outp", "outpw"]
 helpviewer_keywords: ["outpw function", "outp function"]

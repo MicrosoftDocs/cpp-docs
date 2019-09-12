@@ -3,7 +3,7 @@ title: "strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l"
 ms.date: "11/04/2016"
 api_name: ["strxfrm", "_wcsxfrm_l", "_strxfrm_l", "wcsxfrm"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strxfrm", "_tcsxfrm", "wcsxfrm"]
 helpviewer_keywords: ["strxfrm_l function", "_tcsxfrm function", "_strxfrm_l function", "strxfrm function", "wcsxfrm_l function", "wcsxfrm function", "string comparison [C++], transforming strings", "tcsxfrm function", "strings [C++], comparing locale", "_wcsxfrm_l function"]

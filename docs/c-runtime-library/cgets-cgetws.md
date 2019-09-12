@@ -3,7 +3,7 @@ title: "_cgets, _cgetws"
 ms.date: "11/04/2016"
 api_name: ["_cgetws", "_cgets"]
 api_location: ["msvcr100.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["cgetws", "_cgetws", "_cgets"]
 helpviewer_keywords: ["_cgetws function", "strings [C++], getting from console", "console, getting strings from", "_cgets function", "cgetws function", "cgets function"]

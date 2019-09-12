@@ -3,7 +3,7 @@ title: "strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen
 ms.date: "11/04/2016"
 api_name: ["wcsnlen", "strnlen_s", "_mbstrnlen", "_mbsnlen_l", "_mbstrnlen_l", "strnlen", "wcsnlen_s", "_mbsnlen"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcsnlen", "strnlen_s", "_mbsnlen", "_mbsnlen_l", "_tcsnlen", "_tcscnlen", "_mbstrnlen_l", "wcsnlen_s", "_mbstrnlen", "strnlen", "_tcscnlen_l"]
 helpviewer_keywords: ["_tcscnlen function", "_mbstrnlen function", "_mbsnlen_l function", "lengths, strings", "mbstrnlen function", "mbsnlen_l function", "_mbstrnlen_l function", "_tcscnlen_l function", "wcsnlen_l function", "_tcsnlen function", "_mbsnlen function", "strnlen function", "mbsnlen function", "wcsnlen_s function", "strnlen_s function", "mbstrnlen_l function", "wcsnlen function", "string length", "strnlen_l function"]

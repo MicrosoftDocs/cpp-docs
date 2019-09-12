@@ -3,7 +3,7 @@ title: "nearbyint, nearbyintf, nearbyintl"
 ms.date: "04/05/2018"
 api_name: ["nearbyint", "nearbyintf", "nearbyintl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["nearbyint", "nearbyintf", "nearbyintl", "math/nearbyint", "math/narbyintf", "math/narbyintl"]
 helpviewer_keywords: ["nearbyint function", "nearbyintf function", "nearbyintl function"]

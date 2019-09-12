@@ -3,7 +3,7 @@ title: "vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l"
 ms.date: "11/04/2016"
 api_name: ["_vfprintf_l", "vfprintf", "vfwprintf", "_vfwprintf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["vfwprintf", "_vftprintf", "vfprintf"]
 helpviewer_keywords: ["_vfwprintf_l function", "_vftprintf function", "vfprintf function", "_vftprintf_l function", "vfprintf_l function", "vftprintf_l function", "vfwprintf_l function", "vftprintf function", "vfwprintf function", "_vfprintf_l function", "formatted text [C++]"]

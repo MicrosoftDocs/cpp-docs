@@ -3,7 +3,7 @@ title: "_outp, _outpw, _outpd"
 ms.date: "11/04/2016"
 api_name: ["_outpd", "_outp", "_outpw"]
 api_location: ["msvcrt.dll", "msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_outpw", "_outpd", "_outp", "outpd"]
 helpviewer_keywords: ["outpw function", "words", "_outpd function", "outpd function", "outp function", "ports, writing bytes at", "bytes, writing to ports", "words, writing to ports", "double words", "double words, writing to ports", "_outpw function", "_outp function"]

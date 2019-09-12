@@ -3,7 +3,7 @@ title: "wctomb_s, _wctomb_s_l"
 ms.date: "11/04/2016"
 api_name: ["_wctomb_s_l", "wctomb_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wctomb_s", "_wctomb_s_l"]
 helpviewer_keywords: ["wctomb_s function", "wctomb_s_l function", "string conversion, wide characters", "wide characters, converting", "_wctomb_s_l function", "characters, converting", "string conversion, multibyte character strings"]

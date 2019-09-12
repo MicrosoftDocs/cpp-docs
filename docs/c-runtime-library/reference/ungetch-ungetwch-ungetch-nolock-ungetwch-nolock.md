@@ -3,7 +3,7 @@ title: "_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock"
 ms.date: "11/04/2016"
 api_name: ["_ungetch_nolock", "_ungetwch_nolock", "_ungetwch", "_ungetch"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ungetch_nolock", "ungetwch", "ungetch_nolock", "_ungetwch", "ungetch", "ungetwch_nolock", "_ungetch", "_ungettch_nolock", "_ungettch", "_ungetwch_nolock"]
 helpviewer_keywords: ["_ungetch function", "ungetwch function", "characters, pushing back to console", "_ungettch_nolock function", "ungettch function", "_ungettch function", "ungetch_nolock function", "ungettch_nolock function", "_ungetwch_nolock function", "_ungetch_nolock function", "ungetwch_nolock function", "_ungetwch function"]

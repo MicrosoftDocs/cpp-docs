@@ -3,7 +3,7 @@ title: "_create_locale, _wcreate_locale"
 ms.date: "11/04/2016"
 api_name: ["_create_locale", "__create_locale", "_wcreate_locale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["create_locale", "_create_locale", "__create_locale"]
 helpviewer_keywords: ["locales, creating", "_create_locale function", "create_locale function", "__create_locale function"]

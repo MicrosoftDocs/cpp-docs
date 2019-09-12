@@ -3,7 +3,7 @@ title: "nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, 
 ms.date: "04/05/2018"
 api_name: ["nextafterf", "_nextafterf", "nextafter", "nextafterl", "_nextafter", "nexttoward", "nexttowardf", "nexttowardl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["nextafter", "_nextafter", "nextafterf", "nextafterl", "_nextafterf", "math/nextafter", "math/nextafterf", "math/nextafterl", "nexttoward", "nexttowardf", "nexttowardl", "math/nexttoward", "math/nexttowardf", "math/nexttowardl"]
 helpviewer_keywords: ["_nextafter function", "nextafter function", "_nextafterf function", "nextafterf function", "nextafterl function", "nexttoward function", "nexttowardf function", "nexttowardl function"]

@@ -3,7 +3,7 @@ title: "log1p, log1pf, log1pl2"
 ms.date: "04/05/2018"
 api_name: ["log1p", "log1pf", "log1pl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["log1p", "log1pf", "log1pl", "math/log1p", "math/log1pf", "math/log1pl"]
 helpviewer_keywords: ["log1p function", "log1pf function", "log1pl function"]

@@ -3,7 +3,7 @@ title: "_except_handler3"
 ms.date: "11/04/2016"
 api_name: ["_except_handler3"]
 api_location: ["msvcrt.dll", "msvcr90.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_except_handler3", "except_handler3"]
 helpviewer_keywords: ["_except_handler3 function", "except_handler3 function"]

@@ -2,7 +2,7 @@
 title: "Filename Search Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 helpviewer_keywords: ["file names [C++], searching for", "_find function", "wfind function", "find function", "_wfind function"]
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828

@@ -3,7 +3,7 @@ title: "gmtime, _gmtime32, _gmtime64"
 ms.date: "11/04/2016"
 api_name: ["_gmtime32", "gmtime", "_gmtime64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["gmtime", "_gmtime32", "_gmtime64"]
 helpviewer_keywords: ["gmtime32 function", "_gmtime64 function", "gmtime function", "time functions", "_gmtime32 function", "gmtime64 function", "time structure conversion"]

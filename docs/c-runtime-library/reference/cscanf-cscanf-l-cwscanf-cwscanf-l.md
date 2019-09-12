@@ -3,7 +3,7 @@ title: "_cscanf, _cscanf_l, _cwscanf, _cwscanf_l"
 ms.date: "11/04/2016"
 api_name: ["_cscanf_l", "_cscanf", "_cwscanf", "_cwscanf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_cwscanf", "cwscanf_l", "tcscanf_l", "_tcscanf_l", "_cscanf", "_cscanf_l", "tcscanf", "cwscanf", "_cwscanf_l", "cscanf_l", "_tcscanf"]
 helpviewer_keywords: ["_cwscanf function", "data [C++], reading from the console", "cscanf_l function", "tcscanf function", "_cscanf_l function", "cwscanf function", "_tcscanf_l function", "_cscanf function", "_tcscanf function", "cwscanf_l function", "tcscanf_l function", "reading data [C++], from the console", "_cwscanf_l function"]

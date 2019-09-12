@@ -3,7 +3,7 @@ title: "strtof, _strtof_l, wcstof, _wcstof_l"
 ms.date: "04/05/2018"
 api_name: ["_strtof_l", "wcstof", "strtof", "_wcstof_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcstof", "_tcstof_l", "stdlib/strtof", "strtof", "stdlib/_strtof_l", "_strtof_l", "corecrt_wstdlib/wcstof", "wcstof", "corecrt_wstdlib/_wcstof_l", "_wcstof_l"]
 helpviewer_keywords: ["_strtof_l function", "_tcstof function", "_wcstof_l function", "wcstof function", "_tcstof_l function", "strtof function"]

@@ -3,7 +3,7 @@ title: "__RTDynamicCast"
 ms.date: "11/04/2016"
 api_name: ["__RTDynamicCast"]
 api_location: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__RTDynamicCast"]
 helpviewer_keywords: ["__RTDynamicCast"]

@@ -3,7 +3,7 @@ title: "__pctype_func"
 ms.date: "11/04/2016"
 api_name: ["__pctype_func"]
 api_location: ["msvcrt.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr80.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__pctype_func"]
 helpviewer_keywords: ["__pctype_func"]

@@ -3,7 +3,7 @@ title: "strchr, wcschr, _mbschr, _mbschr_l"
 ms.date: "11/04/2016"
 api_name: ["strchr", "wcschr", "_mbschr_l", "_mbschr"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftcschr", "strchr", "wcschr", "_tcschr", "_mbschr"]
 helpviewer_keywords: ["strings [C++], searching", "mbschr function", "_ftcschr function", "_mbschr function", "characters [C++], finding in strings", "_mbschr_l function", "ftcschr function", "wcschr function", "strchr function", "_tcschr function", "tcschr function", "mbschr_l function"]

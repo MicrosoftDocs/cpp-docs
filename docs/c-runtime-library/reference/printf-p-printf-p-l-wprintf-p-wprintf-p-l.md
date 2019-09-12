@@ -3,7 +3,7 @@ title: "_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l"
 ms.date: "11/04/2016"
 api_name: ["_printf_p", "_wprintf_p", "_printf_p_l", "_wprintf_p_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wprintf_p", "_wprintf_p", "printf_p_l", "_printf_p", "printf_p", "_wprintf_p_l", "_printf_p_l", "wprintf_p_l"]
 helpviewer_keywords: ["printf_p function", "printf_p_l function", "wprintf_p function", "wprintf_p_l function", "_tprintf_p_l function", "_wprintf_p function", "_wprintf_p_l function", "_printf_p function", "tprintf_p_l function", "_printf_p_l function"]

@@ -3,7 +3,7 @@ title: "_CIlog10"
 ms.date: "11/04/2016"
 api_name: ["_CIlog10"]
 api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr80.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CIlog10", "_CIlog10"]
 helpviewer_keywords: ["_CIlog10 intrinsic", "CIlog10 intrinsic"]

@@ -3,7 +3,7 @@ title: "fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l"
 ms.date: "11/04/2016"
 api_name: ["_fprintf_s_l", "fwprintf_s", "fprintf_s", "_fwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ftprintf_s", "fprintf_s", "fwprintf_s"]
 helpviewer_keywords: ["ftprintf_s_l function", "ftprintf_s function", "_fprintf_s_l function", "_ftprintf_s function", "_ftprintf_s_l function", "fwprintf_s_l function", "fwprintf_s function", "fprintf_s_l function", "fprintf_s function", "_fwprintf_s_l function", "print formatted data to streams"]

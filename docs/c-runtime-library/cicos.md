@@ -3,7 +3,7 @@ title: "_CIcos"
 ms.date: "04/11/2018"
 api_name: ["_CIcos"]
 api_location: ["msvcr90.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CIcos", "_CIcos"]
 helpviewer_keywords: ["_CIcos intrinsic", "CIcos intrinsic"]

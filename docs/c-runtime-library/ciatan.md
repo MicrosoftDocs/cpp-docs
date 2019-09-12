@@ -3,7 +3,7 @@ title: "_CIatan"
 ms.date: "11/04/2016"
 api_name: ["_CIatan"]
 api_location: ["msvcr120.dll", "msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CIatan", "CIatan"]
 helpviewer_keywords: ["CIatan intrinsic", "_CIatan intrinsic"]

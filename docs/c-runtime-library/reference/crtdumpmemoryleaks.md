@@ -3,7 +3,7 @@ title: "_CrtDumpMemoryLeaks"
 ms.date: "11/04/2016"
 api_name: ["_CrtDumpMemoryLeaks"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["CRTDBG_LEAK_CHECK_DF", "CRTDBG_CHECK_CRT_DF", "_CRTDBG_LEAK_CHECK_DF", "CrtDumpMemoryLeaks", "_CrtDumpMemoryLeaks", "_CRTDBG_CHECK_CRT_DF"]
 helpviewer_keywords: ["CrtDumpMemoryLeaks function", "CRTDBG_LEAK_CHECK_DF macro", "_CRTDBG_LEAK_CHECK_DF macro", "_CrtDumpMemoryLeaks function", "CRTDBG_CHECK_CRT_DF macro", "_CRTDBG_CHECK_CRT_DF macro"]

@@ -3,7 +3,7 @@ title: "_cexit, _c_exit"
 ms.date: "11/04/2016"
 api_name: ["_c_exit", "_cexit"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_cexit", "c_exit", "_c_exit", "cexit"]
 helpviewer_keywords: ["cleanup operations during processes", "cexit function", "_c_exit function", "_cexit function", "c_exit function"]

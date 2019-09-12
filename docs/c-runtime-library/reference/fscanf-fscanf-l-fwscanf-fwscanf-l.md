@@ -3,7 +3,7 @@ title: "fscanf, _fscanf_l, fwscanf, _fwscanf_l"
 ms.date: "11/04/2016"
 api_name: ["fscanf", "_fwscanf_l", "_fscanf_l", "fwscanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fscanf", "fwscanf", "_ftscanf_l", "_fwscanf_l", "_ftscanf", "_fscanf_l"]
 helpviewer_keywords: ["fscanf function", "fwscanf function", "formatted data [C++], reading from streams", "ftscanf_l function", "_ftscanf_l function", "_fwscanf_l function", "data [CRT], reading from streams", "_fscanf_l function", "ftscanf function", "fscanf_l function", "streams [C++], reading formatted data from", "_ftscanf function", "fwscanf_l function"]

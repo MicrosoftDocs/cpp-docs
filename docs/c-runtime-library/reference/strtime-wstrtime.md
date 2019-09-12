@@ -3,7 +3,7 @@ title: "_strtime, _wstrtime"
 ms.date: "11/04/2016"
 api_name: ["_wstrtime", "_strtime"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wstrtime", "_strtime", "wstrtime", "strtime", "_tstrtime"]
 helpviewer_keywords: ["strtime function", "_strtime function", "_wstrtime function", "copying time to buffers", "wstrtime function", "tstrtime function", "_tstrtime function", "time, copying"]

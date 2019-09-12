@@ -3,7 +3,7 @@ title: "scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l"
 ms.date: "03/26/2019"
 api_name: ["wscanf_s", "_wscanf_s_l", "scanf_s", "_scanf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wscanf_s", "_tscanf_s_l", "_wscanf_s_l", "scanf_s", "_tscanf_s", "_scanf_s_l"]
 helpviewer_keywords: ["reading data [C++], from input streams", "buffers [C++], buffer overruns", "_scanf_s_l function", "_wscanf_s_l function", "tscanf_s_l function", "tscanf_s function", "scanf_s function", "data [C++], reading from input stream", "wscanf_s function", "_tscanf_s_l function", "_tscanf_s function", "scanf_s_l function", "formatted data [C++], from input streams", "wscanf_s_l function", "buffers [C++], avoiding overruns"]

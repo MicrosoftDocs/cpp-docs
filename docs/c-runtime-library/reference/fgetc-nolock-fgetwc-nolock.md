@@ -3,7 +3,7 @@ title: "_fgetc_nolock, _fgetwc_nolock"
 ms.date: "11/04/2016"
 api_name: ["_fgetc_nolock", "_fgetwc_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fgetwc_nolock", "fgettc_nolock", "fgetwc_nolock", "_fgetc_nolock", "_fgettc_nolock", "fgetc_nolock"]
 helpviewer_keywords: ["fgetc_nolock function", "fgetwc_nolock function", "_fgetwc_nolock function", "characters, reading", "_fgetc_nolock function", "streams, reading characters from", "fgettc_nolock function", "reading characters from streams", "_fgettc_nolock function"]

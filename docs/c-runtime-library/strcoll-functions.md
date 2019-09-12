@@ -2,7 +2,7 @@
 title: "strcoll Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strcoll"]
 helpviewer_keywords: ["code pages, using for string comparisons", "string comparison [C++], culture-specific", "strcoll functions", "strings [C++], comparing by code page"]

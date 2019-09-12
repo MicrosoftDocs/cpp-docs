@@ -3,7 +3,7 @@ title: "_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 ms.date: "11/04/2016"
 api_name: ["_wcsset", "_mbsset", "_strset_l", "_strset", "_wcsset_l", "_mbsset_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsset", "_strset_l", "_mbsset", "_strset", "mbsset_l", "strset_l", "_wcsset", "_ftcsset", "wcsset_l", "_tcsset_l", "_mbsset_l", "_wcsset_l", "_fstrset", "_tcsset"]
 helpviewer_keywords: ["_wcsset_l function", "_tcsset function", "wcsset_l function", "_ftcsset function", "characters [C++], setting", "_strset function", "ftcsset function", "strings [C++], setting characters", "mbsset function", "tcsset_l function", "_fstrset function", "mbsset_l function", "strset_l function", "_wcsset function", "_mbsset function", "_mbsset_l function", "tcsset function", "_strset_l function", "fstrset function", "_tcsset_l function"]

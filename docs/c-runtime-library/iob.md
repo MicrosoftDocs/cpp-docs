@@ -3,7 +3,7 @@ title: "_iob"
 ms.date: "11/04/2016"
 api_name: ["_iob"]
 api_location: ["msvcrt.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_iob", "iob"]
 helpviewer_keywords: ["_iob global variable", "iob global variable"]

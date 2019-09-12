@@ -3,7 +3,7 @@ title: "_getcwd_dbg, _wgetcwd_dbg"
 ms.date: "11/04/2016"
 api_name: ["_wgetcwd_dbg", "_getcwd_dbg"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getcwd_dbg", "_wgetcwd_dbg", "getcwd_dbg", "wgetcwd_dbg"]
 helpviewer_keywords: ["wgetcwd_dbg function", "working directory", "_getcwd_dbg function", "getcwd_dbg function", "current working directory", "_wgetcwd_dbg function", "directories [C++], current working"]

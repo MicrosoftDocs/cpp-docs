@@ -3,7 +3,7 @@ title: "___lc_codepage_func"
 ms.date: "11/04/2016"
 api_name: ["___lc_codepage_func"]
 api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll", "msvcr110.dll", "msvcrt.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["lc_codepage_func", "___lc_codepage_func"]
 helpviewer_keywords: ["___lc_codepage_func"]

@@ -3,7 +3,7 @@ title: "_aligned_msize"
 ms.date: "11/04/2016"
 api_name: ["_aligned_msize"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_aligned_msize", "aligned_msize"]
 helpviewer_keywords: ["aligned_msize function", "_aligned_msize function"]

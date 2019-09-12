@@ -3,7 +3,7 @@ title: "_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64"
 ms.date: "11/04/2016"
 api_name: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", "wutime32", "_wutime", "utime", "utime64", "_wutime64", "_utime32", "_tutime64", "_wutime32"]
 helpviewer_keywords: ["tutime function", "utime32 function", "utime64 function", "_utime function", "_tutime32 function", "time [C++], file modification", "wutime function", "_wutime function", "_wutime32 function", "_tutime64 function", "_tutime function", "files [C++], modification time", "_wutime64 function", "_utime32 function", "utime function", "_utime64 function", "wutime64 function", "wutime32 function", "tutime64 function", "tutime32 function"]

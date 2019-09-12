@@ -3,7 +3,7 @@ title: "_CrtSetDbgFlag"
 ms.date: "11/04/2016"
 api_name: ["_CrtSetDbgFlag"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CRTDBG_REPORT_FLAG", "_CRTDBG_CHECK_EVERY_16_DF", "_CRTDBG_CHECK_DEFAULT_DF", "CRTDBG_CHECK_DEFAULT_DF", "CRTDBG_CHECK_EVERY_128_DF", "CRTDBG_CHECK_EVERY_1024_DF", "_CRTDBG_CHECK_EVERY_128_DF", "CrtSetDbgFlag", "CRTDBG_CHECK_EVERY_16_DF", "_CRTDBG_CHECK_EVERY_1024_DF", "_CrtSetDbgFlag", "CRTDBG_REPORT_FLAG"]
 helpviewer_keywords: ["_CRTDBG_CHECK_EVERY_16_DF macro", "CRTDBG_CHECK_EVERY_16_DF macro", "_CRTDBG_CHECK_ALWAYS_DF macro", "_CRTDBG_CHECK_DEFAULT_DF macro", "CRTDBG_ALLOC_MEM_DF macro", "CRTDBG_CHECK_ALWAYS_DF macro", "_CRTDBG_ALLOC_MEM_DF macro", "_CRTDBG_REPORT_FLAG macro", "_CRTDBG_CHECK_EVERY_128_DF macro", "CRTDBG_REPORT_FLAG macro", "_CRTDBG_CHECK_EVERY_1024_DF macro", "CRTDBG_CHECK_DEFAULT_DF macro", "CRTDBG_CHECK_EVERY_1024_DF macro", "_CrtSetDbgFlag function", "CrtSetDbgFlag function", "_CRTDBG_DELAY_FREE_MEM_DF macro", "CRTDBG_CHECK_EVERY_128_DF macro", "CRTDBG_DELAY_FREE_MEM_DF macro", "CRTDBG_CHECK_CRT_DF macro", "_CRTDBG_CHECK_CRT_DF macro"]

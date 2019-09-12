@@ -3,7 +3,7 @@ title: "_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l"
 ms.date: "11/04/2016"
 api_name: ["_mbctolower_l", "_mbctoupper_l", "_mbctoupper", "_mbctolower"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbctoupper_l", "mbctolower_l", "_mbctolower", "_mbctolower_l", "_mbctoupper", "mbctoupper", "mbctolower", "_mbctoupper_l"]
 helpviewer_keywords: ["_mbctolower function", "mbctolower_l function", "totupper function", "_mbctoupper function", "totlower function", "_mbctoupper_l function", "mbctolower function", "_totupper function", "_mbctolower_l function", "mbctoupper_l function", "_totlower function", "mbctoupper function"]

@@ -3,7 +3,7 @@ title: "_acmdln, _tcmdln, _wcmdln"
 ms.date: "11/04/2016"
 api_name: ["_wcmdln", "_acmdln"]
 api_location: ["msvcrt.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_acmdln", "acmdln", "_wcmdln", "wcmdln", "_tcmdln", "tcmdln"]
 helpviewer_keywords: ["_wcmdln global variable", "wcmdln global variable", "_acmdln global variable", "_tcmdln global variable", "tcmdln global variable", "acmdln global variable"]

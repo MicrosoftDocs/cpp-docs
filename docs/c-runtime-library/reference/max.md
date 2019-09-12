@@ -3,7 +3,7 @@ title: "__max"
 ms.date: "04/05/2018"
 api_name: ["__max"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["max", "__max"]
 helpviewer_keywords: ["max macro", "maximum macro", "__max macro"]

@@ -3,7 +3,7 @@ title: "sqrt, sqrtf, sqrtl"
 ms.date: "04/05/2018"
 api_name: ["sqrtl", "sqrtf", "sqrt"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["sqrt", "sqrtf", "_sqrtl"]
 helpviewer_keywords: ["sqrtf function", "sqrt function", "sqrtl function", "_sqrtl function", "calculating square roots", "square roots, calculating"]

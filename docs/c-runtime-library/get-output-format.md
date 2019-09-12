@@ -3,7 +3,7 @@ title: "_get_output_format"
 ms.date: "11/04/2016"
 api_name: ["_get_output_format"]
 api_location: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr80.dll", "msvcrt.dll", "msvcr90.dll", "msvcr120.dll", "msvcr110.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["get_output_format", "_get_output_format"]
 helpviewer_keywords: ["output formatting", "get_output_format function", "_get_output_format function"]

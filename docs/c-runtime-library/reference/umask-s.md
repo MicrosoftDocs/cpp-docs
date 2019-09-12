@@ -3,7 +3,7 @@ title: "_umask_s"
 ms.date: "11/04/2016"
 api_name: ["_umask_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["unmask_s", "_umask_s"]
 helpviewer_keywords: ["masks, file-permission-setting", "_umask_s function", "masks", "file permissions [C++]", "umask_s function", "files [C++], permission settings for"]

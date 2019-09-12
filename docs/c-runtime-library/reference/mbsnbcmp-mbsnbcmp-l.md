@@ -3,7 +3,7 @@ title: "_mbsnbcmp, _mbsnbcmp_l"
 ms.date: "11/04/2016"
 api_name: ["_mbsnbcmp", "_mbsnbcmp_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsnbcmp", "tcsnbmp", "_mbsnbcmp_l", "mbsnbcmp_l", "_mbsnbcmp"]
 helpviewer_keywords: ["mbsnbcmp_l function", "mbsnbcmp function", "tcsncmp function", "_mbsnbcmp_l function", "_tcsncmp function", "_mbsnbcmp function"]

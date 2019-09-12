@@ -3,7 +3,7 @@ title: "strcmp, wcscmp, _mbscmp, _mbscmp_l"
 ms.date: "01/22/2019"
 api_name: ["wcscmp", "_mbscmp", "_mbscmp_l", "strcmp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbscmp", "_mbscmp_l", "wcscmp", "strcmp", "_tcscmp", "_ftcscmp"]
 helpviewer_keywords: ["tcscmp function", "strcmp function", "strings [C++], comparing", "mbscmp function", "string comparison [C++]", "_mbscmp function", "_mbscmp_l function", "wcscmp function", "_tcscmp function", "_ftcscmp function", "ftcscmp function"]

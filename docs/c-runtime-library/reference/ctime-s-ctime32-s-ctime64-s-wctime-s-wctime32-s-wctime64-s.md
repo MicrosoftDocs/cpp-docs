@@ -3,7 +3,7 @@ title: "ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
 ms.date: "11/04/2016"
 api_name: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ctime64_s", "_ctime32_s", "_tctime32_s", "_ctime64_s", "_wctime_s", "_tctime_s", "_tctime64_s", "ctime_s", "ctime32_s"]
 helpviewer_keywords: ["_wctime32_s function", "ctime64_s function", "_tctime64_s function", "_wctime_s function", "tctime_s function", "_wctime64_s function", "ctime_s function", "ctime32_s function", "_ctime64_s function", "tctime64_s function", "wctime64_s function", "wctime_s function", "_tctime_s function", "tctime32_s function", "wctime32_s function", "time, converting", "_ctime32_s function", "_tctime32_s function"]

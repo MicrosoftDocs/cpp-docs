@@ -3,7 +3,7 @@ title: "fgets, fgetws"
 ms.date: "07/11/2018"
 api_name: ["fgets", "fgetws"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fgetts", "fgetws", "fgets"]
 helpviewer_keywords: ["_fgetts function", "streams, getting strings from", "streams, reading from", "fgets function", "fgetws function", "fgetts function"]

@@ -2,7 +2,7 @@
 title: "scanf Type Field Characters"
 ms.date: "11/04/2016"
 api_location: ["msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr120.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["scanf"]
 helpviewer_keywords: ["scanf function, type field characters"]

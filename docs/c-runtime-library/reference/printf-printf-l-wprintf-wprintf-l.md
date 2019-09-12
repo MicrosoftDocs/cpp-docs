@@ -3,7 +3,7 @@ title: "printf, _printf_l, wprintf, _wprintf_l"
 ms.date: "11/04/2016"
 api_name: ["_printf_l", "wprintf", "_wprintf_l", "printf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["printf", "_tprintf", "wprintf"]
 helpviewer_keywords: ["printf function", "printf_l function", "tprintf_l function", "tprintf function", "_printf_l function", "wprintf function", "writing to console", "wprintf_l function", "_tprintf_l function", "_wprintf_l function", "_tprintf function", "printf function, format specification fields", "printf function, using", "formatted text [C++]"]

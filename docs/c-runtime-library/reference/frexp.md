@@ -3,7 +3,7 @@ title: "frexp, frexpf, frexpl"
 ms.date: "04/05/2018"
 api_name: ["frexp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["frexp", "_frexpl"]
 helpviewer_keywords: ["_frexpl function", "mantissas, floating-point variables", "frexpl function", "exponent, floating-point numbers", "frexp function", "floating-point functions, mantissa and exponent"]

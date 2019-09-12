@@ -3,7 +3,7 @@ title: "iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, 
 ms.date: "11/04/2016"
 api_name: ["_iswcsym_l", "__iswcsym", "__iscsym", "_iswcsymf_l", "_iscsym_l", "__iswcsymf", "__iscsymf", "_iscsymf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_iswcsym_l", "_iswcsymf_l", "iscsymf", "iswcsymf", "__iswcsym", "__iswcsymf", "iscsym", "iswcsym", "__iscsym", "_iscsym_l", "_iscsymf_l", "__iscsymf", "ctype/iscsym", "ctype/iscsymf", "ctype/__iscsym", "ctype/__iscsymf", "ctype/__iscsym_l", "ctype/__iscsymf_l", "ctype/__iswcsym", "ctype/__iswcsymf", "ctype/__iswcsym_l", "ctype/__iswcsymf_l"]
 helpviewer_keywords: ["iscsymf_l function", "iswsym_l function", "_iswcsym_l function", "iscsym_l function", "_iscsymf_l function", "_iswcsymf_l function", "_iscsym_l function", "__iscsym function", "__iswcsymf function", "iswsymf_l function", "__iscsymf function", "__iswcsym function", "iscsym function", "iscsymf function"]

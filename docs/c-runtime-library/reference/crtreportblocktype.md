@@ -3,7 +3,7 @@ title: "_CrtReportBlockType"
 ms.date: "11/04/2016"
 api_name: ["_CrtReportBlockType"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_CrtReportBlockType", "CrtReportBlockType"]
 helpviewer_keywords: ["CrtReportBlockType function", "BLOCK_SUBTYPE macro", "_CrtReportBlockType function", "_BLOCK_TYPE macro", "_BLOCK_SUBTYPE macro", "BLOCK_TYPE macro"]

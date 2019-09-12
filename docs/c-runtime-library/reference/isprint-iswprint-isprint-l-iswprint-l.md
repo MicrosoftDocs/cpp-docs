@@ -3,7 +3,7 @@ title: "isprint, iswprint, _isprint_l, _iswprint_l"
 ms.date: "11/04/2016"
 api_name: ["iswprint", "isprint", "_isprint_l", "_iswprint_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe"]
-api_type: "DLLExport"
+api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["iswprint", "_istprint", "isprint"]
 helpviewer_keywords: ["_istprint function", "iswprint function", "_iswprint_l function", "isprint_l function", "istprint function", "isprint function", "iswprint_l function", "_isprint_l function"]
