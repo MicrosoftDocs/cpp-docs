@@ -1,6 +1,6 @@
 ---
 title: "vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l"
-ms.date: "03/26/2019"
+ms.date: "09/12/2019"
 apiname: ["_vswprintf_s_l", "vsprintf_s", "vswprintf_s", "_vsprintf_s_l"]
 apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 apitype: "DLLExport"
@@ -10,7 +10,7 @@ ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
 ---
 # vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 
-Write formatted output using a pointer to a list of arguments. These are versions of [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \__vswprintf_l](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Write formatted output using a pointer to a list of arguments. These functions are versions of [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \__vswprintf_l](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -88,7 +88,7 @@ These functions differ from the non-secure versions only in that the secure vers
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+In C++, using these functions is simplified by template overloads. The overloads can infer buffer length automatically, eliminating the need to specify a size argument. And, they can automatically replace non-secure functions with their secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ### Generic-Text Routine Mappings
 
@@ -112,13 +112,15 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 
 ```C
 // crt_vsprintf_s.c
+// Compile with: cl /W4 crt_vsprintf_s.c
 // This program uses vsprintf_s to write to a buffer.
 // The size of the buffer is determined by _vscprintf.
 
 #include <stdlib.h>
+#include <stdio.h>
 #include <stdarg.h>
 
-void test( char * format, ... )
+void test( char const * const format, ... )
 {
    va_list args;
    int len;
@@ -127,10 +129,13 @@ void test( char * format, ... )
    va_start( args, format );
    len = _vscprintf( format, args ) // _vscprintf doesn't count
                                + 1; // terminating '\0'
-   buffer = malloc( len * sizeof(char) );
-   vsprintf_s( buffer, len, format, args );
-   puts( buffer );
-   free( buffer );
+   buffer = (char *) malloc( len * sizeof(char) );
+   if ( NULL != buffer )
+   {
+      vsprintf_s( buffer, len, format, args );
+      puts( buffer );
+      free( buffer );
+   }
    va_end( args );
 }
 
@@ -154,4 +159,4 @@ This is a string
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
+[va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

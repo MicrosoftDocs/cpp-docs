@@ -136,18 +136,18 @@ ATLAPI AtlAxCreateControl(
 *lpszName*<br/>
 A pointer to a string to be passed to the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream.
 
 *hWnd*<br/>
 [in] Handle to the window that the control will be attached to.
@@ -188,18 +188,18 @@ ATLAPI AtlAxCreateControlEx(
 *lpszName*<br/>
 A pointer to a string to be passed to the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream.
 
 *hWnd*<br/>
 [in] Handle to the window that the control will be attached to.
@@ -247,18 +247,18 @@ ATLAPI AtlAxCreateControlLic(
 *lpszName*<br/>
 A pointer to a string to be passed to the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream.
 
 *hWnd*<br/>
 Handle to the window that the control will be attached to.
@@ -301,18 +301,18 @@ ATLAPI AtlAxCreateControlLicEx(
 *lpszName*<br/>
 A pointer to a string to be passed to the control. Must be formatted in one of the following ways:
 
-- A ProgID such as "MSCAL.Calendar.7"
+- A ProgID such as `"MSCAL.Calendar.7"`
 
-- A CLSID such as "{8E27C92B-1264-101C-8A2F-040224009C02}"
+- A CLSID such as `"{8E27C92B-1264-101C-8A2F-040224009C02}"`
 
-- A URL such as "<http://www.microsoft.com>"
+- A URL such as `"<https://www.microsoft.com>"`
 
-- A reference to an Active document such as "file://\\\Documents\MyDoc.doc"
+- A reference to an Active document such as `"file://\\\Documents\MyDoc.doc"`
 
-- A fragment of HTML such as "MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"
+- A fragment of HTML such as `"MSHTML:\<HTML>\<BODY>This is a line of text\</BODY>\</HTML>"`
 
    > [!NOTE]
-   > "MSHTML:" must precede the HTML fragment so that it is designated as being an MSHTML stream.
+   > `"MSHTML:"` must precede the HTML fragment so that it is designated as being an MSHTML stream.
 
 *hWnd*<br/>
 Handle to the window that the control will be attached to.

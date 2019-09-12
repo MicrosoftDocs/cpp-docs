@@ -1700,7 +1700,7 @@
               href: atl-mfc-shared/reference/csimplestringt-class.md
             - name: CTime class
               href: atl-mfc-shared/reference/ctime-class.md
-    - name: Text and strings
+    - name: Text and Strings
       expanded: false
       items: 
         - name: Text and strings in MSVC
@@ -6396,7 +6396,6 @@
                   items: 
                     - name: Files and streams
                       href: c-runtime-library/files-and-streams.md
-                    - name: Text and binary streams
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: Byte and wide streams
                       href: c-runtime-library/byte-and-wide-streams.md

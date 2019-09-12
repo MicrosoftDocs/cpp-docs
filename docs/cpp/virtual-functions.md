@@ -1,6 +1,6 @@
 ---
 title: "Virtual Functions"
-ms.date: "11/04/2016"
+ms.date: "09/10/2019"
 helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
 ---
@@ -21,6 +21,7 @@ using namespace std;
 class Account {
 public:
    Account( double d ) { _balance = d; }
+   virtual ~Account() {}
    virtual double GetBalance() { return _balance; }
    virtual void PrintBalance() { cerr << "Error. Balance not available for base type." << endl; }
 private:
@@ -41,15 +42,15 @@ public:
 
 int main() {
    // Create objects of type CheckingAccount and SavingsAccount.
-   CheckingAccount *pChecking = new CheckingAccount( 100.00 ) ;
-   SavingsAccount  *pSavings  = new SavingsAccount( 1000.00 );
+   CheckingAccount checking( 100.00 );
+   SavingsAccount  savings( 1000.00 );
 
    // Call PrintBalance using a pointer to Account.
-   Account *pAccount = pChecking;
+   Account *pAccount = &checking;
    pAccount->PrintBalance();
 
    // Call PrintBalance using a pointer to Account.
-   pAccount = pSavings;
+   pAccount = &savings;
    pAccount->PrintBalance();
 }
 ```
@@ -120,8 +121,6 @@ int main() {
    pDerived->InvokingClass(); // Call nonvirtual function.
 }
 ```
-
-### Output
 
 ```Output
 Derived::NameOf
