@@ -21,6 +21,7 @@ The following intrinsics are available with the x86, AMD64, ARM, and ARM64 archi
 |[_bittestandcomplement](../intrinsics/bittestandcomplement-bittestandcomplement64.md)|intrin.h|
 |[_bittestandreset](../intrinsics/bittestandreset-bittestandreset64.md)|intrin.h|
 |[_bittestandset](../intrinsics/bittestandset-bittestandset64.md)|intrin.h|
+|__code_seg|intrin.h|
 |[__debugbreak](../intrinsics/debugbreak.md)|intrin.h|
 |[_disable](../intrinsics/disable.md)|intrin.h|
 |[_enable](../intrinsics/enable.md)|intrin.h|
