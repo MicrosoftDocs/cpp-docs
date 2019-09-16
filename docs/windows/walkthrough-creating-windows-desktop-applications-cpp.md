@@ -148,8 +148,8 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    ```cpp
    LRESULT CALLBACK WndProc(
-      _In_ HWND   hwnd,
-      _In_ UINT   uMsg,
+      _In_ HWND   hWnd,
+      _In_ UINT   message,
       _In_ WPARAM wParam,
       _In_ LPARAM lParam
    );
