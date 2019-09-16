@@ -1,9 +1,10 @@
 ---
 title: "vprintf, _vprintf_l, vwprintf, _vwprintf_l"
 ms.date: "11/04/2016"
-apiname: ["vprintf", "_vwprintf_l", "_vprintf_l", "vwprintf"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["vprintf", "_vwprintf_l", "_vprintf_l", "vwprintf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["vwprintf", "_vtprintf"]
 helpviewer_keywords: ["vwprintf function", "_vwprintf_l function", "vwprintf_l function", "_vtprintf function", "vtprintf_l function", "vprintf function", "_vprintf_l function", "vprintf_l function", "vtprintf function", "_vtprintf_l function", "formatted text [C++]"]
 ms.assetid: 44549505-00a0-4fa7-9a85-f2e666f55a38

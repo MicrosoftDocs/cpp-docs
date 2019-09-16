@@ -1,9 +1,10 @@
 ---
 title: "___setlc_active_func, ___unguarded_readlc_active_add_func"
 ms.date: "11/04/2016"
-apiname: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
-apilocation: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr100.dll"]
-apitype: "DLLExport"
+api_name: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
+api_location: ["msvcr90.dll", "msvcr110_clr0400.dll", "msvcrt.dll", "msvcr110.dll", "msvcr80.dll", "msvcr120.dll", "msvcr100.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["___unguarded_readlc_active_add_func", "___setlc_active_func"]
 helpviewer_keywords: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]
 ms.assetid: 605ec4e3-81e5-4ece-935a-f434768cc702

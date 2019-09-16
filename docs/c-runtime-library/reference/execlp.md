@@ -1,9 +1,10 @@
 ---
 title: "execlp"
 ms.date: "11/04/2016"
-apiname: ["execlp"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["execlp"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["execlp"]
 helpviewer_keywords: ["execlp function"]
 ms.assetid: 68b19143-e7b1-49c6-89b5-084d0d66de9c

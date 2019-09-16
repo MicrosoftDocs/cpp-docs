@@ -1,9 +1,10 @@
 ---
 title: "_putenv, _wputenv"
 ms.date: "11/04/2016"
-apiname: ["_putenv", "_wputenv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_putenv", "_wputenv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_tputenv", "_wputenv", "_putenv", "wputenv", "tputenv"]
 helpviewer_keywords: ["_putenv function", "environment variables, deleting", "putenv function", "tputenv function", "environment variables, creating", "wputenv function", "_wputenv function", "_tputenv function", "environment variables, modifying"]
 ms.assetid: 9ba9b7fd-276e-45df-8420-d70c4204b8bd

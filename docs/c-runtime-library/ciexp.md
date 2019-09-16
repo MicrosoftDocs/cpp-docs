@@ -1,9 +1,10 @@
 ---
 title: "_CIexp"
 ms.date: "11/04/2016"
-apiname: ["_CIexp"]
-apilocation: ["msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "api-ms-win-crt-math-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_CIexp"]
+api_location: ["msvcr120.dll", "msvcr80.dll", "msvcr110.dll", "msvcr100.dll", "msvcrt.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "api-ms-win-crt-math-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["CIexp", "_CIexp"]
 helpviewer_keywords: ["CIexp intrinsic", "_CIexp intrinsic"]
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55

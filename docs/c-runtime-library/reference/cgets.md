@@ -1,9 +1,10 @@
 ---
 title: "cgets"
 ms.date: "11/04/2016"
-apiname: ["cgets"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["cgets"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["cgets"]
 helpviewer_keywords: ["cgets function"]
 ms.assetid: 54faf257-5ed6-4301-be19-66d953e901fa

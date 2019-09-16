@@ -1,9 +1,10 @@
 ---
 title: "fegetenv"
 ms.date: "04/05/2018"
-apiname: ["fetegenv"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["fetegenv"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["fegetenv", "fenv/fegetenv"]
 helpviewer_keywords: ["fetegenv function"]
 ms.assetid: 68962421-6978-4b27-8e4c-ad1577830cf6

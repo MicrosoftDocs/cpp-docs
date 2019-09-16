@@ -1,9 +1,10 @@
 ---
 title: "_control87, _controlfp, __control87_2"
 ms.date: "08/29/2019"
-apiname: ["_control87", "_controlfp", "__control87_2"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_control87", "_controlfp", "__control87_2"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_control87", "__control87_2", "control87", "_controlfp", "controlfp", "control87_2", "_control87_2"]
 helpviewer_keywords: ["floating-point numbers, control word", "_control87 function", "control87 function", "controlfp function", "_controlfp function", "__control87_2 function", "floating-point functions, setting control word", "floating-point functions", "EM_AMBIGUOUS", "control87_2 function"]
 ms.assetid: 0d09729d-d9a0-43d6-864c-43ff25e7e0c5

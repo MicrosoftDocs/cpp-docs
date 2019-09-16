@@ -1,6 +1,6 @@
 ---
 title: "spectre"
-ms.date: "1/23/2018"
+ms.date: "01/23/2018"
 f1_keywords: ["spectre_cpp", "spectre", "nomitigation"]
 helpviewer_keywords: ["__declspec keyword (C++), spectre", "spectre __declspec keyword"]
 ---
@@ -16,7 +16,7 @@ Tells the compiler not to insert Spectre variant 1 speculative execution barrier
 
 ## Remarks
 
-The [/Qspectre](../build/reference/qspectre.md) compiler option causes the compiler to insert speculative execution barrier instructions where analysis indicates that a Spectre variant 1 security vulnerability exists. The specific instructions emitted depend on the processor. While these instructions should have a minimal impact on code size or performance, there may be cases where your code is not affected by the vulnerability, and requires maximum performance.
+The [/Qspectre](../build/reference/qspectre.md) compiler option causes the compiler to insert speculative execution barrier instructions. They're inserted where analysis indicates that a Spectre variant 1 security vulnerability exists. The specific instructions emitted depend on the processor. While these instructions should have a minimal impact on code size or performance, there may be cases where your code is not affected by the vulnerability, and requires maximum performance.
 
 Expert analysis might determine that a function is safe from a Spectre variant 1 bounds check bypass defect. In that case, you can suppress the generation of mitigation code within a function by applying `__declspec(spectre(nomitigation))` to the function declaration.
 

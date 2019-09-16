@@ -1,9 +1,10 @@
 ---
 title: "_get_daylight"
 ms.date: "11/04/2016"
-apiname: ["__daylight", "_get_daylight"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["__daylight", "_get_daylight"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["get_daylight", "_get_daylight"]
 helpviewer_keywords: ["get_daylight function", "daylight saving time offset", "_get_daylight function"]
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c

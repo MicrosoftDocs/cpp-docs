@@ -1,9 +1,10 @@
 ---
 title: "_aligned_offset_recalloc_dbg"
 ms.date: "11/04/2016"
-apiname: ["_aligned_offset_recalloc_dbg"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
-apitype: "DLLExport"
+api_name: ["_aligned_offset_recalloc_dbg"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["aligned_offset_recalloc_dbg", "_aligned_offset_recalloc_dbg"]
 helpviewer_keywords: ["aligned_offset_recalloc_dbg function", "_aligned_offset_recalloc_dbg function"]
 ms.assetid: 7ab719c3-77e0-4d2e-934f-01529d062fbf

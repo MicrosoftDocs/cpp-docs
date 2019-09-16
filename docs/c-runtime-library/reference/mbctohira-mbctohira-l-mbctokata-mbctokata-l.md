@@ -1,9 +1,10 @@
 ---
 title: "_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l"
 ms.date: "11/04/2016"
-apiname: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l"]
-apilocation: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
-apitype: "DLLExport"
+api_name: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll"]
+api_type: ["DLLExport"]
+topic_type: ["apiref"]
 f1_keywords: ["_mbctokata", "mbctohira", "_mbctohira", "_mbctohira_l", "mbctokata", "mbctokata_l", "mbctohira_l", "_mbctokata_l"]
 helpviewer_keywords: ["_mbctokata function", "_mbctokata_l function", "_mbctohira_l function", "mbctohira_l function", "mbctohira function", "mbctokata_l function", "_mbctohira function", "mbctokata function"]
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
