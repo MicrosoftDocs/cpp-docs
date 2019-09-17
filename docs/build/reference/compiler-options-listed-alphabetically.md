@@ -150,6 +150,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
 |[/Zg](zg-generate-function-prototypes.md)|Removed in Visual Studio 2015. Generates function prototypes.|
+|[/ZH:SHA_256](zh-sha-256.md)|Use SHA-256 for checksums in PDB debug info.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue.|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes default library name from .obj file (x86 only).|

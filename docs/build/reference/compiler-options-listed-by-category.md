@@ -115,6 +115,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Zc](zc-conformance.md)|Specifies standard behavior under [/Ze](za-ze-disable-language-extensions.md).|
 |[/Ze](za-ze-disable-language-extensions.md)|Deprecated. Enables C89 language extensions.|
 |[/Zf](zf.md)|Improves PDB generation time in parallel builds.|
+|[/ZH:SHA_256](zh-sha-256.md)|Use SHA-256 for checksums in PDB debug info.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|Includes debug information in a program database compatible with Edit and Continue. (x86 only)|
 |[/Zi](z7-zi-zi-debug-information-format.md)|Generates complete debugging information.|
 |[/Zl](zl-omit-default-library-name.md)|Removes the default library name from the .obj file.|

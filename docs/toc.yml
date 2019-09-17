@@ -794,6 +794,8 @@
                       href: build/reference/zf.md
                     - name: /Zg (Generate function prototypes)
                       href: build/reference/zg-generate-function-prototypes.md
+                    - name: "/ZH:SHA-256 (use SHA-256 in debug info)"
+                      href: build/reference/zh-sha-256.md
                     - name: /Zl (Omit default library name)
                       href: build/reference/zl-omit-default-library-name.md
                     - name: /Zm (Specify precompiled header memory allocation limit)
