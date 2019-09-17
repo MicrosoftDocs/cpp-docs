@@ -9,7 +9,7 @@ ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
 
 The `CDaoFieldInfo` structure contains information about a field object defined for data access objects (DAO).
 
- DAO is supported through Office 2013.  DAO 3.6 is the final version and it is considered obsolete.
+DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.
 
 ## Syntax
 

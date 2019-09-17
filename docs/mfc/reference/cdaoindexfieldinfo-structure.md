@@ -9,7 +9,7 @@ ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
 
 The `CDaoIndexFieldInfo` structure contains information about an index field object defined for data access objects (DAO).
 
- DAO is supported through Office 2013.  DAO 3.6 is the final version and it is considered obsolete.
+DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.
 
 ## Syntax
 
