@@ -7,7 +7,7 @@ helpviewer_keywords: ["/ZH:SHA_256", "use SHA256 for file checksum in debug info
 ---
 # /ZH:SHA_256 (use SHA256 for file checksum in debug info)
 
-Generates a FIPS-compliant SHA-256 checksum (hash) of the compiled source file to use in the PDB file.
+Tells the compiler to generate an SHA-256 checksum (hash) of the source files, to use in the PDB file.
 
 ## Syntax
 
@@ -15,9 +15,9 @@ Generates a FIPS-compliant SHA-256 checksum (hash) of the compiled source file t
 
 ## Remarks
 
-PDB files include a checksum for each source file used to create the object code in the associated executable. That allows the debugger to verify that the loaded source code matches the executable. By default, the compiler uses an MD5 cryptographic hash to generate the checksum. The MD5 algorithm is considered insecure, and isn't allowed in FIPS-compliant software.
+PDB files store a checksum for each source file compiled into the object code in the associated executable. That allows the debugger to verify that the source code it loads matches the executable. By default, the compiler uses an MD5 cryptographic hash to generate the checksum. The MD5 algorithm is considered insecure, and isn't allowed in FIPS-compliant software.
 
-The **/ZH:SHA_256** option tells the compiler to use an SHA-256 cryptographic hash for the checksum. The SHA-256 checksum is FIPS-compliant. However, it takes more time to generate the SHA-256 checksum on most processors. Compiler time spent on checksums went from 4.5% for MD5 to 9% for SHA-256 in our measurements. Newer processors may support implementations of SHA-256 that are faster than the MD5 calculation.
+The **/ZH:SHA_256** option tells the compiler to use an SHA-256 cryptographic hash for the checksum. The SHA-256 checksum is FIPS-compliant, but it takes more time to calculate on most processors. Our benchmarks on these processors show an approximate 5% longer net compile time. Your experience may vary. Newer processors support SHA-256-specific instructions that are at least as fast as the MD5 calculation.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -31,4 +31,5 @@ The **/ZH:SHA_256** option tells the compiler to use an SHA-256 cryptographic ha
 
 ## See also
 
+[Compiler options](compiler-options.md)\
 [Source server](/windows/win32/debug/source-server-and-source-indexing)
