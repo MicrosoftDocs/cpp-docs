@@ -1,6 +1,6 @@
 ---
 title: "Class Library Overview"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["vc.classes.mfc"]
 helpviewer_keywords: ["grouping MFC classes", "MFC, class library", "classes [MFC], MFC", "class libraries, MFC", "class libraries"]
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa

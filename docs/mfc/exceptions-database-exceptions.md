@@ -1,6 +1,6 @@
 ---
 title: "Exceptions: Database Exceptions"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO [MFC], exceptions", "exceptions [MFC], database", "exception handling [MFC], databases", "ODBC exceptions [MFC]", "ODBC [MFC], exceptions", "database exceptions [MFC]", "databases [MFC], exception handling", "error codes [MFC], database exception handling"]
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
 ---
@@ -14,7 +14,7 @@ This article explains how to handle database exceptions. Most of the material in
 
 ##  <a name="_core_approaches_to_exception_handling"></a> Approaches to Exception Handling
 
-The approach is the same whether you are working with DAO or ODBC.
+The approach is the same whether you are working with DAO (obsolete) or ODBC.
 
 You should always write exception handlers to handle exceptional conditions.
 
