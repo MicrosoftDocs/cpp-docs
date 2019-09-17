@@ -1,6 +1,6 @@
 ---
 title: "CDaoFieldExchange Class"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
 helpviewer_keywords: ["CDaoFieldExchange [MFC], IsValidOperation", "CDaoFieldExchange [MFC], SetFieldType", "CDaoFieldExchange [MFC], m_nOperation", "CDaoFieldExchange [MFC], m_prs"]
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
@@ -8,6 +8,9 @@ ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
 # CDaoFieldExchange Class
 
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.
+
+ DAO is supported through Office 2013.  DAO 3.6 is the final version and it is considered obsolete.
+
 
 ## Syntax
 
