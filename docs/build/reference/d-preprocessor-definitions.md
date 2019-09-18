@@ -26,6 +26,8 @@ Compiling by using `/D name=` causes the symbol *name* to have no associated val
 
 The **/D** option doesn't support function-like macro definitions. To insert definitions that can't be defined on the command line, consider the [/FI (Name forced include file)](fi-name-forced-include-file.md) compiler option.
 
+You can use **/D** multiple times on the command line to define additional symbols. If the same symbol is defined more than once, the last definition is used.
+
 This command defines the symbol DEBUG in TEST.c:
 
 ```cmd
@@ -60,7 +62,7 @@ CL /DTEST=%% TEST.C
 
 1. In the **Preprocessor Definitions** dialog box, add (one per line), modify, or delete one or more definitions. Choose **OK** to save your changes.
 
-   You don't need to include the '/D' option prefix on the definitions you specify here.
+   You don't need to include the '/D' option prefix on the definitions you specify here. In the property page, definitions are separated by semicolons (`;`).
 
 ### To set this compiler option programmatically
 
