@@ -31,7 +31,7 @@ The following procedure demonstrates the most basic use of the `CTaskDialog`, wh
 
 1. Use the **MFC Application Wizard** to create an MFC application with all the default settings. See [Walkthrough: Using the New MFC Shell Controls](walkthrough-using-the-new-mfc-shell-controls.md) for instructions on how to open the wizard for your version of Visual Studio.
 
-1. Call it *MyProject*. 
+1. Call it *MyProject*.
 
 1. Use the **Solution Explorer** to open the file MyProject.cpp.
 

@@ -1,6 +1,6 @@
 ---
 title: "General MFC Topics"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 helpviewer_keywords: ["MFC", "class libraries [MFC], MFC", "MFC, application development"]
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
 ---
@@ -10,7 +10,7 @@ This family of articles includes technical details about the Microsoft Foundatio
 
 The Microsoft Foundation Class Library is an application framework for programming in Microsoft Windows. Written in C++, MFC provides much of the code necessary for managing windows, menus, and dialog boxes; performing basic input/output; storing collections of data objects; and so on. All you need to do is add your application-specific code into this framework. Given the nature of C++ class programming, it is easy to extend or override the basic functionality that [the MFC framework](../mfc/framework-mfc.md) supplies.
 
-The MFC framework is a powerful approach that lets you build upon the work of expert programmers for Windows. MFC shortens development time; makes code more portable; provides tremendous support without reducing programming freedom and flexibility; and gives easy access to "hard to program" user-interface elements and technologies, like Active technology, OLE, and Internet programming. Furthermore, MFC simplifies database programming through Data Access Objects (DAO) and Open Database Connectivity (ODBC), and network programming through Windows Sockets. MFC makes it easy to program features like property sheets ("tab dialogs"), print preview, and floating, customizable toolbars.
+The MFC framework is a powerful approach that lets you build upon the work of expert programmers for Windows. MFC shortens development time; makes code more portable; provides tremendous support without reducing programming freedom and flexibility; and gives easy access to "hard to program" user-interface elements and technologies, like Active technology, OLE, and Internet programming. Furthermore, MFC simplifies database programming through Data Access Objects (DAO) (now obsolete) and Open Database Connectivity (ODBC), and network programming through Windows Sockets. MFC makes it easy to program features like property sheets ("tab dialogs"), print preview, and floating, customizable toolbars.
 
 ## In This Section
 
