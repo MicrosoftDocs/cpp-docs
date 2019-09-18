@@ -3852,6 +3852,8 @@
           href: compiler-warnings/compiler-warning-level-4-c4571.md
         - name: Compiler warning (level 1) C4572
           href: compiler-warnings/compiler-warning-level-1-c4572.md
+        - name: Compiler warning (level 1) C4577
+          href: compiler-warnings/compiler-warning-level-1-c4577.md
         - name: Compiler warning (level 3) C4580
           href: compiler-warnings/compiler-warning-level-3-c4580.md
         - name: Compiler warning (level 1) C4581
