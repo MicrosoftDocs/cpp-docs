@@ -102,8 +102,7 @@ Explicitly opening the default workspace, or opening an existing workspace in th
 End a workspace session by closing the workspace with the [Close](#close) member function. `Close` closes any databases you have not closed previously, rolling back any uncommitted transactions.
 
 ## Transactions
-
-DAO manages transactions at the workspace level; hence, transactions on a workspace with multiple open databases apply to all of the databases. For example, if two databases have uncommitted updates and you call [CommitTrans](#committrans), all of the updates are committed. If you want to limit transactions to a single database, you need a separate workspace object for it.
+DAO 3.6 is the final version and it is considered obsolete. manages transactions at the workspace level; hence, transactions on a workspace with multiple open databases apply to all of the databases. For example, if two databases have uncommitted updates and you call [CommitTrans](#committrans), all of the updates are committed. If you want to limit transactions to a single database, you need a separate workspace object for it.
 
 ## Implicit Use of the Default Workspace
 

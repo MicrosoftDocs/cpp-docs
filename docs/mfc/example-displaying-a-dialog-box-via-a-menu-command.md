@@ -45,7 +45,7 @@ The procedures use the following names and values:
 
    ```cpp
    CTestDialog testdlg;
-   testdlg.DoModal();  
+   testdlg.DoModal(); 
    ```
 
 ### To display a modeless dialog box
@@ -94,7 +94,7 @@ The procedures use the following names and values:
       m_pTestDlg = new CTestDialog(this);
       m_pTestDlg->Create(CTestDialog::IDD, this);
    }
-   m_pTestDlg->ShowWindow(SW_SHOW); 
+   m_pTestDlg->ShowWindow(SW_SHOW);
    ```
 
 ## See also
