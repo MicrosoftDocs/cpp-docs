@@ -1,6 +1,6 @@
 ---
 title: "Overview of Windows Programming in C++"
-ms.date: "07/28/2019"
+ms.date: "09/17/2019"
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
 ---
 # Overview of Windows Programming in C++
@@ -11,7 +11,7 @@ This section discusses how to use Visual Studio and the MFC/ATL wrapper librarie
 
 ## Command line (console) applications
 
-C++ console applications run from the command line in a console window and can display text output only. For more information, see [Console Applications](console-applications-in-visual-cpp.md).
+C++ console applications run from the command line in a console window and can display text output only. For more information, see [Create a C++ console app project](..\get-started\tutorial-console-cpp.md).
 
 ## Native desktop client applications
 
