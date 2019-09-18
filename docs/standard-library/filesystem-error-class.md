@@ -70,7 +70,7 @@ Specified error code.
 Further specified message parameter.
 
 *mypval2*\
-Further specified messsage parameter.
+Further specified message parameter.
 
 ## <a name="path1"></a> path1
 
