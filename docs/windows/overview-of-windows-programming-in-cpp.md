@@ -11,7 +11,7 @@ This section discusses how to use Visual Studio and the MFC/ATL wrapper librarie
 
 ## Command line (console) applications
 
-C++ console applications run from the command line in a console window and can display text output only. For more information, see [Create a C++ console app project](..\get-started\tutorial-console-cpp.md).
+C++ console applications run from the command line in a console window and can display text output only. For more information, see [Create a C++ console app project](../get-started/tutorial-console-cpp.md).
 
 ## Native desktop client applications
 
