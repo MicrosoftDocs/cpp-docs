@@ -1,13 +1,13 @@
 ---
 title: "CDaoDatabase Class"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 f1_keywords: ["CDaoDatabase", "AFXDAO/CDaoDatabase", "AFXDAO/CDaoDatabase::CDaoDatabase", "AFXDAO/CDaoDatabase::CanTransact", "AFXDAO/CDaoDatabase::CanUpdate", "AFXDAO/CDaoDatabase::Close", "AFXDAO/CDaoDatabase::Create", "AFXDAO/CDaoDatabase::CreateRelation", "AFXDAO/CDaoDatabase::DeleteQueryDef", "AFXDAO/CDaoDatabase::DeleteRelation", "AFXDAO/CDaoDatabase::DeleteTableDef", "AFXDAO/CDaoDatabase::Execute", "AFXDAO/CDaoDatabase::GetConnect", "AFXDAO/CDaoDatabase::GetName", "AFXDAO/CDaoDatabase::GetQueryDefCount", "AFXDAO/CDaoDatabase::GetQueryDefInfo", "AFXDAO/CDaoDatabase::GetQueryTimeout", "AFXDAO/CDaoDatabase::GetRecordsAffected", "AFXDAO/CDaoDatabase::GetRelationCount", "AFXDAO/CDaoDatabase::GetRelationInfo", "AFXDAO/CDaoDatabase::GetTableDefCount", "AFXDAO/CDaoDatabase::GetTableDefInfo", "AFXDAO/CDaoDatabase::GetVersion", "AFXDAO/CDaoDatabase::IsOpen", "AFXDAO/CDaoDatabase::Open", "AFXDAO/CDaoDatabase::SetQueryTimeout", "AFXDAO/CDaoDatabase::m_pDAODatabase", "AFXDAO/CDaoDatabase::m_pWorkspace"]
 helpviewer_keywords: ["CDaoDatabase [MFC], CDaoDatabase", "CDaoDatabase [MFC], CanTransact", "CDaoDatabase [MFC], CanUpdate", "CDaoDatabase [MFC], Close", "CDaoDatabase [MFC], Create", "CDaoDatabase [MFC], CreateRelation", "CDaoDatabase [MFC], DeleteQueryDef", "CDaoDatabase [MFC], DeleteRelation", "CDaoDatabase [MFC], DeleteTableDef", "CDaoDatabase [MFC], Execute", "CDaoDatabase [MFC], GetConnect", "CDaoDatabase [MFC], GetName", "CDaoDatabase [MFC], GetQueryDefCount", "CDaoDatabase [MFC], GetQueryDefInfo", "CDaoDatabase [MFC], GetQueryTimeout", "CDaoDatabase [MFC], GetRecordsAffected", "CDaoDatabase [MFC], GetRelationCount", "CDaoDatabase [MFC], GetRelationInfo", "CDaoDatabase [MFC], GetTableDefCount", "CDaoDatabase [MFC], GetTableDefInfo", "CDaoDatabase [MFC], GetVersion", "CDaoDatabase [MFC], IsOpen", "CDaoDatabase [MFC], Open", "CDaoDatabase [MFC], SetQueryTimeout", "CDaoDatabase [MFC], m_pDAODatabase", "CDaoDatabase [MFC], m_pWorkspace"]
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
 ---
 # CDaoDatabase Class
 
-Represents a connection to a database through which you can operate on the data.
+Represents a connection to an Access database using Data Access Objects (DAO). DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.
 
 ## Syntax
 
@@ -61,9 +61,6 @@ class CDaoDatabase : public CObject
 ## Remarks
 
 For information about the database formats supported, see the [GetName](../../mfc/reference/cdaoworkspace-class.md#getname) member function. You can have one or more `CDaoDatabase` objects active at a time in a given "workspace," represented by a [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) object. The workspace maintains a collection of open database objects, called the Databases collection.
-
-> [!NOTE]
->  The MFC DAO database classes are distinct from the MFC database classes based on ODBC. All DAO database class names have the "CDao" prefix. Class `CDaoDatabase` supplies an interface similar to that of the ODBC class [CDatabase](../../mfc/reference/cdatabase-class.md). The main difference is that `CDatabase` accesses the DBMS through Open Database Connectivity (ODBC) and an ODBC driver for that DBMS. `CDaoDatabase` accesses data through a Data Access Object (DAO) based on the Microsoft Jet database engine. In general, the MFC classes based on DAO are more capable than the MFC classes based on ODBC; the DAO-based classes can access data, including through ODBC drivers, via their own database engine. The DAO-based classes also support Data Definition Language (DDL) operations, such as adding tables via the classes, without having to call DAO directly.
 
 ## Usage
 

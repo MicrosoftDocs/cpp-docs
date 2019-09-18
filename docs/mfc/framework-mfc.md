@@ -1,12 +1,12 @@
 ---
 title: "Framework (MFC)"
-ms.date: "11/04/2016"
+ms.date: "09/17/2019"
 helpviewer_keywords: ["encapsulation [MFC], Win32 API", "MFC, application framework", "wrapper classes [MFC], explained", "Win32 [MFC], API encapsulation by MFC", "application framework [MFC], about MFC application framework", "APIs [MFC], encapsulation by MFC Win32", "encapsulation [MFC]", "Windows API [MFC], encapsulation by MFC", "encapsulated Win32 API [MFC]"]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
 ---
 # Framework (MFC)
 
-Your work with the Microsoft Foundation Class (MFC) Library framework is based largely on a few major classes and several Visual C++ tools. Some classes encapsulate a large portion of the Win32 application programming interface (API). Other classes encapsulate application concepts such as documents, views, and the application itself. Still others encapsulate OLE features and ODBC and DAO data-access functionality.
+Your work with the Microsoft Foundation Class (MFC) Library framework is based largely on a few major classes and several Visual C++ tools. Some classes encapsulate a large portion of the Win32 application programming interface (API). Other classes encapsulate application concepts such as documents, views, and the application itself. Still others encapsulate OLE features and ODBC and DAO data-access functionality.  (DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.)
 
 For example, Win32's concept of window is encapsulated by MFC class `CWnd`. That is, a C++ class called `CWnd` encapsulates or "wraps" the `HWND` handle that represents a Windows window. Likewise, class `CDialog` encapsulates Win32 dialog boxes.
 
