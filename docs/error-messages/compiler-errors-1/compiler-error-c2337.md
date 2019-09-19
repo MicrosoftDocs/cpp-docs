@@ -1,19 +1,19 @@
 ---
 title: "Compiler Error C2337"
-ms.date: "11/04/2016"
+ms.date: "09/19/2019"
 f1_keywords: ["C2337"]
 helpviewer_keywords: ["C2337"]
 ms.assetid: eccc9178-a15e-42cd-bbd0-3cea7cf2d55b
 ---
 # Compiler Error C2337
 
-'attribute name' : attribute not found
+> '*attribute-name*' : attribute not found
 
-You have used an attribute that is not supported in this version of Visual C++.
+Your code uses an attribute that isn't supported in this context, or by this version of the compiler. To resolve this issue, remove the unsupported attribute.
 
 The following sample generates C2337:
 
-```
+```cpp
 // C2337.cpp
 // compile with: /c
 [emitidl];
