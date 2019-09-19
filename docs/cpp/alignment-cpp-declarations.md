@@ -1,7 +1,7 @@
 ---
 title: "Alignment (C++ Declarations)"
 description: "How data alignment is specified in modern C++."
-ms.date: "05/30/2019"
+ms.date: "09/19/2019"
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ---
 # Alignment (C++ Declarations)
@@ -31,7 +31,7 @@ struct x_
    int b;      // 4 bytes
    short c;    // 2 bytes
    char d;     // 1 byte
-} MyStruct;
+} bar[3];
 ```
 
 The compiler pads this structure to enforce alignment naturally.
@@ -48,18 +48,18 @@ struct x_
    short c;          // 2 bytes
    char d;           // 1 byte
    char _pad1[1];    // padding to make sizeof(x_) multiple of 4
-}
+} bar[3];
 ```
 
-1. Both declarations return `sizeof(struct x_)` as 12 bytes.
+Both declarations return `sizeof(struct x_)` as 12 bytes.
 
-1. The second declaration includes two padding elements:
+The second declaration includes two padding elements:
 
-1. `char _pad0[3]` to align the `int b` member on a 4-byte boundary
+1. `char _pad0[3]` to align the `int b` member on a 4-byte boundary.
 
-1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];`
+1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];` on a four-byte boundary.
 
-1. The padding aligns the elements of `bar[3]` in a way that allows natural access.
+The padding aligns the elements of `bar[3]` in a way that allows natural access.
 
 The following code example shows the `bar[3]` array layout:
 
