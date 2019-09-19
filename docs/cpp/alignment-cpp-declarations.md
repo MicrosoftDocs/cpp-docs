@@ -51,15 +51,15 @@ struct x_
 } bar[3];
 ```
 
-1. Both declarations return `sizeof(struct x_)` as 12 bytes.
+Both declarations return `sizeof(struct x_)` as 12 bytes.
 
-1. The second declaration includes two padding elements:
+The second declaration includes two padding elements:
 
-1. `char _pad0[3]` to align the `int b` member on a 4-byte boundary
+1. `char _pad0[3]` to align the `int b` member on a 4-byte boundary.
 
-1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];`
+1. `char _pad1[1]` to align the array elements of the structure `struct _x bar[3];` on a four-byte boundary.
 
-1. The padding aligns the elements of `bar[3]` in a way that allows natural access.
+The padding aligns the elements of `bar[3]` in a way that allows natural access.
 
 The following code example shows the `bar[3]` array layout:
 
