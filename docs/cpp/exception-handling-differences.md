@@ -13,7 +13,7 @@ A second difference is that the C structured exception handling model is referre
 
 When you use the [/EHs or /EHsc](../build/reference/eh-exception-handling-model.md) compiler option, no C++ exception handlers handle structured exceptions. These exceptions are handled only by **__except** structured exception handlers or **__finally** structured termination handlers. For information, see [Structured Exception Handling (C/C++)](structured-exception-handling-c-cpp.md).
 
-Under the [/EHa](../build/reference/eh-exception-handling-model.md) compiler option, if a C exception is raised in a C++ program, it can be handled by a structured exception handler with its associated filter or by a C++ **catch** handler, whichever is dynamically nearer to the exception context. For example, this example C++ program raises a C exception inside a C++ **try** context:
+Under the [/EHa](../build/reference/eh-exception-handling-model.md) compiler option, if a C exception is raised in a C++ program, it can be handled by a structured exception handler with its associated filter or by a C++ **catch** handler, whichever is dynamically nearer to the exception context. For example, this sample C++ program raises a C exception inside a C++ **try** context:
 
 ## Example - Catch a C exception in a C++ catch block
 
