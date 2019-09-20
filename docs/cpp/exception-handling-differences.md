@@ -1,6 +1,7 @@
 ---
 title: "Handle structured exceptions in C++"
-ms.date: "08/14/2018"
+description: How to handle structured exceptions using the C++ exception handling model.
+ms.date: "09/19/2019"
 helpviewer_keywords: ["structured exception handling [C++], vs. C++ exception handling", "structured exception handling [C++], vs. unstructured", "exceptions [C++], wrapper class", "C++ exception handling [C++], vs. structured exception handling", "wrapper classes [C++], C exception"]
 ms.assetid: f21d1944-4810-468e-b02a-9f77da4138c9
 ---
