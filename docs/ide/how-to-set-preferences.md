@@ -5,7 +5,7 @@ ms.date: "09/24/2019"
 
 # How to set your C++ coding preferences in Visual Studio
 
-You can customize many aspects of Visual Studio to suit your personal preferences. You can customize the menus and toolbars, arrange the window layout, set color themes, specify C++ formatting rules, including several flavors of ClangFormat, and create custom keyboard shortcuts. You can synchronize your preferences across multiple machines, and create and store multiple sets of preferences and share them with teammates. You can install extensions from the Visual Studio Marketplace which provide additional custom behavior. Many of these options are documented under [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
+You can make your C++ coding experience more convenient, productive and pleasurable by personalizing Visual Studio. You can customize the menus and toolbars, arrange the window layout, set color themes, specify C++ formatting rules, including several flavors of ClangFormat, and create custom keyboard shortcuts. You can synchronize your preferences across multiple machines, and create and store multiple sets of preferences and share them with teammates. You can install extensions from the Visual Studio Marketplace which provide additional custom behavior. Many of these options are documented under [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).
 
 ## Arrange window layout
 
