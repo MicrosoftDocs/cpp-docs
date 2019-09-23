@@ -72,16 +72,16 @@ CL /DTEST=%% TEST.C
 
 ```cpp
 // cpp_D_compiler_option.cpp
-// compile with: /DTEST
+// compile with: cl /EHsc /DTEST cpp_D_compiler_option.cpp
 #include <stdio.h>
 
 int main( )
 {
-    #ifdef TEST
-        printf_s("TEST defined %d\n", TEST);
-    #else
-        printf_s("TEST not defined\n");
-    #endif
+#ifdef TEST
+    printf_s("TEST defined %d\n", TEST);
+#else
+    printf_s("TEST not defined\n");
+#endif
 }
 ```
 
