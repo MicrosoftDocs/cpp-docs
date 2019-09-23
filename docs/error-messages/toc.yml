@@ -4248,8 +4248,10 @@
           href: compiler-warnings/c5038.md
         - name: Compiler warning C5045
           href: compiler-warnings/c5045.md
-        - name: Compiler warning (level2) C5046
+        - name: Compiler warning (level 2) C5046
           href: compiler-warnings/c5046.md
+        - name: Compiler warning (level 1) C5105
+          href: compiler-warnings/c5105.md
 - name: Compiler warnings by compiler version
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
 - name: Compiler warnings that are off by default
