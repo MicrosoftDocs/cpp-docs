@@ -9,13 +9,14 @@ You can make your C++ coding experience more convenient, productive and pleasura
 
 ## Arrange window layout
 
-Within the Visual Studio window, the space is divided into the main menu, the toolbar, the code editor (or document window), and tool windows (**Solution Explorer**, **Error List**, and so on). The default layout is shown below:
+Within the Visual Studio window, the space is divided into the main menu, the toolbar, the code editor (or document window), and tool windows (**Solution Explorer**, **Error List**, and so on). Some windows overlap each other in the same position. For example, **Solution Explorer**, **Class View**, **Resource View**, and **Source Control Explorer** all share the same default position. You switch between them by clicking on the tabs at the bottom of the frame. To make two or more of these windows visible at the same time, just drag one of them by its title bar to a new position. You can dock it against one of the Visual Studio main window borders, or you can float it. The following illustration shows the **Team Explorer** window in the process of being dragged from its default position to a new docked position on the left side of the code editor. The blue shaded area shows where the window will be placed when the mouse button is released.
 
-![Default window layout](media/window-layout-default.png)
+![Modifying window layout](media/window-layout-move-team-explorer.png) SHOW WINDOW BEING MOVED
+
+
+In the document window, each open file is contained in a tabbed frame. You can float or lock these tabs just like tool windows. For more information, see [Customize window layouts in Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
 To hide all the tool windows, press **Alt** + **Shift** + **Enter** to toggle *full-screen mode*.
-
-Some windows overlap each other in the same position. For example, **Solution Explorer**, **Class View**, **Resource View**, and **Source Control Explorer** all share the same default position. You switch between them by clicking on the tabs at the bottom of the frame. To make two or more of these windows visible at the same time, just drag one of them by its title bar to a new position. You can dock it against one of the Visual Studio main window borders, or you can float it. In the document window, each open file is contained in a tabbed frame. You can float or lock these tabs just like tool windows. For more information, see [Customize window layouts in Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
 ## Set C++ coding styles and formatting
 
