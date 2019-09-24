@@ -1,5 +1,5 @@
 ---
-title: "How to set your preferences"
+title: "Set your C++ coding preferences in Visual Studio"
 ms.date: "09/24/2019"
 ---
 
@@ -19,7 +19,7 @@ To hide all the tool windows and maximize the Code Editor window, press **Alt** 
 
 ## Set C++ coding styles and formatting
 
-You can specify many individual code formatting options such as indentation and brace positions by navigating to **Tools** > **Options** > **Text Editor** > **C/C++** > **Formatting**. Alternatively, you can specify one of the [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) styles (or your own custom ClangFormat style):
+You can specify many individual code formatting options such as indentation and brace positions by navigating to **Tools** > **Options** > **Text Editor** > **C/C++** > **Formatting** (or type **Ctrl + Q** and search for "Formatting"). Alternatively, you can specify one of the [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) styles (or your own custom ClangFormat style):
 
 ![ClangFormat options](media/clang-format-ide.png)
 
@@ -27,7 +27,7 @@ For more information about all the formatting options, see [Options, Text Editor
 
 ## Set the color theme
 
-To set a light or dark background, navigate to **Tools** > **Options** > **Environment** and choose **Color Theme**:
+To set a light or dark background, type **Ctrl + Q** and search for "Color Theme". You can also get there via **Tools** > **Options** > **Environment** and choose **Color Theme**:
 
 ![Color themes](media/tools-options-color-theme.png)
 
@@ -45,7 +45,7 @@ In the **Visual Studio 2017** color scheme, most code elements are simply black.
 
 ![Enhanced Color Scheme](media/color-scheme-enhanced.png)
 
-Regardless of which theme or color scheme is active, you can customize the font and colors for individual code elements by navigating to **Tools** > **Options** > **Environment** > **Fonts and Colors**. Scroll down the list of display items until you see the C++ options:
+Regardless of which theme or color scheme is active, you can customize the font and colors for individual code elements by navigating to **Tools** > **Options** > **Environment** > **Fonts and Colors**  (or type **Ctrl + Q** and search for "Fonts"). Scroll down the list of display items until you see the C++ options:
 
 ![C++ font and color options](media/tools-options-cpp-colors.png)
 
@@ -67,10 +67,10 @@ For more information, see [How to: Customize menus and toolbars in Visual Studio
 
 ## Show or hide line numbers
 
-To specify whether line numbers show on the left of the editor windows, navigate to and check or uncheck **Line Numbers**:
+To specify whether line numbers show on the left of the editor windows, navigate to and check or un-check **Line Numbers**:
 
 ![Line numbers](media/tools-options-line-numbers.png)
 
 ## Create keyboard shortcuts
 
-All commands in Visual Studio can be made with keyboard shortcuts using various combinations of keys with the Ctrl, Alt and Shift keys. You can create your own shortcuts by navigating to **Tools** > **Options** > **Environment** > **Keyboard**. For more information, see [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+All commands in Visual Studio can be made with keyboard shortcuts using various combinations of keys with the Ctrl, Alt and Shift keys. You can create your own shortcuts by navigating to **Tools** > **Options** > **Environment** > **Keyboard** (or type **Ctrl + Q** and search for "shortcuts"). For more information, see [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
