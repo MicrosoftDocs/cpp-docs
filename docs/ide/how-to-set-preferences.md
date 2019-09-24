@@ -13,7 +13,6 @@ Within the Visual Studio window, the space is divided into the main menu, the to
 
 ![Modifying window layout](media/window-layout-move-team-explorer.png)
 
-
 In the document window, each open file is contained in a tabbed frame. You can float or lock these tabs just like tool windows. For more information, see [Customize window layouts in Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
 To hide all the tool windows and maximize the Code Editor window, press **Alt** + **Shift** + **Enter** to toggle *full-screen mode*.
@@ -38,12 +37,19 @@ The following image shows the dark theme:
 
 ## Customize code colorization
 
-In Visual Studio 2019 you can choose from three predefined *Color Schemes* which specify how code elements are colorized in the editor. 
-In the **Visual Studio 2017** color scheme, most code elements are simply black. In the **Enhanced** color scheme, functions, local variables, macros, and other elements are colorized. In the **Enhanced (Globals vs. Members) ** scheme, global functions and variables are colorized to contrast with class members. For more information, see []().
+In Visual Studio 2019 you can choose from three predefined *color schemes* which specify how code elements are colorized in the editor. To choose a theme, navigate to **Tools** > **Options** > **Text Editor** > **C/C++** > **View** and choose **Color Scheme**:
+
+![C++ Color Schemes](media/color-schemes.png)
+
+In the **Visual Studio 2017** color scheme, most code elements are simply black. In the **Enhanced** color scheme, functions, local variables, macros, and other elements are colorized. In the **Enhanced (Globals vs. Members)** scheme, global functions and variables are colorized to contrast with class members. The default mode is **Enhanced** and it looks like this:
+
+![Enhanced Color Scheme](media/color-scheme-enhanced.png)
 
 Regardless of which theme or color scheme is active, you can customize the font and colors for individual code elements by navigating to **Tools** > **Options** > **Environment** > **Fonts and Colors**. Scroll down the list of display items until you see the C++ options:
 
 ![C++ font and color options](media/tools-options-cpp-colors.png)
+
+Colors that you set here override the values defined for the color schemes. You have to set a color back to **Default** if you have changed it but want to use the default colors for the color scheme.
 
 ## Customize the toolbars
 
