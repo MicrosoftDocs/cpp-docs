@@ -1,8 +1,8 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 ms.date: "04/21/2019"
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045", "C5046", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5105", "C5106", "C5107"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5045", "C5046", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5105", "C5106", "C5107"]
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4872", "C4880", "C4881", "C4882", "C4910", "C4916", "C4921", "C4934", "C4951", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4985", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107"]
 ---
 # Compiler warnings C4800 Through C5999
 
@@ -147,8 +147,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 3) C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier|
 |Compiler warning (level 2) C5043|'*specification*': exception specification does not match previous declaration|
 |Compiler warning (level 4) C5044|An argument to command-line option *option* points to a path '*path*' that does not exist|
-|[Compiler warning C5045](c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified|
-|[Compiler warning (level 2) C5046](c5046.md)|'*function*' : Symbol involving type with internal linkage not defined|
+| [Compiler warning C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified |
+| [Compiler warning (level 2) C5046](c5046.md) | '*function*' : Symbol involving type with internal linkage not defined |
 | Compiler warning (level 1) C5047 | use of nonstandard \_\_if\_exists with modules is not supported |
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
@@ -158,7 +158,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |
 | Compiler warning (level 1) C5103 | pasting '*token1*' and '*token2*' does not result in a valid preprocessing token |
 | Compiler warning (level 1) C5104 | found '*string1*#*string2*' in macro replacement list, did you mean '*string1*""#*string2*'? |
-| Compiler warning (level 1) C5105 | macro expansion producing 'defined' has undefined behavior |
+| [Compiler warning (level 1) C5105](c5105.md) | macro expansion producing 'defined' has undefined behavior |
 | Compiler warning (level 1) C5106 | macro redefined with different parameter names |
 | Compiler warning (level 1) C5107 | missing terminating '*char*' character |
 
