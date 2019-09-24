@@ -113,7 +113,7 @@ Parsing error
 
 1. **File not found: filename**
 
-   The file specified in the Resource Compiler command line was not found. Check to see whether the file has been moved to another directory and whether the filename or path is typed correctly. Files are searched for using the **INCLUDE** environment variable or the Visual Workbench setting, if available.
+   The file specified in the Resource Compiler command line was not found. Check to see whether the file has been moved to another directory and whether the filename or path is typed correctly. Files are searched for using the **INCLUDE** environment variable or the Visual Studio setting, if available.
 
 1. **Font names must be ordinals**
 
