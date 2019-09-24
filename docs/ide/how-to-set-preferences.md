@@ -11,18 +11,20 @@ You can make your C++ coding experience more convenient, productive and pleasura
 
 Within the Visual Studio window, the space is divided into the main menu, the toolbar, the code editor (or document window), and tool windows (**Solution Explorer**, **Error List**, and so on). Some windows overlap each other in the same position. For example, **Solution Explorer**, **Class View**, **Resource View**, and **Source Control Explorer** all share the same default position. You switch between them by clicking on the tabs at the bottom of the frame. To make two or more of these windows visible at the same time, just drag one of them by its title bar to a new position. You can dock it against one of the Visual Studio main window borders, or you can float it. The following illustration shows the **Team Explorer** window in the process of being dragged from its default position to a new docked position on the left side of the code editor. The blue shaded area shows where the window will be placed when the mouse button is released.
 
-![Modifying window layout](media/window-layout-move-team-explorer.png) SHOW WINDOW BEING MOVED
+![Modifying window layout](media/window-layout-move-team-explorer.png)
 
 
 In the document window, each open file is contained in a tabbed frame. You can float or lock these tabs just like tool windows. For more information, see [Customize window layouts in Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
-To hide all the tool windows, press **Alt** + **Shift** + **Enter** to toggle *full-screen mode*.
+To hide all the tool windows and maximize the Code Editor window, press **Alt** + **Shift** + **Enter** to toggle *full-screen mode*.
 
 ## Set C++ coding styles and formatting
 
 You can specify many individual code formatting options such as indentation and brace positions by navigating to **Tools** > **Options** > **Text Editor** > **C/C++** > **Formatting**. Alternatively, you can specify one of the [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) styles (or your own custom ClangFormat style):
 
 ![ClangFormat options](media/clang-format-ide.png)
+
+For more information about all the formatting options, see [Options, Text Editor, C/C++, Formatting](/visualstudio/ide/reference/options-text-editor-c-cpp-formatting).
 
 ## Set the color theme
 
@@ -36,7 +38,10 @@ The following image shows the dark theme:
 
 ## Customize code colorization
 
-Regardless of which theme is active, you can customize the font and colors for individual code elements by navigating to **Tools** > **Options** > **Environment** > **Fonts and Colors**. Scroll down the list of display items until you see the C++ options:
+In Visual Studio 2019 you can choose from three predefined *Color Schemes* which specify how code elements are colorized in the editor. 
+In the **Visual Studio 2017** color scheme, most code elements are simply black. In the **Enhanced** color scheme, functions, local variables, macros, and other elements are colorized. In the **Enhanced (Globals vs. Members) ** scheme, global functions and variables are colorized to contrast with class members. For more information, see []().
+
+Regardless of which theme or color scheme is active, you can customize the font and colors for individual code elements by navigating to **Tools** > **Options** > **Environment** > **Fonts and Colors**. Scroll down the list of display items until you see the C++ options:
 
 ![C++ font and color options](media/tools-options-cpp-colors.png)
 
