@@ -1,9 +1,9 @@
 ---
-title: "Vcxproj.filters file format"
+title: "Vcxproj.filters files"
 ms.date: "09/25/2019"
 ---
 
-## Vcxproj.filters file format
+# vcxproj.filters files
 
 The *filters* files (*.vcxproj.filters) is an XML file in MSBuild format that specifies, on a per-project basis, which file types go into which logical folder in **Solution Explorer**. In the following illustration, note that the .cpp files are under the **Source Files** node and the .h files are under the **Header Files** node. This placement is controlled by the filters file. 
 
