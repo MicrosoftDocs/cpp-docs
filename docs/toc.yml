@@ -409,6 +409,8 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Example project file
                   href: build/reference/project-files.md
+                - name: .vcsproj filters file structure
+                  href: build/reference/vcxproj-filters-files.md
             - name: C++ project property pages
               expanded: false
               items: 
