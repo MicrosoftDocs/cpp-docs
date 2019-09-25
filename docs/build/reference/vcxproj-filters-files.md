@@ -13,7 +13,7 @@ Visual Studio creates this file automatically with predefined logical folders (f
 
 ## Example
 
-The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension.
+The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension. The `ItemGroup` that contains the `ClInclude` nodes is also optional. You can use it to override the filtering for individual files. (When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file.)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
