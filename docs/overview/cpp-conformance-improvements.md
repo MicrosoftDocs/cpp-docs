@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "08/30/2019"
+ms.date: "09/25/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -382,7 +382,93 @@ bool neq(const S& lhs, const S& rhs) {
 - [P0754R2](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0754r2.pdf): \<version>
 - [P0771R1](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0771r1.pdf): noexcept For std::function's move constructor
 
+## <a name="improvements_163"></a> Conformance improvements in Visual Studio 2019 version 16.3
+
+### Stream extraction operators for char* removed
+
+Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char *' (or there is no acceptable conversion)*:
+
+```cpp
+   char x[42];
+   char* p = x;
+   std::cin >> std::setw(42);
+   std::cin >> p;
+```
+
+To avoid the error, apply the extraction operator directly to the array variable:
+
+```cpp
+char x[42];
+std::cin >> x;
+```
+
+### Constructors as type names disallowed
+
+Constructor names are no longer considered injected-class-names when they appear in a qualified name after an alias to a class template specialization. This previously allowed use of the constructor as a type name to declare other entities. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C3646: 'TotalDuration': unknown override specifier*:
+
+```cpp
+#include <chrono>
+
+class Foo {
+
+   std::chrono::milliseconds::duration TotalDuration{};
+
+};
+
+```
+To avoid the error, declare `TotalDuration` as shown here:
+
+```cpp
+#include <chrono>
+
+class Foo {
+
+  std::chrono::milliseconds TotalDuration {};
+
+};
+```
+
+### New keywords **requires** and **concepts**
+
+New keywords **requires** and **concepts** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the compiler will raise *C2059: syntax error*.
+
+### Stricter checking of 'extern "C"' functions.
+
+If an 'extern "C"' function was declared in different namespaces, previous version of the Microsoft C++ compiler did not check whether the declarations were compatible. In Visual Studio 2019, version 16.3, the compiler performs such a check. In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code produces *C2371 : redefinition; different basic types* and *C2733 you cannot overload a function with C linkage*:
+
+```cpp
+using BOOL = int;
+
+namespace N
+
+{
+   extern "C" void f(int, int, int, bool);
+}
+
+void g()
+{
+   N::f(0, 1, 2, false);
+}
+
+extern "C" void f(int, int, int, BOOL){}
+```
+
+To avoid the errors in the previous example, use **bool** instead of **BOOL** in the extern "C" declaration.
+
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
+
+### Reinterpret_cast in a constexpr function
+
+A **reinterpret_cast** is illegal in a **constexpr** function. The Microsoft C++ compiler would previously reject **reinterpret_cast** only if it were used in a **constexpr** context. In Visual Studio 2019, in all language standards modes, it correctly diagnoses its presence in the definition of a **constexpr** function. The following code now produces *C3615: constexpr function 'f' cannot result in a constant expression*.
+
+```cpp
+long long i = 0;
+constexpr void f() {
+    int* a = reinterpret_cast<int*>(i);
+}
+```
+
+To avoid the error, remove the **constexpr** modifier from the function declaration.
 
 ### Correct diagnostics for basic_string range constructor
 
@@ -490,7 +576,7 @@ void example()
 
 ### Function template bodies containing constexpr if statements
 
-Template function bodies containing `if constexpr` statements have some `/permissive-` parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces C*7510: 'Type': use of dependent type name must be prefixed with 'typename'* only if the `/permissive-` option isn't set. In Visual Studio 2019 the same code raises errors even when the `/permissive-` option is set:
+Template function bodies containing `if constexpr` statements have some [/permissive-](../build/reference/permissive-standards-conformance.md) parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces C*7510: 'Type': use of dependent type name must be prefixed with 'typename'* only if the [/permissive-](../build/reference/permissive-standards-conformance.md) option isn't set. In Visual Studio 2019 the same code raises errors even when the [/permissive-](../build/reference/permissive-standards-conformance.md) option is set:
 
 ```cpp
 template <typename T>
@@ -525,7 +611,7 @@ To avoid the error, add the `typename` keyword to the declaration of `a`: `typen
 
 ### Inline assembly code isn't supported in a lambda expression
 
-The Visual C++ team was recently made aware of a security issue in which the use of inline-assembler within a lambda could lead to the corruption of `ebp` (the return address register) at runtime. A malicious attacker could possibly take advantage of this scenario. Given the nature of the issue, the fact that inline assembler is only supported on x86, and the poor interaction between the inline assembler and the rest of the compiler, the safest solution to this problem was to disallow inline assembler within a lambda expression.
+The Microsoft C++ team was recently made aware of a security issue in which the use of inline-assembler within a lambda could lead to the corruption of `ebp` (the return address register) at runtime. A malicious attacker could possibly take advantage of this scenario. Given the nature of the issue, the fact that inline assembler is only supported on x86, and the poor interaction between the inline assembler and the rest of the compiler, the safest solution to this problem was to disallow inline assembler within a lambda expression.
 
 The only use of inline assembler within a lambda expression that we have found 'in the wild' was to capture the return address. In this scenario, you can capture the return address on all platforms simply by using a compiler intrinsic `_ReturnAddress()`.
 
@@ -1524,7 +1610,7 @@ void f()
 
 ### Default arguments aren't allowed on out of line definitions of member functions
 
-Default arguments aren't allowed on out-of-line definitions of member functions in template classes. The compiler will issue a warning under **/permissive**, and a hard error under **/permissive-**.
+Default arguments aren't allowed on out-of-line definitions of member functions in template classes. The compiler will issue a warning under **/permissive**, and a hard error under [/permissive-](../build/reference/permissive-standards-conformance.md).
 
 In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning C5034: 'A\<T>::f': an out-of-line definition of a member of a class template cannot have default arguments:
 
@@ -2067,7 +2153,7 @@ static_assert(std::is_convertible<D *, B *>::value, "fail");
 
 In C++17, `throw()` is an alias for `noexcept`, `throw(<type list>)` and `throw(...)` are removed, and certain types may include `noexcept`. This change can cause source compatibility issues with code that conforms to C++14 or earlier. The **/Zc:noexceptTypes-** switch can be used to revert to the C++14 version of `noexcept` while using C++17 mode in general. It enables you to update your source code to conform to C++17 without having to rewrite all your `throw()` code at the same time.
 
-The compiler also now diagnoses more mismatched exception specifications in declarations in C++17 mode or with **/permissive-** with the new warning C5043.
+The compiler also now diagnoses more mismatched exception specifications in declarations in C++17 mode or with [/permissive-](../build/reference/permissive-standards-conformance.md) with the new warning C5043.
 
 The following code generates C5043 and C5040 in Visual Studio 2017 version 15.5 when the **/std:c++17** switch is applied:
 
@@ -2395,7 +2481,7 @@ Two-phase name lookup requires that non-dependent names used in template bodies 
 
 One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent base classes, because they would be looked up during instantiation time when all the types are resolved. Now that code is treated as an error. In these cases, you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example, by adding a `this->` pointer.
 
-In **/permissive-** mode, the following code now raises C3861: *'base_value': identifier not found*:
+In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code now raises C3861: *'base_value': identifier not found*:
 
 ```cpp
 template <class T>
@@ -2466,7 +2552,7 @@ public:
 
 In Visual Studio 2017 version 15.8, the compiler constrains the areas that these `reinterpret_cast` operators can appear in the default mode, to help code conform to standard C++ behavior. Under [/permissive-](../build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an `offsetof` in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
 
-The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in **/permissive-** mode:
+The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in [/permissive-](../build/reference/permissive-standards-conformance.md) mode:
 
 ```cpp
 struct Data {
@@ -2508,7 +2594,7 @@ int main()
 
 Previous versions of the Microsoft C++ compiler didn't detect that a base-class had cv-qualifiers if it was also subject to pack expansion.
 
-In Visual Studio 2017 version 15.8, in **/permissive-** mode the following code raises C3770 *'const S': is not a valid base class*:
+In Visual Studio 2017 version 15.8, in [/permissive-](../build/reference/permissive-standards-conformance.md) mode the following code raises C3770 *'const S': is not a valid base class*:
 
 ```cpp
 template<typename... T>
@@ -2524,9 +2610,9 @@ int main()
 
 ### `template` keyword and nested-name-specifiers
 
-In **/permissive-** mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a dependent nested-name-specifier.
+In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in **/permissive-** mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+The following code in [/permissive-](../build/reference/permissive-standards-conformance.md) mode now raises C7510: *'example': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
 
 ```cpp
 template<typename T> struct Base
@@ -2587,7 +2673,7 @@ struct A
 A<>::from_template_t<A<int>> a;
 ```
 
-In Visual Studio 2017 version 15.9, in **/permissive-** mode, the compiler raises C3861: *'from_template': identifier not found*.
+In Visual Studio 2017 version 15.9, in [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the compiler raises C3861: *'from_template': identifier not found*.
 
 To fix the error, declare `from_template` before `from_template_t`.
 
@@ -2610,7 +2696,7 @@ The compiler also raises C7536 whenever the .ifc file has been tampered with. Th
 
 ### Partial ordering involving aliases and non-deduced contexts
 
-Implementations diverge in the partial ordering rules involving aliases in non-deduced contexts. In the following example, GCC and the Microsoft C++ compiler (in **/permissive-** mode) raise an error, while Clang accepts the code.
+Implementations diverge in the partial ordering rules involving aliases in non-deduced contexts. In the following example, GCC and the Microsoft C++ compiler (in [/permissive-](../build/reference/permissive-standards-conformance.md) mode) raise an error, while Clang accepts the code.
 
 ```cpp
 #include <utility>
@@ -2728,7 +2814,7 @@ struct S
 {
     constexpr void f();
 };
-  
+ 
 template<>
 constexpr void S<int>::f()
 {
