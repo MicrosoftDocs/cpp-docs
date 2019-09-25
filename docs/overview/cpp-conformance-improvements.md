@@ -386,7 +386,7 @@ bool neq(const S& lhs, const S& rhs) {
 
 ### Stream extraction operators for char* removed
 
-Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char *' (or there is no acceptable conversion)*:
+Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char\*' (or there is no acceptable conversion)*:
 
 ```cpp
    char x[42];
@@ -395,7 +395,7 @@ Stream extraction operators for pointer-to-characters have been removed and repl
    std::cin >> p;
 ```
 
-To avoid the error, apply the extraction operator directly to the array variable:
+To avoid the error, use the extraction operator with a char[] variable:
 
 ```cpp
 char x[42];
@@ -410,7 +410,7 @@ New keywords **requires** and **concepts** have been added to the Microsoft C++ 
 
 ### Reinterpret_cast in a constexpr function
 
-A **reinterpret_cast** is illegal in a **constexpr** function. The Microsoft C++ compiler would previously reject **reinterpret_cast** only if it were used in a **constexpr** context. In Visual Studio 2019, in all language standards modes, it correctly diagnoses its presence in the definition of a **constexpr** function. The following code now produces *C3615: constexpr function 'f' cannot result in a constant expression*.
+A **reinterpret_cast** is illegal in a **constexpr** function. The Microsoft C++ compiler would previously reject **reinterpret_cast** only if it were used in a **constexpr** context. In Visual Studio 2019, in all language standards modes, the compiler correctly diagnoses a **reinterpret_cast** in the definition of a **constexpr** function. The following code now produces *C3615: constexpr function 'f' cannot result in a constant expression*.
 
 ```cpp
 long long i = 0;
@@ -777,9 +777,9 @@ class Foo {
 };
 ```
 
-### Stricter checking of 'extern "C"' functions.
+### Stricter checking of extern "C" functions
 
-If an 'extern "C"' function was declared in different namespaces, previous version of the Microsoft C++ compiler did not check whether the declarations were compatible. In Visual Studio 2019, version 16.3, the compiler performs such a check. In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code produces *C2371 : redefinition; different basic types* and *C2733 you cannot overload a function with C linkage*:
+If an **extern "C"** function was declared in different namespaces, previous version of the Microsoft C++ compiler did not check whether the declarations were compatible. In Visual Studio 2019, version 16.3, the compiler performs such a check. In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code produces *C2371 : redefinition; different basic types* and *C2733 you cannot overload a function with C linkage*:
 
 ```cpp
 using BOOL = int;
