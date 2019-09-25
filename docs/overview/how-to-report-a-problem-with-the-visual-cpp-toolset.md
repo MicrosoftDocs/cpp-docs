@@ -1,6 +1,7 @@
 ---
 title: "How to report a problem with the Microsoft C++ toolset"
-ms.date: "06/21/2019"
+description: How to create a good problem report and repro information for the Microsoft C++ toolset.
+ms.date: "09/24/2019"
 ms.technology: "cpp-ide"
 author: "corob-msft"
 ms.author: "corob"
@@ -311,9 +312,9 @@ Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) a
 
 ### Link repros
 
-A *Link repro* is the linker-generated contents of a directory specified by the **link\_repro** environment variable. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so that the problem can be reproduced. A Link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
+A *link repro* is the linker-generated contents of a directory specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
 
-#### To generate a Link repro using the link_repro environment variable
+#### To generate a link repro using the link_repro environment variable
 
 1. Capture the command-line arguments used to build your repro, as described in [To report the contents of the command line](#to-report-the-contents-of-the-command-line).
 
@@ -321,9 +322,9 @@ A *Link repro* is the linker-generated contents of a directory specified by the 
 
 1. In the developer command prompt console window, change to the directory that contains your repro project.
 
-1. Enter **mkdir linkrepro** to create a directory for the Link repro.
+1. Enter **mkdir linkrepro** to create a directory named *linkrepro* for the link repro. You can use a different name to capture another link repro.
 
-1. Enter the command **set link\_repro=linkrepro** to set the **link\_repro** environment variable to the directory you created. If your build is run from a different directory, as is often the case for more complex projects, then set **link\_repro** to the full path to your linkrepro directory instead.
+1. Enter the command **set link\_repro=linkrepro** to set the **link\_repro** environment variable to the directory you created. If your build is run from a different directory, as is often the case for more complex projects, then set **link\_repro** to the full path to your link repro directory instead.
 
 1. To build the repro project in Visual Studio, in the developer command prompt console window, enter the command **devenv**. It ensures that the value of the **link\_repro** environment variable is visible to Visual Studio. To build the project at the command line, use the command-line arguments captured above to duplicate the repro build.
 
@@ -333,17 +334,23 @@ A *Link repro* is the linker-generated contents of a directory specified by the 
 
 1. In the developer command prompt console window, enter the command **set link\_repro=** to clear the **link\_repro** environment variable.
 
-#### To generate a Link repro using the /LINKREPRO linker option
+Finally, package the repro by compressing the entire linkrepro directory into a .zip file or similar, and attach it to your report.
 
-The /LINKREPRO linker option has the same effect as the **link\_repro** environment variable. You can also use the /LINKREPROTARGET option to specify the name to use for the generated link repro. To use /LINKREPROTARGET, you must specify the /OUT option.
+The **/LINKREPRO** linker option has the same effect as the **link\_repro** environment variable. You can use the [/LINKREPROTARGET](../build/reference/linkreprotarget.md) option to specify the name to use for the generated link repro. To use **/LINKREPROTARGET**, you must also specify the **/OUT** linker option.
 
-<!-- TODO TODO -->
+#### To generate a link repro using the /LINKREPRO option
 
-Finally, package the repro by compressing the entire linkrepro directory into a .zip file or similar and attach it to your report.
+1. Create a directory to hold the link repro. We'll refer to the full directory path you create as _directory-path_. Use double quotes around the path if it includes spaces.
+
+1. Add the **/LINKREPRO:**_directory-path_ command to the linker command line. In Visual Studio, open the **Property Pages** dialog for your project. Select the **Configuration Properties** > **Linker** > **Command Line** property page. Then, enter the **/LINKREPRO:**_directory-path_ option in the **Additional Options** box. Choose **OK** to save your changes.
+
+1. Build your repro project, and confirm that the expected problem has occurred.
+
+Finally, package the repro by compressing the entire _directory-path_ link repro directory into a .zip file or similar, and attach it to your report.
 
 ### Other repros
 
-If you can't reduce the problem to a single source file or preprocessed repro, and the problem doesn't require a Link repro, we can investigate an IDE project. All the guidance on how to create a good repro still applies: The code ought to be minimal and self-contained. The problem should occur in our most recent tools, and if relevant, shouldn't be seen in other compilers.
+If you can't reduce the problem to a single source file or preprocessed repro, and the problem doesn't require a link repro, we can investigate an IDE project. All the guidance on how to create a good repro still applies: The code ought to be minimal and self-contained. The problem should occur in our most recent tools, and if relevant, shouldn't be seen in other compilers.
 
 Create your repro as a minimal IDE project, then package it by compressing the entire directory structure into a .zip file or similar and attach it to your report.
 
