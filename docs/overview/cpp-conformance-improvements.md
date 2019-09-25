@@ -402,58 +402,9 @@ char x[42];
 std::cin >> x;
 ```
 
-### Constructors as type names disallowed
-
-Constructor names are no longer considered injected-class-names when they appear in a qualified name after an alias to a class template specialization. This previously allowed use of the constructor as a type name to declare other entities. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C3646: 'TotalDuration': unknown override specifier*:
-
-```cpp
-#include <chrono>
-
-class Foo {
-
-   std::chrono::milliseconds::duration TotalDuration{};
-
-};
-
-```
-To avoid the error, declare `TotalDuration` as shown here:
-
-```cpp
-#include <chrono>
-
-class Foo {
-
-  std::chrono::milliseconds TotalDuration {};
-
-};
-```
-
 ### New keywords **requires** and **concepts**
 
 New keywords **requires** and **concepts** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the compiler will raise *C2059: syntax error*.
-
-### Stricter checking of 'extern "C"' functions.
-
-If an 'extern "C"' function was declared in different namespaces, previous version of the Microsoft C++ compiler did not check whether the declarations were compatible. In Visual Studio 2019, version 16.3, the compiler performs such a check. In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code produces *C2371 : redefinition; different basic types* and *C2733 you cannot overload a function with C linkage*:
-
-```cpp
-using BOOL = int;
-
-namespace N
-
-{
-   extern "C" void f(int, int, int, bool);
-}
-
-void g()
-{
-   N::f(0, 1, 2, false);
-}
-
-extern "C" void f(int, int, int, BOOL){}
-```
-
-To avoid the errors in the previous example, use **bool** instead of **BOOL** in the extern "C" declaration.
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
@@ -797,6 +748,57 @@ struct Comparer  {
 };
 
 ```
+
+## <a name="update_163"> Bug fixes and behavior changes in Visual Studio 2019 version 16.3
+
+### Constructors as type names disallowed
+
+Constructor names are no longer considered injected-class-names when they appear in a qualified name after an alias to a class template specialization. This previously allowed use of the constructor as a type name to declare other entities. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C3646: 'TotalDuration': unknown override specifier*:
+
+```cpp
+#include <chrono>
+
+class Foo {
+
+   std::chrono::milliseconds::duration TotalDuration{};
+
+};
+
+```
+To avoid the error, declare `TotalDuration` as shown here:
+
+```cpp
+#include <chrono>
+
+class Foo {
+
+  std::chrono::milliseconds TotalDuration {};
+
+};
+```
+
+### Stricter checking of 'extern "C"' functions.
+
+If an 'extern "C"' function was declared in different namespaces, previous version of the Microsoft C++ compiler did not check whether the declarations were compatible. In Visual Studio 2019, version 16.3, the compiler performs such a check. In [/permissive-](../build/reference/permissive-standards-conformance.md) mode, the following code produces *C2371 : redefinition; different basic types* and *C2733 you cannot overload a function with C linkage*:
+
+```cpp
+using BOOL = int;
+
+namespace N
+
+{
+   extern "C" void f(int, int, int, bool);
+}
+
+void g()
+{
+   N::f(0, 1, 2, false);
+}
+
+extern "C" void f(int, int, int, BOOL){}
+```
+
+To avoid the errors in the previous example, use **bool** instead of **BOOL** in the extern "C" declaration.
 
 ::: moniker-end
 
