@@ -2,7 +2,7 @@
 title: "Visual C++ Porting and Upgrading Guide"
 ms.date: "09/18/2018"
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-ms.topic: "landing-page"
+ms.topic: "overview"
 ---
 # Visual C++ Porting and Upgrading Guide
 

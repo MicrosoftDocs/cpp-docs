@@ -2,7 +2,7 @@
 title: "Cloud and Web Programming in Visual C++"
 ms.date: "05/14/2019"
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-ms.topic: "landing-page"
+ms.topic: "overview"
 ---
 # Cloud and Web Programming in Visual C++
 
