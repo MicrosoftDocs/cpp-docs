@@ -13,7 +13,7 @@ Visual Studio creates this file automatically with predefined logical folders (f
 
 ## Example
 
-The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders.
+The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,7 +78,7 @@ The following example shows the filters file for the example show previously. It
 </Project>
 ```
 
-To create nested logical folders, declare all nodes in filters `ItemGroup` as shown below. Each child node must declare the full logical path to the topmost parent. The `UniqueIdentifier` is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension.
+To create nested logical folders, declare all nodes in filters `ItemGroup` as shown below. Each child node must declare the full logical path to the topmost parent. 
 
 ```xml
   <ItemGroup>
