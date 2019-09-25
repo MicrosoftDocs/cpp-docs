@@ -313,7 +313,7 @@ Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) a
 
 A *Link repro* is the linker-generated contents of a directory specified by the **link\_repro** environment variable. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so that the problem can be reproduced. A Link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
 
-#### To generate a Link repro
+#### To generate a Link repro using the link_repro environment variable
 
 1. Capture the command-line arguments used to build your repro, as described in [To report the contents of the command line](#to-report-the-contents-of-the-command-line).
 
@@ -332,6 +332,12 @@ A *Link repro* is the linker-generated contents of a directory specified by the 
 1. Close Visual Studio, if you used it to do the build.
 
 1. In the developer command prompt console window, enter the command **set link\_repro=** to clear the **link\_repro** environment variable.
+
+#### To generate a Link repro using the /LINKREPRO linker option
+
+The /LINKREPRO linker option has the same effect as the **link\_repro** environment variable. You can also use the /LINKREPROTARGET option to specify the name to use for the generated link repro. To use /LINKREPROTARGET, you must specify the /OUT option.
+
+<!-- TODO TODO -->
 
 Finally, package the repro by compressing the entire linkrepro directory into a .zip file or similar and attach it to your report.
 
