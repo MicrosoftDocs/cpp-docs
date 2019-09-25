@@ -13,7 +13,7 @@ Visual Studio creates this file automatically with predefined logical folders (f
 
 ## Example
 
-The following example shows a simple filters file with a flat hierarchy; in other words, there are no nested logical folders.
+The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -33,17 +33,47 @@ The following example shows a simple filters file with a flat hierarchy; in othe
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="string_utils.cpp">
+    <ClInclude Include="MFCApplication1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCApplication1Dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCApplication1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stringutilities.cpp">
+    <ClCompile Include="MFCApplication1Dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="string_utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ResourceCompile Include="MFCApplication1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCApplication1.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCApplication1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
 ```
