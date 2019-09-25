@@ -9,7 +9,7 @@ The *filters* file (\*.vcxproj.filters) is an XML file in MSBuild format that is
 
 ![Logical folders in Solution Explorer](media/solution-explorer-filters.png)
 
-Visual Studio creates this file automatically with predefined logical folders (filters): **References**, **External Dependencies**, **Source Files**, **Header Files** and **Resource Files**. It automatically assigns known file types to each folder. If you want to create a filter with a custom name or a filter that holds custom file types, you can create your own filters file in the root folder of the project.
+Visual Studio creates this file automatically with predefined logical folders (filters): **Source Files**, **Header Files** and **Resource Files**. It automatically assigns known file types to each folder. If you want to create a filter with a custom name or a filter that holds custom file types, you can create your own filters file in the root folder of the project. (**References** and **External Dependencies** are special folders that do not participate in filtering.)
 
 ## Example
 
