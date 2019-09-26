@@ -312,7 +312,7 @@ Finally, attach the preprocessed repro files (*filename*.i and *modulename*.i) a
 
 ### Link repros
 
-A *link repro* is the linker-generated contents of a directory specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
+A *link repro* is the linker-generated contents of a directory, specified either by the **link\_repro** environment variable, or as an argument to the [/LINKREPRO](../build/reference/linkrepro.md) linker option. It contains build artifacts that collectively demonstrate a problem that occurs at link time. Examples include a backend crash involving Link-Time Code Generation (LTCG), or a linker crash. These build artifacts are the ones needed as linker input so the problem can be reproduced. A link repro can be created easily by using this environment variable. It enables the linker's built-in repro generation capability.
 
 #### To generate a link repro using the link_repro environment variable
 
@@ -336,7 +336,7 @@ A *link repro* is the linker-generated contents of a directory specified either 
 
 Finally, package the repro by compressing the entire linkrepro directory into a .zip file or similar, and attach it to your report.
 
-The **/LINKREPRO** linker option has the same effect as the **link\_repro** environment variable. You can use the [/LINKREPROTARGET](../build/reference/linkreprotarget.md) option to specify the name to use for the generated link repro. To use **/LINKREPROTARGET**, you must also specify the **/OUT** linker option.
+The **/LINKREPRO** linker option has the same effect as the **link\_repro** environment variable. You can use the [/LINKREPROTARGET](../build/reference/linkreprotarget.md) option to specify the name to filter on for the generated link repro. To use **/LINKREPROTARGET**, you must also specify the **/OUT** linker option.
 
 #### To generate a link repro using the /LINKREPRO option
 
