@@ -14,24 +14,21 @@ Various command-line options can be used to control LIB.
 
 To run LIB, type the command `lib` followed by the options and file names for the task you are using LIB to perform. LIB also accepts command-line input in command files, which are described in the following section. LIB does not use an environment variable.
 
-> [!NOTE]
-> If you are accustomed to the LINK32.exe and LIB32.exe tools provided with the Microsoft Win32 Software Development Kit for Windows NT, you may have been using either the command `link32 -lib` or the command `lib32` for managing libraries and creating import libraries. Be sure to change your makefiles and batch files to use the `lib` command instead.
-
 ## LIB Command Files
 
 You can pass command-line arguments to LIB in a command file using the following syntax:
 
-> **LIB \@**<em>commandfile</em>
+> **LIB \@**<em>command-file</em>
 
-The file *commandfile* is a text file. No space or tab is allowed between the at sign (**\@**) and the file name. There is no default extension; you must specify the full file name, including any extension. Wildcards cannot be used. You can specify an absolute or relative path with the file name.
+The file *command-file* is a text file. No spaces or tabs are allowed between the at sign (**\@**) and the file name. The *command-file* name has no default extension; you must specify the full file name, including any extension. Wildcards can't be used. You can specify an absolute or relative path with the file name.
 
-In the command file, arguments can be separated by spaces or tabs, as they can on the command line; they can also be separated by newline characters. Use a semicolon (**;**) to mark a comment. LIB ignores all text from the semicolon to the end of the line.
+In the command file, arguments can be separated by spaces or tabs, as they can on the command line. Arguments can also be separated by newline characters. Use a semicolon (**;**) to mark a comment. LIB ignores all text from the semicolon to the end of the line.
 
-You can specify either all or part of the command line in a command file, and you can use more than one command file in a LIB command. LIB accepts the command-file input as if it were specified in that location on the command line. Command files cannot be nested. LIB echoes the contents of command files unless the /NOLOGO option is used.
+You can specify either all or part of the command line in a command file, and you can use more than one command file in a LIB command. LIB accepts the command-file input as if it's specified in that location on the command line. Command files can't be nested. LIB echoes the contents of command files unless the **/NOLOGO** option is used.
 
 ## Using LIB Options
 
-An option consists of an option specifier, which is either a dash (**-**) or a forward slash (**/**), followed by the name of the option. Option names cannot be abbreviated. Some options take an argument, specified after a colon (**:**). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive, but identifiers used as arguments are case sensitive. LIB processes options in the order specified on the command line and in command files. If an option is repeated with different arguments, the last one to be processed takes precedence.
+An option consists of an option specifier, which is either a dash (**-**) or a forward slash (**/**), followed by the name of the option. Option names can't be abbreviated. Some options take an argument, specified after a colon (**:**). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments aren't case-sensitive, but identifiers used as arguments are case-sensitive. LIB processes options in the order specified on the command line and in command files. If an option is repeated with different arguments, the last one to be processed takes precedence.
 
 The following options apply to all modes of LIB:
 
@@ -41,22 +38,28 @@ If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to
 
 For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
+::: moniker range=">=vs-2019"
+
 > **/LINKREPRO:**_directory-path_ \
 > **/LINKREPROTARGET:**_filename_
 
 To help Microsoft diagnose lib.exe crashes and internal errors, you can use the **/LINKREPRO** option. It works the same way as the [/LINKREPRO](linkrepro.md) linker option. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It filters on a _filename_, to only generate repro artifacts when lib.exe is used on that file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
+The **/LINKREPRO** and **/LINKREPROTARGET** options are available starting in Visual Studio 2019 version 16.1.
+
+::: moniker-end
+
 > **/LTCG**
 
 "LTCG" stands for *link-time code generation*. This feature requires cooperation between the compiler ([cl.exe](compiler-options.md)), LIB, and the linker ([LINK](linker-options.md)) in order to optimize code beyond what any component can do by itself.
 
-For LIB, the **/LTCG** option specifies that the inputs from cl.exe include object files that were generated by using the [/GL](gl-whole-program-optimization.md) compiler option. If LIB encounters such inputs and **/LTCG** is not specified, it will restart with /LTCG enabled after displaying an informational message. In other words, it is not necessary to explicitly set this option, but it speeds up build performance to do so because LIB does not have to restart itself.
+For LIB, the **/LTCG** option specifies that the inputs from cl.exe include object files that were generated by using the [/GL](gl-whole-program-optimization.md) compiler option. If LIB encounters such inputs and **/LTCG** isn't specified, it will restart with /LTCG enabled after displaying an informational message. In other words, it isn't necessary to explicitly set this option, but it speeds up build performance to do so because LIB doesn't have to restart itself.
 
-In the build process, the output from LIB is sent to LINK. LINK has its own separate **/LTCG** option which is used to perform various optimizations, including whole-program optimization and profile-guided optimization (PGO) instrumentation. For more information about the LINK option, see [/LTCG](ltcg-link-time-code-generation.md).
+In the build process, the output from LIB is sent to LINK. LINK has its own separate **/LTCG** option. It's used to perform various optimizations, including whole-program optimization and profile-guided optimization (PGO) instrumentation. For more information about the LINK option, see [/LTCG](ltcg-link-time-code-generation.md).
 
 > **/MACHINE**
 
-Specifies the target platform for the program. Usually, you do not need to specify /MACHINE. LIB infers the machine type from the .obj files. However, in some circumstances, LIB cannot determine the machine type and issues an error message. If such an error occurs, specify /MACHINE. In /EXTRACT mode, this option is for verification only. Use `lib /?` at the command line to see available machine types.
+Specifies the target platform for the program. Usually, you don't need to specify **/MACHINE**. LIB infers the machine type from the .obj files. However, in some circumstances, LIB can't determine the machine type and issues an error message. If such an error occurs, specify **/MACHINE**. In **/EXTRACT** mode, this option is for verification only. Use `lib /?` at the command line to see available machine types.
 
 > **/NOLOGO**
 
@@ -68,7 +71,7 @@ Displays details about the progress of the session, including names of the .obj 
 
 > **/WX**[**:NO**]
 
-Treat warnings as errors. See [/WX (Treat Linker Warnings as Errors)](wx-treat-linker-warnings-as-errors.md) for more information.
+Treat warnings as errors. For more information, see [/WX (Treat Linker Warnings as Errors)](wx-treat-linker-warnings-as-errors.md).
 
 Other options apply only to specific modes of LIB. These options are discussed in the sections describing each mode.
 
