@@ -1,6 +1,8 @@
 ---
 title: "Vcxproj.filters files"
 ms.date: "09/25/2019"
+description: "Use filters files in Visual Studio C++ projects to define custom logical folders for files in Solution Explorer"
+helpviewer_keywords: ["vcxproj.filters" "filters file [C++]"]
 ---
 
 # vcxproj.filters files
@@ -13,7 +15,7 @@ Visual Studio creates this file automatically. For desktop applications, the pre
 
 ## Example
 
-The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension. To add a file to a specific filter, right-click on the filter and choose **Add New Item**.
+The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional. It enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional. When a new file is added to a project, it is added to the topmost filter with a matching file extension. To add a file to a specific filter, right-click on the filter and choose **Add New Item**.
 
 The `ItemGroup` that contains the `ClInclude` nodes is created when the project is first launched. If you are generating your own vcxproj files, make sure that all project items also have an entry in the filters file. Values in a `ClInclude` node override the default filtering based on file extensions. When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file. The filter is not automatically reassigned if you change the file's extension. 
 
