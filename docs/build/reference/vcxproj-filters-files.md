@@ -9,11 +9,13 @@ The *filters* file (\*.vcxproj.filters) is an XML file in MSBuild format that is
 
 ![Logical folders in Solution Explorer](media/solution-explorer-filters.png)
 
-Visual Studio creates this file automatically with predefined logical folders (filters): **Source Files**, **Header Files** and **Resource Files**. It automatically assigns known file types to each folder. If you want to create a filter with a custom name or a filter that holds custom file types, you can create your own filters file in the root folder of the project. (**References** and **External Dependencies** are special folders that do not participate in filtering.)
+Visual Studio creates this file automatically. For desktop applications, the predefined logical folders (filters) are: **Source Files**, **Header Files** and **Resource Files**. Other project types such as UWP might have a different set of default folders. Visual Studio automatically assigns known file types to each folder. If you want to create a filter with a custom name or a filter that holds custom file types, you can create your own filters file in the root folder of the project, or under an existing filter. (**References** and **External Dependencies** are special folders that do not participate in filtering.)
 
 ## Example
 
-The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension. The `ItemGroup` that contains the `ClInclude` nodes is also optional. You can use it to override the filtering for individual files. (When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file.)
+The following example shows the filters file for the example show previously. It has a flat hierarchy; in other words, there are no nested logical folders. The `UniqueIdentifier` node is optional; it enables Visual Studio automation interfaces to find the filter. `Extensions` is also optional; when a new file is added to a project, it is added to the topmost filter with a matching file extension. To add a file to a specific filter, right-click on the filter and choose **Add New Item**.
+
+The `ItemGroup` that contains the `ClInclude` nodes is created when the project is first launched. If you are generating your own vcxproj files, make sure that all project items also have an entry in the filters file. Values in a `ClInclude` node override the default filtering based on file extensions. When you use Visual Studio to add a new item to the project, the IDE will add an individual file entry in the filters file. The filter is not automatically reassigned if you change the file's extension. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,7 +80,7 @@ The following example shows the filters file for the example show previously. It
 </Project>
 ```
 
-To create nested logical folders, declare all nodes in filters `ItemGroup` as shown below. Each child node must declare the full logical path to the topmost parent. 
+To create nested logical folders, declare all nodes in filters `ItemGroup` as shown below. Each child node must declare the full logical path to the topmost parent. In the following example, an empty `ParentFilter` must be declared because it is referenced in later nodes.
 
 ```xml
   <ItemGroup>
