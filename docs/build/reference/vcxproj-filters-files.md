@@ -2,7 +2,7 @@
 title: "Vcxproj.filters files"
 ms.date: "09/25/2019"
 description: "Use filters files in Visual Studio C++ projects to define custom logical folders for files in Solution Explorer"
-helpviewer_keywords: ["vcxproj.filters" "filters file [C++]"]
+helpviewer_keywords: ["vcxproj.filters", "filters file [C++]"]
 ---
 
 # vcxproj.filters files
