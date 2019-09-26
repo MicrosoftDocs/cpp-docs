@@ -1,6 +1,7 @@
 ---
 title: "Running LIB"
-ms.date: "09/28/2018"
+description: Describes the command-line options you can use with lib.exe.
+ms.date: "09/25/2019"
 f1_keywords: ["VC.Project.VCLibrarianTool.TargetMachine", "Lib", "VC.Project.VCLibrarianTool.PrintProgress", "VC.Project.VCLibrarianTool.SuppressStartupBanner"]
 helpviewer_keywords: ["-MACHINE target platform option", "command files, LIB", "MACHINE target platform option", "colon command files", "VERBOSE library manager option", "/NOLOGO library manager option", "dash option specifier", "/MACHINE target platform option", "forward slash option specifier", "-NOLOGO library manager option", "LIB [C++], running LIB", "-VERBOSE library manager option", "/VERBOSE library manager option", "command files", "NOLOGO library manager option", "slash (/)", "semicolon, command files", "/ command files"]
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
@@ -39,6 +40,11 @@ The following options apply to all modes of LIB:
 If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
 
 For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
+
+> **/LINKREPRO:**_directory-path_ \
+> **/LINKREPROTARGET:**_filename_
+
+To help Microsoft diagnose lib.exe crashes and internal errors, you can use the **/LINKREPRO** option. It works the same way as the [/LINKREPRO](linkrepro.md) linker option. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It filters on a _filename_, to only generate repro artifacts when lib.exe is used on that file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
 > **/LTCG**
 

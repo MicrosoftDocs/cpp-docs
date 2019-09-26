@@ -1,6 +1,7 @@
 ---
 title: "Overview of LIB"
-ms.date: "11/04/2016"
+description: Overview of the use and options of the library tool, lib.exe.
+ms.date: "09/25/2019"
 f1_keywords: ["Lib"]
 helpviewer_keywords: ["LIB [C++], modes"]
 ms.assetid: e997d423-f574-434f-8b56-25585d137ee0
@@ -31,6 +32,8 @@ The following table lists the options for lib.exe, with a link to more informati
 |**/EXTRACT**|   Create an object (.obj) file that contains a copy of a member of an existing library.<br/><br/>For more information see [Extracting a Library Member](extracting-a-library-member.md).|
 |**/INCLUDE**|   Adds a symbol to the symbol table.<br/><br/>For more information see [Building an Import Library and Export File](building-an-import-library-and-export-file.md).|
 |**/LIBPATH**|   Overrides the environment library path.<br/><br/>For more information see [Managing a Library](managing-a-library.md).|
+|**/LINKREPRO**|   Creates artifacts needed to reproduce a lib.exe crash or internal error.<br/><br/>For more information, see [Running LIB](running-lib.md).|
+|**/LINKREPROTARGET**|   Only generates the **/LINKREPRO** artifacts when lib.exe is used with a specified file.<br/><br/>For more information, see [Running LIB](running-lib.md).|
 |**/LIST**|   Displays information about the output library to standard output.<br/><br/>For more information see [Managing a Library](managing-a-library.md).|
 |**/LTCG**|   Causes the library to be built using link-time code generation.<br/><br/>For more information see [Running LIB](running-lib.md).|
 |**/MACHINE**|   Specifies the target platform for the program.<br/><br/>For more information see [Running LIB](running-lib.md).|
