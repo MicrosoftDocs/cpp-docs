@@ -1023,7 +1023,7 @@
             - name: Life cycle of a dialog box
               expanded: false
               items: 
-                - name: Life cycle of a dialog box
+                - name: Working with Dialog Boxes in MFC
                   href: life-cycle-of-a-dialog-box.md
                 - name: Creating and displaying dialog boxes
                   href: creating-and-displaying-dialog-boxes.md
