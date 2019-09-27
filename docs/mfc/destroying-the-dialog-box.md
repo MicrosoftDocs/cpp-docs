@@ -12,4 +12,4 @@ Modeless dialog boxes are normally created and owned by a parent view or frame w
 
 ## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

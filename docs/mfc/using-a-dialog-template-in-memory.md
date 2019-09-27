@@ -10,4 +10,4 @@ Instead of using the methods given in the [Dialog Creation table](../mfc/creatin
 
 ## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

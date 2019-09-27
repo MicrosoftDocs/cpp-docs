@@ -30,5 +30,5 @@ If the user cancels a modal dialog box, the `OnCancel` member function terminate
 ## See also
 
 [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Data Validation](../mfc/dialog-data-validation.md)
