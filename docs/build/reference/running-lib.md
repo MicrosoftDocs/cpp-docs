@@ -38,16 +38,10 @@ If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to
 
 For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](errorreport-report-internal-compiler-errors.md).
 
-::: moniker range=">=vs-2019"
-
 > **/LINKREPRO:**_directory-path_ \
 > **/LINKREPROTARGET:**_filename_
 
-To help Microsoft diagnose lib.exe crashes and internal errors, you can use the **/LINKREPRO** option. It works the same way as the [/LINKREPRO](linkrepro.md) linker option. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It filters on a _filename_, to only generate repro artifacts when lib.exe is used on that file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
-
-The **/LINKREPRO** and **/LINKREPROTARGET** options are available starting in Visual Studio 2019 version 16.1.
-
-::: moniker-end
+To help Microsoft diagnose lib.exe crashes and internal errors, you can use the [/LINKREPRO](linkrepro.md) option. It generates a *link repro*, a set of build artifacts that allow Microsoft to reproduce a problem that occurs during library operations. The [/LINKREPROTARGET](linkreprotarget.md) option can be used with the **/LINKREPRO** option. It only generates link repro artifacts when lib.exe produces the specified file. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
 > **/LTCG**
 

@@ -1,13 +1,13 @@
 ---
 title: "/LINKREPROTARGET (Link repro file name)"
-description: Linker option to set the directory for a link repro file.
+description: Linker or library tool option to set a target file name for a link repro.
 ms.date: "09/24/2019"
 f1_keywords: ["/LINKREPROTARGET"]
 helpviewer_keywords: ["LINKREPROTARGET linker option", "/LINKREPROTARGET linker option", "-LINKREPROTARGET linker option", "linker repro reporting"]
 ---
 # /LINKREPROTARGET (Link repro file name)
 
-Tells the linker to generate a link repro filtered by the specified file name.
+Tells the linker or library tool to generate a link repro only when the target has the specified file name.
 
 ## Syntax
 
@@ -16,23 +16,17 @@ Tells the linker to generate a link repro filtered by the specified file name.
 ### Arguments
 
 **/LINKREPROTARGET:**_file-name_\
-The user-specified file name to generate the link repro for. File names that include spaces must be enclosed in double quotes. The file name should include the base name and the extension, but not the path.
+The target file name to filter on. A link repro is only generated when the named file is the output target. File names that include spaces must be enclosed in double quotes. The file name should include the base name and the extension, but not the path.
 
 ## Remarks
 
-::: moniker range=">=vs-2019"
+The **/LINKREPROTARGET** option is used to specify a target file name to generate a *link repro* for. A link repro is a set of build artifacts that allow Microsoft to reproduce a problem that occurs at link time, or during library operations. The linker or library tool produces a link repro when you specify the [/LINKREPRO](linkrepro.md) option, or when you set the `link_repro` environment variable in your command-line build environment.
 
-The **/LINKREPROTARGET** linker option is used to specify a file name to filter *link repro* generation. A link repro is a set of build artifacts that allow Microsoft to reproduce a problem that occurs at link time. The linker produces a link repro when you specify the [/LINKREPRO](linkrepro.md) linker option, or when you set the `link_repro` environment variable in your command-line build environment.
-
-The **/LINKREPROTARGET** linker option is useful in complex builds that invoke the linker more than once. It lets you specify a specific target for the link repro, such as *problem.dll*. This lets you generate the link repro only when you link a specific file.
+The **/LINKREPROTARGET** option is useful in complex builds that invoke the linker or library tool more than once. It lets you specify a specific target for the link repro, such as *problem.dll*. It lets you generate the link repro only when the tool produces a specific file.
 
 For more information about how and when to create a link repro, see the [Link repros](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md#link-repros) section of [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
-The **/LINKREPRO** and  [/OUT](out-output-file-name.md) linker options must be set for the **/LINKREPROTARGET** option to have any effect.
-
-::: moniker-end
-
-The **/LINKREPROTARGET** option is available starting in Visual Studio 2019 version 16.1.
+The **/LINKREPRO** and  [/OUT](out-output-file-name.md) options must be set for the **/LINKREPROTARGET** option to have any effect.
 
 ### To set this linker option in the Visual Studio development environment
 

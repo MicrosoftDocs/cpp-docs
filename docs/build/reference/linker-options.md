@@ -77,7 +77,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)|Tells the compiler that the application supports addresses larger than two gigabytes|
 |[/LIBPATH](libpath-additional-libpath.md)|Specifies a path to search before the environmental library path.|
 |[/LINKREPRO](linkrepro.md)|Specifies a path to generate link repro artifacts in.|
-|[/LINKREPROTARGET](linkreprotarget.md)|Specifies a file name to filter generated link repro artifacts.|
+|[/LINKREPROTARGET](linkreprotarget.md)|Generates a link repro only when producing the specified target.|
 |[/LTCG](ltcg-link-time-code-generation.md)|Specifies link-time code generation.|
 |[/MACHINE](machine-specify-target-platform.md)|Specifies the target platform.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|Creates a side-by-side manifest file and optionally embeds it in the binary.|
