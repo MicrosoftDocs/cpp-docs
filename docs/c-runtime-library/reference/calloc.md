@@ -1,6 +1,7 @@
 ---
 title: "calloc"
-ms.date: "11/04/2016"
+description: The C runtime library function calloc allocates zero-initialized memory.
+ms.date: "09/27/2019"
 api_name: ["calloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -17,7 +18,7 @@ Allocates an array in memory with elements initialized to 0.
 
 ```C
 void *calloc(
-   size_t num,
+   size_t number,
    size_t size
 );
 ```
