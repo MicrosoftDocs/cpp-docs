@@ -794,6 +794,8 @@
                       href: build/reference/zf.md
                     - name: /Zg (Generate function prototypes)
                       href: build/reference/zg-generate-function-prototypes.md
+                    - name: "/ZH (Hash algorithm for checksum in debug info)"
+                      href: build/reference/zh.md
                     - name: /Zl (Omit default library name)
                       href: build/reference/zl-omit-default-library-name.md
                     - name: /Zm (Specify precompiled header memory allocation limit)
