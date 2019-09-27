@@ -1521,6 +1521,8 @@
           href: ide/writing-and-refactoring-code-cpp.md
         - name: Navigate C++ code
           href: ide/navigate-code-cpp.md
+        - name: Set your C++ coding preferences
+          href: ide/how-to-set-preferences.md
         - name: Collaborate using Live Share for C++
           href: ide/live-share-cpp.md
         - name: Change signature
