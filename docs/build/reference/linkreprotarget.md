@@ -43,5 +43,5 @@ The **/LINKREPRO** and  [/OUT](out-output-file-name.md) options must be set for 
 ## See also
 
 [MSVC linker reference](linking.md)\
-[MSVC Linker Options](linker-options.md)\
+[MSVC linker options](linker-options.md)\
 [/LINKREPRO](linkrepro.md)

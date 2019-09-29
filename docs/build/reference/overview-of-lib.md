@@ -20,7 +20,7 @@ You can use LIB in the following modes:
 
 These modes are mutually exclusive; you can use LIB in only one mode at a time.
 
-## LIB Options
+## LIB options
 
 The following table lists the options for lib.exe, with a link to more information.
 

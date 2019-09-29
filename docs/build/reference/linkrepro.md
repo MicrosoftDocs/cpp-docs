@@ -43,5 +43,5 @@ Once you've generated the link repro, open this property page again to remove th
 ## See also
 
 [MSVC linker reference](linking.md)\
-[MSVC Linker Options](linker-options.md)\
+[MSVC linker options](linker-options.md)\
 [/LINKREPROTARGET](linkreprotarget.md)

@@ -32,7 +32,7 @@ An option consists of an option specifier, which is either a dash (**-**) or a f
 
 The following options apply to all modes of LIB:
 
-> **/ERRORREPORT** [**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
+> **/ERRORREPORT** \[**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
 If lib.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.
 
