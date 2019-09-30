@@ -956,6 +956,10 @@
                   href: build/reference/largeaddressaware-handle-large-addresses.md
                 - name: /LIBPATH (Additional libpath)
                   href: build/reference/libpath-additional-libpath.md
+                - name: /LINKREPRO (Link repro directory name)
+                  href: build/reference/linkrepro.md
+                - name: /LINKREPROTARGET (Link repro file name)
+                  href: build/reference/linkreprotarget.md
                 - name: /LTCG (Link-time code generation)
                   href: build/reference/ltcg-link-time-code-generation.md
                 - name: /MACHINE (Specify target platform)
