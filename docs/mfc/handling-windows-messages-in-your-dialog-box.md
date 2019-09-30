@@ -12,4 +12,4 @@ See [Mapping Windows Messages to Your Dialog Class](../mfc/mapping-windows-messa
 
 ## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

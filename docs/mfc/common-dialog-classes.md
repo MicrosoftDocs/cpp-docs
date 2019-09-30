@@ -26,5 +26,5 @@ Three other classes in MFC have dialog-like characteristics. For information abo
 ## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Boxes in OLE](../mfc/dialog-boxes-in-ole.md)

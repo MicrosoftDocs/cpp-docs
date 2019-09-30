@@ -15,5 +15,5 @@ The [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) will writ
 ## See also
 
 [Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Dialog Data Exchange](../mfc/dialog-data-exchange.md)
