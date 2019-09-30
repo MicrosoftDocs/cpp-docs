@@ -1,12 +1,12 @@
 ---
-title: "Life Cycle of a Dialog Box"
-ms.date: "11/04/2016"
+title: "Working with Dialog Boxes in MFC"
+ms.date: "09/27/2019"
 helpviewer_keywords: ["dialog boxes [MFC], life cycle", "modal dialog boxes [MFC], life cycle", "modeless dialog boxes [MFC], life cycle", "MFC dialog boxes [MFC], life cycle", "life cycle of dialog boxes [MFC]"]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
 ---
-# Life Cycle of a Dialog Box
+# Working with Dialog Boxes in MFC
 
-During the life cycle of a dialog box, the user invokes the dialog box, typically inside a command handler that creates and initializes the dialog object, the user interacts with the dialog box, and the dialog box closes.
+During the life cycle of a dialog box, the user invokes the dialog box, typically inside a command handler that creates and initializes the dialog object, the user interacts with the dialog box, then dialog box closes.
 
 For modal dialog boxes, your handler gathers any data the user entered once the dialog box closes. Since the dialog object exists after its dialog window has closed, you can simply use the member variables of your dialog class to extract the data.
 

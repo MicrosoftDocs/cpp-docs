@@ -25,4 +25,4 @@ In the .cpp file:
 ## See also
 
 [Creating a Dialog Class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

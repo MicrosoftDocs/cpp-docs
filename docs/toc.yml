@@ -409,6 +409,8 @@
                   href: build/reference/vcxproj-file-structure.md
                 - name: Example project file
                   href: build/reference/project-files.md
+                - name: .vcxproj.filters file structure
+                  href: build/reference/vcxproj-filters-files.md
             - name: C++ project property pages
               expanded: false
               items: 
@@ -794,6 +796,8 @@
                       href: build/reference/zf.md
                     - name: /Zg (Generate function prototypes)
                       href: build/reference/zg-generate-function-prototypes.md
+                    - name: "/ZH (Hash algorithm for checksum in debug info)"
+                      href: build/reference/zh.md
                     - name: /Zl (Omit default library name)
                       href: build/reference/zl-omit-default-library-name.md
                     - name: /Zm (Specify precompiled header memory allocation limit)
@@ -952,6 +956,10 @@
                   href: build/reference/largeaddressaware-handle-large-addresses.md
                 - name: /LIBPATH (Additional libpath)
                   href: build/reference/libpath-additional-libpath.md
+                - name: /LINKREPRO (Link repro directory name)
+                  href: build/reference/linkrepro.md
+                - name: /LINKREPROTARGET (Link repro file name)
+                  href: build/reference/linkreprotarget.md
                 - name: /LTCG (Link-time code generation)
                   href: build/reference/ltcg-link-time-code-generation.md
                 - name: /MACHINE (Specify target platform)
@@ -1521,6 +1529,8 @@
           href: ide/writing-and-refactoring-code-cpp.md
         - name: Navigate C++ code
           href: ide/navigate-code-cpp.md
+        - name: Set your C++ coding preferences
+          href: ide/how-to-set-preferences.md
         - name: Collaborate using Live Share for C++
           href: ide/live-share-cpp.md
         - name: Change signature

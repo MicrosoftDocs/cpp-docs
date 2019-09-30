@@ -18,4 +18,4 @@ For a modal dialog box, you can retrieve any data the user entered when `DoModal
 
 ## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

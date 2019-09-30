@@ -22,4 +22,4 @@ There are many user-interface alternatives for determining when the settings of 
 
 [Property Sheets](../mfc/property-sheets-mfc.md)<br/>
 [Exchanging Data](../mfc/exchanging-data.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)

@@ -34,7 +34,7 @@ Most dialog boxes are modal, which require the user to close the dialog box befo
 
 - [Creating a dialog class with Code Wizards](../mfc/creating-a-dialog-class-with-code-wizards.md)
 
-- [Life cycle of a dialog box](../mfc/life-cycle-of-a-dialog-box.md)
+- [Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)
 
 - [Dialog data exchange (DDX) and validation (DDV)](../mfc/dialog-data-exchange-and-validation.md)
 

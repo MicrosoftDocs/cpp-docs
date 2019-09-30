@@ -12,5 +12,5 @@ See [codexpert blog](https://codexpert.ro/blog/2013/03/13/painting-the-dialog-ba
 
 ## See also
 
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Handling Windows Messages in Your Dialog Box](../mfc/handling-windows-messages-in-your-dialog-box.md)

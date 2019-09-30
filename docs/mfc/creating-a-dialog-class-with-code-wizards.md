@@ -29,4 +29,4 @@ The following table lists dialog-related tasks that Code Wizards help you manage
 ## See also
 
 [Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)
