@@ -1,6 +1,7 @@
 ---
 title: "calloc"
-ms.date: "11/04/2016"
+description: The C runtime library function calloc allocates zero-initialized memory.
+ms.date: "09/27/2019"
 api_name: ["calloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -17,7 +18,7 @@ Allocates an array in memory with elements initialized to 0.
 
 ```C
 void *calloc(
-   size_t num,
+   size_t number,
    size_t size
 );
 ```
@@ -40,17 +41,19 @@ The **calloc** function allocates storage space for an array of *number* element
 
 **calloc** sets **errno** to **ENOMEM** if a memory allocation fails or if the amount of memory requested exceeds **_HEAP_MAXREQ**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**calloc** calls **malloc** to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **calloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call
+In the Microsoft implementation, if *number* or *size* is zero, **calloc** returns a pointer to an allocated block of non-zero size. An attempt to read or write through the returned pointer leads to undefined behavior.
+
+**calloc** uses the C++ [_set_new_mode](set-new-mode.md) function to set the *new handler mode*. The new handler mode indicates whether, on failure, **calloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **calloc** doesn't call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **calloc** fails to allocate memory, it calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call
 
 ```C
 _set_new_mode(1);
 ```
 
-early in your program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
+early in your program, or link with *NEWMODE.OBJ* (see [Link Options](../../c-runtime-library/link-options.md)).
 
 When the application is linked with a debug version of the C run-time libraries, **calloc** resolves to [_calloc_dbg](calloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
-**calloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
+**calloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned isn't aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
 ## Requirements
 

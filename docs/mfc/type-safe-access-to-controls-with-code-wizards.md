@@ -26,5 +26,5 @@ For more information about controls, see [Controls](../mfc/controls-mfc.md).
 ## See also
 
 [Type-Safe Access to Controls in a Dialog Box](../mfc/type-safe-access-to-controls-in-a-dialog-box.md)<br/>
-[Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)<br/>
+[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [Type-Safe Access to Controls Without Code Wizards](../mfc/type-safe-access-to-controls-without-code-wizards.md)
