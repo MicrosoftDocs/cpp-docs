@@ -77,7 +77,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)|Tells the compiler that the application supports addresses larger than two gigabytes|
 |[/LIBPATH](libpath-additional-libpath.md)|Specifies a path to search before the environmental library path.|
 |[/LINKREPRO](linkrepro.md)|Specifies a path to generate link repro artifacts in.|
-|[/LINKREPROTARGET](linkreprotarget.md)|Generates a link repro only when producing the specified target.|
+|[/LINKREPROTARGET](linkreprotarget.md)|Generates a link repro only when producing the specified target.<sup>16.1</sup>|
 |[/LTCG](ltcg-link-time-code-generation.md)|Specifies link-time code generation.|
 |[/MACHINE](machine-specify-target-platform.md)|Specifies the target platform.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|Creates a side-by-side manifest file and optionally embeds it in the binary.|
@@ -126,7 +126,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/WINMDDELAYSIGN](winmddelaysign-partially-sign-a-winmd.md)|Partially signs a Windows Runtime Metadata (.winmd) file by placing the public key in the winmd file.|
 |[/WX](wx-treat-linker-warnings-as-errors.md)|Treats linker warnings as errors.|
 
-For more information, see [Compiler-Controlled LINK Options](compiler-controlled-link-options.md).
+<sup>16.1</sup> This option is available starting in Visual Studio 2019 version 16.1.
 
 ## See also
 
