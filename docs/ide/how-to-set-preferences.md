@@ -85,4 +85,4 @@ You can specify whether line numbers show on the left of the editor windows. In 
 
 ## Create keyboard shortcuts
 
-You can create keyboard shortcuts by using various combinations of keys with the Ctrl, Alt and Shift keys. Go to **Tools** > **Options** > **Environment** > **Keyboard** (or type **Ctrl + Q** and search for "shortcuts"). For more information, see [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+Many commands in Visual Studio have *keyboard shortcuts*, key combinations with the Ctrl, Alt, and Shift keys. You can modify these keyboard shortcuts or create new ones of your own in Visual Studio. Go to **Tools** > **Options** > **Environment** > **Keyboard** (or type **Ctrl + Q** and search for "shortcuts"). For more information, see [Identify and customize keyboard shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
