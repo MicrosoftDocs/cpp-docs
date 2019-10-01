@@ -10,8 +10,6 @@ ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 
 Represents a *map*, which is a collection of key-value pairs. Implements [Windows::Foundation::Collections::IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap_k_v_) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
 
-See also [Collections (C++/CX)](/cpp/cppcx/collections-c-cx).
-
 ## Syntax
 
 ```cpp
@@ -282,5 +280,6 @@ The number of elements in the Map.
 
 ## See also
 
+[Collections (C++/CX)](/cpp/cppcx/collections-c-cx)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
