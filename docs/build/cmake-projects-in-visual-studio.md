@@ -13,7 +13,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 
 ::: moniker range="vs-2019"
 
-The **C++ CMake tools for Windows** component uses the [Open Folder](https://docs.microsoft.com/en-us/cpp/build/open-folder-projects-cpp?view=vs-2019) feature to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache.
+Visual Studio 2019 introduces the **CMake Settings editor** and other improvements over Visual Studio 2017. The **C++ CMake tools for Windows** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache. 
 
 ## Installation
 
@@ -31,7 +31,7 @@ When you choose **File | Open | Folder** to open a folder containing a CMakeList
 
 - **Solution Explorer** displays the folder structure and files.
 
-- Visual Studio runs cmake.exe and generates the CMake cache for the default *configuration*, which is x64 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.
+- Visual Studio runs CMake.exe and optionally generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
@@ -43,34 +43,19 @@ You can also view your projects organized logically by targets. Choose **Targets
 
 ![CMake targets view button](media/cmake-targets-view.png)
 
-Visual Studio uses a file called **CMakeSettings.json** to store environment variables or command-line options for cmake.exe. **CMakeSettings.json** also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
+Visual Studio uses a file called **CMakeSettings.json** to store environment variables or command-line options for Cmake.exe. **CMakeSettings.json** also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
 
-Otherwise, use **CMakeLists.txt** just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
+Otherwise, use the **CMakeLists.txt** just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
 
 If you need to pass arguments to an executable at debug time, you can use another file called **launch.vs.json**. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
 
 > [!NOTE]
 > For other kinds of Open Folder projects, two additional JSON files are used: **CppProperties.json** and **tasks.vs.json**. Neither of these are relevant for CMake projects.
 
-## Import an existing cache
+## Open an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
+When you open an existing CMake cache, Visual Studio will not attempt to manage your cache and build tree for you. This gives your custom or preferred tools complete control over how CMake configures your project. You can open an existing cache in Visual Studio via **File > Open > CMake** and navigating to an existing CMakeCache.txt. Alternatively, if you have already opened the project in Visual Studio, you can add an existing cache to it the same way you would add a new configuration. See our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) for more information.
 
-Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
-
-### To import an existing cache
-
-1. From the main menu, choose **File | Open | CMake**:
-
-   ![Open CMake](media/cmake-file-open.png "File, Open, CMake")
-
-   This brings up the **Import CMake from Cache** wizard.
-
-2. Navigate to the CMakeCache.txt file that you want to import, and then click **OK**. The **Import CMake Project from Cache** wizard appears:
-
-   ![Import a CMake cache](media/cmake-import-wizard.png "Open the CMake import cache wizard")
-
-   When the wizard completes, you can see the new CMakeCache.txt file in **Solution Explorer** next to the root CMakeLists.txt file in your project.
 
 ## Building CMake projects
 
