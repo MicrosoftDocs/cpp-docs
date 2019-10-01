@@ -31,7 +31,7 @@ When you choose **File | Open | Folder** to open a folder containing a CMakeList
 
 - **Solution Explorer** displays the folder structure and files.
 
-- Visual Studio runs CMake.exe and optionally generates the CMake cache for the default *configuration*, which is x86 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.
+- Visual Studio runs cmake.exe and generates the CMake cache for the default *configuration*, which is x64 Debug. The CMake command line is displayed in the **Output Window**, along with additional output from CMake.
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
@@ -43,9 +43,9 @@ You can also view your projects organized logically by targets. Choose **Targets
 
 ![CMake targets view button](media/cmake-targets-view.png)
 
-Visual Studio uses a file called **CMakeSettings.json** to store environment variables or command-line options for Cmake.exe. **CMakeSettings.json** also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
+Visual Studio uses a file called **CMakeSettings.json** to store environment variables or command-line options for cmake.exe. **CMakeSettings.json** also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
 
-Otherwise, use the **CMakeLists.txt** just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
+Otherwise, use **CMakeLists.txt** just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
 
 If you need to pass arguments to an executable at debug time, you can use another file called **launch.vs.json**. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
 
