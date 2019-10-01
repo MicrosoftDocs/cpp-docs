@@ -370,6 +370,6 @@ The last element in a sequence of objects that are used to initialize the curren
 
 ## See also
 
-[Collections (C++/CX)](/cpp/cppcx/collections-c-cx).<br/>
+[Collections (C++/CX)](/cpp/cppcx/collections-c-cx)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
