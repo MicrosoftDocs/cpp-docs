@@ -8,7 +8,9 @@ ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 ---
 # Platform::Collections::Vector Class
 
-Represents a sequential collection of objects that can be individually accessed by index.
+Represents a sequential collection of objects that can be individually accessed by index. Implements [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
+
+See also [Collections (C++/CX)](/cpp/cppcx/collections-c-cx).
 
 ## Syntax
 
