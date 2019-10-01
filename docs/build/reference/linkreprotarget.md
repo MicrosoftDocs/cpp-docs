@@ -28,6 +28,8 @@ For more information about how and when to create a link repro, see the [Link re
 
 The **/LINKREPRO** and  [/OUT](out-output-file-name.md) options must be set for the **/LINKREPROTARGET** option to have any effect.
 
+**/LINKREPROTARGET** is available starting in Visual Studio 2019 version 16.1.
+
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
