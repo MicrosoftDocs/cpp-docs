@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Vector Class"
-ms.date: "12/30/2016"
+ms.date: "10/01/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
@@ -370,6 +370,6 @@ The last element in a sequence of objects that are used to initialize the curren
 
 ## See also
 
-[Collections (C++/CX)](/cpp/cppcx/collections-c-cx)<br/>
+[Collections (C++/CX)](collections-c-cx)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
