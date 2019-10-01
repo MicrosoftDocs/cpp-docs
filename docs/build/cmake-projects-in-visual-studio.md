@@ -13,7 +13,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 introduces the **CMake Settings editor** and other improvements over Visual Studio 2017. The **C++ CMake tools for Windows** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can also open an existing CMake cache. 
+The **C++ CMake tools for Windows** component uses the [Open Folder](https://docs.microsoft.com/en-us/cpp/build/open-folder-projects-cpp?view=vs-2019) feature to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, a temporary project file is generated and passed to msbuild.exe, but is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache.
 
 ## Installation
 
