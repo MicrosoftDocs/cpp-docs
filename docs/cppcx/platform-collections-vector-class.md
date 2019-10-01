@@ -10,8 +10,6 @@ ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 
 Represents a sequential collection of objects that can be individually accessed by index. Implements [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
 
-See also [Collections (C++/CX)](/cpp/cppcx/collections-c-cx).
-
 ## Syntax
 
 ```
@@ -372,5 +370,6 @@ The last element in a sequence of objects that are used to initialize the curren
 
 ## See also
 
+[Collections (C++/CX)](/cpp/cppcx/collections-c-cx).<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
