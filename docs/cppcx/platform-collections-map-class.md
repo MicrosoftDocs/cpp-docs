@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Map Class"
-ms.date: "03/27/2019"
+ms.date: "10/01/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
@@ -280,6 +280,6 @@ The number of elements in the Map.
 
 ## See also
 
-[Collections (C++/CX)](/cpp/cppcx/collections-c-cx)<br/>
+[Collections (C++/CX)](collections-c-cx)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
