@@ -386,7 +386,7 @@ bool neq(const S& lhs, const S& rhs) {
 
 ### Stream extraction operators for char* removed
 
-Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char\*' (or there is no acceptable conversion)*:
+Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0487r1.html)). WG21 considers the removed overloads to be unsafe. In [/std:c++latest](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces *C2679: binary '>>': no operator found which takes a right-hand operand of type 'char\*' (or there is no acceptable conversion)*:
 
 ```cpp
    char x[42];
