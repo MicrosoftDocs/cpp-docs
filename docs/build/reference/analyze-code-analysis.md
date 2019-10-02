@@ -1,6 +1,6 @@
 ---
 title: "/analyze (Code Analysis)"
-ms.date: "04/26/2018"
+ms.date: "10/01/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
@@ -30,7 +30,7 @@ Detailed analyzer results are written as XML to the file that is specified by `f
 Turns off analyzer output to the **Output** window.
 
 /analyze:stacksize `number`
-The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. If this parameter is not specified, the stack frame size is 16KB by default.
+The `number` parameter that is used with this option specifies the size, in bytes, of the stack frame for which warning [C6262](/visualstudio/code-quality/c6262) is generated. The space before `number` is optional. If this parameter is not specified, the stack frame size is 16KB by default.
 
 /analyze:max_paths `number`
 The `number` parameter that is used with this option specifies the maximum number of code paths to be analyzed. If this parameter is not specified, the number is 256 by default. Larger values perform more thorough checking, but the analysis might take longer.
