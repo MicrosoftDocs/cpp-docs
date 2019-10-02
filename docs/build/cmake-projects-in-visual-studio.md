@@ -1,6 +1,6 @@
 ---
 title: "CMake projects in Visual Studio"
-ms.date: "06/12/2019"
+ms.date: "10/01/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
@@ -25,7 +25,7 @@ For more information, see [Install the C++ Linux workload in Visual Studio](../l
 
 ## IDE Integration
 
-When you choose **File | Open | Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
+When you choose **File > Open > Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
 
 - Visual Studio adds **CMake** items to the **Project** menu, with commands for viewing and editing CMake scripts.
 
@@ -54,23 +54,23 @@ If you need to pass arguments to an executable at debug time, you can use anothe
 
 ## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
 
-Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
+Not everything in the cache is imported. Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
-### To open an existing cache
+## Open an existing cache
 
-When you open an existing CMake cache, Visual Studio will not attempt to manage your cache and build tree for you. This gives your custom or preferred tools complete control over how CMake configures your project. You can open an existing cache in Visual Studio via **File > Open > CMake** and navigating to an existing CMakeCache.txt. Alternatively, if you have already opened the project in Visual Studio, you can add an existing cache to it the same way you would add a new configuration. See our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) for more information.
+When you open an existing CMake cache, Visual Studio will not attempt to manage your cache and build tree for you. This gives your custom or preferred tools complete control over how CMake configures your project. You can open an existing cache in Visual Studio via **File > Open > CMake** and navigating to an existing CMakeCache.txt. Alternatively, if you have already opened the project in Visual Studio, you can add an existing cache to it the same way you would add a new configuration. For more information, see our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/).
 
 ## Building CMake projects
 
 To build a CMake project, you have these choices:
 
-1. In the General toolbar, find the **Configurations** dropdown; it is probably showing "x64-Debug" by default. Select the desired configuration and press **F5**, or click the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
+1. In the General toolbar, find the **Configurations** dropdown. It probably shows "x64-Debug" by default. Select the desired configuration and press **F5**, or click the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
 
 1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 
-1. From the main menu, select **Build | Build All** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
+1. From the main menu, select **Build > Build All** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
@@ -133,7 +133,7 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 - **Generate Cache** forces the generate step to run even if Visual Studio considers the environment up-to-date.
 
-Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+Automatic cache generation can be disabled in the **Tools > Options > CMake > General** dialog.
 
 ## Run CMake from the command line
 
@@ -161,7 +161,7 @@ For more information, see [Install the C++ Linux workload in Visual Studio](../l
 
 ## IDE Integration
 
-When you choose **File | Open | Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
+When you choose **File > Open > Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
 
 - Visual Studio adds a **CMake** menu item to the main menu, with commands for viewing and editing CMake scripts.
 
@@ -190,13 +190,13 @@ If you need to pass arguments to an executable at debug time, you can use anothe
 
 ## Import an existing cache
 
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools | Options | CMake | General** dialog.
+When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
 
 Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
 ### To import an existing cache
 
-1. From the main menu, choose **File | Open | CMake**:
+1. From the main menu, choose **File > Open > CMake**:
 
    ![Open CMake](media/cmake-file-open.png "File, Open, CMake")
 
@@ -216,7 +216,7 @@ To build a CMake project, you have these choices:
 
 1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 
-1. From the main menu, select **Build | Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
+1. From the main menu, select **Build > Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
@@ -272,7 +272,7 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 - **Generate Cache** forces the generate step to run even if Visual Studio considers the environment up-to-date.
 
-Automatic cache generation can be disabled in the **Tools | Options | CMake | General** dialog.
+Automatic cache generation can be disabled in the **Tools > Options > CMake > General** dialog.
 
 ## Single File Compilation
 
