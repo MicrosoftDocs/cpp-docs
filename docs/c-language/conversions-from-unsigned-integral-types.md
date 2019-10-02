@@ -6,21 +6,21 @@ ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
 ---
 # Conversions from Unsigned Integral Types
 
-An unsigned integer is converted to a shorter unsigned or signed integer by truncating the high-order bits, or to a longer unsigned or signed integer by zero-extending. For more information, see the [Conversions from unsigned integral types table](#conversions-from-unsigned-integral-types-table).
+When an unsigned integer is converted to an integer or floating-point type, if the original value is representable in the result type the value is unchanged.
 
-When the value with integral type is demoted to a signed integer with smaller size, or an unsigned integer is converted to its corresponding signed integer, the value is unchanged if it can be represented in the new type. However, the value it represents changes if the sign bit is set, as in the following example.
+When converting an unsigned integer to an integer of greater size, the value is zero-extended. When converting to an integer of smaller size the high-order bits are truncated. The result is interpreted using the result type, as shown in this example.
 
 ```C
-int j;
-unsigned short k = 65533;
+unsigned k = 65533;
+short j;
 
 j = k;
 printf_s( "%hd\n", j );   // Prints -3
 ```
 
-If it cannot be represented, the result is implementation-defined. See [Type-Cast Conversions](../c-language/type-cast-conversions.md) for information on the Microsoft C compiler's handling of demotion of integers. The same behavior results from integer conversion or from type casting the integer.
+When an unsigned integer is converted to a floating-point type that is the same size or smaller than the original type, if the value is not representable in the result type, the result will be either the next higher or next lower representable value.
 
-Unsigned values are converted in a way that preserves their value and is not representable directly in C. The only exception is a conversion from **unsigned long** to **float**, which loses at most the low-order bits. Otherwise, value is preserved, signed or unsigned. When a value of integral type is converted to floating, and the value is outside the range representable, the result is undefined. (See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about the range for integral and floating-point types.)
+See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
 
 The following table summarizes conversions from unsigned integral types.
 
@@ -31,31 +31,47 @@ The following table summarizes conversions from unsigned integral types.
 |**unsigned char**|**char**|Preserve bit pattern; high-order bit becomes sign bit|
 |**unsigned char**|**short**|Zero-extend|
 |**unsigned char**|**long**|Zero-extend|
+|**unsigned char**|**long long**|Zero-extend|
 |**unsigned char**|**unsigned short**|Zero-extend|
 |**unsigned char**|**unsigned long**|Zero-extend|
+|**unsigned char**|**unsigned long long**|Zero-extend|
 |**unsigned char**|**float**|Convert to **long**; convert **long** to **float**|
 |**unsigned char**|**double**|Convert to **long**; convert **long** to **double**|
 |**unsigned char**|**long double**|Convert to **long**; convert **long** to **double**|
 |**unsigned short**|**char**|Preserve low-order byte|
 |**unsigned short**|**short**|Preserve bit pattern; high-order bit becomes sign bit|
 |**unsigned short**|**long**|Zero-extend|
+|**unsigned short**|**long long**|Zero-extend|
 |**unsigned short**|**unsigned char**|Preserve low-order byte|
 |**unsigned short**|**unsigned long**|Zero-extend|
+|**unsigned short**|**unsigned long long**|Zero-extend|
 |**unsigned short**|**float**|Convert to **long**; convert **long** to **float**|
 |**unsigned short**|**double**|Convert to **long**; convert **long** to **double**|
 |**unsigned short**|**long double**|Convert to **long**; convert **long** to **double**|
 |**unsigned long**|**char**|Preserve low-order byte|
 |**unsigned long**|**short**|Preserve low-order word|
 |**unsigned long**|**long**|Preserve bit pattern; high-order bit becomes sign bit|
+|**unsigned long**|**long long**|Zero-extend|
 |**unsigned long**|**unsigned char**|Preserve low-order byte|
 |**unsigned long**|**unsigned short**|Preserve low-order word|
+|**unsigned long**|**unsigned long long**|Zero-extend|
 |**unsigned long**|**float**|Convert to **long**; convert **long** to **float**|
 |**unsigned long**|**double**|Convert directly to **double**|
 |**unsigned long**|**long double**|Convert to **long**; convert **long** to **double**|
+|**unsigned long long**|**char**|Preserve low-order byte|
+|**unsigned long long**|**short**|Preserve low-order word|
+|**unsigned long long**|**long**|Preserve low-order dword|
+|**unsigned long long**|**long long**|Preserve bit pattern; high-order bit becomes sign bit|
+|**unsigned long long**|**unsigned char**|Preserve low-order byte|
+|**unsigned long long**|**unsigned short**|Preserve low-order word|
+|**unsigned long long**|**unsigned long**|Preserve low-order dword|
+|**unsigned long long**|**float**|Convert to **long**; convert **long** to **float**|
+|**unsigned long long**|**double**|Convert directly to **double**|
+|**unsigned long long**|**long double**|Convert to **long**; convert **long** to **double**|
 
 **Microsoft Specific**
 
-For the Microsoft C compiler, the **unsigned int** type is equivalent to the **unsigned long** type. Conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**. Conversions from **unsigned long** values to **float** are not accurate if the value being converted is larger than the maximum positive signed **long** value.
+For the Microsoft C compiler, the **unsigned** or **unsigned int** type is equivalent to the **unsigned long** type. Conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**.
 
 **END Microsoft Specific**
 
