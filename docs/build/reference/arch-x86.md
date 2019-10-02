@@ -1,6 +1,6 @@
 ---
 title: "/arch (x86)"
-ms.date: "11/04/2016"
+ms.date: "10/01/2019"
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
 ---
 # /arch (x86)
@@ -35,16 +35,22 @@ Enables the use of Intel Advanced Vector Extensions 512 instructions.
 
 ## Remarks
 
-The **/arch** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support additional extensions over those supported by older processors, although you should consult the documentation for a particular processor or test for instruction set extension support using __cpuid() before executing code using an instruction set extension.
+The **/arch** option enables or disables the use of certain instruction set extensions, particularly for vector calculation, available in processors from Intel and AMD. In general, more recently introduced processors may support additional extensions over those supported by older processors, although you should consult the documentation for a particular processor or test for instruction set extension support using [__cpuid](../../intrinsics/cpuid-cpuidex.md) before executing code using an instruction set extension.
 
 **/arch** only affects code generation for native functions. When you use [/clr](clr-common-language-runtime-compilation.md) to compile, **/arch** has no effect on code generation for managed functions.
 
 The **/arch** options refer to instruction set extensions with the following characteristics:
+
 - **IA32** is the legacy 32-bit x86 instruction set without any vector operations and using x87 for floating-point calculations.
+
 - **SSE** allows calculation with vectors of up to four single-precision floating-point values. Corresponding scalar floating-point instructions were added as well.
+
 - **SSE2** allows calculation with 128-bit vectors of single-precision, double-precision and 1, 2, 4 or 8 byte integer values. Double-precision scalar instructions were also added.
+
 - **AVX** introduced an alternative instruction encoding for vector and floating-point scalar instructions that allows vectors of either 128 bits or 256 bits, and zero-extends all vector results to the full vector size. (For legacy compatibility, SSE-style vector instructions preserve all bits beyond bit 127.) Most floating-point operations are extended to 256 bits.
+
 - **AVX2** extends most integer operations to 256-bit vectors, and enables use of Fused Multiply-Add (FMA) instructions.
+
 - **AVX512** introduced another instruction encoding form that allows 512-bit vectors, plus certain other optional features. Instructions for additional operations were also added.
 
 The optimizer chooses when and how to use vector instructions depending on which **/arch** is specified. Scalar floating-point computations are performed with SSE or AVX instructions when available. Some calling conventions specify passing floating-point arguments on the x87 stack, and as a result, your code may use a mixture of both x87 and SSE/AVX instructions for floating-point computations. Integer vector instructions can also be used for some 64-bit integer operations when available.
@@ -52,6 +58,7 @@ The optimizer chooses when and how to use vector instructions depending on which
 In addition to the vector and floating-point scalar instructions, each **/arch** option may also enable the use of other non-vector instructions that are associated with that option. An example is the CMOVcc instruction family that first appeared on the Intel Pentium Pro processors. Because SSE instructions were introduced with the subsequent Intel Pentium III processor, CMOVcc instructions may be generated except when **/arch:IA32** is specified.
 
 Floating-point operations are normally rounded to double-precision (64-bit) in x87 code, but you can use `_controlfp` to modify the FP control word, including setting the precision control to extended precision (80-bit) or single-precision (32-bit). For more information, see [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md). SSE and AVX have separate single-precision and double-precision instructions for each operation, so there is no equivalent for SSE/AVX code. This can change how results are rounded when the result of a floating-point operation is used directly in further calculation instead of assigning it to a user variable. Consider the following:
+
 ```cpp
 r = f1 * f2 + d;  // Different results are possible on SSE/SSE2.
 ```
@@ -70,6 +77,7 @@ r = t + d;     // This should produce the same overall result
 int convert_float_to_int(float x) {
     return _mm_cvtss_si32(_mm_set_ss(x));
 }
+
 int convert_double_to_int(double x) {
     return _mm_cvtsd_si32(_mm_set_sd(x));
 }
