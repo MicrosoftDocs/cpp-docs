@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Map Class"
-ms.date: "03/27/2019"
+ms.date: "10/01/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform::Collections::Map::Clear", "COLLECTION/Platform::Collections::Map::First", "COLLECTION/Platform::Collections::Map::GetView", "COLLECTION/Platform::Collections::Map::HasKey", "COLLECTION/Platform::Collections::Map::Insert", "COLLECTION/Platform::Collections::Map::Lookup", "COLLECTION/Platform::Collections::Map::Remove", "COLLECTION/Platform::Collections::Map::Size"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
@@ -8,7 +8,7 @@ ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 ---
 # Platform::Collections::Map Class
 
-Represents a *map*, which is a collection of key-value pairs.
+Represents a *map*, which is a collection of key-value pairs. Implements [Windows::Foundation::Collections::IObservableMap](/uwp/api/windows.foundation.collections.iobservablemap_k_v_) to help with XAML [data binding](/windows/uwp/data-binding/data-binding-in-depth).
 
 ## Syntax
 
@@ -280,5 +280,6 @@ The number of elements in the Map.
 
 ## See also
 
+[Collections (C++/CX)](collections-c-cx.md)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
