@@ -280,6 +280,6 @@ The number of elements in the Map.
 
 ## See also
 
-[Collections (C++/CX)](collections-c-cx)<br/>
+[Collections (C++/CX)](collections-c-cx.md)<br/>
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
 [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
