@@ -1,14 +1,14 @@
 ---
-title: "Storage of Basic Types"
+title: "Storage of basic types"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["specifiers [C++], type", "integral types, storage", "storage [C++], types", "floating-point numbers, storage", "type specifiers [C++], sizes", "arithmetic operations [C++], types", "int data type", "short data type", "signed types [C++], storage", "long double keyword [C], storage", "long keyword [C]", "double data type, storage", "types [C], arithmetic", "integral types", "data types [C], specifiers", "storing types [C++]", "unsigned types [C++], storage", "data types [C], storage"]
 ms.assetid: bd1f33c1-c6b9-4558-8a72-afb21aef3318
 ---
-# Storage of Basic Types
+# Storage of basic types
 
 The following table summarizes the storage associated with each basic type.
 
-### Sizes of Fundamental Types
+## Sizes of fundamental types
 
 |Type|Storage|
 |----------|-------------|
@@ -25,4 +25,4 @@ The C data types fall into general categories. The "integral types" include **ch
 
 ## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+[Declarations and types](../c-language/declarations-and-types.md)

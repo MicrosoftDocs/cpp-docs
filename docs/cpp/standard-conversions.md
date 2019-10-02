@@ -1,10 +1,10 @@
 ---
-title: "Standard Conversions"
+title: "Standard conversions"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ---
-# Standard Conversions
+# Standard conversions
 
 The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called *standard conversions*.
 
@@ -26,8 +26,8 @@ This section discusses the following standard conversions:
 
 - Pointer-to-member conversions
 
-    > [!NOTE]
-    >  User-defined types can specify their own conversions. Conversion of user-defined types is covered in [Constructors](../cpp/constructors-cpp.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md).
+  > [!NOTE]
+  > User-defined types can specify their own conversions. Conversion of user-defined types is covered in [Constructors](../cpp/constructors-cpp.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md).
 
 The following code causes conversions (in this example, integral promotions):
 
@@ -42,11 +42,11 @@ long_num1 = int_num;
 long_num2 = int_num * long_num2;
 ```
 
-The result of a conversion is an l-value only if it produces a reference type. For example, a user-defined conversion declared as `operator int&()` returns a reference and is an l-value. However, a conversion declared as `operator int()`returns an object and is not an l-value.
+The result of a conversion is an l-value only if it produces a reference type. For example, a user-defined conversion declared as `operator int&()` returns a reference and is an l-value. However, a conversion declared as `operator int()` returns an object and isn't an l-value.
 
 ## Integral promotions
 
-Objects of an integral type can be converted to another wider integral type (that is, a type that can represent a larger set of values). This widening type of conversion is called "integral promotion." With integral promotion, you can use the following in an expression wherever another integral type can be used:
+Objects of an integral type can be converted to another wider integral type, that is, a type that can represent a larger set of values. This widening type of conversion is called "integral promotion." With integral promotion, you can use the following types in an expression wherever another integral type can be used:
 
 - Objects, literals, and constants of type **char** and **short int**
 
@@ -56,9 +56,9 @@ Objects of an integral type can be converted to another wider integral type (tha
 
 - Enumerators
 
-C++ promotions are "value-preserving." That is, the value after the promotion is guaranteed to be the same as the value before the promotion. In value-preserving promotions, objects of shorter integral types (such as bit fields or objects of type **char**) are promoted to type **int** if **int** can represent the full range of the original type. If **int** cannot represent the full range of values, then the object is promoted to type **unsigned int**. Although this strategy is the same as that used by ANSI C, value-preserving conversions do not preserve the "signedness" of the object.
+C++ promotions are "value-preserving"; the value after the promotion is guaranteed to be the same as the value before the promotion. In value-preserving promotions, objects of shorter integral types (such as bit fields or objects of type **char**) are promoted to type **int** if **int** can represent the full range of the original type. If **int** can't represent the full range of values, then the object is promoted to type **unsigned int**. Although this strategy is the same as the one used by the C standard, value-preserving conversions don't preserve the "signedness" of the object.
 
-Value-preserving promotions and promotions that preserve signedness normally produce the same results. However, they can produce different results if the promoted object is one of the following:
+Value-preserving promotions and promotions that preserve signedness normally produce the same results. However, they can produce different results if the promoted object is one of the following operands:
 
 - An operand of **/**, `%`, `/=`, `%=`, **<**, **\<=**, **>**, or **>=**
 
@@ -74,9 +74,9 @@ Value-preserving promotions and promotions that preserve signedness normally pro
 
 Integral conversions are performed between integral types. The integral types are **char**, **int**, and **long** (and the **short**, **signed**, and **unsigned** versions of these types).
 
-**Signed to unsigned**
+### Signed to unsigned
 
-Objects of signed integral types can be converted to corresponding unsigned types. When these conversions occur, the actual bit pattern does not change; however, the interpretation of the data changes. Consider this code:
+Objects of signed integral types can be converted to corresponding unsigned types. When these conversions occur, the actual bit pattern doesn't change; however, the interpretation of the data changes. Consider this code:
 
 ```cpp
 #include <iostream>
@@ -92,9 +92,9 @@ int main()
 // Output: 65533
 ```
 
-In the preceding example, a **signed short**, `i`, is defined and initialized to a negative number. The expression `(u = i)` causes `i` to be converted to an **unsigned short** prior to the assignment to `u`.
+In the preceding example, a **signed short**, `i`, is defined and initialized to a negative number. The expression `(u = i)` causes `i` to be converted to an **unsigned short** before the assignment to `u`.
 
-**Unsigned to signed**
+### Unsigned to signed
 
 Objects of unsigned integral types can be converted to corresponding signed types. However, such a conversion can cause misinterpretation of data if the value of the unsigned object is outside the range representable by the signed type, as demonstrated in the following example:
 
@@ -112,13 +112,13 @@ cout << (i = u) << "\n";
 //Output: -3
 ```
 
-In the preceding example, `u` is an **unsigned short** integral object that must be converted to a signed quantity to evaluate the expression `(i = u)`. Because its value cannot be properly represented in a **signed short**, the data is misinterpreted as shown.
+In the preceding example, `u` is an **unsigned short** integral object that must be converted to a signed quantity to evaluate the expression `(i = u)`. Because its value can't be properly represented in a **signed short**, the data is misinterpreted as shown.
 
 ## Floating point conversions
 
 An object of a floating type can be safely converted to a more precise floating type — that is, the conversion causes no loss of significance. For example, conversions from **float** to **double** or from **double** to **long double** are safe, and the value is unchanged.
 
-An object of a floating type can also be converted to a less precise type, if it is in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value cannot be represented precisely, it can be converted to either the next higher or the next lower representable value. If no such value exists, the result is undefined. Consider the following example:
+An object of a floating type can also be converted to a less precise type, if it is in a range representable by that type. (See [Floating Limits](../cpp/floating-limits.md) for the ranges of floating types.) If the original value can't be represented precisely, it can be converted to either the next higher or the next lower representable value. If no such value exists, the result is undefined. Consider the following example:
 
 ```cpp
 cout << (float)1E300 << endl;
@@ -128,7 +128,7 @@ The maximum value representable by type **float** is 3.402823466E38 — a much s
 
 ## Conversions between integral and floating point types
 
-Certain expressions can cause objects of floating type to be converted to integral types, or vice versa. When an object of integral type is converted to a floating type and the original value cannot be represented exactly, the result is either the next higher or the next lower representable value.
+Certain expressions can cause objects of floating type to be converted to integral types, or vice versa. When an object of integral type is converted to a floating type and the original value can't be represented exactly, the result is either the next higher or the next lower representable value.
 
 When an object of floating type is converted to an integral type, the fractional part is truncated (round toward zero). Truncation means that a number like 1.3 is converted to 1, and -1.3 is converted to -1. If the truncated value is higher than the highest representable value or lower than the lowest representable value, the result is undefined.
 
@@ -136,7 +136,7 @@ When an object of floating type is converted to an integral type, the fractional
 
 Many binary operators (discussed in [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)) cause conversions of operands and yield results the same way. The way these operators cause conversions is called "usual arithmetic conversions." Arithmetic conversions of operands of different native types are performed as shown in the following table. Typedef types behave according to their underlying native types.
 
-### Conditions for Type Conversion
+### Conditions for type conversion
 
 |Conditions Met|Conversion|
 |--------------------|----------------|
@@ -185,7 +185,7 @@ Inheritance Graph for Illustration of Base-Class Accessibility
 
 The following table shows the base-class accessibility for the situation illustrated in the figure.
 
-### Base-Class Accessibility
+### Base-class accessibility
 
 |Type of Function|Derivation|Conversion from<br /><br /> B* to A\* Legal?|
 |----------------------|----------------|-------------------------------------------|
@@ -249,7 +249,7 @@ A pointer to any object that is not **const** or **volatile** can be implicitly 
 C++ does not supply a standard conversion from a **const** or **volatile** type to a type that is not **const** or **volatile**. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).
 
 > [!NOTE]
->  C++ pointers to members, except pointers to static members, are different from normal pointers and do not have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers.
+>  C++ pointers to members, except pointers to static members, are different from normal pointers and don't have the same standard conversions. Pointers to static members are normal pointers and have the same conversions as normal pointers.
 
 ### null pointer conversions
 
@@ -322,4 +322,4 @@ int main()
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)
+[C++ language reference](../cpp/cpp-language-reference.md)

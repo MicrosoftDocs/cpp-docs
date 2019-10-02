@@ -1,14 +1,14 @@
 ---
-title: "Conversions from Unsigned Integral Types"
+title: "Conversions from unsigned integral types"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["integers, converting", "type casts, involving integers", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers", "integral conversions, from unsigned"]
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
 ---
-# Conversions from Unsigned Integral Types
+# Conversions from unsigned integral types
 
 When an unsigned integer is converted to an integer or floating-point type, if the original value is representable in the result type the value is unchanged.
 
-When converting an unsigned integer to an integer of greater size, the value is zero-extended. When converting to an integer of smaller size the high-order bits are truncated. The result is interpreted using the result type, as shown in this example.
+When converting an unsigned integer to an integer of greater size, the value is zero-extended. When converting to an integer of smaller size, the high-order bits are truncated. The result is interpreted using the result type, as shown in this example.
 
 ```C
 unsigned k = 65533;
@@ -18,13 +18,13 @@ j = k;
 printf_s( "%hd\n", j );   // Prints -3
 ```
 
-When converting an unsigned integer to a floating-point type, if the original value cannot be represented exactly in the result type, the result will be the next higher or lower representable value.
+When converting an unsigned integer to a floating-point type, if the original value can't be represented exactly in the result type, the result will be the next higher or lower representable value.
 
-See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
+See [Storage of basic types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
 
 The following table summarizes conversions from unsigned integral types.
 
-## Conversions from unsigned integral types table
+## Table of conversions from unsigned integral types
 
 |From|To|Method|
 |----------|--------|------------|
@@ -71,10 +71,10 @@ The following table summarizes conversions from unsigned integral types.
 
 **Microsoft Specific**
 
-For the Microsoft C compiler, the **unsigned** or **unsigned int** type is equivalent to the **unsigned long** type; conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**.
+For the Microsoft compiler, the **unsigned** or **unsigned int** type is equivalent to the **unsigned long** type. Conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)
+[Assignment conversions](../c-language/assignment-conversions.md)

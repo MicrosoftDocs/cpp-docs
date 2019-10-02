@@ -1,14 +1,14 @@
 ---
-title: "Conversions from Signed Integral Types"
+title: "Conversions from signed integral types"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["integral conversions, from signed", "integers, converting", "conversions [C++], integral", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers"]
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
 ---
-# Conversions from Signed Integral Types
+# Conversions from signed integral types
 
-When a signed integer is converted to an integer or floating-point type, if the original value is representable in the result type the value is unchanged.
+When a signed integer is converted to an integer or a floating-point type, if the original value is representable in the result type, the value is unchanged.
 
-When converting a signed integer to an integer of greater size, the value is sign-extended. When converting to an integer of smaller size the high-order bits are truncated. The result is interpreted using the result type, as shown in this example.
+When a signed integer is converted to an integer of greater size, the value is sign-extended. When converted to an integer of smaller size, the high-order bits are truncated. The result is interpreted using the result type, as shown in this example:
 
 ```C
 int i = -3;
@@ -18,13 +18,13 @@ u = i;
 printf_s( "%hu\n", u );  // Prints 65533
 ```
 
-When converting a signed integer to a floating-point type, if the original value cannot be represented exactly in the result type, the result will be the next higher or lower representable value.
+When converting a signed integer to a floating-point type, if the original value can't be represented exactly in the result type, the result will be the next higher or lower representable value.
 
-See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
+See [Storage of basic types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
 
-The following table summarizes conversions from signed integral types. This table assumes that the **char** type is signed by default. If you use a compile-time option to change the default for the **char** type to unsigned, the conversions given in the [Conversions from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md) table for the **unsigned char** type apply instead of the conversions in the following table.
+The following table summarizes conversions from signed integral types. This table assumes that the **char** type is signed by default. If you use a compile-time option to change the default for the **char** type to unsigned, the conversions given in the [Conversions from unsigned integral types](../c-language/conversions-from-unsigned-integral-types.md) table for the **unsigned char** type apply, instead of the conversions in the following table.
 
-### Conversions from Signed Integral Types
+## Table of conversions from signed integral types
 
 |From|To|Method|
 |----------|--------|------------|
@@ -55,9 +55,9 @@ The following table summarizes conversions from signed integral types. This tabl
 |**long**|**unsigned short**|Preserve low-order word|
 |**long**|**unsigned long**|Preserve bit pattern; high-order bit loses function as sign bit|
 |**long**|**unsigned long long**|Sign-extend to **long long**; convert **long long** to **unsigned long long**|
-|**long**|**float**|Represent as **float**. If **long** cannot be represented exactly, some precision is lost.|
-|**long**|**double**|Represent as **double**. If **long** cannot be represented exactly as a **double**, some precision is lost.|
-|**long**|**long double**|Represent as **double**. If **long** cannot be represented exactly as a **double**, some precision is lost.|
+|**long**|**float**|Represent as **float**. If **long** can't be represented exactly, some precision is lost.|
+|**long**|**double**|Represent as **double**. If **long** can't be represented exactly as a **double**, some precision is lost.|
+|**long**|**long double**|Represent as **double**. If **long** can't be represented exactly as a **double**, some precision is lost.|
 |**long long**|**char**|Preserve low-order byte|
 |**long long**|**short**|Preserve low-order word|
 |**long long**|**long**|Preserve low-order dword|
@@ -65,18 +65,18 @@ The following table summarizes conversions from signed integral types. This tabl
 |**long long**|**unsigned short**|Preserve low-order word|
 |**long long**|**unsigned long**|Preserve low-order dword|
 |**long long**|**unsigned long long**|Preserve bit pattern; high-order bit loses function as sign bit|
-|**long long**|**float**|Represent as **float**. If **long long** cannot be represented exactly, some precision is lost.|
-|**long long**|**double**|Represent as **double**. If **long long** cannot be represented exactly as a **double**, some precision is lost.|
-|**long long**|**long double**|Represent as **double**. If **long long** cannot be represented exactly as a **double**, some precision is lost.|
+|**long long**|**float**|Represent as **float**. If **long long** can't be represented exactly, some precision is lost.|
+|**long long**|**double**|Represent as **double**. If **long long** can't be represented exactly as a **double**, some precision is lost.|
+|**long long**|**long double**|Represent as **double**. If **long long** can't be represented exactly as a **double**, some precision is lost.|
 
 1. All **char** entries assume that the **char** type is signed by default.
 
 **Microsoft Specific**
 
-For the Microsoft 32-bit C compiler, an **int** is equivalent to a **long**; conversion of an **int** value proceeds the same as for a **long**.
+For the Microsoft compiler, an **int** is equivalent to a **long**; conversion of an **int** value proceeds the same as for a **long**.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Assignment Conversions](../c-language/assignment-conversions.md)
+[Assignment conversions](../c-language/assignment-conversions.md)
