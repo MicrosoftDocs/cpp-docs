@@ -1,6 +1,6 @@
 ---
 title: "Conversions from Floating-Point Types"
-ms.date: "01/29/2018"
+ms.date: "10/02/2019"
 helpviewer_keywords: ["converting floating point", "floating-point conversion"]
 ms.assetid: 96804c8e-fa3b-4742-9006-0082ed9e57f2
 ---

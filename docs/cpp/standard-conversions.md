@@ -1,6 +1,6 @@
 ---
 title: "Standard Conversions"
-ms.date: "11/19/2018"
+ms.date: "10/02/2019"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
 ---

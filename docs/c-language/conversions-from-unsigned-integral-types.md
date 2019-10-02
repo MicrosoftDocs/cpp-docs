@@ -1,6 +1,6 @@
 ---
 title: "Conversions from Unsigned Integral Types"
-ms.date: "03/27/2019"
+ms.date: "10/02/2019"
 helpviewer_keywords: ["integers, converting", "type casts, involving integers", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers", "integral conversions, from unsigned"]
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
 ---
