@@ -130,7 +130,7 @@ The maximum value representable by type **float** is 3.402823466E38 — a much s
 
 Certain expressions can cause objects of floating type to be converted to integral types, or vice versa. When an object of integral type is converted to a floating type and the original value cannot be represented exactly, the result is either the next higher or the next lower representable value.
 
-When an object of floating type is converted to an integral type, the fractional part is truncated. No rounding takes place in the conversion process. Truncation means that a number like 1.3 is converted to 1, and -1.3 is converted to -1. If the truncated value is higher than the highest representable value or lower than the lowest representable value, the result is undefined.
+When an object of floating type is converted to an integral type, the fractional part is truncated (round toward zero). Truncation means that a number like 1.3 is converted to 1, and -1.3 is converted to -1. If the truncated value is higher than the highest representable value or lower than the lowest representable value, the result is undefined.
 
 ## Arithmetic conversions
 

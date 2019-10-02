@@ -18,7 +18,7 @@ u = i;
 printf_s( "%hu\n", u );  // Prints 65533
 ```
 
-When a signed integer is converted to a floating-point type that is the same size or smaller than the original type, if the value is not representable in the result type, the result will be either the next higher or next lower representable value.
+When converting a signed integer to a floating-point type, if the original value cannot be represented exactly in the result type, the result will be the next higher or lower representable value.
 
 See [Storage of Basic Types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
 
@@ -73,7 +73,7 @@ The following table summarizes conversions from signed integral types. This tabl
 
 **Microsoft Specific**
 
-For the Microsoft 32-bit C compiler, an **int** is equivalent to a **long**. Conversion of an **int** value proceeds the same as for a **long**. Similarly, **unsigned** or **unsigned int** is equivalent to **unsigned long**.
+For the Microsoft 32-bit C compiler, an **int** is equivalent to a **long**; conversion of an **int** value proceeds the same as for a **long**.
 
 **END Microsoft Specific**
 

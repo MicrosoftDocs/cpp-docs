@@ -6,19 +6,19 @@ ms.assetid: 96804c8e-fa3b-4742-9006-0082ed9e57f2
 ---
 # Conversions from floating-point types
 
-A **float** value converted to a **double** or **long double**, or a **double** converted to a **long double**, undergoes no change in value. The range of representable **double** or **long double** values is larger than for **float**, and when converting from the former to the latter if the value is beyond the representable range for **float**, the behavior is undefined. Otherwise if the result cannot be represented exactly, the value is rounded. See [Limits on Floating-Point Constants](../c-language/limits-on-floating-point-constants.md) for the range of floating-point types.
+A floating-point value converted to another floating-point type undergoes no change in value if the original value can be represented exactly in the result type. If the original value is numeric but cannot be represented exactly, the result will be either the next greater or next lower repersentable value. See [Limits on Floating-Point Constants](../c-language/limits-on-floating-point-constants.md) for the range of floating-point types.
 
 A floating-point value that is converted to an integral type is first truncated by discarding any fractional value. If this truncated value is representable in the result type the result must be that value. If it cannot, the result value is undefined.
 
 **Microsoft Specific**
 
-Note that the Microsoft VC++ compilers map **long double** to type **double** and **int** to **long**.
+Microsoft VC++ compilers use IEEE-754 binary32 representation for **float** values and binary64 representation for **long double** and **double**. Note that **long double** and **double** use the same representation, and therefore have the same range and precision.
 
-When converting a **double** or **long double** floating-point number to a **float**, the result is rounded according to the floating-point environment controls, which default to “round to nearest, ties to even”. If a numeric value is too high or too low to be represented in the result type, the result will be positive or negative infinity according to the sign of the original value, and an overflow exception will be raised if enabled.
+When converting a **double** or **long double** floating-point number to a **float**, the result is rounded according to the floating-point environment controls, which default to “round to nearest, ties to even”. If a numeric value is too high or too low to be represented as a numeric **float** value, the conversion result will be positive or negative infinity according to the sign of the original value, and an overflow exception will be raised if enabled.
 
 When converting to integer types, the result of a conversion to a type smaller than **long** is the result of converting the value to **long** and then converting to the result type. 
 
-For integer types at least as large as **long**, a conversion of a value that is too high or too low to represent in the result type may return any the following values:
+For conversion to integer types at least as large as **long**, a conversion of a value that is too high or too low to represent in the result type may return any the following values:
 - The result may be a sentinel value which is the representable value farthest from zero. For signed types this is the lowest representable value (0x800…0). For unsigned types this is the highest representable value (0xFF…F).
 - The result may be saturated so that too high values are converted to the highest representable value and too low values are converted to the lowest representable value. Note that one of these two values is also used as the sentinel value.
 - For conversion to **unsigned long** or **unsigned long long**, the result of converting an out of range value may be some value other than the highest or lowest representable value, depending on compiler options and target architecture. Future compiler releases may return a saturated or sentinel value instead.
