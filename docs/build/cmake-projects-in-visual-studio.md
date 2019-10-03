@@ -52,12 +52,6 @@ If you need to pass arguments to an executable at debug time, you can use anothe
 > [!NOTE]
 > For other kinds of Open Folder projects, two additional JSON files are used: **CppProperties.json** and **tasks.vs.json**. Neither of these are relevant for CMake projects.
 
-## Import an existing cache
-
-When you import an existing CMakeCache.txt file, Visual Studio automatically extracts customized variables and creates a pre-populated **CMakeSettings.json** file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  **CMakeSettings.json** file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
-
-Not everything in the cache is imported. Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
-
 ## Open an existing cache
 
 When you open an existing CMake cache, Visual Studio will not attempt to manage your cache and build tree for you. This gives your custom or preferred tools complete control over how CMake configures your project. You can open an existing cache in Visual Studio via **File > Open > CMake** and navigating to an existing CMakeCache.txt. Alternatively, if you have already opened the project in Visual Studio, you can add an existing cache to it the same way you would add a new configuration. For more information, see our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/).
