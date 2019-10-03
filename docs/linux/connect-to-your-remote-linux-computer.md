@@ -89,11 +89,12 @@ In Visual Studio 2017, you connect to WSL by using the same steps as connecting 
 
 Visual Studio 2019 version 16.1 added native support for using C++ with the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/windows/wsl/about).  This means that you no longer need to add a remote connection or configure SSH in order to build and debug on your local WSL installation. You can find details on [how to install WSL](https://docs.microsoft.com/windows/wsl/install-win10) here.
 
-To configure your WSL installation to work with Visual Studio you need the following tools installed: gcc, gdb, make, rsync, and zip. You can install them on distros that use apt with this command: 
+To configure your WSL installation to work with Visual Studio you need the following tools installed: gcc or clang, gdb, make, rsync, and zip. You can install them on distros that use apt by using this command, which also installs the g++ compiler: 
 
 ```bash
 sudo apt install g++ gdb make rsync zip
 ```
+For more information, see [Download, install, and set up the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
 To configure your project for WSL, see [Configure a Linux project](configure-a-linux-project.md) or [Configure a Linux CMake project](cmake-linux-project.md) depending on which kind of project you have. To follow step-by-step instructions for creating a simple console application with WSL, check out this introductory blog post on [C++ with Visual Studio 2019 and the Windows Subsystem for Linux (WSL)](https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/).
 
