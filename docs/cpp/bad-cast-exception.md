@@ -1,6 +1,6 @@
 ---
 title: "bad_cast Exception"
-ms.date: "11/04/2016"
+ms.date: "10/04/2019"
 f1_keywords: ["bad_cast", "bad_cast_cpp"]
 helpviewer_keywords: ["exceptions [C++], bad_cast", "bad_cast keyword [C++]"]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
@@ -29,7 +29,7 @@ The following code contains an example of a failed **dynamic_cast** that throws 
 ```cpp
 // expre_bad_cast_Exception.cpp
 // compile with: /EHsc /GR
-#include <typeinfo.h>
+#include <typeinfo>
 #include <iostream>
 
 class Shape {
@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-The exception is thrown because the object being cast (a Shape) is not derived from the specified cast type (Circle). To avoid the exception, add these declarations to `main`:
+The exception is thrown because the object being cast (a Shape) isn't derived from the specified cast type (Circle). To avoid the exception, add these declarations to `main`:
 
 ```cpp
 Circle circle_instance;
@@ -113,6 +113,6 @@ const char* what() const noexcept override;
 
 ## See also
 
-[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[dynamic_cast Operator](../cpp/dynamic-cast-operator.md)\
+[Keywords](../cpp/keywords-cpp.md)\
 [C++ Exception Handling](../cpp/cpp-exception-handling.md)
