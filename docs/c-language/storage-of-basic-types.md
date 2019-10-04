@@ -21,7 +21,7 @@ The following table summarizes the storage associated with each basic type.
 |**double**|8 bytes|
 |**long double**|8 bytes|
 
-The C data types fall into general categories. The "integral types" include **char**, **int**, **short**, **long**, **signed**, **unsigned**, and **enum**. The "floating types" include **float**, **double**, and **long double**. The "arithmetic types" include all floating and integral types.
+The C data types fall into general categories. The *integral types* include **int**, **char**, **short**, **long**, and **long long**. These types can be qualified with **signed** or **unsigned**, and **unsigned** by itself can be used as shorthand for **unsigned int**. Enumeration types (**enum**) are also treated as integral types for most purposes. The *floating types* include **float**, **double**, and **long double**. The *arithmetic types* include all floating and integral types.
 
 ## See also
 

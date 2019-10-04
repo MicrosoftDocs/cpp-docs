@@ -18,9 +18,15 @@ j = k;
 printf_s( "%hd\n", j );   // Prints -3
 ```
 
-When converting an unsigned integer to a floating-point type, if the original value can't be represented exactly in the result type, the result will be the next higher or lower representable value.
+When converting an unsigned integer to a floating-point type, if the original value can't be represented exactly in the result type, the result is the next higher or lower representable value.
 
 See [Storage of basic types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
+
+**Microsoft Specific**
+
+In the Microsoft compiler, **unsigned** (or **unsigned int**) and **unsigned long** are distinct but equivalent types. Conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**.
+
+**END Microsoft Specific**
 
 The following table summarizes conversions from unsigned integral types.
 
@@ -68,12 +74,6 @@ The following table summarizes conversions from unsigned integral types.
 |**unsigned long long**|**float**|Convert to **long**; convert **long** to **float**|
 |**unsigned long long**|**double**|Convert directly to **double**|
 |**unsigned long long**|**long double**|Convert to **long**; convert **long** to **double**|
-
-**Microsoft Specific**
-
-For the Microsoft compiler, the **unsigned** or **unsigned int** type is equivalent to the **unsigned long** type. Conversion of an **unsigned int** value proceeds in the same way as conversion of an **unsigned long**.
-
-**END Microsoft Specific**
 
 ## See also
 

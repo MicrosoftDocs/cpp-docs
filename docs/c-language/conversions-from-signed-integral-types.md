@@ -18,17 +18,23 @@ u = i;
 printf_s( "%hu\n", u );  // Prints 65533
 ```
 
-When converting a signed integer to a floating-point type, if the original value can't be represented exactly in the result type, the result will be the next higher or lower representable value.
+When converting a signed integer to a floating-point type, if the original value isn't representable exactly in the result type, the result is the next higher or lower representable value.
 
-See [Storage of basic types](../c-language/storage-of-basic-types.md) for information about the sizes of integral and floating-point types.
+For information about the sizes of integral and floating-point types, see [Storage of basic types](../c-language/storage-of-basic-types.md).
 
-The following table summarizes conversions from signed integral types. This table assumes that the **char** type is signed by default. If you use a compile-time option to change the default for the **char** type to unsigned, the conversions given in the [Conversions from unsigned integral types](../c-language/conversions-from-unsigned-integral-types.md) table for the **unsigned char** type apply, instead of the conversions in the following table.
+The following table summarizes conversions from signed integral types. It assumes the **char** type is signed by default. If you use a compile-time option to change the default for the **char** type to unsigned, the conversions given in the [Conversions from unsigned integral types](../c-language/conversions-from-unsigned-integral-types.md) table for the **unsigned char** type apply, instead of the conversions in this table.
+
+**Microsoft Specific**
+
+In the Microsoft compiler, **int** and **long** are distinct but equivalent types. Conversion of an **int** value proceeds in the same way as conversion of a **long**.
+
+**END Microsoft Specific**
 
 ## Table of conversions from signed integral types
 
 |From|To|Method|
 |----------|--------|------------|
-|**char**1|**short**|Sign-extend|
+|**char**<sup>1</sup>|**short**|Sign-extend|
 |**char**|**long**|Sign-extend|
 |**char**|**long long**|Sign-extend|
 |**char**|**unsigned char**|Preserve pattern; high-order bit loses function as sign bit|
@@ -69,13 +75,7 @@ The following table summarizes conversions from signed integral types. This tabl
 |**long long**|**double**|Represent as **double**. If **long long** can't be represented exactly as a **double**, some precision is lost.|
 |**long long**|**long double**|Represent as **double**. If **long long** can't be represented exactly as a **double**, some precision is lost.|
 
-1. All **char** entries assume that the **char** type is signed by default.
-
-**Microsoft Specific**
-
-For the Microsoft compiler, an **int** is equivalent to a **long**; conversion of an **int** value proceeds the same as for a **long**.
-
-**END Microsoft Specific**
+<sup>1</sup> All **char** entries assume that the **char** type is signed by default.
 
 ## See also
 
