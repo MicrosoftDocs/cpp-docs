@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "09/25/2019"
+ms.date: "10/04/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -451,6 +451,10 @@ extern "C" void f(int, int, int, BOOL){}
 
 To avoid the errors in the previous example, use **bool** instead of **BOOL** consistently in both declarations of `f`.
 
+### Standard Library improvements
+
+The non-standard headers \<stdexcpt.h> and \<typeinfo.h> have been removed. Code that includes them should instead include the standard headers \<exception> and \<typeinfo>, respectively.
+
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
 ### Reinterpret_cast in a constexpr function
@@ -716,7 +720,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Previously, some time values that were passed to the concurrency library would overflow, for example, `condition_variable::wait_for(seconds::max())`. Now fixed, the overflows changed behavior on a seemingly random 29-day cycle (when uint32_t milliseconds accepted by underlying Win32 APIs overflowed).
 
-- The <ctime> header now correctly declares `timespec` and `timespec_get` in namespace `std` in addition to declaring them in the global namespace.
+- The \<ctime> header now correctly declares `timespec` and `timespec_get` in namespace `std` in addition to declaring them in the global namespace.
 
 ### Various fixes for containers
 
