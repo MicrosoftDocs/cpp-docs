@@ -307,9 +307,10 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |`arithmetic(ror)`|    11100111'100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); ror lr, lr, reg(z) |
 | |            11100111: xxxz----: ---- reserved |
 | |              11101xxx: reserved for custom stack cases below only generated for asm routines |
-| |              11101001: Custom stack for MSFT_OP_TRAP_FRAME |
-| |              11101010: Custom stack for MSFT_OP_MACHINE_FRAME |
-| |              11101011: Custom stack for MSFT_OP_CONTEXT |
+| |              11101000: Custom stack for MSFT_OP_TRAP_FRAME |
+| |              11101001: Custom stack for MSFT_OP_MACHINE_FRAME |
+| |              11101010: Custom stack for MSFT_OP_CONTEXT |
+| |              11101100: Custom stack for MSFT_OP_CLEAR_UNWOUND_TO_CALL |
 | |              1111xxxx: reserved |
 
 In instructions with large values covering multiple bytes, the most significant bits are stored first. The unwind codes above are designed such that by simply looking up the first byte of the code, it is possible to know the total size in bytes of the unwind code. Given that each unwind code is exactly mapped to an instruction in prolog/epilog, to compute the size of the prolog or epilog, all that needs to be done is to walk from the start of the sequence to the end, using a lookup table or similar device to determine how long the corresponding opcode is.
