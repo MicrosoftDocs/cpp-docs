@@ -54,7 +54,7 @@ A static class member must have a unique definition, or it will violate the one-
 
 In earlier versions of Visual Studio, this level of dependency was sufficient. However, starting with Visual Studio 2010, Visual Studio requires a [project-to-project reference](/visualstudio/ide/managing-references-in-a-project). If your project does not have a project-to-project reference, you may receive this linker error. Add a project-to-project reference to fix it.
 
-### Entry point is not defined
+### An entry point is not defined
 
 The application code must define an appropriate entry point: `main` or `wmain` for console application; `WinMain` or `wWinMain` for Windows application. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use custom entry point, specify [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option. 
 
