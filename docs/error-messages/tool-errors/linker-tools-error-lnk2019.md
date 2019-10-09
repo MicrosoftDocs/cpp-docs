@@ -56,7 +56,7 @@ In earlier versions of Visual Studio, this level of dependency was sufficient. H
 
 ### An entry point is not defined
 
-The application code must define an appropriate entry point: `main` or `wmain` for console application; `WinMain` or `wWinMain` for Windows application. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use custom entry point, specify [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option. 
+The application code must define an appropriate entry point: `main` or `wmain` for console applications, `WinMain` or `wWinMain` for Windows applications. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use a custom entry point, specify the [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option. 
 
 ### You build a console application by using settings for a Windows application
 
