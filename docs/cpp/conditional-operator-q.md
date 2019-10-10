@@ -1,11 +1,11 @@
 ---
-title: "Conditional Operator: ? :"
+title: "Conditional Operator: &quest; :"
 ms.date: "11/04/2016"
 f1_keywords: ["?:", "?"]
 helpviewer_keywords: ["conditional operators [C++]", "? : operator"]
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
 ---
-# Conditional Operator: ? :
+# Conditional Operator: &quest; :
 
 ## Syntax
 
