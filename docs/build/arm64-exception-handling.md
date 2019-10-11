@@ -340,7 +340,7 @@ The fields are as follows:
   - 10 = packed unwind data used for code without any prolog and epilog. Useful for describing separated function segments
   - 11 = reserved.
 - **Function Length** is an 11-bit field providing the length of the entire function in bytes, divided by 4. If the function is larger than 8k, a full .xdata record must be used instead.
-- **Frame Size** is a 9-bit field indicating the number of bytes of stack that is allocated for this function, divided by 16. Functions that allocate greater than (8k-16) bytes of stack must use a full .xdata record. This includes local variable area, outgoing parameter area, callee-saved Int and FP area, and home parameter area, but excludes the dynamic allocation area.
+- **Frame Size** is a 9-bit field indicating the number of bytes of stack that is allocated for this function, divided by 16. Functions that allocate greater than (8k-16) bytes of stack must use a full .xdata record. It includes the local variable area, outgoing parameter area, callee-saved Int and FP area, and home parameter area, but excludes the dynamic allocation area.
 - **CR** is a 2-bit flag indicating whether the function includes extra instructions to set up a frame chain and return link:
   - 00 = unchained function, \<x29,lr> pair is not saved in stack.
   - 01 = unchained function, \<lr> is saved in stack
@@ -410,7 +410,7 @@ So, for both the prolog and epilog, we're left with a common set of unwind codes
 
 `set_fp`, `save_regp 0,240`, `save_fregp,0,224`, `save_fplr_x_256`, `end`
 
-The epilog case is straightforward, since it's in normal order. Starting at offset 0 within the epilog (which starts at offset 0x100 in the function), we'd expect to execute the full unwind sequence, as no cleanup has yet been done. If we find ourselves one instruction in (at offset 2 in the epilog), we can successfully unwind by skipping the first unwind code. We can generalizing this situation, and assuma a 1:1 mapping between opcodes and unwind codes. Then to start unwinding from instruction n in the epilog, we should skip the first n unwind codes, and begin executing from there.
+The epilog case is straightforward, since it's in normal order. Starting at offset 0 within the epilog (which starts at offset 0x100 in the function), we'd expect to execute the full unwind sequence, as no cleanup has yet been done. If we find ourselves one instruction in (at offset 2 in the epilog), we can successfully unwind by skipping the first unwind code. We can generalize this situation, and assume a 1:1 mapping between opcodes and unwind codes. Then, to start unwinding from instruction *n* in the epilog, we should skip the first *n* unwind codes, and begin executing from there.
 
 It turns out that a similar logic works for the prolog, except in reverse. If we start unwinding from offset 0 in the prolog, we want to execute nothing. If we unwind from offset 2, which is one instruction in, then we want to start executing the unwind sequence one unwind code from the end. (Remember, the codes are stored in reverse order.) And here too, we can generalize: if we start unwinding from instruction n in the prolog, we should start executing n unwind codes from the end of the list of codes.
 
