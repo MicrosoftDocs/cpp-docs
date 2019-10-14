@@ -24,7 +24,7 @@ The `configurations` array contains all the configurations for a CMake project. 
 
 A `configuration` has these properties:
 
-- `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On linux compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
 - `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}`.
@@ -141,17 +141,17 @@ Note that if you do not define the `"type"`, the `"STRING"` type will be assumed
 
 An *environment* encapsulates the environment variables that are set in the process that Visual Studio uses to invoke cmake.exe. For MSVC projects, the variables are those that are set in a [developer command prompt](building-on-the-command-line.md) for a specific platform. For example, the `msvc_x64_x64` environment is the same as running the **Developer Command Prompt for VS 2017** or **Developer Command Prompt for VS 2019** with the **-arch=amd64 -host_arch=amd64** arguments. You can use the `env.{<variable_name>}` syntax in *CMakeSettings.json* to reference the individual environment variables, for example to construct paths to folders.  The following predefined environments are provided:
 
-  - linux_arm: Target ARM Linux remotely.
-  - linux_x64: Target x64 Linux remotely.
-  - linux_x86: Target x86 Linux remotely.
-  - msvc_arm: Target ARM Windows with the MSVC compiler.
-  - msvc_arm_x64: Target ARM Windows with the 64-bit MSVC compiler.
-  - msvc_arm64: Target ARM64 Windows with the MSVC compiler.
-  - msvc_arm64_x64: Target ARM64 Windows with the 64-bit MSVC compiler.
-  - msvc_x64: Target x64 Windows with the MSVC compiler.
-  - msvc_x64_x64: Target x64 Windows with the 64-bit MSVC compiler.
-  - msvc_x86: Target x86 Windows with the MSVC compiler.
-  - msvc_x86_x64: Target x86 Windows with the 64-bit MSVC compiler.
+- linux_arm: Target ARM Linux remotely.
+- linux_x64: Target x64 Linux remotely.
+- linux_x86: Target x86 Linux remotely.
+- msvc_arm: Target ARM Windows with the MSVC compiler.
+- msvc_arm_x64: Target ARM Windows with the 64-bit MSVC compiler.
+- msvc_arm64: Target ARM64 Windows with the MSVC compiler.
+- msvc_arm64_x64: Target ARM64 Windows with the 64-bit MSVC compiler.
+- msvc_x64: Target x64 Windows with the MSVC compiler.
+- msvc_x64_x64: Target x64 Windows with the 64-bit MSVC compiler.
+- msvc_x86: Target x86 Windows with the MSVC compiler.
+- msvc_x86_x64: Target x86 Windows with the 64-bit MSVC compiler.
 
 ### Accessing environment variables from CMakeLists.txt
 
