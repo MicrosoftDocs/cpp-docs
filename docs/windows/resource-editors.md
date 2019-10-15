@@ -50,7 +50,7 @@ You can access Win32 resources in the [Resource View](how-to-create-a-resource-s
 
 #### To view a Win32 resource in a resource editor
 
-1. Go to menu **View** > **Resource View**.
+1. Go to menu **View** > **Other Windows** > **Resource View**.
 
 1. If the **Resource View** window isn't the top-most window, select the **Resource View** tab to bring it to the top.
 

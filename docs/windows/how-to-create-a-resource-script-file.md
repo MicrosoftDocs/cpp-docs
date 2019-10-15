@@ -71,7 +71,7 @@ You can create a resource as a new default resource meaning a resource that isn'
 Use the **Resource View** window to display resource files included in your projects. Expanding the top folder, for example, *Project1.rc*, shows the resource types within that file. Expand each resource type to show the individual resources of that type.
 
 > [!TIP]
-> To open the **Resource View** window, go to menu **View** > **Resource View** or press **Ctrl**+**Shift**+**E**.
+> To open the **Resource View** window, go to menu **View** > **Other Windows** > **Resource View** or press **Ctrl**+**Shift**+**E**.
 
 You can also use right-click on the **Resource View** window to launch a shortcut menu of commands, or double-click the title bar to dock and undock the window. Right-click the title bar for commands that control the behavior of the window. For more information, see [Windows Management](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
