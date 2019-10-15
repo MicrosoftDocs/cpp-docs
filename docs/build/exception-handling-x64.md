@@ -373,7 +373,7 @@ sample PROC FRAME
 
 ; Here’s the official epilog
 
-    lea rsp, [rbp+020h] ; deallocate both fixed and dynamic portions of the stack
+    lea rsp, [rbp+020h] ; deallocate both fixed and dynamic portions of the frame
     pop rbp
     ret
 sample ENDP
