@@ -1,6 +1,6 @@
 ---
 title: "How to: Add a Custom Build Step to MSBuild Projects"
-ms.date: "11/04/2016"
+ms.date: "10/16/2019"
 helpviewer_keywords: ["msbuild (c++), howto: add a custom build step"]
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
 ---
@@ -25,7 +25,7 @@ Custom build steps and custom build tools share the information specified in the
       <CustomBuildStep>
         <Command>makecab.exe $(ProjectDir)main.cpp $(TargetName).cab</Command>
         <Outputs>$(TargetName).cab</Outputs>
-        <Inputs>$(TargetFileName)</Inputs>
+        <Inputs>$(ProjectDir)main.cpp</Inputs>
       </CustomBuildStep>
     </ItemDefinitionGroup>
     ```
