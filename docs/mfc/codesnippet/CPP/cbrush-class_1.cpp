@@ -2,16 +2,12 @@
 CBrush brush1;                           // Must initialize!
 brush1.CreateSolidBrush(RGB(0, 0, 255)); // Blue brush.
 
-CBrush *pTempBrush = NULL;
-CBrush OrigBrush;
-
 CRect rc;
 GetClientRect(&rc);
 ScreenToClient(&rc);
 
-pTempBrush = (CBrush *)pDC->SelectObject(&brush1);
 // Save original brush.
-OrigBrush.FromHandle((HBRUSH)pTempBrush);
+CBrush *pOrigBrush = (CBrush *)pDC->SelectObject(&brush1);
 
 // Paint upper left corner with blue brush.
 pDC->Rectangle(0, 0, rc.Width() / 2, rc.Height() / 2);
@@ -32,19 +28,19 @@ try
    bmp.LoadBitmap(IDB_BRUSH);
    CBrush brush4(&bmp);
 
-   pTempBrush = (CBrush *)pDC->SelectObject(&brush2);
+   pDC->SelectObject(&brush2);
 
    // Paint upper right corner with red brush.
    pDC->Rectangle(rc.Width() / 2, 0, rc.Width(),
                   rc.Height() / 2);
 
-   pTempBrush = (CBrush *)pDC->SelectObject(&brush3);
+   pDC->SelectObject(&brush3);
 
    // Paint lower left corner with green hatched brush.
    pDC->Rectangle(0, rc.Height() / 2, rc.Width() / 2,
                   rc.Height());
 
-   pTempBrush = (CBrush *)pDC->SelectObject(&brush4);
+   pDC->SelectObject(&brush4);
 
    // Paint lower right corner with resource brush.
    pDC->Rectangle(rc.Width() / 2, rc.Height() / 2,
@@ -57,4 +53,4 @@ catch (CResourceException *e)
 }
 
 // Reselect original brush into device context.
-pDC->SelectObject(&OrigBrush);
+pDC->SelectObject(pOrigBrush);

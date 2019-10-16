@@ -18,7 +18,7 @@ The **Menu Editor** enables you:
 
 ### To create a standard menu
 
-1. Go to menu **View** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
+1. Go to menu **View** > **Other Windows** > **Resource View** and right-click on the **Menu** heading. Choose **Add Resource**, then **Menu**.
 
 1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
 
