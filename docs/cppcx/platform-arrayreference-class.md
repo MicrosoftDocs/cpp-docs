@@ -1,6 +1,6 @@
 ---
 title: "Platform::ArrayReference Class"
-ms.date: "12/30/2016"
+ms.date: "10/16/2019"
 ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::ArrayReference::ArrayReference"]
 helpviewer_keywords: ["Platform::ArrayReference Class"]
@@ -110,7 +110,7 @@ A handle-to-object of type `Array<TArg>^`
 
 ### Remarks
 
-[Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) and [Platform::Array](../cppcx/platform-array-class.md) are standard C++ class templates, not ref classes.
+[Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) is a standard C++ class template, and [Platform::Array](../cppcx/platform-array-class.md) is a ref class.
 
 ## See also
 
