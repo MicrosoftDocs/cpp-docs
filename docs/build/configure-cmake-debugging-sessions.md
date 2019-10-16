@@ -9,12 +9,11 @@ All executable CMake targets are shown in the **Startup Item** dropdown in the *
 
 ![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
 
-You can also start a debug session from the Solution Explorer. First, switch to CMake Targets View via the Solution Explorer.
+You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-![CMake targets view button](media/cmake-targets-view.png)
+![CMake targets view button](media/cmake-targets-view.png  "CMake Targets View menu item")
 
-You can then right-click on any executable and select "Debug" or "Debug and Launch Settings." "Debug" will automatically start debugging the selected target based on your active configuration. "Debug and Launch Settings" will open launch.vs.json and add a new debug configuration for the selected target to launch.vs.json. 
-
+Then, right-click on any executable and select **Debug** or **Debug and Launch Settings**. **Debug** automatically starts debugging the selected target, based on your active configuration. **Debug and Launch Settings** opens the *launch.vs.json* file and adds a new debug configuration for the selected target.
 
 ## Customize debugger settings
 
