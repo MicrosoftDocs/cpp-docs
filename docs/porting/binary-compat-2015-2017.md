@@ -14,11 +14,17 @@ The only exception to this rule is that static libraries or object files that ar
 
 When you mix binaries built with different supported versions of the MSVC toolset, the Visual C++ redistributable that your application runs on cannot be older than any of the toolset versions used to build your app or any libraries it consumes. 
 
-# Upgrading Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
+## Upgrade Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
 
-Because we have preserved binary compatability and kept the major version (14) the same for the Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019, only one version of the Visual C++ Redistributable can be installed from those at any time. A newer version will overwrite an older one installed; in other words, if you have Visual C++ Redistributable from Visual Studio 2015 or 2017 and later install 2019, the 2019 one will overwrite an older one. Because we ensure the latest version will have all the newest features and bug fixes, including securityfixes, we always recommend upgrading to the latest version available.
+Because we have preserved binary compatability and kept the major version (14) the same for the Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019, only one version of the Visual C++ Redistributable can be installed from those at any time. A newer version will overwrite an older one installed. If you have the Visual C++ Redistributable from Visual Studio 2015 or 2017 and then later install 2019, the 2019 version will overwrite an older version. Because we ensure the latest version will have all the newest features and bug fixes, including security fixes, we always recommend upgrading to the latest available version.
 
-Similarly, we do not allow installing an older version of the Visual C++ Redistributable on a machine where a newer one already exists; for example, installing Visual C++ Redistributable from Visual Studio 2015 or 2017 on a machine that already has 2019, will result in an installation failure. The error will look something similar to this: *0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.*. This error is by design. We recommended keeping the newest one installed.
+Similarly, we don't allow installing an older version of the Visual C++ Redistributable on a machine where a newer one already exists. Installing the Visual C++ Redistributable from Visual Studio 2015 or 2017 on a machine that already has 2019, will result in an installation failure. The error will look something similar to this:
+
+```
+*0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.*.
+```
+
+This error is by design. We recommend keeping the newest one installed.
 
 ## See also
 
