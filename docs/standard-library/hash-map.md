@@ -9,7 +9,7 @@ helpviewer_keywords: ["hash_map header"]
 > [!NOTE]
 > This header is obsolete. The alternative is [\<unordered_map>](unordered-map.md).
 
-Defines the container template classes hash_map and hash_multimap and their supporting templates.
+Defines the container class templates hash_map and hash_multimap and their supporting templates.
 
 ## Syntax
 

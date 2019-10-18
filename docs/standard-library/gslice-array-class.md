@@ -7,7 +7,7 @@ ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
 ---
 # gslice_array Class
 
-An internal, auxiliary template class that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.
+An internal, auxiliary class template that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.
 
 ## Syntax
 
@@ -50,7 +50,7 @@ The class describes an object that stores a reference to an object `va` of class
 
 You construct a `gslice_array<Type>` object only by writing an expression of the form [va&#91;gs&#93;](../standard-library/valarray-class.md#op_at). The member functions of class gslice_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected.
 
-The template class is created indirectly by certain valarray operations and cannot be used directly in the program. An internal auxiliary template class instead is used by the slice subscript operator:
+The class template is created indirectly by certain valarray operations and cannot be used directly in the program. An internal auxiliary class template instead is used by the slice subscript operator:
 
 `gslice_array`\< **Type**> `valarray`\< **Type**>:: `operator[]` ( **constgslice&**).
 

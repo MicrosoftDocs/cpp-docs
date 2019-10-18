@@ -7,7 +7,7 @@ ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
 ---
 # fpos Class
 
-The template class describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream. An object of class fpos\< **St**> effectively stores at least two member objects:
+The class template describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream. An object of class fpos\< **St**> effectively stores at least two member objects:
 
 - A byte offset, of type [streamoff](../standard-library/ios-typedefs.md#streamoff).
 

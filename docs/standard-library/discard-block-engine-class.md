@@ -38,7 +38,7 @@ For more information about engine members, see [\<random>](../standard-library/r
 
 ## Remarks
 
-This template class describes an engine adaptor that produces values by discarding some of the values returned by its base engine.
+This class template describes an engine adaptor that produces values by discarding some of the values returned by its base engine.
 
 ## Requirements
 

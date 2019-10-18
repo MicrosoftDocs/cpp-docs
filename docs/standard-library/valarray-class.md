@@ -7,11 +7,11 @@ ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
 ---
 # valarray Class
 
-The template class describes an object that controls a sequence of elements of type `Type` that are stored as an array, designed for performing high-speed mathematical operations, and optimized for computational performance.
+The class template describes an object that controls a sequence of elements of type `Type` that are stored as an array, designed for performing high-speed mathematical operations, and optimized for computational performance.
 
 ## Remarks
 
-The class is a representation of the mathematical concept of an ordered set of values and the elements are numbered sequentially from zero. The class is described as a near container because it supports some, but not all, of the capabilities that first-class sequence containers, such as [vector](../standard-library/vector-class.md), support. It differs from template class vector in two important ways:
+The class is a representation of the mathematical concept of an ordered set of values and the elements are numbered sequentially from zero. The class is described as a near container because it supports some, but not all, of the capabilities that first-class sequence containers, such as [vector](../standard-library/vector-class.md), support. It differs from class template vector in two important ways:
 
 - It defines numerous arithmetic operations between corresponding elements of `valarray<Type>` objects of the same type and length, such as *xarr* = cos( *yarr*) + sin( *zarr*).
 

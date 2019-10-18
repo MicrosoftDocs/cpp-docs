@@ -14,7 +14,7 @@ helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]",
 
 ## <a name="allocator_decl"></a>  ALLOCATOR_DECL
 
-Yields an allocator template class.
+Yields an allocator class template.
 
 ```cpp
 #define ALLOCATOR_DECL(cache, sync, name) <alloc_template>
@@ -22,7 +22,7 @@ Yields an allocator template class.
 
 ### Remarks
 
-The macro yields a template definition `template <class Type> class name {.....}` and a specialization `template <> class name<void> {.....}` which together define an allocator template class that uses the synchronization filter `sync` and a cache of type `cache`.
+The macro yields a template definition `template <class Type> class name {.....}` and a specialization `template <> class name<void> {.....}` which together define an allocator class template that uses the synchronization filter `sync` and a cache of type `cache`.
 
 For compilers that can compile rebind, the resulting template definition looks like this:
 

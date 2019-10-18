@@ -7,7 +7,7 @@ ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
 ---
 # istreambuf_iterator Class
 
-The template class istreambuf_iterator describes an input iterator object that extracts character elements from an input stream buffer, which it accesses through an object it stores, of type pointer to `basic_streambuf`\< **CharType**, **Traits**>.
+The class template istreambuf_iterator describes an input iterator object that extracts character elements from an input stream buffer, which it accesses through an object it stores, of type pointer to `basic_streambuf`\< **CharType**, **Traits**>.
 
 ## Syntax
 

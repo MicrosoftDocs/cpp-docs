@@ -23,7 +23,7 @@ A few additional caveats:
 
 The container classes defined by C++ Standard Library satisfy several additional requirements, as described in the following paragraphs.
 
-Container template class [list](../standard-library/list-class.md) provides deterministic, and useful, behavior even in the presence of the exceptions described above. For example, if an exception is thrown during the insertion of one or more elements, the container is left unaltered and the exception is rethrown.
+container class template [list](../standard-library/list-class.md) provides deterministic, and useful, behavior even in the presence of the exceptions described above. For example, if an exception is thrown during the insertion of one or more elements, the container is left unaltered and the exception is rethrown.
 
 For *all* the container classes defined by C++ Standard Library, if an exception is thrown during calls to the following member functions, `insert`, `push_back`, or `push_front`, the container is left unaltered and the exception is rethrown.
 

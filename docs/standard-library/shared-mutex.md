@@ -8,13 +8,13 @@ ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
 
 The &lt;shared_mutex> header provides synchronization primitives for protection of shared data that can be accessed by multiple threads. In addition to the exclusive access control provided by mutex classes, the shared mutex classes also allow shared ownership by multiple threads for non-exclusive access. Shared mutexes can be used to control resources that can be read by several threads without causing a race condition, but must be written exclusively by a single thread.
 
-The header &lt;shared_mutex> defines the classes `shared_mutex` and `shared_timed_mutex`, the template class `shared_lock`, and the template function `swap` for shared mutex support.
+The header &lt;shared_mutex> defines the classes `shared_mutex` and `shared_timed_mutex`, the class template `shared_lock`, and the template function `swap` for shared mutex support.
 
 |Classes|Description|
 |-------------|-----------------|
 |[shared_mutex Class](#class_shared_mutex)|A shared mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
 |[shared_timed_mutex Class](#class_shared_timed_mutex)|A shared timed mutex type that can be locked exclusively by one agent or shared non-exclusively by multiple agents.|
-|[shared_lock Class](#class_shared_lock)|A template class that wraps a shared mutex to support timed lock operations and non-exclusive sharing by multiple agents.|
+|[shared_lock Class](#class_shared_lock)|A class template that wraps a shared mutex to support timed lock operations and non-exclusive sharing by multiple agents.|
 
 |Functions|Description|
 |---------------|-----------------|
@@ -53,7 +53,7 @@ A shared timed mutex type supports the additional methods `try_lock_shared_for` 
 
 - The `try_lock_shared_until` method attempts to obtain shared ownership of the mutex until the specified absolute time has passed. If the specified time has already passed, the method is equivalent to `try_lock_shared`. The method does not return before the time specified unless shared ownership is obtained. Its return value is **true** if the method obtains ownership, but is otherwise **false**.
 
-The `shared_lock` template class extends support for timed locking and transfer of ownership to a shared mutex. Ownership of the mutex may be obtained at or after construction, and may be transferred to another `shared_lock` object. Objects of type `shared_lock` can be moved, but not copied.
+The `shared_lock` class template extends support for timed locking and transfer of ownership to a shared mutex. Ownership of the mutex may be obtained at or after construction, and may be transferred to another `shared_lock` object. Objects of type `shared_lock` can be moved, but not copied.
 
 > [!WARNING]
 > Beginning in Visual Studio 2015, the C++ Standard Library synchronization types are based on Windows synchronization primitives and no longer use ConcRT (except when the target platform is Windows XP). The types defined in &lt;shared_mutex> should not be used with any ConcRT types or functions.
@@ -121,7 +121,7 @@ public:
 
 ###  <a name="class_shared_lock"></a> shared_lock Class
 
-Template class `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
+class template `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
 
 ```cpp
 class shared_lock {

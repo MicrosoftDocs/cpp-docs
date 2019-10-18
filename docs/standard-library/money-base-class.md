@@ -7,7 +7,7 @@ ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a
 ---
 # money_base Class
 
-The class describes an enumeration and a structure common to all specializations of template class [moneypunct](../standard-library/moneypunct-class.md).
+The class describes an enumeration and a structure common to all specializations of class template [moneypunct](../standard-library/moneypunct-class.md).
 
 ## Syntax
 

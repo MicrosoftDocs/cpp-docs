@@ -7,7 +7,7 @@ ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
 ---
 # ios_base Class
 
-The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The template class [basic_ios](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
+The class describes the storage and member functions common to both input and output streams that do not depend on the template parameters. (The class template [basic_ios](../standard-library/basic-ios-class.md) describes what is common and is dependent on template parameters.)
 
 An object of class ios_base stores formatting information, which consists of:
 
@@ -89,7 +89,7 @@ An object of class ios_base also stores stream state information, in an object o
 
 |||
 |-|-|
-|[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in template class [basic_ios](../standard-library/basic-ios-class.md).|
+|[failure](#failure)|The member class serves as the base class for all exceptions thrown by the member function [clear](../standard-library/basic-ios-class.md#clear) in class template [basic_ios](../standard-library/basic-ios-class.md).|
 |[flags](#flags)|Sets or returns the current flag settings.|
 |[getloc](#getloc)|Returns the stored locale object.|
 |[imbue](#imbue)|Changes the locale.|
@@ -422,7 +422,7 @@ ios_base();
 
 ### Remarks
 
-The (protected) constructor does nothing. A later call to **basic_ios::**[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for template class [basic_ios](../standard-library/basic-ios-class.md).
+The (protected) constructor does nothing. A later call to **basic_ios::**[init](../standard-library/basic-ios-class.md#init) must initialize the object before it can be safely destroyed. Thus, the only safe use for class ios_base is as a base class for class template [basic_ios](../standard-library/basic-ios-class.md).
 
 ## <a name="iostate"></a> iostate
 

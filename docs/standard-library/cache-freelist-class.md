@@ -25,7 +25,7 @@ class cache_freelist
 
 ## Remarks
 
-The cache_freelist template class maintains a free list of memory blocks of size *Sz*. When the free list is full it uses **operator delete** to deallocate memory blocks. When the free list is empty it uses **operator new** to allocate new memory blocks. The maximum size of the free list is determined by the class max class passed in the *Max* parameter.
+The cache_freelist class template maintains a free list of memory blocks of size *Sz*. When the free list is full it uses **operator delete** to deallocate memory blocks. When the free list is empty it uses **operator new** to allocate new memory blocks. The maximum size of the free list is determined by the class max class passed in the *Max* parameter.
 
 Each memory block holds *Sz* bytes of usable memory and the data that **operator new** and **operator delete** require.
 

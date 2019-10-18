@@ -7,7 +7,7 @@ ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
 ---
 # numpunct Class
 
-A template class that describes an object that can serve as a local facet to describe the sequences of type `CharType` used to represent information about the formatting and punctuation of numeric and Boolean expressions.
+A class template that describes an object that can serve as a local facet to describe the sequences of type `CharType` used to represent information about the formatting and punctuation of numeric and Boolean expressions.
 
 ## Syntax
 
@@ -340,7 +340,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the punctuation sequences.
+The type describes a specialization of class template [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the punctuation sequences.
 
 ## <a name="thousands_sep"></a>  numpunct::thousands_sep
 

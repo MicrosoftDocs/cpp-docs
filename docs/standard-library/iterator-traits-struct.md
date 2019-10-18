@@ -62,7 +62,7 @@ template <class Ty>
 ptrdiff_t *_Dist_type(const Ty *);
 ```
 
-which determine several of the same types more indirectly. You use these functions as arguments on a function call. Their sole purpose is to supply a useful template class parameter to the called function.
+which determine several of the same types more indirectly. You use these functions as arguments on a function call. Their sole purpose is to supply a useful class template parameter to the called function.
 
 ## Example
 

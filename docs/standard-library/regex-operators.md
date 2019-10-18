@@ -473,11 +473,11 @@ Each template operator converts each of its arguments to a string type and retur
 
 When a template operator converts its arguments to a string type it uses the first of the following transformations that applies:
 
-arguments whose types are a specialization of template class `match_results` or `sub_match` are converted by calling the `str` member function;
+arguments whose types are a specialization of class template `match_results` or `sub_match` are converted by calling the `str` member function;
 
-arguments whose types are a specialization of the template class `basic_string` are unchanged;
+arguments whose types are a specialization of the class template `basic_string` are unchanged;
 
-all other argument types are converted by passing the argument value to the constructor for an appropriate specialization of the template class `basic_string`.
+all other argument types are converted by passing the argument value to the constructor for an appropriate specialization of the class template `basic_string`.
 
 ### Example
 

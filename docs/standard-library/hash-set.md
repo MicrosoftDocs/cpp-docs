@@ -10,7 +10,7 @@ ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
 > [!NOTE]
 > This header is obsolete. The alternative is [<unordered_set>](../standard-library/unordered-set.md).
 
-Defines the container template classes hash_set and hash_multiset and their supporting templates.
+Defines the container class templates hash_set and hash_multiset and their supporting templates.
 
 ## Syntax
 

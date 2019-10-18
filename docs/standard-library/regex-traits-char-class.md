@@ -18,7 +18,7 @@ class regex_traits<char>
 
 ## Remarks
 
-The class is an explicit specialization of template class [regex_traits](../standard-library/regex-traits-class.md) for elements of type **char** (so that it can take advantage of library functions that manipulate objects of this type).
+The class is an explicit specialization of class template [regex_traits](../standard-library/regex-traits-class.md) for elements of type **char** (so that it can take advantage of library functions that manipulate objects of this type).
 
 ## Requirements
 

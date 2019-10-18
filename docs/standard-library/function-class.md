@@ -67,7 +67,7 @@ The allocator function.
 
 ## Remarks
 
-The template class is a call wrapper whose call signature is `Ret(T1, T2, ..., TN)`. You use it to enclose a variety of callable objects in a uniform wrapper.
+The class template is a call wrapper whose call signature is `Ret(T1, T2, ..., TN)`. You use it to enclose a variety of callable objects in a uniform wrapper.
 
 Some member functions take an operand that names the desired target object. You can specify such an operand in several ways:
 

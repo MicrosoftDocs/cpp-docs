@@ -7,7 +7,7 @@ ms.assetid: a3364d54-147d-4796-8728-9e62a2e4c226
 ---
 # &lt;unordered_set&gt;
 
-Defines the container template classes [unordered_multiset](../standard-library/unordered-multiset-class.md) and [unordered_set](../standard-library/unordered-set-class.md) and their supporting templates.
+Defines the container class templates [unordered_multiset](../standard-library/unordered-multiset-class.md) and [unordered_set](../standard-library/unordered-set-class.md) and their supporting templates.
 
 ## Requirements
 

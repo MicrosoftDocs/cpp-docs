@@ -7,7 +7,7 @@ ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
 # basic_string Class
 
-The sequences controlled by an object of template class `basic_string` are the Standard C++ string class and are usually referred to as strings, but they should not be confused with the null-terminated C-style strings used throughout the C++ Standard Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, C++ Standard Library algorithms, and copying and assigning with class allocator managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [basic_string::c_str](#c_str) member.
+The sequences controlled by an object of type `basic_string` are the Standard C++ string class and are usually referred to as strings, but they should not be confused with the null-terminated C-style strings used throughout the C++ Standard Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, C++ Standard Library algorithms, and copying and assigning with class allocator managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [basic_string::c_str](#c_str) member.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ class basic_string;
 ### Parameters
 
 *CharType*\
-The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **char**, [wstring](../standard-library/string-typedefs.md#wstring), for **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **char**, [wstring](../standard-library/string-typedefs.md#wstring), for **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.
 
 *Traits*\
 Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
@@ -776,7 +776,7 @@ A pointer to the C-style version of the invoking string.  The pointer value is n
 
 ### Remarks
 
-Objects of type string belonging to the C++ template class basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string\<char>**.
+Objects of type string belonging to the class template basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string\<char>**.
 
 The returned C-style string should not be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.
 
@@ -1554,7 +1554,7 @@ A pointer to the first element of the array containing the contents of the strin
 
 ### Remarks
 
-Objects of type string belonging to the C++ template class basic_string \<char> are not necessarily null terminated. The return type for `data` is not a valid C-string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string, but has no special meaning in an object of type string and may be a part of the string object just like any other character.
+Objects of type string belonging to the class template basic_string \<char> are not necessarily null terminated. The return type for `data` is not a valid C-string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string, but has no special meaning in an object of type string and may be a part of the string object just like any other character.
 
 There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string \<char>**.
 

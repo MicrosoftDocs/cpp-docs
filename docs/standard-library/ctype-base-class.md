@@ -7,7 +7,7 @@ ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
 ---
 # ctype_base Class
 
-The class serves as a base class for facets of template class [ctype](../standard-library/ctype-class.md). A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.
+The class serves as a base class for facets of class template [ctype](../standard-library/ctype-class.md). A base class for the ctype class that is used to define enumeration types used to classify or test characters either individually or within entire ranges.
 
 ## Syntax
 

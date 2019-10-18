@@ -7,7 +7,7 @@ ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
 ---
 # rts_alloc Class
 
-The rts_alloc template class describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.
+The rts_alloc class template describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ class rts_alloc
 
 ## Remarks
 
-This template class holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.
+this class template holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.
 
 ### Member functions
 

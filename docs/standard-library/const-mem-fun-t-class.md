@@ -34,7 +34,7 @@ An adaptable unary function.
 
 ## Remarks
 
-The template class stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`Pleft`->\* `Pm`)() **const**.
+The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`Pleft`->\* `Pm`)() **const**.
 
 ## Example
 
