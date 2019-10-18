@@ -7,7 +7,7 @@ ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
 ---
 # binder1st Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value. Deprecated in C++11 in favor of [bind](functional-functions.md#bind), and removed in C++17.
+A class template providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value. Deprecated in C++11 in favor of [bind](functional-functions.md#bind), and removed in C++17.
 
 ## Syntax
 
@@ -50,7 +50,7 @@ The unary function object that results from binding the first argument of the bi
 
 ## Remarks
 
-The template class stores a copy of a binary function object *binary_fn* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning `op(value, right)`.
+The class template stores a copy of a binary function object *binary_fn* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning `op(value, right)`.
 
 If *binary_fn* is an object of type `Operation` and `c` is a constant, then `bind1st(binary_fn, c)` is a more convenient equivalent to `binder1st<Operation>(binary_fn, c)`. For more information, see [bind1st](../standard-library/functional-functions.md#bind1st).
 

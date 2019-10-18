@@ -22,7 +22,7 @@ public:
 constexpr complex(const complex<double>& complexNum);
 
 constexpr explicit complex(const complex<long double>& complexNum);
-// rest same as template class complex
+// rest same as class template complex
 };
 ```
 
@@ -43,9 +43,9 @@ A complex number of type **double**.
 
 ## Remarks
 
-The explicit specialization of the template class complex to a complex class of type **double** differs from the template class only in the constructors it defines. The conversion from **float** to **double** is allowed to be implicit, but the conversion from **long double** to **double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
+The explicit specialization of the class template complex to a complex class of type **double** differs from the class template only in the constructors it defines. The conversion from **float** to **double** is allowed to be implicit, but the conversion from **long double** to **double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
 
-For more information on the template class `complex`, see [complex Class](../standard-library/complex-class.md). For a list of members of the template class `complex`, see .
+For more information on the class template `complex`, see [complex Class](../standard-library/complex-class.md). For a list of members of the class template `complex`, see .
 
 ## Example
 

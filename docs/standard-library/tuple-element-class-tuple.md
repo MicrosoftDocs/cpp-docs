@@ -68,11 +68,11 @@ The type of the second element in a pair.
 
 ## Remarks
 
-The template class `tuple_element` has a nested typedef `type` that is a synonym for the type at index *Index* of the tuple type *Tuple*.
+The class template `tuple_element` has a nested typedef `type` that is a synonym for the type at index *Index* of the tuple type *Tuple*.
 
 The typedef `tuple_element_t` is a convenient alias for `tuple_element<Index, Tuple>::type`.
 
-The template class specialization for arrays provides an interface to an `array` as a tuple of `Size` elements, each of which has the same type. Each specialization has a nested typedef `type` that is a synonym for the type of the *Index* element of the `array`, with any const-volatile qualifications preserved.
+The class template specialization for arrays provides an interface to an `array` as a tuple of `Size` elements, each of which has the same type. Each specialization has a nested typedef `type` that is a synonym for the type of the *Index* element of the `array`, with any const-volatile qualifications preserved.
 
 The template specializations for `pair` types each provide a single member typedef, `type`, which is a synonym for the type of the element at the specified position in the pair, with any const and/or volatile qualifications preserved. The typedef `tuple_element_t` is a convenient alias for `tuple_element<N, pair<T1, T2>>::type`.
 

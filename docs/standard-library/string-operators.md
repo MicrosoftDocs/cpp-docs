@@ -93,7 +93,7 @@ The string that is the concatenation of the input strings.
 
 ### Remarks
 
-The functions each overload `operator+` to concatenate two objects of template class [basic_string Class](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
+The functions each overload `operator+` to concatenate two objects of class template [basic_string Class](../standard-library/basic-string-class.md). All effectively return `basic_string< CharType, Traits, Allocator>(Left).append(right)`. For more information, see [append](../standard-library/basic-string-class.md#append).
 
 ### Example
 
@@ -553,7 +553,7 @@ Writes the value of the specified string to the output stream *_Ostr*.
 
 ### Remarks
 
-The template function overloads **operator<<** to insert an object *str* of template class [basic_string](../standard-library/basic-string-class.md) into the stream *\_Ostr*. The function effectively returns `_Ostr.write( str.c_str, str.size )`.
+The template function overloads **operator<<** to insert an object *str* of class template [basic_string](../standard-library/basic-string-class.md) into the stream *\_Ostr*. The function effectively returns `_Ostr.write( str.c_str, str.size )`.
 
 ## <a name="op_gt"></a>  operator&gt;
 

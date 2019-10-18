@@ -20,7 +20,7 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="wostream"></a>  wostream
 
@@ -32,7 +32,7 @@ typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## See also
 

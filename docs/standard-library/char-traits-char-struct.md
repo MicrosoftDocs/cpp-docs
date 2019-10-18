@@ -22,4 +22,4 @@ Specialization allows the struct to take advantage of library functions that man
 
 ## Example
 
-See the typedefs and member functions of the template class [char_traits Class](../standard-library/char-traits-struct.md)
+See the typedefs and member functions of the class template [char_traits Class](../standard-library/char-traits-struct.md)

@@ -47,7 +47,7 @@ The integer result type, defaults to **int**. For possible types, see [\<random>
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type with a Poisson distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type with a Poisson distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

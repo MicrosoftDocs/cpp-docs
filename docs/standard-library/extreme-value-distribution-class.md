@@ -51,7 +51,7 @@ The random number generator engine. For possible types, see [\<random>](../stand
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified floating-point type, or type **double** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified floating-point type, or type **double** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

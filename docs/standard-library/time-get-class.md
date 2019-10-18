@@ -7,7 +7,7 @@ ms.assetid: 869d5f5b-dbab-4628-8333-bdea7e272023
 ---
 # time_get Class
 
-The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to time values.
+The class template describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to time values.
 
 ## Syntax
 

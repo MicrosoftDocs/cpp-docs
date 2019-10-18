@@ -26,9 +26,9 @@ Traits class for elements.
 
 ## Remarks
 
-The template class describes an object that holds a regular expression. Objects of this template class can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this template class, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **char**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **wchar_t**.
+The class template describes an object that holds a regular expression. Objects of this class template can be passed to the template functions [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search), and [regex_replace](../standard-library/regex-functions.md#regex_replace), along with suitable text string arguments, to search for text that matches the regular expression. There are two specializations of this class template, with the type definitions [regex](../standard-library/regex-typedefs.md#regex) for elements of type **char**, and [wregex](../standard-library/regex-typedefs.md#wregex) for elements of type **wchar_t**.
 
-The template argument *RXtraits* describes various important properties of the syntax of the regular expressions that the template class supports. A class that specifies these regular expression traits must have the same external interface as an object of template class [regex_traits Class](../standard-library/regex-traits-class.md).
+The template argument *RXtraits* describes various important properties of the syntax of the regular expressions that the class template supports. A class that specifies these regular expression traits must have the same external interface as an object of type [regex_traits Class](../standard-library/regex-traits-class.md).
 
 Some functions take an operand sequence that defines a regular expression. You can specify such an operand sequence several ways:
 

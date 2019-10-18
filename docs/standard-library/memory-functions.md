@@ -346,7 +346,7 @@ The type of elements in the array to be deleted.
 
 ### Remarks
 
-The template class describes a deleter that deletes scalar objects allocated with **operator new**, suitable for use with template class `unique_ptr`. It also has the explicit specialization `default_delete<T[]>`.
+The class template describes a deleter that deletes scalar objects allocated with **operator new**, suitable for use with class template `unique_ptr`. It also has the explicit specialization `default_delete<T[]>`.
 
 ## <a name="destroy_at"></a> destroy_at
 
@@ -814,7 +814,7 @@ A shared or weak pointer.
 
 ### Remarks
 
-The template classes define all their member operators as returning `left.owner_before(right)`.
+The class templates define all their member operators as returning `left.owner_before(right)`.
 
 ## <a name="reinterpret_pointer_cast"></a> reinterpret_pointer_cast
 

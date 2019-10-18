@@ -6,7 +6,7 @@ ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
 ---
 # &lt;atomic&gt;
 
-Defines classes and template classes to use to create types that support atomic operations.
+Defines classes and class templates to use to create types that support atomic operations.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ On some platforms, it might not be possible to efficiently implement atomic oper
 
 The class [atomic_flag](../standard-library/atomic-flag-structure.md) provides a minimal atomic type that holds a **bool** flag. Its operations are always lock-free.
 
-The template class `atomic<T>` stores an object of its argument type `T` and provides atomic access to that stored value. You can instantiate it by using any type that can be copied by using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) and tested for equality by using [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md). In particular, you can use it with user-defined types that meet these requirements and, in many cases, with floating-point types.
+The class template `atomic<T>` stores an object of its argument type `T` and provides atomic access to that stored value. You can instantiate it by using any type that can be copied by using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) and tested for equality by using [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md). In particular, you can use it with user-defined types that meet these requirements and, in many cases, with floating-point types.
 
 The template also has a set of specializations for integral types and a partial specialization for pointers. These specializations provide additional operations that are not available through the primary template.
 

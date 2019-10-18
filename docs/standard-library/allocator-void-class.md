@@ -7,7 +7,7 @@ ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
 ---
 # allocator&lt;void&gt; Class
 
-A specialization of the template class allocator to type **void**, defining the types that make sense in this context.
+A specialization of the class template allocator to type **void**, defining the types that make sense in this context.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ class allocator<void> {
 
 ## Remarks
 
-The class explicitly specializes template class [allocator](../standard-library/allocator-class.md) for type **void**. Its constructors and assignment operator behave the same as for the template class, but it defines only the following types:
+The class explicitly specializes class template [allocator](../standard-library/allocator-class.md) for type **void**. Its constructors and assignment operator behave the same as for the class template, but it defines only the following types:
 
 - [const_pointer](../standard-library/allocator-class.md#const_pointer).
 
@@ -40,4 +40,4 @@ The class explicitly specializes template class [allocator](../standard-library/
 
 - [value_type](../standard-library/allocator-class.md#value_type).
 
-- [rebind](../standard-library/allocator-class.md#rebind), a nested template class.
+- [rebind](../standard-library/allocator-class.md#rebind), a nested class template.

@@ -6,7 +6,7 @@ ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
 ---
 # &lt;future&gt;
 
-Include the standard header \<future> to define template classes and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.
+Include the standard header \<future> to define class templates and supporting templates that simplify running a function—possibly in a separate thread—and retrieving its result. The result is either the value that is returned by the function or an exception that is emitted by the function but is not caught in the function.
 
 This header uses Concurrency Runtime (ConcRT) so that you can use it together with other ConcRT mechanisms. For more information about ConcRT, see [Concurrency Runtime](../parallel/concrt/concurrency-runtime.md).
 
@@ -29,11 +29,11 @@ An asynchronous provider or an asynchronous return object that has no associated
 
 An associated asynchronous state is *ready* only if its asynchronous provider has stored a return value or stored an exception.
 
-The template function `async` and the template classes `promise` and `packaged_task` are asynchronous providers. The template classes `future` and `shared_future` describe asynchronous return objects.
+The template function `async` and the class templates `promise` and `packaged_task` are asynchronous providers. The class templates `future` and `shared_future` describe asynchronous return objects.
 
-Each of the template classes `promise`, `future`, and `shared_future` has a specialization for the type **void** and a partial specialization for storing and retrieving a value by reference. These specializations differ from the primary template only in the signatures and semantics of the functions that store and retrieve the returned value.
+Each of the class templates `promise`, `future`, and `shared_future` has a specialization for the type **void** and a partial specialization for storing and retrieving a value by reference. These specializations differ from the primary template only in the signatures and semantics of the functions that store and retrieve the returned value.
 
-The template classes `future` and `shared_future` never block in their destructors, except in one case that's preserved for backward compatibility: Unlike all other futures, for a `future`—or the last `shared_future`—that's attached to a task started with `std::async`, the destructor blocks if the task has not completed; that is, it blocks if this thread did not yet call `.get()` or `.wait()` and the task is still running. The following usability note has been added to the description of `std::async` in the draft standard: "[Note: If a future obtained from std::async is moved outside the local scope, other code that uses the future must be aware that the future’s destructor may block for the shared state to become ready.—end note]" In all other cases, `future` and `shared_future` destructors are required and are guaranteed to never block.
+The class templates `future` and `shared_future` never block in their destructors, except in one case that's preserved for backward compatibility: Unlike all other futures, for a `future`—or the last `shared_future`—that's attached to a task started with `std::async`, the destructor blocks if the task has not completed; that is, it blocks if this thread did not yet call `.get()` or `.wait()` and the task is still running. The following usability note has been added to the description of `std::async` in the draft standard: "[Note: If a future obtained from std::async is moved outside the local scope, other code that uses the future must be aware that the future’s destructor may block for the shared state to become ready.—end note]" In all other cases, `future` and `shared_future` destructors are required and are guaranteed to never block.
 
 ## Members
 
