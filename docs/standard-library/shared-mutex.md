@@ -121,7 +121,7 @@ public:
 
 ###  <a name="class_shared_lock"></a> shared_lock Class
 
-class template `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
+Class template `shared_lock` controls the shared ownership of a shared mutex object within a scope. The template parameter must be a shared mutex type.
 
 ```cpp
 class shared_lock {

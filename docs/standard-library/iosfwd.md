@@ -54,7 +54,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 };
 ```
 
-## Forward Declarations / Class Templates
+## Forward declarations and class templates
 
 ```cpp
 template <class _Statetype>

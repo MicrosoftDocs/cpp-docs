@@ -24,7 +24,7 @@ class rts_alloc
 
 ## Remarks
 
-this class template holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.
+This class template holds multiple block allocator instances and determines which instance to use for allocation or deallocation at runtime instead of at compile time. It is used with compilers that cannot compile rebind.
 
 ### Member functions
 
