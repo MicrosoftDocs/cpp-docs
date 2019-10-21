@@ -62,7 +62,7 @@ For more information about engine members, see [\<random>](../standard-library/r
 
 ## Remarks
 
-The `linear_congruential_engine` template class is the simplest generator engine, but not the fastest or highest quality. An improvement over this engine is the [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Neither of these engines is as fast or with as high quality results as the [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
+The `linear_congruential_engine` class template is the simplest generator engine, but not the fastest or highest quality. An improvement over this engine is the [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Neither of these engines is as fast or with as high quality results as the [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 
 This engine produces values of a user-specified unsigned integral type using the recurrence relation ( *period*) `x(i) = (A * x(i-1) + C) mod M`.
 

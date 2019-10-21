@@ -7,7 +7,7 @@ ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
 ---
 # num_get Class
 
-A template class that describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to numeric values.
+A class template that describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to numeric values.
 
 ## Syntax
 

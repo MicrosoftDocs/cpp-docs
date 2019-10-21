@@ -7,7 +7,7 @@ ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
 ---
 # &lt;stack&gt;
 
-Defines the template class stack and two supporting templates.
+Defines the class template stack and two supporting templates.
 
 ## Requirements
 

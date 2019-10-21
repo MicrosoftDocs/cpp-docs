@@ -38,7 +38,7 @@ class allocator_base
 |[difference_type](#difference_type)|A signed integral type that can represent the difference between values of pointers to the type of object managed by the allocator.|
 |[pointer](#pointer)|A type that provides a pointer to the type of object managed by the allocator.|
 |[reference](#reference)|A type that provides a reference to the type of object managed by the allocator.|
-|[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of template class `allocator_base` can allocate.|
+|[size_type](#size_type)|An unsigned integral type that can represent the length of any sequence that an object of type `allocator_base` can allocate.|
 |[value_type](#value_type)|A type that is managed by the allocator.|
 
 ### Member functions
@@ -285,7 +285,7 @@ typedef Type& reference;
 
 ## <a name="size_type"></a>  allocator_base::size_type
 
-An unsigned integral type that can represent the length of any sequence that an object of template class `allocator_base` can allocate.
+An unsigned integral type that can represent the length of any sequence that an object of type `allocator_base` can allocate.
 
 ```cpp
 typedef std::size_t size_type;

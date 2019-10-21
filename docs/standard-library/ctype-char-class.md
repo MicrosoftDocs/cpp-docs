@@ -7,7 +7,7 @@ ms.assetid: ee30acb4-a743-405e-b3d4-13602092da84
 ---
 # ctype&lt;char&gt; Class
 
-The class is an explicit specialization of template class `ctype\<CharType>` to type **char**, describing an object that can serve as a locale facet to characterize various properties of a character of type **char**.
+The class is an explicit specialization of class template `ctype\<CharType>` to type **char**, describing an object that can serve as a locale facet to characterize various properties of a character of type **char**.
 
 ## Syntax
 
@@ -97,7 +97,7 @@ protected:
 
 ## Remarks
 
-The explicit specialization differs from the template class in several ways:
+The explicit specialization differs from the class template in several ways:
 
 - An object of class ctype< `char`> stores a pointer to the first element of a ctype mask table, an array of UCHAR_MAX + 1 elements of type `ctype_base::mask`. It also stores a Boolean object that indicates whether the array should be deleted (using `operator delete[]`) when the ctype\< **Elem**> object is destroyed.
 

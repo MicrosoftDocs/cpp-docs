@@ -27,7 +27,7 @@ An object of type `forward_list`.
 
 ### Remarks
 
-This template function overloads `operator==` to compare two objects of template class `forward_list`. The function returns `distance(left.begin(), end()) == distance(right.begin(),right.end()) && equal(left. begin(),left. end(),right.begin())`.
+This template function overloads `operator==` to compare two objects of class template `forward_list`. The function returns `distance(left.begin(), end()) == distance(right.begin(),right.end()) && equal(left. begin(),left. end(),right.begin())`.
 
 ## <a name="op_neq"></a> operator!=
 
@@ -79,7 +79,7 @@ An object of type `forward_list`.
 
 ### Remarks
 
-This template function overloads `operator<` to compare two objects of template class `forward_list`. The function returns `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())`.
+This template function overloads `operator<` to compare two objects of class template `forward_list`. The function returns `lexicographical_compare(lhs. begin(), lhs. end(), rhs.begin(), rhs.end())`.
 
 ## <a name="op_lt_eq"></a> operator&lt;=
 

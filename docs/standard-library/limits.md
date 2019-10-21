@@ -7,7 +7,7 @@ ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 ---
 # &lt;limits&gt;
 
-Defines the template class `numeric_limits` and two enumerations concerning floating-point representations and rounding.
+Defines the class template `numeric_limits` and two enumerations concerning floating-point representations and rounding.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ Explicit specializations of the `numeric_limits` class describe many properties 
 
 |||
 |-|-|
-|[numeric_limits Class](../standard-library/numeric-limits-class.md)|The template class describes arithmetic properties of built-in numerical types.|
+|[numeric_limits Class](../standard-library/numeric-limits-class.md)|The class template describes arithmetic properties of built-in numerical types.|
 
 ## See also
 

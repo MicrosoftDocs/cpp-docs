@@ -7,7 +7,7 @@ ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
 ---
 # time_put_byname Class
 
-The derived template class describes an object that can serve as a locale facet of type `time_put`\< CharType, OutputIterator >.
+The derived class template describes an object that can serve as a locale facet of type `time_put`\< CharType, OutputIterator >.
 
 ## Syntax
 

@@ -7,7 +7,7 @@ ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---
 # &lt;string&gt;
 
-Defines the container template class `basic_string` and various supporting templates.
+Defines the container class template `basic_string` and various supporting templates.
 
 For more information about `basic_string`, see [basic_string Class](../standard-library/basic-string-class.md)
 
@@ -23,16 +23,16 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 - Null-terminated character arrays often referred to as C strings.
 
-- Template class objects, of type `basic_string`, that handle all **char**-like template arguments.
+- class template objects, of type `basic_string`, that handle all **char**-like template arguments.
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the template class `basic_string` with elements of type **char** as a `string`.|
-|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the template class `basic_string` with elements of type **wchar_t** as a `wstring`.|
-|[u16string](../standard-library/string-typedefs.md#u16string)|A type that describes a specialization of the template class `basic_string` based on elements of type `char16_t`.|
-|[u32string](../standard-library/string-typedefs.md#u32string)|A type that describes a specialization of the template class `basic_string` based on elements of type `char32_t`.|
+|[string](../standard-library/string-typedefs.md#string)|A type that describes a specialization of the class template `basic_string` with elements of type **char** as a `string`.|
+|[wstring](../standard-library/string-typedefs.md#wstring)|A type that describes a specialization of the class template `basic_string` with elements of type **wchar_t** as a `wstring`.|
+|[u16string](../standard-library/string-typedefs.md#u16string)|A type that describes a specialization of the class template `basic_string` based on elements of type `char16_t`.|
+|[u32string](../standard-library/string-typedefs.md#u32string)|A type that describes a specialization of the class template `basic_string` based on elements of type `char32_t`.|
 
 ### Operators
 
@@ -74,8 +74,8 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 |Class|Description|
 |-|-|
-|[basic_string Class](../standard-library/basic-string-class.md)|A template class that describes objects that can store a sequence of arbitrary character-like objects.|
-|[char_traits Struct](../standard-library/char-traits-struct.md)|A template class that describes attributes associated with a character of type CharType|
+|[basic_string Class](../standard-library/basic-string-class.md)|A class template that describes objects that can store a sequence of arbitrary character-like objects.|
+|[char_traits Struct](../standard-library/char-traits-struct.md)|A class template that describes attributes associated with a character of type CharType|
 
 ### Specializations
 

@@ -32,9 +32,9 @@ The value of the constant.
 
 ## Remarks
 
-The `integral_constant` template class, when specialized with an integral type *T* and a value *v* of that type, represents an object that holds a constant of that integral type with the specified value. The member named `type` is an alias for the generated template specialization type, and the `value` member holds the value *v* used to create the specialization.
+The `integral_constant` class template, when specialized with an integral type *T* and a value *v* of that type, represents an object that holds a constant of that integral type with the specified value. The member named `type` is an alias for the generated template specialization type, and the `value` member holds the value *v* used to create the specialization.
 
-The `bool_constant` template class is an explicit partial specialization of `integral_constant` that uses **bool** as the *T* argument.
+The `bool_constant` class template is an explicit partial specialization of `integral_constant` that uses **bool** as the *T* argument.
 
 ## Example
 

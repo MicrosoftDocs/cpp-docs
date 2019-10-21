@@ -1,7 +1,7 @@
 ---
 title: "C++ Standard Library Containers"
 ms.date: "11/04/2016"
-helpviewer_keywords: ["C++ Standard Library, template class containers", "containers, C++ Standard Library"]
+helpviewer_keywords: ["C++ Standard Library, class template containers", "containers, C++ Standard Library"]
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
 ---
 # C++ Standard Library Containers

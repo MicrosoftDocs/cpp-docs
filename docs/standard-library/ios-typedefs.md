@@ -16,7 +16,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="streamoff"></a> streamoff
 
@@ -115,7 +115,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## <a name="wstreampos"></a> wstreampos
 

@@ -7,7 +7,7 @@ ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
 ---
 # &lt;valarray&gt;
 
-Defines the template class valarray and numerous supporting template classes and functions.
+Defines the class template valarray and numerous supporting class templates and functions.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Defines the template class valarray and numerous supporting template classes and
 
 ## Remarks
 
-These template classes and functions are permitted unusual latitude in the interest of improved performance. Specifically, any function returning type `valarray<T1>` may return an object of some other type T2. In that case, any function that accepts one or more arguments of type `valarray<T2>` must have overloads that accept arbitrary combinations of those arguments, each replaced with an argument of type T2.
+These class templates and functions are permitted unusual latitude in the interest of improved performance. Specifically, any function returning type `valarray<T1>` may return an object of some other type T2. In that case, any function that accepts one or more arguments of type `valarray<T2>` must have overloads that accept arbitrary combinations of those arguments, each replaced with an argument of type T2.
 
 ## Members
 
@@ -76,18 +76,18 @@ These template classes and functions are permitted unusual latitude in the inter
 |||
 |-|-|
 |[gslice Class](../standard-library/gslice-class.md)|A utility class to valarray that is used to define multi-dimensional slices of a valarray.|
-|[gslice_array Class](../standard-library/gslice-array-class.md)|An internal, auxiliary template class that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.|
-|[indirect_array Class](../standard-library/indirect-array-class.md)|An internal, auxiliary template class that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.|
-|[mask_array Class](../standard-library/mask-array-class.md)|An internal, auxiliary template class that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.|
+|[gslice_array Class](../standard-library/gslice-array-class.md)|An internal, auxiliary class template that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.|
+|[indirect_array Class](../standard-library/indirect-array-class.md)|An internal, auxiliary class template that supports objects that are subsets of valarrays by providing operations between subset arrays defined by specifying a subset of indices of a parent valarray.|
+|[mask_array Class](../standard-library/mask-array-class.md)|An internal, auxiliary class template that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.|
 |[slice Class](../standard-library/slice-class.md)|A utility class to valarray that is used to define one-dimensional, vector-like subsets of a valarray.|
-|[slice_array Class](../standard-library/slice-array-class.md)|An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.|
-|[valarray Class](../standard-library/valarray-class.md)|The template class describes an object that controls a sequence of elements of type `Type` that are stored as an array and designed for performing high-speed mathematical operations, optimized for computational performance.|
+|[slice_array Class](../standard-library/slice-array-class.md)|An internal, auxiliary class template that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.|
+|[valarray Class](../standard-library/valarray-class.md)|The class template describes an object that controls a sequence of elements of type `Type` that are stored as an array and designed for performing high-speed mathematical operations, optimized for computational performance.|
 
 ### Specializations
 
 |||
 |-|-|
-|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the template class valarray\<**Type**> to elements of type **bool**.|
+|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the class template valarray\<**Type**> to elements of type **bool**.|
 
 ## See also
 

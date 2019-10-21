@@ -7,7 +7,7 @@ ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
 ---
 # unordered_set Class
 
-The template class describes an object that controls a varying-length sequence of elements of type `const Key`. The sequence is weakly ordered by a hash function, which partitions the sequence into an ordered set of subsequences called buckets. Within each bucket a comparison function determines whether any pair of elements has equivalent ordering. Each element serves as both a sort key and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that can be independent of the number of elements in the sequence (constant time), at least when all buckets are of roughly equal length. In the worst case, when all of the elements are in one bucket, the number of operations is proportional to the number of elements in the sequence (linear time). Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
+The class template describes an object that controls a varying-length sequence of elements of type `const Key`. The sequence is weakly ordered by a hash function, which partitions the sequence into an ordered set of subsequences called buckets. Within each bucket a comparison function determines whether any pair of elements has equivalent ordering. Each element serves as both a sort key and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that can be independent of the number of elements in the sequence (constant time), at least when all buckets are of roughly equal length. In the worst case, when all of the elements are in one bucket, the number of operations is proportional to the number of elements in the sequence (linear time). Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
 
 ## Syntax
 
@@ -96,13 +96,13 @@ The allocator class.
 
 ## Remarks
 
-The object orders the sequence it controls by calling two stored objects, a comparison function object of type[unordered_set::key_equal](#key_equal) and a hash function object of type[unordered_set::hasher](#hasher). You access the first stored object by calling the member function[unordered_set::key_eq](#key_eq)`()`; and you access the second stored object by calling the member function[unordered_set::hash_function](#hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike template class[unordered_multiset Class](../standard-library/unordered-multiset-class.md), an object of template class `unordered_set` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)
+The object orders the sequence it controls by calling two stored objects, a comparison function object of type [unordered_set::key_equal](#key_equal) and a hash function object of type [unordered_set::hasher](#hasher). You access the first stored object by calling the member function [unordered_set::key_eq](#key_eq)`()`; and you access the second stored object by calling the member function [unordered_set::hash_function](#hash)`()`. Specifically, for all values `X` and `Y` of type `Key`, the call `key_eq()(X, Y)` returns true only if the two argument values have equivalent ordering; the call `hash_function()(keyval)` yields a distribution of values of type `size_t`. Unlike class template [unordered_multiset Class](../standard-library/unordered-multiset-class.md), an object of type `unordered_set` ensures that `key_eq()(X, Y)` is always false for any two elements of the controlled sequence. (Keys are unique.)
 
-The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes[unordered_set::load_factor](#load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.
+The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes [unordered_set::load_factor](#load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.
 
 The actual order of elements in the controlled sequence depends on the hash function, the comparison function, the order of insertion, the maximum load factor, and the current number of buckets. You cannot in general predict the order of elements in the controlled sequence. You can always be assured, however, that any subset of elements that have equivalent ordering are adjacent in the controlled sequence.
 
-The object allocates and frees storage for the sequence it controls through a stored allocator object of type[unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of template class `allocator`. Note that the stored allocator object is not copied when the container object is assigned.
+The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of type `allocator`. Note that the stored allocator object is not copied when the container object is assigned.
 
 ## <a name="allocator_type"></a>  unordered_set::allocator_type
 
@@ -432,7 +432,7 @@ A **const** forward-access iterator that points at the first element of the rang
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the[auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -458,7 +458,7 @@ A **const** forward-access iterator that points just beyond the end of the range
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the[auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -480,7 +480,7 @@ void clear();
 
 ### Remarks
 
-The member function calls[unordered_set::erase](#erase)`(` [unordered_set::begin](#begin)`(),` [unordered_set::end](#end)`())`.
+The member function calls [unordered_set::erase](#erase)`(` [unordered_set::begin](#begin)`(),` [unordered_set::end](#end)`())`.
 
 ### Example
 
@@ -728,7 +728,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function returns the number of elements in the range delimited by[unordered_set::equal_range](#equal_range)`(keyval)`.
+The member function returns the number of elements in the range delimited by [unordered_set::equal_range](#equal_range)`(keyval)`.
 
 ### Example
 
@@ -851,7 +851,7 @@ No iterators or references are invalidated by this function.
 
 During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.
 
-For a code example, see[set::emplace](../standard-library/set-class.md#emplace).
+For a code example, see [set::emplace](../standard-library/set-class.md#emplace).
 
 ## <a name="emplace_hint"></a> emplace_hint
 
@@ -884,7 +884,7 @@ No iterators or references are invalidated by this function.
 
 During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.
 
-For a code example, see[set::emplace_hint](../standard-library/set-class.md#emplace_hint).
+For a code example, see [set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
 ## <a name="empty"></a> empty
 
@@ -1120,7 +1120,7 @@ For the third member function, returns the number of elements that have been rem
 
 ### Remarks
 
-For a code example, see[set::erase](../standard-library/set-class.md#erase).
+For a code example, see [set::erase](../standard-library/set-class.md#erase).
 
 ## <a name="find"></a> find
 
@@ -1137,7 +1137,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function returns[unordered_set::equal_range](#equal_range)`(keyval).first`.
+The member function returns [unordered_set::equal_range](#equal_range)`(keyval).first`.
 
 ### Example
 
@@ -1331,7 +1331,7 @@ The value of an element to be inserted into the unordered_set unless it already 
 The place to start searching for the correct point of insertion.
 
 *ValTy*\
-Template parameter that specifies the argument type that the unordered_set can use to construct an element of[value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+Template parameter that specifies the argument type that the unordered_set can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
 
 *First*\
 The position of the first element to be copied.
@@ -1340,14 +1340,14 @@ The position of the first element to be copied.
 The position just beyond the last element to be copied.
 
 *InputIterator*\
-Template function argument that meets the requirements of an[input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct[value_type](../standard-library/map-class.md#value_type) objects.
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
 
 *IList*\
-The[initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
-The single-element member functions, (1) and (2), return a[pair](../standard-library/pair-structure.md) whose **bool** component is true if an insertion was made, and false if the unordered_set already contained an element whose key had an equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **bool** component is true, or to the existing element if the **bool** component is false.
+The single-element member functions, (1) and (2), return a [pair](../standard-library/pair-structure.md) whose **bool** component is true if an insertion was made, and false if the unordered_set already contained an element whose key had an equivalent value in the ordering. The iterator component of the return-value pair points to the newly inserted element if the **bool** component is true, or to the existing element if the **bool** component is false.
 
 The single-element-with-hint member functions, (3) and (4), return an iterator that points to the position where the new element was inserted into the unordered_set or, if an element with an equivalent key already exists, to the existing element.
 
@@ -1359,19 +1359,19 @@ During the insertion of just one element, if an exception is thrown but does not
 
 To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use`*pr.first`, giving you an element. To access the **bool** component, use `pr.second`. For an example, see the sample code later in this article.
 
-The[value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `unordered_set<V>::value_type` is type `const V`.
+The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `unordered_set<V>::value_type` is type `const V`.
 
 The range member function (5) inserts the sequence of element values into an unordered_set that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `s.insert(v.begin(), v.end());` attempts to insert all elements of `v` into `s`. Only elements that have unique values in the range are inserted; duplicates are ignored. To observe which elements are rejected, use the single-element versions of `insert`.
 
-The initializer list member function (6) uses an[initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_set.
+The initializer list member function (6) uses an [initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_set.
 
-For insertion of an element constructed in place—that is, no copy or move operations are performed—see[set::emplace](../standard-library/set-class.md#emplace) and[set::emplace_hint](../standard-library/set-class.md#emplace_hint).
+For insertion of an element constructed in place—that is, no copy or move operations are performed—see [set::emplace](../standard-library/set-class.md#emplace) and [set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-For a code example, see[set::insert](../standard-library/set-class.md#insert).
+For a code example, see [set::insert](../standard-library/set-class.md#insert).
 
 ## <a name="iterator"></a> iterator
 
-A type that provides a constant[forward iterator](../standard-library/forward-iterator-tag-struct.md) that can read elements in an unordered_set.
+A type that provides a constant [forward iterator](../standard-library/forward-iterator-tag-struct.md) that can read elements in an unordered_set.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -1379,7 +1379,7 @@ typedef implementation-defined iterator;
 
 ### Example
 
-See the example for[begin](../standard-library/set-class.md#begin) for an example of how to declare and use an**iterator**.
+See the example for [begin](../standard-library/set-class.md#begin) for an example of how to declare and use an**iterator**.
 
 ## <a name="key_eq"></a> key_eq
 
@@ -1870,7 +1870,7 @@ unordered_set& operator=(unordered_set&& right);
 ### Parameters
 
 *right*\
-The[unordered_set](../standard-library/unordered-set-class.md) being copied into the `unordered_set`.
+The [unordered_set](../standard-library/unordered-set-class.md) being copied into the `unordered_set`.
 
 ### Remarks
 

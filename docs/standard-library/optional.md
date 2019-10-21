@@ -6,7 +6,7 @@ helpviewer_keywords: ["<optional>"]
 ---
 # &lt;optional&gt;
 
-Defines the container template class `optional` and several supporting templates.
+Defines the container class template `optional` and several supporting templates.
 
 ## Requirements
 
