@@ -6,7 +6,7 @@ ms.assetid: 545aecf1-3561-4859-8b34-603c079fe1b3
 ---
 # pointer_traits Struct
 
-Supplies information that is needed by an object of template class `allocator_traits` to describe an allocator with pointer type `Ptr`.
+Supplies information that is needed by an object of type `allocator_traits` to describe an allocator with pointer type `Ptr`.
 
 ## Syntax
 

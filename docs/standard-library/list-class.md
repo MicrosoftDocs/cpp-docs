@@ -7,7 +7,7 @@ ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
 ---
 # list Class
 
-The C++ Standard Library list class is a template class of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence. The sequence is stored as a bidirectional linked list of elements, each containing a member of some type *Type*.
+The C++ Standard Library list class is a class template of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence. The sequence is stored as a bidirectional linked list of elements, each containing a member of some type *Type*.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ The list member functions [merge](#merge), [reverse](#reverse), [unique](#unique
 
 List reallocation occurs when a member function must insert or erase elements of the list. In all such cases, only iterators or references that point at erased portions of the controlled sequence become invalid.
 
-Include the C++ Standard Library standard header \<list> to define the [container](../standard-library/stl-containers.md) template class list and several supporting templates.
+Include the C++ Standard Library standard header \<list> to define the [container](../standard-library/stl-containers.md) class template list and several supporting templates.
 
 ## Members
 

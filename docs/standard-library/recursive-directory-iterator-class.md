@@ -18,7 +18,7 @@ class recursive_directory_iterator;
 
 ## Remarks
 
-The template class stores:
+The class template stores:
 
 1. an object of type `stack<pair<directory_iterator, path>>`, called `mystack` here for the purposes of exposition, which represents the nest of directories to be sequenced
 

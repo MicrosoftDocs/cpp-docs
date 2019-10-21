@@ -29,7 +29,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 |||
 |-|-|
-|[common_type Structure](../standard-library/common-type-structure.md)|Describes specializations of template class [common_type](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
+|[common_type Structure](../standard-library/common-type-structure.md)|Describes specializations of class template [common_type](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
 |[duration_values Structure](../standard-library/duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
 |[high_resolution_clock struct](../standard-library/high-resolution-clock-struct.md)||
 |[steady_clock struct](../standard-library/steady-clock-struct.md)|Represents a `steady` clock.|

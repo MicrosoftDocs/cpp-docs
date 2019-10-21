@@ -7,7 +7,7 @@ ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
 ---
 # reverse_iterator Class
 
-The template class is an iterator adaptor that describes a reverse iterator object that behaves like a random-access or bidirectional iterator, only in reverse. It enables the backward traversal of a range.
+The class template is an iterator adaptor that describes a reverse iterator object that behaves like a random-access or bidirectional iterator, only in reverse. It enables the backward traversal of a range.
 
 ## Syntax
 

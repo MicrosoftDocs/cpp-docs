@@ -7,7 +7,7 @@ ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
 ---
 # mask_array Class
 
-An internal, auxiliary template class that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.
+An internal, auxiliary class template that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.
 
 ## Syntax
 

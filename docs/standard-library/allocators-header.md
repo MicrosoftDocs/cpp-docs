@@ -25,7 +25,7 @@ The node-based containers in the C++ Standard Library (std::list, std::set, std:
 
 When used with containers that are not node-based (such as the C++ Standard Library containers std::vector std::deque, and std::basic_string), the alllocator templates will work correctly, but are not likely to provide any performance improvement over the default allocator.
 
-An allocator is a template class that describes an object that manages storage allocation and freeing for objects and arrays of objects of a designated type. Allocator objects are used by several container template classes in the C++ Standard Library.
+An allocator is a class template that describes an object that manages storage allocation and freeing for objects and arrays of objects of a designated type. Allocator objects are used by several container class templates in the C++ Standard Library.
 
 The allocators are all templates of this type:
 
@@ -34,7 +34,7 @@ template<class Type>
 class allocator;
 ```
 
-where the template argument `Type` is the type managed by the allocator instance. The C++ Standard Library provides a default allocator, template class [allocator](../standard-library/allocator-class.md), which is defined in [\<memory>](../standard-library/memory.md). The \<allocators> header provides the following allocators:
+where the template argument `Type` is the type managed by the allocator instance. The C++ Standard Library provides a default allocator, class template [allocator](../standard-library/allocator-class.md), which is defined in [\<memory>](../standard-library/memory.md). The \<allocators> header provides the following allocators:
 
 - [allocator_newdel](../standard-library/allocator-newdel-class.md)
 
@@ -69,7 +69,7 @@ std::list<int, alloc<int> > _List1;
 
 _Lst1 allocates nodes with `allocator_chunklist` and the [sync_per_thread](../standard-library/sync-per-thread-class.md) synchronization filter.
 
-A block allocator is a cache or a filter. A cache is a template class that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **new**, but it need not make a separate call to operator **new** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
+A block allocator is a cache or a filter. A cache is a class template that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **new**, but it need not make a separate call to operator **new** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
 
 With a compiler that cannot compile rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.
 
@@ -113,7 +113,7 @@ The cache template `cache_freelist` takes a max class argument which determines 
 
 |Macro|Description|
 |-|-|
-|[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)|Yields an allocator template class.|
+|[ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)|Yields an allocator class template.|
 |[CACHE_CHUNKLIST](../standard-library/allocators-functions.md#cache_chunklist)|Yields `stdext::allocators::cache_chunklist<sizeof(Type)>`.|
 |[CACHE_FREELIST](../standard-library/allocators-functions.md#cache_freelist)|Yields `stdext::allocators::cache_freelist<sizeof(Type), max>`.|
 |[CACHE_SUBALLOC](../standard-library/allocators-functions.md#cache_suballoc)|Yields `stdext::allocators::cache_suballoc<sizeof(Type)>`.|
@@ -145,7 +145,7 @@ The cache template `cache_freelist` takes a max class argument which determines 
 |[max_none](../standard-library/max-none-class.md)|Describes a max class object that limits a [freelist](../standard-library/freelist-class.md) object to a maximum length of zero.|
 |[max_unbounded](../standard-library/max-unbounded-class.md)|Describes a max class object that does not limit the maximum length of a [freelist](../standard-library/freelist-class.md) object.|
 |[max_variable_size](../standard-library/max-variable-size-class.md)|Describes a max class object that limits a [freelist](../standard-library/freelist-class.md) object to a maximum length that is roughly proportional to the number of allocated memory blocks.|
-|[rts_alloc](../standard-library/rts-alloc-class.md)|The rts_alloc template class describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.|
+|[rts_alloc](../standard-library/rts-alloc-class.md)|The rts_alloc class template describes a [filter](../standard-library/allocators-header.md) that holds an array of cache instances and determines which instance to use for allocation and deallocation at runtime instead of at compile time.|
 |[sync_none](../standard-library/sync-none-class.md)|Describes a synchronization filter that provides no synchronization.|
 |[sync_per_container](../standard-library/sync-per-container-class.md)|Describes a synchronization filter that provides a separate cache object for each allocator object.|
 |[sync_per_thread](../standard-library/sync-per-thread-class.md)|Describes a synchronization filter that provides a separate cache object for each thread.|

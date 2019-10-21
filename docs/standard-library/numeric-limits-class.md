@@ -7,7 +7,7 @@ ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
 ---
 # numeric_limits Class
 
-The template class describes arithmetic properties of built-in numerical types.
+The class template describes arithmetic properties of built-in numerical types.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ For an arbitrary specialization, no members have meaningful values. A member obj
 |[is_integer](#is_integer)|Tests if a type has an integer representation.|
 |[is_modulo](#is_modulo)|Tests if a type has a modulo representation.|
 |[is_signed](#is_signed)|Tests if a type has a signed representation.|
-|[is_specialized](#is_specialized)|Tests if a type has an explicit specialization defined in the template class `numeric_limits`.|
+|[is_specialized](#is_specialized)|Tests if a type has an explicit specialization defined in the class template `numeric_limits`.|
 |[lowest](#lowest)|Returns the most negative finite value.|
 |[max](#max)|Returns the maximum finite value for a type.|
 |[max_digits10](#max_digits10)|Returns the number of decimal digits required to ensure that two distinct values of the type have distinct decimal representations.|
@@ -857,7 +857,7 @@ Whether unsigned char objects have a signed representation: 0
 
 ### <a name="is_specialized"></a> is_specialized
 
-Tests if a type has an explicit specialization defined in the template class `numeric_limits`.
+Tests if a type has an explicit specialization defined in the class template `numeric_limits`.
 
 ```cpp
 static constexpr bool is_specialized = false;
@@ -865,11 +865,11 @@ static constexpr bool is_specialized = false;
 
 #### Return Value
 
-**true** if the type has an explicit specialization defined in the template class; **false** if not.
+**true** if the type has an explicit specialization defined in the class template; **false** if not.
 
 #### Remarks
 
-All scalar types other than pointers have an explicit specialization defined for template class `numeric_limits`.
+All scalar types other than pointers have an explicit specialization defined for class template `numeric_limits`.
 
 #### Example
 

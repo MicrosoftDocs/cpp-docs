@@ -7,7 +7,7 @@ ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
 ---
 # vector Class
 
-The C++ Standard Library vector class is a template class of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.
+The C++ Standard Library vector class is a class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element. They should be the preferred container for a sequence when random-access performance is at a premium.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ Vectors allow constant time insertions and deletions at the end of the sequence.
 
 Vector reallocation occurs when a member function must increase the sequence contained in the vector object beyond its current storage capacity. Other insertions and erasures may alter various storage addresses within the sequence. In all such cases, iterators or references that point at altered portions of the sequence become invalid. If no reallocation happens, only iterators and references before the insertion/deletion point remain valid.
 
-The [vector\<bool> Class](../standard-library/vector-bool-class.md) is a full specialization of the template class vector for elements of type bool with an allocator for the underlying type used by the specialization.
+The [vector\<bool> Class](../standard-library/vector-bool-class.md) is a full specialization of the class template vector for elements of type bool with an allocator for the underlying type used by the specialization.
 
 The [vector\<bool> reference Class](../standard-library/vector-bool-class.md#reference_class) is a nested class whose objects are able to provide references to elements (single bits) within a vector\<bool> object.
 

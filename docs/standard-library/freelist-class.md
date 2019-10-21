@@ -25,7 +25,7 @@ class freelist : public Max
 
 ## Remarks
 
-This template class manages a list of memory blocks of size *Sz* with the maximum length of the list determined by the max class passed in *Max*.
+This class template manages a list of memory blocks of size *Sz* with the maximum length of the list determined by the max class passed in *Max*.
 
 ### Constructors
 

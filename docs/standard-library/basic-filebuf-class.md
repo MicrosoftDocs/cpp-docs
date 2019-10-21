@@ -26,7 +26,7 @@ The traits of the basic element of the file buffer (usually `char_traits`< `Elem
 
 ## Remarks
 
-The template class describes a stream buffer that controls the transmission of elements of type *Elem*, whose character traits are determined by the class *Tr*, to and from a sequence of elements stored in an external file.
+The class template describes a stream buffer that controls the transmission of elements of type *Elem*, whose character traits are determined by the class *Tr*, to and from a sequence of elements stored in an external file.
 
 > [!NOTE]
 > Objects of type `basic_filebuf` are created with an internal buffer of type `char *` regardless of the `char_type` specified by the type parameter *Elem*. This means that a Unicode string (containing **wchar_t** characters) will be converted to an ANSI string (containing **char** characters) before it is written to the internal buffer. To store Unicode strings in the buffer, create a new buffer of type **wchar_t** and set it using the [basic_streambuf::pubsetbuf](../standard-library/basic-streambuf-class.md#pubsetbuf)`()` method. To see an example that demonstrates this behavior, see below.

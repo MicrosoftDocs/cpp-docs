@@ -23,7 +23,7 @@ The element data type.
 
 ## Remarks
 
-The template struct describes various character traits for type `CharType`. The template class [basic_string](../standard-library/basic-string-class.md) as well as several iostream template classes, including [basic_ios](../standard-library/basic-ios-class.md), use this information to manipulate elements of type `CharType`. Such an element type must not require explicit construction or destruction. It must supply a default constructor, a copy constructor, and an assignment operator, with the expected semantics. A bitwise copy must have the same effect as an assignment. None of the member functions of struct char_traits can throw exceptions.
+The template struct describes various character traits for type `CharType`. The class template [basic_string](../standard-library/basic-string-class.md) as well as several iostream class templates, including [basic_ios](../standard-library/basic-ios-class.md), use this information to manipulate elements of type `CharType`. Such an element type must not require explicit construction or destruction. It must supply a default constructor, a copy constructor, and an assignment operator, with the expected semantics. A bitwise copy must have the same effect as an assignment. None of the member functions of struct char_traits can throw exceptions.
 
 ### Typedefs
 

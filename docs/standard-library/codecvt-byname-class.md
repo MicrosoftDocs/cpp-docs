@@ -7,7 +7,7 @@ ms.assetid: b63b6c04-f60c-47b9-8e30-a933f24a8ffb
 ---
 # codecvt_byname Class
 
-A derived template class that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning conversions.
+A derived class template that describes an object that can serve as a collate facet of a given locale, enabling the retrieval of information specific to a cultural area concerning conversions.
 
 ## Syntax
 

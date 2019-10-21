@@ -7,7 +7,7 @@ ms.assetid: d20175b8-96be-4896-8141-3faba45e0005
 ---
 # &lt;scoped_allocator&gt;
 
-Defines the container template class scoped_allocator.
+Defines the container class template scoped_allocator.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ Defines the container template class scoped_allocator.
 
 |Class|Description|
 |-|-|
-|[scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)|A template class that encapsulates a nest of one or more allocators.|
+|[scoped_allocator_adaptor Class](../standard-library/scoped-allocator-adaptor-class.md)|A class template that encapsulates a nest of one or more allocators.|
 
 ## See also
 

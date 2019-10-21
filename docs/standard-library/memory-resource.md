@@ -6,7 +6,7 @@ helpviewer_keywords: ["memory_resource header"]
 ---
 # &lt;memory_resource&gt;
 
-Defines the container template class memory_resource and its supporting templates.
+Defines the container class template memory_resource and its supporting templates.
 
 ## Syntax
 

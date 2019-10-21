@@ -7,7 +7,7 @@ ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
 ---
 # binder2nd Class
 
-A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
+A class template providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ The unary function object that results from binding the second argument of the b
 
 ## Remarks
 
-The template class stores a copy of a binary function object _ *Func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning **op**(`left`, **value**).
+The class template stores a copy of a binary function object _ *Func* in `op`, and a copy of *right* in `value`. It defines its member function `operator()` as returning **op**(`left`, **value**).
 
 If `Func` is an object of type `Operation` and c is a constant, then [bind2nd](../standard-library/functional-functions.md#bind2nd) (`Func`, `c`) is equivalent to the `binder2nd` class constructor `binder2nd`\< **Operation**> (`Func`, `c`) and more convenient.
 

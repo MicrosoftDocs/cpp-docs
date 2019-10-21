@@ -7,7 +7,7 @@ ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
 ---
 # wstring_convert Class
 
-The template class `wstring_convert` performs conversions between a wide string and a byte string.
+The class template `wstring_convert` performs conversions between a wide string and a byte string.
 
 ## Syntax
 
@@ -26,9 +26,9 @@ The wide-character element type.
 
 ## Remarks
 
-The template class describes an object that controls conversions between wide string objects of class `std::basic_string<Elem>` and byte string objects of class `std::basic_string<char>` (also known as `std::string`). The template class defines the types `wide_string` and `byte_string` as synonyms for these two types. Conversion between a sequence of `Elem` values (stored in a `wide_string` object) and multibyte sequences (stored in a `byte_string` object) is performed by an object of class `Codecvt<Elem, char, std::mbstate_t>`, which meets the requirements of the standard code-conversion facet `std::codecvt<Elem, char, std::mbstate_t>`.
+The class template describes an object that controls conversions between wide string objects of class `std::basic_string<Elem>` and byte string objects of class `std::basic_string<char>` (also known as `std::string`). The class template defines the types `wide_string` and `byte_string` as synonyms for these two types. Conversion between a sequence of `Elem` values (stored in a `wide_string` object) and multibyte sequences (stored in a `byte_string` object) is performed by an object of class `Codecvt<Elem, char, std::mbstate_t>`, which meets the requirements of the standard code-conversion facet `std::codecvt<Elem, char, std::mbstate_t>`.
 
-An object of this template class stores:
+An object of this class template stores:
 
 - A byte string to display on errors
 

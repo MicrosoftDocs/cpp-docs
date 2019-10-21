@@ -7,7 +7,7 @@ ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
 ---
 # binary_negate Class
 
-A template class providing a member function that negates the return value of a specified binary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
+A class template providing a member function that negates the return value of a specified binary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 
@@ -40,7 +40,7 @@ The negation of the binary function.
 
 ## Remarks
 
-The template class stores a copy of a binary function object *Func*. It defines its member function `operator()` as returning `!Func(left, right)`.
+The class template stores a copy of a binary function object *Func*. It defines its member function `operator()` as returning `!Func(left, right)`.
 
 The constructor of `binary_negate` is rarely used directly. The helper function [not2](../standard-library/functional-functions.md#not2) is usually preferred to declare and use the **binary_negator** adaptor predicate.
 

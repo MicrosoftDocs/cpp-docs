@@ -29,7 +29,7 @@ The types of the argument list to the callable type to query.
 
 ## Remarks
 
-Use this template to determine the result type of *Callable*(*Args*...) at compile time, where *Callable* and all types in *Args* are any complete type, an array of unknown bound, or a possibly cv-qualified `void`. The `type` member of the template class names the return type of *Callable* when invoked using the arguments *Args*.... The `type` member is only defined if *Callable* can be called when invoked using the arguments *Args*... in an unevaluated context. Otherwise, the template class has no member `type`, which allows SFINAE tests on a particular set of argument types at compile time.
+Use this template to determine the result type of *Callable*(*Args*...) at compile time, where *Callable* and all types in *Args* are any complete type, an array of unknown bound, or a possibly cv-qualified `void`. The `type` member of the class template names the return type of *Callable* when invoked using the arguments *Args*.... The `type` member is only defined if *Callable* can be called when invoked using the arguments *Args*... in an unevaluated context. Otherwise, the class template has no member `type`, which allows SFINAE tests on a particular set of argument types at compile time.
 
 ## Requirements
 

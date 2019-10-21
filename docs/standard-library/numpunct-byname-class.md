@@ -7,7 +7,7 @@ ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
 ---
 # numpunct_byname Class
 
-The derived template class describes an object that can serve as a `numpunct` facet of a given locale enabling the formatting and punctuation of numeric and Boolean expressions.
+The derived class template describes an object that can serve as a `numpunct` facet of a given locale enabling the formatting and punctuation of numeric and Boolean expressions.
 
 ## Syntax
 
