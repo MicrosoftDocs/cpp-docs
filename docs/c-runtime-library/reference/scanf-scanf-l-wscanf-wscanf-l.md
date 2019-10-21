@@ -1,6 +1,6 @@
 ---
 title: "scanf, _scanf_l, wscanf, _wscanf_l"
-ms.date: "11/04/2016"
+ms.date: "10/21/2019"
 api_name: ["_wscanf_l", "scanf", "_scanf_l", "wscanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -12,6 +12,9 @@ ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
 # scanf, _scanf_l, wscanf, _wscanf_l
 
 Reads formatted data from the standard input stream. More secure versions of these function are available; see [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).
+
+> [!NOTE] 
+> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## Syntax
 
