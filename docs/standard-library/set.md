@@ -7,7 +7,7 @@ ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
 ---
 # &lt;set&gt;
 
-Defines the container template classes set and multiset and their supporting templates.
+Defines the container class templates set and multiset and their supporting templates.
 
 ## Requirements
 

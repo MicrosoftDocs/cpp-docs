@@ -7,7 +7,7 @@ ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
 ---
 # unary_negate Class
 
-A template class providing a member function that negates the return value of a specified unary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
+A class template providing a member function that negates the return value of a specified unary function. Deprecated in C++17 in favor of [not_fn](functional-functions.md#not_fn).
 
 ## Syntax
 
@@ -35,7 +35,7 @@ The negation of the unary function.
 
 ## Remarks
 
-The template class stores a copy of a unary function object *\_Func*. It defines its member function `operator()` as returning `!_Func(left)`.
+The class template stores a copy of a unary function object *\_Func*. It defines its member function `operator()` as returning `!_Func(left)`.
 
 The constructor of `unary_negate` is rarely used directly. The helper function [not1](../standard-library/functional-functions.md#not1) provides an easier way to declare and use the **unary_negator** adaptor predicate.
 

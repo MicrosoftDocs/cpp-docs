@@ -26,7 +26,7 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-The template `ratio` defines the static constants `num` and `den` such that `num` / `den` == Numerator / Denominator and `num` and `den` have no common factors. `num` / `den` is the value that is represented by the template class. Therefore, `type` designates the instantiation `ratio<num, den>`.
+The template `ratio` defines the static constants `num` and `den` such that `num` / `den` == Numerator / Denominator and `num` and `den` have no common factors. `num` / `den` is the value that is represented by the class template. Therefore, `type` designates the instantiation `ratio<num, den>`.
 
 ### Specializations
 

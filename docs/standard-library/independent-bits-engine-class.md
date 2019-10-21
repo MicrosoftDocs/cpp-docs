@@ -38,7 +38,7 @@ For more information about engine members, see [\<random>](../standard-library/r
 
 ## Remarks
 
-This template class describes an *engine adaptor* that produces values by repacking bits from the values returned by its base engine, resulting in *W*-bit values.
+This class template describes an *engine adaptor* that produces values by repacking bits from the values returned by its base engine, resulting in *W*-bit values.
 
 ## Requirements
 

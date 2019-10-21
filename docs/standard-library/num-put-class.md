@@ -7,7 +7,7 @@ ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
 ---
 # num_put Class
 
-A template class that describes an object that can serve as a locale facet to control conversions of numeric values to sequences of type `CharType`.
+A class template that describes an object that can serve as a locale facet to control conversions of numeric values to sequences of type `CharType`.
 
 ## Syntax
 

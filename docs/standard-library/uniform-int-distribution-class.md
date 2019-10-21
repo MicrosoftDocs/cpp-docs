@@ -48,7 +48,7 @@ The integer result type, defaults to **int**. For possible types, see [\<random>
 
 ## Remarks
 
-The template class describes an inclusive-inclusive distribution that produces values of a user-specified integral type with a distribution so that every value is equally probable. The following table links to articles about individual members.
+The class template describes an inclusive-inclusive distribution that produces values of a user-specified integral type with a distribution so that every value is equally probable. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

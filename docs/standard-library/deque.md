@@ -7,7 +7,7 @@ ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
 ---
 # &lt;deque&gt;
 
-Defines the container template class deque and several supporting templates.
+Defines the container class template deque and several supporting templates.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ Defines the container template class deque and several supporting templates.
 
 |||
 |-|-|
-|[deque Class](../standard-library/deque-class.md)|A template class of sequence containers that arrange elements of a given type in a linear arrangement and, like vectors, allow fast random access to any element and efficient insertion and deletion at the back of the container.|
+|[deque Class](../standard-library/deque-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and, like vectors, allow fast random access to any element and efficient insertion and deletion at the back of the container.|
 
 ## See also
 

@@ -68,9 +68,9 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |||
 |-|-|
 |[bad_function_call](../standard-library/bad-function-call-class.md)|A class that describes an exception thrown to indicate that a call to `operator()` on a [function](../standard-library/function-class.md) object failed because the object was empty.|
-|[binary_negate](../standard-library/binary-negate-class.md)|A template class providing a member function that negates the return value of a specified binary function.<br/> (Deprecated in C++17.) |
-|[binder1st](../standard-library/binder1st-class.md)|A template class providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
-|[binder2nd](../standard-library/binder2nd-class.md)|A template class providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
+|[binary_negate](../standard-library/binary-negate-class.md)|A class template providing a member function that negates the return value of a specified binary function.<br/> (Deprecated in C++17.) |
+|[binder1st](../standard-library/binder1st-class.md)|A class template providing a constructor that converts a binary function object into a unary function object by binding the first argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
+|[binder2nd](../standard-library/binder2nd-class.md)|A class template providing a constructor that converts a binary function object into a unary function object by binding the second argument of the binary function to a specified value.<br/> (Deprecated in C++11, removed in C++17.) |
 |[boyer_moore_horspool_searcher](../standard-library/boyer-moore-horspool-searcher-class.md)||
 |[boyer_moore_searcher](../standard-library/boyer-moore-searcher-class.md)||
 |[const_mem_fun_ref_t](../standard-library/const-mem-fun-ref-t-class.md)|An adapter class that allows a const member function that takes no arguments to be called as a unary function object when initialized with a reference argument.<br/> (Deprecated in C++11, removed in C++17.) |
@@ -89,7 +89,7 @@ Every call wrapper has a move constructor and a copy constructor. A *simple call
 |[pointer_to_binary_function](../standard-library/pointer-to-binary-function-class.md)|Converts a binary function pointer into an adaptable binary function.<br/> (Deprecated in C++11, removed in C++17.) |
 |[pointer_to_unary_function](../standard-library/pointer-to-unary-function-class.md)|Converts a unary function pointer into an adaptable unary function.<br/> (Deprecated in C++11, removed in C++17.) |
 |[reference_wrapper](../standard-library/reference-wrapper-class.md)|A class that wraps a reference.|
-|[unary_negate](../standard-library/unary-negate-class.md)|A template class providing a member function that negates the return value of a specified unary function.<br/> (Deprecated in C++17.)  |
+|[unary_negate](../standard-library/unary-negate-class.md)|A class template providing a member function that negates the return value of a specified unary function.<br/> (Deprecated in C++17.)  |
 
 ### Functions
 

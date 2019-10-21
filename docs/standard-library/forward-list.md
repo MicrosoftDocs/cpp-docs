@@ -7,7 +7,7 @@ ms.assetid: 8b4ab09e-1475-434a-b4e0-fdbc07a08b5b
 ---
 # &lt;forward_list&gt;
 
-Defines the container template class forward_list and several supporting templates.
+Defines the container class template forward_list and several supporting templates.
 
 ## Requirements
 

@@ -10,7 +10,7 @@ ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
 > [!NOTE]
 > This topic is in the Microsoft C++ documentation as a nonfunctional example of containers used in the C++ Standard Library. For more information, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
-Overloads **operator<** to compare two objects of template class [Container](../standard-library/sample-container-class.md).
+Overloads **operator<** to compare two objects of class template [Container](../standard-library/sample-container-class.md).
 
 ## Syntax
 

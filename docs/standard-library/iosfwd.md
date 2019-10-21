@@ -7,7 +7,7 @@ ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
 ---
 # &lt;iosfwd&gt;
 
-Declares forward references to several template classes used throughout iostreams. All such template classes are defined in other standard headers. You include this header explicitly only when you need one of its declarations, but not its definition.
+Declares forward references to several class templates used throughout iostreams. All such class templates are defined in other standard headers. You include this header explicitly only when you need one of its declarations, but not its definition.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 };
 ```
 
-## Forward Declarations/Template Classes
+## Forward declarations and class templates
 
 ```cpp
 template <class _Statetype>

@@ -7,7 +7,7 @@ ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
 ---
 # &lt;istream&gt;
 
-Defines the template class basic_istream, which mediates extractions for the iostreams, and the template class basic_iostream, which mediates both insertions and extractions. The header also defines a related manipulator. This header file is typically included for you by another iostreams header; you rarely have to include it directly.
+Defines the class template basic_istream, which mediates extractions for the iostreams, and the class template basic_iostream, which mediates both insertions and extractions. The header also defines a related manipulator. This header file is typically included for you by another iostreams header; you rarely have to include it directly.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ Defines the template class basic_istream, which mediates extractions for the ios
 |Class|Description|
 |-|-|
 |[basic_iostream](../standard-library/basic-iostream-class.md)|A stream class that can do both input and output.|
-|[basic_istream](../standard-library/basic-istream-class.md)|The template class describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class `Tr`, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).|
+|[basic_istream](../standard-library/basic-istream-class.md)|The class template describes an object that controls extraction of elements and encoded objects from a stream buffer with elements of type `Elem`, also known as [char_type](../standard-library/basic-ios-class.md#char_type), whose character traits are determined by the class `Tr`, also known as [traits_type](../standard-library/basic-ios-class.md#traits_type).|
 
 ## See also
 

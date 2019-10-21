@@ -6,7 +6,7 @@ ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a
 ---
 # hash Structure
 
-The template class defines its method as returning `val.hash_code()`. The method defines a hash function that is used to map values of type [type_index](../standard-library/type-index-class.md) to a distribution of index values.
+The class template defines its method as returning `val.hash_code()`. The method defines a hash function that is used to map values of type [type_index](../standard-library/type-index-class.md) to a distribution of index values.
 
 ## Syntax
 

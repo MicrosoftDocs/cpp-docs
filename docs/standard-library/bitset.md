@@ -7,7 +7,7 @@ ms.assetid: af30a9b9-489e-46e3-9d29-5f3ea07ae6dc
 ---
 # &lt;bitset&gt;
 
-Defines the template class bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.
+Defines the class template bitset and two supporting template functions for representing and manipulating fixed-size sequences of bits.
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Defines the template class bitset and two supporting template functions for repr
 
 |||
 |-|-|
-|[bitset](../standard-library/bitset-class.md)|The template class describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
+|[bitset](../standard-library/bitset-class.md)|The class template describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
 
 ## See also
 

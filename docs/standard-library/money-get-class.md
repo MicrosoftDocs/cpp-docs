@@ -7,7 +7,7 @@ ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
 ---
 # money_get Class
 
-The template class describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to monetary values.
+The class template describes an object that can serve as a locale facet to control conversions of sequences of type `CharType` to monetary values.
 
 ## Syntax
 
@@ -293,7 +293,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md).
+The type describes a specialization of class template [basic_string](../standard-library/basic-string-class.md).
 
 ## See also
 
