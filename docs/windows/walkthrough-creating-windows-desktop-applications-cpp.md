@@ -1,14 +1,14 @@
 ---
 title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
 ms.custom: "get-started-article"
-ms.date: "04/23/2019"
+ms.date: "10/21/2019"
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
 
 This walkthrough shows how to create a traditional Windows desktop application in Visual Studio. The example application you'll create uses the Windows API to display "Hello, Windows desktop!" in a window. You can use the code that you develop in this walkthrough as a pattern to create other Windows desktop applications.
 
-The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API, such as MFC, ATL, and the .NET frameworks. Even the most modern code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list). There are many ways to create Windows applications, but the process above was the first.
+The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language-based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of the Windows API. For example, MFC, ATL, the .NET frameworks. Even the most modern Windows Runtime code for UWP and Store apps written in C++/WinRT uses the Windows API underneath. For more information about the Windows API, see [Windows API Index](/windows/win32/apiindex/windows-api-list). There are many ways to create Windows applications, but the process above was the first.
 
 > [!IMPORTANT]
 > For the sake of brevity, some code statements are omitted in the text. The [Build the code](#build-the-code) section at the end of this document shows the complete code.
@@ -27,7 +27,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 ## Create a Windows desktop project
 
-Follow these steps to create your first Windows desktop project and enter the code for a working Windows desktop application. Make sure that the version selector in the upper left of this page is set to the correct version of Visual Studio that you are using.
+Follow these steps to create your first Windows desktop project. As you go, you'll enter the code for a working Windows desktop application. There's a version selector in the upper left of this page. Make sure it's set to the version of Visual Studio that you're using.
 
 ::: moniker range="vs-2019"
 
@@ -35,13 +35,13 @@ Follow these steps to create your first Windows desktop project and enter the co
 
 1. From the main menu, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-1. At the top of the dialog, set **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Desktop**. 
+1. At the top of the dialog, set **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Desktop**.
 
-1. From the filtered list of project types, choose **Windows Desktop Wizard** then choose **Next**. In the next page, enter a name for the project, and specify the project location if desired.
+1. From the filtered list of project types, choose **Windows Desktop Wizard** then choose **Next**. In the next page, enter a name for the project, for example, *DesktopApp*.
 
 1. Choose the **Create** button to create the project.
 
-1. The **Windows Desktop Project** dialog now appears. Under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Choose **OK** to create the project.
+1. The **Windows Desktop Project** dialog now appears. Under **Application type**, select **Desktop application (.exe)**. Under **Additional options**, select **Empty project**. Choose **OK** to create the project.
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
@@ -126,7 +126,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    ```cpp
    int CALLBACK WinMain(
       _In_ HINSTANCE hInstance,
-      _In_ HINSTANCE hPrevInstance,
+      _In_opt_ HINSTANCE hPrevInstance,
       _In_ LPSTR     lpCmdLine,
       _In_ int       nCmdShow
    );
@@ -144,7 +144,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    #include <tchar.h>
    ```
 
-1. In addition to the `WinMain` function, every Windows desktop application must also have a window-procedure function. This function is typically named `WndProc` but you can name it whatever you like. `WndProc` has the following syntax.
+1. Along with the `WinMain` function, every Windows desktop application must also have a window-procedure function. This function is typically named `WndProc`, but you can name it whatever you like. `WndProc` has the following syntax.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -161,7 +161,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
 ### To add functionality to the WinMain function
 
-1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw). The structure contains information about the window, for example, the application icon, the background color of the window, the name to display in the title bar, and importantly, a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
+1. In the `WinMain` function, you populate a structure of type [WNDCLASSEX](/windows/win32/api/winuser/ns-winuser-wndclassexw). The structure contains information about the window: the application icon, the background color of the window, the name to display in the title bar, among other things. Importantly, it contains a function pointer to your window procedure. The following example shows a typical `WNDCLASSEX` structure.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -355,7 +355,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
 1. To enable the `WndProc` function to handle the messages that the application receives, implement a switch statement.
 
-   One important message to handle is the [WM_PAINT](/windows/win32/gdi/wm-paint) message. The application receives the `WM_PAINT` message when part of its displayed window must be updated. The event can occur when a user moves a window in front of your window, then moves it away again, and your application doesn't know when these events occur. Only Windows knows, so it notifies you with `WM_PAINT`. When the window is first displayed, all of it must be updated.
+   One important message to handle is the [WM_PAINT](/windows/win32/gdi/wm-paint) message. The application receives the `WM_PAINT` message when part of its displayed window must be updated. The event can occur when a user moves a window in front of your window, then moves it away again. Your application doesn't know when these events occur. Only Windows knows, so it notifies your app with a `WM_PAINT` message. When the window is first displayed, all of it must be updated.
 
    To handle a `WM_PAINT` message, first call [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/win32/api/winuser/nf-winuser-endpaint). For the application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](/windows/win32/api/wingdi/nf-wingdi-textoutw) function is used to display the string.
 
@@ -384,7 +384,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    `HDC` in the code is a handle to a device context, which is a data structure that Windows uses to enable your application to communicate with the graphics subsystem. The `BeginPaint` and `EndPaint` functions make your application behave like a good citizen and doesn't use the device context for longer than it needs to. The functions help make the graphics subsystem is available for use by other applications.
 
-1. An application typically handles many other messages, for example, [WM_CREATE](/windows/win32/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/win32/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
+1. An application typically handles many other messages. For example, [WM_CREATE](/windows/win32/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/win32/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -452,7 +452,7 @@ As promised, here's the complete code for the working application.
 
    int CALLBACK WinMain(
       _In_ HINSTANCE hInstance,
-      _In_ HINSTANCE hPrevInstance,
+      _In_opt_ HINSTANCE hPrevInstance,
       _In_ LPSTR     lpCmdLine,
       _In_ int       nCmdShow
    )
