@@ -7,7 +7,7 @@ ms.assetid: 9ae37f0b-9a42-496e-9870-3d9b71bab8fb
 ---
 # time_base Class
 
-The class serves as a base class for facets of template class time_get, defining just the enumerated type `dateorder` and several constants of this type.
+The class serves as a base class for facets of class template time_get, defining just the enumerated type `dateorder` and several constants of this type.
 
 ## Syntax
 

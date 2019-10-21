@@ -49,7 +49,7 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type with a geometric distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type with a geometric distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

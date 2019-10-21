@@ -20,7 +20,7 @@ Defines facilities for random number generation, allowing creation of uniformly 
 
 ## Summary
 
-A *random number generator* is an object that produces a sequence of pseudo-random values. A generator that produces values that are uniformly distributed in a specified range is a *Uniform Random Number Generator* (URNG). A template class designed to function as a URNG is referred to as an *engine* if that class has certain common traits, which are discussed later in this article. A URNG can be—and usually is—combined with a *distribution* by passing the URNG as an argument to the distribution's `operator()` to produce values that are distributed in a manner that is defined by the distribution.
+A *random number generator* is an object that produces a sequence of pseudo-random values. A generator that produces values that are uniformly distributed in a specified range is a *Uniform Random Number Generator* (URNG). A class template designed to function as a URNG is referred to as an *engine* if that class has certain common traits, which are discussed later in this article. A URNG can be—and usually is—combined with a *distribution* by passing the URNG as an argument to the distribution's `operator()` to produce values that are distributed in a manner that is defined by the distribution.
 
 These links jump to the major sections of this article:
 
@@ -400,7 +400,7 @@ This section lists the operators provided in the \<random> header.
 
 ## <a name="engdist"></a> Engines and Distributions
 
-Refer to the following sections for information about each of these template class categories defined in \<random>. Both of these template class categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
+Refer to the following sections for information about each of these class template categories defined in \<random>. Both of these class template categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
 
 - `IntType` indicates a **short**, **int**, **long**, **long long**, **unsigned short**, **unsigned int**, **unsigned long**, or **unsigned long long**.
 
@@ -412,7 +412,7 @@ Refer to the following sections for information about each of these template cla
 
 [Engine Templates](#eng) and [Engine Adaptor Templates](#engadapt) are templates whose parameters customize the generator created.
 
-An *engine* is a class or template class whose instances (generators) act as a source of random numbers uniformly distributed between a minimum and maximum value. An *engine adaptor* delivers a sequence of values that have different randomness properties by taking values produced by some other random number engine and applying an algorithm of some kind to those values.
+An *engine* is a class or class template whose instances (generators) act as a source of random numbers uniformly distributed between a minimum and maximum value. An *engine adaptor* delivers a sequence of values that have different randomness properties by taking values produced by some other random number engine and applying an algorithm of some kind to those values.
 
 Every engine and engine adaptor has the following members:
 
@@ -450,7 +450,7 @@ Every engine maintains a *state* that determines the sequence of values that wil
 
 ### Distributions
 
-A [Random Number Distributions](#distributions) is a class or template class whose instances transform a stream of uniformly distributed random numbers obtained from an engine into a stream of random numbers that have a particular distribution. Every distribution has the following members:
+A [Random Number Distributions](#distributions) is a class or class template whose instances transform a stream of uniformly distributed random numbers obtained from an engine into a stream of random numbers that have a particular distribution. Every distribution has the following members:
 
 - `typedef` `numeric-type` `result_type` is the type that is returned by the distribution's `operator()`. The `numeric-type` is passed as a template parameter on instantiation.
 

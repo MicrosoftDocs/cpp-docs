@@ -22,7 +22,7 @@ The type controlled by the weak pointer.
 
 ## Remarks
 
-The template class describes an object that points to a resource that is managed by one or more [shared_ptr](shared-ptr-class.md) objects. The `weak_ptr` objects that point to a resource don't affect the resource's reference count. When the last `shared_ptr` object that manages that resource is destroyed, the resource will be freed, even if there are `weak_ptr` objects pointing to that resource. This behavior is essential for avoiding cycles in data structures.
+The class template describes an object that points to a resource that is managed by one or more [shared_ptr](shared-ptr-class.md) objects. The `weak_ptr` objects that point to a resource don't affect the resource's reference count. When the last `shared_ptr` object that manages that resource is destroyed, the resource will be freed, even if there are `weak_ptr` objects pointing to that resource. This behavior is essential for avoiding cycles in data structures.
 
 A `weak_ptr` object points to a resource if it was constructed from a `shared_ptr` object that owns that resource, if it was constructed from a `weak_ptr` object that points to that resource, or if that resource was assigned to it with [operator=](#op_eq). A `weak_ptr` object doesn't provide direct access to the resource that it points to. Code that needs to use the resource does so through a `shared_ptr` object that owns that resource, created by calling the member function [lock](#lock). A `weak_ptr` object has expired when the resource that it points at has been freed because all of the `shared_ptr` objects that own the resource have been destroyed. Calling `lock` on a `weak_ptr` object that has expired creates an empty shared_ptr object.
 

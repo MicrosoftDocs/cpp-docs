@@ -46,7 +46,7 @@ The floating-point result type, defaults to **double**. For possible types, see 
 
 ## Remarks
 
-The template class describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
 
 ||||
 |-|-|-|

@@ -7,7 +7,7 @@ ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
 ---
 # ostream_iterator Class
 
-The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction `operator <<`.
+The class template ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction `operator <<`.
 
 ## Syntax
 

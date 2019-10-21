@@ -7,7 +7,7 @@ ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
 ---
 # codecvt Class
 
-A template class that describes an object that can serve as a locale facet. It is able to control conversions between a sequence of values used to encode characters within the program and a sequence of values used to encode characters outside the program.
+A class template that describes an object that can serve as a locale facet. It is able to control conversions between a sequence of values used to encode characters within the program and a sequence of values used to encode characters outside the program.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ A type that can be used to represent intermediate states of a conversion between
 
 ## Remarks
 
-The template class describes an object that can serve as a [locale facet](../standard-library/locale-class.md#facet_class), to control conversions between a sequence of values of type *CharType* and a sequence of values of type *Byte*. The class *StateType* characterizes the transformation -- and an object of class *StateType* stores any necessary state information during a conversion.
+The class template describes an object that can serve as a [locale facet](../standard-library/locale-class.md#facet_class), to control conversions between a sequence of values of type *CharType* and a sequence of values of type *Byte*. The class *StateType* characterizes the transformation -- and an object of class *StateType* stores any necessary state information during a conversion.
 
 The internal encoding uses a representation with a fixed number of bytes per character, usually either type **char** or type **wchar_t**.
 

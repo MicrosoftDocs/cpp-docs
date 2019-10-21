@@ -7,7 +7,7 @@ ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
 ---
 # valarray&lt;bool&gt; Class
 
-A specialized version of the template class **valarray\<Type>** to elements of type **bool**.
+A specialized version of the class template **valarray\<Type>** to elements of type **bool**.
 
 ## Syntax
 

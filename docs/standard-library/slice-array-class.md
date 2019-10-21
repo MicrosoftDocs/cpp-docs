@@ -7,7 +7,7 @@ ms.assetid: a182d5f7-f35c-4e76-86f2-b5ac64ddc846
 ---
 # slice_array Class
 
-An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.
+An internal, auxiliary class template that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ public:
 
 The class describes an object that stores a reference to an object of class [valarray](../standard-library/valarray-class.md)**\<Type>**, along with an object of class [slice](../standard-library/slice-class.md), which describes the sequence of elements to select from the **valarray\<Type>** object.
 
-The template class is created indirectly by certain valarray operations and cannot be used directly in the program. An internal, auxiliary template class that is used by the slice subscript operator:
+The class template is created indirectly by certain valarray operations and cannot be used directly in the program. An internal, auxiliary class template that is used by the slice subscript operator:
 
 `slice_array`\< **Type**> `valarray`< **Type**:: `operator[]` ( `slice`).
 

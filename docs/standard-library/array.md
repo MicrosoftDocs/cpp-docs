@@ -7,7 +7,7 @@ ms.assetid: 084147c1-e805-478e-8201-76846020f187
 ---
 # &lt;array&gt;
 
-Defines the container template class **array** and several supporting templates.
+Defines the container class template **array** and several supporting templates.
 
 ## Requirements
 

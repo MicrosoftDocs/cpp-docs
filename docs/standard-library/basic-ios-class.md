@@ -7,7 +7,7 @@ ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
 ---
 # basic_ios Class
 
-The template class describes the storage and member functions common to both input streams (of template class [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of template class [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type `Elem`, whose character traits are determined by the class `Traits`.
+The class template describes the storage and member functions common to both input streams (of class template [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of class template [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters. (The class [ios_base](../standard-library/ios-base-class.md) describes what is common and not dependent on template parameters.) An object of class **basic_ios\<class Elem, class Traits>** helps control a stream with elements of type `Elem`, whose character traits are determined by the class `Traits`.
 
 ## Syntax
 

@@ -7,7 +7,7 @@ ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
 ---
 # messages_byname Class
 
-The derived template class describes an object that can serve as a message facet of a given locale, enabling the retrieval of localized messages.
+The derived class template describes an object that can serve as a message facet of a given locale, enabling the retrieval of localized messages.
 
 ## Syntax
 

@@ -7,7 +7,7 @@ ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
 ---
 # messages Class
 
-The template class describes an object that can serve as a locale facet to retrieve localized messages from a catalog of internationalized messages for a given locale.
+The class template describes an object that can serve as a locale facet to retrieve localized messages from a catalog of internationalized messages for a given locale.
 
 Currently, while the messages class is implemented, there are no messages.
 
@@ -286,7 +286,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the message sequences.
+The type describes a specialization of class template [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the message sequences.
 
 ## See also
 

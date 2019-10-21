@@ -40,7 +40,7 @@ An adaptable binary function.
 
 ## Remarks
 
-The template class stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**_Pleft**->\* `_Pm`)(**right**).
+The class template stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**_Pleft**->\* `_Pm`)(**right**).
 
 ## Example
 

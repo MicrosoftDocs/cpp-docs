@@ -7,7 +7,7 @@ ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
 ---
 # time_put Class
 
-The template class describes an object that can serve as a locale facet to control conversions of time values to sequences of type `CharType`.
+The class template describes an object that can serve as a locale facet to control conversions of time values to sequences of type `CharType`.
 
 ## Syntax
 

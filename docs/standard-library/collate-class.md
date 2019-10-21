@@ -7,7 +7,7 @@ ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
 ---
 # collate Class
 
-A template class that describes an object that can serve as a locale facet to control the ordering and grouping of characters within a string, comparisons between them and the hashing of strings.
+A class template that describes an object that can serve as a locale facet to control the ordering and grouping of characters within a string, comparisons between them and the hashing of strings.
 
 ## Syntax
 
@@ -331,7 +331,7 @@ typedef basic_string<CharType> string_type;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the source sequence.
+The type describes a specialization of class template [basic_string](../standard-library/basic-string-class.md) whose objects can store copies of the source sequence.
 
 ### Example
 
