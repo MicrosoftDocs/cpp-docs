@@ -1,19 +1,20 @@
 # Voice and tone guidelines
 
-A wide variety of people including IT Pros and developers read your documents both to learn .NET and to use it in their regular work.
-Your goal is to create great documentation that helps the reader on their journey. Our guidelines
-help with that. Our style guide contains the following recommendations:
+A wide variety of people, including IT Pros and developers, read your documents, both to learn
+Microsoft C++ and to use it in their regular work. Your goal is to create great documentation
+that helps the reader on their journey. Our guidelines help with that. Our style guide contains
+the following recommendations:
 
 - [Use a Conversational Tone](#use-a-conversational-tone)
-- [Write in Second Person](#write-in-2nd-person)
+- [Write in Second Person](#write-in-second-person)
 - [Use Active Voice](#use-active-voice)
-- [Target a 5th Grade Reading Level](#target-a-fifth-grade-reading-level)
+- [Target a Fifth Grade Reading Level](#target-a-fifth-grade-reading-level)
 - [Avoid future tense](#avoid-future-tense)
 - [What is it - so what?](#what-is-it-so-what)
 
 You can see examples of each of these as you read this style guide. We've written this guide
 following our guidelines to provide examples for you to follow as you build documentation
-for .NET. We also provide contrasting samples so you can see what articles look like
+for C++. We also provide contrasting samples so you can see what articles look like
 when you don't follow our guidelines.
 
 ## Details on each guideline
@@ -43,7 +44,7 @@ is a more academic style. You see the difference immediately.
 #### Appropriate Style:
 
 You should write your articles as though you are speaking directly to the reader. You
-should use second person often (as I just have in these two sentences). 2nd person doesn't
+should use second person often (as I just have in these two sentences). Second person doesn't
 always mean using the word 'you'. Write directly to the reader. Write imperative sentences.
 Tell your reader what you want them to learn.
 
@@ -83,13 +84,18 @@ Programming, Class, and Object, Function and Method are familiar terms. However,
 reading your articles has a formal computer science degree. Terms like 'idempotent' probably
 need to be defined if you use it:
 
-> The Close() method is idempotent, meaning that you can call it multiple times and the effect is
+> The `Close()` method is idempotent, meaning that you can call it multiple times and the effect is
 > the same as if you called it once.
 
 ### Avoid future tense
 
-In some non-English languages the concept of future tense is not the same as English. Using future tense can make your documents harder to read. Additionally, when using the future tense, the obvious question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".
+In some non-English languages the concept of future tense is not the same as English. Using future
+tense can make your documents harder to read. Additionally, when using the future tense, the obvious
+question is when. So if you say 'Learning PowerShell will be good for you" - the obvious question
+for the reader is when will it be good? Instead, just say "Learning PowerShell is good for you".
 
 ### What is it - so what?
 
-Whenever you introduce a new concept to the reader, define the concept and only then explain why it's useful. It's important for reader to understand what something is before they can understand the benefits (or otherwise).
+Whenever you introduce a new concept to the reader, define the concept first. Only then explain why
+it's useful. It's important for reader to understand what something is before they can understand
+the benefits (or otherwise).
