@@ -28,7 +28,7 @@ A basic conversion specification contains only the percent sign and a *type* cha
 <a name="type"></a>
 
 > [!NOTE] 
-> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio>` and `<conio>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
+> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 ## Type conversion specifier
 
