@@ -42,7 +42,7 @@ Width of elements.
 *compare*\
 Callback function that compares two elements. The first is a pointer to the key for the search, and the second is a pointer to the array element to be compared with the key.
 
-## Return Value
+## Return value
 
 **bsearch** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 

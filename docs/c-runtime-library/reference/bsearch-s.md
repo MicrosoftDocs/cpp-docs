@@ -11,7 +11,7 @@ ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
 ---
 # bsearch_s
 
-Performs a binary search of a sorted array. This function is a version of [bsearch](bsearch.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Performs a binary search of a sorted array. This function is a version of [bsearch](bsearch.md) with security enhancements as described in [Security features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -46,13 +46,13 @@ Callback function that compares two elements. The first argument is the *context
 *context*\
 A pointer to an object that can be accessed in the comparison function.
 
-## Return Value
+## Return value
 
 **bsearch_s** returns a pointer to an occurrence of *key* in the array pointed to by *base*. If *key* is not found, the function returns **NULL**. If the array is not in ascending sort order or contains duplicate records with identical keys, the result is unpredictable.
 
 If invalid parameters are passed to the function, it invokes the invalid parameter handler as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to **EINVAL** and the function returns **NULL**. For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-### Error Conditions
+### Error conditions
 
 |||||||
 |-|-|-|-|-|-|
