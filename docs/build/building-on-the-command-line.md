@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "06/06/2019"
+ms.date: "10/22/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -183,7 +183,7 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **VS2015 x64 Native Tools Command Prompt** shortcut is something similar to:
 
-`%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64`
 
 ::: moniker-end
 
@@ -191,17 +191,17 @@ The architecture-specific batch files set the *architecture* parameter and call 
 
 ::: moniker range=">= vs-2019"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.16"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.16`
 
 ::: moniker-end
 ::: moniker range="= vs-2017"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.0"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.0`
 
 ::: moniker-end
 ::: moniker range="< vs-2017"
 
-`%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64 -vcvars_ver=12.0`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=12.0`
 
 ::: moniker-end
 
