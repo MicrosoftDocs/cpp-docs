@@ -625,7 +625,7 @@ The offset to be subtracted from the `reverse_iterator`.
 
 This member function may only be used if the `reverse_iterator` satisfies the requirements for a random-access iterator.
 
-The operator evaluates **current** + _ *Off*. then returns **\*this**.
+The operator evaluates **current** + *Off* then returns **\*this**.
 
 ### Example
 

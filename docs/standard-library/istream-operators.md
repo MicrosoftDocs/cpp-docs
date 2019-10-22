@@ -77,7 +77,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem* str);
 ```
 
-extracts up to *N* - 1 elements and stores them in the array starting at _ *Str*. If `Istr`. [width](../standard-library/ios-base-class.md#width) is greater than zero, *N* is `Istr`. **width**; otherwise, it is the size of the largest array of `Elem` that can be declared. The function always stores the value `Elem()` after any extracted elements it stores. Extraction stops early on end of file, on a character with value **Elem**(0) (which is not extracted), or on any element (which is not extracted) that would be discarded by [ws](../standard-library/istream-functions.md#ws). If the function extracts no elements, it calls `Istr`. [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**). In any case, it calls `Istr`. **width**(0) and returns *Istr*.
+extracts up to *N* - 1 elements and stores them in the array starting at *str*. If `Istr.`[width](../standard-library/ios-base-class.md#width) is greater than zero, *N* is `Istr.width`; otherwise, it is the size of the largest array of `Elem` that can be declared. The function always stores the value `Elem()` after any extracted elements it stores. Extraction stops early on end of file, on a character with value `Elem(0)` (which is not extracted), or on any element (which is not extracted) that would be discarded by [ws](../standard-library/istream-functions.md#ws). If the function extracts no elements, it calls `Istr.`[setstate](../standard-library/basic-ios-class.md#setstate)`(failbit)`. In any case, it calls `Istr.width(0)` and returns *Istr*.
 
 **Security Note** The null-terminated string being extracted from the input stream must not exceed the size of the destination buffer *str*. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -89,7 +89,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-extracts an element, if it is possible, and stores it in *Ch*. Otherwise, it calls **is**. [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**). In any case, it returns *Istr*.
+extracts an element, if it is possible, and stores it in *Ch*. Otherwise, it calls `is.`[setstate](../standard-library/basic-ios-class.md#setstate)`(failbit)`. In any case, it returns *Istr*.
 
 The template function:
 
