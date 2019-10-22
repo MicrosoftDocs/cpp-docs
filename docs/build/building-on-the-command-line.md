@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "06/06/2019"
+ms.date: "10/22/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -46,7 +46,7 @@ The Start menu folder and shortcut names vary depending on the installed version
 
 ::: moniker-end
 
-## <a name="developer_command_prompt"></a> To open a developer command prompt window
+### <a name="developer_command_prompt"></a> To open a developer command prompt window
 
 1. On the desktop, open the Windows **Start** menu, and then scroll to find and open the folder for your version of Visual Studio, for example, **Visual Studio 2019**.
 
@@ -154,8 +154,7 @@ Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Stud
 
 Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 
-<a name="vcvarsall"></a>
-#### To set up the build environment in an existing command prompt window
+#### <a name="vcvarsall"></a> To set up the build environment in an existing command prompt window
 
 1. At the command prompt, use the CD command to change to the Visual Studio installation directory. Then, use CD again to change to the subdirectory that contains the configuration-specific command files. For Visual Studio 2019 and Visual Studio 2017, use the *VC\\Auxiliary\\Build* subdirectory. For Visual Studio 2015, use the *VC* subdirectory.
 
@@ -183,7 +182,7 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **VS2015 x64 Native Tools Command Prompt** shortcut is something similar to:
 
-`%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64`
 
 ::: moniker-end
 
@@ -191,17 +190,17 @@ The architecture-specific batch files set the *architecture* parameter and call 
 
 ::: moniker range=">= vs-2019"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.16"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.16`
 
 ::: moniker-end
 ::: moniker range="= vs-2017"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat amd64_arm uwp -vcvars_ver=14.0"`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.0`
 
 ::: moniker-end
 ::: moniker range="< vs-2017"
 
-`%comspec% /k ""C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"" amd64 -vcvars_ver=12.0`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=12.0`
 
 ::: moniker-end
 
@@ -228,43 +227,43 @@ Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional ma
 
 When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages, or you can use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), use the search box at the top of the page.
 
-## In This Section
+## In this section
 
 These articles show how to build apps on the command line, and describe how to customize the command-line build environment. Some show how to use 64-bit toolsets, and target x86, x64, ARM, and ARM64 platforms. They also describe use of the command-line build tools MSBuild and NMAKE.
 
-[Walkthrough: Compiling a Native C++ Program on the Command Line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a native C++ program on the command line](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 Gives an example that shows how to create and compile a C++ program on the command line.
 
-[Walkthrough: Compile a C Program on the Command Line](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+[Walkthrough: Compile a C program on the command line](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 Describes how to compile a program written in the C programming language.
 
-[Walkthrough: Compiling a C++/CLI Program on the Command Line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CLI program on the command line](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
 Describes how to create and compile a C++/CLI program that uses the .NET Framework.
 
-[Walkthrough: Compiling a C++/CX Program on the Command Line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
+[Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
 Describes how to create and compile a C++/CX program that uses the Windows Runtime.
 
-[Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
+[Set the path and environment variables for command-line builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 How to set environment variables to use a 32-bit or 64-bit toolset to target x86, x64, ARM, and ARM64 platforms.
 
-[NMAKE Reference](reference/nmake-reference.md)<br/>
+[NMAKE reference](reference/nmake-reference.md)<br/>
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).
 
 [MSBuild on the command line - C++](msbuild-visual-cpp.md)<br/>
 Provides links to articles that discuss how to use msbuild.exe from the command line.
 
-## Related Sections
+## Related sections
 
-[/MD, /MT, /LD (Use Run-Time Library)](reference/md-mt-ld-use-run-time-library.md)<br/>
+[/MD, /MT, /LD (Use run-time library)](reference/md-mt-ld-use-run-time-library.md)<br/>
 Describes how to use these compiler options to use a Debug or Release run-time library.
 
-[C/C++ Compiler Options](reference/compiler-options.md)<br/>
+[C/C++ compiler options](reference/compiler-options.md)<br/>
 Provides links to articles that discuss the C and C++ compiler options and CL.exe.
 
-[MSVC Linker Options](reference/linker-options.md)<br/>
+[MSVC linker options](reference/linker-options.md)<br/>
 Provides links to articles that discuss the linker options and LINK.exe.
 
-[Additional MSVC Build Tools](reference/c-cpp-build-tools.md)<br/>
+[Additional MSVC build tools](reference/c-cpp-build-tools.md)<br/>
 Provides links to the C/C++ build tools that are included in Visual Studio.
 
 ## See also
