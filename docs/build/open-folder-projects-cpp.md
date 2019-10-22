@@ -1,6 +1,6 @@
 ---
 title: "Open Folder support for C++ build systems in Visual Studio"
-ms.date: "08/20/2019"
+ms.date: "10/21/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
@@ -67,6 +67,9 @@ If, for example, you choose **x64-Debug**, Visual Studio creates a file called *
 ```
 
 This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
+
+> [!NOTE]
+> If Visual Studio seems to be ignoring settings in *CppProperties.json*, try adding an exception to your *.gitignore* file like this: `!/CppProperties.json`.
 
 ## Example configuration for GCC
 

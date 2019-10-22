@@ -26,7 +26,7 @@ The following topics are discussed:
 
 - [Punctuation and special characters](../c-language/punctuation-and-special-characters.md)
 
-The section also includes reference tables for [Trigraphs](../c-language/trigraphs.md), [Limits on Floating-Point Constants](../c-language/limits-on-floating-point-constants.md), [C++ Integer Limits](../c-language/cpp-integer-limits.md), and [Escape Sequences](../c-language/escape-sequences.md).
+The section also includes reference tables for [Trigraphs](../c-language/trigraphs.md), [Limits on Floating-Point Constants](../c-language/limits-on-floating-point-constants.md), [C and C++ Integer Limits](../c-language/cpp-integer-limits.md), and [Escape Sequences](../c-language/escape-sequences.md).
 
 Operators are symbols (both single characters and character combinations) that specify how values are to be manipulated. Each symbol is interpreted as a single unit, called a token. For more information, see [Operators](../c-language/c-operators.md).
 

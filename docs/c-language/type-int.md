@@ -12,7 +12,7 @@ The type specifiers `int` and `unsigned int` (or simply `unsigned`) define certa
 
 **Microsoft Specific**
 
-Signed integers are represented in two's-complement form. The most-significant bit holds the sign: 1 for negative, 0 for positive and zero. The range of values is given in [C++ Integer Limits](../c-language/cpp-integer-limits.md), which is taken from the LIMITS.H header file.
+Signed integers are represented in two's-complement form. The most-significant bit holds the sign: 1 for negative, 0 for positive and zero. The range of values is given in [C and C++ Integer Limits](../c-language/cpp-integer-limits.md), which is taken from the LIMITS.H header file.
 
 **END Microsoft Specific**
 

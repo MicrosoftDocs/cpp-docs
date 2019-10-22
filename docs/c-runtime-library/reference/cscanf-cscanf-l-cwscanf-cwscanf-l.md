@@ -1,6 +1,6 @@
 ---
 title: "_cscanf, _cscanf_l, _cwscanf, _cwscanf_l"
-ms.date: "11/04/2016"
+ms.date: "10/21/2019"
 api_name: ["_cscanf_l", "_cscanf", "_cwscanf", "_cwscanf_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -12,6 +12,9 @@ ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
 # _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
 Reads formatted data from the console. More secure versions of these functions are available; see [_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md).
+
+> [!NOTE] 
+> In Visual Studio 2015 The `printf` and `scanf` family of functions were declared as **inline** and moved to the `<stdio.h>` and `<conio.h>` headers. If you are migrating older code you might see *LNK2019* in connection with these functions. For more information, see [Visual C++ change history 2003 - 2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
 > [!IMPORTANT]
 > This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
