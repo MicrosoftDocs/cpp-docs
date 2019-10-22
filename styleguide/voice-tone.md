@@ -10,7 +10,7 @@ contains the following recommendations:
 - [Use active voice](#use-active-voice)
 - [Target a fifth grade reading level](#target-a-fifth-grade-reading-level)
 - [Avoid future tense](#avoid-future-tense)
-- [What is it - so what?](#what-is-it-so-what)
+- [What is it, and why use it](#what-is-it-and-why-use-it)
 
 You can see examples of each of these recommendations as you read this style guide. We've
 written this guide following our guidelines to provide examples for you to follow as you build
@@ -95,7 +95,7 @@ obvious question is *when*. If you say 'Learning PowerShell will be good for you
 question for the reader is, when will it be good? You can just say "Learning PowerShell is
 good for you," instead.
 
-## What is it - so what?
+## What is it, and why use it
 
 Whenever you introduce a new concept to the reader, define the concept first. Only then explain
 why it's useful. It's important for readers to understand what something is before they can
