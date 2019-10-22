@@ -1,6 +1,6 @@
 ---
 title: "Linker Tools Error LNK2019"
-ms.date: "12/15/2017"
+ms.date: "10/22/2019"
 f1_keywords: ["LNK2019"]
 helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_version"]
 ---
@@ -18,9 +18,13 @@ There are many ways to get this error, but all of them involve a reference to a 
 
 Here are some common problems that cause LNK2019:
 
+### The source file that contains the definition of the symbol is not compiled
+
+In Visual Studio, verify that the source file that contains the definition is compiled as part of your project. Check the intermediate build output directory for a matching .obj file. If the source file isn't compiled, right-click on the file in Solution Explorer and choose **Properties** to check the properties of the file. The **Configuration Properties** > **General** page should show an **Item Type** of **C/C++ Compiler**. On the command line, verify that the source file that contains the definition is compiled.
+
 ### The object file or library that contains the definition of the symbol is not linked
 
-In Visual Studio, verify that the source file that contains the definition is built and linked as part of your project. On the command line, verify that the source file that contains the definition is compiled, and that the resulting object file is included in the list of files to link.
+In Visual Studio, verify that the source file that contains the definition is both built and linked as part of your project. On the command line, verify that the source file that contains the definition is compiled, and that the resulting object file is included in the list of files to link.
 
 ### The declaration of the symbol is not spelled the same as the definition of the symbol
 
@@ -56,7 +60,7 @@ In earlier versions of Visual Studio, this level of dependency was sufficient. H
 
 ### An entry point is not defined
 
-The application code must define an appropriate entry point: `main` or `wmain` for console applications, `WinMain` or `wWinMain` for Windows applications. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use a custom entry point, specify the [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option. 
+The application code must define an appropriate entry point: `main` or `wmain` for console applications, `WinMain` or `wWinMain` for Windows applications. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use a custom entry point, specify the [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option.
 
 ### You build a console application by using settings for a Windows application
 
@@ -212,4 +216,3 @@ To fix this error, change `unsigned short` to `wchar_t` or `WCHAR`, or compile L
 ## Additional resources
 
 For more information about possible causes and solutions for LNK2001, see the Stack Overflow question [What is an undefined reference/unresolved external symbol error and how do I fix it?](https://stackoverflow.com/q/12573816/2002113).
-
