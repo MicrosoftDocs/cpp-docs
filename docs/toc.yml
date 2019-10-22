@@ -2969,7 +2969,7 @@
                           href: c-language/c-integer-constants.md
                         - name: Integer types
                           href: c-language/integer-types.md
-                        - name: C++ integer limits
+                        - name: C and C++ integer limits
                           href: c-language/cpp-integer-limits.md
                     - name: C character constants
                       expanded: false
