@@ -1,6 +1,6 @@
 ---
 title: "Visual C++ change history 2003 - 2015"
-ms.date: "08/30/2017"
+ms.date: "10/21/2019"
 helpviewer_keywords: ["breaking changes [C++]"]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
 ---
@@ -99,7 +99,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
 
    When compiling C++ code, [va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) now validates at compile-time that the argument passed to it isn't of reference type. Reference-type arguments are prohibited by the C++ Standard.
 
-#### \<stdio.h> and \<conio.h>
+#### <a name="stdio_and_conio"></a> \<stdio.h> and \<conio.h>
 
 - **The printf and scanf family of functions are now defined inline.**
 
