@@ -962,4 +962,4 @@ typedef typename Allocator::value_type value_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter _ `Ty`.
+The type is a synonym for the template parameter `Type`.
