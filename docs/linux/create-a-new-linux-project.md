@@ -1,6 +1,6 @@
 ---
 title: "Create a new C++ Linux project in Visual Studio"
-ms.date: "06/11/2019"
+ms.date: "09/23/2019"
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
 
@@ -14,7 +14,9 @@ Linux projects are available in Visual Studio 2017 and later.
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and setup the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
-When you create a new C++ project for Linux in Visual Studio, you can choose to create a Visual Studio project or a CMake project. This article describes how to create a Visual Studio project. For information about how to create and work with existing CMake Projects, see [Create and configure a Linux CMake Project ](cmake-linux-project.md).
+When you create a new C++ project for Linux in Visual Studio, you can choose to create a Visual Studio project or a CMake project. This article describes how to create a Visual Studio project. In general, for new projects that you intend to to open-source or compile for cross-platform development, we recommend that you use CMake. With a CMake project you can build and debug the same project on both Windows and Linux. For more information, see [Create and configure a Linux CMake Project](cmake-linux-project.md).
+
+If you have an existing Windows Visual Studio solution that you would like to extend to compile for Linux, and CMake is not an option, then you can add a Visual Studio Linux project to the Windows solution, along with a **Shared Items** project. Put the code that is shared between both platforms in the Shared Items project, and add a reference to that project from the Windows and Linux projects.
 
 ## To create a new Linux project
 
