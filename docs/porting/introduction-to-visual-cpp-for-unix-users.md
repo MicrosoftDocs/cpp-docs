@@ -24,7 +24,7 @@ For programs compiled with GCC or Clang, Visual Studio invokes GDB, LLDB, or wha
 
 The Visual Studio project system is called MSBuild. It uses project files in XML format; C++ project files have the extension .vcxproj. An application that consists of multiple libraries and executables, each potentially built with a different set of compiler options or even in a different language, are stored in multiple projects that are part of a single *solution*. A solution is an abstraction for a container to group multiple projects together. Information about solutions is stored in a solution file with the extension .sln. For more information, see [Solutions and Projects in Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio) and [Using the Visual Studio IDE for C++ Desktop Development](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md). From the main menu, choose **File** > **New** > **Project** to see the available Visual Studio project templates.
 
-Starting in Visual Studio 2017, support for CMake projects is added, as well as options for using the Microsoft C++ compiler with any arbitrary build system, or with a loose folder of source files and no project files. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md) and [Open Folder projects in Visual Studio](../build/open-folder-projects.md).
+Starting in Visual Studio 2017, support for CMake projects is added, as well as options for using the Microsoft C++ compiler with any arbitrary build system, or with a loose folder of source files and no project files. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md) and [Open Folder projects in Visual Studio](../build/open-folder-projects-cpp.md).
 
 ## Microsoft-specific modifiers
 
@@ -40,7 +40,7 @@ By default, all precompiled code is specified in the files *pch.h* and *pch.cpp*
 
 ## Related sections
 
-For more information, see [Porting from UNIX to Win32](../porting/porting-from-unix-to-win32.md).
+For more information, see [Running Linux programs on Windows](../porting/porting-from-unix-to-win32.md).
 
 ## See also
 
