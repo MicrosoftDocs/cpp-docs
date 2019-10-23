@@ -2836,7 +2836,7 @@
 - name: Port and upgrade C++ code
   expanded: false
   items:
-    - name: Visual C++ Porting and Upgrade Guide
+    - name: Microsoft C++ Porting and Upgrade Guide
       href: porting/visual-cpp-porting-and-upgrading-guide.md
     - name: Visual C++ change history 2003 - 2015
       href: porting/visual-cpp-change-history-2003-2015.md
@@ -2844,7 +2844,7 @@
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
     - name: C++ Binary Compatibility between 2015 and 2017
       href: porting/binary-compat-2015-2017.md
-    - name: Overview of potential upgrade issues (Visual C++)
+    - name: Overview of potential upgrade issues
       href: porting/overview-of-potential-upgrade-issues-visual-cpp.md
     - name: Port 3rd-party libraries
       href: porting/porting-third-party-libraries.md
@@ -2874,13 +2874,13 @@
           href: porting/floating-point-migration-issues.md
         - name: Use native multi-targeting in Visual Studio to build old projects
           href: porting/use-native-multi-targeting.md
-        - name: Visual C++ features deprecated in Visual Studio 2019
+        - name: C++ features deprecated in Visual Studio 2019
           href: porting/features-deprecated-in-visual-studio.md
         - name: Build system changes
           href: porting/build-system-changes.md
-    - name: Introduction to Visual C++ for UNIX Users
+    - name: Introduction to Microsoft C++ for UNIX Users
       href: porting/introduction-to-visual-cpp-for-unix-users.md
-    - name: Port from UNIX to Win32
+    - name: Running Linux programs on Windows
       href: porting/porting-from-unix-to-win32.md
     - name: Port to the Universal Windows Platform (C++)
       items: 

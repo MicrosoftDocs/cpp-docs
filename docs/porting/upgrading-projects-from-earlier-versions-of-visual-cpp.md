@@ -1,7 +1,7 @@
 ---
 title: "Upgrading Projects from Earlier Versions of Visual C++"
 description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
-ms.date: "05/03/2019"
+ms.date: "10/23/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---
@@ -16,11 +16,11 @@ Many upgraded projects and solutions can be built successfully without modificat
 
 1. Make a copy of the existing project and solution files. Install the current version of Visual Studio and the earlier version side by side so that you can compare versions of the files if you want to.
 
-2. In the current version of Visual Studio, open—and thereby upgrade—the copy of the project or solution and save it.
+2. In the current version of Visual Studio, open the copy of the project or solution. Visual Studio will offer to upgrade it. When that process completes, save the project.
 
-3. For each converted project, open the shortcut menu and choose **Properties**. Under **Configuration Properties**, select **General** and then for **Platform Toolset**, select the current version. (For example, for Visual Studio 2017, select **v141**.)
+3. For each converted project, open the shortcut menu and choose **Properties**. Under **Configuration Properties**, select **General** and then for **Platform Toolset**, select the current version. (For example, for Visual Studio 2019, select **v142**.)
 
-4. Build the solution. If the build fails, modify the settings and rebuild.
+4. Build the solution. If the build fails, fix the errors, and/or modify the build settings and rebuild.
 
 Data sources are contained in a separate database project so that you can more easily modify and debug the stored procedures in those sources. If you upgrade a C++ project that contains data sources, a separate database project is automatically created.
 
