@@ -1,6 +1,6 @@
 ---
 title: "Create a new C++ Linux project in Visual Studio"
-ms.date: "09/24/2019"
+ms.date: "10/24/2019"
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
 
