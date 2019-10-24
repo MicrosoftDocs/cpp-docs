@@ -1,13 +1,13 @@
 ---
-title: "DUMPBIN Options"
+title: "DUMPBIN options"
 ms.date: "10/24/2019"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
 ---
-# DUMPBIN Options
+# DUMPBIN options
 
-An option consists of an option specifier, which is either a dash ( `-` ) or a forward slash (`/`), followed by the name of the option. Option names can't be abbreviated. Some options take arguments, specified after a colon (`:`). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive. Most options apply to all binary files, but a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](out-dumpbin.md) option to send output to a file.
+An option consists of an *option specifier*, which is either a dash (`-`) or a forward slash (`/`), followed by the name of the option. Option names can't be abbreviated. Some options take arguments, specified after a colon (`:`). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments aren't case-sensitive. Most options apply to all binary files, but a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](out-dumpbin.md) option to send output to a file.
 
 DUMPBIN has the following options:
 
@@ -49,7 +49,7 @@ DUMPBIN has the following options:
 
 - [/RANGEE:vaMin\[,vaMax\]](range.md)
 
-- [/RAWDATA\[:{NONE\|1\|2\|4\|8}[,#\]\]](rawdata.md)
+- [/RAWDATA\[:{NONE\|1\|2\|4\|8}\[,#\]\]](rawdata.md)
 
 - [/RELOCATIONS](relocations.md)
 
@@ -61,7 +61,7 @@ DUMPBIN has the following options:
 
 - [/TLS](tls.md)
 
-For a list of the options supported by DUMPBIN on the command line, use the **/?** option.
+To list the options supported by DUMPBIN on the command line, use the **/?** option.
 
 ## See also
 
