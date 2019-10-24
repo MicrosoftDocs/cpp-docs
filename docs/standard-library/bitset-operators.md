@@ -83,7 +83,7 @@ A text representation of the bit sequence in `ostr`.
 
 The template function overloads `operator<<`, allowing a bitset to be written out without first converting it into a string. The template function effectively executes:
 
-**ostr** <<_*Right*. [to_string](bitset-class.md) <**CharType**, **Traits**, **allocator**\<**CharType**>>()
+`ostr << right.`[to_string](bitset-class.md)`<CharType, Traits, allocator<CharType>>()`
 
 ### Example
 
@@ -123,15 +123,13 @@ Reads a string of bit characters into a bitset.
 ```
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
-    basic_istream<CharType, Traits>&
-_Istr,
-    bitset<N>&
-    right);
+    basic_istream<CharType, Traits>& i_str,
+    bitset<N>& right);
 ```
 
 ### Parameters
 
-*_Istr*\
+*i_str*\
 The string that is entered into the input stream to be inserted into the bitset.
 
 *right*\
@@ -139,13 +137,13 @@ The bitset that is receiving the bits from the input stream.
 
 ### Return Value
 
-The template function returns the string *_Istr*.
+The template function returns the string *i_str*.
 
 ### Remarks
 
-The template function overloads `operator>>` to store in the bitset _ *Right* the value bitset(`str`), where `str` is an object of type [basic_string](basic-string-class.md) < **CharType**, **Traits**, **allocator**\< **CharType**> > **&** extracted from *_Istr*.
+The template function overloads `operator>>` to store in the bitset *right* the value `bitset(str)`, where `str` is an object of type [basic_string](basic-string-class.md)`< CharType, Traits, allocator< CharType > >&` extracted from *i_str*.
 
-The template function extracts elements from *_Istr* and inserts them into the bitset until:
+The template function extracts elements from *i_str* and inserts them into the bitset until:
 
 - All the bit elements have been extracted from the input stream and stored in the bitset.
 
