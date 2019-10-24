@@ -1,13 +1,13 @@
 ---
 title: "DUMPBIN Options"
-ms.date: "11/04/2016"
+ms.date: "10/24/2019"
 f1_keywords: ["dumpbin"]
 helpviewer_keywords: ["DUMPBIN program, options"]
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
 ---
 # DUMPBIN Options
 
-An option consists of an option specifier, which is either a dash ( - ) or a forward slash (/), followed by the name of the option. Option names cannot be abbreviated. Some options take arguments, specified after a colon (:). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive. Most options apply to all binary files; a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](out-dumpbin.md) option to send output to a file.
+An option consists of an option specifier, which is either a dash ( `-` ) or a forward slash (`/`), followed by the name of the option. Option names can't be abbreviated. Some options take arguments, specified after a colon (`:`). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments are not case sensitive. Most options apply to all binary files, but a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](out-dumpbin.md) option to send output to a file.
 
 DUMPBIN has the following options:
 
@@ -21,9 +21,9 @@ DUMPBIN has the following options:
 
 - [/DIRECTIVES](directives.md)
 
-- [/DISASM](disasm.md)
+- [/DISASM\[:{BYTES\|NOBYTES}\]](disasm.md)
 
-- [/ERRORREPORT (dumpbin.exe)](errorreport-dumpbin-exe.md)
+- [/ERRORREPORT:{NONE|PROMPT|QUEUE|SEND}](errorreport-dumpbin-exe.md)
 
 - [/EXPORTS](dash-exports.md)
 
@@ -31,27 +31,29 @@ DUMPBIN has the following options:
 
 - [/HEADERS](headers.md)
 
-- [/IMPORTS](imports-dumpbin.md)
+- [/IMPORTS\[:filename\]](imports-dumpbin.md)
 
 - [/LINENUMBERS](linenumbers.md)
 
-- [/LINKERMEMBER](linkermember.md)
+- [/LINKERMEMBER\[:{1|2}\]](linkermember.md)
 
 - [/LOADCONFIG](loadconfig.md)
 
-- [/OUT](out-dumpbin.md)
+- [/NOPDB](nopdb.md)
+
+- [/OUT:filename](out-dumpbin.md)
 
 - [/PDATA](pdata.md)
 
-- [/PDBPATH](pdbpath.md)
+- [/PDBPATH\[:VERBOSE\]](pdbpath.md)
 
-- [/RANGE](range.md)
+- [/RANGEE:vaMin\[,vaMax\]](range.md)
 
-- [/RAWDATA](rawdata.md)
+- [/RAWDATA\[:{NONE\|1\|2\|4\|8}[,#\]\]](rawdata.md)
 
 - [/RELOCATIONS](relocations.md)
 
-- [/SECTION](section-dumpbin.md)
+- [/SECTION:name](section-dumpbin.md)
 
 - [/SUMMARY](summary.md)
 
@@ -59,7 +61,9 @@ DUMPBIN has the following options:
 
 - [/TLS](tls.md)
 
+For a list of the options supported by DUMPBIN on the command line, use the **/?** option.
+
 ## See also
 
-[Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
+[Additional MSVC Build Tools](c-cpp-build-tools.md)\
 [DUMPBIN Reference](dumpbin-reference.md)
