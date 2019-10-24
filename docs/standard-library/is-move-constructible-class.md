@@ -7,7 +7,7 @@ ms.assetid: becdf076-7419-488d-a335-78adf2478b9b
 ---
 # is_move_constructible Class
 
-Tests whether the type has a move constructor.
+Tests whether the type can be constructed by using a move operation.
 
 ## Syntax
 
@@ -23,7 +23,8 @@ The type to be evaluated
 
 ## Remarks
 
-A type predicate that evaluates to true if the type *T* can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
+A type predicate that evaluates to true if the type *T* can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.\
+Note: A type *T* without a move constructor, but with a copy constructor that accepts a `const T&` argument, satisfies `std::is_move_constructible`.
 
 ## Requirements
 
