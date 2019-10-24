@@ -22,13 +22,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, variables of type **bool** are displayed as 1 or 0.
 
-`boolalpha` effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
+`boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
 
 [noboolalpha](../standard-library/ios-functions.md#noboolalpha) reverses the effect of `boolalpha`.
 
@@ -74,7 +74,7 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
@@ -117,7 +117,7 @@ int main( )
 Configures the flags of an `ios_base` object to use a default display format for float values.
 
 ```cpp
-ios_base& defaultfloat(ios_base& _Iosbase);
+ios_base& defaultfloat(ios_base& iosbase);
 ```
 
 ### Parameters
@@ -127,7 +127,7 @@ An `ios_base` object.
 
 ### Remarks
 
-The manipulator effectively calls _I `osbase.`[ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, then returns _I `osbase`.
+The manipulator effectively calls `iosbase.`[ios_base::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, then returns *iosbase*.
 
 ## <a name="fixed"></a> fixed
 
@@ -144,7 +144,7 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
@@ -192,7 +192,7 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
@@ -239,7 +239,7 @@ A reference to the object from which *str* is derived.
 
 [showpos](../standard-library/ios-functions.md#showpos) causes the sign to display for positive numbers.
 
-The manipulator effectively calls `str`. [setf](../standard-library/ios-base-class.md#setf)( [ios_base::internal](../standard-library/ios-base-class.md#fmtflags), [ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::internal](../standard-library/ios-base-class.md#fmtflags)`, `[ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
 ### Example
 
@@ -291,11 +291,11 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::left`, `ios_base::adjustfield`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::left, ios_base::adjustfield)`, and then returns *str*.
 
 ### Example
 
@@ -346,13 +346,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, `noboolalpha` is in effect.
 
-`noboolalpha` effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::boolalpha`), and then returns *str*.
+`noboolalpha` effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::boolalpha)`, and then returns *str*.
 
 [boolalpha](../standard-library/ios-functions.md#boolalpha) reverses the effect of `noboolalpha`.
 
@@ -375,13 +375,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 `noshowbase` is on by default. Use [showbase](../standard-library/ios-functions.md#showbase) to indicate the notational base of numbers.
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showbase`), and then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showbase)`, and then returns *str*.
 
 ### Example
 
@@ -402,13 +402,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 `noshowpoint` is on by default; use [showpoint](../standard-library/ios-functions.md#showpoint) and [precision](../standard-library/ios-base-class.md#precision) to display zeros after the decimal point.
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showpoint`), and then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showpoint)`, and then returns *str*.
 
 ### Example
 
@@ -449,13 +449,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 `noshowpos` is on by default.
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::showps`), then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showps)`, then returns *str*.
 
 ### Example
 
@@ -476,13 +476,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, [skipws](../standard-library/ios-functions.md#skipws) is in effect. When a space is read in the input stream, it signals the end of the buffer.
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::skipws`), and then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::skipws)`, and then returns *str*.
 
 ### Example
 
@@ -518,13 +518,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 [unitbuf](../standard-library/ios-functions.md#unitbuf) causes the buffer to be processed when it is not empty.
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`), and then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::unitbuf)`, and then returns *str*.
 
 ## <a name="nouppercase"></a> nouppercase
 
@@ -541,11 +541,11 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
-The manipulator effectively calls `str`.[unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::uppercase`), and then returns *str*.
+The manipulator effectively calls `str.`[unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::uppercase)`, and then returns *str*.
 
 ### Example
 
@@ -572,7 +572,7 @@ A reference to the object from which *str* is derived.
 
 By default, integer variables are displayed in base 10 notation. [dec](../standard-library/ios-functions.md#dec) and [hex](../standard-library/ios-functions.md#hex) also change the way integer variables appear.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::oct`, `ios_base::basefield`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::oct, ios_base::basefield)`, and then returns *str*.
 
 ### Example
 
@@ -599,7 +599,7 @@ A reference to the object from which *str* is derived.
 
 [left](../standard-library/ios-functions.md#left) also modifies the justification of text.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::right`, `ios_base::adjustfield`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::right, ios_base::adjustfield)`, and then returns *str*.
 
 ### Example
 
@@ -650,13 +650,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, [fixed](../standard-library/ios-functions.md#fixed) notation is in effect for floating-point numbers.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::scientific`, `ios_base::floatfield`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::scientific, ios_base::floatfield)`, and then returns *str*.
 
 ### Example
 
@@ -695,13 +695,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 The notational base of a number can be changed with [dec](../standard-library/ios-functions.md#dec), [oct](../standard-library/ios-functions.md#oct), or [hex](../standard-library/ios-functions.md#hex).
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::showbase`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::showbase)`, and then returns *str*.
 
 ### Example
 
@@ -749,13 +749,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, [noshowpoint](../standard-library/ios-functions.md#noshowpoint) is in effect.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::showpoint`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::showpoint)`, and then returns *str*.
 
 ### Example
 
@@ -776,13 +776,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 [noshowpos](../standard-library/ios-functions.md#noshowpos) is the default.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::showpos`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::showpos)`, and then returns *str*.
 
 ### Example
 
@@ -821,13 +821,13 @@ A reference to an object of type [ios_base](../standard-library/ios-base-class.m
 
 ### Return Value
 
-A reference to the object from which _ *Str* is derived.
+A reference to the object from which *str* is derived.
 
 ### Remarks
 
 By default, `skipws` is in effect. [noskipws](../standard-library/ios-functions.md#noskipws) will cause spaces to be read from the input stream.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( `ios_base::skipws`), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::skipws)`, and then returns *str*.
 
 ### Example
 
@@ -881,7 +881,7 @@ Note that `endl` also flushes the buffer.
 
 [nounitbuf](../standard-library/ios-functions.md#nounitbuf) is in effect by default.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( [ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
 ## <a name="uppercase"></a>  uppercase
 
@@ -904,7 +904,7 @@ A reference to the object from which *str* is derived.
 
 By default, [nouppercase](../standard-library/ios-functions.md#nouppercase) is in effect.
 
-The manipulator effectively calls `str`.[setf](../standard-library/ios-base-class.md#setf)( [ios_base::uppercase](../standard-library/ios-base-class.md#fmtflags)), and then returns *str*.
+The manipulator effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(`[ios_base::uppercase](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns *str*.
 
 ### Example
 
