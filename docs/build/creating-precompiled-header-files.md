@@ -1,6 +1,6 @@
 ---
 title: "Precompiled Header Files"
-ms.date: "08/19/2019"
+ms.date: "10/24/2019"
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
 ---
