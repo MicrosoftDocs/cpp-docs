@@ -1,30 +1,43 @@
 ---
-title: "Upgrading Projects from Earlier Versions of Visual C++"
+title: "Upgrading C++ projects from earlier versions of Visual Studio"
 description: "How to upgrade Microsoft C++ projects from older versions of Visual Studio."
-ms.date: "10/23/2019"
+ms.date: "10/25/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---
-# Upgrading Projects from Earlier Versions of Visual C++
+# Upgrading C++ projects from earlier versions of Visual Studio
 
-In most cases, you can open a project that was created in an earlier version of Visual Studio. However, to accomplish this, Visual Studio upgrades the project. If you save this upgraded project, it cannot be opened in the earlier version.
+To upgrade a project created in Visual Studio 2008 or earlier, you must first use Visual Studio 2010 to convert the project from the VCBuild to the MSBuild format. For more information, see [Instructions for Visual Studio 2008](use-native-multi-targeting.md#instructions-for-visual-studio-2008).
 
-> [!IMPORTANT]
-> If you try to convert a project that was already converted, Visual Studio asks for confirmation because reconversion deletes existing files.
+To upgrade a project created in Visual Studio 2010 or later, simply open the project in the latest version of Visual Studio. Visual Studio offers to upgrade the project to the current schema. If you choose **No**, and you have the older version of Visual Studio on your computer, you can work in the project in a newer version of Visual Studio and continue to target the older toolset. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md). If you choose **Yes**, then the project will be converted and cannot be converted back to the earlier version. Therefore, in upgrade scenarios, it is good practice to make a copy of the existing project and solution files.
 
-Many upgraded projects and solutions can be built successfully without modification. However, some projects might require changes to settings, source code, or both. We recommend that you use the following guidelines to address the settings issues first, and then if the project still doesn't build, you can address the code issues. For more information, see [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
+If your project must continue to run on Windows XP, you can upgrade it to Visual Studio 2019, but you have to specify the toolset as v141 or earlier.
 
-1. Make a copy of the existing project and solution files. Install the current version of Visual Studio and the earlier version side by side so that you can compare versions of the files if you want to.
+## Upgrade reports
 
-2. In the current version of Visual Studio, open the copy of the project or solution. Visual Studio will offer to upgrade it. When that process completes, save the project.
+When you upgrade a project, you get an upgrade report, which is also saved in your project folder as UpgradeLog.htm. The upgrade report shows a summary of what problems were encountered and some information about changes that were made, including:
 
-3. For each converted project, open the shortcut menu and choose **Properties**. Under **Configuration Properties**, select **General** and then for **Platform Toolset**, select the current version. (For example, for Visual Studio 2019, select **v142**.)
+1. Project properties
 
-4. Build the solution. If the build fails, fix the errors, and/or modify the build settings and rebuild.
+2. Include files
 
-Data sources are contained in a separate database project so that you can more easily modify and debug the stored procedures in those sources. If you upgrade a C++ project that contains data sources, a separate database project is automatically created.
+3. Code that no longer compiles cleanly due to compiler conformance improvements or changes in the standard
 
-For information about how to update the targeted Windows versions, see [Modifying WINVER and _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).
+4. Code that relies on Visual Studio or Windows features that are no longer available or header files that either aren't included in a default installation of Visual Studio, or were removed from the product
+
+5. Code that no longer compiles due to changes in APIs such as renamed APIs, changed function signatures, or deprecated functions
+
+6. Code that no longer compiles due to changes in diagnostics, such as a warning becoming an error
+
+7. Linker errors due to libraries that were changed, especially when /NODEFAULTLIB is used
+
+8. Runtime errors or unexpected results due to behavior changes
+
+9. Errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
+
+Many upgraded projects and solutions can be built successfully without modification. However, the older the project, the more likely that it will require changes to project settings as well as source code. The C++ code editor displays red squiggles under the errors, and green squiggles to indicate warnings flagged by the default code analysis tools.
+
+We recommend that you use the following guidelines to address the settings issues first, and then if the project still doesn't build, you can address the code issues. For more information, see [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md).
 
 ## In this section
 
