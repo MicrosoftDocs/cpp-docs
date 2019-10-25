@@ -8,17 +8,21 @@ ms.topic: "overview"
 
 This topic provides a guide for upgrading Microsoft C++ code to the latest version of Visual Studio. This includes getting the code to compile and run correctly on a newer release of the tools, as well as taking advantage of new C++ language features and Visual Studio IDE features. The following scenarios are covered:
 
-- Upgrading from a project created in Visual Studio 2008 or earlier.
-- Upgrading from a project created in Visual Studio 2010 through 2013
-- Upgrading from a project created in Visual Studio 2015 or later
+- Upgrading from a project created in Visual Studio 2008 or earlier. First use Visual Studio 2010 to convert the project to MSBuild format, then open the project in Visual Studio 2019.
+- Upgrading from a project created in Visual Studio 2010 through 2015. Just open the project in Visual Studio 2019. The toolsets in Visual Studio 2015, Visual Studio 2017 and Visual Studio 2019 are binary-compatible, which eliminates the need to upgrade library dependencies.
+- Upgrading to the [Universal CRT](upgrade-your-code-to-the-universal-crt)
 - Upgrading third-party library dependencies
 - Upgrading from earlier versions of the Windows SDK
 - Upgrading to newer C++ language standards
 - Porting from Win32 to the Universal Windows Platform (UWP)
 
-The native Visual Studio build system (MSBuild) was originally designed for Windows applications. Although MSBuild templates are provided for Linux, Android and iOS projects, we recommend using CMake, especially if the project uses open-source libraries or is meant to run on multiple platforms. If upgrading your code to a new toolset is not an option, you can still use recent version of Visual Studio to build and edit projects that target older compiler toolsets and libraries. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+The native Visual Studio build system (MSBuild) was originally designed for Windows applications. MSBuild templates are also provided for remote building of Linux, Android and iOS projects. We recommend moving to CMake in Visual Studio when upgrading projects that use open-source libraries or are meant to run on multiple platforms.
 
-## Reasons to Upgrade C++ Code
+## Multitargeting vs. upgrading
+
+If upgrading your code base to a new toolset is not an option, you can still use a recent version of Visual Studio to build and edit projects that target older compiler toolsets and libraries. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+
+## Reasons to upgrade C++ code
 
 If a legacy application is running satisfactorily, in a secure environment, and is not under active development, then there might not be much incentive to upgrade it. However, if an application requires ongoing maintenance, or new feature development including performance or security improvements, then you might consider upgrading the code for any of the following reasons:
 
@@ -30,7 +34,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - Better standards conformance. The [/permissive-](../build/referencepermissive-standards-conformance.md) compiler option enables you to identify code that was formerly allowed by the Microsoft C++ compiler but does not conform to the current C++ standard.
 
-- Better run-time security, including features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (Visual Studio 2019 version 16.4).
+- Better run-time security, including more secure [C Runtime library]() features and compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (Visual Studio 2019 version 16.4).
 
 - Modern static analysis tools, including the C++ Core Guidelines and Clang-Tidy, help identify potential problems in your source code.
 
