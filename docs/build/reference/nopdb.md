@@ -16,8 +16,6 @@ Tells DUMPBIN not to load and search program database (PDB) files for symbol inf
 
 By default, DUMPBIN attempts to load PDB files for its target object files, libraries, or executables. DUMPBIN uses this information to match addresses to symbol names. The process can be time-consuming if the PDB files are large, or must be loaded from a remote server. The **/NOPDB** option tells DUMPBIN to skip this step. It only prints the addresses and symbol information available in the object file, library, or executable.
 
-The **/NOPDB** option is available starting in Visual Studio 2019.
-
 ### To set the /NOPDB linker option in Visual Studio
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
