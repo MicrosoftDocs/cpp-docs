@@ -9,6 +9,8 @@ ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
 
 An option consists of an *option specifier*, which is either a dash (`-`) or a forward slash (`/`), followed by the name of the option. Option names can't be abbreviated. Some options take arguments, specified after a colon (`:`). No spaces or tabs are allowed within an option specification. Use one or more spaces or tabs to separate option specifications on the command line. Option names and their keyword or file name arguments aren't case-sensitive. Most options apply to all binary files, but a few apply only to certain types of files. By default, DUMPBIN sends information to standard output. Use the [/OUT](out-dumpbin.md) option to send output to a file.
 
+## Options list
+
 DUMPBIN has the following options:
 
 - [/ALL](all.md)
@@ -65,5 +67,6 @@ To list the options supported by DUMPBIN on the command line, use the **/?** opt
 
 ## See also
 
-[Additional MSVC Build Tools](c-cpp-build-tools.md)\
-[DUMPBIN Reference](dumpbin-reference.md)
+[Additional MSVC build tools](c-cpp-build-tools.md)\
+[DUMPBIN command line](dumpbin-command-line.md)\
+[DUMPBIN reference](dumpbin-reference.md)
