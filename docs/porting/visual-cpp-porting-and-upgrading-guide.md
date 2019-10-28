@@ -53,6 +53,6 @@ For more information, see [Use native multi-targeting in Visual Studio to build 
 
 ## See also
 
-[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)
-[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)
-[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
+[C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)<br/>
+[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
+[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)<br/>

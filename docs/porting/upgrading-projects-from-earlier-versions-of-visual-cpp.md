@@ -5,7 +5,7 @@ ms.date: "10/29/2019"
 helpviewer_keywords: ["32-bit code porting", "upgrading Visual C++ applications, 32-bit code"]
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
 ---
-# Upgrading C++ projects from earlier versions of Visual Studio
+# Upgrade C++ projects from earlier versions of Visual Studio
 
 To upgrade a project created in Visual Studio 2008 or earlier, you must first use Visual Studio 2010 to convert the project from the VCBuild format (.vcproj) to the MSBuild format (.vcxproj). For more information, see [Instructions for Visual Studio 2008](use-native-multi-targeting.md#instructions-for-visual-studio-2008).
 
@@ -33,7 +33,7 @@ When you upgrade a project, you get an upgrade report, which is also saved in yo
 
 9. Errors that were introduced in the tools. If you encounter an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
 
-Some upgraded projects and solutions can be built successfully without modification. However, for older projects, it likely that it will require changes to project settings as well as source code. The C++ code editor displays red squiggles under the errors, and green squiggles to indicate warnings flagged by the default code analysis tools. There is no single correct way to go about fixing these, but some kind of phased approach is recommended. Before starting, review [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for more information on many kinds of common errors.
+Some upgraded projects and solutions can be built successfully without modification. However, most projects will likely require changes to project settings as well as source code. There is no single correct way to go about fixing these, but some kind of phased approach is recommended. Before starting, review [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for more information on many kinds of common errors.
 
  1. Set the Platform Toolset, C++ Language Standard, and Windows SDK version (if applicable) to the desired versions. (**Project** > **Properties** > **Configuration Properties** > **General**)
  1. If you have a lot of errors, turn off the [permissive-](../build/permissive-standards-conformance.md) option (**Project** > **Properties** > **Configuration Properties** > **C/C++** > **Language**) and [code analysis](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) (**Project** > **Properties** > **Configuration Properties** > **Code Analysis**) option temporarily to reduce the error count.
@@ -61,5 +61,5 @@ For hard-to-fix errors, try searching or posting a question on Stack Overflow or
 
 [What's New for Visual C++ in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Nonstandard Behavior](../cpp/nonstandard-behavior.md)
+[Nonstandard Behavior](../cpp/nonstandard-behavior.md)<br/>
 [Port data applications](../data/data-access-programming-mfc-atl.md)<br/>
