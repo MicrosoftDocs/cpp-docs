@@ -1,26 +1,17 @@
 ---
 title: "Microsoft C++ Porting and Upgrading Guide"
-ms.date: "10/25/2019"
+description: "Upgrade Microsoft C++ code to the latest version of Visual Studio."
+ms.date: "10/29/2019"
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: "overview"
 ---
 # Microsoft C++ Porting and Upgrading Guide
 
-This topic provides a guide for upgrading Microsoft C++ code to the latest version of Visual Studio. This includes getting the code to compile and run correctly on a newer release of the tools, as well as taking advantage of new C++ language features and Visual Studio IDE features. The following scenarios are covered:
+This topic provides a guide for upgrading Microsoft C++ code to the latest version of Visual Studio. If you are upgrading from a project created in Visual Studio 2008 or earlier, you must first use Visual Studio 2010 to convert the project to MSBuild format, then open the project in Visual Studio 2019. For projects created in Visual Studio 2010 through 2015, just open the project in Visual Studio 2019. For complete instructions, see [Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
 
-- Upgrading from a project created in Visual Studio 2008 or earlier. First use Visual Studio 2010 to convert the project to MSBuild format, then open the project in Visual Studio 2019.
-- Upgrading from a project created in Visual Studio 2010 through 2015. Just open the project in Visual Studio 2019. The toolsets in Visual Studio 2015, Visual Studio 2017 and Visual Studio 2019 are binary-compatible, which eliminates the need to upgrade library dependencies.
-- Upgrading to the [Universal CRT](upgrade-your-code-to-the-universal-crt)
-- Upgrading third-party library dependencies
-- Upgrading from earlier versions of the Windows SDK
-- Upgrading to newer C++ language standards
-- Porting from Win32 to the Universal Windows Platform (UWP)
+The toolsets in Visual Studio 2015, Visual Studio 2017 and Visual Studio 2019 are binary-compatible, which enables you to upgrade to a more recent version of the compiler without having to upgrade library dependencies. For more information, see [C++ Binary Compatibility between 2015 and 2019](binary-compat-2015-2017.md).
 
-The native Visual Studio build system (MSBuild) was originally designed for Windows applications. MSBuild templates are also provided for remote building of Linux, Android and iOS projects. We recommend moving to CMake in Visual Studio when upgrading projects that use open-source libraries or are meant to run on multiple platforms.
-
-## Multitargeting vs. upgrading
-
-If upgrading your code base to a new toolset is not an option, you can still use a recent version of Visual Studio to build and edit projects that target older compiler toolsets and libraries. For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
+When upgrading projects that use open-source libraries or are meant to run on multiple platforms, we recommended migrating to a CMake-based project. For more information, see [CMake projects in Visual Studio](../build/cmake-projects-in-visual-studio.md)
 
 ## Reasons to upgrade C++ code
 
@@ -36,20 +27,25 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - Better run-time security, including more secure [C Runtime library]() features and compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (Visual Studio 2019 version 16.4).
 
-- Modern static analysis tools, including the C++ Core Guidelines and Clang-Tidy, help identify potential problems in your source code.
+## Multitargeting vs. upgrading
 
-- Automatic formatting according to your choice of modern styles can help make legacy code much more readable.
+If upgrading your code base to a new toolset is not an option, you can still use a recent version of Visual Studio to build and edit projects that compile with older toolsets and libraries. In Visual Studio 2019 you can take advantage of features such as:
+
+- modern static analysis tools, including the C++ Core Guidelines checkers and Clang-Tidy, to help identify potential problems in your source code.
+
+- automatic formatting according to your choice of modern styles can help make legacy code much more readable.
+
+For more information, see [Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md).
 
 ## In this section
 
 |Title|Description|
 |-----------|-----------------|
-|[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Discusses how to use projects created in earlier versions of Visual Studio.|
-|[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)|Changes in the IDE and tools to the current version of Visual Studio|
-|[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)|Standards conformance improvements from Visual Studio 2015 to Visual Studio|
+|[Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|How to upgrade your code base to Visual Studio 2019 and v142 of the compiler.|
+|[C++ Binary Compatibility between 2015 and 2019](binary-compat-2015-2017.md)|Consume v140 libraries as-is from v142 projects.|
+|[Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)|Use Visual Studio 2019 with older compilers and libraries.|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Microsoft C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
 |[Visual C++ What's New 2003 through 2015](visual-cpp-what-s-new-2003-through-2015.md)|All the "what's new" information for Microsoft C++ from Visual Studio 2003 through Visual Studio 2015.|
-|[Porting 3rd-party libraries](porting-third-party-libraries.md)|How to use the **vcpkg** command line tool to port older open-source libraries to versions compiled with more recent Visual C++ toolsets.|
 |[Porting and Upgrading: Examples and Case Studies](porting-and-upgrading-examples-and-case-studies.md)|For this section, we ported and upgrades several samples and applications and discussed the experiences and results. You might find that reading these gives you a sense of what is involved in the porting and upgrading process. Throughout the process, we discuss tips and tricks for upgrading and show how specific errors were fixed.|
 |[Porting to the Universal Windows Platform](porting-to-the-universal-windows-platform-cpp.md)|Contains information about porting code to Windows 10|
 |[Introduction to Visual C++ for UNIX Users](introduction-to-visual-cpp-for-unix-users.md)|Provides information for UNIX users who are new to Visual C++ and want to become productive with it.|
@@ -58,3 +54,5 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 ## See also
 
 [C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md)
+[What's New for The C++ compiler in Visual Studio](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)
+[C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)

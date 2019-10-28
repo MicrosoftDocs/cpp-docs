@@ -61,5 +61,5 @@ When these products are installed, the **Platform Toolset** property drop-down i
 
 ## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md)
