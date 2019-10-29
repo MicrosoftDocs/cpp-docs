@@ -23,7 +23,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - Build times are significantly faster, due to performance improvements in the compiler and linker.
 
-- Better standards conformance. The [/permissive-](../build/referencepermissive-standards-conformance.md) compiler option enables you to identify code that was formerly allowed by the Microsoft C++ compiler but does not conform to the current C++ standard.
+- Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option enables you to identify code that was formerly allowed by the Microsoft C++ compiler but does not conform to the current C++ standard.
 
 - Better run-time security, including more secure [C Runtime library]() features and compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (Visual Studio 2019 version 16.4).
 
