@@ -2,7 +2,7 @@
 title: "/NOPDB"
 description: "The /NOPDB option keeps DUMPBIN from loading and searching PDB files for symbol information."
 ms.date: "10/29/2019"
-f1_keywords: ["/sourcelink"]
+f1_keywords: ["/NOPDB"]
 helpviewer_keywords: ["/NOPDB dumpbin option", "/NOPDB"]
 ---
 # /NOPDB
