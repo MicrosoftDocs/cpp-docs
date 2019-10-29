@@ -17,7 +17,9 @@ targets... : dependents...
 
 A *dependency line* specifies one or more targets, and zero or more dependents. If a target doesn't exist, or has an earlier timestamp than a dependent, NMAKE executes the commands in the command block. NMAKE also executes the command block if the target is a [pseudotarget](pseudotargets.md). Here's an example dependency line:
 
-`hi_bye.exe : hello.obj goodbye.obj helper.lib`
+```makefile
+hi_bye.exe : hello.obj goodbye.obj helper.lib
+```
 
 In this dependency line, `hi_bye.exe` is the target. Its dependencies are `hello.obj`, `goodbye.obj`, and `helper.lib`. The dependency line tells NMAKE to build the target whenever `hello.obj`, `goodbye.obj`, or `helper.lib` has changed more recently than `hi_bye.exe`.
 
@@ -96,7 +98,7 @@ climb.exe : up.obj
 
 To update a target in more than one description block using different commands, specify two consecutive colons (::) between targets and dependents.
 
-```mak
+```makefile
 target.lib :: one.asm two.asm three.asm
     ml one.asm two.asm three.asm
     lib target one.obj two.obj three.obj
@@ -194,7 +196,9 @@ Enclose directory names in braces (`{ }`). Separate multiple directories with a 
 
 This dependency line shows how to create a directory specification for a search:
 
-`reverse.exe : {\src\omega;e:\repo\backwards}retro.obj`
+```makefile
+reverse.exe : {\src\omega;e:\repo\backwards}retro.obj
+```
 
 The target `reverse.exe` has one dependent, `retro.obj`. The brace-enclosed list specifies two directories. NMAKE searches for `retro.obj` in the current directory first. If it isn’t there, NMAKE searches the `\src\omega` directory, then the `e:\repo\backwards` directory.
 
