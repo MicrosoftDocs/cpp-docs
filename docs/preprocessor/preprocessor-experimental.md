@@ -112,7 +112,7 @@ ADD_STD(string) s;
 
 ## Comma elision in variadic macros
 
-Consider the following example:
+The traditional MSVC preprocessor always removes commas before empty __VA_ARGS__ replacements. The experimental preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a **##** operator. Consider the following example:
 
 ```cpp
 void func(int, int = 2, int = 3);
@@ -120,30 +120,26 @@ void func(int, int = 2, int = 3);
 #define FUNC(a, …) func(a, __VA_ARGS__)
 int main()
 {
-    // The following macro is replaced with:
+    // In the traditional preprocessor, the following macro is replaced with:
     // func(10,20,30)
     FUNC(10, 20, 30);
-    // A conforming preprocessor will replace the following macro with:     func(1, );
-    // Which will result in a syntax error.
+
+    // A conforming preprocessor will replace the following macro with: func(1, ), which will result in a syntax error.
     FUNC(1, );
 }
 ```
 
-All major compilers have a preprocessor extension that helps address this issue. The traditional MSVC preprocessor always removes commas before empty __VA_ARGS__ replacements. In the updated preprocessor we have decided to more closely follow the behavior of other popular cross platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a ## operator.
+In the following example, in the call to `FUNC2(1)` the variadic argument is missing in the macro being evoked. In the call to `FUNC2(1, )` the variadic argument is empty, but not missing (notice the comma in the argument list).
 
 ```cpp
 #define FUNC2(a, …) func(a , ## __VA_ARGS__)
 int main()
 {
-    // The variadic argument is missing in the macro being evoked
-// Comma will be removed and replaced with:
-// func(1)
-FUNC2(1);
-    // The variadic argument is empty, but not missing (notice the
-// comma in the argument list). The comma will not be removed
-// when the macro is replaced.
-// func(1, )
-FUNC2(1, );
+   // Expands to func(1)
+   FUNC2(1);
+
+   // Expands to func(1, )
+   FUNC2(1, );
 }
 ```
 
@@ -158,8 +154,10 @@ In the traditional preprocessor, if a macro forwards one of its arguments to ano
 #define TWO_STRINGS( first, … ) #first, #__VA_ARGS__
 #define A( … ) TWO_STRINGS(__VA_ARGS__)
 const char* c[2] = { A(1, 2) };
+
 // Conformant preprocessor results:
 // const char c[2] = { "1", "2" };
+
 // Traditional preprocessor results, all arguments are in the first string:
 // const char c[2] = { "1, 2", };
 ```
@@ -168,7 +166,7 @@ When expanding `A()`, the traditional preprocessor forwards all of the arguments
 
 ## Rescanning replacement list for macros
 
-After a macro is replaced, the resulting tokens are rescanned for additional macro identifiers that need to be replaced. The algorithm used by the traditional preprocessor for doing the rescan is not conformant, as shown in this example based on actual code:
+After a macro is replaced, the resulting tokens are re-scanned for additional macro identifiers that need to be replaced. The algorithm used by the traditional preprocessor for doing the rescan is not conformant, as shown in this example based on actual code:
 
 ```cpp
 #define CAT(a,b) a ## b
@@ -176,21 +174,24 @@ After a macro is replaced, the resulting tokens are rescanned for additional mac
 // IMPL1 and IMPL2 are implementation details
 #define IMPL1(prefix,value) do_thing_one( prefix, value)
 #define IMPL2(prefix,value) do_thing_two( prefix, value)
+
 // MACRO chooses the expansion behavior based on the value passed to macro_switch
 #define DO_THING(macro_switch, b) CAT(IMPL, macro_switch) ECHO(( "Hello", b))
 DO_THING(1, "World");
+
 // Traditional preprocessor:
 // do_thing_one( "Hello", "World");
 // Conformant preprocessor:
 // IMPL1 ( "Hello","World");
 ```
 
-Although this example is a bit contrived, we have run into this issue few times when testing the preprocessor changes against real world code. To see what is going on we can break down the expansion starting with `DO_THING`:
+Although this example seems a bit contrived, it has been found to occur real world code. To see what is going on we can break down the expansion starting with `DO_THING`:
 
 ```cpp
 DO_THING(1, "World")— >
 CAT(IMPL, 1) ECHO(("Hello", "World"))
-```cpp
+```
+
 Second, CAT is expanded:
 
 ```cpp
@@ -226,7 +227,8 @@ The macro can be modified to behave the same under the experimental preprocessor
 #define CALL(macroName, args) macroName args
 #define DO_THING_FIXED(a,b) CALL( CAT(IMPL, a), ECHO(( "Hello",b)))
 DO_THING_FIXED(1, "World");
-// macro expanded to:
+
+// macro expands to:
 // do_thing_one( "Hello", "World");
 ```
 
