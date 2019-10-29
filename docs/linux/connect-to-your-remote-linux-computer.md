@@ -74,6 +74,20 @@ To set up this remote connection:
    Logs include connections, all commands sent to the remote machine (their text, exit code and execution time), and all output from Visual Studio to the shell. Logging works for any cross-platform CMake project or MSBuild-based Linux project in Visual Studio.
 
    You can configure the output to go to a file or to the **Cross Platform Logging** pane in the Output Window. For MSBuild-based Linux projects, commands issued to the remote machine by MSBuild are not routed to the **Output Window** because they are emitted out-of-process. Instead, they are logged to a file with the "msbuild_" prefix.
+   
+## TCP Port Forwarding
+
+Visual Studio's Linux support has a dependency on TCP port forwarding. **Rsync** and **gdbserver** will be affected if TCP port forwarding is disabled on your remote system. 
+
+Rsync is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows to be used for IntelliSense](https://docs.microsoft.com/en-us/cpp/linux/configure-a-linux-project?view=vs-2019#remote_intellisense). If you're not able to enable TCP port forwarding then you can disable the automatic download of remote headers via Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager. If the remote system you are trying to connect to does not have TCP port forwarding enabled, then you will see the following error when the download of remote headers for IntelliSense begins.
+
+![Headers Error](media/port_forwarding_headers_error.png)
+
+Rsync is also used by Visual Studio's CMake support to copy source files to the remote system. If you're not able to enable TCP port forwarding then you can use sftp as your remote copy sources method . Sftp is generally slower than rsync but does not have a dependency on TCP port forwarding. You can manage your remote copy sources method with the remoteCopySourcesMethod property in the [CMake Settings Editor](https://docs.microsoft.com/en-us/cpp/build/cmakesettings-reference?view=vs-2019#additional-settings-for-cmake-linux-projects). If TCP port forwarding is disabled on your remote system then you will see an error in the CMake output window the first time rsync is invoked.
+
+![Rsync Error](media/port_forwarding_copy_error.png)
+
+Gdbserver can be used for debugging on embedded devices. If you're not able to enable TCP port forwarding then you will need to use the gdb for all remote debugging scenarios. Gdb is used by default when debugging projects on a remote system. 
 
    ::: moniker-end
 
