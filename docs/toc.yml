@@ -1157,34 +1157,7 @@
                     - name: Sample makefile
                       href: build/reference/sample-makefile.md
                 - name: Description blocks
-                  expanded: false
-                  items: 
-                    - name: Description blocks
-                      href: build/reference/description-blocks.md
-                    - name: Targets
-                      expanded: false
-                      items: 
-                        - name: Targets
-                          href: build/reference/targets.md
-                        - name: Pseudotargets
-                          href: build/reference/pseudotargets.md
-                        - name: Multiple targets
-                          href: build/reference/multiple-targets.md
-                        - name: Cumulative dependencies
-                          href: build/reference/cumulative-dependencies.md
-                        - name: Targets in multiple description blocks
-                          href: build/reference/targets-in-multiple-description-blocks.md
-                        - name: Dependency side effects
-                          href: build/reference/dependency-side-effects.md
-                    - name: Dependents
-                      expanded: false
-                      items: 
-                        - name: Dependents
-                          href: build/reference/dependents.md
-                        - name: Inferred dependents
-                          href: build/reference/inferred-dependents.md
-                        - name: Search paths for dependents
-                          href: build/reference/search-paths-for-dependents.md
+                  href: build/reference/description-blocks.md
                 - name: Commands in a makefile
                   expanded: false
                   items: 
