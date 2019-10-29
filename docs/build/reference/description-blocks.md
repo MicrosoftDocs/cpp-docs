@@ -1,6 +1,6 @@
 ---
 title: "Description blocks"
-ms.date: "10/28/2019"
+ms.date: "10/29/2019"
 helpviewer_keywords: ["description blocks", "NMAKE program, description blocks", "blocks, description"]
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
 ---
@@ -19,7 +19,7 @@ A *dependency line* specifies one or more targets, and zero or more dependents. 
 
 `hi_bye.exe : hello.obj goodbye.obj helper.lib`
 
-In this example, `hi_bye.exe` is the target. Its dependencies are `hello.obj`, `goodbye.obj`, and `helper.lib`. This dependency line tells NMAKE to build the target whenever `hello.obj`, `goodbye.obj`, or `helper.lib` has changed more recently than `hi_bye.exe`.
+In this dependency line, `hi_bye.exe` is the target. Its dependencies are `hello.obj`, `goodbye.obj`, and `helper.lib`. The dependency line tells NMAKE to build the target whenever `hello.obj`, `goodbye.obj`, or `helper.lib` has changed more recently than `hi_bye.exe`.
 
 A target must be at the start of the line. It can't be indented with any spaces or tabs. Use a colon (`:`) to separate targets from dependents. Spaces or tabs are allowed between targets, the colon separator (`:`), and dependents. To split the dependency line, use a backslash (`\`) after a target or dependent.
 
@@ -40,11 +40,12 @@ bounce.exe leap.exe : jump.obj
    echo Building...
 ```
 
-is evaluated as this:
+is evaluated as:
 
 ```makefile
 bounce.exe : jump.obj
    echo Building...
+
 leap.exe : jump.obj
    echo Building...
 ```
@@ -61,14 +62,14 @@ bounce.exe : up.obj
    echo Building bounce.exe...
 ```
 
-is evaluated as this:
+is evaluated as:
 
 ```makefile
 bounce.exe : jump.obj up.obj
    echo Building bounce.exe...
 ```
 
-Multiple targets in multiple dependency lines in a single description block are evaluated as if each were specified in a separate description block, but targets that aren't in the last dependency line don't use the commands block. NMAKE attempts to use an inference rule for such targets.
+When you have multiple targets in multiple dependency lines in a single description block, NMAKE evaluates them as if each were specified in a separate description block. However, only targets in the last dependency line use the commands block. NMAKE attempts to use an inference rule for the other targets.
 
 For example, this set of rules,
 
@@ -78,13 +79,15 @@ bounce.exe climb.exe : up.obj
    echo Building bounce.exe...
 ```
 
-is evaluated as this:
+is evaluated as:
 
 ```makefile
 leap.exe : jump.obj
 # invokes an inference rule
+
 bounce.exe : jump.obj up.obj
    echo Building bounce.exe...
+
 climb.exe : up.obj
    echo Building bounce.exe...
 ```
@@ -104,7 +107,7 @@ target.lib :: four.c five.c
 
 ### <a name="dependency-side-effects"></a> Dependency side effects
 
-If a target is specified with a colon (:) in two dependency lines in different locations, and if commands appear after only one of the lines, NMAKE interprets the dependencies as if adjacent or combined. It doesn't invoke an inference rule for the dependency that has no commands, but instead assumes that the dependencies belong to one description block and executes the commands specified with the other dependency. For example, this set of rules:
+You might specify a target with a colon (:) in two dependency lines in different locations. If commands appear after only one of the lines, NMAKE interprets the dependencies as if the lines were adjacent or combined. It doesn't invoke an inference rule for the dependency that has no commands. Instead, NMAKE assumes the dependencies belong to one description block, and executes the commands specified with the other dependency. Consider this set of rules:
 
 ```makefile
 bounce.exe : jump.obj
@@ -113,7 +116,7 @@ bounce.exe : jump.obj
 bounce.exe : up.obj
 ```
 
-is evaluated as this:
+is evaluated as:
 
 ```makefile
 bounce.exe : jump.obj up.obj
@@ -129,7 +132,7 @@ bounce.exe :: jump.obj
 bounce.exe :: up.obj
 ```
 
-is evaluated as this:
+is evaluated as:
 
 ```makefile
 bounce.exe : jump.obj
@@ -177,7 +180,7 @@ In a dependency line, specify zero or more dependents after the colon (`:`) or d
 
 ### <a name="inferred-dependents"></a> Inferred dependents
 
-Along with dependents you explicitly list in the dependency line, NMAKE can assume an *inferred dependent*. An inferred dependent is derived from an inference rule, and is evaluated before explicit dependents. If an inferred dependent is out-of-date compared to its target, NMAKE invokes the command block for the dependency. If an inferred dependent doesn't exist, or is out-of-date compared to its own dependents, NMAKE first updates the inferred dependent. For more information about inferred dependents, see [Inference rules](inference-rules.md).
+Along with dependents you explicitly list in the dependency line, NMAKE can assume an *inferred dependent*. An inferred dependent is derived from an inference rule, and is evaluated before explicit dependents. When an inferred dependent is out-of-date compared to its target, NMAKE invokes the command block for the dependency. If an inferred dependent doesn't exist, or is out-of-date compared to its own dependents, NMAKE first updates the inferred dependent. For more information about inferred dependents, see [Inference rules](inference-rules.md).
 
 ### <a name="search-paths-for-dependents"></a> Search paths for dependents
 
