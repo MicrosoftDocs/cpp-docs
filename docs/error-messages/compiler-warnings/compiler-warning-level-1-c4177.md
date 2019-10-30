@@ -13,7 +13,7 @@ The [pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pra
 
 The following sample generates C4177:
 
-```
+```cpp
 // C4177.cpp
 // compile with: /W1
 // #pragma bss_seg("global")   // OK

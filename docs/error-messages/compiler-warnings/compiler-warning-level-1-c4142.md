@@ -19,7 +19,7 @@ To fix by checking the following possible causes:
 
 The following sample generates C4142:
 
-```
+```c
 // C4142.c
 // compile with: /W1
 float X2;

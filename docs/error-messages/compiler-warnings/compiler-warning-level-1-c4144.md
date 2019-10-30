@@ -11,7 +11,7 @@ ms.assetid: a37b445d-dbc6-43b4-8d95-ffd0e4225464
 
 The specified relational expression was used as the control expression of a [switch](../../cpp/switch-statement-cpp.md) statement. The associated case statements will be offered Boolean values. The following sample generates C4144:
 
-```
+```cpp
 // C4144.cpp
 // compile with: /W1
 int main()

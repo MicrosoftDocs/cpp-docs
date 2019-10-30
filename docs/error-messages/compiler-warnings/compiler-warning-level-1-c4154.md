@@ -13,7 +13,7 @@ You cannot use `delete` on an array, so the compiler converts the array to a poi
 
 ## Example
 
-```
+```cpp
 // C4154.cpp
 // compile with: /c /W1
 int main() {

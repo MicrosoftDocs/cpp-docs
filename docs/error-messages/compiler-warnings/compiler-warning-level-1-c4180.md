@@ -13,7 +13,7 @@ A qualifier, such as **const**, is applied to a function type defined by `typede
 
 ## Example
 
-```
+```cpp
 // C4180.cpp
 // compile with: /W1 /c
 typedef int FuncType(void);
