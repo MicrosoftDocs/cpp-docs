@@ -1,18 +1,18 @@
 ---
 title: "MSVC experimental preprocessor"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
-ms.date: "10/29/2019"
+ms.date: "10/31/2019"
 helpviewer_keywords: ["preprocessor, experimental"]
 ---
 
 # MSVC experimental preprocessor
 
-The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change behavior which is officially undefined to be closer to the behavior implemented by other major compilers. The experimental preprocessor is currently conformant to the C99 and C11 standards, and the C++11 standard. In addition, new diagnostics have been added to warn on errors in macro definitions.
+The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. The experimental preprocessor is currently conformant to the C99 and C11 standards, and the C++11 standard. In addition, new diagnostics have been added to warn on errors in macro definitions.
 These changes in their current state are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
 
 ## New predefined macro
 
-A new predefined macro in the compiler, `_MSVC_TRADITIONAL`, indicates whether the traditional preprocessor is being used. Its value is **1** for the traditional preprocessor, and **0** for the conformant experimental preprocessor.
+A new predefined macro in the compiler, **_MSVC_TRADITIONAL**, indicates whether the traditional preprocessor is being used. Its value is **1** for the traditional preprocessor, and **0** for the conformant experimental preprocessor.
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -41,7 +41,7 @@ The traditional preprocessor is based on character buffers rather than preproces
 DISAPPEARING_TYPE myVal;
 ```
 
-The standards-conformant fix is to declare `int myVal` inside the appropriate `#ifdef/#endif` directives:
+The standards-conformant fix is to declare `int myVal` inside the appropriate **#ifdef/#endif** directives:
 
 ```cpp
 #define MYVAL 1
@@ -80,13 +80,13 @@ The same issue is also found in convenience macros that "stringize" the argument
 
 You can fix the issue in various ways:
 
-- Use string concatenation of L"" and #str to add prefix. This works because adjacent string literals are combined after macro expansion:
+- Use string concatenation of **L""** and **#str** to add prefix. This works because adjacent string literals are combined after macro expansion:
 
    ```cpp
    #define STRING1(str) L""#str
    ```
 
-- Add the prefix after `#str` is stringized with additional macro expansion
+- Add the prefix after **#str** is stringized with additional macro expansion
 
    ```cpp
    #define WIDE(str) L##str
@@ -101,7 +101,7 @@ You can fix the issue in various ways:
 
 ## Warning on invalid \#\#
 
-When the ## operator does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
+When the **##** operator does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
 
 ```cpp
 // The ## is unnecessary and does not result in a single preprocessing token.
@@ -112,7 +112,7 @@ ADD_STD(string) s;
 
 ## Comma elision in variadic macros
 
-The traditional MSVC preprocessor always removes commas before empty __VA_ARGS__ replacements. The experimental preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a **##** operator. Consider the following example:
+The traditional MSVC preprocessor always removes commas before empty **__VA_ARGS__** replacements. The experimental preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a **##** operator. Consider the following example:
 
 ```cpp
 void func(int, int = 2, int = 3);
@@ -143,7 +143,7 @@ int main()
 }
 ```
 
-In the upcoming C++2a standard this issue has been addressed by adding `__VA_OPT__`, which is not yet implemented.
+In the upcoming C++2a standard this issue has been addressed by adding **__VA_OPT__**, which is not yet implemented.
 
 ## Macro arguments are "unpacked"
 
@@ -162,7 +162,7 @@ const char* c[2] = { A(1, 2) };
 // const char c[2] = { "1, 2", };
 ```
 
-When expanding `A()`, the traditional preprocessor forwards all of the arguments packaged in `__VA_ARGS__` to the first argument of TWO_STRINGS, which leaves the variadic argument of `TWO_STRINGS` empty. This causes the result of `#first` to be "1, 2" rather than just "1". If you are following along closely, then you may be wondering what happened to the result of `#__VA_ARGS__` in the traditional preprocessor expansion: if the variadic parameter is empty it should result in an empty string literal `""`. Due to a separate issue, the empty string literal token was not generated.
+When expanding `A()`, the traditional preprocessor forwards all of the arguments packaged in **__VA_ARGS__** to the first argument of TWO_STRINGS, which leaves the variadic argument of `TWO_STRINGS` empty. This causes the result of **#first** to be "1, 2" rather than just "1". If you are following along closely, then you may be wondering what happened to the result of **#__VA_ARGS__** in the traditional preprocessor expansion: if the variadic parameter is empty it should result in an empty string literal `""`. Due to a separate issue, the empty string literal token was not generated.
 
 ## Rescanning replacement list for macros
 
@@ -187,34 +187,13 @@ DO_THING(1, "World");
 
 Although this example seems a bit contrived, it has been found to occur real world code. To see what is going on we can break down the expansion starting with `DO_THING`:
 
-```cpp
-DO_THING(1, "World")— >
-CAT(IMPL, 1) ECHO(("Hello", "World"))
-```
+1. `DO_THING(1, "World")` expands to `CAT(IMPL, 1) ECHO(("Hello", "World"))`
+1. `CAT(IMPL, 1)` expands to `IMPL ## 1` which expands to `IMPL1`
+1. Now the tokens are in this state: `IMPL1 ECHO(("Hello", "World"))`
+1. The preprocessor finds the function-like macro identifier `IMPL1`, but it is not followed by a `(`, so it is not considered a function-like macro invocation. 
+1. It moves on to the following tokens and finds the function-like macro `ECHO` being invoked: `ECHO(("Hello", "World"))`, which expands to `("Hello", "World")`
+1. IMPL1 is never considered again for expansion, so the full result of the expansions is: `IMPL1("Hello", "World");`
 
-Second, CAT is expanded:
-
-```cpp
-CAT(IMPL, 1)– > IMPL ## 1 — > IMPL1
-```
-
-Which puts the tokens into this state:
-
-```cpp
-IMPL1 ECHO(("Hello", "World"))
-```
-
-The preprocessor finds the function-like macro identifier `IMPL1`, but it is not followed by a `(`, so it is not considered a function-like macro invocation. It moves on to the following tokens and finds the function-like macro `ECHO` being invoked:
-
-```cpp
-ECHO(("Hello", "World"))– > ("Hello", "World")
-```
-
-IMPL1 is never considered again for expansion, so the full result of the expansions is:
-
-```cpp
-IMPL1("Hello", "World");
-```
 
 The macro can be modified to behave the same under the experimental preprocessor and the traditional preprocessor by adding in another layer of indirection:
 
