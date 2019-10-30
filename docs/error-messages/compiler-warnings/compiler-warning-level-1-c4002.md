@@ -15,7 +15,7 @@ C4002 can occur when incorrectly using [Variadic Macros](../../preprocessor/vari
 
 The following sample generates C4002:
 
-```
+```cpp
 // C4002.cpp
 // compile with: /W1
 #define test(a) (a)
@@ -33,7 +33,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 The compiler will no longer accept extra commas in a macro. For code to be valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, remove the extra commas.
 
-```
+```cpp
 // C4002b.cpp
 // compile with: /W1
 #define F(x,y)

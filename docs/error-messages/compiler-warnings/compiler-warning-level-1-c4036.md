@@ -17,7 +17,7 @@ Specify a type name to resolve this warning.
 
 The following sample generates C4036.
 
-```
+```c
 // C4036.c
 // compile with: /Zg /W1
 // D9035 expected

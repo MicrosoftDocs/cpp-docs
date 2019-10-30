@@ -13,7 +13,7 @@ The compiler ignores the [managed](../../preprocessor/managed-unmanaged.md) and 
 
 The following sample generates C4949:
 
-```
+```cpp
 // C4949.cpp
 // compile with: /LD /W1
 #pragma managed   // C4949
@@ -23,7 +23,7 @@ When **#pragma unmanaged** is used without **/clr**, C4949 is a level 4 warning.
 
 The following sample generates C4949:
 
-```
+```cpp
 // C4949b.cpp
 // compile with: /LD /W4
 #pragma unmanaged   // C4949
