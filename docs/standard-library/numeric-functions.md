@@ -1,7 +1,8 @@
 ---
 title: "&lt;numeric&gt; functions"
-ms.date: "11/04/2016"
-f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::partial_sum"]
+description: "Describes the function templates provided by the &lt;numeric&gt;header in the C++ Standard library."
+ms.date: "10/30/2019"
+f1_keywords: ["numeric/std::accumulate", "numeric/std::adjacent_difference", "numeric/std::exclusive_scan", "numeric/std::gcd", "numeric/std::inclusive_scan", "numeric/std::inner_product", "numeric/std::iota", "numeric/std::lcm", "numeric/std::partial_sum", "numeric/std::reduce", "numeric/std::transform_exclusive_scan", "numeric/std::transform_inclusive_scan", "numeric/std::transform_reduce"]
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
 helpviewer_keywords: ["std::accumulate [C++]", "std::adjacent_difference [C++]", "std::exclusive_scan [C++]", "std::gcd [C++]", "std::inclusive_scan [C++]", "std::inner_product [C++]", "std::iota [C++]", "std::lcm [C++]", "std::partial_sum [C++]", "std::reduce [C++]", "std::transform_exclusive_scan [C++]", "std::transform_inclusive_scan [C++]", "std::transform_reduce [C++]"]
 ---
@@ -945,7 +946,7 @@ An initial value to which each element is in turn added or combined by using *bi
 
 ## <a name="transform_reduce"></a> transform_reduce
 
-Transforms a range of elements, then applies a functor that reduces the transformed elements in arbitrary order.
+Transforms a range of elements, then applies a functor that reduces the transformed elements in arbitrary order. Effectively, a `transform` followed by a `reduce`.
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class Type>
@@ -1028,3 +1029,7 @@ The binary operation to apply to each element in the specified range and the res
 
 *unary_op*\
 The unary operation to apply to each element in the specified range.
+
+### Return value
+
+The transformed then reduced result.
