@@ -1,6 +1,6 @@
 ---
 title: "Running NMAKE"
-ms.date: "08/11/2019"
+ms.date: "10/29/2019"
 helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "command files", "NMAKE program, targets", "NMAKE program, running", "command files, NMAKE"]
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 ---
@@ -12,7 +12,7 @@ ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
 
 ## Remarks
 
-NMAKE builds only specified *targets* or, when none is specified, the first target in the makefile. The first makefile target can be a [pseudotarget](pseudotargets.md) that builds other targets. NMAKE uses makefiles specified with **/F**, or if **/F** isn't specified, the Makefile file in the current directory. If no makefile is specified, it uses inference rules to build command-line *targets*.
+NMAKE builds only specified *targets* or, when none is specified, the first target in the makefile. The first makefile target can be a [pseudotarget](description-blocks.md#pseudotargets) that builds other targets. NMAKE uses makefiles specified with **/F**, or if **/F** isn't specified, the Makefile file in the current directory. If no makefile is specified, it uses inference rules to build command-line *targets*.
 
 The *command-file* text file (or response file) contains command-line input. Other input can precede or follow \@*command-file*. A path is permitted. In *command-file*, line breaks are treated as spaces. Enclose macro definitions in quotation marks if they contain spaces.
 
@@ -23,7 +23,7 @@ NMAKE options are described in the following table. Options are preceded by eith
 | Option | Purpose |
 | ------------ | ------------- |
 | **/A** | Forces build of all evaluated targets, even if not out-of-date compared to dependents. Doesn't force builds of unrelated targets. |
-| **/B** | Forces build even if timestamps are equal. Recommended only for very fast systems (resolution of two seconds or less). |
+| **/B** | Forces build even if timestamps are equal. Recommended only for fast systems (resolution of two seconds or less). |
 | **/C** | Suppresses default output, including nonfatal NMAKE errors or warnings, timestamps, and NMAKE copyright message. Suppresses warnings issued by **/K**. |
 | **/D** | Displays timestamps of each evaluated target and dependent and a message when a target doesn't exist. Useful with **/P** for debugging a makefile. Use `!CMDSWITCHES` to set or clear **/D** for part of a makefile. |
 | **/E** | Causes environment variables to override makefile macro definitions. |
