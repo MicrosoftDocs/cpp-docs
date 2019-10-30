@@ -94,7 +94,7 @@ class CRecordset : public CObject
 |[CRecordset::m_strFilter](#m_strfilter)|Contains a `CString` that specifies a Structured Query Language (SQL) `WHERE` clause. Used as a filter to select only those records that meet certain criteria.|
 |[CRecordset::m_strSort](#m_strsort)|Contains a `CString` that specifies a SQL `ORDER BY` clause. Used to control how the records are sorted.|
 
-## Remarks
+## <a name="remarks"></a> Remarks
 
 Known as "recordsets," `CRecordset` objects are typically used in two forms: dynasets and snapshots. A dynaset stays synchronized with data updates made by other users. A snapshot is a static view of the data. Each form represents a set of records fixed at the time the recordset is opened, but when you scroll to a record in a dynaset, it reflects changes subsequently made to the record, either by other users or by other recordsets in your application.
 
@@ -1411,7 +1411,7 @@ A string pointer containing one of the following:
 
 - A **CALL** statement specifying the name of a predefined query (stored procedure). Be careful that you do not insert whitespace between the curly brace and the **CALL** keyword.
 
-For more information about this string, see the table and the discussion of ClassWizard's role under Remarks.
+For more information about this string, see the table and the discussion of ClassWizard's role under the [Remarks](#remarks) section.
 
 > [!NOTE]
 >  The order of the columns in your result set must match the order of the RFX or Bulk RFX function calls in your [DoFieldExchange](#dofieldexchange) or [DoBulkFieldExchange](#dobulkfieldexchange) function override.
