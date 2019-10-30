@@ -347,7 +347,12 @@
       },
       {
          "source_path": "docs/build/cumulative-dependencies.md",
-         "redirect_url": "/cpp/build/reference/cumulative-dependencies",
+         "redirect_url": "/cpp/build/reference/description-blocks#cumulative-dependencies",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/cumulative-dependencies.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#cumulative-dependencies",
          "redirect_document_id": false
       },
       {
@@ -362,12 +367,17 @@
       },
       {
          "source_path": "docs/build/dependency-side-effects.md",
-         "redirect_url": "/cpp/build/reference/dependency-side-effects",
+         "redirect_url": "/cpp/build/reference/description-blocks#dependency-side-effects",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/dependency-side-effects.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#dependency-side-effects",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/build/dependents.md",
-         "redirect_url": "/cpp/build/reference/dependents",
+         "redirect_url": "/cpp/build/reference/description-blocks#dependents",
          "redirect_document_id": false
       },
       {
@@ -427,7 +437,12 @@
       },
       {
          "source_path": "docs/build/inferred-dependents.md",
-         "redirect_url": "/cpp/build/reference/inferred-dependents",
+         "redirect_url": "/cpp/build/reference/description-blocks#inferred-dependents",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/inferred-dependents.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#inferred-dependents",
          "redirect_document_id": false
       },
       {
@@ -477,7 +492,12 @@
       },
       {
          "source_path": "docs/build/multiple-targets.md",
-         "redirect_url": "/cpp/build/reference/multiple-targets",
+         "redirect_url": "/cpp/build/reference/description-blocks#multiple-targets",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/multiple-targets.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#multiple-targets",
          "redirect_document_id": false
       },
       {
@@ -522,7 +542,12 @@
       },
       {
          "source_path": "docs/build/pseudotargets.md",
-         "redirect_url": "/cpp/build/reference/pseudotargets",
+         "redirect_url": "/cpp/build/reference/description-blocks#pseudotargets",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/pseudotargets.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#pseudotargets",
          "redirect_document_id": false
       },
       {
@@ -547,7 +572,12 @@
       },
       {
          "source_path": "docs/build/search-paths-for-dependents.md",
-         "redirect_url": "/cpp/build/reference/search-paths-for-dependents",
+         "redirect_url": "/cpp/build/reference/description-blocks#search-paths-for-dependents",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/search-paths-for-dependents.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#search-paths-for-dependents",
          "redirect_document_id": false
       },
       {
@@ -577,12 +607,22 @@
       },
       {
          "source_path": "docs/build/targets-in-multiple-description-blocks.md",
-         "redirect_url": "/cpp/build/reference/targets-in-multiple-description-blocks",
+         "redirect_url": "/cpp/build/reference/description-blocks#targets-in-multiple-description-blocks",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/targets-in-multiple-description-blocks.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#targets-in-multiple-description-blocks",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/build/targets.md",
-         "redirect_url": "/cpp/build/reference/multiple-targets",
+         "redirect_url": "/cpp/build/reference/description-blocks#targets",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/build/reference/targets.md",
+         "redirect_url": "/cpp/build/reference/description-blocks#targets",
          "redirect_document_id": false
       },
       {
