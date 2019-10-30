@@ -13,7 +13,7 @@ A `#import` attribute has the wrong number of arguments.
 
 ## Example
 
-```
+```cpp
 // C4186.cpp
 // compile with: /W1 /c
 #import "stdole2.tlb" no_namespace("abc") rename("a","b","c")  // C4186

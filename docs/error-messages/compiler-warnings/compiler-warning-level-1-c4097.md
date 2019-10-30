@@ -13,7 +13,7 @@ A pragma was passed an invalid value.
 
 The following sample generates C4097:
 
-```
+```cpp
 // C4097.cpp
 // compile with: /W1
 #pragma runtime_checks("",test)   // C4097

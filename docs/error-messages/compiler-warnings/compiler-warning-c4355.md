@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4355:
 
-```
+```cpp
 // C4355.cpp
 // compile with: /w14355 /c
 #include <tchar.h>

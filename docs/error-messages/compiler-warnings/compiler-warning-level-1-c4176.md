@@ -13,7 +13,7 @@ The **component** pragma contains an invalid subcomponent. To exclude references
 
 ## Example
 
-```
+```cpp
 // C4176.cpp
 // compile with: /W1 /LD
 #pragma component(browser, off, i)  // C4176

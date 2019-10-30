@@ -15,7 +15,7 @@ A `switch` statement uses a relational expression as its control expression, whi
 
 The following sample generates C4145:
 
-```
+```cpp
 // C4145.cpp
 // compile with: /W1
 int main() {

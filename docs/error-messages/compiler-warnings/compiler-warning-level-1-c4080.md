@@ -13,7 +13,7 @@ The name of the segment in [#pragma alloc_text](../../preprocessor/alloc-text.md
 
 The following sample generates C4080:
 
-```
+```cpp
 // C4080.cpp
 // compile with: /W1
 extern "C" void func(void);

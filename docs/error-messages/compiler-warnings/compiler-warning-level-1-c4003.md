@@ -13,7 +13,7 @@ The number of formal parameters in the macro definition exceeds the number of ac
 
 The following sample generates C4003:
 
-```
+```cpp
 // C4003.cpp
 // compile with: /WX
 #define test(a,b) (a+b)

@@ -17,7 +17,7 @@ If you use the operator **new** without any extra arguments and compile with [/G
 
 If you use the placement form of the **new** operator (the form with arguments in addition to the size of the allocation) and the object's constructor throws an exception, the compiler will still generate code to call operator **delete**; but it will only do so if a placement form of operator **delete** exists matching the placement form of the operator **new** that allocated the memory. For example:
 
-```
+```cpp
 // C4291.cpp
 // compile with: /EHsc /W1
 #include <malloc.h>

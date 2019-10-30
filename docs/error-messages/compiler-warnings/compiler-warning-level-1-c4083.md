@@ -13,7 +13,7 @@ An identifier occurs in the wrong place in a **#pragma** statement.
 
 ## Example
 
-```
+```cpp
 // C4083.cpp
 // compile with: /W1 /LD
 #pragma warning disable:4083    // C4083

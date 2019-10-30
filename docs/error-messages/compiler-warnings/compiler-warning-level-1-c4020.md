@@ -13,7 +13,7 @@ The number of actual parameters in a function call exceeds the number of formal 
 
 The following sample generates C4020:
 
-```
+```c
 // C4020.c
 // compile with: /W1 /c
 void f(int);
@@ -24,7 +24,7 @@ int main() {
 
 Possible resolution:
 
-```
+```c
 // C4020b.c
 // compile with: /c
 void f(int);
