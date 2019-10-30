@@ -15,7 +15,7 @@ This warning is for the C compiler.
 
 ## Example
 
-```
+```c
 // C4087.c
 // compile with: /W1
 int f1( void ) {

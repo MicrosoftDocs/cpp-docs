@@ -13,7 +13,7 @@ The compiler initialization area, which is specified by [#pragma init_seg](../..
 
 The following sample generates C4074:
 
-```
+```cpp
 // C4074.cpp
 // compile with: /W1
 #pragma init_seg( compiler )   // C4074

@@ -13,7 +13,7 @@ The pragma containing the unexpected identifier is ignored.
 
 ## Example
 
-```
+```cpp
 // C4109.cpp
 // compile with: /W1 /LD
 #pragma init_seg( abc ) // C4109

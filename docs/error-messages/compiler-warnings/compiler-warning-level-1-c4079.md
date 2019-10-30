@@ -13,7 +13,7 @@ An unexpected separator token occurs in a pragma argument list. The remainder of
 
 The following sample generates C4079:
 
-```
+```cpp
 // C4079.cpp
 // compile with: /W1
 #pragma warning(disable : 4081)

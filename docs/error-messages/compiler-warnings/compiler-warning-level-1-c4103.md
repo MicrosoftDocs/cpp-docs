@@ -15,7 +15,7 @@ Use #pragma [pack](../../preprocessor/pack.md)(pop) before exiting the header fi
 
 The following sample generates C4103:
 
-```
+```cpp
 // C4103.h
 #pragma pack(push, 4)
 
@@ -27,7 +27,7 @@ The following sample generates C4103:
 
 And then,
 
-```
+```cpp
 // C4103.cpp
 // compile with: /LD /W1
 #include "c4103.h"   // C4103
