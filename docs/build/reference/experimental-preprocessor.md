@@ -7,7 +7,7 @@ helpviewer_keywords: ["preprocessor conformance", "/experimental:preprocessor", 
 ---
 # /experimental:preprocessor (Enable preprocessor conformance mode)
 
-This option enables an experimental, token-based preprocessor that conforms to C++11 standards, including C99 preprocessor features.
+This option enables an experimental, token-based preprocessor that more closely conforms to C++11 standards, including C99 preprocessor features. See 
 
 ## Syntax
 

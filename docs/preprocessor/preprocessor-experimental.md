@@ -7,8 +7,8 @@ helpviewer_keywords: ["preprocessor, experimental"]
 
 # MSVC experimental preprocessor
 
-The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. The experimental preprocessor is currently conformant to the C99 and C11 standards, and the C++11 standard. In addition, new diagnostics have been added to warn on errors in macro definitions.
-These changes in their current state are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
+The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. In addition, new diagnostics have been added to warn on errors in macro definitions.
+These changes in their current state are available by using the **/experimental:preprocessor** compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions. See [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) for more information.
 
 ## New predefined macro
 
@@ -117,7 +117,7 @@ The traditional MSVC preprocessor always removes commas before empty **__VA_ARGS
 ```cpp
 void func(int, int = 2, int = 3);
 // This macro replacement list has a comma followed by __VA_ARGS__
-#define FUNC(a, …) func(a, __VA_ARGS__)
+#define FUNC(a, ...) func(a, __VA_ARGS__)
 int main()
 {
     // In the traditional preprocessor, the following macro is replaced with:
@@ -132,7 +132,7 @@ int main()
 In the following example, in the call to `FUNC2(1)` the variadic argument is missing in the macro being evoked. In the call to `FUNC2(1, )` the variadic argument is empty, but not missing (notice the comma in the argument list).
 
 ```cpp
-#define FUNC2(a, …) func(a , ## __VA_ARGS__)
+#define FUNC2(a, ...) func(a , ## __VA_ARGS__)
 int main()
 {
    // Expands to func(1)
@@ -151,8 +151,8 @@ In the traditional preprocessor, if a macro forwards one of its arguments to ano
 
 ```cpp
 // Create a string out of the first argument, and the rest of the arguments.
-#define TWO_STRINGS( first, … ) #first, #__VA_ARGS__
-#define A( … ) TWO_STRINGS(__VA_ARGS__)
+#define TWO_STRINGS( first, ... ) #first, #__VA_ARGS__
+#define A( ... ) TWO_STRINGS(__VA_ARGS__)
 const char* c[2] = { A(1, 2) };
 
 // Conformant preprocessor results:
@@ -170,7 +170,7 @@ After a macro is replaced, the resulting tokens are re-scanned for additional ma
 
 ```cpp
 #define CAT(a,b) a ## b
-#define ECHO(…) __VA_ARGS__
+#define ECHO(...) __VA_ARGS__
 // IMPL1 and IMPL2 are implementation details
 #define IMPL1(prefix,value) do_thing_one( prefix, value)
 #define IMPL2(prefix,value) do_thing_two( prefix, value)
@@ -199,7 +199,7 @@ The macro can be modified to behave the same under the experimental preprocessor
 
 ```cpp
 #define CAT(a,b) a##b
-#define ECHO(…) __VA_ARGS__
+#define ECHO(...) __VA_ARGS__
 // IMPL1 and IMPL2 are macros implementation details
 #define IMPL1(prefix,value) do_thing_one( prefix, value)
 #define IMPL2(prefix,value) do_thing_two( prefix, value)
