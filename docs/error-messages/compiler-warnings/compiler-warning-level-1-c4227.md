@@ -13,7 +13,7 @@ Using qualifiers like `const` or `volatile` with C++ references is an outdated p
 
 ## Example
 
-```
+```cpp
 // C4227.cpp
 // compile with: /W1 /c
 int j = 0;

@@ -19,7 +19,7 @@ This warning is also generated for __declspec([dllexport](../../cpp/dllexport-dl
 
 The following sample generates C4297:
 
-```
+```cpp
 // C4297.cpp
 // compile with: /W1 /LD
 void __declspec(nothrow) f1()   // declared nothrow

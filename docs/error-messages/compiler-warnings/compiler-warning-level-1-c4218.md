@@ -13,7 +13,7 @@ With the default Microsoft extensions (/Ze), you can declare a variable without 
 
 ## Example
 
-```
+```cpp
 // C4218.c
 // compile with: /W4
 i;  // C4218
