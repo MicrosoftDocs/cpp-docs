@@ -83,7 +83,7 @@ Rsync is used by both MSBuild-based Linux projects and CMake projects to [copy h
 
 ![Headers Error](media/port-forwarding-headers-error.png)
 
-Rsync is also used by Visual Studio's CMake support to copy source files to the remote system. If you're not able to enable TCP port forwarding then you can use sftp as your remote copy sources method . Sftp is generally slower than rsync but does not have a dependency on TCP port forwarding. You can manage your remote copy sources method with the remoteCopySourcesMethod property in the [CMake Settings Editor](build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects). If TCP port forwarding is disabled on your remote system then you will see an error in the CMake output window the first time rsync is invoked.
+Rsync is also used by Visual Studio's CMake support to copy source files to the remote system. If you're not able to enable TCP port forwarding then you can use sftp as your remote copy sources method . Sftp is generally slower than rsync but does not have a dependency on TCP port forwarding. You can manage your remote copy sources method with the remoteCopySourcesMethod property in the [CMake Settings Editor](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects). If TCP port forwarding is disabled on your remote system then you will see an error in the CMake output window the first time rsync is invoked.
 
 ![Rsync Error](media/port-forwarding-copy-error.png)
 
