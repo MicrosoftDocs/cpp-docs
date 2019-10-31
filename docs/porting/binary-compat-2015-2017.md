@@ -12,11 +12,11 @@ In Visual Studio 2015 and later, the C++ toolset major number is 14 (v140 for Vi
 
 The only exception to this rule is that static libraries or object files that are compiled with the `/GL` compiler switch are not binary compatible.
 
-When you mix binaries built with different supported versions of the MSVC toolset, the Visual C++ redistributable that your application runs on cannot be older than any of the toolset versions used to build your app or any libraries it consumes.
+When you mix binaries built with different supported versions of the MSVC toolset, the Visual C++ redistributable that your application runs on can't be older than any of the toolset versions used to build your app or any libraries it consumes.
 
 ## Upgrade Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
 
-Because we have preserved binary compatability and kept the major version (14) the same for the Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019, only one version of the Visual C++ Redistributable can be installed from those at any time. A newer version will overwrite an older one installed. If you have the Visual C++ Redistributable from Visual Studio 2015 or 2017 and then later install 2019, the 2019 version will overwrite an older version. Because we ensure the latest version will have all the newest features and bug fixes, including security fixes, we always recommend upgrading to the latest available version.
+Because we have preserved binary compatibility and kept the major version (14) the same for the Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019, only one version of the Visual C++ Redistributable can be installed from those at any time. A newer version will overwrite an older one installed. If you have the Visual C++ Redistributable from Visual Studio 2015 or 2017 and then later install 2019, the 2019 version will overwrite an older version. Because we ensure the latest version will have all the newest features and bug fixes, including security fixes, we always recommend upgrading to the latest available version.
 
 Similarly, we don't allow installing an older version of the Visual C++ Redistributable on a machine where a newer one already exists. Installing the Visual C++ Redistributable from Visual Studio 2015 or 2017 on a machine that already has 2019, will result in an installation failure. The error will look something similar to this:
 
