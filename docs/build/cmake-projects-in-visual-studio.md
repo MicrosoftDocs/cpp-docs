@@ -1,15 +1,15 @@
 ---
 title: "CMake projects in Visual Studio"
-ms.date: "10/01/2019"
+ms.date: "10/31/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMake projects in Visual Studio
 
-CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/). 
+CMake is a cross-platform, open-source tool for defining build processes that run on multiple platforms. This article assumes you are familiar with CMake. You can learn more about it at [Build, Test and Package Your Software With CMake](https://cmake.org/).
 
 > [!NOTE]
-> CMake has become more and more integrated with Visual Studio over the past few releases. To see the correct information for the version you are using, make sure the version selector in the upper left of this page is set correctly. 
+> CMake has become more and more integrated with Visual Studio over the past few releases. To see the correct information for the version you are using, make sure the version selector in the upper left of this page is set correctly.
 
 ::: moniker range="vs-2019"
 
@@ -43,9 +43,13 @@ You can also view your projects organized logically by targets. Choose **Targets
 
 ![CMake targets view button](media/cmake-targets-view.png)
 
-Visual Studio uses a file called *CMakeSettings.json* to store environment variables or command-line options for cmake.exe. *CMakeSettings.json* also enables you to define and store multiple CMake build configurations and conveniently switch between them in the IDE. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
+Click the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *out/build/<config>* folders.
 
-Otherwise, use *CMakeLists.txt* just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
+Visual Studio uses a file called **CMakeSettings.json** which enables you to define and store multiple build configurations and conveniently switch between them in the IDE. A *configuration* is a Visual Studio construct that encapsulates settings that are specific to a given build type. The settings are used to configure the default command-line options that Visual Studio passes to cmake.exe. You can also specify additional CMake options here, and define any additional variables you like. All options are written to the CMake cache either as internal or external variables. In Visual Studio 2019, the **CMake Settings Editor** provides a convenient way to edit your settings. See [Customize CMake settings](customize-cmake-settings.md) for more information.
+
+One setting, `intelliSenseMode` is not passed to CMake, but is used only by Visual Studio.
+
+Use the **CMakeLists.txt** file in each project folder just as you would in any CMake project to specify source files, find libraries, set compiler and linker options, and specify other build system related information.
 
 If you need to pass arguments to an executable at debug time, you can use another file called **launch.vs.json**. In some scenarios, Visual Studio will automatically generate these files; you can edit them manually. You can also create the file yourself.
 
@@ -68,8 +72,6 @@ To build a CMake project, you have these choices:
 
 ![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
 
-You can customize build configurations, environment variables, command line arguments, and other settings without modifying the CMakeLists.txt file by using the  **CMake Settings Editor**. For more information, see [Customize CMake settings](customize-cmake-settings.md).
-
 As you would expect, build results are shown in the **Output Window** and **Error List**.
 
 ![CMake build errors](media/cmake-build-errors.png "CMake build errors")
@@ -82,7 +84,7 @@ To debug a CMake project, choose the desired configuration and press **F5**, or 
 
 ![CMake run button](media/cmake-run-button.png "CMake run button")
 
-The **Run** or **F5** commands first build the project if changes have been made since the previous build.
+The **Run** or **F5** commands first build the project if changes have been made since the previous build. Changes to *CMakeSettings.json* will cause the CMake cache to be regenerated.
 
 You can customize a CMake debugging session by setting properties in the **launch.vs.json** file. For more information, see [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md).
 
@@ -109,7 +111,6 @@ To edit a CMakeLists.txt file, right click on the file in **Solution Explorer** 
 As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in CMakeLists.txt.
 
    ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
-
 
 ## CMake configure step
 
@@ -232,7 +233,6 @@ The **Run** or **F5** commands first build the project if changes have been made
 
 You can customize a CMake debugging session by setting properties in the **launch.vs.json** file. For more information, see [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md).
 
-
 ## Editing CMakeLists.txt files
 
 To edit a CMakeLists.txt file, right click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update, and gives you an opportunity to cancel the update operation. For information about CMakeLists.txt, see the [CMake documentation](https://cmake.org/documentation/).
@@ -242,7 +242,6 @@ To edit a CMakeLists.txt file, right click on the file in **Solution Explorer** 
 As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in CMakeLists.txt.
 
    ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
-
 
 ## CMake configure step
 

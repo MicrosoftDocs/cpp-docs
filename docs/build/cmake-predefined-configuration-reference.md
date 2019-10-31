@@ -13,7 +13,7 @@ CMake projects are supported in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range=">=vs-2017"
 
 In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
 - x86 Debug
@@ -27,7 +27,7 @@ In a CMake project, build configurations are stored in a CMakeSettings.json file
 - MinGW Debug
 - MinGW Release
 
-When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project.
+When you choose a configuration, it is added to the *CMakeSettings.json* file in the project's root folder. You can then use it to build your project. For information about the configuration properties, see [CMakeSettings reference](cmakesettings-reference.md).
 
 
 ## Linux predefined build configurations:

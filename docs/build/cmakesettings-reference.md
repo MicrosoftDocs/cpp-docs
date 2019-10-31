@@ -1,47 +1,50 @@
 ---
 title: "CMakeSettings.json schema reference"
-ms.date: "05/16/2019"
+ms.date: "10/31/2019"
 helpviewer_keywords: ["CMake in Visual C++"]
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMakeSettings.json schema reference
 
-The *CMakeSettings.json* file contains information that specifies how Visual Studio should interact with CMake to build a project for a specified platform. The file stores information such as environment variables or arguments for the cmake.exe environment. You can edit directly or use the **CMake Settings editor** (Visual Studio 2019 and later). See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information about the editor.
+::: moniker range="vs-2015"
 
-## Environments
+CMake projects are supported in Visual Studio 2017 and later.
 
-The `environments` array contains a list of `items` of type `object` which define a compiler toolset "environment." An environment may be used to apply a set of variables to a `configuration`. Each item in the `environments` array consists of:
+::: moniker-end
 
-- `namespace`: names the environment so that its variables can be referenced from a configuration in the form `namespace.variable`. The default environment  object is called `env` and is populated with certain system environment variables including `%USERPROFILE%`.
-- `environment`: uniquely identifies this group of variables. Allows the group to be inherited later in an `inheritEnvironments` entry.
-- `groupPriority`: An integer that specifies the priority of these variables when evaluating them. Higher number items are evaluated first.
-- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs.
+::: moniker range=">=vs-2017"
 
-   ```json
-   "inheritEnvironments": [ "msvc_x64_x64" ]
-   ```
+The **CMakeSettings.json** file contains information that Visual Studio uses for IntelliSense and to construct the command-line arguments that it passes to cmake.exe for a specified *configuration* and compiler *environment*. A configuration specifies properties that apply to a specific platform and build-type, for example, `x86-Debug` or `Linux-Release`. Each configuration specifies an environment, which encapsulates information about the compiler toolset, for example MSVC, GCC, or Clang. CMake uses the command-line arguments to regenerate the root *CMakeCache.txt* file and other project files for the project. The values can be overridden in the *CMakeLists.txt* files. 
 
-   The example above is the same as running the **Developer Command Prompt for VS 2017** or **Developer Command Prompt for VS 2019** with the **-arch=amd64 -host_arch=amd64** arguments. Any custom environment can be used, or these predefined environments:
- 
-  - linux_arm: Target ARM Linux remotely.
-  - linux_x64: Target x64 Linux remotely.
-  - linux_x86: Target x86 Linux remotely.
-  - msvc_arm: Target ARM Windows with the MSVC compiler.
-  - msvc_arm_x64: Target ARM Windows with the 64-bit MSVC compiler.
-  - msvc_arm64: Target ARM64 Windows with the MSVC compiler.
-  - msvc_arm64_x64: Target ARM64 Windows with the 64-bit MSVC compiler.
-  - msvc_x64: Target x64 Windows with the MSVC compiler.
-  - msvc_x64_x64: Target x64 Windows with the 64-bit MSVC compiler.
-  - msvc_x86: Target x86 Windows with the MSVC compiler.
-  - msvc_x86_x64: Target x86 Windows with the 64-bit MSVC compiler.
+You can add or remove configurations in the IDE and then edit them directly in the JSON file or use the **CMake Settings editor** (Visual Studio 2019 and later). You can switch between the configurations easily in the IDE to generate the various project files. See [Customize CMake build settings in Visual Studio](customize-cmake-settings.md) for more information.
 
 ## Configurations
 
-The `configurations` array consists of objects that represent CMake configurations that apply to the *CMakeLists.txt* file in the same folder. You can use these objects to define multiple build configurations and conveniently switch between them in the IDE. 
+The `configurations` array contains all the configurations for a CMake project. See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations. You can add any number of pre-defined or custom configurations to the file. 
 
 A `configuration` has these properties:
-- `name`: names the configuration.
+
+- `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
+- `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
+- `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}`.
+- `cacheGenerationCommand`: specifies a command line tool and arguments, for example *gencache.bat debug* to generate the cache. The command is run from the shell in the specified environment for the configuration when the user explicity requests regeneration, or a CMakeLists.txt or CMakeSettings.json file is modified.
+- `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing CMakeCache.txt file.
+- `clangTidyChecks`: comma-separated list of warnigns which will be passed to clang-tidy; wildcards are allowed and '-' prefix will remove checks.
+- `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the cache.
+- `cmakeToolchain`: specifies the toolchain file. This is passed to CMake using -DCMAKE_TOOLCHAIN_FILE."
+- `codeAnalysisRuleset`: specifies the ruleset to use when running code analysis. This can be a full path or the file name of a ruleset file installed by Visual Studio.
+- `configurationType`: specifies the build type configuration for the selected generator. May be one of:
+
+  - Debug
+  - Release
+  - MinSizeRel
+  - RelWithDebInfo
+  
+- `ctestCommandArgs`: specifies additional command-line options passed to CTest when running the tests."
 - `description`: description of this configuration that will appear in menus.
+- `enableClangTidyCodeAnalysis`: use Clang-Tidy for code analysis.
+- `enableMicrosoftCodeAnalysis`: use Microsoft code analysis tools for code analysis.
 - `generator`: specifies CMake generator to use for this configuration. May be one of:
   
   **Visual Studio 2019 only:**
@@ -72,13 +75,12 @@ When the active configuration specifies a Visual Studio generator, by default MS
    ```
 
 - `configurationType`: specifies the build type configuration for the selected generator. May be one of:
- 
+
   - Debug
   - Release
   - MinSizeRel
   - RelWithDebInfo
  
-- `inheritEnvironments`: specifies one or more compiler environments that this configuration depends on. May be any custom environment or one of the predefined environments.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the *CMakeCache.txt* will be created. If the folder does not exist, it is created.Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `installRoot`: specifies the directory in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the project files.
@@ -86,8 +88,10 @@ When the active configuration specifies a Visual Studio generator, by default MS
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `ctestCommandArgs`: specifies additional command-line options passed to CTest when running the tests."
 - `codeAnalysisRuleset`: specifies the ruleset to use when running code analysis. This can be a full path or the file name of a ruleset file installed by Visual Studio.
+- `inheritEnvironments`: specifies one or more compiler environments that this configuration depends on. May be any custom environment or one of the predefined environments. For more information, see [Environments](#environments).
+- `installRoot`: specifies the directory in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `intelliSenseMode`: specifies the mode used for computing intellisense information". May be one of:
- 
+
   - windows-msvc-x86
   - windows-msvc-x64
   - windows-msvc-arm
@@ -109,6 +113,8 @@ When the active configuration specifies a Visual Studio generator, by default MS
   - linux-gcc-arm"
 
 - `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing *CMakeCache.txt* file.
+- `name`: names the configuration.  See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations.
+- `wslPath`: the path to the launcher of an instance of Windows Subsystem for Linux.
 
 ### Additional settings for CMake Linux projects. 
 
@@ -144,27 +150,38 @@ When the active configuration specifies a Visual Studio generator, by default MS
   ]
 ```
 
-Note that if you do not define the `"type"`, the "STRING" type will be assumed by default.
+Note that if you do not define the `"type"`, the `"STRING"` type will be assumed by default.
 
-## Environment variables
+## <a name="environments"></a> Environments
 
-*CMakeSettings.json* also supports consuming environment variables in any of its properties mentioned above. The syntax to use is `${env.FOO}` to expand the environment variable %FOO%.
+An *environment* encapsulates the environment variables that are set in the process that Visual Studio uses to invoke cmake.exe. For MSVC projects, the variables are those that are set in a [developer command prompt](building-on-the-command-line.md) for a specific platform. For example, the `msvc_x64_x64` environment is the same as running the **Developer Command Prompt for VS 2017** or **Developer Command Prompt for VS 2019** with the **-arch=amd64 -host_arch=amd64** arguments. You can use the `env.{<variable_name>}` syntax in *CMakeSettings.json* to reference the individual environment variables, for example to construct paths to folders.  The following predefined environments are provided:
 
-You also have access to built-in macros inside this file:
+- linux_arm: Target ARM Linux remotely.
+- linux_x64: Target x64 Linux remotely.
+- linux_x86: Target x86 Linux remotely.
+- msvc_arm: Target ARM Windows with the MSVC compiler.
+- msvc_arm_x64: Target ARM Windows with the 64-bit MSVC compiler.
+- msvc_arm64: Target ARM64 Windows with the MSVC compiler.
+- msvc_arm64_x64: Target ARM64 Windows with the 64-bit MSVC compiler.
+- msvc_x64: Target x64 Windows with the MSVC compiler.
+- msvc_x64_x64: Target x64 Windows with the 64-bit MSVC compiler.
+- msvc_x86: Target x86 Windows with the MSVC compiler.
+- msvc_x86_x64: Target x86 Windows with the 64-bit MSVC compiler.
 
-- `${workspaceRoot}` – provides the full path of the workspace folder
-- `${workspaceHash}` – hash of workspace location; useful for creating a unique identifier for the current workspace (for example, to use in folder paths)
-- `${projectFile}` – the full path of the root *CMakeLists.txt* file
-- `${projectDir}` – the full path of the folder of the root *CMakeLists.txt* file
-- `${projectNameDir}` - the leaf name of the `${projectDir}` value
-- `${thisFile}` – the full path of the  *CMakeSettings.json* file
-- `${name}` – the name of the configuration
-- `${generator}` – the name of the CMake generator used in this configuration
+### Accessing environment variables from CMakeLists.txt
 
+From a CMakeLists.txt file, all environment variables are referenced by the syntax `$ENV{variable_name}`. To see the available variables for an environment, open the corresponding command prompt and type `SET`. Some of the information in environment variables is also available through CMake system introspection variables, but you may find it more convenient to use the environment variable. For example, the MSVC compiler version or Windows SDK version are easily retrieved through the environment variables.
 
 ### Custom environment variables
 
-In  *CMakeSettings.json*, you can define custom environment variables globally or per-configuration in the **environments** property. The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
+In  `CMakeSettings.json`, you can define custom environment variables globally or per-configuration in the `environments` array. A custom environment is a convenient way to group a set of properties that you can use in place of a predefined environment, or to extend or modify a predefined environment. Each item in the `environments` array consists of:
+
+- `namespace`: names the environment so that its variables can be referenced from a configuration in the form `namespace.variable`. The default environment object is called `env` and is populated with certain system environment variables including `%USERPROFILE%`.
+- `environment`: uniquely identifies this group of variables. Allows the group to be inherited later in an `inheritEnvironments` entry.
+- `groupPriority`: An integer that specifies the priority of these variables when evaluating them. Higher number items are evaluated first.
+- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs.
+
+The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
 
 ```json
 {
@@ -240,6 +257,20 @@ In the next example, the x86-Debug configuration defines its own value for the *
 }
 ```
 
+## Macros
+
+The following macros can be used in *CMakeSettings.json*:
+
+- `${workspaceRoot}` – the full path of the workspace folder
+- `${workspaceHash}` – hash of workspace location; useful for creating a unique identifier for the current workspace (for example, to use in folder paths)
+- `${projectFile}` – the full path of the root CMakeLists.txt file
+- `${projectDir}` – the full path of the folder of the root CMakeLists.txt file
+- `${thisFile}` – the full path of the  `CMakeSettings.json` file
+- `${name}` – the name of the configuration
+- `${generator}` – the name of the CMake generator used in this configuration
+
+All references to macros and environment variables in *CMakeSettings.json* are expanded before being passed to the cmake.exe command line.
+
 ## <a name="ninja"></a> Ninja command line arguments
 
 If targets are unspecified, builds the 'default' target.
@@ -264,6 +295,4 @@ usage: ninja [options] [targets...]
 |   -t TOOL  | run a subtool (use -t list to list subtools). terminates top-level options; further flags are passed to the tool|
 |   -w FLAG  | adjust warnings (use -w list to list warnings)|
 
-
-
-
+::: moniker-end
