@@ -1,18 +1,26 @@
 ---
-title: "MSVC experimental preprocessor"
+title: "MSVC experimental preprocessor overview"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
 ms.date: "10/31/2019"
 helpviewer_keywords: ["preprocessor, experimental"]
 ---
 
-# MSVC experimental preprocessor
+# MSVC experimental preprocessor overview
 
 The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. In addition, new diagnostics have been added to warn on errors in macro definitions.
 These changes in their current state are available by using the **/experimental:preprocessor** compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions. See [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) for more information.
 
 ## New predefined macro
 
-A new predefined macro in the compiler, **_MSVC_TRADITIONAL**, indicates whether the traditional preprocessor is being used. Its value is **1** for the traditional preprocessor, and **0** for the conformant experimental preprocessor.
+You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [\_MSVC\_TRADITIONAL](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conformant experimental preprocessor:
+
+```cpp
+#if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
+// Logic using the traditional preprocessor
+#else
+// Logic using cross-platform compatible preprocessor
+#endif
+```
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -53,7 +61,7 @@ int myVal;
 
 ## L#val
 
-The traditional preprocessor incorrectly combines a string prefix to the result of the **#** operator:
+The traditional preprocessor incorrectly combines a string prefix to the result of the [stringizing operator (#)](stringizing-operator-hash.md) operator:
 
 ```cpp
  #define DEBUG_INFO(val) L"debug prefix:" L#val
@@ -101,7 +109,7 @@ You can fix the issue in various ways:
 
 ## Warning on invalid \#\#
 
-When the **##** operator does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
+When the [token-pasting operator (##)](token-pasting-operator-hash-hash.md) does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
 
 ```cpp
 // The ## is unnecessary and does not result in a single preprocessing token.
@@ -211,3 +219,12 @@ DO_THING_FIXED(1, "World");
 // do_thing_one( "Hello", "World");
 ```
 
+## Incomplete features
+
+The experimental preprocessor isn't complete yet, and some preprocessor directive logic still falls back to the traditional behavior. Here is a partial list of incomplete features:
+
+- Support for `_Pragma`
+- C++20 features
+- Additional diagnostic improvements
+- Switches to control the output under /E and /P
+- Boost blocking bug: Logical operators in preprocessor constant expressions aren't fully implemented in the new preprocessor. On some `#if` directives, the new preprocessor can fall back to the traditional preprocessor. The effect is only noticeable when macros that are incompatible with the traditional preprocessor get expanded, which can happen when building Boost preprocessor slots.
