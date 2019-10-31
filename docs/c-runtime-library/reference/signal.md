@@ -125,10 +125,12 @@ int main()
 }
 ```
 
+The output depends on the version of the runtime used, whether the app is a console or Windows app, and on Windows registry settings. For a console app, something like the following message may be sent to stderr:
+
 ```Output
 Debug Error!
 
-Program: c:\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+Program: c:\Projects\crt_signal\Debug\crt_signal.exe
 
 R6010
 
