@@ -1,6 +1,6 @@
 ---
 title: "Porting Guide: Spy++"
-ms.date: "11/19/2018"
+ms.date: "10/23/2019"
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
 ---
 # Porting Guide: Spy++
@@ -9,7 +9,7 @@ This porting case study is designed to give you an idea of what a typical portin
 
 ## Spy++
 
-Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to Visual Studio 2015. The experience for Visual Studio 2017 should be almost identical.
+Spy++ is a widely used GUI diagnostic tool for the Windows desktop that provides all sorts of information about user interface elements on the Windows desktop. It shows the complete hierarchy of windows and provides access to metadata about each window and control. This useful application has shipped with Visual Studio for many years. We found an old version of it that was last compiled in Visual C++ 6.0 and ported it to Visual Studio 2015. The experience for Visual Studio 2017 or Visual Studio 2019 should be almost identical.
 
 We considered this case to be typical for porting Windows desktop applications that use MFC and the Win32 API, especially for old projects that have not been updated with each release of Visual C++ since Visual C++ 6.0.
 
