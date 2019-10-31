@@ -34,7 +34,7 @@ You can detect which preprocessor is in use at compile time. Check the value of 
 
 The initial work on the experimental preprocessor has been focused on making all macro expansions conformant in order to enable the use of the MSVC compiler with libraries that are currently blocked due to traditional behaviors. Below is a list of some of the more common breaking changes that were run into when testing the updated preprocessor with real world projects.
 
-## Macro comments
+### Macro comments
 
 The traditional preprocessor is based on character buffers rather than preprocessor tokens. This allows unusual behavior such as the following preprocessor comment trick which will not work under the conforming preprocessor:
 
@@ -59,7 +59,7 @@ int myVal;
 #endif
 ```
 
-## L#val
+### L#val
 
 The traditional preprocessor incorrectly combines a string prefix to the result of the [stringizing operator (#)](stringizing-operator-hash.md) operator:
 
@@ -107,7 +107,7 @@ You can fix the issue in various ways:
    #define STRING3(str) L## #str
    ```
 
-## Warning on invalid \#\#
+### Warning on invalid \#\#
 
 When the [token-pasting operator (##)](token-pasting-operator-hash-hash.md) does not result in a single valid preprocessing token, the behavior is undefined. The traditional preprocessor will silently fail to combine the tokens. The new preprocessor will match the behavior of most other compilers and emit a diagnostic.
 
@@ -118,7 +118,7 @@ When the [token-pasting operator (##)](token-pasting-operator-hash-hash.md) does
 ADD_STD(string) s;
 ```
 
-## Comma elision in variadic macros
+### Comma elision in variadic macros
 
 The traditional MSVC preprocessor always removes commas before empty `__VA_ARGS__` replacements. The experimental preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a `##` operator. Consider the following example:
 
@@ -153,7 +153,7 @@ int main()
 
 In the upcoming C++2a standard this issue has been addressed by adding `__VA_OPT__`, which is not yet implemented.
 
-## Macro arguments are "unpacked"
+### Macro arguments are "unpacked"
 
 In the traditional preprocessor, if a macro forwards one of its arguments to another dependent macro then the argument does not get "unpacked" when it is substituted. Usually this optimization goes unnoticed, but it can lead to unusual behavior:
 
@@ -172,7 +172,7 @@ const char* c[2] = { A(1, 2) };
 
 When expanding `A()`, the traditional preprocessor forwards all of the arguments packaged in `__VA_ARGS__` to the first argument of TWO_STRINGS, which leaves the variadic argument of `TWO_STRINGS` empty. This causes the result of `#first` to be "1, 2" rather than just "1". If you are following along closely, then you may be wondering what happened to the result of `#__VA_ARGS__` in the traditional preprocessor expansion: if the variadic parameter is empty it should result in an empty string literal `""`. Due to a separate issue, the empty string literal token was not generated.
 
-## Rescanning replacement list for macros
+### Rescanning replacement list for macros
 
 After a macro is replaced, the resulting tokens are re-scanned for additional macro identifiers that need to be replaced. The algorithm used by the traditional preprocessor for doing the rescan is not conformant, as shown in this example based on actual code:
 
