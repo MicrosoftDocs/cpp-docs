@@ -1,6 +1,7 @@
 ---
 title: "_CrtSetDebugFillThreshold"
-ms.date: "03/21/2018"
+description: "Use the _CrtSetDebugFillThreshold function to set the maximum amount of buffer to fill in secure CRT functions."
+ms.date: "10/31/2019"
 api_name: ["_CrtSetDebugFillThreshold"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
@@ -30,7 +31,7 @@ The previous threshold value.
 
 ## Remarks
 
-The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **_CrtSetDebugFillThreshold** to disable buffer-filling for buffers larger than the *newThreshold* threshold. A *newThreshold* value of 0 disables it for all buffers.
+The debug versions of some security-enhanced CRT functions fill the buffer passed to them with a special character (0xFE). This fill character helps to find cases where the incorrect size was passed to the function. Unfortunately, it also reduces performance. To improve performance, use **_CrtSetDebugFillThreshold** to disable buffer-filling for buffers larger than the *newThreshold* threshold. A *newThreshold* value of 0 disables it for all buffers.
 
 The default threshold is **SIZE_T_MAX**.
 
