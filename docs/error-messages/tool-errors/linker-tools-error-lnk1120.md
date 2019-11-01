@@ -15,4 +15,4 @@ Error LNK1120 reports the number of [unresolved external symbol](linker-tools-er
 Each unresolved external symbol first gets reported by a [LNK2001](linker-tools-error-lnk2001.md) or [LNK2019](linker-tools-error-lnk2019.md) error. The LNK1120 message comes last, and shows the unresolved symbol error count.
 
 > [!IMPORTANT]
-> **You don't need to fix this error.** This error goes away when you correct all of the LNK2001 and LNK2019 linker errors before it in the build output. Always fix issues starting at the first reported error. Later errors may be caused by earlier ones, and go away when the earlier error is fixed.
+> **You don't need to fix this error.** This error goes away when you correct all of the LNK2001 and LNK2019 linker errors before it in the build output. Always fix issues starting at the first reported error. Later errors may be caused by earlier ones, and go away when the earlier errors are fixed.
