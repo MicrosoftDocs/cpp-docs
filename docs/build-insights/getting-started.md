@@ -34,7 +34,7 @@ This image shows an appropriate feature selection:
 
 ![The Windows Performance Analyzer installer's feature selection screen](media/wpa-installation.png)
 
-### <a name="configuration-steps></a> To configure Build Insights
+### <a name="configuration-steps"></a> To configure Build Insights
 
 1. Launch WPA.
 1. Select **Window** > **Select Tables (Experimental)**.
