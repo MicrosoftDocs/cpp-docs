@@ -111,6 +111,17 @@
           href: build/cmake-predefined-configuration-reference.md
     - name: "vcpkg: A package manager for C++"
       href: build/vcpkg.md
+    - name: "C++ Build Insights"
+      expanded: false
+      items:
+        - name: "Getting started"
+          href: build-insights/getting-started.md
+        - name: "Windows Performance Analyzer basics"
+          href: build-insights/wpa-basics.md
+        - name: "vcperf.exe reference"
+          href: build-insights/vcperf-reference.md
+        - name: "Windows Performance Analyzer views reference"
+          href: build-insights/wpa-views-reference.md
     - name: Precompiled header files
       href: build/creating-precompiled-header-files.md
     - name: C++ release builds
