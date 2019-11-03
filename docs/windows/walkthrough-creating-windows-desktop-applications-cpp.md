@@ -1,7 +1,8 @@
 ---
 title: "Walkthrough: Create a traditional Windows Desktop application (C++)"
+description: "How to create a minimal, traditional Windows Desktop application using Visual Studio, C++, and the Win32 API"
 ms.custom: "get-started-article"
-ms.date: "10/21/2019"
+ms.date: "11/03/2019"
 helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
 ---
 # Walkthrough: Create a traditional Windows Desktop application (C++)
@@ -67,9 +68,7 @@ Your project is now created and your source file is opened in the editor. To con
 
    ![Name the DesktopApp project](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
 
-1. In the **Windows Desktop Project** dialog, under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Choose **OK** to create the project.
-
-   ![Create DesktopApp in Windows Desktop Project Wizard](../build/media/desktop-app-new-project-wizard-153.png "Create DesktopApp in Windows Desktop Project Wizard")
+1. In the **Windows Desktop Project** dialog, under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Make sure **Precompiled Header** isn't selected. Choose **OK** to create the project.
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
@@ -99,9 +98,7 @@ Your project is now created and your source file is opened in the editor. To con
 
    ![Create DesktopApp in Win32 Application Wizard Overview](../build/media/desktop-app-win32-wizard-overview-150.png "Create DesktopApp in Win32 Application Wizard Overview")
 
-1. On the **Application Settings** page, under **Application type**, select **Windows application**. Under **Additional options**, select **Empty project**. Choose **Finish** to create the project.
-
-   ![Create DesktopApp in Win32 Application Wizard Settings](../build/media/desktop-app-win32-wizard-settings-150.png "Create DesktopApp in Win32 Application Wizard Settings")
+1. On the **Application Settings** page, under **Application type**, select **Windows application**. Under **Additional options**, uncheck **Precompiled header**, then select **Empty project**. Choose **Finish** to create the project.
 
 1. In **Solution Explorer**, right-click the DesktopApp project, choose **Add**, and then choose **New Item**.
 
