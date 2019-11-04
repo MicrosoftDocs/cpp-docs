@@ -12,7 +12,7 @@ You can use Visual Studio to create Standard C++ programs. By following the step
 You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.
 
 > [!NOTE]
-> If compliance with a specific version of the C++ language standard (i.e. C++14 or C++17) is required, use the `/std:C++14` or `/std:c++17` compiler option. (Visual Studio 2017 and later.)
+> If compliance with a specific version of the C++ language standard (i.e. C++14 or C++17) is required, use the `/std:c++14` or `/std:c++17` compiler option. (Visual Studio 2017 and later.)
 
 ## Prerequisites
 
