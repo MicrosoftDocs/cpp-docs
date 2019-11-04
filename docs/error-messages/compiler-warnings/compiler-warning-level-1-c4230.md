@@ -13,7 +13,7 @@ Using a qualifier before a Microsoft modifier such as `__cdecl` is an outdated p
 
 ## Example
 
-```
+```cpp
 // C4230.cpp
 // compile with: /W1 /LD
 int __cdecl const function1();   // C4230 const ignored

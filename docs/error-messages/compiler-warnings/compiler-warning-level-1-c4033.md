@@ -17,7 +17,7 @@ This error is for C language code.
 
 The following sample generates C4033:
 
-```
+```c
 // C4033.c
 // compile with: /W1 /LD
 int test_1(int x)   // C4033 expected

@@ -25,7 +25,7 @@ C4484 is always issued as an error. Use the [warning](../../preprocessor/warning
 
 The following sample generates C4484.
 
-```
+```cpp
 // C4484.cpp
 // compile with: /clr
 ref struct A {

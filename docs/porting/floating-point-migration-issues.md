@@ -25,6 +25,6 @@ In most cases, the floating-point changes in the newest compilers and libraries 
 
 ## See also
 
-[Upgrading Projects from Earlier Versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Upgrading projects from earlier versions of Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Overview of potential upgrade issues (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)

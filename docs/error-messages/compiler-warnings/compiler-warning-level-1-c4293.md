@@ -15,7 +15,7 @@ If a shift count is negative or too large, the behavior of the resulting image i
 
 The following sample generates C4293:
 
-```
+```cpp
 // C4293.cpp
 // compile with: /c /W1
 unsigned __int64 combine (unsigned lo, unsigned hi) {

@@ -60,6 +60,8 @@ If any of the above error conditions occurs, the invalid parameter handler is in
 
 The **_mktemp_s** function creates a unique file name by modifying the *nameTemplate* argument, so that after the call, the *nameTemplate* pointer points to a string containing the new file name. **_mktemp_s** automatically handles multibyte-character string arguments as appropriate, recognizing multibyte-character sequences according to the multibyte code page currently in use by the run-time system. **_wmktemp_s** is a wide-character version of **_mktemp_s**; the argument of **_wmktemp_s** is a wide-character string. **_wmktemp_s** and **_mktemp_s** behave identically otherwise, except that **_wmktemp_s** does not handle multibyte-character strings.
 
+The debug library versions of these functions first fill the buffer with 0xFE. To disable this behavior, use [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
+
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|

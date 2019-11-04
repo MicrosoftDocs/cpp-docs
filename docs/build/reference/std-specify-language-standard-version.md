@@ -28,7 +28,7 @@ The default **/std:c++14** option enables the set of C++14 features implemented 
 
 - [u8 character literals](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
-For additional information on which C++14 and C++17 features are enabled when **/std:c++14** is specified, see the notes in [Visual C++ Language Conformance](../../overview/visual-cpp-language-conformance.md).
+For additional information on which C++14 and C++17 features are enabled when **/std:c++14** is specified, see the notes in [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md).
 
 The **/std:c++17** option enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are changed or new in versions of the Working Draft and defect updates of the C++ Standard after C++17.
 
@@ -42,7 +42,7 @@ The **/std** option in effect during a C++ compilation can be detected by use of
 The **/std:c++14** and **/std:c++latest** options are available beginning in Visual Studio 2015 Update 3. The **/std:c++17** option is available beginning in Visual Studio 2017 version 15.3. As noted above, some C++17 standard behavior is enabled by the **/std:c++14** option, but all other C++17 features are enabled by **/std:c++17**. C++20 features are enabled by **/std:latest** until the implementation is complete.
 
 > [!NOTE]
-> Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++17** options. For an overview of C++ language conformance in Visual C++ by release version, see [Visual C++ Language Conformance](../../overview/visual-cpp-language-conformance.md).
+> Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conformant when you specify the **/std:c++17** options. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

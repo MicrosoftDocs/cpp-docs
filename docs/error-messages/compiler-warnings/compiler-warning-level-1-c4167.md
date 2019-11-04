@@ -15,7 +15,7 @@ To avoid this warning, remove the **#pragma function**.
 
 ## Example
 
-```
+```cpp
 // C4167.cpp
 // compile with: /W1
 #include <malloc.h>

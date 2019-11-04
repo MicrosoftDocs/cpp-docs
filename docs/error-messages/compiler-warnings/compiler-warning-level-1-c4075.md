@@ -13,7 +13,7 @@ A [#pragma init_seg](../../preprocessor/init-seg.md) uses an unrecognized sectio
 
 The following sample generates C4075:
 
-```
+```cpp
 // C4075.cpp
 // compile with: /W1
 #pragma init_seg("mysegg")   // C4075

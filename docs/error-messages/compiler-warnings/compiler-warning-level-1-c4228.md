@@ -13,7 +13,7 @@ Use of qualifiers like **const** or `volatile` after a comma when declaring vari
 
 ## Example
 
-```
+```cpp
 // C4228.cpp
 // compile with: /W1
 int j, const i = 0;  // C4228

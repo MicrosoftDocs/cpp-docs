@@ -13,7 +13,7 @@ The pragma requires an **on** or **off** parameter. The pragma is ignored.
 
 The following sample generates C4085:
 
-```
+```cpp
 // C4085.cpp
 // compile with: /W1 /LD
 #pragma optimize( "t", maybe )  // C4085

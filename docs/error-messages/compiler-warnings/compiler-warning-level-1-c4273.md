@@ -15,7 +15,7 @@ Two definitions in a file differ in their use of [dllimport](../../cpp/dllexport
 
 The following sample generates C4273.
 
-```
+```cpp
 // C4273.cpp
 // compile with: /W1 /c
 char __declspec(dllimport) c;
@@ -26,7 +26,7 @@ char c;   // C4273, delete this line or the line above to resolve
 
 The following sample generates C4273.
 
-```
+```cpp
 // C4273_b.cpp
 // compile with: /W1 /clr /c
 #include <stdio.h>

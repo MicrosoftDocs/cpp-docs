@@ -19,7 +19,7 @@ One way to generate files in Macintosh format is by using the **Advanced Save Op
 
 The following sample generates C4335.
 
-```
+```cpp
 // C4335 expected
 #include "c4335.h"   // assume both include files are in Macintosh format
 #include "c4335_2.h"
