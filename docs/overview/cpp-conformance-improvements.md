@@ -804,7 +804,7 @@ struct Comparer  {
 
 ## <a name="improvements_150"></a> Conformance improvements in Visual Studio 2017 RTW (version 15.0)
 
-With support for generalized **constexpr** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Visual C++ Language Conformance](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
+With support for generalized **constexpr** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ### C++11: Expression SFINAE support in more libraries
 
@@ -2844,4 +2844,4 @@ For the complete list of conformance improvements up through Visual Studio 2015 
 
 ## See also
 
-[Visual C++ language conformance](../visual-cpp-language-conformance.md)
+[Microsoft C++ language conformance table](../visual-cpp-language-conformance.md)

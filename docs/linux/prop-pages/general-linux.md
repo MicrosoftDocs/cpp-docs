@@ -29,4 +29,3 @@ Configuration Type | Specifies the type of output this configuration generates. 
 Use of STL | Specifies which C++ Standard Library to use for this configuration. | **Shared GNU Standard C++ Library**<br>**Static GNU Standard C++ Library (-static)**<br>
 
 ::: moniker-end
-

@@ -1,10 +1,10 @@
 ---
-title: "Modifying WINVER and _WIN32_WINNT"
+title: "Update WINVER and _WIN32_WINNT"
 ms.date: "09/04/2017"
 helpviewer_keywords: ["WINVER in an upgraded Visual Studio C++ project", "_WIN32_WINNT in an upgraded Visual Studio C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
 ---
-# Modifying WINVER and _WIN32_WINNT
+# Update WINVER and _WIN32_WINNT
 
 Visual C++ no longer supports targeting Windows 95, Windows 98, Windows ME, Windows NT or Windows 2000. If your **WINVER** or **_WIN32_WINNT** macros are assigned to one of these versions of Windows, you must modify the macros. When you upgrade a project that was created by using an earlier version of Visual C++, you may see compilation errors related to the **WINVER** or **_WIN32_WINNT** macros if they are assigned to a version of Windows that is no longer supported.
 

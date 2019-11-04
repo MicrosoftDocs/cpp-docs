@@ -354,11 +354,11 @@ For a complete list of standard library improvements in Visual Studio 2017 RTM, 
 - Added \<optional\>, \<variant\>, `shared_ptr::weak_type`, and \<cstdalign\>.
 - Enabled C++14 `constexpr` in `min(initializer_list)`, `max(initializer_list)`, and `minmax(initializer_list)`, and `min_element()`, `max_element()`, and `minmax_element()`.
 
-For more information, see [Visual C++ language conformance](../visual-cpp-language-conformance.md).
+For more information, see [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md).
 
 ##### Visual Studio 2017 version 15.3
 
-- Several additional C++17 features have been implemented. For more information, see [Visual C++ Language Conformance](cpp-conformance-improvements.md#improvements_153).
+- Several additional C++17 features have been implemented. For more information, see [Microsoft C++ language conformance table](cpp-conformance-improvements.md#improvements_153).
 - Implemented P0602R0 "variant and optional should propagate copy/move triviality".
 - The standard library now officially tolerates dynamic RTTI being disabled via the [/GR-](../build/reference/gr-enable-run-time-type-information.md) option. Both `dynamic_pointer_cast()` and `rethrow_if_nested()` inherently require `dynamic_cast`, so the standard library now marks them as `=delete` under **/GR-**.
 - Even when dynamic RTTI has been disabled via **/GR-**, "static RTTI" in the form of `typeid(SomeType)` is still available, and powers several standard library components. The standard library now supports disabling this feature too, via **/D\_HAS\_STATIC\_RTTI=0**. This flag also disables `std::any`, the `target()` and `target_type()` member functions of `std::function`, and the `get_deleter()` friend member function of `std::shared_ptr` and `std::weak_ptr`.
@@ -416,7 +416,7 @@ For more information, see [Visual C++ language conformance](../visual-cpp-langua
 - `constexpr char_traits`
 - Deduction guides for the standard library
 
-For more information, see [Visual C++ language conformance](../visual-cpp-language-conformance.md).
+For more information, see [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md).
 
 ### Performance and throughput fixes
 
