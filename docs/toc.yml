@@ -114,8 +114,8 @@
     - name: "C++ Build Insights"
       expanded: false
       items:
-        - name: "Getting started"
-          href: build-insights/getting-started.md
+        - name: "Get started with C++ Build Insights"
+          href: build-insights/get-started-with-cpp-build-insights.md
         - name: "Windows Performance Analyzer basics"
           href: build-insights/wpa-basics.md
         - name: "vcperf.exe reference"

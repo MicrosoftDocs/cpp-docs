@@ -3,13 +3,17 @@ title: "C++ Build Insights: Windows Performance Analyzer views reference"
 description: "Reference for C++ Build Insights views available in Windows Performance Analyzer."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
-ms.assetid: ceb8e00f-5e98-4948-bd2c-1ac3880b96d4
 ---
 # C++ Build Insights: Windows Performance Analyzer views reference
 
-## Introduction
+::: moniker range="<=vs-2017"
 
-This section provides details on each of the C++ Build Insights views available in Windows Performance Analyzer (WPA). Use this page to find:
+The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio version selector control for this article to Visual Studio 2019.
+
+::: moniker-end
+::: moniker range="vs-2019"
+
+This article provides details on each of the C++ Build Insights views available in Windows Performance Analyzer (WPA). Use this page to find:
 
 - data column descriptions; and
 - available presets for each view, including their intended use and preferred viewing mode.
@@ -22,7 +26,7 @@ The Build Explorer view is used to:
 
 - diagnose parallelism issues,
 - determine if your build time is dominated by parsing, code generation, or linking, and
-- identify bottlenecks and unusually long activities.
+- identify bottlenecks and unusually long build activities.
 
 ### Build Explorer view data columns
 
@@ -57,8 +61,8 @@ The Build Explorer view is used to:
 
 The Files view is used to:
 
-- determine the headers that are the most included, and
-- assist in deciding what to include in a pre-compiled header (PCH).
+- determine which headers get included the most often, and
+- help you decide what to include in a pre-compiled header (PCH).
 
 ### Files view data columns
 
@@ -111,5 +115,14 @@ The Functions view is used to identify functions with an excessively long code g
 
 | Preset Name | Preferred View Mode | How to Use |
 |-------------|---------------------|------------|
-| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the *__forceinline* keyword, or that some functions may be too large. |
+| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the **__forceinline** keyword, or that some functions may be too large. |
 | Timelines   | Graph               | Look at this bar graph to learn the location and duration of functions that take the most time to generate. See if they align with bottlenecks in the Build Explorer view. If they do, take appropriate action to reduce their code generation time and benefit your build times. |
+
+## See also
+
+[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)\
+[vcperf.exe reference](vcperf-reference.md)\
+[Windows Performance Analyzer basics](wpa-basics.md)\
+[Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
+
+::: moniker-end
