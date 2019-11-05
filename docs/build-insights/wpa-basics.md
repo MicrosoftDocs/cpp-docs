@@ -1,45 +1,56 @@
 ---
 title: "C++ Build Insights: Windows Performance Analyzer basics"
 description: "Tutorial on how to complete basic operations in Windows Performance Analyzer."
-ms.date: "09/16/2019"
+ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
-ms.assetid: ceb8e00f-5e98-4948-bd2c-1ac3880b96d4
 ---
 # C++ Build Insights: Windows Performance Analyzer basics
 
-## Introduction
+::: moniker range="<=vs-2017"
 
-Using C++ Build Insights effectively requires some knowledge of Windows Performance Analyzer (WPA). This section will help you become familiar with common WPA operations.
+The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio version selector control for this article to Visual Studio 2019.
 
-## Changing the view mode
+::: moniker-end
+::: moniker range="vs-2019"
+
+Using C++ Build Insights effectively requires some knowledge of Windows Performance Analyzer (WPA). This article helps you become familiar with common WPA operations. For more information on how to use WPA, see the [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) documentation.
+
+## Change the view mode
 
 WPA offers two basic view modes for you to explore your traces:
 
-- graph mode; and
+- graph mode, and
 - table mode.
 
-You can switch between them as follows:
+You can switch between them by using the view mode icons in the top of the view pane:
 
 ![Switching between graph mode and table mode.](media/wpa-switching-view-mode.gif)
 
-## Selecting presets
+## Select presets
 
-Most C++ Build Insights WPA views have multiple presets for you to choose from. You can select your desired preset by using the drop-down menu shown below:
+Most C++ Build Insights WPA views have multiple presets for you to choose from. You can select the preset you want by using the drop-down menu in the top of the view pane:
 
 ![Selecting a preset.](media/wpa-presets.png)
 
-## Zooming in and out
+## Zoom in and out
 
-Some build traces are so large it is hard to make out the details. Consider zooming on an area that interests you by right-clicking on the graph and selecting *Zoom*. You can always go back to the previous setting by choosing *Undo Zoom*. An example of zooming is illustrated below:
+Some build traces are so large it's hard to make out the details. To zoom in on an area that interests you, right-click on the graph and select **Zoom**. You can always go back to the previous setting by choosing **Undo Zoom**. This image shows an example of using a selection and the **Zoom** command to zoom in on a section of the graph:
 
 ![Zooming in on a graph.](media/wpa-zooming.gif)
 
-## Grouping by different columns
+## Group by different columns
 
-You can customize the way your trace is displayed by clicking on the gear icon at the top of a view and rearranging columns. The columns that are found above the yellow line in this dialog are the ones your data rows will be grouped by. The column right above the yellow line has a special significance for the graph view: it will be displayed on the colored bars. Here is an example where we are looking at a bar graph of a link invocation. The configuration is changed to increase the level of detail and see what was actually happening inside the linker:
+You can customize the way your trace is displayed. Click on the gear icon at the top of a view pane and rearrange the columns in the Build Explorer View Editor. The columns found above the yellow line in this dialog are the ones your data rows are grouped by. The column right above the yellow line is special: in the graph view, it's displayed on the colored bars.
+
+This image shows an example bar graph of a link invocation. We use the gear icon to open the Build Explorer View Editor dialog. Then we drag the Component and Name column entries above the yellow line. The configuration is changed to increase the level of detail, and to see what actually happened inside the linker:
 
 ![Zooming in on a graph.](media/wpa-grouping.gif)
 
-## More information
+## See also
 
-For more information on how to use WPA, please refer to its official documentation at [https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer).
+[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)\
+[vcperf.exe reference](vcperf-reference.md)\
+[Windows Performance Analyzer views reference](wpa-views-reference.md)\
+[Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
+
+::: moniker-end

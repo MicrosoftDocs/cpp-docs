@@ -676,6 +676,11 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/build-insights/getting-started.md",
+         "redirect_url": "/cpp/build-insights/get-started-with-cpp-build-insights",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/c-language/index.md",
          "redirect_url": "/cpp/c-language/c-language-reference",
          "redirect_document_id": false
