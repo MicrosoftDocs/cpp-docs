@@ -8,7 +8,7 @@ ms.assetid: 9f66ee52-b7cb-4ffd-8306-392a5da990d8
 
 MFC hosts a Windows Forms control as a special kind of ActiveX control and communicates with the control by using ActiveX interfaces, and properties and methods of the <xref:System.Windows.Forms.Control> class. We recommend that you use .NET Framework properties and methods to operate on the control.
 
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/en-us/download/details.aspx?id=2113).
 
 > [!NOTE]
 >  In the current release, a `CDialogBar` object cannot host Windows Forms controls.
