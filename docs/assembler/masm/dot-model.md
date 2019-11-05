@@ -1,13 +1,13 @@
 ---
 title: ".MODEL"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".MODEL"]
 helpviewer_keywords: [".MODEL directive"]
 ms.assetid: 057f00df-1515-4c55-852a-d936c8a34b53
 ---
-# .MODEL
+# .MODEL (32-bit MASM)
 
-Initializes the program memory model.
+Initializes the program memory model. (32-bit MASM only.)
 
 ## Syntax
 
