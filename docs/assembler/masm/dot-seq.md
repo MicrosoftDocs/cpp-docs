@@ -1,13 +1,13 @@
 ---
 title: ".SEQ"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".SEQ"]
 helpviewer_keywords: [".SEQ directive"]
 ms.assetid: 1f8bca31-e29d-4537-b9ca-f8463af75281
 ---
-# .SEQ
+# .SEQ (32-bit MASM)
 
-Orders segments sequentially (the default order).
+Orders segments sequentially (the default order). (32-bit MASM only.)
 
 ## Syntax
 
