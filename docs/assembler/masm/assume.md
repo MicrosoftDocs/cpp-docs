@@ -1,13 +1,13 @@
 ---
 title: "ASSUME"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: ["ASSUME"]
 helpviewer_keywords: ["ASSUME directive"]
 ms.assetid: cd162070-aee9-4c65-babc-005c6cc73d7c
 ---
-# ASSUME
+# ASSUME (32-bit MASM)
 
-Enables error checking for register values.
+Enables error checking for register values. (32-bit MASM only.)
 
 ## Syntax
 

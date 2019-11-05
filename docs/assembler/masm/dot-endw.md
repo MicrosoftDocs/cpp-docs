@@ -1,11 +1,11 @@
 ---
 title: ".ENDW"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".ENDW"]
 helpviewer_keywords: [".ENDW directive"]
 ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
 ---
-# .ENDW
+# .ENDW (32-bit MASM)
 
 ## Syntax
 
@@ -13,7 +13,7 @@ ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
 
 ## Remarks
 
-See [.WHILE](../../assembler/masm/dot-while.md).
+(32-bit MASM only.) See [.WHILE](../../assembler/masm/dot-while.md).
 
 ## See also
 
