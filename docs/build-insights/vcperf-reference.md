@@ -1,32 +1,45 @@
 ---
 title: "C++ Build Insights: vcperf.exe reference"
 description: "Reference for the command-line utility vcperf.exe."
-ms.date: "09/16/2019"
+ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
-ms.assetid: a2a4c05a-4a77-44da-922e-d2c939cfd4e6
 ---
 # C++ Build Insights: vcperf.exe reference
 
-## Introduction
+::: moniker range="<=vs-2017"
 
-This section describes the commands that are available in *vcperf.exe* and how to use them.
+The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio version selector control for this article to Visual Studio 2019.
+
+::: moniker-end
+::: moniker range="vs-2019"
+
+This article lists and describes the commands available in *vcperf.exe*, and how to use them.
 
 ## Commands to start and stop traces
 
 *IMPORTANT: the following commands all require administrative privileges.*
 
-| Option           | Arguments and description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/start`         | `[/nocpusampling]` `<sessionName>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                  | Instructs *vcperf.exe* to start a trace under the given session name. There may only be one active session at a time on a given machine. <br/><br/> If the `/nocpusampling` option is specified, *vcperf.exe* will not collect CPU samples. This will prevent the use of the CPU Usage (Sampled) view in Windows Performance Analyzer, but will make the collected traces smaller. <br/><br/> Once tracing is started, *vcperf.exe* returns immediately. Events are collected system-wide for all processes running on the machine. This means that you do not need to build your project from the same command prompt as the one you used to run *vcperf.exe*. For example, you can build your project from Visual Studio. |
-| `/stop`          | `<sessionName>` `<outputFile.etl>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                  | Stops the trace identified by the given session name. Runs a post-processing step on the trace to generate a file that can be viewed in Windows Performance Analyzer (WPA). For the best viewing experience, you will need a version of WPA that includes the C++ Build Insights add-in. For more information, please see the [Getting started](getting-started.md) page. The `<outputFile.etl>` parameter specifies the location where the output file will be saved.                                                                                                                                                                                                                                                     |
-| `/stopnoanalyze` | `<sessionName>` `<rawOutputFile.etl>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|                  | Stops the trace identified by the given session name and writes the raw, unprocessed data in the specified output file. The resulting file is not meant to be viewed in WPA. <br/><br/> The post-processing step involved in the `/stop` command can sometimes be lengthy. You can use the `/stopnoanalyze` command to delay this post-processing step. Use the `/analyze` command when you are ready to produce a file that can be viewed in Windows Performance Analyzer.                                                                                                                                                                                                                                                 |
+| Option           | Arguments and description |
+|------------------|---------------------------|
+| `/start`         | `[/nocpusampling]` `<sessionName>` |
+|                  | Tells *vcperf.exe* to start a trace under the given session name. There can only be one active session at a time on a given machine. <br/><br/> If the `/nocpusampling` option is specified, *vcperf.exe* doesn't collect CPU samples. It prevents the use of the CPU Usage (Sampled) view in Windows Performance Analyzer, but makes the collected traces smaller. <br/><br/> Once tracing is started, *vcperf.exe* returns immediately. Events are collected system-wide for all processes running on the machine. That means that you don't need to build your project from the same command prompt as the one you used to run *vcperf.exe*. For example, you can build your project from Visual Studio. |
+| `/stop`          | `<sessionName>` `<outputFile.etl>` |
+|                  | Stops the trace identified by the given session name. Runs a post-processing step on the trace to generate a file viewable in Windows Performance Analyzer (WPA). For the best viewing experience, use a version of WPA that includes the C++ Build Insights add-in. For more information, see [Get started with C++ Build Insights](get-started-with-cpp-build-insights.md). The `<outputFile.etl>` parameter specifies where to save the output file. |
+| `/stopnoanalyze` | `<sessionName>` `<rawOutputFile.etl>` |
+|                  | Stops the trace identified by the given session name and writes the raw, unprocessed data in the specified output file. The resulting file isn't meant to be viewed in WPA. <br/><br/> The post-processing step involved in the `/stop` command can sometimes be lengthy. You can use the `/stopnoanalyze` command to delay this post-processing step. Use the `/analyze` command when you're ready to produce a file viewable in Windows Performance Analyzer. |
 
 ## Miscellaneous commands
 
-| Option     | Arguments and description                                                                                                                                                                                                                                                                                                                                                                    |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `/analyze` | `<rawInputFile.etl> <outputFile.etl>`                                                                                                                                                                                                                                                                                                                                                        |
-|            | Accepts a raw trace file produced by the `/stopnoanalyze` command. Runs a post-processing step on this trace to generate a file that is suitable for viewing in Windows Performance Analyzer. For the best viewing experience, you will need a version of WPA that includes the C++ Build Insights add-in. For more information, please see the [Getting started](getting-started.md) page. |
+| Option     | Arguments and description |
+|------------|---------------------------|
+| `/analyze` | `<rawInputFile.etl> <outputFile.etl>` |
+|            | Accepts a raw trace file produced by the `/stopnoanalyze` command. Runs a post-processing step on this trace to generate a file viewable in Windows Performance Analyzer. For the best viewing experience, use a version of WPA that includes the C++ Build Insights add-in. For more information, see [Get started with C++ Build Insights](get-started-with-cpp-build-insights.md). |
+
+## See also
+
+[Get started with C++ Build Insights](get-started-with-cpp-build-insights.md)\
+[Windows Performance Analyzer basics](wpa-basics.md)\
+[Windows Performance Analyzer views reference](wpa-views-reference.md)\
+[Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
+
+::: moniker-end
