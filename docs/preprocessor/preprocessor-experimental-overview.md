@@ -8,6 +8,7 @@ helpviewer_keywords: ["preprocessor, experimental"]
 # MSVC experimental preprocessor overview
 
 The Microsoft C++ preprocessor is currently being updated to improve standards conformance, fix longstanding bugs, and change some behaviors which are officially undefined. In addition, new diagnostics have been added to warn on errors in macro definitions.
+
 These changes in their current state are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
 
 ## New predefined macro
@@ -200,7 +201,7 @@ Although this example seems a bit contrived, it has been found to occur real wor
 1. Now the tokens are in this state: `IMPL1 ECHO(("Hello", "World"))`
 1. The preprocessor finds the function-like macro identifier `IMPL1`, but it is not followed by a `(`, so it is not considered a function-like macro invocation. 
 1. It moves on to the following tokens and finds the function-like macro `ECHO` being invoked: `ECHO(("Hello", "World"))`, which expands to `("Hello", "World")`
-1. IMPL1 is never considered again for expansion, so the full result of the expansions is: `IMPL1("Hello", "World");`
+1. `IMPL1` is never considered again for expansion, so the full result of the expansions is: `IMPL1("Hello", "World");`
 
 The macro can be modified to behave the same under the experimental preprocessor and the traditional preprocessor by adding in another layer of indirection:
 
@@ -220,10 +221,8 @@ DO_THING_FIXED(1, "World");
 
 ## Incomplete features
 
-The experimental preprocessor isn't complete yet, and some preprocessor directive logic still falls back to the traditional behavior. Here is a partial list of incomplete features:
+The experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here is a partial list of incomplete features:
 
 - Support for `_Pragma`
 - C++20 features
-- Additional diagnostic improvements
-- Switches to control the output under /E and /P
 - Boost blocking bug: Logical operators in preprocessor constant expressions aren't fully implemented in the new preprocessor. On some `#if` directives, the new preprocessor can fall back to the traditional preprocessor. The effect is only noticeable when macros that are incompatible with the traditional preprocessor get expanded, which can happen when building Boost preprocessor slots.
