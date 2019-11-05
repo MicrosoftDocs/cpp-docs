@@ -1,6 +1,6 @@
 ---
 title: "Visual Studio IDE tools for upgrading C++ code"
-description: "The C++ code editor and code analysis tools in Visual Studio help you to modernize your C++ code base." 
+description: "The C++ code editor and code analysis tools in Visual Studio help you to modernize your C++ code base."
 ms.date: "11/06/2019"
 ms.topic: "conceptual"
 ---
@@ -8,15 +8,19 @@ ms.topic: "conceptual"
 
 Visual Studio helps you upgrade legacy C++ code with compiler options, code analysis warnings, and editor features such as Quick Fixes, Quick Info, and the enhanced scroll bar. The term "legacy code" refers to any of these categories:
 
-1. code that was formerly allowed by the Microsoft C++ compiler (MSVC) but never conformed to the C++ standard.\
+1. Code that was formerly allowed by the Microsoft C++ compiler (MSVC) but never conformed to the C++ standard.
+
    To upgrade older non-conformant MSVC code, turn on the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option. All instances of non-conformant usages are underlined with red squiggles in the code editor. The error messages in the **Error List** window include a recommendation for how to fix the error. Click on the error code to go to its help page in the documentation. If fixing all the errors at once is impractical, you can upgrade non-conformant code in stages by turning on the **permissive-** option, fixing some errors, then turning the option off again. The code will compile with the new improvements, and you can go back and fix the remaining issues at a later time. See the [/permissive-](../build/reference/permissive-standards-conformance.md) page for examples of non-conformant MSVC code.
-1. code that was permitted in an earlier version of the C++ standard but has been deprecated or removed in a later version.\
+1. Code that was permitted in an earlier version of the C++ standard but has been deprecated or removed in a later version.
+
    To upgrade to a newer language standard, set the [C++ Language Standard](../build/reference/std-specify-language-standard-version.md) option to the desired standard and fix any compile errors that are raised. In general, we recommend setting the language standard to [/std:c++17](../build/reference/std-specify-language-standard-version.md). The errors raised when upgrading to a newer standard are not related to the errors raised when using the **permissive-** option.
-1. code that conforms to all versions of the standard but is no longer considered best practice in modern C++.\
+1. Code that conforms to all versions of the standard but is no longer considered best practice in modern C++.
+
+   To identify code where changes are recommended, run [Code analysis](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
 
 ## Open and convert a legacy project
 
-If your legacy project is based on an older version of Visual Studio, you can open it in Visual Studio 2017 or Visual Studio 2019. Visual Studio automatically converts it to the current project schema with support for all the latest compiler and IDE features. 
+If your legacy project is based on an older version of Visual Studio, you can open it in Visual Studio 2017 or Visual Studio 2019. Visual Studio automatically converts it to the current project schema with support for all the latest compiler and IDE features.
 
 ![Upgrade a project](media/upgrade-dialog-v142.png "Upgrade a project")
 
@@ -32,9 +36,11 @@ To narrow the search scope, type one of the 1-letter filters, followed by a spac
 
 ## Error List
 
-After you set the desired C++ Language Standard and any other compiler options, press **Ctrl+Shift+B** to compile your project. You can expect to see some errors and warnings in the form of red squiggles in various places in the code. The errors also appear in the **Error List**. For more information about an specific error, click on the error code to go to the help page in the documentation. Error codes that begin with a "C" are compiler errors. Codes that begin with "MSB" are MSBuild errors that indicate a problem with the project configuration.
+After you set the desired C++ Language Standard and any other compiler options (**Project** > **Properties** > **General**), press **Ctrl+Shift+B** to compile your project. You can expect to see some errors and warnings in the form of red squiggles in various places in the code. The errors also appear in the **Error List**. For more information about an specific error, click on the error code to go to the help page in the documentation. Error codes that begin with a "C" are compiler errors. Codes that begin with "MSB" are MSBuild errors that indicate a problem with the project configuration.
 
 ![Compiler and MSBuild errors in Error List](media/compiler-error-list.png "Compiler and MSBuild errors in Error List")
+
+## Document Health Indicator
 
 The document health indicator at the bottom of the editor shows the number of errors and warnings in the current document, and enables you to navigate directly from one warning/error to the next.
 
@@ -46,9 +52,9 @@ In many cases, you can find more information about a specific error in the docum
 - [Visual C++ Change History 2003 - 2015](visual-cpp-change-history-2003-2015.md)
 - [Overview of potential upgrade issues](overview-of-potential-upgrade-issues-visual-cpp.md)
 
-## Use code analysis to modernize your code base
+## Use code analysis to modernize your code
 
-For the third category, we recommend that you run code analysis on your project so that the code, at a minimum, conforms to the Microsoft Native Recommended Rules. These rules are a combination of rules defined by Microsoft and a subset of the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). By conforming to the guidelines you will greatly reduce or eliminate common sources of bugs, and at the same time make your code more readable and therefore easier to maintain. Code Analysis using the Microsoft Native Recommended Rules is enabled by default. Code that violates one of the rules is flagged as a warning and is underlined with a green squiggle in the code editor. Hover over the squiggle to see a **QuickInfo** tooltip that describes the issue.
+When upgrading, we recommend that you run code analysis on your project so that the code, conforms at a minimum to the Microsoft Native Recommended Rules. These rules are a combination of rules defined by Microsoft and a subset of the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). By conforming to these you will greatly reduce or eliminate common sources of bugs, and at the same time make your code more readable and therefore easier to maintain. Code Analysis using the Microsoft Native Recommended Rules is enabled by default. You can enable additional rules under **Project** > **Properties** > **Code Analysis**. Code that violates one of the rules is flagged as a warning and is underlined with a green squiggle in the code editor. Hover over the squiggle to see a **QuickInfo** tooltip that describes the issue.
 
 ![Code analysis tooltip](media/code-analysis-tooltip.png "Code analysis warning")
 
@@ -99,8 +105,4 @@ Raw string literals are less error-prone and more convenient to type than string
 
 ![Raw string literal](media/raw-string-literal.png "Raw string literal")
 
-The string is converted to:
-
-```cpp
-R"(C:\Users\bjarnes\demo\output.txt)"
-```
+The string is converted to: `R"(C:\Users\bjarnes\demo\output.txt)"`.
