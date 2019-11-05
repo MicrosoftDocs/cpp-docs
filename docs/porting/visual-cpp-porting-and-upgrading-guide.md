@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C++ Porting and Upgrading Guide"
 description: "Upgrade Microsoft C++ code to the latest version of Visual Studio."
-ms.date: "10/29/2019"
+ms.date: "11/05/2019"
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: "overview"
 ---
@@ -19,7 +19,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - The same code can run faster due to improved compiler optimizations.
 
-- Modern C++ features and programming practices eliminate many common causes of bugs and is far easier to maintain that older C-style idioms.
+- Modern C++ features and programming practices eliminate many common causes of bugs and produce code that is far easier to maintain than older C-style idioms.
 
 - Build times are significantly faster, due to performance improvements in the compiler and linker.
 
