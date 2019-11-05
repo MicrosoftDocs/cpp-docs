@@ -1,6 +1,6 @@
 ---
 title: ".486P"
-ms.date: "11-05/2019"
+ms.date: "11/05/2019"
 f1_keywords: [".486P"]
 helpviewer_keywords: [".486P directive"]
 ms.assetid: ad1ff7a8-18e8-47cd-8e3b-dfd57a0ca370
