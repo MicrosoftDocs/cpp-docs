@@ -42,6 +42,7 @@ For more information, see [Use native multi-targeting in Visual Studio to build 
 |Title|Description|
 |-----------|-----------------|
 |[Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|How to upgrade your code base to Visual Studio 2019 and v142 of the compiler.|
+|[IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)|Useful IDE features that help in the upgrade process.|
 |[C++ Binary Compatibility between 2015 and 2019](binary-compat-2015-2017.md)|Consume v140 libraries as-is from v142 projects.|
 |[Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)|Use Visual Studio 2019 with older compilers and libraries.|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Microsoft C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
