@@ -14,7 +14,7 @@ However, if you are accustomed to MFC, you might be used to creating certain typ
 
 For more information about Windows Forms applications, see [Introduction to Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
 
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
+For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/en-us/download/details.aspx?id=2113).
 
 The following MFC view or document and command routing features have no equivalents in Windows Forms:
 

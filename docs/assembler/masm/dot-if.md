@@ -1,13 +1,13 @@
 ---
 title: ".IF"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".IF"]
 helpviewer_keywords: [".IF directive"]
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
 ---
-# .IF
+# .IF (32-bit MASM)
 
-Generates code that tests `condition1` (for example, AX > 7) and executes the *statements* if that condition is true.
+Generates code that tests `condition1` (for example, AX > 7) and executes the *statements* if that condition is true. (32-bit MASM only.)
 
 ## Syntax
 
