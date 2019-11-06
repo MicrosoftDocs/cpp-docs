@@ -1,12 +1,105 @@
 ---
 title: "Pointers (C++)"
-ms.date: "11/04/2016"
+ms.date: "11/06/2019"
 helpviewer_keywords: ["declarators, pointers", "declarations, pointers", "pointers [C++]", "pointers, declarations"]
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
 ---
 # Pointers (C++)
 
-Pointers are declared using the following sequence.
+A pointer stores the address of a object in memory and is used to access that object. On 64-bit operating systems a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. A pointer can point to a typed object or to **void**. A non-const pointer can be incremented or decremented, which causes it to point to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A const pointer cannot be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md).
+
+Pointers are used extensively in C++ to pass larger objects to and from functions because it is far more efficient to copy a 64-bit value than to copy an entire object. When a program allocates a new object on the [heap]() in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers* because they must be used to explicitly delete the object when it is no longer needed. Pointers to functions enable functions to be passed to other functions and are used for "callbacks" in C-style programming.
+
+In C and C++, pointer errors are by far the greatest cause of crashes, hangs, data corruption, security holes and general programmer misery. In modern C++, the use of *raw pointers* is strongly discouraged except in very specific scenarios. Modern C++ provides *smart pointers* for allocating objects, *iterators* for traversing data structures, and *lambda expressions* for passing callable functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain.
+
+## Initialization and member access
+
+The following example shows how to declare a pointer and initialize it with an object allocated on the heap, and then how to use it. It also shows a few of the dangers associated with pointers.
+
+```cpp
+// pointers.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+
+class MyClass
+{
+public:
+    int num;
+    std::string name;
+    void print() { std::cout << name << ":" << num << std::endl; }
+};
+
+// Accepts a MyClass pointer
+void func_A(MyClass* mc)
+{
+    // Modify the object that mc points to.
+    // All copies of the pointer will point to
+    // the same modified object.
+    mc->num = 3;
+}
+
+// Accepts a MyClass object
+void func_B(MyClass mc)
+{
+    // mc here is a regular object, not a pointer.
+    // Use the "." operator to access members.
+    // This statement modifies only the local copy of mc.
+    mc.num = 21;
+    std::cout << "Local copy of mc:";
+    mc.print(); // "Lisa, 21"
+}
+
+
+int main()
+{
+    // Use the * operator to declare a pointer type
+    // Use new to allocate and initialize memory
+    MyClass* mc = new MyClass{ 108, "Mike" };
+
+    // Prints the memory address. Usually not what you want.
+   // std:: cout << mc << std::endl;
+
+    // Use the -> operator to access the object's public members
+    mc->print(); // "Mike, 108"
+
+    // Copy the pointer. Now mc and mc2 point to same object!
+    MyClass* mc2 = mc;
+
+    // Use copied pointer to modify the original object
+    mc2->name = "Lisa";
+    mc->print(); // "Lisa, 108"
+    mc2->print(); // "Lisa, 108"
+
+    // Pass the pointer to a function.
+    func_A(mc);
+    mc->print(); // "Lisa, 3"
+    mc2->print(); // "Lisa, 3"
+
+    // Dereference the pointer and pass a copy
+    // of the pointed-to object to a function
+    func_B(*mc);
+    mc->print(); // "Lisa, 3" (original not modified by function)
+
+    delete(mc); // don't forget to give memory back to operating system!
+   // delete(mc2); //crash! memory location was already deleted
+}
+
+```
+
+## Const pointers and pointers to const objects
+
+A const pointer can point to either a const or non-const object, but can't be modified to point to a new object. When a non-const or const pointer points to a const object, the pointer cannot be used to modify the object and can only call const member functions. For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
+
+## Pointer arithmetic
+
+
+
+## void* pointers
+
+## Pointers to functions
+
 
 > \[*storage-class-specifiers*] \[*cv-qualifiers*] *type-specifiers* \[*ms-modifier*] *declarator* **;**
 
