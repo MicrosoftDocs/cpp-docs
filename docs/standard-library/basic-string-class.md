@@ -1542,7 +1542,7 @@ The copied characters array2 is: World
 
 ## <a name="data"></a>  basic_string::data
 
-Converts the contents of a string into an array of characters.
+Converts the contents of a string into a null-terminated array of characters.
 
 ```cpp
 const value_type *data() const;
