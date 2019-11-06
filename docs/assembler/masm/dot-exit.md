@@ -1,13 +1,13 @@
 ---
 title: ".EXIT"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".EXIT"]
 helpviewer_keywords: [".EXIT directive"]
 ms.assetid: 5f77c281-3d65-4174-83ea-34dcc7085ecf
 ---
-# .EXIT
+# .EXIT (32-bit MASM)
 
-Generates termination code.
+Generates termination code. (32-bit MASM only.)
 
 ## Syntax
 

@@ -1,13 +1,13 @@
 ---
 title: ".FPO"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".FPO"]
 helpviewer_keywords: [".FPO directive"]
 ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
 ---
-# .FPO
+# .FPO (32-bit MASM)
 
-The .FPO directive controls the emission of debug records to the .debug$F segment or section.
+The .FPO directive controls the emission of debug records to the .debug$F segment or section. (32-bit MASM only.)
 
 ## Syntax
 
