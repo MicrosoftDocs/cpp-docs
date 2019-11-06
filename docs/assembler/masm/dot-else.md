@@ -1,11 +1,11 @@
 ---
 title: ".ELSE"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".ELSE"]
 helpviewer_keywords: [".ELSE directive"]
 ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
 ---
-# .ELSE
+# .ELSE (32-bit MASM)
 
 ## Syntax
 
@@ -13,7 +13,7 @@ ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
 
 ## Remarks
 
-See [.IF](../../assembler/masm/dot-if.md).
+(32-bit MASM only.) See [.IF](../../assembler/masm/dot-if.md). 
 
 ## See also
 

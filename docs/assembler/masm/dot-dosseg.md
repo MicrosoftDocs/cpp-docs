@@ -1,13 +1,13 @@
 ---
 title: ".DOSSEG"
-ms.date: "08/30/2018"
+ms.date: "11/05/2019"
 f1_keywords: [".DOSSEG"]
 helpviewer_keywords: [".DOSSEG directive"]
 ms.assetid: 175ad470-0a2b-4e2b-b078-65e224fec040
 ---
-# .DOSSEG
+# .DOSSEG (32-bit MASM)
 
-Orders the segments according to the MS-DOS segment convention: CODE first, then segments not in DGROUP, and then segments in DGROUP.
+Orders the segments according to the MS-DOS segment convention: CODE first, then segments not in DGROUP, and then segments in DGROUP. (32-bit MASM only.)
 
 ## Syntax
 
