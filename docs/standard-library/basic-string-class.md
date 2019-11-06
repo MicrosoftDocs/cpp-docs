@@ -1545,22 +1545,23 @@ The copied characters array2 is: World
 Converts the contents of a string into a null-terminated array of characters.
 
 ```cpp
-const value_type *data() const;
+const value_type *data() const noexcept;
+value_type *data() noexcept;
 ```
 
 ### Return Value
 
-A pointer to the first element of the array containing the contents of the string, or, for an empty array, a non-null pointer that cannot be dereferenced.
+A pointer to the first element of the null-terminated array containing the contents of the string. For an empty string, the pointer points to a single null character equal to `value_type()`.
 
 ### Remarks
 
-Objects of type string belonging to the class template basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character.
+The pointer returned by `data` points at a valid range `[data(), data() + size()]`. Each element in the range corresponds to the current data in the string. That is, for every valid offset *n* in the range, `data() + n == addressof(operator[](n))`.
 
-There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string \<char>**.
+If you modify the contents of the string returned by the **const** overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-const reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-const member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer. 
 
-The returned string should not be modified, because this could invalidate the pointer to the string, or deleted, because the string has a limited lifetime and is owned by the class string.
+Prior to C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
-The returned array is null-terminated, that is, data() and c_str() perform the same function since C++11.
+The non-const overload is new in C++17. To use it, specify the **/std:c++17** or **/std:c++latest** compiler option.
 
 ### Example
 
