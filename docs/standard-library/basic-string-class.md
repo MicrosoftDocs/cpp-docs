@@ -1554,11 +1554,13 @@ A pointer to the first element of the array containing the contents of the strin
 
 ### Remarks
 
-Objects of type string belonging to the class template basic_string \<char> are not necessarily null terminated. The return type for `data` is not a valid C-string, because no null character gets appended. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string, but has no special meaning in an object of type string and may be a part of the string object just like any other character.
+Objects of type string belonging to the class template basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character.
 
 There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string \<char>**.
 
 The returned string should not be modified, because this could invalidate the pointer to the string, or deleted, because the string has a limited lifetime and is owned by the class string.
+
+The returned array is null-terminated, that is, data() and c_str() perform the same function since C++11.
 
 ### Example
 
