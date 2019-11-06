@@ -1,7 +1,7 @@
 ---
 title: "MSVC experimental preprocessor overview"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
-ms.date: "10/31/2019"
+ms.date: "11/06/2019"
 helpviewer_keywords: ["preprocessor, experimental"]
 ---
 
