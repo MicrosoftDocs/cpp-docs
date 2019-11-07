@@ -251,6 +251,10 @@ The compiler supports about 75% of the features that are new in C++17, including
 
 The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/) and [Microsoft C++ Language Conformance](../visual-cpp-language-conformance.md).
 
+##### Visual Studio 2017 version 15.8
+
+The [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually be conformant with all applicable C and C++ standards. For more information, see [MSVC experimental preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
+
 ### New compiler options
 
 - [/permissive-](../build/reference/permissive-standards-conformance.md): Enable all strict standards conformance compiler options and disable most Microsoft-specific compiler extensions (but not `__declspec(dllimport)`, for example). This option is on by default in Visual Studio 2017 version 15.5.  The **/permissive-** conformance mode includes support for two-phase name lookup. For more information, see [C++ Conformance Improvements in Visual Studio](cpp-conformance-improvements.md).

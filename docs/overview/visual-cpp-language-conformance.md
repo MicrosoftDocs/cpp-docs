@@ -1,6 +1,6 @@
 ---
 title: "Microsoft C++ language conformance table"
-ms.date: "08/12/2019"
+ms.date: "10/31/2019"
 ms.technology: "cpp-language"
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: "corob-msft"
@@ -340,7 +340,7 @@ The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) 
 
 <a name="note_B"></a>__B__ Supported in [/permissive-](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. see [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) for more information.
 
-<a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. Variadic macros are supported, but there are many bugs in the preprocessor’s behavior. We are overhauling the preprocessor, and will experimentally ship those changes under the [/permissive-](../build/reference/permissive-standards-conformance.md) mode soon.
+<a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We are overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
 
 <a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
