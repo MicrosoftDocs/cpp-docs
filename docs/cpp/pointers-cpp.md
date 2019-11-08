@@ -6,15 +6,15 @@ ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
 ---
 # Pointers (C++)
 
-A pointer stores the address of a object in memory and is used to access that object. On 64-bit operating systems a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md)
+A pointer stores the address of an object in memory and is used to access that object. On 64-bit operating systems, a pointer has a size of 64 bits; a system's pointer size determines how much addressable memory it can have. A pointer can point to a typed object or to **void**. When a program allocates a new object on the [heap](https://wikipedia.org/wiki/Heap) in memory, it receives the address of that object in the form of a pointer. Such pointers are called *owning pointers*; an owning pointer (or a copy of it) must be used to explicitly delete the heap-allocated object when it is no longer needed. Failure to delete the memory results in a *memory leak* and renders that memory location unavailable to any other program on the machine. For more information, see [new and delete operators](new-and-delete-operators.md)
 
-A pointer (if it is not declared as **const**) can be incremented or decremented so that it points to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer cannot be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
+A pointer (if it isn't declared as **const**) can be incremented or decremented so that it points to a new location in memory. This is called *pointer arithmetic* and is used in C-style programming to iterate over elements in arrays or other data structures. A **const** pointer can't be made to point to a different memory location, and in that sense is very similar to a [reference](references-cpp.md). For more information, see [const and volatile pointers](const-and-volatile-pointers.md).
 
 Pointers (along with references) are used extensively in C++ to pass larger objects to and from functions because it is usually far more efficient to copy an object's address than to copy an entire object. When defining a function, specify pointer parameters as **const** unless you intend for the function to modify the object. In general, **const** references are the preferred way to pass objects to functions unless the value of the object can possibly be **nullptr**.
 
 Pointers to functions enable functions to be passed to other functions and are used for "callbacks" in C-style programming.
 
-In C and C++, pointer errors are by far the greatest cause of crashes, hangs, data corruption, security holes and general programmer misery. In modern C++, the use of *raw pointers* is strongly discouraged except in very specific scenarios. Modern C++ provides *smart pointers* for allocating objects, *iterators* for traversing data structures, and *lambda expressions* for passing callable functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain. See [Smart pointers](smart-pointers-modern-cpp.md), [Iterators](../standard-library/iterators.md), and [Lambda expressions](lambda-expressions-in-cpp.md) for more information.
+In C and C++, pointer errors are by far the greatest cause of crashes, hangs, data corruption, security holes, and general programmer misery. In modern C++, the use of *raw pointers* is strongly discouraged except in very specific scenarios. Modern C++ provides *smart pointers* for allocating objects, *iterators* for traversing data structures, and *lambda expressions* for passing callable functions. By using these language and library facilities instead of raw pointers, you will make your program safer, easier to debug, and simpler to understand and maintain. See [Smart pointers](smart-pointers-modern-cpp.md), [Iterators](../standard-library/iterators.md), and [Lambda expressions](lambda-expressions-in-cpp.md) for more information.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ In C and C++, pointer errors are by far the greatest cause of crashes, hangs, da
     const int c = 1;
     const int* pconst = &c; // declare a non-const pointer to const int
     const int c2 = 2;
-    pconst = &c2;  // OK pconst itself is not const
+    pconst = &c2;  // OK pconst itself isn't const
     const int* const pconst2 = &c; 
     // pconst2 = &c2; // Error! pconst2 is const.
 ```
@@ -227,7 +227,7 @@ int main()
 
 A pointer to **void** simply points to a raw memory location. Sometimes it is necessary to use **void\*** pointers, for example when passing between C++ code and C functions. 
 
-When a typed pointer is cast to a void pointer, the contents of the memory location are not changed, but the type information is lost, so that you cannot perform increment or decrement operations. A memory location can be cast, for example, from MyClass* to void* and back again to MyClass*. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers unless absolutely necessary.
+When a typed pointer is cast to a void pointer, the contents of the memory location are not changed, but the type information is lost, so that you can't perform increment or decrement operations. A memory location can be cast, for example, from MyClass* to void* and back again to MyClass*. Such operations are inherently error-prone and require great care to avoid errors. Modern C++ discourages the use of void pointers unless absolutely necessary.
 
 ```cpp
 
