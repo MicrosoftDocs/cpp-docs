@@ -336,5 +336,4 @@ int main()
 
 [Indirection Operator: *](../cpp/indirection-operator-star.md)<br/>
 [Address-of Operator: &](../cpp/address-of-operator-amp.md)</br>
-[Welcome back to C++](welcome-back-to-cpp-modern-cpp)
-
+[Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)
