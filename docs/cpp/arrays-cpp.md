@@ -10,7 +10,7 @@ An array is a sequence of objects of the same type that occupy a contiguous area
 
 An array is initialized by using the [] operator after the variable name. The number of elements must be specified with a constant value. Individual elements in the array are accessed by the same [] operator.
 
-``cpp
+```cpp
 int i[100] {0}; // an array of 100 ints all initialized to zero
 MyClass* [12]; // an array of 12 pointers to MyClass
 i[0] = 256; // assign the value 256 to the first element in the array
