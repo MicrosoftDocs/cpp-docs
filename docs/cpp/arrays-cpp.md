@@ -138,7 +138,7 @@ The minimum cost to Market 3 is: 17.29
 
 The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.
 
-# Initializing Arrays
+## Initializing Arrays
 
 If a class has a constructor, arrays of that class are initialized by a constructor. If there are fewer items in the initializer list than elements in the array, the default constructor is used for the remaining elements. If no default constructor is defined for the class, the initializer list must be complete — that is, there must be one initializer for each element in the array.
 
