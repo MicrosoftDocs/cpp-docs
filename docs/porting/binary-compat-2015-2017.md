@@ -7,7 +7,7 @@ ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
 ---
 # C++ binary compatibility between Visual Studio 2015 and Visual Studio 2019
 
-In Microsoft Visual Studio 2013 and earlier, binary compatibility isn't guaranteed between object files (OBJs), static libraries (LIBs), dynamic libraries (DLLs), and executables (EXEs) that were built by using different versions of the compiler toolset and runtime libraries.
+In Microsoft Visual Studio 2013 and earlier, binary compatibility isn't guaranteed between object files (OBJs), static libraries (LIBs), dynamic-link libraries (DLLs), and executables (EXEs) that were built by using different versions of the compiler toolset and runtime libraries.
 
 In Visual Studio 2015 and later, the C++ toolset major number is 14 (v140 for Visual Studio 2015, v141 for Visual Studio 2017, and v142 for Visual Studio 2019). This numbering reflects the fact that both the runtime libraries and the applications compiled with any of these versions of the compiler are binary-compatible. Therefore, if you have a third-party library that was built with Visual Studio 2015, you don't have to recompile it in order to consume it from an application that was built with Visual Studio 2017 or Visual Studio 2019.
 
