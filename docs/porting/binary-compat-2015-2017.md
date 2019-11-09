@@ -1,9 +1,7 @@
 ---
 title: "C++ binary compatibility between Visual Studio 2015 and Visual Studio 2019"
-description: Describes differences in binary compatibility between C++ files in Visual Studio 2015 and Visual Studio 2019.
-author: mikeblome
-ms.author: corob
-ms.date: "10/17/2019"
+description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, and 2019. One Microsoft Visual C++ Redistributable package works for all three versions."
+ms.date: "11/07/2019"
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
 ---
@@ -23,8 +21,8 @@ Because we have preserved binary compatibility and kept the major version (14) t
 
 Similarly, we don't let you install an older version of the Visual C++ Redistributable on a machine where a newer version is already installed. Installing the Visual C++ Redistributable from Visual Studio 2015 or 2017 on a machine that already has the 2019 version triggers an installation failure. The error resembles the following:
 
-```
-*0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.*.
+```Output
+0x80070666 - Another version of this product is already installed. Installation of this version cannot continue. To configure or remove the existing version of this product, use Add/Remove Programs on the Control Panel.
 ```
 
 This error is by design. We recommend keeping the newest version installed.
