@@ -17,9 +17,9 @@ The only exception to this rule is that static libraries or object files that ar
 
 When you mix binaries built with different supported versions of the Microsoft C++ (MSVC) toolset, the Visual C++ redistributable package that your application runs on can't be older than any of the toolset versions used to build your app or any libraries it consumes.
 
-## Upgrade Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
+## Upgrade the Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
 
-Because we have preserved binary compatibility and kept the major version (14) the same across Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019, only one version of the Visual C++ Redistributable can be installed from those at any one time. A newer version overwrites an older version that's already installed. If you have the Visual C++ Redistributable from Visual Studio 2015 or 2017 and then later install Visual Studio 2019, the 2019 version overwrites the older version. Because we make sure that the latest version has all the newest features and bug fixes (including security fixes), we always recommend that you upgrade to the latest available version.
+Because we have preserved binary compatibility and kept the major version (14) the same across the Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019, only one version of the Visual C++ Redistributable can be installed from those at any one time. A newer version overwrites an older version that's already installed. If you have the Visual C++ Redistributable from Visual Studio 2015 or 2017 and then later install Visual Studio 2019, the 2019 version overwrites the older version. Because we make sure that the latest version has all the newest features and bug fixes (including security fixes), we always recommend that you upgrade to the latest available version.
 
 Similarly, we don't let you install an older version of the Visual C++ Redistributable on a machine where a newer version is already installed. Installing the Visual C++ Redistributable from Visual Studio 2015 or 2017 on a machine that already has the 2019 version triggers an installation failure. The error resembles the following:
 
