@@ -115,17 +115,17 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 1. Set a breakpoint that gets hit when you click in the running application. The click event is handled in a method within a helper class. To quickly get there:
 
-   1. Select `CommonRigidBodyBase` that the struct `BasicExample` is derived from around line 30.
+   1. Select `CommonRigidBodyBase` that the struct `BasicExample` is derived from. It's around line 30.
 
-   1. Right-click and choose **Go to Definition**. Now you are in the header CommonRigidBodyBase.h.
+   1. Right-click and choose **Go to Definition**. Now you're in the header CommonRigidBodyBase.h.
 
-   1. In the browser view above, your source you should see that you are in the `CommonRigidBodyBase`. To the right, you can select members to examine. Open the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
+   1. In the browser view above your source, you should see that you're in the `CommonRigidBodyBase`. To the right, you can select members to examine. Open the drop-down and select `mouseButtonCallback` to go to the definition of that function in the header.
 
       ![Visual Studio member list toolbar](media/cmake-bullet3-member-list-toolbar.png)
 
 1. Place a breakpoint on the first line within this function. It gets hit when you click a mouse button within the window of the application, when run under the Visual Studio debugger.
 
-1. To launch the application, select the launch drop-down with the play icon that says "Select Startup Item" in the toolbar. In the drop-down select AppBasicExampleGui.exe. The executable name now displays on the launch button:
+1. To launch the application, select the launch drop-down in the toolbar. It's the one with the green play icon that says "Select Startup Item". In the drop-down, select AppBasicExampleGui.exe. The executable name now displays on the launch button:
 
    ![Visual Studio toolbar launch drop-down for Select Startup Item](media/cmake-bullet3-launch-button.png)
 
@@ -169,7 +169,7 @@ Because it's a desktop application, you need to provide some additional configur
    "export DISPLAY=:1;${debuggerCommand}",
    ```
 
-1. To launch and debug your application, open the **Select Startup Item** drop-down in the toolbar. Choose **AppBasicExampleGui**. Choose the green arrow button or press **F5** to run the application. The application and its dependencies are built on the remote Linux machine, then launched with the Visual Studio debugger attached. On your remote Linux machine, you should see an application window appear.
+1. Launch and debug your application. Open the **Select Startup Item** drop-down in the toolbar and choose **AppBasicExampleGui**. Next, either choose the green play icon in the toolbar, or press **F5**. The application and its dependencies are built on the remote Linux machine, then launched with the Visual Studio debugger attached. On your remote Linux machine, you should see an application window appear.
 
 1. Move your mouse into the application window, and click a button. The breakpoint is hit. Program execution pauses, Visual Studio comes back to the foreground, and you see your breakpoint. You should also see a Linux Console Window appear in Visual Studio. The window provides output from the remote Linux machine, and it can also accept input for `stdin`. Like any Visual Studio window, you can dock it where you prefer to see it. Its position is persisted in future sessions.
 
