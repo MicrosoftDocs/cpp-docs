@@ -15,7 +15,7 @@ The \<array> header includes these **array** non-member comparison template func
 
 ## <a name="op_neq"></a>  operator!=
 
-Array comparison, not equal.
+**array** comparison, not equal.
 
 ```cpp
 template <Ty, std::size_t N>
