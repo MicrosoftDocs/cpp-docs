@@ -88,7 +88,7 @@ true
 
 ## <a name="op_lt"></a>  operator&lt;
 
-Array comparison, less than.
+**array** comparison, less than.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -161,7 +161,7 @@ true
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
 
-Array comparison, less than or equal.
+**array** comparison, less than or equal.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -234,7 +234,7 @@ false
 
 ## <a name="op_eq_eq"></a>  operator==
 
-Array comparison, equal.
+**array** comparison, equal.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -307,7 +307,7 @@ false
 
 ## <a name="op_gt"></a>  operator&gt;
 
-Array comparison, greater than.
+**array** comparison, greater than.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -380,7 +380,7 @@ true
 
 ## <a name="op_gt_eq"></a>  operator&gt;=
 
-Array comparison, greater than or equal.
+**array** comparison, greater than or equal.
 
 ```cpp
 template <Ty, std::size_t N>
