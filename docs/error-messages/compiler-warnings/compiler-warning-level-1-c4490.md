@@ -17,7 +17,7 @@ For more information, see [Override Specifiers](../../extensions/override-specif
 
 The following sample generates C4490.
 
-```
+```cpp
 // C4490.cpp
 // compile with: /clr /c /W1
 

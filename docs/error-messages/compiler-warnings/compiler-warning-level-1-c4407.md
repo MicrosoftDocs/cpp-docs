@@ -17,7 +17,7 @@ C4407 can occur if you cast between a multiple inheritance pointer-to-member to 
 
 The following sample generates C4407:
 
-```
+```cpp
 // C4407.cpp
 // compile with: /W1 /c
 struct C1 {};
