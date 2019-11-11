@@ -30,4 +30,4 @@ This error is by design. We recommend you keep the newest version installed. Mak
 ## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)\
-[The latest supported Visual C++ Redistributable downloads](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+[The latest supported Visual C++ Redistributable downloads](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
