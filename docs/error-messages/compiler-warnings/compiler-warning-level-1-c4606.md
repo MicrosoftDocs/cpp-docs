@@ -15,7 +15,7 @@ For Code Analysis warnings, only `error`, `once`, and `default` are supported wi
 
 The following sample generates C4606.
 
-```
+```cpp
 // C4606.cpp
 // compile with: /c /W1
 #pragma warning(1: 6001)   // C4606

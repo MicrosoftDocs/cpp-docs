@@ -15,7 +15,7 @@ An obsolete style for specifying a variable argument list was used. When compili
 
 The following sample generates C4572.
 
-```
+```cpp
 // C4572.cpp
 // compile with: /clr /W1
 void Func([System::ParamArray] array<int> ^);   // C4572
