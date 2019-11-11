@@ -1,7 +1,7 @@
 ---
 title: "C++ binary compatibility between Visual Studio 2015, 2017, and 2019"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, and 2019. One Microsoft Visual C++ Redistributable package works for all three versions."
-ms.date: "11/07/2019"
+ms.date: "11/11/2019"
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
 ---
@@ -11,7 +11,7 @@ The Microsoft C++ (MSVC) compiler toolsets in Visual Studio 2013 and earlier don
 
 We've changed this behavior in Visual Studio 2015, 2017, and 2019. The runtime libraries and apps compiled by any of these versions of the compiler are binary-compatible. It's reflected in the C++ toolset major number, which is 14 for all three versions. (The toolset version is v140 for Visual Studio 2015, v141 for 2017, and v142 for 2019). Say you have third-party libraries built by Visual Studio 2015. You can still use them in an application built by Visual Studio 2017 or 2019. There's no need to recompile with a matching toolset. The latest version of the Microsoft Visual C++ Redistributable package (the Redistributable) works for all of them.
 
-There's an exception to this rule: static libraries or object files compiled using the `/GL` compiler switch *aren't* binary-compatible.
+There's an exception to this rule: static libraries or object files compiled using the `/GL` compiler switch *aren't* binary-compatible across versions.
 
 The Redistributable your app uses has an important binary-compatibility restriction. It applies when you mix binaries built with different supported versions of the toolset. The Redistributable version must be at least as new as the latest toolset used by any app component.
 
