@@ -15,7 +15,7 @@ There's an exception to this rule: static libraries or object files compiled usi
 
 The Redistributable your app uses has an important binary-compatibility restriction. It applies when you mix binaries built with different supported versions of the toolset. The Redistributable version must be at least as new as the latest toolset used by any app component.
 
-## Upgrade Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
+## Upgrade the Microsoft Visual C++ Redistributable from Visual Studio 2015 or 2017 to Visual Studio 2019
 
 We've kept the Microsoft Visual C++ Redistributable major version number the same for Visual Studio 2015, 2017, and 2019. That means only one instance of the Redistributable can be installed at a time. A newer version overwrites any older version that's already installed. For example, one app may install the Redistributable from Visual Studio 2015. Then, another app installs the Redistributable from Visual Studio 2019. The 2019 version overwrites the older version, but because they're binary-compatible, the earlier app still works fine. We make sure the latest version of the Redistributable has all the newest features, security updates, and bug fixes. That's why we always recommend you upgrade to the latest available version.
 
