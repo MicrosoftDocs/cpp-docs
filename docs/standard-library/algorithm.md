@@ -26,7 +26,7 @@ C++ Standard Library algorithms process iterator ranges that are typically speci
 
 The C++ Standard Library algorithms extend the actions supported by the operations and member functions of each C++ Standard Library container and allow working, for example, with different types of container objects at the same time. Two suffixes have been used to convey information about the purpose of the algorithms.
 
-- The `_if` suffix indicates that the algorithm is used with function objects operating on the values of the elements rather than on the values of the elements themselves. The `find_if` algorithm looks for elements whose values satisfy the criterion specified by a function object, and the `find` algorithm searches for a particular value.
+- The `_if` suffix indicates that the algorithm is used with function objects operating on the values of the elements rather than on the elements themselves. The `find_if` algorithm looks for elements whose values satisfy the criterion specified by a function object, and the `find` algorithm searches for a particular value.
 
 - The _copy suffix indicates that the algorithm not only manipulates the values of the elements but also copies the modified values into a destination range. The `reverse` algorithm reverses the order of the elements within a range, and the `reverse_copy` algorithm also copies the result into a destination range.
 
