@@ -15,7 +15,7 @@ The [make_public](../../preprocessor/make-public.md) pragma was applied incorrec
 
 The following sample generates C4384.
 
-```
+```cpp
 // C4384.cpp
 // compile with: /c /W1
 namespace n {

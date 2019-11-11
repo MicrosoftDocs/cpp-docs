@@ -15,7 +15,7 @@ There is a conflict between the format specified and the value that you are pass
 
 The following code sample generates C4313 when it is compiled for a 64-bit target.
 
-```
+```cpp
 // C4313.cpp
 // Compile by using: cl /W1 C4313.cpp
 #include <stdio.h>

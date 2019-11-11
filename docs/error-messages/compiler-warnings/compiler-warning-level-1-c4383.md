@@ -19,7 +19,7 @@ Also, an instance operator is not available to other language compilers via refe
 
 The following sample generates C4383.
 
-```
+```cpp
 // C4383.cpp
 // compile with: /clr /W1
 
