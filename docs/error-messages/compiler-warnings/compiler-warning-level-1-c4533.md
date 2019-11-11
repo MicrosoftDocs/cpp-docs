@@ -11,7 +11,7 @@ initialization of 'variable' is skipped by 'instruction'
 
 An instruction in your program changed the flow of control, such that, an instruction that initialized a variable was not executed. The following sample generates C4533:
 
-```
+```cpp
 // C4533.cpp
 // compile with: /W1
 #include <stdio.h>

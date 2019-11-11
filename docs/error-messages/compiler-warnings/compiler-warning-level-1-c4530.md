@@ -15,7 +15,7 @@ When the /EHsc option has not been enabled, an object with automatic storage in 
 
 The following sample generates C4530:
 
-```
+```cpp
 // C4530.cpp
 // compile with: /W1
 int main() {

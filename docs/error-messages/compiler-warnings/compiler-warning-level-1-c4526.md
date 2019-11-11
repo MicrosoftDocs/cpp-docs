@@ -13,7 +13,7 @@ The static member function meets the criteria to override the virtual function, 
 
 The following code generates C4526:
 
-```
+```cpp
 // C4526.cpp
 // compile with: /W1 /c
 // C4526 expected

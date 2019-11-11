@@ -13,7 +13,7 @@ A member function was called on an [initonly (C++/CLI)](../../dotnet/initonly-cp
 
 The following sample generates C4395:
 
-```
+```cpp
 // C4395.cpp
 // compile with: /W1 /clr
 public value class V {

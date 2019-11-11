@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 For example:
 
-```
+```cpp
 // C4555.cpp
 // compile with: /W1
 #pragma warning(default:4555)

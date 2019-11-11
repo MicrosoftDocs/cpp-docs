@@ -13,7 +13,7 @@ The [__fastcall](../../cpp/fastcall.md) function-calling convention cannot be us
 
 The following sample generates C4561:
 
-```
+```cpp
 // C4561.cpp
 // compile with: /clr /W1 /c
 // processor: x86

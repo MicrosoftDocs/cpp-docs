@@ -13,7 +13,7 @@ The value passed to an assembly language instruction is out of the range specifi
 
 The following sample generates C4558:
 
-```
+```cpp
 // C4558.cpp
 // compile with: /W1
 // processor: x86
