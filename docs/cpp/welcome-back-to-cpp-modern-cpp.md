@@ -1,18 +1,20 @@
 ---
 title: "Welcome Back to C++ (Modern C++)"
-ms.date: "11/04/2016"
+ms.date: "11/12/2019"
 ms.topic: "conceptual"
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 ---
 # Welcome Back to C++ (Modern C++)
 
-C++ is one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages because you can use it to create a wide range of apps—from fun and exciting games, to high-performance scientific software, to device drivers, embedded programs, and Windows client apps. For more than 20 years, C++ has been used to solve problems like these and many others. What you might not know is that an increasing number of C++ programmers have folded up the dowdy C-style programming of yesterday and have donned modern C++ instead.
+Over the past 25 years, C++ has been one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages because it enables you to access low-level hardware features to maximize speed and minimize memory requirements. You can use it to create a wide range of apps—from games, to high-performance scientific software, to device drivers, embedded programs, libraries and compilers for other programming languages, Windows client apps, and much more.
 
-One of the original requirements for C++ was backward compatibility with the C language. Since then, C++ has evolved through several iterations—C with Classes, then the original C++ language specification, and then the many subsequent enhancements. Because of this heritage, C++ is often referred to as a multi-paradigm programming language. In C++, you can do purely procedural C-style programming that involves raw pointers, arrays, null-terminated character strings, custom data structures, and other features that may enable great performance but can also spawn bugs and complexity.  Because C-style programming is fraught with perils like these, one of the founding goals for C++ was to make programs both type-safe and easier to write, extend, and maintain. Early on, C++ embraced programming paradigms such as object-oriented programming. Over the years, features have been added to the language, together with highly-tested standard libraries of data structures and algorithms. It's these additions that have made the modern C++ style possible.
+One of the original requirements for C++ was backward compatibility with the C language. As a result C++ has always permitted C-style programming with raw pointers, arrays, null-terminated character strings, custom data structures, and other features that may enable great performance but can also spawn bugs and complexity. The evolution of C++ has emphasized new features that enable type-safe ways to reduce the need to C-style idioms.
+
+The old C-programming facilities are there when you need them, but with modern C++ code you should need them less and less. Modern C++ code is simple, safe, elegant, and as fast as ever.
 
 Modern C++ emphasizes:
 
-- Stack-based scope instead of heap or static global scope.
+- Stack-based scope with automatic memory management instead of heap or static global scope.
 
 - Auto type inference instead of explicit type names.
 
@@ -28,7 +30,7 @@ Modern C++ emphasizes:
 
 - Lock-free inter-thread communication using C++ Standard Library `std::atomic<>` (see [\<atomic>](../standard-library/atomic.md)) instead of other inter-thread communication mechanisms.
 
-- Inline [lambda functions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.
+- Inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.
 
 - Range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and Windows Runtime collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
@@ -85,17 +87,10 @@ void f()
 }
 ```
 
-In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the **auto** type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And a range-based **for** loop is cleaner, easier to use, and less prone to unintended errors than a C-style **for** loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.
-
 Modern C++ incorporates two kinds of polymorphism: compile-time, through templates, and run-time, through inheritance and virtualization. You can mix the two kinds of polymorphism to great effect. The C++ Standard Library template `shared_ptr` uses internal virtual methods to accomplish its apparently effortless type erasure. But don't over-use virtualization for polymorphism when a template is the better choice. Templates can be very powerful.
 
 If you're coming to C++ from another language, especially from a managed language in which most of the types are reference types and very few are value types, know that C++ classes are value types by default. But you can specify them as reference types to enable polymorphic behavior that supports object-oriented programming. A helpful perspective: value types are more about memory and layout control, reference types are more about base classes and virtual functions to support polymorphism. By default, value types are copyable—they each have a copy constructor and a copy assignment operator. When you specify a reference type, make the class non-copyable—disable the copy constructor and copy assignment operator—and use a virtual destructor, which supports the polymorphism. Value types are also about the contents, which, when they are copied, give you two independent values that you can modify separately. But reference types are about identity—what kind of object it is—and for this reason are sometimes referred to as polymorphic types.
 
-C++ is experiencing a renaissance because power is king again. Languages like Java and C# are good when programmer productivity is important, but they show their limitations when power and performance are paramount. For high efficiency and power, especially on devices that have limited hardware, nothing beats modern C++.
-
-Not only the language is modern, the development tools are, too. Visual Studio makes all parts of the development cycle robust and efficient. It includes Application Lifecycle Management (ALM) tools, IDE enhancements like IntelliSense, tool-friendly mechanisms like XAML, and building, debugging, and many other tools.
-
-The articles in this part of the documentation provide high-level guidelines and best practices for the most important features and techniques for writing modern C++ programs.
 
 - [C++ Type System](../cpp/cpp-type-system-modern-cpp.md)
 
@@ -118,8 +113,6 @@ The articles in this part of the documentation provide high-level guidelines and
 - [Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)
 
 - [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)
-
-For more information, see the Stack Overflow article [Which C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).
 
 ## See also
 
