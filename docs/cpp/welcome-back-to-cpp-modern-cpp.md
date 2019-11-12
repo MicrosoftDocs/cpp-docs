@@ -8,84 +8,63 @@ ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 
 Over the past 25 years, C++ has been one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages because it enables you to access low-level hardware features to maximize speed and minimize memory requirements. You can use it to create a wide range of apps—from games, to high-performance scientific software, to device drivers, embedded programs, libraries and compilers for other programming languages, Windows client apps, and much more.
 
-One of the original requirements for C++ was backward compatibility with the C language. As a result C++ has always permitted C-style programming with raw pointers, arrays, null-terminated character strings, custom data structures, and other features that may enable great performance but can also spawn bugs and complexity. The evolution of C++ has emphasized new features that enable type-safe ways to reduce the need to C-style idioms.
+One of the original requirements for C++ was backward compatibility with the C language. As a result C++ has always permitted C-style programming with raw pointers, arrays, null-terminated character strings, custom data structures, and other features that may enable great performance but can also spawn bugs and complexity. The evolution of C++ has emphasized features that greatly reduce the need to C-style idioms. The old C-programming facilities are there when you need them, but with modern C++ code you should need them less and less. Modern C++ code is simpler, safer, more elegant, and still as fast as ever.
 
-The old C-programming facilities are there when you need them, but with modern C++ code you should need them less and less. Modern C++ code is simple, safe, elegant, and as fast as ever.
+The following sections provide an overview of the main features of modern C++:
 
-Modern C++ emphasizes:
+## Stack-based scope for smaller objects
 
-- Stack-based scope with automatic memory management instead of heap or static global scope.
+It has been said that the reason C++ has no garbage collection mechanism is because it doesn't produce that much "garbage", in other words, memory allocations on the heap that need to be deleted. Small objects can be allocated directly on the stack, where they will 
 
-- Auto type inference instead of explicit type names.
+## Smart pointers for heap-allocated objects
 
-- Smart pointers instead of raw pointers.
+## Auto type inference instead of explicit type names
 
-- `std::string` and `std::wstring` types (see [\<string>](../standard-library/string.md)) instead of raw `char[]` arrays.
+for variables and function return types
 
-- [C++ Standard Library](../standard-library/cpp-standard-library-header-files.md) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [\<vector>](../standard-library/vector.md), [\<list>](../standard-library/list.md), and [\<map>](../standard-library/map.md).
+## Range-based for loops
 
-- C++ Standard Library [algorithms](../standard-library/algorithm.md) instead of manually coded ones.
+Use range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and Windows Runtime collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
-- Exceptions, to report and handle error conditions.
+## Uniform initialization
 
-- Lock-free inter-thread communication using C++ Standard Library `std::atomic<>` (see [\<atomic>](../standard-library/atomic.md)) instead of other inter-thread communication mechanisms.
+## String classes for text data
 
-- Inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.
+`std::string`, `std::wstring` and [std:;string_view](../standard-library/string-view-class.md)types (see [\<string>](../standard-library/string.md)) instead of raw `char[]` arrays.
 
-- Range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and Windows Runtime collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
+## std::vector and other Standard Library containers
 
-The C++ language itself has also evolved. Compare the following code snippets. This one shows how things used to be in C++:
+[C++ Standard Library](../standard-library/cpp-standard-library-header-files.md) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [\<vector>](../standard-library/vector.md), [\<list>](../standard-library/list.md), and [\<map>](../standard-library/map.md).
 
-```cpp
-#include <vector>
+## Standard Library algorithms
 
-void f()
-{
-    // Assume circle and shape are user-defined types
-    circle* p = new circle( 42 );
-    vector<shape*> v = load_shapes();
+C++ Standard Library [algorithms](../standard-library/algorithm.md) instead of manually coded ones. parallel versions in C++17
 
-    for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {
-        if( *i && **i == *p )
-            cout << **i << " is a match\n";
-    }
+## Move semantics
 
-    // CAUTION: If v's pointers own the objects, then you
-    // must delete them all before v goes out of scope.
-    // If v's pointers do not own the objects, and you delete
-    // them here, any code that tries to dereference copies
-    // of the pointers will cause null pointer exceptions.
-    for( vector<circle*>::iterator i = v.begin();
-            i != v.end(); ++i ) {
-        delete *i; // not exception safe
-    }
+## Lambda expressions
 
-    // Don't forget to delete this, too.
-    delete p;
-} // end f()
-```
+Inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.
 
-Here's how the same thing is accomplished in modern C++:
+## Exceptions
 
-```cpp
-#include <memory>
-#include <vector>
 
-void f()
-{
-    // ...
-    auto p = make_shared<circle>( 42 );
-    vector<shared_ptr<shape>> v = load_shapes();
+Exceptions, to report and handle error conditions.
 
-    for( auto& s : v )
-    {
-        if( s && *s == *p )
-        {
-            cout << *s << " is a match\n";
-        }
-    }
-}
-```
+## Resource management
+
+- [Object Lifetime And Resource Management](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
+
+- [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md)
+
+## Lock-free inter-thread communication
+
+ using C++ Standard Library `std::atomic<>` (see [\<atomic>](../standard-library/atomic.md)) instead of other inter-thread communication mechanisms.
+
+## - [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
+
+## [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)- 
+
 
 Modern C++ incorporates two kinds of polymorphism: compile-time, through templates, and run-time, through inheritance and virtualization. You can mix the two kinds of polymorphism to great effect. The C++ Standard Library template `shared_ptr` uses internal virtual methods to accomplish its apparently effortless type erasure. But don't over-use virtualization for polymorphism when a template is the better choice. Templates can be very powerful.
 
@@ -96,9 +75,6 @@ If you're coming to C++ from another language, especially from a managed languag
 
 - [Uniform Initialization and Delegating Constructors](../cpp/uniform-initialization-and-delegating-constructors.md)
 
-- [Object Lifetime And Resource Management](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
-
-- [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md)
 
 - [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)
 
