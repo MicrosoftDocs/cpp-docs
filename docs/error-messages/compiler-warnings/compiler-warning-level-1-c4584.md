@@ -11,7 +11,7 @@ ms.assetid: ad86582f-cb8c-4d21-8c4c-a6c800059e25
 
 The class you defined inherits from two classes, one of which inherits from the other. For example:
 
-```
+```cpp
 // C4584.cpp
 // compile with: /W1 /LD
 class A {

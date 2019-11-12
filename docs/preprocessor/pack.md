@@ -1,6 +1,6 @@
 ---
 title: "pack pragma"
-ms.date: "08/29/2019"
+ms.date: "11/11/2019"
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
 helpviewer_keywords: ["pragmas, pack", "pack pragma"]
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
@@ -25,15 +25,15 @@ Specifies the packing alignment for structure, union, and class members.
 (Optional) Pushes the current packing alignment value on the internal compiler stack, and sets the current packing alignment value to *n*. If *n* isn't specified, the current packing alignment value is pushed.
 
 **pop**\
-(Optional) Removes the record from the top of the internal compiler stack. If *n* isn't specified with **pop**, then the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If *n* is specified, for example, `#pragma pack(pop, 16)`, *n* becomes the new packing alignment value. If you pop using an *identifier*, for example, `#pragma pack(pop, r1)`, then all records on the stack are popped until the record that has *identifier* is found. That record is popped, and the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If you pop using an *identifier* that isn't found in any record on the stack, then the **pop** is ignored.
+(Optional) Removes the record from the top of the internal compiler stack. If *n* isn't specified with **pop**, then the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If *n* is specified, for example, `#pragma pack(pop, 16)`, *n* becomes the new packing alignment value. If you pop using an *identifier*, for example, `#pragma pack(pop, r1)`, then all records on the stack are popped until the record that has *identifier* is found. That record is popped, and the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If you pop using an *identifier* that isn't found in any record on the stack, then the **pop** is ignored. 
+
+The statement `#pragma pack (pop, r1, 2)` is equivalent to `#pragma pack (pop, r1)` followed by `#pragma pack(2)`.
 
 *identifier*\
 (Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed. If *identifier* isn't found on the internal stack, nothing is popped.
 
 *n*\
 (Optional) Specifies the value, in bytes, to be used for packing. If the compiler option [/Zp](../build/reference/zp-struct-member-alignment.md) isn't set for the module, the default value for *n* is 8. Valid values are 1, 2, 4, 8, and 16. The alignment of a member is on a boundary that's either a multiple of *n*, or a multiple of the size of the member, whichever is smaller.
-
-`#pragma pack(pop, identifier, n)` is undefined.
 
 ## Remarks
 
@@ -103,6 +103,9 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 #pragma pack(show)   // C4810
 #pragma pack(push, r1, 16)   // n = 16, pushed to stack
 #pragma pack(show)   // C4810
+
+// pop to the identifier and then set
+// the value of the current packing alignment:
 #pragma pack(pop, r1, 2)   // n = 2 , stack popped
 #pragma pack(show)   // C4810
 ```

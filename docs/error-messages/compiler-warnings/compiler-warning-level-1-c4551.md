@@ -13,7 +13,7 @@ A function call must include the open and close parentheses after the function n
 
 The following sample generates C4551:
 
-```
+```cpp
 // C4551.cpp
 // compile with: /W1
 void function1() {

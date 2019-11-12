@@ -15,7 +15,7 @@ For more information on specifying type and member accessibility in metadata, se
 
 The following sample generates C4376.
 
-```
+```cpp
 // C4376.cpp
 // compile with: /clr /W1 /c
 public ref class G {

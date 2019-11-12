@@ -15,7 +15,7 @@ An enumerator was calculated to be greater than the greatest value for the speci
 
 The following sample generates C4369.
 
-```
+```cpp
 // C4369.cpp
 // compile with: /W1
 int main() {

@@ -12,7 +12,7 @@ The end result resembles the model used by the [CFormView Class](../mfc/referenc
 
 Because MFC Windows Forms views are ActiveX controls, they do not have the same `hwnd` as MFC views. Also they cannot be passed as a pointer to a [CView](../mfc/reference/cview-class.md) view. In general, use .NET Framework methods to work with Windows Forms views and rely less on Win32.
 
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/en-us/download/details.aspx?id=2113).
+For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/download/details.aspx?id=2113).
 
 ## In This Section
 

@@ -13,7 +13,7 @@ If an expression statement has an operator with no side effect as the top of the
 
 The following sample generates C4553:
 
-```
+```cpp
 // C4553.cpp
 // compile with: /W1
 int func()

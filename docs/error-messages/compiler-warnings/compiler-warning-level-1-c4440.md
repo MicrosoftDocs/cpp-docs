@@ -13,7 +13,7 @@ An attempt to change the calling convention was ignored.
 
 The following sample generates C4440:
 
-```
+```cpp
 // C4440.cpp
 // compile with: /W1 /LD /clr
 typedef void __clrcall F();

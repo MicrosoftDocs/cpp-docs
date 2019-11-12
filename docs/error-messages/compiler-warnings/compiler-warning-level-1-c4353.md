@@ -13,7 +13,7 @@ You cannot use the constant zero (0) as a function expression. For more informat
 
 The following sample generates C4353:
 
-```
+```cpp
 // C4353.cpp
 // compile with: /W1
 void MyPrintf(void){};
