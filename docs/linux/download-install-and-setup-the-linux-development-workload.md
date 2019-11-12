@@ -43,7 +43,7 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
 
-On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). WSL is a convenient console environment, but is not recommended for graphical applications. 
+On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but is not recommended for graphical applications. 
 
 ::: moniker-end
 
