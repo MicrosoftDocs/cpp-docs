@@ -3665,21 +3665,6 @@
                   href: cpp/object-lifetime-and-resource-management-modern-cpp.md
                 - name: Objects own resources (RAII)
                   href: cpp/objects-own-resources-raii.md
-                - name: Smart pointers (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Smart pointers (Modern C++)
-                      href: cpp/smart-pointers-modern-cpp.md
-                    - name: "How to: Create and use unique_ptr instances"
-                      href: cpp/how-to-create-and-use-unique-ptr-instances.md
-                    - name: "How to: Create and use shared_ptr instances"
-                      href: cpp/how-to-create-and-use-shared-ptr-instances.md
-                    - name: "How to: Create and use weak_ptr instances"
-                      href: cpp/how-to-create-and-use-weak-ptr-instances.md
-                    - name: "How to: Create and use CComPtr and CComQIPtr instances"
-                      href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-                - name: Pimpl for compile-time encapsulation (Modern C++)
-                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
                 - name: Containers (Modern C++)
                   href: cpp/containers-modern-cpp.md
                 - name: Algorithms (Modern C++)
@@ -4253,6 +4238,18 @@
                   href: cpp/const-and-volatile-pointers.md
                 - name: new and delete operators
                   href: cpp/new-and-delete-operators.md
+                - name: Smart pointers
+                  href: cpp/smart-pointers-modern-cpp.md
+                - name: "How to: Create and use unique_ptr instances"
+                  href: cpp/how-to-create-and-use-unique-ptr-instances.md
+                - name: "How to: Create and use shared_ptr instances"
+                  href: cpp/how-to-create-and-use-shared-ptr-instances.md
+                - name: "How to: Create and use weak_ptr instances"
+                  href: cpp/how-to-create-and-use-weak-ptr-instances.md
+                - name: "How to: Create and use CComPtr and CComQIPtr instances"
+                  href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
+                - name: Pimpl for compile-time encapsulation
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
             - name: Exception handling in C++
               expanded: false
               items: 
