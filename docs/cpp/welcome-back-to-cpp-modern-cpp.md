@@ -14,48 +14,62 @@ The following sections provide an overview of the main features of modern C++:
 
 ## Stack-based scope for smaller objects
 
-It has been said that the reason C++ has no garbage collection mechanism is because it doesn't produce that much "garbage", in other words, memory allocations on the heap that need to be deleted. Small objects can be allocated directly on the stack, where they will 
+It has been said that the reason C++ has no built-in garbage collection mechanism is because it doesn't produce that much "garbage", in other words, memory allocations on the heap that need to be deleted. Small objects should be allocated directly on the stack, which is must faster than heap allocations. Once allocated on the stack, no deletion is needed. The object simply goes out of scope along with its enclosing block:
 
-## Smart pointers for heap-allocated objects
+```cpp
+EXAMPLE TBD
+```
 
-## Auto type inference instead of explicit type names
+## Pointers and memory management
+
+### Smart pointers for heap-allocated objects
+
+### [Object Lifetime And Resource Management](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
+
+### [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md)
+
+## Variable and function declarations
+
+### Auto type inference instead of explicit type names
 
 for variables and function return types
+
+### constexpr expressions instead of macros
+
+Use in place of macros. 
+
+### Uniform initialization
+
+## Data structures
+
+### std::vector and other Standard Library containers
+
+[C++ Standard Library](../standard-library/cpp-standard-library-header-files.md) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [\<vector>](../standard-library/vector.md), [\<list>](../standard-library/list.md), and [\<map>](../standard-library/map.md).
 
 ## Range-based for loops
 
 Use range-based for loops to write more robust loops that work with arrays, C++ Standard Library containers, and Windows Runtime collections in the form `for ( for-range-declaration : expression )`. This is part of the Core Language support. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
-## Uniform initialization
-
-## String classes for text data
+### String classes instead of character arrays
 
 `std::string`, `std::wstring` and [std:;string_view](../standard-library/string-view-class.md)types (see [\<string>](../standard-library/string.md)) instead of raw `char[]` arrays.
 
-## std::vector and other Standard Library containers
-
-[C++ Standard Library](../standard-library/cpp-standard-library-header-files.md) containers like `vector`, `list`, and `map` instead of raw arrays or custom containers. See [\<vector>](../standard-library/vector.md), [\<list>](../standard-library/list.md), and [\<map>](../standard-library/map.md).
 
 ## Standard Library algorithms
 
 C++ Standard Library [algorithms](../standard-library/algorithm.md) instead of manually coded ones. parallel versions in C++17
 
+
 ## Move semantics
 
-## Lambda expressions
+## Lambda expressions instead of function pointers
 
 Inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md) instead of small functions implemented separately.
 
 ## Exceptions
 
-
 Exceptions, to report and handle error conditions.
 
-## Resource management
-
-- [Object Lifetime And Resource Management](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
-
-- [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md)
 
 ## Lock-free inter-thread communication
 
@@ -64,6 +78,14 @@ Exceptions, to report and handle error conditions.
 ## - [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
 
 ## [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)- 
+
+## std::variant instead of unions
+
+## structured bindings, std::any, std::optional, std::tuple
+
+## literals, digit separators
+
+## standard attributes
 
 
 Modern C++ incorporates two kinds of polymorphism: compile-time, through templates, and run-time, through inheritance and virtualization. You can mix the two kinds of polymorphism to great effect. The C++ Standard Library template `shared_ptr` uses internal virtual methods to accomplish its apparently effortless type erasure. But don't over-use virtualization for polymorphism when a template is the better choice. Templates can be very powerful.
