@@ -19,7 +19,7 @@ However, unexpected behavior can occur if the compiler uses a definition that is
 
 This sample contains the original type definition.
 
-```
+```cpp
 // C4691_a.cpp
 // compile with: /clr /LD /W1
 public ref class Original_Type {};
@@ -29,7 +29,7 @@ public ref class Original_Type {};
 
 This sample references C4691_a.dll and declares a field of type Original_Type.
 
-```
+```cpp
 // C4691_b.cpp
 // compile with: /clr /LD
 #using "C4691_a.dll"
@@ -45,7 +45,7 @@ The following sample generates C4691.  Notice this sample contains a definition 
 
 To resolve, reference the metadata file that contains the original type definition and remove the local declaration and definition.
 
-```
+```cpp
 // C4691_c.cpp
 // compile with: /clr /LD /W1
 // C4691 expected

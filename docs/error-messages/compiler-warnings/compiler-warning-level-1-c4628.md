@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4628:
 
-```
+```cpp
 // C4628.cpp
 // compile with: /WX
 #pragma warning(default : 4628)

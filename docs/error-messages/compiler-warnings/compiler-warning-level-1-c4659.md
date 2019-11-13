@@ -11,7 +11,7 @@ ms.assetid: e29ba8db-7917-43f6-8e34-868b752279ae
 
 The .drectve option was used to pass an option to the linker. Instead use pragma [comment](../../preprocessor/comment-c-cpp.md) for passing a linker option.
 
-```
+```cpp
 // C4659.cpp
 // compile with: /W1 /LD
 #pragma code_seg(".drectve")   // C4659
