@@ -43,29 +43,31 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 If you don't already have a Linux machine, you can create a Linux Virtual Machine on Azure. For more information, see [Quickstart: Create a Linux virtual machine in the Azure portal](/azure/virtual-machines/linux/quick-create-portal).
 
-On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but is not recommended for graphical applications. 
+On Windows 10, you can install and target your favorite Linux distro on the Windows Subsystem for Linux (WSL). For more information, see [Windows Subsystem for Linux Installation Guide for Windows 10](/windows/wsl/install-win10). If you're unable to access the Windows Store, you can [manually download the WSL distro packages](/windows/wsl/install-manual). WSL is a convenient console environment, but is not recommended for graphical applications.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL: 
-- **A compiler** - Visual Studio 2019 has out-of-the-box support for GCC and [Clang](https://docs.microsoft.com/en-us/cpp/build/clang-support-cmake?view=vs-2019). 
-- **gdb** - Visual Studio automatically launches gdb on the Linux system, and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux. 
+Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
+
+- **A compiler** - Visual Studio 2019 has out-of-the-box support for GCC and [Clang](/cpp/build/clang-support-cmake?view=vs-2019).
+- **gdb** - Visual Studio automatically launches gdb on the Linux system, and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
 - **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem for use by IntelliSense.
 - **make**
 - **openssh-server** (remote Linux systems only) - Visual Studio connects to remote Linux systems over a secure SSH connection.
 - **CMake** (CMake projects only) - You can install Microsoft's [statically linked CMake binaries for Linux](https://github.com/microsoft/CMake/releases).
 
-The following commands assume you are using g++ instead of clang. 
+The following commands assume you are using g++ instead of clang.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL: 
+Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
+
 - **gcc** - Visual Studio 2017 has out-of-the-box support for GCC.
-- **gdb** - Visual Studio automatically launches gdb on the Linux system and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux. 
+- **gdb** - Visual Studio automatically launches gdb on the Linux system and uses the front-end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
 - **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem to use for IntelliSense.
 - **make**
 - **openssh-server** - Visual Studio connects to remote Linux systems over a secure SSH connection.
@@ -73,7 +75,7 @@ Linux projects in Visual Studio require the following dependencies to be install
 
 ::: moniker-end
 
-::: moniker range="vs-2019" 
+::: moniker range="vs-2019"
 
 ## Linux setup: Ubuntu on WSL
 
