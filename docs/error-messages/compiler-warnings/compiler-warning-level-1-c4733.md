@@ -15,7 +15,7 @@ To resolve this warning, either remove the FS:0 definition or turn off this warn
 
 The following sample generates C4733:
 
-```
+```cpp
 // C4733.cpp
 // compile with: /W1 /c
 // processor: x86

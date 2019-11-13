@@ -15,7 +15,7 @@ This warning is for when you used a `bool` variable or value in an unexpected wa
 
 The following sample generates C4804:
 
-```
+```cpp
 // C4804.cpp
 // compile with: /W1
 
