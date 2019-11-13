@@ -17,7 +17,7 @@ A narrowing conversion can be okay when you know the possible range of converted
 
 The following sample generates C4838 and shows one way to fix it:
 
-```
+```cpp
 // C4838.cpp -- C++ narrowing conversion diagnostics
 // Compile by using: cl /EHsc C4838.cpp
 

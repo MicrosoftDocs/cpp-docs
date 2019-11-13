@@ -15,7 +15,7 @@ Another way to resolve this warning is not make the parameter (in the definition
 
 The following sample generates C4925:
 
-```
+```cpp
 // C4925.cpp
 // compile with: /LD /W1
 #define _ATL_ATTRIBUTES 1

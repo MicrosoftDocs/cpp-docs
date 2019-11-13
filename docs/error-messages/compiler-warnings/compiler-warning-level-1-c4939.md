@@ -15,7 +15,7 @@ The [vtordisp](../../preprocessor/vtordisp.md) pragma will be removed in a futur
 
 The following sample generates C4939.
 
-```
+```cpp
 // C4939.cpp
 // compile with: /c /W1
 #pragma vtordisp(off)   // C4939

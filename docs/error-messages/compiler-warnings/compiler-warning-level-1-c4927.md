@@ -13,7 +13,7 @@ More than one user-defined conversion is implicitly applied to a single value --
 
 The following sample generates C4927:
 
-```
+```cpp
 // C4927.cpp
 // compile with: /W1
 struct B
