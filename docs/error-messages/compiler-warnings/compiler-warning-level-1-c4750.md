@@ -25,7 +25,7 @@ The 'identifier' function forces inline expansion of the [_alloca](../../c-runti
 
 The following code example calls `MyFunction` in a loop, and `MyFunction` calls the `_alloca` function. The `__forceinline` modifier causes the inline expansion of the `_alloca` function.
 
-```
+```cpp
 // c4750.cpp
 // compile with: /O2 /W1 /c
 #include <intrin.h>

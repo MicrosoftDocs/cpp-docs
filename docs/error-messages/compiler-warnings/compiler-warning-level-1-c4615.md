@@ -13,7 +13,7 @@ An invalid warning specifier was used with **pragma** [warning](../../preprocess
 
 The following sample generates C4615:
 
-```
+```cpp
 // C4615.cpp
 // compile with: /W1 /LD
 #pragma warning(enable : 4401)   // C4615, 'enable' not valid specifier
