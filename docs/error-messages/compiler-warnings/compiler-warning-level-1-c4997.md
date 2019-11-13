@@ -13,7 +13,7 @@ A class marked with the [coclass](../../windows/coclass.md) attribute did not im
 
 The following sample generates C4997:
 
-```
+```cpp
 // C4997.cpp
 // compile with: /WX
 // to resolve this C4997, uncomment all code

@@ -19,7 +19,7 @@ A specialization of a function template cannot specify any of the [inline](../..
 
 The following code example shows an invalid friend function declaration with an `inline` specifier.
 
-```
+```cpp
 // C4396.cpp
 // compile with: /W2 /c
 

@@ -13,7 +13,7 @@ The **delete** operator is called to delete a type that was declared but not def
 
 The following sample generates C4150:
 
-```
+```cpp
 // C4150.cpp
 // compile with: /W2
 class  IncClass;

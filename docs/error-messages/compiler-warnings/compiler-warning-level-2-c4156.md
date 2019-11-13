@@ -15,7 +15,7 @@ This warning occurs only under Microsoft extensions (/Ze).
 
 ## Example
 
-```
+```cpp
 // C4156.cpp
 // compile with: /W2
 int main()

@@ -15,7 +15,7 @@ To suppress C4250, use the [warning](../../preprocessor/warning.md) pragma.
 
 Because a virtual base class is shared among multiple derived classes, a name in a derived class dominates a name in a base class. For example, given the following class hierarchy, there are two definitions of func inherited within diamond: the vbc::func() instance through the weak class, and the dominant::func() through the dominant class. An unqualified call of func() through a diamond class object, always calls the dominate::func() instance.  If the weak class were to introduce an instance of func(), neither definition would dominate, and the call would be flagged as ambiguous.
 
-```
+```cpp
 // C4250.cpp
 // compile with: /c /W2
 #include <stdio.h>
@@ -41,7 +41,7 @@ int main() {
 
 The following sample generates C4250.
 
-```
+```cpp
 // C4250_b.cpp
 // compile with: /W2 /EHsc
 #include <iostream>
@@ -74,7 +74,7 @@ int main() {
 
 This sample shows a more complex situation. The following sample generates C4250.
 
-```
+```cpp
 // C4250_c.cpp
 // compile with: /W2 /EHsc
 #include <iostream>

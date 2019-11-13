@@ -13,7 +13,7 @@ The specified **operator->()** function cannot return the type for which it is d
 
 The following sample generates C4285:
 
-```
+```cpp
 // C4285.cpp
 // compile with: /W2
 class C
