@@ -15,13 +15,13 @@ For more information, see [Exception Specifications (throw)](../../cpp/exception
 
 You can avoid this warning by using the [warning](../../preprocessor/warning.md) pragma:
 
-```
+```cpp
 #pragma warning( disable : 4290 )
 ```
 
 The following code sample generates C4290:
 
-```
+```cpp
 // C4290.cpp
 // compile with: /EHs /W3 /c
 void f1(void) throw(int) {}   // C4290

@@ -13,7 +13,7 @@ The compiler detected an empty declaration using an untagged structure, union, o
 
 ## Example
 
-```
+```cpp
 // C4094.cpp
 // compile with: /W2
 struct

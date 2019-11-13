@@ -15,7 +15,7 @@ If you want .pgc files to be generated when you run your application, specify on
 
 The following sample generates C4964:
 
-```
+```cpp
 // C4964.cpp
 // compile with: /W1 /GL /link /ltcg:pgi
 // C4964 expected

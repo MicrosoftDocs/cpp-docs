@@ -15,7 +15,7 @@ This warning can be caused by compiler optimizations performed during constant a
 
 The following sample generates C4056:
 
-```
+```cpp
 // C4056.cpp
 // compile with: /W2 /LD
 #pragma warning (default : 4056)

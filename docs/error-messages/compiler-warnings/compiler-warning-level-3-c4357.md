@@ -13,7 +13,7 @@ The `ParamArray` attribute was ignored, and `function` cannot be called with var
 
 The following sample generates C4357:
 
-```
+```cpp
 // C4357.cpp
 // compile with: /clr /W3 /c
 using namespace System;

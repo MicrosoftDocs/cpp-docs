@@ -13,7 +13,7 @@ An expression converts a negative integer constant to an unsigned type. The resu
 
 ## Example
 
-```
+```cpp
 // C4308.cpp
 // compile with: /W2
 unsigned int u = (-5 + 3U);   // C4308
