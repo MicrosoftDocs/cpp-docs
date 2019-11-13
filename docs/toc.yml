@@ -4213,10 +4213,7 @@
                 - name: constexpr lambda expressions
                   href: cpp/lambda-expressions-constexpr.md
             - name: Arrays
-              expanded: false
-              items: 
-                - name: Arrays
-                  href: cpp/arrays-cpp.md
+              href: cpp/arrays-cpp.md
             - name: References
               expanded: false
               items: 
