@@ -1,20 +1,22 @@
 ---
 title: "Visual Studio IDE tools for upgrading C++ code"
 description: "The C++ code editor and code analysis tools in Visual Studio help you to modernize your C++ code base."
-ms.date: "11/06/2019"
+ms.date: "11/13/2019"
 ms.topic: "conceptual"
 ---
 # Visual Studio IDE tools for upgrading C++ code
 
 Visual Studio helps you upgrade legacy C++ code with compiler options, code analysis warnings, and editor features such as Quick Fixes, Quick Info, and the enhanced scroll bar. The term "legacy code" refers to any of these categories:
 
-1. Code that was formerly allowed by the Microsoft C++ compiler (MSVC) but never conformed to the C++ standard.
+- Code that was formerly allowed by the Microsoft C++ compiler (MSVC) but never conformed to the C++ standard.
 
    To upgrade older non-conformant MSVC code, turn on the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option. All instances of non-conformant usages are underlined with red squiggles in the code editor. The error messages in the **Error List** window include a recommendation for how to fix the error. Click on the error code to go to its help page in the documentation. If fixing all the errors at once is impractical, you can upgrade non-conformant code in stages by turning on the **permissive-** option, fixing some errors, then turning the option off again. The code will compile with the new improvements, and you can go back and fix the remaining issues at a later time. See the [/permissive-](../build/reference/permissive-standards-conformance.md) page for examples of non-conformant MSVC code.
-1. Code that was permitted in an earlier version of the C++ standard but has been deprecated or removed in a later version.
+
+- Code that was permitted in an earlier version of the C++ standard but has been deprecated or removed in a later version.
 
    To upgrade to a newer language standard, set the [C++ Language Standard](../build/reference/std-specify-language-standard-version.md) option to the desired standard and fix any compile errors that are raised. In general, we recommend setting the language standard to [/std:c++17](../build/reference/std-specify-language-standard-version.md). The errors raised when upgrading to a newer standard are not related to the errors raised when using the **permissive-** option.
-1. Code that conforms to all versions of the standard but is no longer considered best practice in modern C++.
+
+- Code that conforms to all versions of the standard but is no longer considered best practice in modern C++.
 
    To identify code where changes are recommended, run [Code analysis](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
 
