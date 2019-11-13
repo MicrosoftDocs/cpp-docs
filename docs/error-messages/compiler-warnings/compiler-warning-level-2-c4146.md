@@ -27,7 +27,7 @@ You can avoid C4146 by using INT_MIN from limits.h, which has the type **signed 
 
 The following sample generates C4146:
 
-```
+```cpp
 // C4146.cpp
 // compile with: /W2
 #include <stdio.h>

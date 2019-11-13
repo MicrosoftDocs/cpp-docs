@@ -15,7 +15,7 @@ A constraint list has an assembly private type, meaning it will not be available
 
 The following sample generates C4688.
 
-```
+```cpp
 // C4688.cpp
 // compile with: /clr /c /W1
 ref struct A {};   // private type

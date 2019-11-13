@@ -15,7 +15,7 @@ This warning may be fixed if you cast one of the two types when testing signed a
 
 The following sample generates C4018:
 
-```
+```cpp
 // C4018.cpp
 // compile with: /W3
 int main() {

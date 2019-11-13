@@ -15,7 +15,7 @@ A type that has public accessibility outside the assembly uses a type that has p
 
 The following sample generates C4677.
 
-```
+```cpp
 // C4677.cpp
 // compile with: /clr /c /W1
 delegate void TestDel();

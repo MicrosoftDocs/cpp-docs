@@ -15,7 +15,7 @@ By default, this warning is off. For more information, see [Compiler Warnings Th
 
 The following code example generates C4946:
 
-```
+```cpp
 // C4946.cpp
 // compile with: /W1
 #pragma warning (default : 4946)

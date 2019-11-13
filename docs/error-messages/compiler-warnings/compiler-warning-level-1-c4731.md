@@ -13,7 +13,7 @@ A frame pointer register was modified. You must save and restore the register in
 
 The following sample generates C4731:
 
-```
+```cpp
 // C4731.cpp
 // compile with: /W1 /LD
 // processor: x86

@@ -19,7 +19,7 @@ See [warning](../../preprocessor/warning.md) pragma for information on how to tu
 
 The following sample generates C4803.
 
-```
+```cpp
 // C4803.cpp
 // compile with: /clr /W1
 using namespace System;

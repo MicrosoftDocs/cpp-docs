@@ -15,7 +15,7 @@ Any out-of-class definition for a local class member function will be an error.
 
 The following sample generates C4822:
 
-```
+```cpp
 // C4822.cpp
 // compile with: /W1
 int main() {

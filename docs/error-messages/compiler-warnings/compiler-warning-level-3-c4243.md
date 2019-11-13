@@ -13,7 +13,7 @@ A pointer to a derived class is converted to a pointer to a base class, but the 
 
 The following sample generates C4243:
 
-```
+```cpp
 // C4243.cpp
 // compile with: /W3
 // C4243 expected

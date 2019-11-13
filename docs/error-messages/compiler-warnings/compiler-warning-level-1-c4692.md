@@ -19,7 +19,7 @@ This warning is off by default. For more information, see [Compiler Warnings Tha
 
 The following sample generates C4692.
 
-```
+```cpp
 // C4692.cpp
 // compile with: /W1 /c /clr
 #pragma warning(default:4692)

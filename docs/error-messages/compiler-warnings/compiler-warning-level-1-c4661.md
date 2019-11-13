@@ -13,7 +13,7 @@ A member of the template class is not defined.
 
 ## Example
 
-```
+```cpp
 // C4661.cpp
 // compile with: /W1 /LD
 template<class T> class MyClass {

@@ -19,7 +19,7 @@ For more information, see [pack](../../preprocessor/pack.md) and [__alignof Oper
 
 This is the first file that defines the type.
 
-```
+```c
 // C4742a.c
 // compile with: /c
 struct X {
@@ -31,7 +31,7 @@ struct X {
 
 The following sample generates C4742.
 
-```
+```c
 // C4742b.c
 // compile with: C4742a.c /W1 /GL
 // C4742 expected

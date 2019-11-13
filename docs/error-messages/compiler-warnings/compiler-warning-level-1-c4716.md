@@ -19,7 +19,7 @@ This warning is automatically promoted to an error. If you wish to modify this b
 
 The following sample generates C4716:
 
-```
+```cpp
 // C4716.cpp
 // compile with: /c /W1
 // C4716 expected
