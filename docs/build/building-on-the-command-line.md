@@ -2,13 +2,17 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ compiler toolchain (MSVC) from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "10/22/2019"
+ms.date: "11/12/2019"
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
 # Use the Microsoft C++ toolset from the command line
 
-You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a standalone package from the [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/) page. It's part of the **Build Tools for Visual Studio** package. You can choose to download only the tools you need for C++ development.
+You can build C and C++ applications on the command line by using tools that are included in Visual Studio. The Microsoft C++ (MSVC) compiler toolset is also downloadable as a free, standalone package that doesn't include the Visual Studio IDE.
+
+## Download and install the tools
+
+If you only want the command-line toolset, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **C++ build tools** workload. You can select optional libraries and toolsets to include under **Installation details**. When you're satisfied with your selections, choose **Install**.
 
 ## How to use the command-line tools
 
