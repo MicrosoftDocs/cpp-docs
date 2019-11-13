@@ -13,7 +13,7 @@ The compiler detected a cast to an r-value type which is qualified with [volatil
 
 The following sample generates C4197:
 
-```
+```cpp
 // C4197.cpp
 // compile with: /W3
 #include <stdio.h>
