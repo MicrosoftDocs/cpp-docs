@@ -14,13 +14,19 @@ The following sections provide an overview of the main features of modern C++:
 
 ## Stack-based scope for smaller objects
 
-It has been said that the reason C++ has no built-in garbage collection mechanism is because it doesn't produce that much "garbage", in other words, memory allocations on the heap that need to be deleted. Small objects should be allocated directly on the stack, which is must faster than heap allocations. Once allocated on the stack, no deletion is needed. The object simply goes out of scope along with its enclosing block:
+It has been said that the reason C++ has no built-in garbage collection mechanism is because it doesn't produce much "garbage", in other words, memory allocations on the heap that need to be deleted. Small objects should be allocated directly on the stack, which is much faster than heap allocations and requires no deletions. The object simply goes out of scope along with its enclosing block:
 
 ```cpp
 EXAMPLE TBD
 ```
 
 ## Pointers and memory management
+
+When heap allocation is needed, use one of the Standard Library smart pointer types and declare the smart pointer on the stack. A smart pointer is a class that contains a pointer and possibly a few helper functions. Its destructor deletes the pointer memory automatically when the object goes out of scope. The Standard Library provides std::unique_ptr for pointers that don't need to be copied, and std::shared_ptr for pointers that enable copying. std::weak_ptr is provided to help avoid cycles in 
+
+```cpp
+EXAMPLE TBD
+```
 
 ### Smart pointers for heap-allocated objects
 
