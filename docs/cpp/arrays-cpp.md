@@ -8,45 +8,108 @@ ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 
 An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still very common especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
 
-An array is initialized by using the [subscript operator \[\]](subscript-operator.md) after the variable name. The number of elements must be specified with a constant value. Individual elements in the array are accessed by the same **[]** operator.
+## Stack declarations
+
+In a C++ array declaration, the array size is specified after the variable name, not after the type name as in some other languages. The following example declares an array of 1000 doubles to be allocated on the stack. The number of elements must be supplied as an integer literal or else as a constant expression because the compiler has to know how much stack space to allocate; it cannot use a value computed at run-time. Each element in the array is assigned a default value of 0. If you do not assign a default value, each element will initially contain whatever random values happen to be at that location.
 
 ```cpp
-int i[100] {0}; // an array of 100 ints all initialized to zero
-MyClass* [12]; // an array of 12 pointers to MyClass
-i[0] = 256; // assign the value 256 to the first element in the array
-```
+    constexpr size_t size = 1000;
 
-The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+    // Declare an array of doubles to be allocated on the stack
+    double_t numbers[size] {0};
 
-The following example shows how to define an array at run time:
+    // Assign a new value to the first element
+    numbers[0] = 1;
 
-```cpp
-
-#include <iostream>
-
-int main() {
-    using namespace std;
-    int size = 3, i = 0;
-
-    // initialize the array elements
-    int* myarr = new int[size] {1, 2, 3};
-
-    // double the value of each element
-    for (i = 0; i < size; i++)
+    // Assign a value to each subsequent element
+    // (numbers[1] is the second element in the array.)
+    for (size_t i = 1; i < size; i++)
     {
-        myarr[i] *= 2;  
+        numbers[i] = numbers[i-1] * 1.1;
     }
 
     // Access each element
-    for (i = 0; i < size; i++)
+    for (size_t i = 0; i < size; i++)
     {
-        cout << myarr[i] << " "; // 2 4 6
+        std::cout << numbers[i] << " ";
+    }
+```
+
+The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `size -1`.
+
+A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
+
+Stack-based arrays are faster to allocate and access than heap-based arrays, but the number of elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
+
+## Heap declarations
+
+If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic]() to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
+
+- you always keep a copy of the original pointer address so that you can delete the memory when you no longer need the array.
+- you do not increment or decrement the pointer address past the array bounds.
+
+The following example shows how to define an array on the heap at run time, and how to access the array elements using the subscript operator or by using pointer arithmetic:
+
+```cpp
+
+void do_something(size_t size)
+{
+    // Declare an array of doubles to be allocated on the heap
+    double_t* numbers = new double_t[size]{ 0 };
+
+    // Assign a new value to the first element
+    numbers[0] = 1;
+
+    // Assign a value to each subsequent element
+    // (numbers[1] is the second element in the array.)
+    for (size_t i = 1; i < size; i++)
+    {
+        numbers[i] = numbers[i - 1] * 1.1;
     }
 
-    // Return the memory to the OS.
-    delete[] myarr;
+    // Access each element with subscript operator
+    for (size_t i = 0; i < size; i++)
+    {
+        std::cout << numbers[i] << " ";
+    }
+
+    // Access each element with pointer arithmetic
+    // Use a copy of the pointer for iterating
+    double_t* p = numbers;
+
+    for (size_t i = 0; i < size; i++)
+    {
+        // Dereference the pointer, then increment it
+        std::cout << *p++ << " ";
+    }
+
+    // Alternate method:
+    // Reset p to numbers[0]:
+    p = numbers;
+
+    // Use address of pointer to compute bounds.
+    // The compiler 
+    while (p < (numbers + size))
+    {
+        // Dereference the pointer, then increment it
+        std::cout << *p++ << " ";
+    }
+
+    delete[] numbers; // don't forget to do this!
+
 }
+int main()
+{
+    do_something(108);
+}
+
 ```
+
+## Passing arrays to functions
+
+When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no size information or any way to signify that it is an array type. This behavior is called *pointer decay*. When you pass an array to another function, you must always specify the number of elements in a separate parameter. 
+
+
 
 ## Multidimensional arrays
 
@@ -124,7 +187,7 @@ int main( int argc, char *argv[] ) {
 double FindMinToMkt(int Mkt, double myTransportCosts[][cMkts], int mycFacts) {
    double MinCost = DBL_MAX;
 
-   for( int i = 0; i < cFacts; ++i )
+   for( size_t i = 0; i < cFacts; ++i )
       MinCost = (MinCost < TransportCosts[i][Mkt]) ?
          MinCost : TransportCosts[i][Mkt];
 
