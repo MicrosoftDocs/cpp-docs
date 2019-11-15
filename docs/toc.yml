@@ -2848,6 +2848,8 @@
           href: porting/porting-third-party-libraries.md
         - name: Port data applications
           href: data/data-access-programming-mfc-atl.md
+    - name: IDE tools for upgrading C++ code
+      href: porting/ide-tools-for-upgrading-code.md
     - name: Visual C++ change history 2003 - 2015
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ What's New 2003 through 2015
