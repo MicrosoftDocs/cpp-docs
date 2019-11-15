@@ -32,11 +32,14 @@ Removes the **float_control** setting from the top of the internal compiler stac
 
 ## Remarks
 
-You cannot use **float_control** to turn **precise** off when **except** is on. Similarly, **precise** cannot be turned off when [fenv_access](../preprocessor/fenv-access.md) is on. To go from strict model to a fast model by using the **float_control** pragma, use the following code:
+For **float_control(strict, on)** to behave like the [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler option, you must also use the [fp_contract](../preprocessor/fp-contract.md) pragma to turn off contractions, and use the [fenv_access](../preprocessor/fenv-access.md) pragma to enable floating-point environment access. The **float_control** pragma doesn't affect these other properties.
+
+You can't use **float_control** to turn **precise** off when **except** is on. Similarly, **precise** can't be turned off when [fenv_access](../preprocessor/fenv-access.md) is on. To go from strict model to a fast model by using the **float_control** pragma, use the following code:
 
 ```cpp
 #pragma float_control(except, off)
 #pragma fenv_access(off)
+#pragma fp_contract(on)
 #pragma float_control(precise, off)
 ```
 
@@ -45,6 +48,7 @@ To go from fast model to a strict model with the **float_control** pragma, use t
 ```cpp
 #pragma float_control(precise, on)
 #pragma fenv_access(on)
+#pragma fp_contract(off)
 #pragma float_control(except, on)
 ```
 
