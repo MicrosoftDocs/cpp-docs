@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C++ Porting and Upgrading Guide"
 description: "Upgrade Microsoft C++ code to the latest version of Visual Studio."
-ms.date: "10/29/2019"
+ms.date: "11/05/2019"
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: "overview"
 ---
@@ -19,7 +19,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - The same code can run faster due to improved compiler optimizations.
 
-- Modern C++ features and programming practices eliminate many common causes of bugs and is far easier to maintain that older C-style idioms.
+- Modern C++ features and programming practices eliminate many common causes of bugs and produce code that is far easier to maintain than older C-style idioms.
 
 - Build times are significantly faster, due to performance improvements in the compiler and linker.
 
@@ -42,6 +42,7 @@ For more information, see [Use native multi-targeting in Visual Studio to build 
 |Title|Description|
 |-----------|-----------------|
 |[Upgrading C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|How to upgrade your code base to Visual Studio 2019 and v142 of the compiler.|
+|[IDE tools for upgrading C++ code](ide-tools-for-upgrading-code.md)|Useful IDE features that help in the upgrade process.|
 |[C++ Binary Compatibility between 2015 and 2019](binary-compat-2015-2017.md)|Consume v140 libraries as-is from v142 projects.|
 |[Use native multi-targeting in Visual Studio to build old projects](use-native-multi-targeting.md)|Use Visual Studio 2019 with older compilers and libraries.|
 |[Visual C++ change history 2003 - 2015](visual-cpp-change-history-2003-2015.md)|A list of all the changes in the Microsoft C++ libraries and build tools from Visual Studio 2003 through 2015 that might require changes in your code.|
