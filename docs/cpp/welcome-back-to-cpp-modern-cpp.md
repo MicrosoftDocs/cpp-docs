@@ -20,23 +20,19 @@ It has been said that the reason C++ has no built-in garbage collection mechanis
 EXAMPLE TBD
 ```
 
-## Pointers and memory management
+### Smart pointers instead of raw pointers with new and delete
 
-When heap allocation is needed, use one of the Standard Library smart pointer types and declare the smart pointer on the stack. A smart pointer is a class that contains a pointer and possibly a few helper functions. Its destructor deletes the pointer memory automatically when the object goes out of scope. The Standard Library provides std::unique_ptr for pointers that don't need to be copied, and std::shared_ptr for pointers that enable copying. std::weak_ptr is provided to help avoid cycles in 
+When heap allocation is needed, use one of the Standard Library smart pointer types and declare the smart pointer on the stack. The smart pointer performs the head allocation, and its destructor deletes the allocated memory automatically when the object goes out of scope. The Standard Library provides std::unique_ptr for pointers that don't need to be copied, and std::shared_ptr for pointers that enable copying. std::weak_ptr is provided to prevent cycles.
 
 ```cpp
 EXAMPLE TBD
 ```
 
-### Smart pointers for heap-allocated objects
-
 ### [Object Lifetime And Resource Management](../cpp/object-lifetime-and-resource-management-modern-cpp.md)
 
 ### [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md)
 
-## Variable and function declarations
-
-### Auto type inference instead of explicit type names
+### auto instead of explicit type names
 
 for variables and function return types
 
@@ -60,13 +56,11 @@ Use range-based for loops to write more robust loops that work with arrays, C++ 
 
 `std::string`, `std::wstring` and [std:;string_view](../standard-library/string-view-class.md)types (see [\<string>](../standard-library/string.md)) instead of raw `char[]` arrays.
 
-
 ## Standard Library algorithms
 
 C++ Standard Library [algorithms](../standard-library/algorithm.md) instead of manually coded ones. parallel versions in C++17
 
-
-## Move semantics
+## Move semantics to avoid unnecessary copies
 
 ## Lambda expressions instead of function pointers
 
@@ -75,7 +69,6 @@ Inline [lambda expressions](../cpp/lambda-expressions-in-cpp.md) instead of smal
 ## Exceptions
 
 Exceptions, to report and handle error conditions.
-
 
 ## Lock-free inter-thread communication
 
