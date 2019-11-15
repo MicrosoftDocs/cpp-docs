@@ -9,22 +9,25 @@ This section of the documentation contains information about how to use the MSVC
 
 ## In This Section
 
-[Overview of ARM ABI Conventions](overview-of-arm-abi-conventions.md)<br/>
+[Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md)\
 Describes the application binary interface used by Windows on ARM for register usage, calling conventions and exception handling.
 
-[Overview of ARM64 ABI Conventions](arm64-windows-abi-conventions.md)<br/>
+[Overview of ARM64 ABI conventions](arm64-windows-abi-conventions.md)\
 Describes the application binary interface used by Windows on ARM64 for register usage, calling conventions and exception handling.
 
-[Common MSVC ARM Migration Issues](common-visual-cpp-arm-migration-issues.md)<br/>
+[Common MSVC ARM migration issues](common-visual-cpp-arm-migration-issues.md)\
 Describes C++ code elements that are commonly assumed to be portable across architectures, but which produce different results for ARM than for x86 and x64.
 
-[ARM Exception Handling](arm-exception-handling.md)<br/>
+[ARM exception handling](arm-exception-handling.md)\
 Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM.
 
-[ARM64 Exception Handling](arm64-exception-handling.md)<br/>
+[ARM64 exception handling](arm64-exception-handling.md)\
 Describes the encoding scheme for stack unwinding during structured exception handling in Windows on ARM64.
 
 ## Related Sections
 
-[ARM Intrinsics](../intrinsics/arm-intrinsics.md)<br/>
+[ARM intrinsics](../intrinsics/arm-intrinsics.md)\
+Describes compiler intrinsics for processors that use the ARM architecture.
+
+[ARM64 intrinsics](../intrinsics/arm-intrinsics.md)\
 Describes compiler intrinsics for processors that use the ARM architecture.
