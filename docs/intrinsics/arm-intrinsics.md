@@ -5,9 +5,9 @@ f1_keywords: ["arm_neon/vsetq_lane_p8", "armintr/_arm_uxtb", "arm_neon/vld4_lane
 helpviewer_keywords: ["cl.exe compiler, intrinsics", "intrinsics, ARM"]
 ms.assetid: d3d7dadd-7bd5-4508-8bff-371a66913e20
 ---
-# ARM Intrinsics
+# ARM intrinsics
 
-The Microsoft C++ compiler (MSVC) makes the following intrinsics available on the ARM architecture. For more information about ARM, see the [ARM Architecture Reference Manuals](https://go.microsoft.com/fwlink/p/?LinkId=522049) and [ARM Assembler Tools Guide](https://go.microsoft.com/fwlink/p/?LinkId=246102) on the ARM Infocenter website.
+The Microsoft C++ compiler (MSVC) makes the following intrinsics available on the ARM architecture. For more information about ARM, see the Architecture and Software Development Tools sections of the [ARM Developer Documentation](https://developer.arm.com/docs) website.
 
 ##  <a name="top"></a> NEON
 
@@ -645,5 +645,6 @@ The plain interlocked bit test intrinsics are common to all platforms. ARM adds 
 ## See also
 
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\
+[ARM64 intrinsics](arm64-intrinsics.md)\
 [ARM assembler reference](../assembler/arm/arm-assembler-reference.md)\
 [C++ language reference](../cpp/cpp-language-reference.md)
