@@ -269,7 +269,7 @@ MSVC supports these additional predefined macros.
 
 - **&#95;&#95;MSVC&#95;RUNTIME&#95;CHECKS** Defined as 1 when one of the [/RTC](../build/reference/rtc-run-time-error-checks.md) compiler options is set. Otherwise, undefined.
 
-- **&#95;MSVC&#95;TRADITIONAL** Defined as 0 when the preprocessor conformance mode [/experimental:preprocessor](../build/reference/rtc-run-time-error-checks.md) compiler option is set. Defined as 1 by default, or when the [/experimental:preprocessor-](../build/reference/rtc-run-time-error-checks.md) compiler option is set, to indicate the traditional preprocessor is in use. The **&#95;MSVC&#95;TRADITIONAL** macro and [/experimental:preprocessor (Enable preprocessor conformance mode)](../build/reference/experimental-preprocessor.md) compiler option is available beginning in Visual Studio 2017 version 15.8.
+- **&#95;MSVC&#95;TRADITIONAL** Defined as 0 when the preprocessor conformance mode [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler option is set. Defined as 1 by default, or when the [/experimental:preprocessor-](../build/reference/experimental-preprocessor.md) compiler option is set, to indicate the traditional preprocessor is in use. The **&#95;MSVC&#95;TRADITIONAL** macro and [/experimental:preprocessor (Enable preprocessor conformance mode)](../build/reference/experimental-preprocessor.md) compiler option is available beginning in Visual Studio 2017 version 15.8.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
