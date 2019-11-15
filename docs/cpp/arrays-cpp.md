@@ -16,7 +16,7 @@ In a C++ array declaration, the array size is specified after the variable name,
     constexpr size_t size = 1000;
 
     // Declare an array of doubles to be allocated on the stack
-    double_t numbers[size] {0};
+    double numbers[size] {0};
 
     // Assign a new value to the first element
     numbers[0] = 1;
@@ -55,7 +55,7 @@ The following example shows how to define an array on the heap at run time, and 
 void do_something(size_t size)
 {
     // Declare an array of doubles to be allocated on the heap
-    double_t* numbers = new double_t[size]{ 0 };
+    double* numbers = new double[size]{ 0 };
 
     // Assign a new value to the first element
     numbers[0] = 1;
@@ -75,7 +75,7 @@ void do_something(size_t size)
 
     // Access each element with pointer arithmetic
     // Use a copy of the pointer for iterating
-    double_t* p = numbers;
+    double* p = numbers;
 
     for (size_t i = 0; i < size; i++)
     {
@@ -127,7 +127,7 @@ When an array is passed to a function, it is passed as a pointer to the first el
 The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
 
 ```cpp
-void process(double_t p*, const size_t len)
+void process(double p*, const size_t len)
 {
     std::cout << "process:\n";
     for (size_t i = 0; i < len; ++i)
@@ -140,17 +140,17 @@ void process(double_t p*, const size_t len)
 Declare the array as const to make it read-only within the function block:
 
 ```cpp
-void process(const double_t p*, const size_t len);
+void process(const double p*, const size_t len);
 ```
 
 The same function can also be declared in these ways, with no change in behavior. The array is still passed as a pointer to the first element:
 
 ```cpp
 // Unsized array
-void process(const double_t p[] const size_t len);
+void process(const double p[] const size_t len);
 
 // Fixed-size array. Length must still be specified explicitly.
-void process(const double_t p[1000], const size_t len);
+void process(const double p[1000], const size_t len);
 ```
 
 ## Multidimensional arrays
