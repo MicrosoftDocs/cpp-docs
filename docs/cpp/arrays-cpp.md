@@ -1,6 +1,6 @@
 ---
 title: "Arrays (C++)"
-ms.date: "11/11/2019"
+ms.date: "11/14/2019"
 helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 ---
@@ -88,7 +88,8 @@ void do_something(size_t size)
     p = numbers;
 
     // Use address of pointer to compute bounds.
-    // The compiler 
+    // The compiler computes size as the number
+    // of elements * (bytes per element).
     while (p < (numbers + size))
     {
         // Dereference the pointer, then increment it
@@ -105,11 +106,52 @@ int main()
 
 ```
 
+## Initializing arrays
+
+You can initialize an array in a loop, one element at a time, or in a single statement. The contents of the following two arrays are identical:
+
+```cpp
+    int a[10];
+    for (int i = 0; i < 10; ++i)
+    {
+        a[i] = i + 1;
+    }
+
+    int b[10]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+```
+
 ## Passing arrays to functions
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no size information or any way to signify that it is an array type. This behavior is called *pointer decay*. When you pass an array to another function, you must always specify the number of elements in a separate parameter. 
+When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. Note that this behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as **const**.
 
+The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
 
+```cpp
+void process(double_t p*, const size_t len)
+{
+    std::cout << "process:\n";
+    for (size_t i = 0; i < len; ++i)
+    {
+        // do something with p[i]
+    }
+}
+```
+
+Declare the array as const to make it read-only within the function block:
+
+```cpp
+void process(const double_t p*, const size_t len);
+```
+
+The same function can also be declared in these ways, with no change in behavior. The array is still passed as a pointer to the first element:
+
+```cpp
+// Unsized array
+void process(const double_t p[] const size_t len);
+
+// Fixed-size array. Length must still be specified explicitly.
+void process(const double_t p[1000], const size_t len);
+```
 
 ## Multidimensional arrays
 
@@ -313,3 +355,7 @@ The pointer `psz` points to the first element of the array `szError1`. Note that
 ```cpp
 szError1 = psz;
 ```
+
+## See also
+
+[std::array](../standard-library/array-class-stl.md)
