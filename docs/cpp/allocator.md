@@ -25,3 +25,5 @@ __declspec(allocator) void* myMalloc(size_t size)
 ```
 
 For more information, see [Measure memory usage in Visual Studio](/visualstudio/profiling/memory-usage) and [Custom native ETW heap events](/visualstudio/profiling/custom-native-etw-heap-events).
+
+**END Microsoft Specific**

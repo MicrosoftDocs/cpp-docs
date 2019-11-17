@@ -23,7 +23,7 @@ or, optionally,
 int main(int argc, char *argv[], char *envp[]);
 ```
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The declaration syntax for `wmain` is as follows:
 

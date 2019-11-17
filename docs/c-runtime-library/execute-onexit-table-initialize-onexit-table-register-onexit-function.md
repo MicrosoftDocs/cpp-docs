@@ -58,7 +58,7 @@ The `_execute_onexit_table` function executes all of the functions in the onexit
 |-------------|---------------------|
 |`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h>|
 
-The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft specific. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
+The `_initialize_onexit_table`, `_register_onexit_function`, and `_execute_onexit_table` functions are Microsoft-specific. For compatibility information, see [Compatibility](../c-runtime-library/compatibility.md).
 
 ## See also
 

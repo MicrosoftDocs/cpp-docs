@@ -148,7 +148,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 |**vsnprintf**, **_vsnprintf**, **_vsnprintf_l**|\<stdio.h>|\<stdio.h> or  \<cstdio>|
 |**_vsnwprintf**, **_vsnwprintf_l**|\<stdio.h> or \<wchar.h>|\<stdio.h>, \<wchar.h>, \<cstdio>, or \<cwchar>|
 
-The **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l** functions are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l** functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

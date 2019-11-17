@@ -7,7 +7,7 @@ ms.assetid: 7abb1257-b85c-413a-b913-d45b1582a71d
 ---
 # Using wmain Instead of main
 
-## Microsoft Specific
+**Microsoft Specific**
 
 In the Unicode programming model, you can define a wide-character version of the `main` function. Use **wmain** instead of `main` if you want to write portable code that adheres to the Unicode specification.
 

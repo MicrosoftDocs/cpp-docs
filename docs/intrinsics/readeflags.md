@@ -7,6 +7,8 @@ ms.assetid: f9d2f4d8-c428-491f-b8de-04d0566b2b6b
 ---
 # __readeflags
 
+**Microsoft Specific**
+
 Reads the program status and control (EFLAGS) register.
 
 ## Syntax

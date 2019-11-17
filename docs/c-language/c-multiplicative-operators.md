@@ -28,16 +28,14 @@ The C multiplicative operators are described below:
 |Operator|Description|
 |--------------|-----------------|
 |<strong>\*</strong>|The multiplication operator causes its two operands to be multiplied.|
-|**/**|The division operator causes the first operand to be divided by the second. If two integer operands are divided and the result is not an integer, it is truncated according to the following rules:<br/><br/>- The result of division by 0 is undefined according to the ANSI C standard. The Microsoft C compiler generates an error at compile time or run time.<br/><br/>- If both operands are positive or unsigned, the result is truncated toward 0.<br/><br/>- If either operand is negative, whether the result of the operation is the largest integer less than or equal to the algebraic quotient or is the smallest integer greater than or equal to the algebraic quotient is implementation defined. (See the Microsoft Specific section below.)|
-|**%**|The result of the remainder operator is the remainder when the first operand is divided by the second. When the division is inexact, the result is determined by the following rules:<br/><br/>- If the right operand is zero, the result is undefined.<br/><br/>- If both operands are positive or unsigned, the result is positive.<br/><br/>- If either operand is negative and the result is inexact, the result is implementation defined. (See the Microsoft Specific section below.)|
+|**/**|The division operator causes the first operand to be divided by the second. If two integer operands are divided and the result is not an integer, it is truncated according to the following rules:<br/><br/>- The result of division by 0 is undefined according to the ANSI C standard. The Microsoft C compiler generates an error at compile time or run time.<br/><br/>- If both operands are positive or unsigned, the result is truncated toward 0.<br/><br/>- If either operand is negative, whether the result of the operation is the largest integer less than or equal to the algebraic quotient or is the smallest integer greater than or equal to the algebraic quotient is implementation defined. (See the Microsoft-specific section below.)|
+|**%**|The result of the remainder operator is the remainder when the first operand is divided by the second. When the division is inexact, the result is determined by the following rules:<br/><br/>- If the right operand is zero, the result is undefined.<br/><br/>- If both operands are positive or unsigned, the result is positive.<br/><br/>- If either operand is negative and the result is inexact, the result is implementation defined. (See the Microsoft-specific section below.)|
 
-**Microsoft Specific**
+### Microsoft-specific
 
 In division where either operand is negative, the direction of truncation is toward 0.
 
 If either operation is negative in division with the remainder operator, the result has the same sign as the dividend (the first operand in the expression).
-
-**END Microsoft Specific**
 
 ## Examples
 

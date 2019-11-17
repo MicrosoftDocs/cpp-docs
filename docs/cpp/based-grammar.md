@@ -6,7 +6,7 @@ ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
 ---
 # __based Grammar
 
-## Microsoft Specific
+**Microsoft Specific**
 
 Based addressing is useful when you need precise control over the segment in which objects are allocated (static and dynamic based data).
 

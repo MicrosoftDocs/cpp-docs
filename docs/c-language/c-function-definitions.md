@@ -21,7 +21,7 @@ A function definition specifies the name of the function, the types and number o
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq* is Microsoft Specific \*/
+/\* *attribute-seq* is Microsoft-specific \*/
 
 Prototype parameters are:
 

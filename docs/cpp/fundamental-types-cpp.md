@@ -32,7 +32,7 @@ The following table explains the restrictions on type sizes. These restrictions 
 ||**long long**|Larger than an unsigned **long**.<br /><br /> Objects of type **long long** can be declared as **signed long long** or **unsigned long long**. **signed long long** is a synonym for **long long**.|
 ||**wchar_t**, **__wchar_t**|A variable of type **wchar_t** designates a wide-character or multibyte character type. By default, **wchar_t** is a native type, but you can use [/Zc:wchar_t-](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) to make **wchar_t** a typedef for **unsigned short**. The **__wchar_t** type is a Microsoft-specific synonym for the native **wchar_t** type.<br /><br /> Use the L prefix before a character or string literal to designate the wide-character type.|
 |Floating point|**float**|Type **float** is the smallest floating point type.|
-||**double**|Type **double** is a floating point type that is larger than or equal to type **float**, but shorter than or equal to the size of type **long double**.<br /><br /> Microsoft specific: The representation of **long double** and **double** is identical. However, **long double** and **double** are separate types.|
+||**double**|Type **double** is a floating point type that is larger than or equal to type **float**, but shorter than or equal to the size of type **long double**.<br /><br /> Microsoft-specific: The representation of **long double** and **double** is identical. However, **long double** and **double** are separate types.|
 ||**long double**|Type **long double** is a floating point type that is larger than or equal to type **double**.|
 
 **Microsoft Specific**

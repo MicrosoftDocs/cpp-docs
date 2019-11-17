@@ -13,7 +13,7 @@ A "declaration" specifies the interpretation and attributes of a set of identifi
 *declaration*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub>**;**
 
-/\* *attribute-seq*<sub>opt</sub> is Microsoft specific */
+/\* *attribute-seq*<sub>opt</sub> is Microsoft-specific */
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
