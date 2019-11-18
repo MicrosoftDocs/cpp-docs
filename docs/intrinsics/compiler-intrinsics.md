@@ -26,6 +26,8 @@ The following sections list all intrinsics that are available on various archite
 
 - [ARM intrinsics](../intrinsics/arm-intrinsics.md)
 
+- [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md)
+
 - [x86 intrinsics list](../intrinsics/x86-intrinsics-list.md)
 
 - [x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)
