@@ -1,6 +1,6 @@
 ---
 title: "float_control pragma"
-ms.date: "08/29/2019"
+ms.date: "11/18/2019"
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
 helpviewer_keywords: ["float_control pragma", "pragmas, float_control"]
 ms.assetid: 4f4ba5cf-3707-413e-927d-5ecdbc0a9a43
@@ -18,9 +18,9 @@ Specifies floating-point behavior for a function.
 ## Options
 
 **precise** | **strict** | **except**, **on** | **off**, **push**\
-Specifies floating-point behavior, which can be **precise**, **strict**, or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). The setting can either be **on** or **off**.
+Specifies floating-point behavior, which can be **precise**, **strict**, or **except**. The setting can either be **on** or **off**. For information on how these settings differ from the similarly named compiler options, see the Remarks section.
 
-When **strict**, the settings for both **strict** and **except** are specified by the **on** or **off** setting. **except** can only be set to **on** when **precise** or **strict** is also set to **on**.
+When **strict**, the settings for both **strict** and **except** are specified by the **on** or **off** setting.
 
 If the optional **push** token is added, the current setting for **float_control** is pushed on to the internal compiler stack.
 
@@ -32,15 +32,25 @@ Removes the **float_control** setting from the top of the internal compiler stac
 
 ## Remarks
 
-For **float_control(strict, on)** to behave like the [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler option, you must also use the [fp_contract](../preprocessor/fp-contract.md) pragma to turn off contractions, and use the [fenv_access](../preprocessor/fenv-access.md) pragma to enable floating-point environment access. The **float_control** pragma doesn't affect these other properties.
+The **strict** option is effectively the same as the combination of **precise** and **except**. If you set **strict** on or off, it also sets **except** on or off. **except** can only be set to **on** when **precise** or **strict** is also set to **on**.
 
-You can't use **float_control** to turn **precise** off when **except** is on. Similarly, **precise** can't be turned off when [fenv_access](../preprocessor/fenv-access.md) is on. To go from strict model to a fast model by using the **float_control** pragma, use the following code:
+The **precise**, **strict**, and **except** options don't have exactly the same behavior as the [/fp](../build/reference/fp-specify-floating-point-behavior.md) compiler options of the same names. The **float_control** pragma only governs part of the floating-point behavior. It must be combined with [fp_contract](../preprocessor/fp-contract.md) and [fenv_access](../preprocessor/fenv-access.md) pragmas to recreate the `/fp` compiler options. The following table shows the equivalent pragma settings for each compiler option:
+
+| | float_control(precise) | float_control(except) | fenv_access | fp_contract |
+|-|-|-|-|-|
+|`/fp:fast`|off|off|off|on|
+|`/fp:precise`|on|off|off|on|
+|`/fp:strict`|on|on|on|off|
+
+For example, you must use several pragmas in combination to change from `/fp:fast` behavior to `/fp:precise` or `/fp:strict` and back again. To recreate [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md), you must set **float_control(precise, on)**, **fenv_access(on)**, **float_control(except, on)**, and **fp_contract(off)**.
+
+You can't use **float_control** to turn **precise** off when **except** is on. Similarly, **precise** can't be turned off when [fenv_access](../preprocessor/fenv-access.md) is on. That means, the order of some floating-point pragmas is significant. To go from a strict model to a fast model by using the **float_control** pragma, use the following code:
 
 ```cpp
 #pragma float_control(except, off)
 #pragma fenv_access(off)
-#pragma fp_contract(on)
 #pragma float_control(precise, off)
+#pragma fp_contract(on)
 ```
 
 To go from fast model to a strict model with the **float_control** pragma, use the following code:
@@ -48,17 +58,11 @@ To go from fast model to a strict model with the **float_control** pragma, use t
 ```cpp
 #pragma float_control(precise, on)
 #pragma fenv_access(on)
-#pragma fp_contract(off)
 #pragma float_control(except, on)
+#pragma fp_contract(off)
 ```
 
 If no options are specified, **float_control** has no effect.
-
-Other floating-point pragmas include:
-
-- [fenv_access](../preprocessor/fenv-access.md)
-
-- [fp_contract](../preprocessor/fp-contract.md)
 
 ## Example
 
@@ -104,4 +108,6 @@ Pass
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[fenv_access](../preprocessor/fenv-access.md)\
+[fp_contract](../preprocessor/fp-contract.md)
