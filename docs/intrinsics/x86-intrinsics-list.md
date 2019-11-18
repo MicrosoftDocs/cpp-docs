@@ -1261,6 +1261,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 
 ## See also
 
-[Compiler intrinsics](compiler-intrinsics.md)<br/>
-[ARM intrinsics](arm-intrinsics.md)<br/>
+[Compiler intrinsics](compiler-intrinsics.md)\
+[ARM intrinsics](arm-intrinsics.md)\
+[ARM64 intrinsics](arm64-intrinsics.md)\
 [x64 (amd64) intrinsics](x64-amd64-intrinsics-list.md)
