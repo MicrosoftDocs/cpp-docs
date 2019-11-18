@@ -15,7 +15,7 @@ The use of [_set_se_translator](../../c-runtime-library/reference/set-se-transla
 
 The following sample generates C4535.
 
-```
+```cpp
 // C4535.cpp
 // compile with: /W3 /EHsc /c
 // C4535 expected
