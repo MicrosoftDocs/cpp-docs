@@ -202,7 +202,7 @@ int f(int x) { return x; }
 int main()
 {
     auto x = f(0);
-    const auto & y = f(1);
+    const auto& y = f(1);
     int (*p)(int x);
     p = f;
     auto fp = p;
