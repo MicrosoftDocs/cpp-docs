@@ -1115,7 +1115,7 @@
                       href: build/reference/notification-hooks.md
                     - name: Failure hooks
                       href: build/reference/failure-hooks.md
-                    - name: Exceptions (C/C++)
+                    - name: DLL load exception codes (C/C++)
                       href: build/reference/exceptions-c-cpp.md
                 - name: Dumping delay-loaded imports
                   href: build/reference/dumping-delay-loaded-imports.md
@@ -3688,15 +3688,6 @@
                   href: cpp/algorithms-modern-cpp.md
                 - name: String and I/O formatting (Modern C++)
                   href: cpp/string-and-i-o-formatting-modern-cpp.md
-                - name: Errors and exception handling (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Errors and exception handling (Modern C++)
-                      href: cpp/errors-and-exception-handling-modern-cpp.md
-                    - name: "How to: Design for exception safety"
-                      href: cpp/how-to-design-for-exception-safety.md
-                    - name: "How to: Interface between exceptional and non-exceptional code"
-                      href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
                 - name: Portability at ABI boundaries (Modern C++)
                   href: cpp/portability-at-abi-boundaries-modern-cpp.md
             - name: Lexical conventions
@@ -4245,6 +4236,12 @@
               items: 
                 - name: Exception handling in C++
                   href: cpp/exception-handling-in-visual-cpp.md
+                - name: Modern C++ best practices
+                  href: cpp/errors-and-exception-handling-modern-cpp.md
+                - name: How to design for exception safety
+                  href: cpp/how-to-design-for-exception-safety.md
+                - name: How to interface between exceptional and non-exceptional code
+                  href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
                 - name: try, throw, and catch statements
                   href: cpp/try-throw-and-catch-statements-cpp.md
                 - name: How catch blocks are evaluated
