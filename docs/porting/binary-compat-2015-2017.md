@@ -1,5 +1,5 @@
 ---
-title: "C++ binary compatibility between Visual Studio 2015, 2017, and 2019"
+title: "C++ binary compatibility 2015-2019"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, and 2019. One Microsoft Visual C++ Redistributable package works for all three versions."
 ms.date: "11/18/2019"
 helpviewer_keywords: ["binary compatibility, Visual C++"]
