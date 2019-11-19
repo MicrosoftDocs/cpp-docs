@@ -3675,8 +3675,6 @@
                   href: cpp/containers-modern-cpp.md
                 - name: Algorithms (Modern C++)
                   href: cpp/algorithms-modern-cpp.md
-                - name: String and I/O formatting (Modern C++)
-                  href: cpp/string-and-i-o-formatting-modern-cpp.md
                 - name: Errors and exception handling (Modern C++)
                   expanded: false
                   items: 
@@ -9812,6 +9810,8 @@
               items: 
                 - name: iostream programming
                   href: standard-library/iostream-programming.md
+                - name: String and I/O formatting
+                  href: text/string-and-i-o-formatting-modern-cpp.md
                 - name: What a stream is
                   expanded: false
                   items: 

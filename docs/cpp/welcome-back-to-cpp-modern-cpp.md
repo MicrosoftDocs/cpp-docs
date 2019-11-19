@@ -202,15 +202,58 @@ The lambda expression `[=](int i) { return i > x && i < y; }` can be read as "fu
 
 ## Exceptions
 
-As a general rule, modern C++ emphasizes exceptions rather than error codes as the best way to report and handle error conditions. However, exceptions are not appropriate for all kinds of development projects. 
+As a general rule, modern C++ emphasizes exceptions rather than error codes as the best way to report and handle error conditions. However, exceptions may not be appropriate for all kinds of projects. [TBD]
 
 ## Lock-free inter-thread communication
 
  using C++ Standard Library `std::atomic<>` (see [\<atomic>](../standard-library/atomic.md)) instead of other inter-thread communication mechanisms.
 
-## - [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
+## Pimpl idiom for compile-time encapsulation
 
-## [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)- 
+The *pimpl idiom* is a modern C++ technique to hide implementation, minimize dependencies, separate interfaces, and make a program more portable. Pimpl is short for "pointer to implementation." You may already be familiar with the concept but know it by other names like Cheshire Cat or Compiler Firewall idiom. The following example shows a simple header for a class that uses the pimpl idiom:
+
+```cpp
+// my_class.h
+class my_class {
+   //  ... all public and protected stuff goes here ...
+private:
+   class impl; unique_ptr<impl> pimpl; // opaque type here
+};
+```
+
+Define the `impl` class in the .cpp file.
+
+```cpp
+// my_class.cpp
+class my_class::impl {  // defined privately here
+  // ... all private data and functions: all of these
+  //     can now change without recompiling callers ...
+};
+my_class::my_class(): pimpl( new impl )
+{
+  // ... set impl values ...
+}
+```
+
+## Portability At ABI Boundaries
+
+Use sufficiently portable types and conventions at binary interface boundaries. A “portable type” is a C built-in type or a struct that contains only C built-in types. Class types can only be used when caller and callee agree on layout, calling convention, etc. This is only possible when both are compiled with the same compiler and compiler settings.
+
+When callers may be compiled with another compiler/language, then “flatten” to an **extern "C"** API with a specific calling convention:
+
+```cpp
+// class widget {
+//   widget();
+//   ~widget();
+//   double method( int, gadget& );
+// };
+extern "C" {        // functions using explicit "this"
+   struct widget;   // opaque type (forward declaration only)
+   widget* STDCALL widget_create();      // constructor creates new "this"
+   void STDCALL widget_destroy(widget*); // destructor consumes "this"
+   double STDCALL widget_method(widget*, int, gadget*); // method uses "this"
+}
+```
 
 ## std::variant instead of unions
 
@@ -220,13 +263,15 @@ As a general rule, modern C++ emphasizes exceptions rather than error codes as t
 
 ## standard attributes
 
+## Modules
 
- - Modules
+## Package managers
 
- - Package managers 
+DELETE after getting anything worth keeping:
+
 - [C++ Type System](../cpp/cpp-type-system-modern-cpp.md)
 
-- [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
+- [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md) 
 
 - [Containers](../cpp/containers-modern-cpp.md)
 
@@ -234,9 +279,9 @@ As a general rule, modern C++ emphasizes exceptions rather than error codes as t
 
 - [String and I/O Formatting (Modern C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)
 
+MOVE to Exceptions node:
 - [Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)
 
-- [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)
 
 ## See also
 
