@@ -1,10 +1,10 @@
 ---
-title: "Hardware Exceptions"
+title: "Hardware exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exceptions [C++], hardware", "errors [C++], low-level", "errors [C++], hardware", "hardware exceptions [C++]", "low level errors"]
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
 ---
-# Hardware Exceptions
+# Hardware exceptions
 
 Most of the standard exceptions recognized by the operating system are hardware-defined exceptions. Windows recognizes a few low-level software exceptions, but these are usually best handled by the operating system.
 
@@ -31,5 +31,5 @@ Many of the exceptions listed in the previous table are intended to be handled b
 
 ## See also
 
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
 [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

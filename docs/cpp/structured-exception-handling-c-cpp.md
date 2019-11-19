@@ -46,9 +46,9 @@ As it unwinds the stack, the operating system calls any termination handlers tha
 
 ## Next steps
 
-- [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)
+- [Writing an exception handler](../cpp/writing-an-exception-handler.md)
 
-- [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)
+- [Writing a termination handler](../cpp/writing-a-termination-handler.md)
 
 - [Handle structured exceptions in C++](../cpp/exception-handling-differences.md)
 

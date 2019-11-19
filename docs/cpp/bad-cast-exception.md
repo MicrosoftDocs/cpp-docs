@@ -1,11 +1,11 @@
 ---
-title: "bad_cast Exception"
+title: "bad_cast exception"
 ms.date: "10/04/2019"
 f1_keywords: ["bad_cast", "bad_cast_cpp"]
 helpviewer_keywords: ["exceptions [C++], bad_cast", "bad_cast keyword [C++]"]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
 ---
-# bad_cast Exception
+# bad_cast exception
 
 The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.
 

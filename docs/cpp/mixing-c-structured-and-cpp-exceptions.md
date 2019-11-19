@@ -1,10 +1,10 @@
 ---
-title: "Mixing C (Structured) and C++ exceptions"
+title: "Mixing C (structured) and C++ exceptions"
 ms.date: "08/14/2018"
 helpviewer_keywords: ["exceptions [C++], mixed C and C++", "C++ exception handling, mixed-language", "structured exception handling [C++], mixed C and C++", "catch keyword [C++], mixed", "try-catch keyword [C++], mixed-language"]
 ms.assetid: a149154e-36dd-4d1a-980b-efde2a563a56
 ---
-# Mixing C (Structured) and C++ exceptions
+# Mixing C (structured) and C++ exceptions
 
 If you want to write portable code, the use of structured exception handling (SEH) in a C++ program isn't recommended. However, you may sometimes want to compile using [/EHa](../build/reference/eh-exception-handling-model.md) and mix structured exceptions and C++ source code, and need some facility for handling both kinds of exceptions. Because a structured exception handler has no concept of objects or typed exceptions, it can't handle exceptions thrown by C++ code. However, C++ **catch** handlers can handle structured exceptions. C++ exception handling syntax (**try**, **throw**, **catch**) isn't accepted by the C compiler, but structured exception handling syntax (**__try**, **__except**, **__finally**) is supported by the C++ compiler.
 

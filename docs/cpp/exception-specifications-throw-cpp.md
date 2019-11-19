@@ -1,10 +1,10 @@
 ---
-title: "Exception Specifications (throw, noexcept) (C++)"
+title: "Exception specifications (throw, noexcept) (C++)"
 ms.date: "01/18/2018"
 helpviewer_keywords: ["exceptions [C++], exception specifications", "throwing exceptions [C++], throw keyword", "C++ exception handling [C++], throwing exceptions", "throw keyword [C++]", "noexcept keyword [C++]"]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
 ---
-# Exception Specifications (throw, noexcept) (C++)
+# Exception specifications (throw, noexcept) (C++)
 
 Exception specifications are a C++ language feature that indicate the programmer's intent about the exception types that can be propagated by a function. You can specify that a function may or may not exit by an exception by using an *exception specification*. The compiler can use this information to optimize calls to the function, and to terminate the program if an unexpected exception escapes the function.
 

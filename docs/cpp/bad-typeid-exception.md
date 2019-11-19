@@ -1,11 +1,11 @@
 ---
-title: "bad_typeid Exception"
+title: "bad_typeid exception"
 ms.date: "10/04/2019"
 f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
 helpviewer_keywords: ["bad_typeid exception", "exceptions [C++], bad_typeid"]
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
 ---
-# bad_typeid Exception
+# bad_typeid exception
 
 The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for **typeid** is a NULL pointer.
 
