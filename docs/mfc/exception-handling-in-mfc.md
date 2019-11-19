@@ -1,6 +1,6 @@
 ---
 title: "Exception Handling in MFC"
-ms.date: "11/04/2016"
+ms.date: "11/19/2019"
 helpviewer_keywords: ["DAO [MFC], exceptions", "assertions [MFC], When to use exceptions", "exception handling [MFC], MFC", "resource allocation exception", "resources [MFC], allocating", "keywords [MFC], exception handling", "errors [MFC], detected by assertions", "ODBC exceptions [MFC]", "serialization [MFC], exceptions", "Automation [MFC], exceptions", "exception macros [MFC]", "predefined exceptions [MFC]", "C++ exception handling [MFC], enabling", "C++ exception handling [MFC], MFC applications", "requests for unsupported services [MFC]", "database exceptions [MFC]", "archive exceptions [MFC]", "MFC, exceptions", "C++ exception handling [MFC], types of", "macros [MFC], exception handling", "abnormal program execution [MFC]", "OLE exceptions [MFC], MFC exception handling", "error handling [MFC], exceptions and", "class libraries [MFC], exception support", "exceptions [MFC], MFC macros vs. C++ keywords", "memory [MFC], out-of-memory exceptions", "Windows [MFC], resource allocation exceptions", "macros [MFC], MFC exception macros", "function calls [MFC], results", "out-of-memory exceptions [MFC]"]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
 ---
@@ -66,8 +66,7 @@ The following table shows the predefined exceptions provided by MFC.
 |[COleDispatchException Class](../mfc/reference/coledispatchexception-class.md)|Dispatch (automation) exceptions|
 |[CUserException Class](../mfc/reference/cuserexception-class.md)|Exception that alerts the user with a message box, then throws a generic [CException Class](../mfc/reference/cexception-class.md)|
 
-> [!NOTE]
->  MFC supports both C++ exceptions and the MFC exception macros. MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/win32/debug/structured-exception-handling).
+Since version 3.0, MFC has used C++ exceptions but still supports its older exception handling macros, which are similar to C++ exceptions in form. Although these macros are not recommended for new programming, they are still supported for backward compatibility. In programs that already use the macros, you can freely use C++ exceptions as well. During preprocessing, the macros evaluate to the exception handling keywords defined in the MSVC implementation of the C++ language as of Visual C++ version 2.0. You can leave existing exception macros in place while you begin to use C++ exceptions. For information on mixing macros and C++ exception handling and on converting old code to use the new mechanism, see the articles [Exceptions: Using MFC Macros and C++ Exceptions](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) and [Exceptions: Converting from MFC Exception Macros](../mfc/exceptions-converting-from-mfc-exception-macros.md). The older MFC exception macros, if you still use them, evaluate to C++ exception keywords. See [Exceptions: Changes to Exception Macros in Version 3.0](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md). MFC does not directly support Windows NT structured exception handlers (SEH), as discussed in [Structured Exception Handling](/windows/win32/debug/structured-exception-handling).
 
 ##  <a name="_core_further_reading_about_exceptions"></a> Further Reading About Exceptions
 
