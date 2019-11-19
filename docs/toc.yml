@@ -4236,6 +4236,8 @@
               items: 
                 - name: Pointers
                   href: cpp/pointers-cpp.md
+                - name: Raw pointers
+                  href: cpp/raw-pointers.md
                 - name: const and volatile pointers
                   href: cpp/const-and-volatile-pointers.md
                 - name: new and delete operators
