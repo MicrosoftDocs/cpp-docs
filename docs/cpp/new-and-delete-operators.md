@@ -21,7 +21,7 @@ When a statement such as the following is encountered in a program, it translate
 char *pch = new char[BUFFER_SIZE];
 ```
 
-If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a std::bad_alloc exception, or returns **nullptr** if you have linked in non-throwing **operator new** support.
+If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a `std::bad_alloc` exception, or returns **nullptr** if you have linked in non-throwing **operator new** support.
 
 You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.
 
@@ -97,7 +97,7 @@ int main()
 
 ### Handling insufficient memory
 
-Testing for failed memory allocation can be done with code such as the following:
+Testing for failed memory allocation can be done as shown here:
 
 ```cpp
 #include <iostream>
@@ -112,7 +112,7 @@ int main() {
 }
 ```
 
-There is another ways to handle failed memory allocation requests: write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.
+There is another way to handle failed memory allocation requests. Write a custom recovery routine to handle such a failure, then register your function by calling the [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) run-time function.
 
 ##  <a id="delete_operator"> </a> The delete operator
 
@@ -129,7 +129,7 @@ void operator delete( void *, size_t );
 
 Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type `void *`, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).
 
-The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached; the second form is particularly useful when an **operator delete** function from a base class is used to delete an object of a derived class.
+The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached. The second form is useful when an **operator delete** function from a base class is used to delete an object of a derived class.
 
 The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](member-access-control-cpp.md).
 

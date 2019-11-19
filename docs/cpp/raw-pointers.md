@@ -1,5 +1,6 @@
 ---
 title: "Raw pointers (C++)"
+description: "How to use raw pointers in C++"
 ms.date: "11/19/2019"
 helpviewer_keywords: ["pointers [C++]"]
 ---
