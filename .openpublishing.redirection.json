@@ -691,6 +691,31 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/using-arrays-cpp.md",
+         "redirect_url": "/cpp/cpp/arrays-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/initializing-arrays.md",
+         "redirect_url": "/cpp/cpp/arrays-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/interpretation-of-subscript-operator.md",
+         "redirect_url": "/cpp/cpp/arrays-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/indirection-on-array-types.md",
+         "redirect_url": "/cpp/cpp/arrays-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/ordering-of-cpp-arrays.md",
+         "redirect_url": "/cpp/cpp/arrays-cpp",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/attributes2.md",
          "redirect_url": "/cpp/cpp/attributes",
          "redirect_document_id": false
