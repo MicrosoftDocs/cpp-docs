@@ -1,6 +1,6 @@
 ---
 title: "Raw pointers (C++)"
-ms.date: "11/12/2019"
+ms.date: "11/19/2019"
 helpviewer_keywords: ["pointers [C++]"]
 ---
 
@@ -337,6 +337,7 @@ int main()
 
 ## See also
 
-[Indirection Operator: *](../cpp/indirection-operator-star.md)<br/>
-[Address-of Operator: &](../cpp/address-of-operator-amp.md)</br>
+[Smart pointers](smart-pointers-modern-cpp.md)
+[Indirection Operator: *](indirection-operator-star.md)<br/>
+[Address-of Operator: &](address-of-operator-amp.md)</br>
 [Welcome back to C++](welcome-back-to-cpp-modern-cpp.md)

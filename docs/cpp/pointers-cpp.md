@@ -1,6 +1,6 @@
 ---
 title: "Pointers (C++)"
-ms.date: "11/13/2019"
+ms.date: "11/19/2019"
 description: "About raw pointers and smart pointers in Microsoft C++."
 helpviewer_keywords: ["pointers (C++)"]
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
@@ -21,7 +21,7 @@ In C-style programming, *raw pointers* are used for all these scenarios. However
 - [Raw pointers](raw-pointers.md)
 - [Const and volatile pointers](const-and-volatile-pointers.md)
 - [new and delete operators](new-and-delete-operators.md)
-- [Smart Pointers](smart-pointers-modern-cpp.md)
+- [Smart pointers](smart-pointers-modern-cpp.md)
 - [How to: Create and use unique_ptr instances](how-to-create-and-use-unique-ptr-instances.md)
 - [How to: Create and use shared_ptr instances](how-to-create-and-use-shared-ptr-instances.md)
 - [How to: Create and use weak_ptr instances](how-to-create-and-use-weak-ptr-instances.md)

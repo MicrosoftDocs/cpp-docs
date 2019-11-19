@@ -1,13 +1,13 @@
 ---
 title: "new and delete Operators"
-ms.date: "05/07/2019"
+ms.date: "11/19/2019"
 f1_keywords: ["delete_cpp", "new"]
 helpviewer_keywords: ["new keyword [C++]", "delete keyword [C++]"]
 ms.assetid: fa721b9e-0374-4f04-bb87-032ea775bcc8
 ---
-# new and delete Operators
+# new and delete operators
 
-C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The **new** operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the **delete** operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).
+C++ supports dynamic allocation and deallocation of objects using the [new](new-operator-cpp.md) and [delete](delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The **new** operator calls the special function [operator new](new-operator-cpp.md), and the **delete** operator calls the special function [operator delete](delete-operator-cpp.md).
 
 The **new** function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of **new**, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default **operator new** in the C++ Standard Library no longer functions.
 
@@ -27,7 +27,7 @@ You can write a routine that attempts to free memory and retry the allocation; s
 
 The two scopes for **operator new** functions are described in the following table.
 
-### Scope for operator new Functions
+### Scope for operator new functions
 
 |Operator|Scope|
 |--------------|-----------|
@@ -41,7 +41,6 @@ The global **operator new** function is called when the **new** operator is used
 An **operator new** function defined for a class is a static member function (which cannot, therefore, be virtual) that hides the global **operator new** function for objects of that class type. Consider the case where **new** is used to allocate and set memory to a given value:
 
 ```cpp
-// spec1_the_operator_new_function1.cpp
 #include <malloc.h>
 #include <memory.h>
 
@@ -77,7 +76,6 @@ Blanks *SomeBlanks = new Blanks;
 The compiler supports member array **new** and **delete** operators in a class declaration. For example:
 
 ```cpp
-// spec1_the_operator_new_function2.cpp
 class MyClass
 {
 public:
@@ -102,8 +100,6 @@ int main()
 Testing for failed memory allocation can be done with code such as the following:
 
 ```cpp
-// insufficient_memory_conditions.cpp
-// compile with: /EHsc
 #include <iostream>
 using namespace std;
 #define BIG_NUMBER 100000000
@@ -135,14 +131,11 @@ Only one of the preceding two forms can be present for a given class. The first 
 
 The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached; the second form is particularly useful when an **operator delete** function from a base class is used to delete an object of a derived class.
 
-The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).
+The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](member-access-control-cpp.md).
 
 The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:
 
 ```cpp
-// spec1_the_operator_delete_function1.cpp
-// compile with: /EHsc
-// arguments: 3
 #include <iostream>
 using namespace std;
 

@@ -1,12 +1,12 @@
 ---
-title: "const and volatile Pointers"
-ms.date: "11/04/2016"
+title: "const and volatile pointers"
+ms.date: "11/19/2019"
 helpviewer_keywords: ["volatile keyword [C++], and pointers", "pointers, and const", "pointers, and volatile", "const keyword [C++], volatile pointers"]
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
 ---
-# const and volatile Pointers
+# const and volatile pointers
 
-The [const](../cpp/const-cpp.md) and [volatile](../cpp/volatile-cpp.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.
+The [const](const-cpp.md) and [volatile](volatile-cpp.md) keywords change how pointers are treated. The **const** keyword specifies that the pointer cannot be modified after initialization; the pointer is protected from modification thereafter.
 
 The **volatile** keyword specifies that the value associated with the name that follows can be modified by actions other than those in the user application. Therefore, the **volatile** keyword is useful for declaring objects in shared memory that can be accessed by multiple processes or global data areas used for communication with interrupt service routines.
 
@@ -116,4 +116,5 @@ int main() {
 
 ## See also
 
-[Pointers](../cpp/pointers-cpp.md)
+[Pointers](pointers-cpp.md)
+[Raw pointers](raw-pointers.md)
