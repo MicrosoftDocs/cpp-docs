@@ -1,10 +1,10 @@
 ---
-title: "Errors and Exception Handling (Modern C++)"
-ms.date: "05/07/2019"
+title: "Modern C++ best practices for exceptions and error handling"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
 ---
-# Errors and Exception Handling (Modern C++)
+# Modern C++ best practices for exceptions and error handling
 
 In modern C++, in most scenarios, the preferred way to report and handle both logic errors and runtime errors is to use exceptions. This is especially true when the stack might contain several function calls between the function that detects the error and the function that has the context to know how to handle it. Exceptions provide a formal, well-defined way for code that detects errors to pass the information up the call stack.
 
@@ -54,7 +54,7 @@ int main()
 }
 ```
 
-Exceptions in C++ resemble those in languages such as C# and Java. In the **try** block, if an exception is *thrown* it will be *caught* by the first associated **catch** block whose type matches that of the exception. In other words, execution jumps from the **throw** statement to the **catch** statement. If no usable catch block is found, `std::terminate` is invoked and the program exits. In C++, any type may be thrown; however, we recommend that you throw a type that derives directly or indirectly from `std::exception`. In the previous example, the exception type, [invalid_argument](../standard-library/invalid-argument-class.md), is defined in the standard library in the [\<stdexcept>](../standard-library/stdexcept.md) header file. C++ does not provide, and does not require, a **finally** block to make sure that all resources are released if an exception is thrown. The resource acquisition is initialization (RAII) idiom, which uses smart pointers, provides the required functionality for resource cleanup. For more information, see [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md). For information about the C++ stack-unwinding mechanism, see [Exceptions and Stack Unwinding](../cpp/exceptions-and-stack-unwinding-in-cpp.md).
+Exceptions in C++ resemble those in languages such as C# and Java. In the **try** block, if an exception is *thrown* it will be *caught* by the first associated **catch** block whose type matches that of the exception. In other words, execution jumps from the **throw** statement to the **catch** statement. If no usable catch block is found, `std::terminate` is invoked and the program exits. In C++, any type may be thrown; however, we recommend that you throw a type that derives directly or indirectly from `std::exception`. In the previous example, the exception type, [invalid_argument](../standard-library/invalid-argument-class.md), is defined in the standard library in the [\<stdexcept>](../standard-library/stdexcept.md) header file. C++ does not provide, and does not require, a **finally** block to make sure that all resources are released if an exception is thrown. The resource acquisition is initialization (RAII) idiom, which uses smart pointers, provides the required functionality for resource cleanup. For more information, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md). For information about the C++ stack-unwinding mechanism, see [Exceptions and Stack Unwinding](exceptions-and-stack-unwinding-in-cpp.md).
 
 ## Basic guidelines
 
@@ -64,7 +64,7 @@ Robust error handling is challenging in any programming language. Although excep
 
 - Use exceptions when the code that handles the error might be separated from the code that detects the error by one or more intervening function calls. Consider whether to use error codes instead in performance-critical loops when code that handles the error is tightly-coupled to the code that detects it.
 
-- For every function that might throw or propagate an exception, provide one of the three exception guarantees: the strong guarantee, the basic guarantee, or the nothrow (noexcept) guarantee. For more information, see [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md).
+- For every function that might throw or propagate an exception, provide one of the three exception guarantees: the strong guarantee, the basic guarantee, or the nothrow (noexcept) guarantee. For more information, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md).
 
 - Throw exceptions by value, catch them by reference. Don’t catch what you can't handle.
 
@@ -86,15 +86,15 @@ Exceptions and asserts are two distinct mechanisms for detecting run-time errors
 
 Both C and C++ programs can use the structured exception handling (SEH) mechanism in the Windows operating system. The concepts in SEH resemble those in C++ exceptions, except that SEH uses the **__try**, **__except**, and **__finally** constructs instead of **try** and **catch**. In the Microsoft C++ compiler (MSVC), C++ exceptions are implemented for SEH. However, when you write C++ code, use the C++ exception syntax.
 
-For more information about SEH, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md).
+For more information about SEH, see [Structured Exception Handling (C/C++)](structured-exception-handling-c-cpp.md).
 
 ## Exception specifications and noexcept
 
-Exception specifications were introduced in C++ as a way to specify the exceptions that a function might throw. However, exception specifications proved problematic in practice, and are deprecated in the C++11 draft standard. We recommend that you do not use exception specifications except for `throw()`, which indicates that the function allows no exceptions to escape. If you must use exception specifications of the type `throw(`*type*`)`, be aware that MSVC departs from the standard in certain ways. For more information, see [Exception Specifications (throw)](../cpp/exception-specifications-throw-cpp.md). The `noexcept` specifier is introduced in C++11 as the preferred alternative to `throw()`.
+Exception specifications were introduced in C++ as a way to specify the exceptions that a function might throw. However, exception specifications proved problematic in practice, and are deprecated in the C++11 draft standard. We recommend that you do not use exception specifications except for `throw()`, which indicates that the function allows no exceptions to escape. If you must use exception specifications of the type `throw(`*type*`)`, be aware that MSVC departs from the standard in certain ways. For more information, see [Exception Specifications (throw)](exception-specifications-throw-cpp.md). The `noexcept` specifier is introduced in C++11 as the preferred alternative to `throw()`.
 
 ## See also
 
-[How to: Interface Between Exceptional and Non-Exceptional Code](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
+[How to: Interface Between Exceptional and Non-Exceptional Code](how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
+[Welcome Back to C++ (Modern C++)](welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ Language Reference](cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

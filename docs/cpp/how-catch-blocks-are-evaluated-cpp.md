@@ -55,4 +55,4 @@ In this example, the ellipsis **catch** handler is the only handler that is exam
 
 ## See also
 
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)
