@@ -4110,7 +4110,7 @@
                       href: cpp/protected-cpp.md
                     - name: public
                       href: cpp/public-cpp.md
-                - name: Initializing classes and structs without constructors
+                - name: Brace initialization
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
                 - name: Constructors
                   expanded: false
@@ -4121,6 +4121,8 @@
                       href: cpp/copy-constructors-and-copy-assignment-operators-cpp.md
                     - name: Move constructors and move assignment operators
                       href: cpp/move-constructors-and-move-assignment-operators-cpp.md
+                    - name: Delegating constructors
+                      href: cpp/delegating-constructors.md
                 - name: Destructors
                   href: cpp/destructors-cpp.md
                 - name: Overview of member functions
