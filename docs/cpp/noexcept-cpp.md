@@ -1,6 +1,6 @@
 ---
 title: "noexcept (C++)"
-ms.date: "01/12/2018"
+ms.date: "11/19/2019"
 f1_keywords: ["noexcept_cpp"]
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
 ---
@@ -41,5 +41,5 @@ T copy_object(const T& obj) noexcept(std::is_pod<T>)
 
 ## See also
 
-[C++ Exception Handling](cpp-exception-handling.md)<br/>
+[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)<br/>
 [Exception Specifications (throw, noexcept)](exception-specifications-throw-cpp.md)

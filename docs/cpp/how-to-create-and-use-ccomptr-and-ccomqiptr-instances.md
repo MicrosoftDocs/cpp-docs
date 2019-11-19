@@ -1,11 +1,11 @@
 ---
-title: "How to: Create and Use CComPtr and CComQIPtr Instances"
+title: "How to: Create and use CComPtr and CComQIPtr instances"
 ms.custom: "how-to"
-ms.date: "11/04/2016"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
 ---
-# How to: Create and Use CComPtr and CComQIPtr Instances
+# How to: Create and use CComPtr and CComQIPtr instances
 
 In classic Windows programming, libraries are often implemented as COM objects (or more precisely, as COM servers). Many Windows operating system components are implemented as COM servers, and many contributors provide libraries in this form. For information about the basics of COM, see [Component Object Model (COM)](/windows/win32/com/component-object-model--com--portal).
 
