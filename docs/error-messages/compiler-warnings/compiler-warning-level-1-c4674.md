@@ -15,7 +15,7 @@ The signature of a conversion operator was not correct. The method is not consid
 
 The following sample generates C4674.
 
-```
+```cpp
 // C4674.cpp
 // compile with: /clr /WX /W1 /LD
 ref class G {

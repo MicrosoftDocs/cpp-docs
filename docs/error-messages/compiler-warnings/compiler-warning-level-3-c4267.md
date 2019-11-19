@@ -17,7 +17,7 @@ To fix this warning, use `size_t` instead of `type`. Alternatively, use an integ
 
 The following example generates C4267.
 
-```
+```cpp
 // C4267.cpp
 // compile by using: cl /W4 C4267.cpp
 void Func1(short) {}

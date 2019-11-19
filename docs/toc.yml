@@ -2848,11 +2848,13 @@
           href: porting/porting-third-party-libraries.md
         - name: Port data applications
           href: data/data-access-programming-mfc-atl.md
+    - name: IDE tools for upgrading C++ code
+      href: porting/ide-tools-for-upgrading-code.md
     - name: Visual C++ change history 2003 - 2015
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ What's New 2003 through 2015
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
-    - name: C++ Binary Compatibility between 2015 and 2019
+    - name: C++ binary compatibility 2015-2019
       href: porting/binary-compat-2015-2017.md
     - name: "Port and upgrade: examples and case studies"
       items: 
@@ -4926,6 +4928,8 @@
               href: intrinsics/compiler-intrinsics.md
             - name: ARM intrinsics
               href: intrinsics/arm-intrinsics.md
+            - name: ARM64 intrinsics
+              href: intrinsics/arm64-intrinsics.md
             - name: x86 intrinsics list
               href: intrinsics/x86-intrinsics-list.md
             - name: x64 (amd64) intrinsics list

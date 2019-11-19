@@ -15,7 +15,7 @@ A type that contains [abstract](../../extensions/abstract-cpp-component-extensio
 
 The following sample generates C4570.
 
-```
+```cpp
 // C4570.cpp
 // compile with: /clr /W3 /c
 ref struct X {   // C4570

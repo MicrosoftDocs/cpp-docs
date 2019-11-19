@@ -25,7 +25,7 @@ If you must jump out of a **__finally** block, check for abnormal termination fi
 
 The following sample generates C4532; simply comment out the jump statements to resolve the warnings.
 
-```
+```cpp
 // C4532.cpp
 // compile with: /W1
 // C4532 expected

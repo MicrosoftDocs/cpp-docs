@@ -15,7 +15,7 @@ DefaultCharSetAttribute is ignored
 
 The following sample generates C4397.
 
-```
+```cpp
 // C4397.cpp
 // compile with: /W1 /c /clr
 using namespace System;

@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4302:
 
-```
+```cpp
 // C4302.cpp
 // compile with: /W2
 #pragma warning(default : 4302)

@@ -13,7 +13,7 @@ A [return](../../cpp/return-statement-in-program-termination-cpp.md) statement w
 
 The following sample generates C4645:
 
-```
+```cpp
 // C4645.cpp
 // compile with:  /W3
 void __declspec(noreturn) func() {

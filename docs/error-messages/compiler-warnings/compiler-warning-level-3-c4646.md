@@ -13,7 +13,7 @@ A function marked with the [noreturn](../../cpp/noreturn.md) `__declspec` modifi
 
 The following sample generates C4646:
 
-```
+```cpp
 // C4646.cpp
 // compile with: /W3 /WX
 int __declspec(noreturn) TestFunction()

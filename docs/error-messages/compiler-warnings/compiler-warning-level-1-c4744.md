@@ -20,7 +20,7 @@ C4744 is emitted only when files are compiled with /GL.  For more information, s
 
 This sample contains the first definition.
 
-```
+```c
 // C4744.c
 // compile with: /c /GL
 int global;
@@ -30,7 +30,7 @@ int global;
 
 The following sample generates C4744.
 
-```
+```c
 // C4744b.c
 // compile with: C4744.c /GL /W1
 // C4744 expected

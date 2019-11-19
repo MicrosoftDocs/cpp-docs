@@ -13,7 +13,7 @@ A forward declaration was found but an attributed construct with the same name a
 
 The following sample generates C4926:
 
-```
+```cpp
 // C4926.cpp
 // compile with: /W1
 [module(name="MyLib")];

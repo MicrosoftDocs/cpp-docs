@@ -155,6 +155,7 @@ The following UCRT functions have intrinsic forms on all architectures:
 
 ## See also
 
-[ARM Intrinsics](../intrinsics/arm-intrinsics.md)<br/>
-[x86 Intrinsics List](../intrinsics/x86-intrinsics-list.md)<br/>
-[x64 (amd64) Intrinsics List](../intrinsics/x64-amd64-intrinsics-list.md)<br/>
+[ARM intrinsics](../intrinsics/arm-intrinsics.md)\
+[ARM64 intrinsics](../intrinsics/arm64-intrinsics.md)\
+[x86 intrinsics list](../intrinsics/x86-intrinsics-list.md)\
+[x64 (amd64) intrinsics list](../intrinsics/x64-amd64-intrinsics-list.md)

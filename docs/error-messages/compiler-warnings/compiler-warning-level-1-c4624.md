@@ -13,7 +13,7 @@ A destructor was not accessible or deleted in a base class and was therefore not
 
 The following sample generates C4624 and shows how to fix it:
 
-```
+```cpp
 // C4624.cpp
 // compile with: /W1 /c
 class B {

@@ -13,7 +13,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) data member wa
 
 The following sample generates C4393:
 
-```
+```cpp
 // C4393.cpp
 // compile with: /clr /W1 /c
 ref struct Y1 {

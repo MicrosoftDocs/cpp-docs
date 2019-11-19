@@ -13,7 +13,7 @@ You cannot instantiate a function template that has not been declared.
 
 The following sample will cause C4667:
 
-```
+```cpp
 // C4667a.cpp
 // compile with: /LD /W1
 template
@@ -22,7 +22,7 @@ void max(const int &, const int &); // C4667 expected
 
 To avoid this warning, first declare the function template:
 
-```
+```cpp
 // C4667b.cpp
 // compile with: /LD
 // Declare the function template

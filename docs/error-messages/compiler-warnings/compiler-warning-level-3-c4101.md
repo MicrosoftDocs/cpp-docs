@@ -11,7 +11,7 @@ ms.assetid: d98563cd-9dce-4aae-8f12-bd552a4ea677
 
 The local variable is never used. This warning will occur in the obvious situation:
 
-```
+```cpp
 // C4101a.cpp
 // compile with: /W3
 int main() {
@@ -21,7 +21,7 @@ int i;   // C4101
 
 However, this warning will also occur when calling a **static** member function through an instance of the class:
 
-```
+```cpp
 // C4101b.cpp
 // compile with:  /W3
 struct S {

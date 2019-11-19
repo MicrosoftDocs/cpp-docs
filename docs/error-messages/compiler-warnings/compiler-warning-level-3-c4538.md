@@ -13,7 +13,7 @@ A qualifier keyword was applied to an array incorrectly. For more information, s
 
 The following sample generates C4538:
 
-```
+```cpp
 // C4538.cpp
 // compile with: /clr /W3 /LD
 const array<int> ^f1();   // C4538

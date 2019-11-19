@@ -13,7 +13,7 @@ The operator is used in an expression that results in an integer constant overfl
 
 The following sample generates C4307:
 
-```
+```cpp
 // C4307.cpp
 // compile with: /W2
 int i = 2000000000 + 2000000000;   // C4307

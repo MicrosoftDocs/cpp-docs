@@ -13,7 +13,7 @@ A template parameter was redefined.
 
 The following sample generates C4348:
 
-```
+```cpp
 // C4348.cpp
 // compile with: /LD /W1
 template <class T=int> struct A;   // forward declaration

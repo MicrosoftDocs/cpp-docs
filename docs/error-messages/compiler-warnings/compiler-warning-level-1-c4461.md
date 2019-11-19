@@ -19,7 +19,7 @@ For more information, see [Destructors and finalizers](../../dotnet/how-to-defin
 
 The following sample generates C4461.
 
-```
+```cpp
 // C4461.cpp
 // compile with: /W1 /clr /c
 ref class A {

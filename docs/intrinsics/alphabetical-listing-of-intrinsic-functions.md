@@ -6,7 +6,7 @@ ms.assetid: 178f88a2-7e8e-43ac-b55e-ef3298bef895
 ---
 # Alphabetical listing of intrinsic functions
 
-The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Other supported intrinsics are documented by processor manufacturers, either in the header files or on their websites. See the [ARM intrinsics](../intrinsics/arm-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md) sections for links to manufacturer documentation. C Run-time Library (CRT) functions that have intrinsics implemented for them are not documented here; these functions are documented in the [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md).
+The following sections describe the Microsoft-specific intrinsic functions available on some or all architectures. Other supported intrinsics are documented by processor manufacturers, either in the header files or on their websites. See the [ARM intrinsics](../intrinsics/arm-intrinsics.md), [ARM64 intrinsics](../intrinsics/arm64-intrinsics.md), [x86 intrinsics](../intrinsics/x86-intrinsics-list.md), and [x64 intrinsics](../intrinsics/x64-amd64-intrinsics-list.md) sections for links to manufacturer documentation. C Run-time Library (CRT) functions that have intrinsics implemented for them are not documented here; these functions are documented in the [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md).
 
 [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)
 
