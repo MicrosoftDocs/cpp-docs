@@ -4215,22 +4215,7 @@
                 - name: constexpr lambda expressions
                   href: cpp/lambda-expressions-constexpr.md
             - name: Arrays
-              expanded: false
-              items: 
-                - name: Arrays
-                  href: cpp/arrays-cpp.md
-                - name: Using arrays
-                  href: cpp/using-arrays-cpp.md
-                - name: Initializing arrays
-                  href: cpp/initializing-arrays.md
-                - name: Arrays in expressions
-                  href: cpp/arrays-in-expressions.md
-                - name: Interpretation of subscript operator
-                  href: cpp/interpretation-of-subscript-operator.md
-                - name: Indirection on array types
-                  href: cpp/indirection-on-array-types.md
-                - name: Ordering of C++ arrays
-                  href: cpp/ordering-of-cpp-arrays.md
+              href: cpp/arrays-cpp.md
             - name: References
               expanded: false
               items: 
