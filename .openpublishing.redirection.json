@@ -732,7 +732,7 @@
       },
       {
          "source_path": "docs/cpp/cpp-exception-handling.md",
-         "redirect_url": "/cpp/cpp/exception-handling-in-visual-cpp.md",
+         "redirect_url": "/cpp/cpp/exception-handling-in-visual-cpp",
          "redirect_document_id": false
       },
       {
