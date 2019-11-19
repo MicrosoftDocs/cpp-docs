@@ -6,7 +6,7 @@ ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 ---
 # Arrays (C++)
 
-An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still very common especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
+An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still common, especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
 
 ## Stack declarations
 
@@ -35,7 +35,7 @@ In a C++ array declaration, the array size is specified after the variable name,
     }
 ```
 
-The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `size -1`.
+The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
 
 A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.
 
@@ -43,7 +43,7 @@ Stack-based arrays are faster to allocate and access than heap-based arrays, but
 
 ## Heap declarations
 
-If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic]() to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
+If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic](../c-language/pointer-arithmetic.md) to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
 
 - you always keep a copy of the original pointer address so that you can delete the memory when you no longer need the array.
 - you do not increment or decrement the pointer address past the array bounds.
@@ -122,7 +122,7 @@ You can initialize an array in a loop, one element at a time, or in a single sta
 
 ## Passing arrays to functions
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. Note that this behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as **const**.
+When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **const** elements.
 
 The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **const**, the function can modify the array elements.
 
@@ -331,26 +331,26 @@ In the preceding code, `multi` is a three-dimensional array of type **double**. 
 
 ## Overloading subscript operator
 
-Like other operators, the subscript operator ([]) can be redefined by the user. The default behavior of the subscript operator, if not overloaded, is to combine the array name and the subscript using the following method:
+Like other operators, the subscript operator (`[]`) can be redefined by the user. The default behavior of the subscript operator, if not overloaded, is to combine the array name and the subscript using the following method:
 
-*((array-name) + (subscript))
+`*((array_name) + (subscript))`
 
-As in all addition that involves pointer types, scaling is performed automatically to adjust for the size of the type. Therefore, the resultant value is not \[n] bytes from the origin of array-name; rather, it is the [n]th element of the array. (For more information about this conversion, see Additive Operators.)
+As in all addition that involves pointer types, scaling is performed automatically to adjust for the size of the type. Therefore, the resultant value is not *n* bytes from the origin of array-name; rather, it is the *n*th element of the array. For more information about this conversion, see [Additive operators](additive-operators-plus-and.md).
 
 Similarly, for multidimensional arrays, the address is derived using the following method:
 
-`((array-name) + (subscript1 * max2 * max3 * ... * maxn) + (subscript2 * max3 * ... * maxn) + ... + subscriptn))`
+`((array_name) + (subscript1 * max2 * max3 * ... * maxn) + (subscript2 * max3 * ... * maxn) + ... + subscriptn))`
 
 ## Arrays in Expressions
 
-When an identifier of an array type appears in an expression other than `sizeof`, address-of (**&**), or initialization of a reference, it is converted to a pointer to the first array element. For example:
+When an identifier of an array type appears in an expression other than `sizeof`, address-of (`&`), or initialization of a reference, it is converted to a pointer to the first array element. For example:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
 char *psz = szError1;
 ```
 
-The pointer `psz` points to the first element of the array `szError1`. Note that arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:
+The pointer `psz` points to the first element of the array `szError1`. Arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:
 
 ```cpp
 szError1 = psz;
