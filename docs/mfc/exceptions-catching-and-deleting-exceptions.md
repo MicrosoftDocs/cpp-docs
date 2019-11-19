@@ -6,7 +6,7 @@ ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
 ---
 # Exceptions: Catching and Deleting Exceptions
 
-The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [C++ Exception Handling](../cpp/cpp-exception-handling.md).
+The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
 Your exception handlers must delete exception objects they handle, because failure to delete the exception causes a memory leak whenever that code catches an exception.
 

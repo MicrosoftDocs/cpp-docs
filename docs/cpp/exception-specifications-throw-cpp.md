@@ -119,4 +119,4 @@ in handler
 ## See also
 
 [try, throw, and catch Statements (C++)](../cpp/try-throw-and-catch-statements-cpp.md)<br/>
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)

@@ -45,4 +45,4 @@ The `term_func` function should terminate the program or current thread, ideally
 
 ## See also
 
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)

@@ -115,4 +115,4 @@ const char* what() const noexcept override;
 
 [dynamic_cast Operator](../cpp/dynamic-cast-operator.md)\
 [Keywords](../cpp/keywords-cpp.md)\
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)
+[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)

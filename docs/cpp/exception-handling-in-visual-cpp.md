@@ -12,7 +12,7 @@ An exception is an error condition, possibly outside the program's control, that
 
 The Microsoft C++ compiler (MSVC) supports three kinds of exception handling:
 
-- [C++ exception handling](cpp-exception-handling.md)
+- [C++ exception handling](errors-and-exception-handling-modern-cpp.md)
 
    For most C++ programs, you should use C++ exception handling, which is type-safe and ensures that object destructors are invoked during stack unwinding.
 
