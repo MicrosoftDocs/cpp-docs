@@ -23,7 +23,7 @@ For more information, see [Initialization of Mixed Assemblies](../../dotnet/init
 
 The following sample generates C4747.
 
-```
+```cpp
 // C4747.cpp
 // compile with: /clr /c /W1
 // C4747 expected

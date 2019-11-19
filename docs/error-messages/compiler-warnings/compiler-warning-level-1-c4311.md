@@ -15,7 +15,7 @@ For additional information about common causes of warning C4311, see [Common Com
 
 The following code example generates C4311 when compiled for a 64-bit target, and then demonstrates how to fix it:
 
-```
+```cpp
 // C4311.cpp
 // compile by using: cl /W1 C4311.cpp
 int main() {

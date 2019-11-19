@@ -60,5 +60,5 @@ int main() {
 
 ## See also
 
-[Writing a Termination Handler](../cpp/writing-a-termination-handler.md)<br/>
+[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
 [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

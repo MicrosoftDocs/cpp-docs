@@ -1115,7 +1115,7 @@
                       href: build/reference/notification-hooks.md
                     - name: Failure hooks
                       href: build/reference/failure-hooks.md
-                    - name: Exceptions (C/C++)
+                    - name: DLL load exception codes (C/C++)
                       href: build/reference/exceptions-c-cpp.md
                 - name: Dumping delay-loaded imports
                   href: build/reference/dumping-delay-loaded-imports.md
@@ -2848,11 +2848,13 @@
           href: porting/porting-third-party-libraries.md
         - name: Port data applications
           href: data/data-access-programming-mfc-atl.md
+    - name: IDE tools for upgrading C++ code
+      href: porting/ide-tools-for-upgrading-code.md
     - name: Visual C++ change history 2003 - 2015
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ What's New 2003 through 2015
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
-    - name: C++ Binary Compatibility between 2015 and 2019
+    - name: C++ binary compatibility 2015-2019
       href: porting/binary-compat-2015-2017.md
     - name: "Port and upgrade: examples and case studies"
       items: 
@@ -3646,7 +3648,7 @@
             - name: C++ language reference
               href: cpp/cpp-language-reference.md
             - name: Welcome back to C++ (Modern C++)
-              href: cpp/welcome-back-to-cpp-modern-cpp.md              
+              href: cpp/welcome-back-to-cpp-modern-cpp.md
             - name: Lexical conventions
               expanded: false
               items: 
@@ -3685,6 +3687,8 @@
                 - name: Declarations and definitions
                   expanded: false
                   items: 
+                    - name: C++ type system
+                      href: cpp/cpp-type-system-modern-cpp.md
                     - name: Declarations and definitions
                       href: cpp/declarations-and-definitions-cpp.md
                     - name: Overview of declarators
@@ -3837,6 +3841,8 @@
                                   href: cpp/floating-limits.md
                 - name: Standard conversions
                   href: cpp/standard-conversions.md
+                - name: Type conversions and type safety
+                  href: cpp/type-conversions-and-type-safety-modern-cpp.md
             - name: Built-in operators, precedence, and associativity
               expanded: false
               items: 
@@ -4091,7 +4097,7 @@
                       href: cpp/protected-cpp.md
                     - name: public
                       href: cpp/public-cpp.md
-                - name: Initializing classes and structs without constructors
+                - name: Brace initialization
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
                 - name: Object lifetime and resource management (RAII)
                   href: cpp/object-lifetime-and-resource-management-modern-cpp.md
@@ -4108,6 +4114,8 @@
                       href: cpp/copy-constructors-and-copy-assignment-operators-cpp.md
                     - name: Move constructors and move assignment operators
                       href: cpp/move-constructors-and-move-assignment-operators-cpp.md
+                    - name: Delegating constructors
+                      href: cpp/delegating-constructors.md
                 - name: Destructors
                   href: cpp/destructors-cpp.md
                 - name: Overview of member functions
@@ -4152,6 +4160,8 @@
                   href: cpp/special-member-functions.md
                 - name: Static members
                   href: cpp/static-members-cpp.md
+                - name: C++ classes as value types
+                  href: cpp/value-types-modern-cpp.md
                 - name: User-defined type conversions
                   href: cpp/user-defined-type-conversions-cpp.md
                 - name: Mutable data members
@@ -4178,22 +4188,7 @@
                 - name: constexpr lambda expressions
                   href: cpp/lambda-expressions-constexpr.md
             - name: Arrays
-              expanded: false
-              items: 
-                - name: Arrays
-                  href: cpp/arrays-cpp.md
-                - name: Using arrays
-                  href: cpp/using-arrays-cpp.md
-                - name: Initializing arrays
-                  href: cpp/initializing-arrays.md
-                - name: Arrays in expressions
-                  href: cpp/arrays-in-expressions.md
-                - name: Interpretation of subscript operator
-                  href: cpp/interpretation-of-subscript-operator.md
-                - name: Indirection on array types
-                  href: cpp/indirection-on-array-types.md
-                - name: Ordering of C++ arrays
-                  href: cpp/ordering-of-cpp-arrays.md
+              href: cpp/arrays-cpp.md
             - name: References
               expanded: false
               items: 
@@ -4214,41 +4209,56 @@
               items: 
                 - name: Pointers
                   href: cpp/pointers-cpp.md
+                - name: Raw pointers
+                  href: cpp/raw-pointers.md
                 - name: const and volatile pointers
                   href: cpp/const-and-volatile-pointers.md
                 - name: new and delete operators
                   href: cpp/new-and-delete-operators.md
+                - name: Smart pointers
+                  href: cpp/smart-pointers-modern-cpp.md
+                - name: "How to: Create and use unique_ptr instances"
+                  href: cpp/how-to-create-and-use-unique-ptr-instances.md
+                - name: "How to: Create and use shared_ptr instances"
+                  href: cpp/how-to-create-and-use-shared-ptr-instances.md
+                - name: "How to: Create and use weak_ptr instances"
+                  href: cpp/how-to-create-and-use-weak-ptr-instances.md
+                - name: "How to: Create and use CComPtr and CComQIPtr instances"
+                  href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
+                - name: Pimpl for compile-time encapsulation
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md  
             - name: Exception handling in C++
               expanded: false
               items: 
                 - name: Exception handling in C++
                   href: cpp/exception-handling-in-visual-cpp.md
-                - name: Exception handling
+                - name: Modern C++ best practices
+                  href: cpp/errors-and-exception-handling-modern-cpp.md
+                - name: How to design for exception safety
+                  href: cpp/how-to-design-for-exception-safety.md
+                - name: How to interface between exceptional and non-exceptional code
+                  href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
+                - name: try, throw, and catch statements
+                  href: cpp/try-throw-and-catch-statements-cpp.md
+                - name: How catch blocks are evaluated
+                  href: cpp/how-catch-blocks-are-evaluated-cpp.md
+                - name: Exceptions and stack unwinding
+                  href: cpp/exceptions-and-stack-unwinding-in-cpp.md
+                - name: Exception specifications (throw)
+                  href: cpp/exception-specifications-throw-cpp.md
+                - name: noexcept
+                  href: cpp/noexcept-cpp.md
+                - name: Unhandled C++ exceptions
+                  href: cpp/unhandled-cpp-exceptions.md
+                - name: Mixing C (Structured) and C++ exceptions
                   expanded: false
                   items: 
-                    - name: Exception handling
-                      href: cpp/cpp-exception-handling.md
-                    - name: try, throw, and catch statements
-                      href: cpp/try-throw-and-catch-statements-cpp.md
-                    - name: How catch blocks are evaluated
-                      href: cpp/how-catch-blocks-are-evaluated-cpp.md
-                    - name: Exceptions and stack unwinding in C++
-                      href: cpp/exceptions-and-stack-unwinding-in-cpp.md
-                    - name: Exception specifications (throw)
-                      href: cpp/exception-specifications-throw-cpp.md
-                    - name: noexcept
-                      href: cpp/noexcept-cpp.md
-                    - name: Unhandled C++ exceptions
-                      href: cpp/unhandled-cpp-exceptions.md
                     - name: Mixing C (Structured) and C++ exceptions
-                      expanded: false
-                      items: 
-                        - name: Mixing C (Structured) and C++ exceptions
-                          href: cpp/mixing-c-structured-and-cpp-exceptions.md
-                        - name: Using setjmp-longjmp
-                          href: cpp/using-setjmp-longjmp.md
-                        - name: Handle structured exceptions in C++
-                          href: cpp/exception-handling-differences.md
+                      href: cpp/mixing-c-structured-and-cpp-exceptions.md
+                    - name: Using setjmp-longjmp
+                      href: cpp/using-setjmp-longjmp.md
+                    - name: Handle structured exceptions in C++
+                      href: cpp/exception-handling-differences.md
                 - name: Structured Exception Handling (SEH) (C/C++)
                   expanded: false
                   items: 
@@ -4894,6 +4904,8 @@
               href: intrinsics/compiler-intrinsics.md
             - name: ARM intrinsics
               href: intrinsics/arm-intrinsics.md
+            - name: ARM64 intrinsics
+              href: intrinsics/arm64-intrinsics.md
             - name: x86 intrinsics list
               href: intrinsics/x86-intrinsics-list.md
             - name: x64 (amd64) intrinsics list

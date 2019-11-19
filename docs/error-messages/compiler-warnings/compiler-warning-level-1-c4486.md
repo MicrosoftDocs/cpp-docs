@@ -15,7 +15,7 @@ Since a private virtual member function of a managed class or struct cannot be a
 
 The following sample generates C4486.
 
-```
+```cpp
 // C4486.cpp
 // compile with: /clr /c /W1
 ref class B {
@@ -29,7 +29,7 @@ private:
 
 The following sample shows one possible use of a private sealed, virtual function.
 
-```
+```cpp
 // C4486_b.cpp
 // compile with: /clr /c
 ref class B {};

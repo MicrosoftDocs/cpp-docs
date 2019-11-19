@@ -1,6 +1,6 @@
 ---
-title: "Exceptions (C/C++)"
-ms.date: "11/04/2016"
+title: "DLL loading exception codes (C/C++)"
+ms.date: "11/19/2019"
 f1_keywords: ["ERROR_MOD_NOT_FOUND", "vcppException", "ERROR_SEVERITY_ERROR"]
 helpviewer_keywords: ["vcppException", "C++ exception handling, delayed loading of DLLs", "delayed loading of DLLs, exceptions", "ERROR_SEVERITY_ERROR exception", "ERROR_MOD_NOT_FOUND exception"]
 ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a

@@ -31,8 +31,6 @@ Finally, when referring to data types, the following definitions from ARM are re
 
 The ARM64 version of Windows presupposes that it's running on an ARMv8 or later architecture at all times. Both floating-point and NEON support are presumed to be present in hardware.
 
-The ARMv8 specification allows for full support of AArch32 applications. However, support for existing ARM32 applications on the ARM64 version of Windows isn't planned. (That is, there are no plans for WOW64). This support is subject to re-evaluation in the future, but it's the current working assumption.
-
 The ARMv8 specification describes new optional crypto and CRC helper opcodes for both AArch32 and AArch64. Support for them is currently optional, but recommended. To take advantage of these opcodes, apps should first make runtime checks for their existence.
 
 ## Endianness

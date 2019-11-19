@@ -15,7 +15,7 @@ The result of 32-bit shift was implicitly converted to 64-bits, and the compiler
 
 The following sample generates C4334.
 
-```
+```cpp
 // C4334.cpp
 // compile with: /W3 /c
 void SetBit(unsigned __int64 *p, int i) {

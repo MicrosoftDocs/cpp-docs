@@ -1,19 +1,19 @@
 ---
-title: "How to: Interface Between Exceptional and Non-Exceptional Code"
+title: "How to: Interface between exceptional and non-exceptional code"
 ms.custom: "how-to"
-ms.date: "11/04/2016"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
 ---
-# How to: Interface Between Exceptional and Non-Exceptional Code
+# How to: Interface between exceptional and non-exceptional code
 
 This article describes how to implement consistent exception-handling in a C++ module, and also how to translate those exceptions to and from error codes at the exception boundaries.
 
 Sometimes a C++ module has to interface with code that doesn't use exceptions (non-exceptional code). Such an interface is known as an *exception boundary*. For example, you may want to call the Win32 function `CreateFile` in your C++ program. `CreateFile` doesn't throw exceptions; instead it sets error codes that can be retrieved by the `GetLastError` function. If your C++ program is non-trivial, then in it you probably prefer to have a consistent exception-based error-handling policy. And you probably don't want to abandon exceptions just because you interface with non-exceptional code, and neither do you want to mix exception-based and non-exception-based error policies in your C++ module.
 
-## Calling Non-Exceptional Functions from C++
+## Calling non-exceptional functions from C++
 
-When you call a non-exceptional function from C++, the idea is to wrap that function in a C++ function that detects any errors and then possibly throws an exception. When you design such a wrapper function, first decide which type of exception guarantee to provide:  no-throw, strong, or basic. Second, design the function so that all resources, for example, file handles, are correctly released if an exception is thrown. Typically, this means that you use smart pointers or similar resource managers to own the resources. For more information about design considerations, see [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md).
+When you call a non-exceptional function from C++, the idea is to wrap that function in a C++ function that detects any errors and then possibly throws an exception. When you design such a wrapper function, first decide which type of exception guarantee to provide:  no-throw, strong, or basic. Second, design the function so that all resources, for example, file handles, are correctly released if an exception is thrown. Typically, this means that you use smart pointers or similar resource managers to own the resources. For more information about design considerations, see [How to: Design for Exception Safety](how-to-design-for-exception-safety.md).
 
 ### Example
 
@@ -152,7 +152,7 @@ int main ( int argc, char* argv[] )
 }
 ```
 
-## Calling Exceptional Code from Non-Exceptional Code
+## Calling exceptional code from non-exceptional code
 
 C++ functions that are declared as "extern C" can be called by C programs. C++ COM servers can be consumed by code written in any of a number of different languages. When you implement public exception-aware functions in C++ to be called by non-exceptional code, the C++ function must not allow any exceptions to propagate back to the caller. Therefore, the C++ function must specifically catch every exception that it knows how to handle and, if appropriate, convert the exception to an error code that the caller understands. If not all potential exceptions are known, the C++ function should have a `catch(...)` block as the last handler. In such a case, it's best to report a fatal error to the caller, because your program might be in an unknown state.
 
@@ -226,9 +226,9 @@ bool DiffFiles3(const string& file1, const string& file2)
 }
 ```
 
-For more information about lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).
+For more information about lambda expressions, see [Lambda Expressions](lambda-expressions-in-cpp.md).
 
 ## See also
 
-[Errors and Exception Handling (Modern C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md)<br/>
+[Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md)<br/>
+[How to: Design for Exception Safety](how-to-design-for-exception-safety.md)<br/>

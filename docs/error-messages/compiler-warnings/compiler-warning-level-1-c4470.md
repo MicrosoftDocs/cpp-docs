@@ -21,7 +21,7 @@ have no effect under [/clr](../../build/reference/clr-common-language-runtime-co
 
 The following sample generates C4470:
 
-```
+```cpp
 // C4470.cpp
 // compile with: /clr /W1 /LD
 #pragma float_control(except, on)   // C4470

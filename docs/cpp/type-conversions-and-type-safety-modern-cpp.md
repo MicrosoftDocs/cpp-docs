@@ -1,10 +1,10 @@
 ---
-title: "Type Conversions and Type Safety (Modern C++)"
-ms.date: "05/07/2019"
+title: "Type conversions and type safety"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
 ---
-# Type Conversions and Type Safety (Modern C++)
+# Type conversions and type safety
 
 This document identifies common type conversion problems and describes how you can avoid them in your C++ code.
 
@@ -172,7 +172,7 @@ The C-style cast operator is identical to the call operator () and is therefore 
 
 ## See also
 
-[C++ Type System (Modern C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ type system](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

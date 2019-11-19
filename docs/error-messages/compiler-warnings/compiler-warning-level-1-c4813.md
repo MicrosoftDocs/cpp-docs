@@ -13,7 +13,7 @@ A friend function in an inner class was not declared in the outer class.
 
 The following sample generates C4813:
 
-```
+```cpp
 // C4813.cpp
 // compile with: /W1 /LD
 void MyClass()

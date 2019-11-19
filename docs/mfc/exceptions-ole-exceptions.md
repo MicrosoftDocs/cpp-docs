@@ -6,7 +6,7 @@ ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
 ---
 # Exceptions: OLE Exceptions
 
-The techniques and facilities for handling exceptions in OLE are the same as those for handling other exceptions. For further information on exception handling, see the article [C++ Exception Handling](../cpp/cpp-exception-handling.md).
+The techniques and facilities for handling exceptions in OLE are the same as those for handling other exceptions. For further information on exception handling, see the article [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
 All exception objects are derived from the abstract base class `CException`. MFC provides two classes for handling OLE exceptions:
 

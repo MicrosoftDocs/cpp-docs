@@ -15,7 +15,7 @@ When accessing data between managed components, it is recommended that you not u
 
 The following sample generates C4835.
 
-```
+```cpp
 // C4835.cpp
 // compile with: /W1 /clr /LD
 int f() { return 1; }
@@ -29,7 +29,7 @@ __declspec(dllexport) int *p = &n;   // C4835
 
 The following sample consumes the component built in the previous sample, showing that the value of the variables is not as expected.
 
-```
+```cpp
 // C4835_b.cpp
 // compile with: /clr C4835.lib
 #include <stdio.h>

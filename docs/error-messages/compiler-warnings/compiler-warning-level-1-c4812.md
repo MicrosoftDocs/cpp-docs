@@ -13,7 +13,7 @@ In the current release of Visual C++, the explicit constructor specialization is
 
 The following sample generates C4812:
 
-```
+```cpp
 // C4812.cpp
 // compile with: /W1 /c
 template <class T>

@@ -15,7 +15,7 @@ The wrong member access operator was used.
 
 The following sample generates C4817.
 
-```
+```cpp
 // C4817.cpp
 // compile with: /clr /W1
 using namespace System;

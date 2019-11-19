@@ -13,7 +13,7 @@ You used an attribute that should not commonly be used.
 
 The following sample generates C4684:
 
-```
+```cpp
 // C4684.cpp
 // compile with: /W1 /LD
 [module(name="xx")]; // C4684 expected

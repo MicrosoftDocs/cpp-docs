@@ -15,7 +15,7 @@ Narrow strings (one-byte characters) are converted to multi-byte characters wher
 
 The following sample generates C4566:
 
-```
+```cpp
 // C4566.cpp
 // compile with: /W1
 int main() {

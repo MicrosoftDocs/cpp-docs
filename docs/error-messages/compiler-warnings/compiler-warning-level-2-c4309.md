@@ -13,7 +13,7 @@ The type conversion causes a constant to exceed the space allocated for it. You 
 
 The following sample generates C4309:
 
-```
+```cpp
 // C4309.cpp
 // compile with: /W2
 int main()

@@ -15,7 +15,7 @@ To override this warning, put the expression in parentheses.
 
 The following sample generates C4552:
 
-```
+```cpp
 // C4552.cpp
 // compile with: /W1
 int main() {

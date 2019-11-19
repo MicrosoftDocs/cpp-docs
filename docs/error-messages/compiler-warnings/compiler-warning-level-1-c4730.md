@@ -15,7 +15,7 @@ To safely use `__m64` types and floating-point types in the same function, each 
 
 The following sample generates C4730:
 
-```
+```cpp
 // C4730.cpp
 // compile with: /W1
 // processor: x86

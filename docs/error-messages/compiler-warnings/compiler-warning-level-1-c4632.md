@@ -13,7 +13,7 @@ The path to .xdc file (`file`) was not valid, and no .xdc file created.
 
 The following sample generates C4632:
 
-```
+```cpp
 // C4632.cpp
 // compile with: /clr /docv:\\falsedir /LD /W1
 // C4632 expected

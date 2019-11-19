@@ -11,7 +11,7 @@ ms.assetid: 4ad21004-f076-43fd-99f4-4bf1f9be4c0b
 
 The following sample generates C4518:
 
-```
+```cpp
 // C4518.cpp
 // compile with: /c /W1
 _declspec(dllexport) extern "C" void MyFunction();   // C4518

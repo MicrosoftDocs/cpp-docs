@@ -13,7 +13,7 @@ There is no postfix increment operator defined for the given type. The compiler 
 
 This warning can be avoided by defining a postfix `++` operator. Create a two-argument version of the `++` operator as shown here:
 
-```
+```cpp
 // C4620.cpp
 // compile with: /W1
 class A

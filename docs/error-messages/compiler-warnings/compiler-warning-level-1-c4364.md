@@ -17,7 +17,7 @@ For more information, see [Friend Assemblies (C++)](../../dotnet/friend-assembli
 
 The following sample creates a component.
 
-```
+```cpp
 // C4364.cpp
 // compile with: /clr /LD
 ref class A {};
@@ -27,7 +27,7 @@ ref class A {};
 
 The following sample generates C4364.
 
-```
+```cpp
 // C4364_b.cpp
 // compile with: /clr /W1 /c
 #using " C4364.dll"

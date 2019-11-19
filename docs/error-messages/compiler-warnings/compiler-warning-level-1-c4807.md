@@ -15,7 +15,7 @@ This warning is generated when comparing a one-bit signed bit field to a `bool` 
 
 The following sample generates C4807:
 
-```
+```cpp
 // C4807.cpp
 // compile with: /W1
 typedef struct bitfield {

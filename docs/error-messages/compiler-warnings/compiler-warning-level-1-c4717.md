@@ -13,7 +13,7 @@ Every path through a function contains a call to the function. Since there is no
 
 The following sample generates C4717:
 
-```
+```cpp
 // C4717.cpp
 // compile with: /W1 /c
 // C4717 expected

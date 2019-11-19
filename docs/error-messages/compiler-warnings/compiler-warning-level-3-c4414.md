@@ -13,7 +13,7 @@ Short jumps generate compact instruction which branches to an address within a l
 
 For example, the following code generates C4414:
 
-```
+```cpp
 // C4414.cpp
 // compile with: /W3 /c
 // processor: x86

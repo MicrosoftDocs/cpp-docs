@@ -15,7 +15,7 @@ To resolve this warning, explicitly declare the return type of functions.
 
 The following sample generates C4508:
 
-```
+```cpp
 // C4508.cpp
 // compile with: /W1 /c
 #pragma warning (disable : 4430)

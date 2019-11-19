@@ -13,7 +13,7 @@ The compiler detected an unused function prototype. If the prototype was intende
 
 The following sample generates C4930:
 
-```
+```cpp
 // C4930.cpp
 // compile with: /W1
 class Lock {
@@ -35,7 +35,7 @@ C4930 can also occur when the compiler cannot distinguish between a function pro
 
 The following sample generates C4930:
 
-```
+```cpp
 // C4930b.cpp
 // compile with: /EHsc /W1
 

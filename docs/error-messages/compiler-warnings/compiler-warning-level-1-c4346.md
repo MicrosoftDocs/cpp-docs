@@ -13,7 +13,7 @@ The [typename](../../cpp/typename.md) keyword is required if a dependent name is
 
 The following sample generates C4346:
 
-```
+```cpp
 // C4346.cpp
 // compile with: /WX /LD
 template<class T>
@@ -26,7 +26,7 @@ struct C {
 
 The following samples shows other examples where the **typename** keyword is required:
 
-```
+```cpp
 // C4346b.cpp
 // compile with: /LD /W1
 template<class T>
@@ -47,7 +47,7 @@ struct M : public L<typename T::Type, T::Value>
 
 and this,
 
-```
+```cpp
 // C4346c.cpp
 // compile with: /LD /WX
 struct Y {

@@ -13,7 +13,7 @@ The syntax of an [\<include>](../../build/reference/include-visual-cpp.md) tag w
 
 The following sample generates C4637:
 
-```
+```cpp
 // C4637.cpp
 // compile with: /clr /doc /LD /W3
 using namespace System;
