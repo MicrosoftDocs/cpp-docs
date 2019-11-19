@@ -3652,15 +3652,6 @@
               items: 
                 - name: Welcome back to C++ (Modern C++)
                   href: cpp/welcome-back-to-cpp-modern-cpp.md
-                - name: Type system (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Type system (Modern C++)
-                      href: cpp/cpp-type-system-modern-cpp.md
-                    - name: Value types (Modern C++)
-                      href: cpp/value-types-modern-cpp.md
-                    - name: Type conversions and type safety (Modern C++)
-                      href: cpp/type-conversions-and-type-safety-modern-cpp.md
                 - name: Uniform initialization and delegating constructors
                   href: cpp/uniform-initialization-and-delegating-constructors.md
                 - name: Object lifetime and resource management (Modern C++)
@@ -3713,6 +3704,8 @@
                 - name: Declarations and definitions
                   expanded: false
                   items: 
+                    - name: C++ type system
+                      href: cpp/cpp-type-system-modern-cpp.md
                     - name: Declarations and definitions
                       href: cpp/declarations-and-definitions-cpp.md
                     - name: Overview of declarators
@@ -3856,6 +3849,8 @@
                       href: cpp/floating-limits.md
                 - name: Standard conversions
                   href: cpp/standard-conversions.md
+                - name: Type conversions and type safety
+                  href: cpp/type-conversions-and-type-safety-modern-cpp.md
             - name: Built-in operators, precedence, and associativity
               expanded: false
               items: 
@@ -4167,6 +4162,8 @@
                   href: cpp/special-member-functions.md
                 - name: Static members
                   href: cpp/static-members-cpp.md
+                - name: C++ classes as value types
+                  href: cpp/value-types-modern-cpp.md
                 - name: User-defined type conversions
                   href: cpp/user-defined-type-conversions-cpp.md
                 - name: Mutable data members
