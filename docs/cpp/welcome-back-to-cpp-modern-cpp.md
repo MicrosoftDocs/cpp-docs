@@ -10,7 +10,7 @@ Over the past 25 years, C++ has been one of the most widely used programming lan
 
 One of the original requirements for C++ was backward compatibility with the C language. As a result C++ has always permitted C-style programming with raw pointers, arrays, null-terminated character strings, custom data structures, and other features that may enable great performance but can also spawn bugs and complexity. The evolution of C++ has emphasized features that greatly reduce the need to C-style idioms. The old C-programming facilities are there when you need them, but with modern C++ code you should need them less and less. Modern C++ code is simpler, safer, more elegant, and still as fast as ever.
 
-The following sections provide an overview of the main features of modern C++. Unless noted otherwise, the features listed here are available in C++11 and later. In the Microsoft C++ compiler, you can set the [/std](../build/std-specify-language-standard-version.md) compiler option to specify which version of the standard to use for your project.
+The following sections provide an overview of the main features of modern C++. Unless noted otherwise, the features listed here are available in C++11 and later. In the Microsoft C++ compiler, you can set the [/std](../build/reference/std-specify-language-standard-version.md) compiler option to specify which version of the standard to use for your project.
 
 ## Prevent memory leaks through RAII and smart pointers
 
@@ -201,7 +201,7 @@ Use the C++ Standard Library [std::atomic](../standard-library/atomic-structure.
 
 ## std::variant instead of unions (C++17)
 
-Unions are commonly used in C-style programming to conserve memory by enabling members of different types to occupy the same memory location. However, unions are not type-safe and are prone to programming errors. C++17 introduces the [std::variant](../standard-library/variant-class.md) class as a more robust and safe alternative to unions. The [std::visit](../standard-library/visit) function can be used to access the members of a `variant` type in a type-safe manner.
+Unions are commonly used in C-style programming to conserve memory by enabling members of different types to occupy the same memory location. However, unions are not type-safe and are prone to programming errors. C++17 introduces the [std::variant](../standard-library/variant-class.md) class as a more robust and safe alternative to unions. The [std::visit](../standard-library/variant-functions.md#visit) function can be used to access the members of a `variant` type in a type-safe manner.
 
 ## See also
 

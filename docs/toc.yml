@@ -3790,7 +3790,7 @@
                   href: cpp/alignof-and-alignas-cpp.md
                 - name: Trivial, standard-layout, and POD types
                   href: cpp/trivial-standard-layout-and-pod-types.md
-            - name: Type system
+                - name: Type system
                   expanded: false
                   items: 
                     - name: Type system
