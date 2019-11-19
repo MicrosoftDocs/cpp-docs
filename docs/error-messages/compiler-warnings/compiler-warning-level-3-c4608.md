@@ -13,7 +13,7 @@ Two members of the same union were initialized in an initialization list. You ca
 
 The following sample generates C4608:
 
-```
+```cpp
 // C4608.cpp
 // compile with: /W3 /c
 class X {

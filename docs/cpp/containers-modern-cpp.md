@@ -1,11 +1,11 @@
 ---
 title: "Containers (Modern C++)"
-ms.date: "01/18/2018"
+ms.date: "11/12/2019"
 ms.topic: "conceptual"
 ---
 # Containers (Modern C++)
 
-By default, use [vector](../standard-library/vector-class.md) as the preferred sequential container in C++. This is equivalent to `List<T>` in .NET languages.
+By default, use [std::vector](../standard-library/vector-class.md) as the preferred sequential container in C++. The performance of **std::vector** is comparable to C-style arrays in most scenarios and is far safer. **std::vector** is equivalent to `List<T>` in .NET languages.
 
 ```cpp
 vector<string> apples;

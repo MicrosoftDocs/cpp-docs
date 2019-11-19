@@ -2854,7 +2854,7 @@
       href: porting/visual-cpp-change-history-2003-2015.md
     - name: Visual C++ What's New 2003 through 2015
       href: porting/visual-cpp-what-s-new-2003-through-2015.md
-    - name: C++ Binary Compatibility between 2015 and 2019
+    - name: C++ binary compatibility 2015-2019
       href: porting/binary-compat-2015-2017.md
     - name: "Port and upgrade: examples and case studies"
       items: 
@@ -4215,22 +4215,7 @@
                 - name: constexpr lambda expressions
                   href: cpp/lambda-expressions-constexpr.md
             - name: Arrays
-              expanded: false
-              items: 
-                - name: Arrays
-                  href: cpp/arrays-cpp.md
-                - name: Using arrays
-                  href: cpp/using-arrays-cpp.md
-                - name: Initializing arrays
-                  href: cpp/initializing-arrays.md
-                - name: Arrays in expressions
-                  href: cpp/arrays-in-expressions.md
-                - name: Interpretation of subscript operator
-                  href: cpp/interpretation-of-subscript-operator.md
-                - name: Indirection on array types
-                  href: cpp/indirection-on-array-types.md
-                - name: Ordering of C++ arrays
-                  href: cpp/ordering-of-cpp-arrays.md
+              href: cpp/arrays-cpp.md
             - name: References
               expanded: false
               items: 
