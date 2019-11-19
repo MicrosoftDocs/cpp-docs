@@ -706,6 +706,21 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/objects-own-resources-raii.md",
+         "redirect_url": "/cpp/cpp/object-lifetime-and-resource-management-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/algorithms-modern-cpp.md",
+         "redirect_url": "/cpp/cpp/welcome-back-to-cpp-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/containers-modern-cpp.md",
+         "redirect_url": "/cpp/cpp/welcome-back-to-cpp-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/types-of-linkage.md",
          "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
          "redirect_document_id": false

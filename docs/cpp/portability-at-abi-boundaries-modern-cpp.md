@@ -1,10 +1,11 @@
 ---
-title: "Portability At ABI Boundaries (Modern C++)"
-ms.date: "11/04/2016"
+title: "Portability At ABI Boundaries"
+description: "Flatten C++ interfaces to C calling conventions at binary interface boundaries."
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: abbd405e-3038-427c-8c24-e00598f0936a
 ---
-# Portability At ABI Boundaries (Modern C++)
+# Portability At ABI Boundaries
 
 Use sufficiently portable types and conventions at binary interface boundaries. A “portable type” is a C built-in type or a struct that contains only C built-in types. Class types can only be used when caller and callee agree on layout, calling convention, etc. This is only possible when both are compiled with the same compiler and compiler settings.
 

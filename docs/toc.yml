@@ -3646,46 +3646,7 @@
             - name: C++ language reference
               href: cpp/cpp-language-reference.md
             - name: Welcome back to C++ (Modern C++)
-              expanded: false
-              items: 
-                - name: Welcome back to C++ (Modern C++)
-                  href: cpp/welcome-back-to-cpp-modern-cpp.md
-                - name: Uniform initialization and delegating constructors
-                  href: cpp/uniform-initialization-and-delegating-constructors.md
-                - name: Object lifetime and resource management (Modern C++)
-                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
-                - name: Objects own resources (RAII)
-                  href: cpp/objects-own-resources-raii.md
-                - name: Smart pointers (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Smart pointers (Modern C++)
-                      href: cpp/smart-pointers-modern-cpp.md
-                    - name: "How to: Create and use unique_ptr instances"
-                      href: cpp/how-to-create-and-use-unique-ptr-instances.md
-                    - name: "How to: Create and use shared_ptr instances"
-                      href: cpp/how-to-create-and-use-shared-ptr-instances.md
-                    - name: "How to: Create and use weak_ptr instances"
-                      href: cpp/how-to-create-and-use-weak-ptr-instances.md
-                    - name: "How to: Create and use CComPtr and CComQIPtr instances"
-                      href: cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md
-                - name: Pimpl for compile-time encapsulation (Modern C++)
-                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
-                - name: Containers (Modern C++)
-                  href: cpp/containers-modern-cpp.md
-                - name: Algorithms (Modern C++)
-                  href: cpp/algorithms-modern-cpp.md
-                - name: Errors and exception handling (Modern C++)
-                  expanded: false
-                  items: 
-                    - name: Errors and exception handling (Modern C++)
-                      href: cpp/errors-and-exception-handling-modern-cpp.md
-                    - name: "How to: Design for exception safety"
-                      href: cpp/how-to-design-for-exception-safety.md
-                    - name: "How to: Interface between exceptional and non-exceptional code"
-                      href: cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md
-                - name: Portability at ABI boundaries (Modern C++)
-                  href: cpp/portability-at-abi-boundaries-modern-cpp.md
+              href: cpp/welcome-back-to-cpp-modern-cpp.md              
             - name: Lexical conventions
               expanded: false
               items: 
@@ -4132,6 +4093,12 @@
                       href: cpp/public-cpp.md
                 - name: Initializing classes and structs without constructors
                   href: cpp/initializing-classes-and-structs-without-constructors-cpp.md
+                - name: Object lifetime and resource management (RAII)
+                  href: cpp/object-lifetime-and-resource-management-modern-cpp.md
+                - name: Pimpl idiom for compile-time encapsulation
+                  href: cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md
+                - name: Portability at ABI boundaries
+                  href: cpp/portability-at-abi-boundaries-modern-cpp.md 
                 - name: Constructors
                   expanded: false
                   items: 

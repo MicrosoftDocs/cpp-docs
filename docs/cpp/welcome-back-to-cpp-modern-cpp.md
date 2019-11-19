@@ -1,10 +1,10 @@
 ---
-title: "Welcome Back to C++ (Modern C++)"
-ms.date: "11/12/2019"
+title: "Welcome back to C++ (Modern C++)"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 ---
-# Welcome Back to C++ (Modern C++)
+# Welcome back to C++ (Modern C++)
 
 Over the past 25 years, C++ has been one of the most widely used programming languages in the world. Well-written C++ programs are fast and efficient. The language is more flexible than other languages because it enables you to access low-level hardware features to maximize speed and minimize memory requirements. You can use it to create a wide range of apps—from games, to high-performance scientific software, to device drivers, embedded programs, libraries and compilers for other programming languages, Windows client apps, and much more.
 
@@ -14,52 +14,7 @@ The following sections provide an overview of the main features of modern C++. U
 
 ## Prevent memory leaks through RAII and smart pointers
 
-Unlike managed languages, C++ has no garbage collection process that releases heap memory and other resources as a program runs. A program is responsible for returning all acquired resources to the operating system. Failure to release a resource results in a *leak* and renders the resource unavailable to other programs. Memory leaks in particular are a common cause of bugs in C-style programming. Modern C++ avoids using heap memory as much as possible by declaring objects on the stack. When an resource is too large for the stack, then it should be *owned* by an object that is responsible for releasing the resource in its destructor. The principle that *objects own resources* is also known as "resource acquisition is initialization" or "RAII". The owning object itself is declared on the stack, so that when the goes out of scope, its destructor is automatically invoked. In this way, garbage collection in C++ is closely related to object lifetime and is deterministic. A resource is always released at a known point in the program, which you can control. Only deterministic destructors like those in C++ can handle memory and non-memory resources equally. 
-
-The following example shows a simple object `w`. It is declared on the stack at function scope, and is destroyed at the end of the function block. The object `w` owns no *resources* (such as heap-allocated memory). Its only member `g` is itself declared on the stack and simply goes out of scope along with `w`. Therefore, no special code is needed in the `widget` destructor.
-
-```cpp
-class widget {
-private:
-    gadget g;   // lifetime automatically tied to enclosing object
-public:
-    void draw();
-};
-
-void functionUsingWidget () {
-    widget w;   // lifetime automatically tied to enclosing scope
-                // constructs w, including the w.g gadget member
-    // ...
-    w.draw();
-    // ...
-} // automatic destruction and deallocation for w and w.g
-  // automatic exception safety,
-  // as if "finally { w.dispose(); w.g.dispose(); }"
-```
-
-In the following example, `w` owns a memory resource and therefore must have code in its destructor to delete the memory.
- 
-```cpp
-class widget
-{
-private:
-    int* data;
-public:
-    widget(const int size) { data = new int[size]; } // acquire
-    ~widget() { delete[] data; } // release
-    void do_something() {}
-};
-
-void functionUsingWidget() {
-    widget w(1000000);   // lifetime automatically tied to enclosing scope
-                        // constructs w, including the w.data member
-    w.do_something();
-
-} // automatic destruction and deallocation for w and w.data
-
-```
-
-Since C++11, there is a better way to write the previous example, by using a smart pointer from the Standard Library. The smart pointer handles the allocation and deletion of the memory it owns. This eliminates the need for an explicit destructor in the `widget` class.
+One of the major classes of bugs in C-style programming is the *memory leak* due to failure to release memory or other resources. Modern C++ emphasizes the principle of *resource acquisition is initialization* which states that any resource (heap memory, file handles, sockets, and so on) should be *owned* by an object that creates, or receives, the newly-allocated resource in its constructor, and deletes in its destructor. By adhering to the principle of RAII, you guarantee that all resources will be properly returned to the operating system when the owning object goes out of scope. To support easy adoption of RAII principles, the C++ Standard Library provides three smart pointer types: [std::unique_ptr](../standard-library/unique-ptr-class.md), [std::shared_ptr](../standard-library/shared-ptr-class.md), and [std::weak_ptr](../standard-library/weak-ptr-class.md). A smart pointer handles the allocation and deletion of the memory it owns. The following example shows a class with an array member that is allocated on the heap in the call to `make_unique()`. The calls to **new** and **delete** are encapsulated by the `unique_ptr` class. When a `widget` object goes out of scope, the unique_ptr destructor will be invoked and it will release the memory that was allocated for the array.  
 
 ```cpp
 #include <memory>
@@ -82,27 +37,61 @@ void functionUsingWidget() {
 
 ```
 
-By using smart pointers for memory allocation, and handling other resources such as file handles, sockets, and so on in a similar way in your own classes, you can eliminate the potential for memory leaks. For more information, see [Smart pointers](smart-pointers-modern-cpp.md).
+Whenever possible, use a smart pointer when allocating heap memory. If you must use the new and delete operators explicitly, follow the principle of RAII. For more information, see [Object lifetime and resource management (RAII)](object-lifetime-and-resource-management-modern-cpp.md).
 
-C++ is designed to ensure that objects are destroyed at the correct times, that is, as blocks are exited, in reverse order of construction. When an object is destroyed, its bases and members are destroyed in a particular order. When objects are declared outside of any block, at global scope, problems can arise. When the constructor of a global object throws an exception, typically, the app faults in a way that can be difficult to debug.
+## Use std::string and std::string_view instead of C-style char arrays
+
+C-style strings are another major source of bugs. By using [std::string and std::wstring](../standard-library/basic-string-class.md) you can eliminate virtually all the errors associated with C-style strings, and gain the benefit of member functions for searching, appending, prepending, and so on. Both are highly optimized for speed. When passing a string to a function that requires only read-only access, in (C++17) you can use [std::string_view](../standard-library/basic-string-view-class.md) for even greater performance benefit.
+
+## Use std::vector and other Standard Library containers whenever possible
+
+The Standard Library containers all follow the principle of RAII, provide iterators for safe traversal of elements, are highly optimized for performance and have been thoroughly tested for correctness. By using these containers whenever possible, you eliminate the potential for bugs or inefficiencies that might be introduced in custom data structures. By default, use [vector](../standard-library/vector-class.md) as the preferred sequential container in C++. This is equivalent to `List<T>` in .NET languages.
 
 ```cpp
-widget w; // avoid global scope!
-
-int main()
-{
-    // local function scope OK
-    widget w;
-}
+vector<string> apples;
+apples.push_back("Granny Smith");
 ```
 
-## Prefer std::string, std::vector and other Standard Library containers
+Use [map](../standard-library/map-class.md) (not `unordered_map`) as the default associative container. Use [set](../standard-library/set-class.md), [multimap](../standard-library/multimap-class.md), and [multiset](../standard-library/multiset-class.md) for degenerate and multi cases.
 
-Use [C++ Standard Library](../standard-library/cpp-standard-library-header-files.md) containers whenever possible instead of raw arrays or custom containers. Use `std::string`, `std::wstring` and [std::string_view](../standard-library/string-view-class.md) types instead of raw `char[]` arrays. Use [std::vector](../standard-library/vector-class.md) as the default choice for most other kinds of aggregate data. The Standard Library containers all follow the principle of RAII, provide iterators for safe traversal of elements, are highly optimized for performance and have been thoroughly tested for correctness. For more information, see [\<vector>](../standard-library/vector.md), [\<list>](../standard-library/list.md), and [\<map>](../standard-library/map.md).
+```cpp
+map<string, string> apple_color;
+// ...
+apple_color["Granny Smith"] = "Green";
+```
+
+When performance optimization is needed, consider using:
+
+- The [array](../standard-library/array-class-stl.md) type when embedding is important, for example, as a class member.
+
+- Unordered associative containers such as [unordered_map](../standard-library/unordered-map-class.md). These have lower per-element overhead and constant-time lookup, but they can be harder to use correctly and efficiently.
+
+- Sorted `vector`. For more information, see [Algorithms](../cpp/algorithms-modern-cpp.md).
+
+Don’t use C-style arrays. For older APIs that need direct access to the data, use accessor methods such as `f(vec.data(), vec.size());` instead. For more information about containers, see [C++ Standard Library Containers](../standard-library/stl-containers.md).
 
 ## Prefer Standard Library algorithms
 
 Before you assume that you need to write a custom algorithm for your program, first review the C++ Standard Library [algorithms](../standard-library/algorithm.md). The Standard Library contains an ever-growing assortment of algorithms for many common operations such as searching, sorting, filtering, and randomizing. The math library is extensive. Starting in C++17, parallel versions of many algorithms are provided.
+
+Here are some important examples:
+
+- **for_each**, which is the default traversal algorithm. (Also **transform** for not-in-place semantics.)
+
+- **find_if**, which is the default search algorithm.
+
+- **sort**, **lower_bound**, and the other default sorting and searching algorithms.
+
+To write a comparator, use strict **<** and use *named lambdas* when you can.
+
+```cpp
+auto comp = [](const widget& w1, const widget& w2)
+     { return w1.weight() < w2.weight(); }
+
+sort( v.begin(), v.end(), comp );
+
+auto i = lower_bound( v.begin(), v.end(), comp );
+```
 
 ### Use auto instead of explicit type names
 
@@ -115,7 +104,7 @@ auto i = m.begin(); // modern C++
 
 ## Use range-based for loops to eliminate indexing errors
 
-C-style iteration over arrays and containers is prone to indexing errors and is also tedious to type. To eliminate these errors, and make your code more readable, use range-based for loops with Standard Library containers as well as raw arrays. For more information, see [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md).
+C-style iteration over arrays and containers is prone to indexing errors and is also tedious to type. To eliminate these errors, and make your code more readable, use range-based for loops with Standard Library containers as well as raw arrays. For more information, see [Range-based for statement](../cpp/range-based-for-statement-cpp.md).
 
 ```cpp
 #include <iostream>
@@ -183,6 +172,8 @@ int main()
 }
 ```
 
+For more information, see [Brace initialization](initializing-classes-and-structs-without-constructors-cpp.md).
+
 ## Move semantics to avoid unnecessary copies
 
 Modern C++ provides *move semantics* which make it possible to eliminate unnecessary memory copies which in earlier versions of the language were unavoidable in certain situations. A *move* operation transfers ownership of a resource from one object to the next without making a copy. When implementing a class that owns a resource such as heap memory, file handles, and so on, you can define a *move constructor* and *move assignment operator* for it. The compiler will choose these special members during overload resolution in situations where a copy is not needed. The Standard Library container types invoke the move constructor on objects if one is defined. For more information, see [Move Constructors and Move Assignment Operators (C++)](move-constructors-and-move-assignment-operators-cpp.md).
@@ -202,86 +193,15 @@ The lambda expression `[=](int i) { return i > x && i < y; }` can be read as "fu
 
 ## Exceptions
 
-As a general rule, modern C++ emphasizes exceptions rather than error codes as the best way to report and handle error conditions. However, exceptions may not be appropriate for all kinds of projects. [TBD]
+As a general rule, modern C++ emphasizes exceptions rather than error codes as the best way to report and handle error conditions. For more information, see [Modern C++ best practices for exceptions and error handling](errors-and-exception-handling-modern-cpp.md).
 
-## Lock-free inter-thread communication
+## std::atomic for lock-free inter-thread communication
 
- using C++ Standard Library `std::atomic<>` (see [\<atomic>](../standard-library/atomic.md)) instead of other inter-thread communication mechanisms.
+Use the C++ Standard Library [std::atomic](../standard-library/atomic-structure.md) struct and related types for inter-thread communication mechanisms.
 
-## Pimpl idiom for compile-time encapsulation
+## std::variant instead of unions (C++17)
 
-The *pimpl idiom* is a modern C++ technique to hide implementation, minimize dependencies, separate interfaces, and make a program more portable. Pimpl is short for "pointer to implementation." You may already be familiar with the concept but know it by other names like Cheshire Cat or Compiler Firewall idiom. The following example shows a simple header for a class that uses the pimpl idiom:
-
-```cpp
-// my_class.h
-class my_class {
-   //  ... all public and protected stuff goes here ...
-private:
-   class impl; unique_ptr<impl> pimpl; // opaque type here
-};
-```
-
-Define the `impl` class in the .cpp file.
-
-```cpp
-// my_class.cpp
-class my_class::impl {  // defined privately here
-  // ... all private data and functions: all of these
-  //     can now change without recompiling callers ...
-};
-my_class::my_class(): pimpl( new impl )
-{
-  // ... set impl values ...
-}
-```
-
-## Portability At ABI Boundaries
-
-Use sufficiently portable types and conventions at binary interface boundaries. A “portable type” is a C built-in type or a struct that contains only C built-in types. Class types can only be used when caller and callee agree on layout, calling convention, etc. This is only possible when both are compiled with the same compiler and compiler settings.
-
-When callers may be compiled with another compiler/language, then “flatten” to an **extern "C"** API with a specific calling convention:
-
-```cpp
-// class widget {
-//   widget();
-//   ~widget();
-//   double method( int, gadget& );
-// };
-extern "C" {        // functions using explicit "this"
-   struct widget;   // opaque type (forward declaration only)
-   widget* STDCALL widget_create();      // constructor creates new "this"
-   void STDCALL widget_destroy(widget*); // destructor consumes "this"
-   double STDCALL widget_method(widget*, int, gadget*); // method uses "this"
-}
-```
-
-## std::variant instead of unions
-
-## structured bindings, std::any, std::optional, std::tuple
-
-## literals, digit separators
-
-## standard attributes
-
-## Modules
-
-## Package managers
-
-DELETE after getting anything worth keeping:
-
-- [C++ Type System](../cpp/cpp-type-system-modern-cpp.md)
-
-- [Pimpl For Compile-Time Encapsulation](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md) 
-
-- [Containers](../cpp/containers-modern-cpp.md)
-
-- [Algorithms](../cpp/algorithms-modern-cpp.md)
-
-- [String and I/O Formatting (Modern C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)
-
-MOVE to Exceptions node:
-- [Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)
-
+Unions are commonly used in C-style programming to conserve memory by enabling members of different types to occupy the same memory location. However, unions are not type-safe and are prone to programming errors. C++17 introduces the [std::variant](../standard-library/variant-class.md) class as a more robust and safe alternative to unions. The [std::visit](../standard-library/visit) function can be used to access the members of a `variant` type in a type-safe manner.
 
 ## See also
 
