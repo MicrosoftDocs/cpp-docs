@@ -20,15 +20,13 @@ By default, **fenv_access** is **off**. The compiler assumes your code doesn't a
 
 Enable **fenv_access** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
 
-For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+The [/fp:strict] command-line option automatically enables **fenv_access**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 
 There are restrictions on the ways you can use the **fenv_access** pragma in combination with other floating-point settings:
 
 - You can't enable **fenv_access** unless precise semantics are enabled. Precise semantics can be enabled either by the [float_control](float-control.md) pragma, or by using the [/fp:precise](../build/reference/fp-specify-floating-point-behavior.md) or [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler options. The compiler defaults to **/fp:precise** if no other floating-point command-line option is specified.
 
 - You can't use **float_control** to disable precise semantics when **fenv_access(on)** is set.
-
-These restrictions mean the order of some floating-point pragmas is significant. For more information, see [float_control](float-control.md).
 
 The kinds of optimizations that are subject to **fenv_access** are:
 
