@@ -72,7 +72,7 @@ catch(...) {
 
 ## See also
 
-[C++ Exception Handling](../cpp/cpp-exception-handling.md)<br/>
+[Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [Unhandled C++ Exceptions](../cpp/unhandled-cpp-exceptions.md)<br/>
 [__uncaught_exception](../c-runtime-library/reference/uncaught-exception.md)

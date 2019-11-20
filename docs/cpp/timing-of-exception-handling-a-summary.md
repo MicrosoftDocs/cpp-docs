@@ -1,10 +1,10 @@
 ---
-title: "Timing of Exception Handling: A Summary"
+title: "Timing of exception handling: A summary"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["sequence [C++]", "sequence, of handlers", "exception handling [C++], timing", "setjmpex.h", "termination handlers [C++], timing", "setjmp.h", "handlers [C++], order of exception", "structured exception handling [C++], timing"]
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
 ---
-# Timing of Exception Handling: A Summary
+# Timing of exception handling: A summary
 
 A termination handler is executed no matter how the **__try** statement block is terminated. Causes include jumping out of the **__try** block, a `longjmp` statement that transfers control out of the block, and unwinding the stack due to exception handling.
 
@@ -35,5 +35,5 @@ When the cause for interruption is an exception, the system must first execute t
 
 ## See also
 
-[Writing a Termination Handler](../cpp/writing-a-termination-handler.md)<br/>
+[Writing a termination handler](../cpp/writing-a-termination-handler.md)<br/>
 [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

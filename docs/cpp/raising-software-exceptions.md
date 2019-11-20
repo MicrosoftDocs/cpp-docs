@@ -1,10 +1,10 @@
 ---
-title: "Raising Software Exceptions"
+title: "Raising software exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["run-time errors, treating as exceptions", "exception handling [C++], errors as exceptions", "exceptions [C++], flagging errors as exceptions", "errors [C++], treating as exceptions", "exception handling [C++], detecting errors", "structured exception handling [C++], errors as exceptions", "exceptions [C++], software", "RaiseException function", "software exceptions [C++]", "formats [C++], exception codes"]
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
 ---
-# Raising Software Exceptions
+# Raising software exceptions
 
 Some of the most common sources of program errors are not flagged as exceptions by the system. For example, if you attempt to allocate a memory block but there is insufficient memory, the run-time or API function does not raise an exception but returns an error code.
 
@@ -57,5 +57,5 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
 
 ## See also
 
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
+[Structured exception handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

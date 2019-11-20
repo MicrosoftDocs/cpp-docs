@@ -1,10 +1,10 @@
 ---
-title: "Writing an Exception Filter"
+title: "Writing an exception filter"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling [C++], filters"]
 ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
 ---
-# Writing an Exception Filter
+# Writing an exception filter
 
 You can handle an exception either by jumping to the level of the exception handler or by continuing execution. Instead of using the exception handler code to handle the exception and falling through, you can use *filter* to clean up the problem and then, by returning -1, resume normal flow without clearing the stack.
 
@@ -72,5 +72,5 @@ __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )
 
 ## See also
 
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)<br/>
+[Writing an exception handler](../cpp/writing-an-exception-handler.md)<br/>
 [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
