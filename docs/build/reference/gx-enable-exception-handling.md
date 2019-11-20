@@ -1,6 +1,6 @@
 ---
 title: "/GX (Enable Exception Handling)"
-ms.date: "11/04/2016"
+ms.date: "11/19/2019"
 f1_keywords: ["/gx"]
 helpviewer_keywords: ["exception handling, enabling", "/GX compiler option [C++]", "-GX compiler option [C++]", "cl.exe compiler, exception handling", "enable exception handling compiler option [C++]", "GX compiler option [C++]"]
 ms.assetid: 933b43ba-de77-4ff8-a48b-7074de90bc1c
@@ -20,8 +20,6 @@ Deprecated. Enables synchronous exception handling using the assumption that fun
 **/GX** is deprecated. Use the equivalent [/EHsc](eh-exception-handling-model.md) option instead. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](compiler-options-listed-by-category.md).
 
 By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile by using the Visual Studio development environment. When using the command line tools, no exception handling is specified. This is the equivalent of **/GX-**.
-
-For more information, see [C++ Exception Handling](../../cpp/cpp-exception-handling.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

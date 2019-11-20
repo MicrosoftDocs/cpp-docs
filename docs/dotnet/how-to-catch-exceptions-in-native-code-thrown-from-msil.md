@@ -8,7 +8,7 @@ ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
 
 In native code, you can catch native C++ exception from MSIL.  You can catch CLR exceptions with `__try` and `__except`.
 
-For more information, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md) and [C++ Exception Handling](../cpp/cpp-exception-handling.md).
+For more information, see [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md) and [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md).
 
 ## Example
 

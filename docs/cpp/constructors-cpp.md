@@ -1,6 +1,6 @@
 ---
 title: "Constructors (C++)"
-ms.date: "10/17/2019"
+ms.date: "11/19/2019"
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ---
@@ -533,7 +533,7 @@ public:
 };
 ```
 
-The object created by the constructors is fully initialized as soon as any constructor is finished. For more information, see [Uniform Initialization and Delegating Constructors](../cpp/uniform-initialization-and-delegating-constructors.md).
+The object created by the constructors is fully initialized as soon as any constructor is finished. For more information, see [Delegating Constructors](../cpp/delegating-constructors.md).
 
 ## <a name="inheriting_constructors"></a> Inheriting constructors (C++11)
 
@@ -588,7 +588,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=vs-2017"
 
-**Visual Studio 2017 version 15.7 and later**: The **using** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
+**Visual Studio 2017 and later**: The **using** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
 
 ::: moniker-end
 
@@ -636,3 +636,13 @@ int main(){
     StorageBox sb3(1, 2, 3, {"myname", "myaddress"});
 }
 ```
+
+## In this section
+
+- [Copy constructors and copy assignment operators](copy-constructors-and-copy-assignment-operators-cpp.md)
+- [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md)
+- [Delegating constructors](delegating-constructors.md)
+
+## See also
+
+[Classes and structs](classes-and-structs-cpp.md)

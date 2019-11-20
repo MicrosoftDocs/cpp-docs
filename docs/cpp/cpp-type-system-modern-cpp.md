@@ -1,10 +1,10 @@
 ---
-title: "C++ Type System (Modern C++)"
-ms.date: "11/19/2018"
+title: "C++ type system"
+ms.date: "11/19/2019"
 ms.topic: "conceptual"
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
 ---
-# C++ Type System (Modern C++)
+# C++ type system
 
 The concept of *type* is very important in C++. Every variable, function argument, and function return value must have a type in order to be compiled. Also, every expression (including literal values) is implicitly given a type by the compiler before it is evaluated. Some examples of types include **int** to store integral values, **double** to store floating-point values (also known as *scalar* data types), or the Standard Library class [std::basic_string](../standard-library/basic-string-class.md) to store text. You can create your own type by defining a **class** or **struct**. The type specifies the amount of memory that will be allocated for the variable (or expression result), the kinds of values that may be stored in that variable, how those values (as bit patterns) are interpreted, and the operations that can be performed on it. This article contains an informal overview of the major features of the C++ type system.
 
@@ -162,6 +162,6 @@ For more information about the C++ type system, see the following topics.
 
 ## See also
 
-[Welcome Back to C++ (Modern C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Welcome back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

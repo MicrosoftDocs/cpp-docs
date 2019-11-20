@@ -731,8 +731,18 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/cpp-exception-handling.md",
+         "redirect_url": "/cpp/cpp/exception-handling-in-visual-cpp",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/types-of-linkage.md",
          "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/uniform-initialization-and-delegating-constructors.md",
+         "redirect_url": "/cpp/cpp/initializing-classes-and-structs-without-constructors-cpp",
          "redirect_document_id": false
       },
       {
