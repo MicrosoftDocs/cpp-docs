@@ -16,7 +16,9 @@ Disables (**on**) or enables (**off**) optimizations that could change floating-
 
 ## Remarks
 
-By default, **fenv_access** is **off**. If the compiler can assume that your code does not access or manipulate the floating-point environment, then it can perform many floating-point code optimizations. Set **fenv_access**  to **on** to inform the compiler that your code accesses the floating-point environment to test status flags, exceptions, or to set control mode flags. The compiler disables these optimizations so that your code can access the floating-point environment consistently.
+By default, **fenv_access** is **off**. The compiler assumes your code doesn't access or manipulate the floating-point environment. If environment access isn't required, the compiler can do more to optimize your floating-point code.
+
+Enable **fenv_access** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
 
 For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 
@@ -74,7 +76,7 @@ int main() {
 out=9.999999776482582e-03
 ```
 
-If you comment out `#pragma fenv_access (on)` from the previous sample, note that the output is different because the compiler does compile-time evaluation, which does not use the control mode.
+If you comment out `#pragma fenv_access (on)` from the previous sample, the output is different. It's because the compiler does compile-time evaluation, which doesn't use the control mode.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp

@@ -20,10 +20,10 @@ Specifies floating-point behavior for a function.
 ## Options
 
 **precise**, **on** | **off**, **push**\
-Specifies whether to enable (**on**) or disable (**off**) precise floating-point semantics. For information on how this option differs from the similarly named **/fp:precise** compiler option, see the Remarks section. If the optional **push** token is added, the current setting for **float_control** is pushed on to the internal compiler stack.
+Specifies whether to enable (**on**) or disable (**off**) precise floating-point semantics. For information on how this option differs from the similarly named **/fp:precise** compiler option, see the Remarks section. The optional **push** token tells the compiler to push the current setting for **float_control** on the internal compiler stack.
 
 **except**, **on** | **off**, **push**\
-Specifies whether to enable (**on**) or disable (**off**) floating-point exception semantics. For information on how this option differs from the similarly named **/fp:except** compiler option, see the Remarks section. If the optional **push** token is added, the current setting for **float_control** is pushed on to the internal compiler stack.
+Specifies whether to enable (**on**) or disable (**off**) floating-point exception semantics. For information on how this option differs from the similarly named **/fp:except** compiler option, see the Remarks section. The optional **push** token tells the compiler to push the current setting for **float_control** on the internal compiler stack.
 
 **except** can only be set to **on** when **precise** is also set to **on**.
 
@@ -47,15 +47,15 @@ The **precise** and **except** options don't have exactly the same behavior as t
 
 In other words, you must use several pragmas in combination to emulate the **/fp:fast**, **/fp:precise**, **/fp:strict**, and **/fp:except** command-line options.
 
-There are restrictions on the ways you can use the **float_control** and [fenv_access](../preprocessor/fenv-access.md) floating-point pragmas in combination:
+There are restrictions on the ways you can use the **float_control** and **fenv_access** floating-point pragmas in combination:
 
 - You can only use **float_control** to set **except** to **on** if precise semantics are enabled. Precise semantics can be enabled either by the **float_control** pragma, or by using the **/fp:precise** or **/fp:strict** compiler options.
 
 - You can't use **float_control** to turn **precise** off when exception semantics are enabled, whether by a **float_control** pragma or a **/fp:except** compiler option.
 
-- You can't enable [fenv_access](../preprocessor/fenv-access.md) unless precise semantics are enabled, whether by a **float_control** pragma or a compiler option.
+- You can't enable **fenv_access** unless precise semantics are enabled, whether by a **float_control** pragma or a compiler option.
 
-- You can't use **float_control** to turn **precise** off when **fenv_access(on)** is set.
+- You can't use **float_control** to turn **precise** off when **fenv_access** is enabled.
 
 These restrictions mean the order of some floating-point pragmas is significant. To go from a fast model to a strict model using the **float_control** and related pragmas, use the following code:
 
