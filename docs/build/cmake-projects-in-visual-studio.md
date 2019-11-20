@@ -185,7 +185,7 @@ If you need to pass arguments to an executable at debug time, you can use anothe
 
 ## Import an existing cache
 
-When you import an existing *CMakeCache.txt* file, Visual Studio automatically extracts customized variables and creates a pre-populated *CMakeSettings.json* file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  *CMakeSettings.json* file is placed alongside the project’s root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
+When you import an existing *CMakeCache.txt* file, Visual Studio automatically extracts customized variables and creates a pre-populated *CMakeSettings.json* file based on them. The original cache is not modified in any way and can still be used from the command line or with whatever tool or IDE was used to generate it. The new  *CMakeSettings.json* file is placed alongside the project's root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
 
 Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 

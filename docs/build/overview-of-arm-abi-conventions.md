@@ -181,7 +181,7 @@ The stack must remain 4-byte aligned at all times, and must be 8-byte aligned at
 
 Functions that have to use a frame pointer—for example, functions that call `alloca` or that change the stack pointer dynamically—must set up the frame pointer in r11 in the function prologue and leave it unchanged until the epilogue. Functions that do not require a frame pointer must perform all stack updates in the prologue and leave the stack pointer unchanged until the epilogue.
 
-Functions that allocate 4 KB or more on the stack must ensure that each page prior to the final page is touched in order. This ensures that no code can “leap over” the guard pages that Windows uses to expand the stack. Typically, this is done by the `__chkstk` helper, which is passed the total stack allocation in bytes divided by 4 in r4, and which returns the final stack allocation amount in bytes back in r4.
+Functions that allocate 4 KB or more on the stack must ensure that each page prior to the final page is touched in order. This ensures that no code can "leap over" the guard pages that Windows uses to expand the stack. Typically, this is done by the `__chkstk` helper, which is passed the total stack allocation in bytes divided by 4 in r4, and which returns the final stack allocation amount in bytes back in r4.
 
 ### Red zone
 
