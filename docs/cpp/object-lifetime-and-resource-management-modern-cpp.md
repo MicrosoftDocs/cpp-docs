@@ -7,9 +7,13 @@ ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
 ---
 # Object lifetime and resource management (RAII)
 
-Unlike managed languages, C++ has no garbage collection process that releases heap memory and other resources as a program runs. A program is responsible for returning all acquired resources to the operating system. Failure to release a resource results in a *leak* and renders the resource unavailable to other programs. Memory leaks in particular are a common cause of bugs in C-style programming. Modern C++ avoids using heap memory as much as possible by declaring objects on the stack. When an resource is too large for the stack, then it should be *owned* by an object that is responsible for releasing the resource in its destructor. The principle that *objects own resources* is also known as "resource acquisition is initialization" or "RAII". The owning object itself is declared on the stack, so that when the goes out of scope, its destructor is automatically invoked. In this way, garbage collection in C++ is closely related to object lifetime and is deterministic. A resource is always released at a known point in the program, which you can control. Only deterministic destructors like those in C++ can handle memory and non-memory resources equally. 
+Unlike managed languages, C++ doesn't have automatic *garbage collection*. That's an internal process that releases heap memory and other resources as a program runs. A C++ program is responsible for returning all acquired resources to the operating system. Failure to release an unused resource is called a *leak*. Leaked resources are unavailable to other programs until the process exits. Memory leaks in particular are a common cause of bugs in C-style programming.
 
-The following example shows a simple object `w`. It is declared on the stack at function scope, and is destroyed at the end of the function block. The object `w` owns no *resources* (such as heap-allocated memory). Its only member `g` is itself declared on the stack and simply goes out of scope along with `w`. Therefore, no special code is needed in the `widget` destructor.
+Modern C++ avoids using heap memory as much as possible by declaring objects on the stack. When a resource is too large for the stack, then it should be *owned* by an object. As the object gets initialized, it acquires the resource it owns. The object is then responsible for releasing the resource in its destructor. The owning object itself is declared on the stack. The principle that *objects own resources* is also known as "resource acquisition is initialization," or RAII.
+
+When a resource-owning stack object goes out of scope, its destructor is automatically invoked. In this way, garbage collection in C++ is closely related to object lifetime, and is deterministic. A resource is always released at a known point in the program, which you can control. Only deterministic destructors like those in C++ can handle memory and non-memory resources equally.
+
+The following example shows a simple object `w`. It's declared on the stack at function scope, and is destroyed at the end of the function block. The object `w` owns no *resources* (such as heap-allocated memory). Its only member `g` is itself declared on the stack, and simply goes out of scope along with `w`. No special code is needed in the `widget` destructor.
 
 ```cpp
 class widget {
@@ -30,7 +34,7 @@ void functionUsingWidget () {
   // as if "finally { w.dispose(); w.g.dispose(); }"
 ```
 
-In the following example, `w` owns a memory resource and therefore must have code in its destructor to delete the memory.
+In the following example, `w` owns a memory resource and so must have code in its destructor to delete the memory.
  
 ```cpp
 class widget
@@ -52,7 +56,7 @@ void functionUsingWidget() {
 
 ```
 
-Since C++11, there is a better way to write the previous example, by using a smart pointer from the Standard Library. The smart pointer handles the allocation and deletion of the memory it owns. This eliminates the need for an explicit destructor in the `widget` class.
+Since C++11, there's a better way to write the previous example: by using a smart pointer from the standard library. The smart pointer handles the allocation and deletion of the memory it owns. Using a smart pointer eliminates the need for an explicit destructor in the `widget` class.
 
 ```cpp
 #include <memory>
@@ -75,9 +79,9 @@ void functionUsingWidget() {
 
 ```
 
-By using smart pointers for memory allocation, and handling other resources such as file handles, sockets, and so on in a similar way in your own classes, you can eliminate the potential for memory leaks. For more information, see [Smart pointers](smart-pointers-modern-cpp.md).
+By using smart pointers for memory allocation, you may eliminate the potential for memory leaks. This model works for other resources, such as file handles or sockets. You can manage your own resources in a similar way in your classes. For more information, see [Smart pointers](smart-pointers-modern-cpp.md).
 
-C++ is designed to ensure that objects are destroyed at the correct times, that is, as blocks are exited, in reverse order of construction. When an object is destroyed, its bases and members are destroyed in a particular order. When objects are declared outside of any block, at global scope, problems can arise. When the constructor of a global object throws an exception, typically, the app faults in a way that can be difficult to debug.
+The design of C++ ensures objects are destroyed when they go out of scope. That is, they get destroyed as blocks are exited, in reverse order of construction. When an object is destroyed, its bases and members are destroyed in a particular order. Objects declared outside of any block, at global scope, can lead to problems. It may be difficult to debug, if the constructor of a global object throws an exception.
 
 ## See also
 
