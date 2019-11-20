@@ -56,6 +56,11 @@
          "redirect_document_id": true
       },
       {
+         "source_path": "docs/cpp/string-and-i-o-formatting-modern-cpp.md",
+         "redirect_url": "/cpp/text/string-and-i-o-formatting-modern-cpp",
+         "redirect_document_id": true
+      },
+      {
          "source_path": "docs/vcpkg.md",
          "redirect_url": "/cpp/build/vcpkg",
          "redirect_document_id": true
@@ -731,6 +736,21 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/objects-own-resources-raii.md",
+         "redirect_url": "/cpp/cpp/object-lifetime-and-resource-management-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/algorithms-modern-cpp.md",
+         "redirect_url": "/cpp/cpp/welcome-back-to-cpp-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/containers-modern-cpp.md",
+         "redirect_url": "/cpp/cpp/welcome-back-to-cpp-modern-cpp",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/cpp-exception-handling.md",
          "redirect_url": "/cpp/cpp/exception-handling-in-visual-cpp",
          "redirect_document_id": false
@@ -872,17 +892,17 @@
       },
       {
          "source_path": "docs/c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md",
-         "redirect_url": "/cpp/c-runtime-library/reference/cos-cosf-cosl.md",
+         "redirect_url": "/cpp/c-runtime-library/reference/cos-cosf-cosl",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md",
-         "redirect_url": "/cpp/c-runtime-library/reference/sin-sinf-sinl.md",
+         "redirect_url": "/cpp/c-runtime-library/reference/sin-sinf-sinl",
          "redirect_document_id": false
       },
       {
          "source_path": "docs/c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md",
-         "redirect_url": "/cpp/c-runtime-library/reference/tan-tanf-tanl.md",
+         "redirect_url": "/cpp/c-runtime-library/reference/tan-tanf-tanl",
          "redirect_document_id": false
       },
       {
@@ -962,7 +982,7 @@
       },
       {
          "source_path": "docs/ide/cmakesettings-reference.md",
-         "redirect_url": "/cpp/build/cmakesettings-reference.md",
+         "redirect_url": "/cpp/build/cmakesettings-reference",
          "redirect_document_id": true
       },
       {
