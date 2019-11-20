@@ -56,6 +56,11 @@
          "redirect_document_id": true
       },
       {
+         "source_path": "docs/cpp/string-and-i-o-formatting-modern-cpp.md",
+         "redirect_url": "/cpp/text/string-and-i-o-formatting-modern-cpp",
+         "redirect_document_id": true
+      },
+      {
          "source_path": "docs/vcpkg.md",
          "redirect_url": "/cpp/build/vcpkg",
          "redirect_document_id": true
