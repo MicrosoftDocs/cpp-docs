@@ -7,7 +7,7 @@ ms.assetid: 18e528ee-df6c-4ce6-8823-b35b40f757fd
 ---
 # PUSHCONTEXT
 
-Saves part or all of the current `context`: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.
+Saves part or all of the current *context*: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The *context* can be **ASSUMES**, **RADIX**, **LISTING**, **CPU**, or **ALL**.
 
 ## Syntax
 

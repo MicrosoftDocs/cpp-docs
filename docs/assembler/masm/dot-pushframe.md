@@ -7,11 +7,11 @@ ms.assetid: 17b123d0-4c6d-4fd2-85eb-798e8ad0a73c
 ---
 # .PUSHFRAME
 
-Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional `code` is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.
+Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional *code* is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.
 
 ## Syntax
 
-> **.PUSHFRAME** [code]
+> **.PUSHFRAME** ⟦*code*⟧;;
 
 ## Remarks
 

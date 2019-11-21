@@ -15,7 +15,7 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ## Remarks
 
-`XMMWORD` is intended to represent the same type as [__m128](../../cpp/m128.md).
+**XMMWORD** is intended to represent the same type as [__m128](../../cpp/m128.md).
 
 ## Example
 

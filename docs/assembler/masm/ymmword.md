@@ -15,7 +15,7 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## Remarks
 
-`YMMWORD` is intended to represent the same type as `__m256` for the AVX intrinsics.
+**YMMWORD** is intended to represent the same type as `__m256` for the AVX intrinsics.
 
 ## See also
 

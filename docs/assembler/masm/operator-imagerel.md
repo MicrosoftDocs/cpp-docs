@@ -7,7 +7,7 @@ ms.assetid: 5b5ea425-36f0-467c-9262-62c484b7fdb4
 ---
 # operator IMAGEREL
 
-Returns the image relative offset of `expression`.
+Returns the image relative offset of *expression*.
 
 ## Syntax
 

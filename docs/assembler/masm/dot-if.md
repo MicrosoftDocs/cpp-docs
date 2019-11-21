@@ -7,7 +7,7 @@ ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
 ---
 # .IF (32-bit MASM)
 
-Generates code that tests `condition1` (for example, AX > 7) and executes the *statements* if that condition is true. (32-bit MASM only.)
+Generates code that tests *condition1* (for example, AX > 7) and executes the *statements* if that condition is true. (32-bit MASM only.)
 
 ## Syntax
 
