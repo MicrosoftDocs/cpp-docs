@@ -9,7 +9,7 @@ ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
 
 Grants assembly of *ifstatements* if *expression1* is true (nonzero) or *elseifstatements* if *expression1* is false (0) and *expression2* is true.
 
-## Syntax
+## Syntax 
 
 > IF *expression1*<br/>
 > *ifstatements*<br/>

@@ -9,7 +9,7 @@ ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
 
 Enables and disables features of the assembler.
 
-## Syntax
+## Syntax 
 
 > OPTION *optionlist*
 
