@@ -11,7 +11,7 @@ Generates an error if the text items are different.
 
 ## Syntax
 
-> **.ERRDIF**\[**I**] *textitem1*__,__ *textitem2* \[__,__ *message*]
+> **.ERRDIF**[[**I**]] *textitem1*__,__ *textitem2* [[__,__ *message*]]
 
 ## Remarks
 

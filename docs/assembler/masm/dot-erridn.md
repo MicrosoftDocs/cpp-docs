@@ -11,7 +11,7 @@ Generates an error if the text items are identical.
 
 ## Syntax
 
-> **.ERRIDN**[[**I**]] *textitem1*__,__ *textitem2* \[__,__ *message*]
+> **.ERRIDN**[[**I**]] *textitem1*__,__ *textitem2* [[__,__ *message*]]
 
 ## Remarks
 

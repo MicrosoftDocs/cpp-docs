@@ -15,7 +15,7 @@ Concatenates text items.
 
 ## Remarks
 
-Each text item can be a literal string, a constant preceded by a **%**, or the string returned by a macro function.
+Each text item can be a literal string, a constant preceded by a **%**, or the string returned by a macro function. **CATSTR** is a synonym for [TEXTEQU](textequ.md).
 
 ## See also
 
