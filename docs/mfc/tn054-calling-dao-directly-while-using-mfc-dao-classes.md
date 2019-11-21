@@ -60,8 +60,7 @@ The V_BSTRT macro, along with other techniques to open other types that are stor
 Situations may arise when it is necessary to refresh the underlying DAO collection objects. Normally, this should not be necessary, but it is a simple procedure if it is necessary. An example of when a collection might need to be refreshed is when operating in a multiuser environment with multiple users creating new tabledefs. In this case your tabledefs collection might become stale. To refresh the collection, you simply need to call the `Refresh` method of the particular collection object and check for errors:
 
 ```cpp
-DAO
-_CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
+DAO_CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
 ```
 
 Note that currently all DAO collection object interfaces are undocumented implementation details of the MFC DAO database classes.
