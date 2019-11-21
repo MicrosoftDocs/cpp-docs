@@ -4,7 +4,7 @@ description: "Describes the predefined NMAKE macros for build tools and their op
 ms.date: "11/20/2019"
 helpviewer_keywords: ["options macros", "command macros in NMAKE", "macros, options macros", "macros, command macros"]
 ms.assetid: 50dff03c-0dc3-4a8a-9a17-57e0e4ea9bac
-no-loc: [AS, AFLAGS, CC, CFLAGS, CXX, CXXFLAGS, RC, RFLAGS, ml, ml64, cl, rc]
+no-loc: [AS, AFLAGS, CC, CFLAGS, CPP, CPPFLAGS, CXX, CXXFLAGS, RC, RFLAGS, ias, ml, ml64, cl, rc]
 ---
 # Command macros and options macros
 
