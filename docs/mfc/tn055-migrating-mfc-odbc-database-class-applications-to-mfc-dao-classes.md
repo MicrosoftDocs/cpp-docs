@@ -7,7 +7,7 @@ ms.assetid: 0f858bd1-e168-4e2e-bcd1-8debd82856e4
 # TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes
 
 > [!NOTE]
-> DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
+> DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
 
 ## Overview
 

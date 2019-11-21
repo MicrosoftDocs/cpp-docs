@@ -145,7 +145,7 @@ To complete this walkthrough, you must have Visual Studio installed with the **D
 
 ## To verify the results
 
-Build and run the application. It should have a gradient rectangle that changes when you resize the window. “Hello World!” should be displayed in the center of the rectangle.
+Build and run the application. It should have a gradient rectangle that changes when you resize the window. "Hello World!" should be displayed in the center of the rectangle.
 
 ## See also
 

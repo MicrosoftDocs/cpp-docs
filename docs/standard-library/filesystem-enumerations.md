@@ -116,7 +116,7 @@ enum class perm_options;
 
 ## <a name="perms"></a>  perms
 
-Flags for file permissions. The supported values are essentially “readonly” and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.
+Flags for file permissions. The supported values are essentially "readonly" and all. For a readonly file, none of the *_write bits are set. Otherwise the `all` bit (0x0777) is set.
 
 ### Syntax
 

@@ -7,7 +7,7 @@ ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
 ---
 # Dialog Data Exchange Functions for CRecordView and CDaoRecordView
 
-This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form. DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete.
+This topic lists the DDX_Field functions used to exchange data between a [CRecordset](../../mfc/reference/crecordset-class.md) and a [CRecordView](../../mfc/reference/crecordview-class.md) form or a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) and a [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) form. DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 > [!NOTE]
 >  DDX_Field functions are like DDX functions in that they exchange data with controls in a form. But unlike DDX, they exchange data with the fields of the view's associated recordset object rather than with fields of the record view itself. For more information, see classes `CRecordView` and `CDaoRecordView`.

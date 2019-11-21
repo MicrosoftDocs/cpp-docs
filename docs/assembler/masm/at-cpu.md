@@ -5,14 +5,14 @@ f1_keywords: ["@Cpu"]
 helpviewer_keywords: ["@Cpu symbol"]
 ms.assetid: 04f9fdf6-9772-407e-9c09-c12bed29087b
 ---
-# @Cpu
+# \@Cpu
 
 A bit mask specifying the processor mode (numeric equate).
 
 ## Syntax
 
-> @Cpu
+> **\@Cpu**
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols Reference](../../assembler/masm/symbols-reference.md)

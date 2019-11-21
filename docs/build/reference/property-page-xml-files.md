@@ -88,7 +88,7 @@ The following section describes each major elements and some of the metadata tha
 
    e. **xmlns:** This is a standard XAML element. You can see three namespaces listed. These correspond to the namespaces for the XAML deserialization classes, XAML schema and system namespace, respectively.
 
-   f. **DisplayName:** This is the name that is shown on the property page UI for the Rule node. This value is localized. We created DisplayName as a child element of Rule rather than as an attribute (like Name or SwitchPrefix) because of internal localization tool requirements. From XAML’s perspective, both are equivalent. So, you can just make it an attribute to reduce clutter or leave it as it is.
+   f. **DisplayName:** This is the name that is shown on the property page UI for the Rule node. This value is localized. We created DisplayName as a child element of Rule rather than as an attribute (like Name or SwitchPrefix) because of internal localization tool requirements. From XAML's perspective, both are equivalent. So, you can just make it an attribute to reduce clutter or leave it as it is.
 
    g. **DataSource:** This is a very important property that tells the project system the location from which the property value should read from and written to, and its grouping (explained below). For cl.xml, these values are:
 
@@ -105,7 +105,7 @@ The following section describes each major elements and some of the metadata tha
    - `HasConfigurationCondition="true"` tells the project system to affix a configuration condition to the value so that it takes effect only for the current project configuration (the condition could be affixed to the parent group or the value itself). For example,  open the property pages off the project node and set the value of the property **Treat Warnings As Error** under **Configuration Properties > C/C++ General** to "Yes". The following value is written to the project file. Notice the configuration condition attached to the parent ItemDefinitionGroup.
 
       ```xml
-      <ItemDefinitionGroup Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
         <ClCompile>
           <TreatWarningAsError>true</TreatWarningAsError>
         </ClCompile>
@@ -117,14 +117,14 @@ The following section describes each major elements and some of the metadata tha
       ```xml
       <ItemGroup>
         <ClCompile Include="stdafx.cpp">
-          <TreatWarningAsError Condition="‘$(Configuration)|$(Platform)’==’Debug|Win32’">true</TreatWarningAsError>
+          <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
         </ClCompile>
       </ItemGroup>
       ```
 
-   Another attribute of **DataSource** not listed above is **PersistedName**. You can use this attribute to represent a property in the project file using a different name. By default this attribute is set to the property’s **Name**.
+   Another attribute of **DataSource** not listed above is **PersistedName**. You can use this attribute to represent a property in the project file using a different name. By default this attribute is set to the property's **Name**.
 
-   An individual property can override its parent Rule’s DataSource. In that case,  the location for that property’s value will be different from other properties in the Rule.
+   An individual property can override its parent Rule's DataSource. In that case,  the location for that property's value will be different from other properties in the Rule.
 
    h. There are other attributes of a Rule, including Description and SupportsFileBatching, that are not shown here. The full set of attributes applicable to a Rule or on any other element can be obtained by browsing the documentation for these types. Alternately, you can examine the public properties on the types in the `Microsoft.Build.Framework.XamlTypes` namespace in the `Microsoft.Build.Framework .dll` assembly.
 
@@ -142,7 +142,7 @@ The following section describes each major elements and some of the metadata tha
 
    The above snippet shows the **Name** and **DisplayName** attributes that have been described before. Once again, there are other attributes a **Category** can have that are not used above. You can know about them by reading the documentation or by examining the assemblies using ildasm.exe.
 
-1. **Properties:** This is the meat of the xml file and contains the list of all properties in this Rule. Each property can be one of five possible types shown in the XAML skeleton above. Of course, you could have only a few of those types in your file. A property has a number of attributes that allow it to be described richly. I’ll explain only the **StringProperty** here. The rest are very similar.
+1. **Properties:** This is the meat of the xml file and contains the list of all properties in this Rule. Each property can be one of five possible types shown in the XAML skeleton above. Of course, you could have only a few of those types in your file. A property has a number of attributes that allow it to be described richly. I'll explain only the **StringProperty** here. The rest are very similar.
 
     ```xml
     <StringProperty Subtype="file" Name="ObjectFileName" Category="Output Files" Switch="Fo">
@@ -157,7 +157,7 @@ The following section describes each major elements and some of the metadata tha
 
    Most of the attributes in the snippet have been described before. The new ones are Subtype, Category and Switch.
 
-   a. **Subtype** is an attribute available only for **StringProperty** and **StringListProperty**; it gives contextual information. For example, the value of "file" indicates that the property represents a file path. Such contextual information is used to enhance the editing experience by providing a Windows Explorer as the property’s editor that allows the user to choose the file visually.
+   a. **Subtype** is an attribute available only for **StringProperty** and **StringListProperty**; it gives contextual information. For example, the value of "file" indicates that the property represents a file path. Such contextual information is used to enhance the editing experience by providing a Windows Explorer as the property's editor that allows the user to choose the file visually.
 
    b. **Category:** This declares the category under which this property falls. Try to find this property under the **Output Files** category in the UI.
 
@@ -165,8 +165,8 @@ The following section describes each major elements and some of the metadata tha
 
    Other property attributes include:
 
-   d. **Visible:** If for some reason, you don’t want your property to show up in the property pages (but probably still available during build time), set this attribute to false.
+   d. **Visible:** If for some reason, you don't want your property to show up in the property pages (but probably still available during build time), set this attribute to false.
 
-   e. **ReadOnly:** If you want to provide a read-only view of this property’s value in the property pages, set this attribute to true.
+   e. **ReadOnly:** If you want to provide a read-only view of this property's value in the property pages, set this attribute to true.
 
    f. **IncludeInCommandLine:** Some properties may not need to be passed to a tool during build time. Setting this attribute to false will prevent it from being passed.

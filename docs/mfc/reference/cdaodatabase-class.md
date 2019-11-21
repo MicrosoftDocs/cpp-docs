@@ -7,7 +7,7 @@ ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
 ---
 # CDaoDatabase Class
 
-Represents a connection to an Access database using Data Access Objects (DAO). DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.
+Represents a connection to an Access database using Data Access Objects (DAO). DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

@@ -25,7 +25,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option helps you identify code that doesn't conform to the current C++ standard.
 
-- Better run-time security, including more secure [C Runtime library]() features. And, compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (new in Visual Studio 2019 version 16.4).
+- Better run-time security, including more secure [C Runtime library](../c-runtime-library/security-features-in-the-crt.md) features. And, compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (new in Visual Studio 2019 version 16.4).
 
 ## Multitargeting vs. upgrading
 

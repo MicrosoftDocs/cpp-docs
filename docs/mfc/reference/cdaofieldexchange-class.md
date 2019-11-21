@@ -9,8 +9,7 @@ ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
 
 Supports the DAO record field exchange (DFX) routines used by the DAO database classes.
 
-DAO is supported through Office 2013. DAO 3.6 is the final version and it is considered obsolete.
-
+DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 
