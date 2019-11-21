@@ -527,7 +527,7 @@ To fix this issue, you could copy the library file directly into your client app
 
    If your DLL and client projects are in the same solution, the relative path should look like this:
 
-   `..\MathLibrary\$(IntDir)`
+   `..\$(IntDir)`
 
    ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
 
