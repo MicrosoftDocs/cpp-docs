@@ -11,7 +11,7 @@ Generates an error if *expression* is true (nonzero).
 
 ## Syntax
 
-> **.ERRNZ** *expression* [[, *message*]]
+> **.ERRNZ** *expression* ⟦, *message*⟧
 
 ## See also
 

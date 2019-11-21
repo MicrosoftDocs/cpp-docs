@@ -11,7 +11,7 @@ Allocates and optionally initializes a signed byte of storage for each *initiali
 
 ## Syntax
 
-> *name*  **SBYTE** *initializer* [[, *initializer*]]...
+> *name*  **SBYTE** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

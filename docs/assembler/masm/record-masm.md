@@ -11,7 +11,7 @@ Declares a record type consisting of the specified fields. *fieldname* names the
 
 ## Syntax
 
-> *recordname* **RECORD** *fieldname*:*width* [[= *expression*]] [[, *fieldname*:*width* [[= *expression*]] ]] ...
+> *recordname* **RECORD** *fieldname*:*width* ⟦= *expression*⟧ ⟦, *fieldname*:*width* ⟦= *expression*⟧ ⟧ ...
 
 ## See also
 

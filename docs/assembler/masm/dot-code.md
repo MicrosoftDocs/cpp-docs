@@ -11,7 +11,7 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 
 ## Syntax
 
-> **.CODE** [[*name*]]
+> **.CODE** ⟦*name*⟧
 
 #### Parameters
 

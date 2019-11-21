@@ -11,7 +11,7 @@ Declares a structure type having the specified *field-declarations*. Each field 
 
 ## Syntax
 
-> *name*  **STRUCT** [[*alignment*]] [[, **NONUNIQUE**]]<br/>
+> *name*  **STRUCT** ⟦*alignment*⟧ ⟦, **NONUNIQUE**⟧<br/>
 > *field-declarations*<br/>
 > *name*  **ENDS**
 

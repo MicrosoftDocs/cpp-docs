@@ -13,10 +13,10 @@ Grants assembly of *ifstatements* if *expression1* is true (nonzero) or *elseifs
 
 > **IF** *expression1*<br/>
 > *ifstatements*<br/>
-> [[**ELSEIF** *expression2*<br/>
-> *elseifstatements*]]<br/>
-> [[**ELSE**<br/>
-> *elsestatements*]]<br/>
+> ⟦**ELSEIF** *expression2*<br/>
+> *elseifstatements*⟧<br/>
+> ⟦**ELSE**<br/>
+> *elsestatements*⟧<br/>
 > **ENDIF**
 
 ## Remarks

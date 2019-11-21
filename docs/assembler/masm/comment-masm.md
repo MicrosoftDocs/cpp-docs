@@ -11,9 +11,9 @@ Treats all *text* between or on the same line as the delimiters as a comment.
 
 ## Syntax
 
-> **COMMENT** *delimiter* [[*text*]]<br/>
-> [[*text*]]<br/>
-> [[*text*]] *delimiter* [[*text*]]
+> **COMMENT** *delimiter* ⟦*text*⟧<br/>
+> ⟦*text*⟧<br/>
+> ⟦*text*⟧ *delimiter* ⟦*text*⟧
 
 ## See also
 

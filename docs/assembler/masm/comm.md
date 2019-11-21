@@ -11,7 +11,7 @@ Creates a communal variable with the attributes specified in *definition*.
 
 ## Syntax
 
-> **COMM** *definition* [[, *definition*]] ...
+> **COMM** *definition* ⟦, *definition*⟧ ...
 
 ## Remarks
 

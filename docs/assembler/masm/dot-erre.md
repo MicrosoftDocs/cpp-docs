@@ -11,7 +11,7 @@ Generates an error if *expression* is false (0).
 
 ## Syntax
 
-> **.ERRE** *expression* [[, *message*]]
+> **.ERRE** *expression* ⟦, *message*⟧
 
 ## See also
 

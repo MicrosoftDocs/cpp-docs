@@ -11,7 +11,7 @@ Allocates and optionally initializes a double-precision (8-byte) floating-point 
 
 ## Syntax
 
-> *name* **REAL8** *initializer* [[, *initializer*]]...
+> *name* **REAL8** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

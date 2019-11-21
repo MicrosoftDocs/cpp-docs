@@ -11,7 +11,7 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), defines a stack segm
 
 ## Syntax
 
-> **.STACK** [[*size*]]
+> **.STACK** ⟦*size*⟧
 
 ## See also
 

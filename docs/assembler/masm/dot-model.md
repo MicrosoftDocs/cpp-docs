@@ -11,7 +11,7 @@ Initializes the program memory model. (32-bit MASM only.)
 
 ## Syntax
 
-> **.MODEL** *memorymodel* [[, *langtype*]] [[, *stackoption*]]
+> **.MODEL** *memorymodel* ⟦, *langtype*⟧ ⟦, *stackoption*⟧
 
 ### Parameters
 

@@ -11,7 +11,7 @@ Generates code to jump to the top of a [.WHILE](../../assembler/masm/dot-while.m
 
 ## Syntax
 
-> **.CONTINUE** [[**.IF** *condition*]]
+> **.CONTINUE** ⟦**.IF** *condition*⟧
 
 ## See also
 

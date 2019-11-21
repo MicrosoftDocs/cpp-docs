@@ -11,9 +11,9 @@ Marks a macro block called *name* and establishes *parameter* placeholders for a
 
 ## Syntax
 
-> *name*  **MACRO** [[*parameter* [[**:REQ** | :=*default* | **:VARARG**]] ]] ...<br/>
+> *name*  **MACRO** ⟦*parameter* ⟦**:REQ** | :=*default* | **:VARARG**⟧ ⟧ ...<br/>
 > *statements*<br/>
-> **ENDM** [[*value*]]
+> **ENDM** ⟦*value*⟧
 
 ## Remarks
 

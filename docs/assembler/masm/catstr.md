@@ -11,7 +11,7 @@ Concatenates text items.
 
 ## Syntax
 
-> *name* **CATSTR** [[*textitem1* [[, *textitem2*]] ...]]
+> *name* **CATSTR** ⟦*textitem1* ⟦, *textitem2*⟧ ...⟧
 
 ## Remarks
 

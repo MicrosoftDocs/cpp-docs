@@ -11,9 +11,9 @@ Declares a union of one or more data types. The *field-declarations* must be val
 
 ## Syntax
 
-> *name*  **UNION** [[*alignment*]] [[, **NONUNIQUE**]]<br/>
+> *name*  **UNION** ⟦*alignment*⟧ ⟦, **NONUNIQUE**⟧<br/>
 > *field-declarations*<br/>
-> [[*name*]] **ENDS**
+> ⟦*name*⟧ **ENDS**
 
 ## See also
 

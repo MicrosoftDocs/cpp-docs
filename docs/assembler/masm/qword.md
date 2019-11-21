@@ -11,7 +11,7 @@ Allocates and optionally initializes 8 bytes of storage for each *initializer*. 
 
 ## Syntax
 
-> [[*name*]] **QWORD** *initializer* [[, *initializer*]]...
+> ⟦*name*⟧ **QWORD** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

@@ -11,7 +11,7 @@ Generates an error.
 
 ## Syntax
 
-> **.ERR** [[*message*]]
+> **.ERR** ⟦*message*⟧
 
 ## See also
 

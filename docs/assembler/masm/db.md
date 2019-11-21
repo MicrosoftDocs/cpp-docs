@@ -11,7 +11,7 @@ Allocates and optionally initializes a byte of storage for each *initializer*. *
 
 ## Syntax
 
-> [[*name*]] **DB** *initializer* [[, *initializer*]] ...
+> ⟦*name*⟧ **DB** *initializer* ⟦, *initializer*⟧ ...
 
 ## Remarks
 

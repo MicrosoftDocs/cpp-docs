@@ -11,7 +11,7 @@ Terminates expansion of the current repeat or macro block and begins assembly of
 
 ## Syntax
 
-> **EXITM** [[*textitem*]]
+> **EXITM** ⟦*textitem*⟧
 
 ## Remarks
 

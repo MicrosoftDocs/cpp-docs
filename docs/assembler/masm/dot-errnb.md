@@ -11,7 +11,7 @@ Generates an error if *textitem* is not blank.
 
 ## Syntax
 
-> **.ERRNB** *textitem* [[, *message*]]
+> **.ERRNB** *textitem* ⟦, *message*⟧
 
 ## See also
 

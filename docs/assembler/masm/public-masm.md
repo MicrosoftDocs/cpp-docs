@@ -11,7 +11,7 @@ Makes each variable, label, or absolute symbol specified as *name* available to 
 
 ## Syntax
 
-> **PUBLIC** [[langtype]] *name* [[, [[langtype]] *name*]]...
+> **PUBLIC** ⟦langtype⟧ *name* ⟦, ⟦langtype⟧ *name*⟧...
 
 ## See also
 

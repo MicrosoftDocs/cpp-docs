@@ -11,7 +11,7 @@ Finds the first occurrence of *textitem2* in *textitem1*.
 
 ## Syntax
 
-> *name*  **INSTR** [[*position*,]] *textitem1*, *textitem2*
+> *name*  **INSTR** ⟦*position*,⟧ *textitem1*, *textitem2*
 
 ## Remarks
 

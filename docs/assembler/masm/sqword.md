@@ -11,7 +11,7 @@ Allocates and optionally initializes 8 signed bytes of storage for each *initial
 
 ## Syntax
 
-> *name* **SQWORD** *initializer* [[, *initializer*]]...
+> *name* **SQWORD** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

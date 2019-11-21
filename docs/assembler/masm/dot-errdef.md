@@ -11,7 +11,7 @@ Generates an error if *name* is a previously defined label, variable, or symbol.
 
 ## Syntax
 
-> **.ERRDEF** *name* [[, *message*]]
+> **.ERRDEF** *name* ⟦, *message*⟧
 
 ## See also
 

@@ -11,7 +11,7 @@ The first directive sets line *length* and character *width* of the program list
 
 ## Syntax
 
-> **PAGE** [[*length*]][[, *width*]]<br/><br/>
+> **PAGE** ⟦*length*⟧⟦, *width*⟧<br/><br/>
 > **PAGE** +
 
 ## See also

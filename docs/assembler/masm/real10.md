@@ -11,7 +11,7 @@ Allocates and optionally initializes a 10-byte floating-point number for each *i
 
 ## Syntax
 
-> *name* **REAL10** *initializer* [[, *initializer*]]...
+> *name* **REAL10** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

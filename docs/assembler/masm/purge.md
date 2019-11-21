@@ -11,7 +11,7 @@ Deletes the specified macros from memory.
 
 ## Syntax
 
-> **PURGE** *macroname* [[, *macroname*]]...
+> **PURGE** *macroname* ⟦, *macroname*⟧...
 
 ## See also
 

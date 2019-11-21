@@ -11,7 +11,7 @@ Generates an error if *name* has not been defined.
 
 ## Syntax
 
-> **.ERRNDEF** *name* [[, *message*]]
+> **.ERRNDEF** *name* ⟦, *message*⟧
 
 ## See also
 

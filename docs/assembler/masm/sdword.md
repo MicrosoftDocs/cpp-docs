@@ -11,7 +11,7 @@ Allocates and optionally initializes a signed double word (4 bytes) of storage f
 
 ## Syntax
 
-> *name* **SDWORD** *initializer* [[, *initializer*]]...
+> *name* **SDWORD** *initializer* ⟦, *initializer*⟧...
 
 ## See also
 

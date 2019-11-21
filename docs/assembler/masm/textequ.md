@@ -11,7 +11,7 @@ Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant
 
 ## Syntax
 
-> *name* **TEXTEQU** [[*textitem*]]
+> *name* **TEXTEQU** ⟦*textitem*⟧
 
 ## See also
 

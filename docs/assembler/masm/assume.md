@@ -11,10 +11,10 @@ Enables error checking for register values. (32-bit MASM only.)
 
 ## Syntax
 
-> **ASSUME**  *segregister*:*name* [[, *segregister*:*name*]]...<br/>
-> **ASSUME**  *dataregister*:*type* [[, *dataregister*:*type*]]...<br/>
-> **ASSUME**  *register*:**ERROR** [[, *register*:**ERROR**]]...<br/>
-> **ASSUME**  [[*register*:]] **NOTHING** [[, *register*:NOTHING]]...
+> **ASSUME**  *segregister*:*name* ⟦, *segregister*:*name*⟧...<br/>
+> **ASSUME**  *dataregister*:*type* ⟦, *dataregister*:*type*⟧...<br/>
+> **ASSUME**  *register*:**ERROR** ⟦, *register*:**ERROR**⟧...<br/>
+> **ASSUME**  ⟦*register*:⟧ **NOTHING** ⟦, *register*:NOTHING⟧...
 
 ## Remarks
 

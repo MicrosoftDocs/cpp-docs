@@ -11,7 +11,7 @@ Add the specified *segments* to the group called *name*. (32-bit MASM only.)
 
 ## Syntax
 
-> *name* **GROUP** *segment* [[, *segment*]]...
+> *name* **GROUP** *segment* ⟦, *segment*⟧...
 
 ## See also
 

@@ -11,7 +11,7 @@ Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.R
 
 ## Syntax
 
-> **.BREAK** [[**.IF** *condition*]]
+> **.BREAK** ⟦**.IF** *condition*⟧
 
 ## See also
 

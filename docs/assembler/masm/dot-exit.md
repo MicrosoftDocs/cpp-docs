@@ -11,7 +11,7 @@ Generates termination code. (32-bit MASM only.)
 
 ## Syntax
 
-> **.EXIT** [[*expression*]]
+> **.EXIT** ⟦*expression*⟧
 
 ## Remarks
 

@@ -11,7 +11,7 @@ Calls the procedure at the address given by *expression*, passing the arguments 
 
 ## Syntax
 
-> **INVOKE** *expression* [[, *arguments*]]
+> **INVOKE** *expression* ⟦, *arguments*⟧
 
 ## Remarks
 
