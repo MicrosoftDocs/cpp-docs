@@ -52,7 +52,7 @@ On the ARM architecture, parameters from the variable arguments list that are pa
 
 ```C
 // notice that a 64-bit integer is passed to the function, but '%d' is used to read it.
-// on x86 and x64 this may work for small values because %d will “parse” the low-32 bits of the argument.
+// on x86 and x64 this may work for small values because %d will "parse" the low-32 bits of the argument.
 // on ARM the calling convention will align the 64-bit value and the code will print a random value
 printf("%d\n", 1LL);
 ```
@@ -88,7 +88,7 @@ And if there's a dependency between `operator->(memory_handle)` and `operator*(p
 
 The MSVC compiler supports two different interpretations of the `volatile` storage qualifier that you can specify by using compiler switches. The [/volatile:ms](reference/volatile-volatile-keyword-interpretation.md) switch selects the Microsoft extended volatile semantics that guarantee strong ordering, as has been the traditional case for x86 and x64 because of the strong memory model on those architectures. The [/volatile:iso](reference/volatile-volatile-keyword-interpretation.md) switch selects the strict C++ standard volatile semantics that don't guarantee strong ordering.
 
-On the ARM architecture, the default is **/volatile:iso** because ARM processors have a weakly ordered memory model, and because ARM software doesn’t have a legacy of relying on the extended semantics of **/volatile:ms** and doesn't usually have to interface with software that does. However, it's still sometimes convenient or even required to compile an ARM program to use the extended semantics. For example, it may be too costly to port a program to use the ISO C++ semantics, or driver software might have to adhere to the traditional semantics to function correctly. In these cases, you can use the **/volatile:ms** switch; however, to recreate the traditional volatile semantics on ARM targets, the compiler must insert memory barriers around each read or write of a `volatile` variable to enforce strong ordering, which can have a negative impact on performance.
+On the ARM architecture, the default is **/volatile:iso** because ARM processors have a weakly ordered memory model, and because ARM software doesn't have a legacy of relying on the extended semantics of **/volatile:ms** and doesn't usually have to interface with software that does. However, it's still sometimes convenient or even required to compile an ARM program to use the extended semantics. For example, it may be too costly to port a program to use the ISO C++ semantics, or driver software might have to adhere to the traditional semantics to function correctly. In these cases, you can use the **/volatile:ms** switch; however, to recreate the traditional volatile semantics on ARM targets, the compiler must insert memory barriers around each read or write of a `volatile` variable to enforce strong ordering, which can have a negative impact on performance.
 
 On the x86 and x64 architectures, the default is **/volatile:ms** because much of the software that has already been created for these architectures by using MSVC relies on them. When you compile x86 and x64 programs, you can specify the **/volatile:iso** switch to help avoid unnecessary reliance on the traditional volatile semantics, and to promote portability.
 

@@ -9,7 +9,7 @@ Windows on ARM uses the same structured exception handling mechanism for asynchr
 
 ## ARM Exception Handling
 
-Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/win32/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function’s prologue can be undone in preparation for unwinding to the caller’s stack frame.
+Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/win32/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function's prologue can be undone in preparation for unwinding to the caller's stack frame.
 
 The ARM EABI (embedded application binary interface) specifies an exception unwinding model that uses unwind codes, but it's not sufficient for SEH unwinding in Windows, which must handle asynchronous cases where the processor is in the middle of the prologue or epilogue of a function. Windows also separates unwinding control into function-level unwinding and language-specific scope unwinding, which is unified in the ARM EABI. For these reasons, Windows on ARM specifies more details for the unwinding data and procedure.
 
@@ -19,7 +19,7 @@ Executable images for Windows on ARM use the Portable Executable (PE) format. Fo
 
 The exception handling mechanism makes certain assumptions about code that follows the ABI for Windows on ARM:
 
-- When an exception occurs within the body of a function, it does not matter whether the prologue’s operations are undone, or the epilogue’s operations are performed in a forward manner. Both should produce identical results.
+- When an exception occurs within the body of a function, it does not matter whether the prologue's operations are undone, or the epilogue's operations are performed in a forward manner. Both should produce identical results.
 
 - Prologues and epilogues tend to mirror each other. This can be used to reduce the size of the metadata needed to describe unwinding.
 
@@ -261,7 +261,7 @@ This shows the range of hexadecimal values for each byte in an unwind code *Code
 
 The unwind codes are designed so that the first byte of the code tells both the total size in bytes of the code and the size of the corresponding opcode in the instruction stream. To compute the size of the prologue or epilogue, walk the unwind codes from the start of the sequence to the end, and use a lookup table or similar method to determine how long the corresponding opcode is.
 
-Unwind codes 0xFD and 0xFE are equivalent to the regular end code 0xFF, but account for one extra nop opcode in the epilogue case, either 16-bit or 32-bit. For prologues, codes 0xFD, 0xFE and 0xFF are exactly equivalent. This accounts for the common epilogue endings `bx lr` or `b <tailcall-target>`, which don’t have an equivalent prologue instruction. This increases the chance that unwind sequences can be shared between the prologue and the epilogues.
+Unwind codes 0xFD and 0xFE are equivalent to the regular end code 0xFF, but account for one extra nop opcode in the epilogue case, either 16-bit or 32-bit. For prologues, codes 0xFD, 0xFE and 0xFF are exactly equivalent. This accounts for the common epilogue endings `bx lr` or `b <tailcall-target>`, which don't have an equivalent prologue instruction. This increases the chance that unwind sequences can be shared between the prologue and the epilogues.
 
 In many cases, it should be possible to use the same set of unwind codes for the prologue and all epilogues. However, to handle the unwinding of partially executed prologues and epilogues, you might have to have multiple unwind code sequences that vary in ordering or behavior. This is why each epilogue has its own index into the unwind array to show where to begin executing.
 
@@ -284,7 +284,7 @@ For example, consider this prologue and epilogue sequence:
 0148:   bx    lr
 ```
 
-Next to each opcode is the appropriate unwind code to describe this operation. The sequence of unwind codes for the prologue is a mirror image of the unwind codes for the epilogue, not counting the final instruction. This case is common, and is the reason the unwind codes for the prologue are always assumed to be stored in reverse order from the prologue’s execution order. This gives us a common set of unwind codes:
+Next to each opcode is the appropriate unwind code to describe this operation. The sequence of unwind codes for the prologue is a mirror image of the unwind codes for the epilogue, not counting the final instruction. This case is common, and is the reason the unwind codes for the prologue are always assumed to be stored in reverse order from the prologue's execution order. This gives us a common set of unwind codes:
 
 ```asm
 0xc7, 0xdd, 0x04, 0xfd
@@ -322,9 +322,9 @@ Assuming that the function prologue is at the beginning of the function and can'
 
 In the first case, only the prologue must be described. This can be done in compact .pdata form by describing the prologue normally and specifying a *Ret* value of 3 to indicate no epilogue. In the full .xdata form, this can be done by providing the prologue unwind codes at index 0 as usual, and specifying an epilogue count of 0.
 
-The second case is just like a normal function. If there’s only one epilogue in the fragment, and it is at the end of the fragment, then a compact .pdata record can be used. Otherwise, a full .xdata record must be used. Keep in mind that the offsets specified for the epilogue start are relative to the start of the fragment, not the original start of the function.
+The second case is just like a normal function. If there's only one epilogue in the fragment, and it is at the end of the fragment, then a compact .pdata record can be used. Otherwise, a full .xdata record must be used. Keep in mind that the offsets specified for the epilogue start are relative to the start of the fragment, not the original start of the function.
 
-The third and fourth cases are variants of the first and second cases, respectively, except they don’t contain a prologue. In these situations, it is assumed that there is code before the start of the epilogue and it is considered part of the body of the function, which would normally be unwound by undoing the effects of the prologue. These cases must therefore be encoded with a pseudo-prologue, which describes how to unwind from within the body, but which is treated as 0-length when determining whether to perform a partial unwind at the start of the fragment. Alternatively, this pseudo-prologue may be described by using the same unwind codes as the epilogue because they presumably perform equivalent operations.
+The third and fourth cases are variants of the first and second cases, respectively, except they don't contain a prologue. In these situations, it is assumed that there is code before the start of the epilogue and it is considered part of the body of the function, which would normally be unwound by undoing the effects of the prologue. These cases must therefore be encoded with a pseudo-prologue, which describes how to unwind from within the body, but which is treated as 0-length when determining whether to perform a partial unwind at the start of the fragment. Alternatively, this pseudo-prologue may be described by using the same unwind codes as the epilogue because they presumably perform equivalent operations.
 
 In the third and fourth cases, the presence of a pseudo-prologue is specified either by setting the *Flag* field of the compact .pdata record to 2, or by setting the *F* flag in the .xdata header to 1. In either case, the check for a partial prologue unwind is ignored, and all non-epilogue unwinds are considered to be full.
 
@@ -338,7 +338,7 @@ If a fragment has no prologue and no epilogue, it still requires its own .pdata�
 
 #### Shrink-wrapping
 
-A more complex special case of function fragments is *shrink-wrapping*, a technique for deferring register saves from the start of the function to later in the function, to optimize for simple cases that don’t require register saving. This can be described as an outer region that allocates the stack space but saves a minimal set of registers, and an inner region that saves and restores additional registers.
+A more complex special case of function fragments is *shrink-wrapping*, a technique for deferring register saves from the start of the function to later in the function, to optimize for simple cases that don't require register saving. This can be described as an outer region that allocates the stack space but saves a minimal set of registers, and an inner region that saves and restores additional registers.
 
 ```asm
 ShrinkWrappedFunction
@@ -354,7 +354,7 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C:
 ```
 
-Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then perform the register saves by using `str` or `stm` instead of `push`. This keeps all stack-pointer manipulation in the function’s original prologue.
+Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then perform the register saves by using `str` or `stm` instead of `push`. This keeps all stack-pointer manipulation in the function's original prologue.
 
 The example shrink-wrapped function must be broken into three regions, which are marked as A, B, and C in the comments. The first A region covers the start of the function through the end of the additional non-volatile saves. A .pdata or .xdata record must be constructed to describe this fragment as having a prologue and no epilogues.
 

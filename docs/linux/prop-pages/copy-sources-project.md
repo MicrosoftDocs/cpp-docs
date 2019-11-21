@@ -25,9 +25,9 @@ Additional Sources To Copy | Specifies additional sources to copy to the remote 
 
 ```xml
 <ItemGroup>
-   <MyItems Include=“foo.txt” />
-   <MyItems Include=“bar.txt” />
-   <DataFilesToCopyRemotely Include=”@(MyItems)” />
+   <MyItems Include="foo.txt" />
+   <MyItems Include="bar.txt" />
+   <DataFilesToCopyRemotely Include="@(MyItems)" />
 </ItemGroup>
 ```
 

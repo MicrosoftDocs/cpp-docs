@@ -36,7 +36,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 ::: moniker-end
 
-When you compile a new static library, if you make a call to a Win32 API that's excluded for UWP apps, the compiler will raise error C3861, “Identifier not found.” To look for an alternative method that's supported for the Windows Runtime, see [Alternatives to Windows APIs in UWP apps](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).
+When you compile a new static library, if you make a call to a Win32 API that's excluded for UWP apps, the compiler will raise error C3861, "Identifier not found." To look for an alternative method that's supported for the Windows Runtime, see [Alternatives to Windows APIs in UWP apps](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).
 
 If you add a C++ static library project to a UWP app solution, you might have to update the library project’s property settings so that the UWP support property is set to **Yes**. Without this setting, the code builds and links, but an error occurs when you attempt to verify the app for the Microsoft Store. The static lib should be compiled with the same compiler settings as the project that consumes it.
 

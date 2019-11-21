@@ -5,14 +5,14 @@ f1_keywords: ["@CurSeg"]
 helpviewer_keywords: ["@CurSeg symbol"]
 ms.assetid: 8fbf90c1-7734-4113-9ba2-6ec664b3b59f
 ---
-# @CurSeg
+# \@CurSeg
 
 The name of the current segment (text macro).
 
 ## Syntax
 
-> @CurSeg
+> **\@CurSeg**
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols Reference](../../assembler/masm/symbols-reference.md)

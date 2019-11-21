@@ -1,6 +1,7 @@
 ---
 title: "fenv_access pragma"
-ms.date: "08/29/2019"
+description: "Describes the usage and effects of the fenv_access pragma directive. The fenv_access directive controls access to the floating-point environment at runtime."
+ms.date: "11/19/2019"
 f1_keywords: ["vc-pragma.fenv_access", "fenv_access_CPP"]
 helpviewer_keywords: ["pragmas, fenv_access", "fenv_access pragma"]
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
@@ -15,9 +16,17 @@ Disables (**on**) or enables (**off**) optimizations that could change floating-
 
 ## Remarks
 
-By default, **fenv_access** is **off**. If the compiler can assume that your code does not access or manipulate the floating-point environment, then it can perform many floating-point code optimizations. Set **fenv_access**  to **on** to inform the compiler that your code accesses the floating-point environment to test status flags, exceptions, or to set control mode flags. The compiler disables these optimizations so that your code can access the floating-point environment consistently.
+By default, **fenv_access** is **off**. The compiler assumes your code doesn't access or manipulate the floating-point environment. If environment access isn't required, the compiler can do more to optimize your floating-point code.
 
-For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+Enable **fenv_access** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
+
+The [/fp:strict] command-line option automatically enables **fenv_access**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+
+There are restrictions on the ways you can use the **fenv_access** pragma in combination with other floating-point settings:
+
+- You can't enable **fenv_access** unless precise semantics are enabled. Precise semantics can be enabled either by the [float_control](float-control.md) pragma, or by using the [/fp:precise](../build/reference/fp-specify-floating-point-behavior.md) or [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler options. The compiler defaults to **/fp:precise** if no other floating-point command-line option is specified.
+
+- You can't use **float_control** to disable precise semantics when **fenv_access(on)** is set.
 
 The kinds of optimizations that are subject to **fenv_access** are:
 
@@ -65,7 +74,7 @@ int main() {
 out=9.999999776482582e-03
 ```
 
-If you comment out `#pragma fenv_access (on)` from the previous sample, note that the output is different because the compiler does compile-time evaluation, which does not use the control mode.
+If you comment out `#pragma fenv_access (on)` from the previous sample, the output is different. It's because the compiler does compile-time evaluation, which doesn't use the control mode.
 
 ```cpp
 // pragma_directive_fenv_access_2.cpp

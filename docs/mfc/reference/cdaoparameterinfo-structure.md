@@ -7,9 +7,7 @@ ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
 ---
 # CDaoParameterInfo Structure
 
-The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO).
-DAO 3.6 is the final version and it is considered obsolete.
-
+The `CDaoParameterInfo` structure contains information about a parameter object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 
