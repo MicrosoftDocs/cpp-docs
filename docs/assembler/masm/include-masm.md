@@ -11,7 +11,7 @@ Inserts source code from the source file given by *filename* into the current so
 
 ## Syntax
 
-> INCLUDE filename
+> **INCLUDE** filename
 
 ## Remarks
 

@@ -9,7 +9,7 @@ ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
 
 ## Syntax
 
-> .ELSE
+> **.ELSE**
 
 ## Remarks
 

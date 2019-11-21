@@ -9,7 +9,7 @@ ms.assetid: 23d7baf0-6a68-44d9-a980-33100a977fc6
 
 ## Syntax
 
-> .LALL
+> **.LALL**
 
 ## Remarks
 

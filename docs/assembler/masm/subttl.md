@@ -11,7 +11,7 @@ See [SUBTITLE](../../assembler/masm/subtitle.md).
 
 ## Syntax
 
-> SUBTTL
+> **SUBTTL**
 
 ## See also
 

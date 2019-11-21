@@ -11,7 +11,7 @@ Sets the location counter to *expression*.
 
 ## Syntax
 
-> ORG *expression*
+> **ORG** *expression*
 
 ## See also
 

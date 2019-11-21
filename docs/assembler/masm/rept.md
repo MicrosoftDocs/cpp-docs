@@ -11,7 +11,7 @@ See [REPEAT](../../assembler/masm/repeat.md).
 
 ## Syntax
 
-> REPT
+> **REPT**
 
 ## See also
 

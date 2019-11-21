@@ -11,11 +11,11 @@ Concatenates text items.
 
 ## Syntax
 
-> name CATSTR [[textitem1 [[, textitem2]] ...]]
+> *name* **CATSTR** [[*textitem1* [[, *textitem2*]] ...]]
 
 ## Remarks
 
-Each text item can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+Each text item can be a literal string, a constant preceded by a **%**, or the string returned by a macro function.
 
 ## See also
 

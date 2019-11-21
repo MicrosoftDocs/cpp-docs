@@ -11,7 +11,7 @@ Returns the offset into the relevant segment of *expression*.
 
 ## Syntax
 
-> OFFSET expression
+> **OFFSET** *expression*
 
 ## See also
 

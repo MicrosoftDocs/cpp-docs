@@ -11,7 +11,7 @@ Returns *expression1* plus \[*expression2*\].
 
 ## Syntax
 
-> expression1 [expression2]
+> *expression1* **[** expression2 **]**
 
 ## See also
 

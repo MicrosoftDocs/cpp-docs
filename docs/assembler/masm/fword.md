@@ -7,11 +7,11 @@ ms.assetid: 8fd33d12-d49d-4e2a-80ac-0f55792e99be
 ---
 # FWORD
 
-Allocates and optionally initializes 6 bytes of storage for each `initializer`.
+Allocates and optionally initializes 6 bytes of storage for each *initializer*.
 
 ## Syntax
 
-> [[name]] FWORD initializer [[, initializer]]...
+> [[*name*]] **FWORD** *initializer* [[, *initializer*]]...
 
 ## Remarks
 

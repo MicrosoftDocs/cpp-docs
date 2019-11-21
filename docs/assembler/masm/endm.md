@@ -11,7 +11,7 @@ Terminates a macro or repeat block.
 
 ## Syntax
 
-> ENDM
+> **ENDM**
 
 ## Remarks
 

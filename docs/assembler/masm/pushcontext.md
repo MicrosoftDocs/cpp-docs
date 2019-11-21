@@ -11,7 +11,7 @@ Saves part or all of the current `context`: segment register assumes, radix valu
 
 ## Syntax
 
-> PUSHCONTEXT context
+> **PUSHCONTEXT** *context*
 
 ## See also
 

@@ -7,11 +7,11 @@ ms.assetid: a14ed307-7d01-4be5-982f-64982a348589
 ---
 # operator SIZEOF
 
-Returns the number of bytes in *variable* or `type`.
+Returns the number of bytes in *variable* or *type*.
 
 ## Syntax
 
-> SIZEOF {variable | type}
+> **SIZEOF** {*variable* | *type*}
 
 ## See also
 

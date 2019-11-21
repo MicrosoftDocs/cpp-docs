@@ -11,7 +11,7 @@ Returns the number of data objects in *variable*.
 
 ## Syntax
 
-> LENGTHOF variable
+> **LENGTHOF** *variable*
 
 ## See also
 

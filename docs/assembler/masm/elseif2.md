@@ -11,7 +11,7 @@ ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
 
 ## Syntax
 
-> ELSEIF2
+> **ELSEIF2**
 
 ## See also
 

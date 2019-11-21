@@ -11,7 +11,7 @@ Assigns the numeric value of *expression* to *name*.
 
 ## Syntax
 
-> *name* = *expression*
+> *name*  **=** *expression*
 
 ## Remarks
 

@@ -11,7 +11,7 @@ Returns the width in bits of the current *recordfieldname* or *record*.
 
 ## Syntax
 
-> WIDTH {recordfieldname | record}
+> **WIDTH** {*recordfieldname* | *record*}
 
 ## See also
 

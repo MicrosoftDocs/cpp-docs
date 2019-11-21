@@ -11,7 +11,7 @@ Defines the program listing title.
 
 ## Syntax
 
-> TITLE text
+> **TITLE** *text*
 
 ## See also
 

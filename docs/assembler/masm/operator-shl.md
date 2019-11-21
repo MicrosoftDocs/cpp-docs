@@ -11,7 +11,7 @@ Returns the result of shifting the bits of *expression* left *count* number of b
 
 ## Syntax
 
-> expression SHL count
+> *expression* **SHL** *count*
 
 ## See also
 

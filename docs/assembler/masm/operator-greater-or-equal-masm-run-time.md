@@ -11,7 +11,7 @@ Is greater than or equal to. Used only within [.IF](../../assembler/masm/dot-if.
 
 ## Syntax
 
-> expression1 >= expression2
+> *expression1* **>=** *expression2*
 
 ## See also
 

@@ -11,7 +11,7 @@ Starts listing of all statements.
 
 ## Syntax
 
-> .LISTALL
+> **.LISTALL**
 
 ## Remarks
 

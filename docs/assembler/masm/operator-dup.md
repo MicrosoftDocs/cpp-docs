@@ -11,7 +11,7 @@ Specifies *count* number of declarations of *initialvalue*.
 
 ## Syntax
 
-> count DUP (initialvalue [[, initialvalue]]...)
+> *count* **DUP** (*initialvalue* [[, *initialvalue*]]...)
 
 ## See also
 

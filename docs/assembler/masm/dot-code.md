@@ -11,13 +11,13 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 
 ## Syntax
 
-> .CODE [[name]]
+> **.CODE** [[*name*]]
 
 #### Parameters
 
 |Parameter|Description|
 |---------------|-----------------|
-|`name`|Optional parameter that specifies the name of the code segment. The default name is _TEXT for tiny, small, compact, and flat [models](../../assembler/masm/dot-model.md). The default name is *modulename*_TEXT for other models.|
+|*name*|Optional parameter that specifies the name of the code segment. The default name is **_TEXT** for tiny, small, compact, and flat [models](../../assembler/masm/dot-model.md). The default name is *modulename*_TEXT for other models.|
 
 ## See also
 

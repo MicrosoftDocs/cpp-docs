@@ -11,7 +11,7 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ## Syntax
 
-> XMMWORD
+> **XMMWORD**
 
 ## Remarks
 

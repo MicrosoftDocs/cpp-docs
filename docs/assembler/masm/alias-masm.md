@@ -11,7 +11,7 @@ The **ALIAS** directive creates an alternate name for a function.  This lets you
 
 ## Syntax
 
-> ALIAS \<*alias*> = \<*actual-name*>
+> **ALIAS** \<*alias*> = \<*actual-name*>
 
 #### Parameters
 

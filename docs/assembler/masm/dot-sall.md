@@ -11,7 +11,7 @@ See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
 
 ## Syntax
 
-> .SALL
+> **.SALL**
 
 ## See also
 

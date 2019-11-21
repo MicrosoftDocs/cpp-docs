@@ -11,7 +11,7 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), starts a far data se
 
 ## Syntax
 
-> .FARDATA? [[name]]
+> **.FARDATA?** [[*name*]]
 
 ## See also
 

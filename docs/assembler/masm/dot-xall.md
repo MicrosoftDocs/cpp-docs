@@ -11,7 +11,7 @@ See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).
 
 ## Syntax
 
-> .XALL
+> **.XALL**
 
 ## See also
 

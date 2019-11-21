@@ -11,7 +11,7 @@ Status of parity flag. Used only within [.IF](../../assembler/masm/dot-if.md), [
 
 ## Syntax
 
-> PARITY?
+> **PARITY?**
 
 ## See also
 

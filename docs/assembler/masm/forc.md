@@ -11,9 +11,9 @@ Marks a block that will be repeated once for each character in *string*, with th
 
 ## Syntax
 
-> FORC *parameter*, \<*string*><br/>
+> **FORC** *parameter*, \<*string*><br/>
 > *statements*<br/>
-> ENDM
+> **ENDM**
 
 ## Remarks
 

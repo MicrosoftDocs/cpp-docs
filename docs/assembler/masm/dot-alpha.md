@@ -11,7 +11,7 @@ Orders segments alphabetically. (32-bit MASM only.)
 
 ## Syntax
 
-> .ALPHA
+> **.ALPHA**
 
 ## See also
 

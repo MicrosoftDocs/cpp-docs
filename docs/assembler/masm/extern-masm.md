@@ -11,7 +11,7 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 ## Syntax
 
-> EXTERN [[*langtype*]] *name* [[ (*altid*) ]] : *type* [[, [[*langtype*]] *name* [[ (*altid*) ]] : *type*]] ...
+> **EXTERN** [[*langtype*]] *name* [[ (*altid*) ]] : *type* [[, [[*langtype*]] *name* [[ (*altid*) ]] : *type*]] ...
 
 ## Remarks
 

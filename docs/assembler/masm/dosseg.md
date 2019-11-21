@@ -11,7 +11,7 @@ Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferr
 
 ## Syntax
 
-> DOSSEG
+> **DOSSEG**
 
 ## See also
 

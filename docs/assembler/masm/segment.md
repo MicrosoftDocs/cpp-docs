@@ -11,9 +11,9 @@ Defines a program segment called *name* having segment attributes
 
 ## Syntax
 
-> *name* SEGMENT [[READONLY]] [[*align*]] [[*combine*]] [[*use*]] [[*characteristics*]] ALIAS(*string*) [['*class*']]<br/>
+> *name*  **SEGMENT** [[**READONLY**]] [[*align*]] [[*combine*]] [[*use*]] [[*characteristics*]] **ALIAS**(*string*) [['*class*']]<br/>
 > *statements*<br/>
-> *name* ENDS
+> *name*  **ENDS**
 
 #### Parameters
 

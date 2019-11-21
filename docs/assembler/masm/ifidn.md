@@ -11,7 +11,7 @@ Grants assembly if the text items are identical.
 
 ## Syntax
 
-> **IFIDN**\[**I**] *textitem1*__,__ *textitem2*
+> **IFIDN** [[**I**]] *textitem1*__,__ *textitem2*
 
 ## Remarks
 

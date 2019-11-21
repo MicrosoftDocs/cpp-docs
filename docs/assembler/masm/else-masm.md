@@ -11,7 +11,7 @@ Marks the beginning of an alternate block within a conditional block.
 
 ## Syntax
 
-> ELSE
+> **ELSE**
 
 ## Remarks
 

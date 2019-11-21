@@ -11,7 +11,7 @@ Enables listing of symbols in the symbol portion of the symbol table and browser
 
 ## Syntax
 
-> .CREF
+> **.CREF**
 
 ## See also
 

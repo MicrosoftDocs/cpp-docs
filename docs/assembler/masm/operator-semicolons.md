@@ -11,7 +11,7 @@ Treats *text* as a comment in a macro that appears only in the macro definition.
 
 ## Syntax
 
-> ;; *text*
+> **;;** *text*
 
 ## See also
 

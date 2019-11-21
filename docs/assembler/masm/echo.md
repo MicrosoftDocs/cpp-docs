@@ -11,7 +11,7 @@ Displays *message* to the standard output device (by default, the screen).
 
 ## Syntax
 
-> ECHO *message*
+> **ECHO** *message*
 
 ## Remarks
 

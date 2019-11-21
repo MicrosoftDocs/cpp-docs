@@ -7,11 +7,11 @@ ms.assetid: 8dd94476-c069-4585-a478-3cb2e8e6ae54
 ---
 # BYTE (MASM)
 
-Allocates and optionally initializes a byte of storage for each `initializer`.
+Allocates and optionally initializes a byte of storage for each *initializer*.
 
 ## Syntax
 
-> [[name]] BYTEinitializer [[, initializer]] ...
+> [[*name*]] **BYTE** *initializer* [[, *initializer*]] ...
 
 ## Remarks
 

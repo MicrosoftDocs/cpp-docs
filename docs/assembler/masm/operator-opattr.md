@@ -11,7 +11,7 @@ Returns a word defining the mode and scope of *expression*. The low byte is iden
 
 ## Syntax
 
-> OPATTR expression
+> **OPATTR** *expression*
 
 ## See also
 

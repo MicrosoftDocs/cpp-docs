@@ -11,7 +11,7 @@ Returns *expression1* times *expression2*.
 
 ## Syntax
 
-> expression1 * expression2
+> *expression1* __*__ *expression2*
 
 ## See also
 

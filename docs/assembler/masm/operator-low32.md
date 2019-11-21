@@ -11,7 +11,7 @@ Returns the low 32 bits of *expression*. MASM expressions are 64-bit values.
 
 ## Syntax
 
-> LOW32 expression
+> **LOW32** *expression*
 
 ## See also
 

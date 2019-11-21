@@ -7,11 +7,11 @@ ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8
 ---
 # DB
 
-Allocates and optionally initializes a byte of storage for each `initializer`. `DB` is a synonym of [BYTE](../../assembler/masm/byte-masm.md)
+Allocates and optionally initializes a byte of storage for each *initializer*. **DB** is a synonym of [BYTE](../../assembler/masm/byte-masm.md)
 
 ## Syntax
 
-> [[name]] DB initializer [[, initializer]] ...
+> [[*name*]] **DB** *initializer* [[, *initializer*]] ...
 
 ## Remarks
 

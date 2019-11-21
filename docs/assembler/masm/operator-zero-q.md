@@ -11,7 +11,7 @@ Status of zero flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.W
 
 ## Syntax
 
-> ZERO?
+> **ZERO?**
 
 ## See also
 

@@ -9,7 +9,7 @@ ms.assetid: 9f7d848c-fc5a-40e2-abf0-28db783e007d
 
 ## Syntax
 
-> IRPC
+> **IRPC**
 
 ## Remarks
 

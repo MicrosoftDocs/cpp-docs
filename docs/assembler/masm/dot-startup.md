@@ -11,7 +11,7 @@ Generates program start-up code. (32-bit MASM only.)
 
 ## Syntax
 
-> .STARTUP
+> **.STARTUP**
 
 ## See also
 

@@ -11,9 +11,9 @@ The first directive assigns numeric value of *expression* to *name*.
 
 ## Syntax
 
-> *name* EQU *expression*
+> *name*  **EQU** *expression*
 >
-> *name* EQU \<*text*>
+> *name*  **EQU** \<*text*>
 
 ## Remarks
 

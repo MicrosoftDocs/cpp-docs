@@ -11,7 +11,7 @@ Marks the end of procedure *name* previously begun with **PROC**.
 
 ## Syntax
 
-> *name* ENDP
+> *name*  **ENDP**
 
 ## Remarks
 

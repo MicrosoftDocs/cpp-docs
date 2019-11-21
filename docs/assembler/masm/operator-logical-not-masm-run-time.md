@@ -11,7 +11,7 @@ Logical negation. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHIL
 
 ## Syntax
 
-> ! *expression*
+> **!** *expression*
 
 ## See also
 

@@ -9,7 +9,7 @@ ms.assetid: 090f8ec7-28e7-451e-88a8-29c2e77fb956
 
 ## Syntax
 
-> EXTRN
+> **EXTRN**
 
 ## Remarks
 

@@ -11,9 +11,9 @@ Marks a block that is to be repeated *expression* times. Same as [REPT](../../as
 
 ## Syntax
 
-> REPEAT *expression*<br/>
+> **REPEAT** *expression*<br/>
 > *statements*<br/>
-> ENDM
+> **ENDM**
 
 ## See also
 

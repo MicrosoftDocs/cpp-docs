@@ -11,7 +11,7 @@ Returns a substring of *textitem*, starting at *position*. The *textitem* can be
 
 ## Syntax
 
-> name SUBSTR textitem, position [[, length]]
+> *name* **SUBSTR** *textitem*, *position* [[, *length*]]
 
 ## See also
 

@@ -11,7 +11,7 @@ Overrides the default segment of *expression* with *segment*. The *segment* can 
 
 ## Syntax
 
-> *segment* : *expression*
+> *segment* **:** *expression*
 
 ## See also
 

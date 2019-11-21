@@ -11,7 +11,7 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data s
 
 ## Syntax
 
-> .DATA?
+> **.DATA?**
 
 ## See also
 

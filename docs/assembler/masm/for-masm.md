@@ -11,9 +11,9 @@ Marks a block that will be repeated once for each *argument*, with the current *
 
 ## Syntax
 
-> FOR *parameter* [[:REQ | :=*default*]] , \<*argument* [[, *argument*]]...><br/>
+> **FOR** *parameter* [[**:REQ **| :=*default*]] , \<*argument* [[, *argument*]]...><br/>
 > *statements*<br/>
-> ENDM
+> **ENDM**
 
 ## Remarks
 

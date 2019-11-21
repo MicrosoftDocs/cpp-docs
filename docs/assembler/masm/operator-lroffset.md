@@ -11,7 +11,7 @@ Returns the offset of *expression*. Same as **OFFSET**, but it generates a loade
 
 ## Syntax
 
-> LROFFSET expression
+> **LROFFSET** *expression*
 
 ## See also
 

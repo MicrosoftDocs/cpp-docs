@@ -7,11 +7,11 @@ ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
 ---
 # operator THIS
 
-Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.
+Returns an operand of specified *type* whose offset and segment values are equal to the current location counter value.
 
 ## Syntax
 
-> THIS type
+> **THIS** *type*
 
 ## See also
 

@@ -11,7 +11,7 @@ See the [INVOKE](../../assembler/masm/invoke.md) directive.
 
 ## Syntax
 
-> ADDR
+> **ADDR**
 
 ## See also
 

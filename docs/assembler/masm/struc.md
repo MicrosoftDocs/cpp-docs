@@ -11,7 +11,7 @@ See [STRUCT](../../assembler/masm/struct-masm.md).
 
 ## Syntax
 
-> STRUC
+> **STRUC**
 
 ## See also
 

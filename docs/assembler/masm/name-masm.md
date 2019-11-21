@@ -11,7 +11,7 @@ Ignored.
 
 ## Syntax
 
-> NAME
+> **NAME**
 
 ## See also
 

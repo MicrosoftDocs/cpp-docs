@@ -9,7 +9,7 @@ ms.assetid: b9f25ed5-6634-40f7-bcbc-d3135f09cce6
 
 ## Syntax
 
-> .ENDIF
+> **.ENDIF**
 
 ## Remarks
 

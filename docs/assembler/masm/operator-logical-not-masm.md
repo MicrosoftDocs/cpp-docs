@@ -11,7 +11,7 @@ Treats `character` as a literal character rather than as an operator or symbol.
 
 ## Syntax
 
-> ! *character*
+> **!** *character*
 
 ## See also
 

@@ -7,11 +7,11 @@ ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
 ---
 # DD
 
-Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`. `DD` is a synonym of [DWORD](../../assembler/masm/dword.md).
+Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*. **DD** is a synonym of [DWORD](../../assembler/masm/dword.md).
 
 ## Syntax
 
-> [[name]] DD initializer [[, initializer]]...
+> [[*name*]] **DD** *initializer* [[, *initializer*]]...
 
 ## Remarks
 

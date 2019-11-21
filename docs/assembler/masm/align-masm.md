@@ -11,7 +11,7 @@ The **ALIGN** directive aligns the next data element or instruction on an addres
 
 ## Syntax
 
-> ALIGN [[*number*]]
+> **ALIGN** [[*number*]]
 
 ## Remarks
 

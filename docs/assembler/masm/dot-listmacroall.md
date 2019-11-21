@@ -11,7 +11,7 @@ Starts listing of all statements in macros.
 
 ## Syntax
 
-> .LISTMACROALL
+> **.LISTMACROALL**
 
 ## Remarks
 

@@ -11,7 +11,7 @@ Restores part or all of the current `context` (saved by the [PUSHCONTEXT](../../
 
 ## Syntax
 
-> POPCONTEXT context
+> **POPCONTEXT** *context*
 
 ## See also
 

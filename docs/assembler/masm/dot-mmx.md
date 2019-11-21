@@ -11,7 +11,7 @@ Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions
 
 ## Syntax
 
-> .MMX
+> **.MMX**
 
 ## See also
 

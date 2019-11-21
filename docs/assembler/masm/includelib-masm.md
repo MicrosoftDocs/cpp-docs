@@ -11,7 +11,7 @@ Informs the linker that the current module should be linked with *libraryname*.
 
 ## Syntax
 
-> INCLUDELIB libraryname
+> **INCLUDELIB** *libraryname*
 
 ## Remarks
 

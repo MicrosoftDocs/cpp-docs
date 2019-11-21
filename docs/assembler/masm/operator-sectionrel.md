@@ -11,11 +11,11 @@ Returns the section relative offset of expression relative to the section contai
 
 ## Syntax
 
-> SECTIONREL expression
+> **SECTIONREL** *expression*
 
 ## Remarks
 
-SECTIONREL is available only with COFF object emission.
+**SECTIONREL** is available only with COFF object emission.
 
 ## See also
 

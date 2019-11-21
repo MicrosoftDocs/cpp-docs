@@ -9,7 +9,7 @@ ms.assetid: 055f746d-f422-43d1-b73d-d38979c593cb
 
 ## Syntax
 
-> IRP
+> **IRP**
 
 ## Remarks
 

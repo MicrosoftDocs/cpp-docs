@@ -11,7 +11,7 @@ Registers a function as a structured exception handler. (32-bit MASM only.)
 
 ## Syntax
 
-> .SAFESEH identifier
+> **.SAFESEH** *identifier*
 
 ## Remarks
 

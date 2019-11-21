@@ -11,7 +11,7 @@ Starts listing of statements in false conditional blocks.
 
 ## Syntax
 
-> .LISTIF
+> **.LISTIF**
 
 ## Remarks
 

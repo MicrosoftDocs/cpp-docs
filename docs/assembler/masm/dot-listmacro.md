@@ -11,7 +11,7 @@ Starts listing of macro expansion statements that generate code or data.
 
 ## Syntax
 
-> .LISTMACRO
+> **.LISTMACRO**
 
 ## Remarks
 

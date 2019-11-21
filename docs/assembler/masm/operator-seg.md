@@ -11,7 +11,7 @@ Returns the segment of *expression*.
 
 ## Syntax
 
-> SEG expression
+> **SEG** *expression*
 
 ## See also
 

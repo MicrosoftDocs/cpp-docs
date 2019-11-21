@@ -11,7 +11,7 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 ## Syntax
 
-> .NOLISTIF
+> **.NOLISTIF**
 
 ## Remarks
 

@@ -9,7 +9,7 @@ ms.assetid: ed35590d-cc48-4de6-b775-b4f3434d08af
 
 ## Syntax
 
-> .LFCOND
+> **.LFCOND**
 
 ## Remarks
 

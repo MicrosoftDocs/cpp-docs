@@ -7,11 +7,11 @@ ms.assetid: 35f4cd61-32f9-4262-b657-73f04f775d09
 ---
 # .FPO (32-bit MASM)
 
-The .FPO directive controls the emission of debug records to the .debug$F segment or section. (32-bit MASM only.)
+The **.FPO** directive controls the emission of debug records to the .debug$F segment or section. (32-bit MASM only.)
 
 ## Syntax
 
-> FPO (*cdwLocals*, *cdwParams*, *cbProlog*, *cbRegs*, *fUseBP*, *cbFrame*)
+> **.FPO** (*cdwLocals*, *cdwParams*, *cbProlog*, *cbRegs*, *fUseBP*, *cbFrame*)
 
 ### Parameters
 

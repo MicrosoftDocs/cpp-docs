@@ -11,7 +11,7 @@ Returns *expression* with all bits reversed.
 
 ## Syntax
 
-> NOT expression
+> **NOT** *expression*
 
 ## See also
 

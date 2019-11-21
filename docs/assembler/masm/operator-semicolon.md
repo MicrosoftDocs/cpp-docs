@@ -11,7 +11,7 @@ Treats *text* as a comment.
 
 ## Syntax
 
-> ; *text*
+> __;__ *text*
 
 ## See also
 

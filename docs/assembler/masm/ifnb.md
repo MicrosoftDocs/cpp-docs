@@ -11,7 +11,7 @@ Grants assembly if *textitem* is not blank.
 
 ## Syntax
 
-> IFNB textitem
+> **IFNB** *textitem*
 
 ## Remarks
 

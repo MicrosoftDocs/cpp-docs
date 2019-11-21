@@ -11,7 +11,7 @@ ms.assetid: ea8e0f14-cbdd-4576-9268-846527c27870
 
 ## Syntax
 
-> .ERR2 [[message]]
+> **.ERR2** [[*message*]]
 
 ## See also
 

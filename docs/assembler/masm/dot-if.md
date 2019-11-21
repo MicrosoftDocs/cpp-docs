@@ -11,13 +11,13 @@ Generates code that tests `condition1` (for example, AX > 7) and executes the *s
 
 ## Syntax
 
-> .IF condition1<br/>
-> statements<br/>
-> [[.ELSEIF condition2<br/>
-> statements]]<br/>
-> [[.ELSE<br/>
-> statements]]<br/>
-> .ENDIF
+> **.IF** *condition1*<br/>
+> *statements*<br/>
+> [[**.ELSEIF** *condition2*<br/>
+> *statements*]]<br/>
+> [[**.ELSE**<br/>
+> *statements*]]<br/>
+> **.ENDIF**
 
 ## Remarks
 

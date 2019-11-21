@@ -11,7 +11,7 @@ Suppresses listing of symbols in the symbol table and browser file.
 
 ## Syntax
 
-> .NOCREF [[name[[, name]]...]]
+> **.NOCREF** [[*name*[[, *name*]]...]]
 
 ## Remarks
 

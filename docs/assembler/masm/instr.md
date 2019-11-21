@@ -11,11 +11,11 @@ Finds the first occurrence of *textitem2* in *textitem1*.
 
 ## Syntax
 
-> *name* INSTR [[*position*,]] *textitem1*, *textitem2*
+> *name*  **INSTR** [[*position*,]] *textitem1*, *textitem2*
 
 ## Remarks
 
-The starting *position* is optional. Each text item can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+The starting *position* is optional. Each text item can be a literal string, a constant preceded by a **%**, or the string returned by a macro function.
 
 ## See also
 

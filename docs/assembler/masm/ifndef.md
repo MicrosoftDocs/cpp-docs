@@ -11,7 +11,7 @@ Grants assembly if *name* has not been defined.
 
 ## Syntax
 
-> IFNDEF name
+> **IFNDEF** *name*
 
 ## Remarks
 

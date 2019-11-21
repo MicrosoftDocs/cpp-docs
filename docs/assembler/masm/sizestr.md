@@ -11,7 +11,7 @@ Finds the size of a text item.
 
 ## Syntax
 
-> name SIZESTR textitem
+> *name* **SIZESTR** *textitem*
 
 ## See also
 

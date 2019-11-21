@@ -11,7 +11,7 @@ See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).
 
 ## Syntax
 
-> .SFCOND
+> **.SFCOND**
 
 ## See also
 

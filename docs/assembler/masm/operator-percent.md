@@ -11,7 +11,7 @@ Treats the value of *expression* in a macro argument as text.
 
 ## Syntax
 
-> % *expression*
+> **%** *expression*
 
 ## See also
 

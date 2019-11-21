@@ -7,11 +7,11 @@ ms.assetid: d5f96bb0-403c-413e-9e3c-2af1ce528da7
 ---
 # TBYTE
 
-Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
+Allocates and optionally initializes 10 bytes of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
 
 ## Syntax
 
-> [[name]] TBYTEinitializer [[, initializer]]...
+> [[*name*]] **TBYTE** *initializer* [[, *initializer*]]...
 
 ## See also
 

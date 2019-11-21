@@ -9,7 +9,7 @@ ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
 
 ## Syntax
 
-> .ENDW
+> **.ENDW**
 
 ## Remarks
 

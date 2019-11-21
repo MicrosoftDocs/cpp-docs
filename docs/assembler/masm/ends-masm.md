@@ -11,7 +11,7 @@ Marks the end of segment, structure, or union *name* previously begun with [SEGM
 
 ## Syntax
 
-> name ENDS
+> *name* **ENDS**
 
 ## See also
 

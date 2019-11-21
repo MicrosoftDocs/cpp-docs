@@ -11,7 +11,7 @@ Returns the result of a bitwise **XOR** operation for *expression1* and *express
 
 ## Syntax
 
-> expression1 XOR expression2
+> *expression1* **XOR** *expression2*
 
 ## See also
 

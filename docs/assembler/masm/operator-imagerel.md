@@ -11,7 +11,7 @@ Returns the image relative offset of `expression`.
 
 ## Syntax
 
-> IMAGEREL expression
+> **IMAGEREL** *expression*
 
 ## Remarks
 

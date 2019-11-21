@@ -11,7 +11,7 @@ Grants assembly if the text items are different.
 
 ## Syntax
 
-> **IFDIF**\[**I**] *textitem1*__,__ *textitem2*
+> **IFDIF** [[**I**]] *textitem1*__,__ *textitem2*
 
 ## Remarks
 

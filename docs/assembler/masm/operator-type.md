@@ -11,7 +11,7 @@ Returns the type of *expression*.
 
 ## Syntax
 
-> TYPE expression
+> **TYPE** *expression*
 
 ## See also
 

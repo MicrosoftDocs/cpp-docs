@@ -11,7 +11,7 @@ Toggles listing of false conditional blocks.
 
 ## Syntax
 
-> .TFCOND
+> **.TFCOND**
 
 ## See also
 

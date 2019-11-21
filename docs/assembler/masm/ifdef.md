@@ -11,7 +11,7 @@ Grants assembly if *name* is a previously defined label, variable, or symbol.
 
 ## Syntax
 
-> IFDEF name
+> **IFDEF** *name*
 
 ## Remarks
 

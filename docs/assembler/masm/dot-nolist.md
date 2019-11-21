@@ -11,7 +11,7 @@ Suppresses program listing.
 
 ## Syntax
 
-> .NOLIST
+> **.NOLIST**
 
 ## Remarks
 

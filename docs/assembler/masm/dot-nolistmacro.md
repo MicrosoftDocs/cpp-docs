@@ -11,7 +11,7 @@ Suppresses listing of macro expansions.
 
 ## Syntax
 
-> .NOLISTMACRO
+> **.NOLISTMACRO**
 
 ## Remarks
 

@@ -7,11 +7,11 @@ ms.assetid: 20efd7c6-1ee6-45a1-9feb-86ce7978142a
 ---
 # DWORD
 
-Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`.
+Allocates and optionally initializes a double word (4 bytes) of storage for each *initializer*.
 
 ## Syntax
 
-> [[name]] DWORD initializer [[, initializer]]...
+> [[*name*]] **DWORD** *initializer* [[, *initializer*]]...
 
 ## Remarks
 

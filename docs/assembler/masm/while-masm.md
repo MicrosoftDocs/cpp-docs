@@ -11,9 +11,9 @@ Repeats assembly of block *statements* as long as *expression* remains true.
 
 ## Syntax
 
-> WHILE *expression*<br/>
+> **WHILE** *expression*<br/>
 > *statements*<br/>
-> ENDM
+> **ENDM**
 
 ## See also
 

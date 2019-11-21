@@ -11,7 +11,7 @@ Orders the segments according to the MS-DOS segment convention: CODE first, then
 
 ## Syntax
 
-> .DOSSEG
+> **.DOSSEG**
 
 ## Remarks
 

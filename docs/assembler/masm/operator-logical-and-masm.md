@@ -11,7 +11,7 @@ Replaces *parameter* with its corresponding argument value.
 
 ## Syntax
 
-> &*parameter*&
+> __&__*parameter*__&__
 
 ## See also
 

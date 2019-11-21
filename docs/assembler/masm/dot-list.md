@@ -11,7 +11,7 @@ Starts listing of statements.
 
 ## Syntax
 
-> .LIST
+> **.LIST**
 
 ## Remarks
 

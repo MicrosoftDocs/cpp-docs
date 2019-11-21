@@ -11,7 +11,7 @@ See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
 
 ## Syntax
 
-> ABS
+> **ABS**
 
 ## See also
 

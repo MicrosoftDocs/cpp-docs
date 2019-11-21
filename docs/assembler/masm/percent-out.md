@@ -11,7 +11,7 @@ See [ECHO](../../assembler/masm/echo.md).
 
 ## Syntax
 
-> %OUT
+> **%OUT**
 
 ## See also
 

@@ -11,7 +11,7 @@ Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm
 
 ## Syntax
 
-> ELSEIF
+> **ELSEIF**
 
 ## Remarks
 

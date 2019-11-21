@@ -11,7 +11,7 @@ Orders segments sequentially (the default order). (32-bit MASM only.)
 
 ## Syntax
 
-> .SEQ
+> **.SEQ**
 
 ## See also
 

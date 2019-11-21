@@ -11,7 +11,7 @@ Status of sign flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.W
 
 ## Syntax
 
-> SIGN?
+> **SIGN?**
 
 ## See also
 

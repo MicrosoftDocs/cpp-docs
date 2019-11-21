@@ -11,7 +11,7 @@ Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if
 
 ## Syntax
 
-> expression1 EQ expression2
+> *expression1* **EQ** *expression2*
 
 ## See also
 
