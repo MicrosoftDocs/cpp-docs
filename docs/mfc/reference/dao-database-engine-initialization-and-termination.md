@@ -6,7 +6,7 @@ ms.assetid: a7edf31c-e7c2-4f3e-aada-63c3e48781da
 ---
 # DAO Database Engine Initialization and Termination
 
-DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete. When using MFC DAO objects, the DAO database engine must first be initialized and then terminated before your application or DLL quits. Two functions, `AfxDaoInit` and `AfxDaoTerm`, perform these tasks.
+DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. When using MFC DAO objects, the DAO database engine must first be initialized and then terminated before your application or DLL quits. Two functions, `AfxDaoInit` and `AfxDaoTerm`, perform these tasks.
 
 ### DAO Database Engine Initialization and Termination
 

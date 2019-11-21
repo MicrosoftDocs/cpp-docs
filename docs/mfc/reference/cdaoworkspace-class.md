@@ -7,7 +7,7 @@ ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
 ---
 # CDaoWorkspace Class
 
-Manages a named, password-protected database session from login to logoff, by a single user.
+Manages a named, password-protected database session from login to logoff, by a single user. DAO is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 
@@ -102,7 +102,8 @@ Explicitly opening the default workspace, or opening an existing workspace in th
 End a workspace session by closing the workspace with the [Close](#close) member function. `Close` closes any databases you have not closed previously, rolling back any uncommitted transactions.
 
 ## Transactions
-DAO 3.6 is the final version and it is considered obsolete. manages transactions at the workspace level; hence, transactions on a workspace with multiple open databases apply to all of the databases. For example, if two databases have uncommitted updates and you call [CommitTrans](#committrans), all of the updates are committed. If you want to limit transactions to a single database, you need a separate workspace object for it.
+
+DAO manages transactions at the workspace level; hence, transactions on a workspace with multiple open databases apply to all of the databases. For example, if two databases have uncommitted updates and you call [CommitTrans](#committrans), all of the updates are committed. If you want to limit transactions to a single database, you need a separate workspace object for it.
 
 ## Implicit Use of the Default Workspace
 

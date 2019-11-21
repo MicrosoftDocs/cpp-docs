@@ -29,12 +29,12 @@ Properties in a property sheet are overridden if the same property is set direct
 
 You can import a property sheet as often as required. Multiple projects in a solution can inherit settings from the same property sheet, and a project can have multiple sheets. A property sheet itself can inherit settings from another property sheet.
 
-You can also create one property sheet for multiple configurations. To do this, create a property sheet for each configuration, open the shortcut menu for one of them, choose **Add Existing Property Sheet**, and then add the other sheets. However, if you use one common property sheet, be aware that when you set a property, it gets set for all configurations that the sheet applies to, and that the IDE doesn’t show which projects or other property sheets are inheriting from a given property sheet.
+You can also create one property sheet for multiple configurations. To do this, create a property sheet for each configuration, open the shortcut menu for one of them, choose **Add Existing Property Sheet**, and then add the other sheets. However, if you use one common property sheet, be aware that when you set a property, it gets set for all configurations that the sheet applies to, and that the IDE doesn't show which projects or other property sheets are inheriting from a given property sheet.
 
 In large solutions that will have many projects, it can be useful to create a property sheet at the solution level. When you add a project to the solution, use **Property Manager** to add that property sheet to the project. If required at the project level, you can add a new property sheet to set project-specific values.
 
 > [!IMPORTANT]
-> A .props file by default does not participate in source control because it isn’t created as a project item. You can manually add the file as a solution item if you want to include it in source control.
+> A .props file by default does not participate in source control because it isn't created as a project item. You can manually add the file as a solution item if you want to include it in source control.
 
 #### To create a property sheet
 

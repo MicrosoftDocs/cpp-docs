@@ -4,7 +4,7 @@ ms.date: "03/27/2019"
 ---
 # Overview of ARM64 ABI conventions
 
-The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), for the most part, follows ARM’s standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (external link).
+The basic application binary interface (ABI) for Windows when compiled and run on ARM processors in 64-bit mode (ARMv8 or later architectures), for the most part, follows ARM's standard AArch64 EABI. This article highlights some of the key assumptions and changes from what is documented in the EABI. For information about the 32-bit ABI, see [Overview of ARM ABI conventions](overview-of-arm-abi-conventions.md). For more information about the standard ARM EABI, see [Application Binary Interface (ABI) for the ARM Architecture](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html) (external link).
 
 ## Definitions
 
@@ -12,8 +12,8 @@ With the introduction of 64-bit support, ARM has defined several terms:
 
 - **AArch32** – the legacy 32-bit instruction set architecture (ISA) defined by ARM, including Thumb mode execution.
 - **AArch64** – the new 64-bit instruction set architecture (ISA) defined by ARM.
-- **ARMv7** – the specification of the “7th generation” ARM hardware, which only includes support for AArch32. This version of the ARM hardware is the first version Windows for ARM supported.
-- **ARMv8** – the specification of the “8th generation” ARM hardware, which includes support for both AArch32 and AArch64.
+- **ARMv7** – the specification of the "7th generation" ARM hardware, which only includes support for AArch32. This version of the ARM hardware is the first version Windows for ARM supported.
+- **ARMv8** – the specification of the "8th generation" ARM hardware, which includes support for both AArch32 and AArch64.
 
 Windows also uses these terms:
 
@@ -109,7 +109,7 @@ The floating-point control register (FPCR) has certain requirements on the vario
 
 ## System registers
 
-Like AArch32, the AArch64 specification provides three system-controlled “thread ID” registers:
+Like AArch32, the AArch64 specification provides three system-controlled "thread ID" registers:
 
 | Register | Role |
 | - | - |
@@ -157,7 +157,7 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. If the argument is an HFA or an HVA, then the NSRN is set to 8, and the size of the argument is rounded up to the nearest multiple of 8 bytes.
 
-1. If the argument is an HFA, an HVA, a Quad-precision Floating-point or Short Vector Type, then the NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type.
+1. If the argument is an HFA, an HVA, a Quad-precision Floating-point or Short Vector Type, then the NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument's type.
 
 1. If the argument is a Half- or Single-precision Floating Point type, then the size of the argument is set to 8 bytes. The effect is as if the argument had been copied to the least significant bits of a 64-bit register, and the remaining bits filled with unspecified values.
 
@@ -173,7 +173,7 @@ For each argument in the list, the following rules are applied in turn until the
 
 1. The NGRN is set to 8.
 
-1. The NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument’s type.
+1. The NSAA is rounded up to the larger of 8 or the Natural Alignment of the argument's type.
 
 1. If the argument is a composite type, then the argument is copied to memory at the adjusted NSAA. The NSAA is incremented by the size of the argument. The argument has now been allocated.
 
@@ -219,7 +219,7 @@ All other types use this convention:
 
 Following the ABI put forth by ARM, the stack must remain 16-byte aligned at all times. AArch64 contains a hardware feature that generates stack alignment faults whenever the SP isn't 16-byte aligned and an SP-relative load or store is done. Windows runs with this feature enabled at all times.
 
-Functions that allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order. This action ensures no code can “leap over” the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
+Functions that allocate 4k or more worth of stack must ensure that each page prior to the final page is touched in order. This action ensures no code can "leap over" the guard pages that Windows uses to expand the stack. Typically the touching is done by the `__chkstk` helper, which has a custom calling convention that passes the total stack allocation divided by 16 in x15.
 
 ## Red zone
 
@@ -235,7 +235,7 @@ Code within Windows is compiled with frame pointers enabled ([/Oy-](reference/oy
 
 ## Exception unwinding
 
-Unwinding during exception handling is assisted through the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable. They describe the operation of the prologue and epilogue in an abstract manner, such that the effects of a function’s prologue can be undone in preparation for backing up to the caller’s stack frame. For more information on the unwind codes, see [ARM64 exception handling](arm64-exception-handling.md).
+Unwinding during exception handling is assisted through the use of unwind codes. The unwind codes are a sequence of bytes stored in the .xdata section of the executable. They describe the operation of the prologue and epilogue in an abstract manner, such that the effects of a function's prologue can be undone in preparation for backing up to the caller's stack frame. For more information on the unwind codes, see [ARM64 exception handling](arm64-exception-handling.md).
 
 The ARM EABI also specifies an exception unwinding model that uses unwind codes. However, the specification as presented is insufficient for unwinding in Windows, which must handle cases where the PC is in the middle of a function prologue or epilogue.
 

@@ -259,7 +259,7 @@ The unwind code array is sorted into descending order. When an exception occurs,
 
 1. If there's no language-specific handler or the handler returns a "continue search" status, then the context record must be unwound to the state of the caller. It's done by processing all of the unwind code array elements, undoing the effect of each. Step 1 is then repeated.
 
-When chained unwind info is involved, these basic steps are still followed. The only difference is that, while walking the unwind code array to unwind a prolog’s effects, once the end of the array is reached, it's then linked to the parent unwind info and the entire unwind code array found there is walked. This linking continues until arriving at an unwind info without the UNW_CHAINED_INFO flag, and then it finishes walking its unwind code array.
+When chained unwind info is involved, these basic steps are still followed. The only difference is that, while walking the unwind code array to unwind a prolog's effects, once the end of the array is reached, it's then linked to the parent unwind info and the entire unwind code array found there is walked. This linking continues until arriving at an unwind info without the UNW_CHAINED_INFO flag, and then it finishes walking its unwind code array.
 
 The smallest set of unwind data is 8 bytes. This would represent a function that only allocated 128 bytes of stack or less, and possibly saved one nonvolatile register. It's also the size of a chained unwind info structure for a zero-length prolog with no unwind codes.
 
@@ -325,8 +325,8 @@ In order to write proper assembly routines, there's a set of pseudo-operations t
 |.PUSHREG *register*|Generates a UWOP_PUSH_NONVOL unwind code entry for the specified register number using the current offset in the prologue.<br /><br /> Only use it with nonvolatile integer registers.  For pushes of volatile registers, use an .ALLOCSTACK 8, instead|
 |.SETFRAME *register*, *offset*|Fills in the frame register field and offset in the unwind information using the specified register and offset. The offset must be a multiple of 16 and less than or equal to 240. This directive also generates a UWOP_SET_FPREG unwind code entry for the specified register using the current prologue offset.|
 |.ALLOCSTACK *size*|Generates a UWOP_ALLOC_SMALL or a UWOP_ALLOC_LARGE with the specified size for the current offset in the prologue.<br /><br /> The *size* operand must be a multiple of 8.|
-|.SAVEREG *register*, *offset*|Generates either a UWOP_SAVE_NONVOL or a UWOP_SAVE_NONVOL_FAR unwind code entry for the specified register and offset using the current prologue offset. MASM chooses the most efficient encoding.<br /><br /> *offset* must be positive, and a multiple of 8. *offset* is relative to the base of the procedure’s frame, which is generally in RSP, or, if using a frame pointer, the unscaled frame pointer.|
-|.SAVEXMM128 *register*, *offset*|Generates either a UWOP_SAVE_XMM128 or a UWOP_SAVE_XMM128_FAR unwind code entry for the specified XMM register and offset using the current prologue offset. MASM chooses the most efficient encoding.<br /><br /> *offset* must be positive, and a multiple of 16.  *offset* is relative to the base of the procedure’s frame, which is generally in RSP, or, if using a frame pointer, the unscaled frame pointer.|
+|.SAVEREG *register*, *offset*|Generates either a UWOP_SAVE_NONVOL or a UWOP_SAVE_NONVOL_FAR unwind code entry for the specified register and offset using the current prologue offset. MASM chooses the most efficient encoding.<br /><br /> *offset* must be positive, and a multiple of 8. *offset* is relative to the base of the procedure's frame, which is generally in RSP, or, if using a frame pointer, the unscaled frame pointer.|
+|.SAVEXMM128 *register*, *offset*|Generates either a UWOP_SAVE_XMM128 or a UWOP_SAVE_XMM128_FAR unwind code entry for the specified XMM register and offset using the current prologue offset. MASM chooses the most efficient encoding.<br /><br /> *offset* must be positive, and a multiple of 16.  *offset* is relative to the base of the procedure's frame, which is generally in RSP, or, if using a frame pointer, the unscaled frame pointer.|
 |.PUSHFRAME \[*code*]|Generates a UWOP_PUSH_MACHFRAME unwind code entry. If the optional *code* is specified, the unwind code entry is given a modifier of 1. Otherwise the modifier is 0.|
 |.ENDPROLOG|Signals the end of the prologue declarations.  Must occur in the first 255 bytes of the function.|
 
@@ -353,8 +353,8 @@ sample PROC FRAME
 
 ; you can modify the stack pointer outside of the prologue (similar to alloca)
 ; because we have a frame pointer.
-; if we didn’t have a frame pointer, this would be illegal
-; if we didn’t make this modification,
+; if we didn't have a frame pointer, this would be illegal
+; if we didn't make this modification,
 ; there would be no need for a frame pointer
 
     sub rsp, 060h
@@ -364,14 +364,14 @@ sample PROC FRAME
     mov rax, 0
     mov rax, [rax] ; AV!
 
-; restore the registers that weren’t saved with a push
-; this isn’t part of the official epilog, as described in section 2.5
+; restore the registers that weren't saved with a push
+; this isn't part of the official epilog, as described in section 2.5
 
     movdqa xmm7, [rbp]
     mov rsi, [rbp+018h]
     mov rdi, [rbp-010h]
 
-; Here’s the official epilog
+; Here's the official epilog
 
     lea rsp, [rbp+020h] ; deallocate both fixed and dynamic portions of the frame
     pop rbp
@@ -415,7 +415,7 @@ sample2 PROC FRAME
     mov rsi, sampleFrame.SavedRsi[rsp]
     mov rdi, sampleFrame.SavedRdi[rsp]
 
-; Here’s the official epilog
+; Here's the official epilog
 
     add rsp, (sizeof sampleFrame)
     ret

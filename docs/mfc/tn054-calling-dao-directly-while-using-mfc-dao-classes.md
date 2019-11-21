@@ -7,7 +7,7 @@ ms.assetid: f7de7d85-8d6c-4426-aa05-2e617c0da957
 # TN054: Calling DAO Directly While Using MFC DAO Classes
 
 > [!NOTE]
-> DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete.The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
+> DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
 
 When using the MFC DAO database classes, there may be situations where it is necessary to use DAO directly. Usually, this will not be the case, but MFC has provided some helper mechanisms to facilitate making direct DAO calls simple when combining the use of the MFC classes with direct DAO calls. Making direct DAO calls to the methods of an MFC-managed DAO object should require only a few lines of code. If you need to create and use DAO objects that are *not* managed by MFC, you will have to do a little more work by actually calling `Release` on the object. This technical note explains when you might want to call DAO directly, what the MFC helpers can do to help you, and how to use the DAO OLE interfaces. Finally, this note provides some sample functions showing how to call DAO directly for DAO security features.
 
@@ -35,12 +35,13 @@ V_BSTR will extract the *bstrVal* member of a `COleVariant`. This macro is typic
 COleVariant varOldName;
 COleVariant varNewName(_T("NewUser"), VT_BSTRT);
 
-// Code to assign pUser to a valid value omitted DAO 3.6 is the final version and it is considered obsolete.User *pUser = NULL;
+// Code to assign pUser to a valid value omitted DAOUser *pUser = NULL;
 
 // These method declarations were taken from DBDAOINT.H
 // STDMETHOD(get_Name) (THIS_ BSTR FAR* pbstr) PURE;
 // STDMETHOD(put_Name) (THIS_ BSTR bstr) PURE;
-DAO 3.6 is the final version and it is considered obsolete._CHECK(pUser->get_Name(&V_BSTR (&varOldName))); DAO 3.6 is the final version and it is considered obsolete._CHECK(pUser->put_Name(V_BSTR (&varNewName)));
+DAO_CHECK(pUser->get_Name(&V_BSTR (&varOldName)));
+DAO_CHECK(pUser->put_Name(V_BSTR (&varNewName)));
 ```
 
 Note that the `VT_BSTRT` argument specified in the `COleVariant` constructor above ensures that there will be an ANSI `BSTR` in the `COleVariant` if you build an ANSI version of your application and a Unicode `BSTR` for a Unicode version of your application. This is what DAO expects.
@@ -58,7 +59,8 @@ The V_BSTRT macro, along with other techniques to open other types that are stor
 
 Situations may arise when it is necessary to refresh the underlying DAO collection objects. Normally, this should not be necessary, but it is a simple procedure if it is necessary. An example of when a collection might need to be refreshed is when operating in a multiuser environment with multiple users creating new tabledefs. In this case your tabledefs collection might become stale. To refresh the collection, you simply need to call the `Refresh` method of the particular collection object and check for errors:
 
-```cpp DAO 3.6 is the final version and it is considered obsolete._CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
+```cpp
+DAO_CHECK(pMyDaoDatabase->m_pDAOTableDefs->Refresh());
 ```
 
 Note that currently all DAO collection object interfaces are undocumented implementation details of the MFC DAO database classes.
