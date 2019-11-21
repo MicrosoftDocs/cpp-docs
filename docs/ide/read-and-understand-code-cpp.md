@@ -31,7 +31,7 @@ Other outlining options are located under **Edit** > **Outlining** in the main m
 
 ## Line numbers
 
-You can add line numbers to your project by going to **Tools** > **Options** > **Text Editor** > **All Languages** > **General** or by searching for “line num” with **Quick Launch (Ctrl + Q)**. Line numbers can be set for all languages or for specific languages only, including C++.
+You can add line numbers to your project by going to **Tools** > **Options** > **Text Editor** > **All Languages** > **General** or by searching for "line num" with **Quick Launch (Ctrl + Q)**. Line numbers can be set for all languages or for specific languages only, including C++.
 
 ## Scroll and zoom
 
@@ -43,7 +43,7 @@ Scrollbar **Map Mode** enables you to quickly scroll and browse through a code f
 
 ![Code Map in C&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "Code Map")
 
-To turn on **Map Mode**, type “map” in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
+To turn on **Map Mode**, type "map" in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
 When **Map Mode** is off, the scroll bar still highlights the changes you have made in the file. Green indicates saved changes and yellow indicates unsaved changes.
 
