@@ -7,9 +7,7 @@ ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
 ---
 # CDaoErrorInfo Structure
 
-The `CDaoErrorInfo` structure contains information about an error object defined for data access objects (DAO).
-DAO 3.6 is the final version and it is considered obsolete.
-
+The `CDaoErrorInfo` structure contains information about an error object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

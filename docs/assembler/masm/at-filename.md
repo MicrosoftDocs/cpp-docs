@@ -5,14 +5,14 @@ f1_keywords: ["@FileName"]
 helpviewer_keywords: ["@FileName symbol"]
 ms.assetid: a713bf70-2abd-4953-b187-7875ded58e52
 ---
-# @FileName
+# \@FileName
 
 The base name of the main file being assembled (text macro).
 
 ## Syntax
 
-> @FileName
+> **\@FileName**
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols Reference](../../assembler/masm/symbols-reference.md)

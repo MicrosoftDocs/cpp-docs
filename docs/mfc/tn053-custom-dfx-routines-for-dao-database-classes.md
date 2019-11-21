@@ -7,7 +7,7 @@ ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
 # TN053: Custom DFX Routines for DAO Database Classes
 
 > [!NOTE]
->  DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
+>  DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete. The Visual C++ environment and wizards do not support DAO (although the DAO classes are included and you can still use them). Microsoft recommends that you use [OLE DB Templates](../data/oledb/ole-db-templates.md) or [ODBC and MFC](../data/odbc/odbc-and-mfc.md) for new projects. You should only use DAO in maintaining existing applications.
 
 This technical note describes the DAO record field exchange (DFX) mechanism. To help understand what is happening in the DFX routines, the `DFX_Text` function will be explained in detail as an example. As an additional source of information to this technical note, you can examine the code for the other the individual DFX functions. You probably will not need a custom DFX routine as often as you might need a custom RFX routine (used with ODBC database classes).
 
@@ -124,7 +124,7 @@ At the heart of the DFX mechanism is the `CDaoRecordset` derived class's `DoFiel
 In the next section, each operation will be explained in more detail for `DFX_Text`.
 
 The most important feature to understand about the DAO record field exchange process is that it uses the `GetRows` function of the `CDaoRecordset` object. The DAO `GetRows` function can work in several ways. This technical note will only briefly describe `GetRows` as it is outside of the scope of this technical note.
-DAO 3.6 is the final version and it is considered obsolete. `GetRows` can work in several ways.
+DAO `GetRows` can work in several ways.
 
 - It can fetch multiple records and multiple fields of data at one time. This allows for faster data access with the complication of dealing with a large data structure and the appropriate offsets to each field and for each record of data in the structure. MFC does not take advantage of this multiple record fetching mechanism.
 
