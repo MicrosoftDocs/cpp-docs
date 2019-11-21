@@ -7,8 +7,7 @@ ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
 ---
 # CDaoDatabaseInfo Structure
 
-The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO).
-DAO 3.6 is the final version and it is considered obsolete.
+The `CDaoDatabaseInfo` structure contains information about a database object defined for data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

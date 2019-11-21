@@ -27,7 +27,7 @@ Record views are derived from form views. In addition to the dialog box template
 A scroll view whose layout is defined in a dialog box template. Derive a class from `CFormView` to implement a user interface based on a dialog box template.
 
 [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)<br/>
-Provides a form view directly connected to a Data Access Object (DAO) recordset object. Like all form views, a `CDaoRecordView` is based on a dialog box template. DAO is used with Access databases and is supported through Office 2013. 3.6 is the final version and it is considered obsolete.
+Provides a form view directly connected to a Data Access Object (DAO) recordset object. Like all form views, a `CDaoRecordView` is based on a dialog box template. DAO is used with Access databases and is supported through Office 2013. DAO 3.6 is the final version, and it is considered obsolete.
 
 [CRecordView](../mfc/reference/crecordview-class.md)<br/>
 Provides a form view directly connected to an Open Database Connectivity (ODBC) recordset object. Like all form views, a `CRecordView` is based on a dialog box template.

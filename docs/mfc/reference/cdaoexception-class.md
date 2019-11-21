@@ -7,8 +7,7 @@ ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
 ---
 # CDaoException Class
 
-Represents an exception condition arising from the MFC database classes based on data access objects (DAO).
-DAO 3.6 is the final version and it is considered obsolete.
+Represents an exception condition arising from the MFC database classes based on data access objects (DAO). DAO 3.6 is the final version, and it is considered obsolete.
 
 ## Syntax
 

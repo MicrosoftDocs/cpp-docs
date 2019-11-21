@@ -15,4 +15,4 @@ Defines a code label recognizable only between *label1* and *label2*, where *lab
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols Reference](../../assembler/masm/symbols-reference.md)
