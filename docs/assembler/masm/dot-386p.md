@@ -11,7 +11,7 @@ Enables assembly of all instructions (including privileged) for the 80386 proces
 
 ## Syntax
 
-> .386P
+> **.386P**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Also enables 80387 instructions.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

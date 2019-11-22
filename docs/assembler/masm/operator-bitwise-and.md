@@ -11,8 +11,8 @@ Bitwise **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE
 
 ## Syntax
 
-> expression1 & expression2
+> *expression1* **&** *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators Reference](../../assembler/masm/operators-reference.md)

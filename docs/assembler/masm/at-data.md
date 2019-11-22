@@ -15,4 +15,4 @@ The name of the default data group. Evaluates to DGROUP for all models except **
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

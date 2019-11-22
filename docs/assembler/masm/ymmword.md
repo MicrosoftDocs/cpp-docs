@@ -11,12 +11,12 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## Syntax
 
-> YMMWORD
+> **YMMWORD**
 
 ## Remarks
 
-`YMMWORD` is intended to represent the same type as `__m256` for the AVX intrinsics.
+**YMMWORD** is intended to represent the same type as `__m256` for the AVX intrinsics.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

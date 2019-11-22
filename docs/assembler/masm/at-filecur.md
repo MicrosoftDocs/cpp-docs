@@ -15,4 +15,4 @@ The name of the current file (text macro).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

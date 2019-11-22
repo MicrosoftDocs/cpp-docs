@@ -11,7 +11,7 @@ The **ALIGN** directive aligns the next data element or instruction on an addres
 
 ## Syntax
 
-> ALIGN [[*number*]]
+> **ALIGN** ⟦*number*⟧
 
 ## Remarks
 
@@ -23,5 +23,5 @@ When data is aligned, the skipped space is padded with zeroes. When instructions
 
 ## See also
 
-[EVEN](even.md)<br/>
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[EVEN](even.md)\
+[Directives reference](directives-reference.md)

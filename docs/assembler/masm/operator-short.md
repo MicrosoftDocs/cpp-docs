@@ -11,8 +11,8 @@ Sets the type of *label* to short. All jumps to *label* must be short (within th
 
 ## Syntax
 
-> SHORT label
+> **SHORT** *label*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

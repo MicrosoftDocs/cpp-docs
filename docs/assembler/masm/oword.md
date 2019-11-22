@@ -11,8 +11,8 @@ Used as a type specifier when an 16-byte data type is required.
 
 ## Syntax
 
-> OWORD
+> **OWORD**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

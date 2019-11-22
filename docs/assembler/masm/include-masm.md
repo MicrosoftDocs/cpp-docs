@@ -11,7 +11,7 @@ Inserts source code from the source file given by *filename* into the current so
 
 ## Syntax
 
-> INCLUDE filename
+> **INCLUDE** *filename*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ The *filename* must be enclosed in angle brackets if it includes a backslash, se
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

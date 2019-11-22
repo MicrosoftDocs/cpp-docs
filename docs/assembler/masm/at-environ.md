@@ -15,4 +15,4 @@ Value of environment variable *envvar* (macro function).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

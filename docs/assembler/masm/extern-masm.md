@@ -11,7 +11,7 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 ## Syntax
 
-> EXTERN [[*langtype*]] *name* [[ (*altid*) ]] : *type* [[, [[*langtype*]] *name* [[ (*altid*) ]] : *type*]] ...
+> **EXTERN** ⟦*language-type*⟧ *name* ⟦ __(__*altid*__)__ ⟧ __:__ *type* ⟦__,__ ⟦*language-type*⟧ *name* ⟦ __(__*altid*__)__ ⟧ __:__ *type* ...⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *na
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

@@ -11,7 +11,7 @@ Assigns the numeric value of *expression* to *name*.
 
 ## Syntax
 
-> *name* = *expression*
+> *name* **=** *expression*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ The symbol can be redefined later.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

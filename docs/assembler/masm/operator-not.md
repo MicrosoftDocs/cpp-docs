@@ -11,8 +11,8 @@ Returns *expression* with all bits reversed.
 
 ## Syntax
 
-> NOT expression
+> **NOT** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

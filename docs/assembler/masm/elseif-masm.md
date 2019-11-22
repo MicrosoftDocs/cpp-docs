@@ -11,7 +11,7 @@ Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm
 
 ## Syntax
 
-> ELSEIF
+> **ELSEIF**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ See [IF](../../assembler/masm/if-masm.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

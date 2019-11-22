@@ -11,8 +11,8 @@ Returns the integer value of the remainder (modulo) when dividing *expression1* 
 
 ## Syntax
 
-> expression1 MOD expression2
+> *expression1* **MOD** *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

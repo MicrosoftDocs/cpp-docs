@@ -11,8 +11,8 @@ Makes each variable, label, or absolute symbol specified as *name* available to 
 
 ## Syntax
 
-> PUBLIC [[langtype]] name [[, [[langtype]] name]]...
+> **PUBLIC** ⟦language-type⟧ *name* ⟦__,__ ⟦language-type⟧ *name* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

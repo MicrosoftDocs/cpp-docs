@@ -11,8 +11,8 @@ Defines the program listing title.
 
 ## Syntax
 
-> TITLE text
+> **TITLE** *text*
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

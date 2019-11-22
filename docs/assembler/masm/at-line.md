@@ -15,4 +15,4 @@ The source line number in the current file (numeric equate).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

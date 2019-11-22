@@ -11,8 +11,8 @@ Treats *text* as a comment in a macro that appears only in the macro definition.
 
 ## Syntax
 
-> ;; *text*
+> **;;** *text*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)
