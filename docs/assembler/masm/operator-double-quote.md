@@ -11,8 +11,8 @@ Treats "*text*" as a string.
 
 ## Syntax
 
-> "text"
+> __"__*text*__"__
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

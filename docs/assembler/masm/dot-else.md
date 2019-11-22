@@ -9,12 +9,12 @@ ms.assetid: ebfec69d-7107-47d1-9cb3-87c99cc8dff7
 
 ## Syntax
 
-> .ELSE
+> **.ELSE**
 
 ## Remarks
 
-(32-bit MASM only.) See [.IF](../../assembler/masm/dot-if.md). 
+(32-bit MASM only.) See [.IF](../../assembler/masm/dot-if.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

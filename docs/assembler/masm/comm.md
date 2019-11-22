@@ -11,7 +11,7 @@ Creates a communal variable with the attributes specified in *definition*.
 
 ## Syntax
 
-> **COMM** *definition* [, *definition*] ...
+> **COMM** *definition* ⟦__,__ *definition* ...⟧
 
 ## Remarks
 
@@ -19,7 +19,7 @@ Communal variables are allocated by the linker, and can't be initialized. This m
 
 Each *definition* has the following form:
 
-[*langtype*] [**NEAR** &#124; **FAR**] _label_**:**_type_[**:**_count_]
+⟦*langtype*⟧ ⟦⦃**NEAR** &#124; **FAR**⦄⟧ _label_**:**_type_⟦**:**_count_⟧
 
 The optional *langtype* sets the naming conventions for the name that follows. It overrides any language specified by the **.MODEL** directive. The optional **NEAR** or **FAR** override the current memory model. The *label* is the name of the variable. The *type* can be any type specifier ([BYTE](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), and so on) or an integer specifying the number of bytes. The optional *count* specifies the number of elements in the declared data object; the default is one.
 
@@ -33,4 +33,4 @@ COMM FAR ByteArray:BYTE:512
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

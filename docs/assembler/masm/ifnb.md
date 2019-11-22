@@ -11,7 +11,7 @@ Grants assembly if *textitem* is not blank.
 
 ## Syntax
 
-> IFNB textitem
+> **IFNB** *textitem*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

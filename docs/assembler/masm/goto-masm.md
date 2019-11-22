@@ -19,4 +19,4 @@ Transfers assembly to the line marked **:**_macrolabel_.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,7 +11,7 @@ Informs the linker that the current module should be linked with *libraryname*.
 
 ## Syntax
 
-> INCLUDELIB libraryname
+> **INCLUDELIB** *libraryname*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ The *libraryname* must be enclosed in angle brackets if it includes a backslash,
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

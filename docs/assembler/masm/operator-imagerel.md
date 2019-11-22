@@ -7,11 +7,11 @@ ms.assetid: 5b5ea425-36f0-467c-9262-62c484b7fdb4
 ---
 # operator IMAGEREL
 
-Returns the image relative offset of `expression`.
+Returns the image relative offset of *expression*.
 
 ## Syntax
 
-> IMAGEREL expression
+> **IMAGEREL** *expression*
 
 ## Remarks
 
@@ -21,4 +21,4 @@ IMAGEREL is available only with COFF object emission.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

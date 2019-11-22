@@ -11,8 +11,8 @@ Returns true (-1) if *expression1* is greater than *expression2*, or returns fal
 
 ## Syntax
 
-> expression1 GT expression2
+> *expression1* **GT** *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

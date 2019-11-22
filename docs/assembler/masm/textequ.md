@@ -11,8 +11,8 @@ Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant
 
 ## Syntax
 
-> name TEXTEQU [[textitem]]
+> *name* **TEXTEQU** ⟦*textitem*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

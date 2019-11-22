@@ -11,7 +11,7 @@ Marks the end of procedure *name* previously begun with **PROC**.
 
 ## Syntax
 
-> *name* ENDP
+> *name* **ENDP**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ See [PROC](../../assembler/masm/proc.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,8 +11,8 @@ Returns the number of data objects in *variable*.
 
 ## Syntax
 
-> LENGTHOF variable
+> **LENGTHOF** *variable*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

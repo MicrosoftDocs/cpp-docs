@@ -11,8 +11,8 @@ Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
 
 ## Syntax
 
-> SUBTITLE text
+> **SUBTITLE** *text*
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

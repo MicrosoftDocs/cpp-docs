@@ -11,8 +11,8 @@ Marks the end of segment, structure, or union *name* previously begun with [SEGM
 
 ## Syntax
 
-> name ENDS
+> *name* **ENDS**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

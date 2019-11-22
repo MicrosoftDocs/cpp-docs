@@ -11,8 +11,8 @@ Finds the size of a text item.
 
 ## Syntax
 
-> name SIZESTR textitem
+> *name* **SIZESTR** *textitem*
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,8 +11,8 @@ Declares a record type consisting of the specified fields. *fieldname* names the
 
 ## Syntax
 
-> *recordname* RECORD *fieldname*:*width* [[= *expression*]] [[, *fieldname*:*width* [[= *expression*]] ]] ...
+> *recordname* **RECORD** *fieldname*__:__*width* ⟦__=__ *expression*⟧ ⟦__,__ *fieldname*__:__*width* ⟦__=__ *expression*⟧ ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

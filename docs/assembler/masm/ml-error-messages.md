@@ -22,24 +22,24 @@ All error messages take the following form:
 
 where:
 
-*Utility*<br/>
+*Utility*\
 The program that sent the error message.
 
-*Filename*<br/>
+*Filename*\
 The file that contains the error-generating condition.
 
-*Line*<br/>
+*Line*\
 The approximate line where the error condition exists.
 
-*Error_type*<br/>
+*Error_type*\
 Fatal Error, Error, or Warning.
 
-*Code*<br/>
+*Code*\
 The unique 5- or 6-digit error code.
 
-*Message_text*<br/>
+*Message_text*\
 A short and general description of the error condition.
 
 ## See also
 
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

@@ -11,8 +11,8 @@ Allocates and optionally initializes a single-precision (4-byte) floating-point 
 
 ## Syntax
 
-> name REAL4 initializer [[, initializer]]...
+> *name*  **REAL4** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

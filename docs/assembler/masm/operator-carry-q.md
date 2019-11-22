@@ -11,8 +11,8 @@ Status of carry flag. Used only within [.IF](../../assembler/masm/dot-if.md), [.
 
 ## Syntax
 
-> CARRY?
+> **CARRY?**
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](../../assembler/masm/operators-reference.md)

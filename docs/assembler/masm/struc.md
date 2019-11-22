@@ -11,8 +11,8 @@ See [STRUCT](../../assembler/masm/struct-masm.md).
 
 ## Syntax
 
-> STRUC
+> **STRUC**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

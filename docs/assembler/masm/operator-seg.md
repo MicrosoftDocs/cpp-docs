@@ -11,8 +11,8 @@ Returns the segment of *expression*.
 
 ## Syntax
 
-> SEG expression
+> **SEG** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

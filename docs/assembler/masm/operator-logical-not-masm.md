@@ -7,12 +7,12 @@ ms.assetid: 220bb468-7c88-4a5c-8303-2bd7f966fdeb
 ---
 # operator ! (MASM)
 
-Treats `character` as a literal character rather than as an operator or symbol.
+Treats *character* as a literal character rather than as an operator or symbol.
 
 ## Syntax
 
-> ! *character*
+> **!** *character*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

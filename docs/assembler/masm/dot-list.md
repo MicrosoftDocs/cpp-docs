@@ -11,7 +11,7 @@ Starts listing of statements.
 
 ## Syntax
 
-> .LIST
+> **.LIST**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ This is the default.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

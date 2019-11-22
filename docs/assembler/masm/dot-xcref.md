@@ -11,8 +11,8 @@ See [.NOCREF](../../assembler/masm/dot-nocref.md).
 
 ## Syntax
 
-> .XCREF
+> **.XCREF**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

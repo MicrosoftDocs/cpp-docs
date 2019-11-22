@@ -1,13 +1,13 @@
 ---
-title: "Processor Manufacturer Programming Manuals"
+title: "Processor manufacturer programming manuals"
 ms.date: "08/30/2018"
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
 ---
-# Processor Manufacturer Programming Manuals
+# Processor manufacturer programming manuals
 
 This article provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft. Microsoft does not own or control the websites or the content on them.
 
-## Processor Manufacturer Websites
+## Processor manufacturer websites
 
 - [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 
@@ -21,4 +21,4 @@ Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
 
 ## See also
 
-- [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
