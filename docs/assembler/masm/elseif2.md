@@ -11,8 +11,12 @@ ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
 
 ## Syntax
 
-> ELSEIF2
+> **ELSEIF2**
+
+## Remarks
+
+For more information about 2-pass behavior in MASM 5.1 vs MASM 6.1, see [IF1 and IF2](if2.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

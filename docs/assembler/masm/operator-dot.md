@@ -11,10 +11,10 @@ The first operator returns *expression* plus the offset of *field* within its st
 
 ## Syntax
 
-> *expression* __.__ *field* \[__.__ *field*] ...
+> *expression*__.__*field*⟦__.__*field* ...⟧
 >
-> __\[__*register*__]__ __.__ *field* \[__.__ *field*] ...
+> **\[**_register_**]**__.__*field*⟦__.__*field* ...⟧
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

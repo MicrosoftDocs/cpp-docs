@@ -11,7 +11,7 @@ Grants assembly if *expression* is false (0).
 
 ## Syntax
 
-> IFE expression
+> **IFE** *expression*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

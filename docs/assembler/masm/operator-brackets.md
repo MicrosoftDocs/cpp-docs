@@ -11,8 +11,8 @@ Returns *expression1* plus \[*expression2*\].
 
 ## Syntax
 
-> expression1 [expression2]
+> *expression1* **[** expression2 **]**
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators Reference](../../assembler/masm/operators-reference.md)

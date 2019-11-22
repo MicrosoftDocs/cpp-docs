@@ -11,8 +11,8 @@ Marks the end of a module and, optionally, sets the program entry point to *addr
 
 ## Syntax
 
-> END [[address]]
+> **END** ⟦*address*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

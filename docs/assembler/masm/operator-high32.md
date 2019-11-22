@@ -11,8 +11,8 @@ Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.
 
 ## Syntax
 
-> HIGH32 expression
+> **HIGH32** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -9,7 +9,7 @@ ms.assetid: 9f7d848c-fc5a-40e2-abf0-28db783e007d
 
 ## Syntax
 
-> IRPC
+> **IRPC**
 
 ## Remarks
 
@@ -17,4 +17,4 @@ See [FORC](../../assembler/masm/forc.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

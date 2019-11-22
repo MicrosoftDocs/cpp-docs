@@ -11,16 +11,16 @@ The **ALIAS** directive creates an alternate name for a function.  This lets you
 
 ## Syntax
 
-> ALIAS \<*alias*> = \<*actual-name*>
+> **ALIAS \<**_alias_**> = \<**_actual-name_**>**
 
 #### Parameters
 
-*actual-name*<br/>
+*actual-name*\
 The actual name of the function or procedure.  The angle brackets are required.
 
-*alias*<br/>
+*alias*\
 The alternate or alias name.  The angle brackets are required.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

@@ -11,7 +11,7 @@ Enables and disables features of the assembler.
 
 ## Syntax
 
-> OPTION *optionlist*
+> **OPTION** *optionlist*
 
 ## Remarks
 
@@ -31,4 +31,4 @@ The syntax for LANGUAGE is **OPTION LANGUAGE:**<em>x</em>, where *x* is one of C
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)
