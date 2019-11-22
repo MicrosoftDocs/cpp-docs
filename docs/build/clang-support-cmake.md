@@ -17,7 +17,7 @@ Clang support is available in Visual Studio 2019.
 
 You can use Visual Studio with Clang to edit and debug C++ CMake projects that target Windows or Linux.
 
-**Windows**: Visual Studio 2019 version 16.1 includes support for editing, building, and debugging with Clang/LLVM in CMake projects targeting Windows. 
+**Windows**: Visual Studio 2019 version 16.1 includes support for editing, building, and debugging with Clang/LLVM in CMake projects targeting Windows.
 
 **Linux**: For Linux CMake projects, no special Visual Studio support is required. You can install Clang using your distro's package manager, and add the appropriate commands in the CMakeLists.txt file.
 

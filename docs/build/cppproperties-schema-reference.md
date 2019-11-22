@@ -81,7 +81,9 @@ When the Linux workload is installed, the following environments are available f
 
 You can optionally use the `environments` property to define sets of variables in *CppProperties.json* either globally or per-configuration. These variables behave like environment variables in the context of an Open Folder project and can be accessed with the ${env.\<VARIABLE>} syntax from *tasks.vs.json* and *launch.vs.json* after they are defined here. However, they are not necessarily set as actual environment variables in any command prompt that Visual Studio uses internally.
 
-When you consume an environment, then you have to specify it in the `inheritsEnvironments` property even if the environment is defined as part of the same configuration; the `environment` property specifies the name of the environment. The following example shows a sample configuration for enabling IntelliSense for GCC in an MSYS2 installation. Note how the configuration both defines and inherits the `mingw_64` environment, and how the `includePath` property can access the `INCLUDE` variable.
+**Visual Studio 2019 version 16.4 and later:** Configuration-specific variables defined in *CppProperties.json* are automatically picked up by debug targets and tasks without the need to set `inheritEnvironments`. Debug targets are launched automatically with the environment you specify in *CppProperties.json*.
+
+**Visual Studio 2019 version 16.3 and earlier:** When you consume an environment, then you have to specify it in the `inheritsEnvironments` property even if the environment is defined as part of the same configuration; the `environment` property specifies the name of the environment. The following example shows a sample configuration for enabling IntelliSense for GCC in an MSYS2 installation. Note how the configuration both defines and inherits the `mingw_64` environment, and how the `includePath` property can access the `INCLUDE` variable.
 
 ```json
 "configurations": [

@@ -116,7 +116,7 @@ When the active configuration specifies a Visual Studio generator, by default MS
 - `name`: names the configuration.  See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations.
 - `wslPath`: the path to the launcher of an instance of Windows Subsystem for Linux.
 
-### Additional settings for CMake Linux projects. 
+### Additional settings for CMake Linux projects
 
 - `remoteMachineName`: specifies the name of the remote Linux machine that hosts CMake, builds, and the debugger. Use the Connection Manager for adding new Linux machines. Supported macros include `${defaultRemoteMachineName}`.
 - `remoteCopySourcesOutputVerbosity`: specifies the verbosity level of the source copying operation to the remote machine. May be one of ""Normal", "Verbose", or "Diagnostic".
@@ -127,6 +127,10 @@ When the active configuration specifies a Visual Studio generator, by default MS
 - `remoteInstallRoot`: specifies the directory on the remote machine in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}` where `VARIABLE` is an environment variable that has been defined at the system, user, or session level.
 - `remoteCopySources`: A `boolean` that specifies whether Visual Studio should copy source files to the remote machine. The default is true. Set to false if you manage file synchronization yourself.
 - `remoteCopyBuildOutput`: A `boolean` that specifies whether to copy the build outputs from the remote system.
+- `remoteCopyAdditionalIncludeDirectories`: 
+- `remoteCopyExcludeDirectories`: 
+- `remoteCopyUseCompilerDefaults`: 
+
 - `rsyncCommandArgs`: specifies a set of additional command-line options passed to rsync.
 - `remoteCopySourcesExclusionList`: A `array` that specifies a list of paths to be excluded when copying source files`: a path can be the name of a file/directory, or a path relative to root of the copy. Wildcards \\\"*\\\" and \\\"?\\\" can be used for glob pattern matching.
 - `cmakeExecutable`: specifies the full path to the CMake program executable, including the file name and extension.
@@ -179,7 +183,7 @@ In  `CMakeSettings.json`, you can define custom environment variables globally o
 - `namespace`: names the environment so that its variables can be referenced from a configuration in the form `namespace.variable`. The default environment object is called `env` and is populated with certain system environment variables including `%USERPROFILE%`.
 - `environment`: uniquely identifies this group of variables. Allows the group to be inherited later in an `inheritEnvironments` entry.
 - `groupPriority`: An integer that specifies the priority of these variables when evaluating them. Higher number items are evaluated first.
-- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs.
+- `inheritEnvironments`: An array of values that specify the set of environments that are inherited by this group. This feature enables you to inherit default environments and create custom environment variables that are passed to CMake.exe when it runs. In Visual Studio 2019 version 16.4 and later, debug targets are automatically launched with the environment you specify in *CMakeSettings.json*.
 
 The following example defines one global variable, **BuildDir**, which is inherited in both the x86-Debug and x64-Debug configurations. Each configuration uses the variable to specify the value for the **buildRoot** property for that configuration. Note also how each configuration uses the **inheritEnvironments** property to specify a variable that applies only to that configuration.
 
