@@ -11,7 +11,7 @@ Displays *message* to the standard output device (by default, the screen).
 
 ## Syntax
 
-> ECHO *message*
+> **ECHO** *message*
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Same as [%OUT](../../assembler/masm/percent-out.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

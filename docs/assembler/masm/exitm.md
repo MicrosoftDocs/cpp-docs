@@ -11,7 +11,7 @@ Terminates expansion of the current repeat or macro block and begins assembly of
 
 ## Syntax
 
-> EXITM [[textitem]]
+> **EXITM** ⟦*textitem*⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ In a macro function, *textitem* is the value returned.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,8 +11,8 @@ Returns the result of shifting the bits of *expression* right *count* number of 
 
 ## Syntax
 
-> expression SHR count
+> *expression* **SHR** *count*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -11,7 +11,7 @@ Starts listing of statements in false conditional blocks.
 
 ## Syntax
 
-> .LISTIF
+> **.LISTIF**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

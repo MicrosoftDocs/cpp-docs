@@ -11,9 +11,9 @@ Defines a program segment called *name* having segment attributes
 
 ## Syntax
 
-> *name* SEGMENT [[READONLY]] [[*align*]] [[*combine*]] [[*use*]] [[*characteristics*]] ALIAS(*string*) [['*class*']]<br/>
-> *statements*<br/>
-> *name* ENDS
+> *name* **SEGMENT** ⟦**READONLY**⟧ ⟦*align*⟧ ⟦*combine*⟧ ⟦*use*⟧ ⟦*characteristics*⟧ **ALIAS(**_string_**)** ⟦__'__*class*__'__⟧\
+> *statements*\
+> *name* **ENDS**
 
 #### Parameters
 
@@ -31,23 +31,23 @@ The range of memory addresses from which a starting address for the segment can 
 
 If this parameter is not specified, **PARA** is used by default.
 
-*combine*<br/>
+*combine*\
 **PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
 
-*use*<br/>
+*use*\
 **USE16**, **USE32**, **FLAT**
 
-*characteristics*<br/>
+*characteristics*\
 **INFO**, **READ**, **WRITE**, **EXECUTE**, **SHARED**, **NOPAGE**, **NOCACHE**, and **DISCARD**
 
 These are supported for COFF only and correspond to the COFF section characteristics of similar name (for example, **SHARED** corresponds to IMAGE_SCN_MEM_SHARED). READ sets the IMAGE_SCN_MEM_READ flag. The obsolete READONLY flag caused the section to clear the IMG_SCN_MEM_WRITE flag. If any *characteristics* are set, the default characteristics are not used and only the programmer-specified flags are in effect.
 
-`ALIAS(` *string* `)`<br/>
+_string_\
 This string is used as the section name in the emitted COFF object.  Creates multiple sections with the same external name, with distinct MASM segment names.
 
 Not supported with **/omf**.
 
-*class*<br/>
+*class*\
 Designates how segments should be combined and ordered in the assembled file. Typical values are, `'DATA'`, `'CODE'`, `'CONST'` and `'STACK'`
 
 ## Remarks
@@ -56,4 +56,4 @@ For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

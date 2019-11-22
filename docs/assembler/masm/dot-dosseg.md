@@ -11,7 +11,7 @@ Orders the segments according to the MS-DOS segment convention: CODE first, then
 
 ## Syntax
 
-> .DOSSEG
+> **.DOSSEG**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ The segments in DGROUP follow this order: segments not in BSS or STACK, then BSS
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

@@ -11,4 +11,4 @@ ms.assetid: 07723c4c-789d-4dfa-9407-c60e72cb975f
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

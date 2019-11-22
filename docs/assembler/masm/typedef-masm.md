@@ -11,8 +11,8 @@ Defines a new type called *name*, which is equivalent to *type*.
 
 ## Syntax
 
-> *name* TYPEDEF *type*
+> *name* **TYPEDEF** *type*
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,12 +11,12 @@ Calls the procedure at the address given by *expression*, passing the arguments 
 
 ## Syntax
 
-> INVOKE *expression* [[, *arguments*]]
+> **INVOKE** *expression* ⟦__,__ *argument* ...⟧
 
 ## Remarks
 
-Each argument passed to the procedure may be an expression, a register pair, or an address expression (an expression preceded by `ADDR`).
+Each argument passed to the procedure may be an expression, a register pair, or an address expression (an expression preceded by **ADDR**).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

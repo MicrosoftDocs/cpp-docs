@@ -11,8 +11,8 @@ See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
 
 ## Syntax
 
-> ABS
+> **ABS**
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

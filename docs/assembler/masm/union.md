@@ -11,10 +11,10 @@ Declares a union of one or more data types. The *field-declarations* must be val
 
 ## Syntax
 
-> *name* UNION [[*alignment*]] [[, NONUNIQUE]]<br/>
-> *field-declarations*<br/>
-> [[*name*]] ENDS
+> *name* **UNION** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧\
+> *field-declarations*\
+> ⟦*name*⟧ **ENDS**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

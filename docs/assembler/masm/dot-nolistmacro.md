@@ -11,7 +11,7 @@ Suppresses listing of macro expansions.
 
 ## Syntax
 
-> .NOLISTMACRO
+> **.NOLISTMACRO**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Same as [.SALL](../../assembler/masm/dot-sall.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

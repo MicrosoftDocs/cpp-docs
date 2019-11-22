@@ -11,7 +11,7 @@ Generates termination code. (32-bit MASM only.)
 
 ## Syntax
 
-> .EXIT [[expression]]
+> **.EXIT** ⟦*expression*⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Returns optional *expression* to shell.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,9 +11,9 @@ Marks a macro block called *name* and establishes *parameter* placeholders for a
 
 ## Syntax
 
-> *name* MACRO [[*parameter* [[:REQ | :=*default* | :VARARG]] ]] ...<br/>
-> *statements*<br/>
-> ENDM [[*value*]]
+> *name*  **MACRO** ⟦*parameter* ⟦**:REQ** | :=*default* | **:VARARG**⟧ ...⟧\
+> *statements*\
+> **ENDM** ⟦*value*⟧
 
 ## Remarks
 
@@ -21,4 +21,4 @@ A macro function returns *value* to the calling statement.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

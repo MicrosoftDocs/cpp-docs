@@ -11,10 +11,10 @@ Repeats assembly of block *statements* as long as *expression* remains true.
 
 ## Syntax
 
-> WHILE *expression*<br/>
-> *statements*<br/>
-> ENDM
+> **WHILE** *expression*\
+> *statements*\
+> **ENDM**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -7,12 +7,12 @@ ms.assetid: b69757dc-64a5-4ead-85af-fa5abbbbfdb6
 ---
 # .K3D (32-bit MASM)
 
-Enables assembly of K3D instructions. (32-bit MASM only.)
+Enables assembly of **K3D** instructions. (32-bit MASM only.)
 
 ## Syntax
 
-> .K3D
+> **.K3D**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

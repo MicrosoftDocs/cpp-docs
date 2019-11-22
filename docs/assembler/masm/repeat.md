@@ -11,10 +11,10 @@ Marks a block that is to be repeated *expression* times. Same as [REPT](../../as
 
 ## Syntax
 
-> REPEAT *expression*<br/>
-> *statements*<br/>
-> ENDM
+> **REPEAT** *expression*\
+> *statements*\
+> **ENDM**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,8 +11,8 @@ Returns the low 8 bits of *expression*. MASM expressions are 64-bit values.
 
 ## Syntax
 
-> LOW expression
+> **LOW** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -11,8 +11,8 @@ Returns a word defining the mode and scope of *expression*. The low byte is iden
 
 ## Syntax
 
-> OPATTR expression
+> **OPATTR** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

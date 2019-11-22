@@ -11,8 +11,8 @@ Enables assembly of all instructions (including privileged) for the 80486 proces
 
 ## Syntax
 
-> .486P
+> **.486P**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

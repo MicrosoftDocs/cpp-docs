@@ -11,8 +11,8 @@ Treats the value of *expression* in a macro argument as text.
 
 ## Syntax
 
-> % *expression*
+> **%** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

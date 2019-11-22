@@ -11,8 +11,8 @@ Returns a bit mask in which the bits in *recordfieldname* or *record* are set an
 
 ## Syntax
 
-> MASK {recordfieldname | record}
+> **MASK** {*recordfieldname* | *record*}
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

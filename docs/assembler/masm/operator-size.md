@@ -11,8 +11,8 @@ Returns the number of bytes in *variable* allocated by the first initializer.
 
 ## Syntax
 
-> SIZE variable
+> **SIZE** *variable*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

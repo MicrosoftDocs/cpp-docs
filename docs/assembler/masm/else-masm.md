@@ -11,7 +11,7 @@ Marks the beginning of an alternate block within a conditional block.
 
 ## Syntax
 
-> ELSE
+> **ELSE**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ See [IF](../../assembler/masm/if-masm.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

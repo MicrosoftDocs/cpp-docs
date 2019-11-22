@@ -15,4 +15,4 @@ DGROUP for near stacks or STACK for far stacks (text macro).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

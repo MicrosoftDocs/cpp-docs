@@ -11,10 +11,10 @@ The first operator forces the *expression* to be treated as having the specified
 
 ## Syntax
 
-> *type* PTR *expression*
+> *type* **PTR** *expression*
 >
-> \[*distance*] PTR *type*
+> \[*distance*] **PTR** *type*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

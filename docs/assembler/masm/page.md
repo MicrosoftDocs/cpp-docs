@@ -11,9 +11,10 @@ The first directive sets line *length* and character *width* of the program list
 
 ## Syntax
 
-> PAGE [[*length*]][[, *width*]]<br/><br/>
-> PAGE +
+> **PAGE** ⟦*length*⟧⟦__,__ *width*⟧
+
+> **PAGE +**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

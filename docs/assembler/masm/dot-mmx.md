@@ -11,8 +11,8 @@ Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions
 
 ## Syntax
 
-> .MMX
+> **.MMX**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

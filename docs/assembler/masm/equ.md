@@ -11,9 +11,9 @@ The first directive assigns numeric value of *expression* to *name*.
 
 ## Syntax
 
-> *name* EQU *expression*
+> *name* **EQU** *expression*
 >
-> *name* EQU \<*text*>
+> *name* **EQU** __\<__*text*__>__
 
 ## Remarks
 
@@ -23,4 +23,4 @@ The second directive assigns specified *text* to *name*. The *name* can be assig
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

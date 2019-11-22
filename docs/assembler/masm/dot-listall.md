@@ -11,7 +11,7 @@ Starts listing of all statements.
 
 ## Syntax
 
-> .LISTALL
+> **.LISTALL**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LI
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)
