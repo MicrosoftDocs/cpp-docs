@@ -15,4 +15,4 @@ Orders segments sequentially (the default order). (32-bit MASM only.)
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

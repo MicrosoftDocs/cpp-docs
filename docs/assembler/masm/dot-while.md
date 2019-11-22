@@ -11,10 +11,10 @@ Generates code that executes the block of *statements* while *condition* remains
 
 ## Syntax
 
-> **.WHILE** *condition*<br/>
-> *statements*<br/>
+> **.WHILE** *condition*\
+> *statements*\
 > **.ENDW**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -15,4 +15,4 @@ Enables assembly of **K3D** instructions. (32-bit MASM only.)
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

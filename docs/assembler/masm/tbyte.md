@@ -11,9 +11,9 @@ Allocates and optionally initializes 10 bytes of storage for each *initializer*.
 
 ## Syntax
 
-> ⟦*name*⟧ **TBYTE** *initializer* ⟦, *initializer*⟧...
+> ⟦*name*⟧ **TBYTE** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[DT](../../assembler/masm/dt.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[DT](../../assembler/masm/dt.md)

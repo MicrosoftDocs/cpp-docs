@@ -11,8 +11,8 @@ Generates an error if *name* has not been defined.
 
 ## Syntax
 
-> **.ERRNDEF** *name* ⟦, *message*⟧
+> **.ERRNDEF** *name* ⟦__,__ *message*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

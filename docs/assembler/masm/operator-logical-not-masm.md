@@ -15,4 +15,4 @@ Treats *character* as a literal character rather than as an operator or symbol.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

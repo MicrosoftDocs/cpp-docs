@@ -15,4 +15,4 @@ Finds the size of a text item.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,7 +11,7 @@ Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code en
 
 ## Syntax
 
-> **.SAVEREG** *reg*, *offset*
+> **.SAVEREG** *reg*__,__ *offset*
 
 ## Remarks
 
@@ -21,4 +21,4 @@ For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-fo
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

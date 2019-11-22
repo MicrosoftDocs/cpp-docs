@@ -15,24 +15,24 @@ The **.FPO** directive controls the emission of debug records to the .debug$F se
 
 ### Parameters
 
-*cdwLocals*<br/>
+*cdwLocals*\
 Number of local variables, an unsigned 32 bit value.
 
-*cdwParams*<br/>
+*cdwParams*\
 Size of the parameters in DWORDS, an unsigned 16 bit value.
 
-*cbProlog*<br/>
+*cbProlog*\
 Number of bytes in the function prolog code, an unsigned 8 bit value.
 
-*cbRegs*<br/>
+*cbRegs*\
 Number registers saved.
 
-*fUseBP*<br/>
+*fUseBP*\
 Indicates whether the EBP register has been allocated. either 0 or 1.
 
-*cbFrame*<br/>
+*cbFrame*\
 Indicates the frame type.  See [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_data) for more information.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

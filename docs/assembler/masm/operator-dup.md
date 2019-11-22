@@ -11,8 +11,8 @@ Specifies *count* number of declarations of *initialvalue*.
 
 ## Syntax
 
-> *count* **DUP** (*initialvalue* ⟦, *initialvalue*⟧...)
+> *count* **DUP** __(__*initialvalue* ⟦__,__ *initialvalue* ...⟧__)__
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](../../assembler/masm/operators-reference.md)

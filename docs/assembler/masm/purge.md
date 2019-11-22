@@ -11,8 +11,8 @@ Deletes the specified macros from memory.
 
 ## Syntax
 
-> **PURGE** *macroname* ⟦, *macroname*⟧...
+> **PURGE** *macroname* ⟦__,__ *macroname* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

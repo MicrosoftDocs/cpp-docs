@@ -11,8 +11,8 @@ Generates an error if *textitem* is not blank.
 
 ## Syntax
 
-> **.ERRNB** *textitem* ⟦, *message*⟧
+> **.ERRNB** *textitem* ⟦__,__ *message*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

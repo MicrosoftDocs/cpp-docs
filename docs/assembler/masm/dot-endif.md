@@ -17,4 +17,4 @@ ms.assetid: b9f25ed5-6634-40f7-bcbc-d3135f09cce6
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

@@ -15,4 +15,4 @@ Returns the result of a bitwise **XOR** operation for *expression1* and *express
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

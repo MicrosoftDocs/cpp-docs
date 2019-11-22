@@ -11,10 +11,10 @@ Declares a structure type having the specified *field-declarations*. Each field 
 
 ## Syntax
 
-> *name*  **STRUCT** ⟦*alignment*⟧ ⟦, **NONUNIQUE**⟧<br/>
-> *field-declarations*<br/>
-> *name*  **ENDS**
+> *name* **STRUCT** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧
+> *field-declarations*\
+> *name* **ENDS**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

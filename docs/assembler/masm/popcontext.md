@@ -15,4 +15,4 @@ Restores part or all of the current *context* (saved by the [PUSHCONTEXT](../../
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

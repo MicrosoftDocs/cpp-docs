@@ -11,14 +11,14 @@ Marks start and end of a procedure block called *label*. The statements in the b
 
 ## Syntax
 
-> *label* **PROC** ⟦*distance*⟧ ⟦*langtype*⟧ ⟦*visibility*⟧ ⟦\<*prologuearg*>⟧ ⟦**USES** *reglist*⟧ ⟦, *parameter* ⟦:*tag*⟧⟧ ...<br/>
-> ⟦**FRAME** ⟦:*ehandler-address*⟧ ⟧<br/>
-> *statements*<br/>
+> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦*visibility*⟧ ⟦__\<__*prologuearg*__>__⟧ ⟦**USES** *reglist*⟧ ⟦__,__ *parameter* ⟦__:__*tag*⟧ ...⟧\
+> ⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧\
+> *statements*\
 > *label* **ENDP**
 
 ## Remarks
 
-⟦**FRAME** ⟦:*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
+⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
 
 When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive.
 
@@ -71,4 +71,4 @@ Dumping Unwind Information for file ex2.exe
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

@@ -11,10 +11,10 @@ Creates a new label by assigning the current location-counter value and the give
 
 ## Syntax
 
-> *name*  **LABEL** *type*
+> *name* **LABEL** *type*
 >
-> *name*  **LABEL** ⟦**NEAR** | **FAR** | **PROC**⟧ **PTR** ⟦*type*⟧
+> *name* **LABEL** ⟦**NEAR** | **FAR** | **PROC**⟧ **PTR** ⟦*type*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

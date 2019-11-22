@@ -15,4 +15,4 @@ See [OPATTR](../../assembler/masm/operator-opattr.md).
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

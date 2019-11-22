@@ -1,5 +1,5 @@
 ---
-title: "?"
+title: "? (MASM)"
 ms.date: "08/30/2018"
 f1_keywords: ["?"]
 helpviewer_keywords: ["? symbol, macro assembler character"]
@@ -15,4 +15,4 @@ In data declarations, a value that the assembler allocates but does not initiali
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)

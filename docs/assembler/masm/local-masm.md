@@ -11,9 +11,9 @@ In the first directive, within a macro, **LOCAL** defines labels that are unique
 
 ## Syntax
 
-> **LOCAL** *localname* \[, *localname*] ...
+> **LOCAL** *localname* ⟦, *localname* ...⟧
 >
-> **LOCAL** *label* \[ __\[__*count*__]__ ] \[__:__*type*] \[__,__ *label* \[ __\[__*count*__]__ ] \[*type*] ] ...
+> **LOCAL** *label* ⟦ __\[__*count*__]__ ⟧ ⟦__:__*type*⟧ ⟦__,__ *label* ⟦ __\[__*count*__]__ ⟧ ⟦*type*⟧ ...⟧
 
 ## Remarks
 
@@ -21,4 +21,4 @@ In the second directive, within a procedure definition (**PROC**), **LOCAL** cre
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

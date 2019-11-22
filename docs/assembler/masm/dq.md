@@ -11,9 +11,9 @@ Allocates and optionally initializes 8 bytes of storage for each *initializer*. 
 
 ## Syntax
 
-> ⟦*name*⟧ **DQ** *initializer* ⟦, *initializer*⟧...
+> ⟦*name*⟧ **DQ** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[QWORD](../../assembler/masm/qword.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[QWORD](../../assembler/masm/qword.md)

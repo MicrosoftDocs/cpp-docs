@@ -11,7 +11,7 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## Syntax
 
-> YMMWORD
+> **YMMWORD**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

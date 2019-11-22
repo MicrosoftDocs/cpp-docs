@@ -11,7 +11,7 @@ Allocates and optionally initializes a double word (4 bytes) of storage for each
 
 ## Syntax
 
-> ⟦*name*⟧ **DD** *initializer* ⟦, *initializer*⟧...
+> ⟦*name*⟧ **DD** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Can also be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

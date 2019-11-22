@@ -11,8 +11,8 @@ Enables assembly of all instructions (including privileged) for the Pentium Pro 
 
 ## Syntax
 
-> .686P
+> **.686P**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

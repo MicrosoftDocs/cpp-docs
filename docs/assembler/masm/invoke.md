@@ -11,7 +11,7 @@ Calls the procedure at the address given by *expression*, passing the arguments 
 
 ## Syntax
 
-> **INVOKE** *expression* ⟦, *arguments*⟧
+> **INVOKE** *expression* ⟦__,__ *argument* ...⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Each argument passed to the procedure may be an expression, a register pair, or 
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

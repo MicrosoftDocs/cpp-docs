@@ -11,8 +11,8 @@ Marks a block that will be repeated once for each character in *string*, with th
 
 ## Syntax
 
-> **FORC** *parameter*, \<*string*><br/>
-> *statements*<br/>
+> **FORC** *parameter*, __\<__*string*__>__\
+> *statements*\
 > **ENDM**
 
 ## Remarks
@@ -21,4 +21,4 @@ Same as [IRPC](../../assembler/masm/irpc.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

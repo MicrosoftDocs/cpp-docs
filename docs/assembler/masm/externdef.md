@@ -11,7 +11,7 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 ## Syntax
 
-> **EXTERNDEF** ⟦*langtype*⟧ *name:type* ⟦, ⟦*langtype*⟧ *name:type*⟧...
+> **EXTERNDEF** ⟦*language-type*⟧ *name*__:__*type* ⟦__,__ ⟦*language-type*⟧ *name*__:__*type* ...⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/ma
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

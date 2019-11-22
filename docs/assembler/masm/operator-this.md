@@ -15,4 +15,4 @@ Returns an operand of specified *type* whose offset and segment values are equal
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

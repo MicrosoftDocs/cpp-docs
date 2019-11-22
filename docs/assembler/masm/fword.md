@@ -11,7 +11,7 @@ Allocates and optionally initializes 6 bytes of storage for each *initializer*.
 
 ## Syntax
 
-> ⟦*name*⟧ **FWORD** *initializer* ⟦, *initializer*⟧...
+> ⟦*name*⟧ **FWORD** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## Remarks
 
@@ -19,5 +19,5 @@ Also can be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[DF](../../assembler/masm/df.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[DF](../../assembler/masm/df.md)

@@ -15,4 +15,4 @@ See [.NOLIST](../../assembler/masm/dot-nolist.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -156,4 +156,4 @@ ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 
 ## See also
 
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

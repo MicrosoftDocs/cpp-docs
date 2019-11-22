@@ -13,8 +13,8 @@ Returns *expression1* minus *expression2*. The second operator reverses the sign
 
 > *expression1* **-** *expression2*
 >
-> **-***expression*
+> __-__*expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

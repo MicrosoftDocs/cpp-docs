@@ -15,4 +15,4 @@ Returns the number of data items in *variable* created by the first initializer.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

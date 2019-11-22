@@ -15,4 +15,4 @@ Generates program start-up code. (32-bit MASM only.)
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

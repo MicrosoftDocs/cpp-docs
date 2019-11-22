@@ -15,4 +15,4 @@ Treats *text* as a comment.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -15,4 +15,4 @@ Returns the offset of *expression*. Same as **OFFSET**, but it generates a loade
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -11,8 +11,8 @@ Marks a block that will be repeated once for each *argument*, with the current *
 
 ## Syntax
 
-> **FOR** *parameter* ⟦**:REQ **| :=*default*⟧ , \<*argument* ⟦, *argument*⟧...><br/>
-> *statements*<br/>
+> **FOR** *parameter* ⟦**:REQ** | __:=__*default*⟧ **, \<** _argument_ ⟦__,__ *argument* ...⟧**>**\
+> *statements*\
 > **ENDM**
 
 ## Remarks
@@ -21,4 +21,4 @@ Same as [IRP](../../assembler/masm/irp.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

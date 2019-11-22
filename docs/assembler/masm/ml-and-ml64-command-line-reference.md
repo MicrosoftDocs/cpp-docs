@@ -19,7 +19,7 @@ For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/
 
 ### Parameters
 
-*options*<br/>
+*options*\
 The options listed in the following table.
 
 |Option|Action|
@@ -72,10 +72,10 @@ The options listed in the following table.
 |**/Zs**|Performs a syntax check only.|
 |**/?**|Displays a summary of ML command-line syntax.|
 
-*filename*<br/>
+*filename*\
 The name of the file.
 
-*linkoptions*<br/>
+*linkoptions*\
 The link options.  See [Linker Options](../../build/reference/linker-options.md) for more information.
 
 ## Remarks
@@ -94,5 +94,5 @@ Some command-line options to ML and ML64 are placement-sensitive. For example, b
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)\
+[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

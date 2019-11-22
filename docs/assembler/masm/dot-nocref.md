@@ -11,7 +11,7 @@ Suppresses listing of symbols in the symbol table and browser file.
 
 ## Syntax
 
-> **.NOCREF** ⟦*name*⟦, *name*⟧...⟧
+> **.NOCREF** ⟦*name*⟦__,__ *name* ...⟧⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ If names are specified, then only the given names are suppressed. Same as [.XCRE
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

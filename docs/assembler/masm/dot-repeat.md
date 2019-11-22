@@ -11,10 +11,10 @@ Generates code that repeats execution of the block of *statements* until *condit
 
 ## Syntax
 
-> .REPEAT<br/>
-> statements<br/>
-> .UNTIL condition
+> **.REPEAT**\
+> *statements*\
+> **.UNTIL** *condition*
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

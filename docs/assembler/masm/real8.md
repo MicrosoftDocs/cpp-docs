@@ -11,8 +11,8 @@ Allocates and optionally initializes a double-precision (8-byte) floating-point 
 
 ## Syntax
 
-> *name* **REAL8** *initializer* ⟦, *initializer*⟧...
+> *name* **REAL8** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

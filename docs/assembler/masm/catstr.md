@@ -11,7 +11,7 @@ Concatenates text items.
 
 ## Syntax
 
-> *name* **CATSTR** ⟦*textitem1* ⟦, *textitem2*⟧ ...⟧
+> *name* **CATSTR** ⟦*textitem1* ⟦__,__ *textitem2* ...⟧⟧
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Each text item can be a literal string, a constant preceded by a **%**, or the s
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

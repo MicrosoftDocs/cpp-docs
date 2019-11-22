@@ -11,8 +11,8 @@ Generates an error if *name* is a previously defined label, variable, or symbol.
 
 ## Syntax
 
-> **.ERRDEF** *name* ⟦, *message*⟧
+> **.ERRDEF** *name* ⟦__,__ *message*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

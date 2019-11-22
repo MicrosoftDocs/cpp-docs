@@ -15,4 +15,4 @@ Overrides the default segment of *expression* with *segment*. The *segment* can 
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

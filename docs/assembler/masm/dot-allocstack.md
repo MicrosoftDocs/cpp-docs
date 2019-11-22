@@ -21,7 +21,7 @@ MASM will choose the most efficient encoding for a given size.
 
 The *size* operand must be a multiple of 8.
 
-Fore more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 ## Sample
 
@@ -57,4 +57,4 @@ END
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

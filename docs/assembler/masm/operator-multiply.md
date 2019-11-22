@@ -11,8 +11,8 @@ Returns *expression1* times *expression2*.
 
 ## Syntax
 
-> *expression1* __*__ *expression2*
+> *expression1* __\*__ *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

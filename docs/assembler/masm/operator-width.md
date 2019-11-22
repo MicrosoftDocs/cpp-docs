@@ -15,4 +15,4 @@ Returns the width in bits of the current *recordfieldname* or *record*.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)
