@@ -15,7 +15,7 @@ This warning may be fixed if you remove the extra semicolon.
 
 ## Example
 
-```
+```c
 // C4019.c
 // compile with: /Za /W4
 #define declint( varname ) int varname;

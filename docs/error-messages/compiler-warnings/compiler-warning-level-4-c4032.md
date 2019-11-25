@@ -15,7 +15,7 @@ This is an error in ANSI C ([/Za](../../build/reference/za-ze-disable-language-e
 
 ## Example
 
-```
+```c
 // C4032.c
 // compile with: /W4
 void func();

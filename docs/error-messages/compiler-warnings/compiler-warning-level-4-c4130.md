@@ -13,7 +13,7 @@ Using the operator with the address of a string literal produces unexpected code
 
 The following sample generates C4130:
 
-```
+```cpp
 // C4130.cpp
 // compile with: /W4
 int main()
