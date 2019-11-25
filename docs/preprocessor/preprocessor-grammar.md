@@ -8,7 +8,7 @@ ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
 
 *control-line*:\
 &nbsp;&nbsp;&nbsp;&nbsp;**#define** *identifier* *token-string*<sub>opt</sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;**#define** *identifier* **(**&#x2800;&#x200B;*identifier*&#x200B;<sub>opt</sub> **,** ... **,** *identifier*&#x200B;<sub>opt</sub>&#x200B;&#x2800;**)** *token-string*<sub>opt</sub>\
+&nbsp;&nbsp;&nbsp;&nbsp;**#define** *identifier* **(**&#x2800;*identifier*&#x200B;<sub>opt</sub> **,** ... **,** *identifier*&#x200B;<sub>opt</sub>&#x2800;**)** *token-string*<sub>opt</sub>\
 &nbsp;&nbsp;&nbsp;&nbsp;**#include** **"**_path-spec_**"**\
 &nbsp;&nbsp;&nbsp;&nbsp;**#include** **\<**_path-spec_**>**\
 &nbsp;&nbsp;&nbsp;&nbsp;**#line** *digit-sequence*  **"**_filename_**"**&#x200B;<sub>opt</sub>\
@@ -17,7 +17,7 @@ ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
 &nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *token-string*
 
 *constant-expression*:\
-&nbsp;&nbsp;&nbsp;&nbsp;**defined(**&#x2800;&#x200B;*identifier*&#x200B;&#x2800;**)**\
+&nbsp;&nbsp;&nbsp;&nbsp;**defined(**&#x2800;*identifier*&#x2800;**)**\
 &nbsp;&nbsp;&nbsp;&nbsp;**defined** *identifier*\
 &nbsp;&nbsp;&nbsp;&nbsp;any other constant expression
 
@@ -75,7 +75,7 @@ ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
 &nbsp;&nbsp;&nbsp;&nbsp;Any sequence of text
 
 > [!NOTE]
-> The following nonterminals are expanded in the [Lexical conventions](../cpp/lexical-conventions.md) section of the C++ language reference: *constant*, *constant-expression*, *identifier*, *keyword*, *operator*, and *punctuator*.
+> The following nonterminals are expanded in the [Lexical conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: *constant*, *constant-expression*, *identifier*, *keyword*, *operator*, and *punctuator*.
 
 ## See also
 
