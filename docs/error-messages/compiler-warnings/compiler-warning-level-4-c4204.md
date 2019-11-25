@@ -13,7 +13,7 @@ With Microsoft extensions (/Ze), you can initialize aggregate types (arrays, str
 
 ## Example
 
-```
+```c
 // C4204.c
 // compile with: /W4
 int func1()

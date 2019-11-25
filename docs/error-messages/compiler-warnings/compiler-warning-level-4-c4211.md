@@ -13,7 +13,7 @@ With the default Microsoft extensions (/Ze), you can redefine an `extern` identi
 
 ## Example
 
-```
+```c
 // C4211.c
 // compile with: /W4
 extern int i;

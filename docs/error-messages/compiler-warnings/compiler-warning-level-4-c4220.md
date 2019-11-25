@@ -13,7 +13,7 @@ Under the default Microsoft extensions (/Ze), a pointer to a function matches a 
 
 ## Example
 
-```
+```c
 // C4220.c
 // compile with: /W4
 
