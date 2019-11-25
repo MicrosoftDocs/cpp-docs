@@ -7,19 +7,19 @@ ms.assetid: 478ed97d-e502-49e4-9afb-ac2a6c61194b
 ---
 # Compiler Warning (level 4) C4100
 
-'identifier' : unreferenced formal parameter
+> '*identifier*' : unreferenced formal parameter
 
-The formal parameter is not referenced in the body of the function. The unreferenced parameter is ignored.
+The formal parameter *identifier* isn't referenced in the body of the function. The unreferenced parameter is ignored.
 
-C4100 can also be issued when code calls a destructor on a otherwise unreferenced parameter of primitive type.  This is a limitation of the Microsoft C++ compiler.
+**C4100** may be issued when code calls a destructor on an otherwise unreferenced parameter of primitive type. It's a limitation of the Microsoft C++ compiler.
 
 The following sample generates C4100:
 
-```
+```cpp
 // C4100.cpp
 // compile with: /W4
 void func(int i) {   // C4100, delete the unreferenced parameter to
-                     //resolve the warning
+                     // resolve the warning
    // i;   // or, add a reference like this
 }
 
