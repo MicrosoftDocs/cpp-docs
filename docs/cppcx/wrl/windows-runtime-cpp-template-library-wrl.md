@@ -67,7 +67,7 @@ Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Ta
 [Creating a Windows Runtime DLL component with C++ sample](https://code.msdn.microsoft.com/windowsapps/Creating-a-Windows-Runtime-6c399797)<br/>
 Shows how to use the Windows Runtime C++ Template Library to create an in-process DLL component and consume it from C++/CX, JavaScript, and C#.
 
-[DirectX marble maze game sample](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345)<br/>
+[DirectX marble maze game sample](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 Demonstrates how to use the Windows Runtime C++ Template Library to manage the lifetime of COM components such as DirectX and Media Foundation in the context of a complete 3-D game.
 
 [Sending toast notifications from desktop apps sample](https://code.msdn.microsoft.com/windowsdesktop/Sending-toast-notifications-71e230a2)<br/>
