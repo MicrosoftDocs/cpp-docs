@@ -13,7 +13,7 @@ You tried to convert a signed **const** that has a negative value to an `unsigne
 
 The following sample generates C4245:
 
-```
+```cpp
 // C4245.cpp
 // compile with: /W4 /c
 const int i = -1;

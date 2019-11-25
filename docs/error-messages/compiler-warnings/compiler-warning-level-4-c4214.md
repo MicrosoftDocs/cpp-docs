@@ -13,7 +13,7 @@ With the default Microsoft extensions (/Ze), bitfield structure members can be o
 
 ## Example
 
-```
+```c
 // C4214.c
 // compile with: /W4
 struct bitfields

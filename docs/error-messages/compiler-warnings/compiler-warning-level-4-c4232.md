@@ -13,7 +13,7 @@ Under Microsoft extensions (/Ze), you can give a nonstatic value as the address 
 
 The following sample generates C4232:
 
-```
+```c
 // C4232.c
 // compile with: /W4 /Ze /c
 int __declspec(dllimport) f();
