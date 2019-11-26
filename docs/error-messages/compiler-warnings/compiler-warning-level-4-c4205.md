@@ -13,7 +13,7 @@ With Microsoft extensions (/Ze), **static** functions can be declared inside ano
 
 ## Example
 
-```
+```c
 // C4205.c
 // compile with: /W4
 void func1()

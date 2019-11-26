@@ -13,7 +13,7 @@ Under Microsoft extensions (/Ze), you can specify a structure without a declarat
 
 ## Example
 
-```
+```cpp
 // C4201.cpp
 // compile with: /W4
 struct S

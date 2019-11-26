@@ -13,7 +13,7 @@ An old-style function definition contains variable arguments. These definitions 
 
 ## Example
 
-```
+```c
 // C4202.c
 // compile with: /W4
 void func( a, b, ...)   // C4202

@@ -21,7 +21,7 @@ To fix this warning,
 
 The following sample generates C4256:
 
-```
+```cpp
 // C4256.cpp
 // compile with: /W4
 // #pragma warning(disable : 4256)
