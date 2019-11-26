@@ -1,6 +1,6 @@
 ---
 title: "Compiler Warning (level 3) C4996"
-description: "Explains why Compiler warning C4996 happens, and describes what to do about it.
+description: "Explains why Compiler warning C4996 happens, and describes what to do about it."
 ms.date: "11/25/2019"
 f1_keywords: ["C4996"]
 helpviewer_keywords: ["C4996"]
