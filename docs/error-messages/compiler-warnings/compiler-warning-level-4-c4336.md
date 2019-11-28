@@ -44,7 +44,7 @@ library C4336bLib
 
 The following sample generates C4336:
 
-```
+```cpp
 // C4336.cpp
 // compile with: /W4 /LD
 // #import "C4336a.tlb"

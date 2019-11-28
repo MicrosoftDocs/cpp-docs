@@ -29,7 +29,7 @@ You can resolve the C4512 warning for your code in one of three ways:
 
 The following sample generates C4512.
 
-```
+```cpp
 // C4512.cpp
 // compile with: /EHsc /W4
 // processor: x86
