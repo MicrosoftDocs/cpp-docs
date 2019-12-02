@@ -10,7 +10,7 @@ The C++ library obeys much the same conventions as the Standard C Library, plus 
 
 An implementation has certain latitude in how it declares types and functions in the C++ library:
 
-- Names of functions in the Standard C library may have either extern #"C++" or extern "C" linkage. Include the appropriate Standard C header rather than declare a library entity inline.
+- Names of functions in the Standard C library may have either extern "C++" or extern "C" linkage. Include the appropriate Standard C header rather than declare a library entity inline.
 
 - A member function name in a library class may have additional function signatures over those listed in this document. You can be sure that a function call described here behaves as expected, but you cannot reliably take the address of a library member function. (The type may not be what you expect.)
 
