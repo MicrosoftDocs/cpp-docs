@@ -479,7 +479,7 @@ path system_complete(const path& pval);
 path system_complete(const path& pval, error_code& ec);
 ```
 
-The functions return an absolute pathname that takes into account, as necessary, the current directory associated with its root name. \(For Posix, the functions return `absolute(pval)`.\)
+The functions return an absolute pathname that takes into account, as necessary, the current directory associated with its root name. \(For POSIX, the functions return `absolute(pval)`.\)
 
 ## <a name="temp_directory_path"></a> temp_directory_path
 
