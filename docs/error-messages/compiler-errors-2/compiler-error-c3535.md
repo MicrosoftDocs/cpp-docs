@@ -23,7 +23,7 @@ The type of the variable declared by the `auto` keyword cannot be deduced from t
 
 The following example yields C3535 because the initialization expression evaluates to `void`.
 
-```
+```cpp
 // C3535a.cpp
 // Compile with /Zc:auto
 void f(){}
@@ -38,7 +38,7 @@ int main()
 
 The following example yields C3535 because the statement declares variable `x` as a pointer to a deduced type, but the type of the initializer expression is double. Consequently, the compiler cannot deduce the type of the variable.
 
-```
+```cpp
 // C3535b.cpp
 // Compile with /Zc:auto
 int main()
@@ -52,7 +52,7 @@ int main()
 
 The following example yields C3535 because variable `p` declares a pointer to a deduced type, but the initialization expression is not a pointer type.
 
-```
+```cpp
 // C3535c.cpp
 // Compile with /Zc:auto
 class A { };

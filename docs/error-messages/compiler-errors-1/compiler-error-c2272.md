@@ -13,7 +13,7 @@ A `static` member function is declared with a memory-model specifier, such as [c
 
 The following sample generates C2272:
 
-```
+```cpp
 // C2272.cpp
 // compile with: /c
 class CMyClass {

@@ -19,7 +19,7 @@ The indicated symbol cannot be used before it is initialized. In practice, this 
 
 The following example yields C3536 because each variable is initialized with itself.
 
-```
+```cpp
 // C3536.cpp
 // Compile with /Zc:auto
 int main()

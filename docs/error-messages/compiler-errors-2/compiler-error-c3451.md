@@ -19,7 +19,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 The following sample generates C3451.
 
-```
+```cpp
 // C3451.cpp
 // compile with: /clr /c
 using namespace System;

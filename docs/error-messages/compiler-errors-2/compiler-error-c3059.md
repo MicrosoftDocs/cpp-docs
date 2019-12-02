@@ -13,7 +13,7 @@ A [threadprivate](../../parallel/openmp/reference/threadprivate.md) symbol was u
 
 The following sample generates C3059:
 
-```
+```cpp
 // C3059.cpp
 // compile with: /openmp
 #include "omp.h"
@@ -30,7 +30,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C3059b.cpp
 // compile with: /openmp
 #include "omp.h"

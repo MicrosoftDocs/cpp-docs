@@ -17,7 +17,7 @@ This error may be fixed if you specify the return type in the function declarati
 
 The following sample generates C2562:
 
-```
+```cpp
 // C2562.cpp
 // compile with: /c
 void testfunc() {

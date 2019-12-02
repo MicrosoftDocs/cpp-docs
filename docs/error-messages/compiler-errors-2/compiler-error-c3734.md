@@ -13,7 +13,7 @@ The [coclass](../../windows/coclass.md) attribute cannot be used with managed or
 
 The following sample generates C3734 and shows how to fix it:
 
-```
+```cpp
 // C3734.cpp
 // compile with: /clr /c
 [module(name="x")];

@@ -13,7 +13,7 @@ The operand to the left of the period (.) is not a class, structure, or union.
 
 The following sample generates C2228:
 
-```
+```cpp
 // C2228.cpp
 int i;
 struct S {

@@ -13,7 +13,7 @@ You cannot use a generic or template class as a global `typedef`.
 
 The following sample generates C2937:
 
-```
+```cpp
 // C2937.cpp
 // compile with: /c
 template<class T>
@@ -24,7 +24,7 @@ typedef TC<int> c;   // OK
 
 C2937 can also occur when using generics:
 
-```
+```cpp
 // C2937b.cpp
 // compile with: /clr
 generic<class T>

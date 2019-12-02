@@ -13,7 +13,7 @@ A declaration contains more than one storage class.
 
 The following sample generates C2159:
 
-```
+```cpp
 // C2159.cpp
 // compile with: /c
 static int i;   // OK

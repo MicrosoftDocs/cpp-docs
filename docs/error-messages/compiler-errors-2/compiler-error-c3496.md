@@ -19,7 +19,7 @@ You cannot capture the `this` pointer by reference.
 
 The following example generates C3496 because a reference to the `this` pointer appears in the capture list of a lambda expression:
 
-```
+```cpp
 // C3496.cpp
 // compile with: /c
 

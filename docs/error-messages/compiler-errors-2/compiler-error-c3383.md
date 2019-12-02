@@ -21,7 +21,7 @@ For more information, see,
 
 The following sample generates C3383.
 
-```
+```cpp
 // C3383.cpp
 // compile with: /clr:safe
 int main() {

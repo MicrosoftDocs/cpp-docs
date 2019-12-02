@@ -13,7 +13,7 @@ A type that will be visible from an assembly must use publicly visible base clas
 
 The following sample generates C3213:
 
-```
+```cpp
 // C3213.cpp
 // compile with: /clr
 private ref struct privateG {

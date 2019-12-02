@@ -13,7 +13,7 @@ The following operators cannot be overloaded: class member access (`.`), pointer
 
 The following sample generates C2800:
 
-```
+```cpp
 // C2800.cpp
 // compile with: /c
 class C {

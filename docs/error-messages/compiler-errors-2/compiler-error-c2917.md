@@ -15,7 +15,7 @@ A template parameter list contains an identifier that was not a template paramet
 
 The following sample generates C2917.
 
-```
+```cpp
 // C2917.cpp
 // compile with: /c
 template<class T> class Vector {

@@ -13,7 +13,7 @@ If [default(none)](../../parallel/openmp/reference/default-openmp.md) is used, a
 
 The following sample generates C3052:
 
-```
+```cpp
 // C3052.cpp
 // compile with: /openmp /c
 int main() {

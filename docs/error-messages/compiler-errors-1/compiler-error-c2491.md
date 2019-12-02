@@ -15,7 +15,7 @@ To fix this issue, remove the `__declspec(dllimport)` specifier from the definit
 
 The following sample generates C2491:
 
-```
+```cpp
 // C2491.cpp
 // compile with: /c
 // function definition

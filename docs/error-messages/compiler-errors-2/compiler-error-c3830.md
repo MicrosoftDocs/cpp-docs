@@ -15,7 +15,7 @@ A value type cannot inherit a base class.  For more information, see [Classes an
 
 The following sample generates C3830:
 
-```
+```cpp
 // C3830a.cpp
 // compile with: /clr /c
 public value struct MyStruct4 {

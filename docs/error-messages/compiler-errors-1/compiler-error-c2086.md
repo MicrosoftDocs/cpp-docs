@@ -15,7 +15,7 @@ C2086 can also be the result of incremental building for a referenced C# assembl
 
 The following sample generates C2086:
 
-```
+```cpp
 // C2086.cpp
 main() {
   int a;

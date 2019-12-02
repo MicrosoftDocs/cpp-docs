@@ -15,7 +15,7 @@ Note that all methods in an interface are public.
 
 The following sample generates C3252 and shows how to fix it:
 
-```
+```cpp
 // C3252.cpp
 // compile with: /clr /c
 ref class A {

@@ -13,7 +13,7 @@ An attempt was made to assign a default initialization as part of an aggregate i
 
 The following samples generate C3852:
 
-```
+```cpp
 // C3852.cpp
 struct S
 {

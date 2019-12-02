@@ -13,7 +13,7 @@ The compiler only allows generic classes, structs, and functions.  For more info
 
 The following sample generates C3722:
 
-```
+```cpp
 // C3722.cpp
 // compile with: /clr
 generic <typename T>

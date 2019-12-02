@@ -15,7 +15,7 @@ The compiler detected an ill-formed override. For example, the base class functi
 
 The following sample generates C3764.
 
-```
+```cpp
 // C3764.cpp
 // compile with: /clr /c
 public ref struct A {
@@ -33,7 +33,7 @@ public ref struct B : A {
 
 C3764 can also occur when a base class method is both explicitly and named overridden. The following sample generates C3764.
 
-```
+```cpp
 // C3764_b.cpp
 // compile with: /clr /c
 ref struct A {

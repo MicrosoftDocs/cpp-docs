@@ -15,7 +15,7 @@ For more information, see [Generics](../../extensions/generics-cpp-component-ext
 
 The following sample generates C3054.
 
-```
+```cpp
 // C3054.cpp
 // compile with: /openmp /clr /c
 #include <omp.h>

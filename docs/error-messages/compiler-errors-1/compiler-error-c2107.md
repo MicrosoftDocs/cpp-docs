@@ -17,7 +17,7 @@ C2107 can occur if you incorrectly use the `this` pointer of a value type to acc
 
 The following sample generates C2107.
 
-```
+```cpp
 // C2107.cpp
 // compile with: /clr
 using namespace System;

@@ -13,7 +13,7 @@ It is an error for anything other than a `for` loop to immediately follow a `#pr
 
 The following sample generates C3014:
 
-```
+```cpp
 // C3014.cpp
 // compile with: /openmp
 int main()

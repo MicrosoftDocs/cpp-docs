@@ -13,7 +13,7 @@ A [reduction](../../parallel/openmp/reference/reduction.md) clause was not speci
 
 The following sample generates C3036:
 
-```
+```cpp
 // C3036.cpp
 // compile with: /openmp
 static float a[1000], b[1000], c[1000];

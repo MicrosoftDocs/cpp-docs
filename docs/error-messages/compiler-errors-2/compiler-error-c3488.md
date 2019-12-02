@@ -25,7 +25,7 @@ When you specify that the default capture mode for a lambda expression is by-ref
 
 The following example generates C3488 because a reference to the variable `n` appears in the capture clause of a lambda expression whose default mode is by-reference:
 
-```
+```cpp
 // C3488a.cpp
 
 int main()
@@ -39,7 +39,7 @@ int main()
 
 The following example shows four possible resolutions to C3488:
 
-```
+```cpp
 // C3488b.cpp
 
 int main()

@@ -13,7 +13,7 @@ A `typedef` identifier is redefined.
 
 The following sample generates C2377:
 
-```
+```cpp
 // C2377.cpp
 // compile with: /c
 typedef int i;

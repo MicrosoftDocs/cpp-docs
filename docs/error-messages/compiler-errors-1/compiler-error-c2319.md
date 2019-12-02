@@ -13,7 +13,7 @@ A `try` or `catch` block is not found following the `try` or `catch` statement. 
 
 The following sample generates C2319:
 
-```
+```cpp
 // C2319.cpp
 // compile with: /EHsc
 #include <eh.h>

@@ -13,7 +13,7 @@ The operator must have an l-value as its left operand.
 
 The following sample generates C2106:
 
-```
+```cpp
 // C2106.cpp
 int main() {
    int a;

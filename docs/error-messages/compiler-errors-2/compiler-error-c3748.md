@@ -13,7 +13,7 @@ The [__event](../../cpp/event.md) keyword cannot appear inside an interface.
 
 The following sample generates C3748:
 
-```
+```cpp
 // C3748.cpp
 __interface I {
 // try the following line instead

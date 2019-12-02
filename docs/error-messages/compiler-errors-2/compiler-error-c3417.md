@@ -13,7 +13,7 @@ Value types cannot contain functions such as a default instance constructor, des
 
 The following sample generates C3517:
 
-```
+```cpp
 // C3417.cpp
 // compile with: /clr /c
 value class VC {

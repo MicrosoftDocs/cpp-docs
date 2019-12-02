@@ -13,7 +13,7 @@ A global function or class is declared `virtual`. This is not allowed.
 
 The following sample generates C2575:
 
-```
+```cpp
 // C2575.cpp
 // compile with: /c
 virtual void func() {}   // C2575

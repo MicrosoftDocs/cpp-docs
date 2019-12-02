@@ -15,7 +15,7 @@ The destructor or finalizer had a parameter list that is not [void](../../cpp/vo
 
 The following code reproduces C2524.
 
-```
+```cpp
 // C2524.cpp
 // compile with: /c
 class A {
@@ -30,7 +30,7 @@ class A {
 
 The following code reproduces C2524.
 
-```
+```cpp
 // C2524_b.cpp
 // compile with: /clr /c
 ref struct I1 {

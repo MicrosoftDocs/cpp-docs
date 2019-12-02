@@ -13,7 +13,7 @@ A switch statement uses the same case value more than once.
 
 The following sample generates C2196:
 
-```
+```cpp
 // C2196.cpp
 int main() {
    int i = 0;

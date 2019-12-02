@@ -15,7 +15,7 @@ CLR reference class data members cannot be of a non-POD C++ type.  You can only 
 
 The following sample generates C3633.
 
-```
+```cpp
 // C3633.cpp
 // compile with: /clr /c
 #pragma warning( disable : 4368 )

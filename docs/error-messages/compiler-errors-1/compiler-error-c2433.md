@@ -15,7 +15,7 @@ The `friend`, `virtual`, and `inline` modifiers cannot be used for data declarat
 
 The following sample generates C2433.
 
-```
+```cpp
 // C2433.cpp
 class C{};
 

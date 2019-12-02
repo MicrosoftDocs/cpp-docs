@@ -15,7 +15,7 @@ The compiler detected an illegal dereference of a handle type. You can dereferen
 
 The following sample generates C3288.
 
-```
+```cpp
 // C3288.cpp
 // compile with: /clr
 ref class R {};

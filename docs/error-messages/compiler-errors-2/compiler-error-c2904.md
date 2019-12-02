@@ -13,7 +13,7 @@ Check the code for duplicate names.
 
 The following sample generates C2904:
 
-```
+```cpp
 // C2904.cpp
 // compile with: /c
 void X();  // X is declared as a function

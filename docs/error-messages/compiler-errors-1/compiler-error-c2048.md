@@ -13,7 +13,7 @@ A `switch` statement contains multiple `default` labels. Delete one of the `defa
 
 The following sample generates C2048:
 
-```
+```cpp
 // C2048.cpp
 int main() {
    int a = 1;
@@ -30,7 +30,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2048b.cpp
 int main() {
    int a = 1;

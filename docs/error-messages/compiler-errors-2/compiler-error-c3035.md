@@ -13,7 +13,7 @@ An ordered clause was ill formed.
 
 The following sample generates C3035:
 
-```
+```cpp
 // C3035.cpp
 // compile with: /openmp /link vcomps.lib
 int main() {

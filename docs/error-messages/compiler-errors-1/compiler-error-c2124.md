@@ -13,7 +13,7 @@ A constant expression has a zero denominator. To resolve the error, do not divid
 
 The following sample generates C2124:
 
-```
+```cpp
 // C2124.cpp
 int main() {
   int i = 1 / 0;   // C2124  do not divide by zero

@@ -13,7 +13,7 @@ A catch handler specified no type or multiple types.
 
 The following sample generates C2310:
 
-```
+```cpp
 // C2310.cpp
 // compile with: /EHsc
 #include <eh.h>

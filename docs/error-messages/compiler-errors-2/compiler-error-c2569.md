@@ -13,7 +13,7 @@ If you must derive a type from the specified union or enumeration, change the un
 
 The following sample generates C2569:
 
-```
+```cpp
 // C2569.cpp
 // compile with: /c
 union ubase {};

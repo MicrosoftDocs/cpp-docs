@@ -15,7 +15,7 @@ A user-defined constructor is needed to copy objects of CLR ref types. For more 
 
 The following sample generates C3673.
 
-```
+```cpp
 // C3673.cpp
 // compile with: /clr
 public ref struct R {
@@ -35,7 +35,7 @@ int main() {
 
 The following sample generates C3673.
 
-```
+```cpp
 // C3673_b.cpp
 // compile with: /clr /c
 // C3673 expected

@@ -21,7 +21,7 @@ The indicated type cannot be declared with the `auto` keyword. For example, you 
 
 The following example yields C3532 because the `auto` keyword cannot declare a method return type.
 
-```
+```cpp
 // C3532a.cpp
 // Compile with /Zc:auto
 auto f(){}   // C3532
@@ -31,7 +31,7 @@ auto f(){}   // C3532
 
 The following example yields C3532 because the `auto` keyword cannot declare an array.
 
-```
+```cpp
 // C3532b.cpp
 // Compile with /Zc:auto
 int main()

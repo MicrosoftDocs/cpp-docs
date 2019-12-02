@@ -13,7 +13,7 @@ Identifiers must be comprised of legal characters.
 
 The following sample generates C2745:
 
-```
+```cpp
 // C2745.cpp
 // compile with: /clr
 int main() {

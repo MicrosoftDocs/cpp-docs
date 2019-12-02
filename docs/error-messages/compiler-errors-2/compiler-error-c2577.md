@@ -15,7 +15,7 @@ A destructor or finalizer cannot return a value of `void` or any other type. Rem
 
 The following sample generates C2577.
 
-```
+```cpp
 // C2577.cpp
 // compile with: /c
 class A {

@@ -17,7 +17,7 @@ See [appdomain](../../cpp/appdomain.md) for more information.
 
 The following sample generates C2506.
 
-```
+```cpp
 // C2506.cpp
 // compile with: /clr /c
 ref struct R {

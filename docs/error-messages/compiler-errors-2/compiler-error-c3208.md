@@ -13,7 +13,7 @@ A template template parameter does not have the same number of template paramete
 
 The following sample generates C3208:
 
-```
+```cpp
 // C3208.cpp
 template <template <class T> class TT >
 int f();

@@ -13,7 +13,7 @@ The `__based` modifier can be used on pointers only.
 
 The following sample generates C2640:
 
-```
+```cpp
 // C2640.cpp
 void f(int i) {
     void *vp;

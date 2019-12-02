@@ -15,7 +15,7 @@ The token following a stringizing operator (#) is not a formal parameter name.
 
 The following sample generates C2162:
 
-```
+```cpp
 // C2162.cpp
 // compile with: /c
 #include <stdio.h>

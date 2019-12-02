@@ -13,7 +13,7 @@ Some directives cannot be nested. To fix this error, you can merge the statement
 
 The following sample generates C3034:
 
-```
+```cpp
 // C3034.cpp
 // compile with: /openmp /link vcomps.lib
 int main() {

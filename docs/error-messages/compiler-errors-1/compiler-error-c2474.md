@@ -15,7 +15,7 @@ The compiler expected to find a semicolon, and was unable to determine your inte
 
 The following sample generates C2474.
 
-```
+```cpp
 // C2474.cpp
 // compile with: /clr /c
 

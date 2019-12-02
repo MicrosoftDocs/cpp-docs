@@ -13,7 +13,7 @@ The keyword [super](../../cpp/super.md) was used within the context of a member 
 
 The following sample generates C2791:
 
-```
+```cpp
 // C2791.cpp
 struct D {
    void mf() {

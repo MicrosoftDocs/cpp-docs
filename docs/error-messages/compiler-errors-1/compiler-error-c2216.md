@@ -15,7 +15,7 @@ Two keywords that are mutually exclusive were used together.
 
 The following sample generates C2216.
 
-```
+```cpp
 // C2216.cpp
 // compile with: /clr /c
 ref struct Y1 {
@@ -28,7 +28,7 @@ ref struct Y1 {
 
 The following sample generates C2216.
 
-```
+```cpp
 // C2216b.cpp
 // compile with: /clr /c
 public ref class X {
@@ -41,7 +41,7 @@ public ref class X {
 
 The following sample generates C2216.
 
-```
+```cpp
 // C2216c.cpp
 // compile with: /clr /c
 public interface struct I {

@@ -19,7 +19,7 @@ All the declared variables in a declaration list do not resolve to the same type
 
 The following statements yield C3538. Each statement declares multiple variables, but each use of the `auto` keyword does not deduce to the same type.
 
-```
+```cpp
 // C3538.cpp
 // Compile with /Zc:auto
 // C3538 expected

@@ -15,7 +15,7 @@ A generic was declared incorrectly. For more information, see [Generics](../../e
 
 The following sample generates C2674.
 
-```
+```cpp
 // C2674.cpp
 // compile with: /clr /c
 void F(generic <class T> ref class R1);   // C2674

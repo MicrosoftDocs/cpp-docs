@@ -15,7 +15,7 @@ This error can be caused by missing template arguments in C++ Standard Library c
 
 The following sample generates C2976:
 
-```
+```cpp
 // C2976.cpp
 template <class T>
 struct TC {
@@ -29,7 +29,7 @@ int main() {
 
 C2976 can also occur when using generics:
 
-```
+```cpp
 // C2976b.cpp
 // compile with: /clr
 generic <class T>

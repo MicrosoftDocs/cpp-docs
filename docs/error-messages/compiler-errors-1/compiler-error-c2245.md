@@ -13,7 +13,7 @@ A function specified as a friend was not found by the compiler.
 
 The following sample generates C2245:
 
-```
+```cpp
 // C2245.cpp
 // compile with: /c
 class B {

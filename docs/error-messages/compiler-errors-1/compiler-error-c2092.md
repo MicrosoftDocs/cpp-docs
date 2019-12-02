@@ -15,7 +15,7 @@ Arrays of functions are not allowed. Use an array of pointers to functions.
 
 The following sample generates C2092:
 
-```
+```cpp
 // C2092.cpp
 typedef void (F) ();
 typedef F AT[10];   // C2092
@@ -25,7 +25,7 @@ typedef F AT[10];   // C2092
 
 Possible resolution:
 
-```
+```cpp
 // C2092b.cpp
 // compile with: /c
 typedef void (F) ();

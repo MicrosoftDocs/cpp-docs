@@ -13,7 +13,7 @@ Neither destructors nor constructors can be declared `static`.
 
 The following sample generates C2574:
 
-```
+```cpp
 // C2574.cpp
 // compile with: /c
 class A {

@@ -13,7 +13,7 @@ The keyword is invalid in this context.
 
 The following sample generates C2735:
 
-```
+```cpp
 // C2735.cpp
 void f(inline int){}   // C2735
 ```

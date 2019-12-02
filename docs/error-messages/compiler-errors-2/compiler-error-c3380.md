@@ -15,7 +15,7 @@ The `ref` and `value` keywords, when used with [/clr](../../build/reference/clr-
 
 The following sample generates C3380:
 
-```
+```cpp
 // C3380_2.cpp
 // compile with: /clr
 protected ref class A {   // C3380

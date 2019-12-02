@@ -13,7 +13,7 @@ A pointer to a reference member was declared.
 
 The following sample generates C2636:
 
-```
+```cpp
 // C2636.cpp
 struct S {};
 int main() {

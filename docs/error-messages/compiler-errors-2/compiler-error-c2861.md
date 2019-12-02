@@ -15,7 +15,7 @@ The compiler encountered the interface keyword or deduced a struct as an interfa
 
 The following sample generates C2861:
 
-```
+```cpp
 // C2861.cpp
 // compile with: /c
 #include <objbase.h>   // required for IUnknown definition

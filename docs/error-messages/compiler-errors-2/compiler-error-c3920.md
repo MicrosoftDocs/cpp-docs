@@ -13,7 +13,7 @@ The Windows Runtime and CLR do not support the postfix operator and user-defined
 
 The following sample generates C3920 and shows how to fix it:
 
-```
+```cpp
 // C3920.cpp
 // compile with: /clr /LD
 public value struct V {

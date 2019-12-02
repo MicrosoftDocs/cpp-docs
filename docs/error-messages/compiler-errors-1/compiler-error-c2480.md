@@ -15,7 +15,7 @@ Use the `thread` attribute for global variables, static data members, and local 
 
 The following sample generates C2480:
 
-```
+```cpp
 // C2480.cpp
 // compile with: /c
 __declspec( thread ) void func();   // C2480

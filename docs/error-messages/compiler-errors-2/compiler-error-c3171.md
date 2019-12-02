@@ -15,7 +15,7 @@ Identical `module` attributes can be specified in more than one source code file
 
 For example, if the following `module` attributes were found:
 
-```
+```cpp
 // C3171.cpp
 [ module(name="MyModule", uuid="373a1a4e-469b-11d3-a6b0-00c04f79ae8f", version="1.0") ];
 int main() {}
@@ -23,7 +23,7 @@ int main() {}
 
 And then,
 
-```
+```cpp
 // C3171b.cpp
 // compile with: C3171.cpp
 // C3171 expected

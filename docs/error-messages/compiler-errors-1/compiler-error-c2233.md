@@ -13,7 +13,7 @@ Each object in an array must contain at least one element.
 
 The following sample generates C2233:
 
-```
+```cpp
 // C2233.cpp
 // compile with: /c
 class A {

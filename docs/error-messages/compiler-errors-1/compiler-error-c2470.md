@@ -13,7 +13,7 @@ A function definition is missing its argument list.
 
 The following sample generates C2470:
 
-```
+```cpp
 // C2470.cpp
 int MyFunc {};  // C2470
 void MyFunc2() {};  //OK

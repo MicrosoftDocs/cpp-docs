@@ -13,7 +13,7 @@ You tried to define a function more than once. The first definition is a local d
 
 The following sample generates C2884:
 
-```
+```cpp
 // C2884.cpp
 namespace A {
    void z(int);

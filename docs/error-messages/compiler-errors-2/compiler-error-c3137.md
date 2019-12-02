@@ -13,7 +13,7 @@ A property cannot be initialized, for example, in a constructor's initialization
 
 The following example generates C3137:
 
-```
+```cpp
 // C3137.cpp
 // compile with: /clr /c
 ref class CMyClass {

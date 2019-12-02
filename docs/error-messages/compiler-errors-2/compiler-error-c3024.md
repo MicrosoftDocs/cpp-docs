@@ -13,7 +13,7 @@ A value cannot be passed to the run-time parameter of the schedule clause.
 
 The following sample generates C3024:
 
-```
+```cpp
 // C3024.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

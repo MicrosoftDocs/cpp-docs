@@ -13,7 +13,7 @@ The [copyprivate](../../parallel/openmp/reference/copyprivate.md) and [nowait](.
 
 The following sample generates C3042:
 
-```
+```cpp
 // C3042.cpp
 // compile with: /openmp /c
 #include <stdio.h>

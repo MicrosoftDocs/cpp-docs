@@ -17,7 +17,7 @@ For more information, see [User-Defined Attributes](../../extensions/user-define
 
 The following sample generates C3100.
 
-```
+```cpp
 // C3100.cpp
 // compile with: /clr /c
 using namespace System;

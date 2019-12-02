@@ -13,14 +13,14 @@ The character appears immediately following the macro name. To resolve the error
 
 The following sample generates C2008:
 
-```
+```cpp
 // C2008.cpp
 #define TEST1"mytest1"    // C2008
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C2008b.cpp
 // compile with: /c
 #define TEST2 "mytest2"

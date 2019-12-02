@@ -15,7 +15,7 @@ Multiple declarations must have the same generic constraints.  For more informat
 
 The following sample generates C3868.
 
-```
+```cpp
 // C3868.cpp
 // compile with: /clr /c
 interface struct I1;

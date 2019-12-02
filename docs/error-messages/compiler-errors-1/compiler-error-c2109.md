@@ -13,7 +13,7 @@ The subscript was used on a variable that was not an array.
 
 The following sample generates C2109:
 
-```
+```cpp
 // C2109.cpp
 int main() {
    int a, b[10] = {0};

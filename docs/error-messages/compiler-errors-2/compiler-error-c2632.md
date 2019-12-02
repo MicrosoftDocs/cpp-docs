@@ -13,7 +13,7 @@ This error can be caused if there is missing code between two type specifiers.
 
 The following sample generates C2632:
 
-```
+```cpp
 // C2632.cpp
 int float i;   // C2632
 ```
@@ -22,7 +22,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 The following sample generates C2632:
 
-```
+```cpp
 // C2632_2.cpp
 // compile with: /LD
 void f(int bool);   // C2632

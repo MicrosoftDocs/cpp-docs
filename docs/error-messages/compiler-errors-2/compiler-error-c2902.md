@@ -13,7 +13,7 @@ The token following the keyword `template` was not an identifier.
 
 The following sample generates C2902:
 
-```
+```cpp
 // C2902.cpp
 // compile with: /c
 namespace N {
@@ -31,7 +31,7 @@ void f() {
 
 C2902 can also occur when using generics:
 
-```
+```cpp
 // C2902b.cpp
 // compile with: /clr /c
 namespace N {

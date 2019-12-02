@@ -13,7 +13,7 @@ The keyword `default` can appear only in a `switch` statement.
 
 The following sample generates C2047:
 
-```
+```cpp
 // C2047.cpp
 int main() {
    int i = 0;
@@ -27,7 +27,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2047b.cpp
 int main() {
    int i = 0;

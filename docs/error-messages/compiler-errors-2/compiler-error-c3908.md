@@ -15,7 +15,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3908:
 
-```
+```cpp
 // C3908.cpp
 // compile with: /clr
 ref class X {

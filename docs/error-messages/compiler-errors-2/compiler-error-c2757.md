@@ -13,7 +13,7 @@ A symbol used in the current compilation as a namespace identifier is already be
 
 The following sample generates C2757:
 
-```
+```cpp
 // C2757a.cpp
 // compile with: /clr /LD
 public ref class Nes {};
@@ -21,7 +21,7 @@ public ref class Nes {};
 
 And then,
 
-```
+```cpp
 // C2757b.cpp
 // compile with: /clr /c
 #using <C2757a.dll>

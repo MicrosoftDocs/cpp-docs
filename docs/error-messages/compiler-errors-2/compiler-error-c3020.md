@@ -13,7 +13,7 @@ An OpenMP `for` loop may not modify the index (loop counter) in the body of the 
 
 The following sample generates C3020:
 
-```
+```cpp
 // C3020.cpp
 // compile with: /openmp
 int main() {
@@ -34,7 +34,7 @@ A variable declared with [lastprivate](../../parallel/openmp/reference/lastpriva
 
 The following sample will give C3020 for the second lastprivate because that lastprivate will trigger a write to idx_a within the outermost for loop. The first lastprivate doesn't give an error because that lastprivate triggers a write to idx_a outside the outermost for loop (technically, at the very end of the last iteration). The following sample generates C3020.
 
-```
+```cpp
 // C3020b.cpp
 // compile with: /openmp /c
 float a[100][100];
@@ -53,7 +53,7 @@ void test(int first, int last)
 
 The following sample demonstrates a possible resolution:
 
-```
+```cpp
 // C3020c.cpp
 // compile with: /openmp /c
 float a[100][100];

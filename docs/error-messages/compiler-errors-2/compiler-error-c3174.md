@@ -13,7 +13,7 @@ A program that uses Visual C++ attributes did not also use the [module](../../wi
 
 The following sample generates C3174:
 
-```
+```cpp
 // C3174.cpp
 // C3174 expected
 // uncomment the following line to resolve this C3174

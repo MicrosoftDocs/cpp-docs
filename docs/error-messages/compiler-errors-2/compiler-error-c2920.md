@@ -13,7 +13,7 @@ A generic or template class has multiple declarations, which are not equivalent.
 
 The following sample generates C2920 and shows how to fix it:
 
-```
+```cpp
 // C2920.cpp
 // compile with: /c
 typedef int TC1;
@@ -24,7 +24,7 @@ struct TC2 {};   // OK - fix by using a different name
 
 C2920 can also occur when using generics:
 
-```
+```cpp
 // C2920b.cpp
 // compile with: /clr /c
 typedef int GC1;

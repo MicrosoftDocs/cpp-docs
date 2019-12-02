@@ -13,7 +13,7 @@ A function in a derived class attempted to override a virtual function in a base
 
 The following sample generates C2553:
 
-```
+```cpp
 // C2553.cpp
 // compile with: /clr /c
 ref struct C {

@@ -25,7 +25,7 @@ When you specify that the default capture mode for a lambda expression is by-val
 
 The following example generates C3489 variable `n` appears by value in the capture clause of a lambda expression whose default mode is by-value:
 
-```
+```cpp
 // C3489a.cpp
 
 int main()
@@ -39,7 +39,7 @@ int main()
 
 The following example shows four possible resolutions to C3489:
 
-```
+```cpp
 // C3489b.cpp
 
 int main()

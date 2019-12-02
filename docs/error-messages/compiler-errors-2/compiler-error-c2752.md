@@ -13,7 +13,7 @@ An instantiation was ambiguous.
 
 The following sample generates C2752:
 
-```
+```cpp
 // C2752.cpp
 template<class T, class U>
 struct A {};

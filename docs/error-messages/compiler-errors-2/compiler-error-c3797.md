@@ -17,7 +17,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 The following sample generates C3797.
 
-```
+```cpp
 // C3797.cpp
 // compile with: /clr /c
 delegate void MyDel();

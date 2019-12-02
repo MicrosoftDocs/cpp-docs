@@ -13,7 +13,7 @@ The compiler detected an attempt to make an explicit function instantiation; how
 
 The following sample generates C3190:
 
-```
+```cpp
 // C3190.cpp
 // compile with: /LD
 template<class T>

@@ -13,7 +13,7 @@ ms.assetid: 08cbf734-75b3-49f2-9026-9b319947612d
 
 The following sample generates C2128:
 
-```
+```cpp
 // C2128.cpp
 // compile with: /c
 

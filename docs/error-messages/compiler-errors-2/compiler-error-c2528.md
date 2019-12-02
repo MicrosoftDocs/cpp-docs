@@ -13,7 +13,7 @@ You cannot declare a pointer to a reference. Dereference the variable before dec
 
 The following sample generates C2528:
 
-```
+```cpp
 // C2528.cpp
 int i;
 int &ir = i;

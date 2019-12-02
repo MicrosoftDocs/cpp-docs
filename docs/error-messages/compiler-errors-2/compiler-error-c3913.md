@@ -15,7 +15,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3913:
 
-```
+```cpp
 // C3913.cpp
 // compile with: /clr /c
 ref struct X {

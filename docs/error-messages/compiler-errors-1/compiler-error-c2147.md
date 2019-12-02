@@ -13,7 +13,7 @@ An identifier was used that is now a reserved keyword in the language.
 
 The following sample generates C2147:
 
-```
+```cpp
 // C2147.cpp
 // compile with: /clr
 int main() {

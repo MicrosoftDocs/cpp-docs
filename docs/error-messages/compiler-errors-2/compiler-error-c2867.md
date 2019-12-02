@@ -13,7 +13,7 @@ A `using` directive is applied to something other than a namespace.
 
 The following sample generates C2867:
 
-```
+```cpp
 // C2867.cpp
 // compile with: /c
 namespace N {

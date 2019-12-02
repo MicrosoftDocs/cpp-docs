@@ -13,7 +13,7 @@ A managed or WinRT array declaration was ill formed. For more information, see [
 
 The following sample generates C2767 and shows how to fix it:
 
-```
+```cpp
 // C2767.cpp
 // compile with: /clr
 int main() {

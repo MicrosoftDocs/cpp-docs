@@ -17,7 +17,7 @@ For more information, see [Destructors and finalizers in How to: Define and cons
 
 The following sample generates C3421.
 
-```
+```cpp
 // C3421.cpp
 // compile with: /clr
 ref class A {};

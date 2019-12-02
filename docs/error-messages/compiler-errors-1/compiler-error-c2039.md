@@ -15,7 +15,7 @@ The code incorrectly calls or refers to a member of a structure, class, or union
 
 The following sample generates C2039.
 
-```
+```cpp
 // C2039.cpp
 struct S {
    int mem0;
@@ -31,7 +31,7 @@ int main() {
 
 The following sample generates C2039.
 
-```
+```cpp
 // C2039_b.cpp
 // compile with: /clr
 using namespace System;
@@ -46,7 +46,7 @@ int main() {
 
 The following sample generates C2039.
 
-```
+```cpp
 // C2039_c.cpp
 // compile with: /clr /c
 ref struct S {
@@ -81,7 +81,7 @@ public class B {
 
 The following sample generates C2039.
 
-```
+```cpp
 // C2039_e.cpp
 // compile with: /clr
 using namespace System;
@@ -100,7 +100,7 @@ int main() {
 
 C2039 can also occur if you use generics. The following sample generates C2039.
 
-```
+```cpp
 // C2039_f.cpp
 // compile with: /clr
 interface class I {};
@@ -127,7 +127,7 @@ C2039 can occur when you try to release managed or unmanaged resources. For more
 
 The following sample generates C2039.
 
-```
+```cpp
 // C2039_g.cpp
 // compile with: /clr
 using namespace System;

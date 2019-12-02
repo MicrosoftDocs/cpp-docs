@@ -13,7 +13,7 @@ Case expressions must be integer constants.
 
 The following sample generates C2052:
 
-```
+```cpp
 // C2052.cpp
 int main() {
    int index = 0;

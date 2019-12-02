@@ -15,7 +15,7 @@ To resolve this error, either define your functions so that they do not use vari
 
 The following sample generates C2688:
 
-```
+```cpp
 // C2688.cpp
 struct G1 {};
 struct G2 {};

@@ -15,7 +15,7 @@ Note that the compiler uses aliases for native types that map to types in the co
 
 The following sample generates C3181:
 
-```
+```cpp
 // C3181a.cpp
 // compile with: /clr
 using namespace System;

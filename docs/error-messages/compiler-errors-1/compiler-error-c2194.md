@@ -13,7 +13,7 @@ The `data_seg` pragma uses a segment name used with `code_seg`.
 
 The following sample generates C2194:
 
-```
+```cpp
 // C2194.cpp
 // compile with: /c
 #pragma code_seg("MYCODE")

@@ -13,7 +13,7 @@ An incorrect token was found.
 
 The following sample generates C2238:
 
-```
+```cpp
 // C2238.cpp
 // compile with: /c
 class v {

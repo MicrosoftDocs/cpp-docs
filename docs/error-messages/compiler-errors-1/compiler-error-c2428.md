@@ -13,7 +13,7 @@ You cannot apply a decrement operator to objects of type `bool`.
 
 The following sample generates C2428:
 
-```
+```cpp
 // C2428.cpp
 void g(bool fFlag) {
    --fFlag;   // C2428

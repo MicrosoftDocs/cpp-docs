@@ -15,7 +15,7 @@ To fix this issue, replace the token with a constant literal or with a calculati
 
 The following sample generates C2425:
 
-```
+```cpp
 // C2425.cpp
 // processor: x86
 int main() {

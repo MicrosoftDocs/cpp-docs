@@ -13,7 +13,7 @@ A nonmember function is declared with [const](../../cpp/const-cpp.md), [volatile
 
 The following sample generates C2270:
 
-```
+```cpp
 // C2270.cpp
 // compile with: /c
 void func1(void) const;   // C2270, nonmember function

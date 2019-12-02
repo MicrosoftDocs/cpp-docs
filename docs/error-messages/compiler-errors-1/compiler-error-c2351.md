@@ -13,7 +13,7 @@ In a new-style initialization list for a constructor, you must explicitly name e
 
 The following sample generates C2351:
 
-```
+```cpp
 // C2351.cpp
 // compile with: /c
 class B {

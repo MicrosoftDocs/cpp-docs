@@ -13,7 +13,7 @@ A class or structure is declared as `virtual` more than once. Only one `virtual`
 
 The following sample generates C2507:
 
-```
+```cpp
 // C2507.cpp
 // compile with: /c
 class A {};

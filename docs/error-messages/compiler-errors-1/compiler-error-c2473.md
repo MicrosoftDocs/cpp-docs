@@ -15,7 +15,7 @@ The compiler detected what looked like a function, without the parameter list.
 
 The following sample generates C2473.
 
-```
+```cpp
 // C2473.cpp
 // compile with: /clr /c
 class A {

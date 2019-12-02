@@ -17,7 +17,7 @@ An indexed property was accessed incorrectly.  See [How to: Use Properties in C+
 
 The following sample generates C3293 in Visual Studio 2015 and earlier.
 
-```
+```cpp
 // C3293.cpp
 // compile with: /clr /c
 using namespace System;

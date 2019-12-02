@@ -13,7 +13,7 @@ The `dllimport` and [dllexport](../../cpp/dllexport-dllimport.md) `__declspec` m
 
 The following sample generates C3387 and shows how to fix it:
 
-```
+```cpp
 // C3387a.cpp
 // compile with: /clr /c
 ref class X2 {

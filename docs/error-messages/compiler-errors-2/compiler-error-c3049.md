@@ -13,7 +13,7 @@ An incorrect value was passed to a [default](../../parallel/openmp/reference/def
 
 The following sample generates C3049:
 
-```
+```cpp
 // C3049.cpp
 // compile with: /openmp /c
 int main() {

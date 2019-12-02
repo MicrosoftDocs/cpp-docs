@@ -13,7 +13,7 @@ Certain keywords can only be applied to a C++ class.
 
 The following sample generates C3152 and shows how to fix it:
 
-```
+```cpp
 // C3152.cpp
 // compile with: /clr /c
 ref class C {

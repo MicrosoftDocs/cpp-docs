@@ -13,7 +13,7 @@ The specifier cannot appear with a function definition outside of a class declar
 
 The following sample generates C2723 and shows how to fix it:
 
-```
+```cpp
 // C2723.cpp
 struct X {
    virtual void f();

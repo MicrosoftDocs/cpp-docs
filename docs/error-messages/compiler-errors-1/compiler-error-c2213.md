@@ -13,7 +13,7 @@ The argument modifying `__based` is invalid.
 
 The following sample generates C2213:
 
-```
+```cpp
 // C2213.cpp
 // compile with: /c
 int i;

@@ -21,7 +21,7 @@ This error may be caused by a typographical error. Error [C2065](../../error-mes
 
 The following sample generates C2146.
 
-```
+```cpp
 // C2146.cpp
 class CDeclaredClass {};
 
@@ -42,7 +42,7 @@ This error can also be generated as a result of compiler conformance work that w
 
 The following sample compiles in Visual Studio .NET 2002 but will fail in Visual Studio .NET 2003:
 
-```
+```cpp
 // C2146b.cpp
 // compile with: /c
 template <typename T>
@@ -69,7 +69,7 @@ The use of `T` from the primary template is not allowed in the explicit speciali
 
 The following sample compiles in Visual Studio .NET but will fail in Visual Studio .NET 2003:
 
-```
+```cpp
 // C2146_c.cpp
 // compile with: /c
 template <class T>

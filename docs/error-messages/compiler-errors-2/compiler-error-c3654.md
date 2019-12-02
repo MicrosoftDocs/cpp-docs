@@ -13,7 +13,7 @@ An unexpected string was in an explicit override. For more information, see [Exp
 
 The following sample generates C3654:
 
-```
+```cpp
 // C3654.cpp
 // compile with: /clr /c
 public ref struct B {

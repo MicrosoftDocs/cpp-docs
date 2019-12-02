@@ -15,7 +15,7 @@ A constraint was specified on a generic type, but the constraint was not specifi
 
 The following sample generates C3388.
 
-```
+```cpp
 // C3388.cpp
 // compile with: /clr /c
 interface class AA {};

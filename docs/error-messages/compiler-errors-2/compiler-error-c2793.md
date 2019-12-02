@@ -13,7 +13,7 @@ The only tokens that can follow `__super::` are an identifier or the keyword `op
 
 The following sample generates C2793
 
-```
+```cpp
 // C2793.cpp
 struct B {
    void mf();

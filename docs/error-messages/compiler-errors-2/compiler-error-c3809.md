@@ -13,7 +13,7 @@ Managed types and Windows Runtime types do not allow friends. To fix this error,
 
 The following sample generates C3809:
 
-```
+```cpp
 // C3809a.cpp
 // compile with: /clr
 ref class A {};

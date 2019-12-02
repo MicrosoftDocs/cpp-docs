@@ -13,7 +13,7 @@ Class-constructors in a class using /clr programming cannot take parameters.
 
 The following sample generates C3266:
 
-```
+```cpp
 // C3266.cpp
 // compile with: /clr
 

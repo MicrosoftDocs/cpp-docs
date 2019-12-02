@@ -13,7 +13,7 @@ The empty character constant ( ' ' ) is not permitted.
 
 The following sample generates C2137:
 
-```
+```cpp
 // C2137.cpp
 int main() {
    char c = '';   // C2137

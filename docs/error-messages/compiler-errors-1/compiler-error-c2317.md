@@ -13,7 +13,7 @@ A `try` block must have at least one catch handler.
 
 The following sample generates C2317:
 
-```
+```cpp
 // C2317.cpp
 // compile with: /EHsc
 #include <eh.h>
@@ -27,7 +27,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2317b.cpp
 // compile with: /EHsc
 #include <eh.h>

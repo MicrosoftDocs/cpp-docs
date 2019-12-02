@@ -19,7 +19,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 The following sample generates C3104.
 
-```
+```cpp
 // C3104a.cpp
 // compile with: /clr /c
 using namespace System;
@@ -40,7 +40,7 @@ ref struct AStruct{};
 
 The following sample generates C3104.
 
-```
+```cpp
 // C3104b.cpp
 // compile with: /clr /c
 // C3104 expected

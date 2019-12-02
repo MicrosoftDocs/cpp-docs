@@ -19,7 +19,7 @@ You cannot capture a variable that does not have automatic storage duration, suc
 
 The following example generates C3495 because the `static` variable `n` appears in the capture list of a lambda expression:
 
-```
+```cpp
 // C3495.cpp
 
 int main()

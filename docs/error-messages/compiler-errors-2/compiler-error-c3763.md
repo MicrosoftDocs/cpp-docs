@@ -13,7 +13,7 @@ The [out](../../windows/out-cpp.md) or [retval](../../windows/retval.md) attribu
 
 The following sample generates C3763:
 
-```
+```cpp
 // C3763.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

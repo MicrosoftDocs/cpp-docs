@@ -13,7 +13,7 @@ You cannot use a generic or template class as a data member.
 
 The following sample generates C2932:
 
-```
+```cpp
 // C2932.cpp
 // compile with: /c
 template<class T>
@@ -27,7 +27,7 @@ struct MyStruct {
 
 C2932 can also occur when using generics:
 
-```
+```cpp
 // C2932b.cpp
 // compile with: /clr /c
 generic<class T>

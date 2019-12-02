@@ -23,7 +23,7 @@ Possible resolutions:
 
 - The following sample generates C2390:
 
-```
+```cpp
 // C2390.cpp
 register int i;   // C2390
 

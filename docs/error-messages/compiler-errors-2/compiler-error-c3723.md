@@ -13,7 +13,7 @@ ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
 
 The following sample generates C3723:
 
-```
+```cpp
 // C3723.cpp
 struct A {
    // To resolve, comment void f(int); and uncomment the __event function
@@ -38,7 +38,7 @@ int main() {
 
 The following sample generates C3723:
 
-```
+```cpp
 // C3723b.cpp
 // compile with: /clr
 using namespace System;

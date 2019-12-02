@@ -15,7 +15,7 @@ Forward declaration of an enum type is not allowed under [/Za](../../build/refer
 
 The following sample generates C2599:
 
-```
+```cpp
 // C2599.cpp
 // compile with: /clr /c
 enum class Status;   // C2599

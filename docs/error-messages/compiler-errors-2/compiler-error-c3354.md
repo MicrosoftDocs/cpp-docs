@@ -23,7 +23,7 @@ The following types are invalid as return types for a `delegate`:
 
 The following sample generates C3354:
 
-```
+```cpp
 // C3354_2.cpp
 // compile with: /clr /c
 using namespace System;

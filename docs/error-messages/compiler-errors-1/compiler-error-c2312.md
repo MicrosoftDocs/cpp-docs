@@ -13,7 +13,7 @@ Two handlers catch the same exception type.
 
 The following sample generates C2312:
 
-```
+```cpp
 // C2312.cpp
 // compile with: /EHsc
 #include <eh.h>

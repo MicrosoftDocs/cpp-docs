@@ -13,7 +13,7 @@ Exception specifications are not allowed on member functions of managed classes.
 
 The following sample generates C2353:
 
-```
+```cpp
 // C2353.cpp
 // compile with: /clr /c
 ref class X {

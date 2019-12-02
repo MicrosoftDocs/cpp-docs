@@ -13,7 +13,7 @@ When using [/Za](../../build/reference/za-ze-disable-language-extensions.md), th
 
 The following sample generates C2762:
 
-```
+```cpp
 // C2762.cpp
 // compile with: /Za
 template<typename T, T *pT>
