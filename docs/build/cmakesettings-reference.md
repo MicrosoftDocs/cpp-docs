@@ -30,7 +30,7 @@ A `configuration` has these properties:
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}`.
 - `cacheGenerationCommand`: specifies a command line tool and arguments, for example *gencache.bat debug* to generate the cache. The command is run from the shell in the specified environment for the configuration when the user explicity requests regeneration, or a CMakeLists.txt or CMakeSettings.json file is modified.
 - `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing CMakeCache.txt file.
-- `clangTidyChecks`: comma-separated list of warnigns which will be passed to clang-tidy; wildcards are allowed and '-' prefix will remove checks.
+- `clangTidyChecks`: comma-separated list of warnings which will be passed to clang-tidy; wildcards are allowed and '-' prefix will remove checks.
 - `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the cache.
 - `cmakeToolchain`: specifies the toolchain file. This is passed to CMake using -DCMAKE_TOOLCHAIN_FILE."
 - `codeAnalysisRuleset`: specifies the ruleset to use when running code analysis. This can be a full path or the file name of a ruleset file installed by Visual Studio.
