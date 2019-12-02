@@ -13,7 +13,7 @@ The compiler detected a method with one or more parameters with default values. 
 
 Given the following .dll created with Visual Basic, which allows default parameters on method arguments:
 
-```
+```vb
 ' C4564.vb
 ' compile with: vbc /t:library C4564.vb
 Public class TestClass
@@ -25,7 +25,7 @@ End class
 
 And the following C++ sample that uses the .dll created with Visual Basic,
 
-```
+```cpp
 // C4564.cpp
 // compile with: /clr /W4 /WX
 #using <C4564.dll>
