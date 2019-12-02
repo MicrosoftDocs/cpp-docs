@@ -1,6 +1,7 @@
 ---
 title: "Linker Tools Warning LNK4098"
-ms.date: "03/26/2019"
+description: "Describes how incompatible libraries cause linker tools warning LNK4098, and how to use /NODEFAULTLIB to fix it."
+ms.date: "12/02/2019"
 f1_keywords: ["LNK4098"]
 helpviewer_keywords: ["LNK4098"]
 ms.assetid: 1f1b1408-1316-4e34-80f5-6a02f2db0ac1
@@ -28,5 +29,5 @@ The table below shows which libraries should be ignored depending on which run-t
 For example, if you received this warning and you want to create an executable file that uses the non-debug, DLL version of the run-time libraries, you could use the following options with the linker:
 
 ```cmd
-/NODEFAULTLIB:libcmt.lib NODEFAULTLIB:libcmtd.lib /NODEFAULTLIB:msvcrtd.lib
+/NODEFAULTLIB:libcmt.lib /NODEFAULTLIB:libcmtd.lib /NODEFAULTLIB:msvcrtd.lib
 ```
