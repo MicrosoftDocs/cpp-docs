@@ -15,7 +15,7 @@ The identifier passed to a constraint, which must be a type, was not a type.  Fo
 
 The following sample generates C3393:
 
-```
+```cpp
 // C3393.cpp
 // compile with: /clr /c
 void MyInterface() {}

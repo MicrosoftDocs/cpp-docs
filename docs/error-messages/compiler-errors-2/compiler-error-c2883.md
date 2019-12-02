@@ -13,7 +13,7 @@ You tried to define a function more than once. The first definition was made fro
 
 The following sample generates C2883:
 
-```
+```cpp
 // C2883.cpp
 namespace A {
    void z(int);

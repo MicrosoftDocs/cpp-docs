@@ -19,7 +19,7 @@ No version of the function is declared with the specified parameters.  Possible 
 
 The following sample generates C2511:
 
-```
+```cpp
 // C2511.cpp
 // compile with: /c
 class C {

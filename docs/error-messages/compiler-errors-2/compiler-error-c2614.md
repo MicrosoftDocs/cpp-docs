@@ -15,7 +15,7 @@ Only member or base classes can appear in the initialization list for a class or
 
 The following sample generates C2614.
 
-```
+```cpp
 // C2614.cpp
 // compile with: /c
 struct A {

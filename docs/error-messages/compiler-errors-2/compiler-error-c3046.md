@@ -13,7 +13,7 @@ A [sections](../../parallel/openmp/reference/sections-openmp.md) directive has a
 
 The following sample generates C3046:
 
-```
+```cpp
 // C3046.cpp
 // compile with: /openmp /c
 #include "omp.h"

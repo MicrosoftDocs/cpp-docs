@@ -17,7 +17,7 @@ For more information, see [Classes and Structs](../../extensions/classes-and-str
 
 The following sample generates C3612:
 
-```
+```cpp
 // C3612.cpp
 // compile with: /clr /c
 value struct V: public System::ICloneable {};   // C3612

@@ -13,7 +13,7 @@ A base class or structure contains a zero-sized array. An array in a class must 
 
 The following sample generates C2503:
 
-```
+```cpp
 // C2503.cpp
 // compile with: /c
 class A {

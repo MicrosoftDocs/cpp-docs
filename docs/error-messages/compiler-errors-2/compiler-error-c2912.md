@@ -13,7 +13,7 @@ You cannot specialize a non-template function.
 
 The following sample generates C2912:
 
-```
+```cpp
 // C2912.cpp
 // compile with: /c
 void f(char);
@@ -23,7 +23,7 @@ template<class T> void f(T);   // OK
 
 This error will also be generated as a result of compiler conformance work that was done in Visual Studio .NET 2003: for every explicit specialization, you must choose the parameters of the explicit specialization, such that, they match the parameters of the primary template.
 
-```
+```cpp
 // C2912b.cpp
 class CF {
 public:

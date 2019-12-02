@@ -15,7 +15,7 @@ For more information, see [delegate  (C++ Component Extensions)](../../extension
 
 The following sample generates C3352:
 
-```
+```cpp
 // C3352.cpp
 // compile with: /clr
 delegate int D( int, int );

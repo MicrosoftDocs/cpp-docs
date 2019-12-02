@@ -15,7 +15,7 @@ A [using declaration](../../cpp/using-declaration.md) was specified incorrectly.
 
 The following sample generates C3210.
 
-```
+```cpp
 // C3210.cpp
 // compile with: /c
 struct A {

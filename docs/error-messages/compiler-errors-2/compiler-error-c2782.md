@@ -13,7 +13,7 @@ The compiler cannot determine the type of a template argument.
 
 The following sample generates C2782:
 
-```
+```cpp
 // C2782.cpp
 template<typename T>
 void f(T, T) {}
@@ -27,7 +27,7 @@ int main() {
 
 C2782 can also occur when using generics:
 
-```
+```cpp
 // C2782b.cpp
 // compile with: /clr
 generic<typename T> void gf(T, T) { }

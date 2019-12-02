@@ -13,7 +13,7 @@ An array dimension was not between 1 and 32.
 
 The following sample generates C2739 and shows how to fix it:
 
-```
+```cpp
 // C2739.cpp
 // compile with: /clr
 int main() {

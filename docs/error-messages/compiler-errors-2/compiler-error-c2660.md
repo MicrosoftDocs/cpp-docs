@@ -21,7 +21,7 @@ C2660 can occur if you accidentally call a Windows API function rather than an M
 
 The following sample generates C2660.
 
-```
+```cpp
 // C2660.cpp
 void func( int, int ) {}
 
@@ -35,7 +35,7 @@ int main() {
 
 C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following sample generates C2660.
 
-```
+```cpp
 // C2660_a.cpp
 // compile with: /clr
 using namespace System;
@@ -57,7 +57,7 @@ int main() {
 
 C2660 will occur if a derived class hides a function.
 
-```
+```cpp
 // C2660b.cpp
 // C2660 expected
 #include <stdio.h>
@@ -88,7 +88,7 @@ int main() {
 
 C2660 can occur if you invoke an indexed property incorrectly.
 
-```
+```cpp
 // C2660c.cpp
 // compile with: /clr
 ref class X {
@@ -113,7 +113,7 @@ int main() {
 
 C2660 can occur if you invoke an indexed property incorrectly.
 
-```
+```cpp
 // C2660d.cpp
 // compile with: /clr
 ref class A{
@@ -136,7 +136,7 @@ int main() {
 
 C2660 can occur if you define a new operator in a template class, but where the new operator creates an object whose type is other than the enclosing type.
 
-```
+```cpp
 // C2660e.cpp
 // compile with: /c
 #include <malloc.h>

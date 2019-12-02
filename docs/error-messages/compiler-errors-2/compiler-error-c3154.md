@@ -17,7 +17,7 @@ For more information, see [Variable Argument Lists (...) (C++/CLI)](../../extens
 
 The following sample generates C3154.
 
-```
+```cpp
 // C3154.cpp
 // compile with: /clr
 ref struct R {

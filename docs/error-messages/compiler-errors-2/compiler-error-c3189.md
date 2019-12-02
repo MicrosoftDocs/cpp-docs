@@ -13,7 +13,7 @@ An obsolete form of [typeid](../../extensions/typeid-cpp-component-extensions.md
 
 The following sample generates C3189:
 
-```
+```cpp
 // C3189.cpp
 // compile with: /clr
 int main() {

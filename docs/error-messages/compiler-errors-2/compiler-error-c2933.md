@@ -13,7 +13,7 @@ You cannot use a generic or template class as a `typedef` member.
 
 The following sample generates C2933:
 
-```
+```cpp
 // C2933.cpp
 // compile with: /c
 template<class T> struct TC { };
@@ -29,7 +29,7 @@ struct MyStruct2 {
 
 C2933 can also occur when using generics:
 
-```
+```cpp
 // C2933b.cpp
 // compile with: /clr /c
 generic<class T> ref struct GC { };

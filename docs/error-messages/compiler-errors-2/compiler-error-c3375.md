@@ -17,7 +17,7 @@ For more information, see [delegate  (C++ Component Extensions)](../../extension
 
 The following sample generates C3375.
 
-```
+```cpp
 // C3375.cpp
 // compile with: /clr
 ref struct R {

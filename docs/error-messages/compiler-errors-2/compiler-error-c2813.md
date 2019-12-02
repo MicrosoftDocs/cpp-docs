@@ -16,7 +16,7 @@ This compiler error and the **/MP** compiler option are new in Visual Studio 200
 
 The following sample generates C2813. The command line in the "compile with:" comment indicates to the compiler to use the **/MP** and **/c** compiler options to compile several files. At least one of the files contains the [#import](../../preprocessor/hash-import-directive-cpp.md) directive. We use the same file twice for the sake of testing this example.
 
-```
+```cpp
 // C2813.cpp
 // compile with: /MP /c C2813.cpp C2813.cpp
 #import "C:\windows\system32\stdole2.tlb"   // C2813

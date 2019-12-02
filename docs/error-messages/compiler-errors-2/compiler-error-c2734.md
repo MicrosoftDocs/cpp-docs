@@ -13,7 +13,7 @@ The identifier is declared `const` but not initialized or `extern`.
 
 The following sample generates C2734:
 
-```
+```cpp
 // C2734.cpp
 const int j;   // C2734
 extern const int i;   // OK, declared as extern

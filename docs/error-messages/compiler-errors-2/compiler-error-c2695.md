@@ -13,7 +13,7 @@ The signature of a function in a derived class cannot override a function in a b
 
 The following sample generates C2695:
 
-```
+```cpp
 // C2695.cpp
 class C {
    virtual void __fastcall func();

@@ -15,7 +15,7 @@ The assignment (`=`) operator is incorrectly declared as `static`. Assignment op
 
 The following sample generates C2581.
 
-```
+```cpp
 // C2581.cpp
 // compile with: /clr /c
 ref struct Y {

@@ -13,7 +13,7 @@ An atomic directive was incorrectly specified.
 
 The following sample generates C3048:
 
-```
+```cpp
 // C3048.cpp
 // compile with: /openmp vcomps.lib
 #include "omp.h"

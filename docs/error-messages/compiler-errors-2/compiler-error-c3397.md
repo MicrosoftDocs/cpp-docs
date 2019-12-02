@@ -15,7 +15,7 @@ An array was declared incorrectly.  See [Arrays](../../extensions/arrays-cpp-com
 
 The following sample generates C3397.
 
-```
+```cpp
 // C3397.cpp
 // compile with: /clr
 // /clr /c

@@ -13,7 +13,7 @@ To create an instance of a CLR type, which causes the instance to be placed on t
 
 The following sample generates C2750:
 
-```
+```cpp
 // C2750.cpp
 // compile with: /clr
 ref struct Y1 {};

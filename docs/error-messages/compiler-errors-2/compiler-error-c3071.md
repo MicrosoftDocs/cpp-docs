@@ -17,7 +17,7 @@ For more information, see [Tracking Reference Operator](../../extensions/trackin
 
 The following sample generates C3071.
 
-```
+```cpp
 // C3071.cpp
 // compile with: /clr
 class N {};

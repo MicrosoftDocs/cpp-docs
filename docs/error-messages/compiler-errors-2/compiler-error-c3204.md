@@ -15,7 +15,7 @@ This error occurs when you use a call to [_alloca](../../c-runtime-library/refer
 
 The following sample generates C3204:
 
-```
+```cpp
 // C3204.cpp
 // compile with: /EHsc
 #include <malloc.h>

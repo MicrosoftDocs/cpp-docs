@@ -13,7 +13,7 @@ For certain attributes, you must pass an interface name as a parameter.
 
 The following sample generates C3372:
 
-```
+```cpp
 // C3372.cpp
 #include <windows.h>
 [module(name="MyModule")];

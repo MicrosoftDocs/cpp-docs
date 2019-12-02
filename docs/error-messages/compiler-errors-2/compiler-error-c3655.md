@@ -13,7 +13,7 @@ A function can only be explicitly overridden once. For more information, see [Ex
 
 The following sample generates C3655:
 
-```
+```cpp
 // C3655.cpp
 // compile with: /clr /c
 public ref struct B {

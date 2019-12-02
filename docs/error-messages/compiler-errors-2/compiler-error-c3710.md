@@ -15,7 +15,7 @@ When you specify an event handler with [__hook](../../cpp/hook.md) or [__unhook]
 
 The following sample generates C3710
 
-```
+```cpp
 // C3710.cpp
 // compile with: /link /opt:noref
 #include <atlbase.h>

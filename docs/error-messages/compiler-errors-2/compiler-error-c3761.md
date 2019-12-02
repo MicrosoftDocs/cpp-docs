@@ -13,7 +13,7 @@ The [retval](../../windows/retval.md) attribute was used on a function argument 
 
 The following sample generates C3761:
 
-```
+```cpp
 // C3761.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

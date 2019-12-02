@@ -15,7 +15,7 @@ A type cannot define both a default indexer and an operator[].
 
 The following sample generates C3470
 
-```
+```cpp
 // C3470.cpp
 // compile with: /clr
 using namespace System;

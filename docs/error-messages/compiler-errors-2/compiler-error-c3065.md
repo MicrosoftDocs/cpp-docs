@@ -13,7 +13,7 @@ The [property](../../cpp/property-cpp.md) __declspec modifier was used outside a
 
 The following sample generates C3065:
 
-```
+```cpp
 // C3065.cpp
 // compile with: /c
 __declspec(property(get=get_i)) int i;   // C3065

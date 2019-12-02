@@ -13,7 +13,7 @@ ms.assetid: 26a9ebc9-ed97-47ce-b436-19aa2bcf6e50
 
 The following sample generates C3395:
 
-```
+```cpp
 // C3395.cpp
 // compile with: /clr /c
 

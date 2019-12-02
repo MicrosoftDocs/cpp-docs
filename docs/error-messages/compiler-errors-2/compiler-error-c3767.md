@@ -17,7 +17,7 @@ C3767 may also be caused by a breaking change: native types are now private by d
 
 The following sample generates C3767:
 
-```
+```cpp
 // C3767a.cpp
 // compile with: /clr
 using namespace System;
@@ -48,7 +48,7 @@ int main() {
 
 The following sample generates C3767:
 
-```
+```cpp
 // C3767c.cpp
 // compile with: /clr /c
 

@@ -15,7 +15,7 @@ A `new` or `delete` operator is declared `virtual`. These operators are `static`
 
 The following sample generates C2650:
 
-```
+```cpp
 // C2650.cpp
 // compile with: /c
 class A {

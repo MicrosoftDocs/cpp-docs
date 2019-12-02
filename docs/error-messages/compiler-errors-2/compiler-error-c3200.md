@@ -11,7 +11,7 @@ ms.assetid: 44bb5e77-f0ec-421c-a732-b9ee7c0a3529
 
 You passed an invalid argument to a class template. The class template expects template as a parameter. In the following example, calling `Y<int, int> aY` will generate C3200. The first parameter needs to be a template, such as `Y<X, int> aY`.
 
-```
+```cpp
 // C3200.cpp
 template<typename T>
 class X

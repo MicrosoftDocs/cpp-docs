@@ -15,7 +15,7 @@ You cannot redeclare a member function. You can define it, but not redeclare it.
 
 The following sample generates C2761.
 
-```
+```cpp
 // C2761.cpp
 class a {
    int t;
@@ -30,7 +30,7 @@ void a::test;  // C2761
 
 Nonstatic members of a class or structure cannot be defined.  The following sample generates C2761.
 
-```
+```cpp
 // C2761_b.cpp
 // compile with: /c
 struct C {

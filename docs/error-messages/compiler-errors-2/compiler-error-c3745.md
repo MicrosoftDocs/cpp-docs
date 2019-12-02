@@ -13,7 +13,7 @@ Only a function defined with the [__event](../../cpp/event.md) keyword can be pa
 
 The following sample generates C3745:
 
-```
+```cpp
 // C3745.cpp
 struct E {
    __event void func();

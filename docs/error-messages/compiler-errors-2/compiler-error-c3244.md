@@ -13,7 +13,7 @@ You tried to [explicitly override](../../cpp/explicit-overrides-cpp.md) a member
 
 The following sample generates C3244:
 
-```
+```cpp
 // C3244.cpp
 #pragma warning(disable:4199)
 

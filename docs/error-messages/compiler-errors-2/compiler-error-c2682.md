@@ -15,7 +15,7 @@ You can use the `const_cast` operator to remove attributes such as `const`, `vol
 
 The following sample generates C2682:
 
-```
+```cpp
 // C2682.cpp
 class A { virtual void f(); };
 class B: public A {};
@@ -27,7 +27,7 @@ void g(A* pa) {
 
 The following sample generates C2682:
 
-```
+```cpp
 // C2682b.cpp
 // compile with: /clr
 ref struct R{};

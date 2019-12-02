@@ -13,7 +13,7 @@ The `__based` modifier cannot be used for pointers to members.
 
 The following sample generates C2638:
 
-```
+```cpp
 // C2638.cpp
 void *a;
 

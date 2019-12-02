@@ -13,7 +13,7 @@ A CLR [interface](../../extensions/interface-class-cpp-component-extensions.md) 
 
 The following sample generates C3283:
 
-```
+```cpp
 // C3283.cpp
 // compile with: /clr
 interface class I {
@@ -23,7 +23,7 @@ interface class I {
 
 Possible resolution:
 
-```
+```cpp
 // C3283b.cpp
 // compile with: /clr /c
 interface class I {

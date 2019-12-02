@@ -13,7 +13,7 @@ The type of the last parameter of at least one set method must match the type of
 
 The following sample generates C3902:
 
-```
+```cpp
 // C3902.cpp
 // compile with: /clr /c
 using namespace System;

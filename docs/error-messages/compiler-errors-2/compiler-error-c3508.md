@@ -15,7 +15,7 @@ An invalid type was specified.
 
 The following sample generates C3508:
 
-```
+```cpp
 // C3508.cpp
 #define _ATL_DEBUG_QI
 

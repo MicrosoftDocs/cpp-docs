@@ -17,7 +17,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 The following sample creates a component.
 
-```
+```cpp
 // C3462.cpp
 // compile with: /clr /LD
 public ref class R {};
@@ -27,7 +27,7 @@ public ref class R {};
 
 The following sample generates C3462.
 
-```
+```cpp
 // C3462b.cpp
 // compile with: /clr /c
 #using "C3462.dll"

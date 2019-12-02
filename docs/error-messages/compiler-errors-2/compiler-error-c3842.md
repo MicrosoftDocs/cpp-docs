@@ -13,7 +13,7 @@ ms.assetid: 41a1a44a-c618-40a2-8d26-7da27d14095d
 
 The following sample generates C3842:
 
-```
+```cpp
 // C3842a.cpp
 // compile with: /clr /c
 public ref struct A {

@@ -13,7 +13,7 @@ Interior garbage collection pointers may point to the interior of a managed or W
 
 The following sample generates C3160:
 
-```
+```cpp
 // C3160.cpp
 // compile with: /clr
 ref struct A {

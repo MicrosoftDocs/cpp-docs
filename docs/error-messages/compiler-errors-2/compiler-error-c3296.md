@@ -17,7 +17,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3296.
 
-```
+```cpp
 // C3296.cpp
 // compile with: /clr /c
 using namespace System;

@@ -13,7 +13,7 @@ A class that is marked as [sealed](../../extensions/sealed-cpp-component-extensi
 
 The following sample generates C3246:
 
-```
+```cpp
 // C3246_2.cpp
 // compile with: /clr /LD
 ref class X sealed {};

@@ -13,7 +13,7 @@ The [restricted](../../windows/restricted.md) attribute and the [default](../../
 
 The following sample generates C3340:
 
-```
+```cpp
 // C3340.cpp
 #include <windows.h>
 [module(name="MyModule")];

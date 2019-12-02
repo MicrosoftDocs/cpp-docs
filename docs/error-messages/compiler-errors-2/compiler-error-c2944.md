@@ -13,7 +13,7 @@ You cannot use a generic or template class, instead of a symbol, as a template v
 
 The following sample generates C2944:
 
-```
+```cpp
 // C2944.cpp
 // compile with: /c
 template<class T>
@@ -26,7 +26,7 @@ template <class T > struct X2 {};
 
 C2944 can also occur when using generics:
 
-```
+```cpp
 // C2944b.cpp
 // compile with: /clr /c
 generic<class T>

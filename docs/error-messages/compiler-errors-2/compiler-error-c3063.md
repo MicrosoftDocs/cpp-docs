@@ -15,7 +15,7 @@ When using operators on enumerators, both operands must be of the enumeration ty
 
 The following sample generates C3063 and shows how to fix it:
 
-```
+```cpp
 // C3063.cpp
 // compile with: /clr
 enum class E { a, b } e, mask;

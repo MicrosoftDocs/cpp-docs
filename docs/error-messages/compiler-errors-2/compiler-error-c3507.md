@@ -13,7 +13,7 @@ The [progid](../../windows/progid.md) attribute has restrictions on the values t
 
 The following sample generates C3507:
 
-```
+```cpp
 // C3507.cpp
 [module(name="x")];
 [

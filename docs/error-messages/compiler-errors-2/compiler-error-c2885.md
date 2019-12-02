@@ -17,7 +17,7 @@ This error can be generated as a result of compiler conformance work that was do
 
 The following sample generates C2885.
 
-```
+```cpp
 // C2885.cpp
 namespace MyNamespace {
    class X1 {};
@@ -50,7 +50,7 @@ If you use the `using` keyword with a class member, C++ requires you to define t
 
 The following sample generates C2885.
 
-```
+```cpp
 // C2885_b.cpp
 // compile with: /c
 class A {

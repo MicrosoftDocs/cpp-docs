@@ -17,7 +17,7 @@ For more information, see [C++ Stack Semantics for Reference Types](../../dotnet
 
 The following sample generates C3076.
 
-```
+```cpp
 // C3076.cpp
 // compile with: /clr /c
 ref struct U {};

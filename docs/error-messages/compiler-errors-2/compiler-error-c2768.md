@@ -15,7 +15,7 @@ This error was introduced in Visual Studio .NET 2003, as part of the compiler co
 
 The following sample generates C2768:
 
-```
+```cpp
 // C2768.cpp
 template<typename T>
 void f(T) {}

@@ -13,7 +13,7 @@ An overloaded function or operator is ambiguous.   Formal parameter lists may be
 
 The following sample generates C2666:
 
-```
+```cpp
 // C2666.cpp
 struct complex {
    complex(double);
@@ -39,7 +39,7 @@ For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NE
 
 ## Example
 
-```
+```cpp
 // C2666b.cpp
 #include <string.h>
 #include <stdio.h>
@@ -98,7 +98,7 @@ int main()
 
 The following sample generates C2666
 
-```
+```cpp
 // C2666c.cpp
 // compile with: /c
 

@@ -13,7 +13,7 @@ When creating an object of a managed type or Windows Runtime type, you cannot us
 
 The following sample generates C3828 and shows how to fix it:
 
-```
+```cpp
 // C3828a.cpp
 // compile with: /clr
 ref struct M {

@@ -13,7 +13,7 @@ Once you have a [using declaration](../../cpp/using-declaration.md) for a data m
 
 The following sample generates C2698:
 
-```
+```cpp
 // C2698.cpp
 struct A {
    int x;

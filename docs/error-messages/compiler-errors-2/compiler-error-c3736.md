@@ -13,7 +13,7 @@ Native and COM events must be methods. .NET events can also be data members.
 
 The following sample generates C3736:
 
-```
+```cpp
 // C3736.cpp
 struct A {
    __event int e();

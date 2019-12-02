@@ -13,7 +13,7 @@ A constructor or destructor is declared `const` or `volatile`. This is not allow
 
 The following sample generates C2583:
 
-```
+```cpp
 // C2583.cpp
 // compile with: /c
 class A {

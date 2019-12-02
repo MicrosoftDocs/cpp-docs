@@ -13,7 +13,7 @@ A `for` loop in an OpenMP statement must be fully and explicitly specified.
 
 The following sample generates C3017:
 
-```
+```cpp
 // C3017.cpp
 // compile with: /openmp
 int main()

@@ -13,7 +13,7 @@ A forward declaration and an actual declaration require that there be no conflic
 
 The following sample generates C3816 and shows how to fix it:
 
-```
+```cpp
 // C3816a.cpp
 // compile with: /clr /c
 class C1;

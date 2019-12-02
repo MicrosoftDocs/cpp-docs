@@ -13,7 +13,7 @@ An identifier can be redeclared only at global scope.
 
 The following sample generates C2655:
 
-```
+```cpp
 // C2655.cpp
 class A {};
 class B {

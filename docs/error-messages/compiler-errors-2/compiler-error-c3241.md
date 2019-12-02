@@ -13,7 +13,7 @@ When you explicitly override a function, the function signature must exactly mat
 
 The following sample generates C3241:
 
-```
+```cpp
 // C3241.cpp
 #pragma warning(disable:4199)
 

@@ -13,7 +13,7 @@ The [align](../../cpp/align-cpp.md) `__declspec` modifier is not permitted on fu
 
 The following sample generates C2719 and shows how to fix it:
 
-```
+```cpp
 // C2719.cpp
 void func(int __declspec(align(32)) i);   // C2719
 // try the following line instead

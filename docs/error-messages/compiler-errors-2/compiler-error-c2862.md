@@ -13,7 +13,7 @@ Protected and private members may be accessed only from other member functions. 
 
 The following sample will generate C2862:
 
-```
+```cpp
 // C2862.cpp
 // compile with: /c
 #include <unknwn.h>

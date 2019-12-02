@@ -13,7 +13,7 @@ A `for` loop in an OpenMP statement must use the same variable for its test and 
 
 The following sample generates C3018:
 
-```
+```cpp
 // C3018.cpp
 // compile with: /openmp
 int main()

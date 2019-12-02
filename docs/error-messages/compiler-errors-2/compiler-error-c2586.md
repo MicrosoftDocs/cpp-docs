@@ -13,7 +13,7 @@ Indirection of a conversion operator is not allowed.
 
 The following sample generates C2586:
 
-```
+```cpp
 // c2586.cpp
 // compile with: /c
 struct C {

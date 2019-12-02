@@ -13,7 +13,7 @@ Default arguments are not allowed on an explicit specialization of a function te
 
 The following sample generates C2765:
 
-```
+```cpp
 // C2765.cpp
 template<class T> void f(T t) {};
 

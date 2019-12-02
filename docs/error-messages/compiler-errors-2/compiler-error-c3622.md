@@ -15,7 +15,7 @@ An attempt was made to instantiate a class marked as [abstract](../../extensions
 
 The following sample generates C3622.
 
-```
+```cpp
 // C3622.cpp
 // compile with: /clr
 ref class a abstract {};

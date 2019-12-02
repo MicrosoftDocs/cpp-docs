@@ -17,7 +17,7 @@ For more information, see [Destructors and finalizers in How to: Define and cons
 
 The following sample generates C3077.
 
-```
+```cpp
 // C3077.cpp
 // compile with: /clr /c
 value struct vs {

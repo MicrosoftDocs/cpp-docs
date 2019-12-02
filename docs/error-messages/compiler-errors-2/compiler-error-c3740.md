@@ -13,7 +13,7 @@ A templated class or struct cannot contain [events](../../cpp/event-handling.md)
 
 The following sample generates C3740:
 
-```
+```cpp
 // C3740.cpp
 template <typename T>   // Delete the template specification
 struct E {

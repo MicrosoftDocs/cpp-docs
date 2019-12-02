@@ -15,7 +15,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 The following sample generates C3650:
 
-```
+```cpp
 // C3650.cpp
 // compile with: /clr
 public interface struct I {

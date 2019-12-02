@@ -13,7 +13,7 @@ The [align](../../cpp/align-cpp.md) `__declspec` modifier is not permitted on fu
 
 The following sample generates C2718:
 
-```
+```cpp
 // C2718.cpp
 typedef struct __declspec(align(32)) AlignedStruct  {
    int i;

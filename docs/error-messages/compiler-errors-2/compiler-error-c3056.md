@@ -13,7 +13,7 @@ A symbol used in a [threadprivate](../../parallel/openmp/reference/threadprivate
 
 The following sample generates C3056:
 
-```
+```cpp
 // C3056.cpp
 // compile with: /openmp
 int x, y;
@@ -28,7 +28,7 @@ void test() {
 
 Possible resolution:
 
-```
+```cpp
 // C3056b.cpp
 // compile with: /openmp /LD
 int x, y;

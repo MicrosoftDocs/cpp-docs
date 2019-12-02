@@ -23,7 +23,7 @@ The compiler generates this error when a lambda expression that specifies `void`
 
 The following example generates C3499 because the body of a lambda expression contains multiple statements and returns a value, but the lambda expression does not specify the return type:
 
-```
+```cpp
 // C3499a.cpp
 
 int main()
@@ -36,7 +36,7 @@ int main()
 
 The following example shows two possible resolutions to C3499. The first resolution provides the return type of the lambda expression. The second resolution combines the statements that make up the body of the lambda expression into a single statement.
 
-```
+```cpp
 // C3499b.cpp
 
 int main()

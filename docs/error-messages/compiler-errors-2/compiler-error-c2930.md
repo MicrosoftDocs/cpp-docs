@@ -15,7 +15,7 @@ This error can be caused if braces are improperly matched.
 
 The following sample generates C2930:
 
-```
+```cpp
 // C2930.cpp
 // compile with: /c
 template<class T>
@@ -28,7 +28,7 @@ enum SomeEnum { y };
 
 C2930 can also occur when using generics:
 
-```
+```cpp
 // C2930c.cpp
 // compile with: /clr /c
 generic<class T>

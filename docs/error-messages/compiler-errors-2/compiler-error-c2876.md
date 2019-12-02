@@ -13,7 +13,7 @@ All overloaded forms of a function in a base class must be accessible to the der
 
 The following sample generates C2876:
 
-```
+```cpp
 // C2876.cpp
 // compile with: /c
 class A {

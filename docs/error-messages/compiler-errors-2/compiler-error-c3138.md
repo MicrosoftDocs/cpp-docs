@@ -13,7 +13,7 @@ An interface with the [dual](../../windows/dual.md) or [dispinterface](../../win
 
 The following example generates C3138:
 
-```
+```cpp
 // C3138.cpp
 #include <unknwn.h>
 

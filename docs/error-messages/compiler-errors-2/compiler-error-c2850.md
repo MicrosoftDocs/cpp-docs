@@ -13,7 +13,7 @@ Constructs, such as some pragmas, can only appear at global scope.
 
 The following sample generates C2850:
 
-```
+```cpp
 // C2850.cpp
 // compile with: /c /Yc
 // try the following line instead

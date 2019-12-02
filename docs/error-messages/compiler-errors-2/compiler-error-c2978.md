@@ -15,7 +15,7 @@ A generic class was declared incorrectly. See [Generics](../../extensions/generi
 
 The following sample generates C2978.
 
-```
+```cpp
 // C2978.cpp
 // compile with: /clr /c
 generic <ref class T>   // C2978

@@ -17,7 +17,7 @@ For more information, see [Generics](../../extensions/generics-cpp-component-ext
 
 You cannot instantiate a generic type with a native type. The following sample generates C3225.
 
-```
+```cpp
 // C3225.cpp
 // compile with: /clr
 class A {};
@@ -48,7 +48,7 @@ public class MyList<T> where T: struct {}
 
 This sample consumes the C#-authored component, and violates the constraint that MyList can only be instantiated with a value type other than <xref:System.Nullable>. The following sample generates C3225.
 
-```
+```cpp
 // C3225_c.cpp
 // compile with: /clr
 #using "C3225_b.dll"

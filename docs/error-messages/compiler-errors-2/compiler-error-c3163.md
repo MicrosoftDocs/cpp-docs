@@ -19,7 +19,7 @@ A possible cause of the C3163 error involves the Microsoft source code annotatio
 
 The following sample generates C3163.
 
-```
+```cpp
 // C3163.cpp
 // compile with: /clr /c
 using namespace System;

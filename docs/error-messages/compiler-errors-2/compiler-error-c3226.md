@@ -13,7 +13,7 @@ Use a generic declaration inside a generic class.
 
 The following sample generates C3226:
 
-```
+```cpp
 // C3226.cpp
 // compile with: /clr
 generic <class T>
@@ -25,7 +25,7 @@ ref class C {
 
 The following sample demonstrates a possible resolution:
 
-```
+```cpp
 // C3226b.cpp
 // compile with: /clr /c
 generic <class T>

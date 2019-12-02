@@ -13,7 +13,7 @@ A virtual generic function must use the same constraints as a virtual function w
 
 The following sample generates C3284:
 
-```
+```cpp
 // C3284.cpp
 // compile with: /clr /c
 // C3284 expected

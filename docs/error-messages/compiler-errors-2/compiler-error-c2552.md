@@ -43,7 +43,7 @@ The following represent the reasons C2552 may fire when an aggregate initializat
 
 The following sample generates C2552:
 
-```
+```cpp
 // C2552.cpp
 // compile with: /clr
 #include <string>

@@ -13,7 +13,7 @@ When you [explicitly override](../../cpp/explicit-overrides-cpp.md) a method, th
 
 The following sample generates C3254:
 
-```
+```cpp
 // C3254.cpp
 __interface I
 {

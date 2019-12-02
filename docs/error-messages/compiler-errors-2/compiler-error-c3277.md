@@ -13,7 +13,7 @@ An enumeration was defined incorrectly inside a managed type.
 
 The following sample generates C3277:
 
-```
+```cpp
 // C3277a.cpp
 // compile with: /clr
 ref class A

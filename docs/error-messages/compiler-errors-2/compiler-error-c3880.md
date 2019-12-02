@@ -19,7 +19,7 @@ The type of a [literal](../../extensions/literal-cpp-component-extensions.md) at
 
 The following sample generates C3880:
 
-```
+```cpp
 // C3880.cpp
 // compile with: /clr /c
 ref struct Y1 {

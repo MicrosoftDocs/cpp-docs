@@ -13,7 +13,7 @@ An operator declared by a `static` member function must have at least one parame
 
 The following sample generates C2802:
 
-```
+```cpp
 // C2802.cpp
 // compile with: /clr /c
 ref class A {

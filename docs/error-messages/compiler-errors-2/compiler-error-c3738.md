@@ -15,7 +15,7 @@ It is recommended that you do not specify a calling convention on an explicit in
 
 The following sample generates C3738.
 
-```
+```cpp
 // C3738.cpp
 // compile with: /clr
 // processor: x86

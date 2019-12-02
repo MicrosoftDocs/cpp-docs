@@ -13,7 +13,7 @@ A class marked with the [coclass](../../windows/coclass.md) attribute cannot inh
 
 The following sample generates C3247:
 
-```
+```cpp
 // C3247.cpp
 [module(name="MyLib")];
 [coclass]

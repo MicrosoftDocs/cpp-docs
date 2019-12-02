@@ -13,7 +13,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) variable is co
 
 The following sample generates C3891:
 
-```
+```cpp
 // C3891.cpp
 // compile with: /clr
 ref struct Y1 {

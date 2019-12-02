@@ -23,7 +23,7 @@ For more information, see,
 
 The following sample generates C3382.
 
-```
+```cpp
 // C3382.cpp
 // compile with: /clr:safe
 int main() {

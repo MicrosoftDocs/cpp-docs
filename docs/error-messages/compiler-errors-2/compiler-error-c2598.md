@@ -13,7 +13,7 @@ The linkage specifier is declared at local scope.
 
 The following sample generates C2598:
 
-```
+```cpp
 // C2598.cpp
 // compile with: /c
 void func() {

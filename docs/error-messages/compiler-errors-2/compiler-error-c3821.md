@@ -17,7 +17,7 @@ C3821 can also occur if you try to use automatic storage in a vararg function.  
 
 The following sample generates C3821.
 
-```
+```cpp
 // C3821a.cpp
 // compile with: /clr /c
 public ref struct R {};
@@ -30,7 +30,7 @@ void test1(...) {
 
 The following sample generates C3821.
 
-```
+```cpp
 // C3821b.cpp
 // compile with: /clr
 // processor: /x86

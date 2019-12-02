@@ -17,7 +17,7 @@ For more information, see [Destructors and finalizers](../../dotnet/how-to-defin
 
 The following sample generates C2521.
 
-```
+```cpp
 // C2521.cpp
 // compile with: /clr
 ref class R {

@@ -15,7 +15,7 @@ A clause requires an integer expression but was given a noninteger expression.
 
 The following sample generates C3025.
 
-```
+```cpp
 // C3025.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

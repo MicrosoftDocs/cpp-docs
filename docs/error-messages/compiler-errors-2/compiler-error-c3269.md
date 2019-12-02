@@ -13,7 +13,7 @@ Managed and WinRT class member functions cannot declare variable-length paramete
 
 The following sample generates C3269 and shows how to fix it:
 
-```
+```cpp
 // C3269_2.cpp
 // compile with: /clr
 

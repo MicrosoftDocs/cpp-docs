@@ -13,7 +13,7 @@ The second parameter to a postfix operator has the wrong type.
 
 The following sample generates C2807:
 
-```
+```cpp
 // C2807.cpp
 // compile with: /c
 class X {

@@ -13,7 +13,7 @@ The required symbol was not found.
 
 The following sample generates C3358:
 
-```
+```cpp
 // C3358.cpp
 #define __ATLEVENT_H__ 1   // remove this line to resolve the error
 #define _ATL_ATTRIBUTES 1

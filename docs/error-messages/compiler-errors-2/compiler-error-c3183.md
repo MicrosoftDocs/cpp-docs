@@ -13,7 +13,7 @@ A type that is embedded in a managed or WinRT type must be named.
 
 The following sample generates C3183:
 
-```
+```cpp
 // C3183a.cpp
 // compile with: /clr /c
 ref class Test

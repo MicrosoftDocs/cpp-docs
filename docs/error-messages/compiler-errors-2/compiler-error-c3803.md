@@ -13,7 +13,7 @@ The type of a property defined with [property](../../cpp/property-cpp.md) does n
 
 The following sample generates C3803:
 
-```
+```cpp
 // C3803.cpp
 struct A
 {

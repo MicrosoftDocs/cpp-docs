@@ -13,7 +13,7 @@ The non-type parameter needs to be a simple identifier, something the compiler c
 
 The following sample generates C2755:
 
-```
+```cpp
 // C2755.cpp
 template<int I, int J>
 struct A {};
