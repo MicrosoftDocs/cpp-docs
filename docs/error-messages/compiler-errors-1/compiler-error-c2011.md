@@ -17,7 +17,7 @@ If you need to find the initial declaration of the redefined type, you can use t
 
 The following sample generates C2011 and shows one way to fix it:
 
-```
+```cpp
 // C2011.cpp
 // compile with: /c
 struct S;

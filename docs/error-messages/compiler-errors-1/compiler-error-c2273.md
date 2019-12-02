@@ -15,7 +15,7 @@ This error can be caused by trying to access a user-defined type conversion. Use
 
 The following sample generates C2273:
 
-```
+```cpp
 // C2273.cpp
 struct MyClass {
    operator int() {

@@ -13,7 +13,7 @@ You attempted to redefine a class member.
 
 The following sample generates C2365.
 
-```
+```cpp
 // C2365.cpp
 // compile with: /c
 class C1 {

@@ -13,7 +13,7 @@ A formal parameter to a function is redeclared within the function body. To reso
 
 The following sample generates C2082:
 
-```
+```cpp
 // C2082.cpp
 void func(int i) {
    int i;   // C2082

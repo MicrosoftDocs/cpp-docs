@@ -15,7 +15,7 @@ Constants defined using `#define` must have values that evaluate to an integer c
 
 The following sample generates C1017:
 
-```
+```cpp
 // C1017.cpp
 #define CONSTANT_NAME "YES"
 #if CONSTANT_NAME   // C1017
@@ -24,7 +24,7 @@ The following sample generates C1017:
 
 Possible resolution:
 
-```
+```cpp
 // C1017b.cpp
 // compile with: /c
 #define CONSTANT_NAME 1
@@ -36,7 +36,7 @@ Because `CONSTANT_NAME` evaluates to a string and not an integer, the `#if` dire
 
 In other cases, the preprocessor evaluates an undefined constant as zero. This can cause unintended results, as shown in the following sample. `YES` is undefined, so it evaluates to zero. The expression `#if` `CONSTANT_NAME` evaluates to false and the code to be used on `YES` is removed by the preprocessor. `NO` is also undefined (zero), so `#elif` `CONSTANT_NAME==NO` evaluates to true (`0 == 0`), causing the preprocessor to leave the code in the `#elif` portion of the statement — exactly the opposite of the intended behavior.
 
-```
+```cpp
 // C1017c.cpp
 // compile with: /c
 #define CONSTANT_NAME YES

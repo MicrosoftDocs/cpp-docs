@@ -13,7 +13,7 @@ A type declaration or definition uses a type qualifier (`const`, `volatile`, `si
 
 The following sample generates C2286:
 
-```
+```cpp
 // C2289.cpp
 // compile with: /Za /c
 volatile volatile int i;   // C2289

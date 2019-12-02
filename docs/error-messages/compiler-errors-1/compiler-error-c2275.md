@@ -13,7 +13,7 @@ An expression uses the `->` operator with a `typedef` identifier.
 
 The following sample generates C2275:
 
-```
+```cpp
 // C2275.cpp
 typedef struct S {
     int mem;

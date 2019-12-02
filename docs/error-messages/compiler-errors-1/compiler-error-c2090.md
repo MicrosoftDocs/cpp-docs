@@ -13,14 +13,14 @@ A function cannot return an array. Return a pointer to an array instead.
 
 The following sample generates C2090:
 
-```
+```cpp
 // C2090.cpp
 int func1(void)[] {}   // C2090
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C2090b.cpp
 // compile with: /c
 int* func2(int * i) {

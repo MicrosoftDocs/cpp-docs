@@ -15,7 +15,7 @@ The [make_public](../../preprocessor/make-public.md) pragma can only be applied 
 
 The following sample generates C2158.
 
-```
+```cpp
 // C2158.cpp
 // compile with: /clr /c
 ref class A {};

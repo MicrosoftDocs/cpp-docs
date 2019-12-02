@@ -13,7 +13,7 @@ A member of a class, structure, or union with local scope is declared `static`.
 
 The following sample generates C2246:
 
-```
+```cpp
 // C2246.cpp
 // compile with: /c
 void func( void ) {

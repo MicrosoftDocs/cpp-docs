@@ -13,7 +13,7 @@ A reference identifier was allocated with the `new` operator. References are not
 
 The following sample generates C2464:
 
-```
+```cpp
 // C2464.cpp
 int main() {
    new ( int& ir );   // C2464

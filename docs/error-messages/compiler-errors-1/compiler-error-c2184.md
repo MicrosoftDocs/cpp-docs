@@ -13,7 +13,7 @@ A type was used in an [__except](../../c-language/try-except-statement-c.md) sta
 
 The following sample generates C2184:
 
-```
+```cpp
 // C2184.cpp
 void f() {
    int * p;
@@ -24,7 +24,7 @@ void f() {
 
 Possible resolution:
 
-```
+```cpp
 // C2184b.cpp
 // compile with: /c
 void f() {

@@ -13,7 +13,7 @@ A `static` member function called a nonstatic member function. Or, a nonstatic m
 
 The following sample generates C2352 and shows how to fix it:
 
-```
+```cpp
 // C2352.cpp
 // compile with: /c
 class CMyClass {
@@ -29,7 +29,7 @@ public:
 
 The following sample generates C2352 and shows how to fix it:
 
-```
+```cpp
 // C2352b.cpp
 class MyClass {
 public:

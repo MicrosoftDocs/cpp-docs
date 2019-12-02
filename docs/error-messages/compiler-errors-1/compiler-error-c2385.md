@@ -19,7 +19,7 @@ The member can derive from more than one object (it is inherited from more than 
 
 The following sample generates C2385.
 
-```
+```cpp
 // C2385.cpp
 // C2385 expected
 #include <stdio.h>

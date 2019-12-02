@@ -13,7 +13,7 @@ A catch handler has no parenthesized type.
 
 The following sample generates C2309:
 
-```
+```cpp
 // C2309.cpp
 // compile with: /EHsc
 #include <eh.h>

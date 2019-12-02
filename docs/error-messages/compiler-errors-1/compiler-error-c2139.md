@@ -17,7 +17,7 @@ For more information, see [Compiler Support for Type Traits](../../extensions/co
 
 The following sample generates C2139.
 
-```
+```cpp
 // C2139.cpp
 // compile with: /EHsc
 #include <iostream>

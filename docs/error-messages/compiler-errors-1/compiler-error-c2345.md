@@ -13,7 +13,7 @@ You passed a value to the [align](../../cpp/align-cpp.md) keyword that is outsid
 
 The following code generates C2345
 
-```
+```cpp
 // C2345.cpp
 // compile with: /c
 __declspec(align(0)) int a;   // C2345

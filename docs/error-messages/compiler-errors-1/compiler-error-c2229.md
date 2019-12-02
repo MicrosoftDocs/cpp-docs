@@ -17,7 +17,7 @@ If the zero sized array is not the last member of the struct, the compiler can't
 
 The following sample generates C2229:
 
-```
+```cpp
 // C2229.cpp
 struct S {
    int a[0];  // C2229  zero-sized array

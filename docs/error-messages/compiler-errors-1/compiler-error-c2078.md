@@ -15,7 +15,7 @@ The compiler can deduce the correct assignment of initializers to objects and in
 
 The following sample generates C2078 and shows how to fix it:
 
-```
+```cpp
 // C2078.cpp
 // Compile by using: cl /c /W4 C2078.cpp
 struct S {

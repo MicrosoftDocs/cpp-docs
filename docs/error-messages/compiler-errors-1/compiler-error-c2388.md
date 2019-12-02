@@ -15,7 +15,7 @@ For more information, see [appdomain](../../cpp/appdomain.md) and [process](../.
 
 The following sample generates C2388:
 
-```
+```cpp
 // C2388.cpp
 // compile with: /clr /c
 __declspec(process) __declspec(appdomain) int i;   // C2388

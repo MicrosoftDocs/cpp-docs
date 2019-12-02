@@ -17,7 +17,7 @@ C2108 can occur if you incorrectly use the `this` pointer of a value type to acc
 
 The following sample generates C2108.
 
-```
+```cpp
 // C2108.cpp
 // compile with: /clr
 using namespace System;

@@ -13,7 +13,7 @@ The variable is declared with the [thread](../../cpp/thread.md) attribute and wi
 
 The following sample generates C2492:
 
-```
+```cpp
 // C2492.cpp
 // compile with: /c
 class C {

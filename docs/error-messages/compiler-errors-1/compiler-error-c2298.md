@@ -15,7 +15,7 @@ A pointer to member-function expression must call the member function.
 
 The following sample generates C2298.
 
-```
+```cpp
 // C2298.cpp
 #include <stdio.h>
 
@@ -51,7 +51,7 @@ int main() {
 
 The following sample generates C2298.
 
-```
+```cpp
 // C2298_b.cpp
 // compile with: /c
 void F() {}

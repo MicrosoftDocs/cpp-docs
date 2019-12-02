@@ -32,7 +32,7 @@ int main() {
 
 The following sample generates C2036.
 
-```
+```cpp
 // C2036_2.cpp
 // a C++ program
 struct A* pA;

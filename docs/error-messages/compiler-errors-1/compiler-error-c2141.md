@@ -15,7 +15,7 @@ An array exceeds the 2GB limit. Reduce the size of the array.
 
 The following sample generates C2141.
 
-```
+```cpp
 // C2141.cpp
 // processor: IPF
 class A {

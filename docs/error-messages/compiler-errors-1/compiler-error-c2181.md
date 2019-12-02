@@ -13,7 +13,7 @@ Each `else` must have a matching `if`.
 
 The following sample generates C2181:
 
-```
+```cpp
 // C2181.cpp
 int main() {
    int i = 0;
@@ -24,7 +24,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2181b.cpp
 int main() {
    int i = 0;

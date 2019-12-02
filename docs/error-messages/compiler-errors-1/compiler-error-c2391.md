@@ -13,7 +13,7 @@ The `friend` declaration includes a complete class declaration. A `friend` decla
 
 The following sample generates C2326:
 
-```
+```cpp
 // C2391.cpp
 // compile with: /c
 class D {

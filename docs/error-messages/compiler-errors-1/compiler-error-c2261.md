@@ -19,7 +19,7 @@ For more on the correct syntax when specifying friend assemblies, see [Friend As
 
 The following sample generates C2261.
 
-```
+```cpp
 // C2261.cpp
 // compile with: /clr /c
 using namespace System::Runtime::CompilerServices;

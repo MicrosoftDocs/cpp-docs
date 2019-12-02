@@ -13,7 +13,7 @@ An operator in a Windows Runtime or managed type did not have at least one param
 
 The following sample generates C2394:
 
-```
+```cpp
 // C2394.cpp
 // compile with: /clr /c
 ref struct Y {

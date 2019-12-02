@@ -13,7 +13,7 @@ Code attempts to modify an item declared `const`.
 
 The following sample generates C2166:
 
-```
+```cpp
 // C2166.cpp
 int f();
 int main() {

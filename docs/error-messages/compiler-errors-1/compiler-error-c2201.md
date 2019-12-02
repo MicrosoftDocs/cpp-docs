@@ -13,7 +13,7 @@ The exported identifier is `static`.
 
 The following sample generates C2286:
 
-```
+```cpp
 // C2201.cpp
 // compile with: /c
 __declspec(dllexport) static void func() {}   // C2201 func() is static

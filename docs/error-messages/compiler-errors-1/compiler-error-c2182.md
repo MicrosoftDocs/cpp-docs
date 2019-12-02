@@ -13,7 +13,7 @@ A variable is declared type `void`.
 
 The following sample generates C2182:
 
-```
+```cpp
 // C2182.cpp
 // compile with: /c
 int main() {

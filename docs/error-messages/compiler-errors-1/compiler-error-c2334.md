@@ -11,7 +11,7 @@ unexpected token(s) preceding ': or {'; skipping apparent function body
 
 The following sample generates C2334. This error occurs after error C2059:
 
-```
+```cpp
 // C2334.cpp
 // compile with: /c
 // C2059 expected

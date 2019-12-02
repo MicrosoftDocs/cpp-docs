@@ -15,7 +15,7 @@ A generic type parameter is resolved at runtime. However, an attribute parameter
 
 The following sample generates C2179.
 
-```
+```cpp
 // C2179.cpp
 // compile with: /clr
 using namespace System;

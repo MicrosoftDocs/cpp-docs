@@ -13,7 +13,7 @@ The identifier is initialized more than once.
 
 The following sample generates C2374:
 
-```
+```cpp
 // C2374.cpp
 // compile with: /c
 int i = 0;
