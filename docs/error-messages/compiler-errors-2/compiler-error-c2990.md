@@ -13,7 +13,7 @@ The non generic or template class redefines a generic or template class. Check h
 
 The following sample generates C2990:
 
-```
+```cpp
 // C2990.cpp
 // compile with: /c
 template <class T>
@@ -23,7 +23,7 @@ class C{};   // C2990
 
 C2990 can also occur when using generics:
 
-```
+```cpp
 // C2990b.cpp
 // compile with: /clr /c
 generic <class T>
@@ -36,7 +36,7 @@ C2990 can also occur due to a breaking change in the Microsoft C++ compiler for 
 
 The following sample generates C2990:
 
-```
+```cpp
 // C2990c.cpp
 // compile with: /c
 template<class T>

@@ -15,7 +15,7 @@ A clause that requires an arithmetic or pointer expression was passed another ki
 
 The following sample generates C3027:
 
-```
+```cpp
 // C3027.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

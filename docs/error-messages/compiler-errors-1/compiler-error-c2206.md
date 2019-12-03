@@ -13,7 +13,7 @@ A `typedef` is used to define a function type.
 
 The following sample generates C2206:
 
-```
+```cpp
 // C2206.cpp
 typedef int functyp();
 typedef int MyInt;

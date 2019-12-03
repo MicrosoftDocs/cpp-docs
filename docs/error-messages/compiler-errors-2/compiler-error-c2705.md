@@ -13,7 +13,7 @@ Execution jumps to a label within a `try`/`catch`, `__try`/`__except`, `__try`/`
 
 The following sample generates C2705:
 
-```
+```cpp
 // C2705.cpp
 int main() {
 goto trouble;

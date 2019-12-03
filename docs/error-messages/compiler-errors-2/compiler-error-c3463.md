@@ -15,7 +15,7 @@ An invalid type was passed to the [implements](../../windows/implements-cpp.md) 
 
 The following sample generates C3463.
 
-```
+```cpp
 // C3463.cpp
 // compile with: /c
 #include <windows.h>

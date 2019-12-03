@@ -15,7 +15,7 @@ Instance (non-static) initonly data members can only have their address taken in
 
 The following sample generates C3893:
 
-```
+```cpp
 // C3893.cpp
 // compile with: /clr
 ref struct Y1 {

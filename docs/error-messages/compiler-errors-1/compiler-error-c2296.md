@@ -15,7 +15,7 @@ For example, the compiler may see a declaration where you intended a function ca
 
 The following sample generates C2296:
 
-```
+```cpp
 // C2296.cpp
 struct MyStruct {
    struct Help {

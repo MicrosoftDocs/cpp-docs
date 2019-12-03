@@ -13,7 +13,7 @@ The underlying type you specified for the `enum` type was not valid. The underly
 
 The following sample generates C3168:
 
-```
+```cpp
 // C3168.cpp
 // compile with: /clr /c
 ref class G{};

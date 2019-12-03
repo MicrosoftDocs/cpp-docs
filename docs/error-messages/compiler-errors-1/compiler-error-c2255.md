@@ -13,7 +13,7 @@ For example, a nonmember function is declared a `friend`.
 
 The following sample generates C2255:
 
-```
+```cpp
 // C2255.cpp
 // compile with: /c
 class A {

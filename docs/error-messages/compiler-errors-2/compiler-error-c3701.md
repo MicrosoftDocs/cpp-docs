@@ -13,7 +13,7 @@ You attempted to use [event_source](../../windows/event-source.md) on a class th
 
 The following sample generates C3701:
 
-```
+```cpp
 // C3701.cpp
 [ event_source(native) ]
 class CEventSrc {

@@ -13,7 +13,7 @@ The compiler did not find a closing brace for a `__try` block.
 
 The following sample generates C2706:
 
-```
+```cpp
 // C2706.cpp
 int main() {
    __try {

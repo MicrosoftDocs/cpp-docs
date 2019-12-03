@@ -13,7 +13,7 @@ The definition of an array with multiple subscripts is missing a subscript value
 
 The following sample generates C2087:
 
-```
+```cpp
 // C2087.cpp
 int main() {
    char a[10][];   // C2087
@@ -22,7 +22,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2087b.cpp
 int main() {
    char b[4][5];

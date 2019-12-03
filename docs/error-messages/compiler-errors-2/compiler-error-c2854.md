@@ -13,7 +13,7 @@ The `#pragma hdrstop` gives an invalid filename. The pragma can be followed by a
 
 The following sample generates C2854:
 
-```
+```cpp
 // C2854.cpp
 // compile with: /c
 #pragma hdrstop( "\\source\\pchfiles\\myheader.pch" ]   // C2854

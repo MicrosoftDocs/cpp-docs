@@ -13,7 +13,7 @@ The value that was passed to the [uuid](../../windows/uuid-cpp-attributes.md) at
 
 The following sample generates C3360:
 
-```
+```cpp
 // C3360.cpp
 [ uuid("1") ]
 // try this line instead

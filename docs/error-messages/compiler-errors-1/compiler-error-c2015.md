@@ -17,7 +17,7 @@ An escape sequence, such as \t, is converted to a single character.
 
 The following sample generates C2015:
 
-```
+```cpp
 // C2015.cpp
 // compile with: /c
 
@@ -29,7 +29,7 @@ char test2 = 'e';   // OK
 
 C2015 can also occur when using a Microsoft extension, character constants converted to integers.  The following sample generates C2015:
 
-```
+```cpp
 // C2015b.cpp
 #include <stdio.h>
 

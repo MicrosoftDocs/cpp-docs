@@ -19,7 +19,7 @@ The compiler reached the end of the file while scanning a comment.
 
 The following sample generates C1071:
 
-```
+```cpp
 // C1071.cpp
 int main() {
 }

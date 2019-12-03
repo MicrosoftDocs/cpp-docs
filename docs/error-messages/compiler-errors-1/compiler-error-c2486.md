@@ -13,7 +13,7 @@ In inline assembly functions, the name `__LOCAL_SIZE` is reserved for functions 
 
 The following sample generates C2486:
 
-```
+```cpp
 // C2486.cpp
 // processor: x86
 void __declspec(naked) f1() {

@@ -17,7 +17,7 @@ For more information about /CLR attributes, see [User-Defined Attributes](../../
 
 The following sample generates C3099 and shows how to fix it.
 
-```
+```cpp
 // C3099.cpp
 // compile with: /clr /c
 using namespace System;

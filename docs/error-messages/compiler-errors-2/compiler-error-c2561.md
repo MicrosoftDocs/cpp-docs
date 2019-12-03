@@ -21,7 +21,7 @@ This error can be caused by an incorrect function prototype:
 
 The following sample generates C2561:
 
-```
+```cpp
 // C2561.cpp
 int Test(int x) {
    if (x) {

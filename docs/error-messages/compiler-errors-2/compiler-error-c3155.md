@@ -15,7 +15,7 @@ An indexed property was declared incorrectly. For more information, see [How to:
 
 The following sample generates C3155.
 
-```
+```cpp
 // C3155.cpp
 // compile with: /clr /c
 using namespace System;

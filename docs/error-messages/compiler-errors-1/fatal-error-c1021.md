@@ -13,7 +13,7 @@ invalid preprocessor command 'string'
 
 The following sample generates C1021:
 
-```
+```cpp
 // C1021.cpp
 #BadPreProcName    // C1021 delete line
 ```

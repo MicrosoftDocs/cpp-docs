@@ -13,7 +13,7 @@ You attempted to use COM events without including the necessary ATL header files
 
 The following sample generates C3702:
 
-```
+```cpp
 // C3702.cpp
 // uncomment the following line to resolve
 // #define _ATL_ATTRIBUTES 1

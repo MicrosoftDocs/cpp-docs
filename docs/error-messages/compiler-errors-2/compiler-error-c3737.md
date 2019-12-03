@@ -15,7 +15,7 @@ You cannot specify the [calling convention](../../cpp/calling-conventions.md) fo
 
 The following sample generates C3737:
 
-```
+```cpp
 // C3737a.cpp
 // compile with: /clr
 delegate void __stdcall MyFunc();   // C3737

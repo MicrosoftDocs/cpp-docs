@@ -21,7 +21,7 @@ Ending the first line with \n is not sufficient.
 
 The following sample generates C2001:
 
-```
+```cpp
 // C2001.cpp
 // C2001 expected
 #include <stdio.h>
@@ -39,7 +39,7 @@ int main()
 
 Spaces at the beginning of the next line after a line-continuation character are included in the string constant. None of the examples shown above embed a newline character into the string constant. You can embed a newline character as shown here:
 
-```
+```cpp
 // C2001b.cpp
 #include <stdio.h>
 

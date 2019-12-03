@@ -13,7 +13,7 @@ Some instructions will prevent the compiler from generating MSIL for the enclosi
 
 The following sample generates C2711:
 
-```
+```cpp
 // C2711.cpp
 // compile with: /clr
 // processor: x86

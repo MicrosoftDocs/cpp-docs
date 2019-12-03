@@ -19,7 +19,7 @@ To fix this error, change the `extern` statements so that the linkages agree. In
 
 The following sample generates C2732:
 
-```
+```cpp
 // C2732.cpp
 extern void func( void );   // implicit C++ linkage
 extern "C" void func( void );   // C2732

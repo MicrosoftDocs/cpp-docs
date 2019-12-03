@@ -13,7 +13,7 @@ A function was declared incorrectly.
 
 The following sample generates C2738:
 
-```
+```cpp
 // C2738.cpp
 struct A {
    template <class T> operator T*();

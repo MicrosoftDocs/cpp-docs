@@ -13,7 +13,7 @@ Declaring friends on an interface is not allowed.
 
 The following sample generates C2863:
 
-```
+```cpp
 // C2863.cpp
 // compile with: /c
 #include <unknwn.h>

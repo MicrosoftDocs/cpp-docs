@@ -15,7 +15,7 @@ The character used as the exponent of a floating-point constant is not a valid n
 
 The following sample generates C2021:
 
-```
+```cpp
 // C2021.cpp
 float test1=1.175494351E;   // C2021
 ```
@@ -24,7 +24,7 @@ float test1=1.175494351E;   // C2021
 
 Possible resolution:
 
-```
+```cpp
 // C2021b.cpp
 // compile with: /c
 float test2=1.175494351E8;

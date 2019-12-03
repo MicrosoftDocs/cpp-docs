@@ -15,7 +15,7 @@ A constructor was declared incorrectly. See [Override Specifiers](../../extensio
 
 The following sample generates C3085.
 
-```
+```cpp
 // C3085.cpp
 // compile with: /c /clr
 ref struct S {

@@ -15,7 +15,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 The following sample generates C3651:
 
-```
+```cpp
 // C3651.cpp
 // compile with: /clr /c
 ref class C {

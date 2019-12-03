@@ -13,7 +13,7 @@ You declared an event method that includes an implementation. An [__event](../..
 
 The following sample generates C3717:
 
-```
+```cpp
 // C3717.cpp
 [event_source(native)]
 class CEventSrc {

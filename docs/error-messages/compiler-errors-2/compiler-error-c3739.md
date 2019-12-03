@@ -13,7 +13,7 @@ You tried to hook an entire interface of events but `layout_dependent` on [event
 
 The following sample generates C3739:
 
-```
+```cpp
 // C3739.cpp
 struct A
 {

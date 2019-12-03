@@ -19,7 +19,7 @@ A lambda expression that is declared in a `const` method cannot modify non-mutab
 
 The following example generates C3490 because it modifies the member variable `_i` in a `const` method:
 
-```
+```cpp
 // C3490a.cpp
 // compile with: /c
 
@@ -38,7 +38,7 @@ class C
 
 The following example resolves C3490 by removing the `const` modifier from the method declaration:
 
-```
+```cpp
 // C3490b.cpp
 // compile with: /c
 

@@ -13,7 +13,7 @@ A `using` declaration uses a symbol, such as a namespace name. A `using` declara
 
 The following sample generates C2886:
 
-```
+```cpp
 // C2886.cpp
 // compile with: /c
 namespace Z {

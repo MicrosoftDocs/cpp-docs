@@ -28,7 +28,7 @@ void f(TC2 i) {}
 
 C2942 can also occur when using generics:
 
-```
+```cpp
 // C2942b.cpp
 // compile with: /clr /c
 generic<class T>

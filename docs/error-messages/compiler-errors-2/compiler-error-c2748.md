@@ -13,7 +13,7 @@ A managed or WinRT array was ill formed. For more information, see [array](../..
 
 The following sample generates C2748 and shows how to fix it:
 
-```
+```cpp
 // C2748.cpp
 // compile with: /clr
 int main() {

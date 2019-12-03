@@ -13,7 +13,7 @@ You defined an event handler method that did not use the same calling convention
 
 The following sample generates C3714:
 
-```
+```cpp
 // C3714.cpp
 // compile with: /c
 // processor: x86

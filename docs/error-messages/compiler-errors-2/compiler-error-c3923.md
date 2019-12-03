@@ -13,7 +13,7 @@ ms.assetid: db8838e9-6344-4cd6-83e0-a8abeb12c4c0
 
 The following sample generates C3923.
 
-```
+```cpp
 // C3923.cpp
 // compile with: /clr /c
 ref struct x {

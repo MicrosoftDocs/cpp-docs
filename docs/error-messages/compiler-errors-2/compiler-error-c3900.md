@@ -15,7 +15,7 @@ Event definitions can only contain access methods and functions.
 
 The following sample generates C3900:
 
-```
+```cpp
 // C3900.cpp
 // compile with: /clr
 ref class X {
@@ -28,7 +28,7 @@ ref class X {
 
 The following sample generates C3900:
 
-```
+```cpp
 // C3900b.cpp
 // compile with: /clr
 using namespace System;

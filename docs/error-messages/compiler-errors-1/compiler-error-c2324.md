@@ -13,7 +13,7 @@ A destructor is called using an incorrect identifier.
 
 The following sample generates C2324:
 
-```
+```cpp
 // C2324.cpp
 class A {};
 typedef A* pA_t;

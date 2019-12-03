@@ -17,7 +17,7 @@ Possible causes:
 
 The following sample generates C2661:
 
-```
+```cpp
 // C2661.cpp
 void func( int ){}
 void func( int, int ){}

@@ -13,7 +13,7 @@ The token caused a syntax error in the specified context.
 
 The following sample generates C2400:
 
-```
+```cpp
 // C2400.cpp
 // processor: x86
 int main() {

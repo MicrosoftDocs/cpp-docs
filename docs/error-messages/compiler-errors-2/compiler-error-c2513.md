@@ -13,7 +13,7 @@ The type specifier appears in declaration with no variable identifier.
 
 The following sample generates C2513:
 
-```
+```cpp
 // C2513.cpp
 int main() {
    int = 9;   // C2513
@@ -23,7 +23,7 @@ int main() {
 
 This error can also be generated as a result of a compiler conformance work done for Visual Studio .NET 2003: initialization of a typedef no longer allowed. The initialization of a typedef is not allowed by the standard and now generates a compiler error.
 
-```
+```cpp
 // C2513b.cpp
 // compile with: /c
 typedef struct S {

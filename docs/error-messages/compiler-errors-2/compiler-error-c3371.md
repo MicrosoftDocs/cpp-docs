@@ -13,7 +13,7 @@ ms.assetid: f7ecf1aa-ed0a-4f73-81e5-62cf98f88ea1
 
 The following sample generates C3371:
 
-```
+```cpp
 // C3371.cpp
 [idl_module(name="Name", dllname="Some.dll")];
 [idl_module(name="Name", helpstring="Some help")]   // C3371

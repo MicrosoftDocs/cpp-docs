@@ -15,7 +15,7 @@ This error may be fixed by removing the `return` statement from the constructor 
 
 The following sample generates C2534:
 
-```
+```cpp
 // C2534.cpp
 class A {
 public:

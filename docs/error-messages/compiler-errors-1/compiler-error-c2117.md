@@ -17,7 +17,7 @@ An array has too many initializers:
 
 The following sample generates C2117:
 
-```
+```cpp
 // C2117.cpp
 int main() {
    char abc[4] = "abcd";   // C2117

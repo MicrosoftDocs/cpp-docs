@@ -15,7 +15,7 @@ Assembly or module level attributes can only be specified as stand-alone instruc
 
 The following sample generates C3453.
 
-```
+```cpp
 // C3453.cpp
 // compile with: /clr /c
 [assembly:System::CLSCompliant(true)]   // C3453

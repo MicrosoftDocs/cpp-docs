@@ -13,7 +13,7 @@ An `omp` parallel region cannot contain inline assembly instructions.
 
 The following sample generates C3011:
 
-```
+```cpp
 // C3011.cpp
 // compile with: /openmp
 // processor: /x86

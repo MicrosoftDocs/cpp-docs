@@ -13,7 +13,7 @@ The overloaded functions have different return types but the same parameter list
 
 The following sample generates C2556:
 
-```
+```cpp
 // C2556.cpp
 // compile with: /c
 class C {

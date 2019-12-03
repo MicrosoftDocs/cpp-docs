@@ -13,7 +13,7 @@ An unsized array is declared as a member of a class, structure, union, or enumer
 
 The following sample generates C2133:
 
-```
+```cpp
 // C2133.cpp
 // compile with: /Za
 struct X {
@@ -23,7 +23,7 @@ struct X {
 
 Possible resolution:
 
-```
+```cpp
 // C2133b.cpp
 // compile with: /c
 struct X {

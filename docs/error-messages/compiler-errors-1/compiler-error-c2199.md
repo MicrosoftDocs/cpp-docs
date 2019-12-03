@@ -13,7 +13,7 @@ The specified context caused a syntax error. There may be incorrect declaration 
 
 The following sample generates C2199:
 
-```
+```cpp
 // C2199.cpp
 // compile with: /c
 int j = int(1) int(1);   // C2199

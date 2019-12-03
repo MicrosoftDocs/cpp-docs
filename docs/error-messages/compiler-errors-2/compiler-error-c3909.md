@@ -15,7 +15,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 The following sample generates C3909 and shows how to fix it:
 
-```
+```cpp
 // C3909.cpp
 // compile with: /clr /c
 delegate void H();

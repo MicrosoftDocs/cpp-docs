@@ -13,7 +13,7 @@ The [delete](../../cpp/delete-operator-cpp.md) operator was used on an object th
 
 The following sample generates C2541:
 
-```
+```cpp
 // C2541.cpp
 int main() {
    int i;

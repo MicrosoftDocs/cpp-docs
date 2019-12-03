@@ -13,7 +13,7 @@ The token is not an identifier.
 
 The following sample generates C2611:
 
-```
+```cpp
 // C2611.cpp
 // compile with: /c
 class C {

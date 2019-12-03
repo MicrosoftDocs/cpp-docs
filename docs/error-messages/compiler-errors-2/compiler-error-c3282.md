@@ -15,7 +15,7 @@ A generic parameter list was used incorrectly.  For more information, see [Gener
 
 The following sample generates C3282 and shows how to fix it.
 
-```
+```cpp
 // C3282.cpp
 // compile with: /clr /c
 generic <typename T> int x;   // C3282

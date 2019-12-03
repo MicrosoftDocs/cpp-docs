@@ -13,7 +13,7 @@ A [property](../../cpp/property-cpp.md) declspec modifier had more than one `put
 
 The following sample generates C2777:
 
-```
+```cpp
 // C2777.cpp
 struct A {
    __declspec(property(put=PutProp,put=PutPropToo))   // C2777

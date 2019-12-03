@@ -13,7 +13,7 @@ A generic or template class has multiple declarations that are not equivalent. T
 
 The following sample generates C2921:
 
-```
+```cpp
 // C2921.cpp
 // compile with: /c
 template <class T> struct TC2 {};
@@ -24,7 +24,7 @@ typedef int TC2;   // C2921
 
 C2921 can also occur when using generics.
 
-```
+```cpp
 // C2921b.cpp
 // compile with: /clr /c
 generic <class T> ref struct GC2 {};

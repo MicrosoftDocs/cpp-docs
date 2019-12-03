@@ -13,7 +13,7 @@ You defined an event handler method that did not return the same type as the sou
 
 The following sample generates C3712:
 
-```
+```cpp
 // C3712.cpp
 // compile with: /c
 [event_source(native)]

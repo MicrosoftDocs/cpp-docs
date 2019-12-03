@@ -13,7 +13,7 @@ An interface to which you applied an [interface attribute](../../windows/attribu
 
 The following example generates C3136:
 
-```
+```cpp
 // C3136.cpp
 #include "unknwn.h"
 

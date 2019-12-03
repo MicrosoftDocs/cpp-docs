@@ -13,7 +13,7 @@ A `catch` handler is defined but not preceded by a `try` block.
 
 The following sample generates C2318:
 
-```
+```cpp
 // C2318.cpp
 // compile with: /EHsc
 #include <eh.h>
@@ -25,7 +25,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2318b.cpp
 // compile with: /EHsc
 #include <eh.h>

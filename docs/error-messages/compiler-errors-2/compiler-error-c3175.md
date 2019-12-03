@@ -13,7 +13,7 @@ Unmanaged functions cannot call member functions of managed classes.
 
 The following sample generates C3175:
 
-```
+```cpp
 // C3175_2.cpp
 // compile with: /clr
 

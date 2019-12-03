@@ -13,7 +13,7 @@ A [critical](../../parallel/openmp/reference/critical.md) directive cannot be ne
 
 The following sample generates C3043:
 
-```
+```cpp
 // C3043.cpp
 // compile with: /openmp /c
 #include "omp.h"

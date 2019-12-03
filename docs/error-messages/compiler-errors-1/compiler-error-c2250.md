@@ -13,7 +13,7 @@ The derived class inherits more than one override of a virtual function of a vir
 
 The following sample generates C2286:
 
-```
+```cpp
 // C2250.cpp
 // compile with: /c
 // C2250 expected

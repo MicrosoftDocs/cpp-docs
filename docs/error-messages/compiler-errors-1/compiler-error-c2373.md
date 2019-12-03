@@ -21,7 +21,7 @@ const int i = 20;
 
 And then:
 
-```
+```cpp
 // C2373.cpp
 // compile with: /c
 #include "C2373.h"

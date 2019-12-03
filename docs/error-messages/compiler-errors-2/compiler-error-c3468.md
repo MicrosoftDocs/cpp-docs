@@ -19,7 +19,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 The following sample creates a module.
 
-```
+```cpp
 // C3468.cpp
 // compile with: /LN /clr
 public ref class R {};
@@ -29,7 +29,7 @@ public ref class R {};
 
 The following sample generates C3468.
 
-```
+```cpp
 // C3468_b.cpp
 // compile with: /clr /c
 #using "C3468.netmodule"

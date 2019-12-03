@@ -13,7 +13,7 @@ Default parameters cannot be redefined. If you require another value for the par
 
 The following sample generates C2572:
 
-```
+```cpp
 // C2572.cpp
 // compile with: /c
 void f(int i = 1);   // function declaration

@@ -13,14 +13,14 @@ Directives such as [#include](../../preprocessor/hash-include-directive-c-cpp.md
 
 The following sample generates C2006:
 
-```
+```cpp
 // C2006.cpp
 #include stdio.h   // C2006
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C2006b.cpp
 // compile with: /c
 #include <stdio.h>

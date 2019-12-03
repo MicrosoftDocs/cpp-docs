@@ -23,7 +23,7 @@ For more information, see,
 
 The following sample generates C3162.
 
-```
+```cpp
 // C3162.cpp
 // compile with: /clr /c
 ref struct A {

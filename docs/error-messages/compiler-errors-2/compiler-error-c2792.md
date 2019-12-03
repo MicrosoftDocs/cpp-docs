@@ -13,7 +13,7 @@ The only token that can follow the keyword `__super` is `::`.
 
 The following sample generates C2792:
 
-```
+```cpp
 // C2792.cpp
 struct B {
    void mf();

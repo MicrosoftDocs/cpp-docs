@@ -13,7 +13,7 @@ An [interface](../../cpp/interface.md) may only inherit from another interface a
 
 The following sample generates C2810:
 
-```
+```cpp
 // C2810.cpp
 #include <unknwn.h>
 class CBase1 {

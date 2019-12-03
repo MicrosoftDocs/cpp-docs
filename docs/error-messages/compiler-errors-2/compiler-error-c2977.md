@@ -13,7 +13,7 @@ A generic or template has too many actual arguments. Check the generic or templa
 
 The following sample generates C2977:
 
-```
+```cpp
 // C2977.cpp
 // compile with: /c
 template<class T, int i>
@@ -25,7 +25,7 @@ template MyClass< int , 1 >;   // OK
 
 C2977 can also occur when using generics:
 
-```
+```cpp
 // C2977b.cpp
 // compile with: /clr
 // C2977 expected

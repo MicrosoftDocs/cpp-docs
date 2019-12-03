@@ -13,7 +13,7 @@ Before you can use [idl_module](../../windows/idl-module.md) to specify an entry
 
 The following sample generates C3370:
 
-```
+```cpp
 // C3370.cpp
 [module(name=MyLibrary)];
 // uncomment the following line to resolve the error

@@ -15,7 +15,7 @@ For example, a new slot cannot be requested on a destructor or finalizer.  For m
 
 The following sample generates C3665:
 
-```
+```cpp
 // C3665.cpp
 // compile with: /clr
 public ref struct R {

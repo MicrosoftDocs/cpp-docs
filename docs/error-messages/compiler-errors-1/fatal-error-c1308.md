@@ -15,7 +15,7 @@ For more information, see [.netmodule Files as Linker Input](../../build/referen
 
 The following sample generates C1308:
 
-```
+```cpp
 // C1308.cpp
 // compile with: /clr:safe /LD
 public ref class MyClass {
@@ -26,7 +26,7 @@ public:
 
 and then,
 
-```
+```cpp
 // C1308b.cpp
 // compile with: /clr /link C1308b.obj C1308.dll
 // C1308 expected

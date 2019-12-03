@@ -17,7 +17,7 @@ To resolve this error, only reference files from the version of the common langu
 
 The following sample generates C1197:
 
-```
+```cpp
 // C1197.cpp
 // compile with: /clr /c
 // processor: x86

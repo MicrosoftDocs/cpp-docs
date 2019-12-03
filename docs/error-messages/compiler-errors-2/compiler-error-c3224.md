@@ -22,7 +22,7 @@ public class C<T,U> {}
 
 And then,
 
-```
+```cpp
 // C3224b.cpp
 // compile with: /clr
 #using "C3224.dll"

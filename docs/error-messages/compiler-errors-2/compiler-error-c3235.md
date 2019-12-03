@@ -15,7 +15,7 @@ Generic classes cannot be used for explicit or partial specializations.
 
 The following sample generates C3235.
 
-```
+```cpp
 // C3235.cpp
 // compile with: /clr
 generic<class T>

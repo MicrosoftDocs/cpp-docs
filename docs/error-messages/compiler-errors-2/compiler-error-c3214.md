@@ -13,7 +13,7 @@ The type was specified for an instantiation of a generic class that does not mee
 
 The following sample generates C3214:
 
-```
+```cpp
 // C3214.cpp
 // compile with: /clr
 interface struct A {};

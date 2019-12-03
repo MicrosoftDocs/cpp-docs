@@ -13,7 +13,7 @@ Duplicate explicit specializations are not allowed. For more information, see [E
 
 The following sample generates C2766:
 
-```
+```cpp
 // C2766.cpp
 // compile with: /c
 template<class T>

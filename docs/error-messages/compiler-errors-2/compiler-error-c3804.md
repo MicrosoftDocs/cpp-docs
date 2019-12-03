@@ -17,7 +17,7 @@ See [property](../../extensions/property-cpp-component-extensions.md) for more i
 
 The following sample generates C3804.
 
-```
+```cpp
 // C3804.cpp
 // compile with: /c /clr
 ref struct A {

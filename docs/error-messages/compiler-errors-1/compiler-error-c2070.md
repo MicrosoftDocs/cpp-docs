@@ -13,7 +13,7 @@ The [sizeof](../../cpp/sizeof-operator.md) operator requires an expression or ty
 
 The following sample generates C2070:
 
-```
+```cpp
 // C2070.cpp
 void func() {}
 int main() {
@@ -24,7 +24,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2070b.cpp
 void func() {}
 int main() {

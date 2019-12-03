@@ -13,7 +13,7 @@ If you use a `dispinterface` method, you must assign it a `dispid`. To fix this 
 
 The following sample generates C3707:
 
-```
+```cpp
 // C3707.cpp
 #include <atlbase.h>
 #include <atlcom.h>

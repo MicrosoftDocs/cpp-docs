@@ -15,7 +15,7 @@ The function is not declared in the specified class.
 
 The following sample generates C2509.
 
-```
+```cpp
 // C2509.cpp
 // compile with: /c
 struct A {

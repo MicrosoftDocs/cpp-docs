@@ -13,7 +13,7 @@ The initialization of `identifier` can be skipped in a `switch` statement. You c
 
 The following sample generates C2361:
 
-```
+```cpp
 // C2361.cpp
 void func( void ) {
    int x;
@@ -29,7 +29,7 @@ void func( void ) {
 
 Possible resolution:
 
-```
+```cpp
 // C2361b.cpp
 // compile with: /c
 void func( void ) {

@@ -21,7 +21,7 @@ Inline assembly code incorrectly uses a segment override operator (colon) on an 
 
 The following sample generates C2422:
 
-```
+```cpp
 // C2422.cpp
 // processor: x86
 int main() {

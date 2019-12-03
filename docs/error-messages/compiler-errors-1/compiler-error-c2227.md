@@ -13,7 +13,7 @@ The operand to the left of `->` is not a pointer to a class, structure, or union
 
 The following sample generates C2227:
 
-```
+```cpp
 // C2227.cpp
 int *pInt;
 struct S {

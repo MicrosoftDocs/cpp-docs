@@ -15,7 +15,7 @@ For more information, see [array](../../extensions/arrays-cpp-component-extensio
 
 The following sample generates C2728 and shows how to fix it:
 
-```
+```cpp
 // C2728.cpp
 // compile with: /clr
 

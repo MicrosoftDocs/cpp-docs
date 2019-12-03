@@ -13,7 +13,7 @@ The compiler does not allow explicit instantiation of generic classes.
 
 The following sample generates C3236:
 
-```
+```cpp
 // C3236.cpp
 // compile with: /clr
 generic<class T>
@@ -24,7 +24,7 @@ generic ref class X<int>;   // C3236
 
 The following sample demonstrates a possible resolution:
 
-```
+```cpp
 // C3236b.cpp
 // compile with: /clr /c
 generic<class T>

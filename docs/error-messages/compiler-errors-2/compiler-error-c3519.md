@@ -15,7 +15,7 @@ The only parameters that are allowed for `embedded_idl` are `emitidl` and `no_em
 
 The following sample generates C3519:
 
-```
+```cpp
 // C3519.cpp
 // compile with: /LD
 [module(name="MyLib2")];

@@ -15,7 +15,7 @@ A generic class cannot inherit from a generic type parameter.
 
 The following sample generates C3234.
 
-```
+```cpp
 // C3234.cpp
 // compile with: /clr /c
 generic <class T>

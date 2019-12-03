@@ -17,7 +17,7 @@ For more information, see [Explicit Overrides](../../extensions/explicit-overrid
 
 The following sample generates C3668.
 
-```
+```cpp
 // C3668.cpp
 // compile with: /c
 __interface I {

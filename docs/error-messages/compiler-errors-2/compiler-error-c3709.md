@@ -13,7 +13,7 @@ When you specify an event source with [__hook](../../cpp/hook.md) or [__unhook](
 
 The following sample generates C3709:
 
-```
+```cpp
 // C3709.cpp
 // compile with: /LD
 [event_source(native)]

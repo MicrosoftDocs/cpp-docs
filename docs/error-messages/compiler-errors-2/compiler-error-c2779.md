@@ -13,7 +13,7 @@ The `property` extended attribute is incorrectly applied to a static data member
 
 The following sample generates C2779:
 
-```
+```cpp
 // C2779.cpp
 struct A {
    static __declspec(property(put=PutProp))

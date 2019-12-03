@@ -13,7 +13,7 @@ The `#elif` directive appears outside an `#if`, `#ifdef`, or `#ifndef` construct
 
 The following sample generates C1018:
 
-```
+```cpp
 // C1018.cpp
 #elif      // C1018
 #endif
@@ -23,7 +23,7 @@ int main() {}
 
 Possible resolution:
 
-```
+```cpp
 // C1018b.cpp
 #if 1
 #elif

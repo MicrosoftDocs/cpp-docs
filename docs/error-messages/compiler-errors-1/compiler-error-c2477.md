@@ -13,7 +13,7 @@ A static data member of a template class was initialized incorrectly. This is a 
 
 The following sample generates C2477:
 
-```
+```cpp
 // C2477.cpp
 // compile with: /Za /c
 template <class T>

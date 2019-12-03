@@ -13,7 +13,7 @@ A negative number was passed to the **FieldOffset** attribute.
 
 The following sample generates C3271:
 
-```
+```cpp
 // C3271.cpp
 // compile with: /clr /c
 using namespace System;

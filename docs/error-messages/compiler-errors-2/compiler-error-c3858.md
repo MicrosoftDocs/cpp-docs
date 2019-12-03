@@ -13,7 +13,7 @@ The type cannot be declared twice in the same scope.
 
 The following sample generates C3858:
 
-```
+```cpp
 // C3858.cpp
 // compile with: /LD
 template <class T>

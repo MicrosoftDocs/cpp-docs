@@ -13,7 +13,7 @@ A function whose return value is a pointer is the only construct to which `modif
 
 The following sample generates C2710:
 
-```
+```cpp
 // C2710.cpp
 __declspec(restrict) void f();   // C2710
 // try the following line instead

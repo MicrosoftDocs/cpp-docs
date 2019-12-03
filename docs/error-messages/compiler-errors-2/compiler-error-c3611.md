@@ -15,7 +15,7 @@ A sealed function was declared incorrectly.  For more information, see [sealed](
 
 The following sample generates C3611.
 
-```
+```cpp
 // C3611.cpp
 // compile with: /clr /c
 

@@ -13,7 +13,7 @@ This error can be caused by a template defined inside an `extern` "C" block.
 
 The following sample generates C2894:
 
-```
+```cpp
 // C2894.cpp
 extern "C" {
    template<class T> class stack {};   // C2894 fail
@@ -24,7 +24,7 @@ extern "C" {
 
 The following sample generates C2894:
 
-```
+```cpp
 // C2894b.cpp
 // compile with: /c
 extern "C" template<class T> void f(const T &aT) {}   // C2894

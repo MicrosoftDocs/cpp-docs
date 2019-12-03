@@ -13,7 +13,7 @@ The compiler cannot determine a template argument. Default arguments cannot be u
 
 The following sample generates C2783:
 
-```
+```cpp
 // C2783.cpp
 template<typename T1, typename T2>
 T1 f(T2) {
@@ -29,7 +29,7 @@ int main() {
 
 C2783 can also occur when using generics:
 
-```
+```cpp
 // C2783b.cpp
 // compile with: /clr
 using namespace System;

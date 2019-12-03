@@ -17,7 +17,7 @@ For more information, see [Implicitly abstract classes](../../dotnet/how-to-defi
 
 The following sample generates C2259:
 
-```
+```cpp
 // C2259.cpp
 // compile with: /c
 class V {
@@ -46,7 +46,7 @@ C2259 can also occur as a result of conformance work that was done in Visual Stu
 
 The following sample generates C2259:
 
-```
+```cpp
 // C2259b.cpp
 // compile with: /c
 #include <windows.h>
@@ -84,7 +84,7 @@ MyClass4 y;
 
 The following sample generates C2259:
 
-```
+```cpp
 // C2259c.cpp
 // compile with: /clr
 interface class MyInterface {

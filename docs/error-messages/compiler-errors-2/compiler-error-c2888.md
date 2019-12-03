@@ -13,7 +13,7 @@ A symbol belonging to namespace A must be defined in a namespace that encloses A
 
 The following sample generates C2888:
 
-```
+```cpp
 // C2888.cpp
 // compile with: /c
 namespace M {

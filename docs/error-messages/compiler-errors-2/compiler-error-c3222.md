@@ -13,7 +13,7 @@ It is not permitted to declare a method parameter with a default argument. An ov
 
 The following sample generates C3222:
 
-```
+```cpp
 // C3222_2.cpp
 // compile with: /clr
 public ref class G {

@@ -13,7 +13,7 @@ A character appears after the last base or member in an initializer list.
 
 The following sample generates C2612:
 
-```
+```cpp
 // C2612.cpp
 class A {
 public:

@@ -13,7 +13,7 @@ A managed object was declared incorrectly.
 
 The following sample generates C3698:
 
-```
+```cpp
 // C3698.cpp
 // compile with: /clr
 

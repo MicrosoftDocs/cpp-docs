@@ -13,7 +13,7 @@ You tried to create a namespace alias, but the name you chose already exists.
 
 The following sample generates C2386:
 
-```
+```cpp
 // C2386.cpp
 namespace A {
    int k;

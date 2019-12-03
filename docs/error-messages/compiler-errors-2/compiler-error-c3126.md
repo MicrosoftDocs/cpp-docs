@@ -13,7 +13,7 @@ A union cannot be defined inside a managed type.
 
 The following sample generates C3126:
 
-```
+```cpp
 // C3126_2.cpp
 // compile with: /clr /c
 ref class Test

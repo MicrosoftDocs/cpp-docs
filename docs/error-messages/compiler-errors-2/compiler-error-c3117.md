@@ -13,7 +13,7 @@ You declared an interface that inherits from multiple base classes.
 
 The following sample generates C3117:
 
-```
+```cpp
 // C3117.cpp
 #include <windows.h>
 

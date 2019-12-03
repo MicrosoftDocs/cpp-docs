@@ -13,7 +13,7 @@ Static member functions should be declared with external linkage.
 
 The following sample generates C2724:
 
-```
+```cpp
 // C2724.cpp
 class C {
    static void func();

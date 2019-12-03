@@ -13,7 +13,7 @@ The compiler encountered an invalid type.
 
 The following sample generates C3229:
 
-```
+```cpp
 // C3239.cpp
 // compile with: /clr
 int main() {

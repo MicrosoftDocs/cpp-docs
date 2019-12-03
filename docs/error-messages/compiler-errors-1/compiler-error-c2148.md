@@ -15,7 +15,7 @@ An array exceeds the limit. Reduce the size of the array.
 
 The following sample generates C2148:
 
-```
+```cpp
 // C2148.cpp
 #include <stdio.h>
 #include <stdlib.h>

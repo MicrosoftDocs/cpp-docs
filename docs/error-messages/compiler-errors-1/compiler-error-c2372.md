@@ -13,7 +13,7 @@ The identifier is already defined with a different derived type.
 
 The following sample generates C2326:
 
-```
+```cpp
 // C2372.cpp
 // compile with: /c
 extern int *fp;

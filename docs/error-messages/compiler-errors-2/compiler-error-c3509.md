@@ -13,7 +13,7 @@ A method in a COM interface must return either void or an HRESULT.
 
 The following sample generates C3509:
 
-```
+```cpp
 // C3509.cpp
 #define _ATL_DEBUG_QI
 

@@ -15,7 +15,7 @@ Destructors or finalizers cannot be explicitly overridden. For more information,
 
 The following sample generates C3657.
 
-```
+```cpp
 // C3657.cpp
 // compile with: /clr
 public ref struct I {

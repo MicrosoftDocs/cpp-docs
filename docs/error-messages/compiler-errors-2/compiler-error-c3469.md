@@ -17,7 +17,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 The following sample creates a component.
 
-```
+```cpp
 // C3469.cpp
 // compile with: /clr /LD
 generic<typename T>
@@ -30,7 +30,7 @@ public ref class GR2 {};
 
 The following sample generates C3466.
 
-```
+```cpp
 // C3469_b.cpp
 // compile with: /clr /c
 #using "C3469.dll"

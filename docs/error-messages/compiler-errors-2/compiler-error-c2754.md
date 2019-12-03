@@ -13,7 +13,7 @@ An attempt was made to partially specialize a template class that has a dependen
 
 The following sample generates C2754:
 
-```
+```cpp
 // C2754.cpp
 // compile with: /c
 

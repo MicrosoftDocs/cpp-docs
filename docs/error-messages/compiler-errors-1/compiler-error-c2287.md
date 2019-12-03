@@ -13,7 +13,7 @@ A class is declared with a simpler representation than required.
 
 The following sample generates C2287:
 
-```
+```cpp
 // C2287.cpp
 // compile with: /vmg /c
 class __single_inheritance X;

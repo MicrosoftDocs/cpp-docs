@@ -13,7 +13,7 @@ A class, structure, or union uses a fully qualified name to redeclare a member o
 
 The following sample generates C2838:
 
-```
+```cpp
 // C2838.cpp
 // compile with: /c
 class Bellini {

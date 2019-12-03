@@ -27,7 +27,7 @@ Possible C2801 causes:
 
 - The following sample generates C2801:
 
-```
+```cpp
 // C2801.cpp
 // compile with: /c
 operator[]();   // C2801 not a member

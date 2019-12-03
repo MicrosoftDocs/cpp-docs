@@ -13,14 +13,14 @@ No identifier appears after a `#define`. To resolve the error, use an identifier
 
 The following sample generates C2007:
 
-```
+```cpp
 // C2007.cpp
 #define   // C2007
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C2007b.cpp
 // compile with: /c
 #define true 1

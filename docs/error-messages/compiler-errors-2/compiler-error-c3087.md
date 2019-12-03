@@ -15,7 +15,7 @@ A named argument was specified in the same attribute block as an unnamed argumen
 
 The following sample generates C3087.
 
-```
+```cpp
 // C3087.cpp
 // compile with: /c
 [idl_quote("quote1", text="quote2")];   // C3087

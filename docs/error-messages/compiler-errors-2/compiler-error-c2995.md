@@ -13,7 +13,7 @@ Make sure that there is only one definition for each member function of a templa
 
 The following sample generates C2995:
 
-```
+```cpp
 // C2995.cpp
 // compile with: /c
 template <class T>

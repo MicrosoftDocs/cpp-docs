@@ -17,7 +17,7 @@ To fix this issue, understand the intended storage class of the identifier—for
 
 The following sample generates C2071.
 
-```
+```cpp
 // C2071.cpp
 // compile with: /c
 struct C {
@@ -32,7 +32,7 @@ struct D {
 
 The following sample generates C2071.
 
-```
+```cpp
 // C2071_b.cpp
 // compile with: /c
 typedef int x(int i) { return i; }   // C2071

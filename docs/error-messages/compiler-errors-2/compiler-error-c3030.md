@@ -13,7 +13,7 @@ You can only pass value parameters to certain clauses, such as the reduction cla
 
 The following sample generates C3030:
 
-```
+```cpp
 // C3030.cpp
 // compile with: /openmp /link vcomps.lib
 #include "omp.h"

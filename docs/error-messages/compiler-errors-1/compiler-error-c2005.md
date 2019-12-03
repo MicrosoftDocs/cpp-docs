@@ -13,7 +13,7 @@ The `#line` directive must be followed by a line number.
 
 The following sample generates C2005:
 
-```
+```cpp
 // C2005.cpp
 int main() {
    int i = 0;
@@ -23,7 +23,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2005b.cpp
 int main() {
    int i = 0;

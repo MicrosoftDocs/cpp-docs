@@ -13,7 +13,7 @@ A template member function definition has an unmatched closing brace.
 
 The following sample generates C2969:
 
-```
+```cpp
 // C2969.cpp
 // compile with: /c
 class A {

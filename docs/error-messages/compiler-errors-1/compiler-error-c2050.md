@@ -13,7 +13,7 @@ The `switch` expression evaluates to a noninteger value. To resolve the error, u
 
 The following sample generates C2050:
 
-```
+```cpp
 // C2050.cpp
 int main() {
    int a = 1;
@@ -28,7 +28,7 @@ int main() {
 
 Possible resolution:
 
-```
+```cpp
 // C2050b.cpp
 int main() {
    int a = 1;

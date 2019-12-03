@@ -13,7 +13,7 @@ ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
 
 The following sample generates C2389:
 
-```
+```cpp
 // C2389.cpp
 // compile with: /clr
 int main() {

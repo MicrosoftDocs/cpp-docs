@@ -13,7 +13,7 @@ A variable of the wrong type was passed to a reduction clause.
 
 The following sample generates C3031:
 
-```
+```cpp
 // C3031.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

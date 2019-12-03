@@ -13,14 +13,14 @@ The `#endif` directive has no matching `#if`, `#ifdef`, or `#ifndef` directive. 
 
 The following sample generates C1020:
 
-```
+```cpp
 // C1020.cpp
 #endif     // C1020
 ```
 
 Possible resolution:
 
-```
+```cpp
 // C1020b.cpp
 // compile with: /c
 #if 1

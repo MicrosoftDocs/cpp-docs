@@ -13,7 +13,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) data member wa
 
 The following sample generates C3896:
 
-```
+```cpp
 // C3896.cpp
 // compile with: /clr /c
 ref class R{};

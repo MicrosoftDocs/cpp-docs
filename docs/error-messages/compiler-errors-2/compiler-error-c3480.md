@@ -19,7 +19,7 @@ The lambda capture variable is not from an enclosing function scope.
 
 The following example generates C3480 because the variable `global` is not from an enclosing function scope:
 
-```
+```cpp
 // C3480a.cpp
 
 int global = 0;
@@ -33,7 +33,7 @@ int main()
 
 The following example resolves C3480 by removing the variable `global` from the capture list of the lambda expression:
 
-```
+```cpp
 // C3480b.cpp
 
 int global = 0;

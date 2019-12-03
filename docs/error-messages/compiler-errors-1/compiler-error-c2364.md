@@ -15,7 +15,7 @@ Named arguments for custom attributes are limited to compile time constants. For
 
 The following sample generates C2364.
 
-```
+```cpp
 // c2364.cpp
 // compile with: /clr /c
 using namespace System;

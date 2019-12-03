@@ -19,7 +19,7 @@ The compiler could not find the definition of a variable that you passed to the 
 
 The following example generates C3481 because the variable `n` is not defined:
 
-```
+```cpp
 // C3481.cpp
 
 int main()

@@ -13,7 +13,7 @@ The [idl_module](../../windows/idl-module.md) usage where you define the DLL can
 
 The following sample generates C3369:
 
-```
+```cpp
 // C3369.cpp
 // compile with: /c
 [idl_module(name="name1", dllname="x.dll")]; // C3369

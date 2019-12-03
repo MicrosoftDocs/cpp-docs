@@ -17,7 +17,7 @@ To resolve, initialize the initonly data member in the constructor, but outside 
 
 The following sample generates C3899.
 
-```
+```cpp
 // C3899.cpp
 // compile with: /clr /openmp
 #include <omp.h>

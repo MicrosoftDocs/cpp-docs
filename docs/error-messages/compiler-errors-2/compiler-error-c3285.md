@@ -17,7 +17,7 @@ See [for each, in](../../dotnet/for-each-in.md) for more information.
 
 The following sample generates C3285.
 
-```
+```cpp
 // C3285.cpp
 // compile with: /clr
 int main() {
