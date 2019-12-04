@@ -46,7 +46,7 @@ The *excepts* argument may be zero, one of the exception macro values, or the bi
 
 To use this function, you must turn off floating-point optimizations that could prevent access by using the `#pragma fenv_access(on)` directive prior to the call. For more information, see [fenv_access](../../preprocessor/fenv-access.md).
 
-**Microsoft Specific:** The exceptions specified in *excepts* are raised in the order FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. However, FE_INEXACT can be raised when FE_OVERFLOW or FE_UNDERFLOW is raised, even if not specified in *excepts*. **End Microsoft Specific**
+**Microsoft-specific:** The exceptions specified in *excepts* are raised in the order FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT. However, FE_INEXACT can be raised when FE_OVERFLOW or FE_UNDERFLOW is raised, even if not specified in *excepts*.
 
 ## Requirements
 

@@ -1,9 +1,9 @@
 ---
-title: "Microsoft-Specific Modifiers"
+title: "Microsoft-specific modifiers"
 ms.date: "08/16/2018"
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
 ---
-# Microsoft-Specific Modifiers
+# Microsoft-specific modifiers
 
 This section describes Microsoft-specific extensions to C++ in the following areas:
 
@@ -15,7 +15,7 @@ This section describes Microsoft-specific extensions to C++ in the following are
 
 - The [__w64](w64.md) keyword
 
-## Microsoft-Specific Keywords
+## Microsoft-specific keywords
 
 Many of the Microsoft-specific keywords can be used to modify declarators to form derived types. For more information about declarators, see [Declarators](overview-of-declarators.md).
 

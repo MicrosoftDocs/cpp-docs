@@ -33,6 +33,8 @@ int main() {
 }
 ```
 
+**END Microsoft Specific**
+
 ## See also
 
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)\

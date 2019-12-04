@@ -54,7 +54,7 @@ The **nextafter** and **nexttoward** function families are equivalent, except fo
 
 Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **float** and **long** **double** types. In a C program, **nextafter** and **nexttoward** always return **double**.
 
-The **_nextafter** and **_nextafterf** functions are Microsoft specific. The **_nextafterf** function is only available when compiling for x64.
+The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 
 ## Requirements
 

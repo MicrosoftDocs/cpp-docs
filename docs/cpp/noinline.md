@@ -7,7 +7,7 @@ ms.assetid: f259d55b-dec7-4bde-8cf9-14521e4fdc42
 ---
 # noinline
 
-## Microsoft Specific
+**Microsoft Specific**
 
 **__declspec(noinline)** tells the compiler to never inline a particular member function (function in a class).
 

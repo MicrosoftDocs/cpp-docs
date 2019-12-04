@@ -7,9 +7,7 @@ ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
 ---
 # __stdcall
 
-**Microsoft Specific**
-
-The **__stdcall** calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes `vararg` functions **__cdecl**. Functions that use this calling convention require a function prototype.
+The **__stdcall** calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes `vararg` functions **__cdecl**. Functions that use this calling convention require a function prototype. The **__stdcall** modifier is Microsoft-specific.
 
 ## Syntax
 

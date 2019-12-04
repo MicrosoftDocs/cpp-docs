@@ -13,7 +13,7 @@ Arguments are names of values passed to a function by a function call. Parameter
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq* is Microsoft Specific \*/
+/\* *attribute-seq* is Microsoft-specific \*/
 
 *declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*

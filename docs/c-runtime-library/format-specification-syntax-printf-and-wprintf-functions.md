@@ -34,12 +34,12 @@ A basic conversion specification contains only the percent sign and a *type* cha
 
 The *type* conversion specifier character specifies whether to interpret the corresponding argument as a character, a string, a pointer, an integer, or a floating-point number. The *type* character is the only required conversion specification field, and it appears after any optional fields.
 
-The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types `char` and `wchar_t` are specified by using **c** or **C**, and single-byte and multi-byte or wide character strings are specified by using **s** or **S**, depending on which formatting function is being used. Character and string arguments that are specified by using **c** and **s** are interpreted as `char` and `char*` by `printf` family functions, or as `wchar_t` and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using **C** and **S** are interpreted as `wchar_t` and `wchar_t*` by `printf` family functions, or as `char` and `char*` by `wprintf` family functions. This behavior is Microsoft specific.
+The arguments that follow the format string are interpreted according to the corresponding *type* character and the optional [size](#size) prefix. Conversions for character types `char` and `wchar_t` are specified by using **c** or **C**, and single-byte and multi-byte or wide character strings are specified by using **s** or **S**, depending on which formatting function is being used. Character and string arguments that are specified by using **c** and **s** are interpreted as `char` and `char*` by `printf` family functions, or as `wchar_t` and `wchar_t*` by `wprintf` family functions. Character and string arguments that are specified by using **C** and **S** are interpreted as `wchar_t` and `wchar_t*` by `printf` family functions, or as `char` and `char*` by `wprintf` family functions. This behavior is Microsoft-specific.
 
 Integer types such as `short`, `int`, `long`, `long long`, and their `unsigned` variants, are specified by using **d**, **i**, **o**, **u**, **x**, and **X**. Floating-point types such as `float`, `double`, and `long double`, are specified by using **a**, **A**, **e**, **E**, **f**, **F**, **g**, and **G**. By default, unless they are modified by a *size* prefix, integer arguments are coerced to `int` type, and floating-point arguments are coerced to `double`. On 64-bit systems, an `int` is a 32-bit value; therefore, 64-bit integers will be truncated when they are formatted for output unless a *size* prefix of **ll** or **I64** is used. Pointer types that are specified by **p** use the default pointer size for the platform.
 
 > [!NOTE]
-> **Microsoft Specific**
+> **Microsoft-specific:**
 > The **Z** type character, and the behavior of the **c**, **C**, **s**, and  **S** type characters when they are used with the `printf` and `wprintf` functions, are Microsoft extensions. The ISO C standard uses **c** and **s** consistently for narrow characters and strings, and **C** and **S** for wide characters and strings, in all formatting functions.
 
 ### Type field characters
@@ -193,7 +193,7 @@ In Visual C++, although `long double` is a distinct type, it has the same intern
 An **hc** or **hC** type specifier is synonymous with **c** in `printf` functions and with **C** in `wprintf` functions. An **lc**, **lC**, **wc**, or **wC** type specifier is synonymous with **C** in `printf` functions and with **c** in `wprintf` functions. An **hs** or **hS** type specifier is synonymous with **s** in `printf` functions and with **S** in `wprintf` functions. An **ls**, **lS**, **ws** or **wS** type specifier is synonymous with **S** in `printf` functions and with **s** in `wprintf` functions.
 
 > [!NOTE]
-> **Microsoft Specific**
+> **Microsoft-specific:**
 > The **I** (uppercase i), **I32**, **I64**, and **w** argument size modifier prefixes are Microsoft extensions and are not ISO C-compatible. The **h** prefix when it's used with data of type `char` and the **l** (lowercase L) prefix when it's used with data of type `double` are Microsoft extensions.
 
 ## See also
