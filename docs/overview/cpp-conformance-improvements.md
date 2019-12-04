@@ -519,7 +519,7 @@ In conformance mode (enabled by [/permissive-](../build/reference/permissive-sta
 
 This can lead to different warning diagnostics being generated, and behavior differences for arithmetic operations performed on literals.
 
-The following example shows the behavior prior to Visual Studio 2019, version 16.4. The `i` variable is of type **unsigned int** and therefore the warning is raised. The high-order bits of the variable `j` are set to 0.
+The following example shows the new behavior in Visual Studio 2019, version 16.4. The `i` variable is of type **unsigned int** and therefore the warning is raised. The high-order bits of the variable `j` are set to 0.
 
 ```cpp
 void f(int r) {
@@ -528,7 +528,7 @@ void f(int r) {
 }
 ```
 
-The following example demonstrates the new behavior:
+The following example demonstrates how to keep the old behavior and thus avoid the warnings and run-time behavior change:
 
 ```cpp
 void f(int r) {
@@ -546,7 +546,7 @@ template<typename T>
 void f(T* buffer, int size, int& size_read);
 
 template<typename T, int Size>
-void f(T(&buffer)[Size], int& Size) //C7576: declaration of 'Size' shadows a template parameter
+void f(T(&buffer)[Size], int& Size) // error C7576: declaration of 'Size' shadows a template parameter
 {
     return f(buffer, Size, Size);
 }
@@ -595,9 +595,11 @@ struct my_is_fundamental<S> : std::true_type { };
 static_assert(my_is_fundamental<S>::value, "fail");
 ```
 
-### Expressions with operator==
+### Changes to compiler-provided comparison operators
 
-In compliance with *over.match/9* the compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+The MSVC compiler now implements the following changes to comparison operators per [P1630R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/p1630r1.html) when the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) option is enabled:
+
+The compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
 
 ```cpp
 struct U {
@@ -630,9 +632,7 @@ bool neq(const S& lhs, const S& rhs) {
 }
 ```
 
-### Defaulted comparison operator in union-like classes
-
-In compliance with *class.compare.default/2* the compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+The compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
@@ -664,9 +664,7 @@ bool lt(const S& lhs, const S& rhs) {
 }
 ```
 
-### Defaulted comparison operator for classes with a reference member
-
-In compliance with *class.compare.default/2* the compiler will no longer define a defaulted comparison operator if the class contains a reference member. The following code now produces *error C2120: 'void' illegal with all types*:
+The compiler will no longer define a defaulted comparison operator if the class contains a reference member. The following code now produces *error C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
