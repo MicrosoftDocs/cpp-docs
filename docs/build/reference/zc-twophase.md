@@ -59,7 +59,7 @@ int main()
 }
 ```
 
-When compiled in conformance mode under **/permissive-**, this program prints "`Standard two-phase`", because the second overload of `func` isn't visible when the compiler encounters the template. If you add **/Zc:twoPhase-**, the program prints "`Microsoft one-phase`".
+When compiled in conformance mode under **/permissive-**, this program prints "`Standard two-phase`", because the second overload of `func` isn't visible when the compiler encounters the template. If you add **/Zc:twoPhase-**, the program prints "`Microsoft one-phase`". The output is the same as when you don't specify **/permissive-**.
 
 *Dependent names* are names that depend on a template parameter. These names have lookup behavior that is also different under **/Zc:twoPhase-**. In conformance mode, dependent names aren't bound at the point of the template's definition. Instead, the compiler looks them up when it instantiates the template.
 
@@ -72,6 +72,7 @@ Here's another example:
 ```cpp
 // zctwophase1.cpp
 // Compile by using
+// cl /EHsc /W4 zctwophase1.cpp
 // cl /EHsc /W4 /permissive- zctwophase1.cpp
 // cl /EHsc /W4 /permissive- /Zc:twoPhase- zctwophase1.cpp
 
@@ -95,6 +96,13 @@ int main() {
     NS::S s;
     tfunc(s);
 }
+```
+
+When compiled without **/permissive-**, this code prints:
+
+```Output
+func(int)
+NS::func(NS::S)
 ```
 
 When compiled with **/permissive-**, but without **/Zc:twoPhase-**, this code prints:
