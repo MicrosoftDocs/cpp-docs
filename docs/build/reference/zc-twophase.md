@@ -42,6 +42,12 @@ Another effect of this behavior is in overload resolution. Non-standard side-eff
 For example, consider this code:
 
 ```cpp
+// zctwophase.cpp
+// To test options, compile by using
+// cl /EHsc /W4 zctwophase.cpp
+// cl /EHsc /W4 /permissive- zctwophase.cpp
+// cl /EHsc /W4 /permissive- /Zc:twoPhase- zctwophase.cpp
+
 #include <cstdio>
 
 void func(long) { std::puts("Standard two-phase") ;}
@@ -71,7 +77,7 @@ Here's another example:
 
 ```cpp
 // zctwophase1.cpp
-// Compile by using
+// To test options, compile by using
 // cl /EHsc /W4 zctwophase1.cpp
 // cl /EHsc /W4 /permissive- zctwophase1.cpp
 // cl /EHsc /W4 /permissive- /Zc:twoPhase- zctwophase1.cpp
@@ -119,7 +125,7 @@ func(int)
 NS::func(NS::S)
 ```
 
-In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to the `void func(long)` overload, not `void func(int)` overload as under **/Zc:twoPhase-**, because the unqualified `func(int)` is declared after the definition of the template and not found through argument-dependent lookup. But `void func(S)` does participate in argument-dependent lookup, so it's added to the overload set for the call `tfunc(s)`, even though it's declared after the template function.
+In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to the `void func(long)` overload, not `void func(int)` overload as under **/Zc:twoPhase-**, because the unqualified `func(int)` is declared after the definition of the template, and not found through argument-dependent lookup. But `void func(S)` does participate in argument-dependent lookup, so it's added to the overload set for the call `tfunc(s)`, even though it's declared after the template function.
 
 ### Update your code for two-phase conformance
 
