@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2066"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2066"]
 helpviewer_keywords: ["A2066"]
 ms.assetid: 58220fdf-fb8f-47fc-a36d-737867361185
