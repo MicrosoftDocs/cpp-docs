@@ -135,7 +135,7 @@ typename T::TYPE func(typename T::TYPE*)
 }
 ```
 
-If you don't use the keyword `typename` in the function body, this code compiles under **/permissive- /Zc:twoPhase-**, but not under **/permissive-** alone. The `typename` keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the `typename` keyword generates errors. To migrate your code to Visual Studio 2017 version 15.3 and beyond, insert the `typename` keyword where it's missing.
+If you don't use the keyword `typename` in the function body, this code compiles under **/permissive- /Zc:twoPhase-**, but not under **/permissive-** alone. The `typename` keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the `typename` keyword generates errors. To migrate your code to conformance in Visual Studio 2017 version 15.3 and beyond, insert the `typename` keyword where it's missing.
 
 Similarly, consider this code sample:
 
