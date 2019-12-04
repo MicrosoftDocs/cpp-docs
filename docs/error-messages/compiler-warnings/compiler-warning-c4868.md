@@ -2,6 +2,7 @@
 title: "Compiler Warning C4868"
 ms.date: "10/26/2017"
 f1_keywords: ["C4868"]
+helpviewer_keywords: ["C4868"]
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 ---
 # Compiler Warning (level 4) C4868
