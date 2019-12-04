@@ -15,7 +15,7 @@ The **/Zc:twoPhase-** option, under **/permissive-**, tells the compiler to use 
 
 ## Remarks
 
-In Visual Studio 2017 version 15.3 and later, under [/permissive-](permissive-standards-conformance.md), the compiler uses two-phase name lookup for template name resolution. If you also specify **/Zc:twoPhase-**, the compiler reverts to its previous non-conforming class template and function template name resolution and substitution behavior. When **/permissive-** isn't specified, the non-conforming behavior is the default.
+Visual Studio 2017 version 15.3 and later: Under [/permissive-](permissive-standards-conformance.md), the compiler uses two-phase name lookup for template name resolution. If you also specify **/Zc:twoPhase-**, the compiler reverts to its previous non-conforming class template and function template name resolution and substitution behavior. When **/permissive-** isn't specified, the non-conforming behavior is the default.
 
 The Windows SDK header files in version 10.0.15063.0 (Creators Update or Redstone 2) and earlier versions don't work correctly in conformance mode. **/Zc:twoPhase-** is required to compile code for those SDK versions when you use **/permissive-** in Visual Studio 2017 version 15.3 and later versions. Versions of the Windows SDK starting with version 10.0.15254.0 (Redstone 3 or Fall Creators Update) work correctly in conformance mode and don't require the **/Zc:twoPhase-** option.
 
@@ -44,9 +44,9 @@ For example, consider this code:
 ```cpp
 // zctwophase.cpp
 // To test options, compile by using
-// cl /EHsc /W4 zctwophase.cpp
-// cl /EHsc /W4 /permissive- zctwophase.cpp
-// cl /EHsc /W4 /permissive- /Zc:twoPhase- zctwophase.cpp
+// cl /EHsc /nologo /W4 zctwophase.cpp
+// cl /EHsc /nologo /W4 /permissive- zctwophase.cpp
+// cl /EHsc /nologo /W4 /permissive- /Zc:twoPhase- zctwophase.cpp
 
 #include <cstdio>
 
@@ -65,11 +65,25 @@ int main()
 }
 ```
 
+```cmd
+C:\Temp>cl /EHsc /nologo /W4 zctwophase.cpp && zctwophase
+zctwophase.cpp
+Microsoft one-phase
+
+C:\Temp>cl /EHsc /nologo /W4 /permissive- zctwophase.cpp && zctwophase
+zctwophase.cpp
+Standard two-phase
+
+C:\Temp>cl /EHsc /nologo /W4 /permissive- /Zc:twoPhase- zctwophase.cpp && zctwophase
+zctwophase.cpp
+Microsoft one-phase
+```
+
 When compiled in conformance mode under **/permissive-**, this program prints "`Standard two-phase`", because the second overload of `func` isn't visible when the compiler encounters the template. If you add **/Zc:twoPhase-**, the program prints "`Microsoft one-phase`". The output is the same as when you don't specify **/permissive-**.
 
-*Dependent names* are names that depend on a template parameter. These names have lookup behavior that is also different under **/Zc:twoPhase-**. In conformance mode, dependent names aren't bound at the point of the template's definition. Instead, the compiler looks them up when it instantiates the template.
+*Dependent names* are names that depend on a template parameter. These names have lookup behavior that is also different under **/Zc:twoPhase-**. 
 
-For function calls with a dependent function name, the name binds to the set of functions visible at the point of the call in the template's definition, as above. Additional overloads from argument-dependent lookup are added, both at the point of the template definition, and at the point of template instantiation.
+In conformance mode, dependent names aren't bound at the point of the template's definition. Instead, the compiler looks them up when it instantiates the template. For function calls with a dependent function name, the name binds to functions visible at the call site in the template's definition. Additional overloads from argument-dependent lookup are added, both at the point of the template definition, and at the point of template instantiation.
 
 Two-phase lookup consists of the lookup for non-dependent names during template definition, and the lookup for dependent names during template instantiation. Under **/Zc:twoPhase-**, the compiler doesn't do argument-dependent lookup separately from ordinary, unqualified lookup. That is, it doesn't do two-phase lookup, so the results of overload resolution may be different.
 
@@ -125,7 +139,7 @@ func(int)
 NS::func(NS::S)
 ```
 
-In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to the `void func(long)` overload, not `void func(int)` overload as under **/Zc:twoPhase-**, because the unqualified `func(int)` is declared after the definition of the template, and not found through argument-dependent lookup. But `void func(S)` does participate in argument-dependent lookup, so it's added to the overload set for the call `tfunc(s)`, even though it's declared after the template function.
+In conformance mode under **/permissive-**, the call `tfunc(1729)` resolves to the `void func(long)` overload. It doesn't resolve to the `void func(int)` overload, as under **/Zc:twoPhase-**. That's because the unqualified `func(int)` is declared after the definition of the template, and it isn't found through argument-dependent lookup. But `void func(S)` does participate in argument-dependent lookup, so it's added to the overload set for the call `tfunc(s)`, even though it's declared after the template function.
 
 ### Update your code for two-phase conformance
 
