@@ -1,6 +1,8 @@
 ---
 title: "Compiler Warning (level 1) C4436"
 ms.date: "11/04/2016"
+f1_keywords: ["C4436"]
+helpviewer_keywords: ["C4436"]
 ms.assetid: 2b54a1fc-c9c6-4cc9-90be-faa44fc715d5
 ---
 # Compiler Warning (level 1) C4436
