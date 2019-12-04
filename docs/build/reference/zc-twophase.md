@@ -135,7 +135,7 @@ typename T::TYPE func(typename T::TYPE*)
 }
 ```
 
-If you don't use the keyword `typename` in the function body, this code compiles under **/Zc:twoPhase-**, but not under **/permissive-**. The `typename` keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the `typename` keyword generates errors. To migrate your code to Visual Studio 2017 version 15.3 and beyond, insert the `typename` keyword where it's missing.
+If you don't use the keyword `typename` in the function body, this code compiles under **/permissive- /Zc:twoPhase-**, but not under **/permissive-** alone. The `typename` keyword is required to indicate that the `TYPE` is dependent. Because the body isn't parsed under **/Zc:twoPhase-**, the compiler does't require the keyword. In **/permissive-** conformance mode, code without the `typename` keyword generates errors. To migrate your code to Visual Studio 2017 version 15.3 and beyond, insert the `typename` keyword where it's missing.
 
 Similarly, consider this code sample:
 
@@ -147,7 +147,7 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 }
 ```
 
-Under **/Zc:twoPhase-** and in older compilers, the compiler only requires the `template` keyword on line 2. By default, and in conformance mode, the compiler now also requires the `template` keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
+Under **/permissive- /Zc:twoPhase-** and in older compilers, the compiler only requires the `template` keyword on line 2. In conformance mode, the compiler now also requires the `template` keyword on line 4 to indicate that `T::X<T>` is a template. Look for code that is missing this keyword, and supply it to make your code conform to the standard.
 
 For more information about conformance issues, see [C++ conformance improvements in Visual Studio](../../overview/cpp-conformance-improvements.md) and [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
@@ -161,4 +161,4 @@ For more information about conformance issues, see [C++ conformance improvements
 
 ## See also
 
-[/Zc (Conformance)](zc-conformance.md)<br/>
+[/Zc (Conformance)](zc-conformance.md)
