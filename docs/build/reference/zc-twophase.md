@@ -7,7 +7,7 @@ helpviewer_keywords: ["twoPhase", "disable two-phase name lookup", "/Zc:twoPhase
 ---
 # /Zc:twoPhase- (disable two-phase name lookup)
 
-When you specify the **/Zc:twoPhase-** option along with **/permissive-**, the compiler parses and instantiates class templates and function templates in the same non-conforming way as previous compiler versions.
+The **/Zc:twoPhase-** option, under **/permissive-**, tells the compiler to use the original, non-conforming Microsoft C++ compiler behavior to parse and instantiate class templates and function templates.
 
 ## Syntax
 
