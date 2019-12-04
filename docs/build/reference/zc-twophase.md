@@ -17,7 +17,7 @@ The **/Zc:twoPhase-** option, under **/permissive-**, tells the compiler to use 
 
 Visual Studio 2017 version 15.3 and later: Under [/permissive-](permissive-standards-conformance.md), the compiler uses two-phase name lookup for template name resolution. If you also specify **/Zc:twoPhase-**, the compiler reverts to its previous non-conforming class template and function template name resolution and substitution behavior. When **/permissive-** isn't specified, the non-conforming behavior is the default.
 
-The Windows SDK header files in version 10.0.15063.0 (Creators Update or Redstone 2) and earlier versions don't work correctly in conformance mode. **/Zc:twoPhase-** is required to compile code for those SDK versions when you use **/permissive-** in Visual Studio 2017 version 15.3 and later versions. Versions of the Windows SDK starting with version 10.0.15254.0 (Redstone 3 or Fall Creators Update) work correctly in conformance mode and don't require the **/Zc:twoPhase-** option.
+The Windows SDK header files in version 10.0.15063.0 (Creators Update or RS2) and earlier don't work in conformance mode. **/Zc:twoPhase-** is required to compile code for those SDK versions when you use **/permissive-**. Versions of the Windows SDK starting with version 10.0.15254.0 (Fall Creators Update or RS3) work correctly in conformance mode. They don't require the **/Zc:twoPhase-** option.
 
 Use **/Zc:twoPhase-** if your code requires the old behavior to compile correctly. Strongly consider updating your code to conform to the standard.
 
@@ -37,7 +37,7 @@ By default, or in Visual Studio 2017 version 15.3 and later when you specify bot
 
 As a result, if the template body has syntax errors, but the template never gets instantiated, the compiler doesn't diagnose the errors.
 
-Another effect of this behavior is in overload resolution. Non-standard side-effects occur because of the way the token stream is expanded at the site of instantiation. Symbols that weren't visible at the template declaration may be visible at the point of instantiation, and participate in overload resolution. You may find templates change behavior based on code that wasn't visible at template definition, contrary to the standard.
+Another effect of this behavior is in overload resolution. Non-standard behavior occurs because of the way the token stream is expanded at the site of instantiation. Symbols that weren't visible at the template declaration may be visible at the point of instantiation. That means they can participate in overload resolution. You may find templates change behavior based on code that wasn't visible at template definition, contrary to the standard.
 
 For example, consider this code:
 
@@ -65,6 +65,8 @@ int main()
 }
 ```
 
+Here's the output when you use the default mode, conformance mode, and conformance mode with **/Zc:twoPhase-** compiler options:
+
 ```cmd
 C:\Temp>cl /EHsc /nologo /W4 zctwophase.cpp && zctwophase
 zctwophase.cpp
@@ -79,13 +81,11 @@ zctwophase.cpp
 Microsoft one-phase
 ```
 
-When compiled in conformance mode under **/permissive-**, this program prints "`Standard two-phase`", because the second overload of `func` isn't visible when the compiler encounters the template. If you add **/Zc:twoPhase-**, the program prints "`Microsoft one-phase`". The output is the same as when you don't specify **/permissive-**.
+When compiled in conformance mode under **/permissive-**, this program prints "`Standard two-phase`", because the second overload of `func` isn't visible when the compiler reaches the template. If you add **/Zc:twoPhase-**, the program prints "`Microsoft one-phase`". The output is the same as when you don't specify **/permissive-**.
 
-*Dependent names* are names that depend on a template parameter. These names have lookup behavior that is also different under **/Zc:twoPhase-**. 
+*Dependent names* are names that depend on a template parameter. These names have lookup behavior that is also different under **/Zc:twoPhase-**. In conformance mode, dependent names aren't bound at the point of the template's definition. Instead, the compiler looks them up when it instantiates the template. For function calls with a dependent function name, the name gets bound to functions visible at the call site in the template definition. Additional overloads from argument-dependent lookup are added, both at the point of the template definition, and at the point of template instantiation.
 
-In conformance mode, dependent names aren't bound at the point of the template's definition. Instead, the compiler looks them up when it instantiates the template. For function calls with a dependent function name, the name binds to functions visible at the call site in the template's definition. Additional overloads from argument-dependent lookup are added, both at the point of the template definition, and at the point of template instantiation.
-
-Two-phase lookup consists of the lookup for non-dependent names during template definition, and the lookup for dependent names during template instantiation. Under **/Zc:twoPhase-**, the compiler doesn't do argument-dependent lookup separately from ordinary, unqualified lookup. That is, it doesn't do two-phase lookup, so the results of overload resolution may be different.
+Two-phase lookup consists of two parts: The lookup for non-dependent names during template definition, and the lookup for dependent names during template instantiation. Under **/Zc:twoPhase-**, the compiler doesn't do argument-dependent lookup separately from unqualified lookup. That is, it doesn't do two-phase lookup, so the results of overload resolution may be different.
 
 Here's another example:
 
