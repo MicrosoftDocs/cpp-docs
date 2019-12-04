@@ -459,7 +459,7 @@ The non-standard headers \<stdexcpt.h> and \<typeinfo.h> have been removed. Code
 
 ### Better enforcement of two-phase name lookup for qualified-ids in /permissive-
 
-Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, such names may have been found when the template is instantiated. This change makes it easier to write portable, conformant code in MSVC under the [/permissive-](../build/permissive-standards-conformance.md) flag.
+Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, such names may have been found when the template is instantiated. This change makes it easier to write portable, conformant code in MSVC under the [/permissive-](../build/reference/permissive-standards-conformance.md) flag.
 
 In Visual Studio 2019 version 16.4, with the **/permissive-**  flag set, the following example produces an error because `N::f` is not visible when the `f<T>` template is defined:
 
@@ -515,7 +515,7 @@ int* f(bool* p) {
 
 ### Standard rules for types of integer literals
 
-In conformance mode (enabled by [/permissive-](../build/permissive-standards-conformance.md)), MSVC uses the standard rules for types of integer literals. Previously, decimal literals too large to fit in a signed 'int' were given type 'unsigned int'. Now such literals are given the next largest signed integer type, 'long long'. Additionally, literals with the 'll' suffix which are too large to fit in a signed type are given type 'unsigned long long'.
+In conformance mode (enabled by [/permissive-](../build/reference/permissive-standards-conformance.md)), MSVC uses the standard rules for types of integer literals. Previously, decimal literals too large to fit in a signed 'int' were given type 'unsigned int'. Now such literals are given the next largest signed integer type, 'long long'. Additionally, literals with the 'll' suffix which are too large to fit in a signed type are given type 'unsigned long long'.
 
 This can lead to different warning diagnostics being generated, and behavior differences for arithmetic operations performed on literals.
 
@@ -567,7 +567,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the [meta.rqmts]() subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
+In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
 
 ```cpp
 #include <type_traits>
@@ -597,7 +597,7 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 ### Expressions with operator==
 
-In compliance with [over.match]/9 the compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+In compliance with *over.match/9* the compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
 
 ```cpp
 struct U {
@@ -632,7 +632,7 @@ bool neq(const S& lhs, const S& rhs) {
 
 ### Defaulted comparison operator in union-like classes
 
-In compliance with [class.compare.default]/2 the compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+In compliance with *class.compare.default/2* the compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
@@ -666,7 +666,7 @@ bool lt(const S& lhs, const S& rhs) {
 
 ### Defaulted comparison operator for classes with a reference member
 
-In compliance with [class.compare.default]/2 the compiler will no longer define a defaulted comparison operator if the class contains a reference member. The following code now produces *error C2120: 'void' illegal with all types*:
+In compliance with *class.compare.default/2* the compiler will no longer define a defaulted comparison operator if the class contains a reference member. The following code now produces *error C2120: 'void' illegal with all types*:
 
 ```cpp
 #include <compare>
