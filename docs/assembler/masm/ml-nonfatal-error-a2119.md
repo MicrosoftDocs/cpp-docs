@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2119"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2119"]
 helpviewer_keywords: ["A2119"]
 ms.assetid: 4d4ee6da-3a58-495c-a1da-c3a405c4c18d

@@ -1,7 +1,7 @@
 ---
 title: "ML Warning A4012"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A4012"]
 helpviewer_keywords: ["A4012"]
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
