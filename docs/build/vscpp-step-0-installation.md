@@ -80,23 +80,23 @@ After the installer is installed, you can use it to customize your installation 
 > [!TIP]
 > At any time after installation, you can install workloads or components that you didn't install initially. If you have Visual Studio open, go to **Tools** > **Get Tools and Features...** which opens the Visual Studio Installer. Or, open **Visual Studio Installer** from the Start menu. From there, you can choose the workloads or components that you wish to install. Then, choose **Modify**.
 
-## Step 5 - Choose individual components (Optional)
+### Step 5 - Choose individual components (Optional)
 
 If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
 
   ![Visual Studio 2019 - Install individual components](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
 
-## Step 6 - Install language packs (Optional)
+### Step 6 - Install language packs (Optional)
 
 By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
 
   ![Visual Studio 2019 - Install language packs](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
 
-### Change the installer language from the command line
+#### Change the installer language from the command line
 
 Another way that you can change the default language is by running the installer from the command line. For example, you can force the installer to run in English by using the following command: `vs_installer.exe --locale en-US`. The installer will remember this setting when it's run the next time. The installer supports the following language tokens: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru, and tr-tr.
 
-### Step 7 - Change the installation location (Optional)
+#### Step 7 - Change the installation location (Optional)
 
 You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
 
@@ -105,7 +105,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 > [!IMPORTANT]
 > You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
 
-## Step 8 - Start developing
+### Step 8 - Start developing
 
 1. After Visual Studio installation is complete, choose the **Launch** button to get started developing with Visual Studio.
 
