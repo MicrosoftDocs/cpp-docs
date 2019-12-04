@@ -1,6 +1,6 @@
 ---
 title: "C++ conformance improvements"
-ms.date: "10/04/2019"
+ms.date: "12/04/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
 author: "mikeblome"
@@ -454,6 +454,247 @@ To avoid the errors in the previous example, use **bool** instead of **BOOL** co
 ### Standard Library improvements
 
 The non-standard headers \<stdexcpt.h> and \<typeinfo.h> have been removed. Code that includes them should instead include the standard headers \<exception> and \<typeinfo>, respectively.
+
+## <a name="improvements_164"></a> Conformance improvements in Visual Studio 2019 version 16.4
+
+### Better enforcement of two-phase name lookup for qualified-ids in /permissive-
+
+Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, such names may have been found when the template is instantiated. This change makes it easier to write portable, conformant code in MSVC under the [/permissive-](../build/permissive-standards-conformance.md) flag.
+
+In Visual Studio 2019 version 16.4, with the **/permissive-**  flag set, the following example produces an error because `N::f` is not visible when the `f<T>` template is defined:
+
+```cpp
+template <class T>
+int f() {
+    return N::f() + T{}; // error C2039: 'f': is not a member of 'N'
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+Typically, this can be fixed by including missing headers or forward-declaring functions or variables, as shown in the following example:
+
+```cpp
+namespace N {
+    int f();
+}
+
+template <class T>
+int f() {
+    return N::f() + T{};
+}
+
+namespace N {
+    int f() { return 42; }
+}
+```
+
+### Implicit conversion of integral constant expressions to null pointer
+
+The MSVC compiler now implements [CWG Issue 903](http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_defects.html#903) in conformance mode (/permissive-). This rule disallows implicit conversion of integral constant expressions (except for the integer literal '0') to null pointer constants. The following example produces C2440 in conformance mode:
+
+```cpp
+int* f(bool* p) {
+    p = false; // error C2440: '=': cannot convert from 'bool' to 'bool *'
+    p = 0; // OK
+    return false; // error C2440: 'return': cannot convert from 'bool' to 'int *'
+}
+```
+
+To fix the error, use **nullptr** instead of **false**. Note that literal 0 is still allowed:
+
+```cpp
+int* f(bool* p) {
+    p = nullptr; // OK
+    p = 0; // OK
+    return nullptr; // OK
+}
+```
+
+### Standard rules for types of integer literals
+
+In conformance mode (enabled by [/permissive-](../build/permissive-standards-conformance.md)), MSVC uses the standard rules for types of integer literals. Previously, decimal literals too large to fit in a signed 'int' were given type 'unsigned int'. Now such literals are given the next largest signed integer type, 'long long'. Additionally, literals with the 'll' suffix which are too large to fit in a signed type are given type 'unsigned long long'.
+
+This can lead to different warning diagnostics being generated, and behavior differences for arithmetic operations performed on literals.
+
+The following example shows the behavior prior to Visual Studio 2019, version 16.4. The `i` variable is of type **unsigned int** and therefore the warning is raised. The high-order bits of the variable `j` are set to 0.
+
+```cpp
+void f(int r) {
+    int i = 2964557531; // warning C4309: truncation of constant value
+    long long j = 0x8000000000000000ll >> r; // literal is now unsigned, shift will fill high-order bits with 0
+}
+```
+
+The following example demonstrates the new behavior:
+
+```cpp
+void f(int r) {
+int i = 2964557531u; // OK
+long long j = (long long)0x8000000000000000ll >> r; // shift will keep high-order bits
+}
+```
+
+### Function parameters that shadow template parameters
+
+The MSVC compiler now raises an error when a function parameter shadows a template parameter:
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T(&buffer)[Size], int& Size) //C7576: declaration of 'Size' shadows a template parameter
+{
+    return f(buffer, Size, Size);
+}
+```
+
+To fix the error, change the name of one of the parameters:
+
+```cpp
+template<typename T>
+void f(T* buffer, int size, int& size_read);
+
+template<typename T, int Size>
+void f(T (&buffer)[Size], int& size_read)
+{
+    return f(buffer, Size, size_read);
+}
+```
+
+### User-provided specializations of type traits
+
+In compliance with the [meta.rqmts]() subclause of the Standard, the MSVC compiler now raises an error when it encounters a user-defined specialization of one of the specified type_traits templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the `static_assert` fails with error **C2338**.
+
+```cpp
+#include <type_traits>
+struct S;
+
+template<>
+struct std::is_fundamental<S> : std::true_type {};
+
+static_assert(std::is_fundamental<S>::value, "fail");
+```
+
+To avoid the error, define a struct that inherits from the desired type_trait, and specialize that:
+
+```cpp
+#include <type_traits>
+
+struct S;
+
+template<typename T>
+struct my_is_fundamental : std::is_fundamental<T> {};
+
+template<>
+struct my_is_fundamental<S> : std::true_type { };
+
+static_assert(my_is_fundamental<S>::value, "fail");
+```
+
+### Expressions with operator==
+
+In compliance with [over.match]/9 the compiler will no longer rewrite expressions with `operator==` if they involve a return type that is not a **bool**. The following code now produces *error C2088: '!=': illegal for struct*:
+
+```cpp
+struct U {
+  operator bool() const;
+};
+
+struct S {
+  U operator==(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+  return lhs != rhs;
+}
+```
+
+To avoid the error, you must explicitly define the needed operator:
+
+```cpp
+struct U {
+    operator bool() const;
+};
+
+struct S {
+    U operator==(const S&) const;
+    U operator!=(const S&) const;
+};
+
+bool neq(const S& lhs, const S& rhs) {
+    return lhs != rhs;
+}
+```
+
+### Defaulted comparison operator in union-like classes
+
+In compliance with [class.compare.default]/2 the compiler will no longer define a defaulted comparison operator if it is a member of a union-like class. The following example now produces  *C2120: 'void' illegal with all types*:
+
+```cpp
+#include <compare>
+
+union S {
+    int a;
+    char b;
+    auto operator<=>(const S&) const = default;
+};
+
+bool lt(const S& lhs, const S& rhs) {
+    return lhs < rhs;
+}
+```
+
+To avoid the error, define a body for the operator:
+
+```cpp
+#include <compare>
+
+union S {
+  int a;
+  char b;
+  auto operator<=>(const S&) const { ... }
+}; 
+
+bool lt(const S& lhs, const S& rhs) {
+  return lhs < rhs;
+}
+```
+
+### Defaulted comparison operator for classes with a reference member
+
+In compliance with [class.compare.default]/2 the compiler will no longer define a defaulted comparison operator if the class contains a reference member. The following code now produces *error C2120: 'void' illegal with all types*:
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const = default;
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
+
+To avoid the error, define a body for the operator:
+
+```cpp
+#include <compare>
+
+struct U {
+    int& a;
+    auto operator<=>(const U&) const { ... };
+};
+
+bool lt(const U& lhs, const U& rhs) {
+    return lhs < rhs;
+}
+```
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
@@ -2814,7 +3055,7 @@ struct S
 {
     constexpr void f();
 };
- 
+
 template<>
 constexpr void S<int>::f()
 {
