@@ -1,7 +1,7 @@
 ---
 title: "Overview of C++ development in Visual Studio"
 description: "The Visual Studio IDE supports C++ development on Windows, Linux, Android and iOS with a code editor, debugger, test frameworks, static analyzers, and other programming tools."
-ms.date: "03/08/2019"
+ms.date: "12/02/2019"
 helpviewer_keywords: ["Visual C++, development tools"]
 author: "corob-msft"
 ms.author: "corob"
@@ -66,7 +66,7 @@ If your program has a user interface, you can use a designer to quickly populate
 
 ![Designer and Toolbox](media/vs2017-toolbox-designer.png "Visual Studio 2017 Toolbox and designer")
 
-For more information about designing a user interface for a Universal Windows Platform app, see  [Design and UI](https://developer.microsoft.com/windows/design).
+For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
 
 For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md).
 
@@ -80,13 +80,11 @@ The code editor is a specialized word processor for C++ source code. It color-co
 
 ## Add and edit resources
 
-The term *resource* includes things such as dialogs, icons, images, localizable strings, splash screens, database connection strings, or any arbitrary data that you want to include in the executable file.
-
-For more information on adding and editing resources in native desktop C++ projects, see [Working with Resource Files](../windows/working-with-resource-files.md).
+A Windows program or DLL usually includes some *resources*, such as dialogs, icons, images, localizable strings, splash screens, database connection strings, or any arbitrary data. Visual Studio includes tools for adding and editing resources. For more information, see [Working with Resource Files](../windows/working-with-resource-files.md).
 
 ## Build (compile and link)
 
-Choose **Build** > **Build Solution** on the menu bar, or enter the Ctrl+Shift+B key combination to compile and link a project. Build errors and warnings are reported in the Error List (Ctrl+\\, E). The **Output** Window (Alt+2) shows information about the build process.
+Choose **Build** > **Build Solution** on the menu bar, or enter the **Ctrl+Shift+B** key combination to compile and link a project. Build errors and warnings are reported in the Error List (**Ctrl+\\, E**). The **Output** Window (**Alt+2**) shows information about the build process.
 
 ![Output Window and Error List](media/vs2017-output-error-list.png "Visual Studio 2017 Output window and Error List")
 
@@ -96,7 +94,7 @@ You can also use the compiler (cl.exe) and many other build-related standalone t
 
 ## Debug
 
-You can start debugging by pressing **F5**. Execution pauses on any breakpoints you have set. You can also step through code one line at a time, view the values of variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. The following illustration shows a debugging session in which execution is stopped on a breakpoint. The values of the data structure members are visible in the **Watch Window**.
+You can start debugging by pressing **F5**. Execution pauses on any breakpoints you have set (by pressing **F9**). You can also step through code one line at a time (**F10**), view the values of variables or registers, and even in some cases make changes in code and continue debugging without re-compiling. The following illustration shows a debugging session in which execution is stopped on a breakpoint. The values of the data structure members are visible in the **Watch Window**.
 
 ![Debugging session](media/vs2017-debug-watch.png "Visual Studio 2017 debugging session")
 
@@ -118,7 +116,7 @@ Visual Studio includes static code analysis tools that can detect potential prob
 
 You can deploy both traditional desktop applications and UWP apps to customers through the Microsoft Store. Deployment of the CRT is handled automatically behind the scenes. For more information, see [Publish Windows apps and games](/windows/uwp/publish/).
 
-You can also deploy a native C++ desktop to another computer  For more information, see [Deploying Desktop Applications](../windows/deploying-native-desktop-applications-visual-cpp.md).
+You can also deploy a native C++ desktop to another computer. For more information, see [Deploying Desktop Applications](../windows/deploying-native-desktop-applications-visual-cpp.md).
 
 For more information about deploying a C++/CLI program, see [Deployment Guide for Developers](/dotnet/framework/deployment/deployment-guide-for-developers),
 
