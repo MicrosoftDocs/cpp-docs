@@ -13,7 +13,7 @@ A *function body* is a compound statement containing the statements that specify
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq* is Microsoft Specific \*/
+/\* *attribute-seq* is Microsoft-specific \*/
 
 *compound-statement*: /\* The function body \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**

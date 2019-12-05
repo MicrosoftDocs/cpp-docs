@@ -6,7 +6,7 @@ ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
 ---
 # Compiler COM Support
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The Microsoft C++ compiler can directly read component object model (COM) type libraries and translate the contents into C++ source code that can be included in the compilation. Language extensions are available to facilitate COM programming on the client side for desktop apps.
 

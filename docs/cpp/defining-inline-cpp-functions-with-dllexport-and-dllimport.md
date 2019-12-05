@@ -6,7 +6,7 @@ ms.assetid: 3b48678b-e7b8-4eda-bb46-b5d34dcf7817
 ---
 # Defining Inline C++ Functions with dllexport and dllimport
 
-## Microsoft Specific
+**Microsoft Specific**
 
 You can define as inline a function with the **dllexport** attribute. In this case, the function is always instantiated and exported, whether or not any module in the program references the function. The function is presumed to be imported by another program.
 

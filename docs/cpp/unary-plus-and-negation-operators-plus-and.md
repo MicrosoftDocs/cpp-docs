@@ -26,9 +26,11 @@ The unary negation operator (**-**) produces the negative of its operand. The op
 
 Integral promotion is performed on integral operands, and the resultant type is the type to which the operand is promoted. See [Standard Conversions](standard-conversions.md) for more information about how the promotion is performed.
 
-## Microsoft specific
+**Microsoft Specific**
 
 Unary negation of unsigned quantities is performed by subtracting the value of the operand from 2^n, where n is the number of bits in an object of the given unsigned type.
+
+**END Microsoft Specific**
 
 ## See also
 

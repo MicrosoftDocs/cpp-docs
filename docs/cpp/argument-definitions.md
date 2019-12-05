@@ -26,7 +26,7 @@ The first command-line argument is always `argv[1]` and the last one is `argv[ar
 > [!NOTE]
 > By convention, `argv[0]` is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv[0]` may not be the executable name; use [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
 
-## Microsoft Specific
+**Microsoft Specific**
 
 *envp*<br/>
 The *envp* array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a NULL entry. It can be declared as an array of pointers to **char** (`char *envp[]`) or as a pointer to pointers to **char** (`char **envp`). If your program uses `wmain` instead of `main`, use the **wchar_t** data type instead of **char**. The environment block passed to `main` and `wmain` is a "frozen" copy of the current environment. If you subsequently change the environment via a call to `putenv` or `_wputenv`, the current environment (as returned by `getenv` or `_wgetenv` and the `_environ` or  `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.

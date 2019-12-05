@@ -353,7 +353,7 @@ If a lambda is implicitly or explicitly `constexpr`, conversion to a function po
     constexpr int(*inc)(int) = Increment;
 ```
 
-## Microsoft-Specific
+## Microsoft-specific
 
 Lambdas are not supported in the following common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, or **value struct**.
 

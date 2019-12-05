@@ -7,6 +7,8 @@ ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
 ---
 # __readdr
 
+**Microsoft Specific**
+
 Reads the value of the specified debug register.
 
 ## Syntax

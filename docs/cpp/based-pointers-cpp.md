@@ -7,14 +7,11 @@ ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
 ---
 # Based Pointers (C++)
 
-**Microsoft Specific**
-
-The **__based** keyword allows you to declare pointers based on pointers (pointers that are offsets from existing pointers).
+The **__based** keyword allows you to declare pointers based on pointers (pointers that are offsets from existing pointers). The **__based** keyword is Microsoft-specific.
 
 ## Syntax
 
 ```
-
 type __based( base ) declarator
 ```
 

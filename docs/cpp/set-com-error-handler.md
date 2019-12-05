@@ -6,9 +6,7 @@ ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
 ---
 # _set_com_error_handler
 
-**Microsoft Specific**
-
-Replaces the default function that is used for COM error-handling.
+Replaces the default function that is used for COM error-handling. **_set_com_error_handler** is Microsoft-specific.
 
 ## Syntax
 

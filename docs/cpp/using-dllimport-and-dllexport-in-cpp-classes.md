@@ -6,7 +6,7 @@ ms.assetid: 8d7d1303-b9e9-47ca-96cc-67bf444a08a9
 ---
 # Using dllimport and dllexport in C++ Classes
 
-## Microsoft Specific
+**Microsoft Specific**
 
 You can declare C++ classes with the **dllimport** or **dllexport** attribute. These forms imply that the entire class is imported or exported. Classes exported this way are called exportable classes.
 

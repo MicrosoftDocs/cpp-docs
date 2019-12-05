@@ -23,9 +23,9 @@ C statements consist of tokens, expressions, and other statements. A statement t
 
 [jump-statement](../c-language/break-statement-c.md)
 
-[try-except-statement](../c-language/try-except-statement-c.md)
+[try-except-statement](../c-language/try-except-statement-c.md) /* Microsoft-specific \*/
 
-/* Microsoft Specific \*/[try-finally-statement](../c-language/try-finally-statement-c.md) /\* Microsoft Specific \*/
+[try-finally-statement](../c-language/try-finally-statement-c.md) /\* Microsoft-specific \*/
 
 Frequently the statement body is a "compound statement." A compound statement consists of other statements that can include keywords. The compound statement is delimited by braces (**{ }**). All other C statements end with a semicolon (**;**). The semicolon is a statement terminator.
 

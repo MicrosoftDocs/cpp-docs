@@ -6,7 +6,7 @@ helpviewer_keywords: ["_div64 intrinsic"]
 ---
 # _div64
 
-The `_div64` intrinsic divides a 64-bit integer by a 32-bit integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_div64` is **Microsoft specific**.
+The `_div64` intrinsic divides a 64-bit integer by a 32-bit integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_div64` is **Microsoft-specific**.
 
 ## Syntax
 

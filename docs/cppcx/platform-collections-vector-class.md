@@ -1,6 +1,6 @@
 ---
 title: "Platform::Collections::Vector Class"
-ms.date: "10/01/2019"
+ms.date: "12/04/2019"
 ms.topic: "reference"
 f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Platform::Collections::Vector::Append", "COLLECTION/Platform::Collections::Vector::Clear", "COLLECTION/Platform::Collections::Vector::First", "COLLECTION/Platform::Collections::Vector::GetAt", "COLLECTION/Platform::Collections::Vector::GetMany", "COLLECTION/Platform::Collections::Vector::GetView", "COLLECTION/Platform::Collections::Vector::IndexOf", "COLLECTION/Platform::Collections::Vector::InsertAt", "COLLECTION/Platform::Collections::Vector::ReplaceAll", "COLLECTION/Platform::Collections::Vector::RemoveAt", "COLLECTION/Platform::Collections::Vector::RemoveAtEnd", "COLLECTION/Platform::Collections::Vector::SetAt", "COLLECTION/Platform::Collections::Vector::Size", "COLLECTION/Platform::Collections::Vector::VectorChanged"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
@@ -62,7 +62,7 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 |[Vector::GetMany](#getmany)|Retrieves a sequence of items from the current Vector, starting at the specified index.|
 |[Vector::GetView](#getview)|Returns a read-only view of a Vector; that is, a [Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md).|
 |[Vector::IndexOf](#indexof)|Searches for the specified item in the current Vector, and if found, returns the index of the item.|
-|[Vector::InsertAt](#insertat)|Inserts the specified item into the current Vector after the element identified by the specified index.|
+|[Vector::InsertAt](#insertat)|Inserts the specified item into the current Vector at the element identified by the specified index.|
 |[Vector::ReplaceAll](#replaceall)|Deletes the elements in the current Vector and then inserts the elements from the specified array.|
 |[Vector::RemoveAt](#removeat)|Deletes the element identified by the specified index from the current Vector.|
 |[Vector::RemoveAtEnd](#removeatend)|Deletes the element at the end of the current Vector.|
@@ -222,7 +222,7 @@ IndexOf uses std::find_if to find the item. Custom element types should therefor
 
 ##  <a name="insertat"></a>  Vector::InsertAt Method
 
-Inserts the specified item into the current Vector after the element identified by the specified index.
+Inserts the specified item into the current Vector at the element identified by the specified index.
 
 ### Syntax
 
@@ -236,7 +236,7 @@ virtual void InsertAt(unsigned int index, T item)
 A zero-based, unsigned integer that specifies a particular element in the Vector object.
 
 *item*<br/>
-An item to insert into the Vector after the element specified by *index*. The type of *item* is defined by the *T* typename.
+An item to insert into the Vector at the element specified by *index*. The type of *item* is defined by the *T* typename.
 
 ## <a name="removeat"></a>  Vector::RemoveAt Method
 

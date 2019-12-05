@@ -1,7 +1,7 @@
 ---
 title: "/NOPDB"
 description: "The /NOPDB option keeps DUMPBIN from loading and searching PDB files for symbol information."
-ms.date: "10/29/2019"
+ms.date: "12/04/2019"
 f1_keywords: ["/NOPDB"]
 helpviewer_keywords: ["/NOPDB dumpbin option", "/NOPDB"]
 ---
@@ -15,7 +15,7 @@ Tells DUMPBIN not to load and search program database (PDB) files for symbol inf
 
 ## Remarks
 
-By default, DUMPBIN attempts to load PDB files for its target object files, libraries, or executables. DUMPBIN uses this information to match addresses to symbol names. The process can be time-consuming if the PDB files are large, or must be loaded from a remote server. The **/NOPDB** option tells DUMPBIN to skip this step. It only prints the addresses and symbol information available in the object file, library, or executable.
+By default, DUMPBIN attempts to load PDB files for its target executables. DUMPBIN uses this information to match addresses to symbol names. The process can be time-consuming if the PDB files are large, or must be loaded from a remote server. The **/NOPDB** option tells DUMPBIN to skip this step. It only prints the addresses and symbol information available in the executable.
 
 ### To set the /NOPDB linker option in Visual Studio
 

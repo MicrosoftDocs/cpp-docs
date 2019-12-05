@@ -7,7 +7,7 @@ ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
 ---
 # novtable
 
-## Microsoft Specific
+**Microsoft Specific**
 
 This is a **__declspec** extended attribute.
 

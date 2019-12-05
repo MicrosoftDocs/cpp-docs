@@ -5,7 +5,7 @@ ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
 ---
 # General Rules and Limitations
 
-## Microsoft Specific
+**Microsoft Specific**
 
 - If you declare a function or object without the **dllimport** or **dllexport** attribute, the function or object is not considered part of the DLL interface. Therefore, the definition of the function or object must be present in that module or in another module of the same program. To make the function or object part of the DLL interface, you must declare the definition of the function or object in the other module as **dllexport**. Otherwise, a linker error is generated.
 

@@ -1,7 +1,7 @@
 ---
 title: "ML Fatal Error A1011"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A1011"]
 helpviewer_keywords: ["A1011"]
 ms.assetid: 7fbf092d-4189-4330-a884-dfa2268fc3dd
