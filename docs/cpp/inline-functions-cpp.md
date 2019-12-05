@@ -110,7 +110,7 @@ private:
 };
 ```
 
-### Microsoft Specific
+**Microsoft Specific**
 
 The **__inline** keyword is equivalent to **inline**.
 

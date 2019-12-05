@@ -12,8 +12,8 @@ ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
 &nbsp;&nbsp;&nbsp;&nbsp;*selection-statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*iteration-statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*jump-statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-except-statement* /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-finally-statement* /\* Microsoft Specific \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*try-except-statement* /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*try-finally-statement* /\* Microsoft-specific \*/
 
 *jump-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**goto**  *identifier*  **;**<br/>
@@ -50,10 +50,10 @@ ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
 &nbsp;&nbsp;&nbsp;&nbsp;**case**  *constant-expression*  **:**  *statement*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**default :**  *statement*
 
-*try-except-statement*:   /\* Microsoft Specific \*/<br/>
+*try-except-statement*:   /\* Microsoft-specific \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__except (**  *expression*  **)**  *compound-statement*
 
-*try-finally-statement*:   /\* Microsoft Specific \*/<br/>
+*try-finally-statement*:   /\* Microsoft-specific \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__try**  *compound-statement* **__finally**  *compound-statement*
 
 ## See also

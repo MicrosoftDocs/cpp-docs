@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2008"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2008"]
 helpviewer_keywords: ["A2008"]
 ms.assetid: ca24157f-c88a-4678-ae06-3bc3cd956001

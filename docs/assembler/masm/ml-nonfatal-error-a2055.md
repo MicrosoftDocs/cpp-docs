@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2055"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2055"]
 helpviewer_keywords: ["A2055"]
 ms.assetid: b4c3585f-6e55-4127-ba84-e68a41f1ada8

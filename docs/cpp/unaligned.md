@@ -7,7 +7,7 @@ ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
 ---
 # __unaligned
 
-**Microsoft specific**. When you declare a pointer with the **__unaligned** modifier, the compiler assumes that the pointer addresses data that is not aligned. Consequently, platform-appropriate code is generated to handle unaligned reads and writes through the pointer.
+**Microsoft-specific**. When you declare a pointer with the **__unaligned** modifier, the compiler assumes that the pointer addresses data that is not aligned. Consequently, platform-appropriate code is generated to handle unaligned reads and writes through the pointer.
 
 ## Remarks
 

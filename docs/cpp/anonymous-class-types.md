@@ -51,7 +51,7 @@ Anonymous classes are subject to certain restrictions. (For more information abo
 
 ## Anonymous structs
 
-### Microsoft Specific
+**Microsoft Specific**
 
 A Microsoft C extension allows you to declare a structure variable within another structure without giving it a name. These nested structures are called anonymous structures. C++ does not allow anonymous structures.
 

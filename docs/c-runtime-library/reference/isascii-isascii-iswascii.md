@@ -54,7 +54,7 @@ For backward compatibility, **isascii** is implemented as a macro only if [&#95;
 |**isascii**, **__isascii**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
 |**iswascii**|C: \<wctype.h>, \<ctype.h>, or \<wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype.h>, \<ctype.h>, or \<wchar.h>|
 
-The **isascii**, **__isascii** and **iswascii** functions are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **isascii**, **__isascii** and **iswascii** functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

@@ -59,7 +59,7 @@ The *expression* argument is a wide string representation of the argument expres
 |-------------|---------------------|
 |**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
 
-The **_set_invalid_parameter_handler** and **_set_thread_local_invalid_parameter_handler** functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_set_invalid_parameter_handler** and **_set_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

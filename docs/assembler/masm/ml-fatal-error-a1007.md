@@ -1,7 +1,7 @@
 ---
 title: "ML Fatal Error A1007"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A1007"]
 helpviewer_keywords: ["A1007"]
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf

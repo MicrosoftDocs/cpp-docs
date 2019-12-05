@@ -7,7 +7,7 @@ ms.assetid: 9c6517e5-22d7-4051-9974-3d2200ae4d1d
 ---
 # noreturn
 
-## Microsoft Specific
+**Microsoft Specific**
 
 This **__declspec** attribute tells the compiler that a function does not return. As a consequence, the compiler knows that the code following a call to a **__declspec(noreturn)** function is unreachable.
 
@@ -33,6 +33,8 @@ int main() {
      fatal();
 }
 ```
+
+**END Microsoft Specific**
 
 ## See also
 
