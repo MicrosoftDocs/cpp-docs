@@ -43,7 +43,7 @@ The **_set_FMA3_enable** and **_get_FMA3_enable** functions are only available i
 |-------------|---------------------|
 |**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h><br />C++: \<cmath> or \<math.h>|
 
-The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_set_FMA3_enable** and **_get_FMA3_enable** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

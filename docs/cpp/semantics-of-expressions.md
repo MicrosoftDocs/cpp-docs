@@ -78,7 +78,7 @@ func( i, ++i );
 
 The C++ language does not guarantee the order in which arguments to a function call are evaluated. Therefore, in the preceding example, `func` could receive the values 7 and 8, or 8 and 8 for its parameters, depending on whether the parameters are evaluated from left to right or from right to left.
 
-## C++ sequence points (Microsoft Specific)
+## C++ sequence points (Microsoft-specific)
 
 An expression can modify an object's value only once between consecutive "sequence points."
 

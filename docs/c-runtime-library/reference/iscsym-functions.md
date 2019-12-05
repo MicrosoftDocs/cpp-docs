@@ -72,7 +72,7 @@ For backward compatibility, **iscsym** and **iscsymf** are defined as macros onl
 |-------------|---------------------|
 |**iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h><br /><br /> C++: \<cctype> or \<ctype.h>|
 
-The **iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, and **_iswcsymf_l** routines are Microsoft specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **iscsym**, **iscsymf**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, and **_iswcsymf_l** routines are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

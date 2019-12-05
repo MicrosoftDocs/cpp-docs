@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2096"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2096"]
 helpviewer_keywords: ["A2096"]
 ms.assetid: bab0b5ee-b39f-4e44-a41a-3f949fab4297

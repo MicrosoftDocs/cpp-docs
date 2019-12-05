@@ -6,13 +6,13 @@ ms.assetid: e4275d1f-df2e-4bfc-a162-eb43ec69554a
 ---
 # Calling Example: Function Prototype and Call
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The following example shows the results of making a function call using various calling conventions.
 
 This example is based on the following function skeleton. Replace `calltype` with the appropriate calling convention.
 
-```
+```cpp
 void    calltype MyFunc( char c, short s, int i, double f );
 .
 .

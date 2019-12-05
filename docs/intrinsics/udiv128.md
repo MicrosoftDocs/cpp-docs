@@ -6,7 +6,7 @@ helpviewer_keywords: ["_udiv128 intrinsic"]
 ---
 # _udiv128
 
-The `_udiv128` intrinsic divides a 128-bit unsigned integer by a 64-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv128` is **Microsoft specific**.
+The `_udiv128` intrinsic divides a 128-bit unsigned integer by a 64-bit unsigned integer. The return value holds the quotient, and the intrinsic returns the remainder through a pointer parameter. `_udiv128` is **Microsoft-specific**.
 
 ## Syntax
 

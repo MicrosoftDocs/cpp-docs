@@ -13,7 +13,7 @@ The return type of a function establishes the size and type of the value returne
 *function-definition*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
 
-/\* *attribute-seq* is Microsoft Specific \*/
+/\* *attribute-seq* is Microsoft-specific \*/
 
 *declaration-specifiers*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub><br/>
@@ -25,10 +25,10 @@ The return type of a function establishes the size and type of the value returne
 &nbsp;&nbsp;&nbsp;&nbsp;**char**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**short**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**int**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8** /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16** /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32** /\* Microsoft Specific \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64** /\* Microsoft Specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__int8** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__int16** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__int32** /\* Microsoft-specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__int64** /\* Microsoft-specific \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**long**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**double**<br/>

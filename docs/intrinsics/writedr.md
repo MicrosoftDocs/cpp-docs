@@ -7,6 +7,8 @@ ms.assetid: ac55c1ee-df2f-41d4-a429-6f369d2a934d
 ---
 # __writedr
 
+**Microsoft Specific**
+
 Writes the specified value to the specified debug register.
 
 ## Syntax

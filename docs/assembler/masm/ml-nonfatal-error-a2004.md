@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2004"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2004"]
 helpviewer_keywords: ["A2004"]
 ms.assetid: 74e219ba-4dec-467a-b121-18a76aa57230

@@ -6,7 +6,7 @@ ms.assetid: ff203858-2dd3-4a76-8a57-d0d06817adef
 ---
 # Rules and Limitations for Naked Functions
 
-## Microsoft Specific
+**Microsoft Specific**
 
 The following rules and limitations apply to naked functions:
 

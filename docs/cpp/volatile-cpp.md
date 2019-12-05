@@ -43,7 +43,7 @@ If you are familiar with the C# volatile keyword, or familiar with the behavior 
 
 ## End of ISO Compliant
 
-## Microsoft Specific
+**Microsoft Specific**
 
 When the **/volatile:ms** compiler option is used—by default when architectures other than ARM are targeted—the compiler generates extra code to maintain ordering among references to volatile objects in addition to maintaining ordering to references to other global objects. In particular:
 

@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2069"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2069"]
 helpviewer_keywords: ["A2069"]
 ms.assetid: 57dbf072-da61-4306-8d41-a4d9c97fec1a

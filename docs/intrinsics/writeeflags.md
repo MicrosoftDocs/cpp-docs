@@ -7,6 +7,8 @@ ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
 ---
 # __writeeflags
 
+**Microsoft Specific**
+
 Writes the specified value to the program status and control (EFLAGS) register.
 
 ## Syntax

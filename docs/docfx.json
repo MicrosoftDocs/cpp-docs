@@ -96,7 +96,7 @@
         "cpp/**.md": "language-reference",
         "cppcx/**.md": "language-reference",
         "data/oledb/**.md": "reference",
-        "error-messages/**.md": "error-reference",
+        "error-messages/**.md": "reference",
         "extensions/**.md": "reference",
         "intrinsics/**.md": "reference",
         "mfc/reference/**.md": "reference",
