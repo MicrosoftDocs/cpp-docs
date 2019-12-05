@@ -31,7 +31,7 @@ By default, or in Visual Studio 2017 version 15.3 and later when you specify bot
    template <typename T> class Derived : public Base<T> { ... }
    ```
 
-   The template declaration, `template <typename T`>, the class head `class Derived`, and the base-class list `public Base<T>` are parsed, but the template body is captured as a token stream.
+   The template declaration, `template <typename T>`, the class head `class Derived`, and the base-class list `public Base<T>` are parsed, but the template body is captured as a token stream.
 
 - When parsing a function template, the compiler parses only the function signature. The function body is never parsed. Instead, it's captured as a token stream.
 
