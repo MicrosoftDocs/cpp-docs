@@ -44,7 +44,7 @@ The following **errno** values are supported:
 |**EXDEV**|Cross-device link. An attempt was made to move a file to a different device (using the **rename** function).|
 |**STRUNCATE**|A string copy or concatenation resulted in a truncated string. See [_TRUNCATE](../c-runtime-library/truncate.md).
 
-The following values are supported for compatibility with Posix. They are required values on non-Posix systems.
+The following values are supported for compatibility with POSIX. They are required values on non-POSIX systems.
 
 ```C
 #define E2BIG /* argument list too long */

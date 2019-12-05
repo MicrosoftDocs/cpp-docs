@@ -19,19 +19,19 @@ using namespace std::experimental::filesystem::v1;
 > [!IMPORTANT]
 > As of the release of Visual Studio 2017, the \<filesystem> header was not yet a C++ standard. C++ in Visual Studio 2017 (MSVC v141) implements the final draft standard, found in [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
-This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and Posix.
+This header supports filesystems for one of two broad classes of host operating systems: Microsoft Windows and POSIX.
 
 While most functionality is common to both operating systems, this document identifies where differences occur. For example:
 
 - Windows supports multiple root names, such as c: or \\\network_name. A filesystem consists of a forest of trees, each with its own root directory, such as c:\ or \\\network_name\\, and each with its own current directory, for completing a relative pathname (one that is not an absolute pathname).
 
-- Posix supports a single tree, with no root name, the single root directory /, and a single current directory.
+- POSIX supports a single tree, with no root name, the single root directory /, and a single current directory.
 
 Another significant difference is the native representation of pathnames:
 
 - Windows uses a null-terminated sequence of wchar_t, encoded as UTF-16 (one or two elements for each character).
 
-- Posix uses a null-terminated sequence of char, encoded as UTF-8 (one or more elements for each character).
+- POSIX uses a null-terminated sequence of char, encoded as UTF-8 (one or more elements for each character).
 
 - An object of class path stores the pathname in native form, but supports easy conversion between this stored form and several external forms:
 
@@ -51,7 +51,7 @@ Another difference is the detail with which each operating system lets you speci
 
 1. Windows records whether a file is read only or writable, an attribute that has no meaning for directories.
 
-1. Posix records whether a file can be read, written, or executed (scanned if a directory), by the owner, by the owner's group, or by everybody, plus a few other permissions.
+1. POSIX records whether a file can be read, written, or executed (scanned if a directory), by the owner, by the owner's group, or by everybody, plus a few other permissions.
 
 Common to both systems is the structure imposed on a pathname once you get past the root name. For the pathname c:/abc/xyz/def.ext:
 

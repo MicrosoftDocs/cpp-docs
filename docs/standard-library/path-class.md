@@ -58,7 +58,7 @@ class path;
 |[has_root_name](#has_root_name)|Returns `!root_name().empty()`.|
 |[has_root_path](#has_root_path)|Returns `!root_path().empty()`.|
 |[has_stem](#has_stem)|Returns `!stem().empty()`.|
-|[is_absolute](#is_absolute)|For Windows, the function returns `has_root_name() && has_root_directory()`. For Posix, the function returns `has_root_directory()`.|
+|[is_absolute](#is_absolute)|For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.|
 |[is_relative](#is_relative)|Returns `!is_absolute()`.|
 |[make_preferred](#make_preferred)|Converts each separator to a preferred_separator as needed.|
 |[native](#native)|Returns `myname`.|
@@ -369,7 +369,7 @@ bool has_stem() const;
 
 ## <a name="is_absolute"></a> path::is_absolute
 
-For Windows, the function returns `has_root_name() && has_root_directory()`. For Posix, the function returns `has_root_directory()`.
+For Windows, the function returns `has_root_name() && has_root_directory()`. For POSIX, the function returns `has_root_directory()`.
 
 ```cpp
 bool is_absolute() const;
@@ -626,7 +626,7 @@ The constant object gives the preferred character for separating path components
 ```cpp
 #if _WIN32_C_LIB
 static constexpr value_type preferred_separator == L'\\';
-#else // assume Posix
+#else // assume POSIX
 static constexpr value_type preferred_separator == '/';
 #endif // filesystem model now defined
 ```
@@ -815,7 +815,7 @@ The type describes the `path` elements favored by the host operating system.
 ```cpp
 #if _WIN32_C_LIB
 typedef wchar_t value_type;
-#else // assume Posix
+#else // assume POSIX
 typedef char value_type;
 #endif // filesystem model now defined
 ```
