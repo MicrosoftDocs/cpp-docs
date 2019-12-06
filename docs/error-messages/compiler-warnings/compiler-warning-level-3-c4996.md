@@ -15,7 +15,7 @@ Your code uses a function, class member, variable, or typedef that's marked *dep
 
 ## Remarks
 
-Many functions, member functions, template functions, and global variables in Visual Studio libraries are *deprecated*. Some, such as Posix functions, are deprecated because they have a different preferred name. Some C runtime library functions are deprecated because they're insecure and have a more secure variant. Others are deprecated because they're obsolete. The deprecation messages usually include a suggested replacement for the deprecated function or global variable.
+Many functions, member functions, template functions, and global variables in Visual Studio libraries are *deprecated*. Some, such as POSIX and Microsoft-specific functions, are deprecated because they now have a different preferred name. Some C runtime library functions are deprecated because they're insecure and have a more secure variant. Others are deprecated because they're obsolete. The deprecation messages usually include a suggested replacement for the deprecated function or global variable.
 
 ## Turn off the warning
 
@@ -53,9 +53,9 @@ Here are some of the common sources of C4996 warnings and errors:
 
 **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *new-name*. **See online help for details.**
 
-Microsoft renamed some POSIX functions in the CRT to conform with C99 and C++03 rules for implementation-defined global function names. Only the names are deprecated, not the functions themselves. In most cases, a leading underscore was added to the POSIX function name to create a standards conformant name. The compiler issues a deprecation warning for the original function name, and suggests the preferred name.
+Microsoft renamed some POSIX and Microsoft-specific library functions in the CRT to conform with C99 and C++03 constraints on reserved and global implementation-defined names. *Only the names are deprecated, not the functions themselves*. In most cases, a leading underscore was added to the function name to create a conforming name. The compiler issues a deprecation warning for the original function name, and suggests the preferred name.
 
-To fix this issue, we usually recommend you change your code to use the suggested function names instead. However, the updated names are Microsoft-specific. If you need to use the existing function names for portability reasons, you can turn off these warnings. The POSIX functions are still available in the library under their original names.
+To fix this issue, we usually recommend you change your code to use the suggested function names instead. However, the updated names are Microsoft-specific. If you need to use the existing function names for portability reasons, you can turn off these warnings. The functions are still available in the library under their original names.
 
 To turn off deprecation warnings for these functions, define the preprocessor macro **\_CRT\_NONSTDC\_NO\_WARNINGS**. You can define this macro at the command line by including the option `/D_CRT_NONSTDC_NO_WARNINGS`.
 
