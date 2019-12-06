@@ -15,7 +15,7 @@ Makes each variable, label, or absolute symbol specified as *name* available to 
 
 ## Remarks
 
-The ⟦*language-type*⟧ argument is valid in 32-bit MASM only.
+The *language-type* argument is valid in 32-bit MASM only.
 
 ## See also
 

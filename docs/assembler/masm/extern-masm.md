@@ -15,7 +15,7 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 ## Remarks
 
-The ⟦*language-type*⟧ argument is valid in 32-bit MASM only.
+The *language-type* argument is valid in 32-bit MASM only.
 
 The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Same as [EXTRN](../../assembler/masm/extrn.md).
 
