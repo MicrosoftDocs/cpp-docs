@@ -1,6 +1,6 @@
 ---
 title: "PROTO"
-ms.date: "10/22/2018"
+ms.date: "12/06/2019"
 f1_keywords: ["PROTO"]
 helpviewer_keywords: ["PROTO directive"]
 ms.assetid: 0487ee16-9dc7-43d1-9445-cd1601f5a080
@@ -18,10 +18,10 @@ Prototypes a function or procedure. You can call the function prototyped by the 
 *label*\
 The name of the prototyped function.
 
-*distance*\
+*distance* (32-bit MASM only.)\
 (Optional) Used in 16-bit memory models to override the default and indicate **NEAR** or **FAR** calls.
 
-*language-type*\
+*language-type* (32-bit MASM only.)\
 (Optional) Sets the calling and naming convention for procedures and public symbols. Supported conventions are:
 
 - 32-bit **FLAT** model: **C**, **STDCALL**

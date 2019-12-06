@@ -1,11 +1,11 @@
 ---
 title: ".CODE"
-ms.date: "08/30/2018"
+ms.date: "12/06/2019"
 f1_keywords: [".CODE"]
 helpviewer_keywords: [".CODE directive"]
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ---
-# .CODE
+# .CODE (32-bit MASM)
 
 When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start of a code segment.
 
