@@ -1,5 +1,6 @@
 ---
 title: ".PUSHFRAME"
+description: "Describes the .PUSHFRAME MASM directive, used to specify how to unwind a frame function."
 ms.date: "12/06/2019"
 f1_keywords: [".PUSHFRAME"]
 helpviewer_keywords: [".PUSHFRAME directive"]
