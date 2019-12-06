@@ -85,7 +85,7 @@ messages<char>
 messages<wchar_t>
 ```
 
-(The last category is required by Posix, but not the C Standard.)
+(The last category is required by POSIX, but not the C Standard.)
 
 Some of these predefined facets are used by the `iostream` classes, to control the conversion of numeric values to and from text sequences.
 
@@ -193,7 +193,7 @@ The type is a synonym for an **int** type that can represent a group of distinct
 
 - `time`, corresponding to the C category LC_TIME
 
-- `messages`, corresponding to the Posix category LC_MESSAGES
+- `messages`, corresponding to the POSIX category LC_MESSAGES
 
 Two more useful values are:
 
