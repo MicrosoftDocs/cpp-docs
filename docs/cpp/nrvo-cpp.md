@@ -1,15 +1,23 @@
 ---
 title: "Named Return Value Optimization"
-ms.date: "11/19/2019"
+ms.date: "12/06/2019"
 description: "The named return value optimization (NRVO) in the Microsoft C++ compiler eliminates redundant copy constructor and destructor calls in various situations."
 helpviewer_keywords: ["NRVO [C++]", "Named return value optimization [C++]"]
 ---
 
 # Named Return Value Optimization
 
-The Microsoft C++ optimizing compiler uses various techniques to increase program performance whenever possible. One such technique is the named return value optimization (NRVO), which eliminates redundant copy constructor and destructor calls in various situations.
+The Microsoft C++ compiler uses various techniques to increase program performance whenever possible. One such technique is the named return value optimization (NRVO), which eliminates redundant copy constructor and destructor calls in various situations.
 
-Typically, when a function returns an instance of an object, the compiler invokes the class's copy constructor to create a temporary object, which it then copies to the target object. The C++ standard allows the elision of the copy constructor (even if this results in different program behavior).  which has a side effect of enabling the compiler to treat both objects as one (see section 12.8. Copying class objects, paragraph 15; see Reference*).* The Visual C++ 8.0 compiler makes use of the flexibility that the standard provides and adds a new feature: Named Return Value Optimization (NRVO). NRVO eliminates the copy constructor and destructor of a stack-based return value. This optimizes out the redundant copy constructor and destructor calls and thus improves overall performance. It is to be noted that this could lead to different behavior between optimized and non-optimized programs (see the Optimization Side Effects section).
+Consider what steps are required in a program, if no optimizations are enabled, when a function declares a local class variable on the stack and returns it to a caller:
+
+- construct the variable at the call site that will be assigned the returned object
+- construct the local variable of the same type
+- make a copy of the variable by invoking the copy constructor
+- assign the copy to the variable constructed at the call site
+- invoke the destructor for all three instances of the class when each goes out of scope
+
+The C++ standard allows the elision of the copy constructor (even if this results in different program behavior).  which has a side effect of enabling the compiler to treat both objects as one (see section 12.8. Copying class objects, paragraph 15; see Reference*).* The Visual C++ 8.0 compiler makes use of the flexibility that the standard provides and adds a new feature: Named Return Value Optimization (NRVO). NRVO eliminates the copy constructor and destructor of a stack-based return value. This optimizes out the redundant copy constructor and destructor calls and thus improves overall performance. It is to be noted that this could lead to different behavior between optimized and non-optimized programs (see the Optimization Side Effects section).
 
 There are some cases in which the optimization will not take place (see the Optimization Limitations section for samples). The more common ones are:
 

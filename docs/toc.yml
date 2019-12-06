@@ -3784,6 +3784,8 @@
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Temporary objects
                   href: cpp/temporary-objects.md
+                - name: Named return value optimization
+                  href: cpp/nrvo-cpp.md
                 - name: Alignment (C++ declarations)
                   href: cpp/alignment-cpp-declarations.md
                 - name: alignof and alignas
