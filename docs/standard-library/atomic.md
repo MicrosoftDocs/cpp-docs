@@ -18,7 +18,7 @@ Defines classes and class templates to use to create types that support atomic o
 ## Remarks
 
 > [!NOTE]
-> In code that's compiled by using [/clr:pure](../build/reference/clr-common-language-runtime-compilation), this header is blocked. Both **/clr:pure** and **/clr:safe** are deprecated in Visual Studio 2017 and later versions.
+> In code that's compiled by using [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), this header is blocked. Both **/clr:pure** and **/clr:safe** are deprecated in Visual Studio 2017 and later versions.
 
 An atomic operation has two key properties that help you use multiple threads to correctly manipulate an object without using mutex locks.
 
