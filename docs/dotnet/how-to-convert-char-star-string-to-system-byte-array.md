@@ -11,7 +11,7 @@ The most efficient way to convert a `char *` string to a <xref:System.Byte> arra
 
 ## Example
 
-```
+```cpp
 // convert_native_string_to_Byte_array.cpp
 // compile with: /clr
 #include <string.h>

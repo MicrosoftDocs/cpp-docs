@@ -13,7 +13,7 @@ The specified base class of an object to be thrown in a **try** block is not acc
 
 The following sample generates C4670:
 
-```
+```cpp
 // C4670.cpp
 // compile with: /EHsc /W4
 class A

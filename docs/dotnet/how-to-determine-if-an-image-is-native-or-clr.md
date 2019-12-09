@@ -15,7 +15,7 @@ You can also programmatically check whether an image was built for the common la
 
 The following sample determines whether an image was built to run on the common language runtime.
 
-```
+```cpp
 // detect_image_type.cpp
 // compile with: /clr
 using namespace System;

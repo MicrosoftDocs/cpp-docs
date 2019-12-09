@@ -13,7 +13,7 @@ For more information about macros, see [Predefined Macros](../preprocessor/prede
 
 ## Example
 
-```
+```cpp
 // detect_CLR_compilation.cpp
 // compile with: /clr
 #include <stdio.h>

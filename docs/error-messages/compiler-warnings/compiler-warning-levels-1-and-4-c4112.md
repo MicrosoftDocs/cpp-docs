@@ -15,7 +15,7 @@ If the specified parameter is less than 1, the line counter is reset to 1. If th
 
 The following sample generates C4112:
 
-```
+```cpp
 // C4112.cpp
 // compile with: /W4
 #line 0   // C4112, value must be between 1 and number

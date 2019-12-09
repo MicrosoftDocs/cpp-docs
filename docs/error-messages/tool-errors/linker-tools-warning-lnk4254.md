@@ -25,7 +25,7 @@ For more information, see,
 
 The following sample generates LNK4254.
 
-```
+```cpp
 // LNK4254.cpp
 // compile with: /W1 /link /WX
 // LNK4254 expected

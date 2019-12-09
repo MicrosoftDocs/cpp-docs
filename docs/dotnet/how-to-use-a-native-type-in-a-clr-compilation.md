@@ -17,7 +17,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../build/
 
 This sample creates a component that defines and uses a native type.
 
-```
+```cpp
 // use_native_type_in_clr.cpp
 // compile with: /clr /LD
 public struct NativeClass {
@@ -36,7 +36,7 @@ public ref struct ManagedClass {
 
 This sample defines a client that consumes the component. Notice that it is an error to access the native type, unless it is defined in the compiland.
 
-```
+```cpp
 // use_native_type_in_clr_2.cpp
 // compile with: /clr
 #using "use_native_type_in_clr.dll"

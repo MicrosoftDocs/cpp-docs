@@ -21,7 +21,7 @@ LNK4078 can also be caused by a breaking change: the section named by [init_seg]
 
 The following sample generates LNK4078.
 
-```
+```cpp
 // LNK4078.cpp
 // compile with: /W1
 // LNK4078 expected

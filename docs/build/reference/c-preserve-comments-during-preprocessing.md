@@ -21,7 +21,7 @@ This compiler option requires the **/E**, **/P**, or **/EP** option.
 
 The following code sample will display the source code comment.
 
-```
+```cpp
 // C_compiler_option.cpp
 // compile with: /E /C /c
 int i;   // a variable

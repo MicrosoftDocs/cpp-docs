@@ -34,7 +34,7 @@ The MSVC compiler will attempt to resolve cref references in one pass through th
 
 The following sample shows how you can make cref reference to a generic type, such that, the compiler will resolve the reference.
 
-```
+```cpp
 // xml_see_cref_example.cpp
 // compile with: /LD /clr /doc
 // the following cref shows how to specify the reference, such that,

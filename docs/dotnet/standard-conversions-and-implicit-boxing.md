@@ -10,7 +10,7 @@ A standard conversion will be chosen by the compiler over a conversion that requ
 
 ## Example
 
-```
+```cpp
 // clr_implicit_boxing_Std_conversion.cpp
 // compile with: /clr
 int f3(int ^ i) {   // requires boxing

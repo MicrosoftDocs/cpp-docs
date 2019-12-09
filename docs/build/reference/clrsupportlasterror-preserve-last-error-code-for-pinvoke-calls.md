@@ -75,7 +75,7 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 
 The following sample defines a native DLL with one exported function that modifies last error.
 
-```
+```cpp
 // CLRSUPPORTLASTERROR_dll.cpp
 // compile with: /LD
 #include <windows.h>
@@ -92,7 +92,7 @@ __declspec(dllexport) double MySqrt(__int64 n) {
 
 The following sample consumes the DLL, demonstrating how to use **/CLRSUPPORTLASTERROR**.
 
-```
+```cpp
 // CLRSUPPORTLASTERROR_client.cpp
 // compile with: /clr CLRSUPPORTLASTERROR_dll.lib /link /clrsupportlasterror:systemdll
 // processor: x86

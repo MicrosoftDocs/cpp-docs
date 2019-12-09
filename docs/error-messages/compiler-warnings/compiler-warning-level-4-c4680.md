@@ -13,7 +13,7 @@ A [default](../../windows/default-cpp.md) interface was not specified for a clas
 
 The following sample generates C4680:
 
-```
+```cpp
 // C4680.cpp
 // compile with: /W4
 #include <windows.h>

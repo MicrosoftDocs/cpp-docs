@@ -15,7 +15,7 @@ A parameter to an object with a zero-size array was not passed by reference. The
 
 The following sample generates C4816:
 
-```
+```cpp
 // C4816.cpp
 // compile with: /W4
 #include <stdio.h>

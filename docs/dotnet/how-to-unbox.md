@@ -10,7 +10,7 @@ Shows how to unbox and modify a value.
 
 ## Example
 
-```
+```cpp
 // vcmcppv2_unboxing.cpp
 // compile with: /clr
 using namespace System;

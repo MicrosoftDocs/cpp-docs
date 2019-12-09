@@ -10,7 +10,7 @@ Using [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) on a valu
 
 ## Example
 
-```
+```cpp
 // vcmcppv2_explicit_boxing4.cpp
 // compile with: /clr
 public value class V {

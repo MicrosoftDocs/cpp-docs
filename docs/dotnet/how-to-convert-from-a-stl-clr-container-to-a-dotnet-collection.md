@@ -20,7 +20,7 @@ This topic shows how to convert STL/CLR containers to their equivalent .NET coll
 
 In this example, we create a STL/CLR `vector` and add 5 elements to it. Then, we create a .NET collection by calling the `make_collection` function. Finally, we display the contents of the newly created collection.
 
-```
+```cpp
 // cliext_convert_vector_to_icollection.cpp
 // compile with: /clr
 
@@ -64,7 +64,7 @@ The contents of the System::Collections::Generic::ICollection are:
 
 In this example, we create a STL/CLR `map` and add 5 elements to it. Then, we create a .NET <xref:System.Collections.Generic.IDictionary%602> and assign the `map` directly to it. Finally, we display the contents of the newly created collection.
 
-```
+```cpp
 // cliext_convert_map_to_idictionary.cpp
 // compile with: /clr
 

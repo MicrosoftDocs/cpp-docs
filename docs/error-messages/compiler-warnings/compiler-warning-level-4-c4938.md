@@ -13,7 +13,7 @@ You should not use [/fp:strict](../../build/reference/fp-specify-floating-point-
 
 The following sample generates C4938:
 
-```
+```cpp
 // C4938.cpp
 // compile with: /openmp /W4 /fp:strict /c
 // #pragma fenv_access(on)

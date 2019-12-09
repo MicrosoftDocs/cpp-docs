@@ -10,7 +10,7 @@ An interface can have a static constructor, which can be used to initialize stat
 
 ## Example
 
-```
+```cpp
 // mcppv2_interface_class2.cpp
 // compile with: /clr
 using namespace System;

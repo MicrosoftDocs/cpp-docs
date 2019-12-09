@@ -19,7 +19,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 The example demonstrates passing an ANSI string from a managed to an unmanaged function using <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A>. This method allocates memory on the unmanaged heap and returns the address after performing the conversion. This means that no pinning is necessary (because memory on the GC heap is not being passed to the unmanaged function) and that the IntPtr returned from <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> must be explicitly released or a memory leak results.
 
-```
+```cpp
 // MarshalANSI1.cpp
 // compile with: /clr
 #include <iostream>
@@ -53,7 +53,7 @@ int main() {
 
 The following example demonstrates the data marshaling required to access an ANSI string in a managed function that is called by an unmanaged function. The managed function, on receiving the native string, can either use it directly or convert it to a managed string using the <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> method, as shown.
 
-```
+```cpp
 // MarshalANSI2.cpp
 // compile with: /clr
 #include <iostream>

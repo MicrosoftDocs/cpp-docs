@@ -27,7 +27,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 The following sample generates LNK4248. Define struct A to resolve.
 
-```
+```cpp
 // LNK4248.cpp
 // compile with: /clr /W1
 // LNK4248 expected
@@ -43,7 +43,7 @@ int main() {
 
 The following sample has a forward definition of a type.
 
-```
+```cpp
 // LNK4248_2.cpp
 // compile with: /clr /c
 class A;   // provide a definition for A here to resolve
@@ -60,7 +60,7 @@ int main() {
 
 The following sample generates LNK4248.
 
-```
+```cpp
 // LNK4248_3.cpp
 // compile with: /c
 // post-build command: link LNK4248_2.obj LNK4248_3.obj

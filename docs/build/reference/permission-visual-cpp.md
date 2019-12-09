@@ -35,7 +35,7 @@ The MSVC compiler will attempt to resolve cref references in one pass through th
 
 ## Example
 
-```
+```cpp
 // xml_permission_tag.cpp
 // compile with: /clr /doc /LD
 // post-build command: xdcmake xml_permission_tag.dll
