@@ -1,6 +1,6 @@
 ---
 title: "SEGMENT"
-ms.date: "08/30/2018"
+ms.date: "12/06/2019"
 f1_keywords: ["SEGMENT"]
 helpviewer_keywords: ["SEGMENT directive"]
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
@@ -31,10 +31,10 @@ The range of memory addresses from which a starting address for the segment can 
 
 If this parameter is not specified, **PARA** is used by default.
 
-*combine*\
+*combine* (32-bit MASM only)\
 **PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**
 
-*use*\
+*use* (32-bit MASM only)\
 **USE16**, **USE32**, **FLAT**
 
 *characteristics*\
