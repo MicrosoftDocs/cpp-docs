@@ -13,7 +13,7 @@ A throw object cannot be handled in the **catch** block. Each type that cannot b
 
 The following sample generates C4673:
 
-```
+```cpp
 // C4673.cpp
 // compile with: /EHsc /W4
 class Base {

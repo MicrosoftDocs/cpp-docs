@@ -31,7 +31,7 @@ For more information, see:
 
 The following sample generates LNK1301:
 
-```
+```cpp
 // LNK1301.cpp
 // compile with: /clr /GL /link /LTCG:PGI LNK1301.obj
 // LNK1301 expected

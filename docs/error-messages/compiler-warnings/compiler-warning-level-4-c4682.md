@@ -15,7 +15,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4682:
 
-```
+```cpp
 // C4682.cpp
 // compile with: /W4
 #pragma warning(default : 4682)

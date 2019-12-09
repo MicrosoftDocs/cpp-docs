@@ -11,12 +11,12 @@ This object file does not define any previously undefined public symbols, so it 
 
 Consider the following two code snippets.
 
-```
+```cpp
 // a.cpp
 #include <atlbase.h>
 ```
 
-```
+```cpp
 // b.cpp
 #include <atlbase.h>
 int function()
