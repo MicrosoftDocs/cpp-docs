@@ -29,7 +29,7 @@ For more information, see [CRT Library Features](../../c-runtime-library/crt-lib
 
 When compiling with **/Zl**, `_VC_NODEFAULTLIB` is defined.  For example:
 
-```
+```cpp
 // vc_nodefaultlib.cpp
 // compile with: /Zl
 void Test() {

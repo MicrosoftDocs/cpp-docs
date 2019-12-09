@@ -12,7 +12,7 @@ This is accomplished by binding a delegate to the <xref:System.Windows.Forms.App
 
 ## Example
 
-```
+```cpp
 // global_exception_handler.cpp
 // compile with: /clr
 #using <system.dll>

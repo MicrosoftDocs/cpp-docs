@@ -99,7 +99,7 @@ namespace msclr {
 
 The following example extends the marshaling library with a conversion that does not require a context. In this example, the code converts the employee information from a native data type to a managed data type.
 
-```
+```cpp
 // MyMarshalNoContext.cpp
 // compile with: /clr
 #include <msclr/marshal.h>
@@ -161,7 +161,7 @@ Managed zip code: 98111
 
 The following example converts the employee information from a managed data type to a native data type. This conversion requires a marshaling context.
 
-```
+```cpp
 // MyMarshalContext.cpp
 // compile with: /clr
 #include <stdlib.h>

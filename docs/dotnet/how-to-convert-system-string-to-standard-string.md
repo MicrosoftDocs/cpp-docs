@@ -11,7 +11,7 @@ You can convert a <xref:System.String> to `std::string` or `std::wstring`, witho
 
 ## Example
 
-```
+```cpp
 // convert_system_string.cpp
 // compile with: /clr
 #include <string>

@@ -26,7 +26,7 @@ When passed to [lock::lock](../dotnet/lock-lock.md), `lock_later` specifies that
 
 This example uses a single instance of a class across multiple threads.  The class uses a lock on itself to ensure that accesses to its internal data are consistent for each thread.  The main application thread uses a lock on the same instance of the class to periodically check to see if any worker threads still exist, and waits to exit until all worker threads have completed their tasks.
 
-```
+```cpp
 // msl_lock_lock_when.cpp
 // compile with: /clr
 #include <msclr/lock.h>

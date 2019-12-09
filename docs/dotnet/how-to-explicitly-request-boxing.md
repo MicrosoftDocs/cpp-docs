@@ -10,7 +10,7 @@ You can explicitly request boxing by assigning a variable to a variable of type 
 
 ## Example
 
-```
+```cpp
 // vcmcppv2_explicit_boxing3.cpp
 // compile with: /clr
 using namespace System;

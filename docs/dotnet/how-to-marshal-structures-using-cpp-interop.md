@@ -15,7 +15,7 @@ The following code examples use the [managed, unmanaged](../preprocessor/managed
 
 The following example demonstrates passing a structure from a managed to an unmanaged function, both by value and by reference. Because the structure in this example contains only simple, intrinsic data types (see [Blittable and Non-Blittable Types](/dotnet/framework/interop/blittable-and-non-blittable-types)), no special marshaling is required. To marshal non-blittable structures, such as those that contain pointers, see [How to: Marshal Embedded Pointers Using C++ Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
 
-```
+```cpp
 // PassStruct1.cpp
 // compile with: /clr
 
@@ -73,7 +73,7 @@ int main() {
 
 The following example demonstrates passing a structure from an unmanaged to a managed function, both by value and by reference. Because the structure in this example contains only simple, intrinsic data types (see [Blittable and Non-Blittable Types](/dotnet/framework/interop/blittable-and-non-blittable-types)), no special marshalling is required. To marshal non-blittable structures, such as those that contain pointers, see [How to: Marshal Embedded Pointers Using C++ Interop](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
 
-```
+```cpp
 // PassStruct2.cpp
 // compile with: /clr
 #include <stdio.h>

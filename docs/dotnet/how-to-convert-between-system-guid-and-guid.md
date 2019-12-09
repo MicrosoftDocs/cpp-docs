@@ -11,7 +11,7 @@ The following code sample shows how to convert between a <xref:System.Guid> and 
 
 ## Example
 
-```
+```cpp
 // convert_guids.cpp
 // compile with: /clr
 #include <windows.h>

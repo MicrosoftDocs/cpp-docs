@@ -41,7 +41,7 @@ Throws `System::ArgumentNullException(_EXCEPTION_NULLPTR)` if the input paramete
 
 This example marshals from a `const char*` to a `System::String` variable type.
 
-```
+```cpp
 // marshal_as_test.cpp
 // compile with: /clr
 #include <stdlib.h>
