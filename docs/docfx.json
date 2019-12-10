@@ -210,13 +210,7 @@
       }
     },
     "template": [],
-    "xref": [
-      "msdn.4.5.2.zip",
-      "namespaces.4.5.2.zip",
-      "vs.110.zip",
-      "vs.140.zip",
-      "office15.zip"
-    ],
+    "xref": [],
     "dest": "vcppdocs",
     "groups": {
       "group-vc2015": {

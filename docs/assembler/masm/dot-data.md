@@ -1,11 +1,11 @@
 ---
 title: ".DATA"
-ms.date: "08/30/2018"
+ms.date: "12/06/2019"
 f1_keywords: [".DATA"]
 helpviewer_keywords: [".DATA directive"]
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 ---
-# .DATA
+# .DATA (32-bit MASM)
 
 When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for initialized data (segment name _DATA).
 

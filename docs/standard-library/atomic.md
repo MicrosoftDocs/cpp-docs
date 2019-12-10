@@ -1,6 +1,7 @@
 ---
 title: "&lt;atomic&gt;"
-ms.date: "11/04/2016"
+description: "Describes the types and functions available in the atomic header of the Standard C++ library."
+ms.date: "12/06/2019"
 f1_keywords: ["<atomic>", "atomic/std::atomic_int_least32_t", "atomic/std::atomic_ullong", "atomic/std::atomic_ptrdiff_t", "atomic/std::atomic_char16_t", "atomic/std::atomic_schar", "atomic/std::atomic_ulong", "atomic/std::atomic_uint_fast32_t", "atomic/std::atomic_uint8_t", "atomic/std::atomic_int32_t", "atomic/std::atomic_uint_fast64_t", "atomic/std::atomic_uint32_t", "atomic/std::atomic_int16_t", "atomic/std::atomic_uintmax_t", "atomic/std::atomic_intmax_t", "atomic/std::atomic_long", "atomic/std::atomic_int", "atomic/std::atomic_uint_least8_t", "atomic/std::atomic_size_t", "atomic/std::atomic_uint_fast16_t", "atomic/std::atomic_wchar_t", "atomic/std::atomic_int_fast64_t", "atomic/std::atomic_uint_fast8_t", "atomic/std::atomic_int_fast8_t", "atomic/std::atomic_intptr_t", "atomic/std::atomic_uint", "atomic/std::atomic_uint16_t", "atomic/std::atomic_char32_t", "atomic/std::atomic_uint64_t", "atomic/std::atomic_ushort", "atomic/std::atomic_int_least16_t", "atomic/std::atomic_char", "atomic/std::atomic_uint_least32_t", "atomic/std::atomic_uintptr_t", "atomic/std::atomic_short", "atomic/std::atomic_llong", "atomic/std::atomic_uint_least16_t", "atomic/std::atomic_int_fast16_t", "atomic/std::atomic_int_least8_t", "atomic/std::atomic_int_least64_t", "atomic/std::atomic_int_fast32_t", "atomic/std::atomic_uchar", "atomic/std::atomic_int8_t", "atomic/std::atomic_int64_t", "atomic/std::atomic_uint_least64_t"]
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
 ---
@@ -17,23 +18,23 @@ Defines classes and class templates to use to create types that support atomic o
 ## Remarks
 
 > [!NOTE]
-> In code that's compiled by using **/clr**, this header is blocked.
+> In code that's compiled by using [/clr:pure](../build/reference/clr-common-language-runtime-compilation.md), this header is blocked. Both **/clr:pure** and **/clr:safe** are deprecated in Visual Studio 2017 and later versions.
 
 An atomic operation has two key properties that help you use multiple threads to correctly manipulate an object without using mutex locks.
 
-- Because an atomic operation is indivisible, a second atomic operation on the same object from a different thread can obtain the state of the object only before or after the first atomic operation.
+- Because an atomic operation is indivisible, a second atomic operation on the same object from a different thread can obtain the object's state only before or after the first atomic operation.
 
 - Based on its [memory_order](../standard-library/atomic-enums.md#memory_order_enum) argument, an atomic operation establishes ordering requirements for the visibility of the effects of other atomic operations in the same thread. Consequently, it inhibits compiler optimizations that violate the ordering requirements.
 
 On some platforms, it might not be possible to efficiently implement atomic operations for some types without using `mutex` locks. An atomic type is *lock-free* if no atomic operations on that type use locks.
 
-**C++11**: In signal-handlers you can perform atomic operations on an object `obj` if `obj.is_lock_free()` or `atomic_is_lock_free(x)` are true.
+**C++11**: In signal-handlers, you can perform atomic operations on an object `obj` if `obj.is_lock_free()` or `atomic_is_lock_free(x)` are true.
 
 The class [atomic_flag](../standard-library/atomic-flag-structure.md) provides a minimal atomic type that holds a **bool** flag. Its operations are always lock-free.
 
 The class template `atomic<T>` stores an object of its argument type `T` and provides atomic access to that stored value. You can instantiate it by using any type that can be copied by using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) and tested for equality by using [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md). In particular, you can use it with user-defined types that meet these requirements and, in many cases, with floating-point types.
 
-The template also has a set of specializations for integral types and a partial specialization for pointers. These specializations provide additional operations that are not available through the primary template.
+The template also has a set of specializations for integral types and a partial specialization for pointers. These specializations provide additional operations that aren't available through the primary template.
 
 ## Pointer Specializations
 
@@ -41,11 +42,11 @@ The `atomic<T *>` partial specializations apply to all pointer types. They provi
 
 ## Integral Specializations
 
-The `atomic<integral>` specializations apply to all integral types. They provide additional operations that are not available through the primary template.
+The `atomic<integral>` specializations apply to all integral types. They provide additional operations that aren't available through the primary template.
 
-Each `atomic<integral>` type has a corresponding macro that you can use in an `if directive` to determine at compile time whether operations on that type are lock-free. If the value of the macro is zero, operations on the type are not lock-free. If the value is 1, operations might be lock-free, and a runtime check is required. If the value is 2, operations are lock-free. You can use the function `atomic_is_lock_free` to determine at runtime whether operations on the type are lock-free.
+Each `atomic<integral>` type has a corresponding macro that you can use in an `if directive` to determine at compile time whether operations on that type are lock-free. If the value of the macro is zero, operations on the type aren't lock-free. If the value is 1, operations might be lock-free, and a runtime check is required. If the value is 2, operations are lock-free. You can use the function `atomic_is_lock_free` to determine at runtime whether operations on the type are lock-free.
 
-For each of the integral types, there is a corresponding named atomic type that manages an object of that integral type. Each `atomic_integral` type has the same set of member functions as the corresponding instantiation of `atomic<T>` and can be passed to any of the non-member atomic functions.
+For each of the integral types, there's a corresponding named atomic type that manages an object of that integral type. Each `atomic_integral` type has the same set of member functions as the corresponding instantiation of `atomic<T>` and can be passed to any of the non-member atomic functions.
 
 |`atomic_integral` Type|Integral Type|`atomic_is_lock_free` Macro|
 |----------------------------|-------------------|---------------------------------|
@@ -114,7 +115,7 @@ Typedef names exist for specializations of the atomic template for some of the t
 
 ## Functions
 
-In the following list, the functions that do not end in `_explicit` have the semantics of the corresponding `_explicit`, except that they have the implicit [memory_order](../standard-library/atomic-enums.md#memory_order_enum) arguments of `memory_order_seq_cst`.
+In the following list, the functions that don't end in `_explicit` have the semantics of the corresponding `_explicit`, except that they have the implicit [memory_order](../standard-library/atomic-enums.md#memory_order_enum) arguments of `memory_order_seq_cst`.
 
 |Name|Description|
 |----------|-----------------|
