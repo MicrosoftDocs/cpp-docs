@@ -7,7 +7,7 @@ ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
 ---
 # concurrent_vector Class
 
-The `concurrent_vector` class is a sequence container class that allows random access to any element. It enables concurrency-safe append, element access, iterator access, and iterator traversal operations.
+The `concurrent_vector` class is a sequence container class that allows random access to any element. It enables concurrency-safe append, element access, iterator access, and iterator traversal operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
 ## Syntax
 
