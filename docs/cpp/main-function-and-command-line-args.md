@@ -6,7 +6,7 @@ ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
 ---
 # main function and command-line arguments
 
-All C++ programs must have a `main` function. If you try to compile a C++ *.exe* project without a main function, the compiler will raise an error. Dynamic-link libraries and static libraries don't have a `main` function. Although `main` is the starting point of execution, but before a program enters the `main` function, all static class members without explicit initializers are set to zero. In Microsoft C++, global static objects are also initialized before entry to `main`. Several restrictions apply to the `main` function that do not apply to any other C++ functions. The `main` function:
+All C++ programs must have a `main` function. If you try to compile a C++ *.exe* project without a main function, the compiler will raise an error. (Dynamic-link libraries and static libraries don't have a `main` function.) The `main` function is where your source code begins execution, but before a program enters the `main` function, all static class members without explicit initializers are set to zero. In Microsoft C++, global static objects are also initialized before entry to `main`. Several restrictions apply to the `main` function that do not apply to any other C++ functions. The `main` function:
 
 - Cannot be overloaded (see [Function Overloading](function-overloading.md)).
 - Cannot be declared as **inline**.
