@@ -3691,8 +3691,6 @@
                   items: 
                     - name: Declarations and definitions
                       href: cpp/declarations-and-definitions-cpp.md
-                    - name: Specifiers
-                      href: cpp/specifiers.md
                     - name: extern
                       href: cpp/extern-cpp.md
                     - name: Header files
@@ -3703,8 +3701,6 @@
                       href: cpp/aliases-and-typedefs-cpp.md
                     - name: using declaration
                       href: cpp/using-declaration.md
-                    - name: Resolving ambiguous declarations
-                      href: cpp/resolving-ambiguous-declarations-cpp.md
                     - name: Storage classes
                       href: cpp/storage-classes-cpp.md
                     - name: const
@@ -3724,12 +3720,7 @@
                 - name: Header files
                   href: cpp/header-files-cpp.md
                 - name: Program and linkage
-                  expanded: false
-                  items: 
-                    - name: Program and linkage
-                      href: cpp/program-and-linkage-cpp.md
-                    - name: extern
-                      href: cpp/using-extern-to-specify-linkage.md
+                  href: cpp/program-and-linkage-cpp.md
                 - name: Startup and termination
                   expanded: false
                   items: 
@@ -3780,8 +3771,6 @@
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Temporary objects
                   href: cpp/temporary-objects.md
-                - name: Named return value optimization
-                  href: cpp/nrvo-cpp.md
                 - name: Alignment (C++ declarations)
                   href: cpp/alignment-cpp-declarations.md
                 - name: alignof and alignas
