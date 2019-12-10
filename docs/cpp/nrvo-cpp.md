@@ -1,5 +1,5 @@
 ---
-title: "Named Return Value Optimization"
+title: "Return Value Optimizations"
 ms.date: "12/10/2019"
 description: "The named return value optimization (NRVO) in the Microsoft C++ compiler eliminates redundant copy constructor and destructor calls in various situations."
 helpviewer_keywords: ["NRVO [C++]", "Named return value optimization [C++]"]
