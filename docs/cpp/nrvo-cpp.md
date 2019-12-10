@@ -73,7 +73,7 @@ A MyFunction(A &_hiddenArg, B &var)
 }
 ```
 
-# Example 1: Simple NRVO demonstration
+## Example 1: Simple NRVO demonstration
 
 The following example demonstrates NRVO in action by outputting a message whenever the constructor, copy constructor and destructor are invoked:
 
