@@ -836,6 +836,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/c-runtime-library/inp-inpw.md",
+      "redirect_url": "/cpp/c-runtime-library/inp-inpw-inpd",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/c-runtime-library/outp-outpw.md",
+      "redirect_url": "/cpp/c-runtime-library/outp-outpw-outpd",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/c-runtime-library/precision-specification.md",
       "redirect_url": "/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions#precision",
       "redirect_document_id": false
