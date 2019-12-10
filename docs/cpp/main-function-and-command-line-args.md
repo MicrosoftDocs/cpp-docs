@@ -40,8 +40,6 @@ If no return value is specified, the compiler supplies a return value of zero. A
 
 **END Microsoft Specific**
 
-The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but are not required by the compiler. For more information and an example, see [Argument Definitions](../cpp/argument-definitions.md).
-
 ## Command line arguments
 
 The arguments in the prototype
@@ -51,7 +49,7 @@ int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ```
 
-allow convenient command-line parsing of arguments and, optionally, access to environment variables. The argument definitions are as follows:
+allow convenient command-line parsing of arguments and, optionally, access to environment variables. The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but you can name them whatever you like. The argument definitions are as follows:
 
 *argc*<br/>
 An integer that contains the count of arguments that follow in *argv*. The *argc* parameter is always greater than or equal to 1.
@@ -62,7 +60,7 @@ An array of null-terminated strings representing command-line arguments entered 
 The first command-line argument is always `argv[1]` and the last one is `argv[argc - 1]`.
 
 > [!NOTE]
-> By convention, `argv[0]` is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv[0]` may not be the executable name; use [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
+> By convention, `argv[0]` is the command with which the program is invoked. However, it is possible to spawn a process using [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv[0]` may not be the executable name; use [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to retrieve the executable name, and its fully-qualified path.
 
 **Microsoft Specific**
 
