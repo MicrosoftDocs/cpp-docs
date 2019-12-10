@@ -3684,23 +3684,19 @@
               items: 
                 - name: Basic concepts
                   href: cpp/basic-concepts-cpp.md
+                - name: C++ type system
+                  href: cpp/cpp-type-system-modern-cpp.md
                 - name: Declarations and definitions
                   expanded: false
                   items: 
-                    - name: C++ type system
-                      href: cpp/cpp-type-system-modern-cpp.md
                     - name: Declarations and definitions
                       href: cpp/declarations-and-definitions-cpp.md
-                    - name: Overview of declarators
-                      href: cpp/overview-of-declarators.md
                     - name: Specifiers
                       href: cpp/specifiers.md
                     - name: extern
                       href: cpp/extern-cpp.md
                     - name: Header files
                       href: cpp/header-files-cpp.md
-                    - name: Point of declaration in C++
-                      href: cpp/point-of-declaration-in-cpp.md
                     - name: Initializers
                       href: cpp/initializers.md
                     - name: Aliases and typedefs
