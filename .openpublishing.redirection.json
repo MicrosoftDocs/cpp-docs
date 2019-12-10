@@ -786,6 +786,21 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/specifiers.md",
+         "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/overview-of-declarators.md",
+         "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "docs/cpp/point-of-declaration-in-cpp.md",
+         "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/template-friends.md",
          "redirect_url": "/cpp/cpp/templates-cpp",
          "redirect_document_id": false
