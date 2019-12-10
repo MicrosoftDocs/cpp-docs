@@ -23,7 +23,7 @@ The samples in this section just illustrate how `PInvoke` can be used. `PInvoke`
 
 The following example shows the use of `PInvoke` in a Visual C++ program. The native function puts is defined in msvcrt.dll. The DllImport attribute is used for the declaration of puts.
 
-```
+```cpp
 // platform_invocation_services.cpp
 // compile with: /clr
 using namespace System;
@@ -40,7 +40,7 @@ int main() {
 
 The following sample is equivalent to the previous sample, but uses IJW.
 
-```
+```cpp
 // platform_invocation_services_2.cpp
 // compile with: /clr
 using namespace System;
@@ -133,7 +133,7 @@ char* fstringA(char* param) {
 
 The following sample exhibits this problem, and even though the program may seem to give the correct output, the output is coming from memory that had been freed.
 
-```
+```cpp
 // platform_invocation_services_5.cpp
 // compile with: /clr /c
 using namespace System;
@@ -188,7 +188,7 @@ You can specify marshaling information for individual arguments of a native func
 
 In this example, the string is marshaled as a double-byte Unicode character string, LPWStr. The output is the first letter of Hello World! because the second byte of the marshaled string is null, and puts interprets this as the end-of-string marker.
 
-```
+```cpp
 // platform_invocation_services_3.cpp
 // compile with: /clr
 using namespace System;

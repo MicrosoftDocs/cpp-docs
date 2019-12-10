@@ -15,7 +15,7 @@ An alignment greater than 16 was specified, but on some platforms, if the functi
 
 The following sample generates C4764:
 
-```
+```cpp
 // C4764.cpp
 // compile with: /W4 /EHsc
 // processor: x64 IPF

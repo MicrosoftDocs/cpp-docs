@@ -21,7 +21,7 @@ Error and warning messages from the C++ compiler can be followed by additional i
 
 Not all error and warning messages have an additional line of information. The following code will generate an error that has an additional line of information; it will let you test the effect when you use **/WL**.
 
-```
+```cpp
 // compiler_option_WL.cpp
 // compile with: /WL
 #include <queue>

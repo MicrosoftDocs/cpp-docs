@@ -30,7 +30,7 @@ Another `auto_gcroot`.
 
 ## Example
 
-```
+```cpp
 // msl_swap_auto_gcroot.cpp
 // compile with: /clr
 #include <msclr\auto_gcroot.h>

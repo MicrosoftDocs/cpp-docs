@@ -15,7 +15,7 @@ Examples of such strings are __cdecl and \__forceinline.  Note, under /Za, only 
 
 The following sample generates C4937:
 
-```
+```cpp
 // C4937.cpp
 // compile with: /openmp /W4
 #include "omp.h"

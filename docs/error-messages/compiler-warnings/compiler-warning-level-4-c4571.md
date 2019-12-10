@@ -29,7 +29,7 @@ See [/EH (Exception Handling Model)](../../build/reference/eh-exception-handling
 
 The following sample generates C4571.
 
-```
+```cpp
 // C4571.cpp
 // compile with: /EHs /W4 /c
 #pragma warning(default : 4571)

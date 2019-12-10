@@ -15,7 +15,7 @@ When a comma occurs in an array index expression, the compiler uses the value af
 
 The following sample generates C4709:
 
-```
+```cpp
 // C4709.cpp
 // compile with: /W4
 #include <stdio.h>

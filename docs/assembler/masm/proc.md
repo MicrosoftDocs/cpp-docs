@@ -1,6 +1,6 @@
 ---
 title: "PROC"
-ms.date: "08/30/2018"
+ms.date: "12/06/2019"
 f1_keywords: ["PROC"]
 helpviewer_keywords: ["PROC directive"]
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
@@ -17,6 +17,8 @@ Marks start and end of a procedure block called *label*. The statements in the b
 > *label* **ENDP**
 
 ## Remarks
+
+The ⟦*distance*⟧ and ⟦*language-type*⟧ arguments are valid only in 32-bit MASM.
 
 ⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
 

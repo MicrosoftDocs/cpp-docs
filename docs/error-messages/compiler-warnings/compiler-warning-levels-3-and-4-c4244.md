@@ -17,7 +17,7 @@ The conversion may have a problem due to implicit conversions.
 
 The following sample generates C4244:
 
-```
+```cpp
 // C4244_level4.cpp
 // compile with: /W4
 int aa;
@@ -35,7 +35,7 @@ int main() {
 
 For more information, see [Usual Arithmetic Conversions](../../c-language/usual-arithmetic-conversions.md).
 
-```
+```cpp
 // C4244_level3.cpp
 // compile with: /W3
 int main() {
@@ -48,7 +48,7 @@ Warning C4244 can occur when building code for 64-bit targets that does not gene
 
 The following sample generates C4244 when compiled for 64-bit targets:
 
-```
+```cpp
 // C4244_level3_b.cpp
 // compile with: /W3
 int main() {

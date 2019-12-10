@@ -30,7 +30,7 @@ Another `auto_handle`.
 
 ## Example
 
-```
+```cpp
 // msl_swap_auto_handle.cpp
 // compile with: /clr
 #include <msclr\auto_handle.h>

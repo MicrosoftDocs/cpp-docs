@@ -11,7 +11,7 @@ ms.assetid: f745d7fa-dc08-46f1-9b97-0977be58a008
 
 The following example shows how to use `initionly`:
 
-```
+```cpp
 // mcpp_initonly.cpp
 // compile with: /clr /c
 ref struct Y1 {

@@ -19,14 +19,14 @@ To resolve LNK1237, do not compile the symbol with **/GL** or use [/INCLUDE (For
 
 The following sample generates LNK1237. To resolve this error, do not initialize the array in LNK1237_a.cpp and add **/include:__chkstk** to the link command.
 
-```
+```cpp
 // LNK1237_a.cpp
 int main() {
    char c[5000] = {0};
 }
 ```
 
-```
+```cpp
 // LNK1237_b.cpp
 // compile with: /GS- /GL /c LNK1237_a.cpp
 // processor: x86

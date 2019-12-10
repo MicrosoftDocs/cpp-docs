@@ -17,7 +17,7 @@ For more information, see [XML Documentation](../../build/reference/xml-document
 
 The following sample generates C4634.
 
-```
+```cpp
 // C4634.cpp
 // compile with: /W4 /doc /c
 /// This is a namespace.   // C4634
@@ -30,7 +30,7 @@ namespace hello {
 
 The following sample generates C4634.
 
-```
+```cpp
 // C4634_b.cpp
 // compile with: /W4 /doc /c
 /// This is a template.   // C4634

@@ -26,7 +26,7 @@ The following sample demonstrates double thunking. When compiled native (without
 
 ### Code
 
-```
+```cpp
 // double_thunking.cpp
 // compile with: /clr
 #include <stdio.h>
@@ -84,7 +84,7 @@ The previous sample demonstrated the existence of double thunking. This sample s
 
 ### Code
 
-```
+```cpp
 // double_thunking_2.cpp
 // compile with: /clr
 #include <time.h>

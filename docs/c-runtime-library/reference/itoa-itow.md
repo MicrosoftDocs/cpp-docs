@@ -28,7 +28,7 @@ wchar_t * _ultow( unsigned long value, wchar_t *buffer, int radix );
 wchar_t * _i64tow( long long value, wchar_t *buffer, int radix );
 wchar_t * _ui64tow( unsigned long long value, wchar_t *buffer, int radix );
 
-// These Posix versions of the functions have deprecated names:
+// These POSIX versions of the functions have deprecated names:
 char * itoa( int value, char *buffer, int radix );
 char * ltoa( long value, char *buffer, int radix );
 char * ultoa( unsigned long value, char *buffer, int radix );
@@ -102,9 +102,9 @@ To use these functions without the deprecation warning, define the **_CRT_SECURE
 
 In C++, these functions have template overloads that invoke their safer counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
-The Posix names **itoa**, **ltoa**, and **ultoa** exist as aliases for the **_itoa**, **_ltoa**, and **_ultoa** functions. The Posix names are deprecated because they do not follow the implementation-specific function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *new_name*. We recommend you change your source code to use the safer versions of these functions, **_itoa_s**, **_ltoa_s**, or **_ultoa_s**. For more information, see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
+The POSIX names **itoa**, **ltoa**, and **ultoa** exist as aliases for the **_itoa**, **_ltoa**, and **_ultoa** functions. The POSIX names are deprecated because they do not follow the implementation-specific global function name conventions of ISO C. By default, these functions cause deprecation warning [C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md): **The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name:** *new_name*. We recommend you change your source code to use the safer versions of these functions, **_itoa_s**, **_ltoa_s**, or **_ultoa_s**. For more information, see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
 
-For source code portability, you may prefer to retain the Posix names in your code. To use these functions without the deprecation warning, define both the **_CRT_NONSTDC_NO_WARNINGS** and **_CRT_SECURE_NO_WARNINGS** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** and **/D_CRT_NONSTDC_NO_WARNINGS** compiler options to the **cl** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file. To define the macros in your source code, use **#define** directives before you include any CRT header, as in this example:
+For source code portability, you may prefer to retain the POSIX names in your code. To use these functions without the deprecation warning, define both the **_CRT_NONSTDC_NO_WARNINGS** and **_CRT_SECURE_NO_WARNINGS** preprocessor macros before including any CRT headers. You can do this on the command line in a developer command prompt by adding the **/D_CRT_SECURE_NO_WARNINGS** and **/D_CRT_NONSTDC_NO_WARNINGS** compiler options to the **cl** command. Otherwise, define the macros in your source files. If you use precompiled headers, define the macros at the top of the precompiled header include file. To define the macros in your source code, use **#define** directives before you include any CRT header, as in this example:
 
 ```C
 #define _CRT_NONSTDC_NO_WARNINGS 1

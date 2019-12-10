@@ -35,7 +35,7 @@ You can insert a handle to a reference type into an STL/CLR container. A handle 
 
 The following example shows how to insert a handle to an Employee object into a [cliext::set](../dotnet/set-stl-clr.md).
 
-```
+```cpp
 // cliext_container_valid_reference_handle.cpp
 // compile with: /clr
 
@@ -130,7 +130,7 @@ It is also possible to insert a reference type (rather than a handle to a refere
 
 The following example shows how to insert an Employee object into a `cliext::set`.
 
-```
+```cpp
 // cliext_container_valid_reference.cpp
 // compile with: /clr
 
@@ -227,7 +227,7 @@ A value type element can be one of the standard value types, such as an `int`, o
 
 The following example modifies the first example by making the Employee class a value type. This value type is then inserted into a `cliext::set` just as in the first example.
 
-```
+```cpp
 // cliext_container_valid_valuetype.cpp
 // compile with: /clr
 

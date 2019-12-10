@@ -36,7 +36,7 @@ The MSVC compiler will attempt to resolve cref references in one pass through th
 
 In the following sample, an unresolved symbol is referenced in a cref. The XML comment for the cref to B::Test will be `<seealso cref="!:B::Test" />`, whereas the reference to A::Test is well-formed `<seealso cref="M:A.Test" />`.
 
-```
+```cpp
 // xml_seealso_tag.cpp
 // compile with: /LD /clr /doc
 // post-build command: xdcmake xml_seealso_tag.dll

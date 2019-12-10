@@ -21,7 +21,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 The following sample generates LNK2033.
 
-```
+```cpp
 // LNK2033.cpp
 // compile with: /clr:safe
 // LNK2033 expected
