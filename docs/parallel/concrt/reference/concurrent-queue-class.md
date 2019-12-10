@@ -7,7 +7,7 @@ ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
 ---
 # concurrent_queue Class
 
-The `concurrent_queue` class is a sequence container class that allows first-in, first-out access to its elements. It enables a limited set of concurrency-safe operations, such as `push` and `try_pop`.
+The `concurrent_queue` class is a sequence container class that allows first-in, first-out access to its elements. It enables a limited set of concurrency-safe operations, such as `push` and `try_pop`. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
 ## Syntax
 
