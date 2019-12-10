@@ -3738,25 +3738,6 @@
                   href: cpp/main-function-and-command-line-args.md
                 - name: Program termination
                   href: cpp/program-termination.md
-                        - name: exit function
-                          href: cpp/exit-function.md
-                        - name: abort function
-                          href: cpp/abort-function.md
-                        - name: return statement in program termination
-                          href: cpp/return-statement-in-program-termination-cpp.md
-                    - name: Additional startup considerations
-                      href: cpp/additional-startup-considerations.md
-                    - name: Additional termination considerations
-                      expanded: false
-                      items: 
-                        - name: Additional termination considerations
-                          href: cpp/additional-termination-considerations.md
-                        - name: Using exit or return
-                          href: cpp/using-exit-or-return.md
-                        - name: Using atexit
-                          href: cpp/using-atexit.md
-                        - name: Using abort
-                          href: cpp/using-abort.md
                 - name: Lvalues and rvalues
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Temporary objects
