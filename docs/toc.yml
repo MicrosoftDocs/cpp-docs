@@ -3665,12 +3665,7 @@
                 - name: Identifiers
                   href: cpp/identifiers-cpp.md
                 - name: Keywords
-                  expanded: false
-                  items: 
-                    - name: Keywords
-                      href: cpp/keywords-cpp.md
-                    - name: auto keyword
-                      href: cpp/auto-keyword.md
+                  href: cpp/keywords-cpp.md
                 - name: Punctuators
                   href: cpp/punctuators-cpp.md
                 - name: Numeric, boolean, and pointer literals

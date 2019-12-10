@@ -1,20 +1,32 @@
 ---
-title: "Character Sets"
-ms.date: "05/06/2019"
-helpviewer_keywords: ["Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
+title: "Tokens and character Sets"
+ms.date: "12/10/2019"
+helpviewer_keywords: ["Tokens (C++), "Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
 ---
-# Character Sets
+# Tokens and character Sets
 
-The text of a C++ program is stored in source files that use a particular character encoding. The C++ standard specifies a basic source character set for source files and a basic execution character set for compiled files. The Microsoft C++ compiler (MSVC) allows an additional set of locale-specific characters to be used in source files and compiled files.
+The text of a C++ program consists of tokens and *white space*. A token is the smallest element of a C++ program that is meaningful to the compiler. The C++ parser recognizes these kinds of tokens:
 
-## Character sets
+- [Keywords](../cpp/keywords-cpp.md)
+- [Identifiers](../cpp/identifiers-cpp.md)
+- [Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
+- [String and Character Literals](../cpp/string-and-character-literals-cpp.md)
+- [User-Defined Literals](../cpp/user-defined-literals-cpp.md)
+- [Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+- [Punctuators](../cpp/punctuators-cpp.md)
 
-The C++ standard specifies a *basic  source character set* that may be used in source files. To represent characters outside of this set, additional characters can be specified by using a *universal character name*. When compiled, the *basic execution character set* and *basic execution wide-character set* represent the characters and strings that can appear in a program. The MSVC implementation allows additional characters in source code and compiled code.
+Tokens are usually separated by *white space*, which can be one or more:
 
-### Basic source character set
+- Blanks
+- Horizontal or vertical tabs
+- New lines
+- Form feeds
+- Comments
 
-The *basic  source character set* consists of  96 characters that may be used in source files. This set includes the space character, horizontal tab, vertical tab, form feed and new-line control characters, and this set of graphical characters:
+## Basic source character set
+
+The C++ standard specifies a *basic source character set* that may be used in source files. To represent characters outside of this set, additional characters can be specified by using a *universal character name*. The MSVC implementation allows additional characters. The *basic source character set* consists of  96 characters that may be used in source files. This set includes the space character, horizontal tab, vertical tab, form feed and new-line control characters, and this set of graphical characters:
 
 `a b c d e f g h i j k l m n o p q r s t u v w x y z`
 
@@ -49,6 +61,6 @@ The format of extended characters on the Windows clipboard is specific to applic
 
 **END Microsoft Specific**
 
-### Basic execution character set
+### Execution character sets
 
-The *basic execution character set* and the *basic execution wide-character set* consist of all the characters in the basic source character set, and the control characters that represent alert, backspace, carriage return, and the null character. The *execution character set* and *execution wide-character set* are supersets of the basic sets. They include the implementation-defined source characters outside the basic source character set. The execution character set has a locale-specific representation.
+The *execution character sets* represent the characters and strings that can appear in a compiled program. These character sets consist of all the characters permitted in a source file, and also the control characters that represent alert, backspace, carriage return, and the null character. The execution character set has a locale-specific representation.
