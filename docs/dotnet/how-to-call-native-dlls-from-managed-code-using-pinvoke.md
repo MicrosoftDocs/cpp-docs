@@ -17,7 +17,7 @@ For functions that use only intrinsic types as arguments and return values, no e
 
 Although it is not required, it is good practice to make P/Invoke declarations static members of a value class so that they do not exist in the global namespace, as demonstrated in this example.
 
-```
+```cpp
 // pinvoke_basic.cpp
 // compile with: /clr
 using namespace System;

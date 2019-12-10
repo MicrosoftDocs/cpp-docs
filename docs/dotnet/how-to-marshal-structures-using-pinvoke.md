@@ -31,7 +31,7 @@ The following code consists of an unmanaged and a managed module. The unmanaged 
 
 Note that no portion of the DLL is exposed to the managed code using the traditional #include directive. In fact, the DLL is accessed at run time only, so problems with functions imported with DllImport will not be detected at compile time.
 
-```
+```cpp
 // TraditionalDll3.cpp
 // compile with: /LD /EHsc
 #include <iostream>
@@ -77,7 +77,7 @@ void InitLocation(Location* lp) {
 
 ## Example
 
-```
+```cpp
 // MarshalStruct_pi.cpp
 // compile with: /clr
 using namespace System;

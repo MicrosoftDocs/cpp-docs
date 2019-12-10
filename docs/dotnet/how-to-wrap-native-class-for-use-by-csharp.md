@@ -11,7 +11,7 @@ This sample shows how to wrap a native C++ class so it can be consumed by code a
 
 ## Example
 
-```
+```cpp
 // wrap_native_class_for_mgd_consumption.cpp
 // compile with: /clr /LD
 #include <windows.h>

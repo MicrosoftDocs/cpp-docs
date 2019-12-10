@@ -63,8 +63,7 @@ Code Analysis for Managed Code, also known as FxCop, checks assemblies for confo
 
 ## Windows Application Verifier
 
-The [Application Verifier (AppVerifier)](/windows-hardware/drivers/debugger/application-verifier
-) can help you identify potential application compatibility, stability, and security issues.
+The [Application Verifier (AppVerifier)](/windows-hardware/drivers/debugger/enable-application-verifier) can help you identify potential application compatibility, stability, and security issues.
 
 The AppVerifier monitors how an application uses the operating system. It watches the file system, registry, memory, and APIs while the application is running, and recommends source-code fixes for issues that it uncovers.
 

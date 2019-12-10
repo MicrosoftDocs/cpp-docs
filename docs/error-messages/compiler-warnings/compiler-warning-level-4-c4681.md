@@ -13,7 +13,7 @@ A [source](../../windows/source-cpp.md) interface was not specified for a class.
 
 The following sample generates C4681:
 
-```
+```cpp
 // C4681.cpp
 // compile with: /W4 /c
 #define _ATL_ATTRIBUTES 1

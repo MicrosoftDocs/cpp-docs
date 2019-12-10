@@ -13,7 +13,7 @@ This topic discusses several ways to load unmanaged resources into a <xref:Syste
 
 If you know the size of your unmanaged resource, you can preallocate a CLR array and then load the resource into the array using a pointer to the array block of the CLR array.
 
-```
+```cpp
 // load_unmanaged_resources_into_Byte_array.cpp
 // compile with: /clr
 using namespace System;
@@ -49,7 +49,7 @@ int main() {
 
 This sample shows how to copy data from an unmanaged memory block to a managed array.
 
-```
+```cpp
 // load_unmanaged_resources_into_Byte_array_2.cpp
 // compile with: /clr
 using namespace System;

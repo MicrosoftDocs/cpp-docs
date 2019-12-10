@@ -15,7 +15,7 @@ An out parameter is specified in Visual C++ with <xref:System.Runtime.InteropSer
 
 The first part of this sample is a Visual C++ DLL with a type that contains a function with an out parameter.
 
-```
+```cpp
 // cpp_out_param.cpp
 // compile with: /LD /clr:safe
 using namespace System;

@@ -17,7 +17,7 @@ Consider the following code.  Pinning is not needed because `ppchar` is an inter
 
 If you pass `ppchar` to a native function, then it must be a pinning pointer; the garbage collector will not be able to update any pointers on the unmanaged stack frame.
 
-```
+```cpp
 // PtrToStringChars.cpp
 // compile with: /clr
 #include<vcclr.h>
@@ -41,7 +41,7 @@ abcdefg
 
 This example shows where pinning is needed.
 
-```
+```cpp
 // PtrToStringChars_2.cpp
 // compile with: /clr
 #include <string.h>
@@ -70,7 +70,7 @@ int main() {
 
 An interior pointer has all the properties of a native C++ pointer. For example, you can use it to walk a linked data structure and do insertions and deletions using only one pointer:
 
-```
+```cpp
 // PtrToStringChars_3.cpp
 // compile with: /clr /LD
 using namespace System;

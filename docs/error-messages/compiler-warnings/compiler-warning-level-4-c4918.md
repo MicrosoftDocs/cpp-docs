@@ -13,7 +13,7 @@ An unknown character was found in the optimization list of an [optimize](../../p
 
 For example, the following statement generates C4918:
 
-```
+```cpp
 // C4918.cpp
 // compile with: /W4
 #pragma optimize("X", on) // C4918 expected

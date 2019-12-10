@@ -26,7 +26,7 @@ For more information about differences in exception handling in managed and unma
 
 The C++ throw expression is extended to throw a handle to a CLR type. The following example creates a custom exception type and then throws an instance of that type:
 
-```
+```cpp
 // clr_exception_handling.cpp
 // compile with: /clr /c
 ref struct MyStruct: public System::Exception {
@@ -42,7 +42,7 @@ void GlobalFunction() {
 
 A value type must be boxed before being thrown:
 
-```
+```cpp
 // clr_exception_handling_2.cpp
 // compile with: /clr /c
 value struct MyValueStruct {
@@ -59,7 +59,7 @@ void GlobalFunction() {
 
 The same **try**/**catch** block structure can be used for catching both CLR and native exceptions:
 
-```
+```cpp
 // clr_exception_handling_3.cpp
 // compile with: /clr
 using namespace System;

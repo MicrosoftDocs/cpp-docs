@@ -1,6 +1,6 @@
 ---
 title: "COMM"
-ms.date: "08/30/2018"
+ms.date: "12/06/2019"
 f1_keywords: ["COMM"]
 helpviewer_keywords: ["COMM directive"]
 ms.assetid: a23548c4-ad04-41fa-91da-945f228de742
@@ -20,6 +20,8 @@ Communal variables are allocated by the linker, and can't be initialized. This m
 Each *definition* has the following form:
 
 ⟦*language-type*⟧ ⟦**NEAR** | **FAR**⟧ _label_**:**_type_⟦**:**_count_⟧
+
+The *language-type*, **NEAR**, and **FAR** arguments are valid only in 32-bit MASM.
 
 The optional *language-type* sets the naming conventions for the name that follows. It overrides any language specified by the **.MODEL** directive. The optional **NEAR** or **FAR** override the current memory model. The *label* is the name of the variable. The *type* can be any type specifier ([BYTE](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), and so on) or an integer specifying the number of bytes. The optional *count* specifies the number of elements in the declared data object. The default *count* is one.
 
