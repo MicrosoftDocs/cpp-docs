@@ -721,6 +721,11 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "docs/cpp/overview-file-translation.md",
+         "redirect_url": "/cpp/preprocessor/phases-of-translation.md",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "docs/cpp/auto-keyword.md",
          "redirect_url": "/cpp/cpp/auto-cpp",
          "redirect_document_id": false

@@ -3654,12 +3654,8 @@
               items: 
                 - name: Lexical conventions
                   href: cpp/lexical-conventions.md
-                - name: Overview of file translation
-                  href: cpp/overview-of-file-translation.md
-                - name: Character sets
+                - name: Tokens and character sets
                   href: cpp/character-sets.md
-                - name: Tokens
-                  href: cpp/tokens-cpp.md
                 - name: Comments
                   href: cpp/comments-cpp.md
                 - name: Identifiers
