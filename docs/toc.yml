@@ -6371,6 +6371,7 @@
                   items: 
                     - name: Files and streams
                       href: c-runtime-library/files-and-streams.md
+                    - name: Text and binary streams
                       href: c-runtime-library/text-and-binary-streams.md
                     - name: Byte and wide streams
                       href: c-runtime-library/byte-and-wide-streams.md
