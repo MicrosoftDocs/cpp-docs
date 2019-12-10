@@ -1,6 +1,7 @@
 ---
-title: "Obsolete Functions"
-ms.date: "01/22/2019"
+title: "Obsolete functions"
+description: "Lists the obsolete functions that have been deprecated and removed from the Microsoft C runtime library (CRT)."
+ms.date: "12/09/2019"
 api_name: ["_beep", "_sleep", "_loaddll", "_getdllprocaddr", "_seterrormode", "is_wctype", "_getsystime", "_setsystime"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-time-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -11,7 +12,7 @@ ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
 ---
 # Obsolete Functions
 
-Certain library functions are obsolete and have more recent equivalents. We recommend you change these to the updated versions. Other obsolete functions have been removed from the CRT. This topic lists the functions deprecated as obsolete, and the functions removed in a particular version of Visual Studio.
+Certain library functions are obsolete and have more recent equivalents. We recommend you change these functions to the updated versions. Other obsolete functions have been removed from the CRT. This article lists the functions deprecated as obsolete, and the functions removed in a particular version of Visual Studio.
 
 ## Deprecated as obsolete in Visual Studio 2015
 
@@ -36,10 +37,8 @@ Certain library functions are obsolete and have more recent equivalents. We reco
 |[_get_output_format](../c-runtime-library/get-output-format.md)|None|
 |[_heapadd](../c-runtime-library/heapadd.md)|None|
 |[_heapset](../c-runtime-library/heapset.md)|None|
-|[inp, inpw](../c-runtime-library/inp-inpw.md)|None|
-|[_inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|None|
-|[outp, outpw](../c-runtime-library/outp-outpw.md)|None|
-|[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|None|
+|[inp, inpw, _inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)|None|
+|[outp, outpw, _outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)|None|
 |[_set_output_format](../c-runtime-library/set-output-format.md)|None|
 
 ## Removed from the CRT in earlier versions of Visual Studio

@@ -8,7 +8,7 @@ ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
 
 The Parallel Patterns Library (PPL) includes several containers and objects that provide thread-safe access to their elements.
 
-A *concurrent container* provides concurrency-safe access to the most important operations. The functionality of these containers resembles those that are provided by the C++ Standard Library. For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class resembles the [std::vector](../../standard-library/vector-class.md) class, except that the `concurrent_vector` class lets you append elements in parallel. Use concurrent containers when you have parallel code that requires both read and write access to the same container.
+A *concurrent container* provides concurrency-safe access to the most important operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The functionality of these containers resembles those that are provided by the C++ Standard Library. For example, the [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class resembles the [std::vector](../../standard-library/vector-class.md) class, except that the `concurrent_vector` class lets you append elements in parallel. Use concurrent containers when you have parallel code that requires both read and write access to the same container.
 
 A *concurrent object* is shared concurrently among components. A process that computes the state of a concurrent object in parallel produces the same result as another process that computes the same state serially. The [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) class is one example of a concurrent object type. The `combinable` class lets you perform computations in parallel, and then combine those computations into a final result. Use concurrent objects when you would otherwise use a synchronization mechanism, for example, a mutex, to synchronize access to a shared variable or resource.
 
@@ -56,7 +56,7 @@ Concurrent objects:
 
 ##  <a name="vector"></a> concurrent_vector Class
 
-The [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class is a sequence container class that, just like the [std::vector](../../standard-library/vector-class.md) class, lets you randomly access its elements. The `concurrent_vector` class enables concurrency-safe append and element access operations. Append operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe.
+The [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) class is a sequence container class that, just like the [std::vector](../../standard-library/vector-class.md) class, lets you randomly access its elements. The `concurrent_vector` class enables concurrency-safe append and element access operations. Append operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
 ###  <a name="vector-differences"></a> Differences Between concurrent_vector and vector
 
@@ -80,7 +80,7 @@ The `concurrent_vector` class closely resembles the `vector` class. The complexi
 
 ###  <a name="vector-safety"></a> Concurrency-Safe Operations
 
-All methods that append to or increase the size of a `concurrent_vector` object, or access an element in a `concurrent_vector` object, are concurrency-safe. The exception to this rule is the `resize` method.
+All methods that append to or increase the size of a `concurrent_vector` object, or access an element in a `concurrent_vector` object, are concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The exception to this rule is the `resize` method.
 
 The following table shows the common `concurrent_vector` methods and operators that are concurrency-safe.
 
@@ -106,7 +106,7 @@ When you convert existing code that uses `vector` to use `concurrent_vector`, co
 
 [!code-cpp[concrt-vector-safety#1](../../parallel/concrt/codesnippet/cpp/parallel-containers-and-objects_1.cpp)]
 
-Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#push_back) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it.
+Although the `end` method is concurrency-safe, a concurrent call to the [push_back](reference/concurrent-vector-class.md#push_back) method causes the value that is returned by `end` to change. The number of elements that the iterator traverses is indeterminate. Therefore, this program can produce a different result each time that you run it. When the element type is non-trivial, it's possible for a race condition to exist between `push_back` and `end` calls. The `end` method may return an element that's allocated, but not fully initialized.
 
 ###  <a name="vector-exceptions"></a> Exception Safety
 
@@ -122,7 +122,7 @@ The data type of the vector elements, `T`, must meet the following requirements.
 
 ##  <a name="queue"></a> concurrent_queue Class
 
-The [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) class, just like the [std::queue](../../standard-library/queue-class.md) class, lets you access its front and back elements. The `concurrent_queue` class enables concurrency-safe enqueue and dequeue operations. The `concurrent_queue` class also provides iterator support that is not concurrency-safe.
+The [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) class, just like the [std::queue](../../standard-library/queue-class.md) class, lets you access its front and back elements. The `concurrent_queue` class enables concurrency-safe enqueue and dequeue operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The `concurrent_queue` class also provides iterator support that is not concurrency-safe.
 
 ###  <a name="queue-differences"></a> Differences Between concurrent_queue and queue
 
@@ -140,7 +140,7 @@ The `concurrent_queue` class closely resembles the `queue` class. The following 
 
 ###  <a name="queue-safety"></a> Concurrency-Safe Operations
 
-All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe.
+All methods that enqueue to or dequeue from a `concurrent_queue` object are concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
 The following table shows the common `concurrent_queue` methods and operators that are concurrency-safe.
 
@@ -198,7 +198,7 @@ To help avoid deadlock, no method of `concurrent_unordered_map` holds a lock whe
 
 ###  <a name="map-safety"></a> Concurrency-Safe Operations
 
-The `concurrent_unordered_map` class enables concurrency-safe insert and element-access operations. Insert operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. The following table shows the commonly used `concurrent_unordered_map` methods and operators that are concurrency-safe.
+The `concurrent_unordered_map` class enables concurrency-safe insert and element-access operations. Insert operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The following table shows the commonly used `concurrent_unordered_map` methods and operators that are concurrency-safe.
 
 |||||
 |-|-|-|-|
