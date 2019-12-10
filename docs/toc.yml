@@ -3734,33 +3734,10 @@
                       href: cpp/program-and-linkage-cpp.md
                     - name: extern
                       href: cpp/using-extern-to-specify-linkage.md
-                - name: Startup and termination
-                  expanded: false
-                  items: 
-                    - name: Startup and termination
-                      href: cpp/startup-and-termination-cpp.md
-                    - name: "main: program startup"
-                      expanded: false
-                      items: 
-                        - name: "main: program startup"
-                          href: cpp/main-program-startup.md
-                        - name: Using wmain instead of main
-                          href: cpp/using-wmain-instead-of-main.md
-                        - name: Argument definitions
-                          href: cpp/argument-definitions.md
-                        - name: Wildcard expansion
-                          href: cpp/wildcard-expansion.md
-                        - name: Parsing C++ command-line arguments
-                          href: cpp/parsing-cpp-command-line-arguments.md
-                        - name: Customizing C++ command-line processing
-                          href: cpp/customizing-cpp-command-line-processing.md
-                        - name: main function restrictions
-                          href: cpp/main-function-restrictions.md
-                    - name: Program termination
-                      expanded: false
-                      items: 
-                        - name: Program termination
-                          href: cpp/program-termination.md
+                - name: main function and command-line arguments
+                  href: cpp/main-function-and-command-line-args.md
+                - name: Program termination
+                  href: cpp/program-termination.md
                         - name: exit function
                           href: cpp/exit-function.md
                         - name: abort function
