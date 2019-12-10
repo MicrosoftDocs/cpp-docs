@@ -1,10 +1,10 @@
 ---
-title: "Tokens and character Sets"
+title: "Tokens and character sets"
 ms.date: "12/10/2019"
-helpviewer_keywords: ["Tokens (C++), "Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
+helpviewer_keywords: ["Tokens (C++)", "Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
 ---
-# Tokens and character Sets
+# Tokens and character sets
 
 The text of a C++ program consists of tokens and *white space*. A token is the smallest element of a C++ program that is meaningful to the compiler. The C++ parser recognizes these kinds of tokens:
 
