@@ -1,5 +1,6 @@
 ---
-title: "Startup and Termination (C++)"
+title: "main function and command-line arguments (C++)"
+description: "The main function is the entry point for a C++ program."
 ms.date: "12/10/2019"
 ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
 ---
@@ -98,7 +99,7 @@ int main( int argc, char *argv[], char *envp[] ) {
 }
 ```
 
-# Parsing C++ Command-Line Arguments
+## Parsing C++ command-Line arguments
 
 **Microsoft Specific**
 
@@ -144,7 +145,7 @@ int main( int argc,      // Number of strings in array argv
 
 The following table shows example input and expected output, demonstrating the rules in the preceding list.
 
-### Results of Parsing Command Lines
+### Results of parsing command lines
 
 |Command-Line Input|argv[1]|argv[2]|argv[3]|
 |-------------------------|---------------|---------------|---------------|
@@ -155,7 +156,7 @@ The following table shows example input and expected output, demonstrating the r
 
 **END Microsoft Specific**
 
-## Wildcard Expansion
+## Wildcard expansion
 
 **Microsoft Specific**
 
@@ -165,7 +166,7 @@ Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv
 
 **END Microsoft Specific**
 
-## Customizing C++ Command-Line Processing
+## Customizing C++ command-line processing
 
 **Microsoft Specific**
 
