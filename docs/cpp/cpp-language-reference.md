@@ -1,7 +1,7 @@
 ---
 title: "C++ Language Reference"
 ms.custom: "index-page"
-ms.date: "05/06/2019"
+ms.date: "12/10/2019"
 helpviewer_keywords: ["C++, language reference"]
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
 ---
@@ -40,11 +40,11 @@ A programming technique that implicitly defines a function object class and cons
 [Statements](../cpp/statements-cpp.md)<br/>
 Expression, null, compound, selection, iteration, jump, and declaration statements.
 
-[Declarations and Definitions](declarations-and-definitions-cpp.md)<br/>
-Storage-class specifiers, function definitions, initializations, enumerations, **class**, **struct**, and **union** declarations, and **typedef** declarations. Also, **inline** functions, **const** keyword, namespaces.
-
-[Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)<br/>
+[Classes and structs](../cpp/classes-and-structs-cpp.md)<br/>
 Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, **this** pointer, nested classes.
+
+[Unions](unions.md)<br/>
+User-defined types in which all members share the same memory location.
 
 [Derived Classes](../cpp/inheritance-cpp.md)<br/>
 Single and multiple inheritance, **virtual** functions, multiple base classes, **abstract** classes, scope rules. Also, the **__super** and **__interface** keywords.

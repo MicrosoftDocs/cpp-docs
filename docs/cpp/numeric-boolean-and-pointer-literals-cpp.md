@@ -1,10 +1,10 @@
 ---
-title: "Numeric, Boolean and Pointer Literals  (C++)"
+title: "Numeric, boolean and pointer literals (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["literals, C++", "constants, literals", "literals [C++]"]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
 ---
-# Numeric, Boolean and Pointer Literals  (C++)
+# Numeric, boolean and pointer literals
 
 A literal is a program element that directly represents a value. This article covers literals of type integer, floating-point, boolean and pointer. For information about string and character literals, see [String and Character Literals  (C++)](../cpp/string-and-character-literals-cpp.md). You can also define your own literals based on any of these categories; for more information see [User-Defined Literals  (C++)](../cpp/user-defined-literals-cpp.md)
 
@@ -18,8 +18,6 @@ MyClass* mc = nullptr;      // pointer literal
 ```
 
 Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an **unsigned long long** type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.
-
-## Syntax
 
 ## Integer literals
 
