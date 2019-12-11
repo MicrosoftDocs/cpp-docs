@@ -5,7 +5,7 @@ ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
 ---
 # Translation units and Linkage
 
-In a C++ program, a *symbol*, for example a variable or function name, can be declared any number of times within its scope, but it can only be defined once. This is the One Definition Rule (ODR). A *declaration* introduces (or re-introduces) a name into the program. A *definition* introduces a name and, in the case of a variable, explicitly initializes it. A *function definition* consists of the signature plus the function body. A class definition consists of the class name followed by a block that lists all the class members. (The bodies of member functions may optionally be defined separately in another file.)
+In a C++ program, a *symbol*, for example a variable or function name, can be declared any number of times within its scope, but it can only be defined once. This is the "One Definition Rule" (ODR). A *declaration* introduces (or re-introduces) a name into the program. A *definition* introduces a name and, in the case of a variable, explicitly initializes it. A *function definition* consists of the signature plus the function body. A class definition consists of the class name followed by a block that lists all the class members. (The bodies of member functions may optionally be defined separately in another file.)
 
 These are declarations:
 
@@ -40,7 +40,7 @@ The concept of *linkage* refers to the visibility of global symbols (such as var
 
 A *free function* is a function that is defined at global or namespace scope. Non-const global variables and free functions by default have *external linkage*; they are visible from any translation unit in the program. Therefore, no other global object (variable, class definition, etc.) can have that name. A symbol with *internal linkage* or *no linkage* is visible only within the translation unit in which it is declared. When a name has internal linkage, the same name may exist in another translation unit. Variables declared with class definitions or function bodies have no linkage.
 
-You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits its visiblity to the same translation unit in which it is declared. Note that in this context, **static** means something different than when applied to local variables.
+You can force a global name to have internal linkage by explicitly declaring it as **static**. This limits its visibility to the same translation unit in which it is declared. In this context, **static** means something different than when applied to local variables.
 
 The following objects have internal linkage by default:
 - const objects
