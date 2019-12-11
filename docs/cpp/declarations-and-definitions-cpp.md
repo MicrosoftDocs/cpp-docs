@@ -1,9 +1,9 @@
 ---
-title: "Declarations and Definitions (C++)"
+title: "Declarations and definitions (C++)"
 ms.date: "12/12/2019"
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
 ---
-# Declarations and Definitions (C++)
+# Declarations and definitions (C++)
 
 A C++ program consists of various entities such as variables, functions, types, and namespaces. Each of these entities must be *declared* before they can be used. A declaration specifies a unique name for the entity, along with information about its type and other characteristics. In C++ the point at which a name is declared is the point at which it becomes visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit. Variables should be declared as close as possible before the point at which they are used.
 
@@ -87,6 +87,18 @@ Because static class data members are discrete variables shared by all objects o
 ## extern declarations
 
 A C++ program might contain more than one [compilation unit](header-files-cpp.md). To declare an entity that is defined in a separate compilation unit, use the [extern](extern-cpp.md) keyword. The information in the declaration is sufficient for the compiler, but if the definition of the entity cannot be found in the linking step, then the linker will raise an error.
+
+## In this section
+
+[extern](extern-cpp.md)
+[Header files](header-files.md)
+[Initializers](initializers.md)
+[Aliases and typedefs](aliases-and-typedefs.md)
+[using declaration](using-declaration.md)
+[Storage classes]()
+[const]()
+[constexpr]()
+[volatile]()
 
 ## See also
 
