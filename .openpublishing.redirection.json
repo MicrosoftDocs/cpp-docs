@@ -722,7 +722,7 @@
     },
     {
       "source_path": "docs/cpp/overview-file-translation.md",
-      "redirect_url": "/cpp/preprocessor/phases-of-translation.md",
+      "redirect_url": "/cpp/preprocessor/phases-of-translation",
       "redirect_document_id": false
     },
     {
