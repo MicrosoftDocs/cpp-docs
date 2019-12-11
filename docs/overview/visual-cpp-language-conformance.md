@@ -81,9 +81,12 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0702R1 Fixing class template argument deduction for initializer-list ctors](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0961R1 Relaxing the structured bindings customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0961r1.html)|VS 2019 16.0 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0969R0 Allowing structured bindings to accessible members](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|VS 2019 16.0 <sup>[17](#note_17)</sup>|
-|&nbsp;&nbsp;[P0588R1 Simplifying implicit lambda capture](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|No|
-|&nbsp;&nbsp;[P0962R2 Relaxing the range-for loop customization point finding rules](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|No|
+|&nbsp;&nbsp;[P0588R1 Simplifying implicit lambda capture](http://wg21.link/p0588r1)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P1771R1 \[\[nodiscard\]\] for constructors](https://wg21.link/p1771r1)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
+|&nbsp;&nbsp;[P1825R0 Merged wording for P0527R1 and P1155R3, more implicit moves](https://wg21.link/p1825r0)|VS 2019 16.4 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0929R2 Checking for abstract class types](https://wg21.link/P0929R2)|No|
+|&nbsp;&nbsp;[P0962R2 Relaxing the range-for loop customization point finding rules](https://wg21.link/p0962r1)|No|
+|&nbsp;&nbsp;[P0859R0 CWG 1581: When are constexpr member functions defined](https://wg21.link/p0859r0)|No|
 |&nbsp;&nbsp;[P1009R2 Array size deduction in new-expressions](https://wg21.link/P1009R2)|No|
 |&nbsp;&nbsp;[P1286R2 Contra CWG DR1778](https://wg21.link/P1286R2)|No|
 |__C++20 Core language features__|__Supported__|
@@ -91,44 +94,47 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P1041R4 Make char16_t/char32_t string literals be UTF-16/32](https://wg21.link/P1041R4)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1330R0 Changing the active member of a union inside constexpr](https://wg21.link/P1330R0)|VS 2017 15.0 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0972R0 noexcept For \<chrono> zero(), min(), max()](https://wg21.link/P0972R0)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0329R4 Designated initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
-|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0515R3 Three-way (spaceship) comparison operator <=>](https://wg21.link/P0515R3)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0941R2 Feature-test macros](https://wg21.link/P0941R2)|VS 2019 16.0 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P1008R1 Prohibiting aggregates with user-declared constructors](https://wg21.link/P1008R1)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0329R4 Designated initialization](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0329r4.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0846R0 ADL and function templates that are not visible](https://wg21.link/P0846R0)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0409R2 Allowing lambda-capture \[=, this\]](http://open-std.org/JTC1/SC22/WG21/docs/papers/2017/p0409r2.html)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0624R2 Default constructible and assignable stateless lambdas](https://wg21.link/P0624R2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0780R2 Allowing pack expansion in lambda init-capture](https://wg21.link/P0780R2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0806R2 Deprecate implicit capture of this via \[=\]](https://wg21.link/P0806R2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1120R0 Consistency improvements for <=> and other comparison operators](https://wg21.link/P1120R0)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1185R2 \<=\> != ==](https://wg21.link/P1185R2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0734R0 Concepts](https://wg21.link/P0734R0)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0857R0 Fixing functionality gaps in constraints](https://wg21.link/P0857R0)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1084R2 Today's return-type-requirements are insufficient](https://wg21.link/P1084R2)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0892R2 Conditional explicit](https://wg21.link/P0892R2)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1091R3 Extending structured bindings to be more like variable declarations](https://wg21.link/P1091R3)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1099R5 Using enum](https://wg21.link/P1099R5)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1186R3 When do you actually use \<=>](https://wg21.link/P1186R3)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1630R1 Spaceship needs a tune-up](https://wg21.link/P1630R1)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0641R2 const mismatch with defaulted copy constructor](https://wg21.link/P0641R2)|Partial|
 |&nbsp;&nbsp;[P0306R4 Adding \_\_VA_OPT\_\_ for comma omission and comma deletion](https://wg21.link/P0306R4)|No|
 |&nbsp;&nbsp;[P0315R4 Allowing lambdas in unevaluated contexts](https://wg21.link/P0315R4)|No|
-|&nbsp;&nbsp;[P0428R2 Familiar template syntax for generic lambdas](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0428r2.pdf)|No|
 |&nbsp;&nbsp;[P0479R5 \[\[likely\]\] and \[\[unlikely\]\] attributes](https://wg21.link/P0479R5)|No|
 |&nbsp;&nbsp;[P0542R5 Contracts](https://wg21.link/P0542R5)|No|
 |&nbsp;&nbsp;[P0614R1 Range-based for-loops with initializers](https://wg21.link/P0614R1)|No|
-|&nbsp;&nbsp;[P0624R2 Default constructible and assignable stateless lambdas](https://wg21.link/P0624R2)|No|
 |&nbsp;&nbsp;[P0634R3 Down with typename!](https://wg21.link/P0634R3)|No|
 |&nbsp;&nbsp;[P0683R1 Default member initializers for bit-fields](https://wg21.link/P0683R1)|No|
 |&nbsp;&nbsp;[P0692R1 Relaxing access checking on specializations](https://wg21.link/P0692R1)|No|
 |&nbsp;&nbsp;[P0722R3 Efficient sized delete for variable sized classes](https://wg21.link/P0722R3)|No|
 |&nbsp;&nbsp;[P0732R2 Class types in non-type template parameters](https://wg21.link/P0732R2)|No|
-|&nbsp;&nbsp;[P0734R0 Concepts](https://wg21.link/P0734R0)|No|
-|&nbsp;&nbsp;[P0780R2 Allowing pack expansion in lambda init-capture](https://wg21.link/P0780R2)|No|
-|&nbsp;&nbsp;[P0806R2 Deprecate implicit capture of this via \[=\]](https://wg21.link/P0806R2)|No|
 |&nbsp;&nbsp;[P0840R2 \[\[no_unique_address\]\] attribute](https://wg21.link/P0840R2)|No|
-|&nbsp;&nbsp;[P0857R0 Fixing functionality gaps in constraints](https://wg21.link/P0857R0)|No|
-|&nbsp;&nbsp;[P0892R2 Conditional explicit](https://wg21.link/P0892R2)|No|
 |&nbsp;&nbsp;[P0912R5 Coroutines](https://wg21.link/P0912R5)|No|
 |&nbsp;&nbsp;[P0960R3 Allow initializing aggregates from a parenthesized list of values](https://wg21.link/P0960R3)|No|
 |&nbsp;&nbsp;[P1002R1 try-catch blocks in constexpr functions](https://wg21.link/P1002R1)|No|
 |&nbsp;&nbsp;[P1064R0 Allowing virtual function calls in constant expressions](https://wg21.link/P1064R0)|No|
 |&nbsp;&nbsp;[P1073R3 Immediate functions](https://wg21.link/P1073R3)|No|
-|&nbsp;&nbsp;[P1084R2 Today's return-type-requirements are insufficient](https://wg21.link/P1084R2)|No|
-|&nbsp;&nbsp;[P1091R3 Extending structured bindings to be more like variable declarations](https://wg21.link/P1091R3)|No|
 |&nbsp;&nbsp;[P1094R2 Nested inline namespaces](https://wg21.link/P1094R2)|No|
 |&nbsp;&nbsp;[P1103R3 Modules](https://wg21.link/P1103R3)|No|
-|&nbsp;&nbsp;[P1120R0 Consistency improvements for <=> and other comparison operators](https://wg21.link/P1120R0)|No|
 |&nbsp;&nbsp;[P1139R2 Address wording issues related to ISO 10646](https://wg21.link/P1139R2)|No|
 |&nbsp;&nbsp;[P1141R2 Yet another approach for constrained declarations](https://wg21.link/P1141R2)|No|
-|&nbsp;&nbsp;[P1185R2 \<=\> != ==](https://wg21.link/P1185R2)|No|
 |&nbsp;&nbsp;[P1236R1 Signed integers are two's complement](https://wg21.link/P1236R1)|No|
 |&nbsp;&nbsp;[P1289R1 Access control in contract conditions](https://wg21.link/P1289R1)|No|
 |&nbsp;&nbsp;[P1323R2 Contract postconditions and return type deduction](https://wg21.link/P1323R2)|No|
@@ -144,6 +150,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0809R0 Comparing Unordered Containers](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0809r0.pdf)| VS 2010 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0858R0 Constexpr Iterator Requirements](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0858r0.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0777R1 Avoiding Unnecessary Decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0777r1.pdf)|VS 2017 15.7 <sup>[14](#note_14)</sup>|
+|&nbsp;&nbsp;[P1164R1 Making create_directory() Intuitive](https://wg21.link/P1164R1)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0550R2 remove_cvref](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0550r2.pdf)|VS 2019 16.0 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0318R1 unwrap_reference, unwrap_ref_decay](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0318r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0457R2 starts_with()/ends_with() For basic_string/basic_string_view](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0457r2.html)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
@@ -151,6 +158,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8)|No|
 |&nbsp;&nbsp;[P0020R6 atomic\<float>, atomic\<double>, atomic\<long double>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html)|No|
 |&nbsp;&nbsp;[P0053R7 \<syncstream>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0053r7.pdf)<br/>&nbsp;&nbsp;[P0753R2 osyncstream Manipulators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0753r2.pdf)|No|
@@ -166,7 +174,6 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0463R1 endian](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|No|
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)|No|
 |&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|No|
-|&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|No|
 |&nbsp;&nbsp;[P0487R1 Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|No|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)|No|
 |&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|No|
@@ -330,7 +337,10 @@ __VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 ver
 __VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.<br/>
 __VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.<br/>
 __VS 2019 16.0__ indicates features that are supported in Visual Studio 2019 version 16.0 (RTW).<br/>
-__VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.
+__VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.\
+__VS 2019 16.2__ indicates features that are supported in Visual Studio 2019 version 16.2.\
+__VS 2019 16.3__ indicates features that are supported in Visual Studio 2019 version 16.3.\
+__VS 2019 16.4__ indicates features that are supported in Visual Studio 2019 version 16.4.
 
 ### Notes
 
