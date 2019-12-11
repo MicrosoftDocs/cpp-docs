@@ -147,7 +147,7 @@ Starting in C++11, a static local variable initialization is guaranteed to be th
 
 ## <a name="extern"></a> extern
 
-Objects and variables declared as **extern** declare an object that is defined in another translation unit or in an enclosing scope as having external linkage. For more information, see [extern](extern-cpp.md) and [Translation units and linkage](program-and-linkage.md).
+Objects and variables declared as **extern** declare an object that is defined in another translation unit or in an enclosing scope as having external linkage. For more information, see [extern](extern-cpp.md) and [Translation units and linkage](program-and-linkage-cpp.md).
 
 ## <a name="thread_local"></a> thread_local (C++11)
 
