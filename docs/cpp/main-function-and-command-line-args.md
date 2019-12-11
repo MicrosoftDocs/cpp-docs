@@ -14,10 +14,6 @@ All C++ programs must have a `main` function. If you try to compile a C++ *.exe*
 - Cannot have its address taken.
 - Cannot be called.
 
-If your source files use Unicode wide characters, you can use `wmain`, which is the wide-character version of `main`.
-
-The `main` function is not predefined by the compiler. It must be supplied in the program text.
-
 The declaration syntax for `main` is as follows:
 
 ```cpp
@@ -27,7 +23,7 @@ int main(int argc, char *argv[], char *envp[]);
 
 **Microsoft Specific**
 
-The declaration syntax for `wmain` is as follows:
+If your source files use Unicode wide characters, you can use `wmain`, which is the wide-character version of `main`. The declaration syntax for `wmain` is as follows:
 
 ```cpp
 int wmain( );
@@ -42,14 +38,14 @@ If no return value is specified, the compiler supplies a return value of zero. A
 
 ## Command line arguments
 
-The arguments in the prototype
+The arguments for `main` or `wmain` allow convenient command-line parsing of arguments and, optionally, access to environment variables. The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but you can name them whatever you like.
 
 ```cpp
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ```
 
-allow convenient command-line parsing of arguments and, optionally, access to environment variables. The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but you can name them whatever you like. The argument definitions are as follows:
+The argument definitions are as follows:
 
 *argc*<br/>
 An integer that contains the count of arguments that follow in *argv*. The *argc* parameter is always greater than or equal to 1.
@@ -69,7 +65,7 @@ The *envp* array, which is a common extension in many UNIX systems, is used in M
 
 **END Microsoft Specific**
 
-## Example
+### Example
 
 The following example shows how to use the *argc*, *argv*, and *envp* arguments to `main`:
 
@@ -117,7 +113,7 @@ Microsoft C/C++ startup code uses the following rules when interpreting argument
 
 - If an odd number of backslashes is followed by a double quotation mark, one backslash is placed in the `argv` array for every pair of backslashes, and the double quotation mark is "escaped" by the remaining backslash, causing a literal double quotation mark (") to be placed in `argv`.
 
-## Example
+### Example
 
 The following program demonstrates how command-line arguments are passed:
 
