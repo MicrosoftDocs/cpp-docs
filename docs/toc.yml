@@ -3663,7 +3663,7 @@
                 - name: Keywords
                   href: cpp/keywords-cpp.md
                 - name: Punctuators
-                   href: cpp/punctuators-cpp.md
+                  href: cpp/punctuators-cpp.md
                 - name: Numeric, boolean, and pointer literals
                   href: cpp/numeric-boolean-and-pointer-literals-cpp.md
                 - name: String and character literals
