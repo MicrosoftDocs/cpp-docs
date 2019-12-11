@@ -8,12 +8,12 @@ ms.author: "corob"
 ---
 # Microsoft C++ language conformance table
 
-This topic summarizes the ISO C++03, C++11, C++14, C++17, and C++20 language standards conformance of compiler features and Standard Library features for the Microsoft C++ compiler in Visual Studio 2019 and earlier versions. Each compiler and standard library feature name links to the ISO C++ Standard proposal paper that describes the feature, if one is available at publication time. The Supported column lists the Visual Studio version in which support for the feature first appeared.
+Standards conformance for the Microsoft C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of our ISO Standard C++ language and library conformance by Visual Studio version. Each compiler and standard library feature name links to the ISO Standard C++ proposal paper that describes the feature, if one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
 
-For details on conformance improvements and other changes in Visual Studio 2017 or Visual Studio 2019, set the version selector in the upper left of this page, then see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md) and [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
+For details on Visual Studio 2017 or Visual Studio 2019 MSVC conformance improvements, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md). For a list of other changes, see [What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md). For conformance changes in earlier versions, see [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md) and [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md). For current news from the C++ team, visit the [C++ team blog](https://devblogs.microsoft.com/cppblog/).
 
 > [!NOTE]
-> There are no binary breaking changes between Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019.
+> There are no binary breaking changes between Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019. For more information, see [C++ binary compatibility between Visual Studio 2015, 2017, and 2019](../porting/binary-compat-2015-2017.md)
 
 ## Compiler features
 
@@ -158,9 +158,20 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0646R1 list/forward_list remove()/remove_if()/unique() Return size_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0646r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0769R2 shift_left(), shift_right()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0769r2.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0887R1 type_identity](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0887r1.pdf)|VS 2019 16.1 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0020R6 atomic\<float>, atomic\<double>, atomic\<long double>](https://wg21.link/p0020r6)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0463R1 endian](https://wg21.link/p0463r1)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0482R6 char8_t: A type for UTF-8 characters and strings](https://wg21.link/P0482R6)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0600R1 \[\[nodiscard\]\] For The STL, Part 1](https://wg21.link/p0600r1)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0653R2 to_address()](https://wg21.link/p0653r2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0754R2 \<version>](https://wg21.link/p0754r2)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0771R1 noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)|VS 2019 16.2 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0487R1 Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0616R0 Using move() In \<numeric>](https://wg21.link/p0616r0)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0758R1 is_nothrow_convertible](https://wg21.link/P0758R1)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0898R3 Standard Library Concepts](https://wg21.link/P0898R3)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P0919R3 Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3)|VS 2019 16.3 <sup>[20](#note_20)</sup>|
+|&nbsp;&nbsp;[P1754R1 Rename Concepts to standard_case](https://wg21.link/P1754R1)|VS 2019 16.4 <sup>[20](#note_20)</sup>|
 |&nbsp;&nbsp;[P0019R8 atomic_ref](https://wg21.link/P0019R8)|No|
-|&nbsp;&nbsp;[P0020R6 atomic\<float>, atomic\<double>, atomic\<long double>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0020r6.html)|No|
 |&nbsp;&nbsp;[P0053R7 \<syncstream>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0053r7.pdf)<br/>&nbsp;&nbsp;[P0753R2 osyncstream Manipulators](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0753r2.pdf)|No|
 |&nbsp;&nbsp;[P0122R7 \<span>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0122r7.pdf)|No|
 |&nbsp;&nbsp;[P0202R3 constexpr For \<algorithm> And exchange()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0202r3.html)|No|
@@ -171,33 +182,24 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0357R3 Supporting Incomplete Types In reference_wrapper](https://wg21.link/P0357R3)|No|
 |&nbsp;&nbsp;[P0415R1 constexpr For \<complex> (Again)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0415r1.html)|No|
 |&nbsp;&nbsp;[P0439R0 enum class memory_order](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0439r0.html)|No|
-|&nbsp;&nbsp;[P0463R1 endian](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0463r1.html)|No|
 |&nbsp;&nbsp;[P0475R1 Guaranteed Copy Elision For Piecewise Construction](https://wg21.link/P0475R1)|No|
 |&nbsp;&nbsp;[P0476R2 <bit> bit_cast](https://wg21.link/P0476R2)|No|
-|&nbsp;&nbsp;[P0487R1 Fixing operator>>(basic_istream&, CharT*)](https://wg21.link/P0487R1)|No|
 |&nbsp;&nbsp;[P0528R3 Atomic Compare-And-Exchange With Padding Bits](https://wg21.link/P0528R3)|No|
 |&nbsp;&nbsp;[P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()](https://wg21.link/P0556R3)|No|
 |&nbsp;&nbsp;[P0591R4 Utility Functions For Uses-Allocator Construction](https://wg21.link/P0591R4)|No|
-|&nbsp;&nbsp;[P0600R1 \[\[nodiscard\]\] For The STL, Part 1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0600r1.pdf)|No|
 |&nbsp;&nbsp;[P0608R3 Improving variant's Converting Constructor/Assignment](https://wg21.link/P0608R3)|No|
-|&nbsp;&nbsp;[P0616R0 Using move() In \<numeric>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0616r0.pdf)|No|
 |&nbsp;&nbsp;[P0619R4 Removing C++17-Deprecated Features In C++20](https://wg21.link/P0619R4)|No|
 |&nbsp;&nbsp;[P0653R2 to_address()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0653r2.html)|No|
 |&nbsp;&nbsp;[P0655R1 visit<R>()](https://wg21.link/P0655R1)|No|
 |&nbsp;&nbsp;[P0674R1 make_shared() For Arrays](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0674r1.html)|No|
 |&nbsp;&nbsp;[P0718R2 atomic\<shared_ptr\<T>>, atomic\<weak_ptr\<T>>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0718r2.html)|No|
 |&nbsp;&nbsp;[P0738R2 istream_iterator Cleanup](https://wg21.link/P0738R2)|No|
-|&nbsp;&nbsp;[P0754R2 \<version>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p0754r2.pdf)|No|
-|&nbsp;&nbsp;[P0758R1 is_nothrow_convertible](https://wg21.link/P0758R1)|No|
 |&nbsp;&nbsp;[P0767R1 Deprecating is_pod](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0767r1.html)|No|
 |&nbsp;&nbsp;[P0768R1 Library Support For The Spaceship Comparison Operator \<=>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0768r1.pdf)|No|
-|&nbsp;&nbsp;[P0771R1 noexcept For std::function's Move Constructor](https://wg21.link/P0771R1)|No|
 |&nbsp;&nbsp;[P0811R3 midpoint(), lerp()](https://wg21.link/P0811R3)|No|
 |&nbsp;&nbsp;[P0879R0 constexpr For Swapping Functions](https://wg21.link/P0879R0)|No|
 |&nbsp;&nbsp;[P0896R4 \<ranges\>](https://wg21.link/P0896R4)|No|
-|&nbsp;&nbsp;[P0898R3 Standard Library Concepts](https://wg21.link/P0898R3)|No|
 |&nbsp;&nbsp;[P0912R5 Library Support For Coroutines](https://wg21.link/P0912R5)|No|
-|&nbsp;&nbsp;[P0919R3 Heterogeneous Lookup For Unordered Containers](https://wg21.link/P0919R3)|No|
 |&nbsp;&nbsp;[P0920R2 Precalculated Hash Value Lookup](https://wg21.link/P0920R2)|No|
 |&nbsp;&nbsp;[P0935R0 Eradicating Unnecessarily Explicit Default Constructors](https://wg21.link/P0935R0)|No|
 |&nbsp;&nbsp;[P0966R1 string::reserve() Should Not Shrink](https://wg21.link/P0966R1)|No|
@@ -249,7 +251,7 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[P0033R1 Rewording enable_shared_from_this](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0033r1.html)|VS 2017 15.5 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0040R3 Extending Memory Management Tools](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0040r3.html)|VS 2017 15.3 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0063R3 C11 Standard Library](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0063r3.html)|VS 2015 <sup>[C11](#note_C11), [14](#note_14)</sup>|
-|&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2017 15.7 <sup>[charconv](#note_charconv)</sup>|
+|&nbsp;&nbsp;[P0067R5 Elementary String Conversions](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0067r5.html)|VS 2019 16.4 <sup>[charconv](#note_charconv)</sup>|
 |&nbsp;&nbsp;[P0074R0 owner_less\<>](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0074r0.html)|VS 2015.2 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0077R2 is_callable, is_nothrow_callable](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0077r2.html)|VS 2017 15.0|
 |&nbsp;&nbsp;[P0083R3 Splicing Maps And Sets](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0083r3.pdf)<br/>&nbsp;&nbsp;[P0508R0 Clarifying insert_return_type](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0508r0.html)|VS 2017 15.5 <sup>[17](#note_17)</sup>|
@@ -322,21 +324,21 @@ For details on conformance improvements and other changes in Visual Studio 2017 
 |&nbsp;&nbsp;[N3655 Alias Templates For \<type_traits> (decay_t, etc.)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3655.pdf)|VS 2013|
 |&nbsp;&nbsp;[N3656 make_unique()](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3656.htm)|VS 2013|
 
-A group of papers listed together indicates that a feature was voted into the Standard, and then one or more papers to improve or expand that feature were also voted in. These features are implemented together.
+A group of papers listed together indicates a Standard feature along with one or more approved improvements or expansions. These features are implemented together.
 
 ### Supported values
 
-__No__ means not yet implemented.<br/>
-__Partial__ means the implementation is incomplete. For more details, see the Notes section.<br/>
-__VS 2010__ indicates features that are supported in Visual Studio 2010.<br/>
-__VS 2013__ indicates features that are supported in Visual Studio 2013.<br/>
-__VS 2015__ indicates features that are supported in Visual Studio 2015 RTW.<br/>
-__VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.<br/>
-__VS 2017 15.0__ indicates features that are supported in Visual Studio 2017 version 15.0 (RTW).<br/>
-__VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 version 15.3.<br/>
-__VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.<br/>
-__VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.<br/>
-__VS 2019 16.0__ indicates features that are supported in Visual Studio 2019 version 16.0 (RTW).<br/>
+__No__ means not yet implemented.\
+__Partial__ means the implementation is incomplete. For more information, see the Notes section.\
+__VS 2010__ indicates features that are supported in Visual Studio 2010.\
+__VS 2013__ indicates features that are supported in Visual Studio 2013.\
+__VS 2015__ indicates features that are supported in Visual Studio 2015 (RTW).\
+__VS 2015.2__ and __VS 2015.3__ indicate features that are supported in Visual Studio 2015 Update 2 and Visual Studio 2015 Update 3, respectively.\
+__VS 2017 15.0__ indicates features that are supported in Visual Studio 2017 version 15.0 (RTW).\
+__VS 2017 15.3__ indicates features that are supported in Visual Studio 2017 version 15.3.\
+__VS 2017 15.5__ indicates features that are supported in Visual Studio 2017 version 15.5.\
+__VS 2017 15.7__ indicates features that are supported in Visual Studio 2017 version 15.7.\
+__VS 2019 16.0__ indicates features that are supported in Visual Studio 2019 version 16.0 (RTW).\
 __VS 2019 16.1__ indicates features that are supported in Visual Studio 2019 version 16.1.\
 __VS 2019 16.2__ indicates features that are supported in Visual Studio 2019 version 16.2.\
 __VS 2019 16.3__ indicates features that are supported in Visual Studio 2019 version 16.3.\
@@ -344,22 +346,22 @@ __VS 2019 16.4__ indicates features that are supported in Visual Studio 2019 ver
 
 ### Notes
 
-<a name="note_A"></a>__A__ In [/std:c++14](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: `throw()` is deprecated and required to behave as a synonym for `noexcept`. In [/std:c++17](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as `noexcept`, i.e. enforcement via termination.
+<a name="note_A"></a>__A__ In [/std:c++14](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: `throw()` is deprecated and required to behave as a synonym for `noexcept`. In [/std:c++17](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as `noexcept`, that is, enforcement via termination.
 
 The compiler option [/Zc:noexceptTypes](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It’s likely that `throw()` will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [/std:c++17](../build/reference/std-specify-language-standard-version.md) and [/permissive-](../build/reference/permissive-standards-conformance.md).
 
-<a name="note_B"></a>__B__ Supported in [/permissive-](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. see [Two-phase name lookup support comes to MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/) for more information.
+<a name="note_B"></a>__B__ Supported in [/permissive-](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We are overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
+<a name="note_C"></a>__C__ The compiler’s support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We're overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
 
 <a name="note_D"></a>__D__ Supported under [/std:c++14](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [C4984](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
 <a name="note_E"></a>__E__ This is a completely new implementation, incompatible with the
-previous `std::experimental` version, necessitated by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new `std::filesystem` and the previous `std::experimental::filesystem`, and including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be REMOVED in the next ABI-breaking release of the libraries.
+previous `std::experimental` version, made necessary by symlink support, bug fixes, and changes in standard-required behavior. Currently, including \<filesystem> provides the new `std::filesystem` and the previous `std::experimental::filesystem`, and including \<experimental/filesystem> provides only the old experimental implementation. The experimental implementation will be REMOVED in the next ABI-breaking release of the libraries.
 
 <a name="note_G"></a>__G__ Supported by a compiler intrinsic.
 
-<a name="note_14"></a>__14__ These C++17/20 features are always enabled, even when [/std:c++14](../build/reference/std-specify-language-standard-version.md) (the default) is specified. This is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.
+<a name="note_14"></a>__14__ These C++17/20 features are always enabled, even when [/std:c++14](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **/std** options, or because conditional implementation was undesirably complex.
 
 <a name="note_17"></a>__17__ These features are enabled by the [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) compiler option.
 
@@ -367,7 +369,7 @@ previous `std::experimental` version, necessitated by symlink support, bug fixes
 
 <a name="note_byte"></a>__byte__ `std::byte` is enabled by [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.
 
-<a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`, namely, that `free()` must be able to handle highly aligned allocations.
+<a name="note_C11"></a>__C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`: namely, that `free()` must be able to handle highly aligned allocations.
 
 <a name="note_rem"></a>__rem__ Features removed when the [/std:c++17](../build/reference/std-specify-language-standard-version.md) (or [/std:c++latest](../build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features can be re-enabled to ease the transition to newer language modes by use of these macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
 
@@ -377,17 +379,17 @@ previous `std::experimental` version, necessitated by symlink support, bug fixes
 - VS 2017 15.9: Floating-point `to_chars()` overloads for shortest decimal.
 - VS 2019 16.0: Floating-point `to_chars()` overloads for shortest hex and precision hex.
 - VS 2019 16.2: Floating-point `to_chars()` overloads for precision fixed and precision scientific.
-- Not yet implemented: The floating-point `to_chars()` overload for precision general. 
+- VS 2019 16.4: The floating-point `to_chars()` overload for precision general.
 
-<a name ="note_parallel"></a> __parallel__ C++17’s parallel algorithms library is complete. This doesn’t mean every algorithm is parallelized in every case; the most important algorithms have been parallelized and execution policy signatures are provided even where algorithms are not parallelized. Our implementation’s central internal header, yvals_core.h, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms.  This implementation parallelizes several common algorithm calls, but not all.
+<a name ="note_parallel"></a> __parallel__ C++17’s parallel algorithms library is complete. Complete doesn’t mean every algorithm is parallelized in every case. The most important algorithms have been parallelized, and execution policy signatures are provided even where algorithms aren't parallelized. Our implementation’s central internal header, yvals_core.h, contains the following "Parallel Algorithms Notes": C++ allows an implementation to implement parallel algorithms as calls to the serial algorithms. This implementation parallelizes several common algorithm calls, but not all.
 
 The following algorithms are parallelized:
 
 - `adjacent_difference`, `adjacent_find`, `all_of`, `any_of`, `count`, `count_if`, `equal`, `exclusive_scan`, `find`, `find_end`, `find_first_of`, `find_if`, `find_if_not`, `for_each`, `for_each_n`, `inclusive_scan`, `is_heap`, `is_heap_until`, `is_partitioned`, `is_sorted`, `is_sorted_until`, `mismatch`, `none_of`, `partition`, `reduce`, `remove`, `remove_if`, `replace`, `replace_if`, `search`, `search_n`, `set_difference`, `set_intersection`, `sort`, `stable_sort`, `transform`, `transform_exclusive_scan`, `transform_inclusive_scan`, `transform_reduce`
 
-The following are not presently parallelized:
+The following aren't presently parallelized:
 
-- No apparent parallelism performance improvement on target hardware; all algorithms which merely copy or permute elements with no branches are typically memory bandwidth limited:
+- No noticeable parallelism performance improvement on target hardware; all algorithms that merely copy or permute elements with no branches are typically memory bandwidth limited:
   - `copy`, `copy_n`, `fill`, `fill_n`, `move`, `reverse`, `reverse_copy`, `rotate`, `rotate_copy`, `shift_left`, `shift_right`, `swap_ranges`
 - Confusion over user parallelism requirements exists; likely in the above category anyway:
   - `generate`, `generate_n`
@@ -398,10 +400,10 @@ The following are not presently parallelized:
 
 ## See also
 
-[C++ Language Reference](../cpp/cpp-language-reference.md)<br/>
-[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)<br/>
-[C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)<br/>
-[What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
-[Visual C++ change history 2003 through 2015](../porting/visual-cpp-change-history-2003-2015.md)<br/>
-[Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
+[C++ Language Reference](../cpp/cpp-language-reference.md)\
+[C++ Standard Library](../standard-library/cpp-standard-library-reference.md)\
+[C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)\
+[What's New for Visual C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md)\
+[Visual C++ change history 2003 through 2015](../porting/visual-cpp-change-history-2003-2015.md)\
+[Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md)\
 [C++ team blog](https://devblogs.microsoft.com/cppblog/)
