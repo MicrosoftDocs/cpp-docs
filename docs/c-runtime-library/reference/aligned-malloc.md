@@ -1,6 +1,5 @@
 ---
 title: "_aligned_malloc"
-description: "Use the _aligned_malloc function in the Microsoft C runtime library (CRT) to allocate memory on a specified boundary."
 ms.date: "12/11/2019"
 api_name: ["_aligned_malloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll"]
@@ -25,10 +24,10 @@ void * _aligned_malloc(
 
 ### Parameters
 
-*size*\
+*size*<br/>
 Size of the requested memory allocation.
 
-*alignment*\
+*alignment*<br/>
 The alignment value, which must be an integer power of 2.
 
 ## Return Value
@@ -39,9 +38,9 @@ A pointer to the memory block that was allocated or NULL if the operation failed
 
 **_aligned_malloc** is based on [malloc](malloc.md).
 
-**_aligned_malloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned isn't aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
+**_aligned_malloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
-This function sets `errno` to `ENOMEM` if the memory allocation failed, or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_malloc** validates its parameters. If *alignment* isn't a power of 2, or *size* is zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns NULL and sets `errno` to `EINVAL`.
+This function sets `errno` to `ENOMEM` if the memory allocation failed, or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_malloc** validates its parameters. If *alignment* is not a power of 2, or *size* is zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns NULL and sets `errno` to `EINVAL`.
 
 Use [_aligned_free](aligned-free.md) to deallocate memory obtained by both **_aligned_malloc** and `_aligned_offset_malloc`. Don't use `free`, which doesn't reclaim the aligned memory correctly and can lead to hard-to-diagnose bugs.
 
@@ -135,6 +134,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)\
-[_aligned_free](aligned-free.md)\
-[_aligned_offset_malloc](aligned-offset-malloc.md)
+[Data Alignment](../../c-runtime-library/data-alignment.md)
