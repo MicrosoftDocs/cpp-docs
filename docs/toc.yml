@@ -3735,7 +3735,7 @@
                     - name: extern
                       href: cpp/using-extern-to-specify-linkage.md
                 - name: main function and command-line arguments
-                  href: cpp/main-function-and-command-line-args.md
+                  href: cpp/main-function-command-line-args.md
                 - name: Program termination
                   href: cpp/program-termination.md
                 - name: Lvalues and rvalues
