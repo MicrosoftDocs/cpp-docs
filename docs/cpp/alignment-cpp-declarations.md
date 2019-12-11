@@ -1,16 +1,17 @@
 ---
-title: "Alignment (C++ Declarations)"
+title: "Alignment"
 description: "How data alignment is specified in modern C++."
-ms.date: "09/19/2019"
+ms.date: "12/11/2019"
+f1_keywords: ["alignas_cpp", "alignof_cpp"]
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
 ---
-# Alignment (C++ Declarations)
+# Alignment
 
 One of the low-level features of C++ is the ability to specify the precise alignment of objects in memory to take maximum advantage of a specific hardware architecture. By default, the compiler aligns class and struct members on their size value: `bool` and `char` on 1-byte boundaries, `short` on 2-byte boundaries, `int`, `long`, and `float` on 4-byte boundaries, and `long long`, `double`, and `long double` on 8-byte boundaries. In most scenarios, you never have to be concerned with alignment because the default alignment is already optimal. In some cases, however, you can achieve significant performance improvements, or memory savings, by specifying a custom alignment for your data structures. Before Visual Studio 2015 you could use the Microsoft-specific keywords `__alignof` and `declspec(alignas)` to specify an alignment greater than the default. Starting in Visual Studio 2015 you should use the C++11 standard keywords [alignof and alignas](../cpp/alignof-and-alignas-cpp.md) for maximum code portability. The new keywords behave in the same way under the hood as the Microsoft-specific extensions. The documentation for those extensions also applies to the new keywords. For more information, see [__alignof Operator](../cpp/alignof-operator.md) and [align](../cpp/align-cpp.md). The C++ standard doesn't specify packing behavior for alignment on boundaries smaller than the compiler default for the target platform, so you still need to use the Microsoft #pragma [pack](../preprocessor/pack.md) in that case.
 
 Use the [aligned_storage class](../standard-library/aligned-storage-class.md) for memory allocation of data structures with custom alignments. The [aligned_union class](../standard-library/aligned-union-class.md) is for specifying alignment for unions with non-trivial constructors or destructors.
 
-## About Alignment
+## About alignment
 
 Alignment is a property of a memory address, expressed as the numeric address modulo a power of 2. For example, the address 0x0001103F modulo 4 is 3. That address is said to be aligned to 4n+3, where 4 indicates the chosen power of 2. The alignment of an address depends on the chosen power of 2. The same address modulo 8 is 7. An address is said to be aligned to X if its alignment is Xn+0.
 
@@ -86,6 +87,32 @@ adr offset   element
 0x0020   short c;
 0x0022   char d;
 0x0023   char _pad1[1];
+```
+## alignof and alignas
+
+The **alignas** type specifier is a portable, C++ standard way to specify custom alignment of variables and user defined types. The **alignof** operator is likewise a standard, portable way to obtain the alignment of a specified type or variable.
+
+## Example
+
+You can use **alignas** on a class, struct or union, or on individual members. When multiple **alignas** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).
+
+```cpp
+// alignas_alignof.cpp
+// compile with: cl /EHsc alignas_alignof.cpp
+#include <iostream>
+
+struct alignas(16) Bar
+{
+    int i;       // 4 bytes
+    int n;      // 4 bytes
+    alignas(4) char arr[3];
+    short s;          // 2 bytes
+};
+
+int main()
+{
+    std::cout << alignof(Bar) << std::endl; // output: 16
+}
 ```
 
 ## See also

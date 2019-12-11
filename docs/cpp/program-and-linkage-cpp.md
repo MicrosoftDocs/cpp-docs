@@ -3,7 +3,7 @@ title: "Translation units and linkage (C++)"
 ms.date: "12/11/2019"
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
 ---
-# Translation units and Linkage
+# Translation units and linkage
 
 In a C++ program, a *symbol*, for example a variable or function name, can be declared any number of times within its scope, but it can only be defined once. This is the "One Definition Rule" (ODR). A *declaration* introduces (or re-introduces) a name into the program. A *definition* introduces a name and, in the case of a variable, explicitly initializes it. A *function definition* consists of the signature plus the function body. A class definition consists of the class name followed by a block that lists all the class members. (The bodies of member functions may optionally be defined separately in another file.)
 

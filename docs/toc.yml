@@ -3684,8 +3684,6 @@
                       href: cpp/declarations-and-definitions-cpp.md
                     - name: extern
                       href: cpp/extern-cpp.md
-                    - name: Header files
-                      href: cpp/header-files-cpp.md
                     - name: Initializers
                       href: cpp/initializers.md
                     - name: Aliases and typedefs
@@ -3722,8 +3720,6 @@
                   href: cpp/temporary-objects.md
                 - name: Alignment (C++ declarations)
                   href: cpp/alignment-cpp-declarations.md
-                - name: alignof and alignas
-                  href: cpp/alignof-and-alignas-cpp.md
                 - name: Trivial, standard-layout, and POD types
                   href: cpp/trivial-standard-layout-and-pod-types.md
                 - name: Type system

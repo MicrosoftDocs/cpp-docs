@@ -91,7 +91,6 @@ A C++ program might contain more than one [compilation unit](header-files-cpp.md
 ## In this section
 
 [extern](extern-cpp.md)
-[Header files](header-files-cpp.md)
 [Initializers](initializers.md)
 [Aliases and typedefs](aliases-and-typedefs-cpp.md)
 [using declaration](using-declaration.md)
