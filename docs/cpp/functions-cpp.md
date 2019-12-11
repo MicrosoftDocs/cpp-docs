@@ -80,7 +80,7 @@ Optional parts of a function declaration are:
 
     ```
 
-   For more information, see [Program and Linkage](../cpp/program-and-linkage-cpp.md).
+   For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
 
 1. **inline**, which instructs the compiler to replace every call to the function with the function code itself. inlining can help performance in scenarios where a function executes quickly and is invoked repeatedly in a performance-critical section of code.
 

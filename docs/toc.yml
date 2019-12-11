@@ -3727,13 +3727,8 @@
                   href: cpp/scope-visual-cpp.md
                 - name: Header files
                   href: cpp/header-files-cpp.md
-                - name: Program and linkage
-                  expanded: false
-                  items: 
-                    - name: Program and linkage
-                      href: cpp/program-and-linkage-cpp.md
-                    - name: extern
-                      href: cpp/using-extern-to-specify-linkage.md
+                - name: Translation units and linkage
+                  href: cpp/program-and-linkage-cpp.md
                 - name: Startup and termination
                   expanded: false
                   items: 

@@ -7,7 +7,7 @@ ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 ---
 # extern (C++)
 
-The **extern** keyword is applied to a global variable, function or template declaration to specify that the name of that thing has *external linkage*. For background information on linkage and why the use of global variables is discouraged, see [Program and linkage](program-and-linkage-cpp.md).
+The **extern** keyword is applied to a global variable, function or template declaration to specify that the name of that thing has *external linkage*. For background information on linkage and why the use of global variables is discouraged, see [Translation units and linkage](program-and-linkage-cpp.md).
 
 The **extern** keyword has four meanings depending on the context:
 
@@ -124,7 +124,7 @@ extern "C" int CFunc2(); // Error: not the first declaration of
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Program and linkage](program-and-linkage-cpp.md)<br/>
+[Translation units and linkage](program-and-linkage-cpp.md)<br/>
 [extern Storage-Class Specifier in C](../c-language/extern-storage-class-specifier.md)<br/>
 [Behavior of Identifiers in C](../c-language/behavior-of-identifiers.md)<br/>
 [Linkage in C](../c-language/linkage.md)

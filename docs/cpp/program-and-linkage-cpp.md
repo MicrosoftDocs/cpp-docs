@@ -1,17 +1,18 @@
 ---
-title: "Programs and Linkage  (C++)"
-ms.date: "04/09/2018"
+title: "Translation units and linkage (C++)"
+ms.date: "12/11/2019"
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
 ---
-# Program and Linkage (C++)
+# Translation units and Linkage
 
-In a C++ program, a *symbol*, for example a variable or function name, can be declared any number of times within its scope, but it can only be defined once. This is the One Definition Rule (ODR). A *declaration* introduces (or re-introduces) a name into the program. A *definition* introduces a name and, in the case of a variable, explicitly initializes it. A *function definition* consists of the signature plus the function body.
+In a C++ program, a *symbol*, for example a variable or function name, can be declared any number of times within its scope, but it can only be defined once. This is the One Definition Rule (ODR). A *declaration* introduces (or re-introduces) a name into the program. A *definition* introduces a name and, in the case of a variable, explicitly initializes it. A *function definition* consists of the signature plus the function body. A class definition consists of the class name followed by a block that lists all the class members. (The bodies of member functions may optionally be defined separately in another file.)
 
 These are declarations:
 
 ```cpp
 int i;
 int f(int x);
+class C;
 ```
 
 These are definitions:
@@ -19,6 +20,10 @@ These are definitions:
 ```cpp
 int i{42};
 int f(int x){ return x * i; }
+class C {
+public:
+   void DoSomething();
+};
 ```
 
 A program consists of one or more *translation units*. A translation unit consists of an implementation file (.cpp, .cxx, etc.) and all the headers (.h, .hpp, etc.) that it includes directly or indirectly. Each translation unit is compiled independently by the compiler, after which the linker merges the compiled translation units into a single *program*. Violations of the ODR rule typically show up as linker errors when the same name has two different definitions in different translation units.
