@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2064"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2064"]
 helpviewer_keywords: ["A2064"]
 ms.assetid: 553a5ec5-b404-4321-ab2c-b9ccec6471fc

@@ -11,7 +11,7 @@ ms.assetid: b0883600-4d27-4ca7-a931-8ca6bd48654d
 
 A function was on the left side of the specified operator. The most common reason for this error is that the compiler has parsed the identifier on the left side of the operator as a function when the developer intended it to be a variable. For more information, see Wikipedia article [Most vexing parse](https://en.wikipedia.org/wiki/Most_vexing_parse). This example shows a function declaration and a variable definition that are easily confused:
 
-```
+```cpp
 // C2659a.cpp
 // Compile using: cl /W4 /EHsc C2659a.cpp
 #include <string>
@@ -31,7 +31,7 @@ To resolve this issue, change the declaration of the identifier so that it is no
 
 Error C2659 can also occur when the function has a type that can’t be used in the expression on the left side of the specified operator. This example generates C2659 when the code assigns a function pointer to a function:
 
-```
+```cpp
 // C2659b.cpp
 // Compile using: cl /W4 /EHsc C2659b.cpp
 int func0(void) { return 42; }

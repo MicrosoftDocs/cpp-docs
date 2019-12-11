@@ -13,7 +13,7 @@ The compiler was not able to find an identifier in the specified namespace.
 
 The following sample generates C2251:
 
-```
+```cpp
 // C2251.cpp
 // compile with: /c
 namespace A {

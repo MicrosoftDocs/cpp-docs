@@ -13,7 +13,7 @@ You cannot use a generic or template class as a local `typedef`.
 
 The following sample generates C2940:
 
-```
+```cpp
 // C2940.cpp
 template<class T>
 struct TC {};
@@ -25,7 +25,7 @@ int main() {
 
 C2940 can also occur when using generics:
 
-```
+```cpp
 // C2940b.cpp
 // compile with: /clr
 generic<class T>

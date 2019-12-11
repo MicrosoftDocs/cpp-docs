@@ -13,7 +13,7 @@ A Visual C++ [interface](../../cpp/interface.md) cannot have a destructor.
 
 The following sample generates C2849:
 
-```
+```cpp
 // C2849.cpp
 // compile with: /c
 __interface C {

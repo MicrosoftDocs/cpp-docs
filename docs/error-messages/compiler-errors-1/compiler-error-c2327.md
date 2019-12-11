@@ -15,7 +15,7 @@ When compiling with **/clr**, a common cause for C2327 is a property with the sa
 
 The following sample generates C2327:
 
-```
+```cpp
 // C2327.cpp
 int x;
 class enclose {
@@ -34,7 +34,7 @@ public:
 
 C2327 can also occur if the name of a type is hidden by the name of a member:
 
-```
+```cpp
 // C2327b.cpp
 class X {};
 
@@ -48,7 +48,7 @@ class S {
 
 C2327 can also fire in this situation, where you need to fully specify the data type of the parameter:
 
-```
+```cpp
 // C2327c.cpp
 // compile with: /c
 struct A {};
@@ -63,7 +63,7 @@ struct B {
 
 The following sample generates C2327:
 
-```
+```cpp
 // C2327d.cpp
 // compile with: /clr /c
 using namespace System;
@@ -97,7 +97,7 @@ namespace NA {
 
 The following sample shows C2327 when a property has the same name as the property type:
 
-```
+```cpp
 // C2327f.cpp
 // compile with: /clr /c
 public value class Address {};

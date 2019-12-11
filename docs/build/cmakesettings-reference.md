@@ -27,11 +27,11 @@ A `configuration` has these properties:
 - `addressSDanitizerEnabled`: if `true` compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
 - `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
-- `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the CMake cache will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, and `${env.VARIABLE}`.
+- `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where *CMakeCache.txt* will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `cacheGenerationCommand`: specifies a command line tool and arguments, for example *gencache.bat debug* to generate the cache. The command is run from the shell in the specified environment for the configuration when the user explicity requests regeneration, or a CMakeLists.txt or CMakeSettings.json file is modified.
-- `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing CMakeCache.txt file.
-- `clangTidyChecks`: comma-separated list of warnings which will be passed to clang-tidy; wildcards are allowed and '-' prefix will remove checks.
-- `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the cache.
+- `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing *CMakeCache.txt* file.
+- `clangTidyChecks`: comma-separated list of warnings that will be passed to clang-tidy; wildcards are allowed and '-' prefix will remove checks.
+- `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the project files.
 - `cmakeToolchain`: specifies the toolchain file. This is passed to CMake using -DCMAKE_TOOLCHAIN_FILE."
 - `codeAnalysisRuleset`: specifies the ruleset to use when running code analysis. This can be a full path or the file name of a ruleset file installed by Visual Studio.
 - `configurationType`: specifies the build type configuration for the selected generator. May be one of:
@@ -74,22 +74,8 @@ When the active configuration specifies a Visual Studio generator, by default MS
    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
    ```
 
-- `configurationType`: specifies the build type configuration for the selected generator. May be one of:
-
-  - Debug
-  - Release
-  - MinSizeRel
-  - RelWithDebInfo
- 
-- `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where the *CMakeCache.txt* will be created. If the folder does not exist, it is created.Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `installRoot`: specifies the directory in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
-- `cmakeCommandArgs`: specifies additional command-line options passed to CMake when invoked to generate the project files.
-- `cmakeToolchain`: specifies the toolchain file. This is passed to CMake using -DCMAKE_TOOLCHAIN_FILE."
-- `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
-- `ctestCommandArgs`: specifies additional command-line options passed to CTest when running the tests."
-- `codeAnalysisRuleset`: specifies the ruleset to use when running code analysis. This can be a full path or the file name of a ruleset file installed by Visual Studio.
 - `inheritEnvironments`: specifies one or more compiler environments that this configuration depends on. May be any custom environment or one of the predefined environments. For more information, see [Environments](#environments).
-- `installRoot`: specifies the directory in which CMake generates install targets for the chosen generator. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `intelliSenseMode`: specifies the mode used for computing intellisense information". May be one of:
 
   - windows-msvc-x86
@@ -112,7 +98,6 @@ When the active configuration specifies a Visual Studio generator, by default MS
   - linux-gcc-x64
   - linux-gcc-arm"
 
-- `cacheRoot`: specifies the path to a CMake cache. This directory should contain an existing *CMakeCache.txt* file.
 - `name`: names the configuration.  See [CMake predefined configuration reference](cmake-predefined-configuration-reference.md) for more information about the pre-defined configurations.
 - `wslPath`: the path to the launcher of an instance of Windows Subsystem for Linux.
 

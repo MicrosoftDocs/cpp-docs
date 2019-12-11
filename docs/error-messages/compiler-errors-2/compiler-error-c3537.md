@@ -15,7 +15,7 @@ You cannot cast a variable to the indicated type because the type contains the `
 
 The following code yields C3537 because the variables are cast to a type that contains the `auto` keyword.
 
-```
+```cpp
 // C3537.cpp
 // Compile with /Zc:auto
 int main()

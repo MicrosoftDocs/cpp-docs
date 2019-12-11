@@ -13,7 +13,7 @@ A variable passed to [copyprivate](../../parallel/openmp/reference/copyprivate.m
 
 The following sample generates C3041:
 
-```
+```cpp
 // C3041.cpp
 // compile with: /openmp /c
 #include "omp.h"

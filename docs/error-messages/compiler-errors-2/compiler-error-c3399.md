@@ -17,7 +17,7 @@ See [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constrai
 
 The following sample generates C3399.
 
-```
+```cpp
 // C3399.cpp
 // compile with: /clr /c
 generic <class T>

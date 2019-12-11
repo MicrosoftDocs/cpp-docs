@@ -13,7 +13,7 @@ You cannot declare a template with a structure or union argument. Use pointers t
 
 The following sample generates C2993:
 
-```
+```cpp
 // C2993.cpp
 // compile with: /c
 // C2993 expected
@@ -32,7 +32,7 @@ This error will also be generated as a result of compiler conformance work that 
 
 If it is a function template, use a function argument to pass in the floating point non-type template parameter (this code will be valid in the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++). If it is a class template, there is no easy workaround.
 
-```
+```cpp
 // C2993b.cpp
 // compile with: /c
 template<class T, float f> void func(T) {}   // C2993

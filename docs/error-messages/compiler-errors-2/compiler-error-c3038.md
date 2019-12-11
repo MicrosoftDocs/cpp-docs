@@ -13,7 +13,7 @@ Variables that appear in the [reduction](../../parallel/openmp/reference/reducti
 
 The following sample generates C3038:
 
-```
+```cpp
 // C3038.cpp
 // compile with: /openmp /c
 int g_i, g_i2;

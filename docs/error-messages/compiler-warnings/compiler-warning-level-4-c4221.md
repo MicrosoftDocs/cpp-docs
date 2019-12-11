@@ -13,7 +13,7 @@ With the default Microsoft extensions (/Ze), you can initialize an aggregate typ
 
 ## Example
 
-```
+```c
 // C4221.c
 // compile with: /W4
 struct S

@@ -13,7 +13,7 @@ When `layout_dependent=true` for an [event_receiver](../../windows/event-receive
 
 The following sample generates C3741
 
-```
+```cpp
 // C3741.cpp
 // compile with: /c
 // C3741 expected

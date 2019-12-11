@@ -15,7 +15,7 @@ An operator is not supported for CLR enumerations.  For more information, see [H
 
 The following sample generates C3069:
 
-```
+```cpp
 // C3069.cpp
 // compile with: /clr
 enum struct E { e1 };

@@ -13,7 +13,7 @@ The operator must have an l-value as operand.
 
 The following sample generates C2105:
 
-```
+```cpp
 // C2105.cpp
 int main() {
    unsigned char * p1 = 0;
@@ -30,7 +30,7 @@ int main() {
 
 The following sample generates C2105:
 
-```
+```cpp
 // C2105b.cpp
 int main() {
    int a[10] = {0};

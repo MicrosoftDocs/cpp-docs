@@ -17,7 +17,7 @@ To call a managed function from a native context, you can add a "wrapper" functi
 
 The following sample generates C3642:
 
-```
+```cpp
 // C3642.cpp
 // compile with: /clr
 using namespace System;

@@ -11,8 +11,8 @@ Returns the high 16 bits of the low 32 bits of *expression*. MASM expressions ar
 
 ## Syntax
 
-> HIGHWORD expression
+> **HIGHWORD** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

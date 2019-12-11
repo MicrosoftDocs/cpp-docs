@@ -21,7 +21,7 @@ A property was declared incorrectly. For more information, see
 
 The following sample generates C3798
 
-```
+```cpp
 // C3798.cpp
 // compile with: /clr /c
 ref struct A {

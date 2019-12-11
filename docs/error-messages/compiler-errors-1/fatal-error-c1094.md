@@ -20,7 +20,7 @@ int func1();
 
 And then,
 
-```
+```cpp
 // C1094.cpp
 // compile with: /Yc"C1094.h" /Zm200
 int u;
@@ -32,7 +32,7 @@ int main() {
 
 And then,
 
-```
+```cpp
 // C1094b.cpp
 // compile with: /Yu"C1094.h" /Zm300 /c
 #include "C1094.h"   // C1094 compile with /Zm200

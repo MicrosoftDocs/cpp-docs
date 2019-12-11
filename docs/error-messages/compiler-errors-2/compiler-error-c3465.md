@@ -17,7 +17,7 @@ For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forw
 
 The following sample builds an assembly that contains the new location of a type.
 
-```
+```cpp
 // C3465.cpp
 // compile with: /clr /LD
 public ref class R {
@@ -30,7 +30,7 @@ public:
 
 The following sample builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
 
-```
+```cpp
 // C3465_b.cpp
 // compile with: /clr /LD
 #using "C3465.dll"
@@ -41,7 +41,7 @@ The following sample builds an assembly that used to contain the definition of t
 
 The following sample generates C3465.
 
-```
+```cpp
 // C3465_c.cpp
 // compile with: /clr
 // C3465 expected

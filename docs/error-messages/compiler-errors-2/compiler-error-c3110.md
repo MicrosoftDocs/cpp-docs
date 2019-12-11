@@ -21,7 +21,7 @@ An interface that is prefaced by an interface attribute, such as:
 
 cannot be overloaded. For example:
 
-```
+```cpp
 // C3110.cpp
 #include <unknwn.h>
 [ object, uuid= "4F98A180-EF37-11D1-978D-0000F805D73B" ]

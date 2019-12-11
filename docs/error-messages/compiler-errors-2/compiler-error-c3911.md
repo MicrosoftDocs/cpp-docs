@@ -15,7 +15,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 The following sample generates C3911:
 
-```
+```cpp
 // C3911.cpp
 // compile with: /clr
 using namespace System;

@@ -17,7 +17,7 @@ For more information, see [How to: Use Properties in C++/CLI](../../dotnet/how-t
 
 The following sample generates C3459.
 
-```
+```cpp
 // C3459.cpp
 // compile with: /clr /c
 public ref class MyString {

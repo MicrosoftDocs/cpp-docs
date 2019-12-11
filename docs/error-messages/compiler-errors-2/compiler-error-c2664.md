@@ -29,7 +29,7 @@ For more information, see [How to: Convert System::String to wchar_t* or char\*]
 
 The following sample generates C2664 and shows how to fix it.
 
-```
+```cpp
 // C2664.cpp
 // C2664
 struct A {
@@ -53,7 +53,7 @@ int main() {
 
 This sample also generates C2664 and shows how to fix it.
 
-```
+```cpp
 // C2664b.cpp
 // C2664 expected
 struct A {
@@ -72,7 +72,7 @@ int main() {
 
 The next sample demonstrates C2664 by using a string literal to call `Test`, and shows how to fix it. Because the parameter is an `szString` reference, an object must be created by the appropriate constructor. The result is a temporary object that cannot be used to initialize the reference.
 
-```
+```cpp
 // C2664c.cpp
 // compile with: /EHsc
 // C2664 expected
@@ -113,7 +113,7 @@ int main() {
 
 The compiler enforces the C++ standard requirements for applying `const`. This sample generates C2664:
 
-```
+```cpp
 // C2664d.cpp
 // C2664 expected
 #include <windows.h>
@@ -138,7 +138,7 @@ int main()
 
 Here's a more complex situation where C2664 is generated, including directions on how to fix it:
 
-```
+```cpp
 // C2664e.cpp
 // compile with: /EHsc
 // C2664 expected
@@ -183,7 +183,7 @@ int main( ) {
 
 An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
 
-```
+```cpp
 // C2664f.cpp
 // compile with: /clr
 using namespace System;
@@ -230,7 +230,7 @@ C2664 is also raised by using `wchar_t` when porting code from Visual C++ 6.0 to
 
 The following sample generates C2664 and shows how to fix it.
 
-```
+```cpp
 // C2664h.cpp
 #import "C2664g.tlb"
 using namespace myproj1;
@@ -252,7 +252,7 @@ int main() {
 
 C2664 is also caused if the compiler cannot deduce template arguments.
 
-```
+```cpp
 // C2664i.cpp
 #include <stdio.h>
 template <class T, int iType=0>

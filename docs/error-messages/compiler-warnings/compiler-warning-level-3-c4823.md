@@ -17,7 +17,7 @@ You can also manually unpin the object and ignore the warning.
 
 The following sample generates C4823.
 
-```
+```cpp
 // C4823.cpp
 // compile with: /clr /W3 /EHa-
 using namespace System;

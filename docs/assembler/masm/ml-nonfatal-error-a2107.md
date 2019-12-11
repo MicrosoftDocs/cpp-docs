@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2107"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2107"]
 helpviewer_keywords: ["A2107"]
 ms.assetid: 0385b9f2-36df-4e30-a905-ab49bdc504d1

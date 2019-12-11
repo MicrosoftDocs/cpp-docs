@@ -17,7 +17,7 @@ Possible causes:
 
 The following sample generates C2537:
 
-```
+```cpp
 // C2537.cpp
 // compile with: /c
 extern "c" void func();   // C2537

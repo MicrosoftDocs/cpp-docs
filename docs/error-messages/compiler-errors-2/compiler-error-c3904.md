@@ -21,7 +21,7 @@ For more information, see [property](../../extensions/property-cpp-component-ext
 
 The following sample generates C3904.
 
-```
+```cpp
 // C3904.cpp
 // compile with: /clr /c
 ref class X {
@@ -43,7 +43,7 @@ ref class X {
 
 The following sample generates C3904.
 
-```
+```cpp
 // C3904b.cpp
 // compile with: /clr /c
 ref struct X {

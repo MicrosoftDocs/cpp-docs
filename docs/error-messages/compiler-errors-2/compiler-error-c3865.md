@@ -15,7 +15,7 @@ For more information, see [Calling Conventions](../../cpp/calling-conventions.md
 
 The following sample generates C3865:
 
-```
+```cpp
 // C3865.cpp
 // compile with: /clr
 // processor: x86

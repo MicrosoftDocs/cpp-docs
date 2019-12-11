@@ -76,7 +76,7 @@ Because C++ allows overloading, you can call overloads of **lrint** and **llrint
 
 If *x* does not represent the floating-point equivalent of an integral value, these functions raise **FE_INEXACT**.
 
-**Microsoft specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
+**Microsoft-specific**: When the result is outside the range of the return type, or when the parameter is a NaN or infinity, the return value is implementation defined. The Microsoft compiler returns a zero (0) value.
 
 ## Requirements
 

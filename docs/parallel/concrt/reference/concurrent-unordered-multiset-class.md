@@ -7,7 +7,7 @@ ms.assetid: 219d7d67-1ff0-45f4-9400-e9cc272991a4
 ---
 # concurrent_unordered_multiset Class
 
-The `concurrent_unordered_multiset` class is an concurrency-safe container that controls a varying-length sequence of elements of type K. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations.
+The `concurrent_unordered_multiset` class is an concurrency-safe container that controls a varying-length sequence of elements of type K. The sequence is represented in a way that enables concurrency-safe append, element access, iterator access and iterator traversal operations. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order.
 
 ## Syntax
 

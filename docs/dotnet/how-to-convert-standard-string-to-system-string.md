@@ -11,7 +11,7 @@ This topic shows how convert a C++ Standard Library string ([\<string>](../stand
 
 ## Example
 
-```
+```cpp
 // convert_standard_string_to_system_string.cpp
 // compile with: /clr
 #include <string>

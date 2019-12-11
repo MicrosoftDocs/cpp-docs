@@ -13,7 +13,7 @@ An exception handler (`__try`/`__except`) cannot be nested inside a `__finally` 
 
 The following sample generates C2702:
 
-```
+```cpp
 // C2702.cpp
 // processor: x86 IPF
 int Counter;

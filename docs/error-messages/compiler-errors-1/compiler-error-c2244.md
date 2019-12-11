@@ -15,7 +15,7 @@ This error only occurs in C++ projects.
 
 The following sample generates C2244:
 
-```
+```cpp
 // C2244.cpp
 int func(char) {
    return 0;
@@ -32,7 +32,7 @@ int main() {
 
 C2244 can also occur when an incorrect function signature is used for a member function of a class template.
 
-```
+```cpp
 // C2244b.cpp
 // compile with: /c
 template<class T>
@@ -48,7 +48,7 @@ void XYZ<T>::func(int i) {}   // C2244 wrong function signature
 
 C2244 can also occur when an incorrect function signature is used for a member function template.
 
-```
+```cpp
 // C2244c.cpp
 // compile with: /c
 class ABC {
@@ -64,7 +64,7 @@ void ABC::func(int i) {}   // C2244 wrong signature
 
 You cannot partially specialize a function template.
 
-```
+```cpp
 // C2244d.cpp
 template<class T, class U>
 class QRS {

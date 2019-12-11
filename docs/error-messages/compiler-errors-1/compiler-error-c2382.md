@@ -13,7 +13,7 @@ Under [/Za](../../build/reference/za-ze-disable-language-extensions.md), this er
 
 The following sample generates C2382:
 
-```
+```cpp
 // C2382.cpp
 // compile with: /Za /c
 void f1(void) throw(int) {}

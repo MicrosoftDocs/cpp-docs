@@ -7,7 +7,7 @@ ms.assetid: aae01cbb-892b-48b8-8e1f-34f22421f263
 ---
 # Customizing C++ Command-Line Processing
 
-## Microsoft Specific
+**Microsoft Specific**
 
 If your program does not take command-line arguments, you can save a small amount of space by suppressing use of the library routine that performs command-line processing. This routine is called `_setargv` and is described in [Wildcard Expansion](../cpp/wildcard-expansion.md). To suppress its use, define a routine that does nothing in the file containing the `main` function, and name it `_setargv`. The call to `_setargv` is then satisfied by your definition of `_setargv`, and the library version is not loaded.
 

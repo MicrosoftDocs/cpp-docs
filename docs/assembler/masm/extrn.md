@@ -9,7 +9,7 @@ ms.assetid: 090f8ec7-28e7-451e-88a8-29c2e77fb956
 
 ## Syntax
 
-> EXTRN
+> **EXTRN**
 
 ## Remarks
 
@@ -17,4 +17,4 @@ See [EXTERN](../../assembler/masm/extern-masm.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -13,7 +13,7 @@ A `__based` expression must be based on a pointer.
 
 The following sample generates C2493:
 
-```
+```cpp
 // C2493.cpp
 // compile with: /c
 char mybase;

@@ -11,34 +11,34 @@ Initializes the program memory model. (32-bit MASM only.)
 
 ## Syntax
 
-> .MODEL memorymodel [[, langtype]] [[, stackoption]]
+> **.MODEL** *memory-model* ⟦__,__ *language-type*⟧ ⟦__,__ *stack-option*⟧
 
 ### Parameters
 
-*memorymodel*<br/>
+*memory-model*\
 Required parameter that determines the size of code and data pointers.
 
-*langtype*<br/>
+*language-type*\
 Optional parameter that sets the calling and naming conventions for procedures and public symbols.
 
-*stackoption*<br/>
+*stack-option*\
 Optional parameter.
 
-*stackoption* is not used if *memorymodel* is `FLAT`.
+*stack-option* is not used if *memory-model* is **FLAT**.
 
-Specifying `NEARSTACK` groups the stack segment into a single physical segment (`DGROUP`) along with data. The stack segment register (`SS`) is assumed to hold the same address as the data segment register (`DS`). `FARSTACK` does not group the stack with `DGROUP`; thus `SS` does not equal `DS`.
+Specifying **NEARSTACK** groups the stack segment into a single physical segment (**DGROUP**) along with data. The stack segment register (**SS**) is assumed to hold the same address as the data segment register (**DS**). **FARSTACK** does not group the stack with **DGROUP**; thus **SS** does not equal **DS**.
 
 ## Remarks
 
-.`MODEL` is not used in [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+**.MODEL** is not used in [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
 The following table lists the possible values for each parameter when targeting 16-bit and 32-bit platforms:
 
 |Parameter|32-bit values|16-bit values (support for earlier 16-bit development)|
 |---------------|--------------------|----------------------------------------------------------------|
-|*memorymodel*|`FLAT`|`TINY`, `SMALL`, `COMPACT`, `MEDIUM`, `LARGE`, `HUGE`, `FLAT`|
-|*langtype*|`C`, `STDCALL`|`C`, `BASIC`, `FORTRAN`, `PASCAL`, `SYSCALL`, `STDCALL`|
-|*stackoption*|Not used|`NEARSTACK`, `FARSTACK`|
+|*memory-model*|**FLAT**|**TINY**, **SMALL**, **COMPACT**, **MEDIUM**, **LARGE**, **HUGE**, **FLAT**|
+|*language-type*|**C**, **STDCALL**|**C**, **BASIC**, **FORTRAN**, **PASCAL**, **SYSCALL**, **STDCALL**|
+|*stack-option*|Not used|**NEARSTACK**, **FARSTACK**|
 
 ## Code
 
@@ -80,4 +80,4 @@ end
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

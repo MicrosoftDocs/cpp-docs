@@ -21,7 +21,7 @@ You cannot pass `this` to the capture list of a lambda expression that is declar
 
 The following example generates C3482:
 
-```
+```cpp
 // C3482.cpp
 // compile with: /c
 

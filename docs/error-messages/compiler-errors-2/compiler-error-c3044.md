@@ -13,7 +13,7 @@ The compiler found a `section` directive was used incorrectly. For more informat
 
 The following sample generates C3044:
 
-```
+```cpp
 // C3044.cpp
 // compile with: /openmp /c
 #include "omp.h"

@@ -15,7 +15,7 @@ An index variable is implicitly private, so the variable cannot be used in a [re
 
 The following sample generates C3039:
 
-```
+```cpp
 // C3039.cpp
 // compile with: /openmp /c
 int g_i;

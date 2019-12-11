@@ -13,7 +13,7 @@ Member functions or local classes in the constructor initializer list cannot be 
 
 The following sample generates C2436:
 
-```
+```cpp
 // C2436.cpp
 struct S{
    int f();

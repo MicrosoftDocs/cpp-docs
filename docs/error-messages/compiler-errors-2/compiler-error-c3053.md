@@ -13,7 +13,7 @@ Symbols passed to [threadprivate](../../parallel/openmp/reference/threadprivate.
 
 The following sample generates C3053:
 
-```
+```cpp
 // C3053.cpp
 // compile with: /openmp
 void Test() {
@@ -28,7 +28,7 @@ void Test() {
 
 Possible resolution:
 
-```
+```cpp
 // C3053b.cpp
 // compile with: /openmp /LD
 int x, y;

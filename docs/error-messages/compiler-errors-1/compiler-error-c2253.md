@@ -13,7 +13,7 @@ A nonvirtual function is specified as pure `virtual`.
 
 The following sample generates C2253:
 
-```
+```cpp
 // C2253.cpp
 // compile with: /c
 class A {
@@ -25,7 +25,7 @@ public:
 
 The following sample generates C2253:
 
-```
+```cpp
 // C2253_2.cpp
 // compile with: /clr /c
 ref struct A {

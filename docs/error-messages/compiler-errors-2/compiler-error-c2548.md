@@ -15,7 +15,7 @@ The default parameter list is missing a parameter. If you supply a default param
 
 The following sample generates C2548:
 
-```
+```cpp
 // C2548.cpp
 // compile with: /c
 void func( int = 1, int, int = 3);  // C2548

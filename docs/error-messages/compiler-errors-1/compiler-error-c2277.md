@@ -13,7 +13,7 @@ You cannot take the address of a member function.
 
 The following sample generates C2277:
 
-```
+```cpp
 // C2277.cpp
 class A {
 public:

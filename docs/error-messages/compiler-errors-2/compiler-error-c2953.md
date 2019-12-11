@@ -13,7 +13,7 @@ Check the source file and include files for other definitions.
 
 The following sample generates C2953:
 
-```
+```cpp
 // C2953.cpp
 // compile with: /c
 template <class T>  class A {};

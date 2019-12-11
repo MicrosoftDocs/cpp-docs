@@ -13,7 +13,7 @@ An array was improperly subscripted. The number of indices may not match the num
 
 The following sample generates C3262:
 
-```
+```cpp
 // C3262.cpp
 // compile with: /clr
 #using <mscorlib.dll>

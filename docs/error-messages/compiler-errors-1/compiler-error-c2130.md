@@ -13,7 +13,7 @@ The optional file name token following [#line](../../preprocessor/hash-line-dire
 
 The following sample generates C2130:
 
-```
+```cpp
 // C2130.cpp
 int main() {
    #line 1000 test   // C2130

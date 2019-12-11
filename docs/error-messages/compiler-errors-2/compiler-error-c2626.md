@@ -13,7 +13,7 @@ A member of an anonymous struct or union must have public access.
 
 The following sample generates C2626:
 
-```
+```cpp
 // C2626.cpp
 int main() {
    union {
@@ -27,7 +27,7 @@ int main() {
 
 To fix this issue, remove any private or protected tags:
 
-```
+```cpp
 // C2626b.cpp
 int main() {
    union {

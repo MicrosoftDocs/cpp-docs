@@ -13,7 +13,7 @@ A symbol other than a variable or static data member was passed to the reduction
 
 The following sample generates C3028:
 
-```
+```cpp
 // C3028.cpp
 // compile with: /openmp /link vcomps.lib
 int g_i;

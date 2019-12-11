@@ -17,7 +17,7 @@ The `mutable` specifier can be applied only to names of class data members, and 
 
 The following sample shows how C2178 may occur, and how to fix it.
 
-```
+```cpp
 // C2178.cpp
 // compile with: cl /c /W4 C2178.cpp
 

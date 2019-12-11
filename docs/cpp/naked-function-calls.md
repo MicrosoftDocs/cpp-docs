@@ -6,7 +6,7 @@ ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
 ---
 # Naked Function Calls
 
-## Microsoft Specific
+**Microsoft Specific**
 
 Functions declared with the **naked** attribute are emitted without prolog or epilog code, enabling you to write your own custom prolog/epilog sequences using the [inline assembler](../assembler/inline/inline-assembler.md). Naked functions are provided as an advanced feature. They enable you to declare a function that is being called from a context other than C/C++, and thus make different assumptions about where parameters are, or which registers are preserved. Examples include routines such as interrupt handlers. This feature is particularly useful for writers of virtual device drivers (VxDs).
 

@@ -13,7 +13,7 @@ The increment part of an OpenMP `for` loop must use the index variable both on t
 
 The following sample generates C3019:
 
-```
+```cpp
 // C3019.cpp
 // compile with: /openmp
 int main()

@@ -15,7 +15,7 @@ An override was specified incorrectly. For more information, see [Explicit Overr
 
 The following sample generates C3669.
 
-```
+```cpp
 // C3669.cpp
 // compile with: /clr
 public ref struct R {

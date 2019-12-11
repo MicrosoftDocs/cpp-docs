@@ -11,8 +11,8 @@ Toggles listing of false conditional blocks.
 
 ## Syntax
 
-> .TFCOND
+> **.TFCOND**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -11,7 +11,7 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 ## Syntax
 
-> .NOLISTIF
+> **.NOLISTIF**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ This is the default. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

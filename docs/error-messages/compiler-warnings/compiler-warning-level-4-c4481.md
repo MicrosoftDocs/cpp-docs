@@ -19,7 +19,7 @@ A keyword was used that is not in the C++ standard, for example, one of the over
 
 The following sample generates C4481.
 
-```
+```cpp
 // C4481.cpp
 // compile with: /W4 /c
 class B {

@@ -17,7 +17,7 @@ This warning is off by default. See [Compiler Warnings That Are Off by Default](
 
 The following sample generates C4431.
 
-```
+```c
 // C4431.c
 // compile with: /c /W4
 #pragma warning(default:4431)

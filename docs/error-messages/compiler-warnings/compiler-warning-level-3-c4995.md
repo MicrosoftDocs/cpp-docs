@@ -15,7 +15,7 @@ The compiler encountered a function that was marked with pragma [deprecated](../
 
 The following sample generates C4995:
 
-```
+```cpp
 // C4995.cpp
 // compile with: /W3
 #include <stdio.h>

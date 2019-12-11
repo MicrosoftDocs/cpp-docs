@@ -13,7 +13,7 @@ A generic type parameter was used incorrectly.
 
 The following sample generates C3232:
 
-```
+```cpp
 // C3232.cpp
 // compile with: /clr
 generic <class T>

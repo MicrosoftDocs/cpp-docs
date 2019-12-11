@@ -13,7 +13,7 @@ The `__declspec( allocate())` syntax can be used for static data only.
 
 The following sample generates C2479:
 
-```
+```cpp
 // C2479.cpp
 // compile with: /c
 #pragma section("mycode", read)

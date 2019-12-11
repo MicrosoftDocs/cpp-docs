@@ -15,7 +15,7 @@ The compiler needs to know the full definition of the class (to emit the meta-da
 
 For example, the following example generates C3366 and shows how to fix it:
 
-```
+```cpp
 // C3366.cpp
 // compile with: /clr /c
 ref class X {

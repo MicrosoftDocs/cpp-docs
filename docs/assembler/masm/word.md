@@ -7,14 +7,14 @@ ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
 ---
 # WORD
 
-Allocates and optionally initializes a word (2 bytes) of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
+Allocates and optionally initializes a word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal.
 
 ## Syntax
 
-> [[*name*]] WORD *initializer* [[, *initializer*]]...
+> ⟦*name*⟧ **WORD** *initializer* ⟦__,__ *initializer* ...⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[SWORD](../../assembler/masm/sword.md)<br/>
-[DW](../../assembler/masm/dw.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)\
+[SWORD](../../assembler/masm/sword.md)\
+[DW](../../assembler/masm/dw.md)

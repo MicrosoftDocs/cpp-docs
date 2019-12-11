@@ -13,7 +13,7 @@ A friend function was defined using a qualified name, which is not allowed.
 
 The following sample generates C3060:
 
-```
+```cpp
 // C3060.cpp
 class A {
 public:

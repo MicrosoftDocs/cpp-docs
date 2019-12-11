@@ -27,7 +27,7 @@ For more information, see,
 
 In the following sample, the linker is instructed to merge the `.rdata` section twice, but into different sections. The following sample generates LNK4253.
 
-```
+```cpp
 // LNK4253.cpp
 // compile with: /W1 /link /merge:.rdata=text2
 // LNK4253 expected

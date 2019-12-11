@@ -19,7 +19,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 The following sample generates C3299.
 
-```
+```cpp
 // C3299.cpp
 // compile with: /clr /c
 public ref struct R {

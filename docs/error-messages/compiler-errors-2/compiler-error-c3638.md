@@ -15,7 +15,7 @@ For more information, see [Implicit Boxing](../../extensions/boxing-cpp-componen
 
 The following sample generates C3638:
 
-```
+```cpp
 // C3638.cpp
 // compile with: /clr
 value struct V {

@@ -15,7 +15,7 @@ Anything other than a property or member function is not allowed in an interface
 
 The following sample generates C2844:
 
-```
+```cpp
 // C2844a.cpp
 // compile with: /clr /c
 public interface class IFace {

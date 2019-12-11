@@ -8,7 +8,7 @@ ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
 
 ## <a name="errc"></a> errc
 
-Provides symbolic names for all the error-code macros defined by Posix in `<errno.h>`.
+Provides symbolic names for all the error-code macros defined by POSIX in `<errno.h>`.
 
 ```
 class errc {

@@ -13,7 +13,7 @@ You can only specify one `get` function in the [property](../../cpp/property-cpp
 
 The following sample generates C2776:
 
-```
+```cpp
 // C2776.cpp
 struct A {
    __declspec(property(get=GetProp,get=GetPropToo))

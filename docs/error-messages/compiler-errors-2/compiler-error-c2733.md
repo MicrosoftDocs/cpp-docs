@@ -13,7 +13,7 @@ More than one overloaded function is declared with C linkage. When using C linka
 
 The following sample generates C2733:
 
-```
+```cpp
 // C2733.cpp
 extern "C" {
    void F1(int);

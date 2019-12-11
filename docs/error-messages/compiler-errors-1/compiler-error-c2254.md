@@ -13,7 +13,7 @@ A `friend` function is specified as pure `virtual`.
 
 The following sample generates C2254:
 
-```
+```cpp
 // C2254.cpp
 // compile with: /c
 class A {

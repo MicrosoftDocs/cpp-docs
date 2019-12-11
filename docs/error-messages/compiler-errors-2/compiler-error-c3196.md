@@ -13,7 +13,7 @@ A keyword was used more than once.
 
 The following sample generates C3196:
 
-```
+```cpp
 // C3196.cpp
 // compile with: /clr
 ref struct R abstract abstract {};   // C3196

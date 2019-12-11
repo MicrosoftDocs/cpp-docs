@@ -15,7 +15,7 @@ An assembly (reference) needed to compile your code was not specified; pass the 
 
 The following sample generates C3624:
 
-```
+```cpp
 // C3624.cpp
 // compile with: /clr /c
 #using <System.Windows.Forms.dll>

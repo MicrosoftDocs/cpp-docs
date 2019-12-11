@@ -15,7 +15,7 @@ The `gcnew` special constraint was specified without the empty parameter list. S
 
 The following sample generates C3869.
 
-```
+```cpp
 // C3869.cpp
 // compile with: /c /clr
 using namespace System;

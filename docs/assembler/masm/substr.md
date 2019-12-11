@@ -11,8 +11,8 @@ Returns a substring of *textitem*, starting at *position*. The *textitem* can be
 
 ## Syntax
 
-> name SUBSTR textitem, position [[, length]]
+> *name* **SUBSTR** *textitem*__,__ *position* ⟦__,__ *length*⟧
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](../../assembler/masm/directives-reference.md)

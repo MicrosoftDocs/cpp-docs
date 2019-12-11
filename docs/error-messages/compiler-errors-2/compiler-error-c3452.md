@@ -15,7 +15,7 @@ An argument was passed to an attribute that expected a constant, a value that ca
 
 The following sample generates C3452.
 
-```
+```cpp
 // C3452.cpp
 // compile with: /c
 int i;

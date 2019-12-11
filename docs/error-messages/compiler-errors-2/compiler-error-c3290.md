@@ -17,7 +17,7 @@ See [property](../../extensions/property-cpp-component-extensions.md) and [Track
 
 The following sample generates C3290.
 
-```
+```cpp
 // C3290.cpp
 // compile with: /clr /c
 ref struct R {};

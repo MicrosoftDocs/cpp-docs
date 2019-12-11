@@ -15,7 +15,7 @@ This error can be caused by using `__declspec(novtable)` with a function.
 
 The following sample generates C2498:
 
-```
+```cpp
 // C2498.cpp
 // compile with: /c
 void __declspec(novtable) f() {}   // C2498

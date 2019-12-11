@@ -13,7 +13,7 @@ A symbol must first be declared [threadprivate](../../parallel/openmp/reference/
 
 The following sample generates C3058:
 
-```
+```cpp
 // C3058.cpp
 // compile with: /openmp
 int x, y, z;
@@ -28,7 +28,7 @@ void test() {
 
 Possible resolution:
 
-```
+```cpp
 // C3058b.cpp
 // compile with: /openmp /LD
 int x, y, z;

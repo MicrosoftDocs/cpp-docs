@@ -17,7 +17,7 @@ See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for
 
 The following sample creates an assembly that contains a type that was forwarded from another assembly.
 
-```
+```cpp
 // C3238.cpp
 // compile with: /clr /LD
 public ref class R {};
@@ -27,7 +27,7 @@ public ref class R {};
 
 The following sample creates an assembly that used to contain the type definition, but not only contains type forwarding syntax.
 
-```
+```cpp
 // C3238_b.cpp
 // compile with: /clr /LD
 #using "C3238.dll"
@@ -38,7 +38,7 @@ The following sample creates an assembly that used to contain the type definitio
 
 The following sample generates C3238.
 
-```
+```cpp
 // C3238_c.cpp
 // compile with: /clr /c
 // C3238 expected

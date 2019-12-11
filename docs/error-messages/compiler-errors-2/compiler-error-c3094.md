@@ -15,7 +15,7 @@ An attribute was not scoped correctly.  For more information, see [User-Defined 
 
 The following sample generates C3094.
 
-```
+```cpp
 // C3094.cpp
 // compile with: /clr /c
 using namespace System;

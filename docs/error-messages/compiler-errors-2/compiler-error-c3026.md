@@ -15,7 +15,7 @@ A clause was passed an integer value, but the value was not a positive number. T
 
 The following sample generates C3026:
 
-```
+```cpp
 // C3026.cpp
 // compile with: /openmp /link vcomps.lib
 #include <stdio.h>

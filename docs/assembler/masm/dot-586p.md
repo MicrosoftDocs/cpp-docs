@@ -11,8 +11,8 @@ Enables assembly of all instructions (including privileged) for the Pentium proc
 
 ## Syntax
 
-> .586P
+> **.586P**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)

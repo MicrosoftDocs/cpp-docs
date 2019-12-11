@@ -28,7 +28,7 @@ References are declared using the following sequence:
 
 1. The declarator:
 
-   - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
+   - An optional Microsoft-specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
 
    - The **&** operator or **&&** operator.
 

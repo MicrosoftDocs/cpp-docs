@@ -13,7 +13,7 @@ The keywords `class` and `struct` should not appear in a base class list.
 
 The following sample generates C2518:
 
-```
+```cpp
 // C2518.cpp
 // compile with: /c
 class B {};

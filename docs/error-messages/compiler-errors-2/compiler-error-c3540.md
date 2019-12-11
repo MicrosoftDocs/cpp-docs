@@ -15,7 +15,7 @@ The [sizeof](../../cpp/sizeof-operator.md) operator cannot be applied to the ind
 
 The following example yields C3540.
 
-```
+```cpp
 // C3540.cpp
 // Compile with /Zc:auto
 int main() {

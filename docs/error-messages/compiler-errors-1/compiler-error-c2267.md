@@ -13,7 +13,7 @@ A local function is declared `static`. Static functions must have global scope.
 
 The following sample generates C2267:
 
-```
+```cpp
 // C2267.cpp
 static int func2();   // OK
 int main() {

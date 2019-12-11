@@ -13,7 +13,7 @@ Two anonymous structures or unions contained member declarations with the same i
 
 The following sample generates C2658:
 
-```
+```cpp
 // C2658.cpp
 // compile with: /c
 struct X {

@@ -1,32 +1,32 @@
 ---
-title: "Symbols Reference"
+title: "Symbols reference"
 ms.date: "11/06/2018"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), symbols reference"]
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 ---
-# Symbols Reference
+# Symbols reference
 
-## Date and Time Information
+## Date and time information
 
 |||
 |-|-|
 |[\@Date](../../assembler/masm/at-date.md)|[\@Time](../../assembler/masm/at-time.md)|
 
-## Environment Information
+## Environment information
 
 |||
 |-|-|
 |[\@Cpu](../../assembler/masm/at-cpu.md)|[\@Environ](../../assembler/masm/at-environ.md)|
 |[\@Interface](../../assembler/masm/at-interface.md)|[\@Version](../../assembler/masm/at-version.md)|
 
-## File Information
+## File information
 
 |||
 |-|-|
 |[\@FileCur](../../assembler/masm/at-filecur.md)|[\@FileName](../../assembler/masm/at-filename.md)|
 |[\@Line](../../assembler/masm/at-line.md)||
 
-## Macro Functions
+## Macro functions
 
 |||
 |-|-|
@@ -40,7 +40,7 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 |[\$](../../assembler/masm/dollar.md)|[\?](../../assembler/masm/q.md)|[\@\@:](../../assembler/masm/at-at.md)|
 |[\@B](../../assembler/masm/at-b.md)|[\@F](../../assembler/masm/at-f.md)||
 
-## Segment Information
+## Segment information
 
 ||||
 |-|-|-|
@@ -51,4 +51,4 @@ ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
 
 ## See also
 
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

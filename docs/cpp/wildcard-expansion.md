@@ -7,7 +7,7 @@ ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
 ---
 # Wildcard Expansion
 
-## Microsoft Specific
+**Microsoft Specific**
 
 You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command-line.
 

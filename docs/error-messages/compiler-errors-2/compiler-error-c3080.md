@@ -15,7 +15,7 @@ For more information, see [Destructors and finalizers in How to: Define and cons
 
 The following sample generates C3080.
 
-```
+```cpp
 // C3080.cpp
 // compile with: /clr /c
 ref struct rs {

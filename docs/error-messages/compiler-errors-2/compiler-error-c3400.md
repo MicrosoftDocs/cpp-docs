@@ -17,7 +17,7 @@ For more information, see [Constraints on Generic Type Parameters (C++/CLI)](../
 
 The following sample generates C3400.
 
-```
+```cpp
 // C3400.cpp
 // compile with: /clr /c
 generic<class T, class U>

@@ -15,7 +15,7 @@ Attributes cannot be applied to template definitions.
 
 The following sample generates C3408.
 
-```
+```cpp
 // C3408.cpp
 // compile with: /c
 template <class T> struct PTS {

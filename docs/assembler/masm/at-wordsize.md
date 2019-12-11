@@ -15,4 +15,4 @@ Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

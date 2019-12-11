@@ -11,8 +11,8 @@ ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
 
 ## Syntax
 
-> .UNTIL
+> **.UNTIL**
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

@@ -13,7 +13,7 @@ The conversion requires a cast from a `virtual` base class to a derived class, w
 
 The following sample generates C2635:
 
-```
+```cpp
 // C2635.cpp
 class B {};
 class D : virtual public B {};

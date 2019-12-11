@@ -13,7 +13,7 @@ No conversion from *type1* to *type2* was more direct than any other. We suggest
 
 The following sample generates C2594. The suggested resolution to the error is a sequence of conversions:
 
-```
+```cpp
 // C2594.cpp
 // compile with: /c
 struct A{};

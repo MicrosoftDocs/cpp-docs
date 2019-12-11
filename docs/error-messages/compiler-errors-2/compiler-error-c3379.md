@@ -15,7 +15,7 @@ When used with [/clr](../../build/reference/clr-common-language-runtime-compilat
 
 The following sample generates C3379:
 
-```
+```cpp
 // C3379a.cpp
 // compile with: /clr
 using namespace System;

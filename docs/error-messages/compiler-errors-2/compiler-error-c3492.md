@@ -19,7 +19,7 @@ You cannot capture a member of an unnamed union.
 
 The following example generates C3492 because it captures a member of an anonymous union:
 
-```
+```cpp
 // C3492a.cpp
 
 int main()
@@ -39,7 +39,7 @@ int main()
 
 The following example resolves C3492 by giving the union a name and by passing the complete union structure to the capture list of the lambda expression:
 
-```
+```cpp
 // C3492b.cpp
 
 int main()

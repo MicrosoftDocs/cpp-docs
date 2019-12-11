@@ -11,7 +11,7 @@ Starts listing of all statements in macros.
 
 ## Syntax
 
-> .LISTMACROALL
+> **.LISTMACROALL**
 
 ## Remarks
 
@@ -19,4 +19,4 @@ Same as [.LALL](../../assembler/masm/dot-lall.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)

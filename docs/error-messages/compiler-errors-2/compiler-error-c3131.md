@@ -13,7 +13,7 @@ The [module](../../windows/module-cpp.md) attribute must have a name parameter.
 
 The following sample generates C3131:
 
-```
+```cpp
 // C3131.cpp
 [emitidl];
 [module];   // C3131

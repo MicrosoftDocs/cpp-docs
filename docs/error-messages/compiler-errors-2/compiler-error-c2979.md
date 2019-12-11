@@ -15,7 +15,7 @@ A generic class was declared incorrectly.  See [Generics](../../extensions/gener
 
 The following sample generates C2979.
 
-```
+```cpp
 // C2979.cpp
 // compile with: /clr /c
 generic <>

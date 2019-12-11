@@ -13,7 +13,7 @@ A constructor returns a value or redefines the class name.
 
 The following sample generates C2326:
 
-```
+```cpp
 // C2380.cpp
 // compile with: /c
 class C {

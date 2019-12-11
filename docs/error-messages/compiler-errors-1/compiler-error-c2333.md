@@ -13,7 +13,7 @@ This error occurs after another error, for member functions defined inside their
 
 The following sample generates C2333:
 
-```
+```cpp
 // C2333.cpp
 struct s1 {
    s1(s1) {}   // C2333

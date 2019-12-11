@@ -13,7 +13,7 @@ This warning, only valid in the Itanium Processor Family (IPF) compiler, reports
 
 The following sample generates C4343:
 
-```
+```cpp
 // C4343.cpp
 // compile with: /Og /W4 /LD
 // processor: IPF

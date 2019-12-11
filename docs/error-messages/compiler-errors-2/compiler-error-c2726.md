@@ -13,7 +13,7 @@ You cannot create an instance of a native type on the garbage-collected heap.
 
 The following sample generates C2726 and shows how to fix it:
 
-```
+```cpp
 // C2726.cpp
 // compile with: /clr
 using namespace System;

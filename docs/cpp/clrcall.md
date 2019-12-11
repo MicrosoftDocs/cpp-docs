@@ -7,9 +7,7 @@ ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
 ---
 # __clrcall
 
-**Microsoft Specific**
-
-Specifies that a function can only be called from managed code.  Use **__clrcall** for all virtual functions that will only be called from managed code. However this calling convention cannot be used for functions that will be called from native code.
+Specifies that a function can only be called from managed code.  Use **__clrcall** for all virtual functions that will only be called from managed code. However this calling convention cannot be used for functions that will be called from native code. The **__clrcall** modifier is Microsoft-specific.
 
 Use **__clrcall** to improve performance when calling from a managed function to a virtual managed function or from managed function to managed function through pointer.
 

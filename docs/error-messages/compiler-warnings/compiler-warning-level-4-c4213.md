@@ -13,7 +13,7 @@ With the default Microsoft extensions (/Ze), you can use casts on the left side 
 
 ## Example
 
-```
+```c
 // C4213.c
 // compile with: /W4
 void *a;

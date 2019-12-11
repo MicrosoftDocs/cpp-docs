@@ -13,7 +13,7 @@ The `cli` namespace is defined by Microsoft and contains pseudo-templates. The M
 
 The following sample generates C3279:
 
-```
+```cpp
 // C3279.cpp
 // compile with: /clr
 namespace cli {

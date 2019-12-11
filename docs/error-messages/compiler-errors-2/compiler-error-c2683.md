@@ -15,7 +15,7 @@ You can use [static_cast](../../cpp/static-cast-operator.md) to perform conversi
 
 The following sample generates C2683:
 
-```
+```cpp
 // C2683.cpp
 // compile with: /c
 class B { };

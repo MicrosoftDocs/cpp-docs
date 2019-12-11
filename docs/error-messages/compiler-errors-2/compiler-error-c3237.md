@@ -15,7 +15,7 @@ Generic classes cannot be user-defined attributes.
 
 The following sample generates C3237.
 
-```
+```cpp
 // C3237.cpp
 // compile with: /clr /c
 // C3237 expected

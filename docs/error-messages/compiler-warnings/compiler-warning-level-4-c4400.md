@@ -15,7 +15,7 @@ The [const](../../cpp/const-cpp.md)and [volatile](../../cpp/volatile-cpp.md)qual
 
 The following sample generates C4400.
 
-```
+```cpp
 // C4400.cpp
 // compile with: /clr /W4
 // C4401 expected

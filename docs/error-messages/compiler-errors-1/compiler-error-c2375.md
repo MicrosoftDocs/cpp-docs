@@ -13,7 +13,7 @@ The function is already declared with a different linkage specifier.
 
 The following sample generates C2375:
 
-```
+```cpp
 // C2375.cpp
 // compile with: /Za /c
 extern void func( void );

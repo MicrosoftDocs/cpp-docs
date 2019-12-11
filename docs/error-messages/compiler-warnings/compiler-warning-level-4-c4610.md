@@ -11,7 +11,7 @@ object 'class' can never be instantiated - user-defined constructor required
 
 The class has no user-defined or default constructors. No instantiation is performed. The following sample generates C4610:
 
-```
+```cpp
 // C4610.cpp
 // compile with: /W4
 struct A {

@@ -15,7 +15,7 @@ Explicit casts to a pinned pointer are not allowed.
 
 The following sample generates C3834.
 
-```
+```cpp
 // C3834.cpp
 // compile with: /clr
 int main() {

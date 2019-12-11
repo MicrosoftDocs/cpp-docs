@@ -13,7 +13,7 @@ You passed an invalid default argument for a template parameter.
 
 The following sample generates C3202:
 
-```
+```cpp
 // C3202.cpp
 template<typename T>
 class X

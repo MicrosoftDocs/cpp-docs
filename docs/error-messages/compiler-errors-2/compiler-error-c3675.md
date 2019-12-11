@@ -17,7 +17,7 @@ See [property](../../extensions/property-cpp-component-extensions.md) for more i
 
 The following sample generates C3675.
 
-```
+```cpp
 // C3675.cpp
 // compile with: /clr /c
 ref struct C {

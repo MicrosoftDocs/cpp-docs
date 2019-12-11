@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2034"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2034"]
 helpviewer_keywords: ["A2034"]
 ms.assetid: 6438970c-0aee-4f14-a058-5fe47d0ee216

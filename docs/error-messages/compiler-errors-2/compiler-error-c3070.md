@@ -13,7 +13,7 @@ A property's set accessor method was not defined. For more information, see [pro
 
 The following sample generates C3070:
 
-```
+```cpp
 // C3070.cpp
 // compile with: /clr
 ref class R {

@@ -11,8 +11,8 @@ See [OPATTR](../../assembler/masm/operator-opattr.md).
 
 ## Syntax
 
-> .TYPE expression
+> **.TYPE** *expression*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

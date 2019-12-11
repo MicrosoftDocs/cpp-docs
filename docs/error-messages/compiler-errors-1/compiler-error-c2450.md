@@ -13,7 +13,7 @@ The `switch` expression evaluates to an invalid type. It must evaluate to an int
 
 The following sample generates C2450:
 
-```
+```cpp
 // C2450.cpp
 class X {
 public:

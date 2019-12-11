@@ -11,7 +11,7 @@ Four preprocessor-specific operators are used in the context of the `#define` di
 |Operator|Action|
 |--------------|------------|
 |[Stringizing operator (#)](../preprocessor/stringizing-operator-hash.md)|Causes the corresponding actual argument to be enclosed in double quotation marks|
-|[Charizing operator (#@)](../preprocessor/charizing-operator-hash-at.md)|Causes the corresponding argument to be enclosed in single quotation marks and to be treated as a character (Microsoft Specific)|
+|[Charizing operator (#@)](../preprocessor/charizing-operator-hash-at.md)|Causes the corresponding argument to be enclosed in single quotation marks and to be treated as a character (Microsoft-specific)|
 |[Token-pasting operator (##)](../preprocessor/token-pasting-operator-hash-hash.md)|Allows tokens used as actual arguments to be concatenated to form other tokens|
 |[defined operator](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|Simplifies the writing of compound expressions in certain macro directives|
 

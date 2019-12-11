@@ -15,7 +15,7 @@ Only .NET events are supported in managed classes. Only Windows Runtime events a
 
 The following sample generates C3825 and shows how to fix it:
 
-```
+```cpp
 // C3825a.cpp
 // compile with: /clr
 public delegate void del1();

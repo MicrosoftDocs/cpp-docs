@@ -15,7 +15,7 @@ The code tries to modify a member variable, which is not possible.
 
 The following sample generates C2326:
 
-```
+```cpp
 // C2326.cpp
 void MyFunc() {
    int i;

@@ -13,7 +13,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) data member ca
 
 The following sample generates C3887:
 
-```
+```cpp
 // C3887.cpp
 // compile with: /clr
 ref struct Y1 {
@@ -25,7 +25,7 @@ ref struct Y1 {
 
 Possible resolution:
 
-```
+```cpp
 // C3887b.cpp
 // compile with: /clr /c
 ref struct Y1 {

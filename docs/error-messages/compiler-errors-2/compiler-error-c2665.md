@@ -19,7 +19,7 @@ A parameter of the overloaded function cannot be converted to the required type.
 
 The following sample generates C2665.
 
-```
+```cpp
 // C2665.cpp
 void func(short, char*){}
 void func(char*, char*){}

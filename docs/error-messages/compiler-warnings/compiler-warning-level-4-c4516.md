@@ -13,7 +13,7 @@ The ANSI C++ committee has declared access declarations (changing the access of 
 
 The following sample generates C4516:
 
-```
+```cpp
 // C4516.cpp
 // compile with: /W4
 class A

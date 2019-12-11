@@ -13,7 +13,7 @@ Function template candidates with explicit template or generic arguments resulte
 
 The following sample generates C2770:
 
-```
+```cpp
 // C2770.cpp
 #include <stdio.h>
 template <class T>

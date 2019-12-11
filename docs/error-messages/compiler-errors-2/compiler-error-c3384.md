@@ -17,7 +17,7 @@ See [Constraints on Generic Type Parameters (C++/CLI)](../../extensions/constrai
 
 The following sample generates C3384.
 
-```
+```cpp
 // C3384.cpp
 // compile with: /c /clr
 generic <typename T>

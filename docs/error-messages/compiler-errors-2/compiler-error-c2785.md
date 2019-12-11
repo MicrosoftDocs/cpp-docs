@@ -19,7 +19,7 @@ The return type of function template specialization differs from the return type
 
 The following sample generates C2785:
 
-```
+```cpp
 // C2785.cpp
 // compile with: /c
 template<class T> void f(T);

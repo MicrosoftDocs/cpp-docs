@@ -51,7 +51,7 @@ This directive is functionally equivalent to the following code:
 
 The compiler adds 4000 to any warning number that is between 0 and 999.
 
-For warning numbers in the range 4700-4999, which are the ones associated with code generation, the state of the warning in effect when the compiler encounters the open curly brace of a function will be in effect for the rest of the function. Use of the **warning** pragma in the function to change the state of a warning number larger than 4699 only takes effect after the end of the function. The following example shows the correct placement of **warning** pragmas to disable a code-generation warning message, and then to restore it.
+For warning numbers in the range 4700-4999, which are the ones associated with code generation, the state of the warning in effect when the compiler encounters the function definition will be in effect for the rest of the function. Use of the **warning** pragma in the function to change the state of a warning number larger than 4699 only takes effect after the end of the function. The following example shows the correct placement of **warning** pragmas to disable a code-generation warning message, and then to restore it.
 
 ```cpp
 // pragma_warning.cpp

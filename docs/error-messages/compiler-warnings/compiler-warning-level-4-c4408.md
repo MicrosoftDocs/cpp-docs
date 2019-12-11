@@ -13,7 +13,7 @@ An anonymous struct or union must have at least one data member.
 
 The following sample generates C4408:
 
-```
+```cpp
 // C4408.cpp
 // compile with: /W4 /LD
 static union

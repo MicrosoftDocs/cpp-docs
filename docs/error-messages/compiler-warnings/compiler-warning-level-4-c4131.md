@@ -15,7 +15,7 @@ Old-style function declarations should be converted to prototype form.
 
 The following example shows an old-style function declaration:
 
-```
+```c
 // C4131.c
 // compile with: /W4 /c
 void addrec( name, id ) // C4131 expected
@@ -26,7 +26,7 @@ int id;
 
 The following example shows a prototype form:
 
-```
+```c
 void addrec( char *name, int id )
 { }
 ```

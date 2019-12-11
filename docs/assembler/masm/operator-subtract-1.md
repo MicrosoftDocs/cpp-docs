@@ -11,8 +11,8 @@ Returns *expression1* divided by *expression2*.
 
 ## Syntax
 
-> expression1 / expression2
+> *expression1* __/__ *expression2*
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)

@@ -13,7 +13,7 @@ A virtual function was overridden, but under [/Za](../../build/reference/za-ze-d
 
 The following sample generates C2694:
 
-```
+```cpp
 // C2694.cpp
 // compile with: /Za /c
 class MyBase {

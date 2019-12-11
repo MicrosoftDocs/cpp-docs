@@ -15,7 +15,7 @@ You cannot explicitly instantiate a nontemplated class.
 
 The following sample generates C2946.
 
-```
+```cpp
 // C2946.cpp
 class C {};
 template C;  // C2946

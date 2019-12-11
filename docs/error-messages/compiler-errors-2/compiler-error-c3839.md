@@ -13,7 +13,7 @@ Alignment of variables in managed or Windows Runtime types is controlled by the 
 
 The following sample generates C3839:
 
-```
+```cpp
 // C3839a.cpp
 // compile with: /clr
 ref class C

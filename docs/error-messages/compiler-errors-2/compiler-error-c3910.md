@@ -15,7 +15,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 The following sample generates C3910:
 
-```
+```cpp
 // C3910.cpp
 // compile with: /clr /c
 delegate void H();

@@ -64,9 +64,7 @@ cl /Zp8 some_file.cpp
 
 ## The __pragma() keyword
 
-**Microsoft specific**
-
-The compiler also supports the **__pragma** keyword, which has the same functionality as the **#pragma** directive. The difference is, the **__pragma** keyword is usable inline in a macro definition. The **#pragma** directive isn't usable in a macro definition, because the compiler interprets the number sign character ('#') in the directive as the [stringizing operator (#)](../preprocessor/stringizing-operator-hash.md).
+The compiler also supports the Microsoft-specific **__pragma** keyword, which has the same functionality as the **#pragma** directive. The difference is, the **__pragma** keyword is usable inline in a macro definition. The **#pragma** directive isn't usable in a macro definition, because the compiler interprets the number sign character ('#') in the directive as the [stringizing operator (#)](../preprocessor/stringizing-operator-hash.md).
 
 The following code example demonstrates how the **__pragma** keyword can be used in a macro. This code is excerpted from the mfcdual.h header in the ACDUAL sample in "Compiler COM Support Samples":
 
@@ -87,8 +85,6 @@ _hr = DualHandleException(_riidSource, e); \
 END_CATCH_ALL \
 return _hr; \
 ```
-
-**End Microsoft specific**
 
 ## See also
 

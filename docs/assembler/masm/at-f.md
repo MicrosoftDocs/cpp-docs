@@ -15,4 +15,4 @@ The location of the next [\@\@:](../../assembler/masm/at-at.md) label.
 
 ## See also
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)
+[Symbols reference](symbols-reference.md)

@@ -17,7 +17,7 @@ For example, make sure that your code does not contain a function declaration wh
 
 The following sample generates C2825:
 
-```
+```cpp
 // C2825.cpp
 typedef int i;
 int main() {

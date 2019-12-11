@@ -13,7 +13,7 @@ The compiler detected a problem with an explicit instantiation of a template.  F
 
 The following sample generates C2252:
 
-```
+```cpp
 // C2252.cpp
 class A {
 public:

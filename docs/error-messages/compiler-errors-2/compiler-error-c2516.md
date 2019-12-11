@@ -13,7 +13,7 @@ The class is derived from a type name defined by a `typedef` statement.
 
 The following sample generates C2516:
 
-```
+```cpp
 // C2516.cpp
 typedef unsigned long ulong;
 class C : public ulong {}; // C2516

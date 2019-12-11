@@ -15,7 +15,7 @@ The scope-resolution operator cannot be overloaded.
 
 The following sample generates C2589:
 
-```
+```cpp
 // C2589.cpp
 void Test(){}
 class A {};

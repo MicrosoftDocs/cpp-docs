@@ -13,7 +13,7 @@ A pointer to a data member cannot have a calling convention. To resolve, either 
 
 The following sample generates C2637:
 
-```
+```cpp
 // C2637.cpp
 // compile with: /c
 struct S {};

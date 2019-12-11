@@ -13,7 +13,7 @@ You cannot use the same name as an alias for two namespaces.
 
 The following sample generates C2881:
 
-```
+```cpp
 // C2881.cpp
 // compile with: /c
 namespace A {

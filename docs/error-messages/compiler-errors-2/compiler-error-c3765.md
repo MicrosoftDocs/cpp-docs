@@ -13,7 +13,7 @@ If a class is marked with the [event_receiver](../../windows/event-receiver.md) 
 
 The following sample generates C3765:
 
-```
+```cpp
 // C3765.cpp
 [event_receiver(native)]
 struct ER2 {

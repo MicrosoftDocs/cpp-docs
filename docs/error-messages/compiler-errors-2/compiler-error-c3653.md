@@ -13,7 +13,7 @@ An explicit override specified a function that was not found in any interface. F
 
 The following sample generates C3653:
 
-```
+```cpp
 // C3653.cpp
 // compile with: /clr
 public interface struct I {

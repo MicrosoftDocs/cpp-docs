@@ -19,7 +19,7 @@ Possible causes:
 
 1. The following sample generates C2597 and shows how to fix it:
 
-```
+```cpp
 // C2597.cpp
 // compile with: /c
 struct s1 {

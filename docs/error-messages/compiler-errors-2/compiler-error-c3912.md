@@ -15,7 +15,7 @@ For more information, see [event](../../extensions/event-cpp-component-extension
 
 The following sample generates C3912:
 
-```
+```cpp
 // C3912.cpp
 // compile with: /clr
 delegate void H();

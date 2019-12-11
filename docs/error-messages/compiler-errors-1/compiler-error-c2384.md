@@ -15,7 +15,7 @@ Static thread local storage in managed code can only be used for statically load
 
 The following line generates C2384 and shows how to fix it in C++/CLI code:
 
-```
+```cpp
 // C2384.cpp
 // compile with: /clr /c
 public ref class B {

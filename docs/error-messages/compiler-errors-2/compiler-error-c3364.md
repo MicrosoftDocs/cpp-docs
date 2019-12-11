@@ -13,7 +13,7 @@ The second parameter of the delegate's constructor takes either the address of a
 
 The following sample generates C3364:
 
-```
+```cpp
 // C3364_2.cpp
 // compile with: /clr
 

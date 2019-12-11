@@ -13,7 +13,7 @@ An overloaded operator has too many parameters.
 
 The following sample generates C2806:
 
-```
+```cpp
 // C2806.cpp
 // compile with: /c
 class X {

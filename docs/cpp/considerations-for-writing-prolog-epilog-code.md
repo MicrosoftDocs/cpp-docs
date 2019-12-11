@@ -45,7 +45,7 @@ mov        eax, [ebp - __LOCAL_SIZE]   ;Error
 
 The following example of a naked function containing custom prolog and epilog sequences uses the `__LOCAL_SIZE` symbol in the prolog sequence:
 
-```
+```cpp
 // the__local_size_symbol.cpp
 // processor: x86
 __declspec ( naked ) int main() {

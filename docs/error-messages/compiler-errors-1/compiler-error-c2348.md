@@ -13,7 +13,7 @@ To place a `struct` in a .idl file with the [export](../../windows/export.md) at
 
 The following sample generates C2348:
 
-```
+```cpp
 // C2348.cpp
 // C2348 error expected
 [ module(name="SimpleMidlTest") ];

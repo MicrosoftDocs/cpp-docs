@@ -13,7 +13,7 @@ A data member declared with the [property](../../cpp/property-cpp.md) extended a
 
 The following sample generates C2775:
 
-```
+```cpp
 // C2775.cpp
 struct A {
    __declspec(property(put=PutProp2, get=GetProp2)) int prop2;

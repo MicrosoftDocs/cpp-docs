@@ -13,7 +13,7 @@ The declaration of a pointer to a member does not specify a class.
 
 The following sample generates C2645:
 
-```
+```cpp
 // C2645.cpp
 class A {};
 int main() {

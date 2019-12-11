@@ -13,7 +13,7 @@ The [__unhook](../../cpp/unhook.md) function varies in the number of parameters 
 
 The following sample generates C3743:
 
-```
+```cpp
 // C3743.cpp
 #define _ATL_ATTRIBUTES 1
 #include <atlbase.h>

@@ -13,7 +13,7 @@ The exception type has two handlers. The type for the second catch is a referenc
 
 The following sample generates C2313:
 
-```
+```cpp
 // C2313.cpp
 // compile with: /EHsc
 #include <eh.h>

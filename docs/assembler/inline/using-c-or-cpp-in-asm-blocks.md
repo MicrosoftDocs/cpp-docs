@@ -6,7 +6,7 @@ ms.assetid: ae8b2b52-6b75-42e3-ac0c-ad02d922ed97
 ---
 # Using C or C++ in __asm Blocks
 
-** Microsoft Specific **
+**Microsoft Specific**
 
 Because inline assembly instructions can be mixed with C or C++ statements, they can refer to C or C++ variables by name and use many other elements of those languages.
 

@@ -27,7 +27,7 @@ To resolve this warning:
 
 The following sample generates LNK4247
 
-```
+```cpp
 // LNK4247.cpp
 // compile with: /clr /c
 // post-build command: link /CLRTHREADATTRIBUTE:STA LNK4247.obj /entry:functionTitle /SUBSYSTEM:Console

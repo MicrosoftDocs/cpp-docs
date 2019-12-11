@@ -13,7 +13,7 @@ The address-of operator (`&`) cannot be applied to a bit field.
 
 The following sample generates C2135:
 
-```
+```cpp
 // C2135.cpp
 struct S {
    int i : 1;

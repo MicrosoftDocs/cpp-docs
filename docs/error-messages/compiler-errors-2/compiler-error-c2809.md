@@ -13,7 +13,7 @@ The operator lacks required parameters.
 
 The following sample generates C2809:
 
-```
+```cpp
 // C2809.cpp
 // compile with: /c
 class A{};

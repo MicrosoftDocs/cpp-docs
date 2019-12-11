@@ -17,7 +17,7 @@ A union is declared with a virtual function. You can declare a virtual function 
 
 The following sample generates C2571:
 
-```
+```cpp
 // C2571.cpp
 // compile with: /c
 union A {

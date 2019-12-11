@@ -13,7 +13,7 @@ An explicit override was specified incorrectly. For example, you cannot specify 
 
 The following sample generates C3253:
 
-```
+```cpp
 // C3253.cpp
 // compile with: /clr
 public interface struct I {

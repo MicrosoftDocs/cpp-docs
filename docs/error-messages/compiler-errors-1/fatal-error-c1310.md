@@ -13,7 +13,7 @@ You will not be able to link with [/LTCG:PGI](../../build/reference/ltcg-link-ti
 
 The following sample generates C1310:
 
-```
+```cpp
 // C1310.cpp
 // compile with: /openmp /GL /link /LTCG:PGI
 // C1310 expected

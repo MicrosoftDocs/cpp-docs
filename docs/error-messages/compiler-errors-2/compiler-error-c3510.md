@@ -48,7 +48,7 @@ library C3510bLib
 
 And then the client code:
 
-```
+```cpp
 // C3510.cpp
 #import "c3510b.tlb" no_registry auto_search   // C3510
 int main() {

@@ -13,7 +13,7 @@ A namespace is used recursively.
 
 The following sample generates C4515:
 
-```
+```cpp
 // C4515.cpp
 // compile with: /W4
 namespace A

@@ -13,7 +13,7 @@ The keyword is invalid in a cast.
 
 The following sample generates C2736:
 
-```
+```cpp
 // C2736.cpp
 int main() {
    return (virtual) 0;   // C2736

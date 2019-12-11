@@ -13,7 +13,7 @@ A variable with a specified const-volatile type can only call member functions d
 
 The following samples generate C3848:
 
-```
+```cpp
 // C3848.cpp
 void glbFunc1()
 {

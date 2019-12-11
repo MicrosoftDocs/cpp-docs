@@ -13,7 +13,7 @@ Specifiers for `__based` modifier must be nonmember pointers.
 
 The following sample generates C2293:
 
-```
+```cpp
 // C2293.cpp
 // compile with: /c
 class A {

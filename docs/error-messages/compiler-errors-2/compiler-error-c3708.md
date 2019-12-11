@@ -13,7 +13,7 @@ To declare an interface as an event, the event declaration must be in an event s
 
 The following sample generates C3708:
 
-```
+```cpp
 // C3708.cpp
 // compile with: /c
 #define _ATL_ATTRIBUTES 1

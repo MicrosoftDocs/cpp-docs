@@ -15,7 +15,7 @@ To resolve C2299, do not make the copy constructor or assignment operator a temp
 
 The following sample generates C2299:
 
-```
+```cpp
 // C2299.cpp
 // compile with: /c
 class C {

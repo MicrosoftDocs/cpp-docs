@@ -48,7 +48,7 @@ For details on the invalid parameter handler, see the prototype in [_set_invalid
 |-------------|---------------------|
 |**_get_invalid_parameter_handler**, **_get_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> or \<stdlib.h>|
 
-The **_get_invalid_parameter_handler** and **_get_thread_local_invalid_parameter_handler** functions are Microsoft specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The **_get_invalid_parameter_handler** and **_get_thread_local_invalid_parameter_handler** functions are Microsoft-specific. For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

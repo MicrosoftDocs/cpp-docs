@@ -19,7 +19,7 @@ For more information, see [init_seg](../../preprocessor/init-seg.md).
 
 The following sample generates C2357:
 
-```
+```cpp
 // C2357.cpp
 // compile with: /c
 // C2357 expected

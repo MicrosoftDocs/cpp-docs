@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2031"
 ms.date: "08/30/2018"
-ms.topic: "error-reference"
+ms.custom: "error-reference"
 f1_keywords: ["A2031"]
 helpviewer_keywords: ["A2031"]
 ms.assetid: d5b11f58-4a00-42be-9062-8fa8728e6306

@@ -15,7 +15,7 @@ LNK1107 could also occur if you attempt to pass a module (.dll or .netmodule ext
 
 If you compile the following sample:
 
-```
+```cpp
 // LNK1107.cpp
 // compile with: /clr /LD
 public ref class MyClass {

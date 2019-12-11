@@ -15,7 +15,7 @@ A default property was declared incorrectly.  For more information, see [How to:
 
 The following sample generates C3914 and shows how to fix it.
 
-```
+```cpp
 // C3914.cpp
 // compile with: /clr /c
 ref struct X {

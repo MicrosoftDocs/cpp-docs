@@ -13,7 +13,7 @@ A generic class was ill formed.
 
 The following sample generates C2957:
 
-```
+```cpp
 // C2957.cpp
 // compile with: /clr /LD
 generic << class T>   // C2957

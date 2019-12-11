@@ -11,7 +11,7 @@ nonstandard extension used : delete [exp] - exp evaluated but ignored
 
 With Microsoft extensions (/Ze), you can delete an array using a value within brackets with the [delete operator](../../cpp/delete-operator-cpp.md). The value is ignored.
 
-```
+```cpp
 // C4208.cpp
 // compile with: /W4
 int main()

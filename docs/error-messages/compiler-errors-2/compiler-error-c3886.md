@@ -13,7 +13,7 @@ A [literal](../../extensions/literal-cpp-component-extensions.md) variable must 
 
 The following sample generates C3886:
 
-```
+```cpp
 // C3886.cpp
 // compile with: /clr /c
 ref struct Y1 {

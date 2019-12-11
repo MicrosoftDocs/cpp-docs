@@ -17,7 +17,7 @@ For more information on attributes, see [User-Defined Attributes](../../extensio
 
 The following sample generates C3101.
 
-```
+```cpp
 // C3101.cpp
 // compile with: /clr /c
 ref class AAttribute : System::Attribute {
