@@ -1,31 +1,56 @@
 ---
 title: "Declarations and Definitions (C++)"
-ms.date: "11/04/2016"
+ms.date: "12/12/2019"
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
 ---
 # Declarations and Definitions (C++)
 
-Declarations introduce names in a program, for example the names of variables, namespaces, functions and classes. Declarations also specify type information as well as other characteristics of the object that is being declared. A name must be declared before it can be used; in C++ the point at which a name is declared determines whether it is visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit; you can use *forward declarations* to get around this limitation.
+A C++ program consists of various entities such as variables, functions, types, and namespaces. Each of these entities must be *declared* before they can be used. A declaration specifies a unique name for the entity, along with information about its type and other characteristics. In C++ the point at which a name is declared is the point at which it becomes visible to the compiler. You cannot refer to a function or class that is declared at some later point in the compilation unit. Variables should be declared as close as possible before the point at which they are used.
 
-Definitions specify what code or data the name describes. The compiler needs the definition in order to allocate storage space for the thing that is being declared.
+The following example shows some declarations:
 
-## Declarations
+```cpp
+#include <string>
 
-A declaration introduces one or more names into a program. Declarations can occur more than once in a program. Therefore, classes, structures, enumerated types, and other user-defined types can be declared for each compilation unit. The constraint on this multiple declaration is that all declarations must be identical. Declarations also serve as definitions, except when the declaration:
+void f(); // forward declaration
 
-1. Is a function prototype (a function declaration with no function body).
+int main()
+{
+    const double pi = 3.14; //OK
+    int i = f(2); //OK. f is forward-declared
+    std::string str; // OK std::string is declared in <string> header
+    C obj; // error! C not yet declared.
+    j = 0; // error! No type specified.
+    auto k = 0; // OK. type inferred as int by compiler.
+}
 
-1. Contains the **extern** specifier but no initializer (objects and variables) or function body (functions). This signifies that the definition is not necessarily in the current translation unit and gives the name external linkage.
+int f(int i)
+{
+    return i + 42;
+}
 
-1. Is of a static data member inside a class declaration.
+namespace N {
+   class C{/*...*/};
+}
+```
 
-   Because static class data members are discrete variables shared by all objects of the class, they must be defined and initialized outside the class declaration. (For more information about classes and class members, see [Classes](../cpp/classes-and-structs-cpp.md).)
+On line 5, the `main` function is declared. On line 7, a **const** variable named `pi` is declared and *initialized*. On line 8, an integer `i` is declared and initialized with the value produced by the function `f`. The name `f` is visible to the compiler because of the *forward declaration* on line 3. 
 
-1. Is a class name declaration with no following definition, such as `class T;`.
+In line 9, a variable named `obj` of type `C` is declared. However, this declaration raises an error because `C` is not declared until later in the program, and is not forward-declared. To fix the error, you can either move the entire *definition* of `C` before `main` or else add a forward-declaration for it. This behavior is different from other languages such as C#, in which functions and classes can be used before their point of declaration in a source file. 
 
-1. Is a **typedef** statement.
+In line 10, a variable named `str` of type `std::string` is declared. The name `std::string` is visible because it is introduced in the `string` [header file](header-files-cpp.md) which is merged into the source file in line 1. `std` is the namespace in which the `string` class is declared.
 
-Examples of declarations that are also definitions are:
+In line 11, an error is raised because the name `j` has not been declared. A declaration must provide a type, unlike other languages such as javaScript. In line 12, the `auto` keyword is used, which tells the compiler to infer the type of `k` based on the value that it is initialized with. The compiler in this case chooses `int` for the type.  
+
+## Declaration scope
+
+The name that is introduced by a declaration is valid within the *scope* where the declaration occurs. In the previous example, the variables that are declared inside the `main` function are *local variables*. You could declare another variable named `i` outside of main, at *global scope*, and it would be a completely separate entity. However, such duplication of names can lead to programmer confusion and errors, and should be avoided. In line 21, the class `C` is declared in the scope of the namespace `N`. The use of namespaces helps to avoid *name collisions*. Most C++ Standard Library names are declared within the `std` namespace. For more information about how scope rules interact with declarations, see [Scope](../cpp/scope-visual-cpp.md).
+
+## Definitions
+
+Some entities, including functions, classes, enums, and constant variables, must be defined in addition to being declared. A *definition* provides the compiler with all the information it needs to generate machine code when the entity is used later in the program. In the previous example, line 3 contains a declaration for the function `f` but the *definition* for the function is provided in lines 15 through 18. On line 21, the class `C` is both declared and defined (although as defined the class doesn't do anything). A constant variable must be defined, in other words assigned a value, in the same statement in which it is declared. A declaration of a built-in type such as `int` is automatically a definition because the compiler knows how much space to allocate for it.
+
+The following example shows declarations that are also definitions:
 
 ```cpp
 // Declare and define int variables i and j.
@@ -39,48 +64,30 @@ enum suits { Spades = 1, Clubs, Hearts, Diamonds };
 class CheckBox : public Control
 {
 public:
-            Boolean IsChecked();
+    Boolean IsChecked();
     virtual int     ChangeState() = 0;
 };
 ```
 
-Some declarations that are not definitions are:
+Here are some declarations that are not definitions:
 
 ```cpp
 extern int i;
 char *strchr( const char *Str, const char Target );
 ```
 
-A name is considered to be declared immediately after its declarator but before its (optional) initializer. For more information, see [Point of Declaration](../cpp/point-of-declaration-in-cpp.md).
+## Typedefs and using statements
 
-Declarations occur in a *scope*. The scope controls the visibility of the name declared and the duration of the object defined, if any. For more information about how scope rules interact with declarations, see [Scope](../cpp/scope-visual-cpp.md).
+In older versions of C++, the [typedef](aliases-and-typedefs-cpp.md) keyword is used to declare a new name that is an *alias* for another name. For example the type `std::string` is another name for `std::basic_string<char>`. It should be obvious why programmers use the typedef name and not the actual name. In modern C++, the [using](aliases-and-typedefs-cpp.md) keyword is preferred over typedef, but the idea is the same: a new name is declared for an entity which is already declared and defined.
 
-An object declaration is also a definition unless it contains the **extern** storage-class specifier described in [Storage classes](storage-classes-cpp.md). A function declaration is also a definition unless it is a prototype. A prototype is a function header without a defining function body. The definition of an object causes allocation of storage and appropriate initializations for that object.
+## Static class members
 
-## Definitions
+Because static class data members are discrete variables shared by all objects of the class, they must be defined and initialized outside the class definition. (For more information, see [Classes](../cpp/classes-and-structs-cpp.md).)
 
-A definition is a unique specification of an object or variable, function, class, or enumerator. Because definitions must be unique, a program can contain only one definition for a given program element. There can be a many-to-one correspondence between declarations and definitions. There are two cases in which a program element can be declared and not defined:
+## extern declarations
 
-1. A function is declared but never referenced with a function call or with an expression that takes the function's address.
-
-1. A class is used only in a way that does not require its definition be known. However, the class must be declared. The following code illustrates such a case:
-
-    ```cpp
-    // definitions.cpp
-    class WindowCounter;   // Forward declaration; no definition
-
-    class Window
-    {
-       // Definition of WindowCounter not required
-       static WindowCounter windowCounter;
-    };
-
-    int main()
-    {
-    }
-    ```
+A C++ program might contain more than one [compilation unit](header-files-cpp.md). To declare an entity that is defined in a separate compilation unit, use the [extern](extern-cpp.md) keyword. The information in the declaration is sufficient for the compiler, but if the definition of the entity cannot be found in the linking step, then the linker will raise an error.
 
 ## See also
 
 [Basic Concepts](../cpp/basic-concepts-cpp.md)<br/>
-[Point of Declaration](../cpp/point-of-declaration-in-cpp.md)

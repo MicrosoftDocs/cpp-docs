@@ -721,6 +721,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/cpp/overview-file-translation.md",
+      "redirect_url": "/cpp/preprocessor/phases-of-translation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/auto-keyword.md",
+      "redirect_url": "/cpp/cpp/auto-cpp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/cpp/attributes2.md",
       "redirect_url": "/cpp/cpp/attributes",
       "redirect_document_id": false
@@ -733,6 +743,81 @@
     {
       "source_path": "docs/cpp/index.md",
       "redirect_url": "/cpp/cpp/cpp-language-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/using-wmain-instead-of-main.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/main-program-startup.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/main-function-restrictions.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/additional-startup-considerations.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/wildcard-expansion.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/parsing-cpp-command-line-arguments.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/customizing-cpp-command-line-processing.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/startup-and-termination-cpp.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/argument-definitions.md",
+      "redirect_url": "/cpp/cpp/main-function-command-line-args",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/exit-function.md",
+      "redirect_url": "/cpp/cpp/program-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/abort-function.md",
+      "redirect_url": "/cpp/cpp/program-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/return-statement-in-program-termination-cpp.md",
+      "redirect_url": "/cpp/cpp/program-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/using-exit-or-return.md",
+      "redirect_url": "/cpp/cpp/program-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/using-atexit.md",
+      "redirect_url": "/cpp/cpp/program-termination",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/tokens-cpp.md",
+      "redirect_url": "/cpp/cpp/character-sets",
       "redirect_document_id": false
     },
     {
@@ -783,6 +868,21 @@
     {
       "source_path": "docs/cpp/names-with-no-linkage.md",
       "redirect_url": "/cpp/cpp/program-and-linkage-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/specifiers.md",
+      "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/overview-of-declarators.md",
+      "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/point-of-declaration-in-cpp.md",
+      "redirect_url": "/cpp/cpp/declarations-and-definitions-cpp",
       "redirect_document_id": false
     },
     {
