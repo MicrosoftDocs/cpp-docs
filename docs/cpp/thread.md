@@ -9,7 +9,7 @@ ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
 
 **Microsoft Specific**
 
-The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier for portable code. On Windows `thread_local` is implemented with **__declspec(thread)**.
+The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier for portable code. On Windows **thread_local** is implemented with **__declspec(thread)**.
 
 ## Syntax
 
