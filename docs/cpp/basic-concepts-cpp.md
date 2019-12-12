@@ -18,7 +18,6 @@ This section explains concepts that are critical to understanding C++. C program
 - [Lvalues and rvalues](lvalues-and-rvalues-visual-cpp.md)
 - [Temporary objects](temporary-objects.md)
 - [Alignment](alignment-cpp-declarations.md)
-- [alignof and alignas](alignof-and-alignas-cpp.md)
 - [Trivial, standard-layout and POD types](trivial-standard-layout-and-pod-types.md)
 
 ## See also
