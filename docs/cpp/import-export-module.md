@@ -1,9 +1,9 @@
 ---
 title: "module, import, export"
-ms.date: "07/15/2019"
+ms.date: "12/12/2019"
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
-description: Use the import statement to access types and functions defined in the specified module.
+description: Use the import and export statements to access and to publish types and functions defined in the specified module.
 ---
 
 # module, import, export
@@ -12,7 +12,7 @@ The **module**, **import**, and **export** keywords are available in C++20 and r
 
 ## module
 
-Use the **module** statement at the beginning of a module implementation file to specify that the file contents belong to the named module. 
+Use the **module** statement at the beginning of a module implementation file to specify that the file contents belong to the named module.
 
 ```cpp
 module ModuleA;
@@ -74,6 +74,40 @@ template <class T>
 class Baz
 {...};
 ```
+
+## Remarks
+
+Both **import** and **module** are contextual keywords. They are treated as keywords only when they appear on one of these lines:
+
+```cpp
+module ;
+module <identifier>
+import :
+import <
+import "
+import <identifier>
+export module ;
+export module <identifier>
+export import :
+export import <
+export import "
+export import <identifier>
+```
+
+**Microsoft Specific**
+
+In Microsoft C++, the tokens **import** and **module** are always identifiers and never keywords when they are used as arguments to a macro.
+
+### Example
+
+```cpp
+#define foo(…) __VA_ARGS__
+foo(
+import // Always an identifier, never a keyword
+)
+```
+
+**End Microsoft Specific**
 
 ## See Also
 
