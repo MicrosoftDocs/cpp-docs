@@ -3691,7 +3691,7 @@
                   href: cpp/lvalues-and-rvalues-visual-cpp.md
                 - name: Temporary objects
                   href: cpp/temporary-objects.md
-                - name: Alignment (C++ declarations)
+                - name: Alignment
                   href: cpp/alignment-cpp-declarations.md
                 - name: Trivial, standard-layout, and POD types
                   href: cpp/trivial-standard-layout-and-pod-types.md
