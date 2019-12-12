@@ -10,7 +10,6 @@ ms.assetid: 961801e6-2ffd-4bf1-bb71-7f55e48d9c79
 This section explains concepts that are critical to understanding C++. C programmers will be familiar with many of these concepts, but there are some subtle differences that can cause unexpected program results. The following topics are included:
 
 - [C++ type system](cpp-type-system-modern-cpp.md)
-- [Declarations and definitions](declarations-and-definitions-cpp.md)
 - [Scope](scope-visual-cpp.md)
 - [Translation units and linkage](program-and-linkage-cpp.md)
 - [main function and command-line arguments](main-function-command-line-args.md)
