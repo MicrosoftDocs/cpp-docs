@@ -64,11 +64,11 @@ The **int** and **unsigned int** types have a size of four bytes. However, porta
 
 C/C++ in Visual Studio also supports sized integer types. For more information, see [__int8, \__int16, \__int32, \__int64](../cpp/int8-int16-int32-int64.md) and [Integer Limits](../cpp/integer-limits.md).
 
-For more information about the restrictions of the sizes of each type, see [Fundamental Types](../cpp/fundamental-types-cpp.md).
+For more information about the restrictions of the sizes of each type, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
 The range of enumerated types varies depending on the language context and specified compiler flags. For more information, see [C Enumeration Declarations](../c-language/c-enumeration-declarations.md) and [Enumerations](../cpp/enumerations-cpp.md).
 
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)
+[Built-in types](../cpp/fundamental-types-cpp.md)

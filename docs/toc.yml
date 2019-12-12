@@ -3682,6 +3682,14 @@
                   items: 
                     - name: Declarations and definitions
                       href: cpp/declarations-and-definitions-cpp.md
+                    - name: Storage classes
+                      href: cpp/storage-classes-cpp.md
+                    - name: auto
+                      href: cpp/auto-cpp.md
+                    - name: const
+                      href: cpp/const-cpp.md
+                    - name: constexpr
+                      href: cpp/constexpr-cpp.md
                     - name: extern
                       href: cpp/extern-cpp.md
                     - name: Initializers
@@ -3690,16 +3698,8 @@
                       href: cpp/aliases-and-typedefs-cpp.md
                     - name: using declaration
                       href: cpp/using-declaration.md
-                    - name: Storage classes
-                      href: cpp/storage-classes-cpp.md
-                    - name: const
-                      href: cpp/const-cpp.md
-                    - name: constexpr
-                      href: cpp/constexpr-cpp.md
                     - name: volatile
                       href: cpp/volatile-cpp.md
-                    - name: auto
-                      href: cpp/auto-cpp.md
                     - name: decltype
                       href: cpp/decltype-cpp.md
                     - name: Attributes
@@ -3722,59 +3722,52 @@
                   href: cpp/alignment-cpp-declarations.md
                 - name: Trivial, standard-layout, and POD types
                   href: cpp/trivial-standard-layout-and-pod-types.md
-                - name: Type system
-                  expanded: false
-                  items: 
-                    - name: Type system
-                      href: cpp/cpp-type-system-modern-cpp.md
-                    - name: Value types
-                      href: cpp/value-types-modern-cpp.md
-                    - name: Type conversions and type safety
-                      href: cpp/type-conversions-and-type-safety-modern-cpp.md
-                    - name: Fundamental types
-                      expanded: false
-                      items: 
-                        - name: Fundamental types
-                          href: cpp/fundamental-types-cpp.md
-                        - name: Data type ranges
-                          href: cpp/data-type-ranges.md
-                        - name: nullptr
-                          href: cpp/nullptr.md
-                        - name: void
-                          href: cpp/void-cpp.md
-                        - name: bool
-                          href: cpp/bool-cpp.md
-                        - name: false
-                          href: cpp/false-cpp.md
-                        - name: true
-                          href: cpp/true-cpp.md
-                        - name: char, wchar_t, char16_t, char32_t
-                          href: cpp/char-wchar-t-char16-t-char32-t.md
-                        - name: __int8, __int16, __int32, __int64
-                          href: cpp/int8-int16-int32-int64.md
-                        - name: __m64
-                          href: cpp/m64.md
-                        - name: __m128
-                          href: cpp/m128.md
-                        - name: __m128d
-                          href: cpp/m128d.md
-                        - name: __m128i
-                          href: cpp/m128i.md
-                        - name: __ptr32, __ptr64
-                          href: cpp/ptr32-ptr64.md
-                        - name: Numerical limits
-                          expanded: false
-                          items: 
-                            - name: Numerical limits
-                              href: cpp/numerical-limits-cpp.md
-                            - name: Integer limits
-                              href: cpp/integer-limits.md
-                            - name: Floating limits
-                              href: cpp/floating-limits.md
-                - name: Standard conversions
-                  href: cpp/standard-conversions.md
+                - name: Value types
+                  href: cpp/value-types-modern-cpp.md
                 - name: Type conversions and type safety
                   href: cpp/type-conversions-and-type-safety-modern-cpp.md
+                - name: Standard conversions
+                  href: cpp/standard-conversions.md
+                - name: Built-in types
+                    expanded: false
+                    items: 
+                      - name: Built-in types
+                        href: cpp/fundamental-types-cpp.md
+                      - name: Data type ranges
+                        href: cpp/data-type-ranges.md
+                      - name: nullptr
+                        href: cpp/nullptr.md
+                      - name: void
+                        href: cpp/void-cpp.md
+                      - name: bool
+                        href: cpp/bool-cpp.md
+                      - name: false
+                        href: cpp/false-cpp.md
+                      - name: true
+                        href: cpp/true-cpp.md
+                      - name: char, wchar_t, char16_t, char32_t
+                        href: cpp/char-wchar-t-char16-t-char32-t.md
+                      - name: __int8, __int16, __int32, __int64
+                        href: cpp/int8-int16-int32-int64.md
+                      - name: __m64
+                        href: cpp/m64.md
+                      - name: __m128
+                        href: cpp/m128.md
+                      - name: __m128d
+                        href: cpp/m128d.md
+                      - name: __m128i
+                        href: cpp/m128i.md
+                      - name: __ptr32, __ptr64
+                        href: cpp/ptr32-ptr64.md
+                - name: Numerical limits
+                    expanded: false
+                    items: 
+                      - name: Numerical limits
+                        href: cpp/numerical-limits-cpp.md
+                      - name: Integer limits
+                        href: cpp/integer-limits.md
+                      - name: Floating limits
+                        href: cpp/floating-limits.md
             - name: Built-in operators, precedence, and associativity
               expanded: false
               items: 

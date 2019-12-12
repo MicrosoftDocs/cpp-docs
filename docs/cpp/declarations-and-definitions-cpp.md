@@ -90,16 +90,16 @@ A C++ program might contain more than one [compilation unit](header-files-cpp.md
 
 ## In this section
 
-[extern](extern-cpp.md)
-[Initializers](initializers.md)
-[Aliases and typedefs](aliases-and-typedefs-cpp.md)
-[using declaration](using-declaration.md)
-[Storage classes](storage-classes-cpp.md)
-[const](const-cpp.md)
-[constexpr](constexpr-cpp.md)
-[volatile](volatile-cpp.md)
-[decltype](decltype-cpp.md)
-[Attributes in C++](attributes.md)
+[Storage classes](storage-classes-cpp.md)<br/>
+[const](const-cpp.md)<br/>
+[constexpr](constexpr-cpp.md)<br/>
+[extern](extern-cpp.md)<br/>
+[Initializers](initializers.md)<br/>
+[Aliases and typedefs](aliases-and-typedefs-cpp.md)<br/>
+[using declaration](using-declaration.md)<br/>
+[volatile](volatile-cpp.md)<br/>
+[decltype](decltype-cpp.md)<br/>
+[Attributes in C++](attributes.md)<br/>
 
 ## See also
 
