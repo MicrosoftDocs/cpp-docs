@@ -41,7 +41,7 @@ Whenever possible, use a smart pointer when allocating heap memory. If you must 
 
 ## std::string and std::string_view
 
-C-style strings are another major source of bugs. By using [std::string and std::wstring](../standard-library/basic-string-class.md) you can eliminate virtually all the errors associated with C-style strings, and gain the benefit of member functions for searching, appending, prepending, and so on. Both are highly optimized for speed. When passing a string to a function that requires only read-only access, in (C++17) you can use [std::string_view](../standard-library/basic-string-view-class.md) for even greater performance benefit.
+C-style strings are another major source of bugs. By using [std::string and std::wstring](../standard-library/basic-string-class.md) you can eliminate virtually all the errors associated with C-style strings, and gain the benefit of member functions for searching, appending, prepending, and so on. Both are highly optimized for speed. When passing a string to a function that requires only read-only access, in C++17 you can use [std::string_view](../standard-library/basic-string-view-class.md) for even greater performance benefit.
 
 ## std::vector and other Standard Library containers
 
