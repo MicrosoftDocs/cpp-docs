@@ -13,7 +13,7 @@ The **thread** extended storage-class modifier is used to declare a thread local
 
 ## Syntax
 
-> **__declspec( thread )** *declarator*
+**__declspec( thread )** *declarator*
 
 ## Remarks
 
