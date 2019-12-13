@@ -29,7 +29,9 @@ A version of WPA that supports C++ Build Insights is currently only available in
 
 ### To download and install WPA
 
-1. Browse to the Windows ADK Insider Preview [download page](https://www.microsoft.com/software-download/windowsinsiderpreviewADK).
+NOTE: Windows 8 or above is required for installing the Windows Performance Analyzer.
+
+1. Browse to the Windows ADK Insider Preview [download page](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewADK).
 
 1. Download the Windows ADK Insider Preview. It's a disk image.
 
