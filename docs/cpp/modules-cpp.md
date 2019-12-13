@@ -1,6 +1,6 @@
 ---
 title: "Overview of modules in C++"
-ms.date: "07/23/2019"
+ms.date: "12/13/2019"
 helpviewer_keywords: ["modules [C++]", "modules [C++], overview"]
 description: Modules in C++20 provide a modern alternative to header files.
 ---
@@ -27,14 +27,14 @@ Although not specified by the C++20 standard, Microsoft enables its implementati
 - std.threading provides the contents of headers \<atomic>, \<condition_variable>, \<future>, \<mutex>, \<shared_mutex>, and \<thread>
 - std.core provides everything else in the C++ Standard Library
 
-To consume these modules, just add an import statement to the top of the source code file. For example:
+To consume these modules, just add an import declaration to the top of the source code file. For example:
 
 ```cpp
 import std.core;
 import std.regex;
 ```
 
-To consume the Microsoft Standard Library module, you must compile your program with [/EHsc](../build/reference/eh-exception-handling-model.md) and [/MD](../build/reference/md-mt-ld-use-run-time-library.md) options.
+To consume the Microsoft Standard Library module, compile your program with [/EHsc](../build/reference/eh-exception-handling-model.md) and [/MD](../build/reference/md-mt-ld-use-run-time-library.md) options.
 
 ## Basic example
 
@@ -57,7 +57,7 @@ namespace Bar
 }
 ```
 
-The file **MyProgram.cpp** uses the **import** statement to access the name that is exported by `Foo`. Note that the name `Bar` is visible here, but not all of its members. Also note that the macro `ANSWER` is not visible.
+The file **MyProgram.cpp** uses the **import** declaration to access the name that is exported by `Foo`. Note that the name `Bar` is visible here, but not all of its members. Also note that the macro `ANSWER` is not visible.
 
 ```cpp
 

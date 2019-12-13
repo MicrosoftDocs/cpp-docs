@@ -3,16 +3,16 @@ title: "module, import, export"
 ms.date: "12/12/2019"
 f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
-description: Use the import and export statements to access and to publish types and functions defined in the specified module.
+description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ---
 
 # module, import, export
 
-The **module**, **import**, and **export** keywords are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++latest](../build/reference/std-specify-language-standard-version.md). For more information, see [Overview of modules in C++](modules-cpp.md).
+The **module**, **import**, and **export** declarations are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++latest](../build/reference/std-specify-language-standard-version.md). For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## module
 
-Use the **module** statement at the beginning of a module implementation file to specify that the file contents belong to the named module.
+Place a **module** declaration at the beginning of a module implementation file to specify that the file contents belong to the named module.
 
 ```cpp
 module ModuleA;
@@ -20,7 +20,7 @@ module ModuleA;
 
 ## export
 
-Use the **export module** statement for the module's primary interface file, which must have extension **.ixx**:
+Use an **export module** declaration for the module's primary interface file, which must have extension **.ixx**:
 
 ```cpp
 export module ModuleA;
@@ -55,11 +55,11 @@ void main() {
 }
 ```
 
-The **export** keyword may not appear in a module implementation file. When the **export** modifier is applied to a namespace name, all names in the namespace are exported.
+The **export** keyword may not appear in a module implementation file. When **export** is applied to a namespace name, all names in the namespace are exported.
 
 ## import
 
-Use the **import** statement to make a module's names visible in your program. The import statement must appear after the module statement and after any #include directives, but before any declarations in the file.
+Use an **import** declaration to make a module's names visible in your program. The import declaration must appear after the module declaration and after any #include directives, but before any declarations in the file.
 
 ```cpp
 module ModuleA;
@@ -77,21 +77,26 @@ class Baz
 
 ## Remarks
 
-Both **import** and **module** are contextual keywords. They are treated as keywords only when they appear on one of these lines:
+Both **import** and **module** are treated as keywords only when they appear at the start of a logical line:
 
 ```cpp
+
+// OK:
 module ;
-module <identifier>
+module module-name
 import :
 import <
 import "
-import <identifier>
+import module-name
 export module ;
-export module <identifier>
+export module module-name
 export import :
 export import <
 export import "
-export import <identifier>
+export import module-name
+
+// Error:
+int i; module ;
 ```
 
 **Microsoft Specific**
