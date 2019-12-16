@@ -13,7 +13,7 @@ An OpenMP directive that takes an argument did not have a closing parenthesis.
 
 The following sample generates C3008:
 
-```
+```c
 // C3008.c
 // compile with: /openmp
 int main()

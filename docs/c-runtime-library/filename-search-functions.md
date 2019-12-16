@@ -89,7 +89,7 @@ Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindne
 
 ## Example
 
-```
+```c
 // crt_find.c
 // This program uses the 32-bit _find functions to print
 // a list of all files (and their attributes) with a .C extension

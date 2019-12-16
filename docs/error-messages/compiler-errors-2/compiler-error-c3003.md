@@ -13,7 +13,7 @@ An OpenMP directive name cannot follow an OpenMP directive clause.
 
 The following sample generates C3003:
 
-```
+```c
 // C3003.c
 // compile with: /openmp
 int main()

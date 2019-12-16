@@ -101,7 +101,7 @@ If you are calling `_spawn` from a DLL or a GUI application and want to redirect
 
 ## Example
 
-```
+```c
 // crt_spawn.c
 // This program accepts a number in the range
 // 1-8 from the command line. Based on the number it receives,

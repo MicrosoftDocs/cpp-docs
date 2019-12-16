@@ -14,7 +14,7 @@ postfix-expression [ expression ]
 
 Usually, the value represented by *postfix-expression* is a pointer value, such as an array identifier, and *expression* is an integral value. However, all that is required syntactically is that one of the expressions be of pointer type and the other be of integral type. Thus the integral value could be in the *postfix-expression* position and the pointer value could be in the brackets in the *expression*, or "subscript," position. For example, this code is legal:
 
-```
+```c
 // one_dimensional_arrays.c
 int sum, *ptr, a[10];
 int main() {

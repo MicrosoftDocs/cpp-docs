@@ -13,7 +13,7 @@ The operand to the left of the member-selection operation (.) is a pointer inste
 
 The following sample generates C2231:
 
-```
+```c
 // C2231.c
 struct S {
    int member;

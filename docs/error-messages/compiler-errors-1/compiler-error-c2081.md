@@ -15,14 +15,14 @@ This error can be caused by using the old style for the formal parameter list. Y
 
 The following sample generates C2081:
 
-```
+```c
 // C2081.c
 void func( int i, j ) {}  // C2081, no type specified for j
 ```
 
 Possible resolution:
 
-```
+```c
 // C2081b.c
 // compile with: /c
 void func( int i, int j ) {}

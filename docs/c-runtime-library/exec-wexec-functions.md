@@ -71,7 +71,7 @@ The `_exec` calls do not preserve the translation modes of open files. If the ne
 
 ## Example
 
-```
+```c
 // crt_args.c
 // Illustrates the following variables used for accessing
 // command-line arguments and environment variables:
@@ -102,7 +102,7 @@ char **envp )       // Array of environment variable strings
 
 Run the following program to execute Crt_args.exe:
 
-```
+```c
 // crt_exec.c
 // Illustrates the different versions of exec, including
 //      _execl          _execle          _execlp          _execlpe

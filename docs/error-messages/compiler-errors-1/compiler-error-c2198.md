@@ -13,7 +13,7 @@ The compiler found too few parameters for a call to the function, or an incorrec
 
 The following sample generates C2198:
 
-```
+```c
 // C2198.c
 // compile with: /c
 void func( int, int );

@@ -13,7 +13,7 @@ One declaration of the function contains a variable parameter list. Another decl
 
 The following sample generates C2142:
 
-```
+```c
 // C2142.c
 // compile with: /Za /c
 void func();

@@ -55,7 +55,7 @@ The following functions return the number of characters copied if no truncation 
 
 ## Example
 
-```
+```c
 // crt_truncate.c
 #include <stdlib.h>
 #include <errno.h>

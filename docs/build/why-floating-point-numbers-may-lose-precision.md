@@ -20,7 +20,7 @@ Binary representation of floating-point values affects the precision and accurac
 
 ## Example
 
-```
+```c
 // Floating-point_number_precision.c
 // Compile options needed: none. Value of c is printed with a decimal
 // point precision of 10 and 6 (printf rounded value by default) to

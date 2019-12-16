@@ -13,7 +13,7 @@ The controlling expression in an `if`, `while`, `for`, or `do` statement is an e
 
 The following sample generates C2180:
 
-```
+```c
 // C2180.c
 
 int main() {

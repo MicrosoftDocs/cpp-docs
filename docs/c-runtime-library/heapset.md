@@ -58,7 +58,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 ## Example
 
-```
+```c
 // crt_heapset.c
 // This program checks the heap and
 // fills in free entries with the character 'Z'.

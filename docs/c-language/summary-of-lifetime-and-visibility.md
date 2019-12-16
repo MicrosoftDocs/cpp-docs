@@ -28,7 +28,7 @@ The following example illustrates blocks, nesting, and visibility of variables:
 
 ### Code
 
-```
+```c
 // Lifetime_and_Visibility.c
 
 #include <stdio.h>
