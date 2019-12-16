@@ -15,7 +15,7 @@ An operation on `identifier` requires the size of the data object, which cannot 
 
 The following sample generates C2036.
 
-```
+```c
 // C2036.c
 // a C program
 struct A* pA;

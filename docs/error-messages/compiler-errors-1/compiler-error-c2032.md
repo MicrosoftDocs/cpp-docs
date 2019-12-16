@@ -13,7 +13,7 @@ The structure or union has a member function, which is allowed in C++ but not in
 
 The following sample generates C2032:
 
-```
+```c
 // C2032.c
 struct z {
    int i;
@@ -23,7 +23,7 @@ struct z {
 
 Possible resolution:
 
-```
+```c
 // C2032b.c
 // compile with: /c
 struct z {

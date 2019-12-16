@@ -13,7 +13,7 @@ An OpenMP directive did not have an expected argument.
 
 The following sample generates C3006:
 
-```
+```c
 // C3006.c
 // compile with: /openmp
 int main()

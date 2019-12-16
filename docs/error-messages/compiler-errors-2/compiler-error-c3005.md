@@ -13,7 +13,7 @@ An OpenMP directive was ill formed.
 
 The following sample generates C3005:
 
-```
+```c
 // C3005.c
 // compile with: /openmp
 int main()
@@ -24,7 +24,7 @@ int main()
 
 C3005 can also occur if you put an open brace on the same line as the pragma.
 
-```
+```c
 // C3005b.c
 // compile with: /openmp
 int main() {

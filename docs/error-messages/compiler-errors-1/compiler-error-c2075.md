@@ -13,7 +13,7 @@ There were no curly braces around the specified array initializer.
 
 The following sample generates C2075:
 
-```
+```c
 // C2075.c
 int main() {
    int i[] = 1, 2, 3 };   // C2075
@@ -22,7 +22,7 @@ int main() {
 
 Possible resolution:
 
-```
+```c
 // C2075b.c
 int main() {
    int j[] = { 1, 2, 3 };

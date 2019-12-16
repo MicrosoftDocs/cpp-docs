@@ -13,7 +13,7 @@ An `intrinsic` pragma uses an undeclared function (only occurs with **/Oi**). Or
 
 The following sample generates C2164:
 
-```
+```c
 // C2164.c
 // compile with: /c
 // processor: x86
