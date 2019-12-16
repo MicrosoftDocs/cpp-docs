@@ -1,7 +1,6 @@
 ---
 title: "TN061: ON_NOTIFY and WM_NOTIFY Messages"
 ms.date: "06/28/2018"
-f1_keywords: ["ON_NOTIFY", "WM_NOTIFY"]
 helpviewer_keywords: ["ON_NOTIFY_EX message [MFC]", "TN061", "ON_NOTIFY message [MFC]", "ON_NOTIFY_EX_RANGE message [MFC]", "ON_NOTIFY_RANGE message [MFC]", "notification messages", "WM_NOTIFY message"]
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Handlers for WM_ Messages"
 ms.date: "11/04/2016"
-f1_keywords: ["WM_"]
 helpviewer_keywords: ["WM_ messages [MFC]"]
 ms.assetid: cad81690-90bf-4f77-943f-a435e7563bdd
 ---
