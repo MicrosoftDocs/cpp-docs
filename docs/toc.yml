@@ -4722,17 +4722,8 @@
                       href: preprocessor/variadic-macros.md
                     - name: Predefined preprocessor macros
                       href: preprocessor/predefined-macros.md
-            - name: Grammar summary (C/C++)
-              expanded: false
-              items: 
-                - name: Grammar summary (C/C++)
-                  href: preprocessor/grammar-summary-c-cpp.md
-                - name: Definitions for the grammar summary
-                  href: preprocessor/definitions-for-the-grammar-summary.md
-                - name: Grammar conventions
-                  href: preprocessor/conventions.md
-                - name: Preprocessor grammar
-                  href: preprocessor/preprocessor-grammar.md
+            - name: Preprocessor grammar summary (C/C++)
+              href: preprocessor/grammar-summary-c-cpp.md
             - name: Pragma directives and the __pragma keyword
               expanded: false
               items: 
