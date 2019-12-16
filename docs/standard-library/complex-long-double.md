@@ -47,7 +47,7 @@ The explicit specialization of the class template `complex` to a complex class o
 
 For more information on the class template `complex` and its members, see [complex Class](../standard-library/complex-class.md).
 
-**Microsoft-specific**: The **long double** and **double** types have the same representation, but are distinct types. For more information, see [Fundamental types](../cpp/fundamental-types-cpp.md).
+**Microsoft-specific**: The **long double** and **double** types have the same representation, but are distinct types. For more information, see [Built-in types](../cpp/fundamental-types-cpp.md).
 
 ## Example
 

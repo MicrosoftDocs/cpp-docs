@@ -80,7 +80,7 @@ Optional parts of a function declaration are:
 
     ```
 
-   For more information, see [Program and Linkage](../cpp/program-and-linkage-cpp.md).
+   For more information, see [Translation units and linkage](../cpp/program-and-linkage-cpp.md).
 
 1. **inline**, which instructs the compiler to replace every call to the function with the function code itself. inlining can help performance in scenarios where a function executes quickly and is invoked repeatedly in a performance-critical section of code.
 
@@ -351,7 +351,7 @@ There are various ways to return more than one value from a function:
     }
     ```
 
-1. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and intialize names that are in scope for the entire function block.
+1. **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Use structured bindings. The advantage of structured bindings is that the variables that store the return values are initialized at the same time they are declared, which in some cases can be significantly more efficient. In this statement --`auto[x, y, z] = f();`-- the brackets introduce and initialize names that are in scope for the entire function block.
 
     ```cpp
     #include <tuple>

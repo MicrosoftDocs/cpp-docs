@@ -1,6 +1,6 @@
 ---
 title: "Header files (C++)"
-ms.date: "04/20/2018"
+ms.date: "12/11/2019"
 helpviewer_keywords: ["header files [C++]"]
 ---
 # Header files (C++)
@@ -15,6 +15,9 @@ x = 42; // use x
 The declaration tells the compiler whether the element is an **int**, a **double**, a **function**, a **class** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
 
 To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a header file, then use the #include directive in every .cpp file or other header file that requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation.
+
+> [!NOTE]
+> In Visual Studio 2019, the C++20 *modules* feature is introduced as an improvement and eventual replacement for header files. For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## Example
 

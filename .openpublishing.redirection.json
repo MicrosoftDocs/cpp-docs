@@ -731,6 +731,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/cpp/cpp/alignof-and-alignas-cpp.md",
+      "redirect_url": "/cpp/cpp/alignment-cpp-declarations",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/cpp/attributes2.md",
       "redirect_url": "/cpp/cpp/attributes",
       "redirect_document_id": false
