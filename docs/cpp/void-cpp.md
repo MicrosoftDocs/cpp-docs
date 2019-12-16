@@ -32,4 +32,4 @@ int main() {
 ## See also
 
 [Keywords](../cpp/keywords-cpp.md)<br/>
-[Fundamental Types](../cpp/fundamental-types-cpp.md)
+[Built-in types](../cpp/fundamental-types-cpp.md)

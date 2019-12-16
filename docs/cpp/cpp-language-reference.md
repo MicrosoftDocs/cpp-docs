@@ -25,8 +25,14 @@ Fundamental lexical elements of a C++ program: tokens, comments, operators, keyw
 [Basic Concepts](../cpp/basic-concepts-cpp.md)<br/>
 Scope, linkage, program startup and termination, storage classes, and types.
 
+[Built-in types](fundamental-types-cpp.md)
+The fundamental types that are built into the C++ compiler and their value ranges.
+
 [Standard Conversions](../cpp/standard-conversions.md)<br/>
-Type conversions between built-in, or "fundamental," types. Also, arithmetic conversions and conversions among pointer, reference, and pointer-to-member types.
+Type conversions between built-in types. Also, arithmetic conversions and conversions among pointer, reference, and pointer-to-member types.
+
+[Declarations and definitions](declarations-and-definitions-cpp.md)
+Declaring and defining variables, types and functions.
 
 [Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 The operators in C++.

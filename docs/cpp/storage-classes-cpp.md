@@ -1,13 +1,14 @@
 ---
 title: "Storage classes (C++)"
-ms.date: "11/04/2016"
-f1_keywords: ["thread_local_cpp", "external_cpp", "static_cpp", "register_cpp"]
+description: "In C++, the static, extern and thread_local keywords specify the lifetime, linkage, and memory location of a variable or function."
+ms.date: "12/11/2019"
+f1_keywords: ["thread_local_cpp", "extern_cpp", "static_cpp", "register_cpp"]
 helpviewer_keywords: ["storage classes [C++], basic concepts"]
 ms.assetid: f10e1c56-6249-4eb6-b08f-09ab1eef1992
 ---
-# Storage classes (C++)
+# Storage classes
 
-A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the **extern**, **static**, or `thread_local` specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block.
+A *storage class* in the context of C++ variable declarations is a type specifier that governs the lifetime, linkage, and memory location of objects. A given object can have only one storage class. Variables defined within a block have automatic storage unless otherwise specified using the **extern**, **static**, or **thread_local** specifiers. Automatic objects and variables have no linkage; they are not visible to code outside the block. Memory is allocated for them automatically when execution enters the block and de-allocated when the block is exited.
 
 **Notes**
 
@@ -18,12 +19,6 @@ A *storage class* in the context of C++ variable declarations is a type specifie
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
 ```
-
-## In this section:
-
-- [static](#static)
-- [extern](#extern)
-- [thread_local](#thread_local)
 
 ## <a name="static"></a> static
 
@@ -152,30 +147,11 @@ Starting in C++11, a static local variable initialization is guaranteed to be th
 
 ## <a name="extern"></a> extern
 
-Objects and variables declared as **extern** declare an object that is defined in another translation unit or in an enclosing scope as having external linkage.
-
-Declaration of **const** variables with the **extern** storage class forces the variable to have external linkage. An initialization of an **extern const** variable is allowed in the defining translation unit. Initializations in translation units other than the defining translation unit produce undefined results. For more information, see [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
-
-The [/Zc:externConstexpr](../build/reference/zc-externconstexpr.md) compiler option causes the compiler to apply [external linkage](../c-language/external-linkage.md) to variables declared by using `extern constexpr`. In earlier versions of Visual Studio, and by default or if **/Zc:externConstexpr-** is specified, Visual Studio applies internal linkage to **constexpr** variables even if the **extern** keyword is used. The **/Zc:externConstexpr** option is available starting in Visual Studio 2017 Update 15.6. and is off by default. The /permissive- option does not enable /Zc:externConstexpr.
-
-The following code shows two **extern** declarations, `DefinedElsewhere` (which refers to a name defined in a different translation unit) and `DefinedHere` (which refers to a name defined in an enclosing scope):
-
-```cpp
-// external.cpp
-// DefinedElsewhere is defined in another translation unit
-extern int DefinedElsewhere;
-int main() {
-   int DefinedHere;
-   {
-      // refers to DefinedHere in the enclosing scope
-      extern int DefinedHere;
-   }
-}
-```
+Objects and variables declared as **extern** declare an object that is defined in another translation unit or in an enclosing scope as having external linkage. For more information, see [extern](extern-cpp.md) and [Translation units and linkage](program-and-linkage-cpp.md).
 
 ## <a name="thread_local"></a> thread_local (C++11)
 
-A variable declared with the `thread_local` specifier is accessible only on the thread on which it is created. The variable is created when the thread is created, and destroyed when the thread is destroyed. Each thread has its own copy of the variable. On Windows, `thread_local` is functionally equivalent to the Microsoft-specific [__declspec( thread )](../cpp/thread.md) attribute.
+A variable declared with the **thread_local** specifier is accessible only on the thread on which it is created. The variable is created when the thread is created, and destroyed when the thread is destroyed. Each thread has its own copy of the variable. On Windows, **thread_local** is functionally equivalent to the Microsoft-specific [__declspec( thread )](../cpp/thread.md) attribute.
 
 ```cpp
 thread_local float f = 42.0; // Global namespace. Not implicitly static.
@@ -194,19 +170,19 @@ void DoSomething()
 }
 ```
 
-Things to note about the `thread_local` specifier:
+Things to note about the **thread_local** specifier:
 
 - Dynamically initialized thread-local variables in DLLs may not be correctly initialized on all calling threads. For more information, see [thread](thread.md).
 
-- The `thread_local` specifier may be combined with **static** or **extern**.
+- The **thread_local** specifier may be combined with **static** or **extern**.
 
-- You can apply `thread_local` only to data declarations and definitions; `thread_local` cannot be used on function declarations or definitions.
+- You can apply **thread_local** only to data declarations and definitions; **thread_local** cannot be used on function declarations or definitions.
 
-- You can specify `thread_local` only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared `thread_local` is implicitly static if no other storage class is provided; in other words, at block scope `thread_local` is equivalent to `thread_local static`.
+- You can specify **thread_local** only on data items with static storage duration. This includes global data objects (both **static** and **extern**), local static objects, and static data members of classes. Any local variable declared **thread_local** is implicitly static if no other storage class is provided; in other words, at block scope **thread_local** is equivalent to `thread_local static`.
 
-- You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
+- You must specify **thread_local** for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
 
-On Windows, `thread_local` is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use `thread_local` because it is part of the C++ standard and is therefore more portable.
+On Windows, **thread_local** is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use **thread_local** because it is part of the C++ standard and is therefore more portable.
 
 ##  <a name="register"></a>  register
 

@@ -64,7 +64,7 @@ then the memory layout is as shown in the following figure:
 ![Layout of Date object with zero&#45;length bit field](../cpp/media/vc38uq2.png "Layout of Date object with zero&#45;length bit field") <br/>
 Layout of Date Object with Zero-Length Bit Field
 
-The underlying type of a bit field must be an integral type, as described in [Fundamental Types](../cpp/fundamental-types-cpp.md).
+The underlying type of a bit field must be an integral type, as described in [Built-in types](../cpp/fundamental-types-cpp.md).
 
 If the initializer for a reference of type `const T&` is an lvalue that refers to a bit field of type `T`, the reference is not bound to the bit field directly. Instead, the reference is bound to a temporary initialized to hold the value of the bit field.
 
