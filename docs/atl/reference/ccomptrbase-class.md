@@ -359,7 +359,7 @@ Returns S_OK on success, or E_NOINTERFACE on failure.
 
 ### Remarks
 
-This method calls [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).
+This method calls [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)).
 
 In debug builds, an assertion error will occur if *pp* is not equal to NULL.
 
