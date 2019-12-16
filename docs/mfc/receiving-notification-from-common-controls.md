@@ -1,7 +1,6 @@
 ---
 title: "Receiving Notification from Common Controls"
 ms.date: "11/04/2016"
-f1_keywords: ["ON_NOTIFY", "WM_NOTIFY"]
 helpviewer_keywords: ["OnNotify method [MFC]", "common controls [MFC], notifications", "ON_NOTIFY macro [MFC]", "controls [MFC], notifications", "receiving notifications from common controls", "notifications [MFC], common controls", "Windows common controls [MFC], notifications", "WM_NOTIFY message"]
 ms.assetid: 50194592-d60d-44d0-8ab3-338a2a2c63e7
 ---
