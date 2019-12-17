@@ -29,7 +29,7 @@ It is good programming style to use the **break**, **continue**, and `return` st
 
 This example demonstrates the `goto` statement:
 
-```
+```c
 // goto.c
 #include <stdio.h>
 

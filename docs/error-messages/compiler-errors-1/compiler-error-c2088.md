@@ -13,7 +13,7 @@ The operator was not defined for the structure or union. This error is only vali
 
 The following sample generates C2088 three times:
 
-```
+```c
 // C2088.c
 struct S {
    int m_i;

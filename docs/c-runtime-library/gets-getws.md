@@ -73,7 +73,7 @@ For additional compatibility information, see [Compatibility](../c-runtime-libra
 
 ## Example
 
-```
+```c
 // crt_gets.c
 // compile with: /WX /W3
 

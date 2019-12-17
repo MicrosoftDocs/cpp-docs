@@ -13,7 +13,7 @@ The identifier was declared in a function definition but not in the formal param
 
 The following sample generates C2085:
 
-```
+```c
 // C2085.c
 void func1( void )
 int main( void ) {}   // C2085
@@ -21,7 +21,7 @@ int main( void ) {}   // C2085
 
 Possible resolution:
 
-```
+```c
 // C2085b.c
 void func1( void );
 int main( void ) {}

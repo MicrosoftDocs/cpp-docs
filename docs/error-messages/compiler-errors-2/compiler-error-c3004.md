@@ -13,7 +13,7 @@ An OpenMP clause was used on a directive for which it is not enabled.
 
 The following sample generates C3004:
 
-```
+```c
 // C3004.c
 // compile with: /openmp
 int main()

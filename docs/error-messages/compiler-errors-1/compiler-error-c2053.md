@@ -13,7 +13,7 @@ The wide string is assigned to an incompatible type.
 
 The following sample generates C2053:
 
-```
+```c
 // C2053.c
 int main() {
    char array[] = L"Rika";   // C2053

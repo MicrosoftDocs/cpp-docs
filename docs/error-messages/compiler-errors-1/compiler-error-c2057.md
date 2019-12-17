@@ -31,7 +31,7 @@ int main() {
 
 C has more restrictive rules for constant expressions.  The following sample generates C2057 and shows how to fix it:
 
-```
+```c
 // C2057b.c
 #define ArraySize1 10
 int main() {

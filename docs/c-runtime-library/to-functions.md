@@ -57,7 +57,7 @@ The `towlower` and `towupper` functions return a converted copy of `c` if and on
 
 ## Example
 
-```
+```c
 // crt_toupper.c
 /* This program uses toupper and tolower to
  * analyze all characters between 0x0 and 0x7F. It also

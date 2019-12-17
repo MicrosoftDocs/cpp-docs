@@ -72,7 +72,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 ## Example
 
-```
+```c
 // crt_cgets.c
 // compile with: /c /W3
 // This program creates a buffer and initializes
