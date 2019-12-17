@@ -1,6 +1,6 @@
 ---
 title: ".CODE"
-ms.date: "12/06/2019"
+ms.date: "12/17/2019"
 f1_keywords: [".CODE"]
 helpviewer_keywords: [".CODE directive"]
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
@@ -12,6 +12,8 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 ## Syntax
 
 > **.CODE** ⟦*name*⟧
+> ⟦ *segmentItem* ⟧...
+⟦ *codesegmentnameId* **ENDS**;;⟧
 
 ### Parameters
 
@@ -21,4 +23,5 @@ Optional parameter that specifies the name of the code segment. The default name
 ## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)\
-[.DATA](../../assembler/masm/dot-data.md)
+[.DATA](../../assembler/masm/dot-data.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

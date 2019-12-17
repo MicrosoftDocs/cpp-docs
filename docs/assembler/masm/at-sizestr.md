@@ -15,4 +15,5 @@ A macro function that returns the length of the given string. Returns an integer
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -11,7 +11,7 @@ Marks start and end of a procedure block called *label*. The statements in the b
 
 ## Syntax
 
-> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦*visibility*⟧ ⟦__\<__*prologuearg*__>__⟧ ⟦**USES** *reglist*⟧ ⟦__,__ *parameter* ⟦__:__*tag*⟧ ...⟧\
+> *label* **PROC** ⟦*distance*⟧ ⟦*language-type*⟧ ⟦ **PUBLIC** | **PRIVATE** | **EXPORT** ⟧ ⟦__\<__*prologuearg*__>__⟧ ⟦**USES** *reglist*⟧ ⟦__,__ *parameter* ⟦__:__*tag*⟧ ...⟧\
 > ⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧\
 > *statements*\
 > *label* **ENDP**
@@ -73,4 +73,5 @@ Dumping Unwind Information for file ex2.exe
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

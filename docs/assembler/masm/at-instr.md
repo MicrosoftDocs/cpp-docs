@@ -15,4 +15,5 @@ Macro function that finds the first occurrence of *string2* in *string1*, beginn
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

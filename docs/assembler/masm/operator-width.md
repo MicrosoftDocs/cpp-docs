@@ -15,4 +15,5 @@ Returns the width in bits of the current *recordfieldname* or *record*.
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

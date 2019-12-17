@@ -1,6 +1,6 @@
 ---
 title: "STRUCT (MASM)"
-ms.date: "12/06/2019"
+ms.date: "12/17/2019"
 f1_keywords: ["struct"]
 helpviewer_keywords: ["STRUCT directive"]
 ms.assetid: 70c3ba6b-00db-461e-8dd9-eafd3ae5b3c8
@@ -21,4 +21,5 @@ The *name* argument must be the same in the opening and closing statement.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

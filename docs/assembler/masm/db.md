@@ -21,4 +21,5 @@ Can also be used as a type specifier anywhere a type is legal.
 
 [Directives Reference](../../assembler/masm/directives-reference.md)\
 [DB](../../assembler/masm/db.md)\
-[SBYTE](../../assembler/masm/sbyte-masm.md)
+[SBYTE](../../assembler/masm/sbyte-masm.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

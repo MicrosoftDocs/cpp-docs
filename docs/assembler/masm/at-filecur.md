@@ -15,4 +15,5 @@ The name of the current file (text macro).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

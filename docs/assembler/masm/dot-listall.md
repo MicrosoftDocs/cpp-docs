@@ -19,4 +19,5 @@ Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LI
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

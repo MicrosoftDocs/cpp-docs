@@ -15,4 +15,5 @@ Assigns *textitem* to *name*. The *textitem* can be a literal string, a constant
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

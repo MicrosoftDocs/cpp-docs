@@ -1,6 +1,6 @@
 ---
 title: ".DATA?"
-ms.date: "12/06/2019"
+ms.date: "12/17/2019"
 f1_keywords: [".DATA?"]
 helpviewer_keywords: [".DATA? directive"]
 ms.assetid: f454f8d7-e23b-458c-a2c4-8441f1afdc82
@@ -11,8 +11,9 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data s
 
 ## Syntax
 
-> **.DATA?**
-
+> **.DATA?** 
+> ⟦ *segmentItem* ⟧...
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

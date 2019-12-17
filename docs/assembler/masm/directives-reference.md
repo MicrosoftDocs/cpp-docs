@@ -156,4 +156,5 @@ ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 
 ## See also
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

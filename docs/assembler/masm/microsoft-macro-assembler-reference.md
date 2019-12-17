@@ -31,6 +31,9 @@ Provides links to websites that may contain programming information about proces
 [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)\
 Information about how to create output files for x64.
 
+[MASM BNF Grammar](masm-bnf-grammar.md)
+Formal BNF description of MASM for x64.
+
 ## Related Sections
 
 [C++ in Visual Studio](../../overview/visual-cpp-in-visual-studio.md)\

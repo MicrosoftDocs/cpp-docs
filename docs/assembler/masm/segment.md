@@ -1,6 +1,6 @@
 ---
 title: "SEGMENT"
-ms.date: "12/06/2019"
+ms.date: "12/16/2019"
 f1_keywords: ["SEGMENT"]
 helpviewer_keywords: ["SEGMENT directive"]
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
@@ -57,3 +57,4 @@ For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/
 ## See also
 
 [Directives reference](directives-reference.md)
+[MASM BNF Grammar](masm-bnf-grammar.md)

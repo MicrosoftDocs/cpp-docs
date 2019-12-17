@@ -5,7 +5,7 @@ f1_keywords: ["extern"]
 helpviewer_keywords: ["EXTERN directive"]
 ms.assetid: 667d703d-3aaf-4139-a586-29bc5dab1aff
 ---
-# EXTERN (MASM)
+# EXTERN
 
 Defines one or more external variables, labels, or symbols called *name* whose type is *type*.
 
@@ -21,4 +21,5 @@ The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *na
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

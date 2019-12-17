@@ -17,4 +17,5 @@ ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

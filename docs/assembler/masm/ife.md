@@ -1,6 +1,6 @@
 ---
 title: "IFE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["IFE"]
 helpviewer_keywords: ["IFE directive"]
 ms.assetid: bac5659d-9d2e-406d-89b7-e05b335ab0fd
@@ -12,6 +12,7 @@ Grants assembly if *expression* is false (0).
 ## Syntax
 
 > **IFE** *expression*
+*directive...*
 
 ## Remarks
 
@@ -19,4 +20,5 @@ See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)

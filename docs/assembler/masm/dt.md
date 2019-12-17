@@ -15,4 +15,5 @@ Allocates and optionally initializes 10 bytes of storage for each *initializer*.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[MASM BNF Grammar](masm-bnf-grammar.md)
