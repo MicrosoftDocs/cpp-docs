@@ -1,6 +1,7 @@
 ---
 title: "/NXCOMPAT (Compatible with Data Execution Prevention)"
-ms.date: "12/29/2017"
+description: "Describes the Microsoft C/C++ (MSVC) /NXCOMPAT linker option, which marks an executable as compatible with Data Execution Prevention (DEP)."
+ms.date: "12/17/2019"
 f1_keywords: ["/NXCOMPAT"]
 helpviewer_keywords: ["/NXCOMPAT linker option", "-NXCOMPAT linker option", "NXCOMPAT linker option"]
 ---
@@ -20,8 +21,6 @@ By default, **/NXCOMPAT** is on.
 
 For more information about Data Execution Prevention, see these articles:
 
-- [A detailed description of the Data Execution Prevention (DEP) feature](https://support.microsoft.com/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
-
 - [Data Execution Prevention](/windows/win32/Memory/data-execution-prevention)
 
 - [Data Execution Prevention (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
@@ -40,5 +39,5 @@ For more information about Data Execution Prevention, see these articles:
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
+[MSVC linker reference](linking.md)\
 [MSVC Linker Options](linker-options.md)
