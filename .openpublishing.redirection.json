@@ -8161,6 +8161,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/preprocessor/conventions.md",
+      "redirect_url": "/cpp/preprocessor/grammar-summary-c-cpp#conventions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/preprocessor/definitions-for-the-grammar-summary.md",
+      "redirect_url": "/cpp/preprocessor/grammar-summary-c-cpp#definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/preprocessor/preprocessor-grammar.md",
+      "redirect_url": "/cpp/preprocessor/grammar-summary-c-cpp#grammar",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/security/index.md",
       "redirect_url": "/cpp/security/security-best-practices-for-cpp",
       "redirect_document_id": false
