@@ -21,5 +21,5 @@ For more information, see [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

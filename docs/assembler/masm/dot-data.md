@@ -12,7 +12,7 @@ ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 ## Syntax
 
 > **.DATA**\
-> ⟦ *segmentItem* ⟧...\
+> ⟦ *segmentItem* ⟧...
 
 ## See also
 
@@ -21,4 +21,5 @@ ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 [.CONST](dot-const.md)\
 [.FARDATA](dot-fardata.md)\
 [.FARDATA?](dot-fardata-q.md)\
-[MASM BNF Grammar](masm-bnf-grammar.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)
+

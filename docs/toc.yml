@@ -5869,6 +5869,8 @@
                       href: assembler/masm/ml-warning-a4012.md
                     - name: ML warning A4014
                       href: assembler/masm/ml-warning-a4014.md
+            - name: MASM BNF grammar
+              href: assembler/masm/masm-bnf-grammar.md
         - name: Component extensions for .NET and UWP
           expanded: false
           items: 

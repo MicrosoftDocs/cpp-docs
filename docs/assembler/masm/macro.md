@@ -19,11 +19,12 @@ Marks a macro block called *name* and establishes *parameter* placeholders for a
 
 ## Remarks
 
-A macro function returns *value* to the calling statement. 
+A macro function returns *value* to the calling statement.
 
 ## See also
 
-[Directives reference](directives-reference.md)
-[GOTO (MASM)](goto-masm.md)
-[ENDM](endm.md)
+[Directives reference](directives-reference.md)\
+[GOTO (MASM)](goto-masm.md)\
+[ENDM](endm.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
+

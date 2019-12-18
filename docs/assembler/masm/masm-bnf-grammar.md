@@ -253,21 +253,19 @@ possible definition for qualifiedType, which is also a component of the definiti
 &nbsp;&nbsp;&nbsp;&nbsp;**OFFSET** *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **SEG** *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **LROFFSET** *e10*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **TYPE**\
-&nbsp;&nbsp;&nbsp;&nbsp;e10\\
-&nbsp;&nbsp;&nbsp;&nbsp;| **THIS**\
-&nbsp;&nbsp;&nbsp;&nbsp;e10\
+&nbsp;&nbsp;&nbsp;&nbsp;| **TYPE** *e10*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **THIS** *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e09* **PTR** *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e09* : *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e10*
 
 *e10*\
-e10 . *e11*\
+&nbsp;&nbsp;&nbsp;&nbsp;*e10* . *e11*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e10* ⟦ *expr* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e11*
 
 *e11*\
-( *expr* )\
+&nbsp;&nbsp;&nbsp;&nbsp;( *expr* )\
 &nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *expr* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **WIDTH** *id*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **MASK** *id*\
@@ -1059,8 +1057,7 @@ untilDir ;;
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
 *untilDir*\
-&nbsp;&nbsp;&nbsp;&nbsp;**.UNTIL**\
-&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;**.UNTIL** *cExpr* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;**.UNTILCXZ** ⟦ *cxzExpr* ⟧ ;;
 
 *usesRegs*\

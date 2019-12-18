@@ -56,5 +56,5 @@ For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

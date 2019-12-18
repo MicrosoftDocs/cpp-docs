@@ -15,7 +15,7 @@ Combines [ELSE](else-masm.md) and [IF](if-masm.md) into one statement.
 > *statements*\
 > ⟦**ELSE**\
 > *else-statements*⟧\
-> **ENDIF**\
+> **ENDIF**
 
 ## Remarks
 

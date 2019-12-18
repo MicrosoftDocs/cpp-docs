@@ -13,7 +13,7 @@ In the first directive, within a macro, **LOCAL** defines labels that are unique
 
 > **LOCAL** *localId* ⟦, *localId* ...⟧
 >
-> **LOCAL** *label* ⟦ __\[__*count*__]__ ⟧ ⟦__:__*qualifiedType*⟧ ⟦__,__ *label* ⟦ __\[__*count*__]__ ⟧ ⟦*qualifiedType*⟧ ...⟧
+> **LOCAL** *labelId* ⟦ __\[__*count*__]__ ⟧ ⟦__:__*qualifiedType*⟧ ⟦__,__ *labelId* ⟦ __\[__*count*__]__ ⟧ ⟦*qualifiedType*⟧ ...⟧
 
 ## Remarks
 
@@ -21,5 +21,5 @@ In the second directive, within a procedure definition (**PROC**), **LOCAL** cre
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

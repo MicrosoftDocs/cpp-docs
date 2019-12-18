@@ -11,7 +11,7 @@ Defines a new type or **PROTO** called *name*, which is equivalent to *type* or 
 
 ## Syntax
 
-> *name* **TYPEDEF** *type* | ⟦**PROTO** *protoDefinition*⟧
+> *name* **TYPEDEF** *type* | **PROTO** *protoDefinition*
 
 ## See also
 
