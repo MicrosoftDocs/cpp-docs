@@ -176,7 +176,7 @@ You can modify your clone of vcpkg in any way you like. You can create multiple 
 
 ## Uninstall vcpkg
 
-Just delete the directory.
+Just delete the vcpkg directory. This will uninstall the whole vcpkg distribution including all libraries the vcpkg installed.
 
 ## Send feedback about vcpkg
 
