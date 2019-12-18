@@ -15,5 +15,5 @@ See the [EXTERNDEF](externdef.md) directive.
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

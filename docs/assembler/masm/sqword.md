@@ -17,5 +17,5 @@ Allocates and optionally initializes 8 signed bytes of storage for each *initial
 
 [Directives Reference](directives-reference.md)\
 [QWORD](qword.md)\
-[DQ](dq.md)<br/>
+[DQ](dq.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

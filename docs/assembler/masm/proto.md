@@ -47,5 +47,5 @@ addup3 PROTO NEAR C, argcount:WORD, arg1:VARARG
 ## See also
 
 [Directives Reference](directives-reference.md)\
-[.MODEL Reference](dot-model.md)<br/>
+[.MODEL Reference](dot-model.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

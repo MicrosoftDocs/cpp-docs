@@ -17,5 +17,5 @@ Allocates and optionally initializes a word (2 bytes) of storage for each *initi
 
 [Directives reference](directives-reference.md)\
 [SWORD](sword.md)\
-[DW](dw.md)<br/>
+[DW](dw.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

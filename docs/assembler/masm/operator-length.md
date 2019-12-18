@@ -15,5 +15,5 @@ Returns the number of data items in *variable* created by the first initializer.
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

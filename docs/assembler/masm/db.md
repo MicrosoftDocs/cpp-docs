@@ -21,5 +21,5 @@ Can also be used as a type specifier anywhere a type is legal.
 
 [Directives Reference](directives-reference.md)\
 [DB](db.md)\
-[SBYTE](sbyte-masm.md)<br/>
+[SBYTE](sbyte-masm.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

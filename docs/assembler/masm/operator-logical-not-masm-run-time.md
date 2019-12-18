@@ -15,5 +15,5 @@ Logical negation. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or 
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

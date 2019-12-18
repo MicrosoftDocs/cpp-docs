@@ -17,5 +17,5 @@ Allocates and optionally initializes 8 bytes of storage for each *initializer*. 
 
 [Directives Reference](directives-reference.md)\
 [SQWORD](qword.md)\
-[DQ](dq.md)<br/>
+[DQ](dq.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

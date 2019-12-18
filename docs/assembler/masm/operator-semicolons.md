@@ -15,5 +15,5 @@ Treats *text* as a comment in a macro that appears only in the macro definition.
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

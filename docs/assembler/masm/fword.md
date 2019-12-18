@@ -20,5 +20,5 @@ Also can be used as a type specifier anywhere a type is legal.
 ## See also
 
 [Directives Reference](directives-reference.md)\
-[DF](df.md)<br/>
+[DF](df.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

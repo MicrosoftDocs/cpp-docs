@@ -21,7 +21,7 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ```asm
     movdqa   xmm0, xmmword ptr [ebx]
-```<br/>
+```\
 
 ## See Also
 

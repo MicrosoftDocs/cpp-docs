@@ -15,5 +15,5 @@ The first operator returns *expression1* plus *expression2*.
 
 ## See also
 
-[Operators Reference](operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -16,5 +16,5 @@ Allocates and optionally initializes 10 bytes of storage for each *initializer*.
 ## See also
 
 [Directives Reference](directives-reference.md)\
-[DT](dt.md)<br/>
+[DT](dt.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

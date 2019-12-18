@@ -15,5 +15,5 @@ Returns a word defining the mode and scope of *expression*. The low byte is iden
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

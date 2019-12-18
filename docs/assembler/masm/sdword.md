@@ -17,5 +17,5 @@ Allocates and optionally initializes a signed double word (4 bytes) of storage f
 
 [Directives Reference](directives-reference.md)\
 [DWORD](dword.md)\
-[DD](dd.md)<br/>
+[DD](dd.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

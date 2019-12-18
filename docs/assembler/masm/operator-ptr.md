@@ -17,5 +17,5 @@ The first operator forces the *expression* to be treated as having the specified
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

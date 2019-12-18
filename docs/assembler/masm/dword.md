@@ -21,5 +21,5 @@ Can also be used as a type specifier anywhere a type is legal.
 
 [Directives Reference](directives-reference.md)\
 [SDWORD](sdword.md)\
-[DD](dd.md)<br/>
+[DD](dd.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

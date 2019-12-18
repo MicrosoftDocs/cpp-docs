@@ -15,5 +15,5 @@ Returns the integer value of the remainder (modulo) when dividing *expression1* 
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

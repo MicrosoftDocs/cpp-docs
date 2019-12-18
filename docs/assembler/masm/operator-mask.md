@@ -15,5 +15,5 @@ Returns a bit mask in which the bits in *recordfieldname* or *record* are set an
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

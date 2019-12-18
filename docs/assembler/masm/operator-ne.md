@@ -15,5 +15,5 @@ Returns true (-1) if *expression1* does not equal *expression2*, or returns fals
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

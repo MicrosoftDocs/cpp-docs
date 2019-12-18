@@ -15,5 +15,5 @@ Returns the result of shifting the bits of *expression* left *count* number of b
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

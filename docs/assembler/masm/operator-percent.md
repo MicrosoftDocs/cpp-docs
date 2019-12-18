@@ -15,5 +15,5 @@ Treats the value of *expression* in a macro argument as text.
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -17,5 +17,5 @@ Returns *expression1* minus *expression2*. The second operator reverses the sign
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

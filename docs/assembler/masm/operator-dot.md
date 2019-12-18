@@ -17,5 +17,5 @@ The first operator returns *expression* plus the offset of *field* within its st
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

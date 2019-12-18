@@ -21,1060 +21,1060 @@ possible definition for qualifiedType, which is also a component of the definiti
 
 ## MASM Nonterminals
 
-*;;*<br/>
+*;;*\
 &nbsp;&nbsp;&nbsp;&nbsp;*endOfLine* | *comment*
 
-*=Dir*<br/>
+*=Dir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* = *immExpr* ;;
 
-*addOp*<br/>
+*addOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;+ | -
 
-*aExpr*<br/>
+*aExpr*\
 &nbsp;&nbsp;&nbsp;&nbsp;*term* | *aExpr* && *term*
 
-*altId*<br/>
+*altId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*arbitraryText*<br/>
+*arbitraryText*\
 &nbsp;&nbsp;&nbsp;&nbsp;*charList*
 
-*asmInstruction*<br/>
+*asmInstruction*\
 &nbsp;&nbsp;&nbsp;&nbsp;*mnemonic* ⟦ *exprList* ⟧
 
-*assumeDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ASSUME** *assumeList* ;;<br/>
+*assumeDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**ASSUME** *assumeList* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;| **ASSUME NOTHING** ;;
 
-*assumeList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*assumeRegister* | *assumeList* , *assumeRegister*<br/>
+*assumeList*\
+&nbsp;&nbsp;&nbsp;&nbsp;*assumeRegister* | *assumeList* , *assumeRegister*\
 
-*assumeReg*<br/>
+*assumeReg*\
 &nbsp;&nbsp;&nbsp;&nbsp;*register* : *assumeVal*
 
-*assumeRegister*<br/>
+*assumeRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;*assumeSegReg* | *assumeReg*
 
-*assumeSegReg*<br/>
+*assumeSegReg*\
 &nbsp;&nbsp;&nbsp;&nbsp;*segmentRegister* : *assumeSegVal*
 
-*assumeSegVal*<br/>
+*assumeSegVal*\
 &nbsp;&nbsp;&nbsp;&nbsp;*frameExpr* | **NOTHING** | **ERROR**
 
-*assumeVal*<br/>
+*assumeVal*\
 &nbsp;&nbsp;&nbsp;&nbsp;*qualifiedType* | **NOTHING** | **ERROR**
 
-*bcdConst*<br/>
+*bcdConst*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *sign* ⟧ *decNumber*
 
-*binaryOp*<br/>
+*binaryOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;== | != | >= | <= | > | < | &
 
-*bitDef*<br/>
+*bitDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;*bitFieldId* : *bitFieldSize* ⟦ = *constExpr* ⟧
 
-*bitDefList*<br/>
+*bitDefList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*bitDef* | *bitDefList* , ⟦ ;; ⟧ *bitDef*
 
-*bitFieldId*<br/>
+*bitFieldId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*bitFieldSize*<br/>
+*bitFieldSize*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*blockStatements*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.CONTINUE** **.IF** *cExpr* ⟧<br/>
+*blockStatements*\
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.CONTINUE** **.IF** *cExpr* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **.BREAK** ⟦ **.IF** *cExpr* ⟧
 
-*bool*<br/>
+*bool*\
 &nbsp;&nbsp;&nbsp;&nbsp;**TRUE** | **FALSE**
 
-*byteRegister*<br/>
+*byteRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;AL | AH | CL | CH | DL | DH | BL | BH | R8B | R9B | R10B | R11B | R12B | R13B | R14B | R15B
 
-*cExpr*<br/>
+*cExpr*\
 &nbsp;&nbsp;&nbsp;&nbsp;*aExpr* | *cExpr* || *aExpr*
 
-*character*<br/>
+*character*\
 &nbsp;&nbsp;&nbsp;&nbsp;Any character with ordinal in the range 0–255 except linefeed (10).
 
-*charList*<br/>
+*charList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*character* | *charList* character
 
-*className*<br/>
+*className*\
 &nbsp;&nbsp;&nbsp;&nbsp;*string*
 
-*commDecl*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *nearfar* ⟧ ⟦ *langType* ⟧ *id* : *commType*<br/>
+*commDecl*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *nearfar* ⟧ ⟦ *langType* ⟧ *id* : *commType*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ : *constExpr* ⟧
 
-*commDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**COMM**<br/>
+*commDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**COMM**\
 &nbsp;&nbsp;&nbsp;&nbsp;*commList* ;;
 
-*comment*<br/>
+*comment*\
 &nbsp;&nbsp;&nbsp;&nbsp;; *text* ;;
 
-*commentDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**COMMENT** *delimiter*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*text*<br/>
+*commentDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**COMMENT** *delimiter*\
+&nbsp;&nbsp;&nbsp;&nbsp;*text*\
 &nbsp;&nbsp;&nbsp;&nbsp;*text* *delimiter* *text* ;;
 
-*commList*<br/>
+*commList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*commDecl* | *commList* , *commDecl*
 
-*commType*<br/>
+*commType*\
 &nbsp;&nbsp;&nbsp;&nbsp;*type* | *constExpr*
 
-*constant*<br/>
+*constant*\
 &nbsp;&nbsp;&nbsp;&nbsp;*digits* ⟦ *radixOverride* ⟧
 
-*constExpr*<br/>
+*constExpr*\
 &nbsp;&nbsp;&nbsp;&nbsp;*expr*
 
-*contextDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**PUSHCONTEXT** *contextItemList* ;;<br/>
+*contextDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**PUSHCONTEXT** *contextItemList* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;**POPCONTEXT** *contextItemList* ;;
 
-*contextItem*<br/>
+*contextItem*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ASSUMES** | **RADIX** | **LISTING** | **CPU** | **ALL**
 
-*contextItemList*<br/>
+*contextItemList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*contextItem* | *contextItemList* , *contextItem*
 
-*controlBlock*<br/>
+*controlBlock*\
 &nbsp;&nbsp;&nbsp;&nbsp;*whileBlock* | *repeatBlock*
 
-*controlDir*<br/>
+*controlDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*controlIf* | *controlBlock*
 
-*controlElseif*<br/>
+*controlElseif*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.ELSEIF**
-&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList* \
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *controlElseif* ⟧
 
-*controlIf*<br/>
+*controlIf*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.IF**
-&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *controlElseif* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **.ELSE** ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[*directiveList*⟧<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *controlElseif* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **.ELSE** ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;[*directiveList*⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;**.ENDIF** ;;
 
-*coprocessor*<br/>
+*coprocessor*\
 &nbsp;&nbsp;&nbsp;&nbsp;.8087 | .287 | .387 | .NO87
 
-*crefDir*<br/>
+*crefDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*crefOption* ;;
 
-*crefOption*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.CREF**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.XCREF**  ⟦ *idList* ⟧<br/>
+*crefOption*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.CREF**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.XCREF**  ⟦ *idList* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **.NOCREF** ⟦ *idList* ⟧
 
-*cxzExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*expr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| ! *expr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *expr* == expr<br/>
+*cxzExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;*expr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| ! *expr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *expr* == expr\
 &nbsp;&nbsp;&nbsp;&nbsp;| *expr* != expr
 
-*dataDecl*<br/>
+*dataDecl*\
 &nbsp;&nbsp;&nbsp;&nbsp;DB | DW | DD | DF | DQ | DT | *dataType* | *typeId*
 
-*dataDir*<br/>
+*dataDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *id* ⟧ *dataItem* ;;
 
-*dataItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*dataDecl* *scalarInstList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *structTag* *structInstList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *typeId* *structInstList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *unionTag* *structInstList*<br/>
+*dataItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;*dataDecl* *scalarInstList*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *structTag* *structInstList*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *typeId* *structInstList*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *unionTag* *structInstList*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *recordTag* *recordInstList*
 
-*dataType*<br/>
+*dataType*\
 &nbsp;&nbsp;&nbsp;&nbsp;BYTE | SBYTE | WORD | SWORD | DWORD | SDWORD | FWORD | QWORD | SQWORD | TBYTE | OWORD | REAL4 | REAL8 | REAL10 | MMWORD | XMMWORD | YMMWORD
 
-*decdigit*<br/>
+*decdigit*\
 &nbsp;&nbsp;&nbsp;&nbsp;0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
-*decNumber*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*<br/>
+*decNumber*\
+&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *decNumber* *decdigit*
 
-*delimiter*<br/>
+*delimiter*\
 &nbsp;&nbsp;&nbsp;&nbsp;Any character except *whiteSpaceCharacter*
 
-*digits*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *digits* *decdigit*<br/>
+*digits*\
+&nbsp;&nbsp;&nbsp;&nbsp;*decdigit*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *digits* *decdigit*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *digits* hexdigit
 
-*directive*<br/>
+*directive*\
 &nbsp;&nbsp;&nbsp;&nbsp;*generalDir* | *segmentDef*
 
-*directiveList*<br/>
+*directiveList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*directive* | *directiveList* *directive*
 
-*distance*<br/>
+*distance*\
 &nbsp;&nbsp;&nbsp;&nbsp;*nearfar* | **NEAR16** | **NEAR32** | **FAR16** | **FAR32**
 
-*e01*<br/>
+*e01*\
 &nbsp;&nbsp;&nbsp;&nbsp;e01 *orOp* *e02* | *e02*
 
-*e02*<br/>
+*e02*\
 &nbsp;&nbsp;&nbsp;&nbsp;e02 **AND** *e03* | *e03*
 
-*e03*<br/>
+*e03*\
 &nbsp;&nbsp;&nbsp;&nbsp;**NOT** *e04* | *e04*
 
-*e04*<br/>
+*e04*\
 &nbsp;&nbsp;&nbsp;&nbsp;*e04* *relOp* *e05* | *e05*
 
-*e05*<br/>
+*e05*\
 &nbsp;&nbsp;&nbsp;&nbsp;*e05* *addOp* *e06* | *e06*
 
-*e06*<br/>
+*e06*\
 &nbsp;&nbsp;&nbsp;&nbsp;*e06* *mulOp* *e07* | *e06* *shiftOp* *e07* | *e07*
 
-*e07*<br/>
+*e07*\
 &nbsp;&nbsp;&nbsp;&nbsp;*e07* *addOp* *e08* | *e08*
 
-*e08*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**HIGH** *e09*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LOW** *e09*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **HIGHWORD** *e09*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LOWWORD** *e09*<br/>
+*e08*\
+&nbsp;&nbsp;&nbsp;&nbsp;**HIGH** *e09*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LOW** *e09*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **HIGHWORD** *e09*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LOWWORD** *e09*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e09*
 
-*e09*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**OFFSET** *e10*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SEG** *e10*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LROFFSET** *e10*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **TYPE**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;e10<br/><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **THIS**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;e10<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *e09* **PTR** *e10*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *e09* : *e10*<br/>
+*e09*\
+&nbsp;&nbsp;&nbsp;&nbsp;**OFFSET** *e10*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SEG** *e10*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LROFFSET** *e10*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **TYPE**\
+&nbsp;&nbsp;&nbsp;&nbsp;e10\\
+&nbsp;&nbsp;&nbsp;&nbsp;| **THIS**\
+&nbsp;&nbsp;&nbsp;&nbsp;e10\
+&nbsp;&nbsp;&nbsp;&nbsp;| *e09* **PTR** *e10*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *e09* : *e10*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e10*
 
-*e10*<br/>
-e10 . *e11*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *e10* ⟦ *expr* ⟧<br/>
+*e10*\
+e10 . *e11*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *e10* ⟦ *expr* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e11*
 
-*e11*<br/>
-( *expr* )<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *expr* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **WIDTH** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **MASK** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SIZE** *sizeArg*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SIZEOF** *sizeArg*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LENGTH** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LENGTHOF** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *recordConst*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *string*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *constant*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *type*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **$**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *register*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ST**<br/>
+*e11*\
+( *expr* )\
+&nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *expr* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **WIDTH** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **MASK** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SIZE** *sizeArg*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SIZEOF** *sizeArg*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LENGTH** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LENGTHOF** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *recordConst*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *string*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *constant*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *type*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **$**\
+&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *register*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ST**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **ST** ( *expr* )
 
-*echoDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ECHO**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*arbitraryText* ;;<br/>
-%**OUT** *arbitraryText* ;;<br/>
+*echoDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**ECHO**\
+&nbsp;&nbsp;&nbsp;&nbsp;*arbitraryText* ;;\
+%**OUT** *arbitraryText* ;;\
 
-*elseifBlock*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*elseifStatement* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *elseifBlock* ⟧<br/>
+*elseifBlock*\
+&nbsp;&nbsp;&nbsp;&nbsp;*elseifStatement* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *elseifBlock* ⟧\
 
-*elseifStatement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ELSEIF** *constExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFE** *constExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFB** *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFNB** *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDEF** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFNDEF** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDIF** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDIFI** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFIDN** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFIDNI** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIF1**<br/>
+*elseifStatement*\
+&nbsp;&nbsp;&nbsp;&nbsp;**ELSEIF** *constExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFE** *constExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFB** *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFNB** *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDEF** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFNDEF** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDIF** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFDIFI** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFIDN** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIFIDNI** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIF1**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **ELSEIF2**
 
-*endDir*<br/>
+*endDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**END** ⟦ *immExpr* ⟧ ;;
 
-*endpDir*<br/>
+*endpDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*procId* **ENDP** ;;
 
-*endsDir*<br/>
+*endsDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* **ENDS** ;;
 
-*equDir*<br/>
+*equDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*textMacroId* **EQU** *equType* ;;
 
-*equType*<br/>
+*equType*\
 &nbsp;&nbsp;&nbsp;&nbsp;*immExpr* | *textLiteral*
 
-*errorDir*<br/>
+*errorDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*errorOpt* ;;
 
-*errorOpt*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.ERR** ⟦ *textItem* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRE** *constExpr* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNZ** *constExpr* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRB** *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNB** *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDEF** *id* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNDEF** *id* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDIF** *textItem* , *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDIFI** *textItem* , *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRIDN** *textItem* , *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRIDNI** *textItem* , *textItem* ⟦ *optText* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.ERR1** ⟦ *textItem* ⟧<br/>
+*errorOpt*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.ERR** ⟦ *textItem* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRE** *constExpr* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNZ** *constExpr* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRB** *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNB** *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDEF** *id* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRNDEF** *id* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDIF** *textItem* , *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRDIFI** *textItem* , *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRIDN** *textItem* , *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERRIDNI** *textItem* , *textItem* ⟦ *optText* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.ERR1** ⟦ *textItem* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **.ERR2** ⟦ *textItem* ⟧
 
-*exitDir*<br/>
+*exitDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.EXIT**
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *expr* ⟧ ;;
 
-*exitmDir*<br/>
+*exitmDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;: EXITM | EXITM *textItem*
 
-*exponent*<br/>
+*exponent*\
 &nbsp;&nbsp;&nbsp;&nbsp;E ⟦ *sign* ⟧ *decNumber*
 
-*expr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**SHORT** *e05*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.TYPE** e01<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **OPATTR** *e01*<br/>
+*expr*\
+&nbsp;&nbsp;&nbsp;&nbsp;**SHORT** *e05*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.TYPE** e01\
+&nbsp;&nbsp;&nbsp;&nbsp;| **OPATTR** *e01*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *e01*
 
-*exprList*<br/>
+*exprList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*expr* | *exprList* , *expr*
 
-*externDef*<br/>
+*externDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *langType* ⟧ *id* ⟦ ( *altId* ) ⟧ : *externType*
 
-*externDir*<br/>
+*externDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*externKey* *externList* ;;
 
-*externKey*<br/>
+*externKey*\
 &nbsp;&nbsp;&nbsp;&nbsp;**EXTRN** | **EXTERN** | **EXTERNDEF**
 
-*externList*<br/>
+*externList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*externDef* | *externList* , ⟦ ;; ⟧ *externDef*
 
-*externType*<br/>
+*externType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ABS** | *qualifiedType*
 
-*fieldAlign*<br/>
+*fieldAlign*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*fieldInit*<br/>
+*fieldInit*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *initValue* ⟧ | *structInstance*
 
-*fieldInitList*<br/>
+*fieldInitList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*fieldInit* | *fieldInitList* , ⟦ ;; ⟧ *fieldInit*
 
-*fileChar*<br/>
+*fileChar*\
 &nbsp;&nbsp;&nbsp;&nbsp;*delimiter*
 
-*fileCharList*<br/>
+*fileCharList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*fileChar* | *fileCharList* *fileChar*
 
-*fileSpec*<br/>
+*fileSpec*\
 &nbsp;&nbsp;&nbsp;&nbsp;*fileCharList* | *textLiteral*
 
-*flagName*<br/>
+*flagName*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ZERO?** | **CARRY?** | **OVERFLOW?** | **SIGN?** | **PARITY?**
 
-*floatNumber*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *sign* ⟧ *decNumber* . ⟦ *decNumber* ⟧ ⟦ *exponent* ⟧<br/>
+*floatNumber*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *sign* ⟧ *decNumber* . ⟦ *decNumber* ⟧ ⟦ *exponent* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| *digits* R | *digits* r
 
-*forcDir*<br/>
+*forcDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**FORC** | **IRPC**
 
-*forDir*<br/>
+*forDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**FOR** | **IRP**
 
-*forParm*<br/>
+*forParm*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* ⟦ : *forParmType* ⟧
 
-*forParmType*<br/>
+*forParmType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**REQ** | = *textLiteral*
 
-*fpuRegister*<br/>
+*fpuRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ST** *expr*
 
-*frameExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**SEG** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **DGROUP** : *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister* : *id*<br/>
+*frameExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;**SEG** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **DGROUP** : *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *segmentRegister* : *id*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *id*
 
-*generalDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*modelDir* | *segOrderDir* | *nameDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *includeLibDir* | *commentDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *groupDir* | *assumeDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *structDir* | *recordDir* | *typedefDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *externDir* | *publicDir* | *commDir* | *protoTypeDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *equDir* | =Dir | *textDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *contextDir* | *optionDir* | *processorDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *radixDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *titleDir* | *pageDir* | *listDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *crefDir* | *echoDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *ifDir* | *errorDir* | *includeDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *macroDir* | *macroCall* | *macroRepeat* | *purgeDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *macroWhile* | *macroFor* | *macroForc*<br/>
+*generalDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*modelDir* | *segOrderDir* | *nameDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *includeLibDir* | *commentDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *groupDir* | *assumeDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *structDir* | *recordDir* | *typedefDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *externDir* | *publicDir* | *commDir* | *protoTypeDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *equDir* | =Dir | *textDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *contextDir* | *optionDir* | *processorDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *radixDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *titleDir* | *pageDir* | *listDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *crefDir* | *echoDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *ifDir* | *errorDir* | *includeDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *macroDir* | *macroCall* | *macroRepeat* | *purgeDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *macroWhile* | *macroFor* | *macroForc*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *aliasDir*
 
-*gpRegister*<br/>
+*gpRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;AX | EAX | CX | ECX | DX | EDX | BX | EBX | DI | EDI | SI | ESI | BP | EBP | SP | ESP | RSP | R8W | R8D | R9W | R9D | R12D | R13W | R13D | R14W | R14D
 
-*groupDir*<br/>
+*groupDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*groupId* **GROUP** *segIdList*
 
-*groupId*<br/>
+*groupId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*hexdigit*<br/>
+*hexdigit*\
 &nbsp;&nbsp;&nbsp;&nbsp;a | b | c | d | e | f | A | B | C | D | E | F
 
-*id*<br/>
+*id*\
 &nbsp;&nbsp;&nbsp;&nbsp;The first character of the identifier can be an upper or lower-case alphabetic character (`[A–Za-z]`) or any of these four characters: `@ _ $ ?` The remaining characters can be any of those same characters or a decimal digit (`[0–9]`). Maximum length is 247 characters.
 
-*idList*<br/>
+*idList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* | *idList* , *id*
 
-*ifDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifStatement* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *elseifBlock* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **ELSE** ;; <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directiveList* ⟧ ;;<br/>
+*ifDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*ifStatement* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *elseifBlock* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ **ELSE** ;; \
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList* ⟧ ;;\
 
-*ifStatement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**IF** *constExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFE** *constExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFB** *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFNB** *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFDEF** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFNDEF** *id*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFDIF** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFDIFI** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFIDN** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IFIDNI** *textItem* , *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **IF1**<br/>
+*ifStatement*\
+&nbsp;&nbsp;&nbsp;&nbsp;**IF** *constExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFE** *constExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFB** *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFNB** *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFDEF** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFNDEF** *id*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFDIF** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFDIFI** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFIDN** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IFIDNI** *textItem* , *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **IF1**\
 &nbsp;&nbsp;&nbsp;&nbsp;| **IF2**
 
-*immExpr*<br/>
+*immExpr*\
 &nbsp;&nbsp;&nbsp;&nbsp;*expr*
 
-*includeDir*<br/>
+*includeDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**INCLUDE** *fileSpec* ;;
 
-*includeLibDir*<br/>
+*includeLibDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**INCLUDELIB** *fileSpec* ;;
 
-*initValue*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*immExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *string*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| ?<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *scalarInstList* )<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *floatNumber*<br/>
+*initValue*\
+&nbsp;&nbsp;&nbsp;&nbsp;*immExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *string*\
+&nbsp;&nbsp;&nbsp;&nbsp;| ?\
+&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *scalarInstList* )\
+&nbsp;&nbsp;&nbsp;&nbsp;| *floatNumber*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *bcdConst*
 
-*inSegDir*<br/>
+*inSegDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *labelDef* ⟧ *inSegmentDir*
 
-*inSegDirList*<br/>
+*inSegDirList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*inSegDir* | *inSegDirList* *inSegDir*
 
-*inSegmentDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*instruction*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *dataDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *controlDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *startupDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *exitDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *labelDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *procDir* ⟦ *localDirList* ⟧ ⟦ *inSegDirList* ⟧ *endpDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *invokeDir*<br/>
+*inSegmentDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*instruction*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *dataDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *controlDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *startupDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *exitDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *labelDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *procDir* ⟦ *localDirList* ⟧ ⟦ *inSegDirList* ⟧ *endpDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *invokeDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *generalDir*
 
-*instrPrefix*<br/>
+*instrPrefix*\
 &nbsp;&nbsp;&nbsp;&nbsp;**REP** | **REPE** | **REPZ** | **REPNE** | **REPNZ** | **LOCK**
 
-*instruction*<br/>
+*instruction*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *instrPrefix* ⟧ *asmInstruction*
 
-*invokeArg*<br/>
+*invokeArg*\
 &nbsp;&nbsp;&nbsp;&nbsp;*register* :: *register* | *expr* | **ADDR** *expr*
 
-*invokeDir*<br/>
+*invokeDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**INVOKE** *expr* ⟦ , ⟦ ;; ⟧ *invokeList* ⟧ ;;
 
-*invokeList*<br/>
+*invokeList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*invokeArg* | *invokeList* , ⟦ ;; ⟧ *invokeArg*
 
-*keyword*<br/>
+*keyword*\
 &nbsp;&nbsp;&nbsp;&nbsp;Any reserved word.
 
-*keywordList*<br/>
+*keywordList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*keyword* | *keyword* *keywordList*
 
-*labelDef*<br/>
+*labelDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* : | *id* :: | @@:
 
-*labelDir*<br/>
+*labelDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* **LABEL** *qualifiedType* ;;
 
-*langType*<br/>
+*langType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**C** | **PASCAL** | **FORTRAN** | **BASIC** | **SYSCALL** | **STDCALL**
 
-*listDir*<br/>
+*listDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*listOption* ;;
 
-*listOption*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.LIST**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLIST**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.XLIST**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTALL**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTIF**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.LFCOND**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLISTIF**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.SFCOND**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.TFCOND**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTMACROALL** | **.LALL**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLISTMACRO** | **.SALL**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTMACRO** | **.XALL**<br/>
+*listOption*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.LIST**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLIST**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.XLIST**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTALL**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTIF**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.LFCOND**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLISTIF**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.SFCOND**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.TFCOND**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTMACROALL** | **.LALL**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.NOLISTMACRO** | **.SALL**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.LISTMACRO** | **.XALL**\
 
-*localDef*<br/>
+*localDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;**LOCAL** *idList* ;;
 
-*localDir*<br/>
+*localDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**LOCAL** *parmList* ;;
 
-*localDirList*<br/>
+*localDirList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*localDir* | *localDirList* *localDir*
 
-*localList*<br/>
+*localList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*localDef* | *localList* *localDef*
 
-*macroArg*<br/>
- % *constExpr*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| % *textMacroId*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| %*macroFuncId* ( *macroArgList* )<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *string*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *arbitraryText*<br/>
+*macroArg*\
+ % *constExpr*\
+&nbsp;&nbsp;&nbsp;&nbsp;| % *textMacroId*\
+&nbsp;&nbsp;&nbsp;&nbsp;| %*macroFuncId* ( *macroArgList* )\
+&nbsp;&nbsp;&nbsp;&nbsp;| *string*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *arbitraryText*\
 &nbsp;&nbsp;&nbsp;&nbsp;| < *arbitraryText* >
 
-*macroArgList*<br/>
+*macroArgList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*macroArg* | *macroArgList* , *macroArg*
 
-*macroBody*<br/>
+*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *localList* ⟧ *macroStmtList*
 
-*macroCall*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*id* *macroArgList* ;;<br/>
+*macroCall*\
+&nbsp;&nbsp;&nbsp;&nbsp;*id* *macroArgList* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;| *id* ( *macroArgList* )
 
-*macroDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*id* **MACRO** ⟦ *macroParmList* ⟧ ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*<br/>
+*macroDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*id* **MACRO** ⟦ *macroParmList* ⟧ ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDM** ;;
 
-*macroFor*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*forDir* *forParm* , < *macroArgList* > ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*<br/>
+*macroFor*\
+&nbsp;&nbsp;&nbsp;&nbsp;*forDir* *forParm* , < *macroArgList* > ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDM** ;;
 
-*macroForc*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*forcDir* *id* , *textLiteral* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*<br/>
+*macroForc*\
+&nbsp;&nbsp;&nbsp;&nbsp;*forcDir* *id* , *textLiteral* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDM** ;;
 
-*macroFuncId*<br/>
+*macroFuncId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*macroId*<br/>
+*macroId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*macroProcId* | *macroFuncId*
 
-*macroIdList*<br/>
+*macroIdList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*macroId* | *macroIdList* , *macroId*
 
-*macroLabel*<br/>
+*macroLabel*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*macroParm*<br/>
+*macroParm*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* ⟦ : *parmType* ⟧
 
-*macroParmList*<br/>
+*macroParmList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*macroParm* | *macroParmList* , ⟦ ;; ⟧ *macroParm*
 
-*macroProcId*<br/>
+*macroProcId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*macroRepeat*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*repeatDir* *constExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*<br/>
+*macroRepeat*\
+&nbsp;&nbsp;&nbsp;&nbsp;*repeatDir* *constExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDM** ;;
 
-*macroStmt*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*directive* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *exitmDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| : *macroLabel*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **GOTO**<br/>
+*macroStmt*\
+&nbsp;&nbsp;&nbsp;&nbsp;*directive* \
+&nbsp;&nbsp;&nbsp;&nbsp;| *exitmDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| : *macroLabel*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **GOTO**\
 &nbsp;&nbsp;&nbsp;&nbsp;*macroLabel*
 
-*macroStmtList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroStmt* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *macroStmtList* *macroStmt* ;;<br/>
+*macroStmtList*\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroStmt* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;| *macroStmtList* *macroStmt* ;;\
 
-*macroWhile*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**WHILE** *constExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*<br/>
+*macroWhile*\
+&nbsp;&nbsp;&nbsp;&nbsp;**WHILE** *constExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*macroBody*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDM** ;;
 
-*mapType*<br/>
+*mapType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ALL** | **NONE** | **NOTPUBLIC**
 
-*memOption*<br/>
+*memOption*\
 &nbsp;&nbsp;&nbsp;&nbsp;**TINY** | **SMALL** | **MEDIUM** | **COMPACT** | **LARGE** | **HUGE** | **FLAT**
 
-*mnemonic*<br/>
+*mnemonic*\
 &nbsp;&nbsp;&nbsp;&nbsp;Instruction name.
 
-*modelDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.MODEL**<br/>
+*modelDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.MODEL**\
 &nbsp;&nbsp;&nbsp;&nbsp;*memOption* ⟦ , *modelOptlist* ⟧ ;;
 
-*modelOpt*<br/>
+*modelOpt*\
 &nbsp;&nbsp;&nbsp;&nbsp;*langType* | *stackOption*
 
-*modelOptlist*<br/>
+*modelOptlist*\
 &nbsp;&nbsp;&nbsp;&nbsp;*modelOpt* | *modelOptlist* , *modelOpt*
 
-*module*<br/>
+*module*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *directiveList* ⟧ *endDir*
 
-*mulOp*<br/>
+*mulOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;\* | / | **MOD**
 
-*nameDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**NAME**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*id* ;;<br/>
+*nameDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**NAME**\
+&nbsp;&nbsp;&nbsp;&nbsp;*id* ;;\
 
-*nearfar*<br/>
+*nearfar*\
 &nbsp;&nbsp;&nbsp;&nbsp;**NEAR** | **FAR**
 
-*nestedStruct*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structHdr* ⟦ *id* ⟧ ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structBody*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**ENDS** ;;<br/>
+*nestedStruct*\
+&nbsp;&nbsp;&nbsp;&nbsp;*structHdr* ⟦ *id* ⟧ ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*structBody*\
+&nbsp;&nbsp;&nbsp;&nbsp;**ENDS** ;;\
 
-*offsetDir*<br/>
+*offsetDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*offsetDirType* ;;
 
-*offsetDirType*<br/>
+*offsetDirType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**EVEN** | **ORG** *immExpr* | **ALIGN** ⟦ *constExpr* ⟧
 
-*offsetType*<br/>
+*offsetType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**GROUP** | **SEGMENT** | **FLAT**
 
-*oldRecordFieldList*<br/>
+*oldRecordFieldList*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *constExpr* ⟧ | *oldRecordFieldList* , ⟦ *constExpr* ⟧
 
-*optionDir*<br/>
+*optionDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**OPTION** *optionList* ;;
 
-*optionItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**CASEMAP** : *mapType*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **DOTNAME** | **NODOTNAME**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **EMULATOR** | **NOEMULATOR**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **EPILOGUE** : *macroId*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **EXPR16** | **EXPR32**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **LANGUAGE** : *langType*<br/>
+*optionItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;**CASEMAP** : *mapType*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **DOTNAME** | **NODOTNAME**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **EMULATOR** | **NOEMULATOR**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **EPILOGUE** : *macroId*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **EXPR16** | **EXPR32**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **LANGUAGE** : *langType*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **LJMP**
-| **NOLJMP**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **M510** | **NOM510**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **NOKEYWORD** : < *keywordList* ><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **NOSIGNEXTEND**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **OFFSET** : *offsetType*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **OLDMACROS** | **NOOLDMACROS**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **OLDSTRUCTS** | **NOOLDSTRUCTS**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **PROC** : *oVisibility*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **PROLOGUE** : *macroId*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **READONLY** | **NOREADONLY**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SCOPED** | **NOSCOPED**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SEGMENT** : *segSize*<br/>
+| **NOLJMP**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **M510** | **NOM510**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **NOKEYWORD** : < *keywordList* >\
+&nbsp;&nbsp;&nbsp;&nbsp;| **NOSIGNEXTEND**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **OFFSET** : *offsetType*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **OLDMACROS** | **NOOLDMACROS**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **OLDSTRUCTS** | **NOOLDSTRUCTS**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **PROC** : *oVisibility*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **PROLOGUE** : *macroId*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **READONLY** | **NOREADONLY**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SCOPED** | **NOSCOPED**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SEGMENT** : *segSize*\
 &nbsp;&nbsp;&nbsp;&nbsp;| **SETIF2** : bool
 
-*optionList*<br/>
+*optionList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*optionItem* | *optionList* , ⟦ ;; ⟧ *optionItem*
 
-*optText*<br/>
+*optText*\
 &nbsp;&nbsp;&nbsp;&nbsp;, *textItem*
 
-*orOp*<br/>
+*orOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;**OR** | **XOR**
 
-*oVisibility*<br/>
+*oVisibility*\
 &nbsp;&nbsp;&nbsp;&nbsp;**PUBLIC** | **PRIVATE** | **EXPORT**
 
-*pageDir*<br/>
+*pageDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**PAGE** ⟦ *pageExpr* ⟧ ;;
 
-*pageExpr*<br/>
+*pageExpr*\
 &nbsp;&nbsp;&nbsp;&nbsp;\+ | ⟦ *pageLength* ⟧ ⟦ , *pageWidth* ⟧
 
-*pageLength*<br/>
+*pageLength*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*pageWidth*<br/>
+*pageWidth*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*parm*<br/>
+*parm*\
 &nbsp;&nbsp;&nbsp;&nbsp;*parmId* ⟦ : *qualifiedType* ⟧ | *parmId* ⟦ *constExpr* ⟧ ⟦ : *qualifiedType* ⟧
 
-*parmId*<br/>
+*parmId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*parmList*<br/>
+*parmList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*parm* | *parmList* , ⟦ ;; ⟧ *parm*
 
-*parmType*<br/>
+*parmType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**REQ** | = *textLiteral* | **VARARG**
 
-*pOptions*<br/>
+*pOptions*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *distance* ⟧ ⟦ *langType* ⟧ ⟦ *oVisibility* ⟧
 
-*primary*<br/>
+*primary*\
 &nbsp;&nbsp;&nbsp;&nbsp;*expr* *binaryOp* *expr* | *flagName* | *expr*
 
-*procDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*procId* **PROC**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *pOptions* ⟧ ⟦ < *macroArgList* > ⟧<br/>
+*procDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*procId* **PROC**\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *pOptions* ⟧ ⟦ < *macroArgList* > ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *usesRegs* ⟧ ⟦ *procParmList* ⟧
 
-*processor*<br/>
- .8086<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| .186<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| .286 | .286C | .286P<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| .386 | .386C | .386P<br/>
+*processor*\
+ .8086\
+&nbsp;&nbsp;&nbsp;&nbsp;| .186\
+&nbsp;&nbsp;&nbsp;&nbsp;| .286 | .286C | .286P\
+&nbsp;&nbsp;&nbsp;&nbsp;| .386 | .386C | .386P\
 &nbsp;&nbsp;&nbsp;&nbsp;| .486 | .486P
 
-*processorDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*processor* ;;<br/>
+*processorDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*processor* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;| *coprocessor* ;;
 
-*procId*<br/>
+*procId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*procItem*<br/>
+*procItem*\
 &nbsp;&nbsp;&nbsp;&nbsp;*instrPrefix* | *dataDir* | *labelDir* | *offsetDir* | *generalDir*
 
-*procParmList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ *parmList* ⟧<br/>
+*procParmList*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ *parmList* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ *parmId* :VARARG⟧
 
-*protoArg*<br/>
+*protoArg*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *id* ⟧ : *qualifiedType*
 
-*protoArgList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ *protoList* ⟧<br/>
+*protoArgList*\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ *protoList* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ , ⟦ ;; ⟧ ⟦ *id* ⟧ :VARARG ⟧
 
-*protoList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*protoArg*<br/>
+*protoList*\
+&nbsp;&nbsp;&nbsp;&nbsp;*protoArg*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *protoList* , ⟦ ;; ⟧ *protoArg*
 
-*protoSpec*<br/>
+*protoSpec*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *distance* ⟧ ⟦ *langType* ⟧ ⟦ *protoArgList* ⟧ | *typeId*
 
-*protoTypeDir*<br/>
+*protoTypeDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* **PROTO** *protoSpec*
 
-*pubDef*<br/>
+*pubDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *langType* ⟧ *id*
 
-*publicDir*<br/>
+*publicDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**PUBLIC** *pubList* ;;
 
-*pubList*<br/>
+*pubList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*pubDef* | *pubList* , ⟦ ;; ⟧ *pubDef*
 
-*purgeDir*<br/>
+*purgeDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**PURGE** *macroIdList*
 
-*qualifiedType*<br/>
+*qualifiedType*\
 &nbsp;&nbsp;&nbsp;&nbsp;*type* | ⟦ *distance* ⟧ **PTR** ⟦ *qualifiedType* ⟧
 
-*qualifier*<br/>
+*qualifier*\
 &nbsp;&nbsp;&nbsp;&nbsp;*qualifiedType* | **PROTO** *protoSpec*
 
-*quote*<br/>
+*quote*\
 &nbsp;&nbsp;&nbsp;&nbsp;“ | ‘
 
-*qwordRegister*<br/>
+*qwordRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;RAX | RCX | RDX | RBX | RDI | RSI | RBP | R8 | R9 | R10 | R11 | R12 | R13 | R14 | R15
 
-*radixDir*<br/>
+*radixDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.RADIX** *constExpr* ;;
 
-*radixOverride*<br/>
+*radixOverride*\
 &nbsp;&nbsp;&nbsp;&nbsp;h | o | q | t | y | H | O | Q | T | Y
 
-*recordConst*<br/>
+*recordConst*\
 &nbsp;&nbsp;&nbsp;&nbsp;*recordTag* { *oldRecordFieldList* } | *recordTag* < *oldRecordFieldList* >
 
-*recordDir*<br/>
+*recordDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*recordTag* **RECORD** *bitDefList* ;;
 
-*recordFieldList*<br/>
+*recordFieldList*\
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *constExpr* ⟧ | *recordFieldList* , ⟦ ;; ⟧ ⟦ *constExpr* ⟧
 
-*recordInstance*<br/>
- { ⟦ ;; ⟧ *recordFieldList* ⟦ ;; ⟧ }<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| < *oldRecordFieldList* ><br/>
+*recordInstance*\
+ { ⟦ ;; ⟧ *recordFieldList* ⟦ ;; ⟧ }\
+&nbsp;&nbsp;&nbsp;&nbsp;| < *oldRecordFieldList* >\
 &nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *recordInstance* )
 
-*recordInstList*<br/>
+*recordInstList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*recordInstance* | *recordInstList* , ⟦ ;; ⟧ *recordInstance*
 
-*recordTag*<br/>
+*recordTag*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*register*<br/>
+*register*\
 &nbsp;&nbsp;&nbsp;&nbsp;*specialRegister* | *gpRegister* | *byteRegister* | *qwordRegister* |  *fpuRegister* | *SIMDRegister* | *segmentRegister*
 
-*regList*<br/>
+*regList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*register* | *regList* *register*
 
-*relOp*<br/>
+*relOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;EQ | NE | LT | LE | GT | GE
 
-*repeatBlock*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.REPEAT** ;;<br/>
+*repeatBlock*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.REPEAT** ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;*blockStatements* ;;
 untilDir ;;
 
-*repeatDir*<br/>
+*repeatDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**REPEAT** | **REPT**
 
-*scalarInstList*<br/>
+*scalarInstList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*initValue* | *scalarInstList* , ⟦ ;; ⟧ *initValue*
 
-*segAlign*<br/>
+*segAlign*\
 &nbsp;&nbsp;&nbsp;&nbsp;**BYTE** | **WORD** | **DWORD** | **PARA** | **PAGE**
 
-*segAttrib*<br/>
+*segAttrib*\
 &nbsp;&nbsp;&nbsp;&nbsp;**PUBLIC** | **STACK** | **COMMON** | **MEMORY** | **AT** *constExpr* | **PRIVATE**
 
-*segDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.CODE**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *segId* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.DATA**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;|  **.DATA?**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.CONST**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **.FARDATA**⟦ *segId* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;|  **.FARDATA?** ⟦ *segId* ⟧<br/>
+*segDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.CODE**\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦ *segId* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.DATA**\
+&nbsp;&nbsp;&nbsp;&nbsp;|  **.DATA?**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.CONST**\
+&nbsp;&nbsp;&nbsp;&nbsp;| **.FARDATA**⟦ *segId* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;|  **.FARDATA?** ⟦ *segId* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **.STACK** ⟦ *constExpr* ⟧
 
-*segId*<br/>
+*segId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*segIdList*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*segId*<br/>
+*segIdList*\
+&nbsp;&nbsp;&nbsp;&nbsp;*segId*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *segIdList* , *segId*
 
-*segmentDef*<br/>
+*segmentDef*\
 &nbsp;&nbsp;&nbsp;&nbsp;*segmentDir* ⟦ *inSegDirList* ⟧ *endsDir* | *simpleSegDir* ⟦ *inSegDirList* ⟧ ⟦ *endsDir* ⟧
 
-*segmentDir*<br/>
+*segmentDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*segId* **SEGMENT** ⟦ *segOptionList* ⟧ ;;
 
-*segmentRegister*<br/>
+*segmentRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;**CS** | **DS** | **ES** | **FS** | **GS** | **SS**
 
-*segOption*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*segAlign*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *segRO*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *segAttrib*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *segSize*<br/>
+*segOption*\
+&nbsp;&nbsp;&nbsp;&nbsp;*segAlign*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *segRO*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *segAttrib*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *segSize*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *className*
 
-*segOptionList*<br/>
+*segOptionList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*segOption* | *segOptionList* *segOption*
 
-*segOrderDir*<br/>
+*segOrderDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.ALPHA** | **.SEQ** | **.DOSSEG** | **DOSSEG**
 
-*segRO*<br/>
+*segRO*\
 &nbsp;&nbsp;&nbsp;&nbsp;**READONLY**
 
-*segSize*<br/>
+*segSize*\
 &nbsp;&nbsp;&nbsp;&nbsp;**USE16** | **USE32** | **FLAT**
 
-*shiftOp*<br/>
+*shiftOp*\
 &nbsp;&nbsp;&nbsp;&nbsp;**SHR** | **SHL**
 
-*sign*<br/>
+*sign*\
  - | +
 
-*simdRegister*<br/>
+*simdRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;MM0 | MM1 | MM2 | MM3 | MM4 | MM5 | MM6 | MM7 | xmmRegister | YMM0 | YMM1 | YMM2 | YMM3 | YMM4 | YMM5 | YMM6 | YMM7 | YMM8 | YMM9 | YMM10 | YMM11 | YMM12 | YMM13 | YMM14 | YMM15
 
-*simpleExpr*<br/>
+*simpleExpr*\
  ( *cExpr* ) | *primary*
 
-*simpleSegDir*<br/>
+*simpleSegDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*segDir* ;;
 
-*sizeArg*<br/>
+*sizeArg*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* | *type* | *e10*
 
-*specialChars*<br/>
- : | . | ⟦ | ⟧ | ( | ) | < | > | { | }<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| + | - | / | * | & | % | !<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| ’ | \ | = | ; | , | “<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *whiteSpaceCharacter*<br/>
+*specialChars*\
+ : | . | ⟦ | ⟧ | ( | ) | < | > | { | }\
+&nbsp;&nbsp;&nbsp;&nbsp;| + | - | / | * | & | % | !\
+&nbsp;&nbsp;&nbsp;&nbsp;| ’ | \ | = | ; | , | “\
+&nbsp;&nbsp;&nbsp;&nbsp;| *whiteSpaceCharacter*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *endOfLine*
 
-*specialRegister*<br/>
+*specialRegister*\
 &nbsp;&nbsp;&nbsp;&nbsp;CR0 | CR2 | CR3 | DR0 | DR1 | DR2 | DR3 | DR6 | DR7 | TR3 | TR4 | TR5 | TR6 | TR7
 
-*stackOption*<br/>
+*stackOption*\
 &nbsp;&nbsp;&nbsp;&nbsp;**NEARSTACK** | **FARSTACK**
 
-*startupDir*<br/>
+*startupDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;**.STARTUP** ;;
 
-*stext*<br/>
+*stext*\
 &nbsp;&nbsp;&nbsp;&nbsp;*stringChar* | *stext* *stringChar*
 
-*string*<br/>
+*string*\
 &nbsp;&nbsp;&nbsp;&nbsp;*quote* ⟦ *stext* ⟧ *quote*
 
-*stringChar*<br/>
+*stringChar*\
 &nbsp;&nbsp;&nbsp;&nbsp;*quote* *quote* | Any character except quote.
 
-*structBody*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structItem* ;;<br/>
+*structBody*\
+&nbsp;&nbsp;&nbsp;&nbsp;*structItem* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;| *structBody* *structItem* ;;
 
-*structDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structTag* *structHdr* ⟦ *fieldAlign* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;⟦, **NONUNIQUE** ⟧ ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structBody*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structTag*<br/>
+*structDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;*structTag* *structHdr* ⟦ *fieldAlign* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;⟦, **NONUNIQUE** ⟧ ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*structBody*\
+&nbsp;&nbsp;&nbsp;&nbsp;*structTag*\
 &nbsp;&nbsp;&nbsp;&nbsp;**ENDS** ;;
 
-*structHdr*<br/>
+*structHdr*\
 &nbsp;&nbsp;&nbsp;&nbsp;**STRUC** | **STRUCT** | **UNION**
 
-*structInstance*<br/>
- < ⟦ *fieldInitList* ⟧ ><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| { ⟦ ;; ⟧ ⟦ *fieldInitList* ⟧ ⟦ ;; ⟧ }<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *structInstList* )<br/>
+*structInstance*\
+ < ⟦ *fieldInitList* ⟧ >\
+&nbsp;&nbsp;&nbsp;&nbsp;| { ⟦ ;; ⟧ ⟦ *fieldInitList* ⟧ ⟦ ;; ⟧ }\
+&nbsp;&nbsp;&nbsp;&nbsp;| *constExpr* **DUP** ( *structInstList* )\
 
-*structInstList*<br/>
+*structInstList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*structInstance* | *structInstList* , ⟦ ;; ⟧ *structInstance*
 
-*structItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*dataDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *generalDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*<br/>
+*structItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;*dataDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *generalDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *offsetDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *nestedStruct*
 
-*structTag*<br/>
+*structTag*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*term*<br/>
+*term*\
 &nbsp;&nbsp;&nbsp;&nbsp;*simpleExpr* | ! *simpleExpr*
 
-*text*<br/>
+*text*\
 &nbsp;&nbsp;&nbsp;&nbsp;*textLiteral* | *text* character | ! *character* *text* | *character* | !*character*
 
-*textDir*<br/>
+*textDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id* *textMacroDir* ;;
 
-*textItem*<br/>
+*textItem*\
 &nbsp;&nbsp;&nbsp;&nbsp;*textLiteral* | *textMacroId* | % *constExpr*
 
-*textLen*<br/>
+*textLen*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*textList*<br/>
+*textList*\
 &nbsp;&nbsp;&nbsp;&nbsp;*textItem* | *textList* , ⟦ ;; ⟧ *textItem*
 
-*textLiteral*<br/>
+*textLiteral*\
 &nbsp;&nbsp;&nbsp;&nbsp;< *text* >;;
 
-*textMacroDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**CATSTR** ⟦ *textList* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **TEXTEQU** ⟦ *textList* ⟧<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SIZESTR** *textItem*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| **SUBSTR** *textItem* , *textStart* ⟦ , *textLen* ⟧<br/>
+*textMacroDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**CATSTR** ⟦ *textList* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **TEXTEQU** ⟦ *textList* ⟧\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SIZESTR** *textItem*\
+&nbsp;&nbsp;&nbsp;&nbsp;| **SUBSTR** *textItem* , *textStart* ⟦ , *textLen* ⟧\
 &nbsp;&nbsp;&nbsp;&nbsp;| **INSTR** ⟦ *textStart* , ⟧ *textItem* , *textItem*
 
-*textMacroId*<br/>
+*textMacroId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*textStart*<br/>
+*textStart*\
 &nbsp;&nbsp;&nbsp;&nbsp;*constExpr*
 
-*titleDir*<br/>
+*titleDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*titleType* *arbitraryText* ;;
 
-*titleType*<br/>
+*titleType*\
 &nbsp;&nbsp;&nbsp;&nbsp;**TITLE** | **SUBTITLE** | **SUBTTL**
 
-*type*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*structTag*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *unionTag*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *recordTag*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *distance*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;| *dataType*<br/>
+*type*\
+&nbsp;&nbsp;&nbsp;&nbsp;*structTag*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *unionTag*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *recordTag*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *distance*\
+&nbsp;&nbsp;&nbsp;&nbsp;| *dataType*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *typeId*
 
-*typedefDir*<br/>
+*typedefDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*typeId* **TYPEDEF** qualifier
 
-*typeId*<br/>
+*typeId*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*unionTag*<br/>
+*unionTag*\
 &nbsp;&nbsp;&nbsp;&nbsp;*id*
 
-*untilDir*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.UNTIL**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;<br/>
+*untilDir*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.UNTIL**\
+&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;**.UNTILCXZ** ⟦ *cxzExpr* ⟧ ;;
 
-*usesRegs*<br/>
+*usesRegs*\
 &nbsp;&nbsp;&nbsp;&nbsp;**USES** *regList*
 
-*whileBlock*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**.WHILE**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*blockStatements* ;;<br/>
+*whileBlock*\
+&nbsp;&nbsp;&nbsp;&nbsp;**.WHILE**\
+&nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;\
+&nbsp;&nbsp;&nbsp;&nbsp;*blockStatements* ;;\
 &nbsp;&nbsp;&nbsp;&nbsp;**.ENDW**
 
-*whiteSpaceCharacter*<br/>
+*whiteSpaceCharacter*\
 &nbsp;&nbsp;&nbsp;&nbsp;ASCII 8, 9, 11–13, 26, 32
 
-*xmmRegister*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;XMM0 | XMM1 | XMM2 | XMM3 | XMM4 | XMM5 | XMM6 | XMM7 | XMM8 | XMM9 | XMM10 | XMM11 | XMM12 | XMM13 | XMM14 | XMM15<br/>
+*xmmRegister*\
+&nbsp;&nbsp;&nbsp;&nbsp;XMM0 | XMM1 | XMM2 | XMM3 | XMM4 | XMM5 | XMM6 | XMM7 | XMM8 | XMM9 | XMM10 | XMM11 | XMM12 | XMM13 | XMM14 | XMM15\
 

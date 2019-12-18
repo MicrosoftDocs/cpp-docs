@@ -19,5 +19,5 @@ Returns the section relative offset of expression relative to the section contai
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

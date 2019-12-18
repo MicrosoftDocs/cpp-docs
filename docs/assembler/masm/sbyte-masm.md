@@ -17,5 +17,5 @@ Allocates and optionally initializes a signed byte of storage for each *initiali
 
 [Directives Reference](directives-reference.md)\
 [BYTE](byte-masm.md)\
-[DB](db.md)<br/>
+[DB](db.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

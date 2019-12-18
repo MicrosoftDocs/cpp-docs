@@ -15,5 +15,5 @@ Returns the offset of *expression*. Same as **OFFSET**, but it generates a loade
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

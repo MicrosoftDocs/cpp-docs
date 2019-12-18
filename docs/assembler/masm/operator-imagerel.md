@@ -21,5 +21,5 @@ IMAGEREL is available only with COFF object emission.
 
 ## See also
 
-[Operators reference](operators-reference.md)<br/>
+[Operators reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

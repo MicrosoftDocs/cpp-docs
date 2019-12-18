@@ -15,5 +15,5 @@ See the [INVOKE](invoke.md) directive.
 
 ## See also
 
-[Operators Reference](operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -15,5 +15,5 @@ Bitwise **AND**. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [
 
 ## See also
 
-[Operators Reference](operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

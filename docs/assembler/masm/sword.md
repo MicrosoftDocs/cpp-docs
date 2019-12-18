@@ -16,5 +16,5 @@ Allocates and optionally initializes a signed word (2 bytes) of storage for each
 ## See also
 
 [Directives reference](directives-reference.md)\
-[WORD](word.md)<br/>
+[WORD](word.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

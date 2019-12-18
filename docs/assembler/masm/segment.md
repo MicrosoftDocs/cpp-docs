@@ -17,7 +17,7 @@ Defines a program segment called *name* having segment attributes
 
 #### Parameters
 
-*align*<br/>
+*align*\
 The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
 
 |Align Type|Starting Address|
