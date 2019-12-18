@@ -15,9 +15,9 @@ Starts listing of macro expansion statements that generate code or data.
 
 ## Remarks
 
-This is the default. Same as [.XALL](../../assembler/masm/dot-xall.md).
+This is the default. Same as [.XALL](dot-xall.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

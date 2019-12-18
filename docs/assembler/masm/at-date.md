@@ -15,5 +15,5 @@ The system date in the format mm/dd/yy (text macro).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

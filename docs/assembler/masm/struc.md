@@ -7,7 +7,7 @@ ms.assetid: 1c7c131e-b787-4902-8db7-3a2342e523f9
 ---
 # STRUC
 
-See [STRUCT](../../assembler/masm/struct-masm.md).
+See [STRUCT](struct-masm.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [STRUCT](../../assembler/masm/struct-masm.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

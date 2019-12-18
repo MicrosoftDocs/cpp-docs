@@ -19,7 +19,7 @@ Can also be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[DB](../../assembler/masm/db.md)\
-[SBYTE](../../assembler/masm/sbyte-masm.md)<br/>
+[Directives Reference](directives-reference.md)\
+[DB](db.md)\
+[SBYTE](sbyte-masm.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

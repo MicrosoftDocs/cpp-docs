@@ -13,9 +13,9 @@ ms.assetid: 23d7baf0-6a68-44d9-a980-33100a977fc6
 
 ## Remarks
 
-See [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+See [.LISTMACROALL](dot-listmacroall.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

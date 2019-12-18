@@ -15,5 +15,5 @@ Allocates and optionally initializes a 10-byte floating-point number for each *i
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -15,5 +15,5 @@ The base name of the main file being assembled (text macro).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -15,9 +15,9 @@ Starts listing of statements in false conditional blocks.
 
 ## Remarks
 
-Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).
+Same as [.LFCOND](dot-lfcond.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

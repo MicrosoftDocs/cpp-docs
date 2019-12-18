@@ -7,7 +7,7 @@ ms.assetid: 5184ac8d-c433-4136-81b2-3e7f6082415d
 ---
 # \@fardata?
 
-The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fardata-q.md) directive (text macro).
+The name of the segment defined by the [.FARDATA?](dot-fardata-q.md) directive (text macro).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fard
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

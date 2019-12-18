@@ -7,7 +7,7 @@ ms.assetid: bf4a4be6-d019-40df-a966-8f8f34f775ea
 ---
 # operator .TYPE
 
-See [OPATTR](../../assembler/masm/operator-opattr.md).
+See [OPATTR](operator-opattr.md).
 
 ## Syntax
 

@@ -35,5 +35,5 @@ Indicates the frame type.  See [FPO_DATA](/windows/win32/api/winnt/ns-winnt-fpo_
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

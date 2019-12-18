@@ -7,7 +7,7 @@ ms.assetid: 9c2a46e4-3222-4a5b-baa2-07bdb62b7d03
 ---
 # operator ADDR
 
-See the [INVOKE](../../assembler/masm/invoke.md) directive.
+See the [INVOKE](invoke.md) directive.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See the [INVOKE](../../assembler/masm/invoke.md) directive.
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

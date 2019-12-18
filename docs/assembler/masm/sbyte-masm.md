@@ -15,7 +15,7 @@ Allocates and optionally initializes a signed byte of storage for each *initiali
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[BYTE](../../assembler/masm/byte-masm.md)\
-[DB](../../assembler/masm/db.md)<br/>
+[Directives Reference](directives-reference.md)\
+[BYTE](byte-masm.md)\
+[DB](db.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

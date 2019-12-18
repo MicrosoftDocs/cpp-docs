@@ -13,9 +13,9 @@ ms.assetid: 090f8ec7-28e7-451e-88a8-29c2e77fb956
 
 ## Remarks
 
-See [EXTERN](../../assembler/masm/extern-masm.md).
+See [EXTERN](extern-masm.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

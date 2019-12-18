@@ -7,7 +7,7 @@ ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
 ---
 # PROC
 
-Marks start and end of a procedure block called *label*. The statements in the block can be called with the **CALL** instruction or [INVOKE](../../assembler/masm/invoke.md) directive.
+Marks start and end of a procedure block called *label*. The statements in the block can be called with the **CALL** instruction or [INVOKE](invoke.md) directive.
 
 ## Syntax
 
@@ -22,9 +22,9 @@ The ⟦*distance*⟧ and ⟦*language-type*⟧ arguments are valid only in 32-bi
 
 ⟦**FRAME** ⟦__:__*ehandler-address*⟧ ⟧ is only valid with ml64.exe, and causes MASM to generate a function table entry in .pdata and unwind information in .xdata for a function's structured exception handling unwind behavior.
 
-When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive.
+When the **FRAME** attribute is used, it must be followed by an [.ENDPROLOG](dot-endprolog.md) directive.
 
-See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
+See [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md) for more information on using ml64.exe.
 
 ## Example
 
@@ -73,5 +73,5 @@ Dumping Unwind Information for file ex2.exe
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

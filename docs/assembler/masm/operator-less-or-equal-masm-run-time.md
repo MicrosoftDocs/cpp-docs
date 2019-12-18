@@ -7,7 +7,7 @@ ms.assetid: a5676804-07ef-40ab-8251-cde5b11ebdf9
 ---
 # operator &lt;= (MASM Run Time)
 
-Is less than or equal to. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Is less than or equal to. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## Syntax
 

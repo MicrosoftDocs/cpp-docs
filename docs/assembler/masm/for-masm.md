@@ -17,9 +17,9 @@ Marks a block that will be repeated once for each *argument*, with the current *
 
 ## Remarks
 
-Same as [IRP](../../assembler/masm/irp.md).
+Same as [IRP](irp.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

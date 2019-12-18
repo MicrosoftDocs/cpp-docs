@@ -15,5 +15,5 @@ Specifies *count* number of declarations of *initialvalue*.
 
 ## See also
 
-[Operators reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators reference](operators-reference.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

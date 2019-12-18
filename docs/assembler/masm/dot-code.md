@@ -7,7 +7,7 @@ ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ---
 # .CODE (32-bit MASM)
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start of a code segment.
+When used with [.MODEL](dot-model.md), indicates the start of a code segment.
 
 ## Syntax
 
@@ -18,10 +18,10 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 ### Parameters
 
 *name*\
-Optional parameter that specifies the name of the code segment. The default name is **_TEXT** for tiny, small, compact, and flat [models](../../assembler/masm/dot-model.md). The default name is *modulename*_TEXT for other models.
+Optional parameter that specifies the name of the code segment. The default name is **_TEXT** for tiny, small, compact, and flat [models](dot-model.md). The default name is *modulename*_TEXT for other models.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[.DATA](../../assembler/masm/dot-data.md)\
+[Directives Reference](directives-reference.md)\
+[.DATA](dot-data.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)\

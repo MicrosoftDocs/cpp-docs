@@ -24,5 +24,5 @@ When data is aligned, the skipped space is padded with zeroes. When instructions
 ## See also
 
 [EVEN](even.md)\
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

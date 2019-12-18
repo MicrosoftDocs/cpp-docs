@@ -15,9 +15,9 @@ Marks the beginning of an alternate block within a conditional block.
 
 ## Remarks
 
-See [IF](../../assembler/masm/if-masm.md).
+See [IF](if-masm.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

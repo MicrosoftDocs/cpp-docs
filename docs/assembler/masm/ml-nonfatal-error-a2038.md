@@ -10,8 +10,8 @@ ms.assetid: 001bf60a-58ac-4654-97eb-b734f2999f8e
 
 **missing operand for macro operator**
 
-The assembler found the end of a macro's parameter list immediately after the [!](../../assembler/masm/operator-logical-not-masm-run-time.md) or [%](../../assembler/masm/operator-percent.md) operator.
+The assembler found the end of a macro's parameter list immediately after the [!](operator-logical-not-masm-run-time.md) or [%](operator-percent.md) operator.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

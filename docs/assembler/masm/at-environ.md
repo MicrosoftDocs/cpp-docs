@@ -15,5 +15,5 @@ Value of environment variable *envvar* (macro function).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

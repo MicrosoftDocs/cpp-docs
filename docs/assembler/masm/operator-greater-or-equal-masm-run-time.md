@@ -7,7 +7,7 @@ ms.assetid: c7366d99-f7b8-4eb8-b5df-6dc74491b114
 ---
 # operator &gt;= (MASM Run Time)
 
-Is greater than or equal to. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Is greater than or equal to. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## Syntax
 

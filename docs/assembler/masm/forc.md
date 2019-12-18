@@ -17,9 +17,9 @@ Marks a block that will be repeated once for each character in *string*, with th
 
 ## Remarks
 
-Same as [IRPC](../../assembler/masm/irpc.md).
+Same as [IRPC](irpc.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

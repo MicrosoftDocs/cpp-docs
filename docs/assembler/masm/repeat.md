@@ -7,7 +7,7 @@ ms.assetid: 26a72d91-d6b0-4d32-b5ba-4f5074e7973b
 ---
 # REPEAT
 
-Marks a block that is to be repeated *expression* times. Same as [REPT](../../assembler/masm/rept.md).
+Marks a block that is to be repeated *expression* times. Same as [REPT](rept.md).
 
 ## Syntax
 
@@ -17,5 +17,5 @@ Marks a block that is to be repeated *expression* times. Same as [REPT](../../as
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

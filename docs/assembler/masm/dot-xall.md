@@ -7,7 +7,7 @@ ms.assetid: b2d851dd-f79e-46c6-825d-1938b8487e8c
 ---
 # .XALL
 
-See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).
+See [.LISTMACRO](dot-listmacro.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

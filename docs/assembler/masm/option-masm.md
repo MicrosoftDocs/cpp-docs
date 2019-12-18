@@ -27,9 +27,9 @@ Available options include:
 |**PROC**|**PROLOGUE**|**READONLY**|**NOREADONLY**|
 |**SCOPED**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|
 
-The syntax for LANGUAGE is **OPTION LANGUAGE:**<em>x</em>, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with [.MODEL](../../assembler/masm/dot-model.md) FLAT.
+The syntax for LANGUAGE is **OPTION LANGUAGE:**<em>x</em>, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with [.MODEL](dot-model.md) FLAT.
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

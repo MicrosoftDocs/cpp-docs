@@ -32,4 +32,4 @@ One of the following may be a cause:
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

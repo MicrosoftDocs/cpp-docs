@@ -7,7 +7,7 @@ ms.assetid: 5412dfa7-8cec-4853-a641-5c9550098b19
 ---
 # operator == (MASM Run Time)
 
-Is equal to. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Is equal to. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## Syntax
 

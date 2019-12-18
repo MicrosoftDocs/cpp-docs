@@ -16,9 +16,9 @@ Grants assembly if the text items are identical.
 
 ## Remarks
 
-If **IFIDNI** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+If **IFIDNI** is given, the comparison is case insensitive. See [IF](if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

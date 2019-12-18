@@ -17,5 +17,5 @@ Creates a new label by assigning the current location-counter value and the give
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

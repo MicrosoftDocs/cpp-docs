@@ -16,10 +16,10 @@ One of the following occurred:
 
 - A real number or a BCD was used in an expression.
 
-- A real number was used to initialize a directive other than [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md), or [TBYTE](../../assembler/masm/tbyte.md).
+- A real number was used to initialize a directive other than [DWORD](dword.md), [QWORD](qword.md), or [TBYTE](tbyte.md).
 
 - A BCD was used to initialize a directive other than `TBYTE`.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

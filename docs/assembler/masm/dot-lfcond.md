@@ -13,9 +13,9 @@ ms.assetid: ed35590d-cc48-4de6-b775-b4f3434d08af
 
 ## Remarks
 
-See [.LISTIF](../../assembler/masm/dot-listif.md).
+See [.LISTIF](dot-listif.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

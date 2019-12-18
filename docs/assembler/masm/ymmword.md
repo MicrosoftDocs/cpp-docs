@@ -19,5 +19,5 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

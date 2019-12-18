@@ -15,9 +15,9 @@ Starts listing of all statements.
 
 ## Remarks
 
-Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LISTIF](../../assembler/masm/dot-listif.md), and [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+Equivalent to the combination of [.LIST](dot-list.md), [.LISTIF](dot-listif.md), and [.LISTMACROALL](dot-listmacroall.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

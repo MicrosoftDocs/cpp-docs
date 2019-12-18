@@ -15,5 +15,5 @@ The name of the default data group. Evaluates to DGROUP for all models except **
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

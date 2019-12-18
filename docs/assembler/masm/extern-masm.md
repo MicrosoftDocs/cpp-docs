@@ -17,9 +17,9 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 The *language-type* argument is valid in 32-bit MASM only.
 
-The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Same as [EXTRN](../../assembler/masm/extrn.md).
+The *type* can be [ABS](operator-abs.md), which imports *name* as a constant. Same as [EXTRN](extrn.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

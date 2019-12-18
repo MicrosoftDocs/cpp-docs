@@ -15,5 +15,5 @@ Returns the result of a bitwise AND operation for *expression1* and *expression2
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

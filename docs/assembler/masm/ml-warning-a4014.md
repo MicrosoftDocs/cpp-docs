@@ -14,4 +14,4 @@ An attempt was made to define initialized data within a BSS section.  A BSS sect
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

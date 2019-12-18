@@ -7,7 +7,7 @@ ms.assetid: 1952f6be-d2a2-4fc1-87a7-b773d07c7399
 ---
 # REPT
 
-See [REPEAT](../../assembler/masm/repeat.md).
+See [REPEAT](repeat.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [REPEAT](../../assembler/masm/repeat.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

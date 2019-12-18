@@ -7,7 +7,7 @@ ms.assetid: d08c2757-76a3-46a2-a4d1-52f7a7e985f7
 ---
 # %OUT
 
-See [ECHO](../../assembler/masm/echo.md).
+See [ECHO](echo.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [ECHO](../../assembler/masm/echo.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -7,7 +7,7 @@ ms.assetid: 2791e746-96aa-4ed5-ae69-abd072378f86
 ---
 # .SALL
 
-See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
+See [.NOLISTMACRO](dot-nolistmacro.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

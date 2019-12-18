@@ -15,5 +15,5 @@ In data declarations, a value that the assembler allocates but does not initiali
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

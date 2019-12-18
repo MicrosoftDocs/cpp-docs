@@ -7,7 +7,7 @@ ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
 ---
 # .UNTIL (32-bit MASM)
 
-(32-bit MASM only.) See [.REPEAT](../../assembler/masm/dot-repeat.md).
+(32-bit MASM only.) See [.REPEAT](dot-repeat.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

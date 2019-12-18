@@ -15,5 +15,5 @@ Macro function that concatenates one or more strings. Returns a string.
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -15,7 +15,7 @@ Generates an error.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
+[Directives Reference](directives-reference.md)\
 [.ERRNB](dot-errnb.md)\
 [.ERR2](dot-err2.md)\
 [.ERRDEF](dot-errdef.md)\

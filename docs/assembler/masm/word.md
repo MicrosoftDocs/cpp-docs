@@ -7,7 +7,7 @@ ms.assetid: 36f7ac49-480d-4d67-8967-3a62acb8f4df
 ---
 # WORD
 
-Allocates and optionally initializes a word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal. [DW](../../assembler/masm/dw.md) is a synonym of **WORD**.
+Allocates and optionally initializes a word (2 bytes) of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal. [DW](dw.md) is a synonym of **WORD**.
 
 ## Syntax
 
@@ -15,7 +15,7 @@ Allocates and optionally initializes a word (2 bytes) of storage for each *initi
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)\
-[SWORD](../../assembler/masm/sword.md)\
-[DW](../../assembler/masm/dw.md)<br/>
+[Directives reference](directives-reference.md)\
+[SWORD](sword.md)\
+[DW](dw.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -19,6 +19,6 @@ Also can be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[DF](../../assembler/masm/df.md)<br/>
+[Directives Reference](directives-reference.md)\
+[DF](df.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

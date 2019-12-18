@@ -7,7 +7,7 @@ ms.assetid: f3c51a54-48ba-4b99-afed-5c45177bf694
 ---
 # operator &amp;
 
-Bitwise **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Bitwise **AND**. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ Bitwise **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE
 
 ## See also
 
-[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
+[Operators Reference](operators-reference.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

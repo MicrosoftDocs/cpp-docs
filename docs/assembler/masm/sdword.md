@@ -15,7 +15,7 @@ Allocates and optionally initializes a signed double word (4 bytes) of storage f
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[DWORD](../../assembler/masm/dword.md)\
-[DD](../../assembler/masm/dd.md)<br/>
+[Directives Reference](directives-reference.md)\
+[DWORD](dword.md)\
+[DD](dd.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

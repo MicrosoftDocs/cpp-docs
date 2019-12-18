@@ -14,4 +14,4 @@ The source file contained a character outside a comment, string, or literal that
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

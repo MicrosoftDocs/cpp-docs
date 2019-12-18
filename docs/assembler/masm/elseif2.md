@@ -7,7 +7,7 @@ ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
 ---
 # ELSEIF2
 
-[ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.
+[ELSEIF](elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.
 
 ## Syntax
 
@@ -19,5 +19,5 @@ For more information about 2-pass behavior in MASM 5.1 vs MASM 6.1, see [IF1 and
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

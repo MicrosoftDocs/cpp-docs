@@ -7,7 +7,7 @@ ms.assetid: 70fcad8f-db48-4cb0-9710-8feb58baab22
 ---
 # QWORD
 
-Allocates and optionally initializes 8 bytes of storage for each *initializer*. Also can be used as a type specifier anywhere a type is legal. **QWORD** is a synonym of [DQ](../../assembler/masm/dq.md).
+Allocates and optionally initializes 8 bytes of storage for each *initializer*. Also can be used as a type specifier anywhere a type is legal. **QWORD** is a synonym of [DQ](dq.md).
 
 ## Syntax
 
@@ -15,7 +15,7 @@ Allocates and optionally initializes 8 bytes of storage for each *initializer*. 
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[SQWORD](../../assembler/masm/qword.md)\
-[DQ](../../assembler/masm/dq.md)<br/>
+[Directives Reference](directives-reference.md)\
+[SQWORD](qword.md)\
+[DQ](dq.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

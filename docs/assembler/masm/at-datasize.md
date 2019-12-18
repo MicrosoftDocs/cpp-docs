@@ -15,5 +15,5 @@ ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -15,5 +15,5 @@ Enables listing of symbols in the symbol portion of the symbol table and browser
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

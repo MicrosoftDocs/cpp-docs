@@ -15,5 +15,5 @@ Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

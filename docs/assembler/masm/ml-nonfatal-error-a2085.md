@@ -12,8 +12,8 @@ ms.assetid: c2fef415-a32b-4249-896c-6d981fc6e327
 
 An attempt was made to use an instruction, register, or keyword that was not valid for the current processor mode.
 
-For example, 32-bit registers require [.386](../../assembler/masm/dot-386.md) or above. Control registers such as CR0 require privileged mode [.386P](../../assembler/masm/dot-386p.md) or above. This error will also be generated for the **NEAR32**, **FAR32**, and **FLAT** keywords, which require .**386** or above.
+For example, 32-bit registers require [.386](dot-386.md) or above. Control registers such as CR0 require privileged mode [.386P](dot-386p.md) or above. This error will also be generated for the **NEAR32**, **FAR32**, and **FLAT** keywords, which require .**386** or above.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

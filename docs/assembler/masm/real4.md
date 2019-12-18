@@ -15,5 +15,5 @@ Allocates and optionally initializes a single-precision (4-byte) floating-point 
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

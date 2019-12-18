@@ -7,7 +7,7 @@ ms.assetid: 96c5c4e9-7053-49f0-946a-8088e178e79a
 ---
 # DT
 
-Allocates and optionally initializes 10 bytes of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal. **DT** is a synonym of [TBYTE](../../assembler/masm/tbyte.md).
+Allocates and optionally initializes 10 bytes of storage for each *initializer*. Can also be used as a type specifier anywhere a type is legal. **DT** is a synonym of [TBYTE](tbyte.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ Allocates and optionally initializes 10 bytes of storage for each *initializer*.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

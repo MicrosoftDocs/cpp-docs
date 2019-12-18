@@ -7,7 +7,7 @@ ms.assetid: e90f04f4-82d0-4f6c-9568-7b3bca5060fb
 ---
 # .XLIST
 
-See [.NOLIST](../../assembler/masm/dot-nolist.md).
+See [.NOLIST](dot-nolist.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [.NOLIST](../../assembler/masm/dot-nolist.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

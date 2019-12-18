@@ -21,5 +21,5 @@ Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
 
 ## See also
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>
+[Microsoft Macro Assembler reference](microsoft-macro-assembler-reference.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

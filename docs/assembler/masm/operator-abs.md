@@ -7,7 +7,7 @@ ms.assetid: 0c70b68e-5706-4042-a5fe-8595d0b510f2
 ---
 # operator ABS
 
-See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
+See the [EXTERNDEF](externdef.md) directive.
 
 ## Syntax
 

@@ -19,5 +19,5 @@ In a macro function, *textitem* is the value returned.
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

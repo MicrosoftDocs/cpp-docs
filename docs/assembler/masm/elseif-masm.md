@@ -7,7 +7,7 @@ ms.assetid: 20a685d6-836e-4e64-902e-4f3daf2e51c2
 ---
 # ELSEIF
 
-Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm/if-masm.md) into one statement.
+Combines [ELSE](else-masm.md) and [IF](if-masm.md) into one statement.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ Combines [ELSE](../../assembler/masm/else-masm.md) and [IF](../../assembler/masm
 
 ## Remarks
 
-See [IF](../../assembler/masm/if-masm.md) for more information.
+See [IF](if-masm.md) for more information.
 
 ## See also
 

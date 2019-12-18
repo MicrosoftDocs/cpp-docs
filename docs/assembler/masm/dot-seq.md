@@ -15,5 +15,5 @@ Orders segments sequentially (the default order). (32-bit MASM only.)
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

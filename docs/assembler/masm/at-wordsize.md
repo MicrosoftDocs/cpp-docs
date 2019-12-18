@@ -15,5 +15,5 @@ Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

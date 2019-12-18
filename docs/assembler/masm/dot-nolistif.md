@@ -15,7 +15,7 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 ## Remarks
 
-This is the default. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
+This is the default. Same as [.SFCOND](dot-sfcond.md).
 
 ## See also
 

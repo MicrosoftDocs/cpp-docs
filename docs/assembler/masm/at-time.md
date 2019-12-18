@@ -15,5 +15,5 @@ The system time in 24-hour hh:mm:ss format (text macro).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

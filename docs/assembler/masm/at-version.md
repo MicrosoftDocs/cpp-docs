@@ -15,5 +15,5 @@ The major and minor version of MASM reported at the command line, as a single nu
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -7,7 +7,7 @@ ms.assetid: ca17c71a-4a5d-4470-a098-484c781dbfa7
 ---
 # \@B
 
-The location of the previous [\@\@:](../../assembler/masm/at-at.md) label.
+The location of the previous [\@\@:](at-at.md) label.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ The location of the previous [\@\@:](../../assembler/masm/at-at.md) label.
 
 ## See also
 
-[Symbols reference](symbols-reference.md)<br/>
+[Symbols reference](symbols-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -7,7 +7,7 @@ ms.assetid: f8443482-2a7e-4764-bef8-8bfdaf06d2fe
 ---
 # .XCREF
 
-See [.NOCREF](../../assembler/masm/dot-nocref.md).
+See [.NOCREF](dot-nocref.md).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ See [.NOCREF](../../assembler/masm/dot-nocref.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

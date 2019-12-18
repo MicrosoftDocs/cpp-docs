@@ -16,16 +16,16 @@ One of the following was found outside of a segment block:
 
 - A label definition
 
-- A [THIS](../../assembler/masm/operator-this.md) operator
+- A [THIS](operator-this.md) operator
 
-- A [$](../../assembler/masm/dollar.md) operator
+- A [$](dollar.md) operator
 
 - A procedure definition
 
-- An [ALIGN](../../assembler/masm/align-masm.md) directive
+- An [ALIGN](align-masm.md) directive
 
-- An [ORG](../../assembler/masm/org.md) directive
+- An [ORG](org.md) directive
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

@@ -15,5 +15,5 @@ Used as a type specifier when an 16-byte data type is required.
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -7,7 +7,7 @@ ms.assetid: 927efadd-ec99-4de9-b64d-229bb2df3bf4
 ---
 # SUBTTL
 
-See [SUBTITLE](../../assembler/masm/subtitle.md).
+See [SUBTITLE](subtitle.md).
 
 ## Syntax
 

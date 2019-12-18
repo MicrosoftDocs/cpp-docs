@@ -7,7 +7,7 @@ ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8
 ---
 # DB
 
-Allocates and optionally initializes a byte of storage for each *initializer*. **DB** is a synonym of [BYTE](../../assembler/masm/byte-masm.md).
+Allocates and optionally initializes a byte of storage for each *initializer*. **DB** is a synonym of [BYTE](byte-masm.md).
 
 ## Syntax
 
@@ -19,7 +19,7 @@ Can also be used as a type specifier anywhere a type is legal.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[DB](../../assembler/masm/db.md)\
-[SBYTE](../../assembler/masm/sbyte-masm.md)<br/>
+[Directives Reference](directives-reference.md)\
+[DB](db.md)\
+[SBYTE](sbyte-masm.md)<br/>
 [MASM BNF Grammar](masm-bnf-grammar.md)

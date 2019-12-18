@@ -19,5 +19,5 @@ The *language-type* argument is valid in 32-bit MASM only.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](directives-reference.md)
 [MASM BNF Grammar](masm-bnf-grammar.md)

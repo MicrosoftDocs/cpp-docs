@@ -15,5 +15,5 @@ Generates an error if *expression* is true (nonzero).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

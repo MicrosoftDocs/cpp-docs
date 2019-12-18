@@ -20,7 +20,7 @@ One of the following may have occurred:
 
 - A symbol was defined in an include file that was not included.
 
-- An external symbol was used without an [EXTERN](../../assembler/masm/extern-masm.md) or [EXTERNDEF](../../assembler/masm/externdef.md) directive.
+- An external symbol was used without an [EXTERN](extern-masm.md) or [EXTERNDEF](externdef.md) directive.
 
 - A symbol name was misspelled.
 
@@ -28,4 +28,4 @@ One of the following may have occurred:
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

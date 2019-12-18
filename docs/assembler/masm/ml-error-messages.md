@@ -42,4 +42,4 @@ A short and general description of the error condition.
 
 ## See also
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](microsoft-macro-assembler-reference.md)

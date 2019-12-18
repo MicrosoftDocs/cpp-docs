@@ -15,5 +15,5 @@ Enables assembly of **K3D** instructions. (32-bit MASM only.)
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

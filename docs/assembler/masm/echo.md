@@ -15,9 +15,9 @@ Displays *message* to the standard output device (by default, the screen).
 
 ## Remarks
 
-Same as [%OUT](../../assembler/masm/percent-out.md).
+Same as [%OUT](percent-out.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

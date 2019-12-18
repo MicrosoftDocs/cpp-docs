@@ -7,7 +7,7 @@ ms.assetid: 3a1ce2d0-cf18-4f08-b4cf-b72cded4d164
 ---
 # .SFCOND
 
-See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).
+See [.NOLISTIF](dot-nolistif.md).
 
 ## Syntax
 

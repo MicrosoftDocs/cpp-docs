@@ -7,7 +7,7 @@ ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
 ---
 # ENDS (MASM)
 
-Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](../../assembler/masm/segment.md), [STRUCT](../../assembler/masm/struct-masm.md), [UNION](../../assembler/masm/union.md), or a simplified segment directive.
+Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](segment.md), [STRUCT](struct-masm.md), [UNION](union.md), or a simplified segment directive.
 
 ## Syntax
 
@@ -15,5 +15,5 @@ Marks the end of segment, structure, or union *name* previously begun with [SEGM
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

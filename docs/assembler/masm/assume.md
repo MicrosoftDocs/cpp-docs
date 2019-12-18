@@ -22,5 +22,5 @@ After an **ASSUME** is put into effect, the assembler watches for changes to the
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

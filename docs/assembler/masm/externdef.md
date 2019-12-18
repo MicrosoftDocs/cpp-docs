@@ -17,9 +17,9 @@ Defines one or more external variables, labels, or symbols called *name* whose t
 
 The *language-type* argument is valid in 32-bit MASM only.
 
-If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The *type* can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.
+If *name* is defined in the module, it is treated as [PUBLIC](public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](extern-masm.md). If *name* is not referenced, it is ignored. The *type* can be [ABS](operator-abs.md), which imports *name* as a constant. Normally used in include files.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

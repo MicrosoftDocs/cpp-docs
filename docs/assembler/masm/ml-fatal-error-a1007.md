@@ -14,7 +14,7 @@ The assembler reached its nesting limit. The limit is 20 levels except where not
 
 One of the following was nested too deeply:
 
-- A high-level directive such as [.IF](../../assembler/masm/dot-if.md), [.REPEAT](../../assembler/masm/dot-repeat.md), or [.WHILE](../../assembler/masm/dot-while.md).
+- A high-level directive such as [.IF](dot-if.md), [.REPEAT](dot-repeat.md), or [.WHILE](dot-while.md).
 
 - A structure definition.
 
@@ -22,7 +22,7 @@ One of the following was nested too deeply:
 
 - A procedure definition.
 
-- A [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive (the limit is 10).
+- A [PUSHCONTEXT](pushcontext.md) directive (the limit is 10).
 
 - A segment definition.
 
@@ -32,4 +32,4 @@ One of the following was nested too deeply:
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

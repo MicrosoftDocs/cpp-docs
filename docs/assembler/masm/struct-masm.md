@@ -7,7 +7,7 @@ ms.assetid: 70c3ba6b-00db-461e-8dd9-eafd3ae5b3c8
 ---
 # STRUCT (MASM)
 
-Declares a structure type having the specified *field-declarations*. Each field must be a valid data definition. Same as [STRUC](../../assembler/masm/struc.md).
+Declares a structure type having the specified *field-declarations*. Each field must be a valid data definition. Same as [STRUC](struc.md).
 
 ## Syntax
 
@@ -21,5 +21,5 @@ The *name* argument must be the same in the opening and closing statement.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

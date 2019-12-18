@@ -19,5 +19,5 @@ The *libraryname* must be enclosed in angle brackets if it includes a backslash,
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

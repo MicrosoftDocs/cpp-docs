@@ -15,9 +15,9 @@ Grants assembly if *name* is a previously defined label, variable, or symbol.
 
 ## Remarks
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+See [IF](if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

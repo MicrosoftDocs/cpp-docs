@@ -15,9 +15,9 @@ Starts listing of all statements in macros.
 
 ## Remarks
 
-Same as [.LALL](../../assembler/masm/dot-lall.md).
+Same as [.LALL](dot-lall.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

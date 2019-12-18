@@ -7,7 +7,7 @@ ms.assetid: ea8e0f14-cbdd-4576-9268-846527c27870
 ---
 # .ERR2
 
-[.ERR](../../assembler/masm/dot-err.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE.**
+[.ERR](dot-err.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE.**
 
 ## Syntax
 
@@ -19,5 +19,5 @@ For more information about 2-pass behavior in MASM 5.1 vs MASM 6.1, see [IF1 and
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

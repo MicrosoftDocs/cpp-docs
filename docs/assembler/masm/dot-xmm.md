@@ -15,5 +15,5 @@ Enables assembly of Internet Streaming SIMD Extension instructions. (32-bit MASM
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

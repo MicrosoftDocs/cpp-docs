@@ -7,7 +7,7 @@ ms.assetid: 0a633a40-114c-48f5-88ff-09bc8d9b281a
 ---
 # operator &amp;&amp; (MASM Run Time)
 
-Logical **AND**. Used only within [.IF](../../assembler/masm/dot-if.md), [.WHILE](../../assembler/masm/dot-while.md), or [.REPEAT](../../assembler/masm/dot-repeat.md) blocks and evaluated at run time, not at assembly time.
+Logical **AND**. Used only within [.IF](dot-if.md), [.WHILE](dot-while.md), or [.REPEAT](dot-repeat.md) blocks and evaluated at run time, not at assembly time.
 
 ## Syntax
 

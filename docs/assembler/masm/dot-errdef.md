@@ -15,5 +15,5 @@ Generates an error if *name* is a previously defined label, variable, or symbol.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -14,4 +14,4 @@ A conditional jump or loop cannot be to a different segment or group.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

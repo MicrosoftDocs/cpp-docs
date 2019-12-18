@@ -7,7 +7,7 @@ ms.assetid: f454f8d7-e23b-458c-a2c4-8441f1afdc82
 ---
 # .DATA? (32-bit MASM)
 
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for uninitialized data (segment name _BSS).
+When used with [.MODEL](dot-model.md), starts a near data segment for uninitialized data (segment name _BSS).
 
 ## Syntax
 
@@ -15,5 +15,5 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data s
 > ⟦ *segmentItem* ⟧...
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

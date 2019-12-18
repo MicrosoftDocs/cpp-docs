@@ -15,5 +15,5 @@ Declares a record type consisting of the specified fields. *fieldname* names the
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](directives-reference.md)
 [MASM BNF Grammar](masm-bnf-grammar.md)

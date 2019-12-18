@@ -19,9 +19,9 @@ The first directive assigns numeric value of *expression* to *name*.
 
 The *name* cannot be redefined later.
 
-The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](../../assembler/masm/textequ.md).
+The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](textequ.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

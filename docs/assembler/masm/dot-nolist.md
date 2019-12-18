@@ -15,9 +15,9 @@ Suppresses program listing.
 
 ## Remarks
 
-Same as [.XLIST](../../assembler/masm/dot-xlist.md).
+Same as [.XLIST](dot-xlist.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)<br/>
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
