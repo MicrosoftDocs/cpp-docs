@@ -1,6 +1,6 @@
 ---
 title: "operator != (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator !="]
 helpviewer_keywords: ["!= operator", "operator !="]
 ms.assetid: 8d48f40b-28d4-4996-ae1a-576478fd9c32

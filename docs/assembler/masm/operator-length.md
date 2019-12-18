@@ -1,6 +1,6 @@
 ---
 title: "operator LENGTH"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator LENGTH", "length"]
 helpviewer_keywords: ["LENGTH operator", "operator LENGTH"]
 ms.assetid: dee7ba98-8e91-4078-9435-a2c8506e37f2

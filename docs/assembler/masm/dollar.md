@@ -1,6 +1,6 @@
 ---
 title: "$"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["$"]
 helpviewer_keywords: ["$ symbol"]
 ms.assetid: c9c36297-0dc2-4d41-b071-a22d8f4a47bb

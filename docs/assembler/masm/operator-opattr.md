@@ -1,6 +1,6 @@
 ---
 title: "operator OPATTR"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator OPATTR", "OPATTR"]
 helpviewer_keywords: ["OPATTR operator", "operator OPATTR"]
 ms.assetid: ebf2e514-249d-44ad-8810-6bcefb3e4cef

@@ -11,7 +11,7 @@ Transfers assembly to the line marked **:**_macrolabel_.
 
 ## Syntax
 
-> **GOTO** :*macrolabel*
+> **GOTO** *macrolabel*
 
 ## Remarks
 
@@ -19,5 +19,5 @@ Transfers assembly to the line marked **:**_macrolabel_.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: "EXTRN"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["EXTRN"]
 helpviewer_keywords: ["EXTRN directive"]
 ms.assetid: 090f8ec7-28e7-451e-88a8-29c2e77fb956

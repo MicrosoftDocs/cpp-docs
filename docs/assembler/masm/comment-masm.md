@@ -1,6 +1,6 @@
 ---
 title: "COMMENT (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Comment"]
 helpviewer_keywords: ["COMMENT directive"]
 ms.assetid: b255ebf2-99b0-401c-a2c3-50ce57533578

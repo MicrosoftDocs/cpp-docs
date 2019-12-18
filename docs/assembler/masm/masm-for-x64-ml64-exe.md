@@ -1,6 +1,6 @@
 ---
 title: "MASM for x64 (ml64.exe)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
 ---

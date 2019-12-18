@@ -11,10 +11,10 @@ Marks a macro block called *name* and establishes *parameter* placeholders for a
 
 ## Syntax
 
-> *name*  **MACRO** ⟦*parameter* ⟦**:REQ** | :=*default* | **:VARARG**⟧ ...⟧\
+> *name*  **MACRO** ⟦*parameter* ⟦**:REQ** | :=*default* | *args* **:VARARG**⟧ ...⟧\
 > *statements*\
-⟦**GOTO** :*macrolabelId*⟧
-> ⟦**EXITM**⟧
+⟦**GOTO** :*macrolabelId*⟧\
+> ⟦**EXITM**⟧\
 > **ENDM** ⟦*value*⟧
 
 ## Remarks

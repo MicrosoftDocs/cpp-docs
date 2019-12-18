@@ -1,6 +1,6 @@
 ---
 title: "TEXTEQU"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["TEXTEQU"]
 helpviewer_keywords: ["TEXTEQU directive"]
 ms.assetid: 7c01df77-10d6-4555-8fe0-c5f7762df86d

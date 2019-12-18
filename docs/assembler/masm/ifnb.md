@@ -1,6 +1,6 @@
 ---
 title: "IFNB"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["IFNB"]
 helpviewer_keywords: ["IFNB directive"]
 ms.assetid: 9d161ddb-75b7-4cfe-92ef-370c6ef0af62

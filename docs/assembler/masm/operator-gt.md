@@ -1,6 +1,6 @@
 ---
 title: "operator GT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator GT", "GT"]
 helpviewer_keywords: ["operator GT", "GT operator"]
 ms.assetid: 48194297-7bf9-42f9-957a-e1a5b6d7be7c

@@ -1,6 +1,6 @@
 ---
 title: ".SAVEXMM128"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".SAVEXMM128"]
 helpviewer_keywords: [".SAVEXMM128 directive"]
 ms.assetid: 551eb472-b8d0-47b1-8d82-995d1f485723

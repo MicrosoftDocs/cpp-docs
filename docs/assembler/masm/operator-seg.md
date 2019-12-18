@@ -1,6 +1,6 @@
 ---
 title: "operator SEG"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator SEG", "SEG"]
 helpviewer_keywords: ["operator SEG", "SEG operator"]
 ms.assetid: 471733f3-72a0-4024-9861-5cc48c30dd0c

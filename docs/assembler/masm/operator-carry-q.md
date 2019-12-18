@@ -1,6 +1,6 @@
 ---
 title: "operator CARRY?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["CARRY?", "operator CARRY?"]
 helpviewer_keywords: ["operator CARRY?", "CARRY? operator"]
 ms.assetid: 5b195de7-3f66-436a-b75a-4b8d7c3c83b7

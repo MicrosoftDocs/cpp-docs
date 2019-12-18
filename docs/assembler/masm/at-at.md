@@ -1,6 +1,6 @@
 ---
 title: "@@:"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@@:"]
 helpviewer_keywords: ["@@: symbol"]
 ms.assetid: 4c0aa730-d534-4efd-9608-54d683d78654

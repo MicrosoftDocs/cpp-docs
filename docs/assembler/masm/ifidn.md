@@ -13,7 +13,6 @@ Grants assembly if the text items are identical.
 
 > **IFIDN** *textitem1*__,__ *textitem2*\
 > **IFIDNI** *textitem1*__,__ *textitem2*
-*directive...*
 
 ## Remarks
 

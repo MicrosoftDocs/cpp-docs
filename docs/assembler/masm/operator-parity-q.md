@@ -1,6 +1,6 @@
 ---
 title: "operator PARITY?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["PARITY?", "operator PARITY?"]
 helpviewer_keywords: ["PARITY? operator", "operator PARITY?"]
 ms.assetid: f8c52def-c4b7-4b81-af96-2b0c2d943f6c

@@ -11,9 +11,9 @@ When used with [.MODEL](../../assembler/masm/dot-model.md), indicates the start 
 
 ## Syntax
 
-> **.CODE** ⟦*name*⟧
-> ⟦ *segmentItem* ⟧...
-⟦ *codesegmentnameId* **ENDS**;;⟧
+> **.CODE** ⟦*name*⟧\
+> ⟦ *segmentItem* ⟧...\
+> ⟦ *codesegmentnameId* **ENDS**;;⟧\
 
 ### Parameters
 
@@ -23,5 +23,5 @@ Optional parameter that specifies the name of the code segment. The default name
 ## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)\
-[.DATA](../../assembler/masm/dot-data.md)<br/>
-[MASM BNF Grammar](masm-bnf-grammar.md)
+[.DATA](../../assembler/masm/dot-data.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)\

@@ -1,6 +1,6 @@
 ---
 title: "operator HIGHWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["HIGHWORD", "operator HIGHWORD"]
 helpviewer_keywords: ["operator HIGHWORD", "HIGHWORD operator"]
 ms.assetid: 6a3e4d60-e7b6-4cab-b4d7-d4cb7fb307c9

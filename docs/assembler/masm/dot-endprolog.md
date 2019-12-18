@@ -1,6 +1,6 @@
 ---
 title: ".ENDPROLOG"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ENDPROLOG"]
 helpviewer_keywords: [".ENDPROLOG directive"]
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35

@@ -1,6 +1,6 @@
 ---
 title: ".RADIX"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".RADIX"]
 helpviewer_keywords: [".RADIX directive"]
 ms.assetid: 3f7c2717-fd41-4aff-820d-3f40fd9280a0

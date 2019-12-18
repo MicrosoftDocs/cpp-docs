@@ -1,6 +1,6 @@
 ---
 title: "SWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["SWORD"]
 helpviewer_keywords: ["SWORD directive"]
 ms.assetid: 99228a2a-4ed1-4343-a317-e59302620a55

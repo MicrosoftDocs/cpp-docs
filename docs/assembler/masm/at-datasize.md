@@ -1,6 +1,6 @@
 ---
 title: "@DataSize"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@DataSize"]
 helpviewer_keywords: ["@DataSize symbol"]
 ms.assetid: c31dd6ab-0706-43ed-9a5d-024730f7931b

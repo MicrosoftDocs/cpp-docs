@@ -1,6 +1,6 @@
 ---
 title: "MASM Operators reference"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), operators reference", "operators [MASM]"]
 ms.assetid: c069cab7-d6b0-4f82-a6ce-0ca3fc7e6428
 ---

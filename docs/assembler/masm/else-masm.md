@@ -1,6 +1,6 @@
 ---
 title: "ELSE (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["else"]
 helpviewer_keywords: ["ELSE directive"]
 ms.assetid: c43af707-4567-4489-97ca-f14982d84e88

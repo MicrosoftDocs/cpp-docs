@@ -1,6 +1,6 @@
 ---
 title: "DT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["dt"]
 helpviewer_keywords: ["DT directive"]
 ms.assetid: 96c5c4e9-7053-49f0-946a-8088e178e79a

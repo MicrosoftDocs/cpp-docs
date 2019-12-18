@@ -158,10 +158,10 @@ possible definition for qualifiedType, which is also a component of the definiti
 *controlIf*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**.IF**
 &nbsp;&nbsp;&nbsp;&nbsp;*cExpr* ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[directiveList]#(directive_list)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*directiveList*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *controlElseif* ⟧<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ **.ELSE** ;;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[directiveList]#(directive_list) ⟧<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;[*directiveList*⟧<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**.ENDIF** ;;
 
 *coprocessor*<br/>
@@ -1077,4 +1077,4 @@ untilDir ;;
 
 *xmmRegister*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;XMM0 | XMM1 | XMM2 | XMM3 | XMM4 | XMM5 | XMM6 | XMM7 | XMM8 | XMM9 | XMM10 | XMM11 | XMM12 | XMM13 | XMM14 | XMM15<br/>
-[MASM BNF Grammar](masm-bnf-grammar.md)
+

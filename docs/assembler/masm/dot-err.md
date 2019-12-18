@@ -15,9 +15,9 @@ Generates an error.
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
-[.ERRNB](dot-errnb.md)
-[.ERR2](dot-err2.md)
-[.ERRDEF](dot-errdef.md)
-[.ERRNZ](dot-errnz.md)<br/>
+[Directives Reference](../../assembler/masm/directives-reference.md)\
+[.ERRNB](dot-errnb.md)\
+[.ERR2](dot-err2.md)\
+[.ERRDEF](dot-errdef.md)\
+[.ERRNZ](dot-errnz.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

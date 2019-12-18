@@ -1,6 +1,6 @@
 ---
 title: "SQWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["SQWORD"]
 helpviewer_keywords: ["SQWORD directive"]
 ms.assetid: 329245f1-af34-4540-a912-73e9045c47fa

@@ -1,6 +1,6 @@
 ---
 title: "INCLUDE (MASM)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["include"]
 helpviewer_keywords: ["INCLUDE directive"]
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4

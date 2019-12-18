@@ -1,6 +1,6 @@
 ---
 title: "REAL10"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["REAL10"]
 helpviewer_keywords: ["REAL10 directive"]
 ms.assetid: 6abe2c35-db96-45c7-82d7-ea6e2f92fbf9

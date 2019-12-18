@@ -1,6 +1,6 @@
 ---
 title: "operator GE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["GE", "operator GE"]
 helpviewer_keywords: ["GE operator", "operator GE"]
 ms.assetid: 28804311-174d-42d0-9ce1-2187b81bc844

@@ -1,6 +1,6 @@
 ---
 title: "EQU"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["EQU"]
 helpviewer_keywords: ["EQU directive"]
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab

@@ -1,6 +1,6 @@
 ---
 title: "YMMWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["YMMWORD"]
 helpviewer_keywords: ["YMMWORD directive"]
 ms.assetid: 955a7d23-6150-4056-befc-7f72e8258ecb

@@ -1,6 +1,6 @@
 ---
 title: "operator NOT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator NOT"]
 helpviewer_keywords: ["operator NOT", "NOT operator"]
 ms.assetid: d68d44fd-f92f-4b65-8d36-96de03e1b4e5

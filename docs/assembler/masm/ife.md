@@ -12,7 +12,6 @@ Grants assembly if *expression* is false (0).
 ## Syntax
 
 > **IFE** *expression*
-*directive...*
 
 ## Remarks
 

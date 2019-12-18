@@ -1,6 +1,6 @@
 ---
 title: "operator LE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["LE", "operator LE"]
 helpviewer_keywords: ["LE operator", "operator LE"]
 ms.assetid: 3192e7ac-7577-47bd-ae3e-2cdebcc4e568

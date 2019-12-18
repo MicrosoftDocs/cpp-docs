@@ -1,6 +1,6 @@
 ---
 title: "ML Fatal Error A1011"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A1011"]
 helpviewer_keywords: ["A1011"]

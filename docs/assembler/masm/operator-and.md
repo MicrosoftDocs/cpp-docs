@@ -1,6 +1,6 @@
 ---
 title: "operator AND"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["And", "operator AND"]
 helpviewer_keywords: ["operator AND", "AND operator"]
 ms.assetid: 6862d248-c169-4db8-a478-9d0ce4fdd1e3

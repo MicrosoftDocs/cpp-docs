@@ -1,6 +1,6 @@
 ---
 title: "operator SIGN?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["SIGN?", "operator SIGN?"]
 helpviewer_keywords: ["SIGN? operator", "operator SIGN?"]
 ms.assetid: bdc431db-4623-4c7f-9eb6-31aab62dcd79

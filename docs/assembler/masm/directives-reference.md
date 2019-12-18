@@ -1,6 +1,6 @@
 ---
 title: "Directives Reference"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Directives Reference"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), directives reference"]
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22

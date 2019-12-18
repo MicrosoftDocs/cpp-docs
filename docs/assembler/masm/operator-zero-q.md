@@ -1,6 +1,6 @@
 ---
 title: "operator ZERO?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator ZERO?", "ZERO?"]
 helpviewer_keywords: ["ZERO? operator", "operator ZERO?"]
 ms.assetid: c7629c0b-3254-4f50-9bd6-31be762eb03b

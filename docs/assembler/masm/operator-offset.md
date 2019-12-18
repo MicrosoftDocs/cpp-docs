@@ -1,6 +1,6 @@
 ---
 title: "operator OFFSET"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Offset", "operator OFFSET"]
 helpviewer_keywords: ["OFFSET operator", "operator OFFSET"]
 ms.assetid: d93ca835-cd25-4b26-9bdf-8cc43185e03c

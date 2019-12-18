@@ -1,6 +1,6 @@
 ---
 title: "operator dot"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator ."]
 helpviewer_keywords: ["dot operator (.)", "operator .", ". operator"]
 ms.assetid: 468ea0c8-5b08-47be-991b-38abacb77611

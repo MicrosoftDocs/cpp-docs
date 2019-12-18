@@ -1,6 +1,6 @@
 ---
 title: "operator &amp;&amp; (MASM Run Time)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator &&"]
 helpviewer_keywords: ["operator &&", "&& operator"]
 ms.assetid: 0a633a40-114c-48f5-88ff-09bc8d9b281a

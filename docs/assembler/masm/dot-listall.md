@@ -1,6 +1,6 @@
 ---
 title: ".LISTALL"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".LISTALL"]
 helpviewer_keywords: [".LISTALL directive"]
 ms.assetid: fccb5117-542d-4ae3-869b-40cc2ab55ecb

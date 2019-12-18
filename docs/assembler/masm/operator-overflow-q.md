@@ -1,6 +1,6 @@
 ---
 title: "operator OVERFLOW?"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator OVERFLOW?", "OVERFLOW?"]
 helpviewer_keywords: ["operator OVERFLOW?", "OVERFLOW? operator"]
 ms.assetid: 376b2850-993a-4538-b8f1-bd682ff7e91c

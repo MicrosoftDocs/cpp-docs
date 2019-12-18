@@ -1,6 +1,6 @@
 ---
 title: ".LISTMACRO"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".LISTMACRO"]
 helpviewer_keywords: [".LISTMACRO directive"]
 ms.assetid: f8dadf8c-ca6f-4bb9-a4f8-86a0e769a845

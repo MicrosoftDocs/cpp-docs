@@ -1,6 +1,6 @@
 ---
 title: "operator IMAGEREL"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator IMAGEREL", "IMAGEREL"]
 helpviewer_keywords: ["operator IMAGEREL", "IMAGEREL operator"]
 ms.assetid: 5b5ea425-36f0-467c-9262-62c484b7fdb4

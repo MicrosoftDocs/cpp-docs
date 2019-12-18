@@ -1,6 +1,6 @@
 ---
 title: "REAL8"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["REAL8"]
 helpviewer_keywords: ["REAL8 directive"]
 ms.assetid: 757244ea-e4c9-4fc9-94ec-16313578bede

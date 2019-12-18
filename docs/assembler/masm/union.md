@@ -1,6 +1,6 @@
 ---
 title: "UNION"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["union"]
 helpviewer_keywords: ["UNION directive"]
 ms.assetid: 52504abf-7dc1-47c5-944c-b886803a0c6a

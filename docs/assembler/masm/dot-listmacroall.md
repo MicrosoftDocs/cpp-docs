@@ -1,6 +1,6 @@
 ---
 title: ".LISTMACROALL"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".LISTMACROALL"]
 helpviewer_keywords: [".LISTMACROALL directive"]
 ms.assetid: 36f329fd-eff0-4414-8b4a-6223113f9fda

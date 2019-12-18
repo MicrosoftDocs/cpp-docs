@@ -1,6 +1,6 @@
 ---
 title: ".ALLOCSTACK"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ALLOCSTACK"]
 helpviewer_keywords: [".ALLOCSTACK directive"]
 ms.assetid: 9801594b-7ac2-4df2-a49d-07d9dd9af99e

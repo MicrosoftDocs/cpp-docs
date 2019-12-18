@@ -1,6 +1,6 @@
 ---
 title: "DB"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["DB"]
 helpviewer_keywords: ["DB directive"]
 ms.assetid: 0c69ccaa-043f-46e1-9f95-dc76d9bc87c8

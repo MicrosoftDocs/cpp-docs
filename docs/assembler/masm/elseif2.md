@@ -1,6 +1,6 @@
 ---
 title: "ELSEIF2"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["ELSEIF2"]
 helpviewer_keywords: ["ELSEIF2 directive"]
 ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071

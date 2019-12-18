@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2096"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2096"]
 helpviewer_keywords: ["A2096"]

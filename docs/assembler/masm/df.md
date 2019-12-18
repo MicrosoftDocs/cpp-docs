@@ -1,6 +1,6 @@
 ---
 title: "DF"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["DF"]
 helpviewer_keywords: ["DF directive"]
 ms.assetid: b5587c29-3da9-4c46-aa3a-1ec42d6fa703

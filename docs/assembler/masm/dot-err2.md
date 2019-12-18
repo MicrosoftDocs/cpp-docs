@@ -1,6 +1,6 @@
 ---
 title: ".ERR2"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ERR2"]
 helpviewer_keywords: [".ERR2 directive"]
 ms.assetid: ea8e0f14-cbdd-4576-9268-846527c27870

@@ -1,6 +1,6 @@
 ---
 title: "Processor manufacturer programming manuals"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
 ---
 # Processor manufacturer programming manuals

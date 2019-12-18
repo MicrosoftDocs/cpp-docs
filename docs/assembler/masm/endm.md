@@ -1,6 +1,6 @@
 ---
 title: "ENDM"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["ENDM"]
 helpviewer_keywords: ["ENDM directive"]
 ms.assetid: 697ea303-1e47-4ee9-9e67-77b83c3fe35a

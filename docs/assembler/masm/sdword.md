@@ -1,6 +1,6 @@
 ---
 title: "SDWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["SDWORD"]
 helpviewer_keywords: ["SDWORD directive"]
 ms.assetid: 12663144-2426-4b4e-aabd-dbe0b04321d0

@@ -1,6 +1,6 @@
 ---
 title: "XMMWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["XMMWORD"]
 helpviewer_keywords: ["XMMWORD directive"]
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
@@ -22,4 +22,7 @@ Used for 128-bit multimedia operands with MMX and SSE (XMM) instructions.
 ```asm
     movdqa   xmm0, xmmword ptr [ebx]
 ```<br/>
+
+## See Also
+
 [MASM BNF Grammar](masm-bnf-grammar.md)

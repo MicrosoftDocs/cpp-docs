@@ -1,6 +1,6 @@
 ---
 title: "operator &lt;= (MASM Run Time)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator <="]
 helpviewer_keywords: ["operator <=", "<= operator, comparing specific objects"]
 ms.assetid: a5676804-07ef-40ab-8251-cde5b11ebdf9

@@ -1,6 +1,6 @@
 ---
 title: ".ERRDEF"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ERRDEF"]
 helpviewer_keywords: [".ERRDEF directive"]
 ms.assetid: 07e39826-56f7-4734-a9de-5ff72879af10

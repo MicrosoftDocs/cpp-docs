@@ -1,6 +1,6 @@
 ---
 title: "operator NE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["NE", "operator NE"]
 helpviewer_keywords: ["NE operator", "operator NE"]
 ms.assetid: 0364a3aa-e2f1-499d-8cc7-1fbec318715c

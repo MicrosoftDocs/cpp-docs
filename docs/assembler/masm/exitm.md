@@ -1,6 +1,6 @@
 ---
 title: "EXITM"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["EXITM"]
 helpviewer_keywords: ["EXITM directive"]
 ms.assetid: a3484d33-04a9-4791-8d53-3fc3bc7b417c

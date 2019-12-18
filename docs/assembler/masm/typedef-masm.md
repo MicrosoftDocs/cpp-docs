@@ -11,9 +11,9 @@ Defines a new type or **PROTO** called *name*, which is equivalent to *type* or 
 
 ## Syntax
 
-> *name* **TYPEDEF** *type* ⟦**PROTO** *protoDefinition*⟧
+> *name* **TYPEDEF** *type* | ⟦**PROTO** *protoDefinition*⟧
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)

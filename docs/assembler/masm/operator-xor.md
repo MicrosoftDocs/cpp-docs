@@ -1,6 +1,6 @@
 ---
 title: "operator XOR"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator XOR", "Xor"]
 helpviewer_keywords: ["operator XOR", "XOR operator"]
 ms.assetid: 856eb920-314a-49b9-aebf-7d50e5384e4d
