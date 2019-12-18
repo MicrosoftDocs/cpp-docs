@@ -5189,10 +5189,10 @@
               href: assembler/masm/masm-for-x64-ml64-exe.md
             - name: ML and ML64 command-line reference
               href: assembler/masm/ml-and-ml64-command-line-reference.md
-            - name: Directives reference
+            - name: Directives reference (MASM)
               expanded: false
               items: 
-                - name: Directives reference
+                - name: Directives reference (MASM)
                   href: assembler/masm/directives-reference.md
                 - name: "="
                   href: assembler/masm/equal.md
@@ -5214,9 +5214,9 @@
                   href: assembler/masm/dot-686.md
                 - name: ".686P"
                   href: assembler/masm/dot-686p.md
-                - name: ALIAS (MASM)
+                - name: ALIAS
                   href: assembler/masm/alias-masm.md
-                - name: ALIGN (MASM)
+                - name: ALIGN
                   href: assembler/masm/align-masm.md
                 - name: .ALLOCSTACK
                   href: assembler/masm/dot-allocstack.md
@@ -5226,7 +5226,7 @@
                   href: assembler/masm/assume.md
                 - name: .BREAK
                   href: assembler/masm/dot-break.md
-                - name: BYTE (MASM)
+                - name: BYTE
                   href: assembler/masm/byte-masm.md
                 - name: CATSTR
                   href: assembler/masm/catstr.md
@@ -5234,7 +5234,7 @@
                   href: assembler/masm/dot-code.md
                 - name: COMM
                   href: assembler/masm/comm.md
-                - name: COMMENT (MASM)
+                - name: COMMENT
                   href: assembler/masm/comment-masm.md
                 - name: .CONST
                   href: assembler/masm/dot-const.md
@@ -5268,13 +5268,13 @@
                   href: assembler/masm/echo.md
                 - name: .ELSE
                   href: assembler/masm/dot-else.md
-                - name: ELSE (MASM)
+                - name: ELSE
                   href: assembler/masm/else-masm.md
-                - name: ELSEIF (MASM)
+                - name: ELSEIF
                   href: assembler/masm/elseif-masm.md
                 - name: ELSEIF2
                   href: assembler/masm/elseif2.md
-                - name: END (MASM)
+                - name: END
                   href: assembler/masm/end-masm.md
                 - name: .ENDIF
                   href: assembler/masm/dot-endif.md
@@ -5284,7 +5284,7 @@
                   href: assembler/masm/endp.md
                 - name: .ENDPROLOG
                   href: assembler/masm/dot-endprolog.md
-                - name: ENDS (MASM)
+                - name: ENDS
                   href: assembler/masm/ends-masm.md
                 - name: .ENDW
                   href: assembler/masm/dot-endw.md
@@ -5316,7 +5316,7 @@
                   href: assembler/masm/dot-exit.md
                 - name: EXITM
                   href: assembler/masm/exitm.md
-                - name: EXTERN (MASM)
+                - name: EXTERN
                   href: assembler/masm/extern-masm.md
                 - name: EXTERNDEF
                   href: assembler/masm/externdef.md
@@ -5326,7 +5326,7 @@
                   href: assembler/masm/dot-fardata.md
                 - name: .FARDATA?
                   href: assembler/masm/dot-fardata-q.md
-                - name: FOR (MASM)
+                - name: FOR
                   href: assembler/masm/for-masm.md
                 - name: FORC
                   href: assembler/masm/forc.md
@@ -5334,13 +5334,13 @@
                   href: assembler/masm/dot-fpo.md
                 - name: FWORD
                   href: assembler/masm/fword.md
-                - name: GOTO (MASM)
+                - name: GOTO
                   href: assembler/masm/goto-masm.md
                 - name: GROUP
                   href: assembler/masm/group.md
                 - name: .IF
                   href: assembler/masm/dot-if.md
-                - name: IF (MASM)
+                - name: IF
                   href: assembler/masm/if-masm.md
                 - name: IF2
                   href: assembler/masm/if2.md
@@ -5358,9 +5358,9 @@
                   href: assembler/masm/ifnb.md
                 - name: IFNDEF
                   href: assembler/masm/ifndef.md
-                - name: INCLUDE (MASM)
+                - name: INCLUDE
                   href: assembler/masm/include-masm.md
-                - name: INCLUDELIB (MASM)
+                - name: INCLUDELIB
                   href: assembler/masm/includelib-masm.md
                 - name: INSTR
                   href: assembler/masm/instr.md
@@ -5372,7 +5372,7 @@
                   href: assembler/masm/irpc.md
                 - name: .K3D
                   href: assembler/masm/dot-k3d.md
-                - name: LABEL (MASM)
+                - name: LABEL
                   href: assembler/masm/label-masm.md
                 - name: .LALL
                   href: assembler/masm/dot-lall.md
@@ -5388,7 +5388,7 @@
                   href: assembler/masm/dot-listmacro.md
                 - name: .LISTMACROALL
                   href: assembler/masm/dot-listmacroall.md
-                - name: LOCAL (MASM)
+                - name: LOCAL
                   href: assembler/masm/local-masm.md
                 - name: MACRO
                   href: assembler/masm/macro.md
@@ -5398,7 +5398,7 @@
                   href: assembler/masm/dot-mmx.md
                 - name: .MODEL
                   href: assembler/masm/dot-model.md
-                - name: NAME (MASM)
+                - name: NAME
                   href: assembler/masm/name-masm.md
                 - name: .NOCREF
                   href: assembler/masm/dot-nocref.md
@@ -5408,7 +5408,7 @@
                   href: assembler/masm/dot-nolistif.md
                 - name: .NOLISTMACRO
                   href: assembler/masm/dot-nolistmacro.md
-                - name: OPTION (MASM)
+                - name: OPTION
                   href: assembler/masm/option-masm.md
                 - name: ORG
                   href: assembler/masm/org.md
@@ -5424,7 +5424,7 @@
                   href: assembler/masm/proc.md
                 - name: PROTO
                   href: assembler/masm/proto.md
-                - name: PUBLIC (MASM)
+                - name: PUBLIC
                   href: assembler/masm/public-masm.md
                 - name: PURGE
                   href: assembler/masm/purge.md
@@ -5444,7 +5444,7 @@
                   href: assembler/masm/real4.md
                 - name: REAL8
                   href: assembler/masm/real8.md
-                - name: RECORD (MASM)
+                - name: RECORD
                   href: assembler/masm/record-masm.md
                 - name: .REPEAT
                   href: assembler/masm/dot-repeat.md
@@ -5460,7 +5460,7 @@
                   href: assembler/masm/dot-savereg.md
                 - name: .SAVEXMM128
                   href: assembler/masm/dot-savexmm128.md
-                - name: SBYTE (MASM)
+                - name: SBYTE
                   href: assembler/masm/sbyte-masm.md
                 - name: SDWORD
                   href: assembler/masm/sdword.md
@@ -5482,7 +5482,7 @@
                   href: assembler/masm/dot-startup.md
                 - name: STRUC
                   href: assembler/masm/struc.md
-                - name: STRUCT (MASM)
+                - name: STRUCT
                   href: assembler/masm/struct-masm.md
                 - name: SUBSTR
                   href: assembler/masm/substr.md
@@ -5500,7 +5500,7 @@
                   href: assembler/masm/dot-tfcond.md
                 - name: TITLE
                   href: assembler/masm/title.md
-                - name: TYPEDEF (MASM)
+                - name: TYPEDEF
                   href: assembler/masm/typedef-masm.md
                 - name: UNION
                   href: assembler/masm/union.md
@@ -5510,7 +5510,7 @@
                   href: assembler/masm/dot-untilcxz.md
                 - name: .WHILE
                   href: assembler/masm/dot-while.md
-                - name: WHILE (MASM)
+                - name: WHILE
                   href: assembler/masm/while-masm.md
                 - name: WORD
                   href: assembler/masm/word.md

@@ -5,9 +5,9 @@ f1_keywords: [".DATA"]
 helpviewer_keywords: [".DATA directive"]
 ms.assetid: 32797935-9c79-46e0-bf6f-07d0c2bf1dc1
 ---
-# .DATA (32-bit MASM)
+# .DATA
 
-When used with [.MODEL](dot-model.md), starts a near data segment for initialized data (segment name _DATA).
+ (32-bit MASM only.) When used with [.MODEL](dot-model.md), starts a near data segment for initialized data (segment name _DATA).
 
 ## Syntax
 

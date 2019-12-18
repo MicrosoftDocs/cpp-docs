@@ -5,7 +5,7 @@ f1_keywords: ["include"]
 helpviewer_keywords: ["INCLUDE directive"]
 ms.assetid: 1c7964ee-715c-414e-a45e-74af93476eb4
 ---
-# INCLUDE (MASM)
+# INCLUDE
 
 Inserts source code from the source file given by *filename* into the current source file during assembly.
 

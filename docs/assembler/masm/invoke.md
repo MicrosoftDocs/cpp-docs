@@ -5,9 +5,9 @@ f1_keywords: ["Invoke"]
 helpviewer_keywords: ["INVOKE directive"]
 ms.assetid: 12d9bb40-33b9-411e-b801-45a1d675967e
 ---
-# INVOKE (32-bit MASM)
+# INVOKE
 
-Calls the procedure at the address given by *expression*, passing the arguments on the stack or in registers according to the standard calling conventions of the language type. (32-bit MASM only.)
+(32-bit MASM only.) Calls the procedure at the address given by *expression*, passing the arguments on the stack or in registers according to the standard calling conventions of the language type. (32-bit MASM only.)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ f1_keywords: ["ENDS"]
 helpviewer_keywords: ["ENDS directive"]
 ms.assetid: 30f68c58-de1f-4bdd-ac83-4658bdbaad65
 ---
-# ENDS (MASM)
+# ENDS
 
 Marks the end of segment, structure, or union *name* previously begun with [SEGMENT](segment.md), [STRUCT](struct-masm.md), [UNION](union.md), or a simplified segment directive.
 

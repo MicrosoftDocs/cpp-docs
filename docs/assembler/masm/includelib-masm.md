@@ -5,7 +5,7 @@ f1_keywords: ["INCLUDELIB"]
 helpviewer_keywords: ["INCLUDELIB directive"]
 ms.assetid: 5455d004-8202-4b57-93f3-9aa66f133a2d
 ---
-# INCLUDELIB (MASM)
+# INCLUDELIB
 
 Informs the linker that the current module should be linked with *libraryname*.
 

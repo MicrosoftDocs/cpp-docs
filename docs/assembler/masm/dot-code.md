@@ -5,9 +5,9 @@ f1_keywords: [".CODE"]
 helpviewer_keywords: [".CODE directive"]
 ms.assetid: 2b8c882c-c0d2-4fa3-8335-e6b12717a4f4
 ---
-# .CODE (32-bit MASM)
+# .CODE
 
-When used with [.MODEL](dot-model.md), indicates the start of a code segment.
+(32-bit MASM only.) When used with [.MODEL](dot-model.md), indicates the start of a code segment.
 
 ## Syntax
 
