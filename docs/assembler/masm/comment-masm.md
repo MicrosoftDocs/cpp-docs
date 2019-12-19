@@ -17,5 +17,5 @@ Treats all *text* between or on the same line as the delimiters as a comment.
 
 ## See also
 
-[Directives Reference](directives-reference.md)\\
+[Directives Reference](directives-reference.md)\
 [MASM BNF Grammar](masm-bnf-grammar.md)
