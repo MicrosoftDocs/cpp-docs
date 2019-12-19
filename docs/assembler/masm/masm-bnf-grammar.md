@@ -1,23 +1,21 @@
 ---
 title: "Microsoft Macro Assembler BNF Grammar"
-description: "Formal BNF description of MASM for x64."
+description: "BNF description of MASM for x64."
 ms.date: "12/17/2019"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 ---
 
 # Microsoft Macro Assembler BNF Grammar
 
-To illustrate the use of the BNF, Figure B.1 diagrams the definition of the TYPEDEF directive, starting
-with the nonterminal typedefDir.
+This page contains a BNF description of the MASM grammar. It is provided for illustrative purposes and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on. 
 
-The entries under each horizontal brace in Figure B.1 are terminals (such as NEAR16, NEAR32,
-FAR16, and FAR32) or nonterminals (such as qualifier, qualifiedType, distance, and protoSpec) that
-can be further defined. Each italicized nonterminal in the typedefDir definition is also an entry in the
-BNF. Three vertical dots indicate a branching definition for a nonterminal that, for the sake of
-simplicity, this figure does not illustrate.
+To illustrate the use of the BNF, the following diagram shows the definition of the TYPEDEF directive, starting with the nonterminal *typedefDir*.
 
-The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a
-possible definition for qualifiedType, which is also a component of the definition for qualifier.
+![MASM BNF Example](media/bnf.png)
+
+The entries under each horizontal brace are terminals (such as **NEAR16**, **NEAR32**, **FAR16**, and **FAR32**) or nonterminals (such as *qualifier*, *qualifiedType*, *distance*, and *protoSpec*) that can be further defined. Each italicized nonterminal in the *typedefDir* definition is also an entry in the BNF. Three vertical dots indicate a branching definition for a nonterminal that, for the sake of simplicity, this figure does not illustrate.
+
+The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a possible definition for qualifiedType, which is also a component of the definition for qualifier. The "|" symbol specifies alternate expressions, for example *endOfLine* | *comment*. Double braces specify an optional parameter, for example ⟦ *macroParmList* ⟧. 
 
 ## MASM Nonterminals
 
@@ -572,7 +570,7 @@ possible definition for qualifiedType, which is also a component of the definiti
 
 *macroArg*\
  % *constExpr*\
-&nbsp;&nbsp;&nbsp;&nbsp;| % *textMacroId*\
+&nbsp;&nbsp;&nbsp;&nbsp;| %*textMacroId*\
 &nbsp;&nbsp;&nbsp;&nbsp;| %*macroFuncId* ( *macroArgList* )\
 &nbsp;&nbsp;&nbsp;&nbsp;| *string*\
 &nbsp;&nbsp;&nbsp;&nbsp;| *arbitraryText*\
@@ -767,11 +765,8 @@ possible definition for qualifiedType, which is also a component of the definiti
 &nbsp;&nbsp;&nbsp;&nbsp;⟦ *usesRegs* ⟧ ⟦ *procParmList* ⟧
 
 *processor*\
- .8086\
-&nbsp;&nbsp;&nbsp;&nbsp;| .186\
-&nbsp;&nbsp;&nbsp;&nbsp;| .286 | .286C | .286P\
-&nbsp;&nbsp;&nbsp;&nbsp;| .386 | .386C | .386P\
-&nbsp;&nbsp;&nbsp;&nbsp;| .486 | .486P
+&nbsp;&nbsp;&nbsp;&nbsp;| .386 | .386p | .486 | .486P\
+&nbsp;&nbsp;&nbsp;&nbsp;| .586 | .586P | .686 | .686P | .387
 
 *processorDir*\
 &nbsp;&nbsp;&nbsp;&nbsp;*processor* ;;\
