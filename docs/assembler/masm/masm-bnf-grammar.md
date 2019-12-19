@@ -7,7 +7,7 @@ helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 
 # Microsoft Macro Assembler BNF Grammar
 
-This page contains a BNF description of the MASM grammar. It is provided for illustrative purposes and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on.
+This page contains a BNF description of the MASM grammar. It is provided as a supplement to the reference topics and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on.
 
 To illustrate the use of the BNF, the following diagram shows the definition of the TYPEDEF directive, starting with the nonterminal *typedefDir*.
 
