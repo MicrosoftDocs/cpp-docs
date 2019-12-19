@@ -7,7 +7,7 @@ helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 
 # Microsoft Macro Assembler BNF Grammar
 
-This page contains a BNF description of the MASM grammar. It is provided for illustrative purposes and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on. 
+This page contains a BNF description of the MASM grammar. It is provided for illustrative purposes and is not guaranteed to be complete. Please consult the reference topics for full information on keywords, parameters, operations and so on.
 
 To illustrate the use of the BNF, the following diagram shows the definition of the TYPEDEF directive, starting with the nonterminal *typedefDir*.
 
@@ -15,7 +15,7 @@ To illustrate the use of the BNF, the following diagram shows the definition of 
 
 The entries under each horizontal brace are terminals (such as **NEAR16**, **NEAR32**, **FAR16**, and **FAR32**) or nonterminals (such as *qualifier*, *qualifiedType*, *distance*, and *protoSpec*) that can be further defined. Each italicized nonterminal in the *typedefDir* definition is also an entry in the BNF. Three vertical dots indicate a branching definition for a nonterminal that, for the sake of simplicity, this figure does not illustrate.
 
-The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a possible definition for qualifiedType, which is also a component of the definition for qualifier. The "|" symbol specifies alternate expressions, for example *endOfLine* | *comment*. Double braces specify an optional parameter, for example ⟦ *macroParmList* ⟧. 
+The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a possible definition for qualifiedType, which is also a component of the definition for qualifier. The "|" symbol specifies a choice between alternate expressions, for example *endOfLine* | *comment*. Double braces specify an optional parameter, for example ⟦ *macroParmList* ⟧. The brackets do not actually appear in the source code.
 
 ## MASM Nonterminals
 
