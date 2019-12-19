@@ -21,6 +21,28 @@ A *symbol* is the internal name for a function or global variable. It's the form
 
 To create an application or DLL, every symbol used must have a definition. The linker must *resolve*, or find the matching definition for, every external symbol referenced by each object file. The linker generates an error when it can't resolve an external symbol. It means the linker couldn't find a matching exported symbol definition in any of the linked files.
 
+## Compilation and link issues
+
+This error can occur:
+
+- When the project is missing a reference to a library (.LIB) or object (.OBJ) file. To fix this issue, add a reference to the required library or object file to your project. For more information, see [lib Files as linker input](../../build/reference/dot-lib-files-as-linker-input.md).
+
+- When the project has a reference to a library (.LIB) or object (.OBJ) file that in turn requires symbols from another library. It may happen even if you don't call functions that cause the dependency. To fix this issue, add a reference to the other library to your project. For more information, see [Understanding the classical model for linking: Taking symbols along for the ride](https://devblogs.microsoft.com/oldnewthing/20130108-00/?p=5623).
+
+- If you use the [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) or [/Zl](../../build/reference/zl-omit-default-library-name.md) options. When you specify these options, libraries that contain required code aren't linked into the project unless you've explicitly included them. To fix this issue, explicitly include all the libraries you use on the link command line. If you see many missing CRT or Standard Library function names when you use these options, explicitly include the CRT and Standard Library DLLs or library files in the link.
+
+- If you compile using the **/clr** option. There may be a missing reference to `.cctor`. For more information on how to fix this issue, see [Initialization of mixed assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
+
+- If you link to the release mode libraries when building a debug version of an application. Similarly, if you use options **/MTd** or **/MDd** or define `_DEBUG` and then link to the release libraries, you should expect many potential unresolved externals, among other problems. Linking a release mode build with the debug libraries also causes similar problems. To fix this issue, make sure you use the debug libraries in your debug builds, and retail libraries in your retail builds.
+
+- If your code refers to a symbol from one library version, but you link a different version of the library. Generally, you can't mix object files or libraries that are built for different versions of the compiler. The libraries that ship in one version may contain symbols that can't be found in the libraries included with other versions. To fix this issue, build all the object files and libraries with the same version of the compiler before linking them together. For more information, see [C++ binary compatibility 2015-2019](../../porting/binary-compat-2015-2017.md).
+
+- If library paths are out of date. The **Tools > Options > Projects > VC++ Directories** dialog, under the **Library files** selection, allows you to change the library search order. The Linker folder in the project's Property Pages dialog box may also contain paths that could be out of date.
+
+- When a new Windows SDK is installed (perhaps to a different location). The library search order must be updated to point to the new location. Normally, you should put the path to new SDK include and lib directories in front of the default Visual C++ location. Also, a project containing embedded paths may still point to old paths that are valid, but out of date. Update the paths for new functionality added by the new version that's installed to a different location.
+
+- If you build at the command line, and have created your own environment variables. Verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Set the path and environment variables for command-line builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
+
 ## Coding issues
 
 This error can be caused by:
@@ -48,28 +70,6 @@ This error can be caused by:
   - Remove `_ATL_MIN_CRT` from the list of preprocessor defines to allow CRT startup code to be included. For more information, see [General property page (Project)](../../build/reference/general-property-page-project.md).
 
   - If possible, remove calls to CRT functions that require CRT startup code. Instead, use their Win32 equivalents. For example, use `lstrcmp` instead of `strcmp`. Known functions that require CRT startup code are some of the string and floating point functions.
-
-## Compilation and link issues
-
-This error can occur:
-
-- When the project is missing a reference to a library (.LIB) or object (.OBJ) file. To fix this issue, add a reference to the required library or object file to your project. For more information, see [lib Files as linker input](../../build/reference/dot-lib-files-as-linker-input.md).
-
-- When the project has a reference to a library (.LIB) or object (.OBJ) file that in turn requires symbols from another library. It may happen even if you don't call functions that cause the dependency. To fix this issue, add a reference to the other library to your project. For more information, see [Understanding the classical model for linking: Taking symbols along for the ride](https://devblogs.microsoft.com/oldnewthing/20130108-00/?p=5623).
-
-- If you use the [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) or [/Zl](../../build/reference/zl-omit-default-library-name.md) options. When you specify these options, libraries that contain required code aren't linked into the project unless you've explicitly included them. To fix this issue, explicitly include all the libraries you use on the link command line. If you see many missing CRT or Standard Library function names when you use these options, explicitly include the CRT and Standard Library DLLs or library files in the link.
-
-- If you compile using the **/clr** option. There may be a missing reference to `.cctor`. For more information on how to fix this issue, see [Initialization of mixed assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
-
-- If you link to the release mode libraries when building a debug version of an application. Similarly, if you use options **/MTd** or **/MDd** or define `_DEBUG` and then link to the release libraries, you should expect many potential unresolved externals, among other problems. Linking a release mode build with the debug libraries also causes similar problems. To fix this issue, make sure you use the debug libraries in your debug builds, and retail libraries in your retail builds.
-
-- If your code refers to a symbol from one library version, but you link a different version of the library. Generally, you can't mix object files or libraries that are built for different versions of the compiler. The libraries that ship in one version may contain symbols that can't be found in the libraries included with other versions. To fix this issue, build all the object files and libraries with the same version of the compiler before linking them together. For more information, see [C++ binary compatibility 2015-2019](../../porting/binary-compat-2015-2017.md).
-
-- If library paths are out of date. The **Tools > Options > Projects > VC++ Directories** dialog, under the **Library files** selection, allows you to change the library search order. The Linker folder in the project's Property Pages dialog box may also contain paths that could be out of date.
-
-- When a new Windows SDK is installed (perhaps to a different location). The library search order must be updated to point to the new location. Normally, you should put the path to new SDK include and lib directories in front of the default Visual C++ location. Also, a project containing embedded paths may still point to old paths that are valid, but out of date. Update the paths for new functionality added by the new version that's installed to a different location.
-
-- If you build at the command line, and have created your own environment variables. Verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Set the path and environment variables for command-line builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
 
 ## Consistency issues
 
