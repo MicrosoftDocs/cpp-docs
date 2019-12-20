@@ -19,7 +19,7 @@ ms.assetid: a0f75564-b51b-4e39-ad3b-f7421e7ecad6
 
 ## Remarks
 
-See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+See [IF](if-masm.md) for complete syntax.
 
 Unlike version 5.1, MASM 6.1 and above do most of its work on its first pass, then performs as many subsequent passes as necessary. In contrast, MASM 5.1 always assembles in two source passes. As a result, you may need to revise or delete some pass-dependent constructs under MASM 6.1 and above.
 
@@ -35,4 +35,5 @@ MASM 6.1 and above handle first-pass constructs differently. It treats the **.ER
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

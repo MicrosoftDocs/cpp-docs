@@ -1,6 +1,6 @@
 ---
 title: "Processor manufacturer programming manuals"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
 ---
 # Processor manufacturer programming manuals
@@ -21,4 +21,5 @@ Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
 
 ## See also
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](microsoft-macro-assembler-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

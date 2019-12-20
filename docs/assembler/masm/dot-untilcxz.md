@@ -7,8 +7,9 @@ ms.assetid: 07723c4c-789d-4dfa-9407-c60e72cb975f
 ---
 # .UNTILCXZ (32-bit MASM)
 
-(32-bit MASM only.) See [.REPEAT](../../assembler/masm/dot-repeat.md).
+(32-bit MASM only.) See [.REPEAT](dot-repeat.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: "operator SHORT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator SHORT"]
 helpviewer_keywords: ["operator SHORT", "SHORT operator"]
 ms.assetid: 41e0982a-4f4e-4b48-ba58-e32d72053249
@@ -15,4 +15,5 @@ Sets the type of *label* to short. All jumps to *label* must be short (within th
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

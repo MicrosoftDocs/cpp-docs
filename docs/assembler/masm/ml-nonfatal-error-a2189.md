@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2189"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2189"]
 helpviewer_keywords: ["A2189"]
@@ -14,4 +14,4 @@ The alignment specified by the **ALIGN** or `EVEN` directive was greater than th
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

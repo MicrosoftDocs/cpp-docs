@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2083"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2083"]
 helpviewer_keywords: ["A2083"]
@@ -14,4 +14,4 @@ A register scale was specified that was not 1, 2, 4, or 8.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

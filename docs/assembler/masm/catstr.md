@@ -1,6 +1,6 @@
 ---
 title: "CATSTR"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["CATSTR"]
 helpviewer_keywords: ["CATSTR directive"]
 ms.assetid: ae893190-8247-4435-a74e-de2f00db052f
@@ -19,4 +19,5 @@ Each text item can be a literal string, a constant preceded by a **%**, or the s
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

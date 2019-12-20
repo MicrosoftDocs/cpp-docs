@@ -1,6 +1,6 @@
 ---
 title: "operator GT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator GT", "GT"]
 helpviewer_keywords: ["operator GT", "GT operator"]
 ms.assetid: 48194297-7bf9-42f9-957a-e1a5b6d7be7c
@@ -15,4 +15,5 @@ Returns true (-1) if *expression1* is greater than *expression2*, or returns fal
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

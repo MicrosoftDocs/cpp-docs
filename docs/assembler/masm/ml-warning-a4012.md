@@ -1,6 +1,6 @@
 ---
 title: "ML Warning A4012"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A4012"]
 helpviewer_keywords: ["A4012"]
@@ -16,4 +16,4 @@ CodeView cannot process modules with code in segments with class names that do n
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

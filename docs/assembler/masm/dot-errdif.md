@@ -20,4 +20,5 @@ If **.ERRDIFI** is given, the comparison is case insensitive.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

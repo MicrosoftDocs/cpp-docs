@@ -1,6 +1,6 @@
 ---
 title: "SDWORD"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["SDWORD"]
 helpviewer_keywords: ["SDWORD directive"]
 ms.assetid: 12663144-2426-4b4e-aabd-dbe0b04321d0
@@ -15,6 +15,7 @@ Allocates and optionally initializes a signed double word (4 bytes) of storage f
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)\
-[DWORD](../../assembler/masm/dword.md)\
-[DD](../../assembler/masm/dd.md)
+[Directives Reference](directives-reference.md)\
+[DWORD](dword.md)\
+[DD](dd.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

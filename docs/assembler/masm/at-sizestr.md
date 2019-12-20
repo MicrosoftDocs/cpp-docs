@@ -1,6 +1,6 @@
 ---
 title: "@SizeStr"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@SizeStr"]
 helpviewer_keywords: ["@SizeStr symbol"]
 ms.assetid: 91fa439a-7df1-4dd9-a0c7-82bae2eb68c9
@@ -15,4 +15,5 @@ A macro function that returns the length of the given string. Returns an integer
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

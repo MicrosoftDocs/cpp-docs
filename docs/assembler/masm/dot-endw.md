@@ -13,8 +13,9 @@ ms.assetid: c288fa8a-2f1b-4a13-aba2-04157e84110e
 
 ## Remarks
 
-(32-bit MASM only.) See [.WHILE](../../assembler/masm/dot-while.md).
+(32-bit MASM only.) See [.WHILE](dot-while.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

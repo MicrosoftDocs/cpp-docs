@@ -1,6 +1,6 @@
 ---
 title: "EXITM"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["EXITM"]
 helpviewer_keywords: ["EXITM directive"]
 ms.assetid: a3484d33-04a9-4791-8d53-3fc3bc7b417c
@@ -19,4 +19,5 @@ In a macro function, *textitem* is the value returned.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)
