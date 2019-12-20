@@ -1,13 +1,13 @@
 ---
 title: "SUBTITLE"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["SUBTITLE"]
 helpviewer_keywords: ["SUBTITLE directive"]
 ms.assetid: b882ae31-9998-46ed-bd88-6656263143e7
 ---
 # SUBTITLE
 
-Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
+Defines the listing subtitle. Same as [SUBTTL](subttl.md).
 
 ## Syntax
 
@@ -15,4 +15,5 @@ Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

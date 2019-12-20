@@ -1,6 +1,6 @@
 ---
 title: ".ENDPROLOG"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ENDPROLOG"]
 helpviewer_keywords: [".ENDPROLOG directive"]
 ms.assetid: 61a2474c-9527-46e6-9f9d-bc4b42c10f35
@@ -15,10 +15,11 @@ Signals the end of the prologue declarations.
 
 ## Remarks
 
-It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) **FRAME** and **.ENDPROLOG**.
+It is an error to use any of the prologue declarations outside of the region between [PROC](proc.md) **FRAME** and **.ENDPROLOG**.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

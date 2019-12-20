@@ -1,6 +1,6 @@
 ---
 title: ".ERRE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".ERRE"]
 helpviewer_keywords: [".ERRE directive"]
 ms.assetid: cfb5a4bb-4488-4101-bd06-63ba43b1473e
@@ -15,4 +15,5 @@ Generates an error if *expression* is false (0).
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

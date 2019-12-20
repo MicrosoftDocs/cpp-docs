@@ -1,6 +1,6 @@
 ---
 title: "IFIDN, IFIDNI"
-ms.date: "05/23/2019"
+ms.date: "12/17/2019"
 f1_keywords: ["IFIDN", "IFIDNI"]
 helpviewer_keywords: ["IFIDN directive", "IFIDNI directive"]
 ms.assetid: 957893b1-1a30-4ffd-96f2-6663604a5058
@@ -16,8 +16,9 @@ Grants assembly if the text items are identical.
 
 ## Remarks
 
-If **IFIDNI** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+If **IFIDNI** is given, the comparison is case insensitive. See [IF](if-masm.md) for complete syntax.
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

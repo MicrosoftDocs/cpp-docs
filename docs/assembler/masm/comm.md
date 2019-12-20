@@ -23,7 +23,7 @@ Each *definition* has the following form:
 
 The *language-type*, **NEAR**, and **FAR** arguments are valid only in 32-bit MASM.
 
-The optional *language-type* sets the naming conventions for the name that follows. It overrides any language specified by the **.MODEL** directive. The optional **NEAR** or **FAR** override the current memory model. The *label* is the name of the variable. The *type* can be any type specifier ([BYTE](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), and so on) or an integer specifying the number of bytes. The optional *count* specifies the number of elements in the declared data object. The default *count* is one.
+The optional *language-type* sets the naming conventions for the name that follows. It overrides any language specified by the **.MODEL** directive. The optional **NEAR** or **FAR** override the current memory model. The *label* is the name of the variable. The *type* can be any type specifier ([BYTE](byte-masm.md), [WORD](word.md), and so on) or an integer specifying the number of bytes. The optional *count* specifies the number of elements in the declared data object. The default *count* is one.
 
 ## Example
 
@@ -35,4 +35,5 @@ COMM FAR ByteArray:BYTE:512
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

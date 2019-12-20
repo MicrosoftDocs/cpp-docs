@@ -1,6 +1,6 @@
 ---
 title: "Directives Reference"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Directives Reference"]
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), directives reference"]
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
@@ -11,149 +11,150 @@ ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
 
 ||||
 |-|-|-|
-|[.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)|[.ENDPROLOG](../../assembler/masm/dot-endprolog.md)|[PROC](../../assembler/masm/proc.md)|
-|[.PUSHFRAME](../../assembler/masm/dot-pushframe.md)|[.PUSHREG](../../assembler/masm/dot-pushreg.md)|[.SAVEREG](../../assembler/masm/dot-savereg.md)|
-|[.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)|[.SETFRAME](../../assembler/masm/dot-setframe.md)||
+|[.ALLOCSTACK](dot-allocstack.md)|[.ENDPROLOG](dot-endprolog.md)|[PROC](proc.md)|
+|[.PUSHFRAME](dot-pushframe.md)|[.PUSHREG](dot-pushreg.md)|[.SAVEREG](dot-savereg.md)|
+|[.SAVEXMM128](dot-savexmm128.md)|[.SETFRAME](dot-setframe.md)||
 
 ### Code Labels
 
 |||
 |-|-|
-|[ALIGN](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|
-|[LABEL](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|
+|[ALIGN](align-masm.md)|[EVEN](even.md)|
+|[LABEL](label-masm.md)|[ORG](org.md)|
 
 ### Conditional Assembly
 
 ||||
 |-|-|-|
-|[ELSE](../../assembler/masm/else-masm.md)|[ELSEIF](../../assembler/masm/elseif-masm.md)|[ELSEIF2](../../assembler/masm/elseif2.md)|
-|[IF](../../assembler/masm/if-masm.md)|[IF2](../../assembler/masm/if2.md)|[IFB](../../assembler/masm/ifb.md)/[IFNB](../../assembler/masm/ifnb.md)|
-|[IFDEF](../../assembler/masm/ifdef.md)/[IFNDEF](../../assembler/masm/ifndef.md)|[IFDIF](../../assembler/masm/ifdif.md)/[IFDIF&#91;&#91;I&#93;&#93;](../../assembler/masm/ifdif.md)|[IFE](../../assembler/masm/ife.md)|
-|[IFIDN](../../assembler/masm/ifidn.md)/[IFIDN&#91;&#91;I&#93;&#93;](../../assembler/masm/ifidn.md)|||
+|[ELSE](else-masm.md)|[ELSEIF](elseif-masm.md)|[ELSEIF2](elseif2.md)|
+|[IF](if-masm.md)|[IF2](if2.md)|[IFB](ifb.md)/[IFNB](ifnb.md)|
+|[IFDEF](ifdef.md)/[IFNDEF](ifndef.md)|[IFDIF](ifdif.md)/[IFDIF&#91;&#91;I&#93;&#93;](ifdif.md)|[IFE](ife.md)|
+|[IFIDN](ifidn.md)/[IFIDN&#91;&#91;I&#93;&#93;](ifidn.md)|||
 
 ### Conditional Control Flow
 
 ||||
 |-|-|-|
-|[.BREAK](../../assembler/masm/dot-break.md)|[.CONTINUE](../../assembler/masm/dot-continue.md)|[.ELSE](../../assembler/masm/dot-else.md)|
-|[.ELSEIF](../../assembler/masm/dot-if.md)|[.ENDIF](../../assembler/masm/dot-endif.md)|[.ENDW](../../assembler/masm/dot-endw.md)|
-|[.IF](../../assembler/masm/dot-if.md)|[.REPEAT](../../assembler/masm/dot-repeat.md)|[.UNTIL](../../assembler/masm/dot-until.md)|
-|[.UNTILCXZ](../../assembler/masm/dot-untilcxz.md)|[.WHILE](../../assembler/masm/dot-while.md)||
+|[.BREAK](dot-break.md)|[.CONTINUE](dot-continue.md)|[.ELSE](dot-else.md)|
+|[.ELSEIF](dot-if.md)|[.ENDIF](dot-endif.md)|[.ENDW](dot-endw.md)|
+|[.IF](dot-if.md)|[.REPEAT](dot-repeat.md)|[.UNTIL](dot-until.md)|
+|[.UNTILCXZ](dot-untilcxz.md)|[.WHILE](dot-while.md)||
 
 ### Conditional Error
 
 ||||
 |-|-|-|
-|[.ERR](../../assembler/masm/dot-err.md)|[.ERR2](../../assembler/masm/dot-err2.md)|[.ERRB](../../assembler/masm/dot-errb.md)|
-|[.ERRDEF](../../assembler/masm/dot-errdef.md)|[.ERRDIF](../../assembler/masm/dot-errdif.md)/[.ERRDIF&#91;&#91;I&#93;&#93;&#93;](../../assembler/masm/dot-errdif.md)|[.ERRE](../../assembler/masm/dot-erre.md)|
-|[.ERRIDN](../../assembler/masm/dot-erridn.md)/[.ERRIDN&#91;&#91;I&#93;&#93;](../../assembler/masm/dot-erridn.md)|[.ERRNB](../../assembler/masm/dot-errnb.md)|[.ERRNDEF](../../assembler/masm/dot-errndef.md)|
-|[.ERRNZ](../../assembler/masm/dot-errnz.md)|||
+|[.ERR](dot-err.md)|[.ERR2](dot-err2.md)|[.ERRB](dot-errb.md)|
+|[.ERRDEF](dot-errdef.md)|[.ERRDIF](dot-errdif.md)/[.ERRDIF&#91;&#91;I&#93;&#93;&#93;](dot-errdif.md)|[.ERRE](dot-erre.md)|
+|[.ERRIDN](dot-erridn.md)/[.ERRIDN&#91;&#91;I&#93;&#93;](dot-erridn.md)|[.ERRNB](dot-errnb.md)|[.ERRNDEF](dot-errndef.md)|
+|[.ERRNZ](dot-errnz.md)|||
 
 ### Data Allocation
 
 ||||
 |-|-|-|
-|[ALIGN](../../assembler/masm/align-masm.md)|[BYTE](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|
-|[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[LABEL](../../assembler/masm/label-masm.md)|
-|[ORG](../../assembler/masm/org.md)|[QWORD](../../assembler/masm/qword.md)|[REAL4](../../assembler/masm/real4.md)|
-|[REAL8](../../assembler/masm/real8.md)|[REAL10](../../assembler/masm/real10.md)|[TBYTE](../../assembler/masm/tbyte.md)|
-|[WORD](../../assembler/masm/word.md)/[SWORD](../../assembler/masm/sword.md)|||
+|[ALIGN](align-masm.md)|[BYTE](byte-masm.md)/[SBYTE](sbyte-masm.md)|[DWORD](dword.md)/[SDWORD](sdword.md)|
+|[EVEN](even.md)|[FWORD](fword.md)|[LABEL](label-masm.md)|
+|[ORG](org.md)|[QWORD](qword.md)|[REAL4](real4.md)|
+|[REAL8](real8.md)|[REAL10](real10.md)|[TBYTE](tbyte.md)|
+|[WORD](word.md)/[SWORD](sword.md)|||
 
 ### Equates
 
 ||||
 |-|-|-|
-|[=](../../assembler/masm/equal.md)|[EQU](../../assembler/masm/equ.md)|[TEXTEQU](../../assembler/masm/textequ.md)|
+|[=](equal.md)|[EQU](equ.md)|[TEXTEQU](textequ.md)|
 
 ### Listing Control
 
 ||||
 |-|-|-|
-|[.CREF](../../assembler/masm/dot-cref.md)|[.LIST](../../assembler/masm/dot-list.md)|[.LISTALL](../../assembler/masm/dot-listall.md)|
-|[.LISTIF](../../assembler/masm/dot-listif.md)|[.LISTMACRO](../../assembler/masm/dot-listmacro.md)|[.LISTMACROALL](../../assembler/masm/dot-listmacroall.md)|
-|[.NOCREF](../../assembler/masm/dot-nocref.md)|[.NOLIST](../../assembler/masm/dot-nolist.md)|[.NOLISTIF](../../assembler/masm/dot-nolistif.md)|
-|[.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md)|[PAGE](../../assembler/masm/page.md)|[SUBTITLE](../../assembler/masm/subtitle.md)|
-|[.TFCOND](../../assembler/masm/dot-tfcond.md)|[TITLE](../../assembler/masm/title.md)||
+|[.CREF](dot-cref.md)|[.LIST](dot-list.md)|[.LISTALL](dot-listall.md)|
+|[.LISTIF](dot-listif.md)|[.LISTMACRO](dot-listmacro.md)|[.LISTMACROALL](dot-listmacroall.md)|
+|[.NOCREF](dot-nocref.md)|[.NOLIST](dot-nolist.md)|[.NOLISTIF](dot-nolistif.md)|
+|[.NOLISTMACRO](dot-nolistmacro.md)|[PAGE](page.md)|[SUBTITLE](subtitle.md)|
+|[.TFCOND](dot-tfcond.md)|[TITLE](title.md)||
 
 ### Macros
 
 ||||
 |-|-|-|
-|[ENDM](../../assembler/masm/endm.md)|[EXITM](../../assembler/masm/exitm.md)|[GOTO](../../assembler/masm/goto-masm.md)|
-|[LOCAL](../../assembler/masm/local-masm.md)|[MACRO](../../assembler/masm/macro.md)|[PURGE](../../assembler/masm/purge.md)|
+|[ENDM](endm.md)|[EXITM](exitm.md)|[GOTO](goto-masm.md)|
+|[LOCAL](local-masm.md)|[MACRO](macro.md)|[PURGE](purge.md)|
 
 ### Miscellaneous
 
 ||||
 |-|-|-|
-|[ALIAS](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[COMMENT](../../assembler/masm/comment-masm.md)|
-|[ECHO](../../assembler/masm/echo.md)|[END](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|
-|[INCLUDE](../../assembler/masm/include-masm.md)|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[MMWORD](../../assembler/masm/mmword.md)|
-|[OPTION](../../assembler/masm/option-masm.md)|[POPCONTEXT](../../assembler/masm/popcontext.md)|[PUSHCONTEXT](../../assembler/masm/pushcontext.md)|
-|[.RADIX](../../assembler/masm/dot-radix.md)|[.SAFESEH](../../assembler/masm/dot-safeseh.md)|[XMMWORD](../../assembler/masm/xmmword.md)|
-|[YMMWORD](../../assembler/masm/ymmword.md)|||
+|[ALIAS](alias-masm.md)|[ASSUME](assume.md)|[COMMENT](comment-masm.md)|
+|[ECHO](echo.md)|[END](end-masm.md)|[.FPO](dot-fpo.md)|
+|[INCLUDE](include-masm.md)|[INCLUDELIB](includelib-masm.md)|[MMWORD](mmword.md)|
+|[OPTION](option-masm.md)|[POPCONTEXT](popcontext.md)|[PUSHCONTEXT](pushcontext.md)|
+|[.RADIX](dot-radix.md)|[.SAFESEH](dot-safeseh.md)|[XMMWORD](xmmword.md)|
+|[YMMWORD](ymmword.md)|||
 
 ### Procedures
 
 ||||
 |-|-|-|
-|[ENDP](../../assembler/masm/endp.md)|[INVOKE](../../assembler/masm/invoke.md)|[PROC](../../assembler/masm/proc.md)|
-|[PROTO](../../assembler/masm/proto.md)|||
+|[ENDP](endp.md)|[INVOKE](invoke.md)|[PROC](proc.md)|
+|[PROTO](proto.md)|||
 
 ### Processor
 
 ||||
 |-|-|-|
-|[.386](../../assembler/masm/dot-386.md)|[.386P](../../assembler/masm/dot-386p.md)|[.387](../../assembler/masm/dot-387.md)|
-|[.486](../../assembler/masm/dot-486.md)|[.486P](../../assembler/masm/dot-486p.md)|[.586](../../assembler/masm/dot-586.md)|
-|[.586P](../../assembler/masm/dot-586p.md)|[.686](../../assembler/masm/dot-686.md)|[.686P](../../assembler/masm/dot-686p.md)|
-|[.K3D](../../assembler/masm/dot-k3d.md)|[.MMX](../../assembler/masm/dot-mmx.md)|[.XMM](../../assembler/masm/dot-xmm.md)|
+|[.386](dot-386.md)|[.386P](dot-386p.md)|[.387](dot-387.md)|
+|[.486](dot-486.md)|[.486P](dot-486p.md)|[.586](dot-586.md)|
+|[.586P](dot-586p.md)|[.686](dot-686.md)|[.686P](dot-686p.md)|
+|[.K3D](dot-k3d.md)|[.MMX](dot-mmx.md)|[.XMM](dot-xmm.md)|
 
 ### Repeat Blocks
 
 ||||
 |-|-|-|
-|[ENDM](../../assembler/masm/endm.md)|[FOR](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|
-|[GOTO](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[WHILE](../../assembler/masm/while-masm.md)|
+|[ENDM](endm.md)|[FOR](for-masm.md)|[FORC](forc.md)|
+|[GOTO](goto-masm.md)|[REPEAT](repeat.md)|[WHILE](while-masm.md)|
 
 ### Scope
 
 ||||
 |-|-|-|
-|[COMM](../../assembler/masm/comm.md)|[EXTERN](../../assembler/masm/extern-masm.md)|[EXTERNDEF](../../assembler/masm/externdef.md)|
-|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[PUBLIC](../../assembler/masm/public-masm.md)||
+|[COMM](comm.md)|[EXTERN](extern-masm.md)|[EXTERNDEF](externdef.md)|
+|[INCLUDELIB](includelib-masm.md)|[PUBLIC](public-masm.md)||
 
 ### Segment
 
 ||||
 |-|-|-|
-|[.ALPHA](../../assembler/masm/dot-alpha.md)|[ASSUME](../../assembler/masm/assume.md)|[.DOSSEG](../../assembler/masm/dot-dosseg.md)|
-|[END](../../assembler/masm/end-masm.md)|[ENDS](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|
-|[SEGMENT](../../assembler/masm/segment.md)|[.SEQ](../../assembler/masm/dot-seq.md)||
+|[.ALPHA](dot-alpha.md)|[ASSUME](assume.md)|[.DOSSEG](dot-dosseg.md)|
+|[END](end-masm.md)|[ENDS](ends-masm.md)|[GROUP](group.md)|
+|[SEGMENT](segment.md)|[.SEQ](dot-seq.md)||
 
 ### Simplified Segment
 
 ||||
 |-|-|-|
-|[.CODE](../../assembler/masm/dot-code.md)|[.CONST](../../assembler/masm/dot-const.md)|[.DATA](../../assembler/masm/dot-data.md)|
-|[.DATA?](../../assembler/masm/dot-data-q.md)|[.DOSSEG](../../assembler/masm/dot-dosseg.md)|[.EXIT](../../assembler/masm/dot-exit.md)|
-|[.FARDATA](../../assembler/masm/dot-fardata.md)|[.FARDATA?](../../assembler/masm/dot-fardata-q.md)|[.MODEL](../../assembler/masm/dot-model.md)|
-|[.STACK](../../assembler/masm/dot-stack.md)|[.STARTUP](../../assembler/masm/dot-startup.md)||
+|[.CODE](dot-code.md)|[.CONST](dot-const.md)|[.DATA](dot-data.md)|
+|[.DATA?](dot-data-q.md)|[.DOSSEG](dot-dosseg.md)|[.EXIT](dot-exit.md)|
+|[.FARDATA](dot-fardata.md)|[.FARDATA?](dot-fardata-q.md)|[.MODEL](dot-model.md)|
+|[.STACK](dot-stack.md)|[.STARTUP](dot-startup.md)||
 
 ### String
 
 |||
 |-|-|
-|[CATSTR](../../assembler/masm/catstr.md)|[INSTR](../../assembler/masm/instr.md)|
-|[SIZESTR](../../assembler/masm/sizestr.md)|[SUBSTR](../../assembler/masm/substr.md)|
+|[CATSTR](catstr.md)|[INSTR](instr.md)|
+|[SIZESTR](sizestr.md)|[SUBSTR](substr.md)|
 
 ### Structure and Record
 
 ||||
 |-|-|-|
-|[ENDS](../../assembler/masm/ends-masm.md)|[RECORD](../../assembler/masm/record-masm.md)|[STRUCT](../../assembler/masm/struct-masm.md)|
-|[TYPEDEF](../../assembler/masm/typedef-masm.md)|[UNION](../../assembler/masm/union.md)||
+|[ENDS](ends-masm.md)|[RECORD](record-masm.md)|[STRUCT](struct-masm.md)|
+|[TYPEDEF](typedef-masm.md)|[UNION](union.md)||
 
 ## See also
 
-[Microsoft Macro Assembler reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler reference](microsoft-macro-assembler-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

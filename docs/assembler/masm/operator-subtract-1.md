@@ -1,6 +1,6 @@
 ---
 title: "operator /"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["/", "operator /"]
 helpviewer_keywords: ["/ operator", "arithmetic operators [C++], division", "operators [MASM], division", "division operator, syntax", "/ operator, syntax"]
 ms.assetid: 76db4c26-59c0-495f-8e3b-66c644da02a3
@@ -15,4 +15,5 @@ Returns *expression1* divided by *expression2*.
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: "TITLE"
-ms.date: "08/30/2018"
+ms.date: "12/16/2019"
 f1_keywords: ["title"]
 helpviewer_keywords: ["TITLE directive"]
 ms.assetid: d49df4dc-75db-472c-950e-75344e3c81eb
@@ -15,4 +15,5 @@ Defines the program listing title.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: "ML Fatal Error A1011"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A1011"]
 helpviewer_keywords: ["A1011"]
@@ -12,20 +12,20 @@ ms.assetid: 7fbf092d-4189-4330-a884-dfa2268fc3dd
 
 The assembler found a high-level directive where one was not expected. One of the following directives was found:
 
-- [.ELSE](../../assembler/masm/dot-else.md) without [.IF](../../assembler/masm/dot-if.md)
+- [.ELSE](dot-else.md) without [.IF](dot-if.md)
 
-- [.ENDIF](../../assembler/masm/dot-endif.md) without [.IF](../../assembler/masm/dot-if.md)
+- [.ENDIF](dot-endif.md) without [.IF](dot-if.md)
 
-- [.ENDW](../../assembler/masm/dot-endw.md) without [.WHILE](../../assembler/masm/dot-while.md)
+- [.ENDW](dot-endw.md) without [.WHILE](dot-while.md)
 
-- [.UNTILCXZ](../../assembler/masm/dot-untilcxz.md) without [.REPEAT](../../assembler/masm/dot-repeat.md)
+- [.UNTILCXZ](dot-untilcxz.md) without [.REPEAT](dot-repeat.md)
 
-- [.CONTINUE](../../assembler/masm/dot-continue.md) without [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md)
+- [.CONTINUE](dot-continue.md) without [.WHILE](dot-while.md) or [.REPEAT](dot-repeat.md)
 
-- [.BREAK](../../assembler/masm/dot-break.md) without [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md)
+- [.BREAK](dot-break.md) without [.WHILE](dot-while.md) or [.REPEAT](dot-repeat.md)
 
-- [.ELSE](../../assembler/masm/dot-else.md) following `.ELSE`
+- [.ELSE](dot-else.md) following `.ELSE`
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

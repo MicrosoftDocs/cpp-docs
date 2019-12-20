@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2107"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2107"]
 helpviewer_keywords: ["A2107"]
@@ -14,4 +14,4 @@ An attempt was made to make an implicit far jump or call to a near label in anot
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

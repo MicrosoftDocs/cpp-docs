@@ -5,18 +5,19 @@ f1_keywords: ["end"]
 helpviewer_keywords: ["END directive"]
 ms.assetid: 128d1c17-f4c4-4ac6-bdb7-d14b4a9a7f4c
 ---
-# END (MASM)
+# END
 
-Marks the end of a module and, optionally, sets the program entry point to *address*.
+Marks the end of a module and, optionally, sets the program entry point to *procId*.
 
 ## Syntax
 
-> **END** ⟦*address*⟧
+> **END** ⟦*procId*⟧
 
 ## Remarks
 
-The *address* argument is valid in 32-bit MASM only.
+The *procId* argument is valid in 32-bit MASM only.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

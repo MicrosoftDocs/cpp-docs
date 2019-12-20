@@ -1,6 +1,6 @@
 ---
 title: "@Model"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@Model"]
 helpviewer_keywords: ["@Model symbol"]
 ms.assetid: a67c04ac-6ba7-458c-8138-0346e5b85eb6
@@ -15,4 +15,5 @@ ms.assetid: a67c04ac-6ba7-458c-8138-0346e5b85eb6
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

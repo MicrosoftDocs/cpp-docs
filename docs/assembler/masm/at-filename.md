@@ -1,6 +1,6 @@
 ---
 title: "@FileName"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["@FileName"]
 helpviewer_keywords: ["@FileName symbol"]
 ms.assetid: a713bf70-2abd-4953-b187-7875ded58e52
@@ -15,4 +15,5 @@ The base name of the main file being assembled (text macro).
 
 ## See also
 
-[Symbols reference](symbols-reference.md)
+[Symbols reference](symbols-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)
