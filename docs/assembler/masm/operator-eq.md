@@ -1,6 +1,6 @@
 ---
 title: "operator EQ"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator EQ", "EQ"]
 helpviewer_keywords: ["operator EQ", "EQ operator"]
 ms.assetid: d88afd01-dd8e-419d-ac4e-49afb4a67197
@@ -15,4 +15,5 @@ Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

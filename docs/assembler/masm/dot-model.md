@@ -30,7 +30,7 @@ Specifying **NEARSTACK** groups the stack segment into a single physical segment
 
 ## Remarks
 
-**.MODEL** is not used in [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+**.MODEL** is not used in [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 The following table lists the possible values for each parameter when targeting 16-bit and 32-bit platforms:
 
@@ -80,4 +80,5 @@ end
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

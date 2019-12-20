@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2206"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2206"]
 helpviewer_keywords: ["A2206"]
@@ -20,4 +20,4 @@ value1 = ( 1 + 2 ) 3
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

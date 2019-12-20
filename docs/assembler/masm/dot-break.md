@@ -7,7 +7,7 @@ ms.assetid: 4f55dfce-ff41-4a68-9423-b0077dfc9206
 ---
 # .BREAK (32-bit MASM)
 
-Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
+Generates code to terminate a [.WHILE](dot-while.md) or [.REPEAT](dot-repeat.md) block if *condition* is true. (32-bit MASM only.)
 
 ## Syntax
 
@@ -15,4 +15,5 @@ Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.R
 
 ## See also
 
-[Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

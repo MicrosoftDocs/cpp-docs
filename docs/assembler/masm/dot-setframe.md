@@ -1,6 +1,6 @@
 ---
 title: ".SETFRAME"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: [".SETFRAME"]
 helpviewer_keywords: [".SETFRAME directive"]
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
@@ -15,9 +15,9 @@ Fills in the frame register field and offset in the unwind information using the
 
 ## Remarks
 
-**.SETFRAME** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](../../assembler/masm/proc.md) FRAME declaration to the [.ENDPROLOG](../../assembler/masm/dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SETFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
+**.SETFRAME** allows ml64.exe users to specify how a frame function unwinds, and is only allowed within the prologue, which extends from the [PROC](proc.md) FRAME declaration to the [.ENDPROLOG](dot-endprolog.md) directive. These directives do not generate code; they only generate `.xdata` and `.pdata`. **.SETFRAME** should be preceded by instructions that actually implement the actions to be unwound. It is a good practice to wrap both the unwind directives and the code they are meant to unwind in a macro to ensure agreement.
 
-For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information, see [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 ## Sample
 
@@ -56,4 +56,5 @@ END
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

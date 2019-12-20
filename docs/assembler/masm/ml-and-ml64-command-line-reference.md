@@ -1,6 +1,6 @@
 ---
 title: "ML and ML64 Command-Line Reference"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["ML"]
 helpviewer_keywords: ["/W* MASM compiler option", "/c MASM compiler option", "/EP MASM compiler option", "/Fe MASM compiler option", "/Zp MASM compiler option", "/AT MASM compiler option", "/Zm MASM compiler option", "/Sf MASM compiler option", "/Sp MASM compiler option", "/w MASM compiler option", "/Fl MASM compiler option", "/coff MASM compiler option", "/St MASM compiler option", "/Cx MASM compiler option", "/Sl MASM compiler option", "/Cu MASM compiler option", "MASM (Microsoft Macro Assembler), ML command-line reference", "/FPi MASM compiler option", "/Zf MASM compiler option", "ML environment variable", "/Fr MASM compiler option", "/help MASM compiler option", "/Sa MASM compiler option", "/Zd MASM compiler option", "/I MASM compiler option", "/? MASM compiler option", "/Bl MASM compiler option", "/Fm MASM compiler option", "/Fo MASM compiler option", "command-line reference [ML]", "/Sn MASM compiler option", "/Gd MASM compiler option", "/D* MASM compiler option", "environment variables, ML", "/Gc MASM compiler option", "/F* MASM compiler option", "/Sc MASM compiler option", "/H MASM compiler option", "/Zs MASM compiler option", "/omf MASM compiler option", "/Sg MASM compiler option", "/Cp MASM compiler option", "/Zi MASM compiler option", "/nologo MASM compiler option", "/Sx MASM compiler option", "/WX MASM compiler option", "/Ss MASM compiler option", "command line, reference [ML]", "/Ta MASM compiler option"]
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
@@ -9,7 +9,7 @@ ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
 
 Assembles and links one or more assembly-language source files. The command-line options are case sensitive.
 
-For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+For more information on ml64.exe, see [MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 ## Syntax
 
@@ -24,7 +24,7 @@ The options listed in the following table.
 
 |Option|Action|
 |------------|------------|
-|**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. Note that this is not equivalent to the [.MODEL](../../assembler/masm/dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
+|**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. Note that this is not equivalent to the [.MODEL](dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
 |**/Bl** *filename*|Selects an alternate linker.|
 |**/c**|Assembles only. Does not link.|
 |**/coff**|Generates common object file format (COFF) type of object module. Generally required for Win32 assembly language development.<br /><br /> Not available in ml64.exe.|
@@ -51,13 +51,13 @@ The options listed in the following table.
 |**/nologo**|Suppresses messages for successful assembly.|
 |**/omf**|Generates object module file format (OMF) type of object module.  **/omf** implies **/c**; ML.exe does not support linking OMF objects.<br /><br /> Not available in ml64.exe.|
 |**/Sa**|Turns on listing of all available information.|
-|**/safeseh**|Marks the object as either containing no exception handlers or containing exception handlers that are all declared with [.SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Not available in ml64.exe.|
+|**/safeseh**|Marks the object as either containing no exception handlers or containing exception handlers that are all declared with [.SAFESEH](dot-safeseh.md).<br /><br /> Not available in ml64.exe.|
 |**/Sf**|Adds first-pass listing to listing file.|
-|**/Sl** *width*|Sets the line width of source listing in characters per line. Range is 60 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) width.|
+|**/Sl** *width*|Sets the line width of source listing in characters per line. Range is 60 to 255 or 0. Default is 0. Same as [PAGE](page.md) width.|
 |**/Sn**|Turns off symbol table when producing a listing.|
-|**/Sp** *length*|Sets the page length of source listing in lines per page. Range is 10 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) length.|
-|**/Ss** *text*|Specifies text for source listing. Same as [SUBTITLE](../../assembler/masm/subtitle.md) text.|
-|**/St** *text*|Specifies title for source listing. Same as [TITLE](../../assembler/masm/title.md) text.|
+|**/Sp** *length*|Sets the page length of source listing in lines per page. Range is 10 to 255 or 0. Default is 0. Same as [PAGE](page.md) length.|
+|**/Ss** *text*|Specifies text for source listing. Same as [SUBTITLE](subtitle.md) text.|
+|**/St** *text*|Specifies title for source listing. Same as [TITLE](title.md) text.|
 |**/Sx**|Turns on false conditionals in listing.|
 |**/Ta** *filename*|Assembles source file whose name does not end with the .asm extension.|
 |**/w**|Same as **/W0/WX**.|
@@ -94,5 +94,5 @@ Some command-line options to ML and ML64 are placement-sensitive. For example, b
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)\
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[ML Error Messages](ml-error-messages.md)\
+[Microsoft Macro Assembler Reference](microsoft-macro-assembler-reference.md)

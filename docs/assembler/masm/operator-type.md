@@ -1,6 +1,6 @@
 ---
 title: "operator TYPE"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["Type", "operator TYPE"]
 helpviewer_keywords: ["operator TYPE", "TYPE operator"]
 ms.assetid: 5e714381-4a58-4323-88f8-512b01b2e155
@@ -15,4 +15,5 @@ Returns the type of *expression*.
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Macro Assembler reference"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Microsoft Macro Assembler), overview", "MASM (Microsoft Macro Assembler)", "MASM (Microsoft Macro Assembler), documentation overview"]
 ms.assetid: 1446d55f-e2e7-4fd1-a9b8-b15cf7d4e47c
 ---
@@ -10,26 +10,30 @@ The Microsoft Macro Assembler (MASM) provides several advantages over inline ass
 
 ## In This Section
 
-[ML and ML64 command-line option](../../assembler/masm/ml-and-ml64-command-line-reference.md)\
+[ML and ML64 command-line option](ml-and-ml64-command-line-reference.md)\
 Describes the ML.exe and ML64.exe command-line options.
 
-[ML error messages](../../assembler/masm/ml-error-messages.md)\
+[ML error messages](ml-error-messages.md)\
 Describes ML.exe fatal and nonfatal error messages and warnings.
 
 [Directives reference](directives-reference.md)\
 Provides links to articles that discuss the use of directives in MASM.
 
-[Symbols Reference](../../assembler/masm/symbols-reference.md)\
+[Symbols Reference](symbols-reference.md)\
 Provides links to articles that discuss the use of symbols in MASM.
 
-[Operators Reference](../../assembler/masm/operators-reference.md)\
+[Operators Reference](operators-reference.md)\
 Provides links to articles that discuss the use of operators in MASM.
 
-[Processor Manufacturer Programming Manuals](../../assembler/masm/processor-manufacturer-programming-manuals.md)\
+[Processor Manufacturer Programming Manuals](processor-manufacturer-programming-manuals.md)\
 Provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft.
 
-[MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)\
+[MASM for x64 (ml64.exe)](masm-for-x64-ml64-exe.md)\
 Information about how to create output files for x64.
+
+[MASM BNF Grammar](masm-bnf-grammar.md)
+
+Formal BNF description of MASM for x64.
 
 ## Related Sections
 

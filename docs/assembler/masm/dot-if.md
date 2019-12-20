@@ -21,8 +21,9 @@ Generates code that tests *condition1* (for example, AX > 7) and executes the *s
 
 ## Remarks
 
-If a [.ELSE](../../assembler/masm/dot-else.md) follows, its statements are executed if the original condition was false. Note that the conditions are evaluated at run time.
+If a [.ELSE](dot-else.md) follows, its statements are executed if the original condition was false. Note that the conditions are evaluated at run time.
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

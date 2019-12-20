@@ -1,6 +1,6 @@
 ---
 title: "operator :"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["operator :"]
 helpviewer_keywords: [": operator", "operator :"]
 ms.assetid: 37c02c10-d3b0-44c2-bc69-3e8837991920
@@ -15,4 +15,5 @@ Overrides the default segment of *expression* with *segment*. The *segment* can 
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

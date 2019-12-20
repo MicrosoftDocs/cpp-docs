@@ -1,6 +1,6 @@
 ---
 title: "operator LROFFSET"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["LROFFSET", "operator LROFFSET"]
 helpviewer_keywords: ["operator LROFFSET", "LROFFSET operator"]
 ms.assetid: 61ab45d4-7a30-440d-9c11-2a9dfa6ae565
@@ -15,4 +15,5 @@ Returns the offset of *expression*. Same as **OFFSET**, but it generates a loade
 
 ## See also
 
-[Operators reference](operators-reference.md)
+[Operators reference](operators-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)
