@@ -1,6 +1,6 @@
 ---
 title: "MASM for x64 (ml64.exe)"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 helpviewer_keywords: ["ml64", "ml64.exe", "masm for x64"]
 ms.assetid: 89059103-f372-4968-80ea-0c7f90bb9c91
 ---
@@ -10,7 +10,7 @@ Visual Studio includes both 32-bit and 64-bit hosted versions of Microsoft Assem
 
 To use MASM to build code for x64 targets on the command line, you must use a developer command prompt for x64 targets, which sets the required path and other environment variables. For information on how to start a developer command prompt, see [Build C/C++ code on the command line](../../build/building-on-the-command-line.md).
 
-For information on ml64.exe command line options, see [ML and ML64 Command-Line Reference](../../assembler/masm/ml-and-ml64-command-line-reference.md).
+For information on ml64.exe command line options, see [ML and ML64 Command-Line Reference](ml-and-ml64-command-line-reference.md).
 
 Inline assembler or use of the ASM keyword is not supported for x64 or ARM targets. To port your x86 code that uses inline assembler to x64 or ARM, you can convert your code to C++, use compiler intrinsics, or create assembler-language source files. The Microsoft C++ compiler supports intrinsics to allow you to use special-function instructions, for example, privileged, bit scan/test, interlocked, and so on, in as close to a cross-platform manner as possible. For information on available intrinsics, see [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md).
 
@@ -34,21 +34,21 @@ Create your assembler-language code in the .asm file you added. When you build y
 
 You can use the following ml64-specific directives in your assembler-language source code that targets x64:
 
-- [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
+- [.ALLOCSTACK](dot-allocstack.md)
 
-- [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)
+- [.ENDPROLOG](dot-endprolog.md)
 
-- [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)
+- [.PUSHFRAME](dot-pushframe.md)
 
-- [.PUSHREG](../../assembler/masm/dot-pushreg.md)
+- [.PUSHREG](dot-pushreg.md)
 
-- [.SAVEREG](../../assembler/masm/dot-savereg.md)
+- [.SAVEREG](dot-savereg.md)
 
-- [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)
+- [.SAVEXMM128](dot-savexmm128.md)
 
-- [.SETFRAME](../../assembler/masm/dot-setframe.md)
+- [.SETFRAME](dot-setframe.md)
 
-In addition, the [PROC](../../assembler/masm/proc.md) directive has been updated for use with ml64.exe.
+In addition, the [PROC](proc.md) directive has been updated for use with ml64.exe.
 
 ## 32-Bit Address Mode (Address Size Override)
 
@@ -73,4 +73,4 @@ mov eax, DWORD PTR [ecx*2+r10+0100h]
 
 ## See also
 
-[Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler Reference](microsoft-macro-assembler-reference.md)

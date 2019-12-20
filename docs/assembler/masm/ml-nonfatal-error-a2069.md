@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2069"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2069"]
 helpviewer_keywords: ["A2069"]
@@ -14,4 +14,4 @@ One or more operands were specified with an instruction that takes no operands.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

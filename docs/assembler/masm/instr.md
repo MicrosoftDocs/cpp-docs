@@ -1,6 +1,6 @@
 ---
 title: "INSTR"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["InStr"]
 helpviewer_keywords: ["INSTR directive"]
 ms.assetid: fc37f6a2-3c95-47b2-b6bb-1066edd25994
@@ -19,4 +19,5 @@ The starting *position* is optional. Each text item can be a literal string, a c
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

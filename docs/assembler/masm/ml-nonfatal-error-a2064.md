@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2064"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2064"]
 helpviewer_keywords: ["A2064"]
@@ -14,4 +14,4 @@ The alignment specified in a structure definition was invalid.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

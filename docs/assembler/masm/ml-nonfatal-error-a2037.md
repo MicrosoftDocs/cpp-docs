@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2037"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2037"]
 helpviewer_keywords: ["A2037"]
@@ -12,8 +12,8 @@ ms.assetid: e7fdb98b-3ce9-4e1f-99fc-1b1ea10b6961
 
 A structure definition contained an invalid statement.
 
-A structure cannot contain instructions, labels, procedures, control-flow directives, [.STARTUP](../../assembler/masm/dot-startup.md), or [.EXIT](../../assembler/masm/dot-exit.md).
+A structure cannot contain instructions, labels, procedures, control-flow directives, [.STARTUP](dot-startup.md), or [.EXIT](dot-exit.md).
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

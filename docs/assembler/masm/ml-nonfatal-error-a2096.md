@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2096"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2096"]
 helpviewer_keywords: ["A2096"]
@@ -16,8 +16,8 @@ One of the following occurred:
 
 - The left operand specified with the segment override operator (**:**) was not a segment register (CS, DS, SS, ES, FS, or GS), group name, segment name, or segment expression.
 
-- The [ASSUME](../../assembler/masm/assume.md) directive was given a segment register without a valid segment address, segment register, group, or the special **FLAT** group.
+- The [ASSUME](assume.md) directive was given a segment register without a valid segment address, segment register, group, or the special **FLAT** group.
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

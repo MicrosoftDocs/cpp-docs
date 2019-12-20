@@ -1,13 +1,13 @@
 ---
 title: "%OUT"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["%OUT"]
 helpviewer_keywords: ["%OUT directive"]
 ms.assetid: d08c2757-76a3-46a2-a4d1-52f7a7e985f7
 ---
 # %OUT
 
-See [ECHO](../../assembler/masm/echo.md).
+See [ECHO](echo.md).
 
 ## Syntax
 
@@ -15,4 +15,5 @@ See [ECHO](../../assembler/masm/echo.md).
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

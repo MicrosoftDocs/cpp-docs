@@ -1,6 +1,6 @@
 ---
 title: "ML Warning A4004"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A4004"]
 helpviewer_keywords: ["A4004"]
@@ -14,4 +14,4 @@ An attempt was made to assume a value for the CS register. CS is always set to t
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

@@ -1,6 +1,6 @@
 ---
 title: "SEGMENT"
-ms.date: "12/06/2019"
+ms.date: "12/16/2019"
 f1_keywords: ["SEGMENT"]
 helpviewer_keywords: ["SEGMENT directive"]
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
@@ -17,7 +17,7 @@ Defines a program segment called *name* having segment attributes
 
 #### Parameters
 
-*align*<br/>
+*align*\
 The range of memory addresses from which a starting address for the segment can be selected. The alignment type can be any one of the following:
 
 |Align Type|Starting Address|
@@ -56,4 +56,5 @@ For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/
 
 ## See also
 
-[Directives reference](directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)

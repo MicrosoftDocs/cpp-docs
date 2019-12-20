@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2044"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2044"]
 helpviewer_keywords: ["A2044"]
@@ -14,4 +14,4 @@ The source file contained a character outside a comment, string, or literal that
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

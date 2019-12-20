@@ -1,6 +1,6 @@
 ---
 title: "ML Nonfatal Error A2074"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 ms.custom: "error-reference"
 f1_keywords: ["A2074"]
 helpviewer_keywords: ["A2074"]
@@ -14,4 +14,4 @@ An attempt was made to access a label through a segment register that was not as
 
 ## See also
 
-[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
+[ML Error Messages](ml-error-messages.md)

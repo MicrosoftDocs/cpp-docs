@@ -1,6 +1,6 @@
 ---
 title: "REAL4"
-ms.date: "08/30/2018"
+ms.date: "12/17/2019"
 f1_keywords: ["REAL4"]
 helpviewer_keywords: ["REAL4 directive"]
 ms.assetid: b41d584b-6c9d-4bea-9d31-a2c70b292d50
@@ -15,4 +15,5 @@ Allocates and optionally initializes a single-precision (4-byte) floating-point 
 
 ## See also
 
-[Directives reference](../../assembler/masm/directives-reference.md)
+[Directives reference](directives-reference.md)\
+[MASM BNF Grammar](masm-bnf-grammar.md)
