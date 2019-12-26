@@ -794,9 +794,10 @@ The number '30' is in c1 collection 3 times.
 Inserts an element constructed in place into the vector at a specified position.
 
 ```cpp
+template <class... Types>
 iterator emplace(
     const_iterator _Where,
-    Type&& val);
+    Types&&... _Args);
 ```
 
 ### Parameters
@@ -804,8 +805,8 @@ iterator emplace(
 *_Where*\
 The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.
 
-*val*\
-The value of the element being inserted into the `vector`.
+*_Args*\
+Constructor arguments. The function infers which constructor overload to invoke based on the arguments provided.
 
 ### Return Value
 
