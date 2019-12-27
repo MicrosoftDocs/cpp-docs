@@ -110,7 +110,7 @@ The basic requirements that `std::vector` and other standard library containers 
 
 ## Non-type parameters
 
-Unlike generic types in other languages such as C# and Java, C++ templates support *non-type parameters*, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the [std::array](../standard-library/array-class.md) class in the Standard Library:
+Unlike generic types in other languages such as C# and Java, C++ templates support *non-type parameters*, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the [std::array](../standard-library/array-class-stl.md) class in the Standard Library:
 
 ```cpp
 template<typename T, size_t L>
