@@ -1,6 +1,6 @@
 ---
 title: "Templates (C++)"
-ms.date: "11/04/2016"
+ms.date: "12/27/2019"
 f1_keywords: ["template_cpp"]
 helpviewer_keywords: ["templates, C++", "templates [C++]"]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
@@ -74,7 +74,7 @@ vtclass<int> vtinstance2;
 vtclass<float, bool> vtinstance3;
 ```
 
-Any built-in or user-defined type can be used as a type argument. For example, you can use std::vector in the Standard Library to store ints, doubles, strings, MyClass, const MyClass*, MyClass&. The primary restriction when using templates is that a type argument must support any operations that are applied to the type parameters. For example, if we call minimum using MyClass as in this example:
+Any built-in or user-defined type can be used as a type argument. For example, you can use [std::vector](../standard-library/vector-class.md) in the Standard Library to store variables of type **int**, **double**, [std::string](../standard-library/basic-string-class.md), `MyClass`, **const** `MyClass`*, `MyClass&`, and so on. The primary restriction when using templates is that a type argument must support any operations that are applied to the type parameters. For example, if we call `minimum` using `MyClass` as in this example:
 
 ```cpp
 class MyClass
@@ -92,7 +92,7 @@ int main()
 }
 ```
 
-A compiler error will be generated because MyClass does not provide an overload for the < operator.
+A compiler error will be generated because `MyClass` does not provide an overload for the **<** operator.
 
 There is no inherent requirement that the type arguments for any particular template all belong to the same object hierarchy, although you can define a template that enforces such a restriction. You can combine object-oriented techniques with templates; for example, you can store a Derived* in a vector\<Base\*>.    Note that the arguments must be pointers
 
@@ -106,11 +106,11 @@ vector<MyClass*> vec;
    vec2.push_back(make_shared<MyDerived>());
 ```
 
-The basic requirements that vector and other standard library containers impose on elements of `T` is that `T` be copy-assignable and copy-constructible.
+The basic requirements that `std::vector` and other standard library containers impose on elements of `T` is that `T` be copy-assignable and copy-constructible.
 
 ## Non-type parameters
 
-Unlike generic types in other languages such as C# and Java, C++ templates support non-type parameters, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the std::array class in the Standard Library:
+Unlike generic types in other languages such as C# and Java, C++ templates support *non-type parameters*, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the [std::array](../standard-library/array-class.md) class in the Standard Library:
 
 ```cpp
 template<typename T, size_t L>
@@ -122,13 +122,25 @@ public:
 };
 ```
 
-Note the syntax in the template declaration. The size_t value is passed in as a template argument at compile time and must be constant or a constexpr expression. You use it like this:
+Note the syntax in the template declaration. The `size_t` value is passed in as a template argument at compile time and must be **const** or a **constexpr** expression. You use it like this:
 
 ```cpp
 MyArray<MyClass*, 10> arr;
 ```
 
 Other kinds of values including pointers and references can be passed in as non-type parameters. For example, you can pass in a pointer to a function or function object to customize some operation inside the template code.
+
+### Type deduction for non-type template parameters
+
+In Visual Studio 2017 and later, in **/std:c++17** mode the compiler deduces the type of a non-type template argument that is declared with **auto**:
+
+```cpp
+template <auto x> constexpr auto constant = x;
+
+auto v1 = constant<5>;      // v1 == 5, decltype(v1) is int
+auto v2 = constant<true>;   // v2 == true, decltype(v2) is bool
+auto v3 = constant<'a'>;    // v3 == 'a', decltype(v3) is char
+```
 
 ## <a id="template_parameters"></a> Templates as template parameters
 
