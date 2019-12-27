@@ -131,6 +131,8 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
+In **/std:c++17** mode, the rules for empty brace initialization are slightly more restrictive. See [Derived constructors and extended aggregate initialization](constructors-cpp.md#extended_aggregate).
+
 ## initializer_list constructors
 
 The [initializer_list Class](../standard-library/initializer-list-class.md) represents a list of objects of a specified type that can be used in a constructor, and in other contexts. You can construct an initializer_list by using brace initialization:
