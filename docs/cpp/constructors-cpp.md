@@ -471,7 +471,7 @@ If a constructor throws an exception, the order of destruction is the reverse of
 
 ## <a name="extended_aggregate"></a> Derived constructors and extended aggregate initialization
 
-If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio 2017 version 15.7 and later you can't use empty braces to initialize an object of the derived type.
+If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio 2017 and later you can't use empty braces to initialize an object of the derived type.
 
 The following example shows C++14 conformant behavior:
 
@@ -493,7 +493,7 @@ Derived d2 {}; // OK in C++14: Calls Derived::Derived()
 
 In C++17, `Derived` is now considered an aggregate type. It means that the initialization of `Base` via the private default constructor happens directly, as part of the extended aggregate initialization rule. Previously, the `Base` private constructor was called via the `Derived` constructor, and it succeeded because of the friend declaration.
 
-The following example shows C++17 behavior in Visual Studio 2017 version 15.7 in **/std:c++17** mode:
+The following example shows C++17 behavior in Visual Studio 2017 and later in **/std:c++17** mode:
 
 ```cpp
 struct Derived;
