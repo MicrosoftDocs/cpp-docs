@@ -18,7 +18,7 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`project`|string|Specifies the relative path to the project file.|
 |`projectTarget`|string|Specifies the optional target invoked when building `project`. This `projectTarget` must exist already and match the name in the **Debug Target** dropdown.|
 |`debugType`|string|Specifies the debugging mode according to the type of code (native, managed, or mixed). This will automatically be detected unless this parameter is set. Allowed values: "native", "managed", "mixed".|
-|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like CMakeSettings.json or CppProperties.json and make them available to debug context|
+|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to debug context.  **Visual Studio 16.4:**: Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to "null".|
 |`args`|array|Specifies the command-line arguments passed to the launched program.|
 |`currentDir`|string|Specifies the full directory path to the Build Target. This will automatically be detected unless this parameter is set.|
 |`noDebug`|boolean|Specifies whether to debug the launched program. The default value for this parameter is `false` if not specified.|
