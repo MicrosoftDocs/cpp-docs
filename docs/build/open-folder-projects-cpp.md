@@ -1,6 +1,6 @@
 ---
 title: "Open Folder support for C++ build systems in Visual Studio"
-ms.date: "10/21/2019"
+ms.date: "12/02/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
@@ -36,11 +36,11 @@ For IntelliSense and browsing behavior such as **Go to Definition** to work corr
 
 ![Manage configurations dropdown](media/manage-configurations-dropdown.png)
 
-Currently, Visual Studio offers four default configurations, all for the Microsoft C++ compiler:
+Visual Studio offers the following default configurations:
 
 ![Default configurations](media/default-configurations.png)
 
-If, for example, you choose **x64-Debug**, Visual Studio creates a file called *CppProperties.json* in your root project folder and populates it like so:
+If, for example, you choose **x64-Debug**, Visual Studio creates a file called *CppProperties.json* in your root project folder:
 
 ```json
 {
@@ -66,19 +66,18 @@ If, for example, you choose **x64-Debug**, Visual Studio creates a file called *
 }
 ```
 
-This configuration "inherits" the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
+This configuration inherits the environment variables of the Visual Studio [x64 Developer Command Prompt](building-on-the-command-line.md). One of those variables is `INCLUDE` and you can refer to it here by using the `${env.INCLUDE}` macro. The `includePath` property tells Visual Studio where to look for all the sources that it needs for IntelliSense. In this case, it says "look in the all the directories specified by the INCLUDE environment variable, and also all the directories in the current working folder tree." The `name` property is the name that will appear in the dropdown, and can be anything you like. The `defines` property provides hints to IntelliSense when it encounters conditional compilation blocks. The `intelliSenseMode` property provides some additional hints based on the compiler type. Several options are available for MSVC, GCC, and Clang.
 
 > [!NOTE]
 > If Visual Studio seems to be ignoring settings in *CppProperties.json*, try adding an exception to your *.gitignore* file like this: `!/CppProperties.json`.
 
-## Example configuration for GCC
+## Default configuration for MinGW-w64
 
-If you are using a compiler other than Microsoft C++, you have to create a custom configuration and environment in *CppProperties.json*. The following example shows a complete *CppProperties.json* file with a single custom configuration for using GCC in an MSYS2 installation:
+If you add the MinGW-W64 configuration, the JSON looks this this:
 
 ```json
 {
-  "configurations": [
-   {
+  {
       "inheritEnvironments": [
         "mingw_64"
       ],
@@ -93,20 +92,17 @@ If you are using a compiler other than Microsoft C++, you have to create a custo
           "MINGW64_ROOT": "C:\\msys64\\mingw64",
           "BIN_ROOT": "${env.MINGW64_ROOT}\\bin",
           "FLAVOR": "x86_64-w64-mingw32",
-          "TOOLSET_VERSION": "8.3.0",
-          "PATH": "${env.MINGW64_ROOT}\\bin;${env.MINGW64_ROOT}\\..\\usr\\local\\bin;${env.MINGW64_ROOT}\\..\\usr\\bin;${env.MINGW64_ROOT}\\..\\bin;${env.PATH}",
+          "TOOLSET_VERSION": "9.1.0",
+          "PATH": "${env.BIN_ROOT};${env.MINGW64_ROOT}\\..\\usr\\local\\bin;${env.MINGW64_ROOT}\\..\\usr\\bin;${env.MINGW64_ROOT}\\..\\bin;${env.PATH}",
           "INCLUDE": "${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION};${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\tr1;${env.MINGW64_ROOT}\\include\\c++\\${env.TOOLSET_VERSION}\\${env.FLAVOR}",
           "environment": "mingw_64"
         }
       ]
-   }
+    }
 }
 ```
 
 Note the `environments` block. It defines properties that behave like environment variables and are available not only in the *CppProperties.json* file, but also in the other configuration files *task.vs.json* and *launch.vs.json*. The `Mingw64` configuration inherits the `mingw_w64` environment, and uses its `INCLUDE` property to specify the value for `includePath`. You can add other paths to this array property as needed.`
-
-> [!WARNING]
-> There is currently a known issue in which the `INCLUDE` value specified in `environments` is not correctly passed to the `includePath` property. You can work around the issue by adding the complete literal include paths to the `includePath` array.
 
 The `intelliSenseMode` property is set to a value appropriate for GCC. For more information on all these properties, see [CppProperties schema reference](cppproperties-schema-reference.md).
 
@@ -151,7 +147,7 @@ This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual 
 
 ```
 
-The JSON file is placed in the *.vs* subfolder which you can see if you click on the **Show All Files** button at the top of **Solution Explorer**. You can run this task by right-clicking on the root node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
+The JSON file is placed in the *.vs* subfolder. To see that folder, click on the **Show All Files** button at the top of **Solution Explorer**. You can run this task by right-clicking on the root node in **Solution Explorer** and choosing **build hello**. When the task completes you should see a new file, *hello.exe* in **Solution Explorer**.
 
 You can define many kinds of tasks. The following example shows a *tasks.vs.json file* that defines a single task. `taskLabel` defines the name that appears in the context menu. `appliesTo` defines which files the command can be performed on. The `command` property refers to the COMSPEC environment variable, which identifies the path for the console (*cmd.exe* on Windows). You can also reference environment variables that are declared in CppProperties.json or CMakeSettings.json. The `args` property specifies the command line to be invoked. The `${file}` macro retrieves the selected file in **Solution Explorer**. The following example will display the filename of the currently selected .cpp file.
 
@@ -176,7 +172,7 @@ For more information, see [Tasks.vs.json schema reference](tasks-vs-json-schema-
 
 ### Configure debugging parameters with launch.vs.json
 
-To customize your program’s command line arguments and debugging instructions, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing *launch.vs.json* file, or if none exists, it will create a new file with a set of minimal launch settings. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
+To customize your program’s command line arguments and debugging instructions, right-click on the executable in **Solution Explorer** and select **Debug and Launch Settings**. This will open an existing *launch.vs.json* file, or if none exists, it will create a new file with a set of minimal launch settings. First you are given a choice of what kind of debug session you want to configure. For debugging a MinGw-w64 project, we choose **C/C++ Launch for MinGW/Cygwin (gdb)**. This creates a launch configuration for using *gdb.exe* with some educated guesses about default values. One of those default values is `MINGW_PREFIX`. You can substitute the literal path (as shown below) or you can define a `MINGW_PREFIX` property in *CppProperties.json*:
 
 ```json
 {
