@@ -21,7 +21,7 @@ The default properties are available on all types of tasks:
 |`appliesTo`|string| (Required.) Specifies which files the command can be performed on. The use of wildcards is supported, for example: "*", "*.cpp", "/*.txt"|
 |`contextType`|string| Allowed values: "custom", "build", "clean", "rebuild". Determines where in the context menu the task will appear. Defaults to "custom".|
 |`output`|string| Specifies an output tag to your task.|
-|`inheritEnvironments`|array| Specifies a set of environment variables inherited from multiple sources. You can define variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to the task context.|
+|`inheritEnvironments`|array| Specifies a set of environment variables inherited from multiple sources. You can define variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to the task context. **Visual Studio 16.4:**: Specify environment variables on a per-task basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to "null".|
 |`passEnvVars`|boolean| Specifies whether or not to include additional environment variables to the task context. These variables are different from the ones defined using the `envVars` property. Defaults to "true".|
 
 ## Launch properties

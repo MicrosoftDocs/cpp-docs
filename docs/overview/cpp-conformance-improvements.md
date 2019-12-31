@@ -1235,13 +1235,11 @@ For more information, see [Constructors](../cpp/constructors-cpp.md#inheriting_c
 
 [P0017R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0017r1.html)
 
-If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio version 15.7 you can no longer use empty braces to initialize an object of the derived type.
-
+If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio 2017 version 15.7 you can no longer use empty braces to initialize an object of the derived type.
 The following example shows C++14 conformant behavior:
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
@@ -1249,32 +1247,26 @@ private:
 };
 
 struct Derived : Base {};
-
 Derived d1; // OK. No aggregate init involved.
 Derived d2 {}; // OK in C++14: Calls Derived::Derived()
                // which can call Base ctor.
 ```
 
 In C++17, `Derived` is now considered an aggregate type. It means that the initialization of `Base` via the private default constructor happens directly, as part of the extended aggregate initialization rule. Previously, the `Base` private constructor was called via the `Derived` constructor, and it succeeded because of the friend declaration.
-
 The following example shows C++17 behavior in Visual Studio version 15.7 in **/std:c++17** mode:
 
 ```cpp
 struct Derived;
-
 struct Base {
     friend struct Derived;
 private:
     Base() {}
 };
-
 struct Derived : Base {
     Derived() {} // add user-defined constructor
                  // to call with {} initialization
 };
-
 Derived d1; // OK. No aggregate init involved.
-
 Derived d2 {}; // error C2248: 'Base::Base': cannot access
                // private member declared in class 'Base'
 ```

@@ -1,12 +1,12 @@
 ---
-title: "CppProperties.json schema reference"
+title: "CppProperties.json reference"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["CppProperties.json file [C++]"]
 ---
 
-# CppProperties.json schema reference
+# CppProperties.json reference
 
-Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project.
+Open Folder projects that don't use CMake can store project configuration settings for IntelliSense in a *CppProperties.json* file. (CMake projects use a [CMakeSettings.json](customize-cmake-settings.md) file.) A configuration consists of name/value pairs and defines #include paths, compiler switches, and other parameters. See [Open Folder projects for C++](open-folder-projects-cpp.md) for more information about how to add configurations in an Open Folder project. The following sections summarize the various settings. For a complete description of the schema, navigate to *CppProperties_schema.json*, whose full path is given at the top of the code editor when *CppProperties.json* is open.
 
 ## Configuration properties
 
@@ -81,7 +81,9 @@ When the Linux workload is installed, the following environments are available f
 
 You can optionally use the `environments` property to define sets of variables in *CppProperties.json* either globally or per-configuration. These variables behave like environment variables in the context of an Open Folder project and can be accessed with the ${env.\<VARIABLE>} syntax from *tasks.vs.json* and *launch.vs.json* after they are defined here. However, they are not necessarily set as actual environment variables in any command prompt that Visual Studio uses internally.
 
-When you consume an environment, then you have to specify it in the `inheritsEnvironments` property even if the environment is defined as part of the same configuration; the `environment` property specifies the name of the environment. The following example shows a sample configuration for enabling IntelliSense for GCC in an MSYS2 installation. Note how the configuration both defines and inherits the `mingw_64` environment, and how the `includePath` property can access the `INCLUDE` variable.
+**Visual Studio 2019 version 16.4 and later:** Configuration-specific variables defined in *CppProperties.json* are automatically picked up by debug targets and tasks without the need to set `inheritEnvironments`. Debug targets are launched automatically with the environment you specify in *CppProperties.json*.
+
+**Visual Studio 2019 version 16.3 and earlier:** When you consume an environment, then you have to specify it in the `inheritsEnvironments` property even if the environment is defined as part of the same configuration; the `environment` property specifies the name of the environment. The following example shows a sample configuration for enabling IntelliSense for GCC in an MSYS2 installation. Note how the configuration both defines and inherits the `mingw_64` environment, and how the `includePath` property can access the `INCLUDE` variable.
 
 ```json
 "configurations": [
