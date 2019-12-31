@@ -1,6 +1,6 @@
 ---
 title: "Constructors (C++)"
-ms.date: "11/19/2019"
+ms.date: "12/27/2019"
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
 ---
@@ -468,6 +468,52 @@ If a constructor throws an exception, the order of destruction is the reverse of
 1. Base class and member objects are destroyed, in the reverse order of declaration.
 
 1. If the constructor is non-delegating, all fully-constructed base class objects and members are destroyed. However, because the object itself is not fully constructed, the destructor is not run.
+
+## <a name="extended_aggregate"></a> Derived constructors and extended aggregate initialization
+
+If the constructor of a base class is non-public, but accessible to a derived class, then under **/std:c++17** mode in Visual Studio 2017 and later you can't use empty braces to initialize an object of the derived type.
+
+The following example shows C++14 conformant behavior:
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {};
+
+Derived d1; // OK. No aggregate init involved.
+Derived d2 {}; // OK in C++14: Calls Derived::Derived()
+               // which can call Base ctor.
+```
+
+In C++17, `Derived` is now considered an aggregate type. It means that the initialization of `Base` via the private default constructor happens directly, as part of the extended aggregate initialization rule. Previously, the `Base` private constructor was called via the `Derived` constructor, and it succeeded because of the friend declaration.
+
+The following example shows C++17 behavior in Visual Studio 2017 and later in **/std:c++17** mode:
+
+```cpp
+struct Derived;
+
+struct Base {
+    friend struct Derived;
+private:
+    Base() {}
+};
+
+struct Derived : Base {
+    Derived() {} // add user-defined constructor
+                 // to call with {} initialization
+};
+
+Derived d1; // OK. No aggregate init involved.
+
+Derived d2 {}; // error C2248: 'Base::Base': cannot access
+               // private member declared in class 'Base'
+```
 
 ### Constructors for classes that have multiple inheritance
 
