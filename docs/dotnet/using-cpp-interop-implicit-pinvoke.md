@@ -20,7 +20,7 @@ Explicit PInvoke is supported by the .NET Framework and is available in most .NE
 
 ## C++ Interop
 
-C++ Interop is recommended over explicit PInvoke because it provides better type safety, is typically less tedious to implement, is more forgiving if the unmanaged API is modified, and makes performance enhancements possible that are not possible with explicit PInvoke. However, C++ Interop is not possible if the unmanaged source code is not available.
+C++ Interop provides better type safety and it is typically less tedious to implement. However, C++ Interop is not an option if the unmanaged source code is not available or for cross-platform projects.
 
 ## C++ COM Interop
 
