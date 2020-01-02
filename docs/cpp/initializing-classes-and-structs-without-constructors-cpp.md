@@ -159,7 +159,7 @@ The standard library container classes, and also `string`, `wstring`, and `regex
 vector<int> v1{ 9, 10, 11 };
 map<int, string> m1{ {1, "a"}, {2, "b"} };
 string s{ 'a', 'b', 'c' };
-regex rgx{'x', 'y', 'z'};
+regex rgx{ 'x', 'y', 'z' };
 ```
 
 
