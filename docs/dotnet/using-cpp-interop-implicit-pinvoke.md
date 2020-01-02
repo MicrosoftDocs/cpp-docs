@@ -20,7 +20,7 @@ Explicit PInvoke is supported by the .NET Framework and is available in most .NE
 
 ## C++ Interop
 
-C++ Interop provides better type safety and it is typically less tedious to implement. However, C++ Interop is not an option if the unmanaged source code is not available or for cross-platform projects.
+C++ Interop provides better type safety, and it is typically less tedious to implement. However, C++ Interop is not an option if the unmanaged source code is not available, or for cross-platform projects.
 
 ## C++ COM Interop
 
