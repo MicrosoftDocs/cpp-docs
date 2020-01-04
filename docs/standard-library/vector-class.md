@@ -796,16 +796,16 @@ Inserts an element constructed in place into the vector at a specified position.
 ```cpp
 template <class... Types>
 iterator emplace(
-    const_iterator _Where,
-    Types&&... _Args);
+    const_iterator position,
+    Types&&... args);
 ```
 
 ### Parameters
 
-*_Where*\
+*position*\
 The position in the [vector](../standard-library/vector-class.md) where the first element is inserted.
 
-*_Args*\
+*args*\
 Constructor arguments. The function infers which constructor overload to invoke based on the arguments provided.
 
 ### Return Value
@@ -864,12 +864,12 @@ Adds an element constructed in place to the end of the vector.
 
 ```cpp
 template <class... Types>
-void emplace_back(Types&&... _Args);
+void emplace_back(Types&&... args);
 ```
 
 ### Parameters
 
-*_Args*\
+*args*\
 Constructor arguments. The function infers which constructor overload to invoke based on the arguments provided.
 
 ### Example
