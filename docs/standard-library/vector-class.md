@@ -797,7 +797,7 @@ Inserts an element constructed in place into the vector at a specified position.
 template <class... Types>
 iterator emplace(
     const_iterator position,
-    Types&& args);
+    Types&&... args);
 ```
 
 ### Parameters
