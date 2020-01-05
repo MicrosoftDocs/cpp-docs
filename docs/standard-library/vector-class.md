@@ -303,7 +303,7 @@ iterator begin();
 
 ### Return Value
 
-A random-access iterator addressing the first element in the `vector` or to the location succeeding an empty `vector`. Always compare the value returned with [vector::end](#end) to ensure it is valid.
+A random-access iterator addressing the first element in the `vector` or to the location succeeding an empty `vector`. Always compare the value returned with [vector::end](#end) to ensure it's valid.
 
 ### Remarks
 
