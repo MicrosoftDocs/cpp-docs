@@ -48,7 +48,7 @@ class CTreeCtrl : public CWnd
 |[CTreeCtrl::GetIndent](#getindent)|Retrieves the offset (in pixels) of a tree view item from its parent.|
 |[CTreeCtrl::GetInsertMarkColor](#getinsertmarkcolor)|Retrieves the color used to draw the insertion mark for the tree view.|
 |[CTreeCtrl::GetItem](#getitem)|Retrieves the attributes of a specified tree view item.|
-|[CTreeCtrl::GetItemData](#getitemdata)|Returns the 32-bit application-specific value associated with an item.|
+|[CTreeCtrl::GetItemData](#getitemdata)|Returns the application-specific value associated with an item.|
 |[CTreeCtrl::GetItemExpandedImageIndex](#getitemexpandedimageindex)|Retrieves the index of the image to display when the specified item of the current tree-view control is in the expanded state.|
 |[CTreeCtrl::GetItemHeight](#getitemheight)|Retrieves the current height of the tree view items.|
 |[CTreeCtrl::GetItemImage](#getitemimage)|Retrieves the images associated with an item.|
@@ -90,7 +90,7 @@ class CTreeCtrl : public CWnd
 |[CTreeCtrl::SetInsertMark](#setinsertmark)|Sets the insertion mark in a tree view control.|
 |[CTreeCtrl::SetInsertMarkColor](#setinsertmarkcolor)|Sets the color used to draw the insertion mark for the tree view.|
 |[CTreeCtrl::SetItem](#setitem)|Sets the attributes of a specified tree view item.|
-|[CTreeCtrl::SetItemData](#setitemdata)|Sets the 32-bit application-specific value associated with an item.|
+|[CTreeCtrl::SetItemData](#setitemdata)|Sets the application-specific value associated with an item.|
 |[CTreeCtrl::SetItemExpandedImageIndex](#setitemexpandedimageindex)|Sets the index of the image to display when the specified item of the current tree-view control is in the expanded state.|
 |[CTreeCtrl::SetItemHeight](#setitemheight)|Sets the height of the tree view items.|
 |[CTreeCtrl::SetItemImage](#setitemimage)|Associates images with an item.|
@@ -613,7 +613,7 @@ Nonzero if successful; otherwise 0.
 
 ##  <a name="getitemdata"></a>  CTreeCtrl::GetItemData
 
-Call this function to retrieve the 32-bit application-specific value associated with the specified item.
+Call this function to retrieve the application-specific value associated with the specified item.
 
 ```
 DWORD_PTR GetItemData(HTREEITEM hItem) const;
@@ -626,7 +626,7 @@ Handle of the item whose data is to be retrieved.
 
 ### Return Value
 
-A 32-bit application-specific value associated with the item specified by *hItem*.
+A pointer-sized application-specific value associated with the item specified by *hItem*.
 
 ### Example
 
@@ -876,7 +876,7 @@ The following code example retrieves a handle to the last unexpanded tree-view n
 
 ##  <a name="getlinecolor"></a>  CTreeCtrl::GetLineColor
 
-This member function implements the behavior of the win32 message [TVM_GETLINECOLOR](/windows/win32/Controls/tvm-getlinecolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETLINECOLOR](/windows/win32/Controls/tvm-getlinecolor), as described in the Windows SDK.
 
 ```
 COLORREF GetLineColor() const;
@@ -1083,7 +1083,7 @@ The maximum scroll time, in milliseconds.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_GETSCROLLTIME](/windows/win32/Controls/tvm-getscrolltime), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_GETSCROLLTIME](/windows/win32/Controls/tvm-getscrolltime), as described in the Windows SDK.
 
 ##  <a name="getselectedcount"></a>  CTreeCtrl::GetSelectedCount
 
@@ -1276,7 +1276,7 @@ Specifies values for the item's states. See Tree View Control Item States in the
 Specifies which states are to be set. See the `TVITEM` structure in the Windows SDK.
 
 *lParam*<br/>
-A 32-bit application-specific value associated with the item.
+A pointer-sized application-specific value associated with the item.
 
 *hParent*<br/>
 Handle of the inserted item's parent.
@@ -1774,7 +1774,7 @@ Specifies values for the item's states. See the `State` member of the `TVITEM` s
 Specifies which states are to be set. See the `stateMask` member of the `TVITEM` structure.
 
 *lParam*<br/>
-A 32-bit application-specific value associated with the item.
+A pointer-sized application-specific value associated with the item.
 
 ### Return Value
 
@@ -1792,7 +1792,7 @@ If the `mask` member or the *nMask* parameter specifies the TVIF_TEXT value, the
 
 ##  <a name="setitemdata"></a>  CTreeCtrl::SetItemData
 
-Call this function to set the 32-bit application-specific value associated with the specified item.
+Call this function to set the application-specific value associated with the specified item.
 
 ```
 BOOL SetItemData(
@@ -1806,7 +1806,7 @@ BOOL SetItemData(
 Handle of the item whose data is to be retrieved.
 
 *dwData*<br/>
-A 32-bit application-specific value associated with the item specified by *hItem*.
+A pointer-sized application-specific value associated with the item specified by *hItem*.
 
 ### Return Value
 
@@ -2028,7 +2028,7 @@ The previous line color.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_SETLINECOLOR](/windows/win32/Controls/tvm-setlinecolor), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETLINECOLOR](/windows/win32/Controls/tvm-setlinecolor), as described in the Windows SDK.
 
 ### Example
 
@@ -2053,7 +2053,7 @@ The previous maximum scroll time, in milliseconds.
 
 ### Remarks
 
-This member function implements the behavior of the win32 message [TVM_SETSCROLLTIME](/windows/win32/Controls/tvm-setscrolltime), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [TVM_SETSCROLLTIME](/windows/win32/Controls/tvm-setscrolltime), as described in the Windows SDK.
 
 ##  <a name="settextcolor"></a>  CTreeCtrl::SetTextColor
 
