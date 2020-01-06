@@ -1,11 +1,11 @@
 ---
-title: "CFileTimeSpan Class"
+title: "CFileTimeSpan class"
 ms.date: "01/06/2020"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
 helpviewer_keywords: ["shared classes, CFileTimeSpan", "CFileTimeSpan class"]
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
 ---
-# CFileTimeSpan Class
+# CFileTimeSpan class
 
 This class provides methods for managing relative date and time values associated with a file.
 
@@ -17,20 +17,20 @@ class CFileTimeSpan
 
 ## Members
 
-### Public Constructors
+### Public constructors
 
 |Name|Description|
 |----------|-----------------|
 |[CFileTimeSpan::CFileTimeSpan](#cfiletimespan)|The constructor.|
 
-### Public Methods
+### Public methods
 
 |Name|Description|
 |----------|-----------------|
 |[CFileTimeSpan::GetTimeSpan](#gettimespan)|Call this method to retrieve the time span from the `CFileTimeSpan` object.|
 |[CFileTimeSpan::SetTimeSpan](#settimespan)|Call this method to set the time span of the `CFileTimeSpan` object.|
 
-### Public Operators
+### Public operators
 
 |Name|Description|
 |----------|-----------------|
@@ -88,7 +88,7 @@ Call this method to retrieve the time span from the `CFileTimeSpan` object.
 LONGLONG GetTimeSpan() const throw();
 ```
 
-### Return Value
+### Return value
 
 Returns the time span in milliseconds.
 
@@ -105,7 +105,7 @@ CFileTimeSpan operator-(CFileTimeSpan span) const throw();
 *span*\
 A `CFileTimeSpan` object.
 
-### Return Value
+### Return value
 
 Returns a `CFileTimeSpan` object representing the result of the difference between two time spans.
 
@@ -122,7 +122,7 @@ bool operator!=(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the item being compared isn't equal to the `CFileTimeSpan` object; otherwise FALSE.
 
@@ -139,7 +139,7 @@ CFileTimeSpan operator+(CFileTimeSpan span) const throw();
 *span*\
 A `CFileTimeSpan` object.
 
-### Return Value
+### Return value
 
 Returns a `CFileTimeSpan` object containing the sum of the two time spans.
 
@@ -156,7 +156,7 @@ CFileTimeSpan& operator+=(CFileTimeSpan span) throw();
 *span*\
 A `CFileTimeSpan` object.
 
-### Return Value
+### Return value
 
 Returns the updated `CFileTimeSpan` object containing the sum of the two time spans.
 
@@ -173,7 +173,7 @@ bool operator<(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the first object is less (that is, represents a shorter time period) than the second, otherwise FALSE.
 
@@ -190,7 +190,7 @@ bool operator<=(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the first object is less than (that is, represents a shorter time period) or equal to the second, otherwise FALSE.
 
@@ -207,7 +207,7 @@ CFileTimeSpan& operator=(const CFileTimeSpan& span) throw();
 *span*\
 A `CFileTimeSpan` object.
 
-### Return Value
+### Return value
 
 Returns the updated `CFileTimeSpan` object.
 
@@ -224,7 +224,7 @@ CFileTimeSpan& operator-=(CFileTimeSpan span) throw();
 *span*\
 A `CFileTimeSpan` object.
 
-### Return Value
+### Return value
 
 Returns the updated `CFileTimeSpan` object.
 
@@ -241,7 +241,7 @@ bool operator==(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the objects are equal, otherwise FALSE.
 
@@ -258,7 +258,7 @@ bool operator>(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the first object is greater than (that is, represents a longer time period) than the second, otherwise FALSE.
 
@@ -275,7 +275,7 @@ bool operator>=(CFileTimeSpan span) const throw();
 *span*\
 The `CFileTimeSpan` object to be compared.
 
-### Return Value
+### Return value
 
 Returns TRUE if the first object is greater than (that is, represents a longer time period) or equal to the second, otherwise FALSE.
 
@@ -295,6 +295,6 @@ The new value for the time span in 100-nanosecond units. For more information, s
 ## See also
 
 [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime)\
-[CFileTime Class](cfiletime-class.md)\
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
-[ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+[CFileTime class](cfiletime-class.md)\
+[Hierarchy chart](../../mfc/hierarchy-chart.md)\
+[ATL/MFC shared classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)
