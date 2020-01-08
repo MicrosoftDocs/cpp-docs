@@ -37,6 +37,6 @@ The **/QIntel-jcc-erratum** option is off by default, and works only in optimize
 
 ## See also
 
-[/Q Options (Low-Level Operations)](q-options-low-level-operations.md)\
-[MSVC Compiler Options](compiler-options.md)\
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[/Q options (Low-level operations)](q-options-low-level-operations.md)\
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)
