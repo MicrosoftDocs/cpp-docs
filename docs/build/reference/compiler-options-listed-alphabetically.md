@@ -102,6 +102,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
 |[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses `_ftol` when a conversion from a floating-point type to an integral type is required (x86 only).|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
+|[/QIntel-jcc-erratum](qintel-jcc-erratum.md)|Mitigates the performance impact of the Intel JCC erratum microcode update.|
 |[/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
 |[/Qspectre](qspectre.md)|Specifies compiler generation of instructions to mitigate certain Spectre variant 1 security vulnerabilities.|

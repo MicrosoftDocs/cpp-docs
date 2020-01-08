@@ -57,6 +57,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
 |[/QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|Removes `fwait` commands inside `try` blocks.|
+|[/QIntel-jcc-erratum](qintel-jcc-erratum.md)|Mitigates the performance impact of the Intel JCC erratum microcode update.|
 |[/Qpar](qpar-auto-parallelizer.md)|Enables automatic parallelization of loops.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|Enables reporting levels for automatic parallelization.|
 |[/Qsafe_fp_loads](qsafe-fp-loads.md)|Uses integer move instructions for floating-point values and disables certain floating point load optimizations.|
