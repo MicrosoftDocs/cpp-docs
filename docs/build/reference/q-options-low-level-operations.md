@@ -14,7 +14,7 @@ You can use the **/Q** compiler options to perform the following low-level compi
 
 - [/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): Removes `fwait` commands inside `try` blocks.
 
-- [/QIntel-jcc-erratum](qintel-jcc-erratum.md): Mitigates the performance impact caused by the Intel Jump Condition Code (JCC) erratum microcode update.
+- [/QIntel-jcc-erratum](qintel-jcc-erratum.md): Mitigates the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update.
 
 - [/Qpar (Auto-Parallelizer)](qpar-auto-parallelizer.md): Enables automatic parallelization of loops that are marked with the [#pragma loop()](../../preprocessor/loop.md) directive.
 
