@@ -66,6 +66,8 @@ The **_mbclen** function returns the length, in bytes, of the multibyte characte
 
 The output value is affected by the **LC_CTYPE** category setting of the locale. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior. The **_l** suffixed versions behave the same, but they use the locale parameter passed in instead. For more information, see [setlocale](setlocale-wsetlocale.md) and [Locale](../../c-runtime-library/locale.md).
 
+**_mbclen**, **_mblen_l**, and **_mbclen_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mblen** instead.
+
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
