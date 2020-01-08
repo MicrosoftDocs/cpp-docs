@@ -1,6 +1,6 @@
 ---
 title: "Compiler Options Listed by Category"
-ms.date: "08/08/2019"
+ms.date: "01/08/2020"
 helpviewer_keywords: ["compiler options, C++"]
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
 ---

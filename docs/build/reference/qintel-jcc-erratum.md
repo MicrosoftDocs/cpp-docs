@@ -7,7 +7,15 @@ helpviewer_keywords: ["/QIntel-jcc-erratum", "-QIntel-jcc-erratum"]
 ---
 # /QIntel-jcc-erratum
 
-Specifies that the compiler generates instructions to mitigate the performance impact caused by the Intel Jump Condition Code (JCC) erratum microcode update in certain Intel processors.
+::: moniker range="<=vs-2017"
+
+The **/QIntel-jcc-erratum** option is available in Visual Studio 2019 version 16.5 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Specifies that the compiler generates instructions to mitigate the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update in certain Intel processors.
 
 ## Syntax
 
@@ -29,7 +37,7 @@ The **/QIntel-jcc-erratum** option is off by default, and works only in optimize
 
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
-1. Select a value for the **Intel JCC Erratum Mitigation** property. Choose **OK** to apply the change.
+1. Select a value for the **Enable Intel JCC Erratum Mitigation** property. Choose **OK** to apply the change.
 
 ### To set this compiler option programmatically
 
@@ -40,3 +48,5 @@ The **/QIntel-jcc-erratum** option is off by default, and works only in optimize
 [/Q options (Low-level operations)](q-options-low-level-operations.md)\
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)
+
+::: moniker-end
