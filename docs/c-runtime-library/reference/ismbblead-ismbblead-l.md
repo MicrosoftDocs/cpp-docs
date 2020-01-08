@@ -46,6 +46,8 @@ Multibyte characters consist of a lead byte followed by a trailing byte. Lead by
 
 When the locale is UTF-8, **_ismbblead** and **_ismbblead_l** always return 0 (false), whether *c* is a lead byte or not.
 
+**_ismbblead** and **_ismbblead_l** are Microsoft-specific, not part of the Standard C library. We don't recommend you use them where you want portable code. For Standard C compatibility, use **mbrlen** instead.
+
 ### Generic-text routine mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
@@ -66,4 +68,5 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 ## See also
 
 [Byte classification](../../c-runtime-library/byte-classification.md)\
-[_ismbb routines](../../c-runtime-library/ismbb-routines.md)
+[_ismbb routines](../../c-runtime-library/ismbb-routines.md)\
+[mbrlen](mbrlen.md)
