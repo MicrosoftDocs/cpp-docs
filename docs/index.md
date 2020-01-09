@@ -2,8 +2,6 @@
 layout: HubPage
 title: Visual C++ Documentation
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
-author: "mikeblome"
-ms.author: "mblome"
 ms.topic: hub-page
 ---
 <div id="main" class="v2">
