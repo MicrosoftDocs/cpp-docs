@@ -3,8 +3,6 @@ title: "Visual C++ Samples"
 ms.date: "11/30/2017"
 ms.technology: "cpp-language"
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # Visual C++ Samples
 

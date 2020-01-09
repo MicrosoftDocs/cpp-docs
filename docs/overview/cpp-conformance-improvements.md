@@ -3,8 +3,6 @@ title: "C++ conformance improvements"
 ms.date: "12/04/2019"
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
 ms.technology: "cpp-language"
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # C++ conformance improvements in Visual Studio
 
