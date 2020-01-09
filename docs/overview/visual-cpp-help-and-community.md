@@ -3,8 +3,6 @@ title: "Visual C++ Help and Community"
 ms.date: "11/30/2017"
 ms.technology: "cpp-ide"
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # Visual C++ Help and Community
 

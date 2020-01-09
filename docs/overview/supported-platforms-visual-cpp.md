@@ -4,8 +4,6 @@ ms.date: "12/02/2019"
 ms.technology: "cpp-tools"
 helpviewer_keywords: ["Visual C++, platforms supported", "platforms [C++]"]
 ms.assetid: 0d893056-4008-411a-b3d1-5f57fd7da95c
-author: "mikeblome"
-ms.author: "mblome"
 ---
 # Supported Platforms (Visual C++)
 
