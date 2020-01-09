@@ -14,7 +14,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 
 ::: moniker range="vs-2019"
 
-The **C++ CMake tools for Windows** component uses the [Open Folder](open-folder-projects-cpp.md) feature to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache.
+The **C++ CMake tools for Windows** component uses the [Open Folder](open-folder-projects-cpp.md) feature to consume CMake project files (such as *CMakeLists.txt*) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache.
 
 ## Installation
 
@@ -26,7 +26,7 @@ For more information, see [Install the C++ Linux workload in Visual Studio](../l
 
 ## IDE Integration
 
-When you choose **File > Open > Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
+When you choose **File > Open > Folder** to open a folder containing a *CMakeLists.txt* file, the following things happen:
 
 - Visual Studio adds **CMake** items to the **Project** menu, with commands for viewing and editing CMake scripts.
 
@@ -36,7 +36,7 @@ When you choose **File > Open > Folder** to open a folder containing a CMakeList
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
-You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" CMakeLists.txt files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
+You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" *CMakeLists.txt* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
 
 ![CMake project with multiple roots](media/cmake-multiple-roots.png)
 
@@ -69,7 +69,7 @@ To build a CMake project, you have these choices:
 
 1. In the General toolbar, find the **Configurations** dropdown. It probably shows "x64-Debug" by default. Select the preferred configuration and press **F5**, or click the **Run** (green triangle) button on the toolbar. The project automatically builds first, just like a Visual Studio solution.
 
-1. Right click on the CMakeLists.txt and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
+1. Right click on *CMakeLists.txt* and select **Build** from the context menu. If you have multiple targets in your folder structure, you can choose to build all or only one specific target.
 
 1. From the main menu, select **Build > Build All** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
@@ -95,7 +95,7 @@ You can customize a CMake debugging session by setting properties in the **launc
 
 When you build for Windows using the MSVC compiler, CMake projects have support for Just My Code debugging. To change the Just My Code setting, go to **Tools** > **Options** > **Debugging** > **General**.
 
-## Vcpkg Integration
+## Vcpkg integration
 
 If you have installed [vcpkg](vcpkg.md), CMake projects opened in Visual Studio automatically integrate the vcpkg toolchain file. That means no additional configuration is required to use vcpkg with your CMake projects. This support works for both local vcpkg installations and vcpkg installations on remote systems that you're targeting. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
 
@@ -107,11 +107,11 @@ By default, most configuration messages are suppressed unless there's an error. 
 
 ## Editing CMakeLists.txt files
 
-To edit a CMakeLists.txt file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about CMakeLists.txt, see the [CMake documentation](https://cmake.org/documentation/).
+To edit a *CMakeLists.txt* file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about *CMakeLists.txt*, see the [CMake documentation](https://cmake.org/documentation/).
 
    ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
 
-As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in CMakeLists.txt.
+As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in *CMakeLists.txt*.
 
    ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
 
@@ -147,7 +147,7 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 has rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as CMakeLists.txt) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You also can import an existing CMake cache.
+Visual Studio 2017 has rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as *CMakeLists.txt*) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You also can import an existing CMake cache.
 
 ## Installation
 
@@ -157,9 +157,9 @@ Visual Studio 2017 has rich support for CMake, including [cross-platform CMake p
 
 For more information, see [Install the C++ Linux workload in Visual Studio](../linux/download-install-and-setup-the-linux-development-workload.md).
 
-## IDE Integration
+## IDE integration
 
-When you choose **File > Open > Folder** to open a folder containing a CMakeLists.txt file, the following things happen:
+When you choose **File > Open > Folder** to open a folder containing a *CMakeLists.txt* file, the following things happen:
 
 - Visual Studio adds a **CMake** menu item to the main menu, with commands for viewing and editing CMake scripts.
 
@@ -169,7 +169,7 @@ When you choose **File > Open > Folder** to open a folder containing a CMakeList
 
 - In the background, Visual Studio starts to index the source files to enable IntelliSense, browsing information, refactoring, and so on. As you work, Visual Studio monitors changes in the editor and also on disk to keep its index in sync with the sources.
 
-You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" CMakeLists.txt files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
+You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" *CMakeLists.txt* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
 
 ![CMake project with multiple roots](media/cmake-multiple-roots.png)
 
@@ -188,7 +188,7 @@ If you need to pass arguments to an executable at debug time, you can use anothe
 
 ## Import an existing cache
 
-When you import an existing *CMakeCache.txt* file, Visual Studio automatically extracts customized variables and creates a pre-populated *CMakeSettings.json* file based on them. The original cache isn't modified in any way. It can still be used from the command line, or with whatever tool or IDE used to generate it. The new  *CMakeSettings.json* file is placed alongside the project's root CMakeLists.txt. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
+When you import an existing *CMakeCache.txt* file, Visual Studio automatically extracts customized variables and creates a pre-populated *CMakeSettings.json* file based on them. The original cache isn't modified in any way. It can still be used from the command line, or with whatever tool or IDE used to generate it. The new  *CMakeSettings.json* file is placed alongside the project's root *CMakeLists.txt*. Visual Studio generates a new cache based the settings file. You can override automatic cache generation in the **Tools > Options > CMake > General** dialog.
 
 Not everything in the cache is imported.  Properties such as the generator and the location of the compilers are replaced with defaults that are known to work well with the IDE.
 
@@ -238,17 +238,17 @@ You can customize a CMake debugging session by setting properties in the **launc
 
 ## Editing CMakeLists.txt files
 
-To edit a CMakeLists.txt file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about CMakeLists.txt, see the [CMake documentation](https://cmake.org/documentation/).
+To edit a *CMakeLists.txt* file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about *CMakeLists.txt*, see the [CMake documentation](https://cmake.org/documentation/).
 
    ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
 
-As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in CMakeLists.txt.
+As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in *CMakeLists.txt*.
 
    ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
 
 ## CMake configure step
 
-When significant changes are made to the  *CMakeSettings.json* or to CMakeLists.txt files, Visual Studio automatically reruns the CMake configure step. If the configure step finishes without errors, the information that's collected is available in C++ IntelliSense and language services. It's also used in build and debug operations.
+When significant changes are made to the  *CMakeSettings.json* or to *CMakeLists.txt* files, Visual Studio automatically reruns the CMake configure step. If the configure step finishes without errors, the information that's collected is available in C++ IntelliSense and language services. It's also used in build and debug operations.
 
 Multiple CMake projects may use the same CMake configuration name (for example, x86-Debug). All of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
 
@@ -260,7 +260,7 @@ You can limit builds and debug sessions to a subset of the projects in the works
 
 If you need more information about the state of the CMake cache to diagnose a problem, open the **CMake** main menu or the *CMakeLists.txt* context menu in **Solution Explorer** to run one of these commands:
 
-- **View Cache** opens the CMakeCache.txt file from the build root folder in the editor. (Any edits you make here to CMakeCache.txt are wiped out if you clean the cache. To make changes that persist after the cache is cleaned, see [Customize CMake settings](customize-cmake-settings.md).)
+- **View Cache** opens the  *CMakeCache.txt* file from the build root folder in the editor. (Any edits you make here to  *CMakeCache.txt* are wiped out if you clean the cache. To make changes that persist after the cache is cleaned, see [Customize CMake settings](customize-cmake-settings.md).)
 
 - **Open Cache Folder** opens an Explorer window to the build root folder.
 
@@ -270,7 +270,7 @@ If you need more information about the state of the CMake cache to diagnose a pr
 
 Automatic cache generation can be disabled in the **Tools > Options > CMake > General** dialog.
 
-## Single File Compilation
+## Single file compilation
 
 To build a single file in a CMake project, right-click on the file in **Solution Explorer**. Choose **Compile** from the pop-up menu. You can also build the currently open file in the editor by using the main **CMake** menu:
 
