@@ -3,7 +3,7 @@ title: Create C++ cross-platform projects in Visual Studio
 description: "How to set up, compile, and debug a C++ open-source CMake project in Visual Studio that targets both Linux and Windows."
 author: mikeblome
 ms.topic: tutorial
-ms.date: "11/08/2019"
+ms.date: "01/08/2020"
 ---
 # Tutorial: Create C++ cross-platform projects in Visual Studio
 
@@ -38,10 +38,10 @@ In this tutorial, you learn how to:
     chmod +x cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh
     ```
 
-  * You can see the options for running the script with `-–help`. We recommend that you use the `–prefix` option to specify installing in the **/usr/local** path, because that's the default location where Visual Studio looks for CMake. The following example shows the Linux-x86_64 script. Change it as needed if you're using a different target platform.
+  * You can see the options for running the script with `-–help`. We recommend that you use the `–prefix` option to specify installing in the **/usr** path, because **/usr/bin** is the default location where Visual Studio looks for CMake. The following example shows the Linux-x86_64 script. Change it as needed if you're using a different target platform.
 
     ```cmd
-    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr/local
+    sudo ./cmake-3.11.18033000-MSVC_2-Linux-x86_64.sh --skip-license --prefix=/usr
     ```
 
 * Git for windows installed on your Windows machine.
