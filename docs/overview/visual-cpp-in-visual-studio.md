@@ -4,8 +4,6 @@ description: "Visual C++ is the name for the Microsoft C++ compiler, code editor
 ms.date: "07/02/2019"
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
-author: "mikeblome"
-ms.author: "mblome"
 ---
 
 # C++ in Visual Studio
