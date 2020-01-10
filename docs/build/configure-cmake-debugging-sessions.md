@@ -17,7 +17,13 @@ Then, right-click on any executable and select **Debug** or **Debug and Launch S
 
 ## Customize debugger settings
 
-To customize the debugger settings for any executable CMake target in your project, right-click on the specific CMakeLists.txt file and select **Debug and Launch Settings**. (Or select a target in **Targets View** in **Solution Explorer**.) When you select a CMake target in the submenu, a file called **launch.vs.json** is created. This file is pre-populated with information about the CMake target you have selected and allows you to specify additional parameters such as program arguments or debugger type. To reference any key in a **CMakeSettings.json** file, preface it with `cmake.` in **launch.vs.json**. The following example shows a simple **launch.vs.json** file that pulls in the value of the `remoteCopySources` key in the **CMakeSettings.json** file for the currently selected configuration:
+You can customize the debugger settings for any executable CMake target in your project in a file called **launch.vs.json**. There are three entry points to this file:
+
+- Select **Debug > Debug and Launch Settings for ${activeDebugTarget}** from the main menu to edit the debug configuration specific to your active debug target. If you do not have an active target selected, this option will be grayed out.
+- Navigate to **Targets View** in the Solution Explorer, right-click on a debug target and select **Debug and Launch Settings** to edit the debug configuration specific to your selected target. 
+-	Right-click on a root CMakeLists.txt and select **Debug and Launch Settings** to open the “Select a Debugger” dialogue. This will allow you to add any debug configuration, but you will need to manually specify the CMake target to invoke via the `projectTarget` property.
+
+To reference any key in a **CMakeSettings.json** file, preface it with `cmake.` in **launch.vs.json**. The following example shows a simple **launch.vs.json** file that pulls in the value of the `remoteCopySources` key in the **CMakeSettings.json** file for the currently selected configuration:
 
 ```json
 {
@@ -34,34 +40,86 @@ To customize the debugger settings for any executable CMake target in your proje
   ]
 }
 ```
+As soon as you save the **launch.vs.json** file, an entry is created in the **Startup Item** dropdown with the new name. By editing the **launch.vs.json** file, you can create as many debug configurations as you like for any number of CMake targets.
 
-As soon as you save the  **launch.vs.json** file, an entry is created in the **Startup Item** dropdown with the new name. By editing the  **launch.vs.json** file, you can create as many debug configurations as you like for any number of CMake targets.
+## Launch.vs.json reference
 
-## Support for CMakeSettings variables
+There are many launch.vs.json properties to help support different debugging scenarios. The following properties are **common to all debug configurations** (remote and local):
 
- **Launch.vs.json** supports variables that are declared in **CMakeSettings.json** (see below) and that are applicable to the currently-selected configuration. It also has a key named `currentDir`, which sets the current directory of the launching app for a local project:
+- `projectTarget`: specifies the CMake target to invoke when building the project. This property is auto-populated if you enter launch.vs.json from **Debug > Debug and Launch Settings for ${activeDebugTarget}** or **Targets View**. 
+- `program`: full path to the program executable on the remote system. The macro `${debugInfo.fullTargetPath}` can be used. 
+- `args`: command line arguments passed to the program to debug
 
+## Launch.vs.json reference for remote Linux projects
+
+The following properties are **specific to remote debug configurations**. You can also [send commands directly to gdb](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) and [enable MIEngine logging](https://github.com/microsoft/MIEngine/wiki/Logging) to see what commands we are sending to gdb, what output gdb is returning, and how long each command took. 
+
+- `cwd`: current working directory for finding dependencies and other files on the remote machine. The macro `${debugInfo.defaultWorkingDirectory}` can be used. The default value is the remote workspace root unless overridden in CMakeLists.txt. This property is only used for remote configurations; `currentDir` is used to set the current directory of the launching app for a local project. 
+- `environment`: additional environment variables to add to the environment for the program with syntax: 
 ```json
-{
-  "type": "default",
-  "project": "CMakeLists.txt",
-  "projectTarget": "CMakeHelloWorld1.exe (C:\\Users\\satyan\\CMakeBuilds\\Test\\Debug\\CMakeHelloWorld1.exe)",
-  "name": "CMakeHelloWorld1.exe (C:\\Users\\satyan\\CMakeBuilds\\Test\\Debug\\CMakeHelloWorld1.exe)",
-  "currentDir": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}"
-}
+"environment": [
+        {
+          "name": "ENV1",
+          "value": "envvalue1"
+        },
+        {
+          "name": "ENV2",
+          "value": "envvalue2"
+        }
+      ]
 ```
 
-When you run the app, the value of `currentDir` is something similar to
+- `pipeArgs`: command line arguments passed to the pipe program to configure the connection. The pipe program is used to relay standard input/output between Visual Studio and gdb. The command `${debuggerCommand}` launches gdb on the remote system, and can be modified to:
+  - Export the value of the environment variable DISPLAY on your Linux system. In the following example this value is :1.
+  ```json
+  "pipeArgs": [
+          "/s",
+          "${debugInfo.remoteMachineId}",
+          "/p",
+          "${debugInfo.parentProcessId}",
+          "/c",
+          "export DISPLAY=:1;${debuggerCommand}",
+          "--tty=${debugInfo.tty}"
+        ],
+  ```
+    - Run a script before the execution of gdb. Ensure execute permissions are set on your script.
+    ```json
+    "pipeArgs": [
+          "/s",
+          "${debugInfo.remoteMachineId}",
+          "/p",
+          "${debugInfo.parentProcessId}",
+          "/c",
+          "/path/to/script.sh;${debuggerCommand}",
+          "--tty=${debugInfo.tty}"
+        ],
+    ```
 
-```cmd
-C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
-```
+- `stopOnEntry`: a boolean that specifies whether to break as soon as the process is launched. The default is false.
+- `visualizerFile`: a [.natvis file](https://docs.microsoft.com/en-us/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2019) to be used when debugging this process. This option is not compatible with gdb pretty printing. Please also see showDisplayString when using this property.
+- `showDisplayString`: a boolean that enables the display string when a visualizerFile is specified. Setting this option to true can cause slower performance during debugging.
+- `setupCommands`: one or more gdb command(s) to execute in order to set-up the underlying debugger.
+- `externalConsole`: a boolean that specifies whether a console is launched for the debugee. 
+- `miDebuggerPath`: the full path to gdb. When unspecified, Visual Studio will search PATH first for the debugger.
 
-The key 'cwd' sets the current directory of the launching app for a remote project. The default value is '${debugInfo.defaultWorkingDirectory}' which evaluates to 
+The following properties can be used to **separate your remote build system from your remote debug system**.
 
-```cmd
-/var/tmp/src/bfc6f7f4-4f0f-8b35-80d7-9198fa973fb9/Linux-Debug
-```
+- `remoteMachineName`: the remote Linux system which hosts gdb and the program to debug. This does not need to match the remote Linux system used for build (specified in CMakeSettings.json). Press ctrl+space to view a list of all remote connections stored in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). 
+- `disableDeploy`: indicates whether build/debug separation is disabled. When enabled, this feature allows build and debug to occur on two separate machines. 
+- `deployDirectory`: directory on the remote debug machine (specified by `remoteMachineName`) that the executable will be copied to.
+- `deploy`: an array of advanced deployment settings. These settings only need to be configured when you want more granular control over the deployment process. By default, only the files necessary for the process to debug will be deployed to the remote debug machine.
+  - `sourceMachine`: the machine from which the file or directory will be copied. Press cntrl+space to view a list of all the remote connections stored in the Connection Manager.
+  - `targetMachine`: the machine to which the file or directory will be copied. Press cntrl+space to view a list of all the remote connections stored in the Connection Manager.
+  - `sourcePath`: file or directory location on `sourceMachine`
+  - `targetPath`: file or directory location on `targetMachine` 
+  - `deploymentType`: description of the deployment type. `LocalRemote` and `RemoteRemote` are supported. `LocalRemote` means copying from the local file system to the remote system specified by `remoteMachineName` in launch.vs.json. `RemoteRemote` means copying from the remote build system specified in CMakeSettings.json to the different remote system specified in launch.vs.json. 
+  - `executable`: indicates whether the deployed file is an executable
+
+## Attach to a remote process 
+You can **attach to a process running on your Linux system** by manipulating `processId`: the Process ID to attach the debugger to. See [troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB) for more information. 
+
+## Debug on Linux using gdbserver
+Visual Studio 2019 version 16.5 Preview 1 or later supports the remote debugging of CMake projects with gdbserver. See [debugging Linux CMake projects with gdbserver](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/) for more information. 
 
 ## See also
 
