@@ -119,7 +119,7 @@ The following properties are specific to **remote debug configurations**. You ca
 
 - `miDebuggerPath`: The full path to gdb. When unspecified, Visual Studio searches PATH first for the debugger.
 
-The following properties can be used to separate your **remote build system** from your **remote debug system**.
+The following properties can be used to separate your **remote build system** from your **remote debug system**. See [Specify different machines for building and debugging](../linux/deploy-run-and-debug-your-linux-project.md#cmake-projects) for more information.
 
 - `remoteMachineName`: The remote Linux system that hosts gdb and the program to debug. This entry doesn't need to match the remote Linux system used for build specified in *CMakeSettings.json*. Press **Ctrl+Space** to view a list of all remote connections stored in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md).
 
