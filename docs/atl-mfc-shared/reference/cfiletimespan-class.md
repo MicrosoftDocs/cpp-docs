@@ -1,6 +1,7 @@
 ---
 title: "CFileTimeSpan class"
-ms.date: "01/06/2020"
+description: "The Active Template Library (ATL) and Microsoft Foundation Classes (MFC) CFileTimeSpan class manages time intervals in FILETIME units."
+ms.date: "01/10/2020"
 f1_keywords: ["CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::CFileTimeSpan", "ATLTIME/ATL::CFileTimeSpan::GetTimeSpan", "ATLTIME/ATL::CFileTimeSpan::SetTimeSpan"]
 helpviewer_keywords: ["shared classes, CFileTimeSpan", "CFileTimeSpan class"]
 ms.assetid: 5856fb39-9c82-4027-8ccf-8760890491ec
@@ -48,7 +49,7 @@ class CFileTimeSpan
 
 ## Remarks
 
-This class provides methods to handle relative periods of time in the units the file system uses. These units are often used in operations concerning when a file was created, last accessed, or last modified. The methods of this class are frequently used in conjunction with [CFileTime class](../../atl-mfc-shared/reference/cfiletime-class.md) objects.
+The `CFileTimeSpan` class provides methods to handle relative periods of time in the units the file system uses. These units are often used in file operations, such as when a file was created, last accessed, or last modified. The methods of this class are frequently used in conjunction with [CFileTime class](../../atl-mfc-shared/reference/cfiletime-class.md) objects.
 
 ## Example
 
@@ -74,11 +75,11 @@ CFileTimeSpan(LONGLONG nSpan) throw();
 An existing `CFileTimeSpan` object.
 
 *nSpan*\
-A period of time in milliseconds.
+A period of time in FILETIME units.
 
 ### Remarks
 
-The `CFileTimeSpan` object can be created using an existing `CFileTimeSpan` object, or expressed as a 64-bit value. The default constructor sets the time span to 0.
+The `CFileTimeSpan` object can be created using an existing `CFileTimeSpan` object, or expressed as a 64-bit value in 100-nanosecond FILETIME units. For more information, see [CFileTime](cfiletime-class.md). The default constructor sets the time span to 0.
 
 ## <a name="gettimespan"></a> CFileTimeSpan::GetTimeSpan
 
@@ -90,7 +91,7 @@ LONGLONG GetTimeSpan() const throw();
 
 ### Return value
 
-Returns the time span in milliseconds.
+Returns the time span in 100-nanosecond FILETIME units. For more information, see [CFileTime](cfiletime-class.md).
 
 ## <a name="operator_-"></a>  CFileTimeSpan::operator -
 
@@ -290,7 +291,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
 ### Parameters
 
 *nSpan*\
-The new value for the time span in 100-nanosecond units. For more information, see [CFileTime](cfiletime-class.md).
+The new value for the time span in 100-nanosecond FILETIME units. For more information, see [CFileTime](cfiletime-class.md).
 
 ## See also
 
