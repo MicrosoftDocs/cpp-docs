@@ -1,10 +1,18 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings"
-ms.date: "01/10/2020"
+ms.date: "01/13/2020"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
+
+::: moniker range="vs-2015"
+
+Native CMake support is available in Visual Studio 2017 and later.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the **General** toolbar. To start a debugging session, just select one and launch the debugger.
 
@@ -119,7 +127,17 @@ The following properties are specific to **remote debug configurations**. You ca
 
 - `miDebuggerPath`: The full path to gdb. When unspecified, Visual Studio searches PATH first for the debugger.
 
-The following properties can be used to separate your **remote build system** from your **remote debug system**. See [Specify different machines for building and debugging](../linux/deploy-run-and-debug-your-linux-project.md#cmake-projects) for more information.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- `remoteMachineName`: The remote Linux system that hosts gdb and the program to debug.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+The following properties can be used to separate your **remote build system** from your **remote debug system**. For more information, see [Specify different machines for building and debugging](../linux/deploy-run-and-debug-your-linux-project.md#cmake-projects).
 
 - `remoteMachineName`: The remote Linux system that hosts gdb and the program to debug. This entry doesn't need to match the remote Linux system used for build specified in *CMakeSettings.json*. Press **Ctrl+Space** to view a list of all remote connections stored in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md).
 
@@ -141,13 +159,25 @@ The following properties can be used to separate your **remote build system** fr
 
   - `executable`: Indicates whether the deployed file is an executable.
 
+::: moniker-end
+
+::: moniker range=">=vs-2017"
+
 ## Attach to a remote process
 
 You can attach to a process running on your Linux system by setting `processId` to the Process ID to attach the debugger to. For more information, see [Troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## Debug on Linux using gdbserver
 
 Visual Studio 2019 version 16.5 Preview 1 or later supports the remote debugging of CMake projects with gdbserver. For more information, see [debugging Linux CMake projects with gdbserver](https://devblogs.microsoft.com/cppblog/debugging-linux-cmake-projects-with-gdbserver/).
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 ## See also
 
@@ -158,3 +188,5 @@ Visual Studio 2019 version 16.5 Preview 1 or later supports the remote debugging
 [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
 [Deploy, run, and debug your Linux project](../linux/deploy-run-and-debug-your-linux-project.md)\
 [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+
+::: moniker-end
