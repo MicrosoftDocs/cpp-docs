@@ -25,7 +25,7 @@ For best IDE support in Visual Studio, we recommend using the latest Clang compi
 
 ## Configure a Windows project to use Clang tools
 
-To configure a Visual Studio project to use clang, right-click on the project node in **Solution Explorer** and choose **Properties**. Typically, you should first choose **All configurations** at the top of the dialog. Then, under **General** > **Platform Toolset**, choose **LLVM (clang-cl)** and then **OK**.
+To configure a Visual Studio project to use Clang, right-click on the project node in **Solution Explorer** and choose **Properties**. Typically, you should first choose **All configurations** at the top of the dialog. Then, under **General** > **Platform Toolset**, choose **LLVM (clang-cl)** and then **OK**.
 
 ![Clang component installation](media/clang-msbuild-prop-page.png)
 
