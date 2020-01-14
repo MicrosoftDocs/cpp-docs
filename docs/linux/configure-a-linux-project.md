@@ -90,6 +90,9 @@ Since all compilation is happening on a remote computer (or WSL), several additi
 
 When you add a new connection in **Connection Manager**, Visual Studio automatically detects the include directories for the compiler on the remote system. Visual Studio then zips up and copies those files to a directory on your local Windows machine. After that, whenever you use that connection in a Visual Studio or CMake project, the headers in those directories are used to provide IntelliSense.
 
+> [!NOTE]
+> In Visual Studio 2019 version 16.5 and later the remote header copy has been optimized. Headers are now copied on-demand when opening a Linux project or configuring CMake for a Linux target. The copy occurs in the background on a per-project basis based on the project's specified compilers. Read more about [Improvements to Accuracy and Performance of Linux IntelliSense](https://devblogs.microsoft.com/cppblog/improvements-to-accuracy-and-performance-of-linux-intellisense/) in Visual Studio 2019 version 16.5. 
+
 This functionality depends on the Linux machine having zip installed. You can install zip by using this apt-get command:
 
 ```cmd
