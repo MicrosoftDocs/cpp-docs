@@ -66,7 +66,7 @@ There are many *launch.vs.json* properties to support all your debugging scenari
 
 ## Launch.vs.json reference for remote Linux projects
 
-The following properties are specific to **remote debug configurations**. You can also [send commands directly to gdb](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) and [enable MIEngine logging](https://github.com/microsoft/MIEngine/wiki/Logging). These properties let you see what commands get sent to gdb, what output gdb returns, and how long each command takes.
+The following properties are specific to **remote debug configurations**. You can also [execute custom gdb commands](https://github.com/microsoft/MIEngine/wiki/Executing-custom-gdb-lldb-commands) to send commands directly to the underlying debugger, and [enable MIEngine logging](https://github.com/microsoft/MIEngine/wiki/Logging) to see what commands get sent to gdb, what output gdb returns, and how long each command takes.
 
 - `cwd`: Current working directory for finding dependencies and other files on the remote machine. The macro `${debugInfo.defaultWorkingDirectory}` can be used. The default value is the remote workspace root unless overridden in *CMakeLists.txt*. This property is only used for remote configurations; `currentDir` is used to set the current directory of the launching app for a local project.
 
