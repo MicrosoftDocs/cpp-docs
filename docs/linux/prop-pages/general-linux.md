@@ -30,7 +30,7 @@ Remote Deploy Directory | **Visual Studio 2019 version 16.1** Specifies the dire
 Remote Copy Include Directories | **Visual Studio 2019 version 16.5**  A list of directories to copy recursively from the Linux target. This property affects the remote header copy for IntelliSense, but not the build. It can be used when **IntelliSense Uses Compiler Defaults** is set to false. Use **Additional Include Directories** under the C/C++ General tab to specify additional include directories to use for both IntelliSense and build.
 Remote Copy Exclude Directories | **Visual Studio 2019 version 16.5** A list of directories *not* to copy from the Linux target. Usually, this property is used to remove subdirectories of the include directories.
 IntelliSense Uses Compiler Defaults | **Visual Studio 2019 version 16.5** Whether to query the compiler referenced by this project for its default list of include locations. These locations are automatically added to the list of remote directories to copy. Only set this property to false if the compiler doesn't support gcc-like parameters. Both gcc and clang compilers support queries for the include directories (for example, `g++ -x c++ -E -v -std=c++11`).
-Configuration Type | Specifies the type of output this configuration generates. | **Dynamic Library (.so)**<br/><br/>**Static library (.a)**<br/><br/>**Application (.out)**<br/><br/>**Makefile**
-Use of STL | Specifies which C++ Standard Library to use for this configuration. | **Shared GNU Standard C++ Library**<br/><br/>**Static GNU Standard C++ Library (-static)**
+Configuration Type | Specifies the type of output this configuration generates. | **Dynamic Library (.so)**<br/>**Static library (.a)**<br/>**Application (.out)**<br/>**Makefile**
+Use of STL | Specifies which C++ Standard Library to use for this configuration. | **Shared GNU Standard C++ Library**<br/>**Static GNU Standard C++ Library (-static)**
 
 ::: moniker-end
