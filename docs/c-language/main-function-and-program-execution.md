@@ -1,8 +1,10 @@
 ---
 title: "main Function and Program Execution"
-ms.date: "11/04/2016"
+description: "Describes the role of the main function in a C-language program."
+ms.date: "01/15/2020"
 helpviewer_keywords: ["program startup [C++]", "entry points, program", "main function, program execution", "startup code, main function", "main function", "programs [C++], terminating"]
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
+no-loc: [main, wmain]
 ---
 # main Function and Program Execution
 
@@ -10,8 +12,10 @@ Every C program has a primary (main) function that must be named **main**. If yo
 
 ## Syntax
 
-```
-main( int argc, char *argv[ ], char *envp[ ] )
+```C
+int main( void ) { /* . . . */ }
+int main( int argc, char *argv[ ], ) { /* . . . */ }
+int main( int argc, char *argv[ ], char *envp[ ] ) { /* . . . */ }
 ```
 
 ## Remarks
@@ -26,5 +30,5 @@ See [Using wmain](../c-language/using-wmain.md) for a description of the wide-ch
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)<br/>
+[main function and command-line arguments (C++)](../cpp/main-function-command-line-args.md)\
 [Parsing C Command-Line Arguments](../c-language/parsing-c-command-line-arguments.md)

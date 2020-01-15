@@ -1,8 +1,10 @@
 ---
 title: "Linker Tools Error LNK2019"
-ms.date: "10/22/2019"
+description: "All about the Microsoft Visual Studio Linker error LNK2019 and how to diagnose and correct it in C and C++ code."
+ms.date: "01/15/2020"
 f1_keywords: ["LNK2019"]
 helpviewer_keywords: ["nochkclr.obj", "LNK2019", "_check_commonlanguageruntime_version"]
+no-loc: [main, WinMain, wmain, wWinMain, __cdecl, __stdcall, __fastcall, __vectorcall, extern, static, const, ARCH, AVX2, wchar_t, VERBOSE, EXPORTS, SYMBOLS, DUMPBIN, UNDNAME]
 ---
 # Linker Tools Error LNK2019
 
@@ -60,7 +62,7 @@ In earlier versions of Visual Studio, this level of dependency was sufficient. H
 
 ### An entry point isn't defined
 
-The application code must define an appropriate entry point: `main` or `wmain` for console applications, and `WinMain` or `wWinMain` for Windows applications. For more information, see [main: Program Startup](../../cpp/main-program-startup.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use a custom entry point, specify the [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option.
+The application code must define an appropriate entry point: `main` or `wmain` for console applications, and `WinMain` or `wWinMain` for Windows applications. For more information, see [main function and command-line arguments](../../cpp/main-function-command-line-args.md) or [WinMain function](/windows/win32/api/winbase/nf-winbase-winmain). To use a custom entry point, specify the [/ENTRY (Entry-Point Symbol)](../../build/reference/entry-entry-point-symbol.md) linker option.
 
 ### You build a console application by using settings for a Windows application
 
@@ -198,7 +200,7 @@ This sample creates a DLL that has an export that uses `WCHAR`, which resolves t
 __declspec(dllexport) void func(WCHAR*) {}
 ```
 
-The next sample uses the DLL in the previous sample, and generates LNK2019 because the types unsigned short* and WCHAR\* aren't the same.
+The next sample uses the DLL in the previous sample, and generates LNK2019 because the types `unsigned short*` and `WCHAR*` aren't the same.
 
 ```cpp
 // LNK2019h.cpp

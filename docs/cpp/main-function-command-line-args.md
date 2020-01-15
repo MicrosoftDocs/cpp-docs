@@ -1,32 +1,35 @@
 ---
 title: "main function and command-line arguments (C++)"
 description: "The main function is the entry point for a C++ program."
-ms.date: "12/10/2019"
+ms.date: "01/15/2019"
 ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
+no-loc: [main, wmain, inline, static, _tmain, void, exit, argc, argv, envp, CreateProcess, GetModuleFileName, char, wchar_t, extern]
 ---
 # main function and command-line arguments
 
 All C++ programs must have a `main` function. If you try to compile a C++ *.exe* project without a main function, the compiler will raise an error. (Dynamic-link libraries and static libraries don't have a `main` function.) The `main` function is where your source code begins execution, but before a program enters the `main` function, all static class members without explicit initializers are set to zero. In Microsoft C++, global static objects are also initialized before entry to `main`. Several restrictions apply to the `main` function that do not apply to any other C++ functions. The `main` function:
 
-- Cannot be overloaded (see [Function Overloading](function-overloading.md)).
-- Cannot be declared as **inline**.
-- Cannot be declared as **static**.
-- Cannot have its address taken.
-- Cannot be called.
+- Can't be overloaded (see [Function Overloading](function-overloading.md)).
+- Can't be declared as **inline**.
+- Can't be declared as **static**.
+- Can't have its address taken.
+- Can't be called.
 
-The declaration syntax for `main` is as follows:
+The main function doesn't have a declaration, because it's built into the language. If it did, the declaration syntax for `main` would look like this:
 
 ```cpp
 int main();
+int main(int argc, char *argv[]);
 int main(int argc, char *argv[], char *envp[]);
 ```
 
 **Microsoft Specific**
 
-If your source files use Unicode wide characters, you can use `wmain`, which is the wide-character version of `main`. The declaration syntax for `wmain` is as follows:
+If your source files use Unicode wide characters, you can use `wmain`, which is the wide-character version of `main`. The virtual declaration syntax for `wmain` is as follows:
 
 ```cpp
 int wmain( );
+int wmain(int argc, wchar_t *argv[]);
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 ```
 
@@ -36,14 +39,9 @@ If no return value is specified, the compiler supplies a return value of zero. A
 
 **END Microsoft Specific**
 
-## Command line arguments
+## Command-line arguments
 
 The arguments for `main` or `wmain` allow convenient command-line parsing of arguments and, optionally, access to environment variables. The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but you can name them whatever you like.
-
-```cpp
-int main( int argc, char* argv[], char* envp[]);
-int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
-```
 
 The argument definitions are as follows:
 
@@ -154,9 +152,9 @@ The following table shows example input and expected output, demonstrating the r
 
 **Microsoft Specific**
 
-You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command-line.
+You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command line.
 
-Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv` in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).
+Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv` in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, see [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).
 
 **END Microsoft Specific**
 
@@ -166,12 +164,12 @@ Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv
 
 If your program does not take command-line arguments, you can save a small amount of space by suppressing use of the library routine that performs command-line processing. This routine is called `_setargv` and is described in [Wildcard Expansion](../cpp/wildcard-expansion.md). To suppress its use, define a routine that does nothing in the file containing the `main` function, and name it `_setargv`. The call to `_setargv` is then satisfied by your definition of `_setargv`, and the library version is not loaded.
 
-Similarly, if you never access the environment table through the `envp` argument, you can provide your own empty routine to be used in place of `_setenvp`, the environment-processing routine. Just as with the `_setargv` function, `_setenvp` must be declared as **extern "C"**.
+Similarly, if you never access the environment table through the `envp` argument, you can provide your own empty routine to be used in place of `_setenvp`, the environment-processing routine. Like the `_setargv` function, `_setenvp` must be declared as **extern "C"**.
 
-Your program might make calls to the `spawn` or `exec` family of routines in the C run-time library. If this is the case, you should not suppress the environment-processing routine, since this routine is used to pass an environment from the parent process to the child process.
+Your program might make calls to the `spawn` or `exec` family of routines in the C run-time library. If it does, you shouldn't suppress the environment-processing routine, since this routine is used to pass an environment from the parent process to the child process.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Basic Concepts](../cpp/basic-concepts-cpp.md)
+[Basic concepts](../cpp/basic-concepts-cpp.md)
