@@ -9,7 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["getenv_s", "_tgetenv_s", "_wgetenv_s"]
 helpviewer_keywords: ["_tgetenv_s function", "wgetenv_s function", "_wgetenv_s function", "getenv_s function", "environment variables", "tgetenv_s function"]
 ms.assetid: c3ae1ffe-d4cd-4bae-bcb1-3afa754c613a
-no-loc: [getenv_s, _wgetenv_s, _putenv_s, main, wmain, NULL, errno, EINVAL, ERANGE, _environ, _wenviron, _putenv, _wputenv, _tgetenv_s, _tzset, _dupenv_s, _wdupenv_s]
+no-loc: [getenv_s, _wgetenv_s, _putenv_s, main, wmain, errno, EINVAL, ERANGE, _environ, _wenviron, _putenv, _wputenv, _tgetenv_s, _tzset, _dupenv_s, _wdupenv_s]
 ---
 # getenv_s, _wgetenv_s
 

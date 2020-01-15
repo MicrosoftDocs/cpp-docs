@@ -46,5 +46,5 @@ For portable code, we recommend you use the arguments passed to `main` to get th
 ## See also
 
 [Global variables](../c-runtime-library/global-variables.md)\
-[main function and command-line arguments (C++)](main-function-command-line-args.md)\
+[main function and command-line arguments (C++)](../cpp/main-function-command-line-args.md)\
 [Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)
