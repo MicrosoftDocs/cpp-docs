@@ -1,7 +1,6 @@
 ---
 title: "getenv_s, _wgetenv_s"
-description: "Describes the Microsoft C runtime library getenv_s and _wgetenv_s functions."
-ms.date: "01/15/2020"
+ms.date: "11/04/2016"
 api_name: ["getenv_s", "_wgetenv_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -9,7 +8,6 @@ topic_type: ["apiref"]
 f1_keywords: ["getenv_s", "_tgetenv_s", "_wgetenv_s"]
 helpviewer_keywords: ["_tgetenv_s function", "wgetenv_s function", "_wgetenv_s function", "getenv_s function", "environment variables", "tgetenv_s function"]
 ms.assetid: c3ae1ffe-d4cd-4bae-bcb1-3afa754c613a
-no-loc: [getenv_s, _wgetenv_s, _putenv_s, main, wmain, errno, EINVAL, ERANGE, _environ, _wenviron, _putenv, _wputenv, _tgetenv_s, _tzset, _dupenv_s, _wdupenv_s]
 ---
 # getenv_s, _wgetenv_s
 
@@ -79,7 +77,7 @@ Also, if the buffer is too small, these functions return **ERANGE**. They do not
 
 ## Remarks
 
-The **getenv_s** function searches the list of environment variables for *varname*. **getenv_s** is not case sensitive in the Windows operating system. **getenv_s** and [_putenv_s](putenv-s-wputenv-s.md) use the copy of the environment that's pointed to by the global variable **_environ** to access the environment. **getenv_s** operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-function-command-line-args.md) or [wmain](../../cpp/main-function-command-line-args.md) might retrieve invalid information.
+The **getenv_s** function searches the list of environment variables for *varname*. **getenv_s** is not case sensitive in the Windows operating system. **getenv_s** and [_putenv_s](putenv-s-wputenv-s.md) use the copy of the environment that's pointed to by the global variable **_environ** to access the environment. **getenv_s** operates only on the data structures that are accessible to the run-time library and not on the environment "segment" that's created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) might retrieve invalid information.
 
 **_wgetenv_s** is a wide-character version of **getenv_s**; the argument and return value of **_wgetenv_s** are wide-character strings. The **_wenviron** global variable is a wide-character version of **_environ**.
 

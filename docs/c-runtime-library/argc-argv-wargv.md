@@ -1,6 +1,5 @@
 ---
 title: "__argc, __argv, __wargv"
-description: "Describes the Microsoft C runtime library global constants __argc, __argv, and __wargv."
 ms.date: "11/04/2016"
 api_name: ["__wargv", "__argv", "__argc"]
 api_location: ["msvcrt120.dll"]
@@ -9,7 +8,6 @@ topic_type: ["apiref"]
 f1_keywords: ["__argv", "__argc", "__wargv"]
 helpviewer_keywords: ["__argv", "__wargv", "__argc"]
 ms.assetid: 17001b0a-04ad-4762-b3a6-c54847f02d7c
-no-loc: [__argc, __argv, __wargv, main, wmain]
 ---
 # __argc, __argv, __wargv
 
@@ -17,7 +15,7 @@ The `__argc` global variable is a count of the number of command-line arguments 
 
 ## Syntax
 
-```C
+```
 extern int __argc;
 extern char ** __argv;
 extern wchar_t ** __wargv;
@@ -29,7 +27,7 @@ In a program that uses the `main` function,  `__argc` and `__argv` are initializ
 
 For portable code, we recommend you use the arguments passed to `main` to get the command-line arguments in your program.
 
-### Generic-text routine mappings
+### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE not defined|_UNICODE defined|
 |---------------------|---------------------------|-----------------------|
@@ -45,6 +43,6 @@ For portable code, we recommend you use the arguments passed to `main` to get th
 
 ## See also
 
-[Global variables](../c-runtime-library/global-variables.md)\
-[main function and command-line arguments (C++)](../cpp/main-function-command-line-args.md)\
+[Global Variables](../c-runtime-library/global-variables.md)<br/>
+[main: Program Startup](../cpp/main-program-startup.md)<br/>
 [Using wmain Instead of main](../cpp/using-wmain-instead-of-main.md)
