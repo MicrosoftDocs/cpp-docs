@@ -1,8 +1,9 @@
 ---
 title: "main function and command-line arguments (C++)"
 description: "The main function is the entry point for a C++ program."
-ms.date: "12/10/2019"
+ms.date: "01/15/2019"
 ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
+no-loc: [main, wmain, inline, static, _tmain, void, exit, argc, argv, envp, CreateProcess, GetModuleFileName, char, wchar_t, extern]
 ---
 # main function and command-line arguments
 
@@ -14,7 +15,7 @@ All C++ programs must have a `main` function. If you try to compile a C++ *.exe*
 - Cannot have its address taken.
 - Cannot be called.
 
-The declaration syntax for `main` is as follows:
+The main function doesn't have a declaration, because it's built into the language. If it did, the declaration syntax for `main` would look like this:
 
 ```cpp
 int main();
@@ -168,7 +169,7 @@ If your program does not take command-line arguments, you can save a small amoun
 
 Similarly, if you never access the environment table through the `envp` argument, you can provide your own empty routine to be used in place of `_setenvp`, the environment-processing routine. Just as with the `_setargv` function, `_setenvp` must be declared as **extern "C"**.
 
-Your program might make calls to the `spawn` or `exec` family of routines in the C run-time library. If this is the case, you should not suppress the environment-processing routine, since this routine is used to pass an environment from the parent process to the child process.
+Your program might make calls to the `spawn` or `exec` family of routines in the C run-time library. If it does, you shouldn't suppress the environment-processing routine, since this routine is used to pass an environment from the parent process to the child process.
 
 **END Microsoft Specific**
 

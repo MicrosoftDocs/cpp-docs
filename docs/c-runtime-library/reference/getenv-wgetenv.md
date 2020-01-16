@@ -1,6 +1,7 @@
 ---
 title: "getenv, _wgetenv"
-ms.date: "11/04/2016"
+description: "Describes the Microsoft C runtime library getenv and _wgetenv functions."
+ms.date: "01/15/2020"
 api_name: ["getenv", "_wgetenv"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-environment-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -8,6 +9,7 @@ topic_type: ["apiref"]
 f1_keywords: ["_wgetenv", "getenv", "_tgetenv"]
 helpviewer_keywords: ["getenv function", "tgetenv function", "wgetenv function", "environment values", "environment variables", "_tgetenv function", "_wgetenv function"]
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
+no-loc: [getenv, _wgetenv, getenv_s, _wgetenv_s, _putenv_s, main, wmain, errno, EINVAL, ERANGE, _environ, _wenviron, _putenv, _wputenv, _tgetenv_s, _tzset, _dupenv_s, _wdupenv_s]
 ---
 # getenv, _wgetenv
 
@@ -32,13 +34,13 @@ wchar_t *_wgetenv(
 *varname*<br/>
 Environment variable name.
 
-## Return Value
+## Return value
 
 Returns a pointer to the environment table entry containing *varname*. It is not safe to modify the value of the environment variable using the returned pointer. Use the [_putenv](putenv-wputenv.md) function to modify the value of an environment variable. The return value is **NULL** if *varname* is not found in the environment table.
 
 ## Remarks
 
-The **getenv** function searches the list of environment variables for *varname*. **getenv** is not case sensitive in the Windows operating system. **getenv** and **_putenv** use the copy of the environment pointed to by the global variable **_environ** to access the environment. **getenv** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-program-startup.md) or [wmain](../../cpp/main-program-startup.md) may retrieve invalid information.
+The **getenv** function searches the list of environment variables for *varname*. **getenv** is not case sensitive in the Windows operating system. **getenv** and **_putenv** use the copy of the environment pointed to by the global variable **_environ** to access the environment. **getenv** operates only on the data structures accessible to the run-time library and not on the environment "segment" created for the process by the operating system. Therefore, programs that use the *envp* argument to [main](../../cpp/main-function-command-line-args.md) or [wmain](../../cpp/main-function-command-line-args.md) may retrieve invalid information.
 
 If *varname* is **NULL**, this function invokes an invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns **NULL**.
 
@@ -117,6 +119,6 @@ New LIB variable is: c:\mylib;c:\yourlib
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
+[Process and environment control](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_putenv, _wputenv](putenv-wputenv.md)<br/>
-[Environmental Constants](../../c-runtime-library/environmental-constants.md)<br/>
+[Environmental constants](../../c-runtime-library/environmental-constants.md)<br/>
