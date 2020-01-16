@@ -1,8 +1,10 @@
 ---
 title: "C++ program termination"
-ms.date: "12/10/2019"
+description: "Describes the ways to exit a C++-language program."
+ms.date: "01/15/2020"
 helpviewer_keywords: ["terminating execution", "quitting applications", "exiting applications", "programs [C++], terminating"]
 ms.assetid: fa0ba9de-b5f1-4e7b-aa65-e7932068b48c
+no-loc: [exit, abort, return, main, atexit, void]
 ---
 # C++ program termination
 
@@ -97,7 +99,6 @@ int main() {
 }
 ```
 
-
 ## See also
 
-[main: Program Startup](main-program-startup.md)
+[main function and command-line arguments](main-function-command-line-args.md)
