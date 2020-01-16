@@ -26,5 +26,5 @@ See [Using wmain](../c-language/using-wmain.md) for a description of the wide-ch
 
 ## See also
 
-[main: Program Startup](../cpp/main-program-startup.md)<br/>
+[main function and command-line arguments (C++)](../cpp/main-function-command-line-args.md)\
 [Parsing C Command-Line Arguments](../c-language/parsing-c-command-line-arguments.md)
