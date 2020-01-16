@@ -42,8 +42,8 @@ If no return value is specified, the compiler supplies a return value of zero. A
 The arguments for `main` or `wmain` allow convenient command-line parsing of arguments and, optionally, access to environment variables. The types for `argc` and `argv` are defined by the language. The names `argc`, `argv`, and `envp` are traditional, but you can name them whatever you like.
 
 ```cpp
-int main(int argc, char *argv[], char *envp[]);
-int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
+int main( int argc, char* argv[], char* envp[]);
+int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ```
 
 The argument definitions are as follows:
@@ -155,7 +155,7 @@ The following table shows example input and expected output, demonstrating the r
 
 **Microsoft Specific**
 
-You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command line.
+You can use wildcards — the question mark (?) and asterisk (*) — to specify filename and path arguments on the command-line.
 
 Command-line arguments are handled by a routine called `_setargv` (or `_wsetargv` in the wide-character environment), which by default does not expand wildcards into separate strings in the `argv` string array. For more information on enabling wildcard expansion, refer to [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md).
 

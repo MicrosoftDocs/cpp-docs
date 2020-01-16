@@ -165,7 +165,7 @@ int main() {
 }
 ```
 
-For more information about initialization of global static objects, see [Additional Startup Considerations](../cpp/additional-startup-considerations.md).
+For more information about initialization of global static objects, see [main function and command-line arguments](main-function-command-line-args.md).
 
 ### Value initialization
 
