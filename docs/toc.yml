@@ -1143,6 +1143,8 @@
           items: 
             - name: Additional MSVC build tools
               href: build/reference/c-cpp-build-tools.md
+            - name: ConnectionManager reference
+              href: build/reference/connectionmanager-reference.md
             - name: NMAKE reference
               expanded: false
               items: 
