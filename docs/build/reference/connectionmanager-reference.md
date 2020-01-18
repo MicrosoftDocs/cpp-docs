@@ -6,7 +6,7 @@ helpviewer_keywords: ["ConnectionManager program"]
 ---
 # ConnectionManager reference
 
-ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. You may find it useful for tasks such as provisioning a new development machine, or setting up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
+ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, use it to set up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
 
 ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later. It's installed automatically when you choose the **Connection Manager** component in the Visual Studio Installer. By default, it's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManager.exe*.
 
@@ -20,11 +20,11 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 - **add** *user@host* \[**--port** *port*] \[**--password** *password*] \[**--privatekey** *privatekey_file*]
 
-  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You are prompted to enter a password). Use both **--password** and **--privatekey** to specify a password for a private key.
+  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **--password** and **--privatekey** to specify a password for a private key.
 
 - **remove** \[*connection_id* \| *user@host* \[**--port** *port*]]
 
-  Removes a connection. If no arguments are specified, you are prompted to specify which connection to remove.
+  Removes a connection. If no arguments are specified, you're prompted to specify which connection to remove.
 
 - **remove-all**
 
@@ -32,7 +32,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 - **list**
 
-  Displays information and ids of all stored connections.
+  Displays information and IDs of all stored connections.
 
 - **help**
 
@@ -46,7 +46,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 - **-q**, **--quiet**
 
-  Do not output to stdout or stderr.
+  Prevents output to `stdout` or `stderr`.
 
 - **--no-prompt**
 
@@ -66,7 +66,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 - **-n**, **--dry-run**
 
-  Perform a dry-run of the command.
+  Does a dry run of the command.
 
 - **-p**
 
