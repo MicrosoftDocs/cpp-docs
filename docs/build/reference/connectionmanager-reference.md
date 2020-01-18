@@ -1,15 +1,14 @@
 ---
 title: "ConnectionManager Reference"
-ms.date: "11/04/2016"
+ms.date: "01/17/2020"
 f1_keywords: ["ConnectionManager"]
 helpviewer_keywords: ["ConnectionManager program"]
-ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
 ---
 # ConnectionManager Reference
 
-ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. You may find it useful for tasks such as provisioning a new development machine, or setting up Visual Studio for continuous integration. It's available in Visual Studio 2019 version 16.5 and later.
+ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. You may find it useful for tasks such as provisioning a new development machine, or setting up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
 
-ConnectionManager.exe is installed automatically when you choose the Connection Manager component in the Visual Studio Installer. By default, it's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManager.exe*. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
+ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later. It's installed automatically when you choose the **Connection Manager** component in the Visual Studio Installer. By default, it's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManager.exe*.
 
 The functionality of ConnectionManager.exe is also available in Visual Studio. To manage remote development connections in the IDE, on the menu bar, choose **Tools** > **Options** to open the Options dialog. In the Options dialog, select **Cross Platform** > **Connection Manager**.
 
@@ -93,4 +92,4 @@ ConnectionManager.exe remove 1975957870
 
 ## See also
 
-[XML Documentation](xml-documentation-visual-cpp.md)
+[Connect to your target Linux system in Visual Studio](../../linux/connect-to-your-remote-linux-computer.md)
