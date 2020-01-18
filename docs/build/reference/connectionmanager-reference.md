@@ -1,10 +1,10 @@
 ---
-title: "ConnectionManager Reference"
+title: "ConnectionManager reference"
 ms.date: "01/17/2020"
 f1_keywords: ["ConnectionManager"]
 helpviewer_keywords: ["ConnectionManager program"]
 ---
-# ConnectionManager Reference
+# ConnectionManager reference
 
 ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. You may find it useful for tasks such as provisioning a new development machine, or setting up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
 
