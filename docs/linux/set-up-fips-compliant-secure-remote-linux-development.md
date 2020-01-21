@@ -15,7 +15,7 @@ Linux support is available in Visual Studio 2017 and later. FIPS-compliant secur
 
 Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard for cryptographic modules. Implementations of the standard are validated by NIST. Windows has [validated support for FIPS-compliant cryptographic modules](/windows/security/threat-protection/fips-140-validation). In Visual Studio 2019 version 16.5 and later, you can use a secure, FIPS-compliant cryptographic connection to your Linux system for remote development.
 
-To set up a secure, FIPS-compliant connection between Visual Studio and your remote Linux system, follow this guide. It's applicable when you build CMake or MSBuild Linux projects in Visual Studio. This article is the FIPS-compliant version of the connection instructions in [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
+Here's how to set up a secure, FIPS-compliant connection between Visual Studio and your remote Linux system. This guide is applicable when you build CMake or MSBuild Linux projects in Visual Studio. This article is the FIPS-compliant version of the connection instructions in [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
 ## Prepare a FIPS-compliant connection
 
@@ -48,9 +48,9 @@ The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.
    ```
 
    > [!NOTE]
-   > ssh-rsa is the only FIPS compliant host key algorithm VS supports. aes*-ctr is also FIPS compliant, but the implementation in Visual Studio isn't approved. ecdh-* key exchange algorithms are FIPS compliant but Visual Studio doesn't support them.
+   > ssh-rsa is the only FIPS compliant host key algorithm VS supports. The aes\*-ctr algorithms are also FIPS compliant, but the implementation in Visual Studio isn't approved. The ecdh-\* key exchange algorithms are FIPS compliant, but Visual Studio doesn't support them.
 
-   Some other relevant security options you may want to consider are `PermitRootLogin`, `PasswordAuthentication`, and `PermitEmptyPasswords`. For more information, see the man page for sshd_config or the article [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config).
+   You're not limited to these options. You can configure ssh to use additional ciphers, host key algorithms, and so on. Some other relevant security options you may want to consider are `PermitRootLogin`, `PasswordAuthentication`, and `PermitEmptyPasswords`. For more information, see the man page for sshd_config or the article [SSH Server Configuration](https://www.ssh.com/ssh/sshd_config).
 
 1. After saving and closing sshd_config, restart the ssh server to apply the new configuration:
 
@@ -73,7 +73,7 @@ Next, you'll create an RSA key pair on your Windows computer. Then you'll copy t
 1. From Windows, copy the public key to the Linux machine:
 
    ```cmd
-   scp -p %USERPROFILE%\.ssh\id_rsa.pub user@hostname
+   scp %USERPROFILE%\.ssh\id_rsa.pub user@hostname:
    ```
 
 1. On the Linux system, add the key to the list of authorized keys, and ensure the file has the correct permissions:
@@ -128,6 +128,10 @@ You've successfully set up ssh, created and deployed encryption keys, and tested
 
    For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
+## Command-line utility for the Connection Manager  
+
+**Visual Studio 2019 version 16.5 or later**: ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
+
 ## Optional: Enable or disable FIPS mode
 
 It's possible to enable FIPS mode globally in Windows.
@@ -141,7 +145,7 @@ It's possible to enable FIPS mode globally in Windows.
 1. In the **Local Security Setting** tab, select **Enabled** or **Disabled**, and then choose **OK** to save your changes.
 
 > [!WARNING]
-> The System cryptography security option may cause some applications to break or behave unexpectedly. For more information, see the blog post [Why We’re Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037).
+> Enabling FIPS mode may cause some applications to break or behave unexpectedly. For more information, see the blog post [Why We’re Not Recommending "FIPS mode" Anymore](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/why-we-8217-re-not-recommending-8220-fips-mode-8221-anymore/ba-p/701037).
 
 ## Additional resources
 

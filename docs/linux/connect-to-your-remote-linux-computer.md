@@ -11,9 +11,19 @@ Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range="vs-2017"
 
-You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For both remote machines and for WSL, you need to set up a remote connection in Visual Studio.
+You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For both remote machines and for WSL, you need to set up a remote connection in Visual Studio 2017.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For a remote machine, you need to set up a remote connection in Visual Studio. To connect to WSL, skip ahead to the [Connect to WSL](#connect-to-wsl) section.
+
+::: moniker-end
+
+::: moniker range=">=vs-2017"
 
 When using a remote connection, Visual Studio builds C++ Linux projects on the remote machine. It doesn't matter if it's a physical machine, a VM in the cloud, or WSL.
 To build the project, Visual Studio copies the source code to your remote Linux computer. Then, the code gets compiled based on Visual Studio settings.
@@ -88,6 +98,8 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
    ::: moniker range="vs-2019"
 
+## Logging for remote connections
+
    You can enable logging to help troubleshoot connection problems. On the menu bar, select **Tools > Options**. In the **Options** dialog, select **Cross Platform > Logging**:
 
    ![Remote Logging](media/remote-logging-vs2019.png)
@@ -98,7 +110,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
 ## Command-line utility for the Connection Manager  
 
-**Visual Studio 2019 version 16.5 or later**: ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](../build/reference/connectionmanager-reference.md).  
+**Visual Studio 2019 version 16.5 or later**: ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
 
 ::: moniker-end
 
