@@ -3,7 +3,12 @@
 - name: Download, install, and set up the Linux Development workload
   href: download-install-and-setup-the-linux-development-workload.md
 - name: Connect to your remote Linux computer
-  href: connect-to-your-remote-linux-computer.md
+  expanded: true
+  items:
+    - name: Connect to your remote Linux computer
+      href: connect-to-your-remote-linux-computer.md
+    - name: Set up FIPS-compliant secure remote Linux development
+      href: set-up-fips-compliant-secure-remote-linux-development.md
 - name: Create a new Linux project
   href: create-a-new-linux-project.md
 - name: Configure a Linux project
