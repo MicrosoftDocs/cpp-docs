@@ -23,7 +23,7 @@ To build the project, Visual Studio copies the source code to your remote Linux 
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Visual Studio 2019 version 16.5 and later also supports secure, Federal Information Processing Standard (FIPS) 140-2 compliant cryptographic connections to Linux systems for remote development. To use a FIPS-compliant connection, follow the steps in [Set up FIPS-compliant secure remote Linux development](set-up-fips-compliant-secure-remote-development.md) instead.
+> Visual Studio 2019 version 16.5 and later also supports secure, Federal Information Processing Standard (FIPS) 140-2 compliant cryptographic connections to Linux systems for remote development. To use a FIPS-compliant connection, follow the steps in [Set up FIPS-compliant secure remote Linux development](set-up-fips-compliant-secure-remote-linux-development.md) instead.
 
 ::: moniker-end
 
