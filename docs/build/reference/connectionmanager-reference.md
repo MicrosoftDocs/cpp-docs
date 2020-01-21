@@ -6,6 +6,14 @@ helpviewer_keywords: ["ConnectionManager program"]
 ---
 # ConnectionManager reference
 
+::: moniker range="<=vs-2017"
+
+ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, use it to set up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](..\building-on-the-command-line.md).
 
 ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later. It's installed automatically when you choose the **Connection Manager** component in the Visual Studio Installer. By default, it's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManager.exe*.
@@ -93,3 +101,5 @@ ConnectionManager.exe remove 1975957870
 ## See also
 
 [Connect to your target Linux system in Visual Studio](../../linux/connect-to-your-remote-linux-computer.md)
+
+::: moniker-end
